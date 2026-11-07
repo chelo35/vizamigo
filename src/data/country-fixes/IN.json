@@ -1,0 +1,1797 @@
+{
+ "tr": {
+  "insights": {
+   "currency": "Hindistan Rupisi (INR)",
+   "plugType": "Tip C, D, M (230V, 50Hz)",
+   "bestMonths": "Ekim – Mart (kuzey ve Racastan için serin ve kurak; Aralık – Ocak sabahları sisli); Nisan – Haziran aşırı sıcak (45 °C’ye kadar), Haziran – Eylül muson; Ladakh ve Himalaya için Haziran – Eylül",
+   "safety": {
+    "crimeRateSummary": "Turist bölgelerinde dolandırıcılık, yankesicilik ve aşırı fiyat yaygındır; yalnız seyahat eden kadınlar taciz konusunda dikkatli olmalıdır. Cammu-Keşmir’in bazı bölgeleri, Manipur ve Pakistan sınır hattı için resmî seyahat uyarıları bulunur; büyük şehirlerde hava kirliliği ve trafik ciddi risktir.",
+    "commonScams": [
+     "Delhi’de “oteliniz kapandı/yandı” diyip sizi sahte turizm ofisine götüren taksi ve tuk-tuk şoförleri",
+     "Jaipur’da “yurt dışına taşı götür, kâr et” mücevher ihracat dolandırıcılığı",
+     "Taj Mahal ve Varanasi’de kendini resmî rehber veya “yakma odunu bağışı” toplayan kişi olarak tanıtanlar"
+    ],
+    "safeTravelTips": [
+     "Havalimanı ve istasyonlarda Uber/Ola veya ön ödemeli resmî taksi gişesini kullanın; “turizm ofisi” yönlendirmelerine uymayın.",
+     "Sokak yemeğinde kalabalık ve sıcak servis yapan tezgâhları seçin, yalnızca şişe su için ve buzlu içeceklerden kaçının.",
+     "Kadın gezginler omuz ve bacakları örten kıyafet seçmeli, gece yalnız yolculuktan kaçınmalı ve trenlerde kadın kompartımanını kullanmalıdır."
+    ],
+    "emergencyNumbers": {
+     "police": "112",
+     "ambulance": "108",
+     "general": "112"
+    },
+    "safetyScore": 55,
+    "safetyLevel": "Orta Seviye",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Şehirlerde çok hızlı 4G/5G (Jio ve Airtel geniş 5G ağı); dağlık ve uzak kırsalda zayıf, Cammu-Keşmir’de zaman zaman kesinti",
+    "costPerGbUsd": "~0.10 - 0.50 $",
+    "esimAvailability": "Mevcut – uluslararası eSIM’ler kolay; yerel SIM pasaport, vize ve fotoğrafla alınır, aktivasyon birkaç saat sürebilir",
+    "bestCarriers": [
+     "Jio",
+     "Airtel",
+     "Vi (Vodafone Idea)"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "İyi – Delhi, Mumbai ve Bengaluru’da modern metro; geniş tren ağı (Vande Bharat, Gatimaan Express) ve ucuz iç hat uçuşları; şehir trafiği çok yoğun",
+    "costLevel": "Ucuz",
+    "singleTicketUsd": "~0.15 - 0.80 $ (Delhi Metro)",
+    "dailyPassUsd": "~2.50 $ (Delhi Metro 1 günlük turist kartı, iadeli depozito dahil)",
+    "popularRideApps": [
+     "Uber",
+     "Ola",
+     "Rapido"
+    ],
+    "taxiAdvice": "Uber ve Ola şehirlerde en kolay seçenektir; Rapido ucuz motosiklet ve auto-rickshaw sunar. Sokaktaki auto-rickshaw’larda taksimetre nadiren açılır, fiyatı binmeden netleştirin. Tren biletlerini IRCTC veya güvenilir uygulamalardan alın."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "20 - 35 $",
+    "dailyBudgetMidrangeUsd": "50 - 110 $",
+    "budgetMealUsd": "1.50 - 4 $",
+    "coffeeUsd": "1 - 3.50 $",
+    "waterBottleUsd": "0.25 - 0.40 $",
+    "hostelDormUsd": "6 - 15 $",
+    "hotel3StarUsd": "30 - 75 $",
+    "flightCostIndex": "Orta (İstanbul – Delhi/Mumbai direkt ~6,5 sa)",
+    "flightTip": "THY ve IndiGo İstanbul’dan Delhi ve Mumbai’ye direkt uçar. Ülke içinde IndiGo ve Air India ile iç hat uçuşları ucuzdur; Delhi – Agra arası ise Gatimaan Express treniyle ~1 saat 40 dakikadır."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Avuçlar birleştirilerek “Namaste” denir; para, yemek ve hediye sağ elle verilip alınır.",
+     "Tapınak, cami, gurdwara ve evlere ayakkabıyla girilmez; gurdwaralarda başın örtülmesi gerekir.",
+     "Başı iki yana sallamak genellikle “evet / tamam” anlamına gelir; kamusal alanda sevgi gösterisi hoş karşılanmaz."
+    ],
+    "festivals": [
+     "Diwali – Işık Bayramı (Ekim/Kasım)",
+     "Holi – Renk Festivali (Mart)",
+     "Durga Puja / Navratri (Eylül/Ekim)"
+    ],
+    "lifestyle": "Kalabalık, renkli ve yoğun bir hayat: aile bağları güçlüdür, chai her köşede içilir, kriket ve Bollywood ortak tutkudur; vejetaryenlik yaygındır ve bölgeden bölgeye mutfak, dil ve gelenek değişir."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Tac Mahal (Agra, UNESCO)",
+     "Jaipur – Amber Kalesi ve Hawa Mahal",
+     "Varanasi – Ganj Nehri ghat’ları",
+     "Delhi – Kızıl Kale, Kutub Minar ve Humayun Türbesi",
+     "Amritsar – Altın Tapınak",
+     "Kerala durgun suları (Alappuzha)"
+    ],
+    "bestSeasons": "Ekim – Mart (kuzey ve Racastan için serin ve kurak; Aralık – Ocak sabahları sisli); Nisan – Haziran aşırı sıcak (45 °C’ye kadar), Haziran – Eylül muson; Ladakh ve Himalaya için Haziran – Eylül",
+    "travelStyleTip": "Hindistan bir kıta kadar büyüktür; ilk ziyarette Altın Üçgen (Delhi – Agra – Jaipur) idealdir. Uzun mesafeleri iç hat uçuşu veya gece treniyle aşın ve günlük planı aşırı doldurmayın."
+   },
+   "religion": {
+    "primaryReligions": "Hinduizm (~%80), İslam (~%14), Hristiyanlık (~%2), Sihizm (~%1,7), Budizm ve Jainizm.",
+    "respectNorms": "Dini mekânlarda omuz ve dizler kapalı olmalı, ayakkabılar çıkarılır; bazı Hindu tapınaklarına Hindu olmayanlar giremez. Varanasi’de yakılma törenlerini fotoğraflamayın.",
+    "sacredSites": [
+     "Altın Tapınak – Harmandir Sahib (Amritsar)",
+     "Kashi Vishwanath Tapınağı ve Varanasi ghat’ları",
+     "Cuma Mescidi – Jama Masjid (Delhi)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Hintçe (Devanagari) ve İngilizce birlik düzeyinde resmîdir; anayasada 22 tanınmış dil vardır (Bengalce, Tamilce, Telugu, Marathi vb.).",
+    "englishProficiency": "Şehirlerde, otellerde ve iş dünyasında iyi; güneyde Hintçe yerine İngilizce daha işe yarar.",
+    "phrases": [
+     {
+      "phrase": "नमस्ते (Namaste)",
+      "meaning": "Merhaba",
+      "translation": "Merhaba",
+      "pronunciation": "na-mas-TAY"
+     },
+     {
+      "phrase": "धन्यवाद / शुक्रिया (Dhanyavaad / Shukriya)",
+      "meaning": "Teşekkür ederim",
+      "translation": "Teşekkür ederim",
+      "pronunciation": "dhun-ya-VAAD / shuk-REE-ya"
+     },
+     {
+      "phrase": "कितने का है? (Kitne ka hai?)",
+      "meaning": "Bu ne kadar?",
+      "translation": "Bu ne kadar?",
+      "pronunciation": "KIT-nay ka hai"
+     },
+     {
+      "phrase": "बहुत स्वादिष्ट है (Bahut swadisht hai)",
+      "meaning": "Çok lezzetli",
+      "translation": "Çok lezzetli",
+      "pronunciation": "ba-HUT swa-DISHT hai"
+     },
+     {
+      "phrase": "नहीं चाहिए (Nahin chahiye)",
+      "meaning": "İstemiyorum (satıcılara)",
+      "translation": "İstemiyorum (satıcılara)",
+      "pronunciation": "na-HEEN CHAA-hi-ye"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "İndus Vadisi uygarlığından Maurya ve Gupta imparatorluklarına, ardından 1526’da kurulan Babür İmparatorluğu’na uzanan derin bir geçmişe sahiptir. 1858’den itibaren İngiliz Raj’ı altında kalan Hindistan, Gandhi önderliğindeki şiddetsiz direnişle 1947’de bağımsız oldu ve 1950’de cumhuriyet ilan edildi.",
+    "milestones": [
+     "MÖ ~260: İmparator Ashoka’nın Budizmi benimsemesi",
+     "1526: Babür’ün Babür İmparatorluğu’nu kurması",
+     "1653: Tac Mahal’in tamamlanması",
+     "1947: Bağımsızlık"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Butter chicken (tereyağlı domatesli tavuk, Delhi)",
+     "Biryani (baharatlı etli pilav)",
+     "Masala dosa (güney Hindistan’ın patatesli pirinç krepi)"
+    ],
+    "traditionalDrinks": [
+     "Masala chai",
+     "Lassi (yoğurt içeceği)",
+     "Nimbu pani (baharatlı limonata)"
+    ],
+    "streetFoodAndDesserts": [
+     "Pani puri / golgappa",
+     "Samosa",
+     "Jalebi ve gulab jamun"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Mahatma Gandhi (bağımsızlık önderi)",
+     "Rabindranath Tagore (Nobel ödüllü şair)",
+     "Sachin Tendulkar (kriket efsanesi)"
+    ],
+    "strongSectors": [
+     "Bilişim ve yazılım hizmetleri",
+     "Jenerik ilaç üretimi (“dünyanın eczanesi”)",
+     "Uzay teknolojisi (ISRO, Chandrayaan-3 Ay inişi)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Yerel halk neredeyse her şeyi UPI ile QR kodla öder; yabancılar için kart (şehirlerde) ve nakit en pratik yoldur. Küçük banknot taşıyın, satıcılar büyük banknota sık sık para üstü veremez.",
+    "tippingCulture": "Restoranlarda servis ücreti yoksa ~%10 bırakılır; şoför, rehber ve otel çalışanlarına küçük bahşişler beklenir.",
+    "economicPillars": "Bilişim ve iş hizmetleri, ilaç, tarım, imalat (elektronik, otomotiv) ve geniş iç tüketim pazarı."
+   }
+  },
+  "itin": {
+   "routeName": "Altın Üçgen: Delhi, Agra ve Jaipur",
+   "routeSummary": "Babür ve Racput mirasının en parlak örneklerini birleştiren 7 günlük klasik rota: Delhi’nin kaleleri ve çarşıları, Agra’da Tac Mahal, Jaipur’un Pembe Şehri ve Amber Kalesi.",
+   "totalDays": 7,
+   "idealDurationText": "7 günlük rota",
+   "bestSeason": "Ekim – Mart (kuzey ve Racastan için serin ve kurak; Aralık – Ocak sabahları sisli); Nisan – Haziran aşırı sıcak (45 °C’ye kadar), Haziran – Eylül muson; Ladakh ve Himalaya için Haziran – Eylül",
+   "transportMode": "Trenler (Gatimaan / Vande Bharat) veya özel şoförlü araç + şehir içinde Uber, Ola ve metro",
+   "paceLevel": "Yoğun (kültür ve tarih)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "1. Durak: Delhi (Eski ve Yeni Delhi)",
+     "recommendedDuration": "2-3 Gün",
+     "durationBadge": "2-3 Gün",
+     "highlights": [
+      "Kızıl Kale ve Chandni Chowk",
+      "Humayun Türbesi (UNESCO)",
+      "Kutub Minar (UNESCO)",
+      "Jama Masjid"
+     ],
+     "activities": [
+      "Eski Delhi’de çarşı ve yemek turu yapın.",
+      "Gurdwara Bangla Sahib’de ücretsiz toplum mutfağını (langar) görün.",
+      "Hindistan Kapısı ve Kartavya Path boyunca yürüyün."
+     ],
+     "foodAndDrinks": [
+      "Butter chicken ve naan",
+      "Paranthe Wali Gali’de paratha",
+      "Masala chai"
+     ],
+     "criticalTips": [
+      "Kasım – Ocak arasında hava kirliliği çok yüksek olabilir; AQI’yi takip edin ve N95 maske taşıyın.",
+      "Metro’nun ilk vagonu kadınlara ayrılmıştır; kalabalıkta cüzdanınıza dikkat edin."
+     ],
+     "mapsQuery": "Red Fort, Delhi, India"
+    },
+    {
+     "stopNumber": 2,
+     "name": "2. Durak: Agra (Tac Mahal)",
+     "recommendedDuration": "1-2 Gün",
+     "durationBadge": "1-2 Gün",
+     "highlights": [
+      "Gün doğumunda Tac Mahal",
+      "Agra Kalesi (UNESCO)",
+      "Mehtab Bagh’dan nehir karşısından Tac manzarası",
+      "Fatehpur Sikri (UNESCO)"
+     ],
+     "activities": [
+      "Tac Mahal’i açılışta (gün doğumunda) gezin.",
+      "Mermer kakma (pietra dura) atölyesini izleyin.",
+      "Jaipur yolunda Fatehpur Sikri’de durun."
+     ],
+     "foodAndDrinks": [
+      "Mughlai mutfağı (kebap ve korma)",
+      "Agra petha (kabak tatlısı)"
+     ],
+     "criticalTips": [
+      "Tac Mahal cuma günleri kapalıdır; içeriye yiyecek, tripod ve büyük çanta alınmaz.",
+      "Biletleri resmî ASI sitesinden alın; girişte kendini rehber diye tanıtanlara kanmayın."
+     ],
+     "mapsQuery": "Taj Mahal, Agra, India"
+    },
+    {
+     "stopNumber": 3,
+     "name": "3. Durak: Jaipur (Pembe Şehir)",
+     "recommendedDuration": "2 Gün",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "Amber Kalesi",
+      "Hawa Mahal (Rüzgâr Sarayı)",
+      "Şehir Sarayı ve Jantar Mantar gözlemevi (UNESCO)"
+     ],
+     "activities": [
+      "Nahargarh Kalesi’nden gün batımını izleyin.",
+      "Johari ve Bapu çarşılarında tekstil ve takı alışverişi yapın.",
+      "Blok baskı (block printing) atölyesine katılın."
+     ],
+     "foodAndDrinks": [
+      "Dal baati churma",
+      "Pyaaz kachori ve lassi"
+     ],
+     "criticalTips": [
+      "Amber Kalesi’ne fil sırtında çıkmak yerine yürüyün veya jip kullanın.",
+      "Bileşik bilet (composite ticket) birçok anıtta tasarruf sağlar."
+     ],
+     "mapsQuery": "Amber Fort, Jaipur, India"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Butter chicken",
+     "Biryani",
+     "Masala dosa",
+     "Chole bhature (nohut körisi ve kızarmış ekmek)"
+    ],
+    "drinks": [
+     "Masala chai",
+     "Lassi",
+     "Nimbu pani"
+    ],
+    "streetFoods": [
+     "Pani puri",
+     "Samosa",
+     "Jalebi"
+    ],
+    "diningAdvice": "Birçok restoran tamamen vejetaryendir; helal et için Eski Delhi ve Agra’daki Müslüman lokantaları iyi seçenektir. Acı seviyesini “kam teekha” (az acı) diyerek düşürebilirsiniz."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "D/M tipi priz adaptörü",
+     "Omuz ve dizleri örten bol, hafif kıyafetler ve bir şal",
+     "N95 maske ve el dezenfektanı",
+     "Mide ilaçları ve ağızdan sıvı tuzları (ORS)"
+    ],
+    "safetyAndEtiquette": [
+     "Yalnızca resmî taksi, Uber/Ola kullanın; “otel kapalı” hikâyelerine inanmayın.",
+     "Yemek ve para alışverişinde sağ elinizi kullanın; dini mekânlarda ayakkabılarınızı çıkarın."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "D",
+     "M"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Prizler çoğunlukla yuvarlak üç uçlu Hint tipidir (D, büyük cihazlarda M); ince uçlu telefon şarj aletleri genelde girer, kalın Schuko fişler girmez. Adaptör alın."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Musluk suyu içilmez; mühürlü şişe su için ve kapağın açılmamış olduğunu kontrol edin. Dişlerinizi de şişe suyla fırçalayın.",
+    "vaccines": [
+     "Hepatit A ve tifo",
+     "Tetanos-difteri ve kızamık (rutin)",
+     "Kuduz, kırsal/uzun kalışta Japon ensefaliti; bazı bölgelerde sıtma önlemi için hekime danışın. Sarıhumma bölgesinden geliyorsanız sertifika istenir."
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "108"
+   },
+   "tipping": {
+    "custom": "Bahşiş yaygın ve beklenir.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Servis ücreti eklenmişse ek bahşiş gerekmez; şoföre günlük 300-500 INR, hamallara 50-100 INR yaygındır."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Yok",
+    "minSpend": "Uygulanmaz",
+    "customsNote": "Hindistan’da turistlere GST/KDV iadesi uygulanmaz. Antika (100 yıldan eski) çıkarmak yasaktır; Hint rupisinin yurt dışına çıkarılması sınırlıdır (25.000 INR)."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.10 - $0.50",
+    "topCarriers": [
+     "Jio",
+     "Airtel",
+     "Vi (Vodafone Idea)"
+    ],
+    "airportSimTrapWarning": "Havalimanı kiosklarındaki turist SIM paketleri şehirdeki resmî mağazalardan birkaç kat pahalı olabilir ve aktivasyon gecikebilir; ilk günler için uluslararası eSIM, sonra şehirde Airtel/Jio mağazası en ekonomik yoldur."
+   },
+   "touristScams": [
+    {
+     "title": "Sahte turizm ofisi",
+     "desc": "Şoför otelinizin kapandığını söyleyip sizi Paharganj veya Connaught Place’teki “resmî turizm ofisi”ne götürür ve pahalı tur satılır.",
+     "tip": "Otelinizi kendiniz arayın ve doğrudan adrese gitmekte ısrar edin."
+    },
+    {
+     "title": "Mücevher ihracat tuzağı",
+     "desc": "Jaipur’da yeni “arkadaşlar” taşları yurt dışına götürürseniz kâr edeceğinizi söyleyip kartınızdan büyük ödeme alır.",
+     "tip": "“Yatırım” tekliflerini reddedin; taşları sadece sertifikalı mağazalardan kendiniz için alın."
+    },
+    {
+     "title": "Yakma odunu bağışı",
+     "desc": "Varanasi’de Manikarnika Ghat’ta kendini görevli diye tanıtan kişiler yoksullar için odun parası ister.",
+     "tip": "Kibarca reddedin; törenleri uzaktan ve fotoğraf çekmeden izleyin."
+    }
+   ]
+  }
+ },
+ "en": {
+  "insights": {
+   "currency": "Indian Rupee (INR)",
+   "plugType": "Type C, D, M (230V, 50Hz)",
+   "bestMonths": "October – March (cool and dry for the north and Rajasthan; foggy mornings in December – January); April – June extreme heat (up to 45 °C), June – September monsoon; June – September for Ladakh and the Himalaya",
+   "safety": {
+    "crimeRateSummary": "Scams, pickpocketing and overcharging are common in tourist areas; solo female travellers should be alert to harassment. Official advisories cover parts of Jammu and Kashmir, Manipur and the Pakistan border; air pollution and traffic are serious risks in big cities.",
+    "commonScams": [
+     "Drivers in Delhi claiming “your hotel is closed/burned down” and taking you to a fake tourist office",
+     "The Jaipur gem-export scam promising profits for carrying stones abroad",
+     "People at the Taj Mahal and Varanasi posing as official guides or collecting “cremation wood donations”"
+    ],
+    "safeTravelTips": [
+     "Use Uber/Ola or the official prepaid taxi counter at airports and stations, and ignore “tourist office” detours.",
+     "At street food stalls pick busy ones serving hot food, drink only bottled water and avoid ice.",
+     "Women travellers should cover shoulders and legs, avoid travelling alone at night and use ladies’ compartments on trains."
+    ],
+    "emergencyNumbers": {
+     "police": "112",
+     "ambulance": "108",
+     "general": "112"
+    },
+    "safetyScore": 55,
+    "safetyLevel": "Moderate",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Very fast 4G/5G in cities (Jio and Airtel have wide 5G networks); weak in mountains and remote areas, occasional shutdowns in Jammu and Kashmir",
+    "costPerGbUsd": "~0.10 - 0.50 $",
+    "esimAvailability": "Available – international eSIMs are easy; local SIMs need passport, visa and photo and activation can take a few hours",
+    "bestCarriers": [
+     "Jio",
+     "Airtel",
+     "Vi (Vodafone Idea)"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Good – modern metros in Delhi, Mumbai and Bengaluru; vast rail network (Vande Bharat, Gatimaan Express) and cheap domestic flights; city traffic is very heavy",
+    "costLevel": "Cheap",
+    "singleTicketUsd": "~0.15 - 0.80 $ (Delhi Metro)",
+    "dailyPassUsd": "~2.50 $ (Delhi Metro 1-day tourist card, incl. refundable deposit)",
+    "popularRideApps": [
+     "Uber",
+     "Ola",
+     "Rapido"
+    ],
+    "taxiAdvice": "Uber and Ola are the easiest option in cities; Rapido offers cheap bike taxis and auto-rickshaws. Street auto-rickshaws rarely use meters, so fix the price first. Book trains via IRCTC or trusted apps."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "20 - 35 $",
+    "dailyBudgetMidrangeUsd": "50 - 110 $",
+    "budgetMealUsd": "1.50 - 4 $",
+    "coffeeUsd": "1 - 3.50 $",
+    "waterBottleUsd": "0.25 - 0.40 $",
+    "hostelDormUsd": "6 - 15 $",
+    "hotel3StarUsd": "30 - 75 $",
+    "flightCostIndex": "Moderate (Istanbul – Delhi/Mumbai direct ~6.5 h)",
+    "flightTip": "Turkish Airlines and IndiGo fly direct from Istanbul to Delhi and Mumbai. Domestic flights with IndiGo and Air India are cheap; Delhi – Agra takes ~1 h 40 min on the Gatimaan Express."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Greet with palms together and “Namaste”; give and take money, food and gifts with the right hand.",
+     "Remove shoes at temples, mosques, gurdwaras and homes; cover your head in gurdwaras.",
+     "The sideways head wobble usually means “yes / OK”; public displays of affection are frowned upon."
+    ],
+    "festivals": [
+     "Diwali – Festival of Lights (October/November)",
+     "Holi – Festival of Colours (March)",
+     "Durga Puja / Navratri (September/October)"
+    ],
+    "lifestyle": "Crowded, colourful and intense: family ties are strong, chai is drunk on every corner, cricket and Bollywood are shared passions; vegetarianism is common and food, language and customs change from region to region."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Taj Mahal (Agra, UNESCO)",
+     "Jaipur – Amber Fort and Hawa Mahal",
+     "Varanasi – the Ganges ghats",
+     "Delhi – Red Fort, Qutub Minar and Humayun’s Tomb",
+     "Amritsar – the Golden Temple",
+     "Kerala backwaters (Alappuzha)"
+    ],
+    "bestSeasons": "October – March (cool and dry for the north and Rajasthan; foggy mornings in December – January); April – June extreme heat (up to 45 °C), June – September monsoon; June – September for Ladakh and the Himalaya",
+    "travelStyleTip": "India is continent-sized; for a first visit the Golden Triangle (Delhi – Agra – Jaipur) is ideal. Cover long distances by domestic flight or overnight train and don’t overload each day."
+   },
+   "religion": {
+    "primaryReligions": "Hinduism (~80%), Islam (~14%), Christianity (~2%), Sikhism (~1.7%), Buddhism and Jainism.",
+    "respectNorms": "Cover shoulders and knees and remove shoes at religious sites; some Hindu temples bar non-Hindus. Don’t photograph cremations in Varanasi.",
+    "sacredSites": [
+     "Golden Temple – Harmandir Sahib (Amritsar)",
+     "Kashi Vishwanath Temple and Varanasi ghats",
+     "Jama Masjid (Delhi)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Hindi (Devanagari) and English are official at union level; the constitution recognises 22 languages (Bengali, Tamil, Telugu, Marathi, etc.).",
+    "englishProficiency": "Good in cities, hotels and business; in the south English is often more useful than Hindi.",
+    "phrases": [
+     {
+      "phrase": "नमस्ते (Namaste)",
+      "meaning": "Hello",
+      "translation": "Hello",
+      "pronunciation": "na-mas-TAY"
+     },
+     {
+      "phrase": "धन्यवाद / शुक्रिया (Dhanyavaad / Shukriya)",
+      "meaning": "Thank you",
+      "translation": "Thank you",
+      "pronunciation": "dhun-ya-VAAD / shuk-REE-ya"
+     },
+     {
+      "phrase": "कितने का है? (Kitne ka hai?)",
+      "meaning": "How much is it?",
+      "translation": "How much is it?",
+      "pronunciation": "KIT-nay ka hai"
+     },
+     {
+      "phrase": "बहुत स्वादिष्ट है (Bahut swadisht hai)",
+      "meaning": "It’s very tasty",
+      "translation": "It’s very tasty",
+      "pronunciation": "ba-HUT swa-DISHT hai"
+     },
+     {
+      "phrase": "नहीं चाहिए (Nahin chahiye)",
+      "meaning": "I don’t want it (to vendors)",
+      "translation": "I don’t want it (to vendors)",
+      "pronunciation": "na-HEEN CHAA-hi-ye"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Its deep past runs from the Indus Valley civilisation through the Maurya and Gupta empires to the Mughal Empire founded in 1526. Under the British Raj from 1858, India won independence in 1947 through Gandhi-led non-violent resistance and became a republic in 1950.",
+    "milestones": [
+     "c. 260 BC: Emperor Ashoka embraces Buddhism",
+     "1526: Babur founds the Mughal Empire",
+     "1653: Taj Mahal completed",
+     "1947: Independence"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Butter chicken (Delhi)",
+     "Biryani (spiced rice with meat)",
+     "Masala dosa (South Indian rice crêpe with potato)"
+    ],
+    "traditionalDrinks": [
+     "Masala chai",
+     "Lassi (yoghurt drink)",
+     "Nimbu pani (spiced lemonade)"
+    ],
+    "streetFoodAndDesserts": [
+     "Pani puri / golgappa",
+     "Samosa",
+     "Jalebi and gulab jamun"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Mahatma Gandhi (independence leader)",
+     "Rabindranath Tagore (Nobel laureate poet)",
+     "Sachin Tendulkar (cricket legend)"
+    ],
+    "strongSectors": [
+     "IT and software services",
+     "Generic pharmaceuticals (“pharmacy of the world”)",
+     "Space technology (ISRO, Chandrayaan-3 Moon landing)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Locals pay for almost everything by UPI QR code; for foreigners cards (in cities) and cash are most practical. Carry small notes, as vendors often can’t change large ones.",
+    "tippingCulture": "Leave ~10% in restaurants if no service charge is added; small tips are expected for drivers, guides and hotel staff.",
+    "economicPillars": "IT and business services, pharmaceuticals, agriculture, manufacturing (electronics, automotive) and a huge domestic market."
+   }
+  },
+  "itin": {
+   "routeName": "The Golden Triangle: Delhi, Agra & Jaipur",
+   "routeSummary": "A classic 7-day route linking the finest Mughal and Rajput heritage: Delhi’s forts and bazaars, the Taj Mahal in Agra, and Jaipur’s Pink City and Amber Fort.",
+   "totalDays": 7,
+   "idealDurationText": "7-day itinerary",
+   "bestSeason": "October – March (cool and dry for the north and Rajasthan; foggy mornings in December – January); April – June extreme heat (up to 45 °C), June – September monsoon; June – September for Ladakh and the Himalaya",
+   "transportMode": "Trains (Gatimaan / Vande Bharat) or private driver + Uber, Ola and metro in town",
+   "paceLevel": "Intense (culture & history)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stop 1: Delhi (Old & New Delhi)",
+     "recommendedDuration": "2-3 Days",
+     "durationBadge": "2-3 Days",
+     "highlights": [
+      "Red Fort and Chandni Chowk",
+      "Humayun’s Tomb (UNESCO)",
+      "Qutub Minar (UNESCO)",
+      "Jama Masjid"
+     ],
+     "activities": [
+      "Take a bazaar and food walk in Old Delhi.",
+      "See the free community kitchen (langar) at Gurdwara Bangla Sahib.",
+      "Walk along India Gate and Kartavya Path."
+     ],
+     "foodAndDrinks": [
+      "Butter chicken and naan",
+      "Parathas at Paranthe Wali Gali",
+      "Masala chai"
+     ],
+     "criticalTips": [
+      "Air pollution can be severe from November to January; check the AQI and carry an N95 mask.",
+      "The metro’s first carriage is reserved for women; watch your wallet in crowds."
+     ],
+     "mapsQuery": "Red Fort, Delhi, India"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stop 2: Agra (Taj Mahal)",
+     "recommendedDuration": "1-2 Days",
+     "durationBadge": "1-2 Days",
+     "highlights": [
+      "Taj Mahal at sunrise",
+      "Agra Fort (UNESCO)",
+      "View of the Taj across the river from Mehtab Bagh",
+      "Fatehpur Sikri (UNESCO)"
+     ],
+     "activities": [
+      "Visit the Taj Mahal at opening (sunrise).",
+      "Watch a marble inlay (pietra dura) workshop.",
+      "Stop at Fatehpur Sikri on the way to Jaipur."
+     ],
+     "foodAndDrinks": [
+      "Mughlai cuisine (kebabs and korma)",
+      "Agra petha (ash-gourd sweet)"
+     ],
+     "criticalTips": [
+      "The Taj Mahal is closed on Fridays; food, tripods and large bags aren’t allowed.",
+      "Buy tickets on the official ASI website and ignore self-styled guides at the gate."
+     ],
+     "mapsQuery": "Taj Mahal, Agra, India"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stop 3: Jaipur (the Pink City)",
+     "recommendedDuration": "2 Days",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "Amber Fort",
+      "Hawa Mahal (Palace of the Winds)",
+      "City Palace and Jantar Mantar observatory (UNESCO)"
+     ],
+     "activities": [
+      "Watch sunset from Nahargarh Fort.",
+      "Shop for textiles and jewellery in Johari and Bapu bazaars.",
+      "Join a block-printing workshop."
+     ],
+     "foodAndDrinks": [
+      "Dal baati churma",
+      "Pyaaz kachori and lassi"
+     ],
+     "criticalTips": [
+      "Walk or take a jeep up to Amber Fort instead of riding an elephant.",
+      "A composite ticket saves money across several monuments."
+     ],
+     "mapsQuery": "Amber Fort, Jaipur, India"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Butter chicken",
+     "Biryani",
+     "Masala dosa",
+     "Chole bhature (chickpea curry with fried bread)"
+    ],
+    "drinks": [
+     "Masala chai",
+     "Lassi",
+     "Nimbu pani"
+    ],
+    "streetFoods": [
+     "Pani puri",
+     "Samosa",
+     "Jalebi"
+    ],
+    "diningAdvice": "Many restaurants are fully vegetarian; for halal meat, Muslim eateries in Old Delhi and Agra are good choices. Ask for “kam teekha” (less spicy) to tone down the heat."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Type D/M plug adapter",
+     "Loose, light clothes covering shoulders and knees, plus a scarf",
+     "N95 mask and hand sanitiser",
+     "Stomach medicine and oral rehydration salts (ORS)"
+    ],
+    "safetyAndEtiquette": [
+     "Use only official taxis or Uber/Ola and don’t believe “hotel closed” stories.",
+     "Use your right hand for food and money and remove shoes at religious sites."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "D",
+     "M"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Sockets are mostly Indian round three-pin (D, M for large appliances); thin two-pin chargers usually fit, thick Schuko plugs don’t. Bring an adapter."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Tap water isn’t drinkable; drink sealed bottled water and check the cap is intact. Brush your teeth with bottled water too.",
+    "vaccines": [
+     "Hepatitis A and typhoid",
+     "Tetanus-diphtheria and measles (routine)",
+     "Rabies, and Japanese encephalitis for rural/long stays; ask a doctor about malaria prevention in some regions. A yellow fever certificate is required if arriving from an endemic country."
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "108"
+   },
+   "tipping": {
+    "custom": "Tipping is common and expected.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "No extra tip if a service charge is added; 300-500 INR a day for drivers and 50-100 INR for porters is common."
+   },
+   "taxFree": {
+    "vatRefundPercent": "None",
+    "minSpend": "Not applicable",
+    "customsNote": "India offers no GST/VAT refund to tourists. Exporting antiques (over 100 years old) is prohibited; taking Indian rupees out of the country is limited (25,000 INR)."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.10 - $0.50",
+    "topCarriers": [
+     "Jio",
+     "Airtel",
+     "Vi (Vodafone Idea)"
+    ],
+    "airportSimTrapWarning": "Tourist SIM packs at airport kiosks can cost several times more than official stores in town and activation may be delayed; an international eSIM for the first days, then an Airtel/Jio store in town, is cheapest."
+   },
+   "touristScams": [
+    {
+     "title": "Fake tourist office",
+     "desc": "Your driver says the hotel is closed and takes you to an “official tourist office” in Paharganj or Connaught Place that sells overpriced tours.",
+     "tip": "Call your hotel yourself and insist on going straight to the address."
+    },
+    {
+     "title": "Gem export trap",
+     "desc": "New “friends” in Jaipur promise profit if you carry gems abroad and take a big card payment.",
+     "tip": "Refuse “investment” offers and buy gems only for yourself from certified shops."
+    },
+    {
+     "title": "Cremation wood donation",
+     "desc": "At Varanasi’s Manikarnika Ghat, people posing as officials ask for money for wood for the poor.",
+     "tip": "Decline politely and watch the ceremonies from a distance without photos."
+    }
+   ]
+  }
+ },
+ "de": {
+  "insights": {
+   "currency": "Indische Rupie (INR)",
+   "plugType": "Typ C, D, M (230V, 50Hz)",
+   "bestMonths": "Oktober – März (kühl und trocken im Norden und in Rajasthan; Dezember – Januar neblige Morgen); April – Juni extreme Hitze (bis 45 °C), Juni – September Monsun; Juni – September für Ladakh und den Himalaya",
+   "safety": {
+    "crimeRateSummary": "In Touristengebieten sind Betrug, Taschendiebstahl und Abzocke verbreitet; allein reisende Frauen sollten auf Belästigung achten. Für Teile von Jammu und Kaschmir, Manipur und die Grenze zu Pakistan gelten Reisewarnungen; in Großstädten sind Luftverschmutzung und Verkehr ernste Risiken.",
+    "commonScams": [
+     "Fahrer in Delhi, die behaupten, „Ihr Hotel ist geschlossen/abgebrannt“, und zu einem falschen Touristenbüro fahren",
+     "Die Edelstein-Exportmasche in Jaipur mit versprochenem Gewinn für den Transport ins Ausland",
+     "Personen am Taj Mahal und in Varanasi, die sich als offizielle Guides ausgeben oder „Spenden für Verbrennungsholz“ sammeln"
+    ],
+    "safeTravelTips": [
+     "An Flughäfen und Bahnhöfen Uber/Ola oder den offiziellen Prepaid-Taxischalter nutzen und „Touristenbüro“-Umwege ignorieren.",
+     "Bei Straßenständen belebte mit heißem Essen wählen, nur Flaschenwasser trinken und Eis meiden.",
+     "Reisende Frauen sollten Schultern und Beine bedecken, nachts nicht allein unterwegs sein und in Zügen Frauenabteile nutzen."
+    ],
+    "emergencyNumbers": {
+     "police": "112",
+     "ambulance": "108",
+     "general": "112"
+    },
+    "safetyScore": 55,
+    "safetyLevel": "Mäßiges Risiko",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Sehr schnelles 4G/5G in Städten (Jio und Airtel mit breitem 5G-Netz); schwach in Bergen und abgelegenen Gebieten, gelegentliche Sperren in Jammu und Kaschmir",
+    "costPerGbUsd": "~0.10 - 0.50 $",
+    "esimAvailability": "Verfügbar – internationale eSIMs sind einfach; lokale SIMs brauchen Pass, Visum und Foto, die Aktivierung kann einige Stunden dauern",
+    "bestCarriers": [
+     "Jio",
+     "Airtel",
+     "Vi (Vodafone Idea)"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Gut – moderne Metros in Delhi, Mumbai und Bengaluru; riesiges Bahnnetz (Vande Bharat, Gatimaan Express) und günstige Inlandsflüge; Stadtverkehr sehr dicht",
+    "costLevel": "Günstig",
+    "singleTicketUsd": "~0.15 - 0.80 $ (Delhi Metro)",
+    "dailyPassUsd": "~2.50 $ (Delhi-Metro-Touristenkarte für 1 Tag, inkl. Pfand)",
+    "popularRideApps": [
+     "Uber",
+     "Ola",
+     "Rapido"
+    ],
+    "taxiAdvice": "Uber und Ola sind in Städten am einfachsten; Rapido bietet günstige Motorradtaxis und Autorikschas. Autorikschas auf der Straße nutzen selten das Taxameter, Preis vorher festlegen. Züge über IRCTC oder seriöse Apps buchen."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "20 - 35 $",
+    "dailyBudgetMidrangeUsd": "50 - 110 $",
+    "budgetMealUsd": "1.50 - 4 $",
+    "coffeeUsd": "1 - 3.50 $",
+    "waterBottleUsd": "0.25 - 0.40 $",
+    "hostelDormUsd": "6 - 15 $",
+    "hotel3StarUsd": "30 - 75 $",
+    "flightCostIndex": "Mittel (Istanbul – Delhi/Mumbai direkt ~6,5 Std.)",
+    "flightTip": "Turkish Airlines und IndiGo fliegen direkt von Istanbul nach Delhi und Mumbai. Inlandsflüge mit IndiGo und Air India sind günstig; Delhi – Agra dauert mit dem Gatimaan Express ~1 Std. 40 Min."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Mit zusammengelegten Händen „Namaste“ sagen; Geld, Essen und Geschenke mit der rechten Hand geben und nehmen.",
+     "In Tempeln, Moscheen, Gurdwaras und Wohnungen Schuhe ausziehen; in Gurdwaras den Kopf bedecken.",
+     "Das seitliche Kopfwackeln bedeutet meist „ja / okay“; Zärtlichkeiten in der Öffentlichkeit sind verpönt."
+    ],
+    "festivals": [
+     "Diwali – Lichterfest (Oktober/November)",
+     "Holi – Fest der Farben (März)",
+     "Durga Puja / Navratri (September/Oktober)"
+    ],
+    "lifestyle": "Voll, bunt und intensiv: Familienbande sind eng, Chai gibt es an jeder Ecke, Cricket und Bollywood sind gemeinsame Leidenschaften; Vegetarismus ist verbreitet, Küche, Sprache und Bräuche wechseln von Region zu Region."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Taj Mahal (Agra, UNESCO)",
+     "Jaipur – Amber Fort und Hawa Mahal",
+     "Varanasi – die Ghats am Ganges",
+     "Delhi – Rotes Fort, Qutub Minar und Humayun-Mausoleum",
+     "Amritsar – der Goldene Tempel",
+     "Backwaters von Kerala (Alappuzha)"
+    ],
+    "bestSeasons": "Oktober – März (kühl und trocken im Norden und in Rajasthan; Dezember – Januar neblige Morgen); April – Juni extreme Hitze (bis 45 °C), Juni – September Monsun; Juni – September für Ladakh und den Himalaya",
+    "travelStyleTip": "Indien ist so groß wie ein Kontinent; für den ersten Besuch ist das Goldene Dreieck (Delhi – Agra – Jaipur) ideal. Lange Strecken per Inlandsflug oder Nachtzug zurücklegen und die Tage nicht überladen."
+   },
+   "religion": {
+    "primaryReligions": "Hinduismus (~80 %), Islam (~14 %), Christentum (~2 %), Sikhismus (~1,7 %), Buddhismus und Jainismus.",
+    "respectNorms": "An religiösen Stätten Schultern und Knie bedecken und Schuhe ausziehen; manche Hindutempel sind für Nicht-Hindus gesperrt. In Varanasi keine Einäscherungen fotografieren.",
+    "sacredSites": [
+     "Goldener Tempel – Harmandir Sahib (Amritsar)",
+     "Kashi-Vishwanath-Tempel und Ghats von Varanasi",
+     "Jama Masjid (Delhi)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Hindi (Devanagari) und Englisch sind auf Bundesebene Amtssprachen; die Verfassung erkennt 22 Sprachen an (Bengalisch, Tamil, Telugu, Marathi usw.).",
+    "englishProficiency": "Gut in Städten, Hotels und im Geschäftsleben; im Süden ist Englisch oft nützlicher als Hindi.",
+    "phrases": [
+     {
+      "phrase": "नमस्ते (Namaste)",
+      "meaning": "Hallo",
+      "translation": "Hallo",
+      "pronunciation": "na-mas-TAY"
+     },
+     {
+      "phrase": "धन्यवाद / शुक्रिया (Dhanyavaad / Shukriya)",
+      "meaning": "Danke",
+      "translation": "Danke",
+      "pronunciation": "dhun-ya-VAAD / shuk-REE-ya"
+     },
+     {
+      "phrase": "कितने का है? (Kitne ka hai?)",
+      "meaning": "Wie viel kostet das?",
+      "translation": "Wie viel kostet das?",
+      "pronunciation": "KIT-nay ka hai"
+     },
+     {
+      "phrase": "बहुत स्वादिष्ट है (Bahut swadisht hai)",
+      "meaning": "Sehr lecker",
+      "translation": "Sehr lecker",
+      "pronunciation": "ba-HUT swa-DISHT hai"
+     },
+     {
+      "phrase": "नहीं चाहिए (Nahin chahiye)",
+      "meaning": "Ich möchte nicht (zu Verkäufern)",
+      "translation": "Ich möchte nicht (zu Verkäufern)",
+      "pronunciation": "na-HEEN CHAA-hi-ye"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Die Geschichte reicht von der Indus-Kultur über das Maurya- und Gupta-Reich bis zum 1526 gegründeten Mogulreich. Ab 1858 unter britischer Herrschaft (Raj), wurde Indien 1947 durch Gandhis gewaltfreien Widerstand unabhängig und 1950 zur Republik.",
+    "milestones": [
+     "um 260 v. Chr.: Kaiser Ashoka wendet sich dem Buddhismus zu",
+     "1526: Babur gründet das Mogulreich",
+     "1653: Fertigstellung des Taj Mahal",
+     "1947: Unabhängigkeit"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Butter Chicken (Delhi)",
+     "Biryani (gewürzter Reis mit Fleisch)",
+     "Masala Dosa (südindischer Reispfannkuchen mit Kartoffeln)"
+    ],
+    "traditionalDrinks": [
+     "Masala Chai",
+     "Lassi (Joghurtgetränk)",
+     "Nimbu Pani (gewürzte Limonade)"
+    ],
+    "streetFoodAndDesserts": [
+     "Pani Puri / Golgappa",
+     "Samosa",
+     "Jalebi und Gulab Jamun"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Mahatma Gandhi (Führer der Unabhängigkeitsbewegung)",
+     "Rabindranath Tagore (Literaturnobelpreisträger)",
+     "Sachin Tendulkar (Cricket-Legende)"
+    ],
+    "strongSectors": [
+     "IT- und Softwaredienstleistungen",
+     "Generika („Apotheke der Welt“)",
+     "Raumfahrt (ISRO, Mondlandung Chandrayaan-3)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Einheimische zahlen fast alles per UPI-QR-Code; für Ausländer sind Karten (in Städten) und Bargeld am praktischsten. Kleine Scheine mitnehmen, Händler können große oft nicht wechseln.",
+    "tippingCulture": "Im Restaurant ~10 %, wenn kein Service berechnet wird; kleine Trinkgelder für Fahrer, Guides und Hotelpersonal werden erwartet.",
+    "economicPillars": "IT- und Unternehmensdienste, Pharma, Landwirtschaft, Industrie (Elektronik, Automobil) und ein riesiger Binnenmarkt."
+   }
+  },
+  "itin": {
+   "routeName": "Das Goldene Dreieck: Delhi, Agra & Jaipur",
+   "routeSummary": "Eine klassische 7-tägige Route mit dem schönsten Erbe der Moguln und Rajputen: Festungen und Basare in Delhi, das Taj Mahal in Agra sowie Jaipurs Rosa Stadt und das Amber Fort.",
+   "totalDays": 7,
+   "idealDurationText": "7-tägige Reise",
+   "bestSeason": "Oktober – März (kühl und trocken im Norden und in Rajasthan; Dezember – Januar neblige Morgen); April – Juni extreme Hitze (bis 45 °C), Juni – September Monsun; Juni – September für Ladakh und den Himalaya",
+   "transportMode": "Züge (Gatimaan / Vande Bharat) oder Privatfahrer + Uber, Ola und Metro in der Stadt",
+   "paceLevel": "Intensiv (Kultur & Geschichte)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stopp 1: Delhi (Alt- & Neu-Delhi)",
+     "recommendedDuration": "2-3 Tage",
+     "durationBadge": "2-3 Tage",
+     "highlights": [
+      "Rotes Fort und Chandni Chowk",
+      "Humayun-Mausoleum (UNESCO)",
+      "Qutub Minar (UNESCO)",
+      "Jama Masjid"
+     ],
+     "activities": [
+      "Einen Basar- und Food-Rundgang in Alt-Delhi machen.",
+      "Die kostenlose Gemeinschaftsküche (Langar) im Gurdwara Bangla Sahib erleben.",
+      "Am India Gate und dem Kartavya Path entlanggehen."
+     ],
+     "foodAndDrinks": [
+      "Butter Chicken und Naan",
+      "Parathas in der Paranthe Wali Gali",
+      "Masala Chai"
+     ],
+     "criticalTips": [
+      "Von November bis Januar kann die Luftverschmutzung extrem sein; AQI prüfen und N95-Maske mitnehmen.",
+      "Der erste Metrowagen ist für Frauen reserviert; im Gedränge auf die Geldbörse achten."
+     ],
+     "mapsQuery": "Red Fort, Delhi, India"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stopp 2: Agra (Taj Mahal)",
+     "recommendedDuration": "1-2 Tage",
+     "durationBadge": "1-2 Tage",
+     "highlights": [
+      "Taj Mahal bei Sonnenaufgang",
+      "Rotes Fort von Agra (UNESCO)",
+      "Blick auf das Taj vom Mehtab Bagh jenseits des Flusses",
+      "Fatehpur Sikri (UNESCO)"
+     ],
+     "activities": [
+      "Das Taj Mahal zur Öffnung (Sonnenaufgang) besuchen.",
+      "Eine Marmor-Intarsien-Werkstatt (Pietra Dura) ansehen.",
+      "Auf dem Weg nach Jaipur in Fatehpur Sikri halten."
+     ],
+     "foodAndDrinks": [
+      "Mogulküche (Kebabs und Korma)",
+      "Agra Petha (Kürbis-Süßigkeit)"
+     ],
+     "criticalTips": [
+      "Das Taj Mahal ist freitags geschlossen; Essen, Stative und große Taschen sind verboten.",
+      "Tickets auf der offiziellen ASI-Website kaufen und selbsternannte Guides am Tor ignorieren."
+     ],
+     "mapsQuery": "Taj Mahal, Agra, India"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stopp 3: Jaipur (die Rosa Stadt)",
+     "recommendedDuration": "2 Tage",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "Amber Fort",
+      "Hawa Mahal (Palast der Winde)",
+      "Stadtpalast und Observatorium Jantar Mantar (UNESCO)"
+     ],
+     "activities": [
+      "Den Sonnenuntergang vom Nahargarh Fort ansehen.",
+      "In den Basaren Johari und Bapu Textilien und Schmuck kaufen.",
+      "An einem Blockdruck-Workshop teilnehmen."
+     ],
+     "foodAndDrinks": [
+      "Dal Baati Churma",
+      "Pyaaz Kachori und Lassi"
+     ],
+     "criticalTips": [
+      "Zum Amber Fort laufen oder Jeep nehmen statt auf dem Elefanten reiten.",
+      "Ein Kombiticket spart bei mehreren Monumenten Geld."
+     ],
+     "mapsQuery": "Amber Fort, Jaipur, India"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Butter Chicken",
+     "Biryani",
+     "Masala Dosa",
+     "Chole Bhature (Kichererbsencurry mit frittiertem Brot)"
+    ],
+    "drinks": [
+     "Masala Chai",
+     "Lassi",
+     "Nimbu Pani"
+    ],
+    "streetFoods": [
+     "Pani Puri",
+     "Samosa",
+     "Jalebi"
+    ],
+    "diningAdvice": "Viele Restaurants sind rein vegetarisch; für Halal-Fleisch sind muslimische Lokale in Alt-Delhi und Agra gut. Mit „kam teekha“ (weniger scharf) lässt sich die Schärfe senken."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Reiseadapter Typ D/M",
+     "Lockere, leichte Kleidung, die Schultern und Knie bedeckt, und ein Tuch",
+     "N95-Maske und Handdesinfektion",
+     "Magenmittel und Elektrolytpulver (ORS)"
+    ],
+    "safetyAndEtiquette": [
+     "Nur offizielle Taxis oder Uber/Ola nutzen und „Hotel geschlossen“-Geschichten nicht glauben.",
+     "Für Essen und Geld die rechte Hand benutzen und an religiösen Orten Schuhe ausziehen."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "D",
+     "M"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Steckdosen sind meist indische Dreipolsteckdosen (D, M für große Geräte); dünne Eurostecker passen meist, dicke Schukostecker nicht. Adapter mitnehmen."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Leitungswasser nicht trinken; versiegeltes Flaschenwasser kaufen und den Verschluss prüfen. Auch Zähne mit Flaschenwasser putzen.",
+    "vaccines": [
+     "Hepatitis A und Typhus",
+     "Tetanus-Diphtherie und Masern (Standard)",
+     "Tollwut sowie Japanische Enzephalitis bei ländlichen/langen Aufenthalten; Malariaprophylaxe für manche Regionen ärztlich abklären. Gelbfieber-Nachweis bei Einreise aus Endemiegebieten."
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "108"
+   },
+   "tipping": {
+    "custom": "Trinkgeld ist üblich und wird erwartet.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Kein Extra, wenn Service berechnet wird; 300-500 INR pro Tag für Fahrer und 50-100 INR für Träger sind üblich."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Keine",
+    "minSpend": "Nicht zutreffend",
+    "customsNote": "Indien erstattet Touristen keine GST/MwSt. Die Ausfuhr von Antiquitäten (über 100 Jahre) ist verboten; die Ausfuhr indischer Rupien ist begrenzt (25.000 INR)."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.10 - $0.50",
+    "topCarriers": [
+     "Jio",
+     "Airtel",
+     "Vi (Vodafone Idea)"
+    ],
+    "airportSimTrapWarning": "Touristen-SIM-Pakete an Flughafenkiosken kosten oft ein Vielfaches der offiziellen Läden in der Stadt, die Aktivierung kann dauern; günstig ist eine internationale eSIM für die ersten Tage und danach ein Airtel-/Jio-Shop."
+   },
+   "touristScams": [
+    {
+     "title": "Falsches Touristenbüro",
+     "desc": "Der Fahrer behauptet, das Hotel sei geschlossen, und bringt Sie zu einem „offiziellen Touristenbüro“ in Paharganj oder Connaught Place, das überteuerte Touren verkauft.",
+     "tip": "Das Hotel selbst anrufen und darauf bestehen, direkt zur Adresse zu fahren."
+    },
+    {
+     "title": "Edelstein-Exportfalle",
+     "desc": "Neue „Freunde“ in Jaipur versprechen Gewinn, wenn Sie Steine ins Ausland mitnehmen, und belasten Ihre Karte hoch.",
+     "tip": "„Investment“-Angebote ablehnen und Steine nur für sich in zertifizierten Läden kaufen."
+    },
+    {
+     "title": "Spende für Verbrennungsholz",
+     "desc": "Am Manikarnika Ghat in Varanasi bitten angebliche Offizielle um Geld für Holz für Arme.",
+     "tip": "Höflich ablehnen und die Zeremonien aus der Ferne ohne Fotos betrachten."
+    }
+   ]
+  }
+ },
+ "es": {
+  "insights": {
+   "currency": "Rupia india (INR)",
+   "plugType": "Tipo C, D, M (230V, 50Hz)",
+   "bestMonths": "Octubre – marzo (fresco y seco en el norte y Rajastán; mañanas con niebla en diciembre – enero); abril – junio calor extremo (hasta 45 °C), junio – septiembre monzón; junio – septiembre para Ladakh y el Himalaya",
+   "safety": {
+    "crimeRateSummary": "En zonas turísticas son comunes las estafas, los carteristas y los sobreprecios; las viajeras solas deben estar atentas al acoso. Hay advertencias oficiales para partes de Jammu y Cachemira, Manipur y la frontera con Pakistán; en las grandes ciudades la contaminación y el tráfico son riesgos serios.",
+    "commonScams": [
+     "Conductores en Delhi que dicen “tu hotel está cerrado/se quemó” y te llevan a una falsa oficina de turismo",
+     "La estafa de exportación de gemas en Jaipur que promete ganancias por llevarlas al extranjero",
+     "Personas en el Taj Mahal y Varanasi que se hacen pasar por guías oficiales o piden “donativos para leña de cremación”"
+    ],
+    "safeTravelTips": [
+     "Usa Uber/Ola o el mostrador oficial de taxi prepago en aeropuertos y estaciones e ignora desvíos a “oficinas de turismo”.",
+     "En puestos callejeros elige los concurridos que sirven comida caliente, bebe solo agua embotellada y evita el hielo.",
+     "Las viajeras deben cubrir hombros y piernas, evitar viajar solas de noche y usar los vagones para mujeres en los trenes."
+    ],
+    "emergencyNumbers": {
+     "police": "112",
+     "ambulance": "108",
+     "general": "112"
+    },
+    "safetyScore": 55,
+    "safetyLevel": "Riesgo Moderado",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60"
+   },
+   "internet": {
+    "networkCoverage": "4G/5G muy rápido en ciudades (Jio y Airtel tienen amplias redes 5G); débil en montañas y zonas remotas, cortes ocasionales en Jammu y Cachemira",
+    "costPerGbUsd": "~0.10 - 0.50 $",
+    "esimAvailability": "Disponible – las eSIM internacionales son fáciles; la SIM local requiere pasaporte, visado y foto y la activación tarda unas horas",
+    "bestCarriers": [
+     "Jio",
+     "Airtel",
+     "Vi (Vodafone Idea)"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Bueno – metros modernos en Delhi, Bombay y Bangalore; enorme red ferroviaria (Vande Bharat, Gatimaan Express) y vuelos internos baratos; tráfico urbano muy denso",
+    "costLevel": "Barato",
+    "singleTicketUsd": "~0.15 - 0.80 $ (metro de Delhi)",
+    "dailyPassUsd": "~2.50 $ (tarjeta turística de 1 día del metro de Delhi, con depósito reembolsable)",
+    "popularRideApps": [
+     "Uber",
+     "Ola",
+     "Rapido"
+    ],
+    "taxiAdvice": "Uber y Ola son lo más fácil en ciudades; Rapido ofrece mototaxis y autorickshaws baratos. Los autorickshaws de la calle rara vez usan taxímetro, fija el precio antes. Reserva trenes por IRCTC o apps fiables."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "20 - 35 $",
+    "dailyBudgetMidrangeUsd": "50 - 110 $",
+    "budgetMealUsd": "1.50 - 4 $",
+    "coffeeUsd": "1 - 3.50 $",
+    "waterBottleUsd": "0.25 - 0.40 $",
+    "hostelDormUsd": "6 - 15 $",
+    "hotel3StarUsd": "30 - 75 $",
+    "flightCostIndex": "Moderado (Estambul – Delhi/Bombay directo ~6,5 h)",
+    "flightTip": "Turkish Airlines e IndiGo vuelan directo de Estambul a Delhi y Bombay. Los vuelos internos con IndiGo y Air India son baratos; Delhi – Agra son ~1 h 40 min en el Gatimaan Express."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Saluda con las palmas juntas y “Namaste”; da y recibe dinero, comida y regalos con la mano derecha.",
+     "Descálzate en templos, mezquitas, gurdwaras y casas; cúbrete la cabeza en los gurdwaras.",
+     "El balanceo lateral de la cabeza suele significar “sí / vale”; las muestras de afecto en público están mal vistas."
+    ],
+    "festivals": [
+     "Diwali – fiesta de las luces (octubre/noviembre)",
+     "Holi – fiesta de los colores (marzo)",
+     "Durga Puja / Navratri (septiembre/octubre)"
+    ],
+    "lifestyle": "Bulliciosa, colorida e intensa: los lazos familiares son fuertes, el chai se toma en cada esquina, el críquet y Bollywood son pasiones compartidas; el vegetarianismo es común y cocina, idioma y costumbres cambian según la región."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Taj Mahal (Agra, UNESCO)",
+     "Jaipur – fuerte de Amber y Hawa Mahal",
+     "Varanasi – los ghats del Ganges",
+     "Delhi – Fuerte Rojo, Qutub Minar y tumba de Humayun",
+     "Amritsar – el Templo Dorado",
+     "Remansos de Kerala (Alappuzha)"
+    ],
+    "bestSeasons": "Octubre – marzo (fresco y seco en el norte y Rajastán; mañanas con niebla en diciembre – enero); abril – junio calor extremo (hasta 45 °C), junio – septiembre monzón; junio – septiembre para Ladakh y el Himalaya",
+    "travelStyleTip": "India tiene tamaño de continente; para una primera visita, el Triángulo de Oro (Delhi – Agra – Jaipur) es ideal. Cubre las grandes distancias en vuelo interno o tren nocturno y no sobrecargues los días."
+   },
+   "religion": {
+    "primaryReligions": "Hinduismo (~80 %), islam (~14 %), cristianismo (~2 %), sijismo (~1,7 %), budismo y jainismo.",
+    "respectNorms": "En lugares religiosos cubre hombros y rodillas y descálzate; algunos templos hindúes no admiten a no hindúes. No fotografíes cremaciones en Varanasi.",
+    "sacredSites": [
+     "Templo Dorado – Harmandir Sahib (Amritsar)",
+     "Templo Kashi Vishwanath y ghats de Varanasi",
+     "Jama Masjid (Delhi)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "El hindi (devanagari) y el inglés son oficiales a nivel federal; la constitución reconoce 22 lenguas (bengalí, tamil, telugu, maratí, etc.).",
+    "englishProficiency": "Bueno en ciudades, hoteles y negocios; en el sur el inglés suele ser más útil que el hindi.",
+    "phrases": [
+     {
+      "phrase": "नमस्ते (Namaste)",
+      "meaning": "Hola",
+      "translation": "Hola",
+      "pronunciation": "na-mas-TAY"
+     },
+     {
+      "phrase": "धन्यवाद / शुक्रिया (Dhanyavaad / Shukriya)",
+      "meaning": "Gracias",
+      "translation": "Gracias",
+      "pronunciation": "dhun-ya-VAAD / shuk-REE-ya"
+     },
+     {
+      "phrase": "कितने का है? (Kitne ka hai?)",
+      "meaning": "¿Cuánto cuesta?",
+      "translation": "¿Cuánto cuesta?",
+      "pronunciation": "KIT-nay ka hai"
+     },
+     {
+      "phrase": "बहुत स्वादिष्ट है (Bahut swadisht hai)",
+      "meaning": "Está muy rico",
+      "translation": "Está muy rico",
+      "pronunciation": "ba-HUT swa-DISHT hai"
+     },
+     {
+      "phrase": "नहीं चाहिए (Nahin chahiye)",
+      "meaning": "No lo quiero (a vendedores)",
+      "translation": "No lo quiero (a vendedores)",
+      "pronunciation": "na-HEEN CHAA-hi-ye"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Su historia va de la civilización del Indo a los imperios maurya y gupta y al Imperio mogol fundado en 1526. Bajo el Raj británico desde 1858, la India se independizó en 1947 gracias a la resistencia no violenta liderada por Gandhi y se convirtió en república en 1950.",
+    "milestones": [
+     "c. 260 a. C.: el emperador Ashoka abraza el budismo",
+     "1526: Babur funda el Imperio mogol",
+     "1653: se termina el Taj Mahal",
+     "1947: Independencia"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Pollo a la mantequilla (Delhi)",
+     "Biryani (arroz especiado con carne)",
+     "Masala dosa (crep de arroz del sur con patata)"
+    ],
+    "traditionalDrinks": [
+     "Masala chai",
+     "Lassi (bebida de yogur)",
+     "Nimbu pani (limonada especiada)"
+    ],
+    "streetFoodAndDesserts": [
+     "Pani puri / golgappa",
+     "Samosa",
+     "Jalebi y gulab jamun"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Mahatma Gandhi (líder de la independencia)",
+     "Rabindranath Tagore (poeta, premio Nobel)",
+     "Sachin Tendulkar (leyenda del críquet)"
+    ],
+    "strongSectors": [
+     "Servicios de TI y software",
+     "Medicamentos genéricos (“farmacia del mundo”)",
+     "Tecnología espacial (ISRO, alunizaje del Chandrayaan-3)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Los locales pagan casi todo con QR de UPI; para extranjeros lo más práctico son tarjetas (en ciudades) y efectivo. Lleva billetes pequeños, los vendedores a menudo no tienen cambio.",
+    "tippingCulture": "Deja ~10 % en restaurantes si no hay cargo de servicio; se esperan pequeñas propinas a conductores, guías y personal de hotel.",
+    "economicPillars": "Servicios de TI y empresariales, farmacia, agricultura, manufactura (electrónica, automoción) y un enorme mercado interno."
+   }
+  },
+  "itin": {
+   "routeName": "El Triángulo de Oro: Delhi, Agra y Jaipur",
+   "routeSummary": "Una ruta clásica de 7 días que une lo mejor del legado mogol y rajput: fuertes y bazares de Delhi, el Taj Mahal en Agra y la Ciudad Rosa y el fuerte de Amber en Jaipur.",
+   "totalDays": 7,
+   "idealDurationText": "Itinerario de 7 días",
+   "bestSeason": "Octubre – marzo (fresco y seco en el norte y Rajastán; mañanas con niebla en diciembre – enero); abril – junio calor extremo (hasta 45 °C), junio – septiembre monzón; junio – septiembre para Ladakh y el Himalaya",
+   "transportMode": "Trenes (Gatimaan / Vande Bharat) o conductor privado + Uber, Ola y metro en la ciudad",
+   "paceLevel": "Intenso (cultura e historia)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Delhi (Vieja y Nueva Delhi)",
+     "recommendedDuration": "2-3 Días",
+     "durationBadge": "2-3 Días",
+     "highlights": [
+      "Fuerte Rojo y Chandni Chowk",
+      "Tumba de Humayun (UNESCO)",
+      "Qutub Minar (UNESCO)",
+      "Jama Masjid"
+     ],
+     "activities": [
+      "Haz una ruta de bazares y comida por la Vieja Delhi.",
+      "Visita la cocina comunitaria gratuita (langar) del Gurdwara Bangla Sahib.",
+      "Pasea por la Puerta de la India y el Kartavya Path."
+     ],
+     "foodAndDrinks": [
+      "Pollo a la mantequilla y naan",
+      "Parathas en Paranthe Wali Gali",
+      "Masala chai"
+     ],
+     "criticalTips": [
+      "De noviembre a enero la contaminación puede ser grave; consulta el AQI y lleva mascarilla N95.",
+      "El primer vagón del metro es solo para mujeres; vigila la cartera entre la multitud."
+     ],
+     "mapsQuery": "Red Fort, Delhi, India"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Agra (Taj Mahal)",
+     "recommendedDuration": "1-2 Días",
+     "durationBadge": "1-2 Días",
+     "highlights": [
+      "Taj Mahal al amanecer",
+      "Fuerte de Agra (UNESCO)",
+      "Vista del Taj desde Mehtab Bagh, al otro lado del río",
+      "Fatehpur Sikri (UNESCO)"
+     ],
+     "activities": [
+      "Visita el Taj Mahal al abrir (amanecer).",
+      "Observa un taller de taracea de mármol (pietra dura).",
+      "Para en Fatehpur Sikri camino de Jaipur."
+     ],
+     "foodAndDrinks": [
+      "Cocina mogol (kebabs y korma)",
+      "Petha de Agra (dulce de calabaza)"
+     ],
+     "criticalTips": [
+      "El Taj Mahal cierra los viernes; no se permiten comida, trípodes ni bolsos grandes.",
+      "Compra las entradas en la web oficial de la ASI e ignora a los falsos guías de la puerta."
+     ],
+     "mapsQuery": "Taj Mahal, Agra, India"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Jaipur (la Ciudad Rosa)",
+     "recommendedDuration": "2 Días",
+     "durationBadge": "2 Días",
+     "highlights": [
+      "Fuerte de Amber",
+      "Hawa Mahal (Palacio de los Vientos)",
+      "Palacio de la Ciudad y observatorio Jantar Mantar (UNESCO)"
+     ],
+     "activities": [
+      "Contempla el atardecer desde el fuerte de Nahargarh.",
+      "Compra textiles y joyas en los bazares Johari y Bapu.",
+      "Participa en un taller de estampado con bloques."
+     ],
+     "foodAndDrinks": [
+      "Dal baati churma",
+      "Pyaaz kachori y lassi"
+     ],
+     "criticalTips": [
+      "Sube al fuerte de Amber a pie o en jeep en lugar de en elefante.",
+      "La entrada combinada ahorra dinero en varios monumentos."
+     ],
+     "mapsQuery": "Amber Fort, Jaipur, India"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Pollo a la mantequilla",
+     "Biryani",
+     "Masala dosa",
+     "Chole bhature (curri de garbanzos con pan frito)"
+    ],
+    "drinks": [
+     "Masala chai",
+     "Lassi",
+     "Nimbu pani"
+    ],
+    "streetFoods": [
+     "Pani puri",
+     "Samosa",
+     "Jalebi"
+    ],
+    "diningAdvice": "Muchos restaurantes son totalmente vegetarianos; para carne halal, los locales musulmanes de la Vieja Delhi y Agra son buena opción. Pide “kam teekha” (menos picante)."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptador de enchufe tipo D/M",
+     "Ropa holgada y ligera que cubra hombros y rodillas y un pañuelo",
+     "Mascarilla N95 y gel desinfectante",
+     "Medicinas para el estómago y sales de rehidratación (SRO)"
+    ],
+    "safetyAndEtiquette": [
+     "Usa solo taxis oficiales o Uber/Ola y no creas historias de “hotel cerrado”.",
+     "Usa la mano derecha para comida y dinero y descálzate en lugares religiosos."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "D",
+     "M"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Los enchufes son sobre todo indios de tres patas redondas (D, y M para grandes aparatos); los cargadores finos suelen entrar, los Schuko gruesos no. Lleva adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "El agua del grifo no es potable; bebe agua embotellada sellada y comprueba el tapón. Cepíllate los dientes también con agua embotellada.",
+    "vaccines": [
+     "Hepatitis A y fiebre tifoidea",
+     "Tétanos-difteria y sarampión (rutina)",
+     "Rabia y encefalitis japonesa para estancias rurales/largas; consulta sobre prevención de malaria en algunas regiones. Se exige certificado de fiebre amarilla si llegas de un país endémico."
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "108"
+   },
+   "tipping": {
+    "custom": "La propina es habitual y se espera.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Sin propina extra si hay cargo de servicio; 300-500 INR al día al conductor y 50-100 INR a los mozos es habitual."
+   },
+   "taxFree": {
+    "vatRefundPercent": "No hay",
+    "minSpend": "No aplica",
+    "customsNote": "India no devuelve el GST/IVA a turistas. Está prohibido exportar antigüedades (más de 100 años); sacar rupias indias del país está limitado (25.000 INR)."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.10 - $0.50",
+    "topCarriers": [
+     "Jio",
+     "Airtel",
+     "Vi (Vodafone Idea)"
+    ],
+    "airportSimTrapWarning": "Los paquetes SIM de los quioscos del aeropuerto pueden costar varias veces más que en tiendas oficiales y la activación se retrasa; lo más barato es una eSIM internacional los primeros días y luego una tienda Airtel/Jio."
+   },
+   "touristScams": [
+    {
+     "title": "Falsa oficina de turismo",
+     "desc": "El conductor dice que el hotel está cerrado y te lleva a una “oficina oficial de turismo” en Paharganj o Connaught Place que vende tours carísimos.",
+     "tip": "Llama tú mismo al hotel e insiste en ir directamente a la dirección."
+    },
+    {
+     "title": "Trampa de exportación de gemas",
+     "desc": "Nuevos “amigos” en Jaipur prometen ganancias si llevas gemas al extranjero y te cobran mucho con tarjeta.",
+     "tip": "Rechaza ofertas de “inversión” y compra gemas solo para ti en tiendas certificadas."
+    },
+    {
+     "title": "Donativo para leña de cremación",
+     "desc": "En el Manikarnika Ghat de Varanasi, falsos encargados piden dinero para leña de los pobres.",
+     "tip": "Rechaza con cortesía y observa las ceremonias de lejos y sin fotos."
+    }
+   ]
+  }
+ },
+ "ru": {
+  "insights": {
+   "currency": "Индийская рупия (INR)",
+   "plugType": "Тип C, D, M (230V, 50Hz)",
+   "bestMonths": "Октябрь – март (прохладно и сухо на севере и в Раджастхане; туманные утра в декабре – январе); апрель – июнь сильная жара (до 45 °C), июнь – сентябрь — муссон; для Ладакха и Гималаев — июнь – сентябрь",
+   "safety": {
+    "crimeRateSummary": "В туристических местах часты мошенничество, карманные кражи и завышение цен; путешествующим в одиночку женщинам стоит остерегаться приставаний. Официальные предупреждения касаются части Джамму и Кашмира, Манипура и границы с Пакистаном; в крупных городах серьёзные риски — смог и трафик.",
+    "commonScams": [
+     "Водители в Дели, уверяющие, что «ваш отель закрыт/сгорел», и везущие в фальшивое турбюро",
+     "Мошенничество с «экспортом камней» в Джайпуре с обещанием прибыли за их вывоз",
+     "Люди у Тадж-Махала и в Варанаси, выдающие себя за официальных гидов или собирающие «пожертвования на дрова для кремации»"
+    ],
+    "safeTravelTips": [
+     "В аэропортах и на вокзалах пользуйтесь Uber/Ola или официальной стойкой предоплаченного такси и игнорируйте «турбюро».",
+     "Выбирайте оживлённые уличные лотки с горячей едой, пейте только бутилированную воду и избегайте льда.",
+     "Женщинам стоит закрывать плечи и ноги, не ездить в одиночку ночью и пользоваться женскими вагонами в поездах."
+    ],
+    "emergencyNumbers": {
+     "police": "112",
+     "ambulance": "108",
+     "general": "112"
+    },
+    "safetyScore": 55,
+    "safetyLevel": "Умеренный Риск",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Очень быстрый 4G/5G в городах (широкие сети 5G у Jio и Airtel); слабый в горах и глубинке, временами отключения в Джамму и Кашмире",
+    "costPerGbUsd": "~0.10 - 0.50 $",
+    "esimAvailability": "Доступно – международные eSIM просты; для местной SIM нужны паспорт, виза и фото, активация занимает несколько часов",
+    "bestCarriers": [
+     "Jio",
+     "Airtel",
+     "Vi (Vodafone Idea)"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Хорошее – современное метро в Дели, Мумбаи и Бенгалуру; огромная сеть железных дорог (Vande Bharat, Gatimaan Express) и дешёвые внутренние рейсы; в городах очень плотный трафик",
+    "costLevel": "Дёшево",
+    "singleTicketUsd": "~0.15 - 0.80 $ (метро Дели)",
+    "dailyPassUsd": "~2.50 $ (туристическая карта метро Дели на 1 день, с возвратным залогом)",
+    "popularRideApps": [
+     "Uber",
+     "Ola",
+     "Rapido"
+    ],
+    "taxiAdvice": "Uber и Ola — самый простой вариант в городах; Rapido предлагает дешёвые мототакси и авторикши. Уличные авторикши редко включают счётчик — договаривайтесь заранее. Поезда бронируйте через IRCTC или надёжные приложения."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "20 - 35 $",
+    "dailyBudgetMidrangeUsd": "50 - 110 $",
+    "budgetMealUsd": "1.50 - 4 $",
+    "coffeeUsd": "1 - 3.50 $",
+    "waterBottleUsd": "0.25 - 0.40 $",
+    "hostelDormUsd": "6 - 15 $",
+    "hotel3StarUsd": "30 - 75 $",
+    "flightCostIndex": "Средний (Стамбул – Дели/Мумбаи напрямую ~6,5 ч)",
+    "flightTip": "Turkish Airlines и IndiGo летают напрямую из Стамбула в Дели и Мумбаи. Внутренние рейсы IndiGo и Air India недороги; Дели – Агра — ~1 ч 40 мин на поезде Gatimaan Express."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Приветствуйте, сложив ладони, словом «Намасте»; деньги, еду и подарки передавайте правой рукой.",
+     "Снимайте обувь в храмах, мечетях, гурдварах и домах; в гурдварах покрывайте голову.",
+     "Покачивание головой из стороны в сторону обычно означает «да / хорошо»; проявлять нежность на людях не принято."
+    ],
+    "festivals": [
+     "Дивали – праздник огней (октябрь/ноябрь)",
+     "Холи – праздник красок (март)",
+     "Дурга-пуджа / Наваратри (сентябрь/октябрь)"
+    ],
+    "lifestyle": "Многолюдная, яркая и насыщенная жизнь: крепкие семейные связи, чай на каждом углу, общая страсть к крикету и Болливуду; вегетарианство распространено, а кухня, язык и обычаи меняются от региона к региону."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Тадж-Махал (Агра, ЮНЕСКО)",
+     "Джайпур – форт Амбер и Хава-Махал",
+     "Варанаси – гхаты на Ганге",
+     "Дели – Красный форт, Кутб-Минар и гробница Хумаюна",
+     "Амритсар – Золотой храм",
+     "Каналы Кералы (Алаппужа)"
+    ],
+    "bestSeasons": "Октябрь – март (прохладно и сухо на севере и в Раджастхане; туманные утра в декабре – январе); апрель – июнь сильная жара (до 45 °C), июнь – сентябрь — муссон; для Ладакха и Гималаев — июнь – сентябрь",
+    "travelStyleTip": "Индия размером с континент; для первого визита идеален «Золотой треугольник» (Дели – Агра – Джайпур). Большие расстояния преодолевайте внутренними рейсами или ночными поездами и не перегружайте дни."
+   },
+   "religion": {
+    "primaryReligions": "Индуизм (~80 %), ислам (~14 %), христианство (~2 %), сикхизм (~1,7 %), буддизм и джайнизм.",
+    "respectNorms": "В святых местах закрывайте плечи и колени, снимайте обувь; в некоторые индуистские храмы не индуистов не пускают. Не фотографируйте кремации в Варанаси.",
+    "sacredSites": [
+     "Золотой храм – Хармандир-Сахиб (Амритсар)",
+     "Храм Каши-Вишванатх и гхаты Варанаси",
+     "Джама-Масджид (Дели)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Хинди (деванагари) и английский официальны на союзном уровне; конституция признаёт 22 языка (бенгальский, тамильский, телугу, маратхи и др.).",
+    "englishProficiency": "Хороший в городах, отелях и бизнесе; на юге английский часто полезнее хинди.",
+    "phrases": [
+     {
+      "phrase": "नमस्ते (Namaste)",
+      "meaning": "Здравствуйте",
+      "translation": "Здравствуйте",
+      "pronunciation": "na-mas-TAY"
+     },
+     {
+      "phrase": "धन्यवाद / शुक्रिया (Dhanyavaad / Shukriya)",
+      "meaning": "Спасибо",
+      "translation": "Спасибо",
+      "pronunciation": "dhun-ya-VAAD / shuk-REE-ya"
+     },
+     {
+      "phrase": "कितने का है? (Kitne ka hai?)",
+      "meaning": "Сколько стоит?",
+      "translation": "Сколько стоит?",
+      "pronunciation": "KIT-nay ka hai"
+     },
+     {
+      "phrase": "बहुत स्वादिष्ट है (Bahut swadisht hai)",
+      "meaning": "Очень вкусно",
+      "translation": "Очень вкусно",
+      "pronunciation": "ba-HUT swa-DISHT hai"
+     },
+     {
+      "phrase": "नहीं चाहिए (Nahin chahiye)",
+      "meaning": "Не нужно (продавцам)",
+      "translation": "Не нужно (продавцам)",
+      "pronunciation": "na-HEEN CHAA-hi-ye"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Глубокая история страны тянется от цивилизации долины Инда через империи Маурьев и Гуптов к основанной в 1526 году империи Великих Моголов. С 1858 года под властью Британского владычества, Индия получила независимость в 1947 году благодаря ненасильственному сопротивлению во главе с Ганди и в 1950 году стала республикой.",
+    "milestones": [
+     "ок. 260 до н. э.: император Ашока принимает буддизм",
+     "1526: Бабур основывает империю Великих Моголов",
+     "1653: завершение строительства Тадж-Махала",
+     "1947: независимость"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Баттер чикен (курица в томатно-сливочном соусе, Дели)",
+     "Бирьяни (пряный рис с мясом)",
+     "Масала доса (южноиндийский рисовый блин с картофелем)"
+    ],
+    "traditionalDrinks": [
+     "Масала-чай",
+     "Ласси (йогуртовый напиток)",
+     "Нимбу пани (пряный лимонад)"
+    ],
+    "streetFoodAndDesserts": [
+     "Пани пури / голгаппа",
+     "Самоса",
+     "Джалеби и гулаб джамун"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Махатма Ганди (лидер борьбы за независимость)",
+     "Рабиндранат Тагор (поэт, лауреат Нобелевской премии)",
+     "Сачин Тендулкар (легенда крикета)"
+    ],
+    "strongSectors": [
+     "ИТ и разработка ПО",
+     "Производство дженериков («аптека мира»)",
+     "Космические технологии (ISRO, посадка «Чандраян-3» на Луну)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Местные платят почти за всё QR-кодом через UPI; иностранцам удобнее карты (в городах) и наличные. Носите мелкие купюры — у продавцов часто нет сдачи с крупных.",
+    "tippingCulture": "В ресторанах ~10 %, если нет сервисного сбора; водители, гиды и персонал отелей ждут небольших чаевых.",
+    "economicPillars": "ИТ и бизнес-услуги, фармацевтика, сельское хозяйство, промышленность (электроника, автопром) и огромный внутренний рынок."
+   }
+  },
+  "itin": {
+   "routeName": "«Золотой треугольник»: Дели, Агра и Джайпур",
+   "routeSummary": "Классический 7-дневный маршрут с лучшими памятниками Моголов и раджпутов: форты и базары Дели, Тадж-Махал в Агре, «Розовый город» и форт Амбер в Джайпуре.",
+   "totalDays": 7,
+   "idealDurationText": "7-дневный маршрут",
+   "bestSeason": "Октябрь – март (прохладно и сухо на севере и в Раджастхане; туманные утра в декабре – январе); апрель – июнь сильная жара (до 45 °C), июнь – сентябрь — муссон; для Ладакха и Гималаев — июнь – сентябрь",
+   "transportMode": "Поезда (Gatimaan / Vande Bharat) или частный водитель + Uber, Ola и метро в городе",
+   "paceLevel": "Насыщенный (культура и история)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Остановка 1: Дели (Старый и Новый Дели)",
+     "recommendedDuration": "2-3 дня",
+     "durationBadge": "2-3 дня",
+     "highlights": [
+      "Красный форт и Чандни-Чоук",
+      "Гробница Хумаюна (ЮНЕСКО)",
+      "Кутб-Минар (ЮНЕСКО)",
+      "Джама-Масджид"
+     ],
+     "activities": [
+      "Пройдитесь по базарам и уличной еде Старого Дели.",
+      "Посмотрите бесплатную общинную кухню (лангар) в гурдваре Бангла-Сахиб.",
+      "Прогуляйтесь у Ворот Индии по Картавья-Пат."
+     ],
+     "foodAndDrinks": [
+      "Баттер чикен и наан",
+      "Паратхи на Паранте-Вали-Гали",
+      "Масала-чай"
+     ],
+     "criticalTips": [
+      "С ноября по январь смог бывает очень сильным — следите за AQI и носите маску N95.",
+      "Первый вагон метро — для женщин; в толпе берегите кошелёк."
+     ],
+     "mapsQuery": "Red Fort, Delhi, India"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Остановка 2: Агра (Тадж-Махал)",
+     "recommendedDuration": "1-2 дня",
+     "durationBadge": "1-2 дня",
+     "highlights": [
+      "Тадж-Махал на рассвете",
+      "Агра-форт (ЮНЕСКО)",
+      "Вид на Тадж с другого берега из сада Мехтаб-Багх",
+      "Фатехпур-Сикри (ЮНЕСКО)"
+     ],
+     "activities": [
+      "Посетите Тадж-Махал к открытию (на рассвете).",
+      "Посмотрите мастерскую мраморной инкрустации (пьетра-дура).",
+      "По пути в Джайпур заезжайте в Фатехпур-Сикри."
+     ],
+     "foodAndDrinks": [
+      "Могольская кухня (кебабы и корма)",
+      "Агра петха (сладость из восковой тыквы)"
+     ],
+     "criticalTips": [
+      "Тадж-Махал закрыт по пятницам; еду, штативы и большие сумки проносить нельзя.",
+      "Покупайте билеты на официальном сайте ASI и не слушайте «гидов» у входа."
+     ],
+     "mapsQuery": "Taj Mahal, Agra, India"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Остановка 3: Джайпур («Розовый город»)",
+     "recommendedDuration": "2 дня",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Форт Амбер",
+      "Хава-Махал (Дворец ветров)",
+      "Городской дворец и обсерватория Джантар-Мантар (ЮНЕСКО)"
+     ],
+     "activities": [
+      "Встретьте закат в форте Нахаргарх.",
+      "Купите ткани и украшения на базарах Джохари и Бапу.",
+      "Попробуйте себя в мастерской набойки по ткани."
+     ],
+     "foodAndDrinks": [
+      "Дал бати чурма",
+      "Пьяз качори и ласси"
+     ],
+     "criticalTips": [
+      "Поднимайтесь к форту Амбер пешком или на джипе, а не на слоне.",
+      "Комбинированный билет экономит деньги на нескольких памятниках."
+     ],
+     "mapsQuery": "Amber Fort, Jaipur, India"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Баттер чикен",
+     "Бирьяни",
+     "Масала доса",
+     "Чоле бхатуре (карри из нута с жареными лепёшками)"
+    ],
+    "drinks": [
+     "Масала-чай",
+     "Ласси",
+     "Нимбу пани"
+    ],
+    "streetFoods": [
+     "Пани пури",
+     "Самоса",
+     "Джалеби"
+    ],
+    "diningAdvice": "Многие рестораны полностью вегетарианские; за халяльным мясом идите в мусульманские заведения Старого Дели и Агры. Просите «кам тикха» (поменьше остроты)."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Переходник для розеток D/M",
+     "Свободная лёгкая одежда, закрывающая плечи и колени, и платок",
+     "Маска N95 и антисептик для рук",
+     "Лекарства для желудка и регидратационные соли (ORS)"
+    ],
+    "safetyAndEtiquette": [
+     "Пользуйтесь только официальными такси или Uber/Ola и не верьте историям про «закрытый отель».",
+     "Ешьте и передавайте деньги правой рукой, в святых местах снимайте обувь."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "D",
+     "M"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Розетки в основном индийские круглые трёхконтактные (D, для мощных приборов M); тонкие вилки зарядок обычно подходят, толстые «шуко» — нет. Возьмите переходник."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Водопроводную воду не пьют; покупайте запечатанную бутилированную и проверяйте крышку. Зубы тоже чистите бутилированной водой.",
+    "vaccines": [
+     "Гепатит A и брюшной тиф",
+     "Столбняк-дифтерия и корь (плановые)",
+     "Бешенство, а при долгих поездках по сельской местности — японский энцефалит; о профилактике малярии в ряде регионов спросите врача. При въезде из эндемичной страны нужен сертификат о прививке от жёлтой лихорадки."
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "108"
+   },
+   "tipping": {
+    "custom": "Чаевые приняты и ожидаются.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Если сервисный сбор включён, дополнительно не нужно; водителю обычно 300-500 INR в день, носильщикам 50-100 INR."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Нет",
+    "minSpend": "Не применяется",
+    "customsNote": "Возврата GST/НДС туристам в Индии нет. Вывоз антиквариата (старше 100 лет) запрещён; вывоз индийских рупий ограничен (25 000 INR)."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.10 - $0.50",
+    "topCarriers": [
+     "Jio",
+     "Airtel",
+     "Vi (Vodafone Idea)"
+    ],
+    "airportSimTrapWarning": "Туристические SIM в киосках аэропорта бывают в разы дороже, чем в официальных салонах в городе, а активация задерживается; дешевле всего — международная eSIM на первые дни, затем салон Airtel/Jio."
+   },
+   "touristScams": [
+    {
+     "title": "Фальшивое турбюро",
+     "desc": "Водитель говорит, что отель закрыт, и везёт в «официальное турбюро» в Пахаргандже или на Коннот-Плейс, где продают втридорога туры.",
+     "tip": "Сами позвоните в отель и настаивайте на поездке прямо по адресу."
+    },
+    {
+     "title": "Ловушка «экспорта камней»",
+     "desc": "Новые «друзья» в Джайпуре обещают прибыль за вывоз камней и снимают с карты крупную сумму.",
+     "tip": "Отказывайтесь от «инвестиций» и покупайте камни только для себя в сертифицированных магазинах."
+    },
+    {
+     "title": "«Пожертвование на дрова»",
+     "desc": "На гхате Маникарника в Варанаси «служители» просят деньги на дрова для бедных.",
+     "tip": "Вежливо откажитесь и наблюдайте за обрядами издалека, без съёмки."
+    }
+   ]
+  }
+ }
+}

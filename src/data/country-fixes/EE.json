@@ -1,0 +1,1792 @@
+{
+ "tr": {
+  "insights": {
+   "currency": "Euro (EUR)",
+   "bestMonths": "Mayıs – Eylül (uzun ve ılık yaz günleri, beyaz geceler); Aralık’ta Noel pazarı, kışlar çok soğuk ve karanlık",
+   "safety": {
+    "safetyScore": 65,
+    "crimeRateSummary": "Şiddet suçu düşüktür ve Tallinn geceleri de genel olarak güvenlidir. Başlıca sorunlar yaz sezonunda Eski Şehir’de yankesicilik ve gece hayatındaki fahiş hesaplardır.",
+    "commonScams": [
+     "Eski Şehir’deki bazı striptiz/gece kulüplerinde menüsüz içkiler için yüzlerce euroluk hesap",
+     "Kalabalık Raekoja Meydanı ve kruvaziyer günlerinde yankesicilik",
+     "Limanda veya otogarda taksimetre fiyatı yüksek, lisanssız taksiler"
+    ],
+    "safeTravelTips": [
+     "Taksiyi Bolt veya Forus uygulamasıyla çağırın; sokaktaki taksinin camındaki tarifeye bakın.",
+     "Fiyatı görmediğiniz barlara davet edilirseniz kibarca reddedin.",
+     "Kışın kaygan buzlu kaldırımlar için tabanı kaymaz ayakkabı giyin."
+    ],
+    "emergencyNumbers": {
+     "police": "112",
+     "ambulance": "112",
+     "general": "112"
+    },
+    "safetyLevel": "Güvenli",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "%99 (4G her yerde, şehirlerde 5G)",
+    "costPerGbUsd": "~1 - 2.50 $",
+    "esimAvailability": "Mükemmel",
+    "bestCarriers": [
+     "Telia",
+     "Elisa",
+     "Tele2"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "İyi (Tallinn’de tramvay, troleybüs ve otobüs; şehirlerarası Elron trenleri ve Lux Express otobüsleri)",
+    "costLevel": "Orta",
+    "singleTicketUsd": "1.80 - 2.30 $",
+    "dailyPassUsd": "5 - 6.50 $",
+    "popularRideApps": [
+     "Bolt",
+     "Uber",
+     "Forus Takso",
+     "Elron"
+    ],
+    "taxiAdvice": "Bolt bir Estonya şirketidir ve en ucuz, en yaygın seçenektir. Tallinn’de toplu taşımada temassız banka kartıyla binip okutarak ödeme yapabilirsiniz."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "45 - 70 $",
+    "dailyBudgetMidrangeUsd": "110 - 180 $",
+    "budgetMealUsd": "12 - 18 $",
+    "coffeeUsd": "3 - 4.50 $",
+    "waterBottleUsd": "1 - 1.50 $",
+    "hostelDormUsd": "20 - 35 $",
+    "hotel3StarUsd": "80 - 140 $",
+    "flightCostIndex": "Orta",
+    "flightTip": "İstanbul’dan Tallinn’e THY direkt uçar; Riga veya Helsinki aktarmalı biletler de çoğu zaman uygundur. Helsinki’den feribotla 2 saatte gelinebilir."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Estonlar sessiz ve mesafelidir; kısa sohbet ve yüksek ses pek sevilmez.",
+     "Eve girerken ayakkabı çıkarılır.",
+     "Dakiklik önemlidir; randevuya geç kalmak saygısızlık sayılır.",
+     "Saunada çıplaklık doğaldır; kurallara ve sessizliğe uyun."
+    ],
+    "festivals": [
+     "Jaanipäev (23–24 Haziran yaz gündönümü şenlikleri, şenlik ateşleri)",
+     "Estonya Şarkı ve Dans Festivali (Laulupidu, yaklaşık 5 yılda bir; son 2025)",
+     "Tallinn Noel Pazarı (Raekoja Meydanı, Kasım sonu – Ocak başı)"
+    ],
+    "lifestyle": "Dijital devlet (e-Estonya, e-oturum), doğaya yakın yaşam, sauna kültürü ve orman/bataklık yürüyüşleri gündelik hayatın parçasıdır."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Tallinn Eski Şehir (UNESCO) ve Raekoja Meydanı",
+     "Toompea Tepesi ve Aleksandr Nevski Katedrali",
+     "Kadriorg Sarayı ve Parkı",
+     "Telliskivi Yaratıcı Şehir ve Kalamaja",
+     "Lahemaa Milli Parkı (Viru Bataklığı yürüyüş yolu)",
+     "Tartu ve Estonya Ulusal Müzesi (ERM)"
+    ],
+    "bestSeasons": "Mayıs – Eylül (uzun ve ılık yaz günleri, beyaz geceler); Aralık’ta Noel pazarı, kışlar çok soğuk ve karanlık",
+    "travelStyleTip": "Tallinn yürüyerek gezilir; Tartu’ya Elron treni ya da Lux Express ile 2–2,5 saatte, Lahemaa’ya ise kiralık araçla en rahat gidilir."
+   },
+   "religion": {
+    "primaryReligions": "Dünyanın en seküler ülkelerinden: dinsiz ~%58, Ortodoks Hristiyan ~%16, Lüteriyen ~%8, diğerleri az.",
+    "respectNorms": "Ortodoks kiliselerde kadınların başını örtmesi, erkeklerin şapka çıkarması beklenir; ayin sırasında fotoğraf çekmeyin.",
+    "sacredSites": [
+     "Aleksandr Nevski Katedrali (Tallinn)",
+     "Aziz Olaf Kilisesi (Oleviste, Tallinn)",
+     "Pühtitsa Ortodoks Rahibe Manastırı (Kuremäe)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Estonca (Fin-Ugor dili, Fincenin akrabası). Nüfusun yaklaşık dörtte biri Rusça konuşur.",
+    "englishProficiency": "Çok iyi; gençler ve turizm çalışanları akıcı İngilizce konuşur.",
+    "phrases": [
+     {
+      "phrase": "Tere",
+      "meaning": "Merhaba",
+      "translation": "Merhaba",
+      "pronunciation": "TEH-reh"
+     },
+     {
+      "phrase": "Aitäh",
+      "meaning": "Teşekkürler",
+      "translation": "Teşekkürler",
+      "pronunciation": "AI-tah"
+     },
+     {
+      "phrase": "Palun",
+      "meaning": "Lütfen / Rica ederim",
+      "translation": "Lütfen / Rica ederim",
+      "pronunciation": "PAH-lun"
+     },
+     {
+      "phrase": "Kui palju see maksab?",
+      "meaning": "Bu ne kadar?",
+      "translation": "Bu ne kadar?",
+      "pronunciation": "kwee PAL-yu seh MAK-sab"
+     },
+     {
+      "phrase": "Terviseks!",
+      "meaning": "Şerefe! (Sağlığına)",
+      "translation": "Şerefe! (Sağlığına)",
+      "pronunciation": "TER-vee-seks"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Danimarka, Alman şövalyeleri, İsveç ve Rus İmparatorluğu yönetiminde kalan Estonya, 1918’de bağımsızlığını ilan etti. 1940’ta Sovyetler Birliği’ne katıldı, 1991’de ‘Şarkı Söyleyen Devrim’le yeniden bağımsız oldu ve 2004’te AB ile NATO’ya girdi.",
+    "milestones": [
+     "1219: Danimarkalılar Tallinn’de (Reval) kale kurdu",
+     "1918: Bağımsızlık ilanı (24 Şubat)",
+     "1991: Yeniden bağımsızlık (20 Ağustos)",
+     "2004: AB ve NATO üyeliği; 2011’de euroya geçiş"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Verivorst ve mulgikapsad (kan sosisi ve domuzlu lahana; Noel yemeği)",
+     "Kiluvõileib (çavuş balığı/kilu ezmeli çavdar ekmeği sandviçi)",
+     "Mulgipuder (patates ve arpa lapası)"
+    ],
+    "traditionalDrinks": [
+     "Vana Tallinn (baharatlı rom likörü)",
+     "Kali (çavdar ekmeğinden kvas)",
+     "Saku ve A. Le Coq biraları"
+    ],
+    "streetFoodAndDesserts": [
+     "Kama (tahıl unu ve kefirli tatlı)",
+     "Kohuke (çikolata kaplı lor tatlısı)",
+     "Kringel (Estonya tarçınlı çörek halkası)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Arvo Pärt (besteci)",
+     "Lennart Meri (yazar, devlet başkanı)",
+     "Kristjan Jaak Peterson (Estonca şiirin öncüsü)"
+    ],
+    "strongSectors": [
+     "Dijital devlet ve yazılım (Skype ve Bolt’un doğduğu yer)",
+     "Ormancılık ve ahşap ürünleri",
+     "Lojistik ve transit ticaret"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Kart ve temassız ödeme neredeyse her yerde geçer; nakit ihtiyacı çok azdır.",
+    "tippingCulture": "Restoranlarda iyi hizmet için %5–10 bahşiş takdir edilir ama zorunlu değildir.",
+    "economicPillars": "BT ve dijital hizmetler, ahşap ve mobilya, elektronik, lojistik ve turizm."
+   }
+  },
+  "itin": {
+   "routeName": "Estonya Klasikleri: Tallinn, Lahemaa ve Tartu",
+   "routeSummary": "Orta Çağ Tallinn’den Lahemaa’nın bataklık ve malikanelerine, oradan üniversite şehri Tartu’ya uzanan 6 günlük rota.",
+   "totalDays": 6,
+   "idealDurationText": "6 gün",
+   "bestSeason": "Mayıs – Eylül (uzun ve ılık yaz günleri, beyaz geceler); Aralık’ta Noel pazarı, kışlar çok soğuk ve karanlık",
+   "transportMode": "Tallinn’de yürüyüş; Lahemaa için kiralık araç; Tartu’ya Elron treni",
+   "paceLevel": "Rahat",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "1. Durak: Tallinn (Eski Şehir ve Kadriorg)",
+     "recommendedDuration": "3 gün",
+     "durationBadge": "3 Gün",
+     "highlights": [
+      "Raekoja Meydanı ve Gotik Belediye Binası",
+      "Toompea’daki Kohtuotsa ve Patkuli seyir terasları",
+      "Kadriorg Sarayı ve KUMU Sanat Müzesi",
+      "Telliskivi ve Kalamaja’nın ahşap evleri"
+     ],
+     "activities": [
+      "Surların üzerinde yürüyüp Aziz Olaf Kilisesi kulesine çıkın.",
+      "Seaplane Harbour (Lennusadam) denizcilik müzesini gezin.",
+      "Telliskivi’de pazar ve sokak sanatı arasında dolaşın."
+     ],
+     "foodAndDrinks": [
+      "Kiluvõileib ve Saku bira",
+      "Orta Çağ temalı Olde Hansa’da yaban eti yemekleri",
+      "Vana Tallinn likörlü sıcak kahve"
+     ],
+     "criticalTips": [
+      "Kruvaziyer gemilerinin geldiği günlerde Eski Şehir’i sabah erken ya da akşam gezin.",
+      "Toplu taşımada temassız kartla okutmayı unutmayın; kontrol sık ve ceza yüksektir."
+     ],
+     "mapsQuery": "Tallinn Old Town, Estonia"
+    },
+    {
+     "stopNumber": 2,
+     "name": "2. Durak: Lahemaa Milli Parkı",
+     "recommendedDuration": "1 gün",
+     "durationBadge": "1 Gün",
+     "highlights": [
+      "Viru Bataklığı ahşap yürüyüş yolu ve gözetleme kulesi",
+      "Palmse Malikanesi",
+      "Käsmu ‘Kaptanlar Köyü’ ve dev kayalar",
+      "Altja balıkçı köyü"
+     ],
+     "activities": [
+      "Gün doğumunda bataklık patikasında 3,5 km yürüyün.",
+      "Palmse Malikanesi’nin bahçelerini ve eski içki imalathanesini gezin.",
+      "Käsmu yarımadasında kıyı ve orman yürüyüşü yapın."
+     ],
+     "foodAndDrinks": [
+      "Altja Kõrts meyhanesinde ev yapımı Estonya yemekleri",
+      "Füme balık ve çavdar ekmeği"
+     ],
+     "criticalTips": [
+      "Yazın sivrisinek ve kene için kovucu sürün; kenelerin taşıdığı ensefalite karşı dikkatli olun.",
+      "Toplu taşıma zayıftır; araç kiralayın ya da günübirlik tura katılın."
+     ],
+     "mapsQuery": "Viru Bog, Lahemaa, Estonia"
+    },
+    {
+     "stopNumber": 3,
+     "name": "3. Durak: Tartu (Üniversite Şehri)",
+     "recommendedDuration": "2 gün",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "Raekoja Meydanı ve ‘Öpüşen Öğrenciler’ çeşmesi",
+      "Tartu Üniversitesi ana binası ve Toomemägi tepesi",
+      "Estonya Ulusal Müzesi (ERM)",
+      "AHHAA Bilim Merkezi"
+     ],
+     "activities": [
+      "ERM’de Estonya’nın etnografya ve tarihini keşfedin.",
+      "Toomemägi’deki katedral kalıntılarını ve parkı gezin.",
+      "Supilinn (‘Çorba Mahallesi’) ahşap evleri arasında yürüyün."
+     ],
+     "foodAndDrinks": [
+      "A. Le Coq bira fabrikasının yerel biraları",
+      "Kama tatlısı",
+      "Öğrenci kafelerinde kringel ve kahve"
+     ],
+     "criticalTips": [
+      "ERM pazartesi günleri kapalıdır; ziyaretinizi buna göre planlayın.",
+      "Tallinn–Tartu Elron trenlerinde bilet uygulamadan veya trende alınabilir; trende alınan bilet biraz pahalıdır."
+     ],
+     "mapsQuery": "Tartu Town Hall Square, Estonia"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Verivorst",
+     "Mulgipuder",
+     "Füme Baltık balığı",
+     "Sült (et jölesi)"
+    ],
+    "drinks": [
+     "Vana Tallinn",
+     "Kali (kvas)",
+     "Saku bira",
+     "Kefir"
+    ],
+    "streetFoods": [
+     "Kiluvõileib",
+     "Pirukas (iç dolgulu börek)",
+     "Kohuke",
+     "Kringel"
+    ],
+    "diningAdvice": "Öğle saatlerinde birçok restoran uygun fiyatlı ‘päevapakkumine’ (günün menüsü) sunar. Domuz eti yaygındır; helal seçenekler sınırlı olduğundan menüyü sorun."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Yazın bile rüzgarlık ve ince kazak",
+     "Sivrisinek/kene kovucu",
+     "Temassız banka kartı",
+     "Kışın termal içlik ve kaymaz bot"
+    ],
+    "safetyAndEtiquette": [
+     "Araçta farlar gündüz de açık olmalı; trafikte alkol toleransı çok düşüktür.",
+     "Ormanlarda ateş yakma kurallarına uyun.",
+     "Karanlık kış aylarında yayalar için reflektör taşımak yasal olarak zorunludur."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Türkiye’deki ile aynı iki yuvarlak pimli (C/F) prizler; adaptör gerekmez."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Musluk suyu içilebilir ve AB standartlarındadır.",
+    "vaccines": [
+     "Rutin aşılar (tetanos, difteri, kızamık)",
+     "Yazın orman yürüyüşü yapacaklar için kene kaynaklı ensefalit (KKE) aşısı"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "112"
+   },
+   "tipping": {
+    "custom": "Restoranda iyi hizmet için %5–10 bırakılır.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Kafelerde ve barlarda bahşiş beklenmez; kartla öderken terminalde bahşiş seçeneği çıkabilir."
+   },
+   "taxFree": {
+    "vatRefundPercent": "KDV %24; iade net ~%12–15",
+    "minSpend": "Aynı mağazada ~38 € ve üzeri",
+    "customsNote": "AB dışı (Türkiye) yolcular Tax Free faturalarını AB’den son çıkış noktasında gümrüğe onaylatmalıdır (ör. Tallinn Havalimanı)."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.00 - $2.50",
+    "topCarriers": [
+     "Telia",
+     "Elisa",
+     "Tele2"
+    ],
+    "airportSimTrapWarning": "Türk hatlarıyla AB’de dolaşım pahalıdır; yola çıkmadan eSIM alın ya da şehirdeki marketlerden ön ödemeli Telia/Elisa/Tele2 hattı edinin."
+   },
+   "touristScams": [
+    {
+     "title": "Gece kulübü fahiş hesabı",
+     "desc": "Sokakta yaklaşan kişiler sizi fiyatı yazmayan bir kulübe yönlendirir, içki hesabı yüzlerce euro çıkar.",
+     "tip": "Fiyat listesini görmeden sipariş vermeyin; davetleri reddedin."
+    },
+    {
+     "title": "Yüksek tarifeli taksi",
+     "desc": "Liman ve otogar çevresinde bazı taksiler yasal ama çok yüksek tarife uygular.",
+     "tip": "Bolt veya Forus uygulamasıyla önceden fiyatı görerek çağırın."
+    }
+   ]
+  }
+ },
+ "en": {
+  "insights": {
+   "currency": "Euro (EUR)",
+   "bestMonths": "May – September (long mild summer days, white nights); December for the Christmas market, winters are very cold and dark",
+   "safety": {
+    "safetyScore": 65,
+    "crimeRateSummary": "Violent crime is low and Tallinn is generally safe at night. The main issues are pickpocketing in the Old Town during summer and inflated bills in nightlife venues.",
+    "commonScams": [
+     "Bills of hundreds of euros for unpriced drinks in some Old Town strip/night clubs",
+     "Pickpocketing on crowded Town Hall Square and on cruise-ship days",
+     "Unlicensed or high-tariff taxis waiting at the port and bus station"
+    ],
+    "safeTravelTips": [
+     "Book taxis via Bolt or Forus; check the tariff sticker on any street taxi window.",
+     "Politely decline invitations to bars where you cannot see the prices.",
+     "Wear non-slip footwear in winter, pavements get icy."
+    ],
+    "emergencyNumbers": {
+     "police": "112",
+     "ambulance": "112",
+     "general": "112"
+    },
+    "safetyLevel": "Safe",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "99% (4G everywhere, 5G in cities)",
+    "costPerGbUsd": "~1 - 2.50 $",
+    "esimAvailability": "Excellent",
+    "bestCarriers": [
+     "Telia",
+     "Elisa",
+     "Tele2"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Good (trams and buses in Tallinn; Elron trains and Lux Express coaches between cities)",
+    "costLevel": "Moderate",
+    "singleTicketUsd": "1.80 - 2.30 $",
+    "dailyPassUsd": "5 - 6.50 $",
+    "popularRideApps": [
+     "Bolt",
+     "Uber",
+     "Forus Takso",
+     "Elron"
+    ],
+    "taxiAdvice": "Bolt is an Estonian company and the cheapest, most common option. On Tallinn public transport you can simply tap a contactless bank card to pay."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "45 - 70 $",
+    "dailyBudgetMidrangeUsd": "110 - 180 $",
+    "budgetMealUsd": "12 - 18 $",
+    "coffeeUsd": "3 - 4.50 $",
+    "waterBottleUsd": "1 - 1.50 $",
+    "hostelDormUsd": "20 - 35 $",
+    "hotel3StarUsd": "80 - 140 $",
+    "flightCostIndex": "Moderate",
+    "flightTip": "Turkish Airlines flies direct from Istanbul to Tallinn; connections via Riga or Helsinki are often good value. Ferries from Helsinki take about 2 hours."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Estonians are quiet and reserved; small talk and loud voices are not appreciated.",
+     "Shoes come off when entering a home.",
+     "Punctuality matters; being late is considered rude.",
+     "Nudity in the sauna is normal; respect the rules and the quiet."
+    ],
+    "festivals": [
+     "Jaanipäev (Midsummer, 23–24 June, bonfires)",
+     "Estonian Song and Dance Celebration (Laulupidu, roughly every 5 years; last in 2025)",
+     "Tallinn Christmas Market (Town Hall Square, late November – early January)"
+    ],
+    "lifestyle": "Digital-state life (e-Estonia, e-Residency), closeness to nature, sauna culture and forest and bog hikes are part of everyday life."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Tallinn Old Town (UNESCO) & Town Hall Square",
+     "Toompea Hill & Alexander Nevsky Cathedral",
+     "Kadriorg Palace & Park",
+     "Telliskivi Creative City & Kalamaja",
+     "Lahemaa National Park (Viru Bog boardwalk)",
+     "Tartu & the Estonian National Museum (ERM)"
+    ],
+    "bestSeasons": "May – September (long mild summer days, white nights); December for the Christmas market, winters are very cold and dark",
+    "travelStyleTip": "Tallinn is best explored on foot; Tartu is 2–2.5 hours by Elron train or Lux Express, and Lahemaa is easiest by rental car."
+   },
+   "religion": {
+    "primaryReligions": "One of the most secular countries in the world: no religion ~58%, Orthodox Christian ~16%, Lutheran ~8%, others small.",
+    "respectNorms": "In Orthodox churches women are expected to cover their heads and men to remove hats; do not take photos during services.",
+    "sacredSites": [
+     "Alexander Nevsky Cathedral (Tallinn)",
+     "St Olaf's Church (Oleviste, Tallinn)",
+     "Pühtitsa Orthodox Convent (Kuremäe)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Estonian (a Finno-Ugric language related to Finnish). About a quarter of the population speaks Russian.",
+    "englishProficiency": "Very good; young people and tourism staff speak fluent English.",
+    "phrases": [
+     {
+      "phrase": "Tere",
+      "meaning": "Hello",
+      "translation": "Hello",
+      "pronunciation": "TEH-reh"
+     },
+     {
+      "phrase": "Aitäh",
+      "meaning": "Thank you",
+      "translation": "Thank you",
+      "pronunciation": "AI-tah"
+     },
+     {
+      "phrase": "Palun",
+      "meaning": "Please / You're welcome",
+      "translation": "Please / You're welcome",
+      "pronunciation": "PAH-lun"
+     },
+     {
+      "phrase": "Kui palju see maksab?",
+      "meaning": "How much is this?",
+      "translation": "How much is this?",
+      "pronunciation": "kwee PAL-yu seh MAK-sab"
+     },
+     {
+      "phrase": "Terviseks!",
+      "meaning": "Cheers!",
+      "translation": "Cheers!",
+      "pronunciation": "TER-vee-seks"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Ruled in turn by Denmark, German crusader knights, Sweden and the Russian Empire, Estonia declared independence in 1918. Annexed by the USSR in 1940, it regained independence through the 'Singing Revolution' in 1991 and joined the EU and NATO in 2004.",
+    "milestones": [
+     "1219: Danes build a fortress at Tallinn (Reval)",
+     "1918: Declaration of independence (24 February)",
+     "1991: Independence restored (20 August)",
+     "2004: EU and NATO membership; euro adopted in 2011"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Verivorst & mulgikapsad (blood sausage with sauerkraut; Christmas dish)",
+     "Kiluvõileib (marinated sprat on dark rye bread)",
+     "Mulgipuder (potato and barley mash)"
+    ],
+    "traditionalDrinks": [
+     "Vana Tallinn (spiced rum liqueur)",
+     "Kali (rye bread kvass)",
+     "Saku and A. Le Coq beers"
+    ],
+    "streetFoodAndDesserts": [
+     "Kama (roasted grain flour with kefir)",
+     "Kohuke (chocolate-coated curd snack)",
+     "Kringel (Estonian cinnamon pastry ring)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Arvo Pärt (composer)",
+     "Lennart Meri (writer and president)",
+     "Kristjan Jaak Peterson (pioneer of Estonian poetry)"
+    ],
+    "strongSectors": [
+     "Digital government and software (birthplace of Skype and Bolt)",
+     "Forestry and wood products",
+     "Logistics and transit trade"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Cards and contactless payments work almost everywhere; you rarely need cash.",
+    "tippingCulture": "A 5–10% tip for good service in restaurants is appreciated but not required.",
+    "economicPillars": "IT and digital services, timber and furniture, electronics, logistics and tourism."
+   }
+  },
+  "itin": {
+   "routeName": "Estonia Classics: Tallinn, Lahemaa & Tartu",
+   "routeSummary": "A 6-day route from medieval Tallinn to the bogs and manors of Lahemaa and on to the university city of Tartu.",
+   "totalDays": 6,
+   "idealDurationText": "6 days",
+   "bestSeason": "May – September (long mild summer days, white nights); December for the Christmas market, winters are very cold and dark",
+   "transportMode": "Walking in Tallinn; rental car for Lahemaa; Elron train to Tartu",
+   "paceLevel": "Relaxed",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stop 1: Tallinn (Old Town & Kadriorg)",
+     "recommendedDuration": "3 days",
+     "durationBadge": "3 Days",
+     "highlights": [
+      "Town Hall Square & the Gothic Town Hall",
+      "Kohtuotsa and Patkuli viewing platforms on Toompea",
+      "Kadriorg Palace & KUMU Art Museum",
+      "Telliskivi and the wooden houses of Kalamaja"
+     ],
+     "activities": [
+      "Walk the town walls and climb St Olaf's Church tower.",
+      "Visit the Seaplane Harbour (Lennusadam) maritime museum.",
+      "Browse the market and street art at Telliskivi."
+     ],
+     "foodAndDrinks": [
+      "Kiluvõileib and a Saku beer",
+      "Game dishes at the medieval-themed Olde Hansa",
+      "Hot coffee with Vana Tallinn liqueur"
+     ],
+     "criticalTips": [
+      "On cruise-ship days visit the Old Town early in the morning or in the evening.",
+      "Always tap your card on public transport; inspections are frequent and fines high."
+     ],
+     "mapsQuery": "Tallinn Old Town, Estonia"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stop 2: Lahemaa National Park",
+     "recommendedDuration": "1 day",
+     "durationBadge": "1 Day",
+     "highlights": [
+      "Viru Bog boardwalk & observation tower",
+      "Palmse Manor",
+      "Käsmu 'Captains' Village' & giant boulders",
+      "Altja fishing village"
+     ],
+     "activities": [
+      "Walk the 3.5 km bog trail at sunrise.",
+      "Tour Palmse Manor's gardens and old distillery.",
+      "Hike the coast and forest on the Käsmu peninsula."
+     ],
+     "foodAndDrinks": [
+      "Home-style Estonian food at Altja Kõrts tavern",
+      "Smoked fish with rye bread"
+     ],
+     "criticalTips": [
+      "Use repellent against mosquitoes and ticks in summer; ticks can carry encephalitis.",
+      "Public transport is sparse; rent a car or join a day tour."
+     ],
+     "mapsQuery": "Viru Bog, Lahemaa, Estonia"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stop 3: Tartu (University City)",
+     "recommendedDuration": "2 days",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "Town Hall Square & the 'Kissing Students' fountain",
+      "University of Tartu main building & Toome Hill",
+      "Estonian National Museum (ERM)",
+      "AHHAA Science Centre"
+     ],
+     "activities": [
+      "Discover Estonian ethnography and history at the ERM.",
+      "Explore the cathedral ruins and park on Toome Hill.",
+      "Stroll through the wooden houses of Supilinn ('Soup Town')."
+     ],
+     "foodAndDrinks": [
+      "Local beers from the A. Le Coq brewery",
+      "Kama dessert",
+      "Kringel and coffee in student cafés"
+     ],
+     "criticalTips": [
+      "The ERM is closed on Mondays; plan accordingly.",
+      "Tickets for Tallinn–Tartu Elron trains can be bought in the app or on board; on board is slightly pricier."
+     ],
+     "mapsQuery": "Tartu Town Hall Square, Estonia"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Verivorst",
+     "Mulgipuder",
+     "Smoked Baltic fish",
+     "Sült (meat aspic)"
+    ],
+    "drinks": [
+     "Vana Tallinn",
+     "Kali (kvass)",
+     "Saku beer",
+     "Kefir"
+    ],
+    "streetFoods": [
+     "Kiluvõileib",
+     "Pirukas (filled pastry)",
+     "Kohuke",
+     "Kringel"
+    ],
+    "diningAdvice": "At lunchtime many restaurants offer an affordable 'päevapakkumine' (daily special). Pork is common; halal options are limited, so ask about the menu."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Windbreaker and light sweater even in summer",
+     "Mosquito and tick repellent",
+     "Contactless bank card",
+     "Thermals and non-slip boots in winter"
+    ],
+    "safetyAndEtiquette": [
+     "Headlights must be on in daytime; drink-driving tolerance is very low.",
+     "Follow fire rules in forests.",
+     "Pedestrians are legally required to wear a reflector in the dark."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Same two-round-pin (C/F) sockets as in Turkey; no adapter needed."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Tap water is safe to drink and meets EU standards.",
+    "vaccines": [
+     "Routine vaccinations (tetanus, diphtheria, measles)",
+     "Tick-borne encephalitis (TBE) vaccine for summer forest hikers"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "112"
+   },
+   "tipping": {
+    "custom": "Leave 5–10% for good restaurant service.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Tips are not expected in cafés and bars; card terminals may offer a tip option."
+   },
+   "taxFree": {
+    "vatRefundPercent": "VAT 24%; net refund ~12–15%",
+    "minSpend": "~€38+ in one store",
+    "customsNote": "Non-EU travellers (e.g. from Turkey) must get Tax Free forms stamped by customs at the last EU exit point (e.g. Tallinn Airport)."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.00 - $2.50",
+    "topCarriers": [
+     "Telia",
+     "Elisa",
+     "Tele2"
+    ],
+    "airportSimTrapWarning": "Roaming on Turkish lines in the EU is expensive; buy an eSIM before travelling or get a prepaid Telia/Elisa/Tele2 SIM from shops in town."
+   },
+   "touristScams": [
+    {
+     "title": "Nightclub rip-off bill",
+     "desc": "Touts lead you to a club with no price list and the drinks bill runs into hundreds of euros.",
+     "tip": "Never order without seeing prices; turn down street invitations."
+    },
+    {
+     "title": "High-tariff taxis",
+     "desc": "Some taxis near the port and bus station charge legal but very high tariffs.",
+     "tip": "Book via Bolt or Forus to see the price upfront."
+    }
+   ]
+  }
+ },
+ "de": {
+  "insights": {
+   "currency": "Euro (EUR)",
+   "bestMonths": "Mai – September (lange, milde Sommertage, weiße Nächte); im Dezember Weihnachtsmarkt, Winter sehr kalt und dunkel",
+   "safety": {
+    "safetyScore": 65,
+    "crimeRateSummary": "Gewaltkriminalität ist gering, Tallinn ist auch nachts meist sicher. Hauptprobleme sind Taschendiebstahl in der Altstadt im Sommer und überhöhte Rechnungen im Nachtleben.",
+    "commonScams": [
+     "Rechnungen von mehreren hundert Euro für Getränke ohne Preisangabe in manchen Altstadt-Nachtclubs",
+     "Taschendiebstahl auf dem vollen Rathausplatz und an Kreuzfahrttagen",
+     "Taxis mit sehr hohem Tarif am Hafen und am Busbahnhof"
+    ],
+    "safeTravelTips": [
+     "Taxis über Bolt oder Forus bestellen; bei Straßentaxis den Tarifaufkleber prüfen.",
+     "Einladungen in Bars ohne sichtbare Preise höflich ablehnen.",
+     "Im Winter rutschfeste Schuhe tragen, Gehwege sind oft vereist."
+    ],
+    "emergencyNumbers": {
+     "police": "112",
+     "ambulance": "112",
+     "general": "112"
+    },
+    "safetyLevel": "Sicher",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "99 % (4G überall, 5G in Städten)",
+    "costPerGbUsd": "~1 - 2.50 $",
+    "esimAvailability": "Hervorragend",
+    "bestCarriers": [
+     "Telia",
+     "Elisa",
+     "Tele2"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Gut (Straßenbahn und Busse in Tallinn; Elron-Züge und Lux-Express-Busse zwischen Städten)",
+    "costLevel": "Mittel",
+    "singleTicketUsd": "1.80 - 2.30 $",
+    "dailyPassUsd": "5 - 6.50 $",
+    "popularRideApps": [
+     "Bolt",
+     "Uber",
+     "Forus Takso",
+     "Elron"
+    ],
+    "taxiAdvice": "Bolt ist ein estnisches Unternehmen und die günstigste, verbreitetste Option. In Tallinns Nahverkehr zahlt man einfach kontaktlos mit der Bankkarte."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "45 - 70 $",
+    "dailyBudgetMidrangeUsd": "110 - 180 $",
+    "budgetMealUsd": "12 - 18 $",
+    "coffeeUsd": "3 - 4.50 $",
+    "waterBottleUsd": "1 - 1.50 $",
+    "hostelDormUsd": "20 - 35 $",
+    "hotel3StarUsd": "80 - 140 $",
+    "flightCostIndex": "Mittel",
+    "flightTip": "Turkish Airlines fliegt direkt von Istanbul nach Tallinn; Verbindungen über Riga oder Helsinki sind oft günstig. Fähren ab Helsinki brauchen etwa 2 Stunden."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Esten sind ruhig und zurückhaltend; Smalltalk und laute Stimmen kommen nicht gut an.",
+     "Beim Betreten einer Wohnung zieht man die Schuhe aus.",
+     "Pünktlichkeit ist wichtig; Verspätung gilt als unhöflich.",
+     "Nacktheit in der Sauna ist normal; Regeln und Ruhe respektieren."
+    ],
+    "festivals": [
+     "Jaanipäev (Mittsommer, 23.–24. Juni, Lagerfeuer)",
+     "Estnisches Sänger- und Tanzfest (Laulupidu, etwa alle 5 Jahre; zuletzt 2025)",
+     "Tallinner Weihnachtsmarkt (Rathausplatz, Ende November – Anfang Januar)"
+    ],
+    "lifestyle": "Digitaler Staat (e-Estonia, e-Residency), Naturnähe, Saunakultur und Wald- und Moorwanderungen prägen den Alltag."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Tallinner Altstadt (UNESCO) & Rathausplatz",
+     "Domberg (Toompea) & Alexander-Newski-Kathedrale",
+     "Schloss und Park Kadriorg",
+     "Telliskivi Creative City & Kalamaja",
+     "Nationalpark Lahemaa (Viru-Moor-Bohlenweg)",
+     "Tartu & Estnisches Nationalmuseum (ERM)"
+    ],
+    "bestSeasons": "Mai – September (lange, milde Sommertage, weiße Nächte); im Dezember Weihnachtsmarkt, Winter sehr kalt und dunkel",
+    "travelStyleTip": "Tallinn erkundet man zu Fuß; Tartu erreicht man mit Elron-Zug oder Lux Express in 2–2,5 Stunden, Lahemaa am besten mit dem Mietwagen."
+   },
+   "religion": {
+    "primaryReligions": "Eines der säkularsten Länder der Welt: konfessionslos ~58 %, orthodox ~16 %, lutherisch ~8 %, andere gering.",
+    "respectNorms": "In orthodoxen Kirchen sollten Frauen den Kopf bedecken und Männer den Hut abnehmen; während des Gottesdienstes nicht fotografieren.",
+    "sacredSites": [
+     "Alexander-Newski-Kathedrale (Tallinn)",
+     "Olaikirche (Oleviste, Tallinn)",
+     "Orthodoxes Kloster Pühtitsa (Kuremäe)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Estnisch (finno-ugrische Sprache, mit dem Finnischen verwandt). Etwa ein Viertel der Bevölkerung spricht Russisch.",
+    "englishProficiency": "Sehr gut; junge Leute und Tourismuspersonal sprechen fließend Englisch.",
+    "phrases": [
+     {
+      "phrase": "Tere",
+      "meaning": "Hallo",
+      "translation": "Hallo",
+      "pronunciation": "TEH-reh"
+     },
+     {
+      "phrase": "Aitäh",
+      "meaning": "Danke",
+      "translation": "Danke",
+      "pronunciation": "AI-tah"
+     },
+     {
+      "phrase": "Palun",
+      "meaning": "Bitte",
+      "translation": "Bitte",
+      "pronunciation": "PAH-lun"
+     },
+     {
+      "phrase": "Kui palju see maksab?",
+      "meaning": "Was kostet das?",
+      "translation": "Was kostet das?",
+      "pronunciation": "kwee PAL-yu seh MAK-sab"
+     },
+     {
+      "phrase": "Terviseks!",
+      "meaning": "Prost!",
+      "translation": "Prost!",
+      "pronunciation": "TER-vee-seks"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Nacheinander von Dänemark, dem Deutschen Orden, Schweden und dem Russischen Reich beherrscht, erklärte Estland 1918 die Unabhängigkeit. 1940 von der UdSSR annektiert, wurde es 1991 durch die 'Singende Revolution' wieder unabhängig und trat 2004 EU und NATO bei.",
+    "milestones": [
+     "1219: Dänen errichten eine Festung in Tallinn (Reval)",
+     "1918: Unabhängigkeitserklärung (24. Februar)",
+     "1991: Wiederherstellung der Unabhängigkeit (20. August)",
+     "2004: EU- und NATO-Beitritt; Euro seit 2011"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Verivorst & Mulgikapsad (Blutwurst mit Sauerkraut; Weihnachtsessen)",
+     "Kiluvõileib (marinierte Sprotten auf dunklem Roggenbrot)",
+     "Mulgipuder (Kartoffel-Graupen-Brei)"
+    ],
+    "traditionalDrinks": [
+     "Vana Tallinn (würziger Rumlikör)",
+     "Kali (Brotkwas aus Roggen)",
+     "Saku- und A.-Le-Coq-Bier"
+    ],
+    "streetFoodAndDesserts": [
+     "Kama (Röstmehl mit Kefir)",
+     "Kohuke (Quarkriegel mit Schokolade)",
+     "Kringel (estnischer Zimt-Hefekranz)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Arvo Pärt (Komponist)",
+     "Lennart Meri (Schriftsteller und Präsident)",
+     "Kristjan Jaak Peterson (Pionier der estnischen Dichtung)"
+    ],
+    "strongSectors": [
+     "Digitale Verwaltung und Software (Heimat von Skype und Bolt)",
+     "Forstwirtschaft und Holzprodukte",
+     "Logistik und Transithandel"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Karten- und Kontaktloszahlung funktioniert fast überall; Bargeld braucht man selten.",
+    "tippingCulture": "5–10 % Trinkgeld für guten Service im Restaurant wird geschätzt, ist aber keine Pflicht.",
+    "economicPillars": "IT und digitale Dienste, Holz und Möbel, Elektronik, Logistik und Tourismus."
+   }
+  },
+  "itin": {
+   "routeName": "Estland-Klassiker: Tallinn, Lahemaa & Tartu",
+   "routeSummary": "Eine 6-tägige Route vom mittelalterlichen Tallinn zu den Mooren und Gutshäusern von Lahemaa und weiter in die Universitätsstadt Tartu.",
+   "totalDays": 6,
+   "idealDurationText": "6 Tage",
+   "bestSeason": "Mai – September (lange, milde Sommertage, weiße Nächte); im Dezember Weihnachtsmarkt, Winter sehr kalt und dunkel",
+   "transportMode": "Zu Fuß in Tallinn; Mietwagen für Lahemaa; Elron-Zug nach Tartu",
+   "paceLevel": "Entspannt",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stopp 1: Tallinn (Altstadt & Kadriorg)",
+     "recommendedDuration": "3 Tage",
+     "durationBadge": "3 Tage",
+     "highlights": [
+      "Rathausplatz & gotisches Rathaus",
+      "Aussichtsplattformen Kohtuotsa und Patkuli auf dem Domberg",
+      "Schloss Kadriorg & Kunstmuseum KUMU",
+      "Telliskivi und die Holzhäuser von Kalamaja"
+     ],
+     "activities": [
+      "Auf der Stadtmauer spazieren und den Turm der Olaikirche besteigen.",
+      "Das Seefahrtsmuseum im Wasserflugzeughafen (Lennusadam) besuchen.",
+      "In Telliskivi über Markt und Street-Art schlendern."
+     ],
+     "foodAndDrinks": [
+      "Kiluvõileib und ein Saku-Bier",
+      "Wildgerichte im mittelalterlichen Olde Hansa",
+      "Heißer Kaffee mit Vana-Tallinn-Likör"
+     ],
+     "criticalTips": [
+      "An Kreuzfahrttagen die Altstadt früh morgens oder abends besuchen.",
+      "Im Nahverkehr immer die Karte antippen; Kontrollen sind häufig, Strafen hoch."
+     ],
+     "mapsQuery": "Tallinn Old Town, Estonia"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stopp 2: Nationalpark Lahemaa",
+     "recommendedDuration": "1 Tag",
+     "durationBadge": "1 Tag",
+     "highlights": [
+      "Bohlenweg und Aussichtsturm im Viru-Moor",
+      "Gutshaus Palmse",
+      "Käsmu, das 'Kapitänsdorf', & Findlinge",
+      "Fischerdorf Altja"
+     ],
+     "activities": [
+      "Den 3,5 km langen Moorpfad bei Sonnenaufgang gehen.",
+      "Gärten und alte Brennerei von Gut Palmse besichtigen.",
+      "Auf der Halbinsel Käsmu an Küste und Wald wandern."
+     ],
+     "foodAndDrinks": [
+      "Estnische Hausmannskost in der Schenke Altja Kõrts",
+      "Räucherfisch mit Roggenbrot"
+     ],
+     "criticalTips": [
+      "Im Sommer Mückenschutz gegen Mücken und Zecken nutzen; Zecken können FSME übertragen.",
+      "Der Nahverkehr ist dünn; Mietwagen oder Tagestour wählen."
+     ],
+     "mapsQuery": "Viru Bog, Lahemaa, Estonia"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stopp 3: Tartu (Universitätsstadt)",
+     "recommendedDuration": "2 Tage",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "Rathausplatz & Brunnen 'Küssende Studenten'",
+      "Hauptgebäude der Universität Tartu & Domberg",
+      "Estnisches Nationalmuseum (ERM)",
+      "Wissenschaftszentrum AHHAA"
+     ],
+     "activities": [
+      "Im ERM estnische Volkskunde und Geschichte entdecken.",
+      "Domruine und Park auf dem Domberg erkunden.",
+      "Durch die Holzhäuser von Supilinn ('Suppenstadt') spazieren."
+     ],
+     "foodAndDrinks": [
+      "Lokale Biere der Brauerei A. Le Coq",
+      "Kama-Dessert",
+      "Kringel und Kaffee in Studentencafés"
+     ],
+     "criticalTips": [
+      "Das ERM ist montags geschlossen; entsprechend planen.",
+      "Tickets für Elron-Züge Tallinn–Tartu gibt es in der App oder im Zug; im Zug etwas teurer."
+     ],
+     "mapsQuery": "Tartu Town Hall Square, Estonia"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Verivorst",
+     "Mulgipuder",
+     "Geräucherter Ostseefisch",
+     "Sült (Sülze)"
+    ],
+    "drinks": [
+     "Vana Tallinn",
+     "Kali (Kwas)",
+     "Saku-Bier",
+     "Kefir"
+    ],
+    "streetFoods": [
+     "Kiluvõileib",
+     "Pirukas (gefüllte Teigtasche)",
+     "Kohuke",
+     "Kringel"
+    ],
+    "diningAdvice": "Mittags bieten viele Restaurants ein günstiges 'päevapakkumine' (Tagesgericht). Schweinefleisch ist verbreitet; Halal-Optionen sind selten, also nachfragen."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Windjacke und leichter Pullover auch im Sommer",
+     "Mücken- und Zeckenschutz",
+     "Kontaktlose Bankkarte",
+     "Thermowäsche und rutschfeste Stiefel im Winter"
+    ],
+    "safetyAndEtiquette": [
+     "Abblendlicht auch tagsüber Pflicht; Alkoholgrenze am Steuer sehr niedrig.",
+     "Feuerregeln im Wald beachten.",
+     "Fußgänger müssen im Dunkeln gesetzlich einen Reflektor tragen."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Gleiche Steckdosen mit zwei runden Stiften (C/F) wie in der Türkei; kein Adapter nötig."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Leitungswasser ist trinkbar und entspricht EU-Standards.",
+    "vaccines": [
+     "Standardimpfungen (Tetanus, Diphtherie, Masern)",
+     "FSME-Impfung für Waldwanderungen im Sommer"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "112"
+   },
+   "tipping": {
+    "custom": "Für guten Service im Restaurant 5–10 % geben.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "In Cafés und Bars wird kein Trinkgeld erwartet; Kartenterminals bieten oft eine Trinkgeldoption."
+   },
+   "taxFree": {
+    "vatRefundPercent": "MwSt. 24 %; Nettoerstattung ~12–15 %",
+    "minSpend": "ab ~38 € in einem Geschäft",
+    "customsNote": "Reisende aus Nicht-EU-Ländern (z. B. Türkei) müssen Tax-Free-Formulare am letzten EU-Ausreiseort vom Zoll abstempeln lassen (z. B. Flughafen Tallinn)."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.00 - $2.50",
+    "topCarriers": [
+     "Telia",
+     "Elisa",
+     "Tele2"
+    ],
+    "airportSimTrapWarning": "Roaming mit türkischen Tarifen ist in der EU teuer; vorab eine eSIM kaufen oder eine Prepaid-SIM von Telia/Elisa/Tele2 im Laden holen."
+   },
+   "touristScams": [
+    {
+     "title": "Abzocke im Nachtclub",
+     "desc": "Schlepper führen in einen Club ohne Preisliste, die Getränkerechnung beträgt Hunderte Euro.",
+     "tip": "Nie ohne Preisangabe bestellen; Einladungen auf der Straße ablehnen."
+    },
+    {
+     "title": "Taxis mit Wuchertarif",
+     "desc": "Manche Taxis an Hafen und Busbahnhof verlangen legale, aber sehr hohe Tarife.",
+     "tip": "Über Bolt oder Forus mit Festpreis bestellen."
+    }
+   ]
+  }
+ },
+ "es": {
+  "insights": {
+   "currency": "Euro (EUR)",
+   "bestMonths": "Mayo – septiembre (días de verano largos y templados, noches blancas); diciembre por el mercado navideño; inviernos muy fríos y oscuros",
+   "safety": {
+    "safetyScore": 65,
+    "crimeRateSummary": "La delincuencia violenta es baja y Tallin suele ser segura de noche. Los principales problemas son los carteristas en el casco antiguo en verano y las cuentas infladas en locales nocturnos.",
+    "commonScams": [
+     "Cuentas de cientos de euros por bebidas sin precio en algunos clubes nocturnos del casco antiguo",
+     "Carteristas en la abarrotada plaza del Ayuntamiento y en días de cruceros",
+     "Taxis con tarifas muy altas esperando en el puerto y la estación de autobuses"
+    ],
+    "safeTravelTips": [
+     "Pide taxis con Bolt o Forus; revisa la tarifa pegada en la ventanilla de cualquier taxi.",
+     "Rechaza con amabilidad invitaciones a bares donde no ves los precios.",
+     "En invierno lleva calzado antideslizante: las aceras se congelan."
+    ],
+    "emergencyNumbers": {
+     "police": "112",
+     "ambulance": "112",
+     "general": "112"
+    },
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "99 % (4G en todas partes, 5G en ciudades)",
+    "costPerGbUsd": "~1 - 2.50 $",
+    "esimAvailability": "Excelente",
+    "bestCarriers": [
+     "Telia",
+     "Elisa",
+     "Tele2"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Bueno (tranvías y autobuses en Tallin; trenes Elron y autobuses Lux Express entre ciudades)",
+    "costLevel": "Moderado",
+    "singleTicketUsd": "1.80 - 2.30 $",
+    "dailyPassUsd": "5 - 6.50 $",
+    "popularRideApps": [
+     "Bolt",
+     "Uber",
+     "Forus Takso",
+     "Elron"
+    ],
+    "taxiAdvice": "Bolt es una empresa estonia y la opción más barata y común. En el transporte de Tallin basta con acercar una tarjeta bancaria sin contacto."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "45 - 70 $",
+    "dailyBudgetMidrangeUsd": "110 - 180 $",
+    "budgetMealUsd": "12 - 18 $",
+    "coffeeUsd": "3 - 4.50 $",
+    "waterBottleUsd": "1 - 1.50 $",
+    "hostelDormUsd": "20 - 35 $",
+    "hotel3StarUsd": "80 - 140 $",
+    "flightCostIndex": "Moderado",
+    "flightTip": "Turkish Airlines vuela directo de Estambul a Tallin; las conexiones por Riga o Helsinki suelen ser económicas. El ferry desde Helsinki tarda unas 2 horas."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Los estonios son callados y reservados; no gustan la charla trivial ni las voces altas.",
+     "Al entrar en una casa se quitan los zapatos.",
+     "La puntualidad importa; llegar tarde se considera descortés.",
+     "En la sauna la desnudez es normal; respeta las normas y el silencio."
+    ],
+    "festivals": [
+     "Jaanipäev (solsticio de verano, 23–24 de junio, hogueras)",
+     "Festival Estonio de la Canción y la Danza (Laulupidu, cada 5 años aprox.; el último en 2025)",
+     "Mercado navideño de Tallin (plaza del Ayuntamiento, finales de noviembre – principios de enero)"
+    ],
+    "lifestyle": "Estado digital (e-Estonia, e-Residencia), vida cercana a la naturaleza, cultura de la sauna y paseos por bosques y turberas forman parte del día a día."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Casco antiguo de Tallin (UNESCO) y plaza del Ayuntamiento",
+     "Colina de Toompea y catedral de Alejandro Nevski",
+     "Palacio y parque de Kadriorg",
+     "Telliskivi Creative City y Kalamaja",
+     "Parque Nacional de Lahemaa (pasarela de la turbera de Viru)",
+     "Tartu y el Museo Nacional de Estonia (ERM)"
+    ],
+    "bestSeasons": "Mayo – septiembre (días de verano largos y templados, noches blancas); diciembre por el mercado navideño; inviernos muy fríos y oscuros",
+    "travelStyleTip": "Tallin se recorre a pie; a Tartu se llega en 2–2,5 horas en tren Elron o Lux Express, y a Lahemaa lo más cómodo es en coche de alquiler."
+   },
+   "religion": {
+    "primaryReligions": "Uno de los países más laicos del mundo: sin religión ~58 %, cristianos ortodoxos ~16 %, luteranos ~8 %, otros minoritarios.",
+    "respectNorms": "En las iglesias ortodoxas se espera que las mujeres cubran la cabeza y los hombres se quiten el sombrero; no hagas fotos durante el oficio.",
+    "sacredSites": [
+     "Catedral de Alejandro Nevski (Tallin)",
+     "Iglesia de San Olaf (Oleviste, Tallin)",
+     "Convento ortodoxo de Pühtitsa (Kuremäe)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Estonio (lengua finoúgria emparentada con el finés). Cerca de una cuarta parte de la población habla ruso.",
+    "englishProficiency": "Muy bueno; los jóvenes y el personal turístico hablan inglés con fluidez.",
+    "phrases": [
+     {
+      "phrase": "Tere",
+      "meaning": "Hola",
+      "translation": "Hola",
+      "pronunciation": "TEH-reh"
+     },
+     {
+      "phrase": "Aitäh",
+      "meaning": "Gracias",
+      "translation": "Gracias",
+      "pronunciation": "AI-tah"
+     },
+     {
+      "phrase": "Palun",
+      "meaning": "Por favor / De nada",
+      "translation": "Por favor / De nada",
+      "pronunciation": "PAH-lun"
+     },
+     {
+      "phrase": "Kui palju see maksab?",
+      "meaning": "¿Cuánto cuesta esto?",
+      "translation": "¿Cuánto cuesta esto?",
+      "pronunciation": "kwee PAL-yu seh MAK-sab"
+     },
+     {
+      "phrase": "Terviseks!",
+      "meaning": "¡Salud!",
+      "translation": "¡Salud!",
+      "pronunciation": "TER-vee-seks"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Gobernada sucesivamente por Dinamarca, los caballeros teutónicos, Suecia y el Imperio ruso, Estonia declaró su independencia en 1918. Anexionada por la URSS en 1940, la recuperó con la 'Revolución Cantada' en 1991 y entró en la UE y la OTAN en 2004.",
+    "milestones": [
+     "1219: los daneses levantan una fortaleza en Tallin (Reval)",
+     "1918: declaración de independencia (24 de febrero)",
+     "1991: restauración de la independencia (20 de agosto)",
+     "2004: ingreso en la UE y la OTAN; euro desde 2011"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Verivorst y mulgikapsad (morcilla con chucrut; plato navideño)",
+     "Kiluvõileib (espadín marinado sobre pan de centeno)",
+     "Mulgipuder (puré de patata y cebada)"
+    ],
+    "traditionalDrinks": [
+     "Vana Tallinn (licor de ron especiado)",
+     "Kali (kvas de pan de centeno)",
+     "Cervezas Saku y A. Le Coq"
+    ],
+    "streetFoodAndDesserts": [
+     "Kama (harina de cereales tostados con kéfir)",
+     "Kohuke (barrita de requesón con chocolate)",
+     "Kringel (rosca estonia de canela)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Arvo Pärt (compositor)",
+     "Lennart Meri (escritor y presidente)",
+     "Kristjan Jaak Peterson (pionero de la poesía estonia)"
+    ],
+    "strongSectors": [
+     "Gobierno digital y software (cuna de Skype y Bolt)",
+     "Silvicultura y productos de madera",
+     "Logística y comercio de tránsito"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Las tarjetas y el pago sin contacto funcionan casi en todas partes; rara vez hace falta efectivo.",
+    "tippingCulture": "En restaurantes se agradece un 5–10 % por buen servicio, pero no es obligatorio.",
+    "economicPillars": "TI y servicios digitales, madera y muebles, electrónica, logística y turismo."
+   }
+  },
+  "itin": {
+   "routeName": "Clásicos de Estonia: Tallin, Lahemaa y Tartu",
+   "routeSummary": "Una ruta de 6 días desde la Tallin medieval hasta las turberas y mansiones de Lahemaa y la ciudad universitaria de Tartu.",
+   "totalDays": 6,
+   "idealDurationText": "6 días",
+   "bestSeason": "Mayo – septiembre (días de verano largos y templados, noches blancas); diciembre por el mercado navideño; inviernos muy fríos y oscuros",
+   "transportMode": "A pie en Tallin; coche de alquiler para Lahemaa; tren Elron a Tartu",
+   "paceLevel": "Tranquilo",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Tallin (casco antiguo y Kadriorg)",
+     "recommendedDuration": "3 días",
+     "durationBadge": "3 Días",
+     "highlights": [
+      "Plaza del Ayuntamiento y el Ayuntamiento gótico",
+      "Miradores de Kohtuotsa y Patkuli en Toompea",
+      "Palacio de Kadriorg y Museo de Arte KUMU",
+      "Telliskivi y las casas de madera de Kalamaja"
+     ],
+     "activities": [
+      "Recorre la muralla y sube a la torre de la iglesia de San Olaf.",
+      "Visita el museo marítimo Seaplane Harbour (Lennusadam).",
+      "Pasea entre el mercado y el arte urbano de Telliskivi."
+     ],
+     "foodAndDrinks": [
+      "Kiluvõileib y una cerveza Saku",
+      "Platos de caza en el medieval Olde Hansa",
+      "Café caliente con licor Vana Tallinn"
+     ],
+     "criticalTips": [
+      "Los días de cruceros visita el casco antiguo temprano o al atardecer.",
+      "Valida siempre la tarjeta en el transporte; hay muchos controles y multas altas."
+     ],
+     "mapsQuery": "Tallinn Old Town, Estonia"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Parque Nacional de Lahemaa",
+     "recommendedDuration": "1 día",
+     "durationBadge": "1 Día",
+     "highlights": [
+      "Pasarela y torre de observación de la turbera de Viru",
+      "Mansión de Palmse",
+      "Käsmu, el 'pueblo de los capitanes', y grandes rocas",
+      "Pueblo pesquero de Altja"
+     ],
+     "activities": [
+      "Recorre al amanecer el sendero de 3,5 km por la turbera.",
+      "Visita los jardines y la antigua destilería de Palmse.",
+      "Camina por la costa y el bosque de la península de Käsmu."
+     ],
+     "foodAndDrinks": [
+      "Comida casera estonia en la taberna Altja Kõrts",
+      "Pescado ahumado con pan de centeno"
+     ],
+     "criticalTips": [
+      "En verano usa repelente contra mosquitos y garrapatas, que pueden transmitir encefalitis.",
+      "Hay poco transporte público; alquila coche o únete a un tour."
+     ],
+     "mapsQuery": "Viru Bog, Lahemaa, Estonia"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Tartu (ciudad universitaria)",
+     "recommendedDuration": "2 días",
+     "durationBadge": "2 Días",
+     "highlights": [
+      "Plaza del Ayuntamiento y la fuente de los 'Estudiantes besándose'",
+      "Edificio principal de la Universidad de Tartu y colina de Toome",
+      "Museo Nacional de Estonia (ERM)",
+      "Centro de Ciencias AHHAA"
+     ],
+     "activities": [
+      "Descubre la etnografía e historia estonias en el ERM.",
+      "Explora las ruinas de la catedral y el parque de Toome.",
+      "Pasea entre las casas de madera de Supilinn ('barrio de la sopa')."
+     ],
+     "foodAndDrinks": [
+      "Cervezas locales de la fábrica A. Le Coq",
+      "Postre de kama",
+      "Kringel y café en cafeterías estudiantiles"
+     ],
+     "criticalTips": [
+      "El ERM cierra los lunes; planifícalo.",
+      "Los billetes del tren Elron Tallin–Tartu se compran en la app o a bordo; a bordo son algo más caros."
+     ],
+     "mapsQuery": "Tartu Town Hall Square, Estonia"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Verivorst",
+     "Mulgipuder",
+     "Pescado báltico ahumado",
+     "Sült (gelatina de carne)"
+    ],
+    "drinks": [
+     "Vana Tallinn",
+     "Kali (kvas)",
+     "Cerveza Saku",
+     "Kéfir"
+    ],
+    "streetFoods": [
+     "Kiluvõileib",
+     "Pirukas (empanadilla rellena)",
+     "Kohuke",
+     "Kringel"
+    ],
+    "diningAdvice": "A mediodía muchos restaurantes ofrecen un 'päevapakkumine' (menú del día) económico. El cerdo es habitual y las opciones halal son escasas: pregunta."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Cortavientos y jersey ligero incluso en verano",
+     "Repelente de mosquitos y garrapatas",
+     "Tarjeta bancaria sin contacto",
+     "Ropa térmica y botas antideslizantes en invierno"
+    ],
+    "safetyAndEtiquette": [
+     "Las luces del coche deben ir encendidas de día; la tolerancia al alcohol al volante es mínima.",
+     "Respeta las normas sobre fuego en los bosques.",
+     "Los peatones deben llevar un reflectante en la oscuridad por ley."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Enchufes de dos clavijas redondas (C/F) como en Turquía; no hace falta adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "El agua del grifo es potable y cumple las normas de la UE.",
+    "vaccines": [
+     "Vacunas rutinarias (tétanos, difteria, sarampión)",
+     "Vacuna contra la encefalitis por garrapatas para excursiones forestales en verano"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "112"
+   },
+   "tipping": {
+    "custom": "Deja un 5–10 % por buen servicio en restaurantes.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "En cafeterías y bares no se espera propina; el datáfono puede ofrecer la opción."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA 24 %; devolución neta ~12–15 %",
+    "minSpend": "~38 € o más en una tienda",
+    "customsNote": "Los viajeros de fuera de la UE (p. ej., Turquía) deben sellar los formularios Tax Free en aduanas en el último punto de salida de la UE (p. ej., aeropuerto de Tallin)."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.00 - $2.50",
+    "topCarriers": [
+     "Telia",
+     "Elisa",
+     "Tele2"
+    ],
+    "airportSimTrapWarning": "El roaming con líneas turcas en la UE es caro; compra una eSIM antes de viajar o una SIM prepago de Telia/Elisa/Tele2 en tiendas."
+   },
+   "touristScams": [
+    {
+     "title": "Cuenta abusiva en clubes nocturnos",
+     "desc": "Captadores te llevan a un club sin lista de precios y la cuenta asciende a cientos de euros.",
+     "tip": "No pidas sin ver precios; rechaza invitaciones en la calle."
+    },
+    {
+     "title": "Taxis con tarifa abusiva",
+     "desc": "Algunos taxis cerca del puerto y la estación cobran tarifas legales pero muy altas.",
+     "tip": "Pide el coche con Bolt o Forus para ver el precio antes."
+    }
+   ]
+  }
+ },
+ "ru": {
+  "insights": {
+   "currency": "Евро (EUR)",
+   "bestMonths": "Май – сентябрь (долгие тёплые летние дни, белые ночи); в декабре — рождественская ярмарка, зимы очень холодные и тёмные",
+   "safety": {
+    "safetyScore": 65,
+    "crimeRateSummary": "Уровень насильственной преступности низкий, Таллин в целом безопасен и ночью. Основные проблемы — карманники в Старом городе летом и завышенные счета в ночных заведениях.",
+    "commonScams": [
+     "Счета на сотни евро за напитки без цены в некоторых ночных клубах Старого города",
+     "Карманники на людной Ратушной площади и в дни захода круизных лайнеров",
+     "Такси с завышенным тарифом у порта и автовокзала"
+    ],
+    "safeTravelTips": [
+     "Вызывайте такси через Bolt или Forus; у уличного такси проверяйте наклейку с тарифом.",
+     "Вежливо отказывайтесь от приглашений в бары без указанных цен.",
+     "Зимой носите нескользящую обувь — тротуары обледеневают."
+    ],
+    "emergencyNumbers": {
+     "police": "112",
+     "ambulance": "112",
+     "general": "112"
+    },
+    "safetyLevel": "Безопасно",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "99% (4G повсюду, 5G в городах)",
+    "costPerGbUsd": "~1 - 2.50 $",
+    "esimAvailability": "Отлично",
+    "bestCarriers": [
+     "Telia",
+     "Elisa",
+     "Tele2"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Хорошее (трамваи и автобусы в Таллине; поезда Elron и автобусы Lux Express между городами)",
+    "costLevel": "Средний",
+    "singleTicketUsd": "1.80 - 2.30 $",
+    "dailyPassUsd": "5 - 6.50 $",
+    "popularRideApps": [
+     "Bolt",
+     "Uber",
+     "Forus Takso",
+     "Elron"
+    ],
+    "taxiAdvice": "Bolt — эстонская компания и самый дешёвый, популярный вариант. В транспорте Таллина можно платить, просто приложив бесконтактную банковскую карту."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "45 - 70 $",
+    "dailyBudgetMidrangeUsd": "110 - 180 $",
+    "budgetMealUsd": "12 - 18 $",
+    "coffeeUsd": "3 - 4.50 $",
+    "waterBottleUsd": "1 - 1.50 $",
+    "hostelDormUsd": "20 - 35 $",
+    "hotel3StarUsd": "80 - 140 $",
+    "flightCostIndex": "Средний",
+    "flightTip": "Turkish Airlines летает напрямую из Стамбула в Таллин; стыковки через Ригу или Хельсинки часто выгодны. Паром из Хельсинки идёт около 2 часов."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Эстонцы спокойны и сдержанны; пустые разговоры и громкая речь не приветствуются.",
+     "При входе в дом разуваются.",
+     "Пунктуальность важна; опоздание считается невежливым.",
+     "В сауне нагота — норма; соблюдайте правила и тишину."
+    ],
+    "festivals": [
+     "Яанипяэв (Иванов день, 23–24 июня, костры)",
+     "Эстонский праздник песни и танца (Laulupidu, примерно раз в 5 лет; последний — 2025)",
+     "Рождественская ярмарка Таллина (Ратушная площадь, конец ноября – начало января)"
+    ],
+    "lifestyle": "Цифровое государство (e-Estonia, e-Residency), близость к природе, банная культура и прогулки по лесам и болотам — часть повседневной жизни."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Старый Таллин (ЮНЕСКО) и Ратушная площадь",
+     "Холм Тоомпеа и собор Александра Невского",
+     "Дворец и парк Кадриорг",
+     "Творческий городок Теллискиви и Каламая",
+     "Национальный парк Лахемаа (тропа по болоту Виру)",
+     "Тарту и Эстонский национальный музей (ERM)"
+    ],
+    "bestSeasons": "Май – сентябрь (долгие тёплые летние дни, белые ночи); в декабре — рождественская ярмарка, зимы очень холодные и тёмные",
+    "travelStyleTip": "Таллин лучше обходить пешком; до Тарту 2–2,5 часа на поезде Elron или автобусе Lux Express, в Лахемаа удобнее всего на арендованной машине."
+   },
+   "religion": {
+    "primaryReligions": "Одна из самых светских стран мира: неверующие ~58%, православные ~16%, лютеране ~8%, прочие немногочисленны.",
+    "respectNorms": "В православных храмах женщинам принято покрывать голову, мужчинам — снимать головной убор; не фотографируйте во время службы.",
+    "sacredSites": [
+     "Собор Александра Невского (Таллин)",
+     "Церковь Олевисте (Таллин)",
+     "Пюхтицкий Успенский монастырь (Куремяэ)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Эстонский (финно-угорский язык, родственный финскому). Около четверти населения говорит по-русски.",
+    "englishProficiency": "Очень хороший; молодёжь и работники туризма свободно говорят по-английски.",
+    "phrases": [
+     {
+      "phrase": "Tere",
+      "meaning": "Здравствуйте",
+      "translation": "Здравствуйте",
+      "pronunciation": "TEH-reh"
+     },
+     {
+      "phrase": "Aitäh",
+      "meaning": "Спасибо",
+      "translation": "Спасибо",
+      "pronunciation": "AI-tah"
+     },
+     {
+      "phrase": "Palun",
+      "meaning": "Пожалуйста",
+      "translation": "Пожалуйста",
+      "pronunciation": "PAH-lun"
+     },
+     {
+      "phrase": "Kui palju see maksab?",
+      "meaning": "Сколько это стоит?",
+      "translation": "Сколько это стоит?",
+      "pronunciation": "kwee PAL-yu seh MAK-sab"
+     },
+     {
+      "phrase": "Terviseks!",
+      "meaning": "Ваше здоровье!",
+      "translation": "Ваше здоровье!",
+      "pronunciation": "TER-vee-seks"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Под властью Дании, немецких рыцарских орденов, Швеции и Российской империи Эстония провозгласила независимость в 1918 году. В 1940 году включена в СССР, в 1991-м восстановила независимость после «Поющей революции», в 2004-м вступила в ЕС и НАТО.",
+    "milestones": [
+     "1219: датчане строят крепость в Таллине (Ревель)",
+     "1918: провозглашение независимости (24 февраля)",
+     "1991: восстановление независимости (20 августа)",
+     "2004: вступление в ЕС и НАТО; евро с 2011 года"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Верививорст и мульгикапсад (кровяная колбаса с кислой капустой; рождественское блюдо)",
+     "Килувыйлейб (килька на ржаном хлебе)",
+     "Мульгипудер (пюре из картофеля и перловки)"
+    ],
+    "traditionalDrinks": [
+     "Вана Таллин (пряный ромовый ликёр)",
+     "Кали (хлебный квас)",
+     "Пиво Saku и A. Le Coq"
+    ],
+    "streetFoodAndDesserts": [
+     "Кама (смесь обжаренной муки с кефиром)",
+     "Кохуке (творожный сырок в шоколаде)",
+     "Крингель (эстонский коричный крендель)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Арво Пярт (композитор)",
+     "Леннарт Мери (писатель и президент)",
+     "Кристьян Яак Петерсон (основоположник эстонской поэзии)"
+    ],
+    "strongSectors": [
+     "Цифровое государство и ПО (родина Skype и Bolt)",
+     "Лесная и деревообрабатывающая отрасль",
+     "Логистика и транзитная торговля"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Карты и бесконтактная оплата принимаются почти везде; наличные нужны редко.",
+    "tippingCulture": "Чаевые 5–10% за хорошее обслуживание в ресторане приветствуются, но не обязательны.",
+    "economicPillars": "ИТ и цифровые услуги, древесина и мебель, электроника, логистика и туризм."
+   }
+  },
+  "itin": {
+   "routeName": "Классика Эстонии: Таллин, Лахемаа и Тарту",
+   "routeSummary": "6-дневный маршрут: средневековый Таллин, болота и усадьбы Лахемаа и университетский Тарту.",
+   "totalDays": 6,
+   "idealDurationText": "6 дней",
+   "bestSeason": "Май – сентябрь (долгие тёплые летние дни, белые ночи); в декабре — рождественская ярмарка, зимы очень холодные и тёмные",
+   "transportMode": "Пешком по Таллину; аренда авто для Лахемаа; поезд Elron до Тарту",
+   "paceLevel": "Спокойный",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Остановка 1: Таллин (Старый город и Кадриорг)",
+     "recommendedDuration": "3 дня",
+     "durationBadge": "3 дня",
+     "highlights": [
+      "Ратушная площадь и готическая ратуша",
+      "Смотровые площадки Кохтуотса и Паткули на Тоомпеа",
+      "Дворец Кадриорг и художественный музей KUMU",
+      "Теллискиви и деревянные дома Каламая"
+     ],
+     "activities": [
+      "Пройдитесь по городской стене и поднимитесь на башню Олевисте.",
+      "Посетите Морской музей в Гидроавиагавани (Леннусадам).",
+      "Погуляйте по рынку и стрит-арту Теллискиви."
+     ],
+     "foodAndDrinks": [
+      "Килувыйлейб и пиво Saku",
+      "Блюда из дичи в средневековом Olde Hansa",
+      "Горячий кофе с ликёром Вана Таллин"
+     ],
+     "criticalTips": [
+      "В дни круизных лайнеров гуляйте по Старому городу рано утром или вечером.",
+      "Всегда прикладывайте карту в транспорте: контроль частый, штрафы высокие."
+     ],
+     "mapsQuery": "Tallinn Old Town, Estonia"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Остановка 2: Национальный парк Лахемаа",
+     "recommendedDuration": "1 день",
+     "durationBadge": "1 день",
+     "highlights": [
+      "Тропа и смотровая вышка на болоте Виру",
+      "Мыза Палмсе",
+      "Кясму — «деревня капитанов» и валуны",
+      "Рыбацкая деревня Алтья"
+     ],
+     "activities": [
+      "Пройдите 3,5-километровую болотную тропу на рассвете.",
+      "Осмотрите сады и старую винокурню мызы Палмсе.",
+      "Прогуляйтесь по побережью и лесу полуострова Кясму."
+     ],
+     "foodAndDrinks": [
+      "Домашняя эстонская кухня в корчме Алтья",
+      "Копчёная рыба с ржаным хлебом"
+     ],
+     "criticalTips": [
+      "Летом используйте репеллент от комаров и клещей — клещи переносят энцефалит.",
+      "Общественного транспорта мало; арендуйте авто или возьмите экскурсию."
+     ],
+     "mapsQuery": "Viru Bog, Lahemaa, Estonia"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Остановка 3: Тарту (университетский город)",
+     "recommendedDuration": "2 дня",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Ратушная площадь и фонтан «Целующиеся студенты»",
+      "Главное здание Тартуского университета и холм Тоомемяги",
+      "Эстонский национальный музей (ERM)",
+      "Научный центр AHHAA"
+     ],
+     "activities": [
+      "Изучите этнографию и историю Эстонии в ERM.",
+      "Погуляйте среди руин собора и по парку Тоомемяги.",
+      "Пройдитесь по деревянному району Супилинн («Суповой город»)."
+     ],
+     "foodAndDrinks": [
+      "Местное пиво пивоварни A. Le Coq",
+      "Десерт кама",
+      "Крингель и кофе в студенческих кафе"
+     ],
+     "criticalTips": [
+      "ERM закрыт по понедельникам — учитывайте это.",
+      "Билеты на поезд Elron Таллин–Тарту можно купить в приложении или в поезде; в поезде чуть дороже."
+     ],
+     "mapsQuery": "Tartu Town Hall Square, Estonia"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Верививорст",
+     "Мульгипудер",
+     "Копчёная балтийская рыба",
+     "Сюльт (холодец)"
+    ],
+    "drinks": [
+     "Вана Таллин",
+     "Кали (квас)",
+     "Пиво Saku",
+     "Кефир"
+    ],
+    "streetFoods": [
+     "Килувыйлейб",
+     "Пирукас (пирожок)",
+     "Кохуке",
+     "Крингель"
+    ],
+    "diningAdvice": "В обед многие рестораны предлагают недорогое «päevapakkumine» (блюдо дня). Свинина распространена, халяльных вариантов мало — уточняйте."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Ветровка и лёгкий свитер даже летом",
+     "Средство от комаров и клещей",
+     "Бесконтактная банковская карта",
+     "Термобельё и нескользящая обувь зимой"
+    ],
+    "safetyAndEtiquette": [
+     "Фары днём обязательны; допустимый уровень алкоголя за рулём очень низкий.",
+     "Соблюдайте правила разведения огня в лесу.",
+     "Пешеходы в темноте обязаны носить светоотражатель."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Такие же розетки с двумя круглыми штырями (C/F), как в Турции; адаптер не нужен."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Водопроводная вода питьевая и соответствует стандартам ЕС.",
+    "vaccines": [
+     "Плановые прививки (столбняк, дифтерия, корь)",
+     "Прививка от клещевого энцефалита для летних походов в лес"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "112"
+   },
+   "tipping": {
+    "custom": "За хорошее обслуживание в ресторане оставляют 5–10%.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "В кафе и барах чаевые не ожидаются; терминал может предложить добавить их."
+   },
+   "taxFree": {
+    "vatRefundPercent": "НДС 24%; возврат нетто ~12–15%",
+    "minSpend": "от ~38 € в одном магазине",
+    "customsNote": "Путешественники не из ЕС (например, из Турции) должны заверить формы Tax Free на таможне в последнем пункте выезда из ЕС (например, аэропорт Таллина)."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.00 - $2.50",
+    "topCarriers": [
+     "Telia",
+     "Elisa",
+     "Tele2"
+    ],
+    "airportSimTrapWarning": "Роуминг с турецкими номерами в ЕС дорогой; купите eSIM заранее или предоплаченную SIM Telia/Elisa/Tele2 в магазине."
+   },
+   "touristScams": [
+    {
+     "title": "Грабительский счёт в ночном клубе",
+     "desc": "Зазывалы приводят в клуб без меню с ценами, счёт за напитки достигает сотен евро.",
+     "tip": "Не заказывайте, не увидев цен; отказывайтесь от уличных приглашений."
+    },
+    {
+     "title": "Такси с завышенным тарифом",
+     "desc": "Некоторые такси у порта и автовокзала берут законный, но очень высокий тариф.",
+     "tip": "Заказывайте через Bolt или Forus с ценой заранее."
+    }
+   ]
+  }
+ }
+}

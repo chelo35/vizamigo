@@ -97,6 +97,61 @@
      }
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "E"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "E tipi prizlerde dışarı çıkan topraklama pimi vardır; Türkiye’deki ince C fişleri ve E/F uyumlu (delikli) topraklı fişler sorunsuz girer, adaptör gerekmez."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Musluk suyu ülke genelinde içilebilir; restoranlarda ücretsiz “carafe d’eau” (sürahi su) isteyebilirsiniz.",
+    "vaccines": [
+     "Rutin aşılar (KKK, tetanoz)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "15"
+   },
+   "tipping": {
+    "custom": "Fiyatlara %15 servis dahildir (“service compris”); bahşiş zorunlu değildir.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "Memnunsanız birkaç euro veya %5-10 bırakabilirsiniz; kafelerde bozuk para yeterli."
+   },
+   "taxFree": {
+    "vatRefundPercent": "%20 KDV; iade komisyon sonrası ~%12-14",
+    "minSpend": "Aynı mağazada aynı gün 100,01 €",
+    "customsNote": "Mağazadan “détaxe” formu isteyin; AB’den son çıkış havalimanında check-in öncesi PABLO kioskunda barkodu okutun."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.50 - $1.50",
+    "topCarriers": [
+     "Orange",
+     "SFR",
+     "Bouygues Telecom",
+     "Free Mobile"
+    ],
+    "airportSimTrapWarning": "Havalimanı satış noktaları pahalıdır; şehirdeki Orange/Free/SFR mağazalarından pasaportla hat alın veya e-SIM kullanın. AB roaming Türk hatlarına uygulanmaz."
+   },
+   "touristScams": [
+    {
+     "title": "Bileklik tuzağı",
+     "desc": "Montmartre’da Sacré-Cœur merdivenlerinde bileğinize ip bağlayıp para isteyen gruplar.",
+     "tip": "Ellerinizi cebinizde tutup durmadan yürüyün."
+    },
+    {
+     "title": "Yerde bulunan altın yüzük",
+     "desc": "Biri yerden “bulduğu” altın yüzüğü size verir, sonra karşılığında para ister; yüzük sahtedir.",
+     "tip": "Hiçbir şeyi kabul etmeyin, konuşmaya girmeden uzaklaşın."
+    }
+   ]
   }
  },
  "en": {
@@ -197,6 +252,61 @@
      }
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "E"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Type E sockets have a protruding earth pin; slim C plugs and the E/F-compatible (holed) grounded plugs used in Turkey fit without problems, so no adapter is needed."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Tap water is drinkable nationwide; in restaurants you can ask for a free “carafe d’eau”.",
+    "vaccines": [
+     "Routine vaccines (MMR, tetanus)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "15"
+   },
+   "tipping": {
+    "custom": "A 15% service charge is included in prices (“service compris”); tipping is not obligatory.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "If you are happy you can leave a few euros or 5-10%; small change is enough in cafés."
+   },
+   "taxFree": {
+    "vatRefundPercent": "20% VAT; about 12-14% back after fees",
+    "minSpend": "€100.01 in the same shop on the same day",
+    "customsNote": "Ask the shop for a “détaxe” form and scan its barcode at a PABLO kiosk at your last EU departure airport before check-in."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.50 - $1.50",
+    "topCarriers": [
+     "Orange",
+     "SFR",
+     "Bouygues Telecom",
+     "Free Mobile"
+    ],
+    "airportSimTrapWarning": "Airport sales points are expensive; buy a SIM with your passport at Orange, Free or SFR shops in town or use an eSIM. EU roaming does not apply to Turkish SIMs."
+   },
+   "touristScams": [
+    {
+     "title": "Bracelet trap",
+     "desc": "Groups on the Sacré-Cœur steps in Montmartre tie a string to your wrist and demand money.",
+     "tip": "Keep your hands in your pockets and keep walking."
+    },
+    {
+     "title": "Found gold ring",
+     "desc": "Someone hands you a gold ring they “found” on the ground and then asks for money; the ring is fake.",
+     "tip": "Accept nothing and walk away without engaging."
+    }
+   ]
   }
  },
  "de": {
@@ -297,6 +407,61 @@
      }
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "E"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Steckdosen Typ E haben einen herausstehenden Erdungsstift; schmale C-Stecker und die in der Türkei üblichen E/F-kompatiblen (gelochten) Schutzkontaktstecker passen, kein Adapter nötig."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Leitungswasser ist landesweit trinkbar; im Restaurant kann man eine kostenlose „carafe d’eau“ bestellen.",
+    "vaccines": [
+     "Standardimpfungen (MMR, Tetanus)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "15"
+   },
+   "tipping": {
+    "custom": "15 % Service sind im Preis enthalten („service compris“); Trinkgeld ist nicht Pflicht.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "Bei Zufriedenheit ein paar Euro oder 5-10 %; im Café reicht Kleingeld."
+   },
+   "taxFree": {
+    "vatRefundPercent": "20 % MwSt.; nach Gebühren etwa 12-14 % zurück",
+    "minSpend": "100,01 € im selben Geschäft am selben Tag",
+    "customsNote": "Im Geschäft ein „détaxe“-Formular verlangen und den Barcode am letzten EU-Abflughafen vor dem Check-in an einem PABLO-Kiosk scannen."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.50 - $1.50",
+    "topCarriers": [
+     "Orange",
+     "SFR",
+     "Bouygues Telecom",
+     "Free Mobile"
+    ],
+    "airportSimTrapWarning": "Verkaufsstellen am Flughafen sind teuer; eine SIM mit Pass in Orange-, Free- oder SFR-Shops in der Stadt kaufen oder eine eSIM nutzen. EU-Roaming gilt nicht für türkische SIMs."
+   },
+   "touristScams": [
+    {
+     "title": "Armband-Falle",
+     "desc": "Gruppen an den Treppen von Sacré-Cœur in Montmartre binden Ihnen ein Band ums Handgelenk und verlangen Geld.",
+     "tip": "Hände in die Taschen und weitergehen."
+    },
+    {
+     "title": "Gefundener Goldring",
+     "desc": "Jemand reicht Ihnen einen am Boden „gefundenen“ Goldring und will dann Geld; der Ring ist unecht.",
+     "tip": "Nichts annehmen und ohne Gespräch weggehen."
+    }
+   ]
   }
  },
  "es": {
@@ -397,6 +562,61 @@
      }
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "E"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Los enchufes tipo E tienen una clavija de tierra saliente; las clavijas C finas y las clavijas con toma de tierra compatibles E/F (con orificio) usadas en Turquía entran sin problema, no hace falta adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "El agua del grifo es potable en todo el país; en los restaurantes puede pedir una “carafe d’eau” gratis.",
+    "vaccines": [
+     "Vacunas rutinarias (triple vírica, tétanos)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "15"
+   },
+   "tipping": {
+    "custom": "Los precios incluyen un 15 % de servicio (“service compris”); la propina no es obligatoria.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "Si queda contento puede dejar unos euros o un 5-10 %; en cafeterías bastan unas monedas."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA del 20 %; se recupera un 12-14 % tras comisiones",
+    "minSpend": "100,01 € en la misma tienda el mismo día",
+    "customsNote": "Pida el formulario “détaxe” en la tienda y escanee su código de barras en un quiosco PABLO del último aeropuerto de salida de la UE antes de facturar."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.50 - $1.50",
+    "topCarriers": [
+     "Orange",
+     "SFR",
+     "Bouygues Telecom",
+     "Free Mobile"
+    ],
+    "airportSimTrapWarning": "Los puntos de venta del aeropuerto son caros; compre una SIM con pasaporte en tiendas Orange, Free o SFR de la ciudad o use una eSIM. El roaming UE no aplica a SIM turcas."
+   },
+   "touristScams": [
+    {
+     "title": "Trampa de la pulsera",
+     "desc": "Grupos en las escaleras del Sacré-Cœur, en Montmartre, le atan un hilo a la muñeca y piden dinero.",
+     "tip": "Lleve las manos en los bolsillos y siga andando."
+    },
+    {
+     "title": "El anillo de oro encontrado",
+     "desc": "Alguien le da un anillo de oro que ha “encontrado” en el suelo y luego pide dinero; el anillo es falso.",
+     "tip": "No acepte nada y aléjese sin entrar en conversación."
+    }
+   ]
   }
  },
  "ru": {
@@ -497,6 +717,61 @@
      }
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "E"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "В розетках типа E есть выступающий штырь заземления; тонкие вилки C и турецкие вилки с заземлением, совместимые с E/F (с отверстием), подходят — переходник не нужен."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Водопроводную воду можно пить по всей стране; в ресторане можно попросить бесплатный графин воды («carafe d’eau»).",
+    "vaccines": [
+     "Плановые прививки (корь-краснуха-паротит, столбняк)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "15"
+   },
+   "tipping": {
+    "custom": "В цены включено 15 % за обслуживание («service compris»); чаевые не обязательны.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "Если всё понравилось, можно оставить пару евро или 5-10 %; в кафе достаточно мелочи."
+   },
+   "taxFree": {
+    "vatRefundPercent": "НДС 20 %; после комиссии возвращается около 12-14 %",
+    "minSpend": "100,01 € в одном магазине за один день",
+    "customsNote": "Попросите в магазине форму «détaxe» и до регистрации отсканируйте её штрихкод в киоске PABLO в последнем аэропорту вылета из ЕС."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.50 - $1.50",
+    "topCarriers": [
+     "Orange",
+     "SFR",
+     "Bouygues Telecom",
+     "Free Mobile"
+    ],
+    "airportSimTrapWarning": "Точки продаж в аэропорту дорогие; купите SIM по паспорту в салонах Orange, Free или SFR в городе либо используйте eSIM. Роуминг ЕС на турецкие SIM не распространяется."
+   },
+   "touristScams": [
+    {
+     "title": "Ловушка с браслетом",
+     "desc": "Группы на лестнице Сакре-Кёр на Монмартре повязывают нитку на запястье и требуют деньги.",
+     "tip": "Держите руки в карманах и не останавливайтесь."
+    },
+    {
+     "title": "«Найденное» золотое кольцо",
+     "desc": "Вам протягивают золотое кольцо, якобы найденное на земле, а потом просят денег; кольцо фальшивое.",
+     "tip": "Ничего не берите и уходите, не вступая в разговор."
+    }
+   ]
   }
  }
 }

@@ -246,6 +246,60 @@
      "mapsQuery": "Santa Monica Pier, Los Angeles, USA"
     }
    ]
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "A",
+     "B"
+    ],
+    "voltage": "120V",
+    "frequency": "60Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "İki yassı uçlu A (topraklı B) priz ve 120V/60Hz; Türk fişleri için adaptör gerekir. Şarj aletinizin 100-240V desteklediğini kontrol edin; yalnızca 220V çalışan cihazlar için dönüştürücü gerekir."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Büyük şehirlerin çoğunda musluk suyu içilebilir; nadir yerel uyarılar (“boil water notice”) için belediye duyurularını takip edin.",
+    "vaccines": [
+     "Rutin aşılar (KKK, tetanoz)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "911"
+   },
+   "tipping": {
+    "custom": "Restoranlarda %18-20 bahşiş beklenir ve garsonların gelirinin büyük kısmıdır; fiyatlara ayrıca eyalet satış vergisi eklenir.",
+    "standardPercent": 18,
+    "rule": "expected",
+    "note": "Taksi/Uber %15-20, barmen içki başı 1-2 $, otel kat görevlisi gecelik 2-5 $ yaygındır."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Yok (KDV yok; eyalet/yerel satış vergisi %0-10+)",
+    "minSpend": "—",
+    "customsNote": "ABD’de KDV yoktur; satış vergisi kasada eklenir ve turistlere genellikle iade edilmez."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$2 - $5",
+    "topCarriers": [
+     "T-Mobile",
+     "Verizon",
+     "AT&T"
+    ],
+    "airportSimTrapWarning": "Havalimanı otomatları pahalıdır; T-Mobile/AT&T ön ödemeli hatlar mağazalardan veya e-SIM ile daha ucuza alınır. Yanınızda kalan Türk hattında roaming çok pahalıdır."
+   },
+   "touristScams": [
+    {
+     "title": "Times Square kostümlü karakterler",
+     "desc": "Çizgi film kostümlü kişiler fotoğraf sonrası kişi başı 10-20 $ ister ve ısrar eder.",
+     "tip": "Fotoğraf çektirmeyin veya önceden fiyat konusunda anlaşın."
+    },
+    {
+     "title": "“Bedava” CD satıcıları",
+     "desc": "Sokakta elinize “hediye” CD veren kişiler isminizi yazıp sonra para ister.",
+     "tip": "Size uzatılan hiçbir şeyi almayın, durmadan yürüyün."
+    }
+   ]
   }
  },
  "en": {
@@ -493,6 +547,60 @@
       "Leave nothing visible in parked cars; window-smash thefts are common."
      ],
      "mapsQuery": "Santa Monica Pier, Los Angeles, USA"
+    }
+   ]
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "A",
+     "B"
+    ],
+    "voltage": "120V",
+    "frequency": "60Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Two-flat-pin A (grounded B) sockets at 120V/60Hz; Turkish plugs need an adapter. Check your charger supports 100-240V; 220V-only devices need a voltage converter."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Tap water is drinkable in most big cities; follow municipal announcements for occasional local “boil water notices”.",
+    "vaccines": [
+     "Routine vaccines (MMR, tetanus)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "911"
+   },
+   "tipping": {
+    "custom": "An 18-20% tip is expected in restaurants and makes up most of servers’ income; state sales tax is added on top of prices.",
+    "standardPercent": 18,
+    "rule": "expected",
+    "note": "Taxis/Uber 15-20%, $1-2 per drink for bartenders and $2-5 per night for hotel housekeeping are common."
+   },
+   "taxFree": {
+    "vatRefundPercent": "None (no VAT; state/local sales tax 0-10%+)",
+    "minSpend": "—",
+    "customsNote": "The USA has no VAT; sales tax is added at the till and is generally not refunded to tourists."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$2 - $5",
+    "topCarriers": [
+     "T-Mobile",
+     "Verizon",
+     "AT&T"
+    ],
+    "airportSimTrapWarning": "Airport vending machines are expensive; T-Mobile or AT&T prepaid SIMs from stores, or an eSIM, are cheaper. Roaming on your Turkish SIM is very expensive."
+   },
+   "touristScams": [
+    {
+     "title": "Times Square costumed characters",
+     "desc": "People in cartoon costumes demand $10-20 per person after a photo and insist.",
+     "tip": "Do not pose, or agree a price beforehand."
+    },
+    {
+     "title": "“Free” CD sellers",
+     "desc": "People in the street hand you a “gift” CD, write your name on it and then ask for money.",
+     "tip": "Take nothing that is handed to you and keep walking."
     }
    ]
   }
@@ -744,6 +852,60 @@
      "mapsQuery": "Santa Monica Pier, Los Angeles, USA"
     }
    ]
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "A",
+     "B"
+    ],
+    "voltage": "120V",
+    "frequency": "60Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Steckdosen Typ A (geerdet B) mit zwei flachen Stiften, 120 V/60 Hz; türkische Stecker brauchen einen Adapter. Prüfen, ob das Ladegerät 100-240 V unterstützt; reine 220-V-Geräte brauchen einen Spannungswandler."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "In den meisten Großstädten ist Leitungswasser trinkbar; gelegentliche lokale Abkochhinweise („boil water notice“) der Stadtwerke beachten.",
+    "vaccines": [
+     "Standardimpfungen (MMR, Tetanus)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "911"
+   },
+   "tipping": {
+    "custom": "18-20 % Trinkgeld werden in Restaurants erwartet und machen den Großteil des Einkommens der Bedienung aus; die Umsatzsteuer des Bundesstaats kommt zum Preis hinzu.",
+    "standardPercent": 18,
+    "rule": "expected",
+    "note": "Taxi/Uber 15-20 %, Barkeeper 1-2 $ pro Getränk und Zimmerservice im Hotel 2-5 $ pro Nacht sind üblich."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Keine (keine MwSt.; Umsatzsteuer der Bundesstaaten/Kommunen 0-10 %+)",
+    "minSpend": "—",
+    "customsNote": "In den USA gibt es keine Mehrwertsteuer; die Umsatzsteuer wird an der Kasse aufgeschlagen und Touristen in der Regel nicht erstattet."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$2 - $5",
+    "topCarriers": [
+     "T-Mobile",
+     "Verizon",
+     "AT&T"
+    ],
+    "airportSimTrapWarning": "Automaten am Flughafen sind teuer; Prepaid-SIMs von T-Mobile oder AT&T im Laden oder eine eSIM sind günstiger. Roaming mit der türkischen SIM ist sehr teuer."
+   },
+   "touristScams": [
+    {
+     "title": "Kostümierte Figuren am Times Square",
+     "desc": "Leute in Comic-Kostümen verlangen nach einem Foto 10-20 $ pro Person und werden aufdringlich.",
+     "tip": "Nicht posieren oder den Preis vorher vereinbaren."
+    },
+    {
+     "title": "„Gratis“-CD-Verkäufer",
+     "desc": "Auf der Straße drückt man Ihnen eine „geschenkte“ CD in die Hand, schreibt Ihren Namen darauf und verlangt dann Geld.",
+     "tip": "Nichts annehmen, was Ihnen hingehalten wird, und weitergehen."
+    }
+   ]
   }
  },
  "es": {
@@ -993,6 +1155,60 @@
      "mapsQuery": "Santa Monica Pier, Los Angeles, USA"
     }
    ]
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "A",
+     "B"
+    ],
+    "voltage": "120V",
+    "frequency": "60Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Enchufes A de dos clavijas planas (B con tierra) a 120 V/60 Hz; los enchufes turcos necesitan adaptador. Compruebe que su cargador admite 100-240 V; los aparatos solo de 220 V necesitan transformador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "El agua del grifo es potable en la mayoría de grandes ciudades; siga los avisos municipales por posibles avisos locales de hervir el agua (“boil water notice”).",
+    "vaccines": [
+     "Vacunas rutinarias (triple vírica, tétanos)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "911"
+   },
+   "tipping": {
+    "custom": "En restaurantes se espera un 18-20 % de propina, que es la mayor parte del sueldo de los camareros; el impuesto estatal sobre ventas se suma al precio.",
+    "standardPercent": 18,
+    "rule": "expected",
+    "note": "Es habitual un 15-20 % en taxis/Uber, 1-2 $ por bebida al barman y 2-5 $ por noche al personal de limpieza del hotel."
+   },
+   "taxFree": {
+    "vatRefundPercent": "No hay (sin IVA; impuesto estatal/local sobre ventas del 0-10 %+)",
+    "minSpend": "—",
+    "customsNote": "EE. UU. no tiene IVA; el impuesto sobre ventas se añade en caja y en general no se devuelve a los turistas."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$2 - $5",
+    "topCarriers": [
+     "T-Mobile",
+     "Verizon",
+     "AT&T"
+    ],
+    "airportSimTrapWarning": "Las máquinas del aeropuerto son caras; las SIM prepago de T-Mobile o AT&T en tiendas, o una eSIM, son más baratas. El roaming con la SIM turca es muy caro."
+   },
+   "touristScams": [
+    {
+     "title": "Personajes disfrazados en Times Square",
+     "desc": "Personas con disfraces de dibujos animados exigen 10-20 $ por persona tras la foto e insisten.",
+     "tip": "No pose, o acuerde el precio antes."
+    },
+    {
+     "title": "Vendedores de CD “gratis”",
+     "desc": "En la calle le dan un CD de “regalo”, escriben su nombre en él y luego piden dinero.",
+     "tip": "No coja nada que le ofrezcan y siga andando."
+    }
+   ]
   }
  },
  "ru": {
@@ -1240,6 +1456,60 @@
       "Не оставляйте вещи на виду в припаркованной машине — кражи с разбитием стёкол обычны."
      ],
      "mapsQuery": "Santa Monica Pier, Los Angeles, USA"
+    }
+   ]
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "A",
+     "B"
+    ],
+    "voltage": "120V",
+    "frequency": "60Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Розетки типа A с двумя плоскими штырями (B с заземлением), 120 В/60 Гц; для турецких вилок нужен переходник. Проверьте, что зарядка поддерживает 100-240 В; приборам только на 220 В нужен преобразователь напряжения."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "В большинстве крупных городов воду из-под крана можно пить; следите за редкими местными предупреждениями о кипячении воды («boil water notice»).",
+    "vaccines": [
+     "Плановые прививки (корь-краснуха-паротит, столбняк)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "911"
+   },
+   "tipping": {
+    "custom": "В ресторанах ожидают 18-20 % чаевых — это основная часть дохода официантов; к ценам также добавляется налог с продаж штата.",
+    "standardPercent": 18,
+    "rule": "expected",
+    "note": "Принято давать 15-20 % в такси/Uber, 1-2 $ бармену за напиток и 2-5 $ за ночь горничной в отеле."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Нет (НДС нет; налог с продаж штата/округа 0-10 %+)",
+    "minSpend": "—",
+    "customsNote": "В США нет НДС; налог с продаж добавляется на кассе и туристам, как правило, не возвращается."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$2 - $5",
+    "topCarriers": [
+     "T-Mobile",
+     "Verizon",
+     "AT&T"
+    ],
+    "airportSimTrapWarning": "Автоматы в аэропорту дорогие; предоплаченные SIM T-Mobile или AT&T в магазинах либо eSIM дешевле. Роуминг на турецкой SIM очень дорогой."
+   },
+   "touristScams": [
+    {
+     "title": "Ряженые на Таймс-сквер",
+     "desc": "Люди в костюмах мультгероев после фото требуют 10-20 $ с человека и настаивают.",
+     "tip": "Не фотографируйтесь или договоритесь о цене заранее."
+    },
+    {
+     "title": "«Бесплатные» CD",
+     "desc": "На улице вам вручают «подарочный» диск, пишут на нём ваше имя и затем требуют деньги.",
+     "tip": "Ничего не берите из рук и идите дальше."
     }
    ]
   }

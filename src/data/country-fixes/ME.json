@@ -325,6 +325,60 @@
      "mapsQuery": "Žabljak, Montenegro"
     }
    ]
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Avrupa tipi iki yuvarlak uçlu C/F (Schuko) priz; Türkiye ile aynı, adaptör gerekmez."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Podgorica, Kotor, Budva ve çoğu yerleşimde şebeke suyu içilebilir; yaz yoğunluğunda bazı sahil beldelerinde su klorlu olabilir, şişe su tercih edebilirsiniz.",
+    "vaccines": [
+     "Rutin aşılar (KKK, tetanoz)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "124"
+   },
+   "tipping": {
+    "custom": "Restoranlarda yaklaşık %10 bahşiş beklenir.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Kafelerde hesabı yuvarlamak yeterlidir."
+   },
+   "taxFree": {
+    "vatRefundPercent": "%21 KDV (yalnızca katılımcı mağazalarda)",
+    "minSpend": "Fiş başına 100 €",
+    "customsNote": "Tax Free yalnızca sistemde olan mağazalarda geçerlidir; formu çıkışta gümrükte damgalatın. Birçok mağaza bu hizmeti sunmaz, iadeye güvenmeyin."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.50 - $1.50",
+    "topCarriers": [
+     "One Montenegro",
+     "Crnogorski Telekom",
+     "m:tel"
+    ],
+    "airportSimTrapWarning": "Tivat ve Podgorica havalimanlarındaki kiosklarda 10-20 €’luk turist paketleri satılır; şehir bayileri daha ucuzdur. Karadağ AB roaming dışında."
+   },
+   "touristScams": [
+    {
+     "title": "Sabit fiyatsız taksi",
+     "desc": "Tivat Havalimanı’nda ve Budva’da fiyat konuşmadan binilen taksilerde turiste fahiş ücret istenir.",
+     "tip": "Binmeden fiyatı netleştirin veya otelinize taksi çağırtın."
+    },
+    {
+     "title": "Sahil yolu tekne turları",
+     "desc": "Kotor ve Budva kordonunda satılan Mavi Mağara turlarında giriş ücretleri ve yiyecek fiyata dahil değildir.",
+     "tip": "Toplam fiyatı ve dahil olanları yazılı isteyin; yorumları olan firmaları seçin."
+    }
+   ]
   }
  },
  "en": {
@@ -651,6 +705,60 @@
       "Weather in Durmitor changes fast; bring a jacket even in summer, and the Sedlo pass can close in winter."
      ],
      "mapsQuery": "Žabljak, Montenegro"
+    }
+   ]
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "European two-round-pin C/F (Schuko) sockets, the same as in Turkey; no adapter needed."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Tap water is drinkable in Podgorica, Kotor, Budva and most towns; in some coastal resorts it can be heavily chlorinated in the summer peak, so you may prefer bottled water.",
+    "vaccines": [
+     "Routine vaccines (MMR, tetanus)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "124"
+   },
+   "tipping": {
+    "custom": "Around 10% is expected in restaurants.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Rounding up is enough in cafés."
+   },
+   "taxFree": {
+    "vatRefundPercent": "21% VAT (only at participating shops)",
+    "minSpend": "€100 per receipt",
+    "customsNote": "Tax Free only works at shops in the scheme; have the form stamped by customs when leaving. Many shops do not offer it, so do not count on a refund."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.50 - $1.50",
+    "topCarriers": [
+     "One Montenegro",
+     "Crnogorski Telekom",
+     "m:tel"
+    ],
+    "airportSimTrapWarning": "Kiosks at Tivat and Podgorica airports sell €10-20 tourist bundles; shops in town are cheaper. Montenegro is outside EU roaming."
+   },
+   "touristScams": [
+    {
+     "title": "Taxis without a set fare",
+     "desc": "Taxis taken at Tivat Airport or in Budva without agreeing a price charge tourists outrageous fares.",
+     "tip": "Agree the fare before getting in or ask your hotel to call a taxi."
+    },
+    {
+     "title": "Promenade boat tours",
+     "desc": "Blue Cave tours sold on the Kotor and Budva waterfronts often exclude entrance fees and food.",
+     "tip": "Ask for the total price and what is included in writing; choose operators with reviews."
     }
    ]
   }
@@ -981,6 +1089,60 @@
      "mapsQuery": "Žabljak, Montenegro"
     }
    ]
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Europäische Steckdosen Typ C/F (Schuko) mit zwei runden Stiften, wie in der Türkei; kein Adapter nötig."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "In Podgorica, Kotor, Budva und den meisten Orten ist Leitungswasser trinkbar; in manchen Badeorten kann es in der Hochsaison stark gechlort sein, dann lieber Flaschenwasser.",
+    "vaccines": [
+     "Standardimpfungen (MMR, Tetanus)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "124"
+   },
+   "tipping": {
+    "custom": "In Restaurants werden etwa 10 % erwartet.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "In Cafés reicht Aufrunden."
+   },
+   "taxFree": {
+    "vatRefundPercent": "21 % MwSt. (nur in teilnehmenden Geschäften)",
+    "minSpend": "100 € pro Beleg",
+    "customsNote": "Tax Free gilt nur in Geschäften, die am System teilnehmen; das Formular bei der Ausreise vom Zoll stempeln lassen. Viele Läden bieten es nicht an."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.50 - $1.50",
+    "topCarriers": [
+     "One Montenegro",
+     "Crnogorski Telekom",
+     "m:tel"
+    ],
+    "airportSimTrapWarning": "An den Flughäfen Tivat und Podgorica gibt es Touristenpakete für 10-20 €; in der Stadt ist es günstiger. Montenegro gehört nicht zum EU-Roaming."
+   },
+   "touristScams": [
+    {
+     "title": "Taxis ohne Festpreis",
+     "desc": "Wer am Flughafen Tivat oder in Budva ohne Preisabsprache einsteigt, zahlt oft horrende Fahrpreise.",
+     "tip": "Den Preis vor dem Einsteigen vereinbaren oder ein Taxi über das Hotel rufen."
+    },
+    {
+     "title": "Bootstouren an der Promenade",
+     "desc": "An den Promenaden von Kotor und Budva verkaufte Touren zur Blauen Grotte enthalten oft keine Eintritte und kein Essen.",
+     "tip": "Gesamtpreis und Leistungen schriftlich geben lassen; Anbieter mit Bewertungen wählen."
+    }
+   ]
   }
  },
  "es": {
@@ -1309,6 +1471,60 @@
      "mapsQuery": "Žabljak, Montenegro"
     }
    ]
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Enchufes europeos C/F (Schuko) de dos clavijas redondas, iguales que en Turquía; no hace falta adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "El agua del grifo es potable en Podgorica, Kotor, Budva y la mayoría de localidades; en algunas zonas de playa puede estar muy clorada en temporada alta, quizá prefiera embotellada.",
+    "vaccines": [
+     "Vacunas rutinarias (triple vírica, tétanos)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "124"
+   },
+   "tipping": {
+    "custom": "En restaurantes se espera alrededor de un 10 %.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "En cafeterías basta con redondear."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA del 21 % (solo en tiendas adheridas)",
+    "minSpend": "100 € por ticket",
+    "customsNote": "El tax free solo funciona en tiendas adheridas; selle el formulario en aduana al salir. Muchas tiendas no lo ofrecen, no cuente con el reembolso."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.50 - $1.50",
+    "topCarriers": [
+     "One Montenegro",
+     "Crnogorski Telekom",
+     "m:tel"
+    ],
+    "airportSimTrapWarning": "En los aeropuertos de Tivat y Podgorica se venden paquetes turísticos de 10-20 €; en la ciudad es más barato. Montenegro está fuera del roaming UE."
+   },
+   "touristScams": [
+    {
+     "title": "Taxis sin precio fijado",
+     "desc": "Los taxis tomados en el aeropuerto de Tivat o en Budva sin acordar precio cobran tarifas abusivas.",
+     "tip": "Acuerde el precio antes de subir o pida al hotel que llame un taxi."
+    },
+    {
+     "title": "Excursiones en barco del paseo",
+     "desc": "Las excursiones a la Cueva Azul vendidas en los paseos de Kotor y Budva a menudo no incluyen entradas ni comida.",
+     "tip": "Pida por escrito el precio total y lo incluido; elija empresas con reseñas."
+    }
+   ]
   }
  },
  "ru": {
@@ -1635,6 +1851,60 @@
       "Погода на Дурмиторе меняется быстро; берите куртку даже летом, а перевал Седло зимой может быть закрыт."
      ],
      "mapsQuery": "Žabljak, Montenegro"
+    }
+   ]
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Европейские розетки C/F (Schuko) с двумя круглыми штырями, как в Турции; переходник не нужен."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "В Подгорице, Которе, Будве и большинстве населённых пунктов воду из-под крана можно пить; на некоторых курортах в разгар сезона она сильно хлорирована, можно взять бутилированную.",
+    "vaccines": [
+     "Плановые прививки (корь-краснуха-паротит, столбняк)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "124"
+   },
+   "tipping": {
+    "custom": "В ресторанах ожидают около 10 %.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "В кафе достаточно округлить сумму."
+   },
+   "taxFree": {
+    "vatRefundPercent": "НДС 21 % (только в участвующих магазинах)",
+    "minSpend": "100 € по одному чеку",
+    "customsNote": "Tax Free работает только в магазинах-участниках; форму нужно заверить на таможне при выезде. Многие магазины его не предлагают — не рассчитывайте на возврат."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.50 - $1.50",
+    "topCarriers": [
+     "One Montenegro",
+     "Crnogorski Telekom",
+     "m:tel"
+    ],
+    "airportSimTrapWarning": "В аэропортах Тивата и Подгорицы продают туристические пакеты за 10-20 €; в городе дешевле. Черногория не входит в роуминг ЕС."
+   },
+   "touristScams": [
+    {
+     "title": "Такси без оговорённой цены",
+     "desc": "В такси в аэропорту Тивата или в Будве без договорённости о цене с туристов берут огромные суммы.",
+     "tip": "Договоритесь о цене до посадки или попросите отель вызвать такси."
+    },
+    {
+     "title": "Лодочные туры с набережной",
+     "desc": "Туры к Голубой пещере, продаваемые на набережных Котора и Будвы, часто не включают входные билеты и еду.",
+     "tip": "Просите письменно указать полную цену и что в неё входит; выбирайте компании с отзывами."
     }
    ]
   }

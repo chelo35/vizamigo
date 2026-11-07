@@ -95,6 +95,61 @@
      }
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Avrupa tipi iki yuvarlak uçlu C/F (Schuko) priz; Türkiye ile aynı, adaptör gerekmez."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Saraybosna, Mostar ve büyük şehirlerde şebeke suyu içilebilir; şehirlerdeki çeşmelerin suyu da temizdir.",
+    "vaccines": [
+     "Rutin aşılar (KKK, tetanoz)",
+     "Kene kaynaklı ensefalit (kırsalda yürüyüş yapacaksanız)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "124"
+   },
+   "tipping": {
+    "custom": "Restoranlarda %10 bahşiş yaygındır.",
+    "standardPercent": 10,
+    "rule": "round_up",
+    "note": "Kafe ve taksilerde hesabı yuvarlamak yeterlidir."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Yok (KDV %17, turiste iade sistemi yok)",
+    "minSpend": "—",
+    "customsNote": "Bosna-Hersek’te turistlere KDV iadesi uygulanmaz; alışveriş fiyatlarına KDV dahildir."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1 - $3",
+    "topCarriers": [
+     "BH Telecom",
+     "m:tel",
+     "HT Eronet"
+    ],
+    "airportSimTrapWarning": "Havalimanında satış noktası sınırlıdır; şehirdeki BH Telecom/m:tel bayilerinden ucuz turist hattı alın. Ülke AB roaming dışında."
+   },
+   "touristScams": [
+    {
+     "title": "Taksimetresiz taksi",
+     "desc": "Havalimanı ve otogarda taksimetre açmayan taksiciler turiste yüksek fiyat söyler.",
+     "tip": "Telefonla veya uygulamayla bilinen firmaları çağırın, taksimetreyi kontrol edin."
+    },
+    {
+     "title": "Euro ile kötü kur",
+     "desc": "Euro kabul eden yerler fiyatı 1 € = 1,5-2 KM gibi kötü kurla hesaplar.",
+     "tip": "Konvertibl marka (KM) ile ödeyin; resmi kur 1 € ≈ 1,96 KM’dir."
+    }
+   ]
   }
  },
  "en": {
@@ -193,6 +248,61 @@
      }
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "European two-round-pin C/F (Schuko) sockets, the same as in Turkey; no adapter needed."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Tap water is drinkable in Sarajevo, Mostar and other large cities; public fountains in town are clean too.",
+    "vaccines": [
+     "Routine vaccines (MMR, tetanus)",
+     "Tick-borne encephalitis (if hiking in rural areas)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "124"
+   },
+   "tipping": {
+    "custom": "A 10% tip is common in restaurants.",
+    "standardPercent": 10,
+    "rule": "round_up",
+    "note": "Rounding up is enough in cafés and taxis."
+   },
+   "taxFree": {
+    "vatRefundPercent": "None (17% VAT, no tourist refund scheme)",
+    "minSpend": "—",
+    "customsNote": "Bosnia and Herzegovina does not refund VAT to tourists; prices already include VAT."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1 - $3",
+    "topCarriers": [
+     "BH Telecom",
+     "m:tel",
+     "HT Eronet"
+    ],
+    "airportSimTrapWarning": "Airport sales points are limited; buy a cheap tourist SIM from BH Telecom or m:tel shops in town. The country is outside EU roaming."
+   },
+   "touristScams": [
+    {
+     "title": "Unmetered taxis",
+     "desc": "Drivers at the airport and bus station who do not switch on the meter and quote tourists high prices.",
+     "tip": "Order well-known companies by phone or app and check the meter."
+    },
+    {
+     "title": "Bad euro rates",
+     "desc": "Places that accept euros calculate at poor rates such as €1 = 1.5-2 KM.",
+     "tip": "Pay in convertible marks (KM); the official rate is about €1 ≈ 1.96 KM."
+    }
+   ]
   }
  },
  "de": {
@@ -291,6 +401,61 @@
      }
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Europäische Steckdosen Typ C/F (Schuko) mit zwei runden Stiften, wie in der Türkei; kein Adapter nötig."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "In Sarajevo, Mostar und anderen großen Städten ist Leitungswasser trinkbar; auch die öffentlichen Brunnen sind sauber.",
+    "vaccines": [
+     "Standardimpfungen (MMR, Tetanus)",
+     "FSME (bei Wanderungen in ländlichen Gebieten)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "124"
+   },
+   "tipping": {
+    "custom": "10 % Trinkgeld sind in Restaurants üblich.",
+    "standardPercent": 10,
+    "rule": "round_up",
+    "note": "In Cafés und Taxis reicht Aufrunden."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Keine (17 % MwSt., keine Touristenerstattung)",
+    "minSpend": "—",
+    "customsNote": "Bosnien und Herzegowina erstattet Touristen keine Mehrwertsteuer; die Preise enthalten bereits MwSt."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1 - $3",
+    "topCarriers": [
+     "BH Telecom",
+     "m:tel",
+     "HT Eronet"
+    ],
+    "airportSimTrapWarning": "Am Flughafen gibt es kaum Verkaufsstellen; günstige Touristen-SIM in BH-Telecom- oder m:tel-Shops in der Stadt kaufen. Das Land liegt außerhalb des EU-Roamings."
+   },
+   "touristScams": [
+    {
+     "title": "Taxis ohne Taxameter",
+     "desc": "Fahrer an Flughafen und Busbahnhof schalten kein Taxameter ein und nennen hohe Preise.",
+     "tip": "Bekannte Firmen per Telefon oder App bestellen und das Taxameter prüfen."
+    },
+    {
+     "title": "Schlechter Euro-Kurs",
+     "desc": "Wo Euro angenommen werden, wird oft zu schlechten Kursen wie 1 € = 1,5-2 KM gerechnet.",
+     "tip": "In Konvertibler Mark (KM) zahlen; der offizielle Kurs liegt bei etwa 1 € ≈ 1,96 KM."
+    }
+   ]
   }
  },
  "es": {
@@ -389,6 +554,61 @@
      }
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Enchufes europeos C/F (Schuko) de dos clavijas redondas, iguales que en Turquía; no hace falta adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "El agua del grifo es potable en Sarajevo, Mostar y otras ciudades grandes; las fuentes públicas también son limpias.",
+    "vaccines": [
+     "Vacunas rutinarias (triple vírica, tétanos)",
+     "Encefalitis por garrapatas (si hace senderismo rural)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "124"
+   },
+   "tipping": {
+    "custom": "En restaurantes es habitual un 10 % de propina.",
+    "standardPercent": 10,
+    "rule": "round_up",
+    "note": "En cafeterías y taxis basta con redondear."
+   },
+   "taxFree": {
+    "vatRefundPercent": "No hay (IVA del 17 %, sin devolución a turistas)",
+    "minSpend": "—",
+    "customsNote": "Bosnia y Herzegovina no devuelve el IVA a los turistas; los precios ya lo incluyen."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1 - $3",
+    "topCarriers": [
+     "BH Telecom",
+     "m:tel",
+     "HT Eronet"
+    ],
+    "airportSimTrapWarning": "En el aeropuerto hay pocos puntos de venta; compre una SIM turística barata en tiendas BH Telecom o m:tel de la ciudad. El país está fuera del roaming UE."
+   },
+   "touristScams": [
+    {
+     "title": "Taxis sin taxímetro",
+     "desc": "Taxistas del aeropuerto y la estación de autobuses que no encienden el taxímetro y piden precios altos.",
+     "tip": "Pida empresas conocidas por teléfono o app y revise el taxímetro."
+    },
+    {
+     "title": "Mal cambio en euros",
+     "desc": "Los sitios que aceptan euros aplican cambios malos como 1 € = 1,5-2 KM.",
+     "tip": "Pague en marcos convertibles (KM); el cambio oficial es de 1 € ≈ 1,96 KM."
+    }
+   ]
   }
  },
  "ru": {
@@ -487,6 +707,61 @@
      }
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Европейские розетки C/F (Schuko) с двумя круглыми штырями, как в Турции; переходник не нужен."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "В Сараеве, Мостаре и других крупных городах воду из-под крана можно пить; городские фонтанчики тоже чистые.",
+    "vaccines": [
+     "Плановые прививки (корь-краснуха-паротит, столбняк)",
+     "Клещевой энцефалит (при походах на природе)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "124"
+   },
+   "tipping": {
+    "custom": "В ресторанах принято оставлять 10 %.",
+    "standardPercent": 10,
+    "rule": "round_up",
+    "note": "В кафе и такси достаточно округлить сумму."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Нет (НДС 17 %, возврата для туристов нет)",
+    "minSpend": "—",
+    "customsNote": "В Боснии и Герцеговине туристам НДС не возвращают; он уже включён в цены."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1 - $3",
+    "topCarriers": [
+     "BH Telecom",
+     "m:tel",
+     "HT Eronet"
+    ],
+    "airportSimTrapWarning": "В аэропорту точек продаж мало; купите дешёвую туристическую SIM в салонах BH Telecom или m:tel в городе. Страна не входит в роуминг ЕС."
+   },
+   "touristScams": [
+    {
+     "title": "Такси без счётчика",
+     "desc": "Водители у аэропорта и автовокзала не включают счётчик и называют туристам высокую цену.",
+     "tip": "Вызывайте известные компании по телефону или через приложение и следите за счётчиком."
+    },
+    {
+     "title": "Невыгодный курс евро",
+     "desc": "Там, где принимают евро, считают по плохому курсу, например 1 € = 1,5-2 KM.",
+     "tip": "Платите конвертируемыми марками (KM); официальный курс около 1 € ≈ 1,96 KM."
+    }
+   ]
   }
  }
 }

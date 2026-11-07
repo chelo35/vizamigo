@@ -98,6 +98,62 @@
      }
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F",
+     "L"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Prizlerin çoğu L tipi (yan yana üç yuvarlak uç) veya yalnızca ince C fişlerini alan “bipasso” prizlerdir; kalın Türk F (Schuko) fişleri her prize girmez, küçük bir adaptör alın."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Musluk suyu ve şehirlerdeki “nasone” çeşmelerinin suyu içilebilir; Roma’daki çeşmelerden şişenizi ücretsiz doldurabilirsiniz.",
+    "vaccines": [
+     "Rutin aşılar (KKK, tetanoz)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "118"
+   },
+   "tipping": {
+    "custom": "Faturadaki “coperto” (masa/ekmek ücreti) ve bazen “servizio” bahşiş değildir; bahşiş zorunlu değildir.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "Memnunsanız birkaç euro veya %5-10 bırakmak yeterlidir; barda kahve için bozuk para yeterli."
+   },
+   "taxFree": {
+    "vatRefundPercent": "%22 KDV; iade komisyon sonrası ~%12-15",
+    "minSpend": "Fiş başına 70,01 €",
+    "customsNote": "Mağazadan Tax Free faturası/formu isteyin (pasaport gerekir); AB’den son çıkışınızdaki havalimanında check-in öncesi gümrük (OTELLO) kioskunda onaylatın."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.50 - $2",
+    "topCarriers": [
+     "TIM",
+     "Vodafone Italia",
+     "WindTre",
+     "Iliad"
+    ],
+    "airportSimTrapWarning": "Havalimanı turist paketleri pahalı olabilir; şehirdeki TIM/Vodafone/WindTre/Iliad mağazalarında pasaport ve vergi kodu (codice fiscale) ile ucuz hat alınır. AB roaming Türk hatlarına uygulanmaz."
+   },
+   "touristScams": [
+    {
+     "title": "Bileklik ve gül hediyesi",
+     "desc": "Kolezyum, Duomo ve İspanyol Merdivenleri gibi yerlerde biri bileğinize ip bağlar veya gül verir, sonra para ister.",
+     "tip": "Elinize bir şey verilmesine izin vermeyin; kibarca “No, grazie” deyip yürüyün."
+    },
+    {
+     "title": "Gladyatörle fotoğraf",
+     "desc": "Kolezyum çevresindeki kostümlü “gladyatörler” fotoğraf sonrası kişi başı 10-20 € ister.",
+     "tip": "Fotoğraf çekmeden önce fiyat sorun veya hiç poz vermeyin."
+    }
+   ]
   }
  },
  "en": {
@@ -199,6 +255,62 @@
      }
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F",
+     "L"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Most sockets are type L (three round pins in a row) or “bipasso” sockets that take only slim C plugs; thick Turkish F (Schuko) plugs will not fit everywhere, so bring a small adapter."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Tap water and the water from “nasone” street fountains are drinkable; in Rome you can refill your bottle for free.",
+    "vaccines": [
+     "Routine vaccines (MMR, tetanus)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "118"
+   },
+   "tipping": {
+    "custom": "The “coperto” (cover charge) and sometimes “servizio” on the bill are not tips; tipping is not obligatory.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "If you are happy, a few euros or 5-10% is enough; small change is fine for coffee at the bar."
+   },
+   "taxFree": {
+    "vatRefundPercent": "22% VAT; about 12-15% back after fees",
+    "minSpend": "€70.01 per receipt",
+    "customsNote": "Ask the shop for a tax-free invoice/form (passport needed) and have it validated at the customs (OTELLO) kiosk at your last EU departure airport before check-in."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.50 - $2",
+    "topCarriers": [
+     "TIM",
+     "Vodafone Italia",
+     "WindTre",
+     "Iliad"
+    ],
+    "airportSimTrapWarning": "Airport tourist packs can be pricey; TIM, Vodafone, WindTre and Iliad shops in town sell cheap SIMs with your passport and tax code (codice fiscale). EU roaming does not apply to Turkish SIMs."
+   },
+   "touristScams": [
+    {
+     "title": "Bracelet and rose “gifts”",
+     "desc": "Near the Colosseum, the Duomo and other squares someone ties a string to your wrist or hands you a rose, then demands money.",
+     "tip": "Do not let anyone put anything in your hands; say “No, grazie” and keep walking."
+    },
+    {
+     "title": "Gladiator photos",
+     "desc": "Costumed “gladiators” around the Colosseum ask €10-20 per person after a photo.",
+     "tip": "Ask the price before the photo, or do not pose at all."
+    }
+   ]
   }
  },
  "de": {
@@ -300,6 +412,62 @@
      }
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F",
+     "L"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Die meisten Steckdosen sind Typ L (drei runde Stifte in einer Reihe) oder „Bipasso“-Dosen nur für schmale C-Stecker; dicke türkische F-Stecker (Schuko) passen nicht überall, einen kleinen Adapter mitnehmen."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Leitungswasser und das Wasser der „Nasone“-Straßenbrunnen sind trinkbar; in Rom kann man seine Flasche kostenlos auffüllen.",
+    "vaccines": [
+     "Standardimpfungen (MMR, Tetanus)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "118"
+   },
+   "tipping": {
+    "custom": "„Coperto“ (Gedeck) und manchmal „servizio“ auf der Rechnung sind kein Trinkgeld; Trinkgeld ist nicht Pflicht.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "Bei Zufriedenheit reichen ein paar Euro oder 5-10 %; für den Kaffee an der Bar etwas Kleingeld."
+   },
+   "taxFree": {
+    "vatRefundPercent": "22 % MwSt.; nach Gebühren etwa 12-15 % zurück",
+    "minSpend": "70,01 € pro Beleg",
+    "customsNote": "Im Geschäft eine Tax-Free-Rechnung bzw. ein Formular verlangen (Reisepass nötig) und am letzten EU-Abflughafen vor dem Check-in am Zollkiosk (OTELLO) validieren."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.50 - $2",
+    "topCarriers": [
+     "TIM",
+     "Vodafone Italia",
+     "WindTre",
+     "Iliad"
+    ],
+    "airportSimTrapWarning": "Touristenpakete am Flughafen können teuer sein; TIM-, Vodafone-, WindTre- und Iliad-Shops in der Stadt verkaufen günstige SIMs mit Pass und Steuernummer (codice fiscale). EU-Roaming gilt nicht für türkische SIMs."
+   },
+   "touristScams": [
+    {
+     "title": "Armband- und Rosen-„Geschenke“",
+     "desc": "Am Kolosseum, am Dom und auf anderen Plätzen bindet Ihnen jemand ein Band ums Handgelenk oder reicht eine Rose und verlangt dann Geld.",
+     "tip": "Nichts in die Hand drücken lassen; „No, grazie“ sagen und weitergehen."
+    },
+    {
+     "title": "Gladiatorenfotos",
+     "desc": "Kostümierte „Gladiatoren“ am Kolosseum verlangen nach dem Foto 10-20 € pro Person.",
+     "tip": "Vor dem Foto nach dem Preis fragen oder gar nicht posieren."
+    }
+   ]
   }
  },
  "es": {
@@ -401,6 +569,62 @@
      }
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F",
+     "L"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "La mayoría de enchufes son tipo L (tres clavijas redondas en fila) o “bipasso”, que solo admiten clavijas C finas; las clavijas turcas F (Schuko) gruesas no entran en todos, lleve un adaptador pequeño."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "El agua del grifo y la de las fuentes callejeras “nasone” es potable; en Roma puede rellenar la botella gratis.",
+    "vaccines": [
+     "Vacunas rutinarias (triple vírica, tétanos)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "118"
+   },
+   "tipping": {
+    "custom": "El “coperto” (cubierto) y a veces el “servizio” de la cuenta no son propina; la propina no es obligatoria.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "Si queda contento, bastan unos euros o un 5-10 %; para el café en la barra, unas monedas."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA del 22 %; se recupera un 12-15 % tras comisiones",
+    "minSpend": "70,01 € por ticket",
+    "customsNote": "Pida en la tienda la factura o formulario tax free (con pasaporte) y valídelo en el quiosco de aduanas (OTELLO) del último aeropuerto de salida de la UE antes de facturar."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.50 - $2",
+    "topCarriers": [
+     "TIM",
+     "Vodafone Italia",
+     "WindTre",
+     "Iliad"
+    ],
+    "airportSimTrapWarning": "Los paquetes turísticos del aeropuerto pueden ser caros; las tiendas TIM, Vodafone, WindTre e Iliad de la ciudad venden SIM baratas con pasaporte y código fiscal (codice fiscale). El roaming UE no aplica a SIM turcas."
+   },
+   "touristScams": [
+    {
+     "title": "“Regalos” de pulseras y rosas",
+     "desc": "Junto al Coliseo, el Duomo y otras plazas alguien le ata un hilo a la muñeca o le da una rosa y luego pide dinero.",
+     "tip": "No deje que le pongan nada en las manos; diga “No, grazie” y siga andando."
+    },
+    {
+     "title": "Fotos con gladiadores",
+     "desc": "Los “gladiadores” disfrazados del Coliseo piden 10-20 € por persona tras la foto.",
+     "tip": "Pregunte el precio antes de la foto o no pose."
+    }
+   ]
   }
  },
  "ru": {
@@ -502,6 +726,62 @@
      }
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F",
+     "L"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Большинство розеток типа L (три круглых штыря в ряд) или «bipasso» только под тонкие вилки C; толстые турецкие вилки F (Schuko) подходят не везде — возьмите небольшой переходник."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Вода из-под крана и из уличных фонтанчиков «nasone» питьевая; в Риме бутылку можно наполнить бесплатно.",
+    "vaccines": [
+     "Плановые прививки (корь-краснуха-паротит, столбняк)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "118"
+   },
+   "tipping": {
+    "custom": "«Coperto» (плата за сервировку) и иногда «servizio» в счёте — не чаевые; оставлять чаевые не обязательно.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "Если всё понравилось, достаточно пары евро или 5-10 %; за кофе у стойки — мелочь."
+   },
+   "taxFree": {
+    "vatRefundPercent": "НДС 22 %; после комиссии возвращается около 12-15 %",
+    "minSpend": "70,01 € по одному чеку",
+    "customsNote": "Попросите в магазине счёт или форму tax free (нужен паспорт) и подтвердите её в таможенном киоске OTELLO в последнем аэропорту вылета из ЕС до регистрации."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.50 - $2",
+    "topCarriers": [
+     "TIM",
+     "Vodafone Italia",
+     "WindTre",
+     "Iliad"
+    ],
+    "airportSimTrapWarning": "Туристические пакеты в аэропорту бывают дорогими; в салонах TIM, Vodafone, WindTre и Iliad в городе SIM дешевле, нужны паспорт и налоговый код (codice fiscale). Роуминг ЕС на турецкие SIM не распространяется."
+   },
+   "touristScams": [
+    {
+     "title": "«Подарки» — браслеты и розы",
+     "desc": "У Колизея, Дуомо и на других площадях вам повязывают нитку на запястье или вручают розу, а потом требуют деньги.",
+     "tip": "Ничего не берите в руки; скажите «No, grazie» и идите дальше."
+    },
+    {
+     "title": "Фото с гладиаторами",
+     "desc": "Ряженые «гладиаторы» у Колизея после фото требуют 10-20 € с человека.",
+     "tip": "Спросите цену до фото или не позируйте вовсе."
+    }
+   ]
   }
  }
 }

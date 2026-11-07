@@ -96,6 +96,60 @@
      }
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Avrupa tipi iki yuvarlak uçlu C/F (Schuko) priz; Türkiye ile aynı, adaptör gerekmez."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Belgrad, Novi Sad ve Niş’te şebeke suyu içilebilir; bazı küçük kasabalarda (ör. Zrenjanin) şişe su tercih edin.",
+    "vaccines": [
+     "Rutin aşılar (KKK, tetanoz)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "194"
+   },
+   "tipping": {
+    "custom": "Restoranlarda %10 bahşiş yaygındır.",
+    "standardPercent": 10,
+    "rule": "round_up",
+    "note": "Kafe ve taksilerde hesabı yuvarlamak yeterlidir."
+   },
+   "taxFree": {
+    "vatRefundPercent": "%20 KDV",
+    "minSpend": "Fiş başına 6.000 RSD",
+    "customsNote": "Mağazadan PDV iade formu isteyin, çıkışta (3 ay içinde) gümrükte damgalatın; iade mağaza veya aracı şirket üzerinden yapılır."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.50 - $1.50",
+    "topCarriers": [
+     "Yettel",
+     "A1 Srbija",
+     "mts (Telekom Srbija)"
+    ],
+    "airportSimTrapWarning": "Havalimanı kioskları turist paketlerini pahalıya satabilir; şehirdeki Yettel/A1/mts mağazaları ucuzdur. Sırbistan AB roaming dışında."
+   },
+   "touristScams": [
+    {
+     "title": "Havalimanı taksisi",
+     "desc": "Havalimanında yaklaşan taksiciler merkeze sabit tarifenin birkaç katını ister.",
+     "tip": "Havalimanındaki resmi taksi kupon gişesini veya CarGo/Yandex Go’yu kullanın."
+    },
+    {
+     "title": "Sokak dövizcileri",
+     "desc": "Sokakta iyi kur vaat eden kişiler sahte veya eksik para verir.",
+     "tip": "Yalnızca resmi “menjačnica” döviz bürolarında para bozdurun."
+    }
+   ]
   }
  },
  "en": {
@@ -195,6 +249,60 @@
      }
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "European two-round-pin C/F (Schuko) sockets, the same as in Turkey; no adapter needed."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Tap water is drinkable in Belgrade, Novi Sad and Niš; in some smaller towns (e.g. Zrenjanin) prefer bottled water.",
+    "vaccines": [
+     "Routine vaccines (MMR, tetanus)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "194"
+   },
+   "tipping": {
+    "custom": "A 10% tip is common in restaurants.",
+    "standardPercent": 10,
+    "rule": "round_up",
+    "note": "Rounding up is enough in cafés and taxis."
+   },
+   "taxFree": {
+    "vatRefundPercent": "20% VAT",
+    "minSpend": "6,000 RSD per receipt",
+    "customsNote": "Ask the shop for a VAT (PDV) refund form and have it stamped by customs when leaving (within 3 months); the refund is paid by the shop or its agent."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.50 - $1.50",
+    "topCarriers": [
+     "Yettel",
+     "A1 Srbija",
+     "mts (Telekom Srbija)"
+    ],
+    "airportSimTrapWarning": "Airport kiosks may overprice tourist bundles; Yettel, A1 and mts shops in town are cheaper. Serbia is outside EU roaming."
+   },
+   "touristScams": [
+    {
+     "title": "Airport taxis",
+     "desc": "Drivers who approach you at the airport ask several times the fixed fare to the centre.",
+     "tip": "Use the official taxi voucher desk at the airport or CarGo / Yandex Go."
+    },
+    {
+     "title": "Street money changers",
+     "desc": "People offering a great rate in the street hand over fake or short-changed notes.",
+     "tip": "Change money only at official “menjačnica” exchange offices."
+    }
+   ]
   }
  },
  "de": {
@@ -294,6 +402,60 @@
      }
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Europäische Steckdosen Typ C/F (Schuko) mit zwei runden Stiften, wie in der Türkei; kein Adapter nötig."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "In Belgrad, Novi Sad und Niš ist Leitungswasser trinkbar; in manchen Kleinstädten (z. B. Zrenjanin) besser Flaschenwasser.",
+    "vaccines": [
+     "Standardimpfungen (MMR, Tetanus)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "194"
+   },
+   "tipping": {
+    "custom": "10 % Trinkgeld sind in Restaurants üblich.",
+    "standardPercent": 10,
+    "rule": "round_up",
+    "note": "In Cafés und Taxis reicht Aufrunden."
+   },
+   "taxFree": {
+    "vatRefundPercent": "20 % MwSt.",
+    "minSpend": "6.000 RSD pro Beleg",
+    "customsNote": "Im Geschäft ein PDV-Erstattungsformular verlangen und bei der Ausreise (innerhalb von 3 Monaten) vom Zoll stempeln lassen; die Erstattung zahlt das Geschäft oder sein Dienstleister."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.50 - $1.50",
+    "topCarriers": [
+     "Yettel",
+     "A1 Srbija",
+     "mts (Telekom Srbija)"
+    ],
+    "airportSimTrapWarning": "Flughafenstände verkaufen Touristenpakete teils überteuert; Yettel-, A1- und mts-Shops in der Stadt sind günstiger. Serbien gehört nicht zum EU-Roaming."
+   },
+   "touristScams": [
+    {
+     "title": "Flughafentaxis",
+     "desc": "Fahrer, die Sie am Flughafen ansprechen, verlangen ein Vielfaches des Festpreises ins Zentrum.",
+     "tip": "Den offiziellen Taxi-Gutscheinschalter am Flughafen oder CarGo / Yandex Go nutzen."
+    },
+    {
+     "title": "Straßengeldwechsler",
+     "desc": "Leute mit „Superkurs“ auf der Straße geben Falschgeld oder zu wenig heraus.",
+     "tip": "Nur in offiziellen Wechselstuben („menjačnica“) tauschen."
+    }
+   ]
   }
  },
  "es": {
@@ -393,6 +555,60 @@
      }
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Enchufes europeos C/F (Schuko) de dos clavijas redondas, iguales que en Turquía; no hace falta adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "El agua del grifo es potable en Belgrado, Novi Sad y Niš; en algunas localidades pequeñas (p. ej. Zrenjanin) mejor embotellada.",
+    "vaccines": [
+     "Vacunas rutinarias (triple vírica, tétanos)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "194"
+   },
+   "tipping": {
+    "custom": "En restaurantes es habitual un 10 % de propina.",
+    "standardPercent": 10,
+    "rule": "round_up",
+    "note": "En cafeterías y taxis basta con redondear."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA del 20 %",
+    "minSpend": "6.000 RSD por ticket",
+    "customsNote": "Pida en la tienda el formulario de devolución del IVA (PDV) y séllelo en aduana al salir (en 3 meses); el reembolso lo paga la tienda o su agente."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.50 - $1.50",
+    "topCarriers": [
+     "Yettel",
+     "A1 Srbija",
+     "mts (Telekom Srbija)"
+    ],
+    "airportSimTrapWarning": "Los quioscos del aeropuerto pueden encarecer los paquetes turísticos; las tiendas Yettel, A1 y mts de la ciudad son más baratas. Serbia está fuera del roaming UE."
+   },
+   "touristScams": [
+    {
+     "title": "Taxis del aeropuerto",
+     "desc": "Conductores que le abordan en el aeropuerto piden varias veces la tarifa fija al centro.",
+     "tip": "Use el mostrador oficial de vales de taxi o CarGo / Yandex Go."
+    },
+    {
+     "title": "Cambistas callejeros",
+     "desc": "Personas que ofrecen un gran cambio en la calle entregan billetes falsos o de menos.",
+     "tip": "Cambie solo en casas de cambio oficiales (“menjačnica”)."
+    }
+   ]
   }
  },
  "ru": {
@@ -492,6 +708,60 @@
      }
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Европейские розетки C/F (Schuko) с двумя круглыми штырями, как в Турции; переходник не нужен."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "В Белграде, Нови-Саде и Нише воду из-под крана можно пить; в некоторых небольших городах (например, Зренянин) лучше бутилированная.",
+    "vaccines": [
+     "Плановые прививки (корь-краснуха-паротит, столбняк)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "194"
+   },
+   "tipping": {
+    "custom": "В ресторанах принято оставлять 10 %.",
+    "standardPercent": 10,
+    "rule": "round_up",
+    "note": "В кафе и такси достаточно округлить сумму."
+   },
+   "taxFree": {
+    "vatRefundPercent": "НДС 20 %",
+    "minSpend": "6 000 RSD по одному чеку",
+    "customsNote": "Попросите в магазине форму возврата НДС (PDV) и заверьте её на таможне при выезде (в течение 3 месяцев); возврат выплачивает магазин или его агент."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.50 - $1.50",
+    "topCarriers": [
+     "Yettel",
+     "A1 Srbija",
+     "mts (Telekom Srbija)"
+    ],
+    "airportSimTrapWarning": "Киоски в аэропорту могут завышать цены на туристические пакеты; в салонах Yettel, A1 и mts в городе дешевле. Сербия не входит в роуминг ЕС."
+   },
+   "touristScams": [
+    {
+     "title": "Такси в аэропорту",
+     "desc": "Водители, подходящие в аэропорту, просят в разы больше фиксированного тарифа до центра.",
+     "tip": "Пользуйтесь официальной стойкой такси-ваучеров или CarGo / Yandex Go."
+    },
+    {
+     "title": "Уличные менялы",
+     "desc": "Люди на улице с «выгодным курсом» подсовывают фальшивые купюры или недодают.",
+     "tip": "Меняйте деньги только в официальных обменниках («menjačnica»)."
+    }
+   ]
   }
  }
 }

@@ -96,6 +96,60 @@
      }
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Avrupa tipi iki yuvarlak uçlu C/F (Schuko) priz; Türkiye ile aynı, adaptör gerekmez."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Sofya’nın suyu Rila dağlarından gelir ve içilebilir; çoğu şehirde de güvenlidir, sahil beldelerinde yazın şişe su tercih edilebilir.",
+    "vaccines": [
+     "Rutin aşılar (KKK, tetanoz)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "112 / 150"
+   },
+   "tipping": {
+    "custom": "Restoranlarda %10 bahşiş yaygın ve beklenir.",
+    "standardPercent": 10,
+    "rule": "round_up",
+    "note": "Taksi ve kafelerde hesabı yuvarlamak yeterlidir."
+   },
+   "taxFree": {
+    "vatRefundPercent": "%20 KDV; iade komisyon sonrası ~%10-15",
+    "minSpend": "~128 € (eski 250 leva), tek mağaza aynı gün",
+    "customsNote": "Türk vatandaşları iade alabilir: formu Kapıkule – Kapitan Andreevo gümrüğünde veya Sofya Havalimanı’nda damgalatın; Bulgaristan 1 Ocak 2026’dan beri euro kullanıyor."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1 - $3",
+    "topCarriers": [
+     "A1 Bulgaria",
+     "Yettel",
+     "Vivacom"
+    ],
+    "airportSimTrapWarning": "Havalimanı satış noktaları pahalıdır; A1, Yettel veya Vivacom mağazalarından ya da önceden e-SIM ile alın."
+   },
+   "touristScams": [
+    {
+     "title": "Sahte taksi",
+     "desc": "Sofya Havalimanı ve Merkez Gar’da OK Supertrans’a benzeyen logolu, camındaki tarifesi çok yüksek taksiler.",
+     "tip": "Havalimanındaki resmi OK Supertrans gişesini veya TaxiMe uygulamasını kullanın; camdaki fiyat etiketine bakın."
+    },
+    {
+     "title": "ATM dönüşüm tuzağı",
+     "desc": "Euronet gibi bağımsız ATM’ler yüksek kurla kendi para biriminizde çekim teklif eder.",
+     "tip": "Banka ATM’si kullanın ve “dönüşümsüz” (without conversion) seçeneğini seçin."
+    }
+   ]
   }
  },
  "en": {
@@ -195,6 +249,60 @@
      }
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "European two-round-pin C/F (Schuko) sockets, the same as in Turkey; no adapter needed."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Sofia’s water comes from the Rila mountains and is drinkable; it is safe in most cities too, though bottled water may be preferable on the coast in summer.",
+    "vaccines": [
+     "Routine vaccines (MMR, tetanus)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "112 / 150"
+   },
+   "tipping": {
+    "custom": "A 10% tip is common and expected in restaurants.",
+    "standardPercent": 10,
+    "rule": "round_up",
+    "note": "Rounding up is enough in taxis and cafés."
+   },
+   "taxFree": {
+    "vatRefundPercent": "20% VAT; about 10-15% back after fees",
+    "minSpend": "~€128 (formerly 250 BGN), one shop on the same day",
+    "customsNote": "Turkish citizens are eligible: have the form stamped at the Kapitan Andreevo border or Sofia Airport customs. Bulgaria has used the euro since 1 January 2026."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1 - $3",
+    "topCarriers": [
+     "A1 Bulgaria",
+     "Yettel",
+     "Vivacom"
+    ],
+    "airportSimTrapWarning": "Airport sales points are expensive; buy at A1, Yettel or Vivacom shops or get an eSIM in advance."
+   },
+   "touristScams": [
+    {
+     "title": "Fake taxis",
+     "desc": "Taxis at Sofia Airport and Central Station with logos mimicking OK Supertrans and very high rates on the window sticker.",
+     "tip": "Use the official OK Supertrans desk at the airport or the TaxiMe app and check the rate sticker."
+    },
+    {
+     "title": "ATM conversion trap",
+     "desc": "Independent ATMs such as Euronet offer withdrawals in your home currency at a poor rate.",
+     "tip": "Use bank ATMs and choose “without conversion”."
+    }
+   ]
   }
  },
  "de": {
@@ -294,6 +402,60 @@
      }
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Europäische Steckdosen Typ C/F (Schuko) mit zwei runden Stiften, wie in der Türkei; kein Adapter nötig."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Sofias Wasser kommt aus dem Rila-Gebirge und ist trinkbar; auch in den meisten Städten sicher, an der Küste im Sommer eventuell besser Flaschenwasser.",
+    "vaccines": [
+     "Standardimpfungen (MMR, Tetanus)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "112 / 150"
+   },
+   "tipping": {
+    "custom": "10 % Trinkgeld sind in Restaurants üblich und werden erwartet.",
+    "standardPercent": 10,
+    "rule": "round_up",
+    "note": "In Taxis und Cafés reicht Aufrunden."
+   },
+   "taxFree": {
+    "vatRefundPercent": "20 % MwSt.; nach Gebühren etwa 10-15 % zurück",
+    "minSpend": "~128 € (früher 250 BGN), ein Geschäft am selben Tag",
+    "customsNote": "Türkische Staatsbürger sind berechtigt: Formular am Grenzübergang Kapitan Andreevo oder am Flughafen Sofia vom Zoll stempeln lassen. Bulgarien nutzt seit 1. Januar 2026 den Euro."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1 - $3",
+    "topCarriers": [
+     "A1 Bulgaria",
+     "Yettel",
+     "Vivacom"
+    ],
+    "airportSimTrapWarning": "Verkaufsstellen am Flughafen sind teuer; in A1-, Yettel- oder Vivacom-Shops kaufen oder vorab eine eSIM holen."
+   },
+   "touristScams": [
+    {
+     "title": "Falsche Taxis",
+     "desc": "Taxis an Flughafen und Hauptbahnhof Sofia mit OK-Supertrans-ähnlichem Logo und sehr hohem Tarif auf dem Scheibenaufkleber.",
+     "tip": "Offiziellen OK-Supertrans-Schalter am Flughafen oder die App TaxiMe nutzen und den Tarifaufkleber prüfen."
+    },
+    {
+     "title": "Umrechnungsfalle am Automaten",
+     "desc": "Unabhängige Automaten wie Euronet bieten Abhebungen in Ihrer Heimatwährung zu schlechtem Kurs an.",
+     "tip": "Bankautomaten nutzen und „ohne Umrechnung“ wählen."
+    }
+   ]
   }
  },
  "es": {
@@ -393,6 +555,60 @@
      }
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Enchufes europeos C/F (Schuko) de dos clavijas redondas, iguales que en Turquía; no hace falta adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "El agua de Sofía viene de los montes Rila y es potable; también es segura en la mayoría de ciudades, aunque en la costa en verano puede preferirse embotellada.",
+    "vaccines": [
+     "Vacunas rutinarias (triple vírica, tétanos)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "112 / 150"
+   },
+   "tipping": {
+    "custom": "En restaurantes es habitual y se espera un 10 % de propina.",
+    "standardPercent": 10,
+    "rule": "round_up",
+    "note": "En taxis y cafeterías basta con redondear."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA del 20 %; se recupera un 10-15 % tras comisiones",
+    "minSpend": "~128 € (antes 250 BGN), en una tienda el mismo día",
+    "customsNote": "Los ciudadanos turcos tienen derecho: selle el formulario en la aduana de Kapitan Andreevo o del aeropuerto de Sofía. Bulgaria usa el euro desde el 1 de enero de 2026."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1 - $3",
+    "topCarriers": [
+     "A1 Bulgaria",
+     "Yettel",
+     "Vivacom"
+    ],
+    "airportSimTrapWarning": "Los puntos de venta del aeropuerto son caros; compre en tiendas A1, Yettel o Vivacom o lleve una eSIM."
+   },
+   "touristScams": [
+    {
+     "title": "Taxis falsos",
+     "desc": "Taxis en el aeropuerto y la estación central de Sofía con logotipos que imitan a OK Supertrans y tarifas muy altas en la pegatina.",
+     "tip": "Use el mostrador oficial de OK Supertrans o la app TaxiMe y mire la pegatina de tarifas."
+    },
+    {
+     "title": "Trampa de conversión en cajeros",
+     "desc": "Cajeros independientes como Euronet ofrecen retirar en su moneda con un cambio malo.",
+     "tip": "Use cajeros de bancos y elija “sin conversión”."
+    }
+   ]
   }
  },
  "ru": {
@@ -492,6 +708,60 @@
      }
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Европейские розетки C/F (Schuko) с двумя круглыми штырями, как в Турции; переходник не нужен."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Вода в Софии поступает с гор Рила и пригодна для питья; в большинстве городов она тоже безопасна, но на побережье летом лучше бутилированная.",
+    "vaccines": [
+     "Плановые прививки (корь-краснуха-паротит, столбняк)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "112 / 150"
+   },
+   "tipping": {
+    "custom": "В ресторанах принято и ожидается оставлять 10 %.",
+    "standardPercent": 10,
+    "rule": "round_up",
+    "note": "В такси и кафе достаточно округлить сумму."
+   },
+   "taxFree": {
+    "vatRefundPercent": "НДС 20 %; после комиссии возвращается около 10-15 %",
+    "minSpend": "~128 € (ранее 250 левов), в одном магазине за день",
+    "customsNote": "Граждане Турции имеют право на возврат: заверьте форму на таможне КПП Капитан-Андреево или в аэропорту Софии. С 1 января 2026 года в Болгарии евро."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1 - $3",
+    "topCarriers": [
+     "A1 Bulgaria",
+     "Yettel",
+     "Vivacom"
+    ],
+    "airportSimTrapWarning": "Точки продаж в аэропорту дорогие; покупайте в салонах A1, Yettel или Vivacom либо заранее оформите eSIM."
+   },
+   "touristScams": [
+    {
+     "title": "Поддельные такси",
+     "desc": "У аэропорта и Центрального вокзала Софии такси с логотипом «под OK Supertrans» и очень высоким тарифом на наклейке.",
+     "tip": "Пользуйтесь официальной стойкой OK Supertrans или приложением TaxiMe и смотрите на наклейку с тарифом."
+    },
+    {
+     "title": "Конвертация в банкомате",
+     "desc": "Независимые банкоматы вроде Euronet предлагают снять деньги в вашей валюте по невыгодному курсу.",
+     "tip": "Пользуйтесь банкоматами банков и выбирайте «без конвертации»."
+    }
+   ]
   }
  }
 }

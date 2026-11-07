@@ -93,6 +93,59 @@
      }
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Avrupa tipi iki yuvarlak uçlu C/F (Schuko) priz; Türkiye ile aynı, adaptör gerekmez."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Üsküp ve Ohri’de şebeke suyu içilebilir; Üsküp’ün suyu dağ kaynaklarından gelir.",
+    "vaccines": [
+     "Rutin aşılar (KKK, tetanoz)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "194"
+   },
+   "tipping": {
+    "custom": "Restoranlarda %10 bahşiş yaygındır.",
+    "standardPercent": 10,
+    "rule": "round_up",
+    "note": "Kafe ve taksilerde hesabı yuvarlamak yeterlidir."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Pratikte yok (KDV %18)",
+    "minSpend": "—",
+    "customsNote": "Kuzey Makedonya’da turistlere yönelik yaygın bir KDV iade sistemi yoktur; çok az mağaza form verir, iadeye güvenerek alışveriş yapmayın."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.50 - $1.50",
+    "topCarriers": [
+     "Makedonski Telekom",
+     "A1 Makedonija"
+    ],
+    "airportSimTrapWarning": "Havalimanında satış noktası sınırlıdır; şehirdeki Telekom veya A1 mağazalarından pasaportla ucuz turist hattı alın. Ülke AB roaming dışında."
+   },
+   "touristScams": [
+    {
+     "title": "Havalimanı taksisi",
+     "desc": "Üsküp Havalimanı’nda yaklaşan resmi olmayan taksiciler merkeze çok yüksek fiyat ister.",
+     "tip": "Havalimanındaki resmi taksi durağını veya Wizi/Global Taxi gibi uygulamaları kullanın."
+    },
+    {
+     "title": "Sokak dövizcileri",
+     "desc": "Çarşı çevresinde sokakta döviz bozan kişiler kötü kur verir veya eksik para sayar.",
+     "tip": "Yalnızca resmi “menuvačnica” döviz bürolarını kullanın."
+    }
+   ]
   }
  },
  "en": {
@@ -189,6 +242,59 @@
      }
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "European two-round-pin C/F (Schuko) sockets, the same as in Turkey; no adapter needed."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Tap water is drinkable in Skopje and Ohrid; Skopje’s water comes from mountain springs.",
+    "vaccines": [
+     "Routine vaccines (MMR, tetanus)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "194"
+   },
+   "tipping": {
+    "custom": "A 10% tip is common in restaurants.",
+    "standardPercent": 10,
+    "rule": "round_up",
+    "note": "Rounding up is enough in cafés and taxis."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Practically none (18% VAT)",
+    "minSpend": "—",
+    "customsNote": "North Macedonia has no widely available VAT refund scheme for tourists; very few shops issue a form, so do not shop counting on a refund."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.50 - $1.50",
+    "topCarriers": [
+     "Makedonski Telekom",
+     "A1 Makedonija"
+    ],
+    "airportSimTrapWarning": "Sales points at the airport are limited; buy a cheap tourist SIM with your passport from Telekom or A1 shops in town. The country is outside EU roaming."
+   },
+   "touristScams": [
+    {
+     "title": "Airport taxis",
+     "desc": "Unofficial drivers approaching you at Skopje Airport ask very high fares to the centre.",
+     "tip": "Use the official taxi rank at the airport or apps such as Wizi or Global Taxi."
+    },
+    {
+     "title": "Street money changers",
+     "desc": "People changing money in the street around the Old Bazaar give poor rates or short-change you.",
+     "tip": "Use only official “menuvačnica” exchange offices."
+    }
+   ]
   }
  },
  "de": {
@@ -285,6 +391,59 @@
      }
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Europäische Steckdosen Typ C/F (Schuko) mit zwei runden Stiften, wie in der Türkei; kein Adapter nötig."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "In Skopje und Ohrid ist Leitungswasser trinkbar; Skopjes Wasser stammt aus Bergquellen.",
+    "vaccines": [
+     "Standardimpfungen (MMR, Tetanus)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "194"
+   },
+   "tipping": {
+    "custom": "10 % Trinkgeld sind in Restaurants üblich.",
+    "standardPercent": 10,
+    "rule": "round_up",
+    "note": "In Cafés und Taxis reicht Aufrunden."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Praktisch keine (18 % MwSt.)",
+    "minSpend": "—",
+    "customsNote": "Nordmazedonien hat kein verbreitetes Mehrwertsteuer-Erstattungssystem für Touristen; nur sehr wenige Läden stellen ein Formular aus."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.50 - $1.50",
+    "topCarriers": [
+     "Makedonski Telekom",
+     "A1 Makedonija"
+    ],
+    "airportSimTrapWarning": "Am Flughafen gibt es kaum Verkaufsstellen; günstige Touristen-SIM mit Reisepass in Telekom- oder A1-Shops in der Stadt kaufen. Das Land liegt außerhalb des EU-Roamings."
+   },
+   "touristScams": [
+    {
+     "title": "Flughafentaxis",
+     "desc": "Inoffizielle Fahrer am Flughafen Skopje verlangen sehr hohe Preise ins Zentrum.",
+     "tip": "Den offiziellen Taxistand am Flughafen oder Apps wie Wizi oder Global Taxi nutzen."
+    },
+    {
+     "title": "Straßengeldwechsler",
+     "desc": "Geldwechsler auf der Straße rund um den Alten Basar geben schlechte Kurse oder zu wenig heraus.",
+     "tip": "Nur offizielle Wechselstuben („menuvačnica“) nutzen."
+    }
+   ]
   }
  },
  "es": {
@@ -381,6 +540,59 @@
      }
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Enchufes europeos C/F (Schuko) de dos clavijas redondas, iguales que en Turquía; no hace falta adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "El agua del grifo es potable en Skopie y Ohrid; el agua de Skopie procede de manantiales de montaña.",
+    "vaccines": [
+     "Vacunas rutinarias (triple vírica, tétanos)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "194"
+   },
+   "tipping": {
+    "custom": "En restaurantes es habitual un 10 % de propina.",
+    "standardPercent": 10,
+    "rule": "round_up",
+    "note": "En cafeterías y taxis basta con redondear."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Prácticamente no hay (IVA del 18 %)",
+    "minSpend": "—",
+    "customsNote": "Macedonia del Norte no tiene un sistema extendido de devolución del IVA a turistas; muy pocas tiendas emiten formulario, no compre contando con el reembolso."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.50 - $1.50",
+    "topCarriers": [
+     "Makedonski Telekom",
+     "A1 Makedonija"
+    ],
+    "airportSimTrapWarning": "En el aeropuerto hay pocos puntos de venta; compre una SIM turística barata con pasaporte en tiendas Telekom o A1 de la ciudad. El país está fuera del roaming UE."
+   },
+   "touristScams": [
+    {
+     "title": "Taxis del aeropuerto",
+     "desc": "Conductores no oficiales en el aeropuerto de Skopie piden tarifas muy altas al centro.",
+     "tip": "Use la parada oficial del aeropuerto o apps como Wizi o Global Taxi."
+    },
+    {
+     "title": "Cambistas callejeros",
+     "desc": "Quienes cambian dinero en la calle cerca del Bazar Viejo dan mal cambio o entregan de menos.",
+     "tip": "Use solo casas de cambio oficiales (“menuvačnica”)."
+    }
+   ]
   }
  },
  "ru": {
@@ -477,6 +689,59 @@
      }
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Европейские розетки C/F (Schuko) с двумя круглыми штырями, как в Турции; переходник не нужен."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "В Скопье и Охриде воду из-под крана можно пить; вода в Скопье поступает из горных источников.",
+    "vaccines": [
+     "Плановые прививки (корь-краснуха-паротит, столбняк)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "194"
+   },
+   "tipping": {
+    "custom": "В ресторанах принято оставлять 10 %.",
+    "standardPercent": 10,
+    "rule": "round_up",
+    "note": "В кафе и такси достаточно округлить сумму."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Практически нет (НДС 18 %)",
+    "minSpend": "—",
+    "customsNote": "В Северной Македонии нет распространённой системы возврата НДС туристам; форму выдают очень немногие магазины, не рассчитывайте на возврат."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.50 - $1.50",
+    "topCarriers": [
+     "Makedonski Telekom",
+     "A1 Makedonija"
+    ],
+    "airportSimTrapWarning": "В аэропорту точек продаж мало; купите дешёвую туристическую SIM по паспорту в салонах Telekom или A1 в городе. Страна не входит в роуминг ЕС."
+   },
+   "touristScams": [
+    {
+     "title": "Такси в аэропорту",
+     "desc": "Неофициальные водители в аэропорту Скопье просят очень высокую цену до центра.",
+     "tip": "Пользуйтесь официальной стоянкой такси или приложениями Wizi и Global Taxi."
+    },
+    {
+     "title": "Уличные менялы",
+     "desc": "Менялы на улице у Старого базара дают плохой курс или недодают деньги.",
+     "tip": "Пользуйтесь только официальными обменниками («menuvačnica»)."
+    }
+   ]
   }
  }
 }

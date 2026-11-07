@@ -97,6 +97,61 @@
      }
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Avrupa tipi iki yuvarlak uçlu C/F (Schuko) priz; Türkiye ile aynı, adaptör gerekmez."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Musluk suyu ülke genelinde içilebilir; Barselona’da klor tadı belirgindir, Kanarya Adaları’nın bazı yerlerinde yerliler şişe su tercih eder.",
+    "vaccines": [
+     "Rutin aşılar (KKK, tetanoz)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "112 / 061"
+   },
+   "tipping": {
+    "custom": "Bahşiş zorunlu değildir; restoranlarda hesabı yuvarlamak veya %5-10 bırakmak yeterlidir.",
+    "standardPercent": 5,
+    "rule": "round_up",
+    "note": "Barda kahve veya tapas için bozuk para bırakmak yaygındır."
+   },
+   "taxFree": {
+    "vatRefundPercent": "%21 KDV; iade komisyon sonrası ~%12-15",
+    "minSpend": "Yasal alt limit yok (mağazaya göre değişir)",
+    "customsNote": "Mağazadan dijital DIVA formu isteyin; AB’den son çıkış havalimanında check-in öncesi DIVA kioskunda okutun."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.50 - $1.50",
+    "topCarriers": [
+     "Movistar",
+     "Orange",
+     "Vodafone",
+     "Digi"
+    ],
+    "airportSimTrapWarning": "Havalimanı satış noktaları pahalıdır; şehirdeki Digi/Orange/Movistar mağazalarından pasaportla hat alın veya e-SIM kullanın. AB roaming Türk hatlarına uygulanmaz."
+   },
+   "touristScams": [
+    {
+     "title": "Sahte polis",
+     "desc": "Sivil polis olduğunu söyleyen kişiler “sahte para kontrolü” bahanesiyle cüzdanınızı ister ve para çeker.",
+     "tip": "Gerçek polis sokakta cüzdan kontrol etmez; karakolda kimlik göstermeyi teklif edin."
+    },
+    {
+     "title": "Biberiye/fal tuzağı",
+     "desc": "Sevilla ve Granada’da katedral çevresinde elinize biberiye dalı verip fal bakan kişiler sonra para ister.",
+     "tip": "Elinize bir şey verilmesine izin vermeyin, kibarca reddedip yürüyün."
+    }
+   ]
   }
  },
  "en": {
@@ -197,6 +252,61 @@
      }
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "European two-round-pin C/F (Schuko) sockets, the same as in Turkey; no adapter needed."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Tap water is drinkable nationwide; in Barcelona it tastes strongly of chlorine, and in parts of the Canary Islands locals prefer bottled water.",
+    "vaccines": [
+     "Routine vaccines (MMR, tetanus)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "112 / 061"
+   },
+   "tipping": {
+    "custom": "Tipping is not obligatory; rounding up or leaving 5-10% in restaurants is enough.",
+    "standardPercent": 5,
+    "rule": "round_up",
+    "note": "Leaving small change for coffee or tapas at the bar is common."
+   },
+   "taxFree": {
+    "vatRefundPercent": "21% VAT; about 12-15% back after fees",
+    "minSpend": "No legal minimum (varies by shop)",
+    "customsNote": "Ask the shop for a digital DIVA form and scan it at a DIVA kiosk at your last EU departure airport before check-in."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.50 - $1.50",
+    "topCarriers": [
+     "Movistar",
+     "Orange",
+     "Vodafone",
+     "Digi"
+    ],
+    "airportSimTrapWarning": "Airport sales points are expensive; buy a SIM with your passport at Digi, Orange or Movistar shops in town or use an eSIM. EU roaming does not apply to Turkish SIMs."
+   },
+   "touristScams": [
+    {
+     "title": "Fake police",
+     "desc": "People claiming to be plain-clothes police ask for your wallet to “check for counterfeit notes” and take money.",
+     "tip": "Real police do not check wallets in the street; offer to show ID at a police station."
+    },
+    {
+     "title": "Rosemary fortune trap",
+     "desc": "Around the cathedrals in Seville and Granada people hand you a sprig of rosemary, read your palm and then demand money.",
+     "tip": "Do not let anyone put anything in your hand; politely refuse and walk on."
+    }
+   ]
   }
  },
  "de": {
@@ -297,6 +407,61 @@
      }
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Europäische Steckdosen Typ C/F (Schuko) mit zwei runden Stiften, wie in der Türkei; kein Adapter nötig."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Leitungswasser ist landesweit trinkbar; in Barcelona schmeckt es stark nach Chlor, auf Teilen der Kanaren bevorzugen Einheimische Flaschenwasser.",
+    "vaccines": [
+     "Standardimpfungen (MMR, Tetanus)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "112 / 061"
+   },
+   "tipping": {
+    "custom": "Trinkgeld ist nicht Pflicht; Aufrunden oder 5-10 % im Restaurant genügen.",
+    "standardPercent": 5,
+    "rule": "round_up",
+    "note": "Für Kaffee oder Tapas an der Bar etwas Kleingeld liegen zu lassen ist üblich."
+   },
+   "taxFree": {
+    "vatRefundPercent": "21 % MwSt.; nach Gebühren etwa 12-15 % zurück",
+    "minSpend": "Kein gesetzliches Minimum (je nach Geschäft)",
+    "customsNote": "Im Geschäft ein digitales DIVA-Formular verlangen und am letzten EU-Abflughafen vor dem Check-in an einem DIVA-Kiosk scannen."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.50 - $1.50",
+    "topCarriers": [
+     "Movistar",
+     "Orange",
+     "Vodafone",
+     "Digi"
+    ],
+    "airportSimTrapWarning": "Verkaufsstellen am Flughafen sind teuer; SIM mit Pass in Digi-, Orange- oder Movistar-Shops in der Stadt kaufen oder eSIM nutzen. EU-Roaming gilt nicht für türkische SIMs."
+   },
+   "touristScams": [
+    {
+     "title": "Falsche Polizisten",
+     "desc": "Angebliche Zivilpolizisten wollen Ihre Geldbörse „auf Falschgeld prüfen“ und nehmen Geld heraus.",
+     "tip": "Echte Polizei kontrolliert keine Geldbörsen auf der Straße; anbieten, sich auf der Wache auszuweisen."
+    },
+    {
+     "title": "Rosmarin-Wahrsagerinnen",
+     "desc": "An den Kathedralen von Sevilla und Granada drückt man Ihnen einen Rosmarinzweig in die Hand, liest aus der Hand und verlangt dann Geld.",
+     "tip": "Nichts in die Hand drücken lassen; höflich ablehnen und weitergehen."
+    }
+   ]
   }
  },
  "es": {
@@ -397,6 +562,61 @@
      }
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Enchufes europeos C/F (Schuko) de dos clavijas redondas, iguales que en Turquía; no hace falta adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "El agua del grifo es potable en todo el país; en Barcelona sabe mucho a cloro y en partes de Canarias los residentes prefieren la embotellada.",
+    "vaccines": [
+     "Vacunas rutinarias (triple vírica, tétanos)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "112 / 061"
+   },
+   "tipping": {
+    "custom": "La propina no es obligatoria; en restaurantes basta con redondear o dejar un 5-10 %.",
+    "standardPercent": 5,
+    "rule": "round_up",
+    "note": "Es habitual dejar unas monedas por el café o las tapas en la barra."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA del 21 %; se recupera un 12-15 % tras comisiones",
+    "minSpend": "Sin mínimo legal (depende de la tienda)",
+    "customsNote": "Pida en la tienda el formulario electrónico DIVA y escanéelo en un quiosco DIVA del último aeropuerto de salida de la UE antes de facturar."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.50 - $1.50",
+    "topCarriers": [
+     "Movistar",
+     "Orange",
+     "Vodafone",
+     "Digi"
+    ],
+    "airportSimTrapWarning": "Los puntos de venta del aeropuerto son caros; compre una SIM con pasaporte en tiendas Digi, Orange o Movistar de la ciudad o use una eSIM. El roaming UE no aplica a SIM turcas."
+   },
+   "touristScams": [
+    {
+     "title": "Falsos policías",
+     "desc": "Supuestos policías de paisano piden la cartera para “comprobar billetes falsos” y se quedan con dinero.",
+     "tip": "La policía real no revisa carteras en la calle; ofrezca identificarse en comisaría."
+    },
+    {
+     "title": "El romero y la buenaventura",
+     "desc": "Junto a las catedrales de Sevilla y Granada le dan una ramita de romero, le leen la mano y luego exigen dinero.",
+     "tip": "No deje que le pongan nada en la mano; rechace con educación y siga andando."
+    }
+   ]
   }
  },
  "ru": {
@@ -497,6 +717,61 @@
      }
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Европейские розетки C/F (Schuko) с двумя круглыми штырями, как в Турции; переходник не нужен."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Водопроводную воду можно пить по всей стране; в Барселоне у неё сильный привкус хлора, а на части Канарских островов местные предпочитают бутилированную.",
+    "vaccines": [
+     "Плановые прививки (корь-краснуха-паротит, столбняк)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "112 / 061"
+   },
+   "tipping": {
+    "custom": "Чаевые не обязательны; в ресторане достаточно округлить или оставить 5-10 %.",
+    "standardPercent": 5,
+    "rule": "round_up",
+    "note": "За кофе или тапас у стойки принято оставлять мелочь."
+   },
+   "taxFree": {
+    "vatRefundPercent": "НДС 21 %; после комиссии возвращается около 12-15 %",
+    "minSpend": "Законного минимума нет (зависит от магазина)",
+    "customsNote": "Попросите в магазине электронную форму DIVA и до регистрации отсканируйте её в киоске DIVA в последнем аэропорту вылета из ЕС."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.50 - $1.50",
+    "topCarriers": [
+     "Movistar",
+     "Orange",
+     "Vodafone",
+     "Digi"
+    ],
+    "airportSimTrapWarning": "Точки продаж в аэропорту дорогие; купите SIM по паспорту в салонах Digi, Orange или Movistar в городе либо используйте eSIM. Роуминг ЕС на турецкие SIM не распространяется."
+   },
+   "touristScams": [
+    {
+     "title": "Фальшивые полицейские",
+     "desc": "Люди, называющие себя полицейскими в штатском, просят кошелёк «для проверки на фальшивые купюры» и забирают деньги.",
+     "tip": "Настоящая полиция не проверяет кошельки на улице; предложите предъявить документы в участке."
+    },
+    {
+     "title": "Розмарин и гадание",
+     "desc": "У соборов Севильи и Гранады вам вручают веточку розмарина, гадают по руке и требуют денег.",
+     "tip": "Ничего не берите в руки; вежливо откажитесь и идите дальше."
+    }
+   ]
   }
  }
 }

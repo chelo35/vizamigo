@@ -59,6 +59,62 @@
     "flightCostIndex": "Orta-Yüksek (direkt ~11-13 sa)",
     "flightTip": "İstanbul’dan Tokyo ve Osaka’ya direkt uçuşlar vardır. Körfez veya Çin aktarmalı biletler çoğu zaman daha ucuzdur."
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "A",
+     "B"
+    ],
+    "voltage": "100V",
+    "frequency": "50/60Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "İki yassı uçlu A (bazen topraklı B) priz ve 100V; Türk fişleri için adaptör gerekir. Şarj aletinizin 100-240V desteklediğini kontrol edin; saç kurutma makinesi gibi 220V cihazlar düzgün çalışmaz."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Musluk suyu ülke genelinde güvenle içilebilir; istasyon ve parklarda içme çeşmeleri bulunur.",
+    "vaccines": [
+     "Rutin aşılar (KKK, tetanoz)",
+     "Japon ensefaliti (kırsalda uzun kalış)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "119"
+   },
+   "tipping": {
+    "custom": "Japonya’da bahşiş verilmez; bırakılan para çoğu zaman geri getirilir ve kaba karşılanabilir.",
+    "standardPercent": 0,
+    "rule": "forbidden",
+    "note": "Lüks otel ve ryokanlarda faturaya %10-15 servis bedeli eklenebilir; ayrıca bahşiş gerekmez."
+   },
+   "taxFree": {
+    "vatRefundPercent": "%10 tüketim vergisi (gıdada %8)",
+    "minSpend": "Mağaza başına günlük 5.000 ¥ (vergisiz)",
+    "customsNote": "1 Kasım 2026’dan itibaren vergi muafiyeti yerine iade sistemi geçerli: alışverişte pasaportunuzu gösterip vergiyi ödersiniz, ülkeden çıkarken gümrük malları onaylayınca iade mağaza üzerinden yapılır."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1 - $2.50",
+    "topCarriers": [
+     "NTT Docomo",
+     "au (KDDI)",
+     "SoftBank",
+     "Rakuten Mobile"
+    ],
+    "airportSimTrapWarning": "Havalimanı kiosklarındaki yalnızca internetli SIM’ler pahalıdır ve telefon numarası içermez; önceden alınan e-SIM genellikle daha ucuzdur."
+   },
+   "touristScams": [
+    {
+     "title": "Kabukicho/Roppongi çığırtkanları",
+     "desc": "Sokakta yaklaşan çığırtkanların götürdüğü barlarda yüz binlerce yenlik hesap çıkabilir, içkiye ilaç katıldığı vakalar vardır.",
+     "tip": "Sokak çığırtkanlarını takip etmeyin; fiyatı belli, bilinen mekânları seçin."
+    },
+    {
+     "title": "Sahte keşişler",
+     "desc": "Turistik bölgelerde keşiş kılığındaki kişiler “kutsal tılsım” verip bağış ister.",
+     "tip": "Gerçek Japon keşişleri sokakta aktif olarak para istemez; kibarca geçin."
+    }
+   ]
   }
  },
  "en": {
@@ -121,6 +177,62 @@
     "flightCostIndex": "Medium-high (direct ~11-13 h)",
     "flightTip": "There are direct flights from Istanbul to Tokyo and Osaka. Tickets via the Gulf or China are often cheaper."
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "A",
+     "B"
+    ],
+    "voltage": "100V",
+    "frequency": "50/60Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Two-flat-pin A (sometimes grounded B) sockets at 100V; Turkish plugs need an adapter. Check that your charger supports 100-240V; 220V-only devices such as hair dryers will not work properly."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Tap water is safe to drink nationwide; drinking fountains are common in stations and parks.",
+    "vaccines": [
+     "Routine vaccines (MMR, tetanus)",
+     "Japanese encephalitis (long rural stays)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "119"
+   },
+   "tipping": {
+    "custom": "Tipping is not done in Japan; money left behind is often returned and can be seen as rude.",
+    "standardPercent": 0,
+    "rule": "forbidden",
+    "note": "Luxury hotels and ryokan may add a 10-15% service charge; no extra tip is needed."
+   },
+   "taxFree": {
+    "vatRefundPercent": "10% consumption tax (8% on food)",
+    "minSpend": "¥5,000 (excl. tax) per store per day",
+    "customsNote": "Since 1 November 2026 a refund system replaces tax exemption: show your passport and pay the tax when buying; once customs confirms the goods on departure, the refund is paid through the shop."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1 - $2.50",
+    "topCarriers": [
+     "NTT Docomo",
+     "au (KDDI)",
+     "SoftBank",
+     "Rakuten Mobile"
+    ],
+    "airportSimTrapWarning": "Data-only SIMs from airport kiosks are pricey and have no phone number; an eSIM bought in advance is usually cheaper."
+   },
+   "touristScams": [
+    {
+     "title": "Kabukicho/Roppongi touts",
+     "desc": "Bars that street touts lead you to can produce bills of hundreds of thousands of yen, and drink spiking has been reported.",
+     "tip": "Do not follow street touts; choose known places with clear prices."
+    },
+    {
+     "title": "Fake monks",
+     "desc": "People dressed as monks in tourist areas hand out “blessed charms” and ask for donations.",
+     "tip": "Real Japanese monks do not actively ask for money in the street; politely walk on."
+    }
+   ]
   }
  },
  "de": {
@@ -183,6 +295,62 @@
     "flightCostIndex": "Mittel bis hoch (Direktflug ~11-13 Std.)",
     "flightTip": "Von Istanbul gibt es Direktflüge nach Tokio und Osaka. Verbindungen über den Golf oder China sind oft günstiger."
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "A",
+     "B"
+    ],
+    "voltage": "100V",
+    "frequency": "50/60Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Steckdosen Typ A (teils geerdet B) mit zwei flachen Stiften und 100 V; türkische Stecker brauchen einen Adapter. Prüfen, ob das Ladegerät 100-240 V unterstützt; reine 220-V-Geräte wie Föhne funktionieren nicht richtig."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Leitungswasser ist landesweit bedenkenlos trinkbar; in Bahnhöfen und Parks gibt es Trinkbrunnen.",
+    "vaccines": [
+     "Standardimpfungen (MMR, Tetanus)",
+     "Japanische Enzephalitis (lange Aufenthalte auf dem Land)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "119"
+   },
+   "tipping": {
+    "custom": "In Japan gibt man kein Trinkgeld; liegengelassenes Geld wird oft zurückgebracht und kann unhöflich wirken.",
+    "standardPercent": 0,
+    "rule": "forbidden",
+    "note": "Luxushotels und Ryokan schlagen teils 10-15 % Service auf; zusätzliches Trinkgeld ist nicht nötig."
+   },
+   "taxFree": {
+    "vatRefundPercent": "10 % Verbrauchsteuer (8 % auf Lebensmittel)",
+    "minSpend": "5.000 ¥ (ohne Steuer) pro Geschäft und Tag",
+    "customsNote": "Seit 1. November 2026 gilt statt der Steuerbefreiung ein Erstattungssystem: beim Kauf Pass vorzeigen und Steuer zahlen; nach Bestätigung der Waren durch den Zoll bei der Ausreise erstattet das Geschäft."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1 - $2.50",
+    "topCarriers": [
+     "NTT Docomo",
+     "au (KDDI)",
+     "SoftBank",
+     "Rakuten Mobile"
+    ],
+    "airportSimTrapWarning": "Reine Daten-SIMs an Flughafenkiosken sind teuer und haben keine Telefonnummer; eine vorab gekaufte eSIM ist meist günstiger."
+   },
+   "touristScams": [
+    {
+     "title": "Schlepper in Kabukicho/Roppongi",
+     "desc": "In Bars, zu denen Straßenschlepper führen, entstehen Rechnungen von Hunderttausenden Yen; auch K.-o.-Tropfen wurden gemeldet.",
+     "tip": "Straßenschleppern nicht folgen; bekannte Lokale mit klaren Preisen wählen."
+    },
+    {
+     "title": "Falsche Mönche",
+     "desc": "Als Mönche verkleidete Personen verteilen in Touristengebieten „gesegnete Amulette“ und verlangen Spenden.",
+     "tip": "Echte japanische Mönche betteln nicht aktiv auf der Straße; höflich weitergehen."
+    }
+   ]
   }
  },
  "es": {
@@ -245,6 +413,62 @@
     "flightCostIndex": "Medio-alto (directo ~11-13 h)",
     "flightTip": "Hay vuelos directos de Estambul a Tokio y Osaka. Las conexiones por el Golfo o China suelen ser más baratas."
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "A",
+     "B"
+    ],
+    "voltage": "100V",
+    "frequency": "50/60Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Enchufes A de dos clavijas planas (a veces B con tierra) a 100 V; los enchufes turcos necesitan adaptador. Compruebe que su cargador admite 100-240 V; los aparatos solo de 220 V, como secadores, no funcionan bien."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "El agua del grifo es potable en todo el país; hay fuentes de agua en estaciones y parques.",
+    "vaccines": [
+     "Vacunas rutinarias (triple vírica, tétanos)",
+     "Encefalitis japonesa (estancias rurales largas)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "119"
+   },
+   "tipping": {
+    "custom": "En Japón no se da propina; el dinero dejado suele devolverse y puede considerarse grosero.",
+    "standardPercent": 0,
+    "rule": "forbidden",
+    "note": "Hoteles de lujo y ryokan pueden añadir un 10-15 % de servicio; no hace falta más propina."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Impuesto al consumo del 10 % (8 % en alimentos)",
+    "minSpend": "5.000 ¥ (sin impuestos) por tienda y día",
+    "customsNote": "Desde el 1 de noviembre de 2026 rige un sistema de reembolso en lugar de la exención: muestre el pasaporte y pague el impuesto al comprar; cuando la aduana confirma los artículos a la salida, la tienda devuelve el impuesto."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1 - $2.50",
+    "topCarriers": [
+     "NTT Docomo",
+     "au (KDDI)",
+     "SoftBank",
+     "Rakuten Mobile"
+    ],
+    "airportSimTrapWarning": "Las SIM solo de datos de los quioscos del aeropuerto son caras y no tienen número; una eSIM comprada antes suele ser más barata."
+   },
+   "touristScams": [
+    {
+     "title": "Captadores de Kabukicho/Roppongi",
+     "desc": "Los bares a los que llevan los captadores callejeros pueden cobrar cientos de miles de yenes y se han denunciado bebidas adulteradas.",
+     "tip": "No siga a captadores; elija locales conocidos con precios claros."
+    },
+    {
+     "title": "Falsos monjes",
+     "desc": "Personas vestidas de monje en zonas turísticas reparten “amuletos bendecidos” y piden donativos.",
+     "tip": "Los monjes japoneses reales no piden dinero activamente en la calle; siga su camino con educación."
+    }
+   ]
   }
  },
  "ru": {
@@ -307,6 +531,62 @@
     "flightCostIndex": "Средне-высокий (прямой рейс ~11-13 ч)",
     "flightTip": "Из Стамбула есть прямые рейсы в Токио и Осаку. Перелёты с пересадкой в странах Залива или в Китае часто дешевле."
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "A",
+     "B"
+    ],
+    "voltage": "100V",
+    "frequency": "50/60Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Розетки типа A с двумя плоскими штырями (иногда B с заземлением), напряжение 100 В; для турецких вилок нужен переходник. Проверьте, что зарядка поддерживает 100-240 В; приборы только на 220 В, например фены, работать нормально не будут."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Водопроводную воду можно пить по всей стране; на станциях и в парках есть питьевые фонтанчики.",
+    "vaccines": [
+     "Плановые прививки (корь-краснуха-паротит, столбняк)",
+     "Японский энцефалит (долгое пребывание в сельской местности)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "119"
+   },
+   "tipping": {
+    "custom": "В Японии чаевые не дают; оставленные деньги часто возвращают, это может показаться невежливым.",
+    "standardPercent": 0,
+    "rule": "forbidden",
+    "note": "Дорогие отели и рёканы могут добавлять 10-15 % за обслуживание; дополнительные чаевые не нужны."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Потребительский налог 10 % (8 % на продукты)",
+    "minSpend": "5 000 ¥ (без налога) в одном магазине за день",
+    "customsNote": "С 1 ноября 2026 года вместо освобождения от налога действует система возврата: при покупке показываете паспорт и платите налог, а после подтверждения покупок таможней при выезде магазин возвращает налог."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1 - $2.50",
+    "topCarriers": [
+     "NTT Docomo",
+     "au (KDDI)",
+     "SoftBank",
+     "Rakuten Mobile"
+    ],
+    "airportSimTrapWarning": "SIM только для интернета в киосках аэропорта дорогие и без номера телефона; eSIM, купленная заранее, обычно дешевле."
+   },
+   "touristScams": [
+    {
+     "title": "Зазывалы Кабукитё и Роппонги",
+     "desc": "В барах, куда ведут уличные зазывалы, выставляют счета на сотни тысяч иен; были случаи подмешивания веществ в напитки.",
+     "tip": "Не ходите за зазывалами; выбирайте известные заведения с понятными ценами."
+    },
+    {
+     "title": "Фальшивые монахи",
+     "desc": "Люди в одежде монахов в туристических местах раздают «освящённые амулеты» и просят пожертвования.",
+     "tip": "Настоящие японские монахи не просят денег на улице активно; вежливо проходите мимо."
+    }
+   ]
   }
  }
 }

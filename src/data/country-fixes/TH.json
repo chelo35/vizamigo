@@ -96,6 +96,68 @@
      }
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "A",
+     "B",
+     "C",
+     "F",
+     "O"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Prizler karışıktır (A/B/C/F/O); çoğu “üniversal” priz ince iki uçlu C fişini alır, ancak kalın topraklı Türk F fişleri çoğu zaman girmez, üniversal adaptör alın."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Musluk suyu içilmez; her yerde ucuz şişe su ve su dolum makineleri vardır. Buz genellikle fabrika üretimidir ve güvenlidir.",
+    "vaccines": [
+     "Rutin aşılar (KKK, tetanoz)",
+     "Hepatit A",
+     "Tifo",
+     "Kuduz (kırsal bölge veya uzun kalış)",
+     "Japon ensefaliti (kırsalda uzun kalış)",
+     "Sarıhumma sertifikası yalnızca sarıhumma riskli bir ülkeden geliyorsanız istenir"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "1669"
+   },
+   "tipping": {
+    "custom": "Bahşiş zorunlu değildir; lüks restoran ve otellerde %10 servis bedeli eklenir.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Masaj için 50-100 THB, taksi ve sokak yemeğinde bozuk para bırakmak yaygındır."
+   },
+   "taxFree": {
+    "vatRefundPercent": "%7 KDV (komisyon sonrası ~%5-6)",
+    "minSpend": "Mağaza başına günlük 2.000 THB (toplam en az 5.000 THB)",
+    "customsNote": "“VAT Refund for Tourists” etiketli mağazalarda P.P.10 formu isteyin; havalimanında check-in öncesi gümrüğe malları gösterip damgalatın, iadeyi pasaport kontrolünden sonra alın."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.30 - $1",
+    "topCarriers": [
+     "AIS",
+     "TrueMove H (True – dtac)",
+     "NT (National Telecom)"
+    ],
+    "airportSimTrapWarning": "Havalimanındaki AIS/True turist hatları sabit fiyatlıdır ve güvenilirdir; havalimanı dışındaki gayriresmi satıcılardan kayıtsız hat almayın."
+   },
+   "touristScams": [
+    {
+     "title": "“Saray bugün kapalı” tuzağı",
+     "desc": "Büyük Saray çevresinde biri sarayın kapalı olduğunu söyleyip sizi ucuz tuk-tuk ile mücevher/terzi dükkânına yollar.",
+     "tip": "Saray girişine kendiniz gidin; resmi saatler grandpalace.thai.net üzerinde yazar."
+    },
+    {
+     "title": "Jet-ski hasar tuzağı",
+     "desc": "Phuket ve Pattaya’da jet-ski iade edilirken önceden var olan çizikler için yüksek tazminat istenir.",
+     "tip": "Kiralamadan önce aracın fotoğraf/videosunu çekin; pasaportunuzu rehin bırakmayın."
+    }
+   ]
   }
  },
  "en": {
@@ -195,6 +257,68 @@
      }
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "A",
+     "B",
+     "C",
+     "F",
+     "O"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Sockets are mixed (A/B/C/F/O); most “universal” sockets take slim two-pin C plugs, but thick grounded Turkish F plugs often do not fit, so bring a universal adapter."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Tap water is not drinkable; cheap bottled water and refill machines are everywhere. Ice is usually factory-made and safe.",
+    "vaccines": [
+     "Routine vaccines (MMR, tetanus)",
+     "Hepatitis A",
+     "Typhoid",
+     "Rabies (rural areas or long stays)",
+     "Japanese encephalitis (long rural stays)",
+     "Yellow fever certificate only if arriving from a yellow-fever-risk country"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "1669"
+   },
+   "tipping": {
+    "custom": "Tipping is not obligatory; upscale restaurants and hotels add a 10% service charge.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Leaving 50-100 THB after a massage and small change in taxis and at street stalls is common."
+   },
+   "taxFree": {
+    "vatRefundPercent": "7% VAT (about 5-6% net after fees)",
+    "minSpend": "2,000 THB per store per day (at least 5,000 THB in total)",
+    "customsNote": "Ask for a P.P.10 form in shops with a “VAT Refund for Tourists” sign; show the goods to customs at the airport before check-in for a stamp and collect the refund after passport control."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.30 - $1",
+    "topCarriers": [
+     "AIS",
+     "TrueMove H (True – dtac)",
+     "NT (National Telecom)"
+    ],
+    "airportSimTrapWarning": "AIS and True tourist SIMs at the airport have fixed prices and are reliable; do not buy unregistered SIMs from unofficial sellers outside."
+   },
+   "touristScams": [
+    {
+     "title": "“The palace is closed today”",
+     "desc": "Near the Grand Palace someone says it is closed and sends you on a cheap tuk-tuk ride to a gem or tailor shop.",
+     "tip": "Walk to the palace entrance yourself; official hours are listed on grandpalace.thai.net."
+    },
+    {
+     "title": "Jet-ski damage scam",
+     "desc": "In Phuket and Pattaya operators demand large sums on return for scratches that were already there.",
+     "tip": "Photograph and film the jet ski before renting and never leave your passport as a deposit."
+    }
+   ]
   }
  },
  "de": {
@@ -294,6 +418,68 @@
      }
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "A",
+     "B",
+     "C",
+     "F",
+     "O"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Die Steckdosen sind gemischt (A/B/C/F/O); die meisten „Universal“-Dosen nehmen schmale zweipolige C-Stecker, dicke geerdete türkische F-Stecker passen oft nicht, daher Universaladapter mitnehmen."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Leitungswasser ist nicht trinkbar; günstiges Flaschenwasser und Nachfüllautomaten gibt es überall. Eis ist meist industriell hergestellt und sicher.",
+    "vaccines": [
+     "Standardimpfungen (MMR, Tetanus)",
+     "Hepatitis A",
+     "Typhus",
+     "Tollwut (ländliche Gebiete oder lange Aufenthalte)",
+     "Japanische Enzephalitis (lange Aufenthalte auf dem Land)",
+     "Gelbfieber-Nachweis nur bei Einreise aus einem Gelbfieber-Risikoland"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "1669"
+   },
+   "tipping": {
+    "custom": "Trinkgeld ist nicht Pflicht; gehobene Restaurants und Hotels schlagen 10 % Service auf.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Nach einer Massage 50-100 THB, im Taxi und an Garküchen etwas Kleingeld zu geben ist üblich."
+   },
+   "taxFree": {
+    "vatRefundPercent": "7 % MwSt. (nach Gebühren etwa 5-6 % netto)",
+    "minSpend": "2.000 THB pro Geschäft und Tag (insgesamt mindestens 5.000 THB)",
+    "customsNote": "In Geschäften mit „VAT Refund for Tourists“-Schild ein P.P.10-Formular verlangen; die Waren vor dem Check-in am Flughafen beim Zoll vorzeigen und abstempeln lassen, die Erstattung gibt es nach der Passkontrolle."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.30 - $1",
+    "topCarriers": [
+     "AIS",
+     "TrueMove H (True – dtac)",
+     "NT (National Telecom)"
+    ],
+    "airportSimTrapWarning": "Touristen-SIMs von AIS und True am Flughafen haben Festpreise und sind zuverlässig; keine unregistrierten SIMs bei inoffiziellen Händlern kaufen."
+   },
+   "touristScams": [
+    {
+     "title": "„Der Palast ist heute geschlossen“",
+     "desc": "Am Großen Palast behauptet jemand, er sei geschlossen, und schickt Sie per billigem Tuk-Tuk zu einem Edelstein- oder Schneiderladen.",
+     "tip": "Selbst zum Palasteingang gehen; die offiziellen Zeiten stehen auf grandpalace.thai.net."
+    },
+    {
+     "title": "Jetski-Schadensmasche",
+     "desc": "In Phuket und Pattaya verlangen Vermieter bei Rückgabe hohe Summen für bereits vorhandene Kratzer.",
+     "tip": "Den Jetski vor der Miete fotografieren und filmen; nie den Pass als Pfand hinterlassen."
+    }
+   ]
   }
  },
  "es": {
@@ -393,6 +579,68 @@
      }
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "A",
+     "B",
+     "C",
+     "F",
+     "O"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Los enchufes son mixtos (A/B/C/F/O); la mayoría de los “universales” admiten clavijas C finas de dos patas, pero las clavijas turcas F gruesas con toma de tierra a menudo no entran: lleve un adaptador universal."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "El agua del grifo no es potable; hay agua embotellada barata y máquinas de recarga por todas partes. El hielo suele ser de fábrica y seguro.",
+    "vaccines": [
+     "Vacunas rutinarias (triple vírica, tétanos)",
+     "Hepatitis A",
+     "Fiebre tifoidea",
+     "Rabia (zonas rurales o estancias largas)",
+     "Encefalitis japonesa (estancias rurales largas)",
+     "Certificado de fiebre amarilla solo si llega desde un país de riesgo"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "1669"
+   },
+   "tipping": {
+    "custom": "La propina no es obligatoria; los restaurantes y hoteles de categoría añaden un 10 % de servicio.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Es habitual dejar 50-100 THB tras un masaje y unas monedas en taxis y puestos callejeros."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA del 7 % (unos 5-6 % netos tras comisiones)",
+    "minSpend": "2.000 THB por tienda y día (mínimo 5.000 THB en total)",
+    "customsNote": "Pida el formulario P.P.10 en tiendas con el cartel “VAT Refund for Tourists”; muestre los artículos a la aduana del aeropuerto antes de facturar para el sello y cobre el reembolso tras el control de pasaportes."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.30 - $1",
+    "topCarriers": [
+     "AIS",
+     "TrueMove H (True – dtac)",
+     "NT (National Telecom)"
+    ],
+    "airportSimTrapWarning": "Las SIM turísticas de AIS y True en el aeropuerto tienen precio fijo y son fiables; no compre SIM sin registrar a vendedores no oficiales."
+   },
+   "touristScams": [
+    {
+     "title": "“Hoy el palacio está cerrado”",
+     "desc": "Cerca del Gran Palacio alguien dice que está cerrado y le manda en un tuk-tuk barato a una joyería o sastrería.",
+     "tip": "Vaya usted mismo a la entrada; el horario oficial está en grandpalace.thai.net."
+    },
+    {
+     "title": "Estafa de daños en la moto de agua",
+     "desc": "En Phuket y Pattaya, al devolver la moto de agua, exigen grandes sumas por arañazos que ya existían.",
+     "tip": "Fotografíe y grabe la moto de agua antes de alquilarla y nunca deje el pasaporte como fianza."
+    }
+   ]
   }
  },
  "ru": {
@@ -492,6 +740,68 @@
      }
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "A",
+     "B",
+     "C",
+     "F",
+     "O"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Розетки смешанные (A/B/C/F/O); большинство «универсальных» принимают тонкие двухштырьковые вилки C, но толстые турецкие вилки F с заземлением часто не подходят — возьмите универсальный переходник."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Воду из-под крана пить нельзя; дешёвая бутилированная вода и автоматы для розлива есть повсюду. Лёд обычно фабричный и безопасный.",
+    "vaccines": [
+     "Плановые прививки (корь-краснуха-паротит, столбняк)",
+     "Гепатит A",
+     "Брюшной тиф",
+     "Бешенство (сельская местность или долгое пребывание)",
+     "Японский энцефалит (долгое пребывание в сельской местности)",
+     "Сертификат о прививке от жёлтой лихорадки — только при прибытии из страны риска"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "1669"
+   },
+   "tipping": {
+    "custom": "Чаевые не обязательны; дорогие рестораны и отели добавляют 10 % за обслуживание.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Принято оставлять 50-100 THB после массажа и мелочь в такси и уличных лотках."
+   },
+   "taxFree": {
+    "vatRefundPercent": "НДС 7 % (около 5-6 % чистыми после комиссии)",
+    "minSpend": "2 000 THB в одном магазине за день (всего не менее 5 000 THB)",
+    "customsNote": "В магазинах с табличкой «VAT Refund for Tourists» попросите форму P.P.10; до регистрации покажите покупки таможне аэропорта для штампа, деньги получите после паспортного контроля."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.30 - $1",
+    "topCarriers": [
+     "AIS",
+     "TrueMove H (True – dtac)",
+     "NT (National Telecom)"
+    ],
+    "airportSimTrapWarning": "Туристические SIM AIS и True в аэропорту продаются по фиксированной цене и надёжны; не покупайте незарегистрированные SIM у неофициальных продавцов."
+   },
+   "touristScams": [
+    {
+     "title": "«Дворец сегодня закрыт»",
+     "desc": "У Большого дворца вам говорят, что он закрыт, и отправляют на дешёвом тук-туке в ювелирный или портновский магазин.",
+     "tip": "Идите ко входу сами; официальные часы работы указаны на grandpalace.thai.net."
+    },
+    {
+     "title": "Развод с гидроциклом",
+     "desc": "На Пхукете и в Паттайе при возврате гидроцикла требуют крупную сумму за царапины, которые были до вас.",
+     "tip": "Сфотографируйте и снимите гидроцикл до аренды и никогда не оставляйте паспорт в залог."
+    }
+   ]
   }
  }
 }

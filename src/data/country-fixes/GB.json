@@ -248,6 +248,60 @@
      "mapsQuery": "Edinburgh Castle, Edinburgh, United Kingdom"
     }
    ]
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Üç dikdörtgen uçlu G tipi priz (çoğunda açma/kapama düğmesi var); Türk fişleri için adaptör gerekir. Banyolarda yalnızca tıraş makinesi prizi bulunur."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Musluk suyu ülke genelinde içilebilir; restoran ve barlarda ücretsiz musluk suyu (“tap water”) istenebilir.",
+    "vaccines": [
+     "Rutin aşılar (KKK, tetanoz)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "999"
+   },
+   "tipping": {
+    "custom": "Restoranlarda faturaya sıklıkla %10-12,5 “discretionary service charge” eklenir; eklenmemişse %10 bırakmak yaygındır.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Barlarda bahşiş beklenmez; taksilerde hesabı yuvarlamak yeterlidir. Servis bedeli isteğe bağlıdır, kaldırılmasını isteyebilirsiniz."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Yok (1 Ocak 2021’den beri turiste KDV iadesi yok)",
+    "minSpend": "—",
+    "customsNote": "Büyük Britanya’da mağazada KDV iadesi kaldırıldı; yalnızca mağazanın ürünü doğrudan yurt dışı adresine göndermesi halinde KDV’siz satın alma mümkündür."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1 - $2",
+    "topCarriers": [
+     "EE",
+     "O2",
+     "Vodafone",
+     "Three"
+    ],
+    "airportSimTrapWarning": "Havalimanı otomatları ve kioskları pahalıdır; süpermarket ve mağazalarda satılan giffgaff, Lebara veya Three/EE hatları ya da e-SIM daha ucuzdur. AB roaming geçerli değildir."
+   },
+   "touristScams": [
+    {
+     "title": "Westminster Köprüsü bardak oyunu",
+     "desc": "Köprü üzerinde top-bardak oyunu oynatanlar ve “kazanan” izleyiciler aynı ekiptir, bu sırada yankesicilik yapılır.",
+     "tip": "Asla oynamayın ve kalabalığın içinde durmayın."
+    },
+    {
+     "title": "Lisanssız minicab",
+     "desc": "Gece kulüplerinin ve havalimanlarının önünde müşteri arayan ruhsatsız araçlar hem pahalı hem güvensizdir.",
+     "tip": "Yalnızca siyah taksi (black cab) veya uygulamayla önceden çağrılan araç kullanın."
+    }
+   ]
   }
  },
  "en": {
@@ -497,6 +551,60 @@
       "Midges are common in the Highlands in summer; bring insect repellent and a rain jacket."
      ],
      "mapsQuery": "Edinburgh Castle, Edinburgh, United Kingdom"
+    }
+   ]
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Three-rectangular-pin type G sockets (most with an on/off switch); Turkish plugs need an adapter. Bathrooms only have shaver sockets."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Tap water is drinkable nationwide; you can ask for free tap water in restaurants and pubs.",
+    "vaccines": [
+     "Routine vaccines (MMR, tetanus)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "999"
+   },
+   "tipping": {
+    "custom": "Restaurants often add a 10-12.5% “discretionary service charge”; if not, leaving 10% is common.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Tips are not expected in pubs; rounding up is enough in taxis. The service charge is optional and you may ask for it to be removed."
+   },
+   "taxFree": {
+    "vatRefundPercent": "None (no tourist VAT refund since 1 January 2021)",
+    "minSpend": "—",
+    "customsNote": "In-store VAT refunds were abolished in Great Britain; VAT-free purchase is only possible if the shop ships the goods directly to an address abroad."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1 - $2",
+    "topCarriers": [
+     "EE",
+     "O2",
+     "Vodafone",
+     "Three"
+    ],
+    "airportSimTrapWarning": "Airport vending machines and kiosks are expensive; giffgaff, Lebara or Three/EE SIMs from supermarkets and shops, or an eSIM, are cheaper. EU roaming does not apply."
+   },
+   "touristScams": [
+    {
+     "title": "Westminster Bridge shell game",
+     "desc": "The people running the cup-and-ball game on the bridge and the “winning” onlookers are one team, and pickpockets work the crowd.",
+     "tip": "Never play and do not stand in the crowd."
+    },
+    {
+     "title": "Unlicensed minicabs",
+     "desc": "Unlicensed cars touting for passengers outside clubs and airports are both expensive and unsafe.",
+     "tip": "Only use black cabs or cars pre-booked through an app."
     }
    ]
   }
@@ -750,6 +858,60 @@
      "mapsQuery": "Edinburgh Castle, Edinburgh, United Kingdom"
     }
    ]
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Steckdosen Typ G mit drei rechteckigen Stiften (meist mit Schalter); türkische Stecker brauchen einen Adapter. In Badezimmern gibt es nur Rasierersteckdosen."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Leitungswasser ist landesweit trinkbar; in Restaurants und Pubs kann man kostenloses „tap water“ verlangen.",
+    "vaccines": [
+     "Standardimpfungen (MMR, Tetanus)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "999"
+   },
+   "tipping": {
+    "custom": "Restaurants schlagen oft 10-12,5 % „discretionary service charge“ auf; sonst sind 10 % üblich.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "In Pubs wird kein Trinkgeld erwartet; im Taxi reicht Aufrunden. Die Servicegebühr ist freiwillig und kann gestrichen werden."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Keine (seit 1. Januar 2021 keine Mehrwertsteuererstattung für Touristen)",
+    "minSpend": "—",
+    "customsNote": "In Großbritannien wurde die Erstattung im Laden abgeschafft; steuerfrei kaufen kann man nur, wenn das Geschäft die Ware direkt an eine Adresse im Ausland schickt."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1 - $2",
+    "topCarriers": [
+     "EE",
+     "O2",
+     "Vodafone",
+     "Three"
+    ],
+    "airportSimTrapWarning": "Automaten und Kioske am Flughafen sind teuer; SIMs von giffgaff, Lebara oder Three/EE aus Supermärkten und Läden oder eine eSIM sind günstiger. EU-Roaming gilt nicht."
+   },
+   "touristScams": [
+    {
+     "title": "Hütchenspiel auf der Westminster Bridge",
+     "desc": "Die Spieler des Hütchenspiels auf der Brücke und die „gewinnenden“ Zuschauer sind ein Team, Taschendiebe arbeiten in der Menge.",
+     "tip": "Nie mitspielen und nicht in der Menge stehen bleiben."
+    },
+    {
+     "title": "Unlizenzierte Minicabs",
+     "desc": "Ohne Lizenz vor Clubs und Flughäfen werbende Wagen sind teuer und unsicher.",
+     "tip": "Nur Black Cabs oder per App vorbestellte Wagen nutzen."
+    }
+   ]
   }
  },
  "es": {
@@ -1001,6 +1163,60 @@
      "mapsQuery": "Edinburgh Castle, Edinburgh, United Kingdom"
     }
    ]
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Enchufes tipo G de tres clavijas rectangulares (la mayoría con interruptor); los enchufes turcos necesitan adaptador. En los baños solo hay tomas para afeitadoras."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "El agua del grifo es potable en todo el país; en restaurantes y pubs puede pedir “tap water” gratis.",
+    "vaccines": [
+     "Vacunas rutinarias (triple vírica, tétanos)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "999"
+   },
+   "tipping": {
+    "custom": "Los restaurantes suelen añadir un 10-12,5 % de “discretionary service charge”; si no, es habitual dejar un 10 %.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "En los pubs no se espera propina; en taxis basta con redondear. El cargo por servicio es opcional y puede pedir que lo quiten."
+   },
+   "taxFree": {
+    "vatRefundPercent": "No hay (sin devolución del IVA a turistas desde el 1 de enero de 2021)",
+    "minSpend": "—",
+    "customsNote": "En Gran Bretaña se suprimió la devolución del IVA en tienda; solo se puede comprar sin IVA si la tienda envía el artículo directamente a una dirección en el extranjero."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1 - $2",
+    "topCarriers": [
+     "EE",
+     "O2",
+     "Vodafone",
+     "Three"
+    ],
+    "airportSimTrapWarning": "Las máquinas y quioscos del aeropuerto son caros; las SIM de giffgaff, Lebara o Three/EE de supermercados y tiendas, o una eSIM, son más baratas. El roaming UE no aplica."
+   },
+   "touristScams": [
+    {
+     "title": "Trile en el puente de Westminster",
+     "desc": "Quienes juegan a los cubiletes en el puente y los espectadores que “ganan” son el mismo equipo, y hay carteristas entre el público.",
+     "tip": "No juegue nunca y no se quede entre la gente."
+    },
+    {
+     "title": "Minicabs sin licencia",
+     "desc": "Los coches sin licencia que buscan clientes frente a discotecas y aeropuertos son caros e inseguros.",
+     "tip": "Use solo black cabs o coches reservados por app."
+    }
+   ]
   }
  },
  "ru": {
@@ -1250,6 +1466,60 @@
       "Летом в Хайленде много мошки (midges); возьмите репеллент и дождевик."
      ],
      "mapsQuery": "Edinburgh Castle, Edinburgh, United Kingdom"
+    }
+   ]
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Розетки типа G с тремя прямоугольными штырями (обычно с выключателем); для турецких вилок нужен переходник. В ванных есть только розетки для бритв."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Водопроводную воду можно пить по всей стране; в ресторанах и пабах можно бесплатно попросить «tap water».",
+    "vaccines": [
+     "Плановые прививки (корь-краснуха-паротит, столбняк)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "999"
+   },
+   "tipping": {
+    "custom": "Рестораны часто добавляют 10-12,5 % «discretionary service charge»; если нет, принято оставлять 10 %.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "В пабах чаевых не ждут; в такси достаточно округлить. Плата за обслуживание добровольная, её можно попросить убрать."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Нет (с 1 января 2021 года возврата НДС туристам нет)",
+    "minSpend": "—",
+    "customsNote": "В Великобритании возврат НДС в магазинах отменён; купить без НДС можно только при доставке товара магазином напрямую на зарубежный адрес."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1 - $2",
+    "topCarriers": [
+     "EE",
+     "O2",
+     "Vodafone",
+     "Three"
+    ],
+    "airportSimTrapWarning": "Автоматы и киоски в аэропорту дорогие; SIM giffgaff, Lebara или Three/EE из супермаркетов и магазинов либо eSIM дешевле. Роуминг ЕС не действует."
+   },
+   "touristScams": [
+    {
+     "title": "Напёрстки на Вестминстерском мосту",
+     "desc": "Игроки в напёрстки на мосту и «выигрывающие» зрители — одна команда, в толпе работают карманники.",
+     "tip": "Никогда не играйте и не стойте в толпе."
+    },
+    {
+     "title": "Нелицензированные миникэбы",
+     "desc": "Машины без лицензии, зазывающие пассажиров у клубов и аэропортов, дорогие и небезопасные.",
+     "tip": "Пользуйтесь только чёрными кэбами или машинами, заказанными через приложение."
     }
    ]
   }

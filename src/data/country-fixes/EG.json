@@ -98,6 +98,65 @@
      }
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "C/F tipi iki yuvarlak uçlu priz; Türkiye ile aynı, adaptör gerekmez. Bazı eski otellerde gevşek prizler olabilir."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Musluk suyu içilmez; dişlerinizi bile şişe suyla fırçalamanız, buzlu içeceklerden ve çiğ salatalardan kaçınmanız önerilir.",
+    "vaccines": [
+     "Rutin aşılar (KKK, tetanoz)",
+     "Hepatit A",
+     "Tifo",
+     "Kuduz (kırsal bölge veya uzun kalış)",
+     "Sarıhumma sertifikası yalnızca sarıhumma riskli bir ülkeden geliyorsanız istenir"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "123"
+   },
+   "tipping": {
+    "custom": "Bahşiş (“bakşiş”) her yerde beklenir; restoranlar faturaya %12 servis + %14 KDV ekler, garsona ayrıca %5-10 bırakılır.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Rehber, şoför, otel görevlisi ve tuvalet görevlileri için yanınızda bozuk 5-20 EGP’lik banknot bulundurun."
+   },
+   "taxFree": {
+    "vatRefundPercent": "%14 KDV (sınırlı uygulama)",
+    "minSpend": "1.500 EGP",
+    "customsNote": "“VAT Refund” etiketli mağazalarda fiş başına en az 1.500 EGP alışverişte havalimanındaki iade ofisine başvurulabilir; sistem az mağazada geçerlidir, iadeye güvenerek alışveriş yapmayın."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.30 - $1",
+    "topCarriers": [
+     "Vodafone Egypt",
+     "Orange Egypt",
+     "e& (Etisalat Misr)",
+     "WE"
+    ],
+    "airportSimTrapWarning": "Kahire Havalimanı’ndaki SIM kioskları turist paketlerini şehirdekinin 2-3 katına satar; hat pasaportla kayıt edilir, mümkünse şehirdeki resmi Vodafone/Orange mağazasından alın."
+   },
+   "touristScams": [
+    {
+     "title": "Gize deve/at tuzağı",
+     "desc": "Önce “bedava” veya ucuz denen deve/at turunun sonunda inmek için yüksek ücret istenir.",
+     "tip": "Toplam fiyatı ve para birimini (EGP/USD) baştan net konuşun; ödemeyi turun sonunda yapın."
+    },
+    {
+     "title": "Komisyonlu dükkân turu",
+     "desc": "“Müze”, “devlet okulu” veya “bugün kapalı” bahanesiyle papirüs, parfüm ve halı dükkânlarına götürülürsünüz.",
+     "tip": "Yardım teklif eden yabancıları kibarca reddedin; gişe ve saat bilgisini resmi kaynaktan kontrol edin."
+    }
+   ]
   }
  },
  "en": {
@@ -199,6 +258,65 @@
      }
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Two-round-pin C/F sockets, the same as in Turkey; no adapter needed. Some older hotels have loose sockets."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Tap water is not drinkable; brushing your teeth with bottled water and avoiding ice and raw salads is recommended.",
+    "vaccines": [
+     "Routine vaccines (MMR, tetanus)",
+     "Hepatitis A",
+     "Typhoid",
+     "Rabies (rural areas or long stays)",
+     "Yellow fever certificate only if arriving from a yellow-fever-risk country"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "123"
+   },
+   "tipping": {
+    "custom": "Tipping (“baksheesh”) is expected everywhere; restaurants add 12% service plus 14% VAT, and another 5-10% is left for the waiter.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Carry small 5-20 EGP notes for guides, drivers, hotel staff and toilet attendants."
+   },
+   "taxFree": {
+    "vatRefundPercent": "14% VAT (limited scheme)",
+    "minSpend": "1.500 EGP",
+    "customsNote": "At shops with a “VAT Refund” sign you can claim at the airport refund office for purchases of at least 1,500 EGP per receipt; few shops take part, so do not count on it."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.30 - $1",
+    "topCarriers": [
+     "Vodafone Egypt",
+     "Orange Egypt",
+     "e& (Etisalat Misr)",
+     "WE"
+    ],
+    "airportSimTrapWarning": "SIM kiosks at Cairo Airport sell tourist packs at 2-3 times city prices; SIMs are registered with your passport, so buy at an official Vodafone or Orange shop in town if possible."
+   },
+   "touristScams": [
+    {
+     "title": "Giza camel and horse trap",
+     "desc": "A ride sold as “free” or cheap ends with a high fee to let you get off.",
+     "tip": "Agree the total price and currency (EGP or USD) up front and pay at the end."
+    },
+    {
+     "title": "Commission shop tours",
+     "desc": "With excuses like “museum”, “government school” or “closed today” you are steered into papyrus, perfume and carpet shops.",
+     "tip": "Politely refuse strangers offering help and check opening hours from official sources."
+    }
+   ]
   }
  },
  "de": {
@@ -300,6 +418,65 @@
      }
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Steckdosen Typ C/F mit zwei runden Stiften, wie in der Türkei; kein Adapter nötig. In älteren Hotels sind Steckdosen teils locker."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Leitungswasser ist nicht trinkbar; auch zum Zähneputzen Flaschenwasser nutzen und Eis sowie rohe Salate meiden.",
+    "vaccines": [
+     "Standardimpfungen (MMR, Tetanus)",
+     "Hepatitis A",
+     "Typhus",
+     "Tollwut (ländliche Gebiete oder lange Aufenthalte)",
+     "Gelbfieber-Nachweis nur bei Einreise aus einem Gelbfieber-Risikoland"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "123"
+   },
+   "tipping": {
+    "custom": "Trinkgeld („Bakschisch“) wird überall erwartet; Restaurants schlagen 12 % Service plus 14 % MwSt. auf, dazu gibt man dem Kellner 5-10 %.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Kleine Scheine zu 5-20 EGP für Guides, Fahrer, Hotelpersonal und Toilettenpersonal bereithalten."
+   },
+   "taxFree": {
+    "vatRefundPercent": "14 % MwSt. (eingeschränktes System)",
+    "minSpend": "1.500 EGP",
+    "customsNote": "In Geschäften mit „VAT Refund“-Schild kann man ab 1.500 EGP pro Beleg am Erstattungsschalter des Flughafens einen Antrag stellen; nur wenige Geschäfte machen mit."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.30 - $1",
+    "topCarriers": [
+     "Vodafone Egypt",
+     "Orange Egypt",
+     "e& (Etisalat Misr)",
+     "WE"
+    ],
+    "airportSimTrapWarning": "SIM-Stände am Flughafen Kairo verkaufen Touristenpakete zum 2-3-fachen Stadtpreis; die SIM wird auf den Pass registriert, besser im offiziellen Vodafone- oder Orange-Shop in der Stadt kaufen."
+   },
+   "touristScams": [
+    {
+     "title": "Kamel- und Pferdefalle in Gizeh",
+     "desc": "Ein als „gratis“ oder billig verkaufter Ritt endet mit hoher Gebühr fürs Absteigen.",
+     "tip": "Gesamtpreis und Währung (EGP oder USD) vorher vereinbaren und am Ende zahlen."
+    },
+    {
+     "title": "Provisions-Ladentouren",
+     "desc": "Mit Ausreden wie „Museum“, „staatliche Schule“ oder „heute geschlossen“ werden Sie in Papyrus-, Parfüm- und Teppichläden gelotst.",
+     "tip": "Hilfsangebote Fremder höflich ablehnen und Öffnungszeiten offiziell prüfen."
+    }
+   ]
   }
  },
  "es": {
@@ -401,6 +578,65 @@
      }
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Enchufes C/F de dos clavijas redondas, iguales que en Turquía; no hace falta adaptador. En hoteles antiguos pueden estar flojos."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "El agua del grifo no es potable; se recomienda cepillarse los dientes con agua embotellada y evitar el hielo y las ensaladas crudas.",
+    "vaccines": [
+     "Vacunas rutinarias (triple vírica, tétanos)",
+     "Hepatitis A",
+     "Fiebre tifoidea",
+     "Rabia (zonas rurales o estancias largas)",
+     "Certificado de fiebre amarilla solo si llega desde un país de riesgo"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "123"
+   },
+   "tipping": {
+    "custom": "La propina (“baksheesh”) se espera en todas partes; los restaurantes añaden 12 % de servicio más 14 % de IVA, y se deja otro 5-10 % al camarero.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Lleve billetes pequeños de 5-20 EGP para guías, conductores, personal del hotel y de los aseos."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA del 14 % (sistema limitado)",
+    "minSpend": "1.500 EGP",
+    "customsNote": "En tiendas con el cartel “VAT Refund” se puede reclamar en la oficina del aeropuerto por compras de al menos 1.500 EGP por ticket; participan pocas tiendas, no cuente con ello."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.30 - $1",
+    "topCarriers": [
+     "Vodafone Egypt",
+     "Orange Egypt",
+     "e& (Etisalat Misr)",
+     "WE"
+    ],
+    "airportSimTrapWarning": "Los quioscos de SIM del aeropuerto de El Cairo venden paquetes turísticos al doble o triple del precio en la ciudad; la SIM se registra con el pasaporte, mejor compre en una tienda oficial Vodafone u Orange."
+   },
+   "touristScams": [
+    {
+     "title": "Trampa del camello en Guiza",
+     "desc": "Un paseo vendido como “gratis” o barato termina con un cobro alto para dejarle bajar.",
+     "tip": "Acuerde precio total y moneda (EGP o USD) al principio y pague al final."
+    },
+    {
+     "title": "Visitas a tiendas con comisión",
+     "desc": "Con excusas como “museo”, “escuela del gobierno” o “hoy está cerrado” le llevan a tiendas de papiro, perfume y alfombras.",
+     "tip": "Rechace con educación la ayuda de desconocidos y compruebe horarios en fuentes oficiales."
+    }
+   ]
   }
  },
  "ru": {
@@ -502,6 +738,65 @@
      }
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Розетки C/F с двумя круглыми штырями, как в Турции; переходник не нужен. В старых отелях розетки бывают разболтанными."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Воду из-под крана пить нельзя; рекомендуется чистить зубы бутилированной водой и избегать льда и сырых салатов.",
+    "vaccines": [
+     "Плановые прививки (корь-краснуха-паротит, столбняк)",
+     "Гепатит A",
+     "Брюшной тиф",
+     "Бешенство (сельская местность или долгое пребывание)",
+     "Сертификат о прививке от жёлтой лихорадки — только при прибытии из страны риска"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "123"
+   },
+   "tipping": {
+    "custom": "Чаевые («бакшиш») ждут везде; рестораны добавляют 12 % за обслуживание и 14 % НДС, официанту оставляют ещё 5-10 %.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Держите мелкие купюры по 5-20 EGP для гидов, водителей, персонала отеля и туалетов."
+   },
+   "taxFree": {
+    "vatRefundPercent": "НДС 14 % (ограниченная система)",
+    "minSpend": "1.500 EGP",
+    "customsNote": "В магазинах с табличкой «VAT Refund» при покупке от 1 500 EGP по чеку можно обратиться в офис возврата в аэропорту; участвует мало магазинов, не рассчитывайте на возврат."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.30 - $1",
+    "topCarriers": [
+     "Vodafone Egypt",
+     "Orange Egypt",
+     "e& (Etisalat Misr)",
+     "WE"
+    ],
+    "airportSimTrapWarning": "Киоски SIM в аэропорту Каира продают туристические пакеты в 2-3 раза дороже, чем в городе; SIM регистрируется по паспорту, лучше купить в официальном салоне Vodafone или Orange."
+   },
+   "touristScams": [
+    {
+     "title": "Верблюд в Гизе",
+     "desc": "Поездка, проданная как «бесплатная» или дешёвая, заканчивается крупной платой за то, чтобы слезть.",
+     "tip": "Заранее договоритесь об общей цене и валюте (EGP или USD) и платите в конце."
+    },
+    {
+     "title": "Магазины с комиссией",
+     "desc": "Под предлогом «музея», «государственной школы» или «сегодня закрыто» вас ведут в лавки папируса, духов и ковров.",
+     "tip": "Вежливо отказывайтесь от помощи незнакомцев и проверяйте часы работы по официальным источникам."
+    }
+   ]
   }
  }
 }

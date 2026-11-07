@@ -1,0 +1,1187 @@
+{
+ "tr": {
+  "insights": {
+   "currency": "İzlanda Kronu (ISK)",
+   "bestMonths": "Haziran – Ağustos (gece yarısı güneşi, yayla yolları açık); Eylül – Mart kuzey ışıkları için (kısa ve fırtınalı günler)",
+   "safety": {
+    "safetyScore": 85,
+    "crimeRateSummary": "Dünyanın en güvenli ülkelerinden biridir; suç oranı çok düşüktür. Asıl tehlikeler doğadan gelir: ani fırtınalar, buzlu yollar, Reynisfjara’daki sinsi dalgalar ve Reykjanes yarımadasındaki volkanik faaliyet.",
+    "commonScams": [
+     "Kiralık araç iadesinde önceden var olan çizik ve taş hasarları için yüksek faturalar",
+     "Sertifikasız ‘buz mağarası’ veya buzul turları satan kayıt dışı rehberler",
+     "Akaryakıt istasyonlarında PIN’siz kartın çalışmaması; ön provizyon tutarının bloke kalması"
+    ],
+    "safeTravelTips": [
+     "Reynisfjara’da asla denize sırtınızı dönmeyin ve uyarı ışıklarına uyun.",
+     "Her gün safetravel.is, vedur.is ve umferdin.is (yol durumu) sitelerini kontrol edin.",
+     "Araç teslim alırken tüm hasarları fotoğraflayın ve çakıl/kum-kül sigortası alın."
+    ],
+    "emergencyNumbers": {
+     "police": "112",
+     "ambulance": "112",
+     "general": "112"
+    },
+    "safetyLevel": "Olağanüstü Güvenli",
+    "badgeColor": "bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Yerleşim yerleri ve Çevre Yolu’nda iyi 4G/5G; yaylalarda ve fiyortlarda kesintiler olur",
+    "costPerGbUsd": "~1.50 - 4 $",
+    "esimAvailability": "Mükemmel",
+    "bestCarriers": [
+     "Síminn",
+     "Vodafone Iceland",
+     "Nova"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Sınırlı (tren yok; Reykjavik’te Strætó otobüsleri, kırsalda seyrek hatlar; en iyisi kiralık araç)",
+    "costLevel": "Çok pahalı",
+    "singleTicketUsd": "4.50 - 5.50 $",
+    "dailyPassUsd": "17 - 22 $",
+    "popularRideApps": [
+     "Klappið (Strætó)",
+     "Hopp",
+     "Hreyfill",
+     "Flybus / Airport Direct"
+    ],
+    "taxiAdvice": "İzlanda’da Uber ve Bolt yoktur. Reykjavik’te taksi için Hreyfill veya Hopp uygulamasını kullanın; Keflavík Havalimanı’ndan şehre (~50 km) Flybus veya Airport Direct otobüsü taksiden çok daha ucuzdur."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "90 - 140 $",
+    "dailyBudgetMidrangeUsd": "230 - 380 $",
+    "budgetMealUsd": "22 - 35 $",
+    "coffeeUsd": "5 - 7 $",
+    "waterBottleUsd": "2 - 3.50 $",
+    "hostelDormUsd": "40 - 70 $",
+    "hotel3StarUsd": "180 - 320 $",
+    "flightCostIndex": "Yüksek",
+    "flightTip": "Türkiye’den direkt uçuş yoktur; Londra, Kopenhag, Amsterdam veya Oslo aktarmalı Icelandair, easyJet ve Wizz Air seçenekleri en yaygın yoldur. Kış dışı sezonda erken alın."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Yüzme havuzlarına ve kaplıcalara girmeden önce soyunma odasında mayosuz duş almak zorunludur.",
+     "İzlandalılar birbirine ilk adla hitap eder; soyadı yerine baba adı (-son/-dóttir) kullanılır.",
+     "Arazide işaretli yollardan çıkmak ve yol dışı sürüş yasaktır; yosun örtüsü onlarca yılda iyileşir.",
+     "Bahşiş beklenmez; hizmet fiyata dahildir."
+    ],
+    "festivals": [
+     "Þorrablót (Ocak–Şubat, geleneksel kış ziyafeti)",
+     "Ulusal Gün (17 Haziran)",
+     "Menningarnótt – Reykjavik Kültür Gecesi (Ağustos) ve Iceland Airwaves müzik festivali (Kasım)"
+    ],
+    "lifestyle": "Isıtmalı açık havuzlarda (sundlaug) sohbet, doğayla iç içe yaşam, güçlü okuma ve müzik kültürü; ‘Þetta reddast’ (bir şekilde hallolur) yaşam felsefesi."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Altın Çember: Þingvellir (UNESCO), Geysir ve Gullfoss",
+     "Seljalandsfoss ve Skógafoss şelaleleri",
+     "Reynisfjara siyah kum plajı ve Vík",
+     "Jökulsárlón buzul lagünü ve Elmas Plajı",
+     "Snæfellsnes yarımadası ve Kirkjufell",
+     "Mývatn gölü ve Húsavík’te balina izleme"
+    ],
+    "bestSeasons": "Haziran – Ağustos (gece yarısı güneşi, yayla yolları açık); Eylül – Mart kuzey ışıkları için (kısa ve fırtınalı günler)",
+    "travelStyleTip": "Çevre Yolu’nu (Route 1) tamamlamak için en az 7–10 gün ayırın. Kışın 4x4 araç ve kar lastiği şarttır; F-yollarına yalnızca yazın ve 4x4 ile girilir."
+   },
+   "religion": {
+    "primaryReligions": "İzlanda Kilisesi (Evanjelik Lüteriyen) üyeleri ~%56; Katolik ~%4; Ásatrú (eski İskandinav inancı) ~%1,5; artan oranda dinsiz ve bağımsız.",
+    "respectNorms": "Kiliseler çoğunlukla gezilebilir; ayin sırasında sessiz olun. Doğa ve kutsal kabul edilen alanlarda taş dizip ‘kule’ yapmayın.",
+    "sacredSites": [
+     "Hallgrímskirkja (Reykjavik)",
+     "Skálholt Katedrali",
+     "Akureyrarkirkja (Akureyri)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "İzlandaca (Eski İskandinavcaya en yakın yaşayan dil).",
+    "englishProficiency": "Mükemmel; neredeyse herkes akıcı İngilizce konuşur.",
+    "phrases": [
+     {
+      "phrase": "Halló / Góðan daginn",
+      "meaning": "Merhaba / İyi günler",
+      "translation": "Merhaba / İyi günler",
+      "pronunciation": "HAH-loh / GOH-than DAI-in"
+     },
+     {
+      "phrase": "Takk fyrir",
+      "meaning": "Teşekkürler",
+      "translation": "Teşekkürler",
+      "pronunciation": "tahk FIR-ir"
+     },
+     {
+      "phrase": "Vinsamlegast",
+      "meaning": "Lütfen",
+      "translation": "Lütfen",
+      "pronunciation": "VIN-sam-leh-gast"
+     },
+     {
+      "phrase": "Hvað kostar þetta?",
+      "meaning": "Bu ne kadar?",
+      "translation": "Bu ne kadar?",
+      "pronunciation": "kvath KOS-tar THET-ta"
+     },
+     {
+      "phrase": "Skál!",
+      "meaning": "Şerefe!",
+      "translation": "Şerefe!",
+      "pronunciation": "skowl"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "874’te Ingólfur Arnarson’un Reykjavik’e yerleşmesiyle Norveçli ve Kelt kökenli göçmenler adaya geldi. 930’da Þingvellir’de dünyanın hâlâ işleyen en eski parlamentolarından Alþingi kuruldu. Ada 1262’de Norveç, ardından Danimarka yönetimine girdi; 1918’de egemenlik kazandı ve 1944’te cumhuriyet oldu.",
+    "milestones": [
+     "874: Ingólfur Arnarson’un Reykjavik’e yerleşmesi",
+     "930: Þingvellir’de Alþingi’nin kuruluşu",
+     "1262: Norveç tacına bağlanma",
+     "1944: Cumhuriyetin ilanı (17 Haziran)"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Kjötsúpa (kuzu etli sebze çorbası)",
+     "Plokkfiskur (patatesli morina/mezgit yahnisi)",
+     "Hangikjöt (füme kuzu eti, Noel yemeği)"
+    ],
+    "traditionalDrinks": [
+     "Brennivín (kimyonlu sert içki)",
+     "Malt og Appelsín (Noel’de malt ve portakal karışımı)",
+     "Einstök ve Gull biraları"
+    ],
+    "streetFoodAndDesserts": [
+     "Pylsur (kuzu etli sosisli, ‘eina með öllu’ = her şeyiyle)",
+     "Skyr (yoğun süzme süt ürünü)",
+     "Kleinur (bükme kızarmış hamur tatlısı)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Björk (müzisyen)",
+     "Halldór Laxness (Nobel Edebiyat Ödülü, 1955)",
+     "Vigdís Finnbogadóttir (dünyanın halk oyuyla seçilen ilk kadın devlet başkanı)"
+    ],
+    "strongSectors": [
+     "Balıkçılık ve deniz ürünleri ihracatı",
+     "Jeotermal/hidroelektrik enerji ve alüminyum",
+     "Doğa ve macera turizmi"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Neredeyse tamamen nakitsiz bir ülke; kart ve mobil ödeme her yerde geçer. Akaryakıt pompaları için PIN’li kart gerekir.",
+    "tippingCulture": "Bahşiş beklenmez; servis fiyata dahildir. Olağanüstü bir hizmette küçük bir bahşiş yine de hoş karşılanır.",
+    "economicPillars": "Turizm, balıkçılık, alüminyum izabesi (ucuz yenilenebilir enerji sayesinde) ve yaratıcı/teknoloji sektörleri."
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Türkiye’deki ile aynı iki yuvarlak pimli (C/F) prizler; adaptör gerekmez."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Soğuk musluk suyu dünyanın en temizlerindendir; şişe su almayın. Sıcak su jeotermal kaynaklıdır ve kükürt kokabilir, içmek için soğuk suyu kullanın.",
+    "vaccines": [
+     "Rutin aşılar (tetanos, difteri, kızamık)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "112"
+   },
+   "tipping": {
+    "custom": "Bahşiş geleneği yoktur; hizmet fiyata dahildir.",
+    "standardPercent": 0,
+    "rule": "optional",
+    "note": "Tur rehberlerine veya çok iyi bir hizmete küçük bir bahşiş bırakmak serbesttir ama beklenmez."
+   },
+   "taxFree": {
+    "vatRefundPercent": "KDV %24; iade fiyatın ~%14’üne kadar",
+    "minSpend": "Fiş başına en az 6.000 ISK",
+    "customsNote": "İade ülkeden çıkarken Keflavík Havalimanı’nda yapılır; tutar yüksekse ürünleri bavula vermeden önce gümrüğe gösterin."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.50 - $4.00",
+    "topCarriers": [
+     "Síminn",
+     "Vodafone Iceland",
+     "Nova"
+    ],
+    "airportSimTrapWarning": "Türk hatlarıyla dolaşım çok pahalıdır. Keflavík’teki 10-11 marketinde turist SIM’leri satılır ama yola çıkmadan alınan eSIM genellikle daha ucuzdur; yaylada kapsama alanı dışında kalabileceğinizi unutmayın."
+   },
+   "touristScams": [
+    {
+     "title": "Kiralık araç hasar faturası",
+     "desc": "İadede küçük taş çizikleri veya rüzgârın kapıya verdiği hasar için yüksek ücret talep edilebilir.",
+     "tip": "Teslimde aracı her açıdan video çekin; çakıl (GP) ve kum-kül (SAAP) sigortası alın, kapıyı rüzgârda iki elle açın."
+    },
+    {
+     "title": "Sertifikasız buzul ve buz mağarası turları",
+     "desc": "Sosyal medyada ucuz fiyatla satılan bazı turlar yetkisiz rehberlerle yapılır ve tehlikelidir.",
+     "tip": "İzlanda Turizm Kurumu lisanslı ve dağ rehberliği sertifikalı (AIMG) şirketleri seçin."
+    },
+    {
+     "title": "Benzinlikte bloke provizyon",
+     "desc": "Pompada kart ön provizyon olarak yüksek tutar bloke eder; iadesi günler sürebilir.",
+     "tip": "N1, Olís veya Orkan istasyonlarının ön ödemeli yakıt kartlarını kullanın ya da kasadan ödeyin."
+    }
+   ]
+  }
+ },
+ "en": {
+  "insights": {
+   "currency": "Icelandic Króna (ISK)",
+   "bestMonths": "June – August (midnight sun, highland roads open); September – March for the northern lights (short, stormy days)",
+   "safety": {
+    "safetyScore": 85,
+    "crimeRateSummary": "One of the safest countries in the world with very low crime. The real dangers are natural: sudden storms, icy roads, sneaker waves at Reynisfjara and volcanic activity on the Reykjanes peninsula.",
+    "commonScams": [
+     "High bills for pre-existing scratches and gravel damage when returning a rental car",
+     "Unlicensed guides selling uncertified ice-cave or glacier tours",
+     "Cards without a PIN not working at fuel pumps and pre-authorisation holds staying blocked"
+    ],
+    "safeTravelTips": [
+     "Never turn your back on the sea at Reynisfjara and obey the warning lights.",
+     "Check safetravel.is, vedur.is and umferdin.is (road conditions) every day.",
+     "Photograph all damage when picking up a car and take gravel and sand-and-ash cover."
+    ],
+    "emergencyNumbers": {
+     "police": "112",
+     "ambulance": "112",
+     "general": "112"
+    },
+    "safetyLevel": "Exceptional Safety",
+    "badgeColor": "bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Good 4G/5G in towns and along the Ring Road; gaps in the highlands and remote fjords",
+    "costPerGbUsd": "~1.50 - 4 $",
+    "esimAvailability": "Excellent",
+    "bestCarriers": [
+     "Síminn",
+     "Vodafone Iceland",
+     "Nova"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Limited (no trains; Strætó buses in Reykjavík, sparse rural lines; a rental car is best)",
+    "costLevel": "Very expensive",
+    "singleTicketUsd": "4.50 - 5.50 $",
+    "dailyPassUsd": "17 - 22 $",
+    "popularRideApps": [
+     "Klappið (Strætó)",
+     "Hopp",
+     "Hreyfill",
+     "Flybus / Airport Direct"
+    ],
+    "taxiAdvice": "There is no Uber or Bolt in Iceland. In Reykjavík use Hreyfill or the Hopp app for taxis; from Keflavík Airport to the city (~50 km) the Flybus or Airport Direct coach is far cheaper than a taxi."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "90 - 140 $",
+    "dailyBudgetMidrangeUsd": "230 - 380 $",
+    "budgetMealUsd": "22 - 35 $",
+    "coffeeUsd": "5 - 7 $",
+    "waterBottleUsd": "2 - 3.50 $",
+    "hostelDormUsd": "40 - 70 $",
+    "hotel3StarUsd": "180 - 320 $",
+    "flightCostIndex": "High",
+    "flightTip": "There are no direct flights from Turkey; connections via London, Copenhagen, Amsterdam or Oslo on Icelandair, easyJet or Wizz Air are the usual route. Book early outside winter."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Showering without a swimsuit in the changing room before entering pools and lagoons is mandatory.",
+     "Icelanders address each other by first name; patronymics (-son/-dóttir) replace surnames.",
+     "Leaving marked paths and off-road driving are banned; moss takes decades to recover.",
+     "Tipping is not expected; service is included."
+    ],
+    "festivals": [
+     "Þorrablót (January–February, traditional midwinter feast)",
+     "National Day (17 June)",
+     "Menningarnótt – Reykjavík Culture Night (August) and Iceland Airwaves music festival (November)"
+    ],
+    "lifestyle": "Chatting in heated outdoor pools (sundlaug), life close to nature, a strong reading and music culture, and the motto 'Þetta reddast' (it will all work out)."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Golden Circle: Þingvellir (UNESCO), Geysir & Gullfoss",
+     "Seljalandsfoss & Skógafoss waterfalls",
+     "Reynisfjara black-sand beach & Vík",
+     "Jökulsárlón glacier lagoon & Diamond Beach",
+     "Snæfellsnes peninsula & Kirkjufell",
+     "Lake Mývatn & whale watching in Húsavík"
+    ],
+    "bestSeasons": "June – August (midnight sun, highland roads open); September – March for the northern lights (short, stormy days)",
+    "travelStyleTip": "Allow at least 7–10 days to drive the full Ring Road (Route 1). In winter a 4x4 with winter tyres is essential; F-roads are only open in summer and only for 4x4s."
+   },
+   "religion": {
+    "primaryReligions": "Church of Iceland (Evangelical Lutheran) members ~56%; Catholic ~4%; Ásatrú (Old Norse faith) ~1.5%; a growing unaffiliated share.",
+    "respectNorms": "Most churches welcome visitors; keep quiet during services. Do not stack stones into cairns at natural and historic sites.",
+    "sacredSites": [
+     "Hallgrímskirkja (Reykjavík)",
+     "Skálholt Cathedral",
+     "Akureyrarkirkja (Akureyri)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Icelandic (the living language closest to Old Norse).",
+    "englishProficiency": "Excellent; almost everyone speaks fluent English.",
+    "phrases": [
+     {
+      "phrase": "Halló / Góðan daginn",
+      "meaning": "Hello / Good day",
+      "translation": "Hello / Good day",
+      "pronunciation": "HAH-loh / GOH-than DAI-in"
+     },
+     {
+      "phrase": "Takk fyrir",
+      "meaning": "Thank you",
+      "translation": "Thank you",
+      "pronunciation": "tahk FIR-ir"
+     },
+     {
+      "phrase": "Vinsamlegast",
+      "meaning": "Please",
+      "translation": "Please",
+      "pronunciation": "VIN-sam-leh-gast"
+     },
+     {
+      "phrase": "Hvað kostar þetta?",
+      "meaning": "How much is this?",
+      "translation": "How much is this?",
+      "pronunciation": "kvath KOS-tar THET-ta"
+     },
+     {
+      "phrase": "Skál!",
+      "meaning": "Cheers!",
+      "translation": "Cheers!",
+      "pronunciation": "skowl"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Settlement began in 874 when Ingólfur Arnarson made his home in Reykjavík, followed by Norse and Celtic migrants. In 930 the Alþingi, one of the oldest parliaments still in operation, was founded at Þingvellir. Iceland came under Norway in 1262 and later Denmark, gained sovereignty in 1918 and became a republic in 1944.",
+    "milestones": [
+     "874: Ingólfur Arnarson settles in Reykjavík",
+     "930: Founding of the Alþingi at Þingvellir",
+     "1262: Union with the Norwegian crown",
+     "1944: Republic proclaimed (17 June)"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Kjötsúpa (lamb and vegetable soup)",
+     "Plokkfiskur (fish and potato stew)",
+     "Hangikjöt (smoked lamb, a Christmas dish)"
+    ],
+    "traditionalDrinks": [
+     "Brennivín (caraway schnapps)",
+     "Malt og Appelsín (Christmas malt-and-orange soda mix)",
+     "Einstök and Gull beers"
+    ],
+    "streetFoodAndDesserts": [
+     "Pylsur (lamb hot dog, 'eina með öllu' = with everything)",
+     "Skyr (thick cultured dairy)",
+     "Kleinur (twisted fried doughnuts)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Björk (musician)",
+     "Halldór Laxness (Nobel Prize in Literature, 1955)",
+     "Vigdís Finnbogadóttir (world's first democratically elected female president)"
+    ],
+    "strongSectors": [
+     "Fisheries and seafood exports",
+     "Geothermal/hydro energy and aluminium",
+     "Nature and adventure tourism"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "An almost cashless country; cards and mobile payments work everywhere. Fuel pumps require a card with a PIN.",
+    "tippingCulture": "Tipping is not expected; service is included. A small tip for exceptional service is still welcome.",
+    "economicPillars": "Tourism, fisheries, aluminium smelting (thanks to cheap renewable energy) and creative and tech industries."
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Same two-round-pin (C/F) sockets as in Turkey; no adapter needed."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Cold tap water is among the purest in the world; don't buy bottled water. Hot water is geothermal and may smell of sulphur, so drink the cold water.",
+    "vaccines": [
+     "Routine vaccinations (tetanus, diphtheria, measles)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "112"
+   },
+   "tipping": {
+    "custom": "There is no tipping custom; service is included.",
+    "standardPercent": 0,
+    "rule": "optional",
+    "note": "A small tip for tour guides or excellent service is fine but not expected."
+   },
+   "taxFree": {
+    "vatRefundPercent": "VAT 24%; refund up to ~14% of the price",
+    "minSpend": "At least ISK 6,000 per receipt",
+    "customsNote": "Refunds are claimed when leaving at Keflavík Airport; for larger amounts show the goods to customs before checking in your bag."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.50 - $4.00",
+    "topCarriers": [
+     "Síminn",
+     "Vodafone Iceland",
+     "Nova"
+    ],
+    "airportSimTrapWarning": "Roaming on Turkish lines is very expensive. The 10-11 shop at Keflavík sells tourist SIMs, but an eSIM bought before the trip is usually cheaper; expect no coverage in parts of the highlands."
+   },
+   "touristScams": [
+    {
+     "title": "Rental car damage bills",
+     "desc": "On return you may be charged steeply for small stone chips or wind damage to doors.",
+     "tip": "Video the car from every angle at pick-up; take gravel (GP) and sand-and-ash (SAAP) cover and open doors with two hands in wind."
+    },
+    {
+     "title": "Uncertified glacier and ice-cave tours",
+     "desc": "Some cheap tours sold on social media use unlicensed guides and are dangerous.",
+     "tip": "Choose companies licensed by the Icelandic Tourist Board with certified (AIMG) mountain guides."
+    },
+    {
+     "title": "Fuel pump pre-authorisation holds",
+     "desc": "Pumps block a large pre-authorisation on your card that can take days to be released.",
+     "tip": "Use prepaid fuel cards from N1, Olís or Orkan, or pay at the counter."
+    }
+   ]
+  }
+ },
+ "de": {
+  "insights": {
+   "currency": "Isländische Krone (ISK)",
+   "bestMonths": "Juni – August (Mitternachtssonne, Hochlandpisten offen); September – März für Polarlichter (kurze, stürmische Tage)",
+   "safety": {
+    "safetyScore": 85,
+    "crimeRateSummary": "Eines der sichersten Länder der Welt mit sehr geringer Kriminalität. Die echten Gefahren sind natürlich: plötzliche Stürme, vereiste Straßen, Monsterwellen in Reynisfjara und Vulkanaktivität auf der Halbinsel Reykjanes.",
+    "commonScams": [
+     "Hohe Rechnungen für bereits vorhandene Kratzer und Steinschläge bei der Mietwagenrückgabe",
+     "Nicht lizenzierte Anbieter von unzertifizierten Eishöhlen- oder Gletschertouren",
+     "Karten ohne PIN funktionieren an Zapfsäulen nicht, Vorautorisierungen bleiben gesperrt"
+    ],
+    "safeTravelTips": [
+     "In Reynisfjara nie dem Meer den Rücken zuwenden und die Warnlichter beachten.",
+     "Täglich safetravel.is, vedur.is und umferdin.is (Straßenzustand) prüfen.",
+     "Bei Übernahme alle Schäden fotografieren und Schotter- sowie Sand-und-Asche-Versicherung abschließen."
+    ],
+    "emergencyNumbers": {
+     "police": "112",
+     "ambulance": "112",
+     "general": "112"
+    },
+    "safetyLevel": "Außergewöhnlich sicher",
+    "badgeColor": "bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Gutes 4G/5G in Orten und an der Ringstraße; Lücken im Hochland und in abgelegenen Fjorden",
+    "costPerGbUsd": "~1.50 - 4 $",
+    "esimAvailability": "Hervorragend",
+    "bestCarriers": [
+     "Síminn",
+     "Vodafone Iceland",
+     "Nova"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Begrenzt (keine Züge; Strætó-Busse in Reykjavík, wenige Überlandlinien; Mietwagen ist am besten)",
+    "costLevel": "Sehr teuer",
+    "singleTicketUsd": "4.50 - 5.50 $",
+    "dailyPassUsd": "17 - 22 $",
+    "popularRideApps": [
+     "Klappið (Strætó)",
+     "Hopp",
+     "Hreyfill",
+     "Flybus / Airport Direct"
+    ],
+    "taxiAdvice": "In Island gibt es weder Uber noch Bolt. In Reykjavík Taxis über Hreyfill oder die App Hopp bestellen; vom Flughafen Keflavík in die Stadt (~50 km) sind Flybus oder Airport Direct viel günstiger als ein Taxi."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "90 - 140 $",
+    "dailyBudgetMidrangeUsd": "230 - 380 $",
+    "budgetMealUsd": "22 - 35 $",
+    "coffeeUsd": "5 - 7 $",
+    "waterBottleUsd": "2 - 3.50 $",
+    "hostelDormUsd": "40 - 70 $",
+    "hotel3StarUsd": "180 - 320 $",
+    "flightCostIndex": "Hoch",
+    "flightTip": "Aus der Türkei gibt es keine Direktflüge; üblich sind Verbindungen über London, Kopenhagen, Amsterdam oder Oslo mit Icelandair, easyJet oder Wizz Air. Außerhalb des Winters früh buchen."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Vor Schwimmbad und Lagune ist Duschen ohne Badebekleidung in der Umkleide Pflicht.",
+     "Isländer sprechen sich mit Vornamen an; statt Nachnamen gibt es Vatersnamen (-son/-dóttir).",
+     "Markierte Wege zu verlassen und Offroad-Fahren ist verboten; Moos braucht Jahrzehnte zur Erholung.",
+     "Trinkgeld wird nicht erwartet; Service ist inklusive."
+    ],
+    "festivals": [
+     "Þorrablót (Januar–Februar, traditionelles Mittwinterfest)",
+     "Nationalfeiertag (17. Juni)",
+     "Menningarnótt – Kulturnacht Reykjavík (August) und Musikfestival Iceland Airwaves (November)"
+    ],
+    "lifestyle": "Plaudern in beheizten Freibädern (sundlaug), Leben nah an der Natur, starke Lese- und Musikkultur und das Motto 'Þetta reddast' (wird schon klappen)."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Golden Circle: Þingvellir (UNESCO), Geysir & Gullfoss",
+     "Wasserfälle Seljalandsfoss & Skógafoss",
+     "Schwarzer Strand Reynisfjara & Vík",
+     "Gletscherlagune Jökulsárlón & Diamond Beach",
+     "Halbinsel Snæfellsnes & Kirkjufell",
+     "Mývatn-See & Walbeobachtung in Húsavík"
+    ],
+    "bestSeasons": "Juni – August (Mitternachtssonne, Hochlandpisten offen); September – März für Polarlichter (kurze, stürmische Tage)",
+    "travelStyleTip": "Für die gesamte Ringstraße (Route 1) mindestens 7–10 Tage einplanen. Im Winter ist ein Allradwagen mit Winterreifen Pflicht; F-Pisten sind nur im Sommer und nur für 4x4 offen."
+   },
+   "religion": {
+    "primaryReligions": "Mitglieder der Isländischen Staatskirche (evangelisch-lutherisch) ~56 %; katholisch ~4 %; Ásatrú (altnordischer Glaube) ~1,5 %; wachsender Anteil Konfessionsloser.",
+    "respectNorms": "Die meisten Kirchen sind offen; während der Gottesdienste leise sein. An Natur- und historischen Orten keine Steinmännchen bauen.",
+    "sacredSites": [
+     "Hallgrímskirkja (Reykjavík)",
+     "Kathedrale Skálholt",
+     "Akureyrarkirkja (Akureyri)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Isländisch (die dem Altnordischen am nächsten stehende lebende Sprache).",
+    "englishProficiency": "Ausgezeichnet; fast alle sprechen fließend Englisch.",
+    "phrases": [
+     {
+      "phrase": "Halló / Góðan daginn",
+      "meaning": "Hallo / Guten Tag",
+      "translation": "Hallo / Guten Tag",
+      "pronunciation": "HAH-loh / GOH-than DAI-in"
+     },
+     {
+      "phrase": "Takk fyrir",
+      "meaning": "Danke",
+      "translation": "Danke",
+      "pronunciation": "tahk FIR-ir"
+     },
+     {
+      "phrase": "Vinsamlegast",
+      "meaning": "Bitte",
+      "translation": "Bitte",
+      "pronunciation": "VIN-sam-leh-gast"
+     },
+     {
+      "phrase": "Hvað kostar þetta?",
+      "meaning": "Was kostet das?",
+      "translation": "Was kostet das?",
+      "pronunciation": "kvath KOS-tar THET-ta"
+     },
+     {
+      "phrase": "Skál!",
+      "meaning": "Prost!",
+      "translation": "Prost!",
+      "pronunciation": "skowl"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Die Besiedlung begann 874, als Ingólfur Arnarson sich in Reykjavík niederließ; nordische und keltische Siedler folgten. 930 wurde in Þingvellir das Alþingi gegründet, eines der ältesten noch bestehenden Parlamente. 1262 kam Island an Norwegen, später an Dänemark, wurde 1918 souverän und 1944 Republik.",
+    "milestones": [
+     "874: Ingólfur Arnarson lässt sich in Reykjavík nieder",
+     "930: Gründung des Alþingi in Þingvellir",
+     "1262: Anschluss an die norwegische Krone",
+     "1944: Ausrufung der Republik (17. Juni)"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Kjötsúpa (Lamm-Gemüse-Suppe)",
+     "Plokkfiskur (Fisch-Kartoffel-Eintopf)",
+     "Hangikjöt (geräuchertes Lamm, Weihnachtsessen)"
+    ],
+    "traditionalDrinks": [
+     "Brennivín (Kümmelschnaps)",
+     "Malt og Appelsín (Weihnachtsmix aus Malzbier und Orangenlimo)",
+     "Einstök- und Gull-Bier"
+    ],
+    "streetFoodAndDesserts": [
+     "Pylsur (Lamm-Hotdog, 'eina með öllu' = mit allem)",
+     "Skyr (dickes Sauermilchprodukt)",
+     "Kleinur (gedrehtes Schmalzgebäck)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Björk (Musikerin)",
+     "Halldór Laxness (Literaturnobelpreis 1955)",
+     "Vigdís Finnbogadóttir (erste demokratisch gewählte Präsidentin der Welt)"
+    ],
+    "strongSectors": [
+     "Fischerei und Meeresfrüchte-Export",
+     "Geothermie/Wasserkraft und Aluminium",
+     "Natur- und Abenteuertourismus"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Ein nahezu bargeldloses Land; Karten- und Handyzahlung funktionieren überall. Zapfsäulen verlangen eine Karte mit PIN.",
+    "tippingCulture": "Trinkgeld wird nicht erwartet; Service ist inklusive. Bei außergewöhnlichem Service ist ein kleines Trinkgeld dennoch willkommen.",
+    "economicPillars": "Tourismus, Fischerei, Aluminiumverhüttung (dank günstiger erneuerbarer Energie) sowie Kreativ- und Techbranche."
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Gleiche Steckdosen mit zwei runden Stiften (C/F) wie in der Türkei; kein Adapter nötig."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Kaltes Leitungswasser gehört zu den reinsten der Welt; kein Flaschenwasser kaufen. Warmwasser ist geothermisch und kann nach Schwefel riechen, daher kaltes trinken.",
+    "vaccines": [
+     "Standardimpfungen (Tetanus, Diphtherie, Masern)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "112"
+   },
+   "tipping": {
+    "custom": "Trinkgeld ist nicht üblich; Service ist inklusive.",
+    "standardPercent": 0,
+    "rule": "optional",
+    "note": "Ein kleines Trinkgeld für Guides oder sehr guten Service ist möglich, wird aber nicht erwartet."
+   },
+   "taxFree": {
+    "vatRefundPercent": "MwSt. 24 %; Erstattung bis ~14 % des Preises",
+    "minSpend": "Mindestens 6.000 ISK pro Beleg",
+    "customsNote": "Die Erstattung erfolgt bei der Ausreise am Flughafen Keflavík; bei höheren Beträgen die Waren vor der Gepäckaufgabe dem Zoll zeigen."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.50 - $4.00",
+    "topCarriers": [
+     "Síminn",
+     "Vodafone Iceland",
+     "Nova"
+    ],
+    "airportSimTrapWarning": "Roaming mit türkischen Tarifen ist sehr teuer. Der 10-11-Laden in Keflavík verkauft Touristen-SIMs, eine vorab gekaufte eSIM ist meist günstiger; im Hochland teils kein Netz."
+   },
+   "touristScams": [
+    {
+     "title": "Schadensrechnung beim Mietwagen",
+     "desc": "Bei der Rückgabe werden kleine Steinschläge oder Sturmschäden an Türen teuer berechnet.",
+     "tip": "Das Auto bei Übernahme rundum filmen; Schotter- (GP) und Sand-und-Asche-Versicherung (SAAP) abschließen, Türen bei Wind mit zwei Händen öffnen."
+    },
+    {
+     "title": "Unzertifizierte Gletscher- und Eishöhlentouren",
+     "desc": "Manche billigen Touren aus sozialen Medien laufen mit unlizenzierten Guides und sind gefährlich.",
+     "tip": "Anbieter mit Lizenz der isländischen Tourismusbehörde und zertifizierten Bergführern (AIMG) wählen."
+    },
+    {
+     "title": "Vorautorisierung an Zapfsäulen",
+     "desc": "Zapfsäulen blockieren einen hohen Betrag auf der Karte, die Freigabe kann Tage dauern.",
+     "tip": "Prepaid-Tankkarten von N1, Olís oder Orkan nutzen oder an der Kasse zahlen."
+    }
+   ]
+  }
+ },
+ "es": {
+  "insights": {
+   "currency": "Corona islandesa (ISK)",
+   "bestMonths": "Junio – agosto (sol de medianoche, pistas de las Tierras Altas abiertas); septiembre – marzo para auroras boreales (días cortos y tormentosos)",
+   "safety": {
+    "safetyScore": 85,
+    "crimeRateSummary": "Uno de los países más seguros del mundo, con muy poca delincuencia. Los peligros reales son naturales: tormentas repentinas, carreteras heladas, olas traicioneras en Reynisfjara y actividad volcánica en la península de Reykjanes.",
+    "commonScams": [
+     "Facturas altas por rayas y daños de grava previos al devolver el coche de alquiler",
+     "Guías sin licencia que venden tours a cuevas de hielo o glaciares sin certificar",
+     "Tarjetas sin PIN que no funcionan en gasolineras y preautorizaciones que quedan bloqueadas"
+    ],
+    "safeTravelTips": [
+     "En Reynisfjara nunca des la espalda al mar y respeta las luces de aviso.",
+     "Consulta cada día safetravel.is, vedur.is y umferdin.is (estado de carreteras).",
+     "Fotografía todos los daños al recoger el coche y contrata seguro de grava y arena/ceniza."
+    ],
+    "emergencyNumbers": {
+     "police": "112",
+     "ambulance": "112",
+     "general": "112"
+    },
+    "safetyLevel": "Excepcionalmente Seguro",
+    "badgeColor": "bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Buen 4G/5G en pueblos y en la Ring Road; huecos en las Tierras Altas y fiordos remotos",
+    "costPerGbUsd": "~1.50 - 4 $",
+    "esimAvailability": "Excelente",
+    "bestCarriers": [
+     "Síminn",
+     "Vodafone Iceland",
+     "Nova"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Limitado (sin trenes; autobuses Strætó en Reikiavik, pocas líneas rurales; lo mejor es alquilar coche)",
+    "costLevel": "Muy caro",
+    "singleTicketUsd": "4.50 - 5.50 $",
+    "dailyPassUsd": "17 - 22 $",
+    "popularRideApps": [
+     "Klappið (Strætó)",
+     "Hopp",
+     "Hreyfill",
+     "Flybus / Airport Direct"
+    ],
+    "taxiAdvice": "En Islandia no hay Uber ni Bolt. En Reikiavik usa Hreyfill o la app Hopp para taxis; del aeropuerto de Keflavík a la ciudad (~50 km) el Flybus o Airport Direct es mucho más barato que un taxi."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "90 - 140 $",
+    "dailyBudgetMidrangeUsd": "230 - 380 $",
+    "budgetMealUsd": "22 - 35 $",
+    "coffeeUsd": "5 - 7 $",
+    "waterBottleUsd": "2 - 3.50 $",
+    "hostelDormUsd": "40 - 70 $",
+    "hotel3StarUsd": "180 - 320 $",
+    "flightCostIndex": "Alto",
+    "flightTip": "No hay vuelos directos desde Turquía; lo habitual es conectar vía Londres, Copenhague, Ámsterdam u Oslo con Icelandair, easyJet o Wizz Air. Reserva pronto fuera del invierno."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Es obligatorio ducharse sin bañador en el vestuario antes de entrar en piscinas y lagunas.",
+     "Los islandeses se llaman por el nombre; en vez de apellido usan patronímicos (-son/-dóttir).",
+     "Está prohibido salir de los senderos y conducir fuera de pista; el musgo tarda décadas en recuperarse.",
+     "No se espera propina; el servicio está incluido."
+    ],
+    "festivals": [
+     "Þorrablót (enero–febrero, banquete tradicional de pleno invierno)",
+     "Día Nacional (17 de junio)",
+     "Menningarnótt – Noche Cultural de Reikiavik (agosto) y festival Iceland Airwaves (noviembre)"
+    ],
+    "lifestyle": "Charlas en piscinas exteriores climatizadas (sundlaug), vida cerca de la naturaleza, gran cultura lectora y musical y el lema 'Þetta reddast' (todo se arreglará)."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Círculo Dorado: Þingvellir (UNESCO), Geysir y Gullfoss",
+     "Cascadas Seljalandsfoss y Skógafoss",
+     "Playa de arena negra de Reynisfjara y Vík",
+     "Laguna glaciar Jökulsárlón y playa de los Diamantes",
+     "Península de Snæfellsnes y Kirkjufell",
+     "Lago Mývatn y avistamiento de ballenas en Húsavík"
+    ],
+    "bestSeasons": "Junio – agosto (sol de medianoche, pistas de las Tierras Altas abiertas); septiembre – marzo para auroras boreales (días cortos y tormentosos)",
+    "travelStyleTip": "Reserva al menos 7–10 días para la Ring Road completa (Ruta 1). En invierno es imprescindible un 4x4 con neumáticos de invierno; las pistas F solo abren en verano y solo para 4x4."
+   },
+   "religion": {
+    "primaryReligions": "Iglesia de Islandia (luterana) ~56 %; católicos ~4 %; Ásatrú (antigua fe nórdica) ~1,5 %; creciente proporción sin afiliación.",
+    "respectNorms": "La mayoría de iglesias admite visitas; guarda silencio durante el oficio. No apiles piedras en sitios naturales o históricos.",
+    "sacredSites": [
+     "Hallgrímskirkja (Reikiavik)",
+     "Catedral de Skálholt",
+     "Akureyrarkirkja (Akureyri)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Islandés (la lengua viva más cercana al nórdico antiguo).",
+    "englishProficiency": "Excelente; casi todo el mundo habla inglés con fluidez.",
+    "phrases": [
+     {
+      "phrase": "Halló / Góðan daginn",
+      "meaning": "Hola / Buenos días",
+      "translation": "Hola / Buenos días",
+      "pronunciation": "HAH-loh / GOH-than DAI-in"
+     },
+     {
+      "phrase": "Takk fyrir",
+      "meaning": "Gracias",
+      "translation": "Gracias",
+      "pronunciation": "tahk FIR-ir"
+     },
+     {
+      "phrase": "Vinsamlegast",
+      "meaning": "Por favor",
+      "translation": "Por favor",
+      "pronunciation": "VIN-sam-leh-gast"
+     },
+     {
+      "phrase": "Hvað kostar þetta?",
+      "meaning": "¿Cuánto cuesta esto?",
+      "translation": "¿Cuánto cuesta esto?",
+      "pronunciation": "kvath KOS-tar THET-ta"
+     },
+     {
+      "phrase": "Skál!",
+      "meaning": "¡Salud!",
+      "translation": "¡Salud!",
+      "pronunciation": "skowl"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "La colonización empezó en 874, cuando Ingólfur Arnarson se instaló en Reikiavik, seguido de nórdicos y celtas. En 930 se fundó en Þingvellir el Alþingi, uno de los parlamentos más antiguos aún en funcionamiento. Islandia pasó a Noruega en 1262 y luego a Dinamarca, obtuvo la soberanía en 1918 y se hizo república en 1944.",
+    "milestones": [
+     "874: Ingólfur Arnarson se instala en Reikiavik",
+     "930: fundación del Alþingi en Þingvellir",
+     "1262: unión a la corona noruega",
+     "1944: proclamación de la república (17 de junio)"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Kjötsúpa (sopa de cordero y verduras)",
+     "Plokkfiskur (guiso de pescado y patata)",
+     "Hangikjöt (cordero ahumado, plato navideño)"
+    ],
+    "traditionalDrinks": [
+     "Brennivín (aguardiente de alcaravea)",
+     "Malt og Appelsín (mezcla navideña de malta y naranja)",
+     "Cervezas Einstök y Gull"
+    ],
+    "streetFoodAndDesserts": [
+     "Pylsur (perrito de cordero, 'eina með öllu' = con todo)",
+     "Skyr (lácteo fermentado espeso)",
+     "Kleinur (rosquillas fritas trenzadas)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Björk (música)",
+     "Halldór Laxness (Nobel de Literatura, 1955)",
+     "Vigdís Finnbogadóttir (primera presidenta elegida democráticamente del mundo)"
+    ],
+    "strongSectors": [
+     "Pesca y exportación de mariscos",
+     "Energía geotérmica/hidráulica y aluminio",
+     "Turismo de naturaleza y aventura"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Un país casi sin efectivo; tarjetas y pagos móviles funcionan en todas partes. Los surtidores exigen tarjeta con PIN.",
+    "tippingCulture": "No se espera propina; el servicio está incluido. Aun así, se agradece algo por un servicio excepcional.",
+    "economicPillars": "Turismo, pesca, fundición de aluminio (gracias a la energía renovable barata) e industrias creativas y tecnológicas."
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Enchufes de dos clavijas redondas (C/F) como en Turquía; no hace falta adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "El agua fría del grifo es de las más puras del mundo; no compres agua embotellada. La caliente es geotérmica y puede oler a azufre, así que bebe la fría.",
+    "vaccines": [
+     "Vacunas rutinarias (tétanos, difteria, sarampión)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "112"
+   },
+   "tipping": {
+    "custom": "No hay costumbre de propina; el servicio está incluido.",
+    "standardPercent": 0,
+    "rule": "optional",
+    "note": "Una pequeña propina a guías o por un servicio excelente es posible, pero no se espera."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA 24 %; devolución de hasta ~14 % del precio",
+    "minSpend": "Mínimo 6.000 ISK por tique",
+    "customsNote": "La devolución se tramita al salir en el aeropuerto de Keflavík; para importes altos muestra los artículos en aduanas antes de facturar."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.50 - $4.00",
+    "topCarriers": [
+     "Síminn",
+     "Vodafone Iceland",
+     "Nova"
+    ],
+    "airportSimTrapWarning": "El roaming con líneas turcas es muy caro. La tienda 10-11 de Keflavík vende SIM turísticas, pero una eSIM comprada antes suele ser más barata; en partes de las Tierras Altas no hay cobertura."
+   },
+   "touristScams": [
+    {
+     "title": "Facturas por daños del coche de alquiler",
+     "desc": "Al devolverlo pueden cobrarte mucho por pequeños impactos de piedras o daños del viento en las puertas.",
+     "tip": "Graba el coche por todos lados al recogerlo; contrata seguro de grava (GP) y de arena y ceniza (SAAP) y abre las puertas con las dos manos si hay viento."
+    },
+    {
+     "title": "Tours de glaciares y cuevas de hielo sin certificar",
+     "desc": "Algunos tours baratos vendidos en redes sociales usan guías sin licencia y son peligrosos.",
+     "tip": "Elige empresas con licencia de la Oficina de Turismo de Islandia y guías de montaña certificados (AIMG)."
+    },
+    {
+     "title": "Preautorizaciones en gasolineras",
+     "desc": "Los surtidores bloquean un importe alto en la tarjeta que puede tardar días en liberarse.",
+     "tip": "Usa tarjetas prepago de combustible de N1, Olís u Orkan o paga en caja."
+    }
+   ]
+  }
+ },
+ "ru": {
+  "insights": {
+   "currency": "Исландская крона (ISK)",
+   "bestMonths": "Июнь – август (полуночное солнце, открыты дороги во внутренние районы); сентябрь – март — для северного сияния (короткие штормовые дни)",
+   "safety": {
+    "safetyScore": 85,
+    "crimeRateSummary": "Одна из самых безопасных стран мира с очень низкой преступностью. Реальные опасности природные: внезапные штормы, обледенелые дороги, волны-убийцы на Рейнисфьяре и вулканическая активность на полуострове Рейкьянес.",
+    "commonScams": [
+     "Крупные счета за старые царапины и сколы от гравия при сдаче арендованной машины",
+     "Нелицензированные гиды с несертифицированными турами в ледяные пещеры и на ледники",
+     "Карты без PIN не работают на заправках, предавторизация остаётся заблокированной"
+    ],
+    "safeTravelTips": [
+     "На Рейнисфьяре никогда не поворачивайтесь к морю спиной и следите за предупреждающими огнями.",
+     "Ежедневно проверяйте safetravel.is, vedur.is и umferdin.is (состояние дорог).",
+     "При получении машины фотографируйте все повреждения и берите страховку от гравия и песка/пепла."
+    ],
+    "emergencyNumbers": {
+     "police": "112",
+     "ambulance": "112",
+     "general": "112"
+    },
+    "safetyLevel": "Исключительно Безопасно",
+    "badgeColor": "bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Хороший 4G/5G в населённых пунктах и на Кольцевой дороге; пробелы во внутренних районах и дальних фьордах",
+    "costPerGbUsd": "~1.50 - 4 $",
+    "esimAvailability": "Отлично",
+    "bestCarriers": [
+     "Síminn",
+     "Vodafone Iceland",
+     "Nova"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Ограниченное (поездов нет; автобусы Strætó в Рейкьявике, редкие междугородние рейсы; лучше всего арендовать машину)",
+    "costLevel": "Очень дорого",
+    "singleTicketUsd": "4.50 - 5.50 $",
+    "dailyPassUsd": "17 - 22 $",
+    "popularRideApps": [
+     "Klappið (Strætó)",
+     "Hopp",
+     "Hreyfill",
+     "Flybus / Airport Direct"
+    ],
+    "taxiAdvice": "В Исландии нет Uber и Bolt. В Рейкьявике такси вызывают через Hreyfill или приложение Hopp; из аэропорта Кеблавик в город (~50 км) автобусы Flybus или Airport Direct намного дешевле такси."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "90 - 140 $",
+    "dailyBudgetMidrangeUsd": "230 - 380 $",
+    "budgetMealUsd": "22 - 35 $",
+    "coffeeUsd": "5 - 7 $",
+    "waterBottleUsd": "2 - 3.50 $",
+    "hostelDormUsd": "40 - 70 $",
+    "hotel3StarUsd": "180 - 320 $",
+    "flightCostIndex": "Высокий",
+    "flightTip": "Прямых рейсов из Турции нет; обычно летят с пересадкой в Лондоне, Копенгагене, Амстердаме или Осло на Icelandair, easyJet или Wizz Air. Вне зимы бронируйте заранее."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Перед бассейном и лагуной обязательно принять душ без купальника в раздевалке.",
+     "Исландцы обращаются друг к другу по имени; вместо фамилий — отчества (-son/-dóttir).",
+     "Сходить с размеченных троп и ездить по бездорожью запрещено — мох восстанавливается десятилетиями.",
+     "Чаевые не ожидаются, обслуживание включено."
+    ],
+    "festivals": [
+     "Торраблоут (январь–февраль, традиционный зимний пир)",
+     "Национальный день (17 июня)",
+     "Меннингарноутт — Ночь культуры в Рейкьявике (август) и фестиваль Iceland Airwaves (ноябрь)"
+    ],
+    "lifestyle": "Беседы в подогреваемых открытых бассейнах (sundlaug), жизнь рядом с природой, сильная книжная и музыкальная культура и девиз «Þetta reddast» (всё как-нибудь уладится)."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Золотое кольцо: Тингвеллир (ЮНЕСКО), Гейсир и Гюдльфосс",
+     "Водопады Сельяландсфосс и Скоугафосс",
+     "Чёрный пляж Рейнисфьяра и Вик",
+     "Ледниковая лагуна Йокульсаурлоун и Бриллиантовый пляж",
+     "Полуостров Снайфедльснес и Киркьюфедль",
+     "Озеро Миватн и наблюдение за китами в Хусавике"
+    ],
+    "bestSeasons": "Июнь – август (полуночное солнце, открыты дороги во внутренние районы); сентябрь – март — для северного сияния (короткие штормовые дни)",
+    "travelStyleTip": "На всю Кольцевую дорогу (трасса 1) закладывайте минимум 7–10 дней. Зимой обязателен полноприводный автомобиль с зимней резиной; F-дороги открыты только летом и только для 4x4."
+   },
+   "religion": {
+    "primaryReligions": "Церковь Исландии (евангелическо-лютеранская) ~56%; католики ~4%; Асатру (древнескандинавская вера) ~1,5%; растёт доля неприсоединившихся.",
+    "respectNorms": "Большинство церквей открыто для посетителей; во время службы соблюдайте тишину. Не складывайте пирамидки из камней на природных и исторических местах.",
+    "sacredSites": [
+     "Хадльгримскиркья (Рейкьявик)",
+     "Собор в Скаульхольте",
+     "Церковь Акюрейри"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Исландский (живой язык, ближе всех к древнескандинавскому).",
+    "englishProficiency": "Отличный; почти все свободно говорят по-английски.",
+    "phrases": [
+     {
+      "phrase": "Halló / Góðan daginn",
+      "meaning": "Привет / Добрый день",
+      "translation": "Привет / Добрый день",
+      "pronunciation": "HAH-loh / GOH-than DAI-in"
+     },
+     {
+      "phrase": "Takk fyrir",
+      "meaning": "Спасибо",
+      "translation": "Спасибо",
+      "pronunciation": "tahk FIR-ir"
+     },
+     {
+      "phrase": "Vinsamlegast",
+      "meaning": "Пожалуйста",
+      "translation": "Пожалуйста",
+      "pronunciation": "VIN-sam-leh-gast"
+     },
+     {
+      "phrase": "Hvað kostar þetta?",
+      "meaning": "Сколько это стоит?",
+      "translation": "Сколько это стоит?",
+      "pronunciation": "kvath KOS-tar THET-ta"
+     },
+     {
+      "phrase": "Skál!",
+      "meaning": "Ваше здоровье!",
+      "translation": "Ваше здоровье!",
+      "pronunciation": "skowl"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Заселение началось в 874 году, когда Ингольф Арнарсон обосновался в Рейкьявике; за ним последовали норвежцы и кельты. В 930 году в Тингвеллире основан альтинг — один из старейших действующих парламентов. В 1262 году Исландия перешла к Норвегии, затем к Дании, в 1918-м получила суверенитет, в 1944-м стала республикой.",
+    "milestones": [
+     "874: Ингольф Арнарсон селится в Рейкьявике",
+     "930: основание альтинга в Тингвеллире",
+     "1262: переход под власть норвежской короны",
+     "1944: провозглашение республики (17 июня)"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Кьётсупа (суп из баранины с овощами)",
+     "Плоккфискюр (рагу из рыбы с картофелем)",
+     "Хаунгикьёт (копчёная баранина, рождественское блюдо)"
+    ],
+    "traditionalDrinks": [
+     "Бреннивин (тминная водка)",
+     "Malt og Appelsín (рождественская смесь солодового напитка и апельсиновой газировки)",
+     "Пиво Einstök и Gull"
+    ],
+    "streetFoodAndDesserts": [
+     "Пильсур (хот-дог с бараниной, «eina með öllu» — со всем)",
+     "Скир (густой кисломолочный продукт)",
+     "Клейнур (жареные плетёные пончики)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Бьорк (музыкант)",
+     "Хальдоур Лакснесс (Нобелевская премия по литературе, 1955)",
+     "Вигдис Финнбогадоуттир (первая в мире всенародно избранная женщина-президент)"
+    ],
+    "strongSectors": [
+     "Рыболовство и экспорт морепродуктов",
+     "Геотермальная и гидроэнергетика, алюминий",
+     "Природный и приключенческий туризм"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Почти безналичная страна; карты и мобильные платежи работают везде. На заправках нужна карта с PIN-кодом.",
+    "tippingCulture": "Чаевые не ожидаются, обслуживание включено. За исключительный сервис небольшие чаевые всё же приятны.",
+    "economicPillars": "Туризм, рыболовство, выплавка алюминия (благодаря дешёвой возобновляемой энергии) и креативные и технологические отрасли."
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Такие же розетки с двумя круглыми штырями (C/F), как в Турции; адаптер не нужен."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Холодная водопроводная вода — одна из самых чистых в мире, бутилированную покупать не нужно. Горячая вода геотермальная и может пахнуть серой — пейте холодную.",
+    "vaccines": [
+     "Плановые прививки (столбняк, дифтерия, корь)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "112"
+   },
+   "tipping": {
+    "custom": "Чаевых давать не принято, обслуживание включено.",
+    "standardPercent": 0,
+    "rule": "optional",
+    "note": "Небольшие чаевые гиду или за отличный сервис возможны, но не ожидаются."
+   },
+   "taxFree": {
+    "vatRefundPercent": "НДС 24%; возврат до ~14% от цены",
+    "minSpend": "Не менее 6 000 ISK на чек",
+    "customsNote": "Возврат оформляется при вылете в аэропорту Кеблавик; при крупной сумме покажите товары таможне до сдачи багажа."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.50 - $4.00",
+    "topCarriers": [
+     "Síminn",
+     "Vodafone Iceland",
+     "Nova"
+    ],
+    "airportSimTrapWarning": "Роуминг с турецкими номерами очень дорогой. В магазине 10-11 в Кеблавике продают туристические SIM, но eSIM, купленная заранее, обычно дешевле; во внутренних районах местами нет связи."
+   },
+   "touristScams": [
+    {
+     "title": "Счета за повреждения арендованного авто",
+     "desc": "При сдаче машины могут выставить крупный счёт за сколы от камней или повреждения дверей ветром.",
+     "tip": "Снимите видео машины со всех сторон при получении; берите страховку от гравия (GP) и песка/пепла (SAAP), в ветер открывайте двери двумя руками."
+    },
+    {
+     "title": "Несертифицированные туры на ледники и в пещеры",
+     "desc": "Часть дешёвых туров из соцсетей проводят нелицензированные гиды — это опасно.",
+     "tip": "Выбирайте компании с лицензией Исландского туристического совета и сертифицированными горными гидами (AIMG)."
+    },
+    {
+     "title": "Блокировка суммы на заправке",
+     "desc": "Колонки блокируют на карте крупную сумму предавторизации, разблокировка может занять дни.",
+     "tip": "Используйте предоплаченные топливные карты N1, Olís или Orkan либо платите на кассе."
+    }
+   ]
+  }
+ }
+}

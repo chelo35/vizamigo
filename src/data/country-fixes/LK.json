@@ -1,0 +1,1907 @@
+{
+ "tr": {
+  "insights": {
+   "currency": "Sri Lanka Rupisi (LKR)",
+   "plugType": "Tip D, G, M (230V, 50Hz)",
+   "bestMonths": "Aralık – Mart (batı ve güney kıyıları, dağlık iç kesim ve Kültür Üçgeni için ideal); Mayıs – Eylül doğu kıyısı (Trincomalee, Arugam Bay) için en iyi dönem; Ekim – Kasım muson geçiş yağışları",
+   "safety": {
+    "crimeRateSummary": "Genel olarak güvenli ve misafirperver bir ülkedir; başlıca sorunlar tuk-tuk ve mücevher dolandırıcılıkları, yalnız seyahat eden kadınlara yönelik sözlü taciz ve trafik kazalarıdır. Güney kıyısında güçlü akıntılar her yıl boğulmalara neden olur.",
+    "commonScams": [
+     "“Tapınak bugün kapalı, özel festival var” diyerek sizi mücevher veya baharat dükkânına götüren tuk-tuk şoförleri",
+     "Değersiz taşları “yurt dışında iki katına satarsın” diye pazarlayan mücevher dolandırıcıları",
+     "Kandy – Ella treni için istasyon önünde sahte veya aşırı pahalı rezerve bilet satan aracılar"
+    ],
+    "safeTravelTips": [
+     "Ulaşım için PickMe veya Uber kullanın; sokakta tuk-tuk’a binerseniz taksimetreli olanları seçin.",
+     "Sırtınız Buda heykeline dönük fotoğraf çekmeyin; Buda dövmesi bile sınır dışı edilmeye yol açabilir.",
+     "Yalnızca cankurtaranlı ve kırmızı bayrak olmayan plajlarda yüzün; turist polisine 1912’den ulaşabilirsiniz."
+    ],
+    "emergencyNumbers": {
+     "police": "119",
+     "ambulance": "1990",
+     "general": "119"
+    },
+    "safetyScore": 65,
+    "safetyLevel": "Güvenli",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Ülke genelinde iyi 4G, Kolombo’da 5G denemeleri; milli parklarda ve dağ geçitlerinde zayıf",
+    "costPerGbUsd": "~0.20 - 0.60 $",
+    "esimAvailability": "Mevcut – Dialog ve SLT-Mobitel turist SIM’leri havalimanı çıkışında; uluslararası eSIM’ler çalışır",
+    "bestCarriers": [
+     "Dialog",
+     "SLT-Mobitel",
+     "Hutch"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Orta – manzaralı ama yavaş trenler (Kandy – Ella hattı ünlüdür), çok ucuz ve kalabalık otobüsler; kısa mesafede tuk-tuk, uzun mesafede özel şoför popülerdir",
+    "costLevel": "Ucuz",
+    "singleTicketUsd": "~0.20 - 1 $ (şehir/şehirlerarası otobüs)",
+    "dailyPassUsd": "Günlük kart yok; özel şoförlü araç günlük ~40 - 60 $",
+    "popularRideApps": [
+     "PickMe",
+     "Uber"
+    ],
+    "taxiAdvice": "PickMe ve Uber Kolombo, Kandy ve Galle’de tuk-tuk ve araç çağırmak için en ucuz ve şeffaf yoldur. Havalimanından Kolombo’ya ~1 saat sürer; uygulama fiyatı sokak teklifinden çok daha düşüktür."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "25 - 40 $",
+    "dailyBudgetMidrangeUsd": "60 - 120 $",
+    "budgetMealUsd": "2 - 5 $",
+    "coffeeUsd": "1.50 - 3.50 $",
+    "waterBottleUsd": "0.30 - 0.50 $",
+    "hostelDormUsd": "8 - 15 $",
+    "hotel3StarUsd": "35 - 75 $",
+    "flightCostIndex": "Orta (İstanbul – Kolombo direkt ~8 sa)",
+    "flightTip": "THY İstanbul – Kolombo arasında direkt uçar; Körfez aktarmalı (Qatar Airways, Emirates, flydubai) ve SriLankan Airlines seçenekleri de vardır. Kültürel alanların (Sigiriya, Kandy) yabancı giriş ücretleri dolar bazlıdır ve bütçeye eklenmelidir."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Avuçlar birleştirilip “Ayubowan” (uzun yaşa) denerek selamlaşılır; baş sallamanın anlamı Türkiye’dekinden farklı olabilir (yana sallamak “evet”tir).",
+     "Tapınaklarda ayakkabı ve şapka çıkarılır, beyaz veya açık renk, örtülü kıyafet tercih edilir.",
+     "Keşişlere saygı gösterilir; otobüslerde ön koltuklar keşişlere ayrılmıştır."
+    ],
+    "festivals": [
+     "Sinhala ve Tamil Yeni Yılı (13-14 Nisan)",
+     "Vesak – Buda’nın doğumu, aydınlanması ve ölümü (Mayıs dolunayı)",
+     "Kandy Esala Perahera (Temmuz/Ağustos, süslü fillerle geçit)"
+    ],
+    "lifestyle": "Her ayın dolunay günü (Poya) resmî tatildir ve alkol satılmaz. Hayat çay, pirinç-köri, kriket tutkusu ve güçlü aile bağları etrafında döner."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Sigiriya Aslan Kayası (UNESCO)",
+     "Kandy – Kutsal Diş Tapınağı (Sri Dalada Maligawa)",
+     "Dambulla Mağara Tapınağı",
+     "Ella – Nine Arches Köprüsü ve çay tepeleri",
+     "Galle Kalesi (UNESCO)",
+     "Yala Ulusal Parkı (leopar safarisi)"
+    ],
+    "bestSeasons": "Aralık – Mart (batı ve güney kıyıları, dağlık iç kesim ve Kültür Üçgeni için ideal); Mayıs – Eylül doğu kıyısı (Trincomalee, Arugam Bay) için en iyi dönem; Ekim – Kasım muson geçiş yağışları",
+    "travelStyleTip": "Ada küçük ama yollar yavaş: günde 3-4 saatten fazla yol planlamayın. En pratik yöntem özel şoförlü araç ile Kandy – Ella arası manzaralı tren yolculuğunu birleştirmektir."
+   },
+   "religion": {
+    "primaryReligions": "Theravada Budizmi (~%70), Hinduizm (~%13), İslam (~%10), Hristiyanlık (~%7).",
+    "respectNorms": "Buda tasvirlerine sırtınızı dönüp poz vermek, onlara dokunmak veya üzerlerine çıkmak yasaktır ve cezası vardır. Tapınaklarda omuz ve dizler kapalı olmalı, ayakkabılar çıkarılır.",
+    "sacredSites": [
+     "Kutsal Diş Tapınağı (Kandy)",
+     "Sri Maha Bodhi – kutsal incir ağacı (Anuradhapura)",
+     "Adem Tepesi – Sri Pada (dört dinin kutsal zirvesi)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Sinhala ve Tamilce (resmî dil); İngilizce bağlantı dili olarak yaygın.",
+    "englishProficiency": "İyi – turizmde, şehirlerde ve tabelalarda yaygın; kırsalda temel düzeyde.",
+    "phrases": [
+     {
+      "phrase": "ආයුබෝවන් (Ayubowan)",
+      "meaning": "Merhaba (uzun yaşa)",
+      "translation": "Merhaba (uzun yaşa)",
+      "pronunciation": "AA-yu-boh-wan"
+     },
+     {
+      "phrase": "ස්තූතියි (Sthuthiyi)",
+      "meaning": "Teşekkür ederim",
+      "translation": "Teşekkür ederim",
+      "pronunciation": "STOO-thi-yi"
+     },
+     {
+      "phrase": "කීයද? (Keeyada?)",
+      "meaning": "Ne kadar?",
+      "translation": "Ne kadar?",
+      "pronunciation": "KEE-ya-da"
+     },
+     {
+      "phrase": "රසයි (Rasai)",
+      "meaning": "Lezzetli",
+      "translation": "Lezzetli",
+      "pronunciation": "ra-SAI"
+     },
+     {
+      "phrase": "வணக்கம் (Vanakkam)",
+      "meaning": "Merhaba (Tamilce; kuzey ve doğuda)",
+      "translation": "Merhaba (Tamilce; kuzey ve doğuda)",
+      "pronunciation": "va-NUK-kum"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "MÖ 4. yüzyılda kurulan Anuradhapura Krallığı ile başlayan 2.500 yıllık Budist uygarlığa sahiptir. Portekiz, Hollanda ve İngiliz yönetimlerinin ardından 1948’de Seylan adıyla bağımsız oldu, 1972’de Sri Lanka adını aldı. 1983-2009 iç savaşı ve 2022 ekonomik krizinden sonra ülke turizmle toparlanıyor.",
+    "milestones": [
+     "MÖ 247: Budizmin Kral Devanampiya Tissa döneminde adaya gelişi",
+     "1815: Kandy Krallığı’nın İngilizlere geçmesi",
+     "1948: Seylan olarak bağımsızlık",
+     "2009: İç savaşın sona ermesi"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Pirinç ve köri (çok çeşitli sebze, mercimek ve balık körileriyle)",
+     "Kottu roti (doğranmış roti, sebze ve et sotesi)",
+     "Hoppers / appa (hindistan cevizli kâse krep, yumurtalı)"
+    ],
+    "traditionalDrinks": [
+     "Seylan çayı",
+     "Kral hindistan cevizi suyu (thambili)",
+     "Arrack (hindistan cevizi çiçeği rakısı)"
+    ],
+    "streetFoodAndDesserts": [
+     "Isso vadai (karidesli mercimek köftesi)",
+     "Wattalappam (hindistan cevizli, palmiye şekerli puding)",
+     "Manda yoğurdu ve kithul şurubu (curd & treacle)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Sirimavo Bandaranaike (dünyanın ilk kadın başbakanı)",
+     "Muttiah Muralitharan (Test kriketinde en çok küt alan oyuncu)",
+     "Geoffrey Bawa (tropikal modernizmin öncü mimarı)"
+    ],
+    "strongSectors": [
+     "Seylan çayı ihracatı",
+     "Hazır giyim ve tekstil",
+     "Turizm ve değerli taşlar (safir)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Otel ve restoranlarda kart yaygın, tuk-tuk, pazar ve küçük dükkânlarda nakit gerekir. ATM’ler şehirlerde boldur; LKR ülke dışında zor bozdurulur, fazla rupiyi çıkışta harcayın.",
+    "tippingCulture": "Restoran ve otellerde genellikle %10 servis ücreti eklenir; şoför ve rehberlere günlük ~5-10 $ bahşiş beklenir.",
+    "economicPillars": "Hazır giyim, çay, turizm, yurt dışı işçi gelirleri ve liman/lojistik hizmetleri."
+   }
+  },
+  "itin": {
+   "routeName": "Kültür Üçgeni’nden Güney Kıyısına: Sigiriya, Kandy, Ella ve Galle",
+   "routeSummary": "Antik Sigiriya kayasından kutsal Kandy’ye, oradan efsanevi trenle Ella’nın çay tepelerine ve son olarak Galle Kalesi ile güney plajlarına inen 10 günlük klasik Sri Lanka rotası.",
+   "totalDays": 10,
+   "idealDurationText": "10 günlük rota",
+   "bestSeason": "Aralık – Mart (batı ve güney kıyıları, dağlık iç kesim ve Kültür Üçgeni için ideal); Mayıs – Eylül doğu kıyısı (Trincomalee, Arugam Bay) için en iyi dönem; Ekim – Kasım muson geçiş yağışları",
+   "transportMode": "Özel şoförlü araç veya otobüs + Kandy – Ella manzaralı tren + PickMe / Uber tuk-tuk",
+   "paceLevel": "Dengeli (kültür, doğa ve plaj)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "1. Durak: Sigiriya ve Dambulla (Kültür Üçgeni)",
+     "recommendedDuration": "2 Gün",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "Sigiriya Aslan Kayası ve freskleri",
+      "Pidurangala Kayası’ndan gün doğumu",
+      "Dambulla Mağara Tapınağı"
+     ],
+     "activities": [
+      "Sigiriya’ya sabah 7’de açılışta tırmanın.",
+      "Minneriya veya Kaudulla’da fil safarisi yapın.",
+      "Bisikletle Polonnaruwa antik kentini gezin."
+     ],
+     "foodAndDrinks": [
+      "Köy usulü pirinç ve köri",
+      "Kral hindistan cevizi suyu"
+     ],
+     "criticalTips": [
+      "Sigiriya’nın yabancı giriş ücreti ~35 $’dır; 1.200 basamağa su ve şapka ile çıkın.",
+      "Akşamüstü yollarda yaban filleri olabilir; şoförünüzün uyarılarına uyun."
+     ],
+     "mapsQuery": "Sigiriya, Sri Lanka"
+    },
+    {
+     "stopNumber": 2,
+     "name": "2. Durak: Kandy (kutsal şehir)",
+     "recommendedDuration": "2 Gün",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "Kutsal Diş Tapınağı",
+      "Peradeniya Kraliyet Botanik Bahçesi",
+      "Kandy Gölü"
+     ],
+     "activities": [
+      "Tapınakta akşam puja törenine katılın.",
+      "Kandy dans gösterisini izleyin.",
+      "Yakındaki bir çay fabrikasını ziyaret edin."
+     ],
+     "foodAndDrinks": [
+      "Kottu roti",
+      "Seylan çayı"
+     ],
+     "criticalTips": [
+      "Diş Tapınağı’na beyaz veya açık renk, omuz ve dizleri örten kıyafetle gidin.",
+      "Kandy – Ella tren rezervasyonu ~30 gün önce açılır ve hızla dolar; erken alın."
+     ],
+     "mapsQuery": "Temple of the Sacred Tooth Relic, Kandy, Sri Lanka"
+    },
+    {
+     "stopNumber": 3,
+     "name": "3. Durak: Ella (çay tepeleri)",
+     "recommendedDuration": "2 Gün",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "Nine Arches Köprüsü",
+      "Little Adam’s Peak",
+      "Ella Rock"
+     ],
+     "activities": [
+      "Kandy’den Ella’ya ~7 saatlik manzaralı tren yolculuğu yapın.",
+      "Gün doğumunda Little Adam’s Peak’e yürüyün.",
+      "Çay plantasyonlarında yürüyüş yapın."
+     ],
+     "foodAndDrinks": [
+      "Hoppers",
+      "Taze demlenmiş yayla çayı"
+     ],
+     "criticalTips": [
+      "Nine Arches’ta raylarda yürümek tehlikelidir; tren saatlerini öğrenin ve kenarda bekleyin.",
+      "Dağda akşamlar serindir; ince bir polar alın."
+     ],
+     "mapsQuery": "Nine Arches Bridge, Ella, Sri Lanka"
+    },
+    {
+     "stopNumber": 4,
+     "name": "4. Durak: Galle ve güney kıyısı (Mirissa, Unawatuna)",
+     "recommendedDuration": "3 Gün",
+     "durationBadge": "3 Gün",
+     "highlights": [
+      "Galle Kalesi surları ve deniz feneri",
+      "Mirissa’da balina gözlemi (Kasım – Nisan)",
+      "Unawatuna ve Jungle Beach"
+     ],
+     "activities": [
+      "Kale surlarında gün batımı yürüyüşü yapın.",
+      "Sörf dersi alın (Weligama).",
+      "Koggala’da sırık balıkçılarını görün."
+     ],
+     "foodAndDrinks": [
+      "Izgara deniz ürünleri",
+      "Isso vadai",
+      "Wattalappam"
+     ],
+     "criticalTips": [
+      "Balina turunda deniz tutması yaygındır; sorumlu davranan, lisanslı operatör seçin.",
+      "Mayıs – Eylül’de güney kıyısı muson etkisindedir, deniz dalgalı olur."
+     ],
+     "mapsQuery": "Galle Fort, Galle, Sri Lanka"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Pirinç ve köri",
+     "Kottu roti",
+     "Hoppers",
+     "Lamprais (muz yaprağında Hollanda-Burgher pilavı)"
+    ],
+    "drinks": [
+     "Seylan çayı",
+     "Thambili",
+     "Arrack"
+    ],
+    "streetFoods": [
+     "Isso vadai",
+     "Kottu roti",
+     "Wattalappam"
+    ],
+    "diningAdvice": "Sri Lanka yemekleri acıdır; gerekirse “less spicy” deyin. Müslüman lokantaları (genellikle “hotel” adlı) helal kottu ve biryani sunar; elle yemek geleneksel ama çatal her yerde vardır."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "G/D tipi priz adaptörü",
+     "Tapınaklar için beyaz/açık renk örtülü kıyafet ve sarong",
+     "Sivrisinek kovucu (dang humması)",
+     "Dağlar için ince bir polar"
+    ],
+    "safetyAndEtiquette": [
+     "Buda tasvirlerine sırt dönmeyin, dokunmayın ve üzerine çıkmayın.",
+     "Poya günlerinde alkol satılmaz; planınızı buna göre yapın."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "D",
+     "G",
+     "M"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Prizler İngiliz tipi üç köşeli (G) veya Hint tipi yuvarlak üç uçludur (D/M); Türk fişleri doğrudan girmez, adaptör şarttır."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Musluk suyu içilmez; şişe su veya otellerdeki filtreli su kullanın.",
+    "vaccines": [
+     "Hepatit A ve tifo",
+     "Tetanos-difteri (rutin)",
+     "Kırsal/uzun kalışta Japon ensefaliti ve kuduz; dang hummasına karşı sivrisinek önlemi. Sarıhumma bölgesinden geliyorsanız sertifika istenir."
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "1990"
+   },
+   "tipping": {
+    "custom": "Servis ücreti çoğunlukla hesaba eklidir; şoför ve rehberlere bahşiş beklenir.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Özel şoföre günlük ~5-10 $, otel personeline ve tapınak ayakkabı bekçisine küçük bozukluk yeterlidir."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Sınırlı (KDV %18; yeni turist iade programı yalnızca kayıtlı mağazalarda)",
+    "minSpend": "Mağazaya göre değişir",
+    "customsNote": "Turist KDV iadesi yeni ve yaygın değildir; alışverişten önce mağazanın sisteme kayıtlı olup olmadığını sorun. Değerli taş çıkarırken Ulusal Mücevher Kurumu (NGJA) onaylı fatura ve sertifika isteyin."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.20 - $0.60",
+    "topCarriers": [
+     "Dialog",
+     "SLT-Mobitel",
+     "Hutch"
+    ],
+    "airportSimTrapWarning": "Bandaranaike Havalimanı çıkışındaki Dialog ve Mobitel gişeleri resmî turist paketleri satar ve fiyatlar şehirle aynıdır; döviz bürolarının “SIM dahil” paketlerinde kura dikkat edin."
+   },
+   "touristScams": [
+    {
+     "title": "“Tapınak kapalı” saptırması",
+     "desc": "Tuk-tuk şoförü bugün özel festival olduğunu söyleyip sizi komisyon aldığı dükkânlara götürür.",
+     "tip": "Doğrudan gitmek istediğiniz yeri söyleyin; PickMe ile sabit fiyatlı yolculuk yapın."
+    },
+    {
+     "title": "Mücevher yatırımı tuzağı",
+     "desc": "Değersiz taşlar “yurt dışında kârla satarsın” vaadiyle pahalıya satılır.",
+     "tip": "Yalnızca NGJA sertifikalı mağazalardan alın ve “yatırım” vaatlerine inanmayın."
+    },
+    {
+     "title": "Sahte tren biletleri",
+     "desc": "Kandy ve Ella istasyonlarında aracılar sahte ya da birkaç kat fiyatlı rezerve bilet satar.",
+     "tip": "Biletleri resmî Sri Lanka Railways sitesinden veya gişeden alın."
+    }
+   ]
+  }
+ },
+ "en": {
+  "insights": {
+   "currency": "Sri Lankan Rupee (LKR)",
+   "plugType": "Type D, G, M (230V, 50Hz)",
+   "bestMonths": "December – March (ideal for the west and south coasts, hill country and Cultural Triangle); May – September is best for the east coast (Trincomalee, Arugam Bay); October – November inter-monsoon rains",
+   "safety": {
+    "crimeRateSummary": "Generally safe and welcoming; the main issues are tuk-tuk and gem scams, verbal harassment of solo female travellers and road accidents. Strong currents on the south coast cause drownings every year.",
+    "commonScams": [
+     "Tuk-tuk drivers claiming “the temple is closed, there’s a special festival” and taking you to gem or spice shops",
+     "Gem scammers selling worthless stones you can “resell abroad for double”",
+     "Touts selling fake or overpriced reserved tickets for the Kandy – Ella train"
+    ],
+    "safeTravelTips": [
+     "Use PickMe or Uber; if you hail a tuk-tuk, choose a metered one.",
+     "Never pose with your back to a Buddha statue; even a Buddha tattoo can lead to deportation.",
+     "Swim only at beaches with lifeguards and no red flags; the tourist police number is 1912."
+    ],
+    "emergencyNumbers": {
+     "police": "119",
+     "ambulance": "1990",
+     "general": "119"
+    },
+    "safetyScore": 65,
+    "safetyLevel": "Safe",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Good 4G nationwide with 5G trials in Colombo; weak in national parks and mountain passes",
+    "costPerGbUsd": "~0.20 - 0.60 $",
+    "esimAvailability": "Available – Dialog and SLT-Mobitel tourist SIMs in the arrivals hall; international eSIMs work",
+    "bestCarriers": [
+     "Dialog",
+     "SLT-Mobitel",
+     "Hutch"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Fair – scenic but slow trains (the Kandy – Ella line is famous), very cheap and crowded buses; tuk-tuks for short hops and private drivers for long distances",
+    "costLevel": "Cheap",
+    "singleTicketUsd": "~0.20 - 1 $ (city/intercity bus)",
+    "dailyPassUsd": "No day pass; car with driver ~40 - 60 $ per day",
+    "popularRideApps": [
+     "PickMe",
+     "Uber"
+    ],
+    "taxiAdvice": "PickMe and Uber are the cheapest and most transparent way to get tuk-tuks and cars in Colombo, Kandy and Galle. The airport to Colombo takes ~1 hour; app prices are far below street offers."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "25 - 40 $",
+    "dailyBudgetMidrangeUsd": "60 - 120 $",
+    "budgetMealUsd": "2 - 5 $",
+    "coffeeUsd": "1.50 - 3.50 $",
+    "waterBottleUsd": "0.30 - 0.50 $",
+    "hostelDormUsd": "8 - 15 $",
+    "hotel3StarUsd": "35 - 75 $",
+    "flightCostIndex": "Moderate (Istanbul – Colombo direct ~8 h)",
+    "flightTip": "Turkish Airlines flies Istanbul – Colombo direct; there are also Gulf connections (Qatar Airways, Emirates, flydubai) and SriLankan Airlines. Foreigner entry fees at cultural sites (Sigiriya, Kandy) are dollar-based and add up."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Greet with palms together and “Ayubowan” (may you live long); the sideways head wobble usually means “yes”.",
+     "Remove shoes and hats in temples and wear white or light-coloured, covering clothes.",
+     "Monks are highly respected; front bus seats are reserved for them."
+    ],
+    "festivals": [
+     "Sinhala and Tamil New Year (13-14 April)",
+     "Vesak – Buddha’s birth, enlightenment and passing (May full moon)",
+     "Kandy Esala Perahera (July/August, procession with decorated elephants)"
+    ],
+    "lifestyle": "Every full-moon day (Poya) is a public holiday with no alcohol sales. Life revolves around tea, rice and curry, a passion for cricket and strong family ties."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Sigiriya Lion Rock (UNESCO)",
+     "Kandy – Temple of the Sacred Tooth Relic (Sri Dalada Maligawa)",
+     "Dambulla Cave Temple",
+     "Ella – Nine Arches Bridge and tea hills",
+     "Galle Fort (UNESCO)",
+     "Yala National Park (leopard safari)"
+    ],
+    "bestSeasons": "December – March (ideal for the west and south coasts, hill country and Cultural Triangle); May – September is best for the east coast (Trincomalee, Arugam Bay); October – November inter-monsoon rains",
+    "travelStyleTip": "The island is small but roads are slow: don’t plan more than 3-4 hours of driving a day. The most practical approach combines a private driver with the scenic Kandy – Ella train ride."
+   },
+   "religion": {
+    "primaryReligions": "Theravada Buddhism (~70%), Hinduism (~13%), Islam (~10%), Christianity (~7%).",
+    "respectNorms": "Posing with your back to Buddha images, touching or climbing on them is prohibited and punishable. Cover shoulders and knees and remove shoes in temples.",
+    "sacredSites": [
+     "Temple of the Sacred Tooth Relic (Kandy)",
+     "Sri Maha Bodhi – the sacred fig tree (Anuradhapura)",
+     "Adam’s Peak – Sri Pada (sacred to four religions)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Sinhala and Tamil (official); English is widely used as a link language.",
+    "englishProficiency": "Good – common in tourism, cities and on signs; basic in rural areas.",
+    "phrases": [
+     {
+      "phrase": "ආයුබෝවන් (Ayubowan)",
+      "meaning": "Hello (may you live long)",
+      "translation": "Hello (may you live long)",
+      "pronunciation": "AA-yu-boh-wan"
+     },
+     {
+      "phrase": "ස්තූතියි (Sthuthiyi)",
+      "meaning": "Thank you",
+      "translation": "Thank you",
+      "pronunciation": "STOO-thi-yi"
+     },
+     {
+      "phrase": "කීයද? (Keeyada?)",
+      "meaning": "How much?",
+      "translation": "How much?",
+      "pronunciation": "KEE-ya-da"
+     },
+     {
+      "phrase": "රසයි (Rasai)",
+      "meaning": "Delicious",
+      "translation": "Delicious",
+      "pronunciation": "ra-SAI"
+     },
+     {
+      "phrase": "வணக்கம் (Vanakkam)",
+      "meaning": "Hello (in Tamil; north and east)",
+      "translation": "Hello (in Tamil; north and east)",
+      "pronunciation": "va-NUK-kum"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "It has a 2,500-year Buddhist civilisation beginning with the Anuradhapura Kingdom in the 4th century BC. After Portuguese, Dutch and British rule it became independent as Ceylon in 1948 and took the name Sri Lanka in 1972. After the 1983-2009 civil war and the 2022 economic crisis, tourism is driving recovery.",
+    "milestones": [
+     "247 BC: Buddhism arrives under King Devanampiya Tissa",
+     "1815: The Kandyan Kingdom falls to the British",
+     "1948: Independence as Ceylon",
+     "2009: End of the civil war"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Rice and curry (with many vegetable, dhal and fish curries)",
+     "Kottu roti (chopped roti stir-fried with vegetables and meat)",
+     "Hoppers / appa (bowl-shaped coconut pancakes, with egg)"
+    ],
+    "traditionalDrinks": [
+     "Ceylon tea",
+     "King coconut water (thambili)",
+     "Arrack (coconut-flower spirit)"
+    ],
+    "streetFoodAndDesserts": [
+     "Isso vadai (prawn lentil fritters)",
+     "Wattalappam (coconut and palm-sugar custard)",
+     "Buffalo curd with kithul treacle"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Sirimavo Bandaranaike (world’s first female prime minister)",
+     "Muttiah Muralitharan (record Test cricket wicket-taker)",
+     "Geoffrey Bawa (pioneer architect of tropical modernism)"
+    ],
+    "strongSectors": [
+     "Ceylon tea exports",
+     "Apparel and textiles",
+     "Tourism and gemstones (sapphires)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Cards are common in hotels and restaurants; cash is needed for tuk-tuks, markets and small shops. ATMs are plentiful in towns; LKR is hard to exchange abroad, so spend leftover rupees before leaving.",
+    "tippingCulture": "Restaurants and hotels usually add a 10% service charge; drivers and guides expect ~5-10 $ a day.",
+    "economicPillars": "Apparel, tea, tourism, overseas workers’ remittances and port/logistics services."
+   }
+  },
+  "itin": {
+   "routeName": "Cultural Triangle to the South Coast: Sigiriya, Kandy, Ella & Galle",
+   "routeSummary": "A classic 10-day Sri Lanka route from ancient Sigiriya rock to sacred Kandy, on the legendary train to Ella’s tea hills and finally down to Galle Fort and the southern beaches.",
+   "totalDays": 10,
+   "idealDurationText": "10-day itinerary",
+   "bestSeason": "December – March (ideal for the west and south coasts, hill country and Cultural Triangle); May – September is best for the east coast (Trincomalee, Arugam Bay); October – November inter-monsoon rains",
+   "transportMode": "Private driver or buses + scenic Kandy – Ella train + PickMe / Uber tuk-tuks",
+   "paceLevel": "Balanced (culture, nature & beach)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stop 1: Sigiriya & Dambulla (Cultural Triangle)",
+     "recommendedDuration": "2 Days",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "Sigiriya Lion Rock and its frescoes",
+      "Sunrise from Pidurangala Rock",
+      "Dambulla Cave Temple"
+     ],
+     "activities": [
+      "Climb Sigiriya when it opens at 7 am.",
+      "Go on an elephant safari in Minneriya or Kaudulla.",
+      "Cycle around ancient Polonnaruwa."
+     ],
+     "foodAndDrinks": [
+      "Village-style rice and curry",
+      "King coconut water"
+     ],
+     "criticalTips": [
+      "Sigiriya’s foreigner ticket is ~35 $; climb the 1,200 steps with water and a hat.",
+      "Wild elephants may be on roads at dusk; follow your driver’s advice."
+     ],
+     "mapsQuery": "Sigiriya, Sri Lanka"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stop 2: Kandy (sacred city)",
+     "recommendedDuration": "2 Days",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "Temple of the Sacred Tooth Relic",
+      "Peradeniya Royal Botanic Gardens",
+      "Kandy Lake"
+     ],
+     "activities": [
+      "Attend the evening puja at the temple.",
+      "Watch a Kandyan dance show.",
+      "Visit a nearby tea factory."
+     ],
+     "foodAndDrinks": [
+      "Kottu roti",
+      "Ceylon tea"
+     ],
+     "criticalTips": [
+      "Visit the Tooth Temple in white or light clothing covering shoulders and knees.",
+      "Kandy – Ella train reservations open ~30 days ahead and sell out fast; book early."
+     ],
+     "mapsQuery": "Temple of the Sacred Tooth Relic, Kandy, Sri Lanka"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stop 3: Ella (tea hills)",
+     "recommendedDuration": "2 Days",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "Nine Arches Bridge",
+      "Little Adam’s Peak",
+      "Ella Rock"
+     ],
+     "activities": [
+      "Ride the ~7-hour scenic train from Kandy to Ella.",
+      "Hike Little Adam’s Peak at sunrise.",
+      "Walk through the tea plantations."
+     ],
+     "foodAndDrinks": [
+      "Hoppers",
+      "Fresh highland tea"
+     ],
+     "criticalTips": [
+      "Walking on the tracks at Nine Arches is dangerous; check train times and wait at the side.",
+      "Evenings are cool in the hills; bring a light fleece."
+     ],
+     "mapsQuery": "Nine Arches Bridge, Ella, Sri Lanka"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Stop 4: Galle & the south coast (Mirissa, Unawatuna)",
+     "recommendedDuration": "3 Days",
+     "durationBadge": "3 Days",
+     "highlights": [
+      "Galle Fort ramparts and lighthouse",
+      "Whale watching in Mirissa (November – April)",
+      "Unawatuna and Jungle Beach"
+     ],
+     "activities": [
+      "Take a sunset walk on the fort walls.",
+      "Take a surf lesson (Weligama).",
+      "See the stilt fishermen at Koggala."
+     ],
+     "foodAndDrinks": [
+      "Grilled seafood",
+      "Isso vadai",
+      "Wattalappam"
+     ],
+     "criticalTips": [
+      "Seasickness is common on whale trips; choose a licensed, responsible operator.",
+      "From May to September the south coast is in monsoon and seas are rough."
+     ],
+     "mapsQuery": "Galle Fort, Galle, Sri Lanka"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Rice and curry",
+     "Kottu roti",
+     "Hoppers",
+     "Lamprais (Dutch-Burgher rice baked in banana leaf)"
+    ],
+    "drinks": [
+     "Ceylon tea",
+     "Thambili",
+     "Arrack"
+    ],
+    "streetFoods": [
+     "Isso vadai",
+     "Kottu roti",
+     "Wattalappam"
+    ],
+    "diningAdvice": "Sri Lankan food is spicy; say “less spicy” if needed. Muslim eateries (often called “hotel”) serve halal kottu and biryani; eating with your hand is traditional but cutlery is always available."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Type G/D plug adapter",
+     "White/light covering clothes and a sarong for temples",
+     "Mosquito repellent (dengue)",
+     "A light fleece for the hills"
+    ],
+    "safetyAndEtiquette": [
+     "Don’t turn your back on, touch or climb Buddha images.",
+     "No alcohol is sold on Poya days; plan accordingly."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "D",
+     "G",
+     "M"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Sockets are British three-pin (G) or Indian round three-pin (D/M); European plugs don’t fit directly, an adapter is essential."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Tap water isn’t drinkable; use bottled or hotel-filtered water.",
+    "vaccines": [
+     "Hepatitis A and typhoid",
+     "Tetanus-diphtheria (routine)",
+     "Japanese encephalitis and rabies for rural/long stays; mosquito protection against dengue. A yellow fever certificate is required if arriving from an endemic country."
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "1990"
+   },
+   "tipping": {
+    "custom": "A service charge is usually included; tips are expected for drivers and guides.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "~5-10 $ a day for a private driver; small change for hotel staff and temple shoe-minders."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Limited (VAT 18%; new tourist refund scheme at registered shops only)",
+    "minSpend": "Varies by shop",
+    "customsNote": "Tourist VAT refunds are new and not widespread; ask whether a shop is registered before buying. When exporting gems, ask for a receipt and certificate approved by the National Gem & Jewellery Authority (NGJA)."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.20 - $0.60",
+    "topCarriers": [
+     "Dialog",
+     "SLT-Mobitel",
+     "Hutch"
+    ],
+    "airportSimTrapWarning": "Dialog and Mobitel counters at Bandaranaike Airport arrivals sell official tourist packs at city prices; watch the exchange rate in money changers’ “SIM included” deals."
+   },
+   "touristScams": [
+    {
+     "title": "“Temple closed” detour",
+     "desc": "A tuk-tuk driver claims there’s a special festival today and takes you to shops that pay him commission.",
+     "tip": "State your destination firmly and use PickMe for fixed fares."
+    },
+    {
+     "title": "Gem investment trap",
+     "desc": "Worthless stones are sold dearly with the promise of reselling them abroad at a profit.",
+     "tip": "Buy only from NGJA-certified shops and ignore “investment” promises."
+    },
+    {
+     "title": "Fake train tickets",
+     "desc": "Touts at Kandy and Ella stations sell fake or hugely marked-up reserved tickets.",
+     "tip": "Buy tickets from the official Sri Lanka Railways website or ticket office."
+    }
+   ]
+  }
+ },
+ "de": {
+  "insights": {
+   "currency": "Sri-Lanka-Rupie (LKR)",
+   "plugType": "Typ D, G, M (230V, 50Hz)",
+   "bestMonths": "Dezember – März (ideal für West- und Südküste, Hochland und Kulturdreieck); Mai – September am besten für die Ostküste (Trincomalee, Arugam Bay); Oktober – November Zwischenmonsun-Regen",
+   "safety": {
+    "crimeRateSummary": "Im Allgemeinen sicher und gastfreundlich; Hauptprobleme sind Tuk-Tuk- und Edelsteinbetrug, verbale Belästigung allein reisender Frauen und Verkehrsunfälle. Starke Strömungen an der Südküste fordern jedes Jahr Ertrinkungsopfer.",
+    "commonScams": [
+     "Tuk-Tuk-Fahrer, die behaupten, „der Tempel ist zu, heute ist ein Fest“, und zu Edelstein- oder Gewürzläden fahren",
+     "Edelsteinbetrüger, die wertlose Steine verkaufen, die man „im Ausland doppelt so teuer weiterverkaufen“ könne",
+     "Schlepper, die gefälschte oder überteuerte Reservierungen für den Zug Kandy – Ella verkaufen"
+    ],
+    "safeTravelTips": [
+     "PickMe oder Uber nutzen; bei Tuk-Tuks auf der Straße eines mit Taxameter wählen.",
+     "Nie mit dem Rücken zu einer Buddha-Statue posieren; selbst ein Buddha-Tattoo kann zur Ausweisung führen.",
+     "Nur an bewachten Stränden ohne rote Flagge schwimmen; die Touristenpolizei erreicht man unter 1912."
+    ],
+    "emergencyNumbers": {
+     "police": "119",
+     "ambulance": "1990",
+     "general": "119"
+    },
+    "safetyScore": 65,
+    "safetyLevel": "Sicher",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Gutes 4G landesweit, 5G-Tests in Colombo; schwach in Nationalparks und auf Bergpässen",
+    "costPerGbUsd": "~0.20 - 0.60 $",
+    "esimAvailability": "Verfügbar – Touristen-SIMs von Dialog und SLT-Mobitel in der Ankunftshalle; internationale eSIMs funktionieren",
+    "bestCarriers": [
+     "Dialog",
+     "SLT-Mobitel",
+     "Hutch"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Mittel – landschaftlich schöne, aber langsame Züge (berühmt: Kandy – Ella), sehr billige und volle Busse; Tuk-Tuks für kurze Strecken, Privatfahrer für lange",
+    "costLevel": "Günstig",
+    "singleTicketUsd": "~0.20 - 1 $ (Stadt-/Überlandbus)",
+    "dailyPassUsd": "Kein Tagesticket; Auto mit Fahrer ~40 - 60 $ pro Tag",
+    "popularRideApps": [
+     "PickMe",
+     "Uber"
+    ],
+    "taxiAdvice": "PickMe und Uber sind in Colombo, Kandy und Galle der günstigste und transparenteste Weg zu Tuk-Tuks und Autos. Vom Flughafen nach Colombo ~1 Stunde; App-Preise liegen weit unter Straßenangeboten."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "25 - 40 $",
+    "dailyBudgetMidrangeUsd": "60 - 120 $",
+    "budgetMealUsd": "2 - 5 $",
+    "coffeeUsd": "1.50 - 3.50 $",
+    "waterBottleUsd": "0.30 - 0.50 $",
+    "hostelDormUsd": "8 - 15 $",
+    "hotel3StarUsd": "35 - 75 $",
+    "flightCostIndex": "Mittel (Istanbul – Colombo direkt ~8 Std.)",
+    "flightTip": "Turkish Airlines fliegt direkt Istanbul – Colombo; daneben gibt es Golf-Verbindungen (Qatar Airways, Emirates, flydubai) und SriLankan Airlines. Die Ausländer-Eintritte an Kulturstätten (Sigiriya, Kandy) sind dollarbasiert und summieren sich."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Begrüßt wird mit zusammengelegten Händen und „Ayubowan“ (mögest du lange leben); das seitliche Kopfwackeln bedeutet meist „ja“.",
+     "In Tempeln Schuhe und Hut abnehmen und weiße oder helle, bedeckende Kleidung tragen.",
+     "Mönche werden hoch geachtet; die vorderen Busplätze sind für sie reserviert."
+    ],
+    "festivals": [
+     "Singhalesisch-tamilisches Neujahr (13.-14. April)",
+     "Vesak – Geburt, Erleuchtung und Tod Buddhas (Vollmond im Mai)",
+     "Kandy Esala Perahera (Juli/August, Prozession mit geschmückten Elefanten)"
+    ],
+    "lifestyle": "Jeder Vollmondtag (Poya) ist Feiertag ohne Alkoholverkauf. Das Leben dreht sich um Tee, Reis und Curry, Cricket-Leidenschaft und enge Familienbande."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Löwenfelsen Sigiriya (UNESCO)",
+     "Kandy – Zahntempel (Sri Dalada Maligawa)",
+     "Höhlentempel von Dambulla",
+     "Ella – Nine-Arches-Brücke und Teehügel",
+     "Fort von Galle (UNESCO)",
+     "Yala-Nationalpark (Leopardensafari)"
+    ],
+    "bestSeasons": "Dezember – März (ideal für West- und Südküste, Hochland und Kulturdreieck); Mai – September am besten für die Ostküste (Trincomalee, Arugam Bay); Oktober – November Zwischenmonsun-Regen",
+    "travelStyleTip": "Die Insel ist klein, aber die Straßen sind langsam: nicht mehr als 3-4 Stunden Fahrt pro Tag planen. Am praktischsten ist ein Privatfahrer kombiniert mit der Panoramafahrt Kandy – Ella."
+   },
+   "religion": {
+    "primaryReligions": "Theravada-Buddhismus (~70 %), Hinduismus (~13 %), Islam (~10 %), Christentum (~7 %).",
+    "respectNorms": "Mit dem Rücken zu Buddha-Figuren zu posieren, sie zu berühren oder zu besteigen ist verboten und strafbar. In Tempeln Schultern und Knie bedecken, Schuhe ausziehen.",
+    "sacredSites": [
+     "Zahntempel (Kandy)",
+     "Sri Maha Bodhi – der heilige Bodhi-Baum (Anuradhapura)",
+     "Adam’s Peak – Sri Pada (vier Religionen heilig)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Singhalesisch und Tamil (Amtssprachen); Englisch ist als Verkehrssprache verbreitet.",
+    "englishProficiency": "Gut – im Tourismus, in Städten und auf Schildern verbreitet; auf dem Land einfach.",
+    "phrases": [
+     {
+      "phrase": "ආයුබෝවන් (Ayubowan)",
+      "meaning": "Hallo (mögest du lange leben)",
+      "translation": "Hallo (mögest du lange leben)",
+      "pronunciation": "AA-yu-boh-wan"
+     },
+     {
+      "phrase": "ස්තූතියි (Sthuthiyi)",
+      "meaning": "Danke",
+      "translation": "Danke",
+      "pronunciation": "STOO-thi-yi"
+     },
+     {
+      "phrase": "කීයද? (Keeyada?)",
+      "meaning": "Wie viel?",
+      "translation": "Wie viel?",
+      "pronunciation": "KEE-ya-da"
+     },
+     {
+      "phrase": "රසයි (Rasai)",
+      "meaning": "Lecker",
+      "translation": "Lecker",
+      "pronunciation": "ra-SAI"
+     },
+     {
+      "phrase": "வணக்கம் (Vanakkam)",
+      "meaning": "Hallo (auf Tamil; Norden und Osten)",
+      "translation": "Hallo (auf Tamil; Norden und Osten)",
+      "pronunciation": "va-NUK-kum"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Das Land hat eine 2.500-jährige buddhistische Zivilisation, die mit dem Königreich Anuradhapura im 4. Jh. v. Chr. begann. Nach portugiesischer, niederländischer und britischer Herrschaft wurde es 1948 als Ceylon unabhängig und heißt seit 1972 Sri Lanka. Nach dem Bürgerkrieg 1983-2009 und der Wirtschaftskrise 2022 erholt es sich durch den Tourismus.",
+    "milestones": [
+     "247 v. Chr.: Ankunft des Buddhismus unter König Devanampiya Tissa",
+     "1815: Das Königreich Kandy fällt an die Briten",
+     "1948: Unabhängigkeit als Ceylon",
+     "2009: Ende des Bürgerkriegs"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Reis und Curry (mit vielen Gemüse-, Dal- und Fischcurrys)",
+     "Kottu Roti (gehacktes Roti mit Gemüse und Fleisch gebraten)",
+     "Hoppers / Appa (schalenförmige Kokospfannkuchen, mit Ei)"
+    ],
+    "traditionalDrinks": [
+     "Ceylon-Tee",
+     "Königskokoswasser (Thambili)",
+     "Arrak (Schnaps aus Kokosblüten)"
+    ],
+    "streetFoodAndDesserts": [
+     "Isso Vadai (Linsenküchlein mit Garnelen)",
+     "Wattalappam (Kokos-Palmzucker-Pudding)",
+     "Büffeljoghurt mit Kithul-Sirup"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Sirimavo Bandaranaike (erste Premierministerin der Welt)",
+     "Muttiah Muralitharan (Rekord-Wicket-Taker im Test-Cricket)",
+     "Geoffrey Bawa (Pionier des tropischen Modernismus)"
+    ],
+    "strongSectors": [
+     "Export von Ceylon-Tee",
+     "Bekleidung und Textilien",
+     "Tourismus und Edelsteine (Saphire)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Karten sind in Hotels und Restaurants üblich; für Tuk-Tuks, Märkte und kleine Läden braucht man Bargeld. Geldautomaten gibt es reichlich; LKR lässt sich im Ausland kaum tauschen, Reste vor der Abreise ausgeben.",
+    "tippingCulture": "Restaurants und Hotels schlagen meist 10 % Service auf; Fahrer und Guides erwarten ~5-10 $ pro Tag.",
+    "economicPillars": "Bekleidung, Tee, Tourismus, Rücküberweisungen und Hafen-/Logistikdienste."
+   }
+  },
+  "itin": {
+   "routeName": "Vom Kulturdreieck an die Südküste: Sigiriya, Kandy, Ella & Galle",
+   "routeSummary": "Eine klassische 10-tägige Route vom antiken Felsen Sigiriya ins heilige Kandy, mit dem legendären Zug in die Teehügel von Ella und schließlich hinunter zum Fort von Galle und den Südstränden.",
+   "totalDays": 10,
+   "idealDurationText": "10-tägige Reise",
+   "bestSeason": "Dezember – März (ideal für West- und Südküste, Hochland und Kulturdreieck); Mai – September am besten für die Ostküste (Trincomalee, Arugam Bay); Oktober – November Zwischenmonsun-Regen",
+   "transportMode": "Privatfahrer oder Busse + Panoramazug Kandy – Ella + PickMe / Uber-Tuk-Tuks",
+   "paceLevel": "Ausgewogen (Kultur, Natur & Strand)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stopp 1: Sigiriya & Dambulla (Kulturdreieck)",
+     "recommendedDuration": "2 Tage",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "Löwenfelsen Sigiriya und seine Fresken",
+      "Sonnenaufgang vom Pidurangala-Felsen",
+      "Höhlentempel von Dambulla"
+     ],
+     "activities": [
+      "Sigiriya zur Öffnung um 7 Uhr besteigen.",
+      "Auf Elefantensafari in Minneriya oder Kaudulla gehen.",
+      "Mit dem Rad das antike Polonnaruwa erkunden."
+     ],
+     "foodAndDrinks": [
+      "Reis und Curry nach Dorfart",
+      "Königskokoswasser"
+     ],
+     "criticalTips": [
+      "Der Ausländer-Eintritt für Sigiriya liegt bei ~35 $; die 1.200 Stufen mit Wasser und Hut steigen.",
+      "In der Dämmerung können wilde Elefanten auf der Straße sein; dem Fahrer folgen."
+     ],
+     "mapsQuery": "Sigiriya, Sri Lanka"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stopp 2: Kandy (heilige Stadt)",
+     "recommendedDuration": "2 Tage",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "Zahntempel",
+      "Königlicher Botanischer Garten Peradeniya",
+      "Kandy-See"
+     ],
+     "activities": [
+      "Die Abend-Puja im Tempel erleben.",
+      "Eine Kandy-Tanzvorführung ansehen.",
+      "Eine Teefabrik in der Nähe besuchen."
+     ],
+     "foodAndDrinks": [
+      "Kottu Roti",
+      "Ceylon-Tee"
+     ],
+     "criticalTips": [
+      "Den Zahntempel in weißer oder heller Kleidung mit bedeckten Schultern und Knien besuchen.",
+      "Reservierungen für den Zug Kandy – Ella öffnen ~30 Tage vorher und sind schnell weg; früh buchen."
+     ],
+     "mapsQuery": "Temple of the Sacred Tooth Relic, Kandy, Sri Lanka"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stopp 3: Ella (Teehügel)",
+     "recommendedDuration": "2 Tage",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "Nine-Arches-Brücke",
+      "Little Adam’s Peak",
+      "Ella Rock"
+     ],
+     "activities": [
+      "Die ~7-stündige Panoramazugfahrt von Kandy nach Ella machen.",
+      "Bei Sonnenaufgang auf den Little Adam’s Peak wandern.",
+      "Durch die Teeplantagen wandern."
+     ],
+     "foodAndDrinks": [
+      "Hoppers",
+      "Frischer Hochlandtee"
+     ],
+     "criticalTips": [
+      "Auf den Gleisen der Nine-Arches-Brücke zu laufen ist gefährlich; Zugzeiten prüfen und seitlich warten.",
+      "Abends ist es im Hochland kühl; eine leichte Fleecejacke mitnehmen."
+     ],
+     "mapsQuery": "Nine Arches Bridge, Ella, Sri Lanka"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Stopp 4: Galle & Südküste (Mirissa, Unawatuna)",
+     "recommendedDuration": "3 Tage",
+     "durationBadge": "3 Tage",
+     "highlights": [
+      "Wälle und Leuchtturm des Forts von Galle",
+      "Walbeobachtung in Mirissa (November – April)",
+      "Unawatuna und Jungle Beach"
+     ],
+     "activities": [
+      "Bei Sonnenuntergang auf den Festungsmauern spazieren.",
+      "Einen Surfkurs machen (Weligama).",
+      "Die Stelzenfischer bei Koggala ansehen."
+     ],
+     "foodAndDrinks": [
+      "Gegrillte Meeresfrüchte",
+      "Isso Vadai",
+      "Wattalappam"
+     ],
+     "criticalTips": [
+      "Seekrankheit ist bei Walausflügen häufig; einen lizenzierten, verantwortungsvollen Anbieter wählen.",
+      "Von Mai bis September herrscht an der Südküste Monsun, das Meer ist rau."
+     ],
+     "mapsQuery": "Galle Fort, Galle, Sri Lanka"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Reis und Curry",
+     "Kottu Roti",
+     "Hoppers",
+     "Lamprais (Burgher-Reis im Bananenblatt gebacken)"
+    ],
+    "drinks": [
+     "Ceylon-Tee",
+     "Thambili",
+     "Arrak"
+    ],
+    "streetFoods": [
+     "Isso Vadai",
+     "Kottu Roti",
+     "Wattalappam"
+    ],
+    "diningAdvice": "Die Küche ist scharf; bei Bedarf „less spicy“ sagen. Muslimische Lokale (oft „Hotel“ genannt) bieten Halal-Kottu und Biryani; mit der Hand zu essen ist traditionell, Besteck gibt es aber immer."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Reiseadapter Typ G/D",
+     "Weiße/helle bedeckende Kleidung und Sarong für Tempel",
+     "Mückenschutz (Dengue)",
+     "Leichtes Fleece für das Hochland"
+    ],
+    "safetyAndEtiquette": [
+     "Buddha-Figuren nicht den Rücken zukehren, berühren oder besteigen.",
+     "An Poya-Tagen wird kein Alkohol verkauft; entsprechend planen."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "D",
+     "G",
+     "M"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Steckdosen sind britisch dreipolig (G) oder indisch rund dreipolig (D/M); Eurostecker passen nicht direkt, ein Adapter ist Pflicht."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Leitungswasser nicht trinken; Flaschen- oder gefiltertes Hotelwasser nutzen.",
+    "vaccines": [
+     "Hepatitis A und Typhus",
+     "Tetanus-Diphtherie (Standard)",
+     "Japanische Enzephalitis und Tollwut bei ländlichen/langen Aufenthalten; Mückenschutz gegen Dengue. Gelbfieber-Nachweis bei Einreise aus Endemiegebieten."
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "1990"
+   },
+   "tipping": {
+    "custom": "Service ist meist enthalten; Fahrer und Guides erwarten Trinkgeld.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "~5-10 $ pro Tag für den Privatfahrer; Kleingeld für Hotelpersonal und Schuhwächter am Tempel."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Eingeschränkt (MwSt. 18 %; neues Erstattungssystem nur in registrierten Geschäften)",
+    "minSpend": "Je nach Geschäft",
+    "customsNote": "Die Mehrwertsteuererstattung für Touristen ist neu und kaum verbreitet; vor dem Kauf nach der Registrierung fragen. Für die Ausfuhr von Edelsteinen Beleg und Zertifikat der National Gem & Jewellery Authority (NGJA) verlangen."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.20 - $0.60",
+    "topCarriers": [
+     "Dialog",
+     "SLT-Mobitel",
+     "Hutch"
+    ],
+    "airportSimTrapWarning": "Die Schalter von Dialog und Mobitel in der Ankunftshalle von Bandaranaike verkaufen offizielle Touristenpakete zu Stadtpreisen; bei „SIM inklusive“-Angeboten von Wechselstuben auf den Kurs achten."
+   },
+   "touristScams": [
+    {
+     "title": "„Tempel geschlossen“-Umweg",
+     "desc": "Ein Tuk-Tuk-Fahrer behauptet, heute sei ein Fest, und fährt zu Läden, die ihm Provision zahlen.",
+     "tip": "Das Ziel klar nennen und PickMe mit Festpreis nutzen."
+    },
+    {
+     "title": "Edelstein-Investmentfalle",
+     "desc": "Wertlose Steine werden teuer mit dem Versprechen verkauft, sie im Ausland gewinnbringend weiterzuverkaufen.",
+     "tip": "Nur in NGJA-zertifizierten Läden kaufen und „Investment“-Versprechen ignorieren."
+    },
+    {
+     "title": "Gefälschte Zugtickets",
+     "desc": "Schlepper an den Bahnhöfen Kandy und Ella verkaufen gefälschte oder stark überteuerte Reservierungen.",
+     "tip": "Tickets auf der offiziellen Website von Sri Lanka Railways oder am Schalter kaufen."
+    }
+   ]
+  }
+ },
+ "es": {
+  "insights": {
+   "currency": "Rupia de Sri Lanka (LKR)",
+   "plugType": "Tipo D, G, M (230V, 50Hz)",
+   "bestMonths": "Diciembre – marzo (ideal para las costas oeste y sur, las tierras altas y el Triángulo Cultural); mayo – septiembre, lo mejor para la costa este (Trincomalee, Arugam Bay); octubre – noviembre, lluvias entre monzones",
+   "safety": {
+    "crimeRateSummary": "En general es seguro y acogedor; los problemas principales son estafas de tuk-tuk y gemas, acoso verbal a viajeras solas y accidentes de tráfico. Las fuertes corrientes de la costa sur causan ahogamientos cada año.",
+    "commonScams": [
+     "Conductores de tuk-tuk que dicen “el templo está cerrado, hay un festival” y te llevan a tiendas de gemas o especias",
+     "Estafadores que venden piedras sin valor que “podrás revender al doble en el extranjero”",
+     "Revendedores de billetes reservados falsos o carísimos para el tren Kandy – Ella"
+    ],
+    "safeTravelTips": [
+     "Usa PickMe o Uber; si paras un tuk-tuk en la calle, elige uno con taxímetro.",
+     "No poses nunca de espaldas a un buda; incluso un tatuaje de Buda puede acarrear la deportación.",
+     "Báñate solo en playas con socorrista y sin bandera roja; la policía turística es el 1912."
+    ],
+    "emergencyNumbers": {
+     "police": "119",
+     "ambulance": "1990",
+     "general": "119"
+    },
+    "safetyScore": 65,
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Buen 4G en todo el país y pruebas de 5G en Colombo; débil en parques nacionales y puertos de montaña",
+    "costPerGbUsd": "~0.20 - 0.60 $",
+    "esimAvailability": "Disponible – SIM turísticas de Dialog y SLT-Mobitel en llegadas; eSIM internacionales funcionan",
+    "bestCarriers": [
+     "Dialog",
+     "SLT-Mobitel",
+     "Hutch"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Regular – trenes lentos pero panorámicos (famosa la línea Kandy – Ella), autobuses muy baratos y llenos; tuk-tuks para trayectos cortos y conductor privado para largos",
+    "costLevel": "Barato",
+    "singleTicketUsd": "~0.20 - 1 $ (autobús urbano/interurbano)",
+    "dailyPassUsd": "No hay pase diario; coche con conductor ~40 - 60 $ al día",
+    "popularRideApps": [
+     "PickMe",
+     "Uber"
+    ],
+    "taxiAdvice": "PickMe y Uber son la forma más barata y transparente de pedir tuk-tuks y coches en Colombo, Kandy y Galle. Del aeropuerto a Colombo ~1 hora; el precio en la app es muy inferior al de la calle."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "25 - 40 $",
+    "dailyBudgetMidrangeUsd": "60 - 120 $",
+    "budgetMealUsd": "2 - 5 $",
+    "coffeeUsd": "1.50 - 3.50 $",
+    "waterBottleUsd": "0.30 - 0.50 $",
+    "hostelDormUsd": "8 - 15 $",
+    "hotel3StarUsd": "35 - 75 $",
+    "flightCostIndex": "Moderado (Estambul – Colombo directo ~8 h)",
+    "flightTip": "Turkish Airlines vuela directo Estambul – Colombo; también hay conexiones vía el Golfo (Qatar Airways, Emirates, flydubai) y SriLankan Airlines. Las entradas para extranjeros en sitios culturales (Sigiriya, Kandy) van en dólares y suman."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Se saluda con las palmas juntas y “Ayubowan” (que vivas mucho); el balanceo lateral de la cabeza suele significar “sí”.",
+     "En los templos quítate zapatos y sombrero y viste ropa blanca o clara que cubra.",
+     "Los monjes son muy respetados; los asientos delanteros del autobús son para ellos."
+    ],
+    "festivals": [
+     "Año Nuevo cingalés y tamil (13-14 de abril)",
+     "Vesak – nacimiento, iluminación y muerte de Buda (luna llena de mayo)",
+     "Kandy Esala Perahera (julio/agosto, procesión con elefantes engalanados)"
+    ],
+    "lifestyle": "Cada día de luna llena (Poya) es festivo y no se vende alcohol. La vida gira en torno al té, el arroz con curri, la pasión por el críquet y los fuertes lazos familiares."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Roca del León de Sigiriya (UNESCO)",
+     "Kandy – Templo del Diente de Buda (Sri Dalada Maligawa)",
+     "Templo de la cueva de Dambulla",
+     "Ella – puente de los Nueve Arcos y colinas de té",
+     "Fuerte de Galle (UNESCO)",
+     "Parque Nacional de Yala (safari de leopardos)"
+    ],
+    "bestSeasons": "Diciembre – marzo (ideal para las costas oeste y sur, las tierras altas y el Triángulo Cultural); mayo – septiembre, lo mejor para la costa este (Trincomalee, Arugam Bay); octubre – noviembre, lluvias entre monzones",
+    "travelStyleTip": "La isla es pequeña pero las carreteras son lentas: no planees más de 3-4 horas de trayecto al día. Lo más práctico es combinar conductor privado con el tren panorámico Kandy – Ella."
+   },
+   "religion": {
+    "primaryReligions": "Budismo theravada (~70 %), hinduismo (~13 %), islam (~10 %), cristianismo (~7 %).",
+    "respectNorms": "Posar de espaldas a imágenes de Buda, tocarlas o subirse a ellas está prohibido y castigado. En templos cubre hombros y rodillas y descálzate.",
+    "sacredSites": [
+     "Templo del Diente de Buda (Kandy)",
+     "Sri Maha Bodhi – la higuera sagrada (Anuradhapura)",
+     "Pico de Adán – Sri Pada (sagrado para cuatro religiones)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Cingalés y tamil (oficiales); el inglés se usa mucho como lengua franca.",
+    "englishProficiency": "Bueno – habitual en turismo, ciudades y carteles; básico en el campo.",
+    "phrases": [
+     {
+      "phrase": "ආයුබෝවන් (Ayubowan)",
+      "meaning": "Hola (que vivas mucho)",
+      "translation": "Hola (que vivas mucho)",
+      "pronunciation": "AA-yu-boh-wan"
+     },
+     {
+      "phrase": "ස්තූතියි (Sthuthiyi)",
+      "meaning": "Gracias",
+      "translation": "Gracias",
+      "pronunciation": "STOO-thi-yi"
+     },
+     {
+      "phrase": "කීයද? (Keeyada?)",
+      "meaning": "¿Cuánto?",
+      "translation": "¿Cuánto?",
+      "pronunciation": "KEE-ya-da"
+     },
+     {
+      "phrase": "රසයි (Rasai)",
+      "meaning": "Delicioso",
+      "translation": "Delicioso",
+      "pronunciation": "ra-SAI"
+     },
+     {
+      "phrase": "வணக்கம் (Vanakkam)",
+      "meaning": "Hola (en tamil; norte y este)",
+      "translation": "Hola (en tamil; norte y este)",
+      "pronunciation": "va-NUK-kum"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Tiene una civilización budista de 2.500 años que comienza con el reino de Anuradhapura en el siglo IV a. C. Tras el dominio portugués, neerlandés y británico se independizó como Ceilán en 1948 y adoptó el nombre de Sri Lanka en 1972. Tras la guerra civil de 1983-2009 y la crisis de 2022, el turismo impulsa la recuperación.",
+    "milestones": [
+     "247 a. C.: Llega el budismo con el rey Devanampiya Tissa",
+     "1815: El reino de Kandy cae ante los británicos",
+     "1948: Independencia como Ceilán",
+     "2009: Fin de la guerra civil"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Arroz con curri (con muchos curris de verduras, dhal y pescado)",
+     "Kottu roti (roti troceado salteado con verduras y carne)",
+     "Hoppers / appa (crepes de coco en forma de cuenco, con huevo)"
+    ],
+    "traditionalDrinks": [
+     "Té de Ceilán",
+     "Agua de coco rey (thambili)",
+     "Arrack (licor de flor de coco)"
+    ],
+    "streetFoodAndDesserts": [
+     "Isso vadai (buñuelos de lentejas con gambas)",
+     "Wattalappam (flan de coco y azúcar de palma)",
+     "Cuajada de búfala con melaza de kithul"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Sirimavo Bandaranaike (primera mujer primera ministra del mundo)",
+     "Muttiah Muralitharan (récord de wickets en críquet de Test)",
+     "Geoffrey Bawa (arquitecto pionero del modernismo tropical)"
+    ],
+    "strongSectors": [
+     "Exportación de té de Ceilán",
+     "Confección y textiles",
+     "Turismo y piedras preciosas (zafiros)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Las tarjetas son habituales en hoteles y restaurantes; para tuk-tuks, mercados y tiendas pequeñas hace falta efectivo. Hay muchos cajeros; la LKR es difícil de cambiar fuera, gasta lo que sobre antes de salir.",
+    "tippingCulture": "Restaurantes y hoteles suelen añadir un 10 % de servicio; conductores y guías esperan ~5-10 $ al día.",
+    "economicPillars": "Confección, té, turismo, remesas y servicios portuarios y logísticos."
+   }
+  },
+  "itin": {
+   "routeName": "Del Triángulo Cultural a la costa sur: Sigiriya, Kandy, Ella y Galle",
+   "routeSummary": "Una ruta clásica de 10 días desde la antigua roca de Sigiriya a la sagrada Kandy, en el legendario tren a las colinas de té de Ella y, por último, al fuerte de Galle y las playas del sur.",
+   "totalDays": 10,
+   "idealDurationText": "Itinerario de 10 días",
+   "bestSeason": "Diciembre – marzo (ideal para las costas oeste y sur, las tierras altas y el Triángulo Cultural); mayo – septiembre, lo mejor para la costa este (Trincomalee, Arugam Bay); octubre – noviembre, lluvias entre monzones",
+   "transportMode": "Conductor privado o autobuses + tren panorámico Kandy – Ella + tuk-tuks de PickMe / Uber",
+   "paceLevel": "Equilibrado (cultura, naturaleza y playa)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Sigiriya y Dambulla (Triángulo Cultural)",
+     "recommendedDuration": "2 Días",
+     "durationBadge": "2 Días",
+     "highlights": [
+      "Roca del León de Sigiriya y sus frescos",
+      "Amanecer desde la roca de Pidurangala",
+      "Templo de la cueva de Dambulla"
+     ],
+     "activities": [
+      "Sube a Sigiriya a las 7:00, al abrir.",
+      "Haz un safari de elefantes en Minneriya o Kaudulla.",
+      "Recorre en bici la antigua Polonnaruwa."
+     ],
+     "foodAndDrinks": [
+      "Arroz con curri al estilo rural",
+      "Agua de coco rey"
+     ],
+     "criticalTips": [
+      "La entrada para extranjeros a Sigiriya cuesta ~35 $; sube los 1.200 escalones con agua y sombrero.",
+      "Al anochecer puede haber elefantes salvajes en la carretera; haz caso al conductor."
+     ],
+     "mapsQuery": "Sigiriya, Sri Lanka"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Kandy (ciudad sagrada)",
+     "recommendedDuration": "2 Días",
+     "durationBadge": "2 Días",
+     "highlights": [
+      "Templo del Diente de Buda",
+      "Real Jardín Botánico de Peradeniya",
+      "Lago de Kandy"
+     ],
+     "activities": [
+      "Asiste a la puja vespertina del templo.",
+      "Ve un espectáculo de danza kandyana.",
+      "Visita una fábrica de té cercana."
+     ],
+     "foodAndDrinks": [
+      "Kottu roti",
+      "Té de Ceilán"
+     ],
+     "criticalTips": [
+      "Visita el Templo del Diente con ropa blanca o clara que cubra hombros y rodillas.",
+      "Las reservas del tren Kandy – Ella abren ~30 días antes y se agotan rápido; reserva pronto."
+     ],
+     "mapsQuery": "Temple of the Sacred Tooth Relic, Kandy, Sri Lanka"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Ella (colinas de té)",
+     "recommendedDuration": "2 Días",
+     "durationBadge": "2 Días",
+     "highlights": [
+      "Puente de los Nueve Arcos",
+      "Little Adam’s Peak",
+      "Ella Rock"
+     ],
+     "activities": [
+      "Haz el trayecto panorámico de ~7 h en tren de Kandy a Ella.",
+      "Sube al Little Adam’s Peak al amanecer.",
+      "Pasea por las plantaciones de té."
+     ],
+     "foodAndDrinks": [
+      "Hoppers",
+      "Té recién hecho de las tierras altas"
+     ],
+     "criticalTips": [
+      "Caminar por las vías en Nine Arches es peligroso; consulta los horarios y espera a un lado.",
+      "Las noches son frescas en la montaña; lleva un forro polar ligero."
+     ],
+     "mapsQuery": "Nine Arches Bridge, Ella, Sri Lanka"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Galle y la costa sur (Mirissa, Unawatuna)",
+     "recommendedDuration": "3 Días",
+     "durationBadge": "3 Días",
+     "highlights": [
+      "Murallas y faro del fuerte de Galle",
+      "Avistamiento de ballenas en Mirissa (noviembre – abril)",
+      "Unawatuna y Jungle Beach"
+     ],
+     "activities": [
+      "Pasea por las murallas al atardecer.",
+      "Toma una clase de surf (Weligama).",
+      "Contempla a los pescadores en zancos de Koggala."
+     ],
+     "foodAndDrinks": [
+      "Marisco a la parrilla",
+      "Isso vadai",
+      "Wattalappam"
+     ],
+     "criticalTips": [
+      "El mareo es habitual en las salidas de ballenas; elige un operador con licencia y responsable.",
+      "De mayo a septiembre la costa sur está en monzón y el mar está bravo."
+     ],
+     "mapsQuery": "Galle Fort, Galle, Sri Lanka"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Arroz con curri",
+     "Kottu roti",
+     "Hoppers",
+     "Lamprais (arroz burgher horneado en hoja de plátano)"
+    ],
+    "drinks": [
+     "Té de Ceilán",
+     "Thambili",
+     "Arrack"
+    ],
+    "streetFoods": [
+     "Isso vadai",
+     "Kottu roti",
+     "Wattalappam"
+    ],
+    "diningAdvice": "La comida es picante; di “less spicy” si hace falta. Los locales musulmanes (a menudo llamados “hotel”) sirven kottu y biryani halal; comer con la mano es tradicional, pero siempre hay cubiertos."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptador de enchufe tipo G/D",
+     "Ropa blanca/clara que cubra y un sarong para templos",
+     "Repelente de mosquitos (dengue)",
+     "Un forro polar ligero para la montaña"
+    ],
+    "safetyAndEtiquette": [
+     "No des la espalda a los budas, no los toques ni te subas.",
+     "Los días de Poya no se vende alcohol; planifícate."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "D",
+     "G",
+     "M"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Los enchufes son británicos de tres patas (G) o indios redondos (D/M); los europeos no encajan, el adaptador es imprescindible."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "El agua del grifo no es potable; usa embotellada o filtrada del hotel.",
+    "vaccines": [
+     "Hepatitis A y fiebre tifoidea",
+     "Tétanos-difteria (rutina)",
+     "Encefalitis japonesa y rabia para estancias rurales/largas; protección contra el dengue. Se exige certificado de fiebre amarilla si llegas de un país endémico."
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "1990"
+   },
+   "tipping": {
+    "custom": "El servicio suele estar incluido; conductores y guías esperan propina.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "~5-10 $ al día al conductor privado; algo suelto para el personal del hotel y los guardazapatos del templo."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Limitado (IVA 18 %; nuevo sistema de devolución solo en tiendas registradas)",
+    "minSpend": "Depende de la tienda",
+    "customsNote": "La devolución del IVA a turistas es nueva y poco extendida; pregunta si la tienda está registrada antes de comprar. Para exportar gemas, pide factura y certificado aprobados por la National Gem & Jewellery Authority (NGJA)."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.20 - $0.60",
+    "topCarriers": [
+     "Dialog",
+     "SLT-Mobitel",
+     "Hutch"
+    ],
+    "airportSimTrapWarning": "Los mostradores de Dialog y Mobitel en llegadas del aeropuerto Bandaranaike venden paquetes turísticos oficiales a precio de ciudad; ojo al tipo de cambio en ofertas “SIM incluida” de casas de cambio."
+   },
+   "touristScams": [
+    {
+     "title": "Desvío del “templo cerrado”",
+     "desc": "Un conductor de tuk-tuk dice que hoy hay un festival y te lleva a tiendas que le pagan comisión.",
+     "tip": "Indica tu destino con firmeza y usa PickMe con precio fijo."
+    },
+    {
+     "title": "Trampa de inversión en gemas",
+     "desc": "Se venden caras piedras sin valor con la promesa de revenderlas con beneficio en el extranjero.",
+     "tip": "Compra solo en tiendas certificadas por la NGJA e ignora promesas de “inversión”."
+    },
+    {
+     "title": "Billetes de tren falsos",
+     "desc": "En las estaciones de Kandy y Ella, revendedores venden billetes reservados falsos o muy encarecidos.",
+     "tip": "Compra los billetes en la web oficial de Sri Lanka Railways o en taquilla."
+    }
+   ]
+  }
+ },
+ "ru": {
+  "insights": {
+   "currency": "Шри-ланкийская рупия (LKR)",
+   "plugType": "Тип D, G, M (230V, 50Hz)",
+   "bestMonths": "Декабрь – март (идеально для западного и южного побережья, горных районов и Культурного треугольника); май – сентябрь — лучшее время для восточного побережья (Тринкомали, Аругам-Бей); октябрь – ноябрь — межмуссонные дожди",
+   "safety": {
+    "crimeRateSummary": "В целом безопасно и гостеприимно; основные проблемы — мошенничество тук-тукеров и торговцев камнями, словесные приставания к путешествующим в одиночку женщинам и ДТП. Сильные течения на юге ежегодно приводят к утоплениям.",
+    "commonScams": [
+     "Тук-тукеры, утверждающие, что «храм закрыт, сегодня праздник», и везущие в лавки камней или специй",
+     "Мошенники, продающие ничего не стоящие камни, которые якобы можно «перепродать за границей вдвое дороже»",
+     "Перекупщики, продающие поддельные или завышенные по цене билеты на поезд Канди – Элла"
+    ],
+    "safeTravelTips": [
+     "Пользуйтесь PickMe или Uber; если ловите тук-тук на улице, выбирайте со счётчиком.",
+     "Никогда не фотографируйтесь спиной к статуе Будды; даже татуировка с Буддой может привести к депортации.",
+     "Купайтесь только на пляжах со спасателями и без красных флагов; туристическая полиция — 1912."
+    ],
+    "emergencyNumbers": {
+     "police": "119",
+     "ambulance": "1990",
+     "general": "119"
+    },
+    "safetyScore": 65,
+    "safetyLevel": "Безопасно",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Хороший 4G по всей стране, тестовый 5G в Коломбо; слабый в нацпарках и на горных перевалах",
+    "costPerGbUsd": "~0.20 - 0.60 $",
+    "esimAvailability": "Доступно – туристические SIM Dialog и SLT-Mobitel в зоне прилёта; работают международные eSIM",
+    "bestCarriers": [
+     "Dialog",
+     "SLT-Mobitel",
+     "Hutch"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Среднее – живописные, но медленные поезда (знаменитая линия Канди – Элла), очень дешёвые и переполненные автобусы; тук-туки на короткие расстояния, частный водитель — на длинные",
+    "costLevel": "Дёшево",
+    "singleTicketUsd": "~0.20 - 1 $ (городской/междугородний автобус)",
+    "dailyPassUsd": "Проездного нет; машина с водителем ~40 - 60 $ в день",
+    "popularRideApps": [
+     "PickMe",
+     "Uber"
+    ],
+    "taxiAdvice": "PickMe и Uber — самый дешёвый и прозрачный способ вызвать тук-тук или машину в Коломбо, Канди и Галле. От аэропорта до Коломбо ~1 час; цены в приложении намного ниже уличных."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "25 - 40 $",
+    "dailyBudgetMidrangeUsd": "60 - 120 $",
+    "budgetMealUsd": "2 - 5 $",
+    "coffeeUsd": "1.50 - 3.50 $",
+    "waterBottleUsd": "0.30 - 0.50 $",
+    "hostelDormUsd": "8 - 15 $",
+    "hotel3StarUsd": "35 - 75 $",
+    "flightCostIndex": "Средний (Стамбул – Коломбо напрямую ~8 ч)",
+    "flightTip": "Turkish Airlines летает напрямую Стамбул – Коломбо; есть также стыковки через Залив (Qatar Airways, Emirates, flydubai) и SriLankan Airlines. Входные билеты для иностранцев на культурные объекты (Сигирия, Канди) считаются в долларах и заметно увеличивают бюджет."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Приветствуют, сложив ладони, со словом «Аюбован» (долгих лет жизни); покачивание головой из стороны в сторону обычно означает «да».",
+     "В храмах снимайте обувь и головной убор, надевайте белую или светлую закрытую одежду.",
+     "Монахов очень уважают; передние места в автобусах предназначены для них."
+    ],
+    "festivals": [
+     "Сингальский и тамильский Новый год (13-14 апреля)",
+     "Весак – рождение, просветление и уход Будды (полнолуние в мае)",
+     "Канди Эсала Перахера (июль/август, шествие с наряженными слонами)"
+    ],
+    "lifestyle": "Каждое полнолуние (Пойя) — выходной, алкоголь не продают. Жизнь вращается вокруг чая, риса с карри, любви к крикету и крепких семейных связей."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Львиная скала Сигирия (ЮНЕСКО)",
+     "Канди – Храм Зуба Будды (Шри Далада Малигава)",
+     "Пещерный храм Дамбулла",
+     "Элла – мост Девяти арок и чайные холмы",
+     "Форт Галле (ЮНЕСКО)",
+     "Национальный парк Яла (сафари на леопардов)"
+    ],
+    "bestSeasons": "Декабрь – март (идеально для западного и южного побережья, горных районов и Культурного треугольника); май – сентябрь — лучшее время для восточного побережья (Тринкомали, Аругам-Бей); октябрь – ноябрь — межмуссонные дожди",
+    "travelStyleTip": "Остров небольшой, но дороги медленные: не планируйте больше 3-4 часов в пути в день. Удобнее всего сочетать частного водителя с живописной поездкой на поезде Канди – Элла."
+   },
+   "religion": {
+    "primaryReligions": "Буддизм тхеравады (~70 %), индуизм (~13 %), ислам (~10 %), христианство (~7 %).",
+    "respectNorms": "Позировать спиной к изображениям Будды, касаться их или залезать на них запрещено и наказуемо. В храмах закрывайте плечи и колени, снимайте обувь.",
+    "sacredSites": [
+     "Храм Зуба Будды (Канди)",
+     "Шри Маха Бодхи – священное фиговое дерево (Анурадхапура)",
+     "Пик Адама – Шри Пада (священен для четырёх религий)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Сингальский и тамильский (официальные); английский широко используется как язык межнационального общения.",
+    "englishProficiency": "Хороший – распространён в туризме, городах и на вывесках; в сельской местности базовый.",
+    "phrases": [
+     {
+      "phrase": "ආයුබෝවන් (Ayubowan)",
+      "meaning": "Здравствуйте (долгих лет жизни)",
+      "translation": "Здравствуйте (долгих лет жизни)",
+      "pronunciation": "AA-yu-boh-wan"
+     },
+     {
+      "phrase": "ස්තූතියි (Sthuthiyi)",
+      "meaning": "Спасибо",
+      "translation": "Спасибо",
+      "pronunciation": "STOO-thi-yi"
+     },
+     {
+      "phrase": "කීයද? (Keeyada?)",
+      "meaning": "Сколько?",
+      "translation": "Сколько?",
+      "pronunciation": "KEE-ya-da"
+     },
+     {
+      "phrase": "රසයි (Rasai)",
+      "meaning": "Вкусно",
+      "translation": "Вкусно",
+      "pronunciation": "ra-SAI"
+     },
+     {
+      "phrase": "வணக்கம் (Vanakkam)",
+      "meaning": "Здравствуйте (по-тамильски; север и восток)",
+      "translation": "Здравствуйте (по-тамильски; север и восток)",
+      "pronunciation": "va-NUK-kum"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Здесь 2500-летняя буддийская цивилизация, начавшаяся с царства Анурадхапура в IV веке до н. э. После португальского, голландского и британского владычества страна стала независимой в 1948 году как Цейлон и в 1972 году получила название Шри-Ланка. После гражданской войны 1983-2009 годов и кризиса 2022 года восстановление во многом обеспечивает туризм.",
+    "milestones": [
+     "247 до н. э.: приход буддизма при царе Деванампия Тиссе",
+     "1815: Королевство Канди переходит к британцам",
+     "1948: независимость под названием Цейлон",
+     "2009: окончание гражданской войны"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Рис с карри (с множеством овощных, чечевичных и рыбных карри)",
+     "Котту роти (рубленая лепёшка, обжаренная с овощами и мясом)",
+     "Хопперы / аппа (кокосовые блинчики-чашечки, с яйцом)"
+    ],
+    "traditionalDrinks": [
+     "Цейлонский чай",
+     "Вода королевского кокоса (тамбили)",
+     "Арак (крепкий напиток из сока кокосовых соцветий)"
+    ],
+    "streetFoodAndDesserts": [
+     "Иссо вадай (чечевичные оладьи с креветками)",
+     "Ватталаппам (пудинг из кокоса и пальмового сахара)",
+     "Йогурт из молока буйволицы с сиропом китул"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Сиримаво Бандаранаике (первая в мире женщина — премьер-министр)",
+     "Муттайя Муралитаран (рекордсмен по калиткам в тестовом крикете)",
+     "Джеффри Бава (архитектор, основоположник тропического модернизма)"
+    ],
+    "strongSectors": [
+     "Экспорт цейлонского чая",
+     "Одежда и текстиль",
+     "Туризм и драгоценные камни (сапфиры)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "В отелях и ресторанах принимают карты; для тук-туков, рынков и лавок нужны наличные. Банкоматов в городах много; за границей LKR почти не обменять, тратьте остаток до отъезда.",
+    "tippingCulture": "Рестораны и отели обычно добавляют 10 % за обслуживание; водители и гиды ждут ~5-10 $ в день.",
+    "economicPillars": "Пошив одежды, чай, туризм, денежные переводы и портово-логистические услуги."
+   }
+  },
+  "itin": {
+   "routeName": "От Культурного треугольника до южного побережья: Сигирия, Канди, Элла и Галле",
+   "routeSummary": "Классический 10-дневный маршрут: древняя скала Сигирия, священный Канди, легендарный поезд к чайным холмам Эллы и, наконец, форт Галле и южные пляжи.",
+   "totalDays": 10,
+   "idealDurationText": "10-дневный маршрут",
+   "bestSeason": "Декабрь – март (идеально для западного и южного побережья, горных районов и Культурного треугольника); май – сентябрь — лучшее время для восточного побережья (Тринкомали, Аругам-Бей); октябрь – ноябрь — межмуссонные дожди",
+   "transportMode": "Частный водитель или автобусы + живописный поезд Канди – Элла + тук-туки PickMe / Uber",
+   "paceLevel": "Сбалансированный (культура, природа и пляж)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Остановка 1: Сигирия и Дамбулла (Культурный треугольник)",
+     "recommendedDuration": "2 дня",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Львиная скала Сигирия и её фрески",
+      "Рассвет со скалы Пидурангала",
+      "Пещерный храм Дамбулла"
+     ],
+     "activities": [
+      "Поднимитесь на Сигирию к открытию в 7:00.",
+      "Отправьтесь на сафари к слонам в Миннерию или Каудуллу.",
+      "Объезжайте древнюю Полоннаруву на велосипеде."
+     ],
+     "foodAndDrinks": [
+      "Рис с карри по-деревенски",
+      "Вода королевского кокоса"
+     ],
+     "criticalTips": [
+      "Билет для иностранцев на Сигирию ~35 $; на 1200 ступеней берите воду и шляпу.",
+      "В сумерках на дорогах бывают дикие слоны — слушайтесь водителя."
+     ],
+     "mapsQuery": "Sigiriya, Sri Lanka"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Остановка 2: Канди (священный город)",
+     "recommendedDuration": "2 дня",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Храм Зуба Будды",
+      "Королевский ботанический сад Перадения",
+      "Озеро Канди"
+     ],
+     "activities": [
+      "Побывайте на вечерней пудже в храме.",
+      "Посмотрите кандийские танцы.",
+      "Посетите соседнюю чайную фабрику."
+     ],
+     "foodAndDrinks": [
+      "Котту роти",
+      "Цейлонский чай"
+     ],
+     "criticalTips": [
+      "Идите в Храм Зуба в белой или светлой одежде, закрывающей плечи и колени.",
+      "Бронирование на поезд Канди – Элла открывается примерно за 30 дней и быстро заканчивается — берите заранее."
+     ],
+     "mapsQuery": "Temple of the Sacred Tooth Relic, Kandy, Sri Lanka"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Остановка 3: Элла (чайные холмы)",
+     "recommendedDuration": "2 дня",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Мост Девяти арок",
+      "Литл-Адамс-Пик",
+      "Элла-Рок"
+     ],
+     "activities": [
+      "Проедьте ~7 часов на живописном поезде из Канди в Эллу.",
+      "Поднимитесь на Литл-Адамс-Пик на рассвете.",
+      "Прогуляйтесь по чайным плантациям."
+     ],
+     "foodAndDrinks": [
+      "Хопперы",
+      "Свежезаваренный высокогорный чай"
+     ],
+     "criticalTips": [
+      "Ходить по рельсам на мосту опасно — узнайте расписание и ждите сбоку.",
+      "Вечерами в горах прохладно — возьмите лёгкую флиску."
+     ],
+     "mapsQuery": "Nine Arches Bridge, Ella, Sri Lanka"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Остановка 4: Галле и южное побережье (Мирисса, Унаватуна)",
+     "recommendedDuration": "3 дня",
+     "durationBadge": "3 дня",
+     "highlights": [
+      "Стены и маяк форта Галле",
+      "Наблюдение за китами в Мириссе (ноябрь – апрель)",
+      "Унаватуна и Джангл-Бич"
+     ],
+     "activities": [
+      "Прогуляйтесь по стенам форта на закате.",
+      "Возьмите урок сёрфинга (Велигама).",
+      "Посмотрите на рыбаков на шестах в Коггале."
+     ],
+     "foodAndDrinks": [
+      "Морепродукты на гриле",
+      "Иссо вадай",
+      "Ватталаппам"
+     ],
+     "criticalTips": [
+      "На китовых турах часто укачивает — выбирайте лицензированного и ответственного оператора.",
+      "С мая по сентябрь на юге муссон и сильные волны."
+     ],
+     "mapsQuery": "Galle Fort, Galle, Sri Lanka"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Рис с карри",
+     "Котту роти",
+     "Хопперы",
+     "Ламприйс (рис по-бюргерски, запечённый в банановом листе)"
+    ],
+    "drinks": [
+     "Цейлонский чай",
+     "Тамбили",
+     "Арак"
+    ],
+    "streetFoods": [
+     "Иссо вадай",
+     "Котту роти",
+     "Ватталаппам"
+    ],
+    "diningAdvice": "Еда острая — при необходимости говорите «less spicy». Мусульманские закусочные (часто называются «hotel») подают халяльные котту и бирьяни; есть рукой традиционно, но приборы есть всегда."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Переходник для розеток G/D",
+     "Белая/светлая закрытая одежда и саронг для храмов",
+     "Средство от комаров (денге)",
+     "Лёгкая флиска для гор"
+    ],
+    "safetyAndEtiquette": [
+     "Не поворачивайтесь спиной к Будде, не трогайте и не залезайте на статуи.",
+     "В дни Пойя алкоголь не продают — планируйте заранее."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "D",
+     "G",
+     "M"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Розетки британские трёхконтактные (G) или индийские круглые (D/M); европейские вилки не подходят, переходник обязателен."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Водопроводную воду не пьют; используйте бутилированную или фильтрованную в отеле.",
+    "vaccines": [
+     "Гепатит A и брюшной тиф",
+     "Столбняк-дифтерия (плановая)",
+     "Японский энцефалит и бешенство при долгих поездках по сельской местности; защита от денге. При въезде из эндемичной страны нужен сертификат о прививке от жёлтой лихорадки."
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "1990"
+   },
+   "tipping": {
+    "custom": "Сервисный сбор обычно включён; водители и гиды ждут чаевых.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "~5-10 $ в день частному водителю; мелочь персоналу отеля и смотрителям обуви у храмов."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Ограничено (НДС 18 %; новая система возврата только в зарегистрированных магазинах)",
+    "minSpend": "Зависит от магазина",
+    "customsNote": "Возврат НДС туристам введён недавно и распространён мало; перед покупкой уточняйте, зарегистрирован ли магазин. При вывозе камней требуйте чек и сертификат, заверенные National Gem & Jewellery Authority (NGJA)."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.20 - $0.60",
+    "topCarriers": [
+     "Dialog",
+     "SLT-Mobitel",
+     "Hutch"
+    ],
+    "airportSimTrapWarning": "Стойки Dialog и Mobitel в зоне прилёта аэропорта Бандаранаике продают официальные туристические пакеты по городским ценам; следите за курсом в предложениях обменников «с SIM в подарок»."
+   },
+   "touristScams": [
+    {
+     "title": "Уловка «храм закрыт»",
+     "desc": "Тук-тукер уверяет, что сегодня особый праздник, и везёт в магазины, платящие ему комиссию.",
+     "tip": "Твёрдо называйте пункт назначения и пользуйтесь PickMe с фиксированной ценой."
+    },
+    {
+     "title": "Ловушка «инвестиций в камни»",
+     "desc": "Ничего не стоящие камни продают дорого, обещая выгодную перепродажу за границей.",
+     "tip": "Покупайте только в магазинах с сертификатом NGJA и не верьте обещаниям «инвестиций»."
+    },
+    {
+     "title": "Поддельные билеты на поезд",
+     "desc": "Перекупщики на вокзалах Канди и Эллы продают поддельные или сильно переоценённые билеты.",
+     "tip": "Покупайте билеты на официальном сайте Sri Lanka Railways или в кассе."
+    }
+   ]
+  }
+ }
+}

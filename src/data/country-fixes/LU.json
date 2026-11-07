@@ -1,0 +1,1787 @@
+{
+ "tr": {
+  "insights": {
+   "currency": "Euro (EUR)",
+   "bestMonths": "Mayıs – Eylül (yürüyüş ve Moselle bağları için ılık hava); Eylül–Ekim bağ bozumu; Aralık’ta Noel pazarları",
+   "safety": {
+    "safetyScore": 85,
+    "crimeRateSummary": "Avrupa’nın en güvenli ülkelerindendir; şiddet suçu çok düşüktür. Lüksemburg Şehri’nde tren garı (Gare) çevresi geceleri biraz daha tenhadır ve küçük hırsızlık görülebilir.",
+    "commonScams": [
+     "Gare bölgesinde dikkat dağıtıp çanta/telefon çalma",
+     "Sahte bağış toplayan ‘imza kampanyası’ yapanlar",
+     "Turist dolandırıcılığı nadirdir; asıl sürpriz yüksek fiyatlardır"
+    ],
+    "safeTravelTips": [
+     "Toplu taşıma ücretsizdir; taksi yerine otobüs, tren ve tramvayı kullanın.",
+     "Gece Gare bölgesinde eşyalarınıza dikkat edin.",
+     "Mullerthal patikalarında yağmurdan sonra kayalar kaygan olur; uygun ayakkabı giyin."
+    ],
+    "emergencyNumbers": {
+     "police": "113",
+     "ambulance": "112",
+     "general": "112"
+    },
+    "safetyLevel": "Olağanüstü Güvenli",
+    "badgeColor": "bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-900/60"
+   },
+   "internet": {
+    "networkCoverage": "%99 (4G/5G neredeyse her yerde)",
+    "costPerGbUsd": "~1 - 3 $",
+    "esimAvailability": "Mükemmel",
+    "bestCarriers": [
+     "POST Luxembourg",
+     "Orange Luxembourg",
+     "Tango"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Mükemmel (2020’den beri tüm ülkede ikinci sınıf toplu taşıma ücretsiz; tren, otobüs ve tramvay)",
+    "costLevel": "Ücretsiz (toplu taşıma), taksi çok pahalı",
+    "singleTicketUsd": "0 $",
+    "dailyPassUsd": "0 $",
+    "popularRideApps": [
+     "mobiliteit.lu",
+     "CFL Mobile",
+     "Webtaxi",
+     "Vel'oh!"
+    ],
+    "taxiAdvice": "Taksiler Avrupa’nın en pahalılarındandır; havalimanından şehre ücretsiz otobüs veya tramvayla 20–25 dakikada ulaşabilirsiniz. Güzergâh için mobiliteit.lu uygulamasını kullanın."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "85 - 130 $",
+    "dailyBudgetMidrangeUsd": "200 - 320 $",
+    "budgetMealUsd": "20 - 32 $",
+    "coffeeUsd": "3.50 - 5 $",
+    "waterBottleUsd": "1.50 - 2.50 $",
+    "hostelDormUsd": "40 - 60 $",
+    "hotel3StarUsd": "140 - 250 $",
+    "flightCostIndex": "Orta-Yüksek",
+    "flightTip": "İstanbul’dan Lüksemburg’a THY direkt uçar; daha ucuz seçenek için Brüksel, Frankfurt-Hahn veya Metz bağlantısı ve ardından tren/otobüs düşünülebilir."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Selamlaşmada tokalaşma, yakınlar arasında yanaktan üç öpücük yaygındır.",
+     "Lüksemburgluların birkaç dili birden konuşması normaldir; birkaç kelime Lüksemburgca çok takdir edilir.",
+     "Dakiklik ve ölçülü davranış önemlidir.",
+     "Pazar günleri birçok dükkan kapalıdır; sessizlik kurallarına uyun."
+    ],
+    "festivals": [
+     "Ulusal Gün (23 Haziran, Grandük’ün resmî doğum günü; öncesi akşam havai fişek)",
+     "Schueberfouer (Ağustos sonu – Eylül başı, büyük panayır)",
+     "Echternach Sıçrayan Tören Alayı (Pentekost Salısı, UNESCO)"
+    ],
+    "lifestyle": "Çok uluslu (nüfusun neredeyse yarısı yabancı), çok dilli ve yüksek gelirli bir toplum; hafta sonları yürüyüş, şarap ve aile yemekleri öne çıkar."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Lüksemburg Şehri Eski Mahalleleri ve Surlar (UNESCO)",
+     "Bock Kazamatları",
+     "Chemin de la Corniche ve Grund mahallesi",
+     "Vianden Kalesi",
+     "Mullerthal – ‘Küçük İsviçre’ patikası",
+     "Moselle Vadisi ve Schengen köyü"
+    ],
+    "bestSeasons": "Mayıs – Eylül (yürüyüş ve Moselle bağları için ılık hava); Eylül–Ekim bağ bozumu; Aralık’ta Noel pazarları",
+    "travelStyleTip": "Ülke küçüktür: Lüksemburg Şehri’nde konaklayıp ücretsiz tren ve otobüslerle Vianden, Echternach ve Moselle’e günübirlik gidebilirsiniz."
+   },
+   "religion": {
+    "primaryReligions": "Katolik (yaklaşık %55–65), artan oranda dinsiz; küçük Protestan, Ortodoks, Müslüman ve Yahudi toplulukları.",
+    "respectNorms": "Katedral ve bazilikalarda omuz ve dizleri örten kıyafet giyin ve ayin sırasında gezmeyin.",
+    "sacredSites": [
+     "Lüksemburg Notre-Dame Katedrali",
+     "Echternach Aziz Willibrord Bazilikası",
+     "Bock’taki Aziz Mikael Kilisesi"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Lüksemburgca (ulusal dil), Fransızca ve Almanca. Fransızca tabelalarda ve hizmet sektöründe baskındır.",
+    "englishProficiency": "Çok iyi; çoğu kişi İngilizceyi de akıcı konuşur.",
+    "phrases": [
+     {
+      "phrase": "Moien!",
+      "meaning": "Merhaba / Günaydın",
+      "translation": "Merhaba / Günaydın",
+      "pronunciation": "MOY-en"
+     },
+     {
+      "phrase": "Merci",
+      "meaning": "Teşekkürler",
+      "translation": "Teşekkürler",
+      "pronunciation": "MER-see"
+     },
+     {
+      "phrase": "Wann ech gelift",
+      "meaning": "Lütfen",
+      "translation": "Lütfen",
+      "pronunciation": "vahn esh geh-LIFT"
+     },
+     {
+      "phrase": "Wat kascht dat?",
+      "meaning": "Bu ne kadar?",
+      "translation": "Bu ne kadar?",
+      "pronunciation": "vaht kahsht daht"
+     },
+     {
+      "phrase": "Äddi!",
+      "meaning": "Hoşça kal",
+      "translation": "Hoşça kal",
+      "pronunciation": "AH-dee"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "963’te Kont Siegfried’in Bock kayalığında kale kurmasıyla doğan Lüksemburg, ‘Kuzeyin Cebelitarık’ı’ denen güçlü bir kale şehre dönüştü. 1867 Londra Antlaşması’yla tarafsız ilan edildi ve surları büyük ölçüde söküldü. AB, NATO ve Benelüks’ün kurucularındandır; bugün AB kurumlarına ve büyük bir finans merkezine ev sahipliği yapar.",
+    "milestones": [
+     "963: Kont Siegfried’in Bock’ta kalesini kurması",
+     "1867: Londra Antlaşması ile tarafsızlık",
+     "1890: Kendi Grandük hanedanına geçiş (Nassau-Weilburg)",
+     "1957: AET kurucu üyeliği; 1985 Schengen Antlaşması"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Judd mat Gaardebounen (bakla eşliğinde füme domuz boynu; ulusal yemek)",
+     "Bouneschlupp (fasulyeli çorba)",
+     "Rieslingspaschtéit (Riesling jöleli etli hamur işi)"
+    ],
+    "traditionalDrinks": [
+     "Moselle Riesling ve Pinot şarapları",
+     "Crémant de Luxembourg (köpüklü şarap)",
+     "Bofferding ve Diekirch biraları"
+    ],
+    "streetFoodAndDesserts": [
+     "Gromperekichelcher (baharatlı patates köftesi, pazar ve panayırlarda)",
+     "Quetschentaart (erik tartı)",
+     "Kachkéis (eritilmiş peynir sürmesi)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Robert Schuman (Avrupa birliğinin kurucularından, Lüksemburg doğumlu)",
+     "Edward Steichen (fotoğrafçı)",
+     "Grandüşes Charlotte (II. Dünya Savaşı’nda direnişin simgesi)"
+    ],
+    "strongSectors": [
+     "Bankacılık ve yatırım fonları",
+     "Uydu ve uzay endüstrisi (SES)",
+     "Çelik (ArcelorMittal merkezi) ve lojistik"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Kart ve temassız ödeme her yerde geçerlidir; nakit nadiren gerekir.",
+    "tippingCulture": "Servis ücrete dahildir; restoranda hesabı yuvarlamak veya %5–10 bırakmak nezakettir.",
+    "economicPillars": "Finans hizmetleri, AB kurumları, uydu/uzay, çelik, lojistik ve sınır ötesi çalışanlara dayalı hizmet ekonomisi."
+   }
+  },
+  "itin": {
+   "routeName": "Büyük Dükalık Turu: Lüksemburg Şehri, Mullerthal ve Vianden",
+   "routeSummary": "Kaya üstündeki başkentten ‘Küçük İsviçre’nin kumtaşı vadilerine ve kuzeydeki masalsı Vianden Kalesi’ne 4 günlük, tamamen ücretsiz toplu taşımayla yapılabilen rota.",
+   "totalDays": 4,
+   "idealDurationText": "4 gün",
+   "bestSeason": "Mayıs – Eylül (yürüyüş ve Moselle bağları için ılık hava); Eylül–Ekim bağ bozumu; Aralık’ta Noel pazarları",
+   "transportMode": "Ücretsiz tren ve otobüsler",
+   "paceLevel": "Rahat, hafif yürüyüşlü",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "1. Durak: Lüksemburg Şehri (Eski Şehir ve Grund)",
+     "recommendedDuration": "2 gün",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "Bock Kazamatları",
+      "Chemin de la Corniche (‘Avrupa’nın en güzel balkonu’)",
+      "Grandük Sarayı ve Guillaume II Meydanı",
+      "Pfaffenthal panoramik asansörü"
+     ],
+     "activities": [
+      "Grund’a inip Alzette kıyısında yürüyün.",
+      "Kirchberg’de MUDAM modern sanat müzesini gezin.",
+      "Ücretsiz tramvayla Kirchberg ve Avrupa mahallesini dolaşın."
+     ],
+     "foodAndDrinks": [
+      "Judd mat Gaardebounen",
+      "Gromperekichelcher",
+      "Crémant de Luxembourg"
+     ],
+     "criticalTips": [
+      "Kazamatlar kışın kapalı olabilir; açılış dönemini kontrol edin.",
+      "Şehir yokuşludur; rahat ayakkabı giyin ve asansörleri kullanın."
+     ],
+     "mapsQuery": "Bock Casemates, Luxembourg"
+    },
+    {
+     "stopNumber": 2,
+     "name": "2. Durak: Mullerthal ve Echternach (‘Küçük İsviçre’)",
+     "recommendedDuration": "1 gün",
+     "durationBadge": "1 Gün",
+     "highlights": [
+      "Mullerthal Trail kumtaşı kayalıkları",
+      "Schiessentümpel şelalesi",
+      "Echternach Manastırı ve Bazilikası",
+      "Echternach Gölü"
+     ],
+     "activities": [
+      "Berdorf ile Echternach arasında kaya geçitlerinden yürüyün.",
+      "Schiessentümpel’in taş köprüsünde fotoğraf molası verin.",
+      "Echternach’ın Orta Çağ meydanında kahve için."
+     ],
+     "foodAndDrinks": [
+      "Quetschentaart (erik tartı)",
+      "Yerel elma şarabı ve meyve suları"
+     ],
+     "criticalTips": [
+      "Patikalar dar ve köklüdür; yağmurda kayar, bilekleri koruyan ayakkabı giyin.",
+      "Hafta sonları bazı otobüs hatları seyrekleşir; dönüş saatini kontrol edin."
+     ],
+     "mapsQuery": "Schiessentümpel, Mullerthal, Luxembourg"
+    },
+    {
+     "stopNumber": 3,
+     "name": "3. Durak: Vianden (Kale ve Our Vadisi)",
+     "recommendedDuration": "1 gün",
+     "durationBadge": "1 Gün",
+     "highlights": [
+      "Vianden Kalesi",
+      "Teleferikle (télésiège) seyir noktası",
+      "Victor Hugo Evi",
+      "Our Nehri kıyısı"
+     ],
+     "activities": [
+      "Restore edilmiş kalenin salonlarını gezin.",
+      "Teleferikle çıkıp kale manzarasını izleyin.",
+      "Dönüşte Diekirch’te bira fabrikası şehrinde mola verin."
+     ],
+     "foodAndDrinks": [
+      "Ardennes jambonu ve yerel peynirler",
+      "Diekirch birası",
+      "Ev yapımı meyve likörleri"
+     ],
+     "criticalTips": [
+      "Teleferik yalnızca sezonda (yaklaşık Nisan–Ekim) çalışır.",
+      "Kuzeyde hava daha serindir; bir kat fazla giysi alın."
+     ],
+     "mapsQuery": "Vianden Castle, Luxembourg"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Judd mat Gaardebounen",
+     "Bouneschlupp",
+     "Rieslingspaschtéit",
+     "Moselle balığı (friture de la Moselle)"
+    ],
+    "drinks": [
+     "Riesling",
+     "Crémant de Luxembourg",
+     "Bofferding",
+     "Rosport maden suyu"
+    ],
+    "streetFoods": [
+     "Gromperekichelcher",
+     "Kachkéis’li ekmek",
+     "Quetschentaart",
+     "Bretzel (Bretzelsonndeg’de)"
+    ],
+    "diningAdvice": "Öğle menüsü (plat du jour) akşam yemeğinden çok daha ucuzdur. Geleneksel mutfakta domuz eti yaygındır; başkentte Türk, Lübnan ve Portekiz restoranları kolayca bulunur."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Yağmurluk (hava sık değişir)",
+     "Bilekleri saran yürüyüş ayakkabısı",
+     "Katmanlı giysiler",
+     "Temassız banka kartı"
+    ],
+    "safetyAndEtiquette": [
+     "Birinci sınıf trenlerde bilet gerekir; ikinci sınıf ücretsizdir.",
+     "Pazar günleri süpermarketlerin çoğu öğleden sonra kapanır.",
+     "Ormanlık patikalarda işaretli rotalardan çıkmayın."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Türkiye’deki ile aynı iki yuvarlak pimli (C/F) prizler; adaptör gerekmez."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Musluk suyu içilebilir; kireçli olabilir.",
+    "vaccines": [
+     "Rutin aşılar (tetanos, difteri, kızamık)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "112"
+   },
+   "tipping": {
+    "custom": "Hesabı yuvarlamak veya %5–10 bırakmak yeterlidir.",
+    "standardPercent": 5,
+    "rule": "round_up",
+    "note": "Servis bedeli fiyatlara dahildir; bahşiş zorunlu değildir."
+   },
+   "taxFree": {
+    "vatRefundPercent": "KDV %17 (AB’nin en düşüğü); iade net ~%10–13",
+    "minSpend": "Aynı mağazada ~74 € ve üzeri",
+    "customsNote": "Tax Free formunu AB’den son çıkış yaptığınız havalimanında gümrüğe onaylatın; Lüksemburg’dan doğrudan Türkiye’ye uçuyorsanız Findel’de yapılır."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.00 - $3.00",
+    "topCarriers": [
+     "POST Luxembourg",
+     "Orange Luxembourg",
+     "Tango"
+    ],
+    "airportSimTrapWarning": "Türk hatlarıyla dolaşım çok pahalıdır; yola çıkmadan AB kapsamlı bir eSIM alın. Sınır bölgelerinde telefon Fransız/Alman/Belçika şebekesine geçebilir."
+   },
+   "touristScams": [
+    {
+     "title": "Gare bölgesinde dikkat dağıtma hırsızlığı",
+     "desc": "Tren garı çevresinde yol sorma veya çarpışma bahanesiyle telefon ve cüzdan çalınabilir.",
+     "tip": "Telefonunuzu masada bırakmayın, çantanızı önünüzde taşıyın."
+    },
+    {
+     "title": "Sahte imza/bağış toplayıcılar",
+     "desc": "Turistik meydanlarda imza listesiyle yaklaşıp bağış isteyen ve bu sırada cep karıştıranlar olabilir.",
+     "tip": "Kibarca reddedip uzaklaşın."
+    }
+   ]
+  }
+ },
+ "en": {
+  "insights": {
+   "currency": "Euro (EUR)",
+   "bestMonths": "May – September (mild weather for hiking and the Moselle vineyards); September–October harvest; December Christmas markets",
+   "safety": {
+    "safetyScore": 85,
+    "crimeRateSummary": "One of Europe's safest countries with very low violent crime. The area around Luxembourg City's train station (Gare) is seedier at night and petty theft can occur.",
+    "commonScams": [
+     "Distraction thefts of bags and phones around the Gare district",
+     "Fake charity petition collectors",
+     "Tourist scams are rare; the main surprise is high prices"
+    ],
+    "safeTravelTips": [
+     "Public transport is free; use buses, trains and the tram instead of taxis.",
+     "Watch your belongings around the Gare area at night.",
+     "Rocks on the Mullerthal trails get slippery after rain; wear proper shoes."
+    ],
+    "emergencyNumbers": {
+     "police": "113",
+     "ambulance": "112",
+     "general": "112"
+    },
+    "safetyLevel": "Exceptional Safety",
+    "badgeColor": "bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-900/60"
+   },
+   "internet": {
+    "networkCoverage": "99% (4G/5G almost everywhere)",
+    "costPerGbUsd": "~1 - 3 $",
+    "esimAvailability": "Excellent",
+    "bestCarriers": [
+     "POST Luxembourg",
+     "Orange Luxembourg",
+     "Tango"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Excellent (all second-class public transport nationwide has been free since 2020: trains, buses and tram)",
+    "costLevel": "Free (public transport), taxis very expensive",
+    "singleTicketUsd": "0 $",
+    "dailyPassUsd": "0 $",
+    "popularRideApps": [
+     "mobiliteit.lu",
+     "CFL Mobile",
+     "Webtaxi",
+     "Vel'oh!"
+    ],
+    "taxiAdvice": "Taxis are among Europe's most expensive; the free bus or tram takes you from the airport to the city in 20–25 minutes. Use the mobiliteit.lu app for routes."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "85 - 130 $",
+    "dailyBudgetMidrangeUsd": "200 - 320 $",
+    "budgetMealUsd": "20 - 32 $",
+    "coffeeUsd": "3.50 - 5 $",
+    "waterBottleUsd": "1.50 - 2.50 $",
+    "hostelDormUsd": "40 - 60 $",
+    "hotel3StarUsd": "140 - 250 $",
+    "flightCostIndex": "Moderate-High",
+    "flightTip": "Turkish Airlines flies direct from Istanbul to Luxembourg; for cheaper fares consider Brussels or Frankfurt and continue by train or bus."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "A handshake is standard; three cheek kisses among friends are common.",
+     "Locals switch between several languages; a few words of Luxembourgish are much appreciated.",
+     "Punctuality and discretion matter.",
+     "Many shops close on Sundays; respect quiet hours."
+    ],
+    "festivals": [
+     "National Day (23 June, the Grand Duke's official birthday; fireworks the evening before)",
+     "Schueberfouer (late August – early September, big funfair)",
+     "Hopping Procession of Echternach (Whit Tuesday, UNESCO)"
+    ],
+    "lifestyle": "A multinational (almost half the population is foreign), multilingual, high-income society; weekends revolve around hiking, wine and family meals."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Luxembourg City Old Quarters & Fortifications (UNESCO)",
+     "Bock Casemates",
+     "Chemin de la Corniche & the Grund",
+     "Vianden Castle",
+     "Mullerthal – 'Little Switzerland' trail",
+     "Moselle Valley & the village of Schengen"
+    ],
+    "bestSeasons": "May – September (mild weather for hiking and the Moselle vineyards); September–October harvest; December Christmas markets",
+    "travelStyleTip": "The country is small: stay in Luxembourg City and take free trains and buses on day trips to Vianden, Echternach and the Moselle."
+   },
+   "religion": {
+    "primaryReligions": "Catholic (roughly 55–65%), a growing non-religious share; small Protestant, Orthodox, Muslim and Jewish communities.",
+    "respectNorms": "Cover shoulders and knees in the cathedral and basilicas and do not wander around during Mass.",
+    "sacredSites": [
+     "Notre-Dame Cathedral, Luxembourg",
+     "Basilica of St Willibrord, Echternach",
+     "St Michael's Church near the Bock"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Luxembourgish (national language), French and German. French dominates signage and the service sector.",
+    "englishProficiency": "Very good; most people also speak fluent English.",
+    "phrases": [
+     {
+      "phrase": "Moien!",
+      "meaning": "Hello",
+      "translation": "Hello",
+      "pronunciation": "MOY-en"
+     },
+     {
+      "phrase": "Merci",
+      "meaning": "Thank you",
+      "translation": "Thank you",
+      "pronunciation": "MER-see"
+     },
+     {
+      "phrase": "Wann ech gelift",
+      "meaning": "Please",
+      "translation": "Please",
+      "pronunciation": "vahn esh geh-LIFT"
+     },
+     {
+      "phrase": "Wat kascht dat?",
+      "meaning": "How much is this?",
+      "translation": "How much is this?",
+      "pronunciation": "vaht kahsht daht"
+     },
+     {
+      "phrase": "Äddi!",
+      "meaning": "Goodbye",
+      "translation": "Goodbye",
+      "pronunciation": "AH-dee"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Founded when Count Siegfried built a castle on the Bock rock in 963, Luxembourg grew into a mighty fortress city called the 'Gibraltar of the North'. The 1867 Treaty of London made it neutral and most fortifications were dismantled. A founding member of the EU, NATO and Benelux, it now hosts EU institutions and a major financial centre.",
+    "milestones": [
+     "963: Count Siegfried builds his castle on the Bock",
+     "1867: Neutrality under the Treaty of London",
+     "1890: Own grand-ducal dynasty (Nassau-Weilburg)",
+     "1957: Founding member of the EEC; 1985 Schengen Agreement"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Judd mat Gaardebounen (smoked pork collar with broad beans; national dish)",
+     "Bouneschlupp (green bean soup)",
+     "Rieslingspaschtéit (meat pie with Riesling jelly)"
+    ],
+    "traditionalDrinks": [
+     "Moselle Riesling and Pinot wines",
+     "Crémant de Luxembourg (sparkling wine)",
+     "Bofferding and Diekirch beers"
+    ],
+    "streetFoodAndDesserts": [
+     "Gromperekichelcher (spiced potato fritters at fairs and markets)",
+     "Quetschentaart (plum tart)",
+     "Kachkéis (cooked cheese spread)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Robert Schuman (a founding father of European unity, born in Luxembourg)",
+     "Edward Steichen (photographer)",
+     "Grand Duchess Charlotte (symbol of resistance in WWII)"
+    ],
+    "strongSectors": [
+     "Banking and investment funds",
+     "Satellite and space industry (SES)",
+     "Steel (ArcelorMittal HQ) and logistics"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Cards and contactless are accepted everywhere; cash is rarely needed.",
+    "tippingCulture": "Service is included; rounding up or leaving 5–10% in restaurants is polite.",
+    "economicPillars": "Financial services, EU institutions, satellites/space, steel, logistics and a service economy powered by cross-border workers."
+   }
+  },
+  "itin": {
+   "routeName": "Grand Duchy Tour: Luxembourg City, Mullerthal & Vianden",
+   "routeSummary": "A 4-day route from the clifftop capital to the sandstone gorges of 'Little Switzerland' and the fairy-tale Vianden Castle in the north, all on free public transport.",
+   "totalDays": 4,
+   "idealDurationText": "4 days",
+   "bestSeason": "May – September (mild weather for hiking and the Moselle vineyards); September–October harvest; December Christmas markets",
+   "transportMode": "Free trains and buses",
+   "paceLevel": "Relaxed with light hiking",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stop 1: Luxembourg City (Old Town & Grund)",
+     "recommendedDuration": "2 days",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "Bock Casemates",
+      "Chemin de la Corniche ('Europe's most beautiful balcony')",
+      "Grand Ducal Palace & Place Guillaume II",
+      "Pfaffenthal panoramic lift"
+     ],
+     "activities": [
+      "Descend to the Grund and walk along the Alzette.",
+      "Visit the MUDAM modern art museum in Kirchberg.",
+      "Ride the free tram around Kirchberg and the European quarter."
+     ],
+     "foodAndDrinks": [
+      "Judd mat Gaardebounen",
+      "Gromperekichelcher",
+      "Crémant de Luxembourg"
+     ],
+     "criticalTips": [
+      "The casemates may close in winter; check opening periods.",
+      "The city is hilly; wear comfortable shoes and use the public lifts."
+     ],
+     "mapsQuery": "Bock Casemates, Luxembourg"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stop 2: Mullerthal & Echternach ('Little Switzerland')",
+     "recommendedDuration": "1 day",
+     "durationBadge": "1 Day",
+     "highlights": [
+      "Mullerthal Trail sandstone rocks",
+      "Schiessentümpel waterfall",
+      "Echternach Abbey & Basilica",
+      "Echternach Lake"
+     ],
+     "activities": [
+      "Hike through rock passages between Berdorf and Echternach.",
+      "Stop for photos at the stone bridge of Schiessentümpel.",
+      "Have coffee on Echternach's medieval square."
+     ],
+     "foodAndDrinks": [
+      "Quetschentaart (plum tart)",
+      "Local cider and fruit juices"
+     ],
+     "criticalTips": [
+      "Trails are narrow and rooty; slippery in rain, so wear ankle-supporting shoes.",
+      "Some bus lines run less often at weekends; check return times."
+     ],
+     "mapsQuery": "Schiessentümpel, Mullerthal, Luxembourg"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stop 3: Vianden (Castle & Our Valley)",
+     "recommendedDuration": "1 day",
+     "durationBadge": "1 Day",
+     "highlights": [
+      "Vianden Castle",
+      "Chairlift to the viewpoint",
+      "Victor Hugo House",
+      "Banks of the Our River"
+     ],
+     "activities": [
+      "Tour the halls of the restored castle.",
+      "Ride the chairlift for the classic castle view.",
+      "Stop in Diekirch, the brewery town, on the way back."
+     ],
+     "foodAndDrinks": [
+      "Ardennes ham and local cheeses",
+      "Diekirch beer",
+      "Homemade fruit liqueurs"
+     ],
+     "criticalTips": [
+      "The chairlift only runs in season (roughly April–October).",
+      "The north is cooler; bring an extra layer."
+     ],
+     "mapsQuery": "Vianden Castle, Luxembourg"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Judd mat Gaardebounen",
+     "Bouneschlupp",
+     "Rieslingspaschtéit",
+     "Friture de la Moselle (fried river fish)"
+    ],
+    "drinks": [
+     "Riesling",
+     "Crémant de Luxembourg",
+     "Bofferding",
+     "Rosport mineral water"
+    ],
+    "streetFoods": [
+     "Gromperekichelcher",
+     "Bread with Kachkéis",
+     "Quetschentaart",
+     "Bretzel (on Bretzelsonndeg)"
+    ],
+    "diningAdvice": "The lunchtime plat du jour is much cheaper than dinner. Pork is common in traditional dishes; Turkish, Lebanese and Portuguese restaurants are easy to find in the capital."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Rain jacket (weather changes often)",
+     "Ankle-supporting hiking shoes",
+     "Layers",
+     "Contactless bank card"
+    ],
+    "safetyAndEtiquette": [
+     "First-class train seats need a ticket; second class is free.",
+     "Most supermarkets close in the afternoon on Sundays.",
+     "Stay on marked routes on forest trails."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Same two-round-pin (C/F) sockets as in Turkey; no adapter needed."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Tap water is safe to drink, though it can be hard (limey).",
+    "vaccines": [
+     "Routine vaccinations (tetanus, diphtheria, measles)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "112"
+   },
+   "tipping": {
+    "custom": "Rounding up or leaving 5–10% is enough.",
+    "standardPercent": 5,
+    "rule": "round_up",
+    "note": "Service is included in prices; tipping is not mandatory."
+   },
+   "taxFree": {
+    "vatRefundPercent": "VAT 17% (lowest in the EU); net refund ~10–13%",
+    "minSpend": "~€74+ in one store",
+    "customsNote": "Have the Tax Free form stamped at the airport where you leave the EU; if flying straight to Turkey from Luxembourg, this is done at Findel."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.00 - $3.00",
+    "topCarriers": [
+     "POST Luxembourg",
+     "Orange Luxembourg",
+     "Tango"
+    ],
+    "airportSimTrapWarning": "Roaming on Turkish lines is very expensive; buy an EU-wide eSIM before you go. Near the borders your phone may switch to French, German or Belgian networks."
+   },
+   "touristScams": [
+    {
+     "title": "Distraction theft near the Gare",
+     "desc": "Around the train station, thieves may ask for directions or bump into you to take phones and wallets.",
+     "tip": "Don't leave your phone on café tables; carry your bag in front."
+    },
+    {
+     "title": "Fake petition collectors",
+     "desc": "On tourist squares people may approach with a petition, ask for a donation and pick pockets meanwhile.",
+     "tip": "Decline politely and walk away."
+    }
+   ]
+  }
+ },
+ "de": {
+  "insights": {
+   "currency": "Euro (EUR)",
+   "bestMonths": "Mai – September (mildes Wetter zum Wandern und für die Moselweinberge); September–Oktober Weinlese; im Dezember Weihnachtsmärkte",
+   "safety": {
+    "safetyScore": 85,
+    "crimeRateSummary": "Eines der sichersten Länder Europas mit sehr geringer Gewaltkriminalität. Das Bahnhofsviertel (Gare) in Luxemburg-Stadt ist nachts weniger angenehm, Kleindiebstahl kommt vor.",
+    "commonScams": [
+     "Ablenkungsdiebstähle von Taschen und Handys im Bahnhofsviertel",
+     "Falsche Spendensammler mit Unterschriftenlisten",
+     "Touristenbetrug ist selten; die größte Überraschung sind die hohen Preise"
+    ],
+    "safeTravelTips": [
+     "Der Nahverkehr ist kostenlos; Bus, Bahn und Tram statt Taxi nutzen.",
+     "Nachts im Bahnhofsviertel auf Wertsachen achten.",
+     "Felsen auf dem Müllerthal-Trail sind nach Regen rutschig; gutes Schuhwerk tragen."
+    ],
+    "emergencyNumbers": {
+     "police": "113",
+     "ambulance": "112",
+     "general": "112"
+    },
+    "safetyLevel": "Außergewöhnlich sicher",
+    "badgeColor": "bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-900/60"
+   },
+   "internet": {
+    "networkCoverage": "99 % (4G/5G fast überall)",
+    "costPerGbUsd": "~1 - 3 $",
+    "esimAvailability": "Hervorragend",
+    "bestCarriers": [
+     "POST Luxembourg",
+     "Orange Luxembourg",
+     "Tango"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Hervorragend (seit 2020 ist der gesamte Nahverkehr in der 2. Klasse landesweit kostenlos: Zug, Bus und Tram)",
+    "costLevel": "Kostenlos (Nahverkehr), Taxis sehr teuer",
+    "singleTicketUsd": "0 $",
+    "dailyPassUsd": "0 $",
+    "popularRideApps": [
+     "mobiliteit.lu",
+     "CFL Mobile",
+     "Webtaxi",
+     "Vel'oh!"
+    ],
+    "taxiAdvice": "Taxis gehören zu den teuersten Europas; der kostenlose Bus oder die Tram bringt Sie in 20–25 Minuten vom Flughafen in die Stadt. Für Verbindungen die App mobiliteit.lu nutzen."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "85 - 130 $",
+    "dailyBudgetMidrangeUsd": "200 - 320 $",
+    "budgetMealUsd": "20 - 32 $",
+    "coffeeUsd": "3.50 - 5 $",
+    "waterBottleUsd": "1.50 - 2.50 $",
+    "hostelDormUsd": "40 - 60 $",
+    "hotel3StarUsd": "140 - 250 $",
+    "flightCostIndex": "Mittel bis hoch",
+    "flightTip": "Turkish Airlines fliegt direkt von Istanbul nach Luxemburg; günstiger kann es über Brüssel oder Frankfurt mit Weiterreise per Zug oder Bus sein."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Händedruck ist üblich, unter Freunden drei Wangenküsse.",
+     "Einheimische wechseln zwischen mehreren Sprachen; ein paar Worte Luxemburgisch werden sehr geschätzt.",
+     "Pünktlichkeit und Zurückhaltung sind wichtig.",
+     "Sonntags haben viele Geschäfte zu; Ruhezeiten respektieren."
+    ],
+    "festivals": [
+     "Nationalfeiertag (23. Juni, offizieller Geburtstag des Großherzogs; Feuerwerk am Vorabend)",
+     "Schueberfouer (Ende August – Anfang September, großes Volksfest)",
+     "Springprozession Echternach (Pfingstdienstag, UNESCO)"
+    ],
+    "lifestyle": "Eine multinationale (fast die Hälfte ist ausländisch), mehrsprachige, wohlhabende Gesellschaft; am Wochenende Wandern, Wein und Familienessen."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Altstadt und Festungsanlagen von Luxemburg (UNESCO)",
+     "Bock-Kasematten",
+     "Chemin de la Corniche & der Grund",
+     "Burg Vianden",
+     "Müllerthal – 'Kleine Luxemburger Schweiz'",
+     "Moseltal & das Dorf Schengen"
+    ],
+    "bestSeasons": "Mai – September (mildes Wetter zum Wandern und für die Moselweinberge); September–Oktober Weinlese; im Dezember Weihnachtsmärkte",
+    "travelStyleTip": "Das Land ist klein: in Luxemburg-Stadt übernachten und mit kostenlosen Zügen und Bussen Tagesausflüge nach Vianden, Echternach und an die Mosel machen."
+   },
+   "religion": {
+    "primaryReligions": "Katholisch (etwa 55–65 %), wachsender Anteil Konfessionsloser; kleine protestantische, orthodoxe, muslimische und jüdische Gemeinden.",
+    "respectNorms": "In Kathedrale und Basiliken Schultern und Knie bedecken und während der Messe nicht herumgehen.",
+    "sacredSites": [
+     "Kathedrale Notre-Dame, Luxemburg",
+     "Basilika St. Willibrord, Echternach",
+     "Michaelskirche am Bock"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Luxemburgisch (Nationalsprache), Französisch und Deutsch. Französisch dominiert Beschilderung und Dienstleistungen.",
+    "englishProficiency": "Sehr gut; die meisten sprechen auch fließend Englisch.",
+    "phrases": [
+     {
+      "phrase": "Moien!",
+      "meaning": "Hallo / Guten Tag",
+      "translation": "Hallo / Guten Tag",
+      "pronunciation": "MOY-en"
+     },
+     {
+      "phrase": "Merci",
+      "meaning": "Danke",
+      "translation": "Danke",
+      "pronunciation": "MER-see"
+     },
+     {
+      "phrase": "Wann ech gelift",
+      "meaning": "Bitte",
+      "translation": "Bitte",
+      "pronunciation": "vahn esh geh-LIFT"
+     },
+     {
+      "phrase": "Wat kascht dat?",
+      "meaning": "Was kostet das?",
+      "translation": "Was kostet das?",
+      "pronunciation": "vaht kahsht daht"
+     },
+     {
+      "phrase": "Äddi!",
+      "meaning": "Tschüss / Auf Wiedersehen",
+      "translation": "Tschüss / Auf Wiedersehen",
+      "pronunciation": "AH-dee"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "963 errichtete Graf Siegfried auf dem Bockfelsen eine Burg; daraus wurde die Festungsstadt, das 'Gibraltar des Nordens'. Der Londoner Vertrag von 1867 machte Luxemburg neutral, die meisten Befestigungen wurden geschleift. Gründungsmitglied von EU, NATO und Benelux, heute Sitz von EU-Institutionen und ein großer Finanzplatz.",
+    "milestones": [
+     "963: Graf Siegfried baut seine Burg auf dem Bock",
+     "1867: Neutralität durch den Londoner Vertrag",
+     "1890: Eigene großherzogliche Dynastie (Nassau-Weilburg)",
+     "1957: Gründungsmitglied der EWG; 1985 Schengener Abkommen"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Judd mat Gaardebounen (geräucherter Schweinenacken mit Saubohnen; Nationalgericht)",
+     "Bouneschlupp (Bohnensuppe)",
+     "Rieslingspaschtéit (Pastete mit Rieslinggelee)"
+    ],
+    "traditionalDrinks": [
+     "Riesling- und Pinot-Weine von der Mosel",
+     "Crémant de Luxembourg (Schaumwein)",
+     "Bofferding- und Diekirch-Bier"
+    ],
+    "streetFoodAndDesserts": [
+     "Gromperekichelcher (gewürzte Kartoffelpuffer auf Märkten)",
+     "Quetschentaart (Zwetschgenkuchen)",
+     "Kachkéis (Kochkäse)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Robert Schuman (Gründervater der europäischen Einigung, in Luxemburg geboren)",
+     "Edward Steichen (Fotograf)",
+     "Großherzogin Charlotte (Symbol des Widerstands im Zweiten Weltkrieg)"
+    ],
+    "strongSectors": [
+     "Banken und Investmentfonds",
+     "Satelliten- und Raumfahrtindustrie (SES)",
+     "Stahl (Sitz von ArcelorMittal) und Logistik"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Karten und Kontaktloszahlung überall; Bargeld selten nötig.",
+    "tippingCulture": "Bedienung ist inklusive; Aufrunden oder 5–10 % im Restaurant sind höflich.",
+    "economicPillars": "Finanzdienstleistungen, EU-Institutionen, Satelliten/Raumfahrt, Stahl, Logistik und eine von Grenzgängern getragene Dienstleistungswirtschaft."
+   }
+  },
+  "itin": {
+   "routeName": "Großherzogtum-Tour: Luxemburg-Stadt, Müllerthal & Vianden",
+   "routeSummary": "Eine 4-tägige Route von der Hauptstadt auf dem Felsen zu den Sandsteinschluchten der 'Kleinen Schweiz' und zur Märchenburg Vianden im Norden, komplett mit kostenlosem Nahverkehr.",
+   "totalDays": 4,
+   "idealDurationText": "4 Tage",
+   "bestSeason": "Mai – September (mildes Wetter zum Wandern und für die Moselweinberge); September–Oktober Weinlese; im Dezember Weihnachtsmärkte",
+   "transportMode": "Kostenlose Züge und Busse",
+   "paceLevel": "Entspannt mit leichten Wanderungen",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stopp 1: Luxemburg-Stadt (Altstadt & Grund)",
+     "recommendedDuration": "2 Tage",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "Bock-Kasematten",
+      "Chemin de la Corniche ('schönster Balkon Europas')",
+      "Großherzoglicher Palast & Place Guillaume II",
+      "Panoramaaufzug Pfaffenthal"
+     ],
+     "activities": [
+      "In den Grund hinabsteigen und an der Alzette entlanggehen.",
+      "Das Museum MUDAM in Kirchberg besuchen.",
+      "Mit der kostenlosen Tram durch Kirchberg und das Europaviertel fahren."
+     ],
+     "foodAndDrinks": [
+      "Judd mat Gaardebounen",
+      "Gromperekichelcher",
+      "Crémant de Luxembourg"
+     ],
+     "criticalTips": [
+      "Die Kasematten können im Winter geschlossen sein; Öffnungszeiten prüfen.",
+      "Die Stadt ist hügelig; bequeme Schuhe tragen und die Aufzüge nutzen."
+     ],
+     "mapsQuery": "Bock Casemates, Luxembourg"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stopp 2: Müllerthal & Echternach ('Kleine Schweiz')",
+     "recommendedDuration": "1 Tag",
+     "durationBadge": "1 Tag",
+     "highlights": [
+      "Sandsteinfelsen am Müllerthal-Trail",
+      "Wasserfall Schiessentümpel",
+      "Abtei und Basilika Echternach",
+      "Echternacher See"
+     ],
+     "activities": [
+      "Zwischen Berdorf und Echternach durch Felsgassen wandern.",
+      "Fotostopp an der Steinbrücke des Schiessentümpels.",
+      "Kaffee auf dem mittelalterlichen Marktplatz von Echternach."
+     ],
+     "foodAndDrinks": [
+      "Quetschentaart (Zwetschgenkuchen)",
+      "Lokaler Viez und Fruchtsäfte"
+     ],
+     "criticalTips": [
+      "Pfade sind schmal und wurzelig, bei Regen rutschig; knöchelhohe Schuhe tragen.",
+      "Am Wochenende fahren manche Busse seltener; Rückfahrt prüfen."
+     ],
+     "mapsQuery": "Schiessentümpel, Mullerthal, Luxembourg"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stopp 3: Vianden (Burg & Ourtal)",
+     "recommendedDuration": "1 Tag",
+     "durationBadge": "1 Tag",
+     "highlights": [
+      "Burg Vianden",
+      "Sessellift zum Aussichtspunkt",
+      "Victor-Hugo-Haus",
+      "Ufer der Our"
+     ],
+     "activities": [
+      "Die Säle der restaurierten Burg besichtigen.",
+      "Mit dem Sessellift zum klassischen Burgblick fahren.",
+      "Auf dem Rückweg in der Brauereistadt Diekirch halten."
+     ],
+     "foodAndDrinks": [
+      "Ardenner Schinken und lokaler Käse",
+      "Diekirch-Bier",
+      "Hausgemachte Obstliköre"
+     ],
+     "criticalTips": [
+      "Der Sessellift fährt nur in der Saison (etwa April–Oktober).",
+      "Im Norden ist es kühler; eine Schicht mehr mitnehmen."
+     ],
+     "mapsQuery": "Vianden Castle, Luxembourg"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Judd mat Gaardebounen",
+     "Bouneschlupp",
+     "Rieslingspaschtéit",
+     "Friture de la Moselle (frittierter Flussfisch)"
+    ],
+    "drinks": [
+     "Riesling",
+     "Crémant de Luxembourg",
+     "Bofferding",
+     "Rosport-Mineralwasser"
+    ],
+    "streetFoods": [
+     "Gromperekichelcher",
+     "Brot mit Kachkéis",
+     "Quetschentaart",
+     "Brezel (am Bretzelsonndeg)"
+    ],
+    "diningAdvice": "Das Mittagsgericht (plat du jour) ist viel günstiger als das Abendessen. Schweinefleisch ist in der traditionellen Küche üblich; türkische, libanesische und portugiesische Lokale gibt es in der Hauptstadt reichlich."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Regenjacke (Wetter wechselt oft)",
+     "Knöchelhohe Wanderschuhe",
+     "Zwiebellook",
+     "Kontaktlose Bankkarte"
+    ],
+    "safetyAndEtiquette": [
+     "Für die 1. Klasse im Zug braucht man ein Ticket; 2. Klasse ist kostenlos.",
+     "Sonntags schließen die meisten Supermärkte am Nachmittag.",
+     "Auf Waldwegen auf markierten Routen bleiben."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Gleiche Steckdosen mit zwei runden Stiften (C/F) wie in der Türkei; kein Adapter nötig."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Leitungswasser ist trinkbar, kann aber kalkhaltig sein.",
+    "vaccines": [
+     "Standardimpfungen (Tetanus, Diphtherie, Masern)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "112"
+   },
+   "tipping": {
+    "custom": "Aufrunden oder 5–10 % reichen.",
+    "standardPercent": 5,
+    "rule": "round_up",
+    "note": "Bedienung ist im Preis enthalten; Trinkgeld ist keine Pflicht."
+   },
+   "taxFree": {
+    "vatRefundPercent": "MwSt. 17 % (niedrigste der EU); Nettoerstattung ~10–13 %",
+    "minSpend": "ab ~74 € in einem Geschäft",
+    "customsNote": "Das Tax-Free-Formular am Flughafen der EU-Ausreise abstempeln lassen; bei Direktflug in die Türkei geschieht das in Findel."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.00 - $3.00",
+    "topCarriers": [
+     "POST Luxembourg",
+     "Orange Luxembourg",
+     "Tango"
+    ],
+    "airportSimTrapWarning": "Roaming mit türkischen Tarifen ist sehr teuer; vorab eine EU-weite eSIM kaufen. In Grenznähe kann sich das Handy in französische, deutsche oder belgische Netze einbuchen."
+   },
+   "touristScams": [
+    {
+     "title": "Ablenkungsdiebstahl am Bahnhof",
+     "desc": "Rund um den Bahnhof fragen Diebe nach dem Weg oder rempeln an, um Handys und Geldbörsen zu stehlen.",
+     "tip": "Handy nicht auf dem Tisch liegen lassen; Tasche vorne tragen."
+    },
+    {
+     "title": "Falsche Unterschriftensammler",
+     "desc": "Auf Touristenplätzen bitten Leute mit Listen um Spenden und greifen dabei in Taschen.",
+     "tip": "Höflich ablehnen und weitergehen."
+    }
+   ]
+  }
+ },
+ "es": {
+  "insights": {
+   "currency": "Euro (EUR)",
+   "bestMonths": "Mayo – septiembre (clima templado para senderismo y viñedos del Mosela); septiembre–octubre vendimia; diciembre mercados navideños",
+   "safety": {
+    "safetyScore": 85,
+    "crimeRateSummary": "Uno de los países más seguros de Europa, con muy poca violencia. La zona de la estación (Gare) de la capital es menos agradable de noche y puede haber hurtos.",
+    "commonScams": [
+     "Robos por distracción de bolsos y móviles en el barrio de la estación",
+     "Falsos recaudadores con peticiones benéficas",
+     "Las estafas son raras; la mayor sorpresa son los precios altos"
+    ],
+    "safeTravelTips": [
+     "El transporte público es gratuito; usa autobús, tren y tranvía en vez de taxi.",
+     "Vigila tus cosas en la zona de la estación de noche.",
+     "Las rocas del Mullerthal resbalan tras la lluvia; lleva buen calzado."
+    ],
+    "emergencyNumbers": {
+     "police": "113",
+     "ambulance": "112",
+     "general": "112"
+    },
+    "safetyLevel": "Excepcionalmente Seguro",
+    "badgeColor": "bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-900/60"
+   },
+   "internet": {
+    "networkCoverage": "99 % (4G/5G casi en todas partes)",
+    "costPerGbUsd": "~1 - 3 $",
+    "esimAvailability": "Excelente",
+    "bestCarriers": [
+     "POST Luxembourg",
+     "Orange Luxembourg",
+     "Tango"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Excelente (desde 2020 todo el transporte público en segunda clase es gratuito en el país: tren, autobús y tranvía)",
+    "costLevel": "Gratis (transporte público), taxis muy caros",
+    "singleTicketUsd": "0 $",
+    "dailyPassUsd": "0 $",
+    "popularRideApps": [
+     "mobiliteit.lu",
+     "CFL Mobile",
+     "Webtaxi",
+     "Vel'oh!"
+    ],
+    "taxiAdvice": "Los taxis están entre los más caros de Europa; el autobús o tranvía gratuito te lleva del aeropuerto al centro en 20–25 minutos. Usa la app mobiliteit.lu para rutas."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "85 - 130 $",
+    "dailyBudgetMidrangeUsd": "200 - 320 $",
+    "budgetMealUsd": "20 - 32 $",
+    "coffeeUsd": "3.50 - 5 $",
+    "waterBottleUsd": "1.50 - 2.50 $",
+    "hostelDormUsd": "40 - 60 $",
+    "hotel3StarUsd": "140 - 250 $",
+    "flightCostIndex": "Moderado-alto",
+    "flightTip": "Turkish Airlines vuela directo de Estambul a Luxemburgo; para tarifas más bajas valora Bruselas o Fráncfort y sigue en tren o autobús."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Se saluda con apretón de manos; entre amigos, tres besos.",
+     "Los locales alternan varios idiomas; unas palabras en luxemburgués se agradecen mucho.",
+     "La puntualidad y la discreción importan.",
+     "Muchas tiendas cierran el domingo; respeta las horas de descanso."
+    ],
+    "festivals": [
+     "Día Nacional (23 de junio, cumpleaños oficial del Gran Duque; fuegos artificiales la víspera)",
+     "Schueberfouer (finales de agosto – principios de septiembre, gran feria)",
+     "Procesión danzante de Echternach (martes de Pentecostés, UNESCO)"
+    ],
+    "lifestyle": "Una sociedad multinacional (casi la mitad es extranjera), multilingüe y de altos ingresos; los fines de semana, senderismo, vino y comidas familiares."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Barrios antiguos y fortificaciones de Luxemburgo (UNESCO)",
+     "Casamatas del Bock",
+     "Chemin de la Corniche y el Grund",
+     "Castillo de Vianden",
+     "Mullerthal – sendero de la 'Pequeña Suiza'",
+     "Valle del Mosela y el pueblo de Schengen"
+    ],
+    "bestSeasons": "Mayo – septiembre (clima templado para senderismo y viñedos del Mosela); septiembre–octubre vendimia; diciembre mercados navideños",
+    "travelStyleTip": "El país es pequeño: alójate en la capital y haz excursiones en tren y autobús gratuitos a Vianden, Echternach y el Mosela."
+   },
+   "religion": {
+    "primaryReligions": "Católicos (aprox. 55–65 %), creciente proporción sin religión; pequeñas comunidades protestante, ortodoxa, musulmana y judía.",
+    "respectNorms": "Cubre hombros y rodillas en la catedral y las basílicas y no deambules durante la misa.",
+    "sacredSites": [
+     "Catedral de Notre-Dame, Luxemburgo",
+     "Basílica de San Willibrord, Echternach",
+     "Iglesia de San Miguel junto al Bock"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Luxemburgués (lengua nacional), francés y alemán. El francés domina en carteles y servicios.",
+    "englishProficiency": "Muy bueno; la mayoría habla también inglés con fluidez.",
+    "phrases": [
+     {
+      "phrase": "Moien!",
+      "meaning": "Hola",
+      "translation": "Hola",
+      "pronunciation": "MOY-en"
+     },
+     {
+      "phrase": "Merci",
+      "meaning": "Gracias",
+      "translation": "Gracias",
+      "pronunciation": "MER-see"
+     },
+     {
+      "phrase": "Wann ech gelift",
+      "meaning": "Por favor",
+      "translation": "Por favor",
+      "pronunciation": "vahn esh geh-LIFT"
+     },
+     {
+      "phrase": "Wat kascht dat?",
+      "meaning": "¿Cuánto cuesta?",
+      "translation": "¿Cuánto cuesta?",
+      "pronunciation": "vaht kahsht daht"
+     },
+     {
+      "phrase": "Äddi!",
+      "meaning": "Adiós",
+      "translation": "Adiós",
+      "pronunciation": "AH-dee"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Nacida cuando el conde Sigfrido construyó un castillo en la roca del Bock en 963, Luxemburgo se convirtió en una gran fortaleza, el 'Gibraltar del Norte'. El Tratado de Londres de 1867 la declaró neutral y se desmantelaron casi todas sus murallas. Miembro fundador de la UE, la OTAN y el Benelux, hoy alberga instituciones europeas y un gran centro financiero.",
+    "milestones": [
+     "963: el conde Sigfrido construye su castillo en el Bock",
+     "1867: neutralidad por el Tratado de Londres",
+     "1890: dinastía granducal propia (Nassau-Weilburg)",
+     "1957: miembro fundador de la CEE; 1985 Acuerdo de Schengen"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Judd mat Gaardebounen (cuello de cerdo ahumado con habas; plato nacional)",
+     "Bouneschlupp (sopa de judías verdes)",
+     "Rieslingspaschtéit (pastel de carne con gelatina de riesling)"
+    ],
+    "traditionalDrinks": [
+     "Vinos riesling y pinot del Mosela",
+     "Crémant de Luxembourg (espumoso)",
+     "Cervezas Bofferding y Diekirch"
+    ],
+    "streetFoodAndDesserts": [
+     "Gromperekichelcher (buñuelos de patata especiados en ferias)",
+     "Quetschentaart (tarta de ciruelas)",
+     "Kachkéis (queso cocido para untar)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Robert Schuman (padre fundador de la unidad europea, nacido en Luxemburgo)",
+     "Edward Steichen (fotógrafo)",
+     "Gran Duquesa Carlota (símbolo de la resistencia en la II Guerra Mundial)"
+    ],
+    "strongSectors": [
+     "Banca y fondos de inversión",
+     "Industria espacial y de satélites (SES)",
+     "Acero (sede de ArcelorMittal) y logística"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Se aceptan tarjetas y pago sin contacto en todas partes; rara vez hace falta efectivo.",
+    "tippingCulture": "El servicio está incluido; redondear o dejar un 5–10 % es un gesto de cortesía.",
+    "economicPillars": "Servicios financieros, instituciones de la UE, satélites/espacio, acero, logística y una economía de servicios con trabajadores transfronterizos."
+   }
+  },
+  "itin": {
+   "routeName": "Ruta del Gran Ducado: Luxemburgo, Mullerthal y Vianden",
+   "routeSummary": "Una ruta de 4 días desde la capital sobre acantilados hasta los desfiladeros de arenisca de la 'Pequeña Suiza' y el castillo de cuento de Vianden, todo en transporte gratuito.",
+   "totalDays": 4,
+   "idealDurationText": "4 días",
+   "bestSeason": "Mayo – septiembre (clima templado para senderismo y viñedos del Mosela); septiembre–octubre vendimia; diciembre mercados navideños",
+   "transportMode": "Trenes y autobuses gratuitos",
+   "paceLevel": "Tranquilo con senderismo suave",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Luxemburgo capital (casco antiguo y Grund)",
+     "recommendedDuration": "2 días",
+     "durationBadge": "2 Días",
+     "highlights": [
+      "Casamatas del Bock",
+      "Chemin de la Corniche ('el balcón más bello de Europa')",
+      "Palacio Gran Ducal y plaza Guillermo II",
+      "Ascensor panorámico de Pfaffenthal"
+     ],
+     "activities": [
+      "Baja al Grund y pasea junto al Alzette.",
+      "Visita el museo de arte moderno MUDAM en Kirchberg.",
+      "Recorre Kirchberg y el barrio europeo en el tranvía gratuito."
+     ],
+     "foodAndDrinks": [
+      "Judd mat Gaardebounen",
+      "Gromperekichelcher",
+      "Crémant de Luxembourg"
+     ],
+     "criticalTips": [
+      "Las casamatas pueden cerrar en invierno; consulta las fechas.",
+      "La ciudad tiene cuestas; usa calzado cómodo y los ascensores públicos."
+     ],
+     "mapsQuery": "Bock Casemates, Luxembourg"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Mullerthal y Echternach ('Pequeña Suiza')",
+     "recommendedDuration": "1 día",
+     "durationBadge": "1 Día",
+     "highlights": [
+      "Rocas de arenisca del Mullerthal Trail",
+      "Cascada de Schiessentümpel",
+      "Abadía y basílica de Echternach",
+      "Lago de Echternach"
+     ],
+     "activities": [
+      "Camina entre pasadizos de roca de Berdorf a Echternach.",
+      "Para a hacer fotos en el puente de piedra de Schiessentümpel.",
+      "Toma un café en la plaza medieval de Echternach."
+     ],
+     "foodAndDrinks": [
+      "Quetschentaart (tarta de ciruelas)",
+      "Sidra y zumos locales"
+     ],
+     "criticalTips": [
+      "Los senderos son estrechos y con raíces; resbalan con lluvia, lleva calzado que sujete el tobillo.",
+      "Algunos autobuses pasan menos los fines de semana; revisa la vuelta."
+     ],
+     "mapsQuery": "Schiessentümpel, Mullerthal, Luxembourg"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Vianden (castillo y valle del Our)",
+     "recommendedDuration": "1 día",
+     "durationBadge": "1 Día",
+     "highlights": [
+      "Castillo de Vianden",
+      "Telesilla al mirador",
+      "Casa de Victor Hugo",
+      "Orillas del río Our"
+     ],
+     "activities": [
+      "Recorre las salas del castillo restaurado.",
+      "Sube en telesilla para la vista clásica del castillo.",
+      "A la vuelta para en Diekirch, ciudad cervecera."
+     ],
+     "foodAndDrinks": [
+      "Jamón de las Ardenas y quesos locales",
+      "Cerveza Diekirch",
+      "Licores de fruta caseros"
+     ],
+     "criticalTips": [
+      "El telesilla solo funciona en temporada (aprox. abril–octubre).",
+      "El norte es más fresco; lleva una capa extra."
+     ],
+     "mapsQuery": "Vianden Castle, Luxembourg"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Judd mat Gaardebounen",
+     "Bouneschlupp",
+     "Rieslingspaschtéit",
+     "Friture de la Moselle (pescado de río frito)"
+    ],
+    "drinks": [
+     "Riesling",
+     "Crémant de Luxembourg",
+     "Bofferding",
+     "Agua mineral Rosport"
+    ],
+    "streetFoods": [
+     "Gromperekichelcher",
+     "Pan con Kachkéis",
+     "Quetschentaart",
+     "Bretzel (en el Bretzelsonndeg)"
+    ],
+    "diningAdvice": "El plat du jour del mediodía es mucho más barato que la cena. El cerdo es habitual en la cocina tradicional; en la capital abundan restaurantes turcos, libaneses y portugueses."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Chubasquero (el tiempo cambia a menudo)",
+     "Calzado de senderismo que sujete el tobillo",
+     "Capas de ropa",
+     "Tarjeta sin contacto"
+    ],
+    "safetyAndEtiquette": [
+     "En tren, la primera clase requiere billete; la segunda es gratuita.",
+     "Los domingos la mayoría de supermercados cierra por la tarde.",
+     "No salgas de las rutas señalizadas en los bosques."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Enchufes de dos clavijas redondas (C/F) como en Turquía; no hace falta adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "El agua del grifo es potable, aunque puede ser dura (calcárea).",
+    "vaccines": [
+     "Vacunas rutinarias (tétanos, difteria, sarampión)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "112"
+   },
+   "tipping": {
+    "custom": "Basta con redondear o dejar un 5–10 %.",
+    "standardPercent": 5,
+    "rule": "round_up",
+    "note": "El servicio está incluido en los precios; la propina no es obligatoria."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA 17 % (el más bajo de la UE); devolución neta ~10–13 %",
+    "minSpend": "~74 € o más en una tienda",
+    "customsNote": "Sella el formulario Tax Free en el aeropuerto donde salgas de la UE; si vuelas directo a Turquía desde Luxemburgo, se hace en Findel."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.00 - $3.00",
+    "topCarriers": [
+     "POST Luxembourg",
+     "Orange Luxembourg",
+     "Tango"
+    ],
+    "airportSimTrapWarning": "El roaming con líneas turcas es muy caro; compra antes una eSIM para toda la UE. Cerca de las fronteras el móvil puede conectarse a redes francesas, alemanas o belgas."
+   },
+   "touristScams": [
+    {
+     "title": "Robo por distracción cerca de la estación",
+     "desc": "Junto a la estación, los ladrones preguntan direcciones o te empujan para quitarte móvil y cartera.",
+     "tip": "No dejes el móvil en la mesa y lleva el bolso delante."
+    },
+    {
+     "title": "Falsos recolectores de firmas",
+     "desc": "En plazas turísticas te abordan con una lista, piden donativo y mientras tanto roban.",
+     "tip": "Rechaza con educación y sigue tu camino."
+    }
+   ]
+  }
+ },
+ "ru": {
+  "insights": {
+   "currency": "Евро (EUR)",
+   "bestMonths": "Май – сентябрь (мягкая погода для походов и виноградников Мозеля); сентябрь–октябрь — сбор урожая; декабрь — рождественские ярмарки",
+   "safety": {
+    "safetyScore": 85,
+    "crimeRateSummary": "Одна из самых безопасных стран Европы с очень низким уровнем насилия. Район вокзала (Gare) в столице ночью менее приятный, возможны мелкие кражи.",
+    "commonScams": [
+     "Кражи сумок и телефонов с отвлечением внимания в районе вокзала",
+     "Фальшивые сборщики подписей и пожертвований",
+     "Мошенничество редкость; главный сюрприз — высокие цены"
+    ],
+    "safeTravelTips": [
+     "Общественный транспорт бесплатный; пользуйтесь автобусами, поездами и трамваем вместо такси.",
+     "Ночью у вокзала следите за вещами.",
+     "Скалы на тропах Мюллерталя после дождя скользкие — нужна хорошая обувь."
+    ],
+    "emergencyNumbers": {
+     "police": "113",
+     "ambulance": "112",
+     "general": "112"
+    },
+    "safetyLevel": "Исключительно Безопасно",
+    "badgeColor": "bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-900/60"
+   },
+   "internet": {
+    "networkCoverage": "99% (4G/5G почти везде)",
+    "costPerGbUsd": "~1 - 3 $",
+    "esimAvailability": "Отлично",
+    "bestCarriers": [
+     "POST Luxembourg",
+     "Orange Luxembourg",
+     "Tango"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Отличное (с 2020 года весь общественный транспорт во 2-м классе по стране бесплатный: поезда, автобусы и трамвай)",
+    "costLevel": "Бесплатно (транспорт), такси очень дорогое",
+    "singleTicketUsd": "0 $",
+    "dailyPassUsd": "0 $",
+    "popularRideApps": [
+     "mobiliteit.lu",
+     "CFL Mobile",
+     "Webtaxi",
+     "Vel'oh!"
+    ],
+    "taxiAdvice": "Такси одни из самых дорогих в Европе; бесплатный автобус или трамвай довезёт из аэропорта в центр за 20–25 минут. Маршруты — в приложении mobiliteit.lu."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "85 - 130 $",
+    "dailyBudgetMidrangeUsd": "200 - 320 $",
+    "budgetMealUsd": "20 - 32 $",
+    "coffeeUsd": "3.50 - 5 $",
+    "waterBottleUsd": "1.50 - 2.50 $",
+    "hostelDormUsd": "40 - 60 $",
+    "hotel3StarUsd": "140 - 250 $",
+    "flightCostIndex": "Средний-высокий",
+    "flightTip": "Turkish Airlines летает напрямую из Стамбула в Люксембург; дешевле может быть через Брюссель или Франкфурт и дальше поездом или автобусом."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Принято рукопожатие, среди друзей — три поцелуя в щёку.",
+     "Местные легко переходят с языка на язык; пара слов по-люксембургски очень ценится.",
+     "Важны пунктуальность и сдержанность.",
+     "По воскресеньям многие магазины закрыты; соблюдайте тишину."
+    ],
+    "festivals": [
+     "Национальный день (23 июня, официальный день рождения великого герцога; салют накануне)",
+     "Шуберфуэр (конец августа – начало сентября, большая ярмарка)",
+     "Танцевальная процессия в Эхтернахе (Троицкий вторник, ЮНЕСКО)"
+    ],
+    "lifestyle": "Многонациональное (почти половина — иностранцы), многоязычное и состоятельное общество; выходные — походы, вино и семейные обеды."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Старые кварталы и укрепления Люксембурга (ЮНЕСКО)",
+     "Казематы Бок",
+     "Корниш и район Грунд",
+     "Замок Вианден",
+     "Мюллерталь — «Малая Швейцария»",
+     "Долина Мозеля и деревня Шенген"
+    ],
+    "bestSeasons": "Май – сентябрь (мягкая погода для походов и виноградников Мозеля); сентябрь–октябрь — сбор урожая; декабрь — рождественские ярмарки",
+    "travelStyleTip": "Страна маленькая: живите в столице и ездите бесплатными поездами и автобусами в Вианден, Эхтернах и на Мозель."
+   },
+   "religion": {
+    "primaryReligions": "Католики (около 55–65%), растёт доля неверующих; небольшие протестантская, православная, мусульманская и иудейская общины.",
+    "respectNorms": "В соборе и базиликах прикрывайте плечи и колени и не ходите по храму во время мессы.",
+    "sacredSites": [
+     "Собор Нотр-Дам (Люксембург)",
+     "Базилика Святого Виллиброрда (Эхтернах)",
+     "Церковь Святого Михаила у скалы Бок"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Люксембургский (национальный язык), французский и немецкий. Во вывесках и сфере услуг преобладает французский.",
+    "englishProficiency": "Очень хороший; большинство свободно говорит и по-английски.",
+    "phrases": [
+     {
+      "phrase": "Moien!",
+      "meaning": "Здравствуйте",
+      "translation": "Здравствуйте",
+      "pronunciation": "MOY-en"
+     },
+     {
+      "phrase": "Merci",
+      "meaning": "Спасибо",
+      "translation": "Спасибо",
+      "pronunciation": "MER-see"
+     },
+     {
+      "phrase": "Wann ech gelift",
+      "meaning": "Пожалуйста",
+      "translation": "Пожалуйста",
+      "pronunciation": "vahn esh geh-LIFT"
+     },
+     {
+      "phrase": "Wat kascht dat?",
+      "meaning": "Сколько это стоит?",
+      "translation": "Сколько это стоит?",
+      "pronunciation": "vaht kahsht daht"
+     },
+     {
+      "phrase": "Äddi!",
+      "meaning": "До свидания",
+      "translation": "До свидания",
+      "pronunciation": "AH-dee"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "В 963 году граф Зигфрид построил замок на скале Бок, и город вырос в мощную крепость — «Гибралтар Севера». Лондонский договор 1867 года сделал страну нейтральной, большинство укреплений снесли. Люксембург — основатель ЕС, НАТО и Бенилюкса, здесь работают институты ЕС и крупный финансовый центр.",
+    "milestones": [
+     "963: граф Зигфрид строит замок на скале Бок",
+     "1867: нейтралитет по Лондонскому договору",
+     "1890: собственная великогерцогская династия (Нассау-Вейльбург)",
+     "1957: основатель ЕЭС; 1985 — Шенгенское соглашение"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Юдд мат Гаардебунен (копчёная свиная шея с бобами; национальное блюдо)",
+     "Бунешлупп (суп из стручковой фасоли)",
+     "Рислингспаштейт (мясной пирог с желе из рислинга)"
+    ],
+    "traditionalDrinks": [
+     "Мозельские рислинг и пино",
+     "Креман де Люксембург (игристое)",
+     "Пиво Bofferding и Diekirch"
+    ],
+    "streetFoodAndDesserts": [
+     "Громперекихельхер (пряные картофельные оладьи на ярмарках)",
+     "Кветшентаарт (сливовый пирог)",
+     "Качкейс (плавленый сыр для намазки)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Робер Шуман (один из отцов единой Европы, родился в Люксембурге)",
+     "Эдвард Стайхен (фотограф)",
+     "Великая герцогиня Шарлотта (символ сопротивления во Второй мировой)"
+    ],
+    "strongSectors": [
+     "Банки и инвестфонды",
+     "Спутниковая и космическая отрасль (SES)",
+     "Сталь (штаб-квартира ArcelorMittal) и логистика"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Карты и бесконтактная оплата принимаются везде; наличные почти не нужны.",
+    "tippingCulture": "Обслуживание включено; округлить или оставить 5–10% — вежливый жест.",
+    "economicPillars": "Финансовые услуги, институты ЕС, спутники и космос, сталь, логистика и сфера услуг с трансграничными работниками."
+   }
+  },
+  "itin": {
+   "routeName": "Тур по Великому герцогству: Люксембург, Мюллерталь и Вианден",
+   "routeSummary": "4-дневный маршрут от столицы на скалах к песчаниковым ущельям «Малой Швейцарии» и сказочному замку Вианден на севере — всё на бесплатном транспорте.",
+   "totalDays": 4,
+   "idealDurationText": "4 дня",
+   "bestSeason": "Май – сентябрь (мягкая погода для походов и виноградников Мозеля); сентябрь–октябрь — сбор урожая; декабрь — рождественские ярмарки",
+   "transportMode": "Бесплатные поезда и автобусы",
+   "paceLevel": "Спокойный с лёгкими прогулками",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Остановка 1: Люксембург (Старый город и Грунд)",
+     "recommendedDuration": "2 дня",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Казематы Бок",
+      "Корниш («самый красивый балкон Европы»)",
+      "Великогерцогский дворец и площадь Гийома II",
+      "Панорамный лифт Пфаффенталь"
+     ],
+     "activities": [
+      "Спуститесь в Грунд и прогуляйтесь вдоль Альзетта.",
+      "Посетите музей современного искусства MUDAM в Кирхберге.",
+      "Проедьте на бесплатном трамвае по Кирхбергу и европейскому кварталу."
+     ],
+     "foodAndDrinks": [
+      "Юдд мат Гаардебунен",
+      "Громперекихельхер",
+      "Креман де Люксембург"
+     ],
+     "criticalTips": [
+      "Казематы зимой могут быть закрыты — проверьте сезон.",
+      "Город холмистый: удобная обувь и общественные лифты помогут."
+     ],
+     "mapsQuery": "Bock Casemates, Luxembourg"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Остановка 2: Мюллерталь и Эхтернах («Малая Швейцария»)",
+     "recommendedDuration": "1 день",
+     "durationBadge": "1 день",
+     "highlights": [
+      "Песчаниковые скалы тропы Мюллерталь",
+      "Водопад Шиссентюмпель",
+      "Аббатство и базилика Эхтернаха",
+      "Озеро Эхтернах"
+     ],
+     "activities": [
+      "Пройдите скальными проходами между Бердорфом и Эхтернахом.",
+      "Сделайте фото у каменного моста Шиссентюмпеля.",
+      "Выпейте кофе на средневековой площади Эхтернаха."
+     ],
+     "foodAndDrinks": [
+      "Кветшентаарт (сливовый пирог)",
+      "Местный сидр и соки"
+     ],
+     "criticalTips": [
+      "Тропы узкие, с корнями, в дождь скользкие — нужна обувь с фиксацией голеностопа.",
+      "В выходные часть автобусов ходит реже — проверьте обратный рейс."
+     ],
+     "mapsQuery": "Schiessentümpel, Mullerthal, Luxembourg"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Остановка 3: Вианден (замок и долина Ур)",
+     "recommendedDuration": "1 день",
+     "durationBadge": "1 день",
+     "highlights": [
+      "Замок Вианден",
+      "Кресельный подъёмник к смотровой площадке",
+      "Дом Виктора Гюго",
+      "Берега реки Ур"
+     ],
+     "activities": [
+      "Осмотрите залы отреставрированного замка.",
+      "Поднимитесь на подъёмнике к классическому виду на замок.",
+      "На обратном пути загляните в пивоваренный город Дикирх."
+     ],
+     "foodAndDrinks": [
+      "Арденнская ветчина и местные сыры",
+      "Пиво Diekirch",
+      "Домашние фруктовые ликёры"
+     ],
+     "criticalTips": [
+      "Подъёмник работает только в сезон (примерно апрель–октябрь).",
+      "На севере прохладнее — возьмите лишний слой одежды."
+     ],
+     "mapsQuery": "Vianden Castle, Luxembourg"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Юдд мат Гаардебунен",
+     "Бунешлупп",
+     "Рислингспаштейт",
+     "Фритюр де ла Мозель (жареная речная рыба)"
+    ],
+    "drinks": [
+     "Рислинг",
+     "Креман де Люксембург",
+     "Bofferding",
+     "Минеральная вода Rosport"
+    ],
+    "streetFoods": [
+     "Громперекихельхер",
+     "Хлеб с качкейсом",
+     "Кветшентаарт",
+     "Крендель (в Бретцельсонндег)"
+    ],
+    "diningAdvice": "Обеденное блюдо дня (plat du jour) намного дешевле ужина. В традиционной кухне много свинины; в столице легко найти турецкие, ливанские и португальские рестораны."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Дождевик (погода часто меняется)",
+     "Трекинговая обувь с фиксацией",
+     "Многослойная одежда",
+     "Бесконтактная банковская карта"
+    ],
+    "safetyAndEtiquette": [
+     "В первом классе поезда нужен билет; второй класс бесплатный.",
+     "По воскресеньям большинство супермаркетов закрывается после обеда.",
+     "На лесных тропах держитесь маркированных маршрутов."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Такие же розетки с двумя круглыми штырями (C/F), как в Турции; адаптер не нужен."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Водопроводная вода питьевая, но может быть жёсткой.",
+    "vaccines": [
+     "Плановые прививки (столбняк, дифтерия, корь)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "112"
+   },
+   "tipping": {
+    "custom": "Достаточно округлить или оставить 5–10%.",
+    "standardPercent": 5,
+    "rule": "round_up",
+    "note": "Обслуживание включено в цены; чаевые не обязательны."
+   },
+   "taxFree": {
+    "vatRefundPercent": "НДС 17% (самый низкий в ЕС); возврат нетто ~10–13%",
+    "minSpend": "от ~74 € в одном магазине",
+    "customsNote": "Заверьте форму Tax Free в аэропорту выезда из ЕС; при прямом рейсе в Турцию из Люксембурга — в аэропорту Финдель."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.00 - $3.00",
+    "topCarriers": [
+     "POST Luxembourg",
+     "Orange Luxembourg",
+     "Tango"
+    ],
+    "airportSimTrapWarning": "Роуминг с турецкими номерами очень дорогой; купите заранее eSIM на весь ЕС. У границ телефон может переключаться на французские, немецкие или бельгийские сети."
+   },
+   "touristScams": [
+    {
+     "title": "Кражи с отвлечением у вокзала",
+     "desc": "У вокзала воры спрашивают дорогу или толкают, чтобы украсть телефон и кошелёк.",
+     "tip": "Не оставляйте телефон на столе, носите сумку спереди."
+    },
+    {
+     "title": "Фальшивые сборщики подписей",
+     "desc": "На туристических площадях подходят со списком, просят пожертвование и в это время обчищают карманы.",
+     "tip": "Вежливо откажитесь и уйдите."
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,1967 @@
+{
+ "tr": {
+  "insights": {
+   "currency": "Danimarka Kronu (DKK)",
+   "plugType": "Tip C, E, F, K (230V, 50Hz)",
+   "bestMonths": "Mayıs – Ağustos (uzun gündüzler, 18-22 °C, açık hava kafeleri); Haziran sonu Sankthans; Kasım sonu – Aralık Tivoli ve Noel pazarları (kısa ve soğuk günler)",
+   "safety": {
+    "safetyScore": 85,
+    "safetyLevel": "Olağanüstü Güvenli",
+    "badgeColor": "bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-900/60",
+    "crimeRateSummary": "Dünyanın en güvenli ülkelerindendir; şiddet suçu çok düşüktür. Kopenhag Merkez İstasyonu, Strøget ve Nyhavn’da yankesiciliğe, her yerde bisiklet hırsızlığına dikkat edin.",
+    "commonScams": [
+     "Strøget’te “üç bardak” (bul karayı al parayı) sokak kumarı",
+     "Kalabalık istasyon ve kafelerde masadaki telefon ve çantaların çalınması",
+     "Christiania’da fotoğraf çekmenin sorun çıkarması ve yasa dışı madde satıcıları"
+    ],
+    "safeTravelTips": [
+     "Toplu taşımada biletsiz yolculuğun cezası yüksektir; bileti binmeden uygulamadan alın.",
+     "Bisiklet yolları çok yoğundur; yaya olarak bisiklet şeridine çıkmayın.",
+     "Christiania’da fotoğraf çekmeyin ve yasa dışı satıcılarla muhatap olmayın."
+    ],
+    "emergencyNumbers": {
+     "police": "112",
+     "ambulance": "112",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "%99+ nüfus kapsaması (4G/5G); kırsalda da güçlü sinyal",
+    "costPerGbUsd": "~1.00 - 3.00 $",
+    "esimAvailability": "Mükemmel",
+    "bestCarriers": [
+     "YouSee (TDC)",
+     "Telia",
+     "Telenor",
+     "3",
+     "Airalo / Holafly eSIM"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Mükemmel (7/24 Kopenhag metrosu, dakik DSB trenleri, bisiklet altyapısı)",
+    "costLevel": "Çok Pahalı",
+    "singleTicketUsd": "3.50 - 4.20 $ (Copenhagen, 2 zones)",
+    "dailyPassUsd": "11.50 - 13.00 $ (Copenhagen City Pass 24h)",
+    "popularRideApps": [
+     "DOT Mobilbilletter",
+     "Rejsekort",
+     "DSB",
+     "Dantaxi",
+     "Taxa 4x35",
+     "Donkey Republic"
+    ],
+    "taxiAdvice": "Kopenhag’ta taksiler pahalıdır (kısa yolculuk bile 20-30 $); Dantaxi veya Taxa 4x35 uygulamasıyla çağırın. Şehir içinde metro, S-tog ve kiralık bisiklet en pratik yoldur."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "100 - 140 $",
+    "dailyBudgetMidrangeUsd": "220 - 350 $",
+    "budgetMealUsd": "22 - 35 $",
+    "coffeeUsd": "5.00 - 7.00 $",
+    "waterBottleUsd": "2.50 - 4.00 $",
+    "hostelDormUsd": "45 - 75 $",
+    "hotel3StarUsd": "170 - 280 $",
+    "flightCostIndex": "Orta (İstanbul – Kopenhag direkt ~3,5 sa)",
+    "flightTip": "THY ve Pegasus İstanbul’dan Kopenhag’a direkt uçar; THY’nin Billund seferi de vardır. İsveç’in Malmö’sü Kopenhag Havalimanı’na trenle ~20 dakikadır."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Danimarkalılar sade ve eşitlikçidir; gösterişten ve abartılı övgüden kaçınılır.",
+     "Dakiklik çok önemlidir; davetlere tam saatinde gidin.",
+     "Kadeh kaldırırken göz teması kurup “Skål!” denir.",
+     "Toplu taşımada ve sıralarda sessiz ve düzenli olunur."
+    ],
+    "festivals": [
+     "Roskilde Festivali (haziran sonu – temmuz başı)",
+     "Sankthans (23 Haziran, sahillerde şenlik ateşi)",
+     "Kopenhag Caz Festivali (temmuz)"
+    ],
+    "lifestyle": "“Hygge” kültürü: mum ışığında, sıcak ve samimi ortamlarda vakit geçirmek; iş-yaşam dengesi ve bisiklet günlük hayatın parçasıdır."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Kopenhag Nyhavn ve Tivoli Bahçeleri",
+     "Rosenborg Sarayı ve Amalienborg",
+     "Kronborg Kalesi (Helsingør, UNESCO)",
+     "Roskilde Katedrali ve Viking Gemisi Müzesi",
+     "Odense H.C. Andersen Müzesi",
+     "Aarhus ARoS Sanat Müzesi ve Den Gamle By"
+    ],
+    "bestSeasons": "Mayıs – Ağustos",
+    "travelStyleTip": "Kopenhag’ı bisikletle gezin; şehirlerarası DSB trenleri hızlıdır ve erken alınan “Orange” biletler ucuzdur."
+   },
+   "religion": {
+    "primaryReligions": "Danimarka Halk Kilisesi (Lutheran) üyeleri ~%71, Müslüman ~%5; büyük kısmı dinî pratikte seküler",
+    "respectNorms": "Kiliselerde sessiz olun; pazar ayinleri sırasında gezmekten kaçının.",
+    "sacredSites": [
+     "Roskilde Katedrali (UNESCO, kraliyet mezarları)",
+     "Jelling Höyükleri, Rün Taşları ve Kilisesi (UNESCO)",
+     "Frederik Kilisesi (Mermer Kilise, Kopenhag)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Danca (resmî); Faroe Adaları ve Grönland’da yerel diller de resmîdir.",
+    "englishProficiency": "Mükemmel; neredeyse herkes akıcı İngilizce konuşur.",
+    "phrases": [
+     {
+      "phrase": "Hej",
+      "meaning": "Merhaba",
+      "translation": "Merhaba",
+      "pronunciation": "hai"
+     },
+     {
+      "phrase": "Tak",
+      "meaning": "Teşekkürler",
+      "translation": "Teşekkürler",
+      "pronunciation": "tahk"
+     },
+     {
+      "phrase": "Undskyld",
+      "meaning": "Affedersiniz / Pardon",
+      "translation": "Pardon",
+      "pronunciation": "UN-skool"
+     },
+     {
+      "phrase": "Hvad koster det?",
+      "meaning": "Bu ne kadar?",
+      "translation": "Kaç para?",
+      "pronunciation": "va KOS-ta de"
+     },
+     {
+      "phrase": "Skål!",
+      "meaning": "Şerefe!",
+      "translation": "Şerefe",
+      "pronunciation": "skohl"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Viking Çağı’nın merkezlerinden olan Danimarka, 10. yüzyılda Mavi Diş Harald ile Hristiyanlaştı ve 1397 Kalmar Birliği ile İskandinavya’nın büyük bölümünü yönetti. Dünyanın en eski monarşilerinden biri olan ülke 1849’da anayasal düzene geçti, 1973’te AET’ye katıldı.",
+    "milestones": [
+     "~965: Mavi Diş Harald ve Jelling Rün Taşı",
+     "1397: Kalmar Birliği",
+     "1849: İlk anayasa",
+     "1973: AET üyeliği; 2024: X. Frederik’in tahta çıkışı"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Smørrebrød (çavdar ekmeği üzerinde açık sandviç)",
+     "Stegt flæsk med persillesovs (domuz pastırması, ulusal yemek)",
+     "Frikadeller (köfte; genelde domuz karışımlı)"
+    ],
+    "traditionalDrinks": [
+     "Carlsberg ve Tuborg biraları",
+     "Akvavit (snaps)",
+     "Gløgg (kışın sıcak baharatlı şarap)"
+    ],
+    "streetFoodAndDesserts": [
+     "Pølse (sosisli sandviç, genelde domuz)",
+     "Kanelsnegl ve wienerbrød (Danimarka hamur işleri)",
+     "Æbleskiver (Noel’de pudra şekerli top krep)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Hans Christian Andersen (masal yazarı)",
+     "Søren Kierkegaard (filozof)",
+     "Niels Bohr (Nobel ödüllü fizikçi)"
+    ],
+    "strongSectors": [
+     "İlaç (Novo Nordisk)",
+     "Rüzgâr enerjisi (Vestas, Ørsted)",
+     "Denizcilik ve lojistik (Maersk)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Neredeyse tamamen kartlı bir toplumdur; temassız kart veya telefon ile her yerde ödeme yapılır, nakde pek ihtiyaç yoktur.",
+    "tippingCulture": "Servis ücreti yasal olarak fiyata dahildir; bahşiş beklenmez, çok memnunsanız hesabı yuvarlayabilirsiniz.",
+    "economicPillars": "İlaç ve yaşam bilimleri, yeşil enerji, denizcilik, tasarım ve tarım-gıda (domuz ve süt ürünleri ihracatı)."
+   }
+  },
+  "itin": {
+   "routeName": "Danimarka Klasik Rotası: Kopenhag, Roskilde, Odense ve Aarhus",
+   "routeSummary": "Kopenhag’ın kanallarından Vikinglerin Roskilde’sine, H.C. Andersen’in Odense’sinden sanat şehri Aarhus’a uzanan 7 günlük tren rotası.",
+   "totalDays": 7,
+   "idealDurationText": "7 Günlük Rota",
+   "bestSeason": "Mayıs – Ağustos",
+   "transportMode": "DSB trenleri; şehir içinde metro, S-tog ve bisiklet",
+   "paceLevel": "Dengeli (Şehir + Tarih + Tasarım)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "1. Durak: Kopenhag (Kanallar, Saraylar ve Tasarım)",
+     "recommendedDuration": "3 gün",
+     "durationBadge": "3 Gün",
+     "highlights": [
+      "Nyhavn ve kanal turu",
+      "Tivoli Bahçeleri",
+      "Rosenborg Sarayı ve Amalienborg",
+      "Christiansborg kulesi (ücretsiz manzara)"
+     ],
+     "activities": [
+      "Kiralık bisikletle şehri gezin.",
+      "Torvehallerne pazarında smørrebrød deneyin.",
+      "Trenle Helsingør’e gidip Kronborg Kalesi’ni görün."
+     ],
+     "foodAndDrinks": [
+      "Smørrebrød",
+      "Kanelsnegl",
+      "Carlsberg birası"
+     ],
+     "criticalTips": [
+      "Copenhagen Card ile müze ve ulaşımda tasarruf edebilirsiniz.",
+      "Bisiklet kullanırken el işaretleri verin ve sağdan gidin."
+     ],
+     "mapsQuery": "Copenhagen, Denmark"
+    },
+    {
+     "stopNumber": 2,
+     "name": "2. Durak: Roskilde (Viking Mirası)",
+     "recommendedDuration": "1 gün",
+     "durationBadge": "1 Gün",
+     "highlights": [
+      "Roskilde Katedrali (UNESCO)",
+      "Viking Gemisi Müzesi",
+      "Roskilde fiyordu kıyısı"
+     ],
+     "activities": [
+      "Müzede Viking gemisi replikalarını görün.",
+      "Yazın fiyortta eski tip Viking teknesiyle kürek çekin.",
+      "Katedralde Danimarka kraliyet mezarlarını gezin."
+     ],
+     "foodAndDrinks": [
+      "Fiyort balığı",
+      "Æbleskiver",
+      "Yerel elma suyu"
+     ],
+     "criticalTips": [
+      "Kopenhag’dan trenle ~25 dakikadır; günübirlik de yapılabilir.",
+      "Roskilde Festivali haftasında şehir çok kalabalıktır."
+     ],
+     "mapsQuery": "Roskilde, Denmark"
+    },
+    {
+     "stopNumber": 3,
+     "name": "3. Durak: Odense (H.C. Andersen’in Şehri)",
+     "recommendedDuration": "1 gün",
+     "durationBadge": "1 Gün",
+     "highlights": [
+      "H.C. Andersen Müzesi",
+      "Eski şehir ve renkli evler",
+      "Egeskov Kalesi (Fyn adası)"
+     ],
+     "activities": [
+      "Andersen masallarıyla tasarlanmış müze bahçesini gezin.",
+      "Eski şehrin Arnavut kaldırımlı sokaklarında yürüyün.",
+      "Araçla Egeskov’un su kalesine gidin."
+     ],
+     "foodAndDrinks": [
+      "Frikadeller",
+      "Wienerbrød",
+      "Akvavit"
+     ],
+     "criticalTips": [
+      "H.C. Andersen Müzesi’ne zaman dilimli bilet alın.",
+      "Egeskov’a toplu taşıma sınırlıdır; araç kiralayın."
+     ],
+     "mapsQuery": "Odense, Denmark"
+    },
+    {
+     "stopNumber": 4,
+     "name": "4. Durak: Aarhus (Sanat ve Gençlik Şehri)",
+     "recommendedDuration": "2 gün",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "ARoS Sanat Müzesi ve “Your rainbow panorama”",
+      "Den Gamle By açık hava müzesi",
+      "Moesgaard Müzesi",
+      "Aarhus Ø liman bölgesi"
+     ],
+     "activities": [
+      "ARoS’un gökkuşağı yürüyüş yolundan şehri izleyin.",
+      "Den Gamle By’da tarihî Danimarka sokaklarında dolaşın.",
+      "Latin Quarter’da kafeler arasında gezinin."
+     ],
+     "foodAndDrinks": [
+      "Smørrebrød",
+      "Pølse",
+      "Yerel craft bira"
+     ],
+     "criticalTips": [
+      "Müzeler pazartesi kapalı olabilir; saatleri kontrol edin.",
+      "Kopenhag’a dönüş treni ~3 saattir; erken bilet alın."
+     ],
+     "mapsQuery": "Aarhus, Denmark"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Smørrebrød (çavdar ekmeği üzerinde açık sandviç)",
+     "Stegt flæsk med persillesovs (domuz pastırması, ulusal yemek)",
+     "Frikadeller (köfte; genelde domuz karışımlı)"
+    ],
+    "drinks": [
+     "Carlsberg ve Tuborg biraları",
+     "Akvavit (snaps)",
+     "Gløgg (kışın sıcak baharatlı şarap)"
+    ],
+    "streetFoods": [
+     "Pølse (sosisli sandviç, genelde domuz)",
+     "Kanelsnegl ve wienerbrød (Danimarka hamur işleri)",
+     "Æbleskiver (Noel’de pudra şekerli top krep)"
+    ],
+    "diningAdvice": "Öğle yemeği akşamdan ucuzdur; marketlerde (Netto, Rema 1000) hazır sandviç bütçeyi korur. Pølse, frikadeller ve flæsk genellikle domuzdur; “uden svinekød” (domuzsuz) diye sorun."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Rüzgâr geçirmez yağmurluk",
+     "Kat kat giysi (yazın bile akşamlar serin)",
+     "Temassız kart veya telefonla ödeme",
+     "Su matarası (musluk suyu mükemmel)"
+    ],
+    "safetyAndEtiquette": [
+     "Bisiklet yollarına yürümeyin.",
+     "Christiania’da fotoğraf çekmeyin."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "E",
+     "F",
+     "K"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Danimarka’ya özgü K tipi priz; yeni prizlerde Türkiye’deki C ve E/F fişler de çalışır. Eski K prizler için evrensel adaptör taşımak faydalıdır."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Musluk suyu yeraltı kaynaklıdır ve dünyanın en temizlerindendir; şişe su almaya gerek yoktur.",
+    "vaccines": [
+     "Rutin aşılar (Tetanos, Difteri, MMR)",
+     "Bornholm adasında ormanlık alanlarda yürüyecekler için Kene Kaynaklı Ensefalit (TBE) aşısı düşünülebilir"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "112"
+   },
+   "tipping": {
+    "custom": "Servis dahildir; bahşiş beklenmez.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "Çok memnunsanız hesabı yuvarlamak veya %5-10 bırakmak nezakettir."
+   },
+   "taxFree": {
+    "vatRefundPercent": "%25 KDV (komisyon sonrası net ~%13-19 iade)",
+    "minSpend": "Aynı mağazada 300 DKK üzeri",
+    "customsNote": "Formu AB’den çıkışta (Kopenhag Havalimanı) gümrüğe onaylatın; ürünler kullanılmamış olmalı."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "~1.00 - 3.00 $",
+    "topCarriers": [
+     "YouSee (TDC)",
+     "Telia",
+     "Telenor",
+     "3"
+    ],
+    "airportSimTrapWarning": "Kopenhag Havalimanı’nda pahalı paketler yerine eSIM kurun; şehirde 7-Eleven ve marketlerde ön ödemeli SIM bulunur."
+   },
+   "touristScams": [
+    {
+     "title": "Üç bardak oyunu",
+     "desc": "Strøget’te sokak kumarı; “kazanan” seyirciler aslında çetenin üyesidir.",
+     "tip": "Oyuna yaklaşmayın ve izlerken cüzdanınıza dikkat edin."
+    },
+    {
+     "title": "Masa üstü hırsızlığı",
+     "desc": "Kafelerde masada bırakılan telefon ve çantalar hızla çalınır.",
+     "tip": "Telefonu cebinizde, çantayı kucağınızda tutun."
+    },
+    {
+     "title": "Bilet cezası",
+     "desc": "Biletsiz veya yanlış bölge bileti ile yakalanınca yüksek ceza kesilir; turistlere istisna yapılmaz.",
+     "tip": "DOT uygulamasından doğru bölge sayısıyla bilet alın."
+    }
+   ]
+  }
+ },
+ "en": {
+  "insights": {
+   "currency": "Danish Krone (DKK)",
+   "plugType": "Type C, E, F, K (230V, 50Hz)",
+   "bestMonths": "May – August (long days, 18-22 °C, outdoor cafés); late June Sankthans; late November – December Tivoli and Christmas markets (short, cold days)",
+   "safety": {
+    "safetyScore": 85,
+    "safetyLevel": "Exceptional Safety",
+    "badgeColor": "bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-900/60",
+    "crimeRateSummary": "One of the world’s safest countries with very low violent crime. Watch for pickpockets at Copenhagen Central Station, Strøget and Nyhavn, and for bike theft everywhere.",
+    "commonScams": [
+     "The “shell game” street gambling on Strøget",
+     "Phones and bags taken from tables in busy stations and cafés",
+     "Trouble when taking photos in Christiania, plus illegal drug sellers"
+    ],
+    "safeTravelTips": [
+     "Fines for riding public transport without a ticket are high; buy via the app before boarding.",
+     "Bike lanes are very busy; do not walk in them.",
+     "Do not take photos in Christiania and avoid illegal sellers."
+    ],
+    "emergencyNumbers": {
+     "police": "112",
+     "ambulance": "112",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99%+ population coverage (4G/5G); strong signal even in the countryside",
+    "costPerGbUsd": "~1.00 - 3.00 $",
+    "esimAvailability": "Excellent",
+    "bestCarriers": [
+     "YouSee (TDC)",
+     "Telia",
+     "Telenor",
+     "3",
+     "Airalo / Holafly eSIM"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Excellent (24/7 Copenhagen metro, punctual DSB trains, cycling infrastructure)",
+    "costLevel": "Very Expensive",
+    "singleTicketUsd": "3.50 - 4.20 $ (Copenhagen, 2 zones)",
+    "dailyPassUsd": "11.50 - 13.00 $ (Copenhagen City Pass 24h)",
+    "popularRideApps": [
+     "DOT Mobilbilletter",
+     "Rejsekort",
+     "DSB",
+     "Dantaxi",
+     "Taxa 4x35",
+     "Donkey Republic"
+    ],
+    "taxiAdvice": "Taxis in Copenhagen are expensive (even short rides cost $20-30); book via the Dantaxi or Taxa 4x35 apps. Within the city, metro, S-tog and rental bikes are the most practical."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "100 - 140 $",
+    "dailyBudgetMidrangeUsd": "220 - 350 $",
+    "budgetMealUsd": "22 - 35 $",
+    "coffeeUsd": "5.00 - 7.00 $",
+    "waterBottleUsd": "2.50 - 4.00 $",
+    "hostelDormUsd": "45 - 75 $",
+    "hotel3StarUsd": "170 - 280 $",
+    "flightCostIndex": "Moderate (Istanbul – Copenhagen direct ~3.5 h)",
+    "flightTip": "Turkish Airlines and Pegasus fly direct from Istanbul to Copenhagen; Turkish Airlines also serves Billund. Malmö in Sweden is ~20 minutes by train from Copenhagen Airport."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Danes are modest and egalitarian; showing off and lavish praise are avoided.",
+     "Punctuality is very important; arrive on time for invitations.",
+     "When toasting, make eye contact and say “Skål!”.",
+     "People keep quiet and orderly on public transport and in queues."
+    ],
+    "festivals": [
+     "Roskilde Festival (late June – early July)",
+     "Sankthans (23 June, bonfires on beaches)",
+     "Copenhagen Jazz Festival (July)"
+    ],
+    "lifestyle": "“Hygge” culture: cosy, candlelit, intimate gatherings; work-life balance and cycling are part of daily life."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Nyhavn and Tivoli Gardens, Copenhagen",
+     "Rosenborg Castle and Amalienborg",
+     "Kronborg Castle (Helsingør, UNESCO)",
+     "Roskilde Cathedral and Viking Ship Museum",
+     "H.C. Andersen Museum, Odense",
+     "ARoS Art Museum and Den Gamle By, Aarhus"
+    ],
+    "bestSeasons": "May – August",
+    "travelStyleTip": "Explore Copenhagen by bike; intercity DSB trains are fast, and early “Orange” tickets are cheap."
+   },
+   "religion": {
+    "primaryReligions": "Church of Denmark (Lutheran) members ~71%, Muslim ~5%; most are secular in practice",
+    "respectNorms": "Keep quiet in churches; avoid sightseeing during Sunday services.",
+    "sacredSites": [
+     "Roskilde Cathedral (UNESCO, royal tombs)",
+     "Jelling Mounds, Runic Stones and Church (UNESCO)",
+     "Frederik’s Church (Marble Church, Copenhagen)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Danish (official); local languages are also official in the Faroe Islands and Greenland.",
+    "englishProficiency": "Excellent; almost everyone speaks fluent English.",
+    "phrases": [
+     {
+      "phrase": "Hej",
+      "meaning": "Hello",
+      "translation": "Hello",
+      "pronunciation": "hai"
+     },
+     {
+      "phrase": "Tak",
+      "meaning": "Thank you",
+      "translation": "Thanks",
+      "pronunciation": "tahk"
+     },
+     {
+      "phrase": "Undskyld",
+      "meaning": "Excuse me / Sorry",
+      "translation": "Excuse me",
+      "pronunciation": "UN-skool"
+     },
+     {
+      "phrase": "Hvad koster det?",
+      "meaning": "How much is it?",
+      "translation": "How much?",
+      "pronunciation": "va KOS-ta de"
+     },
+     {
+      "phrase": "Skål!",
+      "meaning": "Cheers!",
+      "translation": "Cheers",
+      "pronunciation": "skohl"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "A heartland of the Viking Age, Denmark was Christianised under Harald Bluetooth in the 10th century and ruled much of Scandinavia through the Kalmar Union of 1397. One of the world’s oldest monarchies, it became a constitutional state in 1849 and joined the EEC in 1973.",
+    "milestones": [
+     "~965: Harald Bluetooth and the Jelling Stone",
+     "1397: Kalmar Union",
+     "1849: First constitution",
+     "1973: EEC membership; 2024: Frederik X ascends the throne"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Smørrebrød (open sandwiches on rye bread)",
+     "Stegt flæsk med persillesovs (crispy pork belly, the national dish)",
+     "Frikadeller (meatballs, usually with pork)"
+    ],
+    "traditionalDrinks": [
+     "Carlsberg and Tuborg beers",
+     "Akvavit (snaps)",
+     "Gløgg (hot spiced wine in winter)"
+    ],
+    "streetFoodAndDesserts": [
+     "Pølse (hot dog, usually pork)",
+     "Kanelsnegl and wienerbrød (Danish pastries)",
+     "Æbleskiver (Christmas pancake balls with icing sugar)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Hans Christian Andersen (fairy-tale author)",
+     "Søren Kierkegaard (philosopher)",
+     "Niels Bohr (Nobel Prize-winning physicist)"
+    ],
+    "strongSectors": [
+     "Pharmaceuticals (Novo Nordisk)",
+     "Wind energy (Vestas, Ørsted)",
+     "Shipping and logistics (Maersk)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "An almost cashless society; contactless cards or phones work everywhere and cash is rarely needed.",
+    "tippingCulture": "Service is included by law; tips are not expected, though you can round up if very pleased.",
+    "economicPillars": "Pharma and life sciences, green energy, shipping, design and agrifood (pork and dairy exports)."
+   }
+  },
+  "itin": {
+   "routeName": "Classic Denmark: Copenhagen, Roskilde, Odense and Aarhus",
+   "routeSummary": "A 7-day rail route from Copenhagen’s canals to Viking Roskilde, Hans Christian Andersen’s Odense and the art city of Aarhus.",
+   "totalDays": 7,
+   "idealDurationText": "7-Day Route",
+   "bestSeason": "May – August",
+   "transportMode": "DSB trains; metro, S-tog and bikes within cities",
+   "paceLevel": "Balanced (City + History + Design)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stop 1: Copenhagen (Canals, Palaces & Design)",
+     "recommendedDuration": "3 days",
+     "durationBadge": "3 Days",
+     "highlights": [
+      "Nyhavn and a canal tour",
+      "Tivoli Gardens",
+      "Rosenborg Castle and Amalienborg",
+      "Christiansborg tower (free views)"
+     ],
+     "activities": [
+      "Explore the city by rental bike.",
+      "Try smørrebrød at Torvehallerne market.",
+      "Take the train to Helsingør to see Kronborg Castle."
+     ],
+     "foodAndDrinks": [
+      "Smørrebrød",
+      "Kanelsnegl",
+      "Carlsberg beer"
+     ],
+     "criticalTips": [
+      "The Copenhagen Card saves on museums and transport.",
+      "When cycling, use hand signals and keep right."
+     ],
+     "mapsQuery": "Copenhagen, Denmark"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stop 2: Roskilde (Viking Heritage)",
+     "recommendedDuration": "1 day",
+     "durationBadge": "1 Day",
+     "highlights": [
+      "Roskilde Cathedral (UNESCO)",
+      "Viking Ship Museum",
+      "Roskilde Fjord shore"
+     ],
+     "activities": [
+      "See replica Viking ships at the museum.",
+      "In summer, row an old-style Viking boat on the fjord.",
+      "Visit the Danish royal tombs in the cathedral."
+     ],
+     "foodAndDrinks": [
+      "Fjord fish",
+      "Æbleskiver",
+      "Local apple juice"
+     ],
+     "criticalTips": [
+      "It is ~25 minutes by train from Copenhagen; easy as a day trip.",
+      "The town is packed during Roskilde Festival week."
+     ],
+     "mapsQuery": "Roskilde, Denmark"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stop 3: Odense (Hans Christian Andersen’s City)",
+     "recommendedDuration": "1 day",
+     "durationBadge": "1 Day",
+     "highlights": [
+      "H.C. Andersen Museum",
+      "Old town and colourful houses",
+      "Egeskov Castle (Funen)"
+     ],
+     "activities": [
+      "Walk through the museum garden inspired by Andersen’s tales.",
+      "Stroll the cobbled lanes of the old town.",
+      "Drive to Egeskov’s moated castle."
+     ],
+     "foodAndDrinks": [
+      "Frikadeller",
+      "Wienerbrød",
+      "Akvavit"
+     ],
+     "criticalTips": [
+      "Book timed tickets for the H.C. Andersen Museum.",
+      "Public transport to Egeskov is limited; rent a car."
+     ],
+     "mapsQuery": "Odense, Denmark"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Stop 4: Aarhus (City of Art & Youth)",
+     "recommendedDuration": "2 days",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "ARoS Art Museum and “Your rainbow panorama”",
+      "Den Gamle By open-air museum",
+      "Moesgaard Museum",
+      "Aarhus Ø harbour district"
+     ],
+     "activities": [
+      "See the city from ARoS’s rainbow walkway.",
+      "Wander historic Danish streets at Den Gamle By.",
+      "Café-hop in the Latin Quarter."
+     ],
+     "foodAndDrinks": [
+      "Smørrebrød",
+      "Pølse",
+      "Local craft beer"
+     ],
+     "criticalTips": [
+      "Museums may close on Mondays; check hours.",
+      "The train back to Copenhagen takes ~3 hours; book early."
+     ],
+     "mapsQuery": "Aarhus, Denmark"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Smørrebrød (open sandwiches on rye bread)",
+     "Stegt flæsk med persillesovs (crispy pork belly, the national dish)",
+     "Frikadeller (meatballs, usually with pork)"
+    ],
+    "drinks": [
+     "Carlsberg and Tuborg beers",
+     "Akvavit (snaps)",
+     "Gløgg (hot spiced wine in winter)"
+    ],
+    "streetFoods": [
+     "Pølse (hot dog, usually pork)",
+     "Kanelsnegl and wienerbrød (Danish pastries)",
+     "Æbleskiver (Christmas pancake balls with icing sugar)"
+    ],
+    "diningAdvice": "Lunch is cheaper than dinner; supermarket sandwiches (Netto, Rema 1000) save money. Pølse, frikadeller and flæsk are usually pork; ask for “uden svinekød” (without pork)."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Windproof rain jacket",
+     "Layers (evenings are cool even in summer)",
+     "Contactless card or phone payment",
+     "Water bottle (tap water is excellent)"
+    ],
+    "safetyAndEtiquette": [
+     "Do not walk in bike lanes.",
+     "Do not take photos in Christiania."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "E",
+     "F",
+     "K"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Denmark-specific Type K sockets; newer sockets also take Turkish C and E/F plugs. Carrying a universal adapter helps with older K sockets."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Tap water comes from groundwater and is among the cleanest in the world; no need to buy bottled water.",
+    "vaccines": [
+     "Routine vaccinations (Tetanus, Diphtheria, MMR)",
+     "Tick-borne encephalitis (TBE) vaccine worth considering for forest hikers on Bornholm"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "112"
+   },
+   "tipping": {
+    "custom": "Service is included; tips are not expected.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "If very pleased, rounding up or leaving 5-10% is a kind gesture."
+   },
+   "taxFree": {
+    "vatRefundPercent": "25% VAT (net refund ~13-19% after fees)",
+    "minSpend": "Over DKK 300 in the same shop",
+    "customsNote": "Have the form validated by customs on leaving the EU (Copenhagen Airport); goods must be unused."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "~1.00 - 3.00 $",
+    "topCarriers": [
+     "YouSee (TDC)",
+     "Telia",
+     "Telenor",
+     "3"
+    ],
+    "airportSimTrapWarning": "Skip pricey packs at Copenhagen Airport and set up an eSIM; prepaid SIMs are sold at 7-Eleven and supermarkets in town."
+   },
+   "touristScams": [
+    {
+     "title": "Shell game",
+     "desc": "Street gambling on Strøget; the “winning” onlookers are part of the gang.",
+     "tip": "Stay away from the game and watch your wallet while others play."
+    },
+    {
+     "title": "Table-top theft",
+     "desc": "Phones and bags left on café tables are quickly stolen.",
+     "tip": "Keep your phone in your pocket and your bag on your lap."
+    },
+    {
+     "title": "Ticket fines",
+     "desc": "Being caught without a ticket or with the wrong zones brings a heavy fine, with no exceptions for tourists.",
+     "tip": "Buy tickets with the right number of zones in the DOT app."
+    }
+   ]
+  }
+ },
+ "de": {
+  "insights": {
+   "currency": "Dänische Krone (DKK)",
+   "plugType": "Typ C, E, F, K (230V, 50Hz)",
+   "bestMonths": "Mai – August (lange Tage, 18–22 °C, Straßencafés); Ende Juni Sankthans; Ende November – Dezember Tivoli und Weihnachtsmärkte (kurze, kalte Tage)",
+   "safety": {
+    "safetyScore": 85,
+    "safetyLevel": "Außergewöhnlich sicher",
+    "badgeColor": "bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-900/60",
+    "crimeRateSummary": "Eines der sichersten Länder der Welt mit sehr wenig Gewaltkriminalität. Am Kopenhagener Hauptbahnhof, auf der Strøget und in Nyhavn auf Taschendiebe achten, überall auf Fahrraddiebstahl.",
+    "commonScams": [
+     "Hütchenspiel als Straßenglücksspiel auf der Strøget",
+     "Diebstahl von Handys und Taschen von Tischen in Bahnhöfen und Cafés",
+     "Ärger beim Fotografieren in Christiania sowie illegale Drogenverkäufer"
+    ],
+    "safeTravelTips": [
+     "Fahren ohne Ticket wird hoch bestraft; das Ticket vor dem Einsteigen per App kaufen.",
+     "Radwege sind sehr belebt; nicht darauf gehen.",
+     "In Christiania nicht fotografieren und illegale Verkäufer meiden."
+    ],
+    "emergencyNumbers": {
+     "police": "112",
+     "ambulance": "112",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Über 99 % Bevölkerungsabdeckung (4G/5G); auch auf dem Land starkes Signal",
+    "costPerGbUsd": "~1.00 - 3.00 $",
+    "esimAvailability": "Ausgezeichnet",
+    "bestCarriers": [
+     "YouSee (TDC)",
+     "Telia",
+     "Telenor",
+     "3",
+     "Airalo / Holafly eSIM"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Ausgezeichnet (Metro rund um die Uhr, pünktliche DSB-Züge, Radinfrastruktur)",
+    "costLevel": "Sehr teuer",
+    "singleTicketUsd": "3.50 - 4.20 $ (Copenhagen, 2 zones)",
+    "dailyPassUsd": "11.50 - 13.00 $ (Copenhagen City Pass 24h)",
+    "popularRideApps": [
+     "DOT Mobilbilletter",
+     "Rejsekort",
+     "DSB",
+     "Dantaxi",
+     "Taxa 4x35",
+     "Donkey Republic"
+    ],
+    "taxiAdvice": "Taxis in Kopenhagen sind teuer (selbst kurze Fahrten 20–30 $); über die Apps Dantaxi oder Taxa 4x35 bestellen. In der Stadt sind Metro, S-Bahn und Leihräder am praktischsten."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "100 - 140 $",
+    "dailyBudgetMidrangeUsd": "220 - 350 $",
+    "budgetMealUsd": "22 - 35 $",
+    "coffeeUsd": "5.00 - 7.00 $",
+    "waterBottleUsd": "2.50 - 4.00 $",
+    "hostelDormUsd": "45 - 75 $",
+    "hotel3StarUsd": "170 - 280 $",
+    "flightCostIndex": "Mittel (Istanbul – Kopenhagen direkt ca. 3,5 Std.)",
+    "flightTip": "Turkish Airlines und Pegasus fliegen direkt von Istanbul nach Kopenhagen; Turkish Airlines fliegt auch Billund an. Malmö in Schweden ist vom Flughafen Kopenhagen ca. 20 Minuten mit dem Zug entfernt."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Dänen sind bescheiden und egalitär; Angeberei und übertriebenes Lob vermeidet man.",
+     "Pünktlichkeit ist sehr wichtig; zu Einladungen genau pünktlich erscheinen.",
+     "Beim Anstoßen Blickkontakt halten und „Skål!“ sagen.",
+     "In Bus, Bahn und Warteschlangen ist man ruhig und geordnet."
+    ],
+    "festivals": [
+     "Roskilde Festival (Ende Juni – Anfang Juli)",
+     "Sankthans (23. Juni, Feuer an den Stränden)",
+     "Copenhagen Jazz Festival (Juli)"
+    ],
+    "lifestyle": "„Hygge“-Kultur: gemütliches Beisammensein bei Kerzenlicht; Work-Life-Balance und Radfahren gehören zum Alltag."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Nyhavn und Tivoli, Kopenhagen",
+     "Schloss Rosenborg und Amalienborg",
+     "Schloss Kronborg (Helsingør, UNESCO)",
+     "Dom zu Roskilde und Wikingerschiffsmuseum",
+     "H.-C.-Andersen-Museum, Odense",
+     "Kunstmuseum ARoS und Den Gamle By, Aarhus"
+    ],
+    "bestSeasons": "Mai – August",
+    "travelStyleTip": "Kopenhagen mit dem Rad erkunden; DSB-Fernzüge sind schnell, frühe „Orange“-Tickets günstig."
+   },
+   "religion": {
+    "primaryReligions": "Mitglieder der Dänischen Volkskirche (lutherisch) ca. 71 %, Muslime ca. 5 %; überwiegend säkular gelebt",
+    "respectNorms": "In Kirchen leise sein; während der Sonntagsgottesdienste keine Besichtigung.",
+    "sacredSites": [
+     "Dom zu Roskilde (UNESCO, Königsgräber)",
+     "Grabhügel, Runensteine und Kirche von Jelling (UNESCO)",
+     "Frederikskirche (Marmorkirche, Kopenhagen)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Dänisch (Amtssprache); auf den Färöern und in Grönland sind auch die Landessprachen amtlich.",
+    "englishProficiency": "Ausgezeichnet; fast alle sprechen fließend Englisch.",
+    "phrases": [
+     {
+      "phrase": "Hej",
+      "meaning": "Hallo",
+      "translation": "Hallo",
+      "pronunciation": "hai"
+     },
+     {
+      "phrase": "Tak",
+      "meaning": "Danke",
+      "translation": "Danke",
+      "pronunciation": "tahk"
+     },
+     {
+      "phrase": "Undskyld",
+      "meaning": "Entschuldigung",
+      "translation": "Entschuldigung",
+      "pronunciation": "UN-skool"
+     },
+     {
+      "phrase": "Hvad koster det?",
+      "meaning": "Was kostet das?",
+      "translation": "Wie viel?",
+      "pronunciation": "va KOS-ta de"
+     },
+     {
+      "phrase": "Skål!",
+      "meaning": "Prost!",
+      "translation": "Prost",
+      "pronunciation": "skohl"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Als Kernland der Wikingerzeit wurde Dänemark im 10. Jahrhundert unter Harald Blauzahn christianisiert und beherrschte mit der Kalmarer Union von 1397 große Teile Skandinaviens. Als eine der ältesten Monarchien der Welt wurde es 1849 konstitutionell und trat 1973 der EWG bei.",
+    "milestones": [
+     "~965: Harald Blauzahn und der Jelling-Stein",
+     "1397: Kalmarer Union",
+     "1849: Erste Verfassung",
+     "1973: EWG-Beitritt; 2024: Thronbesteigung Frederiks X."
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Smørrebrød (belegtes Roggenbrot)",
+     "Stegt flæsk med persillesovs (knuspriger Schweinebauch, Nationalgericht)",
+     "Frikadeller (Fleischklößchen, meist mit Schwein)"
+    ],
+    "traditionalDrinks": [
+     "Carlsberg- und Tuborg-Bier",
+     "Akvavit (Schnaps)",
+     "Gløgg (Glühwein im Winter)"
+    ],
+    "streetFoodAndDesserts": [
+     "Pølse (Hotdog, meist Schwein)",
+     "Kanelsnegl und Wienerbrød (Plundergebäck)",
+     "Æbleskiver (Pfannkuchenbällchen mit Puderzucker zu Weihnachten)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Hans Christian Andersen (Märchendichter)",
+     "Søren Kierkegaard (Philosoph)",
+     "Niels Bohr (Physiknobelpreisträger)"
+    ],
+    "strongSectors": [
+     "Pharma (Novo Nordisk)",
+     "Windenergie (Vestas, Ørsted)",
+     "Schifffahrt und Logistik (Maersk)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Nahezu bargeldlose Gesellschaft; kontaktlose Karte oder Handy funktionieren überall.",
+    "tippingCulture": "Service ist gesetzlich inbegriffen; Trinkgeld wird nicht erwartet, bei großer Zufriedenheit kann man aufrunden.",
+    "economicPillars": "Pharma und Life Sciences, grüne Energie, Schifffahrt, Design und Agrarwirtschaft (Export von Schweinefleisch und Milchprodukten)."
+   }
+  },
+  "itin": {
+   "routeName": "Dänemark klassisch: Kopenhagen, Roskilde, Odense und Aarhus",
+   "routeSummary": "Eine 7-tägige Bahnroute von Kopenhagens Kanälen zum Wikinger-Roskilde, nach Hans Christian Andersens Odense und in die Kunststadt Aarhus.",
+   "totalDays": 7,
+   "idealDurationText": "7-tägige Route",
+   "bestSeason": "Mai – August",
+   "transportMode": "DSB-Züge; in den Städten Metro, S-Bahn und Fahrrad",
+   "paceLevel": "Ausgewogen (Stadt + Geschichte + Design)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stopp 1: Kopenhagen (Kanäle, Schlösser & Design)",
+     "recommendedDuration": "3 Tage",
+     "durationBadge": "3 Tage",
+     "highlights": [
+      "Nyhavn und Kanalrundfahrt",
+      "Tivoli",
+      "Schloss Rosenborg und Amalienborg",
+      "Turm von Christiansborg (kostenloser Ausblick)"
+     ],
+     "activities": [
+      "Die Stadt mit dem Leihrad erkunden.",
+      "In der Markthalle Torvehallerne Smørrebrød probieren.",
+      "Mit dem Zug nach Helsingør zum Schloss Kronborg fahren."
+     ],
+     "foodAndDrinks": [
+      "Smørrebrød",
+      "Kanelsnegl",
+      "Carlsberg-Bier"
+     ],
+     "criticalTips": [
+      "Mit der Copenhagen Card spart man bei Museen und Verkehr.",
+      "Beim Radfahren Handzeichen geben und rechts fahren."
+     ],
+     "mapsQuery": "Copenhagen, Denmark"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stopp 2: Roskilde (Wikingererbe)",
+     "recommendedDuration": "1 Tag",
+     "durationBadge": "1 Tag",
+     "highlights": [
+      "Dom zu Roskilde (UNESCO)",
+      "Wikingerschiffsmuseum",
+      "Ufer des Roskilde-Fjords"
+     ],
+     "activities": [
+      "Nachgebaute Wikingerschiffe im Museum ansehen.",
+      "Im Sommer in einem Wikingerboot auf dem Fjord rudern.",
+      "Die dänischen Königsgräber im Dom besuchen."
+     ],
+     "foodAndDrinks": [
+      "Fjordfisch",
+      "Æbleskiver",
+      "Lokaler Apfelsaft"
+     ],
+     "criticalTips": [
+      "Mit dem Zug ca. 25 Minuten von Kopenhagen; gut als Tagesausflug.",
+      "In der Woche des Roskilde Festivals ist die Stadt überfüllt."
+     ],
+     "mapsQuery": "Roskilde, Denmark"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stopp 3: Odense (Stadt von H. C. Andersen)",
+     "recommendedDuration": "1 Tag",
+     "durationBadge": "1 Tag",
+     "highlights": [
+      "H.-C.-Andersen-Museum",
+      "Altstadt mit bunten Häusern",
+      "Schloss Egeskov (Fünen)"
+     ],
+     "activities": [
+      "Durch den von Andersens Märchen inspirierten Museumsgarten gehen.",
+      "Durch die Pflastergassen der Altstadt schlendern.",
+      "Zum Wasserschloss Egeskov fahren."
+     ],
+     "foodAndDrinks": [
+      "Frikadeller",
+      "Wienerbrød",
+      "Akvavit"
+     ],
+     "criticalTips": [
+      "Zeitfenster-Tickets für das H.-C.-Andersen-Museum buchen.",
+      "Nach Egeskov fährt kaum Nahverkehr; Mietwagen nehmen."
+     ],
+     "mapsQuery": "Odense, Denmark"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Stopp 4: Aarhus (Stadt der Kunst & Jugend)",
+     "recommendedDuration": "2 Tage",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "Kunstmuseum ARoS mit „Your rainbow panorama“",
+      "Freilichtmuseum Den Gamle By",
+      "Moesgaard Museum",
+      "Hafenviertel Aarhus Ø"
+     ],
+     "activities": [
+      "Die Stadt vom Regenbogen-Rundgang des ARoS aus sehen.",
+      "In Den Gamle By durch historische dänische Straßen gehen.",
+      "Im Latin Quarter von Café zu Café ziehen."
+     ],
+     "foodAndDrinks": [
+      "Smørrebrød",
+      "Pølse",
+      "Lokales Craft-Bier"
+     ],
+     "criticalTips": [
+      "Museen sind montags teils geschlossen; Zeiten prüfen.",
+      "Der Zug zurück nach Kopenhagen braucht ca. 3 Stunden; früh buchen."
+     ],
+     "mapsQuery": "Aarhus, Denmark"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Smørrebrød (belegtes Roggenbrot)",
+     "Stegt flæsk med persillesovs (knuspriger Schweinebauch, Nationalgericht)",
+     "Frikadeller (Fleischklößchen, meist mit Schwein)"
+    ],
+    "drinks": [
+     "Carlsberg- und Tuborg-Bier",
+     "Akvavit (Schnaps)",
+     "Gløgg (Glühwein im Winter)"
+    ],
+    "streetFoods": [
+     "Pølse (Hotdog, meist Schwein)",
+     "Kanelsnegl und Wienerbrød (Plundergebäck)",
+     "Æbleskiver (Pfannkuchenbällchen mit Puderzucker zu Weihnachten)"
+    ],
+    "diningAdvice": "Mittagessen ist günstiger als Abendessen; Supermarkt-Sandwiches (Netto, Rema 1000) schonen das Budget. Pølse, Frikadeller und Flæsk sind meist Schwein; nach „uden svinekød“ (ohne Schweinefleisch) fragen."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Winddichte Regenjacke",
+     "Schichtenkleidung (Abende auch im Sommer kühl)",
+     "Kontaktlose Karte oder Handyzahlung",
+     "Trinkflasche (Leitungswasser ist ausgezeichnet)"
+    ],
+    "safetyAndEtiquette": [
+     "Nicht auf Radwegen gehen.",
+     "In Christiania nicht fotografieren."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "E",
+     "F",
+     "K"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Dänische Steckdosen Typ K; neuere Dosen nehmen auch türkische C- und E/F-Stecker. Für ältere K-Dosen hilft ein Universaladapter."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Das Leitungswasser stammt aus Grundwasser und gehört zu den saubersten der Welt; kein Flaschenwasser nötig.",
+    "vaccines": [
+     "Standardimpfungen (Tetanus, Diphtherie, MMR)",
+     "FSME-Impfung für Waldwanderer auf Bornholm erwägen"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "112"
+   },
+   "tipping": {
+    "custom": "Service ist inbegriffen; Trinkgeld wird nicht erwartet.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "Bei großer Zufriedenheit sind Aufrunden oder 5–10 % eine nette Geste."
+   },
+   "taxFree": {
+    "vatRefundPercent": "25 % MwSt. (netto ca. 13–19 % Erstattung nach Gebühren)",
+    "minSpend": "Über 300 DKK im selben Geschäft",
+    "customsNote": "Formular bei der Ausreise aus der EU (Flughafen Kopenhagen) vom Zoll bestätigen lassen; Waren müssen unbenutzt sein."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "~1.00 - 3.00 $",
+    "topCarriers": [
+     "YouSee (TDC)",
+     "Telia",
+     "Telenor",
+     "3"
+    ],
+    "airportSimTrapWarning": "Teure Pakete am Flughafen Kopenhagen meiden und eine eSIM einrichten; Prepaid-SIMs gibt es bei 7-Eleven und in Supermärkten."
+   },
+   "touristScams": [
+    {
+     "title": "Hütchenspiel",
+     "desc": "Straßenglücksspiel auf der Strøget; die „gewinnenden“ Zuschauer gehören zur Bande.",
+     "tip": "Fernbleiben und beim Zuschauen auf die Geldbörse achten."
+    },
+    {
+     "title": "Diebstahl vom Tisch",
+     "desc": "Auf Cafétischen liegende Handys und Taschen werden schnell gestohlen.",
+     "tip": "Handy in die Tasche, Tasche auf den Schoß."
+    },
+    {
+     "title": "Fahrscheinstrafe",
+     "desc": "Ohne Ticket oder mit falschen Zonen erwischt zu werden, kostet eine hohe Strafe – ohne Ausnahme für Touristen.",
+     "tip": "In der DOT-App Tickets mit der richtigen Zonenzahl kaufen."
+    }
+   ]
+  }
+ },
+ "es": {
+  "insights": {
+   "currency": "Corona danesa (DKK)",
+   "plugType": "Tipo C, E, F, K (230V, 50Hz)",
+   "bestMonths": "Mayo – agosto (días largos, 18-22 °C, terrazas); finales de junio Sankthans; finales de noviembre – diciembre Tivoli y mercados navideños (días cortos y fríos)",
+   "safety": {
+    "safetyScore": 85,
+    "safetyLevel": "Excepcionalmente Seguro",
+    "badgeColor": "bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-900/60",
+    "crimeRateSummary": "Uno de los países más seguros del mundo, con muy poca delincuencia violenta. Cuidado con los carteristas en la Estación Central de Copenhague, Strøget y Nyhavn, y con el robo de bicicletas en todas partes.",
+    "commonScams": [
+     "El “trile” (juego de los cubiletes) en Strøget",
+     "Robo de móviles y bolsos de las mesas en estaciones y cafés concurridos",
+     "Problemas al hacer fotos en Christiania y vendedores de drogas ilegales"
+    ],
+    "safeTravelTips": [
+     "Viajar sin billete en el transporte público se multa con dureza; compre el billete en la app antes de subir.",
+     "Los carriles bici están muy transitados; no camine por ellos.",
+     "No haga fotos en Christiania y evite a los vendedores ilegales."
+    ],
+    "emergencyNumbers": {
+     "police": "112",
+     "ambulance": "112",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Más del 99 % de cobertura de población (4G/5G); buena señal incluso en el campo",
+    "costPerGbUsd": "~1.00 - 3.00 $",
+    "esimAvailability": "Excelente",
+    "bestCarriers": [
+     "YouSee (TDC)",
+     "Telia",
+     "Telenor",
+     "3",
+     "Airalo / Holafly eSIM"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Excelente (metro de Copenhague 24/7, trenes DSB puntuales, infraestructura ciclista)",
+    "costLevel": "Muy caro",
+    "singleTicketUsd": "3.50 - 4.20 $ (Copenhagen, 2 zones)",
+    "dailyPassUsd": "11.50 - 13.00 $ (Copenhagen City Pass 24h)",
+    "popularRideApps": [
+     "DOT Mobilbilletter",
+     "Rejsekort",
+     "DSB",
+     "Dantaxi",
+     "Taxa 4x35",
+     "Donkey Republic"
+    ],
+    "taxiAdvice": "Los taxis en Copenhague son caros (incluso trayectos cortos cuestan 20-30 $); pídalos con las apps Dantaxi o Taxa 4x35. En la ciudad, metro, S-tog y bici de alquiler son lo más práctico."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "100 - 140 $",
+    "dailyBudgetMidrangeUsd": "220 - 350 $",
+    "budgetMealUsd": "22 - 35 $",
+    "coffeeUsd": "5.00 - 7.00 $",
+    "waterBottleUsd": "2.50 - 4.00 $",
+    "hostelDormUsd": "45 - 75 $",
+    "hotel3StarUsd": "170 - 280 $",
+    "flightCostIndex": "Moderado (Estambul – Copenhague directo ~3,5 h)",
+    "flightTip": "Turkish Airlines y Pegasus vuelan directo de Estambul a Copenhague; Turkish Airlines también vuela a Billund. Malmö (Suecia) está a ~20 minutos en tren del aeropuerto de Copenhague."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Los daneses son modestos e igualitarios; se evita la ostentación y los elogios exagerados.",
+     "La puntualidad es muy importante; llegue a la hora exacta a las invitaciones.",
+     "Al brindar, mire a los ojos y diga “Skål!”.",
+     "En el transporte y en las colas se guarda silencio y orden."
+    ],
+    "festivals": [
+     "Festival de Roskilde (finales de junio – principios de julio)",
+     "Sankthans (23 de junio, hogueras en las playas)",
+     "Festival de Jazz de Copenhague (julio)"
+    ],
+    "lifestyle": "Cultura “hygge”: reuniones acogedoras a la luz de las velas; el equilibrio vida-trabajo y la bicicleta forman parte del día a día."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Nyhavn y Jardines Tivoli, Copenhague",
+     "Castillo de Rosenborg y Amalienborg",
+     "Castillo de Kronborg (Helsingør, UNESCO)",
+     "Catedral de Roskilde y Museo de Barcos Vikingos",
+     "Museo H.C. Andersen, Odense",
+     "Museo de Arte ARoS y Den Gamle By, Aarhus"
+    ],
+    "bestSeasons": "Mayo – agosto",
+    "travelStyleTip": "Recorra Copenhague en bici; los trenes interurbanos DSB son rápidos y los billetes “Orange” comprados con antelación son baratos."
+   },
+   "religion": {
+    "primaryReligions": "Miembros de la Iglesia de Dinamarca (luterana) ~71 %, musulmanes ~5 %; la mayoría es secular en la práctica",
+    "respectNorms": "Guarde silencio en las iglesias; evite las visitas durante los oficios dominicales.",
+    "sacredSites": [
+     "Catedral de Roskilde (UNESCO, tumbas reales)",
+     "Túmulos, piedras rúnicas e iglesia de Jelling (UNESCO)",
+     "Iglesia de Federico (Iglesia de Mármol, Copenhague)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Danés (oficial); en las Islas Feroe y Groenlandia también son oficiales las lenguas locales.",
+    "englishProficiency": "Excelente; casi todo el mundo habla inglés con fluidez.",
+    "phrases": [
+     {
+      "phrase": "Hej",
+      "meaning": "Hola",
+      "translation": "Hola",
+      "pronunciation": "hai"
+     },
+     {
+      "phrase": "Tak",
+      "meaning": "Gracias",
+      "translation": "Gracias",
+      "pronunciation": "tahk"
+     },
+     {
+      "phrase": "Undskyld",
+      "meaning": "Perdón / Disculpe",
+      "translation": "Disculpe",
+      "pronunciation": "UN-skool"
+     },
+     {
+      "phrase": "Hvad koster det?",
+      "meaning": "¿Cuánto cuesta?",
+      "translation": "¿Cuánto es?",
+      "pronunciation": "va KOS-ta de"
+     },
+     {
+      "phrase": "Skål!",
+      "meaning": "¡Salud!",
+      "translation": "Salud",
+      "pronunciation": "skohl"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Corazón de la era vikinga, Dinamarca se cristianizó con Harald Diente Azul en el siglo X y dominó gran parte de Escandinavia con la Unión de Kalmar de 1397. Una de las monarquías más antiguas del mundo, se convirtió en estado constitucional en 1849 y entró en la CEE en 1973.",
+    "milestones": [
+     "~965: Harald Diente Azul y la piedra de Jelling",
+     "1397: Unión de Kalmar",
+     "1849: primera constitución",
+     "1973: ingreso en la CEE; 2024: Federico X sube al trono"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Smørrebrød (sándwiches abiertos sobre pan de centeno)",
+     "Stegt flæsk med persillesovs (panceta crujiente, plato nacional)",
+     "Frikadeller (albóndigas, normalmente con cerdo)"
+    ],
+    "traditionalDrinks": [
+     "Cervezas Carlsberg y Tuborg",
+     "Akvavit (snaps)",
+     "Gløgg (vino caliente especiado en invierno)"
+    ],
+    "streetFoodAndDesserts": [
+     "Pølse (perrito caliente, normalmente de cerdo)",
+     "Kanelsnegl y wienerbrød (bollería danesa)",
+     "Æbleskiver (bolitas de tortita con azúcar glas en Navidad)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Hans Christian Andersen (autor de cuentos)",
+     "Søren Kierkegaard (filósofo)",
+     "Niels Bohr (físico, premio Nobel)"
+    ],
+    "strongSectors": [
+     "Farmacéutica (Novo Nordisk)",
+     "Energía eólica (Vestas, Ørsted)",
+     "Transporte marítimo y logística (Maersk)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Sociedad casi sin efectivo; la tarjeta sin contacto o el móvil funcionan en todas partes.",
+    "tippingCulture": "El servicio está incluido por ley; la propina no se espera, aunque puede redondear si queda muy satisfecho.",
+    "economicPillars": "Farmacia y ciencias de la vida, energía verde, transporte marítimo, diseño y agroalimentación (exportación de cerdo y lácteos)."
+   }
+  },
+  "itin": {
+   "routeName": "Dinamarca clásica: Copenhague, Roskilde, Odense y Aarhus",
+   "routeSummary": "Ruta en tren de 7 días desde los canales de Copenhague hasta la Roskilde vikinga, la Odense de Hans Christian Andersen y la ciudad del arte, Aarhus.",
+   "totalDays": 7,
+   "idealDurationText": "Ruta de 7 días",
+   "bestSeason": "Mayo – agosto",
+   "transportMode": "Trenes DSB; metro, S-tog y bicicleta dentro de las ciudades",
+   "paceLevel": "Equilibrado (Ciudad + Historia + Diseño)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Copenhague (Canales, palacios y diseño)",
+     "recommendedDuration": "3 días",
+     "durationBadge": "3 días",
+     "highlights": [
+      "Nyhavn y paseo por los canales",
+      "Jardines Tivoli",
+      "Castillo de Rosenborg y Amalienborg",
+      "Torre de Christiansborg (vistas gratuitas)"
+     ],
+     "activities": [
+      "Recorra la ciudad en bici de alquiler.",
+      "Pruebe smørrebrød en el mercado Torvehallerne.",
+      "Tome el tren a Helsingør para ver el castillo de Kronborg."
+     ],
+     "foodAndDrinks": [
+      "Smørrebrød",
+      "Kanelsnegl",
+      "Cerveza Carlsberg"
+     ],
+     "criticalTips": [
+      "La Copenhagen Card ahorra en museos y transporte.",
+      "En bici, haga señales con la mano y circule por la derecha."
+     ],
+     "mapsQuery": "Copenhagen, Denmark"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Roskilde (Herencia vikinga)",
+     "recommendedDuration": "1 día",
+     "durationBadge": "1 día",
+     "highlights": [
+      "Catedral de Roskilde (UNESCO)",
+      "Museo de Barcos Vikingos",
+      "Orilla del fiordo de Roskilde"
+     ],
+     "activities": [
+      "Vea réplicas de barcos vikingos en el museo.",
+      "En verano, reme en un barco de estilo vikingo por el fiordo.",
+      "Visite las tumbas reales danesas en la catedral."
+     ],
+     "foodAndDrinks": [
+      "Pescado del fiordo",
+      "Æbleskiver",
+      "Zumo de manzana local"
+     ],
+     "criticalTips": [
+      "Está a ~25 minutos en tren de Copenhague; fácil como excursión de un día.",
+      "La ciudad se llena durante la semana del Festival de Roskilde."
+     ],
+     "mapsQuery": "Roskilde, Denmark"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Odense (La ciudad de Hans Christian Andersen)",
+     "recommendedDuration": "1 día",
+     "durationBadge": "1 día",
+     "highlights": [
+      "Museo H.C. Andersen",
+      "Casco antiguo y casas de colores",
+      "Castillo de Egeskov (Fionia)"
+     ],
+     "activities": [
+      "Pasee por el jardín del museo inspirado en los cuentos de Andersen.",
+      "Recorra las calles empedradas del casco antiguo.",
+      "Conduzca hasta el castillo con foso de Egeskov."
+     ],
+     "foodAndDrinks": [
+      "Frikadeller",
+      "Wienerbrød",
+      "Akvavit"
+     ],
+     "criticalTips": [
+      "Reserve entradas con horario para el Museo H.C. Andersen.",
+      "El transporte público a Egeskov es escaso; alquile coche."
+     ],
+     "mapsQuery": "Odense, Denmark"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Aarhus (Ciudad del arte y la juventud)",
+     "recommendedDuration": "2 días",
+     "durationBadge": "2 días",
+     "highlights": [
+      "Museo de Arte ARoS y “Your rainbow panorama”",
+      "Museo al aire libre Den Gamle By",
+      "Museo Moesgaard",
+      "Barrio portuario Aarhus Ø"
+     ],
+     "activities": [
+      "Contemple la ciudad desde la pasarela arcoíris del ARoS.",
+      "Pasee por calles danesas históricas en Den Gamle By.",
+      "Vaya de café en café por el Barrio Latino."
+     ],
+     "foodAndDrinks": [
+      "Smørrebrød",
+      "Pølse",
+      "Cerveza artesanal local"
+     ],
+     "criticalTips": [
+      "Algunos museos cierran los lunes; consulte horarios.",
+      "El tren de vuelta a Copenhague tarda ~3 horas; reserve pronto."
+     ],
+     "mapsQuery": "Aarhus, Denmark"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Smørrebrød (sándwiches abiertos sobre pan de centeno)",
+     "Stegt flæsk med persillesovs (panceta crujiente, plato nacional)",
+     "Frikadeller (albóndigas, normalmente con cerdo)"
+    ],
+    "drinks": [
+     "Cervezas Carlsberg y Tuborg",
+     "Akvavit (snaps)",
+     "Gløgg (vino caliente especiado en invierno)"
+    ],
+    "streetFoods": [
+     "Pølse (perrito caliente, normalmente de cerdo)",
+     "Kanelsnegl y wienerbrød (bollería danesa)",
+     "Æbleskiver (bolitas de tortita con azúcar glas en Navidad)"
+    ],
+    "diningAdvice": "El almuerzo es más barato que la cena; los sándwiches de supermercado (Netto, Rema 1000) ahorran dinero. Pølse, frikadeller y flæsk suelen ser de cerdo; pida “uden svinekød” (sin cerdo)."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Chubasquero cortavientos",
+     "Ropa por capas (las noches son frescas incluso en verano)",
+     "Tarjeta sin contacto o pago con móvil",
+     "Botella de agua (el agua del grifo es excelente)"
+    ],
+    "safetyAndEtiquette": [
+     "No camine por los carriles bici.",
+     "No haga fotos en Christiania."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "E",
+     "F",
+     "K"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Enchufes tipo K propios de Dinamarca; los modernos también aceptan clavijas turcas C y E/F. Un adaptador universal ayuda con los enchufes K antiguos."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "El agua del grifo procede de acuíferos y es de las más limpias del mundo; no hace falta comprar agua embotellada.",
+    "vaccines": [
+     "Vacunas rutinarias (tétanos, difteria, triple vírica)",
+     "Valore la vacuna contra la encefalitis por garrapatas (TBE) si hará senderismo en los bosques de Bornholm"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "112"
+   },
+   "tipping": {
+    "custom": "El servicio está incluido; no se espera propina.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "Si queda muy satisfecho, redondear o dejar un 5-10 % es un buen gesto."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA del 25 % (reembolso neto ~13-19 % tras comisiones)",
+    "minSpend": "Más de 300 DKK en la misma tienda",
+    "customsNote": "Valide el formulario en la aduana al salir de la UE (aeropuerto de Copenhague); los artículos deben estar sin usar."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "~1.00 - 3.00 $",
+    "topCarriers": [
+     "YouSee (TDC)",
+     "Telia",
+     "Telenor",
+     "3"
+    ],
+    "airportSimTrapWarning": "Evite los paquetes caros del aeropuerto de Copenhague y configure una eSIM; en la ciudad hay SIM prepago en 7-Eleven y supermercados."
+   },
+   "touristScams": [
+    {
+     "title": "El trile",
+     "desc": "Apuestas callejeras en Strøget; los “ganadores” del público forman parte de la banda.",
+     "tip": "Aléjese del juego y vigile su cartera si se detiene a mirar."
+    },
+    {
+     "title": "Robo en la mesa",
+     "desc": "Los móviles y bolsos dejados en mesas de cafés desaparecen rápidamente.",
+     "tip": "Guarde el móvil en el bolsillo y el bolso en el regazo."
+    },
+    {
+     "title": "Multas de transporte",
+     "desc": "Ser pillado sin billete o con zonas incorrectas conlleva una multa alta, sin excepciones para turistas.",
+     "tip": "Compre billetes con el número correcto de zonas en la app DOT."
+    }
+   ]
+  }
+ },
+ "ru": {
+  "insights": {
+   "currency": "Датская крона (DKK)",
+   "plugType": "Тип C, E, F, K (230V, 50Hz)",
+   "bestMonths": "Май – август (длинные дни, 18–22 °C, летние кафе); конец июня — Санктханс; конец ноября – декабрь — Тиволи и рождественские ярмарки (короткие холодные дни)",
+   "safety": {
+    "safetyScore": 85,
+    "safetyLevel": "Исключительно Безопасно",
+    "badgeColor": "bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-900/60",
+    "crimeRateSummary": "Одна из самых безопасных стран мира с очень низким уровнем насильственных преступлений. Остерегайтесь карманников на Центральном вокзале Копенгагена, на Стрёгет и в Нюхавне, а также краж велосипедов.",
+    "commonScams": [
+     "Уличная игра в «напёрстки» на Стрёгет",
+     "Кражи телефонов и сумок со столиков на вокзалах и в кафе",
+     "Проблемы при фотосъёмке в Христиании и нелегальные торговцы наркотиками"
+    ],
+    "safeTravelTips": [
+     "За безбилетный проезд штрафы высокие; покупайте билет в приложении до посадки.",
+     "Велодорожки очень загружены — не ходите по ним.",
+     "В Христиании не фотографируйте и избегайте нелегальных торговцев."
+    ],
+    "emergencyNumbers": {
+     "police": "112",
+     "ambulance": "112",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Покрытие более 99 % населения (4G/5G); сильный сигнал даже в сельской местности",
+    "costPerGbUsd": "~1.00 - 3.00 $",
+    "esimAvailability": "Отличная",
+    "bestCarriers": [
+     "YouSee (TDC)",
+     "Telia",
+     "Telenor",
+     "3",
+     "Airalo / Holafly eSIM"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Отличное (круглосуточное метро Копенгагена, пунктуальные поезда DSB, велоинфраструктура)",
+    "costLevel": "Очень дорогой",
+    "singleTicketUsd": "3.50 - 4.20 $ (Copenhagen, 2 zones)",
+    "dailyPassUsd": "11.50 - 13.00 $ (Copenhagen City Pass 24h)",
+    "popularRideApps": [
+     "DOT Mobilbilletter",
+     "Rejsekort",
+     "DSB",
+     "Dantaxi",
+     "Taxa 4x35",
+     "Donkey Republic"
+    ],
+    "taxiAdvice": "Такси в Копенгагене дорогие (даже короткая поездка 20–30 $); заказывайте через приложения Dantaxi или Taxa 4x35. По городу удобнее всего метро, электрички S-tog и прокатные велосипеды."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "100 - 140 $",
+    "dailyBudgetMidrangeUsd": "220 - 350 $",
+    "budgetMealUsd": "22 - 35 $",
+    "coffeeUsd": "5.00 - 7.00 $",
+    "waterBottleUsd": "2.50 - 4.00 $",
+    "hostelDormUsd": "45 - 75 $",
+    "hotel3StarUsd": "170 - 280 $",
+    "flightCostIndex": "Средний (Стамбул – Копенгаген прямой рейс ~3,5 ч)",
+    "flightTip": "Turkish Airlines и Pegasus летают напрямую из Стамбула в Копенгаген; Turkish Airlines также летает в Биллунн. Шведский Мальмё — в ~20 минутах на поезде от аэропорта Копенгагена."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Датчане скромны и ценят равенство; хвастовство и чрезмерные комплименты не приняты.",
+     "Пунктуальность очень важна; на приглашения приходите точно вовремя.",
+     "Чокаясь, смотрите в глаза и говорите «Skål!».",
+     "В транспорте и очередях принято вести себя тихо и упорядоченно."
+    ],
+    "festivals": [
+     "Фестиваль Роскилле (конец июня – начало июля)",
+     "Санктханс (23 июня, костры на пляжах)",
+     "Копенгагенский джазовый фестиваль (июль)"
+    ],
+    "lifestyle": "Культура «хюгге»: уютные посиделки при свечах; баланс работы и жизни и велосипед — часть повседневности."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Нюхавн и сады Тиволи, Копенгаген",
+     "Замок Розенборг и Амалиенборг",
+     "Замок Кронборг (Хельсингёр, ЮНЕСКО)",
+     "Собор Роскилле и Музей кораблей викингов",
+     "Музей Х. К. Андерсена, Оденсе",
+     "Музей искусств ARoS и Den Gamle By, Орхус"
+    ],
+    "bestSeasons": "Май – август",
+    "travelStyleTip": "Исследуйте Копенгаген на велосипеде; междугородние поезда DSB быстрые, а ранние билеты «Orange» дешёвые."
+   },
+   "religion": {
+    "primaryReligions": "Члены Датской народной церкви (лютеране) ~71 %, мусульмане ~5 %; большинство светские в повседневной жизни",
+    "respectNorms": "В церквях соблюдайте тишину; не осматривайте их во время воскресных служб.",
+    "sacredSites": [
+     "Собор Роскилле (ЮНЕСКО, королевские усыпальницы)",
+     "Курганы, рунические камни и церковь в Еллинге (ЮНЕСКО)",
+     "Церковь Фредерика (Мраморная церковь, Копенгаген)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Датский (государственный); на Фарерских островах и в Гренландии официальны также местные языки.",
+    "englishProficiency": "Отличный; почти все свободно говорят по-английски.",
+    "phrases": [
+     {
+      "phrase": "Hej",
+      "meaning": "Привет / Здравствуйте",
+      "translation": "Привет",
+      "pronunciation": "hai"
+     },
+     {
+      "phrase": "Tak",
+      "meaning": "Спасибо",
+      "translation": "Спасибо",
+      "pronunciation": "tahk"
+     },
+     {
+      "phrase": "Undskyld",
+      "meaning": "Извините",
+      "translation": "Извините",
+      "pronunciation": "UN-skool"
+     },
+     {
+      "phrase": "Hvad koster det?",
+      "meaning": "Сколько это стоит?",
+      "translation": "Сколько?",
+      "pronunciation": "va KOS-ta de"
+     },
+     {
+      "phrase": "Skål!",
+      "meaning": "За здоровье!",
+      "translation": "Ваше здоровье",
+      "pronunciation": "skohl"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Сердце эпохи викингов, Дания приняла христианство при Харальде Синезубом в X веке и через Кальмарскую унию 1397 года правила большей частью Скандинавии. Одна из старейших монархий мира, в 1849 году она стала конституционным государством, а в 1973 году вступила в ЕЭС.",
+    "milestones": [
+     "~965: Харальд Синезубый и камень из Еллинга",
+     "1397: Кальмарская уния",
+     "1849: первая конституция",
+     "1973: вступление в ЕЭС; 2024: восшествие на престол Фредерика X"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Смёрребрёд (открытые бутерброды на ржаном хлебе)",
+     "Стегт флеск с петрушечным соусом (хрустящая свиная грудинка, национальное блюдо)",
+     "Фрикаделлер (тефтели, обычно со свининой)"
+    ],
+    "traditionalDrinks": [
+     "Пиво Carlsberg и Tuborg",
+     "Аквавит (шнапс)",
+     "Глёгг (горячее пряное вино зимой)"
+    ],
+    "streetFoodAndDesserts": [
+     "Пёльсе (хот-дог, обычно со свининой)",
+     "Канельснегль и венская сдоба (датская выпечка)",
+     "Эблескивер (рождественские шарики-оладьи с сахарной пудрой)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Ханс Кристиан Андерсен (сказочник)",
+     "Сёрен Кьеркегор (философ)",
+     "Нильс Бор (физик, лауреат Нобелевской премии)"
+    ],
+    "strongSectors": [
+     "Фармацевтика (Novo Nordisk)",
+     "Ветроэнергетика (Vestas, Ørsted)",
+     "Судоходство и логистика (Maersk)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Почти безналичное общество; бесконтактная карта или телефон работают везде, наличные почти не нужны.",
+    "tippingCulture": "Обслуживание по закону включено в цену; чаевых не ждут, но при желании можно округлить счёт.",
+    "economicPillars": "Фармацевтика и науки о жизни, зелёная энергетика, судоходство, дизайн и агропищевой сектор (экспорт свинины и молочных продуктов)."
+   }
+  },
+  "itin": {
+   "routeName": "Классическая Дания: Копенгаген, Роскилле, Оденсе и Орхус",
+   "routeSummary": "7-дневный маршрут на поезде от каналов Копенгагена к викингскому Роскилле, Оденсе Ханса Кристиана Андерсена и городу искусств Орхусу.",
+   "totalDays": 7,
+   "idealDurationText": "Маршрут на 7 дней",
+   "bestSeason": "Май – август",
+   "transportMode": "Поезда DSB; в городах — метро, электрички S-tog и велосипед",
+   "paceLevel": "Сбалансированный (Город + История + Дизайн)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Остановка 1: Копенгаген (Каналы, дворцы и дизайн)",
+     "recommendedDuration": "3 дня",
+     "durationBadge": "3 дня",
+     "highlights": [
+      "Нюхавн и прогулка по каналам",
+      "Сады Тиволи",
+      "Замок Розенборг и Амалиенборг",
+      "Башня Кристиансборга (бесплатный вид)"
+     ],
+     "activities": [
+      "Исследуйте город на прокатном велосипеде.",
+      "Попробуйте смёрребрёд на рынке Torvehallerne.",
+      "Съездите на поезде в Хельсингёр к замку Кронборг."
+     ],
+     "foodAndDrinks": [
+      "Смёрребрёд",
+      "Канельснегль",
+      "Пиво Carlsberg"
+     ],
+     "criticalTips": [
+      "Copenhagen Card экономит на музеях и транспорте.",
+      "На велосипеде подавайте сигналы рукой и держитесь правее."
+     ],
+     "mapsQuery": "Copenhagen, Denmark"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Остановка 2: Роскилле (Наследие викингов)",
+     "recommendedDuration": "1 день",
+     "durationBadge": "1 день",
+     "highlights": [
+      "Собор Роскилле (ЮНЕСКО)",
+      "Музей кораблей викингов",
+      "Берег Роскилле-фьорда"
+     ],
+     "activities": [
+      "Посмотрите реплики кораблей викингов в музее.",
+      "Летом погребите на лодке викингов по фьорду.",
+      "Посетите усыпальницы датских королей в соборе."
+     ],
+     "foodAndDrinks": [
+      "Рыба из фьорда",
+      "Эблескивер",
+      "Местный яблочный сок"
+     ],
+     "criticalTips": [
+      "От Копенгагена ~25 минут на поезде — удобно на день.",
+      "В неделю фестиваля Роскилле в городе очень многолюдно."
+     ],
+     "mapsQuery": "Roskilde, Denmark"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Остановка 3: Оденсе (Город Ханса Кристиана Андерсена)",
+     "recommendedDuration": "1 день",
+     "durationBadge": "1 день",
+     "highlights": [
+      "Музей Х. К. Андерсена",
+      "Старый город и разноцветные дома",
+      "Замок Эгесков (остров Фюн)"
+     ],
+     "activities": [
+      "Пройдитесь по саду музея, вдохновлённому сказками Андерсена.",
+      "Прогуляйтесь по мощёным улочкам старого города.",
+      "Съездите к замку на воде Эгесков."
+     ],
+     "foodAndDrinks": [
+      "Фрикаделлер",
+      "Венская сдоба",
+      "Аквавит"
+     ],
+     "criticalTips": [
+      "Бронируйте билеты в Музей Андерсена на определённое время.",
+      "Общественный транспорт до Эгескова ограничен — арендуйте машину."
+     ],
+     "mapsQuery": "Odense, Denmark"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Остановка 4: Орхус (Город искусства и молодёжи)",
+     "recommendedDuration": "2 дня",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Музей искусств ARoS и «Your rainbow panorama»",
+      "Музей под открытым небом Den Gamle By",
+      "Музей Мосгор",
+      "Портовый район Aarhus Ø"
+     ],
+     "activities": [
+      "Посмотрите на город с радужной галереи ARoS.",
+      "Прогуляйтесь по историческим датским улицам в Den Gamle By.",
+      "Пройдитесь по кафе Латинского квартала."
+     ],
+     "foodAndDrinks": [
+      "Смёрребрёд",
+      "Пёльсе",
+      "Местное крафтовое пиво"
+     ],
+     "criticalTips": [
+      "По понедельникам музеи могут быть закрыты; проверьте часы.",
+      "Поезд обратно в Копенгаген идёт ~3 часа; покупайте билеты заранее."
+     ],
+     "mapsQuery": "Aarhus, Denmark"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Смёрребрёд (открытые бутерброды на ржаном хлебе)",
+     "Стегт флеск с петрушечным соусом (хрустящая свиная грудинка, национальное блюдо)",
+     "Фрикаделлер (тефтели, обычно со свининой)"
+    ],
+    "drinks": [
+     "Пиво Carlsberg и Tuborg",
+     "Аквавит (шнапс)",
+     "Глёгг (горячее пряное вино зимой)"
+    ],
+    "streetFoods": [
+     "Пёльсе (хот-дог, обычно со свининой)",
+     "Канельснегль и венская сдоба (датская выпечка)",
+     "Эблескивер (рождественские шарики-оладьи с сахарной пудрой)"
+    ],
+    "diningAdvice": "Обед дешевле ужина; сэндвичи из супермаркетов (Netto, Rema 1000) помогают сэкономить. Пёльсе, фрикаделлер и флеск обычно со свининой; спрашивайте «uden svinekød» (без свинины)."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Ветрозащитный дождевик",
+     "Многослойная одежда (вечера прохладные даже летом)",
+     "Бесконтактная карта или оплата телефоном",
+     "Бутылка для воды (водопроводная вода отличная)"
+    ],
+    "safetyAndEtiquette": [
+     "Не ходите по велодорожкам.",
+     "Не фотографируйте в Христиании."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "E",
+     "F",
+     "K"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Датские розетки типа K; новые розетки принимают и турецкие вилки C и E/F. Для старых розеток K пригодится универсальный переходник."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Водопроводная вода из подземных источников — одна из самых чистых в мире; покупать бутилированную не нужно.",
+    "vaccines": [
+     "Плановые прививки (столбняк, дифтерия, корь-краснуха-паротит)",
+     "Для походов по лесам острова Борнхольм стоит рассмотреть прививку от клещевого энцефалита"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "112"
+   },
+   "tipping": {
+    "custom": "Обслуживание включено; чаевых не ждут.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "Если всё очень понравилось, округлить счёт или оставить 5–10 % — приятный жест."
+   },
+   "taxFree": {
+    "vatRefundPercent": "НДС 25 % (чистый возврат ~13–19 % после комиссий)",
+    "minSpend": "От 300 DKK в одном магазине",
+    "customsNote": "Заверьте форму на таможне при выезде из ЕС (аэропорт Копенгагена); товары должны быть неиспользованными."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "~1.00 - 3.00 $",
+    "topCarriers": [
+     "YouSee (TDC)",
+     "Telia",
+     "Telenor",
+     "3"
+    ],
+    "airportSimTrapWarning": "Не покупайте дорогие пакеты в аэропорту Копенгагена — установите eSIM; предоплаченные SIM продаются в 7-Eleven и супермаркетах."
+   },
+   "touristScams": [
+    {
+     "title": "Напёрстки",
+     "desc": "Уличная азартная игра на Стрёгет; «выигрывающие» зрители — члены банды.",
+     "tip": "Держитесь подальше и следите за кошельком, если остановились посмотреть."
+    },
+    {
+     "title": "Кража со стола",
+     "desc": "Телефоны и сумки, оставленные на столиках кафе, быстро исчезают.",
+     "tip": "Держите телефон в кармане, а сумку на коленях."
+    },
+    {
+     "title": "Штраф за проезд",
+     "desc": "За поездку без билета или с неверным числом зон — высокий штраф без исключений для туристов.",
+     "tip": "Покупайте билеты с правильным числом зон в приложении DOT."
+    }
+   ]
+  }
+ }
+}

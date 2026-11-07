@@ -1,0 +1,1792 @@
+{
+ "tr": {
+  "insights": {
+   "currency": "Euro (EUR)",
+   "bestMonths": "Mayıs – Eylül (ılık yaz, Jāņi şenlikleri, plaj sezonu); Aralık’ta Noel pazarları; kışlar soğuk ve karlı",
+   "safety": {
+    "safetyScore": 65,
+    "crimeRateSummary": "Riga genel olarak güvenlidir; şiddet suçu turistleri nadiren etkiler. Asıl risk Eski Riga’daki bazı barlarda içki hesabı dolandırıcılığı ve kalabalıkta yankesiciliktir.",
+    "commonScams": [
+     "Eski Riga’da sokakta tanışılan ‘arkadaş canlısı’ kadınların sizi götürdüğü barda binlerce euroluk hesap (ABD ve İngiltere bu konuda uyarı yayımlar)",
+     "Havalimanı ve otogarda taksimetreyi şişiren taksiler",
+     "Merkez Pazar ve tramvaylarda yankesicilik"
+    ],
+    "safeTravelTips": [
+     "Yeni tanıştığınız birinin önerdiği bara gitmeyin; menüde fiyat yoksa sipariş vermeyin.",
+     "Taksiyi Bolt uygulamasıyla çağırın.",
+     "Gece geç saatte içkiliyken yalnız dolaşmayın."
+    ],
+    "emergencyNumbers": {
+     "police": "110",
+     "ambulance": "113",
+     "general": "112"
+    },
+    "safetyLevel": "Güvenli",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "%99 (4G yaygın, Riga’da 5G)",
+    "costPerGbUsd": "~1 - 2.50 $",
+    "esimAvailability": "Mükemmel",
+    "bestCarriers": [
+     "LMT",
+     "Tele2",
+     "Bite"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "İyi (Riga’da tramvay/troleybüs/otobüs; Jūrmala ve Sigulda’ya banliyö trenleri)",
+    "costLevel": "Uygun",
+    "singleTicketUsd": "1.70 - 2.30 $",
+    "dailyPassUsd": "5.50 - 6.50 $",
+    "popularRideApps": [
+     "Bolt",
+     "Uber",
+     "Rīgas Satiksme (e-talons)",
+     "Mobilly"
+    ],
+    "taxiAdvice": "Bolt Riga’da en yaygın ve en ucuz seçenektir. Toplu taşıma biletini Rīgas Satiksme uygulaması, Mobilly ya da Narvesen marketlerinden alın; şoförden almak daha pahalıdır."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "40 - 65 $",
+    "dailyBudgetMidrangeUsd": "100 - 160 $",
+    "budgetMealUsd": "10 - 16 $",
+    "coffeeUsd": "2.50 - 4 $",
+    "waterBottleUsd": "0.80 - 1.50 $",
+    "hostelDormUsd": "15 - 30 $",
+    "hotel3StarUsd": "70 - 130 $",
+    "flightCostIndex": "Orta",
+    "flightTip": "İstanbul–Riga arasında THY direkt uçuşları var; Riga airBaltic’in merkezi olduğundan Avrupa aktarmalı biletler de sık bulunur."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Letonlar ilk başta mesafeli ama naziktir; tokalaşma ve göz teması selamlamanın parçasıdır.",
+     "Çiçek hediye edilecekse tek sayıda verilir; çift sayı cenazeler içindir.",
+     "Eve girerken ayakkabı çıkarılır.",
+     "Toplu taşımada yaşlılara yer vermek beklenir."
+    ],
+    "festivals": [
+     "Jāņi / Līgo (23–24 Haziran yaz gündönümü, çelenkler ve şenlik ateşi)",
+     "Leton Şarkı ve Dans Festivali (yaklaşık 5 yılda bir Riga’da)",
+     "Riga Işık Festivali ‘Staro Rīga’ (Kasım)"
+    ],
+    "lifestyle": "Doğaya bağlılık güçlüdür: yaz evleri (vasarnīca), mantar ve yaban mersini toplama, sauna (pirts) ve sahil hayatı."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Eski Riga (UNESCO): Karaağalar Evi ve Aziz Petrus Kilisesi",
+     "Alberta iela Art Nouveau binaları",
+     "Riga Merkez Pazarı (eski zeplin hangarları)",
+     "Jūrmala plajı ve ahşap villalar",
+     "Gauja Milli Parkı: Sigulda ve Turaida Kalesi",
+     "Rundāle Sarayı"
+    ],
+    "bestSeasons": "Mayıs – Eylül (ılık yaz, Jāņi şenlikleri, plaj sezonu); Aralık’ta Noel pazarları; kışlar soğuk ve karlı",
+    "travelStyleTip": "Riga’yı yürüyerek gezin; Jūrmala’ya trenle 30 dakikada, Sigulda’ya trenle ~1–1,5 saatte gidilir. Rundāle için tur ya da araç gerekir."
+   },
+   "religion": {
+    "primaryReligions": "Lüteriyen ~%25, Katolik ~%20, Ortodoks ~%20; nüfusun önemli kısmı dinsiz.",
+    "respectNorms": "Kiliselerde sessiz olun ve omuzları kapatan kıyafet giyin; Ortodoks kiliselerde kadınlar başını örter.",
+    "sacredSites": [
+     "Riga Katedrali (Doms)",
+     "Riga İsa’nın Doğuşu Ortodoks Katedrali",
+     "Aglona Bazilikası (Katolik hac yeri)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Letonca (Baltık dili). Rusça da yaygın olarak anlaşılır.",
+    "englishProficiency": "İyi; Riga’da gençler ve turizm çalışanları rahat İngilizce konuşur.",
+    "phrases": [
+     {
+      "phrase": "Sveiki!",
+      "meaning": "Merhaba",
+      "translation": "Merhaba",
+      "pronunciation": "SVAY-kee"
+     },
+     {
+      "phrase": "Paldies",
+      "meaning": "Teşekkürler",
+      "translation": "Teşekkürler",
+      "pronunciation": "PAHL-dee-es"
+     },
+     {
+      "phrase": "Lūdzu",
+      "meaning": "Lütfen / Buyurun",
+      "translation": "Lütfen / Buyurun",
+      "pronunciation": "LOO-dzoo"
+     },
+     {
+      "phrase": "Cik tas maksā?",
+      "meaning": "Bu ne kadar?",
+      "translation": "Bu ne kadar?",
+      "pronunciation": "tsik tahs MAHK-sah"
+     },
+     {
+      "phrase": "Priekā!",
+      "meaning": "Şerefe!",
+      "translation": "Şerefe!",
+      "pronunciation": "PREE-eh-kah"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Riga 1201’de kuruldu ve Hansa Birliği’nin önemli limanı oldu. Bölge sırasıyla Alman şövalyeleri, Polonya-Litvanya, İsveç ve Rus İmparatorluğu yönetiminde kaldı. Letonya 1918’de bağımsızlığını ilan etti, 1940’ta Sovyetler’e katıldı, 1991’de bağımsızlığını geri kazandı ve 2004’te AB ile NATO’ya girdi.",
+    "milestones": [
+     "1201: Riga’nın kuruluşu",
+     "1918: Bağımsızlık ilanı (18 Kasım)",
+     "1989: Baltık Yolu insan zinciri",
+     "1991: Yeniden bağımsızlık; 2004 AB ve NATO üyeliği"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Pelēkie zirņi ar speķi (pastırmalı gri bezelye)",
+     "Rupjmaize (koyu çavdar ekmeği) ve füme balık",
+     "Jāņu siers (kimyonlu Jāņi peyniri)"
+    ],
+    "traditionalDrinks": [
+     "Riga Black Balsam (bitkisel likör)",
+     "Kvass (ekmek kvası)",
+     "Bērzu sula (huş ağacı özü)"
+    ],
+    "streetFoodAndDesserts": [
+     "Pīrāgi (pastırmalı soğanlı çörek)",
+     "Rupjmaizes kārtojums (çavdar ekmeği ve kremalı tatlı)",
+     "Sklandrausis (havuçlu-patatesli tart)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Mihail Barışnikov (bale sanatçısı, Riga doğumlu)",
+     "Mariss Jansons (orkestra şefi)",
+     "Kristaps Porziņģis (basketbolcu)"
+    ],
+    "strongSectors": [
+     "Ormancılık ve kereste",
+     "Lojistik ve limanlar (Riga, Ventspils)",
+     "BT ve iş hizmetleri"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Kart ve temassız ödeme yaygındır; Merkez Pazar ve küçük köy dükkanları için biraz nakit bulundurun.",
+    "tippingCulture": "Restoranlarda %5–10 bahşiş yaygındır ama zorunlu değildir.",
+    "economicPillars": "Ahşap ürünleri, transit lojistik, gıda işleme, BT hizmetleri ve turizm."
+   }
+  },
+  "itin": {
+   "routeName": "Letonya’nın Kalbi: Riga, Sigulda ve Cēsis",
+   "routeSummary": "Art Nouveau başkent Riga’dan Gauja Vadisi’nin kalelerine ve Orta Çağ kasabası Cēsis’e uzanan 6 günlük rota.",
+   "totalDays": 6,
+   "idealDurationText": "6 gün",
+   "bestSeason": "Mayıs – Eylül (ılık yaz, Jāņi şenlikleri, plaj sezonu); Aralık’ta Noel pazarları; kışlar soğuk ve karlı",
+   "transportMode": "Riga’da yürüyüş ve tramvay; Sigulda ve Cēsis’e tren ya da otobüs",
+   "paceLevel": "Rahat",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "1. Durak: Riga (Eski Şehir, Art Nouveau ve Jūrmala)",
+     "recommendedDuration": "3 gün",
+     "durationBadge": "3 Gün",
+     "highlights": [
+      "Karaağalar Evi ve Belediye Meydanı",
+      "Aziz Petrus Kilisesi kulesi",
+      "Alberta iela ve Elizabetes iela’daki Art Nouveau cepheler",
+      "Merkez Pazar"
+     ],
+     "activities": [
+      "Art Nouveau Müzesi’nde dönem dairesini gezin.",
+      "Trenle Jūrmala’ya gidip Majori sahilinde ve Jomas iela’da yürüyün.",
+      "Daugava kıyısından Ulusal Kütüphane’ye bakan gün batımını izleyin."
+     ],
+     "foodAndDrinks": [
+      "Lido’da self-servis Leton yemekleri",
+      "Pazarda füme balık ve pīrāgi",
+      "Riga Black Balsam kokteyli"
+     ],
+     "criticalTips": [
+      "Eski Riga’da tanımadığınız kişilerin bar davetlerini reddedin.",
+      "Tramvay biletini binmeden önce alıp e-talons okuyucusuna okutun."
+     ],
+     "mapsQuery": "Old Riga, Latvia"
+    },
+    {
+     "stopNumber": 2,
+     "name": "2. Durak: Sigulda ve Gauja Milli Parkı",
+     "recommendedDuration": "1–2 gün",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "Turaida Kalesi ve Müze Rezervi",
+      "Gūtmaņa Mağarası",
+      "Gauja Nehri üzerinde teleferik",
+      "Sigulda Yeni Kalesi ve Orta Çağ kalesi kalıntıları"
+     ],
+     "activities": [
+      "Turaida Kalesi kulesinden vadiyi seyredin.",
+      "Sonbaharda renkli ormanlarda yürüyüş yapın.",
+      "Yazın Gauja’da kano, kışın bobsley pistini deneyin."
+     ],
+     "foodAndDrinks": [
+      "Yabani mantarlı yemekler",
+      "Ev yapımı kvass",
+      "Elmalı tart"
+     ],
+     "criticalTips": [
+      "Teleferik ve bazı aktiviteler sezonluk çalışır; saatleri önceden kontrol edin.",
+      "Ormanda kene riskine karşı uzun pantolon ve kovucu kullanın."
+     ],
+     "mapsQuery": "Turaida Castle, Sigulda, Latvia"
+    },
+    {
+     "stopNumber": 3,
+     "name": "3. Durak: Cēsis (Orta Çağ Kasabası)",
+     "recommendedDuration": "1 gün",
+     "durationBadge": "1 Gün",
+     "highlights": [
+      "Cēsis Orta Çağ Kalesi",
+      "Aziz Yuhanna Kilisesi",
+      "Arnavut kaldırımlı eski şehir",
+      "Cēsis Kale Parkı"
+     ],
+     "activities": [
+      "Kalenin karanlık kulesine fenerle çıkın.",
+      "Eski şehrin el sanatı dükkanlarını gezin.",
+      "Gauja kıyısındaki kumtaşı kayalıklara yürüyün."
+     ],
+     "foodAndDrinks": [
+      "Yerel Cēsu bira ve elma şarabı",
+      "Pelēkie zirņi ar speķi"
+     ],
+     "criticalTips": [
+      "Riga’ya dönüş trenleri seyrek olabilir; saati önceden kontrol edin.",
+      "Kale ve müzeler kışın daha kısa saatlerle açıktır."
+     ],
+     "mapsQuery": "Cēsis Medieval Castle, Latvia"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Gri bezelye ve pastırma",
+     "Füme balık",
+     "Mantar çorbası",
+     "Karbonāde (pane pirzola)"
+    ],
+    "drinks": [
+     "Riga Black Balsam",
+     "Kvass",
+     "Huş ağacı özü",
+     "Leton biraları"
+    ],
+    "streetFoods": [
+     "Pīrāgi",
+     "Sklandrausis",
+     "Ķiploku grauzdiņi (sarımsaklı çavdar kızartması)",
+     "Biezpiena sieriņš (lor tatlısı)"
+    ],
+    "diningAdvice": "Lido zinciri uygun fiyatlı ve geleneksel bir başlangıçtır. Mutfakta domuz eti ve pastırma yaygındır; helal için Riga merkezdeki Orta Doğu restoranlarına bakın."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Yağmurluk ve katmanlı giysiler",
+     "Rahat yürüyüş ayakkabısı (arnavut kaldırımı)",
+     "Kene kovucu",
+     "Temassız banka kartı"
+    ],
+    "safetyAndEtiquette": [
+     "Kamuya açık yerlerde alkol tüketmek yasaktır ve cezası vardır.",
+     "Gece kulüplerinde hesabı her siparişte kontrol edin.",
+     "Yaya geçidi dışında karşıya geçmek cezalandırılabilir."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Türkiye’deki ile aynı iki yuvarlak pimli (C/F) prizler; adaptör gerekmez."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Riga’da musluk suyu içilebilir; eski binalarda tadı demirli olabilir, birçok kişi filtre kullanır.",
+    "vaccines": [
+     "Rutin aşılar (tetanos, difteri, kızamık)",
+     "Yaz aylarında ormanlık alanlar için kene kaynaklı ensefalit (KKE) aşısı"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "113 / 112"
+   },
+   "tipping": {
+    "custom": "Restoranda iyi hizmet için %5–10 bırakılır.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Bazı restoranlar faturaya servis ücreti ekler; fişi kontrol edin."
+   },
+   "taxFree": {
+    "vatRefundPercent": "KDV %21; iade net ~%10–13",
+    "minSpend": "Aynı mağazada ~44 € ve üzeri",
+    "customsNote": "AB dışı yolcular Tax Free formunu AB’den son çıkışta (ör. Riga Havalimanı) gümrüğe onaylatmalıdır."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.00 - $2.50",
+    "topCarriers": [
+     "LMT",
+     "Tele2",
+     "Bite"
+    ],
+    "airportSimTrapWarning": "Türk hatlarıyla dolaşım pahalıdır; eSIM ya da Narvesen kiosklarından satılan ön ödemeli LMT/Tele2/Bite hattı en ucuz yoldur."
+   },
+   "touristScams": [
+    {
+     "title": "‘Tanışma’ bar tuzağı",
+     "desc": "Eski Riga’da yakınlık kuran kişiler sizi anlaşmalı bir bara götürür; birkaç içki için binlerce euroluk kart çekimi yapılır, bazen zorla.",
+     "tip": "Kendi seçtiğiniz mekanlara gidin; fiyatsız menüde sipariş vermeyin ve kartınızı göz önünde tutun."
+    },
+    {
+     "title": "Taksi fiyat şişirme",
+     "desc": "Havalimanı ve otogardaki bazı taksiler turistlere çok yüksek tarife uygular.",
+     "tip": "Bolt ile çağırın ya da binmeden fiyatı netleştirin."
+    }
+   ]
+  }
+ },
+ "en": {
+  "insights": {
+   "currency": "Euro (EUR)",
+   "bestMonths": "May – September (mild summer, Jāņi festivities, beach season); December for Christmas markets; winters are cold and snowy",
+   "safety": {
+    "safetyScore": 65,
+    "crimeRateSummary": "Riga is generally safe and violent crime rarely affects tourists. The real risks are drink-bill scams in some Old Riga bars and pickpocketing in crowds.",
+    "commonScams": [
+     "Friendly women met on the street in Old Riga leading men to bars where the bill reaches thousands of euros (the US and UK warn about this)",
+     "Taxis inflating fares at the airport and bus station",
+     "Pickpocketing at the Central Market and on trams"
+    ],
+    "safeTravelTips": [
+     "Do not follow new acquaintances to a bar they suggest; do not order if the menu has no prices.",
+     "Book taxis with the Bolt app.",
+     "Avoid wandering alone late at night after drinking."
+    ],
+    "emergencyNumbers": {
+     "police": "110",
+     "ambulance": "113",
+     "general": "112"
+    },
+    "safetyLevel": "Safe",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "99% (widespread 4G, 5G in Riga)",
+    "costPerGbUsd": "~1 - 2.50 $",
+    "esimAvailability": "Excellent",
+    "bestCarriers": [
+     "LMT",
+     "Tele2",
+     "Bite"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Good (trams, trolleybuses and buses in Riga; suburban trains to Jūrmala and Sigulda)",
+    "costLevel": "Affordable",
+    "singleTicketUsd": "1.70 - 2.30 $",
+    "dailyPassUsd": "5.50 - 6.50 $",
+    "popularRideApps": [
+     "Bolt",
+     "Uber",
+     "Rīgas Satiksme (e-talons)",
+     "Mobilly"
+    ],
+    "taxiAdvice": "Bolt is the most common and cheapest option in Riga. Buy transit tickets in the Rīgas Satiksme app, Mobilly or at Narvesen kiosks; buying from the driver costs more."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "40 - 65 $",
+    "dailyBudgetMidrangeUsd": "100 - 160 $",
+    "budgetMealUsd": "10 - 16 $",
+    "coffeeUsd": "2.50 - 4 $",
+    "waterBottleUsd": "0.80 - 1.50 $",
+    "hostelDormUsd": "15 - 30 $",
+    "hotel3StarUsd": "70 - 130 $",
+    "flightCostIndex": "Moderate",
+    "flightTip": "Turkish Airlines flies direct Istanbul–Riga; Riga is airBaltic's hub, so connections via Europe are plentiful."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Latvians seem reserved at first but are polite; a handshake and eye contact are part of greetings.",
+     "Give flowers in odd numbers; even numbers are for funerals.",
+     "Shoes come off when entering a home.",
+     "Giving up your seat to the elderly on public transport is expected."
+    ],
+    "festivals": [
+     "Jāņi / Līgo (Midsummer, 23–24 June, wreaths and bonfires)",
+     "Latvian Song and Dance Festival (in Riga roughly every 5 years)",
+     "Staro Rīga light festival (November)"
+    ],
+    "lifestyle": "A strong bond with nature: summer cottages, mushroom and berry picking, the pirts sauna and beach life."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Old Riga (UNESCO): House of the Blackheads & St Peter's Church",
+     "Art Nouveau buildings on Alberta iela",
+     "Riga Central Market (former zeppelin hangars)",
+     "Jūrmala beach & wooden villas",
+     "Gauja National Park: Sigulda & Turaida Castle",
+     "Rundāle Palace"
+    ],
+    "bestSeasons": "May – September (mild summer, Jāņi festivities, beach season); December for Christmas markets; winters are cold and snowy",
+    "travelStyleTip": "See Riga on foot; Jūrmala is 30 minutes by train and Sigulda about 1–1.5 hours. Rundāle needs a tour or a car."
+   },
+   "religion": {
+    "primaryReligions": "Lutheran ~25%, Catholic ~20%, Orthodox ~20%; a large share is non-religious.",
+    "respectNorms": "Be quiet in churches and cover your shoulders; women cover their heads in Orthodox churches.",
+    "sacredSites": [
+     "Riga Cathedral (Doms)",
+     "Riga Nativity of Christ Orthodox Cathedral",
+     "Aglona Basilica (Catholic pilgrimage site)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Latvian (a Baltic language). Russian is also widely understood.",
+    "englishProficiency": "Good; young people and tourism staff in Riga speak English comfortably.",
+    "phrases": [
+     {
+      "phrase": "Sveiki!",
+      "meaning": "Hello",
+      "translation": "Hello",
+      "pronunciation": "SVAY-kee"
+     },
+     {
+      "phrase": "Paldies",
+      "meaning": "Thank you",
+      "translation": "Thank you",
+      "pronunciation": "PAHL-dee-es"
+     },
+     {
+      "phrase": "Lūdzu",
+      "meaning": "Please / Here you are",
+      "translation": "Please / Here you are",
+      "pronunciation": "LOO-dzoo"
+     },
+     {
+      "phrase": "Cik tas maksā?",
+      "meaning": "How much is this?",
+      "translation": "How much is this?",
+      "pronunciation": "tsik tahs MAHK-sah"
+     },
+     {
+      "phrase": "Priekā!",
+      "meaning": "Cheers!",
+      "translation": "Cheers!",
+      "pronunciation": "PREE-eh-kah"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Riga was founded in 1201 and became a key Hanseatic port. The region was ruled by German knights, Poland-Lithuania, Sweden and the Russian Empire. Latvia declared independence in 1918, was annexed by the USSR in 1940, regained independence in 1991 and joined the EU and NATO in 2004.",
+    "milestones": [
+     "1201: Founding of Riga",
+     "1918: Declaration of independence (18 November)",
+     "1989: The Baltic Way human chain",
+     "1991: Independence restored; 2004 EU and NATO membership"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Pelēkie zirņi ar speķi (grey peas with bacon)",
+     "Rupjmaize (dark rye bread) with smoked fish",
+     "Jāņu siers (caraway Midsummer cheese)"
+    ],
+    "traditionalDrinks": [
+     "Riga Black Balsam (herbal liqueur)",
+     "Kvass (bread kvass)",
+     "Bērzu sula (birch sap)"
+    ],
+    "streetFoodAndDesserts": [
+     "Pīrāgi (bacon and onion buns)",
+     "Rupjmaizes kārtojums (layered rye bread and cream dessert)",
+     "Sklandrausis (carrot and potato tart)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Mikhail Baryshnikov (ballet dancer, born in Riga)",
+     "Mariss Jansons (conductor)",
+     "Kristaps Porziņģis (basketball player)"
+    ],
+    "strongSectors": [
+     "Forestry and timber",
+     "Logistics and ports (Riga, Ventspils)",
+     "IT and business services"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Cards and contactless are common; keep some cash for the Central Market and village shops.",
+    "tippingCulture": "A 5–10% tip in restaurants is common but not required.",
+    "economicPillars": "Wood products, transit logistics, food processing, IT services and tourism."
+   }
+  },
+  "itin": {
+   "routeName": "Heart of Latvia: Riga, Sigulda & Cēsis",
+   "routeSummary": "A 6-day route from Art Nouveau Riga to the castles of the Gauja Valley and the medieval town of Cēsis.",
+   "totalDays": 6,
+   "idealDurationText": "6 days",
+   "bestSeason": "May – September (mild summer, Jāņi festivities, beach season); December for Christmas markets; winters are cold and snowy",
+   "transportMode": "Walking and trams in Riga; train or bus to Sigulda and Cēsis",
+   "paceLevel": "Relaxed",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stop 1: Riga (Old Town, Art Nouveau & Jūrmala)",
+     "recommendedDuration": "3 days",
+     "durationBadge": "3 Days",
+     "highlights": [
+      "House of the Blackheads & Town Hall Square",
+      "St Peter's Church tower",
+      "Art Nouveau facades on Alberta and Elizabetes iela",
+      "Central Market"
+     ],
+     "activities": [
+      "Visit the period apartment at the Art Nouveau Museum.",
+      "Take the train to Jūrmala and walk Majori beach and Jomas iela.",
+      "Watch the sunset over the Daugava towards the National Library."
+     ],
+     "foodAndDrinks": [
+      "Self-service Latvian food at Lido",
+      "Smoked fish and pīrāgi at the market",
+      "A Riga Black Balsam cocktail"
+     ],
+     "criticalTips": [
+      "Turn down bar invitations from strangers in Old Riga.",
+      "Buy your tram ticket before boarding and validate it on the e-talons reader."
+     ],
+     "mapsQuery": "Old Riga, Latvia"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stop 2: Sigulda & Gauja National Park",
+     "recommendedDuration": "1–2 days",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "Turaida Castle & Museum Reserve",
+      "Gūtmanis Cave",
+      "Cable car over the Gauja River",
+      "Sigulda New Castle & medieval castle ruins"
+     ],
+     "activities": [
+      "Take in the valley from Turaida Castle tower.",
+      "Hike the forests in autumn colours.",
+      "Go canoeing on the Gauja in summer or try the bobsleigh track in winter."
+     ],
+     "foodAndDrinks": [
+      "Wild mushroom dishes",
+      "Homemade kvass",
+      "Apple tart"
+     ],
+     "criticalTips": [
+      "The cable car and some activities are seasonal; check times in advance.",
+      "Wear long trousers and repellent against ticks in the forest."
+     ],
+     "mapsQuery": "Turaida Castle, Sigulda, Latvia"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stop 3: Cēsis (Medieval Town)",
+     "recommendedDuration": "1 day",
+     "durationBadge": "1 Day",
+     "highlights": [
+      "Cēsis Medieval Castle",
+      "St John's Church",
+      "Cobbled old town",
+      "Cēsis Castle Park"
+     ],
+     "activities": [
+      "Climb the castle's dark tower with a lantern.",
+      "Browse craft shops in the old town.",
+      "Walk to the sandstone cliffs on the Gauja."
+     ],
+     "foodAndDrinks": [
+      "Local Cēsu beer and cider",
+      "Pelēkie zirņi ar speķi"
+     ],
+     "criticalTips": [
+      "Trains back to Riga can be infrequent; check times in advance.",
+      "The castle and museums have shorter hours in winter."
+     ],
+     "mapsQuery": "Cēsis Medieval Castle, Latvia"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Grey peas with bacon",
+     "Smoked fish",
+     "Mushroom soup",
+     "Karbonāde (breaded cutlet)"
+    ],
+    "drinks": [
+     "Riga Black Balsam",
+     "Kvass",
+     "Birch sap",
+     "Latvian beers"
+    ],
+    "streetFoods": [
+     "Pīrāgi",
+     "Sklandrausis",
+     "Ķiploku grauzdiņi (garlic rye croutons)",
+     "Biezpiena sieriņš (curd snack)"
+    ],
+    "diningAdvice": "The Lido chain is an affordable, traditional starting point. Pork and bacon are common; for halal food look at Middle Eastern restaurants in central Riga."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Rain jacket and layers",
+     "Comfortable walking shoes (cobblestones)",
+     "Tick repellent",
+     "Contactless bank card"
+    ],
+    "safetyAndEtiquette": [
+     "Drinking alcohol in public places is banned and fined.",
+     "Check the bill with each order in nightclubs.",
+     "Jaywalking can be fined."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Same two-round-pin (C/F) sockets as in Turkey; no adapter needed."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Tap water in Riga is safe to drink; in old buildings it can taste of iron, so many people filter it.",
+    "vaccines": [
+     "Routine vaccinations (tetanus, diphtheria, measles)",
+     "Tick-borne encephalitis (TBE) vaccine for forest areas in summer"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "113 / 112"
+   },
+   "tipping": {
+    "custom": "Leave 5–10% for good restaurant service.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Some restaurants add a service charge; check the receipt."
+   },
+   "taxFree": {
+    "vatRefundPercent": "VAT 21%; net refund ~10–13%",
+    "minSpend": "~€44+ in one store",
+    "customsNote": "Non-EU travellers must have the Tax Free form stamped by customs at the last EU exit (e.g. Riga Airport)."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.00 - $2.50",
+    "topCarriers": [
+     "LMT",
+     "Tele2",
+     "Bite"
+    ],
+    "airportSimTrapWarning": "Roaming on Turkish lines is expensive; an eSIM or a prepaid LMT/Tele2/Bite SIM from Narvesen kiosks is the cheapest option."
+   },
+   "touristScams": [
+    {
+     "title": "'New friends' bar trap",
+     "desc": "People who befriend you in Old Riga take you to a partner bar; a few drinks lead to card charges of thousands of euros, sometimes under pressure.",
+     "tip": "Choose your own venues, never order from a menu without prices, keep your card in sight."
+    },
+    {
+     "title": "Taxi overcharging",
+     "desc": "Some taxis at the airport and bus station charge tourists very high tariffs.",
+     "tip": "Use Bolt or agree on the price before getting in."
+    }
+   ]
+  }
+ },
+ "de": {
+  "insights": {
+   "currency": "Euro (EUR)",
+   "bestMonths": "Mai – September (milder Sommer, Jāņi-Fest, Badesaison); im Dezember Weihnachtsmärkte; Winter kalt und schneereich",
+   "safety": {
+    "safetyScore": 65,
+    "crimeRateSummary": "Riga ist allgemein sicher, Gewaltkriminalität trifft Touristen selten. Echte Risiken sind Rechnungsbetrug in manchen Bars der Altstadt und Taschendiebstahl im Gedränge.",
+    "commonScams": [
+     "Freundliche Frauen, die Männer in der Altstadt in Bars locken, wo die Rechnung Tausende Euro beträgt (USA und Großbritannien warnen davor)",
+     "Taxis mit überhöhten Preisen an Flughafen und Busbahnhof",
+     "Taschendiebstahl auf dem Zentralmarkt und in Straßenbahnen"
+    ],
+    "safeTravelTips": [
+     "Keinen neuen Bekanntschaften in vorgeschlagene Bars folgen; ohne Preise auf der Karte nicht bestellen.",
+     "Taxis per Bolt-App bestellen.",
+     "Spät nachts nach Alkohol nicht allein umherziehen."
+    ],
+    "emergencyNumbers": {
+     "police": "110",
+     "ambulance": "113",
+     "general": "112"
+    },
+    "safetyLevel": "Sicher",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "99 % (flächendeckend 4G, 5G in Riga)",
+    "costPerGbUsd": "~1 - 2.50 $",
+    "esimAvailability": "Hervorragend",
+    "bestCarriers": [
+     "LMT",
+     "Tele2",
+     "Bite"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Gut (Straßenbahn, O-Bus und Bus in Riga; Vorortzüge nach Jūrmala und Sigulda)",
+    "costLevel": "Günstig",
+    "singleTicketUsd": "1.70 - 2.30 $",
+    "dailyPassUsd": "5.50 - 6.50 $",
+    "popularRideApps": [
+     "Bolt",
+     "Uber",
+     "Rīgas Satiksme (e-talons)",
+     "Mobilly"
+    ],
+    "taxiAdvice": "Bolt ist in Riga am verbreitetsten und günstigsten. Fahrkarten in der App Rīgas Satiksme, über Mobilly oder an Narvesen-Kiosken kaufen; beim Fahrer teurer."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "40 - 65 $",
+    "dailyBudgetMidrangeUsd": "100 - 160 $",
+    "budgetMealUsd": "10 - 16 $",
+    "coffeeUsd": "2.50 - 4 $",
+    "waterBottleUsd": "0.80 - 1.50 $",
+    "hostelDormUsd": "15 - 30 $",
+    "hotel3StarUsd": "70 - 130 $",
+    "flightCostIndex": "Mittel",
+    "flightTip": "Turkish Airlines fliegt direkt Istanbul–Riga; Riga ist Drehkreuz von airBaltic, daher viele Umsteigeverbindungen."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Letten wirken anfangs zurückhaltend, sind aber höflich; Händedruck und Blickkontakt gehören zur Begrüßung.",
+     "Blumen in ungerader Zahl schenken; gerade Zahlen sind für Beerdigungen.",
+     "Schuhe beim Betreten einer Wohnung ausziehen.",
+     "Älteren im Nahverkehr den Sitzplatz anbieten."
+    ],
+    "festivals": [
+     "Jāņi / Līgo (Mittsommer, 23.–24. Juni, Kränze und Feuer)",
+     "Lettisches Sänger- und Tanzfest (etwa alle 5 Jahre in Riga)",
+     "Lichtfestival Staro Rīga (November)"
+    ],
+    "lifestyle": "Starke Naturverbundenheit: Sommerhäuser, Pilze- und Beerensammeln, die Pirts-Sauna und Strandleben."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Rigaer Altstadt (UNESCO): Schwarzhäupterhaus & Petrikirche",
+     "Jugendstilbauten in der Alberta iela",
+     "Zentralmarkt Riga (ehemalige Zeppelinhallen)",
+     "Strand von Jūrmala & Holzvillen",
+     "Gauja-Nationalpark: Sigulda & Burg Turaida",
+     "Schloss Rundāle"
+    ],
+    "bestSeasons": "Mai – September (milder Sommer, Jāņi-Fest, Badesaison); im Dezember Weihnachtsmärkte; Winter kalt und schneereich",
+    "travelStyleTip": "Riga zu Fuß erkunden; Jūrmala ist 30 Minuten, Sigulda etwa 1–1,5 Stunden mit dem Zug entfernt. Für Rundāle Tour oder Auto nötig."
+   },
+   "religion": {
+    "primaryReligions": "Lutherisch ~25 %, katholisch ~20 %, orthodox ~20 %; ein großer Teil ist konfessionslos.",
+    "respectNorms": "In Kirchen leise sein und Schultern bedecken; in orthodoxen Kirchen bedecken Frauen den Kopf.",
+    "sacredSites": [
+     "Rigaer Dom",
+     "Orthodoxe Christi-Geburt-Kathedrale Riga",
+     "Basilika Aglona (katholischer Wallfahrtsort)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Lettisch (baltische Sprache). Russisch wird ebenfalls weithin verstanden.",
+    "englishProficiency": "Gut; junge Leute und Tourismuspersonal in Riga sprechen gut Englisch.",
+    "phrases": [
+     {
+      "phrase": "Sveiki!",
+      "meaning": "Hallo",
+      "translation": "Hallo",
+      "pronunciation": "SVAY-kee"
+     },
+     {
+      "phrase": "Paldies",
+      "meaning": "Danke",
+      "translation": "Danke",
+      "pronunciation": "PAHL-dee-es"
+     },
+     {
+      "phrase": "Lūdzu",
+      "meaning": "Bitte",
+      "translation": "Bitte",
+      "pronunciation": "LOO-dzoo"
+     },
+     {
+      "phrase": "Cik tas maksā?",
+      "meaning": "Was kostet das?",
+      "translation": "Was kostet das?",
+      "pronunciation": "tsik tahs MAHK-sah"
+     },
+     {
+      "phrase": "Priekā!",
+      "meaning": "Prost!",
+      "translation": "Prost!",
+      "pronunciation": "PREE-eh-kah"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Riga wurde 1201 gegründet und wurde ein wichtiger Hansehafen. Die Region stand unter dem Deutschen Orden, Polen-Litauen, Schweden und dem Russischen Reich. Lettland erklärte 1918 die Unabhängigkeit, wurde 1940 von der UdSSR annektiert, 1991 wieder unabhängig und trat 2004 EU und NATO bei.",
+    "milestones": [
+     "1201: Gründung Rigas",
+     "1918: Unabhängigkeitserklärung (18. November)",
+     "1989: Menschenkette 'Baltischer Weg'",
+     "1991: Wiederherstellung der Unabhängigkeit; 2004 EU- und NATO-Beitritt"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Pelēkie zirņi ar speķi (graue Erbsen mit Speck)",
+     "Rupjmaize (dunkles Roggenbrot) mit Räucherfisch",
+     "Jāņu siers (Kümmelkäse zu Mittsommer)"
+    ],
+    "traditionalDrinks": [
+     "Riga Black Balsam (Kräuterlikör)",
+     "Kwas (Brotkwas)",
+     "Bērzu sula (Birkensaft)"
+    ],
+    "streetFoodAndDesserts": [
+     "Pīrāgi (Speck-Zwiebel-Brötchen)",
+     "Rupjmaizes kārtojums (Schichtdessert aus Roggenbrot und Sahne)",
+     "Sklandrausis (Karotten-Kartoffel-Törtchen)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Michail Baryschnikow (Balletttänzer, in Riga geboren)",
+     "Mariss Jansons (Dirigent)",
+     "Kristaps Porziņģis (Basketballspieler)"
+    ],
+    "strongSectors": [
+     "Forst- und Holzwirtschaft",
+     "Logistik und Häfen (Riga, Ventspils)",
+     "IT und Unternehmensdienste"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Karten und kontaktloses Zahlen sind üblich; etwas Bargeld für den Zentralmarkt und Dorfläden mitnehmen.",
+    "tippingCulture": "5–10 % Trinkgeld im Restaurant ist üblich, aber freiwillig.",
+    "economicPillars": "Holzprodukte, Transitlogistik, Lebensmittelverarbeitung, IT-Dienste und Tourismus."
+   }
+  },
+  "itin": {
+   "routeName": "Herz Lettlands: Riga, Sigulda & Cēsis",
+   "routeSummary": "Eine 6-tägige Route vom Jugendstil-Riga zu den Burgen des Gauja-Tals und in die mittelalterliche Stadt Cēsis.",
+   "totalDays": 6,
+   "idealDurationText": "6 Tage",
+   "bestSeason": "Mai – September (milder Sommer, Jāņi-Fest, Badesaison); im Dezember Weihnachtsmärkte; Winter kalt und schneereich",
+   "transportMode": "Zu Fuß und per Tram in Riga; Zug oder Bus nach Sigulda und Cēsis",
+   "paceLevel": "Entspannt",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stopp 1: Riga (Altstadt, Jugendstil & Jūrmala)",
+     "recommendedDuration": "3 Tage",
+     "durationBadge": "3 Tage",
+     "highlights": [
+      "Schwarzhäupterhaus & Rathausplatz",
+      "Turm der Petrikirche",
+      "Jugendstilfassaden in Alberta und Elizabetes iela",
+      "Zentralmarkt"
+     ],
+     "activities": [
+      "Die historische Wohnung im Jugendstilmuseum besuchen.",
+      "Mit dem Zug nach Jūrmala fahren und am Strand von Majori und in der Jomas iela bummeln.",
+      "Sonnenuntergang an der Daugava mit Blick auf die Nationalbibliothek."
+     ],
+     "foodAndDrinks": [
+      "Lettisches Selbstbedienungsessen bei Lido",
+      "Räucherfisch und Pīrāgi auf dem Markt",
+      "Ein Cocktail mit Riga Black Balsam"
+     ],
+     "criticalTips": [
+      "Bar-Einladungen von Fremden in der Altstadt ablehnen.",
+      "Tramticket vor dem Einsteigen kaufen und am e-talons-Leser entwerten."
+     ],
+     "mapsQuery": "Old Riga, Latvia"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stopp 2: Sigulda & Gauja-Nationalpark",
+     "recommendedDuration": "1–2 Tage",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "Burg Turaida & Museumsreservat",
+      "Gūtmanis-Höhle",
+      "Seilbahn über die Gauja",
+      "Neues Schloss Sigulda & mittelalterliche Burgruine"
+     ],
+     "activities": [
+      "Vom Turm der Burg Turaida ins Tal blicken.",
+      "Im Herbst durch bunte Wälder wandern.",
+      "Im Sommer Kanu auf der Gauja, im Winter die Bobbahn ausprobieren."
+     ],
+     "foodAndDrinks": [
+      "Gerichte mit Waldpilzen",
+      "Hausgemachter Kwas",
+      "Apfelkuchen"
+     ],
+     "criticalTips": [
+      "Seilbahn und manche Aktivitäten sind saisonal; Zeiten vorher prüfen.",
+      "Im Wald lange Hosen und Zeckenschutz tragen."
+     ],
+     "mapsQuery": "Turaida Castle, Sigulda, Latvia"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stopp 3: Cēsis (mittelalterliche Stadt)",
+     "recommendedDuration": "1 Tag",
+     "durationBadge": "1 Tag",
+     "highlights": [
+      "Mittelalterliche Burg Cēsis",
+      "Johanniskirche",
+      "Kopfsteingepflasterte Altstadt",
+      "Schlosspark Cēsis"
+     ],
+     "activities": [
+      "Mit einer Laterne den dunklen Burgturm besteigen.",
+      "Kunsthandwerksläden der Altstadt erkunden.",
+      "Zu den Sandsteinfelsen an der Gauja wandern."
+     ],
+     "foodAndDrinks": [
+      "Lokales Cēsu-Bier und Cidre",
+      "Pelēkie zirņi ar speķi"
+     ],
+     "criticalTips": [
+      "Züge zurück nach Riga fahren teils selten; Zeiten vorher prüfen.",
+      "Burg und Museen haben im Winter kürzere Öffnungszeiten."
+     ],
+     "mapsQuery": "Cēsis Medieval Castle, Latvia"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Graue Erbsen mit Speck",
+     "Räucherfisch",
+     "Pilzsuppe",
+     "Karbonāde (paniertes Kotelett)"
+    ],
+    "drinks": [
+     "Riga Black Balsam",
+     "Kwas",
+     "Birkensaft",
+     "Lettisches Bier"
+    ],
+    "streetFoods": [
+     "Pīrāgi",
+     "Sklandrausis",
+     "Ķiploku grauzdiņi (Knoblauch-Roggencroutons)",
+     "Biezpiena sieriņš (Quarkriegel)"
+    ],
+    "diningAdvice": "Die Kette Lido ist ein günstiger, traditioneller Einstieg. Schweinefleisch und Speck sind üblich; halal findet man in nahöstlichen Restaurants im Zentrum."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Regenjacke und Zwiebellook",
+     "Bequeme Schuhe (Kopfsteinpflaster)",
+     "Zeckenschutz",
+     "Kontaktlose Bankkarte"
+    ],
+    "safetyAndEtiquette": [
+     "Alkohol in der Öffentlichkeit ist verboten und wird bestraft.",
+     "In Clubs bei jeder Bestellung die Rechnung prüfen.",
+     "Bei Rot oder abseits von Übergängen über die Straße gehen kann Bußgeld kosten."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Gleiche Steckdosen mit zwei runden Stiften (C/F) wie in der Türkei; kein Adapter nötig."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Leitungswasser in Riga ist trinkbar; in Altbauten kann es eisenhaltig schmecken, viele filtern es.",
+    "vaccines": [
+     "Standardimpfungen (Tetanus, Diphtherie, Masern)",
+     "FSME-Impfung für Waldgebiete im Sommer"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "113 / 112"
+   },
+   "tipping": {
+    "custom": "Für guten Service im Restaurant 5–10 % geben.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Manche Restaurants schlagen eine Servicegebühr auf; Beleg prüfen."
+   },
+   "taxFree": {
+    "vatRefundPercent": "MwSt. 21 %; Nettoerstattung ~10–13 %",
+    "minSpend": "ab ~44 € in einem Geschäft",
+    "customsNote": "Reisende aus Nicht-EU-Ländern lassen das Tax-Free-Formular beim letzten EU-Ausgang (z. B. Flughafen Riga) vom Zoll abstempeln."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.00 - $2.50",
+    "topCarriers": [
+     "LMT",
+     "Tele2",
+     "Bite"
+    ],
+    "airportSimTrapWarning": "Roaming mit türkischen Tarifen ist teuer; eine eSIM oder Prepaid-SIM von LMT/Tele2/Bite aus Narvesen-Kiosken ist am günstigsten."
+   },
+   "touristScams": [
+    {
+     "title": "Bar-Falle 'neue Freunde'",
+     "desc": "Neue Bekanntschaften in der Altstadt führen in eine Partnerbar; wenige Drinks führen zu Kartenzahlungen von Tausenden Euro, teils unter Druck.",
+     "tip": "Lokale selbst wählen, nie ohne Preise bestellen, Karte im Blick behalten."
+    },
+    {
+     "title": "Überhöhte Taxipreise",
+     "desc": "Manche Taxis an Flughafen und Busbahnhof verlangen von Touristen sehr hohe Tarife.",
+     "tip": "Bolt nutzen oder Preis vor dem Einsteigen klären."
+    }
+   ]
+  }
+ },
+ "es": {
+  "insights": {
+   "currency": "Euro (EUR)",
+   "bestMonths": "Mayo – septiembre (verano templado, fiestas de Jāņi, temporada de playa); diciembre por los mercados navideños; inviernos fríos y nevados",
+   "safety": {
+    "safetyScore": 65,
+    "crimeRateSummary": "Riga es en general segura y la delincuencia violenta rara vez afecta a turistas. Los riesgos reales son las estafas con cuentas en algunos bares del casco antiguo y los carteristas.",
+    "commonScams": [
+     "Mujeres amables que en el casco antiguo llevan a hombres a bares donde la cuenta llega a miles de euros (EE. UU. y Reino Unido lo advierten)",
+     "Taxis que inflan la tarifa en el aeropuerto y la estación de autobuses",
+     "Carteristas en el Mercado Central y en tranvías"
+    ],
+    "safeTravelTips": [
+     "No sigas a desconocidos a un bar que te propongan; no pidas si la carta no tiene precios.",
+     "Pide taxis con la app Bolt.",
+     "Evita andar solo de madrugada tras haber bebido."
+    ],
+    "emergencyNumbers": {
+     "police": "110",
+     "ambulance": "113",
+     "general": "112"
+    },
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "99 % (4G generalizado, 5G en Riga)",
+    "costPerGbUsd": "~1 - 2.50 $",
+    "esimAvailability": "Excelente",
+    "bestCarriers": [
+     "LMT",
+     "Tele2",
+     "Bite"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Bueno (tranvías, trolebuses y autobuses en Riga; trenes de cercanías a Jūrmala y Sigulda)",
+    "costLevel": "Económico",
+    "singleTicketUsd": "1.70 - 2.30 $",
+    "dailyPassUsd": "5.50 - 6.50 $",
+    "popularRideApps": [
+     "Bolt",
+     "Uber",
+     "Rīgas Satiksme (e-talons)",
+     "Mobilly"
+    ],
+    "taxiAdvice": "Bolt es la opción más común y barata en Riga. Compra billetes en la app Rīgas Satiksme, en Mobilly o en quioscos Narvesen; al conductor cuesta más."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "40 - 65 $",
+    "dailyBudgetMidrangeUsd": "100 - 160 $",
+    "budgetMealUsd": "10 - 16 $",
+    "coffeeUsd": "2.50 - 4 $",
+    "waterBottleUsd": "0.80 - 1.50 $",
+    "hostelDormUsd": "15 - 30 $",
+    "hotel3StarUsd": "70 - 130 $",
+    "flightCostIndex": "Moderado",
+    "flightTip": "Turkish Airlines vuela directo Estambul–Riga; Riga es el hub de airBaltic, así que hay muchas conexiones por Europa."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Los letones parecen reservados al principio pero son corteses; apretón de manos y contacto visual al saludar.",
+     "Las flores se regalan en número impar; el par es para funerales.",
+     "Al entrar en casa se quitan los zapatos.",
+     "Se espera ceder el asiento a los mayores en el transporte."
+    ],
+    "festivals": [
+     "Jāņi / Līgo (solsticio de verano, 23–24 de junio, coronas y hogueras)",
+     "Festival Letón de la Canción y la Danza (en Riga cada 5 años aprox.)",
+     "Festival de luces Staro Rīga (noviembre)"
+    ],
+    "lifestyle": "Fuerte vínculo con la naturaleza: casas de verano, recogida de setas y bayas, la sauna pirts y la vida de playa."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Riga vieja (UNESCO): Casa de los Cabezas Negras e iglesia de San Pedro",
+     "Edificios art nouveau de Alberta iela",
+     "Mercado Central de Riga (antiguos hangares de zepelines)",
+     "Playa de Jūrmala y villas de madera",
+     "Parque Nacional de Gauja: Sigulda y castillo de Turaida",
+     "Palacio de Rundāle"
+    ],
+    "bestSeasons": "Mayo – septiembre (verano templado, fiestas de Jāņi, temporada de playa); diciembre por los mercados navideños; inviernos fríos y nevados",
+    "travelStyleTip": "Recorre Riga a pie; Jūrmala está a 30 minutos en tren y Sigulda a 1–1,5 horas. Para Rundāle hace falta tour o coche."
+   },
+   "religion": {
+    "primaryReligions": "Luteranos ~25 %, católicos ~20 %, ortodoxos ~20 %; gran parte sin religión.",
+    "respectNorms": "Guarda silencio en las iglesias y cubre los hombros; en las ortodoxas las mujeres cubren la cabeza.",
+    "sacredSites": [
+     "Catedral de Riga (Doms)",
+     "Catedral ortodoxa de la Natividad de Riga",
+     "Basílica de Aglona (lugar de peregrinación católica)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Letón (lengua báltica). El ruso también se entiende ampliamente.",
+    "englishProficiency": "Bueno; los jóvenes y el personal turístico de Riga hablan inglés con soltura.",
+    "phrases": [
+     {
+      "phrase": "Sveiki!",
+      "meaning": "Hola",
+      "translation": "Hola",
+      "pronunciation": "SVAY-kee"
+     },
+     {
+      "phrase": "Paldies",
+      "meaning": "Gracias",
+      "translation": "Gracias",
+      "pronunciation": "PAHL-dee-es"
+     },
+     {
+      "phrase": "Lūdzu",
+      "meaning": "Por favor",
+      "translation": "Por favor",
+      "pronunciation": "LOO-dzoo"
+     },
+     {
+      "phrase": "Cik tas maksā?",
+      "meaning": "¿Cuánto cuesta?",
+      "translation": "¿Cuánto cuesta?",
+      "pronunciation": "tsik tahs MAHK-sah"
+     },
+     {
+      "phrase": "Priekā!",
+      "meaning": "¡Salud!",
+      "translation": "¡Salud!",
+      "pronunciation": "PREE-eh-kah"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Riga se fundó en 1201 y fue un puerto clave de la Liga Hanseática. La región estuvo bajo caballeros alemanes, Polonia-Lituania, Suecia y el Imperio ruso. Letonia se independizó en 1918, fue anexionada por la URSS en 1940, recuperó la independencia en 1991 y entró en la UE y la OTAN en 2004.",
+    "milestones": [
+     "1201: fundación de Riga",
+     "1918: declaración de independencia (18 de noviembre)",
+     "1989: cadena humana 'Vía Báltica'",
+     "1991: restauración de la independencia; 2004 ingreso en la UE y la OTAN"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Pelēkie zirņi ar speķi (guisantes grises con tocino)",
+     "Rupjmaize (pan de centeno oscuro) con pescado ahumado",
+     "Jāņu siers (queso de alcaravea de San Juan)"
+    ],
+    "traditionalDrinks": [
+     "Riga Black Balsam (licor de hierbas)",
+     "Kvas (de pan)",
+     "Bērzu sula (savia de abedul)"
+    ],
+    "streetFoodAndDesserts": [
+     "Pīrāgi (bollos de tocino y cebolla)",
+     "Rupjmaizes kārtojums (postre de pan de centeno y nata)",
+     "Sklandrausis (tartaleta de zanahoria y patata)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Mijaíl Baryshnikov (bailarín, nacido en Riga)",
+     "Mariss Jansons (director de orquesta)",
+     "Kristaps Porziņģis (jugador de baloncesto)"
+    ],
+    "strongSectors": [
+     "Silvicultura y madera",
+     "Logística y puertos (Riga, Ventspils)",
+     "TI y servicios empresariales"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Las tarjetas y el pago sin contacto son habituales; lleva algo de efectivo para el Mercado Central y tiendas rurales.",
+    "tippingCulture": "En restaurantes es habitual un 5–10 %, pero no obligatorio.",
+    "economicPillars": "Productos de madera, logística de tránsito, industria alimentaria, servicios TI y turismo."
+   }
+  },
+  "itin": {
+   "routeName": "Corazón de Letonia: Riga, Sigulda y Cēsis",
+   "routeSummary": "Una ruta de 6 días desde la Riga art nouveau hasta los castillos del valle del Gauja y la ciudad medieval de Cēsis.",
+   "totalDays": 6,
+   "idealDurationText": "6 días",
+   "bestSeason": "Mayo – septiembre (verano templado, fiestas de Jāņi, temporada de playa); diciembre por los mercados navideños; inviernos fríos y nevados",
+   "transportMode": "A pie y en tranvía por Riga; tren o autobús a Sigulda y Cēsis",
+   "paceLevel": "Tranquilo",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Riga (casco antiguo, art nouveau y Jūrmala)",
+     "recommendedDuration": "3 días",
+     "durationBadge": "3 Días",
+     "highlights": [
+      "Casa de los Cabezas Negras y plaza del Ayuntamiento",
+      "Torre de la iglesia de San Pedro",
+      "Fachadas art nouveau de Alberta y Elizabetes iela",
+      "Mercado Central"
+     ],
+     "activities": [
+      "Visita el piso de época del Museo del Art Nouveau.",
+      "Ve en tren a Jūrmala y pasea por la playa de Majori y Jomas iela.",
+      "Contempla el atardecer sobre el Daugava frente a la Biblioteca Nacional."
+     ],
+     "foodAndDrinks": [
+      "Comida letona de autoservicio en Lido",
+      "Pescado ahumado y pīrāgi en el mercado",
+      "Un cóctel con Riga Black Balsam"
+     ],
+     "criticalTips": [
+      "Rechaza invitaciones a bares de desconocidos en el casco antiguo.",
+      "Compra el billete antes de subir al tranvía y valídalo en el lector e-talons."
+     ],
+     "mapsQuery": "Old Riga, Latvia"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Sigulda y Parque Nacional de Gauja",
+     "recommendedDuration": "1–2 días",
+     "durationBadge": "2 Días",
+     "highlights": [
+      "Castillo y reserva museo de Turaida",
+      "Cueva de Gūtmanis",
+      "Teleférico sobre el río Gauja",
+      "Castillo Nuevo de Sigulda y ruinas medievales"
+     ],
+     "activities": [
+      "Contempla el valle desde la torre de Turaida.",
+      "Haz senderismo entre los colores del otoño.",
+      "En verano rema en el Gauja; en invierno prueba la pista de bobsleigh."
+     ],
+     "foodAndDrinks": [
+      "Platos con setas silvestres",
+      "Kvas casero",
+      "Tarta de manzana"
+     ],
+     "criticalTips": [
+      "El teleférico y algunas actividades son de temporada; revisa horarios.",
+      "Usa pantalón largo y repelente contra garrapatas en el bosque."
+     ],
+     "mapsQuery": "Turaida Castle, Sigulda, Latvia"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Cēsis (ciudad medieval)",
+     "recommendedDuration": "1 día",
+     "durationBadge": "1 Día",
+     "highlights": [
+      "Castillo medieval de Cēsis",
+      "Iglesia de San Juan",
+      "Casco antiguo empedrado",
+      "Parque del castillo de Cēsis"
+     ],
+     "activities": [
+      "Sube con farol a la torre oscura del castillo.",
+      "Recorre las tiendas de artesanía del casco antiguo.",
+      "Camina hasta los acantilados de arenisca del Gauja."
+     ],
+     "foodAndDrinks": [
+      "Cerveza local Cēsu y sidra",
+      "Pelēkie zirņi ar speķi"
+     ],
+     "criticalTips": [
+      "Los trenes de vuelta a Riga pueden ser escasos; revisa horarios.",
+      "El castillo y los museos abren menos horas en invierno."
+     ],
+     "mapsQuery": "Cēsis Medieval Castle, Latvia"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Guisantes grises con tocino",
+     "Pescado ahumado",
+     "Sopa de setas",
+     "Karbonāde (chuleta empanada)"
+    ],
+    "drinks": [
+     "Riga Black Balsam",
+     "Kvas",
+     "Savia de abedul",
+     "Cervezas letonas"
+    ],
+    "streetFoods": [
+     "Pīrāgi",
+     "Sklandrausis",
+     "Ķiploku grauzdiņi (picatostes de centeno al ajo)",
+     "Biezpiena sieriņš (barrita de requesón)"
+    ],
+    "diningAdvice": "La cadena Lido es una opción económica y tradicional. El cerdo y el tocino son habituales; para comida halal busca restaurantes de Oriente Medio en el centro."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Chubasquero y capas de ropa",
+     "Calzado cómodo (adoquines)",
+     "Repelente de garrapatas",
+     "Tarjeta bancaria sin contacto"
+    ],
+    "safetyAndEtiquette": [
+     "Beber alcohol en la vía pública está prohibido y se multa.",
+     "En los clubes revisa la cuenta con cada pedido.",
+     "Cruzar fuera del paso de peatones puede multarse."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Enchufes de dos clavijas redondas (C/F) como en Turquía; no hace falta adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "El agua del grifo en Riga es potable; en edificios antiguos puede saber a hierro y muchos la filtran.",
+    "vaccines": [
+     "Vacunas rutinarias (tétanos, difteria, sarampión)",
+     "Vacuna contra la encefalitis por garrapatas para zonas boscosas en verano"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "113 / 112"
+   },
+   "tipping": {
+    "custom": "Deja un 5–10 % por buen servicio en restaurantes.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Algunos restaurantes añaden un cargo por servicio; revisa el tique."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA 21 %; devolución neta ~10–13 %",
+    "minSpend": "~44 € o más en una tienda",
+    "customsNote": "Los viajeros de fuera de la UE deben sellar el formulario Tax Free en aduanas en la última salida de la UE (p. ej., aeropuerto de Riga)."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.00 - $2.50",
+    "topCarriers": [
+     "LMT",
+     "Tele2",
+     "Bite"
+    ],
+    "airportSimTrapWarning": "El roaming con líneas turcas es caro; una eSIM o una SIM prepago LMT/Tele2/Bite de los quioscos Narvesen es lo más barato."
+   },
+   "touristScams": [
+    {
+     "title": "Trampa del bar de 'nuevos amigos'",
+     "desc": "Personas que te abordan en el casco antiguo te llevan a un bar asociado; unas copas acaban en cargos de miles de euros, a veces bajo presión.",
+     "tip": "Elige tú los locales, no pidas sin precios y no pierdas de vista tu tarjeta."
+    },
+    {
+     "title": "Taxis abusivos",
+     "desc": "Algunos taxis del aeropuerto y la estación cobran tarifas muy altas a turistas.",
+     "tip": "Usa Bolt o acuerda el precio antes de subir."
+    }
+   ]
+  }
+ },
+ "ru": {
+  "insights": {
+   "currency": "Евро (EUR)",
+   "bestMonths": "Май – сентябрь (тёплое лето, праздник Лиго, пляжный сезон); в декабре — рождественские ярмарки; зимы холодные и снежные",
+   "safety": {
+    "safetyScore": 65,
+    "crimeRateSummary": "Рига в целом безопасна, насильственная преступность туристов почти не касается. Реальные риски — обман со счетами в некоторых барах Старой Риги и карманники в толпе.",
+    "commonScams": [
+     "«Дружелюбные» девушки в Старой Риге приводят мужчин в бары, где счёт достигает тысяч евро (США и Великобритания предупреждают об этом)",
+     "Такси, завышающие цену в аэропорту и на автовокзале",
+     "Карманники на Центральном рынке и в трамваях"
+    ],
+    "safeTravelTips": [
+     "Не ходите с новыми знакомыми в предложенный ими бар; не заказывайте, если в меню нет цен.",
+     "Вызывайте такси через Bolt.",
+     "Не гуляйте в одиночку поздно ночью после алкоголя."
+    ],
+    "emergencyNumbers": {
+     "police": "110",
+     "ambulance": "113",
+     "general": "112"
+    },
+    "safetyLevel": "Безопасно",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "99% (4G повсеместно, 5G в Риге)",
+    "costPerGbUsd": "~1 - 2.50 $",
+    "esimAvailability": "Отлично",
+    "bestCarriers": [
+     "LMT",
+     "Tele2",
+     "Bite"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Хорошее (трамваи, троллейбусы и автобусы в Риге; электрички до Юрмалы и Сигулды)",
+    "costLevel": "Доступный",
+    "singleTicketUsd": "1.70 - 2.30 $",
+    "dailyPassUsd": "5.50 - 6.50 $",
+    "popularRideApps": [
+     "Bolt",
+     "Uber",
+     "Rīgas Satiksme (e-talons)",
+     "Mobilly"
+    ],
+    "taxiAdvice": "Bolt — самый распространённый и дешёвый вариант в Риге. Билеты покупайте в приложении Rīgas Satiksme, Mobilly или в киосках Narvesen; у водителя дороже."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "40 - 65 $",
+    "dailyBudgetMidrangeUsd": "100 - 160 $",
+    "budgetMealUsd": "10 - 16 $",
+    "coffeeUsd": "2.50 - 4 $",
+    "waterBottleUsd": "0.80 - 1.50 $",
+    "hostelDormUsd": "15 - 30 $",
+    "hotel3StarUsd": "70 - 130 $",
+    "flightCostIndex": "Средний",
+    "flightTip": "Turkish Airlines летает напрямую Стамбул–Рига; Рига — хаб airBaltic, поэтому стыковок через Европу много."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Латыши поначалу сдержанны, но вежливы; рукопожатие и взгляд в глаза — часть приветствия.",
+     "Цветы дарят нечётным числом; чётное — для похорон.",
+     "При входе в дом разуваются.",
+     "В транспорте принято уступать место пожилым."
+    ],
+    "festivals": [
+     "Яни / Лиго (летнее солнцестояние, 23–24 июня, венки и костры)",
+     "Латвийский праздник песни и танца (в Риге примерно раз в 5 лет)",
+     "Фестиваль света Staro Rīga (ноябрь)"
+    ],
+    "lifestyle": "Сильная связь с природой: дачи, сбор грибов и ягод, баня (pirts) и пляжный отдых."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Старая Рига (ЮНЕСКО): Дом Черноголовых и церковь Святого Петра",
+     "Здания модерна на улице Альберта",
+     "Центральный рынок Риги (бывшие ангары цеппелинов)",
+     "Пляж Юрмалы и деревянные виллы",
+     "Национальный парк Гауя: Сигулда и Турайдский замок",
+     "Рундальский дворец"
+    ],
+    "bestSeasons": "Май – сентябрь (тёплое лето, праздник Лиго, пляжный сезон); в декабре — рождественские ярмарки; зимы холодные и снежные",
+    "travelStyleTip": "Ригу обходите пешком; до Юрмалы 30 минут на электричке, до Сигулды около 1–1,5 часа. В Рундале — экскурсия или машина."
+   },
+   "religion": {
+    "primaryReligions": "Лютеране ~25%, католики ~20%, православные ~20%; значительная часть — неверующие.",
+    "respectNorms": "В храмах соблюдайте тишину и прикрывайте плечи; в православных женщины покрывают голову.",
+    "sacredSites": [
+     "Домский собор (Рига)",
+     "Христорождественский собор (Рига)",
+     "Аглонская базилика (место католического паломничества)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Латышский (балтийский язык). Русский тоже широко понимают.",
+    "englishProficiency": "Хороший; молодёжь и работники туризма в Риге свободно говорят по-английски.",
+    "phrases": [
+     {
+      "phrase": "Sveiki!",
+      "meaning": "Здравствуйте",
+      "translation": "Здравствуйте",
+      "pronunciation": "SVAY-kee"
+     },
+     {
+      "phrase": "Paldies",
+      "meaning": "Спасибо",
+      "translation": "Спасибо",
+      "pronunciation": "PAHL-dee-es"
+     },
+     {
+      "phrase": "Lūdzu",
+      "meaning": "Пожалуйста",
+      "translation": "Пожалуйста",
+      "pronunciation": "LOO-dzoo"
+     },
+     {
+      "phrase": "Cik tas maksā?",
+      "meaning": "Сколько это стоит?",
+      "translation": "Сколько это стоит?",
+      "pronunciation": "tsik tahs MAHK-sah"
+     },
+     {
+      "phrase": "Priekā!",
+      "meaning": "За здоровье!",
+      "translation": "За здоровье!",
+      "pronunciation": "PREE-eh-kah"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Рига основана в 1201 году и стала важным ганзейским портом. Регионом правили немецкие рыцари, Речь Посполитая, Швеция и Российская империя. Латвия провозгласила независимость в 1918 году, в 1940-м включена в СССР, в 1991-м восстановила независимость, в 2004-м вступила в ЕС и НАТО.",
+    "milestones": [
+     "1201: основание Риги",
+     "1918: провозглашение независимости (18 ноября)",
+     "1989: живая цепь «Балтийский путь»",
+     "1991: восстановление независимости; 2004 — ЕС и НАТО"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Пелекие зирни ар спекис (серый горох со шпиком)",
+     "Рупьмайзе (тёмный ржаной хлеб) с копчёной рыбой",
+     "Яню сиерс (тминный сыр к Лиго)"
+    ],
+    "traditionalDrinks": [
+     "Рижский чёрный бальзам",
+     "Хлебный квас",
+     "Берёзовый сок"
+    ],
+    "streetFoodAndDesserts": [
+     "Пираги (пирожки со шпиком и луком)",
+     "Рупьмайзес картоюмс (десерт из ржаного хлеба со сливками)",
+     "Скландраусис (морковно-картофельный пирог)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Михаил Барышников (артист балета, родился в Риге)",
+     "Марис Янсонс (дирижёр)",
+     "Кристапс Порзингис (баскетболист)"
+    ],
+    "strongSectors": [
+     "Лесное хозяйство и древесина",
+     "Логистика и порты (Рига, Вентспилс)",
+     "ИТ и бизнес-услуги"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Карты и бесконтактная оплата распространены; немного наличных пригодится на Центральном рынке и в сельских магазинах.",
+    "tippingCulture": "В ресторанах принято оставлять 5–10%, но это не обязательно.",
+    "economicPillars": "Деревообработка, транзитная логистика, пищевая промышленность, ИТ-услуги и туризм."
+   }
+  },
+  "itin": {
+   "routeName": "Сердце Латвии: Рига, Сигулда и Цесис",
+   "routeSummary": "6-дневный маршрут: Рига эпохи модерна, замки долины Гауи и средневековый Цесис.",
+   "totalDays": 6,
+   "idealDurationText": "6 дней",
+   "bestSeason": "Май – сентябрь (тёплое лето, праздник Лиго, пляжный сезон); в декабре — рождественские ярмарки; зимы холодные и снежные",
+   "transportMode": "Пешком и на трамвае по Риге; поезд или автобус до Сигулды и Цесиса",
+   "paceLevel": "Спокойный",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Остановка 1: Рига (Старый город, модерн и Юрмала)",
+     "recommendedDuration": "3 дня",
+     "durationBadge": "3 дня",
+     "highlights": [
+      "Дом Черноголовых и Ратушная площадь",
+      "Башня церкви Святого Петра",
+      "Фасады модерна на улицах Альберта и Элизабетес",
+      "Центральный рынок"
+     ],
+     "activities": [
+      "Осмотрите квартиру эпохи в Музее модерна.",
+      "Съездите на электричке в Юрмалу и прогуляйтесь по пляжу Майори и улице Йомас.",
+      "Встретьте закат над Даугавой с видом на Национальную библиотеку."
+     ],
+     "foodAndDrinks": [
+      "Латышская еда в самообслуживании Lido",
+      "Копчёная рыба и пираги на рынке",
+      "Коктейль с Рижским чёрным бальзамом"
+     ],
+     "criticalTips": [
+      "Отказывайтесь от приглашений незнакомцев в бары Старой Риги.",
+      "Покупайте билет до посадки и отмечайте его на валидаторе e-talons."
+     ],
+     "mapsQuery": "Old Riga, Latvia"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Остановка 2: Сигулда и национальный парк Гауя",
+     "recommendedDuration": "1–2 дня",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Турайдский замок и музей-заповедник",
+      "Пещера Гутмана",
+      "Канатная дорога над Гауей",
+      "Новый замок Сигулды и руины средневекового замка"
+     ],
+     "activities": [
+      "Полюбуйтесь долиной с башни Турайдского замка.",
+      "Погуляйте по осеннему лесу.",
+      "Летом сплав на каноэ по Гауе, зимой — бобслейная трасса."
+     ],
+     "foodAndDrinks": [
+      "Блюда из лесных грибов",
+      "Домашний квас",
+      "Яблочный пирог"
+     ],
+     "criticalTips": [
+      "Канатная дорога и часть развлечений работают сезонно — проверьте расписание.",
+      "В лесу носите длинные брюки и используйте средство от клещей."
+     ],
+     "mapsQuery": "Turaida Castle, Sigulda, Latvia"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Остановка 3: Цесис (средневековый город)",
+     "recommendedDuration": "1 день",
+     "durationBadge": "1 день",
+     "highlights": [
+      "Средневековый замок Цесиса",
+      "Церковь Святого Иоанна",
+      "Мощёный старый город",
+      "Замковый парк Цесиса"
+     ],
+     "activities": [
+      "Поднимитесь с фонарём на тёмную башню замка.",
+      "Загляните в ремесленные лавки старого города.",
+      "Дойдите до песчаниковых обрывов на Гауе."
+     ],
+     "foodAndDrinks": [
+      "Местное пиво Cēsu и сидр",
+      "Серый горох со шпиком"
+     ],
+     "criticalTips": [
+      "Поезда обратно в Ригу ходят нечасто — заранее уточните расписание.",
+      "Зимой замок и музеи работают меньше."
+     ],
+     "mapsQuery": "Cēsis Medieval Castle, Latvia"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Серый горох со шпиком",
+     "Копчёная рыба",
+     "Грибной суп",
+     "Карбонаде (отбивная в панировке)"
+    ],
+    "drinks": [
+     "Рижский чёрный бальзам",
+     "Квас",
+     "Берёзовый сок",
+     "Латвийское пиво"
+    ],
+    "streetFoods": [
+     "Пираги",
+     "Скландраусис",
+     "Чесночные гренки из ржаного хлеба",
+     "Творожный сырок"
+    ],
+    "diningAdvice": "Сеть Lido — недорогой и традиционный вариант. Свинина и шпик распространены; халяль ищите в ближневосточных ресторанах в центре Риги."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Дождевик и многослойная одежда",
+     "Удобная обувь (брусчатка)",
+     "Средство от клещей",
+     "Бесконтактная банковская карта"
+    ],
+    "safetyAndEtiquette": [
+     "Распитие алкоголя в общественных местах запрещено и штрафуется.",
+     "В ночных клубах проверяйте счёт при каждом заказе.",
+     "За переход вне перехода могут оштрафовать."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Такие же розетки с двумя круглыми штырями (C/F), как в Турции; адаптер не нужен."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Водопроводная вода в Риге питьевая; в старых домах может отдавать железом, многие используют фильтр.",
+    "vaccines": [
+     "Плановые прививки (столбняк, дифтерия, корь)",
+     "Прививка от клещевого энцефалита для лесных районов летом"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "113 / 112"
+   },
+   "tipping": {
+    "custom": "За хорошее обслуживание оставляют 5–10%.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Некоторые рестораны включают плату за обслуживание — проверьте чек."
+   },
+   "taxFree": {
+    "vatRefundPercent": "НДС 21%; возврат нетто ~10–13%",
+    "minSpend": "от ~44 € в одном магазине",
+    "customsNote": "Путешественники не из ЕС заверяют форму Tax Free на таможне в последнем пункте выезда из ЕС (например, аэропорт Риги)."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.00 - $2.50",
+    "topCarriers": [
+     "LMT",
+     "Tele2",
+     "Bite"
+    ],
+    "airportSimTrapWarning": "Роуминг с турецкими номерами дорогой; дешевле всего eSIM или предоплаченная SIM LMT/Tele2/Bite из киосков Narvesen."
+   },
+   "touristScams": [
+    {
+     "title": "Ловушка «новых друзей» в баре",
+     "desc": "Новые знакомые в Старой Риге ведут в «свой» бар; за пару напитков с карты списывают тысячи евро, иногда под давлением.",
+     "tip": "Выбирайте заведения сами, не заказывайте без цен, не выпускайте карту из виду."
+    },
+    {
+     "title": "Завышенные цены такси",
+     "desc": "Некоторые такси в аэропорту и на автовокзале берут с туристов очень высокий тариф.",
+     "tip": "Пользуйтесь Bolt или договаривайтесь о цене до поездки."
+    }
+   ]
+  }
+ }
+}

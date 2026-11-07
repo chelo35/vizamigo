@@ -324,6 +324,61 @@
      "Askerî ve resmî binaları fotoğraflamayın; köylerde insanları çekmeden önce izin isteyin."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Avrupa tipi iki yuvarlak uçlu C/F (Schuko) priz; Türkiye ile aynı, adaptör gerekmez."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Bakü’de şebeke suyu klorludur ve içme için önerilmez; şişe su için.",
+    "vaccines": [
+     "Rutin aşılar (KKK, tetanoz)",
+     "Hepatit A"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "103"
+   },
+   "tipping": {
+    "custom": "Bakü restoranları sık sık %10 servis bedeli ekler; eklenmemişse %5-10 bahşiş yeterlidir.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Taksi ve kafelerde hesabı yuvarlamak yeterlidir."
+   },
+   "taxFree": {
+    "vatRefundPercent": "%18 KDV (komisyon düşülerek iade)",
+    "minSpend": "300 AZN",
+    "customsNote": "“Tax Free” etiketli mağazalarda fiş başına en az 300 AZN’lik alışverişte form alın; Bakü Haydar Aliyev Havalimanı’nda check-in öncesi onaylatın."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.50 - $1.50",
+    "topCarriers": [
+     "Azercell",
+     "Bakcell",
+     "Nar"
+    ],
+    "airportSimTrapWarning": "Havalimanındaki Azercell/Bakcell standları normal fiyatlıdır; pasaportla kayıt gerekir. Kayıtsız satılan hatlar kısa sürede kapatılabilir."
+   },
+   "touristScams": [
+    {
+     "title": "Havalimanı taksisi",
+     "desc": "Havalimanında yaklaşan resmi olmayan taksiciler merkeze kat kat fiyat ister.",
+     "tip": "Bolt veya Uber kullanın ya da ucuz H1 Aeroexpress otobüsüne binin."
+    },
+    {
+     "title": "Gramajlı hesap",
+     "desc": "Bazı turistik restoranlar balık, kebap veya çayı gram/kişi başı fiyatlayıp hesabı şişirir.",
+     "tip": "Siparişten önce fiyatı ve porsiyonu sorun; fiyatsız menüden sipariş vermeyin."
+    }
+   ]
   }
  },
  "en": {
@@ -651,6 +706,61 @@
      "Do not photograph military or government buildings; ask before photographing people in villages."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "European two-round-pin C/F (Schuko) sockets, the same as in Turkey; no adapter needed."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Baku tap water is chlorinated and not recommended for drinking; drink bottled water.",
+    "vaccines": [
+     "Routine vaccines (MMR, tetanus)",
+     "Hepatitis A"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "103"
+   },
+   "tipping": {
+    "custom": "Baku restaurants often add a 10% service charge; if not, a 5-10% tip is enough.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Rounding up is enough in taxis and cafés."
+   },
+   "taxFree": {
+    "vatRefundPercent": "18% VAT (refunded minus fees)",
+    "minSpend": "300 AZN",
+    "customsNote": "In shops with a “Tax Free” sticker get a form for purchases of at least 300 AZN per receipt and validate it at Baku Heydar Aliyev Airport before check-in."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.50 - $1.50",
+    "topCarriers": [
+     "Azercell",
+     "Bakcell",
+     "Nar"
+    ],
+    "airportSimTrapWarning": "Azercell and Bakcell stands at the airport are fairly priced; registration with your passport is required, and unregistered SIMs can be blocked."
+   },
+   "touristScams": [
+    {
+     "title": "Airport taxis",
+     "desc": "Unofficial drivers approaching you at the airport ask several times the normal fare to the centre.",
+     "tip": "Use Bolt or Uber, or take the cheap H1 Aeroexpress bus."
+    },
+    {
+     "title": "Priced-by-weight bills",
+     "desc": "Some touristy restaurants price fish, kebab or tea per gram or per person and inflate the bill.",
+     "tip": "Ask the price and portion before ordering; avoid menus without prices."
+    }
+   ]
   }
  },
  "de": {
@@ -978,6 +1088,61 @@
      "Keine Militär- oder Regierungsgebäude fotografieren; in Dörfern vor Personenfotos fragen."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Europäische Steckdosen Typ C/F (Schuko) mit zwei runden Stiften, wie in der Türkei; kein Adapter nötig."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Das Leitungswasser in Baku ist gechlort und zum Trinken nicht empfohlen; Flaschenwasser trinken.",
+    "vaccines": [
+     "Standardimpfungen (MMR, Tetanus)",
+     "Hepatitis A"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "103"
+   },
+   "tipping": {
+    "custom": "Restaurants in Baku schlagen oft 10 % Service auf; sonst reichen 5-10 % Trinkgeld.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "In Taxis und Cafés reicht Aufrunden."
+   },
+   "taxFree": {
+    "vatRefundPercent": "18 % MwSt. (Erstattung abzüglich Gebühren)",
+    "minSpend": "300 AZN",
+    "customsNote": "In Geschäften mit „Tax Free“-Aufkleber ab 300 AZN pro Beleg ein Formular holen und am Flughafen Baku Heydar Aliyev vor dem Check-in validieren."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.50 - $1.50",
+    "topCarriers": [
+     "Azercell",
+     "Bakcell",
+     "Nar"
+    ],
+    "airportSimTrapWarning": "Azercell- und Bakcell-Stände am Flughafen sind fair; Registrierung mit Reisepass ist Pflicht, unregistrierte SIM-Karten können gesperrt werden."
+   },
+   "touristScams": [
+    {
+     "title": "Flughafentaxis",
+     "desc": "Inoffizielle Fahrer am Flughafen verlangen ein Vielfaches für die Fahrt ins Zentrum.",
+     "tip": "Bolt oder Uber nutzen oder den günstigen Bus H1 Aeroexpress nehmen."
+    },
+    {
+     "title": "Rechnung nach Gewicht",
+     "desc": "Manche Touristenrestaurants berechnen Fisch, Kebab oder Tee pro Gramm oder Person und blähen die Rechnung auf.",
+     "tip": "Vor der Bestellung Preis und Portion erfragen; keine Karten ohne Preise."
+    }
+   ]
   }
  },
  "es": {
@@ -1305,6 +1470,61 @@
      "No fotografíes edificios militares ni oficiales; en los pueblos pide permiso para fotografiar a la gente."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Enchufes europeos C/F (Schuko) de dos clavijas redondas, iguales que en Turquía; no hace falta adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "El agua del grifo de Bakú está clorada y no se recomienda beberla; tome agua embotellada.",
+    "vaccines": [
+     "Vacunas rutinarias (triple vírica, tétanos)",
+     "Hepatitis A"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "103"
+   },
+   "tipping": {
+    "custom": "Los restaurantes de Bakú suelen añadir un 10 % de servicio; si no, basta un 5-10 %.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "En taxis y cafeterías basta con redondear."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA del 18 % (se reembolsa menos comisiones)",
+    "minSpend": "300 AZN",
+    "customsNote": "En tiendas con pegatina “Tax Free” pida el formulario en compras de al menos 300 AZN por ticket y valídelo en el aeropuerto Heydar Aliyev de Bakú antes de facturar."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.50 - $1.50",
+    "topCarriers": [
+     "Azercell",
+     "Bakcell",
+     "Nar"
+    ],
+    "airportSimTrapWarning": "Los puestos de Azercell y Bakcell del aeropuerto tienen precios normales; hay que registrar la SIM con pasaporte o puede bloquearse."
+   },
+   "touristScams": [
+    {
+     "title": "Taxis del aeropuerto",
+     "desc": "Conductores no oficiales en el aeropuerto piden varias veces la tarifa normal al centro.",
+     "tip": "Use Bolt o Uber, o el autobús barato H1 Aeroexpress."
+    },
+    {
+     "title": "Cuenta por peso",
+     "desc": "Algunos restaurantes turísticos cobran pescado, kebab o té por gramo o por persona e inflan la cuenta.",
+     "tip": "Pregunte precio y ración antes de pedir; evite cartas sin precios."
+    }
+   ]
   }
  },
  "ru": {
@@ -1632,6 +1852,61 @@
      "Не снимайте военные и государственные здания; в сёлах спрашивайте разрешения на фото людей."
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Европейские розетки C/F (Schuko) с двумя круглыми штырями, как в Турции; переходник не нужен."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Водопроводная вода в Баку хлорирована, пить её не рекомендуется; пейте бутилированную.",
+    "vaccines": [
+     "Плановые прививки (корь-краснуха-паротит, столбняк)",
+     "Гепатит A"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "103"
+   },
+   "tipping": {
+    "custom": "Рестораны Баку часто добавляют 10 % за обслуживание; если нет, достаточно 5-10 % чаевых.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "В такси и кафе достаточно округлить сумму."
+   },
+   "taxFree": {
+    "vatRefundPercent": "НДС 18 % (возврат за вычетом комиссии)",
+    "minSpend": "300 AZN",
+    "customsNote": "В магазинах с наклейкой «Tax Free» при покупке от 300 AZN по одному чеку возьмите форму и подтвердите её в аэропорту Гейдара Алиева до регистрации."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.50 - $1.50",
+    "topCarriers": [
+     "Azercell",
+     "Bakcell",
+     "Nar"
+    ],
+    "airportSimTrapWarning": "Стойки Azercell и Bakcell в аэропорту продают SIM по обычной цене; нужна регистрация по паспорту, незарегистрированные SIM могут заблокировать."
+   },
+   "touristScams": [
+    {
+     "title": "Такси в аэропорту",
+     "desc": "Неофициальные водители в аэропорту просят в разы больше обычной цены до центра.",
+     "tip": "Пользуйтесь Bolt или Uber либо дешёвым автобусом H1 Aeroexpress."
+    },
+    {
+     "title": "Счёт «за граммы»",
+     "desc": "Некоторые туристические рестораны считают рыбу, кебаб или чай за грамм или с человека и раздувают счёт.",
+     "tip": "Уточняйте цену и порцию до заказа; избегайте меню без цен."
+    }
+   ]
   }
  }
 }

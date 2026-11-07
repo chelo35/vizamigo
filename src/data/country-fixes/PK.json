@@ -1,0 +1,1802 @@
+{
+ "tr": {
+  "insights": {
+   "currency": "Pakistan Rupisi (PKR)",
+   "plugType": "Tip C, D, M (230V, 50Hz)",
+   "bestMonths": "Lahor ve İslamabad için Ekim – Kasım ve Şubat – Mart (Kasım – Ocak arası Lahor’da yoğun duman/smog olabilir); kuzey (Hunza, Karakurum Yolu) için Mayıs – Ekim, Nisan’da kayısı çiçekleri, Ekim’de sonbahar renkleri; Haziran – Ağustos ovalarda 45 °C ve muson selleri",
+   "safety": {
+    "crimeRateSummary": "Terör riski yüksektir; TC Dışişleri ve diğer ülkeler Hayber Pahtunhva’nın batısı, Belucistan, Afganistan sınırı ve Kontrol Hattı (LoC) bölgelerine seyahat etmemeyi önerir. Mayıs 2025’te Hindistan ile askerî çatışma yaşandı. Lahor, İslamabad ve Gilgit-Baltistan’ın turistik vadileri görece sakindir; Karaçi’de sokak suçu yaygındır.",
+    "commonScams": [
+     "Havalimanı çıkışında yabancılara birkaç kat fiyat söyleyen taksiciler",
+     "Fairy Meadows gibi noktalarda tekel hâlindeki jip ücretleri ve izinsiz tur operatörleri",
+     "Sahte Gandhara “antika” heykelleri (çıkarmak yasaktır)"
+    ],
+    "safeTravelTips": [
+     "Hayber Pahtunhva’nın batısı, Belucistan, Afganistan sınırı ve LoC’den uzak durun; seyahat öncesi TC Dışişleri uyarılarını kontrol edin.",
+     "Kuzeye kayıtlı bir tur şirketiyle gidin; Karakurum Yolu’nda heyelan nedeniyle gecikmelere hazırlıklı olun ve polis kontrol noktalarında pasaport fotokopisi verin.",
+     "Kalabalık gösteri ve toplantılardan kaçının; askerî tesisleri ve izin almadan kadınları fotoğraflamayın."
+    ],
+    "emergencyNumbers": {
+     "police": "15",
+     "ambulance": "1122",
+     "general": "15"
+    },
+    "safetyScore": 40,
+    "safetyLevel": "Hassas / Tedbir Gerekir",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Şehirlerde 4G; kuzey vadilerinde zayıf, Hunza’da çoğunlukla SCO ağı çeker; güvenlik gerekçesiyle bölgesel kesintiler olabilir",
+    "costPerGbUsd": "~0.10 - 0.50 $",
+    "esimAvailability": "Sınırlı – yerel SIM pasaport ve biyometrik kayıtla alınır; uluslararası eSIM’ler çalışır. Yabancı telefonlar yerel SIM ile sınırlı süre çalışır, uzun kalışta PTA kaydı gerekir.",
+    "bestCarriers": [
+     "Jazz",
+     "Zong",
+     "Telenor",
+     "SCO (Gilgit-Baltistan)"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Orta – Lahor’da Orange Line metrosu, İslamabad ve Lahor’da Metrobus, şehirler arası konforlu Daewoo Express otobüsleri; kuzeye uzun ve dağlık kara yolu veya hava koşuluna bağlı Gilgit/Skardu uçuşları",
+    "costLevel": "Ucuz",
+    "singleTicketUsd": "~0.10 - 0.30 $ (Metrobus / Orange Line)",
+    "dailyPassUsd": "Günlük kart yok; İslamabad – Lahor Daewoo otobüsü ~8 - 12 $",
+    "popularRideApps": [
+     "inDrive",
+     "Yango",
+     "Bykea"
+    ],
+    "taxiAdvice": "Şehirlerde inDrive ve Yango sabit, makul fiyat verir; Bykea motosiklet taksidir. Sokak taksilerinde taksimetre yoktur, fiyatı önceden konuşun. Kuzeyde şoförlü jip/araç kiralamak en güvenli yoldur."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "20 - 35 $",
+    "dailyBudgetMidrangeUsd": "50 - 100 $",
+    "budgetMealUsd": "2 - 4 $",
+    "coffeeUsd": "1.50 - 3.50 $",
+    "waterBottleUsd": "0.25 - 0.40 $",
+    "hostelDormUsd": "6 - 15 $",
+    "hotel3StarUsd": "30 - 70 $",
+    "flightCostIndex": "Düşük – Orta (İstanbul – İslamabad/Lahor direkt ~5 sa)",
+    "flightTip": "THY İstanbul’dan İslamabad, Lahor ve Karaçi’ye direkt uçar; PIA ve Körfez havayolları da seçenektir. Gilgit ve Skardu uçuşları hava nedeniyle sık iptal olur; kara yolu alternatifi için en az 1-2 gün pay bırakın."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "“Esselamü aleyküm” ile selamlaşılır; erkekler erkeklerle tokalaşır, kadınlarla tokalaşmadan önce karşı tarafın elini uzatmasını bekleyin.",
+     "Muhafazakâr giyinin: kollar ve bacaklar kapalı; kadınlar camilerde başlarını örter, yanlarında şal bulundurmaları faydalıdır.",
+     "Misafirperverlik çok güçlüdür; çay ve yemek davetini ilk seferde reddetmek kabalık sayılabilir. Ramazan’da gündüz açıkta yiyip içmeyin."
+    ],
+    "festivals": [
+     "Ramazan ve Kurban bayramları",
+     "Shandur Polo Festivali (Temmuz, 3.700 m’de)",
+     "Bağımsızlık Günü (14 Ağustos)"
+    ],
+    "lifestyle": "Aile ve misafir kültürü merkezdedir; akşamları yemek sokakları dolup taşar, kriket her yerde oynanır, Sufi türbelerinde perşembe akşamları kavvali müziği yankılanır."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Lahor – Badşahi Camii ve Lahor Kalesi (UNESCO)",
+     "İslamabad – Faysal Camii ve Margalla Tepeleri",
+     "Hunza Vadisi – Karimabad, Baltit ve Altit kaleleri",
+     "Karakurum Yolu ve Hunjerab Geçidi (4.693 m)",
+     "Taxila – Gandhara Budist kalıntıları (UNESCO)",
+     "Fairy Meadows ve Nanga Parbat manzarası"
+    ],
+    "bestSeasons": "Lahor ve İslamabad için Ekim – Kasım ve Şubat – Mart (Kasım – Ocak arası Lahor’da yoğun duman/smog olabilir); kuzey (Hunza, Karakurum Yolu) için Mayıs – Ekim, Nisan’da kayısı çiçekleri, Ekim’de sonbahar renkleri; Haziran – Ağustos ovalarda 45 °C ve muson selleri",
+    "travelStyleTip": "Türk vatandaşlarına karşı sıcaklık çok belirgindir. Kuzey için kayıtlı bir yerel operatörle çalışın, Karakurum Yolu’nda programı esnek tutun ve güvenlik uyarısı olan bölgelere rota çizmeyin."
+   },
+   "religion": {
+    "primaryReligions": "İslam (~%96; çoğunluk Sünni, önemli bir Şii nüfus ve Hunza’da İsmaililer), Hinduizm (~%2), Hristiyanlık (~%1,5).",
+    "respectNorms": "Camilerde ayakkabılar çıkarılır, kadınlar başlarını örter; namaz vakitlerinde ziyaretten kaçının. Din konusunda tartışmaya girmeyin; dine hakaret yasaları çok ağırdır.",
+    "sacredSites": [
+     "Badşahi Camii (Lahor)",
+     "Faysal Camii (İslamabad)",
+     "Data Darbar – Ali Hücviri Türbesi (Lahor)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Urduca (ulusal dil, Nastalik yazı) ve İngilizce (resmî); Pencapça, Peştuca, Sintçe, Belucice; Hunza’da Buruşaski ve Vahi.",
+    "englishProficiency": "Şehirlerde, eğitimli kesimde ve otellerde iyi; Türkçe kökenli pek çok Urduca kelime (kitap, kalem, dost) iletişimi kolaylaştırır.",
+    "phrases": [
+     {
+      "phrase": "السلام علیکم (Assalam-o-Alaikum)",
+      "meaning": "Esselamü aleyküm / Merhaba",
+      "translation": "Esselamü aleyküm / Merhaba",
+      "pronunciation": "as-sa-LAAM-o-a-LAI-kum"
+     },
+     {
+      "phrase": "شکریہ (Shukriya)",
+      "meaning": "Teşekkür ederim",
+      "translation": "Teşekkür ederim",
+      "pronunciation": "shuk-REE-ya"
+     },
+     {
+      "phrase": "یہ کتنے کا ہے؟ (Yeh kitne ka hai?)",
+      "meaning": "Bu ne kadar?",
+      "translation": "Bu ne kadar?",
+      "pronunciation": "yeh KIT-nay ka hai"
+     },
+     {
+      "phrase": "بہت مزیدار (Bohat mazedaar)",
+      "meaning": "Çok lezzetli",
+      "translation": "Çok lezzetli",
+      "pronunciation": "bo-HAT ma-zay-DAAR"
+     },
+     {
+      "phrase": "خدا حافظ (Khuda hafiz)",
+      "meaning": "Allah’a ısmarladık / Hoşça kalın",
+      "translation": "Allah’a ısmarladık / Hoşça kalın",
+      "pronunciation": "khu-DAA HAA-fiz"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Mohenjo-daro ve Harappa ile İndus Vadisi uygarlığının, Taxila ile Gandhara Budist kültürünün beşiğidir. Gazneliler’den Babürlere uzanan Türk-İslam mirası Lahor’da belirgindir. İngiliz Hindistanı’nın bölünmesiyle 1947’de Muhammed Ali Cinnah önderliğinde bağımsız oldu.",
+    "milestones": [
+     "MÖ ~2500: İndus Vadisi uygarlığının zirvesi (Mohenjo-daro)",
+     "1673: Lahor’da Badşahi Camii’nin tamamlanması",
+     "1940: Lahor Kararı",
+     "1947: Pakistan’ın kuruluşu"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Karahi (sac kazanda domatesli tavuk veya kuzu)",
+     "Nihari (gece boyu pişen baharatlı et yahnisi)",
+     "Chapli kebap (Peşaver usulü düz köfte)"
+    ],
+    "traditionalDrinks": [
+     "Doodh patti chai (sütle kaynatılmış çay)",
+     "Lassi",
+     "Şeker kamışı suyu (ganne ka ras)"
+    ],
+    "streetFoodAndDesserts": [
+     "Gol gappay",
+     "Jalebi",
+     "Kulfi ve falooda"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Muhammed Ali Cinnah (Kaid-i Azam, kurucu lider)",
+     "Muhammed İkbal (şair ve düşünür)",
+     "Nusrat Fateh Ali Khan (kavvali ustası)"
+    ],
+    "strongSectors": [
+     "Tekstil ve pamuk",
+     "Basmati pirinç ihracatı",
+     "Sialkot spor malzemeleri ve cerrahi aletler"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Nakit ağırlıklıdır; büyük şehirlerde otel, AVM ve restoranlarda kart geçer. Kuzeyde ATM az ve kart nadiren kabul edilir, yanınızda yeterli rupi bulundurun. Döviz bozdurmak için lisanslı döviz bürolarını kullanın.",
+    "tippingCulture": "Restoranlarda ~%10 bahşiş veya hesabı yuvarlamak yaygındır; şoför ve rehberlere günlük küçük bahşiş memnuniyetle karşılanır.",
+    "economicPillars": "Tarım (pamuk, pirinç, buğday), tekstil, yurt dışı işçi gelirleri ve hizmetler."
+   }
+  },
+  "itin": {
+   "routeName": "Lahor’dan Hunza’ya: Babür Mirası ve Karakurum Yolu",
+   "routeSummary": "Lahor’un Babür camileri ve yemek sokaklarından başkent İslamabad ve antik Taxila’ya, oradan Karakurum’un karlı zirveleri arasındaki Hunza Vadisi’ne uzanan 10 günlük güneyden kuzeye bir rota. Yalnızca resmî uyarı bulunmayan bölgelerden geçer.",
+   "totalDays": 10,
+   "idealDurationText": "10 günlük rota",
+   "bestSeason": "Lahor ve İslamabad için Ekim – Kasım ve Şubat – Mart (Kasım – Ocak arası Lahor’da yoğun duman/smog olabilir); kuzey (Hunza, Karakurum Yolu) için Mayıs – Ekim, Nisan’da kayısı çiçekleri, Ekim’de sonbahar renkleri; Haziran – Ağustos ovalarda 45 °C ve muson selleri",
+   "transportMode": "Daewoo Express otobüsü (Lahor – İslamabad) + İslamabad – Gilgit uçuşu veya şoförlü araçla Karakurum Yolu + inDrive / Yango",
+   "paceLevel": "Dengeli (tarih ve dağ)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "1. Durak: Lahor (Babür mirası)",
+     "recommendedDuration": "2-3 Gün",
+     "durationBadge": "2-3 Gün",
+     "highlights": [
+      "Badşahi Camii",
+      "Lahor Kalesi ve Şiş Mahal",
+      "Vezir Han Camii",
+      "Şalimar Bahçeleri (UNESCO)"
+     ],
+     "activities": [
+      "Eski Şehir’de (Walled City) rehberli yürüyüş yapın.",
+      "Perşembe akşamı Data Darbar’da kavvali dinleyin.",
+      "Fort Road Food Street’te akşam yemeği yiyin."
+     ],
+     "foodAndDrinks": [
+      "Lahor usulü karahi ve nihari",
+      "Lassi"
+     ],
+     "criticalTips": [
+      "Kasım – Ocak arasında smog çok yoğun olabilir; maske taşıyın ve hava kalitesini kontrol edin.",
+      "Camilerde kadınlar başlarını örtmeli; ayakkabılar girişte bırakılır."
+     ],
+     "mapsQuery": "Badshahi Mosque, Lahore, Pakistan"
+    },
+    {
+     "stopNumber": 2,
+     "name": "2. Durak: İslamabad ve Taxila",
+     "recommendedDuration": "2 Gün",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "Faysal Camii",
+      "Pakistan Anıtı",
+      "Taxila Müzesi ve Gandhara kalıntıları"
+     ],
+     "activities": [
+      "Margalla Tepeleri’nde Trail 3’te yürüyüş yapın.",
+      "Daman-e-Koh’dan şehir manzarasını izleyin.",
+      "Saidpur Köyü’nde veya Margalla sırtında akşam yemeği yiyin."
+     ],
+     "foodAndDrinks": [
+      "Chapli kebap",
+      "Doodh patti chai"
+     ],
+     "criticalTips": [
+      "Kırmızı Bölge’ye (Red Zone) girerken kimlik kontrolü yapılır; pasaportunuzu yanınızda taşıyın.",
+      "Gilgit uçuşu iptal olursa Karakurum Yolu ile karayolu iki gün sürebilir; planı esnek tutun."
+     ],
+     "mapsQuery": "Faisal Mosque, Islamabad, Pakistan"
+    },
+    {
+     "stopNumber": 3,
+     "name": "3. Durak: Hunza Vadisi (Karimabad ve Gojal)",
+     "recommendedDuration": "4 Gün",
+     "durationBadge": "4 Gün",
+     "highlights": [
+      "Baltit ve Altit kaleleri",
+      "Attabad Gölü",
+      "Passu Katedrali (Passu Cones) ve Hussaini asma köprüsü",
+      "Hunjerab Geçidi (Çin sınırı)"
+     ],
+     "activities": [
+      "Eagle’s Nest’ten Rakaposhi ve Ultar’a gün batımında bakın.",
+      "Attabad Gölü’nde tekne turu yapın.",
+      "Hunjerab Ulusal Parkı’na günübirlik gidin."
+     ],
+     "foodAndDrinks": [
+      "Chapshuro (Hunza usulü etli börek)",
+      "Kayısı ve ceviz ürünleri, Hunza çorbası (daudo)"
+     ],
+     "criticalTips": [
+      "Hunjerab Geçidi 4.693 m’dedir; yükseklik için yavaş çıkın ve sıcak giysi alın. Geçit kışın kapalıdır.",
+      "Hunza’da İsmaili toplumu daha liberaldir, yine de örtülü kıyafet tercih edin; elektrik kesintilerine karşı powerbank taşıyın."
+     ],
+     "mapsQuery": "Karimabad, Hunza, Pakistan"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Karahi",
+     "Nihari",
+     "Chapli kebap",
+     "Sindh biryanisi"
+    ],
+    "drinks": [
+     "Doodh patti chai",
+     "Lassi",
+     "Kahwa (yeşil çay, kuzey bölgeler)"
+    ],
+    "streetFoods": [
+     "Gol gappay",
+     "Samosa ve pakora",
+     "Kulfi"
+    ],
+    "diningAdvice": "Yemekler helaldir ve porsiyonlar büyüktür; karahi genellikle yarım veya tam kilo olarak sipariş edilir. Acı seviyesini “kam mirch” (az acı) diyerek düşürebilirsiniz."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Kolları ve bacakları örten bol kıyafet, kadınlar için şal",
+     "Pasaport ve vize fotokopileri (kontrol noktaları için)",
+     "Kuzey için sıcak katmanlar ve güneş koruması",
+     "Yeterli nakit (kuzeyde ATM az)"
+    ],
+    "safetyAndEtiquette": [
+     "Resmî uyarı bulunan bölgelere gitmeyin ve güzergâhınızı otelinize bildirin.",
+     "Fotoğraf çekmeden önce özellikle kadınlardan izin isteyin."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "D",
+     "M"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Prizlerin çoğu ince iki uçlu (C) fişleri kabul eder, bu yüzden Türk telefon şarj aletleri genelde çalışır; kalın Schuko fişler ve üç uçlu D/M prizler için küçük bir adaptör yararlıdır. Elektrik kesintileri yaygındır."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Musluk suyu içilmez; mühürlü şişe su (Nestlé, Aquafina vb.) kullanın.",
+    "vaccines": [
+     "Hepatit A ve tifo (Pakistan’da ilaca dirençli tifo görülür)",
+     "Çocuk felci: 4 haftadan uzun kalanların ülkeden çıkışta güncel polio aşı belgesi göstermesi gerekebilir",
+     "Kuduz ve tetanos; ova bölgelerinde sıtma ve dang riski için hekime danışın"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "1122"
+   },
+   "tipping": {
+    "custom": "Zorunlu değil; ~%10 veya yuvarlama yaygın.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Lüks restoranlarda servis ücreti eklenebilir; şoför ve rehberlere günlük 500-1.000 PKR yaygındır."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Yok",
+    "minSpend": "Uygulanmaz",
+    "customsNote": "Pakistan’da turistlere satış vergisi iadesi yoktur. Antika ve Gandhara eserlerini çıkarmak yasaktır; halı ve el sanatlarının faturasını saklayın."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.10 - $0.50",
+    "topCarriers": [
+     "Jazz",
+     "Zong",
+     "Telenor",
+     "SCO"
+    ],
+    "airportSimTrapWarning": "Havalimanında SIM biyometrik parmak iziyle kaydedilir; işlem uzun sürebilir. Kuzey için Zong veya SCO hattı alın; diğer operatörler Hunza’nın yukarısında çekmeyebilir."
+   },
+   "touristScams": [
+    {
+     "title": "Havalimanı taksi fiyatı",
+     "desc": "İslamabad ve Lahor havalimanlarında yabancılara şehir merkezine birkaç kat fiyat söylenir.",
+     "tip": "inDrive veya Yango ile fiyatı karşılaştırın ya da otel transferi ayarlayın."
+    },
+    {
+     "title": "Jip tekeli",
+     "desc": "Fairy Meadows gibi yerlere tek yol jip ücretleri sabit ve yüksektir; bazı aracılar bunun da üstünde fiyat ister.",
+     "tip": "Fiyatı doğrudan resmî jip birliği noktasından öğrenin ve otelinize danışın."
+    },
+    {
+     "title": "Sahte Gandhara eserleri",
+     "desc": "Taxila ve Peşaver çevresinde “antika” diye satılan Buda heykelleri ya sahtedir ya da yasa dışıdır.",
+     "tip": "Yalnızca faturalı reprodüksiyon alın; antika satın almayın."
+    }
+   ]
+  }
+ },
+ "en": {
+  "insights": {
+   "currency": "Pakistani Rupee (PKR)",
+   "plugType": "Type C, D, M (230V, 50Hz)",
+   "bestMonths": "For Lahore and Islamabad October – November and February – March (Lahore can have heavy smog from November to January); for the north (Hunza, Karakoram Highway) May – October, apricot blossom in April and autumn colours in October; June – August brings 45 °C heat and monsoon floods on the plains",
+   "safety": {
+    "crimeRateSummary": "Terrorism risk is high; Turkey and other governments advise against travel to western Khyber Pakhtunkhwa, Balochistan, the Afghan border and the Line of Control. There was a military conflict with India in May 2025. Lahore, Islamabad and the tourist valleys of Gilgit-Baltistan are relatively calm; street crime is common in Karachi.",
+    "commonScams": [
+     "Taxi drivers quoting foreigners several times the normal fare at airports",
+     "Cartel-priced jeep rides at spots like Fairy Meadows and unlicensed tour operators",
+     "Fake Gandhara “antique” statues (exporting them is illegal)"
+    ],
+    "safeTravelTips": [
+     "Stay away from western Khyber Pakhtunkhwa, Balochistan, the Afghan border and the LoC; check official advice before travelling.",
+     "Travel north with a registered tour company; expect landslide delays on the Karakoram Highway and hand passport copies at police checkpoints.",
+     "Avoid crowds and rallies; don’t photograph military sites or women without permission."
+    ],
+    "emergencyNumbers": {
+     "police": "15",
+     "ambulance": "1122",
+     "general": "15"
+    },
+    "safetyScore": 40,
+    "safetyLevel": "Caution Advised",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60"
+   },
+   "internet": {
+    "networkCoverage": "4G in cities; weak in northern valleys, where SCO is often the only network in Hunza; regional shutdowns may occur for security reasons",
+    "costPerGbUsd": "~0.10 - 0.50 $",
+    "esimAvailability": "Limited – local SIMs require passport and biometric registration; international eSIMs work. Foreign phones work with a local SIM only for a limited period; longer stays need PTA registration.",
+    "bestCarriers": [
+     "Jazz",
+     "Zong",
+     "Telenor",
+     "SCO (Gilgit-Baltistan)"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Fair – Lahore’s Orange Line metro, Metrobus in Islamabad and Lahore, comfortable Daewoo Express intercity buses; long mountain roads to the north or weather-dependent flights to Gilgit/Skardu",
+    "costLevel": "Cheap",
+    "singleTicketUsd": "~0.10 - 0.30 $ (Metrobus / Orange Line)",
+    "dailyPassUsd": "No day pass; Islamabad – Lahore Daewoo bus ~8 - 12 $",
+    "popularRideApps": [
+     "inDrive",
+     "Yango",
+     "Bykea"
+    ],
+    "taxiAdvice": "In cities inDrive and Yango give fixed, fair prices; Bykea offers motorbike rides. Street taxis have no meters, so agree on the fare first. In the north, hiring a car or jeep with a driver is safest."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "20 - 35 $",
+    "dailyBudgetMidrangeUsd": "50 - 100 $",
+    "budgetMealUsd": "2 - 4 $",
+    "coffeeUsd": "1.50 - 3.50 $",
+    "waterBottleUsd": "0.25 - 0.40 $",
+    "hostelDormUsd": "6 - 15 $",
+    "hotel3StarUsd": "30 - 70 $",
+    "flightCostIndex": "Low – Moderate (Istanbul – Islamabad/Lahore direct ~5 h)",
+    "flightTip": "Turkish Airlines flies direct from Istanbul to Islamabad, Lahore and Karachi; PIA and Gulf carriers are alternatives. Gilgit and Skardu flights are often cancelled due to weather; keep 1-2 spare days for the road alternative."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Greet with “Assalam-o-Alaikum”; men shake hands with men, and wait for a woman to offer her hand first.",
+     "Dress conservatively with arms and legs covered; women cover their heads in mosques and should carry a scarf.",
+     "Hospitality is intense; refusing tea or food at the first offer can seem rude. Don’t eat or drink in public during the day in Ramadan."
+    ],
+    "festivals": [
+     "Eid al-Fitr and Eid al-Adha",
+     "Shandur Polo Festival (July, at 3,700 m)",
+     "Independence Day (14 August)"
+    ],
+    "lifestyle": "Family and hospitality are central; food streets fill up in the evenings, cricket is played everywhere and qawwali music echoes at Sufi shrines on Thursday nights."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Lahore – Badshahi Mosque and Lahore Fort (UNESCO)",
+     "Islamabad – Faisal Mosque and Margalla Hills",
+     "Hunza Valley – Karimabad, Baltit and Altit forts",
+     "Karakoram Highway and Khunjerab Pass (4,693 m)",
+     "Taxila – Gandhara Buddhist ruins (UNESCO)",
+     "Fairy Meadows and Nanga Parbat views"
+    ],
+    "bestSeasons": "For Lahore and Islamabad October – November and February – March (Lahore can have heavy smog from November to January); for the north (Hunza, Karakoram Highway) May – October, apricot blossom in April and autumn colours in October; June – August brings 45 °C heat and monsoon floods on the plains",
+    "travelStyleTip": "Warmth towards Turkish visitors is striking. Work with a registered local operator for the north, keep plans on the Karakoram Highway flexible and never route through areas under security warnings."
+   },
+   "religion": {
+    "primaryReligions": "Islam (~96%; mostly Sunni, a sizeable Shia population and Ismailis in Hunza), Hinduism (~2%), Christianity (~1.5%).",
+    "respectNorms": "Remove shoes in mosques and women cover their heads; avoid visiting during prayer times. Don’t get into religious debates; blasphemy laws are very severe.",
+    "sacredSites": [
+     "Badshahi Mosque (Lahore)",
+     "Faisal Mosque (Islamabad)",
+     "Data Darbar – shrine of Ali Hujwiri (Lahore)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Urdu (national language, Nastaliq script) and English (official); Punjabi, Pashto, Sindhi, Balochi; Burushaski and Wakhi in Hunza.",
+    "englishProficiency": "Good in cities, among the educated and in hotels; many Urdu words shared with Turkish (kitab, qalam, dost) help communication.",
+    "phrases": [
+     {
+      "phrase": "السلام علیکم (Assalam-o-Alaikum)",
+      "meaning": "Peace be upon you / Hello",
+      "translation": "Peace be upon you / Hello",
+      "pronunciation": "as-sa-LAAM-o-a-LAI-kum"
+     },
+     {
+      "phrase": "شکریہ (Shukriya)",
+      "meaning": "Thank you",
+      "translation": "Thank you",
+      "pronunciation": "shuk-REE-ya"
+     },
+     {
+      "phrase": "یہ کتنے کا ہے؟ (Yeh kitne ka hai?)",
+      "meaning": "How much is this?",
+      "translation": "How much is this?",
+      "pronunciation": "yeh KIT-nay ka hai"
+     },
+     {
+      "phrase": "بہت مزیدار (Bohat mazedaar)",
+      "meaning": "Very delicious",
+      "translation": "Very delicious",
+      "pronunciation": "bo-HAT ma-zay-DAAR"
+     },
+     {
+      "phrase": "خدا حافظ (Khuda hafiz)",
+      "meaning": "Goodbye",
+      "translation": "Goodbye",
+      "pronunciation": "khu-DAA HAA-fiz"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "It is the cradle of the Indus Valley civilisation (Mohenjo-daro, Harappa) and of Gandhara Buddhist culture (Taxila). The Turkic-Islamic heritage from the Ghaznavids to the Mughals is visible in Lahore. It became independent in 1947 under Muhammad Ali Jinnah with the partition of British India.",
+    "milestones": [
+     "c. 2500 BC: Height of the Indus Valley civilisation (Mohenjo-daro)",
+     "1673: Badshahi Mosque completed in Lahore",
+     "1940: Lahore Resolution",
+     "1947: Founding of Pakistan"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Karahi (chicken or mutton cooked with tomato in a wok-like pan)",
+     "Nihari (slow-cooked spiced meat stew)",
+     "Chapli kebab (Peshawar-style flat patty)"
+    ],
+    "traditionalDrinks": [
+     "Doodh patti chai (tea brewed in milk)",
+     "Lassi",
+     "Sugarcane juice (ganne ka ras)"
+    ],
+    "streetFoodAndDesserts": [
+     "Gol gappay",
+     "Jalebi",
+     "Kulfi and falooda"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Muhammad Ali Jinnah (Quaid-e-Azam, founding leader)",
+     "Muhammad Iqbal (poet and philosopher)",
+     "Nusrat Fateh Ali Khan (qawwali maestro)"
+    ],
+    "strongSectors": [
+     "Textiles and cotton",
+     "Basmati rice exports",
+     "Sialkot sports goods and surgical instruments"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Mostly cash; cards work in hotels, malls and restaurants in big cities. In the north ATMs are scarce and cards rarely accepted, so carry enough rupees. Use licensed exchange offices for currency.",
+    "tippingCulture": "In restaurants ~10% or rounding up is common; small daily tips for drivers and guides are appreciated.",
+    "economicPillars": "Agriculture (cotton, rice, wheat), textiles, overseas workers’ remittances and services."
+   }
+  },
+  "itin": {
+   "routeName": "Lahore to Hunza: Mughal Heritage & the Karakoram Highway",
+   "routeSummary": "A 10-day south-to-north route from Lahore’s Mughal mosques and food streets to the capital Islamabad and ancient Taxila, then up to the Hunza Valley among the snowy Karakoram peaks. It only passes through areas without official travel warnings.",
+   "totalDays": 10,
+   "idealDurationText": "10-day itinerary",
+   "bestSeason": "For Lahore and Islamabad October – November and February – March (Lahore can have heavy smog from November to January); for the north (Hunza, Karakoram Highway) May – October, apricot blossom in April and autumn colours in October; June – August brings 45 °C heat and monsoon floods on the plains",
+   "transportMode": "Daewoo Express bus (Lahore – Islamabad) + Islamabad – Gilgit flight or Karakoram Highway by car with driver + inDrive / Yango",
+   "paceLevel": "Balanced (history & mountains)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stop 1: Lahore (Mughal heritage)",
+     "recommendedDuration": "2-3 Days",
+     "durationBadge": "2-3 Days",
+     "highlights": [
+      "Badshahi Mosque",
+      "Lahore Fort and Sheesh Mahal",
+      "Wazir Khan Mosque",
+      "Shalimar Gardens (UNESCO)"
+     ],
+     "activities": [
+      "Take a guided walk through the Walled City.",
+      "Listen to qawwali at Data Darbar on Thursday evening.",
+      "Dine at Fort Road Food Street."
+     ],
+     "foodAndDrinks": [
+      "Lahori karahi and nihari",
+      "Lassi"
+     ],
+     "criticalTips": [
+      "Smog can be severe from November to January; carry a mask and check air quality.",
+      "Women must cover their heads in mosques; shoes are left at the entrance."
+     ],
+     "mapsQuery": "Badshahi Mosque, Lahore, Pakistan"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stop 2: Islamabad & Taxila",
+     "recommendedDuration": "2 Days",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "Faisal Mosque",
+      "Pakistan Monument",
+      "Taxila Museum and Gandhara ruins"
+     ],
+     "activities": [
+      "Hike Trail 3 in the Margalla Hills.",
+      "Enjoy city views from Daman-e-Koh.",
+      "Have dinner at Saidpur Village or on the Margalla ridge."
+     ],
+     "foodAndDrinks": [
+      "Chapli kebab",
+      "Doodh patti chai"
+     ],
+     "criticalTips": [
+      "There are ID checks entering the Red Zone; carry your passport.",
+      "If the Gilgit flight is cancelled the road via the Karakoram Highway can take two days; stay flexible."
+     ],
+     "mapsQuery": "Faisal Mosque, Islamabad, Pakistan"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stop 3: Hunza Valley (Karimabad & Gojal)",
+     "recommendedDuration": "4 Days",
+     "durationBadge": "4 Days",
+     "highlights": [
+      "Baltit and Altit forts",
+      "Attabad Lake",
+      "Passu Cones and Hussaini suspension bridge",
+      "Khunjerab Pass (Chinese border)"
+     ],
+     "activities": [
+      "Watch sunset over Rakaposhi and Ultar from Eagle’s Nest.",
+      "Take a boat ride on Attabad Lake.",
+      "Day-trip to Khunjerab National Park."
+     ],
+     "foodAndDrinks": [
+      "Chapshuro (Hunza meat-filled bread)",
+      "Apricots, walnuts and Hunza soup (daudo)"
+     ],
+     "criticalTips": [
+      "Khunjerab Pass is at 4,693 m; ascend slowly and bring warm clothes. The pass is closed in winter.",
+      "Hunza’s Ismaili community is more liberal, but still dress modestly; carry a power bank for power cuts."
+     ],
+     "mapsQuery": "Karimabad, Hunza, Pakistan"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Karahi",
+     "Nihari",
+     "Chapli kebab",
+     "Sindhi biryani"
+    ],
+    "drinks": [
+     "Doodh patti chai",
+     "Lassi",
+     "Kahwa (green tea, northern areas)"
+    ],
+    "streetFoods": [
+     "Gol gappay",
+     "Samosa and pakora",
+     "Kulfi"
+    ],
+    "diningAdvice": "Food is halal and portions are generous; karahi is usually ordered by the half or full kilo. Say “kam mirch” (less chilli) to tone down the heat."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Loose clothes covering arms and legs, a scarf for women",
+     "Passport and visa photocopies (for checkpoints)",
+     "Warm layers and sun protection for the north",
+     "Enough cash (few ATMs in the north)"
+    ],
+    "safetyAndEtiquette": [
+     "Don’t enter areas under official warnings and tell your hotel your route.",
+     "Ask permission before photographing people, especially women."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "D",
+     "M"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Most sockets accept thin two-pin (C) plugs, so European phone chargers usually work; a small adapter helps for thick Schuko plugs and three-pin D/M sockets. Power cuts are common."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Tap water isn’t drinkable; use sealed bottled water (Nestlé, Aquafina, etc.).",
+    "vaccines": [
+     "Hepatitis A and typhoid (drug-resistant typhoid occurs in Pakistan)",
+     "Polio: visitors staying over 4 weeks may need proof of recent polio vaccination when leaving",
+     "Rabies and tetanus; ask a doctor about malaria and dengue risk on the plains"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "1122"
+   },
+   "tipping": {
+    "custom": "Not mandatory; ~10% or rounding up is common.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Upscale restaurants may add a service charge; 500-1,000 PKR a day for drivers and guides is common."
+   },
+   "taxFree": {
+    "vatRefundPercent": "None",
+    "minSpend": "Not applicable",
+    "customsNote": "Pakistan offers no sales tax refund to tourists. Exporting antiques and Gandhara artefacts is prohibited; keep receipts for carpets and handicrafts."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.10 - $0.50",
+    "topCarriers": [
+     "Jazz",
+     "Zong",
+     "Telenor",
+     "SCO"
+    ],
+    "airportSimTrapWarning": "At the airport SIMs are registered with biometric fingerprints, which can take time. For the north get a Zong or SCO line; other networks may not work beyond Hunza."
+   },
+   "touristScams": [
+    {
+     "title": "Airport taxi pricing",
+     "desc": "At Islamabad and Lahore airports foreigners are quoted several times the normal fare into town.",
+     "tip": "Compare with inDrive or Yango or arrange a hotel transfer."
+    },
+    {
+     "title": "Jeep cartel",
+     "desc": "Jeep fares to places like Fairy Meadows are fixed and high, and some middlemen charge even more.",
+     "tip": "Check the price directly at the official jeep union point and ask your hotel."
+    },
+    {
+     "title": "Fake Gandhara artefacts",
+     "desc": "Buddha statues sold as “antiques” around Taxila are either fake or illegal to export.",
+     "tip": "Only buy invoiced replicas; never buy antiques."
+    }
+   ]
+  }
+ },
+ "de": {
+  "insights": {
+   "currency": "Pakistanische Rupie (PKR)",
+   "plugType": "Typ C, D, M (230V, 50Hz)",
+   "bestMonths": "Für Lahore und Islamabad Oktober – November und Februar – März (in Lahore von November bis Januar oft starker Smog); für den Norden (Hunza, Karakorum Highway) Mai – Oktober, Aprikosenblüte im April, Herbstfarben im Oktober; Juni – August 45 °C Hitze und Monsunfluten in den Ebenen",
+   "safety": {
+    "crimeRateSummary": "Das Terrorrisiko ist hoch; die Türkei und andere Staaten raten von Reisen in das westliche Khyber Pakhtunkhwa, nach Belutschistan, an die afghanische Grenze und die Kontrolllinie ab. Im Mai 2025 gab es einen militärischen Konflikt mit Indien. Lahore, Islamabad und die Touristentäler Gilgit-Baltistans sind relativ ruhig; in Karachi ist Straßenkriminalität verbreitet.",
+    "commonScams": [
+     "Taxifahrer, die Ausländern am Flughafen ein Vielfaches verlangen",
+     "Kartellpreise für Jeepfahrten etwa zu den Fairy Meadows und unlizenzierte Tourveranstalter",
+     "Gefälschte Gandhara-„Antiquitäten“ (Ausfuhr verboten)"
+    ],
+    "safeTravelTips": [
+     "Westliches Khyber Pakhtunkhwa, Belutschistan, die afghanische Grenze und die LoC meiden; vor der Reise offizielle Hinweise prüfen.",
+     "Mit einem registrierten Veranstalter in den Norden reisen; auf dem Karakorum Highway mit Erdrutsch-Verzögerungen rechnen und an Polizeikontrollen Passkopien abgeben.",
+     "Menschenmengen und Kundgebungen meiden; keine Militäranlagen und Frauen nur mit Erlaubnis fotografieren."
+    ],
+    "emergencyNumbers": {
+     "police": "15",
+     "ambulance": "1122",
+     "general": "15"
+    },
+    "safetyScore": 40,
+    "safetyLevel": "Erhöhte Vorsicht",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60"
+   },
+   "internet": {
+    "networkCoverage": "4G in Städten; schwach in den Nordtälern, in Hunza oft nur das SCO-Netz; aus Sicherheitsgründen regionale Abschaltungen möglich",
+    "costPerGbUsd": "~0.10 - 0.50 $",
+    "esimAvailability": "Eingeschränkt – lokale SIMs nur mit Pass und biometrischer Registrierung; internationale eSIMs funktionieren. Ausländische Handys laufen mit lokaler SIM nur begrenzt, bei längerem Aufenthalt ist eine PTA-Registrierung nötig.",
+    "bestCarriers": [
+     "Jazz",
+     "Zong",
+     "Telenor",
+     "SCO (Gilgit-Baltistan)"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Mittel – Orange-Line-Metro in Lahore, Metrobus in Islamabad und Lahore, komfortable Daewoo-Express-Fernbusse; in den Norden lange Bergstraßen oder wetterabhängige Flüge nach Gilgit/Skardu",
+    "costLevel": "Günstig",
+    "singleTicketUsd": "~0.10 - 0.30 $ (Metrobus / Orange Line)",
+    "dailyPassUsd": "Kein Tagesticket; Daewoo-Bus Islamabad – Lahore ~8 - 12 $",
+    "popularRideApps": [
+     "inDrive",
+     "Yango",
+     "Bykea"
+    ],
+    "taxiAdvice": "In Städten bieten inDrive und Yango faire Festpreise; Bykea vermittelt Motorradfahrten. Straßentaxis haben kein Taxameter, Preis vorher vereinbaren. Im Norden ist ein Auto oder Jeep mit Fahrer am sichersten."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "20 - 35 $",
+    "dailyBudgetMidrangeUsd": "50 - 100 $",
+    "budgetMealUsd": "2 - 4 $",
+    "coffeeUsd": "1.50 - 3.50 $",
+    "waterBottleUsd": "0.25 - 0.40 $",
+    "hostelDormUsd": "6 - 15 $",
+    "hotel3StarUsd": "30 - 70 $",
+    "flightCostIndex": "Niedrig bis mittel (Istanbul – Islamabad/Lahore direkt ~5 Std.)",
+    "flightTip": "Turkish Airlines fliegt direkt von Istanbul nach Islamabad, Lahore und Karachi; PIA und Golf-Airlines sind Alternativen. Flüge nach Gilgit und Skardu fallen wetterbedingt oft aus; 1-2 Reservetage für die Straße einplanen."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Gegrüßt wird mit „Assalam-o-Alaikum“; Männer geben Männern die Hand, bei Frauen abwarten, ob sie die Hand reichen.",
+     "Konservativ kleiden, Arme und Beine bedeckt; Frauen bedecken in Moscheen den Kopf und sollten ein Tuch dabeihaben.",
+     "Die Gastfreundschaft ist überwältigend; Tee oder Essen beim ersten Angebot abzulehnen kann unhöflich wirken. Im Ramadan tagsüber nicht öffentlich essen oder trinken."
+    ],
+    "festivals": [
+     "Zuckerfest und Opferfest",
+     "Shandur-Polofestival (Juli, auf 3.700 m)",
+     "Unabhängigkeitstag (14. August)"
+    ],
+    "lifestyle": "Familie und Gastfreundschaft stehen im Mittelpunkt; abends füllen sich die Essensstraßen, überall wird Cricket gespielt und donnerstags erklingt an Sufi-Schreinen Qawwali-Musik."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Lahore – Badshahi-Moschee und Lahore Fort (UNESCO)",
+     "Islamabad – Faisal-Moschee und Margalla-Hügel",
+     "Hunza-Tal – Karimabad, Baltit- und Altit-Fort",
+     "Karakorum Highway und Khunjerab-Pass (4.693 m)",
+     "Taxila – buddhistische Gandhara-Ruinen (UNESCO)",
+     "Fairy Meadows mit Blick auf den Nanga Parbat"
+    ],
+    "bestSeasons": "Für Lahore und Islamabad Oktober – November und Februar – März (in Lahore von November bis Januar oft starker Smog); für den Norden (Hunza, Karakorum Highway) Mai – Oktober, Aprikosenblüte im April, Herbstfarben im Oktober; Juni – August 45 °C Hitze und Monsunfluten in den Ebenen",
+    "travelStyleTip": "Die Herzlichkeit gegenüber Gästen aus der Türkei ist auffallend. Für den Norden mit einem registrierten lokalen Veranstalter planen, auf dem Karakorum Highway flexibel bleiben und keine Gebiete mit Sicherheitswarnungen durchqueren."
+   },
+   "religion": {
+    "primaryReligions": "Islam (~96 %; überwiegend Sunniten, große schiitische Minderheit, Ismailiten in Hunza), Hinduismus (~2 %), Christentum (~1,5 %).",
+    "respectNorms": "In Moscheen Schuhe ausziehen, Frauen bedecken den Kopf; Besuche während der Gebetszeiten meiden. Keine religiösen Debatten; die Blasphemiegesetze sind sehr streng.",
+    "sacredSites": [
+     "Badshahi-Moschee (Lahore)",
+     "Faisal-Moschee (Islamabad)",
+     "Data Darbar – Schrein von Ali Hujwiri (Lahore)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Urdu (Nationalsprache, Nastaliq-Schrift) und Englisch (Amtssprache); Punjabi, Paschtu, Sindhi, Belutschi; in Hunza Burushaski und Wakhi.",
+    "englishProficiency": "Gut in Städten, unter Gebildeten und in Hotels; viele mit dem Türkischen geteilte Urdu-Wörter (kitab, qalam, dost) erleichtern die Verständigung.",
+    "phrases": [
+     {
+      "phrase": "السلام علیکم (Assalam-o-Alaikum)",
+      "meaning": "Friede sei mit dir / Hallo",
+      "translation": "Friede sei mit dir / Hallo",
+      "pronunciation": "as-sa-LAAM-o-a-LAI-kum"
+     },
+     {
+      "phrase": "شکریہ (Shukriya)",
+      "meaning": "Danke",
+      "translation": "Danke",
+      "pronunciation": "shuk-REE-ya"
+     },
+     {
+      "phrase": "یہ کتنے کا ہے؟ (Yeh kitne ka hai?)",
+      "meaning": "Wie viel kostet das?",
+      "translation": "Wie viel kostet das?",
+      "pronunciation": "yeh KIT-nay ka hai"
+     },
+     {
+      "phrase": "بہت مزیدار (Bohat mazedaar)",
+      "meaning": "Sehr lecker",
+      "translation": "Sehr lecker",
+      "pronunciation": "bo-HAT ma-zay-DAAR"
+     },
+     {
+      "phrase": "خدا حافظ (Khuda hafiz)",
+      "meaning": "Auf Wiedersehen",
+      "translation": "Auf Wiedersehen",
+      "pronunciation": "khu-DAA HAA-fiz"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Das Land ist Wiege der Indus-Kultur (Mohenjo-daro, Harappa) und der buddhistischen Gandhara-Kultur (Taxila). Das türkisch-islamische Erbe von den Ghaznawiden bis zu den Moguln prägt Lahore. Mit der Teilung Britisch-Indiens wurde es 1947 unter Muhammad Ali Jinnah unabhängig.",
+    "milestones": [
+     "um 2500 v. Chr.: Blüte der Indus-Kultur (Mohenjo-daro)",
+     "1673: Fertigstellung der Badshahi-Moschee in Lahore",
+     "1940: Lahore-Resolution",
+     "1947: Gründung Pakistans"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Karahi (Huhn oder Hammel mit Tomaten in der Karahi-Pfanne)",
+     "Nihari (lange geschmorter Fleischeintopf)",
+     "Chapli Kebab (flacher Hackfleischfladen nach Peschawar-Art)"
+    ],
+    "traditionalDrinks": [
+     "Doodh Patti Chai (in Milch gekochter Tee)",
+     "Lassi",
+     "Zuckerrohrsaft (Ganne ka Ras)"
+    ],
+    "streetFoodAndDesserts": [
+     "Gol Gappay",
+     "Jalebi",
+     "Kulfi und Falooda"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Muhammad Ali Jinnah (Quaid-e-Azam, Staatsgründer)",
+     "Muhammad Iqbal (Dichter und Philosoph)",
+     "Nusrat Fateh Ali Khan (Meister des Qawwali)"
+    ],
+    "strongSectors": [
+     "Textilien und Baumwolle",
+     "Export von Basmatireis",
+     "Sportartikel und chirurgische Instrumente aus Sialkot"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Überwiegend Bargeld; in Großstädten werden Karten in Hotels, Malls und Restaurants akzeptiert. Im Norden gibt es wenige Geldautomaten und kaum Kartenzahlung, genug Rupien mitnehmen. Nur lizenzierte Wechselstuben nutzen.",
+    "tippingCulture": "Im Restaurant sind ~10 % oder Aufrunden üblich; kleine Tagestrinkgelder für Fahrer und Guides sind willkommen.",
+    "economicPillars": "Landwirtschaft (Baumwolle, Reis, Weizen), Textilien, Rücküberweisungen und Dienstleistungen."
+   }
+  },
+  "itin": {
+   "routeName": "Von Lahore nach Hunza: Mogulerbe & Karakorum Highway",
+   "routeSummary": "Eine 10-tägige Route von Süd nach Nord: von Lahores Mogulmoscheen und Essensstraßen in die Hauptstadt Islamabad und das antike Taxila, dann ins Hunza-Tal zwischen den verschneiten Karakorum-Gipfeln. Sie führt nur durch Gebiete ohne offizielle Reisewarnungen.",
+   "totalDays": 10,
+   "idealDurationText": "10-tägige Reise",
+   "bestSeason": "Für Lahore und Islamabad Oktober – November und Februar – März (in Lahore von November bis Januar oft starker Smog); für den Norden (Hunza, Karakorum Highway) Mai – Oktober, Aprikosenblüte im April, Herbstfarben im Oktober; Juni – August 45 °C Hitze und Monsunfluten in den Ebenen",
+   "transportMode": "Daewoo-Express-Bus (Lahore – Islamabad) + Flug Islamabad – Gilgit oder Karakorum Highway mit Fahrer + inDrive / Yango",
+   "paceLevel": "Ausgewogen (Geschichte & Berge)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stopp 1: Lahore (Mogulerbe)",
+     "recommendedDuration": "2-3 Tage",
+     "durationBadge": "2-3 Tage",
+     "highlights": [
+      "Badshahi-Moschee",
+      "Lahore Fort und Sheesh Mahal",
+      "Wazir-Khan-Moschee",
+      "Shalimar-Gärten (UNESCO)"
+     ],
+     "activities": [
+      "Eine geführte Tour durch die Altstadt (Walled City) machen.",
+      "Am Donnerstagabend im Data Darbar Qawwali hören.",
+      "In der Fort Road Food Street zu Abend essen."
+     ],
+     "foodAndDrinks": [
+      "Karahi nach Lahore-Art und Nihari",
+      "Lassi"
+     ],
+     "criticalTips": [
+      "Von November bis Januar kann der Smog stark sein; Maske mitnehmen und Luftqualität prüfen.",
+      "In Moscheen müssen Frauen den Kopf bedecken; Schuhe bleiben am Eingang."
+     ],
+     "mapsQuery": "Badshahi Mosque, Lahore, Pakistan"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stopp 2: Islamabad & Taxila",
+     "recommendedDuration": "2 Tage",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "Faisal-Moschee",
+      "Pakistan-Monument",
+      "Taxila-Museum und Gandhara-Ruinen"
+     ],
+     "activities": [
+      "Auf dem Trail 3 in den Margalla-Hügeln wandern.",
+      "Den Stadtblick von Daman-e-Koh genießen.",
+      "Im Dorf Saidpur oder auf dem Margalla-Kamm zu Abend essen."
+     ],
+     "foodAndDrinks": [
+      "Chapli Kebab",
+      "Doodh Patti Chai"
+     ],
+     "criticalTips": [
+      "Beim Betreten der Red Zone gibt es Ausweiskontrollen; Pass dabeihaben.",
+      "Fällt der Gilgit-Flug aus, kann die Straße über den Karakorum Highway zwei Tage dauern; flexibel bleiben."
+     ],
+     "mapsQuery": "Faisal Mosque, Islamabad, Pakistan"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stopp 3: Hunza-Tal (Karimabad & Gojal)",
+     "recommendedDuration": "4 Tage",
+     "durationBadge": "4 Tage",
+     "highlights": [
+      "Baltit- und Altit-Fort",
+      "Attabad-See",
+      "Passu Cones und Hussaini-Hängebrücke",
+      "Khunjerab-Pass (chinesische Grenze)"
+     ],
+     "activities": [
+      "Vom Eagle’s Nest den Sonnenuntergang über Rakaposhi und Ultar sehen.",
+      "Eine Bootsfahrt auf dem Attabad-See machen.",
+      "Einen Tagesausflug in den Khunjerab-Nationalpark machen."
+     ],
+     "foodAndDrinks": [
+      "Chapshuro (mit Fleisch gefülltes Brot aus Hunza)",
+      "Aprikosen, Walnüsse und Hunza-Suppe (Daudo)"
+     ],
+     "criticalTips": [
+      "Der Khunjerab-Pass liegt auf 4.693 m; langsam aufsteigen und warme Kleidung mitnehmen. Im Winter ist der Pass gesperrt.",
+      "Die ismailitische Gemeinschaft in Hunza ist liberaler, dennoch bedeckt kleiden; für Stromausfälle eine Powerbank mitnehmen."
+     ],
+     "mapsQuery": "Karimabad, Hunza, Pakistan"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Karahi",
+     "Nihari",
+     "Chapli Kebab",
+     "Sindhi-Biryani"
+    ],
+    "drinks": [
+     "Doodh Patti Chai",
+     "Lassi",
+     "Kahwa (grüner Tee, Norden)"
+    ],
+    "streetFoods": [
+     "Gol Gappay",
+     "Samosa und Pakora",
+     "Kulfi"
+    ],
+    "diningAdvice": "Das Essen ist halal und die Portionen sind groß; Karahi bestellt man meist pro halbes oder ganzes Kilo. Mit „kam mirch“ (weniger Chili) wird es milder."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Lockere Kleidung, die Arme und Beine bedeckt, Tuch für Frauen",
+     "Pass- und Visakopien (für Kontrollpunkte)",
+     "Warme Schichten und Sonnenschutz für den Norden",
+     "Genug Bargeld (wenige Geldautomaten im Norden)"
+    ],
+    "safetyAndEtiquette": [
+     "Keine Gebiete mit offiziellen Warnungen betreten und dem Hotel die Route mitteilen.",
+     "Vor dem Fotografieren um Erlaubnis bitten, besonders bei Frauen."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "D",
+     "M"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Die meisten Steckdosen nehmen dünne Eurostecker (C) auf, Handyladegeräte funktionieren also meist; für dicke Schukostecker und dreipolige D/M-Steckdosen hilft ein kleiner Adapter. Stromausfälle sind häufig."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Leitungswasser nicht trinken; versiegeltes Flaschenwasser (Nestlé, Aquafina usw.) nutzen.",
+    "vaccines": [
+     "Hepatitis A und Typhus (in Pakistan kommt resistenter Typhus vor)",
+     "Polio: Bei Aufenthalten über 4 Wochen kann bei der Ausreise ein aktueller Polio-Impfnachweis verlangt werden",
+     "Tollwut und Tetanus; Malaria- und Dengue-Risiko in den Ebenen ärztlich abklären"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "1122"
+   },
+   "tipping": {
+    "custom": "Nicht Pflicht; ~10 % oder Aufrunden ist üblich.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Gehobene Restaurants schlagen teils Service auf; 500-1.000 PKR pro Tag für Fahrer und Guides sind üblich."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Keine",
+    "minSpend": "Nicht zutreffend",
+    "customsNote": "Pakistan erstattet Touristen keine Umsatzsteuer. Die Ausfuhr von Antiquitäten und Gandhara-Objekten ist verboten; Belege für Teppiche und Kunsthandwerk aufbewahren."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.10 - $0.50",
+    "topCarriers": [
+     "Jazz",
+     "Zong",
+     "Telenor",
+     "SCO"
+    ],
+    "airportSimTrapWarning": "Am Flughafen werden SIMs per Fingerabdruck registriert, was dauern kann. Für den Norden eine Zong- oder SCO-Karte nehmen; andere Netze funktionieren oberhalb von Hunza oft nicht."
+   },
+   "touristScams": [
+    {
+     "title": "Flughafen-Taxipreise",
+     "desc": "An den Flughäfen Islamabad und Lahore wird Ausländern ein Vielfaches des normalen Fahrpreises genannt.",
+     "tip": "Mit inDrive oder Yango vergleichen oder Hoteltransfer buchen."
+    },
+    {
+     "title": "Jeep-Kartell",
+     "desc": "Jeepfahrten etwa zu den Fairy Meadows haben hohe Festpreise, manche Vermittler verlangen noch mehr.",
+     "tip": "Den Preis direkt am offiziellen Jeep-Stand erfragen und das Hotel fragen."
+    },
+    {
+     "title": "Gefälschte Gandhara-Objekte",
+     "desc": "Rund um Taxila als „antik“ verkaufte Buddha-Statuen sind entweder gefälscht oder dürfen nicht ausgeführt werden.",
+     "tip": "Nur Repliken mit Rechnung kaufen, keine Antiquitäten."
+    }
+   ]
+  }
+ },
+ "es": {
+  "insights": {
+   "currency": "Rupia pakistaní (PKR)",
+   "plugType": "Tipo C, D, M (230V, 50Hz)",
+   "bestMonths": "Para Lahore e Islamabad, octubre – noviembre y febrero – marzo (en Lahore puede haber mucho esmog de noviembre a enero); para el norte (Hunza, carretera del Karakórum) mayo – octubre, flor del albaricoque en abril y colores otoñales en octubre; junio – agosto, 45 °C e inundaciones del monzón en las llanuras",
+   "safety": {
+    "crimeRateSummary": "El riesgo de terrorismo es alto; Turquía y otros gobiernos desaconsejan viajar al oeste de Khyber Pakhtunkhwa, Baluchistán, la frontera afgana y la Línea de Control. En mayo de 2025 hubo un conflicto militar con la India. Lahore, Islamabad y los valles turísticos de Gilgit-Baltistán son relativamente tranquilos; en Karachi abunda la delincuencia callejera.",
+    "commonScams": [
+     "Taxistas que piden varias veces la tarifa normal a extranjeros en el aeropuerto",
+     "Precios de cártel en los jeeps a lugares como Fairy Meadows y operadores sin licencia",
+     "Falsas estatuas “antiguas” de Gandhara (exportarlas es ilegal)"
+    ],
+    "safeTravelTips": [
+     "Mantente lejos del oeste de Khyber Pakhtunkhwa, Baluchistán, la frontera afgana y la LoC; consulta los avisos oficiales antes de viajar.",
+     "Viaja al norte con una agencia registrada; prevé retrasos por corrimientos en la carretera del Karakórum y entrega copias del pasaporte en los controles.",
+     "Evita multitudes y mítines; no fotografíes instalaciones militares ni a mujeres sin permiso."
+    ],
+    "emergencyNumbers": {
+     "police": "15",
+     "ambulance": "1122",
+     "general": "15"
+    },
+    "safetyScore": 40,
+    "safetyLevel": "Precaución Aconsejada",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60"
+   },
+   "internet": {
+    "networkCoverage": "4G en ciudades; débil en los valles del norte, donde en Hunza a menudo solo hay red SCO; puede haber cortes regionales por seguridad",
+    "costPerGbUsd": "~0.10 - 0.50 $",
+    "esimAvailability": "Limitada – la SIM local exige pasaporte y registro biométrico; las eSIM internacionales funcionan. Los móviles extranjeros funcionan con SIM local solo un tiempo limitado; estancias largas requieren registro en la PTA.",
+    "bestCarriers": [
+     "Jazz",
+     "Zong",
+     "Telenor",
+     "SCO (Gilgit-Baltistan)"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Regular – metro Orange Line en Lahore, Metrobus en Islamabad y Lahore, cómodos autobuses Daewoo Express; al norte, largas carreteras de montaña o vuelos a Gilgit/Skardu que dependen del tiempo",
+    "costLevel": "Barato",
+    "singleTicketUsd": "~0.10 - 0.30 $ (Metrobus / Orange Line)",
+    "dailyPassUsd": "No hay pase diario; autobús Daewoo Islamabad – Lahore ~8 - 12 $",
+    "popularRideApps": [
+     "inDrive",
+     "Yango",
+     "Bykea"
+    ],
+    "taxiAdvice": "En las ciudades inDrive y Yango dan precios fijos y justos; Bykea ofrece mototaxis. Los taxis de la calle no tienen taxímetro, pacta antes. En el norte lo más seguro es alquilar coche o jeep con conductor."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "20 - 35 $",
+    "dailyBudgetMidrangeUsd": "50 - 100 $",
+    "budgetMealUsd": "2 - 4 $",
+    "coffeeUsd": "1.50 - 3.50 $",
+    "waterBottleUsd": "0.25 - 0.40 $",
+    "hostelDormUsd": "6 - 15 $",
+    "hotel3StarUsd": "30 - 70 $",
+    "flightCostIndex": "Bajo – moderado (Estambul – Islamabad/Lahore directo ~5 h)",
+    "flightTip": "Turkish Airlines vuela directo de Estambul a Islamabad, Lahore y Karachi; PIA y aerolíneas del Golfo son alternativas. Los vuelos a Gilgit y Skardu se cancelan a menudo por el tiempo; deja 1-2 días de margen para ir por carretera."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Se saluda con “Assalam-o-Alaikum”; los hombres se dan la mano entre ellos y con las mujeres hay que esperar a que ellas la ofrezcan.",
+     "Viste de forma conservadora, con brazos y piernas cubiertos; las mujeres se cubren la cabeza en las mezquitas y conviene llevar pañuelo.",
+     "La hospitalidad es enorme; rechazar té o comida a la primera puede parecer descortés. En Ramadán no comas ni bebas en público de día."
+    ],
+    "festivals": [
+     "Eid al-Fitr y Eid al-Adha",
+     "Festival de polo de Shandur (julio, a 3.700 m)",
+     "Día de la Independencia (14 de agosto)"
+    ],
+    "lifestyle": "La familia y la hospitalidad son centrales; por la tarde las calles de comida se llenan, se juega al críquet en todas partes y los jueves por la noche suena qawwali en los santuarios sufíes."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Lahore – mezquita Badshahi y fuerte de Lahore (UNESCO)",
+     "Islamabad – mezquita Faisal y colinas Margalla",
+     "Valle de Hunza – Karimabad y fuertes de Baltit y Altit",
+     "Carretera del Karakórum y paso de Khunjerab (4.693 m)",
+     "Taxila – ruinas budistas de Gandhara (UNESCO)",
+     "Fairy Meadows y vistas del Nanga Parbat"
+    ],
+    "bestSeasons": "Para Lahore e Islamabad, octubre – noviembre y febrero – marzo (en Lahore puede haber mucho esmog de noviembre a enero); para el norte (Hunza, carretera del Karakórum) mayo – octubre, flor del albaricoque en abril y colores otoñales en octubre; junio – agosto, 45 °C e inundaciones del monzón en las llanuras",
+    "travelStyleTip": "La calidez hacia los visitantes turcos es notable. Para el norte trabaja con un operador local registrado, mantén flexibles los planes en la carretera del Karakórum y no pases por zonas con advertencias de seguridad."
+   },
+   "religion": {
+    "primaryReligions": "Islam (~96 %; mayoría suní, notable población chií e ismailíes en Hunza), hinduismo (~2 %), cristianismo (~1,5 %).",
+    "respectNorms": "En las mezquitas descálzate y las mujeres se cubren la cabeza; evita las horas de oración. No entres en debates religiosos; las leyes contra la blasfemia son muy duras.",
+    "sacredSites": [
+     "Mezquita Badshahi (Lahore)",
+     "Mezquita Faisal (Islamabad)",
+     "Data Darbar – santuario de Ali Hujwiri (Lahore)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Urdu (lengua nacional, escritura nastaliq) e inglés (oficial); panyabí, pastún, sindhi, baluchi; en Hunza burushaski y wakhi.",
+    "englishProficiency": "Bueno en ciudades, entre personas con estudios y en hoteles; muchas palabras compartidas entre urdu y turco (kitab, qalam, dost) ayudan.",
+    "phrases": [
+     {
+      "phrase": "السلام علیکم (Assalam-o-Alaikum)",
+      "meaning": "La paz sea contigo / Hola",
+      "translation": "La paz sea contigo / Hola",
+      "pronunciation": "as-sa-LAAM-o-a-LAI-kum"
+     },
+     {
+      "phrase": "شکریہ (Shukriya)",
+      "meaning": "Gracias",
+      "translation": "Gracias",
+      "pronunciation": "shuk-REE-ya"
+     },
+     {
+      "phrase": "یہ کتنے کا ہے؟ (Yeh kitne ka hai?)",
+      "meaning": "¿Cuánto cuesta esto?",
+      "translation": "¿Cuánto cuesta esto?",
+      "pronunciation": "yeh KIT-nay ka hai"
+     },
+     {
+      "phrase": "بہت مزیدار (Bohat mazedaar)",
+      "meaning": "Muy rico",
+      "translation": "Muy rico",
+      "pronunciation": "bo-HAT ma-zay-DAAR"
+     },
+     {
+      "phrase": "خدا حافظ (Khuda hafiz)",
+      "meaning": "Adiós",
+      "translation": "Adiós",
+      "pronunciation": "khu-DAA HAA-fiz"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Es la cuna de la civilización del valle del Indo (Mohenjo-daro, Harappa) y de la cultura budista de Gandhara (Taxila). El legado turco-islámico, de los gaznávidas a los mogoles, es visible en Lahore. Se independizó en 1947 bajo Muhammad Ali Jinnah con la partición de la India británica.",
+    "milestones": [
+     "c. 2500 a. C.: Apogeo de la civilización del Indo (Mohenjo-daro)",
+     "1673: Se termina la mezquita Badshahi en Lahore",
+     "1940: Resolución de Lahore",
+     "1947: Fundación de Pakistán"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Karahi (pollo o cordero con tomate en sartén karahi)",
+     "Nihari (guiso de carne especiado a fuego lento)",
+     "Chapli kebab (hamburguesa plana al estilo de Peshawar)"
+    ],
+    "traditionalDrinks": [
+     "Doodh patti chai (té hervido en leche)",
+     "Lassi",
+     "Zumo de caña (ganne ka ras)"
+    ],
+    "streetFoodAndDesserts": [
+     "Gol gappay",
+     "Jalebi",
+     "Kulfi y falooda"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Muhammad Ali Jinnah (Quaid-e-Azam, fundador)",
+     "Muhammad Iqbal (poeta y filósofo)",
+     "Nusrat Fateh Ali Khan (maestro del qawwali)"
+    ],
+    "strongSectors": [
+     "Textiles y algodón",
+     "Exportación de arroz basmati",
+     "Material deportivo e instrumental quirúrgico de Sialkot"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Predomina el efectivo; en las grandes ciudades se aceptan tarjetas en hoteles, centros comerciales y restaurantes. En el norte hay pocos cajeros y casi no aceptan tarjeta; lleva rupias suficientes. Cambia en casas de cambio con licencia.",
+    "tippingCulture": "En restaurantes es habitual ~10 % o redondear; se agradecen pequeñas propinas diarias a conductores y guías.",
+    "economicPillars": "Agricultura (algodón, arroz, trigo), textiles, remesas y servicios."
+   }
+  },
+  "itin": {
+   "routeName": "De Lahore a Hunza: herencia mogol y carretera del Karakórum",
+   "routeSummary": "Una ruta de 10 días de sur a norte: de las mezquitas mogoles y calles de comida de Lahore a la capital, Islamabad, y la antigua Taxila, y luego al valle de Hunza entre las cumbres nevadas del Karakórum. Solo atraviesa zonas sin advertencias oficiales.",
+   "totalDays": 10,
+   "idealDurationText": "Itinerario de 10 días",
+   "bestSeason": "Para Lahore e Islamabad, octubre – noviembre y febrero – marzo (en Lahore puede haber mucho esmog de noviembre a enero); para el norte (Hunza, carretera del Karakórum) mayo – octubre, flor del albaricoque en abril y colores otoñales en octubre; junio – agosto, 45 °C e inundaciones del monzón en las llanuras",
+   "transportMode": "Autobús Daewoo Express (Lahore – Islamabad) + vuelo Islamabad – Gilgit o carretera del Karakórum en coche con conductor + inDrive / Yango",
+   "paceLevel": "Equilibrado (historia y montaña)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Lahore (herencia mogol)",
+     "recommendedDuration": "2-3 Días",
+     "durationBadge": "2-3 Días",
+     "highlights": [
+      "Mezquita Badshahi",
+      "Fuerte de Lahore y Sheesh Mahal",
+      "Mezquita de Wazir Khan",
+      "Jardines de Shalimar (UNESCO)"
+     ],
+     "activities": [
+      "Haz un paseo guiado por la Ciudad Amurallada.",
+      "Escucha qawwali en Data Darbar el jueves por la noche.",
+      "Cena en la Fort Road Food Street."
+     ],
+     "foodAndDrinks": [
+      "Karahi lahorí y nihari",
+      "Lassi"
+     ],
+     "criticalTips": [
+      "De noviembre a enero el esmog puede ser intenso; lleva mascarilla y consulta la calidad del aire.",
+      "En las mezquitas las mujeres deben cubrirse la cabeza; los zapatos se dejan en la entrada."
+     ],
+     "mapsQuery": "Badshahi Mosque, Lahore, Pakistan"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Islamabad y Taxila",
+     "recommendedDuration": "2 Días",
+     "durationBadge": "2 Días",
+     "highlights": [
+      "Mezquita Faisal",
+      "Monumento de Pakistán",
+      "Museo de Taxila y ruinas de Gandhara"
+     ],
+     "activities": [
+      "Haz la ruta Trail 3 en las colinas Margalla.",
+      "Disfruta de las vistas desde Daman-e-Koh.",
+      "Cena en Saidpur Village o en la cresta de Margalla."
+     ],
+     "foodAndDrinks": [
+      "Chapli kebab",
+      "Doodh patti chai"
+     ],
+     "criticalTips": [
+      "Hay controles de identidad al entrar en la Zona Roja; lleva el pasaporte.",
+      "Si se cancela el vuelo a Gilgit, por carretera del Karakórum se tarda hasta dos días; sé flexible."
+     ],
+     "mapsQuery": "Faisal Mosque, Islamabad, Pakistan"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Valle de Hunza (Karimabad y Gojal)",
+     "recommendedDuration": "4 Días",
+     "durationBadge": "4 Días",
+     "highlights": [
+      "Fuertes de Baltit y Altit",
+      "Lago Attabad",
+      "Passu Cones y puente colgante de Hussaini",
+      "Paso de Khunjerab (frontera china)"
+     ],
+     "activities": [
+      "Contempla el atardecer sobre el Rakaposhi y el Ultar desde Eagle’s Nest.",
+      "Da un paseo en barca por el lago Attabad.",
+      "Haz una excursión al Parque Nacional de Khunjerab."
+     ],
+     "foodAndDrinks": [
+      "Chapshuro (pan relleno de carne de Hunza)",
+      "Albaricoques, nueces y sopa de Hunza (daudo)"
+     ],
+     "criticalTips": [
+      "El paso de Khunjerab está a 4.693 m; sube despacio y lleva ropa de abrigo. Cierra en invierno.",
+      "La comunidad ismailí de Hunza es más liberal, pero viste con modestia; lleva batería externa por los cortes de luz."
+     ],
+     "mapsQuery": "Karimabad, Hunza, Pakistan"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Karahi",
+     "Nihari",
+     "Chapli kebab",
+     "Biryani sindhi"
+    ],
+    "drinks": [
+     "Doodh patti chai",
+     "Lassi",
+     "Kahwa (té verde, norte)"
+    ],
+    "streetFoods": [
+     "Gol gappay",
+     "Samosa y pakora",
+     "Kulfi"
+    ],
+    "diningAdvice": "La comida es halal y las raciones generosas; el karahi suele pedirse por medio kilo o kilo. Di “kam mirch” (menos chile) para que pique menos."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Ropa holgada que cubra brazos y piernas, pañuelo para mujeres",
+     "Fotocopias del pasaporte y visado (para controles)",
+     "Capas de abrigo y protección solar para el norte",
+     "Efectivo suficiente (pocos cajeros en el norte)"
+    ],
+    "safetyAndEtiquette": [
+     "No entres en zonas con advertencias oficiales y comunica tu ruta al hotel.",
+     "Pide permiso antes de fotografiar a personas, sobre todo a mujeres."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "D",
+     "M"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "La mayoría de enchufes admiten clavijas finas de dos patas (C), así que los cargadores europeos suelen funcionar; para Schuko gruesos y tomas D/M de tres patas conviene un adaptador. Los apagones son frecuentes."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "El agua del grifo no es potable; usa agua embotellada sellada (Nestlé, Aquafina, etc.).",
+    "vaccines": [
+     "Hepatitis A y fiebre tifoidea (en Pakistán hay tifoidea resistente)",
+     "Polio: quienes permanezcan más de 4 semanas pueden necesitar certificado reciente de vacunación al salir",
+     "Rabia y tétanos; consulta sobre malaria y dengue en las llanuras"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "1122"
+   },
+   "tipping": {
+    "custom": "No obligatoria; es habitual ~10 % o redondear.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Los restaurantes caros pueden añadir servicio; 500-1.000 PKR al día a conductores y guías es habitual."
+   },
+   "taxFree": {
+    "vatRefundPercent": "No hay",
+    "minSpend": "No aplica",
+    "customsNote": "Pakistán no devuelve el impuesto sobre ventas a turistas. Está prohibido exportar antigüedades y piezas de Gandhara; guarda los recibos de alfombras y artesanía."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.10 - $0.50",
+    "topCarriers": [
+     "Jazz",
+     "Zong",
+     "Telenor",
+     "SCO"
+    ],
+    "airportSimTrapWarning": "En el aeropuerto la SIM se registra con huella biométrica y puede tardar. Para el norte compra una línea Zong o SCO; otras redes pueden no funcionar más allá de Hunza."
+   },
+   "touristScams": [
+    {
+     "title": "Tarifas de taxi del aeropuerto",
+     "desc": "En los aeropuertos de Islamabad y Lahore piden a los extranjeros varias veces la tarifa normal.",
+     "tip": "Compara con inDrive o Yango o reserva traslado del hotel."
+    },
+    {
+     "title": "Cártel de jeeps",
+     "desc": "Los jeeps a lugares como Fairy Meadows tienen precios fijos altos y algunos intermediarios cobran aún más.",
+     "tip": "Consulta el precio en el punto oficial de la asociación de jeeps y pregunta en el hotel."
+    },
+    {
+     "title": "Piezas falsas de Gandhara",
+     "desc": "Las estatuas de Buda vendidas como “antiguas” en Taxila son falsas o de exportación ilegal.",
+     "tip": "Compra solo réplicas con factura; nunca antigüedades."
+    }
+   ]
+  }
+ },
+ "ru": {
+  "insights": {
+   "currency": "Пакистанская рупия (PKR)",
+   "plugType": "Тип C, D, M (230V, 50Hz)",
+   "bestMonths": "Для Лахора и Исламабада — октябрь – ноябрь и февраль – март (в Лахоре с ноября по январь бывает сильный смог); для севера (Хунза, Каракорумское шоссе) — май – октябрь, цветение абрикосов в апреле, осенние краски в октябре; июнь – август на равнинах жара до 45 °C и муссонные наводнения",
+   "safety": {
+    "crimeRateSummary": "Риск терроризма высок; Турция и другие страны не рекомендуют поездки на запад Хайбер-Пахтунхвы, в Белуджистан, к афганской границе и линии контроля. В мае 2025 года произошёл военный конфликт с Индией. Лахор, Исламабад и туристические долины Гилгит-Балтистана относительно спокойны; в Карачи распространена уличная преступность.",
+    "commonScams": [
+     "Таксисты, называющие иностранцам в аэропорту цену в разы выше",
+     "Картельные цены на джипы к местам вроде Фейри-Медоуз и нелицензированные туроператоры",
+     "Поддельные «антикварные» статуэтки Гандхары (вывоз запрещён)"
+    ],
+    "safeTravelTips": [
+     "Избегайте запада Хайбер-Пахтунхвы, Белуджистана, афганской границы и линии контроля; перед поездкой проверяйте официальные рекомендации.",
+     "На север ездите с зарегистрированной турфирмой; на Каракорумском шоссе возможны задержки из-за оползней, на полицейских постах сдают копии паспорта.",
+     "Избегайте скоплений людей и митингов; не снимайте военные объекты и женщин без разрешения."
+    ],
+    "emergencyNumbers": {
+     "police": "15",
+     "ambulance": "1122",
+     "general": "15"
+    },
+    "safetyScore": 40,
+    "safetyLevel": "Требуется Осторожность",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60"
+   },
+   "internet": {
+    "networkCoverage": "4G в городах; слабый в северных долинах, в Хунзе часто работает только сеть SCO; по соображениям безопасности возможны региональные отключения",
+    "costPerGbUsd": "~0.10 - 0.50 $",
+    "esimAvailability": "Ограничено – местная SIM оформляется по паспорту с биометрией; международные eSIM работают. Иностранный телефон с местной SIM работает ограниченное время, при долгом пребывании нужна регистрация в PTA.",
+    "bestCarriers": [
+     "Jazz",
+     "Zong",
+     "Telenor",
+     "SCO (Gilgit-Baltistan)"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Среднее – метро Orange Line в Лахоре, Metrobus в Исламабаде и Лахоре, удобные междугородние автобусы Daewoo Express; на север — долгие горные дороги или зависящие от погоды рейсы в Гилгит/Скарду",
+    "costLevel": "Дёшево",
+    "singleTicketUsd": "~0.10 - 0.30 $ (Metrobus / Orange Line)",
+    "dailyPassUsd": "Проездного нет; автобус Daewoo Исламабад – Лахор ~8 - 12 $",
+    "popularRideApps": [
+     "inDrive",
+     "Yango",
+     "Bykea"
+    ],
+    "taxiAdvice": "В городах inDrive и Yango дают фиксированные разумные цены; Bykea — мототакси. У уличных такси счётчиков нет, договаривайтесь заранее. На севере безопаснее всего машина или джип с водителем."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "20 - 35 $",
+    "dailyBudgetMidrangeUsd": "50 - 100 $",
+    "budgetMealUsd": "2 - 4 $",
+    "coffeeUsd": "1.50 - 3.50 $",
+    "waterBottleUsd": "0.25 - 0.40 $",
+    "hostelDormUsd": "6 - 15 $",
+    "hotel3StarUsd": "30 - 70 $",
+    "flightCostIndex": "Низкий – средний (Стамбул – Исламабад/Лахор напрямую ~5 ч)",
+    "flightTip": "Turkish Airlines летает напрямую из Стамбула в Исламабад, Лахор и Карачи; есть также PIA и авиакомпании Залива. Рейсы в Гилгит и Скарду часто отменяют из-за погоды — оставьте 1-2 дня на дорогу по земле."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Здороваются словами «Ассаламу алейкум»; мужчины пожимают руки мужчинам, а женщине стоит подождать, пока она сама протянет руку.",
+     "Одевайтесь скромно, закрывая руки и ноги; женщины покрывают голову в мечетях — платок лучше иметь при себе.",
+     "Гостеприимство очень сильное; отказ от чая или еды с первого раза может показаться грубым. В Рамадан днём не ешьте и не пейте на людях."
+    ],
+    "festivals": [
+     "Ураза-байрам и Курбан-байрам",
+     "Фестиваль поло в Шандуре (июль, на высоте 3700 м)",
+     "День независимости (14 августа)"
+    ],
+    "lifestyle": "В центре — семья и гостеприимство; вечером улицы с едой полны людей, в крикет играют повсюду, а по четвергам в суфийских святилищах звучит каввали."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Лахор – мечеть Бадшахи и Лахорский форт (ЮНЕСКО)",
+     "Исламабад – мечеть Фейсал и холмы Маргалла",
+     "Долина Хунза – Каримабад, крепости Балтит и Алтит",
+     "Каракорумское шоссе и перевал Хунджераб (4693 м)",
+     "Таксила – буддийские руины Гандхары (ЮНЕСКО)",
+     "Фейри-Медоуз и вид на Нанга-Парбат"
+    ],
+    "bestSeasons": "Для Лахора и Исламабада — октябрь – ноябрь и февраль – март (в Лахоре с ноября по январь бывает сильный смог); для севера (Хунза, Каракорумское шоссе) — май – октябрь, цветение абрикосов в апреле, осенние краски в октябре; июнь – август на равнинах жара до 45 °C и муссонные наводнения",
+    "travelStyleTip": "К гостям из Турции здесь относятся особенно тепло. На север отправляйтесь с зарегистрированным местным оператором, держите гибкий график на Каракорумском шоссе и не прокладывайте маршрут через районы с предупреждениями."
+   },
+   "religion": {
+    "primaryReligions": "Ислам (~96 %; в основном сунниты, значительная доля шиитов, исмаилиты в Хунзе), индуизм (~2 %), христианство (~1,5 %).",
+    "respectNorms": "В мечетях снимают обувь, женщины покрывают голову; не приходите во время намаза. Не вступайте в споры о религии — законы о богохульстве очень суровы.",
+    "sacredSites": [
+     "Мечеть Бадшахи (Лахор)",
+     "Мечеть Фейсал (Исламабад)",
+     "Дата Дарбар – мавзолей Али Худжвири (Лахор)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Урду (государственный язык, письмо насталик) и английский (официальный); панджаби, пушту, синдхи, белуджский; в Хунзе — бурушаски и вахан.",
+    "englishProficiency": "Хороший в городах, среди образованных людей и в отелях; общие с турецким слова урду (китаб, калам, дост) помогают в общении.",
+    "phrases": [
+     {
+      "phrase": "السلام علیکم (Assalam-o-Alaikum)",
+      "meaning": "Мир вам / Здравствуйте",
+      "translation": "Мир вам / Здравствуйте",
+      "pronunciation": "as-sa-LAAM-o-a-LAI-kum"
+     },
+     {
+      "phrase": "شکریہ (Shukriya)",
+      "meaning": "Спасибо",
+      "translation": "Спасибо",
+      "pronunciation": "shuk-REE-ya"
+     },
+     {
+      "phrase": "یہ کتنے کا ہے؟ (Yeh kitne ka hai?)",
+      "meaning": "Сколько это стоит?",
+      "translation": "Сколько это стоит?",
+      "pronunciation": "yeh KIT-nay ka hai"
+     },
+     {
+      "phrase": "بہت مزیدار (Bohat mazedaar)",
+      "meaning": "Очень вкусно",
+      "translation": "Очень вкусно",
+      "pronunciation": "bo-HAT ma-zay-DAAR"
+     },
+     {
+      "phrase": "خدا حافظ (Khuda hafiz)",
+      "meaning": "До свидания",
+      "translation": "До свидания",
+      "pronunciation": "khu-DAA HAA-fiz"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Это колыбель цивилизации долины Инда (Мохенджо-Даро, Хараппа) и буддийской культуры Гандхары (Таксила). Тюркско-исламское наследие от Газневидов до Великих Моголов ярко видно в Лахоре. С разделом Британской Индии страна стала независимой в 1947 году под руководством Мухаммада Али Джинны.",
+    "milestones": [
+     "ок. 2500 до н. э.: расцвет цивилизации долины Инда (Мохенджо-Даро)",
+     "1673: завершение мечети Бадшахи в Лахоре",
+     "1940: Лахорская резолюция",
+     "1947: образование Пакистана"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Карахи (курица или баранина с томатами в сковороде-карахи)",
+     "Нихари (томлёное всю ночь пряное мясное рагу)",
+     "Чапли-кебаб (плоская котлета по-пешаварски)"
+    ],
+    "traditionalDrinks": [
+     "Дудх патти чай (чай, сваренный в молоке)",
+     "Ласси",
+     "Сок сахарного тростника (ганне ка рас)"
+    ],
+    "streetFoodAndDesserts": [
+     "Гол гаппе",
+     "Джалеби",
+     "Кулфи и фалуда"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Мухаммад Али Джинна (Каид-и-Азам, основатель государства)",
+     "Мухаммад Икбал (поэт и философ)",
+     "Нусрат Фатех Али Хан (мастер каввали)"
+    ],
+    "strongSectors": [
+     "Текстиль и хлопок",
+     "Экспорт риса басмати",
+     "Спорттовары и хирургические инструменты из Сиалкота"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "В основном наличные; в крупных городах карты принимают в отелях, ТЦ и ресторанах. На севере банкоматов мало и карты почти не берут — имейте запас рупий. Меняйте валюту в лицензированных обменниках.",
+    "tippingCulture": "В ресторанах обычно ~10 % или округление; небольшие ежедневные чаевые водителям и гидам приветствуются.",
+    "economicPillars": "Сельское хозяйство (хлопок, рис, пшеница), текстиль, денежные переводы и услуги."
+   }
+  },
+  "itin": {
+   "routeName": "От Лахора до Хунзы: наследие Моголов и Каракорумское шоссе",
+   "routeSummary": "10-дневный маршрут с юга на север: от могольских мечетей и гастрономических улиц Лахора к столице Исламабаду и древней Таксиле, а затем в долину Хунза среди снежных вершин Каракорума. Проходит только по районам без официальных предупреждений.",
+   "totalDays": 10,
+   "idealDurationText": "10-дневный маршрут",
+   "bestSeason": "Для Лахора и Исламабада — октябрь – ноябрь и февраль – март (в Лахоре с ноября по январь бывает сильный смог); для севера (Хунза, Каракорумское шоссе) — май – октябрь, цветение абрикосов в апреле, осенние краски в октябре; июнь – август на равнинах жара до 45 °C и муссонные наводнения",
+   "transportMode": "Автобус Daewoo Express (Лахор – Исламабад) + рейс Исламабад – Гилгит или Каракорумское шоссе на машине с водителем + inDrive / Yango",
+   "paceLevel": "Сбалансированный (история и горы)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Остановка 1: Лахор (наследие Моголов)",
+     "recommendedDuration": "2-3 дня",
+     "durationBadge": "2-3 дня",
+     "highlights": [
+      "Мечеть Бадшахи",
+      "Лахорский форт и Шиш-Махал",
+      "Мечеть Вазир-Хана",
+      "Сады Шалимар (ЮНЕСКО)"
+     ],
+     "activities": [
+      "Пройдитесь с гидом по Старому городу.",
+      "Послушайте каввали в Дата Дарбаре в четверг вечером.",
+      "Поужинайте на Fort Road Food Street."
+     ],
+     "foodAndDrinks": [
+      "Лахорское карахи и нихари",
+      "Ласси"
+     ],
+     "criticalTips": [
+      "С ноября по январь смог бывает очень плотным — берите маску и следите за качеством воздуха.",
+      "В мечетях женщины покрывают голову, обувь оставляют у входа."
+     ],
+     "mapsQuery": "Badshahi Mosque, Lahore, Pakistan"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Остановка 2: Исламабад и Таксила",
+     "recommendedDuration": "2 дня",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Мечеть Фейсал",
+      "Монумент Пакистана",
+      "Музей Таксилы и руины Гандхары"
+     ],
+     "activities": [
+      "Пройдите тропу Trail 3 в холмах Маргалла.",
+      "Полюбуйтесь городом с Даман-э-Кох.",
+      "Поужинайте в деревне Саидпур или на хребте Маргалла."
+     ],
+     "foodAndDrinks": [
+      "Чапли-кебаб",
+      "Дудх патти чай"
+     ],
+     "criticalTips": [
+      "При въезде в «Красную зону» проверяют документы — имейте паспорт при себе.",
+      "Если рейс в Гилгит отменят, дорога по Каракорумскому шоссе может занять два дня — будьте гибки."
+     ],
+     "mapsQuery": "Faisal Mosque, Islamabad, Pakistan"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Остановка 3: Долина Хунза (Каримабад и Годжал)",
+     "recommendedDuration": "4 дня",
+     "durationBadge": "4 дня",
+     "highlights": [
+      "Крепости Балтит и Алтит",
+      "Озеро Аттабад",
+      "Пики Пассу и подвесной мост Хуссайни",
+      "Перевал Хунджераб (граница с Китаем)"
+     ],
+     "activities": [
+      "Встретьте закат над Ракапоши и Ултаром с Eagle’s Nest.",
+      "Прокатитесь на лодке по озеру Аттабад.",
+      "Съездите на день в национальный парк Хунджераб."
+     ],
+     "foodAndDrinks": [
+      "Чапшуро (хунзайский пирог с мясом)",
+      "Абрикосы, грецкие орехи и хунзайский суп даудо"
+     ],
+     "criticalTips": [
+      "Перевал Хунджераб на высоте 4693 м: поднимайтесь постепенно и берите тёплую одежду. Зимой перевал закрыт.",
+      "Исмаилитская община Хунзы более либеральна, но одевайтесь скромно; возьмите павербанк на случай отключений света."
+     ],
+     "mapsQuery": "Karimabad, Hunza, Pakistan"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Карахи",
+     "Нихари",
+     "Чапли-кебаб",
+     "Синдхское бирьяни"
+    ],
+    "drinks": [
+     "Дудх патти чай",
+     "Ласси",
+     "Кахва (зелёный чай, север)"
+    ],
+    "streetFoods": [
+     "Гол гаппе",
+     "Самоса и пакора",
+     "Кулфи"
+    ],
+    "diningAdvice": "Еда халяльная, порции большие; карахи обычно заказывают по полкило или килограмму. Скажите «кам мирч» (поменьше перца), чтобы было не так остро."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Свободная одежда, закрывающая руки и ноги, платок для женщин",
+     "Копии паспорта и визы (для блокпостов)",
+     "Тёплые слои одежды и защита от солнца для севера",
+     "Достаточно наличных (на севере мало банкоматов)"
+    ],
+    "safetyAndEtiquette": [
+     "Не въезжайте в районы с официальными предупреждениями и сообщайте маршрут отелю.",
+     "Спрашивайте разрешения перед съёмкой людей, особенно женщин."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "D",
+     "M"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Большинство розеток принимают тонкие двухконтактные вилки (C), поэтому европейские зарядки обычно работают; для толстых «шуко» и трёхконтактных D/M пригодится переходник. Отключения света часты."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Водопроводную воду не пьют; используйте запечатанную бутилированную (Nestlé, Aquafina и др.).",
+    "vaccines": [
+     "Гепатит A и брюшной тиф (в Пакистане встречается устойчивый тиф)",
+     "Полиомиелит: при пребывании дольше 4 недель на выезде могут потребовать справку о недавней прививке",
+     "Бешенство и столбняк; о риске малярии и денге на равнинах спросите врача"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "1122"
+   },
+   "tipping": {
+    "custom": "Необязательны; обычно ~10 % или округление.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Дорогие рестораны могут добавлять сервисный сбор; водителям и гидам обычно дают 500-1000 PKR в день."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Нет",
+    "minSpend": "Не применяется",
+    "customsNote": "Возврата налога с продаж туристам в Пакистане нет. Вывоз антиквариата и предметов Гандхары запрещён; сохраняйте чеки на ковры и ремесленные изделия."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.10 - $0.50",
+    "topCarriers": [
+     "Jazz",
+     "Zong",
+     "Telenor",
+     "SCO"
+    ],
+    "airportSimTrapWarning": "В аэропорту SIM регистрируют по отпечаткам пальцев — это может занять время. Для севера берите Zong или SCO: другие сети выше Хунзы могут не работать."
+   },
+   "touristScams": [
+    {
+     "title": "Цены такси в аэропорту",
+     "desc": "В аэропортах Исламабада и Лахора иностранцам называют цену в разы выше обычной.",
+     "tip": "Сравните с inDrive или Yango или закажите трансфер в отеле."
+    },
+    {
+     "title": "Джиповый картель",
+     "desc": "Цены на джипы до мест вроде Фейри-Медоуз фиксированные и высокие, а посредники просят ещё больше.",
+     "tip": "Узнавайте цену прямо у официальной стоянки джипов и уточняйте в отеле."
+    },
+    {
+     "title": "Поддельные предметы Гандхары",
+     "desc": "Статуи Будды, продаваемые как «антиквариат» возле Таксилы, либо поддельные, либо запрещены к вывозу.",
+     "tip": "Покупайте только копии с чеком, никогда — антиквариат."
+    }
+   ]
+  }
+ }
+}

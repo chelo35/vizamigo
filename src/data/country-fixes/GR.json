@@ -96,6 +96,60 @@
      }
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Avrupa tipi iki yuvarlak uçlu C/F (Schuko) priz; Türkiye ile aynı, adaptör gerekmez."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Atina ve Selanik’te musluk suyu içilebilir; Santorini, Mikonos gibi Kiklad adalarında su arıtılmış deniz suyudur, şişe su için.",
+    "vaccines": [
+     "Rutin aşılar (KKK, tetanoz)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "166"
+   },
+   "tipping": {
+    "custom": "Restoranlarda servis fiyata dahildir; memnunsanız %5-10 bırakmak veya hesabı yuvarlamak yaygındır.",
+    "standardPercent": 10,
+    "rule": "round_up",
+    "note": "Taksi ve kafelerde hesabı yuvarlamak yeterlidir."
+   },
+   "taxFree": {
+    "vatRefundPercent": "%24 KDV (bazı adalarda daha düşük); iade komisyon sonrası ~%12-15",
+    "minSpend": "€50",
+    "customsNote": "Türk vatandaşları (AB dışı) iade alabilir: mağazada Tax Free formu isteyin; uçakla çıkışta havalimanında, feribotla Türkiye’ye dönüşte limandaki gümrükte damgalatın."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1 - $3",
+    "topCarriers": [
+     "Cosmote",
+     "Vodafone Greece",
+     "Nova"
+    ],
+    "airportSimTrapWarning": "Havalimanı kioskları pahalı olabilir; Cosmote/Vodafone mağazalarından veya önceden e-SIM ile alın. AB roaming paketleri Türk hatlarına uygulanmaz."
+   },
+   "touristScams": [
+    {
+     "title": "Atina taksi tarifesi",
+     "desc": "Gündüz taksimetreyi gece tarifesine (Tarife 2) alan veya havalimanı sabit ücretinden fazlasını isteyen taksiciler.",
+     "tip": "Havalimanı–merkez sabit ücretini bilin; FREENOW veya Uber ile taksi çağırın."
+    },
+    {
+     "title": "Monastiraki yankesiciliği",
+     "desc": "Metro 1. hattında ve Monastiraki’de kalabalıkta cüzdan ve telefon çalınması yaygındır.",
+     "tip": "Çantanızı önde, telefonunuzu ön cebinizde taşıyın."
+    }
+   ]
   }
  },
  "en": {
@@ -195,6 +249,60 @@
      }
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "European two-round-pin C/F (Schuko) sockets, the same as in Turkey; no adapter needed."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Tap water is drinkable in Athens and Thessaloniki; on Cycladic islands such as Santorini and Mykonos it is desalinated, so drink bottled water.",
+    "vaccines": [
+     "Routine vaccines (MMR, tetanus)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "166"
+   },
+   "tipping": {
+    "custom": "Service is included in restaurant prices; leaving 5-10% or rounding up is common if you are happy.",
+    "standardPercent": 10,
+    "rule": "round_up",
+    "note": "In taxis and cafés rounding up is enough."
+   },
+   "taxFree": {
+    "vatRefundPercent": "24% VAT (lower on some islands); about 12-15% back after fees",
+    "minSpend": "€50",
+    "customsNote": "Turkish citizens (non-EU) are eligible: ask the shop for a Tax Free form and have it stamped at the airport, or at port customs when returning to Turkey by ferry."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1 - $3",
+    "topCarriers": [
+     "Cosmote",
+     "Vodafone Greece",
+     "Nova"
+    ],
+    "airportSimTrapWarning": "Airport kiosks can be pricey; buy at Cosmote or Vodafone shops or get an eSIM in advance. EU roaming deals do not apply to Turkish SIMs."
+   },
+   "touristScams": [
+    {
+     "title": "Athens taxi tariff",
+     "desc": "Drivers who set the meter to the night rate (Tariff 2) by day or charge more than the airport flat fare.",
+     "tip": "Know the airport–centre flat fare; book through FREENOW or Uber."
+    },
+    {
+     "title": "Monastiraki pickpockets",
+     "desc": "Wallets and phones are often stolen in crowds on metro line 1 and around Monastiraki.",
+     "tip": "Keep your bag in front and your phone in a front pocket."
+    }
+   ]
   }
  },
  "de": {
@@ -294,6 +402,60 @@
      }
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Europäische Steckdosen Typ C/F (Schuko) mit zwei runden Stiften, wie in der Türkei; kein Adapter nötig."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "In Athen und Thessaloniki ist Leitungswasser trinkbar; auf Kykladeninseln wie Santorini und Mykonos ist es entsalzt, dort Flaschenwasser trinken.",
+    "vaccines": [
+     "Standardimpfungen (MMR, Tetanus)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "166"
+   },
+   "tipping": {
+    "custom": "Der Service ist im Preis enthalten; bei Zufriedenheit sind 5-10 % oder Aufrunden üblich.",
+    "standardPercent": 10,
+    "rule": "round_up",
+    "note": "In Taxis und Cafés reicht Aufrunden."
+   },
+   "taxFree": {
+    "vatRefundPercent": "24 % MwSt. (auf einigen Inseln weniger); nach Gebühren etwa 12-15 % zurück",
+    "minSpend": "€50",
+    "customsNote": "Türkische Staatsbürger (Nicht-EU) sind berechtigt: Tax-Free-Formular verlangen und am Flughafen oder bei der Fährausreise in die Türkei beim Hafenzoll abstempeln lassen."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1 - $3",
+    "topCarriers": [
+     "Cosmote",
+     "Vodafone Greece",
+     "Nova"
+    ],
+    "airportSimTrapWarning": "Flughafenstände können teuer sein; in Cosmote- oder Vodafone-Shops kaufen oder vorab eine eSIM holen. EU-Roaming gilt nicht für türkische SIM-Karten."
+   },
+   "touristScams": [
+    {
+     "title": "Athener Taxitarif",
+     "desc": "Fahrer stellen tagsüber den Nachttarif (Tarif 2) ein oder verlangen mehr als den Flughafen-Festpreis.",
+     "tip": "Den Festpreis Flughafen–Zentrum kennen; über FREENOW oder Uber buchen."
+    },
+    {
+     "title": "Taschendiebe in Monastiraki",
+     "desc": "In der Metrolinie 1 und rund um Monastiraki werden häufig Geldbörsen und Handys gestohlen.",
+     "tip": "Tasche vorne tragen, Handy in die vordere Tasche."
+    }
+   ]
   }
  },
  "es": {
@@ -393,6 +555,60 @@
      }
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Enchufes europeos C/F (Schuko) de dos clavijas redondas, iguales que en Turquía; no hace falta adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "El agua del grifo es potable en Atenas y Salónica; en las Cícladas, como Santorini y Míkonos, es desalinizada, así que beba agua embotellada.",
+    "vaccines": [
+     "Vacunas rutinarias (triple vírica, tétanos)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "166"
+   },
+   "tipping": {
+    "custom": "El servicio está incluido; si queda contento, es habitual dejar un 5-10 % o redondear.",
+    "standardPercent": 10,
+    "rule": "round_up",
+    "note": "En taxis y cafeterías basta con redondear."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA del 24 % (menor en algunas islas); se recupera un 12-15 % tras comisiones",
+    "minSpend": "€50",
+    "customsNote": "Los ciudadanos turcos (no UE) tienen derecho: pida el formulario Tax Free y séllelo en el aeropuerto o en la aduana del puerto si vuelve a Turquía en ferri."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1 - $3",
+    "topCarriers": [
+     "Cosmote",
+     "Vodafone Greece",
+     "Nova"
+    ],
+    "airportSimTrapWarning": "Los quioscos del aeropuerto pueden ser caros; compre en tiendas Cosmote o Vodafone o lleve una eSIM. El roaming UE no aplica a SIM turcas."
+   },
+   "touristScams": [
+    {
+     "title": "Tarifa de taxi en Atenas",
+     "desc": "Taxistas que ponen la tarifa nocturna (Tarifa 2) de día o cobran más que la tarifa fija del aeropuerto.",
+     "tip": "Conozca la tarifa fija aeropuerto–centro; pida el taxi con FREENOW o Uber."
+    },
+    {
+     "title": "Carteristas en Monastiraki",
+     "desc": "En la línea 1 del metro y en Monastiraki roban a menudo carteras y móviles entre la multitud.",
+     "tip": "Lleve el bolso delante y el móvil en un bolsillo delantero."
+    }
+   ]
   }
  },
  "ru": {
@@ -492,6 +708,60 @@
      }
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Европейские розетки C/F (Schuko) с двумя круглыми штырями, как в Турции; переходник не нужен."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "В Афинах и Салониках воду из-под крана можно пить; на Кикладах (Санторини, Миконос) она опреснённая — пейте бутилированную.",
+    "vaccines": [
+     "Плановые прививки (корь-краснуха-паротит, столбняк)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "166"
+   },
+   "tipping": {
+    "custom": "Обслуживание включено в цены; если всё понравилось, принято оставить 5-10 % или округлить счёт.",
+    "standardPercent": 10,
+    "rule": "round_up",
+    "note": "В такси и кафе достаточно округлить сумму."
+   },
+   "taxFree": {
+    "vatRefundPercent": "НДС 24 % (на некоторых островах ниже); после комиссии возвращается около 12-15 %",
+    "minSpend": "€50",
+    "customsNote": "Граждане Турции (не ЕС) имеют право на возврат: попросите форму Tax Free и заверьте её в аэропорту или на таможне порта при возвращении в Турцию паромом."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1 - $3",
+    "topCarriers": [
+     "Cosmote",
+     "Vodafone Greece",
+     "Nova"
+    ],
+    "airportSimTrapWarning": "Киоски в аэропорту бывают дорогими; покупайте в салонах Cosmote или Vodafone либо заранее оформите eSIM. Роуминг ЕС на турецкие SIM не распространяется."
+   },
+   "touristScams": [
+    {
+     "title": "Тариф афинского такси",
+     "desc": "Водители днём включают ночной тариф (Тариф 2) или берут больше фиксированной цены из аэропорта.",
+     "tip": "Знайте фиксированный тариф аэропорт–центр; вызывайте такси через FREENOW или Uber."
+    },
+    {
+     "title": "Карманники в Монастираки",
+     "desc": "В метро линии 1 и в районе Монастираки в толпе часто крадут кошельки и телефоны.",
+     "tip": "Носите сумку спереди, телефон — в переднем кармане."
+    }
+   ]
   }
  }
 }

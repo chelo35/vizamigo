@@ -1,0 +1,1807 @@
+{
+ "tr": {
+  "insights": {
+   "currency": "Singapur Doları (SGD)",
+   "bestMonths": "Şubat – Nisan (görece daha kuru); yıl boyu sıcak (~31 °C) ve nemli, Kasım–Ocak en yağışlı dönem, Haziran–Eylül arası zaman zaman pus görülebilir",
+   "safety": {
+    "safetyScore": 85,
+    "crimeRateSummary": "Dünyanın en güvenli şehir-devletlerinden biridir; sokak suçu çok nadirdir ve gece yürümek güvenlidir. Kurallar çok katıdır: çöp atma, metroda yiyip içme, e-sigara ve uyuşturucuya ağır cezalar uygulanır.",
+    "commonScams": [
+     "Sim Lim Square’daki bazı elektronik dükkanlarında zorla ‘garanti paketi’ satıp yüksek ücret çekme",
+     "Orchard ve Chinatown’da bağış toplayan sahte keşişler",
+     "Sahte konser/etkinlik bileti ve online kiralama ilanları"
+    ],
+    "safeTravelTips": [
+     "E-sigara getirmeyin ve kullanmayın; 2025’ten itibaren cezalar ağırlaştırılmıştır.",
+     "Çöp atmak, metroda yemek-içmek ve kırmızı ışıkta karşıya geçmek para cezası gerektirir.",
+     "Yaz öğle saatlerinde sıcak çarpmasına karşı gölgede kalın ve bol su için."
+    ],
+    "emergencyNumbers": {
+     "police": "999",
+     "ambulance": "995",
+     "general": "999 / 995"
+    },
+    "safetyLevel": "Olağanüstü Güvenli",
+    "badgeColor": "bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-900/60"
+   },
+   "internet": {
+    "networkCoverage": "%99+ (5G her yerde, metroda kesintisiz)",
+    "costPerGbUsd": "~0.30 - 1.50 $",
+    "esimAvailability": "Mükemmel",
+    "bestCarriers": [
+     "Singtel",
+     "StarHub",
+     "M1",
+     "SIMBA"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Dünya standardında (MRT metrosu ve otobüsler temiz, dakik ve klimalı)",
+    "costLevel": "Orta",
+    "singleTicketUsd": "0.85 - 2 $",
+    "dailyPassUsd": "~13 $ (1 günlük Singapore Tourist Pass)",
+    "popularRideApps": [
+     "Grab",
+     "Gojek",
+     "TADA",
+     "CDG Zig",
+     "SimplyGo"
+    ],
+    "taxiAdvice": "MRT ve otobüste temassız Visa/Mastercard ile doğrudan ödeme yapabilirsiniz (SimplyGo). Taksiler taksimetrelidir ve güvenlidir; Grab, Gojek ve TADA ile fiyatı önceden görürsünüz. Gece yarısı ve yoğun saatlerde ek ücret uygulanır."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "60 - 90 $",
+    "dailyBudgetMidrangeUsd": "150 - 260 $",
+    "budgetMealUsd": "4 - 8 $ (hawker)",
+    "coffeeUsd": "1.50 - 6 $",
+    "waterBottleUsd": "1 - 2 $",
+    "hostelDormUsd": "25 - 45 $",
+    "hotel3StarUsd": "150 - 260 $",
+    "flightCostIndex": "Orta-Yüksek (direkt ~11 sa)",
+    "flightTip": "İstanbul–Singapur arasında THY ve Singapore Airlines direkt uçar. Körfez aktarmalı biletler sıkça daha ucuzdur; Singapur, Bali ve Malezya için iyi bir aktarma merkezidir."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Kuyruk kültürü güçlüdür; sıraya girmek ve sağdan yürüyüp merdivende soldan geçmeye izin vermek beklenir.",
+     "Hawker merkezlerinde masaya bırakılmış mendil paketi ‘burası tutuldu’ (chope) demektir.",
+     "Malay ve Hint topluluklarında bir şey verirken sağ eli kullanın, kimsenin başına dokunmayın.",
+     "Camilere, tapınaklara ve evlere girerken ayakkabı çıkarılır."
+    ],
+    "festivals": [
+     "Çin Yeni Yılı (Ocak–Şubat; Chinatown ışıklandırmaları)",
+     "Hari Raya Puasa (Ramazan Bayramı; Geylang Serai Ramazan çarşısı)",
+     "Deepavali (Ekim–Kasım; Little India ışık festivali)"
+    ],
+    "lifestyle": "Çok kültürlü (Çinli, Malay, Hint) bir toplum; UNESCO listesindeki hawker kültürü, klimalı AVM’ler, verimlilik ve kurallara saygı gündelik hayatın temelidir."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Gardens by the Bay (Supertree Grove ve Cloud Forest)",
+     "Marina Bay Sands ve Merlion Parkı",
+     "Chinatown ve Buddha Tooth Relic Tapınağı",
+     "Kampong Glam (Sultan Camii) ve Little India",
+     "Singapur Botanik Bahçeleri (UNESCO)",
+     "Sentosa Adası ve Jewel Changi şelalesi"
+    ],
+    "bestSeasons": "Şubat – Nisan (görece daha kuru); yıl boyu sıcak (~31 °C) ve nemli, Kasım–Ocak en yağışlı dönem, Haziran–Eylül arası zaman zaman pus görülebilir",
+    "travelStyleTip": "3–4 gün yeterlidir. Her yere MRT ile ulaşılır; öğle sıcağında müze ve AVM’leri, akşamları ise açık hava gösterilerini (Supertree ışık şovu, Spectra) planlayın."
+   },
+   "religion": {
+    "primaryReligions": "Budist ~%31, Hristiyan ~%19, dinsiz ~%20, Müslüman ~%15–16, Taoist ~%9, Hindu ~%5.",
+    "respectNorms": "İbadet yerlerinde omuz ve dizler kapalı olmalı; Sultan Camii girişinde örtü verilir. Hindu tapınaklarında ayakkabı çıkarılır ve sunaklara dokunulmaz.",
+    "sacredSites": [
+     "Sultan Camii (Kampong Glam)",
+     "Buddha Tooth Relic Tapınağı (Chinatown)",
+     "Sri Mariamman Tapınağı (en eski Hindu tapınağı)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "İngilizce (ortak dil), Malayca (ulusal dil), Mandarin Çincesi ve Tamilce. Günlük konuşmada ‘Singlish’ yaygındır.",
+    "englishProficiency": "Mükemmel; İngilizce eğitim ve iş dilidir.",
+    "phrases": [
+     {
+      "phrase": "Terima kasih",
+      "meaning": "Teşekkürler",
+      "translation": "Teşekkürler",
+      "pronunciation": "teh-REE-mah KAH-see"
+     },
+     {
+      "phrase": "Selamat pagi",
+      "meaning": "Günaydın",
+      "translation": "Günaydın",
+      "pronunciation": "seh-LAH-maht PAH-gee"
+     },
+     {
+      "phrase": "打包 (dǎbāo / ta pau)",
+      "meaning": "Paket yapın (götürmek için)",
+      "translation": "Paket yapın (götürmek için)",
+      "pronunciation": "dah-bow / tah-pow"
+     },
+     {
+      "phrase": "Kopi O",
+      "meaning": "Şekerli sade kahve (sütsüz)",
+      "translation": "Şekerli sade kahve (sütsüz)",
+      "pronunciation": "KOH-pee oh"
+     },
+     {
+      "phrase": "Can lah!",
+      "meaning": "Olur, tabii! (Singlish)",
+      "translation": "Olur, tabii! (Singlish)",
+      "pronunciation": "kan lah"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Orta Çağ’da ‘Temasek’ adıyla bilinen ada, 1819’da Stamford Raffles’ın İngiliz ticaret istasyonu kurmasıyla büyük bir liman oldu. 1942–1945 Japon işgalinden sonra 1963’te Malezya’ya katıldı ve 9 Ağustos 1965’te bağımsız bir cumhuriyet oldu. Kısa sürede dünyanın en büyük liman ve finans merkezlerinden birine dönüştü.",
+    "milestones": [
+     "1819: Stamford Raffles’ın İngiliz ticaret istasyonunu kurması",
+     "1942–1945: Japon işgali",
+     "1965: Bağımsızlık (9 Ağustos)",
+     "2020: Hawker kültürünün UNESCO Somut Olmayan Kültürel Miras listesine girmesi"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Hainan usulü tavuklu pilav (chicken rice)",
+     "Chilli crab (acı soslu yengeç)",
+     "Laksa (hindistancevizi sütlü baharatlı erişte çorbası)"
+    ],
+    "traditionalDrinks": [
+     "Kopi (yerel kahve)",
+     "Teh tarik (köpüklü çekme çay)",
+     "Singapore Sling (Raffles Otel kokteyli)"
+    ],
+    "streetFoodAndDesserts": [
+     "Satay (fıstık soslu şiş)",
+     "Kaya toast (hindistancevizi reçelli tost ve rafadan yumurta)",
+     "Ice kachang ve chendol (rendelenmiş buzlu tatlılar)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Sir Stamford Raffles (modern Singapur’un kurucusu)",
+     "Lee Kuan Yew (ilk başbakan)",
+     "Joseph Schooling (2016 olimpiyat yüzme şampiyonu)"
+    ],
+    "strongSectors": [
+     "Finans ve varlık yönetimi",
+     "Liman, lojistik ve havacılık (Changi)",
+     "Yarı iletken, petrokimya ve biyomedikal"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Kart, temassız ödeme ve QR (PayNow) her yerde yaygındır; bazı hawker tezgâhları yalnızca nakit veya yerel QR kabul eder, biraz SGD bulundurun.",
+    "tippingCulture": "Bahşiş geleneği yoktur. Restoranlarda fiyatların yanındaki ‘++’ işareti %10 servis bedeli ve %9 KDV (GST) ekleneceği anlamına gelir.",
+    "economicPillars": "Finans, ticaret ve liman hizmetleri, ileri imalat (çip, ilaç), turizm ve bölgesel şirket merkezleri."
+   }
+  },
+  "itin": {
+   "routeName": "Singapur’un Dört Yüzü: Marina Bay, Kültür Mahalleleri ve Sentosa",
+   "routeSummary": "Fütüristik Marina Bay’den Çinli, Malay ve Hint mahallelerine, botanik bahçelerine ve Sentosa Adası’na uzanan 4 günlük şehir rotası.",
+   "totalDays": 4,
+   "idealDurationText": "4 gün",
+   "bestSeason": "Şubat – Nisan (görece daha kuru); yıl boyu sıcak (~31 °C) ve nemli, Kasım–Ocak en yağışlı dönem, Haziran–Eylül arası zaman zaman pus görülebilir",
+   "transportMode": "MRT, yürüyüş ve Grab",
+   "paceLevel": "Rahat",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "1. Durak: Marina Bay ve Civic District",
+     "recommendedDuration": "1,5 gün",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "Gardens by the Bay: Supertree Grove, Cloud Forest ve Flower Dome",
+      "Marina Bay Sands SkyPark",
+      "Merlion Parkı",
+      "National Gallery Singapore ve Raffles Oteli"
+     ],
+     "activities": [
+      "Akşam Supertree Grove’da ücretsiz Garden Rhapsody ışık şovunu izleyin.",
+      "Marina Bay’deki Spectra lazer ve su gösterisini izleyin.",
+      "Clarke Quay’de nehir teknesi turu yapın."
+     ],
+     "foodAndDrinks": [
+      "Lau Pa Sat’ta satay (akşam ‘Satay Street’)",
+      "Makansutra Gluttons Bay’de hawker yemekleri",
+      "Raffles Oteli’nde Singapore Sling"
+     ],
+     "criticalTips": [
+      "Cloud Forest ve Flower Dome biletlerini çevrim içi önceden alın; Supertree ışık şovu ücretsizdir.",
+      "MRT’de yemek ve içmek yasaktır (su dahil); ceza verilebilir."
+     ],
+     "mapsQuery": "Gardens by the Bay, Singapore"
+    },
+    {
+     "stopNumber": 2,
+     "name": "2. Durak: Chinatown, Kampong Glam ve Little India",
+     "recommendedDuration": "1,5 gün",
+     "durationBadge": "1,5 Gün",
+     "highlights": [
+      "Buddha Tooth Relic Tapınağı ve Sri Mariamman Tapınağı",
+      "Sultan Camii ve Haji Lane",
+      "Little India’daki Tekka Merkezi ve Sri Veeramakaliamman Tapınağı",
+      "Singapur Botanik Bahçeleri ve Ulusal Orkide Bahçesi"
+     ],
+     "activities": [
+      "Sabah erken Botanik Bahçeleri’nde yürüyüş yapın.",
+      "Kampong Glam’da Arap Sokağı’nın kumaş ve parfüm dükkanlarını gezin.",
+      "Maxwell veya Tekka hawker merkezlerinde öğle yemeği yiyin."
+     ],
+     "foodAndDrinks": [
+      "Maxwell’de Tian Tian Hainan tavuklu pilavı",
+      "Kampong Glam’da murtabak ve roti prata",
+      "Little India’da biryani ve teh tarik"
+     ],
+     "criticalTips": [
+      "Helal tezgâhlar yeşil ‘MUIS Halal’ sertifikası taşır; Kampong Glam ve Geylang Serai’de seçenek boldur.",
+      "Sultan Camii’ni namaz vakitleri dışında ve cuma öğlesi hariç ziyaret edin."
+     ],
+     "mapsQuery": "Sultan Mosque, Kampong Glam, Singapore"
+    },
+    {
+     "stopNumber": 3,
+     "name": "3. Durak: Sentosa Adası ve Jewel Changi",
+     "recommendedDuration": "1 gün",
+     "durationBadge": "1 Gün",
+     "highlights": [
+      "Universal Studios Singapore",
+      "S.E.A. Aquarium",
+      "Siloso ve Palawan plajları",
+      "Jewel Changi’deki HSBC Rain Vortex şelalesi"
+     ],
+     "activities": [
+      "Teleferik veya Sentosa Express ile adaya geçin.",
+      "Palawan Plajı’ndaki asma köprüden Asya kıtasının ‘en güney noktası’ adacığına yürüyün.",
+      "Uçuş öncesi Jewel Changi’deki iç mekân şelalesini görün."
+     ],
+     "foodAndDrinks": [
+      "Chilli crab veya black pepper crab",
+      "Ice kachang"
+     ],
+     "criticalTips": [
+      "Universal Studios ve akvaryum biletlerini çevrim içi almak hem ucuz hem de kuyruksuzdur.",
+      "Chilli crab genellikle kiloyla fiyatlandırılır; sipariş öncesi toplam fiyatı sorun."
+     ],
+     "mapsQuery": "Sentosa Island, Singapore"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Hainan tavuklu pilav",
+     "Chilli crab",
+     "Laksa",
+     "Char kway teow (kızarmış yassı erişte)"
+    ],
+    "drinks": [
+     "Kopi",
+     "Teh tarik",
+     "Sugarcane juice (şeker kamışı suyu)",
+     "Singapore Sling"
+    ],
+    "streetFoods": [
+     "Satay",
+     "Roti prata",
+     "Kaya toast",
+     "Nasi lemak"
+    ],
+    "diningAdvice": "Hawker merkezlerinde iyi bir öğün 4–8 $’dır; restoranlarda ‘++’ ile fiyat ~%20 artar. Helal için ‘MUIS Halal’ logosuna bakın; Çin tezgâhlarının çoğu domuz eti kullanır. Masayı mendil paketiyle ‘chope’ etmeyi ve tepsiyi iade etmeyi unutmayın."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "G tipi (İngiliz) priz adaptörü",
+     "Hafif, nefes alan giysiler ve klimalı mekânlar için ince bir hırka",
+     "Katlanır şemsiye (ani tropik sağanaklar)",
+     "Sivrisinek kovucu (dang humması)"
+    ],
+    "safetyAndEtiquette": [
+     "Sakız satışı yasaktır; ülkeye ticari miktarda sakız sokmayın.",
+     "E-sigara bulundurmak ve kullanmak yasaktır; havalimanında el koyma ve ceza uygulanır.",
+     "Uyuşturucu kaçakçılığına idam dahil en ağır cezalar uygulanır."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "İngiliz tipi üç dikdörtgen pimli (G) prizler; Türkiye’den getirdiğiniz cihazlar için G tipi adaptör şarttır."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Musluk suyu güvenle içilebilir; ‘NEWater’ ve arıtma sistemleri dünya standartlarındadır.",
+    "vaccines": [
+     "Rutin aşılar (tetanos, difteri, kızamık)",
+     "Hepatit A önerilir",
+     "Sarıhumma riski olan bir ülkeden geliyorsanız sarıhumma aşı sertifikası zorunludur"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "995"
+   },
+   "tipping": {
+    "custom": "Bahşiş beklenmez.",
+    "standardPercent": 0,
+    "rule": "optional",
+    "note": "Restoran ve otellerde %10 servis bedeli zaten faturaya eklenir (‘++’); hawker merkezlerinde bahşiş verilmez."
+   },
+   "taxFree": {
+    "vatRefundPercent": "GST %9; iade net ~%6–7",
+    "minSpend": "Aynı mağazada GST dahil en az 100 SGD",
+    "customsNote": "Mağazada eTRS kaydı yaptırın; Changi Havalimanı’ndaki eTRS kiosklarında pasaportla iadeyi onaylayın. Bagaja verilecek ürünler için işlemi check-in’den önce yapın."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.30 - $1.50",
+    "topCarriers": [
+     "Singtel",
+     "StarHub",
+     "M1",
+     "SIMBA"
+    ],
+    "airportSimTrapWarning": "Changi’deki operatör tezgâhları ve 7-Eleven’lardaki turist SIM’leri (100 GB civarı paketler) makul fiyatlıdır; tuzak yoktur ama önceden alınan eSIM de bir o kadar ucuzdur."
+   },
+   "touristScams": [
+    {
+     "title": "Sim Lim Square elektronik tuzağı",
+     "desc": "Bazı dükkanlar düşük fiyatla çeker, ödeme sırasında zorunlu ‘garanti’ veya ek ücretler ekleyip iade etmez.",
+     "tip": "Resmî marka mağazalarından veya büyük zincirlerden alın; fişi imzalamadan toplam tutarı kontrol edin."
+    },
+    {
+     "title": "Sahte keşişler",
+     "desc": "Turuncu cüppeli kişiler muska verip bağış ister; gerçek Budist keşişler sokakta para istemez.",
+     "tip": "Kibarca reddedin; ısrar edilirse polise (999) bildirebilirsiniz."
+    }
+   ]
+  }
+ },
+ "en": {
+  "insights": {
+   "currency": "Singapore Dollar (SGD)",
+   "bestMonths": "February – April (relatively drier); hot (~31 °C) and humid all year, November–January is the wettest period, occasional haze June–September",
+   "safety": {
+    "safetyScore": 85,
+    "crimeRateSummary": "One of the safest city-states in the world; street crime is very rare and walking at night is safe. Rules are very strict: littering, eating or drinking on the MRT, vaping and drugs carry heavy penalties.",
+    "commonScams": [
+     "Some electronics shops at Sim Lim Square pressuring buyers into costly 'warranty packages'",
+     "Fake monks soliciting donations in Orchard and Chinatown",
+     "Fake concert/event tickets and online rental listings"
+    ],
+    "safeTravelTips": [
+     "Do not bring or use e-cigarettes; penalties were toughened from 2025.",
+     "Littering, eating or drinking on the MRT and jaywalking are fined.",
+     "Stay in the shade at midday and drink plenty of water to avoid heat exhaustion."
+    ],
+    "emergencyNumbers": {
+     "police": "999",
+     "ambulance": "995",
+     "general": "999 / 995"
+    },
+    "safetyLevel": "Exceptional Safety",
+    "badgeColor": "bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-900/60"
+   },
+   "internet": {
+    "networkCoverage": "99%+ (5G everywhere, uninterrupted in the MRT)",
+    "costPerGbUsd": "~0.30 - 1.50 $",
+    "esimAvailability": "Excellent",
+    "bestCarriers": [
+     "Singtel",
+     "StarHub",
+     "M1",
+     "SIMBA"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "World-class (clean, punctual, air-conditioned MRT and buses)",
+    "costLevel": "Moderate",
+    "singleTicketUsd": "0.85 - 2 $",
+    "dailyPassUsd": "~13 $ (1-day Singapore Tourist Pass)",
+    "popularRideApps": [
+     "Grab",
+     "Gojek",
+     "TADA",
+     "CDG Zig",
+     "SimplyGo"
+    ],
+    "taxiAdvice": "You can pay directly on the MRT and buses with a contactless Visa/Mastercard (SimplyGo). Taxis are metered and safe; Grab, Gojek and TADA show the fare upfront. Surcharges apply after midnight and at peak hours."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "60 - 90 $",
+    "dailyBudgetMidrangeUsd": "150 - 260 $",
+    "budgetMealUsd": "4 - 8 $ (hawker)",
+    "coffeeUsd": "1.50 - 6 $",
+    "waterBottleUsd": "1 - 2 $",
+    "hostelDormUsd": "25 - 45 $",
+    "hotel3StarUsd": "150 - 260 $",
+    "flightCostIndex": "Moderate-High (direct ~11 h)",
+    "flightTip": "Turkish Airlines and Singapore Airlines fly direct Istanbul–Singapore. Gulf connections are often cheaper; Singapore is a good hub for Bali and Malaysia."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Queuing culture is strong; stand in line and keep left on escalators so others can pass.",
+     "A tissue packet left on a hawker-centre table means the seat is reserved ('chope').",
+     "In Malay and Indian communities use your right hand when passing things and do not touch anyone's head.",
+     "Shoes come off when entering mosques, temples and homes."
+    ],
+    "festivals": [
+     "Chinese New Year (January–February; Chinatown light-up)",
+     "Hari Raya Puasa (Eid al-Fitr; Geylang Serai Ramadan bazaar)",
+     "Deepavali (October–November; Little India festival of lights)"
+    ],
+    "lifestyle": "A multicultural (Chinese, Malay, Indian) society; UNESCO-listed hawker culture, air-conditioned malls, efficiency and respect for rules underpin daily life."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Gardens by the Bay (Supertree Grove & Cloud Forest)",
+     "Marina Bay Sands & Merlion Park",
+     "Chinatown & the Buddha Tooth Relic Temple",
+     "Kampong Glam (Sultan Mosque) & Little India",
+     "Singapore Botanic Gardens (UNESCO)",
+     "Sentosa Island & the Jewel Changi waterfall"
+    ],
+    "bestSeasons": "February – April (relatively drier); hot (~31 °C) and humid all year, November–January is the wettest period, occasional haze June–September",
+    "travelStyleTip": "3–4 days are enough. The MRT reaches everywhere; plan museums and malls for the midday heat and outdoor shows (Supertree light show, Spectra) for the evening."
+   },
+   "religion": {
+    "primaryReligions": "Buddhist ~31%, Christian ~19%, no religion ~20%, Muslim ~15–16%, Taoist ~9%, Hindu ~5%.",
+    "respectNorms": "Cover shoulders and knees at places of worship; robes are provided at the Sultan Mosque. Remove shoes in Hindu temples and do not touch the shrines.",
+    "sacredSites": [
+     "Sultan Mosque (Kampong Glam)",
+     "Buddha Tooth Relic Temple (Chinatown)",
+     "Sri Mariamman Temple (the oldest Hindu temple)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "English (lingua franca), Malay (national language), Mandarin Chinese and Tamil. 'Singlish' is common in everyday speech.",
+    "englishProficiency": "Excellent; English is the language of education and business.",
+    "phrases": [
+     {
+      "phrase": "Terima kasih",
+      "meaning": "Thank you",
+      "translation": "Thank you",
+      "pronunciation": "teh-REE-mah KAH-see"
+     },
+     {
+      "phrase": "Selamat pagi",
+      "meaning": "Good morning",
+      "translation": "Good morning",
+      "pronunciation": "seh-LAH-maht PAH-gee"
+     },
+     {
+      "phrase": "打包 (dǎbāo / ta pau)",
+      "meaning": "Takeaway, please",
+      "translation": "Takeaway, please",
+      "pronunciation": "dah-bow / tah-pow"
+     },
+     {
+      "phrase": "Kopi O",
+      "meaning": "Black coffee with sugar",
+      "translation": "Black coffee with sugar",
+      "pronunciation": "KOH-pee oh"
+     },
+     {
+      "phrase": "Can lah!",
+      "meaning": "Sure, can do! (Singlish)",
+      "translation": "Sure, can do! (Singlish)",
+      "pronunciation": "kan lah"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Known in medieval times as 'Temasek', the island became a major port after Stamford Raffles set up a British trading post in 1819. After Japanese occupation (1942–1945) it joined Malaysia in 1963 and became an independent republic on 9 August 1965. It quickly grew into one of the world's leading ports and financial centres.",
+    "milestones": [
+     "1819: Stamford Raffles founds the British trading post",
+     "1942–1945: Japanese occupation",
+     "1965: Independence (9 August)",
+     "2020: Hawker culture added to UNESCO's Intangible Cultural Heritage list"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Hainanese chicken rice",
+     "Chilli crab",
+     "Laksa (spicy coconut noodle soup)"
+    ],
+    "traditionalDrinks": [
+     "Kopi (local coffee)",
+     "Teh tarik ('pulled' milk tea)",
+     "Singapore Sling (Raffles Hotel cocktail)"
+    ],
+    "streetFoodAndDesserts": [
+     "Satay (skewers with peanut sauce)",
+     "Kaya toast (coconut jam toast with soft-boiled eggs)",
+     "Ice kachang and chendol (shaved-ice desserts)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Sir Stamford Raffles (founder of modern Singapore)",
+     "Lee Kuan Yew (first prime minister)",
+     "Joseph Schooling (2016 Olympic swimming champion)"
+    ],
+    "strongSectors": [
+     "Finance and wealth management",
+     "Port, logistics and aviation (Changi)",
+     "Semiconductors, petrochemicals and biomedical"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Cards, contactless and QR (PayNow) are everywhere; some hawker stalls only take cash or local QR, so carry a little SGD.",
+    "tippingCulture": "Tipping is not customary. In restaurants '++' next to prices means a 10% service charge and 9% GST will be added.",
+    "economicPillars": "Finance, trade and port services, advanced manufacturing (chips, pharmaceuticals), tourism and regional corporate headquarters."
+   }
+  },
+  "itin": {
+   "routeName": "Four Faces of Singapore: Marina Bay, Heritage Districts & Sentosa",
+   "routeSummary": "A 4-day city route from futuristic Marina Bay through the Chinese, Malay and Indian quarters and the Botanic Gardens to Sentosa Island.",
+   "totalDays": 4,
+   "idealDurationText": "4 days",
+   "bestSeason": "February – April (relatively drier); hot (~31 °C) and humid all year, November–January is the wettest period, occasional haze June–September",
+   "transportMode": "MRT, walking and Grab",
+   "paceLevel": "Relaxed",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stop 1: Marina Bay & Civic District",
+     "recommendedDuration": "1.5 days",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "Gardens by the Bay: Supertree Grove, Cloud Forest & Flower Dome",
+      "Marina Bay Sands SkyPark",
+      "Merlion Park",
+      "National Gallery Singapore & Raffles Hotel"
+     ],
+     "activities": [
+      "Watch the free Garden Rhapsody light show at Supertree Grove in the evening.",
+      "See the Spectra laser and water show at Marina Bay.",
+      "Take a river boat ride from Clarke Quay."
+     ],
+     "foodAndDrinks": [
+      "Satay at Lau Pa Sat (evening 'Satay Street')",
+      "Hawker food at Makansutra Gluttons Bay",
+      "A Singapore Sling at the Raffles Hotel"
+     ],
+     "criticalTips": [
+      "Buy Cloud Forest and Flower Dome tickets online in advance; the Supertree light show is free.",
+      "Eating and drinking (even water) is banned on the MRT and can be fined."
+     ],
+     "mapsQuery": "Gardens by the Bay, Singapore"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stop 2: Chinatown, Kampong Glam & Little India",
+     "recommendedDuration": "1.5 days",
+     "durationBadge": "1.5 Days",
+     "highlights": [
+      "Buddha Tooth Relic Temple & Sri Mariamman Temple",
+      "Sultan Mosque & Haji Lane",
+      "Tekka Centre & Sri Veeramakaliamman Temple in Little India",
+      "Singapore Botanic Gardens & National Orchid Garden"
+     ],
+     "activities": [
+      "Take an early-morning walk in the Botanic Gardens.",
+      "Browse the textile and perfume shops of Arab Street in Kampong Glam.",
+      "Have lunch at the Maxwell or Tekka hawker centres."
+     ],
+     "foodAndDrinks": [
+      "Tian Tian Hainanese chicken rice at Maxwell",
+      "Murtabak and roti prata in Kampong Glam",
+      "Biryani and teh tarik in Little India"
+     ],
+     "criticalTips": [
+      "Halal stalls display the green 'MUIS Halal' certificate; there are plenty in Kampong Glam and Geylang Serai.",
+      "Visit the Sultan Mosque outside prayer times and not at Friday midday."
+     ],
+     "mapsQuery": "Sultan Mosque, Kampong Glam, Singapore"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stop 3: Sentosa Island & Jewel Changi",
+     "recommendedDuration": "1 day",
+     "durationBadge": "1 Day",
+     "highlights": [
+      "Universal Studios Singapore",
+      "S.E.A. Aquarium",
+      "Siloso & Palawan beaches",
+      "HSBC Rain Vortex waterfall at Jewel Changi"
+     ],
+     "activities": [
+      "Reach the island by cable car or Sentosa Express.",
+      "Cross the suspension bridge at Palawan Beach to the islet billed as the 'southernmost point of continental Asia'.",
+      "See the indoor waterfall at Jewel Changi before your flight."
+     ],
+     "foodAndDrinks": [
+      "Chilli crab or black pepper crab",
+      "Ice kachang"
+     ],
+     "criticalTips": [
+      "Buying Universal Studios and aquarium tickets online is cheaper and skips queues.",
+      "Chilli crab is usually priced per kilo; ask for the total price before ordering."
+     ],
+     "mapsQuery": "Sentosa Island, Singapore"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Hainanese chicken rice",
+     "Chilli crab",
+     "Laksa",
+     "Char kway teow (fried flat noodles)"
+    ],
+    "drinks": [
+     "Kopi",
+     "Teh tarik",
+     "Sugarcane juice",
+     "Singapore Sling"
+    ],
+    "streetFoods": [
+     "Satay",
+     "Roti prata",
+     "Kaya toast",
+     "Nasi lemak"
+    ],
+    "diningAdvice": "A good hawker-centre meal costs $4–8; in restaurants '++' adds about 20%. For halal look for the 'MUIS Halal' logo; most Chinese stalls use pork. Remember to 'chope' a table with a tissue packet and return your tray."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Type G (UK) plug adapter",
+     "Light breathable clothes plus a thin layer for air-conditioned places",
+     "Folding umbrella (sudden tropical downpours)",
+     "Mosquito repellent (dengue)"
+    ],
+    "safetyAndEtiquette": [
+     "Selling chewing gum is banned; do not bring gum in commercial quantities.",
+     "Possessing and using e-cigarettes is illegal; they are confiscated and fined at the airport.",
+     "Drug trafficking carries the harshest penalties, including death."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "UK-style three rectangular-pin (G) sockets; Turkish devices need a Type G adapter."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Tap water is safe to drink; treatment systems including NEWater meet world standards.",
+    "vaccines": [
+     "Routine vaccinations (tetanus, diphtheria, measles)",
+     "Hepatitis A recommended",
+     "A yellow fever certificate is required if arriving from a yellow-fever-risk country"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "995"
+   },
+   "tipping": {
+    "custom": "Tipping is not expected.",
+    "standardPercent": 0,
+    "rule": "optional",
+    "note": "Restaurants and hotels already add a 10% service charge ('++'); no tipping at hawker centres."
+   },
+   "taxFree": {
+    "vatRefundPercent": "GST 9%; net refund ~6–7%",
+    "minSpend": "At least SGD 100 incl. GST in one store",
+    "customsNote": "Register purchases for eTRS in the store, then confirm the refund with your passport at the eTRS kiosks at Changi Airport. For items going in checked luggage, do it before check-in."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.30 - $1.50",
+    "topCarriers": [
+     "Singtel",
+     "StarHub",
+     "M1",
+     "SIMBA"
+    ],
+    "airportSimTrapWarning": "Operator counters at Changi and tourist SIMs at 7-Eleven (packages of around 100 GB) are reasonably priced; there is no trap, but an eSIM bought in advance is just as cheap."
+   },
+   "touristScams": [
+    {
+     "title": "Sim Lim Square electronics trap",
+     "desc": "Some shops lure you with low prices, then add compulsory 'warranty' or extra fees at payment and refuse refunds.",
+     "tip": "Buy from official brand stores or big chains; check the total before signing the receipt."
+    },
+    {
+     "title": "Fake monks",
+     "desc": "People in orange robes hand out amulets and ask for donations; genuine Buddhist monks do not solicit money in the street.",
+     "tip": "Decline politely; if they insist you can report them to the police (999)."
+    }
+   ]
+  }
+ },
+ "de": {
+  "insights": {
+   "currency": "Singapur-Dollar (SGD)",
+   "bestMonths": "Februar – April (relativ trockener); ganzjährig heiß (~31 °C) und schwül, November–Januar am regenreichsten, Juni–September gelegentlich Dunst",
+   "safety": {
+    "safetyScore": 85,
+    "crimeRateSummary": "Einer der sichersten Stadtstaaten der Welt; Straßenkriminalität ist sehr selten, nachts zu Fuß ist sicher. Die Regeln sind sehr streng: Müll wegwerfen, Essen und Trinken in der MRT, Vapen und Drogen werden hart bestraft.",
+    "commonScams": [
+     "Manche Elektronikläden im Sim Lim Square drängen Käufern teure 'Garantiepakete' auf",
+     "Falsche Mönche sammeln in Orchard und Chinatown Spenden",
+     "Gefälschte Konzert-/Eventtickets und Online-Mietangebote"
+    ],
+    "safeTravelTips": [
+     "Keine E-Zigaretten mitbringen oder benutzen; die Strafen wurden 2025 verschärft.",
+     "Müll, Essen und Trinken in der MRT sowie Überqueren bei Rot werden mit Bußgeld bestraft.",
+     "Mittags im Schatten bleiben und viel trinken, um Hitzeerschöpfung zu vermeiden."
+    ],
+    "emergencyNumbers": {
+     "police": "999",
+     "ambulance": "995",
+     "general": "999 / 995"
+    },
+    "safetyLevel": "Außergewöhnlich sicher",
+    "badgeColor": "bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-900/60"
+   },
+   "internet": {
+    "networkCoverage": "99 %+ (5G überall, auch in der MRT)",
+    "costPerGbUsd": "~0.30 - 1.50 $",
+    "esimAvailability": "Hervorragend",
+    "bestCarriers": [
+     "Singtel",
+     "StarHub",
+     "M1",
+     "SIMBA"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Weltklasse (saubere, pünktliche und klimatisierte MRT und Busse)",
+    "costLevel": "Mittel",
+    "singleTicketUsd": "0.85 - 2 $",
+    "dailyPassUsd": "~13 $ (Singapore Tourist Pass, 1 Tag)",
+    "popularRideApps": [
+     "Grab",
+     "Gojek",
+     "TADA",
+     "CDG Zig",
+     "SimplyGo"
+    ],
+    "taxiAdvice": "In MRT und Bussen kann direkt kontaktlos mit Visa/Mastercard bezahlt werden (SimplyGo). Taxis haben Taxameter und sind sicher; Grab, Gojek und TADA zeigen den Preis vorab. Nach Mitternacht und zu Stoßzeiten gibt es Zuschläge."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "60 - 90 $",
+    "dailyBudgetMidrangeUsd": "150 - 260 $",
+    "budgetMealUsd": "4 - 8 $ (hawker)",
+    "coffeeUsd": "1.50 - 6 $",
+    "waterBottleUsd": "1 - 2 $",
+    "hostelDormUsd": "25 - 45 $",
+    "hotel3StarUsd": "150 - 260 $",
+    "flightCostIndex": "Mittel bis hoch (direkt ca. 11 Std.)",
+    "flightTip": "Turkish Airlines und Singapore Airlines fliegen direkt Istanbul–Singapur. Verbindungen über den Golf sind oft günstiger; Singapur ist ein gutes Drehkreuz für Bali und Malaysia."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Anstehen ist wichtig; auf Rolltreppen links stehen, damit andere vorbeikönnen.",
+     "Ein Taschentuchpäckchen auf dem Tisch im Hawker-Zentrum heißt 'reserviert' ('chope').",
+     "In malaiischen und indischen Gemeinschaften mit der rechten Hand reichen und niemandem an den Kopf fassen.",
+     "In Moscheen, Tempeln und Wohnungen Schuhe ausziehen."
+    ],
+    "festivals": [
+     "Chinesisches Neujahr (Januar–Februar; Beleuchtung in Chinatown)",
+     "Hari Raya Puasa (Fest des Fastenbrechens; Ramadanbasar in Geylang Serai)",
+     "Deepavali (Oktober–November; Lichterfest in Little India)"
+    ],
+    "lifestyle": "Eine multikulturelle (chinesische, malaiische, indische) Gesellschaft; die UNESCO-gelistete Hawker-Kultur, klimatisierte Malls, Effizienz und Regeltreue prägen den Alltag."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Gardens by the Bay (Supertree Grove & Cloud Forest)",
+     "Marina Bay Sands & Merlion Park",
+     "Chinatown & Buddha-Zahn-Tempel",
+     "Kampong Glam (Sultan-Moschee) & Little India",
+     "Botanischer Garten Singapur (UNESCO)",
+     "Insel Sentosa & Wasserfall im Jewel Changi"
+    ],
+    "bestSeasons": "Februar – April (relativ trockener); ganzjährig heiß (~31 °C) und schwül, November–Januar am regenreichsten, Juni–September gelegentlich Dunst",
+    "travelStyleTip": "3–4 Tage reichen. Die MRT fährt überallhin; in der Mittagshitze Museen und Malls, abends Freiluftshows (Supertree-Lichtshow, Spectra) einplanen."
+   },
+   "religion": {
+    "primaryReligions": "Buddhisten ~31 %, Christen ~19 %, konfessionslos ~20 %, Muslime ~15–16 %, Taoisten ~9 %, Hindus ~5 %.",
+    "respectNorms": "In Gotteshäusern Schultern und Knie bedecken; an der Sultan-Moschee werden Überwürfe gestellt. In Hindutempeln Schuhe ausziehen und Schreine nicht berühren.",
+    "sacredSites": [
+     "Sultan-Moschee (Kampong Glam)",
+     "Buddha-Zahn-Tempel (Chinatown)",
+     "Sri-Mariamman-Tempel (ältester Hindutempel)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Englisch (Verkehrssprache), Malaiisch (Nationalsprache), Mandarin und Tamil. Im Alltag ist 'Singlish' verbreitet.",
+    "englishProficiency": "Ausgezeichnet; Englisch ist Bildungs- und Geschäftssprache.",
+    "phrases": [
+     {
+      "phrase": "Terima kasih",
+      "meaning": "Danke",
+      "translation": "Danke",
+      "pronunciation": "teh-REE-mah KAH-see"
+     },
+     {
+      "phrase": "Selamat pagi",
+      "meaning": "Guten Morgen",
+      "translation": "Guten Morgen",
+      "pronunciation": "seh-LAH-maht PAH-gee"
+     },
+     {
+      "phrase": "打包 (dǎbāo / ta pau)",
+      "meaning": "Zum Mitnehmen, bitte",
+      "translation": "Zum Mitnehmen, bitte",
+      "pronunciation": "dah-bow / tah-pow"
+     },
+     {
+      "phrase": "Kopi O",
+      "meaning": "Schwarzer Kaffee mit Zucker",
+      "translation": "Schwarzer Kaffee mit Zucker",
+      "pronunciation": "KOH-pee oh"
+     },
+     {
+      "phrase": "Can lah!",
+      "meaning": "Klar, geht! (Singlish)",
+      "translation": "Klar, geht! (Singlish)",
+      "pronunciation": "kan lah"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Die im Mittelalter 'Temasek' genannte Insel wurde zum großen Hafen, nachdem Stamford Raffles 1819 einen britischen Handelsposten gründete. Nach japanischer Besatzung (1942–1945) trat sie 1963 Malaysia bei und wurde am 9. August 1965 unabhängige Republik. Rasch wurde sie zu einem der führenden Häfen und Finanzzentren der Welt.",
+    "milestones": [
+     "1819: Stamford Raffles gründet den britischen Handelsposten",
+     "1942–1945: Japanische Besatzung",
+     "1965: Unabhängigkeit (9. August)",
+     "2020: Hawker-Kultur wird immaterielles UNESCO-Kulturerbe"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Hainan-Hühnerreis",
+     "Chilli Crab (Krabbe in Chilisoße)",
+     "Laksa (scharfe Kokos-Nudelsuppe)"
+    ],
+    "traditionalDrinks": [
+     "Kopi (lokaler Kaffee)",
+     "Teh tarik ('gezogener' Milchtee)",
+     "Singapore Sling (Cocktail aus dem Raffles Hotel)"
+    ],
+    "streetFoodAndDesserts": [
+     "Satay (Spieße mit Erdnusssoße)",
+     "Kaya-Toast (Toast mit Kokosmarmelade und weichen Eiern)",
+     "Ice Kachang und Chendol (Desserts aus geschabtem Eis)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Sir Stamford Raffles (Gründer des modernen Singapur)",
+     "Lee Kuan Yew (erster Premierminister)",
+     "Joseph Schooling (Olympiasieger im Schwimmen 2016)"
+    ],
+    "strongSectors": [
+     "Finanzen und Vermögensverwaltung",
+     "Hafen, Logistik und Luftfahrt (Changi)",
+     "Halbleiter, Petrochemie und Biomedizin"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Karten, kontaktlos und QR (PayNow) sind allgegenwärtig; manche Hawker-Stände nehmen nur Bargeld oder lokale QR-Zahlung, etwas SGD dabeihaben.",
+    "tippingCulture": "Trinkgeld ist nicht üblich. Im Restaurant bedeutet '++' neben dem Preis, dass 10 % Service und 9 % GST hinzukommen.",
+    "economicPillars": "Finanzen, Handel und Hafendienste, Hightech-Fertigung (Chips, Pharma), Tourismus und regionale Konzernzentralen."
+   }
+  },
+  "itin": {
+   "routeName": "Vier Gesichter Singapurs: Marina Bay, Kulturviertel & Sentosa",
+   "routeSummary": "Eine 4-tägige Stadtroute vom futuristischen Marina Bay durch das chinesische, malaiische und indische Viertel und den Botanischen Garten bis zur Insel Sentosa.",
+   "totalDays": 4,
+   "idealDurationText": "4 Tage",
+   "bestSeason": "Februar – April (relativ trockener); ganzjährig heiß (~31 °C) und schwül, November–Januar am regenreichsten, Juni–September gelegentlich Dunst",
+   "transportMode": "MRT, zu Fuß und Grab",
+   "paceLevel": "Entspannt",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stopp 1: Marina Bay & Civic District",
+     "recommendedDuration": "1,5 Tage",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "Gardens by the Bay: Supertree Grove, Cloud Forest & Flower Dome",
+      "SkyPark des Marina Bay Sands",
+      "Merlion Park",
+      "National Gallery Singapore & Raffles Hotel"
+     ],
+     "activities": [
+      "Abends die kostenlose Lichtshow Garden Rhapsody im Supertree Grove ansehen.",
+      "Die Laser- und Wassershow Spectra in Marina Bay erleben.",
+      "Eine Flussbootfahrt ab Clarke Quay machen."
+     ],
+     "foodAndDrinks": [
+      "Satay im Lau Pa Sat (abends 'Satay Street')",
+      "Hawker-Essen in der Makansutra Gluttons Bay",
+      "Ein Singapore Sling im Raffles Hotel"
+     ],
+     "criticalTips": [
+      "Tickets für Cloud Forest und Flower Dome vorab online kaufen; die Supertree-Lichtshow ist kostenlos.",
+      "Essen und Trinken (auch Wasser) ist in der MRT verboten und wird bestraft."
+     ],
+     "mapsQuery": "Gardens by the Bay, Singapore"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stopp 2: Chinatown, Kampong Glam & Little India",
+     "recommendedDuration": "1,5 Tage",
+     "durationBadge": "1,5 Tage",
+     "highlights": [
+      "Buddha-Zahn-Tempel & Sri-Mariamman-Tempel",
+      "Sultan-Moschee & Haji Lane",
+      "Tekka Centre & Sri-Veeramakaliamman-Tempel in Little India",
+      "Botanischer Garten & Nationaler Orchideengarten"
+     ],
+     "activities": [
+      "Früh morgens im Botanischen Garten spazieren.",
+      "In Kampong Glam die Stoff- und Parfümläden der Arab Street erkunden.",
+      "Im Hawker-Zentrum Maxwell oder Tekka zu Mittag essen."
+     ],
+     "foodAndDrinks": [
+      "Hainan-Hühnerreis von Tian Tian im Maxwell",
+      "Murtabak und Roti Prata in Kampong Glam",
+      "Biryani und Teh Tarik in Little India"
+     ],
+     "criticalTips": [
+      "Halal-Stände tragen das grüne 'MUIS Halal'-Zertifikat; in Kampong Glam und Geylang Serai gibt es viele.",
+      "Die Sultan-Moschee außerhalb der Gebetszeiten und nicht am Freitagmittag besuchen."
+     ],
+     "mapsQuery": "Sultan Mosque, Kampong Glam, Singapore"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stopp 3: Insel Sentosa & Jewel Changi",
+     "recommendedDuration": "1 Tag",
+     "durationBadge": "1 Tag",
+     "highlights": [
+      "Universal Studios Singapore",
+      "S.E.A. Aquarium",
+      "Strände Siloso & Palawan",
+      "Wasserfall HSBC Rain Vortex im Jewel Changi"
+     ],
+     "activities": [
+      "Mit der Seilbahn oder dem Sentosa Express auf die Insel fahren.",
+      "Über die Hängebrücke am Palawan Beach zur Insel gehen, die als 'südlichster Punkt des asiatischen Festlands' gilt.",
+      "Vor dem Abflug den Indoor-Wasserfall im Jewel Changi ansehen."
+     ],
+     "foodAndDrinks": [
+      "Chilli Crab oder Black Pepper Crab",
+      "Ice Kachang"
+     ],
+     "criticalTips": [
+      "Tickets für Universal Studios und Aquarium online sind günstiger und ohne Warteschlange.",
+      "Chilli Crab wird meist pro Kilo berechnet; vor der Bestellung nach dem Gesamtpreis fragen."
+     ],
+     "mapsQuery": "Sentosa Island, Singapore"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Hainan-Hühnerreis",
+     "Chilli Crab",
+     "Laksa",
+     "Char Kway Teow (gebratene Bandnudeln)"
+    ],
+    "drinks": [
+     "Kopi",
+     "Teh tarik",
+     "Zuckerrohrsaft",
+     "Singapore Sling"
+    ],
+    "streetFoods": [
+     "Satay",
+     "Roti Prata",
+     "Kaya-Toast",
+     "Nasi Lemak"
+    ],
+    "diningAdvice": "Ein gutes Essen im Hawker-Zentrum kostet 4–8 $; im Restaurant kommen mit '++' etwa 20 % dazu. Für halal auf das 'MUIS Halal'-Logo achten; die meisten chinesischen Stände verwenden Schweinefleisch. Tisch mit Taschentüchern 'chopen' und Tablett zurückbringen."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adapter für Typ G (britisch)",
+     "Leichte, atmungsaktive Kleidung und eine dünne Schicht für klimatisierte Räume",
+     "Taschenschirm (plötzliche Tropengüsse)",
+     "Mückenschutz (Dengue)"
+    ],
+    "safetyAndEtiquette": [
+     "Kaugummiverkauf ist verboten; keine größeren Mengen einführen.",
+     "Besitz und Gebrauch von E-Zigaretten ist verboten; am Flughafen drohen Beschlagnahme und Strafe.",
+     "Auf Drogenhandel stehen härteste Strafen bis hin zur Todesstrafe."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Britische Steckdosen mit drei rechteckigen Stiften (Typ G); türkische Geräte brauchen einen Typ-G-Adapter."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Leitungswasser ist sicher trinkbar; die Aufbereitung (inkl. NEWater) entspricht Weltstandard.",
+    "vaccines": [
+     "Standardimpfungen (Tetanus, Diphtherie, Masern)",
+     "Hepatitis A empfohlen",
+     "Gelbfieber-Impfnachweis Pflicht bei Einreise aus einem Gelbfieber-Risikoland"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "995"
+   },
+   "tipping": {
+    "custom": "Trinkgeld wird nicht erwartet.",
+    "standardPercent": 0,
+    "rule": "optional",
+    "note": "Restaurants und Hotels schlagen bereits 10 % Service auf ('++'); in Hawker-Zentren kein Trinkgeld."
+   },
+   "taxFree": {
+    "vatRefundPercent": "GST 9 %; Nettoerstattung ~6–7 %",
+    "minSpend": "Mindestens 100 SGD inkl. GST in einem Geschäft",
+    "customsNote": "Einkäufe im Geschäft für eTRS registrieren und die Erstattung mit dem Pass an den eTRS-Kiosken am Flughafen Changi bestätigen. Für Ware im Aufgabegepäck vor dem Check-in erledigen."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.30 - $1.50",
+    "topCarriers": [
+     "Singtel",
+     "StarHub",
+     "M1",
+     "SIMBA"
+    ],
+    "airportSimTrapWarning": "Betreiberschalter in Changi und Touristen-SIMs bei 7-Eleven (Pakete um 100 GB) sind fair bepreist; keine Falle, eine vorab gekaufte eSIM ist aber ebenso günstig."
+   },
+   "touristScams": [
+    {
+     "title": "Elektronikfalle im Sim Lim Square",
+     "desc": "Manche Läden locken mit Tiefpreisen und schlagen beim Bezahlen Pflicht-'Garantie' oder Gebühren auf, ohne zu erstatten.",
+     "tip": "In offiziellen Markenstores oder großen Ketten kaufen; vor der Unterschrift den Gesamtbetrag prüfen."
+    },
+    {
+     "title": "Falsche Mönche",
+     "desc": "Menschen in orangefarbenen Roben verteilen Amulette und bitten um Spenden; echte buddhistische Mönche betteln nicht auf der Straße.",
+     "tip": "Höflich ablehnen; bei Aufdringlichkeit Polizei (999) informieren."
+    }
+   ]
+  }
+ },
+ "es": {
+  "insights": {
+   "currency": "Dólar de Singapur (SGD)",
+   "bestMonths": "Febrero – abril (relativamente más seco); calor (~31 °C) y humedad todo el año, noviembre–enero es lo más lluvioso y de junio a septiembre puede haber calima",
+   "safety": {
+    "safetyScore": 85,
+    "crimeRateSummary": "Una de las ciudades-Estado más seguras del mundo; la delincuencia callejera es rarísima y caminar de noche es seguro. Las normas son muy estrictas: tirar basura, comer o beber en el MRT, vapear y las drogas se castigan duramente.",
+    "commonScams": [
+     "Algunas tiendas de electrónica de Sim Lim Square presionan para vender caros 'paquetes de garantía'",
+     "Falsos monjes pidiendo donativos en Orchard y Chinatown",
+     "Entradas falsas para conciertos y eventos y anuncios de alquiler online"
+    ],
+    "safeTravelTips": [
+     "No traigas ni uses cigarrillos electrónicos; las sanciones se endurecieron en 2025.",
+     "Tirar basura, comer o beber en el MRT y cruzar indebidamente se multan.",
+     "Quédate a la sombra al mediodía y bebe mucha agua para evitar el agotamiento por calor."
+    ],
+    "emergencyNumbers": {
+     "police": "999",
+     "ambulance": "995",
+     "general": "999 / 995"
+    },
+    "safetyLevel": "Excepcionalmente Seguro",
+    "badgeColor": "bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-900/60"
+   },
+   "internet": {
+    "networkCoverage": "99 %+ (5G en todas partes, también en el MRT)",
+    "costPerGbUsd": "~0.30 - 1.50 $",
+    "esimAvailability": "Excelente",
+    "bestCarriers": [
+     "Singtel",
+     "StarHub",
+     "M1",
+     "SIMBA"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "De primer nivel (MRT y autobuses limpios, puntuales y climatizados)",
+    "costLevel": "Moderado",
+    "singleTicketUsd": "0.85 - 2 $",
+    "dailyPassUsd": "~13 $ (Singapore Tourist Pass de 1 día)",
+    "popularRideApps": [
+     "Grab",
+     "Gojek",
+     "TADA",
+     "CDG Zig",
+     "SimplyGo"
+    ],
+    "taxiAdvice": "En el MRT y los autobuses puedes pagar directamente con Visa/Mastercard sin contacto (SimplyGo). Los taxis tienen taxímetro y son seguros; Grab, Gojek y TADA muestran la tarifa antes. Hay recargos tras la medianoche y en horas punta."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "60 - 90 $",
+    "dailyBudgetMidrangeUsd": "150 - 260 $",
+    "budgetMealUsd": "4 - 8 $ (hawker)",
+    "coffeeUsd": "1.50 - 6 $",
+    "waterBottleUsd": "1 - 2 $",
+    "hostelDormUsd": "25 - 45 $",
+    "hotel3StarUsd": "150 - 260 $",
+    "flightCostIndex": "Moderado-alto (directo ~11 h)",
+    "flightTip": "Turkish Airlines y Singapore Airlines vuelan directo Estambul–Singapur. Las conexiones por el Golfo suelen ser más baratas; Singapur es un buen hub hacia Bali y Malasia."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "La cultura de la cola es fuerte; en las escaleras mecánicas quédate a la izquierda para dejar pasar.",
+     "Un paquete de pañuelos en una mesa de un hawker centre significa que está reservada ('chope').",
+     "En comunidades malayas e indias usa la mano derecha para dar cosas y no toques la cabeza de nadie.",
+     "Al entrar en mezquitas, templos y casas se quitan los zapatos."
+    ],
+    "festivals": [
+     "Año Nuevo chino (enero–febrero; iluminación de Chinatown)",
+     "Hari Raya Puasa (fin del Ramadán; bazar de Geylang Serai)",
+     "Deepavali (octubre–noviembre; festival de las luces en Little India)"
+    ],
+    "lifestyle": "Una sociedad multicultural (china, malaya, india); la cultura hawker reconocida por la UNESCO, los centros comerciales climatizados, la eficiencia y el respeto a las normas marcan el día a día."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Gardens by the Bay (Supertree Grove y Cloud Forest)",
+     "Marina Bay Sands y Merlion Park",
+     "Chinatown y el templo de la Reliquia del Diente de Buda",
+     "Kampong Glam (mezquita del Sultán) y Little India",
+     "Jardín Botánico de Singapur (UNESCO)",
+     "Isla de Sentosa y la cascada de Jewel Changi"
+    ],
+    "bestSeasons": "Febrero – abril (relativamente más seco); calor (~31 °C) y humedad todo el año, noviembre–enero es lo más lluvioso y de junio a septiembre puede haber calima",
+    "travelStyleTip": "Bastan 3–4 días. El MRT llega a todas partes; reserva museos y centros comerciales para el calor del mediodía y los espectáculos al aire libre (Supertree, Spectra) para la noche."
+   },
+   "religion": {
+    "primaryReligions": "Budistas ~31 %, cristianos ~19 %, sin religión ~20 %, musulmanes ~15–16 %, taoístas ~9 %, hindúes ~5 %.",
+    "respectNorms": "Cubre hombros y rodillas en lugares de culto; en la mezquita del Sultán prestan túnicas. En los templos hindúes quítate los zapatos y no toques los altares.",
+    "sacredSites": [
+     "Mezquita del Sultán (Kampong Glam)",
+     "Templo de la Reliquia del Diente de Buda (Chinatown)",
+     "Templo Sri Mariamman (el templo hindú más antiguo)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Inglés (lengua franca), malayo (lengua nacional), chino mandarín y tamil. En la calle es habitual el 'singlish'.",
+    "englishProficiency": "Excelente; el inglés es la lengua de la educación y los negocios.",
+    "phrases": [
+     {
+      "phrase": "Terima kasih",
+      "meaning": "Gracias",
+      "translation": "Gracias",
+      "pronunciation": "teh-REE-mah KAH-see"
+     },
+     {
+      "phrase": "Selamat pagi",
+      "meaning": "Buenos días",
+      "translation": "Buenos días",
+      "pronunciation": "seh-LAH-maht PAH-gee"
+     },
+     {
+      "phrase": "打包 (dǎbāo / ta pau)",
+      "meaning": "Para llevar, por favor",
+      "translation": "Para llevar, por favor",
+      "pronunciation": "dah-bow / tah-pow"
+     },
+     {
+      "phrase": "Kopi O",
+      "meaning": "Café solo con azúcar",
+      "translation": "Café solo con azúcar",
+      "pronunciation": "KOH-pee oh"
+     },
+     {
+      "phrase": "Can lah!",
+      "meaning": "¡Claro, se puede! (singlish)",
+      "translation": "¡Claro, se puede! (singlish)",
+      "pronunciation": "kan lah"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Conocida en la Edad Media como 'Temasek', la isla se convirtió en un gran puerto tras el puesto comercial británico fundado por Stamford Raffles en 1819. Tras la ocupación japonesa (1942–1945) se unió a Malasia en 1963 y el 9 de agosto de 1965 fue república independiente. Pronto se convirtió en uno de los grandes puertos y centros financieros del mundo.",
+    "milestones": [
+     "1819: Stamford Raffles funda el puesto comercial británico",
+     "1942–1945: ocupación japonesa",
+     "1965: independencia (9 de agosto)",
+     "2020: la cultura hawker entra en el Patrimonio Inmaterial de la UNESCO"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Arroz con pollo hainanés",
+     "Chilli crab (cangrejo al chile)",
+     "Laksa (sopa picante de fideos con coco)"
+    ],
+    "traditionalDrinks": [
+     "Kopi (café local)",
+     "Teh tarik (té con leche 'estirado')",
+     "Singapore Sling (cóctel del Hotel Raffles)"
+    ],
+    "streetFoodAndDesserts": [
+     "Satay (brochetas con salsa de cacahuete)",
+     "Kaya toast (tostada con mermelada de coco y huevos pasados por agua)",
+     "Ice kachang y chendol (postres de hielo raspado)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Sir Stamford Raffles (fundador de la Singapur moderna)",
+     "Lee Kuan Yew (primer primer ministro)",
+     "Joseph Schooling (campeón olímpico de natación 2016)"
+    ],
+    "strongSectors": [
+     "Finanzas y gestión patrimonial",
+     "Puerto, logística y aviación (Changi)",
+     "Semiconductores, petroquímica y biomedicina"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Tarjetas, pago sin contacto y QR (PayNow) están por todas partes; algunos puestos hawker solo aceptan efectivo o QR local, lleva algo de SGD.",
+    "tippingCulture": "La propina no es costumbre. En los restaurantes, '++' junto al precio indica que se añaden un 10 % de servicio y un 9 % de GST.",
+    "economicPillars": "Finanzas, comercio y servicios portuarios, manufactura avanzada (chips, farmacia), turismo y sedes regionales de empresas."
+   }
+  },
+  "itin": {
+   "routeName": "Las cuatro caras de Singapur: Marina Bay, barrios históricos y Sentosa",
+   "routeSummary": "Una ruta urbana de 4 días desde la futurista Marina Bay por los barrios chino, malayo e indio y el Jardín Botánico hasta la isla de Sentosa.",
+   "totalDays": 4,
+   "idealDurationText": "4 días",
+   "bestSeason": "Febrero – abril (relativamente más seco); calor (~31 °C) y humedad todo el año, noviembre–enero es lo más lluvioso y de junio a septiembre puede haber calima",
+   "transportMode": "MRT, a pie y Grab",
+   "paceLevel": "Tranquilo",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Marina Bay y Civic District",
+     "recommendedDuration": "1,5 días",
+     "durationBadge": "2 Días",
+     "highlights": [
+      "Gardens by the Bay: Supertree Grove, Cloud Forest y Flower Dome",
+      "SkyPark de Marina Bay Sands",
+      "Merlion Park",
+      "National Gallery Singapore y Hotel Raffles"
+     ],
+     "activities": [
+      "Mira al anochecer el espectáculo gratuito Garden Rhapsody en Supertree Grove.",
+      "Contempla el espectáculo de láser y agua Spectra en Marina Bay.",
+      "Da un paseo en barco por el río desde Clarke Quay."
+     ],
+     "foodAndDrinks": [
+      "Satay en Lau Pa Sat ('Satay Street' por la noche)",
+      "Comida hawker en Makansutra Gluttons Bay",
+      "Un Singapore Sling en el Hotel Raffles"
+     ],
+     "criticalTips": [
+      "Compra antes por internet las entradas a Cloud Forest y Flower Dome; el espectáculo de los Supertree es gratis.",
+      "En el MRT está prohibido comer y beber (incluso agua) y se multa."
+     ],
+     "mapsQuery": "Gardens by the Bay, Singapore"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Chinatown, Kampong Glam y Little India",
+     "recommendedDuration": "1,5 días",
+     "durationBadge": "1,5 Días",
+     "highlights": [
+      "Templo de la Reliquia del Diente de Buda y templo Sri Mariamman",
+      "Mezquita del Sultán y Haji Lane",
+      "Tekka Centre y templo Sri Veeramakaliamman en Little India",
+      "Jardín Botánico y Jardín Nacional de Orquídeas"
+     ],
+     "activities": [
+      "Pasea temprano por el Jardín Botánico.",
+      "Recorre las tiendas de telas y perfumes de Arab Street en Kampong Glam.",
+      "Almuerza en los hawker centres de Maxwell o Tekka."
+     ],
+     "foodAndDrinks": [
+      "Arroz con pollo hainanés de Tian Tian en Maxwell",
+      "Murtabak y roti prata en Kampong Glam",
+      "Biryani y teh tarik en Little India"
+     ],
+     "criticalTips": [
+      "Los puestos halal muestran el certificado verde 'MUIS Halal'; abundan en Kampong Glam y Geylang Serai.",
+      "Visita la mezquita del Sultán fuera de las horas de oración y no el viernes a mediodía."
+     ],
+     "mapsQuery": "Sultan Mosque, Kampong Glam, Singapore"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Isla de Sentosa y Jewel Changi",
+     "recommendedDuration": "1 día",
+     "durationBadge": "1 Día",
+     "highlights": [
+      "Universal Studios Singapore",
+      "S.E.A. Aquarium",
+      "Playas de Siloso y Palawan",
+      "Cascada HSBC Rain Vortex en Jewel Changi"
+     ],
+     "activities": [
+      "Llega a la isla en teleférico o en el Sentosa Express.",
+      "Cruza el puente colgante de Palawan Beach hasta el islote presentado como el 'punto más meridional de Asia continental'.",
+      "Antes del vuelo, admira la cascada interior de Jewel Changi."
+     ],
+     "foodAndDrinks": [
+      "Chilli crab o cangrejo a la pimienta negra",
+      "Ice kachang"
+     ],
+     "criticalTips": [
+      "Comprar online las entradas de Universal Studios y el acuario es más barato y evita colas.",
+      "El chilli crab suele cobrarse por kilo; pregunta el precio total antes de pedir."
+     ],
+     "mapsQuery": "Sentosa Island, Singapore"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Arroz con pollo hainanés",
+     "Chilli crab",
+     "Laksa",
+     "Char kway teow (fideos planos salteados)"
+    ],
+    "drinks": [
+     "Kopi",
+     "Teh tarik",
+     "Zumo de caña de azúcar",
+     "Singapore Sling"
+    ],
+    "streetFoods": [
+     "Satay",
+     "Roti prata",
+     "Kaya toast",
+     "Nasi lemak"
+    ],
+    "diningAdvice": "Una buena comida en un hawker centre cuesta 4–8 $; en restaurantes el '++' suma ~20 %. Para comer halal busca el logo 'MUIS Halal'; la mayoría de puestos chinos usa cerdo. Recuerda 'chopear' la mesa con pañuelos y devolver la bandeja."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptador tipo G (británico)",
+     "Ropa ligera y transpirable y una capa fina para el aire acondicionado",
+     "Paraguas plegable (chaparrones tropicales repentinos)",
+     "Repelente de mosquitos (dengue)"
+    ],
+    "safetyAndEtiquette": [
+     "Está prohibido vender chicle; no lo introduzcas en cantidades comerciales.",
+     "Poseer y usar cigarrillos electrónicos es ilegal; en el aeropuerto se confiscan y se multa.",
+     "El narcotráfico conlleva las penas más duras, incluida la de muerte."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Enchufes de tipo británico con tres clavijas rectangulares (G); los aparatos turcos necesitan adaptador tipo G."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "El agua del grifo es potable; los sistemas de tratamiento, incluido NEWater, son de nivel mundial.",
+    "vaccines": [
+     "Vacunas rutinarias (tétanos, difteria, sarampión)",
+     "Se recomienda hepatitis A",
+     "Certificado de fiebre amarilla obligatorio si llegas de un país de riesgo"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "995"
+   },
+   "tipping": {
+    "custom": "No se espera propina.",
+    "standardPercent": 0,
+    "rule": "optional",
+    "note": "Restaurantes y hoteles ya añaden un 10 % de servicio ('++'); en los hawker centres no se deja propina."
+   },
+   "taxFree": {
+    "vatRefundPercent": "GST 9 %; devolución neta ~6–7 %",
+    "minSpend": "Mínimo 100 SGD con GST en una tienda",
+    "customsNote": "Registra la compra en eTRS en la tienda y confirma la devolución con el pasaporte en los quioscos eTRS del aeropuerto de Changi. Si los artículos van facturados, hazlo antes de facturar."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.30 - $1.50",
+    "topCarriers": [
+     "Singtel",
+     "StarHub",
+     "M1",
+     "SIMBA"
+    ],
+    "airportSimTrapWarning": "Los mostradores de operadoras en Changi y las SIM turísticas de 7-Eleven (paquetes de unos 100 GB) tienen precios razonables; no hay trampa, pero una eSIM comprada antes es igual de barata."
+   },
+   "touristScams": [
+    {
+     "title": "Trampa de electrónica en Sim Lim Square",
+     "desc": "Algunas tiendas atraen con precios bajos y al pagar añaden una 'garantía' obligatoria o cargos extra sin devolución.",
+     "tip": "Compra en tiendas oficiales o grandes cadenas; revisa el total antes de firmar el tique."
+    },
+    {
+     "title": "Falsos monjes",
+     "desc": "Personas con túnica naranja reparten amuletos y piden donativos; los monjes budistas auténticos no piden dinero en la calle.",
+     "tip": "Rechaza con educación; si insisten, puedes avisar a la policía (999)."
+    }
+   ]
+  }
+ },
+ "ru": {
+  "insights": {
+   "currency": "Сингапурский доллар (SGD)",
+   "bestMonths": "Февраль – апрель (относительно суше); круглый год жарко (~31 °C) и влажно, ноябрь–январь — самый дождливый период, в июне–сентябре бывает дымка",
+   "safety": {
+    "safetyScore": 85,
+    "crimeRateSummary": "Один из самых безопасных городов-государств мира: уличная преступность крайне редка, гулять ночью безопасно. Правила очень строгие: за мусор, еду и напитки в метро, вейпы и наркотики — суровые наказания.",
+    "commonScams": [
+     "Некоторые магазины электроники в Sim Lim Square навязывают дорогие «пакеты гарантии»",
+     "Фальшивые монахи собирают пожертвования на Орчард и в Чайна-тауне",
+     "Поддельные билеты на концерты и мероприятия, фиктивные объявления об аренде"
+    ],
+    "safeTravelTips": [
+     "Не ввозите и не используйте электронные сигареты — с 2025 года наказания ужесточены.",
+     "За мусор, еду и напитки в метро и переход в неположенном месте штрафуют.",
+     "В полдень держитесь тени и пейте много воды, чтобы избежать теплового истощения."
+    ],
+    "emergencyNumbers": {
+     "police": "999",
+     "ambulance": "995",
+     "general": "999 / 995"
+    },
+    "safetyLevel": "Исключительно Безопасно",
+    "badgeColor": "bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-900/60"
+   },
+   "internet": {
+    "networkCoverage": "99%+ (5G повсюду, без перебоев в метро)",
+    "costPerGbUsd": "~0.30 - 1.50 $",
+    "esimAvailability": "Отлично",
+    "bestCarriers": [
+     "Singtel",
+     "StarHub",
+     "M1",
+     "SIMBA"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Мирового уровня (чистое, пунктуальное метро MRT и автобусы с кондиционерами)",
+    "costLevel": "Средний",
+    "singleTicketUsd": "0.85 - 2 $",
+    "dailyPassUsd": "~13 $ (Singapore Tourist Pass на 1 день)",
+    "popularRideApps": [
+     "Grab",
+     "Gojek",
+     "TADA",
+     "CDG Zig",
+     "SimplyGo"
+    ],
+    "taxiAdvice": "В метро и автобусах можно платить напрямую бесконтактной Visa/Mastercard (SimplyGo). Такси со счётчиком и безопасны; в Grab, Gojek и TADA цена видна заранее. После полуночи и в часы пик действуют надбавки."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "60 - 90 $",
+    "dailyBudgetMidrangeUsd": "150 - 260 $",
+    "budgetMealUsd": "4 - 8 $ (hawker)",
+    "coffeeUsd": "1.50 - 6 $",
+    "waterBottleUsd": "1 - 2 $",
+    "hostelDormUsd": "25 - 45 $",
+    "hotel3StarUsd": "150 - 260 $",
+    "flightCostIndex": "Средний-высокий (прямой ~11 ч)",
+    "flightTip": "Turkish Airlines и Singapore Airlines летают напрямую Стамбул–Сингапур. Через Персидский залив часто дешевле; Сингапур — удобный хаб для поездок на Бали и в Малайзию."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Культура очередей сильна; на эскалаторе стойте слева, чтобы другие могли пройти.",
+     "Пачка салфеток на столике в фудкорте означает «занято» («чоуп»).",
+     "В малайской и индийской среде передавайте вещи правой рукой и не касайтесь чужой головы.",
+     "В мечетях, храмах и домах снимают обувь."
+    ],
+    "festivals": [
+     "Китайский Новый год (январь–февраль; иллюминация Чайна-тауна)",
+     "Хари Рая Пуаса (Ураза-байрам; рамаданский базар в Гейланг-Серай)",
+     "Дипавали (октябрь–ноябрь; праздник огней в Литл-Индии)"
+    ],
+    "lifestyle": "Многокультурное общество (китайцы, малайцы, индийцы); культура фудкортов-хокеров из списка ЮНЕСКО, кондиционированные торговые центры, эффективность и уважение к правилам."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Gardens by the Bay (роща супердеревьев и Cloud Forest)",
+     "Marina Bay Sands и парк Мерлайон",
+     "Чайна-таун и храм Зуба Будды",
+     "Кампонг-Гелам (мечеть Султана) и Литл-Индия",
+     "Ботанический сад Сингапура (ЮНЕСКО)",
+     "Остров Сентоза и водопад Jewel Changi"
+    ],
+    "bestSeasons": "Февраль – апрель (относительно суше); круглый год жарко (~31 °C) и влажно, ноябрь–январь — самый дождливый период, в июне–сентябре бывает дымка",
+    "travelStyleTip": "Хватит 3–4 дней. Метро доходит всюду; в полуденную жару — музеи и торговые центры, вечером — шоу под открытым небом (световое шоу Supertree, Spectra)."
+   },
+   "religion": {
+    "primaryReligions": "Буддисты ~31%, христиане ~19%, неверующие ~20%, мусульмане ~15–16%, даосы ~9%, индуисты ~5%.",
+    "respectNorms": "В местах поклонения закрывайте плечи и колени; в мечети Султана выдают накидки. В индуистских храмах снимайте обувь и не трогайте алтари.",
+    "sacredSites": [
+     "Мечеть Султана (Кампонг-Гелам)",
+     "Храм Зуба Будды (Чайна-таун)",
+     "Храм Шри Мариамман (старейший индуистский храм)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Английский (общий язык), малайский (национальный), китайский (путунхуа) и тамильский. В быту распространён «синглиш».",
+    "englishProficiency": "Отличный; английский — язык образования и бизнеса.",
+    "phrases": [
+     {
+      "phrase": "Terima kasih",
+      "meaning": "Спасибо",
+      "translation": "Спасибо",
+      "pronunciation": "teh-REE-mah KAH-see"
+     },
+     {
+      "phrase": "Selamat pagi",
+      "meaning": "Доброе утро",
+      "translation": "Доброе утро",
+      "pronunciation": "seh-LAH-maht PAH-gee"
+     },
+     {
+      "phrase": "打包 (dǎbāo / ta pau)",
+      "meaning": "С собой, пожалуйста",
+      "translation": "С собой, пожалуйста",
+      "pronunciation": "dah-bow / tah-pow"
+     },
+     {
+      "phrase": "Kopi O",
+      "meaning": "Чёрный кофе с сахаром",
+      "translation": "Чёрный кофе с сахаром",
+      "pronunciation": "KOH-pee oh"
+     },
+     {
+      "phrase": "Can lah!",
+      "meaning": "Конечно, можно! (синглиш)",
+      "translation": "Конечно, можно! (синглиш)",
+      "pronunciation": "kan lah"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Остров, известный в Средние века как Тумасик (Темасек), стал крупным портом после основания Стэмфордом Раффлзом британской фактории в 1819 году. После японской оккупации (1942–1945) в 1963 году вошёл в Малайзию, а 9 августа 1965 года стал независимой республикой. Вскоре превратился в один из ведущих портов и финансовых центров мира.",
+    "milestones": [
+     "1819: Стэмфорд Раффлз основывает британскую факторию",
+     "1942–1945: японская оккупация",
+     "1965: независимость (9 августа)",
+     "2020: культура хокеров внесена в список нематериального наследия ЮНЕСКО"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Курица с рисом по-хайнаньски",
+     "Краб в соусе чили",
+     "Лакса (острый суп с лапшой на кокосовом молоке)"
+    ],
+    "traditionalDrinks": [
+     "Копи (местный кофе)",
+     "Тех тарик («тянутый» чай с молоком)",
+     "Сингапурский слинг (коктейль отеля Raffles)"
+    ],
+    "streetFoodAndDesserts": [
+     "Сатай (шашлычки с арахисовым соусом)",
+     "Кая-тост (тост с кокосовым джемом и яйцами всмятку)",
+     "Айс качанг и чендол (десерты из колотого льда)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Сэр Стэмфорд Раффлз (основатель современного Сингапура)",
+     "Ли Куан Ю (первый премьер-министр)",
+     "Джозеф Скулинг (олимпийский чемпион по плаванию 2016)"
+    ],
+    "strongSectors": [
+     "Финансы и управление капиталом",
+     "Порт, логистика и авиация (Чанги)",
+     "Полупроводники, нефтехимия и биомедицина"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Карты, бесконтактная оплата и QR (PayNow) повсюду; некоторые лотки в фудкортах принимают только наличные или местный QR — держите немного SGD.",
+    "tippingCulture": "Чаевые не приняты. В ресторанах «++» рядом с ценой означает, что добавят 10% за обслуживание и 9% GST.",
+    "economicPillars": "Финансы, торговля и портовые услуги, высокотехнологичное производство (чипы, фармацевтика), туризм и региональные штаб-квартиры компаний."
+   }
+  },
+  "itin": {
+   "routeName": "Четыре лица Сингапура: Марина-Бэй, исторические кварталы и Сентоза",
+   "routeSummary": "4-дневный маршрут по городу: футуристичная Марина-Бэй, китайский, малайский и индийский кварталы, Ботанический сад и остров Сентоза.",
+   "totalDays": 4,
+   "idealDurationText": "4 дня",
+   "bestSeason": "Февраль – апрель (относительно суше); круглый год жарко (~31 °C) и влажно, ноябрь–январь — самый дождливый период, в июне–сентябре бывает дымка",
+   "transportMode": "Метро MRT, пешком и Grab",
+   "paceLevel": "Спокойный",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Остановка 1: Марина-Бэй и Гражданский квартал",
+     "recommendedDuration": "1,5 дня",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Gardens by the Bay: роща супердеревьев, Cloud Forest и Flower Dome",
+      "SkyPark отеля Marina Bay Sands",
+      "Парк Мерлайон",
+      "Национальная галерея Сингапура и отель Raffles"
+     ],
+     "activities": [
+      "Вечером посмотрите бесплатное световое шоу Garden Rhapsody в роще супердеревьев.",
+      "Посмотрите лазерно-водное шоу Spectra в Марина-Бэй.",
+      "Прокатитесь на речном катере от Кларк-Ки."
+     ],
+     "foodAndDrinks": [
+      "Сатай в Лау-Па-Сат (вечерняя «Сатай-стрит»)",
+      "Хокерская еда в Makansutra Gluttons Bay",
+      "Сингапурский слинг в отеле Raffles"
+     ],
+     "criticalTips": [
+      "Билеты в Cloud Forest и Flower Dome покупайте онлайн заранее; световое шоу супердеревьев бесплатное.",
+      "В метро запрещено есть и пить (даже воду) — штрафуют."
+     ],
+     "mapsQuery": "Gardens by the Bay, Singapore"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Остановка 2: Чайна-таун, Кампонг-Гелам и Литл-Индия",
+     "recommendedDuration": "1,5 дня",
+     "durationBadge": "1,5 дня",
+     "highlights": [
+      "Храм Зуба Будды и храм Шри Мариамман",
+      "Мечеть Султана и Хаджи-лейн",
+      "Текка-центр и храм Шри Вирамакалиамман в Литл-Индии",
+      "Ботанический сад и Национальный сад орхидей"
+     ],
+     "activities": [
+      "Рано утром прогуляйтесь по Ботаническому саду.",
+      "Загляните в лавки тканей и парфюмерии на Араб-стрит в Кампонг-Гелам.",
+      "Пообедайте в фудкортах Maxwell или Tekka."
+     ],
+     "foodAndDrinks": [
+      "Курица с рисом Tian Tian в Maxwell",
+      "Муртабак и роти прата в Кампонг-Гелам",
+      "Бирьяни и тех тарик в Литл-Индии"
+     ],
+     "criticalTips": [
+      "Халяльные лотки отмечены зелёным сертификатом «MUIS Halal»; их много в Кампонг-Гелам и Гейланг-Серай.",
+      "Посещайте мечеть Султана вне времени намаза и не в пятницу днём."
+     ],
+     "mapsQuery": "Sultan Mosque, Kampong Glam, Singapore"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Остановка 3: Остров Сентоза и Jewel Changi",
+     "recommendedDuration": "1 день",
+     "durationBadge": "1 день",
+     "highlights": [
+      "Universal Studios Singapore",
+      "Океанариум S.E.A. Aquarium",
+      "Пляжи Силосо и Палаван",
+      "Водопад HSBC Rain Vortex в Jewel Changi"
+     ],
+     "activities": [
+      "Доберитесь до острова на канатной дороге или монорельсе Sentosa Express.",
+      "Перейдите по подвесному мосту на пляже Палаван к островку — «самой южной точке континентальной Азии».",
+      "Перед вылетом посмотрите крытый водопад в Jewel Changi."
+     ],
+     "foodAndDrinks": [
+      "Краб чили или краб с чёрным перцем",
+      "Айс качанг"
+     ],
+     "criticalTips": [
+      "Билеты в Universal Studios и океанариум онлайн дешевле и без очередей.",
+      "Краба чили обычно продают на вес — уточняйте итоговую цену до заказа."
+     ],
+     "mapsQuery": "Sentosa Island, Singapore"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Курица с рисом по-хайнаньски",
+     "Краб чили",
+     "Лакса",
+     "Чар квей теу (жареная плоская лапша)"
+    ],
+    "drinks": [
+     "Копи",
+     "Тех тарик",
+     "Сок сахарного тростника",
+     "Сингапурский слинг"
+    ],
+    "streetFoods": [
+     "Сатай",
+     "Роти прата",
+     "Кая-тост",
+     "Наси лемак"
+    ],
+    "diningAdvice": "Хорошая еда в фудкорте стоит 4–8 $; в ресторанах «++» добавляет около 20%. Халяль ищите по логотипу «MUIS Halal»; большинство китайских лотков используют свинину. Не забудьте «чоупнуть» столик салфетками и вернуть поднос."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Адаптер под розетку типа G (британскую)",
+     "Лёгкая дышащая одежда и тонкая кофта для помещений с кондиционером",
+     "Складной зонт (внезапные тропические ливни)",
+     "Репеллент от комаров (денге)"
+    ],
+    "safetyAndEtiquette": [
+     "Продажа жвачки запрещена; не ввозите её в товарных количествах.",
+     "Хранение и использование электронных сигарет запрещено — в аэропорту изымают и штрафуют.",
+     "За наркоторговлю — самые суровые наказания, вплоть до смертной казни."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Британские розетки с тремя прямоугольными штырями (тип G); для турецких приборов нужен адаптер типа G."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Водопроводная вода безопасна для питья; системы очистки (включая NEWater) мирового уровня.",
+    "vaccines": [
+     "Плановые прививки (столбняк, дифтерия, корь)",
+     "Рекомендуется гепатит A",
+     "Сертификат о прививке от жёлтой лихорадки обязателен при прибытии из страны риска"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "995"
+   },
+   "tipping": {
+    "custom": "Чаевые не ожидаются.",
+    "standardPercent": 0,
+    "rule": "optional",
+    "note": "Рестораны и отели уже добавляют 10% за обслуживание («++»); в фудкортах чаевых не дают."
+   },
+   "taxFree": {
+    "vatRefundPercent": "GST 9%; возврат нетто ~6–7%",
+    "minSpend": "Не менее 100 SGD с GST в одном магазине",
+    "customsNote": "Оформите покупку в системе eTRS в магазине и подтвердите возврат по паспорту в киосках eTRS в аэропорту Чанги. Для вещей в сдаваемом багаже — до регистрации."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.30 - $1.50",
+    "topCarriers": [
+     "Singtel",
+     "StarHub",
+     "M1",
+     "SIMBA"
+    ],
+    "airportSimTrapWarning": "Стойки операторов в Чанги и туристические SIM в 7-Eleven (пакеты около 100 ГБ) стоят разумно; подвоха нет, но заранее купленная eSIM столь же дешёвая."
+   },
+   "touristScams": [
+    {
+     "title": "Ловушка с электроникой в Sim Lim Square",
+     "desc": "Некоторые магазины заманивают низкой ценой, а при оплате добавляют обязательную «гарантию» или сборы и отказываются возвращать деньги.",
+     "tip": "Покупайте в официальных фирменных магазинах или крупных сетях; проверяйте итоговую сумму до подписи чека."
+    },
+    {
+     "title": "Фальшивые монахи",
+     "desc": "Люди в оранжевых одеждах раздают амулеты и просят пожертвования; настоящие буддийские монахи не просят денег на улице.",
+     "tip": "Вежливо откажитесь; при навязчивости можно сообщить в полицию (999)."
+    }
+   ]
+  }
+ }
+}

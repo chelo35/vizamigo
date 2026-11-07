@@ -96,6 +96,62 @@
      }
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Avrupa tipi iki yuvarlak uçlu C/F (Schuko) priz; Türkiye ile aynı, adaptör gerekmez."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Tiflis ve Batum’da şebeke suyu genel olarak içilebilir; dağ köylerinde ve eski binalarda şişe su tercih edin.",
+    "vaccines": [
+     "Rutin aşılar (KKK, tetanoz)",
+     "Hepatit A",
+     "Kuduz (kırsal bölge veya uzun kalış)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "112"
+   },
+   "tipping": {
+    "custom": "Restoranlarda faturaya genellikle %10-18 servis bedeli eklenir.",
+    "standardPercent": 10,
+    "rule": "round_up",
+    "note": "Servis bedeli yazıyorsa ek bahşiş gerekmez; yoksa %5-10 veya hesabı yuvarlamak yeterli."
+   },
+   "taxFree": {
+    "vatRefundPercent": "%18 KDV (komisyon sonrası net ~%15)",
+    "minSpend": "200 GEL",
+    "customsNote": "Fiş başına en az 200 GEL’lik alışverişte “Tax Free” formu isteyin; Tiflis/Batum/Kutaisi havalimanında veya Sarp kapısında gümrüğe onaylatın."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.50 - $1",
+    "topCarriers": [
+     "Magti",
+     "Silknet",
+     "Cellfie"
+    ],
+    "airportSimTrapWarning": "Havalimanındaki Magti/Silknet kioskları makul fiyatlıdır; asıl tuzak oradaki döviz büroları, parayı şehirde bozdurun."
+   },
+   "touristScams": [
+    {
+     "title": "Korsan taksi",
+     "desc": "Havalimanı ve garda taksimetre açmadan turiste kat kat fiyat söyleyen taksiciler.",
+     "tip": "Bolt veya Yandex Go kullanın; sokaktan taksiye binecekseniz fiyatı önceden netleştirin."
+    },
+    {
+     "title": "Bar/kulüp hesabı tuzağı",
+     "desc": "Sokakta tanışılan “arkadaş canlısı” kişilerin sizi götürdüğü barda fahiş içki hesabı çıkar.",
+     "tip": "Yabancıların önerdiği barlara gitmeyin; menüde fiyat görmeden sipariş vermeyin."
+    }
+   ]
   }
  },
  "en": {
@@ -195,6 +251,62 @@
      }
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "European two-round-pin C/F (Schuko) sockets, the same as in Turkey; no adapter needed."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Tap water is generally drinkable in Tbilisi and Batumi; in mountain villages and old buildings prefer bottled water.",
+    "vaccines": [
+     "Routine vaccines (MMR, tetanus)",
+     "Hepatitis A",
+     "Rabies (rural areas or long stays)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "112"
+   },
+   "tipping": {
+    "custom": "Restaurants usually add a 10-18% service charge to the bill.",
+    "standardPercent": 10,
+    "rule": "round_up",
+    "note": "If service is included no extra tip is needed; otherwise 5-10% or rounding up is enough."
+   },
+   "taxFree": {
+    "vatRefundPercent": "18% VAT (about 15% net after fees)",
+    "minSpend": "200 GEL",
+    "customsNote": "Ask for a Tax Free form on purchases of at least 200 GEL per receipt and have it stamped by customs at Tbilisi, Batumi or Kutaisi airport or at the Sarpi border."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.50 - $1",
+    "topCarriers": [
+     "Magti",
+     "Silknet",
+     "Cellfie"
+    ],
+    "airportSimTrapWarning": "Magti and Silknet kiosks at the airport are fairly priced; the real trap is the airport exchange desks, so change money in town."
+   },
+   "touristScams": [
+    {
+     "title": "Unofficial taxis",
+     "desc": "Drivers at the airport and station who refuse the meter and quote tourists several times the normal fare.",
+     "tip": "Use Bolt or Yandex Go; with street taxis agree the fare first."
+    },
+    {
+     "title": "Bar bill scam",
+     "desc": "Friendly strangers met in the street lead you to a bar where an outrageous drinks bill appears.",
+     "tip": "Do not follow strangers to bars and never order without seeing prices."
+    }
+   ]
   }
  },
  "de": {
@@ -294,6 +406,62 @@
      }
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Europäische Steckdosen Typ C/F (Schuko) mit zwei runden Stiften, wie in der Türkei; kein Adapter nötig."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Leitungswasser ist in Tiflis und Batumi meist trinkbar; in Bergdörfern und Altbauten besser Flaschenwasser.",
+    "vaccines": [
+     "Standardimpfungen (MMR, Tetanus)",
+     "Hepatitis A",
+     "Tollwut (ländliche Gebiete oder lange Aufenthalte)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "112"
+   },
+   "tipping": {
+    "custom": "Restaurants schlagen meist 10-18 % Servicegebühr auf die Rechnung.",
+    "standardPercent": 10,
+    "rule": "round_up",
+    "note": "Ist der Service enthalten, ist kein Trinkgeld nötig; sonst reichen 5-10 % oder Aufrunden."
+   },
+   "taxFree": {
+    "vatRefundPercent": "18 % MwSt. (netto etwa 15 % nach Gebühren)",
+    "minSpend": "200 GEL",
+    "customsNote": "Ab 200 GEL pro Beleg ein Tax-Free-Formular verlangen und am Flughafen Tiflis, Batumi oder Kutaissi bzw. am Grenzübergang Sarpi vom Zoll abstempeln lassen."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.50 - $1",
+    "topCarriers": [
+     "Magti",
+     "Silknet",
+     "Cellfie"
+    ],
+    "airportSimTrapWarning": "Die Magti- und Silknet-Stände am Flughafen sind fair; die eigentliche Falle sind die Wechselstuben dort, also Geld in der Stadt tauschen."
+   },
+   "touristScams": [
+    {
+     "title": "Inoffizielle Taxis",
+     "desc": "Fahrer an Flughafen und Bahnhof schalten kein Taxameter ein und verlangen ein Vielfaches.",
+     "tip": "Bolt oder Yandex Go nutzen; bei Straßentaxis den Preis vorher vereinbaren."
+    },
+    {
+     "title": "Bar-Rechnungs-Masche",
+     "desc": "Freundliche Fremde locken Sie in eine Bar, in der eine horrende Getränkerechnung kommt.",
+     "tip": "Fremden nicht in Bars folgen und nie ohne Preise bestellen."
+    }
+   ]
   }
  },
  "es": {
@@ -393,6 +561,62 @@
      }
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Enchufes europeos C/F (Schuko) de dos clavijas redondas, iguales que en Turquía; no hace falta adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "El agua del grifo suele ser potable en Tiflis y Batumi; en aldeas de montaña y edificios antiguos mejor agua embotellada.",
+    "vaccines": [
+     "Vacunas rutinarias (triple vírica, tétanos)",
+     "Hepatitis A",
+     "Rabia (zonas rurales o estancias largas)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "112"
+   },
+   "tipping": {
+    "custom": "Los restaurantes suelen añadir un cargo por servicio del 10-18 %.",
+    "standardPercent": 10,
+    "rule": "round_up",
+    "note": "Si el servicio está incluido no hace falta propina; si no, basta un 5-10 % o redondear."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA del 18 % (unos 15 % netos tras comisiones)",
+    "minSpend": "200 GEL",
+    "customsNote": "Pida el formulario Tax Free en compras de al menos 200 GEL por ticket y séllelo en aduana en los aeropuertos de Tiflis, Batumi o Kutaisi o en la frontera de Sarpi."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.50 - $1",
+    "topCarriers": [
+     "Magti",
+     "Silknet",
+     "Cellfie"
+    ],
+    "airportSimTrapWarning": "Los quioscos de Magti y Silknet del aeropuerto tienen precios razonables; la trampa son las casas de cambio del aeropuerto, cambie en la ciudad."
+   },
+   "touristScams": [
+    {
+     "title": "Taxis piratas",
+     "desc": "Taxistas del aeropuerto y la estación que no usan taxímetro y piden varias veces la tarifa normal.",
+     "tip": "Use Bolt o Yandex Go; con taxis de la calle acuerde el precio antes."
+    },
+    {
+     "title": "Estafa de la cuenta del bar",
+     "desc": "Desconocidos amables le llevan a un bar donde aparece una cuenta de bebidas desorbitada.",
+     "tip": "No siga a desconocidos a bares ni pida sin ver los precios."
+    }
+   ]
   }
  },
  "ru": {
@@ -492,6 +716,62 @@
      }
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Европейские розетки C/F (Schuko) с двумя круглыми штырями, как в Турции; переходник не нужен."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "В Тбилиси и Батуми водопроводную воду обычно можно пить; в горных сёлах и старых домах лучше бутилированная.",
+    "vaccines": [
+     "Плановые прививки (корь-краснуха-паротит, столбняк)",
+     "Гепатит A",
+     "Бешенство (сельская местность или долгое пребывание)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "112"
+   },
+   "tipping": {
+    "custom": "Рестораны обычно добавляют к счёту 10-18 % за обслуживание.",
+    "standardPercent": 10,
+    "rule": "round_up",
+    "note": "Если обслуживание включено, чаевые не нужны; иначе достаточно 5-10 % или округлить сумму."
+   },
+   "taxFree": {
+    "vatRefundPercent": "НДС 18 % (около 15 % чистыми после комиссии)",
+    "minSpend": "200 GEL",
+    "customsNote": "При покупке от 200 GEL по одному чеку попросите форму Tax Free и заверьте её на таможне в аэропортах Тбилиси, Батуми или Кутаиси либо на КПП Сарпи."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.50 - $1",
+    "topCarriers": [
+     "Magti",
+     "Silknet",
+     "Cellfie"
+    ],
+    "airportSimTrapWarning": "Киоски Magti и Silknet в аэропорту продают SIM по нормальной цене; ловушка — обменники в аэропорту, меняйте деньги в городе."
+   },
+   "touristScams": [
+    {
+     "title": "Нелегальные таксисты",
+     "desc": "Водители у аэропорта и вокзала не включают счётчик и называют туристам цену в разы выше.",
+     "tip": "Пользуйтесь Bolt или Yandex Go; с уличным такси договаривайтесь о цене заранее."
+    },
+    {
+     "title": "Барный развод",
+     "desc": "Дружелюбные незнакомцы ведут вас в бар, где выставляют огромный счёт за напитки.",
+     "tip": "Не ходите в бары с незнакомцами и не заказывайте, не видя цен."
+    }
+   ]
   }
  }
 }

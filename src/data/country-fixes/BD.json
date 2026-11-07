@@ -1,0 +1,1797 @@
+{
+ "tr": {
+  "insights": {
+   "currency": "Bangladeş Takası (BDT)",
+   "plugType": "Tip C, D, G, K (220V, 50Hz)",
+   "bestMonths": "Kasım – Şubat (kurak ve serin); Mart – Mayıs sıcak ve fırtınalı, Haziran – Ekim muson ve sel dönemi; Nisan – Mayıs ve Ekim – Kasım kıyıda siklon riski",
+   "safety": {
+    "crimeRateSummary": "2024’teki ayaklanmanın ardından siyasi gösteriler, grevler (hartal) ve zaman zaman şiddet olayları sürmektedir; terör tehdidi de vardır. Chittagong Tepe Bölgeleri (Rangamati, Bandarban, Khagrachari) için resmî uyarılar bulunur. Dhaka’da trafikte telefon ve çanta kapkaçı yaygındır, yol güvenliği çok zayıftır.",
+    "commonScams": [
+     "CNG (üç tekerli) ve rickshaw sürücülerinin yabancılara birkaç kat fiyat söylemesi",
+     "Trafikte bekleyen CNG veya otobüs camından telefon kapılması",
+     "Sundarbans için güvenlik ekipmanı olmayan ucuz, izinsiz tekne turları"
+    ],
+    "safeTravelTips": [
+     "Gösteri ve hartal günlerinde şehir içinde ve şehirler arası yolculuk yapmayın; yerel haberleri ve büyükelçilik duyurularını izleyin.",
+     "Uber veya Pathao kullanın; CNG’de telefonu ve çantayı cam kenarında tutmayın.",
+     "Chittagong Tepe Bölgeleri’ne izin ve resmî uyarıları kontrol etmeden gitmeyin."
+    ],
+    "emergencyNumbers": {
+     "police": "999",
+     "ambulance": "999",
+     "general": "999"
+    },
+    "safetyScore": 40,
+    "safetyLevel": "Hassas / Tedbir Gerekir",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Şehirlerde 4G; kırsalda ve Sundarbans’ta zayıf veya yok. Gösteri dönemlerinde mobil internet kısıtlanabilir.",
+    "costPerGbUsd": "~0.10 - 0.40 $",
+    "esimAvailability": "Sınırlı – yerel SIM pasaport ve biyometrik kayıtla alınır; uluslararası eSIM’ler çalışır",
+    "bestCarriers": [
+     "Grameenphone",
+     "Robi",
+     "Banglalink",
+     "Teletalk"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Zayıf – Dhaka trafiği dünyanın en yoğunlarındandır; MRT Hattı-6 metrosu kuzey-güney ekseninde rahatlatır. Şehirler arası trenler ve otobüsler, nehirlerde vapur ve launch’lar kullanılır.",
+    "costLevel": "Ucuz",
+    "singleTicketUsd": "~0.15 - 0.85 $ (Dhaka Metro Rail)",
+    "dailyPassUsd": "Günlük kart yok; yüklemeli MRT Pass kart kullanılır",
+    "popularRideApps": [
+     "Uber",
+     "Pathao",
+     "Obhai"
+    ],
+    "taxiAdvice": "Dhaka’da Uber ve Pathao (araç ve motosiklet) en güvenli ve şeffaf seçeneklerdir. CNG ve rickshaw’larda fiyatı binmeden pazarlıkla belirleyin; trafik nedeniyle kısa mesafeler bile 1 saat sürebilir."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "20 - 35 $",
+    "dailyBudgetMidrangeUsd": "45 - 90 $",
+    "budgetMealUsd": "1.50 - 4 $",
+    "coffeeUsd": "1 - 3 $",
+    "waterBottleUsd": "0.15 - 0.30 $",
+    "hostelDormUsd": "8 - 15 $",
+    "hotel3StarUsd": "25 - 60 $",
+    "flightCostIndex": "Orta (İstanbul – Dhaka direkt ~7 sa)",
+    "flightTip": "THY İstanbul – Dhaka arasında direkt uçar; Körfez aktarmalı biletler de yaygındır. Ülke içinde US-Bangla, Biman ve Novoair ile Cox’s Bazar, Sylhet ve Jessore’a (Sundarbans için) kısa uçuşlar vardır."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Müslümanlar “Assalamu alaikum”, Hindular “Nomoshkar” ile selamlaşır; erkekler kadınlarla tokalaşmaz, onların hareketini bekleyin.",
+     "Muhafazakâr giyim beklenir; kadınlar için uzun kollu bol kıyafet ve şal uygundur.",
+     "Yabancılara büyük merak gösterilir, kalabalık toplanması normaldir; sabırlı ve güler yüzlü olun. Yemek sağ elle yenir."
+    ],
+    "festivals": [
+     "Pohela Boishakh – Bengal Yeni Yılı (14 Nisan)",
+     "Ekushey – Uluslararası Anadil Günü (21 Şubat)",
+     "Durga Puja (Ekim) ve Ramazan/Kurban bayramları"
+    ],
+    "lifestyle": "Nehirlerle iç içe, kalabalık ve sıcak bir yaşam; Bengal dili, şiiri ve müziği (Rabindra ve Nazrul şarkıları) ulusal gururdur. Çay tezgâhları (tong) sohbetin merkezidir, kriket tutkusu yüksektir."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Sundarbans – dünyanın en büyük mangrov ormanı ve Bengal kaplanı (UNESCO)",
+     "Bagerhat – Altmış Kubbeli Cami (UNESCO)",
+     "Eski Dhaka – Lalbagh Kalesi, Ahsan Manzil ve Sadarghat limanı",
+     "Sreemangal çay bahçeleri ve Lawachara Ulusal Parkı",
+     "Cox’s Bazar – dünyanın en uzun doğal kumsalı",
+     "Paharpur Budist Manastırı (UNESCO)"
+    ],
+    "bestSeasons": "Kasım – Şubat (kurak ve serin); Mart – Mayıs sıcak ve fırtınalı, Haziran – Ekim muson ve sel dönemi; Nisan – Mayıs ve Ekim – Kasım kıyıda siklon riski",
+    "travelStyleTip": "Bangladeş henüz kitle turizmine açılmamıştır; yerel bir operatörle çalışmak, özellikle Sundarbans için, işleri çok kolaylaştırır. Trafik nedeniyle günde tek bir büyük hedef planlayın."
+   },
+   "religion": {
+    "primaryReligions": "İslam (~%91, çoğunluk Sünni), Hinduizm (~%8), Budizm ve Hristiyanlık (<%1).",
+    "respectNorms": "Camilerde ayakkabılar çıkarılır, kadınlar başlarını örter; cuma namazı saatlerinde ziyaretten kaçının. Ramazan’da gündüz açıkta yemek yemeyin.",
+    "sacredSites": [
+     "Yıldız Camii – Tara Masjid (Dhaka)",
+     "Dhakeshwari Tapınağı (Dhaka)",
+     "Hazreti Şah Celal Türbesi (Sylhet)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Bengalce (Bangla, kendi alfabesiyle); 1952 Dil Hareketi ulusal kimliğin temelidir.",
+    "englishProficiency": "Dhaka’da iş dünyası, otel ve eğitimli kesimde orta-iyi; kırsalda sınırlı.",
+    "phrases": [
+     {
+      "phrase": "আসসালামু আলাইকুম / নমস্কার (Assalamu alaikum / Nomoshkar)",
+      "meaning": "Merhaba (Müslüman / Hindu selamı)",
+      "translation": "Merhaba (Müslüman / Hindu selamı)",
+      "pronunciation": "as-sa-LA-mu a-LAI-kum / no-mosh-KAR"
+     },
+     {
+      "phrase": "ধন্যবাদ (Dhonnobad)",
+      "meaning": "Teşekkür ederim",
+      "translation": "Teşekkür ederim",
+      "pronunciation": "DHON-no-bad"
+     },
+     {
+      "phrase": "দাম কত? (Dam koto?)",
+      "meaning": "Fiyatı ne kadar?",
+      "translation": "Fiyatı ne kadar?",
+      "pronunciation": "daam KO-to"
+     },
+     {
+      "phrase": "খুব মজা (Khub moja)",
+      "meaning": "Çok lezzetli",
+      "translation": "Çok lezzetli",
+      "pronunciation": "khub MO-ja"
+     },
+     {
+      "phrase": "আবার দেখা হবে (Abar dekha hobe)",
+      "meaning": "Tekrar görüşmek üzere",
+      "translation": "Tekrar görüşmek üzere",
+      "pronunciation": "A-bar DE-kha HO-be"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Bengal deltası Pala Budist krallıkları, Bengal Sultanlığı ve Babürler döneminde zengin bir ticaret merkeziydi; Dhaka 1610’da Babür Bengal’inin başkenti oldu. İngiliz yönetiminin ardından 1947’de Doğu Pakistan olarak ayrıldı, 1952 Dil Hareketi’nden sonra 1971’de bağımsız Bangladeş kuruldu.",
+    "milestones": [
+     "1610: Dhaka’nın Babür Bengal’inin başkenti olması",
+     "1952: Bengal Dil Hareketi (21 Şubat)",
+     "1971: Bağımsızlık",
+     "2006: Muhammad Yunus ve Grameen Bank’a Nobel Barış Ödülü"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Shorshe ilish (hardal soslu hilsa balığı – ulusal balık)",
+     "Kacchi biryani (Eski Dhaka usulü etli pilav)",
+     "Bhorta (patlıcan, patates ve kurutulmuş balık ezmeleri)"
+    ],
+    "traditionalDrinks": [
+     "Cha (sütlü çay; Sreemangal’in yedi katlı çayı)",
+     "Borhani (baharatlı yoğurt içeceği)",
+     "Akher rosh (şeker kamışı suyu)"
+    ],
+    "streetFoodAndDesserts": [
+     "Fuchka (Bengal usulü pani puri)",
+     "Jhalmuri (baharatlı patlamış pirinç)",
+     "Mishti doi (tatlı yoğurt) ve roshogolla"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Kazi Nazrul Islam (ulusal şair)",
+     "Muhammad Yunus (mikrokredinin öncüsü, Nobel Barış Ödülü)",
+     "Fazle Hasan Abed (dünyanın en büyük STK’sı BRAC’ın kurucusu)"
+    ],
+    "strongSectors": [
+     "Hazır giyim (dünyanın en büyük ihracatçılarından)",
+     "İlaç sanayii",
+     "Jüt ve jüt ürünleri"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Nakit esastır; yerel halk bKash ve Nagad mobil cüzdanlarını kullanır. Kartlar üst segment otel ve restoranlarda geçer; ATM’ler (DBBL, BRAC Bank vb.) şehirlerde yaygındır, kırsalda azdır.",
+    "tippingCulture": "Zorunlu değil; restoranlarda %5-10 ve rehber, şoför ile tekne ekiplerine küçük bahşiş memnuniyetle karşılanır.",
+    "economicPillars": "Hazır giyim ihracatı, yurt dışı işçi gelirleri, tarım (pirinç, jüt, balık) ve ilaç sanayii."
+   }
+  },
+  "itin": {
+   "routeName": "Dhaka, Sreemangal ve Sundarbans: Nehirler, Çay ve Mangrovlar",
+   "routeSummary": "Eski Dhaka’nın Babür kalıntıları ve nehir limanıyla başlayıp kuzeydoğudaki Sreemangal çay bahçelerine, ardından Padma Köprüsü üzerinden güneybatıdaki Bagerhat camileri ve Sundarbans mangrovlarına uzanan 8 günlük bir rota.",
+   "totalDays": 8,
+   "idealDurationText": "8 günlük rota",
+   "bestSeason": "Kasım – Şubat (kurak ve serin); Mart – Mayıs sıcak ve fırtınalı, Haziran – Ekim muson ve sel dönemi; Nisan – Mayıs ve Ekim – Kasım kıyıda siklon riski",
+   "transportMode": "Tren (Dhaka – Sreemangal ve Dhaka – Khulna/Jessore) + Sundarbans’ta lisanslı tekne turu + Dhaka’da metro, Uber ve Pathao",
+   "paceLevel": "Dengeli (kültür ve doğa)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "1. Durak: Dhaka (Eski Dhaka ve nehir limanı)",
+     "recommendedDuration": "2 Gün",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "Lalbagh Kalesi",
+      "Ahsan Manzil (Pembe Saray)",
+      "Sadarghat limanı ve Buriganga Nehri",
+      "Yıldız Camii ve Shankhari Bazar"
+     ],
+     "activities": [
+      "Buriganga’da kayıkla (nouka) kısa bir tur yapın.",
+      "Eski Dhaka’da rickshaw ile dolaşın.",
+      "Ulusal Parlamento binasını (Louis Kahn) dışarıdan görün."
+     ],
+     "foodAndDrinks": [
+      "Kacchi biryani",
+      "Fuchka ve borhani"
+     ],
+     "criticalTips": [
+      "Trafik nedeniyle MRT metrosunu ve sabah erken saatleri tercih edin.",
+      "Sadarghat çok kalabalıktır; değerli eşyalarınızı önde ve kapalı tutun."
+     ],
+     "mapsQuery": "Lalbagh Fort, Dhaka, Bangladesh"
+    },
+    {
+     "stopNumber": 2,
+     "name": "2. Durak: Sreemangal (çay başkenti)",
+     "recommendedDuration": "2 Gün",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "Çay bahçeleri ve çay araştırma enstitüsü",
+      "Lawachara Ulusal Parkı (hulok gibonları)",
+      "Baikka Beel sulak alanı"
+     ],
+     "activities": [
+      "Çay bahçelerinde bisiklet veya yürüyüş turu yapın.",
+      "Lawachara’da rehberle orman yürüyüşü yapın.",
+      "Khasi ve Manipuri köylerini ziyaret edin."
+     ],
+     "foodAndDrinks": [
+      "Yedi katlı çay",
+      "Bhorta ile pilav"
+     ],
+     "criticalTips": [
+      "Dhaka – Sreemangal treni (Parabat veya Upaban Express) ~4-5 saattir; bileti Bangladesh Railway uygulamasından önceden alın.",
+      "Ormanda sülük olabilir; uzun çorap ve kapalı ayakkabı giyin."
+     ],
+     "mapsQuery": "Sreemangal, Moulvibazar, Bangladesh"
+    },
+    {
+     "stopNumber": 3,
+     "name": "3. Durak: Bagerhat ve Sundarbans (Khulna / Mongla)",
+     "recommendedDuration": "3 Gün",
+     "durationBadge": "3 Gün",
+     "highlights": [
+      "Altmış Kubbeli Cami (Shat Gombuj)",
+      "Sundarbans mangrov kanalları",
+      "Kotka ve Karamjal yaban hayatı istasyonları"
+     ],
+     "activities": [
+      "2-3 günlük lisanslı tekne turuna katılın.",
+      "Gün doğumunda kanolarla dar kanallara girin ve kuş, timsah ve benekli geyik gözleyin.",
+      "Bagerhat’ta Han Cihan Ali türbesini görün."
+     ],
+     "foodAndDrinks": [
+      "Tekne mutfağında taze nehir balığı ve karides",
+      "Shorshe ilish"
+     ],
+     "criticalTips": [
+      "Sundarbans’a yalnızca orman dairesi izni olan lisanslı operatörle ve silahlı korucu eşliğinde girilir.",
+      "Dhaka – Khulna treni Padma Köprüsü sayesinde ~5-6 saate indi; siklon uyarılarında turlar iptal edilir."
+     ],
+     "mapsQuery": "Sixty Dome Mosque, Bagerhat, Bangladesh"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Shorshe ilish",
+     "Kacchi biryani",
+     "Bhuna khichuri (baharatlı pirinç-mercimek)",
+     "Bhorta çeşitleri"
+    ],
+    "drinks": [
+     "Cha",
+     "Borhani",
+     "Akher rosh"
+    ],
+    "streetFoods": [
+     "Fuchka",
+     "Jhalmuri",
+     "Mishti doi"
+    ],
+    "diningAdvice": "Yemekler helaldir ve hardal yağı ile bolca baharat kullanılır. Hilsa balığının kılçığı çoktur, dikkatli yiyin; sokak yemeğinde kalabalık ve taze pişiren tezgâhları seçin."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Evrensel priz adaptörü (G/D)",
+     "Uzun kollu, bol ve muhafazakâr kıyafet; kadınlar için şal",
+     "Sivrisinek kovucu (dang humması)",
+     "Toz maskesi ve el dezenfektanı"
+    ],
+    "safetyAndEtiquette": [
+     "Gösteri ve hartal günlerinde otelde kalın, kalabalıklardan uzak durun.",
+     "Kadınları fotoğraflamadan önce izin isteyin ve dini mekânlarda örtülü olun."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "D",
+     "G",
+     "K"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Prizler karışıktır: İngiliz tipi üç köşeli (G), yuvarlak üç uçlu (D) ve ince iki uçlu (C); ince telefon şarj aletleri çoğu zaman girer ama evrensel adaptör şarttır. Elektrik kesintileri olur."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Musluk suyu içilmez (bazı bölgelerde arsenik sorunu da vardır); yalnızca mühürlü şişe su için.",
+    "vaccines": [
+     "Hepatit A ve tifo",
+     "Tetanos-difteri ve kızamık (rutin)",
+     "Kuduz, uzun kalışta Japon ensefaliti ve kolera; dang hummasına karşı sivrisinek önlemi, Chittagong Tepeleri için sıtma danışmanlığı"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "999"
+   },
+   "tipping": {
+    "custom": "Zorunlu değil; küçük bahşiş (bakşiş) yaygındır.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "Restoranlarda %5-10; Sundarbans tekne ekibine tur sonunda toplu bahşiş verilir."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Yok (KDV %15)",
+    "minSpend": "Uygulanmaz",
+    "customsNote": "Bangladeş’te turistlere KDV iadesi yoktur. Antika ve arkeolojik eser çıkarmak yasaktır; jamdani sari ve el sanatlarının faturasını saklayın."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.10 - $0.40",
+    "topCarriers": [
+     "Grameenphone",
+     "Robi",
+     "Banglalink"
+    ],
+    "airportSimTrapWarning": "Dhaka havalimanında Grameenphone ve Robi gişeleri SIM’i parmak iziyle kaydeder; fiyatlar resmîdir. Kırsalda ve Sundarbans yolunda en iyi kapsama genellikle Grameenphone’dadır."
+   },
+   "touristScams": [
+    {
+     "title": "CNG turist fiyatı",
+     "desc": "CNG ve rickshaw sürücüleri yabancılara birkaç kat fiyat söyler, yarı yolda fiyatı artırır.",
+     "tip": "Uber/Pathao fiyatını referans alın ve pazarlığı binmeden bitirin."
+    },
+    {
+     "title": "Pencereden telefon kapma",
+     "desc": "Trafikte bekleyen CNG ve otobüslerde camdan uzanan hırsızlar telefon ve çanta kapar.",
+     "tip": "Telefonu trafikte kullanmayın, çantayı ayaklarınızın arasında tutun."
+    },
+    {
+     "title": "İzinsiz Sundarbans turları",
+     "desc": "Mongla’da çok ucuz tur satan teknelerde can yeleği, izin veya korucu olmayabilir.",
+     "tip": "Orman dairesi izinli, iyi yorumlu operatörleri seçin ve izin belgesini görün."
+    }
+   ]
+  }
+ },
+ "en": {
+  "insights": {
+   "currency": "Bangladeshi Taka (BDT)",
+   "plugType": "Type C, D, G, K (220V, 50Hz)",
+   "bestMonths": "November – February (dry and cool); March – May hot and stormy, June – October monsoon and floods; cyclone risk on the coast in April – May and October – November",
+   "safety": {
+    "crimeRateSummary": "Since the 2024 uprising, political demonstrations, strikes (hartal) and occasional violence continue, and there is a terrorism threat. Official advisories cover the Chittagong Hill Tracts (Rangamati, Bandarban, Khagrachari). Phone and bag snatching in traffic is common in Dhaka and road safety is very poor.",
+    "commonScams": [
+     "CNG auto-rickshaw and rickshaw drivers charging foreigners several times the fare",
+     "Phones snatched through CNG or bus windows in traffic",
+     "Cheap unlicensed Sundarbans boat tours without safety equipment"
+    ],
+    "safeTravelTips": [
+     "Avoid travel within and between cities on protest and hartal days; follow local news and embassy notices.",
+     "Use Uber or Pathao; don’t hold phones or bags near the window in a CNG.",
+     "Don’t go to the Chittagong Hill Tracts without permits and checking official advice."
+    ],
+    "emergencyNumbers": {
+     "police": "999",
+     "ambulance": "999",
+     "general": "999"
+    },
+    "safetyScore": 40,
+    "safetyLevel": "Caution Advised",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60"
+   },
+   "internet": {
+    "networkCoverage": "4G in cities; weak or none in rural areas and the Sundarbans. Mobile internet may be restricted during unrest.",
+    "costPerGbUsd": "~0.10 - 0.40 $",
+    "esimAvailability": "Limited – local SIMs require passport and biometric registration; international eSIMs work",
+    "bestCarriers": [
+     "Grameenphone",
+     "Robi",
+     "Banglalink",
+     "Teletalk"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Weak – Dhaka has some of the world’s worst traffic; MRT Line 6 metro eases the north–south axis. Intercity trains and buses, plus river ferries and launches, are used.",
+    "costLevel": "Cheap",
+    "singleTicketUsd": "~0.15 - 0.85 $ (Dhaka Metro Rail)",
+    "dailyPassUsd": "No day pass; a reloadable MRT Pass card is used",
+    "popularRideApps": [
+     "Uber",
+     "Pathao",
+     "Obhai"
+    ],
+    "taxiAdvice": "In Dhaka, Uber and Pathao (cars and motorbikes) are the safest and most transparent options. Agree prices with CNGs and rickshaws before boarding; even short trips can take an hour in traffic."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "20 - 35 $",
+    "dailyBudgetMidrangeUsd": "45 - 90 $",
+    "budgetMealUsd": "1.50 - 4 $",
+    "coffeeUsd": "1 - 3 $",
+    "waterBottleUsd": "0.15 - 0.30 $",
+    "hostelDormUsd": "8 - 15 $",
+    "hotel3StarUsd": "25 - 60 $",
+    "flightCostIndex": "Moderate (Istanbul – Dhaka direct ~7 h)",
+    "flightTip": "Turkish Airlines flies Istanbul – Dhaka direct; Gulf connections are also common. Domestically, US-Bangla, Biman and Novoair fly to Cox’s Bazar, Sylhet and Jessore (for the Sundarbans)."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Muslims greet with “Assalamu alaikum”, Hindus with “Nomoshkar”; men generally don’t shake hands with women unless offered.",
+     "Conservative dress is expected; loose long-sleeved clothing and a scarf suit women.",
+     "Foreigners attract great curiosity and crowds may gather; be patient and friendly. Eat with your right hand."
+    ],
+    "festivals": [
+     "Pohela Boishakh – Bengali New Year (14 April)",
+     "Ekushey – International Mother Language Day (21 February)",
+     "Durga Puja (October) and the two Eids"
+    ],
+    "lifestyle": "A crowded, warm life shaped by rivers; the Bengali language, poetry and music (Rabindra and Nazrul songs) are national pride. Tea stalls (tong) are the hub of conversation and cricket fever runs high."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Sundarbans – the world’s largest mangrove forest and Bengal tigers (UNESCO)",
+     "Bagerhat – Sixty Dome Mosque (UNESCO)",
+     "Old Dhaka – Lalbagh Fort, Ahsan Manzil and Sadarghat port",
+     "Sreemangal tea gardens and Lawachara National Park",
+     "Cox’s Bazar – the world’s longest natural sea beach",
+     "Paharpur Buddhist Vihara (UNESCO)"
+    ],
+    "bestSeasons": "November – February (dry and cool); March – May hot and stormy, June – October monsoon and floods; cyclone risk on the coast in April – May and October – November",
+    "travelStyleTip": "Bangladesh is still off the mass-tourism map; a local operator makes things far easier, especially for the Sundarbans. Plan only one major sight per day because of traffic."
+   },
+   "religion": {
+    "primaryReligions": "Islam (~91%, mostly Sunni), Hinduism (~8%), Buddhism and Christianity (<1%).",
+    "respectNorms": "Remove shoes in mosques and women cover their heads; avoid visits during Friday prayers. Don’t eat in public during the day in Ramadan.",
+    "sacredSites": [
+     "Star Mosque – Tara Masjid (Dhaka)",
+     "Dhakeshwari Temple (Dhaka)",
+     "Shrine of Hazrat Shah Jalal (Sylhet)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Bengali (Bangla, with its own script); the 1952 Language Movement is the foundation of national identity.",
+    "englishProficiency": "Moderate to good among business, hotels and the educated in Dhaka; limited in rural areas.",
+    "phrases": [
+     {
+      "phrase": "আসসালামু আলাইকুম / নমস্কার (Assalamu alaikum / Nomoshkar)",
+      "meaning": "Hello (Muslim / Hindu greeting)",
+      "translation": "Hello (Muslim / Hindu greeting)",
+      "pronunciation": "as-sa-LA-mu a-LAI-kum / no-mosh-KAR"
+     },
+     {
+      "phrase": "ধন্যবাদ (Dhonnobad)",
+      "meaning": "Thank you",
+      "translation": "Thank you",
+      "pronunciation": "DHON-no-bad"
+     },
+     {
+      "phrase": "দাম কত? (Dam koto?)",
+      "meaning": "How much does it cost?",
+      "translation": "How much does it cost?",
+      "pronunciation": "daam KO-to"
+     },
+     {
+      "phrase": "খুব মজা (Khub moja)",
+      "meaning": "Very tasty",
+      "translation": "Very tasty",
+      "pronunciation": "khub MO-ja"
+     },
+     {
+      "phrase": "আবার দেখা হবে (Abar dekha hobe)",
+      "meaning": "See you again",
+      "translation": "See you again",
+      "pronunciation": "A-bar DE-kha HO-be"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "The Bengal delta was a rich trading hub under the Buddhist Pala kings, the Bengal Sultanate and the Mughals; Dhaka became the capital of Mughal Bengal in 1610. After British rule it became East Pakistan in 1947, and following the 1952 Language Movement, independent Bangladesh was founded in 1971.",
+    "milestones": [
+     "1610: Dhaka becomes capital of Mughal Bengal",
+     "1952: Bengali Language Movement (21 February)",
+     "1971: Independence",
+     "2006: Nobel Peace Prize for Muhammad Yunus and Grameen Bank"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Shorshe ilish (hilsa in mustard sauce – the national fish)",
+     "Kacchi biryani (Old Dhaka-style mutton biryani)",
+     "Bhorta (mashes of aubergine, potato and dried fish)"
+    ],
+    "traditionalDrinks": [
+     "Cha (milk tea; Sreemangal’s seven-layer tea)",
+     "Borhani (spiced yoghurt drink)",
+     "Akher rosh (sugarcane juice)"
+    ],
+    "streetFoodAndDesserts": [
+     "Fuchka (Bengali pani puri)",
+     "Jhalmuri (spicy puffed rice)",
+     "Mishti doi (sweet yoghurt) and roshogolla"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Kazi Nazrul Islam (national poet)",
+     "Muhammad Yunus (microcredit pioneer, Nobel Peace Prize)",
+     "Fazle Hasan Abed (founder of BRAC, the world’s largest NGO)"
+    ],
+    "strongSectors": [
+     "Ready-made garments (one of the world’s largest exporters)",
+     "Pharmaceuticals",
+     "Jute and jute products"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Cash is king; locals use the mobile wallets bKash and Nagad. Cards work in upscale hotels and restaurants; ATMs (DBBL, BRAC Bank, etc.) are common in cities but scarce in rural areas.",
+    "tippingCulture": "Not required; 5-10% in restaurants and small tips for guides, drivers and boat crews are appreciated.",
+    "economicPillars": "Garment exports, overseas workers’ remittances, agriculture (rice, jute, fish) and pharmaceuticals."
+   }
+  },
+  "itin": {
+   "routeName": "Dhaka, Sreemangal & the Sundarbans: Rivers, Tea & Mangroves",
+   "routeSummary": "An 8-day route starting with Old Dhaka’s Mughal relics and river port, heading north-east to the tea gardens of Sreemangal, then across the Padma Bridge to the mosques of Bagerhat and the Sundarbans mangroves in the south-west.",
+   "totalDays": 8,
+   "idealDurationText": "8-day itinerary",
+   "bestSeason": "November – February (dry and cool); March – May hot and stormy, June – October monsoon and floods; cyclone risk on the coast in April – May and October – November",
+   "transportMode": "Train (Dhaka – Sreemangal and Dhaka – Khulna/Jessore) + licensed boat tour in the Sundarbans + metro, Uber and Pathao in Dhaka",
+   "paceLevel": "Balanced (culture & nature)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stop 1: Dhaka (Old Dhaka & river port)",
+     "recommendedDuration": "2 Days",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "Lalbagh Fort",
+      "Ahsan Manzil (Pink Palace)",
+      "Sadarghat port and the Buriganga River",
+      "Star Mosque and Shankhari Bazar"
+     ],
+     "activities": [
+      "Take a short rowing-boat (nouka) ride on the Buriganga.",
+      "Explore Old Dhaka by cycle rickshaw.",
+      "See the National Parliament building (Louis Kahn) from outside."
+     ],
+     "foodAndDrinks": [
+      "Kacchi biryani",
+      "Fuchka and borhani"
+     ],
+     "criticalTips": [
+      "Because of traffic, use the MRT metro and go out early in the morning.",
+      "Sadarghat is extremely crowded; keep valuables in front and zipped."
+     ],
+     "mapsQuery": "Lalbagh Fort, Dhaka, Bangladesh"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stop 2: Sreemangal (tea capital)",
+     "recommendedDuration": "2 Days",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "Tea estates and the tea research institute",
+      "Lawachara National Park (hoolock gibbons)",
+      "Baikka Beel wetland"
+     ],
+     "activities": [
+      "Cycle or walk through the tea gardens.",
+      "Do a guided forest walk in Lawachara.",
+      "Visit Khasi and Manipuri villages."
+     ],
+     "foodAndDrinks": [
+      "Seven-layer tea",
+      "Rice with bhorta"
+     ],
+     "criticalTips": [
+      "The Dhaka – Sreemangal train (Parabat or Upaban Express) takes ~4-5 hours; buy tickets in advance on the Bangladesh Railway app.",
+      "There can be leeches in the forest; wear long socks and closed shoes."
+     ],
+     "mapsQuery": "Sreemangal, Moulvibazar, Bangladesh"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stop 3: Bagerhat & the Sundarbans (Khulna / Mongla)",
+     "recommendedDuration": "3 Days",
+     "durationBadge": "3 Days",
+     "highlights": [
+      "Sixty Dome Mosque (Shat Gombuj)",
+      "Sundarbans mangrove channels",
+      "Kotka and Karamjal wildlife stations"
+     ],
+     "activities": [
+      "Join a 2-3 day licensed boat tour.",
+      "Paddle into narrow channels at sunrise to spot birds, crocodiles and spotted deer.",
+      "See the tomb of Khan Jahan Ali in Bagerhat."
+     ],
+     "foodAndDrinks": [
+      "Fresh river fish and prawns from the boat kitchen",
+      "Shorshe ilish"
+     ],
+     "criticalTips": [
+      "The Sundarbans may only be entered with a licensed operator holding Forest Department permits, accompanied by an armed ranger.",
+      "The Dhaka – Khulna train now takes ~5-6 hours thanks to the Padma Bridge; tours are cancelled under cyclone warnings."
+     ],
+     "mapsQuery": "Sixty Dome Mosque, Bagerhat, Bangladesh"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Shorshe ilish",
+     "Kacchi biryani",
+     "Bhuna khichuri (spiced rice and lentils)",
+     "Assorted bhortas"
+    ],
+    "drinks": [
+     "Cha",
+     "Borhani",
+     "Akher rosh"
+    ],
+    "streetFoods": [
+     "Fuchka",
+     "Jhalmuri",
+     "Mishti doi"
+    ],
+    "diningAdvice": "Food is halal and uses mustard oil and plenty of spices. Hilsa is very bony, so eat carefully; at street stalls choose busy ones cooking fresh."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Universal plug adapter (G/D)",
+     "Long-sleeved, loose and modest clothes; a scarf for women",
+     "Mosquito repellent (dengue)",
+     "Dust mask and hand sanitiser"
+    ],
+    "safetyAndEtiquette": [
+     "Stay in your hotel on protest and hartal days and avoid crowds.",
+     "Ask before photographing women and dress modestly at religious sites."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "D",
+     "G",
+     "K"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Sockets are mixed: British three-pin (G), round three-pin (D) and thin two-pin (C); slim phone chargers often fit, but a universal adapter is essential. Power cuts happen."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Tap water isn’t drinkable (some areas also have arsenic issues); drink only sealed bottled water.",
+    "vaccines": [
+     "Hepatitis A and typhoid",
+     "Tetanus-diphtheria and measles (routine)",
+     "Rabies, plus Japanese encephalitis and cholera for long stays; mosquito protection against dengue, malaria advice for the Chittagong Hill Tracts"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "999"
+   },
+   "tipping": {
+    "custom": "Not mandatory; small tips (baksheesh) are common.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "5-10% in restaurants; Sundarbans boat crews receive a pooled tip at the end of the tour."
+   },
+   "taxFree": {
+    "vatRefundPercent": "None (VAT 15%)",
+    "minSpend": "Not applicable",
+    "customsNote": "Bangladesh has no VAT refund for tourists. Exporting antiques and archaeological items is prohibited; keep receipts for jamdani saris and handicrafts."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.10 - $0.40",
+    "topCarriers": [
+     "Grameenphone",
+     "Robi",
+     "Banglalink"
+    ],
+    "airportSimTrapWarning": "At Dhaka airport Grameenphone and Robi counters register SIMs by fingerprint at official prices. Grameenphone usually has the best coverage in rural areas and on the way to the Sundarbans."
+   },
+   "touristScams": [
+    {
+     "title": "CNG tourist pricing",
+     "desc": "CNG and rickshaw drivers quote foreigners several times the fare and raise it halfway.",
+     "tip": "Use the Uber/Pathao price as a reference and settle the fare before boarding."
+    },
+    {
+     "title": "Phone snatching through windows",
+     "desc": "Thieves reach through windows of CNGs and buses stuck in traffic to grab phones and bags.",
+     "tip": "Don’t use your phone in traffic and keep bags between your feet."
+    },
+    {
+     "title": "Unlicensed Sundarbans tours",
+     "desc": "Very cheap boats in Mongla may have no life jackets, permits or rangers.",
+     "tip": "Choose well-reviewed operators with Forest Department permits and ask to see them."
+    }
+   ]
+  }
+ },
+ "de": {
+  "insights": {
+   "currency": "Bangladesch-Taka (BDT)",
+   "plugType": "Typ C, D, G, K (220V, 50Hz)",
+   "bestMonths": "November – Februar (trocken und kühl); März – Mai heiß und stürmisch, Juni – Oktober Monsun und Hochwasser; Zyklonrisiko an der Küste im April – Mai und Oktober – November",
+   "safety": {
+    "crimeRateSummary": "Seit dem Aufstand 2024 gibt es weiterhin politische Demonstrationen, Streiks (Hartal) und vereinzelt Gewalt; zudem besteht Terrorgefahr. Für die Chittagong Hill Tracts (Rangamati, Bandarban, Khagrachari) gelten Reisewarnungen. In Dhaka werden im Verkehr oft Handys und Taschen entrissen, die Verkehrssicherheit ist sehr schlecht.",
+    "commonScams": [
+     "CNG-Autorikscha- und Rikschafahrer, die Ausländern ein Vielfaches berechnen",
+     "Handys werden im Stau durch CNG- oder Busfenster entrissen",
+     "Billige, nicht lizenzierte Bootstouren in die Sundarbans ohne Sicherheitsausrüstung"
+    ],
+    "safeTravelTips": [
+     "An Protest- und Hartal-Tagen nicht innerhalb oder zwischen Städten reisen; lokale Nachrichten und Botschaftshinweise verfolgen.",
+     "Uber oder Pathao nutzen; im CNG Handy und Tasche nicht ans Fenster halten.",
+     "Die Chittagong Hill Tracts nicht ohne Genehmigung und Prüfung der Reisehinweise besuchen."
+    ],
+    "emergencyNumbers": {
+     "police": "999",
+     "ambulance": "999",
+     "general": "999"
+    },
+    "safetyScore": 40,
+    "safetyLevel": "Erhöhte Vorsicht",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60"
+   },
+   "internet": {
+    "networkCoverage": "4G in Städten; schwach oder gar nicht auf dem Land und in den Sundarbans. Bei Unruhen kann das mobile Internet eingeschränkt werden.",
+    "costPerGbUsd": "~0.10 - 0.40 $",
+    "esimAvailability": "Eingeschränkt – lokale SIMs mit Pass und biometrischer Registrierung; internationale eSIMs funktionieren",
+    "bestCarriers": [
+     "Grameenphone",
+     "Robi",
+     "Banglalink",
+     "Teletalk"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Schwach – Dhaka hat einen der schlimmsten Verkehre der Welt; die Metrolinie MRT 6 entlastet die Nord-Süd-Achse. Zwischen Städten fahren Züge und Busse, auf den Flüssen Fähren und Launches.",
+    "costLevel": "Günstig",
+    "singleTicketUsd": "~0.15 - 0.85 $ (Dhaka Metro Rail)",
+    "dailyPassUsd": "Kein Tagesticket; aufladbare MRT-Pass-Karte",
+    "popularRideApps": [
+     "Uber",
+     "Pathao",
+     "Obhai"
+    ],
+    "taxiAdvice": "In Dhaka sind Uber und Pathao (Autos und Motorräder) die sichersten und transparentesten Optionen. Bei CNGs und Rikschas den Preis vorher aushandeln; selbst kurze Strecken können im Stau eine Stunde dauern."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "20 - 35 $",
+    "dailyBudgetMidrangeUsd": "45 - 90 $",
+    "budgetMealUsd": "1.50 - 4 $",
+    "coffeeUsd": "1 - 3 $",
+    "waterBottleUsd": "0.15 - 0.30 $",
+    "hostelDormUsd": "8 - 15 $",
+    "hotel3StarUsd": "25 - 60 $",
+    "flightCostIndex": "Mittel (Istanbul – Dhaka direkt ~7 Std.)",
+    "flightTip": "Turkish Airlines fliegt direkt Istanbul – Dhaka; auch Umsteigeverbindungen über den Golf sind üblich. Im Inland fliegen US-Bangla, Biman und Novoair nach Cox’s Bazar, Sylhet und Jessore (für die Sundarbans)."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Muslime grüßen mit „Assalamu alaikum“, Hindus mit „Nomoshkar“; Männer geben Frauen meist nicht die Hand, außer sie wird angeboten.",
+     "Konservative Kleidung wird erwartet; für Frauen eignen sich lockere langärmlige Kleidung und ein Tuch.",
+     "Ausländer wecken große Neugier, es bilden sich oft Menschentrauben; geduldig und freundlich bleiben. Mit der rechten Hand essen."
+    ],
+    "festivals": [
+     "Pohela Boishakh – Bengalisches Neujahr (14. April)",
+     "Ekushey – Internationaler Tag der Muttersprache (21. Februar)",
+     "Durga Puja (Oktober) sowie Zucker- und Opferfest"
+    ],
+    "lifestyle": "Ein dichtes, herzliches Leben im Rhythmus der Flüsse; bengalische Sprache, Dichtung und Musik (Rabindra- und Nazrul-Lieder) sind Nationalstolz. Teestände (Tong) sind Treffpunkte, die Cricket-Begeisterung ist groß."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Sundarbans – größter Mangrovenwald der Welt mit Bengaltigern (UNESCO)",
+     "Bagerhat – Sechzig-Kuppel-Moschee (UNESCO)",
+     "Alt-Dhaka – Lalbagh Fort, Ahsan Manzil und Hafen Sadarghat",
+     "Teegärten von Sreemangal und Lawachara-Nationalpark",
+     "Cox’s Bazar – längster natürlicher Sandstrand der Welt",
+     "Buddhistisches Kloster Paharpur (UNESCO)"
+    ],
+    "bestSeasons": "November – Februar (trocken und kühl); März – Mai heiß und stürmisch, Juni – Oktober Monsun und Hochwasser; Zyklonrisiko an der Küste im April – Mai und Oktober – November",
+    "travelStyleTip": "Bangladesch ist noch kein Massenreiseziel; ein lokaler Veranstalter erleichtert vieles, besonders für die Sundarbans. Wegen des Verkehrs nur ein großes Ziel pro Tag planen."
+   },
+   "religion": {
+    "primaryReligions": "Islam (~91 %, überwiegend Sunniten), Hinduismus (~8 %), Buddhismus und Christentum (<1 %).",
+    "respectNorms": "In Moscheen Schuhe ausziehen, Frauen bedecken den Kopf; Besuche zum Freitagsgebet meiden. Im Ramadan tagsüber nicht öffentlich essen.",
+    "sacredSites": [
+     "Sternmoschee – Tara Masjid (Dhaka)",
+     "Dhakeshwari-Tempel (Dhaka)",
+     "Schrein von Hazrat Shah Jalal (Sylhet)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Bengalisch (Bangla, mit eigener Schrift); die Sprachbewegung von 1952 ist Grundlage der nationalen Identität.",
+    "englishProficiency": "In Dhaka bei Geschäftsleuten, Hotels und Gebildeten mittel bis gut; auf dem Land begrenzt.",
+    "phrases": [
+     {
+      "phrase": "আসসালামু আলাইকুম / নমস্কার (Assalamu alaikum / Nomoshkar)",
+      "meaning": "Hallo (muslimischer / hinduistischer Gruß)",
+      "translation": "Hallo (muslimischer / hinduistischer Gruß)",
+      "pronunciation": "as-sa-LA-mu a-LAI-kum / no-mosh-KAR"
+     },
+     {
+      "phrase": "ধন্যবাদ (Dhonnobad)",
+      "meaning": "Danke",
+      "translation": "Danke",
+      "pronunciation": "DHON-no-bad"
+     },
+     {
+      "phrase": "দাম কত? (Dam koto?)",
+      "meaning": "Wie viel kostet das?",
+      "translation": "Wie viel kostet das?",
+      "pronunciation": "daam KO-to"
+     },
+     {
+      "phrase": "খুব মজা (Khub moja)",
+      "meaning": "Sehr lecker",
+      "translation": "Sehr lecker",
+      "pronunciation": "khub MO-ja"
+     },
+     {
+      "phrase": "আবার দেখা হবে (Abar dekha hobe)",
+      "meaning": "Bis bald",
+      "translation": "Bis bald",
+      "pronunciation": "A-bar DE-kha HO-be"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Das Bengalische Delta war unter den buddhistischen Pala-Königen, dem Sultanat Bengalen und den Moguln ein reiches Handelszentrum; Dhaka wurde 1610 Hauptstadt des Mogul-Bengalens. Nach britischer Herrschaft wurde es 1947 Ostpakistan, nach der Sprachbewegung von 1952 entstand 1971 das unabhängige Bangladesch.",
+    "milestones": [
+     "1610: Dhaka wird Hauptstadt des Mogul-Bengalens",
+     "1952: Bengalische Sprachbewegung (21. Februar)",
+     "1971: Unabhängigkeit",
+     "2006: Friedensnobelpreis für Muhammad Yunus und die Grameen Bank"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Shorshe Ilish (Hilsa in Senfsauce – Nationalfisch)",
+     "Kacchi Biryani (Hammel-Biryani nach Alt-Dhaka-Art)",
+     "Bhorta (Pürees aus Aubergine, Kartoffel und Trockenfisch)"
+    ],
+    "traditionalDrinks": [
+     "Cha (Milchtee; Siebenschichten-Tee aus Sreemangal)",
+     "Borhani (gewürztes Joghurtgetränk)",
+     "Akher Rosh (Zuckerrohrsaft)"
+    ],
+    "streetFoodAndDesserts": [
+     "Fuchka (bengalisches Pani Puri)",
+     "Jhalmuri (würziger Puffreis)",
+     "Mishti Doi (süßer Joghurt) und Roshogolla"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Kazi Nazrul Islam (Nationaldichter)",
+     "Muhammad Yunus (Pionier der Mikrokredite, Friedensnobelpreis)",
+     "Fazle Hasan Abed (Gründer von BRAC, der größten NGO der Welt)"
+    ],
+    "strongSectors": [
+     "Konfektionskleidung (einer der größten Exporteure der Welt)",
+     "Pharmaindustrie",
+     "Jute und Juteprodukte"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Bargeld dominiert; Einheimische nutzen die Mobile Wallets bKash und Nagad. Karten funktionieren in gehobenen Hotels und Restaurants; Geldautomaten (DBBL, BRAC Bank usw.) gibt es in Städten, auf dem Land kaum.",
+    "tippingCulture": "Nicht Pflicht; 5-10 % im Restaurant und kleine Trinkgelder für Guides, Fahrer und Bootscrews sind willkommen.",
+    "economicPillars": "Bekleidungsexport, Rücküberweisungen, Landwirtschaft (Reis, Jute, Fisch) und Pharma."
+   }
+  },
+  "itin": {
+   "routeName": "Dhaka, Sreemangal & Sundarbans: Flüsse, Tee & Mangroven",
+   "routeSummary": "Eine 8-tägige Route: Mogulbauten und Flusshafen in Alt-Dhaka, dann nach Nordosten zu den Teegärten von Sreemangal und über die Padma-Brücke zu den Moscheen von Bagerhat und den Mangroven der Sundarbans im Südwesten.",
+   "totalDays": 8,
+   "idealDurationText": "8-tägige Reise",
+   "bestSeason": "November – Februar (trocken und kühl); März – Mai heiß und stürmisch, Juni – Oktober Monsun und Hochwasser; Zyklonrisiko an der Küste im April – Mai und Oktober – November",
+   "transportMode": "Zug (Dhaka – Sreemangal und Dhaka – Khulna/Jessore) + lizenzierte Bootstour in den Sundarbans + Metro, Uber und Pathao in Dhaka",
+   "paceLevel": "Ausgewogen (Kultur & Natur)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stopp 1: Dhaka (Alt-Dhaka & Flusshafen)",
+     "recommendedDuration": "2 Tage",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "Lalbagh Fort",
+      "Ahsan Manzil (Rosa Palast)",
+      "Hafen Sadarghat und Fluss Buriganga",
+      "Sternmoschee und Shankhari Bazar"
+     ],
+     "activities": [
+      "Eine kurze Fahrt mit dem Ruderboot (Nouka) auf der Buriganga machen.",
+      "Alt-Dhaka per Fahrradrikscha erkunden.",
+      "Das Parlamentsgebäude (Louis Kahn) von außen ansehen."
+     ],
+     "foodAndDrinks": [
+      "Kacchi Biryani",
+      "Fuchka und Borhani"
+     ],
+     "criticalTips": [
+      "Wegen des Verkehrs die MRT-Metro nutzen und früh am Morgen losgehen.",
+      "Sadarghat ist extrem voll; Wertsachen vorne und verschlossen tragen."
+     ],
+     "mapsQuery": "Lalbagh Fort, Dhaka, Bangladesh"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stopp 2: Sreemangal (Teehauptstadt)",
+     "recommendedDuration": "2 Tage",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "Teeplantagen und Teeforschungsinstitut",
+      "Lawachara-Nationalpark (Hulock-Gibbons)",
+      "Feuchtgebiet Baikka Beel"
+     ],
+     "activities": [
+      "Mit dem Rad oder zu Fuß durch die Teegärten.",
+      "Eine geführte Waldwanderung in Lawachara machen.",
+      "Khasi- und Manipuri-Dörfer besuchen."
+     ],
+     "foodAndDrinks": [
+      "Siebenschichten-Tee",
+      "Reis mit Bhorta"
+     ],
+     "criticalTips": [
+      "Der Zug Dhaka – Sreemangal (Parabat oder Upaban Express) braucht ~4-5 Std.; Tickets vorab in der App von Bangladesh Railway kaufen.",
+      "Im Wald gibt es Blutegel; lange Socken und geschlossene Schuhe tragen."
+     ],
+     "mapsQuery": "Sreemangal, Moulvibazar, Bangladesh"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stopp 3: Bagerhat & Sundarbans (Khulna / Mongla)",
+     "recommendedDuration": "3 Tage",
+     "durationBadge": "3 Tage",
+     "highlights": [
+      "Sechzig-Kuppel-Moschee (Shat Gombuj)",
+      "Mangrovenkanäle der Sundarbans",
+      "Wildstationen Kotka und Karamjal"
+     ],
+     "activities": [
+      "An einer 2-3-tägigen lizenzierten Bootstour teilnehmen.",
+      "Bei Sonnenaufgang mit Kanus in schmale Kanäle fahren und Vögel, Krokodile und Axishirsche beobachten.",
+      "Das Grab von Khan Jahan Ali in Bagerhat besuchen."
+     ],
+     "foodAndDrinks": [
+      "Frischer Flussfisch und Garnelen aus der Bordküche",
+      "Shorshe Ilish"
+     ],
+     "criticalTips": [
+      "Die Sundarbans dürfen nur mit einem lizenzierten Veranstalter mit Genehmigung der Forstbehörde und in Begleitung eines bewaffneten Rangers betreten werden.",
+      "Der Zug Dhaka – Khulna braucht dank der Padma-Brücke nur noch ~5-6 Std.; bei Zyklonwarnungen fallen Touren aus."
+     ],
+     "mapsQuery": "Sixty Dome Mosque, Bagerhat, Bangladesh"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Shorshe Ilish",
+     "Kacchi Biryani",
+     "Bhuna Khichuri (gewürzter Reis mit Linsen)",
+     "Verschiedene Bhortas"
+    ],
+    "drinks": [
+     "Cha",
+     "Borhani",
+     "Akher Rosh"
+    ],
+    "streetFoods": [
+     "Fuchka",
+     "Jhalmuri",
+     "Mishti Doi"
+    ],
+    "diningAdvice": "Das Essen ist halal und wird mit Senföl und vielen Gewürzen zubereitet. Hilsa hat viele Gräten, vorsichtig essen; an Straßenständen belebte mit frisch Gekochtem wählen."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Universaladapter (G/D)",
+     "Langärmlige, lockere und dezente Kleidung; Tuch für Frauen",
+     "Mückenschutz (Dengue)",
+     "Staubmaske und Handdesinfektion"
+    ],
+    "safetyAndEtiquette": [
+     "An Protest- und Hartal-Tagen im Hotel bleiben und Menschenmengen meiden.",
+     "Vor dem Fotografieren von Frauen fragen und an religiösen Orten bedeckt sein."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "D",
+     "G",
+     "K"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Steckdosen sind gemischt: britisch dreipolig (G), rund dreipolig (D) und dünn zweipolig (C); schmale Ladegeräte passen oft, ein Universaladapter ist aber Pflicht. Stromausfälle kommen vor."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Leitungswasser nicht trinken (in manchen Gegenden auch Arsenbelastung); nur versiegeltes Flaschenwasser.",
+    "vaccines": [
+     "Hepatitis A und Typhus",
+     "Tetanus-Diphtherie und Masern (Standard)",
+     "Tollwut sowie Japanische Enzephalitis und Cholera bei langen Aufenthalten; Mückenschutz gegen Dengue, Malariaberatung für die Chittagong Hill Tracts"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "999"
+   },
+   "tipping": {
+    "custom": "Nicht Pflicht; kleine Trinkgelder (Bakschisch) sind üblich.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "5-10 % im Restaurant; die Bootscrew in den Sundarbans erhält am Ende ein gemeinsames Trinkgeld."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Keine (MwSt. 15 %)",
+    "minSpend": "Nicht zutreffend",
+    "customsNote": "Bangladesch erstattet Touristen keine Mehrwertsteuer. Die Ausfuhr von Antiquitäten und archäologischen Objekten ist verboten; Belege für Jamdani-Saris und Kunsthandwerk aufbewahren."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.10 - $0.40",
+    "topCarriers": [
+     "Grameenphone",
+     "Robi",
+     "Banglalink"
+    ],
+    "airportSimTrapWarning": "Am Flughafen Dhaka registrieren die Schalter von Grameenphone und Robi SIMs per Fingerabdruck zu offiziellen Preisen. Auf dem Land und Richtung Sundarbans hat meist Grameenphone die beste Abdeckung."
+   },
+   "touristScams": [
+    {
+     "title": "CNG-Touristenpreis",
+     "desc": "CNG- und Rikschafahrer nennen Ausländern ein Vielfaches und erhöhen den Preis unterwegs.",
+     "tip": "Den Uber-/Pathao-Preis als Referenz nehmen und vor dem Einsteigen einigen."
+    },
+    {
+     "title": "Handyraub durchs Fenster",
+     "desc": "Diebe greifen im Stau durch die Fenster von CNGs und Bussen nach Handys und Taschen.",
+     "tip": "Im Stau das Handy nicht benutzen und Taschen zwischen die Füße stellen."
+    },
+    {
+     "title": "Unlizenzierte Sundarbans-Touren",
+     "desc": "Sehr billige Boote in Mongla haben oft keine Schwimmwesten, Genehmigungen oder Ranger.",
+     "tip": "Gut bewertete Veranstalter mit Genehmigung der Forstbehörde wählen und die Papiere zeigen lassen."
+    }
+   ]
+  }
+ },
+ "es": {
+  "insights": {
+   "currency": "Taka bangladesí (BDT)",
+   "plugType": "Tipo C, D, G, K (220V, 50Hz)",
+   "bestMonths": "Noviembre – febrero (seco y fresco); marzo – mayo caluroso y tormentoso, junio – octubre monzón e inundaciones; riesgo de ciclones en la costa en abril – mayo y octubre – noviembre",
+   "safety": {
+    "crimeRateSummary": "Desde el levantamiento de 2024 siguen las manifestaciones políticas, huelgas (hartal) y episodios de violencia, y existe amenaza terrorista. Hay advertencias oficiales para las Colinas de Chittagong (Rangamati, Bandarban, Khagrachari). En Dhaka son comunes los tirones de móviles y bolsos en el tráfico y la seguridad vial es muy mala.",
+    "commonScams": [
+     "Conductores de CNG y rickshaw que cobran a los extranjeros varias veces la tarifa",
+     "Robo de móviles a través de la ventanilla del CNG o del autobús en el atasco",
+     "Tours en barco baratos y sin licencia por los Sundarbans sin equipo de seguridad"
+    ],
+    "safeTravelTips": [
+     "Evita desplazarte en días de protesta o hartal; sigue las noticias locales y los avisos de la embajada.",
+     "Usa Uber o Pathao; en un CNG no acerques el móvil ni el bolso a la ventanilla.",
+     "No vayas a las Colinas de Chittagong sin permisos ni sin consultar los avisos oficiales."
+    ],
+    "emergencyNumbers": {
+     "police": "999",
+     "ambulance": "999",
+     "general": "999"
+    },
+    "safetyScore": 40,
+    "safetyLevel": "Precaución Aconsejada",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60"
+   },
+   "internet": {
+    "networkCoverage": "4G en ciudades; débil o inexistente en el campo y los Sundarbans. Durante disturbios puede restringirse internet móvil.",
+    "costPerGbUsd": "~0.10 - 0.40 $",
+    "esimAvailability": "Limitada – la SIM local exige pasaporte y registro biométrico; las eSIM internacionales funcionan",
+    "bestCarriers": [
+     "Grameenphone",
+     "Robi",
+     "Banglalink",
+     "Teletalk"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Débil – Dhaka tiene uno de los peores tráficos del mundo; la línea 6 del metro alivia el eje norte–sur. Entre ciudades hay trenes y autobuses, y en los ríos ferris y launches.",
+    "costLevel": "Barato",
+    "singleTicketUsd": "~0.15 - 0.85 $ (metro de Dhaka)",
+    "dailyPassUsd": "No hay pase diario; se usa la tarjeta recargable MRT Pass",
+    "popularRideApps": [
+     "Uber",
+     "Pathao",
+     "Obhai"
+    ],
+    "taxiAdvice": "En Dhaka, Uber y Pathao (coches y motos) son lo más seguro y transparente. Con CNG y rickshaws pacta el precio antes; incluso trayectos cortos pueden tardar una hora por el tráfico."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "20 - 35 $",
+    "dailyBudgetMidrangeUsd": "45 - 90 $",
+    "budgetMealUsd": "1.50 - 4 $",
+    "coffeeUsd": "1 - 3 $",
+    "waterBottleUsd": "0.15 - 0.30 $",
+    "hostelDormUsd": "8 - 15 $",
+    "hotel3StarUsd": "25 - 60 $",
+    "flightCostIndex": "Moderado (Estambul – Dhaka directo ~7 h)",
+    "flightTip": "Turkish Airlines vuela directo Estambul – Dhaka; también son habituales las conexiones vía el Golfo. En el país, US-Bangla, Biman y Novoair vuelan a Cox’s Bazar, Sylhet y Jessore (para los Sundarbans)."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Los musulmanes saludan con “Assalamu alaikum” y los hindúes con “Nomoshkar”; los hombres no suelen dar la mano a las mujeres salvo que ellas la ofrezcan.",
+     "Se espera vestimenta conservadora; para mujeres, ropa holgada de manga larga y pañuelo.",
+     "Los extranjeros despiertan mucha curiosidad y se forman corrillos; sé paciente y amable. Se come con la mano derecha."
+    ],
+    "festivals": [
+     "Pohela Boishakh – Año Nuevo bengalí (14 de abril)",
+     "Ekushey – Día Internacional de la Lengua Materna (21 de febrero)",
+     "Durga Puja (octubre) y las dos fiestas del Eid"
+    ],
+    "lifestyle": "Una vida intensa y cálida marcada por los ríos; la lengua, la poesía y la música bengalíes (canciones de Rabindra y Nazrul) son orgullo nacional. Los puestos de té (tong) son el centro de la charla y el críquet apasiona."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Sundarbans – el mayor manglar del mundo y tigres de Bengala (UNESCO)",
+     "Bagerhat – Mezquita de las Sesenta Cúpulas (UNESCO)",
+     "Vieja Dhaka – fuerte de Lalbagh, Ahsan Manzil y puerto de Sadarghat",
+     "Plantaciones de té de Sreemangal y Parque Nacional Lawachara",
+     "Cox’s Bazar – la playa natural más larga del mundo",
+     "Monasterio budista de Paharpur (UNESCO)"
+    ],
+    "bestSeasons": "Noviembre – febrero (seco y fresco); marzo – mayo caluroso y tormentoso, junio – octubre monzón e inundaciones; riesgo de ciclones en la costa en abril – mayo y octubre – noviembre",
+    "travelStyleTip": "Bangladés aún está fuera del turismo de masas; un operador local facilita mucho las cosas, sobre todo para los Sundarbans. Por el tráfico, planea un solo gran destino al día."
+   },
+   "religion": {
+    "primaryReligions": "Islam (~91 %, mayoría suní), hinduismo (~8 %), budismo y cristianismo (<1 %).",
+    "respectNorms": "En mezquitas descálzate y las mujeres se cubren la cabeza; evita las visitas durante la oración del viernes. En Ramadán no comas en público de día.",
+    "sacredSites": [
+     "Mezquita de la Estrella – Tara Masjid (Dhaka)",
+     "Templo de Dhakeshwari (Dhaka)",
+     "Santuario de Hazrat Shah Jalal (Sylhet)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Bengalí (bangla, con escritura propia); el Movimiento por la Lengua de 1952 es la base de la identidad nacional.",
+    "englishProficiency": "Moderado a bueno en negocios, hoteles y gente con estudios en Dhaka; limitado en el campo.",
+    "phrases": [
+     {
+      "phrase": "আসসালামু আলাইকুম / নমস্কার (Assalamu alaikum / Nomoshkar)",
+      "meaning": "Hola (saludo musulmán / hindú)",
+      "translation": "Hola (saludo musulmán / hindú)",
+      "pronunciation": "as-sa-LA-mu a-LAI-kum / no-mosh-KAR"
+     },
+     {
+      "phrase": "ধন্যবাদ (Dhonnobad)",
+      "meaning": "Gracias",
+      "translation": "Gracias",
+      "pronunciation": "DHON-no-bad"
+     },
+     {
+      "phrase": "দাম কত? (Dam koto?)",
+      "meaning": "¿Cuánto cuesta?",
+      "translation": "¿Cuánto cuesta?",
+      "pronunciation": "daam KO-to"
+     },
+     {
+      "phrase": "খুব মজা (Khub moja)",
+      "meaning": "Muy rico",
+      "translation": "Muy rico",
+      "pronunciation": "khub MO-ja"
+     },
+     {
+      "phrase": "আবার দেখা হবে (Abar dekha hobe)",
+      "meaning": "Hasta la próxima",
+      "translation": "Hasta la próxima",
+      "pronunciation": "A-bar DE-kha HO-be"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "El delta de Bengala fue un rico centro comercial bajo los reyes budistas pala, el Sultanato de Bengala y los mogoles; Dhaka fue capital de la Bengala mogol desde 1610. Tras el dominio británico pasó a ser Pakistán Oriental en 1947 y, tras el Movimiento por la Lengua de 1952, en 1971 nació Bangladés independiente.",
+    "milestones": [
+     "1610: Dhaka, capital de la Bengala mogol",
+     "1952: Movimiento por la Lengua Bengalí (21 de febrero)",
+     "1971: Independencia",
+     "2006: Nobel de la Paz para Muhammad Yunus y el Grameen Bank"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Shorshe ilish (sábalo hilsa en salsa de mostaza – pescado nacional)",
+     "Kacchi biryani (biryani de cordero al estilo de la Vieja Dhaka)",
+     "Bhorta (purés de berenjena, patata y pescado seco)"
+    ],
+    "traditionalDrinks": [
+     "Cha (té con leche; el té de siete capas de Sreemangal)",
+     "Borhani (bebida de yogur especiada)",
+     "Akher rosh (zumo de caña de azúcar)"
+    ],
+    "streetFoodAndDesserts": [
+     "Fuchka (pani puri bengalí)",
+     "Jhalmuri (arroz inflado picante)",
+     "Mishti doi (yogur dulce) y roshogolla"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Kazi Nazrul Islam (poeta nacional)",
+     "Muhammad Yunus (pionero del microcrédito, Nobel de la Paz)",
+     "Fazle Hasan Abed (fundador de BRAC, la mayor ONG del mundo)"
+    ],
+    "strongSectors": [
+     "Confección (uno de los mayores exportadores del mundo)",
+     "Industria farmacéutica",
+     "Yute y productos de yute"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Manda el efectivo; los locales usan los monederos móviles bKash y Nagad. Las tarjetas funcionan en hoteles y restaurantes de categoría; los cajeros (DBBL, BRAC Bank, etc.) abundan en ciudades pero escasean en el campo.",
+    "tippingCulture": "No obligatoria; se agradece un 5-10 % en restaurantes y algo para guías, conductores y tripulaciones.",
+    "economicPillars": "Exportación textil, remesas, agricultura (arroz, yute, pescado) y farmacia."
+   }
+  },
+  "itin": {
+   "routeName": "Dhaka, Sreemangal y los Sundarbans: ríos, té y manglares",
+   "routeSummary": "Una ruta de 8 días: reliquias mogoles y puerto fluvial de la Vieja Dhaka, luego al noreste a las plantaciones de té de Sreemangal y, cruzando el puente de Padma, a las mezquitas de Bagerhat y los manglares de los Sundarbans en el suroeste.",
+   "totalDays": 8,
+   "idealDurationText": "Itinerario de 8 días",
+   "bestSeason": "Noviembre – febrero (seco y fresco); marzo – mayo caluroso y tormentoso, junio – octubre monzón e inundaciones; riesgo de ciclones en la costa en abril – mayo y octubre – noviembre",
+   "transportMode": "Tren (Dhaka – Sreemangal y Dhaka – Khulna/Jessore) + tour en barco con licencia por los Sundarbans + metro, Uber y Pathao en Dhaka",
+   "paceLevel": "Equilibrado (cultura y naturaleza)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Dhaka (Vieja Dhaka y puerto fluvial)",
+     "recommendedDuration": "2 Días",
+     "durationBadge": "2 Días",
+     "highlights": [
+      "Fuerte de Lalbagh",
+      "Ahsan Manzil (Palacio Rosa)",
+      "Puerto de Sadarghat y río Buriganga",
+      "Mezquita de la Estrella y Shankhari Bazar"
+     ],
+     "activities": [
+      "Da un paseo en barca de remos (nouka) por el Buriganga.",
+      "Recorre la Vieja Dhaka en rickshaw.",
+      "Contempla por fuera el Parlamento Nacional (Louis Kahn)."
+     ],
+     "foodAndDrinks": [
+      "Kacchi biryani",
+      "Fuchka y borhani"
+     ],
+     "criticalTips": [
+      "Por el tráfico, usa el metro MRT y sal temprano.",
+      "Sadarghat está abarrotado; lleva tus objetos de valor delante y cerrados."
+     ],
+     "mapsQuery": "Lalbagh Fort, Dhaka, Bangladesh"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Sreemangal (capital del té)",
+     "recommendedDuration": "2 Días",
+     "durationBadge": "2 Días",
+     "highlights": [
+      "Plantaciones de té y el instituto de investigación del té",
+      "Parque Nacional Lawachara (gibones hoolock)",
+      "Humedal de Baikka Beel"
+     ],
+     "activities": [
+      "Recorre las plantaciones en bici o a pie.",
+      "Haz una caminata guiada por el bosque de Lawachara.",
+      "Visita aldeas khasi y manipuri."
+     ],
+     "foodAndDrinks": [
+      "Té de siete capas",
+      "Arroz con bhorta"
+     ],
+     "criticalTips": [
+      "El tren Dhaka – Sreemangal (Parabat o Upaban Express) tarda ~4-5 h; compra el billete con antelación en la app de Bangladesh Railway.",
+      "En el bosque puede haber sanguijuelas; lleva calcetines largos y calzado cerrado."
+     ],
+     "mapsQuery": "Sreemangal, Moulvibazar, Bangladesh"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Bagerhat y los Sundarbans (Khulna / Mongla)",
+     "recommendedDuration": "3 Días",
+     "durationBadge": "3 Días",
+     "highlights": [
+      "Mezquita de las Sesenta Cúpulas (Shat Gombuj)",
+      "Canales de manglar de los Sundarbans",
+      "Estaciones de fauna de Kotka y Karamjal"
+     ],
+     "activities": [
+      "Únete a un tour en barco con licencia de 2-3 días.",
+      "Al amanecer entra en canoa en canales estrechos para ver aves, cocodrilos y ciervos moteados.",
+      "Visita la tumba de Khan Jahan Ali en Bagerhat."
+     ],
+     "foodAndDrinks": [
+      "Pescado de río y gambas frescos de la cocina del barco",
+      "Shorshe ilish"
+     ],
+     "criticalTips": [
+      "A los Sundarbans solo se entra con un operador con licencia y permiso forestal, acompañado de un guarda armado.",
+      "El tren Dhaka – Khulna tarda ahora ~5-6 h gracias al puente de Padma; con aviso de ciclón se cancelan los tours."
+     ],
+     "mapsQuery": "Sixty Dome Mosque, Bagerhat, Bangladesh"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Shorshe ilish",
+     "Kacchi biryani",
+     "Bhuna khichuri (arroz con lentejas especiado)",
+     "Variedad de bhortas"
+    ],
+    "drinks": [
+     "Cha",
+     "Borhani",
+     "Akher rosh"
+    ],
+    "streetFoods": [
+     "Fuchka",
+     "Jhalmuri",
+     "Mishti doi"
+    ],
+    "diningAdvice": "La comida es halal y lleva aceite de mostaza y muchas especias. El hilsa tiene muchas espinas, come con cuidado; en la calle elige puestos concurridos que cocinen al momento."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptador universal (G/D)",
+     "Ropa holgada, de manga larga y discreta; pañuelo para mujeres",
+     "Repelente de mosquitos (dengue)",
+     "Mascarilla y gel desinfectante"
+    ],
+    "safetyAndEtiquette": [
+     "Quédate en el hotel en días de protesta o hartal y evita las multitudes.",
+     "Pide permiso antes de fotografiar a mujeres y viste con modestia en lugares religiosos."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "D",
+     "G",
+     "K"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Los enchufes son variados: británicos de tres patas (G), redondos de tres patas (D) y finos de dos (C); los cargadores finos suelen entrar, pero el adaptador universal es imprescindible. Hay apagones."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "El agua del grifo no es potable (en algunas zonas hay además arsénico); bebe solo agua embotellada sellada.",
+    "vaccines": [
+     "Hepatitis A y fiebre tifoidea",
+     "Tétanos-difteria y sarampión (rutina)",
+     "Rabia y, para estancias largas, encefalitis japonesa y cólera; protección contra el dengue y consejo sobre malaria en las Colinas de Chittagong"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "999"
+   },
+   "tipping": {
+    "custom": "No obligatoria; las pequeñas propinas (baksheesh) son habituales.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "5-10 % en restaurantes; a la tripulación de los Sundarbans se le da una propina conjunta al final."
+   },
+   "taxFree": {
+    "vatRefundPercent": "No hay (IVA 15 %)",
+    "minSpend": "No aplica",
+    "customsNote": "Bangladés no devuelve el IVA a turistas. Está prohibido exportar antigüedades y objetos arqueológicos; guarda los recibos de saris jamdani y artesanía."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.10 - $0.40",
+    "topCarriers": [
+     "Grameenphone",
+     "Robi",
+     "Banglalink"
+    ],
+    "airportSimTrapWarning": "En el aeropuerto de Dhaka, Grameenphone y Robi registran la SIM con huella a precio oficial. En el campo y camino a los Sundarbans, Grameenphone suele tener la mejor cobertura."
+   },
+   "touristScams": [
+    {
+     "title": "Precio turista en CNG",
+     "desc": "Los conductores de CNG y rickshaw piden varias veces la tarifa y la suben a mitad de camino.",
+     "tip": "Usa el precio de Uber/Pathao como referencia y cierra el precio antes de subir."
+    },
+    {
+     "title": "Robo del móvil por la ventanilla",
+     "desc": "Ladrones meten la mano por las ventanillas de CNG y autobuses en atascos para robar móviles y bolsos.",
+     "tip": "No uses el móvil en el atasco y lleva el bolso entre los pies."
+    },
+    {
+     "title": "Tours sin licencia a los Sundarbans",
+     "desc": "Los barcos muy baratos de Mongla pueden no tener chalecos, permisos ni guardas.",
+     "tip": "Elige operadores bien valorados con permiso forestal y pide verlo."
+    }
+   ]
+  }
+ },
+ "ru": {
+  "insights": {
+   "currency": "Бангладешская така (BDT)",
+   "plugType": "Тип C, D, G, K (220V, 50Hz)",
+   "bestMonths": "Ноябрь – февраль (сухо и прохладно); март – май жарко и грозово, июнь – октябрь — муссон и наводнения; риск циклонов на побережье в апреле – мае и октябре – ноябре",
+   "safety": {
+    "crimeRateSummary": "После восстания 2024 года продолжаются политические демонстрации, забастовки (хартал) и вспышки насилия; есть угроза терроризма. Официальные предупреждения касаются Читтагонгского горного района (Рангамати, Бандарбан, Кхаграчари). В Дакке в пробках часто вырывают телефоны и сумки, безопасность на дорогах очень низкая.",
+    "commonScams": [
+     "Водители CNG-авторикш и велорикш, берущие с иностранцев в разы больше",
+     "Кражи телефонов через окна CNG или автобуса в пробке",
+     "Дешёвые нелицензированные лодочные туры в Сундарбан без средств безопасности"
+    ],
+    "safeTravelTips": [
+     "В дни протестов и харталов не ездите по городу и между городами; следите за местными новостями и сообщениями посольства.",
+     "Пользуйтесь Uber или Pathao; в CNG не держите телефон и сумку у окна.",
+     "Не ездите в Читтагонгский горный район без разрешений и проверки официальных рекомендаций."
+    ],
+    "emergencyNumbers": {
+     "police": "999",
+     "ambulance": "999",
+     "general": "999"
+    },
+    "safetyScore": 40,
+    "safetyLevel": "Требуется Осторожность",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60"
+   },
+   "internet": {
+    "networkCoverage": "4G в городах; слабый или нет в сельской местности и в Сундарбане. Во время беспорядков мобильный интернет могут ограничивать.",
+    "costPerGbUsd": "~0.10 - 0.40 $",
+    "esimAvailability": "Ограничено – местная SIM по паспорту и биометрии; международные eSIM работают",
+    "bestCarriers": [
+     "Grameenphone",
+     "Robi",
+     "Banglalink",
+     "Teletalk"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Слабое – в Дакке одни из худших пробок в мире; линия метро MRT-6 разгружает ось север–юг. Между городами — поезда и автобусы, по рекам — паромы и речные суда.",
+    "costLevel": "Дёшево",
+    "singleTicketUsd": "~0.15 - 0.85 $ (метро Дакки)",
+    "dailyPassUsd": "Проездного на день нет; используется пополняемая карта MRT Pass",
+    "popularRideApps": [
+     "Uber",
+     "Pathao",
+     "Obhai"
+    ],
+    "taxiAdvice": "В Дакке самые безопасные и прозрачные варианты — Uber и Pathao (машины и мотоциклы). С CNG и рикшами договаривайтесь о цене заранее; даже короткая поездка в пробках может занять час."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "20 - 35 $",
+    "dailyBudgetMidrangeUsd": "45 - 90 $",
+    "budgetMealUsd": "1.50 - 4 $",
+    "coffeeUsd": "1 - 3 $",
+    "waterBottleUsd": "0.15 - 0.30 $",
+    "hostelDormUsd": "8 - 15 $",
+    "hotel3StarUsd": "25 - 60 $",
+    "flightCostIndex": "Средний (Стамбул – Дакка напрямую ~7 ч)",
+    "flightTip": "Turkish Airlines летает напрямую Стамбул – Дакка; распространены и стыковки через Залив. Внутри страны US-Bangla, Biman и Novoair летают в Кокс-Базар, Силхет и Джессор (для Сундарбана)."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Мусульмане здороваются «Ассаламу алейкум», индуисты — «Номошкар»; мужчины обычно не пожимают руку женщинам, если те не протянут её сами.",
+     "Ожидается скромная одежда; женщинам подойдут свободные вещи с длинным рукавом и платок.",
+     "Иностранцы вызывают огромное любопытство, вокруг может собраться толпа — будьте терпеливы и доброжелательны. Едят правой рукой."
+    ],
+    "festivals": [
+     "Пахела Бойшакх – Бенгальский Новый год (14 апреля)",
+     "Экуше – Международный день родного языка (21 февраля)",
+     "Дурга-пуджа (октябрь) и два Ида"
+    ],
+    "lifestyle": "Многолюдная, тёплая жизнь в ритме рек; бенгальский язык, поэзия и музыка (песни Рабиндраната и Назрула) — национальная гордость. Чайные лотки (тонг) — центр общения, крикет обожают."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Сундарбан – крупнейший в мире мангровый лес и бенгальские тигры (ЮНЕСКО)",
+     "Багерхат – Шестидесятикупольная мечеть (ЮНЕСКО)",
+     "Старая Дакка – форт Лалбагх, Ахсан-Манзил и порт Садаргхат",
+     "Чайные сады Сримонгола и национальный парк Лавачара",
+     "Кокс-Базар – самый длинный естественный пляж в мире",
+     "Буддийский монастырь Пахарпур (ЮНЕСКО)"
+    ],
+    "bestSeasons": "Ноябрь – февраль (сухо и прохладно); март – май жарко и грозово, июнь – октябрь — муссон и наводнения; риск циклонов на побережье в апреле – мае и октябре – ноябре",
+    "travelStyleTip": "Бангладеш пока вне массового туризма; местный оператор очень облегчает поездку, особенно в Сундарбан. Из-за пробок планируйте одну крупную цель в день."
+   },
+   "religion": {
+    "primaryReligions": "Ислам (~91 %, в основном сунниты), индуизм (~8 %), буддизм и христианство (<1 %).",
+    "respectNorms": "В мечетях снимают обувь, женщины покрывают голову; не приходите во время пятничной молитвы. В Рамадан днём не ешьте на людях.",
+    "sacredSites": [
+     "Звёздная мечеть – Тара-Масджид (Дакка)",
+     "Храм Дхакешвари (Дакка)",
+     "Мавзолей Хазрата Шаха Джалала (Силхет)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Бенгальский (бангла, собственная письменность); Языковое движение 1952 года — основа национальной идентичности.",
+    "englishProficiency": "Средний или хороший уровень в бизнесе, отелях и среди образованных людей в Дакке; в сельской местности слабый.",
+    "phrases": [
+     {
+      "phrase": "আসসালামু আলাইকুম / নমস্কার (Assalamu alaikum / Nomoshkar)",
+      "meaning": "Здравствуйте (мусульманское / индуистское приветствие)",
+      "translation": "Здравствуйте (мусульманское / индуистское приветствие)",
+      "pronunciation": "as-sa-LA-mu a-LAI-kum / no-mosh-KAR"
+     },
+     {
+      "phrase": "ধন্যবাদ (Dhonnobad)",
+      "meaning": "Спасибо",
+      "translation": "Спасибо",
+      "pronunciation": "DHON-no-bad"
+     },
+     {
+      "phrase": "দাম কত? (Dam koto?)",
+      "meaning": "Сколько стоит?",
+      "translation": "Сколько стоит?",
+      "pronunciation": "daam KO-to"
+     },
+     {
+      "phrase": "খুব মজা (Khub moja)",
+      "meaning": "Очень вкусно",
+      "translation": "Очень вкусно",
+      "pronunciation": "khub MO-ja"
+     },
+     {
+      "phrase": "আবার দেখা হবে (Abar dekha hobe)",
+      "meaning": "До встречи",
+      "translation": "До встречи",
+      "pronunciation": "A-bar DE-kha HO-be"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Дельта Бенгалии была богатым торговым центром при буддийских царях Пала, Бенгальском султанате и Великих Моголах; в 1610 году Дакка стала столицей могольской Бенгалии. После британского правления в 1947 году территория стала Восточным Пакистаном, а после Языкового движения 1952 года в 1971 году возникло независимое государство Бангладеш.",
+    "milestones": [
+     "1610: Дакка становится столицей могольской Бенгалии",
+     "1952: Движение за бенгальский язык (21 февраля)",
+     "1971: независимость",
+     "2006: Нобелевская премия мира Мухаммаду Юнусу и Grameen Bank"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Шорше илиш (рыба хилса в горчичном соусе – национальная рыба)",
+     "Каччи бирьяни (бирьяни с бараниной по-староддаккски)",
+     "Бхорта (пюре из баклажанов, картофеля и сушёной рыбы)"
+    ],
+    "traditionalDrinks": [
+     "Ча (чай с молоком; семислойный чай Сримонгола)",
+     "Борхани (пряный йогуртовый напиток)",
+     "Акхер рош (сок сахарного тростника)"
+    ],
+    "streetFoodAndDesserts": [
+     "Фучка (бенгальский пани пури)",
+     "Джхалмури (острый воздушный рис)",
+     "Мишти дои (сладкий йогурт) и рошоголла"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Кази Назрул Ислам (национальный поэт)",
+     "Мухаммад Юнус (пионер микрокредитования, Нобелевская премия мира)",
+     "Фазле Хасан Абед (основатель BRAC, крупнейшей НКО мира)"
+    ],
+    "strongSectors": [
+     "Готовая одежда (один из крупнейших экспортёров мира)",
+     "Фармацевтика",
+     "Джут и изделия из него"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Главное — наличные; местные пользуются мобильными кошельками bKash и Nagad. Карты принимают в дорогих отелях и ресторанах; банкоматы (DBBL, BRAC Bank и др.) есть в городах, в глубинке их мало.",
+    "tippingCulture": "Необязательны; 5-10 % в ресторане и небольшие чаевые гидам, водителям и экипажам лодок приветствуются.",
+    "economicPillars": "Экспорт одежды, денежные переводы, сельское хозяйство (рис, джут, рыба) и фармацевтика."
+   }
+  },
+  "itin": {
+   "routeName": "Дакка, Сримонгол и Сундарбан: реки, чай и мангры",
+   "routeSummary": "8-дневный маршрут: могольские памятники и речной порт Старой Дакки, затем на северо-восток к чайным садам Сримонгола и через мост Падма к мечетям Багерхата и мангровым лесам Сундарбана на юго-западе.",
+   "totalDays": 8,
+   "idealDurationText": "8-дневный маршрут",
+   "bestSeason": "Ноябрь – февраль (сухо и прохладно); март – май жарко и грозово, июнь – октябрь — муссон и наводнения; риск циклонов на побережье в апреле – мае и октябре – ноябре",
+   "transportMode": "Поезд (Дакка – Сримонгол и Дакка – Кхулна/Джессор) + лицензированный лодочный тур по Сундарбану + метро, Uber и Pathao в Дакке",
+   "paceLevel": "Сбалансированный (культура и природа)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Остановка 1: Дакка (Старая Дакка и речной порт)",
+     "recommendedDuration": "2 дня",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Форт Лалбагх",
+      "Ахсан-Манзил (Розовый дворец)",
+      "Порт Садаргхат и река Буриганга",
+      "Звёздная мечеть и Шанкхари-базар"
+     ],
+     "activities": [
+      "Прокатитесь на весельной лодке (ноука) по Буриганге.",
+      "Объезжайте Старую Дакку на велорикше.",
+      "Посмотрите снаружи здание парламента (Луис Кан)."
+     ],
+     "foodAndDrinks": [
+      "Каччи бирьяни",
+      "Фучка и борхани"
+     ],
+     "criticalTips": [
+      "Из-за пробок пользуйтесь метро MRT и выходите рано утром.",
+      "В Садаргхате огромная толпа — держите ценности спереди и в закрытой сумке."
+     ],
+     "mapsQuery": "Lalbagh Fort, Dhaka, Bangladesh"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Остановка 2: Сримонгол (чайная столица)",
+     "recommendedDuration": "2 дня",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Чайные плантации и институт чая",
+      "Национальный парк Лавачара (гиббоны хулок)",
+      "Водно-болотные угодья Байкка-Бил"
+     ],
+     "activities": [
+      "Прокатитесь на велосипеде или прогуляйтесь по чайным садам.",
+      "Пройдитесь с гидом по лесу Лавачара.",
+      "Посетите деревни кхаси и манипури."
+     ],
+     "foodAndDrinks": [
+      "Семислойный чай",
+      "Рис с бхортой"
+     ],
+     "criticalTips": [
+      "Поезд Дакка – Сримонгол (Parabat или Upaban Express) идёт ~4-5 часов; билеты заранее покупайте в приложении Bangladesh Railway.",
+      "В лесу бывают пиявки — надевайте длинные носки и закрытую обувь."
+     ],
+     "mapsQuery": "Sreemangal, Moulvibazar, Bangladesh"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Остановка 3: Багерхат и Сундарбан (Кхулна / Монгла)",
+     "recommendedDuration": "3 дня",
+     "durationBadge": "3 дня",
+     "highlights": [
+      "Шестидесятикупольная мечеть (Шат-Гомбудж)",
+      "Мангровые протоки Сундарбана",
+      "Станции дикой природы Котка и Карамджал"
+     ],
+     "activities": [
+      "Отправьтесь в лицензированный лодочный тур на 2-3 дня.",
+      "На рассвете на каноэ заплывите в узкие протоки — птицы, крокодилы и пятнистые олени.",
+      "Посетите мавзолей Хан Джахан Али в Багерхате."
+     ],
+     "foodAndDrinks": [
+      "Свежая речная рыба и креветки с камбуза",
+      "Шорше илиш"
+     ],
+     "criticalTips": [
+      "В Сундарбан можно попасть только с лицензированным оператором с разрешением Лесного департамента и в сопровождении вооружённого рейнджера.",
+      "Благодаря мосту Падма поезд Дакка – Кхулна идёт ~5-6 часов; при угрозе циклона туры отменяют."
+     ],
+     "mapsQuery": "Sixty Dome Mosque, Bagerhat, Bangladesh"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Шорше илиш",
+     "Каччи бирьяни",
+     "Бхуна кхичури (пряный рис с чечевицей)",
+     "Ассорти бхорты"
+    ],
+    "drinks": [
+     "Ча",
+     "Борхани",
+     "Акхер рош"
+    ],
+    "streetFoods": [
+     "Фучка",
+     "Джхалмури",
+     "Мишти дои"
+    ],
+    "diningAdvice": "Еда халяльная, готовят на горчичном масле с большим количеством специй. В хилсе много костей — ешьте осторожно; на улице выбирайте оживлённые лотки со свежей готовкой."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Универсальный переходник (G/D)",
+     "Свободная скромная одежда с длинным рукавом; платок для женщин",
+     "Средство от комаров (денге)",
+     "Маска от пыли и антисептик"
+    ],
+    "safetyAndEtiquette": [
+     "В дни протестов и харталов оставайтесь в отеле и избегайте толп.",
+     "Спрашивайте разрешения перед съёмкой женщин и одевайтесь скромно в святых местах."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "D",
+     "G",
+     "K"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Розетки разные: британские трёхконтактные (G), круглые трёхконтактные (D) и тонкие двухконтактные (C); тонкие зарядки часто подходят, но универсальный переходник обязателен. Бывают отключения света."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Водопроводную воду не пьют (в ряде районов ещё и мышьяк); пейте только запечатанную бутилированную.",
+    "vaccines": [
+     "Гепатит A и брюшной тиф",
+     "Столбняк-дифтерия и корь (плановые)",
+     "Бешенство, при долгом пребывании — японский энцефалит и холера; защита от комаров (денге), консультация по малярии для Читтагонгского горного района"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "999"
+   },
+   "tipping": {
+    "custom": "Необязательны; небольшие чаевые (бакшиш) распространены.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "5-10 % в ресторанах; экипажу лодки в Сундарбане в конце тура дают общие чаевые."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Нет (НДС 15 %)",
+    "minSpend": "Не применяется",
+    "customsNote": "Возврата НДС туристам в Бангладеш нет. Вывоз антиквариата и археологических предметов запрещён; сохраняйте чеки на сари джамдани и ремесленные изделия."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.10 - $0.40",
+    "topCarriers": [
+     "Grameenphone",
+     "Robi",
+     "Banglalink"
+    ],
+    "airportSimTrapWarning": "В аэропорту Дакки стойки Grameenphone и Robi регистрируют SIM по отпечаткам пальцев по официальным ценам. В сельской местности и по пути в Сундарбан лучшее покрытие обычно у Grameenphone."
+   },
+   "touristScams": [
+    {
+     "title": "Туристическая цена CNG",
+     "desc": "Водители CNG и рикш называют иностранцам цену в разы выше и повышают её по дороге.",
+     "tip": "Ориентируйтесь на цену Uber/Pathao и договоритесь до посадки."
+    },
+    {
+     "title": "Кражи телефонов через окно",
+     "desc": "Воры просовывают руку в окна CNG и автобусов в пробках и выхватывают телефоны и сумки.",
+     "tip": "Не пользуйтесь телефоном в пробке, держите сумку между ног."
+    },
+    {
+     "title": "Нелицензированные туры в Сундарбан",
+     "desc": "На очень дешёвых лодках в Монгле может не быть спасжилетов, разрешений и рейнджеров.",
+     "tip": "Выбирайте операторов с хорошими отзывами и разрешением Лесного департамента и просите его показать."
+    }
+   ]
+  }
+ }
+}

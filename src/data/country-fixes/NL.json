@@ -246,6 +246,60 @@
      "mapsQuery": "Markthal, Rotterdam, Netherlands"
     }
    ]
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Avrupa tipi iki yuvarlak uçlu C/F (Schuko) priz; Türkiye ile aynı, adaptör gerekmez."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Musluk suyu Avrupa’nın en kalitelilerinden biridir ve her yerde içilebilir.",
+    "vaccines": [
+     "Rutin aşılar (KKK, tetanoz)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "112"
+   },
+   "tipping": {
+    "custom": "Fiyatlara servis dahildir; memnunsanız %5-10 bırakmak veya hesabı yuvarlamak yaygındır.",
+    "standardPercent": 10,
+    "rule": "round_up",
+    "note": "Kafe ve taksilerde hesabı yuvarlamak yeterlidir."
+   },
+   "taxFree": {
+    "vatRefundPercent": "%21 KDV; iade komisyon sonrası ~%10-14",
+    "minSpend": "Mağaza/fiş başına genelde 50 €",
+    "customsNote": "Tax Free hizmeti veren mağazalarda form isteyin; AB’den son çıkış havalimanında (ör. Schiphol) check-in öncesi gümrükte damgalatın."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.50 - $3",
+    "topCarriers": [
+     "KPN",
+     "Vodafone",
+     "Odido"
+    ],
+    "airportSimTrapWarning": "Schiphol’deki satış noktaları pahalıdır; süpermarket ve kioskta satılan Lebara/Lycamobile hatları veya e-SIM daha ucuzdur. AB roaming Türk hatlarına uygulanmaz."
+   },
+   "touristScams": [
+    {
+     "title": "Sokak satıcıları",
+     "desc": "Kırmızı Fener Bölgesi’nde sokakta uyuşturucu satan kişiler sahte veya tehlikeli madde satar; polis turistleri ayrıca uyarır.",
+     "tip": "Sokakta size bir şey satmaya çalışanlarla hiç muhatap olmayın."
+    },
+    {
+     "title": "Çalıntı bisiklet",
+     "desc": "Köprü başlarında çok ucuza bisiklet satan kişiler çalıntı mal satar; almak da suçtur.",
+     "tip": "Bisikleti yalnızca kiralama şirketlerinden (ör. MacBike, OV-fiets) alın."
+    }
+   ]
   }
  },
  "en": {
@@ -493,6 +547,60 @@
       "Trains from Rotterdam reach Schiphol Airport in about 30–40 minutes."
      ],
      "mapsQuery": "Markthal, Rotterdam, Netherlands"
+    }
+   ]
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "European two-round-pin C/F (Schuko) sockets, the same as in Turkey; no adapter needed."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Tap water is among the best in Europe and drinkable everywhere.",
+    "vaccines": [
+     "Routine vaccines (MMR, tetanus)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "112"
+   },
+   "tipping": {
+    "custom": "Service is included in prices; leaving 5-10% or rounding up is common if you are happy.",
+    "standardPercent": 10,
+    "rule": "round_up",
+    "note": "Rounding up is enough in cafés and taxis."
+   },
+   "taxFree": {
+    "vatRefundPercent": "21% VAT; about 10-14% back after fees",
+    "minSpend": "Usually €50 per shop/receipt",
+    "customsNote": "Ask for a form at shops offering Tax Free and have it stamped by customs at your last EU departure airport (e.g. Schiphol) before check-in."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.50 - $3",
+    "topCarriers": [
+     "KPN",
+     "Vodafone",
+     "Odido"
+    ],
+    "airportSimTrapWarning": "Sales points at Schiphol are pricey; Lebara or Lycamobile SIMs from supermarkets and kiosks, or an eSIM, are cheaper. EU roaming does not apply to Turkish SIMs."
+   },
+   "touristScams": [
+    {
+     "title": "Street dealers",
+     "desc": "People selling drugs in the street in the Red Light District sell fake or dangerous substances; police specifically warn tourists.",
+     "tip": "Do not engage with anyone trying to sell you something in the street."
+    },
+    {
+     "title": "Stolen bikes",
+     "desc": "People selling bikes very cheaply at bridges are selling stolen goods, and buying one is also an offence.",
+     "tip": "Get a bike only from rental companies (e.g. MacBike, OV-fiets)."
     }
    ]
   }
@@ -744,6 +852,60 @@
      "mapsQuery": "Markthal, Rotterdam, Netherlands"
     }
    ]
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Europäische Steckdosen Typ C/F (Schuko) mit zwei runden Stiften, wie in der Türkei; kein Adapter nötig."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Das Leitungswasser gehört zu den besten Europas und ist überall trinkbar.",
+    "vaccines": [
+     "Standardimpfungen (MMR, Tetanus)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "112"
+   },
+   "tipping": {
+    "custom": "Der Service ist im Preis enthalten; bei Zufriedenheit sind 5-10 % oder Aufrunden üblich.",
+    "standardPercent": 10,
+    "rule": "round_up",
+    "note": "In Cafés und Taxis reicht Aufrunden."
+   },
+   "taxFree": {
+    "vatRefundPercent": "21 % MwSt.; nach Gebühren etwa 10-14 % zurück",
+    "minSpend": "Meist 50 € pro Geschäft/Beleg",
+    "customsNote": "In Geschäften mit Tax-Free-Service ein Formular verlangen und am letzten EU-Abflughafen (z. B. Schiphol) vor dem Check-in beim Zoll abstempeln lassen."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.50 - $3",
+    "topCarriers": [
+     "KPN",
+     "Vodafone",
+     "Odido"
+    ],
+    "airportSimTrapWarning": "Verkaufsstellen in Schiphol sind teuer; Lebara- oder Lycamobile-SIMs aus Supermärkten und Kiosken oder eine eSIM sind günstiger. EU-Roaming gilt nicht für türkische SIMs."
+   },
+   "touristScams": [
+    {
+     "title": "Straßendealer",
+     "desc": "Straßendealer im Rotlichtviertel verkaufen gefälschte oder gefährliche Substanzen; die Polizei warnt Touristen ausdrücklich.",
+     "tip": "Sich nie auf Leute einlassen, die Ihnen auf der Straße etwas verkaufen wollen."
+    },
+    {
+     "title": "Gestohlene Fahrräder",
+     "desc": "Wer an Brücken sehr billig Fahrräder anbietet, verkauft Diebesgut – auch der Kauf ist strafbar.",
+     "tip": "Fahrräder nur bei Verleihern (z. B. MacBike, OV-fiets) holen."
+    }
+   ]
   }
  },
  "es": {
@@ -993,6 +1155,60 @@
      "mapsQuery": "Markthal, Rotterdam, Netherlands"
     }
    ]
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Enchufes europeos C/F (Schuko) de dos clavijas redondas, iguales que en Turquía; no hace falta adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "El agua del grifo está entre las mejores de Europa y es potable en todas partes.",
+    "vaccines": [
+     "Vacunas rutinarias (triple vírica, tétanos)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "112"
+   },
+   "tipping": {
+    "custom": "El servicio está incluido en los precios; si queda contento, es habitual dejar un 5-10 % o redondear.",
+    "standardPercent": 10,
+    "rule": "round_up",
+    "note": "En cafeterías y taxis basta con redondear."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA del 21 %; se recupera un 10-14 % tras comisiones",
+    "minSpend": "Normalmente 50 € por tienda o ticket",
+    "customsNote": "Pida el formulario en tiendas con Tax Free y séllelo en la aduana del último aeropuerto de salida de la UE (p. ej. Schiphol) antes de facturar."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.50 - $3",
+    "topCarriers": [
+     "KPN",
+     "Vodafone",
+     "Odido"
+    ],
+    "airportSimTrapWarning": "Los puntos de venta de Schiphol son caros; las SIM de Lebara o Lycamobile de supermercados y quioscos, o una eSIM, salen más baratas. El roaming UE no aplica a SIM turcas."
+   },
+   "touristScams": [
+    {
+     "title": "Camellos callejeros",
+     "desc": "Quienes venden droga en la calle en el Barrio Rojo venden sustancias falsas o peligrosas; la policía avisa expresamente a los turistas.",
+     "tip": "No trate con nadie que intente venderle algo en la calle."
+    },
+    {
+     "title": "Bicicletas robadas",
+     "desc": "Quienes venden bicicletas muy baratas en los puentes venden objetos robados, y comprarlas también es delito.",
+     "tip": "Consiga la bicicleta solo en empresas de alquiler (p. ej. MacBike, OV-fiets)."
+    }
+   ]
   }
  },
  "ru": {
@@ -1240,6 +1456,60 @@
       "От Роттердама поезд идёт до аэропорта Схипхол около 30–40 минут."
      ],
      "mapsQuery": "Markthal, Rotterdam, Netherlands"
+    }
+   ]
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Европейские розетки C/F (Schuko) с двумя круглыми штырями, как в Турции; переходник не нужен."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Водопроводная вода — одна из лучших в Европе, её можно пить везде.",
+    "vaccines": [
+     "Плановые прививки (корь-краснуха-паротит, столбняк)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "112"
+   },
+   "tipping": {
+    "custom": "Обслуживание включено в цены; если всё понравилось, принято оставить 5-10 % или округлить.",
+    "standardPercent": 10,
+    "rule": "round_up",
+    "note": "В кафе и такси достаточно округлить сумму."
+   },
+   "taxFree": {
+    "vatRefundPercent": "НДС 21 %; после комиссии возвращается около 10-14 %",
+    "minSpend": "Обычно 50 € в одном магазине/по чеку",
+    "customsNote": "В магазинах с услугой Tax Free попросите форму и до регистрации заверьте её на таможне в последнем аэропорту вылета из ЕС (например, Схипхол)."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.50 - $3",
+    "topCarriers": [
+     "KPN",
+     "Vodafone",
+     "Odido"
+    ],
+    "airportSimTrapWarning": "Точки продаж в Схипхоле дорогие; SIM Lebara или Lycamobile из супермаркетов и киосков или eSIM дешевле. Роуминг ЕС на турецкие SIM не распространяется."
+   },
+   "touristScams": [
+    {
+     "title": "Уличные дилеры",
+     "desc": "Уличные продавцы наркотиков в квартале красных фонарей продают поддельные или опасные вещества; полиция отдельно предупреждает туристов.",
+     "tip": "Не вступайте в контакт с теми, кто пытается что-то продать вам на улице."
+    },
+    {
+     "title": "Краденые велосипеды",
+     "desc": "Те, кто очень дёшево продаёт велосипеды у мостов, торгуют краденым, а покупка тоже преступление.",
+     "tip": "Берите велосипед только в прокатных компаниях (например, MacBike, OV-fiets)."
     }
    ]
   }

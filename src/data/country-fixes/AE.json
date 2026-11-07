@@ -96,6 +96,59 @@
      }
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "İngiliz tipi üç dikdörtgen uçlu G priz; Türk fişleri için adaptör gerekir (otellerde genelde istenince verilir)."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Şebeke suyu arıtılmış deniz suyudur ve standartlara uygundur; ancak eski binalardaki depolar nedeniyle yerliler de çoğunlukla şişe su içer.",
+    "vaccines": [
+     "Rutin aşılar (KKK, tetanoz)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "998"
+   },
+   "tipping": {
+    "custom": "Restoranlarda faturaya çoğu zaman servis bedeli eklenir; eklenmemişse %10 bahşiş yaygındır.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Taksi ve teslimat görevlileri için hesabı yuvarlamak yeterlidir."
+   },
+   "taxFree": {
+    "vatRefundPercent": "%5 KDV’nin %87’si (~%4,35 net)",
+    "minSpend": "Mağaza başına 250 AED",
+    "customsNote": "“Tax Free” (Planet) etiketli mağazalarda fatura isteyin; havalimanında check-in öncesi Planet kiosklarında doğrulatın. 90 gün içinde ülkeden çıkılmalıdır."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$2 - $6",
+    "topCarriers": [
+     "e& (Etisalat)",
+     "du",
+     "Virgin Mobile UAE"
+    ],
+    "airportSimTrapWarning": "Dubai Havalimanı’nda du bazen ücretsiz turist hattı verir; e& ve du turist paketleri havalimanında da makuldür. WhatsApp/FaceTime sesli aramaları engellidir."
+   },
+   "touristScams": [
+    {
+     "title": "Lisanssız çöl safarisi ve yat turu",
+     "desc": "Sosyal medyada çok ucuz satılan turlar ya iptal olur ya da sigortasız, güvensiz araçlarla yapılır.",
+     "tip": "Dubai Ekonomi ve Turizm (DET) lisanslı şirketlerden veya otel üzerinden rezervasyon yapın."
+    },
+    {
+     "title": "Sahte marka ve altın satıcıları",
+     "desc": "Deira ve Karama çarşılarında “imitasyon” saat/çanta satan çığırtkanlar sizi arka odalara götürür; altında ayar ve gramaj şişirilir.",
+     "tip": "Arka odalara girmeyin; altında ayar damgasını ve faturayı isteyin."
+    }
+   ]
   }
  },
  "en": {
@@ -195,6 +248,59 @@
      }
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "British three-rectangular-pin G sockets; Turkish plugs need an adapter (hotels usually lend one on request)."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Tap water is desalinated and meets standards, but because of storage tanks in older buildings most residents drink bottled water.",
+    "vaccines": [
+     "Routine vaccines (MMR, tetanus)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "998"
+   },
+   "tipping": {
+    "custom": "Restaurants often add a service charge; if not, a 10% tip is common.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Rounding up is enough for taxis and delivery staff."
+   },
+   "taxFree": {
+    "vatRefundPercent": "87% of the 5% VAT (~4.35% net)",
+    "minSpend": "250 AED per store",
+    "customsNote": "In shops with a “Tax Free” (Planet) sign ask for a tax invoice and validate it at Planet kiosks at the airport before check-in. You must leave the country within 90 days."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$2 - $6",
+    "topCarriers": [
+     "e& (Etisalat)",
+     "du",
+     "Virgin Mobile UAE"
+    ],
+    "airportSimTrapWarning": "At Dubai Airport du sometimes hands out free tourist SIMs; e& and du tourist packs at the airport are reasonably priced. WhatsApp and FaceTime voice calls are blocked."
+   },
+   "touristScams": [
+    {
+     "title": "Unlicensed desert safaris and yacht trips",
+     "desc": "Very cheap tours sold on social media are either cancelled or run with uninsured, unsafe vehicles.",
+     "tip": "Book with companies licensed by Dubai Economy and Tourism (DET) or through your hotel."
+    },
+    {
+     "title": "Fake brands and gold sellers",
+     "desc": "Touts selling “copy” watches and bags in the Deira and Karama souks lead you into back rooms; gold purity and weight are inflated.",
+     "tip": "Do not enter back rooms; ask for the hallmark and an invoice when buying gold."
+    }
+   ]
   }
  },
  "de": {
@@ -294,6 +400,59 @@
      }
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Britische Steckdosen Typ G mit drei rechteckigen Stiften; für türkische Stecker ist ein Adapter nötig (Hotels verleihen meist einen)."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Leitungswasser ist entsalzt und entspricht den Normen, wegen Speichertanks in älteren Gebäuden trinken die meisten Einwohner aber Flaschenwasser.",
+    "vaccines": [
+     "Standardimpfungen (MMR, Tetanus)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "998"
+   },
+   "tipping": {
+    "custom": "Restaurants schlagen oft eine Servicegebühr auf; sonst sind 10 % Trinkgeld üblich.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Für Taxis und Lieferdienste reicht Aufrunden."
+   },
+   "taxFree": {
+    "vatRefundPercent": "87 % der 5 % MwSt. (~4,35 % netto)",
+    "minSpend": "250 AED pro Geschäft",
+    "customsNote": "In Geschäften mit „Tax Free“-Schild (Planet) eine Steuerrechnung verlangen und vor dem Check-in an Planet-Kiosken am Flughafen validieren. Ausreise innerhalb von 90 Tagen."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$2 - $6",
+    "topCarriers": [
+     "e& (Etisalat)",
+     "du",
+     "Virgin Mobile UAE"
+    ],
+    "airportSimTrapWarning": "Am Flughafen Dubai verteilt du manchmal kostenlose Touristen-SIMs; die Touristenpakete von e& und du am Flughafen sind fair. WhatsApp- und FaceTime-Anrufe sind gesperrt."
+   },
+   "touristScams": [
+    {
+     "title": "Unlizenzierte Wüstensafaris und Yachttouren",
+     "desc": "Sehr billige Touren aus sozialen Medien werden abgesagt oder mit unversicherten, unsicheren Fahrzeugen durchgeführt.",
+     "tip": "Bei von Dubai Economy and Tourism (DET) lizenzierten Firmen oder über das Hotel buchen."
+    },
+    {
+     "title": "Fälschungen und Goldhändler",
+     "desc": "Schlepper mit „Kopie“-Uhren und -Taschen in den Souks von Deira und Karama führen Sie in Hinterzimmer; Goldreinheit und Gewicht werden geschönt.",
+     "tip": "Keine Hinterzimmer betreten; beim Goldkauf Feingehaltsstempel und Rechnung verlangen."
+    }
+   ]
   }
  },
  "es": {
@@ -393,6 +552,59 @@
      }
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Enchufes británicos G de tres clavijas rectangulares; los enchufes turcos necesitan adaptador (los hoteles suelen prestarlo)."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "El agua del grifo es desalinizada y cumple las normas, pero por los depósitos de los edificios antiguos la mayoría bebe agua embotellada.",
+    "vaccines": [
+     "Vacunas rutinarias (triple vírica, tétanos)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "998"
+   },
+   "tipping": {
+    "custom": "Los restaurantes suelen añadir cargo por servicio; si no, es habitual un 10 %.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Para taxis y repartidores basta con redondear."
+   },
+   "taxFree": {
+    "vatRefundPercent": "El 87 % del IVA del 5 % (~4,35 % neto)",
+    "minSpend": "250 AED por tienda",
+    "customsNote": "En tiendas con el cartel “Tax Free” (Planet) pida factura fiscal y valídela en los quioscos Planet del aeropuerto antes de facturar. Debe salir del país en 90 días."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$2 - $6",
+    "topCarriers": [
+     "e& (Etisalat)",
+     "du",
+     "Virgin Mobile UAE"
+    ],
+    "airportSimTrapWarning": "En el aeropuerto de Dubái du a veces regala SIM turísticas; los paquetes turísticos de e& y du del aeropuerto tienen precios razonables. Las llamadas de voz de WhatsApp y FaceTime están bloqueadas."
+   },
+   "touristScams": [
+    {
+     "title": "Safaris y yates sin licencia",
+     "desc": "Los tours muy baratos vendidos en redes sociales se cancelan o se hacen con vehículos sin seguro ni seguridad.",
+     "tip": "Reserve con empresas con licencia de Dubai Economy and Tourism (DET) o a través del hotel."
+    },
+    {
+     "title": "Falsificaciones y vendedores de oro",
+     "desc": "Captadores con relojes y bolsos “copia” en los zocos de Deira y Karama le llevan a trastiendas; se infla la pureza y el peso del oro.",
+     "tip": "No entre en trastiendas; al comprar oro pida el contraste y la factura."
+    }
+   ]
   }
  },
  "ru": {
@@ -492,6 +704,59 @@
      }
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Британские розетки типа G с тремя прямоугольными штырями; для турецких вилок нужен переходник (в отелях обычно дают по запросу)."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Водопроводная вода опреснённая и соответствует нормам, но из-за накопительных баков в старых домах большинство жителей пьёт бутилированную.",
+    "vaccines": [
+     "Плановые прививки (корь-краснуха-паротит, столбняк)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "998"
+   },
+   "tipping": {
+    "custom": "Рестораны часто включают плату за обслуживание; если нет, принято оставлять 10 %.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Таксистам и курьерам достаточно округлить сумму."
+   },
+   "taxFree": {
+    "vatRefundPercent": "87 % от НДС 5 % (~4,35 % чистыми)",
+    "minSpend": "250 AED в одном магазине",
+    "customsNote": "В магазинах с табличкой «Tax Free» (Planet) попросите налоговый чек и подтвердите его в киосках Planet в аэропорту до регистрации. Выехать нужно в течение 90 дней."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$2 - $6",
+    "topCarriers": [
+     "e& (Etisalat)",
+     "du",
+     "Virgin Mobile UAE"
+    ],
+    "airportSimTrapWarning": "В аэропорту Дубая du иногда раздаёт бесплатные туристические SIM; туристические пакеты e& и du в аэропорту стоят разумно. Голосовые звонки WhatsApp и FaceTime заблокированы."
+   },
+   "touristScams": [
+    {
+     "title": "Нелицензированные сафари и яхты",
+     "desc": "Очень дешёвые туры из соцсетей отменяют или проводят на незастрахованном, небезопасном транспорте.",
+     "tip": "Бронируйте у компаний с лицензией Dubai Economy and Tourism (DET) или через отель."
+    },
+    {
+     "title": "Подделки и продавцы золота",
+     "desc": "Зазывалы с «копиями» часов и сумок на рынках Дейры и Карамы ведут в подсобки; пробу и вес золота завышают.",
+     "tip": "Не заходите в подсобки; при покупке золота требуйте пробу и чек."
+    }
+   ]
   }
  }
 }

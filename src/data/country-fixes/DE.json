@@ -95,6 +95,61 @@
      }
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Avrupa tipi iki yuvarlak uçlu C/F (Schuko) priz; Türkiye ile aynı, adaptör gerekmez."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Musluk suyu ülke genelinde sıkı denetlenir ve içilebilir; restoranlarda su genelde ücretli şişe olarak gelir.",
+    "vaccines": [
+     "Rutin aşılar (KKK, tetanoz)",
+     "Kene kaynaklı ensefalit (kırsalda yürüyüş yapacaksanız)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "112"
+   },
+   "tipping": {
+    "custom": "Restoran ve kafelerde %5-10 bahşiş veya hesabı yuvarlamak yaygındır.",
+    "standardPercent": 10,
+    "rule": "round_up",
+    "note": "Bahşiş masaya bırakılmaz, ödeme sırasında toplam söylenir (“Stimmt so” = üstü kalsın)."
+   },
+   "taxFree": {
+    "vatRefundPercent": "%19 KDV (gıda/kitapta %7); iade komisyon sonrası ~%10-14",
+    "minSpend": "Fiş başına 50,01 €",
+    "customsNote": "Mağazadan Tax Free formu isteyin; AB’den son çıkış havalimanında check-in öncesi gümrükte (Zoll) malları gösterip damgalatın."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1 - $2.50",
+    "topCarriers": [
+     "Telekom",
+     "Vodafone",
+     "O2"
+    ],
+    "airportSimTrapWarning": "Almanya’da hat almak kimlik doğrulaması (video kimlik) gerektirir ve havalimanında pahalıdır; e-SIM veya Aldi Talk/Lidl Connect gibi market hatları pratiktir."
+   },
+   "touristScams": [
+    {
+     "title": "Bardak oyunu (Hütchenspiel)",
+     "desc": "Berlin Alexanderplatz ve turistik köprülerde top-bardak oyununda “kazanan” izleyiciler işbirlikçidir.",
+     "tip": "Asla oynamayın; kalabalık toplanan yerlerde cüzdanınıza dikkat edin."
+    },
+    {
+     "title": "Sahte imza/bağış kampanyası",
+     "desc": "Brandenburg Kapısı ve Köln Katedrali çevresinde “sağır-dilsiz” kılığında kişiler imza listesiyle bağış ister, bu sırada cebiniz yoklanabilir.",
+     "tip": "Durmadan “Nein, danke” deyip yürüyün."
+    }
+   ]
   }
  },
  "en": {
@@ -193,6 +248,61 @@
      }
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "European two-round-pin C/F (Schuko) sockets, the same as in Turkey; no adapter needed."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Tap water is strictly controlled nationwide and drinkable; in restaurants water usually comes as a paid bottle.",
+    "vaccines": [
+     "Routine vaccines (MMR, tetanus)",
+     "Tick-borne encephalitis (if hiking in rural areas)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "112"
+   },
+   "tipping": {
+    "custom": "A 5-10% tip or rounding up is common in restaurants and cafés.",
+    "standardPercent": 10,
+    "rule": "round_up",
+    "note": "Tips are not left on the table; tell the server the total when paying (“Stimmt so” = keep the change)."
+   },
+   "taxFree": {
+    "vatRefundPercent": "19% VAT (7% on food/books); about 10-14% back after fees",
+    "minSpend": "€50.01 per receipt",
+    "customsNote": "Ask the shop for a Tax Free form and show the goods to customs (Zoll) at your last EU departure airport before check-in to get the stamp."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1 - $2.50",
+    "topCarriers": [
+     "Telekom",
+     "Vodafone",
+     "O2"
+    ],
+    "airportSimTrapWarning": "Buying a SIM in Germany requires ID verification (video ident) and is expensive at the airport; an eSIM or supermarket SIMs such as Aldi Talk or Lidl Connect are practical."
+   },
+   "touristScams": [
+    {
+     "title": "Shell game (Hütchenspiel)",
+     "desc": "At Berlin’s Alexanderplatz and on tourist bridges the “winners” of the cup-and-ball game are accomplices.",
+     "tip": "Never play; watch your wallet wherever a crowd gathers."
+    },
+    {
+     "title": "Fake petitions",
+     "desc": "Around the Brandenburg Gate and Cologne Cathedral people posing as deaf-mute ask for donations with a clipboard while your pockets may be picked.",
+     "tip": "Say “Nein, danke” without stopping and keep walking."
+    }
+   ]
   }
  },
  "de": {
@@ -291,6 +401,61 @@
      }
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Europäische Steckdosen Typ C/F (Schuko) mit zwei runden Stiften, wie in der Türkei; kein Adapter nötig."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Leitungswasser wird bundesweit streng kontrolliert und ist trinkbar; im Restaurant kommt Wasser meist als kostenpflichtige Flasche.",
+    "vaccines": [
+     "Standardimpfungen (MMR, Tetanus)",
+     "FSME (bei Wanderungen in ländlichen Gebieten)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "112"
+   },
+   "tipping": {
+    "custom": "5-10 % Trinkgeld oder Aufrunden sind in Restaurants und Cafés üblich.",
+    "standardPercent": 10,
+    "rule": "round_up",
+    "note": "Trinkgeld wird nicht auf den Tisch gelegt, sondern beim Bezahlen genannt („Stimmt so“)."
+   },
+   "taxFree": {
+    "vatRefundPercent": "19 % MwSt. (7 % auf Lebensmittel/Bücher); nach Gebühren etwa 10-14 % zurück",
+    "minSpend": "50,01 € pro Beleg",
+    "customsNote": "Im Geschäft ein Tax-Free-Formular verlangen und am letzten EU-Abflughafen vor dem Check-in die Ware beim Zoll vorzeigen und abstempeln lassen."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1 - $2.50",
+    "topCarriers": [
+     "Telekom",
+     "Vodafone",
+     "O2"
+    ],
+    "airportSimTrapWarning": "Eine SIM-Karte in Deutschland erfordert eine Identitätsprüfung (Video-Ident) und ist am Flughafen teuer; eine eSIM oder Discounter-SIMs wie Aldi Talk oder Lidl Connect sind praktisch."
+   },
+   "touristScams": [
+    {
+     "title": "Hütchenspiel",
+     "desc": "Am Berliner Alexanderplatz und auf Touristenbrücken sind die „Gewinner“ des Hütchenspiels Komplizen.",
+     "tip": "Nie mitspielen; wo sich Menschen sammeln, auf die Geldbörse achten."
+    },
+    {
+     "title": "Falsche Unterschriftenlisten",
+     "desc": "Am Brandenburger Tor und am Kölner Dom sammeln angeblich Taubstumme mit Klemmbrett Spenden, während Ihre Taschen geleert werden können.",
+     "tip": "Ohne Stehenbleiben „Nein, danke“ sagen und weitergehen."
+    }
+   ]
   }
  },
  "es": {
@@ -389,6 +554,61 @@
      }
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Enchufes europeos C/F (Schuko) de dos clavijas redondas, iguales que en Turquía; no hace falta adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "El agua del grifo está muy controlada en todo el país y es potable; en restaurantes el agua suele servirse en botella de pago.",
+    "vaccines": [
+     "Vacunas rutinarias (triple vírica, tétanos)",
+     "Encefalitis por garrapatas (si hace senderismo rural)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "112"
+   },
+   "tipping": {
+    "custom": "En restaurantes y cafeterías es habitual un 5-10 % o redondear.",
+    "standardPercent": 10,
+    "rule": "round_up",
+    "note": "La propina no se deja en la mesa: diga el total al pagar (“Stimmt so” = quédese el cambio)."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA del 19 % (7 % en alimentos y libros); se recupera un 10-14 % tras comisiones",
+    "minSpend": "50,01 € por ticket",
+    "customsNote": "Pida el formulario Tax Free en la tienda y muestre los artículos en la aduana (Zoll) del último aeropuerto de salida de la UE antes de facturar para el sello."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1 - $2.50",
+    "topCarriers": [
+     "Telekom",
+     "Vodafone",
+     "O2"
+    ],
+    "airportSimTrapWarning": "Comprar una SIM en Alemania exige verificación de identidad (video ident) y en el aeropuerto es caro; una eSIM o las SIM de supermercado como Aldi Talk o Lidl Connect son prácticas."
+   },
+   "touristScams": [
+    {
+     "title": "Trile (Hütchenspiel)",
+     "desc": "En Alexanderplatz de Berlín y en puentes turísticos, los “ganadores” del juego de los cubiletes son cómplices.",
+     "tip": "No juegue nunca; vigile la cartera donde se forme un corro."
+    },
+    {
+     "title": "Falsas recogidas de firmas",
+     "desc": "Junto a la Puerta de Brandeburgo y la catedral de Colonia, supuestos sordomudos piden donativos con una carpeta mientras pueden robarle.",
+     "tip": "Diga “Nein, danke” sin pararse y siga andando."
+    }
+   ]
   }
  },
  "ru": {
@@ -487,6 +707,61 @@
      }
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Европейские розетки C/F (Schuko) с двумя круглыми штырями, как в Турции; переходник не нужен."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Водопроводная вода по всей стране строго контролируется и пригодна для питья; в ресторанах воду обычно подают платной бутылкой.",
+    "vaccines": [
+     "Плановые прививки (корь-краснуха-паротит, столбняк)",
+     "Клещевой энцефалит (при походах на природе)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "112"
+   },
+   "tipping": {
+    "custom": "В ресторанах и кафе принято оставлять 5-10 % или округлять сумму.",
+    "standardPercent": 10,
+    "rule": "round_up",
+    "note": "Чаевые не оставляют на столе — называют общую сумму при оплате («Stimmt so» = сдачи не надо)."
+   },
+   "taxFree": {
+    "vatRefundPercent": "НДС 19 % (7 % на продукты и книги); после комиссии возвращается около 10-14 %",
+    "minSpend": "50,01 € по одному чеку",
+    "customsNote": "Попросите в магазине форму Tax Free и до регистрации покажите покупки таможне (Zoll) в последнем аэропорту вылета из ЕС, чтобы получить штамп."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1 - $2.50",
+    "topCarriers": [
+     "Telekom",
+     "Vodafone",
+     "O2"
+    ],
+    "airportSimTrapWarning": "Для покупки SIM в Германии нужна проверка личности (видеоидентификация), в аэропорту дорого; удобнее eSIM или SIM дискаунтеров Aldi Talk и Lidl Connect."
+   },
+   "touristScams": [
+    {
+     "title": "Напёрстки (Hütchenspiel)",
+     "desc": "На Александерплац в Берлине и туристических мостах «выигравшие» в напёрстки — сообщники.",
+     "tip": "Никогда не играйте; следите за кошельком там, где собирается толпа."
+    },
+    {
+     "title": "Фальшивые сборы подписей",
+     "desc": "У Бранденбургских ворот и Кёльнского собора «глухонемые» с планшетом просят пожертвования, а в это время могут обчистить карманы.",
+     "tip": "Скажите «Nein, danke», не останавливаясь, и идите дальше."
+    }
+   ]
   }
  }
 }

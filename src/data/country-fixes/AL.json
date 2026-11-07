@@ -93,6 +93,60 @@
      }
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Avrupa tipi iki yuvarlak uçlu C/F (Schuko) priz; Türkiye ile aynı, adaptör gerekmez."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Şebeke suyu içme için önerilmez; kesintiler ve eski borular nedeniyle şişe su için, Tiran’da da yerliler çoğunlukla şişe su kullanır.",
+    "vaccines": [
+     "Rutin aşılar (KKK, tetanoz)",
+     "Hepatit A"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "127"
+   },
+   "tipping": {
+    "custom": "Restoranlarda %10 civarı bahşiş yaygındır.",
+    "standardPercent": 10,
+    "rule": "round_up",
+    "note": "Kafe ve taksilerde hesabı yuvarlamak yeterlidir."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Pratikte yok (KDV %20)",
+    "minSpend": "—",
+    "customsNote": "Arnavutluk’ta turistlere yönelik işleyen bir KDV iade sistemi yoktur; fiyatlara KDV dahildir."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.30 - $1",
+    "topCarriers": [
+     "One Albania",
+     "Vodafone Albania"
+    ],
+    "airportSimTrapWarning": "Tiran Havalimanı’ndaki One ve Vodafone standları turist paketlerini makul fiyata satar; şehir mağazaları biraz daha ucuzdur. Ülke AB roaming dışında."
+   },
+   "touristScams": [
+    {
+     "title": "Taksimetresiz taksi",
+     "desc": "Tiran Havalimanı ve otogarlarda taksimetre açmayan taksiciler turiste fazla fiyat söyler.",
+     "tip": "Havalimanı–merkez sabit ücretini önceden öğrenin ve binmeden fiyatı konuşun."
+    },
+    {
+     "title": "Ksamil plaj şezlongu",
+     "desc": "Ksamil ve Sarandë’de “ücretsiz” denen plajlarda oturunca yüksek şezlong ücreti istenir.",
+     "tip": "Oturmadan önce şezlong ve şemsiye fiyatını sorun."
+    }
+   ]
   }
  },
  "en": {
@@ -189,6 +243,60 @@
      }
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "European two-round-pin C/F (Schuko) sockets, the same as in Turkey; no adapter needed."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Tap water is not recommended for drinking; because of outages and old pipes drink bottled water, as most locals in Tirana do.",
+    "vaccines": [
+     "Routine vaccines (MMR, tetanus)",
+     "Hepatitis A"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "127"
+   },
+   "tipping": {
+    "custom": "A tip of around 10% is common in restaurants.",
+    "standardPercent": 10,
+    "rule": "round_up",
+    "note": "Rounding up is enough in cafés and taxis."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Practically none (20% VAT)",
+    "minSpend": "—",
+    "customsNote": "Albania has no functioning VAT refund scheme for tourists; prices include VAT."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.30 - $1",
+    "topCarriers": [
+     "One Albania",
+     "Vodafone Albania"
+    ],
+    "airportSimTrapWarning": "One and Vodafone stands at Tirana Airport sell tourist bundles at fair prices; shops in town are slightly cheaper. The country is outside EU roaming."
+   },
+   "touristScams": [
+    {
+     "title": "Unmetered taxis",
+     "desc": "Drivers at Tirana Airport and bus stations who do not switch on the meter and quote tourists high fares.",
+     "tip": "Check the airport–centre flat fare in advance and agree the price before getting in."
+    },
+    {
+     "title": "Ksamil sunbeds",
+     "desc": "On beaches described as “free” in Ksamil and Sarandë you are charged a high sunbed fee once you sit down.",
+     "tip": "Ask the price of sunbeds and umbrellas before sitting down."
+    }
+   ]
   }
  },
  "de": {
@@ -285,6 +393,60 @@
      }
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Europäische Steckdosen Typ C/F (Schuko) mit zwei runden Stiften, wie in der Türkei; kein Adapter nötig."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Leitungswasser ist zum Trinken nicht empfohlen; wegen Ausfällen und alter Leitungen Flaschenwasser trinken, wie es auch die meisten Einwohner in Tirana tun.",
+    "vaccines": [
+     "Standardimpfungen (MMR, Tetanus)",
+     "Hepatitis A"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "127"
+   },
+   "tipping": {
+    "custom": "Etwa 10 % Trinkgeld sind in Restaurants üblich.",
+    "standardPercent": 10,
+    "rule": "round_up",
+    "note": "In Cafés und Taxis reicht Aufrunden."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Praktisch keine (20 % MwSt.)",
+    "minSpend": "—",
+    "customsNote": "Albanien hat kein funktionierendes Mehrwertsteuer-Erstattungssystem für Touristen; die Preise enthalten MwSt."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.30 - $1",
+    "topCarriers": [
+     "One Albania",
+     "Vodafone Albania"
+    ],
+    "airportSimTrapWarning": "Die Stände von One und Vodafone am Flughafen Tirana verkaufen Touristenpakete zu fairen Preisen; in der Stadt ist es etwas günstiger. Das Land liegt außerhalb des EU-Roamings."
+   },
+   "touristScams": [
+    {
+     "title": "Taxis ohne Taxameter",
+     "desc": "Fahrer am Flughafen Tirana und an Busbahnhöfen schalten kein Taxameter ein und verlangen zu viel.",
+     "tip": "Den Festpreis Flughafen–Zentrum vorher kennen und den Preis vor dem Einsteigen vereinbaren."
+    },
+    {
+     "title": "Liegen in Ksamil",
+     "desc": "An als „kostenlos“ beschriebenen Stränden in Ksamil und Saranda wird nach dem Hinsetzen eine hohe Liegengebühr verlangt.",
+     "tip": "Vor dem Hinsetzen nach dem Preis für Liege und Schirm fragen."
+    }
+   ]
   }
  },
  "es": {
@@ -381,6 +543,60 @@
      }
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Enchufes europeos C/F (Schuko) de dos clavijas redondas, iguales que en Turquía; no hace falta adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "No se recomienda beber el agua del grifo; por cortes y tuberías viejas tome agua embotellada, como hace la mayoría en Tirana.",
+    "vaccines": [
+     "Vacunas rutinarias (triple vírica, tétanos)",
+     "Hepatitis A"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "127"
+   },
+   "tipping": {
+    "custom": "En restaurantes es habitual una propina de alrededor del 10 %.",
+    "standardPercent": 10,
+    "rule": "round_up",
+    "note": "En cafeterías y taxis basta con redondear."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Prácticamente no hay (IVA del 20 %)",
+    "minSpend": "—",
+    "customsNote": "Albania no tiene un sistema operativo de devolución del IVA a turistas; los precios incluyen el IVA."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.30 - $1",
+    "topCarriers": [
+     "One Albania",
+     "Vodafone Albania"
+    ],
+    "airportSimTrapWarning": "Los puestos de One y Vodafone del aeropuerto de Tirana venden paquetes turísticos a buen precio; en la ciudad es algo más barato. El país está fuera del roaming UE."
+   },
+   "touristScams": [
+    {
+     "title": "Taxis sin taxímetro",
+     "desc": "Taxistas del aeropuerto de Tirana y de las estaciones de autobuses que no encienden el taxímetro y piden de más.",
+     "tip": "Infórmese de la tarifa fija aeropuerto–centro y acuerde el precio antes de subir."
+    },
+    {
+     "title": "Tumbonas en Ksamil",
+     "desc": "En playas presentadas como “gratis” en Ksamil y Sarandë le cobran una tumbona cara al sentarse.",
+     "tip": "Pregunte el precio de tumbona y sombrilla antes de sentarse."
+    }
+   ]
   }
  },
  "ru": {
@@ -477,6 +693,60 @@
      }
     ]
    }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Европейские розетки C/F (Schuko) с двумя круглыми штырями, как в Турции; переходник не нужен."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Пить воду из-под крана не рекомендуется: из-за перебоев и старых труб пейте бутилированную, как и большинство жителей Тираны.",
+    "vaccines": [
+     "Плановые прививки (корь-краснуха-паротит, столбняк)",
+     "Гепатит A"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "127"
+   },
+   "tipping": {
+    "custom": "В ресторанах принято оставлять около 10 %.",
+    "standardPercent": 10,
+    "rule": "round_up",
+    "note": "В кафе и такси достаточно округлить сумму."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Практически нет (НДС 20 %)",
+    "minSpend": "—",
+    "customsNote": "В Албании нет действующей системы возврата НДС туристам; НДС включён в цены."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.30 - $1",
+    "topCarriers": [
+     "One Albania",
+     "Vodafone Albania"
+    ],
+    "airportSimTrapWarning": "Стойки One и Vodafone в аэропорту Тираны продают туристические пакеты по нормальной цене; в городе немного дешевле. Страна не входит в роуминг ЕС."
+   },
+   "touristScams": [
+    {
+     "title": "Такси без счётчика",
+     "desc": "Водители в аэропорту Тираны и на автовокзалах не включают счётчик и завышают цену.",
+     "tip": "Заранее узнайте фиксированный тариф аэропорт–центр и договоритесь о цене до посадки."
+    },
+    {
+     "title": "Шезлонги в Ксамиле",
+     "desc": "На «бесплатных» пляжах Ксамиля и Саранды после того, как вы сели, требуют высокую плату за шезлонг.",
+     "tip": "Спрашивайте цену шезлонга и зонта до того, как сесть."
+    }
+   ]
   }
  }
 }
