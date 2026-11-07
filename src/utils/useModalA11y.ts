@@ -23,6 +23,10 @@ export function useModalA11y({
   closeOnEscape = true
 }: UseModalA11yOptions) {
   const previouslyFocusedElementRef = useRef<HTMLElement | null>(null);
+  // onClose her çizimde yeni fonksiyon olabilir; efekt yeniden çalışıp odağı kapat düğmesine atmasın
+  // (hata bildir formunda bir harf yazınca yazı kutusunun kilitlenmesinin sebebi buydu)
+  const onCloseRef = useRef(onClose);
+  onCloseRef.current = onClose;
 
   useEffect(() => {
     if (!isOpen) return;
@@ -64,7 +68,7 @@ export function useModalA11y({
     const handleKeyDown = (e: KeyboardEvent) => {
       if (closeOnEscape && e.key === 'Escape') {
         e.stopPropagation();
-        onClose();
+        onCloseRef.current();
         return;
       }
 
@@ -113,5 +117,5 @@ export function useModalA11y({
         previouslyFocusedElementRef.current.focus();
       }
     };
-  }, [isOpen, onClose, closeOnEscape, modalRef, initialFocusRef]);
+  }, [isOpen, closeOnEscape, modalRef, initialFocusRef]);
 }

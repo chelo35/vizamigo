@@ -15,6 +15,7 @@ import { SeaMap, MapPoint } from './SeaMap';
 import { loadCountryBundle, CountryBundle } from './countryData';
 import { getCountryName, INFO } from '../data/passportData';
 import { PartnerLogo } from './PartnerLogo';
+import { ShareMenu } from './ShareMenu';
 import { advisoryAgencyName, advisoryLabel } from '../data/officialAdvisoryLabels';
 import { OfferCard } from './OfferCard';
 import { tpIdFromUrl } from '../data/tpPartners';
@@ -187,6 +188,53 @@ const CountryPageInner: React.FC<Props & { data: CountryBundle }> = ({ code, pas
     } catch {}
   };
   useEffect(setDest, [code]); // ülke sayfasına girilen ülke ana sayfadaki hedef olur
+  const [pdfBusy, setPdfBusy] = useState(false);
+  const makePdf = async () => {
+    setPdfBusy(true);
+    try {
+      const { downloadCountryPdf } = await import('../utils/countryPdf');
+      const P = getCountryName(passport, language);
+      const em = insights.safety?.emergencyNumbers || ({} as Record<string, string>);
+      const lc = insights.livingCosts;
+      await downloadCountryPdf({
+        title: name,
+        subtitle: l(`${P} pasaportuyla`, `With a ${P} passport`, `Mit Pass aus ${P}`, `Con pasaporte de ${P}`, `Паспорт: ${P}`),
+        filename: `vizamigo-${code.toLowerCase()}-${passport.toLowerCase()}.pdf`,
+        footer: l(`Vizamigo · ${window.location.href} · ${new Date().toLocaleDateString(language)} · Seyahatten önce resmî kaynaktan teyit et.`, `Vizamigo · ${window.location.href} · ${new Date().toLocaleDateString(language)} · Confirm with official sources before travel.`, `Vizamigo · ${window.location.href} · ${new Date().toLocaleDateString(language)} · Vor der Reise offiziell bestätigen.`, `Vizamigo · ${window.location.href} · ${new Date().toLocaleDateString(language)} · Confírmalo con fuentes oficiales.`, `Vizamigo · ${window.location.href} · ${new Date().toLocaleDateString(language)} · Уточните в официальных источниках.`),
+        sections: [
+          { h: l('Vize', 'Visa', 'Visum', 'Visado', 'Виза'), text: generateDirectAnswerSnippet(name, P, item?.cat || 'visa', getStayDurationText(item?.v || '', item?.cat || 'visa', language as SupportedLanguage), !!item?.id, language as SupportedLanguage) },
+          {
+            h: l('Kısaca', 'Quick facts', 'Kurz & knapp', 'Datos rápidos', 'Коротко'),
+            rows: ([
+              [l('Başkent', 'Capital', 'Hauptstadt', 'Capital', 'Столица'), geo?.capital ? capitalName(code, language, geo.capital) : ''],
+              [l('Para birimi', 'Currency', 'Währung', 'Moneda', 'Валюта'), insights.currency],
+              [l('En iyi zaman', 'Best time', 'Beste Reisezeit', 'Mejor época', 'Лучшее время'), insights.bestMonths],
+              [l('Priz', 'Plugs', 'Steckdosen', 'Enchufes', 'Розетки'), `${intel.plugs.types.join(', ')} · ${intel.plugs.voltage || ''}`],
+              [l('Musluk suyu', 'Tap water', 'Leitungswasser', 'Agua del grifo', 'Вода из-под крана'), intel.waterAndHealth?.tapWaterDesc || ''],
+              [l('Bahşiş', 'Tipping', 'Trinkgeld', 'Propinas', 'Чаевые'), enc.economy?.tippingCulture || ''],
+              [l('Günlük bütçe', 'Daily budget', 'Tagesbudget', 'Presupuesto diario', 'Бюджет в день'), lc ? `${lc.dailyBudgetBackpackerUsd} / ${lc.dailyBudgetMidrangeUsd}` : '']
+            ] as Array<[string, string]>).filter(([, v]) => v)
+          },
+          {
+            h: l('Güvenlik ve acil durum', 'Safety & emergency', 'Sicherheit & Notfall', 'Seguridad y emergencias', 'Безопасность и экстренные службы'),
+            text: `${insights.safety?.safetyLevel || ''} (${insights.safety?.safetyScore ?? '–'}/100). ${insights.safety?.crimeRateSummary || ''}`,
+            rows: ([
+              [l('Polis', 'Police', 'Polizei', 'Policía', 'Полиция'), em.police],
+              [l('Ambulans', 'Ambulance', 'Rettung', 'Ambulancia', 'Скорая'), em.ambulance],
+              ...(official?.items || []).map((a) => [a.agency === 'us' ? 'US' : a.agency === 'uk' ? 'UK' : 'Canada', `${a.level}/4 · ${a.date}`] as [string, string])
+            ] as Array<[string, string]>).filter(([, v]) => v)
+          },
+          { h: `${l('Önerilen rota', 'Suggested itinerary', 'Empfohlene Route', 'Itinerario', 'Маршрут')}: ${itin.routeName || ''}`, items: itin.stops.map((st) => `${st.name.replace(/^[^:]{1,20}:\s*/, '')} (${st.durationBadge || st.recommendedDuration})`) },
+          { h: l('Mutlaka görülecek yerler', 'Must-see places', 'Sehenswürdigkeiten', 'Imprescindibles', 'Что посмотреть'), items: (enc.tourism?.mustSeePlaces || []).slice(0, 8) },
+          { h: l('Güvende kalmak için', 'Staying safe', 'Sicher bleiben', 'Para estar seguro', 'Как не рисковать'), items: (insights.safety?.safeTravelTips || []).slice(0, 5) }
+        ]
+      });
+    } catch {
+      window.print();
+    } finally {
+      setPdfBusy(false);
+    }
+  };
   const [copied, setCopied] = useState(false);
   const share = async () => {
     const url = window.location.href;
@@ -697,8 +745,9 @@ const CountryPageInner: React.FC<Props & { data: CountryBundle }> = ({ code, pas
 
         <div className="vz-actions">
           <Btn icon={added ? 'check' : 'plus'} onClick={addToRoute}>{added ? l('Rotana eklendi', 'Added to route', 'Zur Route hinzugefügt', 'Añadido', 'Добавлено') : l('Rotama ekle', 'Add to my route', 'Zur Route', 'Añadir a mi ruta', 'В маршрут')}</Btn>
-          <Btn variant="soft" icon="share" onClick={share}>{copied ? l('Bağlantı kopyalandı', 'Link copied', 'Link kopiert', 'Enlace copiado', 'Скопировано') : l('Paylaş', 'Share', 'Teilen', 'Compartir', 'Поделиться')}</Btn>
-          <Btn variant="soft" icon="doc" onClick={() => window.print()}>{l('Yazdır / PDF', 'Print / PDF', 'Drucken / PDF', 'Imprimir / PDF', 'Печать / PDF')}</Btn>
+          <ShareMenu title={`${name} · Vizamigo`} text={`${name}: ${generateDirectAnswerSnippet(name, getCountryName(passport, language), item?.cat || 'visa', getStayDurationText(item?.v || '', item?.cat || 'visa', language as SupportedLanguage), !!item?.id, language as SupportedLanguage).split('. ')[0]}.`} />
+          <Btn variant="soft" icon="doc" onClick={() => window.print()}>{l('Yazdır', 'Print', 'Drucken', 'Imprimir', 'Печать')}</Btn>
+          <Btn variant="soft" icon="download" onClick={makePdf} disabled={pdfBusy}>{pdfBusy ? l('PDF hazırlanıyor…', 'Preparing PDF…', 'PDF wird erstellt…', 'Preparando PDF…', 'Готовим PDF…') : l('PDF indir', 'Download PDF', 'PDF herunterladen', 'Descargar PDF', 'Скачать PDF')}</Btn>
           <Btn variant="ghost" icon="flag" onClick={() => onReport(code, name)}>{l('Hata bildir', 'Report an error', 'Fehler melden', 'Reportar', 'Сообщить')}</Btn>
         </div>
 

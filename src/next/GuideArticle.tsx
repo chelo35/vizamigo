@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { useI18n } from '../data/i18n';
 import { GUIDE_META, getGuide, guideGroups, sourceLabel, type GuideChecklist, type GuideId, type GuideListGroup } from '../data/guides';
-import { getCountryName } from '../data/passportData';
+import { getCountryName, getCategoryBadgeLabel } from '../data/passportData';
+import { getPassportItems } from '../utils/calculator';
+import { loadStoredPassport } from '../utils/storage';
 import { buildLocalizedPath } from '../utils/seoRouter';
 import { Flag } from './ui';
 import type { SupportedLanguage } from '../i18n/types';
@@ -57,6 +59,7 @@ export const GuideArticle: React.FC<{ id: GuideId }> = ({ id }) => {
           <span className="vz-muted" style={{ fontSize: 12.5 }}>{l('Son kontrol', 'Last checked', 'Zuletzt geprüft', 'Última revisión', 'Проверено')}: {checked}</span>
         </div>
       </section>
+      <MyPassportBox id={id} />
       {g.checklist && <Checklist c={g.checklist} />}
       {meta.list && <CountryGroups id={id} />}
       {g.sections.map((s) => (
@@ -189,3 +192,44 @@ const CountryGroups: React.FC<{ id: GuideId }> = ({ id }) => {
     </>
   );
 };
+
+/**
+ * Rehber başka bir pasaport için yazıldıysa (ör. Türkçe rehberler Türk vatandaşları için),
+ * seçili pasaporta göre gerçek durumu en üstte gösterir.
+ */
+const MyPassportBox: React.FC<{ id: GuideId }> = ({ id }) => {
+  const { l, language } = useI18n();
+  const meta = GUIDE_META[id];
+  const [pass] = useState(() => loadStoredPassport());
+  const audience = meta.passports || (language === 'tr' ? ['TR'] : null);
+  if (!pass || !audience || audience.includes(pass)) return null;
+  const items = getPassportItems(pass);
+  const P = getCountryName(pass, language);
+  const A = audience.length <= 3 ? audience.map((c) => getCountryName(c, language)).join(', ') : '';
+  const rows = meta.countries.slice(0, 10).map((c) => ({ c, it: items.find((x) => x.c === c) }));
+  const free = items.filter((x) => x.cat === 'free').length;
+  const easy = items.filter((x) => x.cat === 'evisa' || x.cat === 'voa' || x.cat === 'eta').length;
+  return (
+    <section className="vz-mypass" aria-label={l('Senin pasaportun', 'Your passport', 'Dein Pass', 'Tu pasaporte', 'Ваш паспорт')}>
+      <div className="vz-mypass-h"><Flag code={pass} /> <b>{l(`Senin pasaportun: ${P}`, `Your passport: ${P}`, `Dein Pass: ${P}`, `Tu pasaporte: ${P}`, `Ваш паспорт: ${P}`)}</b></div>
+      <p className="vz-muted">
+        {A
+          ? l(`Bu rehber ${A} vatandaşları için yazıldı. ${P} pasaportuyla durumun:`, `This guide is written for citizens of ${A}. With a ${P} passport:`, `Dieser Ratgeber gilt für Bürger von ${A}. Mit Pass aus ${P}:`, `Esta guía es para ciudadanos de ${A}. Con pasaporte de ${P}:`, `Этот гид написан для граждан: ${A}. С паспортом (${P}):`)
+          : l(`Bu rehber başka pasaportlar için yazıldı. ${P} pasaportuyla durumun:`, `This guide is written for other passports. With a ${P} passport:`, `Dieser Ratgeber gilt für andere Pässe. Mit Pass aus ${P}:`, `Esta guía es para otros pasaportes. Con pasaporte de ${P}:`, `Этот гид для других паспортов. С паспортом (${P}):`)}
+      </p>
+      {rows.length > 0 ? (
+        <List>
+          {rows.map(({ c, it }) => (
+            <Row key={c} lead={<Flag code={c} />} title={getCountryName(c, language)} sub={it ? getCategoryBadgeLabel(it, language) : l('Bilgi yok', 'No data', 'Keine Daten', 'Sin datos', 'Нет данных')} href={buildLocalizedPath(language as SupportedLanguage, 'explore', c)} />
+          ))}
+        </List>
+      ) : (
+        <p>
+          {l(`${P} pasaportuyla ${free} ülkeye vizesiz, ${easy} ülkeye kapıda vize, e-vize ya da elektronik izinle gidilebiliyor.`, `With a ${P} passport: ${free} countries visa-free, ${easy} with visa on arrival, eVisa or eTA.`, `Mit Pass aus ${P}: ${free} Länder visumfrei, ${easy} mit Visum bei Ankunft, e-Visum oder eTA.`, `Con pasaporte de ${P}: ${free} países sin visado, ${easy} con visa a la llegada, e-Visa o eTA.`, `С паспортом (${P}): без визы ${free} стран, ещё ${easy} — виза по прилёте, e-Visa или eTA.`)}{' '}
+          <a href={buildLocalizedPath(language as SupportedLanguage, 'explore', null)}>{l('Ülkeleri gör ›', 'See countries ›', 'Länder ansehen ›', 'Ver países ›', 'Смотреть страны ›')}</a>
+        </p>
+      )}
+    </section>
+  );
+};
+
