@@ -14,6 +14,7 @@ import type { getCountryEncyclopedia } from '../data/countryEncyclopedia';
 import type { getCountryItinerary } from '../data/countryItineraries';
 import type { getVerifiedCountryRecord } from '../data/verifiedCountryData';
 import type { getCountryNomadApps } from '../data/rideAndDeliveryApps';
+import type { OfficialAdvisorySet } from '../data/officialAdvisoryLabels';
 
 export interface CountryBundle {
   insights: CountryFullInsights;
@@ -22,6 +23,7 @@ export interface CountryBundle {
   itin: ReturnType<typeof getCountryItinerary>;
   verified: ReturnType<typeof getVerifiedCountryRecord>;
   apps: ReturnType<typeof getCountryNomadApps>;
+  official?: OfficialAdvisorySet;
   plugs: Record<string, string[]>;
 }
 
@@ -46,8 +48,9 @@ async function fromModules(code: string, lang: string): Promise<CountryBundle> {
     import('../data/countryItineraries'),
     import('../data/verifiedCountryData'),
     import('../data/rideAndDeliveryApps'),
-    import('../data/passportData')
+    import('../data/passportData'),
   ]);
+  const oa = await import('../data/officialAdvisories');
   const insights = ins.getCountryInsights(code, lang);
   const plugs: Record<string, string[]> = {};
   return {
@@ -56,6 +59,7 @@ async function fromModules(code: string, lang: string): Promise<CountryBundle> {
     enc: en.getCountryEncyclopedia(code, lang as never),
     itin: it.getCountryItinerary(code, lang as never),
     verified: ve.getVerifiedCountryRecord(code),
+    official: oa.getOfficialAdvisories(code),
     apps: ra.getCountryNomadApps(code, insights.transport.popularRideApps || []),
     plugs: new Proxy(plugs, {
       get: (t, k: string) => t[k] || (t[k] = ti.getCountryTravelIntelligence(k, pd.getCountryName(k, 'en')).plugs.types)
@@ -69,7 +73,7 @@ export function loadCountryBundle(code: string, lang: string): Promise<CountryBu
   if (hit) return hit;
   const p = (async () => {
     const [shared, local, plugs] = await Promise.all([
-      getJson<Pick<CountryBundle, 'intel' | 'verified' | 'apps'>>(`/data/country/x/${code}.json`),
+      getJson<Pick<CountryBundle, 'intel' | 'verified' | 'apps' | 'official'>>(`/data/country/x/${code}.json`),
       getJson<Pick<CountryBundle, 'insights' | 'enc' | 'itin'>>(`/data/country/${lang}/${code}.json`),
       getJson<Record<string, string[]>>('/data/plugs.json')
     ]);

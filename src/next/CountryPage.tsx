@@ -15,6 +15,7 @@ import { SeaMap, MapPoint } from './SeaMap';
 import { loadCountryBundle, CountryBundle } from './countryData';
 import { getCountryName, INFO } from '../data/passportData';
 import { PartnerLogo } from './PartnerLogo';
+import { advisoryAgencyName, advisoryLabel } from '../data/officialAdvisoryLabels';
 import { OfferCard } from './OfferCard';
 import { tpIdFromUrl } from '../data/tpPartners';
 import { getCountryVisual, getOptimizedImageUrl } from '../data/countryVisuals';
@@ -119,7 +120,7 @@ const CountryPageInner: React.FC<Props & { data: CountryBundle }> = ({ code, pas
   const item = useMemo(() => getPassportItems(passport).find((x) => x.c === code) || null, [passport, code]);
   const visual = getCountryVisual(code, language);
   const geo = GEO_DATA[code];
-  const { insights, intel, enc, itin, verified, apps } = data;
+  const { insights, intel, enc, itin, verified, apps, official } = data;
   const geog = useMemo(() => getCountryGeography(code, language), [code, language]);
 
   const detail = INFO[`${passport}-${code}`];
@@ -254,9 +255,18 @@ const CountryPageInner: React.FC<Props & { data: CountryBundle }> = ({ code, pas
             <div className="vz-stack">
               <div className="vz-stats">
                 <Stat value={`${insights.safety.safetyScore}/100`} label={insights.safety.safetyLevel} icon="shield" tone={insights.safety.safetyScore >= 70 ? 'ok' : insights.safety.safetyScore >= 45 ? 'sun' : 'warn'} />
-                {verified?.advisory.combined_level != null && <Stat value={`${verified.advisory.combined_level}/4`} label={l('Resmî seyahat uyarı seviyesi', 'Official advisory level', 'Reisewarnstufe', 'Nivel de alerta', 'Уровень предупреждения')} icon="alert" tone={verified.advisory.combined_level >= 3 ? 'warn' : 'sea'} />}
+                {official?.max != null && <Stat value={`${official.max}/4`} label={l('Resmî uyarı (en temkinli)', 'Official advisory (strictest)', 'Reisewarnung (strengste)', 'Alerta oficial (más estricta)', 'Офиц. предупреждение (макс.)')} icon="alert" tone={official.max >= 3 ? 'warn' : 'sea'} />}
               </div>
-              {verified?.advisory.advisory_headline && <div className="vz-note"><Icon name="info" size={18} duo={false} />{(verified.advisory.advisory_headline as Record<string, string>)[language] || verified.advisory.advisory_headline.en}</div>}
+              {official && official.items.length > 0 && (
+                <Card title={l('Resmî seyahat uyarıları', 'Official travel advisories', 'Offizielle Reisehinweise', 'Avisos oficiales de viaje', 'Официальные рекомендации для туристов')} icon="shield" tone={official.max != null && official.max >= 3 ? 'warn' : 'plain'}>
+                  <List>
+                    {official.items.map((a) => (
+                      <Row key={a.agency} lead={<span className={`vz-advlv lv${a.level}`}>{a.level}/4</span>} title={advisoryLabel(a, language)} sub={`${advisoryAgencyName(a.agency, language)}${a.date ? ` · ${l('güncelleme', 'updated', 'aktualisiert', 'actualizado', 'обновлено')} ${a.date}` : ''}`} href={a.url} />
+                    ))}
+                  </List>
+                  <p className="vz-muted"><small>{l(`Kaynak: kurumların resmî açık verisi, ${official.fetched} tarihinde alındı. Seyahatten önce bağlantıdan güncel uyarıyı kontrol edin.`, `Source: official open data of each agency, retrieved ${official.fetched}. Check the latest advisory via the link before you travel.`, `Quelle: offizielle offene Daten der Behörden, abgerufen am ${official.fetched}. Vor der Reise den aktuellen Hinweis über den Link prüfen.`, `Fuente: datos abiertos oficiales de cada organismo, consultados el ${official.fetched}. Revise el aviso actual en el enlace antes de viajar.`, `Источник: официальные открытые данные ведомств, получены ${official.fetched}. Перед поездкой проверьте актуальную версию по ссылке.`)}</small></p>
+                </Card>
+              )}
               <p>{insights.safety.crimeRateSummary}</p>
               {verified && verified.advisory.regional_warnings.length > 0 && (
                 <Card title={l('Dikkat edilecek bölgeler', 'Areas to avoid', 'Gebiete meiden', 'Zonas a evitar', 'Опасные районы')} icon="alert" tone="warn">

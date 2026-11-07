@@ -230,7 +230,8 @@ async function main() {
   const CDATA: Record<string, Record<string, any>> = {};
   // ülke sayfası verisi: ülke başına küçük JSON (sayfa 1,6 MB'lık dosyayı beklemesin)
   {
-    const { getCountryInsights } = await import('../src/data/countryInsights');
+    const { getCountryInsights, capSafetyByAdvisory } = await import('../src/data/countryInsights');
+    const { getOfficialAdvisories } = await import('../src/data/officialAdvisories');
     const { getCountryTravelIntelligence } = await import('../src/data/countryTravelIntelligence');
     const { getCountryEncyclopedia } = await import('../src/data/countryEncyclopedia');
     const { getCountryItinerary } = await import('../src/data/countryItineraries');
@@ -254,7 +255,7 @@ async function main() {
       const intel = trIntelFix ? deepMerge(intel0, trIntelFix) : intel0;
       plugs[code] = intel.plugs.types;
       const insEn = getCountryInsights(code, 'en');
-      write(path.join('data', 'country', 'x', `${code}.json`), JSON.stringify({ intel, verified: getVerifiedCountryRecord(code), apps: getCountryNomadApps(code, insEn.transport.popularRideApps || []) }));
+      write(path.join('data', 'country', 'x', `${code}.json`), JSON.stringify({ intel, verified: getVerifiedCountryRecord(code), official: getOfficialAdvisories(code), apps: getCountryNomadApps(code, insEn.transport.popularRideApps || []) }));
       files++;
       for (const lang of LANGS) {
         const local = { insights: getCountryInsights(code, lang), enc: getCountryEncyclopedia(code, lang as never), itin: getCountryItinerary(code, lang as never) };
@@ -273,6 +274,7 @@ async function main() {
           if (fix.intel && !(out as { intel?: unknown }).intel) out = { ...out, intel };
           out = deepMerge(out, fix);
         }
+        { const o = out as { insights?: { safety: { safetyScore: number } } }; if (o.insights) o.insights = capSafetyByAdvisory(o.insights, code, lang); }
         write(path.join('data', 'country', lang, `${code}.json`), JSON.stringify(out));
         (CDATA[lang] ||= {})[code] = lang === 'tr' && !(out as { intel?: unknown }).intel ? { ...out, intel } : out;
         files++;
@@ -297,12 +299,14 @@ async function main() {
 
 
     // sayfa içi bilgi bölümü: düzeltilmiş veriden kısa, doğru ve dile özgü metin (arama motoru + JS çalıştırmayan tarayıcılar)
+    const OA = await import('../src/data/officialAdvisories');
+    const OAL = await import('../src/data/officialAdvisoryLabels');
     const FL: Record<string, Record<string, string>> = {
-      tr: { facts: 'Kısaca', eng: 'İngilizce', capital: 'Başkent', currency: 'Para birimi', best: 'En iyi zaman', plug: 'Priz', water: 'Musluk suyu', waterY: 'İçilebilir', waterN: 'İçilmesi önerilmez', sos: 'Acil numaralar', police: 'Polis', amb: 'Ambulans', gen: 'Genel', safety: 'Güvenlik', tip: 'Bahşiş', pay: 'Ödeme', ride: 'Taksi uygulamaları', langs: 'Dil', budget: 'Günlük bütçe', budgetB: 'ekonomik', budgetM: 'orta', esim: 'İnternet & eSIM', route: 'Önerilen gezi rotası', places: 'Mutlaka görülecek yerler', food: 'Ne yenir', phrases: 'İşe yarar kelimeler', tips: 'Güvenlik ipuçları' },
-      en: { facts: 'Quick facts', eng: 'English', capital: 'Capital', currency: 'Currency', best: 'Best time to visit', plug: 'Plugs', water: 'Tap water', waterY: 'Safe to drink', waterN: 'Not recommended', sos: 'Emergency numbers', police: 'Police', amb: 'Ambulance', gen: 'General', safety: 'Safety', tip: 'Tipping', pay: 'Payments', ride: 'Ride apps', langs: 'Language', budget: 'Daily budget', budgetB: 'budget', budgetM: 'mid-range', esim: 'Internet & eSIM', route: 'Suggested itinerary', places: 'Must-see places', food: 'What to eat', phrases: 'Useful phrases', tips: 'Safety tips' },
-      de: { facts: 'Kurz & knapp', eng: 'Englisch', capital: 'Hauptstadt', currency: 'Währung', best: 'Beste Reisezeit', plug: 'Steckdosen', water: 'Leitungswasser', waterY: 'Trinkbar', waterN: 'Nicht empfohlen', sos: 'Notrufnummern', police: 'Polizei', amb: 'Rettung', gen: 'Allgemein', safety: 'Sicherheit', tip: 'Trinkgeld', pay: 'Bezahlen', ride: 'Taxi-Apps', langs: 'Sprache', budget: 'Tagesbudget', budgetB: 'günstig', budgetM: 'Mittelklasse', esim: 'Internet & eSIM', route: 'Empfohlene Reiseroute', places: 'Sehenswürdigkeiten', food: 'Was man essen sollte', phrases: 'Nützliche Wörter', tips: 'Sicherheitstipps' },
-      es: { facts: 'Datos rápidos', eng: 'Inglés', capital: 'Capital', currency: 'Moneda', best: 'Mejor época', plug: 'Enchufes', water: 'Agua del grifo', waterY: 'Potable', waterN: 'No recomendable', sos: 'Teléfonos de emergencia', police: 'Policía', amb: 'Ambulancia', gen: 'General', safety: 'Seguridad', tip: 'Propinas', pay: 'Pagos', ride: 'Apps de taxi', langs: 'Idioma', budget: 'Presupuesto diario', budgetB: 'económico', budgetM: 'medio', esim: 'Internet y eSIM', route: 'Itinerario recomendado', places: 'Lugares imprescindibles', food: 'Qué comer', phrases: 'Frases útiles', tips: 'Consejos de seguridad' },
-      ru: { facts: 'Коротко', eng: 'Английский', capital: 'Столица', currency: 'Валюта', best: 'Лучшее время', plug: 'Розетки', water: 'Вода из-под крана', waterY: 'Можно пить', waterN: 'Пить не рекомендуется', sos: 'Экстренные номера', police: 'Полиция', amb: 'Скорая', gen: 'Общий', safety: 'Безопасность', tip: 'Чаевые', pay: 'Оплата', ride: 'Такси-приложения', langs: 'Язык', budget: 'Бюджет в день', budgetB: 'эконом', budgetM: 'средний', esim: 'Интернет и eSIM', route: 'Рекомендуемый маршрут', places: 'Что посмотреть', food: 'Что попробовать', phrases: 'Полезные фразы', tips: 'Советы по безопасности' }
+      tr: { facts: 'Kısaca', adv: 'Resmî seyahat uyarıları', eng: 'İngilizce', capital: 'Başkent', currency: 'Para birimi', best: 'En iyi zaman', plug: 'Priz', water: 'Musluk suyu', waterY: 'İçilebilir', waterN: 'İçilmesi önerilmez', sos: 'Acil numaralar', police: 'Polis', amb: 'Ambulans', gen: 'Genel', safety: 'Güvenlik', tip: 'Bahşiş', pay: 'Ödeme', ride: 'Taksi uygulamaları', langs: 'Dil', budget: 'Günlük bütçe', budgetB: 'ekonomik', budgetM: 'orta', esim: 'İnternet & eSIM', route: 'Önerilen gezi rotası', places: 'Mutlaka görülecek yerler', food: 'Ne yenir', phrases: 'İşe yarar kelimeler', tips: 'Güvenlik ipuçları' },
+      en: { facts: 'Quick facts', adv: 'Official travel advisories', eng: 'English', capital: 'Capital', currency: 'Currency', best: 'Best time to visit', plug: 'Plugs', water: 'Tap water', waterY: 'Safe to drink', waterN: 'Not recommended', sos: 'Emergency numbers', police: 'Police', amb: 'Ambulance', gen: 'General', safety: 'Safety', tip: 'Tipping', pay: 'Payments', ride: 'Ride apps', langs: 'Language', budget: 'Daily budget', budgetB: 'budget', budgetM: 'mid-range', esim: 'Internet & eSIM', route: 'Suggested itinerary', places: 'Must-see places', food: 'What to eat', phrases: 'Useful phrases', tips: 'Safety tips' },
+      de: { facts: 'Kurz & knapp', adv: 'Offizielle Reisehinweise', eng: 'Englisch', capital: 'Hauptstadt', currency: 'Währung', best: 'Beste Reisezeit', plug: 'Steckdosen', water: 'Leitungswasser', waterY: 'Trinkbar', waterN: 'Nicht empfohlen', sos: 'Notrufnummern', police: 'Polizei', amb: 'Rettung', gen: 'Allgemein', safety: 'Sicherheit', tip: 'Trinkgeld', pay: 'Bezahlen', ride: 'Taxi-Apps', langs: 'Sprache', budget: 'Tagesbudget', budgetB: 'günstig', budgetM: 'Mittelklasse', esim: 'Internet & eSIM', route: 'Empfohlene Reiseroute', places: 'Sehenswürdigkeiten', food: 'Was man essen sollte', phrases: 'Nützliche Wörter', tips: 'Sicherheitstipps' },
+      es: { facts: 'Datos rápidos', adv: 'Avisos oficiales de viaje', eng: 'Inglés', capital: 'Capital', currency: 'Moneda', best: 'Mejor época', plug: 'Enchufes', water: 'Agua del grifo', waterY: 'Potable', waterN: 'No recomendable', sos: 'Teléfonos de emergencia', police: 'Policía', amb: 'Ambulancia', gen: 'General', safety: 'Seguridad', tip: 'Propinas', pay: 'Pagos', ride: 'Apps de taxi', langs: 'Idioma', budget: 'Presupuesto diario', budgetB: 'económico', budgetM: 'medio', esim: 'Internet y eSIM', route: 'Itinerario recomendado', places: 'Lugares imprescindibles', food: 'Qué comer', phrases: 'Frases útiles', tips: 'Consejos de seguridad' },
+      ru: { facts: 'Коротко', adv: 'Официальные предупреждения', eng: 'Английский', capital: 'Столица', currency: 'Валюта', best: 'Лучшее время', plug: 'Розетки', water: 'Вода из-под крана', waterY: 'Можно пить', waterN: 'Пить не рекомендуется', sos: 'Экстренные номера', police: 'Полиция', amb: 'Скорая', gen: 'Общий', safety: 'Безопасность', tip: 'Чаевые', pay: 'Оплата', ride: 'Такси-приложения', langs: 'Язык', budget: 'Бюджет в день', budgetB: 'эконом', budgetM: 'средний', esim: 'Интернет и eSIM', route: 'Рекомендуемый маршрут', places: 'Что посмотреть', food: 'Что попробовать', phrases: 'Полезные фразы', tips: 'Советы по безопасности' }
     };
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const factsHtml = (code: string, lang: string): string => {
@@ -325,6 +329,8 @@ async function main() {
       const em = ins.safety?.emergencyNumbers;
       if (em) add(L.sos, [em.police && `${L.police} ${em.police}`, em.ambulance && `${L.amb} ${em.ambulance}`, em.general && em.general !== em.police && `${L.gen} ${em.general}`].filter(Boolean).join(' · '));
       if (ins.safety?.safetyLevel) add(L.safety, `${t(ins.safety.safetyLevel)}${t(ins.safety.crimeRateSummary) ? ` – ${t(ins.safety.crimeRateSummary)}` : ''}`);
+      const oa = OA.getOfficialAdvisories(code);
+      const advHtml = oa.items.length ? oa.items.map((x) => `<a href="${x.url}" rel="nofollow noopener">${esc(OAL.advisoryAgencyName(x.agency, lang))}</a>: ${x.level}/4 – ${esc(OAL.advisoryLabel(x, lang))} (${x.date})`).join('; ') : '';
       add(L.tip, t(enc.economy?.tippingCulture));
       add(L.pay, t(enc.economy?.paymentCulture));
       add(L.ride, arr(ins.transport?.popularRideApps).join(', '));
@@ -332,7 +338,7 @@ async function main() {
       const lc = ins.livingCosts;
       if (lc?.dailyBudgetBackpackerUsd) add(L.budget, `${L.budgetB} ${t(lc.dailyBudgetBackpackerUsd)}${lc.dailyBudgetMidrangeUsd ? ` · ${L.budgetM} ${t(lc.dailyBudgetMidrangeUsd)}` : ''}`);
       add(L.esim, t(ins.internet?.esimAvailability));
-      let h = rows.length ? `<section class="vzs-facts"><h2>${esc(L.facts)}</h2><ul>${rows.map(([k, v]) => `<li><b>${esc(k)}:</b> ${esc(v)}</li>`).join('')}</ul></section>` : '';
+      let h = rows.length ? `<section class="vzs-facts"><h2>${esc(L.facts)}</h2><ul>${rows.map(([k, v]) => `<li><b>${esc(k)}:</b> ${esc(v)}</li>`).join('')}${advHtml ? `<li><b>${esc(L.adv)}:</b> ${advHtml}</li>` : ''}</ul></section>` : '';
       const stops = Array.isArray(itin.stops) ? itin.stops : [];
       if (stops.length) {
         h += `<section class="vzs-route"><h2>${esc(L.route)}${t(itin.routeName) ? `: ${esc(t(itin.routeName))}` : ''}</h2>${t(itin.routeSummary) ? `<p>${esc(t(itin.routeSummary))}</p>` : ''}<ol>${stops

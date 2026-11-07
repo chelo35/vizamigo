@@ -1,5 +1,6 @@
 import { EMERGENCY_FIX } from './emergencyFix';
 import { applyCountryFix } from './countryFixHook';
+import { safetyCapForCountry } from './officialAdvisories';
 /**
  * Ülke İçi Güvenlik, İnternet, Ulaşım, Yaşam Maliyetleri & Gezgin İstihbaratı
  * 199 ülke için güvenlik/suç oranları, internet hızları/ücretleri,
@@ -2149,6 +2150,15 @@ function getCountryInsightsImpl(countryCode: string, lang: string = 'tr'): Count
   };
 }
 
+const SAFETY_ENUM: Record<number, Record<string, [string, string]>> = {"10": {"tr": ["Seyahat Uyarısı (Kırmızı Bölge)", "bg-rose-600 text-white border-rose-700 dark:bg-rose-950 dark:text-rose-200"], "en": ["Do Not Travel (Conflict Zone)", "bg-rose-600 text-white border-rose-700 dark:bg-rose-950 dark:text-rose-200"], "de": ["Kriegsgebiet (Reisewarnung)", "bg-rose-600 text-white border-rose-700 dark:bg-rose-950 dark:text-rose-200"], "es": ["Zona de Conflicto (No Viajar)", "bg-rose-600 text-white border-rose-700 dark:bg-rose-950 dark:text-rose-200"], "ru": ["Зона конфликта (Не въезжать)", "bg-rose-600 text-white border-rose-700 dark:bg-rose-950 dark:text-rose-200"]}, "40": {"tr": ["Hassas / Tedbir Gerekir", "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60"], "en": ["Caution Advised", "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60"], "de": ["Erhöhte Vorsicht", "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60"], "es": ["Precaución Aconsejada", "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60"], "ru": ["Требуется Осторожность", "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60"]}, "65": {"tr": ["Güvenli", "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"], "en": ["Safe", "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"], "de": ["Sicher", "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"], "es": ["Seguro", "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"], "ru": ["Безопасно", "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"]}};
 export function getCountryInsights(countryCode: string, lang: string = 'tr'): CountryFullInsights {
-  return applyCountryFix('insights', countryCode, lang, getCountryInsightsImpl(countryCode, lang));
+  return capSafetyByAdvisory(applyCountryFix('insights', countryCode, lang, getCountryInsightsImpl(countryCode, lang)), countryCode, lang);
+}
+
+/** resmî seyahat uyarılarıyla tutarlılık (ABD/İngiltere/Kanada): en temkinli kurumun seviyesi puanı sınırlar */
+export function capSafetyByAdvisory<T extends { safety?: { safetyScore: number; safetyLevel?: string; badgeColor?: string } }>(ins: T, countryCode: string, lang: string): T {
+  const cap = safetyCapForCountry(countryCode);
+  if (cap == null || !ins?.safety || !(ins.safety.safetyScore > cap)) return ins;
+  const e = SAFETY_ENUM[cap]?.[lang] || SAFETY_ENUM[cap]?.en;
+  return { ...ins, safety: { ...ins.safety, safetyScore: cap, ...(e ? { safetyLevel: e[0], badgeColor: e[1] } : {}) } };
 }
