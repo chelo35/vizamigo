@@ -1,0 +1,1937 @@
+{
+ "tr": {
+  "insights": {
+   "currency": "Moğol Tugriki (MNT)",
+   "plugType": "Tip C, E (220V, 50Hz)",
+   "bestMonths": "Haziran – Eylül (Naadam: 11-15 Temmuz); kışlar -30°C’nin altına iner",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Güvenli",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Genel olarak güvenlidir; Ulan Batur’da Narantuul Pazarı, Devlet Mağazası çevresi ve otobüslerde yankesicilik yaygındır. Gece alkol kaynaklı kavgalara karşı dikkatli olun.",
+    "commonScams": [
+     "Kalabalık pazarlarda ve otobüslerde çanta kesme / yankesicilik",
+     "Havalimanında resmî olmayan taksilerin fahiş ücret istemesi",
+     "Kırsal tur fiyatına sonradan yakıt veya \"ek hizmet\" eklenmesi"
+    ],
+    "safeTravelTips": [
+     "Turu yazılı sözleşmeyle ve fiyata nelerin dahil olduğunu netleştirerek alın.",
+     "Taksiyi UBCab uygulamasıyla çağırın; sokakta durdurulan araçlarda fiyatı önceden konuşun.",
+     "Kırsalda uzun mesafeler ve zayıf kapsama nedeniyle yanınızda ilk yardım çantası ve yedek nakit bulundurun."
+    ],
+    "emergencyNumbers": {
+     "police": "102",
+     "ambulance": "103",
+     "general": "105"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Ulan Batur’da 4G/5G; kırsalda yalnızca il ve ilçe merkezlerinde sinyal",
+    "costPerGbUsd": "~0.50 - 1.50 $",
+    "esimAvailability": "İyi",
+    "bestCarriers": [
+     "Unitel",
+     "Mobicom",
+     "Skytel",
+     "G-Mobile"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Temel Düzey",
+    "costLevel": "Ekonomik",
+    "singleTicketUsd": "0.15 - 0.30 $",
+    "dailyPassUsd": "~1 - 2 $",
+    "popularRideApps": [
+     "UBCab",
+     "Toki",
+     "Google Maps",
+     "MAPS.ME"
+    ],
+    "taxiAdvice": "Ulan Batur’da trafik çok yoğundur; UBCab ile kısa yolculuklar 2-5 $ tutar. Şehirlerarası ulaşım için tur aracı veya iç hat uçuşu tercih edin."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "35 - 55 $",
+    "dailyBudgetMidrangeUsd": "80 - 150 $",
+    "budgetMealUsd": "5 - 10 $",
+    "coffeeUsd": "2 - 4 $",
+    "waterBottleUsd": "0.40 - 0.80 $",
+    "hostelDormUsd": "10 - 18 $",
+    "hotel3StarUsd": "50 - 100 $",
+    "flightCostIndex": "Pahalı",
+    "flightTip": "Türk Hava Yolları İstanbul–Ulan Batur seferi yapar; Naadam dönemi (Temmuz) biletlerini aylar önce alın."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Gere (yurt) girerken eşiğe basmayın ve içeride saat yönünde ilerleyin.",
+     "İkram edilen çay veya yemeği sağ elle ya da iki elle alın; en azından tadına bakın.",
+     "Ayaklarınızı ocağa veya sunağa doğru uzatmayın, gerde ıslık çalmayın.",
+     "Göçebelerin hayvanlarına ve ovoo taş yığınlarına saygı gösterin; ovoo’nun etrafında saat yönünde üç kez dönülür."
+    ],
+    "festivals": [
+     "Naadam (Temmuz; güreş, okçuluk, at yarışı)",
+     "Tsagaan Sar (ay takvimine göre yeni yıl)",
+     "Altın Kartal Festivali (Bayan-Ölgii, Ekim başı)"
+    ],
+    "lifestyle": "Göçebe hayvancılık, ger çadırları, at kültürü ve uçsuz bucaksız bozkır; başkentte hızla modernleşen şehir hayatı."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Ulan Batur – Cengiz Han (Sühbaatar) Meydanı",
+     "Gandan Manastırı",
+     "Gorhi-Terelj Milli Parkı",
+     "Cengiz Han Atlı Heykeli",
+     "Karakurum ve Erdene Zuu Manastırı",
+     "Gobi – Hongoryn Els kum tepeleri"
+    ],
+    "bestSeasons": "Haziran – Eylül (Naadam: 11-15 Temmuz); kışlar -30°C’nin altına iner",
+    "travelStyleTip": "Kırsal Moğolistan’ı şoförlü 4x4 araçla ve ger kamplarında konaklayarak gezin; mesafeler çok uzundur."
+   },
+   "religion": {
+    "primaryReligions": "Tibet Budizmi (~%52), dinsiz (~%40), İslam (~%3, Kazaklar), Şamanizm ve Hristiyanlık.",
+    "respectNorms": "Manastırlarda dua tekerleklerini saat yönünde çevirin, keşişlere ve sunaklara saygı gösterin, içeride fotoğraf için izin isteyin.",
+    "sacredSites": [
+     "Gandan Tegçenling Manastırı",
+     "Erdene Zuu Manastırı",
+     "Amarbayasgalant Manastırı"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Moğolca (resmî, Kiril alfabesiyle). Batıda Kazakça konuşulur.",
+    "englishProficiency": "Ulan Batur’da gençler arasında orta; kırsalda rehber veya çeviri uygulaması gerekir.",
+    "phrases": [
+     {
+      "phrase": "Сайн байна уу?",
+      "meaning": "Merhaba (Nasılsınız?)",
+      "translation": "Merhaba (Nasılsınız?)",
+      "pronunciation": "Sain baina uu?"
+     },
+     {
+      "phrase": "Баярлалаа",
+      "meaning": "Teşekkürler",
+      "translation": "Teşekkürler",
+      "pronunciation": "Bayarlalaa"
+     },
+     {
+      "phrase": "Гуйя",
+      "meaning": "Lütfen",
+      "translation": "Lütfen",
+      "pronunciation": "Guiya"
+     },
+     {
+      "phrase": "Энэ хэд вэ?",
+      "meaning": "Bu ne kadar?",
+      "translation": "Bu ne kadar?",
+      "pronunciation": "Ene khed we?"
+     },
+     {
+      "phrase": "Баяртай",
+      "meaning": "Hoşça kal",
+      "translation": "Hoşça kal",
+      "pronunciation": "Bayartai"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Hun (Xiongnu) ve Göktürk gibi bozkır imparatorluklarının topraklarında 1206’da Cengiz Han Moğol İmparatorluğu’nu kurdu. 1921’de bağımsızlık devrimi, 1990’da demokratik dönüşüm yaşandı.",
+    "milestones": [
+     "MÖ 209: Hun (Xiongnu) devletinin kuruluşu",
+     "8. yüzyıl: Orhun Yazıtları (Göktürk)",
+     "1206: Cengiz Han’ın Büyük Han ilan edilmesi",
+     "1990: Demokratik devrim"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Buuz (buharda pişmiş etli mantı)",
+     "Huuşuur (kızarmış etli börek)",
+     "Horhog (sıcak taşlarla pişirilen kuzu)"
+    ],
+    "traditionalDrinks": [
+     "Süütei tsai (tuzlu sütlü çay)",
+     "Airag (kımız, fermente kısrak sütü)",
+     "Arhi (Moğol votkası)"
+    ],
+    "streetFoodAndDesserts": [
+     "Boortsog (kızarmış hamur)",
+     "Aaruul (kurutulmuş lor)",
+     "Tsuivan (etli el yapımı erişte)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Cengiz Han (Moğol İmparatorluğu’nun kurucusu)",
+     "Zanabazar (heykeltıraş, Budist lider)",
+     "Hakuhō Shō (sumo yokozunası)"
+    ],
+    "strongSectors": [
+     "Madencilik (bakır, kömür, altın)",
+     "Hayvancılık ve kaşmir",
+     "Turizm"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Ulan Batur’da kart ve QR ödeme yaygındır; kırsalda, ger kamplarında ve pazarlarda nakit tugrik gerekir.",
+    "tippingCulture": "Restoranlarda %10 bahşiş takdir edilir; tur sonunda şoför ve rehbere bahşiş vermek yaygındır.",
+    "economicPillars": "Madencilik ihracatı, hayvancılık ve kaşmir, inşaat ve turizm."
+   }
+  },
+  "itin": {
+   "routeName": "Moğolistan Bozkır Rotası: Ulan Batur, Terelj, Karakurum ve Gobi",
+   "routeSummary": "Ulan Batur’dan Terelj’in kayalık vadilerine, Göktürk izlerinin bulunduğu Orhun Vadisi ve Karakurum’a, ardından Gobi Çölü’nün kum tepelerine uzanan 8 günlük rota.",
+   "totalDays": 8,
+   "idealDurationText": "8 Günlük Bozkır ve Çöl Rotası",
+   "bestSeason": "Haziran – Eylül (Naadam: 11-15 Temmuz); kışlar -30°C’nin altına iner",
+   "transportMode": "Şoförlü 4x4 (UAZ / Land Cruiser) + ger kampı konaklaması",
+   "paceLevel": "Macera (Doğa + Göçebe Kültürü)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "1. Durak: Ulan Batur",
+     "recommendedDuration": "2 Gün (Başkent)",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "Cengiz Han Meydanı ve Devlet Sarayı",
+      "Gandan Manastırı",
+      "Cengiz Han Ulusal Müzesi",
+      "Zaisan Tepesi Anıtı"
+     ],
+     "activities": [
+      "Gandan’da sabah duasını izleyin.",
+      "Tumen Ekh gösterisinde gırtlak şarkısı (höömii) dinleyin.",
+      "Devlet Mağazası’nda kaşmir alışverişi yapın."
+     ],
+     "foodAndDrinks": [
+      "Buuz",
+      "Süütei tsai",
+      "Tsuivan"
+     ],
+     "criticalTips": [
+      "Narantuul Pazarı’nda çanta ve telefonunuza dikkat edin.",
+      "Trafik çok yoğundur; yolculuklara ek süre ayırın."
+     ],
+     "mapsQuery": "Ulaanbaatar, Mongolia"
+    },
+    {
+     "stopNumber": 2,
+     "name": "2. Durak: Gorhi-Terelj Milli Parkı",
+     "recommendedDuration": "1 Gün (Doğa)",
+     "durationBadge": "1 Gün",
+     "highlights": [
+      "Kaplumbağa Kayası",
+      "Aryabal Meditasyon Tapınağı",
+      "Cengiz Han Atlı Heykeli (yol üzerinde)"
+     ],
+     "activities": [
+      "Göçebe bir ailenin yanında at binin.",
+      "Ger kampında bir gece geçirin.",
+      "Vadide yürüyüş yapın."
+     ],
+     "foodAndDrinks": [
+      "Horhog",
+      "Airag"
+     ],
+     "criticalTips": [
+      "Gece sıcaklığı yazın bile çok düşer.",
+      "Ata binerken kask isteyin; Moğol atları yarı yabanidir."
+     ],
+     "mapsQuery": "Gorkhi-Terelj National Park, Mongolia"
+    },
+    {
+     "stopNumber": 3,
+     "name": "3. Durak: Karakurum ve Orhun Vadisi",
+     "recommendedDuration": "2 Gün (Tarih)",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "Erdene Zuu Manastırı",
+      "Karakurum Müzesi",
+      "Hoşöö Tsaidam – Orhun Yazıtları (Kül Tigin ve Bilge Kağan)",
+      "Orhun Şelalesi"
+     ],
+     "activities": [
+      "Göktürk yazıtlarını yerinde görün.",
+      "Erdene Zuu’nun 108 stupalı duvarları içinde gezin.",
+      "Orhun Vadisi’nde göçebe ailelerle tanışın."
+     ],
+     "foodAndDrinks": [
+      "Huuşuur",
+      "Süütei tsai",
+      "Aaruul"
+     ],
+     "criticalTips": [
+      "Yollar asfalt dışı ve yorucudur; mola planlayın.",
+      "Manastır içinde fotoğraf için ücret/izin gerekebilir."
+     ],
+     "mapsQuery": "Kharkhorin, Mongolia"
+    },
+    {
+     "stopNumber": 4,
+     "name": "4. Durak: Gobi Çölü",
+     "recommendedDuration": "3 Gün (Çöl)",
+     "durationBadge": "3 Gün",
+     "highlights": [
+      "Hongoryn Els kum tepeleri",
+      "Bayanzag (Alevli Kayalıklar, dinozor fosilleri)",
+      "Yolyn Am buz kanyonu"
+     ],
+     "activities": [
+      "Deveyle kum tepelerinde gezinti yapın.",
+      "Bayanzag’da gün batımını izleyin.",
+      "Yolyn Am kanyonunda yürüyüş yapın."
+     ],
+     "foodAndDrinks": [
+      "Boortsog",
+      "Deve sütü çayı"
+     ],
+     "criticalTips": [
+      "Bol su, güneş kremi ve toz için maske alın.",
+      "İç hat uçuşuyla (Dalanzadgad) yol süresini kısaltabilirsiniz."
+     ],
+     "mapsQuery": "Khongoryn Els, Gobi, Mongolia"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Buuz (buharda pişmiş etli mantı)",
+     "Huuşuur (kızarmış etli börek)",
+     "Horhog (sıcak taşlarla pişirilen kuzu)"
+    ],
+    "drinks": [
+     "Süütei tsai (tuzlu sütlü çay)",
+     "Airag (kımız, fermente kısrak sütü)",
+     "Arhi (Moğol votkası)"
+    ],
+    "streetFoods": [
+     "Boortsog (kızarmış hamur)",
+     "Aaruul (kurutulmuş lor)",
+     "Tsuivan (etli el yapımı erişte)"
+    ],
+    "diningAdvice": "Moğol mutfağı et ve süt ürünleri ağırlıklıdır; vejetaryen seçenekler başkent dışında azdır. Dağ sıçanı (tarbagan) etinden veveba riski nedeniyle uzak durun."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Katmanlı kalın giysi (gece-gündüz farkı büyük)",
+     "Güneş gözlüğü ve güneş kremi",
+     "Islak mendil ve el dezenfektanı",
+     "Powerbank (ger kamplarında elektrik sınırlı)"
+    ],
+    "safetyAndEtiquette": [
+     "Gerlere saygılı girin, eşiğe basmayın.",
+     "Kalabalık pazarlarda değerli eşyalarınızı önde taşıyın."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "E"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "C ve E tipi prizler (220V); Türkiye’deki C tipi fişler doğrudan uyar, topraklı F fişlerde uyum için çok amaçlı adaptör faydalı olabilir."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Musluk suyu içilmez; şişe su veya kaynatılmış su kullanın. Kırsalda su kaynakları sınırlıdır.",
+    "vaccines": [
+     "Rutin aşılar (tetanoz-difteri, KKK)",
+     "Hepatit A ve Tifo",
+     "Kırsalda uzun kalacaklar için kuduz ve kene kaynaklı ensefalit"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "103"
+   },
+   "tipping": {
+    "custom": "Bahşiş geleneksel değildir ancak turistik yerlerde takdir edilir.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Kırsal tur sonunda şoför ve rehbere günlük birkaç dolar bahşiş yaygındır."
+   },
+   "taxFree": {
+    "vatRefundPercent": "KDV %10; genel bir turist iadesi yok",
+    "minSpend": "Uygulanmaz",
+    "customsNote": "Moğolistan’da turistlere yaygın bir KDV iadesi uygulanmaz. Fosil, antika ve Budist eser çıkarmak yasaktır veya özel izin gerektirir."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.50 - $1.50",
+    "topCarriers": [
+     "Unitel",
+     "Mobicom",
+     "Skytel",
+     "G-Mobile"
+    ],
+    "airportSimTrapWarning": "Havalimanında Unitel ve Mobicom standları vardır; fiyatlar şehirdekine yakındır. Kırsalda en iyi kapsamayı genelde Unitel ve Mobicom sağlar."
+   },
+   "touristScams": [
+    {
+     "title": "Pazarda Yankesicilik",
+     "desc": "Narantuul Pazarı ve otobüslerde çanta kesme ve cep hırsızlığı.",
+     "tip": "Çantanızı önde taşıyın, değerli eşyaları otelde bırakın."
+    },
+    {
+     "title": "Gayriresmî Taksi",
+     "desc": "Havalimanı ve gece saatlerinde rastgele araçlar fahiş fiyat ister.",
+     "tip": "UBCab kullanın veya otelden transfer ayarlayın."
+    },
+    {
+     "title": "Tur Fiyatı Sürprizi",
+     "desc": "Yolda yakıt, giriş ücreti veya yemek için ek ödeme talebi.",
+     "tip": "Sözleşmede nelerin dahil olduğunu yazılı olarak netleştirin."
+    }
+   ]
+  }
+ },
+ "en": {
+  "insights": {
+   "currency": "Mongolian Tögrög (MNT)",
+   "plugType": "Type C, E (220V, 50Hz)",
+   "bestMonths": "June – September (Naadam: 11-15 July); winters drop below -30°C",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Safe",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Generally safe; pickpocketing is common in Ulaanbaatar at Narantuul Market, around the State Department Store and on buses. Be careful of alcohol-fuelled fights at night.",
+    "commonScams": [
+     "Bag slashing and pickpocketing in crowded markets and buses",
+     "Unofficial airport taxis charging excessive fares",
+     "Countryside tours adding fuel or \"extra services\" to the price later"
+    ],
+    "safeTravelTips": [
+     "Book tours with a written contract that states what is included.",
+     "Order taxis with the UBCab app; agree the price first with cars flagged on the street.",
+     "Distances are long and coverage poor in the countryside; carry a first-aid kit and spare cash."
+    ],
+    "emergencyNumbers": {
+     "police": "102",
+     "ambulance": "103",
+     "general": "105"
+    }
+   },
+   "internet": {
+    "networkCoverage": "4G/5G in Ulaanbaatar; in the countryside signal only in provincial and district centres",
+    "costPerGbUsd": "~0.50 - 1.50 $",
+    "esimAvailability": "Good",
+    "bestCarriers": [
+     "Unitel",
+     "Mobicom",
+     "Skytel",
+     "G-Mobile"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Basic",
+    "costLevel": "Budget-Friendly",
+    "singleTicketUsd": "0.15 - 0.30 $",
+    "dailyPassUsd": "~1 - 2 $",
+    "popularRideApps": [
+     "UBCab",
+     "Toki",
+     "Google Maps",
+     "MAPS.ME"
+    ],
+    "taxiAdvice": "Ulaanbaatar traffic is heavy; short UBCab rides cost 2-5 $. For long distances use a tour vehicle or domestic flight."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "35 - 55 $",
+    "dailyBudgetMidrangeUsd": "80 - 150 $",
+    "budgetMealUsd": "5 - 10 $",
+    "coffeeUsd": "2 - 4 $",
+    "waterBottleUsd": "0.40 - 0.80 $",
+    "hostelDormUsd": "10 - 18 $",
+    "hotel3StarUsd": "50 - 100 $",
+    "flightCostIndex": "Expensive",
+    "flightTip": "Turkish Airlines flies Istanbul–Ulaanbaatar; book Naadam season (July) tickets months ahead."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Do not step on the threshold when entering a ger, and move clockwise inside.",
+     "Accept tea or food with your right hand or both hands; at least taste it.",
+     "Never point your feet at the stove or altar, and do not whistle in a ger.",
+     "Respect herders’ animals and ovoo stone cairns; walk around an ovoo clockwise three times."
+    ],
+    "festivals": [
+     "Naadam (July; wrestling, archery, horse racing)",
+     "Tsagaan Sar (lunar new year)",
+     "Golden Eagle Festival (Bayan-Ölgii, early October)"
+    ],
+    "lifestyle": "Nomadic herding, ger tents, horse culture and endless steppe, alongside fast-modernising life in the capital."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Ulaanbaatar – Chinggis Khaan (Sükhbaatar) Square",
+     "Gandan Monastery",
+     "Gorkhi-Terelj National Park",
+     "Chinggis Khaan Equestrian Statue",
+     "Kharkhorin and Erdene Zuu Monastery",
+     "Gobi – Khongoryn Els dunes"
+    ],
+    "bestSeasons": "June – September (Naadam: 11-15 July); winters drop below -30°C",
+    "travelStyleTip": "Explore rural Mongolia by 4x4 with a driver and stay in ger camps; distances are huge."
+   },
+   "religion": {
+    "primaryReligions": "Tibetan Buddhism (~52%), no religion (~40%), Islam (~3%, Kazakhs), shamanism and Christianity.",
+    "respectNorms": "Spin prayer wheels clockwise, respect monks and altars, and ask before taking photos inside monasteries.",
+    "sacredSites": [
+     "Gandan Tegchenling Monastery",
+     "Erdene Zuu Monastery",
+     "Amarbayasgalant Monastery"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Mongolian (official, written in Cyrillic). Kazakh is spoken in the west.",
+    "englishProficiency": "Moderate among young people in Ulaanbaatar; a guide or translation app is needed in the countryside.",
+    "phrases": [
+     {
+      "phrase": "Сайн байна уу?",
+      "meaning": "Hello (How are you?)",
+      "translation": "Hello (How are you?)",
+      "pronunciation": "Sain baina uu?"
+     },
+     {
+      "phrase": "Баярлалаа",
+      "meaning": "Thank you",
+      "translation": "Thank you",
+      "pronunciation": "Bayarlalaa"
+     },
+     {
+      "phrase": "Гуйя",
+      "meaning": "Please",
+      "translation": "Please",
+      "pronunciation": "Guiya"
+     },
+     {
+      "phrase": "Энэ хэд вэ?",
+      "meaning": "How much is this?",
+      "translation": "How much is this?",
+      "pronunciation": "Ene khed we?"
+     },
+     {
+      "phrase": "Баяртай",
+      "meaning": "Goodbye",
+      "translation": "Goodbye",
+      "pronunciation": "Bayartai"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "On lands once ruled by steppe empires such as the Xiongnu and the Göktürks, Chinggis Khaan founded the Mongol Empire in 1206. A revolution in 1921 brought independence and a democratic transition followed in 1990.",
+    "milestones": [
+     "209 BC: Xiongnu state founded",
+     "8th century: Orkhon inscriptions (Göktürk)",
+     "1206: Chinggis Khaan proclaimed Great Khan",
+     "1990: Democratic revolution"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Buuz (steamed meat dumplings)",
+     "Khuushuur (fried meat pastry)",
+     "Khorkhog (lamb cooked with hot stones)"
+    ],
+    "traditionalDrinks": [
+     "Süütei tsai (salty milk tea)",
+     "Airag (fermented mare’s milk)",
+     "Arkhi (Mongolian vodka)"
+    ],
+    "streetFoodAndDesserts": [
+     "Boortsog (fried dough)",
+     "Aaruul (dried curd)",
+     "Tsuivan (hand-made noodles with meat)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Chinggis Khaan (founder of the Mongol Empire)",
+     "Zanabazar (sculptor, Buddhist leader)",
+     "Hakuhō Shō (sumo yokozuna)"
+    ],
+    "strongSectors": [
+     "Mining (copper, coal, gold)",
+     "Livestock and cashmere",
+     "Tourism"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Cards and QR payments are common in Ulaanbaatar; the countryside, ger camps and markets need cash in tögrög.",
+    "tippingCulture": "A 10% tip is appreciated in restaurants; tipping drivers and guides at the end of a tour is customary.",
+    "economicPillars": "Mining exports, livestock and cashmere, construction and tourism."
+   }
+  },
+  "itin": {
+   "routeName": "Mongolia Steppe Route: Ulaanbaatar, Terelj, Kharkhorin and the Gobi",
+   "routeSummary": "An 8-day route from Ulaanbaatar to Terelj’s rocky valleys, the Orkhon Valley and Kharkhorin with their Göktürk heritage, then the dunes of the Gobi Desert.",
+   "totalDays": 8,
+   "idealDurationText": "8-Day Steppe & Desert Itinerary",
+   "bestSeason": "June – September (Naadam: 11-15 July); winters drop below -30°C",
+   "transportMode": "4x4 with driver (UAZ / Land Cruiser) + ger camp stays",
+   "paceLevel": "Adventure (Nature & Nomadic Culture)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stop 1: Ulaanbaatar",
+     "recommendedDuration": "2 Days (Capital)",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "Chinggis Khaan Square and Government Palace",
+      "Gandan Monastery",
+      "Chinggis Khaan National Museum",
+      "Zaisan Memorial"
+     ],
+     "activities": [
+      "Watch morning prayers at Gandan.",
+      "Hear throat singing (khöömii) at a Tumen Ekh show.",
+      "Shop for cashmere at the State Department Store."
+     ],
+     "foodAndDrinks": [
+      "Buuz",
+      "Süütei tsai",
+      "Tsuivan"
+     ],
+     "criticalTips": [
+      "Watch your bag and phone at Narantuul Market.",
+      "Traffic is very heavy; allow extra time."
+     ],
+     "mapsQuery": "Ulaanbaatar, Mongolia"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stop 2: Gorkhi-Terelj National Park",
+     "recommendedDuration": "1 Day (Nature)",
+     "durationBadge": "1 Day",
+     "highlights": [
+      "Turtle Rock",
+      "Aryabal Meditation Temple",
+      "Chinggis Khaan Equestrian Statue (on the way)"
+     ],
+     "activities": [
+      "Go horse riding with a nomadic family.",
+      "Spend a night in a ger camp.",
+      "Hike through the valley."
+     ],
+     "foodAndDrinks": [
+      "Khorkhog",
+      "Airag"
+     ],
+     "criticalTips": [
+      "Night temperatures drop sharply even in summer.",
+      "Ask for a helmet when riding; Mongolian horses are semi-wild."
+     ],
+     "mapsQuery": "Gorkhi-Terelj National Park, Mongolia"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stop 3: Kharkhorin and the Orkhon Valley",
+     "recommendedDuration": "2 Days (History)",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "Erdene Zuu Monastery",
+      "Kharkhorin Museum",
+      "Khöshöö Tsaidam – Orkhon inscriptions (Kul Tigin and Bilge Khagan)",
+      "Orkhon Waterfall"
+     ],
+     "activities": [
+      "See the Göktürk inscriptions on site.",
+      "Walk inside Erdene Zuu’s wall of 108 stupas.",
+      "Meet nomadic families in the Orkhon Valley."
+     ],
+     "foodAndDrinks": [
+      "Khuushuur",
+      "Süütei tsai",
+      "Aaruul"
+     ],
+     "criticalTips": [
+      "Roads are unpaved and tiring; plan breaks.",
+      "Photos inside the monastery may require a fee or permission."
+     ],
+     "mapsQuery": "Kharkhorin, Mongolia"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Stop 4: Gobi Desert",
+     "recommendedDuration": "3 Days (Desert)",
+     "durationBadge": "3 Days",
+     "highlights": [
+      "Khongoryn Els dunes",
+      "Bayanzag (Flaming Cliffs, dinosaur fossils)",
+      "Yolyn Am ice canyon"
+     ],
+     "activities": [
+      "Ride a camel across the dunes.",
+      "Watch sunset at Bayanzag.",
+      "Hike the Yolyn Am canyon."
+     ],
+     "foodAndDrinks": [
+      "Boortsog",
+      "Camel milk tea"
+     ],
+     "criticalTips": [
+      "Bring plenty of water, sunscreen and a dust mask.",
+      "A domestic flight (Dalanzadgad) shortens the drive."
+     ],
+     "mapsQuery": "Khongoryn Els, Gobi, Mongolia"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Buuz (steamed meat dumplings)",
+     "Khuushuur (fried meat pastry)",
+     "Khorkhog (lamb cooked with hot stones)"
+    ],
+    "drinks": [
+     "Süütei tsai (salty milk tea)",
+     "Airag (fermented mare’s milk)",
+     "Arkhi (Mongolian vodka)"
+    ],
+    "streetFoods": [
+     "Boortsog (fried dough)",
+     "Aaruul (dried curd)",
+     "Tsuivan (hand-made noodles with meat)"
+    ],
+    "diningAdvice": "Mongolian cuisine is heavy on meat and dairy; vegetarian options are scarce outside the capital. Avoid marmot (tarbagan) meat because of plague risk."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Warm layers (big day-night temperature swings)",
+     "Sunglasses and sunscreen",
+     "Wet wipes and hand sanitiser",
+     "Power bank (limited electricity in ger camps)"
+    ],
+    "safetyAndEtiquette": [
+     "Enter gers respectfully and never step on the threshold.",
+     "Keep valuables in front of you in crowded markets."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "E"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Type C and E sockets (220V); Turkish type C plugs fit directly, and a universal adapter helps with grounded type F plugs."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Tap water is not drinkable; use bottled or boiled water. Water sources are limited in the countryside.",
+    "vaccines": [
+     "Routine vaccines (tetanus-diphtheria, MMR)",
+     "Hepatitis A and Typhoid",
+     "Rabies and tick-borne encephalitis for long rural stays"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "103"
+   },
+   "tipping": {
+    "custom": "Tipping is not traditional but appreciated in tourist places.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "At the end of a countryside tour a few dollars per day for the driver and guide is customary."
+   },
+   "taxFree": {
+    "vatRefundPercent": "10% VAT; no general tourist refund",
+    "minSpend": "Not applicable",
+    "customsNote": "Mongolia has no widespread VAT refund for tourists. Exporting fossils, antiques and Buddhist artefacts is banned or needs special permits."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.50 - $1.50",
+    "topCarriers": [
+     "Unitel",
+     "Mobicom",
+     "Skytel",
+     "G-Mobile"
+    ],
+    "airportSimTrapWarning": "Unitel and Mobicom have desks at the airport with prices close to city shops. Unitel and Mobicom usually offer the best rural coverage."
+   },
+   "touristScams": [
+    {
+     "title": "Market Pickpockets",
+     "desc": "Bag slashing and pickpocketing at Narantuul Market and on buses.",
+     "tip": "Carry your bag in front and leave valuables at the hotel."
+    },
+    {
+     "title": "Unofficial Taxi",
+     "desc": "Random cars at the airport and at night ask outrageous prices.",
+     "tip": "Use UBCab or arrange a hotel transfer."
+    },
+    {
+     "title": "Tour Price Surprise",
+     "desc": "Extra payments demanded on the road for fuel, entry fees or meals.",
+     "tip": "Get everything included written into the contract."
+    }
+   ]
+  }
+ },
+ "de": {
+  "insights": {
+   "currency": "Mongolischer Tögrög (MNT)",
+   "plugType": "Typ C, E (220V, 50Hz)",
+   "bestMonths": "Juni – September (Naadam: 11.-15. Juli); im Winter unter -30 °C",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Sicher",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Im Allgemeinen sicher; in Ulaanbaatar sind Taschendiebstähle auf dem Narantuul-Markt, rund um das State Department Store und in Bussen häufig. Nachts vor alkoholbedingten Schlägereien in Acht nehmen.",
+    "commonScams": [
+     "Aufgeschlitzte Taschen und Taschendiebstahl auf vollen Märkten und in Bussen",
+     "Inoffizielle Flughafentaxis mit überhöhten Preisen",
+     "Landtouren, bei denen später Treibstoff oder \"Extras\" aufgeschlagen werden"
+    ],
+    "safeTravelTips": [
+     "Touren mit schriftlichem Vertrag buchen, der die Leistungen festhält.",
+     "Taxis per UBCab-App bestellen; bei auf der Straße angehaltenen Autos den Preis vorab vereinbaren.",
+     "Auf dem Land sind Distanzen groß und das Netz schwach; Erste-Hilfe-Set und Bargeldreserve mitnehmen."
+    ],
+    "emergencyNumbers": {
+     "police": "102",
+     "ambulance": "103",
+     "general": "105"
+    }
+   },
+   "internet": {
+    "networkCoverage": "4G/5G in Ulaanbaatar; auf dem Land Empfang nur in Provinz- und Kreiszentren",
+    "costPerGbUsd": "~0.50 - 1.50 $",
+    "esimAvailability": "Gut",
+    "bestCarriers": [
+     "Unitel",
+     "Mobicom",
+     "Skytel",
+     "G-Mobile"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Einfach",
+    "costLevel": "Günstig",
+    "singleTicketUsd": "0.15 - 0.30 $",
+    "dailyPassUsd": "~1 - 2 $",
+    "popularRideApps": [
+     "UBCab",
+     "Toki",
+     "Google Maps",
+     "MAPS.ME"
+    ],
+    "taxiAdvice": "In Ulaanbaatar herrscht dichter Verkehr; kurze UBCab-Fahrten kosten 2-5 $. Für lange Strecken Tourfahrzeug oder Inlandsflug nutzen."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "35 - 55 $",
+    "dailyBudgetMidrangeUsd": "80 - 150 $",
+    "budgetMealUsd": "5 - 10 $",
+    "coffeeUsd": "2 - 4 $",
+    "waterBottleUsd": "0.40 - 0.80 $",
+    "hostelDormUsd": "10 - 18 $",
+    "hotel3StarUsd": "50 - 100 $",
+    "flightCostIndex": "Teuer",
+    "flightTip": "Turkish Airlines fliegt Istanbul–Ulaanbaatar; Tickets für die Naadam-Zeit (Juli) Monate im Voraus buchen."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Beim Betreten einer Jurte nicht auf die Schwelle treten und sich innen im Uhrzeigersinn bewegen.",
+     "Tee oder Essen mit der rechten oder beiden Händen annehmen und zumindest probieren.",
+     "Füße nie auf Ofen oder Altar richten und in der Jurte nicht pfeifen.",
+     "Die Tiere der Hirten und Owoo-Steinhaufen respektieren; einen Owoo dreimal im Uhrzeigersinn umrunden."
+    ],
+    "festivals": [
+     "Naadam (Juli; Ringen, Bogenschießen, Pferderennen)",
+     "Tsagaan Sar (Mondneujahr)",
+     "Goldadler-Festival (Bayan-Ölgii, Anfang Oktober)"
+    ],
+    "lifestyle": "Nomadische Viehzucht, Jurten, Pferdekultur und endlose Steppe neben dem rasch modernisierten Leben der Hauptstadt."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Ulaanbaatar – Dschingis-Khan-(Süchbaatar-)Platz",
+     "Kloster Gandan",
+     "Nationalpark Gorchi-Tereldsch",
+     "Dschingis-Khan-Reiterstandbild",
+     "Charchorin und Kloster Erdene Dsuu",
+     "Gobi – Dünen Khongoryn Els"
+    ],
+    "bestSeasons": "Juni – September (Naadam: 11.-15. Juli); im Winter unter -30 °C",
+    "travelStyleTip": "Die ländliche Mongolei im 4x4 mit Fahrer bereisen und in Jurtencamps übernachten; die Distanzen sind enorm."
+   },
+   "religion": {
+    "primaryReligions": "Tibetischer Buddhismus (~52 %), konfessionslos (~40 %), Islam (~3 %, Kasachen), Schamanismus und Christentum.",
+    "respectNorms": "Gebetsmühlen im Uhrzeigersinn drehen, Mönche und Altäre respektieren und vor Fotos in Klöstern fragen.",
+    "sacredSites": [
+     "Kloster Gandan Tegtschenling",
+     "Kloster Erdene Dsuu",
+     "Kloster Amarbayasgalant"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Mongolisch (Amtssprache, in kyrillischer Schrift). Im Westen wird Kasachisch gesprochen.",
+    "englishProficiency": "Mittel bei jungen Leuten in Ulaanbaatar; auf dem Land braucht man Guide oder Übersetzungs-App.",
+    "phrases": [
+     {
+      "phrase": "Сайн байна уу?",
+      "meaning": "Hallo (Wie geht es Ihnen?)",
+      "translation": "Hallo (Wie geht es Ihnen?)",
+      "pronunciation": "Sain baina uu?"
+     },
+     {
+      "phrase": "Баярлалаа",
+      "meaning": "Danke",
+      "translation": "Danke",
+      "pronunciation": "Bayarlalaa"
+     },
+     {
+      "phrase": "Гуйя",
+      "meaning": "Bitte",
+      "translation": "Bitte",
+      "pronunciation": "Guiya"
+     },
+     {
+      "phrase": "Энэ хэд вэ?",
+      "meaning": "Wie viel kostet das?",
+      "translation": "Wie viel kostet das?",
+      "pronunciation": "Ene khed we?"
+     },
+     {
+      "phrase": "Баяртай",
+      "meaning": "Auf Wiedersehen",
+      "translation": "Auf Wiedersehen",
+      "pronunciation": "Bayartai"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Auf dem Gebiet früherer Steppenreiche wie der Xiongnu und der Göktürken gründete Dschingis Khan 1206 das Mongolische Reich. 1921 brachte eine Revolution die Unabhängigkeit, 1990 folgte der demokratische Wandel.",
+    "milestones": [
+     "209 v. Chr.: Gründung des Xiongnu-Reichs",
+     "8. Jh.: Orchon-Inschriften (Göktürken)",
+     "1206: Dschingis Khan wird Großkhan",
+     "1990: Demokratische Revolution"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Buuz (gedämpfte Fleischteigtaschen)",
+     "Khuushuur (frittierte Fleischtaschen)",
+     "Khorkhog (Lamm, mit heißen Steinen gegart)"
+    ],
+    "traditionalDrinks": [
+     "Süütei tsai (salziger Milchtee)",
+     "Airag (vergorene Stutenmilch)",
+     "Arkhi (mongolischer Wodka)"
+    ],
+    "streetFoodAndDesserts": [
+     "Boortsog (frittiertes Gebäck)",
+     "Aaruul (getrockneter Quark)",
+     "Tsuivan (handgemachte Nudeln mit Fleisch)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Dschingis Khan (Gründer des Mongolischen Reichs)",
+     "Zanabazar (Bildhauer, buddhistischer Führer)",
+     "Hakuhō Shō (Sumo-Yokozuna)"
+    ],
+    "strongSectors": [
+     "Bergbau (Kupfer, Kohle, Gold)",
+     "Viehzucht und Kaschmir",
+     "Tourismus"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "In Ulaanbaatar sind Karten und QR-Zahlungen üblich; auf dem Land, in Jurtencamps und auf Märkten braucht man Bargeld in Tögrög.",
+    "tippingCulture": "In Restaurants werden 10 % geschätzt; am Ende einer Tour Fahrer und Guide ein Trinkgeld zu geben ist üblich.",
+    "economicPillars": "Bergbauexporte, Viehzucht und Kaschmir, Bau und Tourismus."
+   }
+  },
+  "itin": {
+   "routeName": "Mongolei-Steppenroute: Ulaanbaatar, Tereldsch, Charchorin und Gobi",
+   "routeSummary": "Eine 8-tägige Route von Ulaanbaatar in die Felstäler von Tereldsch, ins Orchon-Tal und nach Charchorin mit ihrem Göktürken-Erbe und dann zu den Dünen der Gobi.",
+   "totalDays": 8,
+   "idealDurationText": "8-Tage-Route Steppe & Wüste",
+   "bestSeason": "Juni – September (Naadam: 11.-15. Juli); im Winter unter -30 °C",
+   "transportMode": "4x4 mit Fahrer (UAZ / Land Cruiser) + Übernachtung in Jurtencamps",
+   "paceLevel": "Abenteuer (Natur & Nomadenkultur)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stopp 1: Ulaanbaatar",
+     "recommendedDuration": "2 Tage (Hauptstadt)",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "Dschingis-Khan-Platz und Regierungspalast",
+      "Kloster Gandan",
+      "Dschingis-Khan-Nationalmuseum",
+      "Zaisan-Denkmal"
+     ],
+     "activities": [
+      "Das Morgengebet in Gandan erleben.",
+      "Kehlkopfgesang (Khöömii) bei einer Tumen-Ekh-Show hören.",
+      "Kaschmir im State Department Store kaufen."
+     ],
+     "foodAndDrinks": [
+      "Buuz",
+      "Süütei tsai",
+      "Tsuivan"
+     ],
+     "criticalTips": [
+      "Auf dem Narantuul-Markt auf Tasche und Handy achten.",
+      "Der Verkehr ist sehr dicht; mehr Zeit einplanen."
+     ],
+     "mapsQuery": "Ulaanbaatar, Mongolia"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stopp 2: Nationalpark Gorchi-Tereldsch",
+     "recommendedDuration": "1 Tag (Natur)",
+     "durationBadge": "1 Tag",
+     "highlights": [
+      "Schildkrötenfelsen",
+      "Meditationstempel Aryabal",
+      "Dschingis-Khan-Reiterstandbild (unterwegs)"
+     ],
+     "activities": [
+      "Mit einer Nomadenfamilie ausreiten.",
+      "Eine Nacht im Jurtencamp verbringen.",
+      "Durch das Tal wandern."
+     ],
+     "foodAndDrinks": [
+      "Khorkhog",
+      "Airag"
+     ],
+     "criticalTips": [
+      "Nachts wird es auch im Sommer sehr kalt.",
+      "Beim Reiten nach einem Helm fragen; mongolische Pferde sind halbwild."
+     ],
+     "mapsQuery": "Gorkhi-Terelj National Park, Mongolia"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stopp 3: Charchorin und Orchon-Tal",
+     "recommendedDuration": "2 Tage (Geschichte)",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "Kloster Erdene Dsuu",
+      "Museum Charchorin",
+      "Khöshöö Tsaidam – Orchon-Inschriften (Kül Tigin und Bilge Khagan)",
+      "Orchon-Wasserfall"
+     ],
+     "activities": [
+      "Die Göktürken-Inschriften vor Ort sehen.",
+      "Innerhalb der Mauer mit 108 Stupas von Erdene Dsuu spazieren.",
+      "Nomadenfamilien im Orchon-Tal kennenlernen."
+     ],
+     "foodAndDrinks": [
+      "Khuushuur",
+      "Süütei tsai",
+      "Aaruul"
+     ],
+     "criticalTips": [
+      "Die Pisten sind unbefestigt und anstrengend; Pausen einplanen.",
+      "Für Fotos im Kloster kann eine Gebühr oder Erlaubnis nötig sein."
+     ],
+     "mapsQuery": "Kharkhorin, Mongolia"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Stopp 4: Wüste Gobi",
+     "recommendedDuration": "3 Tage (Wüste)",
+     "durationBadge": "3 Tage",
+     "highlights": [
+      "Dünen Khongoryn Els",
+      "Bayanzag (Flammende Klippen, Dinosaurierfossilien)",
+      "Eisschlucht Yolyn Am"
+     ],
+     "activities": [
+      "Auf einem Kamel durch die Dünen reiten.",
+      "Den Sonnenuntergang in Bayanzag erleben.",
+      "Durch die Schlucht Yolyn Am wandern."
+     ],
+     "foodAndDrinks": [
+      "Boortsog",
+      "Tee mit Kamelmilch"
+     ],
+     "criticalTips": [
+      "Viel Wasser, Sonnencreme und eine Staubmaske mitnehmen.",
+      "Ein Inlandsflug (Dalanzadgad) verkürzt die Fahrt."
+     ],
+     "mapsQuery": "Khongoryn Els, Gobi, Mongolia"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Buuz (gedämpfte Fleischteigtaschen)",
+     "Khuushuur (frittierte Fleischtaschen)",
+     "Khorkhog (Lamm, mit heißen Steinen gegart)"
+    ],
+    "drinks": [
+     "Süütei tsai (salziger Milchtee)",
+     "Airag (vergorene Stutenmilch)",
+     "Arkhi (mongolischer Wodka)"
+    ],
+    "streetFoods": [
+     "Boortsog (frittiertes Gebäck)",
+     "Aaruul (getrockneter Quark)",
+     "Tsuivan (handgemachte Nudeln mit Fleisch)"
+    ],
+    "diningAdvice": "Die mongolische Küche ist fleisch- und milchlastig; vegetarische Optionen sind außerhalb der Hauptstadt rar. Wegen Pestgefahr kein Murmeltierfleisch (Tarbagan) essen."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Warme Schichten (große Tag-Nacht-Unterschiede)",
+     "Sonnenbrille und Sonnencreme",
+     "Feuchttücher und Handdesinfektion",
+     "Powerbank (wenig Strom in Jurtencamps)"
+    ],
+    "safetyAndEtiquette": [
+     "Jurten respektvoll betreten und nie auf die Schwelle treten.",
+     "Wertsachen auf vollen Märkten vor dem Körper tragen."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "E"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Steckdosen Typ C und E (220 V); türkische Stecker Typ C passen direkt, für geerdete Typ-F-Stecker hilft ein Universaladapter."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Leitungswasser ist nicht trinkbar; Flaschen- oder abgekochtes Wasser verwenden. Auf dem Land ist Wasser knapp.",
+    "vaccines": [
+     "Standardimpfungen (Tetanus-Diphtherie, MMR)",
+     "Hepatitis A und Typhus",
+     "Tollwut und FSME bei längeren Aufenthalten auf dem Land"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "103"
+   },
+   "tipping": {
+    "custom": "Trinkgeld ist nicht traditionell, wird an touristischen Orten aber geschätzt.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Am Ende einer Landtour sind einige Dollar pro Tag für Fahrer und Guide üblich."
+   },
+   "taxFree": {
+    "vatRefundPercent": "10 % MwSt.; keine allgemeine Erstattung für Touristen",
+    "minSpend": "Entfällt",
+    "customsNote": "In der Mongolei gibt es keine verbreitete MwSt.-Erstattung für Touristen. Die Ausfuhr von Fossilien, Antiquitäten und buddhistischen Kunstwerken ist verboten oder genehmigungspflichtig."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.50 - $1.50",
+    "topCarriers": [
+     "Unitel",
+     "Mobicom",
+     "Skytel",
+     "G-Mobile"
+    ],
+    "airportSimTrapWarning": "Unitel und Mobicom haben Stände am Flughafen mit Preisen ähnlich wie in der Stadt. Unitel und Mobicom bieten meist die beste Abdeckung auf dem Land."
+   },
+   "touristScams": [
+    {
+     "title": "Taschendiebe auf dem Markt",
+     "desc": "Aufgeschlitzte Taschen und Diebstahl auf dem Narantuul-Markt und in Bussen.",
+     "tip": "Tasche vorne tragen und Wertsachen im Hotel lassen."
+    },
+    {
+     "title": "Inoffizielles Taxi",
+     "desc": "Beliebige Autos am Flughafen und nachts verlangen absurde Preise.",
+     "tip": "UBCab nutzen oder Hoteltransfer organisieren."
+    },
+    {
+     "title": "Tourpreis-Überraschung",
+     "desc": "Unterwegs werden Aufpreise für Treibstoff, Eintritt oder Essen verlangt.",
+     "tip": "Alle Leistungen schriftlich im Vertrag festhalten."
+    }
+   ]
+  }
+ },
+ "es": {
+  "insights": {
+   "currency": "Tugrik mongol (MNT)",
+   "plugType": "Tipo C, E (220V, 50Hz)",
+   "bestMonths": "Junio – septiembre (Naadam: 11-15 de julio); en invierno se baja de -30 °C",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "En general es seguro; en Ulán Bator abundan los carteristas en el mercado Narantuul, en torno al State Department Store y en los autobuses. Cuidado con peleas por alcohol de noche.",
+    "commonScams": [
+     "Bolsos rajados y carteristas en mercados y autobuses llenos",
+     "Taxis no oficiales en el aeropuerto con tarifas abusivas",
+     "Tours rurales que luego añaden combustible o \"servicios extra\""
+    ],
+    "safeTravelTips": [
+     "Contrata los tours con un contrato escrito que detalle lo incluido.",
+     "Pide taxis con la app UBCab; con coches parados en la calle acuerda antes el precio.",
+     "En el campo las distancias son largas y la cobertura escasa; lleva botiquín y efectivo de reserva."
+    ],
+    "emergencyNumbers": {
+     "police": "102",
+     "ambulance": "103",
+     "general": "105"
+    }
+   },
+   "internet": {
+    "networkCoverage": "4G/5G en Ulán Bator; en el campo solo hay señal en capitales de provincia y distrito",
+    "costPerGbUsd": "~0.50 - 1.50 $",
+    "esimAvailability": "Buena",
+    "bestCarriers": [
+     "Unitel",
+     "Mobicom",
+     "Skytel",
+     "G-Mobile"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Básico",
+    "costLevel": "Económico",
+    "singleTicketUsd": "0.15 - 0.30 $",
+    "dailyPassUsd": "~1 - 2 $",
+    "popularRideApps": [
+     "UBCab",
+     "Toki",
+     "Google Maps",
+     "MAPS.ME"
+    ],
+    "taxiAdvice": "El tráfico en Ulán Bator es intenso; los trayectos cortos con UBCab cuestan 2-5 $. Para largas distancias usa el vehículo del tour o un vuelo interno."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "35 - 55 $",
+    "dailyBudgetMidrangeUsd": "80 - 150 $",
+    "budgetMealUsd": "5 - 10 $",
+    "coffeeUsd": "2 - 4 $",
+    "waterBottleUsd": "0.40 - 0.80 $",
+    "hostelDormUsd": "10 - 18 $",
+    "hotel3StarUsd": "50 - 100 $",
+    "flightCostIndex": "Caro",
+    "flightTip": "Turkish Airlines vuela Estambul–Ulán Bator; para la temporada del Naadam (julio) reserva con meses de antelación."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Al entrar en un ger no pises el umbral y muévete en el sentido de las agujas del reloj.",
+     "Acepta té o comida con la mano derecha o con ambas; al menos pruébalo.",
+     "No apuntes con los pies a la estufa ni al altar, y no silbes dentro del ger.",
+     "Respeta los animales de los pastores y los montículos ovoo; rodea un ovoo tres veces en sentido horario."
+    ],
+    "festivals": [
+     "Naadam (julio; lucha, tiro con arco, carreras de caballos)",
+     "Tsagaan Sar (año nuevo lunar)",
+     "Festival del Águila Dorada (Bayan-Ölgii, principios de octubre)"
+    ],
+    "lifestyle": "Pastoreo nómada, tiendas ger, cultura ecuestre y estepa infinita, junto a la vida cada vez más moderna de la capital."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Ulán Bator – plaza de Gengis Kan (Sükhbaatar)",
+     "Monasterio de Gandan",
+     "Parque Nacional Gorkhi-Terelj",
+     "Estatua ecuestre de Gengis Kan",
+     "Karakorum y monasterio Erdene Zuu",
+     "Gobi – dunas de Khongoryn Els"
+    ],
+    "bestSeasons": "Junio – septiembre (Naadam: 11-15 de julio); en invierno se baja de -30 °C",
+    "travelStyleTip": "Recorre la Mongolia rural en 4x4 con conductor y alójate en campamentos de gers; las distancias son enormes."
+   },
+   "religion": {
+    "primaryReligions": "Budismo tibetano (~52 %), sin religión (~40 %), islam (~3 %, kazajos), chamanismo y cristianismo.",
+    "respectNorms": "Gira las ruedas de oración en sentido horario, respeta a los monjes y altares, y pide permiso antes de hacer fotos en los monasterios.",
+    "sacredSites": [
+     "Monasterio Gandan Tegchenling",
+     "Monasterio Erdene Zuu",
+     "Monasterio Amarbayasgalant"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Mongol (oficial, en alfabeto cirílico). En el oeste se habla kazajo.",
+    "englishProficiency": "Moderado entre jóvenes de Ulán Bator; en el campo hace falta guía o app de traducción.",
+    "phrases": [
+     {
+      "phrase": "Сайн байна уу?",
+      "meaning": "Hola (¿Cómo está?)",
+      "translation": "Hola (¿Cómo está?)",
+      "pronunciation": "Sain baina uu?"
+     },
+     {
+      "phrase": "Баярлалаа",
+      "meaning": "Gracias",
+      "translation": "Gracias",
+      "pronunciation": "Bayarlalaa"
+     },
+     {
+      "phrase": "Гуйя",
+      "meaning": "Por favor",
+      "translation": "Por favor",
+      "pronunciation": "Guiya"
+     },
+     {
+      "phrase": "Энэ хэд вэ?",
+      "meaning": "¿Cuánto cuesta esto?",
+      "translation": "¿Cuánto cuesta esto?",
+      "pronunciation": "Ene khed we?"
+     },
+     {
+      "phrase": "Баяртай",
+      "meaning": "Adiós",
+      "translation": "Adiós",
+      "pronunciation": "Bayartai"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "En tierras gobernadas antes por imperios esteparios como los xiongnu y los göktürk, Gengis Kan fundó el Imperio mongol en 1206. Una revolución en 1921 trajo la independencia y en 1990 llegó la transición democrática.",
+    "milestones": [
+     "209 a. C.: fundación del Estado xiongnu",
+     "Siglo VIII: inscripciones del Orjón (göktürk)",
+     "1206: Gengis Kan proclamado Gran Kan",
+     "1990: revolución democrática"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Buuz (empanadillas de carne al vapor)",
+     "Khuushuur (empanada frita de carne)",
+     "Khorkhog (cordero cocinado con piedras calientes)"
+    ],
+    "traditionalDrinks": [
+     "Süütei tsai (té con leche salado)",
+     "Airag (leche de yegua fermentada)",
+     "Arkhi (vodka mongol)"
+    ],
+    "streetFoodAndDesserts": [
+     "Boortsog (masa frita)",
+     "Aaruul (cuajada seca)",
+     "Tsuivan (fideos caseros con carne)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Gengis Kan (fundador del Imperio mongol)",
+     "Zanabazar (escultor, líder budista)",
+     "Hakuhō Shō (yokozuna de sumo)"
+    ],
+    "strongSectors": [
+     "Minería (cobre, carbón, oro)",
+     "Ganadería y cachemira",
+     "Turismo"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "En Ulán Bator son habituales las tarjetas y el pago por QR; en el campo, los campamentos ger y los mercados se necesita efectivo en tugrik.",
+    "tippingCulture": "En restaurantes se agradece un 10 %; es costumbre dar propina al conductor y al guía al final del tour.",
+    "economicPillars": "Exportaciones mineras, ganadería y cachemira, construcción y turismo."
+   }
+  },
+  "itin": {
+   "routeName": "Ruta de la estepa mongola: Ulán Bator, Terelj, Karakorum y el Gobi",
+   "routeSummary": "Ruta de 8 días desde Ulán Bator hasta los valles rocosos de Terelj, el valle del Orjón y Karakorum con su legado göktürk, y después las dunas del desierto de Gobi.",
+   "totalDays": 8,
+   "idealDurationText": "Itinerario de 8 días por estepa y desierto",
+   "bestSeason": "Junio – septiembre (Naadam: 11-15 de julio); en invierno se baja de -30 °C",
+   "transportMode": "4x4 con conductor (UAZ / Land Cruiser) + noches en campamentos ger",
+   "paceLevel": "Aventura (naturaleza y cultura nómada)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Ulán Bator",
+     "recommendedDuration": "2 días (capital)",
+     "durationBadge": "2 días",
+     "highlights": [
+      "Plaza de Gengis Kan y Palacio de Gobierno",
+      "Monasterio de Gandan",
+      "Museo Nacional Gengis Kan",
+      "Memorial de Zaisan"
+     ],
+     "activities": [
+      "Asiste a los rezos matinales en Gandan.",
+      "Escucha canto difónico (khöömii) en un espectáculo de Tumen Ekh.",
+      "Compra cachemira en el State Department Store."
+     ],
+     "foodAndDrinks": [
+      "Buuz",
+      "Süütei tsai",
+      "Tsuivan"
+     ],
+     "criticalTips": [
+      "Vigila bolso y móvil en el mercado Narantuul.",
+      "El tráfico es muy denso; calcula tiempo extra."
+     ],
+     "mapsQuery": "Ulaanbaatar, Mongolia"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Parque Nacional Gorkhi-Terelj",
+     "recommendedDuration": "1 día (naturaleza)",
+     "durationBadge": "1 día",
+     "highlights": [
+      "Roca de la Tortuga",
+      "Templo de meditación Aryabal",
+      "Estatua ecuestre de Gengis Kan (de camino)"
+     ],
+     "activities": [
+      "Monta a caballo con una familia nómada.",
+      "Pasa una noche en un campamento ger.",
+      "Camina por el valle."
+     ],
+     "foodAndDrinks": [
+      "Khorkhog",
+      "Airag"
+     ],
+     "criticalTips": [
+      "Por la noche refresca mucho incluso en verano.",
+      "Pide casco al montar; los caballos mongoles son semisalvajes."
+     ],
+     "mapsQuery": "Gorkhi-Terelj National Park, Mongolia"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Karakorum y valle del Orjón",
+     "recommendedDuration": "2 días (historia)",
+     "durationBadge": "2 días",
+     "highlights": [
+      "Monasterio Erdene Zuu",
+      "Museo de Karakorum",
+      "Khöshöö Tsaidam – inscripciones del Orjón (Kul Tigin y Bilge Kagan)",
+      "Cascada del Orjón"
+     ],
+     "activities": [
+      "Contempla in situ las inscripciones göktürk.",
+      "Pasea dentro del muro de 108 estupas de Erdene Zuu.",
+      "Conoce a familias nómadas en el valle del Orjón."
+     ],
+     "foodAndDrinks": [
+      "Khuushuur",
+      "Süütei tsai",
+      "Aaruul"
+     ],
+     "criticalTips": [
+      "Las pistas sin asfaltar son agotadoras; planifica paradas.",
+      "Hacer fotos dentro del monasterio puede requerir pago o permiso."
+     ],
+     "mapsQuery": "Kharkhorin, Mongolia"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Desierto de Gobi",
+     "recommendedDuration": "3 días (desierto)",
+     "durationBadge": "3 días",
+     "highlights": [
+      "Dunas de Khongoryn Els",
+      "Bayanzag (Acantilados Llameantes, fósiles de dinosaurio)",
+      "Cañón helado de Yolyn Am"
+     ],
+     "activities": [
+      "Cruza las dunas en camello.",
+      "Contempla el atardecer en Bayanzag.",
+      "Haz senderismo por el cañón de Yolyn Am."
+     ],
+     "foodAndDrinks": [
+      "Boortsog",
+      "Té con leche de camella"
+     ],
+     "criticalTips": [
+      "Lleva mucha agua, protector solar y mascarilla para el polvo.",
+      "Un vuelo interno (Dalanzadgad) acorta el trayecto."
+     ],
+     "mapsQuery": "Khongoryn Els, Gobi, Mongolia"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Buuz (empanadillas de carne al vapor)",
+     "Khuushuur (empanada frita de carne)",
+     "Khorkhog (cordero cocinado con piedras calientes)"
+    ],
+    "drinks": [
+     "Süütei tsai (té con leche salado)",
+     "Airag (leche de yegua fermentada)",
+     "Arkhi (vodka mongol)"
+    ],
+    "streetFoods": [
+     "Boortsog (masa frita)",
+     "Aaruul (cuajada seca)",
+     "Tsuivan (fideos caseros con carne)"
+    ],
+    "diningAdvice": "La cocina mongola se basa en carne y lácteos; fuera de la capital hay pocas opciones vegetarianas. Evita la carne de marmota (tarbagan) por riesgo de peste."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Ropa de abrigo por capas (gran diferencia día-noche)",
+     "Gafas de sol y protector solar",
+     "Toallitas húmedas y gel desinfectante",
+     "Batería externa (poca electricidad en los campamentos ger)"
+    ],
+    "safetyAndEtiquette": [
+     "Entra en los gers con respeto y sin pisar el umbral.",
+     "Lleva tus objetos de valor delante en mercados concurridos."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "E"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Enchufes tipo C y E (220 V); las clavijas turcas tipo C encajan directamente y un adaptador universal ayuda con las tipo F con toma de tierra."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "El agua del grifo no es potable; usa agua embotellada o hervida. En el campo el agua escasea.",
+    "vaccines": [
+     "Vacunas rutinarias (tétanos-difteria, triple vírica)",
+     "Hepatitis A y fiebre tifoidea",
+     "Rabia y encefalitis por garrapatas para estancias rurales largas"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "103"
+   },
+   "tipping": {
+    "custom": "La propina no es tradicional, pero se agradece en lugares turísticos.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Al final de un tour rural es costumbre dar unos dólares por día al conductor y al guía."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA del 10 %; sin reembolso general para turistas",
+    "minSpend": "No aplica",
+    "customsNote": "Mongolia no tiene un reembolso del IVA extendido para turistas. Exportar fósiles, antigüedades y objetos budistas está prohibido o requiere permisos especiales."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.50 - $1.50",
+    "topCarriers": [
+     "Unitel",
+     "Mobicom",
+     "Skytel",
+     "G-Mobile"
+    ],
+    "airportSimTrapWarning": "Unitel y Mobicom tienen puestos en el aeropuerto con precios similares a los de la ciudad. Unitel y Mobicom suelen ofrecer la mejor cobertura rural."
+   },
+   "touristScams": [
+    {
+     "title": "Carteristas en el mercado",
+     "desc": "Bolsos rajados y robos en el mercado Narantuul y en autobuses.",
+     "tip": "Lleva el bolso delante y deja los objetos de valor en el hotel."
+    },
+    {
+     "title": "Taxi no oficial",
+     "desc": "Coches cualquiera en el aeropuerto y de noche piden precios desorbitados.",
+     "tip": "Usa UBCab o reserva un traslado con el hotel."
+    },
+    {
+     "title": "Sorpresa en el precio del tour",
+     "desc": "En ruta piden pagos extra por combustible, entradas o comidas.",
+     "tip": "Deja por escrito en el contrato todo lo incluido."
+    }
+   ]
+  }
+ },
+ "ru": {
+  "insights": {
+   "currency": "Монгольский тугрик (MNT)",
+   "plugType": "Тип C, E (220V, 50Hz)",
+   "bestMonths": "Июнь – сентябрь (Наадам: 11-15 июля); зимой ниже -30 °C",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Безопасно",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "В целом безопасно; в Улан-Баторе много карманников на рынке Нарантуул, у Центрального универмага и в автобусах. Ночью остерегайтесь пьяных драк.",
+    "commonScams": [
+     "Разрезание сумок и карманные кражи на рынках и в автобусах",
+     "Неофициальные такси в аэропорту с завышенной ценой",
+     "Туры по стране, к цене которых потом добавляют топливо или «доп. услуги»"
+    ],
+    "safeTravelTips": [
+     "Бронируйте туры по письменному договору с перечнем включённых услуг.",
+     "Вызывайте такси через приложение UBCab; с остановленными на улице машинами договаривайтесь о цене заранее.",
+     "В глубинке большие расстояния и слабая связь — возьмите аптечку и запас наличных."
+    ],
+    "emergencyNumbers": {
+     "police": "102",
+     "ambulance": "103",
+     "general": "105"
+    }
+   },
+   "internet": {
+    "networkCoverage": "4G/5G в Улан-Баторе; в сельской местности связь только в центрах аймаков и сомонов",
+    "costPerGbUsd": "~0.50 - 1.50 $",
+    "esimAvailability": "Хорошо",
+    "bestCarriers": [
+     "Unitel",
+     "Mobicom",
+     "Skytel",
+     "G-Mobile"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Базовый",
+    "costLevel": "Бюджетно",
+    "singleTicketUsd": "0.15 - 0.30 $",
+    "dailyPassUsd": "~1 - 2 $",
+    "popularRideApps": [
+     "UBCab",
+     "Toki",
+     "Google Maps",
+     "MAPS.ME"
+    ],
+    "taxiAdvice": "В Улан-Баторе плотный трафик; короткие поездки UBCab стоят 2-5 $. Для дальних расстояний используйте машину тура или внутренний рейс."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "35 - 55 $",
+    "dailyBudgetMidrangeUsd": "80 - 150 $",
+    "budgetMealUsd": "5 - 10 $",
+    "coffeeUsd": "2 - 4 $",
+    "waterBottleUsd": "0.40 - 0.80 $",
+    "hostelDormUsd": "10 - 18 $",
+    "hotel3StarUsd": "50 - 100 $",
+    "flightCostIndex": "Дорого",
+    "flightTip": "Turkish Airlines летает Стамбул – Улан-Батор; билеты на сезон Наадама (июль) покупайте за несколько месяцев."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Входя в юрту, не наступайте на порог и двигайтесь внутри по часовой стрелке.",
+     "Принимайте чай и еду правой рукой или двумя руками и хотя бы попробуйте.",
+     "Не направляйте ноги на очаг или алтарь и не свистите в юрте.",
+     "Уважайте скот пастухов и каменные обо; обходите обо трижды по часовой стрелке."
+    ],
+    "festivals": [
+     "Наадам (июль; борьба, стрельба из лука, скачки)",
+     "Цагаан Сар (лунный Новый год)",
+     "Фестиваль беркутчи (Баян-Улгий, начало октября)"
+    ],
+    "lifestyle": "Кочевое скотоводство, юрты, конная культура и бескрайняя степь рядом с быстро модернизирующейся столицей."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Улан-Батор – площадь Чингисхана (Сухэ-Батора)",
+     "Монастырь Гандан",
+     "Национальный парк Горхи-Тэрэлж",
+     "Конная статуя Чингисхана",
+     "Хархорин и монастырь Эрдэнэ-Зуу",
+     "Гоби – барханы Хонгорын-Элс"
+    ],
+    "bestSeasons": "Июнь – сентябрь (Наадам: 11-15 июля); зимой ниже -30 °C",
+    "travelStyleTip": "Путешествуйте по сельской Монголии на внедорожнике с водителем и ночуйте в юрточных лагерях — расстояния огромны."
+   },
+   "religion": {
+    "primaryReligions": "Тибетский буддизм (~52 %), неверующие (~40 %), ислам (~3 %, казахи), шаманизм и христианство.",
+    "respectNorms": "Вращайте молитвенные барабаны по часовой стрелке, уважайте монахов и алтари, спрашивайте разрешения на фото в монастырях.",
+    "sacredSites": [
+     "Монастырь Гандантэгчэнлин",
+     "Монастырь Эрдэнэ-Зуу",
+     "Монастырь Амарбаясгалант"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Монгольский (государственный, на кириллице). На западе говорят по-казахски.",
+    "englishProficiency": "Средний у молодёжи Улан-Батора; в глубинке нужен гид или переводчик в телефоне.",
+    "phrases": [
+     {
+      "phrase": "Сайн байна уу?",
+      "meaning": "Здравствуйте (Как дела?)",
+      "translation": "Здравствуйте (Как дела?)",
+      "pronunciation": "Sain baina uu?"
+     },
+     {
+      "phrase": "Баярлалаа",
+      "meaning": "Спасибо",
+      "translation": "Спасибо",
+      "pronunciation": "Bayarlalaa"
+     },
+     {
+      "phrase": "Гуйя",
+      "meaning": "Пожалуйста",
+      "translation": "Пожалуйста",
+      "pronunciation": "Guiya"
+     },
+     {
+      "phrase": "Энэ хэд вэ?",
+      "meaning": "Сколько это стоит?",
+      "translation": "Сколько это стоит?",
+      "pronunciation": "Ene khed we?"
+     },
+     {
+      "phrase": "Баяртай",
+      "meaning": "До свидания",
+      "translation": "До свидания",
+      "pronunciation": "Bayartai"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "На землях степных империй хунну и тюрков в 1206 году Чингисхан основал Монгольскую империю. Революция 1921 года принесла независимость, а в 1990 году начался демократический переход.",
+    "milestones": [
+     "209 г. до н. э.: основание государства хунну",
+     "VIII век: орхонские надписи (тюрки)",
+     "1206: Чингисхан провозглашён великим ханом",
+     "1990: демократическая революция"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Бууз (паровые мясные пельмени)",
+     "Хуушуур (жареные мясные пирожки)",
+     "Хорхог (баранина, приготовленная с горячими камнями)"
+    ],
+    "traditionalDrinks": [
+     "Сүүтэй цай (солёный чай с молоком)",
+     "Айраг (кумыс из кобыльего молока)",
+     "Архи (монгольская водка)"
+    ],
+    "streetFoodAndDesserts": [
+     "Боорцог (жареное тесто)",
+     "Ааруул (сушёный творог)",
+     "Цуйван (домашняя лапша с мясом)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Чингисхан (основатель Монгольской империи)",
+     "Дзанабадзар (скульптор, буддийский лидер)",
+     "Хакухо Сё (ёкодзуна сумо)"
+    ],
+    "strongSectors": [
+     "Горнодобыча (медь, уголь, золото)",
+     "Скотоводство и кашемир",
+     "Туризм"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "В Улан-Баторе принимают карты и QR-оплату; в глубинке, юрточных лагерях и на рынках нужны наличные тугрики.",
+    "tippingCulture": "В ресторанах ценят 10 %; в конце тура принято давать чаевые водителю и гиду.",
+    "economicPillars": "Экспорт горнодобычи, скотоводство и кашемир, строительство и туризм."
+   }
+  },
+  "itin": {
+   "routeName": "Степной маршрут по Монголии: Улан-Батор, Тэрэлж, Хархорин и Гоби",
+   "routeSummary": "8-дневный маршрут из Улан-Батора к скалистым долинам Тэрэлжа, в долину Орхона и Хархорин с наследием древних тюрков, а затем к барханам пустыни Гоби.",
+   "totalDays": 8,
+   "idealDurationText": "8-дневный маршрут по степи и пустыне",
+   "bestSeason": "Июнь – сентябрь (Наадам: 11-15 июля); зимой ниже -30 °C",
+   "transportMode": "Внедорожник с водителем (УАЗ / Land Cruiser) + ночёвки в юрточных лагерях",
+   "paceLevel": "Приключенческий (природа и кочевая культура)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Остановка 1: Улан-Батор",
+     "recommendedDuration": "2 дня (столица)",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Площадь Чингисхана и Дворец правительства",
+      "Монастырь Гандан",
+      "Национальный музей Чингисхана",
+      "Мемориал Зайсан"
+     ],
+     "activities": [
+      "Посетите утреннюю молитву в Гандане.",
+      "Послушайте горловое пение (хөөмий) на шоу «Тумэн Эх».",
+      "Купите кашемир в Центральном универмаге."
+     ],
+     "foodAndDrinks": [
+      "Бууз",
+      "Сүүтэй цай",
+      "Цуйван"
+     ],
+     "criticalTips": [
+      "На рынке Нарантуул следите за сумкой и телефоном.",
+      "Пробки очень плотные — закладывайте лишнее время."
+     ],
+     "mapsQuery": "Ulaanbaatar, Mongolia"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Остановка 2: Национальный парк Горхи-Тэрэлж",
+     "recommendedDuration": "1 день (природа)",
+     "durationBadge": "1 день",
+     "highlights": [
+      "Скала Черепаха",
+      "Храм медитации Арьяабал",
+      "Конная статуя Чингисхана (по дороге)"
+     ],
+     "activities": [
+      "Покатайтесь верхом с кочевой семьёй.",
+      "Проведите ночь в юрточном лагере.",
+      "Пройдитесь пешком по долине."
+     ],
+     "foodAndDrinks": [
+      "Хорхог",
+      "Айраг"
+     ],
+     "criticalTips": [
+      "Ночью даже летом сильно холодает.",
+      "Просите шлем при верховой езде: монгольские лошади полудикие."
+     ],
+     "mapsQuery": "Gorkhi-Terelj National Park, Mongolia"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Остановка 3: Хархорин и долина Орхона",
+     "recommendedDuration": "2 дня (история)",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Монастырь Эрдэнэ-Зуу",
+      "Музей Хархорина",
+      "Хушуу-Цайдам – орхонские надписи (Кюль-тегин и Бильге-каган)",
+      "Орхонский водопад"
+     ],
+     "activities": [
+      "Увидьте древнетюркские надписи на месте.",
+      "Прогуляйтесь внутри стены со 108 ступами Эрдэнэ-Зуу.",
+      "Познакомьтесь с кочевыми семьями в долине Орхона."
+     ],
+     "foodAndDrinks": [
+      "Хуушуур",
+      "Сүүтэй цай",
+      "Ааруул"
+     ],
+     "criticalTips": [
+      "Дороги грунтовые и утомительные — планируйте остановки.",
+      "Фото внутри монастыря может быть платным или по разрешению."
+     ],
+     "mapsQuery": "Kharkhorin, Mongolia"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Остановка 4: Пустыня Гоби",
+     "recommendedDuration": "3 дня (пустыня)",
+     "durationBadge": "3 дня",
+     "highlights": [
+      "Барханы Хонгорын-Элс",
+      "Баянзаг (Пылающие скалы, окаменелости динозавров)",
+      "Ледяное ущелье Ёлын-Ам"
+     ],
+     "activities": [
+      "Прокатитесь на верблюде по барханам.",
+      "Встретьте закат в Баянзаге.",
+      "Пройдите по ущелью Ёлын-Ам."
+     ],
+     "foodAndDrinks": [
+      "Боорцог",
+      "Чай с верблюжьим молоком"
+     ],
+     "criticalTips": [
+      "Возьмите много воды, солнцезащитный крем и маску от пыли.",
+      "Внутренний рейс (Даланзадгад) сокращает дорогу."
+     ],
+     "mapsQuery": "Khongoryn Els, Gobi, Mongolia"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Бууз (паровые мясные пельмени)",
+     "Хуушуур (жареные мясные пирожки)",
+     "Хорхог (баранина, приготовленная с горячими камнями)"
+    ],
+    "drinks": [
+     "Сүүтэй цай (солёный чай с молоком)",
+     "Айраг (кумыс из кобыльего молока)",
+     "Архи (монгольская водка)"
+    ],
+    "streetFoods": [
+     "Боорцог (жареное тесто)",
+     "Ааруул (сушёный творог)",
+     "Цуйван (домашняя лапша с мясом)"
+    ],
+    "diningAdvice": "Монгольская кухня — это мясо и молочные продукты; вне столицы вегетарианских блюд мало. Не ешьте мясо тарбагана из-за риска чумы."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Тёплая многослойная одежда (большая разница температур днём и ночью)",
+     "Солнцезащитные очки и крем",
+     "Влажные салфетки и антисептик",
+     "Пауэрбанк (в юрточных лагерях мало электричества)"
+    ],
+    "safetyAndEtiquette": [
+     "Входите в юрту уважительно и не наступайте на порог.",
+     "На людных рынках держите ценности перед собой."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "E"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Розетки типа C и E (220 В); турецкие вилки типа C подходят напрямую, для заземлённых вилок типа F пригодится универсальный переходник."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Водопроводную воду пить нельзя; используйте бутилированную или кипячёную. В глубинке с водой туго.",
+    "vaccines": [
+     "Плановые прививки (столбняк-дифтерия, КПК)",
+     "Гепатит A и брюшной тиф",
+     "Бешенство и клещевой энцефалит — при долгом пребывании в глубинке"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "103"
+   },
+   "tipping": {
+    "custom": "Чаевые не традиционны, но в туристических местах приветствуются.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "В конце тура по стране водителю и гиду принято давать несколько долларов за день."
+   },
+   "taxFree": {
+    "vatRefundPercent": "НДС 10 %; общего возврата для туристов нет",
+    "minSpend": "Не применяется",
+    "customsNote": "В Монголии нет распространённого возврата НДС туристам. Вывоз окаменелостей, антиквариата и буддийских реликвий запрещён или требует специального разрешения."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.50 - $1.50",
+    "topCarriers": [
+     "Unitel",
+     "Mobicom",
+     "Skytel",
+     "G-Mobile"
+    ],
+    "airportSimTrapWarning": "У Unitel и Mobicom есть стойки в аэропорту с ценами, близкими к городским. Лучшее покрытие в глубинке обычно у Unitel и Mobicom."
+   },
+   "touristScams": [
+    {
+     "title": "Карманники на рынке",
+     "desc": "Разрезание сумок и кражи на рынке Нарантуул и в автобусах.",
+     "tip": "Носите сумку спереди, ценности оставляйте в отеле."
+    },
+    {
+     "title": "Неофициальное такси",
+     "desc": "Случайные машины в аэропорту и ночью называют безумные цены.",
+     "tip": "Пользуйтесь UBCab или заказывайте трансфер в отеле."
+    },
+    {
+     "title": "Сюрприз в цене тура",
+     "desc": "В пути требуют доплату за топливо, входные билеты или еду.",
+     "tip": "Пропишите в договоре всё, что включено."
+    }
+   ]
+  }
+ }
+}

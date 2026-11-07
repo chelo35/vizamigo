@@ -1,0 +1,1927 @@
+{
+ "tr": {
+  "insights": {
+   "currency": "Yeni Tayvan Doları (TWD)",
+   "plugType": "Tip A, B (110V, 60Hz)",
+   "bestMonths": "Ekim – Aralık ve Mart – Mayıs (Temmuz – Eylül tayfun mevsimi)",
+   "safety": {
+    "safetyScore": 85,
+    "safetyLevel": "Olağanüstü Güvenli",
+    "badgeColor": "bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-900/60",
+    "crimeRateSummary": "Asya’nın en güvenli yerlerinden biridir; şiddet suçu çok nadirdir ve gece yürüyüşleri rahattır. Başlıca riskler deprem, tayfun ve yaz aylarında dang hummasıdır.",
+    "commonScams": [
+     "Turistik bölgelerde bağış isteyen sahte keşişler",
+     "Gece pazarlarında fiyatı yazmayan tezgâhlarda yüksek fiyat",
+     "Havalimanında resmî olmayan araçların sabit ücret teklif etmesi"
+    ],
+    "safeTravelTips": [
+     "EasyCard veya iPASS kartı alın; metro, otobüs, tren ve marketlerde geçer.",
+     "Tayfun ve deprem uyarıları için Central Weather Administration duyurularını takip edin.",
+     "Taroko Kanyonu gibi dağ bölgelerinde patika ve yol kapanmalarını önceden kontrol edin."
+    ],
+    "emergencyNumbers": {
+     "police": "110",
+     "ambulance": "119",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Ülke genelinde %99 4G/5G; metroda ve trenlerde bile kesintisiz",
+    "costPerGbUsd": "~0.50 - 1.50 $",
+    "esimAvailability": "Mükemmel",
+    "bestCarriers": [
+     "Chunghwa Telecom",
+     "Taiwan Mobile",
+     "FarEasTone"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Mükemmel",
+    "costLevel": "Orta Seviye",
+    "singleTicketUsd": "0.65 - 2 $",
+    "dailyPassUsd": "5 - 6 $",
+    "popularRideApps": [
+     "Uber",
+     "LINE GO (LINE Taxi)",
+     "55688 Taiwan Taxi",
+     "Google Maps"
+    ],
+    "taxiAdvice": "Sarı taksiler taksimetrelidir ve güvenilirdir (açılış ~NT$85-100); Uber ve LINE GO da yaygındır."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "40 - 60 $",
+    "dailyBudgetMidrangeUsd": "100 - 170 $",
+    "budgetMealUsd": "4 - 10 $",
+    "coffeeUsd": "2 - 5 $",
+    "waterBottleUsd": "0.60 - 1 $",
+    "hostelDormUsd": "18 - 30 $",
+    "hotel3StarUsd": "60 - 120 $",
+    "flightCostIndex": "Orta Seviye",
+    "flightTip": "Türk Hava Yolları İstanbul–Taipei arasında direkt uçar; Asya aktarmalı rotalar (Hong Kong, Bangkok) bazen daha ucuzdur."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Metroda yiyip içmek yasaktır ve cezası vardır; mavi koltuklar öncelikli yolculara ayrılmıştır.",
+     "Kartvizit ve hediyeyi iki elle verip alın.",
+     "Çubukları pirince dikey saplamayın; cenaze ritüelini çağrıştırır.",
+     "Tapınaklarda sunaklara ve tütsülere dokunmayın, sessiz olun."
+    ],
+    "festivals": [
+     "Fener Festivali ve Pingxi gökyüzü fenerleri (Şubat/Mart)",
+     "Ejderha Teknesi Festivali (Haziran)",
+     "Ay Festivali (Eylül/Ekim)"
+    ],
+    "lifestyle": "Gece pazarı kültürü, tapınak ritüelleri, kibar ve yardımsever insanlar; teknoloji ile geleneklerin iç içe olduğu bir yaşam."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Taipei 101",
+     "Ulusal Saray Müzesi",
+     "Jiufen dağ kasabası",
+     "Güneş Ay Gölü",
+     "Alishan orman ve bulut denizi",
+     "Taroko Kanyonu (açık alanları kontrol edin)"
+    ],
+    "bestSeasons": "Ekim – Aralık ve Mart – Mayıs (Temmuz – Eylül tayfun mevsimi)",
+    "travelStyleTip": "Yüksek hızlı tren (HSR) ve yerel trenlerle kuzeyden güneye rahatça seyahat edebilirsiniz."
+   },
+   "religion": {
+    "primaryReligions": "Budizm, Taoizm ve halk inançları (toplam %70’in üzeri), Hristiyanlık (~%5).",
+    "respectNorms": "Tapınağa sağ kapıdan girip sol kapıdan çıkılır; orta kapı tanrılara ayrılmıştır. Sunaklara sırt dönmeden fotoğraf çekin.",
+    "sacredSites": [
+     "Longshan Tapınağı (Taipei)",
+     "Wenwu Tapınağı (Güneş Ay Gölü)",
+     "Fo Guang Shan Manastırı (Kaohsiung)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Mandarin Çincesi (geleneksel karakterler). Tayvanca (Hokkien) ve Hakka da yaygındır.",
+    "englishProficiency": "Taipei’de gençler arasında orta; tabelalar genelde İngilizcedir, kırsalda çeviri uygulaması işe yarar.",
+    "phrases": [
+     {
+      "phrase": "你好",
+      "meaning": "Merhaba",
+      "translation": "Merhaba",
+      "pronunciation": "nǐ hǎo"
+     },
+     {
+      "phrase": "謝謝",
+      "meaning": "Teşekkürler",
+      "translation": "Teşekkürler",
+      "pronunciation": "xièxie"
+     },
+     {
+      "phrase": "請",
+      "meaning": "Lütfen",
+      "translation": "Lütfen",
+      "pronunciation": "qǐng"
+     },
+     {
+      "phrase": "多少錢？",
+      "meaning": "Ne kadar?",
+      "translation": "Ne kadar?",
+      "pronunciation": "duōshǎo qián?"
+     },
+     {
+      "phrase": "不好意思",
+      "meaning": "Affedersiniz / Kusura bakmayın",
+      "translation": "Affedersiniz / Kusura bakmayın",
+      "pronunciation": "bù hǎoyìsi"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Austronezya kökenli yerli halkların yurdu olan ada, 17. yüzyılda Hollandalılar, ardından Koxinga ve Qing Hanedanı yönetimine girdi. 1895-1945 arası Japon yönetiminde kaldı; 1987’de sıkıyönetimin kalkmasıyla demokratikleşme başladı.",
+    "milestones": [
+     "1624: Hollandalıların Tainan’a yerleşmesi",
+     "1662: Koxinga yönetimi",
+     "1895-1945: Japon yönetimi",
+     "1987: Sıkıyönetimin kaldırılması"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Sığır etli erişte çorbası (niu rou mian)",
+     "Lu rou fan (soslu kıyma etli pilav)",
+     "Xiaolongbao (çorbalı buharda mantı)"
+    ],
+    "traditionalDrinks": [
+     "Bubble tea (incili sütlü çay)",
+     "Yüksek dağ oolong çayı",
+     "Taiwan Beer"
+    ],
+    "streetFoodAndDesserts": [
+     "Kokmuş tofu (chou doufu)",
+     "Gua bao (Tayvan usulü hamburger)",
+     "Ananaslı kek (fengli su)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Ang Lee (yönetmen)",
+     "Teresa Teng (şarkıcı)",
+     "Jay Chou (şarkıcı, söz yazarı)"
+    ],
+    "strongSectors": [
+     "Yarı iletkenler (çip üretimi)",
+     "Elektronik ve bilişim donanımı",
+     "Makine ve bisiklet üretimi"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Kart büyük mağazalarda geçer ancak gece pazarları ve küçük restoranlar nakit ister; EasyCard ile market ve ulaşım ödemesi yapılabilir.",
+    "tippingCulture": "Bahşiş geleneği yoktur; restoran ve otellerde %10 servis ücreti faturaya eklenir.",
+    "economicPillars": "Yarı iletken ve elektronik ihracatı, ileri imalat, hizmetler ve turizm."
+   }
+  },
+  "itin": {
+   "routeName": "Tayvan Klasik Rotası: Taipei, Güneş Ay Gölü, Alishan ve Tainan",
+   "routeSummary": "Taipei’nin gece pazarları ve Jiufen’in sokaklarından Güneş Ay Gölü’ne, Alishan’ın bulut denizine ve adanın en eski şehri Tainan’a uzanan 8 günlük rota.",
+   "totalDays": 8,
+   "idealDurationText": "8 Günlük Tayvan Rotası",
+   "bestSeason": "Ekim – Aralık ve Mart – Mayıs (Temmuz – Eylül tayfun mevsimi)",
+   "transportMode": "Yüksek hızlı tren (HSR) + yerel tren/otobüs ve metro",
+   "paceLevel": "Dengeli (Şehir + Doğa + Lezzet)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "1. Durak: Taipei (ve Jiufen)",
+     "recommendedDuration": "3 Gün (Şehir + günübirlik)",
+     "durationBadge": "3 Gün",
+     "highlights": [
+      "Taipei 101 seyir terası",
+      "Ulusal Saray Müzesi",
+      "Shilin ve Raohe gece pazarları",
+      "Jiufen eski sokakları"
+     ],
+     "activities": [
+      "Elephant Mountain patikasından Taipei 101 manzarasını izleyin.",
+      "Jiufen’de çay evinde oolong çayı için.",
+      "Beitou’da kaplıca deneyimi yaşayın."
+     ],
+     "foodAndDrinks": [
+      "Xiaolongbao",
+      "Bubble tea",
+      "Sığır etli erişte"
+     ],
+     "criticalTips": [
+      "Metroda yiyip içmeyin; cezası vardır.",
+      "Jiufen hafta sonları çok kalabalıktır, sabah erken gidin."
+     ],
+     "mapsQuery": "Taipei, Taiwan"
+    },
+    {
+     "stopNumber": 2,
+     "name": "2. Durak: Güneş Ay Gölü",
+     "recommendedDuration": "1 Gün (Göl ve dağlar)",
+     "durationBadge": "1 Gün",
+     "highlights": [
+      "Güneş Ay Gölü bisiklet yolu",
+      "Wenwu Tapınağı",
+      "Ita Thao Thao yerli köyü"
+     ],
+     "activities": [
+      "Göl kıyısında bisiklet sürün.",
+      "Teleferikle Formosan Aboriginal Culture Village’a çıkın.",
+      "Tekne ile iskeleler arasında gezin."
+     ],
+     "foodAndDrinks": [
+      "Göl balığı",
+      "Assam siyah çayı"
+     ],
+     "criticalTips": [
+      "Taichung HSR istasyonundan otobüsle yaklaşık 1,5 saat sürer.",
+      "Hafta içi gelmek daha sakindir."
+     ],
+     "mapsQuery": "Sun Moon Lake, Nantou, Taiwan"
+    },
+    {
+     "stopNumber": 3,
+     "name": "3. Durak: Alishan",
+     "recommendedDuration": "2 Gün (Orman ve dağ)",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "Alishan Orman Demiryolu",
+      "Zhushan’dan gün doğumu ve bulut denizi",
+      "Kutsal Ağaç Patikası (dev selviler)"
+     ],
+     "activities": [
+      "Gün doğumu için sabah erkenden Zhushan’a çıkın.",
+      "Dev ağaç patikasında yürüyüş yapın.",
+      "Yüksek dağ çay bahçelerini gezin."
+     ],
+     "foodAndDrinks": [
+      "Yüksek dağ oolong çayı",
+      "Bambu pilavı"
+     ],
+     "criticalTips": [
+      "Dağda hava serindir, ceket alın.",
+      "Hafta sonu konaklamasını önceden ayırtın."
+     ],
+     "mapsQuery": "Alishan National Scenic Area, Taiwan"
+    },
+    {
+     "stopNumber": 4,
+     "name": "4. Durak: Tainan",
+     "recommendedDuration": "2 Gün (Tarih ve lezzet)",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "Anping Kalesi (Fort Zeelandia)",
+      "Chihkan Kulesi",
+      "Konfüçyüs Tapınağı",
+      "Shennong Caddesi"
+     ],
+     "activities": [
+      "Tarihî tapınaklar arasında yürüyüş yapın.",
+      "Sabah kahvaltısında sığır eti çorbası deneyin.",
+      "Anping ağaç evini gezin."
+     ],
+     "foodAndDrinks": [
+      "Dan zai erişte",
+      "Lu rou fan",
+      "Ananaslı kek"
+     ],
+     "criticalTips": [
+      "Tainan’da ulaşım için kiralık scooter/bisiklet pratiktir.",
+      "Yaz öğleden sonraları sıcak ve nemlidir; su için."
+     ],
+     "mapsQuery": "Tainan, Taiwan"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Sığır etli erişte çorbası (niu rou mian)",
+     "Lu rou fan (soslu kıyma etli pilav)",
+     "Xiaolongbao (çorbalı buharda mantı)"
+    ],
+    "drinks": [
+     "Bubble tea (incili sütlü çay)",
+     "Yüksek dağ oolong çayı",
+     "Taiwan Beer"
+    ],
+    "streetFoods": [
+     "Kokmuş tofu (chou doufu)",
+     "Gua bao (Tayvan usulü hamburger)",
+     "Ananaslı kek (fengli su)"
+    ],
+    "diningAdvice": "Gece pazarları en ekonomik ve lezzetli seçenektir; birçok küçük restoranda sipariş kâğıda işaretlenir ve önceden ödenir."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "A/B tipi priz adaptörü",
+     "EasyCard",
+     "Yağmurluk veya şemsiye",
+     "Sivrisinek kovucu"
+    ],
+    "safetyAndEtiquette": [
+     "Metroda yiyip içmeyin ve sessiz olun.",
+     "Tapınaklarda sunaklara dokunmayın ve saygılı davranın."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "A",
+     "B"
+    ],
+    "voltage": "110V",
+    "frequency": "60Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "İki yassı pimli A/B tipi prizler (110V); Türkiye fişleri uymaz, adaptör gerekir. Cihazınızın 110V desteklediğini kontrol edin."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Şebeke suyu arıtılmıştır ancak eski bina tesisatı nedeniyle kaynatmadan içilmesi önerilmez; her yerde ücretsiz sıcak/soğuk su sebilleri bulunur.",
+    "vaccines": [
+     "Rutin aşılar (tetanoz-difteri, KKK)",
+     "Hepatit A",
+     "Kırsalda uzun kalacaklar için Japon ensefaliti; dang hummasına karşı sivrisinek önlemi"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "119"
+   },
+   "tipping": {
+    "custom": "Bahşiş verilmez; restoran ve otellerde %10 servis ücreti eklenir.",
+    "standardPercent": 0,
+    "rule": "optional",
+    "note": "Taksilerde ve gece pazarlarında bahşiş beklenmez."
+   },
+   "taxFree": {
+    "vatRefundPercent": "KDV %5; iade masraflar düşüldükten sonra yaklaşık %4-5",
+    "minSpend": "Aynı gün, aynı mağazada NT$2.000 üzeri",
+    "customsNote": "TRS (Tax Refund Shopping) logolu mağazalarda pasaportla form alın; küçük tutarlar mağazada anında iade edilebilir, diğerleri havalimanındaki iade kontuarında yapılır."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.50 - $1.50",
+    "topCarriers": [
+     "Chunghwa Telecom",
+     "Taiwan Mobile",
+     "FarEasTone"
+    ],
+    "airportSimTrapWarning": "Taoyuan Havalimanı’nda Chunghwa, Taiwan Mobile ve FarEasTone standları uygun fiyatlı sınırsız turist paketleri sunar; tuzak değil, aksine en pratik seçenektir."
+   },
+   "touristScams": [
+    {
+     "title": "Sahte Keşiş",
+     "desc": "Turistik bölgelerde muska veren ve bağış isteyen sahte keşişler.",
+     "tip": "Kibarca reddedip yolunuza devam edin."
+    },
+    {
+     "title": "Gece Pazarı Fiyatı",
+     "desc": "Fiyatı yazmayan tezgâhlarda turistlere yüksek fiyat söylenebilir.",
+     "tip": "Fiyatı önceden sorun veya fiyatı yazılı tezgâhları seçin."
+    },
+    {
+     "title": "Korsan Havalimanı Taksisi",
+     "desc": "Resmî sıranın dışındaki araçlar sabit ama yüksek ücret ister.",
+     "tip": "Resmî taksi sırasını, havalimanı metrosunu veya otobüsü kullanın."
+    }
+   ]
+  }
+ },
+ "en": {
+  "insights": {
+   "currency": "New Taiwan Dollar (TWD)",
+   "plugType": "Type A, B (110V, 60Hz)",
+   "bestMonths": "October – December and March – May (July – September is typhoon season)",
+   "safety": {
+    "safetyScore": 85,
+    "safetyLevel": "Exceptional Safety",
+    "badgeColor": "bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-900/60",
+    "crimeRateSummary": "One of the safest places in Asia; violent crime is very rare and walking at night is comfortable. Main risks are earthquakes, typhoons and dengue in summer.",
+    "commonScams": [
+     "Fake monks asking for donations in tourist areas",
+     "Unpriced night-market stalls charging tourists more",
+     "Unofficial cars at the airport offering fixed fares"
+    ],
+    "safeTravelTips": [
+     "Get an EasyCard or iPASS; it works on metro, buses, trains and in convenience stores.",
+     "Follow Central Weather Administration notices for typhoon and earthquake alerts.",
+     "Check trail and road closures in mountain areas such as Taroko Gorge in advance."
+    ],
+    "emergencyNumbers": {
+     "police": "110",
+     "ambulance": "119",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99% 4G/5G nationwide; seamless even in the metro and on trains",
+    "costPerGbUsd": "~0.50 - 1.50 $",
+    "esimAvailability": "Excellent",
+    "bestCarriers": [
+     "Chunghwa Telecom",
+     "Taiwan Mobile",
+     "FarEasTone"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Excellent",
+    "costLevel": "Moderate",
+    "singleTicketUsd": "0.65 - 2 $",
+    "dailyPassUsd": "5 - 6 $",
+    "popularRideApps": [
+     "Uber",
+     "LINE GO (LINE Taxi)",
+     "55688 Taiwan Taxi",
+     "Google Maps"
+    ],
+    "taxiAdvice": "Yellow taxis are metered and reliable (flag fall ~NT$85-100); Uber and LINE GO are also widely used."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "40 - 60 $",
+    "dailyBudgetMidrangeUsd": "100 - 170 $",
+    "budgetMealUsd": "4 - 10 $",
+    "coffeeUsd": "2 - 5 $",
+    "waterBottleUsd": "0.60 - 1 $",
+    "hostelDormUsd": "18 - 30 $",
+    "hotel3StarUsd": "60 - 120 $",
+    "flightCostIndex": "Moderate",
+    "flightTip": "Turkish Airlines flies direct Istanbul–Taipei; connections via Asian hubs (Hong Kong, Bangkok) can be cheaper."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Eating and drinking on the metro is banned and fined; blue seats are priority seats.",
+     "Give and receive business cards and gifts with both hands.",
+     "Do not stick chopsticks upright in rice; it evokes funeral rites.",
+     "In temples do not touch altars or incense, and keep quiet."
+    ],
+    "festivals": [
+     "Lantern Festival and Pingxi sky lanterns (February/March)",
+     "Dragon Boat Festival (June)",
+     "Mid-Autumn Festival (September/October)"
+    ],
+    "lifestyle": "Night-market culture, temple rituals and polite, helpful people; a life where technology and tradition blend."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Taipei 101",
+     "National Palace Museum",
+     "Jiufen mountain town",
+     "Sun Moon Lake",
+     "Alishan forest and sea of clouds",
+     "Taroko Gorge (check open sections)"
+    ],
+    "bestSeasons": "October – December and March – May (July – September is typhoon season)",
+    "travelStyleTip": "High-speed rail (HSR) and local trains make north-to-south travel easy."
+   },
+   "religion": {
+    "primaryReligions": "Buddhism, Taoism and folk religion (together over 70%), Christianity (~5%).",
+    "respectNorms": "Enter a temple through the right door and leave through the left; the central door is for the gods. Take photos without turning your back on altars.",
+    "sacredSites": [
+     "Longshan Temple (Taipei)",
+     "Wenwu Temple (Sun Moon Lake)",
+     "Fo Guang Shan Monastery (Kaohsiung)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Mandarin Chinese (traditional characters). Taiwanese Hokkien and Hakka are also common.",
+    "englishProficiency": "Moderate among young people in Taipei; signs are usually in English, and a translation app helps in rural areas.",
+    "phrases": [
+     {
+      "phrase": "你好",
+      "meaning": "Hello",
+      "translation": "Hello",
+      "pronunciation": "nǐ hǎo"
+     },
+     {
+      "phrase": "謝謝",
+      "meaning": "Thank you",
+      "translation": "Thank you",
+      "pronunciation": "xièxie"
+     },
+     {
+      "phrase": "請",
+      "meaning": "Please",
+      "translation": "Please",
+      "pronunciation": "qǐng"
+     },
+     {
+      "phrase": "多少錢？",
+      "meaning": "How much is it?",
+      "translation": "How much is it?",
+      "pronunciation": "duōshǎo qián?"
+     },
+     {
+      "phrase": "不好意思",
+      "meaning": "Excuse me / Sorry",
+      "translation": "Excuse me / Sorry",
+      "pronunciation": "bù hǎoyìsi"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Home to Austronesian indigenous peoples, the island came under Dutch rule in the 17th century, then Koxinga and the Qing dynasty. It was under Japanese rule from 1895 to 1945; democratisation began when martial law was lifted in 1987.",
+    "milestones": [
+     "1624: Dutch settle in Tainan",
+     "1662: Koxinga’s rule",
+     "1895-1945: Japanese rule",
+     "1987: Martial law lifted"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Beef noodle soup (niu rou mian)",
+     "Lu rou fan (braised minced pork rice)",
+     "Xiaolongbao (soup dumplings)"
+    ],
+    "traditionalDrinks": [
+     "Bubble tea (pearl milk tea)",
+     "High-mountain oolong tea",
+     "Taiwan Beer"
+    ],
+    "streetFoodAndDesserts": [
+     "Stinky tofu (chou doufu)",
+     "Gua bao (Taiwanese pork bun)",
+     "Pineapple cake (fengli su)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Ang Lee (film director)",
+     "Teresa Teng (singer)",
+     "Jay Chou (singer-songwriter)"
+    ],
+    "strongSectors": [
+     "Semiconductors (chip manufacturing)",
+     "Electronics and ICT hardware",
+     "Machinery and bicycle manufacturing"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Cards work in larger shops, but night markets and small eateries want cash; EasyCard pays for transport and convenience stores.",
+    "tippingCulture": "There is no tipping culture; restaurants and hotels add a 10% service charge.",
+    "economicPillars": "Semiconductor and electronics exports, advanced manufacturing, services and tourism."
+   }
+  },
+  "itin": {
+   "routeName": "Classic Taiwan Route: Taipei, Sun Moon Lake, Alishan and Tainan",
+   "routeSummary": "An 8-day route from Taipei’s night markets and Jiufen’s lanes to Sun Moon Lake, Alishan’s sea of clouds and Tainan, the island’s oldest city.",
+   "totalDays": 8,
+   "idealDurationText": "8-Day Taiwan Itinerary",
+   "bestSeason": "October – December and March – May (July – September is typhoon season)",
+   "transportMode": "High-speed rail (HSR) + local trains/buses and metro",
+   "paceLevel": "Balanced (City, Nature & Food)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stop 1: Taipei (and Jiufen)",
+     "recommendedDuration": "3 Days (City + day trip)",
+     "durationBadge": "3 Days",
+     "highlights": [
+      "Taipei 101 observatory",
+      "National Palace Museum",
+      "Shilin and Raohe night markets",
+      "Jiufen old streets"
+     ],
+     "activities": [
+      "Watch Taipei 101 from the Elephant Mountain trail.",
+      "Sip oolong in a Jiufen teahouse.",
+      "Soak in the hot springs of Beitou."
+     ],
+     "foodAndDrinks": [
+      "Xiaolongbao",
+      "Bubble tea",
+      "Beef noodle soup"
+     ],
+     "criticalTips": [
+      "Do not eat or drink on the metro; it is fined.",
+      "Jiufen is packed at weekends; go early in the morning."
+     ],
+     "mapsQuery": "Taipei, Taiwan"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stop 2: Sun Moon Lake",
+     "recommendedDuration": "1 Day (Lake and mountains)",
+     "durationBadge": "1 Day",
+     "highlights": [
+      "Sun Moon Lake cycling path",
+      "Wenwu Temple",
+      "Ita Thao indigenous village"
+     ],
+     "activities": [
+      "Cycle along the lakeshore.",
+      "Ride the cable car to the Formosan Aboriginal Culture Village.",
+      "Hop between piers by boat."
+     ],
+     "foodAndDrinks": [
+      "Lake fish",
+      "Assam black tea"
+     ],
+     "criticalTips": [
+      "About 1.5 hours by bus from Taichung HSR station.",
+      "Weekdays are calmer."
+     ],
+     "mapsQuery": "Sun Moon Lake, Nantou, Taiwan"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stop 3: Alishan",
+     "recommendedDuration": "2 Days (Forest and mountain)",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "Alishan Forest Railway",
+      "Sunrise and sea of clouds from Zhushan",
+      "Sacred Tree Trail (giant cypresses)"
+     ],
+     "activities": [
+      "Head up to Zhushan early for sunrise.",
+      "Walk the giant tree trail.",
+      "Visit high-mountain tea gardens."
+     ],
+     "foodAndDrinks": [
+      "High-mountain oolong tea",
+      "Bamboo tube rice"
+     ],
+     "criticalTips": [
+      "It is cool in the mountains; bring a jacket.",
+      "Book weekend stays in advance."
+     ],
+     "mapsQuery": "Alishan National Scenic Area, Taiwan"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Stop 4: Tainan",
+     "recommendedDuration": "2 Days (History and food)",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "Anping Fort (Fort Zeelandia)",
+      "Chihkan Tower",
+      "Confucius Temple",
+      "Shennong Street"
+     ],
+     "activities": [
+      "Walk among historic temples.",
+      "Try beef soup for breakfast.",
+      "Visit the Anping Tree House."
+     ],
+     "foodAndDrinks": [
+      "Danzai noodles",
+      "Lu rou fan",
+      "Pineapple cake"
+     ],
+     "criticalTips": [
+      "Rental scooters/bikes are practical for getting around Tainan.",
+      "Summer afternoons are hot and humid; stay hydrated."
+     ],
+     "mapsQuery": "Tainan, Taiwan"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Beef noodle soup (niu rou mian)",
+     "Lu rou fan (braised minced pork rice)",
+     "Xiaolongbao (soup dumplings)"
+    ],
+    "drinks": [
+     "Bubble tea (pearl milk tea)",
+     "High-mountain oolong tea",
+     "Taiwan Beer"
+    ],
+    "streetFoods": [
+     "Stinky tofu (chou doufu)",
+     "Gua bao (Taiwanese pork bun)",
+     "Pineapple cake (fengli su)"
+    ],
+    "diningAdvice": "Night markets are the cheapest and tastiest option; in many small eateries you tick an order sheet and pay first."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Type A/B plug adapter",
+     "EasyCard",
+     "Raincoat or umbrella",
+     "Mosquito repellent"
+    ],
+    "safetyAndEtiquette": [
+     "Do not eat on the metro and keep quiet.",
+     "Do not touch temple altars and behave respectfully."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "A",
+     "B"
+    ],
+    "voltage": "110V",
+    "frequency": "60Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Type A/B sockets with two flat pins (110V); Turkish plugs do not fit, so an adapter is needed. Check that your devices support 110V."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Mains water is treated, but because of old building plumbing it is not recommended unboiled; free hot/cold water dispensers are everywhere.",
+    "vaccines": [
+     "Routine vaccines (tetanus-diphtheria, MMR)",
+     "Hepatitis A",
+     "Japanese encephalitis for long rural stays; mosquito precautions against dengue"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "119"
+   },
+   "tipping": {
+    "custom": "No tipping; restaurants and hotels add a 10% service charge.",
+    "standardPercent": 0,
+    "rule": "optional",
+    "note": "Tips are not expected in taxis or at night markets."
+   },
+   "taxFree": {
+    "vatRefundPercent": "5% VAT; about 4-5% back after fees",
+    "minSpend": "Over NT$2,000 in one store on the same day",
+    "customsNote": "Get a form with your passport at TRS (Tax Refund Shopping) shops; small amounts can be refunded instantly in store, others at the airport refund counter."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.50 - $1.50",
+    "topCarriers": [
+     "Chunghwa Telecom",
+     "Taiwan Mobile",
+     "FarEasTone"
+    ],
+    "airportSimTrapWarning": "At Taoyuan Airport, Chunghwa, Taiwan Mobile and FarEasTone desks sell well-priced unlimited tourist plans; not a trap, actually the most practical option."
+   },
+   "touristScams": [
+    {
+     "title": "Fake Monk",
+     "desc": "Fake monks hand out amulets and ask for donations in tourist areas.",
+     "tip": "Politely decline and keep walking."
+    },
+    {
+     "title": "Night-Market Price",
+     "desc": "Stalls without posted prices may quote tourists more.",
+     "tip": "Ask the price first or choose stalls with posted prices."
+    },
+    {
+     "title": "Pirate Airport Taxi",
+     "desc": "Cars outside the official queue ask fixed but high fares.",
+     "tip": "Use the official taxi queue, the airport MRT or buses."
+    }
+   ]
+  }
+ },
+ "de": {
+  "insights": {
+   "currency": "Neuer Taiwan-Dollar (TWD)",
+   "plugType": "Typ A, B (110V, 60Hz)",
+   "bestMonths": "Oktober – Dezember und März – Mai (Juli – September Taifunsaison)",
+   "safety": {
+    "safetyScore": 85,
+    "safetyLevel": "Außergewöhnlich sicher",
+    "badgeColor": "bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-900/60",
+    "crimeRateSummary": "Einer der sichersten Orte Asiens; Gewaltkriminalität ist sehr selten und nächtliche Spaziergänge sind entspannt. Hauptrisiken sind Erdbeben, Taifune und im Sommer Denguefieber.",
+    "commonScams": [
+     "Falsche Mönche, die in Touristengebieten Spenden verlangen",
+     "Nachtmarktstände ohne Preisschild mit höheren Preisen für Touristen",
+     "Inoffizielle Wagen am Flughafen mit Festpreisangeboten"
+    ],
+    "safeTravelTips": [
+     "Eine EasyCard oder iPASS kaufen; sie gilt in Metro, Bussen, Zügen und Convenience Stores.",
+     "Hinweise der Central Weather Administration zu Taifunen und Erdbeben verfolgen.",
+     "Weg- und Straßensperrungen in Berggebieten wie der Taroko-Schlucht vorab prüfen."
+    ],
+    "emergencyNumbers": {
+     "police": "110",
+     "ambulance": "119",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99 % 4G/5G landesweit; selbst in Metro und Zügen lückenlos",
+    "costPerGbUsd": "~0.50 - 1.50 $",
+    "esimAvailability": "Ausgezeichnet",
+    "bestCarriers": [
+     "Chunghwa Telecom",
+     "Taiwan Mobile",
+     "FarEasTone"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Ausgezeichnet",
+    "costLevel": "Moderat",
+    "singleTicketUsd": "0.65 - 2 $",
+    "dailyPassUsd": "5 - 6 $",
+    "popularRideApps": [
+     "Uber",
+     "LINE GO (LINE Taxi)",
+     "55688 Taiwan Taxi",
+     "Google Maps"
+    ],
+    "taxiAdvice": "Gelbe Taxis haben Taxameter und sind zuverlässig (Grundpreis ~NT$85-100); Uber und LINE GO sind ebenfalls verbreitet."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "40 - 60 $",
+    "dailyBudgetMidrangeUsd": "100 - 170 $",
+    "budgetMealUsd": "4 - 10 $",
+    "coffeeUsd": "2 - 5 $",
+    "waterBottleUsd": "0.60 - 1 $",
+    "hostelDormUsd": "18 - 30 $",
+    "hotel3StarUsd": "60 - 120 $",
+    "flightCostIndex": "Moderat",
+    "flightTip": "Turkish Airlines fliegt direkt Istanbul–Taipeh; Verbindungen über asiatische Drehkreuze (Hongkong, Bangkok) können günstiger sein."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Essen und Trinken in der Metro ist verboten und wird bestraft; blaue Sitze sind Vorrangplätze.",
+     "Visitenkarten und Geschenke mit beiden Händen überreichen und annehmen.",
+     "Stäbchen nicht senkrecht in den Reis stecken; das erinnert an Trauerrituale.",
+     "In Tempeln Altäre und Räucherstäbchen nicht berühren und leise sein."
+    ],
+    "festivals": [
+     "Laternenfest und Himmelslaternen in Pingxi (Februar/März)",
+     "Drachenbootfest (Juni)",
+     "Mondfest (September/Oktober)"
+    ],
+    "lifestyle": "Nachtmarktkultur, Tempelrituale und höfliche, hilfsbereite Menschen; ein Alltag, in dem Technik und Tradition verschmelzen."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Taipei 101",
+     "Nationales Palastmuseum",
+     "Bergstädtchen Jiufen",
+     "Sonne-Mond-See",
+     "Alishan: Wald und Wolkenmeer",
+     "Taroko-Schlucht (offene Abschnitte prüfen)"
+    ],
+    "bestSeasons": "Oktober – Dezember und März – Mai (Juli – September Taifunsaison)",
+    "travelStyleTip": "Mit Hochgeschwindigkeitszug (HSR) und Regionalzügen reist man bequem von Nord nach Süd."
+   },
+   "religion": {
+    "primaryReligions": "Buddhismus, Daoismus und Volksreligion (zusammen über 70 %), Christentum (~5 %).",
+    "respectNorms": "Tempel durch die rechte Tür betreten und durch die linke verlassen; die mittlere ist den Göttern vorbehalten. Beim Fotografieren Altären nicht den Rücken zukehren.",
+    "sacredSites": [
+     "Longshan-Tempel (Taipeh)",
+     "Wenwu-Tempel (Sonne-Mond-See)",
+     "Kloster Fo Guang Shan (Kaohsiung)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Mandarin-Chinesisch (traditionelle Schriftzeichen). Taiwanisches Hokkien und Hakka sind ebenfalls verbreitet.",
+    "englishProficiency": "Mittel bei jungen Leuten in Taipeh; Schilder sind meist englisch, auf dem Land hilft eine Übersetzungs-App.",
+    "phrases": [
+     {
+      "phrase": "你好",
+      "meaning": "Hallo",
+      "translation": "Hallo",
+      "pronunciation": "nǐ hǎo"
+     },
+     {
+      "phrase": "謝謝",
+      "meaning": "Danke",
+      "translation": "Danke",
+      "pronunciation": "xièxie"
+     },
+     {
+      "phrase": "請",
+      "meaning": "Bitte",
+      "translation": "Bitte",
+      "pronunciation": "qǐng"
+     },
+     {
+      "phrase": "多少錢？",
+      "meaning": "Wie viel kostet das?",
+      "translation": "Wie viel kostet das?",
+      "pronunciation": "duōshǎo qián?"
+     },
+     {
+      "phrase": "不好意思",
+      "meaning": "Entschuldigung",
+      "translation": "Entschuldigung",
+      "pronunciation": "bù hǎoyìsi"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Die Insel der austronesischen Ureinwohner kam im 17. Jahrhundert unter niederländische Herrschaft, dann unter Koxinga und die Qing-Dynastie. Von 1895 bis 1945 stand sie unter japanischer Herrschaft; mit der Aufhebung des Kriegsrechts 1987 begann die Demokratisierung.",
+    "milestones": [
+     "1624: Niederländer siedeln in Tainan",
+     "1662: Herrschaft Koxingas",
+     "1895-1945: Japanische Herrschaft",
+     "1987: Aufhebung des Kriegsrechts"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Rindfleischnudelsuppe (niu rou mian)",
+     "Lu rou fan (Reis mit geschmortem Hackfleisch)",
+     "Xiaolongbao (Suppenteigtaschen)"
+    ],
+    "traditionalDrinks": [
+     "Bubble Tea (Perlenmilchtee)",
+     "Hochland-Oolong-Tee",
+     "Taiwan Beer"
+    ],
+    "streetFoodAndDesserts": [
+     "Stinkender Tofu (chou doufu)",
+     "Gua bao (taiwanisches Schweinefleischbrötchen)",
+     "Ananaskuchen (fengli su)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Ang Lee (Regisseur)",
+     "Teresa Teng (Sängerin)",
+     "Jay Chou (Sänger, Songwriter)"
+    ],
+    "strongSectors": [
+     "Halbleiter (Chipfertigung)",
+     "Elektronik und IT-Hardware",
+     "Maschinen- und Fahrradbau"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Karten gehen in größeren Geschäften, Nachtmärkte und kleine Lokale wollen aber Bargeld; mit der EasyCard zahlt man Verkehr und Convenience Stores.",
+    "tippingCulture": "Trinkgeld ist unüblich; Restaurants und Hotels schlagen 10 % Service auf.",
+    "economicPillars": "Halbleiter- und Elektronikexporte, Hightech-Fertigung, Dienstleistungen und Tourismus."
+   }
+  },
+  "itin": {
+   "routeName": "Klassisches Taiwan: Taipeh, Sonne-Mond-See, Alishan und Tainan",
+   "routeSummary": "Eine 8-tägige Route von Taipehs Nachtmärkten und Jiufens Gassen zum Sonne-Mond-See, zum Wolkenmeer von Alishan und nach Tainan, der ältesten Stadt der Insel.",
+   "totalDays": 8,
+   "idealDurationText": "8-Tage-Route durch Taiwan",
+   "bestSeason": "Oktober – Dezember und März – Mai (Juli – September Taifunsaison)",
+   "transportMode": "Hochgeschwindigkeitszug (HSR) + Regionalzüge/Busse und Metro",
+   "paceLevel": "Ausgewogen (Stadt, Natur & Essen)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stopp 1: Taipeh (und Jiufen)",
+     "recommendedDuration": "3 Tage (Stadt + Tagesausflug)",
+     "durationBadge": "3 Tage",
+     "highlights": [
+      "Aussichtsplattform Taipei 101",
+      "Nationales Palastmuseum",
+      "Nachtmärkte Shilin und Raohe",
+      "Altstadtgassen von Jiufen"
+     ],
+     "activities": [
+      "Vom Elephant-Mountain-Pfad auf Taipei 101 blicken.",
+      "In einem Teehaus in Jiufen Oolong trinken.",
+      "In den heißen Quellen von Beitou baden."
+     ],
+     "foodAndDrinks": [
+      "Xiaolongbao",
+      "Bubble Tea",
+      "Rindfleischnudelsuppe"
+     ],
+     "criticalTips": [
+      "In der Metro nicht essen oder trinken; es drohen Strafen.",
+      "Jiufen ist am Wochenende überfüllt; früh morgens hinfahren."
+     ],
+     "mapsQuery": "Taipei, Taiwan"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stopp 2: Sonne-Mond-See",
+     "recommendedDuration": "1 Tag (See und Berge)",
+     "durationBadge": "1 Tag",
+     "highlights": [
+      "Radweg am Sonne-Mond-See",
+      "Wenwu-Tempel",
+      "Indigenes Dorf Ita Thao"
+     ],
+     "activities": [
+      "Am Seeufer Rad fahren.",
+      "Mit der Seilbahn zum Formosan Aboriginal Culture Village fahren.",
+      "Per Boot zwischen den Anlegestellen pendeln."
+     ],
+     "foodAndDrinks": [
+      "Seefisch",
+      "Assam-Schwarztee"
+     ],
+     "criticalTips": [
+      "Etwa 1,5 Stunden mit dem Bus ab dem HSR-Bahnhof Taichung.",
+      "Unter der Woche ist es ruhiger."
+     ],
+     "mapsQuery": "Sun Moon Lake, Nantou, Taiwan"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stopp 3: Alishan",
+     "recommendedDuration": "2 Tage (Wald und Berg)",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "Alishan-Waldbahn",
+      "Sonnenaufgang und Wolkenmeer vom Zhushan",
+      "Pfad der heiligen Bäume (Riesenzypressen)"
+     ],
+     "activities": [
+      "Früh zum Sonnenaufgang auf den Zhushan.",
+      "Den Pfad der Riesenbäume entlangwandern.",
+      "Hochland-Teegärten besuchen."
+     ],
+     "foodAndDrinks": [
+      "Hochland-Oolong-Tee",
+      "Reis im Bambusrohr"
+     ],
+     "criticalTips": [
+      "In den Bergen ist es kühl; Jacke mitnehmen.",
+      "Unterkünfte am Wochenende vorab buchen."
+     ],
+     "mapsQuery": "Alishan National Scenic Area, Taiwan"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Stopp 4: Tainan",
+     "recommendedDuration": "2 Tage (Geschichte und Essen)",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "Fort Anping (Fort Zeelandia)",
+      "Chihkan-Turm",
+      "Konfuzius-Tempel",
+      "Shennong-Straße"
+     ],
+     "activities": [
+      "Zwischen historischen Tempeln spazieren.",
+      "Zum Frühstück Rindfleischsuppe probieren.",
+      "Das Baumhaus von Anping besuchen."
+     ],
+     "foodAndDrinks": [
+      "Danzai-Nudeln",
+      "Lu rou fan",
+      "Ananaskuchen"
+     ],
+     "criticalTips": [
+      "Mietroller/-räder sind in Tainan praktisch.",
+      "Sommernachmittage sind heiß und feucht; viel trinken."
+     ],
+     "mapsQuery": "Tainan, Taiwan"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Rindfleischnudelsuppe (niu rou mian)",
+     "Lu rou fan (Reis mit geschmortem Hackfleisch)",
+     "Xiaolongbao (Suppenteigtaschen)"
+    ],
+    "drinks": [
+     "Bubble Tea (Perlenmilchtee)",
+     "Hochland-Oolong-Tee",
+     "Taiwan Beer"
+    ],
+    "streetFoods": [
+     "Stinkender Tofu (chou doufu)",
+     "Gua bao (taiwanisches Schweinefleischbrötchen)",
+     "Ananaskuchen (fengli su)"
+    ],
+    "diningAdvice": "Nachtmärkte sind die günstigste und leckerste Option; in vielen kleinen Lokalen kreuzt man die Bestellung auf einem Zettel an und zahlt vorab."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Steckeradapter Typ A/B",
+     "EasyCard",
+     "Regenjacke oder Schirm",
+     "Mückenschutz"
+    ],
+    "safetyAndEtiquette": [
+     "In der Metro nicht essen und leise sein.",
+     "Tempelaltäre nicht berühren und respektvoll auftreten."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "A",
+     "B"
+    ],
+    "voltage": "110V",
+    "frequency": "60Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Steckdosen Typ A/B mit zwei Flachstiften (110 V); türkische Stecker passen nicht, ein Adapter ist nötig. Prüfen, ob Geräte 110 V unterstützen."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Das Leitungswasser ist aufbereitet, wegen alter Hausleitungen wird es ungekocht aber nicht empfohlen; kostenlose Heiß-/Kaltwasserspender gibt es überall.",
+    "vaccines": [
+     "Standardimpfungen (Tetanus-Diphtherie, MMR)",
+     "Hepatitis A",
+     "Japanische Enzephalitis bei längeren Aufenthalten auf dem Land; Mückenschutz gegen Dengue"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "119"
+   },
+   "tipping": {
+    "custom": "Kein Trinkgeld; Restaurants und Hotels schlagen 10 % Service auf.",
+    "standardPercent": 0,
+    "rule": "optional",
+    "note": "In Taxis und auf Nachtmärkten wird kein Trinkgeld erwartet."
+   },
+   "taxFree": {
+    "vatRefundPercent": "5 % MwSt.; nach Gebühren etwa 4-5 % zurück",
+    "minSpend": "Über NT$2.000 in einem Geschäft am selben Tag",
+    "customsNote": "In TRS-Geschäften (Tax Refund Shopping) mit Pass ein Formular holen; kleine Beträge werden sofort im Laden erstattet, andere am Erstattungsschalter im Flughafen."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.50 - $1.50",
+    "topCarriers": [
+     "Chunghwa Telecom",
+     "Taiwan Mobile",
+     "FarEasTone"
+    ],
+    "airportSimTrapWarning": "Am Flughafen Taoyuan verkaufen Chunghwa, Taiwan Mobile und FarEasTone günstige unbegrenzte Touristentarife; keine Falle, sondern die praktischste Option."
+   },
+   "touristScams": [
+    {
+     "title": "Falscher Mönch",
+     "desc": "Falsche Mönche verteilen Amulette und verlangen Spenden in Touristengebieten.",
+     "tip": "Höflich ablehnen und weitergehen."
+    },
+    {
+     "title": "Nachtmarktpreis",
+     "desc": "Stände ohne Preisschild nennen Touristen höhere Preise.",
+     "tip": "Vorher nach dem Preis fragen oder Stände mit Preisen wählen."
+    },
+    {
+     "title": "Piraten-Flughafentaxi",
+     "desc": "Wagen außerhalb der offiziellen Schlange verlangen hohe Festpreise.",
+     "tip": "Offizielle Taxischlange, Flughafen-MRT oder Busse nutzen."
+    }
+   ]
+  }
+ },
+ "es": {
+  "insights": {
+   "currency": "Nuevo dólar taiwanés (TWD)",
+   "plugType": "Tipo A, B (110V, 60Hz)",
+   "bestMonths": "Octubre – diciembre y marzo – mayo (julio – septiembre es temporada de tifones)",
+   "safety": {
+    "safetyScore": 85,
+    "safetyLevel": "Excepcionalmente Seguro",
+    "badgeColor": "bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-900/60",
+    "crimeRateSummary": "Uno de los lugares más seguros de Asia; la violencia es muy rara y pasear de noche es tranquilo. Los riesgos principales son terremotos, tifones y el dengue en verano.",
+    "commonScams": [
+     "Falsos monjes que piden donativos en zonas turísticas",
+     "Puestos de mercado nocturno sin precios que cobran más a turistas",
+     "Coches no oficiales en el aeropuerto que ofrecen tarifas fijas"
+    ],
+    "safeTravelTips": [
+     "Hazte con una EasyCard o iPASS: sirve en metro, autobuses, trenes y tiendas de conveniencia.",
+     "Sigue los avisos de la Central Weather Administration sobre tifones y terremotos.",
+     "Consulta antes los cierres de senderos y carreteras en zonas de montaña como la garganta de Taroko."
+    ],
+    "emergencyNumbers": {
+     "police": "110",
+     "ambulance": "119",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99 % 4G/5G en todo el país; sin cortes incluso en metro y trenes",
+    "costPerGbUsd": "~0.50 - 1.50 $",
+    "esimAvailability": "Excelente",
+    "bestCarriers": [
+     "Chunghwa Telecom",
+     "Taiwan Mobile",
+     "FarEasTone"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Excelente",
+    "costLevel": "Moderado",
+    "singleTicketUsd": "0.65 - 2 $",
+    "dailyPassUsd": "5 - 6 $",
+    "popularRideApps": [
+     "Uber",
+     "LINE GO (LINE Taxi)",
+     "55688 Taiwan Taxi",
+     "Google Maps"
+    ],
+    "taxiAdvice": "Los taxis amarillos tienen taxímetro y son fiables (bajada de bandera ~NT$85-100); Uber y LINE GO también son muy usados."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "40 - 60 $",
+    "dailyBudgetMidrangeUsd": "100 - 170 $",
+    "budgetMealUsd": "4 - 10 $",
+    "coffeeUsd": "2 - 5 $",
+    "waterBottleUsd": "0.60 - 1 $",
+    "hostelDormUsd": "18 - 30 $",
+    "hotel3StarUsd": "60 - 120 $",
+    "flightCostIndex": "Moderado",
+    "flightTip": "Turkish Airlines vuela directo Estambul–Taipéi; las conexiones vía hubs asiáticos (Hong Kong, Bangkok) pueden ser más baratas."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Comer y beber en el metro está prohibido y se multa; los asientos azules son preferentes.",
+     "Entrega y recibe tarjetas y regalos con ambas manos.",
+     "No claves los palillos en vertical en el arroz; recuerda a los ritos funerarios.",
+     "En los templos no toques altares ni incienso y guarda silencio."
+    ],
+    "festivals": [
+     "Festival de los Faroles y farolillos de Pingxi (febrero/marzo)",
+     "Festival del Bote del Dragón (junio)",
+     "Festival del Medio Otoño (septiembre/octubre)"
+    ],
+    "lifestyle": "Cultura de mercados nocturnos, rituales en templos y gente amable y servicial; una vida donde tecnología y tradición se mezclan."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Taipei 101",
+     "Museo Nacional del Palacio",
+     "Pueblo de montaña de Jiufen",
+     "Lago del Sol y la Luna",
+     "Alishan: bosque y mar de nubes",
+     "Garganta de Taroko (consulta los tramos abiertos)"
+    ],
+    "bestSeasons": "Octubre – diciembre y marzo – mayo (julio – septiembre es temporada de tifones)",
+    "travelStyleTip": "El tren de alta velocidad (HSR) y los trenes locales facilitan recorrer la isla de norte a sur."
+   },
+   "religion": {
+    "primaryReligions": "Budismo, taoísmo y religión popular (juntos más del 70 %), cristianismo (~5 %).",
+    "respectNorms": "Entra al templo por la puerta derecha y sal por la izquierda; la central es para los dioses. Haz fotos sin dar la espalda a los altares.",
+    "sacredSites": [
+     "Templo Longshan (Taipéi)",
+     "Templo Wenwu (Lago del Sol y la Luna)",
+     "Monasterio Fo Guang Shan (Kaohsiung)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Chino mandarín (caracteres tradicionales). También son comunes el hokkien taiwanés y el hakka.",
+    "englishProficiency": "Moderado entre jóvenes de Taipéi; los carteles suelen estar en inglés y en zonas rurales ayuda una app de traducción.",
+    "phrases": [
+     {
+      "phrase": "你好",
+      "meaning": "Hola",
+      "translation": "Hola",
+      "pronunciation": "nǐ hǎo"
+     },
+     {
+      "phrase": "謝謝",
+      "meaning": "Gracias",
+      "translation": "Gracias",
+      "pronunciation": "xièxie"
+     },
+     {
+      "phrase": "請",
+      "meaning": "Por favor",
+      "translation": "Por favor",
+      "pronunciation": "qǐng"
+     },
+     {
+      "phrase": "多少錢？",
+      "meaning": "¿Cuánto cuesta?",
+      "translation": "¿Cuánto cuesta?",
+      "pronunciation": "duōshǎo qián?"
+     },
+     {
+      "phrase": "不好意思",
+      "meaning": "Perdón / Disculpe",
+      "translation": "Perdón / Disculpe",
+      "pronunciation": "bù hǎoyìsi"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Hogar de pueblos indígenas austronesios, la isla quedó bajo dominio neerlandés en el siglo XVII y después bajo Koxinga y la dinastía Qing. Estuvo bajo dominio japonés de 1895 a 1945; la democratización comenzó al levantarse la ley marcial en 1987.",
+    "milestones": [
+     "1624: los neerlandeses se instalan en Tainan",
+     "1662: gobierno de Koxinga",
+     "1895-1945: dominio japonés",
+     "1987: fin de la ley marcial"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Sopa de fideos con ternera (niu rou mian)",
+     "Lu rou fan (arroz con cerdo picado guisado)",
+     "Xiaolongbao (empanadillas de sopa)"
+    ],
+    "traditionalDrinks": [
+     "Bubble tea (té con leche y perlas)",
+     "Té oolong de alta montaña",
+     "Taiwan Beer"
+    ],
+    "streetFoodAndDesserts": [
+     "Tofu apestoso (chou doufu)",
+     "Gua bao (bollo taiwanés de cerdo)",
+     "Pastel de piña (fengli su)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Ang Lee (director de cine)",
+     "Teresa Teng (cantante)",
+     "Jay Chou (cantautor)"
+    ],
+    "strongSectors": [
+     "Semiconductores (fabricación de chips)",
+     "Electrónica y hardware TIC",
+     "Maquinaria y fabricación de bicicletas"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Las tarjetas funcionan en tiendas grandes, pero los mercados nocturnos y los pequeños locales piden efectivo; la EasyCard sirve para transporte y tiendas de conveniencia.",
+    "tippingCulture": "No hay cultura de propina; restaurantes y hoteles añaden un 10 % de servicio.",
+    "economicPillars": "Exportación de semiconductores y electrónica, manufactura avanzada, servicios y turismo."
+   }
+  },
+  "itin": {
+   "routeName": "Taiwán clásico: Taipéi, Lago del Sol y la Luna, Alishan y Tainan",
+   "routeSummary": "Ruta de 8 días desde los mercados nocturnos de Taipéi y las callejuelas de Jiufen hasta el Lago del Sol y la Luna, el mar de nubes de Alishan y Tainan, la ciudad más antigua de la isla.",
+   "totalDays": 8,
+   "idealDurationText": "Itinerario de 8 días por Taiwán",
+   "bestSeason": "Octubre – diciembre y marzo – mayo (julio – septiembre es temporada de tifones)",
+   "transportMode": "Tren de alta velocidad (HSR) + trenes/autobuses locales y metro",
+   "paceLevel": "Equilibrado (ciudad, naturaleza y gastronomía)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Taipéi (y Jiufen)",
+     "recommendedDuration": "3 días (ciudad + excursión)",
+     "durationBadge": "3 días",
+     "highlights": [
+      "Mirador del Taipei 101",
+      "Museo Nacional del Palacio",
+      "Mercados nocturnos de Shilin y Raohe",
+      "Calles antiguas de Jiufen"
+     ],
+     "activities": [
+      "Contempla el Taipei 101 desde el sendero de Elephant Mountain.",
+      "Toma un oolong en una casa de té de Jiufen.",
+      "Relájate en las aguas termales de Beitou."
+     ],
+     "foodAndDrinks": [
+      "Xiaolongbao",
+      "Bubble tea",
+      "Sopa de fideos con ternera"
+     ],
+     "criticalTips": [
+      "No comas ni bebas en el metro; hay multas.",
+      "Jiufen se llena los fines de semana; conviene llegar temprano."
+     ],
+     "mapsQuery": "Taipei, Taiwan"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Lago del Sol y la Luna",
+     "recommendedDuration": "1 día (lago y montañas)",
+     "durationBadge": "1 día",
+     "highlights": [
+      "Carril bici del Lago del Sol y la Luna",
+      "Templo Wenwu",
+      "Aldea indígena Ita Thao"
+     ],
+     "activities": [
+      "Pedalea junto a la orilla.",
+      "Sube en teleférico al Formosan Aboriginal Culture Village.",
+      "Navega entre los muelles en barco."
+     ],
+     "foodAndDrinks": [
+      "Pescado del lago",
+      "Té negro Assam"
+     ],
+     "criticalTips": [
+      "Aproximadamente 1,5 horas en autobús desde la estación HSR de Taichung.",
+      "Entre semana hay más calma."
+     ],
+     "mapsQuery": "Sun Moon Lake, Nantou, Taiwan"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Alishan",
+     "recommendedDuration": "2 días (bosque y montaña)",
+     "durationBadge": "2 días",
+     "highlights": [
+      "Ferrocarril forestal de Alishan",
+      "Amanecer y mar de nubes desde Zhushan",
+      "Sendero del Árbol Sagrado (cipreses gigantes)"
+     ],
+     "activities": [
+      "Sube temprano a Zhushan para el amanecer.",
+      "Recorre el sendero de los árboles gigantes.",
+      "Visita plantaciones de té de alta montaña."
+     ],
+     "foodAndDrinks": [
+      "Té oolong de alta montaña",
+      "Arroz en tubo de bambú"
+     ],
+     "criticalTips": [
+      "En la montaña hace fresco; lleva chaqueta.",
+      "Reserva con antelación el alojamiento de fin de semana."
+     ],
+     "mapsQuery": "Alishan National Scenic Area, Taiwan"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Tainan",
+     "recommendedDuration": "2 días (historia y gastronomía)",
+     "durationBadge": "2 días",
+     "highlights": [
+      "Fuerte Anping (Fort Zeelandia)",
+      "Torre Chihkan",
+      "Templo de Confucio",
+      "Calle Shennong"
+     ],
+     "activities": [
+      "Pasea entre templos históricos.",
+      "Desayuna sopa de ternera.",
+      "Visita la Casa del Árbol de Anping."
+     ],
+     "foodAndDrinks": [
+      "Fideos danzai",
+      "Lu rou fan",
+      "Pastel de piña"
+     ],
+     "criticalTips": [
+      "Alquilar scooter o bici es práctico para moverse por Tainan.",
+      "Las tardes de verano son calurosas y húmedas; hidrátate."
+     ],
+     "mapsQuery": "Tainan, Taiwan"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Sopa de fideos con ternera (niu rou mian)",
+     "Lu rou fan (arroz con cerdo picado guisado)",
+     "Xiaolongbao (empanadillas de sopa)"
+    ],
+    "drinks": [
+     "Bubble tea (té con leche y perlas)",
+     "Té oolong de alta montaña",
+     "Taiwan Beer"
+    ],
+    "streetFoods": [
+     "Tofu apestoso (chou doufu)",
+     "Gua bao (bollo taiwanés de cerdo)",
+     "Pastel de piña (fengli su)"
+    ],
+    "diningAdvice": "Los mercados nocturnos son la opción más barata y sabrosa; en muchos locales pequeños se marca el pedido en una hoja y se paga antes."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptador de enchufe tipo A/B",
+     "EasyCard",
+     "Chubasquero o paraguas",
+     "Repelente de mosquitos"
+    ],
+    "safetyAndEtiquette": [
+     "No comas en el metro y mantén el silencio.",
+     "No toques los altares de los templos y compórtate con respeto."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "A",
+     "B"
+    ],
+    "voltage": "110V",
+    "frequency": "60Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Enchufes tipo A/B de dos clavijas planas (110 V); las clavijas turcas no encajan, hace falta adaptador. Comprueba que tus aparatos admitan 110 V."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "El agua de red se trata, pero por las tuberías antiguas de los edificios no se recomienda beberla sin hervir; hay dispensadores gratuitos de agua fría y caliente por todas partes.",
+    "vaccines": [
+     "Vacunas rutinarias (tétanos-difteria, triple vírica)",
+     "Hepatitis A",
+     "Encefalitis japonesa para estancias rurales largas; protección antimosquitos frente al dengue"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "119"
+   },
+   "tipping": {
+    "custom": "No se da propina; restaurantes y hoteles añaden un 10 % de servicio.",
+    "standardPercent": 0,
+    "rule": "optional",
+    "note": "No se espera propina en taxis ni en mercados nocturnos."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA del 5 %; tras comisiones se recupera un 4-5 %",
+    "minSpend": "Más de NT$2.000 en una tienda el mismo día",
+    "customsNote": "Pide el formulario con tu pasaporte en tiendas TRS (Tax Refund Shopping); los importes pequeños se devuelven al instante en tienda y el resto en el mostrador del aeropuerto."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.50 - $1.50",
+    "topCarriers": [
+     "Chunghwa Telecom",
+     "Taiwan Mobile",
+     "FarEasTone"
+    ],
+    "airportSimTrapWarning": "En el aeropuerto de Taoyuan, Chunghwa, Taiwan Mobile y FarEasTone venden planes turísticos ilimitados a buen precio; no es una trampa, sino la opción más práctica."
+   },
+   "touristScams": [
+    {
+     "title": "Falso monje",
+     "desc": "Falsos monjes reparten amuletos y piden donativos en zonas turísticas.",
+     "tip": "Rechaza con cortesía y sigue tu camino."
+    },
+    {
+     "title": "Precio en el mercado nocturno",
+     "desc": "Los puestos sin precios pueden cobrar más a los turistas.",
+     "tip": "Pregunta el precio antes o elige puestos con precios visibles."
+    },
+    {
+     "title": "Taxi pirata en el aeropuerto",
+     "desc": "Coches fuera de la fila oficial piden tarifas fijas pero altas.",
+     "tip": "Usa la fila oficial de taxis, el MRT del aeropuerto o los autobuses."
+    }
+   ]
+  }
+ },
+ "ru": {
+  "insights": {
+   "currency": "Новый тайваньский доллар (TWD)",
+   "plugType": "Тип A, B (110V, 60Hz)",
+   "bestMonths": "Октябрь – декабрь и март – май (июль – сентябрь — сезон тайфунов)",
+   "safety": {
+    "safetyScore": 85,
+    "safetyLevel": "Исключительно Безопасно",
+    "badgeColor": "bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-900/60",
+    "crimeRateSummary": "Одно из самых безопасных мест в Азии: насильственные преступления очень редки, гулять ночью спокойно. Основные риски — землетрясения, тайфуны и денге летом.",
+    "commonScams": [
+     "Фальшивые монахи, просящие пожертвования в туристических местах",
+     "Лотки на ночных рынках без ценников, завышающие цены для туристов",
+     "Неофициальные машины в аэропорту с «фиксированной» ценой"
+    ],
+    "safeTravelTips": [
+     "Купите карту EasyCard или iPASS: она работает в метро, автобусах, поездах и магазинах у дома.",
+     "Следите за предупреждениями Central Weather Administration о тайфунах и землетрясениях.",
+     "Заранее проверяйте закрытие троп и дорог в горах, например в ущелье Тароко."
+    ],
+    "emergencyNumbers": {
+     "police": "110",
+     "ambulance": "119",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99 % 4G/5G по всей стране; связь без перебоев даже в метро и поездах",
+    "costPerGbUsd": "~0.50 - 1.50 $",
+    "esimAvailability": "Отлично",
+    "bestCarriers": [
+     "Chunghwa Telecom",
+     "Taiwan Mobile",
+     "FarEasTone"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Отлично",
+    "costLevel": "Умеренно",
+    "singleTicketUsd": "0.65 - 2 $",
+    "dailyPassUsd": "5 - 6 $",
+    "popularRideApps": [
+     "Uber",
+     "LINE GO (LINE Taxi)",
+     "55688 Taiwan Taxi",
+     "Google Maps"
+    ],
+    "taxiAdvice": "Жёлтые такси со счётчиком надёжны (посадка ~NT$85-100); также популярны Uber и LINE GO."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "40 - 60 $",
+    "dailyBudgetMidrangeUsd": "100 - 170 $",
+    "budgetMealUsd": "4 - 10 $",
+    "coffeeUsd": "2 - 5 $",
+    "waterBottleUsd": "0.60 - 1 $",
+    "hostelDormUsd": "18 - 30 $",
+    "hotel3StarUsd": "60 - 120 $",
+    "flightCostIndex": "Умеренно",
+    "flightTip": "Turkish Airlines летает напрямую Стамбул – Тайбэй; стыковки через азиатские хабы (Гонконг, Бангкок) бывают дешевле."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Есть и пить в метро запрещено, за это штрафуют; синие сиденья — для приоритетных пассажиров.",
+     "Визитки и подарки передают и принимают двумя руками.",
+     "Не втыкайте палочки вертикально в рис — это напоминает похоронный обряд.",
+     "В храмах не трогайте алтари и благовония, соблюдайте тишину."
+    ],
+    "festivals": [
+     "Праздник фонарей и небесные фонарики в Пинси (февраль/март)",
+     "Праздник драконьих лодок (июнь)",
+     "Праздник середины осени (сентябрь/октябрь)"
+    ],
+    "lifestyle": "Культура ночных рынков, храмовые ритуалы и вежливые, отзывчивые люди; жизнь, где технологии и традиции переплетены."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Тайбэй 101",
+     "Национальный музей Гугун",
+     "Горный городок Цзюфэнь",
+     "Озеро Солнца и Луны",
+     "Алишань: лес и море облаков",
+     "Ущелье Тароко (проверьте открытые участки)"
+    ],
+    "bestSeasons": "Октябрь – декабрь и март – май (июль – сентябрь — сезон тайфунов)",
+    "travelStyleTip": "Скоростная железная дорога (HSR) и местные поезда позволяют легко проехать остров с севера на юг."
+   },
+   "religion": {
+    "primaryReligions": "Буддизм, даосизм и народные верования (вместе более 70 %), христианство (~5 %).",
+    "respectNorms": "В храм входят через правую дверь и выходят через левую; центральная — для богов. Фотографируйте, не поворачиваясь спиной к алтарям.",
+    "sacredSites": [
+     "Храм Луншань (Тайбэй)",
+     "Храм Вэньу (озеро Солнца и Луны)",
+     "Монастырь Фо Гуан Шань (Гаосюн)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Китайский (путунхуа, традиционные иероглифы). Распространены также тайваньский хокло и хакка.",
+    "englishProficiency": "Средний у молодёжи Тайбэя; вывески обычно дублируются на английском, в глубинке выручит переводчик.",
+    "phrases": [
+     {
+      "phrase": "你好",
+      "meaning": "Здравствуйте",
+      "translation": "Здравствуйте",
+      "pronunciation": "nǐ hǎo"
+     },
+     {
+      "phrase": "謝謝",
+      "meaning": "Спасибо",
+      "translation": "Спасибо",
+      "pronunciation": "xièxie"
+     },
+     {
+      "phrase": "請",
+      "meaning": "Пожалуйста",
+      "translation": "Пожалуйста",
+      "pronunciation": "qǐng"
+     },
+     {
+      "phrase": "多少錢？",
+      "meaning": "Сколько стоит?",
+      "translation": "Сколько стоит?",
+      "pronunciation": "duōshǎo qián?"
+     },
+     {
+      "phrase": "不好意思",
+      "meaning": "Извините",
+      "translation": "Извините",
+      "pronunciation": "bù hǎoyìsi"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Остров австронезийских коренных народов в XVII веке попал под власть голландцев, затем Коксинги и династии Цин. С 1895 по 1945 год находился под японским управлением; демократизация началась с отменой военного положения в 1987 году.",
+    "milestones": [
+     "1624: голландцы обосновываются в Тайнане",
+     "1662: правление Коксинги",
+     "1895-1945: японское управление",
+     "1987: отмена военного положения"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Суп с говядиной и лапшой (нюжоумянь)",
+     "Лужоуфань (рис с тушёным рубленым мясом)",
+     "Сяолунбао (пельмени с бульоном)"
+    ],
+    "traditionalDrinks": [
+     "Бабл-ти (чай с молоком и шариками тапиоки)",
+     "Высокогорный улун",
+     "Taiwan Beer"
+    ],
+    "streetFoodAndDesserts": [
+     "Вонючий тофу (чоу тофу)",
+     "Гуа бао (тайваньская булочка со свининой)",
+     "Ананасовое печенье (фэнлису)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Энг Ли (кинорежиссёр)",
+     "Тереза Тенг (певица)",
+     "Джей Чоу (певец, автор песен)"
+    ],
+    "strongSectors": [
+     "Полупроводники (производство чипов)",
+     "Электроника и ИКТ-оборудование",
+     "Машиностроение и производство велосипедов"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Карты принимают в крупных магазинах, но ночные рынки и маленькие закусочные просят наличные; EasyCard подходит для транспорта и магазинов у дома.",
+    "tippingCulture": "Чаевых не оставляют; рестораны и отели добавляют 10 % за обслуживание.",
+    "economicPillars": "Экспорт полупроводников и электроники, высокотехнологичное производство, услуги и туризм."
+   }
+  },
+  "itin": {
+   "routeName": "Классический Тайвань: Тайбэй, озеро Солнца и Луны, Алишань и Тайнань",
+   "routeSummary": "8-дневный маршрут от ночных рынков Тайбэя и улочек Цзюфэня к озеру Солнца и Луны, морю облаков Алишаня и Тайнаню — старейшему городу острова.",
+   "totalDays": 8,
+   "idealDurationText": "8-дневный маршрут по Тайваню",
+   "bestSeason": "Октябрь – декабрь и март – май (июль – сентябрь — сезон тайфунов)",
+   "transportMode": "Скоростные поезда (HSR) + местные поезда/автобусы и метро",
+   "paceLevel": "Сбалансированный (город, природа и еда)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Остановка 1: Тайбэй (и Цзюфэнь)",
+     "recommendedDuration": "3 дня (город + выезд)",
+     "durationBadge": "3 дня",
+     "highlights": [
+      "Смотровая площадка Тайбэй 101",
+      "Национальный музей Гугун",
+      "Ночные рынки Шилинь и Жаохэ",
+      "Старые улочки Цзюфэня"
+     ],
+     "activities": [
+      "Посмотрите на Тайбэй 101 с тропы Слоновой горы.",
+      "Выпейте улун в чайном доме Цзюфэня.",
+      "Искупайтесь в горячих источниках Бэйтоу."
+     ],
+     "foodAndDrinks": [
+      "Сяолунбао",
+      "Бабл-ти",
+      "Суп с говядиной и лапшой"
+     ],
+     "criticalTips": [
+      "Не ешьте и не пейте в метро — штраф.",
+      "В выходные в Цзюфэне толпы; приезжайте рано утром."
+     ],
+     "mapsQuery": "Taipei, Taiwan"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Остановка 2: Озеро Солнца и Луны",
+     "recommendedDuration": "1 день (озеро и горы)",
+     "durationBadge": "1 день",
+     "highlights": [
+      "Велодорожка вокруг озера",
+      "Храм Вэньу",
+      "Деревня коренного народа Ита Тао"
+     ],
+     "activities": [
+      "Прокатитесь на велосипеде вдоль берега.",
+      "Поднимитесь на канатной дороге в Formosan Aboriginal Culture Village.",
+      "Переправьтесь между причалами на лодке."
+     ],
+     "foodAndDrinks": [
+      "Озёрная рыба",
+      "Чёрный чай ассам"
+     ],
+     "criticalTips": [
+      "Около 1,5 часа на автобусе от станции HSR Тайчжун.",
+      "В будни спокойнее."
+     ],
+     "mapsQuery": "Sun Moon Lake, Nantou, Taiwan"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Остановка 3: Алишань",
+     "recommendedDuration": "2 дня (лес и горы)",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Лесная железная дорога Алишань",
+      "Рассвет и море облаков с горы Чжушань",
+      "Тропа Священного дерева (гигантские кипарисы)"
+     ],
+     "activities": [
+      "Рано утром поднимитесь на Чжушань встречать рассвет.",
+      "Пройдите по тропе гигантских деревьев.",
+      "Посетите высокогорные чайные плантации."
+     ],
+     "foodAndDrinks": [
+      "Высокогорный улун",
+      "Рис в бамбуке"
+     ],
+     "criticalTips": [
+      "В горах прохладно — возьмите куртку.",
+      "Жильё на выходные бронируйте заранее."
+     ],
+     "mapsQuery": "Alishan National Scenic Area, Taiwan"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Остановка 4: Тайнань",
+     "recommendedDuration": "2 дня (история и еда)",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Форт Аньпин (Зеландия)",
+      "Башня Чикань",
+      "Храм Конфуция",
+      "Улица Шэньнун"
+     ],
+     "activities": [
+      "Прогуляйтесь среди исторических храмов.",
+      "Попробуйте на завтрак говяжий суп.",
+      "Посетите «Дом на дереве» в Аньпине."
+     ],
+     "foodAndDrinks": [
+      "Лапша даньцзай",
+      "Лужоуфань",
+      "Ананасовое печенье"
+     ],
+     "criticalTips": [
+      "По Тайнаню удобно передвигаться на арендованном скутере или велосипеде.",
+      "Летом днём жарко и влажно — пейте больше воды."
+     ],
+     "mapsQuery": "Tainan, Taiwan"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Суп с говядиной и лапшой (нюжоумянь)",
+     "Лужоуфань (рис с тушёным рубленым мясом)",
+     "Сяолунбао (пельмени с бульоном)"
+    ],
+    "drinks": [
+     "Бабл-ти (чай с молоком и шариками тапиоки)",
+     "Высокогорный улун",
+     "Taiwan Beer"
+    ],
+    "streetFoods": [
+     "Вонючий тофу (чоу тофу)",
+     "Гуа бао (тайваньская булочка со свининой)",
+     "Ананасовое печенье (фэнлису)"
+    ],
+    "diningAdvice": "Ночные рынки — самый дешёвый и вкусный вариант; во многих закусочных заказ отмечают на бланке и платят заранее."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Переходник для розеток A/B",
+     "EasyCard",
+     "Дождевик или зонт",
+     "Средство от комаров"
+    ],
+    "safetyAndEtiquette": [
+     "Не ешьте в метро и соблюдайте тишину.",
+     "Не трогайте храмовые алтари и ведите себя уважительно."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "A",
+     "B"
+    ],
+    "voltage": "110V",
+    "frequency": "60Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Розетки типа A/B с двумя плоскими штырями (110 В); турецкие вилки не подходят, нужен переходник. Проверьте, поддерживают ли устройства 110 В."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Водопроводная вода очищается, но из-за старых труб в зданиях пить её некипячёной не рекомендуют; бесплатные кулеры с горячей и холодной водой есть повсюду.",
+    "vaccines": [
+     "Плановые прививки (столбняк-дифтерия, КПК)",
+     "Гепатит A",
+     "Японский энцефалит при долгом пребывании в сельской местности; защита от комаров против денге"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "119"
+   },
+   "tipping": {
+    "custom": "Чаевые не приняты; рестораны и отели добавляют 10 % за обслуживание.",
+    "standardPercent": 0,
+    "rule": "optional",
+    "note": "В такси и на ночных рынках чаевых не ждут."
+   },
+   "taxFree": {
+    "vatRefundPercent": "НДС 5 %; после комиссий возвращается около 4-5 %",
+    "minSpend": "Свыше NT$2000 в одном магазине за один день",
+    "customsNote": "Получите бланк по паспорту в магазинах TRS (Tax Refund Shopping); небольшие суммы возвращают сразу в магазине, остальные — на стойке в аэропорту."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.50 - $1.50",
+    "topCarriers": [
+     "Chunghwa Telecom",
+     "Taiwan Mobile",
+     "FarEasTone"
+    ],
+    "airportSimTrapWarning": "В аэропорту Таоюань стойки Chunghwa, Taiwan Mobile и FarEasTone продают недорогие безлимитные туристические тарифы; это не ловушка, а самый удобный вариант."
+   },
+   "touristScams": [
+    {
+     "title": "Фальшивый монах",
+     "desc": "Фальшивые монахи раздают амулеты и просят пожертвования в туристических местах.",
+     "tip": "Вежливо откажитесь и идите дальше."
+    },
+    {
+     "title": "Цена на ночном рынке",
+     "desc": "Лотки без ценников могут называть туристам завышенную цену.",
+     "tip": "Уточняйте цену заранее или выбирайте лотки с ценниками."
+    },
+    {
+     "title": "Пиратское такси в аэропорту",
+     "desc": "Машины вне официальной очереди просят высокую фиксированную плату.",
+     "tip": "Пользуйтесь официальной очередью такси, аэроэкспрессом MRT или автобусами."
+    }
+   ]
+  }
+ }
+}

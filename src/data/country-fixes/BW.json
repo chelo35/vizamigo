@@ -1,0 +1,1782 @@
+{
+ "tr": {
+  "insights": {
+   "currency": "Botsvana Pulası (BWP)",
+   "plugType": "Tip D, G, M (230V, 50Hz)",
+   "bestMonths": "Mayıs – Ekim (kurak mevsim, en iyi safari; Okavango su baskını Haziran – Ağustos) · Kasım – Nisan yağışlı, yeşil ve kuş gözlemi için ideal",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Güvenli",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Bölgenin en istikrarlı ülkelerindendir. Gaborone ve Francistown'da kapkaç, araçtan eşya çalma ve ev hırsızlığı görülür; safari alanlarında asıl risk vahşi hayvanlar ve gece sürüşüdür.",
+    "commonScams": [
+     "Sosyal medyada çok ucuz Okavango veya Chobe safarisi satan sayfalar ön ödemeyi alıp kaybolabilir.",
+     "Maun'da ucuz mokoro turu öneren lisanssız kişiler güvenlik ekipmanı ve park izni olmadan çıkabilir.",
+     "Alışveriş merkezi dışındaki ATM'lerde kart kopyalama ve “yardım etmek” isteyen yabancılar görülür."
+    ],
+    "safeTravelTips": [
+     "Gece araç kullanmayın; yollarda inek, eşek ve fil gibi hayvanlar çok sık çıkar.",
+     "Çitsiz kamplarda geceleri çadırdan çıkmayın ve rehber talimatlarına uyun.",
+     "Gaborone'da değerli eşyaları araçta görünür bırakmayın."
+    ],
+    "emergencyNumbers": {
+     "police": "999",
+     "ambulance": "997",
+     "general": "999"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Şehir ve kasabalarda 4G; Okavango, Kalahari ve park içlerinde çoğunlukla çekmez",
+    "costPerGbUsd": "1 - 3 $",
+    "esimAvailability": "Orta (uluslararası eSIM'ler çalışır; yerel SIM pasaportla alınır)",
+    "bestCarriers": [
+     "Mascom",
+     "Orange Botswana",
+     "BTC (beMobile)"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Sınırlı (şehirlerarası otobüs ve combi minibüsler; safari bölgelerinde 4x4 veya küçük uçak şart)",
+    "costLevel": "Orta – pahalı (safari transferleri pahalı)",
+    "singleTicketUsd": "Combi 0.50 - 1 $",
+    "dailyPassUsd": "Yok (4x4 kiralama 80 - 150 $/gün)",
+    "popularRideApps": [
+     "Yaygın bir uygulama yok – kayıtlı taksi ve combi"
+    ],
+    "taxiAdvice": "Ruhsatlı taksilerin plakası mavidir; taksimetre yoktur, fiyatı önceden konuşun. Gaborone'da otelden taksi çağırmak en güvenlisidir."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "40 - 70 $",
+    "dailyBudgetMidrangeUsd": "150 - 300 $",
+    "budgetMealUsd": "5 - 10 $",
+    "coffeeUsd": "2 - 3.50 $",
+    "waterBottleUsd": "0.60 - 1.20 $",
+    "hostelDormUsd": "12 - 25 $ (Maun'da kamp/backpacker)",
+    "hotel3StarUsd": "70 - 140 $",
+    "flightCostIndex": "Yüksek (Johannesburg aktarmalı)",
+    "flightTip": "İstanbul'dan Johannesburg'a uçup Airlink veya Air Botswana ile Maun, Kasane ya da Gaborone'a geçin. Lodge safarileri çok pahalıdır; bütçe için kamp safarisi veya kendi 4x4 rotanızı düşünün."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Bir şey sormadan önce mutlaka selam verin: “Dumela rra” (bey) / “Dumela mma” (hanım).",
+     "Bir şey verip alırken sağ eli kullanın, sol elle sağ bileği desteklemek saygı ifadesidir.",
+     "Yaşlılara büyük saygı gösterilir; köylerde önce şefe (kgosi) selam verilir.",
+     "Askerî alanları, devlet binalarını ve izin almadan insanları fotoğraflamayın."
+    ],
+    "festivals": [
+     "Botsvana Günü (30 Eylül, bağımsızlık)",
+     "Kuru Dans Festivali (D'Kar, San kültürü, Ağustos)",
+     "Maun Festivali (Nisan)"
+    ],
+    "lifestyle": "Sığır sahipliğinin statü sayıldığı, köy meclisi kgotla geleneğinin yaşadığı, sakin ve muhafazakâr bir toplum; nüfus az, doğa ise çok geniştir."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Okavango Deltası (UNESCO)",
+     "Moremi Oyun Rezervi",
+     "Chobe Ulusal Parkı ve Chobe Nehri",
+     "Makgadikgadi ve Nxai tuz tavaları",
+     "Tsodilo Tepeleri (San kaya resimleri, UNESCO)",
+     "Orta Kalahari Oyun Rezervi"
+    ],
+    "bestSeasons": "Mayıs – Ekim (kurak mevsim, en iyi safari; Okavango su baskını Haziran – Ağustos) · Kasım – Nisan yağışlı, yeşil ve kuş gözlemi için ideal",
+    "travelStyleTip": "Botsvana “yüksek fiyat – düşük yoğunluk” turizmini benimser; kalabalıksız vahşi doğa için ya lodge paketine yatırım yapın ya da kamp ekipmanlı bir 4x4 ile kendi rotanızı sürün."
+   },
+   "religion": {
+    "primaryReligions": "Hristiyanlık (~%79), geleneksel Badimo inancı (~%4), dinsiz (~%15)",
+    "respectNorms": "Kiliselerde sade giyinin; kutsal kabul edilen Tsodilo Tepeleri gibi yerlerde rehber kurallarına uyun ve kaya resimlerine dokunmayın.",
+    "sacredSites": [
+     "Tsodilo Tepeleri",
+     "Kubu Adası (Lekhubu, Makgadikgadi)",
+     "Kolobeng Misyonu (Livingstone'un misyonu)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "İngilizce resmî dildir; ulusal dil Setswana'dır ve halkın büyük çoğunluğu konuşur. Kalanga, Sekgalagadi ve San dilleri de konuşulur.",
+    "englishProficiency": "İyi; şehirlerde, lodge'larda ve resmî işlerde rahatça İngilizce konuşulur.",
+    "phrases": [
+     {
+      "phrase": "Dumela rra / Dumela mma",
+      "meaning": "Merhaba efendim / hanımefendi",
+      "translation": "Merhaba efendim / hanımefendi",
+      "pronunciation": "du-me-la ra / du-me-la ma"
+     },
+     {
+      "phrase": "O kae?",
+      "meaning": "Nasılsın?",
+      "translation": "Nasılsın?",
+      "pronunciation": "o ka-e"
+     },
+     {
+      "phrase": "Ke teng",
+      "meaning": "İyiyim",
+      "translation": "İyiyim",
+      "pronunciation": "ke teng"
+     },
+     {
+      "phrase": "Ke a leboga",
+      "meaning": "Teşekkür ederim",
+      "translation": "Teşekkür ederim",
+      "pronunciation": "ke a le-bo-kha"
+     },
+     {
+      "phrase": "Ke bokae?",
+      "meaning": "Ne kadar?",
+      "translation": "Ne kadar?",
+      "pronunciation": "ke bo-ka-e"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Bölgenin ilk sakinleri San halkıdır; 19. yüzyılda Tswana şeflikleri güçlendi. 1885'te İngiliz Bechuanaland Himayesi kuruldu; 1895'te üç şef Londra'ya giderek Cecil Rhodes'un şirketine bağlanmayı engelledi. 1966'da Seretse Khama önderliğinde bağımsızlık geldi; bir yıl sonra bulunan elmaslar ülkeyi Afrika'nın en hızlı büyüyen ekonomilerinden biri yaptı.",
+    "milestones": [
+     "1885: Bechuanaland Himayesi",
+     "1966: Bağımsızlık (Seretse Khama)",
+     "1967: Orapa'da elmas keşfi",
+     "2014: Okavango Deltası UNESCO listesinde"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Seswaa (uzun pişirilip dövülmüş sığır eti – milli yemek)",
+     "Pap / bogobe (mısır veya darı lapası) ve morogo (yeşillik)",
+     "Phane (mopane tırtılı, kızartılmış veya soslu)"
+    ],
+    "traditionalDrinks": [
+     "Chibuku (geleneksel darı birası)",
+     "St Louis birası",
+     "Ev yapımı zencefilli içecek (ginger beer)"
+    ],
+    "streetFoodAndDesserts": [
+     "Magwinya (kızarmış hamur topu, “fat cakes”)",
+     "Mangalda pişmiş sığır eti (braai)",
+     "Diphaphatha (tavada pişen yassı ekmek)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Sir Seretse Khama (kurucu cumhurbaşkanı)",
+     "Khama III (Bamangwato şefi)",
+     "Letsile Tebogo (2024 Olimpiyat 200 m şampiyonu)"
+    ],
+    "strongSectors": [
+     "Elmas madenciliği (Debswana, Jwaneng)",
+     "Safari turizmi",
+     "Sığırcılık ve et ihracatı"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Şehirlerde ve lodge'larda kart yaygındır; köylerde ve kamp alanlarında nakit Pula gerekir. Güney Afrika randı bazı sınır kasabalarında kabul edilir.",
+    "tippingCulture": "Bahşiş beklenir. Restoranlarda %10; safari rehberine kişi başı günde 10 - 20 $, kamp personeli için ortak kutuya bırakılır.",
+    "economicPillars": "Elmas, turizm, sığırcılık, bankacılık ve kamu hizmetleri."
+   }
+  },
+  "itin": {
+   "routeName": "Botsvana Vahşi Doğa Rotası: Okavango, Makgadikgadi ve Chobe",
+   "routeSummary": "Maun'dan Okavango Deltası'na mokoro ve Moremi safarisiyle başlayıp Makgadikgadi tuz tavalarından geçen ve Chobe Nehri'nde fil sürüleriyle biten 9 günlük kara rotası.",
+   "totalDays": 9,
+   "idealDurationText": "9 Günlük Rota",
+   "bestSeason": "Mayıs – Ekim (kurak mevsim, en iyi safari; Okavango su baskını Haziran – Ağustos) · Kasım – Nisan yağışlı, yeşil ve kuş gözlemi için ideal",
+   "transportMode": "4x4 kiralık araç veya rehberli safari aracı (Maun – Gweta ~3 sa, Gweta – Kasane ~5 sa); deltaya küçük uçakla giriş seçeneği",
+   "paceLevel": "Dengeli (sabah-akşam safari, öğlen dinlenme)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "1. Durak: Maun ve Okavango Deltası",
+     "recommendedDuration": "4 Gün",
+     "durationBadge": "4 Gün",
+     "highlights": [
+      "Mokoro (kano) ile delta kanalları",
+      "Moremi Oyun Rezervi ve Khwai",
+      "Delta üzerinde manzara uçuşu"
+     ],
+     "activities": [
+      "Bir topluluk rehberiyle mokoro gezisi ve adada yürüyüş safarisi yapın.",
+      "Moremi'de şafakta oyun sürüşüne çıkın (aslan, leopar, yaban köpeği).",
+      "Maun'daki Thamalakane Nehri kıyısında gün batımını izleyin."
+     ],
+     "foodAndDrinks": [
+      "Seswaa ve pap",
+      "Kamp ateşinde braai"
+     ],
+     "criticalTips": [
+      "Moremi kamp yerleri aylar önce dolar; rezervasyonu önceden yapın.",
+      "Mokoro'da ani hareket etmeyin; su aygırı ve timsahlara dikkat."
+     ],
+     "mapsQuery": "Moremi Game Reserve, Botswana"
+    },
+    {
+     "stopNumber": 2,
+     "name": "2. Durak: Makgadikgadi Tuz Tavaları (Gweta)",
+     "recommendedDuration": "2 Gün",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "Habituasyonlu mirket (surikat) grupları",
+      "Ntwetwe tavasında sonsuz beyaz ufuk",
+      "Chapman's Baobab ve Baines' Baobabs (Nxai Pan)"
+     ],
+     "activities": [
+      "Kuru mevsimde quad bisikletle tavaya çıkıp yıldızlar altında uyuyun.",
+      "Sabah erken mirketlerle yürüyüş yapın.",
+      "Yağmur mevsiminde zebra göçünü izleyin (Aralık – Nisan)."
+     ],
+     "foodAndDrinks": [
+      "Lodge'da Kalahari usulü akşam yemeği",
+      "Magwinya"
+     ],
+     "criticalTips": [
+      "Tavaya yalnızca rehberle ve kuru mevsimde girin; ıslak yüzeyde araç saplanır.",
+      "Gece çok soğuk olabilir (Haziran – Ağustos); kalın uyku tulumu getirin."
+     ],
+     "mapsQuery": "Gweta, Botswana"
+    },
+    {
+     "stopNumber": 3,
+     "name": "3. Durak: Kasane ve Chobe Ulusal Parkı",
+     "recommendedDuration": "3 Gün",
+     "durationBadge": "3 Gün",
+     "highlights": [
+      "Chobe Nehri'nde gün batımı tekne safarisi",
+      "Chobe'nin dev fil sürüleri",
+      "Kazungula Köprüsü ve dört ülke kavşağı"
+     ],
+     "activities": [
+      "Nehir kıyısında sabah oyun sürüşü yapın.",
+      "Teknede fil, su aygırı ve timsahları fotoğraflayın.",
+      "İsterseniz günübirlik Victoria Şelalesi'ne (Zimbabve/Zambiya) gidin."
+     ],
+     "foodAndDrinks": [
+      "Chobe nehir balığı (bream)",
+      "St Louis birası"
+     ],
+     "criticalTips": [
+      "Kasane sokaklarında bile fil ve babunlara dikkat edin; yiyecekleri açıkta bırakmayın.",
+      "Victoria Şelalesi gezisi için Zimbabve/Zambiya giriş şartlarını önceden kontrol edin."
+     ],
+     "mapsQuery": "Chobe National Park, Kasane, Botswana"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Seswaa (uzun pişirilip dövülmüş sığır eti – milli yemek)",
+     "Pap / bogobe (mısır veya darı lapası) ve morogo (yeşillik)",
+     "Phane (mopane tırtılı, kızartılmış veya soslu)"
+    ],
+    "drinks": [
+     "Chibuku (geleneksel darı birası)",
+     "St Louis birası",
+     "Ev yapımı zencefilli içecek (ginger beer)"
+    ],
+    "streetFoods": [
+     "Magwinya (kızarmış hamur topu, “fat cakes”)",
+     "Mangalda pişmiş sığır eti (braai)",
+     "Diphaphatha (tavada pişen yassı ekmek)"
+    ],
+    "diningAdvice": "Lodge'larda yemekler genellikle tam pansiyondur; şehirde seswaa ve pap için yerel lokantaları deneyin. Pazarlarda magwinya kahvaltının vazgeçilmezidir."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "D/G/M tipi priz adaptörü",
+     "Haki/bej katmanlı giysi ve dürbün",
+     "Sıtma ilacı (doktor önerisiyle) ve sinek kovucu",
+     "Kış geceleri için kalın polar"
+    ],
+    "safetyAndEtiquette": [
+     "Safaride araçtan inmeyin, rehberin talimatına uyun.",
+     "Selam vermeden soru sormayın.",
+     "Gece araç kullanmayın."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "D",
+     "G",
+     "M"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "İngiliz tipi G (üç dikdörtgen pim) ile eski tip D ve M (üç yuvarlak pim) prizler kullanılır; Türk fişleri için adaptör gerekir."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Şehirlerde şebeke suyu arıtılır, ancak ziyaretçilere şişe su önerilir; kamplarda ve kırsalda mutlaka şişe veya filtrelenmiş su için.",
+    "vaccines": [
+     "Hepatit A ve tifo",
+     "Sıtma önlemi (Okavango, Chobe ve kuzey; Kasım – Mayıs riski yüksek)",
+     "Kuduz (uzun kırsal gezilerde)",
+     "Sarıhumma sertifikası riskli bir ülkeden geliyor veya orada aktarma yapıyorsanız istenir"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "997"
+   },
+   "tipping": {
+    "custom": "Bahşiş beklenir.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Restoranlarda %10; safari rehberine kişi başı günde 10 - 20 $, kamp personeli için ortak kutuya bırakılır."
+   },
+   "taxFree": {
+    "vatRefundPercent": "KDV %14; ihraç edilen mallar için iade sistemi var (BURS)",
+    "minSpend": "BURS'ün güncel alt limitini kontrol edin",
+    "customsNote": "İade, büyük çıkış noktalarında (ör. Gaborone havalimanı) fatura ve mallar gösterilerek BURS'e başvurularak yapılır. Fildişi, hayvan derisi ve av ürünlerinin izinsiz çıkarılması yasaktır."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1 - $3",
+    "topCarriers": [
+     "Mascom",
+     "Orange Botswana",
+     "BTC (beMobile)"
+    ],
+    "airportSimTrapWarning": "Gaborone, Maun ve Kasane havalimanlarında SIM satışı sınırlıdır; şehirdeki Mascom veya Orange mağazası daha ucuzdur. Delta ve parklarda sinyal olmayacağı için çevrimdışı harita indirin."
+   },
+   "touristScams": [
+    {
+     "title": "Sahte safari rezervasyonu",
+     "desc": "Sosyal medyada çok ucuz Okavango veya Chobe safarisi satan sayfalar ön ödemeyi alıp kaybolabilir.",
+     "tip": "HATAB (Botsvana Turizm Birliği) üyesi veya yorumları doğrulanmış operatörlerle çalışın."
+    },
+    {
+     "title": "Lisanssız mokoro rehberi",
+     "desc": "Maun'da ucuz mokoro turu öneren lisanssız kişiler güvenlik ekipmanı ve park izni olmadan çıkabilir.",
+     "tip": "Mokoro turunu topluluk tröstü veya kampınız üzerinden ayarlayın."
+    },
+    {
+     "title": "ATM kart kopyalama",
+     "desc": "Alışveriş merkezi dışındaki ATM'lerde kart kopyalama ve “yardım etmek” isteyen yabancılar görülür.",
+     "tip": "Banka şubesi veya AVM içindeki ATM'leri kullanın, yardım teklifini reddedin."
+    }
+   ]
+  }
+ },
+ "en": {
+  "insights": {
+   "currency": "Botswana Pula (BWP)",
+   "plugType": "Type D, G, M (230V, 50Hz)",
+   "bestMonths": "May – October (dry season, best game viewing; Okavango flood peaks June – August) · November – April rainy, green and ideal for birding",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Safe",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "One of the most stable countries in the region. Gaborone and Francistown see snatch theft, car break-ins and burglaries; in safari areas the main risks are wild animals and night driving.",
+    "commonScams": [
+     "Social-media pages selling very cheap Okavango or Chobe safaris may take the deposit and disappear.",
+     "Unlicensed people in Maun offering cheap mokoro trips may go out without safety gear or park permits.",
+     "Skimming and “helpful” strangers occur at ATMs outside shopping malls."
+    ],
+    "safeTravelTips": [
+     "Don't drive at night; cattle, donkeys and even elephants wander onto roads.",
+     "In unfenced camps never leave your tent at night and follow your guide's instructions.",
+     "In Gaborone, never leave valuables visible in the car."
+    ],
+    "emergencyNumbers": {
+     "police": "999",
+     "ambulance": "997",
+     "general": "999"
+    }
+   },
+   "internet": {
+    "networkCoverage": "4G in cities and towns; mostly no signal inside the Okavango, Kalahari and parks",
+    "costPerGbUsd": "1 - 3 $",
+    "esimAvailability": "Moderate (international eSIMs work; local SIMs require your passport)",
+    "bestCarriers": [
+     "Mascom",
+     "Orange Botswana",
+     "BTC (beMobile)"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Limited (intercity buses and combi minibuses; safari areas need a 4x4 or light aircraft)",
+    "costLevel": "Moderate – expensive (safari transfers are costly)",
+    "singleTicketUsd": "Combi 0.50 - 1 $",
+    "dailyPassUsd": "None (4x4 rental 80 - 150 $/day)",
+    "popularRideApps": [
+     "No widely used app – registered taxis and combis"
+    ],
+    "taxiAdvice": "Licensed taxis have blue number plates; there are no meters, so agree the fare first. In Gaborone, having your hotel call a taxi is safest."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "40 - 70 $",
+    "dailyBudgetMidrangeUsd": "150 - 300 $",
+    "budgetMealUsd": "5 - 10 $",
+    "coffeeUsd": "2 - 3.50 $",
+    "waterBottleUsd": "0.60 - 1.20 $",
+    "hostelDormUsd": "12 - 25 $ (camping/backpackers in Maun)",
+    "hotel3StarUsd": "70 - 140 $",
+    "flightCostIndex": "High (connect via Johannesburg)",
+    "flightTip": "Fly Istanbul to Johannesburg, then Airlink or Air Botswana to Maun, Kasane or Gaborone. Lodge safaris are very expensive; for a budget trip consider camping safaris or a self-drive 4x4."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Always greet before asking anything: “Dumela rra” (sir) / “Dumela mma” (madam).",
+     "Give and receive with the right hand, supporting the right wrist with the left as a sign of respect.",
+     "Elders are deeply respected; in villages the chief (kgosi) is greeted first.",
+     "Don't photograph military sites, government buildings or people without permission."
+    ],
+    "festivals": [
+     "Botswana Day (30 September, independence)",
+     "Kuru Dance Festival (D'Kar, San culture, August)",
+     "Maun Festival (April)"
+    ],
+    "lifestyle": "A calm, conservative society where cattle signify status and the kgotla village assembly is still alive; the population is small and the wilderness vast."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Okavango Delta (UNESCO)",
+     "Moremi Game Reserve",
+     "Chobe National Park and Chobe River",
+     "Makgadikgadi and Nxai salt pans",
+     "Tsodilo Hills (San rock art, UNESCO)",
+     "Central Kalahari Game Reserve"
+    ],
+    "bestSeasons": "May – October (dry season, best game viewing; Okavango flood peaks June – August) · November – April rainy, green and ideal for birding",
+    "travelStyleTip": "Botswana follows a “high value, low volume” model; for crowd-free wilderness either invest in a lodge package or self-drive a fully equipped 4x4 with camping gear."
+   },
+   "religion": {
+    "primaryReligions": "Christianity (~79%), traditional Badimo belief (~4%), no religion (~15%)",
+    "respectNorms": "Dress modestly in churches; at sacred places like the Tsodilo Hills follow the guide's rules and never touch the rock paintings.",
+    "sacredSites": [
+     "Tsodilo Hills",
+     "Kubu Island (Lekhubu, Makgadikgadi)",
+     "Kolobeng Mission (Livingstone's mission)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "English is official; Setswana is the national language, spoken by the vast majority. Kalanga, Sekgalagadi and San languages are also spoken.",
+    "englishProficiency": "Good; English is widely spoken in towns, lodges and official settings.",
+    "phrases": [
+     {
+      "phrase": "Dumela rra / Dumela mma",
+      "meaning": "Hello sir / madam",
+      "translation": "Hello sir / madam",
+      "pronunciation": "du-me-la ra / du-me-la ma"
+     },
+     {
+      "phrase": "O kae?",
+      "meaning": "How are you?",
+      "translation": "How are you?",
+      "pronunciation": "o ka-e"
+     },
+     {
+      "phrase": "Ke teng",
+      "meaning": "I'm fine",
+      "translation": "I'm fine",
+      "pronunciation": "ke teng"
+     },
+     {
+      "phrase": "Ke a leboga",
+      "meaning": "Thank you",
+      "translation": "Thank you",
+      "pronunciation": "ke a le-bo-kha"
+     },
+     {
+      "phrase": "Ke bokae?",
+      "meaning": "How much is it?",
+      "translation": "How much is it?",
+      "pronunciation": "ke bo-ka-e"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "The San were the first inhabitants; Tswana chiefdoms rose in the 19th century. The British Bechuanaland Protectorate was declared in 1885, and in 1895 three chiefs travelled to London to prevent annexation by Cecil Rhodes's company. Independence came in 1966 under Seretse Khama; diamonds found a year later made it one of Africa's fastest-growing economies.",
+    "milestones": [
+     "1885: Bechuanaland Protectorate",
+     "1966: Independence (Seretse Khama)",
+     "1967: Diamonds discovered at Orapa",
+     "2014: Okavango Delta inscribed by UNESCO"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Seswaa (slow-cooked pounded beef – the national dish)",
+     "Pap / bogobe (maize or sorghum porridge) with morogo (wild greens)",
+     "Phane (mopane worms, fried or in sauce)"
+    ],
+    "traditionalDrinks": [
+     "Chibuku (traditional sorghum beer)",
+     "St Louis lager",
+     "Homemade ginger beer"
+    ],
+    "streetFoodAndDesserts": [
+     "Magwinya (fried dough balls, “fat cakes”)",
+     "Barbecued beef (braai)",
+     "Diphaphatha (pan-cooked flatbread)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Sir Seretse Khama (founding president)",
+     "Khama III (Bamangwato chief)",
+     "Letsile Tebogo (2024 Olympic 200 m champion)"
+    ],
+    "strongSectors": [
+     "Diamond mining (Debswana, Jwaneng)",
+     "Safari tourism",
+     "Cattle ranching and beef exports"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Cards are common in towns and lodges; villages and campsites need cash pula. South African rand is accepted in some border towns.",
+    "tippingCulture": "Tipping is expected. 10% in restaurants; 10 - 20 $ per person per day for safari guides, plus the staff tip box at camps.",
+    "economicPillars": "Diamonds, tourism, cattle, banking and public services."
+   }
+  },
+  "itin": {
+   "routeName": "Wild Botswana: Okavango, Makgadikgadi & Chobe",
+   "routeSummary": "A 9-day overland route from Maun into the Okavango Delta by mokoro and Moremi game drives, across the Makgadikgadi salt pans and ending with elephant herds on the Chobe River.",
+   "totalDays": 9,
+   "idealDurationText": "9-Day Itinerary",
+   "bestSeason": "May – October (dry season, best game viewing; Okavango flood peaks June – August) · November – April rainy, green and ideal for birding",
+   "transportMode": "Rental 4x4 or guided safari vehicle (Maun – Gweta ~3 h, Gweta – Kasane ~5 h); optional light-aircraft hop into the delta",
+   "paceLevel": "Balanced (dawn and dusk game drives, midday rest)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stop 1: Maun & Okavango Delta",
+     "recommendedDuration": "4 Days",
+     "durationBadge": "4 Days",
+     "highlights": [
+      "Delta channels by mokoro (dugout canoe)",
+      "Moremi Game Reserve and Khwai",
+      "Scenic flight over the delta"
+     ],
+     "activities": [
+      "Take a mokoro trip and island walking safari with a community poler.",
+      "Do a dawn game drive in Moremi (lion, leopard, wild dog).",
+      "Watch sunset on the Thamalakane River in Maun."
+     ],
+     "foodAndDrinks": [
+      "Seswaa with pap",
+      "Campfire braai"
+     ],
+     "criticalTips": [
+      "Moremi campsites book out months ahead; reserve early.",
+      "Sit still in the mokoro; watch out for hippos and crocodiles."
+     ],
+     "mapsQuery": "Moremi Game Reserve, Botswana"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stop 2: Makgadikgadi Salt Pans (Gweta)",
+     "recommendedDuration": "2 Days",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "Habituated meerkat colonies",
+      "Endless white horizon on Ntwetwe Pan",
+      "Chapman's Baobab area and Baines' Baobabs (Nxai Pan)"
+     ],
+     "activities": [
+      "In the dry season ride a quad onto the pan and sleep under the stars.",
+      "Spend an early morning with the meerkats.",
+      "In the rainy season watch the zebra migration (December – April)."
+     ],
+     "foodAndDrinks": [
+      "Kalahari-style dinner at the lodge",
+      "Magwinya"
+     ],
+     "criticalTips": [
+      "Only drive onto the pans with a guide and in the dry season; vehicles sink in wet crust.",
+      "Nights can be freezing (June – August); bring a warm sleeping bag."
+     ],
+     "mapsQuery": "Gweta, Botswana"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stop 3: Kasane & Chobe National Park",
+     "recommendedDuration": "3 Days",
+     "durationBadge": "3 Days",
+     "highlights": [
+      "Sunset boat safari on the Chobe River",
+      "Chobe's huge elephant herds",
+      "Kazungula Bridge and the four-country meeting point"
+     ],
+     "activities": [
+      "Do a morning game drive along the riverfront.",
+      "Photograph elephants, hippos and crocodiles from a boat.",
+      "Optionally do a day trip to Victoria Falls (Zimbabwe/Zambia)."
+     ],
+     "foodAndDrinks": [
+      "Chobe river bream",
+      "St Louis lager"
+     ],
+     "criticalTips": [
+      "Watch for elephants and baboons even in Kasane town; never leave food out.",
+      "Check Zimbabwe/Zambia entry requirements in advance for a Victoria Falls trip."
+     ],
+     "mapsQuery": "Chobe National Park, Kasane, Botswana"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Seswaa (slow-cooked pounded beef – the national dish)",
+     "Pap / bogobe (maize or sorghum porridge) with morogo (wild greens)",
+     "Phane (mopane worms, fried or in sauce)"
+    ],
+    "drinks": [
+     "Chibuku (traditional sorghum beer)",
+     "St Louis lager",
+     "Homemade ginger beer"
+    ],
+    "streetFoods": [
+     "Magwinya (fried dough balls, “fat cakes”)",
+     "Barbecued beef (braai)",
+     "Diphaphatha (pan-cooked flatbread)"
+    ],
+    "diningAdvice": "Lodges are usually full board; in town try local eateries for seswaa and pap. Market magwinya are a breakfast staple."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Type D/G/M plug adapter",
+     "Khaki/beige layers and binoculars",
+     "Malaria tablets (on medical advice) and insect repellent",
+     "A warm fleece for winter nights"
+    ],
+    "safetyAndEtiquette": [
+     "Stay in the vehicle on safari and follow your guide.",
+     "Don't ask a question without greeting first.",
+     "Don't drive at night."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "D",
+     "G",
+     "M"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "British Type G (three rectangular pins) plus older Type D and M (three round pins) sockets are used; European plugs need an adapter."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Town water is treated, but visitors are advised to drink bottled water; in camps and rural areas always use bottled or filtered water.",
+    "vaccines": [
+     "Hepatitis A and typhoid",
+     "Malaria prevention (Okavango, Chobe and the north; higher risk November – May)",
+     "Rabies (for long rural trips)",
+     "Yellow fever certificate required if arriving from or transiting a risk country"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "997"
+   },
+   "tipping": {
+    "custom": "Tipping is expected.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "10% in restaurants; 10 - 20 $ per person per day for safari guides, plus the staff tip box at camps."
+   },
+   "taxFree": {
+    "vatRefundPercent": "VAT 14%; refund scheme for exported goods (BURS)",
+    "minSpend": "Check BURS for the current minimum",
+    "customsNote": "Refunds are claimed from BURS at major exit points (e.g. Gaborone airport) by showing invoices and goods. Exporting ivory, skins and hunting trophies without permits is prohibited."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1 - $3",
+    "topCarriers": [
+     "Mascom",
+     "Orange Botswana",
+     "BTC (beMobile)"
+    ],
+    "airportSimTrapWarning": "SIM sales at Gaborone, Maun and Kasane airports are limited; Mascom or Orange shops in town are cheaper. Download offline maps, as there's no signal in the delta and parks."
+   },
+   "touristScams": [
+    {
+     "title": "Fake safari booking",
+     "desc": "Social-media pages selling very cheap Okavango or Chobe safaris may take the deposit and disappear.",
+     "tip": "Use HATAB members or operators with verified reviews."
+    },
+    {
+     "title": "Unlicensed mokoro poler",
+     "desc": "Unlicensed people in Maun offering cheap mokoro trips may go out without safety gear or park permits.",
+     "tip": "Book mokoro trips through a community trust or your camp."
+    },
+    {
+     "title": "ATM card skimming",
+     "desc": "Skimming and “helpful” strangers occur at ATMs outside shopping malls.",
+     "tip": "Use ATMs inside banks or malls and refuse offers of help."
+    }
+   ]
+  }
+ },
+ "de": {
+  "insights": {
+   "currency": "Botswanischer Pula (BWP)",
+   "plugType": "Typ D, G, M (230V, 50Hz)",
+   "bestMonths": "Mai – Oktober (Trockenzeit, beste Tierbeobachtung; Okavango-Flut Juni – August) · November – April Regenzeit, grün und ideal für Vogelbeobachtung",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Sicher",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Eines der stabilsten Länder der Region. In Gaborone und Francistown gibt es Taschendiebstahl, Autoaufbrüche und Einbrüche; in Safarigebieten sind Wildtiere und Nachtfahrten das Hauptrisiko.",
+    "commonScams": [
+     "Social-Media-Seiten mit sehr billigen Okavango- oder Chobe-Safaris kassieren mitunter die Anzahlung und verschwinden.",
+     "Nicht lizenzierte Anbieter in Maun bieten billige Mokoro-Touren ohne Sicherheitsausrüstung oder Parkgenehmigung an.",
+     "An Geldautomaten außerhalb von Einkaufszentren gibt es Skimming und „hilfsbereite“ Fremde."
+    ],
+    "safeTravelTips": [
+     "Nachts nicht fahren; Rinder, Esel und sogar Elefanten laufen auf die Straße.",
+     "In ungezäunten Camps nachts nie das Zelt verlassen und den Anweisungen des Guides folgen.",
+     "In Gaborone keine Wertsachen sichtbar im Auto lassen."
+    ],
+    "emergencyNumbers": {
+     "police": "999",
+     "ambulance": "997",
+     "general": "999"
+    }
+   },
+   "internet": {
+    "networkCoverage": "4G in Städten und Orten; im Okavango, in der Kalahari und in Parks meist kein Netz",
+    "costPerGbUsd": "1 - 3 $",
+    "esimAvailability": "Mittel (internationale eSIMs funktionieren; lokale SIM mit Pass)",
+    "bestCarriers": [
+     "Mascom",
+     "Orange Botswana",
+     "BTC (beMobile)"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Begrenzt (Überlandbusse und Combi-Minibusse; Safarigebiete nur per 4x4 oder Kleinflugzeug)",
+    "costLevel": "Mittel – teuer (Safari-Transfers sind teuer)",
+    "singleTicketUsd": "Combi 0,50 - 1 $",
+    "dailyPassUsd": "Keiner (4x4-Miete 80 - 150 $/Tag)",
+    "popularRideApps": [
+     "Keine verbreitete App – registrierte Taxis und Combis"
+    ],
+    "taxiAdvice": "Lizenzierte Taxis haben blaue Kennzeichen; Taxameter gibt es nicht, den Preis vorher vereinbaren. In Gaborone am sichersten ein Taxi über das Hotel rufen."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "40 - 70 $",
+    "dailyBudgetMidrangeUsd": "150 - 300 $",
+    "budgetMealUsd": "5 - 10 $",
+    "coffeeUsd": "2 - 3.50 $",
+    "waterBottleUsd": "0.60 - 1.20 $",
+    "hostelDormUsd": "12 - 25 $ (Camping/Backpacker in Maun)",
+    "hotel3StarUsd": "70 - 140 $",
+    "flightCostIndex": "Hoch (Umstieg in Johannesburg)",
+    "flightTip": "Von Istanbul nach Johannesburg fliegen, dann mit Airlink oder Air Botswana nach Maun, Kasane oder Gaborone. Lodge-Safaris sind sehr teuer; günstiger sind Camping-Safaris oder ein eigener 4x4."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Vor jeder Frage grüßen: „Dumela rra“ (Herr) / „Dumela mma“ (Frau).",
+     "Mit der rechten Hand geben und nehmen, die linke stützt respektvoll das rechte Handgelenk.",
+     "Ältere werden sehr respektiert; in Dörfern grüßt man zuerst den Häuptling (Kgosi).",
+     "Militäranlagen, Regierungsgebäude und Menschen nicht ohne Erlaubnis fotografieren."
+    ],
+    "festivals": [
+     "Botswana Day (30. September, Unabhängigkeit)",
+     "Kuru Dance Festival (D'Kar, San-Kultur, August)",
+     "Maun Festival (April)"
+    ],
+    "lifestyle": "Eine ruhige, konservative Gesellschaft, in der Rinder Status bedeuten und die Dorfversammlung Kgotla lebendig ist; wenige Menschen, riesige Wildnis."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Okavango-Delta (UNESCO)",
+     "Moremi Game Reserve",
+     "Chobe-Nationalpark und Chobe-Fluss",
+     "Salzpfannen Makgadikgadi und Nxai",
+     "Tsodilo Hills (San-Felsmalereien, UNESCO)",
+     "Central Kalahari Game Reserve"
+    ],
+    "bestSeasons": "Mai – Oktober (Trockenzeit, beste Tierbeobachtung; Okavango-Flut Juni – August) · November – April Regenzeit, grün und ideal für Vogelbeobachtung",
+    "travelStyleTip": "Botswana setzt auf „hochwertig, geringe Besucherzahl“; für menschenleere Wildnis entweder ein Lodge-Paket buchen oder selbst mit voll ausgestattetem Camping-4x4 fahren."
+   },
+   "religion": {
+    "primaryReligions": "Christentum (~79 %), traditioneller Badimo-Glaube (~4 %), konfessionslos (~15 %)",
+    "respectNorms": "In Kirchen dezent kleiden; an heiligen Orten wie den Tsodilo Hills die Regeln des Guides befolgen und Felsbilder nicht berühren.",
+    "sacredSites": [
+     "Tsodilo Hills",
+     "Kubu Island (Lekhubu, Makgadikgadi)",
+     "Kolobeng-Mission (Livingstones Missionsstation)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Englisch ist Amtssprache; Setswana ist Nationalsprache und wird von der großen Mehrheit gesprochen. Auch Kalanga, Sekgalagadi und San-Sprachen sind verbreitet.",
+    "englishProficiency": "Gut; in Städten, Lodges und Behörden wird Englisch problemlos gesprochen.",
+    "phrases": [
+     {
+      "phrase": "Dumela rra / Dumela mma",
+      "meaning": "Hallo, mein Herr / meine Dame",
+      "translation": "Hallo, mein Herr / meine Dame",
+      "pronunciation": "du-me-la ra / du-me-la ma"
+     },
+     {
+      "phrase": "O kae?",
+      "meaning": "Wie geht's?",
+      "translation": "Wie geht's?",
+      "pronunciation": "o ka-e"
+     },
+     {
+      "phrase": "Ke teng",
+      "meaning": "Mir geht's gut",
+      "translation": "Mir geht's gut",
+      "pronunciation": "ke teng"
+     },
+     {
+      "phrase": "Ke a leboga",
+      "meaning": "Danke",
+      "translation": "Danke",
+      "pronunciation": "ke a le-bo-kha"
+     },
+     {
+      "phrase": "Ke bokae?",
+      "meaning": "Wie viel kostet das?",
+      "translation": "Wie viel kostet das?",
+      "pronunciation": "ke bo-ka-e"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Die San waren die ersten Bewohner; im 19. Jahrhundert erstarkten die Tswana-Häuptlingstümer. 1885 wurde das britische Protektorat Betschuanaland errichtet, 1895 reisten drei Häuptlinge nach London und verhinderten die Übernahme durch Cecil Rhodes' Gesellschaft. 1966 folgte unter Seretse Khama die Unabhängigkeit; ein Jahr später entdeckte Diamanten machten das Land zu einer der am schnellsten wachsenden Volkswirtschaften Afrikas.",
+    "milestones": [
+     "1885: Protektorat Betschuanaland",
+     "1966: Unabhängigkeit (Seretse Khama)",
+     "1967: Diamantenfund in Orapa",
+     "2014: Okavango-Delta wird UNESCO-Welterbe"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Seswaa (lange gegartes, gestampftes Rindfleisch – Nationalgericht)",
+     "Pap / Bogobe (Mais- oder Hirsebrei) mit Morogo (Wildgemüse)",
+     "Phane (Mopane-Raupen, frittiert oder in Soße)"
+    ],
+    "traditionalDrinks": [
+     "Chibuku (traditionelles Hirsebier)",
+     "St-Louis-Bier",
+     "Hausgemachtes Ginger Beer"
+    ],
+    "streetFoodAndDesserts": [
+     "Magwinya (frittierte Teigbällchen, „Fat Cakes“)",
+     "Gegrilltes Rindfleisch (Braai)",
+     "Diphaphatha (in der Pfanne gebackenes Fladenbrot)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Sir Seretse Khama (Gründungspräsident)",
+     "Khama III. (Häuptling der Bamangwato)",
+     "Letsile Tebogo (Olympiasieger 2024 über 200 m)"
+    ],
+    "strongSectors": [
+     "Diamantenabbau (Debswana, Jwaneng)",
+     "Safaritourismus",
+     "Rinderzucht und Rindfleischexport"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Karten sind in Städten und Lodges üblich; Dörfer und Campingplätze verlangen Bargeld in Pula. Südafrikanische Rand werden in manchen Grenzorten akzeptiert.",
+    "tippingCulture": "Trinkgeld wird erwartet. 10 % im Restaurant; 10 - 20 $ pro Person und Tag für Safari-Guides, dazu die Trinkgeldbox fürs Camp-Personal.",
+    "economicPillars": "Diamanten, Tourismus, Rinderzucht, Banken und öffentlicher Dienst."
+   }
+  },
+  "itin": {
+   "routeName": "Wildes Botswana: Okavango, Makgadikgadi & Chobe",
+   "routeSummary": "Eine 9-tägige Überlandroute von Maun ins Okavango-Delta per Mokoro und Pirschfahrten in Moremi, über die Makgadikgadi-Salzpfannen bis zu den Elefantenherden am Chobe.",
+   "totalDays": 9,
+   "idealDurationText": "9-tägige Route",
+   "bestSeason": "Mai – Oktober (Trockenzeit, beste Tierbeobachtung; Okavango-Flut Juni – August) · November – April Regenzeit, grün und ideal für Vogelbeobachtung",
+   "transportMode": "Miet-4x4 oder geführtes Safarifahrzeug (Maun – Gweta ~3 Std., Gweta – Kasane ~5 Std.); optional Kleinflugzeug ins Delta",
+   "paceLevel": "Ausgewogen (Pirschfahrten morgens und abends, Mittagsruhe)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stopp 1: Maun & Okavango-Delta",
+     "recommendedDuration": "4 Tage",
+     "durationBadge": "4 Tage",
+     "highlights": [
+      "Deltakanäle im Mokoro (Einbaum)",
+      "Moremi Game Reserve und Khwai",
+      "Rundflug über das Delta"
+     ],
+     "activities": [
+      "Mit einem Community-Führer Mokoro fahren und auf einer Insel zu Fuß pirschen.",
+      "Im Morgengrauen in Moremi auf Pirsch (Löwe, Leopard, Wildhund).",
+      "Den Sonnenuntergang am Thamalakane in Maun genießen."
+     ],
+     "foodAndDrinks": [
+      "Seswaa mit Pap",
+      "Braai am Lagerfeuer"
+     ],
+     "criticalTips": [
+      "Die Campingplätze in Moremi sind Monate im Voraus ausgebucht; früh reservieren.",
+      "Im Mokoro ruhig sitzen; Vorsicht vor Flusspferden und Krokodilen."
+     ],
+     "mapsQuery": "Moremi Game Reserve, Botswana"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stopp 2: Makgadikgadi-Salzpfannen (Gweta)",
+     "recommendedDuration": "2 Tage",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "Habituierte Erdmännchen-Kolonien",
+      "Endloser weißer Horizont auf der Ntwetwe-Pfanne",
+      "Chapman's Baobab und Baines' Baobabs (Nxai Pan)"
+     ],
+     "activities": [
+      "In der Trockenzeit mit dem Quad auf die Pfanne fahren und unter Sternen schlafen.",
+      "Früh am Morgen Zeit mit den Erdmännchen verbringen.",
+      "In der Regenzeit die Zebrawanderung beobachten (Dezember – April)."
+     ],
+     "foodAndDrinks": [
+      "Abendessen im Kalahari-Stil in der Lodge",
+      "Magwinya"
+     ],
+     "criticalTips": [
+      "Nur mit Guide und in der Trockenzeit auf die Pfannen fahren; auf nasser Kruste sinken Fahrzeuge ein.",
+      "Die Nächte können eisig sein (Juni – August); warmen Schlafsack mitnehmen."
+     ],
+     "mapsQuery": "Gweta, Botswana"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stopp 3: Kasane & Chobe-Nationalpark",
+     "recommendedDuration": "3 Tage",
+     "durationBadge": "3 Tage",
+     "highlights": [
+      "Bootssafari bei Sonnenuntergang auf dem Chobe",
+      "Chobes riesige Elefantenherden",
+      "Kazungula-Brücke und Vierländereck"
+     ],
+     "activities": [
+      "Morgens eine Pirschfahrt am Flussufer machen.",
+      "Vom Boot aus Elefanten, Flusspferde und Krokodile fotografieren.",
+      "Optional ein Tagesausflug zu den Victoriafällen (Simbabwe/Sambia)."
+     ],
+     "foodAndDrinks": [
+      "Brasse aus dem Chobe",
+      "St-Louis-Bier"
+     ],
+     "criticalTips": [
+      "Selbst im Ort Kasane auf Elefanten und Paviane achten; kein Essen offen liegen lassen.",
+      "Für die Victoriafälle die Einreisebestimmungen von Simbabwe/Sambia vorab prüfen."
+     ],
+     "mapsQuery": "Chobe National Park, Kasane, Botswana"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Seswaa (lange gegartes, gestampftes Rindfleisch – Nationalgericht)",
+     "Pap / Bogobe (Mais- oder Hirsebrei) mit Morogo (Wildgemüse)",
+     "Phane (Mopane-Raupen, frittiert oder in Soße)"
+    ],
+    "drinks": [
+     "Chibuku (traditionelles Hirsebier)",
+     "St-Louis-Bier",
+     "Hausgemachtes Ginger Beer"
+    ],
+    "streetFoods": [
+     "Magwinya (frittierte Teigbällchen, „Fat Cakes“)",
+     "Gegrilltes Rindfleisch (Braai)",
+     "Diphaphatha (in der Pfanne gebackenes Fladenbrot)"
+    ],
+    "diningAdvice": "Lodges sind meist Vollpension; in der Stadt lokale Imbisse für Seswaa und Pap probieren. Magwinya vom Markt gehören zum Frühstück."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Steckdosenadapter Typ D/G/M",
+     "Khaki/beige Kleidung im Zwiebellook und Fernglas",
+     "Malariatabletten (nach ärztlichem Rat) und Mückenschutz",
+     "Warmes Fleece für Winternächte"
+    ],
+    "safetyAndEtiquette": [
+     "Auf Safari im Fahrzeug bleiben und dem Guide folgen.",
+     "Nie ohne Gruß eine Frage stellen.",
+     "Nachts nicht fahren."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "D",
+     "G",
+     "M"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Es gibt britische Steckdosen Typ G (drei rechteckige Stifte) sowie ältere Typ D und M (drei runde Stifte); europäische Stecker brauchen einen Adapter."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Leitungswasser in Städten ist aufbereitet, Besuchern wird dennoch Flaschenwasser empfohlen; in Camps und auf dem Land nur abgefülltes oder gefiltertes Wasser trinken.",
+    "vaccines": [
+     "Hepatitis A und Typhus",
+     "Malariaprophylaxe (Okavango, Chobe und Norden; höheres Risiko November – Mai)",
+     "Tollwut (bei längeren Reisen aufs Land)",
+     "Gelbfieber-Nachweis bei Einreise aus oder Transit durch ein Risikoland"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "997"
+   },
+   "tipping": {
+    "custom": "Trinkgeld wird erwartet.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "10 % im Restaurant; 10 - 20 $ pro Person und Tag für Safari-Guides, dazu die Trinkgeldbox fürs Camp-Personal."
+   },
+   "taxFree": {
+    "vatRefundPercent": "MwSt. 14 %; Erstattungssystem für ausgeführte Waren (BURS)",
+    "minSpend": "Aktuellen Mindestbetrag bei BURS prüfen",
+    "customsNote": "Erstattungen werden an großen Ausreisepunkten (z. B. Flughafen Gaborone) bei BURS gegen Rechnung und Ware beantragt. Die Ausfuhr von Elfenbein, Fellen und Jagdtrophäen ohne Genehmigung ist verboten."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1 - $3",
+    "topCarriers": [
+     "Mascom",
+     "Orange Botswana",
+     "BTC (beMobile)"
+    ],
+    "airportSimTrapWarning": "SIM-Verkauf an den Flughäfen Gaborone, Maun und Kasane ist begrenzt; Mascom- oder Orange-Läden in der Stadt sind günstiger. Offline-Karten laden, im Delta und in Parks gibt es kein Netz."
+   },
+   "touristScams": [
+    {
+     "title": "Gefälschte Safaribuchung",
+     "desc": "Social-Media-Seiten mit sehr billigen Okavango- oder Chobe-Safaris kassieren mitunter die Anzahlung und verschwinden.",
+     "tip": "HATAB-Mitglieder oder Anbieter mit geprüften Bewertungen wählen."
+    },
+    {
+     "title": "Nicht lizenzierter Mokoro-Führer",
+     "desc": "Nicht lizenzierte Anbieter in Maun bieten billige Mokoro-Touren ohne Sicherheitsausrüstung oder Parkgenehmigung an.",
+     "tip": "Mokoro-Touren über einen Community Trust oder das Camp buchen."
+    },
+    {
+     "title": "Skimming am Geldautomaten",
+     "desc": "An Geldautomaten außerhalb von Einkaufszentren gibt es Skimming und „hilfsbereite“ Fremde.",
+     "tip": "Geldautomaten in Banken oder Malls nutzen und Hilfe ablehnen."
+    }
+   ]
+  }
+ },
+ "es": {
+  "insights": {
+   "currency": "Pula de Botsuana (BWP)",
+   "plugType": "Tipo D, G, M (230V, 50Hz)",
+   "bestMonths": "Mayo – octubre (estación seca, mejor safari; crecida del Okavango junio – agosto) · noviembre – abril lluvioso, verde e ideal para aves",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Uno de los países más estables de la región. En Gaborone y Francistown hay tirones, robos en coches y en viviendas; en zonas de safari los riesgos son los animales salvajes y conducir de noche.",
+    "commonScams": [
+     "Páginas en redes sociales con safaris muy baratos al Okavango o Chobe pueden quedarse con el depósito y desaparecer.",
+     "En Maun hay personas sin licencia que ofrecen mokoro barato sin equipo de seguridad ni permisos.",
+     "En cajeros fuera de centros comerciales hay clonación y desconocidos que “ayudan”."
+    ],
+    "safeTravelTips": [
+     "No conduzca de noche; vacas, burros e incluso elefantes cruzan la carretera.",
+     "En campamentos sin vallas no salga de la tienda de noche y siga al guía.",
+     "En Gaborone no deje objetos de valor a la vista en el coche."
+    ],
+    "emergencyNumbers": {
+     "police": "999",
+     "ambulance": "997",
+     "general": "999"
+    }
+   },
+   "internet": {
+    "networkCoverage": "4G en ciudades y pueblos; casi sin señal en el Okavango, el Kalahari y los parques",
+    "costPerGbUsd": "1 - 3 $",
+    "esimAvailability": "Media (las eSIM internacionales funcionan; la SIM local requiere pasaporte)",
+    "bestCarriers": [
+     "Mascom",
+     "Orange Botswana",
+     "BTC (beMobile)"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Limitado (autobuses y minibuses combi; las zonas de safari requieren 4x4 o avioneta)",
+    "costLevel": "Moderado – caro (los traslados de safari son costosos)",
+    "singleTicketUsd": "Combi 0,50 - 1 $",
+    "dailyPassUsd": "No existe (alquiler 4x4 80 - 150 $/día)",
+    "popularRideApps": [
+     "Sin app extendida – taxis registrados y combis"
+    ],
+    "taxiAdvice": "Los taxis con licencia llevan matrícula azul; no hay taxímetro, acuerde el precio. En Gaborone lo más seguro es pedirlo en el hotel."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "40 - 70 $",
+    "dailyBudgetMidrangeUsd": "150 - 300 $",
+    "budgetMealUsd": "5 - 10 $",
+    "coffeeUsd": "2 - 3.50 $",
+    "waterBottleUsd": "0.60 - 1.20 $",
+    "hostelDormUsd": "12 - 25 $ (camping/mochileros en Maun)",
+    "hotel3StarUsd": "70 - 140 $",
+    "flightCostIndex": "Alto (escala en Johannesburgo)",
+    "flightTip": "Vuele de Estambul a Johannesburgo y luego con Airlink o Air Botswana a Maun, Kasane o Gaborone. Los safaris en lodge son muy caros; con poco presupuesto, safari de camping o 4x4 propio."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Salude siempre antes de preguntar: “Dumela rra” (señor) / “Dumela mma” (señora).",
+     "Dé y reciba con la mano derecha, apoyando la muñeca con la izquierda en señal de respeto.",
+     "Se respeta mucho a los mayores; en los pueblos se saluda primero al jefe (kgosi).",
+     "No fotografíe instalaciones militares, edificios oficiales ni personas sin permiso."
+    ],
+    "festivals": [
+     "Día de Botsuana (30 de septiembre, independencia)",
+     "Festival de Danza Kuru (D'Kar, cultura san, agosto)",
+     "Festival de Maun (abril)"
+    ],
+    "lifestyle": "Una sociedad tranquila y conservadora donde el ganado es estatus y la asamblea kgotla sigue viva; poca población y naturaleza inmensa."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Delta del Okavango (UNESCO)",
+     "Reserva de Moremi",
+     "Parque Nacional de Chobe y río Chobe",
+     "Salares de Makgadikgadi y Nxai",
+     "Colinas de Tsodilo (arte rupestre san, UNESCO)",
+     "Reserva del Kalahari Central"
+    ],
+    "bestSeasons": "Mayo – octubre (estación seca, mejor safari; crecida del Okavango junio – agosto) · noviembre – abril lluvioso, verde e ideal para aves",
+    "travelStyleTip": "Botsuana apuesta por el turismo de “alto valor y bajo volumen”; para naturaleza sin multitudes invierta en un lodge o conduzca un 4x4 equipado para acampar."
+   },
+   "religion": {
+    "primaryReligions": "Cristianismo (~79 %), creencia tradicional badimo (~4 %), sin religión (~15 %)",
+    "respectNorms": "Vista con sobriedad en las iglesias; en lugares sagrados como Tsodilo siga las normas del guía y no toque las pinturas.",
+    "sacredSites": [
+     "Colinas de Tsodilo",
+     "Isla Kubu (Lekhubu, Makgadikgadi)",
+     "Misión de Kolobeng (misión de Livingstone)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "El inglés es oficial; el setsuana es la lengua nacional y lo habla la gran mayoría. También se hablan kalanga, sekgalagadi y lenguas san.",
+    "englishProficiency": "Bueno; el inglés se habla sin problema en ciudades, lodges y trámites.",
+    "phrases": [
+     {
+      "phrase": "Dumela rra / Dumela mma",
+      "meaning": "Hola, señor / señora",
+      "translation": "Hola, señor / señora",
+      "pronunciation": "du-me-la ra / du-me-la ma"
+     },
+     {
+      "phrase": "O kae?",
+      "meaning": "¿Cómo estás?",
+      "translation": "¿Cómo estás?",
+      "pronunciation": "o ka-e"
+     },
+     {
+      "phrase": "Ke teng",
+      "meaning": "Estoy bien",
+      "translation": "Estoy bien",
+      "pronunciation": "ke teng"
+     },
+     {
+      "phrase": "Ke a leboga",
+      "meaning": "Gracias",
+      "translation": "Gracias",
+      "pronunciation": "ke a le-bo-kha"
+     },
+     {
+      "phrase": "Ke bokae?",
+      "meaning": "¿Cuánto cuesta?",
+      "translation": "¿Cuánto cuesta?",
+      "pronunciation": "ke bo-ka-e"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Los san fueron los primeros habitantes; en el siglo XIX surgieron las jefaturas tswana. En 1885 se creó el Protectorado británico de Bechuanalandia y en 1895 tres jefes viajaron a Londres para evitar la anexión por la compañía de Cecil Rhodes. La independencia llegó en 1966 con Seretse Khama; los diamantes hallados un año después la convirtieron en una de las economías de mayor crecimiento de África.",
+    "milestones": [
+     "1885: Protectorado de Bechuanalandia",
+     "1966: Independencia (Seretse Khama)",
+     "1967: Descubrimiento de diamantes en Orapa",
+     "2014: El Delta del Okavango entra en la UNESCO"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Seswaa (carne de res cocida y machacada, plato nacional)",
+     "Pap / bogobe (gacha de maíz o sorgo) con morogo (verduras silvestres)",
+     "Phane (orugas de mopane, fritas o en salsa)"
+    ],
+    "traditionalDrinks": [
+     "Chibuku (cerveza tradicional de sorgo)",
+     "Cerveza St Louis",
+     "Ginger beer casero"
+    ],
+    "streetFoodAndDesserts": [
+     "Magwinya (bolas de masa frita, “fat cakes”)",
+     "Carne de res a la parrilla (braai)",
+     "Diphaphatha (pan plano a la sartén)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Sir Seretse Khama (presidente fundador)",
+     "Khama III (jefe bamangwato)",
+     "Letsile Tebogo (campeón olímpico de 200 m en 2024)"
+    ],
+    "strongSectors": [
+     "Minería de diamantes (Debswana, Jwaneng)",
+     "Turismo de safari",
+     "Ganadería y exportación de carne"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Las tarjetas son habituales en ciudades y lodges; en pueblos y campings hace falta pula en efectivo. El rand sudafricano se acepta en algunas localidades fronterizas.",
+    "tippingCulture": "Se espera propina. 10 % en restaurantes; 10 - 20 $ por persona y día al guía de safari, más la caja común del campamento.",
+    "economicPillars": "Diamantes, turismo, ganadería, banca y servicios públicos."
+   }
+  },
+  "itin": {
+   "routeName": "Botsuana salvaje: Okavango, Makgadikgadi y Chobe",
+   "routeSummary": "Ruta terrestre de 9 días desde Maun al Delta del Okavango en mokoro y safaris en Moremi, cruzando los salares de Makgadikgadi y terminando con manadas de elefantes en el río Chobe.",
+   "totalDays": 9,
+   "idealDurationText": "Ruta de 9 días",
+   "bestSeason": "Mayo – octubre (estación seca, mejor safari; crecida del Okavango junio – agosto) · noviembre – abril lluvioso, verde e ideal para aves",
+   "transportMode": "4x4 de alquiler o vehículo de safari con guía (Maun – Gweta ~3 h, Gweta – Kasane ~5 h); opcional avioneta al delta",
+   "paceLevel": "Equilibrado (safaris al amanecer y atardecer, descanso al mediodía)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Maun y Delta del Okavango",
+     "recommendedDuration": "4 días",
+     "durationBadge": "4 días",
+     "highlights": [
+      "Canales del delta en mokoro (canoa)",
+      "Reserva de Moremi y Khwai",
+      "Vuelo panorámico sobre el delta"
+     ],
+     "activities": [
+      "Haga un paseo en mokoro y un safari a pie en una isla con un barquero local.",
+      "Salga de safari al amanecer en Moremi (león, leopardo, licaón).",
+      "Contemple el atardecer en el río Thamalakane en Maun."
+     ],
+     "foodAndDrinks": [
+      "Seswaa con pap",
+      "Braai junto a la hoguera"
+     ],
+     "criticalTips": [
+      "Los campings de Moremi se agotan con meses; reserve pronto.",
+      "Quédese quieto en el mokoro; cuidado con hipopótamos y cocodrilos."
+     ],
+     "mapsQuery": "Moremi Game Reserve, Botswana"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Salares de Makgadikgadi (Gweta)",
+     "recommendedDuration": "2 días",
+     "durationBadge": "2 días",
+     "highlights": [
+      "Colonias de suricatos habituados",
+      "Horizonte blanco infinito en Ntwetwe",
+      "Baobab de Chapman y baobabs de Baines (Nxai Pan)"
+     ],
+     "activities": [
+      "En temporada seca recorra el salar en quad y duerma bajo las estrellas.",
+      "Pase la madrugada con los suricatos.",
+      "En la temporada de lluvias vea la migración de cebras (diciembre – abril)."
+     ],
+     "foodAndDrinks": [
+      "Cena estilo Kalahari en el lodge",
+      "Magwinya"
+     ],
+     "criticalTips": [
+      "Entre al salar solo con guía y en temporada seca; con humedad los vehículos se hunden.",
+      "Las noches pueden helar (junio – agosto); lleve saco de dormir abrigado."
+     ],
+     "mapsQuery": "Gweta, Botswana"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Kasane y Parque Nacional de Chobe",
+     "recommendedDuration": "3 días",
+     "durationBadge": "3 días",
+     "highlights": [
+      "Safari en barco al atardecer por el río Chobe",
+      "Las enormes manadas de elefantes de Chobe",
+      "Puente de Kazungula y el punto donde se juntan cuatro países"
+     ],
+     "activities": [
+      "Haga un safari matutino junto al río.",
+      "Fotografíe elefantes, hipopótamos y cocodrilos desde el barco.",
+      "Opcionalmente, excursión de un día a las cataratas Victoria (Zimbabue/Zambia)."
+     ],
+     "foodAndDrinks": [
+      "Brema del río Chobe",
+      "Cerveza St Louis"
+     ],
+     "criticalTips": [
+      "Cuidado con elefantes y babuinos incluso en Kasane; no deje comida a la vista.",
+      "Consulte con antelación los requisitos de entrada de Zimbabue/Zambia para visitar las cataratas."
+     ],
+     "mapsQuery": "Chobe National Park, Kasane, Botswana"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Seswaa (carne de res cocida y machacada, plato nacional)",
+     "Pap / bogobe (gacha de maíz o sorgo) con morogo (verduras silvestres)",
+     "Phane (orugas de mopane, fritas o en salsa)"
+    ],
+    "drinks": [
+     "Chibuku (cerveza tradicional de sorgo)",
+     "Cerveza St Louis",
+     "Ginger beer casero"
+    ],
+    "streetFoods": [
+     "Magwinya (bolas de masa frita, “fat cakes”)",
+     "Carne de res a la parrilla (braai)",
+     "Diphaphatha (pan plano a la sartén)"
+    ],
+    "diningAdvice": "Los lodges suelen ser pensión completa; en la ciudad pruebe seswaa y pap en restaurantes locales. Los magwinya del mercado son un clásico del desayuno."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptador tipo D/G/M",
+     "Ropa caqui/beige por capas y prismáticos",
+     "Antipalúdicos (con consejo médico) y repelente",
+     "Forro polar para las noches de invierno"
+    ],
+    "safetyAndEtiquette": [
+     "En el safari no baje del vehículo y siga al guía.",
+     "No pregunte nada sin saludar antes.",
+     "No conduzca de noche."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "D",
+     "G",
+     "M"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Se usan enchufes británicos tipo G (tres clavijas rectangulares) y antiguos D y M (tres redondas); los enchufes europeos requieren adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "El agua urbana se trata, pero se recomienda agua embotellada a los visitantes; en campamentos y zonas rurales use siempre agua embotellada o filtrada.",
+    "vaccines": [
+     "Hepatitis A y fiebre tifoidea",
+     "Prevención de malaria (Okavango, Chobe y el norte; más riesgo noviembre – mayo)",
+     "Rabia (viajes rurales largos)",
+     "Certificado de fiebre amarilla si llega de un país de riesgo o hace escala en él"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "997"
+   },
+   "tipping": {
+    "custom": "Se espera propina.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "10 % en restaurantes; 10 - 20 $ por persona y día al guía de safari, más la caja común del campamento."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA 14 %; sistema de devolución para bienes exportados (BURS)",
+    "minSpend": "Consulte el mínimo vigente en BURS",
+    "customsNote": "La devolución se solicita a BURS en los principales puntos de salida (p. ej. aeropuerto de Gaborone) mostrando facturas y productos. Está prohibido exportar marfil, pieles y trofeos sin permiso."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1 - $3",
+    "topCarriers": [
+     "Mascom",
+     "Orange Botswana",
+     "BTC (beMobile)"
+    ],
+    "airportSimTrapWarning": "La venta de SIM en los aeropuertos de Gaborone, Maun y Kasane es limitada; las tiendas de Mascom u Orange en la ciudad son más baratas. Descargue mapas sin conexión: en el delta y los parques no hay señal."
+   },
+   "touristScams": [
+    {
+     "title": "Reserva de safari falsa",
+     "desc": "Páginas en redes sociales con safaris muy baratos al Okavango o Chobe pueden quedarse con el depósito y desaparecer.",
+     "tip": "Contrate miembros de HATAB u operadores con reseñas verificadas."
+    },
+    {
+     "title": "Barquero de mokoro sin licencia",
+     "desc": "En Maun hay personas sin licencia que ofrecen mokoro barato sin equipo de seguridad ni permisos.",
+     "tip": "Reserve el mokoro a través de un fideicomiso comunitario o su campamento."
+    },
+    {
+     "title": "Clonación de tarjetas en cajeros",
+     "desc": "En cajeros fuera de centros comerciales hay clonación y desconocidos que “ayudan”.",
+     "tip": "Use cajeros dentro de bancos o centros comerciales y rechace ayuda."
+    }
+   ]
+  }
+ },
+ "ru": {
+  "insights": {
+   "currency": "Ботсванская пула (BWP)",
+   "plugType": "Тип D, G, M (230V, 50Hz)",
+   "bestMonths": "Май – октябрь (сухой сезон, лучшее сафари; пик разлива Окаванго июнь – август) · ноябрь – апрель дожди, зелень и птицы",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Безопасно",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Одна из самых стабильных стран региона. В Габороне и Франсистауне случаются уличные кражи, взломы машин и квартир; в зонах сафари главные риски — дикие животные и езда ночью.",
+    "commonScams": [
+     "Страницы в соцсетях с очень дешёвыми сафари по Окаванго или Чобе могут взять предоплату и исчезнуть.",
+     "В Мауне нелицензированные гиды предлагают дешёвые поездки на мокоро без снаряжения и разрешений.",
+     "У банкоматов вне торговых центров встречаются скиммеры и «услужливые» незнакомцы."
+    ],
+    "safeTravelTips": [
+     "Не ездите ночью: на дорогу выходят коровы, ослы и даже слоны.",
+     "В неогороженных лагерях не выходите ночью из палатки и слушайтесь гида.",
+     "В Габороне не оставляйте ценности на виду в машине."
+    ],
+    "emergencyNumbers": {
+     "police": "999",
+     "ambulance": "997",
+     "general": "999"
+    }
+   },
+   "internet": {
+    "networkCoverage": "4G в городах; в Окаванго, Калахари и парках сигнала обычно нет",
+    "costPerGbUsd": "1 - 3 $",
+    "esimAvailability": "Средняя (международные eSIM работают; местная SIM по паспорту)",
+    "bestCarriers": [
+     "Mascom",
+     "Orange Botswana",
+     "BTC (beMobile)"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Ограниченный (междугородние автобусы и маршрутки-комби; в зоны сафари — на 4x4 или малой авиацией)",
+    "costLevel": "Средне – дорого (трансферы на сафари дорогие)",
+    "singleTicketUsd": "Комби 0,50 - 1 $",
+    "dailyPassUsd": "Нет (аренда 4x4 80 - 150 $/день)",
+    "popularRideApps": [
+     "Популярного приложения нет – зарегистрированные такси и комби"
+    ],
+    "taxiAdvice": "У лицензированных такси синие номера; счётчиков нет — договаривайтесь заранее. В Габороне безопаснее вызывать такси через отель."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "40 - 70 $",
+    "dailyBudgetMidrangeUsd": "150 - 300 $",
+    "budgetMealUsd": "5 - 10 $",
+    "coffeeUsd": "2 - 3.50 $",
+    "waterBottleUsd": "0.60 - 1.20 $",
+    "hostelDormUsd": "12 - 25 $ (кемпинг/хостел в Мауне)",
+    "hotel3StarUsd": "70 - 140 $",
+    "flightCostIndex": "Высокий (пересадка в Йоханнесбурге)",
+    "flightTip": "Летите из Стамбула в Йоханнесбург, затем Airlink или Air Botswana в Маун, Касане или Габороне. Сафари в лоджах очень дороги; бюджетнее кемпинг-сафари или самостоятельно на 4x4."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Перед любым вопросом здоровайтесь: «Dumela rra» (мужчине) / «Dumela mma» (женщине).",
+     "Давайте и принимайте правой рукой, придерживая её левой за запястье — знак уважения.",
+     "Старших глубоко уважают; в деревнях сначала приветствуют вождя (кгоси).",
+     "Не снимайте военные объекты, госучреждения и людей без разрешения."
+    ],
+    "festivals": [
+     "День Ботсваны (30 сентября, независимость)",
+     "Фестиваль танца Куру (Д'Кар, культура сан, август)",
+     "Фестиваль Мауна (апрель)"
+    ],
+    "lifestyle": "Спокойное консервативное общество, где скот — показатель статуса и жива традиция сельского собрания кготла; людей мало, дикой природы — много."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Дельта Окаванго (ЮНЕСКО)",
+     "Заповедник Мореми",
+     "Национальный парк Чобе и река Чобе",
+     "Солончаки Макгадикгади и Нксай",
+     "Холмы Цодило (наскальные рисунки сан, ЮНЕСКО)",
+     "Заповедник Центральный Калахари"
+    ],
+    "bestSeasons": "Май – октябрь (сухой сезон, лучшее сафари; пик разлива Окаванго июнь – август) · ноябрь – апрель дожди, зелень и птицы",
+    "travelStyleTip": "Ботсвана придерживается модели «дорого, но малолюдно»: ради безлюдной природы либо берите пакет в лодже, либо путешествуйте сами на оборудованном 4x4."
+   },
+   "religion": {
+    "primaryReligions": "Христианство (~79%), традиционная вера бадимо (~4%), без религии (~15%)",
+    "respectNorms": "В церквях одевайтесь скромно; в священных местах вроде холмов Цодило соблюдайте правила гида и не трогайте рисунки.",
+    "sacredSites": [
+     "Холмы Цодило",
+     "Остров Кубу (Лекхубу, Макгадикгади)",
+     "Миссия Колобенг (миссия Ливингстона)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Официальный — английский; национальный — сетсвана, на нём говорит подавляющее большинство. Распространены также каланга, секгалагади и языки сан.",
+    "englishProficiency": "Хороший: в городах, лоджах и учреждениях свободно говорят по-английски.",
+    "phrases": [
+     {
+      "phrase": "Dumela rra / Dumela mma",
+      "meaning": "Здравствуйте (мужчине / женщине)",
+      "translation": "Здравствуйте (мужчине / женщине)",
+      "pronunciation": "du-me-la ra / du-me-la ma"
+     },
+     {
+      "phrase": "O kae?",
+      "meaning": "Как дела?",
+      "translation": "Как дела?",
+      "pronunciation": "o ka-e"
+     },
+     {
+      "phrase": "Ke teng",
+      "meaning": "У меня всё хорошо",
+      "translation": "У меня всё хорошо",
+      "pronunciation": "ke teng"
+     },
+     {
+      "phrase": "Ke a leboga",
+      "meaning": "Спасибо",
+      "translation": "Спасибо",
+      "pronunciation": "ke a le-bo-kha"
+     },
+     {
+      "phrase": "Ke bokae?",
+      "meaning": "Сколько стоит?",
+      "translation": "Сколько стоит?",
+      "pronunciation": "ke bo-ka-e"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Первыми жителями были сан; в XIX веке усилились вождества тсвана. В 1885 году создан британский протекторат Бечуаналенд, а в 1895-м три вождя отправились в Лондон и не допустили передачи земель компании Сесила Родса. Независимость пришла в 1966 году при Серетсе Кхаме; алмазы, найденные год спустя, сделали страну одной из самых быстрорастущих экономик Африки.",
+    "milestones": [
+     "1885: протекторат Бечуаналенд",
+     "1966: независимость (Серетсе Кхама)",
+     "1967: открытие алмазов в Орапе",
+     "2014: дельта Окаванго внесена в список ЮНЕСКО"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Сесваа (томлёная толчёная говядина — национальное блюдо)",
+     "Пап / богобе (каша из кукурузы или сорго) с мороґо (дикая зелень)",
+     "Пхане (гусеницы мопане, жареные или в соусе)"
+    ],
+    "traditionalDrinks": [
+     "Чибуку (традиционное пиво из сорго)",
+     "Пиво St Louis",
+     "Домашний имбирный напиток (ginger beer)"
+    ],
+    "streetFoodAndDesserts": [
+     "Магвинья (жареные пончики «fat cakes»)",
+     "Говядина на гриле (браай)",
+     "Дипхапхатха (лепёшки на сковороде)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Сэр Серетсе Кхама (первый президент)",
+     "Кхама III (вождь бамангвато)",
+     "Летсиле Тебого (олимпийский чемпион 2024 на 200 м)"
+    ],
+    "strongSectors": [
+     "Добыча алмазов (Debswana, Джваненг)",
+     "Сафари-туризм",
+     "Скотоводство и экспорт говядины"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "В городах и лоджах принимают карты; в деревнях и кемпингах нужны наличные пулы. Южноафриканский рэнд берут в некоторых приграничных городах.",
+    "tippingCulture": "Чаевые ожидаются. 10% в ресторанах; гиду на сафари 10 - 20 $ с человека в день, плюс общая коробка для персонала лагеря.",
+    "economicPillars": "Алмазы, туризм, скотоводство, банки и госсектор."
+   }
+  },
+  "itin": {
+   "routeName": "Дикая Ботсвана: Окаванго, Макгадикгади и Чобе",
+   "routeSummary": "9-дневный наземный маршрут: из Мауна в дельту Окаванго на мокоро и сафари в Мореми, через солончаки Макгадикгади к стадам слонов на реке Чобе.",
+   "totalDays": 9,
+   "idealDurationText": "Маршрут на 9 дней",
+   "bestSeason": "Май – октябрь (сухой сезон, лучшее сафари; пик разлива Окаванго июнь – август) · ноябрь – апрель дожди, зелень и птицы",
+   "transportMode": "Арендованный 4x4 или сафари-автомобиль с гидом (Маун – Гвета ~3 ч, Гвета – Касане ~5 ч); по желанию перелёт в дельту на малом самолёте",
+   "paceLevel": "Сбалансированный (сафари утром и вечером, днём отдых)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Остановка 1: Маун и дельта Окаванго",
+     "recommendedDuration": "4 дня",
+     "durationBadge": "4 дня",
+     "highlights": [
+      "Протоки дельты на мокоро (долблёнке)",
+      "Заповедник Мореми и Кхваи",
+      "Обзорный полёт над дельтой"
+     ],
+     "activities": [
+      "Совершите поездку на мокоро и пеший сафари по острову с местным гидом.",
+      "Отправьтесь на рассветное сафари в Мореми (лев, леопард, гиеновая собака).",
+      "Встретьте закат на реке Тамалакане в Мауне."
+     ],
+     "foodAndDrinks": [
+      "Сесваа с папом",
+      "Браай у костра"
+     ],
+     "criticalTips": [
+      "Кемпинги Мореми раскупают за месяцы — бронируйте заранее.",
+      "Сидите в мокоро неподвижно; остерегайтесь бегемотов и крокодилов."
+     ],
+     "mapsQuery": "Moremi Game Reserve, Botswana"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Остановка 2: Солончаки Макгадикгади (Гвета)",
+     "recommendedDuration": "2 дня",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Привыкшие к людям колонии сурикатов",
+      "Бескрайний белый горизонт солончака Нтветве",
+      "Баобабы Чапмена и Бейнса (Нксай-Пан)"
+     ],
+     "activities": [
+      "В сухой сезон выезжайте на солончак на квадроцикле и ночуйте под звёздами.",
+      "Проведите раннее утро с сурикатами.",
+      "В сезон дождей наблюдайте миграцию зебр (декабрь – апрель)."
+     ],
+     "foodAndDrinks": [
+      "Ужин в стиле Калахари в лодже",
+      "Магвинья"
+     ],
+     "criticalTips": [
+      "Выезжайте на солончак только с гидом и в сухой сезон — на мокрой корке машины вязнут.",
+      "Ночи бывают морозными (июнь – август) — нужен тёплый спальник."
+     ],
+     "mapsQuery": "Gweta, Botswana"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Остановка 3: Касане и национальный парк Чобе",
+     "recommendedDuration": "3 дня",
+     "durationBadge": "3 дня",
+     "highlights": [
+      "Лодочное сафари на закате по реке Чобе",
+      "Огромные стада слонов Чобе",
+      "Мост Казунгула и стык четырёх стран"
+     ],
+     "activities": [
+      "Утром отправьтесь на сафари вдоль реки.",
+      "Снимайте слонов, бегемотов и крокодилов с лодки.",
+      "По желанию — однодневная поездка к водопаду Виктория (Зимбабве/Замбия)."
+     ],
+     "foodAndDrinks": [
+      "Речной лещ Чобе",
+      "Пиво St Louis"
+     ],
+     "criticalTips": [
+      "Даже в самом Касане остерегайтесь слонов и бабуинов, не оставляйте еду на виду.",
+      "Для поездки к водопаду заранее проверьте условия въезда в Зимбабве/Замбию."
+     ],
+     "mapsQuery": "Chobe National Park, Kasane, Botswana"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Сесваа (томлёная толчёная говядина — национальное блюдо)",
+     "Пап / богобе (каша из кукурузы или сорго) с мороґо (дикая зелень)",
+     "Пхане (гусеницы мопане, жареные или в соусе)"
+    ],
+    "drinks": [
+     "Чибуку (традиционное пиво из сорго)",
+     "Пиво St Louis",
+     "Домашний имбирный напиток (ginger beer)"
+    ],
+    "streetFoods": [
+     "Магвинья (жареные пончики «fat cakes»)",
+     "Говядина на гриле (браай)",
+     "Дипхапхатха (лепёшки на сковороде)"
+    ],
+    "diningAdvice": "В лоджах обычно полный пансион; в городе ищите сесваа и пап в местных закусочных. Магвинья с рынка — классический завтрак."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Переходник типа D/G/M",
+     "Одежда хаки/бежевая слоями и бинокль",
+     "Противомалярийные (по совету врача) и репеллент",
+     "Тёплый флис для зимних ночей"
+    ],
+    "safetyAndEtiquette": [
+     "На сафари не выходите из машины и слушайтесь гида.",
+     "Не задавайте вопросов, не поздоровавшись.",
+     "Не ездите ночью."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "D",
+     "G",
+     "M"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Используются британские розетки типа G (три прямоугольных штыря) и старые D и M (три круглых); для европейских вилок нужен переходник."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "В городах вода очищается, но туристам советуют бутилированную; в лагерях и сельской местности пейте только бутилированную или фильтрованную.",
+    "vaccines": [
+     "Гепатит A и брюшной тиф",
+     "Профилактика малярии (Окаванго, Чобе и север; выше риск ноябрь – май)",
+     "Бешенство (для долгих поездок по глубинке)",
+     "Сертификат о прививке от жёлтой лихорадки — при прибытии из страны риска или транзите через неё"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "997"
+   },
+   "tipping": {
+    "custom": "Чаевые ожидаются.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "10% в ресторанах; гиду на сафари 10 - 20 $ с человека в день, плюс общая коробка для персонала лагеря."
+   },
+   "taxFree": {
+    "vatRefundPercent": "НДС 14%; есть система возврата за вывозимые товары (BURS)",
+    "minSpend": "Актуальный минимум уточняйте в BURS",
+    "customsNote": "Возврат оформляется в BURS в крупных пунктах выезда (например, аэропорт Габороне) по чекам и с предъявлением товаров. Вывоз слоновой кости, шкур и трофеев без разрешения запрещён."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1 - $3",
+    "topCarriers": [
+     "Mascom",
+     "Orange Botswana",
+     "BTC (beMobile)"
+    ],
+    "airportSimTrapWarning": "В аэропортах Габороне, Мауна и Касане SIM продают ограниченно; в городских салонах Mascom или Orange дешевле. Скачайте офлайн-карты — в дельте и парках связи нет."
+   },
+   "touristScams": [
+    {
+     "title": "Фальшивое бронирование сафари",
+     "desc": "Страницы в соцсетях с очень дешёвыми сафари по Окаванго или Чобе могут взять предоплату и исчезнуть.",
+     "tip": "Выбирайте членов HATAB или операторов с проверенными отзывами."
+    },
+    {
+     "title": "Нелицензированный гид на мокоро",
+     "desc": "В Мауне нелицензированные гиды предлагают дешёвые поездки на мокоро без снаряжения и разрешений.",
+     "tip": "Бронируйте мокоро через общинный траст или свой лагерь."
+    },
+    {
+     "title": "Скимминг в банкоматах",
+     "desc": "У банкоматов вне торговых центров встречаются скиммеры и «услужливые» незнакомцы.",
+     "tip": "Пользуйтесь банкоматами в банках и ТЦ, отказывайтесь от помощи."
+    }
+   ]
+  }
+ }
+}

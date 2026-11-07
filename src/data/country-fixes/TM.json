@@ -1,0 +1,1897 @@
+{
+ "tr": {
+  "insights": {
+   "currency": "Türkmen Manatı (TMT)",
+   "plugType": "Tip C, F (220V, 50Hz)",
+   "bestMonths": "Nisan – Mayıs ve Eylül – Ekim (yazlar 45°C’yi bulur)",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Güvenli",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Sokak suçu çok düşüktür; asıl dikkat edilmesi gereken sıkı kurallardır: resmî binaları fotoğraflamak, yasa dışı döviz bozdurmak ve uyuşturucu ciddi yaptırım doğurur.",
+    "commonScams": [
+     "Sokakta karaborsa kurundan döviz bozma teklifleri (yasa dışı)",
+     "Lisanssız şoförlerin Derweze’ye fahiş fiyatla tur önermesi",
+     "Geceleri resmî olmayan taksilerin yüksek ücret istemesi"
+    ],
+    "safeTravelTips": [
+     "Yanınızda temiz ve yeni basım ABD doları nakit taşıyın; yabancı kartlar çoğu yerde çalışmaz.",
+     "Hükümet binalarını, saray ve polis noktalarını fotoğraflamayın.",
+     "İnternet ağır biçimde kısıtlıdır; haritaları ve belgeleri önceden çevrimdışı indirin."
+    ],
+    "emergencyNumbers": {
+     "police": "02 / 002",
+     "ambulance": "03 / 003",
+     "general": "02 / 002"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Şehirlerde 3G/4G; çöl ve kırsalda kapsama çok zayıf veya yok",
+    "costPerGbUsd": "~3 - 8 $",
+    "esimAvailability": "Çok Kısıtlı",
+    "bestCarriers": [
+     "TMCELL (Altyn Asyr)",
+     "Türkmentelekom"
+    ],
+    "vpnRequired": true
+   },
+   "transport": {
+    "transportQuality": "Orta Düzey",
+    "costLevel": "Orta Seviye",
+    "singleTicketUsd": "0.10 - 0.30 $",
+    "dailyPassUsd": "~1 $",
+    "popularRideApps": [
+     "Otel / tur operatörü transferleri",
+     "Aşkabat resmî taksileri"
+    ],
+    "taxiAdvice": "Uluslararası araç çağırma uygulamaları yoktur; otelin ayarladığı veya resmî taksileri kullanın, fiyatı binmeden netleştirin."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "50 - 80 $",
+    "dailyBudgetMidrangeUsd": "120 - 200 $",
+    "budgetMealUsd": "5 - 15 $",
+    "coffeeUsd": "2 - 5 $",
+    "waterBottleUsd": "0.50 - 1 $",
+    "hostelDormUsd": "25 - 40 $",
+    "hotel3StarUsd": "60 - 130 $",
+    "flightCostIndex": "Pahalı",
+    "flightTip": "İstanbul’dan Aşkabat’a direkt seferler (Türk Hava Yolları, Türkmenistan Havayolları) vardır; sefer sayısı azdır, erken rezervasyon yapın."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Ekmek (çörek) kutsaldır; yere konmaz, ters çevrilmez.",
+     "Evlere ve bazı mekânlara ayakkabıyla girilmez.",
+     "Çay küçük kâselerde ikram edilir; reddetmeden en az bir kâse için.",
+     "Sade ve örtülü giyinin; kamusal alanda yüksek sesle tartışmaktan kaçının."
+    ],
+    "festivals": [
+     "Nevruz (21 Mart)",
+     "Ahal-Teke Atı Günü (Nisan’ın son pazarı)",
+     "Kavun Günü (Ağustos’un ikinci pazarı)"
+    ],
+    "lifestyle": "Beyaz mermer başkent Aşkabat, kökleri derin göçebe kültürü, el dokuması halılar ve Ahal-Teke atlarına büyük gurur."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Derweze Gaz Krateri (\"Cehennem Kapısı\")",
+     "Aşkabat – beyaz mermer şehir merkezi",
+     "Kadim Merv (UNESCO)",
+     "Köneürgenç (UNESCO)",
+     "Nisa Part Kaleleri (UNESCO)",
+     "Yangıkala Kanyonu"
+    ],
+    "bestSeasons": "Nisan – Mayıs ve Eylül – Ekim (yazlar 45°C’yi bulur)",
+    "travelStyleTip": "Ülkenin büyük kısmı lisanslı bir tur operatörüyle gezilir; Derweze’de kamp gecesi rotanın en unutulmaz kısmıdır."
+   },
+   "religion": {
+    "primaryReligions": "Sünni İslam (~%89), Ortodoks Hristiyan (~%9).",
+    "respectNorms": "Camilerde ve türbelerde omuz ve dizleri örtün, kadınlar başını örtsün; türbeleri ziyaret eden hacılara saygı gösterin.",
+    "sacredSites": [
+     "Türkmenbaşı Ruhy Camii (Gıpjak)",
+     "Sultan Sencer Türbesi (Merv)",
+     "Necmeddin Kübra Türbesi (Köneürgenç)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Türkmence (resmî). Rusça yaygın olarak anlaşılır; Türkçe konuşanlar temel iletişimi kurabilir.",
+    "englishProficiency": "Çok düşük; Türkçe ve Rusça İngilizceden daha işe yarar.",
+    "phrases": [
+     {
+      "phrase": "Salam!",
+      "meaning": "Merhaba",
+      "translation": "Merhaba",
+      "pronunciation": "sa-LAM"
+     },
+     {
+      "phrase": "Sag boluň",
+      "meaning": "Teşekkürler",
+      "translation": "Teşekkürler",
+      "pronunciation": "sagh bo-LUNG"
+     },
+     {
+      "phrase": "Haýyş edýärin",
+      "meaning": "Lütfen",
+      "translation": "Lütfen",
+      "pronunciation": "hah-YISH ed-YAH-rin"
+     },
+     {
+      "phrase": "Bu näçe?",
+      "meaning": "Bu ne kadar?",
+      "translation": "Bu ne kadar?",
+      "pronunciation": "bu NAH-che?"
+     },
+     {
+      "phrase": "Hoş gal",
+      "meaning": "Hoşça kal",
+      "translation": "Hoşça kal",
+      "pronunciation": "hosh GAL"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Part İmparatorluğu’nun ilk merkezi Nisa ve Büyük Selçukluların başkenti Merv bu topraklardadır. 19. yüzyılda Rus yönetimine giren bölge 1924’te Türkmen SSC oldu ve 1991’de bağımsızlığını ilan etti.",
+    "milestones": [
+     "MÖ 3. yüzyıl: Nisa’nın Part başkenti olması",
+     "11.-12. yüzyıl: Merv’in Büyük Selçuklu başkenti olması",
+     "1881: Gökdepe Savaşı ve Rus hâkimiyeti",
+     "1991: Bağımsızlık"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Palav (etli, havuçlu pilav)",
+     "Dograma (ekmek, et ve soğanla yapılan bayram yemeği)",
+     "Işlekli (etli kalın börek)"
+    ],
+    "traditionalDrinks": [
+     "Gök çay (yeşil çay)",
+     "Çal (fermente deve sütü)",
+     "Gatyk (yoğurt içeceği)"
+    ],
+    "streetFoodAndDesserts": [
+     "Somsa (tandır samsası)",
+     "Gutap (içi dolu ince kızarmış hamur)",
+     "Türkmen kavunu"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Mahtumkulu Firaki (şair, düşünür)",
+     "Sultan Sencer (Selçuklu sultanı)",
+     "Nury Halmämmedow (besteci)"
+    ],
+    "strongSectors": [
+     "Doğal gaz",
+     "Pamuk ve tekstil",
+     "El dokuması halıcılık"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Nakit esastır; resmî kur ile karaborsa kuru arasında büyük fark vardır ancak resmî olmayan bozdurma yasa dışıdır. Yabancı kartlar yalnızca bazı büyük otellerde geçer.",
+    "tippingCulture": "Bahşiş zorunlu değildir; Aşkabat restoranlarında %5-10 ve rehber/şoförlere küçük bahşiş takdir edilir.",
+    "economicPillars": "Doğal gaz ihracatı, petrol ürünleri, pamuk ve tekstil, tarım."
+   }
+  },
+  "itin": {
+   "routeName": "Türkmenistan İpek Yolu Rotası: Aşkabat, Merv, Derweze ve Köneürgenç",
+   "routeSummary": "Beyaz mermer Aşkabat ve Part kalesi Nisa’dan Selçuklu başkenti Merv’e, Karakum Çölü’ndeki Derweze krateri ve Harezm mirası Köneürgenç’e uzanan 6 günlük rota.",
+   "totalDays": 6,
+   "idealDurationText": "6 Günlük İpek Yolu Rotası",
+   "bestSeason": "Nisan – Mayıs ve Eylül – Ekim (yazlar 45°C’yi bulur)",
+   "transportMode": "Tur operatörüyle 4x4 araç + iç hat uçuşu (Aşkabat–Mary)",
+   "paceLevel": "Yoğun (Tarih + Çöl)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "1. Durak: Aşkabat ve Nisa",
+     "recommendedDuration": "2 Gün (Başkent ve çevresi)",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "Bağımsızlık Anıtı ve beyaz mermer bulvarlar",
+      "Türkmen Halı Müzesi",
+      "Altyn Asyr (Tolkuçka) Pazarı",
+      "Nisa Part Kaleleri"
+     ],
+     "activities": [
+      "Halı Müzesi’nde dev el dokuması halıları görün.",
+      "Pazar günü Tolkuçka Pazarı’nda alışveriş yapın.",
+      "Akşam ışıklandırılmış şehir merkezinde yürüyün."
+     ],
+     "foodAndDrinks": [
+      "Palav",
+      "Gök çay",
+      "Somsa"
+     ],
+     "criticalTips": [
+      "Resmî binaları fotoğraflamayın; görevliler sizi uyarabilir.",
+      "Gece belirli saatlerden sonra şehir merkezi çok sessizleşir."
+     ],
+     "mapsQuery": "Ashgabat, Turkmenistan"
+    },
+    {
+     "stopNumber": 2,
+     "name": "2. Durak: Kadim Merv (Mary)",
+     "recommendedDuration": "1 Gün (Uçakla gidiş-dönüş)",
+     "durationBadge": "1 Gün",
+     "highlights": [
+      "Sultan Sencer Türbesi",
+      "Büyük ve Küçük Kız Kale",
+      "Erk Kale ve Gyaur Kale surları"
+     ],
+     "activities": [
+      "Selçuklu başkentinin kalıntılarını rehberle gezin.",
+      "Mary Bölge Müzesi’ni ziyaret edin.",
+      "Gün batımında Kız Kale’yi fotoğraflayın."
+     ],
+     "foodAndDrinks": [
+      "Işlekli",
+      "Gatyk"
+     ],
+     "criticalTips": [
+      "Alan geniştir; araçla gezmek gerekir.",
+      "Yazın şapka ve bol su şarttır."
+     ],
+     "mapsQuery": "Ancient Merv, Mary, Turkmenistan"
+    },
+    {
+     "stopNumber": 3,
+     "name": "3. Durak: Derweze Gaz Krateri",
+     "recommendedDuration": "1 Gece (Çöl kampı)",
+     "durationBadge": "1 Gün",
+     "highlights": [
+      "Yanan gaz krateri (\"Cehennem Kapısı\")",
+      "Su ve çamur kraterleri",
+      "Karakum Çölü kum tepeleri"
+     ],
+     "activities": [
+      "Krateri gece karanlığında izleyin.",
+      "Çadır kampında yıldızların altında konaklayın.",
+      "Çevredeki diğer kraterleri gündüz keşfedin."
+     ],
+     "foodAndDrinks": [
+      "Mangalda şiş",
+      "Gök çay"
+     ],
+     "criticalTips": [
+      "Kraterin kenarına çok yaklaşmayın; korkuluk yoktur.",
+      "Çöl gece soğur; kalın giysi alın."
+     ],
+     "mapsQuery": "Darvaza Gas Crater, Turkmenistan"
+    },
+    {
+     "stopNumber": 4,
+     "name": "4. Durak: Köneürgenç",
+     "recommendedDuration": "1 Gün (Harezm mirası)",
+     "durationBadge": "1 Gün",
+     "highlights": [
+      "Kutluğ Timur Minaresi",
+      "Türabek Hanım Türbesi",
+      "Necmeddin Kübra Türbesi"
+     ],
+     "activities": [
+      "UNESCO alanını rehberle gezin.",
+      "Türabek Hanım Türbesi’nin kubbe mozaiklerini inceleyin.",
+      "Hacıların ziyaret ettiği türbelerde yerel gelenekleri gözlemleyin."
+     ],
+     "foodAndDrinks": [
+      "Gutap",
+      "Çal"
+     ],
+     "criticalTips": [
+      "Özbekistan (Hive) yönüne geçecekseniz sınır saatlerini önceden öğrenin.",
+      "Türbelerde örtülü kıyafet giyin."
+     ],
+     "mapsQuery": "Konye-Urgench, Turkmenistan"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Palav (etli, havuçlu pilav)",
+     "Dograma (ekmek, et ve soğanla yapılan bayram yemeği)",
+     "Işlekli (etli kalın börek)"
+    ],
+    "drinks": [
+     "Gök çay (yeşil çay)",
+     "Çal (fermente deve sütü)",
+     "Gatyk (yoğurt içeceği)"
+    ],
+    "streetFoods": [
+     "Somsa (tandır samsası)",
+     "Gutap (içi dolu ince kızarmış hamur)",
+     "Türkmen kavunu"
+    ],
+    "diningAdvice": "Etli yemekler ve pilav ağırlıktadır; Türk damak tadına yakındır. Nakit manat bulundurun."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Yeni basım ABD doları nakit",
+     "Çevrimdışı haritalar",
+     "Güneş şapkası ve güneş kremi",
+     "Çöl gecesi için kalın giysi"
+    ],
+    "safetyAndEtiquette": [
+     "Resmî binaları ve güvenlik noktalarını fotoğraflamayın.",
+     "Kutsal mekânlarda örtülü giyinin ve sessiz olun."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Türkiye ile aynı C/F tipi prizler (220V); adaptör gerekmez."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Musluk suyu içilmez; yalnızca şişe su kullanın, buzlu içeceklere dikkat edin.",
+    "vaccines": [
+     "Rutin aşılar (tetanoz-difteri, KKK)",
+     "Hepatit A",
+     "Tifo"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "03 / 003"
+   },
+   "tipping": {
+    "custom": "Bahşiş geleneksel değildir; turistik restoranlarda küçük bahşiş takdir edilir.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "Rehber ve şoförler için gün sonunda küçük bir bahşiş yaygındır."
+   },
+   "taxFree": {
+    "vatRefundPercent": "KDV %15; turist iadesi yok",
+    "minSpend": "Uygulanmaz",
+    "customsNote": "Türkmenistan’da turist KDV iadesi yoktur. Halı çıkarmak için resmî ihracat belgesi gerekir; belgesiz halı gümrükte sorun yaratır."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "$3 - $8",
+    "topCarriers": [
+     "TMCELL (Altyn Asyr)",
+     "Türkmentelekom"
+    ],
+    "airportSimTrapWarning": "Tek gerçek mobil operatör TMCELL’dir; SIM için pasaport ve kayıt gerekir, paketler pahalıdır. Uluslararası eSIM’ler genelde çalışmaz; otel Wi-Fi’ına güvenin."
+   },
+   "touristScams": [
+    {
+     "title": "Karaborsa Döviz",
+     "desc": "Sokakta çok daha iyi kur teklif edenler; bu işlem yasa dışıdır ve sahte para riski taşır.",
+     "tip": "Yalnızca bankalarda ve resmî bürolarda bozdurun."
+    },
+    {
+     "title": "Lisanssız Derweze Turu",
+     "desc": "Lisanssız şoförler ucuz tur önerip yolda fiyatı artırabilir.",
+     "tip": "Turu lisanslı bir operatörle, yazılı fiyatla ayarlayın."
+    },
+    {
+     "title": "Gece Taksisi",
+     "desc": "Resmî olmayan araçlar geceleri yüksek ücret ister.",
+     "tip": "Otelin çağırdığı taksiyi kullanın ve fiyatı önceden konuşun."
+    }
+   ]
+  }
+ },
+ "en": {
+  "insights": {
+   "currency": "Turkmenistani Manat (TMT)",
+   "plugType": "Type C, F (220V, 50Hz)",
+   "bestMonths": "April – May and September – October (summers reach 45°C)",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Safe",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Street crime is very low; what matters most are strict rules: photographing government buildings, illegal currency exchange and drugs carry severe penalties.",
+    "commonScams": [
+     "Street offers to exchange money at black-market rates (illegal)",
+     "Unlicensed drivers offering overpriced Darvaza trips",
+     "Unofficial taxis at night demanding high fares"
+    ],
+    "safeTravelTips": [
+     "Carry clean, recent-series US dollars in cash; foreign cards rarely work.",
+     "Do not photograph government buildings, palaces or police posts.",
+     "The internet is heavily restricted; download maps and documents offline beforehand."
+    ],
+    "emergencyNumbers": {
+     "police": "02 / 002",
+     "ambulance": "03 / 003",
+     "general": "02 / 002"
+    }
+   },
+   "internet": {
+    "networkCoverage": "3G/4G in cities; very weak or no coverage in the desert and countryside",
+    "costPerGbUsd": "~3 - 8 $",
+    "esimAvailability": "Very Limited",
+    "bestCarriers": [
+     "TMCELL (Altyn Asyr)",
+     "Türkmentelekom"
+    ],
+    "vpnRequired": true
+   },
+   "transport": {
+    "transportQuality": "Moderate",
+    "costLevel": "Moderate",
+    "singleTicketUsd": "0.10 - 0.30 $",
+    "dailyPassUsd": "~1 $",
+    "popularRideApps": [
+     "Hotel / tour operator transfers",
+     "Official Ashgabat taxis"
+    ],
+    "taxiAdvice": "There are no international ride-hailing apps; use hotel-arranged or official taxis and agree the price before boarding."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "50 - 80 $",
+    "dailyBudgetMidrangeUsd": "120 - 200 $",
+    "budgetMealUsd": "5 - 15 $",
+    "coffeeUsd": "2 - 5 $",
+    "waterBottleUsd": "0.50 - 1 $",
+    "hostelDormUsd": "25 - 40 $",
+    "hotel3StarUsd": "60 - 130 $",
+    "flightCostIndex": "Expensive",
+    "flightTip": "Turkish Airlines and Turkmenistan Airlines fly direct from Istanbul to Ashgabat; flights are few, so book early."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Bread (chorek) is sacred; never put it on the ground or upside down.",
+     "Shoes come off in homes and some venues.",
+     "Tea is served in small bowls; accept at least one.",
+     "Dress simply and modestly and avoid loud arguments in public."
+    ],
+    "festivals": [
+     "Nowruz (21 March)",
+     "Akhal-Teke Horse Day (last Sunday of April)",
+     "Melon Day (second Sunday of August)"
+    ],
+    "lifestyle": "A white-marble capital, deep-rooted nomadic culture, hand-woven carpets and great pride in Akhal-Teke horses."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Darvaza Gas Crater (\"Door to Hell\")",
+     "Ashgabat – white-marble city centre",
+     "Ancient Merv (UNESCO)",
+     "Konye-Urgench (UNESCO)",
+     "Parthian Fortresses of Nisa (UNESCO)",
+     "Yangykala Canyon"
+    ],
+    "bestSeasons": "April – May and September – October (summers reach 45°C)",
+    "travelStyleTip": "Most of the country is visited with a licensed tour operator; a camping night at Darvaza is the highlight."
+   },
+   "religion": {
+    "primaryReligions": "Sunni Islam (~89%), Orthodox Christian (~9%).",
+    "respectNorms": "Cover shoulders and knees in mosques and mausoleums, women cover their hair; respect pilgrims at shrines.",
+    "sacredSites": [
+     "Türkmenbaşy Ruhy Mosque (Gypjak)",
+     "Mausoleum of Sultan Sanjar (Merv)",
+     "Mausoleum of Najm ad-Din Kubra (Konye-Urgench)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Turkmen (official). Russian is widely understood; Turkish speakers can manage basic conversation.",
+    "englishProficiency": "Very low; Russian or Turkish is more useful than English.",
+    "phrases": [
+     {
+      "phrase": "Salam!",
+      "meaning": "Hello",
+      "translation": "Hello",
+      "pronunciation": "sa-LAM"
+     },
+     {
+      "phrase": "Sag boluň",
+      "meaning": "Thank you",
+      "translation": "Thank you",
+      "pronunciation": "sagh bo-LUNG"
+     },
+     {
+      "phrase": "Haýyş edýärin",
+      "meaning": "Please",
+      "translation": "Please",
+      "pronunciation": "hah-YISH ed-YAH-rin"
+     },
+     {
+      "phrase": "Bu näçe?",
+      "meaning": "How much is this?",
+      "translation": "How much is this?",
+      "pronunciation": "bu NAH-che?"
+     },
+     {
+      "phrase": "Hoş gal",
+      "meaning": "Goodbye",
+      "translation": "Goodbye",
+      "pronunciation": "hosh GAL"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Nisa, the early Parthian centre, and Merv, capital of the Great Seljuks, lie in this land. It came under Russian rule in the 19th century, became the Turkmen SSR in 1924 and declared independence in 1991.",
+    "milestones": [
+     "3rd century BC: Nisa becomes a Parthian capital",
+     "11th-12th century: Merv is the Great Seljuk capital",
+     "1881: Battle of Geok Tepe and Russian rule",
+     "1991: Independence"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Palaw (plov with meat and carrots)",
+     "Dograma (festive dish of bread, meat and onion)",
+     "Ishlekli (thick meat pie)"
+    ],
+    "traditionalDrinks": [
+     "Gök çaý (green tea)",
+     "Chal (fermented camel milk)",
+     "Gatyk (yogurt drink)"
+    ],
+    "streetFoodAndDesserts": [
+     "Somsa (tandoor-baked pastry)",
+     "Gutap (thin fried stuffed flatbread)",
+     "Turkmen melons"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Magtymguly Pyragy (poet, thinker)",
+     "Sultan Sanjar (Seljuk sultan)",
+     "Nury Halmammedov (composer)"
+    ],
+    "strongSectors": [
+     "Natural gas",
+     "Cotton and textiles",
+     "Hand-woven carpets"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Cash is king; there is a large gap between official and black-market rates, but unofficial exchange is illegal. Foreign cards work only in some large hotels.",
+    "tippingCulture": "Tipping is not mandatory; 5-10% in Ashgabat restaurants and small tips for guides/drivers are appreciated.",
+    "economicPillars": "Natural gas exports, petroleum products, cotton and textiles, agriculture."
+   }
+  },
+  "itin": {
+   "routeName": "Turkmenistan Silk Road Route: Ashgabat, Merv, Darvaza and Konye-Urgench",
+   "routeSummary": "A 6-day route from white-marble Ashgabat and Parthian Nisa to the Seljuk capital of Merv, the Darvaza crater in the Karakum Desert and Khorezmian Konye-Urgench.",
+   "totalDays": 6,
+   "idealDurationText": "6-Day Silk Road Itinerary",
+   "bestSeason": "April – May and September – October (summers reach 45°C)",
+   "transportMode": "4x4 with a tour operator + domestic flight (Ashgabat–Mary)",
+   "paceLevel": "Intense (History & Desert)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stop 1: Ashgabat and Nisa",
+     "recommendedDuration": "2 Days (Capital and surroundings)",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "Independence Monument and white-marble boulevards",
+      "Turkmen Carpet Museum",
+      "Altyn Asyr (Tolkuchka) Bazaar",
+      "Parthian Fortresses of Nisa"
+     ],
+     "activities": [
+      "See giant hand-woven carpets at the Carpet Museum.",
+      "Shop at Tolkuchka Bazaar on Sunday.",
+      "Walk the illuminated city centre at night."
+     ],
+     "foodAndDrinks": [
+      "Palaw",
+      "Gök çaý",
+      "Somsa"
+     ],
+     "criticalTips": [
+      "Do not photograph government buildings; officials may stop you.",
+      "The centre becomes very quiet late at night."
+     ],
+     "mapsQuery": "Ashgabat, Turkmenistan"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stop 2: Ancient Merv (Mary)",
+     "recommendedDuration": "1 Day (Return flight)",
+     "durationBadge": "1 Day",
+     "highlights": [
+      "Mausoleum of Sultan Sanjar",
+      "Great and Lesser Kyz Kala",
+      "Erk Kala and Gyaur Kala walls"
+     ],
+     "activities": [
+      "Explore the Seljuk capital’s ruins with a guide.",
+      "Visit the Mary Regional Museum.",
+      "Photograph Kyz Kala at sunset."
+     ],
+     "foodAndDrinks": [
+      "Ishlekli",
+      "Gatyk"
+     ],
+     "criticalTips": [
+      "The site is vast; you need a vehicle.",
+      "Bring a hat and plenty of water in summer."
+     ],
+     "mapsQuery": "Ancient Merv, Mary, Turkmenistan"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stop 3: Darvaza Gas Crater",
+     "recommendedDuration": "1 Night (Desert camp)",
+     "durationBadge": "1 Day",
+     "highlights": [
+      "Burning gas crater (\"Door to Hell\")",
+      "Water and mud craters",
+      "Karakum Desert dunes"
+     ],
+     "activities": [
+      "Watch the crater glow after dark.",
+      "Sleep under the stars at a tent camp.",
+      "Explore the other craters by day."
+     ],
+     "foodAndDrinks": [
+      "Grilled shashlik",
+      "Gök çaý"
+     ],
+     "criticalTips": [
+      "Do not get too close to the edge; there are no railings.",
+      "The desert gets cold at night; bring warm clothes."
+     ],
+     "mapsQuery": "Darvaza Gas Crater, Turkmenistan"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Stop 4: Konye-Urgench",
+     "recommendedDuration": "1 Day (Khorezm heritage)",
+     "durationBadge": "1 Day",
+     "highlights": [
+      "Kutlug Timur Minaret",
+      "Turabek Khanum Mausoleum",
+      "Najm ad-Din Kubra Mausoleum"
+     ],
+     "activities": [
+      "Tour the UNESCO site with a guide.",
+      "Admire the dome mosaics of Turabek Khanum.",
+      "Observe local pilgrimage traditions at the shrines."
+     ],
+     "foodAndDrinks": [
+      "Gutap",
+      "Chal"
+     ],
+     "criticalTips": [
+      "If continuing to Uzbekistan (Khiva), check border hours in advance.",
+      "Wear covering clothes at the mausoleums."
+     ],
+     "mapsQuery": "Konye-Urgench, Turkmenistan"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Palaw (plov with meat and carrots)",
+     "Dograma (festive dish of bread, meat and onion)",
+     "Ishlekli (thick meat pie)"
+    ],
+    "drinks": [
+     "Gök çaý (green tea)",
+     "Chal (fermented camel milk)",
+     "Gatyk (yogurt drink)"
+    ],
+    "streetFoods": [
+     "Somsa (tandoor-baked pastry)",
+     "Gutap (thin fried stuffed flatbread)",
+     "Turkmen melons"
+    ],
+    "diningAdvice": "Meat dishes and plov dominate; flavours are close to Turkish cuisine. Keep cash in manat."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Recent-series US dollars in cash",
+     "Offline maps",
+     "Sun hat and sunscreen",
+     "Warm layers for the desert night"
+    ],
+    "safetyAndEtiquette": [
+     "Do not photograph government buildings or checkpoints.",
+     "Dress modestly and keep quiet at holy sites."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Type C/F sockets (220V), same as Turkey; no adapter needed."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Tap water is not drinkable; use bottled water only and be careful with ice.",
+    "vaccines": [
+     "Routine vaccines (tetanus-diphtheria, MMR)",
+     "Hepatitis A",
+     "Typhoid"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "03 / 003"
+   },
+   "tipping": {
+    "custom": "Tipping is not traditional; small tips are appreciated in tourist restaurants.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "A small tip for guides and drivers at the end of the day is common."
+   },
+   "taxFree": {
+    "vatRefundPercent": "15% VAT; no tourist refund",
+    "minSpend": "Not applicable",
+    "customsNote": "Turkmenistan has no tourist VAT refund. Exporting a carpet requires an official export certificate; carpets without it cause problems at customs."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "$3 - $8",
+    "topCarriers": [
+     "TMCELL (Altyn Asyr)",
+     "Türkmentelekom"
+    ],
+    "airportSimTrapWarning": "TMCELL is the only real mobile operator; a SIM needs a passport and registration, and plans are expensive. International eSIMs generally do not work; rely on hotel Wi-Fi."
+   },
+   "touristScams": [
+    {
+     "title": "Black-Market Exchange",
+     "desc": "Street offers of much better rates are illegal and risk counterfeit notes.",
+     "tip": "Exchange only at banks and official bureaus."
+    },
+    {
+     "title": "Unlicensed Darvaza Trip",
+     "desc": "Unlicensed drivers offer cheap trips and raise the price on the way.",
+     "tip": "Book with a licensed operator and a written price."
+    },
+    {
+     "title": "Night Taxi",
+     "desc": "Unofficial cars charge high fares at night.",
+     "tip": "Use a taxi called by your hotel and agree the price first."
+    }
+   ]
+  }
+ },
+ "de": {
+  "insights": {
+   "currency": "Turkmenistan-Manat (TMT)",
+   "plugType": "Typ C, F (220V, 50Hz)",
+   "bestMonths": "April – Mai und September – Oktober (im Sommer bis 45 °C)",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Sicher",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Straßenkriminalität ist sehr gering; entscheidend sind strenge Regeln: Fotografieren von Regierungsgebäuden, illegaler Geldwechsel und Drogen werden hart bestraft.",
+    "commonScams": [
+     "Straßenangebote zum Geldwechsel zum Schwarzmarktkurs (illegal)",
+     "Unlizenzierte Fahrer mit überteuerten Darvaza-Touren",
+     "Inoffizielle Taxis nachts mit hohen Preisen"
+    ],
+    "safeTravelTips": [
+     "Saubere, neuere US-Dollar-Scheine in bar mitnehmen; ausländische Karten funktionieren selten.",
+     "Keine Regierungsgebäude, Paläste oder Polizeiposten fotografieren.",
+     "Das Internet ist stark eingeschränkt; Karten und Dokumente vorab offline speichern."
+    ],
+    "emergencyNumbers": {
+     "police": "02 / 002",
+     "ambulance": "03 / 003",
+     "general": "02 / 002"
+    }
+   },
+   "internet": {
+    "networkCoverage": "3G/4G in Städten; in Wüste und auf dem Land sehr schwach oder kein Netz",
+    "costPerGbUsd": "~3 - 8 $",
+    "esimAvailability": "Sehr eingeschränkt",
+    "bestCarriers": [
+     "TMCELL (Altyn Asyr)",
+     "Türkmentelekom"
+    ],
+    "vpnRequired": true
+   },
+   "transport": {
+    "transportQuality": "Angemessen",
+    "costLevel": "Moderat",
+    "singleTicketUsd": "0.10 - 0.30 $",
+    "dailyPassUsd": "~1 $",
+    "popularRideApps": [
+     "Hotel- / Reiseveranstalter-Transfers",
+     "Offizielle Taxis in Aschgabat"
+    ],
+    "taxiAdvice": "Internationale Fahrdienst-Apps gibt es nicht; vom Hotel bestellte oder offizielle Taxis nutzen und den Preis vorab vereinbaren."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "50 - 80 $",
+    "dailyBudgetMidrangeUsd": "120 - 200 $",
+    "budgetMealUsd": "5 - 15 $",
+    "coffeeUsd": "2 - 5 $",
+    "waterBottleUsd": "0.50 - 1 $",
+    "hostelDormUsd": "25 - 40 $",
+    "hotel3StarUsd": "60 - 130 $",
+    "flightCostIndex": "Teuer",
+    "flightTip": "Turkish Airlines und Turkmenistan Airlines fliegen direkt von Istanbul nach Aschgabat; es gibt wenige Flüge, daher früh buchen."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Brot (Tschorek) ist heilig; nie auf den Boden oder verkehrt herum legen.",
+     "In Wohnungen und manchen Lokalen zieht man die Schuhe aus.",
+     "Tee wird in kleinen Schalen serviert; mindestens eine annehmen.",
+     "Schlicht und bedeckt kleiden, laute Diskussionen in der Öffentlichkeit meiden."
+    ],
+    "festivals": [
+     "Nouruz (21. März)",
+     "Tag des Achal-Tekkiners (letzter Sonntag im April)",
+     "Tag der Melone (zweiter Sonntag im August)"
+    ],
+    "lifestyle": "Eine Hauptstadt aus weißem Marmor, tief verwurzelte Nomadenkultur, handgeknüpfte Teppiche und großer Stolz auf Achal-Tekkiner-Pferde."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Gaskrater Darvaza (\"Tor zur Hölle\")",
+     "Aschgabat – Zentrum aus weißem Marmor",
+     "Antikes Merw (UNESCO)",
+     "Köneürgentsch (UNESCO)",
+     "Parthische Festungen von Nisa (UNESCO)",
+     "Yangykala-Canyon"
+    ],
+    "bestSeasons": "April – Mai und September – Oktober (im Sommer bis 45 °C)",
+    "travelStyleTip": "Das Land wird meist mit einem lizenzierten Reiseveranstalter bereist; eine Zeltnacht in Darvaza ist der Höhepunkt."
+   },
+   "religion": {
+    "primaryReligions": "Sunnitischer Islam (~89 %), orthodoxes Christentum (~9 %).",
+    "respectNorms": "In Moscheen und Mausoleen Schultern und Knie bedecken, Frauen bedecken das Haar; Pilger an Schreinen respektieren.",
+    "sacredSites": [
+     "Türkmenbaşy-Ruhy-Moschee (Gypjak)",
+     "Mausoleum Sultan Sandschars (Merw)",
+     "Mausoleum Nadschm ad-Din Kubras (Köneürgentsch)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Turkmenisch (Amtssprache). Russisch wird weithin verstanden; Türkischsprechende kommen in Grundzügen zurecht.",
+    "englishProficiency": "Sehr gering; Russisch oder Türkisch hilft mehr als Englisch.",
+    "phrases": [
+     {
+      "phrase": "Salam!",
+      "meaning": "Hallo",
+      "translation": "Hallo",
+      "pronunciation": "sa-LAM"
+     },
+     {
+      "phrase": "Sag boluň",
+      "meaning": "Danke",
+      "translation": "Danke",
+      "pronunciation": "sagh bo-LUNG"
+     },
+     {
+      "phrase": "Haýyş edýärin",
+      "meaning": "Bitte",
+      "translation": "Bitte",
+      "pronunciation": "hah-YISH ed-YAH-rin"
+     },
+     {
+      "phrase": "Bu näçe?",
+      "meaning": "Wie viel kostet das?",
+      "translation": "Wie viel kostet das?",
+      "pronunciation": "bu NAH-che?"
+     },
+     {
+      "phrase": "Hoş gal",
+      "meaning": "Auf Wiedersehen",
+      "translation": "Auf Wiedersehen",
+      "pronunciation": "hosh GAL"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Nisa, frühes Zentrum der Parther, und Merw, Hauptstadt der Großseldschuken, liegen in diesem Land. Im 19. Jahrhundert kam es unter russische Herrschaft, wurde 1924 Turkmenische SSR und erklärte 1991 die Unabhängigkeit.",
+    "milestones": [
+     "3. Jh. v. Chr.: Nisa wird parthische Hauptstadt",
+     "11.-12. Jh.: Merw ist Hauptstadt der Großseldschuken",
+     "1881: Schlacht von Gökdepe und russische Herrschaft",
+     "1991: Unabhängigkeit"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Palaw (Plov mit Fleisch und Karotten)",
+     "Dograma (Festgericht aus Brot, Fleisch und Zwiebeln)",
+     "Ischlekli (dicke Fleischpastete)"
+    ],
+    "traditionalDrinks": [
+     "Gök çaý (grüner Tee)",
+     "Tschal (vergorene Kamelmilch)",
+     "Gatyk (Joghurtgetränk)"
+    ],
+    "streetFoodAndDesserts": [
+     "Somsa (Teigtaschen aus dem Tandoor)",
+     "Gutap (dünnes, gefülltes frittiertes Fladenbrot)",
+     "Turkmenische Melonen"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Magtymguly Pyragy (Dichter, Denker)",
+     "Sultan Sandschar (Seldschukensultan)",
+     "Nury Halmammedow (Komponist)"
+    ],
+    "strongSectors": [
+     "Erdgas",
+     "Baumwolle und Textilien",
+     "Handgeknüpfte Teppiche"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Bargeld ist entscheidend; zwischen offiziellem und Schwarzmarktkurs klafft eine große Lücke, inoffizieller Tausch ist jedoch illegal. Ausländische Karten nur in einigen großen Hotels.",
+    "tippingCulture": "Trinkgeld ist keine Pflicht; 5-10 % in Restaurants in Aschgabat und kleine Beträge für Guides/Fahrer werden geschätzt.",
+    "economicPillars": "Erdgasexport, Erdölprodukte, Baumwolle und Textilien, Landwirtschaft."
+   }
+  },
+  "itin": {
+   "routeName": "Turkmenistan-Seidenstraße: Aschgabat, Merw, Darvaza und Köneürgentsch",
+   "routeSummary": "Eine 6-tägige Route vom marmorweißen Aschgabat und parthischen Nisa zur Seldschukenhauptstadt Merw, zum Darvaza-Krater in der Karakum und ins choresmische Köneürgentsch.",
+   "totalDays": 6,
+   "idealDurationText": "6-Tage-Seidenstraßenroute",
+   "bestSeason": "April – Mai und September – Oktober (im Sommer bis 45 °C)",
+   "transportMode": "4x4 mit Reiseveranstalter + Inlandsflug (Aschgabat–Mary)",
+   "paceLevel": "Intensiv (Geschichte & Wüste)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stopp 1: Aschgabat und Nisa",
+     "recommendedDuration": "2 Tage (Hauptstadt und Umgebung)",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "Unabhängigkeitsdenkmal und Marmorboulevards",
+      "Turkmenisches Teppichmuseum",
+      "Basar Altyn Asyr (Tolkutschka)",
+      "Parthische Festungen von Nisa"
+     ],
+     "activities": [
+      "Riesige handgeknüpfte Teppiche im Teppichmuseum ansehen.",
+      "Am Sonntag auf dem Tolkutschka-Basar einkaufen.",
+      "Abends durch das beleuchtete Zentrum gehen."
+     ],
+     "foodAndDrinks": [
+      "Palaw",
+      "Gök çaý",
+      "Somsa"
+     ],
+     "criticalTips": [
+      "Keine Regierungsgebäude fotografieren; Beamte können einschreiten.",
+      "Das Zentrum wird spätabends sehr ruhig."
+     ],
+     "mapsQuery": "Ashgabat, Turkmenistan"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stopp 2: Antikes Merw (Mary)",
+     "recommendedDuration": "1 Tag (Hin- und Rückflug)",
+     "durationBadge": "1 Tag",
+     "highlights": [
+      "Mausoleum Sultan Sandschars",
+      "Große und Kleine Kyz Kala",
+      "Mauern von Erk Kala und Gyaur Kala"
+     ],
+     "activities": [
+      "Die Ruinen der Seldschukenhauptstadt mit Guide erkunden.",
+      "Das Regionalmuseum Mary besuchen.",
+      "Kyz Kala bei Sonnenuntergang fotografieren."
+     ],
+     "foodAndDrinks": [
+      "Ischlekli",
+      "Gatyk"
+     ],
+     "criticalTips": [
+      "Das Gelände ist riesig; ein Fahrzeug ist nötig.",
+      "Im Sommer Hut und viel Wasser mitnehmen."
+     ],
+     "mapsQuery": "Ancient Merv, Mary, Turkmenistan"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stopp 3: Gaskrater Darvaza",
+     "recommendedDuration": "1 Nacht (Wüstencamp)",
+     "durationBadge": "1 Tag",
+     "highlights": [
+      "Brennender Gaskrater (\"Tor zur Hölle\")",
+      "Wasser- und Schlammkrater",
+      "Dünen der Karakum"
+     ],
+     "activities": [
+      "Den Krater nach Einbruch der Dunkelheit leuchten sehen.",
+      "Im Zeltcamp unter Sternen schlafen.",
+      "Die anderen Krater bei Tag erkunden."
+     ],
+     "foodAndDrinks": [
+      "Schaschlik vom Grill",
+      "Gök çaý"
+     ],
+     "criticalTips": [
+      "Nicht zu nah an den Rand gehen; es gibt kein Geländer.",
+      "Nachts wird es in der Wüste kalt; warme Kleidung mitnehmen."
+     ],
+     "mapsQuery": "Darvaza Gas Crater, Turkmenistan"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Stopp 4: Köneürgentsch",
+     "recommendedDuration": "1 Tag (Erbe Choresmiens)",
+     "durationBadge": "1 Tag",
+     "highlights": [
+      "Minarett Kutlug Timur",
+      "Mausoleum der Turabek Khanum",
+      "Mausoleum Nadschm ad-Din Kubras"
+     ],
+     "activities": [
+      "Die UNESCO-Stätte mit Guide besichtigen.",
+      "Die Kuppelmosaiken der Turabek Khanum bewundern.",
+      "Lokale Pilgertraditionen an den Schreinen beobachten."
+     ],
+     "foodAndDrinks": [
+      "Gutap",
+      "Tschal"
+     ],
+     "criticalTips": [
+      "Bei Weiterreise nach Usbekistan (Chiwa) die Grenzzeiten vorab klären.",
+      "An den Mausoleen bedeckende Kleidung tragen."
+     ],
+     "mapsQuery": "Konye-Urgench, Turkmenistan"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Palaw (Plov mit Fleisch und Karotten)",
+     "Dograma (Festgericht aus Brot, Fleisch und Zwiebeln)",
+     "Ischlekli (dicke Fleischpastete)"
+    ],
+    "drinks": [
+     "Gök çaý (grüner Tee)",
+     "Tschal (vergorene Kamelmilch)",
+     "Gatyk (Joghurtgetränk)"
+    ],
+    "streetFoods": [
+     "Somsa (Teigtaschen aus dem Tandoor)",
+     "Gutap (dünnes, gefülltes frittiertes Fladenbrot)",
+     "Turkmenische Melonen"
+    ],
+    "diningAdvice": "Fleischgerichte und Plov dominieren; der Geschmack ähnelt der türkischen Küche. Bargeld in Manat bereithalten."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Neuere US-Dollar-Scheine in bar",
+     "Offline-Karten",
+     "Sonnenhut und Sonnencreme",
+     "Warme Schichten für die Wüstennacht"
+    ],
+    "safetyAndEtiquette": [
+     "Keine Regierungsgebäude oder Kontrollposten fotografieren.",
+     "An heiligen Stätten bedeckt kleiden und leise sein."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Steckdosen Typ C/F (220 V) wie in der Türkei; kein Adapter nötig."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Leitungswasser ist nicht trinkbar; nur Flaschenwasser verwenden und bei Eis vorsichtig sein.",
+    "vaccines": [
+     "Standardimpfungen (Tetanus-Diphtherie, MMR)",
+     "Hepatitis A",
+     "Typhus"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "03 / 003"
+   },
+   "tipping": {
+    "custom": "Trinkgeld ist nicht traditionell; in Touristenrestaurants werden kleine Beträge geschätzt.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "Für Guides und Fahrer ist ein kleines Trinkgeld am Tagesende üblich."
+   },
+   "taxFree": {
+    "vatRefundPercent": "15 % MwSt.; keine Erstattung für Touristen",
+    "minSpend": "Entfällt",
+    "customsNote": "Turkmenistan hat keine MwSt.-Erstattung für Touristen. Für die Ausfuhr eines Teppichs ist ein offizielles Exportzertifikat nötig; ohne gibt es Probleme beim Zoll."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "$3 - $8",
+    "topCarriers": [
+     "TMCELL (Altyn Asyr)",
+     "Türkmentelekom"
+    ],
+    "airportSimTrapWarning": "TMCELL ist der einzige echte Mobilfunkanbieter; für eine SIM braucht man Pass und Registrierung, Tarife sind teuer. Internationale eSIMs funktionieren meist nicht; auf Hotel-WLAN setzen."
+   },
+   "touristScams": [
+    {
+     "title": "Schwarzmarkt-Wechsel",
+     "desc": "Viel bessere Kurse auf der Straße sind illegal und bergen Falschgeldrisiko.",
+     "tip": "Nur bei Banken und offiziellen Wechselstuben tauschen."
+    },
+    {
+     "title": "Unlizenzierte Darvaza-Tour",
+     "desc": "Unlizenzierte Fahrer bieten billige Touren an und erhöhen unterwegs den Preis.",
+     "tip": "Mit lizenziertem Veranstalter und schriftlichem Preis buchen."
+    },
+    {
+     "title": "Nachttaxi",
+     "desc": "Inoffizielle Wagen verlangen nachts hohe Preise.",
+     "tip": "Ein vom Hotel bestelltes Taxi nehmen und den Preis vorher klären."
+    }
+   ]
+  }
+ },
+ "es": {
+  "insights": {
+   "currency": "Manat turcomano (TMT)",
+   "plugType": "Tipo C, F (220V, 50Hz)",
+   "bestMonths": "Abril – mayo y septiembre – octubre (en verano se alcanzan 45 °C)",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "La delincuencia callejera es muy baja; lo importante son las normas estrictas: fotografiar edificios oficiales, cambiar divisas ilegalmente o las drogas conllevan duras sanciones.",
+    "commonScams": [
+     "Ofertas callejeras para cambiar dinero al tipo del mercado negro (ilegal)",
+     "Conductores sin licencia que ofrecen viajes caros a Darvaza",
+     "Taxis no oficiales de noche con tarifas altas"
+    ],
+    "safeTravelTips": [
+     "Lleva dólares estadounidenses en efectivo, limpios y de series recientes; las tarjetas extranjeras rara vez funcionan.",
+     "No fotografíes edificios oficiales, palacios ni puestos policiales.",
+     "Internet está muy restringido; descarga mapas y documentos sin conexión antes del viaje."
+    ],
+    "emergencyNumbers": {
+     "police": "02 / 002",
+     "ambulance": "03 / 003",
+     "general": "02 / 002"
+    }
+   },
+   "internet": {
+    "networkCoverage": "3G/4G en ciudades; cobertura muy débil o nula en el desierto y zonas rurales",
+    "costPerGbUsd": "~3 - 8 $",
+    "esimAvailability": "Muy limitada",
+    "bestCarriers": [
+     "TMCELL (Altyn Asyr)",
+     "Türkmentelekom"
+    ],
+    "vpnRequired": true
+   },
+   "transport": {
+    "transportQuality": "Adecuado",
+    "costLevel": "Moderado",
+    "singleTicketUsd": "0.10 - 0.30 $",
+    "dailyPassUsd": "~1 $",
+    "popularRideApps": [
+     "Traslados del hotel / agencia",
+     "Taxis oficiales de Asjabad"
+    ],
+    "taxiAdvice": "No hay apps internacionales de transporte; usa taxis oficiales o pedidos por el hotel y acuerda el precio antes de subir."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "50 - 80 $",
+    "dailyBudgetMidrangeUsd": "120 - 200 $",
+    "budgetMealUsd": "5 - 15 $",
+    "coffeeUsd": "2 - 5 $",
+    "waterBottleUsd": "0.50 - 1 $",
+    "hostelDormUsd": "25 - 40 $",
+    "hotel3StarUsd": "60 - 130 $",
+    "flightCostIndex": "Caro",
+    "flightTip": "Turkish Airlines y Turkmenistan Airlines vuelan directo de Estambul a Asjabad; hay pocos vuelos, reserva con antelación."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "El pan (chorek) es sagrado; nunca lo dejes en el suelo ni boca abajo.",
+     "Hay que descalzarse en las casas y en algunos locales.",
+     "El té se sirve en cuencos pequeños; acepta al menos uno.",
+     "Viste de forma sencilla y recatada y evita discusiones en voz alta en público."
+    ],
+    "festivals": [
+     "Nowruz (21 de marzo)",
+     "Día del Caballo Akhal-Teke (último domingo de abril)",
+     "Día del Melón (segundo domingo de agosto)"
+    ],
+    "lifestyle": "Una capital de mármol blanco, una profunda cultura nómada, alfombras tejidas a mano y gran orgullo por los caballos Akhal-Teke."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Cráter de gas de Darvaza (\"Puerta del Infierno\")",
+     "Asjabad – centro de mármol blanco",
+     "Antigua Merv (UNESCO)",
+     "Konye-Urgench (UNESCO)",
+     "Fortalezas partas de Nisa (UNESCO)",
+     "Cañón de Yangykala"
+    ],
+    "bestSeasons": "Abril – mayo y septiembre – octubre (en verano se alcanzan 45 °C)",
+    "travelStyleTip": "La mayor parte del país se visita con un operador turístico autorizado; la noche de acampada en Darvaza es lo más memorable."
+   },
+   "religion": {
+    "primaryReligions": "Islam suní (~89 %), cristianismo ortodoxo (~9 %).",
+    "respectNorms": "Cubre hombros y rodillas en mezquitas y mausoleos; las mujeres se cubren el cabello. Respeta a los peregrinos en los santuarios.",
+    "sacredSites": [
+     "Mezquita Türkmenbaşy Ruhy (Gypjak)",
+     "Mausoleo del sultán Sanjar (Merv)",
+     "Mausoleo de Najm ad-Din Kubra (Konye-Urgench)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Turcomano (oficial). El ruso se entiende ampliamente; quien hable turco puede comunicarse a nivel básico.",
+    "englishProficiency": "Muy bajo; el ruso o el turco son más útiles que el inglés.",
+    "phrases": [
+     {
+      "phrase": "Salam!",
+      "meaning": "Hola",
+      "translation": "Hola",
+      "pronunciation": "sa-LAM"
+     },
+     {
+      "phrase": "Sag boluň",
+      "meaning": "Gracias",
+      "translation": "Gracias",
+      "pronunciation": "sagh bo-LUNG"
+     },
+     {
+      "phrase": "Haýyş edýärin",
+      "meaning": "Por favor",
+      "translation": "Por favor",
+      "pronunciation": "hah-YISH ed-YAH-rin"
+     },
+     {
+      "phrase": "Bu näçe?",
+      "meaning": "¿Cuánto cuesta esto?",
+      "translation": "¿Cuánto cuesta esto?",
+      "pronunciation": "bu NAH-che?"
+     },
+     {
+      "phrase": "Hoş gal",
+      "meaning": "Adiós",
+      "translation": "Adiós",
+      "pronunciation": "hosh GAL"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Aquí se encuentran Nisa, primer centro parto, y Merv, capital de los grandes selyúcidas. Pasó a dominio ruso en el siglo XIX, fue la RSS de Turkmenistán desde 1924 y declaró la independencia en 1991.",
+    "milestones": [
+     "Siglo III a. C.: Nisa, capital parta",
+     "Siglos XI-XII: Merv, capital del Gran Imperio selyúcida",
+     "1881: batalla de Geok Tepe y dominio ruso",
+     "1991: independencia"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Palaw (plov con carne y zanahoria)",
+     "Dograma (plato festivo de pan, carne y cebolla)",
+     "Ishlekli (empanada gruesa de carne)"
+    ],
+    "traditionalDrinks": [
+     "Gök çaý (té verde)",
+     "Chal (leche de camella fermentada)",
+     "Gatyk (bebida de yogur)"
+    ],
+    "streetFoodAndDesserts": [
+     "Somsa (empanadilla al horno tandur)",
+     "Gutap (pan fino frito y relleno)",
+     "Melones turcomanos"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Magtymguly Pyragy (poeta, pensador)",
+     "Sultán Sanjar (sultán selyúcida)",
+     "Nury Halmammedov (compositor)"
+    ],
+    "strongSectors": [
+     "Gas natural",
+     "Algodón y textiles",
+     "Alfombras tejidas a mano"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Manda el efectivo; hay una gran diferencia entre el cambio oficial y el del mercado negro, pero el cambio no oficial es ilegal. Las tarjetas extranjeras solo funcionan en algunos grandes hoteles.",
+    "tippingCulture": "La propina no es obligatoria; en restaurantes de Asjabad se agradece un 5-10 % y algo para guías y conductores.",
+    "economicPillars": "Exportación de gas natural, derivados del petróleo, algodón y textiles, agricultura."
+   }
+  },
+  "itin": {
+   "routeName": "Ruta de la Seda en Turkmenistán: Asjabad, Merv, Darvaza y Konye-Urgench",
+   "routeSummary": "Ruta de 6 días desde la marmórea Asjabad y la parta Nisa hasta la capital selyúcida de Merv, el cráter de Darvaza en el desierto de Karakum y la corasmia Konye-Urgench.",
+   "totalDays": 6,
+   "idealDurationText": "Itinerario de 6 días por la Ruta de la Seda",
+   "bestSeason": "Abril – mayo y septiembre – octubre (en verano se alcanzan 45 °C)",
+   "transportMode": "Todoterreno con operador turístico + vuelo interno (Asjabad–Mary)",
+   "paceLevel": "Intenso (historia y desierto)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Asjabad y Nisa",
+     "recommendedDuration": "2 días (capital y alrededores)",
+     "durationBadge": "2 días",
+     "highlights": [
+      "Monumento a la Independencia y bulevares de mármol",
+      "Museo de la Alfombra Turcomana",
+      "Bazar Altyn Asyr (Tolkuchka)",
+      "Fortalezas partas de Nisa"
+     ],
+     "activities": [
+      "Contempla alfombras gigantes tejidas a mano en el Museo de la Alfombra.",
+      "Compra en el bazar Tolkuchka el domingo.",
+      "Pasea de noche por el centro iluminado."
+     ],
+     "foodAndDrinks": [
+      "Palaw",
+      "Gök çaý",
+      "Somsa"
+     ],
+     "criticalTips": [
+      "No fotografíes edificios oficiales; los agentes pueden detenerte.",
+      "El centro se queda muy tranquilo a altas horas."
+     ],
+     "mapsQuery": "Ashgabat, Turkmenistan"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Antigua Merv (Mary)",
+     "recommendedDuration": "1 día (vuelo de ida y vuelta)",
+     "durationBadge": "1 día",
+     "highlights": [
+      "Mausoleo del sultán Sanjar",
+      "Gran y Pequeña Kyz Kala",
+      "Murallas de Erk Kala y Gyaur Kala"
+     ],
+     "activities": [
+      "Recorre con guía las ruinas de la capital selyúcida.",
+      "Visita el Museo Regional de Mary.",
+      "Fotografía Kyz Kala al atardecer."
+     ],
+     "foodAndDrinks": [
+      "Ishlekli",
+      "Gatyk"
+     ],
+     "criticalTips": [
+      "El recinto es enorme; necesitas vehículo.",
+      "En verano lleva sombrero y mucha agua."
+     ],
+     "mapsQuery": "Ancient Merv, Mary, Turkmenistan"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Cráter de gas de Darvaza",
+     "recommendedDuration": "1 noche (campamento en el desierto)",
+     "durationBadge": "1 día",
+     "highlights": [
+      "Cráter de gas en llamas (\"Puerta del Infierno\")",
+      "Cráteres de agua y barro",
+      "Dunas del desierto de Karakum"
+     ],
+     "activities": [
+      "Observa el resplandor del cráter de noche.",
+      "Duerme bajo las estrellas en un campamento de tiendas.",
+      "Explora los otros cráteres de día."
+     ],
+     "foodAndDrinks": [
+      "Shashlik a la parrilla",
+      "Gök çaý"
+     ],
+     "criticalTips": [
+      "No te acerques demasiado al borde; no hay barandillas.",
+      "El desierto se enfría de noche; lleva ropa de abrigo."
+     ],
+     "mapsQuery": "Darvaza Gas Crater, Turkmenistan"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Konye-Urgench",
+     "recommendedDuration": "1 día (herencia de Corasmia)",
+     "durationBadge": "1 día",
+     "highlights": [
+      "Minarete de Kutlug Timur",
+      "Mausoleo de Turabek Khanum",
+      "Mausoleo de Najm ad-Din Kubra"
+     ],
+     "activities": [
+      "Visita con guía el sitio de la UNESCO.",
+      "Admira los mosaicos de la cúpula de Turabek Khanum.",
+      "Observa las tradiciones de peregrinación en los santuarios."
+     ],
+     "foodAndDrinks": [
+      "Gutap",
+      "Chal"
+     ],
+     "criticalTips": [
+      "Si sigues a Uzbekistán (Jiva), consulta antes el horario fronterizo.",
+      "Lleva ropa que cubra en los mausoleos."
+     ],
+     "mapsQuery": "Konye-Urgench, Turkmenistan"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Palaw (plov con carne y zanahoria)",
+     "Dograma (plato festivo de pan, carne y cebolla)",
+     "Ishlekli (empanada gruesa de carne)"
+    ],
+    "drinks": [
+     "Gök çaý (té verde)",
+     "Chal (leche de camella fermentada)",
+     "Gatyk (bebida de yogur)"
+    ],
+    "streetFoods": [
+     "Somsa (empanadilla al horno tandur)",
+     "Gutap (pan fino frito y relleno)",
+     "Melones turcomanos"
+    ],
+    "diningAdvice": "Dominan los platos de carne y el plov, de sabores cercanos a la cocina turca. Ten efectivo en manat."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Dólares estadounidenses recientes en efectivo",
+     "Mapas sin conexión",
+     "Sombrero y protector solar",
+     "Ropa de abrigo para la noche en el desierto"
+    ],
+    "safetyAndEtiquette": [
+     "No fotografíes edificios oficiales ni controles.",
+     "Viste con recato y guarda silencio en lugares sagrados."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Enchufes tipo C/F (220 V), como en Turquía; no hace falta adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "El agua del grifo no es potable; usa solo agua embotellada y cuidado con el hielo.",
+    "vaccines": [
+     "Vacunas rutinarias (tétanos-difteria, triple vírica)",
+     "Hepatitis A",
+     "Fiebre tifoidea"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "03 / 003"
+   },
+   "tipping": {
+    "custom": "La propina no es tradicional; en restaurantes turísticos se agradece algo.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "Es habitual una pequeña propina para guías y conductores al final del día."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA del 15 %; sin reembolso para turistas",
+    "minSpend": "No aplica",
+    "customsNote": "Turkmenistán no ofrece reembolso del IVA a turistas. Para sacar una alfombra se necesita un certificado oficial de exportación; sin él habrá problemas en aduana."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "$3 - $8",
+    "topCarriers": [
+     "TMCELL (Altyn Asyr)",
+     "Türkmentelekom"
+    ],
+    "airportSimTrapWarning": "TMCELL es el único operador móvil real; la SIM requiere pasaporte y registro, y los planes son caros. Las eSIM internacionales no suelen funcionar; confía en el wifi del hotel."
+   },
+   "touristScams": [
+    {
+     "title": "Cambio en el mercado negro",
+     "desc": "Las ofertas callejeras con mucho mejor cambio son ilegales y pueden incluir billetes falsos.",
+     "tip": "Cambia solo en bancos y oficinas oficiales."
+    },
+    {
+     "title": "Viaje a Darvaza sin licencia",
+     "desc": "Conductores sin licencia ofrecen viajes baratos y suben el precio por el camino.",
+     "tip": "Reserva con un operador autorizado y precio por escrito."
+    },
+    {
+     "title": "Taxi nocturno",
+     "desc": "Coches no oficiales cobran tarifas altas de noche.",
+     "tip": "Usa un taxi pedido por el hotel y acuerda el precio antes."
+    }
+   ]
+  }
+ },
+ "ru": {
+  "insights": {
+   "currency": "Туркменский манат (TMT)",
+   "plugType": "Тип C, F (220V, 50Hz)",
+   "bestMonths": "Апрель – май и сентябрь – октябрь (летом до +45 °C)",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Безопасно",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Уличная преступность очень низкая; главное — строгие правила: съёмка правительственных зданий, нелегальный обмен валюты и наркотики караются сурово.",
+    "commonScams": [
+     "Уличные предложения обменять деньги по курсу чёрного рынка (незаконно)",
+     "Нелицензированные водители с дорогими поездками к Дарвазе",
+     "Неофициальные такси ночью с высокой ценой"
+    ],
+    "safeTravelTips": [
+     "Возьмите чистые доллары США новых серий наличными; иностранные карты почти не работают.",
+     "Не фотографируйте правительственные здания, дворцы и посты полиции.",
+     "Интернет сильно ограничен; заранее скачайте карты и документы офлайн."
+    ],
+    "emergencyNumbers": {
+     "police": "02 / 002",
+     "ambulance": "03 / 003",
+     "general": "02 / 002"
+    }
+   },
+   "internet": {
+    "networkCoverage": "3G/4G в городах; в пустыне и сельской местности связь очень слабая или отсутствует",
+    "costPerGbUsd": "~3 - 8 $",
+    "esimAvailability": "Очень ограничено",
+    "bestCarriers": [
+     "TMCELL (Altyn Asyr)",
+     "Türkmentelekom"
+    ],
+    "vpnRequired": true
+   },
+   "transport": {
+    "transportQuality": "Удовлетворительно",
+    "costLevel": "Умеренно",
+    "singleTicketUsd": "0.10 - 0.30 $",
+    "dailyPassUsd": "~1 $",
+    "popularRideApps": [
+     "Трансферы отеля / туроператора",
+     "Официальные такси Ашхабада"
+    ],
+    "taxiAdvice": "Международных приложений такси нет; пользуйтесь официальными или вызванными отелем такси и договаривайтесь о цене заранее."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "50 - 80 $",
+    "dailyBudgetMidrangeUsd": "120 - 200 $",
+    "budgetMealUsd": "5 - 15 $",
+    "coffeeUsd": "2 - 5 $",
+    "waterBottleUsd": "0.50 - 1 $",
+    "hostelDormUsd": "25 - 40 $",
+    "hotel3StarUsd": "60 - 130 $",
+    "flightCostIndex": "Дорого",
+    "flightTip": "Turkish Airlines и Turkmenistan Airlines летают напрямую из Стамбула в Ашхабад; рейсов мало, бронируйте заранее."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Хлеб (чорек) священен: его не кладут на землю и не переворачивают.",
+     "В домах и некоторых заведениях снимают обувь.",
+     "Чай подают в пиалах; не отказывайтесь хотя бы от одной.",
+     "Одевайтесь просто и закрыто, избегайте громких споров на людях."
+    ],
+    "festivals": [
+     "Новруз (21 марта)",
+     "День ахалтекинского скакуна (последнее воскресенье апреля)",
+     "День дыни (второе воскресенье августа)"
+    ],
+    "lifestyle": "Беломраморная столица, глубокая кочевая культура, ручные ковры и гордость за ахалтекинских лошадей."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Газовый кратер Дарваза («Врата ада»)",
+     "Ашхабад – беломраморный центр",
+     "Древний Мерв (ЮНЕСКО)",
+     "Кёнеургенч (ЮНЕСКО)",
+     "Парфянские крепости Нисы (ЮНЕСКО)",
+     "Каньон Янгыкала"
+    ],
+    "bestSeasons": "Апрель – май и сентябрь – октябрь (летом до +45 °C)",
+    "travelStyleTip": "Большую часть страны посещают с лицензированным туроператором; ночёвка в лагере у Дарвазы — главный момент поездки."
+   },
+   "religion": {
+    "primaryReligions": "Ислам суннитского толка (~89 %), православие (~9 %).",
+    "respectNorms": "В мечетях и мавзолеях закрывайте плечи и колени, женщины покрывают волосы; уважайте паломников у святынь.",
+    "sacredSites": [
+     "Мечеть Туркменбаши Рухы (Гыпджак)",
+     "Мавзолей султана Санджара (Мерв)",
+     "Мавзолей Наджм ад-Дина Кубры (Кёнеургенч)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Туркменский (государственный). Русский широко понимают; говорящие по-турецки объяснятся на базовом уровне.",
+    "englishProficiency": "Очень низкий; русский или турецкий полезнее английского.",
+    "phrases": [
+     {
+      "phrase": "Salam!",
+      "meaning": "Здравствуйте",
+      "translation": "Здравствуйте",
+      "pronunciation": "sa-LAM"
+     },
+     {
+      "phrase": "Sag boluň",
+      "meaning": "Спасибо",
+      "translation": "Спасибо",
+      "pronunciation": "sagh bo-LUNG"
+     },
+     {
+      "phrase": "Haýyş edýärin",
+      "meaning": "Пожалуйста",
+      "translation": "Пожалуйста",
+      "pronunciation": "hah-YISH ed-YAH-rin"
+     },
+     {
+      "phrase": "Bu näçe?",
+      "meaning": "Сколько это стоит?",
+      "translation": "Сколько это стоит?",
+      "pronunciation": "bu NAH-che?"
+     },
+     {
+      "phrase": "Hoş gal",
+      "meaning": "До свидания",
+      "translation": "До свидания",
+      "pronunciation": "hosh GAL"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Здесь находятся Ниса, ранний центр Парфии, и Мерв, столица Великих Сельджуков. В XIX веке край вошёл в Российскую империю, с 1924 года стал Туркменской ССР, а в 1991 году провозгласил независимость.",
+    "milestones": [
+     "III век до н. э.: Ниса — парфянская столица",
+     "XI-XII века: Мерв — столица Великих Сельджуков",
+     "1881: битва при Геок-Тепе и российское правление",
+     "1991: независимость"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Палов (плов с мясом и морковью)",
+     "Дограма (праздничное блюдо из хлеба, мяса и лука)",
+     "Ишлекли (толстый мясной пирог)"
+    ],
+    "traditionalDrinks": [
+     "Гёк чай (зелёный чай)",
+     "Чал (кисломолочный напиток из верблюжьего молока)",
+     "Гатык (кисломолочный напиток)"
+    ],
+    "streetFoodAndDesserts": [
+     "Сомса (самса из тандыра)",
+     "Гутап (тонкая жареная лепёшка с начинкой)",
+     "Туркменские дыни"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Махтумкули Фраги (поэт, мыслитель)",
+     "Султан Санджар (сельджукский султан)",
+     "Нуры Халмамедов (композитор)"
+    ],
+    "strongSectors": [
+     "Природный газ",
+     "Хлопок и текстиль",
+     "Ручное ковроткачество"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Главное — наличные; официальный курс и курс чёрного рынка сильно различаются, но неофициальный обмен незаконен. Иностранные карты работают лишь в некоторых крупных отелях.",
+    "tippingCulture": "Чаевые не обязательны; в ресторанах Ашхабада ценят 5-10 % и небольшие чаевые гидам и водителям.",
+    "economicPillars": "Экспорт природного газа, нефтепродукты, хлопок и текстиль, сельское хозяйство."
+   }
+  },
+  "itin": {
+   "routeName": "Шёлковый путь Туркменистана: Ашхабад, Мерв, Дарваза и Кёнеургенч",
+   "routeSummary": "6-дневный маршрут от беломраморного Ашхабада и парфянской Нисы к сельджукской столице Мерв, кратеру Дарваза в Каракумах и хорезмийскому Кёнеургенчу.",
+   "totalDays": 6,
+   "idealDurationText": "6-дневный маршрут по Шёлковому пути",
+   "bestSeason": "Апрель – май и сентябрь – октябрь (летом до +45 °C)",
+   "transportMode": "Внедорожник с туроператором + внутренний рейс (Ашхабад–Мары)",
+   "paceLevel": "Насыщенный (история и пустыня)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Остановка 1: Ашхабад и Ниса",
+     "recommendedDuration": "2 дня (столица и окрестности)",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Монумент Независимости и мраморные проспекты",
+      "Музей туркменского ковра",
+      "Рынок «Алтын Асыр» (Толкучка)",
+      "Парфянские крепости Нисы"
+     ],
+     "activities": [
+      "Посмотрите гигантские ручные ковры в Музее ковра.",
+      "В воскресенье загляните на Толкучку.",
+      "Вечером прогуляйтесь по подсвеченному центру."
+     ],
+     "foodAndDrinks": [
+      "Палов",
+      "Гёк чай",
+      "Сомса"
+     ],
+     "criticalTips": [
+      "Не фотографируйте правительственные здания — вас могут остановить.",
+      "Поздно вечером центр становится очень тихим."
+     ],
+     "mapsQuery": "Ashgabat, Turkmenistan"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Остановка 2: Древний Мерв (Мары)",
+     "recommendedDuration": "1 день (перелёт туда и обратно)",
+     "durationBadge": "1 день",
+     "highlights": [
+      "Мавзолей султана Санджара",
+      "Большая и Малая Кыз-Кала",
+      "Стены Эрк-Калы и Гяур-Калы"
+     ],
+     "activities": [
+      "Осмотрите руины сельджукской столицы с гидом.",
+      "Посетите Марыйский областной музей.",
+      "Сфотографируйте Кыз-Калу на закате."
+     ],
+     "foodAndDrinks": [
+      "Ишлекли",
+      "Гатык"
+     ],
+     "criticalTips": [
+      "Территория огромная — нужен транспорт.",
+      "Летом обязательны головной убор и много воды."
+     ],
+     "mapsQuery": "Ancient Merv, Mary, Turkmenistan"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Остановка 3: Газовый кратер Дарваза",
+     "recommendedDuration": "1 ночь (лагерь в пустыне)",
+     "durationBadge": "1 день",
+     "highlights": [
+      "Горящий газовый кратер («Врата ада»)",
+      "Водный и грязевой кратеры",
+      "Барханы Каракумов"
+     ],
+     "activities": [
+      "Полюбуйтесь сиянием кратера после заката.",
+      "Переночуйте под звёздами в палаточном лагере.",
+      "Днём осмотрите другие кратеры."
+     ],
+     "foodAndDrinks": [
+      "Шашлык на мангале",
+      "Гёк чай"
+     ],
+     "criticalTips": [
+      "Не подходите близко к краю — ограждений нет.",
+      "Ночью в пустыне холодно, возьмите тёплую одежду."
+     ],
+     "mapsQuery": "Darvaza Gas Crater, Turkmenistan"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Остановка 4: Кёнеургенч",
+     "recommendedDuration": "1 день (наследие Хорезма)",
+     "durationBadge": "1 день",
+     "highlights": [
+      "Минарет Кутлуг-Тимура",
+      "Мавзолей Тюрабек-ханым",
+      "Мавзолей Наджм ад-Дина Кубры"
+     ],
+     "activities": [
+      "Осмотрите объект ЮНЕСКО с гидом.",
+      "Рассмотрите мозаику купола мавзолея Тюрабек-ханым.",
+      "Понаблюдайте за традициями паломников у святынь."
+     ],
+     "foodAndDrinks": [
+      "Гутап",
+      "Чал"
+     ],
+     "criticalTips": [
+      "Если едете дальше в Узбекистан (Хива), заранее уточните часы работы границы.",
+      "В мавзолеях носите закрытую одежду."
+     ],
+     "mapsQuery": "Konye-Urgench, Turkmenistan"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Палов (плов с мясом и морковью)",
+     "Дограма (праздничное блюдо из хлеба, мяса и лука)",
+     "Ишлекли (толстый мясной пирог)"
+    ],
+    "drinks": [
+     "Гёк чай (зелёный чай)",
+     "Чал (кисломолочный напиток из верблюжьего молока)",
+     "Гатык (кисломолочный напиток)"
+    ],
+    "streetFoods": [
+     "Сомса (самса из тандыра)",
+     "Гутап (тонкая жареная лепёшка с начинкой)",
+     "Туркменские дыни"
+    ],
+    "diningAdvice": "Преобладают мясные блюда и плов, вкусы близки к турецкой кухне. Держите при себе наличные манаты."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Наличные доллары США новых серий",
+     "Офлайн-карты",
+     "Шляпа и солнцезащитный крем",
+     "Тёплые вещи для ночи в пустыне"
+    ],
+    "safetyAndEtiquette": [
+     "Не фотографируйте правительственные здания и блокпосты.",
+     "В святых местах одевайтесь закрыто и соблюдайте тишину."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Розетки типа C/F (220 В), как в Турции; переходник не нужен."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Водопроводную воду пить нельзя; используйте только бутилированную и осторожно со льдом.",
+    "vaccines": [
+     "Плановые прививки (столбняк-дифтерия, КПК)",
+     "Гепатит A",
+     "Брюшной тиф"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "03 / 003"
+   },
+   "tipping": {
+    "custom": "Чаевые не традиционны; в туристических ресторанах небольшая сумма приветствуется.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "Гидам и водителям принято оставлять небольшие чаевые в конце дня."
+   },
+   "taxFree": {
+    "vatRefundPercent": "НДС 15 %; возврата для туристов нет",
+    "minSpend": "Не применяется",
+    "customsNote": "В Туркменистане нет возврата НДС туристам. Для вывоза ковра нужен официальный экспортный сертификат; без него будут проблемы на таможне."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "$3 - $8",
+    "topCarriers": [
+     "TMCELL (Altyn Asyr)",
+     "Türkmentelekom"
+    ],
+    "airportSimTrapWarning": "TMCELL — единственный реальный мобильный оператор; для SIM нужны паспорт и регистрация, тарифы дорогие. Международные eSIM обычно не работают — рассчитывайте на Wi-Fi отеля."
+   },
+   "touristScams": [
+    {
+     "title": "Обмен на чёрном рынке",
+     "desc": "Уличные предложения намного лучшего курса незаконны и чреваты фальшивками.",
+     "tip": "Меняйте только в банках и официальных пунктах."
+    },
+    {
+     "title": "Поездка к Дарвазе без лицензии",
+     "desc": "Нелицензированные водители предлагают дешёвую поездку и поднимают цену в пути.",
+     "tip": "Бронируйте у лицензированного оператора с письменной ценой."
+    },
+    {
+     "title": "Ночное такси",
+     "desc": "Неофициальные машины ночью берут высокую плату.",
+     "tip": "Пользуйтесь такси, вызванным отелем, и обсуждайте цену заранее."
+    }
+   ]
+  }
+ }
+}
