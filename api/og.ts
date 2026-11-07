@@ -3,7 +3,8 @@
  * GET /api/og?c=TH&t=Tayland&b=30%20gün%20vizesiz&s=Türkiye%20pasaportuyla&tone=ok
  * CDN'de uzun süre önbelleklenir. Fotoğraf ve bayrak sitenin kendi dosyalarından gelir.
  */
-import { ImageResponse } from '@vercel/og';
+import satori from 'satori';
+import { Resvg } from '@resvg/resvg-js';
 
 
 type V = { type: string; props: Record<string, unknown> };
@@ -16,7 +17,7 @@ async function fonts(origin: string) {
   if (fontCache.data) return fontCache.data;
   const list: Array<[string, 400 | 800]> = [['latin', 800], ['latin', 400], ['latin-ext', 800], ['latin-ext', 400], ['cyrillic', 800], ['cyrillic', 400]];
   fontCache.data = await Promise.all(
-    list.map(async ([s, w]) => ({ name: 'Noto', data: await fetch(`${origin}/og-fonts/noto-sans-${s}-${w}-normal.woff`).then((r) => r.arrayBuffer()), weight: w, style: 'normal' as const }))
+    list.map(async ([s, w]) => ({ name: s === 'cyrillic' ? 'NotoCyr' : s === 'latin-ext' ? 'NotoExt' : 'Noto', data: await fetch(`${origin}/og-fonts/noto-sans-${s}-${w}-normal.woff`).then((r) => r.arrayBuffer()), weight: w, style: 'normal' as const }))
   );
   return fontCache.data;
 }
@@ -31,13 +32,22 @@ export async function GET(req: Request) {
   const badge = clean(url.searchParams.get('b'), 40);
   const sub = clean(url.searchParams.get('s'), 70);
   const tone = TONE[url.searchParams.get('tone') || ''] || TONE.sea;
-  const photo = c ? `${origin}/og-img/${c}.jpg` : '';
-  const flag = c ? `${origin}/og-img/f-${c}.png` : '';
+  // satori resimleri veri adresi olarak alır; sitenin kendi dosyalarını indirip gömüyoruz
+  const toData = async (u: string, mime: string) => {
+    try {
+      const r = await fetch(u);
+      if (!r.ok) return '';
+      return `data:${mime};base64,${Buffer.from(await r.arrayBuffer()).toString('base64')}`;
+    } catch {
+      return '';
+    }
+  };
+  const [photo, flag] = c ? await Promise.all([toData(`${origin}/og-img/${c}.jpg`, 'image/jpeg'), toData(`${origin}/og-img/f-${c}.png`, 'image/png')]) : ['', ''];
   const big = title.length > 16 ? 76 : 96;
 
   const el = h(
     'div',
-    { style: { width: '100%', height: '100%', display: 'flex', position: 'relative', fontFamily: 'Noto', background: '#0a3f4a' } },
+    { style: { width: '100%', height: '100%', display: 'flex', position: 'relative', fontFamily: 'Noto, NotoExt, NotoCyr', background: '#0a3f4a' } },
     photo ? h('img', { src: photo, width: 1200, height: 630, style: { position: 'absolute', left: 0, top: 0, width: 1200, height: 630, objectFit: 'cover' } }) : null,
     h('div', { style: { position: 'absolute', left: 0, top: 0, width: 1200, height: 630, display: 'flex', background: 'linear-gradient(90deg, rgba(6,30,40,.92) 0%, rgba(6,30,40,.70) 45%, rgba(6,30,40,.15) 100%)' } }),
     h(
@@ -61,12 +71,10 @@ export async function GET(req: Request) {
   );
 
   try {
-    return new ImageResponse(el as never, {
-      width: 1200,
-      height: 630,
-      fonts: await fonts(origin),
-      headers: { 'Cache-Control': 'public, max-age=86400, s-maxage=31536000, immutable' }
-    });
+    // satori yalnızca PNG/JPEG resim alır; resimleri önceden indirip veri adresine çeviriyoruz
+    const svg = await satori(el as never, { width: 1200, height: 630, fonts: await fonts(origin) });
+    const png = new Resvg(svg, { fitTo: { mode: 'width', value: 1200 } }).render().asPng();
+    return new Response(png, { headers: { 'Content-Type': 'image/png', 'Cache-Control': 'public, max-age=86400, s-maxage=31536000, immutable' } });
   } catch {
     return Response.redirect(`${origin}/logo.png`, 302);
   }
