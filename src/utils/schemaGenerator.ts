@@ -11,6 +11,8 @@ import { getCountryName } from '../data/passportData';
 import { getPassportItems } from '../utils/calculator';
 import { buildAbsoluteLocalizedUrl, BASE_URL } from './seoRouter';
 import { INFO } from '../data/passportData';
+import { GEO_DATA } from '../data/geoData';
+import { capitalName } from '../data/capitalNames';
 import { SOCIALS, CONTACT_EMAIL } from '../data/socials';
 
 export interface SchemaGeneratorOptions {
@@ -349,6 +351,9 @@ function getSerpAnswer(
 ): { title: string; description: string } {
   const days = v && /^\d+$/.test(v) ? v : '';
   const free = cat === 'free' || cat === 'id';
+  const geo = GEO_DATA[code];
+  const cap = geo?.capital ? capitalName(code, lang, geo.capital) : '';
+  const CC = cap && cap !== C ? `${C} (${cap})` : C;
   switch (lang) {
     case 'tr': {
       const short = cat === 'id' ? `Kimlikle Vizesiz${days ? ` ${days} Gün` : ''}` : free ? (days ? `${days} Gün Vizesiz` : 'Vizesiz') : cat === 'voa' ? 'Kapıda Vize' : cat === 'evisa' ? 'e-Vize Gerekli' : cat === 'eta' ? 'eTA Gerekli' : 'Vize Gerekli';
@@ -360,8 +365,8 @@ function getSerpAnswer(
         : cat === 'eta' ? `${P} pasaportuyla yola çıkmadan önce elektronik seyahat izni (eTA) alınmalı`
         : `${P} pasaportuyla yola çıkmadan önce konsolosluk vizesi alınmalı`;
       return {
-        title: `${C} Vize İstiyor mu? ${who} ${short} (2026)`,
-        description: `${C}: ${long}. Resmî kaynak, acil numaralar ve uçuş–otel fiyatları.`
+        title: cat === 'id' && pass === 'TR' ? `${C} Kimlikle Gidilir mi? Vize İstiyor mu? (2026)` : `${C} Vize İstiyor mu? ${who} ${short} (2026)`,
+        description: `${CC}: ${long}. Resmî kaynak, güvenlik seviyesi, acil numaralar, gezi rotası ve uçuş–otel fiyatları.`
       };
     }
     case 'de': {
@@ -373,8 +378,8 @@ function getSerpAnswer(
         : cat === 'eta' ? `Mit ${P}-Pass vor der Reise eine elektronische Reisegenehmigung (eTA) beantragen`
         : `Mit ${P}-Pass vor der Reise ein Visum bei der Botschaft beantragen`;
       return {
-        title: `Einreise ${C} 2026: Visum nötig? ${DE_DEMONYM[pass] ? `${dem}: ` : ''}${short}`,
-        description: `${C}: ${long}. Offizielle Quelle, Notrufnummern, günstige Flüge und Hotels.`
+        title: DE_DEMONYM[pass] && pass !== LANG_PASS.de ? `Einreise ${C} für ${dem} 2026: ${short}` : `Einreise ${C} 2026: Visum nötig? ${DE_DEMONYM[pass] ? `${dem}: ` : ''}${short}`,
+        description: `${CC}: ${long}. Offizielle Quelle, Reisewarnung, Notrufnummern, Reiseroute, günstige Flüge und Hotels.`
       };
     }
     case 'es': {
@@ -385,8 +390,8 @@ function getSerpAnswer(
         : cat === 'eta' ? `con pasaporte de ${P} hay que tramitar una autorización electrónica (eTA) antes del viaje`
         : `con pasaporte de ${P} hay que solicitar la visa en el consulado antes del viaje`;
       return {
-        title: `¿Necesito visa para ${C}? Pasaporte de ${P}: ${short} (2026)`,
-        description: `${C}: ${long}. Fuente oficial, teléfonos de emergencia, vuelos y hoteles baratos.`
+        title: `Requisitos para viajar a ${C} 2026: ${short} con pasaporte de ${P}`,
+        description: `${CC}: ${long}. Fuente oficial, nivel de seguridad, teléfonos de emergencia, itinerario, vuelos y hoteles baratos.`
       };
     }
     case 'ru': {
@@ -399,7 +404,7 @@ function getSerpAnswer(
         : `гражданам ${ruOf(P)} нужна виза, оформляется в консульстве до поездки`;
       return {
         title: `Нужна ли виза ${ruIn(C, 'acc')}? ${who}: ${short} (2026)`,
-        description: `${C}: ${long}. Официальный источник, экстренные номера, дешёвые билеты и отели.`
+        description: `${CC}: ${long}. Официальный источник, уровень безопасности, экстренные номера, маршрут, дешёвые билеты и отели.`
       };
     }
     case 'en':
@@ -412,8 +417,8 @@ function getSerpAnswer(
         : cat === 'eta' ? `${P} passport holders need an electronic travel authorisation (eTA) before travel`
         : `${P} passport holders must apply for a visa at an embassy before travel`;
       return {
-        title: pass === LANG_PASS.en ? `Do I Need a Visa for ${C}? ${dem}: ${short} (2026)` : `${C} Visa Requirements for ${dem}: ${short} (2026)`,
-        description: `${C}: ${long}. Official sources, emergency numbers, flight and hotel deals.`
+        title: `${C} Visa Requirements 2026: ${short} for ${dem}`,
+        description: `${CC}: ${long}. Official sources, travel advisory, emergency numbers, itinerary, flight and hotel deals.`
       };
     }
   }

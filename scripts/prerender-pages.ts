@@ -225,6 +225,63 @@ async function main() {
   const { buildPassportPath } = await import('../src/utils/seoRouter');
   const PP_TITLE: Record<string, string> = { tr: 'Diğer pasaportlar', en: 'Entry rules for other passports', de: 'Einreise mit anderen Pässen', es: 'Requisitos para otros pasaportes', ru: 'Правила для других паспортов' };
   const FAQ_TITLE: Record<string, string> = { tr: 'Sık sorulan sorular', en: 'Frequently asked questions', de: 'Häufige Fragen', es: 'Preguntas frecuentes', ru: 'Частые вопросы' };
+  // ülke verisi (sayfa içi bilgi bölümü de bundan beslenir)
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const CDATA: Record<string, Record<string, any>> = {};
+  // ülke sayfası verisi: ülke başına küçük JSON (sayfa 1,6 MB'lık dosyayı beklemesin)
+  {
+    const { getCountryInsights } = await import('../src/data/countryInsights');
+    const { getCountryTravelIntelligence } = await import('../src/data/countryTravelIntelligence');
+    const { getCountryEncyclopedia } = await import('../src/data/countryEncyclopedia');
+    const { getCountryItinerary } = await import('../src/data/countryItineraries');
+    const { getVerifiedCountryRecord } = await import('../src/data/verifiedCountryData');
+    const { getCountryNomadApps } = await import('../src/data/rideAndDeliveryApps');
+    const dicts = DICTS;
+    const FIX_DIR = path.join(process.cwd(), 'src', 'data', 'country-fixes');
+    const COUNTRY_FIXES: Record<string, Record<string, unknown>> = {};
+    Object.assign(COUNTRY_FIXES, (globalThis as { __vzCountryFixes?: Record<string, Record<string, unknown>> }).__vzCountryFixes || {});
+    const deepMerge = <T,>(a: T, b: unknown): T => {
+      if (!b || typeof b !== 'object' || Array.isArray(b) || !a || typeof a !== 'object' || Array.isArray(a)) return (b === undefined ? a : b) as T;
+      const o: Record<string, unknown> = { ...(a as Record<string, unknown>) };
+      for (const [k, v] of Object.entries(b as Record<string, unknown>)) o[k] = deepMerge(o[k], v);
+      return o as T;
+    };
+    const plugs: Record<string, string[]> = {};
+    let files = 0;
+    for (const code of allCodes) {
+      const intel0 = getCountryTravelIntelligence(code, getCountryName(code, 'en'));
+      const trIntelFix = (COUNTRY_FIXES[code]?.tr as { intel?: unknown } | undefined)?.intel;
+      const intel = trIntelFix ? deepMerge(intel0, trIntelFix) : intel0;
+      plugs[code] = intel.plugs.types;
+      const insEn = getCountryInsights(code, 'en');
+      write(path.join('data', 'country', 'x', `${code}.json`), JSON.stringify({ intel, verified: getVerifiedCountryRecord(code), apps: getCountryNomadApps(code, insEn.transport.popularRideApps || []) }));
+      files++;
+      for (const lang of LANGS) {
+        const local = { insights: getCountryInsights(code, lang), enc: getCountryEncyclopedia(code, lang as never), itin: getCountryItinerary(code, lang as never) };
+        const dict = dicts[lang];
+        // Türkçe dışı dillerde, Türkçe kalmış metinleri sözlükten çevir (dilden bağımsız intel dahil)
+        let out = dict && Object.keys(dict).length ? { ...applyDict(local, dict), intel: applyDict(intel, dict) } : local;
+        if (lang !== 'tr' && SUBST[lang]) {
+          out = mapStrings(out, SUBST[lang]);
+          const geo = (out as { enc?: { geography?: { capital?: string } } }).enc?.geography;
+          if (geo && GEO_DATA[code]) geo.capital = capitalName(code, lang, GEO_DATA[code].capital);
+        }
+        // Elle doğrulanmış ülke düzeltmeleri (src/data/country-fixes/<KOD>.json): şablondan gelen alanların yerine geçer
+        const fix = COUNTRY_FIXES[code]?.[lang] as { intel?: unknown } | undefined;
+        if (fix) {
+          // intel düzeltmesi varsa tam intel'in üzerine uygulanır (Türkçe dosyada intel ayrıca x/ dosyasından gelir)
+          if (fix.intel && !(out as { intel?: unknown }).intel) out = { ...out, intel };
+          out = deepMerge(out, fix);
+        }
+        write(path.join('data', 'country', lang, `${code}.json`), JSON.stringify(out));
+        (CDATA[lang] ||= {})[code] = lang === 'tr' && !(out as { intel?: unknown }).intel ? { ...out, intel } : out;
+        files++;
+      }
+    }
+    write(path.join('data', 'plugs.json'), JSON.stringify(plugs));
+    console.log(`[prerender] ${files} ülke veri dosyası yazıldı`);
+  }
+
   let n = 0;
   for (const lang of LANGS) {
     // dil ana sayfası: başlık, açıklama ve bütün ülkelere bağlantı (Google sayfaları bulsun)
@@ -238,6 +295,60 @@ async function main() {
     }));
     n++;
 
+
+    // sayfa içi bilgi bölümü: düzeltilmiş veriden kısa, doğru ve dile özgü metin (arama motoru + JS çalıştırmayan tarayıcılar)
+    const FL: Record<string, Record<string, string>> = {
+      tr: { facts: 'Kısaca', eng: 'İngilizce', capital: 'Başkent', currency: 'Para birimi', best: 'En iyi zaman', plug: 'Priz', water: 'Musluk suyu', waterY: 'İçilebilir', waterN: 'İçilmesi önerilmez', sos: 'Acil numaralar', police: 'Polis', amb: 'Ambulans', gen: 'Genel', safety: 'Güvenlik', tip: 'Bahşiş', pay: 'Ödeme', ride: 'Taksi uygulamaları', langs: 'Dil', budget: 'Günlük bütçe', budgetB: 'ekonomik', budgetM: 'orta', esim: 'İnternet & eSIM', route: 'Önerilen gezi rotası', places: 'Mutlaka görülecek yerler', food: 'Ne yenir', phrases: 'İşe yarar kelimeler', tips: 'Güvenlik ipuçları' },
+      en: { facts: 'Quick facts', eng: 'English', capital: 'Capital', currency: 'Currency', best: 'Best time to visit', plug: 'Plugs', water: 'Tap water', waterY: 'Safe to drink', waterN: 'Not recommended', sos: 'Emergency numbers', police: 'Police', amb: 'Ambulance', gen: 'General', safety: 'Safety', tip: 'Tipping', pay: 'Payments', ride: 'Ride apps', langs: 'Language', budget: 'Daily budget', budgetB: 'budget', budgetM: 'mid-range', esim: 'Internet & eSIM', route: 'Suggested itinerary', places: 'Must-see places', food: 'What to eat', phrases: 'Useful phrases', tips: 'Safety tips' },
+      de: { facts: 'Kurz & knapp', eng: 'Englisch', capital: 'Hauptstadt', currency: 'Währung', best: 'Beste Reisezeit', plug: 'Steckdosen', water: 'Leitungswasser', waterY: 'Trinkbar', waterN: 'Nicht empfohlen', sos: 'Notrufnummern', police: 'Polizei', amb: 'Rettung', gen: 'Allgemein', safety: 'Sicherheit', tip: 'Trinkgeld', pay: 'Bezahlen', ride: 'Taxi-Apps', langs: 'Sprache', budget: 'Tagesbudget', budgetB: 'günstig', budgetM: 'Mittelklasse', esim: 'Internet & eSIM', route: 'Empfohlene Reiseroute', places: 'Sehenswürdigkeiten', food: 'Was man essen sollte', phrases: 'Nützliche Wörter', tips: 'Sicherheitstipps' },
+      es: { facts: 'Datos rápidos', eng: 'Inglés', capital: 'Capital', currency: 'Moneda', best: 'Mejor época', plug: 'Enchufes', water: 'Agua del grifo', waterY: 'Potable', waterN: 'No recomendable', sos: 'Teléfonos de emergencia', police: 'Policía', amb: 'Ambulancia', gen: 'General', safety: 'Seguridad', tip: 'Propinas', pay: 'Pagos', ride: 'Apps de taxi', langs: 'Idioma', budget: 'Presupuesto diario', budgetB: 'económico', budgetM: 'medio', esim: 'Internet y eSIM', route: 'Itinerario recomendado', places: 'Lugares imprescindibles', food: 'Qué comer', phrases: 'Frases útiles', tips: 'Consejos de seguridad' },
+      ru: { facts: 'Коротко', eng: 'Английский', capital: 'Столица', currency: 'Валюта', best: 'Лучшее время', plug: 'Розетки', water: 'Вода из-под крана', waterY: 'Можно пить', waterN: 'Пить не рекомендуется', sos: 'Экстренные номера', police: 'Полиция', amb: 'Скорая', gen: 'Общий', safety: 'Безопасность', tip: 'Чаевые', pay: 'Оплата', ride: 'Такси-приложения', langs: 'Язык', budget: 'Бюджет в день', budgetB: 'эконом', budgetM: 'средний', esim: 'Интернет и eSIM', route: 'Рекомендуемый маршрут', places: 'Что посмотреть', food: 'Что попробовать', phrases: 'Полезные фразы', tips: 'Советы по безопасности' }
+    };
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const factsHtml = (code: string, lang: string): string => {
+      const d = CDATA[lang]?.[code];
+      if (!d) return '';
+      const L = FL[lang] || FL.en;
+      const t = (x: unknown) => (typeof x === 'string' ? x.trim() : '');
+      const arr = (x: unknown): string[] => (Array.isArray(x) ? x.map((y) => (typeof y === 'string' ? y : '')).filter(Boolean) : []);
+      const ins = d.insights || {}, enc = d.enc || {}, itin = d.itin || {}, intel = d.intel || {};
+      const geo = GEO_DATA[code];
+      const rows: Array<[string, string]> = [];
+      const add = (k: string, v: string) => { if (v) rows.push([k, v]); };
+      add(L.capital, geo?.capital ? capitalName(code, lang, geo.capital) : '');
+      add(L.currency, t(ins.currency));
+      add(L.best, t(ins.bestMonths) || t(enc.tourism?.bestSeasons));
+      const pl = intel.plugs;
+      add(L.plug, pl?.types?.length ? `${pl.types.join(', ')}${pl.voltage ? ` · ${pl.voltage}` : ''}${pl.frequency ? ` / ${pl.frequency}` : ''}` : t(ins.plugType));
+      const w = intel.waterAndHealth;
+      if (w && typeof w.tapWaterSafe === 'boolean') add(L.water, `${w.tapWaterSafe ? L.waterY : L.waterN}${t(w.tapWaterDesc) ? ` – ${t(w.tapWaterDesc)}` : ''}`);
+      const em = ins.safety?.emergencyNumbers;
+      if (em) add(L.sos, [em.police && `${L.police} ${em.police}`, em.ambulance && `${L.amb} ${em.ambulance}`, em.general && em.general !== em.police && `${L.gen} ${em.general}`].filter(Boolean).join(' · '));
+      if (ins.safety?.safetyLevel) add(L.safety, `${t(ins.safety.safetyLevel)}${t(ins.safety.crimeRateSummary) ? ` – ${t(ins.safety.crimeRateSummary)}` : ''}`);
+      add(L.tip, t(enc.economy?.tippingCulture));
+      add(L.pay, t(enc.economy?.paymentCulture));
+      add(L.ride, arr(ins.transport?.popularRideApps).join(', '));
+      add(L.langs, [t(enc.language?.officialLanguages).replace(/\.$/, ''), t(enc.language?.englishProficiency) && `${L.eng}: ${t(enc.language?.englishProficiency)}`].filter(Boolean).join(' · '));
+      const lc = ins.livingCosts;
+      if (lc?.dailyBudgetBackpackerUsd) add(L.budget, `${L.budgetB} ${t(lc.dailyBudgetBackpackerUsd)}${lc.dailyBudgetMidrangeUsd ? ` · ${L.budgetM} ${t(lc.dailyBudgetMidrangeUsd)}` : ''}`);
+      add(L.esim, t(ins.internet?.esimAvailability));
+      let h = rows.length ? `<section class="vzs-facts"><h2>${esc(L.facts)}</h2><ul>${rows.map(([k, v]) => `<li><b>${esc(k)}:</b> ${esc(v)}</li>`).join('')}</ul></section>` : '';
+      const stops = Array.isArray(itin.stops) ? itin.stops : [];
+      if (stops.length) {
+        h += `<section class="vzs-route"><h2>${esc(L.route)}${t(itin.routeName) ? `: ${esc(t(itin.routeName))}` : ''}</h2>${t(itin.routeSummary) ? `<p>${esc(t(itin.routeSummary))}</p>` : ''}<ol>${stops
+          .map((st: { name?: string; durationBadge?: string; recommendedDuration?: string; highlights?: unknown }) => `<li><b>${esc(t(st.name).replace(/^[^:]{1,20}:\s*/, ''))}</b>${t(st.durationBadge) || t(st.recommendedDuration) ? ` (${esc(t(st.durationBadge) || t(st.recommendedDuration))})` : ''}${arr(st.highlights).length ? ` – ${esc(arr(st.highlights).slice(0, 4).join(', '))}` : ''}</li>`)
+          .join('')}</ol></section>`;
+      }
+      const places = arr(enc.tourism?.mustSeePlaces);
+      if (places.length) h += `<section><h2>${esc(L.places)}</h2><ul>${places.slice(0, 8).map((x) => `<li>${esc(x)}</li>`).join('')}</ul></section>`;
+      const food = arr(enc.gastronomy?.famousDishes);
+      if (food.length) h += `<section><h2>${esc(L.food)}</h2><ul>${food.slice(0, 6).map((x) => `<li>${esc(x)}</li>`).join('')}</ul></section>`;
+      const tips = arr(ins.safety?.safeTravelTips);
+      if (tips.length) h += `<section><h2>${esc(L.tips)}</h2><ul>${tips.slice(0, 4).map((x) => `<li>${esc(x)}</li>`).join('')}</ul></section>`;
+      const ph = Array.isArray(enc.language?.phrases) ? enc.language.phrases : [];
+      if (ph.length) h += `<section><h2>${esc(L.phrases)}</h2><ul>${ph.slice(0, 5).map((x: { phrase?: string; meaning?: string; translation?: string }) => `<li>${esc(t(x.phrase))} – ${esc(t(x.translation) || t(x.meaning))}</li>`).join('')}</ul></section>`;
+      return h;
+    };
     // ülke sayfaları: dilin ana pasaportu (tr→TR, en→US, de→DE, es→ES, ru→RU) + pasaporta özel sayfalar
     const renderCountry = (code: string, pass: string, passPage: boolean) => {
       const relPath = passPage ? buildPassportPath(lang as never, code, pass) : buildLocalizedPath(lang as never, 'explore', code);
@@ -274,9 +385,9 @@ async function main() {
           const v = getCountryVisual(code, lang);
           const s480 = getOptimizedImageUrl(v.image, { width: 480 });
           const s720 = getOptimizedImageUrl(v.image, { width: 720 });
-          return `<section class="vzs-chero"><img src="${s720}" srcset="${s480} 480w, ${s720} 720w" sizes="100vw" alt="${esc([name, v.landmark].filter(Boolean).join(': '))}" fetchpriority="high" /><div class="vzs-wrap vzs-chero-in">${eyebrow(lang, [EYEBROW[lang], region])}${h1(name, meta.h1.replace(name, '').trim())}${cap ? `<p>${esc(cap)}</p>` : ''}</div></section>`;
+          return `<section class="vzs-chero"><img src="${s720}" srcset="${s480} 480w, ${s720} 720w" sizes="100vw" alt="${esc([name, v.landmark].filter(Boolean).join(': '))}" fetchpriority="high" /><div class="vzs-wrap vzs-chero-in">${eyebrow(lang, [EYEBROW[lang], region])}${h1(name, meta.h1.replace(name, '').trim())}${cap ? `<p>${esc(capitalName(code, lang, cap))}</p>` : ''}</div></section>`;
         })(),
-        nav: navBlock(lang, `${lead(meta.description)}${faqHtml}${ppNav}<p>${homeLink(lang)} · ${tabLinks(lang)}</p>${near.length ? `<h2>${esc(UI[lang].region)}</h2><p>${countryLinks(lang, near)}</p>` : ''}`)
+        nav: navBlock(lang, `${lead(meta.description)}${factsHtml(code, lang)}${faqHtml}${ppNav}<p>${homeLink(lang)} · ${tabLinks(lang)}</p>${near.length ? `<h2>${esc(UI[lang].region)}</h2><p>${countryLinks(lang, near)}</p>` : ''}`)
       }));
       n++;
     };
@@ -377,58 +488,6 @@ async function main() {
 
   // olmayan adresler için; arama motoru dizine almasın
   write('404.html', build({ lang: 'tr', canonical: `${BASE_URL}/`, alts: getHreflangAlternatesForRoute('explore', null), title: 'Sayfa bulunamadı | Vizamigo', noindex: true }));
-  // ülke sayfası verisi: ülke başına küçük JSON (sayfa 1,6 MB'lık dosyayı beklemesin)
-  {
-    const { getCountryInsights } = await import('../src/data/countryInsights');
-    const { getCountryTravelIntelligence } = await import('../src/data/countryTravelIntelligence');
-    const { getCountryEncyclopedia } = await import('../src/data/countryEncyclopedia');
-    const { getCountryItinerary } = await import('../src/data/countryItineraries');
-    const { getVerifiedCountryRecord } = await import('../src/data/verifiedCountryData');
-    const { getCountryNomadApps } = await import('../src/data/rideAndDeliveryApps');
-    const dicts = DICTS;
-    const FIX_DIR = path.join(process.cwd(), 'src', 'data', 'country-fixes');
-    const COUNTRY_FIXES: Record<string, Record<string, unknown>> = {};
-    Object.assign(COUNTRY_FIXES, (globalThis as { __vzCountryFixes?: Record<string, Record<string, unknown>> }).__vzCountryFixes || {});
-    const deepMerge = <T,>(a: T, b: unknown): T => {
-      if (!b || typeof b !== 'object' || Array.isArray(b) || !a || typeof a !== 'object' || Array.isArray(a)) return (b === undefined ? a : b) as T;
-      const o: Record<string, unknown> = { ...(a as Record<string, unknown>) };
-      for (const [k, v] of Object.entries(b as Record<string, unknown>)) o[k] = deepMerge(o[k], v);
-      return o as T;
-    };
-    const plugs: Record<string, string[]> = {};
-    let files = 0;
-    for (const code of allCodes) {
-      const intel0 = getCountryTravelIntelligence(code, getCountryName(code, 'en'));
-      const trIntelFix = (COUNTRY_FIXES[code]?.tr as { intel?: unknown } | undefined)?.intel;
-      const intel = trIntelFix ? deepMerge(intel0, trIntelFix) : intel0;
-      plugs[code] = intel.plugs.types;
-      const insEn = getCountryInsights(code, 'en');
-      write(path.join('data', 'country', 'x', `${code}.json`), JSON.stringify({ intel, verified: getVerifiedCountryRecord(code), apps: getCountryNomadApps(code, insEn.transport.popularRideApps || []) }));
-      files++;
-      for (const lang of LANGS) {
-        const local = { insights: getCountryInsights(code, lang), enc: getCountryEncyclopedia(code, lang as never), itin: getCountryItinerary(code, lang as never) };
-        const dict = dicts[lang];
-        // Türkçe dışı dillerde, Türkçe kalmış metinleri sözlükten çevir (dilden bağımsız intel dahil)
-        let out = dict && Object.keys(dict).length ? { ...applyDict(local, dict), intel: applyDict(intel, dict) } : local;
-        if (lang !== 'tr' && SUBST[lang]) {
-          out = mapStrings(out, SUBST[lang]);
-          const geo = (out as { enc?: { geography?: { capital?: string } } }).enc?.geography;
-          if (geo && GEO_DATA[code]) geo.capital = capitalName(code, lang, GEO_DATA[code].capital);
-        }
-        // Elle doğrulanmış ülke düzeltmeleri (src/data/country-fixes/<KOD>.json): şablondan gelen alanların yerine geçer
-        const fix = COUNTRY_FIXES[code]?.[lang] as { intel?: unknown } | undefined;
-        if (fix) {
-          // intel düzeltmesi varsa tam intel'in üzerine uygulanır (Türkçe dosyada intel ayrıca x/ dosyasından gelir)
-          if (fix.intel && !(out as { intel?: unknown }).intel) out = { ...out, intel };
-          out = deepMerge(out, fix);
-        }
-        write(path.join('data', 'country', lang, `${code}.json`), JSON.stringify(out));
-        files++;
-      }
-    }
-    write(path.join('data', 'plugs.json'), JSON.stringify(plugs));
-    console.log(`[prerender] ${files} ülke veri dosyası yazıldı`);
-  }
 
   // manifest yalnızca derleme içindi; yayına çıkmasın
   try {
