@@ -58,7 +58,10 @@ export function saveVoice(lang: SpeechLang, name: string) {
 export function speakable(text: string, lang: SpeechLang): string {
   const per = { tr: 'yüz üzerinden', en: 'out of 100', de: 'von 100', es: 'sobre 100', ru: 'из ста' }[lang];
   const four = { tr: 'dört üzerinden', en: 'out of 4', de: 'von 4', es: 'sobre 4', ru: 'из четырёх' }[lang];
+  // "Vizamigo" tek kelime olunca sesler robotik okuyor: her dil için kulağa doğru gelen yazım
+  const brand = { tr: 'Viza migo', en: 'Veeza meego', de: 'Wisa Migo', es: 'Visa migo', ru: 'Виза миго' }[lang];
   return text
+    .replace(/vizamigo(\.com)?/gi, (_m, com) => brand + (com ? (lang === 'tr' ? ' nokta kom' : lang === 'ru' ? ' точка ком' : lang === 'de' ? ' Punkt com' : lang === 'es' ? ' punto com' : ' dot com') : ''))
     .replace(/[\p{Extended_Pictographic}\p{Regional_Indicator}\u{FE0F}\u{200D}]/gu, '')
     .replace(/\*\*|[#*_>`]/g, '')
     .replace(/https?:\/\/\S+/g, '')

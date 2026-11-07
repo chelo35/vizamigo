@@ -471,15 +471,6 @@ export const AssistantSheet: React.FC<{
             <button key={x} type="button" role="radio" aria-checked={chatLang === x} className={chatLang === x ? 'on' : ''} onClick={() => setChatLang(x)}>{x.toUpperCase()}</button>
           ))}
         </div>
-        {ttsOk && speakOn && (voices.length > 0 || natOk) && (
-          <select className="vz-voice" value={voiceName} aria-label={cl('Ses', 'Voice', 'Stimme', 'Voz', 'Голос')} onChange={(e) => { setVoiceName(e.target.value); saveVoice(chatLang, e.target.value); if (e.target.value === NATURAL_KEY) void prepareNatural(chatLang); speak(cl('Merhaba, ben Vizamigo asistanı.', 'Hello, I am the Vizamigo assistant.', 'Hallo, ich bin der Vizamigo-Assistent.', 'Hola, soy el asistente de Vizamigo.', 'Здравствуйте, я ассистент Vizamigo.'), chatLang); }}>
-            {natOk && <option value={NATURAL_KEY}>{cl('Vizamigo doğal ses', 'Vizamigo natural voice', 'Vizamigo natürliche Stimme', 'Voz natural de Vizamigo', 'Естественный голос Vizamigo')}</option>}
-            {voices.map((v) => <option key={v.name} value={v.name}>{cl('Cihaz', 'Device', 'Gerät', 'Dispositivo', 'Устройство')}: {v.name.replace(/^(Microsoft|Google)\s+/, '').replace(/\s*\(.*?\)\s*/g, ' ').replace(/ - .*$/, '').trim()}</option>)}
-          </select>
-        )}
-        {speakOn && voiceName === NATURAL_KEY && nat.state === 'loading' && (
-          <span className="vz-natload" role="status">{cl('Doğal ses hazırlanıyor', 'Preparing natural voice', 'Natürliche Stimme wird geladen', 'Preparando voz natural', 'Загружается голос')} {nat.pct ? `%${nat.pct}` : '…'} · {cl('yalnızca ilk sefer', 'first time only', 'nur beim ersten Mal', 'solo la primera vez', 'только в первый раз')}</span>
-        )}
       </div>
       <div className="vz-chat">
         {msgs.length === 0 && (
