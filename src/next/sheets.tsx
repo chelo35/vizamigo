@@ -11,6 +11,7 @@ import { saveUserReport, loadUserReports, deleteUserReport } from '../components
 import { getSupabase, GOOGLE_ENABLED } from '../context/AuthContext';
 import { AUDIT_DATABASE } from '../components/RegulationAuditModal';
 import { LegalInfoModal } from '../components/LegalInfoModal';
+import { canSpeak as canSpeakFn, loadVoices, voicesFor, savedVoice, saveVoice, speak, stopSpeech } from '../utils/speech';
 import { processAssistantQuery, AssistantMessage, AssistantActionPill, isSpeechRecognitionSupported, startVoiceRecognition, stopVoiceRecognition } from '../services/aiAssistantEngine';
 
 const norm = (s: string) => s.toLocaleLowerCase('tr').normalize('NFD').replace(/[̀-ͯ]/g, '');
@@ -324,53 +325,81 @@ export const AssistantSheet: React.FC<{
   onOpenTool: (tab: 'explore' | 'plan' | 'track' | 'nomad' | 'profile', tile: string) => void;
 }> = ({ open, onClose, passport, onOpenCountry, onSelectTab, onOpenTool }) => {
   const { l, language } = useI18n();
+  const LANGS = ['tr', 'en', 'de', 'es', 'ru'] as const;
+  type CL = (typeof LANGS)[number];
+  // sohbet dili: mikrofon, sesli okuma ve cevaplar bu dilde; varsayılan site dili, seçim cihazda saklanır
+  const [chatLang, setChatLangState] = useState<CL>(() => {
+    try {
+      const v = localStorage.getItem('vz_assistant_lang') as CL | null;
+      if (v && (LANGS as readonly string[]).includes(v)) return v;
+    } catch {}
+    return ((LANGS as readonly string[]).includes(language) ? language : 'en') as CL;
+  });
+  const setChatLang = (v: CL) => {
+    setChatLangState(v);
+    try {
+      localStorage.setItem('vz_assistant_lang', v);
+    } catch {}
+  };
+  const cl = (tr: string, en: string, de: string, es: string, ru: string) => ({ tr, en, de, es, ru })[chatLang];
   const [msgs, setMsgs] = useState<AssistantMessage[]>([]);
   const [q, setQ] = useState('');
   const [busy, setBusy] = useState(false);
   const [listening, setListening] = useState(false);
-  // sesli cevap (tarayıcının kendi sesi); tercih cihazda saklanır
-  const canSpeak = typeof window !== 'undefined' && 'speechSynthesis' in window;
-  const [speak, setSpeak] = useState(() => {
+  // sesli cevap (cihazın en iyi sesi); tercih cihazda saklanır
+  const ttsOk = canSpeakFn();
+  const [speakOn, setSpeakOn] = useState(() => {
     try {
       return localStorage.getItem('vz_assistant_voice') === '1';
     } catch {
       return false;
     }
   });
+  const [voices, setVoices] = useState<SpeechSynthesisVoice[]>([]);
+  const [voiceName, setVoiceName] = useState('');
+  useEffect(() => {
+    if (!ttsOk || !open) return;
+    let alive = true;
+    loadVoices().then((all) => {
+      if (!alive) return;
+      const list = voicesFor(all, chatLang);
+      setVoices(list);
+      setVoiceName(savedVoice(chatLang) || list[0]?.name || '');
+    });
+    return () => {
+      alive = false;
+    };
+  }, [chatLang, open, ttsOk]);
   const toggleSpeak = () => {
-    const n = !speak;
-    setSpeak(n);
+    const n = !speakOn;
+    setSpeakOn(n);
     try {
       localStorage.setItem('vz_assistant_voice', n ? '1' : '0');
     } catch {}
-    if (!n && canSpeak) window.speechSynthesis.cancel();
+    if (!n) stopSpeech();
   };
-  const say = (text: string) => {
-    if (!canSpeak) return;
-    const plain = text.replace(/\*\*|[#*_>`]/g, '').replace(/https?:\/\/\S+/g, '').slice(0, 900);
-    const u = new SpeechSynthesisUtterance(plain);
-    u.lang = ({ tr: 'tr-TR', en: 'en-GB', de: 'de-DE', es: 'es-ES', ru: 'ru-RU' } as Record<string, string>)[language] || 'en-GB';
-    u.rate = 1.02;
-    window.speechSynthesis.cancel();
-    window.speechSynthesis.speak(u);
-  };
-  useEffect(() => () => { if (canSpeak) window.speechSynthesis.cancel(); }, []); // eslint-disable-line react-hooks/exhaustive-deps
+  const say = (text: string, lang: string) => speak(text, ((LANGS as readonly string[]).includes(lang) ? lang : chatLang) as CL);
+  useEffect(() => () => stopSpeech(), []);
   const endRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
     endRef.current?.scrollIntoView({ behavior: 'smooth', block: 'end' });
   }, [msgs, busy]);
-  const send = async (text?: string) => {
+  const send = async (text?: string, viaVoice = false) => {
     const t = (text ?? q).trim();
     if (!t || busy) return;
     setQ('');
+    stopSpeech();
     setMsgs((m) => [...m, { id: `u-${Date.now()}`, sender: 'user', text: t, timestamp: new Date() }]);
     setBusy(true);
     try {
-      const r = await processAssistantQuery(t, passport, language);
+      // sesle sorulduysa seçili dilde cevap; yazıldıysa yazılan dil algılanır ve sohbet dili ona geçer
+      const r = await processAssistantQuery(t, passport, chatLang, viaVoice);
+      const rl = (r.detectedLang || chatLang) as CL;
+      if (!viaVoice && rl !== chatLang && (LANGS as readonly string[]).includes(rl)) setChatLang(rl);
       setMsgs((m) => [...m, r]);
-      if (speak) say(r.text);
+      if (speakOn) say(r.text, rl);
     } catch {
-      setMsgs((m) => [...m, { id: `e-${Date.now()}`, sender: 'assistant', text: l('Şu an yanıt veremedim, birazdan tekrar dener misin?', 'I couldn’t answer just now, try again in a moment?', 'Gerade keine Antwort möglich.', 'No pude responder ahora.', 'Не удалось ответить.'), timestamp: new Date() }]);
+      setMsgs((m) => [...m, { id: `e-${Date.now()}`, sender: 'assistant', text: cl('Şu an yanıt veremedim, birazdan tekrar dener misin?', 'I couldn’t answer just now, try again in a moment?', 'Gerade keine Antwort möglich.', 'No pude responder ahora.', 'Не удалось ответить.'), timestamp: new Date() }]);
     } finally {
       setBusy(false);
     }
@@ -386,23 +415,61 @@ export const AssistantSheet: React.FC<{
       else onOpenTool('explore', 'radar');
     } else if (a.type === 'affiliate' && a.url) window.open(a.url, '_blank', 'noopener,noreferrer');
   };
+  // mikrofon: kısa duraklamada kesmez; 2,5 sn sessizlikten sonra ya da tekrar basınca gönderir
+  const heard = useRef('');
+  const silence = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const finishMic = () => {
+    if (silence.current) clearTimeout(silence.current);
+    silence.current = null;
+    stopVoiceRecognition();
+    setListening(false);
+    const t = heard.current.trim();
+    heard.current = '';
+    if (t) send(t, true);
+  };
   const mic = () => {
-    if (listening) { stopVoiceRecognition(); setListening(false); return; }
+    if (listening) { finishMic(); return; }
+    stopSpeech();
+    heard.current = '';
+    setQ('');
     setListening(true);
-    startVoiceRecognition({ lang: language, onResult: (tx, fin) => { setQ(tx); if (fin) { setListening(false); send(tx); } }, onError: () => setListening(false), onEnd: () => setListening(false) });
+    startVoiceRecognition({
+      lang: chatLang,
+      continuous: true,
+      onResult: (tx) => {
+        heard.current = tx;
+        setQ(tx);
+        if (silence.current) clearTimeout(silence.current);
+        silence.current = setTimeout(finishMic, 2500);
+      },
+      onError: () => { if (silence.current) clearTimeout(silence.current); setListening(false); },
+      onEnd: () => { if (heard.current.trim()) finishMic(); else setListening(false); }
+    });
   };
   const ideas = [
-    l('Türk pasaportuyla Japonya’da kaç gün kalabilirim?', 'How long can I stay in Japan?', 'Wie lange darf ich in Japan bleiben?', '¿Cuánto puedo quedarme en Japón?', 'Сколько можно в Японии?'),
-    l('Tayland için ne hazırlamalıyım?', 'What do I need for Thailand?', 'Was brauche ich für Thailand?', '¿Qué necesito para Tailandia?', 'Что нужно для Таиланда?'),
-    l('Pasaportumu kaybettim, ne yapmalıyım?', 'I lost my passport, what now?', 'Pass verloren – was tun?', 'Perdí el pasaporte', 'Потерял паспорт'),
-    l('Schengen 90/180 nasıl hesaplanır?', 'How does Schengen 90/180 work?', 'Wie funktioniert 90/180?', '¿Cómo funciona 90/180?', 'Как считать 90/180?')
+    cl('Gürcistan’a kimlikle gidilir mi?', 'Do I need a visa for Japan?', 'Brauche ich ein Visum für Japan?', '¿Necesito visado para Japón?', 'Нужна ли виза в Японию?'),
+    cl('Dubai güvenli mi?', 'Is Dubai safe?', 'Ist Dubai sicher?', '¿Es seguro Dubái?', 'Безопасно ли в Дубае?'),
+    cl('Tayland’da bahşiş ne kadar?', 'Tipping in Thailand', 'Trinkgeld in Thailand', 'Propinas en Tailandia', 'Чаевые в Таиланде'),
+    cl('Pasaportumu kaybettim, ne yapmalıyım?', 'I lost my passport, what now?', 'Pass verloren – was tun?', 'Perdí el pasaporte, ¿qué hago?', 'Потерял паспорт, что делать?')
   ];
   return (
     <Sheet open={open} onClose={onClose} title={l('Vizamigo asistan', 'Vizamigo assistant', 'Vizamigo-Assistent', 'Asistente Vizamigo', 'Ассистент Vizamigo')} icon="spark">
+      <div className="vz-chatbar">
+        <div className="vz-langs" role="radiogroup" aria-label={cl('Konuşma dili', 'Conversation language', 'Gesprächssprache', 'Idioma de la conversación', 'Язык разговора')}>
+          {LANGS.map((x) => (
+            <button key={x} type="button" role="radio" aria-checked={chatLang === x} className={chatLang === x ? 'on' : ''} onClick={() => setChatLang(x)}>{x.toUpperCase()}</button>
+          ))}
+        </div>
+        {ttsOk && speakOn && voices.length > 1 && (
+          <select className="vz-voice" value={voiceName} aria-label={cl('Ses', 'Voice', 'Stimme', 'Voz', 'Голос')} onChange={(e) => { setVoiceName(e.target.value); saveVoice(chatLang, e.target.value); speak(cl('Merhaba, ben Vizamigo asistanı.', 'Hello, I am the Vizamigo assistant.', 'Hallo, ich bin der Vizamigo-Assistent.', 'Hola, soy el asistente de Vizamigo.', 'Здравствуйте, я ассистент Vizamigo.'), chatLang); }}>
+            {voices.map((v) => <option key={v.name} value={v.name}>{v.name.replace(/^(Microsoft|Google)\s+/, '').replace(/\s*\(.*?\)\s*/g, ' ').replace(/ - .*$/, '').trim()}</option>)}
+          </select>
+        )}
+      </div>
       <div className="vz-chat">
         {msgs.length === 0 && (
           <div className="vz-stack" style={{ gap: 12 }}>
-            <p className="vz-muted">{l('Vize, kalış süresi, belge ya da rota hakkında soru sor. Örneğin:', 'Ask about visas, stays, documents or routes. For example:', 'Frag zu Visa, Aufenthalt, Dokumenten, Routen:', 'Pregunta sobre visados, estancias o rutas:', 'Спросите о визах, сроках, маршрутах:')}</p>
+            <p className="vz-muted">{cl('Bir ülke ve konu yaz ya da mikrofona bas. Örneğin:', 'Type a country and a topic, or tap the microphone. For example:', 'Schreib ein Land und ein Thema oder tippe aufs Mikrofon. Zum Beispiel:', 'Escribe un país y un tema o pulsa el micrófono. Por ejemplo:', 'Напишите страну и тему или нажмите на микрофон. Например:')}</p>
             <div className="vz-stack" style={{ gap: 8 }}>{ideas.map((x) => <button key={x} type="button" className="vz-idea" onClick={() => send(x)}><Icon name="spark" size={16} duo={false} />{x}</button>)}</div>
           </div>
         )}
@@ -421,20 +488,21 @@ export const AssistantSheet: React.FC<{
         {busy && <div className="vz-msg assistant"><span className="vz-typing"><i /><i /><i /></span></div>}
         <div ref={endRef} />
       </div>
-      <form className="vz-chat-in" onSubmit={(e) => { e.preventDefault(); send(); }}>
-        <label htmlFor="vz-chat-q" className="sr-only">{l('Sorunu yaz', 'Type your question', 'Frage eingeben', 'Escribe tu pregunta', 'Ваш вопрос')}</label>
-        <input id="vz-chat-q" className="vz-input" value={q} onChange={(e) => setQ(e.target.value)} placeholder={l('Sorunu yaz…', 'Type your question…', 'Frage eingeben…', 'Escribe tu pregunta…', 'Ваш вопрос…')} autoComplete="off" />
-        {canSpeak && (
-          <button type="button" className={`vz-iconbtn${speak ? ' on' : ''}`} onClick={toggleSpeak} aria-pressed={speak} aria-label={speak ? l('Sesli cevabı kapat', 'Turn off spoken replies', 'Sprachausgabe aus', 'Desactivar voz', 'Выключить голос') : l('Cevapları sesli oku', 'Read replies aloud', 'Antworten vorlesen', 'Leer en voz alta', 'Озвучивать ответы')} title={speak ? l('Sesli cevap açık', 'Spoken replies on', 'Sprachausgabe an', 'Voz activada', 'Голос включён') : l('Sesli cevap kapalı', 'Spoken replies off', 'Sprachausgabe aus', 'Voz desactivada', 'Голос выключен')}>
+      {listening && <p className="vz-listen" aria-live="polite">{cl('Dinliyorum… Bitirince 2-3 saniye bekle ya da mikrofona tekrar bas.', 'Listening… When you finish, pause 2–3 seconds or tap the mic again.', 'Ich höre zu… Danach 2–3 Sekunden warten oder erneut tippen.', 'Escuchando… Al terminar, espera 2-3 segundos o pulsa otra vez.', 'Слушаю… Закончив, подождите 2–3 секунды или нажмите ещё раз.')}</p>}
+      <form className="vz-chat-in" onSubmit={(e) => { e.preventDefault(); if (listening) finishMic(); else send(); }}>
+        <label htmlFor="vz-chat-q" className="sr-only">{cl('Sorunu yaz', 'Type your question', 'Frage eingeben', 'Escribe tu pregunta', 'Ваш вопрос')}</label>
+        <input id="vz-chat-q" className="vz-input" value={q} onChange={(e) => setQ(e.target.value)} placeholder={cl('Sorunu yaz…', 'Type your question…', 'Frage eingeben…', 'Escribe tu pregunta…', 'Ваш вопрос…')} autoComplete="off" lang={chatLang} />
+        {ttsOk && (
+          <button type="button" className={`vz-iconbtn${speakOn ? ' on' : ''}`} onClick={toggleSpeak} aria-pressed={speakOn} aria-label={speakOn ? cl('Sesli cevabı kapat', 'Turn off spoken replies', 'Sprachausgabe aus', 'Desactivar voz', 'Выключить голос') : cl('Cevapları sesli oku', 'Read replies aloud', 'Antworten vorlesen', 'Leer en voz alta', 'Озвучивать ответы')} title={speakOn ? cl('Sesli cevap açık', 'Spoken replies on', 'Sprachausgabe an', 'Voz activada', 'Голос включён') : cl('Sesli cevap kapalı', 'Spoken replies off', 'Sprachausgabe aus', 'Voz desactivada', 'Голос выключен')}>
             <Icon name="sound" size={18} duo={false} />
           </button>
         )}
         {isSpeechRecognitionSupported() && (
-          <button type="button" className={`vz-iconbtn${listening ? ' on' : ''}`} onClick={mic} aria-label={listening ? l('Dinlemeyi durdur', 'Stop listening', 'Stopp', 'Detener', 'Стоп') : l('Sesle sor', 'Ask by voice', 'Per Stimme fragen', 'Preguntar por voz', 'Голосом')}>
+          <button type="button" className={`vz-iconbtn${listening ? ' on rec' : ''}`} onClick={mic} aria-pressed={listening} aria-label={listening ? cl('Bitti, gönder', 'Done, send', 'Fertig, senden', 'Listo, enviar', 'Готово, отправить') : cl('Sesle sor', 'Ask by voice', 'Per Stimme fragen', 'Preguntar por voz', 'Спросить голосом')}>
             <Icon name="mic" size={18} duo={false} />
           </button>
         )}
-        <Btn type="submit" icon="next" disabled={busy || !q.trim()} aria-label={l('Gönder', 'Send', 'Senden', 'Enviar', 'Отправить')} />
+        <Btn type="submit" icon="next" disabled={busy || !q.trim()} aria-label={cl('Gönder', 'Send', 'Senden', 'Enviar', 'Отправить')} />
       </form>
     </Sheet>
   );
