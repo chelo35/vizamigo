@@ -11,7 +11,7 @@ import { saveUserReport, loadUserReports, deleteUserReport } from '../components
 import { getSupabase, GOOGLE_ENABLED } from '../context/AuthContext';
 import { AUDIT_DATABASE } from '../components/RegulationAuditModal';
 import { LegalInfoModal } from '../components/LegalInfoModal';
-import { canSpeak as canSpeakFn, loadVoices, voicesFor, savedVoice, saveVoice, speak, stopSpeech, NATURAL_KEY, naturalSupported, prepareNatural, onNaturalStatus, naturalStatus } from '../utils/speech';
+import { canSpeak as canSpeakFn, loadVoices, voicesFor, savedVoice, saveVoice, speak, stopSpeech, unlockAudio, NATURAL_KEY, naturalSupported, prepareNatural, onNaturalStatus, naturalStatus } from '../utils/speech';
 import { processAssistantQuery, AssistantMessage, AssistantActionPill, isSpeechRecognitionSupported, startVoiceRecognition, stopVoiceRecognition } from '../services/aiAssistantEngine';
 
 const norm = (s: string) => s.toLocaleLowerCase('tr').normalize('NFD').replace(/[̀-ͯ]/g, '');
@@ -398,6 +398,7 @@ export const AssistantSheet: React.FC<{
     if (!t || busy) return;
     setQ('');
     stopSpeech();
+    if (speakOn || viaVoice) unlockAudio();
     setMsgs((m) => [...m, { id: `u-${Date.now()}`, sender: 'user', text: t, timestamp: new Date() }]);
     setBusy(true);
     try {
@@ -439,6 +440,7 @@ export const AssistantSheet: React.FC<{
   const mic = () => {
     if (listening) { finishMic(); return; }
     stopSpeech();
+    unlockAudio();
     heard.current = '';
     setQ('');
     setListening(true);
