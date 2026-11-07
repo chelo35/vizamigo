@@ -5,7 +5,6 @@
  */
 import { ImageResponse } from '@vercel/og';
 
-export const config = { runtime: 'edge' };
 
 type V = { type: string; props: Record<string, unknown> };
 const h = (type: string, props: Record<string, unknown>, ...children: unknown[]): V => ({ type, props: { ...props, children: children.length <= 1 ? children[0] : children } });
@@ -24,7 +23,7 @@ async function fonts(origin: string) {
 
 const clean = (v: string | null, n: number) => (v || '').replace(/\s+/g, ' ').trim().slice(0, n);
 
-export default async function handler(req: Request) {
+export async function GET(req: Request) {
   const url = new URL(req.url);
   const origin = url.origin;
   const c = (url.searchParams.get('c') || '').toLowerCase().replace(/[^a-z]/g, '').slice(0, 2);
