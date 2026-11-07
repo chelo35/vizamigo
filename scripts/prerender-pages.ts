@@ -282,6 +282,22 @@ async function main() {
       }
     }
     write(path.join('data', 'plugs.json'), JSON.stringify(plugs));
+    // takip e-postaları (api/alerts) için: pasaport başına vize durumu ve ülke adresleri
+    {
+      const { getCountrySlug } = await import('../src/utils/countrySlugs');
+      for (const pp of allCodes) write(path.join('data', 'visa', `${pp}.json`), JSON.stringify(getPassportItems(pp).map((x) => [x.c, x.cat, x.v, x.id ? 1 : 0])));
+      const slugs: Record<string, Record<string, string>> = {};
+      const names: Record<string, Record<string, string>> = {};
+      for (const lg of LANGS) {
+        slugs[lg] = {};
+        names[lg] = {};
+        for (const c of allCodes) {
+          slugs[lg][c] = getCountrySlug(c, lg as never);
+          names[lg][c] = getCountryName(c, lg);
+        }
+      }
+      write(path.join('data', 'countries-meta.json'), JSON.stringify({ slugs, names }));
+    }
     console.log(`[prerender] ${files} ülke veri dosyası yazıldı`);
   }
 

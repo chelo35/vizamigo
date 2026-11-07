@@ -13,15 +13,13 @@
  *   RESEND_API_KEY             (gizli, zaten var)
  *   ALERTS_FROM                (isteğe bağlı) ör. "Vizamigo <bildirim@vizamigo.com>" — alan adı Resend'de doğrulanmış olmalı
  */
-import { getPassportItems } from '../src/utils/calculator';
-import { getCountryName, getCategoryBadgeLabel } from '../src/data/passportData';
-import { getOfficialAdvisories } from '../src/data/officialAdvisories';
-import { getCountrySlug } from '../src/utils/countrySlugs';
+// Not: Vercel fonksiyonları src/ altını derlemiyor; veriyi sitenin yayınladığı JSON dosyalarından okuyoruz
+// (/data/visa/<PASAPORT>.json, /data/country/x/<ÜLKE>.json, /data/countries-meta.json — derlemede üretilir).
 
 type Req = { method?: string; query: Record<string, string | string[] | undefined>; body?: unknown; headers: Record<string, string | string[] | undefined> };
 type Res = { status: (n: number) => Res; setHeader: (k: string, v: string) => void; send: (b: unknown) => void; json: (b: unknown) => void; end: (b?: unknown) => void };
 type Sub = { id: number; email: string; country: string; passport: string; lang: string; token: string; confirmed: boolean; last_seen: Snapshot | null };
-type Snapshot = { visa: string; adv: number | null };
+type Snapshot = { visa: string; adv: number | null }; // visa: "cat|v|id" (dilden bağımsız)
 
 const SB = process.env.SUPABASE_URL || 'https://utlnjyquflfcvjhmgopq.supabase.co';
 const KEY = process.env.SUPABASE_SERVICE_ROLE_KEY || '';
@@ -76,12 +74,49 @@ const page = (res: Res, msg: string, lang: string) => {
   res.status(200).send(`<!doctype html><html lang="${lang}"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Vizamigo</title><body style="margin:0;background:#f7f3ec">${shell(`<p style="font-size:17px">${esc(msg)}</p><p><a href="${SITE}/${lang}" style="color:#0d6e78">vizamigo.com</a></p>`)}</body></html>`);
 };
 
-function snapshot(country: string, passport: string, lang: string): Snapshot {
-  const it = getPassportItems(passport).find((x) => x.c === country);
-  return { visa: getCategoryBadgeLabel((it || null) as never, lang), adv: getOfficialAdvisories(country).max };
+const cache: Record<string, unknown> = {};
+async function getJson<T>(path: string): Promise<T | null> {
+  if (path in cache) return cache[path] as T;
+  try {
+    const r = await fetch(`${SITE}${path}`);
+    const j = r.ok ? ((await r.json()) as T) : null;
+    cache[path] = j;
+    return j;
+  } catch {
+    return null;
+  }
+}
+type Meta = { slugs: Record<string, Record<string, string>>; names: Record<string, Record<string, string>> };
+const meta = () => getJson<Meta>('/data/countries-meta.json');
+const cname = async (c: string, lang: string) => (await meta())?.names?.[lang]?.[c] || c;
+const slug = async (c: string, lang: string) => (await meta())?.slugs?.[lang]?.[c] || '';
+
+async function snapshot(country: string, passport: string): Promise<Snapshot> {
+  const items = (await getJson<Array<[string, string, string, number]>>(`/data/visa/${passport}.json`)) || [];
+  const it = items.find((x) => x[0] === country);
+  const x = await getJson<{ official?: { max: number | null } }>(`/data/country/x/${country}.json`);
+  return { visa: it ? `${it[1]}|${it[2]}|${it[3]}` : '', adv: x?.official?.max ?? null };
+}
+
+const CAT: Record<string, Record<string, string>> = {
+  free: { tr: 'Vizesiz', en: 'Visa-free', de: 'Visumfrei', es: 'Sin visado', ru: 'Без визы' },
+  id: { tr: 'Kimlikle giriş', en: 'ID card entry', de: 'Mit Ausweis', es: 'Con DNI', ru: 'По ID-карте' },
+  evisa: { tr: 'e-Vize', en: 'eVisa', de: 'e-Visum', es: 'e-Visa', ru: 'Электронная виза' },
+  voa: { tr: 'Kapıda vize', en: 'Visa on arrival', de: 'Visum bei Ankunft', es: 'Visa a la llegada', ru: 'Виза по прилёте' },
+  eta: { tr: 'Elektronik izin (eTA)', en: 'Electronic authorisation (eTA)', de: 'Elektronische Genehmigung (eTA)', es: 'Autorización electrónica (eTA)', ru: 'Электронное разрешение (eTA)' },
+  visa: { tr: 'Vize gerekli', en: 'Visa required', de: 'Visum nötig', es: 'Visado obligatorio', ru: 'Нужна виза' },
+  none: { tr: 'Giriş yok', en: 'No entry', de: 'Keine Einreise', es: 'Sin entrada', ru: 'Въезд закрыт' }
+};
+const DAYS: Record<string, string> = { tr: 'gün', en: 'days', de: 'Tage', es: 'días', ru: 'дн.' };
+function visaLabel(v: string, lang: string): string {
+  if (!v) return '–';
+  const [cat, d, id] = v.split('|');
+  const base = id === '1' ? CAT.id[lang] : (CAT[cat] || CAT.visa)[lang];
+  return /^\d+$/.test(d) ? `${base} (${d} ${DAYS[lang]})` : base;
 }
 
 export default async function handler(req: Req, res: Res) {
+  for (const k of Object.keys(cache)) delete cache[k]; // her istekte güncel veri
   if (one(req.query.a) === 'ping') {
     res.setHeader('Cache-Control', 'public, s-maxage=300');
     res.status(200).json({ ok: !!KEY && !!process.env.RESEND_API_KEY });
@@ -113,7 +148,7 @@ export default async function handler(req: Req, res: Res) {
       });
       const s = rows?.[0];
       if (s && !s.confirmed) {
-        const cn = getCountryName(country, lang);
+        const cn = await cname(country, lang);
         await mail(email, T.confirmSubj[lang], shell(`<p>${esc(T.confirmBody[lang](cn))}</p>${btn(`${SITE}/api/alerts?a=confirm&t=${s.token}`, T.confirmBtn[lang])}`));
       }
       res.status(200).json({ ok: true, confirmed: !!s?.confirmed });
@@ -133,7 +168,7 @@ export default async function handler(req: Req, res: Res) {
     }
     const lang = L(s.lang);
     if (a === 'confirm') {
-      await sb(`alert_subs?id=eq.${s.id}`, { method: 'PATCH', body: JSON.stringify({ confirmed: true, last_seen: snapshot(s.country, s.passport, lang) }) });
+      await sb(`alert_subs?id=eq.${s.id}`, { method: 'PATCH', body: JSON.stringify({ confirmed: true, last_seen: await snapshot(s.country, s.passport) }) });
       page(res, T.okConfirm[lang], lang);
     } else {
       await sb(`alert_subs?id=eq.${s.id}`, { method: 'DELETE' });
@@ -148,19 +183,19 @@ export default async function handler(req: Req, res: Res) {
     let sent = 0;
     for (const s of subs) {
       const lang = L(s.lang);
-      const now = snapshot(s.country, s.passport, lang);
+      const now = await snapshot(s.country, s.passport);
       const was = s.last_seen;
       if (was && (was.visa !== now.visa || was.adv !== now.adv)) {
-        const cn = getCountryName(s.country, lang);
+        const cn = await cname(s.country, lang);
         const rows = [
-          was.visa !== now.visa ? `<li><b>${esc(T.visa[lang])}:</b> ${esc(was.visa)} → <b>${esc(now.visa)}</b></li>` : '',
+          was.visa !== now.visa ? `<li><b>${esc(T.visa[lang])}:</b> ${esc(visaLabel(was.visa, lang))} → <b>${esc(visaLabel(now.visa, lang))}</b></li>` : '',
           was.adv !== now.adv ? `<li><b>${esc(T.adv[lang])}:</b> ${was.adv ?? '–'}/4 → <b>${now.adv ?? '–'}/4</b></li>` : ''
         ].join('');
         try {
           await mail(
             s.email,
             T.changeSubj[lang](cn),
-            shell(`<h2 style="margin:0 0 8px">${esc(cn)}</h2><ul>${rows}</ul>${btn(`${SITE}/${lang}/${getCountrySlug(s.country, lang as never)}`, T.see[lang])}<p style="font-size:12px;color:#5b6b73"><a href="${SITE}/api/alerts?a=unsub&t=${s.token}" style="color:#5b6b73">${esc(T.unsub[lang])}</a></p>`)
+            shell(`<h2 style="margin:0 0 8px">${esc(cn)}</h2><ul>${rows}</ul>${btn(`${SITE}/${lang}/${await slug(s.country, lang)}`, T.see[lang])}<p style="font-size:12px;color:#5b6b73"><a href="${SITE}/api/alerts?a=unsub&t=${s.token}" style="color:#5b6b73">${esc(T.unsub[lang])}</a></p>`)
           );
           sent++;
         } catch {
