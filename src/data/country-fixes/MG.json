@@ -1,0 +1,1957 @@
+{
+ "tr": {
+  "insights": {
+   "currency": "Madagaskar Ariarisi (MGA)",
+   "bestMonths": "Nisan – Kasım (kurak sezon); eylül – kasım lemur yavruları ve ılık hava için ideal; ocak – mart siklon ve yoğun yağış dönemi",
+   "safety": {
+    "safetyScore": 40,
+    "safetyLevel": "Hassas / Tedbir Gerekir",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60",
+    "crimeRateSummary": "Antananarivo’da kapkaç, yankesicilik ve gece silahlı soygun yaygındır; kırsal yollarda (özellikle güneyde) gece haydut (dahalo) saldırıları görülür. Ekim 2025’teki siyasi kriz ve gösteriler sonrası durum hassastır; kalabalıklardan uzak durun.",
+    "commonScams": [
+     "Havalimanında ve otel önlerinde taksicilerin yabancıya üç kat fiyat söylemesi",
+     "Lisanssız “rehberlerin” milli park girişinde fahiş ücret istemesi",
+     "Sokakta döviz bozdurma sırasında eksik sayım veya geçersiz eski banknot verilmesi"
+    ],
+    "safeTravelTips": [
+     "Hava karardıktan sonra Antananarivo’da yürümeyin; otelin ayarladığı taksiyi kullanın.",
+     "Şehirlerarası yollarda (RN7 dahil) gece seyahat etmeyin; şoförlü araç ve gün ışığı planlayın.",
+     "Gösteri ve siyasi toplantılardan uzak durun; yerel haberleri ve TC büyükelçiliği duyurularını takip edin."
+    ],
+    "emergencyNumbers": {
+     "police": "117",
+     "ambulance": "117",
+     "general": "117"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Antananarivo ve büyük şehirlerde 4G iyi; RN7 boyunca kesintili, parklarda ve kırsalda zayıf veya yok",
+    "costPerGbUsd": "~0.50 - 1.50 $",
+    "esimAvailability": "Orta (uluslararası eSIM paketleri var; yerel SIM daha ucuz, pasaportla kayıt gerekir)",
+    "bestCarriers": [
+     "Yas (ex-Telma)",
+     "Orange Madagascar",
+     "Airtel Madagascar",
+     "Airalo eSIM"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Zayıf (bozuk yollar, uzun yolculuklar)",
+    "costLevel": "Ekonomik (şoförlü araç hariç)",
+    "singleTicketUsd": "0.15 - 0.25 $ (taxi-be şehir minibüsü)",
+    "dailyPassUsd": "Yok (şoförlü 4x4: günlük 60 - 100 $)",
+    "popularRideApps": [
+     "Yaygın bir uygulama yok",
+     "Otel taksileri",
+     "Taxi-brousse (Cotisse gibi firmalar)"
+    ],
+    "taxiAdvice": "Antananarivo’da taksimetre yoktur; krem rengi taksilerde fiyatı binmeden pazarlık edin veya otelden çağırtın. Uzun mesafede en rahat seçenek şoförlü 4x4 kiralamaktır; taxi-brousse ucuzdur ama kalabalık ve yavaştır, gece seferlerinden kaçının. Zaman kısıtlıysa Madagascar Airlines (eski Tsaradia) iç hat uçuşları tercih edilebilir ancak rötar sıktır."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "30 - 50 $",
+    "dailyBudgetMidrangeUsd": "80 - 150 $",
+    "budgetMealUsd": "3 - 7 $",
+    "coffeeUsd": "0.50 - 2.00 $",
+    "waterBottleUsd": "0.40 - 0.80 $",
+    "hostelDormUsd": "10 - 20 $",
+    "hotel3StarUsd": "35 - 75 $",
+    "flightCostIndex": "Yüksek (aktarmalı uzun yol)",
+    "flightTip": "Türkiye’den Antananarivo’ya (TNR) genellikle Addis Ababa (Ethiopian), Nairobi (Kenya Airways), Mauritius (Air Mauritius) veya Paris (Air France) aktarmalı uçulur; iç hatlar pahalı olduğu için güzergâhı tek bilette planlayın."
+   },
+   "plugType": "Tip C, D, E, J, K (220V, 50Hz)"
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "“Fady” denen yerel tabulara saygı gösterin; bazı göl, mezar ve ormanlarda belirli davranış veya yiyecekler yasaktır, rehberinize sorun.",
+     "Selamlaşma sakin ve naziktir; yaşlılara öncelik verin ve sesinizi yükseltmeyin.",
+     "İnsanları, özellikle mezarları ve törenleri fotoğraflamadan önce izin isteyin.",
+     "Çocuklara şeker veya para dağıtmayın; yerel okul ya da derneklere bağış daha uygundur."
+    ],
+    "festivals": [
+     "Famadihana (temmuz – eylül, yaylalarda ataların kemiklerinin yeniden sarıldığı tören)",
+     "Bağımsızlık Günü (26 Haziran)",
+     "Donia Müzik Festivali (Nosy Be, mayıs – haziran)"
+    ],
+    "lifestyle": "“Mora mora” (yavaş yavaş) felsefesiyle sakin bir yaşam; aile ve atalara bağlılık her şeyin merkezindedir, pirinç günde üç öğün sofradadır."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Baobab Bulvarı (Morondava)",
+     "Tsingy de Bemaraha (UNESCO kireçtaşı ormanı)",
+     "Andasibe-Mantadia Milli Parkı (indri lemurları)",
+     "Isalo Milli Parkı (kanyonlar ve doğal havuzlar)",
+     "Ranomafana Milli Parkı (yağmur ormanı)",
+     "Nosy Be adası ve çevresi"
+    ],
+    "bestSeasons": "Nisan – Kasım",
+    "travelStyleTip": "Ada çok büyük ve yollar yavaştır; tek seyahatte bir bölgeye (ör. RN7 güney rotası) odaklanın ve yerel ajans üzerinden şoförlü araç kiralayın."
+   },
+   "religion": {
+    "primaryReligions": "Hristiyan ~%80-85 (Protestan ve Katolik), Müslüman ~%5-7; atalara saygı inancı çok yaygındır ve diğer inançlarla iç içe yaşanır",
+    "respectNorms": "Kutsal tepelere ve mezarlara rehbersiz girmeyin; bazı yerlerde ayakkabı çıkarmak veya domuz eti getirmemek gibi fady kuralları vardır.",
+    "sacredSites": [
+     "Ambohimanga Kraliyet Tepesi (UNESCO)",
+     "Rova (Manjakamiadana Kraliçe Sarayı, Antananarivo)",
+     "Anivorano Kutsal Timsah Gölü (kuzey)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Resmî diller Malgaşça ve Fransızcadır; günlük hayatta her yerde Malgaşça konuşulur.",
+    "englishProficiency": "Düşük; turizm sektörü dışında Fransızca çok daha işe yarar.",
+    "phrases": [
+     {
+      "phrase": "Manao ahoana",
+      "meaning": "Merhaba / Nasılsınız",
+      "translation": "Merhaba / Nasılsınız",
+      "pronunciation": "ma-NOW a-OON"
+     },
+     {
+      "phrase": "Misaotra (betsaka)",
+      "meaning": "(Çok) teşekkürler",
+      "translation": "(Çok) teşekkürler",
+      "pronunciation": "mi-SOW-tra (BET-sa-ka)"
+     },
+     {
+      "phrase": "Azafady",
+      "meaning": "Lütfen / Affedersiniz",
+      "translation": "Lütfen / Affedersiniz",
+      "pronunciation": "a-za-FAD"
+     },
+     {
+      "phrase": "Ohatrinona?",
+      "meaning": "Ne kadar?",
+      "translation": "Ne kadar?",
+      "pronunciation": "o-a-TCHI-noon"
+     },
+     {
+      "phrase": "Veloma",
+      "meaning": "Hoşça kalın",
+      "translation": "Hoşça kalın",
+      "pronunciation": "vel-OOM"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Ada, MS ilk binyılda Borneo’dan gelen Austronezyalılar ve ardından Doğu Afrikalı Bantu topluluklarınca yerleşildi. 18.-19. yüzyılda Merina Krallığı adanın büyük kısmını birleştirdi; Fransa 1896’da adayı sömürgeleştirdi. 1947 ayaklanmasının ardından Madagaskar 26 Haziran 1960’ta bağımsızlığını kazandı.",
+    "milestones": [
+     "~MS 500-1000: Austronezyalı denizcilerin adaya yerleşmesi",
+     "1787-1810: Kral Andrianampoinimerina’nın Merina birliğini kurması",
+     "1896: Fransız sömürgesi olması",
+     "1960: Bağımsızlık (26 Haziran)"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Romazava (zebu eti ve yeşilliklerle yapılan millî yahni)",
+     "Ravitoto (domuz etli, dövülmüş manyok yaprağı)",
+     "Zebu bonfile ve vary amin’anana (yeşillikli pilav)"
+    ],
+    "traditionalDrinks": [
+     "Ranon’apango (yanık pirinç suyu)",
+     "THB (Three Horses Beer) birası",
+     "Rhum arrangé (meyve ve baharatla demlenmiş rom)"
+    ],
+    "streetFoodAndDesserts": [
+     "Mofo gasy (pirinç unlu sabah keki)",
+     "Koba (muz yaprağında fıstıklı pirinç tatlısı)",
+     "Sambos (Malgaş usulü samosa)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Kral Andrianampoinimerina (Merina birleştiricisi)",
+     "Kraliçe Ranavalona I",
+     "Jean-Joseph Rabearivelo (şair)"
+    ],
+    "strongSectors": [
+     "Vanilya (dünyanın en büyük üreticisi) ve karanfil",
+     "Madencilik (nikel-kobalt, grafit, ilmenit)",
+     "Tekstil ve ekoturizm"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Nakit hâkimdir; kart yalnızca büyük otel ve restoranlarda geçer. Avro getirip banka veya resmî bürolarda bozdurun; BNI ve BOA ATM’leri Visa kabul eder, kırsalda ATM yoktur. Mobil ödeme (MVola, Orange Money) yerel halkta yaygındır.",
+    "tippingCulture": "Restoranlarda %5-10 bahşiş takdir edilir; rehber, şoför ve hamal bahşişleri beklenir (rehbere günlük ~5-10 $).",
+    "economicPillars": "Tarım (pirinç, vanilya, karanfil), madencilik, tekstil ihracatı ve turizm."
+   }
+  },
+  "itin": {
+   "routeName": "Madagaskar RN7 Rotası: Antananarivo’dan Isalo’ya",
+   "routeSummary": "Başkentin kraliyet tepelerinden Antsirabe’nin yayla kasabasına, Ranomafana’nın lemurlu yağmur ormanına ve Isalo’nun kızıl kanyonlarına uzanan, şoförlü araçla yapılan 10 günlük klasik güney rotası.",
+   "totalDays": 10,
+   "bestSeason": "Nisan – Kasım",
+   "transportMode": "Şoförlü 4x4 veya özel minibüs (RN7)",
+   "paceLevel": "Dengeli (Doğa + Kültür, uzun yol günleri)",
+   "signatureGastronomy": {
+    "dishes": [
+     "Romazava",
+     "Ravitoto",
+     "Zebu bonfile"
+    ],
+    "drinks": [
+     "Ranon’apango",
+     "THB birası",
+     "Rhum arrangé"
+    ],
+    "streetFoods": [
+     "Mofo gasy",
+     "Koba",
+     "Sambos"
+    ],
+    "diningAdvice": "“Hotely” denen yerel lokantalarda pirinçli bir öğün 2-3 $’dır; çiğ salata ve buzdan kaçının, sıcak pişmiş yemekleri tercih edin."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Sıtma ilacı ve DEET’li sinek kovucu",
+     "Yayla geceleri için polar ve yağmurluk",
+     "Yeterli avro nakit ve küçük ariary banknotları",
+     "Kafa lambası ve powerbank (elektrik kesintileri)"
+    ],
+    "safetyAndEtiquette": [
+     "Fady kurallarını rehberinize sorun ve uyun.",
+     "Gece yolculuğu yapmayın ve gösterilerden uzak durun."
+    ]
+   },
+   "idealDurationText": "10 Günlük Rota",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "1. Durak: Antananarivo (Başkent ve Kraliyet Tepeleri)",
+     "recommendedDuration": "2 Gün",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "Rova (Kraliçe Sarayı)",
+      "Ambohimanga Kraliyet Tepesi",
+      "Anosy Gölü ve jakaranda ağaçları",
+      "Lemurs’ Park"
+     ],
+     "activities": [
+      "Rova’dan şehrin tepelerini ve pirinç tarlalarını izleyin.",
+      "Yarım günlük gezide Ambohimanga’yı rehberle gezin.",
+      "La Digue el sanatları pazarında rafya ve ahşap ürünlere bakın."
+     ],
+     "foodAndDrinks": [
+      "Romazava",
+      "Mofo gasy",
+      "THB birası"
+     ],
+     "criticalTips": [
+      "Analakely pazarında değerli eşyanızı göstermeyin; gece yürümeyin.",
+      "Trafik çok yoğundur; havalimanı transferi için 1-2 saat pay bırakın."
+     ],
+     "mapsQuery": "Antananarivo, Madagascar"
+    },
+    {
+     "stopNumber": 2,
+     "name": "2. Durak: Antsirabe (Yayla Kasabası ve Pousse-Pousse’lar)",
+     "recommendedDuration": "2 Gün",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "Renkli pousse-pousse (çekçek) arabaları",
+      "Tritriva krater gölü",
+      "Zebu boynuzu ve geri dönüşüm atölyeleri",
+      "Sömürge dönemi termal otel binası"
+     ],
+     "activities": [
+      "Pousse-pousse ile şehir merkezini turlayın.",
+      "Tritriva gölü çevresinde kısa bir yürüyüş yapın.",
+      "Yol üstünde Ambositra’nın Zafimaniry ahşap oymacılarına uğrayın."
+     ],
+     "foodAndDrinks": [
+      "Zebu bonfile",
+      "Yerel peynir ve yoğurt",
+      "Ranon’apango"
+     ],
+     "criticalTips": [
+      "Yayla geceleri soğuktur (haziran – ağustos 5 °C’ye iner); polar getirin.",
+      "Pousse-pousse fiyatını binmeden kararlaştırın."
+     ],
+     "mapsQuery": "Antsirabe, Madagascar"
+    },
+    {
+     "stopNumber": 3,
+     "name": "3. Durak: Ranomafana (Yağmur Ormanı ve Lemurlar)",
+     "recommendedDuration": "2 Gün",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "Altın bambu lemuru",
+      "Namorona Nehri şelaleleri",
+      "Bukalemunlar ve yaprak kuyruklu kertenkeleler",
+      "Ranomafana kaplıcaları"
+     ],
+     "activities": [
+      "Sabah erken saatte rehberli lemur yürüyüşü yapın.",
+      "Gece yürüyüşünde fare lemurlarını ve bukalemunları arayın.",
+      "Dönüşte kaplıca havuzunda dinlenin."
+     ],
+     "foodAndDrinks": [
+      "Vary amin’anana",
+      "Taze nehir kerevitleri (orana)"
+     ],
+     "criticalTips": [
+      "Park içinde lisanslı yerel rehber zorunludur; ücreti park girişinde ödeyin.",
+      "Patikalar kaygan ve sülüklüdür; su geçirmez ayakkabı ve uzun çorap giyin."
+     ],
+     "mapsQuery": "Ranomafana National Park, Madagascar"
+    },
+    {
+     "stopNumber": 4,
+     "name": "4. Durak: Isalo Milli Parkı (Kanyonlar ve Doğal Havuzlar)",
+     "recommendedDuration": "3 Gün",
+     "durationBadge": "3 Gün",
+     "highlights": [
+      "Piscine Naturelle (doğal havuz)",
+      "Maymun ve Sıçan kanyonları",
+      "“La Fenêtre” kaya penceresinde gün batımı",
+      "Halka kuyruklu lemurlar ve sifakalar"
+     ],
+     "activities": [
+      "Namaza kamp alanından şelale ve kanyon yürüyüşü yapın.",
+      "Doğal havuzda yüzün.",
+      "Gün batımını La Fenêtre’de izleyin."
+     ],
+     "foodAndDrinks": [
+      "Zebu şiş (masikita)",
+      "Rhum arrangé"
+     ],
+     "criticalTips": [
+      "Gündüz güneşi çok serttir; şapka, krem ve en az 2 litre su taşıyın.",
+      "Ilakaka safir kasabasında gece durmayın; dönüş için Toliara’ya uçuş planlayın."
+     ],
+     "mapsQuery": "Isalo National Park, Ranohira, Madagascar"
+    }
+   ]
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "D",
+     "E",
+     "J",
+     "K"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "C ve E tipi (iki yuvarlak pim) en yaygındır; Türk fişleri çoğu prize uyar. Kırsalda elektrik kesintisi sık, powerbank alın."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Musluk suyu içilmez; şişe veya arıtılmış su için, buz ve çiğ sebzeden kaçının.",
+    "vaccines": [
+     "Sarıhumma (yalnızca riskli bir ülkeden geliyorsanız sertifika istenir)",
+     "Hepatit A ve tifo",
+     "Sıtma profilaksisi (özellikle kıyı bölgeleri)",
+     "Kuduz (köpek ve lemurlarla temas riski)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "117"
+   },
+   "tipping": {
+    "custom": "Restoranlarda zorunlu değildir; rehber ve şoförlere bahşiş gelenekseldir.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Park rehberine yarım gün için ~5 $, şoföre günlük ~5-10 $ uygun kabul edilir."
+   },
+   "taxFree": {
+    "vatRefundPercent": "%20 KDV; turistlere iade yok",
+    "minSpend": "Uygulanmaz",
+    "customsNote": "Turistlere KDV iadesi yoktur. Lemur, bukalemun, endemik bitki, fosil ve işlenmemiş değerli taşların ihracı yasak veya izne tabidir; vanilyayı makul miktarda ve faturasıyla çıkarın."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "~0.50 - 1.50 $",
+    "topCarriers": [
+     "Yas (ex-Telma)",
+     "Orange Madagascar",
+     "Airtel Madagascar"
+    ],
+    "airportSimTrapWarning": "Ivato Havalimanı’ndaki operatör standları makul fiyatlıdır ama kayıt için pasaport ister; kırsalda en iyi çekimi Yas (Telma) verir."
+   },
+   "touristScams": [
+    {
+     "title": "Havalimanı taksi fiyatı",
+     "desc": "Ivato’dan şehre taksiciler yabancılara fahiş fiyat söyler.",
+     "tip": "Transferi otelden ayarlayın veya fiyatı binmeden netleştirin."
+    },
+    {
+     "title": "Sahte park rehberi",
+     "desc": "Lisanssız kişiler parkın dışında “resmî rehber” gibi davranıp ücret toplar.",
+     "tip": "Rehberi ve bileti yalnızca Madagascar National Parks ofisinden alın."
+    },
+    {
+     "title": "Sahte safir satışı",
+     "desc": "Ilakaka ve Isalo çevresinde cam veya düşük kaliteli taşlar “safir” diye satılır.",
+     "tip": "Değerli taşı yalnızca sertifikalı satıcıdan ve faturalı alın."
+    }
+   ]
+  }
+ },
+ "en": {
+  "insights": {
+   "currency": "Malagasy Ariary (MGA)",
+   "bestMonths": "April – November (dry season); September – November is ideal for baby lemurs and mild weather; January – March is cyclone and heavy-rain season",
+   "safety": {
+    "safetyScore": 40,
+    "safetyLevel": "Caution Advised",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60",
+    "crimeRateSummary": "Bag-snatching, pickpocketing and armed robbery at night are common in Antananarivo; bandit (dahalo) attacks occur on rural roads at night, especially in the south. The situation remains sensitive after the October 2025 political crisis and protests; avoid crowds.",
+    "commonScams": [
+     "Taxi drivers at the airport and outside hotels quoting foreigners triple the fare",
+     "Unlicensed “guides” demanding inflated fees at national park entrances",
+     "Short-counting or old invalid notes during street currency exchange"
+    ],
+    "safeTravelTips": [
+     "Do not walk in Antananarivo after dark; use a taxi arranged by your hotel.",
+     "Never travel intercity roads (including the RN7) at night; plan driver-hire trips in daylight.",
+     "Stay away from demonstrations and political rallies; follow local news and embassy notices."
+    ],
+    "emergencyNumbers": {
+     "police": "117",
+     "ambulance": "117",
+     "general": "117"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Good 4G in Antananarivo and major towns; patchy along the RN7, weak or absent in parks and rural areas",
+    "costPerGbUsd": "~0.50 - 1.50 $",
+    "esimAvailability": "Moderate (international eSIM plans exist; a local SIM is cheaper and needs passport registration)",
+    "bestCarriers": [
+     "Yas (ex-Telma)",
+     "Orange Madagascar",
+     "Airtel Madagascar",
+     "Airalo eSIM"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Poor (rough roads, long journeys)",
+    "costLevel": "Budget-friendly (except car with driver)",
+    "singleTicketUsd": "0.15 - 0.25 $ (taxi-be city minibus)",
+    "dailyPassUsd": "None (4x4 with driver: 60 - 100 $ per day)",
+    "popularRideApps": [
+     "No widely used app",
+     "Hotel-arranged taxis",
+     "Taxi-brousse (operators such as Cotisse)"
+    ],
+    "taxiAdvice": "Taxis in Antananarivo have no meters; agree the fare before getting into the cream-coloured cabs or have your hotel call one. For long distances the most comfortable option is a 4x4 with driver; taxi-brousse is cheap but crowded and slow, and night runs should be avoided. If short on time, Madagascar Airlines domestic flights help, though delays are frequent."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "30 - 50 $",
+    "dailyBudgetMidrangeUsd": "80 - 150 $",
+    "budgetMealUsd": "3 - 7 $",
+    "coffeeUsd": "0.50 - 2.00 $",
+    "waterBottleUsd": "0.40 - 0.80 $",
+    "hostelDormUsd": "10 - 20 $",
+    "hotel3StarUsd": "35 - 75 $",
+    "flightCostIndex": "High (long-haul with connections)",
+    "flightTip": "From Turkey, Antananarivo (TNR) is usually reached via Addis Ababa (Ethiopian), Nairobi (Kenya Airways), Mauritius (Air Mauritius) or Paris (Air France); domestic flights are expensive, so plan the route carefully."
+   },
+   "plugType": "Type C, D, E, J, K (220V, 50Hz)"
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Respect local taboos called “fady”; certain behaviours or foods are forbidden at some lakes, tombs and forests, so ask your guide.",
+     "Greetings are calm and polite; give precedence to elders and never raise your voice.",
+     "Ask permission before photographing people, and especially tombs and ceremonies.",
+     "Do not hand out sweets or money to children; donating to local schools or associations is better."
+    ],
+    "festivals": [
+     "Famadihana (July – September, highland ceremony of re-wrapping ancestors’ remains)",
+     "Independence Day (26 June)",
+     "Donia Music Festival (Nosy Be, May – June)"
+    ],
+    "lifestyle": "A relaxed life guided by “mora mora” (slowly, slowly); family and ancestors are at the centre of everything, and rice is eaten three times a day."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Avenue of the Baobabs (Morondava)",
+     "Tsingy de Bemaraha (UNESCO limestone forest)",
+     "Andasibe-Mantadia National Park (indri lemurs)",
+     "Isalo National Park (canyons and natural pools)",
+     "Ranomafana National Park (rainforest)",
+     "Nosy Be island and surroundings"
+    ],
+    "bestSeasons": "April – November",
+    "travelStyleTip": "The island is huge and roads are slow; focus on one region per trip (e.g. the RN7 southern route) and hire a car with driver through a local agency."
+   },
+   "religion": {
+    "primaryReligions": "Christian ~80-85% (Protestant and Catholic), Muslim ~5-7%; ancestor veneration is very widespread and blends with other faiths",
+    "respectNorms": "Do not enter sacred hills or tombs without a guide; some sites have fady rules such as removing shoes or not bringing pork.",
+    "sacredSites": [
+     "Royal Hill of Ambohimanga (UNESCO)",
+     "Rova (Manjakamiadana Queen’s Palace, Antananarivo)",
+     "Sacred Crocodile Lake of Anivorano (north)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Official languages are Malagasy and French; Malagasy is spoken everywhere in daily life.",
+    "englishProficiency": "Low; outside tourism French is far more useful.",
+    "phrases": [
+     {
+      "phrase": "Manao ahoana",
+      "meaning": "Hello / How are you",
+      "translation": "Hello / How are you",
+      "pronunciation": "ma-NOW a-OON"
+     },
+     {
+      "phrase": "Misaotra (betsaka)",
+      "meaning": "Thank you (very much)",
+      "translation": "Thank you (very much)",
+      "pronunciation": "mi-SOW-tra (BET-sa-ka)"
+     },
+     {
+      "phrase": "Azafady",
+      "meaning": "Please / Excuse me",
+      "translation": "Please / Excuse me",
+      "pronunciation": "a-za-FAD"
+     },
+     {
+      "phrase": "Ohatrinona?",
+      "meaning": "How much?",
+      "translation": "How much?",
+      "pronunciation": "o-a-TCHI-noon"
+     },
+     {
+      "phrase": "Veloma",
+      "meaning": "Goodbye",
+      "translation": "Goodbye",
+      "pronunciation": "vel-OOM"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "The island was settled in the first millennium AD by Austronesians from Borneo, followed by Bantu communities from East Africa. In the 18th–19th centuries the Merina Kingdom unified most of the island; France colonised it in 1896. After the 1947 uprising, Madagascar gained independence on 26 June 1960.",
+    "milestones": [
+     "~AD 500–1000: Austronesian seafarers settle the island",
+     "1787–1810: King Andrianampoinimerina unifies the Merina",
+     "1896: Becomes a French colony",
+     "1960: Independence (26 June)"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Romazava (national stew of zebu meat and leafy greens)",
+     "Ravitoto (pounded cassava leaves with pork)",
+     "Zebu steak and vary amin’anana (rice with greens)"
+    ],
+    "traditionalDrinks": [
+     "Ranon’apango (burnt-rice water)",
+     "THB (Three Horses Beer)",
+     "Rhum arrangé (rum infused with fruit and spices)"
+    ],
+    "streetFoodAndDesserts": [
+     "Mofo gasy (rice-flour breakfast cakes)",
+     "Koba (peanut-rice cake in banana leaf)",
+     "Sambos (Malagasy samosas)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "King Andrianampoinimerina (unifier of the Merina)",
+     "Queen Ranavalona I",
+     "Jean-Joseph Rabearivelo (poet)"
+    ],
+    "strongSectors": [
+     "Vanilla (world’s largest producer) and cloves",
+     "Mining (nickel-cobalt, graphite, ilmenite)",
+     "Textiles and ecotourism"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Cash dominates; cards work only in larger hotels and restaurants. Bring euros and exchange at banks or official bureaux; BNI and BOA ATMs accept Visa, and there are no ATMs in rural areas. Mobile money (MVola, Orange Money) is widespread among locals.",
+    "tippingCulture": "A 5-10% tip is appreciated in restaurants; tips for guides, drivers and porters are expected (about 5-10 $ per day for a guide).",
+    "economicPillars": "Agriculture (rice, vanilla, cloves), mining, textile exports and tourism."
+   }
+  },
+  "itin": {
+   "routeName": "Madagascar RN7 Route: Antananarivo to Isalo",
+   "routeSummary": "A classic 10-day southern route by car with driver, from the capital’s royal hills to the highland town of Antsirabe, Ranomafana’s lemur-filled rainforest and the red canyons of Isalo.",
+   "totalDays": 10,
+   "bestSeason": "April – November",
+   "transportMode": "4x4 or private minivan with driver (RN7)",
+   "paceLevel": "Balanced (Nature + Culture, long driving days)",
+   "signatureGastronomy": {
+    "dishes": [
+     "Romazava",
+     "Ravitoto",
+     "Zebu steak"
+    ],
+    "drinks": [
+     "Ranon’apango",
+     "THB beer",
+     "Rhum arrangé"
+    ],
+    "streetFoods": [
+     "Mofo gasy",
+     "Koba",
+     "Sambos"
+    ],
+    "diningAdvice": "A rice meal at a local “hotely” eatery costs 2-3 $; avoid raw salads and ice and stick to freshly cooked hot food."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Malaria tablets and DEET insect repellent",
+     "Fleece and rain jacket for highland nights",
+     "Enough euro cash and small ariary notes",
+     "Headlamp and power bank (power cuts)"
+    ],
+    "safetyAndEtiquette": [
+     "Ask your guide about fady rules and follow them.",
+     "Do not travel by night and avoid demonstrations."
+    ]
+   },
+   "idealDurationText": "10-Day Itinerary",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stop 1: Antananarivo (Capital and Royal Hills)",
+     "recommendedDuration": "2 Days",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "Rova (Queen’s Palace)",
+      "Royal Hill of Ambohimanga",
+      "Lake Anosy and its jacaranda trees",
+      "Lemurs’ Park"
+     ],
+     "activities": [
+      "Take in the city’s hills and rice paddies from the Rova.",
+      "Visit Ambohimanga with a guide on a half-day trip.",
+      "Browse raffia and woodcraft at the La Digue craft market."
+     ],
+     "foodAndDrinks": [
+      "Romazava",
+      "Mofo gasy",
+      "THB beer"
+     ],
+     "criticalTips": [
+      "Keep valuables out of sight in Analakely market and do not walk at night.",
+      "Traffic is very heavy; allow 1-2 hours for airport transfers."
+     ],
+     "mapsQuery": "Antananarivo, Madagascar"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stop 2: Antsirabe (Highland Town and Pousse-Pousses)",
+     "recommendedDuration": "2 Days",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "Colourful pousse-pousse rickshaws",
+      "Lake Tritriva crater lake",
+      "Zebu-horn and recycling workshops",
+      "Colonial-era thermal hotel building"
+     ],
+     "activities": [
+      "Tour the centre by pousse-pousse.",
+      "Take a short hike around Lake Tritriva.",
+      "Stop at Ambositra’s Zafimaniry woodcarvers on the way south."
+     ],
+     "foodAndDrinks": [
+      "Zebu steak",
+      "Local cheese and yoghurt",
+      "Ranon’apango"
+     ],
+     "criticalTips": [
+      "Highland nights are cold (down to 5 °C in June – August); bring a fleece.",
+      "Agree the pousse-pousse fare before you climb in."
+     ],
+     "mapsQuery": "Antsirabe, Madagascar"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stop 3: Ranomafana (Rainforest and Lemurs)",
+     "recommendedDuration": "2 Days",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "Golden bamboo lemur",
+      "Namorona River waterfalls",
+      "Chameleons and leaf-tailed geckos",
+      "Ranomafana hot springs"
+     ],
+     "activities": [
+      "Do an early-morning guided lemur trek.",
+      "Look for mouse lemurs and chameleons on a night walk.",
+      "Relax afterwards in the hot-spring pool."
+     ],
+     "foodAndDrinks": [
+      "Vary amin’anana",
+      "Fresh river crayfish (orana)"
+     ],
+     "criticalTips": [
+      "A licensed local guide is mandatory in the park; pay at the park office.",
+      "Trails are slippery and have leeches; wear waterproof shoes and long socks."
+     ],
+     "mapsQuery": "Ranomafana National Park, Madagascar"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Stop 4: Isalo National Park (Canyons and Natural Pools)",
+     "recommendedDuration": "3 Days",
+     "durationBadge": "3 Days",
+     "highlights": [
+      "Piscine Naturelle (natural pool)",
+      "Canyon des Singes and Canyon des Rats",
+      "Sunset at the “La Fenêtre” rock window",
+      "Ring-tailed lemurs and sifakas"
+     ],
+     "activities": [
+      "Hike to waterfalls and canyons from the Namaza camp.",
+      "Swim in the natural pool.",
+      "Watch the sunset at La Fenêtre."
+     ],
+     "foodAndDrinks": [
+      "Zebu skewers (masikita)",
+      "Rhum arrangé"
+     ],
+     "criticalTips": [
+      "The midday sun is fierce; carry a hat, sunscreen and at least 2 litres of water.",
+      "Do not stop overnight in the sapphire town of Ilakaka; plan a flight back from Toliara."
+     ],
+     "mapsQuery": "Isalo National Park, Ranohira, Madagascar"
+    }
+   ]
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "D",
+     "E",
+     "J",
+     "K"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Types C and E (two round pins) are most common; Turkish/European plugs fit most sockets. Power cuts are frequent in rural areas, bring a power bank."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Tap water is not drinkable; drink bottled or treated water and avoid ice and raw vegetables.",
+    "vaccines": [
+     "Yellow fever (certificate required only if arriving from a risk country)",
+     "Hepatitis A and typhoid",
+     "Malaria prophylaxis (especially coastal areas)",
+     "Rabies (risk from dogs and lemurs)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "117"
+   },
+   "tipping": {
+    "custom": "Not mandatory in restaurants; tipping guides and drivers is customary.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "About 5 $ for a park guide per half day and 5-10 $ per day for a driver is considered fair."
+   },
+   "taxFree": {
+    "vatRefundPercent": "20% VAT; no refund for tourists",
+    "minSpend": "Not applicable",
+    "customsNote": "There is no VAT refund for tourists. Exporting lemurs, chameleons, endemic plants, fossils and rough gemstones is banned or requires a permit; take vanilla out in reasonable amounts with a receipt."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "~0.50 - 1.50 $",
+    "topCarriers": [
+     "Yas (ex-Telma)",
+     "Orange Madagascar",
+     "Airtel Madagascar"
+    ],
+    "airportSimTrapWarning": "Carrier desks at Ivato Airport are reasonably priced but need your passport for registration; Yas (Telma) gives the best rural coverage."
+   },
+   "touristScams": [
+    {
+     "title": "Airport taxi pricing",
+     "desc": "Taxi drivers at Ivato quote foreigners inflated fares into town.",
+     "tip": "Book a transfer through your hotel or settle the price before getting in."
+    },
+    {
+     "title": "Fake park guide",
+     "desc": "Unlicensed people pose as “official guides” outside parks and collect fees.",
+     "tip": "Hire guides and buy tickets only at the Madagascar National Parks office."
+    },
+    {
+     "title": "Fake sapphire sales",
+     "desc": "Glass or low-grade stones are sold as “sapphires” around Ilakaka and Isalo.",
+     "tip": "Buy gemstones only from certified dealers with an invoice."
+    }
+   ]
+  }
+ },
+ "de": {
+  "insights": {
+   "currency": "Madagassischer Ariary (MGA)",
+   "bestMonths": "April – November (Trockenzeit); September – November ideal für Lemurenjunge und mildes Wetter; Januar – März Zyklon- und Starkregenzeit",
+   "safety": {
+    "safetyScore": 40,
+    "safetyLevel": "Erhöhte Vorsicht",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60",
+    "crimeRateSummary": "In Antananarivo sind Taschenraub, Taschendiebstahl und nächtliche bewaffnete Überfälle häufig; auf Landstraßen (besonders im Süden) gibt es nachts Banditenüberfälle (Dahalo). Nach der politischen Krise und den Protesten im Oktober 2025 ist die Lage angespannt; meiden Sie Menschenmengen.",
+    "commonScams": [
+     "Taxifahrer am Flughafen und vor Hotels verlangen von Ausländern den dreifachen Preis",
+     "Unlizenzierte „Guides“ verlangen an Nationalparkeingängen überhöhte Gebühren",
+     "Beim Straßengeldwechsel wird zu wenig gezählt oder werden alte ungültige Scheine ausgegeben"
+    ],
+    "safeTravelTips": [
+     "Gehen Sie in Antananarivo nach Einbruch der Dunkelheit nicht zu Fuß; nutzen Sie ein vom Hotel organisiertes Taxi.",
+     "Fahren Sie nie nachts über Land (auch nicht auf der RN7); planen Sie Fahrten mit Fahrer bei Tageslicht.",
+     "Halten Sie sich von Demonstrationen und politischen Kundgebungen fern; verfolgen Sie lokale Nachrichten und Botschaftshinweise."
+    ],
+    "emergencyNumbers": {
+     "police": "117",
+     "ambulance": "117",
+     "general": "117"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Gutes 4G in Antananarivo und größeren Städten; entlang der RN7 lückenhaft, in Parks und auf dem Land schwach oder gar nicht",
+    "costPerGbUsd": "~0.50 - 1.50 $",
+    "esimAvailability": "Mittel (internationale eSIM-Tarife vorhanden; lokale SIM günstiger, Registrierung mit Reisepass)",
+    "bestCarriers": [
+     "Yas (ex-Telma)",
+     "Orange Madagascar",
+     "Airtel Madagascar",
+     "Airalo eSIM"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Schwach (schlechte Straßen, lange Fahrten)",
+    "costLevel": "Günstig (außer Mietwagen mit Fahrer)",
+    "singleTicketUsd": "0.15 - 0.25 $ (Taxi-be-Stadtbus)",
+    "dailyPassUsd": "Keiner (4x4 mit Fahrer: 60 - 100 $ pro Tag)",
+    "popularRideApps": [
+     "Keine verbreitete App",
+     "Hoteltaxis",
+     "Taxi-brousse (Anbieter wie Cotisse)"
+    ],
+    "taxiAdvice": "Taxis in Antananarivo haben kein Taxameter; handeln Sie den Preis bei den cremefarbenen Wagen vor dem Einsteigen aus oder lassen Sie das Hotel eines rufen. Für lange Strecken ist ein 4x4 mit Fahrer am bequemsten; Taxi-brousse ist billig, aber voll und langsam, Nachtfahrten meiden. Bei wenig Zeit helfen Inlandsflüge von Madagascar Airlines, Verspätungen sind jedoch häufig."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "30 - 50 $",
+    "dailyBudgetMidrangeUsd": "80 - 150 $",
+    "budgetMealUsd": "3 - 7 $",
+    "coffeeUsd": "0.50 - 2.00 $",
+    "waterBottleUsd": "0.40 - 0.80 $",
+    "hostelDormUsd": "10 - 20 $",
+    "hotel3StarUsd": "35 - 75 $",
+    "flightCostIndex": "Hoch (Langstrecke mit Umstieg)",
+    "flightTip": "Antananarivo (TNR) erreicht man meist mit Umstieg in Addis Abeba (Ethiopian), Nairobi (Kenya Airways), Mauritius (Air Mauritius) oder Paris (Air France); Inlandsflüge sind teuer, planen Sie die Route sorgfältig."
+   },
+   "plugType": "Typ C, D, E, J, K (220V, 50Hz)"
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Respektieren Sie die lokalen Tabus („fady“); an manchen Seen, Gräbern und Wäldern sind bestimmte Handlungen oder Speisen verboten – fragen Sie Ihren Guide.",
+     "Begrüßungen sind ruhig und höflich; lassen Sie Älteren den Vortritt und werden Sie nie laut.",
+     "Fragen Sie vor dem Fotografieren von Menschen, besonders von Gräbern und Zeremonien, um Erlaubnis.",
+     "Verteilen Sie keine Süßigkeiten oder Geld an Kinder; Spenden an Schulen oder Vereine sind besser."
+    ],
+    "festivals": [
+     "Famadihana (Juli – September, Hochland-Zeremonie der Totenumbettung)",
+     "Unabhängigkeitstag (26. Juni)",
+     "Donia-Musikfestival (Nosy Be, Mai – Juni)"
+    ],
+    "lifestyle": "Ein entspanntes Leben nach dem Motto „mora mora“ (langsam, langsam); Familie und Ahnen stehen im Mittelpunkt, Reis gibt es dreimal täglich."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Baobab-Allee (Morondava)",
+     "Tsingy de Bemaraha (UNESCO-Kalksteinwald)",
+     "Nationalpark Andasibe-Mantadia (Indris)",
+     "Isalo-Nationalpark (Canyons und Naturpools)",
+     "Ranomafana-Nationalpark (Regenwald)",
+     "Insel Nosy Be und Umgebung"
+    ],
+    "bestSeasons": "April – November",
+    "travelStyleTip": "Die Insel ist riesig und die Straßen langsam; konzentrieren Sie sich pro Reise auf eine Region (z. B. die Südroute RN7) und mieten Sie über eine lokale Agentur ein Auto mit Fahrer."
+   },
+   "religion": {
+    "primaryReligions": "Christen ~80–85 % (Protestanten und Katholiken), Muslime ~5–7 %; Ahnenverehrung ist weit verbreitet und mit anderen Glaubensformen verwoben",
+    "respectNorms": "Betreten Sie heilige Hügel und Gräber nicht ohne Guide; an manchen Orten gelten Fady-Regeln, etwa Schuhe ausziehen oder kein Schweinefleisch mitbringen.",
+    "sacredSites": [
+     "Königlicher Hügel von Ambohimanga (UNESCO)",
+     "Rova (Königinnenpalast Manjakamiadana, Antananarivo)",
+     "Heiliger Krokodilsee von Anivorano (Norden)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Amtssprachen sind Madagassisch und Französisch; im Alltag wird überall Madagassisch gesprochen.",
+    "englishProficiency": "Gering; außerhalb des Tourismus ist Französisch viel nützlicher.",
+    "phrases": [
+     {
+      "phrase": "Manao ahoana",
+      "meaning": "Hallo / Wie geht’s",
+      "translation": "Hallo / Wie geht’s",
+      "pronunciation": "ma-NOW a-OON"
+     },
+     {
+      "phrase": "Misaotra (betsaka)",
+      "meaning": "Danke (sehr)",
+      "translation": "Danke (sehr)",
+      "pronunciation": "mi-SOW-tra (BET-sa-ka)"
+     },
+     {
+      "phrase": "Azafady",
+      "meaning": "Bitte / Entschuldigung",
+      "translation": "Bitte / Entschuldigung",
+      "pronunciation": "a-za-FAD"
+     },
+     {
+      "phrase": "Ohatrinona?",
+      "meaning": "Wie viel kostet das?",
+      "translation": "Wie viel kostet das?",
+      "pronunciation": "o-a-TCHI-noon"
+     },
+     {
+      "phrase": "Veloma",
+      "meaning": "Auf Wiedersehen",
+      "translation": "Auf Wiedersehen",
+      "pronunciation": "vel-OOM"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Die Insel wurde im ersten Jahrtausend n. Chr. von Austronesiern aus Borneo besiedelt, später kamen Bantu aus Ostafrika hinzu. Im 18./19. Jahrhundert einte das Merina-Königreich den Großteil der Insel; 1896 wurde sie französische Kolonie. Nach dem Aufstand von 1947 wurde Madagaskar am 26. Juni 1960 unabhängig.",
+    "milestones": [
+     "~500–1000 n. Chr.: Austronesische Seefahrer besiedeln die Insel",
+     "1787–1810: König Andrianampoinimerina eint die Merina",
+     "1896: Französische Kolonie",
+     "1960: Unabhängigkeit (26. Juni)"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Romazava (Nationaleintopf aus Zebufleisch und Blattgemüse)",
+     "Ravitoto (gestampfte Maniokblätter mit Schweinefleisch)",
+     "Zebusteak und Vary amin’anana (Reis mit Grünzeug)"
+    ],
+    "traditionalDrinks": [
+     "Ranon’apango (Wasser mit geröstetem Reis)",
+     "THB-Bier (Three Horses Beer)",
+     "Rhum arrangé (mit Früchten und Gewürzen angesetzter Rum)"
+    ],
+    "streetFoodAndDesserts": [
+     "Mofo gasy (Reismehlküchlein zum Frühstück)",
+     "Koba (Reis-Erdnuss-Kuchen im Bananenblatt)",
+     "Sambos (madagassische Samosas)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "König Andrianampoinimerina (Einiger der Merina)",
+     "Königin Ranavalona I.",
+     "Jean-Joseph Rabearivelo (Dichter)"
+    ],
+    "strongSectors": [
+     "Vanille (weltgrößter Produzent) und Nelken",
+     "Bergbau (Nickel-Kobalt, Graphit, Ilmenit)",
+     "Textilien und Ökotourismus"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Bargeld dominiert; Karten gehen nur in größeren Hotels und Restaurants. Bringen Sie Euro mit und tauschen Sie bei Banken oder offiziellen Wechselstuben; Geldautomaten von BNI und BOA akzeptieren Visa, auf dem Land gibt es keine. Mobiles Bezahlen (MVola, Orange Money) ist bei Einheimischen verbreitet.",
+    "tippingCulture": "In Restaurants sind 5–10 % Trinkgeld willkommen; bei Guides, Fahrern und Trägern wird es erwartet (Guide etwa 5–10 $ pro Tag).",
+    "economicPillars": "Landwirtschaft (Reis, Vanille, Nelken), Bergbau, Textilexporte und Tourismus."
+   }
+  },
+  "itin": {
+   "routeName": "Madagaskar-Route RN7: Von Antananarivo nach Isalo",
+   "routeSummary": "Eine klassische 10-tägige Südroute mit Fahrer: von den Königshügeln der Hauptstadt über die Hochlandstadt Antsirabe und den Lemuren-Regenwald von Ranomafana bis zu den roten Canyons von Isalo.",
+   "totalDays": 10,
+   "bestSeason": "April – November",
+   "transportMode": "4x4 oder privater Kleinbus mit Fahrer (RN7)",
+   "paceLevel": "Ausgewogen (Natur + Kultur, lange Fahrtage)",
+   "signatureGastronomy": {
+    "dishes": [
+     "Romazava",
+     "Ravitoto",
+     "Zebusteak"
+    ],
+    "drinks": [
+     "Ranon’apango",
+     "THB-Bier",
+     "Rhum arrangé"
+    ],
+    "streetFoods": [
+     "Mofo gasy",
+     "Koba",
+     "Sambos"
+    ],
+    "diningAdvice": "Ein Reisgericht in einem lokalen „Hotely“ kostet 2–3 $; meiden Sie rohe Salate und Eis und essen Sie frisch gekochte, heiße Speisen."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Malariatabletten und DEET-Mückenschutz",
+     "Fleece und Regenjacke für Hochlandnächte",
+     "Ausreichend Euro-Bargeld und kleine Ariary-Scheine",
+     "Stirnlampe und Powerbank (Stromausfälle)"
+    ],
+    "safetyAndEtiquette": [
+     "Fragen Sie Ihren Guide nach Fady-Regeln und halten Sie sich daran.",
+     "Reisen Sie nicht nachts und meiden Sie Demonstrationen."
+    ]
+   },
+   "idealDurationText": "10-tägige Route",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stopp 1: Antananarivo (Hauptstadt und Königshügel)",
+     "recommendedDuration": "2 Tage",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "Rova (Königinnenpalast)",
+      "Königlicher Hügel von Ambohimanga",
+      "Anosy-See und Jacarandabäume",
+      "Lemurs’ Park"
+     ],
+     "activities": [
+      "Genießen Sie vom Rova den Blick auf Hügel und Reisfelder.",
+      "Besuchen Sie Ambohimanga auf einem Halbtagesausflug mit Guide.",
+      "Stöbern Sie auf dem Kunsthandwerksmarkt La Digue nach Raffia- und Holzarbeiten."
+     ],
+     "foodAndDrinks": [
+      "Romazava",
+      "Mofo gasy",
+      "THB-Bier"
+     ],
+     "criticalTips": [
+      "Zeigen Sie auf dem Analakely-Markt keine Wertsachen und gehen Sie nachts nicht zu Fuß.",
+      "Der Verkehr ist sehr dicht; planen Sie für Flughafentransfers 1–2 Stunden ein."
+     ],
+     "mapsQuery": "Antananarivo, Madagascar"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stopp 2: Antsirabe (Hochlandstadt und Pousse-Pousses)",
+     "recommendedDuration": "2 Tage",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "Bunte Pousse-Pousse-Rikschas",
+      "Kratersee Tritriva",
+      "Werkstätten für Zebuhorn und Recycling-Kunst",
+      "Kolonialzeitliches Thermalhotel"
+     ],
+     "activities": [
+      "Erkunden Sie das Zentrum per Pousse-Pousse.",
+      "Machen Sie eine kurze Wanderung um den Tritriva-See.",
+      "Halten Sie auf dem Weg nach Süden bei den Zafimaniry-Holzschnitzern in Ambositra."
+     ],
+     "foodAndDrinks": [
+      "Zebusteak",
+      "Lokaler Käse und Joghurt",
+      "Ranon’apango"
+     ],
+     "criticalTips": [
+      "Hochlandnächte sind kalt (Juni – August bis 5 °C); nehmen Sie ein Fleece mit.",
+      "Vereinbaren Sie den Pousse-Pousse-Preis vor dem Einsteigen."
+     ],
+     "mapsQuery": "Antsirabe, Madagascar"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stopp 3: Ranomafana (Regenwald und Lemuren)",
+     "recommendedDuration": "2 Tage",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "Goldener Bambuslemur",
+      "Wasserfälle des Namorona",
+      "Chamäleons und Plattschwanzgeckos",
+      "Thermalquellen von Ranomafana"
+     ],
+     "activities": [
+      "Unternehmen Sie frühmorgens eine geführte Lemurenwanderung.",
+      "Suchen Sie bei einer Nachtwanderung Mausmakis und Chamäleons.",
+      "Entspannen Sie danach im Thermalbecken."
+     ],
+     "foodAndDrinks": [
+      "Vary amin’anana",
+      "Frische Flusskrebse (Orana)"
+     ],
+     "criticalTips": [
+      "Im Park ist ein lizenzierter lokaler Guide Pflicht; bezahlen Sie am Parkbüro.",
+      "Die Pfade sind rutschig und voller Blutegel; tragen Sie wasserfeste Schuhe und lange Socken."
+     ],
+     "mapsQuery": "Ranomafana National Park, Madagascar"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Stopp 4: Isalo-Nationalpark (Canyons und Naturpools)",
+     "recommendedDuration": "3 Tage",
+     "durationBadge": "3 Tage",
+     "highlights": [
+      "Piscine Naturelle (Naturbecken)",
+      "Canyon des Singes und Canyon des Rats",
+      "Sonnenuntergang am Felsenfenster „La Fenêtre“",
+      "Kattas und Sifakas"
+     ],
+     "activities": [
+      "Wandern Sie vom Namaza-Camp zu Wasserfällen und Canyons.",
+      "Schwimmen Sie im Naturbecken.",
+      "Erleben Sie den Sonnenuntergang an La Fenêtre."
+     ],
+     "foodAndDrinks": [
+      "Zebuspieße (Masikita)",
+      "Rhum arrangé"
+     ],
+     "criticalTips": [
+      "Die Mittagssonne ist intensiv; Hut, Sonnencreme und mindestens 2 Liter Wasser mitnehmen.",
+      "Übernachten Sie nicht in der Saphirstadt Ilakaka; planen Sie den Rückflug ab Toliara."
+     ],
+     "mapsQuery": "Isalo National Park, Ranohira, Madagascar"
+    }
+   ]
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "D",
+     "E",
+     "J",
+     "K"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Typ C und E (zwei Rundstifte) sind am häufigsten; europäische Stecker passen meist. Auf dem Land oft Stromausfälle – Powerbank mitnehmen."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Leitungswasser ist nicht trinkbar; trinken Sie Flaschen- oder aufbereitetes Wasser und meiden Sie Eis und Rohkost.",
+    "vaccines": [
+     "Gelbfieber (Nachweis nur bei Einreise aus einem Risikoland)",
+     "Hepatitis A und Typhus",
+     "Malariaprophylaxe (besonders an den Küsten)",
+     "Tollwut (Risiko durch Hunde und Lemuren)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "117"
+   },
+   "tipping": {
+    "custom": "In Restaurants nicht Pflicht; Trinkgeld für Guides und Fahrer ist üblich.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Etwa 5 $ pro halben Tag für den Parkguide und 5–10 $ pro Tag für den Fahrer gelten als angemessen."
+   },
+   "taxFree": {
+    "vatRefundPercent": "20 % MwSt.; keine Erstattung für Touristen",
+    "minSpend": "Nicht zutreffend",
+    "customsNote": "Es gibt keine MwSt.-Erstattung für Touristen. Die Ausfuhr von Lemuren, Chamäleons, endemischen Pflanzen, Fossilien und Rohedelsteinen ist verboten oder genehmigungspflichtig; Vanille in vernünftigen Mengen mit Beleg ausführen."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "~0.50 - 1.50 $",
+    "topCarriers": [
+     "Yas (ex-Telma)",
+     "Orange Madagascar",
+     "Airtel Madagascar"
+    ],
+    "airportSimTrapWarning": "Die Anbieterschalter am Flughafen Ivato sind preislich fair, verlangen aber den Reisepass zur Registrierung; Yas (Telma) hat auf dem Land den besten Empfang."
+   },
+   "touristScams": [
+    {
+     "title": "Flughafentaxi-Preise",
+     "desc": "Taxifahrer in Ivato verlangen von Ausländern überhöhte Preise in die Stadt.",
+     "tip": "Buchen Sie den Transfer über das Hotel oder klären Sie den Preis vor dem Einsteigen."
+    },
+    {
+     "title": "Falscher Parkguide",
+     "desc": "Unlizenzierte Personen geben sich vor Parks als „offizielle Guides“ aus und kassieren.",
+     "tip": "Guides und Tickets nur im Büro von Madagascar National Parks buchen."
+    },
+    {
+     "title": "Falsche Saphire",
+     "desc": "Rund um Ilakaka und Isalo werden Glas oder minderwertige Steine als „Saphire“ verkauft.",
+     "tip": "Edelsteine nur bei zertifizierten Händlern mit Rechnung kaufen."
+    }
+   ]
+  }
+ },
+ "es": {
+  "insights": {
+   "currency": "Ariary malgache (MGA)",
+   "bestMonths": "Abril – noviembre (estación seca); de septiembre a noviembre es ideal por las crías de lémur y el clima templado; enero – marzo es temporada de ciclones y lluvias intensas",
+   "safety": {
+    "safetyScore": 40,
+    "safetyLevel": "Precaución Aconsejada",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60",
+    "crimeRateSummary": "En Antananarivo son frecuentes los tirones, los carteristas y los atracos armados nocturnos; en carreteras rurales (sobre todo en el sur) hay asaltos de bandidos (dahalo) de noche. Tras la crisis política y las protestas de octubre de 2025 la situación sigue delicada; evite las aglomeraciones.",
+    "commonScams": [
+     "Taxistas en el aeropuerto y frente a hoteles que piden el triple a los extranjeros",
+     "“Guías” sin licencia que cobran tarifas infladas a la entrada de los parques nacionales",
+     "Cambistas callejeros que cuentan de menos o entregan billetes antiguos sin validez"
+    ],
+    "safeTravelTips": [
+     "No camine por Antananarivo de noche; use un taxi reservado por su hotel.",
+     "No viaje de noche por carretera (incluida la RN7); planifique los trayectos con chófer de día.",
+     "Manténgase lejos de manifestaciones y mítines políticos; siga las noticias locales y los avisos de su embajada."
+    ],
+    "emergencyNumbers": {
+     "police": "117",
+     "ambulance": "117",
+     "general": "117"
+    }
+   },
+   "internet": {
+    "networkCoverage": "4G bueno en Antananarivo y ciudades grandes; irregular a lo largo de la RN7, débil o inexistente en parques y zonas rurales",
+    "costPerGbUsd": "~0.50 - 1.50 $",
+    "esimAvailability": "Media (hay planes eSIM internacionales; la SIM local es más barata y requiere registro con pasaporte)",
+    "bestCarriers": [
+     "Yas (ex-Telma)",
+     "Orange Madagascar",
+     "Airtel Madagascar",
+     "Airalo eSIM"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Deficiente (carreteras en mal estado, trayectos largos)",
+    "costLevel": "Económico (salvo coche con chófer)",
+    "singleTicketUsd": "0.15 - 0.25 $ (minibús urbano taxi-be)",
+    "dailyPassUsd": "No existe (4x4 con chófer: 60 - 100 $ al día)",
+    "popularRideApps": [
+     "No hay una app extendida",
+     "Taxis del hotel",
+     "Taxi-brousse (empresas como Cotisse)"
+    ],
+    "taxiAdvice": "Los taxis de Antananarivo no llevan taxímetro; pacte la tarifa antes de subir a los coches color crema o pida uno en el hotel. Para largas distancias lo más cómodo es un 4x4 con chófer; el taxi-brousse es barato pero lento y abarrotado, y conviene evitar los trayectos nocturnos. Si tiene poco tiempo, los vuelos internos de Madagascar Airlines ayudan, aunque los retrasos son frecuentes."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "30 - 50 $",
+    "dailyBudgetMidrangeUsd": "80 - 150 $",
+    "budgetMealUsd": "3 - 7 $",
+    "coffeeUsd": "0.50 - 2.00 $",
+    "waterBottleUsd": "0.40 - 0.80 $",
+    "hostelDormUsd": "10 - 20 $",
+    "hotel3StarUsd": "35 - 75 $",
+    "flightCostIndex": "Alto (largo recorrido con escalas)",
+    "flightTip": "A Antananarivo (TNR) se suele llegar con escala en Adís Abeba (Ethiopian), Nairobi (Kenya Airways), Mauricio (Air Mauritius) o París (Air France); los vuelos internos son caros, así que planifique bien la ruta."
+   },
+   "plugType": "Tipo C, D, E, J, K (220V, 50Hz)"
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Respete los tabúes locales llamados “fady”; en algunos lagos, tumbas y bosques están prohibidos ciertos comportamientos o alimentos; pregunte a su guía.",
+     "Los saludos son tranquilos y corteses; ceda el paso a los mayores y no levante la voz.",
+     "Pida permiso antes de fotografiar a personas y, sobre todo, tumbas y ceremonias.",
+     "No reparta caramelos ni dinero a los niños; es mejor donar a escuelas o asociaciones locales."
+    ],
+    "festivals": [
+     "Famadihana (julio – septiembre, ceremonia de las tierras altas en que se envuelven de nuevo los restos de los antepasados)",
+     "Día de la Independencia (26 de junio)",
+     "Festival de música Donia (Nosy Be, mayo – junio)"
+    ],
+    "lifestyle": "Una vida tranquila guiada por el “mora mora” (despacio, despacio); la familia y los antepasados son el centro de todo y el arroz se come tres veces al día."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Avenida de los Baobabs (Morondava)",
+     "Tsingy de Bemaraha (bosque de piedra caliza, UNESCO)",
+     "Parque Nacional Andasibe-Mantadia (lémures indri)",
+     "Parque Nacional de Isalo (cañones y piscinas naturales)",
+     "Parque Nacional de Ranomafana (selva tropical)",
+     "Isla de Nosy Be y alrededores"
+    ],
+    "bestSeasons": "Abril – noviembre",
+    "travelStyleTip": "La isla es enorme y las carreteras lentas; céntrese en una región por viaje (p. ej., la ruta sur por la RN7) y contrate coche con chófer a través de una agencia local."
+   },
+   "religion": {
+    "primaryReligions": "Cristianos ~80-85 % (protestantes y católicos), musulmanes ~5-7 %; la veneración de los antepasados está muy extendida y se mezcla con otras creencias",
+    "respectNorms": "No entre en colinas sagradas ni tumbas sin guía; algunos lugares tienen reglas fady como descalzarse o no llevar cerdo.",
+    "sacredSites": [
+     "Colina Real de Ambohimanga (UNESCO)",
+     "Rova (Palacio de la Reina Manjakamiadana, Antananarivo)",
+     "Lago sagrado de los cocodrilos de Anivorano (norte)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Las lenguas oficiales son el malgache y el francés; en la vida diaria se habla malgache en todas partes.",
+    "englishProficiency": "Bajo; fuera del turismo el francés es mucho más útil.",
+    "phrases": [
+     {
+      "phrase": "Manao ahoana",
+      "meaning": "Hola / ¿Qué tal?",
+      "translation": "Hola / ¿Qué tal?",
+      "pronunciation": "ma-NOW a-OON"
+     },
+     {
+      "phrase": "Misaotra (betsaka)",
+      "meaning": "(Muchas) gracias",
+      "translation": "(Muchas) gracias",
+      "pronunciation": "mi-SOW-tra (BET-sa-ka)"
+     },
+     {
+      "phrase": "Azafady",
+      "meaning": "Por favor / Disculpe",
+      "translation": "Por favor / Disculpe",
+      "pronunciation": "a-za-FAD"
+     },
+     {
+      "phrase": "Ohatrinona?",
+      "meaning": "¿Cuánto cuesta?",
+      "translation": "¿Cuánto cuesta?",
+      "pronunciation": "o-a-TCHI-noon"
+     },
+     {
+      "phrase": "Veloma",
+      "meaning": "Adiós",
+      "translation": "Adiós",
+      "pronunciation": "vel-OOM"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "La isla fue poblada en el primer milenio d. C. por austronesios llegados de Borneo y después por comunidades bantúes de África oriental. En los siglos XVIII y XIX el Reino Merina unificó gran parte de la isla; Francia la colonizó en 1896. Tras la insurrección de 1947, Madagascar se independizó el 26 de junio de 1960.",
+    "milestones": [
+     "~500-1000 d. C.: navegantes austronesios se asientan en la isla",
+     "1787-1810: el rey Andrianampoinimerina unifica a los merina",
+     "1896: se convierte en colonia francesa",
+     "1960: independencia (26 de junio)"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Romazava (guiso nacional de carne de cebú y hojas verdes)",
+     "Ravitoto (hojas de yuca machacadas con cerdo)",
+     "Filete de cebú y vary amin’anana (arroz con verduras)"
+    ],
+    "traditionalDrinks": [
+     "Ranon’apango (agua de arroz tostado)",
+     "Cerveza THB (Three Horses Beer)",
+     "Rhum arrangé (ron macerado con frutas y especias)"
+    ],
+    "streetFoodAndDesserts": [
+     "Mofo gasy (pastelitos de harina de arroz)",
+     "Koba (dulce de arroz y cacahuete en hoja de plátano)",
+     "Sambos (samosas malgaches)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Rey Andrianampoinimerina (unificador de los merina)",
+     "Reina Ranavalona I",
+     "Jean-Joseph Rabearivelo (poeta)"
+    ],
+    "strongSectors": [
+     "Vainilla (mayor productor mundial) y clavo",
+     "Minería (níquel-cobalto, grafito, ilmenita)",
+     "Textil y ecoturismo"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Domina el efectivo; las tarjetas solo funcionan en hoteles y restaurantes grandes. Lleve euros y cámbielos en bancos u oficinas oficiales; los cajeros de BNI y BOA aceptan Visa y en zonas rurales no hay cajeros. El dinero móvil (MVola, Orange Money) está muy extendido entre los locales.",
+    "tippingCulture": "En restaurantes se agradece un 5-10 %; a guías, chóferes y porteadores se les espera propina (unos 5-10 $ al día para el guía).",
+    "economicPillars": "Agricultura (arroz, vainilla, clavo), minería, exportación textil y turismo."
+   }
+  },
+  "itin": {
+   "routeName": "Ruta RN7 de Madagascar: de Antananarivo a Isalo",
+   "routeSummary": "Una ruta clásica de 10 días por el sur en coche con chófer: de las colinas reales de la capital a la ciudad de altura de Antsirabe, la selva con lémures de Ranomafana y los cañones rojos de Isalo.",
+   "totalDays": 10,
+   "bestSeason": "Abril – noviembre",
+   "transportMode": "4x4 o minivan privado con chófer (RN7)",
+   "paceLevel": "Equilibrado (naturaleza + cultura, jornadas largas de carretera)",
+   "signatureGastronomy": {
+    "dishes": [
+     "Romazava",
+     "Ravitoto",
+     "Filete de cebú"
+    ],
+    "drinks": [
+     "Ranon’apango",
+     "Cerveza THB",
+     "Rhum arrangé"
+    ],
+    "streetFoods": [
+     "Mofo gasy",
+     "Koba",
+     "Sambos"
+    ],
+    "diningAdvice": "Un plato de arroz en un “hotely” local cuesta 2-3 $; evite ensaladas crudas y hielo y prefiera comida caliente recién hecha."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Antipalúdicos y repelente con DEET",
+     "Forro polar e impermeable para las noches de altura",
+     "Euros en efectivo y billetes pequeños de ariary",
+     "Linterna frontal y batería externa (cortes de luz)"
+    ],
+    "safetyAndEtiquette": [
+     "Pregunte a su guía por las reglas fady y respételas.",
+     "No viaje de noche y evite las manifestaciones."
+    ]
+   },
+   "idealDurationText": "Ruta de 10 días",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Antananarivo (capital y colinas reales)",
+     "recommendedDuration": "2 días",
+     "durationBadge": "2 días",
+     "highlights": [
+      "Rova (Palacio de la Reina)",
+      "Colina Real de Ambohimanga",
+      "Lago Anosy y sus jacarandás",
+      "Lemurs’ Park"
+     ],
+     "activities": [
+      "Contemple las colinas y arrozales de la ciudad desde el Rova.",
+      "Visite Ambohimanga con guía en una excursión de medio día.",
+      "Curiosee artesanía de rafia y madera en el mercado de La Digue."
+     ],
+     "foodAndDrinks": [
+      "Romazava",
+      "Mofo gasy",
+      "Cerveza THB"
+     ],
+     "criticalTips": [
+      "No muestre objetos de valor en el mercado de Analakely y no camine de noche.",
+      "El tráfico es muy denso; calcule 1-2 horas para el traslado al aeropuerto."
+     ],
+     "mapsQuery": "Antananarivo, Madagascar"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Antsirabe (ciudad de altura y pousse-pousses)",
+     "recommendedDuration": "2 días",
+     "durationBadge": "2 días",
+     "highlights": [
+      "Coloridos rickshaws pousse-pousse",
+      "Lago del cráter Tritriva",
+      "Talleres de cuerno de cebú y reciclaje",
+      "Edificio del hotel termal colonial"
+     ],
+     "activities": [
+      "Recorra el centro en pousse-pousse.",
+      "Haga una breve caminata alrededor del lago Tritriva.",
+      "Pare en Ambositra para ver a los tallistas zafimaniry camino al sur."
+     ],
+     "foodAndDrinks": [
+      "Filete de cebú",
+      "Queso y yogur locales",
+      "Ranon’apango"
+     ],
+     "criticalTips": [
+      "Las noches de altura son frías (hasta 5 °C en junio – agosto); lleve un forro polar.",
+      "Acuerde la tarifa del pousse-pousse antes de subir."
+     ],
+     "mapsQuery": "Antsirabe, Madagascar"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Ranomafana (selva y lémures)",
+     "recommendedDuration": "2 días",
+     "durationBadge": "2 días",
+     "highlights": [
+      "Lémur dorado del bambú",
+      "Cascadas del río Namorona",
+      "Camaleones y geckos cola de hoja",
+      "Aguas termales de Ranomafana"
+     ],
+     "activities": [
+      "Haga una caminata guiada al amanecer para ver lémures.",
+      "Busque lémures ratón y camaleones en un paseo nocturno.",
+      "Relájese después en la piscina termal."
+     ],
+     "foodAndDrinks": [
+      "Vary amin’anana",
+      "Cangrejos de río frescos (orana)"
+     ],
+     "criticalTips": [
+      "En el parque es obligatorio un guía local con licencia; pague en la oficina del parque.",
+      "Los senderos resbalan y hay sanguijuelas; use calzado impermeable y calcetines largos."
+     ],
+     "mapsQuery": "Ranomafana National Park, Madagascar"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Parque Nacional de Isalo (cañones y piscinas naturales)",
+     "recommendedDuration": "3 días",
+     "durationBadge": "3 días",
+     "highlights": [
+      "Piscine Naturelle (piscina natural)",
+      "Cañón de los Monos y Cañón de las Ratas",
+      "Atardecer en la ventana de roca “La Fenêtre”",
+      "Lémures de cola anillada y sifakas"
+     ],
+     "activities": [
+      "Camine desde el campamento de Namaza hasta cascadas y cañones.",
+      "Báñese en la piscina natural.",
+      "Vea la puesta de sol en La Fenêtre."
+     ],
+     "foodAndDrinks": [
+      "Brochetas de cebú (masikita)",
+      "Rhum arrangé"
+     ],
+     "criticalTips": [
+      "El sol del mediodía es intenso; lleve sombrero, protector y al menos 2 litros de agua.",
+      "No pernocte en el pueblo de zafiros de Ilakaka; planifique el vuelo de regreso desde Toliara."
+     ],
+     "mapsQuery": "Isalo National Park, Ranohira, Madagascar"
+    }
+   ]
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "D",
+     "E",
+     "J",
+     "K"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Los tipos C y E (dos clavijas redondas) son los más comunes; los enchufes europeos encajan en la mayoría. En zonas rurales hay cortes frecuentes; lleve batería externa."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "El agua del grifo no es potable; beba agua embotellada o tratada y evite el hielo y las verduras crudas.",
+    "vaccines": [
+     "Fiebre amarilla (certificado solo si llega de un país de riesgo)",
+     "Hepatitis A y fiebre tifoidea",
+     "Profilaxis antipalúdica (sobre todo en la costa)",
+     "Rabia (riesgo por perros y lémures)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "117"
+   },
+   "tipping": {
+    "custom": "No es obligatoria en restaurantes; dar propina a guías y chóferes es lo habitual.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Unos 5 $ por medio día al guía del parque y 5-10 $ al día al chófer se consideran adecuados."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA del 20 %; sin devolución para turistas",
+    "minSpend": "No aplica",
+    "customsNote": "No hay devolución del IVA para turistas. Exportar lémures, camaleones, plantas endémicas, fósiles y piedras preciosas en bruto está prohibido o requiere permiso; saque la vainilla en cantidades razonables y con factura."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "~0.50 - 1.50 $",
+    "topCarriers": [
+     "Yas (ex-Telma)",
+     "Orange Madagascar",
+     "Airtel Madagascar"
+    ],
+    "airportSimTrapWarning": "Los puestos de operadoras del aeropuerto de Ivato tienen precios razonables, pero piden el pasaporte para el registro; Yas (Telma) ofrece la mejor cobertura rural."
+   },
+   "touristScams": [
+    {
+     "title": "Precio del taxi del aeropuerto",
+     "desc": "Los taxistas de Ivato piden tarifas infladas a los extranjeros hasta la ciudad.",
+     "tip": "Reserve el traslado con el hotel o fije el precio antes de subir."
+    },
+    {
+     "title": "Guía de parque falso",
+     "desc": "Personas sin licencia se hacen pasar por “guías oficiales” fuera de los parques y cobran.",
+     "tip": "Contrate guías y compre entradas solo en la oficina de Madagascar National Parks."
+    },
+    {
+     "title": "Venta de zafiros falsos",
+     "desc": "Cerca de Ilakaka e Isalo venden vidrio o piedras de baja calidad como “zafiros”.",
+     "tip": "Compre gemas solo a vendedores certificados y con factura."
+    }
+   ]
+  }
+ },
+ "ru": {
+  "insights": {
+   "currency": "Малагасийский ариари (MGA)",
+   "bestMonths": "Апрель – ноябрь (сухой сезон); сентябрь – ноябрь идеален для детёнышей лемуров и мягкой погоды; январь – март — сезон циклонов и ливней",
+   "safety": {
+    "safetyScore": 40,
+    "safetyLevel": "Требуется Осторожность",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60",
+    "crimeRateSummary": "В Антананариву распространены рывки сумок, карманные кражи и ночные вооружённые ограбления; на сельских дорогах (особенно на юге) ночью нападают бандиты (дахало). После политического кризиса и протестов октября 2025 года обстановка напряжённая; избегайте скоплений людей.",
+    "commonScams": [
+     "Таксисты в аэропорту и у отелей называют иностранцам тройную цену",
+     "Нелицензированные «гиды» требуют завышенную плату у входа в нацпарки",
+     "Уличные менялы недосчитывают или подсовывают старые недействительные купюры"
+    ],
+    "safeTravelTips": [
+     "Не ходите пешком по Антананариву после наступления темноты; пользуйтесь такси, заказанным через отель.",
+     "Не ездите между городами ночью (в том числе по RN7); планируйте поездки с водителем в светлое время.",
+     "Держитесь подальше от демонстраций и митингов; следите за местными новостями и сообщениями посольства."
+    ],
+    "emergencyNumbers": {
+     "police": "117",
+     "ambulance": "117",
+     "general": "117"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Хороший 4G в Антананариву и крупных городах; на трассе RN7 с перебоями, в парках и сельской местности слабый или отсутствует",
+    "costPerGbUsd": "~0.50 - 1.50 $",
+    "esimAvailability": "Средняя (есть международные eSIM; местная SIM дешевле, нужна регистрация по паспорту)",
+    "bestCarriers": [
+     "Yas (ex-Telma)",
+     "Orange Madagascar",
+     "Airtel Madagascar",
+     "Airalo eSIM"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Слабый (плохие дороги, долгие переезды)",
+    "costLevel": "Недорого (кроме авто с водителем)",
+    "singleTicketUsd": "0.15 - 0.25 $ (городской микроавтобус taxi-be)",
+    "dailyPassUsd": "Нет (внедорожник с водителем: 60 - 100 $ в день)",
+    "popularRideApps": [
+     "Популярных приложений нет",
+     "Такси через отель",
+     "Taxi-brousse (перевозчики вроде Cotisse)"
+    ],
+    "taxiAdvice": "В Антананариву у такси нет счётчиков; договаривайтесь о цене до посадки в кремовые машины или вызывайте такси через отель. Для дальних поездок удобнее всего внедорожник с водителем; taxi-brousse дёшев, но тесен и медленен, ночных рейсов избегайте. При нехватке времени выручают внутренние рейсы Madagascar Airlines, но задержки частые."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "30 - 50 $",
+    "dailyBudgetMidrangeUsd": "80 - 150 $",
+    "budgetMealUsd": "3 - 7 $",
+    "coffeeUsd": "0.50 - 2.00 $",
+    "waterBottleUsd": "0.40 - 0.80 $",
+    "hostelDormUsd": "10 - 20 $",
+    "hotel3StarUsd": "35 - 75 $",
+    "flightCostIndex": "Высокий (дальний перелёт с пересадками)",
+    "flightTip": "В Антананариву (TNR) обычно летают с пересадкой в Аддис-Абебе (Ethiopian), Найроби (Kenya Airways), на Маврикии (Air Mauritius) или в Париже (Air France); внутренние рейсы дороги, планируйте маршрут заранее."
+   },
+   "plugType": "Тип C, D, E, J, K (220V, 50Hz)"
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Уважайте местные табу «фади»: у некоторых озёр, гробниц и лесов запрещены определённые действия или продукты — спрашивайте гида.",
+     "Приветствия спокойные и вежливые; уступайте старшим и не повышайте голос.",
+     "Спрашивайте разрешения, прежде чем фотографировать людей, а особенно гробницы и обряды.",
+     "Не раздавайте детям сладости и деньги; лучше пожертвовать местной школе или организации."
+    ],
+    "festivals": [
+     "Фамадихана (июль – сентябрь, обряд перезахоронения предков в высокогорье)",
+     "День независимости (26 июня)",
+     "Музыкальный фестиваль Дония (Нуси-Бе, май – июнь)"
+    ],
+    "lifestyle": "Неспешная жизнь по принципу «мура-мура» (потихоньку); семья и предки — в центре всего, рис едят три раза в день."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Аллея баобабов (Морондава)",
+     "Цинжи-дю-Бемараха (известняковый «лес», ЮНЕСКО)",
+     "Национальный парк Андасибе-Мантадия (индри)",
+     "Национальный парк Исалу (каньоны и природные бассейны)",
+     "Национальный парк Раномафана (тропический лес)",
+     "Остров Нуси-Бе и окрестности"
+    ],
+    "bestSeasons": "Апрель – ноябрь",
+    "travelStyleTip": "Остров огромен, дороги медленные; за одну поездку изучайте один регион (например, южный маршрут по RN7) и берите авто с водителем через местное агентство."
+   },
+   "religion": {
+    "primaryReligions": "Христиане ~80–85 % (протестанты и католики), мусульмане ~5–7 %; почитание предков очень распространено и сочетается с другими верованиями",
+    "respectNorms": "Не посещайте священные холмы и гробницы без гида; в некоторых местах действуют фади — например, разуваться или не приносить свинину.",
+    "sacredSites": [
+     "Королевский холм Амбухиманга (ЮНЕСКО)",
+     "Рова (дворец королевы Манджакамиадана, Антананариву)",
+     "Священное озеро крокодилов Аниворану (север)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Официальные языки — малагасийский и французский; в быту повсюду говорят по-малагасийски.",
+    "englishProficiency": "Низкий; вне туристической сферы гораздо полезнее французский.",
+    "phrases": [
+     {
+      "phrase": "Manao ahoana",
+      "meaning": "Здравствуйте / Как дела",
+      "translation": "Здравствуйте / Как дела",
+      "pronunciation": "ma-NOW a-OON"
+     },
+     {
+      "phrase": "Misaotra (betsaka)",
+      "meaning": "(Большое) спасибо",
+      "translation": "(Большое) спасибо",
+      "pronunciation": "mi-SOW-tra (BET-sa-ka)"
+     },
+     {
+      "phrase": "Azafady",
+      "meaning": "Пожалуйста / Извините",
+      "translation": "Пожалуйста / Извините",
+      "pronunciation": "a-za-FAD"
+     },
+     {
+      "phrase": "Ohatrinona?",
+      "meaning": "Сколько стоит?",
+      "translation": "Сколько стоит?",
+      "pronunciation": "o-a-TCHI-noon"
+     },
+     {
+      "phrase": "Veloma",
+      "meaning": "До свидания",
+      "translation": "До свидания",
+      "pronunciation": "vel-OOM"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Остров заселили в I тысячелетии н. э. австронезийцы с Борнео, затем банту из Восточной Африки. В XVIII–XIX веках королевство Мерина объединило большую часть острова; в 1896 году его колонизировала Франция. После восстания 1947 года Мадагаскар обрёл независимость 26 июня 1960 года.",
+    "milestones": [
+     "~500–1000 гг. н. э.: заселение острова австронезийскими мореходами",
+     "1787–1810: король Андрианампуйнимерина объединяет мерина",
+     "1896: становится французской колонией",
+     "1960: независимость (26 июня)"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Ромазава (национальное рагу из мяса зебу и зелени)",
+     "Равитуту (толчёные листья маниоки со свининой)",
+     "Стейк из зебу и вари амин’анана (рис с зеленью)"
+    ],
+    "traditionalDrinks": [
+     "Ранон’апангу (отвар подгоревшего риса)",
+     "Пиво THB (Three Horses Beer)",
+     "Ром аранже (ром, настоянный на фруктах и специях)"
+    ],
+    "streetFoodAndDesserts": [
+     "Мофу гаси (рисовые лепёшки к завтраку)",
+     "Коба (рисово-арахисовая сладость в банановом листе)",
+     "Самбос (малагасийские самсы)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Король Андрианампуйнимерина (объединитель мерина)",
+     "Королева Ранавалуна I",
+     "Жан-Жозеф Рабеаривелу (поэт)"
+    ],
+    "strongSectors": [
+     "Ваниль (крупнейший производитель в мире) и гвоздика",
+     "Горнодобыча (никель-кобальт, графит, ильменит)",
+     "Текстиль и экотуризм"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Преобладают наличные; карты принимают лишь крупные отели и рестораны. Везите евро и меняйте в банках или официальных обменниках; банкоматы BNI и BOA принимают Visa, в сельской местности банкоматов нет. Местные широко пользуются мобильными деньгами (MVola, Orange Money).",
+    "tippingCulture": "В ресторанах ценят 5–10 % чаевых; гидам, водителям и носильщикам их ждут (гиду около 5–10 $ в день).",
+    "economicPillars": "Сельское хозяйство (рис, ваниль, гвоздика), горнодобыча, экспорт текстиля и туризм."
+   }
+  },
+  "itin": {
+   "routeName": "Маршрут RN7 по Мадагаскару: от Антананариву до Исалу",
+   "routeSummary": "Классический 10-дневный южный маршрут на машине с водителем: от королевских холмов столицы до высокогорного Анцирабе, лемурового леса Раномафаны и красных каньонов Исалу.",
+   "totalDays": 10,
+   "bestSeason": "Апрель – ноябрь",
+   "transportMode": "Внедорожник или частный минивэн с водителем (RN7)",
+   "paceLevel": "Сбалансированный (природа + культура, долгие переезды)",
+   "signatureGastronomy": {
+    "dishes": [
+     "Ромазава",
+     "Равитуту",
+     "Стейк из зебу"
+    ],
+    "drinks": [
+     "Ранон’апангу",
+     "Пиво THB",
+     "Ром аранже"
+    ],
+    "streetFoods": [
+     "Мофу гаси",
+     "Коба",
+     "Самбос"
+    ],
+    "diningAdvice": "Обед с рисом в местной закусочной «отели» стоит 2–3 $; избегайте сырых салатов и льда, ешьте свежеприготовленное горячее."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Противомалярийные таблетки и репеллент с DEET",
+     "Флиска и дождевик для высокогорных ночей",
+     "Достаточно евро наличными и мелкие купюры ариари",
+     "Налобный фонарь и пауэрбанк (отключения света)"
+    ],
+    "safetyAndEtiquette": [
+     "Узнайте у гида о фади и соблюдайте их.",
+     "Не путешествуйте ночью и избегайте демонстраций."
+    ]
+   },
+   "idealDurationText": "Маршрут на 10 дней",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Остановка 1: Антананариву (столица и королевские холмы)",
+     "recommendedDuration": "2 дня",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Рова (дворец королевы)",
+      "Королевский холм Амбухиманга",
+      "Озеро Анози и жакаранды",
+      "Lemurs’ Park"
+     ],
+     "activities": [
+      "Полюбуйтесь холмами и рисовыми полями с вершины Ровы.",
+      "Съездите на полдня в Амбухимангу с гидом.",
+      "Посмотрите изделия из рафии и дерева на рынке ремёсел Ла-Диг."
+     ],
+     "foodAndDrinks": [
+      "Ромазава",
+      "Мофу гаси",
+      "Пиво THB"
+     ],
+     "criticalTips": [
+      "На рынке Аналакели не показывайте ценности и не гуляйте ночью.",
+      "Пробки очень сильные; закладывайте 1–2 часа на дорогу в аэропорт."
+     ],
+     "mapsQuery": "Antananarivo, Madagascar"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Остановка 2: Анцирабе (высокогорный город и рикши пус-пус)",
+     "recommendedDuration": "2 дня",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Яркие рикши пус-пус",
+      "Кратерное озеро Тритрива",
+      "Мастерские изделий из рога зебу и вторсырья",
+      "Колониальное здание термального отеля"
+     ],
+     "activities": [
+      "Объедьте центр на рикше пус-пус.",
+      "Прогуляйтесь вокруг озера Тритрива.",
+      "По пути на юг загляните к резчикам по дереву зафимании в Амбуситре."
+     ],
+     "foodAndDrinks": [
+      "Стейк из зебу",
+      "Местный сыр и йогурт",
+      "Ранон’апангу"
+     ],
+     "criticalTips": [
+      "Ночи в высокогорье холодные (в июне – августе до 5 °C); возьмите флиску.",
+      "Договоритесь о цене рикши до посадки."
+     ],
+     "mapsQuery": "Antsirabe, Madagascar"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Остановка 3: Раномафана (тропический лес и лемуры)",
+     "recommendedDuration": "2 дня",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Золотой бамбуковый лемур",
+      "Водопады реки Наморона",
+      "Хамелеоны и листохвостые гекконы",
+      "Горячие источники Раномафаны"
+     ],
+     "activities": [
+      "Отправьтесь ранним утром на поиски лемуров с гидом.",
+      "Ищите мышиных лемуров и хамелеонов на ночной прогулке.",
+      "Расслабьтесь после похода в термальном бассейне."
+     ],
+     "foodAndDrinks": [
+      "Вари амин’анана",
+      "Свежие речные раки (орана)"
+     ],
+     "criticalTips": [
+      "В парке обязателен лицензированный местный гид; оплачивайте в офисе парка.",
+      "Тропы скользкие, есть пиявки; надевайте непромокаемую обувь и длинные носки."
+     ],
+     "mapsQuery": "Ranomafana National Park, Madagascar"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Остановка 4: Национальный парк Исалу (каньоны и природные бассейны)",
+     "recommendedDuration": "3 дня",
+     "durationBadge": "3 дня",
+     "highlights": [
+      "Piscine Naturelle (природный бассейн)",
+      "Каньоны Обезьян и Крыс",
+      "Закат у скального «окна» La Fenêtre",
+      "Кошачьи лемуры и сифаки"
+     ],
+     "activities": [
+      "Сходите от кемпинга Намаза к водопадам и каньонам.",
+      "Искупайтесь в природном бассейне.",
+      "Встретьте закат у La Fenêtre."
+     ],
+     "foodAndDrinks": [
+      "Шашлычки из зебу (масикита)",
+      "Ром аранже"
+     ],
+     "criticalTips": [
+      "Полуденное солнце жёсткое; берите шляпу, крем и не меньше 2 литров воды.",
+      "Не ночуйте в «сапфировом» городке Илакака; планируйте обратный рейс из Тулиары."
+     ],
+     "mapsQuery": "Isalo National Park, Ranohira, Madagascar"
+    }
+   ]
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "D",
+     "E",
+     "J",
+     "K"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Чаще всего типы C и E (два круглых штыря); европейские вилки подходят. В сельской местности часты отключения — возьмите пауэрбанк."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Водопроводную воду пить нельзя; пейте бутилированную или очищенную, избегайте льда и сырых овощей.",
+    "vaccines": [
+     "Жёлтая лихорадка (сертификат нужен только при прибытии из страны риска)",
+     "Гепатит A и брюшной тиф",
+     "Профилактика малярии (особенно на побережье)",
+     "Бешенство (риск от собак и лемуров)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "117"
+   },
+   "tipping": {
+    "custom": "В ресторанах не обязательны; гидам и водителям давать чаевые принято.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Гиду в парке уместно дать ~5 $ за полдня, водителю ~5–10 $ в день."
+   },
+   "taxFree": {
+    "vatRefundPercent": "НДС 20 %; возврата туристам нет",
+    "minSpend": "Не применяется",
+    "customsNote": "Возврата НДС для туристов нет. Вывоз лемуров, хамелеонов, эндемичных растений, окаменелостей и необработанных самоцветов запрещён или требует разрешения; ваниль вывозите в разумном количестве и с чеком."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "~0.50 - 1.50 $",
+    "topCarriers": [
+     "Yas (ex-Telma)",
+     "Orange Madagascar",
+     "Airtel Madagascar"
+    ],
+    "airportSimTrapWarning": "Стойки операторов в аэропорту Ивато продают SIM по нормальной цене, но требуют паспорт; лучшее покрытие в глубинке у Yas (Telma)."
+   },
+   "touristScams": [
+    {
+     "title": "Цены такси из аэропорта",
+     "desc": "Таксисты в Ивато называют иностранцам завышенные цены до города.",
+     "tip": "Заказывайте трансфер через отель или фиксируйте цену до посадки."
+    },
+    {
+     "title": "Фальшивый гид в парке",
+     "desc": "Люди без лицензии выдают себя за «официальных гидов» у входа и собирают деньги.",
+     "tip": "Нанимайте гидов и покупайте билеты только в офисе Madagascar National Parks."
+    },
+    {
+     "title": "Продажа поддельных сапфиров",
+     "desc": "Возле Илакаки и Исалу стекло и низкосортные камни продают как «сапфиры».",
+     "tip": "Покупайте камни только у сертифицированных продавцов и с чеком."
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,1937 @@
+{
+ "tr": {
+  "insights": {
+   "currency": "Mauritius Rupisi (MUR)",
+   "bestMonths": "Mayıs – Aralık (kuru ve ılık; eylül – kasım en ideal); ocak – mart sıcak, nemli ve siklon riski; temmuz – ekim balina izleme sezonu",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Güvenli",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Genel olarak güvenli bir ülkedir; plajlarda ve Port Louis çarşısında yankesicilik, kiralık araçlardan ve otel odalarından hırsızlık görülebilir. Gece tenha plajlarda ve Port Louis merkezinde yürümekten kaçının.",
+    "commonScams": [
+     "Taksimetre kullanmayan taksilerin havalimanından fahiş ücret istemesi",
+     "Plajda yunus/katamaran turu satan seyyar satıcıların kalitesiz veya iptal edilen turları",
+     "Kiralık araç iadesinde önceden var olan hasarlar için ücret talebi"
+    ],
+    "safeTravelTips": [
+     "Kiralık aracı teslim alırken her açıdan fotoğraflayın ve araçta değerli eşya bırakmayın.",
+     "Trafik soldan akar; dar dağ yollarında ve gece yayalara dikkat edin.",
+     "Siklon uyarılarını (Mauritius Meteorological Services) takip edin ve uyarı seviyesinde dışarı çıkmayın."
+    ],
+    "emergencyNumbers": {
+     "police": "999 / 112",
+     "ambulance": "114",
+     "general": "999"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Ada genelinde 4G çok iyi; Port Louis ve Ebène’de 5G mevcut",
+    "costPerGbUsd": "~0.50 - 1.50 $",
+    "esimAvailability": "İyi (uluslararası eSIM’ler çalışır; yerel operatörlerin turist paketleri var)",
+    "bestCarriers": [
+     "my.t (Mauritius Telecom)",
+     "Emtel",
+     "Airalo eSIM"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Orta (otobüs ağı ve Metro Express hafif raylı sistem)",
+    "costLevel": "Orta (toplu taşıma ucuz, taksi pahalı)",
+    "singleTicketUsd": "0.50 - 1.20 $",
+    "dailyPassUsd": "Yok",
+    "popularRideApps": [
+     "Yugo",
+     "Otel ve havalimanı taksileri",
+     "Kiralık araç"
+    ],
+    "taxiAdvice": "Taksilerde taksimetre nadiren kullanılır; fiyatı binmeden kararlaştırın (havalimanından Grand Baie’ye ~50-60 $). Yerel uygulama Yugo fiyatı önceden gösterir. Ada küçük olduğundan en esnek seçenek kiralık araçtır; otobüsler ucuz ama yavaştır ve akşam erken biter."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "50 - 80 $",
+    "dailyBudgetMidrangeUsd": "130 - 220 $",
+    "budgetMealUsd": "4 - 10 $",
+    "coffeeUsd": "2.00 - 4.00 $",
+    "waterBottleUsd": "0.50 - 1.00 $",
+    "hostelDormUsd": "20 - 35 $",
+    "hotel3StarUsd": "90 - 160 $",
+    "flightCostIndex": "Orta-Yüksek",
+    "flightTip": "İstanbul’dan Mauritius’a (MRU) Türk Hava Yolları’nın direkt seferleri vardır; Emirates (Dubai) ve Qatar Airways (Doha) aktarmalı uçuşlar da yaygındır. Kasım – ocak tatil sezonunda fiyatlar yükselir, erken alın."
+   },
+   "plugType": "Tip C, G (230V, 50Hz)"
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Çok kültürlü bir toplumdur; Hindu, Müslüman, Hristiyan ve Çin geleneklerine eşit saygı gösterin.",
+     "Plaj dışında mayo ile dolaşmayın; üstsüz güneşlenme yasaktır.",
+     "Tapınaklara girerken ayakkabı çıkarın; bazı Hindu tapınaklarına deri eşya ile girilmez."
+    ],
+    "festivals": [
+     "Maha Shivaratri (şubat – mart, Grand Bassin’e hac yürüyüşü)",
+     "Cavadee (Tamil Thaipusam, ocak – şubat)",
+     "Père Laval hac günü (9 Eylül, Sainte-Croix)"
+    ],
+    "lifestyle": "Hint, Afrika, Fransız ve Çin kökenlerin harmanlandığı rahat bir ada yaşamı; Kreol dili ve sega müziği ortak kimliği oluşturur, hafta sonları aileler plajda piknik yapar."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Le Morne Brabant (UNESCO)",
+     "Chamarel Yedi Renkli Toprak ve Şelalesi",
+     "Black River Gorges Milli Parkı",
+     "Île aux Cerfs",
+     "Aapravasi Ghat (UNESCO, Port Louis)",
+     "Pamplemousses Botanik Bahçesi (SSR)"
+    ],
+    "bestSeasons": "Mayıs – Aralık",
+    "travelStyleTip": "Konaklamayı kuzey (Grand Baie) ve güneybatı (Le Morne) arasında bölün; araç kiralayarak adayı günübirlik gezilerle rahatça görebilirsiniz."
+   },
+   "religion": {
+    "primaryReligions": "Hindu ~%48, Hristiyan ~%32 (çoğunluk Katolik), Müslüman ~%17, Budist ve diğer ~%2",
+    "respectNorms": "Tapınak, cami ve kiliselerde omuz ve dizler kapalı olmalı; Grand Bassin’de ayakkabıları çıkarın ve ibadet edenlerin önünden geçmeyin.",
+    "sacredSites": [
+     "Ganga Talao (Grand Bassin) kutsal gölü",
+     "Jummah Camii (Port Louis, 1850’ler)",
+     "Père Laval Türbesi (Sainte-Croix)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Anayasada resmî dil belirtilmez; meclis dili İngilizcedir, Fransızca medyada ve iş hayatında yaygındır. Halkın büyük çoğunluğu evde Morisyen (Mauritius Kreolü) konuşur; Bhojpuri ve Hintçe de kullanılır.",
+    "englishProficiency": "İyi; turizmde İngilizce ve Fransızca rahatça konuşulur.",
+    "phrases": [
+     {
+      "phrase": "Bonzour",
+      "meaning": "Merhaba / Günaydın",
+      "translation": "Merhaba / Günaydın",
+      "pronunciation": "bon-ZOOR"
+     },
+     {
+      "phrase": "Ki manyer?",
+      "meaning": "Nasılsın?",
+      "translation": "Nasılsın?",
+      "pronunciation": "kee man-YEH"
+     },
+     {
+      "phrase": "Mersi (boukou)",
+      "meaning": "(Çok) teşekkürler",
+      "translation": "(Çok) teşekkürler",
+      "pronunciation": "mehr-SEE (boo-KOO)"
+     },
+     {
+      "phrase": "Komie sa kout?",
+      "meaning": "Bu ne kadar?",
+      "translation": "Bu ne kadar?",
+      "pronunciation": "ko-MYEH sa KOOT"
+     },
+     {
+      "phrase": "Mo pa konpran",
+      "meaning": "Anlamıyorum",
+      "translation": "Anlamıyorum",
+      "pronunciation": "mo pa kon-PRAN"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Ada Araplar ve Portekizlilerce biliniyordu ancak ıssızdı; 1598’de Hollandalılar adaya Nassau’lu Maurits’in adını verdi ve dodo kuşu kısa sürede yok oldu. 1715’te Fransızlar “Isle de France” olarak yerleşti, 1810’da İngilizler aldı. 1835’te köleliğin kaldırılmasının ardından Hindistan’dan getirilen sözleşmeli işçiler nüfusun çoğunluğunu oluşturdu. Mauritius 12 Mart 1968’de bağımsız oldu, 1992’de cumhuriyet ilan edildi.",
+    "milestones": [
+     "1598: Hollandalıların adaya ulaşması",
+     "1810: İngiliz yönetimi",
+     "1834: Aapravasi Ghat’ta ilk sözleşmeli işçilerin gelişi",
+     "1968: Bağımsızlık (12 Mart)"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Dholl puri (bezelye unlu yassı ekmek, köri ile)",
+     "Rougaille (domatesli Kreol sosu, balık veya sosisle)",
+     "Vindaye de poisson (hardallı-zerdeçallı balık)"
+    ],
+    "traditionalDrinks": [
+     "Alouda (fesleğen tohumlu sütlü içecek)",
+     "Phoenix birası",
+     "Yerel rom (Chamarel, Saint Aubin) ve vanilyalı çay"
+    ],
+    "streetFoodAndDesserts": [
+     "Gâteaux piments (acılı nohut köftesi)",
+     "Samoussa ve boulettes",
+     "Gato patat (tatlı patates çöreği)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Sir Seewoosagur Ramgoolam (bağımsızlığın kurucu lideri)",
+     "Malcolm de Chazal (şair ve ressam)",
+     "J. M. G. Le Clézio (Mauritius bağlantılı Nobel ödüllü yazar)"
+    ],
+    "strongSectors": [
+     "Turizm",
+     "Finansal hizmetler ve bilişim (Ebène Cybercity)",
+     "Şeker ve tekstil"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Kartlar otel, restoran ve marketlerde yaygın kabul görür; pazar, sokak yemeği ve otobüs için nakit rupi taşıyın. ATM’ler her yerdedir (MCB, SBM).",
+    "tippingCulture": "Zorunlu değildir; restoranlarda servis dahil değilse %5-10 bırakmak nazik bir jesttir.",
+    "economicPillars": "Turizm, finans ve offshore hizmetler, şeker, tekstil, bilişim ve deniz ekonomisi."
+   }
+  },
+  "itin": {
+   "routeName": "Mauritius Ada Turu: Port Louis, Kuzey, Doğu ve Güneybatı",
+   "routeSummary": "Başkent Port Louis’nin çarşı ve tarihî iskelesinden kuzeyin plajlarına, doğunun lagün adacıklarına ve Chamarel ile Le Morne’un dağ manzaralarına uzanan, araç kiralayarak yapılan 8 günlük rota.",
+   "totalDays": 8,
+   "bestSeason": "Mayıs – Aralık",
+   "transportMode": "Kiralık araç (soldan trafik) + tekne turları",
+   "paceLevel": "Dengeli (Plaj + Doğa + Kültür)",
+   "signatureGastronomy": {
+    "dishes": [
+     "Dholl puri",
+     "Rougaille",
+     "Vindaye de poisson"
+    ],
+    "drinks": [
+     "Alouda",
+     "Phoenix birası",
+     "Yerel rom"
+    ],
+    "streetFoods": [
+     "Gâteaux piments",
+     "Samoussa",
+     "Gato patat"
+    ],
+    "diningAdvice": "En iyi ve en ucuz yemekler sokak tezgâhlarında ve plaj kenarındaki “snack”lerdedir; dholl puri 1 $ civarındadır. Otel restoranları Avrupa fiyatlarındadır."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "G tipi (İngiliz) fiş adaptörü",
+     "Resif dostu güneş kremi ve şnorkel seti",
+     "Deniz ayakkabısı (mercan ve taş balığına karşı)",
+     "Dağ yürüyüşü için hafif yağmurluk"
+    ],
+    "safetyAndEtiquette": [
+     "Tapınaklarda ayakkabı çıkarın ve omuzları örtün.",
+     "Siklon sezonunda (ocak – mart) hava uyarılarını takip edin."
+    ]
+   },
+   "idealDurationText": "8 Günlük Rota",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "1. Durak: Port Louis (Başkent, Çarşı ve Tarih)",
+     "recommendedDuration": "1 Gün",
+     "durationBadge": "1 Gün",
+     "highlights": [
+      "Aapravasi Ghat (UNESCO)",
+      "Merkez Çarşı (Central Market)",
+      "Caudan Waterfront",
+      "Blue Penny Müzesi"
+     ],
+     "activities": [
+      "Aapravasi Ghat’ta sözleşmeli işçilerin hikâyesini öğrenin.",
+      "Merkez Çarşı’da dholl puri ve alouda tadın.",
+      "Citadel (Fort Adelaide) tepesinden şehir manzarası izleyin."
+     ],
+     "foodAndDrinks": [
+      "Dholl puri",
+      "Alouda",
+      "Gâteaux piments"
+     ],
+     "criticalTips": [
+      "Çarşı kalabalığında çantanızı önde taşıyın.",
+      "Şehir merkezi akşam 18:00’den sonra sessizleşir; akşam yemeği için Caudan’ı tercih edin."
+     ],
+     "mapsQuery": "Port Louis, Mauritius"
+    },
+    {
+     "stopNumber": 2,
+     "name": "2. Durak: Grand Baie ve Kuzey (Plajlar ve Botanik Bahçesi)",
+     "recommendedDuration": "2 Gün",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "Pamplemousses Botanik Bahçesi (dev nilüferler)",
+      "Cap Malheureux kırmızı çatılı kilisesi",
+      "Mont Choisy ve Pereybère plajları",
+      "Coin de Mire adası"
+     ],
+     "activities": [
+      "Katamaranla kuzey adacıklarına şnorkel turu yapın.",
+      "Pamplemousses’ta dev nilüferleri ve kaplumbağaları görün.",
+      "Cap Malheureux’de gün batımını izleyin."
+     ],
+     "foodAndDrinks": [
+      "Izgara balık ve ahtapot körisi",
+      "Phoenix birası"
+     ],
+     "criticalTips": [
+      "Plaj turu satan seyyar satıcılar yerine lisanslı operatörleri seçin.",
+      "Güneş çok güçlüdür; resif dostu krem kullanın."
+     ],
+     "mapsQuery": "Grand Baie, Mauritius"
+    },
+    {
+     "stopNumber": 3,
+     "name": "3. Durak: Belle Mare ve Île aux Cerfs (Doğu Lagünü)",
+     "recommendedDuration": "2 Gün",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "Île aux Cerfs adası",
+      "GRSE Şelalesi (tekneyle)",
+      "Belle Mare plajı",
+      "Île aux Aigrettes doğa koruma alanı"
+     ],
+     "activities": [
+      "Hızlı tekneyle Île aux Cerfs’e geçip lagünde yüzün.",
+      "Île aux Aigrettes’te pembe güvercin ve dev kaplumbağaları görün.",
+      "Mahébourg pazarını gezin (pazartesi)."
+     ],
+     "foodAndDrinks": [
+      "Rougaille",
+      "Izgara ıstakoz",
+      "Gato patat"
+     ],
+     "criticalTips": [
+      "Île aux Cerfs çok kalabalıklaşabilir; sabah erken gidin.",
+      "Tekne fiyatını ve dönüş saatini önceden netleştirin."
+     ],
+     "mapsQuery": "Belle Mare, Mauritius"
+    },
+    {
+     "stopNumber": 4,
+     "name": "4. Durak: Chamarel ve Le Morne (Dağlar ve Güneybatı Kıyısı)",
+     "recommendedDuration": "3 Gün",
+     "durationBadge": "3 Gün",
+     "highlights": [
+      "Yedi Renkli Toprak ve Chamarel Şelalesi",
+      "Le Morne Brabant dağı (UNESCO)",
+      "Black River Gorges Milli Parkı",
+      "Ganga Talao (Grand Bassin)"
+     ],
+     "activities": [
+      "Le Morne’a sabah erken tırmanın (rehberle önerilir).",
+      "Chamarel rom imalathanesini ziyaret edin.",
+      "Tamarin körfezinde sabah yunus izleme turuna katılın."
+     ],
+     "foodAndDrinks": [
+      "Vindaye de poisson",
+      "Chamarel romu",
+      "Kreol köri"
+     ],
+     "criticalTips": [
+      "Le Morne patikası dik ve kayalıktır; yağmurdan sonra çıkmayın.",
+      "Yunuslarla yüzerken onlara dokunmayın ve kovalamayın; sorumlu operatör seçin."
+     ],
+     "mapsQuery": "Le Morne, Mauritius"
+    }
+   ]
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "G"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Çoğu otelde G tipi (üç köşeli pim, İngiliz) priz, bazı yerlerde C tipi bulunur; Türk fişleri için G adaptörü getirin."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Şebeke suyu arıtılır ancak siklon ve yoğun yağış sonrası kirlenebilir; şişe su önerilir.",
+    "vaccines": [
+     "Rutin aşılar",
+     "Hepatit A ve tifo",
+     "Sarıhumma (yalnızca riskli ülkeden geliyorsanız sertifika istenir)",
+     "Dang ve chikungunya için sivrisinek koruması"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "114"
+   },
+   "tipping": {
+    "custom": "Zorunlu değildir; iyi hizmet için takdir edilir.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Bazı otel ve restoranlar hesaba servis bedeli ekler; fişi kontrol edin."
+   },
+   "taxFree": {
+    "vatRefundPercent": "%15 KDV; onaylı mağazalarda turistlere iade imkânı",
+    "minSpend": "Mağazaya göre değişir (alışveriş öncesi teyit edin)",
+    "customsNote": "Onaylı mağazalardan alınan ürünler için KDV iade formunu doldurtun ve havalimanında ürün ile birlikte gümrüğe gösterin. Mercan, deniz kabukları ve endemik bitkilerin çıkarılması yasaktır."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "~0.50 - 1.50 $",
+    "topCarriers": [
+     "my.t (Mauritius Telecom)",
+     "Emtel",
+     "MTML (CHILI)"
+    ],
+    "airportSimTrapWarning": "Havalimanındaki my.t ve Emtel tezgâhlarının turist paketleri makul fiyatlıdır; pasaportla kayıt yapılır. Seyahatten önce eSIM almak da pratik bir seçenektir."
+   },
+   "touristScams": [
+    {
+     "title": "Havalimanı taksisi",
+     "desc": "Taksimetre kullanılmadığından bazı sürücüler yabancılara yüksek fiyat söyler.",
+     "tip": "Resmî taksi tezgâhındaki tarifeyi kullanın veya otel transferi ayarlayın."
+    },
+    {
+     "title": "Plaj tur satıcıları",
+     "desc": "Ucuz katamaran ve yunus turları kalabalık, kısa veya güvensiz olabilir.",
+     "tip": "Lisanslı operatörden, yorumlarına bakarak rezervasyon yapın."
+    },
+    {
+     "title": "Kiralık araç hasar talebi",
+     "desc": "İade sırasında önceden var olan çizikler için ücret istenebilir.",
+     "tip": "Teslimde aracın videosunu çekin ve hasar formuna işletin."
+    }
+   ]
+  }
+ },
+ "en": {
+  "insights": {
+   "currency": "Mauritian Rupee (MUR)",
+   "bestMonths": "May – December (dry and mild; September – November is ideal); January – March is hot, humid and cyclone-prone; July – October is whale-watching season",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Safe",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Generally a safe country; pickpocketing at beaches and Port Louis market and theft from rental cars and hotel rooms can occur. Avoid walking on deserted beaches and in central Port Louis at night.",
+    "commonScams": [
+     "Taxis without meters charging inflated airport fares",
+     "Beach touts selling dolphin or catamaran trips that turn out poor or are cancelled",
+     "Charges for pre-existing damage when returning a rental car"
+    ],
+    "safeTravelTips": [
+     "Photograph the rental car from all sides at pick-up and never leave valuables inside.",
+     "Traffic drives on the left; take care on narrow mountain roads and with pedestrians at night.",
+     "Follow cyclone warnings from Mauritius Meteorological Services and stay indoors when alerts are raised."
+    ],
+    "emergencyNumbers": {
+     "police": "999 / 112",
+     "ambulance": "114",
+     "general": "999"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Very good 4G across the island; 5G available in Port Louis and Ebène",
+    "costPerGbUsd": "~0.50 - 1.50 $",
+    "esimAvailability": "Good (international eSIMs work; local carriers offer tourist packs)",
+    "bestCarriers": [
+     "my.t (Mauritius Telecom)",
+     "Emtel",
+     "Airalo eSIM"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Moderate (bus network and Metro Express light rail)",
+    "costLevel": "Moderate (public transport cheap, taxis expensive)",
+    "singleTicketUsd": "0.50 - 1.20 $",
+    "dailyPassUsd": "None",
+    "popularRideApps": [
+     "Yugo",
+     "Hotel and airport taxis",
+     "Rental car"
+    ],
+    "taxiAdvice": "Meters are rarely used in taxis; agree the fare before boarding (about 50-60 $ from the airport to Grand Baie). The local app Yugo shows fares upfront. The island is small, so a rental car is the most flexible option; buses are cheap but slow and stop early in the evening."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "50 - 80 $",
+    "dailyBudgetMidrangeUsd": "130 - 220 $",
+    "budgetMealUsd": "4 - 10 $",
+    "coffeeUsd": "2.00 - 4.00 $",
+    "waterBottleUsd": "0.50 - 1.00 $",
+    "hostelDormUsd": "20 - 35 $",
+    "hotel3StarUsd": "90 - 160 $",
+    "flightCostIndex": "Moderate to high",
+    "flightTip": "Turkish Airlines flies direct from Istanbul to Mauritius (MRU); connections with Emirates (Dubai) and Qatar Airways (Doha) are also common. Prices rise in the November – January holiday season, so book early."
+   },
+   "plugType": "Type C, G (230V, 50Hz)"
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "This is a multicultural society; show equal respect for Hindu, Muslim, Christian and Chinese traditions.",
+     "Do not walk around in swimwear away from the beach; topless sunbathing is prohibited.",
+     "Remove shoes when entering temples; leather items are not allowed in some Hindu temples."
+    ],
+    "festivals": [
+     "Maha Shivaratri (February – March, pilgrimage walk to Grand Bassin)",
+     "Cavadee (Tamil Thaipusam, January – February)",
+     "Père Laval pilgrimage (9 September, Sainte-Croix)"
+    ],
+    "lifestyle": "A relaxed island life blending Indian, African, French and Chinese roots; Creole and sega music form a shared identity, and families picnic on the beach at weekends."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Le Morne Brabant (UNESCO)",
+     "Chamarel Seven Coloured Earth and Waterfall",
+     "Black River Gorges National Park",
+     "Île aux Cerfs",
+     "Aapravasi Ghat (UNESCO, Port Louis)",
+     "Pamplemousses Botanical Garden (SSR)"
+    ],
+    "bestSeasons": "May – December",
+    "travelStyleTip": "Split your stay between the north (Grand Baie) and the south-west (Le Morne); with a rental car you can see the island easily on day trips."
+   },
+   "religion": {
+    "primaryReligions": "Hindu ~48%, Christian ~32% (mostly Catholic), Muslim ~17%, Buddhist and other ~2%",
+    "respectNorms": "Cover shoulders and knees in temples, mosques and churches; at Grand Bassin remove your shoes and do not walk in front of worshippers.",
+    "sacredSites": [
+     "Ganga Talao (Grand Bassin) sacred lake",
+     "Jummah Mosque (Port Louis, 1850s)",
+     "Père Laval Shrine (Sainte-Croix)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "The constitution names no official language; English is the language of parliament and French dominates media and business. Most people speak Morisien (Mauritian Creole) at home; Bhojpuri and Hindi are also used.",
+    "englishProficiency": "Good; English and French are widely spoken in tourism.",
+    "phrases": [
+     {
+      "phrase": "Bonzour",
+      "meaning": "Hello / Good morning",
+      "translation": "Hello / Good morning",
+      "pronunciation": "bon-ZOOR"
+     },
+     {
+      "phrase": "Ki manyer?",
+      "meaning": "How are you?",
+      "translation": "How are you?",
+      "pronunciation": "kee man-YEH"
+     },
+     {
+      "phrase": "Mersi (boukou)",
+      "meaning": "Thank you (very much)",
+      "translation": "Thank you (very much)",
+      "pronunciation": "mehr-SEE (boo-KOO)"
+     },
+     {
+      "phrase": "Komie sa kout?",
+      "meaning": "How much does it cost?",
+      "translation": "How much does it cost?",
+      "pronunciation": "ko-MYEH sa KOOT"
+     },
+     {
+      "phrase": "Mo pa konpran",
+      "meaning": "I don’t understand",
+      "translation": "I don’t understand",
+      "pronunciation": "mo pa kon-PRAN"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Known to Arab and Portuguese sailors but uninhabited, the island was named by the Dutch in 1598 after Maurice of Nassau, and the dodo soon became extinct. The French settled it as “Isle de France” in 1715 and the British took it in 1810. After slavery was abolished in 1835, indentured workers from India came to form the majority of the population. Mauritius became independent on 12 March 1968 and a republic in 1992.",
+    "milestones": [
+     "1598: Dutch arrival",
+     "1810: British rule",
+     "1834: First indentured labourers arrive at Aapravasi Ghat",
+     "1968: Independence (12 March)"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Dholl puri (split-pea flatbread with curry)",
+     "Rougaille (Creole tomato sauce with fish or sausage)",
+     "Vindaye de poisson (mustard-turmeric fish)"
+    ],
+    "traditionalDrinks": [
+     "Alouda (milk drink with basil seeds)",
+     "Phoenix beer",
+     "Local rum (Chamarel, Saint Aubin) and vanilla tea"
+    ],
+    "streetFoodAndDesserts": [
+     "Gâteaux piments (chilli split-pea fritters)",
+     "Samoussas and boulettes (dumplings)",
+     "Gato patat (sweet-potato cakes)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Sir Seewoosagur Ramgoolam (founding leader of independence)",
+     "Malcolm de Chazal (poet and painter)",
+     "J. M. G. Le Clézio (Nobel laureate with Mauritian roots)"
+    ],
+    "strongSectors": [
+     "Tourism",
+     "Financial services and ICT (Ebène Cybercity)",
+     "Sugar and textiles"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Cards are widely accepted in hotels, restaurants and supermarkets; carry rupees for markets, street food and buses. ATMs are everywhere (MCB, SBM).",
+    "tippingCulture": "Not mandatory; leaving 5-10% in restaurants when service is not included is a kind gesture.",
+    "economicPillars": "Tourism, finance and offshore services, sugar, textiles, ICT and the ocean economy."
+   }
+  },
+  "itin": {
+   "routeName": "Mauritius Island Tour: Port Louis, North, East and South-West",
+   "routeSummary": "An 8-day self-drive route from the markets and historic quay of Port Louis to the northern beaches, the lagoon islets of the east and the mountain scenery of Chamarel and Le Morne.",
+   "totalDays": 8,
+   "bestSeason": "May – December",
+   "transportMode": "Rental car (left-hand traffic) + boat trips",
+   "paceLevel": "Balanced (Beach + Nature + Culture)",
+   "signatureGastronomy": {
+    "dishes": [
+     "Dholl puri",
+     "Rougaille",
+     "Vindaye de poisson"
+    ],
+    "drinks": [
+     "Alouda",
+     "Phoenix beer",
+     "Local rum"
+    ],
+    "streetFoods": [
+     "Gâteaux piments",
+     "Samoussa",
+     "Gato patat"
+    ],
+    "diningAdvice": "The best and cheapest food is at street stalls and beachside “snacks”; a dholl puri costs about 1 $. Hotel restaurants charge European prices."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Type G (British) plug adapter",
+     "Reef-safe sunscreen and snorkel gear",
+     "Water shoes (against coral and stonefish)",
+     "Light rain jacket for mountain hikes"
+    ],
+    "safetyAndEtiquette": [
+     "Remove shoes and cover shoulders in temples.",
+     "Follow weather alerts in cyclone season (January – March)."
+    ]
+   },
+   "idealDurationText": "8-Day Itinerary",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stop 1: Port Louis (Capital, Market and History)",
+     "recommendedDuration": "1 Day",
+     "durationBadge": "1 Day",
+     "highlights": [
+      "Aapravasi Ghat (UNESCO)",
+      "Central Market",
+      "Caudan Waterfront",
+      "Blue Penny Museum"
+     ],
+     "activities": [
+      "Learn the story of indentured labourers at Aapravasi Ghat.",
+      "Taste dholl puri and alouda at the Central Market.",
+      "Enjoy the city view from the Citadel (Fort Adelaide)."
+     ],
+     "foodAndDrinks": [
+      "Dholl puri",
+      "Alouda",
+      "Gâteaux piments"
+     ],
+     "criticalTips": [
+      "Carry your bag in front in the market crowds.",
+      "The centre goes quiet after 6 pm; choose Caudan for dinner."
+     ],
+     "mapsQuery": "Port Louis, Mauritius"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stop 2: Grand Baie and the North (Beaches and Botanical Garden)",
+     "recommendedDuration": "2 Days",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "Pamplemousses Botanical Garden (giant water lilies)",
+      "Red-roofed church of Cap Malheureux",
+      "Mont Choisy and Pereybère beaches",
+      "Coin de Mire island"
+     ],
+     "activities": [
+      "Take a catamaran snorkel trip to the northern islets.",
+      "See the giant lilies and tortoises at Pamplemousses.",
+      "Watch the sunset at Cap Malheureux."
+     ],
+     "foodAndDrinks": [
+      "Grilled fish and octopus curry",
+      "Phoenix beer"
+     ],
+     "criticalTips": [
+      "Choose licensed operators over beach touts.",
+      "The sun is very strong; use reef-safe sunscreen."
+     ],
+     "mapsQuery": "Grand Baie, Mauritius"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stop 3: Belle Mare and Île aux Cerfs (East Lagoon)",
+     "recommendedDuration": "2 Days",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "Île aux Cerfs island",
+      "GRSE Waterfall (by boat)",
+      "Belle Mare beach",
+      "Île aux Aigrettes nature reserve"
+     ],
+     "activities": [
+      "Take a speedboat to Île aux Cerfs and swim in the lagoon.",
+      "See pink pigeons and giant tortoises on Île aux Aigrettes.",
+      "Browse Mahébourg market (Monday)."
+     ],
+     "foodAndDrinks": [
+      "Rougaille",
+      "Grilled lobster",
+      "Gato patat"
+     ],
+     "criticalTips": [
+      "Île aux Cerfs gets crowded; go early in the morning.",
+      "Confirm the boat price and return time in advance."
+     ],
+     "mapsQuery": "Belle Mare, Mauritius"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Stop 4: Chamarel and Le Morne (Mountains and South-West Coast)",
+     "recommendedDuration": "3 Days",
+     "durationBadge": "3 Days",
+     "highlights": [
+      "Seven Coloured Earth and Chamarel Waterfall",
+      "Le Morne Brabant mountain (UNESCO)",
+      "Black River Gorges National Park",
+      "Ganga Talao (Grand Bassin)"
+     ],
+     "activities": [
+      "Climb Le Morne early in the morning (a guide is recommended).",
+      "Visit the Chamarel rum distillery.",
+      "Join a morning dolphin-watching trip in Tamarin Bay."
+     ],
+     "foodAndDrinks": [
+      "Vindaye de poisson",
+      "Chamarel rum",
+      "Creole curry"
+     ],
+     "criticalTips": [
+      "The Le Morne trail is steep and rocky; avoid it after rain.",
+      "When swimming near dolphins, do not touch or chase them; choose a responsible operator."
+     ],
+     "mapsQuery": "Le Morne, Mauritius"
+    }
+   ]
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "G"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Most hotels have Type G (three rectangular pins, British) sockets, with Type C in some places; bring a G adapter for Turkish/European plugs."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Tap water is treated but can become contaminated after cyclones and heavy rain; bottled water is recommended.",
+    "vaccines": [
+     "Routine vaccines",
+     "Hepatitis A and typhoid",
+     "Yellow fever (certificate only if arriving from a risk country)",
+     "Mosquito protection against dengue and chikungunya"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "114"
+   },
+   "tipping": {
+    "custom": "Not mandatory; appreciated for good service.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Some hotels and restaurants add a service charge; check the bill."
+   },
+   "taxFree": {
+    "vatRefundPercent": "15% VAT; refund possible for tourists at approved shops",
+    "minSpend": "Varies by shop (confirm before purchase)",
+    "customsNote": "Have the VAT refund form filled in at approved shops and present it with the goods at airport customs. Exporting coral, seashells and endemic plants is prohibited."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "~0.50 - 1.50 $",
+    "topCarriers": [
+     "my.t (Mauritius Telecom)",
+     "Emtel",
+     "MTML (CHILI)"
+    ],
+    "airportSimTrapWarning": "The my.t and Emtel counters at the airport sell reasonably priced tourist packs; registration requires your passport. Buying an eSIM before the trip is also practical."
+   },
+   "touristScams": [
+    {
+     "title": "Airport taxi",
+     "desc": "With no meters in use, some drivers quote foreigners high fares.",
+     "tip": "Use the official taxi desk rates or book a hotel transfer."
+    },
+    {
+     "title": "Beach tour touts",
+     "desc": "Cheap catamaran and dolphin trips can be overcrowded, short or unsafe.",
+     "tip": "Book with licensed operators after checking reviews."
+    },
+    {
+     "title": "Rental car damage claim",
+     "desc": "You may be charged for pre-existing scratches on return.",
+     "tip": "Video the car at pick-up and have damage noted on the form."
+    }
+   ]
+  }
+ },
+ "de": {
+  "insights": {
+   "currency": "Mauritius-Rupie (MUR)",
+   "bestMonths": "Mai – Dezember (trocken und mild; September – November ideal); Januar – März heiß, schwül und zyklongefährdet; Juli – Oktober Walbeobachtungssaison",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Sicher",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Insgesamt ein sicheres Land; an Stränden und auf dem Markt von Port Louis gibt es Taschendiebstahl sowie Diebstahl aus Mietwagen und Hotelzimmern. Meiden Sie nachts einsame Strände und das Zentrum von Port Louis.",
+    "commonScams": [
+     "Taxis ohne Taxameter verlangen überhöhte Flughafenpreise",
+     "Strandverkäufer bieten Delfin- oder Katamarantouren, die schlecht sind oder ausfallen",
+     "Kosten für Vorschäden bei der Mietwagenrückgabe"
+    ],
+    "safeTravelTips": [
+     "Fotografieren Sie den Mietwagen bei Übernahme von allen Seiten und lassen Sie keine Wertsachen darin.",
+     "Es herrscht Linksverkehr; Vorsicht auf engen Bergstraßen und nachts bei Fußgängern.",
+     "Verfolgen Sie Zyklonwarnungen der Mauritius Meteorological Services und bleiben Sie bei Warnstufen drinnen."
+    ],
+    "emergencyNumbers": {
+     "police": "999 / 112",
+     "ambulance": "114",
+     "general": "999"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Sehr gutes 4G auf der ganzen Insel; 5G in Port Louis und Ebène",
+    "costPerGbUsd": "~0.50 - 1.50 $",
+    "esimAvailability": "Gut (internationale eSIMs funktionieren; lokale Anbieter haben Touristenpakete)",
+    "bestCarriers": [
+     "my.t (Mauritius Telecom)",
+     "Emtel",
+     "Airalo eSIM"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Mittel (Busnetz und Stadtbahn Metro Express)",
+    "costLevel": "Mittel (ÖPNV günstig, Taxis teuer)",
+    "singleTicketUsd": "0.50 - 1.20 $",
+    "dailyPassUsd": "Keiner",
+    "popularRideApps": [
+     "Yugo",
+     "Hotel- und Flughafentaxis",
+     "Mietwagen"
+    ],
+    "taxiAdvice": "Taxameter werden selten benutzt; vereinbaren Sie den Preis vor der Fahrt (Flughafen – Grand Baie etwa 50–60 $). Die lokale App Yugo zeigt den Preis vorab. Die Insel ist klein, ein Mietwagen ist am flexibelsten; Busse sind günstig, aber langsam und fahren abends nicht lange."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "50 - 80 $",
+    "dailyBudgetMidrangeUsd": "130 - 220 $",
+    "budgetMealUsd": "4 - 10 $",
+    "coffeeUsd": "2.00 - 4.00 $",
+    "waterBottleUsd": "0.50 - 1.00 $",
+    "hostelDormUsd": "20 - 35 $",
+    "hotel3StarUsd": "90 - 160 $",
+    "flightCostIndex": "Mittel bis hoch",
+    "flightTip": "Turkish Airlines fliegt direkt von Istanbul nach Mauritius (MRU); Verbindungen mit Emirates (Dubai) und Qatar Airways (Doha) sind ebenfalls üblich. In der Saison November – Januar steigen die Preise, früh buchen."
+   },
+   "plugType": "Typ C, G (230V, 50Hz)"
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Eine multikulturelle Gesellschaft; respektieren Sie hinduistische, muslimische, christliche und chinesische Traditionen gleichermaßen.",
+     "Laufen Sie abseits des Strandes nicht in Badekleidung herum; Oben-ohne-Sonnenbaden ist verboten.",
+     "Ziehen Sie in Tempeln die Schuhe aus; in manche Hindutempel darf kein Leder mitgenommen werden."
+    ],
+    "festivals": [
+     "Maha Shivaratri (Februar – März, Pilgermarsch zum Grand Bassin)",
+     "Cavadee (tamilisches Thaipusam, Januar – Februar)",
+     "Wallfahrt zu Père Laval (9. September, Sainte-Croix)"
+    ],
+    "lifestyle": "Ein entspanntes Inselleben mit indischen, afrikanischen, französischen und chinesischen Wurzeln; Kreolisch und Sega-Musik schaffen eine gemeinsame Identität, am Wochenende picknicken Familien am Strand."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Le Morne Brabant (UNESCO)",
+     "Siebenfarbige Erde und Wasserfall von Chamarel",
+     "Nationalpark Black River Gorges",
+     "Île aux Cerfs",
+     "Aapravasi Ghat (UNESCO, Port Louis)",
+     "Botanischer Garten Pamplemousses (SSR)"
+    ],
+    "bestSeasons": "Mai – Dezember",
+    "travelStyleTip": "Teilen Sie den Aufenthalt zwischen Norden (Grand Baie) und Südwesten (Le Morne); mit Mietwagen sehen Sie die Insel bequem auf Tagesausflügen."
+   },
+   "religion": {
+    "primaryReligions": "Hindus ~48 %, Christen ~32 % (überwiegend Katholiken), Muslime ~17 %, Buddhisten und andere ~2 %",
+    "respectNorms": "Schultern und Knie in Tempeln, Moscheen und Kirchen bedecken; am Grand Bassin Schuhe ausziehen und nicht vor Betenden vorbeigehen.",
+    "sacredSites": [
+     "Heiliger See Ganga Talao (Grand Bassin)",
+     "Jummah-Moschee (Port Louis, 1850er)",
+     "Schrein von Père Laval (Sainte-Croix)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Die Verfassung legt keine Amtssprache fest; Parlamentssprache ist Englisch, Französisch dominiert Medien und Wirtschaft. Die meisten sprechen zu Hause Morisien (Mauritius-Kreolisch); auch Bhojpuri und Hindi sind verbreitet.",
+    "englishProficiency": "Gut; im Tourismus werden Englisch und Französisch problemlos gesprochen.",
+    "phrases": [
+     {
+      "phrase": "Bonzour",
+      "meaning": "Hallo / Guten Morgen",
+      "translation": "Hallo / Guten Morgen",
+      "pronunciation": "bon-ZOOR"
+     },
+     {
+      "phrase": "Ki manyer?",
+      "meaning": "Wie geht’s?",
+      "translation": "Wie geht’s?",
+      "pronunciation": "kee man-YEH"
+     },
+     {
+      "phrase": "Mersi (boukou)",
+      "meaning": "Danke (sehr)",
+      "translation": "Danke (sehr)",
+      "pronunciation": "mehr-SEE (boo-KOO)"
+     },
+     {
+      "phrase": "Komie sa kout?",
+      "meaning": "Was kostet das?",
+      "translation": "Was kostet das?",
+      "pronunciation": "ko-MYEH sa KOOT"
+     },
+     {
+      "phrase": "Mo pa konpran",
+      "meaning": "Ich verstehe nicht",
+      "translation": "Ich verstehe nicht",
+      "pronunciation": "mo pa kon-PRAN"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Arabischen und portugiesischen Seefahrern bekannt, aber unbewohnt, benannten die Niederländer die Insel 1598 nach Moritz von Nassau; der Dodo starb bald aus. 1715 besiedelten die Franzosen sie als „Isle de France“, 1810 übernahmen die Briten. Nach Abschaffung der Sklaverei 1835 stellten Vertragsarbeiter aus Indien bald die Bevölkerungsmehrheit. Mauritius wurde am 12. März 1968 unabhängig und 1992 Republik.",
+    "milestones": [
+     "1598: Ankunft der Niederländer",
+     "1810: Britische Herrschaft",
+     "1834: Erste Vertragsarbeiter erreichen Aapravasi Ghat",
+     "1968: Unabhängigkeit (12. März)"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Dholl Puri (Fladenbrot aus Spalterbsen mit Curry)",
+     "Rougaille (kreolische Tomatensoße mit Fisch oder Wurst)",
+     "Vindaye de poisson (Fisch mit Senf und Kurkuma)"
+    ],
+    "traditionalDrinks": [
+     "Alouda (Milchgetränk mit Basilikumsamen)",
+     "Phoenix-Bier",
+     "Lokaler Rum (Chamarel, Saint Aubin) und Vanilletee"
+    ],
+    "streetFoodAndDesserts": [
+     "Gâteaux piments (scharfe Erbsenküchlein)",
+     "Samoussas und Boulettes (Teigtaschen)",
+     "Gato patat (Süßkartoffelküchlein)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Sir Seewoosagur Ramgoolam (Gründervater der Unabhängigkeit)",
+     "Malcolm de Chazal (Dichter und Maler)",
+     "J. M. G. Le Clézio (Nobelpreisträger mit mauritischen Wurzeln)"
+    ],
+    "strongSectors": [
+     "Tourismus",
+     "Finanzdienstleistungen und IT (Ebène Cybercity)",
+     "Zucker und Textilien"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Karten werden in Hotels, Restaurants und Supermärkten breit akzeptiert; für Märkte, Streetfood und Busse Rupien bereithalten. Geldautomaten gibt es überall (MCB, SBM).",
+    "tippingCulture": "Nicht Pflicht; 5–10 % im Restaurant, wenn kein Service enthalten ist, sind eine nette Geste.",
+    "economicPillars": "Tourismus, Finanz- und Offshore-Dienstleistungen, Zucker, Textilien, IT und Meereswirtschaft."
+   }
+  },
+  "itin": {
+   "routeName": "Mauritius-Inselrundfahrt: Port Louis, Norden, Osten und Südwesten",
+   "routeSummary": "Eine 8-tägige Mietwagenroute: von Märkten und historischem Kai in Port Louis zu den Nordstränden, den Laguneninseln im Osten und der Berglandschaft von Chamarel und Le Morne.",
+   "totalDays": 8,
+   "bestSeason": "Mai – Dezember",
+   "transportMode": "Mietwagen (Linksverkehr) + Bootsausflüge",
+   "paceLevel": "Ausgewogen (Strand + Natur + Kultur)",
+   "signatureGastronomy": {
+    "dishes": [
+     "Dholl puri",
+     "Rougaille",
+     "Vindaye de poisson"
+    ],
+    "drinks": [
+     "Alouda",
+     "Phoenix-Bier",
+     "Lokaler Rum"
+    ],
+    "streetFoods": [
+     "Gâteaux piments",
+     "Samoussa",
+     "Gato patat"
+    ],
+    "diningAdvice": "Das beste und günstigste Essen gibt es an Straßenständen und Strand-„Snacks“; ein Dholl Puri kostet etwa 1 $. Hotelrestaurants haben europäische Preise."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adapter Typ G (britisch)",
+     "Riffschonende Sonnencreme und Schnorchelausrüstung",
+     "Badeschuhe (gegen Korallen und Steinfische)",
+     "Leichte Regenjacke für Bergwanderungen"
+    ],
+    "safetyAndEtiquette": [
+     "In Tempeln Schuhe ausziehen und Schultern bedecken.",
+     "Verfolgen Sie in der Zyklonsaison (Januar – März) die Wetterwarnungen."
+    ]
+   },
+   "idealDurationText": "8-tägige Route",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stopp 1: Port Louis (Hauptstadt, Markt und Geschichte)",
+     "recommendedDuration": "1 Tag",
+     "durationBadge": "1 Tag",
+     "highlights": [
+      "Aapravasi Ghat (UNESCO)",
+      "Zentralmarkt",
+      "Caudan Waterfront",
+      "Blue-Penny-Museum"
+     ],
+     "activities": [
+      "Erfahren Sie in Aapravasi Ghat die Geschichte der Vertragsarbeiter.",
+      "Probieren Sie Dholl Puri und Alouda auf dem Zentralmarkt.",
+      "Genießen Sie den Stadtblick von der Zitadelle (Fort Adelaide)."
+     ],
+     "foodAndDrinks": [
+      "Dholl puri",
+      "Alouda",
+      "Gâteaux piments"
+     ],
+     "criticalTips": [
+      "Tragen Sie die Tasche im Marktgedränge vorne.",
+      "Das Zentrum wird nach 18 Uhr ruhig; zum Abendessen nach Caudan."
+     ],
+     "mapsQuery": "Port Louis, Mauritius"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stopp 2: Grand Baie und der Norden (Strände und Botanischer Garten)",
+     "recommendedDuration": "2 Tage",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "Botanischer Garten Pamplemousses (Riesenseerosen)",
+      "Kirche mit rotem Dach in Cap Malheureux",
+      "Strände Mont Choisy und Pereybère",
+      "Insel Coin de Mire"
+     ],
+     "activities": [
+      "Machen Sie einen Katamaran-Schnorchelausflug zu den Nordinseln.",
+      "Sehen Sie in Pamplemousses Riesenseerosen und Schildkröten.",
+      "Erleben Sie den Sonnenuntergang in Cap Malheureux."
+     ],
+     "foodAndDrinks": [
+      "Gegrillter Fisch und Oktopus-Curry",
+      "Phoenix-Bier"
+     ],
+     "criticalTips": [
+      "Wählen Sie lizenzierte Anbieter statt Strandverkäufer.",
+      "Die Sonne ist sehr stark; riffschonende Sonnencreme verwenden."
+     ],
+     "mapsQuery": "Grand Baie, Mauritius"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stopp 3: Belle Mare und Île aux Cerfs (Ostlagune)",
+     "recommendedDuration": "2 Tage",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "Insel Île aux Cerfs",
+      "GRSE-Wasserfall (per Boot)",
+      "Strand Belle Mare",
+      "Naturreservat Île aux Aigrettes"
+     ],
+     "activities": [
+      "Fahren Sie mit dem Schnellboot zur Île aux Cerfs und baden Sie in der Lagune.",
+      "Sehen Sie auf der Île aux Aigrettes Rosentauben und Riesenschildkröten.",
+      "Bummeln Sie über den Markt von Mahébourg (montags)."
+     ],
+     "foodAndDrinks": [
+      "Rougaille",
+      "Gegrillter Hummer",
+      "Gato patat"
+     ],
+     "criticalTips": [
+      "Die Île aux Cerfs wird voll; fahren Sie früh morgens.",
+      "Klären Sie Bootspreis und Rückfahrtzeit vorab."
+     ],
+     "mapsQuery": "Belle Mare, Mauritius"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Stopp 4: Chamarel und Le Morne (Berge und Südwestküste)",
+     "recommendedDuration": "3 Tage",
+     "durationBadge": "3 Tage",
+     "highlights": [
+      "Siebenfarbige Erde und Chamarel-Wasserfall",
+      "Berg Le Morne Brabant (UNESCO)",
+      "Nationalpark Black River Gorges",
+      "Ganga Talao (Grand Bassin)"
+     ],
+     "activities": [
+      "Besteigen Sie Le Morne früh morgens (Guide empfohlen).",
+      "Besuchen Sie die Rumdestillerie Chamarel.",
+      "Machen Sie morgens eine Delfintour in der Bucht von Tamarin."
+     ],
+     "foodAndDrinks": [
+      "Vindaye de poisson",
+      "Chamarel-Rum",
+      "Kreolisches Curry"
+     ],
+     "criticalTips": [
+      "Der Le-Morne-Pfad ist steil und felsig; nach Regen meiden.",
+      "Berühren oder verfolgen Sie Delfine beim Schwimmen nicht; wählen Sie einen verantwortungsvollen Anbieter."
+     ],
+     "mapsQuery": "Le Morne, Mauritius"
+    }
+   ]
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "G"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Die meisten Hotels haben Steckdosen Typ G (drei Flachstifte, britisch), teils auch Typ C; bringen Sie einen G-Adapter mit."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Leitungswasser wird aufbereitet, kann aber nach Zyklonen und Starkregen verunreinigt sein; Flaschenwasser wird empfohlen.",
+    "vaccines": [
+     "Standardimpfungen",
+     "Hepatitis A und Typhus",
+     "Gelbfieber (Nachweis nur bei Einreise aus Risikoland)",
+     "Mückenschutz gegen Dengue und Chikungunya"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "114"
+   },
+   "tipping": {
+    "custom": "Nicht Pflicht; für guten Service willkommen.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Manche Hotels und Restaurants schlagen eine Servicegebühr auf; Rechnung prüfen."
+   },
+   "taxFree": {
+    "vatRefundPercent": "15 % MwSt.; Erstattung für Touristen in zugelassenen Geschäften möglich",
+    "minSpend": "Je nach Geschäft (vor dem Kauf erfragen)",
+    "customsNote": "Lassen Sie in zugelassenen Geschäften das Erstattungsformular ausfüllen und legen Sie es mit der Ware am Flughafenzoll vor. Ausfuhr von Korallen, Muscheln und endemischen Pflanzen ist verboten."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "~0.50 - 1.50 $",
+    "topCarriers": [
+     "my.t (Mauritius Telecom)",
+     "Emtel",
+     "MTML (CHILI)"
+    ],
+    "airportSimTrapWarning": "Die Schalter von my.t und Emtel am Flughafen verkaufen preiswerte Touristenpakete; Registrierung mit Reisepass. Eine eSIM vorab ist ebenfalls praktisch."
+   },
+   "touristScams": [
+    {
+     "title": "Flughafentaxi",
+     "desc": "Da kein Taxameter läuft, nennen manche Fahrer Ausländern hohe Preise.",
+     "tip": "Nutzen Sie die Tarife des offiziellen Taxischalters oder einen Hoteltransfer."
+    },
+    {
+     "title": "Strand-Tourverkäufer",
+     "desc": "Billige Katamaran- und Delfintouren sind oft überfüllt, kurz oder unsicher.",
+     "tip": "Buchen Sie bei lizenzierten Anbietern und prüfen Sie Bewertungen."
+    },
+    {
+     "title": "Schadensforderung beim Mietwagen",
+     "desc": "Bei Rückgabe werden womöglich Vorschäden berechnet.",
+     "tip": "Filmen Sie das Auto bei Übernahme und lassen Sie Schäden protokollieren."
+    }
+   ]
+  }
+ },
+ "es": {
+  "insights": {
+   "currency": "Rupia mauriciana (MUR)",
+   "bestMonths": "Mayo – diciembre (seco y templado; septiembre – noviembre es ideal); enero – marzo es caluroso, húmedo y con riesgo de ciclones; julio – octubre es temporada de avistamiento de ballenas",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "En general es un país seguro; puede haber carteristas en playas y en el mercado de Port Louis y robos en coches de alquiler y habitaciones. Evite caminar de noche por playas desiertas y por el centro de Port Louis.",
+    "commonScams": [
+     "Taxis sin taxímetro que cobran tarifas infladas desde el aeropuerto",
+     "Vendedores de playa que ofrecen excursiones con delfines o en catamarán de mala calidad o canceladas",
+     "Cargos por daños previos al devolver el coche de alquiler"
+    ],
+    "safeTravelTips": [
+     "Fotografíe el coche de alquiler por todos lados al recogerlo y no deje objetos de valor dentro.",
+     "Se conduce por la izquierda; cuidado en carreteras de montaña estrechas y con peatones de noche.",
+     "Siga los avisos de ciclón de Mauritius Meteorological Services y quédese dentro cuando haya alerta."
+    ],
+    "emergencyNumbers": {
+     "police": "999 / 112",
+     "ambulance": "114",
+     "general": "999"
+    }
+   },
+   "internet": {
+    "networkCoverage": "4G muy bueno en toda la isla; 5G en Port Louis y Ebène",
+    "costPerGbUsd": "~0.50 - 1.50 $",
+    "esimAvailability": "Buena (las eSIM internacionales funcionan; las operadoras locales tienen paquetes turísticos)",
+    "bestCarriers": [
+     "my.t (Mauritius Telecom)",
+     "Emtel",
+     "Airalo eSIM"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Moderado (red de autobuses y tren ligero Metro Express)",
+    "costLevel": "Moderado (transporte público barato, taxis caros)",
+    "singleTicketUsd": "0.50 - 1.20 $",
+    "dailyPassUsd": "No existe",
+    "popularRideApps": [
+     "Yugo",
+     "Taxis de hotel y aeropuerto",
+     "Coche de alquiler"
+    ],
+    "taxiAdvice": "Los taxis rara vez usan taxímetro; acuerde el precio antes de subir (unos 50-60 $ del aeropuerto a Grand Baie). La app local Yugo muestra la tarifa de antemano. La isla es pequeña y el coche de alquiler es lo más flexible; los autobuses son baratos pero lentos y dejan de circular temprano."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "50 - 80 $",
+    "dailyBudgetMidrangeUsd": "130 - 220 $",
+    "budgetMealUsd": "4 - 10 $",
+    "coffeeUsd": "2.00 - 4.00 $",
+    "waterBottleUsd": "0.50 - 1.00 $",
+    "hostelDormUsd": "20 - 35 $",
+    "hotel3StarUsd": "90 - 160 $",
+    "flightCostIndex": "Medio-alto",
+    "flightTip": "Turkish Airlines vuela directo de Estambul a Mauricio (MRU); también son habituales las conexiones con Emirates (Dubái) y Qatar Airways (Doha). En temporada alta (noviembre – enero) los precios suben; reserve pronto."
+   },
+   "plugType": "Tipo C, G (230V, 50Hz)"
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Es una sociedad multicultural; respete por igual las tradiciones hindúes, musulmanas, cristianas y chinas.",
+     "No pasee en bañador fuera de la playa; el topless está prohibido.",
+     "Descálcese al entrar en los templos; en algunos templos hindúes no se permiten artículos de cuero."
+    ],
+    "festivals": [
+     "Maha Shivaratri (febrero – marzo, peregrinación a pie al Grand Bassin)",
+     "Cavadee (Thaipusam tamil, enero – febrero)",
+     "Peregrinación del Padre Laval (9 de septiembre, Sainte-Croix)"
+    ],
+    "lifestyle": "Una vida isleña relajada que mezcla raíces indias, africanas, francesas y chinas; el criollo y la música sega forman una identidad común, y los fines de semana las familias hacen pícnic en la playa."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Le Morne Brabant (UNESCO)",
+     "Tierra de Siete Colores y cascada de Chamarel",
+     "Parque Nacional Black River Gorges",
+     "Île aux Cerfs",
+     "Aapravasi Ghat (UNESCO, Port Louis)",
+     "Jardín Botánico de Pamplemousses (SSR)"
+    ],
+    "bestSeasons": "Mayo – diciembre",
+    "travelStyleTip": "Divida la estancia entre el norte (Grand Baie) y el suroeste (Le Morne); con coche de alquiler verá la isla fácilmente en excursiones de un día."
+   },
+   "religion": {
+    "primaryReligions": "Hindúes ~48 %, cristianos ~32 % (mayoría católicos), musulmanes ~17 %, budistas y otros ~2 %",
+    "respectNorms": "Cubra hombros y rodillas en templos, mezquitas e iglesias; en Grand Bassin descálcese y no pase por delante de los fieles.",
+    "sacredSites": [
+     "Lago sagrado Ganga Talao (Grand Bassin)",
+     "Mezquita Jummah (Port Louis, década de 1850)",
+     "Santuario del Padre Laval (Sainte-Croix)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "La Constitución no fija lengua oficial; el inglés es la lengua del Parlamento y el francés domina en medios y negocios. La mayoría habla morisien (criollo mauriciano) en casa; también se usan el bhojpuri y el hindi.",
+    "englishProficiency": "Bueno; en turismo se habla con soltura inglés y francés.",
+    "phrases": [
+     {
+      "phrase": "Bonzour",
+      "meaning": "Hola / Buenos días",
+      "translation": "Hola / Buenos días",
+      "pronunciation": "bon-ZOOR"
+     },
+     {
+      "phrase": "Ki manyer?",
+      "meaning": "¿Qué tal?",
+      "translation": "¿Qué tal?",
+      "pronunciation": "kee man-YEH"
+     },
+     {
+      "phrase": "Mersi (boukou)",
+      "meaning": "(Muchas) gracias",
+      "translation": "(Muchas) gracias",
+      "pronunciation": "mehr-SEE (boo-KOO)"
+     },
+     {
+      "phrase": "Komie sa kout?",
+      "meaning": "¿Cuánto cuesta?",
+      "translation": "¿Cuánto cuesta?",
+      "pronunciation": "ko-MYEH sa KOOT"
+     },
+     {
+      "phrase": "Mo pa konpran",
+      "meaning": "No entiendo",
+      "translation": "No entiendo",
+      "pronunciation": "mo pa kon-PRAN"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Conocida por navegantes árabes y portugueses pero deshabitada, los neerlandeses la bautizaron en 1598 en honor a Mauricio de Nassau, y el dodo se extinguió pronto. Los franceses la colonizaron como “Isle de France” en 1715 y los británicos la tomaron en 1810. Tras la abolición de la esclavitud en 1835, los trabajadores contratados de la India llegaron a ser mayoría. Mauricio se independizó el 12 de marzo de 1968 y se convirtió en república en 1992.",
+    "milestones": [
+     "1598: llegada de los neerlandeses",
+     "1810: dominio británico",
+     "1834: llegan los primeros trabajadores contratados a Aapravasi Ghat",
+     "1968: independencia (12 de marzo)"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Dholl puri (pan plano de guisante partido con curry)",
+     "Rougaille (salsa criolla de tomate con pescado o salchicha)",
+     "Vindaye de poisson (pescado con mostaza y cúrcuma)"
+    ],
+    "traditionalDrinks": [
+     "Alouda (bebida de leche con semillas de albahaca)",
+     "Cerveza Phoenix",
+     "Ron local (Chamarel, Saint Aubin) y té de vainilla"
+    ],
+    "streetFoodAndDesserts": [
+     "Gâteaux piments (buñuelos picantes de guisante)",
+     "Samoussas y boulettes (bolitas al vapor)",
+     "Gato patat (pastelitos de boniato)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Sir Seewoosagur Ramgoolam (padre de la independencia)",
+     "Malcolm de Chazal (poeta y pintor)",
+     "J. M. G. Le Clézio (Nobel de raíces mauricianas)"
+    ],
+    "strongSectors": [
+     "Turismo",
+     "Servicios financieros y TIC (Ebène Cybercity)",
+     "Azúcar y textil"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Las tarjetas se aceptan en hoteles, restaurantes y supermercados; lleve rupias para mercados, comida callejera y autobuses. Hay cajeros por todas partes (MCB, SBM).",
+    "tippingCulture": "No es obligatoria; dejar un 5-10 % si el servicio no está incluido es un buen gesto.",
+    "economicPillars": "Turismo, finanzas y servicios offshore, azúcar, textil, TIC y economía azul."
+   }
+  },
+  "itin": {
+   "routeName": "Vuelta a Mauricio: Port Louis, norte, este y suroeste",
+   "routeSummary": "Una ruta de 8 días en coche de alquiler: de los mercados y el muelle histórico de Port Louis a las playas del norte, los islotes de la laguna del este y los paisajes de montaña de Chamarel y Le Morne.",
+   "totalDays": 8,
+   "bestSeason": "Mayo – diciembre",
+   "transportMode": "Coche de alquiler (circulación por la izquierda) + excursiones en barco",
+   "paceLevel": "Equilibrado (playa + naturaleza + cultura)",
+   "signatureGastronomy": {
+    "dishes": [
+     "Dholl puri",
+     "Rougaille",
+     "Vindaye de poisson"
+    ],
+    "drinks": [
+     "Alouda",
+     "Cerveza Phoenix",
+     "Ron local"
+    ],
+    "streetFoods": [
+     "Gâteaux piments",
+     "Samoussa",
+     "Gato patat"
+    ],
+    "diningAdvice": "La mejor y más barata comida está en puestos callejeros y “snacks” de playa; un dholl puri cuesta alrededor de 1 $. Los restaurantes de hotel tienen precios europeos."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptador tipo G (británico)",
+     "Protector solar apto para arrecifes y equipo de esnórquel",
+     "Escarpines (contra coral y pez piedra)",
+     "Chubasquero ligero para caminatas de montaña"
+    ],
+    "safetyAndEtiquette": [
+     "En los templos descálcese y cubra los hombros.",
+     "Siga los avisos meteorológicos en temporada de ciclones (enero – marzo)."
+    ]
+   },
+   "idealDurationText": "Ruta de 8 días",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Port Louis (capital, mercado e historia)",
+     "recommendedDuration": "1 día",
+     "durationBadge": "1 día",
+     "highlights": [
+      "Aapravasi Ghat (UNESCO)",
+      "Mercado Central",
+      "Caudan Waterfront",
+      "Museo Blue Penny"
+     ],
+     "activities": [
+      "Conozca la historia de los trabajadores contratados en Aapravasi Ghat.",
+      "Pruebe dholl puri y alouda en el Mercado Central.",
+      "Disfrute de la vista desde la Ciudadela (Fort Adelaide)."
+     ],
+     "foodAndDrinks": [
+      "Dholl puri",
+      "Alouda",
+      "Gâteaux piments"
+     ],
+     "criticalTips": [
+      "Lleve el bolso por delante entre la multitud del mercado.",
+      "El centro se vacía después de las 18:00; cene en Caudan."
+     ],
+     "mapsQuery": "Port Louis, Mauritius"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Grand Baie y el norte (playas y jardín botánico)",
+     "recommendedDuration": "2 días",
+     "durationBadge": "2 días",
+     "highlights": [
+      "Jardín Botánico de Pamplemousses (nenúfares gigantes)",
+      "Iglesia de techo rojo de Cap Malheureux",
+      "Playas de Mont Choisy y Pereybère",
+      "Isla Coin de Mire"
+     ],
+     "activities": [
+      "Haga una excursión de esnórquel en catamarán a los islotes del norte.",
+      "Vea los nenúfares gigantes y las tortugas de Pamplemousses.",
+      "Vea la puesta de sol en Cap Malheureux."
+     ],
+     "foodAndDrinks": [
+      "Pescado a la parrilla y curry de pulpo",
+      "Cerveza Phoenix"
+     ],
+     "criticalTips": [
+      "Elija operadores con licencia en lugar de vendedores de playa.",
+      "El sol es muy fuerte; use protector apto para arrecifes."
+     ],
+     "mapsQuery": "Grand Baie, Mauritius"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Belle Mare e Île aux Cerfs (laguna este)",
+     "recommendedDuration": "2 días",
+     "durationBadge": "2 días",
+     "highlights": [
+      "Isla Île aux Cerfs",
+      "Cascada GRSE (en barco)",
+      "Playa de Belle Mare",
+      "Reserva natural Île aux Aigrettes"
+     ],
+     "activities": [
+      "Vaya en lancha a Île aux Cerfs y báñese en la laguna.",
+      "Vea palomas rosadas y tortugas gigantes en Île aux Aigrettes.",
+      "Recorra el mercado de Mahébourg (lunes)."
+     ],
+     "foodAndDrinks": [
+      "Rougaille",
+      "Langosta a la parrilla",
+      "Gato patat"
+     ],
+     "criticalTips": [
+      "Île aux Cerfs se llena; vaya temprano.",
+      "Confirme de antemano el precio del barco y la hora de regreso."
+     ],
+     "mapsQuery": "Belle Mare, Mauritius"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Chamarel y Le Morne (montañas y costa suroeste)",
+     "recommendedDuration": "3 días",
+     "durationBadge": "3 días",
+     "highlights": [
+      "Tierra de Siete Colores y cascada de Chamarel",
+      "Monte Le Morne Brabant (UNESCO)",
+      "Parque Nacional Black River Gorges",
+      "Ganga Talao (Grand Bassin)"
+     ],
+     "activities": [
+      "Suba a Le Morne temprano (se recomienda guía).",
+      "Visite la destilería de ron de Chamarel.",
+      "Únase a una salida matinal para ver delfines en la bahía de Tamarin."
+     ],
+     "foodAndDrinks": [
+      "Vindaye de poisson",
+      "Ron de Chamarel",
+      "Curry criollo"
+     ],
+     "criticalTips": [
+      "El sendero de Le Morne es empinado y rocoso; evítelo tras la lluvia.",
+      "Si nada cerca de delfines, no los toque ni persiga; elija un operador responsable."
+     ],
+     "mapsQuery": "Le Morne, Mauritius"
+    }
+   ]
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "G"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "La mayoría de hoteles tienen enchufes tipo G (tres clavijas planas, británico) y en algunos sitios tipo C; lleve un adaptador G."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "El agua del grifo se trata, pero puede contaminarse tras ciclones y lluvias fuertes; se recomienda agua embotellada.",
+    "vaccines": [
+     "Vacunas de rutina",
+     "Hepatitis A y fiebre tifoidea",
+     "Fiebre amarilla (certificado solo si llega de un país de riesgo)",
+     "Protección contra mosquitos por dengue y chikunguña"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "114"
+   },
+   "tipping": {
+    "custom": "No es obligatoria; se agradece por buen servicio.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Algunos hoteles y restaurantes añaden un cargo por servicio; revise la cuenta."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA del 15 %; devolución posible para turistas en tiendas autorizadas",
+    "minSpend": "Varía según la tienda (confírmelo antes de comprar)",
+    "customsNote": "Pida el formulario de devolución en tiendas autorizadas y preséntelo con los artículos en la aduana del aeropuerto. Está prohibido exportar coral, conchas y plantas endémicas."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "~0.50 - 1.50 $",
+    "topCarriers": [
+     "my.t (Mauritius Telecom)",
+     "Emtel",
+     "MTML (CHILI)"
+    ],
+    "airportSimTrapWarning": "Los mostradores de my.t y Emtel del aeropuerto venden paquetes turísticos a buen precio; el registro requiere pasaporte. Comprar una eSIM antes del viaje también es práctico."
+   },
+   "touristScams": [
+    {
+     "title": "Taxi del aeropuerto",
+     "desc": "Como no se usa taxímetro, algunos conductores piden tarifas altas a los extranjeros.",
+     "tip": "Use las tarifas del mostrador oficial de taxis o reserve un traslado del hotel."
+    },
+    {
+     "title": "Vendedores de excursiones en la playa",
+     "desc": "Las excursiones baratas en catamarán o con delfines pueden ir abarrotadas, ser cortas o inseguras.",
+     "tip": "Reserve con operadores autorizados tras leer opiniones."
+    },
+    {
+     "title": "Reclamación por daños del coche de alquiler",
+     "desc": "Pueden cobrarle arañazos previos al devolver el coche.",
+     "tip": "Grabe un vídeo del coche al recogerlo y anote los daños en el formulario."
+    }
+   ]
+  }
+ },
+ "ru": {
+  "insights": {
+   "currency": "Маврикийская рупия (MUR)",
+   "bestMonths": "Май – декабрь (сухо и мягко; сентябрь – ноябрь идеальны); январь – март жарко, влажно, возможны циклоны; июль – октябрь — сезон наблюдения за китами",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Безопасно",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "В целом безопасная страна; на пляжах и рынке Порт-Луи бывают карманные кражи, а также кражи из арендованных машин и номеров. Ночью не гуляйте по безлюдным пляжам и центру Порт-Луи.",
+    "commonScams": [
+     "Такси без счётчика берут завышенную цену из аэропорта",
+     "Пляжные зазывалы продают туры к дельфинам или на катамаране, которые оказываются плохими или отменяются",
+     "Требование оплатить старые повреждения при возврате арендованной машины"
+    ],
+    "safeTravelTips": [
+     "При получении арендованной машины сфотографируйте её со всех сторон и не оставляйте ценности внутри.",
+     "Движение левостороннее; будьте осторожны на узких горных дорогах и с пешеходами ночью.",
+     "Следите за предупреждениями о циклонах от Mauritius Meteorological Services и при тревоге оставайтесь в помещении."
+    ],
+    "emergencyNumbers": {
+     "police": "999 / 112",
+     "ambulance": "114",
+     "general": "999"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Отличный 4G по всему острову; 5G в Порт-Луи и Эбене",
+    "costPerGbUsd": "~0.50 - 1.50 $",
+    "esimAvailability": "Хорошая (международные eSIM работают; у местных операторов есть туристические пакеты)",
+    "bestCarriers": [
+     "my.t (Mauritius Telecom)",
+     "Emtel",
+     "Airalo eSIM"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Средний (автобусная сеть и лёгкое метро Metro Express)",
+    "costLevel": "Средний (общественный транспорт дешёвый, такси дорогое)",
+    "singleTicketUsd": "0.50 - 1.20 $",
+    "dailyPassUsd": "Нет",
+    "popularRideApps": [
+     "Yugo",
+     "Такси отелей и аэропорта",
+     "Аренда авто"
+    ],
+    "taxiAdvice": "Счётчики в такси используются редко; договаривайтесь о цене заранее (от аэропорта до Гран-Бе около 50–60 $). Местное приложение Yugo показывает цену заранее. Остров небольшой, удобнее всего арендовать машину; автобусы дешёвые, но медленные и рано заканчивают работу."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "50 - 80 $",
+    "dailyBudgetMidrangeUsd": "130 - 220 $",
+    "budgetMealUsd": "4 - 10 $",
+    "coffeeUsd": "2.00 - 4.00 $",
+    "waterBottleUsd": "0.50 - 1.00 $",
+    "hostelDormUsd": "20 - 35 $",
+    "hotel3StarUsd": "90 - 160 $",
+    "flightCostIndex": "Средний-высокий",
+    "flightTip": "Turkish Airlines летает прямым рейсом из Стамбула на Маврикий (MRU); популярны и стыковки Emirates (Дубай) и Qatar Airways (Доха). В сезон с ноября по январь цены растут — бронируйте заранее."
+   },
+   "plugType": "Тип C, G (230V, 50Hz)"
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Это многокультурное общество; одинаково уважайте индуистские, мусульманские, христианские и китайские традиции.",
+     "Не ходите в купальнике вне пляжа; загорать топлес запрещено.",
+     "Снимайте обувь в храмах; в некоторые индуистские храмы нельзя входить с кожаными вещами."
+    ],
+    "festivals": [
+     "Маха-Шиваратри (февраль – март, паломничество к Гран-Бассен)",
+     "Кавади (тамильский Тайпусам, январь – февраль)",
+     "Паломничество к отцу Лавалю (9 сентября, Сент-Круа)"
+    ],
+    "lifestyle": "Спокойная островная жизнь, где смешались индийские, африканские, французские и китайские корни; креольский язык и музыка сега объединяют всех, по выходным семьи устраивают пикники на пляже."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Ле-Морн-Брабан (ЮНЕСКО)",
+     "Семицветные земли и водопад Шамарель",
+     "Национальный парк Блэк-Ривер-Горджес",
+     "Остров Иль-о-Серф",
+     "Аправаси-Гхат (ЮНЕСКО, Порт-Луи)",
+     "Ботанический сад Памплемус (SSR)"
+    ],
+    "bestSeasons": "Май – декабрь",
+    "travelStyleTip": "Разделите пребывание между севером (Гран-Бе) и юго-западом (Ле-Морн); на арендованной машине остров легко объехать за однодневные поездки."
+   },
+   "religion": {
+    "primaryReligions": "Индуисты ~48 %, христиане ~32 % (в основном католики), мусульмане ~17 %, буддисты и другие ~2 %",
+    "respectNorms": "В храмах, мечетях и церквях закрывайте плечи и колени; в Гран-Бассен снимайте обувь и не проходите перед молящимися.",
+    "sacredSites": [
+     "Священное озеро Ганга-Талао (Гран-Бассен)",
+     "Мечеть Джумма (Порт-Луи, 1850-е)",
+     "Святилище отца Лаваля (Сент-Круа)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Конституция не устанавливает официального языка; в парламенте используют английский, в СМИ и бизнесе — французский. Дома большинство говорит на мориси (маврикийском креольском); распространены также бходжпури и хинди.",
+    "englishProficiency": "Хороший; в туризме свободно говорят по-английски и по-французски.",
+    "phrases": [
+     {
+      "phrase": "Bonzour",
+      "meaning": "Здравствуйте / Доброе утро",
+      "translation": "Здравствуйте / Доброе утро",
+      "pronunciation": "bon-ZOOR"
+     },
+     {
+      "phrase": "Ki manyer?",
+      "meaning": "Как дела?",
+      "translation": "Как дела?",
+      "pronunciation": "kee man-YEH"
+     },
+     {
+      "phrase": "Mersi (boukou)",
+      "meaning": "(Большое) спасибо",
+      "translation": "(Большое) спасибо",
+      "pronunciation": "mehr-SEE (boo-KOO)"
+     },
+     {
+      "phrase": "Komie sa kout?",
+      "meaning": "Сколько это стоит?",
+      "translation": "Сколько это стоит?",
+      "pronunciation": "ko-MYEH sa KOOT"
+     },
+     {
+      "phrase": "Mo pa konpran",
+      "meaning": "Я не понимаю",
+      "translation": "Я не понимаю",
+      "pronunciation": "mo pa kon-PRAN"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Остров был известен арабским и португальским мореплавателям, но оставался необитаемым; в 1598 году голландцы назвали его в честь Морица Нассауского, и вскоре вымер дронт (додо). В 1715 году его заселили французы как «Иль-де-Франс», в 1810-м остров заняли британцы. После отмены рабства в 1835 году большинство населения составили законтрактованные рабочие из Индии. Маврикий стал независимым 12 марта 1968 года, а республикой — в 1992-м.",
+    "milestones": [
+     "1598: прибытие голландцев",
+     "1810: британское правление",
+     "1834: первые законтрактованные рабочие прибывают в Аправаси-Гхат",
+     "1968: независимость (12 марта)"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Дхолл-пури (лепёшка из гороха с карри)",
+     "Ругай (креольский томатный соус с рыбой или колбасками)",
+     "Виндай из рыбы (с горчицей и куркумой)"
+    ],
+    "traditionalDrinks": [
+     "Алуда (молочный напиток с семенами базилика)",
+     "Пиво Phoenix",
+     "Местный ром (Шамарель, Сент-Обен) и ванильный чай"
+    ],
+    "streetFoodAndDesserts": [
+     "Гато пиман (острые оладьи из гороха)",
+     "Самосы и булет (пельмени)",
+     "Гато пата (пирожки из батата)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Сэр Сивусагур Рамгулам (отец независимости)",
+     "Малькольм де Шазаль (поэт и художник)",
+     "Ж. М. Г. Леклезио (нобелевский лауреат с маврикийскими корнями)"
+    ],
+    "strongSectors": [
+     "Туризм",
+     "Финансовые услуги и ИКТ (Эбен-Киберсити)",
+     "Сахар и текстиль"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Карты широко принимают в отелях, ресторанах и супермаркетах; для рынков, уличной еды и автобусов нужны рупии. Банкоматы повсюду (MCB, SBM).",
+    "tippingCulture": "Не обязательны; 5–10 % в ресторане, если обслуживание не включено, — приятный жест.",
+    "economicPillars": "Туризм, финансы и офшорные услуги, сахар, текстиль, ИКТ и морская экономика."
+   }
+  },
+  "itin": {
+   "routeName": "Тур по Маврикию: Порт-Луи, север, восток и юго-запад",
+   "routeSummary": "8-дневный маршрут на арендованной машине: от рынков и исторической пристани Порт-Луи к северным пляжам, островкам лагуны на востоке и горным пейзажам Шамареля и Ле-Морна.",
+   "totalDays": 8,
+   "bestSeason": "Май – декабрь",
+   "transportMode": "Арендованная машина (левостороннее движение) + морские прогулки",
+   "paceLevel": "Сбалансированный (пляж + природа + культура)",
+   "signatureGastronomy": {
+    "dishes": [
+     "Dholl puri",
+     "Rougaille",
+     "Vindaye de poisson"
+    ],
+    "drinks": [
+     "Alouda",
+     "Пиво Phoenix",
+     "Местный ром"
+    ],
+    "streetFoods": [
+     "Gâteaux piments",
+     "Samoussa",
+     "Gato patat"
+    ],
+    "diningAdvice": "Лучшая и самая дешёвая еда — в уличных лотках и пляжных «снэках»; дхолл-пури стоит около 1 $. В ресторанах отелей европейские цены."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Переходник на тип G (британский)",
+     "Безопасный для рифов крем и снаряжение для снорклинга",
+     "Аквашузы (от кораллов и рыбы-камня)",
+     "Лёгкий дождевик для горных походов"
+    ],
+    "safetyAndEtiquette": [
+     "В храмах снимайте обувь и прикрывайте плечи.",
+     "В сезон циклонов (январь – март) следите за предупреждениями."
+    ]
+   },
+   "idealDurationText": "Маршрут на 8 дней",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Остановка 1: Порт-Луи (столица, рынок и история)",
+     "recommendedDuration": "1 день",
+     "durationBadge": "1 день",
+     "highlights": [
+      "Аправаси-Гхат (ЮНЕСКО)",
+      "Центральный рынок",
+      "Набережная Кодан",
+      "Музей Blue Penny"
+     ],
+     "activities": [
+      "Узнайте историю законтрактованных рабочих в Аправаси-Гхате.",
+      "Попробуйте дхолл-пури и алуду на Центральном рынке.",
+      "Полюбуйтесь видом на город с Цитадели (форт Аделаида)."
+     ],
+     "foodAndDrinks": [
+      "Dholl puri",
+      "Alouda",
+      "Gâteaux piments"
+     ],
+     "criticalTips": [
+      "В толпе на рынке держите сумку перед собой.",
+      "После 18:00 центр пустеет; ужинать лучше на Кодане."
+     ],
+     "mapsQuery": "Port Louis, Mauritius"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Остановка 2: Гран-Бе и север (пляжи и ботанический сад)",
+     "recommendedDuration": "2 дня",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Ботанический сад Памплемус (гигантские кувшинки)",
+      "Церковь с красной крышей в Кап-Малёрё",
+      "Пляжи Мон-Шуази и Перейбер",
+      "Остров Куан-де-Мир"
+     ],
+     "activities": [
+      "Отправьтесь на катамаране к северным островкам на снорклинг.",
+      "Посмотрите гигантские кувшинки и черепах в Памплемусе.",
+      "Встретьте закат в Кап-Малёрё."
+     ],
+     "foodAndDrinks": [
+      "Рыба на гриле и карри из осьминога",
+      "Пиво Phoenix"
+     ],
+     "criticalTips": [
+      "Выбирайте лицензированных операторов, а не пляжных зазывал.",
+      "Солнце очень сильное; пользуйтесь безопасным для рифов кремом."
+     ],
+     "mapsQuery": "Grand Baie, Mauritius"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Остановка 3: Бель-Мар и Иль-о-Серф (восточная лагуна)",
+     "recommendedDuration": "2 дня",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Остров Иль-о-Серф",
+      "Водопад GRSE (на лодке)",
+      "Пляж Бель-Мар",
+      "Заповедник Иль-о-Эгрет"
+     ],
+     "activities": [
+      "Доберитесь на катере до Иль-о-Серф и искупайтесь в лагуне.",
+      "Увидьте розовых голубей и гигантских черепах на Иль-о-Эгрет.",
+      "Загляните на рынок Маэбура (по понедельникам)."
+     ],
+     "foodAndDrinks": [
+      "Rougaille",
+      "Лобстер на гриле",
+      "Gato patat"
+     ],
+     "criticalTips": [
+      "На Иль-о-Серф бывает многолюдно; приезжайте рано утром.",
+      "Заранее уточните цену лодки и время возвращения."
+     ],
+     "mapsQuery": "Belle Mare, Mauritius"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Остановка 4: Шамарель и Ле-Морн (горы и юго-западное побережье)",
+     "recommendedDuration": "3 дня",
+     "durationBadge": "3 дня",
+     "highlights": [
+      "Семицветные земли и водопад Шамарель",
+      "Гора Ле-Морн-Брабан (ЮНЕСКО)",
+      "Национальный парк Блэк-Ривер-Горджес",
+      "Ганга-Талао (Гран-Бассен)"
+     ],
+     "activities": [
+      "Поднимитесь на Ле-Морн рано утром (лучше с гидом).",
+      "Посетите ромовую винокурню Шамарель.",
+      "Отправьтесь утром смотреть дельфинов в бухте Тамарен."
+     ],
+     "foodAndDrinks": [
+      "Vindaye de poisson",
+      "Ром Шамарель",
+      "Креольское карри"
+     ],
+     "criticalTips": [
+      "Тропа на Ле-Морн крутая и каменистая; после дождя не ходите.",
+      "Плавая рядом с дельфинами, не трогайте и не преследуйте их; выбирайте ответственного оператора."
+     ],
+     "mapsQuery": "Le Morne, Mauritius"
+    }
+   ]
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "G"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "В большинстве отелей розетки типа G (три плоских штыря, британские), кое-где тип C; возьмите переходник на G."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Водопроводная вода очищается, но после циклонов и ливней может загрязняться; рекомендуется бутилированная.",
+    "vaccines": [
+     "Плановые прививки",
+     "Гепатит A и брюшной тиф",
+     "Жёлтая лихорадка (сертификат только при прибытии из страны риска)",
+     "Защита от комаров из-за денге и чикунгуньи"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "114"
+   },
+   "tipping": {
+    "custom": "Не обязательны; ценятся за хороший сервис.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Некоторые отели и рестораны включают плату за обслуживание; проверяйте счёт."
+   },
+   "taxFree": {
+    "vatRefundPercent": "НДС 15 %; возврат для туристов возможен в аккредитованных магазинах",
+    "minSpend": "Зависит от магазина (уточняйте до покупки)",
+    "customsNote": "Оформляйте бланк возврата НДС в аккредитованных магазинах и предъявляйте его вместе с товаром на таможне аэропорта. Вывоз кораллов, ракушек и эндемичных растений запрещён."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "~0.50 - 1.50 $",
+    "topCarriers": [
+     "my.t (Mauritius Telecom)",
+     "Emtel",
+     "MTML (CHILI)"
+    ],
+    "airportSimTrapWarning": "Стойки my.t и Emtel в аэропорту продают туристические пакеты по разумной цене; нужна регистрация по паспорту. Купить eSIM заранее тоже удобно."
+   },
+   "touristScams": [
+    {
+     "title": "Такси из аэропорта",
+     "desc": "Счётчиком не пользуются, и некоторые водители завышают цену иностранцам.",
+     "tip": "Пользуйтесь тарифами официальной стойки такси или трансфером отеля."
+    },
+    {
+     "title": "Пляжные продавцы туров",
+     "desc": "Дешёвые туры на катамаране и к дельфинам бывают переполненными, короткими или небезопасными.",
+     "tip": "Бронируйте у лицензированных операторов, проверив отзывы."
+    },
+    {
+     "title": "Претензии по повреждениям арендованной машины",
+     "desc": "При возврате могут потребовать оплатить старые царапины.",
+     "tip": "Снимите машину на видео при получении и внесите повреждения в акт."
+    }
+   ]
+  }
+ }
+}

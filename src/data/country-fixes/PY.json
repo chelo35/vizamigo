@@ -1,0 +1,1932 @@
+{
+ "tr": {
+  "insights": {
+   "currency": "Paraguay Guaranisi (PYG)",
+   "plugType": "Tip C (220V, 50Hz)",
+   "bestMonths": "Nisan – Ekim (serin ve kurak; Haziran – Ağustos kış ayları ılık); Aralık – Şubat çok sıcak",
+   "safety": {
+    "crimeRateSummary": "Asunción ve Ciudad del Este’de kapkaç, motosikletli telefon hırsızlığı (“motochorro”) ve yankesicilik yaygındır. Kuzeydeki Concepción, San Pedro ve Amambay (Brezilya sınırı) bölgelerinde organize suç nedeniyle tedbir önerilir.",
+    "commonScams": [
+     "Motosikletli hırsızların kaldırımdaki yayaların telefonunu kapması",
+     "Ciudad del Este’de sahte veya yenilenmiş elektroniklerin sıfır diye satılması",
+     "Sınır bölgesinde sokak sarraflarının kötü kur vermesi"
+    ],
+    "safeTravelTips": [
+     "Telefonu yolda elinizde tutmayın; şehirde Bolt veya Uber kullanın.",
+     "Kuzey sınır bölgelerine (Amambay, Concepción) gereksiz seyahatten kaçının.",
+     "Yaz sıcaklarında (40 °C’ye kadar) bol su için; sivrisineklere karşı koruyucu kullanın."
+    ],
+    "emergencyNumbers": {
+     "police": "911",
+     "ambulance": "141",
+     "general": "911"
+    },
+    "safetyScore": 55,
+    "safetyLevel": "Orta Seviye",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Şehirlerde iyi 4G LTE (Asunción’da 5G başladı); Chaco’da zayıf",
+    "costPerGbUsd": "~0.50 - 2 $",
+    "esimAvailability": "İyi",
+    "bestCarriers": [
+     "Tigo",
+     "Personal",
+     "Claro"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Orta Düzey",
+    "costLevel": "Ekonomik",
+    "singleTicketUsd": "0.30 - 0.50 $",
+    "dailyPassUsd": "Günlük kart yok",
+    "popularRideApps": [
+     "Bolt",
+     "Uber",
+     "MUV"
+    ],
+    "taxiAdvice": "Asunción’da Bolt, Uber ve yerel uygulama MUV yaygın ve ucuzdur. Şehir otobüsleri kartla (Jaha, Más) ödenir ve kalabalıktır; şehirlerarası otobüsler Asunción Terminali’nden kalkar ve konforludur."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "30 - 45 $",
+    "dailyBudgetMidrangeUsd": "70 - 120 $",
+    "budgetMealUsd": "4 - 8 $",
+    "coffeeUsd": "1.50 - 3 $",
+    "waterBottleUsd": "0.60 - 1 $",
+    "hostelDormUsd": "10 - 18 $",
+    "hotel3StarUsd": "40 - 75 $",
+    "flightCostIndex": "Orta Seviye",
+    "flightTip": "Asunción’a (ASU) Türkiye’den direkt uçuş yoktur; São Paulo, Buenos Aires, Panama veya Madrid (Air Europa) aktarmalı biletleri karşılaştırın."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Tanışırken tokalaşılır, yakınlar yanaktan tek öpücükle selamlaşır.",
+     "Size tereré veya mate ikram edilirse kabul edin; bitirince “gracias” demek artık istemediğiniz anlamına gelir.",
+     "Öğle sıcağında “siesta” yaygındır; küçük kasabalarda dükkânlar 12–15 arası kapanabilir."
+    ],
+    "festivals": [
+     "Encarnación Karnavalı (Şubat)",
+     "San Juan Ára – ateş üstünde yürüme ve halk oyunları (24 Haziran)",
+     "Caacupé Bakire Meryem hac yolculuğu (8 Aralık)"
+    ],
+    "lifestyle": "Tereré termosu elden düşmeyen, hafta sonu asado sofraları ve futbol tutkusuyla sakin bir yaşam. Guaranice ve İspanyolcanın iç içe kullanıldığı (jopara) iki dilli bir toplumdur."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "La Santísima Trinidad del Paraná Cizvit misyonu (UNESCO)",
+     "Jesús de Tavarangüe misyonu (UNESCO)",
+     "Itaipú Barajı",
+     "Saltos del Monday şelalesi",
+     "Asunción tarihi merkezi ve Loma San Jerónimo",
+     "Ypacaraí Gölü, Areguá ve San Bernardino"
+    ],
+    "bestSeasons": "Nisan – Ekim (serin ve kurak; Haziran – Ağustos kış ayları ılık); Aralık – Şubat çok sıcak",
+    "travelStyleTip": "Paraguay Güney Amerika’nın en az turistik ve en ucuz ülkelerinden biridir; Asunción’dan başlayıp otobüsle doğuya Itaipú’ya, güneye Cizvit misyonlarına inin."
+   },
+   "religion": {
+    "primaryReligions": "Katolik (~%85), Protestan ve Evanjelik (~%8), Mennonit topluluklar ve diğer",
+    "respectNorms": "Kiliselerde sessiz olun ve örtünük giyinin; Caacupé hac günlerinde kalabalığa saygı gösterin.",
+    "sacredSites": [
+     "Caacupé Bazilikası",
+     "Asunción Metropolitan Katedrali",
+     "Trinidad Cizvit misyonu kilisesi kalıntıları"
+    ]
+   },
+   "language": {
+    "officialLanguages": "İspanyolca ve Guaranice (ikisi de resmî); nüfusun büyük kısmı Guaranice konuşur.",
+    "englishProficiency": "Düşük; temel İspanyolca neredeyse şarttır.",
+    "phrases": [
+     {
+      "phrase": "Mba’éichapa",
+      "meaning": "Merhaba, nasılsın? (Guaranice)",
+      "translation": "Merhaba, nasılsın? (Guaranice)",
+      "pronunciation": "mba-EY-sha-pa"
+     },
+     {
+      "phrase": "Iporã",
+      "meaning": "İyi / Güzel",
+      "translation": "İyi / Güzel",
+      "pronunciation": "ee-po-RAN"
+     },
+     {
+      "phrase": "Aguyje",
+      "meaning": "Teşekkürler (Guaranice)",
+      "translation": "Teşekkürler (Guaranice)",
+      "pronunciation": "ah-goo-DJEH"
+     },
+     {
+      "phrase": "¿Cuánto sale?",
+      "meaning": "Ne kadar?",
+      "translation": "Ne kadar?",
+      "pronunciation": "KWAN-toh SAH-leh"
+     },
+     {
+      "phrase": "Jaha",
+      "meaning": "Hadi gidelim!",
+      "translation": "Hadi gidelim!",
+      "pronunciation": "dja-HA"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Guarani halklarının topraklarında İspanyollar 1537’de Asunción’u kurdu. 17.–18. yüzyıllarda Cizvit misyonları Guaranilerle özgün bir toplum düzeni oluşturdu. Paraguay 1811’de bağımsız oldu; 1864–1870 Üçlü İttifak Savaşı’nda nüfusunun büyük bölümünü kaybetti, 1932–35’te Bolivya ile Chaco Savaşı’nı yaptı. 1954–1989 arasındaki askerî yönetimin ardından demokrasiye geçildi.",
+    "milestones": [
+     "1537 – Asunción’un kuruluşu",
+     "1811 – Bağımsızlık",
+     "1864–1870 – Üçlü İttifak Savaşı",
+     "1984 – Itaipú Barajı’nın elektrik üretmeye başlaması"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Sopa paraguaya (peynirli mısır keki)",
+     "Chipa guasu (taze mısırlı sufle)",
+     "Bori-bori (mısır köfteli tavuk çorbası)"
+    ],
+    "traditionalDrinks": [
+     "Tereré (soğuk yerba mate; UNESCO mirası)",
+     "Caña (şeker kamışı içkisi)",
+     "Mosto (taze şeker kamışı suyu)"
+    ],
+    "streetFoodAndDesserts": [
+     "Chipa (manyok unlu peynirli çörek)",
+     "Mbejú (manyok ve peynirli gözleme)",
+     "Kosereva (acı portakal reçeli tatlısı)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Augusto Roa Bastos (Cervantes Ödüllü yazar)",
+     "Agustín Barrios “Mangoré” (klasik gitar bestecisi)",
+     "José Luis Chilavert (gol atan efsane kaleci)"
+    ],
+    "strongSectors": [
+     "Soya ve sığır eti ihracatı",
+     "Hidroelektrik (Itaipú, Yacyretá)",
+     "Reeksport ticareti ve maquila üretimi"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Guarani ile ödeme yapılır; banknotlarda çok sıfır vardır (100.000 Gs ≈ 13 $). Şehirde kart ve QR ödemeler yaygın, kırsalda nakit gerekir; Ciudad del Este’de dolar da geçer.",
+    "tippingCulture": "Restoranlarda %10 bahşiş yaygındır ama zorunlu değildir.",
+    "economicPillars": "Soya, sığır eti ve tarım ürünleri, hidroelektrik ihracatı, reeksport ticareti ve hafif sanayi."
+   }
+  },
+  "itin": {
+   "routeName": "Guarani Toprakları: Asunción, Ypacaraí Gölü, Ciudad del Este ve Encarnación",
+   "routeSummary": "Başkent Asunción’dan Ypacaraí Gölü kıyısındaki zanaat kasabalarına, doğuda dev Itaipú Barajı ve Monday şelalesine, oradan güneyde UNESCO listesindeki Cizvit misyonlarına ve Encarnación’a uzanan 7 günlük rota.",
+   "totalDays": 7,
+   "idealDurationText": "7 Günlük Rota",
+   "bestSeason": "Nisan – Ekim (serin ve kurak; Haziran – Ağustos kış ayları ılık); Aralık – Şubat çok sıcak",
+   "transportMode": "Şehirlerarası otobüsler + şehir içinde Bolt/Uber",
+   "paceLevel": "Dengeli (kültür, doğa ve tarih)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "1. Durak: Asunción (Başkent ve Tarihî Merkez)",
+     "recommendedDuration": "2 gün",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "Kahramanlar Panteonu",
+      "López Sarayı",
+      "Bağımsızlık Evi",
+      "Loma San Jerónimo mahallesi"
+     ],
+     "activities": [
+      "Costanera boyunca gün batımında yürüyün.",
+      "Mercado 4’te yerel ürünleri keşfedin.",
+      "Bir parrilla’da Paraguay usulü asado yiyin."
+     ],
+     "foodAndDrinks": [
+      "Sopa paraguaya",
+      "Bori-bori",
+      "Tereré"
+     ],
+     "criticalTips": [
+      "Mercado 4 ve otogarda yankesicilere dikkat edin; telefonu cebinizde tutun.",
+      "Gece Chacarita gibi nehir kıyısı mahallelerinde yürümeyin."
+     ],
+     "mapsQuery": "Asunción, Paraguay"
+    },
+    {
+     "stopNumber": 2,
+     "name": "2. Durak: Areguá ve San Bernardino (Ypacaraí Gölü)",
+     "recommendedDuration": "1 gün",
+     "durationBadge": "1 Gün",
+     "highlights": [
+      "Areguá seramik atölyeleri",
+      "Cerro Koi altıgen kaya oluşumları",
+      "San Bernardino göl kıyısı",
+      "Itauguá ñandutí dantelleri"
+     ],
+     "activities": [
+      "Areguá’da çömlek ve seramik alın.",
+      "Itauguá’da ñandutí dantel yapımını izleyin.",
+      "Caacupé Bazilikası’na kısa bir uğrayış yapın."
+     ],
+     "foodAndDrinks": [
+      "Kremalı çilek (Areguá, Temmuz – Eylül)",
+      "Sıcak chipa",
+      "Mosto"
+     ],
+     "criticalTips": [
+      "Ypacaraí Gölü’nde su kalitesi değişkendir; yüzmeden önce yerel bilgi alın.",
+      "Hafta sonları Asunción’dan gelenlerle kalabalık olur; hafta içi gidin."
+     ],
+     "mapsQuery": "Areguá, Paraguay"
+    },
+    {
+     "stopNumber": 3,
+     "name": "3. Durak: Ciudad del Este (Itaipú ve Monday Şelalesi)",
+     "recommendedDuration": "2 gün",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "Itaipú Barajı panoramik turu",
+      "Saltos del Monday",
+      "Dostluk Köprüsü ve alışveriş merkezi",
+      "Moisés Bertoni Anıt Parkı"
+     ],
+     "activities": [
+      "Itaipú’nun ücretsiz panoramik turuna katılın.",
+      "Monday şelalesinin seyir terasından manzarayı izleyin.",
+      "Elektronik ve parfüm pazarlarını gezin."
+     ],
+     "foodAndDrinks": [
+      "Asado ve haşlanmış manyok",
+      "Empanada",
+      "Tereré"
+     ],
+     "criticalTips": [
+      "Yalnızca faturalı, garantili ürün alın; Brezilya/Arjantin’e geçerken gümrük limitlerine dikkat edin.",
+      "Kalabalık çarşıda çantanızı önde taşıyın."
+     ],
+     "mapsQuery": "Ciudad del Este, Paraguay"
+    },
+    {
+     "stopNumber": 4,
+     "name": "4. Durak: Encarnación ve Cizvit Misyonları",
+     "recommendedDuration": "2 gün",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "La Santísima Trinidad del Paraná (UNESCO)",
+      "Jesús de Tavarangüe (UNESCO)",
+      "Encarnación Costanera ve San José plajı"
+     ],
+     "activities": [
+      "Trinidad misyonunun gece ışık gösterisini izleyin.",
+      "Paraná Nehri kıyısındaki kumsalda dinlenin.",
+      "Şubat’ta karnaval geçidini izleyin."
+     ],
+     "foodAndDrinks": [
+      "Izgara surubí nehir balığı",
+      "Chipa guasu",
+      "Kosereva"
+     ],
+     "criticalTips": [
+      "Yaz aylarında öğle sıcağı çok serttir; misyonları sabah veya akşam gezin.",
+      "Misyonlar arası toplu taşıma seyrektir; taksi veya tur ayarlayın."
+     ],
+     "mapsQuery": "Encarnación, Itapúa, Paraguay"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Sopa paraguaya",
+     "Chipa guasu",
+     "Asado"
+    ],
+    "drinks": [
+     "Tereré",
+     "Mate",
+     "Caña"
+    ],
+    "streetFoods": [
+     "Chipa",
+     "Mbejú",
+     "Empanada"
+    ],
+    "diningAdvice": "Sabah otobüs duraklarında ve yol kenarında satılan sıcak chipa’yı mutlaka deneyin; öğle yemeği günün ana öğünüdür ve “menú del día” çok ucuzdur."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Güneş kremi, şapka ve sivrisinek kovucu",
+     "Hafif ve nefes alan giysiler",
+     "Kışın (Haziran – Ağustos) ince mont",
+     "Telefon için güvenli bel çantası"
+    ],
+    "safetyAndEtiquette": [
+     "Telefonu sokakta açıkta kullanmayın; motochorrolara dikkat.",
+     "İkram edilen tereréyi kabul etmek nezakettir."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "İki yuvarlak pimli C tipi prizler yaygındır; Türk fişleri çoğunlukla takılır, ancak bazı eski veya gömme prizlere kalın Schuko fişleri girmeyebilir."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Asunción’da şebeke suyu arıtılır ama altyapı eski olduğundan şişe su önerilir; kırsalda kesinlikle şişe su için.",
+    "vaccines": [
+     "Rutin aşılar ve Hepatit A",
+     "Tifo",
+     "Sarıhumma: Asunción şehri dışında seyahat edecekler için önerilir",
+     "Dang ve chikungunya için sivrisinek koruması"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "141"
+   },
+   "tipping": {
+    "custom": "Restoranlarda %10 bahşiş yaygındır.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Bahşiş zorunlu değildir; taksi ve kafelerde küsuratı yuvarlamak yeterlidir."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA (KDV) %10; turiste genel iade yok",
+    "minSpend": "Uygulanmaz",
+    "customsNote": "Paraguay’da turistlere genel bir KDV iadesi sistemi yoktur; fiyatlar zaten düşüktür. Ciudad del Este alışverişinde komşu ülkelere girişte o ülkelerin gümrük muafiyet limitleri uygulanır."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.50 - $2",
+    "topCarriers": [
+     "Tigo",
+     "Personal",
+     "Claro"
+    ],
+    "airportSimTrapWarning": "Asunción havalimanında SIM satışı sınırlıdır; eSIM’i önceden kurun veya şehirdeki Tigo/Personal mağazalarından pasaportla ucuz hat alın."
+   },
+   "touristScams": [
+    {
+     "title": "Motochorro Kapkaçı",
+     "desc": "Motosikletli iki kişi yaya veya taksi camından telefon ve çanta kapar.",
+     "tip": "Telefonu yol tarafında tutmayın, araçta camı kapalı tutun."
+    },
+    {
+     "title": "Sahte Elektronik",
+     "desc": "Ciudad del Este’de taklit veya yenilenmiş cihazlar orijinal diye satılır.",
+     "tip": "Büyük ve bilinen mağazalardan faturalı alın, kutuyu açıp kontrol edin."
+    },
+    {
+     "title": "Sınırda Döviz Bozdurma",
+     "desc": "Sokak sarrafları düşük kur verir veya hızlı sayımla eksik para öder.",
+     "tip": "Resmî döviz bürolarını (casa de cambio) veya ATM’leri kullanın."
+    }
+   ]
+  }
+ },
+ "en": {
+  "insights": {
+   "currency": "Paraguayan Guaraní (PYG)",
+   "plugType": "Type C (220V, 50Hz)",
+   "bestMonths": "April – October (cooler and drier; June – August winters are mild); December – February is very hot",
+   "safety": {
+    "crimeRateSummary": "Bag snatching, phone theft by motorbike riders (“motochorros”) and pickpocketing are common in Asunción and Ciudad del Este. Caution is advised in the northern departments of Concepción, San Pedro and Amambay (Brazilian border) because of organised crime.",
+    "commonScams": [
+     "Motorbike thieves snatching phones from pedestrians",
+     "Fake or refurbished electronics sold as new in Ciudad del Este",
+     "Street money changers at the border giving poor rates"
+    ],
+    "safeTravelTips": [
+     "Do not hold your phone out on the street; use Bolt or Uber in the city.",
+     "Avoid non-essential travel to the northern border areas (Amambay, Concepción).",
+     "Drink plenty in summer heat (up to 40 °C) and use mosquito repellent."
+    ],
+    "emergencyNumbers": {
+     "police": "911",
+     "ambulance": "141",
+     "general": "911"
+    },
+    "safetyScore": 55,
+    "safetyLevel": "Moderate",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Good 4G LTE in towns (5G starting in Asunción); weak in the Chaco",
+    "costPerGbUsd": "~0.50 - 2 $",
+    "esimAvailability": "Good",
+    "bestCarriers": [
+     "Tigo",
+     "Personal",
+     "Claro"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Adequate",
+    "costLevel": "Budget-Friendly",
+    "singleTicketUsd": "0.30 - 0.50 $",
+    "dailyPassUsd": "No day pass",
+    "popularRideApps": [
+     "Bolt",
+     "Uber",
+     "MUV"
+    ],
+    "taxiAdvice": "In Asunción Bolt, Uber and the local app MUV are common and cheap. City buses use cards (Jaha, Más) and are crowded; comfortable intercity coaches leave from the Asunción Terminal."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "30 - 45 $",
+    "dailyBudgetMidrangeUsd": "70 - 120 $",
+    "budgetMealUsd": "4 - 8 $",
+    "coffeeUsd": "1.50 - 3 $",
+    "waterBottleUsd": "0.60 - 1 $",
+    "hostelDormUsd": "10 - 18 $",
+    "hotel3StarUsd": "40 - 75 $",
+    "flightCostIndex": "Moderate",
+    "flightTip": "There are no direct flights from Türkiye to Asunción (ASU); compare connections via São Paulo, Buenos Aires, Panama City or Madrid (Air Europa)."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "People shake hands when meeting; friends greet with a single cheek kiss.",
+     "Accept tereré or mate when offered; saying “gracias” as you hand it back means you have had enough.",
+     "A midday siesta is common; in small towns shops may close from 12 to 3 pm."
+    ],
+    "festivals": [
+     "Encarnación Carnival (February)",
+     "San Juan Ára – fire-walking and folk games (24 June)",
+     "Pilgrimage to the Virgin of Caacupé (8 December)"
+    ],
+    "lifestyle": "A relaxed life where a tereré thermos is always at hand, with weekend asados and a passion for football. It is a bilingual society that mixes Guaraní and Spanish (jopara)."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Jesuit mission of La Santísima Trinidad del Paraná (UNESCO)",
+     "Jesús de Tavarangüe mission (UNESCO)",
+     "Itaipú Dam",
+     "Saltos del Monday waterfall",
+     "Historic Asunción and Loma San Jerónimo",
+     "Lake Ypacaraí, Areguá and San Bernardino"
+    ],
+    "bestSeasons": "April – October (cooler and drier; June – August winters are mild); December – February is very hot",
+    "travelStyleTip": "Paraguay is one of South America’s least touristy and cheapest countries; start in Asunción and take buses east to Itaipú and south to the Jesuit missions."
+   },
+   "religion": {
+    "primaryReligions": "Catholic (~85%), Protestant and Evangelical (~8%), Mennonite communities and others",
+    "respectNorms": "Keep quiet and dress modestly in churches; respect the crowds on Caacupé pilgrimage days.",
+    "sacredSites": [
+     "Basilica of Caacupé",
+     "Metropolitan Cathedral of Asunción",
+     "Church ruins of the Trinidad Jesuit mission"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Spanish and Guaraní (both official); most of the population speaks Guaraní.",
+    "englishProficiency": "Low; basic Spanish is almost essential.",
+    "phrases": [
+     {
+      "phrase": "Mba’éichapa",
+      "meaning": "Hello, how are you? (Guaraní)",
+      "translation": "Hello, how are you? (Guaraní)",
+      "pronunciation": "mba-EY-sha-pa"
+     },
+     {
+      "phrase": "Iporã",
+      "meaning": "Good / Fine",
+      "translation": "Good / Fine",
+      "pronunciation": "ee-po-RAN"
+     },
+     {
+      "phrase": "Aguyje",
+      "meaning": "Thank you (Guaraní)",
+      "translation": "Thank you (Guaraní)",
+      "pronunciation": "ah-goo-DJEH"
+     },
+     {
+      "phrase": "¿Cuánto sale?",
+      "meaning": "How much is it?",
+      "translation": "How much is it?",
+      "pronunciation": "KWAN-toh SAH-leh"
+     },
+     {
+      "phrase": "Jaha",
+      "meaning": "Let us go!",
+      "translation": "Let us go!",
+      "pronunciation": "dja-HA"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "On Guaraní lands, the Spanish founded Asunción in 1537. In the 17th–18th centuries the Jesuit missions built a unique society with the Guaraní. Paraguay became independent in 1811, lost a large share of its population in the War of the Triple Alliance (1864–1870) and fought the Chaco War with Bolivia in 1932–35. Military rule from 1954 to 1989 gave way to democracy.",
+    "milestones": [
+     "1537 – Founding of Asunción",
+     "1811 – Independence",
+     "1864–1870 – War of the Triple Alliance",
+     "1984 – Itaipú Dam begins producing power"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Sopa paraguaya (cheesy cornbread)",
+     "Chipa guasu (fresh corn soufflé)",
+     "Bori-bori (chicken soup with corn dumplings)"
+    ],
+    "traditionalDrinks": [
+     "Tereré (cold yerba mate; UNESCO heritage)",
+     "Caña (sugarcane spirit)",
+     "Mosto (fresh sugarcane juice)"
+    ],
+    "streetFoodAndDesserts": [
+     "Chipa (cassava-cheese bread)",
+     "Mbejú (cassava and cheese flatbread)",
+     "Kosereva (bitter-orange sweet)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Augusto Roa Bastos (Cervantes Prize-winning writer)",
+     "Agustín Barrios “Mangoré” (classical guitar composer)",
+     "José Luis Chilavert (legendary goal-scoring goalkeeper)"
+    ],
+    "strongSectors": [
+     "Soy and beef exports",
+     "Hydropower (Itaipú, Yacyretá)",
+     "Re-export trade and maquila manufacturing"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Payments are in guaraníes with many zeros (100,000 Gs ≈ 13 $). Cards and QR payments are common in cities, cash in rural areas; dollars are accepted in Ciudad del Este.",
+    "tippingCulture": "A 10% tip is common in restaurants but not mandatory.",
+    "economicPillars": "Soy, beef and farm exports, hydroelectric power exports, re-export trade and light industry."
+   }
+  },
+  "itin": {
+   "routeName": "Land of the Guaraní: Asunción, Lake Ypacaraí, Ciudad del Este and Encarnación",
+   "routeSummary": "A 7-day route from the capital Asunción to the craft towns on Lake Ypacaraí, east to the giant Itaipú Dam and Monday falls, then south to the UNESCO-listed Jesuit missions and Encarnación.",
+   "totalDays": 7,
+   "idealDurationText": "7-Day Itinerary",
+   "bestSeason": "April – October (cooler and drier; June – August winters are mild); December – February is very hot",
+   "transportMode": "Intercity coaches + Bolt/Uber in cities",
+   "paceLevel": "Balanced (culture, nature and history)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stop 1: Asunción (Capital & Historic Centre)",
+     "recommendedDuration": "2 days",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "National Pantheon of Heroes",
+      "Palacio de López",
+      "Casa de la Independencia",
+      "Loma San Jerónimo neighbourhood"
+     ],
+     "activities": [
+      "Walk the Costanera riverfront at sunset.",
+      "Explore local produce at Mercado 4.",
+      "Eat a Paraguayan asado at a parrilla."
+     ],
+     "foodAndDrinks": [
+      "Sopa paraguaya",
+      "Bori-bori",
+      "Tereré"
+     ],
+     "criticalTips": [
+      "Watch for pickpockets at Mercado 4 and the bus terminal; keep your phone in your pocket.",
+      "Do not walk in riverside areas like Chacarita at night."
+     ],
+     "mapsQuery": "Asunción, Paraguay"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stop 2: Areguá & San Bernardino (Lake Ypacaraí)",
+     "recommendedDuration": "1 day",
+     "durationBadge": "1 Day",
+     "highlights": [
+      "Areguá ceramic workshops",
+      "Cerro Koi hexagonal rock formations",
+      "San Bernardino lakeshore",
+      "Ñandutí lace of Itauguá"
+     ],
+     "activities": [
+      "Shop for pottery in Areguá.",
+      "Watch ñandutí lace-making in Itauguá.",
+      "Make a short stop at the Basilica of Caacupé."
+     ],
+     "foodAndDrinks": [
+      "Strawberries and cream (Areguá, July – September)",
+      "Warm chipa",
+      "Mosto"
+     ],
+     "criticalTips": [
+      "Water quality in Lake Ypacaraí varies; ask locally before swimming.",
+      "Weekends are crowded with day-trippers from Asunción; go on a weekday."
+     ],
+     "mapsQuery": "Areguá, Paraguay"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stop 3: Ciudad del Este (Itaipú & Monday Falls)",
+     "recommendedDuration": "2 days",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "Itaipú Dam panoramic tour",
+      "Saltos del Monday",
+      "Friendship Bridge and shopping district",
+      "Moisés Bertoni Monument"
+     ],
+     "activities": [
+      "Join Itaipú’s free panoramic tour.",
+      "Take in the view from the Monday falls viewing deck.",
+      "Browse the electronics and perfume markets."
+     ],
+     "foodAndDrinks": [
+      "Asado with boiled cassava",
+      "Empanadas",
+      "Tereré"
+     ],
+     "criticalTips": [
+      "Buy only with an invoice and warranty; mind customs limits when crossing to Brazil or Argentina.",
+      "Carry your bag in front in the crowded market area."
+     ],
+     "mapsQuery": "Ciudad del Este, Paraguay"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Stop 4: Encarnación & Jesuit Missions",
+     "recommendedDuration": "2 days",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "La Santísima Trinidad del Paraná (UNESCO)",
+      "Jesús de Tavarangüe (UNESCO)",
+      "Encarnación Costanera and San José beach"
+     ],
+     "activities": [
+      "See the night light show at the Trinidad mission.",
+      "Relax on the sandy beach of the Paraná River.",
+      "Watch the carnival parade in February."
+     ],
+     "foodAndDrinks": [
+      "Grilled surubí river fish",
+      "Chipa guasu",
+      "Kosereva"
+     ],
+     "criticalTips": [
+      "Midday heat is fierce in summer; visit the missions in the morning or evening.",
+      "Public transport between the missions is sparse; arrange a taxi or tour."
+     ],
+     "mapsQuery": "Encarnación, Itapúa, Paraguay"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Sopa paraguaya",
+     "Chipa guasu",
+     "Asado"
+    ],
+    "drinks": [
+     "Tereré",
+     "Mate",
+     "Caña"
+    ],
+    "streetFoods": [
+     "Chipa",
+     "Mbejú",
+     "Empanadas"
+    ],
+    "diningAdvice": "Try the warm chipa sold at bus stops and roadsides in the morning; lunch is the main meal and the “menú del día” is very cheap."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Sunscreen, hat and insect repellent",
+     "Light, breathable clothing",
+     "Light jacket in winter (June – August)",
+     "Secure waist bag for your phone"
+    ],
+    "safetyAndEtiquette": [
+     "Do not use your phone openly on the street; beware of motochorros.",
+     "Accepting offered tereré is polite."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Two-round-pin Type C sockets are common; Turkish plugs usually fit, though thick Schuko plugs may not go into some older or recessed sockets."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Mains water in Asunción is treated, but bottled water is advised due to old pipes; drink only bottled water in rural areas.",
+    "vaccines": [
+     "Routine vaccines and hepatitis A",
+     "Typhoid",
+     "Yellow fever: recommended for travel outside the city of Asunción",
+     "Mosquito protection against dengue and chikungunya"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "141"
+   },
+   "tipping": {
+    "custom": "A 10% tip is common in restaurants.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Tipping is not mandatory; rounding up is enough in taxis and cafés."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA (VAT) 10%; no general tourist refund",
+    "minSpend": "Not applicable",
+    "customsNote": "Paraguay has no general VAT refund for tourists, and prices are already low. For Ciudad del Este shopping, the customs allowances of neighbouring countries apply when you cross."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.50 - $2",
+    "topCarriers": [
+     "Tigo",
+     "Personal",
+     "Claro"
+    ],
+    "airportSimTrapWarning": "SIM sales at Asunción airport are limited; set up an eSIM beforehand or buy a cheap SIM with your passport at a Tigo/Personal store in the city."
+   },
+   "touristScams": [
+    {
+     "title": "Motochorro Snatch",
+     "desc": "Two people on a motorbike snatch phones and bags from pedestrians or through taxi windows.",
+     "tip": "Keep your phone away from the road side and car windows closed."
+    },
+    {
+     "title": "Fake Electronics",
+     "desc": "Copies or refurbished devices are sold as originals in Ciudad del Este.",
+     "tip": "Buy from large, known stores with an invoice and check the box contents."
+    },
+    {
+     "title": "Border Money Changers",
+     "desc": "Street changers give low rates or short-change you with quick counting.",
+     "tip": "Use official exchange offices (casas de cambio) or ATMs."
+    }
+   ]
+  }
+ },
+ "de": {
+  "insights": {
+   "currency": "Paraguayischer Guaraní (PYG)",
+   "plugType": "Typ C (220V, 50Hz)",
+   "bestMonths": "April – Oktober (kühler und trockener; milde Winter Juni – August); Dezember – Februar sehr heiß",
+   "safety": {
+    "crimeRateSummary": "In Asunción und Ciudad del Este sind Taschenraub, Handydiebstahl durch Motorradfahrer („Motochorros“) und Taschendiebstahl verbreitet. In den nördlichen Departements Concepción, San Pedro und Amambay (Grenze zu Brasilien) ist wegen organisierter Kriminalität Vorsicht geboten.",
+    "commonScams": [
+     "Motorraddiebe, die Fußgängern das Handy entreißen",
+     "Gefälschte oder generalüberholte Elektronik als Neuware in Ciudad del Este",
+     "Straßenwechsler an der Grenze mit schlechten Kursen"
+    ],
+    "safeTravelTips": [
+     "Halten Sie das Handy auf der Straße nicht offen; nutzen Sie Bolt oder Uber.",
+     "Vermeiden Sie unnötige Reisen in die nördlichen Grenzgebiete (Amambay, Concepción).",
+     "Trinken Sie bei Sommerhitze (bis 40 °C) viel und nutzen Sie Mückenschutz."
+    ],
+    "emergencyNumbers": {
+     "police": "911",
+     "ambulance": "141",
+     "general": "911"
+    },
+    "safetyScore": 55,
+    "safetyLevel": "Mäßiges Risiko",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Gutes 4G LTE in Städten (5G startet in Asunción); schwach im Chaco",
+    "costPerGbUsd": "~0.50 - 2 $",
+    "esimAvailability": "Gut",
+    "bestCarriers": [
+     "Tigo",
+     "Personal",
+     "Claro"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Angemessen",
+    "costLevel": "Preiswert",
+    "singleTicketUsd": "0.30 - 0.50 $",
+    "dailyPassUsd": "Kein Tagesticket",
+    "popularRideApps": [
+     "Bolt",
+     "Uber",
+     "MUV"
+    ],
+    "taxiAdvice": "In Asunción sind Bolt, Uber und die lokale App MUV verbreitet und günstig. Stadtbusse zahlt man mit Karte (Jaha, Más), sie sind voll; komfortable Fernbusse fahren vom Terminal in Asunción."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "30 - 45 $",
+    "dailyBudgetMidrangeUsd": "70 - 120 $",
+    "budgetMealUsd": "4 - 8 $",
+    "coffeeUsd": "1.50 - 3 $",
+    "waterBottleUsd": "0.60 - 1 $",
+    "hostelDormUsd": "10 - 18 $",
+    "hotel3StarUsd": "40 - 75 $",
+    "flightCostIndex": "Moderat",
+    "flightTip": "Es gibt keine Direktflüge aus der Türkei nach Asunción (ASU); vergleichen Sie Verbindungen über São Paulo, Buenos Aires, Panama-Stadt oder Madrid (Air Europa)."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Beim Kennenlernen gibt man sich die Hand; Freunde begrüßen sich mit einem Wangenkuss.",
+     "Nehmen Sie angebotenen Tereré oder Mate an; „gracias“ beim Zurückgeben bedeutet, dass Sie genug haben.",
+     "Die Mittagssiesta ist üblich; in Kleinstädten schließen Läden oft von 12 bis 15 Uhr."
+    ],
+    "festivals": [
+     "Karneval von Encarnación (Februar)",
+     "San Juan Ára – Feuerlauf und Volksspiele (24. Juni)",
+     "Wallfahrt zur Jungfrau von Caacupé (8. Dezember)"
+    ],
+    "lifestyle": "Ein entspanntes Leben mit stets griffbereiter Tereré-Thermoskanne, Asados am Wochenende und Fußballbegeisterung. Die Gesellschaft ist zweisprachig und mischt Guaraní und Spanisch (Jopara)."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Jesuitenreduktion La Santísima Trinidad del Paraná (UNESCO)",
+     "Reduktion Jesús de Tavarangüe (UNESCO)",
+     "Itaipú-Staudamm",
+     "Wasserfall Saltos del Monday",
+     "Historisches Asunción und Loma San Jerónimo",
+     "Ypacaraí-See, Areguá und San Bernardino"
+    ],
+    "bestSeasons": "April – Oktober (kühler und trockener; milde Winter Juni – August); Dezember – Februar sehr heiß",
+    "travelStyleTip": "Paraguay ist eines der am wenigsten touristischen und günstigsten Länder Südamerikas; starten Sie in Asunción und fahren Sie mit Bussen nach Osten zum Itaipú und nach Süden zu den Jesuitenreduktionen."
+   },
+   "religion": {
+    "primaryReligions": "Katholisch (~85 %), evangelisch und evangelikal (~8 %), mennonitische Gemeinden u. a.",
+    "respectNorms": "Seien Sie in Kirchen leise und dezent gekleidet; respektieren Sie die Menge bei den Wallfahrten nach Caacupé.",
+    "sacredSites": [
+     "Basilika von Caacupé",
+     "Metropolitankathedrale von Asunción",
+     "Kirchenruinen der Jesuitenreduktion Trinidad"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Spanisch und Guaraní (beide Amtssprachen); die Mehrheit spricht Guaraní.",
+    "englishProficiency": "Gering; Grundkenntnisse in Spanisch sind fast unverzichtbar.",
+    "phrases": [
+     {
+      "phrase": "Mba’éichapa",
+      "meaning": "Hallo, wie geht’s? (Guaraní)",
+      "translation": "Hallo, wie geht’s? (Guaraní)",
+      "pronunciation": "mba-EY-sha-pa"
+     },
+     {
+      "phrase": "Iporã",
+      "meaning": "Gut / Schön",
+      "translation": "Gut / Schön",
+      "pronunciation": "ee-po-RAN"
+     },
+     {
+      "phrase": "Aguyje",
+      "meaning": "Danke (Guaraní)",
+      "translation": "Danke (Guaraní)",
+      "pronunciation": "ah-goo-DJEH"
+     },
+     {
+      "phrase": "¿Cuánto sale?",
+      "meaning": "Wie viel kostet das?",
+      "translation": "Wie viel kostet das?",
+      "pronunciation": "KWAN-toh SAH-leh"
+     },
+     {
+      "phrase": "Jaha",
+      "meaning": "Los geht’s!",
+      "translation": "Los geht’s!",
+      "pronunciation": "dja-HA"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Auf dem Land der Guaraní gründeten die Spanier 1537 Asunción. Im 17. und 18. Jahrhundert schufen die Jesuitenreduktionen mit den Guaraní eine einzigartige Gesellschaft. Paraguay wurde 1811 unabhängig, verlor im Tripel-Allianz-Krieg (1864–1870) einen Großteil seiner Bevölkerung und führte 1932–35 den Chacokrieg gegen Bolivien. Auf die Militärherrschaft 1954–1989 folgte die Demokratie.",
+    "milestones": [
+     "1537 – Gründung von Asunción",
+     "1811 – Unabhängigkeit",
+     "1864–1870 – Tripel-Allianz-Krieg",
+     "1984 – Itaipú-Staudamm beginnt Stromproduktion"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Sopa paraguaya (Maisbrot mit Käse)",
+     "Chipa guasu (Soufflé aus frischem Mais)",
+     "Bori-bori (Hühnersuppe mit Maisklößchen)"
+    ],
+    "traditionalDrinks": [
+     "Tereré (kalter Mate; UNESCO-Erbe)",
+     "Caña (Zuckerrohrschnaps)",
+     "Mosto (frischer Zuckerrohrsaft)"
+    ],
+    "streetFoodAndDesserts": [
+     "Chipa (Maniok-Käse-Brot)",
+     "Mbejú (Maniok-Käse-Fladen)",
+     "Kosereva (Bitterorangen-Süßspeise)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Augusto Roa Bastos (Cervantes-Preisträger)",
+     "Agustín Barrios „Mangoré“ (Komponist für klassische Gitarre)",
+     "José Luis Chilavert (legendärer Tore schießender Torwart)"
+    ],
+    "strongSectors": [
+     "Export von Soja und Rindfleisch",
+     "Wasserkraft (Itaipú, Yacyretá)",
+     "Re-Export-Handel und Maquila-Fertigung"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Gezahlt wird in Guaraní mit vielen Nullen (100.000 Gs ≈ 13 $). In Städten sind Karten- und QR-Zahlungen üblich, auf dem Land Bargeld; in Ciudad del Este gehen auch Dollar.",
+    "tippingCulture": "In Restaurants sind 10 % üblich, aber freiwillig.",
+    "economicPillars": "Soja, Rindfleisch und Agrarexporte, Stromexporte aus Wasserkraft, Re-Export-Handel und Leichtindustrie."
+   }
+  },
+  "itin": {
+   "routeName": "Land der Guaraní: Asunción, Ypacaraí-See, Ciudad del Este und Encarnación",
+   "routeSummary": "Eine 7-tägige Route von der Hauptstadt Asunción zu den Handwerksorten am Ypacaraí-See, nach Osten zum riesigen Itaipú-Staudamm und den Monday-Fällen und dann nach Süden zu den UNESCO-Jesuitenreduktionen und Encarnación.",
+   "totalDays": 7,
+   "idealDurationText": "7-tägige Route",
+   "bestSeason": "April – Oktober (kühler und trockener; milde Winter Juni – August); Dezember – Februar sehr heiß",
+   "transportMode": "Fernbusse + Bolt/Uber in den Städten",
+   "paceLevel": "Ausgewogen (Kultur, Natur und Geschichte)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stopp 1: Asunción (Hauptstadt & Altstadt)",
+     "recommendedDuration": "2 Tage",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "Pantheon der Helden",
+      "Palacio de López",
+      "Casa de la Independencia",
+      "Viertel Loma San Jerónimo"
+     ],
+     "activities": [
+      "Spazieren Sie bei Sonnenuntergang an der Costanera.",
+      "Entdecken Sie lokale Produkte auf dem Mercado 4.",
+      "Essen Sie Asado in einer Parrilla."
+     ],
+     "foodAndDrinks": [
+      "Sopa paraguaya",
+      "Bori-bori",
+      "Tereré"
+     ],
+     "criticalTips": [
+      "Achten Sie am Mercado 4 und am Busbahnhof auf Taschendiebe; Handy in der Tasche lassen.",
+      "Gehen Sie nachts nicht durch Flussviertel wie Chacarita."
+     ],
+     "mapsQuery": "Asunción, Paraguay"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stopp 2: Areguá & San Bernardino (Ypacaraí-See)",
+     "recommendedDuration": "1 Tag",
+     "durationBadge": "1 Tag",
+     "highlights": [
+      "Keramikwerkstätten von Areguá",
+      "Sechseckige Felsformationen am Cerro Koi",
+      "Seeufer von San Bernardino",
+      "Ñandutí-Spitze aus Itauguá"
+     ],
+     "activities": [
+      "Kaufen Sie Töpferwaren in Areguá.",
+      "Sehen Sie in Itauguá bei der Ñandutí-Spitzenherstellung zu.",
+      "Machen Sie einen kurzen Halt an der Basilika von Caacupé."
+     ],
+     "foodAndDrinks": [
+      "Erdbeeren mit Sahne (Areguá, Juli – September)",
+      "Warme Chipa",
+      "Mosto"
+     ],
+     "criticalTips": [
+      "Die Wasserqualität des Ypacaraí-Sees schwankt; vor dem Baden lokal erkundigen.",
+      "Am Wochenende ist es voll mit Ausflüglern aus Asunción; lieber unter der Woche."
+     ],
+     "mapsQuery": "Areguá, Paraguay"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stopp 3: Ciudad del Este (Itaipú & Monday-Fälle)",
+     "recommendedDuration": "2 Tage",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "Panoramatour am Itaipú-Staudamm",
+      "Saltos del Monday",
+      "Freundschaftsbrücke und Einkaufsviertel",
+      "Monumento Moisés Bertoni"
+     ],
+     "activities": [
+      "Machen Sie die kostenlose Panoramatour am Itaipú.",
+      "Genießen Sie den Blick von der Aussichtsplattform der Monday-Fälle.",
+      "Stöbern Sie in Elektronik- und Parfummärkten."
+     ],
+     "foodAndDrinks": [
+      "Asado mit gekochtem Maniok",
+      "Empanadas",
+      "Tereré"
+     ],
+     "criticalTips": [
+      "Kaufen Sie nur mit Rechnung und Garantie; beachten Sie Zollgrenzen bei der Weiterreise nach Brasilien oder Argentinien.",
+      "Tragen Sie die Tasche im Gedränge vorne."
+     ],
+     "mapsQuery": "Ciudad del Este, Paraguay"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Stopp 4: Encarnación & Jesuitenreduktionen",
+     "recommendedDuration": "2 Tage",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "La Santísima Trinidad del Paraná (UNESCO)",
+      "Jesús de Tavarangüe (UNESCO)",
+      "Costanera und Strand San José in Encarnación"
+     ],
+     "activities": [
+      "Erleben Sie die nächtliche Lichtshow in der Reduktion Trinidad.",
+      "Entspannen Sie am Sandstrand des Paraná.",
+      "Sehen Sie im Februar den Karnevalsumzug."
+     ],
+     "foodAndDrinks": [
+      "Gegrillter Flussfisch Surubí",
+      "Chipa guasu",
+      "Kosereva"
+     ],
+     "criticalTips": [
+      "Im Sommer ist die Mittagshitze extrem; besuchen Sie die Reduktionen morgens oder abends.",
+      "Zwischen den Reduktionen fährt selten ein Bus; Taxi oder Tour organisieren."
+     ],
+     "mapsQuery": "Encarnación, Itapúa, Paraguay"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Sopa paraguaya",
+     "Chipa guasu",
+     "Asado"
+    ],
+    "drinks": [
+     "Tereré",
+     "Mate",
+     "Caña"
+    ],
+    "streetFoods": [
+     "Chipa",
+     "Mbejú",
+     "Empanadas"
+    ],
+    "diningAdvice": "Probieren Sie morgens die warme Chipa an Haltestellen und Straßenrändern; das Mittagessen ist die Hauptmahlzeit, das „Menú del día“ sehr günstig."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Sonnencreme, Hut und Insektenschutz",
+     "Leichte, atmungsaktive Kleidung",
+     "Leichte Jacke im Winter (Juni – August)",
+     "Sichere Bauchtasche fürs Handy"
+    ],
+    "safetyAndEtiquette": [
+     "Handy nicht offen auf der Straße nutzen; Vorsicht vor Motochorros.",
+     "Angebotenen Tereré anzunehmen ist höflich."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Verbreitet sind Steckdosen Typ C mit zwei Rundstiften; türkische Stecker passen meist, dicke Schuko-Stecker aber nicht in jede ältere oder versenkte Dose."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "In Asunción wird Leitungswasser aufbereitet, wegen alter Leitungen wird aber Flaschenwasser empfohlen; auf dem Land nur Flaschenwasser.",
+    "vaccines": [
+     "Standardimpfungen und Hepatitis A",
+     "Typhus",
+     "Gelbfieber: empfohlen für Reisen außerhalb der Stadt Asunción",
+     "Mückenschutz gegen Dengue und Chikungunya"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "141"
+   },
+   "tipping": {
+    "custom": "In Restaurants sind 10 % üblich.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Trinkgeld ist freiwillig; in Taxis und Cafés reicht Aufrunden."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA (MwSt.) 10 %; keine allgemeine Rückerstattung",
+    "minSpend": "Entfällt",
+    "customsNote": "Paraguay hat kein allgemeines Mehrwertsteuer-Erstattungssystem für Touristen; die Preise sind ohnehin niedrig. Für Einkäufe in Ciudad del Este gelten beim Grenzübertritt die Freigrenzen der Nachbarländer."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.50 - $2",
+    "topCarriers": [
+     "Tigo",
+     "Personal",
+     "Claro"
+    ],
+    "airportSimTrapWarning": "Am Flughafen Asunción gibt es kaum SIM-Verkauf; richten Sie vorher eine eSIM ein oder kaufen Sie mit Pass eine günstige SIM bei Tigo/Personal in der Stadt."
+   },
+   "touristScams": [
+    {
+     "title": "Motochorro-Diebstahl",
+     "desc": "Zwei Personen auf einem Motorrad entreißen Fußgängern oder durch Taxifenster Handys und Taschen.",
+     "tip": "Handy nicht zur Straßenseite halten, Autofenster geschlossen lassen."
+    },
+    {
+     "title": "Gefälschte Elektronik",
+     "desc": "In Ciudad del Este werden Kopien oder überholte Geräte als Originale verkauft.",
+     "tip": "Kaufen Sie in großen, bekannten Läden mit Rechnung und prüfen Sie den Inhalt."
+    },
+    {
+     "title": "Geldwechsler an der Grenze",
+     "desc": "Straßenwechsler geben schlechte Kurse oder zählen schnell und zu wenig.",
+     "tip": "Nutzen Sie offizielle Wechselstuben (Casas de Cambio) oder Geldautomaten."
+    }
+   ]
+  }
+ },
+ "es": {
+  "insights": {
+   "currency": "Guaraní paraguayo (PYG)",
+   "plugType": "Tipo C (220V, 50Hz)",
+   "bestMonths": "Abril – octubre (más fresco y seco; inviernos suaves de junio a agosto); de diciembre a febrero hace mucho calor",
+   "safety": {
+    "crimeRateSummary": "En Asunción y Ciudad del Este son comunes los arrebatos, los robos de celulares por motochorros y los carteristas. Se recomienda precaución en los departamentos del norte (Concepción, San Pedro y Amambay, frontera con Brasil) por el crimen organizado.",
+    "commonScams": [
+     "Motochorros que arrebatan el celular a los peatones",
+     "Electrónica falsa o reacondicionada vendida como nueva en Ciudad del Este",
+     "Cambistas callejeros en la frontera con malas tasas"
+    ],
+    "safeTravelTips": [
+     "No lleve el celular en la mano por la calle; use Bolt o Uber.",
+     "Evite viajes innecesarios a las zonas fronterizas del norte (Amambay, Concepción).",
+     "Beba mucha agua con el calor del verano (hasta 40 °C) y use repelente."
+    ],
+    "emergencyNumbers": {
+     "police": "911",
+     "ambulance": "141",
+     "general": "911"
+    },
+    "safetyScore": 55,
+    "safetyLevel": "Riesgo Moderado",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Buen 4G LTE en ciudades (5G iniciando en Asunción); débil en el Chaco",
+    "costPerGbUsd": "~0.50 - 2 $",
+    "esimAvailability": "Buena",
+    "bestCarriers": [
+     "Tigo",
+     "Personal",
+     "Claro"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Adecuado",
+    "costLevel": "Económico",
+    "singleTicketUsd": "0.30 - 0.50 $",
+    "dailyPassUsd": "Sin pase diario",
+    "popularRideApps": [
+     "Bolt",
+     "Uber",
+     "MUV"
+    ],
+    "taxiAdvice": "En Asunción se usan mucho Bolt, Uber y la app local MUV, y son baratos. Los buses urbanos se pagan con tarjeta (Jaha, Más) y van llenos; los interurbanos salen cómodos de la Terminal de Asunción."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "30 - 45 $",
+    "dailyBudgetMidrangeUsd": "70 - 120 $",
+    "budgetMealUsd": "4 - 8 $",
+    "coffeeUsd": "1.50 - 3 $",
+    "waterBottleUsd": "0.60 - 1 $",
+    "hostelDormUsd": "10 - 18 $",
+    "hotel3StarUsd": "40 - 75 $",
+    "flightCostIndex": "Moderado",
+    "flightTip": "No hay vuelos directos desde Turquía a Asunción (ASU); compare conexiones por São Paulo, Buenos Aires, Panamá o Madrid (Air Europa)."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Al conocerse se dan la mano; los amigos se saludan con un beso.",
+     "Acepte el tereré o mate que le ofrezcan; decir “gracias” al devolverlo significa que no quiere más.",
+     "La siesta es habitual; en pueblos pequeños las tiendas cierran de 12 a 15 h."
+    ],
+    "festivals": [
+     "Carnaval Encarnaceno (febrero)",
+     "San Juan Ára – caminata sobre brasas y juegos populares (24 de junio)",
+     "Peregrinación a la Virgen de Caacupé (8 de diciembre)"
+    ],
+    "lifestyle": "Una vida tranquila con el termo de tereré siempre a mano, asados de fin de semana y pasión por el fútbol. Es una sociedad bilingüe que mezcla guaraní y español (jopara)."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Misión jesuítica de La Santísima Trinidad del Paraná (UNESCO)",
+     "Misión de Jesús de Tavarangüe (UNESCO)",
+     "Represa de Itaipú",
+     "Saltos del Monday",
+     "Centro histórico de Asunción y Loma San Jerónimo",
+     "Lago Ypacaraí, Areguá y San Bernardino"
+    ],
+    "bestSeasons": "Abril – octubre (más fresco y seco; inviernos suaves de junio a agosto); de diciembre a febrero hace mucho calor",
+    "travelStyleTip": "Paraguay es uno de los países menos turísticos y más baratos de Sudamérica; empiece en Asunción y vaya en bus al este, a Itaipú, y al sur, a las misiones jesuíticas."
+   },
+   "religion": {
+    "primaryReligions": "Católica (~85 %), protestante y evangélica (~8 %), comunidades menonitas y otras",
+    "respectNorms": "Guarde silencio y vista con recato en las iglesias; respete a los peregrinos en Caacupé.",
+    "sacredSites": [
+     "Basílica de Caacupé",
+     "Catedral Metropolitana de Asunción",
+     "Ruinas de la iglesia de la misión de Trinidad"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Español y guaraní (ambos oficiales); la mayoría de la población habla guaraní.",
+    "englishProficiency": "Bajo; un español básico es casi imprescindible.",
+    "phrases": [
+     {
+      "phrase": "Mba’éichapa",
+      "meaning": "Hola, ¿cómo estás? (guaraní)",
+      "translation": "Hola, ¿cómo estás? (guaraní)",
+      "pronunciation": "mba-EY-sha-pa"
+     },
+     {
+      "phrase": "Iporã",
+      "meaning": "Bien / Lindo",
+      "translation": "Bien / Lindo",
+      "pronunciation": "ee-po-RAN"
+     },
+     {
+      "phrase": "Aguyje",
+      "meaning": "Gracias (guaraní)",
+      "translation": "Gracias (guaraní)",
+      "pronunciation": "ah-goo-DJEH"
+     },
+     {
+      "phrase": "¿Cuánto sale?",
+      "meaning": "¿Cuánto cuesta?",
+      "translation": "¿Cuánto cuesta?",
+      "pronunciation": "KWAN-toh SAH-leh"
+     },
+     {
+      "phrase": "Jaha",
+      "meaning": "¡Vamos!",
+      "translation": "¡Vamos!",
+      "pronunciation": "dja-HA"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "En tierras guaraníes los españoles fundaron Asunción en 1537. En los siglos XVII y XVIII las misiones jesuíticas crearon con los guaraníes una sociedad singular. Paraguay se independizó en 1811, perdió gran parte de su población en la Guerra de la Triple Alianza (1864–1870) y libró la Guerra del Chaco con Bolivia en 1932–35. Tras el régimen militar de 1954–1989 llegó la democracia.",
+    "milestones": [
+     "1537 – Fundación de Asunción",
+     "1811 – Independencia",
+     "1864–1870 – Guerra de la Triple Alianza",
+     "1984 – Itaipú comienza a generar energía"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Sopa paraguaya",
+     "Chipa guasu",
+     "Bori-bori"
+    ],
+    "traditionalDrinks": [
+     "Tereré (patrimonio de la UNESCO)",
+     "Caña paraguaya",
+     "Mosto"
+    ],
+    "streetFoodAndDesserts": [
+     "Chipa",
+     "Mbejú",
+     "Kosereva"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Augusto Roa Bastos (Premio Cervantes)",
+     "Agustín Barrios “Mangoré” (compositor de guitarra)",
+     "José Luis Chilavert (legendario arquero goleador)"
+    ],
+    "strongSectors": [
+     "Exportación de soja y carne",
+     "Hidroelectricidad (Itaipú, Yacyretá)",
+     "Comercio de reexportación y maquila"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Se paga en guaraníes con muchos ceros (100.000 Gs ≈ 13 $). En las ciudades son comunes las tarjetas y pagos QR; en el campo, efectivo; en Ciudad del Este se aceptan dólares.",
+    "tippingCulture": "En restaurantes es habitual un 10 %, pero no obligatorio.",
+    "economicPillars": "Soja, carne y agroexportación, exportación de energía hidroeléctrica, reexportación e industria ligera."
+   }
+  },
+  "itin": {
+   "routeName": "Tierra guaraní: Asunción, lago Ypacaraí, Ciudad del Este y Encarnación",
+   "routeSummary": "Ruta de 7 días desde la capital, Asunción, a los pueblos artesanos del lago Ypacaraí, al este hasta la gran represa de Itaipú y los Saltos del Monday, y al sur hasta las misiones jesuíticas (UNESCO) y Encarnación.",
+   "totalDays": 7,
+   "idealDurationText": "Ruta de 7 días",
+   "bestSeason": "Abril – octubre (más fresco y seco; inviernos suaves de junio a agosto); de diciembre a febrero hace mucho calor",
+   "transportMode": "Buses interurbanos + Bolt/Uber en las ciudades",
+   "paceLevel": "Equilibrado (cultura, naturaleza e historia)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Asunción (capital y centro histórico)",
+     "recommendedDuration": "2 días",
+     "durationBadge": "2 Días",
+     "highlights": [
+      "Panteón Nacional de los Héroes",
+      "Palacio de López",
+      "Casa de la Independencia",
+      "Barrio Loma San Jerónimo"
+     ],
+     "activities": [
+      "Pasee por la Costanera al atardecer.",
+      "Explore los productos locales del Mercado 4.",
+      "Coma un asado paraguayo en una parrilla."
+     ],
+     "foodAndDrinks": [
+      "Sopa paraguaya",
+      "Bori-bori",
+      "Tereré"
+     ],
+     "criticalTips": [
+      "Cuidado con los carteristas en el Mercado 4 y la terminal; guarde el celular.",
+      "No camine de noche por zonas ribereñas como la Chacarita."
+     ],
+     "mapsQuery": "Asunción, Paraguay"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Areguá y San Bernardino (lago Ypacaraí)",
+     "recommendedDuration": "1 día",
+     "durationBadge": "1 Día",
+     "highlights": [
+      "Talleres de cerámica de Areguá",
+      "Formaciones hexagonales del Cerro Koi",
+      "Costa del lago en San Bernardino",
+      "Ñandutí de Itauguá"
+     ],
+     "activities": [
+      "Compre cerámica en Areguá.",
+      "Vea tejer ñandutí en Itauguá.",
+      "Haga una parada en la Basílica de Caacupé."
+     ],
+     "foodAndDrinks": [
+      "Frutillas con crema (Areguá, julio – septiembre)",
+      "Chipa calentita",
+      "Mosto"
+     ],
+     "criticalTips": [
+      "La calidad del agua del Ypacaraí varía; consulte antes de bañarse.",
+      "Los fines de semana se llena de visitantes de Asunción; vaya entre semana."
+     ],
+     "mapsQuery": "Areguá, Paraguay"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Ciudad del Este (Itaipú y Saltos del Monday)",
+     "recommendedDuration": "2 días",
+     "durationBadge": "2 Días",
+     "highlights": [
+      "Visita panorámica a Itaipú",
+      "Saltos del Monday",
+      "Puente de la Amistad y zona comercial",
+      "Monumento Científico Moisés Bertoni"
+     ],
+     "activities": [
+      "Haga la visita panorámica gratuita de Itaipú.",
+      "Disfrute la vista desde el mirador del Monday.",
+      "Recorra los comercios de electrónica y perfumes."
+     ],
+     "foodAndDrinks": [
+      "Asado con mandioca",
+      "Empanadas",
+      "Tereré"
+     ],
+     "criticalTips": [
+      "Compre solo con factura y garantía; respete los límites aduaneros al cruzar a Brasil o Argentina.",
+      "Lleve la mochila delante en la zona comercial."
+     ],
+     "mapsQuery": "Ciudad del Este, Paraguay"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Encarnación y misiones jesuíticas",
+     "recommendedDuration": "2 días",
+     "durationBadge": "2 Días",
+     "highlights": [
+      "La Santísima Trinidad del Paraná (UNESCO)",
+      "Jesús de Tavarangüe (UNESCO)",
+      "Costanera y playa San José de Encarnación"
+     ],
+     "activities": [
+      "Vea el espectáculo nocturno de luces en Trinidad.",
+      "Descanse en la playa del río Paraná.",
+      "Vea el desfile de carnaval en febrero."
+     ],
+     "foodAndDrinks": [
+      "Surubí a la parrilla",
+      "Chipa guasu",
+      "Kosereva"
+     ],
+     "criticalTips": [
+      "En verano el calor del mediodía es fuerte; visite las misiones por la mañana o al atardecer.",
+      "El transporte entre misiones es escaso; contrate taxi o excursión."
+     ],
+     "mapsQuery": "Encarnación, Itapúa, Paraguay"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Sopa paraguaya",
+     "Chipa guasu",
+     "Asado"
+    ],
+    "drinks": [
+     "Tereré",
+     "Mate",
+     "Caña"
+    ],
+    "streetFoods": [
+     "Chipa",
+     "Mbejú",
+     "Empanadas"
+    ],
+    "diningAdvice": "Pruebe la chipa caliente que se vende por la mañana en paradas y rutas; el almuerzo es la comida principal y el menú del día es muy barato."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Protector solar, sombrero y repelente",
+     "Ropa ligera y transpirable",
+     "Chaqueta ligera en invierno (junio – agosto)",
+     "Riñonera segura para el celular"
+    ],
+    "safetyAndEtiquette": [
+     "No use el celular a la vista en la calle; cuidado con los motochorros.",
+     "Aceptar el tereré es un gesto de cortesía."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Predominan los enchufes tipo C de dos clavijas redondas; los turcos suelen encajar, aunque los Schuko gruesos pueden no entrar en algunos antiguos."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "En Asunción el agua se trata, pero por las cañerías viejas se recomienda embotellada; en el campo, solo embotellada.",
+    "vaccines": [
+     "Vacunas de rutina y hepatitis A",
+     "Fiebre tifoidea",
+     "Fiebre amarilla: recomendada para viajar fuera de la ciudad de Asunción",
+     "Protección contra mosquitos (dengue, chikungunya)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "141"
+   },
+   "tipping": {
+    "custom": "En restaurantes es habitual el 10 %.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "No es obligatoria; en taxis y cafés basta con redondear."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA 10 %; sin devolución general a turistas",
+    "minSpend": "No aplica",
+    "customsNote": "Paraguay no tiene devolución general del IVA a turistas y los precios ya son bajos. Para compras en Ciudad del Este rigen los límites de franquicia de los países vecinos al cruzar."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.50 - $2",
+    "topCarriers": [
+     "Tigo",
+     "Personal",
+     "Claro"
+    ],
+    "airportSimTrapWarning": "En el aeropuerto de Asunción casi no venden SIM; active una eSIM antes o compre una barata con pasaporte en una tienda Tigo/Personal."
+   },
+   "touristScams": [
+    {
+     "title": "Arrebato de motochorros",
+     "desc": "Dos personas en moto arrebatan celulares y bolsos a peatones o por la ventanilla del taxi.",
+     "tip": "No lleve el celular del lado de la calle y cierre las ventanillas."
+    },
+    {
+     "title": "Electrónica falsa",
+     "desc": "En Ciudad del Este venden copias o equipos reacondicionados como originales.",
+     "tip": "Compre en tiendas grandes y conocidas con factura y revise el contenido."
+    },
+    {
+     "title": "Cambistas en la frontera",
+     "desc": "Los cambistas dan malas tasas o le entregan de menos contando rápido.",
+     "tip": "Use casas de cambio oficiales o cajeros."
+    }
+   ]
+  }
+ },
+ "ru": {
+  "insights": {
+   "currency": "Парагвайский гуарани (PYG)",
+   "plugType": "Тип C (220 В, 50 Гц)",
+   "bestMonths": "Апрель – октябрь (прохладнее и суше; мягкая зима в июне – августе); декабрь – февраль очень жаркие",
+   "safety": {
+    "crimeRateSummary": "В Асунсьоне и Сьюдад‑дель‑Эсте распространены рывки сумок, кражи телефонов мотоциклистами («моточоррос») и карманники. В северных департаментах Консепсьон, Сан‑Педро и Амамбай (граница с Бразилией) нужна осторожность из‑за оргпреступности.",
+    "commonScams": [
+     "Мотоциклисты, выхватывающие телефоны у прохожих",
+     "Поддельная или восстановленная электроника под видом новой в Сьюдад‑дель‑Эсте",
+     "Уличные менялы на границе с плохим курсом"
+    ],
+    "safeTravelTips": [
+     "Не держите телефон в руке на улице; пользуйтесь Bolt или Uber.",
+     "Избегайте ненужных поездок в северные приграничные районы (Амамбай, Консепсьон).",
+     "Пейте больше в летнюю жару (до 40 °C) и пользуйтесь репеллентом."
+    ],
+    "emergencyNumbers": {
+     "police": "911",
+     "ambulance": "141",
+     "general": "911"
+    },
+    "safetyScore": 55,
+    "safetyLevel": "Умеренный Риск",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Хороший 4G LTE в городах (в Асунсьоне запускается 5G); в Чако слабо",
+    "costPerGbUsd": "~0.50 - 2 $",
+    "esimAvailability": "Хорошая",
+    "bestCarriers": [
+     "Tigo",
+     "Personal",
+     "Claro"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Удовлетворительное",
+    "costLevel": "Бюджетно",
+    "singleTicketUsd": "0.30 - 0.50 $",
+    "dailyPassUsd": "Проездного на день нет",
+    "popularRideApps": [
+     "Bolt",
+     "Uber",
+     "MUV"
+    ],
+    "taxiAdvice": "В Асунсьоне популярны и дёшевы Bolt, Uber и местное приложение MUV. Городские автобусы оплачиваются картой (Jaha, Más) и переполнены; удобные междугородние автобусы уходят с терминала Асунсьона."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "30 - 45 $",
+    "dailyBudgetMidrangeUsd": "70 - 120 $",
+    "budgetMealUsd": "4 - 8 $",
+    "coffeeUsd": "1.50 - 3 $",
+    "waterBottleUsd": "0.60 - 1 $",
+    "hostelDormUsd": "10 - 18 $",
+    "hotel3StarUsd": "40 - 75 $",
+    "flightCostIndex": "Умеренный",
+    "flightTip": "Прямых рейсов из Турции в Асунсьон (ASU) нет; сравните стыковки через Сан‑Паулу, Буэнос‑Айрес, Панаму или Мадрид (Air Europa)."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "При знакомстве пожимают руки, друзья целуются в щёку один раз.",
+     "Принимайте предложенный терере или мате; «gracias» при возврате означает, что вам больше не нужно.",
+     "Сиеста в обед — норма; в маленьких городах магазины закрываются с 12 до 15."
+    ],
+    "festivals": [
+     "Карнавал в Энкарнасьоне (февраль)",
+     "Сан‑Хуан‑Ара — хождение по углям и народные игры (24 июня)",
+     "Паломничество к Деве Каакупе (8 декабря)"
+    ],
+    "lifestyle": "Спокойная жизнь с вечным термосом терере, асадо по выходным и любовью к футболу. Общество двуязычное: гуарани и испанский часто смешивают (хопара)."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Иезуитская миссия Ла‑Сантисима‑Тринидад‑дель‑Парана (ЮНЕСКО)",
+     "Миссия Хесус‑де‑Таварангуэ (ЮНЕСКО)",
+     "Плотина Итайпу",
+     "Водопад Сальтос‑дель‑Мондай",
+     "Исторический Асунсьон и квартал Лома‑Сан‑Херонимо",
+     "Озеро Ипакарай, Арегуа и Сан‑Бернардино"
+    ],
+    "bestSeasons": "Апрель – октябрь (прохладнее и суше; мягкая зима в июне – августе); декабрь – февраль очень жаркие",
+    "travelStyleTip": "Парагвай — одна из самых нетуристических и дешёвых стран Южной Америки; начните с Асунсьона и на автобусах поезжайте на восток к Итайпу и на юг к иезуитским миссиям."
+   },
+   "religion": {
+    "primaryReligions": "Католики (~85 %), протестанты и евангелисты (~8 %), меннониты и другие",
+    "respectNorms": "В церквях соблюдайте тишину и скромный вид; уважайте паломников в дни Каакупе.",
+    "sacredSites": [
+     "Базилика Каакупе",
+     "Кафедральный собор Асунсьона",
+     "Руины церкви иезуитской миссии Тринидад"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Испанский и гуарани (оба официальные); большинство населения говорит на гуарани.",
+    "englishProficiency": "Низкий; базовый испанский почти обязателен.",
+    "phrases": [
+     {
+      "phrase": "Mba’éichapa",
+      "meaning": "Привет, как дела? (гуарани)",
+      "translation": "Привет, как дела? (гуарани)",
+      "pronunciation": "mba-EY-sha-pa"
+     },
+     {
+      "phrase": "Iporã",
+      "meaning": "Хорошо",
+      "translation": "Хорошо",
+      "pronunciation": "ee-po-RAN"
+     },
+     {
+      "phrase": "Aguyje",
+      "meaning": "Спасибо (гуарани)",
+      "translation": "Спасибо (гуарани)",
+      "pronunciation": "ah-goo-DJEH"
+     },
+     {
+      "phrase": "¿Cuánto sale?",
+      "meaning": "Сколько стоит?",
+      "translation": "Сколько стоит?",
+      "pronunciation": "KWAN-toh SAH-leh"
+     },
+     {
+      "phrase": "Jaha",
+      "meaning": "Пошли!",
+      "translation": "Пошли!",
+      "pronunciation": "dja-HA"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "На землях гуарани испанцы в 1537 году основали Асунсьон. В XVII–XVIII веках иезуитские миссии создали с гуарани уникальное общество. Парагвай стал независимым в 1811 году, потерял большую часть населения в войне Тройственного союза (1864–1870) и воевал с Боливией в Чакской войне 1932–35 годов. После военного режима 1954–1989 годов страна перешла к демократии.",
+    "milestones": [
+     "1537 – основание Асунсьона",
+     "1811 – независимость",
+     "1864–1870 – война Тройственного союза",
+     "1984 – плотина Итайпу начинает вырабатывать энергию"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Сопа парагвайя (кукурузный пирог с сыром)",
+     "Чипа гуасу (суфле из свежей кукурузы)",
+     "Бори-бори (куриный суп с кукурузными клёцками)"
+    ],
+    "traditionalDrinks": [
+     "Терере (холодный мате; наследие ЮНЕСКО)",
+     "Канья (тростниковый спирт)",
+     "Мосто (свежий сок сахарного тростника)"
+    ],
+    "streetFoodAndDesserts": [
+     "Чипа (булочка из маниоки с сыром)",
+     "Мбежу (лепёшка из маниоки с сыром)",
+     "Косерева (сладость из горького апельсина)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Аугусто Роа Бастос (писатель, лауреат премии Сервантеса)",
+     "Агустин Барриос «Мангоре» (композитор для классической гитары)",
+     "Хосе Луис Чилаверт (легендарный забивающий вратарь)"
+    ],
+    "strongSectors": [
+     "Экспорт сои и говядины",
+     "Гидроэнергетика (Итайпу, Ясирета)",
+     "Реэкспортная торговля и производство «макила»"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Платят в гуарани с множеством нулей (100 000 Gs ≈ 13 $). В городах распространены карты и QR-оплата, в глубинке — наличные; в Сьюдад‑дель‑Эсте берут доллары.",
+    "tippingCulture": "В ресторанах принято 10 %, но это не обязательно.",
+    "economicPillars": "Соя, говядина и агроэкспорт, экспорт гидроэлектроэнергии, реэкспорт и лёгкая промышленность."
+   }
+  },
+  "itin": {
+   "routeName": "Земля гуарани: Асунсьон, озеро Ипакарай, Сьюдад‑дель‑Эсте и Энкарнасьон",
+   "routeSummary": "Маршрут на 7 дней: из столицы Асунсьона к ремесленным городкам у озера Ипакарай, на восток к гигантской плотине Итайпу и водопаду Мондай, затем на юг к иезуитским миссиям ЮНЕСКО и Энкарнасьону.",
+   "totalDays": 7,
+   "idealDurationText": "Маршрут на 7 дней",
+   "bestSeason": "Апрель – октябрь (прохладнее и суше; мягкая зима в июне – августе); декабрь – февраль очень жаркие",
+   "transportMode": "Междугородние автобусы + Bolt/Uber в городах",
+   "paceLevel": "Сбалансированный (культура, природа и история)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Остановка 1: Асунсьон (столица и исторический центр)",
+     "recommendedDuration": "2 дня",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Национальный пантеон героев",
+      "Дворец Лопеса",
+      "Дом независимости",
+      "Квартал Лома‑Сан‑Херонимо"
+     ],
+     "activities": [
+      "Прогуляйтесь по набережной Костанера на закате.",
+      "Изучите местные продукты на рынке Меркадо‑4.",
+      "Отведайте парагвайское асадо в паррилье."
+     ],
+     "foodAndDrinks": [
+      "Сопа парагвайя",
+      "Бори-бори",
+      "Терере"
+     ],
+     "criticalTips": [
+      "Остерегайтесь карманников на Меркадо‑4 и автовокзале; держите телефон в кармане.",
+      "Не гуляйте ночью по прибрежным районам вроде Чакариты."
+     ],
+     "mapsQuery": "Asunción, Paraguay"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Остановка 2: Арегуа и Сан‑Бернардино (озеро Ипакарай)",
+     "recommendedDuration": "1 день",
+     "durationBadge": "1 день",
+     "highlights": [
+      "Керамические мастерские Арегуа",
+      "Шестигранные скалы Серро‑Кой",
+      "Берег озера в Сан‑Бернардино",
+      "Кружево ньяндути из Итауга"
+     ],
+     "activities": [
+      "Купите керамику в Арегуа.",
+      "Посмотрите, как плетут ньяндути в Итауга.",
+      "Загляните в базилику Каакупе."
+     ],
+     "foodAndDrinks": [
+      "Клубника со сливками (Арегуа, июль – сентябрь)",
+      "Тёплая чипа",
+      "Мосто"
+     ],
+     "criticalTips": [
+      "Качество воды в Ипакарае нестабильно — спросите местных перед купанием.",
+      "По выходным много отдыхающих из Асунсьона — езжайте в будни."
+     ],
+     "mapsQuery": "Areguá, Paraguay"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Остановка 3: Сьюдад‑дель‑Эсте (Итайпу и водопад Мондай)",
+     "recommendedDuration": "2 дня",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Обзорная экскурсия на плотину Итайпу",
+      "Сальтос‑дель‑Мондай",
+      "Мост Дружбы и торговый район",
+      "Парк-памятник Мойсеса Бертони"
+     ],
+     "activities": [
+      "Сходите на бесплатную обзорную экскурсию Итайпу.",
+      "Полюбуйтесь видом со смотровой площадки водопада Мондай.",
+      "Пройдитесь по рынкам электроники и парфюмерии."
+     ],
+     "foodAndDrinks": [
+      "Асадо с варёной маниокой",
+      "Эмпанадас",
+      "Терере"
+     ],
+     "criticalTips": [
+      "Покупайте только с чеком и гарантией; соблюдайте таможенные лимиты при въезде в Бразилию или Аргентину.",
+      "В толпе носите сумку спереди."
+     ],
+     "mapsQuery": "Ciudad del Este, Paraguay"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Остановка 4: Энкарнасьон и иезуитские миссии",
+     "recommendedDuration": "2 дня",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Ла‑Сантисима‑Тринидад‑дель‑Парана (ЮНЕСКО)",
+      "Хесус‑де‑Таварангуэ (ЮНЕСКО)",
+      "Набережная и пляж Сан‑Хосе в Энкарнасьоне"
+     ],
+     "activities": [
+      "Посмотрите вечернее световое шоу в миссии Тринидад.",
+      "Отдохните на песчаном пляже реки Парана.",
+      "В феврале посмотрите карнавальное шествие."
+     ],
+     "foodAndDrinks": [
+      "Речная рыба сурубим на гриле",
+      "Чипа гуасу",
+      "Косерева"
+     ],
+     "criticalTips": [
+      "Летом в полдень очень жарко — посещайте миссии утром или вечером.",
+      "Транспорт между миссиями ходит редко — возьмите такси или тур."
+     ],
+     "mapsQuery": "Encarnación, Itapúa, Paraguay"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Сопа парагвайя",
+     "Чипа гуасу",
+     "Асадо"
+    ],
+    "drinks": [
+     "Терере",
+     "Мате",
+     "Канья"
+    ],
+    "streetFoods": [
+     "Чипа",
+     "Мбежу",
+     "Эмпанадас"
+    ],
+    "diningAdvice": "Утром попробуйте горячую чипу на остановках и у дорог; обед — главный приём пищи, «меню дня» очень дешёвое."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Солнцезащитный крем, шляпа и репеллент",
+     "Лёгкая дышащая одежда",
+     "Лёгкая куртка зимой (июнь – август)",
+     "Надёжная поясная сумка для телефона"
+    ],
+    "safetyAndEtiquette": [
+     "Не пользуйтесь телефоном открыто на улице — берегитесь моточоррос.",
+     "Принять предложенный терере — знак вежливости."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Распространены розетки типа C с двумя круглыми штырями; турецкие вилки обычно подходят, но толстые «шуко» могут не войти в некоторые старые розетки."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "В Асунсьоне воду очищают, но из‑за старых труб лучше пить бутилированную; в сельской местности — только её.",
+    "vaccines": [
+     "Плановые прививки и гепатит A",
+     "Брюшной тиф",
+     "Жёлтая лихорадка: рекомендуется при поездках за пределы Асунсьона",
+     "Защита от комаров (денге, чикунгунья)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "141"
+   },
+   "tipping": {
+    "custom": "В ресторанах принято 10 %.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Чаевые не обязательны; в такси и кафе достаточно округлить."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA (НДС) 10 %; общего возврата туристам нет",
+    "minSpend": "Не применяется",
+    "customsNote": "В Парагвае нет общей системы возврата НДС туристам, цены и так низкие. При покупках в Сьюдад‑дель‑Эсте на границе действуют таможенные лимиты соседних стран."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.50 - $2",
+    "topCarriers": [
+     "Tigo",
+     "Personal",
+     "Claro"
+    ],
+    "airportSimTrapWarning": "В аэропорту Асунсьона SIM почти не продают; заранее установите eSIM или купите дешёвую SIM по паспорту в салоне Tigo/Personal в городе."
+   },
+   "touristScams": [
+    {
+     "title": "Рывок «моточоррос»",
+     "desc": "Двое на мотоцикле выхватывают телефоны и сумки у прохожих или через окно такси.",
+     "tip": "Не держите телефон со стороны дороги, окна в машине закрывайте."
+    },
+    {
+     "title": "Поддельная электроника",
+     "desc": "В Сьюдад‑дель‑Эсте копии и восстановленные устройства продают как оригинал.",
+     "tip": "Покупайте в крупных известных магазинах с чеком и проверяйте содержимое коробки."
+    },
+    {
+     "title": "Менялы на границе",
+     "desc": "Уличные менялы дают плохой курс или обсчитывают при быстром пересчёте.",
+     "tip": "Пользуйтесь официальными обменниками (casas de cambio) или банкоматами."
+    }
+   ]
+  }
+ }
+}

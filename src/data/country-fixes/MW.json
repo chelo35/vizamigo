@@ -1,0 +1,1892 @@
+{
+ "tr": {
+  "insights": {
+   "currency": "Malavi Kvaçası (MWK)",
+   "bestMonths": "Mayıs – Ekim (kurak sezon); haziran – ağustos serin, eylül – ekim sıcak ve safari için en iyi dönem; kasım – nisan yağmur mevsimi",
+   "safety": {
+    "safetyScore": 55,
+    "safetyLevel": "Orta Seviye",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60",
+    "crimeRateSummary": "“Afrika’nın Sıcak Kalbi” olarak bilinen misafirperver bir ülkedir; ancak Lilongwe ve Blantyre’de kapkaç, araç içi hırsızlık ve gece silahlı soygun görülür. Ekonomik sıkıntı, döviz ve akaryakıt kıtlığı zaman zaman gerginliğe yol açar; gösterilerden uzak durun.",
+    "commonScams": [
+     "Sokak döviz bozdurucularının sahte banknot veya eksik sayım yapması",
+     "Göl kıyısında “okul bağışı” veya sahte tur için para toplayanlar",
+     "Otobüs duraklarında bavul taşıma bahanesiyle hırsızlık"
+    ],
+    "safeTravelTips": [
+     "Hava karardıktan sonra şehirlerde yürümeyin ve şehirlerarası yolda gece seyahat etmeyin.",
+     "Yeterli nakit dolar getirin; kart ve ATM’ler güvenilmez olabilir, parayı yalnızca banka veya forex bürosunda bozdurun.",
+     "Malawi Gölü’nde bilharzia (şistozomiyaz) riski vardır; yüzdükten sonra doktorunuza danışarak tedavi planlayın."
+    ],
+    "emergencyNumbers": {
+     "police": "997",
+     "ambulance": "998",
+     "general": "997"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Lilongwe, Blantyre ve Mzuzu’da 4G iyi; göl kıyısı ve parklarda 3G veya zayıf",
+    "costPerGbUsd": "~1.00 - 2.50 $",
+    "esimAvailability": "Orta (uluslararası eSIM’ler roaming ile çalışır; yerel SIM daha ucuz)",
+    "bestCarriers": [
+     "Airtel Malawi",
+     "TNM",
+     "Airalo eSIM"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Zayıf (minibüsler ve yavaş otobüsler; akaryakıt kıtlığı)",
+    "costLevel": "Ekonomik",
+    "singleTicketUsd": "0.30 - 1.00 $ (şehir içi minibüs)",
+    "dailyPassUsd": "Yok (şoförlü araç: günlük 70 - 120 $)",
+    "popularRideApps": [
+     "Yaygın bir uygulama yok",
+     "Otel ve lodge taksileri",
+     "Kabaza (bisiklet/motor taksi)"
+    ],
+    "taxiAdvice": "Taksilerde taksimetre yoktur; fiyatı önceden pazarlıkla belirleyin veya otel aracılığıyla güvenilir şoför bulun. Kabaza kısa mesafede pratik ama kazalara açıktır, kask isteyin. Göl kıyısı rotası için şoförlü araç en rahatıdır; akaryakıt kıtlığında yolculuk planınıza pay bırakın."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "30 - 50 $",
+    "dailyBudgetMidrangeUsd": "90 - 160 $",
+    "budgetMealUsd": "3 - 6 $",
+    "coffeeUsd": "1.00 - 2.50 $",
+    "waterBottleUsd": "0.50 - 1.00 $",
+    "hostelDormUsd": "10 - 20 $",
+    "hotel3StarUsd": "50 - 100 $",
+    "flightCostIndex": "Yüksek (aktarmalı)",
+    "flightTip": "Lilongwe’ye (LLW) Türkiye’den genellikle Addis Ababa (Ethiopian), Nairobi (Kenya Airways) veya Johannesburg (Airlink) aktarmalı uçulur; Blantyre’e (BLZ) de bağlantılar vardır, rotayı açık çene (open-jaw) planlamak zaman kazandırır."
+   },
+   "plugType": "Tip G (230V, 50Hz)"
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Selamlaşma önemlidir; “Moni, muli bwanji?” diye hal hatır sormadan konuya girmeyin.",
+     "Bir şey verirken veya alırken iki eli ya da sağ eli kullanın; sol el tek başına kaba sayılır.",
+     "Kırsalda kadınların diz altı etek veya sarong (chitenje) giymesi saygı göstergesidir."
+    ],
+    "festivals": [
+     "Lake of Stars Festivali (Malawi Gölü, eylül – ekim)",
+     "Gule Wamkulu maskeli dansları (Chewa, UNESCO somut olmayan miras)",
+     "Bağımsızlık Günü (6 Temmuz)"
+    ],
+    "lifestyle": "Hayat kırsalda tarım ve göl balıkçılığı etrafında döner; günlük öğünün temeli nsima’dır. İnsanlar güler yüzlü ve sohbete açıktır."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Malawi Gölü Milli Parkı ve Cape Maclear (UNESCO)",
+     "Liwonde Milli Parkı (fil, gergedan, Shire Nehri safarisi)",
+     "Mulanje Dağı (Sapitwa zirvesi, 3.002 m)",
+     "Zomba Platosu",
+     "Nyika Platosu",
+     "Likoma Adası ve St Peter Katedrali"
+    ],
+    "bestSeasons": "Mayıs – Ekim",
+    "travelStyleTip": "Ülke küçük olduğundan göl, safari ve dağı tek seyahatte birleştirmek kolaydır; Lilongwe’den güneye inip Blantyre’den dönmek en verimli rotadır."
+   },
+   "religion": {
+    "primaryReligions": "Hristiyan ~%77 (Protestan çoğunluk, Katolik ~%17), Müslüman ~%14 (özellikle göl kıyısı ve güney), geleneksel inançlar",
+    "respectNorms": "Kilise ve camilere omuz ve diz kapalı girin; Gule Wamkulu törenlerini rehber izni olmadan fotoğraflamayın.",
+    "sacredSites": [
+     "St Michael and All Angels Kilisesi (Blantyre, 1891)",
+     "St Peter Katedrali (Likoma Adası)",
+     "Livingstonia misyon kasabası"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Resmî dil İngilizcedir; ulusal dil Chichewa (Nyanja) en yaygın konuşulan dildir. Kuzeyde Tumbuka, güneyde Yao da yaygındır.",
+    "englishProficiency": "Şehirlerde ve turizmde iyi; köylerde sınırlı.",
+    "phrases": [
+     {
+      "phrase": "Moni",
+      "meaning": "Merhaba",
+      "translation": "Merhaba",
+      "pronunciation": "MO-nee"
+     },
+     {
+      "phrase": "Muli bwanji?",
+      "meaning": "Nasılsınız?",
+      "translation": "Nasılsınız?",
+      "pronunciation": "MOO-lee BWAN-jee"
+     },
+     {
+      "phrase": "Ndili bwino",
+      "meaning": "İyiyim",
+      "translation": "İyiyim",
+      "pronunciation": "n-DEE-lee BWEE-no"
+     },
+     {
+      "phrase": "Zikomo (kwambiri)",
+      "meaning": "(Çok) teşekkürler",
+      "translation": "(Çok) teşekkürler",
+      "pronunciation": "zee-KO-mo (kwam-BEE-ree)"
+     },
+     {
+      "phrase": "Ndi zingati?",
+      "meaning": "Kaç para?",
+      "translation": "Kaç para?",
+      "pronunciation": "ndee zin-GAH-tee"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Bölgede 15. yüzyılda Chewa halkının Maravi Krallığı kuruldu; 19. yüzyılda köle ticareti yoğunlaştı ve David Livingstone’un 1859’daki gezileri misyonerleri bölgeye getirdi. 1891’de İngiliz himayesine giren Nyasaland, 6 Temmuz 1964’te Malavi adıyla bağımsız oldu. 1994’te çok partili sisteme geçildi.",
+    "milestones": [
+     "15. yy: Maravi Krallığı",
+     "1859: David Livingstone’un Malawi Gölü’ne ulaşması",
+     "1915: John Chilembwe ayaklanması",
+     "1964: Bağımsızlık (6 Temmuz)"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Nsima ve ndiwo (mısır lapası ve garnitür sos)",
+     "Chambo (Malawi Gölü tilapyası, ızgara veya kızartma)",
+     "Nkhwani (fıstıklı balkabağı yaprağı)"
+    ],
+    "traditionalDrinks": [
+     "Thobwa (mayalanmış mısır/darı içeceği)",
+     "Carlsberg “Green” (yerelde üretilen bira)",
+     "Malawi çayı (Thyolo ve Mulanje plantasyonları)"
+    ],
+    "streetFoodAndDesserts": [
+     "Mandasi (kızarmış hamur)",
+     "Közlenmiş mısır (chimanga)",
+     "Zitumbuwa (muzlu börek/pişi)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "John Chilembwe (1915 direniş lideri)",
+     "Hastings Kamuzu Banda (ilk cumhurbaşkanı)",
+     "Joyce Banda (ilk kadın cumhurbaşkanı)"
+    ],
+    "strongSectors": [
+     "Tütün (ana ihracat ürünü)",
+     "Çay, şeker ve baklagiller",
+     "Göl ve safari turizmi"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Nakit hâkimdir; kart yalnızca büyük otel ve lodge’larda geçer, ATM’ler (Standard Bank, National Bank) çoğu zaman Visa kabul eder ancak limitler düşüktür. Temiz, 2013 sonrası basım dolar getirin; resmî ve paralel kur arasında fark olabilir, yalnızca yasal bürolarda bozdurun. Airtel Money ve TNM Mpamba mobil ödemeleri yaygındır.",
+    "tippingCulture": "Restoranlarda %10 bahşiş beklenir; safari rehberi, şoför ve lodge personeli için ayrıca bahşiş geleneği vardır.",
+    "economicPillars": "Tarım (tütün, çay, şeker, mısır) ekonominin temelidir; turizm ve madencilik gelişmektedir."
+   }
+  },
+  "itin": {
+   "routeName": "Malavi Göl ve Safari Rotası: Lilongwe’den Mulanje’ye",
+   "routeSummary": "Başkent Lilongwe’den Malawi Gölü’nün berrak sularındaki Cape Maclear’a, Shire Nehri kıyısındaki Liwonde safarisine ve Zomba Platosu ile Mulanje Dağı’na uzanan, güneye doğru 9 günlük rota.",
+   "totalDays": 9,
+   "bestSeason": "Mayıs – Ekim",
+   "transportMode": "Şoförlü araç veya kiralık 4x4",
+   "paceLevel": "Dengeli (Göl + Safari + Doğa Yürüyüşü)",
+   "signatureGastronomy": {
+    "dishes": [
+     "Nsima",
+     "Chambo",
+     "Nkhwani"
+    ],
+    "drinks": [
+     "Thobwa",
+     "Carlsberg Green",
+     "Malawi çayı"
+    ],
+    "streetFoods": [
+     "Mandasi",
+     "Chimanga",
+     "Zitumbuwa"
+    ],
+    "diningAdvice": "Nsima geleneksel olarak sağ elle yuvarlanıp sosa batırılarak yenir; göl kıyısında günün taze chambo’sunu sorun. Çiğ salatalardan ve buzdan kaçının."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "G tipi (İngiliz) fiş adaptörü",
+     "Sıtma ilacı, sinek kovucu ve uzun kollu giysiler",
+     "Temiz, yeni basım ABD doları nakit",
+     "Dağ için polar ve yürüyüş ayakkabısı"
+    ],
+    "safetyAndEtiquette": [
+     "Gece yolculuk yapmayın ve parayı yalnızca yasal bürolarda bozdurun.",
+     "Selamlaşmaya zaman ayırın ve sağ elinizi kullanın."
+    ]
+   },
+   "idealDurationText": "9 Günlük Rota",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "1. Durak: Lilongwe (Başkent ve Pazarlar)",
+     "recommendedDuration": "1 Gün",
+     "durationBadge": "1 Gün",
+     "highlights": [
+      "Lilongwe Doğa Koruma Alanı ve yaban hayatı merkezi",
+      "Eski Şehir pazarı (Old Town Market)",
+      "Kamuzu Mozolesi"
+     ],
+     "activities": [
+      "Yaban hayatı merkezinde kurtarılan hayvanları görün.",
+      "Pazarda chitenje kumaşı ve oyma ahşap ürünlere bakın.",
+      "Para ve SIM işlerini başkentte halledin."
+     ],
+     "foodAndDrinks": [
+      "Nsima",
+      "Chambo",
+      "Mandasi"
+     ],
+     "criticalTips": [
+      "Akşam yürümeyin; lodge veya otelin taksisini kullanın.",
+      "Akaryakıt kıtlığına karşı şoförünüzle depo durumunu önceden konuşun."
+     ],
+     "mapsQuery": "Lilongwe, Malawi"
+    },
+    {
+     "stopNumber": 2,
+     "name": "2. Durak: Cape Maclear (Malawi Gölü Milli Parkı)",
+     "recommendedDuration": "3 Gün",
+     "durationBadge": "3 Gün",
+     "highlights": [
+      "Renkli cichlid balıklarıyla şnorkel",
+      "Thumbi Batı Adası",
+      "Otter Point kayalıkları",
+      "Göl üzerinde gün batımı"
+     ],
+     "activities": [
+      "Kano ile Thumbi Adası’na geçip şnorkel yapın.",
+      "Balıkçı köyünde pirogların dönüşünü izleyin.",
+      "Tepelere kısa bir yürüyüşle göl manzarası izleyin."
+     ],
+     "foodAndDrinks": [
+      "Izgara chambo",
+      "Usipa (küçük göl balığı)",
+      "Carlsberg Green"
+     ],
+     "criticalTips": [
+      "Bilharzia riski vardır; sazlık ve durgun kıyılardan uzak durun, dönüşte praziquantel tedavisini doktorunuza danışın.",
+      "Plajda “rehber” ve bağış toplayanlara para vermeden önce lodge’a danışın."
+     ],
+     "mapsQuery": "Cape Maclear, Malawi"
+    },
+    {
+     "stopNumber": 3,
+     "name": "3. Durak: Liwonde Milli Parkı (Shire Nehri Safarisi)",
+     "recommendedDuration": "2 Gün",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "Tekne safarisinde fil ve su aygırları",
+      "Kara gergedan ve yeniden yerleştirilen aslan ve çitalar",
+      "400’den fazla kuş türü"
+     ],
+     "activities": [
+      "Gün doğumunda Shire Nehri’nde tekne safarisi yapın.",
+      "Rehberli jeep safarisine katılın.",
+      "Rehberle yürüyüş safarisi yapın."
+     ],
+     "foodAndDrinks": [
+      "Lodge’da nsima ve keçi eti",
+      "Malawi çayı"
+     ],
+     "criticalTips": [
+      "Lodge dışında yürümeyin; geceleri su aygırları kampa yaklaşabilir.",
+      "Sıtma riski yüksektir; uzun kollu giyin ve cibinlik kullanın."
+     ],
+     "mapsQuery": "Liwonde National Park, Malawi"
+    },
+    {
+     "stopNumber": 4,
+     "name": "4. Durak: Zomba Platosu ve Mulanje Dağı (Dağlar ve Çay Bahçeleri)",
+     "recommendedDuration": "3 Gün",
+     "durationBadge": "3 Gün",
+     "highlights": [
+      "Zomba Platosu’ndaki Queen’s View ve şelaleler",
+      "Mulanje’de Likhubula şelalesi ve patikalar",
+      "Thyolo ve Mulanje çay plantasyonları",
+      "Mulanje sediri ormanları"
+     ],
+     "activities": [
+      "Zomba’da çilek ve ahududu tezgâhlarına uğrayıp platoda yürüyün.",
+      "Mulanje’de rehberle günübirlik veya kulübeli çok günlük yürüyüş yapın.",
+      "Bir çay fabrikasında tadım yapın."
+     ],
+     "foodAndDrinks": [
+      "Taze Zomba çilekleri",
+      "Malawi çayı",
+      "Zitumbuwa"
+     ],
+     "criticalTips": [
+      "Mulanje’de hava hızla değişir ve Sapitwa tırmanışı zorludur; mutlaka lisanslı rehber tutun.",
+      "Dönüş uçuşunu Blantyre’den (BLZ) planlayın."
+     ],
+     "mapsQuery": "Mulanje, Malawi"
+    }
+   ]
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "G tipi (üç köşeli pim, İngiliz) prizler; Türk fişleri için adaptör gerekir. Elektrik kesintileri (load-shedding) sıktır, powerbank getirin."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Musluk suyu içilmez; şişe veya filtrelenmiş su için. Göl suyunu içmeyin.",
+    "vaccines": [
+     "Sarıhumma (riskli ülkeden veya aktarmadan geliyorsanız sertifika istenir)",
+     "Hepatit A ve tifo",
+     "Sıtma profilaksisi (tüm ülkede, özellikle göl kıyısı)",
+     "Kuduz ve kolera (riske göre doktorunuza danışın)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "998"
+   },
+   "tipping": {
+    "custom": "Restoran ve safaride bahşiş beklenir.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Safari rehberine günlük ~10 $, lodge personeli için ortak bahşiş kutusuna ~5-10 $ uygun kabul edilir."
+   },
+   "taxFree": {
+    "vatRefundPercent": "%16,5 KDV; turistlere iade yok",
+    "minSpend": "Uygulanmaz",
+    "customsNote": "Turistlere KDV iadesi yoktur. Fildişi ve yaban hayatı ürünlerinin ihracı yasaktır; canlı akvaryum balığı (cichlid) çıkarmak izne tabidir."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "~1.00 - 2.50 $",
+    "topCarriers": [
+     "Airtel Malawi",
+     "TNM"
+    ],
+    "airportSimTrapWarning": "Yerel SIM, eSIM roaming’den çok daha ucuzdur; Airtel veya TNM SIM’ini havalimanında ya da şehirdeki resmî mağazada pasaportla kaydettirin. Göl kıyısında Airtel genellikle daha iyi çeker."
+   },
+   "touristScams": [
+    {
+     "title": "Sokak döviz bozdurucusu",
+     "desc": "Cazip kur vaat edip sahte veya eksik banknot verirler.",
+     "tip": "Yalnızca banka veya lisanslı forex bürosunda bozdurun."
+    },
+    {
+     "title": "Sahte bağış ve tur",
+     "desc": "Göl kıyısında okul veya kulüp için bağış ya da ön ödemeli tekne turu isteyenler çıkabilir.",
+     "tip": "Bağış ve turları lodge üzerinden ayarlayın; ön ödeme yapmayın."
+    }
+   ]
+  }
+ },
+ "en": {
+  "insights": {
+   "currency": "Malawian Kwacha (MWK)",
+   "bestMonths": "May – October (dry season); June – August is cool, September – October is hot and best for safari; November – April is the rainy season",
+   "safety": {
+    "safetyScore": 55,
+    "safetyLevel": "Moderate",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60",
+    "crimeRateSummary": "Known as the “Warm Heart of Africa”, Malawi is hospitable, but bag-snatching, theft from cars and armed robbery at night occur in Lilongwe and Blantyre. Economic hardship and shortages of foreign currency and fuel occasionally cause tension; avoid demonstrations.",
+    "commonScams": [
+     "Street money changers passing fake notes or short-counting",
+     "People collecting money for “school donations” or fake tours on the lakeshore",
+     "Theft disguised as help with luggage at bus stations"
+    ],
+    "safeTravelTips": [
+     "Do not walk in cities after dark and avoid intercity road travel at night.",
+     "Bring enough US dollar cash; cards and ATMs can be unreliable, so exchange only at banks or forex bureaux.",
+     "Lake Malawi carries a bilharzia (schistosomiasis) risk; consult your doctor about treatment after swimming."
+    ],
+    "emergencyNumbers": {
+     "police": "997",
+     "ambulance": "998",
+     "general": "997"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Good 4G in Lilongwe, Blantyre and Mzuzu; 3G or weak on the lakeshore and in parks",
+    "costPerGbUsd": "~1.00 - 2.50 $",
+    "esimAvailability": "Moderate (international eSIMs work via roaming; a local SIM is cheaper)",
+    "bestCarriers": [
+     "Airtel Malawi",
+     "TNM",
+     "Airalo eSIM"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Poor (minibuses and slow coaches; fuel shortages)",
+    "costLevel": "Budget-friendly",
+    "singleTicketUsd": "0.30 - 1.00 $ (city minibus)",
+    "dailyPassUsd": "None (car with driver: 70 - 120 $ per day)",
+    "popularRideApps": [
+     "No widely used app",
+     "Hotel and lodge taxis",
+     "Kabaza (bicycle/motorbike taxi)"
+    ],
+    "taxiAdvice": "Taxis have no meters; negotiate the fare in advance or find a trusted driver through your hotel. Kabaza is handy for short trips but accident-prone, so ask for a helmet. A car with driver is easiest for the lakeshore route; build in buffer time during fuel shortages."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "30 - 50 $",
+    "dailyBudgetMidrangeUsd": "90 - 160 $",
+    "budgetMealUsd": "3 - 6 $",
+    "coffeeUsd": "1.00 - 2.50 $",
+    "waterBottleUsd": "0.50 - 1.00 $",
+    "hostelDormUsd": "10 - 20 $",
+    "hotel3StarUsd": "50 - 100 $",
+    "flightCostIndex": "High (with connections)",
+    "flightTip": "From Turkey, Lilongwe (LLW) is usually reached via Addis Ababa (Ethiopian), Nairobi (Kenya Airways) or Johannesburg (Airlink); Blantyre (BLZ) also has connections, and an open-jaw ticket saves time."
+   },
+   "plugType": "Type G (230V, 50Hz)"
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Greetings matter; ask “Moni, muli bwanji?” before getting to the point.",
+     "Give and receive with both hands or the right hand; using the left alone is rude.",
+     "In rural areas, women wearing skirts below the knee or a sarong (chitenje) is a sign of respect."
+    ],
+    "festivals": [
+     "Lake of Stars Festival (Lake Malawi, September – October)",
+     "Gule Wamkulu masked dances (Chewa, UNESCO intangible heritage)",
+     "Independence Day (6 July)"
+    ],
+    "lifestyle": "Rural life revolves around farming and lake fishing, and nsima is the basis of every meal. People are warm and open to conversation."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Lake Malawi National Park and Cape Maclear (UNESCO)",
+     "Liwonde National Park (elephants, rhinos, Shire River safari)",
+     "Mount Mulanje (Sapitwa peak, 3,002 m)",
+     "Zomba Plateau",
+     "Nyika Plateau",
+     "Likoma Island and St Peter’s Cathedral"
+    ],
+    "bestSeasons": "May – October",
+    "travelStyleTip": "The country is small, so combining lake, safari and mountains in one trip is easy; heading south from Lilongwe and flying out of Blantyre is the most efficient route."
+   },
+   "religion": {
+    "primaryReligions": "Christian ~77% (Protestant majority, Catholic ~17%), Muslim ~14% (especially the lakeshore and south), traditional beliefs",
+    "respectNorms": "Enter churches and mosques with shoulders and knees covered; do not photograph Gule Wamkulu ceremonies without permission.",
+    "sacredSites": [
+     "St Michael and All Angels Church (Blantyre, 1891)",
+     "St Peter’s Cathedral (Likoma Island)",
+     "Livingstonia mission town"
+    ]
+   },
+   "language": {
+    "officialLanguages": "English is the official language; the national language Chichewa (Nyanja) is the most widely spoken. Tumbuka in the north and Yao in the south are also common.",
+    "englishProficiency": "Good in cities and tourism; limited in villages.",
+    "phrases": [
+     {
+      "phrase": "Moni",
+      "meaning": "Hello",
+      "translation": "Hello",
+      "pronunciation": "MO-nee"
+     },
+     {
+      "phrase": "Muli bwanji?",
+      "meaning": "How are you?",
+      "translation": "How are you?",
+      "pronunciation": "MOO-lee BWAN-jee"
+     },
+     {
+      "phrase": "Ndili bwino",
+      "meaning": "I am fine",
+      "translation": "I am fine",
+      "pronunciation": "n-DEE-lee BWEE-no"
+     },
+     {
+      "phrase": "Zikomo (kwambiri)",
+      "meaning": "Thank you (very much)",
+      "translation": "Thank you (very much)",
+      "pronunciation": "zee-KO-mo (kwam-BEE-ree)"
+     },
+     {
+      "phrase": "Ndi zingati?",
+      "meaning": "How much is it?",
+      "translation": "How much is it?",
+      "pronunciation": "ndee zin-GAH-tee"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "The Chewa people’s Maravi Kingdom arose here in the 15th century; the slave trade intensified in the 19th century, and David Livingstone’s travels in 1859 brought missionaries. Nyasaland became a British protectorate in 1891 and gained independence as Malawi on 6 July 1964. A multi-party system was introduced in 1994.",
+    "milestones": [
+     "15th century: Maravi Kingdom",
+     "1859: David Livingstone reaches Lake Malawi",
+     "1915: John Chilembwe uprising",
+     "1964: Independence (6 July)"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Nsima with ndiwo (maize porridge with relish)",
+     "Chambo (Lake Malawi tilapia, grilled or fried)",
+     "Nkhwani (pumpkin leaves with peanuts)"
+    ],
+    "traditionalDrinks": [
+     "Thobwa (fermented maize/millet drink)",
+     "Carlsberg “Green” (locally brewed beer)",
+     "Malawi tea (Thyolo and Mulanje estates)"
+    ],
+    "streetFoodAndDesserts": [
+     "Mandasi (fried dough)",
+     "Roasted maize (chimanga)",
+     "Zitumbuwa (banana fritters)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "John Chilembwe (1915 resistance leader)",
+     "Hastings Kamuzu Banda (first president)",
+     "Joyce Banda (first female president)"
+    ],
+    "strongSectors": [
+     "Tobacco (main export)",
+     "Tea, sugar and pulses",
+     "Lake and safari tourism"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Cash dominates; cards work only at larger hotels and lodges, and ATMs (Standard Bank, National Bank) usually take Visa but with low limits. Bring clean post-2013 dollar notes; the official and parallel rates can differ, so exchange only at legal bureaux. Airtel Money and TNM Mpamba mobile money are widespread.",
+    "tippingCulture": "A 10% tip is expected in restaurants; tipping safari guides, drivers and lodge staff is also customary.",
+    "economicPillars": "Agriculture (tobacco, tea, sugar, maize) is the backbone of the economy; tourism and mining are growing."
+   }
+  },
+  "itin": {
+   "routeName": "Malawi Lake and Safari Route: Lilongwe to Mulanje",
+   "routeSummary": "A 9-day route heading south from the capital Lilongwe to Cape Maclear on the clear waters of Lake Malawi, a safari at Liwonde on the Shire River, then Zomba Plateau and Mount Mulanje.",
+   "totalDays": 9,
+   "bestSeason": "May – October",
+   "transportMode": "Car with driver or rental 4x4",
+   "paceLevel": "Balanced (Lake + Safari + Hiking)",
+   "signatureGastronomy": {
+    "dishes": [
+     "Nsima",
+     "Chambo",
+     "Nkhwani"
+    ],
+    "drinks": [
+     "Thobwa",
+     "Carlsberg Green",
+     "Malawi tea"
+    ],
+    "streetFoods": [
+     "Mandasi",
+     "Chimanga",
+     "Zitumbuwa"
+    ],
+    "diningAdvice": "Nsima is traditionally rolled with the right hand and dipped in relish; on the lakeshore ask for the day’s fresh chambo. Avoid raw salads and ice."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Type G (British) plug adapter",
+     "Malaria tablets, repellent and long-sleeved clothes",
+     "Clean, recent-issue US dollar cash",
+     "Fleece and hiking boots for the mountains"
+    ],
+    "safetyAndEtiquette": [
+     "Do not travel at night and change money only at legal bureaux.",
+     "Take time to greet people and use your right hand."
+    ]
+   },
+   "idealDurationText": "9-Day Itinerary",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stop 1: Lilongwe (Capital and Markets)",
+     "recommendedDuration": "1 Day",
+     "durationBadge": "1 Day",
+     "highlights": [
+      "Lilongwe Wildlife Centre and nature sanctuary",
+      "Old Town Market",
+      "Kamuzu Mausoleum"
+     ],
+     "activities": [
+      "See rescued animals at the wildlife centre.",
+      "Browse chitenje fabric and woodcarvings at the market.",
+      "Sort out cash and SIM cards in the capital."
+     ],
+     "foodAndDrinks": [
+      "Nsima",
+      "Chambo",
+      "Mandasi"
+     ],
+     "criticalTips": [
+      "Do not walk in the evening; use your lodge or hotel taxi.",
+      "Discuss fuel with your driver in advance in case of shortages."
+     ],
+     "mapsQuery": "Lilongwe, Malawi"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stop 2: Cape Maclear (Lake Malawi National Park)",
+     "recommendedDuration": "3 Days",
+     "durationBadge": "3 Days",
+     "highlights": [
+      "Snorkelling with colourful cichlids",
+      "Thumbi West Island",
+      "Otter Point rocks",
+      "Sunset over the lake"
+     ],
+     "activities": [
+      "Kayak to Thumbi Island and snorkel.",
+      "Watch dugout canoes return to the fishing village.",
+      "Take a short hike up the hills for lake views."
+     ],
+     "foodAndDrinks": [
+      "Grilled chambo",
+      "Usipa (small lake fish)",
+      "Carlsberg Green"
+     ],
+     "criticalTips": [
+      "There is a bilharzia risk; avoid reedy and still shores and ask your doctor about praziquantel treatment on your return.",
+      "Check with your lodge before paying beach “guides” or donation collectors."
+     ],
+     "mapsQuery": "Cape Maclear, Malawi"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stop 3: Liwonde National Park (Shire River Safari)",
+     "recommendedDuration": "2 Days",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "Elephants and hippos on a boat safari",
+      "Black rhino and reintroduced lions and cheetahs",
+      "Over 400 bird species"
+     ],
+     "activities": [
+      "Do a sunrise boat safari on the Shire River.",
+      "Join a guided game drive.",
+      "Go on a walking safari with a ranger."
+     ],
+     "foodAndDrinks": [
+      "Nsima with goat at the lodge",
+      "Malawi tea"
+     ],
+     "criticalTips": [
+      "Do not walk outside the lodge alone; hippos may come close to camp at night.",
+      "Malaria risk is high; wear long sleeves and use a mosquito net."
+     ],
+     "mapsQuery": "Liwonde National Park, Malawi"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Stop 4: Zomba Plateau and Mount Mulanje (Mountains and Tea Estates)",
+     "recommendedDuration": "3 Days",
+     "durationBadge": "3 Days",
+     "highlights": [
+      "Queen’s View and waterfalls on Zomba Plateau",
+      "Likhubula waterfall and trails at Mulanje",
+      "Thyolo and Mulanje tea estates",
+      "Mulanje cedar forests"
+     ],
+     "activities": [
+      "Stop at the berry stalls and hike on Zomba Plateau.",
+      "Hike Mulanje with a guide, as a day trip or a multi-day hut trek.",
+      "Join a tasting at a tea factory."
+     ],
+     "foodAndDrinks": [
+      "Fresh Zomba strawberries",
+      "Malawi tea",
+      "Zitumbuwa"
+     ],
+     "criticalTips": [
+      "Weather changes fast on Mulanje and the Sapitwa climb is tough; always hire a licensed guide.",
+      "Plan your return flight from Blantyre (BLZ)."
+     ],
+     "mapsQuery": "Mulanje, Malawi"
+    }
+   ]
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Type G sockets (three rectangular pins, British); Turkish/European plugs need an adapter. Power cuts (load-shedding) are frequent, so bring a power bank."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Tap water is not drinkable; drink bottled or filtered water. Never drink lake water.",
+    "vaccines": [
+     "Yellow fever (certificate required if arriving from or transiting a risk country)",
+     "Hepatitis A and typhoid",
+     "Malaria prophylaxis (nationwide, especially the lakeshore)",
+     "Rabies and cholera (ask your doctor depending on risk)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "998"
+   },
+   "tipping": {
+    "custom": "Tips are expected in restaurants and on safari.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "About 10 $ per day for a safari guide and 5-10 $ per day in the lodge’s shared staff box is considered fair."
+   },
+   "taxFree": {
+    "vatRefundPercent": "16.5% VAT; no refund for tourists",
+    "minSpend": "Not applicable",
+    "customsNote": "There is no VAT refund for tourists. Exporting ivory and wildlife products is prohibited; taking live aquarium fish (cichlids) out requires a permit."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "~1.00 - 2.50 $",
+    "topCarriers": [
+     "Airtel Malawi",
+     "TNM"
+    ],
+    "airportSimTrapWarning": "A local SIM is far cheaper than eSIM roaming; register an Airtel or TNM SIM with your passport at the airport or an official shop in town. Airtel usually has better coverage on the lakeshore."
+   },
+   "touristScams": [
+    {
+     "title": "Street money changer",
+     "desc": "They promise attractive rates but hand over fake or short-counted notes.",
+     "tip": "Change only at banks or licensed forex bureaux."
+    },
+    {
+     "title": "Fake donation and tour",
+     "desc": "On the lakeshore, people may ask for donations for a school or club or prepayment for a boat trip.",
+     "tip": "Arrange donations and tours through your lodge; do not prepay."
+    }
+   ]
+  }
+ },
+ "de": {
+  "insights": {
+   "currency": "Malawi-Kwacha (MWK)",
+   "bestMonths": "Mai – Oktober (Trockenzeit); Juni – August kühl, September – Oktober heiß und ideal für Safaris; November – April Regenzeit",
+   "safety": {
+    "safetyScore": 55,
+    "safetyLevel": "Mäßiges Risiko",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60",
+    "crimeRateSummary": "Malawi gilt als „warmes Herz Afrikas“ und ist gastfreundlich, doch in Lilongwe und Blantyre gibt es Taschenraub, Autoaufbrüche und nächtliche bewaffnete Überfälle. Wirtschaftliche Not sowie Devisen- und Treibstoffmangel sorgen zeitweise für Spannungen; meiden Sie Demonstrationen.",
+    "commonScams": [
+     "Straßenwechsler mit Falschgeld oder Fehlzählungen",
+     "Am Seeufer wird für „Schulspenden“ oder falsche Touren Geld gesammelt",
+     "Diebstahl unter dem Vorwand der Gepäckhilfe an Busbahnhöfen"
+    ],
+    "safeTravelTips": [
+     "Gehen Sie in Städten nach Einbruch der Dunkelheit nicht zu Fuß und meiden Sie nächtliche Überlandfahrten.",
+     "Bringen Sie genug US-Dollar mit; Karten und Geldautomaten sind unzuverlässig – tauschen Sie nur bei Banken oder Wechselstuben.",
+     "Im Malawisee besteht Bilharziose-Risiko; besprechen Sie nach dem Baden eine Behandlung mit Ihrem Arzt."
+    ],
+    "emergencyNumbers": {
+     "police": "997",
+     "ambulance": "998",
+     "general": "997"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Gutes 4G in Lilongwe, Blantyre und Mzuzu; am Seeufer und in Parks 3G oder schwach",
+    "costPerGbUsd": "~1.00 - 2.50 $",
+    "esimAvailability": "Mittel (internationale eSIMs per Roaming; lokale SIM günstiger)",
+    "bestCarriers": [
+     "Airtel Malawi",
+     "TNM",
+     "Airalo eSIM"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Schwach (Minibusse und langsame Busse; Treibstoffmangel)",
+    "costLevel": "Günstig",
+    "singleTicketUsd": "0.30 - 1.00 $ (Stadt-Minibus)",
+    "dailyPassUsd": "Keiner (Auto mit Fahrer: 70 - 120 $ pro Tag)",
+    "popularRideApps": [
+     "Keine verbreitete App",
+     "Hotel- und Lodge-Taxis",
+     "Kabaza (Fahrrad-/Mototaxi)"
+    ],
+    "taxiAdvice": "Taxis haben kein Taxameter; verhandeln Sie vorher oder lassen Sie das Hotel einen zuverlässigen Fahrer besorgen. Kabaza ist für kurze Strecken praktisch, aber unfallträchtig – Helm verlangen. Für die Seeuferroute ist ein Auto mit Fahrer am bequemsten; bei Treibstoffmangel Puffer einplanen."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "30 - 50 $",
+    "dailyBudgetMidrangeUsd": "90 - 160 $",
+    "budgetMealUsd": "3 - 6 $",
+    "coffeeUsd": "1.00 - 2.50 $",
+    "waterBottleUsd": "0.50 - 1.00 $",
+    "hostelDormUsd": "10 - 20 $",
+    "hotel3StarUsd": "50 - 100 $",
+    "flightCostIndex": "Hoch (mit Umstieg)",
+    "flightTip": "Lilongwe (LLW) erreicht man meist über Addis Abeba (Ethiopian), Nairobi (Kenya Airways) oder Johannesburg (Airlink); auch Blantyre (BLZ) ist angebunden – ein Gabelflug spart Zeit."
+   },
+   "plugType": "Typ G (230V, 50Hz)"
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Begrüßungen sind wichtig; fragen Sie „Moni, muli bwanji?“, bevor Sie zur Sache kommen.",
+     "Geben und nehmen Sie mit beiden Händen oder der rechten; nur die linke gilt als unhöflich.",
+     "Auf dem Land zeigen Frauen mit Röcken unter dem Knie oder einem Wickeltuch (Chitenje) Respekt."
+    ],
+    "festivals": [
+     "Lake of Stars Festival (Malawisee, September – Oktober)",
+     "Maskentänze Gule Wamkulu (Chewa, immaterielles UNESCO-Erbe)",
+     "Unabhängigkeitstag (6. Juli)"
+    ],
+    "lifestyle": "Das Landleben dreht sich um Ackerbau und Fischfang im See, Grundlage jeder Mahlzeit ist Nsima. Die Menschen sind herzlich und gesprächsfreudig."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Lake-Malawi-Nationalpark und Cape Maclear (UNESCO)",
+     "Liwonde-Nationalpark (Elefanten, Nashörner, Shire-Flusssafari)",
+     "Mulanje-Massiv (Gipfel Sapitwa, 3.002 m)",
+     "Zomba-Plateau",
+     "Nyika-Plateau",
+     "Insel Likoma und St.-Peters-Kathedrale"
+    ],
+    "bestSeasons": "Mai – Oktober",
+    "travelStyleTip": "Das Land ist klein, See, Safari und Berge lassen sich leicht kombinieren; von Lilongwe nach Süden und ab Blantyre zurückfliegen ist am effizientesten."
+   },
+   "religion": {
+    "primaryReligions": "Christen ~77 % (protestantische Mehrheit, Katholiken ~17 %), Muslime ~14 % (vor allem Seeufer und Süden), traditionelle Religionen",
+    "respectNorms": "Betreten Sie Kirchen und Moscheen mit bedeckten Schultern und Knien; fotografieren Sie Gule-Wamkulu-Zeremonien nicht ohne Erlaubnis.",
+    "sacredSites": [
+     "Kirche St Michael and All Angels (Blantyre, 1891)",
+     "St.-Peters-Kathedrale (Insel Likoma)",
+     "Missionsstadt Livingstonia"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Amtssprache ist Englisch; die Nationalsprache Chichewa (Nyanja) ist am weitesten verbreitet. Im Norden Tumbuka, im Süden Yao.",
+    "englishProficiency": "Gut in Städten und im Tourismus; in Dörfern begrenzt.",
+    "phrases": [
+     {
+      "phrase": "Moni",
+      "meaning": "Hallo",
+      "translation": "Hallo",
+      "pronunciation": "MO-nee"
+     },
+     {
+      "phrase": "Muli bwanji?",
+      "meaning": "Wie geht es Ihnen?",
+      "translation": "Wie geht es Ihnen?",
+      "pronunciation": "MOO-lee BWAN-jee"
+     },
+     {
+      "phrase": "Ndili bwino",
+      "meaning": "Mir geht es gut",
+      "translation": "Mir geht es gut",
+      "pronunciation": "n-DEE-lee BWEE-no"
+     },
+     {
+      "phrase": "Zikomo (kwambiri)",
+      "meaning": "Danke (sehr)",
+      "translation": "Danke (sehr)",
+      "pronunciation": "zee-KO-mo (kwam-BEE-ree)"
+     },
+     {
+      "phrase": "Ndi zingati?",
+      "meaning": "Wie viel kostet das?",
+      "translation": "Wie viel kostet das?",
+      "pronunciation": "ndee zin-GAH-tee"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Im 15. Jahrhundert entstand hier das Maravi-Reich der Chewa; im 19. Jahrhundert nahm der Sklavenhandel zu, und David Livingstones Reisen 1859 brachten Missionare. Njassaland wurde 1891 britisches Protektorat und am 6. Juli 1964 als Malawi unabhängig. 1994 wurde das Mehrparteiensystem eingeführt.",
+    "milestones": [
+     "15. Jh.: Maravi-Reich",
+     "1859: David Livingstone erreicht den Malawisee",
+     "1915: Aufstand von John Chilembwe",
+     "1964: Unabhängigkeit (6. Juli)"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Nsima mit Ndiwo (Maisbrei mit Beilagensoße)",
+     "Chambo (Tilapia aus dem Malawisee, gegrillt oder frittiert)",
+     "Nkhwani (Kürbisblätter mit Erdnüssen)"
+    ],
+    "traditionalDrinks": [
+     "Thobwa (fermentiertes Mais-/Hirsegetränk)",
+     "Carlsberg „Green“ (lokal gebraut)",
+     "Malawi-Tee (Plantagen in Thyolo und Mulanje)"
+    ],
+    "streetFoodAndDesserts": [
+     "Mandasi (frittierter Teig)",
+     "Gerösteter Mais (Chimanga)",
+     "Zitumbuwa (Bananenküchlein)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "John Chilembwe (Widerstandsführer 1915)",
+     "Hastings Kamuzu Banda (erster Präsident)",
+     "Joyce Banda (erste Präsidentin)"
+    ],
+    "strongSectors": [
+     "Tabak (Hauptexportgut)",
+     "Tee, Zucker und Hülsenfrüchte",
+     "See- und Safaritourismus"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Bargeld dominiert; Karten nur in größeren Hotels und Lodges, Geldautomaten (Standard Bank, National Bank) nehmen meist Visa, aber mit niedrigen Limits. Bringen Sie saubere Dollarscheine ab Druckjahr 2013 mit; offizieller und Schwarzmarktkurs können abweichen – tauschen Sie nur legal. Airtel Money und TNM Mpamba sind verbreitet.",
+    "tippingCulture": "Im Restaurant werden 10 % erwartet; auch Safariguides, Fahrer und Lodge-Personal erhalten üblicherweise Trinkgeld.",
+    "economicPillars": "Landwirtschaft (Tabak, Tee, Zucker, Mais) ist das Rückgrat der Wirtschaft; Tourismus und Bergbau wachsen."
+   }
+  },
+  "itin": {
+   "routeName": "Malawi-Route See und Safari: Von Lilongwe nach Mulanje",
+   "routeSummary": "Eine 9-tägige Route nach Süden: von der Hauptstadt Lilongwe nach Cape Maclear am klaren Malawisee, zur Safari in Liwonde am Shire und weiter zum Zomba-Plateau und Mulanje-Massiv.",
+   "totalDays": 9,
+   "bestSeason": "Mai – Oktober",
+   "transportMode": "Auto mit Fahrer oder Miet-4x4",
+   "paceLevel": "Ausgewogen (See + Safari + Wandern)",
+   "signatureGastronomy": {
+    "dishes": [
+     "Nsima",
+     "Chambo",
+     "Nkhwani"
+    ],
+    "drinks": [
+     "Thobwa",
+     "Carlsberg Green",
+     "Malawi-Tee"
+    ],
+    "streetFoods": [
+     "Mandasi",
+     "Chimanga",
+     "Zitumbuwa"
+    ],
+    "diningAdvice": "Nsima wird traditionell mit der rechten Hand geformt und in die Soße getunkt; am See nach frischem Chambo des Tages fragen. Rohe Salate und Eis meiden."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adapter Typ G (britisch)",
+     "Malariatabletten, Mückenschutz und langärmelige Kleidung",
+     "Saubere, neue US-Dollar-Scheine",
+     "Fleece und Wanderschuhe für die Berge"
+    ],
+    "safetyAndEtiquette": [
+     "Reisen Sie nicht nachts und tauschen Sie Geld nur legal.",
+     "Nehmen Sie sich Zeit für Begrüßungen und benutzen Sie die rechte Hand."
+    ]
+   },
+   "idealDurationText": "9-tägige Route",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stopp 1: Lilongwe (Hauptstadt und Märkte)",
+     "recommendedDuration": "1 Tag",
+     "durationBadge": "1 Tag",
+     "highlights": [
+      "Lilongwe Wildlife Centre und Naturschutzgebiet",
+      "Markt der Altstadt (Old Town Market)",
+      "Kamuzu-Mausoleum"
+     ],
+     "activities": [
+      "Sehen Sie gerettete Tiere im Wildlife Centre.",
+      "Stöbern Sie auf dem Markt nach Chitenje-Stoffen und Schnitzereien.",
+      "Erledigen Sie Bargeld und SIM-Karte in der Hauptstadt."
+     ],
+     "foodAndDrinks": [
+      "Nsima",
+      "Chambo",
+      "Mandasi"
+     ],
+     "criticalTips": [
+      "Gehen Sie abends nicht zu Fuß; nutzen Sie das Taxi der Lodge oder des Hotels.",
+      "Klären Sie wegen möglicher Engpässe vorab den Treibstoff mit dem Fahrer."
+     ],
+     "mapsQuery": "Lilongwe, Malawi"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stopp 2: Cape Maclear (Lake-Malawi-Nationalpark)",
+     "recommendedDuration": "3 Tage",
+     "durationBadge": "3 Tage",
+     "highlights": [
+      "Schnorcheln mit bunten Buntbarschen",
+      "Insel Thumbi West",
+      "Felsen am Otter Point",
+      "Sonnenuntergang über dem See"
+     ],
+     "activities": [
+      "Paddeln Sie zur Insel Thumbi und schnorcheln Sie.",
+      "Beobachten Sie die Rückkehr der Einbäume ins Fischerdorf.",
+      "Wandern Sie kurz auf die Hügel mit Seeblick."
+     ],
+     "foodAndDrinks": [
+      "Gegrillter Chambo",
+      "Usipa (kleine Seefische)",
+      "Carlsberg Green"
+     ],
+     "criticalTips": [
+      "Es besteht Bilharziose-Risiko; meiden Sie schilfige, stille Ufer und fragen Sie nach der Rückkehr Ihren Arzt nach Praziquantel.",
+      "Fragen Sie in der Lodge, bevor Sie Strand-„Guides“ oder Spendensammlern Geld geben."
+     ],
+     "mapsQuery": "Cape Maclear, Malawi"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stopp 3: Liwonde-Nationalpark (Safari am Shire)",
+     "recommendedDuration": "2 Tage",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "Elefanten und Flusspferde bei einer Bootssafari",
+      "Spitzmaulnashorn sowie wiederangesiedelte Löwen und Geparden",
+      "Über 400 Vogelarten"
+     ],
+     "activities": [
+      "Unternehmen Sie bei Sonnenaufgang eine Bootssafari auf dem Shire.",
+      "Nehmen Sie an einer geführten Pirschfahrt teil.",
+      "Machen Sie eine Fußsafari mit einem Ranger."
+     ],
+     "foodAndDrinks": [
+      "Nsima mit Ziegenfleisch in der Lodge",
+      "Malawi-Tee"
+     ],
+     "criticalTips": [
+      "Gehen Sie nicht allein außerhalb der Lodge; nachts kommen Flusspferde nahe ans Camp.",
+      "Das Malariarisiko ist hoch; lange Kleidung tragen und Moskitonetz nutzen."
+     ],
+     "mapsQuery": "Liwonde National Park, Malawi"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Stopp 4: Zomba-Plateau und Mulanje-Massiv (Berge und Teeplantagen)",
+     "recommendedDuration": "3 Tage",
+     "durationBadge": "3 Tage",
+     "highlights": [
+      "Queen’s View und Wasserfälle auf dem Zomba-Plateau",
+      "Likhubula-Wasserfall und Wanderwege am Mulanje",
+      "Teeplantagen Thyolo und Mulanje",
+      "Mulanje-Zedernwälder"
+     ],
+     "activities": [
+      "Halten Sie an den Beerenständen und wandern Sie auf dem Zomba-Plateau.",
+      "Wandern Sie am Mulanje mit Guide, als Tagestour oder mehrtägig mit Hütten.",
+      "Nehmen Sie an einer Teeverkostung in einer Fabrik teil."
+     ],
+     "foodAndDrinks": [
+      "Frische Zomba-Erdbeeren",
+      "Malawi-Tee",
+      "Zitumbuwa"
+     ],
+     "criticalTips": [
+      "Am Mulanje wechselt das Wetter schnell und der Sapitwa-Aufstieg ist anspruchsvoll; immer einen lizenzierten Guide nehmen.",
+      "Planen Sie den Rückflug ab Blantyre (BLZ)."
+     ],
+     "mapsQuery": "Mulanje, Malawi"
+    }
+   ]
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Steckdosen Typ G (drei Flachstifte, britisch); europäische Stecker brauchen einen Adapter. Häufige Stromabschaltungen (Load-Shedding) – Powerbank mitnehmen."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Leitungswasser ist nicht trinkbar; Flaschen- oder gefiltertes Wasser trinken. Kein Seewasser trinken.",
+    "vaccines": [
+     "Gelbfieber (Nachweis bei Einreise aus oder Transit über ein Risikoland)",
+     "Hepatitis A und Typhus",
+     "Malariaprophylaxe (landesweit, besonders am See)",
+     "Tollwut und Cholera (je nach Risiko mit dem Arzt klären)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "998"
+   },
+   "tipping": {
+    "custom": "In Restaurants und auf Safari wird Trinkgeld erwartet.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Etwa 10 $ pro Tag für den Safariguide und 5–10 $ pro Tag in die Personalkasse der Lodge gelten als angemessen."
+   },
+   "taxFree": {
+    "vatRefundPercent": "16,5 % MwSt.; keine Erstattung für Touristen",
+    "minSpend": "Nicht zutreffend",
+    "customsNote": "Es gibt keine MwSt.-Erstattung für Touristen. Die Ausfuhr von Elfenbein und Wildtierprodukten ist verboten; lebende Aquarienfische (Buntbarsche) brauchen eine Genehmigung."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "~1.00 - 2.50 $",
+    "topCarriers": [
+     "Airtel Malawi",
+     "TNM"
+    ],
+    "airportSimTrapWarning": "Eine lokale SIM ist viel günstiger als eSIM-Roaming; registrieren Sie eine Airtel- oder TNM-SIM mit Reisepass am Flughafen oder im offiziellen Shop. Am See hat Airtel meist besseren Empfang."
+   },
+   "touristScams": [
+    {
+     "title": "Straßengeldwechsler",
+     "desc": "Sie versprechen gute Kurse und geben Falschgeld oder zu wenig heraus.",
+     "tip": "Nur bei Banken oder lizenzierten Wechselstuben tauschen."
+    },
+    {
+     "title": "Falsche Spende und Tour",
+     "desc": "Am Seeufer bitten manche um Spenden für Schulen oder Vereine oder um Vorkasse für Bootstouren.",
+     "tip": "Spenden und Touren über die Lodge organisieren; nicht im Voraus zahlen."
+    }
+   ]
+  }
+ },
+ "es": {
+  "insights": {
+   "currency": "Kwacha malauí (MWK)",
+   "bestMonths": "Mayo – octubre (estación seca); junio – agosto es fresco, septiembre – octubre caluroso y el mejor momento para safaris; noviembre – abril es temporada de lluvias",
+   "safety": {
+    "safetyScore": 55,
+    "safetyLevel": "Riesgo Moderado",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60",
+    "crimeRateSummary": "Conocido como el “Corazón Cálido de África”, Malaui es hospitalario, pero en Lilongüe y Blantyre hay tirones, robos en coches y atracos armados nocturnos. Las dificultades económicas y la escasez de divisas y combustible generan tensión a veces; evite las manifestaciones.",
+    "commonScams": [
+     "Cambistas callejeros que dan billetes falsos o cuentan de menos",
+     "Personas que piden dinero para “donativos escolares” o tours falsos en la orilla del lago",
+     "Robos con la excusa de ayudar con el equipaje en estaciones de autobús"
+    ],
+    "safeTravelTips": [
+     "No camine por las ciudades de noche y evite viajar por carretera de noche.",
+     "Lleve suficientes dólares; tarjetas y cajeros pueden fallar, cambie solo en bancos u oficinas de cambio.",
+     "En el lago Malaui hay riesgo de bilharziasis (esquistosomiasis); consulte a su médico sobre el tratamiento después de bañarse."
+    ],
+    "emergencyNumbers": {
+     "police": "997",
+     "ambulance": "998",
+     "general": "997"
+    }
+   },
+   "internet": {
+    "networkCoverage": "4G bueno en Lilongüe, Blantyre y Mzuzu; 3G o débil en la orilla del lago y en los parques",
+    "costPerGbUsd": "~1.00 - 2.50 $",
+    "esimAvailability": "Media (las eSIM internacionales funcionan con roaming; la SIM local es más barata)",
+    "bestCarriers": [
+     "Airtel Malawi",
+     "TNM",
+     "Airalo eSIM"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Deficiente (minibuses y autocares lentos; escasez de combustible)",
+    "costLevel": "Económico",
+    "singleTicketUsd": "0.30 - 1.00 $ (minibús urbano)",
+    "dailyPassUsd": "No existe (coche con chófer: 70 - 120 $ al día)",
+    "popularRideApps": [
+     "No hay una app extendida",
+     "Taxis de hotel y lodge",
+     "Kabaza (bicitaxi/mototaxi)"
+    ],
+    "taxiAdvice": "Los taxis no tienen taxímetro; negocie el precio antes o busque un chófer de confianza a través del hotel. El kabaza es práctico en trayectos cortos, pero hay accidentes: pida casco. Para la ruta del lago lo más cómodo es coche con chófer; deje margen si hay escasez de combustible."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "30 - 50 $",
+    "dailyBudgetMidrangeUsd": "90 - 160 $",
+    "budgetMealUsd": "3 - 6 $",
+    "coffeeUsd": "1.00 - 2.50 $",
+    "waterBottleUsd": "0.50 - 1.00 $",
+    "hostelDormUsd": "10 - 20 $",
+    "hotel3StarUsd": "50 - 100 $",
+    "flightCostIndex": "Alto (con escalas)",
+    "flightTip": "A Lilongüe (LLW) se llega normalmente vía Adís Abeba (Ethiopian), Nairobi (Kenya Airways) o Johannesburgo (Airlink); Blantyre (BLZ) también tiene conexiones y un billete de ida y vuelta abierto ahorra tiempo."
+   },
+   "plugType": "Tipo G (230V, 50Hz)"
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "El saludo importa; pregunte “Moni, muli bwanji?” antes de ir al grano.",
+     "Dé y reciba con ambas manos o con la derecha; usar solo la izquierda es descortés.",
+     "En zonas rurales, que las mujeres lleven falda por debajo de la rodilla o pareo (chitenje) es señal de respeto."
+    ],
+    "festivals": [
+     "Festival Lake of Stars (lago Malaui, septiembre – octubre)",
+     "Danzas enmascaradas Gule Wamkulu (chewa, patrimonio inmaterial de la UNESCO)",
+     "Día de la Independencia (6 de julio)"
+    ],
+    "lifestyle": "La vida rural gira en torno a la agricultura y la pesca en el lago, y el nsima es la base de cada comida. La gente es cálida y abierta a conversar."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Parque Nacional del Lago Malaui y Cape Maclear (UNESCO)",
+     "Parque Nacional de Liwonde (elefantes, rinocerontes, safari por el río Shire)",
+     "Monte Mulanje (pico Sapitwa, 3.002 m)",
+     "Meseta de Zomba",
+     "Meseta de Nyika",
+     "Isla de Likoma y catedral de San Pedro"
+    ],
+    "bestSeasons": "Mayo – octubre",
+    "travelStyleTip": "El país es pequeño y es fácil combinar lago, safari y montaña en un viaje; bajar al sur desde Lilongüe y salir desde Blantyre es lo más eficiente."
+   },
+   "religion": {
+    "primaryReligions": "Cristianos ~77 % (mayoría protestante, católicos ~17 %), musulmanes ~14 % (sobre todo en la orilla del lago y el sur), creencias tradicionales",
+    "respectNorms": "Entre en iglesias y mezquitas con hombros y rodillas cubiertos; no fotografíe ceremonias Gule Wamkulu sin permiso.",
+    "sacredSites": [
+     "Iglesia de San Miguel y Todos los Ángeles (Blantyre, 1891)",
+     "Catedral de San Pedro (isla de Likoma)",
+     "Ciudad misionera de Livingstonia"
+    ]
+   },
+   "language": {
+    "officialLanguages": "La lengua oficial es el inglés; el chichewa (nyanja), lengua nacional, es el más hablado. En el norte se habla tumbuka y en el sur yao.",
+    "englishProficiency": "Bueno en ciudades y turismo; limitado en los pueblos.",
+    "phrases": [
+     {
+      "phrase": "Moni",
+      "meaning": "Hola",
+      "translation": "Hola",
+      "pronunciation": "MO-nee"
+     },
+     {
+      "phrase": "Muli bwanji?",
+      "meaning": "¿Cómo está?",
+      "translation": "¿Cómo está?",
+      "pronunciation": "MOO-lee BWAN-jee"
+     },
+     {
+      "phrase": "Ndili bwino",
+      "meaning": "Estoy bien",
+      "translation": "Estoy bien",
+      "pronunciation": "n-DEE-lee BWEE-no"
+     },
+     {
+      "phrase": "Zikomo (kwambiri)",
+      "meaning": "(Muchas) gracias",
+      "translation": "(Muchas) gracias",
+      "pronunciation": "zee-KO-mo (kwam-BEE-ree)"
+     },
+     {
+      "phrase": "Ndi zingati?",
+      "meaning": "¿Cuánto cuesta?",
+      "translation": "¿Cuánto cuesta?",
+      "pronunciation": "ndee zin-GAH-tee"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Aquí surgió en el siglo XV el Reino Maravi del pueblo chewa; en el siglo XIX se intensificó la trata de esclavos y los viajes de David Livingstone en 1859 atrajeron misioneros. Nyasalandia fue protectorado británico desde 1891 y se independizó como Malaui el 6 de julio de 1964. En 1994 se instauró el multipartidismo.",
+    "milestones": [
+     "Siglo XV: Reino Maravi",
+     "1859: David Livingstone llega al lago Malaui",
+     "1915: levantamiento de John Chilembwe",
+     "1964: independencia (6 de julio)"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Nsima con ndiwo (gachas de maíz con guarnición)",
+     "Chambo (tilapia del lago Malaui, a la parrilla o frita)",
+     "Nkhwani (hojas de calabaza con cacahuete)"
+    ],
+    "traditionalDrinks": [
+     "Thobwa (bebida fermentada de maíz/mijo)",
+     "Carlsberg “Green” (cerveza de producción local)",
+     "Té de Malaui (plantaciones de Thyolo y Mulanje)"
+    ],
+    "streetFoodAndDesserts": [
+     "Mandasi (masa frita)",
+     "Mazorca asada (chimanga)",
+     "Zitumbuwa (buñuelos de plátano)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "John Chilembwe (líder de la resistencia de 1915)",
+     "Hastings Kamuzu Banda (primer presidente)",
+     "Joyce Banda (primera presidenta)"
+    ],
+    "strongSectors": [
+     "Tabaco (principal exportación)",
+     "Té, azúcar y legumbres",
+     "Turismo de lago y safari"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Domina el efectivo; las tarjetas solo funcionan en hoteles y lodges grandes y los cajeros (Standard Bank, National Bank) suelen aceptar Visa con límites bajos. Lleve dólares limpios emitidos después de 2013; el cambio oficial y el paralelo pueden diferir, cambie solo en oficinas legales. Airtel Money y TNM Mpamba están muy extendidos.",
+    "tippingCulture": "En restaurantes se espera un 10 %; también es costumbre dar propina a guías de safari, chóferes y personal del lodge.",
+    "economicPillars": "La agricultura (tabaco, té, azúcar, maíz) es la base de la economía; el turismo y la minería crecen."
+   }
+  },
+  "itin": {
+   "routeName": "Ruta de lago y safari en Malaui: de Lilongüe a Mulanje",
+   "routeSummary": "Una ruta de 9 días hacia el sur: de la capital, Lilongüe, a Cape Maclear en las aguas cristalinas del lago Malaui, safari en Liwonde junto al río Shire y luego la meseta de Zomba y el monte Mulanje.",
+   "totalDays": 9,
+   "bestSeason": "Mayo – octubre",
+   "transportMode": "Coche con chófer o 4x4 de alquiler",
+   "paceLevel": "Equilibrado (lago + safari + senderismo)",
+   "signatureGastronomy": {
+    "dishes": [
+     "Nsima",
+     "Chambo",
+     "Nkhwani"
+    ],
+    "drinks": [
+     "Thobwa",
+     "Carlsberg Green",
+     "Té de Malaui"
+    ],
+    "streetFoods": [
+     "Mandasi",
+     "Chimanga",
+     "Zitumbuwa"
+    ],
+    "diningAdvice": "El nsima se moldea con la mano derecha y se moja en la salsa; en el lago pregunte por el chambo fresco del día. Evite ensaladas crudas y hielo."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptador tipo G (británico)",
+     "Antipalúdicos, repelente y ropa de manga larga",
+     "Dólares en efectivo limpios y recientes",
+     "Forro polar y botas de montaña"
+    ],
+    "safetyAndEtiquette": [
+     "No viaje de noche y cambie dinero solo en oficinas legales.",
+     "Dedique tiempo al saludo y use la mano derecha."
+    ]
+   },
+   "idealDurationText": "Ruta de 9 días",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Lilongüe (capital y mercados)",
+     "recommendedDuration": "1 día",
+     "durationBadge": "1 día",
+     "highlights": [
+      "Lilongwe Wildlife Centre y reserva natural",
+      "Mercado de la ciudad vieja (Old Town Market)",
+      "Mausoleo de Kamuzu"
+     ],
+     "activities": [
+      "Vea animales rescatados en el centro de fauna.",
+      "Curiosee telas chitenje y tallas de madera en el mercado.",
+      "Resuelva el efectivo y la SIM en la capital."
+     ],
+     "foodAndDrinks": [
+      "Nsima",
+      "Chambo",
+      "Mandasi"
+     ],
+     "criticalTips": [
+      "No camine por la tarde-noche; use el taxi del lodge u hotel.",
+      "Hable antes con su chófer sobre el combustible por si hay escasez."
+     ],
+     "mapsQuery": "Lilongwe, Malawi"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Cape Maclear (Parque Nacional del Lago Malaui)",
+     "recommendedDuration": "3 días",
+     "durationBadge": "3 días",
+     "highlights": [
+      "Esnórquel con cíclidos de colores",
+      "Isla Thumbi West",
+      "Rocas de Otter Point",
+      "Atardecer sobre el lago"
+     ],
+     "activities": [
+      "Vaya en kayak a la isla Thumbi y haga esnórquel.",
+      "Vea volver las canoas al pueblo pesquero.",
+      "Haga una breve caminata a las colinas para ver el lago."
+     ],
+     "foodAndDrinks": [
+      "Chambo a la parrilla",
+      "Usipa (pescaditos del lago)",
+      "Carlsberg Green"
+     ],
+     "criticalTips": [
+      "Hay riesgo de bilharziasis; evite orillas con juncos y aguas quietas y consulte a su médico sobre el praziquantel al volver.",
+      "Consulte en el lodge antes de pagar a “guías” de playa o recaudadores de donativos."
+     ],
+     "mapsQuery": "Cape Maclear, Malawi"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Parque Nacional de Liwonde (safari por el río Shire)",
+     "recommendedDuration": "2 días",
+     "durationBadge": "2 días",
+     "highlights": [
+      "Elefantes e hipopótamos en un safari en barco",
+      "Rinoceronte negro y leones y guepardos reintroducidos",
+      "Más de 400 especies de aves"
+     ],
+     "activities": [
+      "Haga un safari en barco al amanecer por el Shire.",
+      "Participe en un safari guiado en vehículo.",
+      "Haga un safari a pie con un guarda."
+     ],
+     "foodAndDrinks": [
+      "Nsima con cabra en el lodge",
+      "Té de Malaui"
+     ],
+     "criticalTips": [
+      "No camine solo fuera del lodge; de noche los hipopótamos pueden acercarse.",
+      "El riesgo de malaria es alto; use manga larga y mosquitera."
+     ],
+     "mapsQuery": "Liwonde National Park, Malawi"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Meseta de Zomba y monte Mulanje (montañas y plantaciones de té)",
+     "recommendedDuration": "3 días",
+     "durationBadge": "3 días",
+     "highlights": [
+      "Queen’s View y cascadas en la meseta de Zomba",
+      "Cascada de Likhubula y senderos de Mulanje",
+      "Plantaciones de té de Thyolo y Mulanje",
+      "Bosques de cedro de Mulanje"
+     ],
+     "activities": [
+      "Pare en los puestos de fresas y camine por la meseta de Zomba.",
+      "Recorra Mulanje con guía, en excursión de un día o en trekking de varios días con refugios.",
+      "Haga una cata en una fábrica de té."
+     ],
+     "foodAndDrinks": [
+      "Fresas frescas de Zomba",
+      "Té de Malaui",
+      "Zitumbuwa"
+     ],
+     "criticalTips": [
+      "En Mulanje el tiempo cambia rápido y la subida al Sapitwa es dura; contrate siempre un guía con licencia.",
+      "Planifique el vuelo de regreso desde Blantyre (BLZ)."
+     ],
+     "mapsQuery": "Mulanje, Malawi"
+    }
+   ]
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Enchufes tipo G (tres clavijas planas, británico); los europeos necesitan adaptador. Los cortes de luz (load-shedding) son frecuentes; lleve batería externa."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "El agua del grifo no es potable; beba agua embotellada o filtrada. No beba agua del lago.",
+    "vaccines": [
+     "Fiebre amarilla (certificado si llega de un país de riesgo o hace escala en él)",
+     "Hepatitis A y fiebre tifoidea",
+     "Profilaxis antipalúdica (en todo el país, sobre todo en el lago)",
+     "Rabia y cólera (consulte al médico según el riesgo)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "998"
+   },
+   "tipping": {
+    "custom": "Se espera propina en restaurantes y safaris.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Se consideran adecuados unos 10 $ al día al guía de safari y 5-10 $ al día en la caja común del personal del lodge."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA del 16,5 %; sin devolución para turistas",
+    "minSpend": "No aplica",
+    "customsNote": "No hay devolución del IVA para turistas. Está prohibido exportar marfil y productos de fauna; sacar peces vivos de acuario (cíclidos) requiere permiso."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "~1.00 - 2.50 $",
+    "topCarriers": [
+     "Airtel Malawi",
+     "TNM"
+    ],
+    "airportSimTrapWarning": "Una SIM local es mucho más barata que el roaming eSIM; registre una SIM de Airtel o TNM con su pasaporte en el aeropuerto o en una tienda oficial. En el lago Airtel suele tener mejor cobertura."
+   },
+   "touristScams": [
+    {
+     "title": "Cambista callejero",
+     "desc": "Prometen un buen cambio pero entregan billetes falsos o de menos.",
+     "tip": "Cambie solo en bancos u oficinas de cambio autorizadas."
+    },
+    {
+     "title": "Donativo y tour falsos",
+     "desc": "En la orilla del lago algunos piden donativos para una escuela o club o un pago por adelantado de una excursión.",
+     "tip": "Organice donativos y tours a través del lodge; no pague por adelantado."
+    }
+   ]
+  }
+ },
+ "ru": {
+  "insights": {
+   "currency": "Малавийская квача (MWK)",
+   "bestMonths": "Май – октябрь (сухой сезон); июнь – август прохладно, сентябрь – октябрь жарко и лучше всего для сафари; ноябрь – апрель — сезон дождей",
+   "safety": {
+    "safetyScore": 55,
+    "safetyLevel": "Умеренный Риск",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60",
+    "crimeRateSummary": "Малави, «тёплое сердце Африки», гостеприимна, но в Лилонгве и Блантайре случаются рывки сумок, кражи из машин и ночные вооружённые ограбления. Экономические трудности, нехватка валюты и топлива порой вызывают напряжённость; избегайте демонстраций.",
+    "commonScams": [
+     "Уличные менялы подсовывают фальшивки или недосчитывают",
+     "На берегу озера собирают деньги на «школу» или фальшивые экскурсии",
+     "Кражи под видом помощи с багажом на автостанциях"
+    ],
+    "safeTravelTips": [
+     "Не ходите по городу после темноты и не ездите между городами ночью.",
+     "Возьмите достаточно наличных долларов; карты и банкоматы ненадёжны, меняйте только в банках и обменниках.",
+     "В озере Малави есть риск бильгарциоза (шистосомоза); после купания обсудите с врачом лечение."
+    ],
+    "emergencyNumbers": {
+     "police": "997",
+     "ambulance": "998",
+     "general": "997"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Хороший 4G в Лилонгве, Блантайре и Мзузу; на берегу озера и в парках 3G или слабый сигнал",
+    "costPerGbUsd": "~1.00 - 2.50 $",
+    "esimAvailability": "Средняя (международные eSIM работают в роуминге; местная SIM дешевле)",
+    "bestCarriers": [
+     "Airtel Malawi",
+     "TNM",
+     "Airalo eSIM"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Слабый (микроавтобусы и медленные автобусы; дефицит топлива)",
+    "costLevel": "Недорого",
+    "singleTicketUsd": "0.30 - 1.00 $ (городской микроавтобус)",
+    "dailyPassUsd": "Нет (авто с водителем: 70 - 120 $ в день)",
+    "popularRideApps": [
+     "Популярных приложений нет",
+     "Такси от отелей и лоджей",
+     "Кабаза (вело/мототакси)"
+    ],
+    "taxiAdvice": "У такси нет счётчиков; договаривайтесь о цене заранее или ищите надёжного водителя через отель. Кабаза удобна на коротких расстояниях, но аварийна — просите шлем. Для маршрута вдоль озера лучше всего авто с водителем; при дефиците топлива закладывайте запас времени."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "30 - 50 $",
+    "dailyBudgetMidrangeUsd": "90 - 160 $",
+    "budgetMealUsd": "3 - 6 $",
+    "coffeeUsd": "1.00 - 2.50 $",
+    "waterBottleUsd": "0.50 - 1.00 $",
+    "hostelDormUsd": "10 - 20 $",
+    "hotel3StarUsd": "50 - 100 $",
+    "flightCostIndex": "Высокий (с пересадками)",
+    "flightTip": "В Лилонгве (LLW) обычно летают через Аддис-Абебу (Ethiopian), Найроби (Kenya Airways) или Йоханнесбург (Airlink); есть рейсы и в Блантайр (BLZ) — билет «открытая челюсть» экономит время."
+   },
+   "plugType": "Тип G (230V, 50Hz)"
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Приветствие важно: спросите «Мони, мули бванджи?», прежде чем переходить к делу.",
+     "Давайте и принимайте обеими руками или правой; только левой — невежливо.",
+     "В сельской местности юбка ниже колена или саронг (читендже) у женщин — знак уважения."
+    ],
+    "festivals": [
+     "Фестиваль Lake of Stars (озеро Малави, сентябрь – октябрь)",
+     "Танцы в масках Гуле Вамкулу (чева, нематериальное наследие ЮНЕСКО)",
+     "День независимости (6 июля)"
+    ],
+    "lifestyle": "Сельская жизнь вращается вокруг земледелия и рыбалки на озере, основа любой трапезы — нсима. Люди приветливы и открыты к общению."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Национальный парк Озеро Малави и Кейп-Маклир (ЮНЕСКО)",
+     "Национальный парк Ливонде (слоны, носороги, сафари по реке Шире)",
+     "Массив Муланье (пик Сапитва, 3002 м)",
+     "Плато Зомба",
+     "Плато Ньика",
+     "Остров Ликома и собор Святого Петра"
+    ],
+    "bestSeasons": "Май – октябрь",
+    "travelStyleTip": "Страна небольшая, озеро, сафари и горы легко совместить в одной поездке; эффективнее всего ехать из Лилонгве на юг и улетать из Блантайра."
+   },
+   "religion": {
+    "primaryReligions": "Христиане ~77 % (большинство протестанты, католики ~17 %), мусульмане ~14 % (особенно на берегу озера и юге), традиционные верования",
+    "respectNorms": "В церкви и мечети входите с закрытыми плечами и коленями; не фотографируйте обряды Гуле Вамкулу без разрешения.",
+    "sacredSites": [
+     "Церковь Святого Михаила и всех ангелов (Блантайр, 1891)",
+     "Собор Святого Петра (остров Ликома)",
+     "Миссионерский городок Ливингстония"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Официальный язык — английский; самый распространённый — национальный чичева (ньянджа). На севере говорят на тумбука, на юге — на яо.",
+    "englishProficiency": "Хороший в городах и туризме; в деревнях ограниченный.",
+    "phrases": [
+     {
+      "phrase": "Moni",
+      "meaning": "Привет",
+      "translation": "Привет",
+      "pronunciation": "MO-nee"
+     },
+     {
+      "phrase": "Muli bwanji?",
+      "meaning": "Как вы?",
+      "translation": "Как вы?",
+      "pronunciation": "MOO-lee BWAN-jee"
+     },
+     {
+      "phrase": "Ndili bwino",
+      "meaning": "У меня всё хорошо",
+      "translation": "У меня всё хорошо",
+      "pronunciation": "n-DEE-lee BWEE-no"
+     },
+     {
+      "phrase": "Zikomo (kwambiri)",
+      "meaning": "(Большое) спасибо",
+      "translation": "(Большое) спасибо",
+      "pronunciation": "zee-KO-mo (kwam-BEE-ree)"
+     },
+     {
+      "phrase": "Ndi zingati?",
+      "meaning": "Сколько стоит?",
+      "translation": "Сколько стоит?",
+      "pronunciation": "ndee zin-GAH-tee"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "В XV веке здесь возникло королевство Марави народа чева; в XIX веке усилилась работорговля, а путешествия Давида Ливингстона в 1859 году привели сюда миссионеров. Ньясаленд стал британским протекторатом в 1891 году и обрёл независимость под именем Малави 6 июля 1964 года. В 1994 году введена многопартийность.",
+    "milestones": [
+     "XV век: королевство Марави",
+     "1859: Давид Ливингстон достигает озера Малави",
+     "1915: восстание Джона Чилембве",
+     "1964: независимость (6 июля)"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Нсима с ндиво (кукурузная каша с подливой)",
+     "Чамбо (тилапия из озера Малави, на гриле или жареная)",
+     "Нкхвани (листья тыквы с арахисом)"
+    ],
+    "traditionalDrinks": [
+     "Тхобва (ферментированный напиток из кукурузы/проса)",
+     "Carlsberg «Green» (пиво местного производства)",
+     "Малавийский чай (плантации Тиоло и Муланье)"
+    ],
+    "streetFoodAndDesserts": [
+     "Мандаси (жареное тесто)",
+     "Жареная кукуруза (чиманга)",
+     "Зитумбува (банановые оладьи)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Джон Чилембве (лидер восстания 1915 года)",
+     "Гастингс Камузу Банда (первый президент)",
+     "Джойс Банда (первая женщина-президент)"
+    ],
+    "strongSectors": [
+     "Табак (основной экспорт)",
+     "Чай, сахар и бобовые",
+     "Озёрный и сафари-туризм"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Преобладают наличные; карты принимают лишь крупные отели и лоджи, банкоматы (Standard Bank, National Bank) обычно принимают Visa, но с низкими лимитами. Везите чистые доллары выпуска после 2013 года; официальный и «чёрный» курс могут различаться — меняйте только легально. Широко используются Airtel Money и TNM Mpamba.",
+    "tippingCulture": "В ресторанах ожидают 10 %; принято давать чаевые гидам сафари, водителям и персоналу лоджей.",
+    "economicPillars": "Основа экономики — сельское хозяйство (табак, чай, сахар, кукуруза); растут туризм и горнодобыча."
+   }
+  },
+  "itin": {
+   "routeName": "Маршрут по Малави — озеро и сафари: от Лилонгве до Муланье",
+   "routeSummary": "9-дневный маршрут на юг: из столицы Лилонгве к Кейп-Маклиру на прозрачном озере Малави, сафари в Ливонде на реке Шире, затем плато Зомба и массив Муланье.",
+   "totalDays": 9,
+   "bestSeason": "Май – октябрь",
+   "transportMode": "Авто с водителем или арендованный внедорожник",
+   "paceLevel": "Сбалансированный (озеро + сафари + походы)",
+   "signatureGastronomy": {
+    "dishes": [
+     "Nsima",
+     "Chambo",
+     "Nkhwani"
+    ],
+    "drinks": [
+     "Thobwa",
+     "Carlsberg Green",
+     "Малавийский чай"
+    ],
+    "streetFoods": [
+     "Mandasi",
+     "Chimanga",
+     "Zitumbuwa"
+    ],
+    "diningAdvice": "Нсиму по традиции скатывают правой рукой и обмакивают в подливу; на озере спрашивайте свежую чамбо. Избегайте сырых салатов и льда."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Переходник на тип G (британский)",
+     "Противомалярийные таблетки, репеллент и одежда с длинными рукавами",
+     "Чистые доллары США нового образца",
+     "Флиска и треккинговая обувь для гор"
+    ],
+    "safetyAndEtiquette": [
+     "Не путешествуйте ночью и меняйте деньги только легально.",
+     "Не торопитесь с приветствием и пользуйтесь правой рукой."
+    ]
+   },
+   "idealDurationText": "Маршрут на 9 дней",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Остановка 1: Лилонгве (столица и рынки)",
+     "recommendedDuration": "1 день",
+     "durationBadge": "1 день",
+     "highlights": [
+      "Центр дикой природы Лилонгве и заповедник",
+      "Рынок Старого города (Old Town Market)",
+      "Мавзолей Камузу"
+     ],
+     "activities": [
+      "Посмотрите спасённых животных в центре дикой природы.",
+      "Присмотритесь к тканям читендже и резьбе по дереву на рынке.",
+      "Решите вопросы с наличными и SIM в столице."
+     ],
+     "foodAndDrinks": [
+      "Nsima",
+      "Chambo",
+      "Mandasi"
+     ],
+     "criticalTips": [
+      "Вечером не гуляйте; пользуйтесь такси отеля или лоджа.",
+      "Заранее обсудите с водителем топливо на случай дефицита."
+     ],
+     "mapsQuery": "Lilongwe, Malawi"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Остановка 2: Кейп-Маклир (Национальный парк Озеро Малави)",
+     "recommendedDuration": "3 дня",
+     "durationBadge": "3 дня",
+     "highlights": [
+      "Снорклинг с яркими цихлидами",
+      "Остров Тумби-Уэст",
+      "Скалы Оттер-Пойнт",
+      "Закат над озером"
+     ],
+     "activities": [
+      "Доберитесь на каяке до острова Тумби и поплавайте с маской.",
+      "Посмотрите, как лодки-долблёнки возвращаются в рыбацкую деревню.",
+      "Поднимитесь на холмы ради вида на озеро."
+     ],
+     "foodAndDrinks": [
+      "Чамбо на гриле",
+      "Усипа (мелкая озёрная рыба)",
+      "Carlsberg Green"
+     ],
+     "criticalTips": [
+      "Есть риск бильгарциоза: избегайте заросших тростником и стоячих участков, после поездки спросите врача о празиквантеле.",
+      "Прежде чем платить пляжным «гидам» или сборщикам пожертвований, посоветуйтесь в лодже."
+     ],
+     "mapsQuery": "Cape Maclear, Malawi"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Остановка 3: Национальный парк Ливонде (сафари по реке Шире)",
+     "recommendedDuration": "2 дня",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Слоны и бегемоты на лодочном сафари",
+      "Чёрный носорог и вновь заселённые львы и гепарды",
+      "Более 400 видов птиц"
+     ],
+     "activities": [
+      "Отправьтесь на рассвете на лодочное сафари по Шире.",
+      "Примите участие в джип-сафари с гидом.",
+      "Совершите пешее сафари с рейнджером."
+     ],
+     "foodAndDrinks": [
+      "Нсима с козлятиной в лодже",
+      "Малавийский чай"
+     ],
+     "criticalTips": [
+      "Не выходите за пределы лоджа одни; ночью бегемоты подходят к лагерю.",
+      "Высокий риск малярии; носите длинные рукава и спите под сеткой."
+     ],
+     "mapsQuery": "Liwonde National Park, Malawi"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Остановка 4: Плато Зомба и массив Муланье (горы и чайные плантации)",
+     "recommendedDuration": "3 дня",
+     "durationBadge": "3 дня",
+     "highlights": [
+      "Смотровая Queen’s View и водопады плато Зомба",
+      "Водопад Ликхубула и тропы Муланье",
+      "Чайные плантации Тиоло и Муланье",
+      "Леса муланьского кедра"
+     ],
+     "activities": [
+      "Загляните к торговцам ягодами и прогуляйтесь по плато Зомба.",
+      "Пройдите по Муланье с гидом — за день или в многодневном походе с хижинами.",
+      "Попробуйте чай на чайной фабрике."
+     ],
+     "foodAndDrinks": [
+      "Свежая клубника из Зомбы",
+      "Малавийский чай",
+      "Zitumbuwa"
+     ],
+     "criticalTips": [
+      "На Муланье погода быстро меняется, а подъём на Сапитву сложен; обязательно берите лицензированного гида.",
+      "Планируйте обратный рейс из Блантайра (BLZ)."
+     ],
+     "mapsQuery": "Mulanje, Malawi"
+    }
+   ]
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Розетки типа G (три плоских штыря, британские); для европейских вилок нужен переходник. Часты веерные отключения — возьмите пауэрбанк."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Водопроводную воду пить нельзя; пейте бутилированную или фильтрованную. Озёрную воду не пейте.",
+    "vaccines": [
+     "Жёлтая лихорадка (сертификат при прибытии из страны риска или транзите через неё)",
+     "Гепатит A и брюшной тиф",
+     "Профилактика малярии (по всей стране, особенно у озера)",
+     "Бешенство и холера (по согласованию с врачом)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "998"
+   },
+   "tipping": {
+    "custom": "В ресторанах и на сафари чаевые ожидаются.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Уместно ~10 $ в день гиду сафари и 5–10 $ в день в общую коробку для персонала лоджа."
+   },
+   "taxFree": {
+    "vatRefundPercent": "НДС 16,5 %; возврата туристам нет",
+    "minSpend": "Не применяется",
+    "customsNote": "Возврата НДС туристам нет. Вывоз слоновой кости и изделий из диких животных запрещён; для вывоза живых аквариумных рыб (цихлид) нужно разрешение."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "~1.00 - 2.50 $",
+    "topCarriers": [
+     "Airtel Malawi",
+     "TNM"
+    ],
+    "airportSimTrapWarning": "Местная SIM намного дешевле роуминга eSIM; оформите SIM Airtel или TNM по паспорту в аэропорту или официальном салоне. На озере у Airtel обычно лучше покрытие."
+   },
+   "touristScams": [
+    {
+     "title": "Уличный меняла",
+     "desc": "Обещают выгодный курс, но дают фальшивые купюры или недосчитывают.",
+     "tip": "Меняйте только в банках или лицензированных обменниках."
+    },
+    {
+     "title": "Фальшивые пожертвования и туры",
+     "desc": "На берегу озера просят пожертвовать на школу или клуб либо заплатить вперёд за лодочную прогулку.",
+     "tip": "Пожертвования и туры организуйте через лодж; не платите вперёд."
+    }
+   ]
+  }
+ }
+}

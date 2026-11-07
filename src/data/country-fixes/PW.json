@@ -1,0 +1,1872 @@
+{
+ "tr": {
+  "insights": {
+   "currency": "Amerikan Doları (USD)",
+   "plugType": "Tip A, B (120V, 60Hz)",
+   "bestMonths": "Kasım – Nisan (daha kurak ve sakin deniz; Haziran – Ekim yağışlı)",
+   "safety": {
+    "crimeRateSummary": "Suç oranı düşüktür; arabadan veya plajdan küçük hırsızlıklar ve gece alkollü sürücüler başlıca risklerdir. Peleliu ve Angaur’da II. Dünya Savaşı’ndan kalma patlamamış mühimmat bulunabilir.",
+    "commonScams": [
+     "Lisanssız tekne turlarında izin ücretlerinin “dahil” denip ayrıca istenmesi",
+     "Kiralık araç iadesinde eski hasarların fatura edilmesi",
+     "Plajda veya arabada bırakılan eşyaların çalınması"
+    ],
+    "safeTravelTips": [
+     "Dalış ve tekne turlarını lisanslı operatörlerle yapın; güneşten korunmak için resife zarar vermeyen krem kullanın.",
+     "Peleliu’daki savaş alanlarında patikalardan ayrılmayın ve metal objelere dokunmayın.",
+     "Gece sürüşünde alkollü sürücülere karşı dikkatli olun; araçta değerli eşya bırakmayın."
+    ],
+    "emergencyNumbers": {
+     "police": "911",
+     "ambulance": "911",
+     "general": "911"
+    },
+    "safetyScore": 65,
+    "safetyLevel": "Güvenli",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Koror ve Babeldaob’da 4G; Rock Islands ve uzak adalarda zayıf",
+    "costPerGbUsd": "~3 - 8 $",
+    "esimAvailability": "Sınırlı",
+    "bestCarriers": [
+     "PNCC (PalauCel)"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Sınırlı",
+    "costLevel": "Pahalı",
+    "singleTicketUsd": "Toplu taşıma yok (taksi 5 - 15 $)",
+    "dailyPassUsd": "Araç kiralama ~45 - 70 $/gün",
+    "popularRideApps": [
+     "Taksiler",
+     "Otel servisleri",
+     "Kiralık araç"
+    ],
+    "taxiAdvice": "Araç çağırma uygulaması ve otobüs yoktur. Koror’da taksiler kısa mesafede birkaç dolardır; Babeldaob’u gezmek için araç kiralamak en pratiktir (sağdan trafik). Adalara ulaşım tekneyledir."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "80 - 120 $",
+    "dailyBudgetMidrangeUsd": "200 - 350 $",
+    "budgetMealUsd": "10 - 18 $",
+    "coffeeUsd": "3 - 5 $",
+    "waterBottleUsd": "1.50 - 2.50 $",
+    "hostelDormUsd": "Hostel çok az (misafirhane 40 - 70 $)",
+    "hotel3StarUsd": "150 - 250 $",
+    "flightCostIndex": "Çok Pahalı",
+    "flightTip": "Koror-Babeldaob (ROR) havalimanına başlıca Guam (United), Taipei (China Airlines) ve Seul aktarmalı uçuşlarla ulaşılır; bilete 100 $ Pristine Paradise çevre ücreti dahildir."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Girişte pasaportunuza basılan “Palau Pledge” çevre yeminine uyun: mercana dokunmayın, deniz canlılarını beslemeyin.",
+     "Köylerde ve bai (topluluk evi) çevresinde örtünük giyinin; bai’lere izinsiz girmeyin.",
+     "Yaşlılara ve geleneksel liderlere saygı gösterilir; sesinizi alçak tutun."
+    ],
+    "festivals": [
+     "Bağımsızlık Günü (1 Ekim)",
+     "Anayasa Günü (9 Temmuz)",
+     "Noel ve yılbaşı topluluk kutlamaları"
+    ],
+    "lifestyle": "Anaerkil klan yapısı, deniz ve resiflerle iç içe bir ada hayatı; balıkçılık, taro tarlaları ve geleneksel para (udoud) törenleri hâlâ önemlidir. Japon ve Amerikan etkileri mutfakta ve günlük hayatta belirgindir."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Rock Islands Güney Lagünü (UNESCO)",
+     "Denizanası Gölü (Ongeim’l Tketau)",
+     "Blue Corner ve German Channel dalış noktaları",
+     "Milky Way beyaz çamur koyu",
+     "Ngardmau Şelalesi (Babeldaob)",
+     "Peleliu II. Dünya Savaşı alanları"
+    ],
+    "bestSeasons": "Kasım – Nisan (daha kurak ve sakin deniz; Haziran – Ekim yağışlı)",
+    "travelStyleTip": "Palau bir dalış ve tekne destinasyonudur; Koror’da kalıp günlük tekne turlarıyla Rock Islands’a çıkın, izin kartlarını tur şirketinden alın."
+   },
+   "religion": {
+    "primaryReligions": "Katolik (~%46), Protestan (~%26; Evanjelik ve Adventist), Modekngei geleneksel inancı (~%5)",
+    "respectNorms": "Kilisede omuz ve dizleri örtün; geleneksel taş eserler ve bai’ler kutsal sayılır, üzerlerine çıkmayın.",
+    "sacredSites": [
+     "Airai Bai (en eski geleneksel topluluk evi)",
+     "Badrulchau taş sütunları",
+     "Koror Kutsal Kalp Kilisesi"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Palauca ve İngilizce; bazı eyaletlerde Sonsorolca, Tobian ve Japonca da resmîdir.",
+    "englishProficiency": "Yüksek; turizm ve resmî işlerde İngilizce yaygındır.",
+    "phrases": [
+     {
+      "phrase": "Alii",
+      "meaning": "Merhaba",
+      "translation": "Merhaba",
+      "pronunciation": "ah-LEE"
+     },
+     {
+      "phrase": "Ungil tutau",
+      "meaning": "Günaydın",
+      "translation": "Günaydın",
+      "pronunciation": "oo-NGEEL too-TAH-oo"
+     },
+     {
+      "phrase": "Ke ua ngarang?",
+      "meaning": "Nasılsın?",
+      "translation": "Nasılsın?",
+      "pronunciation": "keh wah ngah-RAHNG"
+     },
+     {
+      "phrase": "Sulang",
+      "meaning": "Teşekkürler",
+      "translation": "Teşekkürler",
+      "pronunciation": "soo-LAHNG"
+     },
+     {
+      "phrase": "Mechikung",
+      "meaning": "Hoşça kal",
+      "translation": "Hoşça kal",
+      "pronunciation": "meh-chee-KOONG"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Adalara yaklaşık 3.000 yıl önce yerleşildi. 1885’te İspanya’nın, 1899’da Almanya’nın oldu; 1914–1944 arasında Japonya yönetiminde Koror, Güney Denizleri Mandası’nın merkeziydi. 1944’teki Peleliu Muharebesi’nden sonra ABD vesayetine geçen Palau, ABD ile Serbest Ortaklık Anlaşması kapsamında 1 Ekim 1994’te bağımsız oldu. 2015’te dünyanın en büyük deniz koruma alanlarından birini ilan etti.",
+    "milestones": [
+     "1899 – Almanya’ya satış",
+     "1944 – Peleliu Muharebesi",
+     "1994 – Bağımsızlık",
+     "2015 – Ulusal Deniz Koruma Alanı"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Hindistan cevizi yengeci",
+     "Meyve yarasası çorbası (geleneksel)",
+     "Taze ton balığı sashimi"
+    ],
+    "traditionalDrinks": [
+     "Taze hindistan cevizi suyu",
+     "Limon otu çayı",
+     "Red Rooster yerel birası"
+    ],
+    "streetFoodAndDesserts": [
+     "Hindistan cevizi kremalı tapyoka",
+     "Japon usulü bento kutuları",
+     "Taro ve ekmek ağacı cipsi"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Haruo Remeliik (ilk cumhurbaşkanı)",
+     "Tommy Remengesau Jr. (deniz koruma alanının öncüsü)",
+     "Kuniwo Nakamura (bağımsızlık dönemi cumhurbaşkanı)"
+    ],
+    "strongSectors": [
+     "Dalış ve deniz turizmi",
+     "Deniz koruma ve ekoturizm",
+     "ABD Serbest Ortaklık fonları ve kamu hizmetleri"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "ABD doları kullanılır; Koror’daki otel, dalış merkezi ve restoranlarda kart geçer. Küçük dükkân, taksi ve eyalet giriş ücretleri için nakit taşıyın.",
+    "tippingCulture": "Restoranlarda %10-15 bahşiş yaygındır; dalış rehberi ve tekne ekibine günlük 10-20 $ verilir.",
+    "economicPillars": "Turizm (özellikle dalış), ABD Serbest Ortaklık Anlaşması fonları, kamu hizmetleri ve küçük ölçekli balıkçılık."
+   }
+  },
+  "itin": {
+   "routeName": "Palau Ada ve Resif Rotası: Babeldaob, Koror, Rock Islands ve Peleliu",
+   "routeSummary": "Kuzeydeki büyük ada Babeldaob’un şelale ve taş sütunlarından Koror’un müzelerine, UNESCO listesindeki Rock Islands lagününe ve güneydeki Peleliu’nun savaş tarihine uzanan 6 günlük rota.",
+   "totalDays": 6,
+   "idealDurationText": "6 Günlük Rota",
+   "bestSeason": "Kasım – Nisan (daha kurak ve sakin deniz; Haziran – Ekim yağışlı)",
+   "transportMode": "Kiralık araç (Babeldaob) + günlük tekne turları ve dalış tekneleri",
+   "paceLevel": "Aktif (dalış, şnorkel ve tekne)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "1. Durak: Babeldaob (Şelaleler ve Taş Sütunlar)",
+     "recommendedDuration": "1 gün",
+     "durationBadge": "1 Gün",
+     "highlights": [
+      "Ngardmau Şelalesi",
+      "Badrulchau taş sütunları",
+      "Ngerulmud’daki Meclis binası",
+      "Airai Bai"
+     ],
+     "activities": [
+      "Ormanda yürüyerek şelalede serinleyin.",
+      "Okyanus manzaralı taş sütunları gezin.",
+      "Geleneksel bai mimarisini inceleyin."
+     ],
+     "foodAndDrinks": [
+      "Hindistan cevizli taro",
+      "Taze hindistan cevizi suyu"
+     ],
+     "criticalTips": [
+      "Eyaletler küçük giriş ücretleri alır; nakit bulundurun.",
+      "Şelale patikası kaygan olabilir; su ayakkabısı giyin."
+     ],
+     "mapsQuery": "Ngardmau Waterfall, Palau"
+    },
+    {
+     "stopNumber": 2,
+     "name": "2. Durak: Koror (Müzeler ve Liman)",
+     "recommendedDuration": "2 gün",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "Belau Ulusal Müzesi",
+      "Etpison Müzesi",
+      "Palau Akvaryumu (PICRC)",
+      "KB Köprüsü’nde gün batımı"
+     ],
+     "activities": [
+      "Müzede taş para ve geleneksel hikâye tahtalarını görün.",
+      "Mangrov kanallarında kano yapın.",
+      "Akvaryumda resif ekosistemini tanıyın."
+     ],
+     "foodAndDrinks": [
+      "Ton balığı sashimi",
+      "Bento kutuları",
+      "Red Rooster birası"
+     ],
+     "criticalTips": [
+      "Taksi fiyatını binmeden sorun; akşamları sayıları azalır.",
+      "Resife zarar veren güneş kremleri yasaktır; uygun kremi yanınızda getirin."
+     ],
+     "mapsQuery": "Koror, Palau"
+    },
+    {
+     "stopNumber": 3,
+     "name": "3. Durak: Rock Islands (Denizanası Gölü ve Dalış)",
+     "recommendedDuration": "2 gün",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "Denizanası Gölü",
+      "Milky Way",
+      "Blue Corner ve German Channel (mantalar)",
+      "Long Beach kum dili"
+     ],
+     "activities": [
+      "Zararsız denizanalarıyla şnorkel yapın.",
+      "Blue Corner’da köpekbalıkları ve mantalarla dalın.",
+      "Milky Way’in beyaz çamuruyla cilt bakımı yapın."
+     ],
+     "foodAndDrinks": [
+      "Teknede piknik bento",
+      "Taze meyve"
+     ],
+     "criticalTips": [
+      "Rock Islands ve Denizanası Gölü için ücretli izin gerekir; tur şirketi aracılığıyla alın.",
+      "Denizanası Gölü’nde tüplü dalış ve palet tekmesiyle çökeltiyi kaldırmak yasaktır."
+     ],
+     "mapsQuery": "Rock Islands Southern Lagoon, Palau"
+    },
+    {
+     "stopNumber": 4,
+     "name": "4. Durak: Peleliu (II. Dünya Savaşı Tarihi)",
+     "recommendedDuration": "1 gün",
+     "durationBadge": "1 Gün",
+     "highlights": [
+      "Bloody Nose Ridge (Umurbrogol)",
+      "Bin Kişilik Mağara",
+      "Orange Beach çıkarma plajı"
+     ],
+     "activities": [
+      "Yerel rehberle savaş alanlarını gezin.",
+      "Anıtları ve küçük savaş müzesini ziyaret edin.",
+      "Dönüşte Peleliu Wall’da dalış yapın."
+     ],
+     "foodAndDrinks": [
+      "Izgara resif balığı",
+      "Hindistan cevizi suyu"
+     ],
+     "criticalTips": [
+      "Patlamamış mühimmat riski nedeniyle patikalardan ayrılmayın, metal objelere dokunmayın.",
+      "Tekne yolculuğu 1-1,5 saat sürer; deniz tutmasına karşı önlem alın."
+     ],
+     "mapsQuery": "Peleliu, Palau"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Hindistan cevizi yengeci",
+     "Ton balığı sashimi",
+     "Hindistan cevizli taro"
+    ],
+    "drinks": [
+     "Hindistan cevizi suyu",
+     "Limon otu çayı",
+     "Red Rooster birası"
+    ],
+    "streetFoods": [
+     "Bento kutuları",
+     "Tapyoka tatlısı"
+    ],
+    "diningAdvice": "Koror’da Japon, Kore ve Amerikan mutfağı ağırlıktadır; hindistan cevizi yengecini yalnızca yasal boyut ve sezonda sunan restoranlardan sipariş edin."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Resife zarar vermeyen güneş kremi",
+     "Şnorkel maskesi ve su ayakkabısı",
+     "A/B tipi priz adaptörü",
+     "Kuru çanta"
+    ],
+    "safetyAndEtiquette": [
+     "Mercan, deniz kabuğu veya kaplumbağa ürünlerini toplamayın ve satın almayın.",
+     "Palau Pledge kurallarına uyun."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "A",
+     "B"
+    ],
+    "voltage": "120V",
+    "frequency": "60Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Amerikan tipi yassı pimli A/B prizler ve 120V kullanılır; A/B adaptörü getirin, cihazınızın 110-240V desteklediğini kontrol edin."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Musluk suyu arıtılsa da içmek için önerilmez; şişe veya filtrelenmiş su kullanın.",
+    "vaccines": [
+     "Rutin aşılar",
+     "Hepatit A ve tifo",
+     "Dang humması için sivrisinek koruması",
+     "Sarıhumma: riskli ülkeden geliyorsanız sertifika istenir"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "911"
+   },
+   "tipping": {
+    "custom": "Amerikan usulü bahşiş yaygındır: restoranlarda %10-15.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Dalış rehberi ve tekne ekibine günde 10-20 $ bahşiş verilir."
+   },
+   "taxFree": {
+    "vatRefundPercent": "PGST (KDV) %10; turiste iade yok",
+    "minSpend": "Uygulanmaz",
+    "customsNote": "Palau’da turiste vergi iadesi yoktur. Mercan, deniz kabuğu ve kaplumbağa ürünlerinin çıkarılması yasaktır; gıda ve bitkilerde biyogüvenlik kontrolleri uygulanır."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "$3 - $8",
+    "topCarriers": [
+     "PNCC (PalauCel)"
+    ],
+    "airportSimTrapWarning": "Ana operatör PNCC’dir ve uluslararası eSIM seçenekleri sınırlıdır; PNCC’nin turist SIM/eSIM paketini havalimanında veya Koror’daki ofisinde alın. Roaming çok pahalı olabilir."
+   },
+   "touristScams": [
+    {
+     "title": "Gizli İzin Ücretleri",
+     "desc": "Ucuz tur satanlar Rock Islands/Denizanası Gölü iznini sonradan ayrıca ister.",
+     "tip": "Lisanslı operatör seçin ve fiyata izinlerin dahil olup olmadığını yazılı sorun."
+    },
+    {
+     "title": "Kiralık Araç Hasar Talebi",
+     "desc": "İadede önceden var olan çizikler için ücret istenebilir.",
+     "tip": "Teslim alırken aracın her yanını fotoğraflayın."
+    }
+   ]
+  }
+ },
+ "en": {
+  "insights": {
+   "currency": "US Dollar (USD)",
+   "plugType": "Type A, B (120V, 60Hz)",
+   "bestMonths": "November – April (drier, calmer seas; June – October is rainy)",
+   "safety": {
+    "crimeRateSummary": "Crime is low; petty theft from cars or beaches and drunk drivers at night are the main risks. Unexploded WWII ordnance may still be found on Peleliu and Angaur.",
+    "commonScams": [
+     "Unlicensed boat tours claiming permits are “included”, then charging extra",
+     "Being billed for old damage when returning a hire car",
+     "Theft of items left on the beach or in cars"
+    ],
+    "safeTravelTips": [
+     "Book dives and boat trips with licensed operators and use reef-safe sunscreen.",
+     "Stay on paths at Peleliu’s battlefields and never touch metal objects.",
+     "Watch for drunk drivers at night and leave no valuables in the car."
+    ],
+    "emergencyNumbers": {
+     "police": "911",
+     "ambulance": "911",
+     "general": "911"
+    },
+    "safetyScore": 65,
+    "safetyLevel": "Safe",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "4G in Koror and Babeldaob; weak in the Rock Islands and outer islands",
+    "costPerGbUsd": "~3 - 8 $",
+    "esimAvailability": "Limited",
+    "bestCarriers": [
+     "PNCC (PalauCel)"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Limited",
+    "costLevel": "Expensive",
+    "singleTicketUsd": "No public transport (taxi 5 - 15 $)",
+    "dailyPassUsd": "Car hire ~45 - 70 $/day",
+    "popularRideApps": [
+     "Taxis",
+     "Hotel shuttles",
+     "Hire car"
+    ],
+    "taxiAdvice": "There are no ride apps or buses. Taxis in Koror cost a few dollars for short trips; hiring a car is easiest for Babeldaob (drive on the right). The islands are reached by boat."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "80 - 120 $",
+    "dailyBudgetMidrangeUsd": "200 - 350 $",
+    "budgetMealUsd": "10 - 18 $",
+    "coffeeUsd": "3 - 5 $",
+    "waterBottleUsd": "1.50 - 2.50 $",
+    "hostelDormUsd": "Very few hostels (guesthouses 40 - 70 $)",
+    "hotel3StarUsd": "150 - 250 $",
+    "flightCostIndex": "Very Expensive",
+    "flightTip": "Koror-Babeldaob (ROR) is reached mainly via Guam (United), Taipei (China Airlines) and Seoul; the 100 $ Pristine Paradise environmental fee is included in the ticket."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Honour the “Palau Pledge” stamped in your passport on arrival: do not touch coral or feed marine life.",
+     "Dress modestly in villages and around a bai (meeting house); do not enter a bai without permission.",
+     "Elders and traditional chiefs are highly respected; keep your voice low."
+    ],
+    "festivals": [
+     "Independence Day (1 October)",
+     "Constitution Day (9 July)",
+     "Christmas and New Year community celebrations"
+    ],
+    "lifestyle": "An island life shaped by a matrilineal clan system and the sea; fishing, taro patches and ceremonies with traditional money (udoud) still matter. Japanese and American influences show in food and daily life."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Rock Islands Southern Lagoon (UNESCO)",
+     "Jellyfish Lake (Ongeim’l Tketau)",
+     "Blue Corner and German Channel dive sites",
+     "Milky Way white-mud cove",
+     "Ngardmau Waterfall (Babeldaob)",
+     "Peleliu WWII battlefields"
+    ],
+    "bestSeasons": "November – April (drier, calmer seas; June – October is rainy)",
+    "travelStyleTip": "Palau is a diving and boating destination: base yourself in Koror and take day boat trips to the Rock Islands, getting permits through your tour company."
+   },
+   "religion": {
+    "primaryReligions": "Catholic (~46%), Protestant (~26%; Evangelical and Adventist), traditional Modekngei faith (~5%)",
+    "respectNorms": "Cover shoulders and knees in church; traditional stone sites and bai are considered sacred, so do not climb on them.",
+    "sacredSites": [
+     "Airai Bai (oldest traditional meeting house)",
+     "Badrulchau stone monoliths",
+     "Sacred Heart Church, Koror"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Palauan and English; Sonsorolese, Tobian and Japanese are also official in some states.",
+    "englishProficiency": "High; English is widely used in tourism and government.",
+    "phrases": [
+     {
+      "phrase": "Alii",
+      "meaning": "Hello",
+      "translation": "Hello",
+      "pronunciation": "ah-LEE"
+     },
+     {
+      "phrase": "Ungil tutau",
+      "meaning": "Good morning",
+      "translation": "Good morning",
+      "pronunciation": "oo-NGEEL too-TAH-oo"
+     },
+     {
+      "phrase": "Ke ua ngarang?",
+      "meaning": "How are you?",
+      "translation": "How are you?",
+      "pronunciation": "keh wah ngah-RAHNG"
+     },
+     {
+      "phrase": "Sulang",
+      "meaning": "Thank you",
+      "translation": "Thank you",
+      "pronunciation": "soo-LAHNG"
+     },
+     {
+      "phrase": "Mechikung",
+      "meaning": "Goodbye",
+      "translation": "Goodbye",
+      "pronunciation": "meh-chee-KOONG"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "The islands were settled about 3,000 years ago. They became Spanish in 1885 and German in 1899; under Japanese rule from 1914 to 1944, Koror was the capital of the South Seas Mandate. After the 1944 Battle of Peleliu, Palau came under US trusteeship and became independent on 1 October 1994 under a Compact of Free Association with the US. In 2015 it declared one of the world’s largest marine sanctuaries.",
+    "milestones": [
+     "1899 – Sold to Germany",
+     "1944 – Battle of Peleliu",
+     "1994 – Independence",
+     "2015 – National Marine Sanctuary"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Coconut crab",
+     "Fruit bat soup (traditional)",
+     "Fresh tuna sashimi"
+    ],
+    "traditionalDrinks": [
+     "Fresh coconut water",
+     "Lemongrass tea",
+     "Red Rooster local beer"
+    ],
+    "streetFoodAndDesserts": [
+     "Tapioca with coconut cream",
+     "Japanese-style bento boxes",
+     "Taro and breadfruit chips"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Haruo Remeliik (first president)",
+     "Tommy Remengesau Jr. (champion of the marine sanctuary)",
+     "Kuniwo Nakamura (president at independence)"
+    ],
+    "strongSectors": [
+     "Diving and marine tourism",
+     "Marine conservation and ecotourism",
+     "US Compact funding and public services"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "The US dollar is used; cards work at Koror hotels, dive shops and restaurants. Carry cash for small shops, taxis and state entry fees.",
+    "tippingCulture": "A 10-15% tip is common in restaurants; dive guides and boat crews get 10-20 $ per day.",
+    "economicPillars": "Tourism (especially diving), US Compact of Free Association funding, public services and small-scale fishing."
+   }
+  },
+  "itin": {
+   "routeName": "Palau Islands & Reefs: Babeldaob, Koror, Rock Islands and Peleliu",
+   "routeSummary": "A 6-day route from the waterfalls and stone monoliths of Babeldaob in the north to Koror’s museums, the UNESCO-listed Rock Islands lagoon and the war history of Peleliu in the south.",
+   "totalDays": 6,
+   "idealDurationText": "6-Day Itinerary",
+   "bestSeason": "November – April (drier, calmer seas; June – October is rainy)",
+   "transportMode": "Hire car (Babeldaob) + day boat tours and dive boats",
+   "paceLevel": "Active (diving, snorkelling and boating)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stop 1: Babeldaob (Waterfalls & Monoliths)",
+     "recommendedDuration": "1 day",
+     "durationBadge": "1 Day",
+     "highlights": [
+      "Ngardmau Waterfall",
+      "Badrulchau stone monoliths",
+      "Capitol complex at Ngerulmud",
+      "Airai Bai"
+     ],
+     "activities": [
+      "Hike through the jungle and cool off at the waterfall.",
+      "Walk among the ocean-view stone monoliths.",
+      "Study traditional bai architecture."
+     ],
+     "foodAndDrinks": [
+      "Taro with coconut",
+      "Fresh coconut water"
+     ],
+     "criticalTips": [
+      "States charge small entry fees; carry cash.",
+      "The waterfall trail can be slippery; wear water shoes."
+     ],
+     "mapsQuery": "Ngardmau Waterfall, Palau"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stop 2: Koror (Museums & Harbour)",
+     "recommendedDuration": "2 days",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "Belau National Museum",
+      "Etpison Museum",
+      "Palau Aquarium (PICRC)",
+      "Sunset at KB Bridge"
+     ],
+     "activities": [
+      "See stone money and storyboards at the museum.",
+      "Kayak through the mangrove channels.",
+      "Learn about reef ecosystems at the aquarium."
+     ],
+     "foodAndDrinks": [
+      "Tuna sashimi",
+      "Bento boxes",
+      "Red Rooster beer"
+     ],
+     "criticalTips": [
+      "Ask the taxi fare before getting in; taxis are scarce in the evening.",
+      "Reef-toxic sunscreens are banned; bring a compliant one."
+     ],
+     "mapsQuery": "Koror, Palau"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stop 3: Rock Islands (Jellyfish Lake & Diving)",
+     "recommendedDuration": "2 days",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "Jellyfish Lake",
+      "Milky Way",
+      "Blue Corner and German Channel (mantas)",
+      "Long Beach sandbar"
+     ],
+     "activities": [
+      "Snorkel among stingless jellyfish.",
+      "Dive with sharks and mantas at Blue Corner.",
+      "Try a white-mud skin treatment at Milky Way."
+     ],
+     "foodAndDrinks": [
+      "Boat-picnic bento",
+      "Fresh fruit"
+     ],
+     "criticalTips": [
+      "Rock Islands and Jellyfish Lake need a paid permit; get it through your tour company.",
+      "Scuba diving is banned in Jellyfish Lake; avoid kicking up sediment with your fins."
+     ],
+     "mapsQuery": "Rock Islands Southern Lagoon, Palau"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Stop 4: Peleliu (WWII History)",
+     "recommendedDuration": "1 day",
+     "durationBadge": "1 Day",
+     "highlights": [
+      "Bloody Nose Ridge (Umurbrogol)",
+      "Thousand Man Cave",
+      "Orange Beach landing site"
+     ],
+     "activities": [
+      "Tour the battlefields with a local guide.",
+      "Visit the memorials and small war museum.",
+      "Dive the Peleliu Wall on the way back."
+     ],
+     "foodAndDrinks": [
+      "Grilled reef fish",
+      "Coconut water"
+     ],
+     "criticalTips": [
+      "Because of unexploded ordnance, stay on paths and never touch metal objects.",
+      "The boat ride takes 1-1.5 hours; take seasickness precautions."
+     ],
+     "mapsQuery": "Peleliu, Palau"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Coconut crab",
+     "Tuna sashimi",
+     "Taro with coconut"
+    ],
+    "drinks": [
+     "Coconut water",
+     "Lemongrass tea",
+     "Red Rooster beer"
+    ],
+    "streetFoods": [
+     "Bento boxes",
+     "Tapioca dessert"
+    ],
+    "diningAdvice": "Koror’s dining is mostly Japanese, Korean and American; order coconut crab only where it is served at legal size and in season."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Reef-safe sunscreen",
+     "Snorkel mask and water shoes",
+     "Type A/B plug adapter",
+     "Dry bag"
+    ],
+    "safetyAndEtiquette": [
+     "Do not collect or buy coral, shells or turtle products.",
+     "Follow the Palau Pledge."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "A",
+     "B"
+    ],
+    "voltage": "120V",
+    "frequency": "60Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "US-style flat-pin A/B sockets at 120V; bring an A/B adapter and check your devices support 110-240V."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Tap water is treated but not recommended for drinking; use bottled or filtered water.",
+    "vaccines": [
+     "Routine vaccines",
+     "Hepatitis A and typhoid",
+     "Mosquito protection against dengue",
+     "Yellow fever: certificate if arriving from a risk country"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "911"
+   },
+   "tipping": {
+    "custom": "US-style tipping is common: 10-15% in restaurants.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Dive guides and boat crews are tipped 10-20 $ per day."
+   },
+   "taxFree": {
+    "vatRefundPercent": "PGST (VAT) 10%; no tourist refund",
+    "minSpend": "Not applicable",
+    "customsNote": "Palau has no tax refund for tourists. Exporting coral, shells and turtle products is banned, and biosecurity checks apply to food and plants."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "$3 - $8",
+    "topCarriers": [
+     "PNCC (PalauCel)"
+    ],
+    "airportSimTrapWarning": "PNCC is the main operator and international eSIM options are limited; buy a PNCC tourist SIM/eSIM at the airport or its Koror office. Roaming can be very expensive."
+   },
+   "touristScams": [
+    {
+     "title": "Hidden Permit Fees",
+     "desc": "Cheap tour sellers later charge separately for the Rock Islands/Jellyfish Lake permit.",
+     "tip": "Pick a licensed operator and confirm in writing whether permits are included."
+    },
+    {
+     "title": "Hire Car Damage Claim",
+     "desc": "You may be charged for pre-existing scratches on return.",
+     "tip": "Photograph the car from all sides at pickup."
+    }
+   ]
+  }
+ },
+ "de": {
+  "insights": {
+   "currency": "US-Dollar (USD)",
+   "plugType": "Typ A, B (120V, 60Hz)",
+   "bestMonths": "November – April (trockener, ruhigere See; Juni – Oktober regnerisch)",
+   "safety": {
+    "crimeRateSummary": "Die Kriminalität ist gering; Hauptrisiken sind Kleindiebstahl aus Autos oder am Strand und betrunkene Fahrer nachts. Auf Peleliu und Angaur kann noch Blindgängermunition aus dem Zweiten Weltkrieg liegen.",
+    "commonScams": [
+     "Unlizenzierte Bootstouren, die Genehmigungen als „inklusive“ bewerben und später extra kassieren",
+     "Bei Rückgabe des Mietwagens für alte Schäden belangt werden",
+     "Diebstahl von Sachen am Strand oder im Auto"
+    ],
+    "safeTravelTips": [
+     "Buchen Sie Tauchgänge und Bootstouren bei lizenzierten Anbietern und nutzen Sie riffverträgliche Sonnencreme.",
+     "Bleiben Sie auf den Schlachtfeldern von Peleliu auf den Wegen und berühren Sie keine Metallteile.",
+     "Achten Sie nachts auf betrunkene Fahrer und lassen Sie keine Wertsachen im Auto."
+    ],
+    "emergencyNumbers": {
+     "police": "911",
+     "ambulance": "911",
+     "general": "911"
+    },
+    "safetyScore": 65,
+    "safetyLevel": "Sicher",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "4G in Koror und Babeldaob; schwach in den Rock Islands und auf Außeninseln",
+    "costPerGbUsd": "~3 - 8 $",
+    "esimAvailability": "Eingeschränkt",
+    "bestCarriers": [
+     "PNCC (PalauCel)"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Eingeschränkt",
+    "costLevel": "Teuer",
+    "singleTicketUsd": "Kein ÖPNV (Taxi 5 - 15 $)",
+    "dailyPassUsd": "Mietwagen ~45 - 70 $/Tag",
+    "popularRideApps": [
+     "Taxis",
+     "Hotelshuttles",
+     "Mietwagen"
+    ],
+    "taxiAdvice": "Es gibt weder Fahrdienst-Apps noch Busse. Taxis in Koror kosten für kurze Strecken ein paar Dollar; für Babeldaob ist ein Mietwagen am praktischsten (Rechtsverkehr). Inseln erreicht man per Boot."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "80 - 120 $",
+    "dailyBudgetMidrangeUsd": "200 - 350 $",
+    "budgetMealUsd": "10 - 18 $",
+    "coffeeUsd": "3 - 5 $",
+    "waterBottleUsd": "1.50 - 2.50 $",
+    "hostelDormUsd": "Kaum Hostels (Gästehäuser 40 - 70 $)",
+    "hotel3StarUsd": "150 - 250 $",
+    "flightCostIndex": "Sehr teuer",
+    "flightTip": "Koror-Babeldaob (ROR) erreicht man hauptsächlich über Guam (United), Taipeh (China Airlines) und Seoul; die Umweltgebühr „Pristine Paradise“ von 100 $ ist im Ticket enthalten."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Halten Sie sich an das bei der Einreise in den Pass gestempelte „Palau Pledge“: keine Korallen berühren, keine Meerestiere füttern.",
+     "Kleiden Sie sich in Dörfern und am Bai (Versammlungshaus) dezent; betreten Sie kein Bai ohne Erlaubnis.",
+     "Ältere und traditionelle Häuptlinge werden sehr respektiert; sprechen Sie leise."
+    ],
+    "festivals": [
+     "Unabhängigkeitstag (1. Oktober)",
+     "Verfassungstag (9. Juli)",
+     "Weihnachts- und Neujahrsfeiern der Gemeinden"
+    ],
+    "lifestyle": "Ein Inselleben mit matrilinearem Clansystem und engem Bezug zum Meer; Fischfang, Taro-Felder und Zeremonien mit traditionellem Geld (Udoud) sind weiter wichtig. Japanische und amerikanische Einflüsse prägen Küche und Alltag."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Rock Islands Southern Lagoon (UNESCO)",
+     "Quallensee (Ongeim’l Tketau)",
+     "Tauchplätze Blue Corner und German Channel",
+     "Milky Way mit weißem Schlamm",
+     "Ngardmau-Wasserfall (Babeldaob)",
+     "Schlachtfelder des Zweiten Weltkriegs auf Peleliu"
+    ],
+    "bestSeasons": "November – April (trockener, ruhigere See; Juni – Oktober regnerisch)",
+    "travelStyleTip": "Palau ist ein Tauch- und Bootsziel: Wohnen Sie in Koror und machen Sie Tagesbootstouren zu den Rock Islands; Genehmigungen gibt es über den Veranstalter."
+   },
+   "religion": {
+    "primaryReligions": "Katholisch (~46 %), protestantisch (~26 %; evangelikal und adventistisch), traditioneller Modekngei-Glaube (~5 %)",
+    "respectNorms": "Bedecken Sie in Kirchen Schultern und Knie; traditionelle Steinstätten und Bai gelten als heilig – nicht darauf klettern.",
+    "sacredSites": [
+     "Airai Bai (ältestes traditionelles Versammlungshaus)",
+     "Steinmonolithen von Badrulchau",
+     "Herz-Jesu-Kirche, Koror"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Palauisch und Englisch; in einigen Bundesstaaten auch Sonsorolesisch, Tobianisch und Japanisch.",
+    "englishProficiency": "Hoch; Englisch ist in Tourismus und Verwaltung verbreitet.",
+    "phrases": [
+     {
+      "phrase": "Alii",
+      "meaning": "Hallo",
+      "translation": "Hallo",
+      "pronunciation": "ah-LEE"
+     },
+     {
+      "phrase": "Ungil tutau",
+      "meaning": "Guten Morgen",
+      "translation": "Guten Morgen",
+      "pronunciation": "oo-NGEEL too-TAH-oo"
+     },
+     {
+      "phrase": "Ke ua ngarang?",
+      "meaning": "Wie geht’s?",
+      "translation": "Wie geht’s?",
+      "pronunciation": "keh wah ngah-RAHNG"
+     },
+     {
+      "phrase": "Sulang",
+      "meaning": "Danke",
+      "translation": "Danke",
+      "pronunciation": "soo-LAHNG"
+     },
+     {
+      "phrase": "Mechikung",
+      "meaning": "Auf Wiedersehen",
+      "translation": "Auf Wiedersehen",
+      "pronunciation": "meh-chee-KOONG"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Die Inseln wurden vor rund 3.000 Jahren besiedelt. 1885 wurden sie spanisch, 1899 deutsch; unter japanischer Herrschaft (1914–1944) war Koror Hauptstadt des Südseemandats. Nach der Schlacht um Peleliu 1944 kam Palau unter US-Treuhand und wurde am 1. Oktober 1994 im Rahmen eines Assoziierungsabkommens mit den USA unabhängig. 2015 rief es eines der größten Meeresschutzgebiete der Welt aus.",
+    "milestones": [
+     "1899 – Verkauf an Deutschland",
+     "1944 – Schlacht um Peleliu",
+     "1994 – Unabhängigkeit",
+     "2015 – Nationales Meeresschutzgebiet"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Palmendieb (Kokosnusskrabbe)",
+     "Flughundsuppe (traditionell)",
+     "Frisches Thunfisch-Sashimi"
+    ],
+    "traditionalDrinks": [
+     "Frisches Kokoswasser",
+     "Zitronengrastee",
+     "Lokales Bier Red Rooster"
+    ],
+    "streetFoodAndDesserts": [
+     "Tapioka mit Kokoscreme",
+     "Bento-Boxen nach japanischer Art",
+     "Taro- und Brotfruchtchips"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Haruo Remeliik (erster Präsident)",
+     "Tommy Remengesau Jr. (Vorreiter des Meeresschutzgebiets)",
+     "Kuniwo Nakamura (Präsident zur Unabhängigkeit)"
+    ],
+    "strongSectors": [
+     "Tauch- und Meerestourismus",
+     "Meeresschutz und Ökotourismus",
+     "Mittel aus dem US-Assoziierungsabkommen und öffentlicher Dienst"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Gezahlt wird in US-Dollar; in Hotels, Tauchbasen und Restaurants in Koror gehen Karten. Bargeld für kleine Läden, Taxis und Eintrittsgebühren der Bundesstaaten mitnehmen.",
+    "tippingCulture": "In Restaurants sind 10–15 % üblich; Tauchguides und Bootscrews erhalten 10–20 $ pro Tag.",
+    "economicPillars": "Tourismus (vor allem Tauchen), Mittel aus dem Assoziierungsabkommen mit den USA, öffentlicher Dienst und kleine Fischerei."
+   }
+  },
+  "itin": {
+   "routeName": "Palau Inseln & Riffe: Babeldaob, Koror, Rock Islands und Peleliu",
+   "routeSummary": "Eine 6-tägige Route von Wasserfällen und Steinmonolithen auf Babeldaob im Norden über Korors Museen und die UNESCO-Lagune der Rock Islands bis zur Kriegsgeschichte Pelelius im Süden.",
+   "totalDays": 6,
+   "idealDurationText": "6-tägige Route",
+   "bestSeason": "November – April (trockener, ruhigere See; Juni – Oktober regnerisch)",
+   "transportMode": "Mietwagen (Babeldaob) + Tagesbootstouren und Tauchboote",
+   "paceLevel": "Aktiv (Tauchen, Schnorcheln und Boot)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stopp 1: Babeldaob (Wasserfälle & Monolithen)",
+     "recommendedDuration": "1 Tag",
+     "durationBadge": "1 Tag",
+     "highlights": [
+      "Ngardmau-Wasserfall",
+      "Monolithen von Badrulchau",
+      "Kapitol in Ngerulmud",
+      "Airai Bai"
+     ],
+     "activities": [
+      "Wandern Sie durch den Dschungel und erfrischen Sie sich am Wasserfall.",
+      "Spazieren Sie zwischen den Monolithen mit Meerblick.",
+      "Bestaunen Sie traditionelle Bai-Architektur."
+     ],
+     "foodAndDrinks": [
+      "Taro mit Kokos",
+      "Frisches Kokoswasser"
+     ],
+     "criticalTips": [
+      "Die Bundesstaaten verlangen kleine Eintrittsgebühren; Bargeld mitnehmen.",
+      "Der Weg zum Wasserfall kann rutschig sein; Wasserschuhe tragen."
+     ],
+     "mapsQuery": "Ngardmau Waterfall, Palau"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stopp 2: Koror (Museen & Hafen)",
+     "recommendedDuration": "2 Tage",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "Belau-Nationalmuseum",
+      "Etpison-Museum",
+      "Palau-Aquarium (PICRC)",
+      "Sonnenuntergang an der KB-Brücke"
+     ],
+     "activities": [
+      "Sehen Sie im Museum Steingeld und Storyboards.",
+      "Paddeln Sie durch Mangrovenkanäle.",
+      "Lernen Sie im Aquarium das Riff-Ökosystem kennen."
+     ],
+     "foodAndDrinks": [
+      "Thunfisch-Sashimi",
+      "Bento-Boxen",
+      "Red-Rooster-Bier"
+     ],
+     "criticalTips": [
+      "Fragen Sie den Taxipreis vorher; abends gibt es wenige Taxis.",
+      "Riffschädliche Sonnencremes sind verboten; bringen Sie eine erlaubte mit."
+     ],
+     "mapsQuery": "Koror, Palau"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stopp 3: Rock Islands (Quallensee & Tauchen)",
+     "recommendedDuration": "2 Tage",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "Quallensee",
+      "Milky Way",
+      "Blue Corner und German Channel (Mantas)",
+      "Sandbank Long Beach"
+     ],
+     "activities": [
+      "Schnorcheln Sie zwischen nesselfreien Quallen.",
+      "Tauchen Sie am Blue Corner mit Haien und Mantas.",
+      "Gönnen Sie sich eine Packung aus weißem Schlamm am Milky Way."
+     ],
+     "foodAndDrinks": [
+      "Bento-Picknick auf dem Boot",
+      "Frisches Obst"
+     ],
+     "criticalTips": [
+      "Für Rock Islands und Quallensee braucht man eine kostenpflichtige Genehmigung; über den Veranstalter besorgen.",
+      "Gerätetauchen ist im Quallensee verboten; wirbeln Sie mit den Flossen keinen Schlamm auf."
+     ],
+     "mapsQuery": "Rock Islands Southern Lagoon, Palau"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Stopp 4: Peleliu (Geschichte des Zweiten Weltkriegs)",
+     "recommendedDuration": "1 Tag",
+     "durationBadge": "1 Tag",
+     "highlights": [
+      "Bloody Nose Ridge (Umurbrogol)",
+      "Höhle der Tausend Mann",
+      "Landestrand Orange Beach"
+     ],
+     "activities": [
+      "Besichtigen Sie die Schlachtfelder mit lokalem Guide.",
+      "Besuchen Sie Denkmäler und das kleine Kriegsmuseum.",
+      "Tauchen Sie auf dem Rückweg an der Peleliu Wall."
+     ],
+     "foodAndDrinks": [
+      "Gegrillter Rifffisch",
+      "Kokoswasser"
+     ],
+     "criticalTips": [
+      "Wegen Blindgängern auf den Wegen bleiben und keine Metallteile anfassen.",
+      "Die Bootsfahrt dauert 1–1,5 Stunden; gegen Seekrankheit vorsorgen."
+     ],
+     "mapsQuery": "Peleliu, Palau"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Palmendieb",
+     "Thunfisch-Sashimi",
+     "Taro mit Kokos"
+    ],
+    "drinks": [
+     "Kokoswasser",
+     "Zitronengrastee",
+     "Red-Rooster-Bier"
+    ],
+    "streetFoods": [
+     "Bento-Boxen",
+     "Tapioka-Dessert"
+    ],
+    "diningAdvice": "In Koror dominiert japanische, koreanische und amerikanische Küche; bestellen Sie Palmendiebe nur dort, wo sie in erlaubter Größe und Saison serviert werden."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Riffverträgliche Sonnencreme",
+     "Schnorchelmaske und Wasserschuhe",
+     "Steckeradapter Typ A/B",
+     "Trockenbeutel"
+    ],
+    "safetyAndEtiquette": [
+     "Keine Korallen, Muscheln oder Schildkrötenprodukte sammeln oder kaufen.",
+     "Halten Sie sich an das Palau Pledge."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "A",
+     "B"
+    ],
+    "voltage": "120V",
+    "frequency": "60Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "US-Steckdosen Typ A/B, 120 V; Adapter A/B mitbringen und prüfen, ob Geräte 110–240 V vertragen."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Leitungswasser wird aufbereitet, ist aber nicht zum Trinken empfohlen; Flaschen- oder gefiltertes Wasser nutzen.",
+    "vaccines": [
+     "Standardimpfungen",
+     "Hepatitis A und Typhus",
+     "Mückenschutz gegen Dengue",
+     "Gelbfieber: Nachweis bei Einreise aus Risikoland"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "911"
+   },
+   "tipping": {
+    "custom": "Trinkgeld nach US-Art ist üblich: 10–15 % im Restaurant.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Tauchguides und Bootscrews erhalten 10–20 $ pro Tag."
+   },
+   "taxFree": {
+    "vatRefundPercent": "PGST (MwSt.) 10 %; keine Rückerstattung",
+    "minSpend": "Entfällt",
+    "customsNote": "Palau erstattet Touristen keine Steuern. Die Ausfuhr von Korallen, Muscheln und Schildkrötenprodukten ist verboten; für Lebensmittel und Pflanzen gelten Biosicherheitskontrollen."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "$3 - $8",
+    "topCarriers": [
+     "PNCC (PalauCel)"
+    ],
+    "airportSimTrapWarning": "PNCC ist der Hauptanbieter, internationale eSIMs sind begrenzt; kaufen Sie ein PNCC-Touristenpaket (SIM/eSIM) am Flughafen oder im Büro in Koror. Roaming kann sehr teuer sein."
+   },
+   "touristScams": [
+    {
+     "title": "Versteckte Genehmigungsgebühren",
+     "desc": "Billiganbieter verlangen die Genehmigung für Rock Islands/Quallensee später extra.",
+     "tip": "Wählen Sie einen lizenzierten Anbieter und lassen Sie schriftlich bestätigen, ob Genehmigungen inklusive sind."
+    },
+    {
+     "title": "Schadensforderung beim Mietwagen",
+     "desc": "Bei Rückgabe können vorhandene Kratzer berechnet werden.",
+     "tip": "Fotografieren Sie das Auto bei Übernahme von allen Seiten."
+    }
+   ]
+  }
+ },
+ "es": {
+  "insights": {
+   "currency": "Dólar estadounidense (USD)",
+   "plugType": "Tipo A, B (120V, 60Hz)",
+   "bestMonths": "Noviembre – abril (más seco y mar en calma; de junio a octubre llueve)",
+   "safety": {
+    "crimeRateSummary": "La delincuencia es baja; los riesgos principales son pequeños robos en coches o playas y conductores ebrios de noche. En Peleliu y Angaur aún puede haber munición sin explotar de la Segunda Guerra Mundial.",
+    "commonScams": [
+     "Excursiones sin licencia que dicen incluir los permisos y luego cobran aparte",
+     "Cobro de daños previos al devolver el coche de alquiler",
+     "Robo de objetos dejados en la playa o el coche"
+    ],
+    "safeTravelTips": [
+     "Contrate buceo y excursiones con operadores autorizados y use protector solar seguro para los arrecifes.",
+     "En los campos de batalla de Peleliu no salga de los senderos ni toque objetos metálicos.",
+     "Cuidado con conductores ebrios de noche y no deje objetos de valor en el coche."
+    ],
+    "emergencyNumbers": {
+     "police": "911",
+     "ambulance": "911",
+     "general": "911"
+    },
+    "safetyScore": 65,
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "4G en Koror y Babeldaob; débil en las Rock Islands y las islas exteriores",
+    "costPerGbUsd": "~3 - 8 $",
+    "esimAvailability": "Limitada",
+    "bestCarriers": [
+     "PNCC (PalauCel)"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Limitado",
+    "costLevel": "Caro",
+    "singleTicketUsd": "Sin transporte público (taxi 5 - 15 $)",
+    "dailyPassUsd": "Alquiler de coche ~45 - 70 $/día",
+    "popularRideApps": [
+     "Taxis",
+     "Shuttles del hotel",
+     "Coche de alquiler"
+    ],
+    "taxiAdvice": "No hay apps de transporte ni autobuses. Los taxis en Koror cuestan pocos dólares en trayectos cortos; para Babeldaob lo mejor es alquilar coche (se conduce por la derecha). A las islas se va en barco."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "80 - 120 $",
+    "dailyBudgetMidrangeUsd": "200 - 350 $",
+    "budgetMealUsd": "10 - 18 $",
+    "coffeeUsd": "3 - 5 $",
+    "waterBottleUsd": "1.50 - 2.50 $",
+    "hostelDormUsd": "Casi sin albergues (casas de huéspedes 40 - 70 $)",
+    "hotel3StarUsd": "150 - 250 $",
+    "flightCostIndex": "Muy caro",
+    "flightTip": "A Koror-Babeldaob (ROR) se llega sobre todo vía Guam (United), Taipéi (China Airlines) y Seúl; la tasa ambiental Pristine Paradise de 100 $ va incluida en el billete."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Cumpla el “Palau Pledge” sellado en su pasaporte: no toque el coral ni alimente a la fauna marina.",
+     "Vista con recato en los pueblos y junto a un bai (casa comunal); no entre sin permiso.",
+     "Se respeta mucho a los mayores y jefes tradicionales; hable en voz baja."
+    ],
+    "festivals": [
+     "Día de la Independencia (1 de octubre)",
+     "Día de la Constitución (9 de julio)",
+     "Celebraciones comunitarias de Navidad y Año Nuevo"
+    ],
+    "lifestyle": "Una vida isleña marcada por clanes matrilineales y el mar; la pesca, los cultivos de taro y las ceremonias con moneda tradicional (udoud) siguen siendo importantes. Se notan influencias japonesas y estadounidenses en la cocina y el día a día."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Laguna Sur de las Rock Islands (UNESCO)",
+     "Lago de las Medusas (Ongeim’l Tketau)",
+     "Puntos de buceo Blue Corner y German Channel",
+     "Milky Way (cala de lodo blanco)",
+     "Cascada de Ngardmau (Babeldaob)",
+     "Campos de batalla de Peleliu"
+    ],
+    "bestSeasons": "Noviembre – abril (más seco y mar en calma; de junio a octubre llueve)",
+    "travelStyleTip": "Palau es un destino de buceo y barco: alójese en Koror y haga excursiones de un día a las Rock Islands, con los permisos a través de su agencia."
+   },
+   "religion": {
+    "primaryReligions": "Católica (~46 %), protestante (~26 %; evangélica y adventista), fe tradicional modekngei (~5 %)",
+    "respectNorms": "Cubra hombros y rodillas en la iglesia; los sitios de piedra y los bai son sagrados, no se suba a ellos.",
+    "sacredSites": [
+     "Airai Bai (la casa comunal tradicional más antigua)",
+     "Monolitos de Badrulchau",
+     "Iglesia del Sagrado Corazón, Koror"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Palauano e inglés; en algunos estados también sonsorolés, tobiano y japonés.",
+    "englishProficiency": "Alto; el inglés se usa mucho en turismo y administración.",
+    "phrases": [
+     {
+      "phrase": "Alii",
+      "meaning": "Hola",
+      "translation": "Hola",
+      "pronunciation": "ah-LEE"
+     },
+     {
+      "phrase": "Ungil tutau",
+      "meaning": "Buenos días",
+      "translation": "Buenos días",
+      "pronunciation": "oo-NGEEL too-TAH-oo"
+     },
+     {
+      "phrase": "Ke ua ngarang?",
+      "meaning": "¿Cómo estás?",
+      "translation": "¿Cómo estás?",
+      "pronunciation": "keh wah ngah-RAHNG"
+     },
+     {
+      "phrase": "Sulang",
+      "meaning": "Gracias",
+      "translation": "Gracias",
+      "pronunciation": "soo-LAHNG"
+     },
+     {
+      "phrase": "Mechikung",
+      "meaning": "Adiós",
+      "translation": "Adiós",
+      "pronunciation": "meh-chee-KOONG"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Las islas se poblaron hace unos 3.000 años. Fueron españolas desde 1885 y alemanas desde 1899; bajo dominio japonés (1914–1944) Koror fue capital del Mandato de los Mares del Sur. Tras la batalla de Peleliu (1944) Palau pasó a tutela de EE. UU. y se independizó el 1 de octubre de 1994 con un Pacto de Libre Asociación. En 2015 declaró uno de los mayores santuarios marinos del mundo.",
+    "milestones": [
+     "1899 – Venta a Alemania",
+     "1944 – Batalla de Peleliu",
+     "1994 – Independencia",
+     "2015 – Santuario Marino Nacional"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Cangrejo de los cocoteros",
+     "Sopa de murciélago frugívoro (tradicional)",
+     "Sashimi de atún fresco"
+    ],
+    "traditionalDrinks": [
+     "Agua de coco fresca",
+     "Té de hierba limón",
+     "Cerveza local Red Rooster"
+    ],
+    "streetFoodAndDesserts": [
+     "Tapioca con crema de coco",
+     "Cajas bento al estilo japonés",
+     "Chips de taro y fruta del pan"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Haruo Remeliik (primer presidente)",
+     "Tommy Remengesau Jr. (impulsor del santuario marino)",
+     "Kuniwo Nakamura (presidente en la independencia)"
+    ],
+    "strongSectors": [
+     "Buceo y turismo marino",
+     "Conservación marina y ecoturismo",
+     "Fondos del Pacto con EE. UU. y servicios públicos"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Se usa el dólar; en hoteles, centros de buceo y restaurantes de Koror aceptan tarjeta. Lleve efectivo para tiendas pequeñas, taxis y tasas de los estados.",
+    "tippingCulture": "En restaurantes es común un 10-15 %; a guías de buceo y tripulación se les dan 10-20 $ al día.",
+    "economicPillars": "Turismo (sobre todo buceo), fondos del Pacto de Libre Asociación con EE. UU., servicios públicos y pesca artesanal."
+   }
+  },
+  "itin": {
+   "routeName": "Islas y arrecifes de Palau: Babeldaob, Koror, Rock Islands y Peleliu",
+   "routeSummary": "Ruta de 6 días desde las cascadas y monolitos de Babeldaob, al norte, a los museos de Koror, la laguna de las Rock Islands (UNESCO) y la historia bélica de Peleliu, al sur.",
+   "totalDays": 6,
+   "idealDurationText": "Ruta de 6 días",
+   "bestSeason": "Noviembre – abril (más seco y mar en calma; de junio a octubre llueve)",
+   "transportMode": "Coche de alquiler (Babeldaob) + excursiones y barcos de buceo",
+   "paceLevel": "Activo (buceo, snorkel y barco)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Babeldaob (cascadas y monolitos)",
+     "recommendedDuration": "1 día",
+     "durationBadge": "1 Día",
+     "highlights": [
+      "Cascada de Ngardmau",
+      "Monolitos de Badrulchau",
+      "Capitolio de Ngerulmud",
+      "Airai Bai"
+     ],
+     "activities": [
+      "Camine por la selva y refrésquese en la cascada.",
+      "Pasee entre los monolitos con vista al mar.",
+      "Observe la arquitectura tradicional del bai."
+     ],
+     "foodAndDrinks": [
+      "Taro con coco",
+      "Agua de coco"
+     ],
+     "criticalTips": [
+      "Los estados cobran pequeñas tasas de entrada; lleve efectivo.",
+      "El sendero puede resbalar; use escarpines."
+     ],
+     "mapsQuery": "Ngardmau Waterfall, Palau"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Koror (museos y puerto)",
+     "recommendedDuration": "2 días",
+     "durationBadge": "2 Días",
+     "highlights": [
+      "Museo Nacional de Belau",
+      "Museo Etpison",
+      "Acuario de Palau (PICRC)",
+      "Atardecer en el puente KB"
+     ],
+     "activities": [
+      "Vea dinero de piedra y tablas narrativas en el museo.",
+      "Navegue en kayak por los manglares.",
+      "Conozca el ecosistema del arrecife en el acuario."
+     ],
+     "foodAndDrinks": [
+      "Sashimi de atún",
+      "Cajas bento",
+      "Cerveza Red Rooster"
+     ],
+     "criticalTips": [
+      "Pregunte el precio del taxi antes; de noche hay pocos.",
+      "Los protectores tóxicos para el arrecife están prohibidos; traiga uno permitido."
+     ],
+     "mapsQuery": "Koror, Palau"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Rock Islands (Lago de las Medusas y buceo)",
+     "recommendedDuration": "2 días",
+     "durationBadge": "2 Días",
+     "highlights": [
+      "Lago de las Medusas",
+      "Milky Way",
+      "Blue Corner y German Channel (mantas)",
+      "Banco de arena Long Beach"
+     ],
+     "activities": [
+      "Haga snorkel entre medusas sin aguijón.",
+      "Bucee con tiburones y mantas en Blue Corner.",
+      "Pruebe la mascarilla de lodo blanco en Milky Way."
+     ],
+     "foodAndDrinks": [
+      "Bento de pícnic en el barco",
+      "Fruta fresca"
+     ],
+     "criticalTips": [
+      "Las Rock Islands y el Lago de las Medusas requieren permiso de pago; tramítelo con su agencia.",
+      "En el Lago de las Medusas está prohibido el buceo con botella; no levante sedimento con las aletas."
+     ],
+     "mapsQuery": "Rock Islands Southern Lagoon, Palau"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Peleliu (historia de la II Guerra Mundial)",
+     "recommendedDuration": "1 día",
+     "durationBadge": "1 Día",
+     "highlights": [
+      "Bloody Nose Ridge (Umurbrogol)",
+      "Cueva de los Mil Hombres",
+      "Playa de desembarco Orange Beach"
+     ],
+     "activities": [
+      "Recorra los campos de batalla con un guía local.",
+      "Visite los monumentos y el pequeño museo de guerra.",
+      "Bucee en la Peleliu Wall a la vuelta."
+     ],
+     "foodAndDrinks": [
+      "Pescado de arrecife a la parrilla",
+      "Agua de coco"
+     ],
+     "criticalTips": [
+      "Por la munición sin explotar, no salga de los senderos ni toque metal.",
+      "El trayecto en barco dura 1-1,5 horas; prevenga el mareo."
+     ],
+     "mapsQuery": "Peleliu, Palau"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Cangrejo de los cocoteros",
+     "Sashimi de atún",
+     "Taro con coco"
+    ],
+    "drinks": [
+     "Agua de coco",
+     "Té de hierba limón",
+     "Cerveza Red Rooster"
+    ],
+    "streetFoods": [
+     "Cajas bento",
+     "Postre de tapioca"
+    ],
+    "diningAdvice": "En Koror predomina la cocina japonesa, coreana y estadounidense; pida cangrejo de los cocoteros solo donde lo sirvan de talla y temporada legales."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Protector solar seguro para arrecifes",
+     "Máscara de snorkel y escarpines",
+     "Adaptador tipo A/B",
+     "Bolsa estanca"
+    ],
+    "safetyAndEtiquette": [
+     "No recoja ni compre coral, conchas o productos de tortuga.",
+     "Cumpla el Palau Pledge."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "A",
+     "B"
+    ],
+    "voltage": "120V",
+    "frequency": "60Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Enchufes tipo A/B a 120V; lleve adaptador A/B y verifique que sus aparatos admitan 110-240V."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "El agua del grifo se trata, pero no se recomienda beberla; use agua embotellada o filtrada.",
+    "vaccines": [
+     "Vacunas de rutina",
+     "Hepatitis A y fiebre tifoidea",
+     "Protección contra mosquitos (dengue)",
+     "Fiebre amarilla: certificado si llega de país de riesgo"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "911"
+   },
+   "tipping": {
+    "custom": "Se da propina al estilo estadounidense: 10-15 % en restaurantes.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "A guías de buceo y tripulaciones se les dan 10-20 $ al día."
+   },
+   "taxFree": {
+    "vatRefundPercent": "PGST (IVA) 10 %; sin devolución a turistas",
+    "minSpend": "No aplica",
+    "customsNote": "Palau no devuelve impuestos a turistas. Está prohibido sacar coral, conchas y productos de tortuga, y hay controles de bioseguridad para alimentos y plantas."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "$3 - $8",
+    "topCarriers": [
+     "PNCC (PalauCel)"
+    ],
+    "airportSimTrapWarning": "PNCC es el operador principal y hay pocas eSIM internacionales; compre un paquete turístico SIM/eSIM de PNCC en el aeropuerto o en su oficina de Koror. El roaming puede ser carísimo."
+   },
+   "touristScams": [
+    {
+     "title": "Tasas de permiso ocultas",
+     "desc": "Los vendedores de tours baratos cobran luego aparte el permiso de las Rock Islands/Lago de las Medusas.",
+     "tip": "Elija un operador autorizado y confirme por escrito si los permisos están incluidos."
+    },
+    {
+     "title": "Reclamación por daños del coche",
+     "desc": "Pueden cobrarle rayones previos al devolver el coche.",
+     "tip": "Fotografíe el coche por todos lados al recogerlo."
+    }
+   ]
+  }
+ },
+ "ru": {
+  "insights": {
+   "currency": "Доллар США (USD)",
+   "plugType": "Тип A, B (120 В, 60 Гц)",
+   "bestMonths": "Ноябрь – апрель (суше и спокойнее море; июнь – октябрь дождливые)",
+   "safety": {
+    "crimeRateSummary": "Преступность низкая; главные риски — мелкие кражи из машин и на пляже и пьяные водители ночью. На Пелелиу и Ангауре ещё встречаются неразорвавшиеся боеприпасы Второй мировой.",
+    "commonScams": [
+     "Нелицензированные лодочные туры: «разрешения включены», а потом доплата",
+     "Счёт за старые повреждения при возврате арендованной машины",
+     "Кражи вещей с пляжа или из машины"
+    ],
+    "safeTravelTips": [
+     "Бронируйте дайвинг и лодки у лицензированных операторов и используйте безопасный для рифов крем.",
+     "На полях сражений Пелелиу не сходите с троп и не трогайте металлические предметы.",
+     "Ночью остерегайтесь пьяных водителей и не оставляйте ценности в машине."
+    ],
+    "emergencyNumbers": {
+     "police": "911",
+     "ambulance": "911",
+     "general": "911"
+    },
+    "safetyScore": 65,
+    "safetyLevel": "Безопасно",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "4G в Короре и на Бабелдаобе; слабый сигнал на Рок‑Айлендс и дальних островах",
+    "costPerGbUsd": "~3 - 8 $",
+    "esimAvailability": "Ограниченная",
+    "bestCarriers": [
+     "PNCC (PalauCel)"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Ограниченное",
+    "costLevel": "Дорого",
+    "singleTicketUsd": "Общественного транспорта нет (такси 5 - 15 $)",
+    "dailyPassUsd": "Аренда авто ~45 - 70 $/день",
+    "popularRideApps": [
+     "Такси",
+     "Шаттлы отелей",
+     "Арендованная машина"
+    ],
+    "taxiAdvice": "Приложений и автобусов нет. Такси в Короре на короткие расстояния стоит несколько долларов; для Бабелдаоба удобнее арендовать машину (правостороннее движение). На острова — только на лодке."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "80 - 120 $",
+    "dailyBudgetMidrangeUsd": "200 - 350 $",
+    "budgetMealUsd": "10 - 18 $",
+    "coffeeUsd": "3 - 5 $",
+    "waterBottleUsd": "1.50 - 2.50 $",
+    "hostelDormUsd": "Хостелов почти нет (гостевые дома 40 - 70 $)",
+    "hotel3StarUsd": "150 - 250 $",
+    "flightCostIndex": "Очень дорого",
+    "flightTip": "В аэропорт Корор‑Бабелдаоб (ROR) летают в основном через Гуам (United), Тайбэй (China Airlines) и Сеул; экологический сбор Pristine Paradise 100 $ включён в билет."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Соблюдайте «Клятву Палау», которую ставят в паспорт: не трогайте кораллы и не кормите морских животных.",
+     "В деревнях и у бай (домов собраний) одевайтесь скромно; без разрешения в бай не входите.",
+     "Старших и традиционных вождей очень уважают — говорите негромко."
+    ],
+    "festivals": [
+     "День независимости (1 октября)",
+     "День конституции (9 июля)",
+     "Общинные празднования Рождества и Нового года"
+    ],
+    "lifestyle": "Островная жизнь с матрилинейными кланами и тесной связью с морем; рыбалка, плантации таро и церемонии с традиционными деньгами (удоуд) по-прежнему важны. В кухне и быту заметно японское и американское влияние."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Южная лагуна Рок‑Айлендс (ЮНЕСКО)",
+     "Озеро медуз (Онгеймл‑Кетау)",
+     "Дайв-сайты Блю‑Корнер и Джерман‑Ченнел",
+     "Бухта Милки‑Уэй с белой глиной",
+     "Водопад Нгардмау (Бабелдаоб)",
+     "Поля сражений Второй мировой на Пелелиу"
+    ],
+    "bestSeasons": "Ноябрь – апрель (суше и спокойнее море; июнь – октябрь дождливые)",
+    "travelStyleTip": "Палау — направление для дайвинга и лодочных прогулок: живите в Короре и выезжайте на Рок‑Айлендс однодневными турами, разрешения оформит турфирма."
+   },
+   "religion": {
+    "primaryReligions": "Католики (~46 %), протестанты (~26 %; евангелисты и адвентисты), традиционная вера модекнгеи (~5 %)",
+    "respectNorms": "В церкви закрывайте плечи и колени; древние каменные памятники и бай священны — не забирайтесь на них.",
+    "sacredSites": [
+     "Айрай‑Бай (старейший традиционный дом собраний)",
+     "Каменные монолиты Бадрулчау",
+     "Церковь Святого Сердца, Корор"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Палауский и английский; в некоторых штатах также сонсорольский, тобийский и японский.",
+    "englishProficiency": "Высокий; английский широко используется в туризме и администрации.",
+    "phrases": [
+     {
+      "phrase": "Alii",
+      "meaning": "Привет",
+      "translation": "Привет",
+      "pronunciation": "ah-LEE"
+     },
+     {
+      "phrase": "Ungil tutau",
+      "meaning": "Доброе утро",
+      "translation": "Доброе утро",
+      "pronunciation": "oo-NGEEL too-TAH-oo"
+     },
+     {
+      "phrase": "Ke ua ngarang?",
+      "meaning": "Как дела?",
+      "translation": "Как дела?",
+      "pronunciation": "keh wah ngah-RAHNG"
+     },
+     {
+      "phrase": "Sulang",
+      "meaning": "Спасибо",
+      "translation": "Спасибо",
+      "pronunciation": "soo-LAHNG"
+     },
+     {
+      "phrase": "Mechikung",
+      "meaning": "До свидания",
+      "translation": "До свидания",
+      "pronunciation": "meh-chee-KOONG"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Острова заселили около 3000 лет назад. С 1885 года они были испанскими, с 1899‑го — германскими; при японском правлении (1914–1944) Корор был столицей Южноморского мандата. После битвы за Пелелиу в 1944 году Палау перешла под опеку США и 1 октября 1994 года стала независимой по Договору о свободной ассоциации с США. В 2015 году страна объявила один из крупнейших морских заповедников мира.",
+    "milestones": [
+     "1899 – продажа Германии",
+     "1944 – битва за Пелелиу",
+     "1994 – независимость",
+     "2015 – национальный морской заповедник"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Пальмовый вор (кокосовый краб)",
+     "Суп из летучей лисицы (традиционный)",
+     "Сашими из свежего тунца"
+    ],
+    "traditionalDrinks": [
+     "Свежая кокосовая вода",
+     "Чай из лемонграсса",
+     "Местное пиво Red Rooster"
+    ],
+    "streetFoodAndDesserts": [
+     "Тапиока с кокосовыми сливками",
+     "Бенто в японском стиле",
+     "Чипсы из таро и хлебного дерева"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Харуо Ремелиик (первый президент)",
+     "Томми Ременгесау-младший (инициатор морского заповедника)",
+     "Кунио Накамура (президент в момент независимости)"
+    ],
+    "strongSectors": [
+     "Дайвинг и морской туризм",
+     "Охрана моря и экотуризм",
+     "Финансирование по договору с США и госсектор"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "В ходу доллар США; в отелях, дайв-центрах и ресторанах Корора принимают карты. Для мелких лавок, такси и сборов штатов берите наличные.",
+    "tippingCulture": "В ресторанах принято 10–15 %; дайв-гидам и экипажу лодки — 10–20 $ в день.",
+    "economicPillars": "Туризм (прежде всего дайвинг), средства по Договору о свободной ассоциации с США, госсектор и мелкое рыболовство."
+   }
+  },
+  "itin": {
+   "routeName": "Острова и рифы Палау: Бабелдаоб, Корор, Рок‑Айлендс и Пелелиу",
+   "routeSummary": "Маршрут на 6 дней: от водопадов и монолитов Бабелдаоба на севере к музеям Корора, лагуне Рок‑Айлендс (ЮНЕСКО) и военной истории Пелелиу на юге.",
+   "totalDays": 6,
+   "idealDurationText": "Маршрут на 6 дней",
+   "bestSeason": "Ноябрь – апрель (суше и спокойнее море; июнь – октябрь дождливые)",
+   "transportMode": "Арендованная машина (Бабелдаоб) + дневные лодочные туры и дайв-боты",
+   "paceLevel": "Активный (дайвинг, снорклинг и лодки)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Остановка 1: Бабелдаоб (водопады и монолиты)",
+     "recommendedDuration": "1 день",
+     "durationBadge": "1 день",
+     "highlights": [
+      "Водопад Нгардмау",
+      "Монолиты Бадрулчау",
+      "Капитолий в Нгерулмуде",
+      "Айрай‑Бай"
+     ],
+     "activities": [
+      "Пройдите по джунглям и освежитесь у водопада.",
+      "Прогуляйтесь среди монолитов с видом на океан.",
+      "Рассмотрите традиционную архитектуру бай."
+     ],
+     "foodAndDrinks": [
+      "Таро с кокосом",
+      "Кокосовая вода"
+     ],
+     "criticalTips": [
+      "Штаты берут небольшие входные сборы — нужны наличные.",
+      "Тропа к водопаду скользкая — наденьте коралловые тапочки."
+     ],
+     "mapsQuery": "Ngardmau Waterfall, Palau"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Остановка 2: Корор (музеи и гавань)",
+     "recommendedDuration": "2 дня",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Национальный музей Белау",
+      "Музей Этписон",
+      "Аквариум Палау (PICRC)",
+      "Закат на мосту KB"
+     ],
+     "activities": [
+      "Посмотрите каменные деньги и резные «доски историй» в музее.",
+      "Пройдите на каяке по мангровым протокам.",
+      "Узнайте о рифовой экосистеме в аквариуме."
+     ],
+     "foodAndDrinks": [
+      "Сашими из тунца",
+      "Бенто",
+      "Пиво Red Rooster"
+     ],
+     "criticalTips": [
+      "Уточняйте цену такси заранее; вечером машин мало.",
+      "Вредные для рифов кремы запрещены — привезите разрешённый."
+     ],
+     "mapsQuery": "Koror, Palau"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Остановка 3: Рок‑Айлендс (озеро медуз и дайвинг)",
+     "recommendedDuration": "2 дня",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Озеро медуз",
+      "Милки‑Уэй",
+      "Блю‑Корнер и Джерман‑Ченнел (манты)",
+      "Песчаная коса Лонг‑Бич"
+     ],
+     "activities": [
+      "Поплавайте с маской среди нежалящих медуз.",
+      "Понырьте с акулами и мантами у Блю‑Корнер.",
+      "Сделайте маску из белой глины в Милки‑Уэй."
+     ],
+     "foodAndDrinks": [
+      "Бенто-пикник на лодке",
+      "Свежие фрукты"
+     ],
+     "criticalTips": [
+      "Для Рок‑Айлендс и озера медуз нужно платное разрешение — оформите через турфирму.",
+      "В озере медуз запрещён дайвинг с аквалангом; не поднимайте ластами ил."
+     ],
+     "mapsQuery": "Rock Islands Southern Lagoon, Palau"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Остановка 4: Пелелиу (история Второй мировой)",
+     "recommendedDuration": "1 день",
+     "durationBadge": "1 день",
+     "highlights": [
+      "Хребет Блади‑Ноуз (Умурброгол)",
+      "Пещера тысячи человек",
+      "Пляж высадки Оранж‑Бич"
+     ],
+     "activities": [
+      "Осмотрите поля сражений с местным гидом.",
+      "Посетите мемориалы и небольшой военный музей.",
+      "На обратном пути понырьте у стены Пелелиу."
+     ],
+     "foodAndDrinks": [
+      "Рифовая рыба на гриле",
+      "Кокосовая вода"
+     ],
+     "criticalTips": [
+      "Из‑за неразорвавшихся боеприпасов не сходите с троп и не трогайте металл.",
+      "Дорога на лодке занимает 1–1,5 часа — подготовьтесь к качке."
+     ],
+     "mapsQuery": "Peleliu, Palau"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Кокосовый краб",
+     "Сашими из тунца",
+     "Таро с кокосом"
+    ],
+    "drinks": [
+     "Кокосовая вода",
+     "Чай из лемонграсса",
+     "Пиво Red Rooster"
+    ],
+    "streetFoods": [
+     "Бенто",
+     "Десерт из тапиоки"
+    ],
+    "diningAdvice": "В Короре в основном японская, корейская и американская кухня; кокосового краба заказывайте только там, где соблюдают законный размер и сезон."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Безопасный для рифов солнцезащитный крем",
+     "Маска для снорклинга и коралловые тапочки",
+     "Адаптер A/B",
+     "Гермомешок"
+    ],
+    "safetyAndEtiquette": [
+     "Не собирайте и не покупайте кораллы, ракушки и изделия из черепах.",
+     "Соблюдайте «Клятву Палау»."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "A",
+     "B"
+    ],
+    "voltage": "120V",
+    "frequency": "60Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Американские розетки A/B, 120 В; нужен адаптер A/B, проверьте поддержку 110–240 В."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Водопроводная вода очищается, но пить её не рекомендуют; используйте бутилированную или фильтрованную.",
+    "vaccines": [
+     "Плановые прививки",
+     "Гепатит A и брюшной тиф",
+     "Защита от комаров (денге)",
+     "Жёлтая лихорадка: сертификат при прибытии из страны риска"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "911"
+   },
+   "tipping": {
+    "custom": "Чаевые по-американски: 10–15 % в ресторанах.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Дайв-гидам и экипажу дают 10–20 $ в день."
+   },
+   "taxFree": {
+    "vatRefundPercent": "PGST (НДС) 10 %; возврата туристам нет",
+    "minSpend": "Не применяется",
+    "customsNote": "В Палау нет возврата налогов туристам. Вывоз кораллов, ракушек и изделий из черепах запрещён; продукты и растения проходят биоконтроль."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "$3 - $8",
+    "topCarriers": [
+     "PNCC (PalauCel)"
+    ],
+    "airportSimTrapWarning": "Основной оператор — PNCC, международных eSIM мало; купите туристическую SIM/eSIM PNCC в аэропорту или офисе в Короре. Роуминг может быть очень дорогим."
+   },
+   "touristScams": [
+    {
+     "title": "Скрытые сборы за разрешения",
+     "desc": "Продавцы дешёвых туров потом отдельно берут плату за разрешение на Рок‑Айлендс и озеро медуз.",
+     "tip": "Выбирайте лицензированного оператора и письменно уточняйте, включены ли разрешения."
+    },
+    {
+     "title": "Претензия за повреждения авто",
+     "desc": "При возврате могут выставить счёт за старые царапины.",
+     "tip": "Сфотографируйте машину со всех сторон при получении."
+    }
+   ]
+  }
+ }
+}

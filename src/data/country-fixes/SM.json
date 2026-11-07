@@ -1,0 +1,1762 @@
+{
+ "tr": {
+  "insights": {
+   "currency": "Euro (EUR)",
+   "bestMonths": "Mayıs – Haziran ve Eylül – Ekim (ılık, kalabalık az) · Temmuz – Ağustos sıcak ve günübirlikçilerle kalabalık; kışın Monte Titano rüzgârlı ve soğuk, aralıkta Noel pazarı var",
+   "safety": {
+    "safetyScore": 85,
+    "safetyLevel": "Olağanüstü Güvenli",
+    "badgeColor": "bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-900/60",
+    "crimeRateSummary": "Dünyanın en düşük suç oranlı ülkelerinden biridir; şiddet suçu neredeyse yoktur. Yaz kalabalığında nadiren yankesicilik görülür; asıl risk dik ve kaygan taş yollardır.",
+    "commonScams": [
+     "Turistik dükkânlarda “gümrüksüz” denilen ama İtalya’dan pek ucuz olmayan elektronik ve parfüm",
+     "Hatıra amaçlı pasaport damgası ve “resmî” sertifikaların fahiş fiyatla satılması",
+     "Kılıç, tatar yayı gibi taklit silahlar (İtalya ve Türkiye’ye sokulması yasak olabilir)"
+    ],
+    "safeTravelTips": [
+     "Kaymaz tabanlı ayakkabı giyin; kuleler arasındaki patika uçurum kenarından geçer.",
+     "San Marino AB üyesi değildir; İtalyan hattınızın AB dolaşım paketi burada geçmeyebilir, operatörünüze sorun.",
+     "Son Rimini otobüsünün saatini önceden kontrol edin; akşam seferleri azdır."
+    ],
+    "emergencyNumbers": {
+     "police": "112 / 113",
+     "ambulance": "118",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "%99 (4G / 5G; San Marino Telecom ve TIM San Marino)",
+    "costPerGbUsd": "1.00 - 3.00 $",
+    "esimAvailability": "İyi (uluslararası eSIM’ler San Marino’yu çoğunlukla İtalya paketiyle kapsar; kapsamı kontrol edin)",
+    "bestCarriers": [
+     "San Marino Telecom (Prima)",
+     "TIM San Marino",
+     "İtalyan operatörler (TIM, Vodafone, WindTre, Iliad)"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "İyi ama sınırlı (tren ve havalimanı yok; Rimini’den otobüs, Borgo Maggiore’den teleferik)",
+    "costLevel": "Orta – pahalı",
+    "singleTicketUsd": "5 - 7 $ (Rimini – San Marino otobüsü, tek yön)",
+    "dailyPassUsd": "Yok (teleferik gidiş-dönüş ~6 - 8 $)",
+    "popularRideApps": [
+     "Uber/Bolt yok",
+     "Telefonla çağrılan yerel taksiler",
+     "Rimini – San Marino otobüs hattı"
+    ],
+    "taxiAdvice": "Ülkeye ulaşımın en pratik yolu Rimini tren istasyonu önünden kalkan San Marino otobüsüdür (~50 dk). Taksiler azdır ve pahalıdır, durağı ya da telefonu tercih edin. Araçla gelirseniz tarihi merkez trafiğe kapalıdır; P1–P13 otoparklarını kullanın."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "70 - 100 $",
+    "dailyBudgetMidrangeUsd": "150 - 250 $",
+    "budgetMealUsd": "15 - 25 $",
+    "coffeeUsd": "1.30 - 2.00 $",
+    "waterBottleUsd": "1.00 - 2.00 $",
+    "hostelDormUsd": "Hostel çok az (genelde Rimini’de 25 - 40 $)",
+    "hotel3StarUsd": "80 - 150 $",
+    "flightCostIndex": "Düşük – orta (Bologna veya Rimini üzerinden)",
+    "flightTip": "San Marino’nun havalimanı yoktur. İstanbul’dan Bologna’ya (BLQ) direkt uçup trenle Rimini’ye (~1 saat), oradan otobüsle San Marino’ya geçin; yazın Rimini (RMI) havalimanına da seferler olabilir."
+   },
+   "plugType": "Tip C, F, L (230V, 50Hz)"
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Sammarinesler İtalyan değildir; onları “İtalyan” diye anmak hoş karşılanmaz.",
+     "Dükkân ve restorana girerken “Buongiorno / Buonasera” demek nezakettir.",
+     "Bazilika ve kiliselerde omuzlar ve dizler kapalı olmalıdır.",
+     "Restoranlarda hesaba kişi başı “coperto” (servis/ekmek ücreti) eklenmesi normaldir."
+    ],
+    "festivals": [
+     "Aziz Marinus Bayramı ve Cumhuriyetin Kuruluşu (3 Eylül; tatar yayı gösterileri)",
+     "Ortaçağ Günleri (Giornate Medioevali, temmuz sonu)",
+     "Kaptan Regentlerin göreve başlama töreni (1 Nisan ve 1 Ekim)"
+    ],
+    "lifestyle": "Dünyanın en eski cumhuriyeti olmakla gurur duyan, iki Kaptan Regentin altı ayda bir değiştiği küçük ve sakin bir topluluk; günlük yaşam, mutfak ve dil komşu Emilia-Romagna’ya çok yakındır."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Guaita (Birinci Kule)",
+     "Cesta (İkinci Kule) ve Eski Silahlar Müzesi",
+     "Montale (Üçüncü Kule)",
+     "Palazzo Pubblico ve Piazza della Libertà (nöbet değişimi)",
+     "San Marino Bazilikası",
+     "Borgo Maggiore ve teleferik"
+    ],
+    "bestSeasons": "Mayıs – Haziran ve Eylül – Ekim (ılık, kalabalık az) · Temmuz – Ağustos sıcak ve günübirlikçilerle kalabalık; kışın Monte Titano rüzgârlı ve soğuk, aralıkta Noel pazarı var",
+    "travelStyleTip": "Çoğu kişi günübirlik gelir; bir gece kalırsanız akşam ve sabah erken saatlerde kuleleri ve manzarayı kalabalıksız görürsünüz. Rimini sahiliyle birleştirmek idealdir."
+   },
+   "religion": {
+    "primaryReligions": "Katolik Hristiyanlık (~%95); küçük Protestan ve diğer topluluklar",
+    "respectNorms": "Kiliselerde ayin sırasında fotoğraf çekmeyin, sessiz olun ve kıyafetinize dikkat edin; şapka çıkarılır.",
+    "sacredSites": [
+     "San Marino Bazilikası (Aziz Marinus’un kalıntıları)",
+     "San Pietro Kilisesi (kayaya oyulmuş “azizlerin yatakları”)",
+     "San Francesco Kilisesi ve Pinakotek"
+    ]
+   },
+   "language": {
+    "officialLanguages": "İtalyanca resmî dildir; yaşlılar arasında Romanyol (Emilia-Romagna) lehçesi de konuşulur.",
+    "englishProficiency": "Orta; dükkân ve otellerde İngilizce yaygın, Almanca ve Rusça da sık duyulur.",
+    "phrases": [
+     {
+      "phrase": "Buongiorno",
+      "meaning": "Günaydın / İyi günler",
+      "translation": "Günaydın / İyi günler",
+      "pronunciation": "bwon-JOR-no"
+     },
+     {
+      "phrase": "Grazie mille",
+      "meaning": "Çok teşekkürler",
+      "translation": "Çok teşekkürler",
+      "pronunciation": "GRAH-tsye MEE-le"
+     },
+     {
+      "phrase": "Per favore",
+      "meaning": "Lütfen",
+      "translation": "Lütfen",
+      "pronunciation": "per fa-VO-re"
+     },
+     {
+      "phrase": "Quanto costa?",
+      "meaning": "Ne kadar?",
+      "translation": "Ne kadar?",
+      "pronunciation": "KWAN-to KO-sta"
+     },
+     {
+      "phrase": "Il conto, per favore",
+      "meaning": "Hesap lütfen",
+      "translation": "Hesap lütfen",
+      "pronunciation": "eel KON-to per fa-VO-re"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Geleneğe göre 301’de Rab adasından gelen taş ustası Aziz Marinus tarafından Monte Titano’da kurulan San Marino, dünyanın hâlâ var olan en eski cumhuriyetidir. 1600 tarihli statüleri yürürlükteki en eski anayasalar arasındadır; İtalya’nın birleşmesi sırasında da bağımsızlığını korumuştur.",
+    "milestones": [
+     "301: Aziz Marinus’un Monte Titano’da topluluk kurması (gelenek)",
+     "1463: Ülkenin bugünkü sınırlarına ulaşması",
+     "1600: Cumhuriyet statülerinin (anayasa) kabulü",
+     "2008: Tarihi merkez ve Monte Titano UNESCO Dünya Mirası"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Piadina (Romagna usulü yassı ekmek, jambon ve peynirle)",
+     "Cappelletti in brodo (et suyunda dolma makarna)",
+     "Nidi di rondine (fırında jambonlu-peynirli makarna ruloları)"
+    ],
+    "traditionalDrinks": [
+     "Sangiovese (yerel kırmızı şarap)",
+     "Biancale (yerel beyaz şarap)",
+     "Espresso ve cappuccino"
+    ],
+    "streetFoodAndDesserts": [
+     "Torta Tre Monti (üç kuleyi simgeleyen gofret-çikolata pastası)",
+     "Bustrengo (kuru meyveli geleneksel kek)",
+     "Piadina büfeleri (piadineria)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Aziz Marinus (efsanevi kurucu)",
+     "Manuel Poggiali (125cc ve 250cc motosiklet dünya şampiyonu)",
+     "Alessandra Perilli (Tokyo 2020’de ülkenin ilk olimpiyat madalyaları, atıcılık)"
+    ],
+    "strongSectors": [
+     "Turizm ve perakende",
+     "Bankacılık ve finans hizmetleri",
+     "Pul ve hatıra para (filateli), seramik ve imalat"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Euro kullanılır (San Marino kendi tasarımlı euro madeni paralarını basar). Kart ve temassız ödeme neredeyse her yerde geçer.",
+    "tippingCulture": "İtalya’daki gibi zorunlu değildir; coperto zaten hesaptadır, iyi hizmette birkaç euro bırakmak yeterlidir.",
+    "economicPillars": "Turizm, bankacılık, imalat (seramik, tekstil, makine), perakende ve filateli."
+   }
+  },
+  "itin": {
+   "routeName": "Monte Titano’nun Zirvesi: Borgo Maggiore, Tarihi Merkez ve Üç Kule",
+   "routeSummary": "Rimini’den otobüsle gelip Borgo Maggiore’den teleferikle tarihi merkeze çıkan, ardından Monte Titano sırtındaki üç kuleyi yürüyerek gezen 3 günlük sakin rota.",
+   "totalDays": 3,
+   "bestSeason": "Mayıs – Haziran ve Eylül – Ekim (ılık, kalabalık az) · Temmuz – Ağustos sıcak ve günübirlikçilerle kalabalık; kışın Monte Titano rüzgârlı ve soğuk, aralıkta Noel pazarı var",
+   "transportMode": "Rimini – San Marino otobüsü, Borgo Maggiore teleferiği ve yürüyüş",
+   "paceLevel": "Rahat (kısa ama dik yürüyüşler)",
+   "signatureGastronomy": {
+    "dishes": [
+     "Piadina",
+     "Cappelletti in brodo",
+     "Nidi di rondine"
+    ],
+    "drinks": [
+     "Sangiovese",
+     "Biancale",
+     "Espresso"
+    ],
+    "streetFoods": [
+     "Torta Tre Monti",
+     "Bustrengo",
+     "Piadina büfeleri"
+    ],
+    "diningAdvice": "Öğle yemeği 12:30 – 14:30, akşam yemeği 19:30’dan sonradır; hesaptaki coperto normaldir. Torta Tre Monti’yi hediyelik olarak paketli alabilirsiniz."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Kaymaz, rahat yürüyüş ayakkabısı",
+     "Rüzgârlık (zirve serin ve rüzgârlıdır)",
+     "Schengen vizesi ve seyahat sigortası (giriş İtalya üzerinden)"
+    ],
+    "safetyAndEtiquette": [
+     "Kiliselerde omuz ve dizleri kapatın.",
+     "Taklit silah ve bıçak hatıralarını almadan önce dönüş ülkenizin gümrük kurallarını kontrol edin."
+    ]
+   },
+   "idealDurationText": "3 Günlük Rota",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "1. Durak: Borgo Maggiore",
+     "recommendedDuration": "1 Gün",
+     "durationBadge": "1 Gün",
+     "highlights": [
+      "Piazza Grande ve haftalık pazar",
+      "Funivia (teleferik) istasyonu",
+      "Pul ve Para Müzesi"
+     ],
+     "activities": [
+      "Teleferikle ~2 dakikada Città’ya çıkıp manzarayı izleyin.",
+      "Piazza Grande’deki kafelerde bir espresso için.",
+      "Pul koleksiyonuna göz atın; San Marino pulları dünyaca ünlüdür."
+     ],
+     "foodAndDrinks": [
+      "Piadina",
+      "Espresso"
+     ],
+     "criticalTips": [
+      "Otobüsten Borgo Maggiore durağında inip teleferiğe binmek, arabayla yukarı çıkmaktan kolaydır.",
+      "Teleferik rüzgârlı havalarda geçici olarak durabilir."
+     ],
+     "mapsQuery": "Borgo Maggiore, San Marino"
+    },
+    {
+     "stopNumber": 2,
+     "name": "2. Durak: Città di San Marino (Tarihi Merkez)",
+     "recommendedDuration": "1 Gün",
+     "durationBadge": "1 Gün",
+     "highlights": [
+      "Palazzo Pubblico ve nöbet değişimi",
+      "San Marino Bazilikası",
+      "Devlet Müzesi (Museo di Stato)",
+      "Cava dei Balestrieri (tatar yayı alanı)"
+     ],
+     "activities": [
+      "Piazza della Libertà’da yazın saat başı yapılan nöbet değişimini izleyin.",
+      "Surların üstünden Adriyatik ve Apeninler manzarasını izleyin.",
+      "Turist ofisinde pasaportunuza hatıra damgası bastırın (ücretli)."
+     ],
+     "foodAndDrinks": [
+      "Nidi di rondine",
+      "Cappelletti in brodo",
+      "Sangiovese"
+     ],
+     "criticalTips": [
+      "Ana caddelerdeki menü fiyatları yüksektir; arka sokaklardaki trattorialara bakın.",
+      "Müzeler için kombine bilet (Musei di Stato) daha avantajlıdır."
+     ],
+     "mapsQuery": "Piazza della Libertà, San Marino"
+    },
+    {
+     "stopNumber": 3,
+     "name": "3. Durak: Monte Titano ve Üç Kule",
+     "recommendedDuration": "1 Gün",
+     "durationBadge": "1 Gün",
+     "highlights": [
+      "Guaita (Birinci Kule)",
+      "Cesta (İkinci Kule) – 750 m ile en yüksek nokta",
+      "Montale (Üçüncü Kule)",
+      "Passo delle Streghe (Cadılar Geçidi) patikası"
+     ],
+     "activities": [
+      "Guaita’dan Cesta’ya sırt boyunca yürüyün.",
+      "Guaita’nın dar merdivenlerinden kuleye tırmanın.",
+      "Gün batımını kulelerin arasından izleyin."
+     ],
+     "foodAndDrinks": [
+      "Torta Tre Monti",
+      "Biancale"
+     ],
+     "criticalTips": [
+      "Montale kulesinin içi ziyarete kapalıdır, yalnızca dışarıdan görülür.",
+      "Yağmurdan sonra kayalar kaygandır; çocuklarla korkuluklara dikkat edin."
+     ],
+     "mapsQuery": "Guaita, San Marino"
+    }
+   ]
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F",
+     "L"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "İtalya’daki gibi C/F (Schuko) ve L tipi (üç sıralı pimli) prizler kullanılır; Türk fişleri F ve çoğu L prizine uyar, kalın Schuko fişi L prize girmezse ucuz bir İtalyan adaptörü yeterlidir."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Musluk suyu AB standartlarında ve içilebilir; şehirdeki çeşmelerden şişenizi doldurabilirsiniz.",
+    "vaccines": [
+     "Rutin aşılar (tetanoz-difteri, KKK)",
+     "Özel bir aşı gerekmez"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "118"
+   },
+   "tipping": {
+    "custom": "Zorunlu değil; coperto hesaba dahildir, iyi hizmette yuvarlamak yeterlidir.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "Barda ayakta içilen kahvede bahşiş beklenmez."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Yok (KDV yerine tek aşamalı “imposta monofase” vergisi)",
+    "minSpend": "Uygulanmaz",
+    "customsNote": "San Marino AB üyesi değildir ve AB tarzı turist KDV iadesi sunmaz; bazı ürünler İtalya’dan biraz ucuz olabilir. San Marino ile İtalya arasında gümrük kontrolü yoktur, ancak AB dışına çıkışta (Türkiye’ye dönüşte) Türk gümrük limitleri geçerlidir."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.00 - $3.00",
+    "topCarriers": [
+     "San Marino Telecom",
+     "TIM San Marino",
+     "TIM / Vodafone / WindTre (Italia)"
+    ],
+    "airportSimTrapWarning": "San Marino’da havalimanı yoktur; İtalyan SIM veya eSIM alıyorsanız bunu Bologna’da ya da önceden yapın. Bazı İtalyan ve AB hatları San Marino’yu AB dışı sayıp ek dolaşım ücreti alabilir, paket koşullarını kontrol edin."
+   },
+   "touristScams": [
+    {
+     "title": "“Gümrüksüz” fiyat yanılgısı",
+     "desc": "Ana caddedeki dükkânlar elektronik, parfüm ve saatleri “vergisiz” diye sunar, fakat fiyatlar çoğu zaman internetten pahalıdır.",
+     "tip": "Satın almadan önce telefonunuzdan fiyat karşılaştırın ve fatura isteyin."
+    },
+    {
+     "title": "Pahalı otopark ve sahte “resmî” park görevlileri",
+     "desc": "Yazın merkeze yakın otoparklar dolar; yol kenarında yön gösterip para isteyenler olabilir.",
+     "tip": "Yalnızca numaralı resmî otoparkları (P1–P13) ve ödeme makinelerini kullanın; en kolayı otobüsle gelmektir."
+    }
+   ]
+  }
+ },
+ "en": {
+  "insights": {
+   "currency": "Euro (EUR)",
+   "bestMonths": "May – June and September – October (mild, fewer crowds) · July – August is hot and busy with day-trippers; winter on Monte Titano is windy and cold, with a Christmas market in December",
+   "safety": {
+    "safetyScore": 85,
+    "safetyLevel": "Exceptional Safety",
+    "badgeColor": "bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-900/60",
+    "crimeRateSummary": "One of the lowest-crime countries in the world; violent crime is almost non-existent. Rare pickpocketing occurs in summer crowds; the main hazard is steep, slippery stone paths.",
+    "commonScams": [
+     "Electronics and perfume sold as “duty-free bargains” that are barely cheaper than in Italy",
+     "Overpriced souvenir passport stamps and “official” certificates",
+     "Replica weapons such as swords and crossbows (may be illegal to bring into Italy or Turkey)"
+    ],
+    "safeTravelTips": [
+     "Wear non-slip shoes; the path between the towers runs along cliff edges.",
+     "San Marino is not in the EU, so an EU roaming bundle may not apply; check with your operator.",
+     "Check the last bus to Rimini in advance; evening services are few."
+    ],
+    "emergencyNumbers": {
+     "police": "112 / 113",
+     "ambulance": "118",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99% (4G / 5G; San Marino Telecom and TIM San Marino)",
+    "costPerGbUsd": "1.00 - 3.00 $",
+    "esimAvailability": "Good (international eSIMs usually cover San Marino under Italy plans; check coverage)",
+    "bestCarriers": [
+     "San Marino Telecom (Prima)",
+     "TIM San Marino",
+     "Italian operators (TIM, Vodafone, WindTre, Iliad)"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Good but limited (no train or airport; bus from Rimini, cable car from Borgo Maggiore)",
+    "costLevel": "Moderate – expensive",
+    "singleTicketUsd": "5 - 7 $ (Rimini – San Marino bus, one way)",
+    "dailyPassUsd": "None (cable car return ~6 - 8 $)",
+    "popularRideApps": [
+     "No Uber/Bolt",
+     "Local taxis booked by phone",
+     "Rimini – San Marino bus line"
+    ],
+    "taxiAdvice": "The easiest way in is the San Marino bus from outside Rimini railway station (~50 min). Taxis are few and pricey; use a rank or call one. If driving, the historic centre is closed to traffic; use car parks P1–P13."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "70 - 100 $",
+    "dailyBudgetMidrangeUsd": "150 - 250 $",
+    "budgetMealUsd": "15 - 25 $",
+    "coffeeUsd": "1.30 - 2.00 $",
+    "waterBottleUsd": "1.00 - 2.00 $",
+    "hostelDormUsd": "Very few hostels (usually in Rimini, 25 - 40 $)",
+    "hotel3StarUsd": "80 - 150 $",
+    "flightCostIndex": "Low – moderate (via Bologna or Rimini)",
+    "flightTip": "San Marino has no airport. Fly from Istanbul directly to Bologna (BLQ), take the train to Rimini (~1 h), then the bus to San Marino; in summer there may also be flights to Rimini (RMI)."
+   },
+   "plugType": "Type C, F, L (230V, 50Hz)"
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Sammarinese are not Italians; calling them Italian is not appreciated.",
+     "Saying “Buongiorno / Buonasera” when entering shops and restaurants is polite.",
+     "Shoulders and knees should be covered in the basilica and churches.",
+     "A per-person “coperto” (cover charge) on restaurant bills is normal."
+    ],
+    "festivals": [
+     "Feast of Saint Marinus and Foundation of the Republic (3 September; crossbow displays)",
+     "Medieval Days (Giornate Medioevali, late July)",
+     "Investiture of the Captains Regent (1 April and 1 October)"
+    ],
+    "lifestyle": "A small, quiet community proud of being the world’s oldest republic, where two Captains Regent change every six months; daily life, cuisine and language are close to neighbouring Emilia-Romagna."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Guaita (First Tower)",
+     "Cesta (Second Tower) and Museum of Ancient Arms",
+     "Montale (Third Tower)",
+     "Palazzo Pubblico and Piazza della Libertà (changing of the guard)",
+     "Basilica of San Marino",
+     "Borgo Maggiore and the cable car"
+    ],
+    "bestSeasons": "May – June and September – October (mild, fewer crowds) · July – August is hot and busy with day-trippers; winter on Monte Titano is windy and cold, with a Christmas market in December",
+    "travelStyleTip": "Most visitors come as day-trippers; staying a night lets you enjoy the towers and views without crowds in the evening and early morning. Ideal to combine with the Rimini coast."
+   },
+   "religion": {
+    "primaryReligions": "Roman Catholic Christianity (~95%); small Protestant and other communities",
+    "respectNorms": "Do not take photos during mass, keep quiet and dress modestly in churches; remove hats.",
+    "sacredSites": [
+     "Basilica of San Marino (relics of Saint Marinus)",
+     "Church of San Pietro (the rock-cut “beds of the saints”)",
+     "Church of San Francesco and art gallery"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Italian is the official language; older people also speak the Romagnol dialect.",
+    "englishProficiency": "Moderate; English is common in shops and hotels, and German and Russian are often heard too.",
+    "phrases": [
+     {
+      "phrase": "Buongiorno",
+      "meaning": "Good morning / Good day",
+      "translation": "Good morning / Good day",
+      "pronunciation": "bwon-JOR-no"
+     },
+     {
+      "phrase": "Grazie mille",
+      "meaning": "Thank you very much",
+      "translation": "Thank you very much",
+      "pronunciation": "GRAH-tsye MEE-le"
+     },
+     {
+      "phrase": "Per favore",
+      "meaning": "Please",
+      "translation": "Please",
+      "pronunciation": "per fa-VO-re"
+     },
+     {
+      "phrase": "Quanto costa?",
+      "meaning": "How much is it?",
+      "translation": "How much is it?",
+      "pronunciation": "KWAN-to KO-sta"
+     },
+     {
+      "phrase": "Il conto, per favore",
+      "meaning": "The bill, please",
+      "translation": "The bill, please",
+      "pronunciation": "eel KON-to per fa-VO-re"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "According to tradition founded on Monte Titano in 301 by Saint Marinus, a stonemason from the island of Rab, San Marino is the oldest surviving republic in the world. Its statutes of 1600 are among the oldest constitutions still in force, and it kept its independence during Italian unification.",
+    "milestones": [
+     "301: Saint Marinus founds a community on Monte Titano (tradition)",
+     "1463: The country reaches its present borders",
+     "1600: Adoption of the Republic’s statutes (constitution)",
+     "2008: Historic centre and Monte Titano become a UNESCO World Heritage Site"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Piadina (Romagna flatbread with ham and cheese)",
+     "Cappelletti in brodo (filled pasta in broth)",
+     "Nidi di rondine (baked pasta rolls with ham and cheese)"
+    ],
+    "traditionalDrinks": [
+     "Sangiovese (local red wine)",
+     "Biancale (local white wine)",
+     "Espresso and cappuccino"
+    ],
+    "streetFoodAndDesserts": [
+     "Torta Tre Monti (wafer and chocolate cake symbolising the three towers)",
+     "Bustrengo (traditional cake with dried fruit)",
+     "Piadina kiosks (piadineria)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Saint Marinus (legendary founder)",
+     "Manuel Poggiali (125cc and 250cc motorcycle world champion)",
+     "Alessandra Perilli (the country’s first Olympic medals, shooting, Tokyo 2020)"
+    ],
+    "strongSectors": [
+     "Tourism and retail",
+     "Banking and financial services",
+     "Stamps and commemorative coins (philately), ceramics and manufacturing"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "The euro is used (San Marino mints its own euro coin designs). Cards and contactless payments are accepted almost everywhere.",
+    "tippingCulture": "As in Italy, tipping is not required; the coperto is already on the bill, and leaving a few euros for good service is enough.",
+    "economicPillars": "Tourism, banking, manufacturing (ceramics, textiles, machinery), retail and philately."
+   }
+  },
+  "itin": {
+   "routeName": "Top of Monte Titano: Borgo Maggiore, the Historic Centre and the Three Towers",
+   "routeSummary": "A relaxed 3-day route: bus from Rimini, cable car from Borgo Maggiore up to the historic centre, then a walk along the Monte Titano ridge to the three towers.",
+   "totalDays": 3,
+   "bestSeason": "May – June and September – October (mild, fewer crowds) · July – August is hot and busy with day-trippers; winter on Monte Titano is windy and cold, with a Christmas market in December",
+   "transportMode": "Rimini – San Marino bus, Borgo Maggiore cable car and walking",
+   "paceLevel": "Relaxed (short but steep walks)",
+   "signatureGastronomy": {
+    "dishes": [
+     "Piadina",
+     "Cappelletti in brodo",
+     "Nidi di rondine"
+    ],
+    "drinks": [
+     "Sangiovese",
+     "Biancale",
+     "Espresso"
+    ],
+    "streetFoods": [
+     "Torta Tre Monti",
+     "Bustrengo",
+     "Piadina kiosks"
+    ],
+    "diningAdvice": "Lunch is 12:30 – 14:30 and dinner after 19:30; a coperto on the bill is normal. Torta Tre Monti is sold boxed as a souvenir."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Comfortable non-slip walking shoes",
+     "Windbreaker (the summit is cool and windy)",
+     "Schengen visa and travel insurance (entry is via Italy)"
+    ],
+    "safetyAndEtiquette": [
+     "Cover shoulders and knees in churches.",
+     "Check your home country’s customs rules before buying replica weapons or knives."
+    ]
+   },
+   "idealDurationText": "3-Day Itinerary",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stop 1: Borgo Maggiore",
+     "recommendedDuration": "1 Day",
+     "durationBadge": "1 Day",
+     "highlights": [
+      "Piazza Grande and its weekly market",
+      "The funivia (cable car) station",
+      "Stamp and Coin Museum"
+     ],
+     "activities": [
+      "Ride the cable car up to the Città in about 2 minutes and enjoy the view.",
+      "Have an espresso in the cafés on Piazza Grande.",
+      "Browse the stamp collection; San Marino stamps are famous worldwide."
+     ],
+     "foodAndDrinks": [
+      "Piadina",
+      "Espresso"
+     ],
+     "criticalTips": [
+      "Getting off the bus at Borgo Maggiore and taking the cable car is easier than driving up.",
+      "The cable car may pause temporarily in strong wind."
+     ],
+     "mapsQuery": "Borgo Maggiore, San Marino"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stop 2: Città di San Marino (Historic Centre)",
+     "recommendedDuration": "1 Day",
+     "durationBadge": "1 Day",
+     "highlights": [
+      "Palazzo Pubblico and the changing of the guard",
+      "Basilica of San Marino",
+      "State Museum (Museo di Stato)",
+      "Cava dei Balestrieri (crossbow ground)"
+     ],
+     "activities": [
+      "Watch the hourly summer changing of the guard on Piazza della Libertà.",
+      "Take in Adriatic and Apennine views from the walls.",
+      "Get a souvenir stamp in your passport at the tourist office (fee)."
+     ],
+     "foodAndDrinks": [
+      "Nidi di rondine",
+      "Cappelletti in brodo",
+      "Sangiovese"
+     ],
+     "criticalTips": [
+      "Menus on the main streets are pricey; look at trattorias on the back lanes.",
+      "A combined museum ticket is better value."
+     ],
+     "mapsQuery": "Piazza della Libertà, San Marino"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stop 3: Monte Titano and the Three Towers",
+     "recommendedDuration": "1 Day",
+     "durationBadge": "1 Day",
+     "highlights": [
+      "Guaita (First Tower)",
+      "Cesta (Second Tower) – the highest point at 750 m",
+      "Montale (Third Tower)",
+      "Passo delle Streghe (Witches’ Pass) trail"
+     ],
+     "activities": [
+      "Walk the ridge from Guaita to Cesta.",
+      "Climb Guaita’s narrow stairs to the top.",
+      "Watch the sunset between the towers."
+     ],
+     "foodAndDrinks": [
+      "Torta Tre Monti",
+      "Biancale"
+     ],
+     "criticalTips": [
+      "Montale’s interior is closed to visitors; it is seen from outside only.",
+      "Rocks are slippery after rain; watch children near the railings."
+     ],
+     "mapsQuery": "Guaita, San Marino"
+    }
+   ]
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F",
+     "L"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "As in Italy, C/F (Schuko) and type L (three in-line pins) sockets are used; European plugs fit F and most L sockets, and if a thick Schuko plug will not fit an L socket a cheap Italian adapter solves it."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Tap water meets EU standards and is drinkable; you can refill bottles at public fountains.",
+    "vaccines": [
+     "Routine vaccinations (tetanus-diphtheria, MMR)",
+     "No special vaccines required"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "118"
+   },
+   "tipping": {
+    "custom": "Not required; the coperto is on the bill, rounding up for good service is enough.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "No tip is expected for coffee drunk standing at the bar."
+   },
+   "taxFree": {
+    "vatRefundPercent": "None (a single-stage “imposta monofase” tax instead of VAT)",
+    "minSpend": "Not applicable",
+    "customsNote": "San Marino is not in the EU and offers no EU-style tourist VAT refund; some goods can be slightly cheaper than in Italy. There is no customs check between San Marino and Italy, but Turkish customs allowances apply on your return home."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.00 - $3.00",
+    "topCarriers": [
+     "San Marino Telecom",
+     "TIM San Marino",
+     "TIM / Vodafone / WindTre (Italia)"
+    ],
+    "airportSimTrapWarning": "San Marino has no airport; buy an Italian SIM or eSIM in Bologna or in advance. Some Italian and EU lines treat San Marino as non-EU and charge extra roaming, so check your plan terms."
+   },
+   "touristScams": [
+    {
+     "title": "The “duty-free” price illusion",
+     "desc": "Shops on the main street advertise electronics, perfume and watches as “tax-free”, but prices are often higher than online.",
+     "tip": "Compare prices on your phone before buying and ask for a receipt."
+    },
+    {
+     "title": "Expensive parking and unofficial “attendants”",
+     "desc": "In summer car parks near the centre fill up, and some people direct you to spots and ask for cash.",
+     "tip": "Use only the numbered official car parks (P1–P13) and pay machines; coming by bus is easiest."
+    }
+   ]
+  }
+ },
+ "de": {
+  "insights": {
+   "currency": "Euro (EUR)",
+   "bestMonths": "Mai – Juni und September – Oktober (mild, weniger Andrang) · Juli – August heiß und voller Tagesgäste; im Winter ist der Monte Titano windig und kalt, im Dezember gibt es einen Weihnachtsmarkt",
+   "safety": {
+    "safetyScore": 85,
+    "safetyLevel": "Außergewöhnlich sicher",
+    "badgeColor": "bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-900/60",
+    "crimeRateSummary": "Eines der Länder mit der niedrigsten Kriminalität der Welt; Gewaltverbrechen gibt es kaum. Im Sommergedränge kommt selten Taschendiebstahl vor; das Hauptrisiko sind steile, rutschige Steinwege.",
+    "commonScams": [
+     "Elektronik und Parfüm als „zollfreie Schnäppchen“, die kaum günstiger als in Italien sind",
+     "Überteuerte Souvenir-Passstempel und „offizielle“ Urkunden",
+     "Waffen-Repliken wie Schwerter und Armbrüste (Einfuhr nach Italien oder in die Türkei kann verboten sein)"
+    ],
+    "safeTravelTips": [
+     "Tragen Sie rutschfeste Schuhe; der Weg zwischen den Türmen führt an Felskanten entlang.",
+     "San Marino ist nicht in der EU; EU-Roaming gilt eventuell nicht – fragen Sie Ihren Anbieter.",
+     "Prüfen Sie vorab den letzten Bus nach Rimini; abends fahren nur wenige."
+    ],
+    "emergencyNumbers": {
+     "police": "112 / 113",
+     "ambulance": "118",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99 % (4G / 5G; San Marino Telecom und TIM San Marino)",
+    "costPerGbUsd": "1.00 - 3.00 $",
+    "esimAvailability": "Gut (internationale eSIMs decken San Marino meist über Italien-Tarife ab; prüfen Sie die Abdeckung)",
+    "bestCarriers": [
+     "San Marino Telecom (Prima)",
+     "TIM San Marino",
+     "Italienische Anbieter (TIM, Vodafone, WindTre, Iliad)"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Gut, aber begrenzt (kein Zug, kein Flughafen; Bus ab Rimini, Seilbahn ab Borgo Maggiore)",
+    "costLevel": "Mittel – teuer",
+    "singleTicketUsd": "5 - 7 $ (Bus Rimini – San Marino, einfach)",
+    "dailyPassUsd": "Keiner (Seilbahn hin und zurück ~6 - 8 $)",
+    "popularRideApps": [
+     "Kein Uber/Bolt",
+     "Telefonisch bestellte lokale Taxis",
+     "Buslinie Rimini – San Marino"
+    ],
+    "taxiAdvice": "Am einfachsten kommt man mit dem San-Marino-Bus ab Bahnhof Rimini (~50 Min.). Taxis sind selten und teuer; nutzen Sie Stand oder Telefon. Mit dem Auto: Die Altstadt ist gesperrt, nutzen Sie die Parkplätze P1–P13."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "70 - 100 $",
+    "dailyBudgetMidrangeUsd": "150 - 250 $",
+    "budgetMealUsd": "15 - 25 $",
+    "coffeeUsd": "1.30 - 2.00 $",
+    "waterBottleUsd": "1.00 - 2.00 $",
+    "hostelDormUsd": "Kaum Hostels (meist in Rimini, 25 - 40 $)",
+    "hotel3StarUsd": "80 - 150 $",
+    "flightCostIndex": "Niedrig – mittel (über Bologna oder Rimini)",
+    "flightTip": "San Marino hat keinen Flughafen. Fliegen Sie von Istanbul direkt nach Bologna (BLQ), dann mit dem Zug nach Rimini (~1 Std.) und per Bus nach San Marino; im Sommer gibt es teils Flüge nach Rimini (RMI)."
+   },
+   "plugType": "Typ C, F, L (230V, 50Hz)"
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Sammarinesen sind keine Italiener; sie so zu nennen kommt nicht gut an.",
+     "Beim Betreten von Geschäften „Buongiorno / Buonasera“ zu sagen ist höflich.",
+     "In Basilika und Kirchen Schultern und Knie bedecken.",
+     "Ein „Coperto“ (Gedeck) pro Person auf der Rechnung ist normal."
+    ],
+    "festivals": [
+     "Fest des hl. Marinus und Gründung der Republik (3. September; Armbrustvorführungen)",
+     "Mittelalterliche Tage (Giornate Medioevali, Ende Juli)",
+     "Amtseinführung der Capitani Reggenti (1. April und 1. Oktober)"
+    ],
+    "lifestyle": "Eine kleine, ruhige Gemeinschaft, stolz auf die älteste Republik der Welt, deren zwei Capitani Reggenti alle sechs Monate wechseln; Alltag, Küche und Sprache ähneln der Emilia-Romagna."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Guaita (Erster Turm)",
+     "Cesta (Zweiter Turm) und Museum alter Waffen",
+     "Montale (Dritter Turm)",
+     "Palazzo Pubblico und Piazza della Libertà (Wachablösung)",
+     "Basilika von San Marino",
+     "Borgo Maggiore und die Seilbahn"
+    ],
+    "bestSeasons": "Mai – Juni und September – Oktober (mild, weniger Andrang) · Juli – August heiß und voller Tagesgäste; im Winter ist der Monte Titano windig und kalt, im Dezember gibt es einen Weihnachtsmarkt",
+    "travelStyleTip": "Die meisten kommen als Tagesgäste; wer übernachtet, erlebt Türme und Ausblicke abends und frühmorgens ohne Andrang. Ideal in Kombination mit der Küste von Rimini."
+   },
+   "religion": {
+    "primaryReligions": "Römisch-katholisches Christentum (~95 %); kleine protestantische und andere Gemeinden",
+    "respectNorms": "Während der Messe nicht fotografieren, leise sein und dezent gekleidet sein; Hüte abnehmen.",
+    "sacredSites": [
+     "Basilika von San Marino (Reliquien des hl. Marinus)",
+     "Kirche San Pietro (in den Fels gehauene „Betten der Heiligen“)",
+     "Kirche San Francesco und Pinakothek"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Amtssprache ist Italienisch; Ältere sprechen auch den romagnolischen Dialekt.",
+    "englishProficiency": "Mittel; in Geschäften und Hotels ist Englisch verbreitet, oft auch Deutsch und Russisch.",
+    "phrases": [
+     {
+      "phrase": "Buongiorno",
+      "meaning": "Guten Morgen / Guten Tag",
+      "translation": "Guten Morgen / Guten Tag",
+      "pronunciation": "bwon-JOR-no"
+     },
+     {
+      "phrase": "Grazie mille",
+      "meaning": "Vielen Dank",
+      "translation": "Vielen Dank",
+      "pronunciation": "GRAH-tsye MEE-le"
+     },
+     {
+      "phrase": "Per favore",
+      "meaning": "Bitte",
+      "translation": "Bitte",
+      "pronunciation": "per fa-VO-re"
+     },
+     {
+      "phrase": "Quanto costa?",
+      "meaning": "Wie viel kostet das?",
+      "translation": "Wie viel kostet das?",
+      "pronunciation": "KWAN-to KO-sta"
+     },
+     {
+      "phrase": "Il conto, per favore",
+      "meaning": "Die Rechnung, bitte",
+      "translation": "Die Rechnung, bitte",
+      "pronunciation": "eel KON-to per fa-VO-re"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Der Überlieferung nach 301 vom Steinmetz Marinus von der Insel Rab auf dem Monte Titano gegründet, ist San Marino die älteste bestehende Republik der Welt. Seine Statuten von 1600 gehören zu den ältesten geltenden Verfassungen; auch bei der Einigung Italiens blieb es unabhängig.",
+    "milestones": [
+     "301: Der hl. Marinus gründet eine Gemeinschaft auf dem Monte Titano (Überlieferung)",
+     "1463: Das Land erreicht seine heutigen Grenzen",
+     "1600: Annahme der Statuten (Verfassung)",
+     "2008: Altstadt und Monte Titano werden UNESCO-Welterbe"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Piadina (romagnolisches Fladenbrot mit Schinken und Käse)",
+     "Cappelletti in brodo (gefüllte Pasta in Brühe)",
+     "Nidi di rondine (überbackene Nudelröllchen mit Schinken und Käse)"
+    ],
+    "traditionalDrinks": [
+     "Sangiovese (lokaler Rotwein)",
+     "Biancale (lokaler Weißwein)",
+     "Espresso und Cappuccino"
+    ],
+    "streetFoodAndDesserts": [
+     "Torta Tre Monti (Waffel-Schokoladen-Torte, Symbol der drei Türme)",
+     "Bustrengo (traditioneller Kuchen mit Trockenfrüchten)",
+     "Piadina-Kioske (Piadineria)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Hl. Marinus (legendärer Gründer)",
+     "Manuel Poggiali (Motorrad-Weltmeister 125 ccm und 250 ccm)",
+     "Alessandra Perilli (erste Olympiamedaillen des Landes, Schießen, Tokio 2020)"
+    ],
+    "strongSectors": [
+     "Tourismus und Einzelhandel",
+     "Bank- und Finanzdienstleistungen",
+     "Briefmarken und Gedenkmünzen (Philatelie), Keramik und Industrie"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Bezahlt wird mit Euro (San Marino prägt eigene Euromünzen). Karten und kontaktloses Zahlen gehen fast überall.",
+    "tippingCulture": "Wie in Italien nicht nötig; das Coperto steht schon auf der Rechnung, ein paar Euro bei gutem Service genügen.",
+    "economicPillars": "Tourismus, Banken, Industrie (Keramik, Textil, Maschinen), Handel und Philatelie."
+   }
+  },
+  "itin": {
+   "routeName": "Auf dem Monte Titano: Borgo Maggiore, Altstadt und die Drei Türme",
+   "routeSummary": "Eine entspannte 3-tägige Route: Bus ab Rimini, Seilbahn von Borgo Maggiore in die Altstadt, dann zu Fuß über den Grat des Monte Titano zu den drei Türmen.",
+   "totalDays": 3,
+   "bestSeason": "Mai – Juni und September – Oktober (mild, weniger Andrang) · Juli – August heiß und voller Tagesgäste; im Winter ist der Monte Titano windig und kalt, im Dezember gibt es einen Weihnachtsmarkt",
+   "transportMode": "Bus Rimini – San Marino, Seilbahn Borgo Maggiore und zu Fuß",
+   "paceLevel": "Entspannt (kurze, aber steile Wege)",
+   "signatureGastronomy": {
+    "dishes": [
+     "Piadina",
+     "Cappelletti in brodo",
+     "Nidi di rondine"
+    ],
+    "drinks": [
+     "Sangiovese",
+     "Biancale",
+     "Espresso"
+    ],
+    "streetFoods": [
+     "Torta Tre Monti",
+     "Bustrengo",
+     "Piadina-Kioske"
+    ],
+    "diningAdvice": "Mittagessen 12:30 – 14:30, Abendessen ab 19:30; Coperto auf der Rechnung ist normal. Torta Tre Monti gibt es verpackt als Mitbringsel."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Bequeme, rutschfeste Schuhe",
+     "Windjacke (am Gipfel kühl und windig)",
+     "Schengen-Visum und Reiseversicherung (Einreise über Italien)"
+    ],
+    "safetyAndEtiquette": [
+     "Schultern und Knie in Kirchen bedecken.",
+     "Prüfen Sie vor dem Kauf von Waffen-Repliken oder Messern die Zollregeln Ihres Heimatlandes."
+    ]
+   },
+   "idealDurationText": "3-tägige Route",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stopp 1: Borgo Maggiore",
+     "recommendedDuration": "1 Tag",
+     "durationBadge": "1 Tag",
+     "highlights": [
+      "Piazza Grande und Wochenmarkt",
+      "Talstation der Funivia (Seilbahn)",
+      "Briefmarken- und Münzmuseum"
+     ],
+     "activities": [
+      "Fahren Sie in ~2 Minuten mit der Seilbahn in die Città und genießen Sie den Blick.",
+      "Trinken Sie einen Espresso in den Cafés der Piazza Grande.",
+      "Sehen Sie sich die Briefmarken an; San-Marino-Marken sind weltbekannt."
+     ],
+     "foodAndDrinks": [
+      "Piadina",
+      "Espresso"
+     ],
+     "criticalTips": [
+      "An der Haltestelle Borgo Maggiore aussteigen und Seilbahn fahren ist einfacher als hochzufahren.",
+      "Bei starkem Wind kann die Seilbahn kurz stillstehen."
+     ],
+     "mapsQuery": "Borgo Maggiore, San Marino"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stopp 2: Città di San Marino (Altstadt)",
+     "recommendedDuration": "1 Tag",
+     "durationBadge": "1 Tag",
+     "highlights": [
+      "Palazzo Pubblico und Wachablösung",
+      "Basilika von San Marino",
+      "Staatsmuseum (Museo di Stato)",
+      "Cava dei Balestrieri (Armbrustplatz)"
+     ],
+     "activities": [
+      "Sehen Sie im Sommer die stündliche Wachablösung auf der Piazza della Libertà.",
+      "Genießen Sie von den Mauern den Blick auf Adria und Apennin.",
+      "Lassen Sie sich im Touristenbüro einen Souvenirstempel geben (gebührenpflichtig)."
+     ],
+     "foodAndDrinks": [
+      "Nidi di rondine",
+      "Cappelletti in brodo",
+      "Sangiovese"
+     ],
+     "criticalTips": [
+      "Auf den Hauptstraßen ist es teuer; probieren Sie Trattorien in Nebengassen.",
+      "Ein Kombiticket für die Museen ist günstiger."
+     ],
+     "mapsQuery": "Piazza della Libertà, San Marino"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stopp 3: Monte Titano und die Drei Türme",
+     "recommendedDuration": "1 Tag",
+     "durationBadge": "1 Tag",
+     "highlights": [
+      "Guaita (Erster Turm)",
+      "Cesta (Zweiter Turm) – höchster Punkt mit 750 m",
+      "Montale (Dritter Turm)",
+      "Pfad Passo delle Streghe (Hexenpass)"
+     ],
+     "activities": [
+      "Wandern Sie über den Grat von Guaita nach Cesta.",
+      "Steigen Sie die engen Treppen der Guaita hinauf.",
+      "Erleben Sie den Sonnenuntergang zwischen den Türmen."
+     ],
+     "foodAndDrinks": [
+      "Torta Tre Monti",
+      "Biancale"
+     ],
+     "criticalTips": [
+      "Montale ist innen nicht zugänglich, nur von außen zu sehen.",
+      "Nach Regen sind die Felsen rutschig; achten Sie auf Kinder an den Geländern."
+     ],
+     "mapsQuery": "Guaita, San Marino"
+    }
+   ]
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F",
+     "L"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Wie in Italien gibt es C/F (Schuko) und Typ L (drei Stifte in Reihe); Eurostecker passen in F- und die meisten L-Dosen, für dicke Schukostecker reicht ein günstiger italienischer Adapter."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Leitungswasser entspricht EU-Standards und ist trinkbar; Flaschen können an Brunnen aufgefüllt werden.",
+    "vaccines": [
+     "Standardimpfungen (Tetanus-Diphtherie, MMR)",
+     "Keine besonderen Impfungen nötig"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "118"
+   },
+   "tipping": {
+    "custom": "Nicht nötig; Coperto ist enthalten, bei gutem Service aufrunden.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "Für den Kaffee an der Bar wird kein Trinkgeld erwartet."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Keine (statt MwSt. eine einstufige „Imposta monofase“)",
+    "minSpend": "Entfällt",
+    "customsNote": "San Marino ist kein EU-Mitglied und bietet keine MwSt.-Erstattung für Touristen; manche Waren sind etwas günstiger als in Italien. Zwischen San Marino und Italien gibt es keine Zollkontrolle; bei der Heimreise gelten die Freimengen Ihres Landes."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.00 - $3.00",
+    "topCarriers": [
+     "San Marino Telecom",
+     "TIM San Marino",
+     "TIM / Vodafone / WindTre (Italia)"
+    ],
+    "airportSimTrapWarning": "San Marino hat keinen Flughafen; kaufen Sie eine italienische SIM oder eSIM in Bologna oder vorab. Manche italienische und EU-Tarife behandeln San Marino als Nicht-EU und berechnen Roaming – Bedingungen prüfen."
+   },
+   "touristScams": [
+    {
+     "title": "Die „zollfrei“-Preisillusion",
+     "desc": "Läden an der Hauptstraße bewerben Elektronik, Parfüm und Uhren als „steuerfrei“, oft sind sie aber teurer als online.",
+     "tip": "Vergleichen Sie vor dem Kauf Preise am Handy und verlangen Sie eine Quittung."
+    },
+    {
+     "title": "Teure Parkplätze und falsche „Parkwächter“",
+     "desc": "Im Sommer sind zentrumsnahe Parkplätze voll; manche weisen Plätze zu und verlangen Geld.",
+     "tip": "Nutzen Sie nur die nummerierten offiziellen Parkplätze (P1–P13) und Automaten; am einfachsten ist der Bus."
+    }
+   ]
+  }
+ },
+ "es": {
+  "insights": {
+   "currency": "Euro (EUR)",
+   "bestMonths": "Mayo – junio y septiembre – octubre (templado, menos gente) · Julio – agosto hace calor y hay muchos excursionistas; en invierno el Monte Titano es frío y ventoso, con mercadillo navideño en diciembre",
+   "safety": {
+    "safetyScore": 85,
+    "safetyLevel": "Excepcionalmente Seguro",
+    "badgeColor": "bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-900/60",
+    "crimeRateSummary": "Uno de los países con menos delincuencia del mundo; los delitos violentos son casi inexistentes. En las aglomeraciones de verano hay algún carterista; el principal peligro son los caminos de piedra empinados y resbaladizos.",
+    "commonScams": [
+     "Electrónica y perfumes vendidos como “gangas libres de impuestos” que apenas son más baratos que en Italia",
+     "Sellos de recuerdo en el pasaporte y “certificados oficiales” a precios abusivos",
+     "Réplicas de armas como espadas y ballestas (pueden estar prohibidas en Italia o Turquía)"
+    ],
+    "safeTravelTips": [
+     "Lleve calzado antideslizante; el sendero entre las torres bordea acantilados.",
+     "San Marino no está en la UE; puede que su tarifa de roaming de la UE no se aplique, consulte a su operador.",
+     "Compruebe con antelación el último autobús a Rímini; por la tarde hay pocos."
+    ],
+    "emergencyNumbers": {
+     "police": "112 / 113",
+     "ambulance": "118",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99 % (4G / 5G; San Marino Telecom y TIM San Marino)",
+    "costPerGbUsd": "1.00 - 3.00 $",
+    "esimAvailability": "Buena (las eSIM internacionales suelen cubrir San Marino en planes de Italia; compruebe la cobertura)",
+    "bestCarriers": [
+     "San Marino Telecom (Prima)",
+     "TIM San Marino",
+     "Operadores italianos (TIM, Vodafone, WindTre, Iliad)"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Bueno pero limitado (sin tren ni aeropuerto; autobús desde Rímini y teleférico desde Borgo Maggiore)",
+    "costLevel": "Moderado – caro",
+    "singleTicketUsd": "5 - 7 $ (autobús Rímini – San Marino, ida)",
+    "dailyPassUsd": "No existe (teleférico ida y vuelta ~6 - 8 $)",
+    "popularRideApps": [
+     "No hay Uber/Bolt",
+     "Taxis locales por teléfono",
+     "Línea de autobús Rímini – San Marino"
+    ],
+    "taxiAdvice": "Lo más práctico es el autobús a San Marino desde la estación de tren de Rímini (~50 min). Hay pocos taxis y son caros; use la parada o llame por teléfono. Si va en coche, el centro histórico está cerrado al tráfico; use los aparcamientos P1–P13."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "70 - 100 $",
+    "dailyBudgetMidrangeUsd": "150 - 250 $",
+    "budgetMealUsd": "15 - 25 $",
+    "coffeeUsd": "1.30 - 2.00 $",
+    "waterBottleUsd": "1.00 - 2.00 $",
+    "hostelDormUsd": "Casi no hay albergues (suelen estar en Rímini, 25 - 40 $)",
+    "hotel3StarUsd": "80 - 150 $",
+    "flightCostIndex": "Bajo – moderado (vía Bolonia o Rímini)",
+    "flightTip": "San Marino no tiene aeropuerto. Vuele de Estambul directo a Bolonia (BLQ), tome el tren a Rímini (~1 h) y luego el autobús; en verano puede haber vuelos a Rímini (RMI)."
+   },
+   "plugType": "Tipo C, F, L (230V, 50Hz)"
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Los sanmarinenses no son italianos; llamarlos así no gusta.",
+     "Saludar con “Buongiorno / Buonasera” al entrar en tiendas y restaurantes es de buena educación.",
+     "En la basílica y las iglesias cubra hombros y rodillas.",
+     "Es normal que la cuenta incluya un “coperto” (cubierto) por persona."
+    ],
+    "festivals": [
+     "Fiesta de San Marino y fundación de la República (3 de septiembre; exhibiciones de ballesta)",
+     "Jornadas Medievales (Giornate Medioevali, finales de julio)",
+     "Investidura de los Capitanes Regentes (1 de abril y 1 de octubre)"
+    ],
+    "lifestyle": "Una comunidad pequeña y tranquila, orgullosa de ser la república más antigua del mundo, con dos Capitanes Regentes que cambian cada seis meses; la vida diaria, la cocina y el idioma son muy cercanos a la vecina Emilia-Romaña."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Guaita (Primera Torre)",
+     "Cesta (Segunda Torre) y Museo de Armas Antiguas",
+     "Montale (Tercera Torre)",
+     "Palazzo Pubblico y Piazza della Libertà (cambio de guardia)",
+     "Basílica de San Marino",
+     "Borgo Maggiore y el teleférico"
+    ],
+    "bestSeasons": "Mayo – junio y septiembre – octubre (templado, menos gente) · Julio – agosto hace calor y hay muchos excursionistas; en invierno el Monte Titano es frío y ventoso, con mercadillo navideño en diciembre",
+    "travelStyleTip": "La mayoría viene en excursión de un día; si pasa una noche, verá las torres y las vistas sin gente al anochecer y temprano. Ideal para combinar con la costa de Rímini."
+   },
+   "religion": {
+    "primaryReligions": "Cristianismo católico (~95 %); pequeñas comunidades protestantes y de otras confesiones",
+    "respectNorms": "No haga fotos durante la misa, guarde silencio y vista con decoro en las iglesias; quítese el sombrero.",
+    "sacredSites": [
+     "Basílica de San Marino (reliquias de san Marino)",
+     "Iglesia de San Pietro (las “camas de los santos” talladas en la roca)",
+     "Iglesia de San Francesco y pinacoteca"
+    ]
+   },
+   "language": {
+    "officialLanguages": "El italiano es la lengua oficial; los mayores también hablan el dialecto romañol.",
+    "englishProficiency": "Medio; el inglés es habitual en tiendas y hoteles, y también se oye alemán y ruso.",
+    "phrases": [
+     {
+      "phrase": "Buongiorno",
+      "meaning": "Buenos días",
+      "translation": "Buenos días",
+      "pronunciation": "bwon-JOR-no"
+     },
+     {
+      "phrase": "Grazie mille",
+      "meaning": "Muchas gracias",
+      "translation": "Muchas gracias",
+      "pronunciation": "GRAH-tsye MEE-le"
+     },
+     {
+      "phrase": "Per favore",
+      "meaning": "Por favor",
+      "translation": "Por favor",
+      "pronunciation": "per fa-VO-re"
+     },
+     {
+      "phrase": "Quanto costa?",
+      "meaning": "¿Cuánto cuesta?",
+      "translation": "¿Cuánto cuesta?",
+      "pronunciation": "KWAN-to KO-sta"
+     },
+     {
+      "phrase": "Il conto, per favore",
+      "meaning": "La cuenta, por favor",
+      "translation": "La cuenta, por favor",
+      "pronunciation": "eel KON-to per fa-VO-re"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Según la tradición, fundada en el Monte Titano en el año 301 por san Marino, un cantero de la isla de Rab, es la república más antigua que sigue existiendo. Sus estatutos de 1600 están entre las constituciones vigentes más antiguas y mantuvo su independencia durante la unificación italiana.",
+    "milestones": [
+     "301: San Marino funda una comunidad en el Monte Titano (tradición)",
+     "1463: El país alcanza sus fronteras actuales",
+     "1600: Aprobación de los estatutos (constitución)",
+     "2008: El centro histórico y el Monte Titano, Patrimonio Mundial de la UNESCO"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Piadina (pan plano de Romaña con jamón y queso)",
+     "Cappelletti in brodo (pasta rellena en caldo)",
+     "Nidi di rondine (rollitos de pasta al horno con jamón y queso)"
+    ],
+    "traditionalDrinks": [
+     "Sangiovese (vino tinto local)",
+     "Biancale (vino blanco local)",
+     "Espresso y capuchino"
+    ],
+    "streetFoodAndDesserts": [
+     "Torta Tre Monti (tarta de barquillo y chocolate que simboliza las tres torres)",
+     "Bustrengo (bizcocho tradicional con fruta seca)",
+     "Puestos de piadina (piadineria)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "San Marino (fundador legendario)",
+     "Manuel Poggiali (campeón del mundo de motociclismo en 125 cc y 250 cc)",
+     "Alessandra Perilli (primeras medallas olímpicas del país, tiro, Tokio 2020)"
+    ],
+    "strongSectors": [
+     "Turismo y comercio minorista",
+     "Banca y servicios financieros",
+     "Sellos y monedas conmemorativas (filatelia), cerámica e industria"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Se usa el euro (San Marino acuña sus propias monedas de euro). Las tarjetas y el pago sin contacto se aceptan casi en todas partes.",
+    "tippingCulture": "Como en Italia, no es obligatoria; el coperto ya va en la cuenta y basta con dejar unos euros si el servicio es bueno.",
+    "economicPillars": "Turismo, banca, industria (cerámica, textil, maquinaria), comercio y filatelia."
+   }
+  },
+  "itin": {
+   "routeName": "En lo alto del Monte Titano: Borgo Maggiore, el centro histórico y las Tres Torres",
+   "routeSummary": "Una ruta tranquila de 3 días: autobús desde Rímini, teleférico de Borgo Maggiore al centro histórico y paseo por la cresta del Monte Titano hasta las tres torres.",
+   "totalDays": 3,
+   "bestSeason": "Mayo – junio y septiembre – octubre (templado, menos gente) · Julio – agosto hace calor y hay muchos excursionistas; en invierno el Monte Titano es frío y ventoso, con mercadillo navideño en diciembre",
+   "transportMode": "Autobús Rímini – San Marino, teleférico de Borgo Maggiore y a pie",
+   "paceLevel": "Relajado (paseos cortos pero empinados)",
+   "signatureGastronomy": {
+    "dishes": [
+     "Piadina",
+     "Cappelletti in brodo",
+     "Nidi di rondine"
+    ],
+    "drinks": [
+     "Sangiovese",
+     "Biancale",
+     "Espresso"
+    ],
+    "streetFoods": [
+     "Torta Tre Monti",
+     "Bustrengo",
+     "Puestos de piadina"
+    ],
+    "diningAdvice": "Se almuerza de 12:30 a 14:30 y se cena después de las 19:30; el coperto en la cuenta es normal. La Torta Tre Monti se vende envasada como recuerdo."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Calzado cómodo y antideslizante",
+     "Cortavientos (la cima es fresca y ventosa)",
+     "Visado Schengen y seguro de viaje (se entra por Italia)"
+    ],
+    "safetyAndEtiquette": [
+     "Cubra hombros y rodillas en las iglesias.",
+     "Revise las normas aduaneras de su país antes de comprar réplicas de armas o cuchillos."
+    ]
+   },
+   "idealDurationText": "Ruta de 3 días",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Borgo Maggiore",
+     "recommendedDuration": "1 día",
+     "durationBadge": "1 día",
+     "highlights": [
+      "Piazza Grande y su mercado semanal",
+      "Estación de la funivia (teleférico)",
+      "Museo del Sello y la Moneda"
+     ],
+     "activities": [
+      "Suba en teleférico a la Città en unos 2 minutos y disfrute de las vistas.",
+      "Tome un espresso en los cafés de la Piazza Grande.",
+      "Vea la colección de sellos; los sellos sanmarinenses son famosos en todo el mundo."
+     ],
+     "foodAndDrinks": [
+      "Piadina",
+      "Espresso"
+     ],
+     "criticalTips": [
+      "Bajar del autobús en Borgo Maggiore y tomar el teleférico es más fácil que subir en coche.",
+      "El teleférico puede detenerse con viento fuerte."
+     ],
+     "mapsQuery": "Borgo Maggiore, San Marino"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Città di San Marino (centro histórico)",
+     "recommendedDuration": "1 día",
+     "durationBadge": "1 día",
+     "highlights": [
+      "Palazzo Pubblico y cambio de guardia",
+      "Basílica de San Marino",
+      "Museo de Estado (Museo di Stato)",
+      "Cava dei Balestrieri (campo de ballesteros)"
+     ],
+     "activities": [
+      "Vea el cambio de guardia que en verano se hace cada hora en la Piazza della Libertà.",
+      "Contemple el Adriático y los Apeninos desde las murallas.",
+      "Pida un sello de recuerdo en el pasaporte en la oficina de turismo (de pago)."
+     ],
+     "foodAndDrinks": [
+      "Nidi di rondine",
+      "Cappelletti in brodo",
+      "Sangiovese"
+     ],
+     "criticalTips": [
+      "Los menús de las calles principales son caros; busque trattorias en las callejuelas.",
+      "Una entrada combinada a los museos sale más a cuenta."
+     ],
+     "mapsQuery": "Piazza della Libertà, San Marino"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Monte Titano y las Tres Torres",
+     "recommendedDuration": "1 día",
+     "durationBadge": "1 día",
+     "highlights": [
+      "Guaita (Primera Torre)",
+      "Cesta (Segunda Torre) – el punto más alto, a 750 m",
+      "Montale (Tercera Torre)",
+      "Sendero del Passo delle Streghe (Paso de las Brujas)"
+     ],
+     "activities": [
+      "Recorra la cresta de Guaita a Cesta.",
+      "Suba las estrechas escaleras de la Guaita.",
+      "Vea la puesta de sol entre las torres."
+     ],
+     "foodAndDrinks": [
+      "Torta Tre Monti",
+      "Biancale"
+     ],
+     "criticalTips": [
+      "El interior de Montale no se visita; solo puede contemplarse por fuera.",
+      "Las rocas resbalan tras la lluvia; vigile a los niños junto a las barandillas."
+     ],
+     "mapsQuery": "Guaita, San Marino"
+    }
+   ]
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F",
+     "L"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Como en Italia, hay enchufes C/F (Schuko) y tipo L (tres clavijas en línea); los enchufes europeos encajan en F y en la mayoría de L, y si uno Schuko grueso no entra en L basta un adaptador italiano barato."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "El agua del grifo cumple las normas de la UE y es potable; puede rellenar botellas en las fuentes.",
+    "vaccines": [
+     "Vacunas de rutina (tétanos-difteria, triple vírica)",
+     "No se requieren vacunas especiales"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "118"
+   },
+   "tipping": {
+    "custom": "No es obligatoria; el coperto va en la cuenta y basta con redondear si el servicio es bueno.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "No se espera propina por el café tomado en la barra."
+   },
+   "taxFree": {
+    "vatRefundPercent": "No hay (en lugar del IVA rige la “imposta monofase”)",
+    "minSpend": "No aplica",
+    "customsNote": "San Marino no pertenece a la UE y no ofrece devolución del IVA al turista; algunos productos son algo más baratos que en Italia. No hay control aduanero entre San Marino e Italia, pero al volver a casa rigen los límites de su país."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.00 - $3.00",
+    "topCarriers": [
+     "San Marino Telecom",
+     "TIM San Marino",
+     "TIM / Vodafone / WindTre (Italia)"
+    ],
+    "airportSimTrapWarning": "San Marino no tiene aeropuerto; compre una SIM o eSIM italiana en Bolonia o con antelación. Algunas líneas italianas y de la UE consideran San Marino fuera de la UE y cobran roaming extra; revise las condiciones."
+   },
+   "touristScams": [
+    {
+     "title": "La ilusión del precio “libre de impuestos”",
+     "desc": "Las tiendas de la calle principal anuncian electrónica, perfumes y relojes como “sin impuestos”, pero a menudo son más caros que en internet.",
+     "tip": "Compare precios en el móvil antes de comprar y pida factura."
+    },
+    {
+     "title": "Aparcamiento caro y falsos “aparcacoches”",
+     "desc": "En verano se llenan los aparcamientos cercanos al centro y algunos indican plazas y piden dinero.",
+     "tip": "Use solo los aparcamientos oficiales numerados (P1–P13) y sus máquinas; lo más fácil es venir en autobús."
+    }
+   ]
+  }
+ },
+ "ru": {
+  "insights": {
+   "currency": "Евро (EUR)",
+   "bestMonths": "Май – июнь и сентябрь – октябрь (тепло, меньше туристов) · Июль – август жарко и многолюдно из-за однодневных туристов; зимой на Монте-Титано ветрено и холодно, в декабре — рождественская ярмарка",
+   "safety": {
+    "safetyScore": 85,
+    "safetyLevel": "Исключительно Безопасно",
+    "badgeColor": "bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-900/60",
+    "crimeRateSummary": "Одна из стран с самым низким уровнем преступности в мире; насильственных преступлений почти нет. В летней толпе изредка случаются карманные кражи; главная опасность — крутые скользкие каменные дорожки.",
+    "commonScams": [
+     "Электроника и парфюмерия как «беспошлинные выгодные покупки», хотя почти не дешевле, чем в Италии",
+     "Сувенирные штампы в паспорт и «официальные» сертификаты по завышенной цене",
+     "Копии оружия — мечи, арбалеты (их ввоз в Италию или Турцию может быть запрещён)"
+    ],
+    "safeTravelTips": [
+     "Носите нескользящую обувь: тропа между башнями проходит вдоль обрывов.",
+     "Сан-Марино не входит в ЕС: роуминг по тарифам ЕС может не действовать, уточните у оператора.",
+     "Заранее узнайте время последнего автобуса в Римини: вечером рейсов мало."
+    ],
+    "emergencyNumbers": {
+     "police": "112 / 113",
+     "ambulance": "118",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99 % (4G / 5G; San Marino Telecom и TIM San Marino)",
+    "costPerGbUsd": "1.00 - 3.00 $",
+    "esimAvailability": "Хорошая (международные eSIM обычно включают Сан-Марино в пакеты для Италии; проверьте покрытие)",
+    "bestCarriers": [
+     "San Marino Telecom (Prima)",
+     "TIM San Marino",
+     "Итальянские операторы (TIM, Vodafone, WindTre, Iliad)"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Хороший, но ограниченный (нет поезда и аэропорта; автобус из Римини, канатная дорога из Борго-Маджоре)",
+    "costLevel": "Средний – дорогой",
+    "singleTicketUsd": "5 - 7 $ (автобус Римини – Сан-Марино, в одну сторону)",
+    "dailyPassUsd": "Нет (канатная дорога туда-обратно ~6 - 8 $)",
+    "popularRideApps": [
+     "Uber/Bolt нет",
+     "Местное такси по телефону",
+     "Автобус Римини – Сан-Марино"
+    ],
+    "taxiAdvice": "Проще всего добраться автобусом в Сан-Марино от вокзала Римини (~50 мин). Такси мало, они дорогие — берите на стоянке или по телефону. На машине: исторический центр закрыт для движения, пользуйтесь парковками P1–P13."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "70 - 100 $",
+    "dailyBudgetMidrangeUsd": "150 - 250 $",
+    "budgetMealUsd": "15 - 25 $",
+    "coffeeUsd": "1.30 - 2.00 $",
+    "waterBottleUsd": "1.00 - 2.00 $",
+    "hostelDormUsd": "Хостелов почти нет (обычно в Римини, 25 - 40 $)",
+    "hotel3StarUsd": "80 - 150 $",
+    "flightCostIndex": "Низкий – средний (через Болонью или Римини)",
+    "flightTip": "В Сан-Марино нет аэропорта. Летите из Стамбула прямым рейсом в Болонью (BLQ), затем поездом в Римини (~1 ч) и автобусом в Сан-Марино; летом бывают рейсы и в Римини (RMI)."
+   },
+   "plugType": "Тип C, F, L (230V, 50Hz)"
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Санмаринцы не итальянцы — называть их так не стоит.",
+     "Входя в магазин или ресторан, принято говорить «Buongiorno / Buonasera».",
+     "В базилике и церквях закрывайте плечи и колени.",
+     "Сбор «коперто» (за обслуживание и хлеб) с человека в счёте — это нормально."
+    ],
+    "festivals": [
+     "Праздник святого Марина и основания республики (3 сентября; показательные выступления арбалетчиков)",
+     "Средневековые дни (Giornate Medioevali, конец июля)",
+     "Инаугурация капитанов-регентов (1 апреля и 1 октября)"
+    ],
+    "lifestyle": "Небольшое спокойное общество, гордое тем, что это старейшая республика мира, где два капитана-регента сменяются каждые полгода; быт, кухня и язык близки к соседней Эмилии-Романье."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Гуаита (Первая башня)",
+     "Честа (Вторая башня) и Музей старинного оружия",
+     "Монтале (Третья башня)",
+     "Палаццо Пубблико и площадь Свободы (смена караула)",
+     "Базилика Сан-Марино",
+     "Борго-Маджоре и канатная дорога"
+    ],
+    "bestSeasons": "Май – июнь и сентябрь – октябрь (тепло, меньше туристов) · Июль – август жарко и многолюдно из-за однодневных туристов; зимой на Монте-Титано ветрено и холодно, в декабре — рождественская ярмарка",
+    "travelStyleTip": "Большинство приезжает на день; переночевав, вы увидите башни и виды без толп вечером и рано утром. Идеально сочетать с побережьем Римини."
+   },
+   "religion": {
+    "primaryReligions": "Католическое христианство (~95 %); небольшие протестантские и другие общины",
+    "respectNorms": "Не фотографируйте во время мессы, соблюдайте тишину, одевайтесь скромно, снимайте головной убор.",
+    "sacredSites": [
+     "Базилика Сан-Марино (мощи святого Марина)",
+     "Церковь Сан-Пьетро (высеченные в скале «ложа святых»)",
+     "Церковь Сан-Франческо и пинакотека"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Официальный язык — итальянский; пожилые говорят также на романьольском диалекте.",
+    "englishProficiency": "Средний; в магазинах и отелях говорят по-английски, нередко также по-немецки и по-русски.",
+    "phrases": [
+     {
+      "phrase": "Buongiorno",
+      "meaning": "Доброе утро / Добрый день",
+      "translation": "Доброе утро / Добрый день",
+      "pronunciation": "bwon-JOR-no"
+     },
+     {
+      "phrase": "Grazie mille",
+      "meaning": "Большое спасибо",
+      "translation": "Большое спасибо",
+      "pronunciation": "GRAH-tsye MEE-le"
+     },
+     {
+      "phrase": "Per favore",
+      "meaning": "Пожалуйста",
+      "translation": "Пожалуйста",
+      "pronunciation": "per fa-VO-re"
+     },
+     {
+      "phrase": "Quanto costa?",
+      "meaning": "Сколько стоит?",
+      "translation": "Сколько стоит?",
+      "pronunciation": "KWAN-to KO-sta"
+     },
+     {
+      "phrase": "Il conto, per favore",
+      "meaning": "Счёт, пожалуйста",
+      "translation": "Счёт, пожалуйста",
+      "pronunciation": "eel KON-to per fa-VO-re"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "По преданию, Сан-Марино основал в 301 году на горе Монте-Титано каменотёс Марин с острова Раб; это старейшая из существующих республик мира. Её статуты 1600 года — одна из старейших действующих конституций, а во время объединения Италии страна сохранила независимость.",
+    "milestones": [
+     "301: святой Марин основывает общину на Монте-Титано (предание)",
+     "1463: страна обретает нынешние границы",
+     "1600: принятие статутов (конституции)",
+     "2008: исторический центр и Монте-Титано включены в список ЮНЕСКО"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Пьядина (романьольская лепёшка с ветчиной и сыром)",
+     "Каппеллетти в бульоне",
+     "Нидди ди рондине (запечённые рулетики из пасты с ветчиной и сыром)"
+    ],
+    "traditionalDrinks": [
+     "Санджовезе (местное красное вино)",
+     "Бьянкале (местное белое вино)",
+     "Эспрессо и капучино"
+    ],
+    "streetFoodAndDesserts": [
+     "Торт «Тре Монти» (вафельно-шоколадный, символ трёх башен)",
+     "Бустренго (традиционный пирог с сухофруктами)",
+     "Киоски с пьядиной (пьядинерия)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Святой Марин (легендарный основатель)",
+     "Мануэль Поджали (чемпион мира по мотогонкам в классах 125 и 250 куб. см)",
+     "Алессандра Перилли (первые олимпийские медали страны, стрельба, Токио-2020)"
+    ],
+    "strongSectors": [
+     "Туризм и розничная торговля",
+     "Банковские и финансовые услуги",
+     "Марки и памятные монеты (филателия), керамика и промышленность"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Используется евро (Сан-Марино чеканит собственные евромонеты). Карты и бесконтактная оплата принимаются почти везде.",
+    "tippingCulture": "Как и в Италии, чаевые не обязательны: коперто уже в счёте, за хорошее обслуживание достаточно пары евро.",
+    "economicPillars": "Туризм, банки, промышленность (керамика, текстиль, машиностроение), торговля и филателия."
+   }
+  },
+  "itin": {
+   "routeName": "Вершина Монте-Титано: Борго-Маджоре, исторический центр и три башни",
+   "routeSummary": "Неспешный 3-дневный маршрут: автобус из Римини, канатная дорога из Борго-Маджоре в исторический центр и прогулка по гребню Монте-Титано к трём башням.",
+   "totalDays": 3,
+   "bestSeason": "Май – июнь и сентябрь – октябрь (тепло, меньше туристов) · Июль – август жарко и многолюдно из-за однодневных туристов; зимой на Монте-Титано ветрено и холодно, в декабре — рождественская ярмарка",
+   "transportMode": "Автобус Римини – Сан-Марино, канатная дорога Борго-Маджоре и пешком",
+   "paceLevel": "Спокойный (короткие, но крутые прогулки)",
+   "signatureGastronomy": {
+    "dishes": [
+     "Пьядина",
+     "Каппеллетти в бульоне",
+     "Нидди ди рондине"
+    ],
+    "drinks": [
+     "Санджовезе",
+     "Бьянкале",
+     "Эспрессо"
+    ],
+    "streetFoods": [
+     "Торт «Тре Монти»",
+     "Бустренго",
+     "Киоски с пьядиной"
+    ],
+    "diningAdvice": "Обед с 12:30 до 14:30, ужин после 19:30; коперто в счёте — норма. Торт «Тре Монти» продаётся в коробках как сувенир."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Удобная нескользящая обувь",
+     "Ветровка (на вершине прохладно и ветрено)",
+     "Шенгенская виза и страховка (въезд через Италию)"
+    ],
+    "safetyAndEtiquette": [
+     "В церквях закрывайте плечи и колени.",
+     "Перед покупкой копий оружия и ножей проверьте таможенные правила своей страны."
+    ]
+   },
+   "idealDurationText": "Маршрут на 3 дня",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Остановка 1: Борго-Маджоре",
+     "recommendedDuration": "1 день",
+     "durationBadge": "1 день",
+     "highlights": [
+      "Пьяцца Гранде и еженедельный рынок",
+      "Станция фуникулёра (канатной дороги)",
+      "Музей марок и монет"
+     ],
+     "activities": [
+      "Поднимитесь на канатной дороге в Читта примерно за 2 минуты и полюбуйтесь видом.",
+      "Выпейте эспрессо в кафе на Пьяцца Гранде.",
+      "Посмотрите коллекцию марок — марки Сан-Марино известны во всём мире."
+     ],
+     "foodAndDrinks": [
+      "Пьядина",
+      "Эспрессо"
+     ],
+     "criticalTips": [
+      "Выйти из автобуса в Борго-Маджоре и подняться на канатке проще, чем ехать наверх на машине.",
+      "При сильном ветре канатная дорога может временно останавливаться."
+     ],
+     "mapsQuery": "Borgo Maggiore, San Marino"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Остановка 2: Город Сан-Марино (исторический центр)",
+     "recommendedDuration": "1 день",
+     "durationBadge": "1 день",
+     "highlights": [
+      "Палаццо Пубблико и смена караула",
+      "Базилика Сан-Марино",
+      "Государственный музей (Museo di Stato)",
+      "Кава-дей-Балестриери (площадка арбалетчиков)"
+     ],
+     "activities": [
+      "Посмотрите летнюю ежечасную смену караула на площади Свободы.",
+      "С крепостных стен любуйтесь Адриатикой и Апеннинами.",
+      "Поставьте сувенирный штамп в паспорт в турофисе (платно)."
+     ],
+     "foodAndDrinks": [
+      "Нидди ди рондине",
+      "Каппеллетти в бульоне",
+      "Санджовезе"
+     ],
+     "criticalTips": [
+      "На главных улицах дорого — ищите траттории в переулках.",
+      "Комбинированный билет в музеи выгоднее."
+     ],
+     "mapsQuery": "Piazza della Libertà, San Marino"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Остановка 3: Монте-Титано и три башни",
+     "recommendedDuration": "1 день",
+     "durationBadge": "1 день",
+     "highlights": [
+      "Гуаита (Первая башня)",
+      "Честа (Вторая башня) — высшая точка, 750 м",
+      "Монтале (Третья башня)",
+      "Тропа Пассо-делле-Стреге (Перевал ведьм)"
+     ],
+     "activities": [
+      "Пройдите по гребню от Гуаиты к Честе.",
+      "Поднимитесь по узким лестницам Гуаиты.",
+      "Встретьте закат между башнями."
+     ],
+     "foodAndDrinks": [
+      "Торт «Тре Монти»",
+      "Бьянкале"
+     ],
+     "criticalTips": [
+      "Внутрь Монтале не пускают — только осмотр снаружи.",
+      "После дождя камни скользкие — следите за детьми у ограждений."
+     ],
+     "mapsQuery": "Guaita, San Marino"
+    }
+   ]
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F",
+     "L"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Как в Италии: розетки C/F (шуко) и тип L (три штыря в ряд); европейские вилки подходят к F и большинству L, а для толстой вилки шуко хватит недорогого итальянского переходника."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Водопроводная вода соответствует нормам ЕС и пригодна для питья; бутылку можно наполнить у фонтанчиков.",
+    "vaccines": [
+     "Плановые прививки (столбняк-дифтерия, корь-паротит-краснуха)",
+     "Специальные прививки не требуются"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "118"
+   },
+   "tipping": {
+    "custom": "Не обязательны; коперто включено, за хорошее обслуживание достаточно округлить.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "За кофе, выпитый стоя у стойки, чаевых не ждут."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Нет (вместо НДС — одноэтапный налог «imposta monofase»)",
+    "minSpend": "Не применяется",
+    "customsNote": "Сан-Марино не входит в ЕС и не возвращает туристам НДС; некоторые товары чуть дешевле, чем в Италии. Таможенного контроля между Сан-Марино и Италией нет, но при возвращении домой действуют нормы вашей страны."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.00 - $3.00",
+    "topCarriers": [
+     "San Marino Telecom",
+     "TIM San Marino",
+     "TIM / Vodafone / WindTre (Italia)"
+    ],
+    "airportSimTrapWarning": "В Сан-Марино нет аэропорта — покупайте итальянскую SIM или eSIM в Болонье или заранее. Некоторые итальянские и европейские тарифы считают Сан-Марино страной вне ЕС и берут доплату за роуминг; проверьте условия."
+   },
+   "touristScams": [
+    {
+     "title": "Иллюзия «беспошлинных» цен",
+     "desc": "Магазины на главной улице рекламируют электронику, парфюм и часы как «без налогов», но часто они дороже, чем в интернете.",
+     "tip": "Перед покупкой сравните цены в телефоне и попросите чек."
+    },
+    {
+     "title": "Дорогая парковка и «неофициальные смотрители»",
+     "desc": "Летом парковки у центра заполнены, и кто-то может «помогать» с местом за деньги.",
+     "tip": "Пользуйтесь только официальными парковками P1–P13 и автоматами; проще всего приехать автобусом."
+    }
+   ]
+  }
+ }
+}
