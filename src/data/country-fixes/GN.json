@@ -1,0 +1,1927 @@
+{
+ "tr": {
+  "insights": {
+   "currency": "Gine Frangı (GNF)",
+   "plugType": "Tip C, F, K (220V, 50Hz)",
+   "bestMonths": "Kasım – Nisan (kurak mevsim); Conakry Haziran – Eylül arası dünyanın en yağışlı başkentlerinden biridir",
+   "safety": {
+    "safetyScore": 40,
+    "safetyLevel": "Hassas / Tedbir Gerekir",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60",
+    "crimeRateSummary": "Siyasi geçiş süreci nedeniyle Conakry’de zaman zaman gösteri ve yol kapanmaları yaşanır; kapkaç, gece soygunu ve sahte kontrol noktaları başlıca risklerdir. Resmî uyarılar artırılmış dikkat önerir.",
+    "commonScams": [
+     "Polis veya jandarma kontrol noktalarında gayriresmî “ücret” istenmesi",
+     "Havalimanında kendini görevli gibi tanıtıp bagaj ve döviz işlerinde para isteyen kişiler",
+     "Sokakta karaborsa döviz bozdururken sahte veya eksik banknot verilmesi"
+    ],
+    "safeTravelTips": [
+     "Gösteri ve kalabalıklardan uzak durun; yerel haberleri takip edin.",
+     "Şehirlerarası yolculukları gündüz ve güvenilir bir şoförle yapın.",
+     "Pasaport fotokopisi ve sarıhumma aşı kartını yanınızda taşıyın."
+    ],
+    "emergencyNumbers": {
+     "police": "122",
+     "ambulance": "—",
+     "general": "122"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Conakry ve büyük şehirlerde 4G; Fouta Djalon dağlarında ve kırsalda kapsama kesintili",
+    "costPerGbUsd": "~1.00 - 3.00 $",
+    "esimAvailability": "Sınırlı",
+    "bestCarriers": [
+     "Orange Guinée",
+     "MTN Guinée",
+     "Cellcom Guinée"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Zayıf",
+    "costLevel": "Ekonomik",
+    "singleTicketUsd": "0.30 - 1.00 $",
+    "dailyPassUsd": "20 - 40 $",
+    "popularRideApps": [
+     "Yango (yalnızca Conakry)",
+     "Paylaşımlı taksiler",
+     "Şoförlü araç kiralama"
+    ],
+    "taxiAdvice": "Conakry’de Yango çalışır; diğer yerlerde sarı-beyaz paylaşımlı taksiler ve “sept-place” (7 kişilik) araçlar kullanılır. Trafik çok yoğundur; turistler için şoförlü araç en güvenli seçenektir."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "35 - 55 $",
+    "dailyBudgetMidrangeUsd": "90 - 160 $",
+    "budgetMealUsd": "3 - 8 $",
+    "coffeeUsd": "1 - 3 $",
+    "waterBottleUsd": "0.50 - 1.00 $",
+    "hostelDormUsd": "15 - 30 $",
+    "hotel3StarUsd": "60 - 130 $",
+    "flightCostIndex": "Yüksek",
+    "flightTip": "Türkiye’den direkt uçuş yoktur; Dakar, Casablanca, Paris veya Brüksel üzerinden aktarmalı uçulur."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Selamlaşma uzun ve önemlidir; önce hâl hatır sorulur.",
+     "Sağ el kullanılır; yaşlılara özel saygı gösterilir.",
+     "Muhafazakâr giyinin, özellikle Fouta Djalon’da omuz ve dizler örtülmelidir.",
+     "Resmî binaları, köprüleri ve askerleri fotoğraflamayın."
+    ],
+    "festivals": [
+     "Ramazan ve Kurban Bayramı (Tabaski)",
+     "Bağımsızlık Günü (2 Ekim)",
+     "Mevlid ve köylerdeki hasat şenlikleri"
+    ],
+    "lifestyle": "Djembe ve balafon müziğinin anavatanı; dağ köylerinde sakin, şehirde hareketli ve kalabalık bir yaşam."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Conakry ve Îles de Loos (Roume ve Kassa adaları)",
+     "Kindia: Voile de la Mariée şelalesi",
+     "Dalaba’nın çam ormanları ve manzaraları",
+     "Pita: Kambadaga şelaleleri",
+     "Labé ve Fouta Djalon yürüyüş rotaları",
+     "Nimba Dağı Doğa Rezervi (UNESCO)"
+    ],
+    "bestSeasons": "Kasım – Nisan (kurak mevsim); Conakry Haziran – Eylül arası dünyanın en yağışlı başkentlerinden biridir",
+    "travelStyleTip": "Conakry’den iç bölgelere şoförlü araçla çıkın; Fouta Djalon’da köyden köye yürüyüşleri yerel rehberle planlayın."
+   },
+   "religion": {
+    "primaryReligions": "İslam (~%85), Hristiyanlık (~%8) ve geleneksel inançlar.",
+    "respectNorms": "Camilere girerken ayakkabı çıkarılır ve örtünülür; Ramazan’da gündüz kamusal alanda yemekten kaçının.",
+    "sacredSites": [
+     "Conakry Büyük Camii",
+     "Conakry Sainte-Marie Katedrali",
+     "Fouta Djalon’daki tarihî camiler (Timbo, Fougoumba)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Fransızca (resmî). Pular (Fula), Malinke ve Susu en yaygın yerel dillerdir.",
+    "englishProficiency": "Zayıf; İngilizce çok az bilinir, temel Fransızca büyük avantaj sağlar.",
+    "phrases": [
+     {
+      "phrase": "Bonjour",
+      "meaning": "Merhaba (Fransızca)",
+      "translation": "Merhaba (Fransızca)",
+      "pronunciation": "bon-ZHUR"
+     },
+     {
+      "phrase": "On jaaraama",
+      "meaning": "Teşekkürler (Pular)",
+      "translation": "Teşekkürler (Pular)",
+      "pronunciation": "on jaa-RAA-ma"
+     },
+     {
+      "phrase": "No mbadda?",
+      "meaning": "Nasılsın? (Pular)",
+      "translation": "Nasılsın? (Pular)",
+      "pronunciation": "no m-BAD-da"
+     },
+     {
+      "phrase": "Tana mu na?",
+      "meaning": "Nasılsın / sorun yok mu? (Susu)",
+      "translation": "Nasılsın / sorun yok mu? (Susu)",
+      "pronunciation": "TAH-nah moo nah"
+     },
+     {
+      "phrase": "Combien ça coûte ?",
+      "meaning": "Ne kadar? (Fransızca)",
+      "translation": "Ne kadar? (Fransızca)",
+      "pronunciation": "kom-BYAN sa KOOT"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Fouta Djalon dağları 18. yüzyılda güçlü bir İslami imamete ev sahipliği yaptı. Fransız sömürgesi olan Gine, 1958 referandumunda Fransız Topluluğu’nu reddederek bağımsızlığını kazanan ilk Fransız Afrika kolonisi oldu.",
+    "milestones": [
+     "~1725: Fouta Djalon İmameti’nin kurulması",
+     "1958: Bağımsızlık",
+     "1981: Nimba Dağı’nın UNESCO listesine alınması"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Riz sauce arachide (fıstık soslu pilav)",
+     "Sauce feuille (manyok yaprağı soslu yemek)",
+     "Fonio (antik tahıl, sebzeli)"
+    ],
+    "traditionalDrinks": [
+     "Gnamakoudji (zencefil suyu)",
+     "Bissap (hibiskus)",
+     "Lait caillé (ekşi süt)"
+    ],
+    "streetFoodAndDesserts": [
+     "Izgara balık ve kızarmış plantain",
+     "Beignets (kızarmış hamur)",
+     "Akara (börülce köftesi)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Mory Kanté (müzisyen, “Yé ké yé ké”)",
+     "Camara Laye (yazar, “L’Enfant noir”)",
+     "Naby Keïta (futbolcu)"
+    ],
+    "strongSectors": [
+     "Boksit madenciliği (dünyanın en büyük rezervleri)",
+     "Altın ve demir cevheri",
+     "Tarım (pirinç, meyve)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Neredeyse tamamen nakit ekonomi; kart yalnızca büyük otellerde geçer. Orange Money yaygındır. Euro veya dolar getirip banka/döviz bürosunda bozdurun.",
+    "tippingCulture": "Zorunlu değildir; restoranlarda küçük bir miktar veya %5 civarı takdir edilir.",
+    "economicPillars": "Boksit ve altın ihracatı, tarım ve hizmetler."
+   }
+  },
+  "itin": {
+   "routeName": "Gine Rotası: Conakry, Kindia ve Fouta Djalon Dağları",
+   "routeSummary": "Conakry’nin sahil adalarından Kindia’nın şelalesine, Dalaba’nın serin yaylalarına ve Labé–Pita çevresindeki Fouta Djalon şelalelerine uzanan 8 günlük rota.",
+   "totalDays": 8,
+   "idealDurationText": "8 Günlük Gine Rotası",
+   "bestSeason": "Kasım – Nisan (kurak mevsim); Conakry Haziran – Eylül arası dünyanın en yağışlı başkentlerinden biridir",
+   "transportMode": "Şoförlü araç (4x4 önerilir) + adalara tekne",
+   "paceLevel": "Dengeli (Doğa + Kültür)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "1. Durak: Conakry ve Îles de Loos",
+     "recommendedDuration": "2 Gün (Başkent ve adalar)",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "Ulusal Müze",
+      "Madina Pazarı",
+      "Roume ve Kassa adaları",
+      "Conakry Büyük Camii"
+     ],
+     "activities": [
+      "Tekneyle Îles de Loos’a günübirlik gidin.",
+      "Ulusal Müze’de maske ve heykel koleksiyonunu görün.",
+      "Akşam sahilde ızgara balık yiyin."
+     ],
+     "foodAndDrinks": [
+      "Izgara balık",
+      "Riz sauce arachide",
+      "Gnamakoudji"
+     ],
+     "criticalTips": [
+      "Madina Pazarı çok kalabalıktır; değerli eşya taşımayın.",
+      "Trafik nedeniyle havalimanı transferine bol zaman ayırın."
+     ],
+     "mapsQuery": "Conakry, Guinea"
+    },
+    {
+     "stopNumber": 2,
+     "name": "2. Durak: Kindia",
+     "recommendedDuration": "1 Gün (Şelale ve dağlar)",
+     "durationBadge": "1 Gün",
+     "highlights": [
+      "Voile de la Mariée (Gelin Duvağı) şelalesi",
+      "Kindia meyve pazarı",
+      "Mont Gangan manzarası"
+     ],
+     "activities": [
+      "Şelalenin altında serinleyin.",
+      "Pazarda ananas ve mango tadın.",
+      "Gangan Dağı eteklerinde kısa yürüyüş yapın."
+     ],
+     "foodAndDrinks": [
+      "Taze ananas",
+      "Akara"
+     ],
+     "criticalTips": [
+      "Yağmur mevsiminde kayalar kaygandır.",
+      "Conakry’den çıkışta yol kontrolleri olabilir; belgelerinizi hazır tutun."
+     ],
+     "mapsQuery": "Kindia, Guinea"
+    },
+    {
+     "stopNumber": 3,
+     "name": "3. Durak: Dalaba",
+     "recommendedDuration": "2 Gün (Serin yayla)",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "Çam ormanları ve vadi manzaraları",
+      "Sömürge dönemi villaları",
+      "Ditinn Şelalesi (yakınında)"
+     ],
+     "activities": [
+      "Yayla patikalarında yürüyüş yapın.",
+      "Ditinn Şelalesi’ne günübirlik gidin.",
+      "Yerel el sanatları atölyelerini ziyaret edin."
+     ],
+     "foodAndDrinks": [
+      "Fonio",
+      "Lait caillé"
+     ],
+     "criticalTips": [
+      "Geceleri serin olur, kalın giysi alın.",
+      "Yürüyüşlerde yerel rehber tutun."
+     ],
+     "mapsQuery": "Dalaba, Guinea"
+    },
+    {
+     "stopNumber": 4,
+     "name": "4. Durak: Labé ve Pita",
+     "recommendedDuration": "2-3 Gün (Fouta Djalon’un kalbi)",
+     "durationBadge": "3 Gün",
+     "highlights": [
+      "Kambadaga şelaleleri (Pita)",
+      "Labé pazarı",
+      "Fouta Djalon köy yürüyüşleri",
+      "Doucky kanyonları"
+     ],
+     "activities": [
+      "Doucky’de rehberli kanyon yürüyüşü yapın.",
+      "Kambadaga’da şelale manzarasını izleyin.",
+      "Bir Pular köyünde konaklayın."
+     ],
+     "foodAndDrinks": [
+      "Sauce feuille",
+      "Lait caillé",
+      "Bissap"
+     ],
+     "criticalTips": [
+      "Şelaleler yağmur sonrası (Ekim–Kasım) en gösterişlidir.",
+      "Köylerde fotoğraf için izin isteyin ve muhafazakâr giyinin."
+     ],
+     "mapsQuery": "Labé, Guinea"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Riz sauce arachide (fıstık soslu pilav)",
+     "Sauce feuille (manyok yaprağı soslu yemek)",
+     "Fonio (antik tahıl, sebzeli)"
+    ],
+    "drinks": [
+     "Gnamakoudji (zencefil suyu)",
+     "Bissap (hibiskus)",
+     "Lait caillé (ekşi süt)"
+    ],
+    "streetFoods": [
+     "Izgara balık ve kızarmış plantain",
+     "Beignets (kızarmış hamur)",
+     "Akara (börülce köftesi)"
+    ],
+    "diningAdvice": "Yemekler pirinç ve sos üzerine kuruludur; ortak tabaktan sağ elle yenir. Lokantalarda fiyatı sipariş öncesi sorun."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Bol nakit (euro/dolar)",
+     "Sinek kovucu ve sıtma ilacı",
+     "Sarıhumma aşı kartı",
+     "Dağlar için hafif mont"
+    ],
+    "safetyAndEtiquette": [
+     "Gösteri ve kalabalıklardan uzak durun.",
+     "Resmî binaları ve askerleri fotoğraflamayın."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F",
+     "K"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Avrupa tipi iki yuvarlak pimli (C/F) prizler yaygındır, Türkiye fişleri çoğu yerde uyar. Elektrik kesintileri sık olduğundan powerbank alın."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Musluk suyu içilmez; kapalı şişe su kullanın.",
+    "vaccines": [
+     "Sarıhumma (aşı kartı girişte istenir)",
+     "Hepatit A ve tifo",
+     "Menenjit (kurak mevsimde önerilir)",
+     "Sıtma koruması (doktorunuza danışın)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "—"
+   },
+   "tipping": {
+    "custom": "Bahşiş zorunlu değildir.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "Restoranlarda küsuratı bırakmak veya %5 civarı yeterlidir; rehber ve şoförlere günlük küçük bahşiş verin."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Turistlere KDV iadesi yok (KDV %18)",
+    "minSpend": "Uygulanmaz",
+    "customsNote": "Gine’de turistlere KDV iadesi (tax-free) sistemi yoktur. Altın ve elmas çıkarmak izne tabidir."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "$1.00 - $3.00",
+    "topCarriers": [
+     "Orange Guinée",
+     "MTN Guinée",
+     "Cellcom Guinée"
+    ],
+    "airportSimTrapWarning": "Havalimanında SIM satışı sınırlıdır; Orange Guinée veya MTN mağazasında pasaportla SIM alın. Uluslararası eSIM’ler pahalı olabilir."
+   },
+   "touristScams": [
+    {
+     "title": "Kontrol Noktası Rüşveti",
+     "desc": "Yol kontrollerinde gayriresmî ücret talep edilmesi.",
+     "tip": "Belgelerinizi eksiksiz taşıyın, sakin kalın, makbuz isteyin."
+    },
+    {
+     "title": "Karaborsa Döviz",
+     "desc": "Sokakta döviz bozarken sahte veya eksik banknot.",
+     "tip": "Döviz bürosu veya banka kullanın, parayı orada sayın."
+    },
+    {
+     "title": "Sahte Görevli",
+     "desc": "Havalimanında kendini görevli gibi tanıtıp yardım karşılığı para isteyenler.",
+     "tip": "Yalnızca resmî üniformalı personel ve otel transferine güvenin."
+    }
+   ]
+  }
+ },
+ "en": {
+  "insights": {
+   "currency": "Guinean Franc (GNF)",
+   "plugType": "Type C, F, K (220V, 50Hz)",
+   "bestMonths": "November – April (dry season); Conakry is one of the world’s wettest capitals from June to September",
+   "safety": {
+    "safetyScore": 40,
+    "safetyLevel": "Caution Advised",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60",
+    "crimeRateSummary": "During the political transition, Conakry sees occasional protests and road blockades; bag snatching, night robbery and fake checkpoints are the main risks. Official advisories recommend increased caution.",
+    "commonScams": [
+     "Informal “fees” demanded at police or gendarmerie checkpoints",
+     "People posing as officials at the airport and charging for baggage or currency help",
+     "Fake or short-changed notes when changing money on the street black market"
+    ],
+    "safeTravelTips": [
+     "Avoid demonstrations and crowds; follow local news.",
+     "Travel between cities in daylight with a trusted driver.",
+     "Carry a passport copy and your yellow fever certificate."
+    ],
+    "emergencyNumbers": {
+     "police": "122",
+     "ambulance": "—",
+     "general": "122"
+    }
+   },
+   "internet": {
+    "networkCoverage": "4G in Conakry and major towns; patchy coverage in the Fouta Djalon highlands and rural areas",
+    "costPerGbUsd": "~1.00 - 3.00 $",
+    "esimAvailability": "Limited",
+    "bestCarriers": [
+     "Orange Guinée",
+     "MTN Guinée",
+     "Cellcom Guinée"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Poor",
+    "costLevel": "Budget-Friendly",
+    "singleTicketUsd": "0.30 - 1.00 $",
+    "dailyPassUsd": "20 - 40 $",
+    "popularRideApps": [
+     "Yango (Conakry only)",
+     "Shared taxis",
+     "Car hire with driver"
+    ],
+    "taxiAdvice": "Yango works in Conakry; elsewhere use yellow-and-white shared taxis and “sept-place” (7-seat) cars. Traffic is very heavy; a car with driver is the safest option for visitors."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "35 - 55 $",
+    "dailyBudgetMidrangeUsd": "90 - 160 $",
+    "budgetMealUsd": "3 - 8 $",
+    "coffeeUsd": "1 - 3 $",
+    "waterBottleUsd": "0.50 - 1.00 $",
+    "hostelDormUsd": "15 - 30 $",
+    "hotel3StarUsd": "60 - 130 $",
+    "flightCostIndex": "High",
+    "flightTip": "There are no direct flights from Turkey; connect via Dakar, Casablanca, Paris or Brussels."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Greetings are long and important; ask after people’s wellbeing first.",
+     "Use your right hand and show special respect to elders.",
+     "Dress modestly; in Fouta Djalon especially, cover shoulders and knees.",
+     "Do not photograph government buildings, bridges or soldiers."
+    ],
+    "festivals": [
+     "Eid al-Fitr and Eid al-Adha (Tabaski)",
+     "Independence Day (2 October)",
+     "Mawlid and village harvest celebrations"
+    ],
+    "lifestyle": "The homeland of djembe and balafon music; calm life in mountain villages and a busy, crowded capital."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Conakry and the Îles de Loos (Roume and Kassa)",
+     "Kindia: Voile de la Mariée waterfall",
+     "Dalaba’s pine forests and views",
+     "Pita: Kambadaga Falls",
+     "Labé and the Fouta Djalon trekking routes",
+     "Mount Nimba Strict Nature Reserve (UNESCO)"
+    ],
+    "bestSeasons": "November – April (dry season); Conakry is one of the world’s wettest capitals from June to September",
+    "travelStyleTip": "Head inland from Conakry by car with driver; plan village-to-village hikes in Fouta Djalon with a local guide."
+   },
+   "religion": {
+    "primaryReligions": "Islam (~85%), Christianity (~8%) and traditional beliefs.",
+    "respectNorms": "Remove shoes and cover up when entering mosques; avoid eating in public during Ramadan daytime.",
+    "sacredSites": [
+     "Grand Mosque of Conakry",
+     "Sainte-Marie Cathedral, Conakry",
+     "Historic mosques of Fouta Djalon (Timbo, Fougoumba)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "French (official). Pular (Fula), Malinke and Susu are the most widely spoken local languages.",
+    "englishProficiency": "Low; very little English is spoken, so basic French is a big advantage.",
+    "phrases": [
+     {
+      "phrase": "Bonjour",
+      "meaning": "Hello (French)",
+      "translation": "Hello (French)",
+      "pronunciation": "bon-ZHUR"
+     },
+     {
+      "phrase": "On jaaraama",
+      "meaning": "Thank you (Pular)",
+      "translation": "Thank you (Pular)",
+      "pronunciation": "on jaa-RAA-ma"
+     },
+     {
+      "phrase": "No mbadda?",
+      "meaning": "How are you? (Pular)",
+      "translation": "How are you? (Pular)",
+      "pronunciation": "no m-BAD-da"
+     },
+     {
+      "phrase": "Tana mu na?",
+      "meaning": "How are you / no trouble? (Susu)",
+      "translation": "How are you / no trouble? (Susu)",
+      "pronunciation": "TAH-nah moo nah"
+     },
+     {
+      "phrase": "Combien ça coûte ?",
+      "meaning": "How much is it? (French)",
+      "translation": "How much is it? (French)",
+      "pronunciation": "kom-BYAN sa KOOT"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "The Fouta Djalon highlands hosted a powerful Islamic imamate in the 18th century. A French colony, Guinea became the first French African colony to gain independence after rejecting the French Community in the 1958 referendum.",
+    "milestones": [
+     "c. 1725: Founding of the Imamate of Futa Jallon",
+     "1958: Independence",
+     "1981: Mount Nimba inscribed by UNESCO"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Riz sauce arachide (rice with peanut sauce)",
+     "Sauce feuille (cassava-leaf sauce)",
+     "Fonio (ancient grain with vegetables)"
+    ],
+    "traditionalDrinks": [
+     "Gnamakoudji (ginger juice)",
+     "Bissap (hibiscus)",
+     "Lait caillé (soured milk)"
+    ],
+    "streetFoodAndDesserts": [
+     "Grilled fish with fried plantain",
+     "Beignets (fried dough)",
+     "Akara (black-eyed pea fritters)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Mory Kanté (musician, “Yé ké yé ké”)",
+     "Camara Laye (writer, “L’Enfant noir”)",
+     "Naby Keïta (footballer)"
+    ],
+    "strongSectors": [
+     "Bauxite mining (world’s largest reserves)",
+     "Gold and iron ore",
+     "Agriculture (rice, fruit)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Almost entirely cash-based; cards only work in large hotels. Orange Money is common. Bring euros or dollars and change them at a bank or bureau.",
+    "tippingCulture": "Not mandatory; a small amount or around 5% in restaurants is appreciated.",
+    "economicPillars": "Bauxite and gold exports, agriculture and services."
+   }
+  },
+  "itin": {
+   "routeName": "Guinea Route: Conakry, Kindia and the Fouta Djalon Highlands",
+   "routeSummary": "An 8-day route from Conakry’s offshore islands to Kindia’s waterfall, the cool plateau of Dalaba and the Fouta Djalon falls around Labé and Pita.",
+   "totalDays": 8,
+   "idealDurationText": "8-Day Guinea Itinerary",
+   "bestSeason": "November – April (dry season); Conakry is one of the world’s wettest capitals from June to September",
+   "transportMode": "Car with driver (4x4 recommended) + boat to the islands",
+   "paceLevel": "Balanced (Nature + Culture)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stop 1: Conakry and the Îles de Loos",
+     "recommendedDuration": "2 Days (Capital and islands)",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "National Museum",
+      "Madina Market",
+      "Roume and Kassa islands",
+      "Grand Mosque of Conakry"
+     ],
+     "activities": [
+      "Take a day trip by boat to the Îles de Loos.",
+      "See the mask and sculpture collection at the National Museum.",
+      "Eat grilled fish by the sea in the evening."
+     ],
+     "foodAndDrinks": [
+      "Grilled fish",
+      "Riz sauce arachide",
+      "Gnamakoudji"
+     ],
+     "criticalTips": [
+      "Madina Market is very crowded; carry no valuables.",
+      "Allow plenty of time for airport transfers because of traffic."
+     ],
+     "mapsQuery": "Conakry, Guinea"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stop 2: Kindia",
+     "recommendedDuration": "1 Day (Waterfall and hills)",
+     "durationBadge": "1 Day",
+     "highlights": [
+      "Voile de la Mariée (Bridal Veil) waterfall",
+      "Kindia fruit market",
+      "Mont Gangan views"
+     ],
+     "activities": [
+      "Cool off beneath the waterfall.",
+      "Taste pineapples and mangoes at the market.",
+      "Take a short hike at the foot of Mont Gangan."
+     ],
+     "foodAndDrinks": [
+      "Fresh pineapple",
+      "Akara"
+     ],
+     "criticalTips": [
+      "Rocks are slippery in the rainy season.",
+      "Expect road checks leaving Conakry; keep documents ready."
+     ],
+     "mapsQuery": "Kindia, Guinea"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stop 3: Dalaba",
+     "recommendedDuration": "2 Days (Cool plateau)",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "Pine forests and valley views",
+      "Colonial-era villas",
+      "Ditinn Falls (nearby)"
+     ],
+     "activities": [
+      "Hike the plateau trails.",
+      "Make a day trip to Ditinn Falls.",
+      "Visit local craft workshops."
+     ],
+     "foodAndDrinks": [
+      "Fonio",
+      "Lait caillé"
+     ],
+     "criticalTips": [
+      "Nights are cool; bring warm layers.",
+      "Hire a local guide for hikes."
+     ],
+     "mapsQuery": "Dalaba, Guinea"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Stop 4: Labé and Pita",
+     "recommendedDuration": "2-3 Days (Heart of Fouta Djalon)",
+     "durationBadge": "3 Days",
+     "highlights": [
+      "Kambadaga Falls (Pita)",
+      "Labé market",
+      "Fouta Djalon village treks",
+      "Doucky canyons"
+     ],
+     "activities": [
+      "Take a guided canyon hike in Doucky.",
+      "Admire the falls at Kambadaga.",
+      "Stay overnight in a Pular village."
+     ],
+     "foodAndDrinks": [
+      "Sauce feuille",
+      "Lait caillé",
+      "Bissap"
+     ],
+     "criticalTips": [
+      "The falls are most impressive after the rains (October–November).",
+      "Ask before taking photos in villages and dress modestly."
+     ],
+     "mapsQuery": "Labé, Guinea"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Riz sauce arachide (rice with peanut sauce)",
+     "Sauce feuille (cassava-leaf sauce)",
+     "Fonio (ancient grain with vegetables)"
+    ],
+    "drinks": [
+     "Gnamakoudji (ginger juice)",
+     "Bissap (hibiscus)",
+     "Lait caillé (soured milk)"
+    ],
+    "streetFoods": [
+     "Grilled fish with fried plantain",
+     "Beignets (fried dough)",
+     "Akara (black-eyed pea fritters)"
+    ],
+    "diningAdvice": "Meals centre on rice and sauce, shared from one bowl and eaten with the right hand. Ask prices before ordering in local eateries."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Plenty of cash (euros/dollars)",
+     "Insect repellent and malaria tablets",
+     "Yellow fever certificate",
+     "Light jacket for the highlands"
+    ],
+    "safetyAndEtiquette": [
+     "Keep away from demonstrations and crowds.",
+     "Do not photograph official buildings or soldiers."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F",
+     "K"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "European two round-pin (C/F) sockets are common, so Turkish plugs fit in most places. Power cuts are frequent, so bring a power bank."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Tap water is not safe to drink; use sealed bottled water.",
+    "vaccines": [
+     "Yellow fever (certificate checked on entry)",
+     "Hepatitis A and typhoid",
+     "Meningitis (recommended in the dry season)",
+     "Malaria prevention (consult your doctor)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "—"
+   },
+   "tipping": {
+    "custom": "Tipping is not mandatory.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "Leaving the change or about 5% in restaurants is enough; give guides and drivers a small daily tip."
+   },
+   "taxFree": {
+    "vatRefundPercent": "No VAT refund for tourists (VAT 18%)",
+    "minSpend": "Not applicable",
+    "customsNote": "Guinea has no tax-free VAT refund scheme for tourists. Exporting gold and diamonds requires a permit."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "$1.00 - $3.00",
+    "topCarriers": [
+     "Orange Guinée",
+     "MTN Guinée",
+     "Cellcom Guinée"
+    ],
+    "airportSimTrapWarning": "SIM sales at the airport are limited; buy one with your passport at an Orange Guinée or MTN shop. International eSIMs can be expensive."
+   },
+   "touristScams": [
+    {
+     "title": "Checkpoint Bribes",
+     "desc": "Informal fees demanded at road checkpoints.",
+     "tip": "Carry complete documents, stay calm and ask for a receipt."
+    },
+    {
+     "title": "Black-Market Exchange",
+     "desc": "Fake or missing notes when changing money on the street.",
+     "tip": "Use a bureau de change or bank and count the money there."
+    },
+    {
+     "title": "Fake Officials",
+     "desc": "People at the airport posing as staff and charging for help.",
+     "tip": "Trust only uniformed staff and your hotel transfer."
+    }
+   ]
+  }
+ },
+ "de": {
+  "insights": {
+   "currency": "Guinea-Franc (GNF)",
+   "plugType": "Typ C, F, K (220V, 50Hz)",
+   "bestMonths": "November – April (Trockenzeit); Conakry gehört von Juni bis September zu den regenreichsten Hauptstädten der Welt",
+   "safety": {
+    "safetyScore": 40,
+    "safetyLevel": "Erhöhte Vorsicht",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60",
+    "crimeRateSummary": "Während des politischen Übergangs gibt es in Conakry zeitweise Proteste und Straßensperren; Taschenraub, nächtliche Überfälle und falsche Kontrollposten sind die Hauptrisiken. Offizielle Hinweise raten zu erhöhter Vorsicht.",
+    "commonScams": [
+     "Inoffizielle „Gebühren“ an Polizei- oder Gendarmeriekontrollen",
+     "Personen, die sich am Flughafen als Beamte ausgeben und für Gepäck- oder Geldhilfe kassieren",
+     "Falsche oder fehlende Scheine beim Geldtausch auf dem Schwarzmarkt"
+    ],
+    "safeTravelTips": [
+     "Demonstrationen und Menschenmengen meiden; lokale Nachrichten verfolgen.",
+     "Überlandfahrten nur bei Tageslicht mit vertrauenswürdigem Fahrer.",
+     "Passkopie und Gelbfieber-Impfnachweis mitführen."
+    ],
+    "emergencyNumbers": {
+     "police": "122",
+     "ambulance": "—",
+     "general": "122"
+    }
+   },
+   "internet": {
+    "networkCoverage": "4G in Conakry und größeren Städten; lückenhaft im Fouta-Djalon-Hochland und auf dem Land",
+    "costPerGbUsd": "~1.00 - 3.00 $",
+    "esimAvailability": "Eingeschränkt",
+    "bestCarriers": [
+     "Orange Guinée",
+     "MTN Guinée",
+     "Cellcom Guinée"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Schwach",
+    "costLevel": "Günstig",
+    "singleTicketUsd": "0.30 - 1.00 $",
+    "dailyPassUsd": "20 - 40 $",
+    "popularRideApps": [
+     "Yango (nur Conakry)",
+     "Sammeltaxis",
+     "Mietwagen mit Fahrer"
+    ],
+    "taxiAdvice": "In Conakry funktioniert Yango; sonst fährt man gelb-weiße Sammeltaxis und „Sept-place“-Wagen (7 Sitze). Der Verkehr ist sehr dicht; ein Auto mit Fahrer ist für Reisende am sichersten."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "35 - 55 $",
+    "dailyBudgetMidrangeUsd": "90 - 160 $",
+    "budgetMealUsd": "3 - 8 $",
+    "coffeeUsd": "1 - 3 $",
+    "waterBottleUsd": "0.50 - 1.00 $",
+    "hostelDormUsd": "15 - 30 $",
+    "hotel3StarUsd": "60 - 130 $",
+    "flightCostIndex": "Hoch",
+    "flightTip": "Keine Direktflüge aus der Türkei; Umstieg in Dakar, Casablanca, Paris oder Brüssel."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Begrüßungen sind lang und wichtig; zuerst nach dem Befinden fragen.",
+     "Die rechte Hand benutzen und Älteren besonderen Respekt erweisen.",
+     "Zurückhaltend kleiden; besonders im Fouta Djalon Schultern und Knie bedecken.",
+     "Keine Regierungsgebäude, Brücken oder Soldaten fotografieren."
+    ],
+    "festivals": [
+     "Ramadanfest und Opferfest (Tabaski)",
+     "Unabhängigkeitstag (2. Oktober)",
+     "Mawlid und dörfliche Erntefeste"
+    ],
+    "lifestyle": "Heimat der Djembe- und Balafon-Musik; ruhiges Leben in Bergdörfern und eine lebhafte, volle Hauptstadt."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Conakry und die Îles de Loos (Roume und Kassa)",
+     "Kindia: Wasserfall Voile de la Mariée",
+     "Kiefernwälder und Ausblicke von Dalaba",
+     "Pita: Kambadaga-Fälle",
+     "Labé und die Wanderwege des Fouta Djalon",
+     "Naturreservat Mont Nimba (UNESCO)"
+    ],
+    "bestSeasons": "November – April (Trockenzeit); Conakry gehört von Juni bis September zu den regenreichsten Hauptstädten der Welt",
+    "travelStyleTip": "Von Conakry mit Auto und Fahrer ins Landesinnere fahren; Dorf-zu-Dorf-Wanderungen im Fouta Djalon mit lokalem Guide planen."
+   },
+   "religion": {
+    "primaryReligions": "Islam (~85 %), Christentum (~8 %) und traditionelle Religionen.",
+    "respectNorms": "Beim Betreten von Moscheen Schuhe ausziehen und bedeckt sein; im Ramadan tagsüber nicht öffentlich essen.",
+    "sacredSites": [
+     "Große Moschee von Conakry",
+     "Kathedrale Sainte-Marie, Conakry",
+     "Historische Moscheen des Fouta Djalon (Timbo, Fougoumba)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Französisch (Amtssprache). Pular (Fula), Malinke und Susu sind die verbreitetsten Landessprachen.",
+    "englishProficiency": "Gering; Englisch wird kaum gesprochen, Grundkenntnisse in Französisch sind ein großer Vorteil.",
+    "phrases": [
+     {
+      "phrase": "Bonjour",
+      "meaning": "Hallo (Französisch)",
+      "translation": "Hallo (Französisch)",
+      "pronunciation": "bon-ZHUR"
+     },
+     {
+      "phrase": "On jaaraama",
+      "meaning": "Danke (Pular)",
+      "translation": "Danke (Pular)",
+      "pronunciation": "on jaa-RAA-ma"
+     },
+     {
+      "phrase": "No mbadda?",
+      "meaning": "Wie geht es dir? (Pular)",
+      "translation": "Wie geht es dir? (Pular)",
+      "pronunciation": "no m-BAD-da"
+     },
+     {
+      "phrase": "Tana mu na?",
+      "meaning": "Wie geht’s / alles gut? (Susu)",
+      "translation": "Wie geht’s / alles gut? (Susu)",
+      "pronunciation": "TAH-nah moo nah"
+     },
+     {
+      "phrase": "Combien ça coûte ?",
+      "meaning": "Wie viel kostet das? (Französisch)",
+      "translation": "Wie viel kostet das? (Französisch)",
+      "pronunciation": "kom-BYAN sa KOOT"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Im 18. Jahrhundert beherbergte das Fouta-Djalon-Hochland ein mächtiges islamisches Imamat. Die französische Kolonie Guinea wurde 1958 als erste französische Kolonie Afrikas unabhängig, nachdem sie im Referendum die Französische Gemeinschaft ablehnte.",
+    "milestones": [
+     "um 1725: Gründung des Imamats Futa Jallon",
+     "1958: Unabhängigkeit",
+     "1981: Mont Nimba wird UNESCO-Welterbe"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Riz sauce arachide (Reis mit Erdnusssauce)",
+     "Sauce feuille (Maniokblattsauce)",
+     "Fonio (Urgetreide mit Gemüse)"
+    ],
+    "traditionalDrinks": [
+     "Gnamakoudji (Ingwersaft)",
+     "Bissap (Hibiskus)",
+     "Lait caillé (Sauermilch)"
+    ],
+    "streetFoodAndDesserts": [
+     "Gegrillter Fisch mit frittierter Kochbanane",
+     "Beignets (frittierter Teig)",
+     "Akara (Bohnenküchlein)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Mory Kanté (Musiker, „Yé ké yé ké“)",
+     "Camara Laye (Schriftsteller, „L’Enfant noir“)",
+     "Naby Keïta (Fußballer)"
+    ],
+    "strongSectors": [
+     "Bauxitabbau (größte Reserven der Welt)",
+     "Gold und Eisenerz",
+     "Landwirtschaft (Reis, Obst)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Fast nur Bargeld; Karten gehen nur in großen Hotels. Orange Money ist verbreitet. Euro oder Dollar mitbringen und in Bank oder Wechselstube tauschen.",
+    "tippingCulture": "Nicht Pflicht; ein kleiner Betrag oder etwa 5 % im Restaurant wird geschätzt.",
+    "economicPillars": "Export von Bauxit und Gold, Landwirtschaft und Dienstleistungen."
+   }
+  },
+  "itin": {
+   "routeName": "Guinea-Route: Conakry, Kindia und das Fouta-Djalon-Hochland",
+   "routeSummary": "Eine 8-tägige Route von Conakrys vorgelagerten Inseln zum Wasserfall von Kindia, zum kühlen Plateau von Dalaba und zu den Fällen des Fouta Djalon um Labé und Pita.",
+   "totalDays": 8,
+   "idealDurationText": "8-tägige Guinea-Route",
+   "bestSeason": "November – April (Trockenzeit); Conakry gehört von Juni bis September zu den regenreichsten Hauptstädten der Welt",
+   "transportMode": "Auto mit Fahrer (4x4 empfohlen) + Boot zu den Inseln",
+   "paceLevel": "Ausgewogen (Natur + Kultur)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stopp 1: Conakry und Îles de Loos",
+     "recommendedDuration": "2 Tage (Hauptstadt und Inseln)",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "Nationalmuseum",
+      "Madina-Markt",
+      "Inseln Roume und Kassa",
+      "Große Moschee von Conakry"
+     ],
+     "activities": [
+      "Einen Tagesausflug per Boot zu den Îles de Loos machen.",
+      "Masken und Skulpturen im Nationalmuseum ansehen.",
+      "Abends gegrillten Fisch am Meer essen."
+     ],
+     "foodAndDrinks": [
+      "Gegrillter Fisch",
+      "Riz sauce arachide",
+      "Gnamakoudji"
+     ],
+     "criticalTips": [
+      "Der Madina-Markt ist sehr voll; keine Wertsachen mitnehmen.",
+      "Wegen des Verkehrs viel Zeit für den Flughafentransfer einplanen."
+     ],
+     "mapsQuery": "Conakry, Guinea"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stopp 2: Kindia",
+     "recommendedDuration": "1 Tag (Wasserfall und Hügel)",
+     "durationBadge": "1 Tag",
+     "highlights": [
+      "Wasserfall Voile de la Mariée (Brautschleier)",
+      "Obstmarkt von Kindia",
+      "Blick auf den Mont Gangan"
+     ],
+     "activities": [
+      "Sich unter dem Wasserfall abkühlen.",
+      "Ananas und Mangos auf dem Markt probieren.",
+      "Eine kurze Wanderung am Fuß des Mont Gangan machen."
+     ],
+     "foodAndDrinks": [
+      "Frische Ananas",
+      "Akara"
+     ],
+     "criticalTips": [
+      "In der Regenzeit sind die Felsen rutschig.",
+      "Beim Verlassen von Conakry mit Straßenkontrollen rechnen; Dokumente bereithalten."
+     ],
+     "mapsQuery": "Kindia, Guinea"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stopp 3: Dalaba",
+     "recommendedDuration": "2 Tage (Kühles Hochplateau)",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "Kiefernwälder und Talblicke",
+      "Villen aus der Kolonialzeit",
+      "Ditinn-Wasserfall (in der Nähe)"
+     ],
+     "activities": [
+      "Auf den Wegen des Plateaus wandern.",
+      "Einen Tagesausflug zum Ditinn-Wasserfall machen.",
+      "Lokale Handwerksbetriebe besuchen."
+     ],
+     "foodAndDrinks": [
+      "Fonio",
+      "Lait caillé"
+     ],
+     "criticalTips": [
+      "Die Nächte sind kühl; warme Kleidung einpacken.",
+      "Für Wanderungen einen lokalen Guide nehmen."
+     ],
+     "mapsQuery": "Dalaba, Guinea"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Stopp 4: Labé und Pita",
+     "recommendedDuration": "2-3 Tage (Herz des Fouta Djalon)",
+     "durationBadge": "3 Tage",
+     "highlights": [
+      "Kambadaga-Fälle (Pita)",
+      "Markt von Labé",
+      "Dorfwanderungen im Fouta Djalon",
+      "Schluchten von Doucky"
+     ],
+     "activities": [
+      "Eine geführte Schluchtenwanderung in Doucky machen.",
+      "Die Fälle von Kambadaga bewundern.",
+      "In einem Pular-Dorf übernachten."
+     ],
+     "foodAndDrinks": [
+      "Sauce feuille",
+      "Lait caillé",
+      "Bissap"
+     ],
+     "criticalTips": [
+      "Die Fälle sind nach der Regenzeit (Oktober–November) am eindrucksvollsten.",
+      "In Dörfern vor Fotos fragen und zurückhaltend kleiden."
+     ],
+     "mapsQuery": "Labé, Guinea"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Riz sauce arachide (Reis mit Erdnusssauce)",
+     "Sauce feuille (Maniokblattsauce)",
+     "Fonio (Urgetreide mit Gemüse)"
+    ],
+    "drinks": [
+     "Gnamakoudji (Ingwersaft)",
+     "Bissap (Hibiskus)",
+     "Lait caillé (Sauermilch)"
+    ],
+    "streetFoods": [
+     "Gegrillter Fisch mit frittierter Kochbanane",
+     "Beignets (frittierter Teig)",
+     "Akara (Bohnenküchlein)"
+    ],
+    "diningAdvice": "Die Küche basiert auf Reis mit Sauce, gemeinsam aus einer Schüssel mit der rechten Hand gegessen. In einfachen Lokalen vor der Bestellung nach dem Preis fragen."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Reichlich Bargeld (Euro/Dollar)",
+     "Mückenschutz und Malariatabletten",
+     "Gelbfieber-Impfnachweis",
+     "Leichte Jacke für das Hochland"
+    ],
+    "safetyAndEtiquette": [
+     "Von Demonstrationen und Menschenmengen fernhalten.",
+     "Keine offiziellen Gebäude oder Soldaten fotografieren."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F",
+     "K"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Europäische Steckdosen mit zwei Rundstiften (C/F) sind üblich, türkische Stecker passen meist. Stromausfälle sind häufig – eine Powerbank mitnehmen."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Leitungswasser ist nicht trinkbar; versiegeltes Flaschenwasser verwenden.",
+    "vaccines": [
+     "Gelbfieber (Nachweis bei Einreise kontrolliert)",
+     "Hepatitis A und Typhus",
+     "Meningitis (in der Trockenzeit empfohlen)",
+     "Malariaprophylaxe (Arzt fragen)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "—"
+   },
+   "tipping": {
+    "custom": "Trinkgeld ist nicht Pflicht.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "Im Restaurant reicht Aufrunden oder etwa 5 %; Guides und Fahrern ein kleines Tagestrinkgeld geben."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Keine Mehrwertsteuererstattung für Touristen (MwSt. 18 %)",
+    "minSpend": "Nicht zutreffend",
+    "customsNote": "Guinea hat kein Tax-Free-System für Touristen. Die Ausfuhr von Gold und Diamanten ist genehmigungspflichtig."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "$1.00 - $3.00",
+    "topCarriers": [
+     "Orange Guinée",
+     "MTN Guinée",
+     "Cellcom Guinée"
+    ],
+    "airportSimTrapWarning": "Am Flughafen gibt es kaum SIM-Verkauf; mit Pass im Orange-Guinée- oder MTN-Shop kaufen. Internationale eSIMs können teuer sein."
+   },
+   "touristScams": [
+    {
+     "title": "Bestechung an Kontrollposten",
+     "desc": "Inoffizielle Gebühren an Straßenkontrollen.",
+     "tip": "Vollständige Dokumente mitführen, ruhig bleiben und eine Quittung verlangen."
+    },
+    {
+     "title": "Schwarzmarkt-Tausch",
+     "desc": "Falsche oder fehlende Scheine beim Straßentausch.",
+     "tip": "Wechselstube oder Bank nutzen und das Geld dort nachzählen."
+    },
+    {
+     "title": "Falsche Beamte",
+     "desc": "Personen am Flughafen geben sich als Personal aus und kassieren für Hilfe.",
+     "tip": "Nur uniformiertem Personal und dem Hoteltransfer vertrauen."
+    }
+   ]
+  }
+ },
+ "es": {
+  "insights": {
+   "currency": "Franco guineano (GNF)",
+   "plugType": "Tipo C, F, K (220V, 50Hz)",
+   "bestMonths": "Noviembre – abril (estación seca); de junio a septiembre Conakri es una de las capitales más lluviosas del mundo",
+   "safety": {
+    "safetyScore": 40,
+    "safetyLevel": "Precaución Aconsejada",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60",
+    "crimeRateSummary": "Durante la transición política hay protestas y cortes de carretera ocasionales en Conakri; los tirones, los robos nocturnos y los controles falsos son los riesgos principales. Los avisos oficiales recomiendan mayor precaución.",
+    "commonScams": [
+     "“Tasas” informales exigidas en controles de policía o gendarmería",
+     "Personas que se hacen pasar por funcionarios en el aeropuerto y cobran por ayudar con equipaje o divisas",
+     "Billetes falsos o de menos al cambiar dinero en el mercado negro"
+    ],
+    "safeTravelTips": [
+     "Evita manifestaciones y aglomeraciones; sigue las noticias locales.",
+     "Viaja entre ciudades de día y con un conductor de confianza.",
+     "Lleva copia del pasaporte y el certificado de fiebre amarilla."
+    ],
+    "emergencyNumbers": {
+     "police": "122",
+     "ambulance": "—",
+     "general": "122"
+    }
+   },
+   "internet": {
+    "networkCoverage": "4G en Conakri y ciudades grandes; cobertura irregular en las tierras altas de Futa Yallon y zonas rurales",
+    "costPerGbUsd": "~1.00 - 3.00 $",
+    "esimAvailability": "Limitada",
+    "bestCarriers": [
+     "Orange Guinée",
+     "MTN Guinée",
+     "Cellcom Guinée"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Deficiente",
+    "costLevel": "Económico",
+    "singleTicketUsd": "0.30 - 1.00 $",
+    "dailyPassUsd": "20 - 40 $",
+    "popularRideApps": [
+     "Yango (solo Conakri)",
+     "Taxis compartidos",
+     "Coche con conductor"
+    ],
+    "taxiAdvice": "En Conakri funciona Yango; en el resto se usan taxis compartidos amarillos y blancos y coches “sept-place” (7 plazas). El tráfico es muy denso; para viajeros, lo más seguro es un coche con conductor."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "35 - 55 $",
+    "dailyBudgetMidrangeUsd": "90 - 160 $",
+    "budgetMealUsd": "3 - 8 $",
+    "coffeeUsd": "1 - 3 $",
+    "waterBottleUsd": "0.50 - 1.00 $",
+    "hostelDormUsd": "15 - 30 $",
+    "hotel3StarUsd": "60 - 130 $",
+    "flightCostIndex": "Alto",
+    "flightTip": "No hay vuelos directos desde Turquía; se conecta por Dakar, Casablanca, París o Bruselas."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Los saludos son largos e importantes; primero se pregunta por el bienestar.",
+     "Usa la mano derecha y muestra especial respeto a los mayores.",
+     "Viste con recato; en Futa Yallon sobre todo, cubre hombros y rodillas.",
+     "No fotografíes edificios oficiales, puentes ni militares."
+    ],
+    "festivals": [
+     "Fin del Ramadán y Fiesta del Sacrificio (Tabaski)",
+     "Día de la Independencia (2 de octubre)",
+     "Mawlid y fiestas de la cosecha en las aldeas"
+    ],
+    "lifestyle": "Cuna de la música de djembé y balafón; vida tranquila en las aldeas de montaña y capital bulliciosa y abarrotada."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Conakri y las Îles de Loos (Roume y Kassa)",
+     "Kindia: cascada Voile de la Mariée",
+     "Pinares y miradores de Dalaba",
+     "Pita: cascadas de Kambadaga",
+     "Labé y las rutas de senderismo de Futa Yallon",
+     "Reserva Natural del Monte Nimba (UNESCO)"
+    ],
+    "bestSeasons": "Noviembre – abril (estación seca); de junio a septiembre Conakri es una de las capitales más lluviosas del mundo",
+    "travelStyleTip": "Sal de Conakri hacia el interior en coche con conductor; planifica las caminatas de aldea en aldea por Futa Yallon con un guía local."
+   },
+   "religion": {
+    "primaryReligions": "Islam (~85 %), cristianismo (~8 %) y creencias tradicionales.",
+    "respectNorms": "Quítate los zapatos y cúbrete al entrar en mezquitas; durante el Ramadán evita comer en público de día.",
+    "sacredSites": [
+     "Gran Mezquita de Conakri",
+     "Catedral de Sainte-Marie, Conakri",
+     "Mezquitas históricas de Futa Yallon (Timbo, Fougoumba)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Francés (oficial). Pular (fula), malinké y susu son las lenguas locales más habladas.",
+    "englishProficiency": "Bajo; apenas se habla inglés, así que algo de francés es una gran ventaja.",
+    "phrases": [
+     {
+      "phrase": "Bonjour",
+      "meaning": "Hola (francés)",
+      "translation": "Hola (francés)",
+      "pronunciation": "bon-ZHUR"
+     },
+     {
+      "phrase": "On jaaraama",
+      "meaning": "Gracias (pular)",
+      "translation": "Gracias (pular)",
+      "pronunciation": "on jaa-RAA-ma"
+     },
+     {
+      "phrase": "No mbadda?",
+      "meaning": "¿Cómo estás? (pular)",
+      "translation": "¿Cómo estás? (pular)",
+      "pronunciation": "no m-BAD-da"
+     },
+     {
+      "phrase": "Tana mu na?",
+      "meaning": "¿Qué tal, todo bien? (susu)",
+      "translation": "¿Qué tal, todo bien? (susu)",
+      "pronunciation": "TAH-nah moo nah"
+     },
+     {
+      "phrase": "Combien ça coûte ?",
+      "meaning": "¿Cuánto cuesta? (francés)",
+      "translation": "¿Cuánto cuesta? (francés)",
+      "pronunciation": "kom-BYAN sa KOOT"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "En el siglo XVIII las tierras altas de Futa Yallon acogieron un poderoso imamato islámico. Colonia francesa, Guinea fue la primera colonia francesa de África en independizarse tras rechazar la Comunidad Francesa en el referéndum de 1958.",
+    "milestones": [
+     "h. 1725: Fundación del Imamato de Futa Yallon",
+     "1958: Independencia",
+     "1981: El Monte Nimba entra en la lista de la UNESCO"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Riz sauce arachide (arroz con salsa de cacahuete)",
+     "Sauce feuille (salsa de hojas de mandioca)",
+     "Fonio (cereal ancestral con verduras)"
+    ],
+    "traditionalDrinks": [
+     "Gnamakoudji (zumo de jengibre)",
+     "Bissap (hibisco)",
+     "Lait caillé (leche cuajada)"
+    ],
+    "streetFoodAndDesserts": [
+     "Pescado a la parrilla con plátano frito",
+     "Beignets (buñuelos)",
+     "Akara (buñuelos de frijol)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Mory Kanté (músico, “Yé ké yé ké”)",
+     "Camara Laye (escritor, “L’Enfant noir”)",
+     "Naby Keïta (futbolista)"
+    ],
+    "strongSectors": [
+     "Minería de bauxita (mayores reservas del mundo)",
+     "Oro y mineral de hierro",
+     "Agricultura (arroz, fruta)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Economía casi solo en efectivo; las tarjetas funcionan únicamente en grandes hoteles. Orange Money es habitual. Lleva euros o dólares y cámbialos en un banco o casa de cambio.",
+    "tippingCulture": "No es obligatoria; se agradece una pequeña cantidad o un 5 % en restaurantes.",
+    "economicPillars": "Exportación de bauxita y oro, agricultura y servicios."
+   }
+  },
+  "itin": {
+   "routeName": "Ruta por Guinea: Conakri, Kindia y las tierras altas de Futa Yallon",
+   "routeSummary": "Una ruta de 8 días desde las islas frente a Conakri hasta la cascada de Kindia, la fresca meseta de Dalaba y las cascadas de Futa Yallon alrededor de Labé y Pita.",
+   "totalDays": 8,
+   "idealDurationText": "Itinerario de 8 días por Guinea",
+   "bestSeason": "Noviembre – abril (estación seca); de junio a septiembre Conakri es una de las capitales más lluviosas del mundo",
+   "transportMode": "Coche con conductor (4x4 recomendado) + barco a las islas",
+   "paceLevel": "Equilibrado (Naturaleza + Cultura)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Conakri e Îles de Loos",
+     "recommendedDuration": "2 Días (Capital e islas)",
+     "durationBadge": "2 Días",
+     "highlights": [
+      "Museo Nacional",
+      "Mercado de Madina",
+      "Islas Roume y Kassa",
+      "Gran Mezquita de Conakri"
+     ],
+     "activities": [
+      "Haz una excursión en barco a las Îles de Loos.",
+      "Contempla las máscaras y esculturas del Museo Nacional.",
+      "Cena pescado a la parrilla junto al mar."
+     ],
+     "foodAndDrinks": [
+      "Pescado a la parrilla",
+      "Riz sauce arachide",
+      "Gnamakoudji"
+     ],
+     "criticalTips": [
+      "El mercado de Madina está abarrotado; no lleves objetos de valor.",
+      "Reserva mucho tiempo para el traslado al aeropuerto por el tráfico."
+     ],
+     "mapsQuery": "Conakry, Guinea"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Kindia",
+     "recommendedDuration": "1 Día (Cascada y colinas)",
+     "durationBadge": "1 Día",
+     "highlights": [
+      "Cascada Voile de la Mariée (Velo de Novia)",
+      "Mercado de frutas de Kindia",
+      "Vistas del Mont Gangan"
+     ],
+     "activities": [
+      "Refréscate bajo la cascada.",
+      "Prueba piñas y mangos en el mercado.",
+      "Haz una caminata corta al pie del Mont Gangan."
+     ],
+     "foodAndDrinks": [
+      "Piña fresca",
+      "Akara"
+     ],
+     "criticalTips": [
+      "En la estación de lluvias las rocas resbalan.",
+      "Al salir de Conakri habrá controles; ten los documentos a mano."
+     ],
+     "mapsQuery": "Kindia, Guinea"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Dalaba",
+     "recommendedDuration": "2 Días (Meseta fresca)",
+     "durationBadge": "2 Días",
+     "highlights": [
+      "Pinares y vistas a los valles",
+      "Villas de la época colonial",
+      "Cascada de Ditinn (cerca)"
+     ],
+     "activities": [
+      "Camina por los senderos de la meseta.",
+      "Haz una excursión de un día a la cascada de Ditinn.",
+      "Visita talleres de artesanía local."
+     ],
+     "foodAndDrinks": [
+      "Fonio",
+      "Lait caillé"
+     ],
+     "criticalTips": [
+      "Las noches son frescas; lleva ropa de abrigo.",
+      "Contrata un guía local para las caminatas."
+     ],
+     "mapsQuery": "Dalaba, Guinea"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Labé y Pita",
+     "recommendedDuration": "2-3 Días (Corazón de Futa Yallon)",
+     "durationBadge": "3 Días",
+     "highlights": [
+      "Cascadas de Kambadaga (Pita)",
+      "Mercado de Labé",
+      "Caminatas por aldeas de Futa Yallon",
+      "Cañones de Doucky"
+     ],
+     "activities": [
+      "Haz una caminata guiada por los cañones de Doucky.",
+      "Admira las cascadas de Kambadaga.",
+      "Pasa la noche en una aldea pular."
+     ],
+     "foodAndDrinks": [
+      "Sauce feuille",
+      "Lait caillé",
+      "Bissap"
+     ],
+     "criticalTips": [
+      "Las cascadas lucen más tras las lluvias (octubre–noviembre).",
+      "En las aldeas pide permiso para fotos y viste con recato."
+     ],
+     "mapsQuery": "Labé, Guinea"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Riz sauce arachide (arroz con salsa de cacahuete)",
+     "Sauce feuille (salsa de hojas de mandioca)",
+     "Fonio (cereal ancestral con verduras)"
+    ],
+    "drinks": [
+     "Gnamakoudji (zumo de jengibre)",
+     "Bissap (hibisco)",
+     "Lait caillé (leche cuajada)"
+    ],
+    "streetFoods": [
+     "Pescado a la parrilla con plátano frito",
+     "Beignets (buñuelos)",
+     "Akara (buñuelos de frijol)"
+    ],
+    "diningAdvice": "La cocina gira en torno al arroz con salsa, compartido en un cuenco y comido con la mano derecha. Pregunta el precio antes de pedir en comedores locales."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Mucho efectivo (euros/dólares)",
+     "Repelente y pastillas antipalúdicas",
+     "Certificado de fiebre amarilla",
+     "Chaqueta ligera para la montaña"
+    ],
+    "safetyAndEtiquette": [
+     "Mantente lejos de manifestaciones y aglomeraciones.",
+     "No fotografíes edificios oficiales ni militares."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F",
+     "K"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Son habituales los enchufes europeos de dos clavijas redondas (C/F), así que los enchufes turcos sirven casi siempre. Los cortes de luz son frecuentes: lleva una batería externa."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "El agua del grifo no es potable; usa agua embotellada sellada.",
+    "vaccines": [
+     "Fiebre amarilla (certificado revisado a la entrada)",
+     "Hepatitis A y fiebre tifoidea",
+     "Meningitis (recomendada en la estación seca)",
+     "Prevención de la malaria (consulta a tu médico)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "—"
+   },
+   "tipping": {
+    "custom": "La propina no es obligatoria.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "En restaurantes basta con dejar el cambio o un 5 %; da a guías y conductores una pequeña propina diaria."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Sin devolución de IVA para turistas (IVA 18 %)",
+    "minSpend": "No aplica",
+    "customsNote": "Guinea no tiene sistema de devolución de IVA (tax-free) para turistas. Exportar oro y diamantes requiere permiso."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "$1.00 - $3.00",
+    "topCarriers": [
+     "Orange Guinée",
+     "MTN Guinée",
+     "Cellcom Guinée"
+    ],
+    "airportSimTrapWarning": "En el aeropuerto apenas se venden SIM; cómprala con pasaporte en una tienda de Orange Guinée o MTN. Las eSIM internacionales pueden salir caras."
+   },
+   "touristScams": [
+    {
+     "title": "Sobornos en controles",
+     "desc": "Tasas informales en los controles de carretera.",
+     "tip": "Lleva todos los documentos, mantén la calma y pide recibo."
+    },
+    {
+     "title": "Cambio en el mercado negro",
+     "desc": "Billetes falsos o que faltan al cambiar en la calle.",
+     "tip": "Usa una casa de cambio o un banco y cuenta el dinero allí."
+    },
+    {
+     "title": "Falsos funcionarios",
+     "desc": "Personas en el aeropuerto que se hacen pasar por personal y cobran por ayudar.",
+     "tip": "Confía solo en personal uniformado y en el traslado del hotel."
+    }
+   ]
+  }
+ },
+ "ru": {
+  "insights": {
+   "currency": "Гвинейский франк (GNF)",
+   "plugType": "Тип C, F, K (220V, 50Hz)",
+   "bestMonths": "Ноябрь – апрель (сухой сезон); с июня по сентябрь Конакри — одна из самых дождливых столиц мира",
+   "safety": {
+    "safetyScore": 40,
+    "safetyLevel": "Требуется Осторожность",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60",
+    "crimeRateSummary": "В период политического перехода в Конакри случаются протесты и перекрытия дорог; главные риски — уличные кражи, ночные ограбления и фальшивые блокпосты. Официальные рекомендации советуют повышенную осторожность.",
+    "commonScams": [
+     "Неофициальные «сборы» на постах полиции и жандармерии",
+     "Люди в аэропорту, выдающие себя за служащих и берущие деньги за «помощь» с багажом или обменом",
+     "Фальшивые купюры или недостача при обмене валюты на чёрном рынке"
+    ],
+    "safeTravelTips": [
+     "Избегайте демонстраций и скоплений людей; следите за местными новостями.",
+     "Между городами ездите днём и с надёжным водителем.",
+     "Носите копию паспорта и сертификат о прививке от жёлтой лихорадки."
+    ],
+    "emergencyNumbers": {
+     "police": "122",
+     "ambulance": "—",
+     "general": "122"
+    }
+   },
+   "internet": {
+    "networkCoverage": "4G в Конакри и крупных городах; на нагорье Фута-Джаллон и в сельской местности связь с перебоями",
+    "costPerGbUsd": "~1.00 - 3.00 $",
+    "esimAvailability": "Ограниченная",
+    "bestCarriers": [
+     "Orange Guinée",
+     "MTN Guinée",
+     "Cellcom Guinée"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Слабый",
+    "costLevel": "Бюджетный",
+    "singleTicketUsd": "0.30 - 1.00 $",
+    "dailyPassUsd": "20 - 40 $",
+    "popularRideApps": [
+     "Yango (только Конакри)",
+     "Маршрутные такси",
+     "Аренда машины с водителем"
+    ],
+    "taxiAdvice": "В Конакри работает Yango; в остальных местах ездят на жёлто-белых маршрутных такси и машинах «sept-place» (7 мест). Движение очень плотное; для туристов безопаснее всего машина с водителем."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "35 - 55 $",
+    "dailyBudgetMidrangeUsd": "90 - 160 $",
+    "budgetMealUsd": "3 - 8 $",
+    "coffeeUsd": "1 - 3 $",
+    "waterBottleUsd": "0.50 - 1.00 $",
+    "hostelDormUsd": "15 - 30 $",
+    "hotel3StarUsd": "60 - 130 $",
+    "flightCostIndex": "Высокий",
+    "flightTip": "Прямых рейсов из Турции нет; летят с пересадкой в Дакаре, Касабланке, Париже или Брюсселе."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Приветствия долгие и важные; сначала расспросите о самочувствии.",
+     "Пользуйтесь правой рукой и проявляйте особое уважение к старшим.",
+     "Одевайтесь скромно; особенно в Фута-Джаллоне закрывайте плечи и колени.",
+     "Не фотографируйте правительственные здания, мосты и военных."
+    ],
+    "festivals": [
+     "Ураза-байрам и Курбан-байрам (Табаски)",
+     "День независимости (2 октября)",
+     "Мавлид и деревенские праздники урожая"
+    ],
+    "lifestyle": "Родина музыки джембе и балафона; спокойная жизнь горных деревень и шумная, многолюдная столица."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Конакри и острова Лос (Руме и Касса)",
+     "Киндиа: водопад Вуаль-де-ла-Марье",
+     "Сосновые леса и виды Далабы",
+     "Пита: водопады Камбадага",
+     "Лабе и треккинговые тропы Фута-Джаллона",
+     "Заповедник горы Нимба (ЮНЕСКО)"
+    ],
+    "bestSeasons": "Ноябрь – апрель (сухой сезон); с июня по сентябрь Конакри — одна из самых дождливых столиц мира",
+    "travelStyleTip": "Из Конакри отправляйтесь вглубь страны на машине с водителем; походы от деревни к деревне в Фута-Джаллоне планируйте с местным гидом."
+   },
+   "religion": {
+    "primaryReligions": "Ислам (~85 %), христианство (~8 %) и традиционные верования.",
+    "respectNorms": "В мечети входите без обуви и в закрытой одежде; в Рамадан не ешьте днём на людях.",
+    "sacredSites": [
+     "Большая мечеть Конакри",
+     "Собор Сент-Мари, Конакри",
+     "Исторические мечети Фута-Джаллона (Тимбо, Фугумба)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Французский (официальный). Самые распространённые местные языки — пулар (фула), малинке и сусу.",
+    "englishProficiency": "Низкий: по-английски почти не говорят, базовый французский — большое преимущество.",
+    "phrases": [
+     {
+      "phrase": "Bonjour",
+      "meaning": "Здравствуйте (французский)",
+      "translation": "Здравствуйте (французский)",
+      "pronunciation": "bon-ZHUR"
+     },
+     {
+      "phrase": "On jaaraama",
+      "meaning": "Спасибо (пулар)",
+      "translation": "Спасибо (пулар)",
+      "pronunciation": "on jaa-RAA-ma"
+     },
+     {
+      "phrase": "No mbadda?",
+      "meaning": "Как дела? (пулар)",
+      "translation": "Как дела? (пулар)",
+      "pronunciation": "no m-BAD-da"
+     },
+     {
+      "phrase": "Tana mu na?",
+      "meaning": "Как дела, всё в порядке? (сусу)",
+      "translation": "Как дела, всё в порядке? (сусу)",
+      "pronunciation": "TAH-nah moo nah"
+     },
+     {
+      "phrase": "Combien ça coûte ?",
+      "meaning": "Сколько стоит? (французский)",
+      "translation": "Сколько стоит? (французский)",
+      "pronunciation": "kom-BYAN sa KOOT"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "В XVIII веке на нагорье Фута-Джаллон существовал могущественный исламский имамат. Бывшая французская колония Гвинея стала первой французской колонией в Африке, получившей независимость, отвергнув на референдуме 1958 года Французское сообщество.",
+    "milestones": [
+     "ок. 1725: Основание имамата Фута-Джаллон",
+     "1958: Независимость",
+     "1981: Гора Нимба внесена в список ЮНЕСКО"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Рис с арахисовым соусом (riz sauce arachide)",
+     "Сос фёй (соус из листьев маниоки)",
+     "Фонио (древний злак с овощами)"
+    ],
+    "traditionalDrinks": [
+     "Ньямакуджи (имбирный сок)",
+     "Биссап (гибискус)",
+     "Ле кайе (простокваша)"
+    ],
+    "streetFoodAndDesserts": [
+     "Рыба на гриле с жареным плантаном",
+     "Беньё (жареное тесто)",
+     "Акара (оладьи из фасоли)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Мори Канте (музыкант, «Yé ké yé ké»)",
+     "Камара Лай (писатель, «Чёрный ребёнок»)",
+     "Наби Кейта (футболист)"
+    ],
+    "strongSectors": [
+     "Добыча бокситов (крупнейшие запасы в мире)",
+     "Золото и железная руда",
+     "Сельское хозяйство (рис, фрукты)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Почти полностью наличная экономика; карты принимают только крупные отели. Распространён Orange Money. Везите евро или доллары и меняйте в банке или обменнике.",
+    "tippingCulture": "Не обязательны; в ресторане уместна мелочь или около 5 %.",
+    "economicPillars": "Экспорт бокситов и золота, сельское хозяйство и услуги."
+   }
+  },
+  "itin": {
+   "routeName": "Маршрут по Гвинее: Конакри, Киндиа и нагорье Фута-Джаллон",
+   "routeSummary": "8-дневный маршрут от островов у Конакри к водопаду Киндиа, прохладному плато Далаба и водопадам Фута-Джаллона вокруг Лабе и Питы.",
+   "totalDays": 8,
+   "idealDurationText": "8-дневный маршрут по Гвинее",
+   "bestSeason": "Ноябрь – апрель (сухой сезон); с июня по сентябрь Конакри — одна из самых дождливых столиц мира",
+   "transportMode": "Машина с водителем (лучше 4x4) + лодка на острова",
+   "paceLevel": "Сбалансированный (Природа + Культура)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Остановка 1: Конакри и острова Лос",
+     "recommendedDuration": "2 дня (Столица и острова)",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Национальный музей",
+      "Рынок Мадина",
+      "Острова Руме и Касса",
+      "Большая мечеть Конакри"
+     ],
+     "activities": [
+      "Съездите на лодке на острова Лос.",
+      "Посмотрите маски и скульптуры в Национальном музее.",
+      "Вечером поужинайте рыбой на гриле у моря."
+     ],
+     "foodAndDrinks": [
+      "Рыба на гриле",
+      "Рис с арахисовым соусом",
+      "Ньямакуджи"
+     ],
+     "criticalTips": [
+      "Рынок Мадина очень многолюден; не берите ценности.",
+      "Из-за пробок закладывайте много времени на дорогу в аэропорт."
+     ],
+     "mapsQuery": "Conakry, Guinea"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Остановка 2: Киндиа",
+     "recommendedDuration": "1 день (Водопад и холмы)",
+     "durationBadge": "1 день",
+     "highlights": [
+      "Водопад Вуаль-де-ла-Марье («Фата невесты»)",
+      "Фруктовый рынок Киндиа",
+      "Виды на гору Ганган"
+     ],
+     "activities": [
+      "Освежитесь под водопадом.",
+      "Попробуйте ананасы и манго на рынке.",
+      "Совершите короткую прогулку у подножия горы Ганган."
+     ],
+     "foodAndDrinks": [
+      "Свежий ананас",
+      "Акара"
+     ],
+     "criticalTips": [
+      "В сезон дождей камни скользкие.",
+      "На выезде из Конакри бывают проверки — держите документы под рукой."
+     ],
+     "mapsQuery": "Kindia, Guinea"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Остановка 3: Далаба",
+     "recommendedDuration": "2 дня (Прохладное плато)",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Сосновые леса и виды на долины",
+      "Виллы колониальной эпохи",
+      "Водопад Дитинн (рядом)"
+     ],
+     "activities": [
+      "Пройдитесь по тропам плато.",
+      "Съездите на день к водопаду Дитинн.",
+      "Загляните в местные ремесленные мастерские."
+     ],
+     "foodAndDrinks": [
+      "Фонио",
+      "Ле кайе"
+     ],
+     "criticalTips": [
+      "Ночи прохладные — возьмите тёплые вещи.",
+      "Для походов наймите местного гида."
+     ],
+     "mapsQuery": "Dalaba, Guinea"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Остановка 4: Лабе и Пита",
+     "recommendedDuration": "2-3 дня (Сердце Фута-Джаллона)",
+     "durationBadge": "3 дня",
+     "highlights": [
+      "Водопады Камбадага (Пита)",
+      "Рынок Лабе",
+      "Походы по деревням Фута-Джаллона",
+      "Каньоны Дуки"
+     ],
+     "activities": [
+      "Пройдите по каньонам Дуки с гидом.",
+      "Полюбуйтесь водопадами Камбадага.",
+      "Переночуйте в деревне народа пулар."
+     ],
+     "foodAndDrinks": [
+      "Сос фёй",
+      "Ле кайе",
+      "Биссап"
+     ],
+     "criticalTips": [
+      "Водопады эффектнее всего после дождей (октябрь–ноябрь).",
+      "В деревнях спрашивайте разрешения на фото и одевайтесь скромно."
+     ],
+     "mapsQuery": "Labé, Guinea"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Рис с арахисовым соусом (riz sauce arachide)",
+     "Сос фёй (соус из листьев маниоки)",
+     "Фонио (древний злак с овощами)"
+    ],
+    "drinks": [
+     "Ньямакуджи (имбирный сок)",
+     "Биссап (гибискус)",
+     "Ле кайе (простокваша)"
+    ],
+    "streetFoods": [
+     "Рыба на гриле с жареным плантаном",
+     "Беньё (жареное тесто)",
+     "Акара (оладьи из фасоли)"
+    ],
+    "diningAdvice": "Основа кухни — рис с соусом, который едят из общей миски правой рукой. В местных закусочных уточняйте цену до заказа."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Много наличных (евро/доллары)",
+     "Репеллент и таблетки от малярии",
+     "Сертификат о прививке от жёлтой лихорадки",
+     "Лёгкая куртка для нагорья"
+    ],
+    "safetyAndEtiquette": [
+     "Держитесь подальше от демонстраций и толп.",
+     "Не фотографируйте официальные здания и военных."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F",
+     "K"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Распространены европейские розетки с двумя круглыми штырями (C/F), турецкие вилки обычно подходят. Отключения света часты — возьмите пауэрбанк."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Водопроводную воду пить нельзя; пейте запечатанную бутилированную воду.",
+    "vaccines": [
+     "Жёлтая лихорадка (сертификат проверяют на въезде)",
+     "Гепатит A и брюшной тиф",
+     "Менингит (рекомендуется в сухой сезон)",
+     "Профилактика малярии (проконсультируйтесь с врачом)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "—"
+   },
+   "tipping": {
+    "custom": "Чаевые не обязательны.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "В ресторане достаточно оставить сдачу или около 5 %; гидам и водителям — небольшие ежедневные чаевые."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Возврата НДС туристам нет (НДС 18 %)",
+    "minSpend": "Не применяется",
+    "customsNote": "В Гвинее нет системы tax-free для туристов. Для вывоза золота и алмазов требуется разрешение."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "$1.00 - $3.00",
+    "topCarriers": [
+     "Orange Guinée",
+     "MTN Guinée",
+     "Cellcom Guinée"
+    ],
+    "airportSimTrapWarning": "В аэропорту SIM почти не продают; купите её по паспорту в салоне Orange Guinée или MTN. Международные eSIM могут быть дорогими."
+   },
+   "touristScams": [
+    {
+     "title": "Взятки на блокпостах",
+     "desc": "Неофициальные сборы на дорожных постах.",
+     "tip": "Имейте полный комплект документов, сохраняйте спокойствие и просите квитанцию."
+    },
+    {
+     "title": "Обмен на чёрном рынке",
+     "desc": "Фальшивые купюры или недостача при уличном обмене.",
+     "tip": "Меняйте в обменнике или банке и пересчитывайте деньги на месте."
+    },
+    {
+     "title": "Фальшивые служащие",
+     "desc": "Люди в аэропорту выдают себя за персонал и берут деньги за помощь.",
+     "tip": "Доверяйте только персоналу в форме и трансферу отеля."
+    }
+   ]
+  }
+ }
+}

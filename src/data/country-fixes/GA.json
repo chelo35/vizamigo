@@ -1,0 +1,1787 @@
+{
+ "tr": {
+  "insights": {
+   "currency": "Orta Afrika CFA Frangı (XAF)",
+   "plugType": "Tip C (220V, 50Hz)",
+   "bestMonths": "Haziran – Eylül (uzun kurak mevsim; vahşi yaşam gözlemi ve Loango açıklarında kambur balinalar). Aralık – Şubat kısa kurak dönemdir (deri sırtlı kaplumbağalar). Ekim – Kasım ve Mart – Mayıs yoğun yağışlıdır.",
+   "safety": {
+    "safetyScore": 55,
+    "safetyLevel": "Orta Seviye",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60",
+    "crimeRateSummary": "Libreville’de kapkaç, araç içinden hırsızlık ve gece silahlı soygun görülür; özellikle plaj yolları ve gece kulüpleri çevresi risklidir. 2023’teki yönetim değişikliğinden sonra durum sakin, ancak gösteri ve kontrol noktaları olabilir. Milli parklarda asıl riskler ulaşım ve sağlıktır.",
+    "commonScams": [
+     "Sahte polislerin “belge kontrolü” bahanesiyle para istemesi",
+     "Havalimanında taksicilerin turiste fahiş ücret söylemesi",
+     "Paylaşımlı taksiye “özel kurs” muamelesi yapılıp tüm aracın ücretinin istenmesi"
+    ],
+    "safeTravelTips": [
+     "Pasaportunuzun onaylı fotokopisini yanınızda taşıyın, aslını otelde güvende tutun.",
+     "Libreville’de gece yürümeyin, plaj yollarında karanlıkta durmayın; otel veya güvenilir şoför kullanın.",
+     "Milli park ziyaretlerini (Loango, Lopé) lisanslı operatörlerle ve önceden rezervasyonla yapın."
+    ],
+    "emergencyNumbers": {
+     "police": "177",
+     "ambulance": "177",
+     "general": "177"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Libreville, Port-Gentil ve Franceville’de 4G iyi; milli parklarda ve iç bölgelerde sinyal çok zayıf veya yok.",
+    "costPerGbUsd": "~2.00 - 5.00 $",
+    "esimAvailability": "Sınırlı (az sayıda uluslararası eSIM); Airtel veya Moov SIM pasaportla alınır",
+    "bestCarriers": [
+     "Airtel Gabon",
+     "Moov Africa Gabon"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Zayıf (Libreville’de paylaşımlı taksiler; tek demiryolu Transgabonais)",
+    "costLevel": "Pahalı",
+    "singleTicketUsd": "0.30 - 1.00 $ (paylaşımlı taksi)",
+    "dailyPassUsd": "Yok",
+    "popularRideApps": [
+     "Yaygın uygulama yok – paylaşımlı taksiler (“course”/“dépôt”)",
+     "Transgabonais treni (SETRAG)"
+    ],
+    "taxiAdvice": "Libreville’de taksiler taksimetresizdir: aynı yöne giden yolcularla paylaşımlı yolculuk ucuzdur, “dépôt” (aracı tek başına tutmak) daha pahalıdır; fiyatı binmeden söyleyin. Lopé’ye Owendo istasyonundan Transgabonais treniyle (~5–6 saat), Loango’ya ise Port-Gentil/Omboué üzerinden uçak ve tekneyle gidilir."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "60 - 100 $",
+    "dailyBudgetMidrangeUsd": "150 - 250 $",
+    "budgetMealUsd": "6 - 12 $",
+    "coffeeUsd": "1.50 - 3.00 $",
+    "waterBottleUsd": "0.80 - 1.50 $",
+    "hostelDormUsd": "Hostel yok; basit oteller 40 - 70 $",
+    "hotel3StarUsd": "100 - 200 $",
+    "flightCostIndex": "Yüksek",
+    "flightTip": "Libreville’e (LBV) THY, Ethiopian (Addis Ababa), Royal Air Maroc (Kazablanka) ve Air France (Paris) ile bağlantılı uçuşlar vardır; THY seferleri ara duraklı olabilir. Milli park paketleri (uçuş + lodge) pahalı olduğundan erken rezervasyon yapın."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Herkese “Bonjour” deyip tokalaşmak gerekir; büyüklere önce selam verilir.",
+     "Resmî binaları, cumhurbaşkanlığı sarayını ve askerleri fotoğraflamak yasaktır.",
+     "Köylere girerken şefe saygı ziyareti yapılır; Bwiti törenlerine yalnızca davetle katılın.",
+     "Kimlik belgenizi her zaman taşıyın; kontrol noktalarında sakin ve kibar olun."
+    ],
+    "festivals": [
+     "Bağımsızlık Günü (17 Ağustos)",
+     "Gabon Kültür ve Sanat Festivali (dönemsel)",
+     "Bwiti inisiyasyon törenleri (iboga, geleneksel)"
+    ],
+    "lifestyle": "Ülkenin yaklaşık %88’i yağmur ormanıyla kaplıdır ve nüfusun büyük kısmı Libreville ile Port-Gentil’de yaşar. Fang, Punu, Nzebi, Myene gibi topluluklar Fransız etkisiyle harmanlanır; Libreville’de canlı bir gece hayatı ve Fransız usulü kafe kültürü vardır."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Loango Milli Parkı (sahilde fil, manda ve su aygırları)",
+     "Lopé Milli Parkı (UNESCO, mandril sürüleri)",
+     "Pointe Denis ve Pongara Milli Parkı (kaplumbağalar)",
+     "Ivindo Milli Parkı ve Kongou Şelaleleri",
+     "Lambaréné’deki Albert Schweitzer Hastanesi ve müzesi",
+     "Libreville Ulusal Sanat ve Gelenekler Müzesi"
+    ],
+    "bestSeasons": "Haziran – Eylül; Aralık – Şubat",
+    "travelStyleTip": "Gabon pahalı ama bozulmamış bir doğa ülkesidir: 13 milli park ziyaretini lodge paketleriyle planlayın. Libreville’den Lopé’ye trenle, Loango’ya uçak + tekneyle gidin; bağımsız seyahat zor ve zaman alıcıdır."
+   },
+   "religion": {
+    "primaryReligions": "Hristiyan ~%75-80 (Katolik ~%40), Müslüman ~%10, geleneksel Bwiti inancı yaygın ve Hristiyanlıkla iç içe",
+    "respectNorms": "Kiliselere kapalı giysiyle girin; Bwiti mabetlerini ve kutsal ormanları izinsiz ziyaret edip fotoğraflamayın.",
+    "sacredSites": [
+     "Saint-Michel de Nkembo Kilisesi (oyma ahşap sütunlar, Libreville)",
+     "Sainte-Marie Katedrali (Libreville)",
+     "Bwiti tören evleri (mbandja)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Resmî dil Fransızcadır; Fang, Myene, Punu, Nzebi gibi 40’tan fazla yerel dil konuşulur.",
+    "englishProficiency": "Düşük; Fransızca bilmeden iletişim zordur, lodge’larda İngilizce bilen rehberler bulunur.",
+    "phrases": [
+     {
+      "phrase": "Mbolo",
+      "meaning": "Merhaba (Fang dili; ülke çapında kullanılır)",
+      "translation": "Merhaba",
+      "pronunciation": "m-BO-lo"
+     },
+     {
+      "phrase": "Akiba",
+      "meaning": "Teşekkürler (Fang dili)",
+      "translation": "Teşekkürler",
+      "pronunciation": "a-KEE-ba"
+     },
+     {
+      "phrase": "Bonjour",
+      "meaning": "Merhaba / İyi günler (Fransızca)",
+      "translation": "Merhaba",
+      "pronunciation": "bon-ZHOOR"
+     },
+     {
+      "phrase": "C'est combien ?",
+      "meaning": "Bu ne kadar? (Fransızca)",
+      "translation": "Kaç para?",
+      "pronunciation": "say kom-BYAN"
+     },
+     {
+      "phrase": "L'addition, s'il vous plaît",
+      "meaning": "Hesap lütfen (Fransızca)",
+      "translation": "Hesap lütfen",
+      "pronunciation": "la-dee-SYON seel voo PLEH"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Portekizliler 15. yüzyılda Como haliçine ulaştı ve kıyıya “gabão” (kapüşonlu pelerin) adını verdi. Fransa 19. yüzyılda bölgeye yerleşti; Libreville 1849’da özgürleştirilmiş köleler tarafından kuruldu. Gabon 17 Ağustos 1960’ta bağımsız oldu; 2002’de 13 milli park kuruldu ve Lopé 2007’de UNESCO listesine girdi.",
+    "milestones": [
+     "1849: Libreville’in kuruluşu",
+     "1913: Albert Schweitzer’in Lambaréné hastanesini açması",
+     "1960: Bağımsızlık (17 Ağustos)",
+     "2002: 13 milli parkın kurulması"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Poulet nyembwe (palmiye cevizi soslu tavuk, millî yemek)",
+     "Feuilles de manioc (manyok yaprağı yahnisi)",
+     "Odika soslu balık veya et (yabani mango çekirdeği sosu)"
+    ],
+    "traditionalDrinks": [
+     "Régab birası",
+     "Palmiye şarabı (vin de palme / malamba)",
+     "Zencefil ve bissap suyu"
+    ],
+    "streetFoodAndDesserts": [
+     "Bâtons de manioc (yaprağa sarılı manyok çubukları)",
+     "Izgara brochette ve kızarmış plantain",
+     "Atanga (safou, közde “Afrika armudu”)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Léon M’ba (ilk cumhurbaşkanı)",
+     "Pierre-Emerick Aubameyang (futbolcu)",
+     "Anthony Obame (2012 Londra tekvando gümüş madalyası, ülkenin ilk olimpiyat madalyası)"
+    ],
+    "strongSectors": [
+     "Petrol",
+     "Manganez (dünyanın önde gelen üreticilerinden)",
+     "Kereste (okoumé) ve eko-turizm"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "CFA frangı avroya sabittir (655,957 XAF = 1 €). Büyük otel ve süpermarketlerde kart geçer, ancak çoğu yerde nakit ve mobil para (Airtel Money, Moov Money) kullanılır. Libreville dışında ATM azdır; avro nakit en kolay bozdurulan dövizdir.",
+    "tippingCulture": "Zorunlu değildir; restoranlarda %5-10, lodge rehberleri ve tekne kaptanlarına tur sonunda bahşiş verilir.",
+    "economicPillars": "Petrol, manganez, kereste, palmiye yağı ve gelişmekte olan eko-turizm."
+   }
+  },
+  "itin": {
+   "routeName": "Gabon Yağmur Ormanı Rotası: Libreville, Lopé ve Loango",
+   "routeSummary": "Libreville ve Pointe Denis plajlarından Transgabonais treniyle mandril yurdu Lopé’ye, ardından sahilde fillerin dolaştığı Loango Milli Parkı’na uzanan 9 günlük doğa rotası.",
+   "totalDays": 9,
+   "idealDurationText": "9 Günlük Rota",
+   "bestSeason": "Haziran – Eylül",
+   "transportMode": "Transgabonais treni + iç hat uçuşu (Port-Gentil) + tekne ve lodge 4x4’leri",
+   "paceLevel": "Dengeli (Vahşi Yaşam + Doğa)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "1. Durak: Libreville ve Pointe Denis",
+     "recommendedDuration": "2 Gün",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "Ulusal Sanat ve Gelenekler Müzesi (Fang maskeleri)",
+      "Saint-Michel de Nkembo Kilisesi",
+      "Mont-Bouët pazarı",
+      "Pointe Denis plajları ve Pongara kaplumbağaları (kasım – şubat)"
+     ],
+     "activities": [
+      "Bord de Mer sahil yolunda akşamüstü yürüyün.",
+      "Tekneyle Pointe Denis’ye geçip plajda günü geçirin.",
+      "Müzede Gabon maskelerinin hikâyesini öğrenin."
+     ],
+     "foodAndDrinks": [
+      "Poulet nyembwe",
+      "Izgara balık ve plantain",
+      "Régab birası"
+     ],
+     "criticalTips": [
+      "Cumhurbaşkanlığı sarayı çevresinde fotoğraf çekmeyin.",
+      "Gece taksiye tek başınıza değil, otelin ayarladığı araçla binin."
+     ],
+     "mapsQuery": "Libreville, Gabon"
+    },
+    {
+     "stopNumber": 2,
+     "name": "2. Durak: Lopé Milli Parkı",
+     "recommendedDuration": "3 Gün",
+     "durationBadge": "3 Gün",
+     "highlights": [
+      "Yüzlerce bireylik mandril sürüleri",
+      "Savan – orman mozaiği ve Ogooué Nehri manzarası",
+      "Antik kaya oymaları (petroglifler)",
+      "Orman filleri ve mandalar"
+     ],
+     "activities": [
+      "Araştırmacılarla mandril takibi yapın.",
+      "Savan tepelerinde gün batımı yürüyüşü yapın.",
+      "Petroglif alanlarını rehberle ziyaret edin."
+     ],
+     "foodAndDrinks": [
+      "Feuilles de manioc",
+      "Bâtons de manioc"
+     ],
+     "criticalTips": [
+      "Tren biletini Owendo istasyonunda önceden alın; tren geç kalabilir.",
+      "Uzun kollu giysi ve böcek kovucu kullanın (tse-tse ve sivrisinek)."
+     ],
+     "mapsQuery": "Lopé, Gabon"
+    },
+    {
+     "stopNumber": 3,
+     "name": "3. Durak: Loango Milli Parkı",
+     "recommendedDuration": "4 Gün",
+     "durationBadge": "4 Gün",
+     "highlights": [
+      "Sahilde yürüyen filler ve “sörf yapan” su aygırları",
+      "Iguéla lagününde tekne safarisi",
+      "Kambur balina gözlemi (temmuz – eylül)",
+      "Goriller (habituasyon programı, kontenjanlı)"
+     ],
+     "activities": [
+      "4x4 ile sahil ve savanda safari yapın.",
+      "Teknede balina izleme turuna katılın.",
+      "Lagünde kano ile kuş gözlemi yapın."
+     ],
+     "foodAndDrinks": [
+      "Taze balık ve karides",
+      "Odika soslu yemekler",
+      "Palmiye şarabı"
+     ],
+     "criticalTips": [
+      "Erişim Port-Gentil/Omboué üzerinden uçak ve tekneyle yapılır; lodge paketini önceden ayırtın.",
+      "Fillere en az 50 m mesafe bırakın ve rehberin talimatlarına uyun."
+     ],
+     "mapsQuery": "Loango National Park, Gabon"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Poulet nyembwe (palmiye cevizi soslu tavuk, millî yemek)",
+     "Feuilles de manioc (manyok yaprağı yahnisi)",
+     "Odika soslu balık veya et (yabani mango çekirdeği sosu)"
+    ],
+    "drinks": [
+     "Régab birası",
+     "Palmiye şarabı (vin de palme / malamba)",
+     "Zencefil ve bissap suyu"
+    ],
+    "streetFoods": [
+     "Bâtons de manioc (yaprağa sarılı manyok çubukları)",
+     "Izgara brochette ve kızarmış plantain",
+     "Atanga (safou, közde “Afrika armudu”)"
+    ],
+    "diningAdvice": "Libreville’de Fransız ve Lübnan restoranları yaygın ama pahalıdır; yerel “maquis” lokantalarında poulet nyembwe ve ızgara balık daha uygundur. Bushmeat (yaban eti) satın almayın; koruma altındaki türler yasaktır."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Sarıhumma aşı kartı (girişte zorunlu)",
+     "Sıtma koruması ve güçlü sivrisinek kovucu",
+     "Doğal renkli, uzun kollu giysiler ve yağmurluk",
+     "Avro nakit"
+    ],
+    "safetyAndEtiquette": [
+     "Resmî binaları ve güvenlik güçlerini fotoğraflamayın.",
+     "Köylerde şefe saygı gösterin ve izinsiz fotoğraf çekmeyin."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "İki yuvarlak pimli Avrupa tipi (C) prizler; ince Türk fişleri uyar, kalın topraklı (F) fişler için ince adaptör götürün."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Musluk suyu içilmez; kapalı şişe su için, dişlerinizi de şişe suyla fırçalayın.",
+    "vaccines": [
+     "Sarıhumma: 1 yaş üstü tüm yolculara girişte ZORUNLU",
+     "Sıtma: tüm ülkede yüksek risk, profilaksi önerilir",
+     "Hepatit A ve B, tifo",
+     "Kuduz ve menenjit (doğa ve kırsal geziler için)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "177"
+   },
+   "tipping": {
+    "custom": "İsteğe bağlı; restoranda %5-10 bırakılır.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "Lodge rehberlerine, şoförlere ve tekne kaptanlarına tur sonunda kişi başı günlük 5-10 € uygundur."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Turistlere KDV iadesi uygulanmıyor",
+    "minSpend": "Uygulanmaz",
+    "customsNote": "Gabon’da turistlere KDV iadesi yoktur. Fildişi, yaban hayvanı ürünleri ve koruma altındaki türlerden yapılan eşyaların ihracı kesinlikle yasaktır; büyük ahşap oymalar için ihracat belgesi istenebilir."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "$2.00 - $5.00",
+    "topCarriers": [
+     "Airtel Gabon",
+     "Moov Africa Gabon"
+    ],
+    "airportSimTrapWarning": "Uluslararası eSIM seçenekleri az ve pahalıdır; Libreville’de Airtel veya Moov mağazasından pasaportla SIM almak en ucuz yoldur. Milli parklarda sinyal olmayacağını, lodge Wi-Fi’sinin sınırlı olacağını hesaba katın."
+   },
+   "touristScams": [
+    {
+     "title": "Sahte Polis Kontrolü",
+     "desc": "Üniformalı ya da sivil kişiler belge eksikliği bahanesiyle “ceza” ister.",
+     "tip": "Sakin kalın, fotokopiyi gösterin, makbuz isteyin ve otelinizi veya büyükelçiliği arayın."
+    },
+    {
+     "title": "Havalimanı Taksisi",
+     "desc": "İniş sonrası turiste şehir merkezi için birkaç katı fiyat söylenir.",
+     "tip": "Otel transferi ayarlayın veya fiyatı binmeden netleştirin."
+    },
+    {
+     "title": "“Dépôt” Ücreti Oyunu",
+     "desc": "Paylaşımlı taksi gibi bindiğiniz araçta sonradan tüm aracın (dépôt) ücreti istenir.",
+     "tip": "Binmeden önce “course” mu “dépôt” mu olduğunu ve fiyatı söyleyin."
+    }
+   ]
+  }
+ },
+ "en": {
+  "insights": {
+   "currency": "Central African CFA Franc (XAF)",
+   "plugType": "Type C (220V, 50Hz)",
+   "bestMonths": "June – September (long dry season; wildlife viewing and humpback whales off Loango). December – February is the short dry season (leatherback turtles). October – November and March – May are very rainy.",
+   "safety": {
+    "safetyScore": 55,
+    "safetyLevel": "Moderate",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60",
+    "crimeRateSummary": "Libreville sees bag snatching, theft from vehicles and armed robbery at night, especially along beach roads and around nightclubs. The situation has been calm since the 2023 change of government, but demonstrations and checkpoints can occur. In national parks the main risks are transport and health.",
+    "commonScams": [
+     "Fake police demanding money on the pretext of a “document check”",
+     "Airport taxi drivers quoting inflated fares to tourists",
+     "A shared taxi being treated as a private “course” and charging for the whole car"
+    ],
+    "safeTravelTips": [
+     "Carry a certified copy of your passport and keep the original safe at your hotel.",
+     "Don’t walk at night in Libreville or stop on beach roads after dark; use hotel cars or a trusted driver.",
+     "Visit national parks (Loango, Lopé) with licensed operators booked in advance."
+    ],
+    "emergencyNumbers": {
+     "police": "177",
+     "ambulance": "177",
+     "general": "177"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Good 4G in Libreville, Port-Gentil and Franceville; very weak or no signal in national parks and the interior.",
+    "costPerGbUsd": "~2.00 - 5.00 $",
+    "esimAvailability": "Limited (few international eSIMs); Airtel or Moov SIMs sold with a passport",
+    "bestCarriers": [
+     "Airtel Gabon",
+     "Moov Africa Gabon"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Poor (shared taxis in Libreville; one railway, the Transgabonais)",
+    "costLevel": "Expensive",
+    "singleTicketUsd": "0.30 - 1.00 $ (shared taxi)",
+    "dailyPassUsd": "None",
+    "popularRideApps": [
+     "No widespread apps – shared taxis (“course”/“dépôt”)",
+     "Transgabonais train (SETRAG)"
+    ],
+    "taxiAdvice": "Libreville taxis have no meters: sharing with passengers going the same way is cheap, while a “dépôt” (hiring the whole car) costs more; state the price before getting in. Reach Lopé on the Transgabonais train from Owendo station (~5–6 h), and Loango by plane and boat via Port-Gentil/Omboué."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "60 - 100 $",
+    "dailyBudgetMidrangeUsd": "150 - 250 $",
+    "budgetMealUsd": "6 - 12 $",
+    "coffeeUsd": "1.50 - 3.00 $",
+    "waterBottleUsd": "0.80 - 1.50 $",
+    "hostelDormUsd": "No hostels; basic hotels 40 - 70 $",
+    "hotel3StarUsd": "100 - 200 $",
+    "flightCostIndex": "High",
+    "flightTip": "Libreville (LBV) is served via Turkish Airlines, Ethiopian (Addis Ababa), Royal Air Maroc (Casablanca) and Air France (Paris); Turkish Airlines flights may include a stop. National-park packages (flight + lodge) are pricey, so book early."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Greet everyone with “Bonjour” and a handshake; elders are greeted first.",
+     "Photographing government buildings, the presidential palace and soldiers is forbidden.",
+     "When entering villages, pay a courtesy visit to the chief; attend Bwiti ceremonies only by invitation.",
+     "Always carry ID and stay calm and polite at checkpoints."
+    ],
+    "festivals": [
+     "Independence Day (17 August)",
+     "Gabon Festival of Culture and Arts (periodic)",
+     "Bwiti initiation ceremonies (iboga, traditional)"
+    ],
+    "lifestyle": "About 88% of the country is rainforest and most people live in Libreville and Port-Gentil. Communities such as the Fang, Punu, Nzebi and Myene blend with French influence; Libreville has lively nightlife and a French-style café culture."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Loango National Park (elephants, buffalo and hippos on the beach)",
+     "Lopé National Park (UNESCO, mandrill hordes)",
+     "Pointe Denis and Pongara National Park (turtles)",
+     "Ivindo National Park and Kongou Falls",
+     "Albert Schweitzer Hospital and museum in Lambaréné",
+     "Libreville National Museum of Arts and Traditions"
+    ],
+    "bestSeasons": "June – September; December – February",
+    "travelStyleTip": "Gabon is expensive but pristine: plan visits to its 13 national parks with lodge packages. Go to Lopé by train from Libreville and to Loango by plane + boat; independent travel is hard and slow."
+   },
+   "religion": {
+    "primaryReligions": "Christian ~75-80% (Catholic ~40%), Muslim ~10%, traditional Bwiti widely practised alongside Christianity",
+    "respectNorms": "Enter churches modestly dressed; don’t visit or photograph Bwiti temples and sacred forests without permission.",
+    "sacredSites": [
+     "Saint-Michel de Nkembo church (carved wooden columns, Libreville)",
+     "Sainte-Marie Cathedral (Libreville)",
+     "Bwiti ceremonial houses (mbandja)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "French is the official language; more than 40 local languages are spoken, including Fang, Myene, Punu and Nzebi.",
+    "englishProficiency": "Low; communication is hard without French, though lodges have English-speaking guides.",
+    "phrases": [
+     {
+      "phrase": "Mbolo",
+      "meaning": "Hello (Fang; used nationwide)",
+      "translation": "Hello",
+      "pronunciation": "m-BO-lo"
+     },
+     {
+      "phrase": "Akiba",
+      "meaning": "Thank you (Fang)",
+      "translation": "Thank you",
+      "pronunciation": "a-KEE-ba"
+     },
+     {
+      "phrase": "Bonjour",
+      "meaning": "Hello / Good day (French)",
+      "translation": "Hello",
+      "pronunciation": "bon-ZHOOR"
+     },
+     {
+      "phrase": "C'est combien ?",
+      "meaning": "How much is it? (French)",
+      "translation": "How much?",
+      "pronunciation": "say kom-BYAN"
+     },
+     {
+      "phrase": "L'addition, s'il vous plaît",
+      "meaning": "The bill, please (French)",
+      "translation": "Bill please",
+      "pronunciation": "la-dee-SYON seel voo PLEH"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "The Portuguese reached the Como estuary in the 15th century and named the coast after the “gabão” (a hooded cloak). France established itself in the 19th century; Libreville was founded in 1849 by freed slaves. Gabon became independent on 17 August 1960; 13 national parks were created in 2002, and Lopé joined the UNESCO list in 2007.",
+    "milestones": [
+     "1849: Founding of Libreville",
+     "1913: Albert Schweitzer opens his Lambaréné hospital",
+     "1960: Independence (17 August)",
+     "2002: Creation of 13 national parks"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Poulet nyembwe (chicken in palm-nut sauce, national dish)",
+     "Feuilles de manioc (cassava-leaf stew)",
+     "Fish or meat with odika sauce (wild-mango kernel)"
+    ],
+    "traditionalDrinks": [
+     "Régab beer",
+     "Palm wine (vin de palme / malamba)",
+     "Ginger and bissap juice"
+    ],
+    "streetFoodAndDesserts": [
+     "Bâtons de manioc (cassava sticks wrapped in leaves)",
+     "Grilled brochettes and fried plantain",
+     "Atanga (safou, roasted “African pear”)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Léon M’ba (first president)",
+     "Pierre-Emerick Aubameyang (footballer)",
+     "Anthony Obame (London 2012 taekwondo silver, the nation’s first Olympic medal)"
+    ],
+    "strongSectors": [
+     "Oil",
+     "Manganese (one of the world’s top producers)",
+     "Timber (okoumé) and ecotourism"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "The CFA franc is pegged to the euro (655.957 XAF = €1). Big hotels and supermarkets take cards, but most places use cash and mobile money (Airtel Money, Moov Money). ATMs are scarce outside Libreville; euros in cash are the easiest to exchange.",
+    "tippingCulture": "Not mandatory; 5-10% in restaurants, and tips for lodge guides and boat skippers at the end of a tour.",
+    "economicPillars": "Oil, manganese, timber, palm oil and emerging ecotourism."
+   }
+  },
+  "itin": {
+   "routeName": "Gabon Rainforest Route: Libreville, Lopé and Loango",
+   "routeSummary": "A 9-day nature route from Libreville and the beaches of Pointe Denis, by Transgabonais train to Lopé, home of mandrills, and on to Loango National Park, where elephants roam the beach.",
+   "totalDays": 9,
+   "idealDurationText": "9-Day Itinerary",
+   "bestSeason": "June – September",
+   "transportMode": "Transgabonais train + domestic flight (Port-Gentil) + boats and lodge 4x4s",
+   "paceLevel": "Balanced (Wildlife + Nature)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stop 1: Libreville & Pointe Denis",
+     "recommendedDuration": "2 Days",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "National Museum of Arts and Traditions (Fang masks)",
+      "Saint-Michel de Nkembo church",
+      "Mont-Bouët market",
+      "Pointe Denis beaches and Pongara turtles (Nov – Feb)"
+     ],
+     "activities": [
+      "Take a late-afternoon walk along the Bord de Mer seafront.",
+      "Take a boat across to Pointe Denis and spend the day on the beach.",
+      "Learn the story of Gabonese masks at the museum."
+     ],
+     "foodAndDrinks": [
+      "Poulet nyembwe",
+      "Grilled fish with plantain",
+      "Régab beer"
+     ],
+     "criticalTips": [
+      "Don’t take photos around the presidential palace.",
+      "At night use a hotel-arranged car rather than a taxi alone."
+     ],
+     "mapsQuery": "Libreville, Gabon"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stop 2: Lopé National Park",
+     "recommendedDuration": "3 Days",
+     "durationBadge": "3 Days",
+     "highlights": [
+      "Mandrill hordes of hundreds",
+      "Savanna-forest mosaic and Ogooué River views",
+      "Ancient rock engravings (petroglyphs)",
+      "Forest elephants and buffalo"
+     ],
+     "activities": [
+      "Track mandrills with researchers.",
+      "Take a sunset walk on the savanna hills.",
+      "Visit petroglyph sites with a guide."
+     ],
+     "foodAndDrinks": [
+      "Feuilles de manioc",
+      "Bâtons de manioc"
+     ],
+     "criticalTips": [
+      "Buy train tickets in advance at Owendo station; trains can run late.",
+      "Wear long sleeves and repellent (tsetse flies and mosquitoes)."
+     ],
+     "mapsQuery": "Lopé, Gabon"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stop 3: Loango National Park",
+     "recommendedDuration": "4 Days",
+     "durationBadge": "4 Days",
+     "highlights": [
+      "Elephants on the beach and “surfing” hippos",
+      "Boat safari on the Iguéla lagoon",
+      "Humpback whale watching (July – September)",
+      "Gorillas (habituation programme, limited places)"
+     ],
+     "activities": [
+      "Go on a 4x4 safari along the beach and savanna.",
+      "Join a whale-watching boat trip.",
+      "Birdwatch by canoe on the lagoon."
+     ],
+     "foodAndDrinks": [
+      "Fresh fish and prawns",
+      "Dishes with odika sauce",
+      "Palm wine"
+     ],
+     "criticalTips": [
+      "Access is by plane and boat via Port-Gentil/Omboué; book a lodge package in advance.",
+      "Keep at least 50 m from elephants and follow your guide."
+     ],
+     "mapsQuery": "Loango National Park, Gabon"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Poulet nyembwe (chicken in palm-nut sauce, national dish)",
+     "Feuilles de manioc (cassava-leaf stew)",
+     "Fish or meat with odika sauce (wild-mango kernel)"
+    ],
+    "drinks": [
+     "Régab beer",
+     "Palm wine (vin de palme / malamba)",
+     "Ginger and bissap juice"
+    ],
+    "streetFoods": [
+     "Bâtons de manioc (cassava sticks wrapped in leaves)",
+     "Grilled brochettes and fried plantain",
+     "Atanga (safou, roasted “African pear”)"
+    ],
+    "diningAdvice": "Libreville has many French and Lebanese restaurants, but they are pricey; local “maquis” eateries serve cheaper poulet nyembwe and grilled fish. Don’t buy bushmeat; protected species are illegal."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Yellow-fever vaccination card (required on entry)",
+     "Malaria prophylaxis and strong insect repellent",
+     "Neutral-coloured long-sleeved clothing and rain jacket",
+     "Cash in euros"
+    ],
+    "safetyAndEtiquette": [
+     "Don’t photograph official buildings or security forces.",
+     "Respect village chiefs and don’t take photos without permission."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Two-round-pin European sockets (Type C); slim Turkish plugs fit, bring a slim adapter for thick earthed (F) plugs."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Tap water is not drinkable; drink sealed bottled water and use it to brush your teeth too.",
+    "vaccines": [
+     "Yellow fever: MANDATORY on entry for all travellers over 1 year",
+     "Malaria: high risk nationwide, prophylaxis recommended",
+     "Hepatitis A and B, typhoid",
+     "Rabies and meningitis (for nature and rural trips)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "177"
+   },
+   "tipping": {
+    "custom": "Optional; 5-10% in restaurants.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "For lodge guides, drivers and boat skippers, €5-10 per person per day at the end of the tour is appropriate."
+   },
+   "taxFree": {
+    "vatRefundPercent": "No VAT refund for tourists",
+    "minSpend": "Not applicable",
+    "customsNote": "Gabon offers no VAT refund to tourists. Exporting ivory, wildlife products or items made from protected species is strictly prohibited; large wood carvings may require an export certificate."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "$2.00 - $5.00",
+    "topCarriers": [
+     "Airtel Gabon",
+     "Moov Africa Gabon"
+    ],
+    "airportSimTrapWarning": "International eSIM options are few and pricey; buying an Airtel or Moov SIM with your passport at a Libreville shop is cheapest. Expect no signal in national parks and limited lodge Wi-Fi."
+   },
+   "touristScams": [
+    {
+     "title": "Fake Police Check",
+     "desc": "Uniformed or plain-clothes people demand a “fine” over supposedly missing documents.",
+     "tip": "Stay calm, show your copy, ask for a receipt and call your hotel or embassy."
+    },
+    {
+     "title": "Airport Taxi",
+     "desc": "On arrival, tourists are quoted several times the normal fare to the centre.",
+     "tip": "Arrange a hotel transfer or agree the fare before getting in."
+    },
+    {
+     "title": "The “Dépôt” Fare Trick",
+     "desc": "You board what looks like a shared taxi, then get charged for the whole car (dépôt).",
+     "tip": "Before boarding, state whether it is a “course” or “dépôt” and the price."
+    }
+   ]
+  }
+ },
+ "de": {
+  "insights": {
+   "currency": "CFA-Franc BEAC (XAF)",
+   "plugType": "Typ C (220V, 50Hz)",
+   "bestMonths": "Juni – September (lange Trockenzeit; Tierbeobachtung und Buckelwale vor Loango). Dezember – Februar ist die kurze Trockenzeit (Lederschildkröten). Oktober – November und März – Mai sind sehr regnerisch.",
+   "safety": {
+    "safetyScore": 55,
+    "safetyLevel": "Mäßiges Risiko",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60",
+    "crimeRateSummary": "In Libreville gibt es Taschendiebstahl, Diebstahl aus Autos und nachts bewaffnete Überfälle, vor allem an Strandstraßen und Nachtclubs. Seit dem Regierungswechsel 2023 ist die Lage ruhig, Demonstrationen und Kontrollen sind aber möglich. In Nationalparks sind Transport und Gesundheit die Hauptrisiken.",
+    "commonScams": [
+     "Falsche Polizisten verlangen bei einer „Dokumentenkontrolle“ Geld",
+     "Flughafentaxis nennen Touristen überhöhte Preise",
+     "Ein Sammeltaxi wird als private „Course“ abgerechnet und der ganze Wagen berechnet"
+    ],
+    "safeTravelTips": [
+     "Eine beglaubigte Passkopie mitführen, das Original sicher im Hotel lassen.",
+     "In Libreville nachts nicht zu Fuß gehen und an Strandstraßen im Dunkeln nicht halten; Hotelwagen oder vertrauten Fahrer nutzen.",
+     "Nationalparks (Loango, Lopé) mit lizenzierten, vorab gebuchten Anbietern besuchen."
+    ],
+    "emergencyNumbers": {
+     "police": "177",
+     "ambulance": "177",
+     "general": "177"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Gutes 4G in Libreville, Port-Gentil und Franceville; in Nationalparks und im Landesinneren sehr schwach oder nicht vorhanden.",
+    "costPerGbUsd": "~2.00 - 5.00 $",
+    "esimAvailability": "Begrenzt (wenige internationale eSIMs); Airtel- oder Moov-SIM mit Pass",
+    "bestCarriers": [
+     "Airtel Gabon",
+     "Moov Africa Gabon"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Schwach (Sammeltaxis in Libreville; eine Bahnlinie, der Transgabonais)",
+    "costLevel": "Teuer",
+    "singleTicketUsd": "0.30 - 1.00 $ (Sammeltaxi)",
+    "dailyPassUsd": "Keiner",
+    "popularRideApps": [
+     "Keine verbreiteten Apps – Sammeltaxis („Course“/„Dépôt“)",
+     "Transgabonais-Zug (SETRAG)"
+    ],
+    "taxiAdvice": "Taxis in Libreville haben kein Taxameter: Mitfahren mit anderen ist billig, ein „Dépôt“ (ganzes Auto) teurer; Preis vor dem Einsteigen nennen. Nach Lopé mit dem Transgabonais ab Bahnhof Owendo (~5–6 Std.), nach Loango per Flug und Boot über Port-Gentil/Omboué."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "60 - 100 $",
+    "dailyBudgetMidrangeUsd": "150 - 250 $",
+    "budgetMealUsd": "6 - 12 $",
+    "coffeeUsd": "1.50 - 3.00 $",
+    "waterBottleUsd": "0.80 - 1.50 $",
+    "hostelDormUsd": "Keine Hostels; einfache Hotels 40 - 70 $",
+    "hotel3StarUsd": "100 - 200 $",
+    "flightCostIndex": "Hoch",
+    "flightTip": "Libreville (LBV) wird über Turkish Airlines, Ethiopian (Addis Abeba), Royal Air Maroc (Casablanca) und Air France (Paris) erreicht; THY-Flüge können eine Zwischenlandung haben. Nationalparkpakete (Flug + Lodge) sind teuer – früh buchen."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Alle mit „Bonjour“ und Handschlag begrüßen; Ältere zuerst.",
+     "Regierungsgebäude, Präsidentenpalast und Soldaten zu fotografieren ist verboten.",
+     "In Dörfern dem Häuptling einen Höflichkeitsbesuch abstatten; an Bwiti-Zeremonien nur auf Einladung teilnehmen.",
+     "Immer einen Ausweis mitführen und an Kontrollen ruhig und höflich bleiben."
+    ],
+    "festivals": [
+     "Unabhängigkeitstag (17. August)",
+     "Gabunisches Kultur- und Kunstfestival (periodisch)",
+     "Bwiti-Initiationszeremonien (Iboga, traditionell)"
+    ],
+    "lifestyle": "Rund 88 % des Landes sind Regenwald, die meisten Menschen leben in Libreville und Port-Gentil. Gemeinschaften wie Fang, Punu, Nzebi und Myene verbinden sich mit französischem Einfluss; Libreville hat ein lebhaftes Nachtleben und Cafékultur nach französischem Vorbild."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Loango-Nationalpark (Elefanten, Büffel und Flusspferde am Strand)",
+     "Lopé-Nationalpark (UNESCO, Mandrillhorden)",
+     "Pointe Denis und Pongara-Nationalpark (Schildkröten)",
+     "Ivindo-Nationalpark und Kongou-Fälle",
+     "Albert-Schweitzer-Spital und Museum in Lambaréné",
+     "Nationalmuseum für Kunst und Traditionen in Libreville"
+    ],
+    "bestSeasons": "Juni – September; Dezember – Februar",
+    "travelStyleTip": "Gabun ist teuer, aber unberührt: Besuche der 13 Nationalparks mit Lodge-Paketen planen. Nach Lopé mit dem Zug, nach Loango mit Flug + Boot; Individualreisen sind schwierig und langsam."
+   },
+   "religion": {
+    "primaryReligions": "Christen ~75-80 % (Katholiken ~40 %), Muslime ~10 %, traditionelles Bwiti verbreitet und mit dem Christentum verwoben",
+    "respectNorms": "Kirchen dezent gekleidet betreten; Bwiti-Tempel und heilige Wälder nicht ohne Erlaubnis besuchen oder fotografieren.",
+    "sacredSites": [
+     "Kirche Saint-Michel de Nkembo (geschnitzte Holzsäulen, Libreville)",
+     "Kathedrale Sainte-Marie (Libreville)",
+     "Bwiti-Zeremonienhäuser (Mbandja)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Amtssprache ist Französisch; über 40 lokale Sprachen wie Fang, Myene, Punu und Nzebi werden gesprochen.",
+    "englishProficiency": "Gering; ohne Französisch ist Verständigung schwer, Lodges haben aber englischsprachige Guides.",
+    "phrases": [
+     {
+      "phrase": "Mbolo",
+      "meaning": "Hallo (Fang; landesweit gebräuchlich)",
+      "translation": "Hallo",
+      "pronunciation": "m-BO-lo"
+     },
+     {
+      "phrase": "Akiba",
+      "meaning": "Danke (Fang)",
+      "translation": "Danke",
+      "pronunciation": "a-KEE-ba"
+     },
+     {
+      "phrase": "Bonjour",
+      "meaning": "Hallo / Guten Tag (Französisch)",
+      "translation": "Hallo",
+      "pronunciation": "bon-ZHOOR"
+     },
+     {
+      "phrase": "C'est combien ?",
+      "meaning": "Wie viel kostet das? (Französisch)",
+      "translation": "Wie viel?",
+      "pronunciation": "say kom-BYAN"
+     },
+     {
+      "phrase": "L'addition, s'il vous plaît",
+      "meaning": "Die Rechnung, bitte (Französisch)",
+      "translation": "Rechnung bitte",
+      "pronunciation": "la-dee-SYON seel voo PLEH"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Die Portugiesen erreichten im 15. Jh. das Como-Ästuar und benannten die Küste nach dem „Gabão“ (Kapuzenmantel). Frankreich setzte sich im 19. Jh. fest; Libreville wurde 1849 von befreiten Sklaven gegründet. Am 17. August 1960 wurde Gabun unabhängig; 2002 entstanden 13 Nationalparks, Lopé wurde 2007 UNESCO-Welterbe.",
+    "milestones": [
+     "1849: Gründung von Libreville",
+     "1913: Albert Schweitzer eröffnet sein Spital in Lambaréné",
+     "1960: Unabhängigkeit (17. August)",
+     "2002: Gründung von 13 Nationalparks"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Poulet Nyembwe (Huhn in Palmnusssauce, Nationalgericht)",
+     "Feuilles de manioc (Maniokblätter-Eintopf)",
+     "Fisch oder Fleisch mit Odika-Sauce (Wildmangokerne)"
+    ],
+    "traditionalDrinks": [
+     "Régab-Bier",
+     "Palmwein (Vin de palme / Malamba)",
+     "Ingwer- und Bissapsaft"
+    ],
+    "streetFoodAndDesserts": [
+     "Bâtons de manioc (Maniokstangen im Blatt)",
+     "Gegrillte Spieße und gebratene Kochbananen",
+     "Atanga (Safou, geröstete „Afrikanische Birne“)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Léon M’ba (erster Präsident)",
+     "Pierre-Emerick Aubameyang (Fußballer)",
+     "Anthony Obame (Silber im Taekwondo London 2012, erste olympische Medaille des Landes)"
+    ],
+    "strongSectors": [
+     "Erdöl",
+     "Mangan (einer der weltgrößten Produzenten)",
+     "Holz (Okoumé) und Ökotourismus"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Der CFA-Franc ist an den Euro gekoppelt (655,957 XAF = 1 €). Große Hotels und Supermärkte nehmen Karten, meist zahlt man bar oder mobil (Airtel Money, Moov Money). Außerhalb Librevilles gibt es kaum Geldautomaten; Euro bar lassen sich am leichtesten tauschen.",
+    "tippingCulture": "Nicht Pflicht; 5-10 % im Restaurant, Trinkgeld für Lodge-Guides und Bootsführer am Ende.",
+    "economicPillars": "Erdöl, Mangan, Holz, Palmöl und aufkommender Ökotourismus."
+   }
+  },
+  "itin": {
+   "routeName": "Gabun-Regenwaldroute: Libreville, Lopé und Loango",
+   "routeSummary": "Eine 9-tägige Naturroute von Libreville und den Stränden von Pointe Denis mit dem Transgabonais nach Lopé, der Heimat der Mandrills, und weiter in den Loango-Nationalpark, wo Elefanten am Strand laufen.",
+   "totalDays": 9,
+   "idealDurationText": "9-tägige Route",
+   "bestSeason": "Juni – September",
+   "transportMode": "Transgabonais-Zug + Inlandsflug (Port-Gentil) + Boote und Lodge-Geländewagen",
+   "paceLevel": "Ausgewogen (Tierwelt + Natur)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stopp 1: Libreville & Pointe Denis",
+     "recommendedDuration": "2 Tage",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "Nationalmuseum für Kunst und Traditionen (Fang-Masken)",
+      "Kirche Saint-Michel de Nkembo",
+      "Markt Mont-Bouët",
+      "Strände von Pointe Denis und Schildkröten in Pongara (Nov – Feb)"
+     ],
+     "activities": [
+      "Am späten Nachmittag am Bord de Mer spazieren.",
+      "Mit dem Boot nach Pointe Denis übersetzen und den Tag am Strand verbringen.",
+      "Im Museum die Geschichte gabunischer Masken kennenlernen."
+     ],
+     "foodAndDrinks": [
+      "Poulet Nyembwe",
+      "Gegrillter Fisch mit Kochbanane",
+      "Régab-Bier"
+     ],
+     "criticalTips": [
+      "Rund um den Präsidentenpalast nicht fotografieren.",
+      "Nachts einen vom Hotel organisierten Wagen statt eines Taxis allein nehmen."
+     ],
+     "mapsQuery": "Libreville, Gabon"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stopp 2: Lopé-Nationalpark",
+     "recommendedDuration": "3 Tage",
+     "durationBadge": "3 Tage",
+     "highlights": [
+      "Mandrillhorden mit Hunderten Tieren",
+      "Savannen-Wald-Mosaik und Blick auf den Ogooué",
+      "Uralte Felsgravuren (Petroglyphen)",
+      "Waldelefanten und Büffel"
+     ],
+     "activities": [
+      "Mit Forschern Mandrills aufspüren.",
+      "Bei Sonnenuntergang über die Savannenhügel wandern.",
+      "Mit Guide Petroglyphenstätten besuchen."
+     ],
+     "foodAndDrinks": [
+      "Feuilles de manioc",
+      "Bâtons de manioc"
+     ],
+     "criticalTips": [
+      "Zugtickets vorab im Bahnhof Owendo kaufen; Züge haben oft Verspätung.",
+      "Lange Kleidung und Mückenschutz tragen (Tsetsefliegen und Mücken)."
+     ],
+     "mapsQuery": "Lopé, Gabon"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stopp 3: Loango-Nationalpark",
+     "recommendedDuration": "4 Tage",
+     "durationBadge": "4 Tage",
+     "highlights": [
+      "Elefanten am Strand und „surfende“ Flusspferde",
+      "Bootssafari in der Iguéla-Lagune",
+      "Buckelwalbeobachtung (Juli – September)",
+      "Gorillas (Habituierungsprogramm, begrenzte Plätze)"
+     ],
+     "activities": [
+      "Mit dem Geländewagen auf Safari an Strand und Savanne.",
+      "An einer Walbeobachtungsfahrt teilnehmen.",
+      "Im Kanu auf der Lagune Vögel beobachten."
+     ],
+     "foodAndDrinks": [
+      "Frischer Fisch und Garnelen",
+      "Gerichte mit Odika-Sauce",
+      "Palmwein"
+     ],
+     "criticalTips": [
+      "Anreise per Flug und Boot über Port-Gentil/Omboué; Lodge-Paket vorab buchen.",
+      "Mindestens 50 m Abstand zu Elefanten halten und dem Guide folgen."
+     ],
+     "mapsQuery": "Loango National Park, Gabon"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Poulet Nyembwe (Huhn in Palmnusssauce, Nationalgericht)",
+     "Feuilles de manioc (Maniokblätter-Eintopf)",
+     "Fisch oder Fleisch mit Odika-Sauce (Wildmangokerne)"
+    ],
+    "drinks": [
+     "Régab-Bier",
+     "Palmwein (Vin de palme / Malamba)",
+     "Ingwer- und Bissapsaft"
+    ],
+    "streetFoods": [
+     "Bâtons de manioc (Maniokstangen im Blatt)",
+     "Gegrillte Spieße und gebratene Kochbananen",
+     "Atanga (Safou, geröstete „Afrikanische Birne“)"
+    ],
+    "diningAdvice": "In Libreville gibt es viele französische und libanesische Restaurants, aber teuer; in lokalen „Maquis“ sind Poulet Nyembwe und gegrillter Fisch günstiger. Kein Buschfleisch kaufen; geschützte Arten sind verboten."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Gelbfieber-Impfausweis (bei Einreise Pflicht)",
+     "Malariaprophylaxe und starker Mückenschutz",
+     "Lange Kleidung in gedeckten Farben und Regenjacke",
+     "Bargeld in Euro"
+    ],
+    "safetyAndEtiquette": [
+     "Keine Behördengebäude oder Sicherheitskräfte fotografieren.",
+     "Dorfhäuptlinge respektieren und nicht ohne Erlaubnis fotografieren."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Europäische Steckdosen mit zwei Rundstiften (Typ C); flache Stecker passen, für dicke Schuko-Stecker (F) einen schmalen Adapter mitnehmen."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Leitungswasser ist nicht trinkbar; versiegeltes Flaschenwasser auch zum Zähneputzen nutzen.",
+    "vaccines": [
+     "Gelbfieber: bei Einreise für alle Reisenden über 1 Jahr PFLICHT",
+     "Malaria: landesweit hohes Risiko, Prophylaxe empfohlen",
+     "Hepatitis A und B, Typhus",
+     "Tollwut und Meningitis (für Natur- und Landreisen)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "177"
+   },
+   "tipping": {
+    "custom": "Freiwillig; 5-10 % im Restaurant.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "Für Lodge-Guides, Fahrer und Bootsführer sind am Ende 5-10 € pro Person und Tag angemessen."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Keine Mehrwertsteuererstattung für Touristen",
+    "minSpend": "Entfällt",
+    "customsNote": "Gabun erstattet Touristen keine MwSt. Ausfuhr von Elfenbein, Wildtierprodukten oder Gegenständen aus geschützten Arten ist streng verboten; für große Holzschnitzereien kann eine Ausfuhrbescheinigung nötig sein."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "$2.00 - $5.00",
+    "topCarriers": [
+     "Airtel Gabon",
+     "Moov Africa Gabon"
+    ],
+    "airportSimTrapWarning": "Internationale eSIMs sind rar und teuer; am günstigsten ist eine Airtel- oder Moov-SIM mit Pass in Libreville. In Nationalparks kein Netz, Lodge-WLAN begrenzt."
+   },
+   "touristScams": [
+    {
+     "title": "Falsche Polizeikontrolle",
+     "desc": "Uniformierte oder Zivilpersonen verlangen wegen angeblich fehlender Papiere eine „Strafe“.",
+     "tip": "Ruhig bleiben, Kopie zeigen, Quittung verlangen und Hotel oder Botschaft anrufen."
+    },
+    {
+     "title": "Flughafentaxi",
+     "desc": "Nach der Ankunft wird Touristen ein Vielfaches des normalen Preises genannt.",
+     "tip": "Hoteltransfer organisieren oder Preis vor dem Einsteigen vereinbaren."
+    },
+    {
+     "title": "Der „Dépôt“-Preistrick",
+     "desc": "Man steigt in ein vermeintliches Sammeltaxi und soll dann für das ganze Auto (Dépôt) zahlen.",
+     "tip": "Vor dem Einsteigen klären, ob „Course“ oder „Dépôt“, und den Preis nennen."
+    }
+   ]
+  }
+ },
+ "es": {
+  "insights": {
+   "currency": "Franco CFA de África Central (XAF)",
+   "plugType": "Tipo C (220V, 50Hz)",
+   "bestMonths": "Junio – septiembre (larga estación seca; fauna y ballenas jorobadas frente a Loango). Diciembre – febrero es la estación seca corta (tortugas laúd). Octubre – noviembre y marzo – mayo son muy lluviosos.",
+   "safety": {
+    "safetyScore": 55,
+    "safetyLevel": "Riesgo Moderado",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60",
+    "crimeRateSummary": "En Libreville hay tirones, robos en vehículos y atracos armados nocturnos, sobre todo en carreteras de playa y alrededor de discotecas. La situación está tranquila desde el cambio de gobierno de 2023, aunque puede haber manifestaciones y controles. En los parques los riesgos principales son el transporte y la salud.",
+    "commonScams": [
+     "Falsos policías que piden dinero con la excusa de un “control de documentos”",
+     "Taxistas del aeropuerto con tarifas infladas para turistas",
+     "Cobrar un taxi compartido como “course” privada por todo el coche"
+    ],
+    "safeTravelTips": [
+     "Lleve una copia compulsada del pasaporte y deje el original en el hotel.",
+     "No camine de noche en Libreville ni pare en carreteras de playa; use coche del hotel o un conductor de confianza.",
+     "Visite los parques (Loango, Lopé) con operadores autorizados reservados con antelación."
+    ],
+    "emergencyNumbers": {
+     "police": "177",
+     "ambulance": "177",
+     "general": "177"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Buen 4G en Libreville, Port-Gentil y Franceville; muy débil o nulo en parques e interior.",
+    "costPerGbUsd": "~2.00 - 5.00 $",
+    "esimAvailability": "Limitada (pocas eSIM internacionales); SIM de Airtel o Moov con pasaporte",
+    "bestCarriers": [
+     "Airtel Gabon",
+     "Moov Africa Gabon"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Deficiente (taxis compartidos en Libreville; una línea de tren, el Transgabonais)",
+    "costLevel": "Caro",
+    "singleTicketUsd": "0.30 - 1.00 $ (taxi compartido)",
+    "dailyPassUsd": "No existe",
+    "popularRideApps": [
+     "Sin apps extendidas – taxis compartidos (“course”/“dépôt”)",
+     "Tren Transgabonais (SETRAG)"
+    ],
+    "taxiAdvice": "Los taxis de Libreville no tienen taxímetro: compartir es barato y el “dépôt” (coche entero) más caro; diga el precio antes de subir. A Lopé se va en el tren Transgabonais desde Owendo (~5–6 h) y a Loango en avión y barco vía Port-Gentil/Omboué."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "60 - 100 $",
+    "dailyBudgetMidrangeUsd": "150 - 250 $",
+    "budgetMealUsd": "6 - 12 $",
+    "coffeeUsd": "1.50 - 3.00 $",
+    "waterBottleUsd": "0.80 - 1.50 $",
+    "hostelDormUsd": "No hay hostales; hoteles básicos 40 - 70 $",
+    "hotel3StarUsd": "100 - 200 $",
+    "flightCostIndex": "Alto",
+    "flightTip": "A Libreville (LBV) se llega con Turkish Airlines, Ethiopian (Adís Abeba), Royal Air Maroc (Casablanca) y Air France (París); los vuelos de Turkish pueden hacer escala. Los paquetes de parques (vuelo + lodge) son caros: reserve pronto."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Salude a todos con “Bonjour” y un apretón de manos; primero a los mayores.",
+     "Está prohibido fotografiar edificios oficiales, el palacio presidencial y militares.",
+     "Al llegar a una aldea visite al jefe; asista a ceremonias bwiti solo por invitación.",
+     "Lleve siempre identificación y sea amable y tranquilo en los controles."
+    ],
+    "festivals": [
+     "Día de la Independencia (17 de agosto)",
+     "Festival de Cultura y Artes de Gabón (periódico)",
+     "Ceremonias de iniciación bwiti (iboga, tradicionales)"
+    ],
+    "lifestyle": "Cerca del 88 % del país es selva y la mayoría vive en Libreville y Port-Gentil. Pueblos como fang, punu, nzebi y myene se mezclan con la influencia francesa; Libreville tiene vida nocturna animada y cafés al estilo francés."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Parque Nacional Loango (elefantes, búfalos e hipopótamos en la playa)",
+     "Parque Nacional Lopé (UNESCO, manadas de mandriles)",
+     "Pointe Denis y Parque Nacional Pongara (tortugas)",
+     "Parque Nacional Ivindo y cataratas Kongou",
+     "Hospital y museo Albert Schweitzer en Lambaréné",
+     "Museo Nacional de Artes y Tradiciones de Libreville"
+    ],
+    "bestSeasons": "Junio – septiembre; diciembre – febrero",
+    "travelStyleTip": "Gabón es caro pero virgen: planifique sus 13 parques nacionales con paquetes de lodge. Vaya a Lopé en tren desde Libreville y a Loango en avión + barco; viajar por libre es difícil y lento."
+   },
+   "religion": {
+    "primaryReligions": "Cristianos ~75-80 % (católicos ~40 %), musulmanes ~10 %, el bwiti tradicional está extendido junto al cristianismo",
+    "respectNorms": "Entre en las iglesias con ropa recatada; no visite ni fotografíe templos bwiti o bosques sagrados sin permiso.",
+    "sacredSites": [
+     "Iglesia Saint-Michel de Nkembo (columnas de madera tallada, Libreville)",
+     "Catedral de Sainte-Marie (Libreville)",
+     "Casas ceremoniales bwiti (mbandja)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "El francés es oficial; se hablan más de 40 lenguas locales, como fang, myene, punu y nzebi.",
+    "englishProficiency": "Bajo; sin francés es difícil comunicarse, aunque los lodges tienen guías anglófonos.",
+    "phrases": [
+     {
+      "phrase": "Mbolo",
+      "meaning": "Hola (fang; se usa en todo el país)",
+      "translation": "Hola",
+      "pronunciation": "m-BO-lo"
+     },
+     {
+      "phrase": "Akiba",
+      "meaning": "Gracias (fang)",
+      "translation": "Gracias",
+      "pronunciation": "a-KEE-ba"
+     },
+     {
+      "phrase": "Bonjour",
+      "meaning": "Hola / Buenos días (francés)",
+      "translation": "Hola",
+      "pronunciation": "bon-ZHOOR"
+     },
+     {
+      "phrase": "C'est combien ?",
+      "meaning": "¿Cuánto cuesta? (francés)",
+      "translation": "¿Cuánto?",
+      "pronunciation": "say kom-BYAN"
+     },
+     {
+      "phrase": "L'addition, s'il vous plaît",
+      "meaning": "La cuenta, por favor (francés)",
+      "translation": "La cuenta",
+      "pronunciation": "la-dee-SYON seel voo PLEH"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Los portugueses llegaron al estuario del Como en el siglo XV y llamaron a la costa por el “gabão” (capa con capucha). Francia se instaló en el siglo XIX; Libreville fue fundada en 1849 por esclavos liberados. Gabón se independizó el 17 de agosto de 1960; en 2002 se crearon 13 parques nacionales y Lopé entró en la lista de la UNESCO en 2007.",
+    "milestones": [
+     "1849: Fundación de Libreville",
+     "1913: Albert Schweitzer abre su hospital en Lambaréné",
+     "1960: Independencia (17 de agosto)",
+     "2002: Creación de 13 parques nacionales"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Poulet nyembwe (pollo en salsa de nuez de palma, plato nacional)",
+     "Feuilles de manioc (guiso de hojas de yuca)",
+     "Pescado o carne con salsa odika (semilla de mango silvestre)"
+    ],
+    "traditionalDrinks": [
+     "Cerveza Régab",
+     "Vino de palma (vin de palme / malamba)",
+     "Zumo de jengibre y bissap"
+    ],
+    "streetFoodAndDesserts": [
+     "Bâtons de manioc (palitos de yuca envueltos en hoja)",
+     "Brochetas a la parrilla y plátano frito",
+     "Atanga (safou, “pera africana” asada)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Léon M’ba (primer presidente)",
+     "Pierre-Emerick Aubameyang (futbolista)",
+     "Anthony Obame (plata en taekwondo en Londres 2012, primera medalla olímpica del país)"
+    ],
+    "strongSectors": [
+     "Petróleo",
+     "Manganeso (uno de los mayores productores mundiales)",
+     "Madera (okoumé) y ecoturismo"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "El franco CFA está fijado al euro (655,957 XAF = 1 €). Grandes hoteles y supermercados aceptan tarjeta, pero casi todo se paga en efectivo o dinero móvil (Airtel Money, Moov Money). Fuera de Libreville hay pocos cajeros; el euro en efectivo es lo más fácil de cambiar.",
+    "tippingCulture": "No obligatoria; 5-10 % en restaurantes y propina a guías y patrones al final del tour.",
+    "economicPillars": "Petróleo, manganeso, madera, aceite de palma y ecoturismo emergente."
+   }
+  },
+  "itin": {
+   "routeName": "Ruta de selva de Gabón: Libreville, Lopé y Loango",
+   "routeSummary": "Ruta natural de 9 días desde Libreville y las playas de Pointe Denis, en el tren Transgabonais hasta Lopé, hogar de los mandriles, y luego al Parque Nacional Loango, donde los elefantes pasean por la playa.",
+   "totalDays": 9,
+   "idealDurationText": "Ruta de 9 días",
+   "bestSeason": "Junio – septiembre",
+   "transportMode": "Tren Transgabonais + vuelo interno (Port-Gentil) + barcos y 4x4 del lodge",
+   "paceLevel": "Equilibrado (fauna + naturaleza)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Libreville y Pointe Denis",
+     "recommendedDuration": "2 días",
+     "durationBadge": "2 días",
+     "highlights": [
+      "Museo Nacional de Artes y Tradiciones (máscaras fang)",
+      "Iglesia Saint-Michel de Nkembo",
+      "Mercado de Mont-Bouët",
+      "Playas de Pointe Denis y tortugas de Pongara (nov – feb)"
+     ],
+     "activities": [
+      "Pasee por el Bord de Mer al final de la tarde.",
+      "Cruce en barco a Pointe Denis y pase el día en la playa.",
+      "Conozca en el museo la historia de las máscaras gabonesas."
+     ],
+     "foodAndDrinks": [
+      "Poulet nyembwe",
+      "Pescado a la parrilla con plátano",
+      "Cerveza Régab"
+     ],
+     "criticalTips": [
+      "No haga fotos cerca del palacio presidencial.",
+      "De noche use un coche del hotel en vez de un taxi a solas."
+     ],
+     "mapsQuery": "Libreville, Gabon"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Parque Nacional Lopé",
+     "recommendedDuration": "3 días",
+     "durationBadge": "3 días",
+     "highlights": [
+      "Manadas de cientos de mandriles",
+      "Mosaico de sabana y selva y vistas del río Ogooué",
+      "Grabados rupestres antiguos (petroglifos)",
+      "Elefantes de bosque y búfalos"
+     ],
+     "activities": [
+      "Siga a los mandriles con investigadores.",
+      "Camine al atardecer por las colinas de sabana.",
+      "Visite con guía los petroglifos."
+     ],
+     "foodAndDrinks": [
+      "Feuilles de manioc",
+      "Bâtons de manioc"
+     ],
+     "criticalTips": [
+      "Compre el billete de tren con antelación en Owendo; puede haber retrasos.",
+      "Use manga larga y repelente (moscas tsetsé y mosquitos)."
+     ],
+     "mapsQuery": "Lopé, Gabon"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Parque Nacional Loango",
+     "recommendedDuration": "4 días",
+     "durationBadge": "4 días",
+     "highlights": [
+      "Elefantes en la playa e hipopótamos “surfistas”",
+      "Safari en barco por la laguna de Iguéla",
+      "Avistamiento de ballenas jorobadas (julio – septiembre)",
+      "Gorilas (programa de habituación, plazas limitadas)"
+     ],
+     "activities": [
+      "Haga un safari en 4x4 por la playa y la sabana.",
+      "Haga una salida de avistamiento de ballenas.",
+      "Observe aves en canoa por la laguna."
+     ],
+     "foodAndDrinks": [
+      "Pescado fresco y gambas",
+      "Platos con salsa odika",
+      "Vino de palma"
+     ],
+     "criticalTips": [
+      "Se accede en avión y barco vía Port-Gentil/Omboué; reserve antes un paquete de lodge.",
+      "Mantenga 50 m de distancia con los elefantes y obedezca al guía."
+     ],
+     "mapsQuery": "Loango National Park, Gabon"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Poulet nyembwe (pollo en salsa de nuez de palma, plato nacional)",
+     "Feuilles de manioc (guiso de hojas de yuca)",
+     "Pescado o carne con salsa odika (semilla de mango silvestre)"
+    ],
+    "drinks": [
+     "Cerveza Régab",
+     "Vino de palma (vin de palme / malamba)",
+     "Zumo de jengibre y bissap"
+    ],
+    "streetFoods": [
+     "Bâtons de manioc (palitos de yuca envueltos en hoja)",
+     "Brochetas a la parrilla y plátano frito",
+     "Atanga (safou, “pera africana” asada)"
+    ],
+    "diningAdvice": "En Libreville abundan restaurantes franceses y libaneses, pero caros; en los “maquis” locales el poulet nyembwe y el pescado a la parrilla son más baratos. No compre carne de caza: las especies protegidas son ilegales."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Certificado de fiebre amarilla (obligatorio al entrar)",
+     "Profilaxis antipalúdica y repelente fuerte",
+     "Ropa de manga larga en colores neutros e impermeable",
+     "Efectivo en euros"
+    ],
+    "safetyAndEtiquette": [
+     "No fotografíe edificios oficiales ni fuerzas de seguridad.",
+     "Respete a los jefes de aldea y no fotografíe sin permiso."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Enchufes europeos de dos clavijas (tipo C); los enchufes finos sirven, para los gruesos con toma de tierra (F) lleve un adaptador fino."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "El agua del grifo no es potable; use agua embotellada también para lavarse los dientes.",
+    "vaccines": [
+     "Fiebre amarilla: OBLIGATORIA al entrar para mayores de 1 año",
+     "Malaria: riesgo alto en todo el país, se recomienda profilaxis",
+     "Hepatitis A y B, fiebre tifoidea",
+     "Rabia y meningitis (viajes rurales y de naturaleza)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "177"
+   },
+   "tipping": {
+    "custom": "Opcional; 5-10 % en restaurantes.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "A guías, conductores y patrones, 5-10 € por persona y día al final del tour."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Sin devolución de IVA para turistas",
+    "minSpend": "No aplica",
+    "customsNote": "Gabón no devuelve el IVA a turistas. Está terminantemente prohibido sacar marfil, productos de fauna o especies protegidas; las tallas grandes pueden requerir certificado de exportación."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "$2.00 - $5.00",
+    "topCarriers": [
+     "Airtel Gabon",
+     "Moov Africa Gabon"
+    ],
+    "airportSimTrapWarning": "Las eSIM internacionales son escasas y caras; lo más barato es comprar una SIM de Airtel o Moov con pasaporte en Libreville. En los parques no habrá señal y el wifi del lodge es limitado."
+   },
+   "touristScams": [
+    {
+     "title": "Falso control policial",
+     "desc": "Personas uniformadas o de paisano exigen una “multa” por supuestos documentos faltantes.",
+     "tip": "Mantenga la calma, muestre la copia, pida recibo y llame a su hotel o embajada."
+    },
+    {
+     "title": "Taxi del aeropuerto",
+     "desc": "Al llegar, se pide al turista varias veces la tarifa normal al centro.",
+     "tip": "Pida traslado al hotel o pacte el precio antes de subir."
+    },
+    {
+     "title": "El truco del “dépôt”",
+     "desc": "Sube a lo que parece un taxi compartido y luego le cobran el coche entero (dépôt).",
+     "tip": "Antes de subir aclare si es “course” o “dépôt” y el precio."
+    }
+   ]
+  }
+ },
+ "ru": {
+  "insights": {
+   "currency": "Франк КФА BEAC (XAF)",
+   "plugType": "Тип C (220V, 50Hz)",
+   "bestMonths": "Июнь – сентябрь (длинный сухой сезон; наблюдение за животными и горбатые киты у Лоанго). Декабрь – февраль — короткий сухой сезон (кожистые черепахи). Октябрь – ноябрь и март – май очень дождливы.",
+   "safety": {
+    "safetyScore": 55,
+    "safetyLevel": "Умеренный Риск",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60",
+    "crimeRateSummary": "В Либревиле случаются уличные кражи, кражи из машин и ночные вооружённые ограбления, особенно на пляжных дорогах и у ночных клубов. После смены власти в 2023 году обстановка спокойная, но возможны демонстрации и блокпосты. В нацпарках главные риски — транспорт и здоровье.",
+    "commonScams": [
+     "Лже-полицейские требуют деньги под предлогом «проверки документов»",
+     "Таксисты в аэропорту называют туристам завышенную цену",
+     "Маршрутное такси объявляют «частным рейсом» и берут плату за всю машину"
+    ],
+    "safeTravelTips": [
+     "Носите заверенную копию паспорта, оригинал храните в отеле.",
+     "Не гуляйте ночью в Либревиле и не останавливайтесь на пляжных дорогах в темноте; пользуйтесь машиной отеля или проверенным водителем.",
+     "Посещайте нацпарки (Лоанго, Лопе) с лицензированными операторами по предварительной брони."
+    ],
+    "emergencyNumbers": {
+     "police": "177",
+     "ambulance": "177",
+     "general": "177"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Хороший 4G в Либревиле, Порт-Жантиле и Франсвиле; в нацпарках и глубинке сигнала почти нет.",
+    "costPerGbUsd": "~2.00 - 5.00 $",
+    "esimAvailability": "Ограничено (мало международных eSIM); SIM Airtel или Moov по паспорту",
+    "bestCarriers": [
+     "Airtel Gabon",
+     "Moov Africa Gabon"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Слабый (маршрутные такси в Либревиле; одна железная дорога — Трансгабонская)",
+    "costLevel": "Дорого",
+    "singleTicketUsd": "0.30 - 1.00 $ (маршрутное такси)",
+    "dailyPassUsd": "Нет",
+    "popularRideApps": [
+     "Распространённых приложений нет – такси «курс»/«депо»",
+     "Поезд Трансгабонской дороги (SETRAG)"
+    ],
+    "taxiAdvice": "Такси в Либревиле без счётчиков: поездка с попутчиками дешёвая, «депо» (вся машина) дороже; называйте цену до посадки. В Лопе — поездом Трансгабонской дороги со станции Овендо (~5–6 ч), в Лоанго — самолётом и лодкой через Порт-Жантиль/Омбуэ."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "60 - 100 $",
+    "dailyBudgetMidrangeUsd": "150 - 250 $",
+    "budgetMealUsd": "6 - 12 $",
+    "coffeeUsd": "1.50 - 3.00 $",
+    "waterBottleUsd": "0.80 - 1.50 $",
+    "hostelDormUsd": "Хостелов нет; простые отели 40 - 70 $",
+    "hotel3StarUsd": "100 - 200 $",
+    "flightCostIndex": "Высокий",
+    "flightTip": "В Либревиль (LBV) летают Turkish Airlines, Ethiopian (через Аддис-Абебу), Royal Air Maroc (Касабланка) и Air France (Париж); у рейсов Turkish Airlines может быть промежуточная посадка. Пакеты в нацпарки (перелёт + лодж) дорогие — бронируйте заранее."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Здоровайтесь со всеми «Bonjour» и рукопожатием; первыми — со старшими.",
+     "Фотографировать госучреждения, президентский дворец и военных запрещено.",
+     "Входя в деревню, нанесите визит вежливости вождю; на обряды бвити — только по приглашению.",
+     "Всегда имейте при себе документы и сохраняйте спокойствие на блокпостах."
+    ],
+    "festivals": [
+     "День независимости (17 августа)",
+     "Фестиваль культуры и искусств Габона (периодический)",
+     "Обряды инициации бвити (ибога, традиционные)"
+    ],
+    "lifestyle": "Около 88 % страны покрыто тропическим лесом, большинство жителей живут в Либревиле и Порт-Жантиле. Народы фанг, пуну, нзеби и мьене сочетают традиции с французским влиянием; в Либревиле оживлённая ночная жизнь и кафе во французском стиле."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Нацпарк Лоанго (слоны, буйволы и бегемоты на пляже)",
+     "Нацпарк Лопе (ЮНЕСКО, стаи мандрилов)",
+     "Пуэнт-Дени и нацпарк Понгара (черепахи)",
+     "Нацпарк Ивиндо и водопады Конгу",
+     "Больница и музей Альберта Швейцера в Ламбарене",
+     "Национальный музей искусств и традиций в Либревиле"
+    ],
+    "bestSeasons": "Июнь – сентябрь; декабрь – февраль",
+    "travelStyleTip": "Габон дорогой, но нетронутый: планируйте 13 нацпарков с пакетами лоджей. В Лопе — поездом из Либревиля, в Лоанго — самолётом и лодкой; самостоятельно путешествовать сложно и долго."
+   },
+   "religion": {
+    "primaryReligions": "Христиане ~75–80 % (католики ~40 %), мусульмане ~10 %, традиционный бвити широко распространён наряду с христианством",
+    "respectNorms": "В церковь — в скромной одежде; не посещайте и не снимайте храмы бвити и священные леса без разрешения.",
+    "sacredSites": [
+     "Церковь Сен-Мишель-де-Нкембо (резные деревянные колонны, Либревиль)",
+     "Собор Сент-Мари (Либревиль)",
+     "Обрядовые дома бвити (мбанджа)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Официальный язык — французский; говорят более чем на 40 местных языках: фанг, мьене, пуну, нзеби и др.",
+    "englishProficiency": "Низкий; без французского трудно, но в лоджах есть англоговорящие гиды.",
+    "phrases": [
+     {
+      "phrase": "Mbolo",
+      "meaning": "Привет (фанг; используется по всей стране)",
+      "translation": "Привет",
+      "pronunciation": "m-BO-lo"
+     },
+     {
+      "phrase": "Akiba",
+      "meaning": "Спасибо (фанг)",
+      "translation": "Спасибо",
+      "pronunciation": "a-KEE-ba"
+     },
+     {
+      "phrase": "Bonjour",
+      "meaning": "Здравствуйте (по-французски)",
+      "translation": "Здравствуйте",
+      "pronunciation": "bon-ZHOOR"
+     },
+     {
+      "phrase": "C'est combien ?",
+      "meaning": "Сколько стоит? (по-французски)",
+      "translation": "Сколько?",
+      "pronunciation": "say kom-BYAN"
+     },
+     {
+      "phrase": "L'addition, s'il vous plaît",
+      "meaning": "Счёт, пожалуйста (по-французски)",
+      "translation": "Счёт, пожалуйста",
+      "pronunciation": "la-dee-SYON seel voo PLEH"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Португальцы достигли эстуария Комо в XV веке и назвали побережье по слову «габан» (плащ с капюшоном). Франция закрепилась здесь в XIX веке; Либревиль основан в 1849 году освобождёнными рабами. Габон обрёл независимость 17 августа 1960 года; в 2002 году созданы 13 нацпарков, Лопе внесён в список ЮНЕСКО в 2007 году.",
+    "milestones": [
+     "1849: основание Либревиля",
+     "1913: Альберт Швейцер открывает больницу в Ламбарене",
+     "1960: независимость (17 августа)",
+     "2002: создание 13 национальных парков"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Пуле ньембве (курица в соусе из пальмовых орехов, национальное блюдо)",
+     "Фёй-де-маниок (рагу из листьев маниоки)",
+     "Рыба или мясо в соусе одика (из косточек дикого манго)"
+    ],
+    "traditionalDrinks": [
+     "Пиво Régab",
+     "Пальмовое вино (вен-де-пальм / маламба)",
+     "Имбирный сок и биссап"
+    ],
+    "streetFoodAndDesserts": [
+     "Батон-де-маниок (палочки из маниоки в листьях)",
+     "Шашлычки и жареные бананы-плантаны",
+     "Атанга (сафу, печёная «африканская груша»)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Леон Мба (первый президент)",
+     "Пьер-Эмерик Обамеянг (футболист)",
+     "Энтони Обаме (серебро по тхэквондо, Лондон-2012, первая олимпийская медаль страны)"
+    ],
+    "strongSectors": [
+     "Нефть",
+     "Марганец (один из крупнейших мировых производителей)",
+     "Древесина (окуме) и экотуризм"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Франк КФА привязан к евро (655,957 XAF = 1 €). Крупные отели и супермаркеты принимают карты, но в основном платят наличными и мобильными деньгами (Airtel Money, Moov Money). Вне Либревиля банкоматов мало; проще всего менять наличные евро.",
+    "tippingCulture": "Не обязательны; 5–10 % в ресторане, гидам лоджа и капитанам лодок — в конце тура.",
+    "economicPillars": "Нефть, марганец, древесина, пальмовое масло и развивающийся экотуризм."
+   }
+  },
+  "itin": {
+   "routeName": "Маршрут по лесам Габона: Либревиль, Лопе и Лоанго",
+   "routeSummary": "9-дневный природный маршрут: Либревиль и пляжи Пуэнт-Дени, поездом Трансгабонской дороги в Лопе — край мандрилов, затем нацпарк Лоанго, где слоны гуляют по пляжу.",
+   "totalDays": 9,
+   "idealDurationText": "Маршрут на 9 дней",
+   "bestSeason": "Июнь – сентябрь",
+   "transportMode": "Поезд Трансгабонской дороги + внутренний рейс (Порт-Жантиль) + лодки и внедорожники лоджа",
+   "paceLevel": "Умеренный (дикая природа + природа)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Остановка 1: Либревиль и Пуэнт-Дени",
+     "recommendedDuration": "2 дня",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Национальный музей искусств и традиций (маски фанг)",
+      "Церковь Сен-Мишель-де-Нкембо",
+      "Рынок Мон-Буэ",
+      "Пляжи Пуэнт-Дени и черепахи Понгары (ноябрь – февраль)"
+     ],
+     "activities": [
+      "Прогуляйтесь по набережной Бор-де-Мер ближе к вечеру.",
+      "Переправьтесь на лодке в Пуэнт-Дени и проведите день на пляже.",
+      "Узнайте в музее историю габонских масок."
+     ],
+     "foodAndDrinks": [
+      "Пуле ньембве",
+      "Рыба на гриле с плантанами",
+      "Пиво Régab"
+     ],
+     "criticalTips": [
+      "Не фотографируйте у президентского дворца.",
+      "Ночью пользуйтесь машиной от отеля, а не такси в одиночку."
+     ],
+     "mapsQuery": "Libreville, Gabon"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Остановка 2: Национальный парк Лопе",
+     "recommendedDuration": "3 дня",
+     "durationBadge": "3 дня",
+     "highlights": [
+      "Стаи мандрилов в сотни особей",
+      "Мозаика саванны и леса, виды на реку Огове",
+      "Древние петроглифы",
+      "Лесные слоны и буйволы"
+     ],
+     "activities": [
+      "Отправьтесь отслеживать мандрилов вместе с исследователями.",
+      "Пройдитесь на закате по холмам саванны.",
+      "Посетите места с петроглифами с гидом."
+     ],
+     "foodAndDrinks": [
+      "Фёй-де-маниок",
+      "Батон-де-маниок"
+     ],
+     "criticalTips": [
+      "Покупайте билеты заранее на станции Овендо; поезда опаздывают.",
+      "Носите длинные рукава и репеллент (мухи цеце и комары)."
+     ],
+     "mapsQuery": "Lopé, Gabon"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Остановка 3: Национальный парк Лоанго",
+     "recommendedDuration": "4 дня",
+     "durationBadge": "4 дня",
+     "highlights": [
+      "Слоны на пляже и «серфингующие» бегемоты",
+      "Лодочное сафари по лагуне Игела",
+      "Наблюдение за горбатыми китами (июль – сентябрь)",
+      "Гориллы (программа привыкания, ограниченные места)"
+     ],
+     "activities": [
+      "Отправьтесь на сафари на внедорожнике по пляжу и саванне.",
+      "Сходите на лодке смотреть китов.",
+      "Понаблюдайте за птицами с каноэ на лагуне."
+     ],
+     "foodAndDrinks": [
+      "Свежая рыба и креветки",
+      "Блюда с соусом одика",
+      "Пальмовое вино"
+     ],
+     "criticalTips": [
+      "Добираться самолётом и лодкой через Порт-Жантиль/Омбуэ; бронируйте пакет лоджа заранее.",
+      "Держитесь не ближе 50 м от слонов и слушайтесь гида."
+     ],
+     "mapsQuery": "Loango National Park, Gabon"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Пуле ньембве (курица в соусе из пальмовых орехов, национальное блюдо)",
+     "Фёй-де-маниок (рагу из листьев маниоки)",
+     "Рыба или мясо в соусе одика (из косточек дикого манго)"
+    ],
+    "drinks": [
+     "Пиво Régab",
+     "Пальмовое вино (вен-де-пальм / маламба)",
+     "Имбирный сок и биссап"
+    ],
+    "streetFoods": [
+     "Батон-де-маниок (палочки из маниоки в листьях)",
+     "Шашлычки и жареные бананы-плантаны",
+     "Атанга (сафу, печёная «африканская груша»)"
+    ],
+    "diningAdvice": "В Либревиле много французских и ливанских ресторанов, но они дорогие; в местных «маки» пуле ньембве и рыба на гриле дешевле. Не покупайте бушмит — охраняемые виды запрещены."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Сертификат о прививке от жёлтой лихорадки (обязателен при въезде)",
+     "Профилактика малярии и сильный репеллент",
+     "Одежда нейтральных цветов с длинным рукавом и дождевик",
+     "Наличные евро"
+    ],
+    "safetyAndEtiquette": [
+     "Не фотографируйте госучреждения и силовиков.",
+     "Уважайте вождей и не фотографируйте без разрешения."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Европейские розетки с двумя круглыми штырями (тип C); тонкие вилки подходят, для толстых вилок F возьмите тонкий адаптер."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Водопроводную воду не пьют; пользуйтесь бутилированной, даже для чистки зубов.",
+    "vaccines": [
+     "Жёлтая лихорадка: ОБЯЗАТЕЛЬНА при въезде для всех старше 1 года",
+     "Малярия: высокий риск по всей стране, рекомендуется профилактика",
+     "Гепатиты A и B, брюшной тиф",
+     "Бешенство и менингит (для поездок на природу)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "177"
+   },
+   "tipping": {
+    "custom": "По желанию; 5–10 % в ресторане.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "Гидам лоджа, водителям и капитанам — 5–10 € с человека в день в конце тура."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Возврат НДС туристам не предусмотрен",
+    "minSpend": "Не применяется",
+    "customsNote": "Возврата НДС туристам нет. Вывоз слоновой кости, продукции из диких животных и охраняемых видов строго запрещён; для крупной резьбы по дереву может понадобиться экспортный сертификат."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "$2.00 - $5.00",
+    "topCarriers": [
+     "Airtel Gabon",
+     "Moov Africa Gabon"
+    ],
+    "airportSimTrapWarning": "Международных eSIM мало и они дорогие; дешевле купить SIM Airtel или Moov по паспорту в Либревиле. В нацпарках связи нет, Wi-Fi в лоджах ограничен."
+   },
+   "touristScams": [
+    {
+     "title": "Фальшивая проверка полиции",
+     "desc": "Люди в форме или в штатском требуют «штраф» за якобы отсутствующие документы.",
+     "tip": "Сохраняйте спокойствие, покажите копию, попросите квитанцию и позвоните в отель или посольство."
+    },
+    {
+     "title": "Такси из аэропорта",
+     "desc": "После прилёта туристу называют цену в разы выше обычной.",
+     "tip": "Закажите трансфер отеля или договоритесь о цене заранее."
+    },
+    {
+     "title": "Уловка с «депо»",
+     "desc": "Садитесь в якобы маршрутное такси, а потом требуют плату за всю машину («депо»).",
+     "tip": "До посадки уточните — «курс» или «депо» — и цену."
+    }
+   ]
+  }
+ }
+}

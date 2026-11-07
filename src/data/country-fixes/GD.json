@@ -1,0 +1,1787 @@
+{
+ "tr": {
+  "insights": {
+   "currency": "Doğu Karayip Doları (XCD)",
+   "plugType": "Tip G (230V, 50Hz)",
+   "bestMonths": "Ocak – Mayıs (kurak dönem, ılık ve güneşli). Haziran – Kasım yağışlı ve kasırga sezonudur (en riskli ağustos – ekim); ağustosta Spicemas karnavalı yapılır.",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Güvenli",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Grenada Karayipler’in daha güvenli adalarındandır; ancak Grand Anse plajında ve St. George’s’ta fırsat hırsızlığı, kiralık villalarda zaman zaman hırsızlık ve gece ıssız yollarda soygun görülür. Kasırgalar (2024’te Beryl Carriacou’yu ağır vurdu) önemli bir doğal risktir.",
+    "commonScams": [
+     "Plajda “yardımcı” olup sonra şezlong, şnorkel veya rehberlik için para isteyenler",
+     "Taksi ücretini EC$ yerine ABD doları olarak isteme",
+     "Kruvaziyer iskelesinde fiyatı şişirilmiş ada turları"
+    ],
+    "safeTravelTips": [
+     "Plajda eşyalarınızı gözetimsiz bırakmayın; kiralık villalarda kapı ve pencereleri kilitleyin.",
+     "Taksi fiyatını binmeden sorun ve para birimini netleştirin; resmî tarifeler vardır.",
+     "Kasırga sezonunda NaDMA ve meteoroloji uyarılarını takip edin, seyahat sigortası yaptırın."
+    ],
+    "emergencyNumbers": {
+     "police": "911",
+     "ambulance": "434",
+     "general": "911"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Ana ada ve Carriacou’da 4G/LTE iyi; iç kesimlerdeki dağlık yağmur ormanında zayıf noktalar var.",
+    "costPerGbUsd": "~2.00 - 5.00 $",
+    "esimAvailability": "İyi (Digicel ve Flow turist paketleri; uluslararası eSIM’ler mevcut)",
+    "bestCarriers": [
+     "Digicel",
+     "Flow"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Orta (numaralı rotalarda sık minibüsler; akşam ve pazar seyrek)",
+    "costLevel": "Orta",
+    "singleTicketUsd": "1.00 - 3.00 $ (minibüs, mesafeye göre)",
+    "dailyPassUsd": "Yok",
+    "popularRideApps": [
+     "Uygulama yok – resmî tarifeli taksiler",
+     "Numaralı minibüsler (ör. Route 1 Grand Anse)",
+     "Osprey Lines feribotu (Carriacou)"
+    ],
+    "taxiAdvice": "Uber/Bolt yoktur. Taksiler taksimetresizdir ama Grenada Turizm Otoritesi’nin yayımladığı sabit tarifeler vardır; fiyatı binmeden sorun. Minibüsler “H” plakalı ve numaralıdır, çok ucuz ve hareketlidir. Carriacou’ya Osprey Lines feribotu (~2 saat) veya küçük uçaklarla gidilir. Sol şeritten sürülür."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "60 - 90 $",
+    "dailyBudgetMidrangeUsd": "140 - 250 $",
+    "budgetMealUsd": "8 - 15 $",
+    "coffeeUsd": "2.50 - 4.50 $",
+    "waterBottleUsd": "1.00 - 2.00 $",
+    "hostelDormUsd": "Hostel çok az; konuk evleri 40 - 70 $",
+    "hotel3StarUsd": "120 - 250 $",
+    "flightCostIndex": "Yüksek (aktarmalı)",
+    "flightTip": "Türkiye’den direkt uçuş yoktur; Londra (British Airways, Virgin Atlantic), Miami ve New York (American, JetBlue) veya Barbados ve Trinidad üzerinden Maurice Bishop Havalimanı’na (GND) bağlanılır."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Herkese “Good morning / Good afternoon” diye selam vermek beklenir; selamsız soru sormak kabalıktır.",
+     "Mayo ve çıplak gövdeyle şehirde, markette ve otobüste dolaşmak hoş karşılanmaz.",
+     "Kamuflaj desenli giysi giymek sivillere yasaktır.",
+     "İnsanları, özellikle pazarlarda, izin almadan fotoğraflamayın."
+    ],
+    "festivals": [
+     "Spicemas Karnavalı (ağustos; Jab Jab ve J’ouvert)",
+     "Bağımsızlık Günü (7 Şubat)",
+     "Carriacou Regatta (ağustos başı) ve Maroon & String Band Festivali (nisan)"
+    ],
+    "lifestyle": "“Baharat Adası” muskat, tarçın ve kakao kokar; hayat sakin bir ada ritmiyle akar. Cuma akşamları Gouyave’nin “Fish Friday” şenliği, rom dükkânlarında sohbet (liming) ve calypso–soca müziği sosyal hayatın merkezidir."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Grand Anse plajı",
+     "Molinere Körfezi Su Altı Heykel Parkı",
+     "St. George’s Carenage limanı ve Fort George",
+     "Grand Etang Milli Parkı ve krater gölü",
+     "Belmont Estate ve River Antoine Rom İmalathanesi",
+     "Carriacou: Paradise Beach ve Sandy Island"
+    ],
+    "bestSeasons": "Ocak – Mayıs",
+    "travelStyleTip": "Grand Anse çevresinde konaklayıp minibüsle St. George’s’a geçin; ada içini ve kuzeyi bir günlük şoförlü turla, Carriacou’yu feribotla 2–3 günlük ek bir kaçamak olarak gezin."
+   },
+   "religion": {
+    "primaryReligions": "Protestan ~%49 (Pentekostal, Anglikan, Adventist), Katolik ~%36, diğer ~%15",
+    "respectNorms": "Kiliselere kapalı omuzlarla girin; pazar ayinleri sırasında sessiz olun ve fotoğraf çekmeyin.",
+    "sacredSites": [
+     "Kusursuz Gebelik Katedrali (Katolik, St. George’s)",
+     "St. George’s Anglikan Kilisesi",
+     "Leapers Hill / Caribs’ Leap (Sauteurs; Kalinago anıt alanı)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Resmî dil İngilizcedir; günlük hayatta Grenada Kreol İngilizcesi konuşulur, bazı yaşlılar Fransız tabanlı Patois bilir.",
+    "englishProficiency": "Çok yüksek; anadil İngilizcedir.",
+    "phrases": [
+     {
+      "phrase": "Good mornin'",
+      "meaning": "Günaydın (her karşılaşmada beklenen selam)",
+      "translation": "Günaydın",
+      "pronunciation": "gud MOR-nin"
+     },
+     {
+      "phrase": "Wha' happenin'?",
+      "meaning": "Ne haber? (Grenada kreolü)",
+      "translation": "Ne haber?",
+      "pronunciation": "wah HAP-nin"
+     },
+     {
+      "phrase": "Doh worry",
+      "meaning": "Merak etme / Sorun yok",
+      "translation": "Sorun yok",
+      "pronunciation": "doh WUR-ree"
+     },
+     {
+      "phrase": "We goin' an' lime",
+      "meaning": "Gidip takılalım / sohbet edelim (“liming”)",
+      "translation": "Takılalım",
+      "pronunciation": "wee GO-in an LIME"
+     },
+     {
+      "phrase": "How much fuh dis?",
+      "meaning": "Bu ne kadar? (Grenada kreolü)",
+      "translation": "Kaç para?",
+      "pronunciation": "how much fuh DIS"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Ada önce Kalinago halkının yurduydu; Fransızlar 1650’de yerleşti ve 1651’de Sauteurs’te son Kalinagolar uçurumdan atlayarak teslim olmayı reddetti. İngilizler 1763’te adayı aldı, 1783’te kesin olarak İngiliz oldu; muskat ve kakao tarlaları gelişti. Grenada 7 Şubat 1974’te bağımsız oldu; 1979 devrimi ve 1983’teki ABD müdahalesinin ardından demokratik düzen yerleşti. 2004’te Ivan, 2024’te Beryl kasırgaları büyük hasar verdi.",
+    "milestones": [
+     "1651: Leapers Hill’de Kalinagoların son direnişi",
+     "1783: Adanın kesin olarak İngiliz olması",
+     "1974: Bağımsızlık (7 Şubat)",
+     "2004: Ivan Kasırgası"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Oil down (ekmek ağacı meyvesi, tuzlu et ve hindistancevizi sütüyle millî yemek)",
+     "Callaloo çorbası",
+     "Lambie (deniz salyangozu) yahnisi veya souse"
+    ],
+    "traditionalDrinks": [
+     "River Antoine, Clarke’s Court ve Westerhall romları",
+     "Muskatlı rom punch",
+     "Kakao çayı ve sorrel (Noel içeceği)"
+    ],
+    "streetFoodAndDesserts": [
+     "Muskatlı dondurma",
+     "Roti ve bakes & saltfish",
+     "Grenada Chocolate Company’nin bitter çikolatası"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Kirani James (2012 Londra 400 m olimpiyat şampiyonu)",
+     "Anderson Peters (iki kez cirit atma dünya şampiyonu)",
+     "Mighty Sparrow (calypso efsanesi, Grenada doğumlu)"
+    ],
+    "strongSectors": [
+     "Turizm ve yatçılık",
+     "Muskat, topuz (mace) ve kakao (dünyanın önde gelen muskat üreticilerinden)",
+     "Eğitim (St. George’s Üniversitesi tıp fakültesi)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "XCD ABD dolarına sabittir (2,70 EC$ = 1 $) ve dolar yaygın kabul görür, para üstü EC$ verilir. Otel, restoran ve süpermarketlerde kart geçer; minibüs, pazar ve küçük dükkânlarda nakit gerekir.",
+    "tippingCulture": "Restoranlar genellikle %10 servis bedeli ekler; eklenmemişse %10-15 bırakılır. Taksi şoförleri ve tur rehberlerine bahşiş beklenir.",
+    "economicPillars": "Turizm, baharat ve kakao tarımı, üniversite eğitimi, inşaat ve yatırım yoluyla vatandaşlık programı."
+   }
+  },
+  "itin": {
+   "routeName": "Baharat Adası Rotası: St. George’s, Grand Etang – Kuzey ve Carriacou",
+   "routeSummary": "St. George’s’un renkli limanı ve Grand Anse plajından su altı heykel parkına; Grand Etang yağmur ormanı, muskat istasyonları ve kakao çiftlikleriyle kuzeye; son olarak feribotla sakin Carriacou adasına uzanan 8 günlük rota.",
+   "totalDays": 8,
+   "idealDurationText": "8 Günlük Rota",
+   "bestSeason": "Ocak – Mayıs",
+   "transportMode": "Minibüs + şoförlü ada turu + Osprey Lines feribotu",
+   "paceLevel": "Rahat (Plaj + Doğa + Gastronomi)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "1. Durak: St. George’s ve Grand Anse",
+     "recommendedDuration": "3 Gün",
+     "durationBadge": "3 Gün",
+     "highlights": [
+      "Carenage limanı ve Fort George",
+      "Grand Anse plajı",
+      "Molinere Körfezi Su Altı Heykel Parkı",
+      "Baharat pazarı (Market Square)"
+     ],
+     "activities": [
+      "Tekneyle Molinere’ye gidip heykel parkında şnorkel yapın.",
+      "Fort George’dan limanın manzarasını izleyin.",
+      "Grand Anse’de gün batımında yüzün."
+     ],
+     "foodAndDrinks": [
+      "Oil down",
+      "Muskatlı dondurma",
+      "Rom punch"
+     ],
+     "criticalTips": [
+      "Kruvaziyer günlerinde St. George’s çok kalabalık olur; erken gidin.",
+      "Minibüste “Route 1” Grand Anse – St. George’s hattıdır; inmek için kapıya vurun."
+     ],
+     "mapsQuery": "St. George's, Grenada"
+    },
+    {
+     "stopNumber": 2,
+     "name": "2. Durak: Grand Etang, Gouyave ve Kuzey",
+     "recommendedDuration": "2 Gün",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "Grand Etang krater gölü ve Mona maymunları",
+      "Annandale ve Seven Sisters şelaleleri",
+      "Gouyave Muskat İstasyonu ve Fish Friday",
+      "Belmont Estate (kakao) ve River Antoine Rom İmalathanesi"
+     ],
+     "activities": [
+      "Rehberle Seven Sisters şelalelerine yağmur ormanı yürüyüşü yapın.",
+      "Belmont Estate’te kakaodan çikolataya üretimi izleyin.",
+      "Cuma akşamı Gouyave’de Fish Friday sokak şenliğine katılın."
+     ],
+     "foodAndDrinks": [
+      "Izgara balık ve lambie (Fish Friday)",
+      "Kakao çayı",
+      "River Antoine romu (çok sert)"
+     ],
+     "criticalTips": [
+      "Dağ yolları dar ve virajlıdır; şoförlü tur tercih edin.",
+      "Yağmurdan sonra şelale patikaları çok kaygan olur."
+     ],
+     "mapsQuery": "Gouyave, Grenada"
+    },
+    {
+     "stopNumber": 3,
+     "name": "3. Durak: Carriacou ve Petite Martinique",
+     "recommendedDuration": "3 Gün",
+     "durationBadge": "3 Gün",
+     "highlights": [
+      "Paradise Beach (L’Esterre)",
+      "Sandy Island deniz koruma alanı",
+      "Windward köyünde geleneksel tekne yapımı",
+      "Hillsborough ve Carriacou Müzesi"
+     ],
+     "activities": [
+      "Su taksisiyle Sandy Island’a geçip şnorkel yapın.",
+      "Windward’da tekne ustalarını ziyaret edin.",
+      "Paradise Beach’te sakin bir gün geçirin."
+     ],
+     "foodAndDrinks": [
+      "Taze ıstakoz ve lambie",
+      "Jack Iron romu (yerel, çok sert)"
+     ],
+     "criticalTips": [
+      "Beryl Kasırgası (2024) sonrası bazı tesisler hâlâ onarımda olabilir; konaklamayı önceden teyit edin.",
+      "Feribotta deniz tutabilir; ilaç alın ve bileti önceden alın."
+     ],
+     "mapsQuery": "Hillsborough, Carriacou, Grenada"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Oil down (ekmek ağacı meyvesi, tuzlu et ve hindistancevizi sütüyle millî yemek)",
+     "Callaloo çorbası",
+     "Lambie (deniz salyangozu) yahnisi veya souse"
+    ],
+    "drinks": [
+     "River Antoine, Clarke’s Court ve Westerhall romları",
+     "Muskatlı rom punch",
+     "Kakao çayı ve sorrel (Noel içeceği)"
+    ],
+    "streetFoods": [
+     "Muskatlı dondurma",
+     "Roti ve bakes & saltfish",
+     "Grenada Chocolate Company’nin bitter çikolatası"
+    ],
+    "diningAdvice": "Yerel lokanta ve rom dükkânlarında günlük yemek ucuzdur; turistik restoranlarda %15 KDV ve %10 servis bedeli eklenir. Oil down genelde pazar günü veya özel günlerde büyük kazanlarda pişirilir; bulursanız mutlaka deneyin."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "G tipi priz adaptörü",
+     "Resif dostu güneş kremi ve şnorkel seti",
+     "Kaymaz sandalet veya yürüyüş ayakkabısı",
+     "Sivrisinek kovucu"
+    ],
+    "safetyAndEtiquette": [
+     "Selam vermeden konuşmaya başlamayın.",
+     "Kamuflaj giymeyin ve mayoyla şehirde dolaşmayın."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Üç köşeli pimli İngiliz tipi (G) prizler; Türkiye’den G tipi adaptör götürün. Bazı otellerde ABD tipi (A/B) priz de bulunur."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Şebeke suyu (NAWASA) arıtılır ve çoğu bölgede içilebilir kabul edilir; ancak şiddetli yağmur ve kasırgalardan sonra şişe su tercih edin. Carriacou’da yağmur suyu sarnıçları kullanıldığından şişe su önerilir.",
+    "vaccines": [
+     "Rutin aşılar ve hepatit A",
+     "Sarıhumma: risk ülkesinden geliyorsanız sertifika istenir",
+     "Dang humması: sivrisinekten korunun"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "434"
+   },
+   "tipping": {
+    "custom": "Servis bedeli eklenmemişse %10-15 bırakılır.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Faturada %10 servis bedeli varsa ek bahşiş isteğe bağlıdır; rehber ve tekne kaptanlarına ayrıca bahşiş verilir."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Turistlere KDV iadesi uygulanmıyor",
+    "minSpend": "Uygulanmaz",
+    "customsNote": "Grenada’da %15 KDV vardır ancak turistlere iade yapılmaz; bazı havalimanı ve liman mağazaları gümrüksüz satış yapar. Mercan, deniz kabuğu ve kaplumbağa ürünlerinin ihracı yasaktır."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$2.00 - $5.00",
+    "topCarriers": [
+     "Digicel",
+     "Flow"
+    ],
+    "airportSimTrapWarning": "Havalimanında Digicel/Flow stantları sınırlı saatlerde açıktır; eSIM’i önceden kurun veya Grand Anse’deki mağazalardan turist paketi alın. ABD hatlarının dolaşım ücretleri çok yüksektir."
+   },
+   "touristScams": [
+    {
+     "title": "Plaj “Yardımcısı”",
+     "desc": "Biri şezlong ayarlar veya şnorkel yeri gösterir, sonra yüksek ücret ister.",
+     "tip": "Hizmeti kabul etmeden önce fiyatı sorun veya kibarca reddedin."
+    },
+    {
+     "title": "EC$ / US$ Karışıklığı",
+     "desc": "EC$ olarak konuşulan fiyat sonra ABD doları olarak istenir.",
+     "tip": "Pazarlıkta para birimini açıkça teyit edin."
+    },
+    {
+     "title": "Şişirilmiş İskele Turları",
+     "desc": "Kruvaziyer günlerinde iskelede ada turları normalin çok üstünde fiyatla satılır.",
+     "tip": "Grenada Turizm Otoritesi’ne kayıtlı rehberleri seçin veya önceden ayırtın."
+    }
+   ]
+  }
+ },
+ "en": {
+  "insights": {
+   "currency": "East Caribbean Dollar (XCD)",
+   "plugType": "Type G (230V, 50Hz)",
+   "bestMonths": "January – May (dry, warm and sunny). June – November is the rainy and hurricane season (peak August – October); the Spicemas carnival takes place in August.",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Safe",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Grenada is one of the safer Caribbean islands, but opportunistic theft on Grand Anse beach and in St. George’s, occasional burglary of rental villas and robbery on deserted roads at night do occur. Hurricanes are a significant natural risk (Beryl hit Carriacou hard in 2024).",
+    "commonScams": [
+     "Beach “helpers” who later demand money for loungers, snorkel gear or guiding",
+     "Demanding taxi fares in US dollars instead of EC$",
+     "Overpriced island tours sold at the cruise terminal"
+    ],
+    "safeTravelTips": [
+     "Don’t leave belongings unattended on the beach; lock doors and windows at rental villas.",
+     "Ask the taxi fare before boarding and confirm the currency; official rates exist.",
+     "In hurricane season follow NaDMA and weather alerts and get travel insurance."
+    ],
+    "emergencyNumbers": {
+     "police": "911",
+     "ambulance": "434",
+     "general": "911"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Good 4G/LTE on the main island and Carriacou; weak spots in the mountainous rainforest interior.",
+    "costPerGbUsd": "~2.00 - 5.00 $",
+    "esimAvailability": "Good (Digicel and Flow tourist packs; international eSIMs available)",
+    "bestCarriers": [
+     "Digicel",
+     "Flow"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Fair (frequent minibuses on numbered routes; sparse evenings and Sundays)",
+    "costLevel": "Moderate",
+    "singleTicketUsd": "1.00 - 3.00 $ (minibus, by distance)",
+    "dailyPassUsd": "None",
+    "popularRideApps": [
+     "No ride apps – taxis with official rates",
+     "Numbered minibuses (e.g. Route 1 to Grand Anse)",
+     "Osprey Lines ferry (Carriacou)"
+    ],
+    "taxiAdvice": "There is no Uber/Bolt. Taxis have no meters but fixed fares published by the Grenada Tourism Authority; ask before boarding. Minibuses carry “H” plates and route numbers and are cheap and lively. Reach Carriacou by Osprey Lines ferry (~2 h) or small plane. Driving is on the left."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "60 - 90 $",
+    "dailyBudgetMidrangeUsd": "140 - 250 $",
+    "budgetMealUsd": "8 - 15 $",
+    "coffeeUsd": "2.50 - 4.50 $",
+    "waterBottleUsd": "1.00 - 2.00 $",
+    "hostelDormUsd": "Very few hostels; guesthouses 40 - 70 $",
+    "hotel3StarUsd": "120 - 250 $",
+    "flightCostIndex": "High (connections needed)",
+    "flightTip": "There are no direct flights from Türkiye; connect to Maurice Bishop Airport (GND) via London (British Airways, Virgin Atlantic), Miami and New York (American, JetBlue) or via Barbados and Trinidad."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Greeting everyone with “Good morning / Good afternoon” is expected; asking without greeting is rude.",
+     "Walking around town, shops or buses in swimwear or shirtless is frowned upon.",
+     "Civilians are not allowed to wear camouflage clothing.",
+     "Don’t photograph people, especially at markets, without asking."
+    ],
+    "festivals": [
+     "Spicemas Carnival (August; Jab Jab and J’ouvert)",
+     "Independence Day (7 February)",
+     "Carriacou Regatta (early August) and Maroon & String Band Festival (April)"
+    ],
+    "lifestyle": "The “Spice Isle” smells of nutmeg, cinnamon and cocoa, and life follows a calm island rhythm. Gouyave’s “Fish Friday” street party, chatting in rum shops (liming) and calypso–soca music are at the heart of social life."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Grand Anse Beach",
+     "Molinere Bay Underwater Sculpture Park",
+     "St. George’s Carenage harbour and Fort George",
+     "Grand Etang National Park and crater lake",
+     "Belmont Estate and River Antoine Rum Distillery",
+     "Carriacou: Paradise Beach and Sandy Island"
+    ],
+    "bestSeasons": "January – May",
+    "travelStyleTip": "Stay around Grand Anse and hop on minibuses to St. George’s; see the interior and north on a day tour with a driver, and add Carriacou by ferry as a 2–3-day escape."
+   },
+   "religion": {
+    "primaryReligions": "Protestant ~49% (Pentecostal, Anglican, Adventist), Catholic ~36%, other ~15%",
+    "respectNorms": "Enter churches with covered shoulders; be quiet and don’t take photos during Sunday services.",
+    "sacredSites": [
+     "Cathedral of the Immaculate Conception (Catholic, St. George’s)",
+     "St. George’s Anglican Church",
+     "Leapers Hill / Caribs’ Leap (Sauteurs; Kalinago memorial site)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "English is official; Grenadian Creole English is spoken day to day, and some elders know French-based Patois.",
+    "englishProficiency": "Very high; English is the native language.",
+    "phrases": [
+     {
+      "phrase": "Good mornin'",
+      "meaning": "Good morning (the greeting expected at every encounter)",
+      "translation": "Good morning",
+      "pronunciation": "gud MOR-nin"
+     },
+     {
+      "phrase": "Wha' happenin'?",
+      "meaning": "What’s up? (Grenadian Creole)",
+      "translation": "What’s up?",
+      "pronunciation": "wah HAP-nin"
+     },
+     {
+      "phrase": "Doh worry",
+      "meaning": "Don’t worry / No problem",
+      "translation": "No worries",
+      "pronunciation": "doh WUR-ree"
+     },
+     {
+      "phrase": "We goin' an' lime",
+      "meaning": "Let’s go hang out (“liming”)",
+      "translation": "Let’s hang out",
+      "pronunciation": "wee GO-in an LIME"
+     },
+     {
+      "phrase": "How much fuh dis?",
+      "meaning": "How much is this? (Grenadian Creole)",
+      "translation": "How much?",
+      "pronunciation": "how much fuh DIS"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "The island was first home to the Kalinago; the French settled in 1650, and in 1651 the last Kalinago at Sauteurs leapt from a cliff rather than surrender. Britain took the island in 1763 and held it definitively from 1783, as nutmeg and cocoa estates grew. Grenada became independent on 7 February 1974; after the 1979 revolution and the 1983 US intervention, democratic order was established. Hurricanes Ivan (2004) and Beryl (2024) caused major damage.",
+    "milestones": [
+     "1651: The Kalinago’s last stand at Leapers Hill",
+     "1783: The island becomes definitively British",
+     "1974: Independence (7 February)",
+     "2004: Hurricane Ivan"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Oil down (national dish of breadfruit, salted meat and coconut milk)",
+     "Callaloo soup",
+     "Lambie (conch) stew or souse"
+    ],
+    "traditionalDrinks": [
+     "River Antoine, Clarke’s Court and Westerhall rums",
+     "Nutmeg-spiced rum punch",
+     "Cocoa tea and sorrel (Christmas drink)"
+    ],
+    "streetFoodAndDesserts": [
+     "Nutmeg ice cream",
+     "Roti and bakes & saltfish",
+     "Dark chocolate from the Grenada Chocolate Company"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Kirani James (London 2012 Olympic 400 m champion)",
+     "Anderson Peters (two-time world javelin champion)",
+     "Mighty Sparrow (calypso legend, born in Grenada)"
+    ],
+    "strongSectors": [
+     "Tourism and yachting",
+     "Nutmeg, mace and cocoa (among the world’s leading nutmeg producers)",
+     "Education (St. George’s University medical school)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "The XCD is pegged to the US dollar (EC$2.70 = $1) and dollars are widely accepted, with change in EC$. Hotels, restaurants and supermarkets take cards; minibuses, markets and small shops need cash.",
+    "tippingCulture": "Restaurants usually add a 10% service charge; if not, leave 10-15%. Taxi drivers and tour guides expect tips.",
+    "economicPillars": "Tourism, spice and cocoa farming, university education, construction and a citizenship-by-investment programme."
+   }
+  },
+  "itin": {
+   "routeName": "Spice Isle Route: St. George’s, Grand Etang – North and Carriacou",
+   "routeSummary": "An 8-day route from St. George’s colourful harbour and Grand Anse beach to the underwater sculpture park; north through the Grand Etang rainforest, nutmeg stations and cocoa estates; and finally by ferry to tranquil Carriacou.",
+   "totalDays": 8,
+   "idealDurationText": "8-Day Itinerary",
+   "bestSeason": "January – May",
+   "transportMode": "Minibus + island tour with driver + Osprey Lines ferry",
+   "paceLevel": "Relaxed (Beach + Nature + Food)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stop 1: St. George’s & Grand Anse",
+     "recommendedDuration": "3 Days",
+     "durationBadge": "3 Days",
+     "highlights": [
+      "The Carenage harbour and Fort George",
+      "Grand Anse Beach",
+      "Molinere Bay Underwater Sculpture Park",
+      "Spice market (Market Square)"
+     ],
+     "activities": [
+      "Take a boat to Molinere and snorkel over the sculptures.",
+      "Take in the harbour view from Fort George.",
+      "Swim at Grand Anse at sunset."
+     ],
+     "foodAndDrinks": [
+      "Oil down",
+      "Nutmeg ice cream",
+      "Rum punch"
+     ],
+     "criticalTips": [
+      "St. George’s gets crowded on cruise days; go early.",
+      "Route 1 minibuses run Grand Anse – St. George’s; knock or call out to get off."
+     ],
+     "mapsQuery": "St. George's, Grenada"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stop 2: Grand Etang, Gouyave & the North",
+     "recommendedDuration": "2 Days",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "Grand Etang crater lake and Mona monkeys",
+      "Annandale and Seven Sisters waterfalls",
+      "Gouyave Nutmeg Station and Fish Friday",
+      "Belmont Estate (cocoa) and River Antoine Rum Distillery"
+     ],
+     "activities": [
+      "Hike through the rainforest to Seven Sisters falls with a guide.",
+      "Follow bean-to-bar chocolate making at Belmont Estate.",
+      "Join the Fish Friday street party in Gouyave on Friday evening."
+     ],
+     "foodAndDrinks": [
+      "Grilled fish and lambie (Fish Friday)",
+      "Cocoa tea",
+      "River Antoine rum (very strong)"
+     ],
+     "criticalTips": [
+      "Mountain roads are narrow and winding; prefer a tour with a driver.",
+      "Waterfall trails get very slippery after rain."
+     ],
+     "mapsQuery": "Gouyave, Grenada"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stop 3: Carriacou & Petite Martinique",
+     "recommendedDuration": "3 Days",
+     "durationBadge": "3 Days",
+     "highlights": [
+      "Paradise Beach (L’Esterre)",
+      "Sandy Island marine protected area",
+      "Traditional boatbuilding in Windward village",
+      "Hillsborough and the Carriacou Museum"
+     ],
+     "activities": [
+      "Take a water taxi to Sandy Island and snorkel.",
+      "Visit the boatbuilders in Windward.",
+      "Spend a quiet day on Paradise Beach."
+     ],
+     "foodAndDrinks": [
+      "Fresh lobster and lambie",
+      "Jack Iron rum (local, very strong)"
+     ],
+     "criticalTips": [
+      "Some facilities may still be under repair after Hurricane Beryl (2024); confirm accommodation in advance.",
+      "The ferry can be rough; take seasickness tablets and buy tickets early."
+     ],
+     "mapsQuery": "Hillsborough, Carriacou, Grenada"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Oil down (national dish of breadfruit, salted meat and coconut milk)",
+     "Callaloo soup",
+     "Lambie (conch) stew or souse"
+    ],
+    "drinks": [
+     "River Antoine, Clarke’s Court and Westerhall rums",
+     "Nutmeg-spiced rum punch",
+     "Cocoa tea and sorrel (Christmas drink)"
+    ],
+    "streetFoods": [
+     "Nutmeg ice cream",
+     "Roti and bakes & saltfish",
+     "Dark chocolate from the Grenada Chocolate Company"
+    ],
+    "diningAdvice": "Daily dishes are cheap at local eateries and rum shops; tourist restaurants add 15% VAT and a 10% service charge. Oil down is usually cooked in big pots on Sundays or special occasions—try it if you can."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Type G plug adapter",
+     "Reef-safe sunscreen and snorkel set",
+     "Non-slip sandals or hiking shoes",
+     "Insect repellent"
+    ],
+    "safetyAndEtiquette": [
+     "Never start a conversation without a greeting.",
+     "Don’t wear camouflage or walk around town in swimwear."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "British three-rectangular-pin sockets (Type G); bring a Type G adapter from Türkiye. Some hotels also have US-style (A/B) outlets."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Mains water (NAWASA) is treated and considered drinkable in most areas, but use bottled water after heavy rain and hurricanes. On Carriacou rainwater cisterns are used, so bottled water is advised.",
+    "vaccines": [
+     "Routine vaccines and hepatitis A",
+     "Yellow fever: certificate required if arriving from a risk country",
+     "Dengue: protect against mosquitoes"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "434"
+   },
+   "tipping": {
+    "custom": "Leave 10-15% if no service charge is added.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "If a 10% service charge is on the bill, extra is optional; guides and boat skippers are tipped separately."
+   },
+   "taxFree": {
+    "vatRefundPercent": "No VAT refund for tourists",
+    "minSpend": "Not applicable",
+    "customsNote": "Grenada charges 15% VAT but offers no refund to tourists; some airport and port shops sell duty-free. Exporting coral, shells and turtle products is prohibited."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$2.00 - $5.00",
+    "topCarriers": [
+     "Digicel",
+     "Flow"
+    ],
+    "airportSimTrapWarning": "Digicel/Flow airport desks have limited hours; set up an eSIM beforehand or buy a tourist pack at shops in Grand Anse. Roaming charges are very high."
+   },
+   "touristScams": [
+    {
+     "title": "Beach “Helper”",
+     "desc": "Someone sets up a lounger or shows a snorkel spot, then demands a high fee.",
+     "tip": "Ask the price before accepting any service, or politely decline."
+    },
+    {
+     "title": "EC$ / US$ Confusion",
+     "desc": "A price agreed in EC$ is later demanded in US dollars.",
+     "tip": "Always confirm the currency when agreeing a price."
+    },
+    {
+     "title": "Inflated Pier Tours",
+     "desc": "On cruise days, island tours are sold at the pier far above normal prices.",
+     "tip": "Choose guides registered with the Grenada Tourism Authority or book ahead."
+    }
+   ]
+  }
+ },
+ "de": {
+  "insights": {
+   "currency": "Ostkaribischer Dollar (XCD)",
+   "plugType": "Typ G (230V, 50Hz)",
+   "bestMonths": "Januar – Mai (trocken, warm und sonnig). Juni – November ist Regen- und Hurrikansaison (Höhepunkt August – Oktober); im August findet der Karneval Spicemas statt.",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Sicher",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Grenada gehört zu den sichereren Karibikinseln, doch Gelegenheitsdiebstahl am Grand Anse Beach und in St. George’s, gelegentliche Einbrüche in Ferienvillen und nächtliche Überfälle auf einsamen Straßen kommen vor. Hurrikane sind ein großes Naturrisiko (Beryl traf Carriacou 2024 schwer).",
+    "commonScams": [
+     "Strand-„Helfer“, die später Geld für Liegen, Schnorchelausrüstung oder Führung verlangen",
+     "Taxipreise in US-Dollar statt EC$ verlangen",
+     "Überteuerte Inseltouren am Kreuzfahrtterminal"
+    ],
+    "safeTravelTips": [
+     "Am Strand nichts unbeaufsichtigt lassen; in Ferienvillen Türen und Fenster verschließen.",
+     "Taxipreis vorher erfragen und Währung klären; es gibt offizielle Tarife.",
+     "In der Hurrikansaison Warnungen von NaDMA und Wetterdienst verfolgen und Reiseversicherung abschließen."
+    ],
+    "emergencyNumbers": {
+     "police": "911",
+     "ambulance": "434",
+     "general": "911"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Gutes 4G/LTE auf der Hauptinsel und Carriacou; Funklöcher im bergigen Regenwald im Inneren.",
+    "costPerGbUsd": "~2.00 - 5.00 $",
+    "esimAvailability": "Gut (Touristenpakete von Digicel und Flow; internationale eSIMs verfügbar)",
+    "bestCarriers": [
+     "Digicel",
+     "Flow"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Mittel (häufige Minibusse auf nummerierten Linien; abends und sonntags selten)",
+    "costLevel": "Mittel",
+    "singleTicketUsd": "1.00 - 3.00 $ (Minibus, je nach Strecke)",
+    "dailyPassUsd": "Keiner",
+    "popularRideApps": [
+     "Keine Apps – Taxis mit offiziellen Tarifen",
+     "Nummerierte Minibusse (z. B. Route 1 nach Grand Anse)",
+     "Osprey-Lines-Fähre (Carriacou)"
+    ],
+    "taxiAdvice": "Kein Uber/Bolt. Taxis haben kein Taxameter, aber feste Tarife der Grenada Tourism Authority; Preis vorab fragen. Minibusse haben „H“-Kennzeichen und Liniennummern, sind billig und lebhaft. Nach Carriacou mit der Osprey-Lines-Fähre (~2 Std.) oder Kleinflugzeug. Linksverkehr."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "60 - 90 $",
+    "dailyBudgetMidrangeUsd": "140 - 250 $",
+    "budgetMealUsd": "8 - 15 $",
+    "coffeeUsd": "2.50 - 4.50 $",
+    "waterBottleUsd": "1.00 - 2.00 $",
+    "hostelDormUsd": "Kaum Hostels; Gästehäuser 40 - 70 $",
+    "hotel3StarUsd": "120 - 250 $",
+    "flightCostIndex": "Hoch (mit Umstieg)",
+    "flightTip": "Keine Direktflüge aus der Türkei; zum Flughafen Maurice Bishop (GND) über London (British Airways, Virgin Atlantic), Miami und New York (American, JetBlue) oder über Barbados und Trinidad."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Ein „Good morning / Good afternoon“ an alle wird erwartet; ohne Gruß zu fragen ist unhöflich.",
+     "In Badekleidung oder mit nacktem Oberkörper durch Stadt, Läden oder Busse zu gehen, ist verpönt.",
+     "Zivilisten dürfen keine Tarnkleidung tragen.",
+     "Menschen, besonders auf Märkten, nicht ungefragt fotografieren."
+    ],
+    "festivals": [
+     "Karneval Spicemas (August; Jab Jab und J’ouvert)",
+     "Unabhängigkeitstag (7. Februar)",
+     "Carriacou-Regatta (Anfang August) und Maroon & String Band Festival (April)"
+    ],
+    "lifestyle": "Die „Gewürzinsel“ duftet nach Muskat, Zimt und Kakao; das Leben folgt einem ruhigen Inselrhythmus. Gouyaves Straßenfest „Fish Friday“, Plaudern in Rumläden („Liming“) und Calypso–Soca stehen im Mittelpunkt."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Grand Anse Beach",
+     "Unterwasser-Skulpturenpark Molinere Bay",
+     "Hafen Carenage und Fort George in St. George’s",
+     "Grand-Etang-Nationalpark und Kratersee",
+     "Belmont Estate und River-Antoine-Rumdestillerie",
+     "Carriacou: Paradise Beach und Sandy Island"
+    ],
+    "bestSeasons": "Januar – Mai",
+    "travelStyleTip": "Rund um Grand Anse wohnen und per Minibus nach St. George’s; Inselinneres und Norden bei einer Tagestour mit Fahrer erkunden, Carriacou per Fähre als 2–3-tägigen Abstecher."
+   },
+   "religion": {
+    "primaryReligions": "Protestanten ~49 % (Pfingstler, Anglikaner, Adventisten), Katholiken ~36 %, sonstige ~15 %",
+    "respectNorms": "Kirchen mit bedeckten Schultern betreten; während der Sonntagsgottesdienste leise sein und nicht fotografieren.",
+    "sacredSites": [
+     "Kathedrale der Unbefleckten Empfängnis (katholisch, St. George’s)",
+     "Anglikanische Kirche St. George’s",
+     "Leapers Hill / Caribs’ Leap (Sauteurs; Gedenkstätte der Kalinago)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Amtssprache ist Englisch; im Alltag spricht man Grenadisches Kreol-Englisch, einige Ältere können französisch basiertes Patois.",
+    "englishProficiency": "Sehr hoch; Englisch ist Muttersprache.",
+    "phrases": [
+     {
+      "phrase": "Good mornin'",
+      "meaning": "Guten Morgen (bei jeder Begegnung erwarteter Gruß)",
+      "translation": "Guten Morgen",
+      "pronunciation": "gud MOR-nin"
+     },
+     {
+      "phrase": "Wha' happenin'?",
+      "meaning": "Was geht? (Grenadisches Kreol)",
+      "translation": "Was geht?",
+      "pronunciation": "wah HAP-nin"
+     },
+     {
+      "phrase": "Doh worry",
+      "meaning": "Keine Sorge / Kein Problem",
+      "translation": "Keine Sorge",
+      "pronunciation": "doh WUR-ree"
+     },
+     {
+      "phrase": "We goin' an' lime",
+      "meaning": "Lass uns abhängen gehen („Liming“)",
+      "translation": "Lass uns abhängen",
+      "pronunciation": "wee GO-in an LIME"
+     },
+     {
+      "phrase": "How much fuh dis?",
+      "meaning": "Wie viel kostet das? (Grenadisches Kreol)",
+      "translation": "Wie viel?",
+      "pronunciation": "how much fuh DIS"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Zuerst lebten die Kalinago auf der Insel; 1650 siedelten Franzosen, und 1651 sprangen die letzten Kalinago bei Sauteurs lieber von einer Klippe, als sich zu ergeben. 1763 übernahm Großbritannien die Insel, endgültig ab 1783; Muskat- und Kakaoplantagen entstanden. Am 7. Februar 1974 wurde Grenada unabhängig; nach der Revolution 1979 und der US-Intervention 1983 etablierte sich eine demokratische Ordnung. Die Hurrikane Ivan (2004) und Beryl (2024) richteten schwere Schäden an.",
+    "milestones": [
+     "1651: Letzter Widerstand der Kalinago am Leapers Hill",
+     "1783: Die Insel wird endgültig britisch",
+     "1974: Unabhängigkeit (7. Februar)",
+     "2004: Hurrikan Ivan"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Oil Down (Nationalgericht aus Brotfrucht, Pökelfleisch und Kokosmilch)",
+     "Callaloo-Suppe",
+     "Lambie (Fechterschnecke) als Eintopf oder Souse"
+    ],
+    "traditionalDrinks": [
+     "Rum von River Antoine, Clarke’s Court und Westerhall",
+     "Rumpunsch mit Muskat",
+     "Kakaotee und Sorrel (Weihnachtsgetränk)"
+    ],
+    "streetFoodAndDesserts": [
+     "Muskateis",
+     "Roti und Bakes & Saltfish",
+     "Bitterschokolade der Grenada Chocolate Company"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Kirani James (Olympiasieger über 400 m, London 2012)",
+     "Anderson Peters (zweifacher Speerwurf-Weltmeister)",
+     "Mighty Sparrow (Calypso-Legende, geboren auf Grenada)"
+    ],
+    "strongSectors": [
+     "Tourismus und Segeltourismus",
+     "Muskat, Macis und Kakao (einer der führenden Muskatproduzenten)",
+     "Bildung (Medizinschule der St. George’s University)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Der XCD ist an den US-Dollar gekoppelt (2,70 EC$ = 1 $); Dollar werden weithin akzeptiert, Wechselgeld in EC$. Hotels, Restaurants und Supermärkte nehmen Karten; Minibusse, Märkte und kleine Läden nur Bargeld.",
+    "tippingCulture": "Restaurants schlagen meist 10 % Service auf; sonst 10-15 % geben. Taxifahrer und Guides erwarten Trinkgeld.",
+    "economicPillars": "Tourismus, Gewürz- und Kakaoanbau, Universitätsbildung, Bau und Staatsbürgerschaft durch Investition."
+   }
+  },
+  "itin": {
+   "routeName": "Gewürzinsel-Route: St. George’s, Grand Etang – Norden und Carriacou",
+   "routeSummary": "Eine 8-tägige Route vom bunten Hafen in St. George’s und dem Grand Anse Beach zum Unterwasser-Skulpturenpark; durch den Regenwald von Grand Etang, Muskatstationen und Kakaoplantagen nach Norden; zum Schluss per Fähre ins ruhige Carriacou.",
+   "totalDays": 8,
+   "idealDurationText": "8-tägige Route",
+   "bestSeason": "Januar – Mai",
+   "transportMode": "Minibus + Inseltour mit Fahrer + Osprey-Lines-Fähre",
+   "paceLevel": "Entspannt (Strand + Natur + Kulinarik)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stopp 1: St. George’s & Grand Anse",
+     "recommendedDuration": "3 Tage",
+     "durationBadge": "3 Tage",
+     "highlights": [
+      "Hafen Carenage und Fort George",
+      "Grand Anse Beach",
+      "Unterwasser-Skulpturenpark Molinere Bay",
+      "Gewürzmarkt (Market Square)"
+     ],
+     "activities": [
+      "Mit dem Boot nach Molinere und über den Skulpturen schnorcheln.",
+      "Von Fort George den Hafen überblicken.",
+      "Bei Sonnenuntergang in Grand Anse baden."
+     ],
+     "foodAndDrinks": [
+      "Oil Down",
+      "Muskateis",
+      "Rumpunsch"
+     ],
+     "criticalTips": [
+      "An Kreuzfahrttagen ist St. George’s sehr voll; früh hingehen.",
+      "Route-1-Minibusse fahren Grand Anse – St. George’s; zum Aussteigen klopfen oder rufen."
+     ],
+     "mapsQuery": "St. George's, Grenada"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stopp 2: Grand Etang, Gouyave & der Norden",
+     "recommendedDuration": "2 Tage",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "Kratersee Grand Etang und Mona-Affen",
+      "Wasserfälle Annandale und Seven Sisters",
+      "Muskatstation Gouyave und Fish Friday",
+      "Belmont Estate (Kakao) und River-Antoine-Rumdestillerie"
+     ],
+     "activities": [
+      "Mit Guide durch den Regenwald zu den Seven-Sisters-Fällen wandern.",
+      "In Belmont Estate die Schokoladenherstellung von der Bohne an verfolgen.",
+      "Am Freitagabend das Straßenfest Fish Friday in Gouyave besuchen."
+     ],
+     "foodAndDrinks": [
+      "Gegrillter Fisch und Lambie (Fish Friday)",
+      "Kakaotee",
+      "River-Antoine-Rum (sehr stark)"
+     ],
+     "criticalTips": [
+      "Bergstraßen sind eng und kurvig; lieber Tour mit Fahrer.",
+      "Nach Regen sind die Wasserfallpfade sehr rutschig."
+     ],
+     "mapsQuery": "Gouyave, Grenada"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stopp 3: Carriacou & Petite Martinique",
+     "recommendedDuration": "3 Tage",
+     "durationBadge": "3 Tage",
+     "highlights": [
+      "Paradise Beach (L’Esterre)",
+      "Meeresschutzgebiet Sandy Island",
+      "Traditioneller Bootsbau im Dorf Windward",
+      "Hillsborough und Carriacou-Museum"
+     ],
+     "activities": [
+      "Mit dem Wassertaxi nach Sandy Island und schnorcheln.",
+      "Die Bootsbauer in Windward besuchen.",
+      "Einen ruhigen Tag am Paradise Beach verbringen."
+     ],
+     "foodAndDrinks": [
+      "Frischer Hummer und Lambie",
+      "Jack-Iron-Rum (lokal, sehr stark)"
+     ],
+     "criticalTips": [
+      "Nach Hurrikan Beryl (2024) sind manche Einrichtungen evtl. noch in Reparatur; Unterkunft vorab bestätigen.",
+      "Die Fähre kann schaukeln; Reisetabletten nehmen und Tickets früh kaufen."
+     ],
+     "mapsQuery": "Hillsborough, Carriacou, Grenada"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Oil Down (Nationalgericht aus Brotfrucht, Pökelfleisch und Kokosmilch)",
+     "Callaloo-Suppe",
+     "Lambie (Fechterschnecke) als Eintopf oder Souse"
+    ],
+    "drinks": [
+     "Rum von River Antoine, Clarke’s Court und Westerhall",
+     "Rumpunsch mit Muskat",
+     "Kakaotee und Sorrel (Weihnachtsgetränk)"
+    ],
+    "streetFoods": [
+     "Muskateis",
+     "Roti und Bakes & Saltfish",
+     "Bitterschokolade der Grenada Chocolate Company"
+    ],
+    "diningAdvice": "In lokalen Lokalen und Rumläden isst man günstig; Touristenrestaurants schlagen 15 % MwSt. und 10 % Service auf. Oil Down wird meist sonntags oder zu Anlässen in großen Töpfen gekocht – unbedingt probieren."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Steckeradapter Typ G",
+     "Riffschonende Sonnencreme und Schnorchelset",
+     "Rutschfeste Sandalen oder Wanderschuhe",
+     "Mückenschutz"
+    ],
+    "safetyAndEtiquette": [
+     "Nie ohne Gruß ein Gespräch beginnen.",
+     "Keine Tarnkleidung tragen und nicht in Badekleidung durch die Stadt."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Britische Steckdosen mit drei Flachstiften (Typ G); Adapter Typ G mitnehmen. Manche Hotels haben auch US-Steckdosen (A/B)."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Leitungswasser (NAWASA) ist aufbereitet und gilt meist als trinkbar; nach Starkregen und Hurrikanen Flaschenwasser nutzen. Auf Carriacou werden Regenzisternen genutzt – Flaschenwasser empfohlen.",
+    "vaccines": [
+     "Standardimpfungen und Hepatitis A",
+     "Gelbfieber: Nachweis bei Einreise aus Risikoländern",
+     "Dengue: vor Mücken schützen"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "434"
+   },
+   "tipping": {
+    "custom": "10-15 %, wenn kein Service enthalten ist.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Steht 10 % Service auf der Rechnung, ist mehr freiwillig; Guides und Bootsführer erhalten separat Trinkgeld."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Keine Mehrwertsteuererstattung für Touristen",
+    "minSpend": "Entfällt",
+    "customsNote": "Grenada erhebt 15 % MwSt., erstattet Touristen aber nichts; einige Flughafen- und Hafenläden verkaufen zollfrei. Ausfuhr von Korallen, Muscheln und Schildkrötenprodukten ist verboten."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$2.00 - $5.00",
+    "topCarriers": [
+     "Digicel",
+     "Flow"
+    ],
+    "airportSimTrapWarning": "Digicel/Flow-Schalter am Flughafen haben begrenzte Öffnungszeiten; eSIM vorab einrichten oder Touristenpaket in Grand Anse kaufen. Roaming ist sehr teuer."
+   },
+   "touristScams": [
+    {
+     "title": "Strand-„Helfer“",
+     "desc": "Jemand stellt eine Liege auf oder zeigt einen Schnorchelplatz und verlangt dann viel Geld.",
+     "tip": "Vor jeder Leistung nach dem Preis fragen oder höflich ablehnen."
+    },
+    {
+     "title": "EC$-/US$-Verwechslung",
+     "desc": "Ein in EC$ vereinbarter Preis wird später in US-Dollar verlangt.",
+     "tip": "Bei Preisabsprachen die Währung bestätigen."
+    },
+    {
+     "title": "Überteuerte Touren am Pier",
+     "desc": "An Kreuzfahrttagen werden Inseltouren am Pier weit über Normalpreis verkauft.",
+     "tip": "Bei der Grenada Tourism Authority registrierte Guides wählen oder vorab buchen."
+    }
+   ]
+  }
+ },
+ "es": {
+  "insights": {
+   "currency": "Dólar del Caribe Oriental (XCD)",
+   "plugType": "Tipo G (230V, 50Hz)",
+   "bestMonths": "Enero – mayo (seco, cálido y soleado). De junio a noviembre es temporada de lluvias y huracanes (pico agosto – octubre); en agosto se celebra el carnaval Spicemas.",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Granada es de las islas más seguras del Caribe, aunque hay hurtos oportunistas en la playa de Grand Anse y en St. George’s, algún robo en villas de alquiler y atracos nocturnos en carreteras solitarias. Los huracanes son un riesgo natural importante (Beryl golpeó duramente Carriacou en 2024).",
+    "commonScams": [
+     "“Ayudantes” de playa que luego cobran por tumbonas, esnórquel o guía",
+     "Cobrar el taxi en dólares US en lugar de EC$",
+     "Tours de la isla sobrevalorados en la terminal de cruceros"
+    ],
+    "safeTravelTips": [
+     "No deje sus cosas sin vigilancia en la playa; cierre puertas y ventanas en las villas.",
+     "Pregunte la tarifa y la moneda antes de subir; existen tarifas oficiales.",
+     "En temporada de huracanes siga los avisos de NaDMA y contrate seguro."
+    ],
+    "emergencyNumbers": {
+     "police": "911",
+     "ambulance": "434",
+     "general": "911"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Buen 4G/LTE en la isla principal y Carriacou; zonas débiles en la selva montañosa del interior.",
+    "costPerGbUsd": "~2.00 - 5.00 $",
+    "esimAvailability": "Buena (paquetes de Digicel y Flow; hay eSIM internacionales)",
+    "bestCarriers": [
+     "Digicel",
+     "Flow"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Regular (minibuses frecuentes en rutas numeradas; escasos de noche y domingos)",
+    "costLevel": "Moderado",
+    "singleTicketUsd": "1.00 - 3.00 $ (minibús, según distancia)",
+    "dailyPassUsd": "No existe",
+    "popularRideApps": [
+     "Sin apps – taxis con tarifas oficiales",
+     "Minibuses numerados (p. ej. ruta 1 a Grand Anse)",
+     "Ferry Osprey Lines (Carriacou)"
+    ],
+    "taxiAdvice": "No hay Uber/Bolt. Los taxis no tienen taxímetro pero sí tarifas fijas publicadas por la Grenada Tourism Authority; pregunte antes. Los minibuses llevan matrícula “H” y número de ruta, son baratos y animados. A Carriacou se llega en el ferry Osprey Lines (~2 h) o avioneta. Se conduce por la izquierda."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "60 - 90 $",
+    "dailyBudgetMidrangeUsd": "140 - 250 $",
+    "budgetMealUsd": "8 - 15 $",
+    "coffeeUsd": "2.50 - 4.50 $",
+    "waterBottleUsd": "1.00 - 2.00 $",
+    "hostelDormUsd": "Casi no hay hostales; casas de huéspedes 40 - 70 $",
+    "hotel3StarUsd": "120 - 250 $",
+    "flightCostIndex": "Alto (con escalas)",
+    "flightTip": "No hay vuelos directos desde Turquía; conecte al aeropuerto Maurice Bishop (GND) vía Londres (British Airways, Virgin Atlantic), Miami y Nueva York (American, JetBlue) o vía Barbados y Trinidad."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Se espera saludar a todos con “Good morning / Good afternoon”; preguntar sin saludar es grosero.",
+     "Pasear por la ciudad, tiendas o buses en bañador o sin camiseta está mal visto.",
+     "Los civiles no pueden llevar ropa de camuflaje.",
+     "No fotografíe a la gente, sobre todo en mercados, sin pedir permiso."
+    ],
+    "festivals": [
+     "Carnaval Spicemas (agosto; Jab Jab y J’ouvert)",
+     "Día de la Independencia (7 de febrero)",
+     "Regata de Carriacou (principios de agosto) y Festival Maroon & String Band (abril)"
+    ],
+    "lifestyle": "La “Isla de las Especias” huele a nuez moscada, canela y cacao, y la vida sigue un ritmo isleño tranquilo. La fiesta “Fish Friday” de Gouyave, las charlas en los rum shops (liming) y el calipso–soca son el centro de la vida social."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Playa de Grand Anse",
+     "Parque de Esculturas Submarinas de Molinere",
+     "Puerto Carenage y Fort George en St. George’s",
+     "Parque Nacional Grand Etang y lago del cráter",
+     "Belmont Estate y destilería de ron River Antoine",
+     "Carriacou: Paradise Beach y Sandy Island"
+    ],
+    "bestSeasons": "Enero – mayo",
+    "travelStyleTip": "Alójese en Grand Anse y vaya en minibús a St. George’s; vea el interior y el norte en una excursión con conductor y añada Carriacou en ferry como escapada de 2–3 días."
+   },
+   "religion": {
+    "primaryReligions": "Protestantes ~49 % (pentecostales, anglicanos, adventistas), católicos ~36 %, otros ~15 %",
+    "respectNorms": "Entre en las iglesias con hombros cubiertos; guarde silencio y no fotografíe en las misas dominicales.",
+    "sacredSites": [
+     "Catedral de la Inmaculada Concepción (católica, St. George’s)",
+     "Iglesia anglicana de St. George",
+     "Leapers Hill / Caribs’ Leap (Sauteurs; memorial kalinago)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "El inglés es oficial; a diario se habla inglés criollo granadino y algunos mayores conocen el patois de base francesa.",
+    "englishProficiency": "Muy alto; el inglés es lengua materna.",
+    "phrases": [
+     {
+      "phrase": "Good mornin'",
+      "meaning": "Buenos días (saludo obligado en cada encuentro)",
+      "translation": "Buenos días",
+      "pronunciation": "gud MOR-nin"
+     },
+     {
+      "phrase": "Wha' happenin'?",
+      "meaning": "¿Qué pasa? (criollo granadino)",
+      "translation": "¿Qué pasa?",
+      "pronunciation": "wah HAP-nin"
+     },
+     {
+      "phrase": "Doh worry",
+      "meaning": "No te preocupes / Sin problema",
+      "translation": "Tranquilo",
+      "pronunciation": "doh WUR-ree"
+     },
+     {
+      "phrase": "We goin' an' lime",
+      "meaning": "Vamos a pasar el rato (“liming”)",
+      "translation": "Vamos de lime",
+      "pronunciation": "wee GO-in an LIME"
+     },
+     {
+      "phrase": "How much fuh dis?",
+      "meaning": "¿Cuánto cuesta esto? (criollo granadino)",
+      "translation": "¿Cuánto?",
+      "pronunciation": "how much fuh DIS"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "La isla fue primero hogar de los kalinago; los franceses se asentaron en 1650 y en 1651 los últimos kalinago de Sauteurs se arrojaron por un acantilado antes que rendirse. Gran Bretaña la tomó en 1763 y la retuvo definitivamente desde 1783, con plantaciones de nuez moscada y cacao. Granada se independizó el 7 de febrero de 1974; tras la revolución de 1979 y la intervención de EE. UU. en 1983 se consolidó el orden democrático. Los huracanes Iván (2004) y Beryl (2024) causaron grandes daños.",
+    "milestones": [
+     "1651: Última resistencia kalinago en Leapers Hill",
+     "1783: La isla pasa definitivamente a Gran Bretaña",
+     "1974: Independencia (7 de febrero)",
+     "2004: Huracán Iván"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Oil down (plato nacional de fruta del pan, carne salada y leche de coco)",
+     "Sopa callaloo",
+     "Lambie (caracol) guisado o en souse"
+    ],
+    "traditionalDrinks": [
+     "Rones River Antoine, Clarke’s Court y Westerhall",
+     "Ponche de ron con nuez moscada",
+     "Té de cacao y sorrel (bebida navideña)"
+    ],
+    "streetFoodAndDesserts": [
+     "Helado de nuez moscada",
+     "Roti y bakes & saltfish",
+     "Chocolate negro de la Grenada Chocolate Company"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Kirani James (campeón olímpico de 400 m en Londres 2012)",
+     "Anderson Peters (dos veces campeón mundial de jabalina)",
+     "Mighty Sparrow (leyenda del calipso, nacido en Granada)"
+    ],
+    "strongSectors": [
+     "Turismo y náutica",
+     "Nuez moscada, macis y cacao (entre los mayores productores de nuez moscada)",
+     "Educación (facultad de medicina de St. George’s University)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "El XCD está fijado al dólar (2,70 EC$ = 1 $) y el dólar se acepta mucho, con cambio en EC$. Hoteles, restaurantes y supermercados aceptan tarjeta; minibuses, mercados y tiendas pequeñas, solo efectivo.",
+    "tippingCulture": "Los restaurantes suelen añadir 10 % de servicio; si no, deje 10-15 %. Taxistas y guías esperan propina.",
+    "economicPillars": "Turismo, especias y cacao, educación universitaria, construcción y ciudadanía por inversión."
+   }
+  },
+  "itin": {
+   "routeName": "Ruta de la Isla de las Especias: St. George’s, Grand Etang – norte y Carriacou",
+   "routeSummary": "Ruta de 8 días desde el colorido puerto de St. George’s y la playa de Grand Anse hasta el parque de esculturas submarinas; hacia el norte por la selva de Grand Etang, estaciones de nuez moscada y fincas de cacao; y por último en ferry a la tranquila Carriacou.",
+   "totalDays": 8,
+   "idealDurationText": "Ruta de 8 días",
+   "bestSeason": "Enero – mayo",
+   "transportMode": "Minibús + tour de la isla con conductor + ferry Osprey Lines",
+   "paceLevel": "Relajado (playa + naturaleza + gastronomía)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: St. George’s y Grand Anse",
+     "recommendedDuration": "3 días",
+     "durationBadge": "3 días",
+     "highlights": [
+      "Puerto Carenage y Fort George",
+      "Playa de Grand Anse",
+      "Parque de Esculturas Submarinas de Molinere",
+      "Mercado de especias (Market Square)"
+     ],
+     "activities": [
+      "Vaya en barco a Molinere y bucee sobre las esculturas.",
+      "Contemple el puerto desde Fort George.",
+      "Nade en Grand Anse al atardecer."
+     ],
+     "foodAndDrinks": [
+      "Oil down",
+      "Helado de nuez moscada",
+      "Ponche de ron"
+     ],
+     "criticalTips": [
+      "Los días de crucero St. George’s se llena; vaya temprano.",
+      "La ruta 1 une Grand Anse y St. George’s; golpee o avise para bajar."
+     ],
+     "mapsQuery": "St. George's, Grenada"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Grand Etang, Gouyave y el norte",
+     "recommendedDuration": "2 días",
+     "durationBadge": "2 días",
+     "highlights": [
+      "Lago del cráter Grand Etang y monos mona",
+      "Cascadas Annandale y Seven Sisters",
+      "Estación de nuez moscada de Gouyave y Fish Friday",
+      "Belmont Estate (cacao) y destilería River Antoine"
+     ],
+     "activities": [
+      "Camine con guía por la selva hasta las cascadas Seven Sisters.",
+      "Vea en Belmont Estate el proceso del cacao al chocolate.",
+      "Vaya el viernes por la noche a la fiesta Fish Friday de Gouyave."
+     ],
+     "foodAndDrinks": [
+      "Pescado a la parrilla y lambie (Fish Friday)",
+      "Té de cacao",
+      "Ron River Antoine (muy fuerte)"
+     ],
+     "criticalTips": [
+      "Las carreteras de montaña son estrechas: mejor un tour con conductor.",
+      "Tras la lluvia los senderos resbalan mucho."
+     ],
+     "mapsQuery": "Gouyave, Grenada"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Carriacou y Petite Martinique",
+     "recommendedDuration": "3 días",
+     "durationBadge": "3 días",
+     "highlights": [
+      "Paradise Beach (L’Esterre)",
+      "Área marina protegida de Sandy Island",
+      "Construcción tradicional de barcos en Windward",
+      "Hillsborough y el Museo de Carriacou"
+     ],
+     "activities": [
+      "Vaya en taxi acuático a Sandy Island y haga esnórquel.",
+      "Visite a los carpinteros de ribera en Windward.",
+      "Pase un día tranquilo en Paradise Beach."
+     ],
+     "foodAndDrinks": [
+      "Langosta fresca y lambie",
+      "Ron Jack Iron (local, muy fuerte)"
+     ],
+     "criticalTips": [
+      "Tras el huracán Beryl (2024) algunas instalaciones pueden seguir en obras; confirme el alojamiento.",
+      "El ferry puede moverse mucho; tome pastillas contra el mareo y compre antes."
+     ],
+     "mapsQuery": "Hillsborough, Carriacou, Grenada"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Oil down (plato nacional de fruta del pan, carne salada y leche de coco)",
+     "Sopa callaloo",
+     "Lambie (caracol) guisado o en souse"
+    ],
+    "drinks": [
+     "Rones River Antoine, Clarke’s Court y Westerhall",
+     "Ponche de ron con nuez moscada",
+     "Té de cacao y sorrel (bebida navideña)"
+    ],
+    "streetFoods": [
+     "Helado de nuez moscada",
+     "Roti y bakes & saltfish",
+     "Chocolate negro de la Grenada Chocolate Company"
+    ],
+    "diningAdvice": "En locales y rum shops se come barato; los restaurantes turísticos suman 15 % de IVA y 10 % de servicio. El oil down suele cocinarse en grandes ollas los domingos o en fiestas: pruébelo si puede."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptador tipo G",
+     "Protector apto para arrecifes y esnórquel",
+     "Sandalias antideslizantes o calzado de montaña",
+     "Repelente de insectos"
+    ],
+    "safetyAndEtiquette": [
+     "No empiece a hablar sin saludar.",
+     "No lleve camuflaje ni pasee en bañador por la ciudad."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Enchufes británicos de tres patas planas (tipo G); lleve adaptador G. Algunos hoteles tienen también tomas estadounidenses (A/B)."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "El agua de red (NAWASA) se trata y suele considerarse potable, pero tras lluvias fuertes y huracanes use embotellada. En Carriacou se usan cisternas de lluvia: mejor agua embotellada.",
+    "vaccines": [
+     "Vacunas de rutina y hepatitis A",
+     "Fiebre amarilla: certificado si llega de un país de riesgo",
+     "Dengue: protéjase de los mosquitos"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "434"
+   },
+   "tipping": {
+    "custom": "Deje 10-15 % si no incluyen servicio.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Si la cuenta incluye 10 % de servicio, lo demás es opcional; guías y patrones reciben propina aparte."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Sin devolución de IVA para turistas",
+    "minSpend": "No aplica",
+    "customsNote": "Granada cobra un IVA del 15 % sin devolución a turistas; algunas tiendas del aeropuerto y el puerto venden libres de impuestos. Está prohibido sacar coral, conchas y productos de tortuga."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$2.00 - $5.00",
+    "topCarriers": [
+     "Digicel",
+     "Flow"
+    ],
+    "airportSimTrapWarning": "Los puestos de Digicel/Flow en el aeropuerto abren pocas horas; active una eSIM antes o compre un paquete en Grand Anse. El roaming es muy caro."
+   },
+   "touristScams": [
+    {
+     "title": "“Ayudante” de playa",
+     "desc": "Alguien coloca una tumbona o muestra un lugar para bucear y luego pide mucho dinero.",
+     "tip": "Pregunte el precio antes de aceptar o rechace con cortesía."
+    },
+    {
+     "title": "Confusión EC$ / US$",
+     "desc": "Un precio pactado en EC$ luego se cobra en dólares US.",
+     "tip": "Confirme siempre la moneda al pactar el precio."
+    },
+    {
+     "title": "Tours inflados en el muelle",
+     "desc": "Los días de crucero los tours se venden en el muelle muy por encima del precio normal.",
+     "tip": "Elija guías registrados en la Grenada Tourism Authority o reserve antes."
+    }
+   ]
+  }
+ },
+ "ru": {
+  "insights": {
+   "currency": "Восточнокарибский доллар (XCD)",
+   "plugType": "Тип G (230V, 50Hz)",
+   "bestMonths": "Январь – май (сухо, тепло и солнечно). Июнь – ноябрь — сезон дождей и ураганов (пик в августе – октябре); в августе проходит карнавал Spicemas.",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Безопасно",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Гренада — один из самых безопасных островов Карибского бассейна, но случаются мелкие кражи на пляже Гранд-Анс и в Сент-Джорджесе, иногда кражи из арендованных вилл и ночные ограбления на пустынных дорогах. Ураганы — серьёзный природный риск (в 2024 году «Берил» сильно ударил по Карриаку).",
+    "commonScams": [
+     "Пляжные «помощники», которые потом требуют деньги за шезлонги, маски или «экскурсию»",
+     "Требовать плату за такси в долларах США вместо EC$",
+     "Завышенные по цене экскурсии у круизного терминала"
+    ],
+    "safeTravelTips": [
+     "Не оставляйте вещи без присмотра на пляже; запирайте двери и окна на вилле.",
+     "Уточняйте цену такси и валюту до посадки; есть официальные тарифы.",
+     "В сезон ураганов следите за предупреждениями NaDMA и оформите страховку."
+    ],
+    "emergencyNumbers": {
+     "police": "911",
+     "ambulance": "434",
+     "general": "911"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Хороший 4G/LTE на главном острове и Карриаку; слабые зоны в горном тропическом лесу.",
+    "costPerGbUsd": "~2.00 - 5.00 $",
+    "esimAvailability": "Хорошо (туристические пакеты Digicel и Flow; есть международные eSIM)",
+    "bestCarriers": [
+     "Digicel",
+     "Flow"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Средне (частые маршрутки с номерами; вечером и в воскресенье редко)",
+    "costLevel": "Средний",
+    "singleTicketUsd": "1.00 - 3.00 $ (маршрутка, по расстоянию)",
+    "dailyPassUsd": "Нет",
+    "popularRideApps": [
+     "Приложений нет – такси по официальным тарифам",
+     "Маршрутки с номерами (напр., маршрут 1 до Гранд-Анс)",
+     "Паром Osprey Lines (Карриаку)"
+    ],
+    "taxiAdvice": "Uber/Bolt нет. Счётчиков нет, но есть фиксированные тарифы Управления по туризму Гренады — спрашивайте до посадки. Маршрутки с номерами «H» дешёвые и шумные. На Карриаку — паромом Osprey Lines (~2 ч) или маленьким самолётом. Левостороннее движение."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "60 - 90 $",
+    "dailyBudgetMidrangeUsd": "140 - 250 $",
+    "budgetMealUsd": "8 - 15 $",
+    "coffeeUsd": "2.50 - 4.50 $",
+    "waterBottleUsd": "1.00 - 2.00 $",
+    "hostelDormUsd": "Хостелов почти нет; гостевые дома 40 - 70 $",
+    "hotel3StarUsd": "120 - 250 $",
+    "flightCostIndex": "Высокий (с пересадками)",
+    "flightTip": "Прямых рейсов из Турции нет; в аэропорт Мориса Бишопа (GND) летают через Лондон (British Airways, Virgin Atlantic), Майами и Нью-Йорк (American, JetBlue) или через Барбадос и Тринидад."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Принято здороваться со всеми «Good morning / Good afternoon»; вопрос без приветствия — грубость.",
+     "Ходить по городу, магазинам и автобусам в купальнике или без рубашки не принято.",
+     "Гражданским запрещено носить камуфляж.",
+     "Не фотографируйте людей, особенно на рынках, без спроса."
+    ],
+    "festivals": [
+     "Карнавал Spicemas (август; Jab Jab и J’ouvert)",
+     "День независимости (7 февраля)",
+     "Регата Карриаку (начало августа) и фестиваль Maroon & String Band (апрель)"
+    ],
+    "lifestyle": "«Остров пряностей» пахнет мускатом, корицей и какао, жизнь течёт в спокойном островном ритме. Уличный праздник «Fish Friday» в Гуяве, беседы в ромовых лавках («лайминг») и музыка калипсо–сока — центр общественной жизни."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Пляж Гранд-Анс",
+     "Подводный парк скульптур в бухте Молинер",
+     "Гавань Каренаж и форт Джордж в Сент-Джорджесе",
+     "Нацпарк Гранд-Этан и кратерное озеро",
+     "Поместье Бельмонт и ромовая винокурня Ривер-Антуан",
+     "Карриаку: Парадайз-Бич и остров Сэнди"
+    ],
+    "bestSeasons": "Январь – май",
+    "travelStyleTip": "Живите у Гранд-Анс и ездите на маршрутках в Сент-Джорджес; внутренние районы и север осмотрите за день с водителем, а Карриаку добавьте паромом на 2–3 дня."
+   },
+   "religion": {
+    "primaryReligions": "Протестанты ~49 % (пятидесятники, англикане, адвентисты), католики ~36 %, прочие ~15 %",
+    "respectNorms": "В церковь — с закрытыми плечами; во время воскресных служб соблюдайте тишину и не фотографируйте.",
+    "sacredSites": [
+     "Собор Непорочного Зачатия (католический, Сент-Джорджес)",
+     "Англиканская церковь Святого Георгия",
+     "Холм Прыгунов / Caribs’ Leap (Сотёр; мемориал калинаго)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Официальный язык — английский; в быту говорят на гренадском креольском английском, некоторые пожилые знают франкоязычный патуа.",
+    "englishProficiency": "Очень высокий; английский — родной язык.",
+    "phrases": [
+     {
+      "phrase": "Good mornin'",
+      "meaning": "Доброе утро (приветствие, обязательное при каждой встрече)",
+      "translation": "Доброе утро",
+      "pronunciation": "gud MOR-nin"
+     },
+     {
+      "phrase": "Wha' happenin'?",
+      "meaning": "Как дела? (гренадский креольский)",
+      "translation": "Как оно?",
+      "pronunciation": "wah HAP-nin"
+     },
+     {
+      "phrase": "Doh worry",
+      "meaning": "Не волнуйся / Без проблем",
+      "translation": "Не волнуйся",
+      "pronunciation": "doh WUR-ree"
+     },
+     {
+      "phrase": "We goin' an' lime",
+      "meaning": "Пойдём потусуемся («лайминг»)",
+      "translation": "Потусуемся",
+      "pronunciation": "wee GO-in an LIME"
+     },
+     {
+      "phrase": "How much fuh dis?",
+      "meaning": "Сколько это стоит? (гренадский креольский)",
+      "translation": "Сколько?",
+      "pronunciation": "how much fuh DIS"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Сначала остров населяли калинаго; в 1650 году здесь обосновались французы, а в 1651-м последние калинаго в Сотёре бросились со скалы, чтобы не сдаваться. В 1763 году остров взяла Британия, окончательно — с 1783 года; выросли плантации муската и какао. Независимость — 7 февраля 1974 года; после революции 1979 года и вмешательства США в 1983 году установился демократический порядок. Ураганы «Иван» (2004) и «Берил» (2024) нанесли огромный ущерб.",
+    "milestones": [
+     "1651: последнее сопротивление калинаго на Холме Прыгунов",
+     "1783: остров окончательно становится британским",
+     "1974: независимость (7 февраля)",
+     "2004: ураган «Иван»"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Ойл-даун (национальное блюдо из хлебного дерева, солонины и кокосового молока)",
+     "Суп каллалу",
+     "Ламби (стромбус) тушёный или в маринаде"
+    ],
+    "traditionalDrinks": [
+     "Ромы River Antoine, Clarke’s Court и Westerhall",
+     "Ромовый пунш с мускатом",
+     "Какао-чай и соррел (рождественский напиток)"
+    ],
+    "streetFoodAndDesserts": [
+     "Мороженое с мускатом",
+     "Роти и бейкс с треской",
+     "Тёмный шоколад Grenada Chocolate Company"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Кирани Джеймс (олимпийский чемпион на 400 м, Лондон-2012)",
+     "Андерсон Питерс (двукратный чемпион мира по метанию копья)",
+     "Майти Спэрроу (легенда калипсо, родом с Гренады)"
+    ],
+    "strongSectors": [
+     "Туризм и яхтинг",
+     "Мускат, мацис и какао (один из ведущих производителей муската)",
+     "Образование (медицинская школа St. George’s University)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "XCD привязан к доллару США (2,70 EC$ = 1 $); доллары принимают широко, сдачу дают в EC$. В отелях, ресторанах и супермаркетах — карты; в маршрутках, на рынках и в лавках — наличные.",
+    "tippingCulture": "Рестораны обычно добавляют 10 % за обслуживание; если нет — оставьте 10–15 %. Таксисты и гиды ждут чаевых.",
+    "economicPillars": "Туризм, пряности и какао, университетское образование, строительство и программа гражданства за инвестиции."
+   }
+  },
+  "itin": {
+   "routeName": "Маршрут по Острову пряностей: Сент-Джорджес, Гранд-Этан – север и Карриаку",
+   "routeSummary": "8-дневный маршрут: красочная гавань Сент-Джорджеса и пляж Гранд-Анс, подводный парк скульптур; на север через тропический лес Гранд-Этан, мускатные станции и какао-плантации; и, наконец, паромом на тихий Карриаку.",
+   "totalDays": 8,
+   "idealDurationText": "Маршрут на 8 дней",
+   "bestSeason": "Январь – май",
+   "transportMode": "Маршрутки + тур по острову с водителем + паром Osprey Lines",
+   "paceLevel": "Расслабленный (пляж + природа + гастрономия)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Остановка 1: Сент-Джорджес и Гранд-Анс",
+     "recommendedDuration": "3 дня",
+     "durationBadge": "3 дня",
+     "highlights": [
+      "Гавань Каренаж и форт Джордж",
+      "Пляж Гранд-Анс",
+      "Подводный парк скульптур Молинер",
+      "Рынок пряностей (Маркет-сквер)"
+     ],
+     "activities": [
+      "Отправьтесь на лодке в Молинер и поплавайте над скульптурами.",
+      "Полюбуйтесь гаванью с форта Джордж.",
+      "Искупайтесь в Гранд-Анс на закате."
+     ],
+     "foodAndDrinks": [
+      "Ойл-даун",
+      "Мороженое с мускатом",
+      "Ромовый пунш"
+     ],
+     "criticalTips": [
+      "В дни круизов Сент-Джорджес переполнен — приходите рано.",
+      "Маршрутка №1 ходит Гранд-Анс – Сент-Джорджес; чтобы выйти, постучите или скажите водителю."
+     ],
+     "mapsQuery": "St. George's, Grenada"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Остановка 2: Гранд-Этан, Гуяв и север",
+     "recommendedDuration": "2 дня",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Кратерное озеро Гранд-Этан и мартышки мона",
+      "Водопады Аннандейл и Семь Сестёр",
+      "Мускатная станция Гуява и Fish Friday",
+      "Поместье Бельмонт (какао) и винокурня Ривер-Антуан"
+     ],
+     "activities": [
+      "С гидом пройдите по тропическому лесу к водопадам Семь Сестёр.",
+      "Посмотрите в Бельмонте путь от какао-боба до шоколада.",
+      "В пятницу вечером загляните на уличный праздник Fish Friday в Гуяве."
+     ],
+     "foodAndDrinks": [
+      "Рыба на гриле и ламби (Fish Friday)",
+      "Какао-чай",
+      "Ром River Antoine (очень крепкий)"
+     ],
+     "criticalTips": [
+      "Горные дороги узкие и извилистые — лучше тур с водителем.",
+      "После дождя тропы к водопадам очень скользкие."
+     ],
+     "mapsQuery": "Gouyave, Grenada"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Остановка 3: Карриаку и Пти-Мартиник",
+     "recommendedDuration": "3 дня",
+     "durationBadge": "3 дня",
+     "highlights": [
+      "Парадайз-Бич (Л’Эстер)",
+      "Морской заповедник острова Сэнди",
+      "Традиционное судостроение в деревне Уиндуорд",
+      "Хиллсборо и музей Карриаку"
+     ],
+     "activities": [
+      "Доберитесь водным такси до острова Сэнди и поныряйте с маской.",
+      "Загляните к корабелам в Уиндуорде.",
+      "Проведите спокойный день на Парадайз-Бич."
+     ],
+     "foodAndDrinks": [
+      "Свежий лобстер и ламби",
+      "Ром Jack Iron (местный, очень крепкий)"
+     ],
+     "criticalTips": [
+      "После урагана «Берил» (2024) часть объектов может ремонтироваться — подтверждайте жильё заранее.",
+      "На пароме может укачать — примите таблетки и купите билет заранее."
+     ],
+     "mapsQuery": "Hillsborough, Carriacou, Grenada"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Ойл-даун (национальное блюдо из хлебного дерева, солонины и кокосового молока)",
+     "Суп каллалу",
+     "Ламби (стромбус) тушёный или в маринаде"
+    ],
+    "drinks": [
+     "Ромы River Antoine, Clarke’s Court и Westerhall",
+     "Ромовый пунш с мускатом",
+     "Какао-чай и соррел (рождественский напиток)"
+    ],
+    "streetFoods": [
+     "Мороженое с мускатом",
+     "Роти и бейкс с треской",
+     "Тёмный шоколад Grenada Chocolate Company"
+    ],
+    "diningAdvice": "В местных закусочных и ромовых лавках еда недорогая; туристические рестораны добавляют НДС 15 % и сервис 10 %. Ойл-даун обычно готовят в больших котлах по воскресеньям или по праздникам — обязательно попробуйте."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Адаптер типа G",
+     "Безопасный для рифов крем и маска с трубкой",
+     "Нескользящие сандалии или треккинговая обувь",
+     "Репеллент"
+    ],
+    "safetyAndEtiquette": [
+     "Не начинайте разговор без приветствия.",
+     "Не носите камуфляж и не ходите по городу в купальнике."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Британские розетки с тремя плоскими штырями (тип G); возьмите адаптер G. В некоторых отелях есть и американские (A/B)."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Водопроводная вода (NAWASA) очищается и в большинстве районов считается питьевой, но после ливней и ураганов пейте бутилированную. На Карриаку используют дождевые цистерны — лучше бутилированная.",
+    "vaccines": [
+     "Плановые прививки и гепатит A",
+     "Жёлтая лихорадка: сертификат при въезде из страны риска",
+     "Денге: защищайтесь от комаров"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "434"
+   },
+   "tipping": {
+    "custom": "Оставьте 10–15 %, если сервис не включён.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Если в счёте есть сервис 10 %, доплата по желанию; гидам и капитанам — отдельно."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Возврат НДС туристам не предусмотрен",
+    "minSpend": "Не применяется",
+    "customsNote": "В Гренаде НДС 15 %, но туристам его не возвращают; некоторые магазины в аэропорту и порту торгуют беспошлинно. Вывоз кораллов, раковин и изделий из черепах запрещён."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$2.00 - $5.00",
+    "topCarriers": [
+     "Digicel",
+     "Flow"
+    ],
+    "airportSimTrapWarning": "Стойки Digicel/Flow в аэропорту работают ограниченно; настройте eSIM заранее или купите пакет в магазинах Гранд-Анс. Роуминг очень дорогой."
+   },
+   "touristScams": [
+    {
+     "title": "Пляжный «помощник»",
+     "desc": "Вам ставят шезлонг или показывают место для снорклинга, а потом требуют крупную сумму.",
+     "tip": "Спросите цену до того, как соглашаться, или вежливо откажитесь."
+    },
+    {
+     "title": "Путаница EC$ / US$",
+     "desc": "Цену, оговорённую в EC$, потом требуют в долларах США.",
+     "tip": "Всегда уточняйте валюту при договорённости."
+    },
+    {
+     "title": "Завышенные туры у причала",
+     "desc": "В дни круизов у причала туры продают намного дороже обычного.",
+     "tip": "Выбирайте гидов, зарегистрированных в Управлении по туризму Гренады, или бронируйте заранее."
+    }
+   ]
+  }
+ }
+}

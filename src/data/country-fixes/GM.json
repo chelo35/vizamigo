@@ -1,0 +1,1917 @@
+{
+ "tr": {
+  "insights": {
+   "currency": "Gambiya Dalasisi (GMD)",
+   "plugType": "Tip G (230V, 50Hz)",
+   "bestMonths": "Kasım – Mayıs (kurak mevsim; Kasım – Şubat en serin ve en rahat dönem)",
+   "safety": {
+    "safetyScore": 55,
+    "safetyLevel": "Orta Seviye",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60",
+    "crimeRateSummary": "Şiddet suçu nadirdir; asıl sorun turistik kıyıda “bumster” denen ısrarcı plaj dolandırıcıları, küçük hırsızlıklar ve geceleri ıssız plajlardır.",
+    "commonScams": [
+     "Plajda “arkadaş” olup rehberlik, gezi veya yardım için para isteyen bumster’lar",
+     "Turist taksilerinde ve pazarlarda yabancıya şişirilmiş fiyat",
+     "Sahte okul, köy veya cenaze bağışı hikâyeleri"
+    ],
+    "safeTravelTips": [
+     "Plajda ısrarcı kişilere kibar ama net “hayır” deyin; otel veya lisanslı rehberlerle gezin.",
+     "Geceleri plajda ve ışıksız yollarda yürümeyin.",
+     "Sıtmaya karşı koruyucu ilaç ve sinek kovucu için doktorunuza danışın."
+    ],
+    "emergencyNumbers": {
+     "police": "117",
+     "ambulance": "116",
+     "general": "117"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Kıyı şeridinde ve Banjul çevresinde 4G iyi; iç kesimlerde 3G/2G’ye düşer",
+    "costPerGbUsd": "~1.00 - 3.00 $",
+    "esimAvailability": "Sınırlı",
+    "bestCarriers": [
+     "Africell",
+     "QCell",
+     "Gamcel"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Sınırlı",
+    "costLevel": "Ekonomik",
+    "singleTicketUsd": "0.20 - 0.60 $",
+    "dailyPassUsd": "15 - 30 $",
+    "popularRideApps": [
+     "Yaygın araç çağırma uygulaması yok",
+     "Yeşil turist taksileri",
+     "Sarı-yeşil şehir taksileri"
+    ],
+    "taxiAdvice": "Uber veya Bolt yoktur. Yeşil turist taksileri sabit tarifelidir ama pahalıdır; sarı-yeşil şehir taksileri ve “gele-gele” minibüsleri çok ucuzdur. Fiyatı binmeden konuşun."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "30 - 45 $",
+    "dailyBudgetMidrangeUsd": "70 - 120 $",
+    "budgetMealUsd": "3 - 8 $",
+    "coffeeUsd": "1.50 - 3 $",
+    "waterBottleUsd": "0.40 - 0.80 $",
+    "hostelDormUsd": "12 - 25 $",
+    "hotel3StarUsd": "45 - 90 $",
+    "flightCostIndex": "Orta-Yüksek",
+    "flightTip": "Türkiye’den direkt uçuş yoktur; Dakar, Brüksel veya Kasım–Nisan charter seferleri üzerinden bağlantı kurulur."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Uzun selamlaşmalar gelenektir; aile ve sağlık sorulur, acele etmeyin.",
+     "Yemek, para ve selam için sağ el kullanılır.",
+     "Köylerde ve dinî mekânlarda omuz ve dizleri örten kıyafet giyin.",
+     "Fotoğraf çekmeden önce izin isteyin."
+    ],
+    "festivals": [
+     "Kartong Festivali (Şubat)",
+     "Roots Festivali (Juffureh)",
+     "Ramazan ve Kurban Bayramı (Tobaski)"
+    ],
+    "lifestyle": "“Gülümseyen Kıyı” lakaplı, attaya çayı sohbetleri, kora müziği ve güreş geleneğiyle sakin bir yaşam."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Kunta Kinteh Adası ve Juffureh (UNESCO)",
+     "Abuko Doğa Koruma Alanı",
+     "Kachikally Timsah Havuzu (Bakau)",
+     "Tanji Balıkçı Köyü",
+     "River Gambia Milli Parkı (şempanze adaları)",
+     "Wassu Taş Daireleri (UNESCO)"
+    ],
+    "bestSeasons": "Kasım – Mayıs (kurak mevsim; Kasım – Şubat en serin ve en rahat dönem)",
+    "travelStyleTip": "Kıyıda bir otel üssü kurup günübirlik geziler yapın; nehrin iç kesimleri için 2-3 günlük organize tur en pratik yoldur."
+   },
+   "religion": {
+    "primaryReligions": "İslam (~%95), Hristiyanlık (~%4) ve geleneksel inançlar.",
+    "respectNorms": "Ramazan’da gündüz kamusal alanda yemekten kaçının; camilere izinle ve örtünerek girin.",
+    "sacredSites": [
+     "Banjul Kral Fahd Camii",
+     "Kachikally kutsal timsah havuzu",
+     "Folonko kutsal timsah havuzu (Kartong)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "İngilizce (resmî). Mandinka, Wolof, Fula ve Jola yaygın yerel dillerdir.",
+    "englishProficiency": "İyi; turistik kıyıda ve şehirlerde İngilizce yaygın, köylerde Wolof ve Mandinka öne çıkar.",
+    "phrases": [
+     {
+      "phrase": "Nanga def?",
+      "meaning": "Nasılsın? (Wolof)",
+      "translation": "Nasılsın? (Wolof)",
+      "pronunciation": "NAHN-gah def"
+     },
+     {
+      "phrase": "Jërëjëf",
+      "meaning": "Teşekkürler (Wolof)",
+      "translation": "Teşekkürler (Wolof)",
+      "pronunciation": "jeh-reh-JEF"
+     },
+     {
+      "phrase": "Abaraka",
+      "meaning": "Teşekkürler (Mandinka)",
+      "translation": "Teşekkürler (Mandinka)",
+      "pronunciation": "ah-bah-RAH-kah"
+     },
+     {
+      "phrase": "Ñaata la?",
+      "meaning": "Ne kadar? (Wolof)",
+      "translation": "Ne kadar? (Wolof)",
+      "pronunciation": "NYAH-tah lah"
+     },
+     {
+      "phrase": "Ba beneen yoon",
+      "meaning": "Görüşmek üzere (Wolof)",
+      "translation": "Görüşmek üzere (Wolof)",
+      "pronunciation": "bah beh-NEHN yohn"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Gambiya Nehri boyunca uzanan Afrika kıtasının en küçük kara ülkesidir. Mali İmparatorluğu’nun etki alanında kalmış, köle ticaretinin önemli noktalarından biri olmuş ve 1965’te İngiltere’den bağımsızlığını kazanmıştır.",
+    "milestones": [
+     "1651: Kurlandların James (Kunta Kinteh) Adası’na yerleşmesi",
+     "1816: İngilizlerin Bathurst’ü (Banjul) kurması",
+     "1965: Bağımsızlık",
+     "2003: Kunta Kinteh Adası’nın UNESCO listesine girmesi"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Domoda (fıstık ezmeli et yahnisi)",
+     "Benachin (tek tencerede baharatlı pilav)",
+     "Yassa (limonlu soğanlı tavuk)"
+    ],
+    "traditionalDrinks": [
+     "Wonjo (hibiskus şerbeti)",
+     "Baobab suyu (bouye)",
+     "Attaya (köpüklü yeşil çay)"
+    ],
+    "streetFoodAndDesserts": [
+     "Afra (mangalda baharatlı et)",
+     "Tapalapa ekmeği ile akara",
+     "Chakery (kuskus ve yoğurt tatlısı)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Sir Dawda Jawara (ilk cumhurbaşkanı)",
+     "Fatou Bensouda (UCM başsavcısı)",
+     "Jaliba Kuyateh (kora ustası)"
+    ],
+    "strongSectors": [
+     "Turizm",
+     "Yer fıstığı tarımı",
+     "Balıkçılık ve yurt dışı dövizleri"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Nakit dalasi esastır; ATM’ler kıyı bölgesinde vardır ama kart kabulü otellerle sınırlıdır. Wave ve QMoney gibi mobil para servisleri yaygındır.",
+    "tippingCulture": "Turistik restoranlarda %10 civarı takdir edilir; rehber ve şoförlere küçük bahşiş verilir.",
+    "economicPillars": "Turizm, tarım (yer fıstığı), balıkçılık, re-eksport ticareti ve yurt dışı dövizleri."
+   }
+  },
+  "itin": {
+   "routeName": "Gambiya Rotası: Banjul, Senegambia Kıyısı, Güney Sahilleri ve Nehir Yukarısı",
+   "routeSummary": "Banjul ve Kunta Kinteh Adası’ndan Kololi’nin plajlarına, Tanji’nin balıkçı kıyısına ve Janjanbureh’de şempanze adalarına uzanan 8 günlük rota.",
+   "totalDays": 8,
+   "idealDurationText": "8 Günlük Gambiya Rotası",
+   "bestSeason": "Kasım – Mayıs (kurak mevsim; Kasım – Şubat en serin ve en rahat dönem)",
+   "transportMode": "Turist taksisi/şoförlü araç + nehir teknesi ve organize turlar",
+   "paceLevel": "Sakin (Kıyı + Nehir)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "1. Durak: Banjul ve Kunta Kinteh Adası",
+     "recommendedDuration": "1-2 Gün (Tarih)",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "Arch 22 anıtı",
+      "Albert Pazarı",
+      "Kunta Kinteh Adası ve Juffureh köyü"
+     ],
+     "activities": [
+      "Banjul’dan tekneyle Kunta Kinteh Adası’na gidin.",
+      "Juffureh’deki köle ticareti müzesini gezin.",
+      "Albert Pazarı’nda kumaş ve baharat alışverişi yapın."
+     ],
+     "foodAndDrinks": [
+      "Domoda",
+      "Wonjo"
+     ],
+     "criticalTips": [
+      "Nehir turlarını lisanslı operatörlerle yapın.",
+      "Pazar kalabalığında çanta ve telefonunuza dikkat edin."
+     ],
+     "mapsQuery": "Banjul, Gambia"
+    },
+    {
+     "stopNumber": 2,
+     "name": "2. Durak: Kololi, Bakau ve Serrekunda",
+     "recommendedDuration": "2 Gün (Kıyı ve kültür)",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "Senegambia caddesi ve plajı",
+      "Kachikally Timsah Havuzu",
+      "Bijilo Orman Parkı (maymunlar)",
+      "Serrekunda Pazarı"
+     ],
+     "activities": [
+      "Bijilo’da kırmızı kolobus maymunlarını izleyin.",
+      "Kachikally’de kutsal timsah havuzunu ziyaret edin.",
+      "Gün batımında Kotu plajında yürüyün."
+     ],
+     "foodAndDrinks": [
+      "Afra",
+      "Benachin",
+      "Baobab suyu"
+     ],
+     "criticalTips": [
+      "Bumster’lara net “hayır” deyin.",
+      "Maymunları beslemeyin."
+     ],
+     "mapsQuery": "Kololi, Gambia"
+    },
+    {
+     "stopNumber": 3,
+     "name": "3. Durak: Tanji, Abuko ve Kartong",
+     "recommendedDuration": "1-2 Gün (Doğa ve balıkçı köyleri)",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "Tanji Balıkçı Köyü ve balık tütsüleme",
+      "Abuko Doğa Koruma Alanı",
+      "Tanji Kuş Rezervi",
+      "Kartong plajları"
+     ],
+     "activities": [
+      "Öğleden sonra Tanji’de teknelerin dönüşünü izleyin.",
+      "Abuko’da kuş gözlemi yapın.",
+      "Kartong’da sakin bir plaj günü geçirin."
+     ],
+     "foodAndDrinks": [
+      "Izgara barakuda veya ladyfish",
+      "Yassa"
+     ],
+     "criticalTips": [
+      "Tanji’de fotoğraf için balıkçılardan izin isteyin.",
+      "Abuko’da sabah erken saatler kuş gözlemi için en iyisidir."
+     ],
+     "mapsQuery": "Tanji, Gambia"
+    },
+    {
+     "stopNumber": 4,
+     "name": "4. Durak: Janjanbureh ve River Gambia Milli Parkı",
+     "recommendedDuration": "2 Gün (Nehir ve vahşi yaşam)",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "Babun Adaları’ndaki şempanzeler (tekneden)",
+      "Wassu Taş Daireleri",
+      "Janjanbureh eski kolonyal kasabası"
+     ],
+     "activities": [
+      "Tekneyle şempanze adalarının çevresinde gezin.",
+      "Wassu’da megalitik taş dairelerini görün.",
+      "Nehirde suaygırı ve kuş gözlemi yapın."
+     ],
+     "foodAndDrinks": [
+      "Superkanja (bamyalı çorba)",
+      "Attaya"
+     ],
+     "criticalTips": [
+      "Yol uzun ve yorucu; şoförlü araç veya organize tur seçin.",
+      "Şempanze adalarına inmek yasaktır, yalnızca tekneden izlenir."
+     ],
+     "mapsQuery": "Janjanbureh, Gambia"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Domoda (fıstık ezmeli et yahnisi)",
+     "Benachin (tek tencerede baharatlı pilav)",
+     "Yassa (limonlu soğanlı tavuk)"
+    ],
+    "drinks": [
+     "Wonjo (hibiskus şerbeti)",
+     "Baobab suyu (bouye)",
+     "Attaya (köpüklü yeşil çay)"
+    ],
+    "streetFoods": [
+     "Afra (mangalda baharatlı et)",
+     "Tapalapa ekmeği ile akara",
+     "Chakery (kuskus ve yoğurt tatlısı)"
+    ],
+    "diningAdvice": "Yemekler genellikle ortak bir tabaktan sağ elle yenir; pilav ve sos üzerine kuruludur. Attaya çayı üç bardak hâlinde, uzun sohbetle içilir."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "G tipi (İngiliz) priz adaptörü",
+     "Sinek kovucu ve sıtma ilacı",
+     "Güneş kremi ve şapka",
+     "Küçük banknotlarla nakit dalasi"
+    ],
+    "safetyAndEtiquette": [
+     "Kıyıda yalnızca lisanslı rehber ve taksilerle hareket edin.",
+     "Muhafazakâr kıyafet ve sağ el kuralına uyun."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Üç dikdörtgen pimli İngiliz tipi (G) priz kullanılır; Türkiye’den adaptör gerekir."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Musluk suyu içilmez; kapalı şişe su kullanın.",
+    "vaccines": [
+     "Sarıhumma (önerilir; riskli ülkeden gelişte sertifika istenir)",
+     "Hepatit A ve tifo",
+     "Sıtma koruması (doktorunuza danışın)",
+     "Rutin aşılar"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "116"
+   },
+   "tipping": {
+    "custom": "Bahşiş zorunlu değildir; turistik yerlerde takdir edilir.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Restoranlarda %10 yeterlidir; rehber ve tekne kaptanlarına ayrıca küçük bahşiş verin."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Turistlere KDV iadesi yok (KDV %15)",
+    "minSpend": "Uygulanmaz",
+    "customsNote": "Gambiya’da turistlere KDV iadesi (tax-free) sistemi yoktur; fiyatlara KDV dahildir."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "$1.00 - $3.00",
+    "topCarriers": [
+     "Africell",
+     "QCell",
+     "Gamcel"
+    ],
+    "airportSimTrapWarning": "Banjul Havalimanı’nda SIM seçeneği sınırlıdır; pasaportla Africell veya QCell mağazasından SIM almak en kolayıdır. Yerel eSIM seçenekleri azdır."
+   },
+   "touristScams": [
+    {
+     "title": "Bumster Arkadaşlığı",
+     "desc": "Plajda tanışıp “rehberlik” yapan ve sonunda para isteyen gençler.",
+     "tip": "Lisanslı rehberleri (yeşil kimlik kartlı) veya otel turlarını tercih edin."
+    },
+    {
+     "title": "Turist Taksisi Fiyatı",
+     "desc": "Yabancılara tarifenin üzerinde fiyat söylenmesi.",
+     "tip": "Fiyat listesine bakın ve fiyatı binmeden netleştirin."
+    },
+    {
+     "title": "Duygusal Bağış Hikâyeleri",
+     "desc": "Hasta akraba, okul ücreti veya cenaze için para istenmesi.",
+     "tip": "Bağışı kayıtlı kuruluşlara yapın."
+    }
+   ]
+  }
+ },
+ "en": {
+  "insights": {
+   "currency": "Gambian Dalasi (GMD)",
+   "plugType": "Type G (230V, 50Hz)",
+   "bestMonths": "November – May (dry season; November – February is coolest and most comfortable)",
+   "safety": {
+    "safetyScore": 55,
+    "safetyLevel": "Moderate",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60",
+    "crimeRateSummary": "Violent crime is rare; the main issues on the tourist coast are pushy beach hustlers known as “bumsters”, petty theft and deserted beaches at night.",
+    "commonScams": [
+     "Bumsters befriending visitors on the beach, then asking money for guiding, trips or help",
+     "Inflated prices for foreigners in tourist taxis and markets",
+     "Fake school, village or funeral donation stories"
+    ],
+    "safeTravelTips": [
+     "Give beach hustlers a polite but firm “no”; tour with your hotel or licensed guides.",
+     "Do not walk on beaches or unlit roads at night.",
+     "Ask your doctor about malaria prophylaxis and repellent."
+    ],
+    "emergencyNumbers": {
+     "police": "117",
+     "ambulance": "116",
+     "general": "117"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Good 4G along the coast and around Banjul; drops to 3G/2G inland",
+    "costPerGbUsd": "~1.00 - 3.00 $",
+    "esimAvailability": "Limited",
+    "bestCarriers": [
+     "Africell",
+     "QCell",
+     "Gamcel"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Limited",
+    "costLevel": "Budget-Friendly",
+    "singleTicketUsd": "0.20 - 0.60 $",
+    "dailyPassUsd": "15 - 30 $",
+    "popularRideApps": [
+     "No major ride-hailing app",
+     "Green tourist taxis",
+     "Yellow-and-green town taxis"
+    ],
+    "taxiAdvice": "There is no Uber or Bolt. Green tourist taxis have fixed rates but are expensive; yellow-and-green town taxis and “gele-gele” minibuses are very cheap. Agree the fare before boarding."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "30 - 45 $",
+    "dailyBudgetMidrangeUsd": "70 - 120 $",
+    "budgetMealUsd": "3 - 8 $",
+    "coffeeUsd": "1.50 - 3 $",
+    "waterBottleUsd": "0.40 - 0.80 $",
+    "hostelDormUsd": "12 - 25 $",
+    "hotel3StarUsd": "45 - 90 $",
+    "flightCostIndex": "Moderate-High",
+    "flightTip": "There are no direct flights from Turkey; connect via Dakar, Brussels or winter charter flights (November–April)."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Long greetings are customary; people ask about family and health, so take your time.",
+     "Use your right hand for eating, money and greetings.",
+     "Wear clothes covering shoulders and knees in villages and religious places.",
+     "Ask before taking photos."
+    ],
+    "festivals": [
+     "Kartong Festival (February)",
+     "Roots Festival (Juffureh)",
+     "Eid al-Fitr and Eid al-Adha (Tobaski)"
+    ],
+    "lifestyle": "Known as the “Smiling Coast”: attaya tea chats, kora music and a wrestling tradition set a relaxed pace of life."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Kunta Kinteh Island and Juffureh (UNESCO)",
+     "Abuko Nature Reserve",
+     "Kachikally Crocodile Pool (Bakau)",
+     "Tanji Fishing Village",
+     "River Gambia National Park (chimpanzee islands)",
+     "Wassu Stone Circles (UNESCO)"
+    ],
+    "bestSeasons": "November – May (dry season; November – February is coolest and most comfortable)",
+    "travelStyleTip": "Base yourself at a coastal hotel for day trips; a 2-3 day organised tour is the easiest way to see the upriver region."
+   },
+   "religion": {
+    "primaryReligions": "Islam (~95%), Christianity (~4%) and traditional beliefs.",
+    "respectNorms": "Avoid eating in public during Ramadan daytime; enter mosques only with permission and covered up.",
+    "sacredSites": [
+     "King Fahad Mosque, Banjul",
+     "Kachikally sacred crocodile pool",
+     "Folonko sacred crocodile pool (Kartong)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "English (official). Mandinka, Wolof, Fula and Jola are widely spoken.",
+    "englishProficiency": "Good; English is common on the tourist coast and in towns, while Wolof and Mandinka dominate in villages.",
+    "phrases": [
+     {
+      "phrase": "Nanga def?",
+      "meaning": "How are you? (Wolof)",
+      "translation": "How are you? (Wolof)",
+      "pronunciation": "NAHN-gah def"
+     },
+     {
+      "phrase": "Jërëjëf",
+      "meaning": "Thank you (Wolof)",
+      "translation": "Thank you (Wolof)",
+      "pronunciation": "jeh-reh-JEF"
+     },
+     {
+      "phrase": "Abaraka",
+      "meaning": "Thank you (Mandinka)",
+      "translation": "Thank you (Mandinka)",
+      "pronunciation": "ah-bah-RAH-kah"
+     },
+     {
+      "phrase": "Ñaata la?",
+      "meaning": "How much is it? (Wolof)",
+      "translation": "How much is it? (Wolof)",
+      "pronunciation": "NYAH-tah lah"
+     },
+     {
+      "phrase": "Ba beneen yoon",
+      "meaning": "See you later (Wolof)",
+      "translation": "See you later (Wolof)",
+      "pronunciation": "bah beh-NEHN yohn"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "The smallest country on mainland Africa stretches along the Gambia River. Once within the Mali Empire’s sphere and a major point of the slave trade, it gained independence from Britain in 1965.",
+    "milestones": [
+     "1651: Courlanders settle on James (Kunta Kinteh) Island",
+     "1816: The British found Bathurst (Banjul)",
+     "1965: Independence",
+     "2003: Kunta Kinteh Island inscribed by UNESCO"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Domoda (peanut-butter meat stew)",
+     "Benachin (one-pot spiced rice)",
+     "Yassa (chicken in lemon-onion sauce)"
+    ],
+    "traditionalDrinks": [
+     "Wonjo (hibiscus drink)",
+     "Baobab juice (bouye)",
+     "Attaya (frothy green tea)"
+    ],
+    "streetFoodAndDesserts": [
+     "Afra (spiced grilled meat)",
+     "Tapalapa bread with akara",
+     "Chakery (couscous and yoghurt dessert)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Sir Dawda Jawara (first president)",
+     "Fatou Bensouda (ICC chief prosecutor)",
+     "Jaliba Kuyateh (kora master)"
+    ],
+    "strongSectors": [
+     "Tourism",
+     "Groundnut farming",
+     "Fishing and remittances"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Cash dalasi is king; ATMs exist on the coast but cards are mostly accepted only in hotels. Mobile money such as Wave and QMoney is common.",
+    "tippingCulture": "Around 10% is appreciated in tourist restaurants; small tips for guides and drivers.",
+    "economicPillars": "Tourism, agriculture (groundnuts), fishing, re-export trade and remittances."
+   }
+  },
+  "itin": {
+   "routeName": "Gambia Route: Banjul, the Senegambia Coast, the South Coast and Upriver",
+   "routeSummary": "An 8-day route from Banjul and Kunta Kinteh Island to Kololi’s beaches, Tanji’s fishing shore and the chimpanzee islands near Janjanbureh.",
+   "totalDays": 8,
+   "idealDurationText": "8-Day Gambia Itinerary",
+   "bestSeason": "November – May (dry season; November – February is coolest and most comfortable)",
+   "transportMode": "Tourist taxi/car with driver + river boats and organised tours",
+   "paceLevel": "Relaxed (Coast + River)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stop 1: Banjul and Kunta Kinteh Island",
+     "recommendedDuration": "1-2 Days (History)",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "Arch 22 monument",
+      "Albert Market",
+      "Kunta Kinteh Island and Juffureh village"
+     ],
+     "activities": [
+      "Take a boat from Banjul to Kunta Kinteh Island.",
+      "Visit the slave trade museum in Juffureh.",
+      "Shop for fabric and spices at Albert Market."
+     ],
+     "foodAndDrinks": [
+      "Domoda",
+      "Wonjo"
+     ],
+     "criticalTips": [
+      "Book river trips with licensed operators.",
+      "Watch your bag and phone in market crowds."
+     ],
+     "mapsQuery": "Banjul, Gambia"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stop 2: Kololi, Bakau and Serrekunda",
+     "recommendedDuration": "2 Days (Coast and culture)",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "Senegambia strip and beach",
+      "Kachikally Crocodile Pool",
+      "Bijilo Forest Park (monkeys)",
+      "Serrekunda Market"
+     ],
+     "activities": [
+      "Watch red colobus monkeys in Bijilo.",
+      "Visit the sacred crocodile pool in Kachikally.",
+      "Walk Kotu beach at sunset."
+     ],
+     "foodAndDrinks": [
+      "Afra",
+      "Benachin",
+      "Baobab juice"
+     ],
+     "criticalTips": [
+      "Say a clear “no” to bumsters.",
+      "Do not feed the monkeys."
+     ],
+     "mapsQuery": "Kololi, Gambia"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stop 3: Tanji, Abuko and Kartong",
+     "recommendedDuration": "1-2 Days (Nature and fishing villages)",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "Tanji Fishing Village and fish smoking",
+      "Abuko Nature Reserve",
+      "Tanji Bird Reserve",
+      "Kartong beaches"
+     ],
+     "activities": [
+      "Watch the boats come in at Tanji in the afternoon.",
+      "Go birdwatching in Abuko.",
+      "Spend a quiet beach day in Kartong."
+     ],
+     "foodAndDrinks": [
+      "Grilled barracuda or ladyfish",
+      "Yassa"
+     ],
+     "criticalTips": [
+      "Ask fishermen before taking photos in Tanji.",
+      "Early morning is best for birding in Abuko."
+     ],
+     "mapsQuery": "Tanji, Gambia"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Stop 4: Janjanbureh and River Gambia National Park",
+     "recommendedDuration": "2 Days (River and wildlife)",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "Chimpanzees on the Baboon Islands (from a boat)",
+      "Wassu Stone Circles",
+      "Old colonial town of Janjanbureh"
+     ],
+     "activities": [
+      "Cruise around the chimpanzee islands by boat.",
+      "See the megalithic stone circles at Wassu.",
+      "Spot hippos and birds on the river."
+     ],
+     "foodAndDrinks": [
+      "Superkanja (okra soup)",
+      "Attaya"
+     ],
+     "criticalTips": [
+      "The drive is long and tiring; choose a car with driver or an organised tour.",
+      "Landing on the chimpanzee islands is forbidden; viewing is by boat only."
+     ],
+     "mapsQuery": "Janjanbureh, Gambia"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Domoda (peanut-butter meat stew)",
+     "Benachin (one-pot spiced rice)",
+     "Yassa (chicken in lemon-onion sauce)"
+    ],
+    "drinks": [
+     "Wonjo (hibiscus drink)",
+     "Baobab juice (bouye)",
+     "Attaya (frothy green tea)"
+    ],
+    "streetFoods": [
+     "Afra (spiced grilled meat)",
+     "Tapalapa bread with akara",
+     "Chakery (couscous and yoghurt dessert)"
+    ],
+    "diningAdvice": "Meals are often shared from one bowl and eaten with the right hand; rice with sauce is the base. Attaya tea is served in three rounds with long conversation."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Type G (UK) plug adapter",
+     "Insect repellent and malaria tablets",
+     "Sunscreen and a hat",
+     "Cash dalasi in small notes"
+    ],
+    "safetyAndEtiquette": [
+     "On the coast, move around only with licensed guides and taxis.",
+     "Follow modest dress and the right-hand rule."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "UK-style three rectangular-pin (G) sockets are used; an adapter is needed."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Tap water is not safe to drink; use sealed bottled water.",
+    "vaccines": [
+     "Yellow fever (recommended; certificate required if arriving from a risk country)",
+     "Hepatitis A and typhoid",
+     "Malaria prevention (consult your doctor)",
+     "Routine vaccines"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "116"
+   },
+   "tipping": {
+    "custom": "Tipping is not mandatory but appreciated in tourist areas.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "10% is enough in restaurants; give guides and boat captains a small extra tip."
+   },
+   "taxFree": {
+    "vatRefundPercent": "No VAT refund for tourists (VAT 15%)",
+    "minSpend": "Not applicable",
+    "customsNote": "The Gambia has no tax-free VAT refund scheme for tourists; VAT is included in prices."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "$1.00 - $3.00",
+    "topCarriers": [
+     "Africell",
+     "QCell",
+     "Gamcel"
+    ],
+    "airportSimTrapWarning": "SIM options at Banjul Airport are limited; buying a SIM with your passport at an Africell or QCell shop is easiest. Local eSIM options are few."
+   },
+   "touristScams": [
+    {
+     "title": "Bumster Friendship",
+     "desc": "Young men befriend visitors on the beach, “guide” them and then demand money.",
+     "tip": "Use licensed guides (with official green ID) or hotel tours."
+    },
+    {
+     "title": "Tourist Taxi Fares",
+     "desc": "Foreigners quoted above the official tariff.",
+     "tip": "Check the price board and agree the fare before getting in."
+    },
+    {
+     "title": "Emotional Donation Stories",
+     "desc": "Requests for money for a sick relative, school fees or a funeral.",
+     "tip": "Donate through registered organisations."
+    }
+   ]
+  }
+ },
+ "de": {
+  "insights": {
+   "currency": "Gambischer Dalasi (GMD)",
+   "plugType": "Typ G (230V, 50Hz)",
+   "bestMonths": "November – Mai (Trockenzeit; November – Februar am kühlsten und angenehmsten)",
+   "safety": {
+    "safetyScore": 55,
+    "safetyLevel": "Mäßiges Risiko",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60",
+    "crimeRateSummary": "Gewaltverbrechen sind selten; die Hauptprobleme an der Touristenküste sind aufdringliche Strandschlepper („Bumsters“), Kleindiebstahl und einsame Strände nachts.",
+    "commonScams": [
+     "Bumsters, die sich am Strand anfreunden und dann Geld für Führungen, Ausflüge oder Hilfe verlangen",
+     "Überhöhte Preise für Ausländer in Touristentaxis und auf Märkten",
+     "Erfundene Spendengeschichten für Schulen, Dörfer oder Beerdigungen"
+    ],
+    "safeTravelTips": [
+     "Strandschleppern höflich, aber bestimmt „Nein“ sagen; mit Hotel oder lizenzierten Guides unterwegs sein.",
+     "Nachts nicht an Stränden oder auf unbeleuchteten Straßen laufen.",
+     "Malariaprophylaxe und Mückenschutz mit dem Arzt besprechen."
+    ],
+    "emergencyNumbers": {
+     "police": "117",
+     "ambulance": "116",
+     "general": "117"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Gutes 4G an der Küste und um Banjul; im Landesinneren nur 3G/2G",
+    "costPerGbUsd": "~1.00 - 3.00 $",
+    "esimAvailability": "Eingeschränkt",
+    "bestCarriers": [
+     "Africell",
+     "QCell",
+     "Gamcel"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Eingeschränkt",
+    "costLevel": "Günstig",
+    "singleTicketUsd": "0.20 - 0.60 $",
+    "dailyPassUsd": "15 - 30 $",
+    "popularRideApps": [
+     "Keine große Fahrdienst-App",
+     "Grüne Touristentaxis",
+     "Gelb-grüne Stadttaxis"
+    ],
+    "taxiAdvice": "Uber oder Bolt gibt es nicht. Grüne Touristentaxis haben feste, aber hohe Tarife; gelb-grüne Stadttaxis und „Gele-Gele“-Minibusse sind sehr billig. Preis vor dem Einsteigen vereinbaren."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "30 - 45 $",
+    "dailyBudgetMidrangeUsd": "70 - 120 $",
+    "budgetMealUsd": "3 - 8 $",
+    "coffeeUsd": "1.50 - 3 $",
+    "waterBottleUsd": "0.40 - 0.80 $",
+    "hostelDormUsd": "12 - 25 $",
+    "hotel3StarUsd": "45 - 90 $",
+    "flightCostIndex": "Mittel-Hoch",
+    "flightTip": "Keine Direktflüge aus der Türkei; Verbindungen über Dakar, Brüssel oder Winter-Charterflüge (November–April)."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Lange Begrüßungen sind üblich; man fragt nach Familie und Gesundheit – nehmen Sie sich Zeit.",
+     "Essen, Geld und Gruß mit der rechten Hand.",
+     "In Dörfern und religiösen Orten Schultern und Knie bedecken.",
+     "Vor dem Fotografieren fragen."
+    ],
+    "festivals": [
+     "Kartong-Festival (Februar)",
+     "Roots-Festival (Juffureh)",
+     "Ramadanfest und Opferfest (Tobaski)"
+    ],
+    "lifestyle": "Die „Lächelnde Küste“: Attaya-Teerunden, Kora-Musik und Ringkampftradition prägen ein entspanntes Leben."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Kunta-Kinteh-Insel und Juffureh (UNESCO)",
+     "Abuko-Naturreservat",
+     "Krokodilteich Kachikally (Bakau)",
+     "Fischerdorf Tanji",
+     "River-Gambia-Nationalpark (Schimpanseninseln)",
+     "Steinkreise von Wassu (UNESCO)"
+    ],
+    "bestSeasons": "November – Mai (Trockenzeit; November – Februar am kühlsten und angenehmsten)",
+    "travelStyleTip": "Ein Küstenhotel als Basis für Tagesausflüge nutzen; für das Landesinnere ist eine organisierte 2-3-Tage-Tour am einfachsten."
+   },
+   "religion": {
+    "primaryReligions": "Islam (~95 %), Christentum (~4 %) und traditionelle Religionen.",
+    "respectNorms": "Im Ramadan tagsüber nicht öffentlich essen; Moscheen nur mit Erlaubnis und bedeckt betreten.",
+    "sacredSites": [
+     "König-Fahd-Moschee, Banjul",
+     "Heiliger Krokodilteich Kachikally",
+     "Heiliger Krokodilteich Folonko (Kartong)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Englisch (Amtssprache). Mandinka, Wolof, Fula und Jola sind weit verbreitet.",
+    "englishProficiency": "Gut; Englisch ist an der Touristenküste und in Städten verbreitet, in Dörfern dominieren Wolof und Mandinka.",
+    "phrases": [
+     {
+      "phrase": "Nanga def?",
+      "meaning": "Wie geht es dir? (Wolof)",
+      "translation": "Wie geht es dir? (Wolof)",
+      "pronunciation": "NAHN-gah def"
+     },
+     {
+      "phrase": "Jërëjëf",
+      "meaning": "Danke (Wolof)",
+      "translation": "Danke (Wolof)",
+      "pronunciation": "jeh-reh-JEF"
+     },
+     {
+      "phrase": "Abaraka",
+      "meaning": "Danke (Mandinka)",
+      "translation": "Danke (Mandinka)",
+      "pronunciation": "ah-bah-RAH-kah"
+     },
+     {
+      "phrase": "Ñaata la?",
+      "meaning": "Wie viel kostet das? (Wolof)",
+      "translation": "Wie viel kostet das? (Wolof)",
+      "pronunciation": "NYAH-tah lah"
+     },
+     {
+      "phrase": "Ba beneen yoon",
+      "meaning": "Bis bald (Wolof)",
+      "translation": "Bis bald (Wolof)",
+      "pronunciation": "bah beh-NEHN yohn"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Das kleinste Land auf dem afrikanischen Festland erstreckt sich entlang des Gambia-Flusses. Einst im Einflussbereich des Mali-Reiches und ein wichtiger Ort des Sklavenhandels, wurde es 1965 von Großbritannien unabhängig.",
+    "milestones": [
+     "1651: Kurländer siedeln auf der James-(Kunta-Kinteh-)Insel",
+     "1816: Die Briten gründen Bathurst (Banjul)",
+     "1965: Unabhängigkeit",
+     "2003: Kunta-Kinteh-Insel wird UNESCO-Welterbe"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Domoda (Fleischeintopf mit Erdnusspaste)",
+     "Benachin (gewürzter Eintopfreis)",
+     "Yassa (Huhn in Zitronen-Zwiebel-Sauce)"
+    ],
+    "traditionalDrinks": [
+     "Wonjo (Hibiskusgetränk)",
+     "Baobab-Saft (Bouye)",
+     "Attaya (schaumiger grüner Tee)"
+    ],
+    "streetFoodAndDesserts": [
+     "Afra (gewürztes Grillfleisch)",
+     "Tapalapa-Brot mit Akara",
+     "Chakery (Couscous-Joghurt-Dessert)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Sir Dawda Jawara (erster Präsident)",
+     "Fatou Bensouda (Chefanklägerin des IStGH)",
+     "Jaliba Kuyateh (Kora-Meister)"
+    ],
+    "strongSectors": [
+     "Tourismus",
+     "Erdnussanbau",
+     "Fischerei und Überweisungen"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Bares Dalasi ist entscheidend; Geldautomaten gibt es an der Küste, Karten meist nur in Hotels. Mobile Money wie Wave und QMoney ist verbreitet.",
+    "tippingCulture": "Etwa 10 % in Touristenrestaurants werden geschätzt; kleine Trinkgelder für Guides und Fahrer.",
+    "economicPillars": "Tourismus, Landwirtschaft (Erdnüsse), Fischerei, Reexporthandel und Überweisungen."
+   }
+  },
+  "itin": {
+   "routeName": "Gambia-Route: Banjul, Senegambia-Küste, Südküste und Flussaufwärts",
+   "routeSummary": "Eine 8-tägige Route von Banjul und der Kunta-Kinteh-Insel zu den Stränden von Kololi, der Fischerküste von Tanji und den Schimpanseninseln bei Janjanbureh.",
+   "totalDays": 8,
+   "idealDurationText": "8-tägige Gambia-Route",
+   "bestSeason": "November – Mai (Trockenzeit; November – Februar am kühlsten und angenehmsten)",
+   "transportMode": "Touristentaxi/Auto mit Fahrer + Flussboote und organisierte Touren",
+   "paceLevel": "Entspannt (Küste + Fluss)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stopp 1: Banjul und Kunta-Kinteh-Insel",
+     "recommendedDuration": "1-2 Tage (Geschichte)",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "Denkmal Arch 22",
+      "Albert Market",
+      "Kunta-Kinteh-Insel und Dorf Juffureh"
+     ],
+     "activities": [
+      "Mit dem Boot von Banjul zur Kunta-Kinteh-Insel fahren.",
+      "Das Sklavenhandelsmuseum in Juffureh besuchen.",
+      "Auf dem Albert Market Stoffe und Gewürze kaufen."
+     ],
+     "foodAndDrinks": [
+      "Domoda",
+      "Wonjo"
+     ],
+     "criticalTips": [
+      "Flusstouren bei lizenzierten Anbietern buchen.",
+      "Im Marktgedränge auf Tasche und Handy achten."
+     ],
+     "mapsQuery": "Banjul, Gambia"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stopp 2: Kololi, Bakau und Serrekunda",
+     "recommendedDuration": "2 Tage (Küste und Kultur)",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "Senegambia-Strip und Strand",
+      "Krokodilteich Kachikally",
+      "Bijilo Forest Park (Affen)",
+      "Markt von Serrekunda"
+     ],
+     "activities": [
+      "Rote Stummelaffen im Bijilo-Park beobachten.",
+      "Den heiligen Krokodilteich Kachikally besuchen.",
+      "Bei Sonnenuntergang am Kotu Beach spazieren."
+     ],
+     "foodAndDrinks": [
+      "Afra",
+      "Benachin",
+      "Baobab-Saft"
+     ],
+     "criticalTips": [
+      "Bumsters klar „Nein“ sagen.",
+      "Die Affen nicht füttern."
+     ],
+     "mapsQuery": "Kololi, Gambia"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stopp 3: Tanji, Abuko und Kartong",
+     "recommendedDuration": "1-2 Tage (Natur und Fischerdörfer)",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "Fischerdorf Tanji und Fischräucherei",
+      "Abuko-Naturreservat",
+      "Vogelschutzgebiet Tanji",
+      "Strände von Kartong"
+     ],
+     "activities": [
+      "Nachmittags die Rückkehr der Boote in Tanji erleben.",
+      "In Abuko Vögel beobachten.",
+      "Einen ruhigen Strandtag in Kartong verbringen."
+     ],
+     "foodAndDrinks": [
+      "Gegrillter Barrakuda oder Ladyfish",
+      "Yassa"
+     ],
+     "criticalTips": [
+      "In Tanji Fischer vor dem Fotografieren fragen.",
+      "Frühmorgens ist die beste Zeit für Vögel in Abuko."
+     ],
+     "mapsQuery": "Tanji, Gambia"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Stopp 4: Janjanbureh und River-Gambia-Nationalpark",
+     "recommendedDuration": "2 Tage (Fluss und Tierwelt)",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "Schimpansen auf den Baboon Islands (vom Boot aus)",
+      "Steinkreise von Wassu",
+      "Alte Kolonialstadt Janjanbureh"
+     ],
+     "activities": [
+      "Mit dem Boot um die Schimpanseninseln fahren.",
+      "Die megalithischen Steinkreise von Wassu ansehen.",
+      "Flusspferde und Vögel auf dem Fluss entdecken."
+     ],
+     "foodAndDrinks": [
+      "Superkanja (Okra-Suppe)",
+      "Attaya"
+     ],
+     "criticalTips": [
+      "Die Fahrt ist lang und anstrengend; Auto mit Fahrer oder Tour wählen.",
+      "Das Betreten der Schimpanseninseln ist verboten; nur vom Boot aus beobachten."
+     ],
+     "mapsQuery": "Janjanbureh, Gambia"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Domoda (Fleischeintopf mit Erdnusspaste)",
+     "Benachin (gewürzter Eintopfreis)",
+     "Yassa (Huhn in Zitronen-Zwiebel-Sauce)"
+    ],
+    "drinks": [
+     "Wonjo (Hibiskusgetränk)",
+     "Baobab-Saft (Bouye)",
+     "Attaya (schaumiger grüner Tee)"
+    ],
+    "streetFoods": [
+     "Afra (gewürztes Grillfleisch)",
+     "Tapalapa-Brot mit Akara",
+     "Chakery (Couscous-Joghurt-Dessert)"
+    ],
+    "diningAdvice": "Oft isst man gemeinsam aus einer Schüssel mit der rechten Hand; Reis mit Sauce ist die Basis. Attaya-Tee wird in drei Runden mit langen Gesprächen serviert."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Reiseadapter Typ G (UK)",
+     "Mückenschutz und Malariatabletten",
+     "Sonnencreme und Hut",
+     "Bares Dalasi in kleinen Scheinen"
+    ],
+    "safetyAndEtiquette": [
+     "An der Küste nur mit lizenzierten Guides und Taxis unterwegs sein.",
+     "Zurückhaltende Kleidung und die Rechte-Hand-Regel beachten."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Britische Steckdosen mit drei Flachstiften (Typ G); ein Adapter ist nötig."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Leitungswasser ist nicht trinkbar; versiegeltes Flaschenwasser verwenden.",
+    "vaccines": [
+     "Gelbfieber (empfohlen; Nachweis bei Einreise aus Risikoländern Pflicht)",
+     "Hepatitis A und Typhus",
+     "Malariaprophylaxe (Arzt fragen)",
+     "Standardimpfungen"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "116"
+   },
+   "tipping": {
+    "custom": "Trinkgeld ist nicht Pflicht, in Touristengebieten aber geschätzt.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Im Restaurant reichen 10 %; Guides und Bootsführern ein kleines Extra geben."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Keine Mehrwertsteuererstattung für Touristen (MwSt. 15 %)",
+    "minSpend": "Nicht zutreffend",
+    "customsNote": "Gambia hat kein Tax-Free-System für Touristen; die Mehrwertsteuer ist im Preis enthalten."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "$1.00 - $3.00",
+    "topCarriers": [
+     "Africell",
+     "QCell",
+     "Gamcel"
+    ],
+    "airportSimTrapWarning": "Am Flughafen Banjul ist das SIM-Angebot begrenzt; am einfachsten kauft man mit Pass eine SIM in einem Africell- oder QCell-Shop. Lokale eSIM-Optionen sind rar."
+   },
+   "touristScams": [
+    {
+     "title": "Bumster-Freundschaft",
+     "desc": "Junge Männer freunden sich am Strand an, „führen“ und verlangen dann Geld.",
+     "tip": "Lizenzierte Guides (mit offiziellem grünem Ausweis) oder Hoteltouren nutzen."
+    },
+    {
+     "title": "Touristentaxi-Preise",
+     "desc": "Ausländern werden Preise über dem offiziellen Tarif genannt.",
+     "tip": "Preistafel prüfen und Fahrpreis vor dem Einsteigen vereinbaren."
+    },
+    {
+     "title": "Emotionale Spendengeschichten",
+     "desc": "Bitten um Geld für kranke Verwandte, Schulgeld oder eine Beerdigung.",
+     "tip": "Über registrierte Organisationen spenden."
+    }
+   ]
+  }
+ },
+ "es": {
+  "insights": {
+   "currency": "Dalasi gambiano (GMD)",
+   "plugType": "Tipo G (230V, 50Hz)",
+   "bestMonths": "Noviembre – mayo (estación seca; de noviembre a febrero es lo más fresco y agradable)",
+   "safety": {
+    "safetyScore": 55,
+    "safetyLevel": "Riesgo Moderado",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60",
+    "crimeRateSummary": "Los delitos violentos son raros; los principales problemas en la costa turística son los insistentes buscavidas de playa (“bumsters”), los hurtos y las playas desiertas de noche.",
+    "commonScams": [
+     "Bumsters que se hacen amigos en la playa y luego piden dinero por guiar, excursiones o ayuda",
+     "Precios inflados para extranjeros en taxis turísticos y mercados",
+     "Historias falsas de donativos para escuelas, aldeas o funerales"
+    ],
+    "safeTravelTips": [
+     "Responde a los buscavidas con un “no” educado pero firme; haz excursiones con el hotel o guías con licencia.",
+     "No camines por playas ni calles sin luz de noche.",
+     "Consulta a tu médico sobre profilaxis antipalúdica y repelente."
+    ],
+    "emergencyNumbers": {
+     "police": "117",
+     "ambulance": "116",
+     "general": "117"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Buen 4G en la costa y alrededor de Banjul; baja a 3G/2G en el interior",
+    "costPerGbUsd": "~1.00 - 3.00 $",
+    "esimAvailability": "Limitada",
+    "bestCarriers": [
+     "Africell",
+     "QCell",
+     "Gamcel"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Limitado",
+    "costLevel": "Económico",
+    "singleTicketUsd": "0.20 - 0.60 $",
+    "dailyPassUsd": "15 - 30 $",
+    "popularRideApps": [
+     "Sin app de transporte importante",
+     "Taxis turísticos verdes",
+     "Taxis urbanos amarillos y verdes"
+    ],
+    "taxiAdvice": "No hay Uber ni Bolt. Los taxis turísticos verdes tienen tarifas fijas pero caras; los taxis urbanos amarillos y verdes y los minibuses “gele-gele” son muy baratos. Acuerda la tarifa antes de subir."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "30 - 45 $",
+    "dailyBudgetMidrangeUsd": "70 - 120 $",
+    "budgetMealUsd": "3 - 8 $",
+    "coffeeUsd": "1.50 - 3 $",
+    "waterBottleUsd": "0.40 - 0.80 $",
+    "hostelDormUsd": "12 - 25 $",
+    "hotel3StarUsd": "45 - 90 $",
+    "flightCostIndex": "Medio-Alto",
+    "flightTip": "No hay vuelos directos desde Turquía; se conecta por Dakar, Bruselas o vuelos chárter de invierno (noviembre–abril)."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Los saludos largos son costumbre; se pregunta por la familia y la salud, sin prisas.",
+     "Usa la mano derecha para comer, pagar y saludar.",
+     "En aldeas y lugares religiosos cubre hombros y rodillas.",
+     "Pide permiso antes de hacer fotos."
+    ],
+    "festivals": [
+     "Festival de Kartong (febrero)",
+     "Festival Roots (Juffureh)",
+     "Fin del Ramadán y Fiesta del Sacrificio (Tobaski)"
+    ],
+    "lifestyle": "La “Costa Sonriente”: charlas con té attaya, música de kora y tradición de lucha marcan un ritmo de vida tranquilo."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Isla Kunta Kinteh y Juffureh (UNESCO)",
+     "Reserva Natural de Abuko",
+     "Estanque de cocodrilos de Kachikally (Bakau)",
+     "Pueblo pesquero de Tanji",
+     "Parque Nacional del Río Gambia (islas de chimpancés)",
+     "Círculos de piedra de Wassu (UNESCO)"
+    ],
+    "bestSeasons": "Noviembre – mayo (estación seca; de noviembre a febrero es lo más fresco y agradable)",
+    "travelStyleTip": "Alójate en un hotel de la costa para hacer excursiones de día; para el interior, un tour organizado de 2-3 días es lo más práctico."
+   },
+   "religion": {
+    "primaryReligions": "Islam (~95 %), cristianismo (~4 %) y creencias tradicionales.",
+    "respectNorms": "Durante el Ramadán evita comer en público de día; entra en mezquitas solo con permiso y ropa adecuada.",
+    "sacredSites": [
+     "Mezquita del Rey Fahd, Banjul",
+     "Estanque sagrado de cocodrilos de Kachikally",
+     "Estanque sagrado de Folonko (Kartong)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Inglés (oficial). Se hablan ampliamente mandinga, wolof, fula y jola.",
+    "englishProficiency": "Bueno; el inglés es común en la costa turística y en las ciudades, mientras que en las aldeas dominan el wolof y el mandinga.",
+    "phrases": [
+     {
+      "phrase": "Nanga def?",
+      "meaning": "¿Cómo estás? (wolof)",
+      "translation": "¿Cómo estás? (wolof)",
+      "pronunciation": "NAHN-gah def"
+     },
+     {
+      "phrase": "Jërëjëf",
+      "meaning": "Gracias (wolof)",
+      "translation": "Gracias (wolof)",
+      "pronunciation": "jeh-reh-JEF"
+     },
+     {
+      "phrase": "Abaraka",
+      "meaning": "Gracias (mandinga)",
+      "translation": "Gracias (mandinga)",
+      "pronunciation": "ah-bah-RAH-kah"
+     },
+     {
+      "phrase": "Ñaata la?",
+      "meaning": "¿Cuánto cuesta? (wolof)",
+      "translation": "¿Cuánto cuesta? (wolof)",
+      "pronunciation": "NYAH-tah lah"
+     },
+     {
+      "phrase": "Ba beneen yoon",
+      "meaning": "Hasta luego (wolof)",
+      "translation": "Hasta luego (wolof)",
+      "pronunciation": "bah beh-NEHN yohn"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "El país más pequeño del África continental se extiende a lo largo del río Gambia. Bajo la influencia del Imperio de Malí y punto clave de la trata de esclavos, se independizó del Reino Unido en 1965.",
+    "milestones": [
+     "1651: Colonos de Curlandia se instalan en la isla James (Kunta Kinteh)",
+     "1816: Los británicos fundan Bathurst (Banjul)",
+     "1965: Independencia",
+     "2003: La isla Kunta Kinteh entra en la lista de la UNESCO"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Domoda (guiso de carne con crema de cacahuete)",
+     "Benachin (arroz especiado en una sola olla)",
+     "Yassa (pollo con salsa de limón y cebolla)"
+    ],
+    "traditionalDrinks": [
+     "Wonjo (bebida de hibisco)",
+     "Zumo de baobab (bouye)",
+     "Attaya (té verde espumoso)"
+    ],
+    "streetFoodAndDesserts": [
+     "Afra (carne a la brasa especiada)",
+     "Pan tapalapa con akara",
+     "Chakery (postre de cuscús y yogur)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Sir Dawda Jawara (primer presidente)",
+     "Fatou Bensouda (fiscal jefe de la CPI)",
+     "Jaliba Kuyateh (maestro de la kora)"
+    ],
+    "strongSectors": [
+     "Turismo",
+     "Cultivo de cacahuete",
+     "Pesca y remesas"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Manda el efectivo en dalasi; hay cajeros en la costa, pero las tarjetas casi solo se aceptan en hoteles. El dinero móvil como Wave y QMoney es habitual.",
+    "tippingCulture": "Se agradece un 10 % en restaurantes turísticos; pequeñas propinas para guías y conductores.",
+    "economicPillars": "Turismo, agricultura (cacahuete), pesca, comercio de reexportación y remesas."
+   }
+  },
+  "itin": {
+   "routeName": "Ruta por Gambia: Banjul, costa de Senegambia, costa sur y río arriba",
+   "routeSummary": "Una ruta de 8 días desde Banjul y la isla Kunta Kinteh hasta las playas de Kololi, la costa pesquera de Tanji y las islas de chimpancés cerca de Janjanbureh.",
+   "totalDays": 8,
+   "idealDurationText": "Itinerario de 8 días por Gambia",
+   "bestSeason": "Noviembre – mayo (estación seca; de noviembre a febrero es lo más fresco y agradable)",
+   "transportMode": "Taxi turístico/coche con conductor + barcos fluviales y tours organizados",
+   "paceLevel": "Tranquilo (Costa + Río)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Banjul e isla Kunta Kinteh",
+     "recommendedDuration": "1-2 Días (Historia)",
+     "durationBadge": "2 Días",
+     "highlights": [
+      "Monumento Arch 22",
+      "Mercado Albert",
+      "Isla Kunta Kinteh y aldea de Juffureh"
+     ],
+     "activities": [
+      "Toma un barco desde Banjul hasta la isla Kunta Kinteh.",
+      "Visita el museo de la trata de esclavos en Juffureh.",
+      "Compra telas y especias en el Mercado Albert."
+     ],
+     "foodAndDrinks": [
+      "Domoda",
+      "Wonjo"
+     ],
+     "criticalTips": [
+      "Reserva las excursiones fluviales con operadores con licencia.",
+      "Vigila bolso y móvil entre el gentío del mercado."
+     ],
+     "mapsQuery": "Banjul, Gambia"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Kololi, Bakau y Serrekunda",
+     "recommendedDuration": "2 Días (Costa y cultura)",
+     "durationBadge": "2 Días",
+     "highlights": [
+      "Avenida y playa de Senegambia",
+      "Estanque de cocodrilos de Kachikally",
+      "Parque Forestal de Bijilo (monos)",
+      "Mercado de Serrekunda"
+     ],
+     "activities": [
+      "Observa los colobos rojos en Bijilo.",
+      "Visita el estanque sagrado de cocodrilos de Kachikally.",
+      "Pasea por la playa de Kotu al atardecer."
+     ],
+     "foodAndDrinks": [
+      "Afra",
+      "Benachin",
+      "Zumo de baobab"
+     ],
+     "criticalTips": [
+      "Di un “no” claro a los bumsters.",
+      "No des de comer a los monos."
+     ],
+     "mapsQuery": "Kololi, Gambia"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Tanji, Abuko y Kartong",
+     "recommendedDuration": "1-2 Días (Naturaleza y pueblos pesqueros)",
+     "durationBadge": "2 Días",
+     "highlights": [
+      "Pueblo pesquero de Tanji y ahumado de pescado",
+      "Reserva Natural de Abuko",
+      "Reserva de aves de Tanji",
+      "Playas de Kartong"
+     ],
+     "activities": [
+      "Observa por la tarde la llegada de las barcas a Tanji.",
+      "Observa aves en Abuko.",
+      "Disfruta de un día de playa tranquilo en Kartong."
+     ],
+     "foodAndDrinks": [
+      "Barracuda o ladyfish a la parrilla",
+      "Yassa"
+     ],
+     "criticalTips": [
+      "Pide permiso a los pescadores antes de hacer fotos en Tanji.",
+      "Para aves en Abuko, lo mejor es a primera hora."
+     ],
+     "mapsQuery": "Tanji, Gambia"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Janjanbureh y Parque Nacional del Río Gambia",
+     "recommendedDuration": "2 Días (Río y fauna)",
+     "durationBadge": "2 Días",
+     "highlights": [
+      "Chimpancés en las Baboon Islands (desde el barco)",
+      "Círculos de piedra de Wassu",
+      "Antiguo pueblo colonial de Janjanbureh"
+     ],
+     "activities": [
+      "Navega alrededor de las islas de chimpancés.",
+      "Contempla los círculos megalíticos de Wassu.",
+      "Busca hipopótamos y aves en el río."
+     ],
+     "foodAndDrinks": [
+      "Superkanja (sopa de quimbombó)",
+      "Attaya"
+     ],
+     "criticalTips": [
+      "El trayecto es largo y cansado; elige coche con conductor o un tour organizado.",
+      "Está prohibido desembarcar en las islas de chimpancés; se observan solo desde el barco."
+     ],
+     "mapsQuery": "Janjanbureh, Gambia"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Domoda (guiso de carne con crema de cacahuete)",
+     "Benachin (arroz especiado en una sola olla)",
+     "Yassa (pollo con salsa de limón y cebolla)"
+    ],
+    "drinks": [
+     "Wonjo (bebida de hibisco)",
+     "Zumo de baobab (bouye)",
+     "Attaya (té verde espumoso)"
+    ],
+    "streetFoods": [
+     "Afra (carne a la brasa especiada)",
+     "Pan tapalapa con akara",
+     "Chakery (postre de cuscús y yogur)"
+    ],
+    "diningAdvice": "Se suele comer de un mismo cuenco con la mano derecha; la base es arroz con salsa. El té attaya se sirve en tres rondas con larga conversación."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptador de enchufe tipo G (británico)",
+     "Repelente y pastillas antipalúdicas",
+     "Protector solar y sombrero",
+     "Efectivo en dalasi en billetes pequeños"
+    ],
+    "safetyAndEtiquette": [
+     "En la costa, muévete solo con guías y taxis con licencia.",
+     "Respeta la ropa discreta y la regla de la mano derecha."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Se usan enchufes británicos de tres patillas planas (tipo G); necesitas adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "El agua del grifo no es potable; usa agua embotellada sellada.",
+    "vaccines": [
+     "Fiebre amarilla (recomendada; certificado obligatorio si llegas de un país de riesgo)",
+     "Hepatitis A y fiebre tifoidea",
+     "Prevención de la malaria (consulta a tu médico)",
+     "Vacunas de rutina"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "116"
+   },
+   "tipping": {
+    "custom": "La propina no es obligatoria, pero se agradece en zonas turísticas.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "En restaurantes basta un 10 %; da algo extra a guías y patrones de barca."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Sin devolución de IVA para turistas (IVA 15 %)",
+    "minSpend": "No aplica",
+    "customsNote": "Gambia no tiene sistema de devolución de IVA (tax-free) para turistas; el IVA está incluido en los precios."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "$1.00 - $3.00",
+    "topCarriers": [
+     "Africell",
+     "QCell",
+     "Gamcel"
+    ],
+    "airportSimTrapWarning": "En el aeropuerto de Banjul la oferta de SIM es escasa; lo más fácil es comprarla con pasaporte en una tienda Africell o QCell. Hay pocas opciones de eSIM local."
+   },
+   "touristScams": [
+    {
+     "title": "Amistad del bumster",
+     "desc": "Jóvenes que se hacen amigos en la playa, “guían” y luego exigen dinero.",
+     "tip": "Contrata guías con licencia (con carné verde oficial) o tours del hotel."
+    },
+    {
+     "title": "Tarifas de taxi turístico",
+     "desc": "A los extranjeros se les cobra por encima de la tarifa oficial.",
+     "tip": "Mira el cartel de precios y acuerda la tarifa antes de subir."
+    },
+    {
+     "title": "Historias de donativos",
+     "desc": "Piden dinero para un familiar enfermo, la escuela o un funeral.",
+     "tip": "Dona a través de organizaciones registradas."
+    }
+   ]
+  }
+ },
+ "ru": {
+  "insights": {
+   "currency": "Гамбийский даласи (GMD)",
+   "plugType": "Тип G (230V, 50Hz)",
+   "bestMonths": "Ноябрь – май (сухой сезон; с ноября по февраль прохладнее и комфортнее всего)",
+   "safety": {
+    "safetyScore": 55,
+    "safetyLevel": "Умеренный Риск",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60",
+    "crimeRateSummary": "Насильственные преступления редки; главные проблемы туристического побережья — навязчивые пляжные зазывалы («бамстеры»), мелкие кражи и безлюдные пляжи ночью.",
+    "commonScams": [
+     "Бамстеры, которые «дружатся» на пляже, а потом просят деньги за экскурсии, поездки или помощь",
+     "Завышенные цены для иностранцев в туристических такси и на рынках",
+     "Выдуманные истории о пожертвованиях на школу, деревню или похороны"
+    ],
+    "safeTravelTips": [
+     "Отвечайте зазывалам вежливым, но твёрдым «нет»; путешествуйте с отелем или лицензированными гидами.",
+     "Не гуляйте ночью по пляжам и неосвещённым дорогам.",
+     "Обсудите с врачом профилактику малярии и репелленты."
+    ],
+    "emergencyNumbers": {
+     "police": "117",
+     "ambulance": "116",
+     "general": "117"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Хороший 4G на побережье и вокруг Банжула; вглубь страны — 3G/2G",
+    "costPerGbUsd": "~1.00 - 3.00 $",
+    "esimAvailability": "Ограниченная",
+    "bestCarriers": [
+     "Africell",
+     "QCell",
+     "Gamcel"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Ограниченный",
+    "costLevel": "Бюджетный",
+    "singleTicketUsd": "0.20 - 0.60 $",
+    "dailyPassUsd": "15 - 30 $",
+    "popularRideApps": [
+     "Крупных приложений такси нет",
+     "Зелёные туристические такси",
+     "Жёлто-зелёные городские такси"
+    ],
+    "taxiAdvice": "Uber и Bolt нет. Зелёные туристические такси работают по фиксированным, но высоким тарифам; жёлто-зелёные городские такси и маршрутки «геле-геле» очень дёшевы. Договаривайтесь о цене до посадки."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "30 - 45 $",
+    "dailyBudgetMidrangeUsd": "70 - 120 $",
+    "budgetMealUsd": "3 - 8 $",
+    "coffeeUsd": "1.50 - 3 $",
+    "waterBottleUsd": "0.40 - 0.80 $",
+    "hostelDormUsd": "12 - 25 $",
+    "hotel3StarUsd": "45 - 90 $",
+    "flightCostIndex": "Средне-высокий",
+    "flightTip": "Прямых рейсов из Турции нет; летят через Дакар, Брюссель или зимними чартерами (ноябрь–апрель)."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Принято долго здороваться, расспрашивая о семье и здоровье, — не торопитесь.",
+     "Ешьте, давайте деньги и здоровайтесь правой рукой.",
+     "В деревнях и религиозных местах закрывайте плечи и колени.",
+     "Спрашивайте разрешения на фото."
+    ],
+    "festivals": [
+     "Фестиваль Картонг (февраль)",
+     "Фестиваль Roots (Джуффуре)",
+     "Ураза-байрам и Курбан-байрам (Тобаски)"
+    ],
+    "lifestyle": "«Улыбающийся берег»: беседы за чаем аттайя, музыка коры и традиция борьбы задают неспешный ритм жизни."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Остров Кунта-Кинте и Джуффуре (ЮНЕСКО)",
+     "Заповедник Абуко",
+     "Крокодиловый пруд Качикалли (Бакау)",
+     "Рыбацкая деревня Танджи",
+     "Национальный парк реки Гамбия (острова шимпанзе)",
+     "Каменные круги Вассу (ЮНЕСКО)"
+    ],
+    "bestSeasons": "Ноябрь – май (сухой сезон; с ноября по февраль прохладнее и комфортнее всего)",
+    "travelStyleTip": "Остановитесь в отеле на побережье и совершайте однодневные поездки; вглубь страны удобнее всего ехать организованным туром на 2-3 дня."
+   },
+   "religion": {
+    "primaryReligions": "Ислам (~95 %), христианство (~4 %) и традиционные верования.",
+    "respectNorms": "В Рамадан не ешьте днём на людях; в мечети входите только с разрешения и в закрытой одежде.",
+    "sacredSites": [
+     "Мечеть короля Фахда, Банжул",
+     "Священный крокодиловый пруд Качикалли",
+     "Священный пруд Фолонко (Картонг)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Английский (официальный). Широко распространены мандинка, волоф, фула и джола.",
+    "englishProficiency": "Хороший: на туристическом побережье и в городах говорят по-английски, в деревнях преобладают волоф и мандинка.",
+    "phrases": [
+     {
+      "phrase": "Nanga def?",
+      "meaning": "Как дела? (волоф)",
+      "translation": "Как дела? (волоф)",
+      "pronunciation": "NAHN-gah def"
+     },
+     {
+      "phrase": "Jërëjëf",
+      "meaning": "Спасибо (волоф)",
+      "translation": "Спасибо (волоф)",
+      "pronunciation": "jeh-reh-JEF"
+     },
+     {
+      "phrase": "Abaraka",
+      "meaning": "Спасибо (мандинка)",
+      "translation": "Спасибо (мандинка)",
+      "pronunciation": "ah-bah-RAH-kah"
+     },
+     {
+      "phrase": "Ñaata la?",
+      "meaning": "Сколько стоит? (волоф)",
+      "translation": "Сколько стоит? (волоф)",
+      "pronunciation": "NYAH-tah lah"
+     },
+     {
+      "phrase": "Ba beneen yoon",
+      "meaning": "До встречи (волоф)",
+      "translation": "До встречи (волоф)",
+      "pronunciation": "bah beh-NEHN yohn"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Самая маленькая страна материковой Африки тянется вдоль реки Гамбия. Когда-то она входила в сферу влияния империи Мали и была важным пунктом работорговли, а в 1965 году получила независимость от Великобритании.",
+    "milestones": [
+     "1651: Курляндцы основывают поселение на острове Джеймс (Кунта-Кинте)",
+     "1816: Британцы основывают Батерст (Банжул)",
+     "1965: Независимость",
+     "2003: Остров Кунта-Кинте включён в список ЮНЕСКО"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Домода (мясное рагу с арахисовой пастой)",
+     "Бенечин (пряный рис в одном котле)",
+     "Ясса (курица в лимонно-луковом соусе)"
+    ],
+    "traditionalDrinks": [
+     "Вонджо (напиток из гибискуса)",
+     "Сок баобаба (буйе)",
+     "Аттайя (зелёный чай с пенкой)"
+    ],
+    "streetFoodAndDesserts": [
+     "Афра (пряное мясо на углях)",
+     "Хлеб тапалапа с акарой",
+     "Чакери (десерт из кускуса с йогуртом)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Сэр Дауда Джавара (первый президент)",
+     "Фату Бенсуда (главный прокурор МУС)",
+     "Джалиба Куяте (мастер коры)"
+    ],
+    "strongSectors": [
+     "Туризм",
+     "Выращивание арахиса",
+     "Рыболовство и денежные переводы"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Главное — наличные даласи; банкоматы есть на побережье, но карты принимают в основном отели. Распространены мобильные деньги Wave и QMoney.",
+    "tippingCulture": "В туристических ресторанах уместны около 10 %; небольшие чаевые гидам и водителям.",
+    "economicPillars": "Туризм, сельское хозяйство (арахис), рыболовство, реэкспорт и денежные переводы."
+   }
+  },
+  "itin": {
+   "routeName": "Маршрут по Гамбии: Банжул, побережье Сенегамбии, юг и вверх по реке",
+   "routeSummary": "8-дневный маршрут от Банжула и острова Кунта-Кинте к пляжам Кололи, рыбацкому берегу Танджи и островам шимпанзе у Джанджанбуре.",
+   "totalDays": 8,
+   "idealDurationText": "8-дневный маршрут по Гамбии",
+   "bestSeason": "Ноябрь – май (сухой сезон; с ноября по февраль прохладнее и комфортнее всего)",
+   "transportMode": "Туристическое такси/машина с водителем + речные лодки и организованные туры",
+   "paceLevel": "Неспешный (Побережье + Река)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Остановка 1: Банжул и остров Кунта-Кинте",
+     "recommendedDuration": "1-2 дня (История)",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Монумент Arch 22",
+      "Рынок Альберт",
+      "Остров Кунта-Кинте и деревня Джуффуре"
+     ],
+     "activities": [
+      "Отправьтесь на лодке из Банжула на остров Кунта-Кинте.",
+      "Посетите музей работорговли в Джуффуре.",
+      "Купите ткани и специи на рынке Альберт."
+     ],
+     "foodAndDrinks": [
+      "Домода",
+      "Вонджо"
+     ],
+     "criticalTips": [
+      "Бронируйте речные поездки у лицензированных операторов.",
+      "В толпе на рынке следите за сумкой и телефоном."
+     ],
+     "mapsQuery": "Banjul, Gambia"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Остановка 2: Кололи, Бакау и Серекунда",
+     "recommendedDuration": "2 дня (Побережье и культура)",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Улица и пляж Сенегамбия",
+      "Крокодиловый пруд Качикалли",
+      "Лесной парк Биджило (обезьяны)",
+      "Рынок Серекунды"
+     ],
+     "activities": [
+      "Понаблюдайте за красными колобусами в Биджило.",
+      "Посетите священный крокодиловый пруд Качикалли.",
+      "Прогуляйтесь по пляжу Коту на закате."
+     ],
+     "foodAndDrinks": [
+      "Афра",
+      "Бенечин",
+      "Сок баобаба"
+     ],
+     "criticalTips": [
+      "Говорите бамстерам твёрдое «нет».",
+      "Не кормите обезьян."
+     ],
+     "mapsQuery": "Kololi, Gambia"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Остановка 3: Танджи, Абуко и Картонг",
+     "recommendedDuration": "1-2 дня (Природа и рыбацкие деревни)",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Рыбацкая деревня Танджи и копчение рыбы",
+      "Заповедник Абуко",
+      "Птичий заповедник Танджи",
+      "Пляжи Картонга"
+     ],
+     "activities": [
+      "Днём посмотрите, как в Танджи возвращаются лодки.",
+      "Понаблюдайте за птицами в Абуко.",
+      "Проведите спокойный пляжный день в Картонге."
+     ],
+     "foodAndDrinks": [
+      "Барракуда или ледифиш на гриле",
+      "Ясса"
+     ],
+     "criticalTips": [
+      "В Танджи спрашивайте рыбаков, прежде чем фотографировать.",
+      "Птиц в Абуко лучше смотреть рано утром."
+     ],
+     "mapsQuery": "Tanji, Gambia"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Остановка 4: Джанджанбуре и национальный парк реки Гамбия",
+     "recommendedDuration": "2 дня (Река и дикая природа)",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Шимпанзе на островах Бабун (с лодки)",
+      "Каменные круги Вассу",
+      "Старый колониальный городок Джанджанбуре"
+     ],
+     "activities": [
+      "Проплывите на лодке вокруг островов шимпанзе.",
+      "Осмотрите мегалитические круги Вассу.",
+      "Высматривайте бегемотов и птиц на реке."
+     ],
+     "foodAndDrinks": [
+      "Суперканджа (суп с бамией)",
+      "Аттайя"
+     ],
+     "criticalTips": [
+      "Дорога долгая и утомительная; берите машину с водителем или тур.",
+      "Высаживаться на острова шимпанзе запрещено — только наблюдение с лодки."
+     ],
+     "mapsQuery": "Janjanbureh, Gambia"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Домода (мясное рагу с арахисовой пастой)",
+     "Бенечин (пряный рис в одном котле)",
+     "Ясса (курица в лимонно-луковом соусе)"
+    ],
+    "drinks": [
+     "Вонджо (напиток из гибискуса)",
+     "Сок баобаба (буйе)",
+     "Аттайя (зелёный чай с пенкой)"
+    ],
+    "streetFoods": [
+     "Афра (пряное мясо на углях)",
+     "Хлеб тапалапа с акарой",
+     "Чакери (десерт из кускуса с йогуртом)"
+    ],
+    "diningAdvice": "Часто едят из общей миски правой рукой; основа — рис с соусом. Чай аттайя подают в три круга с долгими разговорами."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Переходник для розеток типа G (британские)",
+     "Репеллент и таблетки от малярии",
+     "Солнцезащитный крем и шляпа",
+     "Наличные даласи мелкими купюрами"
+    ],
+    "safetyAndEtiquette": [
+     "На побережье передвигайтесь только с лицензированными гидами и такси.",
+     "Соблюдайте скромный дресс-код и правило правой руки."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Используются британские розетки с тремя плоскими штырями (тип G); нужен переходник."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Водопроводную воду пить нельзя; пейте запечатанную бутилированную воду.",
+    "vaccines": [
+     "Жёлтая лихорадка (рекомендуется; сертификат обязателен при прибытии из страны риска)",
+     "Гепатит A и брюшной тиф",
+     "Профилактика малярии (проконсультируйтесь с врачом)",
+     "Плановые прививки"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "116"
+   },
+   "tipping": {
+    "custom": "Чаевые не обязательны, но в туристических местах их ценят.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "В ресторане достаточно 10 %; гидам и лодочникам — небольшая доплата."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Возврата НДС туристам нет (НДС 15 %)",
+    "minSpend": "Не применяется",
+    "customsNote": "В Гамбии нет системы tax-free для туристов; НДС уже включён в цены."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "$1.00 - $3.00",
+    "topCarriers": [
+     "Africell",
+     "QCell",
+     "Gamcel"
+    ],
+    "airportSimTrapWarning": "В аэропорту Банжула выбор SIM невелик; проще купить её по паспорту в салоне Africell или QCell. Местных eSIM мало."
+   },
+   "touristScams": [
+    {
+     "title": "«Дружба» бамстера",
+     "desc": "Молодые люди знакомятся на пляже, «водят по местам», а потом требуют денег.",
+     "tip": "Нанимайте лицензированных гидов (с официальным зелёным удостоверением) или туры от отеля."
+    },
+    {
+     "title": "Тарифы туристических такси",
+     "desc": "Иностранцам называют цену выше официального тарифа.",
+     "tip": "Сверьтесь с табличкой цен и договоритесь до посадки."
+    },
+    {
+     "title": "Трогательные истории о пожертвованиях",
+     "desc": "Просят деньги на больного родственника, учёбу или похороны.",
+     "tip": "Жертвуйте через зарегистрированные организации."
+    }
+   ]
+  }
+ }
+}

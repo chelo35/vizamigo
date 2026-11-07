@@ -1,0 +1,1937 @@
+{
+ "tr": {
+  "insights": {
+   "currency": "Etiyopya Birri (ETB)",
+   "plugType": "Tip C, E, F, L (220V, 50Hz)",
+   "bestMonths": "Ekim – Mart (kurak mevsim; yeşil manzaralar ekim – kasımda). Büyük yağmurlar (kiremt) Haziran – Eylül arasıdır. Timket (19 Ocak) ve Meskel (27 Eylül) en renkli dönemlerdir.",
+   "safety": {
+    "safetyScore": 40,
+    "safetyLevel": "Hassas / Tedbir Gerekir",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60",
+    "crimeRateSummary": "Ülke genelinde silahlı çatışma ve iç huzursuzluk riski var: Amhara bölgesinde (Lalibela, Gondar, Simien Dağları dahil) süren çatışmalar, Tigray ve Oromia’nın bazı kesimleri ile Eritre, Somali, Kenya, Sudan ve Güney Sudan sınır bölgeleri için resmî “gitmeyin” uyarıları var; yol kapanmaları ve internet kesintileri yaşanabiliyor. Addis Ababa’da kapkaç, telefon hırsızlığı ve dolandırıcılık yaygın.",
+    "commonScams": [
+     "“Öğrenciyim” diyerek arkadaş olup sizi pahalı bir kahve seremonisine veya bara götürenler",
+     "Kalabalıkta biri dikkatinizi dağıtırken (ör. üstünüze tükürük/sıvı) telefon çalınması",
+     "Sahte rehberlerin Omo Vadisi köylerinde fotoğraf başına fahiş ücret istemesi"
+    ],
+    "safeTravelTips": [
+     "Amhara bölgesine (Lalibela, Gondar, Bahir Dar, Simien) ve sınır bölgelerine karayoluyla gitmeyin; güncel resmî uyarıları takip edin.",
+     "Addis Ababa’da telefonunuzu sokakta açıkta kullanmayın; gece Ride/Feres ile ulaşım sağlayın.",
+     "Güneydeki gezilerde kayıtlı acente ve yerel rehber kullanın, gece yolculuğundan kaçının."
+    ],
+    "emergencyNumbers": {
+     "police": "991",
+     "ambulance": "907",
+     "general": "991"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Addis Ababa ve büyük şehirlerde 4G iyi, başkentte sınırlı 5G; kırsalda zayıf. Çatışma bölgelerinde internet uzun süre kesilebilir.",
+    "costPerGbUsd": "~0.40 - 1.50 $",
+    "esimAvailability": "Orta (Safaricom ve Ethio Telecom eSIM sunar; uluslararası eSIM’ler pahalıdır)",
+    "bestCarriers": [
+     "Ethio Telecom",
+     "Safaricom Ethiopia"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Orta (Addis hafif raylısı ve minibüsler; şehirlerarası otobüsler yavaş)",
+    "costLevel": "Ucuz",
+    "singleTicketUsd": "0.05 - 0.30 $ (hafif raylı / minibüs)",
+    "dailyPassUsd": "Yok",
+    "popularRideApps": [
+     "Ride",
+     "Feres",
+     "Yango"
+    ],
+    "taxiAdvice": "Addis Ababa’da yerli uygulamalar Ride ve Feres ile Yango yaygındır ve fiyatı önceden gösterir. Mavi-beyaz minibüsler çok ucuz ama kalabalıktır. Uzun mesafelerde Ethiopian Airlines iç hatları (özellikle uluslararası uçuşla gelenlere indirimli) hem hızlı hem güvenlidir; Selam Bus ve Sky Bus şehirlerarası otobüs seçenekleridir."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "25 - 45 $",
+    "dailyBudgetMidrangeUsd": "70 - 130 $",
+    "budgetMealUsd": "3 - 6 $",
+    "coffeeUsd": "0.30 - 1.50 $",
+    "waterBottleUsd": "0.40 - 0.80 $",
+    "hostelDormUsd": "10 - 20 $",
+    "hotel3StarUsd": "50 - 110 $",
+    "flightCostIndex": "Uygun (direkt uçuşlar)",
+    "flightTip": "İstanbul – Addis Ababa arasında THY ve Ethiopian Airlines direkt uçar (~5,5 saat). Ethiopian ile gelirseniz iç hat biletlerinde önemli indirim alabilirsiniz; biletleri resmî sitesinden veya ofisinden alın."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Selamlaşmada tokalaşırken sol elle sağ bileği tutmak ve hafifçe eğilmek saygı ifadesidir; tanıdıklar omuz omuza dokunur.",
+     "Ortak injera tabağından sağ elle yenir; ev sahibinin ağzınıza lokma vermesi (gursha) reddedilmez.",
+     "Kahve seremonisi ~1 saat sürer; üç fincanı içmek nezakettir.",
+     "Omo Vadisi’nde fotoğraf için ücret ve izin önceden konuşulur; köylere rehbersiz girmeyin."
+    ],
+    "festivals": [
+     "Timket (Epifani, 19 Ocak; artık yıllarda 20 Ocak)",
+     "Meskel (Gerçek Haç Bayramı, 27 Eylül, UNESCO)",
+     "Enkutatash (Etiyopya Yılbaşı, 11 Eylül) ve Irreecha (Oromo şükran bayramı, ekim başı)"
+    ],
+    "lifestyle": "Etiyopya kendi takvimini (yıl 7–8 yıl geride, 13 ay) ve 12 saatlik günü (gün doğumundan itibaren) kullanır; saat ve tarihlerde karışıklığa dikkat edin. Kahve kültürün kalbidir; Ortodoks topluluk çarşamba ve cuma günleri ile uzun perhizlerde hayvansal ürün yemez, bu nedenle vegan “yetsom beyaynetu” her yerde bulunur."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Addis Ababa: Ulusal Müze (Lucy) ve Merkato çarşısı",
+     "Lalibela kaya kiliseleri (UNESCO – şu an güvenlik nedeniyle önerilmiyor)",
+     "Rift Vadisi gölleri (Hawassa, Langano, Abijatta-Shalla)",
+     "Arba Minch, Nechisar Milli Parkı ve Dorze köyü",
+     "Omo Vadisi halkları (Jinka, Turmi, Mursi ve Hamer)",
+     "Konso kültürel peyzajı (UNESCO)"
+    ],
+    "bestSeasons": "Ekim – Mart",
+    "travelStyleTip": "Güvenlik durumu nedeniyle kuzeydeki tarihi rota (Lalibela, Gondar, Aksum) yerine Addis Ababa ve güneydeki Rift Vadisi – Omo hattına odaklanın. Durumu her gün kontrol edin; uzun mesafeleri iç hat uçuşuyla geçin."
+   },
+   "religion": {
+    "primaryReligions": "Etiyopya Ortodoks Tewahedo ~%43, Müslüman ~%31-34, Protestan (P’ent’ay) ~%20, geleneksel inançlar azınlıkta",
+    "respectNorms": "Kiliselere ayakkabı çıkarılarak girilir, kadınlar başını örter (netela şalı); ayinlerde flaş kullanmayın. Bazı manastırlara kadınlar giremez.",
+    "sacredSites": [
+     "Kutsal Teslis Katedrali (Addis Ababa)",
+     "Harar Jugol surlarla çevrili şehri (UNESCO, yüzlerce cami ve türbe)",
+     "Lalibela kaya kiliseleri (Ortodoks hac yeri)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Federal çalışma dili Amharcadır; Afaan Oromo, Tigrinya, Somalice ve Afarca da federal düzeyde resmîdir. Ülkede 80’den fazla dil konuşulur.",
+    "englishProficiency": "Orta; Addis Ababa’da eğitimli kesim ve turizm çalışanları İngilizce konuşur, güneyde rehber gerekir.",
+    "phrases": [
+     {
+      "phrase": "ሰላም (selam)",
+      "meaning": "Merhaba (Amharca)",
+      "translation": "Merhaba",
+      "pronunciation": "seh-LAHM"
+     },
+     {
+      "phrase": "ጤና ይስጥልኝ (tena yistilign)",
+      "meaning": "Merhaba (resmî; “Tanrı sağlık versin”)",
+      "translation": "İyi günler",
+      "pronunciation": "TEH-na yis-TIL-ign"
+     },
+     {
+      "phrase": "አመሰግናለሁ (ameseginalehu)",
+      "meaning": "Teşekkür ederim (Amharca)",
+      "translation": "Teşekkürler",
+      "pronunciation": "a-meh-seg-NA-leh-hu"
+     },
+     {
+      "phrase": "ስንት ነው? (sint new?)",
+      "meaning": "Ne kadar? (Amharca)",
+      "translation": "Kaç para?",
+      "pronunciation": "sint NEH-oo"
+     },
+     {
+      "phrase": "እሺ (ishi)",
+      "meaning": "Tamam / Peki (Amharca)",
+      "translation": "Tamam",
+      "pronunciation": "ISH-ee"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "İnsanlığın beşiklerinden biridir (3,2 milyon yıllık “Lucy” fosili). Aksum Krallığı 4. yüzyılda Hristiyanlığı kabul etti; 12–13. yüzyılda Lalibela kaya kiliseleri, 17. yüzyılda Gondar kaleleri inşa edildi. 1896 Adwa zaferiyle İtalyan işgali püskürtüldü ve ülke Afrika’da sömürgeleştirilmeyen nadir devletlerden biri oldu (1936–41 İtalyan işgali hariç). 1974’te imparatorluk sona erdi, 1991’den sonra federal yapı kuruldu.",
+    "milestones": [
+     "4. yüzyıl: Aksum’un Hristiyanlığı kabulü",
+     "1896: Adwa Zaferi",
+     "1974: İmparator Haile Selassie döneminin sonu",
+     "2024: Birr’in serbest kura geçmesi"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Doro wat (berbere soslu tavuk yahnisi, haşlanmış yumurtayla)",
+     "Kitfo (baharatlı tereyağlı kıyma, çiğ veya az pişmiş)",
+     "Beyaynetu (injera üzerinde karışık vegan oruç tabağı)"
+    ],
+    "traditionalDrinks": [
+     "Buna (kahve seremonisi; Etiyopya kahvenin anavatanıdır)",
+     "Tej (bal şarabı)",
+     "Spris (katmanlı meyve suyu) ve Ambo maden suyu"
+    ],
+    "streetFoodAndDesserts": [
+     "Sambusa",
+     "Kolo (kavrulmuş arpa ve nohut)",
+     "Dabo kolo ve ambasha ekmeği"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Abebe Bikila (1960 Roma’da çıplak ayakla maraton olimpiyat şampiyonu)",
+     "Haile Gebrselassie (uzun mesafe efsanesi)",
+     "Mulatu Astatke (Ethio-jazz’ın babası)"
+    ],
+    "strongSectors": [
+     "Kahve ve tarım (ihracatın büyük kısmı)",
+     "Havacılık (Ethiopian Airlines, Afrika’nın en büyük havayolu)",
+     "Kesme çiçek ve hidroelektrik (GERD barajı)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Birr Temmuz 2024’te serbest kura geçti ve değer kaybetti; kurlar hızlı değişir. Büyük otellerde kart geçer, ama çoğu yerde nakit veya mobil ödeme (Telebirr, M-PESA) kullanılır. Bankalarda bozdurun ve fişleri saklayın; çıkışta birr çevirmek için gerekebilir.",
+    "tippingCulture": "Bahşiş yaygındır: restoranda %5-10, rehber ve şoförlere günlük ücret, kahve seremonisinde küçük bir miktar beklenir.",
+    "economicPillars": "Tarım (kahve, susam, çiçek), havacılık, hizmetler, inşaat ve hidroelektrik."
+   }
+  },
+  "itin": {
+   "routeName": "Güney Etiyopya Rotası: Addis Ababa, Rift Gölleri, Arba Minch ve Omo Vadisi",
+   "routeSummary": "Addis Ababa’nın müzeleri ve kahve kültüründen Rift Vadisi’nin kuş cenneti göllerine, Arba Minch’in timsahlı Chamo Gölü ve Dorze dokumacılarına, oradan Omo Vadisi halklarına uzanan 10 günlük güney rotası (kuzeydeki çatışma bölgelerinden uzak).",
+   "totalDays": 10,
+   "idealDurationText": "10 Günlük Rota",
+   "bestSeason": "Ekim – Mart",
+   "transportMode": "Kayıtlı acenteden şoförlü 4x4 + Addis – Arba Minch / Jinka iç hat uçuşu",
+   "paceLevel": "Dengeli (Kültür + Doğa + Etnografya)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "1. Durak: Addis Ababa",
+     "recommendedDuration": "3 Gün",
+     "durationBadge": "3 Gün",
+     "highlights": [
+      "Ulusal Müze ve Lucy fosili",
+      "Kutsal Teslis Katedrali",
+      "Merkato (Afrika’nın en büyük açık pazarlarından)",
+      "Entoto Dağı ve Unity Park"
+     ],
+     "activities": [
+      "Geleneksel bir kahve seremonisine katılın.",
+      "Akşam bir kültür restoranında eskista dansını izleyin.",
+      "Merkato’yu rehberle ve değerli eşya taşımadan gezin."
+     ],
+     "foodAndDrinks": [
+      "Doro wat",
+      "Kitfo",
+      "Buna (kahve)"
+     ],
+     "criticalTips": [
+      "Şehir 2.355 m yüksekliktedir; ilk gün yavaş olun.",
+      "Gece ulaşımı için Ride veya Feres kullanın."
+     ],
+     "mapsQuery": "Addis Ababa, Ethiopia"
+    },
+    {
+     "stopNumber": 2,
+     "name": "2. Durak: Rift Vadisi Gölleri ve Hawassa",
+     "recommendedDuration": "2 Gün",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "Abijatta-Shalla Gölleri Milli Parkı (flamingolar)",
+      "Hawassa balık pazarı ve Amora Gedel",
+      "Tabor Tepesi manzarası",
+      "Wondo Genet sıcak su kaynakları"
+     ],
+     "activities": [
+      "Sabah erken balık pazarında balıkçıları ve marabu leyleklerini izleyin.",
+      "Göl kıyısında tekne turuna çıkıp su aygırlarını görün.",
+      "Wondo Genet’te termal havuzlarda dinlenin."
+     ],
+     "foodAndDrinks": [
+      "Izgara tilapia (asa tibs)",
+      "Taze avokado-mango spris"
+     ],
+     "criticalTips": [
+      "Göl kıyısında yüzmeden önce yerel bilgi alın (bilharzia riski).",
+      "Yolda kontrol noktaları olabilir; pasaportunuzu yanınızda taşıyın."
+     ],
+     "mapsQuery": "Hawassa, Ethiopia"
+    },
+    {
+     "stopNumber": 3,
+     "name": "3. Durak: Arba Minch ve Dorze",
+     "recommendedDuration": "2 Gün",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "Chamo Gölü’nde dev timsahlar (“Timsah Pazarı”)",
+      "Nechisar Milli Parkı ve “Tanrı’nın Köprüsü”",
+      "Dorze köyünün fil kafası biçimli bambu evleri",
+      "Konso teraslı köyleri (UNESCO)"
+     ],
+     "activities": [
+      "Tekneyle Chamo Gölü’nde timsah ve su aygırı turuna çıkın.",
+      "Dorze’de dokuma atölyesini ve kocho (sahte muz) ekmeği yapımını görün.",
+      "Konso’da taş teraslar ve waka heykelleri arasında yürüyün."
+     ],
+     "foodAndDrinks": [
+      "Kocho ve kitfo",
+      "Areke (yerel anason rakısı)"
+     ],
+     "criticalTips": [
+      "Köy ziyaretlerinde ücretleri rehberinizle önceden netleştirin.",
+      "Sıtma riski vardır; akşamları kovucu ve uzun kollu giysi kullanın."
+     ],
+     "mapsQuery": "Arba Minch, Ethiopia"
+    },
+    {
+     "stopNumber": 4,
+     "name": "4. Durak: Omo Vadisi (Jinka ve Turmi)",
+     "recommendedDuration": "3 Gün",
+     "durationBadge": "3 Gün",
+     "highlights": [
+      "Mago Milli Parkı’ndaki Mursi köyleri",
+      "Turmi’de Hamer pazarı",
+      "Jinka Güney Omo Araştırma Merkezi ve Müzesi",
+      "Şansınız varsa Hamer boğa atlama töreni"
+     ],
+     "activities": [
+      "Jinka müzesinde vadinin halklarını tanıyın, ardından rehberle köy ziyareti yapın.",
+      "Haftalık köy pazarlarından birine (Turmi, Dimeka, Key Afer) denk getirin.",
+      "Fotoğraf öncesi kişiden izin isteyip ücretini doğrudan ona verin."
+     ],
+     "foodAndDrinks": [
+      "Tibs (sote et)",
+      "Shiro ve injera",
+      "Şişe su ve gazoz (kırsalda sınırlı seçenek)"
+     ],
+     "criticalTips": [
+      "Bölgeye yalnızca yerel rehber ve kayıtlı acenteyle gidin; yerel gerilimler hakkında güncel bilgi alın.",
+      "Jinka’ya Addis’ten uçmak, iki günlük kara yolundan tasarruf sağlar."
+     ],
+     "mapsQuery": "Jinka, Ethiopia"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Doro wat (berbere soslu tavuk yahnisi, haşlanmış yumurtayla)",
+     "Kitfo (baharatlı tereyağlı kıyma, çiğ veya az pişmiş)",
+     "Beyaynetu (injera üzerinde karışık vegan oruç tabağı)"
+    ],
+    "drinks": [
+     "Buna (kahve seremonisi; Etiyopya kahvenin anavatanıdır)",
+     "Tej (bal şarabı)",
+     "Spris (katmanlı meyve suyu) ve Ambo maden suyu"
+    ],
+    "streetFoods": [
+     "Sambusa",
+     "Kolo (kavrulmuş arpa ve nohut)",
+     "Dabo kolo ve ambasha ekmeği"
+    ],
+    "diningAdvice": "Injera her öğünün temelidir; çarşamba ve cuma günleri birçok restoran yalnızca vegan oruç yemekleri sunar. Kitfo ve çiğ et (kurt) mide sorunlarına yol açabilir, “leb leb” (az pişmiş) isteyin. Fiyatlara %15 KDV ve bazen %10 servis eklenir."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Powerbank ve el feneri (sık elektrik kesintisi)",
+     "Sivrisinek kovucu ve sıtma ilacı (doktorunuza danışın)",
+     "Küçük banknotlarda birr (fotoğraf ve bahşiş için)",
+     "Kilise ziyaretleri için şal veya başörtüsü"
+    ],
+    "safetyAndEtiquette": [
+     "Etnik ve siyasi konularda yorum yapmaktan kaçının.",
+     "Omo Vadisi’nde insanları izinsiz ve ücretsiz fotoğraflamayın."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "E",
+     "F",
+     "L"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Çoğunlukla iki yuvarlak pimli C/E/F prizler, bazı yerlerde İtalyan L tipi; Türk fişleri genelde uyar. Elektrik kesintileri sık olduğundan powerbank alın."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Musluk suyu içilmez; kapalı şişe su (ör. Highland, Aqua Addis) için, çiğ sebze ve buzdan kaçının.",
+    "vaccines": [
+     "Sarıhumma: endemik bölgeler için önerilir; risk ülkesinden gelişte sertifika istenir",
+     "Hepatit A, tifo ve kolera",
+     "Sıtma: 2.000 m altındaki bölgelerde (Rift, Omo) koruma gerekir",
+     "Kuduz ve menenjit (uzun kalışlarda)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "907"
+   },
+   "tipping": {
+    "custom": "Bahşiş beklenir; restoranda %5-10 bırakılır.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Faturada %10 servis bedeli yazıyorsa ek bahşiş isteğe bağlıdır. Rehber ve şoförlere günlük 5-15 $ yaygındır."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Turistlere KDV iadesi uygulanmıyor",
+    "minSpend": "Uygulanmaz",
+    "customsNote": "Etiyopya’da turistlere KDV iadesi yoktur. Antika, dinî eşya ve haç ihraç etmek için izin gerekir; büyük miktarda kahve ihracında sınırlamalar olabilir. Birr’i çıkışta bozdurmak için banka fişlerini saklayın."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.40 - $1.50",
+    "topCarriers": [
+     "Ethio Telecom",
+     "Safaricom Ethiopia"
+    ],
+    "airportSimTrapWarning": "Bole Havalimanı’nda Ethio Telecom ve Safaricom stantları vardır ve fiyatlar makuldür; pasaportla kayıt gerekir. Çatışma bölgelerinde internet kesilebileceğinden çevrimdışı haritaları indirin."
+   },
+   "touristScams": [
+    {
+     "title": "“Öğrenci” Arkadaşlığı",
+     "desc": "İngilizcesini geliştirmek isteyen “öğrenci” sizi bir kahve evine veya bara götürür, hesap fahiş çıkar.",
+     "tip": "Mekânı kendiniz seçin ve fiyatları önceden sorun."
+    },
+    {
+     "title": "Dikkat Dağıtma Hırsızlığı",
+     "desc": "Biri üstünüze bir şey döküp veya tükürüp temizlemeye çalışırken ortağı telefonunuzu alır.",
+     "tip": "Yardımı reddedin, çantanızı önünüzde tutup uzaklaşın."
+    },
+    {
+     "title": "Fotoğraf Ücreti Pazarlığı",
+     "desc": "Omo Vadisi’nde fotoğraf sayısı ve ücreti üzerinden sonradan tartışma çıkarılır.",
+     "tip": "Ücreti rehberle önceden netleştirin ve her fotoğrafı sayarak ödeyin."
+    }
+   ]
+  }
+ },
+ "en": {
+  "insights": {
+   "currency": "Ethiopian Birr (ETB)",
+   "plugType": "Type C, E, F, L (220V, 50Hz)",
+   "bestMonths": "October – March (dry season; landscapes are greenest in October – November). The big rains (kiremt) fall June – September. Timket (19 January) and Meskel (27 September) are the most colourful times.",
+   "safety": {
+    "safetyScore": 40,
+    "safetyLevel": "Caution Advised",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60",
+    "crimeRateSummary": "There is a nationwide risk of armed conflict and civil unrest: official “do not travel” warnings cover the Amhara region (including Lalibela, Gondar and the Simien Mountains) where fighting continues, parts of Tigray and Oromia, and the border areas with Eritrea, Somalia, Kenya, Sudan and South Sudan; road closures and internet shutdowns can occur. Bag snatching, phone theft and scams are common in Addis Ababa.",
+    "commonScams": [
+     "“Students” who befriend you and lead you to an overpriced coffee ceremony or bar",
+     "Phone theft while someone distracts you in a crowd (e.g. spitting or spilling something on you)",
+     "Fake guides demanding excessive per-photo fees in Omo Valley villages"
+    ],
+    "safeTravelTips": [
+     "Don’t travel by road to the Amhara region (Lalibela, Gondar, Bahir Dar, Simien) or border areas; follow current official advisories.",
+     "In Addis Ababa don’t use your phone openly on the street; at night travel with Ride or Feres.",
+     "Use a registered agency and local guides for trips in the south and avoid travelling at night."
+    ],
+    "emergencyNumbers": {
+     "police": "991",
+     "ambulance": "907",
+     "general": "991"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Good 4G in Addis Ababa and big cities, limited 5G in the capital; weak in rural areas. Internet can be cut for long periods in conflict regions.",
+    "costPerGbUsd": "~0.40 - 1.50 $",
+    "esimAvailability": "Moderate (Safaricom and Ethio Telecom offer eSIMs; international eSIMs are pricey)",
+    "bestCarriers": [
+     "Ethio Telecom",
+     "Safaricom Ethiopia"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Fair (Addis light rail and minibuses; intercity buses are slow)",
+    "costLevel": "Cheap",
+    "singleTicketUsd": "0.05 - 0.30 $ (light rail / minibus)",
+    "dailyPassUsd": "None",
+    "popularRideApps": [
+     "Ride",
+     "Feres",
+     "Yango"
+    ],
+    "taxiAdvice": "In Addis Ababa the local apps Ride and Feres, plus Yango, are widespread and show fares upfront. Blue-and-white minibuses are very cheap but crowded. For long distances Ethiopian Airlines domestic flights (discounted if you arrived on the airline internationally) are fast and safe; Selam Bus and Sky Bus run intercity coaches."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "25 - 45 $",
+    "dailyBudgetMidrangeUsd": "70 - 130 $",
+    "budgetMealUsd": "3 - 6 $",
+    "coffeeUsd": "0.30 - 1.50 $",
+    "waterBottleUsd": "0.40 - 0.80 $",
+    "hostelDormUsd": "10 - 20 $",
+    "hotel3StarUsd": "50 - 110 $",
+    "flightCostIndex": "Affordable (direct flights)",
+    "flightTip": "Turkish Airlines and Ethiopian Airlines fly direct Istanbul – Addis Ababa (~5.5 h). Arriving on Ethiopian gives big discounts on domestic tickets; buy them from the airline’s website or office."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "When shaking hands, touching your right wrist with your left hand and bowing slightly shows respect; friends bump shoulders.",
+     "Eat from the shared injera platter with your right hand; don’t refuse when the host feeds you a bite (gursha).",
+     "A coffee ceremony takes about an hour; it is polite to stay for three cups.",
+     "In the Omo Valley agree photo fees and permission upfront; don’t enter villages without a guide."
+    ],
+    "festivals": [
+     "Timket (Epiphany, 19 January; 20 January in leap years)",
+     "Meskel (Finding of the True Cross, 27 September, UNESCO)",
+     "Enkutatash (Ethiopian New Year, 11 September) and Irreecha (Oromo thanksgiving, early October)"
+    ],
+    "lifestyle": "Ethiopia uses its own calendar (7–8 years behind, 13 months) and a 12-hour clock counted from sunrise; watch for confusion over times and dates. Coffee is the heart of culture; Orthodox believers avoid animal products on Wednesdays, Fridays and long fasts, so vegan “yetsom beyaynetu” is available everywhere."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Addis Ababa: National Museum (Lucy) and Merkato market",
+     "Lalibela rock-hewn churches (UNESCO – currently not advised for security reasons)",
+     "Rift Valley lakes (Hawassa, Langano, Abijatta-Shalla)",
+     "Arba Minch, Nechisar National Park and Dorze village",
+     "Omo Valley peoples (Jinka, Turmi, Mursi and Hamer)",
+     "Konso cultural landscape (UNESCO)"
+    ],
+    "bestSeasons": "October – March",
+    "travelStyleTip": "Given the security situation, focus on Addis Ababa and the southern Rift Valley – Omo corridor rather than the northern historic route (Lalibela, Gondar, Aksum). Check conditions daily and cover long distances by domestic flight."
+   },
+   "religion": {
+    "primaryReligions": "Ethiopian Orthodox Tewahedo ~43%, Muslim ~31-34%, Protestant (P’ent’ay) ~20%, traditional beliefs a minority",
+    "respectNorms": "Remove shoes in churches; women cover their heads (a netela shawl); no flash during services. Women may not enter some monasteries.",
+    "sacredSites": [
+     "Holy Trinity Cathedral (Addis Ababa)",
+     "Harar Jugol walled city (UNESCO, scores of mosques and shrines)",
+     "Lalibela rock churches (Orthodox pilgrimage site)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "The federal working language is Amharic; Afaan Oromo, Tigrinya, Somali and Afar are also official at federal level. More than 80 languages are spoken.",
+    "englishProficiency": "Moderate; educated people and tourism staff in Addis Ababa speak English, in the south a guide is needed.",
+    "phrases": [
+     {
+      "phrase": "ሰላም (selam)",
+      "meaning": "Hello (Amharic)",
+      "translation": "Hello",
+      "pronunciation": "seh-LAHM"
+     },
+     {
+      "phrase": "ጤና ይስጥልኝ (tena yistilign)",
+      "meaning": "Hello (formal; “may God give you health”)",
+      "translation": "Good day",
+      "pronunciation": "TEH-na yis-TIL-ign"
+     },
+     {
+      "phrase": "አመሰግናለሁ (ameseginalehu)",
+      "meaning": "Thank you (Amharic)",
+      "translation": "Thank you",
+      "pronunciation": "a-meh-seg-NA-leh-hu"
+     },
+     {
+      "phrase": "ስንት ነው? (sint new?)",
+      "meaning": "How much is it? (Amharic)",
+      "translation": "How much?",
+      "pronunciation": "sint NEH-oo"
+     },
+     {
+      "phrase": "እሺ (ishi)",
+      "meaning": "OK / All right (Amharic)",
+      "translation": "OK",
+      "pronunciation": "ISH-ee"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "One of the cradles of humankind (the 3.2-million-year-old “Lucy” fossil). The Kingdom of Aksum adopted Christianity in the 4th century; the Lalibela rock churches were carved in the 12th–13th centuries and the Gondar castles built in the 17th. The 1896 victory at Adwa repelled Italy, making Ethiopia one of the few African states never colonised (apart from the 1936–41 Italian occupation). The monarchy ended in 1974 and a federal system emerged after 1991.",
+    "milestones": [
+     "4th century: Aksum adopts Christianity",
+     "1896: Victory at Adwa",
+     "1974: End of Emperor Haile Selassie’s reign",
+     "2024: The birr is floated"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Doro wat (berbere chicken stew with boiled egg)",
+     "Kitfo (minced beef in spiced butter, raw or lightly cooked)",
+     "Beyaynetu (mixed vegan fasting platter on injera)"
+    ],
+    "traditionalDrinks": [
+     "Buna (coffee ceremony; Ethiopia is coffee’s birthplace)",
+     "Tej (honey wine)",
+     "Spris (layered fruit juice) and Ambo mineral water"
+    ],
+    "streetFoodAndDesserts": [
+     "Sambusa",
+     "Kolo (roasted barley and chickpeas)",
+     "Dabo kolo and ambasha bread"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Abebe Bikila (barefoot Olympic marathon champion, Rome 1960)",
+     "Haile Gebrselassie (long-distance legend)",
+     "Mulatu Astatke (father of Ethio-jazz)"
+    ],
+    "strongSectors": [
+     "Coffee and agriculture (bulk of exports)",
+     "Aviation (Ethiopian Airlines, Africa’s largest airline)",
+     "Cut flowers and hydropower (GERD dam)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "The birr was floated in July 2024 and lost much of its value; rates move fast. Big hotels take cards, but most places use cash or mobile money (Telebirr, M-PESA). Change at banks and keep receipts; you may need them to convert birr back on departure.",
+    "tippingCulture": "Tipping is common: 5-10% in restaurants, daily tips for guides and drivers, and a small amount at coffee ceremonies.",
+    "economicPillars": "Agriculture (coffee, sesame, flowers), aviation, services, construction and hydropower."
+   }
+  },
+  "itin": {
+   "routeName": "Southern Ethiopia Route: Addis Ababa, Rift Lakes, Arba Minch and the Omo Valley",
+   "routeSummary": "A 10-day southern route—away from the northern conflict zones—from Addis Ababa’s museums and coffee culture to the bird-rich Rift Valley lakes, Arba Minch’s crocodile-filled Lake Chamo and Dorze weavers, and on to the peoples of the Omo Valley.",
+   "totalDays": 10,
+   "idealDurationText": "10-Day Itinerary",
+   "bestSeason": "October – March",
+   "transportMode": "4x4 with driver from a registered agency + domestic flights Addis – Arba Minch / Jinka",
+   "paceLevel": "Balanced (Culture + Nature + Ethnography)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stop 1: Addis Ababa",
+     "recommendedDuration": "3 Days",
+     "durationBadge": "3 Days",
+     "highlights": [
+      "National Museum and the Lucy fossil",
+      "Holy Trinity Cathedral",
+      "Merkato (one of Africa’s largest open-air markets)",
+      "Mount Entoto and Unity Park"
+     ],
+     "activities": [
+      "Join a traditional coffee ceremony.",
+      "Watch eskista shoulder dancing at a cultural restaurant in the evening.",
+      "Explore Merkato with a guide and without valuables."
+     ],
+     "foodAndDrinks": [
+      "Doro wat",
+      "Kitfo",
+      "Buna (coffee)"
+     ],
+     "criticalTips": [
+      "The city lies at 2,355 m; take it easy on day one.",
+      "Use Ride or Feres for night-time transport."
+     ],
+     "mapsQuery": "Addis Ababa, Ethiopia"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stop 2: Rift Valley Lakes & Hawassa",
+     "recommendedDuration": "2 Days",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "Abijatta-Shalla Lakes National Park (flamingos)",
+      "Hawassa fish market and Amora Gedel",
+      "Tabor Hill viewpoint",
+      "Wondo Genet hot springs"
+     ],
+     "activities": [
+      "Watch fishermen and marabou storks at the early-morning fish market.",
+      "Take a lakeside boat trip to see hippos.",
+      "Relax in the thermal pools at Wondo Genet."
+     ],
+     "foodAndDrinks": [
+      "Grilled tilapia (asa tibs)",
+      "Fresh avocado-mango spris"
+     ],
+     "criticalTips": [
+      "Ask locally before swimming in the lakes (bilharzia risk).",
+      "There may be checkpoints on the road; carry your passport."
+     ],
+     "mapsQuery": "Hawassa, Ethiopia"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stop 3: Arba Minch & Dorze",
+     "recommendedDuration": "2 Days",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "Giant crocodiles on Lake Chamo (“Crocodile Market”)",
+      "Nechisar National Park and the “Bridge of God”",
+      "Dorze village’s elephant-head bamboo huts",
+      "Konso terraced villages (UNESCO)"
+     ],
+     "activities": [
+      "Take a boat trip on Lake Chamo to see crocodiles and hippos.",
+      "See weaving and kocho (false-banana) bread making in Dorze.",
+      "Walk among stone terraces and waka statues in Konso."
+     ],
+     "foodAndDrinks": [
+      "Kocho with kitfo",
+      "Areke (local anise spirit)"
+     ],
+     "criticalTips": [
+      "Agree village visit fees with your guide in advance.",
+      "Malaria risk exists; use repellent and long sleeves in the evening."
+     ],
+     "mapsQuery": "Arba Minch, Ethiopia"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Stop 4: Omo Valley (Jinka & Turmi)",
+     "recommendedDuration": "3 Days",
+     "durationBadge": "3 Days",
+     "highlights": [
+      "Mursi villages in Mago National Park",
+      "Hamer market in Turmi",
+      "South Omo Research Centre and Museum, Jinka",
+      "With luck, a Hamer bull-jumping ceremony"
+     ],
+     "activities": [
+      "Learn about the valley’s peoples at the Jinka museum, then visit a village with a guide.",
+      "Time your visit for a weekly village market (Turmi, Dimeka, Key Afer).",
+      "Ask permission before each photo and pay the person directly."
+     ],
+     "foodAndDrinks": [
+      "Tibs (sautéed meat)",
+      "Shiro with injera",
+      "Bottled water and soft drinks (limited choice in rural areas)"
+     ],
+     "criticalTips": [
+      "Visit only with a local guide and registered agency; get current information on local tensions.",
+      "Flying Addis – Jinka saves two days on the road."
+     ],
+     "mapsQuery": "Jinka, Ethiopia"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Doro wat (berbere chicken stew with boiled egg)",
+     "Kitfo (minced beef in spiced butter, raw or lightly cooked)",
+     "Beyaynetu (mixed vegan fasting platter on injera)"
+    ],
+    "drinks": [
+     "Buna (coffee ceremony; Ethiopia is coffee’s birthplace)",
+     "Tej (honey wine)",
+     "Spris (layered fruit juice) and Ambo mineral water"
+    ],
+    "streetFoods": [
+     "Sambusa",
+     "Kolo (roasted barley and chickpeas)",
+     "Dabo kolo and ambasha bread"
+    ],
+    "diningAdvice": "Injera is the base of every meal; on Wednesdays and Fridays many restaurants serve only vegan fasting dishes. Kitfo and raw meat (kurt) can upset the stomach—ask for “leb leb” (lightly cooked). Prices may add 15% VAT and sometimes 10% service."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Power bank and torch (frequent power cuts)",
+     "Insect repellent and malaria pills (ask your doctor)",
+     "Small birr notes (for photos and tips)",
+     "Shawl or headscarf for church visits"
+    ],
+    "safetyAndEtiquette": [
+     "Avoid commenting on ethnic or political issues.",
+     "Never photograph people in the Omo Valley without permission and payment."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "E",
+     "F",
+     "L"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Mostly two-round-pin C/E/F sockets, sometimes Italian Type L; Turkish plugs usually fit. Power cuts are frequent, so bring a power bank."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Tap water is not drinkable; drink sealed bottled water (e.g. Highland, Aqua Addis) and avoid raw vegetables and ice.",
+    "vaccines": [
+     "Yellow fever: recommended for endemic areas; certificate required if arriving from a risk country",
+     "Hepatitis A, typhoid and cholera",
+     "Malaria: protection needed below 2,000 m (Rift, Omo)",
+     "Rabies and meningitis (for longer stays)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "907"
+   },
+   "tipping": {
+    "custom": "Tips are expected; leave 5-10% in restaurants.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "If the bill shows a 10% service charge, extra is optional. Guides and drivers commonly get $5-15 per day."
+   },
+   "taxFree": {
+    "vatRefundPercent": "No VAT refund for tourists",
+    "minSpend": "Not applicable",
+    "customsNote": "Ethiopia has no VAT refund for tourists. Exporting antiques, religious objects and crosses requires a permit, and large amounts of coffee may be restricted. Keep bank receipts to change birr back on departure."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.40 - $1.50",
+    "topCarriers": [
+     "Ethio Telecom",
+     "Safaricom Ethiopia"
+    ],
+    "airportSimTrapWarning": "Bole Airport has Ethio Telecom and Safaricom desks at fair prices; registration requires a passport. Download offline maps, as internet may be cut in conflict regions."
+   },
+   "touristScams": [
+    {
+     "title": "The “Student” Friend",
+     "desc": "A “student” practising English takes you to a coffee house or bar where the bill is outrageous.",
+     "tip": "Choose the venue yourself and ask prices upfront."
+    },
+    {
+     "title": "Distraction Theft",
+     "desc": "Someone spills or spits something on you and an accomplice takes your phone while they “clean”.",
+     "tip": "Decline help, keep your bag in front and walk away."
+    },
+    {
+     "title": "Photo Fee Haggling",
+     "desc": "In the Omo Valley disputes arise afterwards over the number and price of photos.",
+     "tip": "Agree the fee with your guide first and pay photo by photo."
+    }
+   ]
+  }
+ },
+ "de": {
+  "insights": {
+   "currency": "Äthiopischer Birr (ETB)",
+   "plugType": "Typ C, E, F, L (220V, 50Hz)",
+   "bestMonths": "Oktober – März (Trockenzeit; Oktober – November ist es am grünsten). Die große Regenzeit (Kiremt) dauert Juni – September. Timket (19. Januar) und Meskel (27. September) sind die farbenprächtigsten Zeiten.",
+   "safety": {
+    "safetyScore": 40,
+    "safetyLevel": "Erhöhte Vorsicht",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60",
+    "crimeRateSummary": "Landesweit besteht das Risiko bewaffneter Konflikte und Unruhen: Offizielle Reisewarnungen betreffen die Region Amhara (inkl. Lalibela, Gondar, Simien-Berge) mit anhaltenden Kämpfen, Teile von Tigray und Oromia sowie die Grenzgebiete zu Eritrea, Somalia, Kenia, Sudan und Südsudan; Straßensperren und Internetsperren sind möglich. In Addis Abeba sind Taschen- und Handydiebstahl sowie Betrug verbreitet.",
+    "commonScams": [
+     "„Studenten“, die sich anfreunden und Sie zu überteuerter Kaffeezeremonie oder Bar führen",
+     "Handydiebstahl, während jemand Sie in der Menge ablenkt (z. B. anspuckt oder etwas verschüttet)",
+     "Falsche Guides verlangen in Dörfern im Omo-Tal überhöhte Gebühren pro Foto"
+    ],
+    "safeTravelTips": [
+     "Nicht auf dem Landweg in die Region Amhara (Lalibela, Gondar, Bahir Dar, Simien) oder in Grenzgebiete reisen; aktuelle Reisehinweise verfolgen.",
+     "In Addis Abeba das Handy nicht offen auf der Straße benutzen; nachts mit Ride oder Feres fahren.",
+     "Im Süden mit registrierter Agentur und lokalen Guides reisen, Nachtfahrten vermeiden."
+    ],
+    "emergencyNumbers": {
+     "police": "991",
+     "ambulance": "907",
+     "general": "991"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Gutes 4G in Addis Abeba und Großstädten, begrenztes 5G in der Hauptstadt; schwach auf dem Land. In Konfliktregionen kann das Internet lange abgeschaltet sein.",
+    "costPerGbUsd": "~0.40 - 1.50 $",
+    "esimAvailability": "Mittel (Safaricom und Ethio Telecom bieten eSIMs; internationale eSIMs sind teuer)",
+    "bestCarriers": [
+     "Ethio Telecom",
+     "Safaricom Ethiopia"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Mittel (Stadtbahn und Minibusse in Addis; Fernbusse langsam)",
+    "costLevel": "Günstig",
+    "singleTicketUsd": "0.05 - 0.30 $ (Stadtbahn / Minibus)",
+    "dailyPassUsd": "Keiner",
+    "popularRideApps": [
+     "Ride",
+     "Feres",
+     "Yango"
+    ],
+    "taxiAdvice": "In Addis Abeba sind die lokalen Apps Ride und Feres sowie Yango verbreitet und zeigen den Preis vorab. Blau-weiße Minibusse sind sehr billig, aber voll. Für lange Strecken sind Inlandsflüge der Ethiopian Airlines (ermäßigt bei internationaler Anreise mit der Airline) schnell und sicher; Selam Bus und Sky Bus fahren Fernbusse."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "25 - 45 $",
+    "dailyBudgetMidrangeUsd": "70 - 130 $",
+    "budgetMealUsd": "3 - 6 $",
+    "coffeeUsd": "0.30 - 1.50 $",
+    "waterBottleUsd": "0.40 - 0.80 $",
+    "hostelDormUsd": "10 - 20 $",
+    "hotel3StarUsd": "50 - 110 $",
+    "flightCostIndex": "Günstig (Direktflüge)",
+    "flightTip": "Turkish Airlines und Ethiopian Airlines fliegen direkt Istanbul – Addis Abeba (~5,5 Std.). Wer mit Ethiopian anreist, bekommt große Rabatte auf Inlandsflüge; über Website oder Büro der Airline buchen."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Beim Händeschütteln das rechte Handgelenk mit der linken Hand berühren und leicht verbeugen zeigt Respekt; Freunde stoßen Schultern an.",
+     "Von der gemeinsamen Injera-Platte mit der rechten Hand essen; einen vom Gastgeber gereichten Bissen (Gursha) nicht ablehnen.",
+     "Eine Kaffeezeremonie dauert etwa eine Stunde; drei Tassen zu trinken ist höflich.",
+     "Im Omo-Tal Fotogebühren und Erlaubnis vorher klären; Dörfer nicht ohne Guide betreten."
+    ],
+    "festivals": [
+     "Timket (Epiphanias, 19. Januar; in Schaltjahren 20. Januar)",
+     "Meskel (Kreuzauffindung, 27. September, UNESCO)",
+     "Enkutatash (äthiopisches Neujahr, 11. September) und Irreecha (Oromo-Erntedank, Anfang Oktober)"
+    ],
+    "lifestyle": "Äthiopien nutzt einen eigenen Kalender (7–8 Jahre zurück, 13 Monate) und eine 12-Stunden-Uhr ab Sonnenaufgang; bei Uhrzeiten und Daten auf Verwechslungen achten. Kaffee ist das Herz der Kultur; Orthodoxe verzichten mittwochs, freitags und in langen Fastenzeiten auf tierische Produkte, daher gibt es überall veganes „Yetsom Beyaynetu“."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Addis Abeba: Nationalmuseum (Lucy) und Merkato-Markt",
+     "Felsenkirchen von Lalibela (UNESCO – derzeit aus Sicherheitsgründen nicht empfohlen)",
+     "Seen im Grabenbruch (Hawassa, Langano, Abijatta-Shalla)",
+     "Arba Minch, Nechisar-Nationalpark und Dorf Dorze",
+     "Völker des Omo-Tals (Jinka, Turmi, Mursi und Hamer)",
+     "Kulturlandschaft Konso (UNESCO)"
+    ],
+    "bestSeasons": "Oktober – März",
+    "travelStyleTip": "Wegen der Sicherheitslage auf Addis Abeba und den Süden (Grabenbruch – Omo) statt der historischen Nordroute (Lalibela, Gondar, Aksum) setzen. Lage täglich prüfen und lange Strecken fliegen."
+   },
+   "religion": {
+    "primaryReligions": "Äthiopisch-orthodox Tewahedo ~43 %, Muslime ~31-34 %, Protestanten (P’ent’ay) ~20 %, traditionelle Religionen in der Minderheit",
+    "respectNorms": "In Kirchen Schuhe ausziehen, Frauen bedecken den Kopf (Netela-Schal); kein Blitz im Gottesdienst. Manche Klöster sind für Frauen tabu.",
+    "sacredSites": [
+     "Dreifaltigkeitskathedrale (Addis Abeba)",
+     "Ummauerte Altstadt Harar Jugol (UNESCO, zahlreiche Moscheen und Schreine)",
+     "Felsenkirchen von Lalibela (orthodoxer Wallfahrtsort)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Föderale Arbeitssprache ist Amharisch; Afaan Oromo, Tigrinya, Somali und Afar sind ebenfalls Amtssprachen. Es werden über 80 Sprachen gesprochen.",
+    "englishProficiency": "Mittel; Gebildete und Tourismusbeschäftigte in Addis Abeba sprechen Englisch, im Süden braucht man einen Guide.",
+    "phrases": [
+     {
+      "phrase": "ሰላም (selam)",
+      "meaning": "Hallo (Amharisch)",
+      "translation": "Hallo",
+      "pronunciation": "seh-LAHM"
+     },
+     {
+      "phrase": "ጤና ይስጥልኝ (tena yistilign)",
+      "meaning": "Guten Tag (förmlich; „Gott gebe dir Gesundheit“)",
+      "translation": "Guten Tag",
+      "pronunciation": "TEH-na yis-TIL-ign"
+     },
+     {
+      "phrase": "አመሰግናለሁ (ameseginalehu)",
+      "meaning": "Danke (Amharisch)",
+      "translation": "Danke",
+      "pronunciation": "a-meh-seg-NA-leh-hu"
+     },
+     {
+      "phrase": "ስንት ነው? (sint new?)",
+      "meaning": "Wie viel kostet das? (Amharisch)",
+      "translation": "Wie viel?",
+      "pronunciation": "sint NEH-oo"
+     },
+     {
+      "phrase": "እሺ (ishi)",
+      "meaning": "Okay / In Ordnung (Amharisch)",
+      "translation": "Okay",
+      "pronunciation": "ISH-ee"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Eine der Wiegen der Menschheit (das 3,2 Mio. Jahre alte Fossil „Lucy“). Das Reich von Aksum nahm im 4. Jh. das Christentum an; im 12.–13. Jh. entstanden die Felsenkirchen von Lalibela, im 17. Jh. die Burgen von Gondar. Der Sieg bei Adwa 1896 wehrte Italien ab – Äthiopien ist einer der wenigen nie kolonisierten Staaten Afrikas (abgesehen von der Besatzung 1936–41). 1974 endete die Monarchie, nach 1991 entstand ein föderales System.",
+    "milestones": [
+     "4. Jh.: Aksum nimmt das Christentum an",
+     "1896: Sieg bei Adwa",
+     "1974: Ende der Herrschaft Kaiser Haile Selassies",
+     "2024: Freigabe des Birr-Wechselkurses"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Doro Wat (Hähnchen in Berbere-Sauce mit Ei)",
+     "Kitfo (Rinderhack in Gewürzbutter, roh oder kurz gegart)",
+     "Beyaynetu (veganer Fastenteller auf Injera)"
+    ],
+    "traditionalDrinks": [
+     "Buna (Kaffeezeremonie; Äthiopien ist die Heimat des Kaffees)",
+     "Tej (Honigwein)",
+     "Spris (geschichteter Fruchtsaft) und Ambo-Mineralwasser"
+    ],
+    "streetFoodAndDesserts": [
+     "Sambusa",
+     "Kolo (geröstete Gerste und Kichererbsen)",
+     "Dabo Kolo und Ambasha-Brot"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Abebe Bikila (barfuß Olympiasieger im Marathon, Rom 1960)",
+     "Haile Gebrselassie (Langstreckenlegende)",
+     "Mulatu Astatke (Vater des Ethio-Jazz)"
+    ],
+    "strongSectors": [
+     "Kaffee und Landwirtschaft (Großteil der Exporte)",
+     "Luftfahrt (Ethiopian Airlines, größte Airline Afrikas)",
+     "Schnittblumen und Wasserkraft (GERD-Staudamm)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Der Birr wurde im Juli 2024 freigegeben und verlor stark an Wert; Kurse ändern sich schnell. Große Hotels akzeptieren Karten, sonst zahlt man bar oder mobil (Telebirr, M-PESA). Bei Banken tauschen und Belege aufheben – sie sind beim Rücktausch nötig.",
+    "tippingCulture": "Trinkgeld ist üblich: 5-10 % im Restaurant, tägliches Trinkgeld für Guides und Fahrer, ein kleiner Betrag bei Kaffeezeremonien.",
+    "economicPillars": "Landwirtschaft (Kaffee, Sesam, Blumen), Luftfahrt, Dienstleistungen, Bau und Wasserkraft."
+   }
+  },
+  "itin": {
+   "routeName": "Südäthiopien-Route: Addis Abeba, Grabenbruchseen, Arba Minch und Omo-Tal",
+   "routeSummary": "Eine 10-tägige Südroute – fern der Konfliktgebiete im Norden – von Museen und Kaffeekultur in Addis Abeba zu den vogelreichen Seen des Grabenbruchs, dem Krokodilsee Chamo und den Dorze-Webern in Arba Minch und weiter zu den Völkern des Omo-Tals.",
+   "totalDays": 10,
+   "idealDurationText": "10-tägige Route",
+   "bestSeason": "Oktober – März",
+   "transportMode": "Geländewagen mit Fahrer über registrierte Agentur + Inlandsflüge Addis – Arba Minch / Jinka",
+   "paceLevel": "Ausgewogen (Kultur + Natur + Ethnografie)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stopp 1: Addis Abeba",
+     "recommendedDuration": "3 Tage",
+     "durationBadge": "3 Tage",
+     "highlights": [
+      "Nationalmuseum und das Lucy-Fossil",
+      "Dreifaltigkeitskathedrale",
+      "Merkato (einer der größten Freiluftmärkte Afrikas)",
+      "Entoto-Berg und Unity Park"
+     ],
+     "activities": [
+      "An einer traditionellen Kaffeezeremonie teilnehmen.",
+      "Abends in einem Kulturrestaurant den Schultertanz Eskista ansehen.",
+      "Merkato mit Guide und ohne Wertsachen erkunden."
+     ],
+     "foodAndDrinks": [
+      "Doro Wat",
+      "Kitfo",
+      "Buna (Kaffee)"
+     ],
+     "criticalTips": [
+      "Die Stadt liegt auf 2.355 m; am ersten Tag langsam machen.",
+      "Nachts mit Ride oder Feres fahren."
+     ],
+     "mapsQuery": "Addis Ababa, Ethiopia"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stopp 2: Grabenbruchseen & Hawassa",
+     "recommendedDuration": "2 Tage",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "Nationalpark Abijatta-Shalla (Flamingos)",
+      "Fischmarkt von Hawassa und Amora Gedel",
+      "Aussichtspunkt Tabor-Hügel",
+      "Heiße Quellen von Wondo Genet"
+     ],
+     "activities": [
+      "Am frühen Morgen am Fischmarkt Fischer und Marabus beobachten.",
+      "Eine Bootsfahrt machen und Flusspferde sehen.",
+      "In Wondo Genet in Thermalbecken entspannen."
+     ],
+     "foodAndDrinks": [
+      "Gegrillter Tilapia (Asa Tibs)",
+      "Frischer Avocado-Mango-Spris"
+     ],
+     "criticalTips": [
+      "Vor dem Baden in den Seen vor Ort fragen (Bilharziose-Risiko).",
+      "Unterwegs gibt es Kontrollen; Reisepass mitführen."
+     ],
+     "mapsQuery": "Hawassa, Ethiopia"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stopp 3: Arba Minch & Dorze",
+     "recommendedDuration": "2 Tage",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "Riesenkrokodile im Chamo-See („Krokodilmarkt“)",
+      "Nechisar-Nationalpark und die „Brücke Gottes“",
+      "Elefantenkopf-förmige Bambushütten im Dorf Dorze",
+      "Terrassendörfer von Konso (UNESCO)"
+     ],
+     "activities": [
+      "Bootsfahrt auf dem Chamo-See zu Krokodilen und Flusspferden.",
+      "In Dorze Weberei und die Herstellung von Kocho-Brot (Ensete) sehen.",
+      "In Konso zwischen Steinterrassen und Waka-Statuen wandern."
+     ],
+     "foodAndDrinks": [
+      "Kocho mit Kitfo",
+      "Areke (lokaler Anisschnaps)"
+     ],
+     "criticalTips": [
+      "Gebühren für Dorfbesuche vorab mit dem Guide klären.",
+      "Malariarisiko; abends Mückenschutz und lange Ärmel."
+     ],
+     "mapsQuery": "Arba Minch, Ethiopia"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Stopp 4: Omo-Tal (Jinka & Turmi)",
+     "recommendedDuration": "3 Tage",
+     "durationBadge": "3 Tage",
+     "highlights": [
+      "Mursi-Dörfer im Mago-Nationalpark",
+      "Hamer-Markt in Turmi",
+      "Forschungszentrum und Museum Süd-Omo, Jinka",
+      "Mit Glück eine Hamer-Bullensprungzeremonie"
+     ],
+     "activities": [
+      "Im Museum von Jinka die Völker kennenlernen, dann mit Guide ein Dorf besuchen.",
+      "Einen Wochenmarkt (Turmi, Dimeka, Key Afer) einplanen.",
+      "Vor jedem Foto um Erlaubnis bitten und direkt bezahlen."
+     ],
+     "foodAndDrinks": [
+      "Tibs (gebratenes Fleisch)",
+      "Shiro mit Injera",
+      "Flaschenwasser und Limonade (wenig Auswahl auf dem Land)"
+     ],
+     "criticalTips": [
+      "Nur mit lokalem Guide und registrierter Agentur reisen; aktuelle Infos zu lokalen Spannungen einholen.",
+      "Ein Flug Addis – Jinka spart zwei Tage Fahrt."
+     ],
+     "mapsQuery": "Jinka, Ethiopia"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Doro Wat (Hähnchen in Berbere-Sauce mit Ei)",
+     "Kitfo (Rinderhack in Gewürzbutter, roh oder kurz gegart)",
+     "Beyaynetu (veganer Fastenteller auf Injera)"
+    ],
+    "drinks": [
+     "Buna (Kaffeezeremonie; Äthiopien ist die Heimat des Kaffees)",
+     "Tej (Honigwein)",
+     "Spris (geschichteter Fruchtsaft) und Ambo-Mineralwasser"
+    ],
+    "streetFoods": [
+     "Sambusa",
+     "Kolo (geröstete Gerste und Kichererbsen)",
+     "Dabo Kolo und Ambasha-Brot"
+    ],
+    "diningAdvice": "Injera ist die Basis jeder Mahlzeit; mittwochs und freitags bieten viele Lokale nur vegane Fastengerichte. Kitfo und rohes Fleisch (Kurt) können auf den Magen schlagen – „leb leb“ (kurz gegart) bestellen. Auf Preise kommen 15 % MwSt. und teils 10 % Service."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Powerbank und Taschenlampe (häufige Stromausfälle)",
+     "Mückenschutz und Malariaprophylaxe (Arzt fragen)",
+     "Kleine Birr-Scheine (für Fotos und Trinkgeld)",
+     "Schal oder Kopftuch für Kirchenbesuche"
+    ],
+    "safetyAndEtiquette": [
+     "Kommentare zu ethnischen oder politischen Themen vermeiden.",
+     "Im Omo-Tal niemanden ohne Erlaubnis und Bezahlung fotografieren."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "E",
+     "F",
+     "L"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Meist Steckdosen C/E/F mit zwei Rundstiften, teils italienischer Typ L; türkische Stecker passen meist. Häufige Stromausfälle – Powerbank mitnehmen."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Leitungswasser nicht trinkbar; versiegeltes Flaschenwasser (z. B. Highland, Aqua Addis) trinken, rohes Gemüse und Eis meiden.",
+    "vaccines": [
+     "Gelbfieber: für Endemiegebiete empfohlen; Nachweis bei Einreise aus Risikoländern",
+     "Hepatitis A, Typhus und Cholera",
+     "Malaria: Schutz unter 2.000 m nötig (Grabenbruch, Omo)",
+     "Tollwut und Meningitis (bei längeren Aufenthalten)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "907"
+   },
+   "tipping": {
+    "custom": "Trinkgeld wird erwartet; 5-10 % im Restaurant.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Steht 10 % Service auf der Rechnung, ist mehr freiwillig. Guides und Fahrer erhalten meist 5-15 $ pro Tag."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Keine Mehrwertsteuererstattung für Touristen",
+    "minSpend": "Entfällt",
+    "customsNote": "Äthiopien erstattet Touristen keine MwSt. Ausfuhr von Antiquitäten, religiösen Objekten und Kreuzen braucht eine Genehmigung, große Mengen Kaffee können beschränkt sein. Bankbelege für den Rücktausch aufheben."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.40 - $1.50",
+    "topCarriers": [
+     "Ethio Telecom",
+     "Safaricom Ethiopia"
+    ],
+    "airportSimTrapWarning": "Am Flughafen Bole gibt es Schalter von Ethio Telecom und Safaricom zu fairen Preisen; Registrierung mit Pass. Offline-Karten laden, da in Konfliktregionen das Internet abgeschaltet sein kann."
+   },
+   "touristScams": [
+    {
+     "title": "Der „Student“-Freund",
+     "desc": "Ein „Student“, der Englisch üben will, führt Sie in ein Café oder eine Bar mit horrender Rechnung.",
+     "tip": "Das Lokal selbst wählen und Preise vorher erfragen."
+    },
+    {
+     "title": "Ablenkungsdiebstahl",
+     "desc": "Jemand bespritzt Sie, und während „geputzt“ wird, nimmt ein Komplize Ihr Handy.",
+     "tip": "Hilfe ablehnen, Tasche vorne halten und weggehen."
+    },
+    {
+     "title": "Streit um Fotogebühren",
+     "desc": "Im Omo-Tal gibt es danach Streit über Anzahl und Preis der Fotos.",
+     "tip": "Preis vorab mit dem Guide klären und pro Foto zahlen."
+    }
+   ]
+  }
+ },
+ "es": {
+  "insights": {
+   "currency": "Birr etíope (ETB)",
+   "plugType": "Tipo C, E, F, L (220V, 50Hz)",
+   "bestMonths": "Octubre – marzo (estación seca; paisajes más verdes en octubre – noviembre). Las grandes lluvias (kiremt) van de junio a septiembre. Timket (19 de enero) y Meskel (27 de septiembre) son los momentos más vistosos.",
+   "safety": {
+    "safetyScore": 40,
+    "safetyLevel": "Precaución Aconsejada",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60",
+    "crimeRateSummary": "Existe riesgo de conflicto armado y disturbios en todo el país: hay avisos oficiales de “no viajar” a la región de Amhara (incluidos Lalibela, Gondar y los montes Simien), donde siguen los combates, a partes de Tigray y Oromía, y a las fronteras con Eritrea, Somalia, Kenia, Sudán y Sudán del Sur; puede haber cortes de carreteras y de internet. En Adís Abeba son comunes los tirones, robos de móviles y estafas.",
+    "commonScams": [
+     "“Estudiantes” que se hacen amigos y le llevan a una ceremonia de café o bar carísimos",
+     "Robo del móvil mientras alguien le distrae (p. ej. escupiendo o derramando algo)",
+     "Guías falsos que cobran tarifas abusivas por foto en aldeas del valle del Omo"
+    ],
+    "safeTravelTips": [
+     "No viaje por carretera a Amhara (Lalibela, Gondar, Bahir Dar, Simien) ni a zonas fronterizas; siga los avisos oficiales.",
+     "En Adís Abeba no use el móvil a la vista; de noche muévase con Ride o Feres.",
+     "En el sur use agencia registrada y guías locales, y evite viajar de noche."
+    ],
+    "emergencyNumbers": {
+     "police": "991",
+     "ambulance": "907",
+     "general": "991"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Buen 4G en Adís Abeba y grandes ciudades, 5G limitado en la capital; débil en zonas rurales. En regiones en conflicto internet puede cortarse mucho tiempo.",
+    "costPerGbUsd": "~0.40 - 1.50 $",
+    "esimAvailability": "Media (Safaricom y Ethio Telecom ofrecen eSIM; las internacionales son caras)",
+    "bestCarriers": [
+     "Ethio Telecom",
+     "Safaricom Ethiopia"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Regular (tren ligero y minibuses en Adís; buses interurbanos lentos)",
+    "costLevel": "Barato",
+    "singleTicketUsd": "0.05 - 0.30 $ (tren ligero / minibús)",
+    "dailyPassUsd": "No existe",
+    "popularRideApps": [
+     "Ride",
+     "Feres",
+     "Yango"
+    ],
+    "taxiAdvice": "En Adís Abeba las apps locales Ride y Feres, además de Yango, son habituales y muestran la tarifa. Los minibuses azules y blancos son muy baratos pero van llenos. Para largas distancias, los vuelos internos de Ethiopian Airlines (con descuento si llegó con la aerolínea) son rápidos y seguros; Selam Bus y Sky Bus operan autobuses."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "25 - 45 $",
+    "dailyBudgetMidrangeUsd": "70 - 130 $",
+    "budgetMealUsd": "3 - 6 $",
+    "coffeeUsd": "0.30 - 1.50 $",
+    "waterBottleUsd": "0.40 - 0.80 $",
+    "hostelDormUsd": "10 - 20 $",
+    "hotel3StarUsd": "50 - 110 $",
+    "flightCostIndex": "Asequible (vuelos directos)",
+    "flightTip": "Turkish Airlines y Ethiopian Airlines vuelan directo Estambul – Adís Abeba (~5,5 h). Si llega con Ethiopian, obtendrá grandes descuentos en vuelos internos; cómprelos en su web u oficina."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Al dar la mano, tocar la muñeca derecha con la mano izquierda e inclinarse un poco es señal de respeto; los amigos chocan los hombros.",
+     "Coma de la injera común con la mano derecha; no rechace el bocado que le da el anfitrión (gursha).",
+     "La ceremonia del café dura una hora; lo cortés es tomar tres tazas.",
+     "En el valle del Omo acuerde antes el precio de las fotos; no entre en aldeas sin guía."
+    ],
+    "festivals": [
+     "Timket (Epifanía, 19 de enero; 20 en años bisiestos)",
+     "Meskel (Hallazgo de la Vera Cruz, 27 de septiembre, UNESCO)",
+     "Enkutatash (Año Nuevo etíope, 11 de septiembre) e Irreecha (acción de gracias oromo, inicios de octubre)"
+    ],
+    "lifestyle": "Etiopía usa su propio calendario (7–8 años de retraso, 13 meses) y un reloj de 12 horas que empieza al amanecer; cuidado con confusiones de horas y fechas. El café es el corazón de la cultura; los ortodoxos no comen productos animales los miércoles, viernes y en ayunos largos, por eso el “yetsom beyaynetu” vegano está en todas partes."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Adís Abeba: Museo Nacional (Lucy) y mercado de Merkato",
+     "Iglesias excavadas de Lalibela (UNESCO – no recomendadas actualmente por seguridad)",
+     "Lagos del Rift (Hawassa, Langano, Abijatta-Shalla)",
+     "Arba Minch, Parque Nacional Nechisar y aldea Dorze",
+     "Pueblos del valle del Omo (Jinka, Turmi, mursi y hamer)",
+     "Paisaje cultural de Konso (UNESCO)"
+    ],
+    "bestSeasons": "Octubre – marzo",
+    "travelStyleTip": "Por la situación de seguridad, céntrese en Adís Abeba y el corredor sur Rift – Omo en lugar de la ruta histórica del norte (Lalibela, Gondar, Aksum). Revise la situación a diario y haga las largas distancias en avión."
+   },
+   "religion": {
+    "primaryReligions": "Ortodoxos tewahedo ~43 %, musulmanes ~31-34 %, protestantes (p’ent’ay) ~20 %, creencias tradicionales minoritarias",
+    "respectNorms": "Descálcese en las iglesias; las mujeres cubren la cabeza (chal netela); sin flash en los oficios. Algunos monasterios no admiten mujeres.",
+    "sacredSites": [
+     "Catedral de la Santísima Trinidad (Adís Abeba)",
+     "Ciudad amurallada de Harar Jugol (UNESCO, decenas de mezquitas y santuarios)",
+     "Iglesias de Lalibela (lugar de peregrinación ortodoxo)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "La lengua federal de trabajo es el amhárico; el afaan oromo, el tigriña, el somalí y el afar también son oficiales. Se hablan más de 80 lenguas.",
+    "englishProficiency": "Medio; en Adís Abeba hablan inglés las personas formadas y el sector turístico; en el sur hace falta guía.",
+    "phrases": [
+     {
+      "phrase": "ሰላም (selam)",
+      "meaning": "Hola (amhárico)",
+      "translation": "Hola",
+      "pronunciation": "seh-LAHM"
+     },
+     {
+      "phrase": "ጤና ይስጥልኝ (tena yistilign)",
+      "meaning": "Hola (formal; “que Dios te dé salud”)",
+      "translation": "Buenos días",
+      "pronunciation": "TEH-na yis-TIL-ign"
+     },
+     {
+      "phrase": "አመሰግናለሁ (ameseginalehu)",
+      "meaning": "Gracias (amhárico)",
+      "translation": "Gracias",
+      "pronunciation": "a-meh-seg-NA-leh-hu"
+     },
+     {
+      "phrase": "ስንት ነው? (sint new?)",
+      "meaning": "¿Cuánto cuesta? (amhárico)",
+      "translation": "¿Cuánto?",
+      "pronunciation": "sint NEH-oo"
+     },
+     {
+      "phrase": "እሺ (ishi)",
+      "meaning": "Vale / De acuerdo (amhárico)",
+      "translation": "Vale",
+      "pronunciation": "ISH-ee"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Una de las cunas de la humanidad (el fósil “Lucy”, de 3,2 millones de años). El reino de Aksum adoptó el cristianismo en el siglo IV; las iglesias de Lalibela se excavaron en los siglos XII–XIII y los castillos de Gondar en el XVII. La victoria de Adua en 1896 frenó a Italia y Etiopía fue uno de los pocos estados africanos nunca colonizados (salvo la ocupación de 1936–41). La monarquía terminó en 1974 y tras 1991 surgió un sistema federal.",
+    "milestones": [
+     "Siglo IV: Aksum adopta el cristianismo",
+     "1896: Victoria de Adua",
+     "1974: Fin del reinado de Haile Selassie",
+     "2024: Liberalización del tipo de cambio del birr"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Doro wat (guiso de pollo con berbere y huevo)",
+     "Kitfo (carne picada con mantequilla especiada, cruda o poco hecha)",
+     "Beyaynetu (bandeja vegana de ayuno sobre injera)"
+    ],
+    "traditionalDrinks": [
+     "Buna (ceremonia del café; Etiopía es la cuna del café)",
+     "Tej (vino de miel)",
+     "Spris (zumo por capas) y agua mineral Ambo"
+    ],
+    "streetFoodAndDesserts": [
+     "Sambusa",
+     "Kolo (cebada y garbanzos tostados)",
+     "Dabo kolo y pan ambasha"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Abebe Bikila (campeón olímpico de maratón descalzo, Roma 1960)",
+     "Haile Gebrselassie (leyenda del fondo)",
+     "Mulatu Astatke (padre del etiojazz)"
+    ],
+    "strongSectors": [
+     "Café y agricultura (grueso de las exportaciones)",
+     "Aviación (Ethiopian Airlines, la mayor aerolínea de África)",
+     "Flores y energía hidroeléctrica (presa GERD)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "El birr se liberalizó en julio de 2024 y perdió mucho valor; el tipo cambia rápido. Los grandes hoteles aceptan tarjeta, pero casi todo se paga en efectivo o dinero móvil (Telebirr, M-PESA). Cambie en bancos y guarde los recibos para recambiar al salir.",
+    "tippingCulture": "La propina es habitual: 5-10 % en restaurantes, propina diaria a guías y conductores, y algo en las ceremonias de café.",
+    "economicPillars": "Agricultura (café, sésamo, flores), aviación, servicios, construcción e hidroelectricidad."
+   }
+  },
+  "itin": {
+   "routeName": "Ruta por el sur de Etiopía: Adís Abeba, lagos del Rift, Arba Minch y valle del Omo",
+   "routeSummary": "Ruta de 10 días por el sur —lejos de las zonas de conflicto del norte— desde los museos y el café de Adís Abeba hasta los lagos del Rift llenos de aves, el lago Chamo con cocodrilos y los tejedores dorze de Arba Minch, y los pueblos del valle del Omo.",
+   "totalDays": 10,
+   "idealDurationText": "Ruta de 10 días",
+   "bestSeason": "Octubre – marzo",
+   "transportMode": "4x4 con conductor de agencia registrada + vuelos internos Adís – Arba Minch / Jinka",
+   "paceLevel": "Equilibrado (cultura + naturaleza + etnografía)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Adís Abeba",
+     "recommendedDuration": "3 días",
+     "durationBadge": "3 días",
+     "highlights": [
+      "Museo Nacional y el fósil de Lucy",
+      "Catedral de la Santísima Trinidad",
+      "Merkato (uno de los mayores mercados al aire libre de África)",
+      "Monte Entoto y Unity Park"
+     ],
+     "activities": [
+      "Participe en una ceremonia tradicional del café.",
+      "Vea por la noche el baile eskista en un restaurante cultural.",
+      "Recorra Merkato con guía y sin objetos de valor."
+     ],
+     "foodAndDrinks": [
+      "Doro wat",
+      "Kitfo",
+      "Buna (café)"
+     ],
+     "criticalTips": [
+      "La ciudad está a 2.355 m; descanse el primer día.",
+      "De noche use Ride o Feres."
+     ],
+     "mapsQuery": "Addis Ababa, Ethiopia"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Lagos del Rift y Hawassa",
+     "recommendedDuration": "2 días",
+     "durationBadge": "2 días",
+     "highlights": [
+      "Parque Nacional de los lagos Abijatta-Shalla (flamencos)",
+      "Mercado de pescado de Hawassa y Amora Gedel",
+      "Mirador del monte Tabor",
+      "Fuentes termales de Wondo Genet"
+     ],
+     "activities": [
+      "Vea a los pescadores y marabúes en el mercado de pescado al amanecer.",
+      "Haga un paseo en barca para ver hipopótamos.",
+      "Relájese en las piscinas termales de Wondo Genet."
+     ],
+     "foodAndDrinks": [
+      "Tilapia a la parrilla (asa tibs)",
+      "Spris de aguacate y mango"
+     ],
+     "criticalTips": [
+      "Pregunte antes de bañarse en los lagos (riesgo de bilharzia).",
+      "Puede haber controles; lleve el pasaporte."
+     ],
+     "mapsQuery": "Hawassa, Ethiopia"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Arba Minch y Dorze",
+     "recommendedDuration": "2 días",
+     "durationBadge": "2 días",
+     "highlights": [
+      "Cocodrilos gigantes en el lago Chamo (“mercado de cocodrilos”)",
+      "Parque Nacional Nechisar y el “Puente de Dios”",
+      "Chozas de bambú con forma de cabeza de elefante en Dorze",
+      "Aldeas en terrazas de Konso (UNESCO)"
+     ],
+     "activities": [
+      "Navegue por el lago Chamo para ver cocodrilos e hipopótamos.",
+      "Vea en Dorze el tejido y la elaboración del pan kocho (falso plátano).",
+      "Camine entre terrazas de piedra y estatuas waka en Konso."
+     ],
+     "foodAndDrinks": [
+      "Kocho con kitfo",
+      "Areke (aguardiente local)"
+     ],
+     "criticalTips": [
+      "Acuerde con su guía el precio de las visitas a aldeas.",
+      "Hay riesgo de malaria; use repelente y manga larga al anochecer."
+     ],
+     "mapsQuery": "Arba Minch, Ethiopia"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Valle del Omo (Jinka y Turmi)",
+     "recommendedDuration": "3 días",
+     "durationBadge": "3 días",
+     "highlights": [
+      "Aldeas mursi en el Parque Nacional Mago",
+      "Mercado hamer en Turmi",
+      "Centro de Investigación y Museo de South Omo, Jinka",
+      "Con suerte, una ceremonia hamer de salto de toros"
+     ],
+     "activities": [
+      "Conozca a los pueblos en el museo de Jinka y luego visite una aldea con guía.",
+      "Haga coincidir la visita con un mercado semanal (Turmi, Dimeka, Key Afer).",
+      "Pida permiso antes de cada foto y pague a la persona directamente."
+     ],
+     "foodAndDrinks": [
+      "Tibs (carne salteada)",
+      "Shiro con injera",
+      "Agua embotellada y refrescos (poca oferta en el campo)"
+     ],
+     "criticalTips": [
+      "Vaya solo con guía local y agencia registrada; infórmese sobre tensiones locales.",
+      "Volar Adís – Jinka ahorra dos días de carretera."
+     ],
+     "mapsQuery": "Jinka, Ethiopia"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Doro wat (guiso de pollo con berbere y huevo)",
+     "Kitfo (carne picada con mantequilla especiada, cruda o poco hecha)",
+     "Beyaynetu (bandeja vegana de ayuno sobre injera)"
+    ],
+    "drinks": [
+     "Buna (ceremonia del café; Etiopía es la cuna del café)",
+     "Tej (vino de miel)",
+     "Spris (zumo por capas) y agua mineral Ambo"
+    ],
+    "streetFoods": [
+     "Sambusa",
+     "Kolo (cebada y garbanzos tostados)",
+     "Dabo kolo y pan ambasha"
+    ],
+    "diningAdvice": "La injera es la base de todo; miércoles y viernes muchos restaurantes solo sirven platos veganos de ayuno. El kitfo y la carne cruda (kurt) pueden sentar mal: pida “leb leb” (poco hecho). A los precios se suman 15 % de IVA y a veces 10 % de servicio."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Batería externa y linterna (cortes frecuentes)",
+     "Repelente y profilaxis antipalúdica (consulte a su médico)",
+     "Billetes pequeños de birr (fotos y propinas)",
+     "Chal o pañuelo para las iglesias"
+    ],
+    "safetyAndEtiquette": [
+     "Evite opinar sobre temas étnicos o políticos.",
+     "En el valle del Omo no fotografíe a nadie sin permiso y pago."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "E",
+     "F",
+     "L"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Sobre todo enchufes C/E/F de dos clavijas redondas, a veces tipo L italiano; los enchufes turcos suelen servir. Hay cortes frecuentes: lleve batería externa."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "El agua del grifo no es potable; beba agua embotellada (p. ej. Highland, Aqua Addis) y evite verduras crudas y hielo.",
+    "vaccines": [
+     "Fiebre amarilla: recomendada en zonas endémicas; certificado si llega de un país de riesgo",
+     "Hepatitis A, fiebre tifoidea y cólera",
+     "Malaria: protección por debajo de 2.000 m (Rift, Omo)",
+     "Rabia y meningitis (estancias largas)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "907"
+   },
+   "tipping": {
+    "custom": "Se espera propina; deje 5-10 % en restaurantes.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Si la cuenta incluye 10 % de servicio, lo demás es opcional. A guías y conductores se les dan 5-15 $ al día."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Sin devolución de IVA para turistas",
+    "minSpend": "No aplica",
+    "customsNote": "Etiopía no devuelve el IVA a turistas. Para sacar antigüedades, objetos religiosos y cruces se requiere permiso, y grandes cantidades de café pueden estar limitadas. Guarde los recibos para recambiar birr."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.40 - $1.50",
+    "topCarriers": [
+     "Ethio Telecom",
+     "Safaricom Ethiopia"
+    ],
+    "airportSimTrapWarning": "En el aeropuerto de Bole hay puestos de Ethio Telecom y Safaricom a precios razonables; se requiere pasaporte. Descargue mapas sin conexión: internet puede cortarse en zonas de conflicto."
+   },
+   "touristScams": [
+    {
+     "title": "El amigo “estudiante”",
+     "desc": "Un “estudiante” que practica inglés le lleva a un café o bar con una cuenta desorbitada.",
+     "tip": "Elija usted el local y pregunte precios antes."
+    },
+    {
+     "title": "Robo por distracción",
+     "desc": "Alguien le mancha o escupe y un cómplice le roba el móvil mientras “limpian”.",
+     "tip": "Rechace la ayuda, lleve el bolso delante y aléjese."
+    },
+    {
+     "title": "Regateo por fotos",
+     "desc": "En el valle del Omo surgen disputas sobre el número y precio de las fotos.",
+     "tip": "Pacte el precio con el guía y pague foto a foto."
+    }
+   ]
+  }
+ },
+ "ru": {
+  "insights": {
+   "currency": "Эфиопский быр (ETB)",
+   "plugType": "Тип C, E, F, L (220V, 50Hz)",
+   "bestMonths": "Октябрь – март (сухой сезон; самые зелёные пейзажи в октябре – ноябре). Большие дожди (кирэмт) — июнь – сентябрь. Тимкат (19 января) и Мескель (27 сентября) — самые яркие праздники.",
+   "safety": {
+    "safetyScore": 40,
+    "safetyLevel": "Требуется Осторожность",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60",
+    "crimeRateSummary": "По всей стране есть риск вооружённых столкновений и беспорядков: официально не рекомендуется посещать регион Амхара (включая Лалибелу, Гондэр и горы Сымен), где продолжаются бои, часть Тыграя и Оромии, а также приграничные районы с Эритреей, Сомали, Кенией, Суданом и Южным Суданом; возможны перекрытия дорог и отключения интернета. В Аддис-Абебе часты уличные кражи, кражи телефонов и мошенничество.",
+    "commonScams": [
+     "«Студенты», которые знакомятся и ведут в дорогую кофейню или бар",
+     "Кража телефона, пока вас отвлекают в толпе (например, плевком или пролитой жидкостью)",
+     "Фальшивые гиды требуют завышенную плату за каждое фото в деревнях долины Омо"
+    ],
+    "safeTravelTips": [
+     "Не ездите по дорогам в Амхару (Лалибела, Гондэр, Бахр-Дар, Сымен) и в приграничные районы; следите за официальными предупреждениями.",
+     "В Аддис-Абебе не доставайте телефон на улице; ночью ездите на Ride или Feres.",
+     "На юге пользуйтесь зарегистрированными агентствами и местными гидами, не ездите ночью."
+    ],
+    "emergencyNumbers": {
+     "police": "991",
+     "ambulance": "907",
+     "general": "991"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Хороший 4G в Аддис-Абебе и крупных городах, ограниченный 5G в столице; слабо в сельской местности. В зонах конфликта интернет могут отключать надолго.",
+    "costPerGbUsd": "~0.40 - 1.50 $",
+    "esimAvailability": "Средне (Safaricom и Ethio Telecom предлагают eSIM; международные дорогие)",
+    "bestCarriers": [
+     "Ethio Telecom",
+     "Safaricom Ethiopia"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Средне (легкорельсовый транспорт и маршрутки в Аддисе; междугородние автобусы медленные)",
+    "costLevel": "Дёшево",
+    "singleTicketUsd": "0.05 - 0.30 $ (трамвай / маршрутка)",
+    "dailyPassUsd": "Нет",
+    "popularRideApps": [
+     "Ride",
+     "Feres",
+     "Yango"
+    ],
+    "taxiAdvice": "В Аддис-Абебе популярны местные приложения Ride и Feres, а также Yango — цена известна заранее. Сине-белые маршрутки очень дешёвые, но переполнены. На большие расстояния удобны внутренние рейсы Ethiopian Airlines (со скидкой, если вы прилетели этой авиакомпанией) — быстро и безопасно; междугородние автобусы — Selam Bus и Sky Bus."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "25 - 45 $",
+    "dailyBudgetMidrangeUsd": "70 - 130 $",
+    "budgetMealUsd": "3 - 6 $",
+    "coffeeUsd": "0.30 - 1.50 $",
+    "waterBottleUsd": "0.40 - 0.80 $",
+    "hostelDormUsd": "10 - 20 $",
+    "hotel3StarUsd": "50 - 110 $",
+    "flightCostIndex": "Доступно (прямые рейсы)",
+    "flightTip": "Turkish Airlines и Ethiopian Airlines летают напрямую Стамбул – Аддис-Абеба (~5,5 ч). Прилетев Ethiopian, вы получите большую скидку на внутренние рейсы; покупайте на сайте или в офисе авиакомпании."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "При рукопожатии в знак уважения касаются левой рукой правого запястья и слегка кланяются; друзья соприкасаются плечами.",
+     "Ешьте с общей инджеры правой рукой; не отказывайтесь, когда хозяин кладёт вам кусочек в рот (гурша).",
+     "Кофейная церемония длится около часа; вежливо выпить три чашки.",
+     "В долине Омо заранее обсуждайте плату за фото; не заходите в деревни без гида."
+    ],
+    "festivals": [
+     "Тимкат (Крещение, 19 января; в високосные годы 20 января)",
+     "Мескель (Обретение Креста, 27 сентября, ЮНЕСКО)",
+     "Энкутаташ (эфиопский Новый год, 11 сентября) и Ирреча (праздник благодарения оромо, начало октября)"
+    ],
+    "lifestyle": "В Эфиопии свой календарь (отстаёт на 7–8 лет, 13 месяцев) и 12-часовой счёт времени от рассвета — будьте внимательны с часами и датами. Кофе — сердце культуры; православные не едят животную пищу по средам, пятницам и в долгие посты, поэтому веганское «йецом беяйнету» есть везде."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Аддис-Абеба: Национальный музей (Люси) и рынок Меркато",
+     "Скальные церкви Лалибелы (ЮНЕСКО – сейчас не рекомендуется из-за безопасности)",
+     "Озёра Рифтовой долины (Аваса, Лангано, Абията-Шала)",
+     "Арба-Минч, нацпарк Нечисар и деревня Дорзе",
+     "Народы долины Омо (Джинка, Турми, мурси и хамер)",
+     "Культурный ландшафт Консо (ЮНЕСКО)"
+    ],
+    "bestSeasons": "Октябрь – март",
+    "travelStyleTip": "Из-за ситуации с безопасностью выбирайте Аддис-Абебу и южный коридор Рифт – Омо вместо северного исторического маршрута (Лалибела, Гондэр, Аксум). Проверяйте обстановку ежедневно и летайте на дальние расстояния."
+   },
+   "religion": {
+    "primaryReligions": "Эфиопская православная церковь Тэвахедо ~43 %, мусульмане ~31–34 %, протестанты (пэнтэ) ~20 %, традиционные верования — меньшинство",
+    "respectNorms": "В храмах снимают обувь, женщины покрывают голову (шаль нэтэла); не пользуйтесь вспышкой на службе. В некоторые монастыри женщинам нельзя.",
+    "sacredSites": [
+     "Собор Святой Троицы (Аддис-Абеба)",
+     "Окружённый стеной город Харэр-Джугол (ЮНЕСКО, множество мечетей и святынь)",
+     "Скальные церкви Лалибелы (место паломничества)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Федеральный рабочий язык — амхарский; официальными также являются оромо, тигринья, сомали и афарский. В стране более 80 языков.",
+    "englishProficiency": "Средний; в Аддис-Абебе по-английски говорят образованные люди и работники туризма, на юге нужен гид.",
+    "phrases": [
+     {
+      "phrase": "ሰላም (selam)",
+      "meaning": "Привет (амхарский)",
+      "translation": "Привет",
+      "pronunciation": "seh-LAHM"
+     },
+     {
+      "phrase": "ጤና ይስጥልኝ (tena yistilign)",
+      "meaning": "Здравствуйте (вежливо; «дай вам Бог здоровья»)",
+      "translation": "Здравствуйте",
+      "pronunciation": "TEH-na yis-TIL-ign"
+     },
+     {
+      "phrase": "አመሰግናለሁ (ameseginalehu)",
+      "meaning": "Спасибо (амхарский)",
+      "translation": "Спасибо",
+      "pronunciation": "a-meh-seg-NA-leh-hu"
+     },
+     {
+      "phrase": "ስንት ነው? (sint new?)",
+      "meaning": "Сколько стоит? (амхарский)",
+      "translation": "Сколько?",
+      "pronunciation": "sint NEH-oo"
+     },
+     {
+      "phrase": "እሺ (ishi)",
+      "meaning": "Хорошо / Ладно (амхарский)",
+      "translation": "Хорошо",
+      "pronunciation": "ISH-ee"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Одна из колыбелей человечества (окаменелость «Люси» возрастом 3,2 млн лет). Аксумское царство приняло христианство в IV веке; в XII–XIII веках были высечены церкви Лалибелы, в XVII веке построены замки Гондэра. Победа при Адуа в 1896 году отразила Италию — Эфиопия стала одним из немногих никогда не колонизированных государств Африки (кроме оккупации 1936–1941 годов). В 1974 году монархия пала, после 1991 года сложилась федеративная система.",
+    "milestones": [
+     "IV век: Аксум принимает христианство",
+     "1896: победа при Адуа",
+     "1974: конец правления императора Хайле Селассие",
+     "2024: переход быра к плавающему курсу"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Доро вот (курица в бербере с яйцом)",
+     "Китфо (рубленая говядина в пряном масле, сырая или слегка обжаренная)",
+     "Беяйнету (постное ассорти на инджере)"
+    ],
+    "traditionalDrinks": [
+     "Буна (кофейная церемония; Эфиопия — родина кофе)",
+     "Тэдж (медовое вино)",
+     "Сприс (слоёный сок) и минеральная вода Ambo"
+    ],
+    "streetFoodAndDesserts": [
+     "Самбуса",
+     "Коло (жареный ячмень и нут)",
+     "Дабо коло и хлеб амбаша"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Абебе Бикила (олимпийский чемпион по марафону босиком, Рим-1960)",
+     "Хайле Гебреселассие (легенда бега на длинные дистанции)",
+     "Мулату Астатке (отец эфио-джаза)"
+    ],
+    "strongSectors": [
+     "Кофе и сельское хозяйство (основа экспорта)",
+     "Авиация (Ethiopian Airlines — крупнейшая авиакомпания Африки)",
+     "Срезанные цветы и гидроэнергетика (плотина «Возрождение»)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "В июле 2024 года быр отпустили в свободное плавание, и он сильно подешевел; курс меняется быстро. Крупные отели принимают карты, но в основном платят наличными или мобильными деньгами (Telebirr, M-PESA). Меняйте в банках и храните чеки — они нужны для обратного обмена.",
+    "tippingCulture": "Чаевые приняты: 5–10 % в ресторане, ежедневно гидам и водителям, немного на кофейной церемонии.",
+    "economicPillars": "Сельское хозяйство (кофе, кунжут, цветы), авиация, услуги, строительство и гидроэнергетика."
+   }
+  },
+  "itin": {
+   "routeName": "Маршрут по югу Эфиопии: Аддис-Абеба, озёра Рифта, Арба-Минч и долина Омо",
+   "routeSummary": "10-дневный южный маршрут вдали от зон конфликта на севере: музеи и кофейная культура Аддис-Абебы, птичьи озёра Рифтовой долины, озеро Чамо с крокодилами и ткачи дорзе у Арба-Минча, затем народы долины Омо.",
+   "totalDays": 10,
+   "idealDurationText": "Маршрут на 10 дней",
+   "bestSeason": "Октябрь – март",
+   "transportMode": "Внедорожник с водителем от агентства + внутренние рейсы Аддис – Арба-Минч / Джинка",
+   "paceLevel": "Умеренный (культура + природа + этнография)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Остановка 1: Аддис-Абеба",
+     "recommendedDuration": "3 дня",
+     "durationBadge": "3 дня",
+     "highlights": [
+      "Национальный музей и окаменелость Люси",
+      "Собор Святой Троицы",
+      "Меркато (один из крупнейших рынков Африки)",
+      "Гора Энтото и парк Единства"
+     ],
+     "activities": [
+      "Поучаствуйте в традиционной кофейной церемонии.",
+      "Вечером посмотрите плечевой танец эскиста в этно-ресторане.",
+      "Осмотрите Меркато с гидом и без ценностей."
+     ],
+     "foodAndDrinks": [
+      "Доро вот",
+      "Китфо",
+      "Буна (кофе)"
+     ],
+     "criticalTips": [
+      "Город на высоте 2 355 м — в первый день не спешите.",
+      "Ночью пользуйтесь Ride или Feres."
+     ],
+     "mapsQuery": "Addis Ababa, Ethiopia"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Остановка 2: Озёра Рифтовой долины и Аваса",
+     "recommendedDuration": "2 дня",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Нацпарк озёр Абията-Шала (фламинго)",
+      "Рыбный рынок Авасы и Амора-Гедел",
+      "Смотровая площадка на холме Табор",
+      "Горячие источники Вондо-Генет"
+     ],
+     "activities": [
+      "Ранним утром понаблюдайте за рыбаками и марабу на рыбном рынке.",
+      "Прокатитесь на лодке и посмотрите на бегемотов.",
+      "Отдохните в термальных бассейнах Вондо-Генета."
+     ],
+     "foodAndDrinks": [
+      "Жареная тилапия (аса тибс)",
+      "Сприс из авокадо и манго"
+     ],
+     "criticalTips": [
+      "Перед купанием в озёрах уточните у местных (риск бильгарциоза).",
+      "На дорогах возможны блокпосты — возьмите паспорт."
+     ],
+     "mapsQuery": "Hawassa, Ethiopia"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Остановка 3: Арба-Минч и Дорзе",
+     "recommendedDuration": "2 дня",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Гигантские крокодилы озера Чамо («Крокодилий рынок»)",
+      "Нацпарк Нечисар и «Божий мост»",
+      "Бамбуковые хижины в форме головы слона в деревне Дорзе",
+      "Террасные деревни Консо (ЮНЕСКО)"
+     ],
+     "activities": [
+      "Прокатитесь на лодке по озеру Чамо к крокодилам и бегемотам.",
+      "Посмотрите в Дорзе ткачество и выпечку хлеба кочо из энсеты.",
+      "Пройдитесь среди каменных террас и статуй вака в Консо."
+     ],
+     "foodAndDrinks": [
+      "Кочо с китфо",
+      "Ареке (местная анисовая водка)"
+     ],
+     "criticalTips": [
+      "Плату за посещение деревень оговорите с гидом заранее.",
+      "Есть риск малярии — вечером репеллент и длинные рукава."
+     ],
+     "mapsQuery": "Arba Minch, Ethiopia"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Остановка 4: Долина Омо (Джинка и Турми)",
+     "recommendedDuration": "3 дня",
+     "durationBadge": "3 дня",
+     "highlights": [
+      "Деревни мурси в нацпарке Маго",
+      "Рынок хамер в Турми",
+      "Исследовательский центр и музей Южного Омо, Джинка",
+      "Если повезёт — обряд прыжков через быков у хамер"
+     ],
+     "activities": [
+      "Узнайте о народах долины в музее Джинки, затем посетите деревню с гидом.",
+      "Подгадайте посещение под еженедельный рынок (Турми, Димека, Кей-Афер).",
+      "Перед каждым снимком спрашивайте разрешения и платите человеку напрямую."
+     ],
+     "foodAndDrinks": [
+      "Тибс (жареное мясо)",
+      "Широ с инджерой",
+      "Бутилированная вода и газировка (выбор ограничен)"
+     ],
+     "criticalTips": [
+      "Ездите только с местным гидом и агентством; узнавайте о местной обстановке.",
+      "Перелёт Аддис – Джинка экономит два дня дороги."
+     ],
+     "mapsQuery": "Jinka, Ethiopia"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Доро вот (курица в бербере с яйцом)",
+     "Китфо (рубленая говядина в пряном масле, сырая или слегка обжаренная)",
+     "Беяйнету (постное ассорти на инджере)"
+    ],
+    "drinks": [
+     "Буна (кофейная церемония; Эфиопия — родина кофе)",
+     "Тэдж (медовое вино)",
+     "Сприс (слоёный сок) и минеральная вода Ambo"
+    ],
+    "streetFoods": [
+     "Самбуса",
+     "Коло (жареный ячмень и нут)",
+     "Дабо коло и хлеб амбаша"
+    ],
+    "diningAdvice": "Инджера — основа любой еды; по средам и пятницам многие рестораны подают только постные веганские блюда. Китфо и сырое мясо (курт) могут вызвать расстройство — просите «леб леб» (слегка обжаренное). К ценам добавляют НДС 15 % и иногда 10 % за обслуживание."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Пауэрбанк и фонарик (частые отключения)",
+     "Репеллент и средства от малярии (проконсультируйтесь с врачом)",
+     "Мелкие купюры быра (для фото и чаевых)",
+     "Шаль или платок для посещения храмов"
+    ],
+    "safetyAndEtiquette": [
+     "Не высказывайтесь об этнических и политических вопросах.",
+     "В долине Омо не фотографируйте людей без разрешения и оплаты."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "E",
+     "F",
+     "L"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "В основном розетки C/E/F с круглыми штырями, иногда итальянский тип L; турецкие вилки обычно подходят. Частые отключения — возьмите пауэрбанк."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Водопроводную воду пить нельзя; пейте бутилированную (Highland, Aqua Addis), избегайте сырых овощей и льда.",
+    "vaccines": [
+     "Жёлтая лихорадка: рекомендуется для эндемичных районов; сертификат при въезде из страны риска",
+     "Гепатит A, брюшной тиф и холера",
+     "Малярия: защита нужна ниже 2 000 м (Рифт, Омо)",
+     "Бешенство и менингит (при длительном пребывании)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "907"
+   },
+   "tipping": {
+    "custom": "Чаевые ожидаются; в ресторане 5–10 %.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Если в счёте есть сервис 10 %, доплата по желанию. Гидам и водителям обычно 5–15 $ в день."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Возврат НДС туристам не предусмотрен",
+    "minSpend": "Не применяется",
+    "customsNote": "Возврата НДС туристам нет. Для вывоза антиквариата, религиозных предметов и крестов нужно разрешение; вывоз большого количества кофе может ограничиваться. Храните банковские чеки для обратного обмена быра."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$0.40 - $1.50",
+    "topCarriers": [
+     "Ethio Telecom",
+     "Safaricom Ethiopia"
+    ],
+    "airportSimTrapWarning": "В аэропорту Боле есть стойки Ethio Telecom и Safaricom с нормальными ценами; нужна регистрация по паспорту. Скачайте офлайн-карты: в зонах конфликта интернет могут отключить."
+   },
+   "touristScams": [
+    {
+     "title": "«Друг-студент»",
+     "desc": "«Студент», практикующий английский, ведёт в кафе или бар, где счёт оказывается огромным.",
+     "tip": "Выбирайте заведение сами и уточняйте цены заранее."
+    },
+    {
+     "title": "Кража с отвлечением",
+     "desc": "На вас что-то проливают или плюют, а пока «чистят», сообщник забирает телефон.",
+     "tip": "Откажитесь от помощи, держите сумку спереди и уходите."
+    },
+    {
+     "title": "Торг за плату за фото",
+     "desc": "В долине Омо потом возникают споры о количестве и цене снимков.",
+     "tip": "Обговорите цену с гидом и платите за каждый снимок."
+    }
+   ]
+  }
+ }
+}

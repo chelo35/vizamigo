@@ -1,0 +1,1777 @@
+{
+ "tr": {
+  "insights": {
+   "currency": "Amerikan Doları (USD)",
+   "plugType": "Tip A, B (120V, 60Hz)",
+   "bestMonths": "Ocak – Nisan (görece kurak dönem; deniz sakin, dalış için ideal). Yıl boyu sıcak (27–30 °C) ve yağışlıdır; Pohnpei dünyanın en yağışlı yerlerinden biridir. Haziran – Kasım arası özellikle Yap ve Chuuk çevresinde tayfun riski vardır.",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Güvenli",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Genel olarak güvenli ve sakindir; ancak Chuuk’un Weno adasında gece alkol kaynaklı kavgalar ve hırsızlık görülür. Sağlık altyapısı çok sınırlıdır, ciddi durumlarda Guam veya Hawaii’ye tahliye gerekir; dalış kazaları için sigorta şarttır.",
+    "commonScams": [
+     "Yerel izin almadan rehberlik teklif edip arazi sahibine ödenmesi gereken ücreti gizleyenler (ör. Nan Madol)",
+     "Chuuk’ta otel önünde bekleyen lisanssız teknecilerin güvenliksiz tekneyle tur satması",
+     "Batık bölgelerden “hatıra” eşya satma teklifleri (çıkarmak yasaktır)"
+    ],
+    "safeTravelTips": [
+     "Weno’da (Chuuk) karanlıktan sonra yürümeyin, otel transferi kullanın.",
+     "Dalışları sertifikalı merkezlerle yapın; ülkede basınç odası olanakları sınırlıdır, uçuştan 24 saat önce dalmayı bırakın.",
+     "Adalarda araziler özel mülktür; plaj, şelale ve kalıntılara girmeden önce izin isteyip giriş ücretini ödeyin."
+    ],
+    "emergencyNumbers": {
+     "police": "911",
+     "ambulance": "911",
+     "general": "911"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Ana adaların merkezlerinde (Kolonia, Weno, Tofol, Colonia) 4G/LTE var; dış adalarda yok. Hız düşük ve fiyatlar yüksektir.",
+    "costPerGbUsd": "~5.00 - 10.00 $",
+    "esimAvailability": "Zayıf (birkaç uluslararası eSIM, pahalı); yerel FSM Telecom SIM kartı daha pratiktir",
+    "bestCarriers": [
+     "FSM Telecom (FSMTC)"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Zayıf (toplu taşıma yok; taksi, kiralık araç ve tekne)",
+    "costLevel": "Orta (adalar arası uçuşlar çok pahalı)",
+    "singleTicketUsd": "1.00 - 3.00 $ (Kolonia ve Weno’da paylaşımlı taksi)",
+    "dailyPassUsd": "Yok",
+    "popularRideApps": [
+     "Uygulama yok – paylaşımlı taksiler",
+     "Kiralık araç ve otel transferleri",
+     "United Island Hopper"
+    ],
+    "taxiAdvice": "Uber/Bolt yoktur. Kolonia (Pohnpei) ve Weno’da (Chuuk) paylaşımlı taksiler kısa mesafede birkaç dolardır; Weno’nun yolları çok bozuktur. Kosrae ve Yap’ta araç kiralamak veya otel transferi kullanmak en pratik yoldur; adalar arasında yalnızca uçak ve sınırlı tekne seferleri vardır."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "60 - 100 $",
+    "dailyBudgetMidrangeUsd": "130 - 220 $",
+    "budgetMealUsd": "6 - 15 $",
+    "coffeeUsd": "2.00 - 4.00 $",
+    "waterBottleUsd": "1.00 - 2.00 $",
+    "hostelDormUsd": "Hostel yok; basit pansiyonlar 50 - 80 $",
+    "hotel3StarUsd": "90 - 180 $",
+    "flightCostIndex": "Çok yüksek",
+    "flightTip": "Türkiye’den önce Guam veya Honolulu’ya, ardından United Airlines’ın “Island Hopper” seferiyle Chuuk, Pohnpei ve Kosrae’ye uçulur; Yap’a Guam’dan ayrı sefer vardır. Sefer sıklığı haftada birkaç gündür; biletleri ve aktarmaları erken planlayın."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Kadınlar dizlerini örten etek veya şort giymelidir; uyluk göstermek göğüs açmaktan daha ayıp sayılır.",
+     "Yap’ta bir köyden geçerken elinizde yaprak taşımak ve izin istemek gelenektir; yollar ve araziler özel mülktür.",
+     "Kosrae’de pazar günü kutsaldır: yüzme, dalış ve çoğu ticari faaliyet yapılmaz.",
+     "Sakau (kava) törenlerinde ilk kase yaşlılara ve şeflere sunulur; size uzatılırsa iki elle alın."
+    ],
+    "festivals": [
+     "Yap Günü (1 Mart; geleneksel danslar)",
+     "Anayasa Günü (10 Mayıs)",
+     "Pohnpei Kültür Günü (31 Mart) ve FSM Bağımsızlık Günü (3 Kasım)"
+    ],
+    "lifestyle": "Dört eyaletin (Yap, Chuuk, Pohnpei, Kosrae) her birinin kendi dili ve gelenekleri vardır. Klan ve şeflik sistemi, kilise, balıkçılık ve sakau oturumları günlük hayatın merkezindedir; hayat “ada saatiyle” yavaş akar."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Nan Madol bazalt kenti (UNESCO, Pohnpei)",
+     "Truk (Chuuk) Lagünü II. Dünya Savaşı batıkları",
+     "Yap’ın taş paraları (rai) ve manta vatozları",
+     "Lelu kalıntıları (Kosrae)",
+     "Kepirohi ve Sahwartik şelaleleri (Pohnpei)",
+     "Sokehs Kayası (Pohnpei)"
+    ],
+    "bestSeasons": "Ocak – Nisan",
+    "travelStyleTip": "Island Hopper uçuş günlerine göre Chuuk’ta batık dalışına, Pohnpei’de Nan Madol ve şelalelere, Kosrae’de sakin doğaya ayrılan günleri planlayın. Turlar ve tekneler genelde otel veya dalış merkezi üzerinden ayarlanır."
+   },
+   "religion": {
+    "primaryReligions": "Katolik ~%55, Protestan ~%40 (Kosrae’de Kongregasyonalist çoğunluk), diğer ~%5",
+    "respectNorms": "Pazar günleri sessiz olun ve kiliseye kapalı giyinin; Nan Madol ve Lelu atalardan kalma kutsal alanlardır, taşlara tırmanmayın.",
+    "sacredSites": [
+     "Nan Madol (Saudeleur hanedanının kutsal başkenti)",
+     "Kolonia Katolik Çan Kulesi (Alman dönemi)",
+     "Lelu antik kenti (Kosrae)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Resmî dil İngilizcedir; her eyalette yerel dil konuşulur: Chuukça, Pohnpeice, Kosraece, Yapça ve dış adalarda Ulithi, Woleai gibi diller.",
+    "englishProficiency": "Yüksek; İngilizce okul ve resmî işler dilidir, ana adalarda rahatça anlaşılır.",
+    "phrases": [
+     {
+      "phrase": "Kaselehlie",
+      "meaning": "Merhaba (Pohnpeice)",
+      "translation": "Merhaba",
+      "pronunciation": "ka-seh-LEH-lee"
+     },
+     {
+      "phrase": "Kalahngan",
+      "meaning": "Teşekkürler (Pohnpeice)",
+      "translation": "Teşekkürler",
+      "pronunciation": "ka-LAHNG-an"
+     },
+     {
+      "phrase": "Ran annim",
+      "meaning": "Günaydın / İyi günler (Chuukça)",
+      "translation": "Günaydın",
+      "pronunciation": "ran an-NEEM"
+     },
+     {
+      "phrase": "Kinisou",
+      "meaning": "Teşekkürler (Chuukça)",
+      "translation": "Teşekkürler",
+      "pronunciation": "kee-nee-SO"
+     },
+     {
+      "phrase": "Mogethin",
+      "meaning": "Merhaba (Yapça)",
+      "translation": "Merhaba",
+      "pronunciation": "MO-geh-thin"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Adalara 2.000 yılı aşkın süre önce yerleşildi; Pohnpei’de Saudeleur hanedanı yaklaşık 1100–1628 yılları arasında Nan Madol’u yönetti. 19. yüzyılda İspanya, 1899’da Almanya, 1914’te Japonya bölgeyi yönetti; II. Dünya Savaşı’nda Truk Lagünü Japon donanmasının üssüydü ve Şubat 1944’teki “Hailstone” harekâtında onlarca gemi battı. Savaş sonrası ABD vesayetindeki adalar, 1986’da ABD ile Serbest Ortaklık Anlaşması’yla bağımsız oldu.",
+    "milestones": [
+     "~1100–1628: Nan Madol’da Saudeleur hanedanı",
+     "1899: Adaların Almanya’ya satılması",
+     "1944: Truk Lagünü’nde “Hailstone” harekâtı",
+     "1986: Serbest Ortaklık Anlaşması ve bağımsızlık"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Ekmek ağacı meyvesi yemekleri ve kon (dövülmüş ekmek meyvesi, Chuuk)",
+     "Taze ton sashimi (Japon mirası)",
+     "Hindistancevizi sütünde taro ve resif balığı"
+    ],
+    "traditionalDrinks": [
+     "Sakau (Pohnpei kavası)",
+     "Taze hindistancevizi suyu",
+     "Kosrae mandalina suyu"
+    ],
+    "streetFoodAndDesserts": [
+     "Pohnpei biberiyle tatlandırılmış yerel yemekler",
+     "Hindistancevizli tatlı patates ve muz",
+     "Yerel donutlar ve pirinç-konserve atıştırmalıkları"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Tosiwo Nakayama (ilk cumhurbaşkanı)",
+     "Bailey Olter (ikinci cumhurbaşkanı)",
+     "Isokelekel (Saudeleur hanedanını deviren efsanevi kahraman)"
+    ],
+    "strongSectors": [
+     "Ton balığı avcılık lisansları",
+     "ABD Serbest Ortaklık fonları ve kamu hizmetleri",
+     "Dalış turizmi ve geçimlik tarım"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Para birimi ABD dolarıdır; ATM’ler yalnızca ana kasabalarda (Bank of FSM, Bank of Guam) bulunur ve bazen çalışmaz. Otel ve dalış merkezlerinde kart geçer; diğer her yerde nakit gerekir, giriş ücretleri için küçük banknot taşıyın.",
+    "tippingCulture": "Geleneksel değildir; dalış rehberlerine ve tekne mürettebatına %10 civarı bahşiş takdir edilir.",
+    "economicPillars": "ABD yardımları, balıkçılık lisansları, kamu sektörü, geçimlik tarım ve dalış turizmi."
+   }
+  },
+  "itin": {
+   "routeName": "Mikronezya Ada Rotası: Chuuk, Pohnpei ve Kosrae",
+   "routeSummary": "United Island Hopper hattını izleyerek Chuuk Lagünü’nün efsanevi II. Dünya Savaşı batıklarından Pohnpei’nin gizemli Nan Madol kalıntıları ve şelalelerine, oradan sakin Kosrae’nin mangrovlarına ve Lelu kalıntılarına uzanan 10 günlük rota.",
+   "totalDays": 10,
+   "idealDurationText": "10 Günlük Rota",
+   "bestSeason": "Ocak – Nisan",
+   "transportMode": "United Island Hopper uçuşları + tekne ve kiralık araç/taksi",
+   "paceLevel": "Sakin (Dalış + Tarih + Doğa)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "1. Durak: Chuuk (Truk Lagünü)",
+     "recommendedDuration": "4 Gün",
+     "durationBadge": "4 Gün",
+     "highlights": [
+      "Fujikawa Maru batığı",
+      "Shinkoku Maru ve San Francisco Maru batıkları",
+      "Weno’daki Japon dönemi deniz feneri ve tüneller",
+      "Lagün içi adacıklarda şnorkel"
+     ],
+     "activities": [
+      "Sertifikalı merkezle batık dalışları yapın (bazıları derin ve ileri seviye).",
+      "Dalış yapmayanlar sığ batıklarda şnorkel yapabilir.",
+      "Weno’da Japon savaş kalıntılarını rehberle gezin."
+     ],
+     "foodAndDrinks": [
+      "Kon (dövülmüş ekmek meyvesi)",
+      "Izgara resif balığı"
+     ],
+     "criticalTips": [
+      "Batıklardan hiçbir şey çıkarmayın; savaş mezarıdırlar ve yasa ile korunurlar.",
+      "Weno’da gece dışarı çıkmayın; yollar çok bozuktur."
+     ],
+     "mapsQuery": "Weno, Chuuk, Micronesia"
+    },
+    {
+     "stopNumber": 2,
+     "name": "2. Durak: Pohnpei (Nan Madol ve Şelaleler)",
+     "recommendedDuration": "4 Gün",
+     "durationBadge": "4 Gün",
+     "highlights": [
+      "Nan Madol bazalt adacıkları",
+      "Kepirohi Şelalesi",
+      "Sokehs Kayası yürüyüşü",
+      "Kolonia’daki İspanyol Duvarı ve Alman çan kulesi"
+     ],
+     "activities": [
+      "Gelgite göre tekneyle Nan Madol’a gidip kanallar arasında yürüyün.",
+      "Kepirohi Şelalesi’nin havuzunda yüzün.",
+      "Bir sakau barında geleneksel kavayı deneyin."
+     ],
+     "foodAndDrinks": [
+      "Ton sashimi",
+      "Sakau",
+      "Pohnpei biberli yemekler"
+     ],
+     "criticalTips": [
+      "Nan Madol ve şelalelerde arazi sahibine giriş ücreti (birkaç dolar) ödenir.",
+      "Neredeyse her gün yağmur yağar; yağmurluk ve kaymaz ayakkabı alın."
+     ],
+     "mapsQuery": "Kolonia, Pohnpei, Micronesia"
+    },
+    {
+     "stopNumber": 3,
+     "name": "3. Durak: Kosrae (Lelu ve Mangrovlar)",
+     "recommendedDuration": "2 Gün",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "Lelu antik kenti",
+      "Utwe – Walung mangrov kanalı kano turu",
+      "Sleeping Lady dağ silueti",
+      "Bozulmamış resiflerde şnorkel"
+     ],
+     "activities": [
+      "Lelu’nun bazalt duvarları arasında yürüyün.",
+      "Kanoyla mangrov kanalında süzülün.",
+      "Pazar günü yerel kilisede ilahileri dinleyin."
+     ],
+     "foodAndDrinks": [
+      "Kosrae mandalinası",
+      "Hindistancevizi yengeci (yasal sezonda)"
+     ],
+     "criticalTips": [
+      "Pazar günü yüzmeyin ve dalış planlamayın; çoğu yer kapalıdır.",
+      "Konaklama çok sınırlıdır; önceden ayırtın."
+     ],
+     "mapsQuery": "Lelu, Kosrae, Micronesia"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Ekmek ağacı meyvesi yemekleri ve kon (dövülmüş ekmek meyvesi, Chuuk)",
+     "Taze ton sashimi (Japon mirası)",
+     "Hindistancevizi sütünde taro ve resif balığı"
+    ],
+    "drinks": [
+     "Sakau (Pohnpei kavası)",
+     "Taze hindistancevizi suyu",
+     "Kosrae mandalina suyu"
+    ],
+    "streetFoods": [
+     "Pohnpei biberiyle tatlandırılmış yerel yemekler",
+     "Hindistancevizli tatlı patates ve muz",
+     "Yerel donutlar ve pirinç-konserve atıştırmalıkları"
+    ],
+    "diningAdvice": "Restoran seçeneği ana kasabalarla sınırlıdır; taze ton balığı ucuz ve mükemmeldir, ithal ürünler pahalıdır. Bazı belediyelerde alkol satışı kısıtlıdır; Kosrae’de pazar günü çoğu restoran kapalıdır."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Dalış sigortası (DAN vb.) ve dalış belgesi",
+     "A/B tipi priz adaptörü",
+     "Yağmurluk ve hızlı kuruyan giysiler",
+     "Küçük dolar banknotlar (giriş ücretleri)"
+    ],
+    "safetyAndEtiquette": [
+     "Arazilere ve plajlara izinsiz girmeyin.",
+     "Dizleri örten giysiler tercih edin, özellikle köylerde."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "A",
+     "B"
+    ],
+    "voltage": "120V",
+    "frequency": "60Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Amerikan tipi yassı pimli (A/B) prizler, 120V; adaptör gerekir, yalnızca 100–240V yazan cihazları takın."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Musluk suyu içmeye uygun değildir; şişe veya filtrelenmiş su için. Yağışlı dönemlerde ishal ve leptospiroz riski artar.",
+    "vaccines": [
+     "Rutin aşılar, hepatit A ve B",
+     "Tifo",
+     "Dang humması: sivrisinekten korunun"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "911"
+   },
+   "tipping": {
+    "custom": "İsteğe bağlı; dalış ekiplerine %10 civarı takdir edilir.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Yerel restoranlarda bahşiş beklenmez; turistik restoran ve otellerde %10 nazik bir jesttir."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Turistlere KDV iadesi uygulanmıyor",
+    "minSpend": "Uygulanmaz",
+    "customsNote": "Mikronezya’da KDV ve turist vergi iadesi yoktur. Batıklardan ve tarihi alanlardan eşya, mercan ve kabuk çıkarmak yasaktır; çıkışta havalimanı vergisi alınabilir."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "$5.00 - $10.00",
+    "topCarriers": [
+     "FSM Telecom (FSMTC)"
+    ],
+    "airportSimTrapWarning": "Tek operatör FSM Telecom’dur; SIM kartı kasabadaki ofisinden alın, havalimanında satış her zaman yoktur. Uluslararası eSIM seçenekleri çok sınırlı ve pahalıdır; otel Wi-Fi’si de yavaştır."
+   },
+   "touristScams": [
+    {
+     "title": "Gizli Arazi Ücreti",
+     "desc": "Gayriresmî rehber, Nan Madol veya şelalede arazi sahibine ödenecek ücreti söylemez; sonra ek ödeme çıkar.",
+     "tip": "Toplam ücreti ve kime ödeneceğini baştan sorun."
+    },
+    {
+     "title": "Güvenliksiz Tekne Turu",
+     "desc": "Ucuz tekne turlarında can yeleği, telsiz veya yedek yakıt olmayabilir.",
+     "tip": "Otel veya dalış merkezinin önerdiği tekneleri seçin."
+    },
+    {
+     "title": "Batık “Hatırası” Satışı",
+     "desc": "Batıklardan çıkarıldığı söylenen eşyalar satılır; bunları almak ve çıkarmak yasa dışıdır.",
+     "tip": "Kesinlikle satın almayın; yerel el sanatlarını tercih edin."
+    }
+   ]
+  }
+ },
+ "en": {
+  "insights": {
+   "currency": "US Dollar (USD)",
+   "plugType": "Type A, B (120V, 60Hz)",
+   "bestMonths": "January – April (relatively dry; calm seas, ideal for diving). It is hot (27–30 °C) and rainy all year; Pohnpei is one of the wettest places on Earth. June – November brings typhoon risk, especially around Yap and Chuuk.",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Safe",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Generally safe and calm; however, alcohol-related fights and theft occur at night on Weno in Chuuk. Medical facilities are very limited and serious cases require evacuation to Guam or Hawaii; insurance covering diving accidents is essential.",
+    "commonScams": [
+     "Unofficial guides who hide the landowner fee that must be paid at sites like Nan Madol",
+     "Unlicensed boatmen in Chuuk selling trips in boats without safety gear",
+     "Offers to sell “souvenirs” from wrecks (removing them is illegal)"
+    ],
+    "safeTravelTips": [
+     "On Weno (Chuuk) don’t walk after dark; use hotel transport.",
+     "Dive with certified centres; recompression facilities are limited, so stop diving 24 hours before flying.",
+     "Land on the islands is privately owned; ask permission and pay the entry fee before visiting beaches, waterfalls or ruins."
+    ],
+    "emergencyNumbers": {
+     "police": "911",
+     "ambulance": "911",
+     "general": "911"
+    }
+   },
+   "internet": {
+    "networkCoverage": "4G/LTE in the main island centres (Kolonia, Weno, Tofol, Colonia); none on outer islands. Speeds are low and prices high.",
+    "costPerGbUsd": "~5.00 - 10.00 $",
+    "esimAvailability": "Poor (few, pricey international eSIMs); a local FSM Telecom SIM is more practical",
+    "bestCarriers": [
+     "FSM Telecom (FSMTC)"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Poor (no public transport; taxis, rental cars and boats)",
+    "costLevel": "Moderate (inter-island flights very expensive)",
+    "singleTicketUsd": "1.00 - 3.00 $ (shared taxi in Kolonia and Weno)",
+    "dailyPassUsd": "None",
+    "popularRideApps": [
+     "No apps – shared taxis",
+     "Rental cars and hotel transfers",
+     "United Island Hopper"
+    ],
+    "taxiAdvice": "There is no Uber/Bolt. Shared taxis in Kolonia (Pohnpei) and Weno (Chuuk) cost a few dollars for short trips; Weno’s roads are very rough. In Kosrae and Yap, renting a car or using hotel transfers is most practical; between islands there are only flights and limited boats."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "60 - 100 $",
+    "dailyBudgetMidrangeUsd": "130 - 220 $",
+    "budgetMealUsd": "6 - 15 $",
+    "coffeeUsd": "2.00 - 4.00 $",
+    "waterBottleUsd": "1.00 - 2.00 $",
+    "hostelDormUsd": "No hostels; simple guesthouses 50 - 80 $",
+    "hotel3StarUsd": "90 - 180 $",
+    "flightCostIndex": "Very high",
+    "flightTip": "From Türkiye fly first to Guam or Honolulu, then on United Airlines’ “Island Hopper” to Chuuk, Pohnpei and Kosrae; Yap has a separate service from Guam. Flights run only a few days a week, so plan tickets and connections early."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Women should wear skirts or shorts covering the knees; showing thighs is considered more immodest than other exposure.",
+     "In Yap it is customary to carry a leaf and ask permission when walking through a village; paths and land are private.",
+     "Sunday is sacred in Kosrae: no swimming, diving or most commercial activity.",
+     "At sakau (kava) ceremonies the first cup goes to elders and chiefs; if offered, accept it with both hands."
+    ],
+    "festivals": [
+     "Yap Day (1 March; traditional dances)",
+     "Constitution Day (10 May)",
+     "Pohnpei Culture Day (31 March) and FSM Independence Day (3 November)"
+    ],
+    "lifestyle": "Each of the four states (Yap, Chuuk, Pohnpei, Kosrae) has its own language and customs. Clans and chiefly systems, church, fishing and sakau sessions are central to daily life, which moves slowly on “island time”."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Nan Madol basalt city (UNESCO, Pohnpei)",
+     "Truk (Chuuk) Lagoon WWII wrecks",
+     "Yap’s stone money (rai) and manta rays",
+     "Lelu ruins (Kosrae)",
+     "Kepirohi and Sahwartik waterfalls (Pohnpei)",
+     "Sokehs Rock (Pohnpei)"
+    ],
+    "bestSeasons": "January – April",
+    "travelStyleTip": "Plan around Island Hopper flight days: wreck diving in Chuuk, Nan Madol and waterfalls in Pohnpei, and quiet nature in Kosrae. Tours and boats are usually arranged through hotels or dive centres."
+   },
+   "religion": {
+    "primaryReligions": "Catholic ~55%, Protestant ~40% (Congregationalist majority in Kosrae), other ~5%",
+    "respectNorms": "Keep Sundays quiet and dress modestly for church; Nan Madol and Lelu are sacred ancestral sites—don’t climb on the stones.",
+    "sacredSites": [
+     "Nan Madol (sacred capital of the Saudeleur dynasty)",
+     "Kolonia Catholic Bell Tower (German era)",
+     "Lelu ancient city (Kosrae)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "English is official; each state speaks its own language: Chuukese, Pohnpeian, Kosraean, Yapese, plus outer-island languages such as Ulithian and Woleaian.",
+    "englishProficiency": "High; English is the language of schools and government and is widely understood on the main islands.",
+    "phrases": [
+     {
+      "phrase": "Kaselehlie",
+      "meaning": "Hello (Pohnpeian)",
+      "translation": "Hello",
+      "pronunciation": "ka-seh-LEH-lee"
+     },
+     {
+      "phrase": "Kalahngan",
+      "meaning": "Thank you (Pohnpeian)",
+      "translation": "Thank you",
+      "pronunciation": "ka-LAHNG-an"
+     },
+     {
+      "phrase": "Ran annim",
+      "meaning": "Good morning / Good day (Chuukese)",
+      "translation": "Good morning",
+      "pronunciation": "ran an-NEEM"
+     },
+     {
+      "phrase": "Kinisou",
+      "meaning": "Thank you (Chuukese)",
+      "translation": "Thank you",
+      "pronunciation": "kee-nee-SO"
+     },
+     {
+      "phrase": "Mogethin",
+      "meaning": "Hello (Yapese)",
+      "translation": "Hello",
+      "pronunciation": "MO-geh-thin"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "The islands were settled more than 2,000 years ago; on Pohnpei the Saudeleur dynasty ruled from Nan Madol around 1100–1628. Spain held the region in the 19th century, Germany from 1899 and Japan from 1914; in WWII Truk Lagoon was a Japanese naval base, and dozens of ships sank in Operation Hailstone in February 1944. After the war the islands were a US trust territory and became independent in 1986 through the Compact of Free Association with the US.",
+    "milestones": [
+     "~1100–1628: Saudeleur dynasty at Nan Madol",
+     "1899: Islands sold to Germany",
+     "1944: Operation Hailstone in Truk Lagoon",
+     "1986: Compact of Free Association and independence"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Breadfruit dishes and kon (pounded breadfruit, Chuuk)",
+     "Fresh tuna sashimi (Japanese legacy)",
+     "Taro and reef fish in coconut milk"
+    ],
+    "traditionalDrinks": [
+     "Sakau (Pohnpeian kava)",
+     "Fresh coconut water",
+     "Kosraean tangerine juice"
+    ],
+    "streetFoodAndDesserts": [
+     "Local dishes spiced with famous Pohnpei pepper",
+     "Sweet potato and banana with coconut",
+     "Local doughnuts and rice-and-spam snacks"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Tosiwo Nakayama (first president)",
+     "Bailey Olter (second president)",
+     "Isokelekel (legendary hero who overthrew the Saudeleur dynasty)"
+    ],
+    "strongSectors": [
+     "Tuna fishing licences",
+     "US Compact funding and public services",
+     "Dive tourism and subsistence farming"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "The currency is the US dollar; ATMs exist only in main towns (Bank of FSM, Bank of Guam) and sometimes fail. Hotels and dive centres take cards; everywhere else needs cash, so carry small bills for entry fees.",
+    "tippingCulture": "Not traditional; around 10% for dive guides and boat crews is appreciated.",
+    "economicPillars": "US assistance, fishing licences, the public sector, subsistence farming and dive tourism."
+   }
+  },
+  "itin": {
+   "routeName": "Micronesia Island Route: Chuuk, Pohnpei and Kosrae",
+   "routeSummary": "A 10-day route following the United Island Hopper: from Chuuk Lagoon’s legendary WWII wrecks to Pohnpei’s mysterious Nan Madol ruins and waterfalls, then the mangroves and Lelu ruins of tranquil Kosrae.",
+   "totalDays": 10,
+   "idealDurationText": "10-Day Itinerary",
+   "bestSeason": "January – April",
+   "transportMode": "United Island Hopper flights + boats and rental car/taxi",
+   "paceLevel": "Relaxed (Diving + History + Nature)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stop 1: Chuuk (Truk Lagoon)",
+     "recommendedDuration": "4 Days",
+     "durationBadge": "4 Days",
+     "highlights": [
+      "Fujikawa Maru wreck",
+      "Shinkoku Maru and San Francisco Maru wrecks",
+      "Japanese-era lighthouse and tunnels on Weno",
+      "Snorkelling at islets inside the lagoon"
+     ],
+     "activities": [
+      "Do wreck dives with a certified centre (some are deep and advanced).",
+      "Non-divers can snorkel over shallow wrecks.",
+      "Tour Japanese war remains on Weno with a guide."
+     ],
+     "foodAndDrinks": [
+      "Kon (pounded breadfruit)",
+      "Grilled reef fish"
+     ],
+     "criticalTips": [
+      "Take nothing from the wrecks; they are war graves protected by law.",
+      "Avoid going out at night on Weno; roads are very rough."
+     ],
+     "mapsQuery": "Weno, Chuuk, Micronesia"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stop 2: Pohnpei (Nan Madol & Waterfalls)",
+     "recommendedDuration": "4 Days",
+     "durationBadge": "4 Days",
+     "highlights": [
+      "Nan Madol basalt islets",
+      "Kepirohi Waterfall",
+      "Sokehs Rock hike",
+      "Spanish Wall and German bell tower in Kolonia"
+     ],
+     "activities": [
+      "Take a boat to Nan Madol timed with the tide and walk among the canals.",
+      "Swim in the pool below Kepirohi Waterfall.",
+      "Try traditional kava at a sakau bar."
+     ],
+     "foodAndDrinks": [
+      "Tuna sashimi",
+      "Sakau",
+      "Dishes with Pohnpei pepper"
+     ],
+     "criticalTips": [
+      "Pay the landowner entry fee (a few dollars) at Nan Madol and the waterfalls.",
+      "It rains almost daily; bring rain gear and non-slip shoes."
+     ],
+     "mapsQuery": "Kolonia, Pohnpei, Micronesia"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stop 3: Kosrae (Lelu & Mangroves)",
+     "recommendedDuration": "2 Days",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "Lelu ancient city",
+      "Utwe – Walung mangrove channel canoe trip",
+      "The Sleeping Lady mountain silhouette",
+      "Snorkelling on pristine reefs"
+     ],
+     "activities": [
+      "Walk among Lelu’s basalt walls.",
+      "Glide through the mangrove channel by canoe.",
+      "Listen to hymns at a local church on Sunday."
+     ],
+     "foodAndDrinks": [
+      "Kosraean tangerines",
+      "Coconut crab (in legal season)"
+     ],
+     "criticalTips": [
+      "Don’t swim or plan dives on Sunday; most places are closed.",
+      "Accommodation is very limited; book ahead."
+     ],
+     "mapsQuery": "Lelu, Kosrae, Micronesia"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Breadfruit dishes and kon (pounded breadfruit, Chuuk)",
+     "Fresh tuna sashimi (Japanese legacy)",
+     "Taro and reef fish in coconut milk"
+    ],
+    "drinks": [
+     "Sakau (Pohnpeian kava)",
+     "Fresh coconut water",
+     "Kosraean tangerine juice"
+    ],
+    "streetFoods": [
+     "Local dishes spiced with famous Pohnpei pepper",
+     "Sweet potato and banana with coconut",
+     "Local doughnuts and rice-and-spam snacks"
+    ],
+    "diningAdvice": "Restaurants are limited to the main towns; fresh tuna is cheap and excellent, imported goods pricey. Alcohol sales are restricted in some municipalities, and most restaurants close on Sundays in Kosrae."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Dive insurance (e.g. DAN) and certification card",
+     "Type A/B plug adapter",
+     "Rain jacket and quick-dry clothing",
+     "Small dollar bills (entry fees)"
+    ],
+    "safetyAndEtiquette": [
+     "Don’t enter land or beaches without permission.",
+     "Wear clothing that covers the knees, especially in villages."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "A",
+     "B"
+    ],
+    "voltage": "120V",
+    "frequency": "60Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "American flat-pin sockets (A/B), 120V; you need an adapter and should only plug in devices rated 100–240V."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Tap water is not safe to drink; drink bottled or filtered water. Diarrhoea and leptospirosis risks rise in wet periods.",
+    "vaccines": [
+     "Routine vaccines, hepatitis A and B",
+     "Typhoid",
+     "Dengue: protect against mosquitoes"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "911"
+   },
+   "tipping": {
+    "custom": "Optional; about 10% for dive crews is appreciated.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Tips aren’t expected in local eateries; 10% in tourist restaurants and hotels is a kind gesture."
+   },
+   "taxFree": {
+    "vatRefundPercent": "No VAT refund for tourists",
+    "minSpend": "Not applicable",
+    "customsNote": "Micronesia has no VAT and no tourist tax refund. Removing items, coral or shells from wrecks and historic sites is prohibited; a departure fee may be charged at the airport."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "$5.00 - $10.00",
+    "topCarriers": [
+     "FSM Telecom (FSMTC)"
+    ],
+    "airportSimTrapWarning": "FSM Telecom is the only operator; buy a SIM at its town office, as airport sales aren’t always available. International eSIM options are very limited and costly, and hotel Wi-Fi is slow."
+   },
+   "touristScams": [
+    {
+     "title": "Hidden Landowner Fee",
+     "desc": "An informal guide doesn’t mention the landowner fee at Nan Madol or a waterfall, leading to surprise charges.",
+     "tip": "Ask for the total fee and who receives it upfront."
+    },
+    {
+     "title": "Unsafe Boat Trip",
+     "desc": "Cheap boat trips may have no life jackets, radio or spare fuel.",
+     "tip": "Choose boats recommended by your hotel or dive centre."
+    },
+    {
+     "title": "Wreck “Souvenir” Sale",
+     "desc": "Items said to come from wrecks are offered; buying or exporting them is illegal.",
+     "tip": "Never buy them; choose local handicrafts instead."
+    }
+   ]
+  }
+ },
+ "de": {
+  "insights": {
+   "currency": "US-Dollar (USD)",
+   "plugType": "Typ A, B (120V, 60Hz)",
+   "bestMonths": "Januar – April (relativ trocken; ruhige See, ideal zum Tauchen). Ganzjährig heiß (27–30 °C) und regnerisch; Pohnpei gehört zu den nassesten Orten der Erde. Juni – November besteht Taifunrisiko, besonders um Yap und Chuuk.",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Sicher",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Allgemein sicher und ruhig; auf Weno (Chuuk) kommt es nachts jedoch zu alkoholbedingten Schlägereien und Diebstählen. Die medizinische Versorgung ist sehr begrenzt, ernste Fälle werden nach Guam oder Hawaii ausgeflogen; eine Versicherung, die Tauchunfälle abdeckt, ist unerlässlich.",
+    "commonScams": [
+     "Inoffizielle Guides, die die an Grundbesitzer zu zahlende Gebühr (z. B. Nan Madol) verschweigen",
+     "Unlizenzierte Bootsführer in Chuuk verkaufen Fahrten ohne Sicherheitsausrüstung",
+     "Angebote, „Souvenirs“ aus Wracks zu verkaufen (Entnahme ist verboten)"
+    ],
+    "safeTravelTips": [
+     "Auf Weno (Chuuk) nach Einbruch der Dunkelheit nicht zu Fuß gehen; Hoteltransport nutzen.",
+     "Nur mit zertifizierten Tauchbasen tauchen; Druckkammern sind rar, 24 Std. vor dem Flug nicht mehr tauchen.",
+     "Land ist Privatbesitz; vor Besuchen von Stränden, Wasserfällen oder Ruinen um Erlaubnis fragen und Eintritt zahlen."
+    ],
+    "emergencyNumbers": {
+     "police": "911",
+     "ambulance": "911",
+     "general": "911"
+    }
+   },
+   "internet": {
+    "networkCoverage": "4G/LTE in den Hauptorten (Kolonia, Weno, Tofol, Colonia); auf Außeninseln nichts. Langsam und teuer.",
+    "costPerGbUsd": "~5.00 - 10.00 $",
+    "esimAvailability": "Schwach (wenige, teure internationale eSIMs); lokale SIM von FSM Telecom ist praktischer",
+    "bestCarriers": [
+     "FSM Telecom (FSMTC)"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Schwach (kein ÖPNV; Taxis, Mietwagen und Boote)",
+    "costLevel": "Mittel (Flüge zwischen den Inseln sehr teuer)",
+    "singleTicketUsd": "1.00 - 3.00 $ (Sammeltaxi in Kolonia und Weno)",
+    "dailyPassUsd": "Keiner",
+    "popularRideApps": [
+     "Keine Apps – Sammeltaxis",
+     "Mietwagen und Hoteltransfers",
+     "United Island Hopper"
+    ],
+    "taxiAdvice": "Kein Uber/Bolt. Sammeltaxis in Kolonia (Pohnpei) und Weno (Chuuk) kosten für kurze Strecken ein paar Dollar; die Straßen auf Weno sind sehr schlecht. Auf Kosrae und Yap sind Mietwagen oder Hoteltransfers am praktischsten; zwischen den Inseln gibt es nur Flüge und wenige Boote."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "60 - 100 $",
+    "dailyBudgetMidrangeUsd": "130 - 220 $",
+    "budgetMealUsd": "6 - 15 $",
+    "coffeeUsd": "2.00 - 4.00 $",
+    "waterBottleUsd": "1.00 - 2.00 $",
+    "hostelDormUsd": "Keine Hostels; einfache Pensionen 50 - 80 $",
+    "hotel3StarUsd": "90 - 180 $",
+    "flightCostIndex": "Sehr hoch",
+    "flightTip": "Aus der Türkei zuerst nach Guam oder Honolulu, dann mit dem „Island Hopper“ von United Airlines nach Chuuk, Pohnpei und Kosrae; Yap wird separat ab Guam angeflogen. Flüge gibt es nur an wenigen Tagen pro Woche – früh planen."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Frauen sollten knielange Röcke oder Shorts tragen; Oberschenkel zu zeigen gilt als besonders unschicklich.",
+     "Auf Yap trägt man beim Durchqueren eines Dorfes ein Blatt und bittet um Erlaubnis; Wege und Land sind privat.",
+     "Auf Kosrae ist der Sonntag heilig: kein Baden, Tauchen und kaum Geschäfte.",
+     "Bei Sakau-(Kava-)Zeremonien gehen die ersten Schalen an Älteste und Häuptlinge; angebotene Schalen mit beiden Händen nehmen."
+    ],
+    "festivals": [
+     "Yap-Tag (1. März; traditionelle Tänze)",
+     "Verfassungstag (10. Mai)",
+     "Kulturtag Pohnpei (31. März) und Unabhängigkeitstag der FSM (3. November)"
+    ],
+    "lifestyle": "Jeder der vier Bundesstaaten (Yap, Chuuk, Pohnpei, Kosrae) hat eigene Sprache und Bräuche. Clans und Häuptlingssysteme, Kirche, Fischerei und Sakau-Runden prägen den Alltag, der gemächlich nach „Inselzeit“ verläuft."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Basaltstadt Nan Madol (UNESCO, Pohnpei)",
+     "Weltkriegswracks der Truk-(Chuuk-)Lagune",
+     "Steingeld (Rai) und Mantarochen auf Yap",
+     "Ruinen von Lelu (Kosrae)",
+     "Wasserfälle Kepirohi und Sahwartik (Pohnpei)",
+     "Sokehs-Felsen (Pohnpei)"
+    ],
+    "bestSeasons": "Januar – April",
+    "travelStyleTip": "Nach den Flugtagen des Island Hopper planen: Wracktauchen auf Chuuk, Nan Madol und Wasserfälle auf Pohnpei, ruhige Natur auf Kosrae. Touren und Boote organisieren meist Hotels oder Tauchbasen."
+   },
+   "religion": {
+    "primaryReligions": "Katholisch ~55 %, protestantisch ~40 % (auf Kosrae überwiegend Kongregationalisten), sonstige ~5 %",
+    "respectNorms": "Sonntags ruhig sein und dezent zur Kirche gehen; Nan Madol und Lelu sind heilige Ahnenstätten – nicht auf die Steine klettern.",
+    "sacredSites": [
+     "Nan Madol (heilige Hauptstadt der Saudeleur-Dynastie)",
+     "Katholischer Glockenturm in Kolonia (deutsche Zeit)",
+     "Antike Stadt Lelu (Kosrae)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Amtssprache ist Englisch; jeder Bundesstaat spricht eine eigene Sprache: Chuukesisch, Pohnpeanisch, Kosraeanisch, Yapesisch sowie Sprachen der Außeninseln wie Ulithi und Woleai.",
+    "englishProficiency": "Hoch; Englisch ist Schul- und Amtssprache und auf den Hauptinseln gut verständlich.",
+    "phrases": [
+     {
+      "phrase": "Kaselehlie",
+      "meaning": "Hallo (Pohnpeanisch)",
+      "translation": "Hallo",
+      "pronunciation": "ka-seh-LEH-lee"
+     },
+     {
+      "phrase": "Kalahngan",
+      "meaning": "Danke (Pohnpeanisch)",
+      "translation": "Danke",
+      "pronunciation": "ka-LAHNG-an"
+     },
+     {
+      "phrase": "Ran annim",
+      "meaning": "Guten Morgen / Guten Tag (Chuukesisch)",
+      "translation": "Guten Morgen",
+      "pronunciation": "ran an-NEEM"
+     },
+     {
+      "phrase": "Kinisou",
+      "meaning": "Danke (Chuukesisch)",
+      "translation": "Danke",
+      "pronunciation": "kee-nee-SO"
+     },
+     {
+      "phrase": "Mogethin",
+      "meaning": "Hallo (Yapesisch)",
+      "translation": "Hallo",
+      "pronunciation": "MO-geh-thin"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Die Inseln wurden vor über 2.000 Jahren besiedelt; auf Pohnpei herrschte die Saudeleur-Dynastie etwa 1100–1628 von Nan Madol aus. Im 19. Jh. Spanien, ab 1899 Deutschland, ab 1914 Japan; im Zweiten Weltkrieg war die Truk-Lagune japanischer Flottenstützpunkt, bei der Operation Hailstone im Februar 1944 sanken Dutzende Schiffe. Nach dem Krieg US-Treuhandgebiet, 1986 durch den Compact of Free Association unabhängig.",
+    "milestones": [
+     "~1100–1628: Saudeleur-Dynastie in Nan Madol",
+     "1899: Verkauf der Inseln an Deutschland",
+     "1944: Operation Hailstone in der Truk-Lagune",
+     "1986: Compact of Free Association und Unabhängigkeit"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Brotfruchtgerichte und Kon (gestampfte Brotfrucht, Chuuk)",
+     "Frisches Thunfisch-Sashimi (japanisches Erbe)",
+     "Taro und Rifffisch in Kokosmilch"
+    ],
+    "traditionalDrinks": [
+     "Sakau (Kava aus Pohnpei)",
+     "Frisches Kokoswasser",
+     "Saft aus Kosrae-Mandarinen"
+    ],
+    "streetFoodAndDesserts": [
+     "Lokale Gerichte mit dem berühmten Pohnpei-Pfeffer",
+     "Süßkartoffel und Banane mit Kokos",
+     "Lokale Donuts und Reis-mit-Spam-Snacks"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Tosiwo Nakayama (erster Präsident)",
+     "Bailey Olter (zweiter Präsident)",
+     "Isokelekel (legendärer Held, der die Saudeleur stürzte)"
+    ],
+    "strongSectors": [
+     "Thunfisch-Fanglizenzen",
+     "US-Compact-Mittel und öffentlicher Dienst",
+     "Tauchtourismus und Subsistenzlandwirtschaft"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Währung ist der US-Dollar; Geldautomaten gibt es nur in den Hauptorten (Bank of FSM, Bank of Guam), und sie fallen gelegentlich aus. Hotels und Tauchbasen nehmen Karten, sonst Bargeld – kleine Scheine für Eintrittsgebühren.",
+    "tippingCulture": "Nicht traditionell; etwa 10 % für Tauchguides und Bootscrews werden geschätzt.",
+    "economicPillars": "US-Hilfen, Fischereilizenzen, öffentlicher Sektor, Subsistenzwirtschaft und Tauchtourismus."
+   }
+  },
+  "itin": {
+   "routeName": "Mikronesien-Inselroute: Chuuk, Pohnpei und Kosrae",
+   "routeSummary": "Eine 10-tägige Route entlang des United Island Hopper: von den legendären Weltkriegswracks der Chuuk-Lagune zu den geheimnisvollen Ruinen von Nan Madol und den Wasserfällen Pohnpeis, dann zu Mangroven und Ruinen von Lelu auf dem ruhigen Kosrae.",
+   "totalDays": 10,
+   "idealDurationText": "10-tägige Route",
+   "bestSeason": "Januar – April",
+   "transportMode": "Flüge mit United Island Hopper + Boote und Mietwagen/Taxi",
+   "paceLevel": "Gemächlich (Tauchen + Geschichte + Natur)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stopp 1: Chuuk (Truk-Lagune)",
+     "recommendedDuration": "4 Tage",
+     "durationBadge": "4 Tage",
+     "highlights": [
+      "Wrack der Fujikawa Maru",
+      "Wracks der Shinkoku Maru und San Francisco Maru",
+      "Leuchtturm und Tunnel aus japanischer Zeit auf Weno",
+      "Schnorcheln an den Inselchen der Lagune"
+     ],
+     "activities": [
+      "Mit zertifizierter Basis Wracktauchgänge machen (teils tief und anspruchsvoll).",
+      "Nichttaucher können über flachen Wracks schnorcheln.",
+      "Mit Guide japanische Kriegsrelikte auf Weno besichtigen."
+     ],
+     "foodAndDrinks": [
+      "Kon (gestampfte Brotfrucht)",
+      "Gegrillter Rifffisch"
+     ],
+     "criticalTips": [
+      "Nichts aus den Wracks entnehmen; sie sind gesetzlich geschützte Kriegsgräber.",
+      "Nachts auf Weno nicht ausgehen; Straßen sind sehr schlecht."
+     ],
+     "mapsQuery": "Weno, Chuuk, Micronesia"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stopp 2: Pohnpei (Nan Madol & Wasserfälle)",
+     "recommendedDuration": "4 Tage",
+     "durationBadge": "4 Tage",
+     "highlights": [
+      "Basaltinselchen von Nan Madol",
+      "Kepirohi-Wasserfall",
+      "Wanderung auf den Sokehs-Felsen",
+      "Spanische Mauer und deutscher Glockenturm in Kolonia"
+     ],
+     "activities": [
+      "Gezeitenabhängig mit dem Boot nach Nan Madol fahren und zwischen den Kanälen laufen.",
+      "Im Becken unter dem Kepirohi-Wasserfall baden.",
+      "In einer Sakau-Bar traditionelle Kava probieren."
+     ],
+     "foodAndDrinks": [
+      "Thunfisch-Sashimi",
+      "Sakau",
+      "Gerichte mit Pohnpei-Pfeffer"
+     ],
+     "criticalTips": [
+      "In Nan Madol und an den Wasserfällen eine Eintrittsgebühr (einige Dollar) an den Grundbesitzer zahlen.",
+      "Es regnet fast täglich; Regenschutz und rutschfeste Schuhe mitnehmen."
+     ],
+     "mapsQuery": "Kolonia, Pohnpei, Micronesia"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stopp 3: Kosrae (Lelu & Mangroven)",
+     "recommendedDuration": "2 Tage",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "Antike Stadt Lelu",
+      "Kanutour durch den Mangrovenkanal Utwe – Walung",
+      "Bergsilhouette „Sleeping Lady“",
+      "Schnorcheln an unberührten Riffen"
+     ],
+     "activities": [
+      "Zwischen den Basaltmauern von Lelu spazieren.",
+      "Im Kanu durch den Mangrovenkanal gleiten.",
+      "Sonntags in einer Kirche den Gesängen lauschen."
+     ],
+     "foodAndDrinks": [
+      "Kosrae-Mandarinen",
+      "Palmendieb (in der erlaubten Saison)"
+     ],
+     "criticalTips": [
+      "Sonntags nicht baden oder tauchen; fast alles ist zu.",
+      "Unterkünfte sind rar; vorab buchen."
+     ],
+     "mapsQuery": "Lelu, Kosrae, Micronesia"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Brotfruchtgerichte und Kon (gestampfte Brotfrucht, Chuuk)",
+     "Frisches Thunfisch-Sashimi (japanisches Erbe)",
+     "Taro und Rifffisch in Kokosmilch"
+    ],
+    "drinks": [
+     "Sakau (Kava aus Pohnpei)",
+     "Frisches Kokoswasser",
+     "Saft aus Kosrae-Mandarinen"
+    ],
+    "streetFoods": [
+     "Lokale Gerichte mit dem berühmten Pohnpei-Pfeffer",
+     "Süßkartoffel und Banane mit Kokos",
+     "Lokale Donuts und Reis-mit-Spam-Snacks"
+    ],
+    "diningAdvice": "Restaurants gibt es nur in den Hauptorten; frischer Thunfisch ist billig und hervorragend, Importwaren teuer. In manchen Gemeinden ist Alkoholverkauf eingeschränkt; auf Kosrae sind sonntags die meisten Lokale zu."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Tauchversicherung (z. B. DAN) und Tauchschein",
+     "Steckeradapter Typ A/B",
+     "Regenjacke und schnell trocknende Kleidung",
+     "Kleine Dollarscheine (Eintrittsgebühren)"
+    ],
+    "safetyAndEtiquette": [
+     "Land und Strände nicht ohne Erlaubnis betreten.",
+     "Knielange Kleidung tragen, besonders in Dörfern."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "A",
+     "B"
+    ],
+    "voltage": "120V",
+    "frequency": "60Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Amerikanische Flachstecker-Dosen (A/B), 120V; Adapter nötig, nur Geräte für 100–240V anschließen."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Leitungswasser ist nicht trinkbar; Flaschen- oder Filterwasser trinken. In nassen Phasen steigen Durchfall- und Leptospiroserisiko.",
+    "vaccines": [
+     "Standardimpfungen, Hepatitis A und B",
+     "Typhus",
+     "Dengue: vor Mücken schützen"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "911"
+   },
+   "tipping": {
+    "custom": "Freiwillig; etwa 10 % für Tauchcrews werden geschätzt.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "In lokalen Lokalen wird kein Trinkgeld erwartet; in Touristenrestaurants und Hotels sind 10 % eine nette Geste."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Keine Mehrwertsteuererstattung für Touristen",
+    "minSpend": "Entfällt",
+    "customsNote": "Mikronesien hat keine MwSt. und keine Steuererstattung für Touristen. Gegenstände, Korallen oder Muscheln aus Wracks und historischen Stätten mitzunehmen ist verboten; am Flughafen kann eine Ausreisegebühr anfallen."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "$5.00 - $10.00",
+    "topCarriers": [
+     "FSM Telecom (FSMTC)"
+    ],
+    "airportSimTrapWarning": "FSM Telecom ist der einzige Anbieter; SIM im Büro in der Stadt kaufen, am Flughafen gibt es sie nicht immer. Internationale eSIMs sind kaum verfügbar und teuer, Hotel-WLAN ist langsam."
+   },
+   "touristScams": [
+    {
+     "title": "Versteckte Grundbesitzergebühr",
+     "desc": "Ein inoffizieller Guide verschweigt die Grundbesitzergebühr in Nan Madol oder am Wasserfall – später kommt eine Zusatzzahlung.",
+     "tip": "Gesamtpreis und Empfänger vorab erfragen."
+    },
+    {
+     "title": "Unsichere Bootsfahrt",
+     "desc": "Billige Bootstouren haben oft keine Schwimmwesten, Funk oder Reservetreibstoff.",
+     "tip": "Boote wählen, die Hotel oder Tauchbasis empfehlen."
+    },
+    {
+     "title": "Verkauf von Wrack-„Souvenirs“",
+     "desc": "Angeblich aus Wracks stammende Gegenstände werden angeboten; Kauf und Ausfuhr sind illegal.",
+     "tip": "Niemals kaufen; lieber lokales Kunsthandwerk."
+    }
+   ]
+  }
+ },
+ "es": {
+  "insights": {
+   "currency": "Dólar estadounidense (USD)",
+   "plugType": "Tipo A, B (120V, 60Hz)",
+   "bestMonths": "Enero – abril (relativamente seco; mar en calma, ideal para bucear). Hace calor (27–30 °C) y llueve todo el año; Pohnpei es uno de los lugares más lluviosos del mundo. De junio a noviembre hay riesgo de tifones, sobre todo en Yap y Chuuk.",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "En general es seguro y tranquilo, aunque en Weno (Chuuk) hay peleas nocturnas ligadas al alcohol y robos. La atención médica es muy limitada y los casos graves se evacúan a Guam o Hawái; es imprescindible un seguro que cubra accidentes de buceo.",
+    "commonScams": [
+     "Guías no oficiales que ocultan la tarifa al propietario del terreno (p. ej. Nan Madol)",
+     "Barqueros sin licencia en Chuuk que venden salidas sin equipo de seguridad",
+     "Ofertas de “recuerdos” de los pecios (extraerlos es ilegal)"
+    ],
+    "safeTravelTips": [
+     "En Weno (Chuuk) no camine de noche; use el transporte del hotel.",
+     "Bucee con centros certificados; las cámaras hiperbáricas son escasas: deje de bucear 24 h antes de volar.",
+     "La tierra es privada; pida permiso y pague la entrada antes de visitar playas, cascadas o ruinas."
+    ],
+    "emergencyNumbers": {
+     "police": "911",
+     "ambulance": "911",
+     "general": "911"
+    }
+   },
+   "internet": {
+    "networkCoverage": "4G/LTE en los centros principales (Kolonia, Weno, Tofol, Colonia); nada en islas exteriores. Lento y caro.",
+    "costPerGbUsd": "~5.00 - 10.00 $",
+    "esimAvailability": "Escasa (pocas eSIM internacionales y caras); la SIM local de FSM Telecom es más práctica",
+    "bestCarriers": [
+     "FSM Telecom (FSMTC)"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Deficiente (sin transporte público; taxis, coches y barcos)",
+    "costLevel": "Moderado (vuelos entre islas muy caros)",
+    "singleTicketUsd": "1.00 - 3.00 $ (taxi compartido en Kolonia y Weno)",
+    "dailyPassUsd": "No existe",
+    "popularRideApps": [
+     "Sin apps – taxis compartidos",
+     "Coches de alquiler y traslados del hotel",
+     "United Island Hopper"
+    ],
+    "taxiAdvice": "No hay Uber/Bolt. Los taxis compartidos en Kolonia (Pohnpei) y Weno (Chuuk) cuestan unos dólares en trayectos cortos; las carreteras de Weno están muy mal. En Kosrae y Yap lo más práctico es alquilar coche o usar traslados del hotel; entre islas solo hay vuelos y pocos barcos."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "60 - 100 $",
+    "dailyBudgetMidrangeUsd": "130 - 220 $",
+    "budgetMealUsd": "6 - 15 $",
+    "coffeeUsd": "2.00 - 4.00 $",
+    "waterBottleUsd": "1.00 - 2.00 $",
+    "hostelDormUsd": "No hay hostales; pensiones sencillas 50 - 80 $",
+    "hotel3StarUsd": "90 - 180 $",
+    "flightCostIndex": "Muy alto",
+    "flightTip": "Desde Turquía vuele primero a Guam u Honolulu y luego en el “Island Hopper” de United Airlines a Chuuk, Pohnpei y Kosrae; Yap tiene vuelo aparte desde Guam. Solo hay vuelos unos días por semana: planifique con antelación."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Las mujeres deben llevar falda o pantalón que cubra las rodillas; enseñar los muslos se considera muy impúdico.",
+     "En Yap es costumbre llevar una hoja y pedir permiso al cruzar una aldea; caminos y tierras son privados.",
+     "En Kosrae el domingo es sagrado: no se nada, no se bucea y casi todo cierra.",
+     "En las ceremonias de sakau (kava) la primera copa es para mayores y jefes; si se la ofrecen, tómela con las dos manos."
+    ],
+    "festivals": [
+     "Día de Yap (1 de marzo; danzas tradicionales)",
+     "Día de la Constitución (10 de mayo)",
+     "Día de la Cultura de Pohnpei (31 de marzo) y Día de la Independencia (3 de noviembre)"
+    ],
+    "lifestyle": "Cada uno de los cuatro estados (Yap, Chuuk, Pohnpei, Kosrae) tiene su propia lengua y costumbres. Clanes y jefaturas, iglesia, pesca y rondas de sakau marcan la vida diaria, que transcurre despacio en “hora isleña”."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Ciudad de basalto de Nan Madol (UNESCO, Pohnpei)",
+     "Pecios de la Segunda Guerra Mundial de la laguna de Truk (Chuuk)",
+     "Dinero de piedra (rai) y mantas de Yap",
+     "Ruinas de Lelu (Kosrae)",
+     "Cascadas Kepirohi y Sahwartik (Pohnpei)",
+     "Roca de Sokehs (Pohnpei)"
+    ],
+    "bestSeasons": "Enero – abril",
+    "travelStyleTip": "Planifique según los días del Island Hopper: buceo en pecios en Chuuk, Nan Madol y cascadas en Pohnpei, y naturaleza tranquila en Kosrae. Hoteles y centros de buceo suelen organizar tours y barcos."
+   },
+   "religion": {
+    "primaryReligions": "Católicos ~55 %, protestantes ~40 % (mayoría congregacionalista en Kosrae), otros ~5 %",
+    "respectNorms": "Respete el silencio dominical y vista con recato para la iglesia; Nan Madol y Lelu son lugares sagrados ancestrales: no trepe por las piedras.",
+    "sacredSites": [
+     "Nan Madol (capital sagrada de la dinastía Saudeleur)",
+     "Campanario católico de Kolonia (época alemana)",
+     "Ciudad antigua de Lelu (Kosrae)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "El idioma oficial es el inglés; cada estado tiene su lengua: chuukés, pohnpeiano, kosraeano, yapés y lenguas de islas exteriores como ulithi y woleai.",
+    "englishProficiency": "Alto; el inglés es lengua escolar y oficial y se entiende bien en las islas principales.",
+    "phrases": [
+     {
+      "phrase": "Kaselehlie",
+      "meaning": "Hola (pohnpeiano)",
+      "translation": "Hola",
+      "pronunciation": "ka-seh-LEH-lee"
+     },
+     {
+      "phrase": "Kalahngan",
+      "meaning": "Gracias (pohnpeiano)",
+      "translation": "Gracias",
+      "pronunciation": "ka-LAHNG-an"
+     },
+     {
+      "phrase": "Ran annim",
+      "meaning": "Buenos días (chuukés)",
+      "translation": "Buenos días",
+      "pronunciation": "ran an-NEEM"
+     },
+     {
+      "phrase": "Kinisou",
+      "meaning": "Gracias (chuukés)",
+      "translation": "Gracias",
+      "pronunciation": "kee-nee-SO"
+     },
+     {
+      "phrase": "Mogethin",
+      "meaning": "Hola (yapés)",
+      "translation": "Hola",
+      "pronunciation": "MO-geh-thin"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Las islas se poblaron hace más de 2.000 años; en Pohnpei la dinastía Saudeleur gobernó desde Nan Madol hacia 1100–1628. España dominó en el siglo XIX, Alemania desde 1899 y Japón desde 1914; en la Segunda Guerra Mundial la laguna de Truk fue base naval japonesa y decenas de barcos se hundieron en la Operación Hailstone (febrero de 1944). Tras la guerra fueron territorio en fideicomiso de EE. UU. y en 1986 lograron la independencia con el Pacto de Libre Asociación.",
+    "milestones": [
+     "~1100–1628: dinastía Saudeleur en Nan Madol",
+     "1899: venta de las islas a Alemania",
+     "1944: Operación Hailstone en la laguna de Truk",
+     "1986: Pacto de Libre Asociación e independencia"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Platos de fruta del pan y kon (fruta del pan machacada, Chuuk)",
+     "Sashimi de atún fresco (herencia japonesa)",
+     "Taro y pescado de arrecife en leche de coco"
+    ],
+    "traditionalDrinks": [
+     "Sakau (kava de Pohnpei)",
+     "Agua de coco",
+     "Zumo de mandarina de Kosrae"
+    ],
+    "streetFoodAndDesserts": [
+     "Platos locales con la famosa pimienta de Pohnpei",
+     "Boniato y plátano con coco",
+     "Donuts locales y arroz con spam"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Tosiwo Nakayama (primer presidente)",
+     "Bailey Olter (segundo presidente)",
+     "Isokelekel (héroe legendario que derrocó a los Saudeleur)"
+    ],
+    "strongSectors": [
+     "Licencias de pesca de atún",
+     "Fondos del Pacto con EE. UU. y servicios públicos",
+     "Turismo de buceo y agricultura de subsistencia"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "La moneda es el dólar; solo hay cajeros en las ciudades principales (Bank of FSM, Bank of Guam) y a veces fallan. Hoteles y centros de buceo aceptan tarjeta; en el resto, efectivo y billetes pequeños para las entradas.",
+    "tippingCulture": "No es tradicional; se agradece un 10 % a guías de buceo y tripulación.",
+    "economicPillars": "Ayuda de EE. UU., licencias de pesca, sector público, subsistencia y turismo de buceo."
+   }
+  },
+  "itin": {
+   "routeName": "Ruta por las islas de Micronesia: Chuuk, Pohnpei y Kosrae",
+   "routeSummary": "Ruta de 10 días siguiendo el Island Hopper de United: de los legendarios pecios de la laguna de Chuuk a las misteriosas ruinas de Nan Madol y las cascadas de Pohnpei, y luego a los manglares y ruinas de Lelu en la tranquila Kosrae.",
+   "totalDays": 10,
+   "idealDurationText": "Ruta de 10 días",
+   "bestSeason": "Enero – abril",
+   "transportMode": "Vuelos United Island Hopper + barcos y coche/taxi",
+   "paceLevel": "Tranquilo (buceo + historia + naturaleza)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Chuuk (laguna de Truk)",
+     "recommendedDuration": "4 días",
+     "durationBadge": "4 días",
+     "highlights": [
+      "Pecio del Fujikawa Maru",
+      "Pecios del Shinkoku Maru y San Francisco Maru",
+      "Faro y túneles de época japonesa en Weno",
+      "Esnórquel en los islotes de la laguna"
+     ],
+     "activities": [
+      "Bucee en pecios con un centro certificado (algunos son profundos y avanzados).",
+      "Quien no bucee puede hacer esnórquel en pecios poco profundos.",
+      "Recorra con guía los restos bélicos japoneses de Weno."
+     ],
+     "foodAndDrinks": [
+      "Kon (fruta del pan machacada)",
+      "Pescado de arrecife a la parrilla"
+     ],
+     "criticalTips": [
+      "No se lleve nada de los pecios: son tumbas de guerra protegidas.",
+      "No salga de noche en Weno; las carreteras están muy mal."
+     ],
+     "mapsQuery": "Weno, Chuuk, Micronesia"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Pohnpei (Nan Madol y cascadas)",
+     "recommendedDuration": "4 días",
+     "durationBadge": "4 días",
+     "highlights": [
+      "Islotes de basalto de Nan Madol",
+      "Cascada Kepirohi",
+      "Subida a la roca de Sokehs",
+      "Muro español y campanario alemán en Kolonia"
+     ],
+     "activities": [
+      "Vaya en barca a Nan Madol según la marea y camine entre los canales.",
+      "Nade en la poza de la cascada Kepirohi.",
+      "Pruebe el kava tradicional en un bar de sakau."
+     ],
+     "foodAndDrinks": [
+      "Sashimi de atún",
+      "Sakau",
+      "Platos con pimienta de Pohnpei"
+     ],
+     "criticalTips": [
+      "En Nan Madol y las cascadas se paga al propietario una entrada (unos dólares).",
+      "Llueve casi a diario; lleve impermeable y calzado antideslizante."
+     ],
+     "mapsQuery": "Kolonia, Pohnpei, Micronesia"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Kosrae (Lelu y manglares)",
+     "recommendedDuration": "2 días",
+     "durationBadge": "2 días",
+     "highlights": [
+      "Ciudad antigua de Lelu",
+      "Canoa por el canal de manglares Utwe – Walung",
+      "Silueta montañosa “Sleeping Lady”",
+      "Esnórquel en arrecifes vírgenes"
+     ],
+     "activities": [
+      "Pasee entre los muros de basalto de Lelu.",
+      "Navegue en canoa por el canal de manglares.",
+      "Escuche los cantos en una iglesia el domingo."
+     ],
+     "foodAndDrinks": [
+      "Mandarinas de Kosrae",
+      "Cangrejo de los cocoteros (en temporada legal)"
+     ],
+     "criticalTips": [
+      "No nade ni bucee el domingo; casi todo cierra.",
+      "El alojamiento es escaso; reserve antes."
+     ],
+     "mapsQuery": "Lelu, Kosrae, Micronesia"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Platos de fruta del pan y kon (fruta del pan machacada, Chuuk)",
+     "Sashimi de atún fresco (herencia japonesa)",
+     "Taro y pescado de arrecife en leche de coco"
+    ],
+    "drinks": [
+     "Sakau (kava de Pohnpei)",
+     "Agua de coco",
+     "Zumo de mandarina de Kosrae"
+    ],
+    "streetFoods": [
+     "Platos locales con la famosa pimienta de Pohnpei",
+     "Boniato y plátano con coco",
+     "Donuts locales y arroz con spam"
+    ],
+    "diningAdvice": "Los restaurantes se limitan a las ciudades principales; el atún fresco es barato y excelente, lo importado caro. En algunos municipios se restringe el alcohol y en Kosrae casi todo cierra el domingo."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Seguro de buceo (p. ej. DAN) y titulación",
+     "Adaptador tipo A/B",
+     "Chubasquero y ropa de secado rápido",
+     "Billetes pequeños (entradas)"
+    ],
+    "safetyAndEtiquette": [
+     "No entre en terrenos ni playas sin permiso.",
+     "Use ropa que cubra las rodillas, sobre todo en aldeas."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "A",
+     "B"
+    ],
+    "voltage": "120V",
+    "frequency": "60Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Enchufes americanos de patas planas (A/B), 120V; necesita adaptador y solo aparatos de 100–240V."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "El agua del grifo no es potable; beba embotellada o filtrada. En épocas lluviosas aumentan diarreas y leptospirosis.",
+    "vaccines": [
+     "Vacunas de rutina, hepatitis A y B",
+     "Fiebre tifoidea",
+     "Dengue: protéjase de los mosquitos"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "911"
+   },
+   "tipping": {
+    "custom": "Opcional; se agradece un 10 % a los equipos de buceo.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "En locales sencillos no se espera propina; en restaurantes turísticos y hoteles, un 10 % es un buen gesto."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Sin devolución de IVA para turistas",
+    "minSpend": "No aplica",
+    "customsNote": "Micronesia no tiene IVA ni devolución para turistas. Está prohibido llevarse objetos, coral o conchas de pecios y sitios históricos; puede cobrarse una tasa de salida en el aeropuerto."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "$5.00 - $10.00",
+    "topCarriers": [
+     "FSM Telecom (FSMTC)"
+    ],
+    "airportSimTrapWarning": "FSM Telecom es el único operador; compre la SIM en su oficina en la ciudad, ya que en el aeropuerto no siempre hay. Las eSIM internacionales son escasas y caras, y el wifi del hotel es lento."
+   },
+   "touristScams": [
+    {
+     "title": "Tarifa oculta del propietario",
+     "desc": "Un guía informal no menciona la tarifa al propietario en Nan Madol o una cascada y luego hay cobros extra.",
+     "tip": "Pregunte de antemano el precio total y a quién se paga."
+    },
+    {
+     "title": "Paseo en barca inseguro",
+     "desc": "Las salidas baratas pueden no tener chalecos, radio ni combustible de reserva.",
+     "tip": "Elija barcos recomendados por el hotel o centro de buceo."
+    },
+    {
+     "title": "Venta de “recuerdos” de pecios",
+     "desc": "Ofrecen objetos supuestamente de pecios; comprarlos o sacarlos es ilegal.",
+     "tip": "No los compre nunca; elija artesanía local."
+    }
+   ]
+  }
+ },
+ "ru": {
+  "insights": {
+   "currency": "Доллар США (USD)",
+   "plugType": "Тип A, B (120V, 60Hz)",
+   "bestMonths": "Январь – апрель (относительно сухо; спокойное море, идеально для дайвинга). Круглый год жарко (27–30 °C) и дождливо; Понпеи — одно из самых дождливых мест Земли. С июня по ноябрь риск тайфунов, особенно у Яп и Чуук.",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Безопасно",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "В целом безопасно и спокойно, но на острове Вено (Чуук) ночью бывают пьяные драки и кражи. Медицина очень ограничена, в серьёзных случаях нужна эвакуация на Гуам или Гавайи; страховка с покрытием дайвинга обязательна.",
+    "commonScams": [
+     "Неофициальные гиды, скрывающие обязательную плату владельцу земли (например, в Нан-Мадоле)",
+     "Нелицензированные лодочники на Чууке продают поездки без средств безопасности",
+     "Предложения купить «сувениры» с затонувших кораблей (вывоз запрещён)"
+    ],
+    "safeTravelTips": [
+     "На Вено (Чуук) после темноты не ходите пешком — пользуйтесь трансфером отеля.",
+     "Ныряйте только с сертифицированными центрами; барокамер мало — прекращайте погружения за 24 ч до вылета.",
+     "Земля на островах частная: прежде чем идти к пляжу, водопаду или руинам, спросите разрешения и заплатите сбор."
+    ],
+    "emergencyNumbers": {
+     "police": "911",
+     "ambulance": "911",
+     "general": "911"
+    }
+   },
+   "internet": {
+    "networkCoverage": "4G/LTE в центрах главных островов (Колониа, Вено, Тофол, Колония); на дальних островах нет. Медленно и дорого.",
+    "costPerGbUsd": "~5.00 - 10.00 $",
+    "esimAvailability": "Слабо (мало дорогих международных eSIM); местная SIM FSM Telecom практичнее",
+    "bestCarriers": [
+     "FSM Telecom (FSMTC)"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Слабый (общественного транспорта нет; такси, аренда авто и лодки)",
+    "costLevel": "Средний (перелёты между островами очень дорогие)",
+    "singleTicketUsd": "1.00 - 3.00 $ (такси в Колониа и Вено)",
+    "dailyPassUsd": "Нет",
+    "popularRideApps": [
+     "Приложений нет – такси с подсадкой",
+     "Аренда авто и трансферы отелей",
+     "United Island Hopper"
+    ],
+    "taxiAdvice": "Uber/Bolt нет. Такси с подсадкой в Колониа (Понпеи) и Вено (Чуук) стоят несколько долларов за короткую поездку; дороги на Вено очень плохие. На Косраэ и Япе удобнее арендовать машину или пользоваться трансфером отеля; между островами — только самолёты и редкие лодки."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "60 - 100 $",
+    "dailyBudgetMidrangeUsd": "130 - 220 $",
+    "budgetMealUsd": "6 - 15 $",
+    "coffeeUsd": "2.00 - 4.00 $",
+    "waterBottleUsd": "1.00 - 2.00 $",
+    "hostelDormUsd": "Хостелов нет; простые гостевые дома 50 - 80 $",
+    "hotel3StarUsd": "90 - 180 $",
+    "flightCostIndex": "Очень высокий",
+    "flightTip": "Из Турции сначала летите на Гуам или в Гонолулу, затем рейсом United Airlines «Island Hopper» на Чуук, Понпеи и Косраэ; на Яп — отдельный рейс с Гуама. Рейсы всего несколько дней в неделю — планируйте заранее."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Женщинам лучше носить юбку или шорты ниже колен; открытые бёдра считаются особенно неприличными.",
+     "На Япе, проходя через деревню, принято держать в руке лист и спрашивать разрешения; дороги и земли частные.",
+     "На Косраэ воскресенье священно: не купаются, не ныряют, почти всё закрыто.",
+     "На церемонии сакау (кавы) первую чашу подают старшим и вождям; если предложат вам — берите обеими руками."
+    ],
+    "festivals": [
+     "День Япа (1 марта; традиционные танцы)",
+     "День конституции (10 мая)",
+     "День культуры Понпеи (31 марта) и День независимости ФШМ (3 ноября)"
+    ],
+    "lifestyle": "У каждого из четырёх штатов (Яп, Чуук, Понпеи, Косраэ) свой язык и обычаи. Кланы и система вождей, церковь, рыбалка и посиделки с сакау — основа жизни, текущей неспешно, по «островному времени»."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Базальтовый город Нан-Мадол (ЮНЕСКО, Понпеи)",
+     "Затонувшие корабли Второй мировой в лагуне Трук (Чуук)",
+     "Каменные деньги (раи) и манты острова Яп",
+     "Руины Лелу (Косраэ)",
+     "Водопады Кепирохи и Сахвартик (Понпеи)",
+     "Скала Сокехс (Понпеи)"
+    ],
+    "bestSeasons": "Январь – апрель",
+    "travelStyleTip": "Стройте план под дни рейсов Island Hopper: дайвинг на затонувших кораблях Чуука, Нан-Мадол и водопады Понпеи, тихая природа Косраэ. Туры и лодки обычно организуют отели или дайв-центры."
+   },
+   "religion": {
+    "primaryReligions": "Католики ~55 %, протестанты ~40 % (на Косраэ большинство конгрегационалисты), прочие ~5 %",
+    "respectNorms": "По воскресеньям соблюдайте тишину и скромно одевайтесь в церковь; Нан-Мадол и Лелу — священные места предков, не залезайте на камни.",
+    "sacredSites": [
+     "Нан-Мадол (священная столица династии Сауделеур)",
+     "Католическая колокольня в Колониа (германский период)",
+     "Древний город Лелу (Косраэ)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Официальный язык — английский; в каждом штате свой язык: чуукский, понпейский, косраэ, япский, а также языки дальних островов (улити, волеаи).",
+    "englishProficiency": "Высокий; английский — язык школы и госслужбы, его хорошо понимают на главных островах.",
+    "phrases": [
+     {
+      "phrase": "Kaselehlie",
+      "meaning": "Привет (понпейский)",
+      "translation": "Привет",
+      "pronunciation": "ka-seh-LEH-lee"
+     },
+     {
+      "phrase": "Kalahngan",
+      "meaning": "Спасибо (понпейский)",
+      "translation": "Спасибо",
+      "pronunciation": "ka-LAHNG-an"
+     },
+     {
+      "phrase": "Ran annim",
+      "meaning": "Доброе утро / Добрый день (чуукский)",
+      "translation": "Доброе утро",
+      "pronunciation": "ran an-NEEM"
+     },
+     {
+      "phrase": "Kinisou",
+      "meaning": "Спасибо (чуукский)",
+      "translation": "Спасибо",
+      "pronunciation": "kee-nee-SO"
+     },
+     {
+      "phrase": "Mogethin",
+      "meaning": "Привет (япский)",
+      "translation": "Привет",
+      "pronunciation": "MO-geh-thin"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Острова заселены более 2 000 лет назад; на Понпеи династия Сауделеур правила из Нан-Мадола примерно в 1100–1628 годах. В XIX веке регионом владела Испания, с 1899 года — Германия, с 1914-го — Япония; во Второй мировой лагуна Трук была базой японского флота, и в ходе операции «Хейлстоун» в феврале 1944 года там затонули десятки судов. После войны — подопечная территория США, в 1986 году независимость по Договору о свободной ассоциации с США.",
+    "milestones": [
+     "~1100–1628: династия Сауделеур в Нан-Мадоле",
+     "1899: продажа островов Германии",
+     "1944: операция «Хейлстоун» в лагуне Трук",
+     "1986: Договор о свободной ассоциации и независимость"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Блюда из хлебного дерева и кон (толчёные плоды, Чуук)",
+     "Сашими из свежего тунца (японское наследие)",
+     "Таро и рифовая рыба в кокосовом молоке"
+    ],
+    "traditionalDrinks": [
+     "Сакау (понпейская кава)",
+     "Свежая кокосовая вода",
+     "Сок косраэских мандаринов"
+    ],
+    "streetFoodAndDesserts": [
+     "Местные блюда с знаменитым понпейским перцем",
+     "Батат и бананы с кокосом",
+     "Местные пончики и рис со спамом"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Тосиво Накаяма (первый президент)",
+     "Бейли Олтер (второй президент)",
+     "Исокелекел (легендарный герой, свергнувший Сауделеур)"
+    ],
+    "strongSectors": [
+     "Лицензии на лов тунца",
+     "Средства по договору с США и госсектор",
+     "Дайв-туризм и натуральное хозяйство"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Валюта — доллар США; банкоматы есть только в главных городках (Bank of FSM, Bank of Guam) и иногда не работают. Отели и дайв-центры принимают карты, в остальных местах — наличные, мелкие купюры для сборов.",
+    "tippingCulture": "Не традиционны; около 10 % дайв-гидам и экипажу лодки приветствуется.",
+    "economicPillars": "Помощь США, рыболовные лицензии, госсектор, натуральное хозяйство и дайв-туризм."
+   }
+  },
+  "itin": {
+   "routeName": "Маршрут по островам Микронезии: Чуук, Понпеи и Косраэ",
+   "routeSummary": "10-дневный маршрут по линии United Island Hopper: легендарные затонувшие корабли лагуны Чуук, загадочный Нан-Мадол и водопады Понпеи, затем мангры и руины Лелу на тихом Косраэ.",
+   "totalDays": 10,
+   "idealDurationText": "Маршрут на 10 дней",
+   "bestSeason": "Январь – апрель",
+   "transportMode": "Рейсы United Island Hopper + лодки и аренда авто/такси",
+   "paceLevel": "Спокойный (дайвинг + история + природа)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Остановка 1: Чуук (лагуна Трук)",
+     "recommendedDuration": "4 дня",
+     "durationBadge": "4 дня",
+     "highlights": [
+      "Затонувшее судно «Фудзикава-мару»",
+      "Суда «Синкоку-мару» и «Сан-Франциско-мару»",
+      "Маяк и тоннели японской эпохи на Вено",
+      "Снорклинг у островков внутри лагуны"
+     ],
+     "activities": [
+      "Ныряйте на затонувшие суда с сертифицированным центром (некоторые глубокие и сложные).",
+      "Не дайверы могут поплавать с маской над мелкими судами.",
+      "Осмотрите с гидом японские военные объекты на Вено."
+     ],
+     "foodAndDrinks": [
+      "Кон (толчёный плод хлебного дерева)",
+      "Рифовая рыба на гриле"
+     ],
+     "criticalTips": [
+      "Ничего не берите с затонувших судов — это охраняемые военные захоронения.",
+      "Не выходите ночью на Вено; дороги очень плохие."
+     ],
+     "mapsQuery": "Weno, Chuuk, Micronesia"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Остановка 2: Понпеи (Нан-Мадол и водопады)",
+     "recommendedDuration": "4 дня",
+     "durationBadge": "4 дня",
+     "highlights": [
+      "Базальтовые островки Нан-Мадола",
+      "Водопад Кепирохи",
+      "Подъём на скалу Сокехс",
+      "Испанская стена и немецкая колокольня в Колониа"
+     ],
+     "activities": [
+      "Отправьтесь на лодке в Нан-Мадол с учётом прилива и пройдитесь между каналами.",
+      "Искупайтесь в чаше водопада Кепирохи.",
+      "Попробуйте традиционную каву в сакау-баре."
+     ],
+     "foodAndDrinks": [
+      "Сашими из тунца",
+      "Сакау",
+      "Блюда с понпейским перцем"
+     ],
+     "criticalTips": [
+      "В Нан-Мадоле и у водопадов платите владельцу земли (несколько долларов).",
+      "Дождь почти каждый день — дождевик и нескользящая обувь."
+     ],
+     "mapsQuery": "Kolonia, Pohnpei, Micronesia"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Остановка 3: Косраэ (Лелу и мангры)",
+     "recommendedDuration": "2 дня",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Древний город Лелу",
+      "Поездка на каноэ по мангровому каналу Утве – Валунг",
+      "Силуэт горы «Спящая леди»",
+      "Снорклинг на нетронутых рифах"
+     ],
+     "activities": [
+      "Прогуляйтесь среди базальтовых стен Лелу.",
+      "Проплывите на каноэ по мангровому каналу.",
+      "В воскресенье послушайте пение в местной церкви."
+     ],
+     "foodAndDrinks": [
+      "Косраэские мандарины",
+      "Пальмовый вор (в разрешённый сезон)"
+     ],
+     "criticalTips": [
+      "В воскресенье не купайтесь и не планируйте дайвинг — всё закрыто.",
+      "Жилья очень мало — бронируйте заранее."
+     ],
+     "mapsQuery": "Lelu, Kosrae, Micronesia"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Блюда из хлебного дерева и кон (толчёные плоды, Чуук)",
+     "Сашими из свежего тунца (японское наследие)",
+     "Таро и рифовая рыба в кокосовом молоке"
+    ],
+    "drinks": [
+     "Сакау (понпейская кава)",
+     "Свежая кокосовая вода",
+     "Сок косраэских мандаринов"
+    ],
+    "streetFoods": [
+     "Местные блюда с знаменитым понпейским перцем",
+     "Батат и бананы с кокосом",
+     "Местные пончики и рис со спамом"
+    ],
+    "diningAdvice": "Ресторанов мало, только в главных городках; свежий тунец дешёвый и отличный, импорт дорогой. В некоторых муниципалитетах продажа алкоголя ограничена, на Косраэ по воскресеньям почти всё закрыто."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Дайверская страховка (например, DAN) и сертификат",
+     "Адаптер A/B",
+     "Дождевик и быстросохнущая одежда",
+     "Мелкие доллары (сборы за вход)"
+    ],
+    "safetyAndEtiquette": [
+     "Не заходите на земли и пляжи без разрешения.",
+     "Носите одежду ниже колен, особенно в деревнях."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "A",
+     "B"
+    ],
+    "voltage": "120V",
+    "frequency": "60Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Американские розетки с плоскими штырями (A/B), 120V; нужен адаптер и техника на 100–240V."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Водопроводная вода непригодна для питья; пейте бутилированную или фильтрованную. В дожди растёт риск диареи и лептоспироза.",
+    "vaccines": [
+     "Плановые прививки, гепатиты A и B",
+     "Брюшной тиф",
+     "Денге: защищайтесь от комаров"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "911"
+   },
+   "tipping": {
+    "custom": "По желанию; около 10 % дайв-команде приветствуется.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "В местных закусочных чаевые не ждут; в туристических ресторанах и отелях 10 % — приятный жест."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Возврат НДС туристам не предусмотрен",
+    "minSpend": "Не применяется",
+    "customsNote": "В Микронезии нет НДС и возврата налогов. Вывоз предметов, кораллов и раковин с затонувших судов и исторических мест запрещён; в аэропорту может взиматься сбор на выезд."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "$5.00 - $10.00",
+    "topCarriers": [
+     "FSM Telecom (FSMTC)"
+    ],
+    "airportSimTrapWarning": "Единственный оператор — FSM Telecom; покупайте SIM в его офисе в городе, в аэропорту продают не всегда. Международных eSIM мало и они дорогие, Wi-Fi в отелях медленный."
+   },
+   "touristScams": [
+    {
+     "title": "Скрытая плата владельцу земли",
+     "desc": "Неофициальный гид не говорит о плате владельцу земли в Нан-Мадоле или у водопада, и потом всплывают доплаты.",
+     "tip": "Сразу уточните общую сумму и кому платить."
+    },
+    {
+     "title": "Небезопасная лодочная поездка",
+     "desc": "В дешёвых турах может не быть спасжилетов, рации и запаса топлива.",
+     "tip": "Выбирайте лодки по рекомендации отеля или дайв-центра."
+    },
+    {
+     "title": "Продажа «сувениров» с затонувших судов",
+     "desc": "Предлагают предметы якобы с затонувших судов; покупать и вывозить их незаконно.",
+     "tip": "Никогда не покупайте — берите местные ремёсла."
+    }
+   ]
+  }
+ }
+}

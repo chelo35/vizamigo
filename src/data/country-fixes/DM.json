@@ -1,0 +1,1787 @@
+{
+ "tr": {
+  "insights": {
+   "currency": "Doğu Karayip Doları (XCD)",
+   "plugType": "Tip D, G (230V, 50Hz)",
+   "bestMonths": "Şubat – Mayıs (kurak dönem). Haziran – Kasım kasırga sezonudur (en riskli ağustos – ekim); ekim sonunda World Creole Music Festival yapılır.",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Güvenli",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Şiddet suçu turistlere karşı nadirdir; Roseau’da gece ıssız sokaklarda kapkaç ve plajda bırakılan eşyaların çalınması gibi küçük suçlar görülür. Asıl riskler doğa kaynaklıdır: kasırgalar, sel ve dağ patikalarındaki kaymalar.",
+    "commonScams": [
+     "Taksi ücretini EC$ yerine ABD doları olarak söyleyip fazla almak",
+     "Kruvaziyer limanında lisanssız “rehberlerin” Trafalgar ve Emerald Pool turlarını şişirilmiş fiyata satması",
+     "Boiling Lake patikasında rehbersiz yürüyenlere “yol gösterip” yüksek ücret istenmesi"
+    ],
+    "safeTravelTips": [
+     "Boiling Lake gibi uzun patikalara mutlaka sertifikalı rehberle ve sabah erken çıkın.",
+     "Yağmurdan sonra nehir ve kanyonlara girmeyin; sel aniden gelir.",
+     "Kasırga sezonunda seyahat sigortası alın ve NHC/ODM uyarılarını takip edin."
+    ],
+    "emergencyNumbers": {
+     "police": "999",
+     "ambulance": "999",
+     "general": "999"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Batı kıyısı ve Roseau’da 4G iyi; iç kesimlerde, dağlarda ve doğu kıyısının bazı vadilerinde sinyal zayıf",
+    "costPerGbUsd": "~2.00 - 5.00 $",
+    "esimAvailability": "Orta (Digicel ve Flow fiziksel SIM satar; uluslararası eSIM paketleri mevcut)",
+    "bestCarriers": [
+     "Digicel",
+     "Flow"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Orta (minibüsler sık ama düzensiz, akşam ve pazar seyrek)",
+    "costLevel": "Orta",
+    "singleTicketUsd": "1.00 - 4.00 $ (minibüs, mesafeye göre)",
+    "dailyPassUsd": "Yok",
+    "popularRideApps": [
+     "Uygulama yok – “H” plakalı lisanslı taksi ve minibüsler",
+     "Kiralık araç (yerel sürüş izni gerekir)"
+    ],
+    "taxiAdvice": "Uber/Bolt yoktur. Taksilerde taksimetre yok; resmî tarife vardır, fiyatı binmeden EC$ mi US$ mı olduğunu teyit ederek sorun. Douglas-Charles Havalimanı Roseau’ya ~1 saat 15 dk sürer. Sol şeritten sürülür, yollar dar ve virajlıdır."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "50 - 80 $",
+    "dailyBudgetMidrangeUsd": "130 - 220 $",
+    "budgetMealUsd": "8 - 15 $",
+    "coffeeUsd": "2.00 - 4.00 $",
+    "waterBottleUsd": "1.00 - 2.00 $",
+    "hostelDormUsd": "Hostel çok az; basit konuk evleri 35 - 60 $",
+    "hotel3StarUsd": "100 - 200 $",
+    "flightCostIndex": "Yüksek (aktarmalı)",
+    "flightTip": "Türkiye’den direkt uçuş yoktur; Miami (American Airlines), Antigua, Barbados veya Guadeloupe/Martinik üzerinden bağlanılır. Martinik ve Guadeloupe’tan L’Express des Îles feribotu da iyi bir alternatiftir."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Herkese “Good morning / Good afternoon” diyerek selam vermek şarttır; selamsız soru sormak kaba sayılır.",
+     "Mayo ile kasaba merkezinde ve markette dolaşmak hoş karşılanmaz.",
+     "Kalinago Bölgesi’nde insanları ve evleri izin almadan fotoğraflamayın.",
+     "Pazar günleri çoğu dükkân kapalıdır ve ada ailece kiliseye gider."
+    ],
+    "festivals": [
+     "Mas Domnik Karnavalı (Şubat – Mart, büyük perhizden önce)",
+     "World Creole Music Festival (ekim sonu)",
+     "Bağımsızlık ve Creole Günü (3 Kasım)"
+    ],
+    "lifestyle": "“Doğa Adası” sakin, köy ölçeğinde bir yaşam sürer; kreol kültürü, bouyon ve kadans müziği, rom dükkânlarında sohbetler ve Kalinago yerli halkının mirası günlük hayatın parçasıdır."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Boiling Lake (Kaynayan Göl, UNESCO Morne Trois Pitons Milli Parkı)",
+     "Trafalgar Şelaleleri",
+     "Champagne Reef (volkanik kabarcıklı resif)",
+     "Emerald Pool",
+     "Kalinago Barana Autê ve Kalinago Bölgesi",
+     "Indian River ve Cabrits Milli Parkı (Portsmouth)"
+    ],
+    "bestSeasons": "Şubat – Mayıs",
+    "travelStyleTip": "Plaj değil doğa adası: yürüyüş, şelale, nehir ve dalış odaklı planlayın. Waitukubuli Ulusal Patikası’ndan bir iki etap yapın; araç kiralamak esneklik sağlar."
+   },
+   "religion": {
+    "primaryReligions": "Katolik ~%60, Protestan (Adventist, Pentekostal, Metodist) ~%30, diğer ~%10",
+    "respectNorms": "Kiliselere kapalı omuzlarla girin; ayin sırasında fotoğraf çekmeyin.",
+    "sacredSites": [
+     "Our Lady of Fair Haven Katedrali (Roseau)",
+     "Salybia’daki kano sunaklı St. Marie Kilisesi (Kalinago Bölgesi)",
+     "Kalinago atalarının kutsal saydığı L’Escalier Tête Chien kaya oluşumu"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Resmî dil İngilizcedir; halkın çoğu Fransız tabanlı Dominika Kreolcesi (Kwéyòl) konuşur.",
+    "englishProficiency": "Yüksek; İngilizce her yerde anlaşılır, kreolce birkaç kelime gülümseme kazandırır.",
+    "phrases": [
+     {
+      "phrase": "Bonjou",
+      "meaning": "Günaydın / Merhaba (Kreolce)",
+      "translation": "Merhaba",
+      "pronunciation": "bon-ZHOO"
+     },
+     {
+      "phrase": "Sa ka fèt?",
+      "meaning": "Nasılsın? / Ne var ne yok? (Kreolce)",
+      "translation": "Nasılsın?",
+      "pronunciation": "sa ka FET"
+     },
+     {
+      "phrase": "Mèsi",
+      "meaning": "Teşekkürler (Kreolce)",
+      "translation": "Teşekkürler",
+      "pronunciation": "meh-SEE"
+     },
+     {
+      "phrase": "Bonswè",
+      "meaning": "İyi akşamlar (Kreolce)",
+      "translation": "İyi akşamlar",
+      "pronunciation": "bon-SWEH"
+     },
+     {
+      "phrase": "Pa ni pwoblèm",
+      "meaning": "Sorun yok (Kreolce)",
+      "translation": "Sorun yok",
+      "pronunciation": "pa nee pwo-BLEM"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Kalinago halkı adaya “Waitukubuli” (“uzun boylu bedeni”) adını verdi. Kolomb 3 Kasım 1493 Pazar günü gördüğü adaya Dominica adını koydu. Sarp arazi Kalinagoların direnişini kolaylaştırdı; ada 18. yüzyılda Fransa ile İngiltere arasında el değiştirdi ve 1805’ten sonra İngiliz kaldı. 3 Kasım 1978’de bağımsız oldu; 2017’de Maria Kasırgası büyük yıkım yarattı.",
+    "milestones": [
+     "1493: Kolomb’un adayı görmesi",
+     "1903: Kalinago (Carib) Bölgesi’nin kurulması",
+     "1978: Bağımsızlık (3 Kasım)",
+     "2017: Maria Kasırgası"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Callaloo çorbası (dasheen yaprağı ve hindistancevizi sütüyle)",
+     "Bakes & saltfish (kızarmış hamur ve tuzlu morina)",
+     "Fish broth ve “provisions” (dasheen, yeşil muz, yam)"
+    ],
+    "traditionalDrinks": [
+     "Kubuli birası",
+     "Bitkili “bush rum” ve rom punch (Macoucherie romu)",
+     "Kakao çayı ve sea moss"
+    ],
+    "streetFoodAndDesserts": [
+     "Accra (morina köftesi)",
+     "Hindistancevizli tart ve sugar cake",
+     "Tavuklu veya sebzeli roti"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Jean Rhys (Geniş Sargasso Denizi’nin yazarı, Roseau doğumlu)",
+     "Dame Eugenia Charles (Karayipler’in ilk kadın başbakanı)",
+     "Thea LaFond (2024 Paris üç adım atlama altın madalyası, ülkenin ilk olimpiyat madalyası)"
+    ],
+    "strongSectors": [
+     "Eko-turizm ve dalış",
+     "Tarım (muz, narenciye, kök sebzeler)",
+     "Yatırım yoluyla vatandaşlık programı"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "XCD ABD dolarına sabittir (2.70 EC$ = 1 $) ve dolar her yerde kabul edilir, ancak para üstü EC$ verilir. Otel ve büyük restoranlarda kart geçer; köylerde, minibüste ve pazarda nakit gerekir.",
+    "tippingCulture": "Restoranlarda faturaya genellikle %10 servis bedeli eklenir; eklenmemişse %10-15 bırakın. Rehberlere ve şoförlere bahşiş beklenir.",
+    "economicPillars": "Turizm, tarım, yatırım yoluyla vatandaşlık gelirleri, havaalanı ve jeotermal enerji yatırımları."
+   }
+  },
+  "itin": {
+   "routeName": "Dominika Doğa Rotası: Roseau, Kalinago Kıyısı ve Portsmouth",
+   "routeSummary": "Roseau’dan Trafalgar Şelaleleri, Boiling Lake ve Champagne Reef’e; ardından Emerald Pool ve Kalinago Bölgesi’ne, son olarak Portsmouth’taki Indian River ve Cabrits kalesine uzanan 8 günlük doğa rotası.",
+   "totalDays": 8,
+   "idealDurationText": "8 Günlük Rota",
+   "bestSeason": "Şubat – Mayıs",
+   "transportMode": "Kiralık araç veya şoförlü taksi + yerel minibüsler",
+   "paceLevel": "Aktif (Yürüyüş + Su Altı)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "1. Durak: Roseau ve Roseau Vadisi",
+     "recommendedDuration": "3 Gün",
+     "durationBadge": "3 Gün",
+     "highlights": [
+      "Trafalgar Şelaleleri ve Titou Gorge",
+      "Boiling Lake ve Valley of Desolation",
+      "Champagne Reef ve Scotts Head",
+      "Botanik Bahçesi ve eski şehir"
+     ],
+     "activities": [
+      "Rehberle 6–7 saatlik Boiling Lake yürüyüşünü yapın.",
+      "Champagne Reef’te volkanik kabarcıklar arasında şnorkel yapın.",
+      "Wotten Waven’daki kükürtlü sıcak su havuzlarında dinlenin."
+     ],
+     "foodAndDrinks": [
+      "Callaloo çorbası",
+      "Accra",
+      "Kubuli birası"
+     ],
+     "criticalTips": [
+      "Milli park bölgeleri için site/hafta pasosu alın.",
+      "Titou Gorge’a yağışlı günlerde girmeyin."
+     ],
+     "mapsQuery": "Roseau, Dominica"
+    },
+    {
+     "stopNumber": 2,
+     "name": "2. Durak: Emerald Pool ve Kalinago Bölgesi",
+     "recommendedDuration": "2 Gün",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "Emerald Pool şelalesi",
+      "Kalinago Barana Autê kültür köyü",
+      "Castle Bruce ve doğu kıyısı",
+      "L’Escalier Tête Chien"
+     ],
+     "activities": [
+      "Kalinago zanaatkârlarından sepet örmeyi ve kano yapımını öğrenin.",
+      "Emerald Pool’da yüzün.",
+      "Rosalie veya Castle Bruce’ta Atlantik kıyısında yürüyün."
+     ],
+     "foodAndDrinks": [
+      "Kasava ekmeği (Kalinago)",
+      "Taze meyve ve hindistancevizi suyu"
+     ],
+     "criticalTips": [
+      "Doğu kıyısında akıntı çok güçlüdür; denize girmeyin.",
+      "Kalinago ürünlerini doğrudan zanaatkârdan alın."
+     ],
+     "mapsQuery": "Kalinago Territory, Dominica"
+    },
+    {
+     "stopNumber": 3,
+     "name": "3. Durak: Portsmouth ve Kuzey",
+     "recommendedDuration": "3 Gün",
+     "durationBadge": "3 Gün",
+     "highlights": [
+      "Indian River tekne turu",
+      "Cabrits Milli Parkı ve Fort Shirley",
+      "Batibou ve Purple Turtle plajları",
+      "Syndicate’te endemik Sisserou papağanı"
+     ],
+     "activities": [
+      "Kürekli tekneyle mangrovlar arasında Indian River’ı keşfedin.",
+      "Fort Shirley’den Prince Rupert Körfezi’ni izleyin.",
+      "Kasım – Mart arasında balina izleme turuna katılın (Roseau çıkışlı)."
+     ],
+     "foodAndDrinks": [
+      "Izgara balık ve provisions",
+      "Bush rum",
+      "Sea moss"
+     ],
+     "criticalTips": [
+      "Indian River’da yalnızca lisanslı rehberli teknelere binin; motorlu tekne yasaktır.",
+      "Kuzeyde ATM az; nakit taşıyın."
+     ],
+     "mapsQuery": "Portsmouth, Dominica"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Callaloo çorbası (dasheen yaprağı ve hindistancevizi sütüyle)",
+     "Bakes & saltfish (kızarmış hamur ve tuzlu morina)",
+     "Fish broth ve “provisions” (dasheen, yeşil muz, yam)"
+    ],
+    "drinks": [
+     "Kubuli birası",
+     "Bitkili “bush rum” ve rom punch (Macoucherie romu)",
+     "Kakao çayı ve sea moss"
+    ],
+    "streetFoods": [
+     "Accra (morina köftesi)",
+     "Hindistancevizli tart ve sugar cake",
+     "Tavuklu veya sebzeli roti"
+    ],
+    "diningAdvice": "Yerel “cook shop” ve rom dükkânlarında günlük yemekler ucuzdur; restoranlarda servis bedeli ve %15 KDV eklenip eklenmediğini kontrol edin. Koruma altındaki “mountain chicken” (dev kurbağa) avlanması yasaktır, menüde görürseniz sipariş vermeyin."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Kaymayan yürüyüş ayakkabısı ve su ayakkabısı",
+     "Hafif yağmurluk ve kuru torba",
+     "Sivrisinek kovucu",
+     "G tipi priz adaptörü"
+    ],
+    "safetyAndEtiquette": [
+     "Selamlaşmadan konuşmaya başlamayın.",
+     "Patikalarda işaretli yoldan ayrılmayın, çöpünüzü geri getirin."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "D",
+     "G"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Çoğunlukla üç köşeli pimli İngiliz tipi (G) prizler, bazı eski binalarda D tipi; Türkiye’den adaptör (G) götürün."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Şebeke suyu (DOWASCO) genelde arıtılmış ve içilebilirdir; ancak şiddetli yağmur ve fırtınalardan sonra bulanıklaşabilir, o dönemlerde şişe su veya kaynatılmış su tercih edin.",
+    "vaccines": [
+     "Rutin aşılar ve hepatit A",
+     "Sarıhumma: risk ülkesinden geliyorsanız sertifika istenir",
+     "Dang humması ve chikungunya: sivrisinekten korunun"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "999"
+   },
+   "tipping": {
+    "custom": "Servis bedeli eklenmemişse %10-15 bırakılır.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Fişte “service charge 10%” yazıyorsa ek bahşiş isteğe bağlıdır; doğa rehberlerine kişi başı 10-20 $ verilir."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Turistlere KDV iadesi uygulanmıyor",
+    "minSpend": "Uygulanmaz",
+    "customsNote": "Dominika’da %15 KDV (VAT) vardır ancak turiste iade yapılmaz. Mercan, deniz kabuğu ve koruma altındaki türlerin çıkarılması yasaktır."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$2.00 - $5.00",
+    "topCarriers": [
+     "Digicel",
+     "Flow"
+    ],
+    "airportSimTrapWarning": "Havalimanında SIM satışı sınırlıdır ve saatler düzensizdir; eSIM’i önceden kurun veya Roseau’daki Digicel/Flow mağazasından turist paketi alın."
+   },
+   "touristScams": [
+    {
+     "title": "EC$ / US$ Karışıklığı",
+     "desc": "Fiyat EC$ olarak söylenir, sonra aynı rakam ABD doları olarak istenir (yaklaşık 2,7 kat fazla).",
+     "tip": "Her pazarlıkta para birimini açıkça sorun."
+    },
+    {
+     "title": "İskele “Rehberleri”",
+     "desc": "Kruvaziyer günlerinde iskelede şişirilmiş fiyatlı turlar satılır, bazı rehberlerin lisansı yoktur.",
+     "tip": "Rehberin Discover Dominica lisans kartını sorun veya önceden rezervasyon yapın."
+    },
+    {
+     "title": "Plajda Bırakılan Eşyalar",
+     "desc": "Yüzerken kumsalda veya kiralık araçta bırakılan çanta ve telefonlar çalınabilir.",
+     "tip": "Değerli eşyayı otelde bırakın, araçta görünür bir şey bırakmayın."
+    }
+   ]
+  }
+ },
+ "en": {
+  "insights": {
+   "currency": "East Caribbean Dollar (XCD)",
+   "plugType": "Type D, G (230V, 50Hz)",
+   "bestMonths": "February – May (dry season). June – November is hurricane season (peak August – October); the World Creole Music Festival is held in late October.",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Safe",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Violent crime against tourists is rare; petty theft such as bag snatching in empty Roseau streets at night and theft of items left on beaches does occur. The main risks are natural: hurricanes, flash floods and slippery mountain trails.",
+    "commonScams": [
+     "Quoting taxi fares in US dollars instead of EC$ to overcharge",
+     "Unlicensed “guides” at the cruise pier selling Trafalgar and Emerald Pool trips at inflated prices",
+     "People “showing the way” to unguided hikers on the Boiling Lake trail and then demanding high fees"
+    ],
+    "safeTravelTips": [
+     "Hike long trails like the Boiling Lake only with a certified guide and start early.",
+     "Stay out of rivers and gorges after rain; flash floods come suddenly.",
+     "In hurricane season get travel insurance and follow NHC/ODM alerts."
+    ],
+    "emergencyNumbers": {
+     "police": "999",
+     "ambulance": "999",
+     "general": "999"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Good 4G in Roseau and along the west coast; weak in the interior, mountains and some east-coast valleys",
+    "costPerGbUsd": "~2.00 - 5.00 $",
+    "esimAvailability": "Moderate (Digicel and Flow sell physical SIMs; international eSIM plans available)",
+    "bestCarriers": [
+     "Digicel",
+     "Flow"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Fair (minibuses are frequent but irregular, sparse evenings and Sundays)",
+    "costLevel": "Moderate",
+    "singleTicketUsd": "1.00 - 4.00 $ (minibus, by distance)",
+    "dailyPassUsd": "None",
+    "popularRideApps": [
+     "No apps – licensed taxis and minibuses with “H” plates",
+     "Rental car (local driving permit required)"
+    ],
+    "taxiAdvice": "No Uber/Bolt. Taxis have no meters but set fares; ask the price before boarding and confirm whether it is EC$ or US$. Douglas-Charles Airport is ~1 h 15 min from Roseau. Driving is on the left on narrow, winding roads."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "50 - 80 $",
+    "dailyBudgetMidrangeUsd": "130 - 220 $",
+    "budgetMealUsd": "8 - 15 $",
+    "coffeeUsd": "2.00 - 4.00 $",
+    "waterBottleUsd": "1.00 - 2.00 $",
+    "hostelDormUsd": "Very few hostels; simple guesthouses 35 - 60 $",
+    "hotel3StarUsd": "100 - 200 $",
+    "flightCostIndex": "High (connections needed)",
+    "flightTip": "There are no direct flights from Türkiye; connect via Miami (American Airlines), Antigua, Barbados or Guadeloupe/Martinique. The L’Express des Îles ferry from Martinique and Guadeloupe is also a good option."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Always greet with “Good morning / Good afternoon”; asking a question without a greeting is rude.",
+     "Walking around town or shops in swimwear is frowned upon.",
+     "In the Kalinago Territory, don’t photograph people or homes without permission.",
+     "On Sundays most shops close and families go to church."
+    ],
+    "festivals": [
+     "Mas Domnik Carnival (Feb – Mar, before Lent)",
+     "World Creole Music Festival (late October)",
+     "Independence and Creole Day (3 November)"
+    ],
+    "lifestyle": "The “Nature Island” lives at a calm, village pace; Creole culture, bouyon and cadence music, chats in rum shops and the heritage of the Indigenous Kalinago are part of daily life."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Boiling Lake (Morne Trois Pitons National Park, UNESCO)",
+     "Trafalgar Falls",
+     "Champagne Reef (volcanic bubbles)",
+     "Emerald Pool",
+     "Kalinago Barana Autê and the Kalinago Territory",
+     "Indian River and Cabrits National Park (Portsmouth)"
+    ],
+    "bestSeasons": "February – May",
+    "travelStyleTip": "A nature island, not a beach island: plan around hikes, waterfalls, rivers and diving. Do a stage or two of the Waitukubuli National Trail; a rental car gives flexibility."
+   },
+   "religion": {
+    "primaryReligions": "Catholic ~60%, Protestant (Adventist, Pentecostal, Methodist) ~30%, other ~10%",
+    "respectNorms": "Enter churches with covered shoulders; no photos during services.",
+    "sacredSites": [
+     "Our Lady of Fair Haven Cathedral (Roseau)",
+     "St. Marie church with its canoe altar in Salybia (Kalinago Territory)",
+     "L’Escalier Tête Chien rock formation, sacred in Kalinago lore"
+    ]
+   },
+   "language": {
+    "officialLanguages": "English is official; most people also speak French-based Dominican Creole (Kwéyòl).",
+    "englishProficiency": "High; English is understood everywhere, a few Creole words earn smiles.",
+    "phrases": [
+     {
+      "phrase": "Bonjou",
+      "meaning": "Good morning / Hello (Creole)",
+      "translation": "Hello",
+      "pronunciation": "bon-ZHOO"
+     },
+     {
+      "phrase": "Sa ka fèt?",
+      "meaning": "How are you? / What’s up? (Creole)",
+      "translation": "How are you?",
+      "pronunciation": "sa ka FET"
+     },
+     {
+      "phrase": "Mèsi",
+      "meaning": "Thank you (Creole)",
+      "translation": "Thanks",
+      "pronunciation": "meh-SEE"
+     },
+     {
+      "phrase": "Bonswè",
+      "meaning": "Good evening (Creole)",
+      "translation": "Good evening",
+      "pronunciation": "bon-SWEH"
+     },
+     {
+      "phrase": "Pa ni pwoblèm",
+      "meaning": "No problem (Creole)",
+      "translation": "No problem",
+      "pronunciation": "pa nee pwo-BLEM"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "The Kalinago called the island “Waitukubuli” (“tall is her body”). Columbus named it Dominica after sighting it on Sunday, 3 November 1493. The rugged terrain helped Kalinago resistance; the island passed between France and Britain in the 18th century and stayed British after 1805. It became independent on 3 November 1978; Hurricane Maria caused massive damage in 2017.",
+    "milestones": [
+     "1493: Columbus sights the island",
+     "1903: Establishment of the Kalinago (Carib) Territory",
+     "1978: Independence (3 November)",
+     "2017: Hurricane Maria"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Callaloo soup (dasheen leaves and coconut milk)",
+     "Bakes & saltfish (fried dough with salt cod)",
+     "Fish broth with “provisions” (dasheen, green banana, yam)"
+    ],
+    "traditionalDrinks": [
+     "Kubuli beer",
+     "Herb-infused “bush rum” and rum punch (Macoucherie rum)",
+     "Cocoa tea and sea moss"
+    ],
+    "streetFoodAndDesserts": [
+     "Accra (salt-cod fritters)",
+     "Coconut tart and sugar cake",
+     "Chicken or vegetable roti"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Jean Rhys (author of Wide Sargasso Sea, born in Roseau)",
+     "Dame Eugenia Charles (first woman prime minister in the Caribbean)",
+     "Thea LaFond (2024 Paris triple-jump gold, the nation’s first Olympic medal)"
+    ],
+    "strongSectors": [
+     "Ecotourism and diving",
+     "Agriculture (bananas, citrus, root crops)",
+     "Citizenship by investment programme"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "The XCD is pegged to the US dollar (EC$2.70 = $1) and dollars are accepted everywhere, though change comes in EC$. Hotels and larger restaurants take cards; villages, minibuses and markets need cash.",
+    "tippingCulture": "Restaurants usually add a 10% service charge; if not, leave 10-15%. Guides and drivers expect tips.",
+    "economicPillars": "Tourism, agriculture, citizenship-by-investment revenue, and airport and geothermal energy projects."
+   }
+  },
+  "itin": {
+   "routeName": "Dominica Nature Route: Roseau, Kalinago Coast and Portsmouth",
+   "routeSummary": "An 8-day nature route from Roseau to Trafalgar Falls, the Boiling Lake and Champagne Reef, then Emerald Pool and the Kalinago Territory, ending at Portsmouth’s Indian River and Cabrits fort.",
+   "totalDays": 8,
+   "idealDurationText": "8-Day Itinerary",
+   "bestSeason": "February – May",
+   "transportMode": "Rental car or taxi with driver + local minibuses",
+   "paceLevel": "Active (Hiking + Underwater)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stop 1: Roseau & Roseau Valley",
+     "recommendedDuration": "3 Days",
+     "durationBadge": "3 Days",
+     "highlights": [
+      "Trafalgar Falls and Titou Gorge",
+      "Boiling Lake and Valley of Desolation",
+      "Champagne Reef and Scotts Head",
+      "Botanic Gardens and old town"
+     ],
+     "activities": [
+      "Do the 6–7-hour Boiling Lake hike with a guide.",
+      "Snorkel among the volcanic bubbles at Champagne Reef.",
+      "Relax in the sulphur hot pools of Wotten Waven."
+     ],
+     "foodAndDrinks": [
+      "Callaloo soup",
+      "Accra",
+      "Kubuli beer"
+     ],
+     "criticalTips": [
+      "Buy a site or weekly pass for the national-park sites.",
+      "Don’t enter Titou Gorge on rainy days."
+     ],
+     "mapsQuery": "Roseau, Dominica"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stop 2: Emerald Pool & Kalinago Territory",
+     "recommendedDuration": "2 Days",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "Emerald Pool waterfall",
+      "Kalinago Barana Autê cultural village",
+      "Castle Bruce and the east coast",
+      "L’Escalier Tête Chien"
+     ],
+     "activities": [
+      "Learn about basket weaving and canoe building from Kalinago artisans.",
+      "Swim at Emerald Pool.",
+      "Walk the Atlantic shore at Rosalie or Castle Bruce."
+     ],
+     "foodAndDrinks": [
+      "Cassava bread (Kalinago)",
+      "Fresh fruit and coconut water"
+     ],
+     "criticalTips": [
+      "Atlantic currents on the east coast are strong; don’t swim in the sea.",
+      "Buy Kalinago crafts directly from the artisans."
+     ],
+     "mapsQuery": "Kalinago Territory, Dominica"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stop 3: Portsmouth & the North",
+     "recommendedDuration": "3 Days",
+     "durationBadge": "3 Days",
+     "highlights": [
+      "Indian River boat tour",
+      "Cabrits National Park and Fort Shirley",
+      "Batibou and Purple Turtle beaches",
+      "Endemic Sisserou parrot at Syndicate"
+     ],
+     "activities": [
+      "Explore the Indian River through the mangroves by rowing boat.",
+      "Enjoy views over Prince Rupert Bay from Fort Shirley.",
+      "Join a whale-watching trip from November to March (departing Roseau)."
+     ],
+     "foodAndDrinks": [
+      "Grilled fish with provisions",
+      "Bush rum",
+      "Sea moss"
+     ],
+     "criticalTips": [
+      "Only use licensed guided boats on the Indian River; motorboats are banned.",
+      "ATMs are scarce in the north; carry cash."
+     ],
+     "mapsQuery": "Portsmouth, Dominica"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Callaloo soup (dasheen leaves and coconut milk)",
+     "Bakes & saltfish (fried dough with salt cod)",
+     "Fish broth with “provisions” (dasheen, green banana, yam)"
+    ],
+    "drinks": [
+     "Kubuli beer",
+     "Herb-infused “bush rum” and rum punch (Macoucherie rum)",
+     "Cocoa tea and sea moss"
+    ],
+    "streetFoods": [
+     "Accra (salt-cod fritters)",
+     "Coconut tart and sugar cake",
+     "Chicken or vegetable roti"
+    ],
+    "diningAdvice": "Daily dishes are cheap at local cook shops and rum shops; in restaurants check whether service and 15% VAT are already added. The endangered “mountain chicken” frog is protected; never order it if you see it offered."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Grippy hiking shoes and water shoes",
+     "Light rain jacket and dry bag",
+     "Insect repellent",
+     "Type G plug adapter"
+    ],
+    "safetyAndEtiquette": [
+     "Never start talking without a greeting.",
+     "Stay on marked trails and carry out your litter."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "D",
+     "G"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Mostly British three-rectangular-pin sockets (G), some older Type D; bring a G adapter from Türkiye."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Mains water (DOWASCO) is generally treated and drinkable, but can turn cloudy after heavy rain and storms; use bottled or boiled water then.",
+    "vaccines": [
+     "Routine vaccines and hepatitis A",
+     "Yellow fever: certificate required if arriving from a risk country",
+     "Dengue and chikungunya: protect against mosquitoes"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "999"
+   },
+   "tipping": {
+    "custom": "Leave 10-15% if no service charge is added.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "If the bill shows a 10% service charge, extra is optional; nature guides get about $10-20 per person."
+   },
+   "taxFree": {
+    "vatRefundPercent": "No VAT refund for tourists",
+    "minSpend": "Not applicable",
+    "customsNote": "Dominica charges 15% VAT but offers no refund to tourists. Exporting coral, shells or protected species is prohibited."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$2.00 - $5.00",
+    "topCarriers": [
+     "Digicel",
+     "Flow"
+    ],
+    "airportSimTrapWarning": "SIM sales at the airport are limited with irregular hours; set up an eSIM beforehand or buy a tourist bundle at a Digicel/Flow shop in Roseau."
+   },
+   "touristScams": [
+    {
+     "title": "EC$ / US$ Confusion",
+     "desc": "A price quoted in EC$ is later demanded in US dollars (about 2.7 times more).",
+     "tip": "Always confirm the currency when agreeing a price."
+    },
+    {
+     "title": "Pier “Guides”",
+     "desc": "On cruise days, overpriced tours are sold at the pier, some by unlicensed guides.",
+     "tip": "Ask to see the guide’s Discover Dominica licence card or book in advance."
+    },
+    {
+     "title": "Belongings Left on the Beach",
+     "desc": "Bags and phones left on the sand or in a rental car while swimming can be stolen.",
+     "tip": "Leave valuables at the hotel and nothing visible in the car."
+    }
+   ]
+  }
+ },
+ "de": {
+  "insights": {
+   "currency": "Ostkaribischer Dollar (XCD)",
+   "plugType": "Typ D, G (230V, 50Hz)",
+   "bestMonths": "Februar – Mai (Trockenzeit). Juni – November ist Hurrikansaison (Höhepunkt August – Oktober); Ende Oktober findet das World Creole Music Festival statt.",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Sicher",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Gewalt gegen Touristen ist selten; Kleinkriminalität wie Taschendiebstahl in leeren Straßen von Roseau nachts und Diebstahl am Strand kommt vor. Die Hauptgefahren sind natürlich: Hurrikane, Sturzfluten und rutschige Bergpfade.",
+    "commonScams": [
+     "Taxipreise in US-Dollar statt EC$ nennen, um mehr zu kassieren",
+     "Unlizenzierte „Guides“ am Kreuzfahrtpier verkaufen Trafalgar- und Emerald-Pool-Touren überteuert",
+     "Wanderern auf dem Boiling-Lake-Pfad wird „der Weg gezeigt“ und danach viel Geld verlangt"
+    ],
+    "safeTravelTips": [
+     "Lange Touren wie zum Boiling Lake nur mit zertifiziertem Guide und frühmorgens.",
+     "Nach Regen Flüsse und Schluchten meiden; Sturzfluten kommen plötzlich.",
+     "In der Hurrikansaison Reiseversicherung abschließen und NHC/ODM-Warnungen verfolgen."
+    ],
+    "emergencyNumbers": {
+     "police": "999",
+     "ambulance": "999",
+     "general": "999"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Gutes 4G in Roseau und an der Westküste; schwach im Inland, in den Bergen und einigen Tälern der Ostküste",
+    "costPerGbUsd": "~2.00 - 5.00 $",
+    "esimAvailability": "Mittel (Digicel und Flow verkaufen physische SIMs; internationale eSIM-Tarife verfügbar)",
+    "bestCarriers": [
+     "Digicel",
+     "Flow"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Mittel (Minibusse häufig, aber unregelmäßig; abends und sonntags selten)",
+    "costLevel": "Mittel",
+    "singleTicketUsd": "1.00 - 4.00 $ (Minibus, je nach Strecke)",
+    "dailyPassUsd": "Keiner",
+    "popularRideApps": [
+     "Keine Apps – lizenzierte Taxis und Minibusse mit „H“-Kennzeichen",
+     "Mietwagen (lokale Fahrerlaubnis nötig)"
+    ],
+    "taxiAdvice": "Kein Uber/Bolt. Taxis ohne Taxameter, aber mit festen Tarifen; Preis vorab erfragen und klären, ob EC$ oder US$. Vom Flughafen Douglas-Charles nach Roseau ~1 Std. 15 Min. Linksverkehr auf engen, kurvigen Straßen."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "50 - 80 $",
+    "dailyBudgetMidrangeUsd": "130 - 220 $",
+    "budgetMealUsd": "8 - 15 $",
+    "coffeeUsd": "2.00 - 4.00 $",
+    "waterBottleUsd": "1.00 - 2.00 $",
+    "hostelDormUsd": "Kaum Hostels; einfache Gästehäuser 35 - 60 $",
+    "hotel3StarUsd": "100 - 200 $",
+    "flightCostIndex": "Hoch (mit Umstieg)",
+    "flightTip": "Keine Direktflüge aus der Türkei; Verbindungen über Miami (American Airlines), Antigua, Barbados oder Guadeloupe/Martinique. Die Fähre L’Express des Îles ab Martinique und Guadeloupe ist eine gute Alternative."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Immer mit „Good morning / Good afternoon“ grüßen; Fragen ohne Gruß gelten als unhöflich.",
+     "In Badekleidung durch Ort oder Läden zu gehen, ist verpönt.",
+     "Im Kalinago-Territorium Menschen und Häuser nicht ohne Erlaubnis fotografieren.",
+     "Sonntags sind die meisten Läden zu, die Familien gehen in die Kirche."
+    ],
+    "festivals": [
+     "Karneval Mas Domnik (Feb – März, vor der Fastenzeit)",
+     "World Creole Music Festival (Ende Oktober)",
+     "Unabhängigkeits- und Kreolentag (3. November)"
+    ],
+    "lifestyle": "Die „Naturinsel“ lebt gemächlich im Dorfrhythmus; kreolische Kultur, Bouyon- und Cadence-Musik, Plaudereien in Rumläden und das Erbe der indigenen Kalinago prägen den Alltag."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Boiling Lake (Nationalpark Morne Trois Pitons, UNESCO)",
+     "Trafalgar-Wasserfälle",
+     "Champagne Reef (vulkanische Blasen)",
+     "Emerald Pool",
+     "Kalinago Barana Autê und Kalinago-Territorium",
+     "Indian River und Cabrits-Nationalpark (Portsmouth)"
+    ],
+    "bestSeasons": "Februar – Mai",
+    "travelStyleTip": "Eine Natur-, keine Strandinsel: Planen Sie Wanderungen, Wasserfälle, Flüsse und Tauchen. Laufen Sie ein, zwei Etappen des Waitukubuli National Trail; ein Mietwagen gibt Flexibilität."
+   },
+   "religion": {
+    "primaryReligions": "Katholisch ~60 %, protestantisch (Adventisten, Pfingstler, Methodisten) ~30 %, sonstige ~10 %",
+    "respectNorms": "Kirchen mit bedeckten Schultern betreten; keine Fotos während des Gottesdienstes.",
+    "sacredSites": [
+     "Kathedrale Our Lady of Fair Haven (Roseau)",
+     "Kirche St. Marie mit Kanu-Altar in Salybia (Kalinago-Territorium)",
+     "Felsformation L’Escalier Tête Chien, heilig in der Kalinago-Überlieferung"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Amtssprache ist Englisch; die meisten sprechen auch das französisch basierte Kreol (Kwéyòl).",
+    "englishProficiency": "Hoch; Englisch wird überall verstanden, ein paar Worte Kreol bringen ein Lächeln.",
+    "phrases": [
+     {
+      "phrase": "Bonjou",
+      "meaning": "Guten Morgen / Hallo (Kreol)",
+      "translation": "Hallo",
+      "pronunciation": "bon-ZHOO"
+     },
+     {
+      "phrase": "Sa ka fèt?",
+      "meaning": "Wie geht’s? / Was gibt’s? (Kreol)",
+      "translation": "Wie geht’s?",
+      "pronunciation": "sa ka FET"
+     },
+     {
+      "phrase": "Mèsi",
+      "meaning": "Danke (Kreol)",
+      "translation": "Danke",
+      "pronunciation": "meh-SEE"
+     },
+     {
+      "phrase": "Bonswè",
+      "meaning": "Guten Abend (Kreol)",
+      "translation": "Guten Abend",
+      "pronunciation": "bon-SWEH"
+     },
+     {
+      "phrase": "Pa ni pwoblèm",
+      "meaning": "Kein Problem (Kreol)",
+      "translation": "Kein Problem",
+      "pronunciation": "pa nee pwo-BLEM"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Die Kalinago nannten die Insel „Waitukubuli“ („groß ist ihr Körper“). Kolumbus taufte sie Dominica, als er sie am Sonntag, dem 3. November 1493, sichtete. Das zerklüftete Gelände half dem Widerstand der Kalinago; im 18. Jh. wechselte die Insel zwischen Frankreich und Großbritannien und blieb ab 1805 britisch. Unabhängig seit 3. November 1978; 2017 richtete Hurrikan Maria schwere Schäden an.",
+    "milestones": [
+     "1493: Kolumbus sichtet die Insel",
+     "1903: Gründung des Kalinago-(Carib-)Territoriums",
+     "1978: Unabhängigkeit (3. November)",
+     "2017: Hurrikan Maria"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Callaloo-Suppe (Dasheenblätter und Kokosmilch)",
+     "Bakes & Saltfish (frittiertes Brot mit Stockfisch)",
+     "Fischbrühe mit „Provisions“ (Dasheen, grüne Banane, Yams)"
+    ],
+    "traditionalDrinks": [
+     "Kubuli-Bier",
+     "Kräuter-„Bush Rum“ und Rumpunsch (Macoucherie-Rum)",
+     "Kakaotee und Sea Moss"
+    ],
+    "streetFoodAndDesserts": [
+     "Accra (Stockfisch-Krapfen)",
+     "Kokostörtchen und Sugar Cake",
+     "Roti mit Huhn oder Gemüse"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Jean Rhys (Autorin von „Die weite Sargassosee“, geboren in Roseau)",
+     "Dame Eugenia Charles (erste Premierministerin der Karibik)",
+     "Thea LaFond (Gold im Dreisprung Paris 2024, erste olympische Medaille des Landes)"
+    ],
+    "strongSectors": [
+     "Ökotourismus und Tauchen",
+     "Landwirtschaft (Bananen, Zitrus, Knollen)",
+     "Staatsbürgerschaft durch Investition"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Der XCD ist an den US-Dollar gekoppelt (2,70 EC$ = 1 $); Dollar werden überall angenommen, Wechselgeld gibt es in EC$. Hotels und größere Restaurants nehmen Karten; Dörfer, Minibusse und Märkte nur Bargeld.",
+    "tippingCulture": "Restaurants schlagen meist 10 % Service auf; sonst 10-15 % geben. Guides und Fahrer erwarten Trinkgeld.",
+    "economicPillars": "Tourismus, Landwirtschaft, Einnahmen aus Staatsbürgerschaft durch Investition sowie Flughafen- und Geothermieprojekte."
+   }
+  },
+  "itin": {
+   "routeName": "Dominica-Naturroute: Roseau, Kalinago-Küste und Portsmouth",
+   "routeSummary": "Eine 8-tägige Naturroute von Roseau zu den Trafalgar-Fällen, dem Boiling Lake und Champagne Reef, weiter zum Emerald Pool und ins Kalinago-Territorium und zum Abschluss zum Indian River und Fort Cabrits in Portsmouth.",
+   "totalDays": 8,
+   "idealDurationText": "8-tägige Route",
+   "bestSeason": "Februar – Mai",
+   "transportMode": "Mietwagen oder Taxi mit Fahrer + lokale Minibusse",
+   "paceLevel": "Aktiv (Wandern + Unterwasser)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stopp 1: Roseau & Roseau-Tal",
+     "recommendedDuration": "3 Tage",
+     "durationBadge": "3 Tage",
+     "highlights": [
+      "Trafalgar-Fälle und Titou Gorge",
+      "Boiling Lake und Valley of Desolation",
+      "Champagne Reef und Scotts Head",
+      "Botanischer Garten und Altstadt"
+     ],
+     "activities": [
+      "Mit Guide die 6–7-stündige Wanderung zum Boiling Lake machen.",
+      "Am Champagne Reef zwischen vulkanischen Blasen schnorcheln.",
+      "In den Schwefelquellen von Wotten Waven entspannen."
+     ],
+     "foodAndDrinks": [
+      "Callaloo-Suppe",
+      "Accra",
+      "Kubuli-Bier"
+     ],
+     "criticalTips": [
+      "Für die Nationalpark-Stätten Einzel- oder Wochenpass kaufen.",
+      "Titou Gorge an Regentagen nicht betreten."
+     ],
+     "mapsQuery": "Roseau, Dominica"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stopp 2: Emerald Pool & Kalinago-Territorium",
+     "recommendedDuration": "2 Tage",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "Wasserfall Emerald Pool",
+      "Kulturdorf Kalinago Barana Autê",
+      "Castle Bruce und Ostküste",
+      "L’Escalier Tête Chien"
+     ],
+     "activities": [
+      "Bei Kalinago-Handwerkern Korbflechten und Kanubau kennenlernen.",
+      "Im Emerald Pool schwimmen.",
+      "An der Atlantikküste bei Rosalie oder Castle Bruce wandern."
+     ],
+     "foodAndDrinks": [
+      "Maniokbrot (Kalinago)",
+      "Frisches Obst und Kokoswasser"
+     ],
+     "criticalTips": [
+      "Die Atlantikströmung an der Ostküste ist stark; nicht im Meer baden.",
+      "Kalinago-Kunsthandwerk direkt bei den Handwerkern kaufen."
+     ],
+     "mapsQuery": "Kalinago Territory, Dominica"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stopp 3: Portsmouth & der Norden",
+     "recommendedDuration": "3 Tage",
+     "durationBadge": "3 Tage",
+     "highlights": [
+      "Bootstour auf dem Indian River",
+      "Cabrits-Nationalpark und Fort Shirley",
+      "Strände Batibou und Purple Turtle",
+      "Endemischer Sisserou-Papagei bei Syndicate"
+     ],
+     "activities": [
+      "Den Indian River im Ruderboot durch die Mangroven erkunden.",
+      "Von Fort Shirley über die Prince Rupert Bay blicken.",
+      "Zwischen November und März zur Walbeobachtung fahren (ab Roseau)."
+     ],
+     "foodAndDrinks": [
+      "Gegrillter Fisch mit Provisions",
+      "Bush Rum",
+      "Sea Moss"
+     ],
+     "criticalTips": [
+      "Auf dem Indian River nur lizenzierte Ruderboote; Motorboote sind verboten.",
+      "Im Norden gibt es wenige Geldautomaten; Bargeld mitnehmen."
+     ],
+     "mapsQuery": "Portsmouth, Dominica"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Callaloo-Suppe (Dasheenblätter und Kokosmilch)",
+     "Bakes & Saltfish (frittiertes Brot mit Stockfisch)",
+     "Fischbrühe mit „Provisions“ (Dasheen, grüne Banane, Yams)"
+    ],
+    "drinks": [
+     "Kubuli-Bier",
+     "Kräuter-„Bush Rum“ und Rumpunsch (Macoucherie-Rum)",
+     "Kakaotee und Sea Moss"
+    ],
+    "streetFoods": [
+     "Accra (Stockfisch-Krapfen)",
+     "Kokostörtchen und Sugar Cake",
+     "Roti mit Huhn oder Gemüse"
+    ],
+    "diningAdvice": "In lokalen Cook Shops und Rumläden isst man günstig; im Restaurant prüfen, ob Service und 15 % MwSt. schon enthalten sind. Der bedrohte Riesenfrosch „Mountain Chicken“ ist geschützt – nie bestellen."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Rutschfeste Wanderschuhe und Wasserschuhe",
+     "Leichte Regenjacke und Drybag",
+     "Mückenschutz",
+     "Steckeradapter Typ G"
+    ],
+    "safetyAndEtiquette": [
+     "Nie ohne Gruß ein Gespräch beginnen.",
+     "Auf markierten Wegen bleiben und Müll wieder mitnehmen."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "D",
+     "G"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Meist britische Steckdosen mit drei Flachstiften (G), in Altbauten auch Typ D; Adapter (G) mitnehmen."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Leitungswasser (DOWASCO) ist meist aufbereitet und trinkbar, kann nach Starkregen und Stürmen aber trüb werden – dann Flaschen- oder abgekochtes Wasser nutzen.",
+    "vaccines": [
+     "Standardimpfungen und Hepatitis A",
+     "Gelbfieber: Nachweis bei Einreise aus Risikoländern",
+     "Dengue und Chikungunya: vor Mücken schützen"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "999"
+   },
+   "tipping": {
+    "custom": "10-15 %, wenn kein Service enthalten ist.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Steht „Service 10 %“ auf der Rechnung, ist mehr freiwillig; Naturführer erhalten etwa 10-20 $ pro Person."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Keine Mehrwertsteuererstattung für Touristen",
+    "minSpend": "Entfällt",
+    "customsNote": "Dominica erhebt 15 % MwSt., erstattet Touristen aber nichts. Ausfuhr von Korallen, Muscheln und geschützten Arten ist verboten."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$2.00 - $5.00",
+    "topCarriers": [
+     "Digicel",
+     "Flow"
+    ],
+    "airportSimTrapWarning": "Am Flughafen gibt es kaum SIM-Verkauf, Öffnungszeiten unregelmäßig; eSIM vorab einrichten oder Touristenpaket im Digicel/Flow-Shop in Roseau kaufen."
+   },
+   "touristScams": [
+    {
+     "title": "EC$-/US$-Verwechslung",
+     "desc": "Ein Preis in EC$ wird später in US-Dollar verlangt (etwa das 2,7-Fache).",
+     "tip": "Bei jeder Preisabsprache die Währung klären."
+    },
+    {
+     "title": "Pier-„Guides“",
+     "desc": "An Kreuzfahrttagen werden am Pier überteuerte Touren verkauft, teils von Guides ohne Lizenz.",
+     "tip": "Nach der Lizenzkarte von Discover Dominica fragen oder vorab buchen."
+    },
+    {
+     "title": "Am Strand zurückgelassene Sachen",
+     "desc": "Beim Schwimmen am Strand oder im Mietwagen gelassene Taschen und Handys werden gestohlen.",
+     "tip": "Wertsachen im Hotel lassen, nichts sichtbar im Auto."
+    }
+   ]
+  }
+ },
+ "es": {
+  "insights": {
+   "currency": "Dólar del Caribe Oriental (XCD)",
+   "plugType": "Tipo D, G (230V, 50Hz)",
+   "bestMonths": "Febrero – mayo (temporada seca). De junio a noviembre es temporada de huracanes (pico agosto – octubre); a finales de octubre se celebra el World Creole Music Festival.",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Los delitos violentos contra turistas son raros; hay hurtos como tirones en calles vacías de Roseau de noche y robos en la playa. Los riesgos principales son naturales: huracanes, crecidas y senderos resbaladizos.",
+    "commonScams": [
+     "Dar la tarifa del taxi en dólares US en lugar de EC$ para cobrar de más",
+     "“Guías” sin licencia en el muelle de cruceros que venden tours a Trafalgar y Emerald Pool a precio inflado",
+     "Personas que “guían” a excursionistas en el sendero del Boiling Lake y luego piden mucho dinero"
+    ],
+    "safeTravelTips": [
+     "Haga rutas largas como la del Boiling Lake solo con guía certificado y temprano.",
+     "No entre en ríos ni gargantas tras la lluvia; las crecidas son repentinas.",
+     "En temporada de huracanes contrate seguro y siga los avisos del NHC/ODM."
+    ],
+    "emergencyNumbers": {
+     "police": "999",
+     "ambulance": "999",
+     "general": "999"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Buen 4G en Roseau y la costa oeste; débil en el interior, montañas y algunos valles del este",
+    "costPerGbUsd": "~2.00 - 5.00 $",
+    "esimAvailability": "Media (Digicel y Flow venden SIM física; hay planes eSIM internacionales)",
+    "bestCarriers": [
+     "Digicel",
+     "Flow"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Regular (minibuses frecuentes pero irregulares, escasos de noche y domingos)",
+    "costLevel": "Moderado",
+    "singleTicketUsd": "1.00 - 4.00 $ (minibús, según distancia)",
+    "dailyPassUsd": "No existe",
+    "popularRideApps": [
+     "Sin apps – taxis y minibuses con matrícula “H”",
+     "Coche de alquiler (requiere permiso local)"
+    ],
+    "taxiAdvice": "No hay Uber/Bolt. Los taxis no tienen taxímetro pero sí tarifas fijas; pregunte el precio y si es en EC$ o US$. Del aeropuerto Douglas-Charles a Roseau hay ~1 h 15 min. Se conduce por la izquierda en carreteras estrechas y sinuosas."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "50 - 80 $",
+    "dailyBudgetMidrangeUsd": "130 - 220 $",
+    "budgetMealUsd": "8 - 15 $",
+    "coffeeUsd": "2.00 - 4.00 $",
+    "waterBottleUsd": "1.00 - 2.00 $",
+    "hostelDormUsd": "Casi no hay hostales; casas de huéspedes 35 - 60 $",
+    "hotel3StarUsd": "100 - 200 $",
+    "flightCostIndex": "Alto (con escalas)",
+    "flightTip": "No hay vuelos directos desde Turquía; conecte por Miami (American Airlines), Antigua, Barbados o Guadalupe/Martinica. El ferry L’Express des Îles desde Martinica y Guadalupe es buena alternativa."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Salude siempre con “Good morning / Good afternoon”; preguntar sin saludar es descortés.",
+     "Pasear por el pueblo o tiendas en bañador está mal visto.",
+     "En el territorio kalinago no fotografíe personas ni casas sin permiso.",
+     "Los domingos casi todo cierra y las familias van a misa."
+    ],
+    "festivals": [
+     "Carnaval Mas Domnik (feb – mar, antes de Cuaresma)",
+     "World Creole Music Festival (finales de octubre)",
+     "Día de la Independencia y Día Criollo (3 de noviembre)"
+    ],
+    "lifestyle": "La “Isla Natural” vive a ritmo tranquilo y pueblerino; la cultura criolla, la música bouyon y cadence, las charlas en los rum shops y la herencia indígena kalinago forman parte de la vida diaria."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Boiling Lake (Parque Nacional Morne Trois Pitons, UNESCO)",
+     "Cataratas Trafalgar",
+     "Champagne Reef (burbujas volcánicas)",
+     "Emerald Pool",
+     "Kalinago Barana Autê y territorio kalinago",
+     "Indian River y Parque Nacional Cabrits (Portsmouth)"
+    ],
+    "bestSeasons": "Febrero – mayo",
+    "travelStyleTip": "Isla de naturaleza, no de playa: planifique senderismo, cascadas, ríos y buceo. Haga una o dos etapas del Waitukubuli National Trail; un coche de alquiler da libertad."
+   },
+   "religion": {
+    "primaryReligions": "Católicos ~60 %, protestantes (adventistas, pentecostales, metodistas) ~30 %, otros ~10 %",
+    "respectNorms": "Entre en las iglesias con hombros cubiertos; no fotografíe durante la misa.",
+    "sacredSites": [
+     "Catedral de Our Lady of Fair Haven (Roseau)",
+     "Iglesia de St. Marie con altar-canoa en Salybia (territorio kalinago)",
+     "Formación rocosa L’Escalier Tête Chien, sagrada en la tradición kalinago"
+    ]
+   },
+   "language": {
+    "officialLanguages": "El idioma oficial es el inglés; la mayoría habla también criollo dominiqués de base francesa (kwéyòl).",
+    "englishProficiency": "Alto; el inglés se entiende en todas partes y unas palabras en criollo arrancan sonrisas.",
+    "phrases": [
+     {
+      "phrase": "Bonjou",
+      "meaning": "Buenos días / Hola (criollo)",
+      "translation": "Hola",
+      "pronunciation": "bon-ZHOO"
+     },
+     {
+      "phrase": "Sa ka fèt?",
+      "meaning": "¿Qué tal? / ¿Qué pasa? (criollo)",
+      "translation": "¿Qué tal?",
+      "pronunciation": "sa ka FET"
+     },
+     {
+      "phrase": "Mèsi",
+      "meaning": "Gracias (criollo)",
+      "translation": "Gracias",
+      "pronunciation": "meh-SEE"
+     },
+     {
+      "phrase": "Bonswè",
+      "meaning": "Buenas noches (criollo)",
+      "translation": "Buenas noches",
+      "pronunciation": "bon-SWEH"
+     },
+     {
+      "phrase": "Pa ni pwoblèm",
+      "meaning": "No hay problema (criollo)",
+      "translation": "Sin problema",
+      "pronunciation": "pa nee pwo-BLEM"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Los kalinago llamaban a la isla “Waitukubuli” (“alto es su cuerpo”). Colón la bautizó Dominica al avistarla el domingo 3 de noviembre de 1493. El terreno abrupto favoreció la resistencia kalinago; en el siglo XVIII pasó entre Francia y Gran Bretaña y quedó británica desde 1805. Independiente desde el 3 de noviembre de 1978; el huracán María causó enormes daños en 2017.",
+    "milestones": [
+     "1493: Colón avista la isla",
+     "1903: Creación del territorio kalinago (caribe)",
+     "1978: Independencia (3 de noviembre)",
+     "2017: Huracán María"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Sopa callaloo (hojas de dasheen y leche de coco)",
+     "Bakes & saltfish (masa frita con bacalao)",
+     "Caldo de pescado con “provisions” (dasheen, plátano verde, ñame)"
+    ],
+    "traditionalDrinks": [
+     "Cerveza Kubuli",
+     "“Bush rum” con hierbas y ponche de ron (ron Macoucherie)",
+     "Té de cacao y sea moss"
+    ],
+    "streetFoodAndDesserts": [
+     "Accra (buñuelos de bacalao)",
+     "Tarta de coco y sugar cake",
+     "Roti de pollo o verduras"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Jean Rhys (autora de Ancho mar de los Sargazos, nacida en Roseau)",
+     "Dame Eugenia Charles (primera mujer primera ministra del Caribe)",
+     "Thea LaFond (oro en triple salto en París 2024, primera medalla olímpica del país)"
+    ],
+    "strongSectors": [
+     "Ecoturismo y buceo",
+     "Agricultura (plátano, cítricos, tubérculos)",
+     "Programa de ciudadanía por inversión"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "El XCD está fijado al dólar (2,70 EC$ = 1 $) y el dólar se acepta en todas partes, aunque el cambio se da en EC$. Hoteles y restaurantes grandes aceptan tarjeta; pueblos, minibuses y mercados, solo efectivo.",
+    "tippingCulture": "Los restaurantes suelen añadir 10 % de servicio; si no, deje 10-15 %. Guías y conductores esperan propina.",
+    "economicPillars": "Turismo, agricultura, ingresos por ciudadanía por inversión y proyectos de aeropuerto y geotermia."
+   }
+  },
+  "itin": {
+   "routeName": "Ruta natural por Dominica: Roseau, costa kalinago y Portsmouth",
+   "routeSummary": "Ruta natural de 8 días desde Roseau a las cataratas Trafalgar, el Boiling Lake y el Champagne Reef; luego Emerald Pool y el territorio kalinago; y final en el Indian River y el fuerte de Cabrits en Portsmouth.",
+   "totalDays": 8,
+   "idealDurationText": "Ruta de 8 días",
+   "bestSeason": "Febrero – mayo",
+   "transportMode": "Coche de alquiler o taxi con conductor + minibuses locales",
+   "paceLevel": "Activo (senderismo + submarinismo)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Roseau y valle de Roseau",
+     "recommendedDuration": "3 días",
+     "durationBadge": "3 días",
+     "highlights": [
+      "Cataratas Trafalgar y Titou Gorge",
+      "Boiling Lake y Valley of Desolation",
+      "Champagne Reef y Scotts Head",
+      "Jardín Botánico y casco antiguo"
+     ],
+     "activities": [
+      "Haga con guía la ruta de 6–7 h al Boiling Lake.",
+      "Bucee entre burbujas volcánicas en Champagne Reef.",
+      "Relájese en las pozas sulfurosas de Wotten Waven."
+     ],
+     "foodAndDrinks": [
+      "Sopa callaloo",
+      "Accra",
+      "Cerveza Kubuli"
+     ],
+     "criticalTips": [
+      "Compre el pase por sitio o semanal de los parques.",
+      "No entre en Titou Gorge en días de lluvia."
+     ],
+     "mapsQuery": "Roseau, Dominica"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Emerald Pool y territorio kalinago",
+     "recommendedDuration": "2 días",
+     "durationBadge": "2 días",
+     "highlights": [
+      "Cascada Emerald Pool",
+      "Aldea cultural Kalinago Barana Autê",
+      "Castle Bruce y la costa este",
+      "L’Escalier Tête Chien"
+     ],
+     "activities": [
+      "Conozca la cestería y la construcción de canoas con artesanos kalinago.",
+      "Nade en Emerald Pool.",
+      "Camine por la costa atlántica en Rosalie o Castle Bruce."
+     ],
+     "foodAndDrinks": [
+      "Pan de casabe (kalinago)",
+      "Fruta fresca y agua de coco"
+     ],
+     "criticalTips": [
+      "Las corrientes atlánticas son fuertes; no se bañe en el mar.",
+      "Compre artesanía kalinago directamente al artesano."
+     ],
+     "mapsQuery": "Kalinago Territory, Dominica"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Portsmouth y el norte",
+     "recommendedDuration": "3 días",
+     "durationBadge": "3 días",
+     "highlights": [
+      "Paseo en barca por el Indian River",
+      "Parque Nacional Cabrits y Fort Shirley",
+      "Playas Batibou y Purple Turtle",
+      "Loro sisserou endémico en Syndicate"
+     ],
+     "activities": [
+      "Recorra el Indian River entre manglares en bote de remos.",
+      "Contemple la bahía Prince Rupert desde Fort Shirley.",
+      "Entre noviembre y marzo haga avistamiento de ballenas (salida desde Roseau)."
+     ],
+     "foodAndDrinks": [
+      "Pescado a la parrilla con provisions",
+      "Bush rum",
+      "Sea moss"
+     ],
+     "criticalTips": [
+      "En el Indian River solo barcas con guía autorizado; los motores están prohibidos.",
+      "Hay pocos cajeros en el norte; lleve efectivo."
+     ],
+     "mapsQuery": "Portsmouth, Dominica"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Sopa callaloo (hojas de dasheen y leche de coco)",
+     "Bakes & saltfish (masa frita con bacalao)",
+     "Caldo de pescado con “provisions” (dasheen, plátano verde, ñame)"
+    ],
+    "drinks": [
+     "Cerveza Kubuli",
+     "“Bush rum” con hierbas y ponche de ron (ron Macoucherie)",
+     "Té de cacao y sea moss"
+    ],
+    "streetFoods": [
+     "Accra (buñuelos de bacalao)",
+     "Tarta de coco y sugar cake",
+     "Roti de pollo o verduras"
+    ],
+    "diningAdvice": "En los cook shops y rum shops se come barato; en restaurantes revise si ya incluyen servicio e IVA del 15 %. La rana “mountain chicken” está en peligro y protegida: nunca la pida."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Calzado de montaña antideslizante y escarpines",
+     "Chubasquero ligero y bolsa estanca",
+     "Repelente de insectos",
+     "Adaptador de enchufe tipo G"
+    ],
+    "safetyAndEtiquette": [
+     "No empiece a hablar sin saludar.",
+     "No salga de los senderos marcados y llévese su basura."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "D",
+     "G"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Sobre todo enchufes británicos de tres patas planas (G) y algunos tipo D antiguos; lleve adaptador G."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "El agua de red (DOWASCO) suele estar tratada y es potable, pero tras lluvias intensas o tormentas puede enturbiarse; entonces use agua embotellada o hervida.",
+    "vaccines": [
+     "Vacunas de rutina y hepatitis A",
+     "Fiebre amarilla: certificado si llega de un país de riesgo",
+     "Dengue y chikungunya: protéjase de los mosquitos"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "999"
+   },
+   "tipping": {
+    "custom": "Deje 10-15 % si no incluyen servicio.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Si la cuenta incluye 10 % de servicio, lo demás es opcional; a los guías se les dan 10-20 $ por persona."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Sin devolución de IVA para turistas",
+    "minSpend": "No aplica",
+    "customsNote": "Dominica cobra un IVA del 15 % sin devolución a turistas. Está prohibido sacar coral, conchas o especies protegidas."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$2.00 - $5.00",
+    "topCarriers": [
+     "Digicel",
+     "Flow"
+    ],
+    "airportSimTrapWarning": "En el aeropuerto apenas venden SIM y con horarios irregulares; active una eSIM antes o compre un paquete turístico en Digicel/Flow en Roseau."
+   },
+   "touristScams": [
+    {
+     "title": "Confusión EC$ / US$",
+     "desc": "Un precio dado en EC$ luego se cobra en dólares US (unas 2,7 veces más).",
+     "tip": "Confirme siempre la moneda al pactar un precio."
+    },
+    {
+     "title": "“Guías” del muelle",
+     "desc": "Los días de crucero se venden tours caros en el muelle, algunos sin licencia.",
+     "tip": "Pida la licencia de Discover Dominica o reserve con antelación."
+    },
+    {
+     "title": "Objetos dejados en la playa",
+     "desc": "Bolsos y móviles dejados en la arena o el coche mientras nada pueden robarse.",
+     "tip": "Deje los objetos de valor en el hotel y nada a la vista en el coche."
+    }
+   ]
+  }
+ },
+ "ru": {
+  "insights": {
+   "currency": "Восточнокарибский доллар (XCD)",
+   "plugType": "Тип D, G (230V, 50Hz)",
+   "bestMonths": "Февраль – май (сухой сезон). Июнь – ноябрь — сезон ураганов (пик в августе – октябре); в конце октября проходит World Creole Music Festival.",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Безопасно",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Насилие против туристов редкость; бывают мелкие кражи — на пустых улицах Розо ночью и вещей, оставленных на пляже. Главные риски природные: ураганы, паводки и скользкие горные тропы.",
+    "commonScams": [
+     "Называть цену такси в долларах США вместо EC$, чтобы взять больше",
+     "Нелицензированные «гиды» у круизного причала продают поездки на Трафальгар и Эмеральд-Пул втридорога",
+     "На тропе к Кипящему озеру «показывают дорогу», а потом требуют крупную плату"
+    ],
+    "safeTravelTips": [
+     "На длинные маршруты вроде Кипящего озера ходите только с сертифицированным гидом и рано утром.",
+     "После дождя не заходите в реки и ущелья: паводки начинаются внезапно.",
+     "В сезон ураганов оформите страховку и следите за предупреждениями NHC/ODM."
+    ],
+    "emergencyNumbers": {
+     "police": "999",
+     "ambulance": "999",
+     "general": "999"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Хороший 4G в Розо и на западном побережье; слабый сигнал в горах и долинах востока",
+    "costPerGbUsd": "~2.00 - 5.00 $",
+    "esimAvailability": "Средне (Digicel и Flow продают физические SIM; есть международные eSIM)",
+    "bestCarriers": [
+     "Digicel",
+     "Flow"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Средне (микроавтобусы частые, но нерегулярные; вечером и в воскресенье редко)",
+    "costLevel": "Средний",
+    "singleTicketUsd": "1.00 - 4.00 $ (микроавтобус, по расстоянию)",
+    "dailyPassUsd": "Нет",
+    "popularRideApps": [
+     "Приложений нет – такси и микроавтобусы с номерами «H»",
+     "Аренда авто (нужно местное разрешение)"
+    ],
+    "taxiAdvice": "Uber/Bolt нет. Счётчиков нет, но есть фиксированные тарифы; уточняйте цену и валюту (EC$ или US$) до посадки. От аэропорта Дуглас-Чарльз до Розо ~1 ч 15 мин. Левостороннее движение, узкие серпантины."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "50 - 80 $",
+    "dailyBudgetMidrangeUsd": "130 - 220 $",
+    "budgetMealUsd": "8 - 15 $",
+    "coffeeUsd": "2.00 - 4.00 $",
+    "waterBottleUsd": "1.00 - 2.00 $",
+    "hostelDormUsd": "Хостелов почти нет; гостевые дома 35 - 60 $",
+    "hotel3StarUsd": "100 - 200 $",
+    "flightCostIndex": "Высокий (с пересадками)",
+    "flightTip": "Прямых рейсов из Турции нет; летите через Майами (American Airlines), Антигуа, Барбадос или Гваделупу/Мартинику. Хорошая альтернатива — паром L’Express des Îles с Мартиники и Гваделупы."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Всегда здоровайтесь: «Good morning / Good afternoon»; вопрос без приветствия — грубость.",
+     "Ходить по городу и магазинам в купальнике не принято.",
+     "На территории калинаго не снимайте людей и дома без разрешения.",
+     "По воскресеньям магазины закрыты, семьи идут в церковь."
+    ],
+    "festivals": [
+     "Карнавал Mas Domnik (февраль – март, перед Великим постом)",
+     "World Creole Music Festival (конец октября)",
+     "День независимости и креольский день (3 ноября)"
+    ],
+    "lifestyle": "«Остров природы» живёт размеренно, по-деревенски: креольская культура, музыка буйон и каданс, разговоры в ромовых лавках и наследие коренного народа калинаго."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Кипящее озеро (нацпарк Морн-Труа-Питон, ЮНЕСКО)",
+     "Водопады Трафальгар",
+     "Риф Шампань (вулканические пузырьки)",
+     "Эмеральд-Пул",
+     "Калинаго Барана Ауте и территория калинаго",
+     "Индиан-Ривер и нацпарк Кабритс (Портсмут)"
+    ],
+    "bestSeasons": "Февраль – май",
+    "travelStyleTip": "Это остров природы, а не пляжей: планируйте походы, водопады, реки и дайвинг. Пройдите пару участков тропы Вайтукубули; арендованная машина даст свободу."
+   },
+   "religion": {
+    "primaryReligions": "Католики ~60 %, протестанты (адвентисты, пятидесятники, методисты) ~30 %, прочие ~10 %",
+    "respectNorms": "В церковь — с закрытыми плечами; не фотографируйте во время службы.",
+    "sacredSites": [
+     "Собор Богоматери Тихой Гавани (Розо)",
+     "Церковь Сент-Мари с алтарём-каноэ в Салибии (территория калинаго)",
+     "Скальная «лестница» Л’Эскалье-Тет-Шьен, священная в преданиях калинаго"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Официальный язык — английский; большинство говорит также на франкокреольском (квейоль).",
+    "englishProficiency": "Высокий; английский понимают везде, пара слов на креольском вызовет улыбку.",
+    "phrases": [
+     {
+      "phrase": "Bonjou",
+      "meaning": "Доброе утро / Привет (креольский)",
+      "translation": "Привет",
+      "pronunciation": "bon-ZHOO"
+     },
+     {
+      "phrase": "Sa ka fèt?",
+      "meaning": "Как дела? (креольский)",
+      "translation": "Как дела?",
+      "pronunciation": "sa ka FET"
+     },
+     {
+      "phrase": "Mèsi",
+      "meaning": "Спасибо (креольский)",
+      "translation": "Спасибо",
+      "pronunciation": "meh-SEE"
+     },
+     {
+      "phrase": "Bonswè",
+      "meaning": "Добрый вечер (креольский)",
+      "translation": "Добрый вечер",
+      "pronunciation": "bon-SWEH"
+     },
+     {
+      "phrase": "Pa ni pwoblèm",
+      "meaning": "Без проблем (креольский)",
+      "translation": "Без проблем",
+      "pronunciation": "pa nee pwo-BLEM"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Калинаго называли остров «Вайтукубули» («высоко её тело»). Колумб назвал его Доминикой, увидев в воскресенье 3 ноября 1493 года. Горный рельеф помогал сопротивлению калинаго; в XVIII веке остров переходил от Франции к Британии и после 1805 года остался британским. Независимость — 3 ноября 1978 года; в 2017 году ураган «Мария» нанёс огромный ущерб.",
+    "milestones": [
+     "1493: Колумб видит остров",
+     "1903: создание территории калинаго (карибов)",
+     "1978: независимость (3 ноября)",
+     "2017: ураган «Мария»"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Суп каллалу (листья дашина и кокосовое молоко)",
+     "Бейкс с солёной треской",
+     "Рыбный бульон с «провизией» (дашин, зелёные бананы, ямс)"
+    ],
+    "traditionalDrinks": [
+     "Пиво Kubuli",
+     "«Буш-ром» на травах и ромовый пунш (ром Macoucherie)",
+     "Какао-чай и напиток из морского мха"
+    ],
+    "streetFoodAndDesserts": [
+     "Акра (оладьи из трески)",
+     "Кокосовый тарт и шугар-кейк",
+     "Роти с курицей или овощами"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Джин Рис (автор «Широкого Саргассова моря», родилась в Розо)",
+     "Дама Юджиния Чарльз (первая женщина-премьер в Карибском регионе)",
+     "Теа Лафонд (золото в тройном прыжке, Париж-2024, первая олимпийская медаль страны)"
+    ],
+    "strongSectors": [
+     "Экотуризм и дайвинг",
+     "Сельское хозяйство (бананы, цитрусы, корнеплоды)",
+     "Программа гражданства за инвестиции"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "XCD привязан к доллару США (2,70 EC$ = 1 $); доллары берут везде, но сдачу дают в EC$. В отелях и крупных ресторанах принимают карты; в деревнях, маршрутках и на рынке нужны наличные.",
+    "tippingCulture": "В ресторанах обычно добавляют 10 % за обслуживание; если нет — оставьте 10–15 %. Гиды и водители ждут чаевых.",
+    "economicPillars": "Туризм, сельское хозяйство, доходы от продажи гражданства, проекты аэропорта и геотермальной энергетики."
+   }
+  },
+  "itin": {
+   "routeName": "Природный маршрут по Доминике: Розо, побережье калинаго и Портсмут",
+   "routeSummary": "8-дневный природный маршрут: из Розо к водопадам Трафальгар, Кипящему озеру и рифу Шампань, затем Эмеральд-Пул и территория калинаго, финал — Индиан-Ривер и форт Кабритс в Портсмуте.",
+   "totalDays": 8,
+   "idealDurationText": "Маршрут на 8 дней",
+   "bestSeason": "Февраль – май",
+   "transportMode": "Арендованная машина или такси с водителем + маршрутки",
+   "paceLevel": "Активный (походы + подводный мир)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Остановка 1: Розо и долина Розо",
+     "recommendedDuration": "3 дня",
+     "durationBadge": "3 дня",
+     "highlights": [
+      "Водопады Трафальгар и ущелье Титу",
+      "Кипящее озеро и Долина Опустошения",
+      "Риф Шампань и Скоттс-Хед",
+      "Ботанический сад и старый город"
+     ],
+     "activities": [
+      "Пройдите с гидом 6–7-часовой маршрут к Кипящему озеру.",
+      "Поныряйте с маской среди вулканических пузырьков на рифе Шампань.",
+      "Отдохните в серных горячих источниках Вуттен-Вейвен."
+     ],
+     "foodAndDrinks": [
+      "Суп каллалу",
+      "Акра",
+      "Пиво Kubuli"
+     ],
+     "criticalTips": [
+      "Купите разовый или недельный пропуск в нацпарки.",
+      "В дождливые дни не заходите в ущелье Титу."
+     ],
+     "mapsQuery": "Roseau, Dominica"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Остановка 2: Эмеральд-Пул и территория калинаго",
+     "recommendedDuration": "2 дня",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Водопад Эмеральд-Пул",
+      "Культурная деревня Калинаго Барана Ауте",
+      "Касл-Брюс и восточное побережье",
+      "Л’Эскалье-Тет-Шьен"
+     ],
+     "activities": [
+      "Узнайте у мастеров калинаго о плетении корзин и постройке каноэ.",
+      "Искупайтесь в Эмеральд-Пул.",
+      "Прогуляйтесь по атлантическому берегу у Розали или Касл-Брюса."
+     ],
+     "foodAndDrinks": [
+      "Хлеб из маниоки (калинаго)",
+      "Свежие фрукты и кокосовая вода"
+     ],
+     "criticalTips": [
+      "На восточном побережье сильные течения — не купайтесь в море.",
+      "Покупайте изделия калинаго прямо у мастеров."
+     ],
+     "mapsQuery": "Kalinago Territory, Dominica"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Остановка 3: Портсмут и север",
+     "recommendedDuration": "3 дня",
+     "durationBadge": "3 дня",
+     "highlights": [
+      "Прогулка на лодке по Индиан-Ривер",
+      "Нацпарк Кабритс и форт Ширли",
+      "Пляжи Батибу и Пёрпл-Тёртл",
+      "Эндемичный попугай сиссеру в Синдикате"
+     ],
+     "activities": [
+      "Проплывите на вёсельной лодке по мангровым зарослям Индиан-Ривер.",
+      "Полюбуйтесь заливом Принц-Руперт с форта Ширли.",
+      "С ноября по март сходите на наблюдение за китами (выход из Розо)."
+     ],
+     "foodAndDrinks": [
+      "Рыба на гриле с «провизией»",
+      "Буш-ром",
+      "Напиток из морского мха"
+     ],
+     "criticalTips": [
+      "По Индиан-Ривер — только с лицензированными гидами; моторы запрещены.",
+      "На севере мало банкоматов — возьмите наличные."
+     ],
+     "mapsQuery": "Portsmouth, Dominica"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Суп каллалу (листья дашина и кокосовое молоко)",
+     "Бейкс с солёной треской",
+     "Рыбный бульон с «провизией» (дашин, зелёные бананы, ямс)"
+    ],
+    "drinks": [
+     "Пиво Kubuli",
+     "«Буш-ром» на травах и ромовый пунш (ром Macoucherie)",
+     "Какао-чай и напиток из морского мха"
+    ],
+    "streetFoods": [
+     "Акра (оладьи из трески)",
+     "Кокосовый тарт и шугар-кейк",
+     "Роти с курицей или овощами"
+    ],
+    "diningAdvice": "В местных закусочных и ромовых лавках еда недорогая; в ресторанах проверьте, включены ли сервис и НДС 15 %. Исчезающая лягушка «mountain chicken» охраняется — не заказывайте её."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Нескользящая треккинговая обувь и аквашузы",
+     "Лёгкий дождевик и гермомешок",
+     "Репеллент",
+     "Адаптер для розетки типа G"
+    ],
+    "safetyAndEtiquette": [
+     "Не начинайте разговор без приветствия.",
+     "Не сходите с маркированных троп и уносите мусор."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "D",
+     "G"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "В основном британские розетки с тремя плоскими штырями (G), в старых домах — тип D; возьмите адаптер G."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Водопроводная вода (DOWASCO) обычно очищена и пригодна для питья, но после ливней и штормов может мутнеть — тогда пейте бутилированную или кипячёную.",
+    "vaccines": [
+     "Плановые прививки и гепатит A",
+     "Жёлтая лихорадка: сертификат при въезде из страны риска",
+     "Денге и чикунгунья: защищайтесь от комаров"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "999"
+   },
+   "tipping": {
+    "custom": "Оставьте 10–15 %, если сервис не включён.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Если в счёте есть сервис 10 %, доплата по желанию; гидам — около 10–20 $ с человека."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Возврат НДС туристам не предусмотрен",
+    "minSpend": "Не применяется",
+    "customsNote": "В Доминике НДС 15 %, но туристам его не возвращают. Вывоз кораллов, раковин и охраняемых видов запрещён."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$2.00 - $5.00",
+    "topCarriers": [
+     "Digicel",
+     "Flow"
+    ],
+    "airportSimTrapWarning": "В аэропорту SIM почти не продают; настройте eSIM заранее или купите туристический пакет в салоне Digicel/Flow в Розо."
+   },
+   "touristScams": [
+    {
+     "title": "Путаница EC$ / US$",
+     "desc": "Цену называют в EC$, а потом требуют ту же сумму в долларах США (в 2,7 раза больше).",
+     "tip": "Всегда уточняйте валюту при договорённости о цене."
+    },
+    {
+     "title": "«Гиды» на причале",
+     "desc": "В дни круизов на причале продают завышенные туры, часть гидов без лицензии.",
+     "tip": "Попросите лицензию Discover Dominica или бронируйте заранее."
+    },
+    {
+     "title": "Вещи, оставленные на пляже",
+     "desc": "Сумки и телефоны, оставленные на песке или в машине, могут украсть.",
+     "tip": "Ценности оставляйте в отеле, в машине ничего на виду."
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,1782 @@
+{
+ "tr": {
+  "insights": {
+   "currency": "Eritre Nakfası (ERN)",
+   "plugType": "Tip C, L (230V, 50Hz)",
+   "bestMonths": "Ekim – Mart: Asmara gibi yaylalarda kurak ve ılık (15–25 °C), Massawa ve Kızıldeniz kıyısında yaz sıcağı (40 °C+) geçmiştir. Yaylalarda ana yağmur mevsimi Haziran – Eylül’dür.",
+   "safety": {
+    "safetyScore": 40,
+    "safetyLevel": "Hassas / Tedbir Gerekir",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60",
+    "crimeRateSummary": "Asmara’da sokak suçu çok düşüktür; asıl kısıtlar resmîdir. Başkent dışına çıkmak için Turizm Bakanlığı’ndan seyahat izni gerekir, Etiyopya ve Cibuti sınır bölgeleri kapalıdır ve mayın riski taşır. Yabancıların konsolosluk desteği sınırlıdır; resmî uyarılar seyahati yeniden düşünmeyi önerir.",
+    "commonScams": [
+     "Resmî olmayan döviz bozdurma teklifleri (yasa dışıdır, ağır cezası vardır)",
+     "İzin almadan şehir dışına “gayriresmî tur” teklif eden kişiler",
+     "Taksilerde turiste yüksek sabit ücret söylenmesi"
+    ],
+    "safeTravelTips": [
+     "Asmara dışındaki her yolculuk için seyahat iznini Turizm Bakanlığı’ndan önceden alın ve kontrol noktalarında gösterin.",
+     "Ülkeye girişte dövizinizi beyan edin, yalnızca resmî Himbol bürolarında bozdurun ve fişleri saklayın.",
+     "Askerî tesisleri, köprüleri ve resmî binaları asla fotoğraflamayın; siyasi konuşmalardan kaçının."
+    ],
+    "emergencyNumbers": {
+     "police": "113",
+     "ambulance": "114",
+     "general": "113"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Çok sınırlı: mobil veri çoğu ziyaretçi için fiilen yoktur; Asmara’daki internet kafeler ve bazı otellerin yavaş Wi-Fi’si tek seçenektir.",
+    "costPerGbUsd": "Uygulanmaz (internet kafe ~1 $/saat)",
+    "esimAvailability": "Yok (uluslararası eSIM ve dolaşım çalışmaz)",
+    "bestCarriers": [
+     "EriTel"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Zayıf (Asmara’da şehir otobüsleri ve paylaşımlı taksiler)",
+    "costLevel": "Ucuz (toplu taşıma) / pahalı (izinli özel araç)",
+    "singleTicketUsd": "0.10 - 0.30 $ (şehir otobüsü / paylaşımlı taksi)",
+    "dailyPassUsd": "Yok",
+    "popularRideApps": [
+     "Uygulama yok – paylaşımlı taksiler",
+     "Kontrat taksi ve otel aracılığıyla şoförlü araç"
+    ],
+    "taxiAdvice": "Asmara’da sabit güzergâhlı paylaşımlı taksiler çok ucuzdur; özel (kontrat) taksi için fiyatı önceden konuşun. Şehirlerarası otobüsler kalabalık ve yavaştır; izin belgesiyle şoförlü araç kiralamak en rahat yoldur. Tarihi Asmara–Massawa buharlı treni yalnızca grup kiralamasıyla çalışır."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "40 - 70 $",
+    "dailyBudgetMidrangeUsd": "90 - 160 $",
+    "budgetMealUsd": "3 - 8 $",
+    "coffeeUsd": "0.50 - 1.50 $",
+    "waterBottleUsd": "0.70 - 1.50 $",
+    "hostelDormUsd": "Hostel yok; basit pansiyonlar 15 - 30 $",
+    "hotel3StarUsd": "50 - 120 $",
+    "flightCostIndex": "Yüksek (sınırlı bağlantı)",
+    "flightTip": "Asmara’ya THY, flydubai, EgyptAir ve Saudia gibi havayollarının sınırlı seferleri vardır; tarifeler sık değiştiği için güncel durumu kontrol edin. Nakit ihtiyacınızı uçuştan önce hesaplayın, ülkede kart kullanılamaz."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Selamlaşma uzun ve sıcaktır; tanıdıklar omuz omuza dokunarak selamlaşır, yaşlılara özel saygı gösterilir.",
+     "Kahve seremonisine davet edilirseniz üç fincanı (awel, kalay, bereka) içmek nezakettir.",
+     "Ortak tabaktan sağ elle yenir; misafire lokma uzatmak (gursha) sevgi göstergesidir.",
+     "Asmara’da akşamüstü “passeggiata” yürüyüşü ve İtalyan usulü kafe kültürü vardır; şık ve kapalı giyinin."
+    ],
+    "festivals": [
+     "Bağımsızlık Günü (24 Mayıs)",
+     "Meskel (Gerçek Haç Bayramı, 27 Eylül)",
+     "Timket (Epifani, 19 Ocak) ve Ramazan Bayramı"
+    ],
+    "lifestyle": "Asmara sakin, temiz ve son derece güvenli bir başkenttir; İtalyan sömürge döneminden kalan modernist binalar, espresso ve macchiato kültürü, bisikletli sokaklar şehrin karakteridir. Toplumda Hristiyan ve Müslüman topluluklar uyum içinde yaşar."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Asmara modernist kent mirası (UNESCO): Fiat Tagliero, Cinema Impero",
+     "Medebar çarşısı (geri dönüşüm zanaatkârları)",
+     "Massawa eski şehri (Osmanlı ve Mısır dönemi yapıları)",
+     "Dahlak Adaları (ayrı izinle)",
+     "Keren ve Mariam Dearit tapınağı",
+     "Qohaito antik kenti"
+    ],
+    "bestSeasons": "Ekim – Mart",
+    "travelStyleTip": "Planınızı Asmara merkezli kurun; Massawa, Keren ve Qohaito için izinleri ilk gün başvurun (1–2 gün sürebilir). Yüksek nakit taşıma ve internetsiz geçecek günlere hazırlıklı olun."
+   },
+   "religion": {
+    "primaryReligions": "Hristiyan ~%50 (çoğunluğu Eritre Ortodoks Tewahedo, ayrıca Katolik ve Lutheran) ve Sünni Müslüman ~%50",
+    "respectNorms": "Ortodoks kiliselerine ayakkabı çıkarılarak girilir, kadınlar başını örter; bazı manastırlara (Debre Bizen) kadınlar giremez. Camilerde namaz saatlerinden kaçının.",
+    "sacredSites": [
+     "Enda Mariam Ortodoks Katedrali (Asmara)",
+     "Asmara Katolik Katedrali (Tesbih Meryem Ana Kilisesi)",
+     "Al Khulafa Al Rashiudin Ulu Camii (Asmara)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Resmî tek dil yoktur; Tigrinya, Arapça ve İngilizce yaygın çalışma dilleridir. Ülkede dokuz etnik dil (Tigre, Saho, Afar, Bilen vb.) konuşulur, yaşlılar arasında İtalyanca da bilinir.",
+    "englishProficiency": "Orta; eğitim dili olduğu için gençler ve Asmara’daki esnaf temel İngilizce konuşur.",
+    "phrases": [
+     {
+      "phrase": "ሰላም (selam)",
+      "meaning": "Merhaba (Tigrinya)",
+      "translation": "Merhaba",
+      "pronunciation": "seh-LAHM"
+     },
+     {
+      "phrase": "ከመይ ኣለኻ? (kemey aleka?)",
+      "meaning": "Nasılsın? (erkeğe; kadına: ከመይ ኣለኺ kemey aleki)",
+      "translation": "Nasılsın?",
+      "pronunciation": "KEH-mey a-LEH-ka"
+     },
+     {
+      "phrase": "የቐንየለይ (yeqenyeley)",
+      "meaning": "Teşekkür ederim (Tigrinya)",
+      "translation": "Teşekkürler",
+      "pronunciation": "yeh-k’en-yeh-LEY"
+     },
+     {
+      "phrase": "ክንደይ እዩ? (kndey iyu?)",
+      "meaning": "Ne kadar? (Tigrinya)",
+      "translation": "Kaç para?",
+      "pronunciation": "KIN-dey IH-yu"
+     },
+     {
+      "phrase": "ሕራይ (ḥray)",
+      "meaning": "Tamam / Peki (Tigrinya)",
+      "translation": "Tamam",
+      "pronunciation": "h-RAI"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Bölge Aksum Krallığı’nın kıyı kapısıydı; Massawa 16. yüzyılda Osmanlı Habeş Eyaleti’nin parçası oldu, ardından Mısır yönetimine geçti. İtalya 1890’da Eritre kolonisini kurdu ve Asmara’yı modernist bir şehir olarak inşa etti. 1941’de İngiliz yönetimi, 1952’de Etiyopya ile federasyon geldi; uzun bir bağımsızlık savaşının ardından ülke 24 Mayıs 1993’te resmen bağımsız oldu.",
+    "milestones": [
+     "1557: Massawa’nın Osmanlı yönetimine girmesi",
+     "1890: İtalyan Eritre kolonisinin kurulması",
+     "1993: Bağımsızlık (24 Mayıs)",
+     "2017: Asmara’nın UNESCO Dünya Mirası olması"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Zigni (acılı berbere soslu et yahnisi) ve injera / taita",
+     "Shiro (nohut unu yahnisi)",
+     "Ful (kahvaltılık bakla ezmesi)"
+    ],
+    "traditionalDrinks": [
+     "Bun (geleneksel kahve seremonisi)",
+     "Macchiato ve espresso (İtalyan mirası)",
+     "Suwa (ev yapımı darı birası) ve Mies (bal şarabı)"
+    ],
+    "streetFoodAndDesserts": [
+     "Himbasha (baharatlı bayram ekmeği)",
+     "Kicha fit-fit (tereyağlı ekmek parçaları)",
+     "İtalyan usulü pastalar ve frittata"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Zersenay Tadese (yarı maraton eski dünya rekortmeni)",
+     "Ghirmay Ghebreslassie (2015 dünya maraton şampiyonu)",
+     "Biniam Girmay (Tour de France etap galibi ve 2024 yeşil mayo)"
+    ],
+    "strongSectors": [
+     "Madencilik (Bisha altın, bakır, çinko)",
+     "Tarım ve hayvancılık",
+     "Balıkçılık ve Kızıldeniz limanları"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Ekonomi tamamen nakittir: yabancı kartlar, ATM’ler ve uluslararası para transferi çalışmaz. Dolar veya avro nakit getirin, girişte beyan edin ve yalnızca resmî Himbol bürolarında bozdurun (resmî kur ~15 ERN = 1 $). Otel faturaları genellikle dövizle ödenir.",
+    "tippingCulture": "Zorunlu değildir; restoranlarda yuvarlamak veya %5-10 bırakmak, şoför ve rehberlere küçük bahşiş vermek nazik karşılanır.",
+    "economicPillars": "Madencilik, tarım, devlet hizmetleri, yurt dışındaki Eritrelilerin gönderdiği dövizler ve balıkçılık."
+   }
+  },
+  "itin": {
+   "routeName": "Eritre Rotası: Asmara, Keren ve Massawa",
+   "routeSummary": "UNESCO listesindeki modernist Asmara’dan baobablarıyla ünlü Keren’e ve Kızıldeniz kıyısındaki Osmanlı izli Massawa’ya uzanan, seyahat izinleriyle planlanan 7 günlük rota.",
+   "totalDays": 7,
+   "idealDurationText": "7 Günlük Rota",
+   "bestSeason": "Ekim – Mart",
+   "transportMode": "İzin belgeli şoförlü araç + Asmara’da paylaşımlı taksi",
+   "paceLevel": "Sakin (Mimari + Kültür + Kıyı)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "1. Durak: Asmara (Modernist Başkent)",
+     "recommendedDuration": "3 Gün",
+     "durationBadge": "3 Gün",
+     "highlights": [
+      "Fiat Tagliero benzin istasyonu (1938)",
+      "Harnet Bulvarı, Cinema Impero ve Bar Zilli",
+      "Medebar çarşısı",
+      "Enda Mariam Katedrali ve Ulu Cami"
+     ],
+     "activities": [
+      "Art Deco ve fütürist yapıları görmek için şehir yürüyüşü yapın.",
+      "Medebar’da hurda metalden alet yapan zanaatkârları izleyin.",
+      "Akşamüstü passeggiata’ya katılıp bir kafede macchiato için."
+     ],
+     "foodAndDrinks": [
+      "Zigni ve injera",
+      "Macchiato",
+      "Pasta (İtalyan mirası)"
+     ],
+     "criticalTips": [
+      "İlk gün Turizm Bakanlığı’na giderek diğer duraklar için izin başvurusu yapın.",
+      "Şehir 2.300 m yüksekliktedir; akşamlar serin olur."
+     ],
+     "mapsQuery": "Asmara, Eritrea"
+    },
+    {
+     "stopNumber": 2,
+     "name": "2. Durak: Keren (Baobablar ve Pazarlar)",
+     "recommendedDuration": "1 Gün",
+     "durationBadge": "1 Gün",
+     "highlights": [
+      "Mariam Dearit: baobab ağacının içindeki tapınak",
+      "Pazartesi hayvan pazarı",
+      "İngiliz ve İtalyan savaş mezarlıkları",
+      "Gümüş işçileri çarşısı"
+     ],
+     "activities": [
+      "Pazartesi sabah erken hayvan pazarındaki deve ve keçi alışverişini izleyin.",
+      "Mariam Dearit’e kısa bir yürüyüş yapın.",
+      "Asmara’ya dönüşte virajlı dağ yolunun manzarasını izleyin."
+     ],
+     "foodAndDrinks": [
+      "Shiro ve taita",
+      "Baharatlı çay (shahi)"
+     ],
+     "criticalTips": [
+      "Keren gezisi Asmara’dan günübirlik yapılabilir (~2,5 saat).",
+      "İzin belgenizi ve pasaport fotokopinizi yanınızda taşıyın."
+     ],
+     "mapsQuery": "Keren, Eritrea"
+    },
+    {
+     "stopNumber": 3,
+     "name": "3. Durak: Massawa ve Kızıldeniz",
+     "recommendedDuration": "3 Gün",
+     "durationBadge": "3 Gün",
+     "highlights": [
+      "Osmanlı ve Mısır dönemi eski şehir (Taulud ve Batse adaları)",
+      "Şeyh Hanefi Camii",
+      "Yıkık İmparatorluk Sarayı",
+      "Gurgusum plajı ve Dahlak tekne turu (izinle)"
+     ],
+     "activities": [
+      "Mercan taşından yapılmış eski şehir sokaklarında yürüyün.",
+      "Akşam limanda Yemen usulü tandır balığı yiyin.",
+      "İzin alarak Dahlak Adaları’na şnorkel turuna çıkın."
+     ],
+     "foodAndDrinks": [
+      "Asa (Yemen usulü fırın balık)",
+      "Ful ve sıcak ekmek",
+      "Taze meyve suyu"
+     ],
+     "criticalTips": [
+      "Haziran – Eylül arasında 45 °C’ye ulaşır; bu aylarda gitmeyin.",
+      "Liman ve askerî alanları fotoğraflamayın."
+     ],
+     "mapsQuery": "Massawa, Eritrea"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Zigni (acılı berbere soslu et yahnisi) ve injera / taita",
+     "Shiro (nohut unu yahnisi)",
+     "Ful (kahvaltılık bakla ezmesi)"
+    ],
+    "drinks": [
+     "Bun (geleneksel kahve seremonisi)",
+     "Macchiato ve espresso (İtalyan mirası)",
+     "Suwa (ev yapımı darı birası) ve Mies (bal şarabı)"
+    ],
+    "streetFoods": [
+     "Himbasha (baharatlı bayram ekmeği)",
+     "Kicha fit-fit (tereyağlı ekmek parçaları)",
+     "İtalyan usulü pastalar ve frittata"
+    ],
+    "diningAdvice": "Asmara’daki İtalyan usulü kafe ve pastaneler ucuz ve kalitelidir; geleneksel restoranlarda injera ortak tabakta sağ elle yenir. Oruç dönemlerinde (Ortodoks perhizleri, Ramazan) menüler değişir."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Tüm seyahat için yeterli nakit dolar/avro",
+     "Pasaport fotokopileri ve vesikalık fotoğraf (izinler için)",
+     "Çevrimdışı haritalar ve kitaplar (internet yok)",
+     "Asmara için hırka, Massawa için güneş koruması"
+    ],
+    "safetyAndEtiquette": [
+     "Siyaset, askerlik hizmeti ve hükümet hakkında konuşmalardan kaçının.",
+     "İzin belgenizde yazmayan yerlere gitmeyin."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "L"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "İki yuvarlak pimli C tipi ve İtalyan L tipi prizler; Türk fişlerinin çoğu C prize uyar, kalın F fişler için ince adaptör iyi olur."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Musluk suyu içilmez; kapalı şişe su için, Massawa’da susuz kalmamaya özen gösterin.",
+    "vaccines": [
+     "Hepatit A ve tifo",
+     "Sarıhumma: risk ülkesinden geliyorsanız sertifika istenir",
+     "Sıtma: alçak bölgelerde (Massawa, batı ovaları) risk var, Asmara’da yok",
+     "Menenjit: kuru mevsimde düşünülebilir"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "114"
+   },
+   "tipping": {
+    "custom": "İsteğe bağlı; restoranda %5-10 veya hesabı yuvarlamak yeterli.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "Bahşişi nakfa ile verin; şoförlere günlük birkaç dolar uygundur."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Turistlere KDV iadesi uygulanmıyor",
+    "minSpend": "Uygulanmaz",
+    "customsNote": "Eritre’de turistlere vergi iadesi yoktur. Girişte döviz beyanı zorunludur; çıkışta bozdurma fişleri istenebilir. Nakfa ülke dışına çıkarılamaz, eski eserlerin ihracı yasaktır."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "Uygulanmaz",
+    "topCarriers": [
+     "EriTel"
+    ],
+    "airportSimTrapWarning": "Eritre’de uluslararası eSIM ve dolaşım çalışmaz; EriTel SIM’i yabancılar için izin gerektirir ve mobil veri neredeyse yoktur. Yakınlarınıza internetsiz kalacağınızı önceden bildirin."
+   },
+   "touristScams": [
+    {
+     "title": "Karaborsa Döviz",
+     "desc": "Daha iyi kur vaat eden kişiler sizi ağır cezalara ve paranıza el konulmasına maruz bırakabilir.",
+     "tip": "Yalnızca Himbol bürolarında bozdurun ve fişleri saklayın."
+    },
+    {
+     "title": "İzinsiz Tur Teklifi",
+     "desc": "“İzin gerekmez” diyen sürücüler kontrol noktalarında sorun yaşamanıza neden olur.",
+     "tip": "İzinleri Turizm Bakanlığı veya kayıtlı acente üzerinden alın."
+    },
+    {
+     "title": "Turist Taksi Fiyatı",
+     "desc": "Özel taksilerde yabancılara yerel fiyatın birkaç katı söylenebilir.",
+     "tip": "Paylaşımlı taksileri kullanın veya fiyatı otelden öğrenip önceden anlaşın."
+    }
+   ]
+  }
+ },
+ "en": {
+  "insights": {
+   "currency": "Eritrean Nakfa (ERN)",
+   "plugType": "Type C, L (230V, 50Hz)",
+   "bestMonths": "October – March: dry and mild in the highlands such as Asmara (15–25 °C), and the summer heat (40 °C+) has eased in Massawa and on the Red Sea coast. The highland rainy season is June – September.",
+   "safety": {
+    "safetyScore": 40,
+    "safetyLevel": "Caution Advised",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60",
+    "crimeRateSummary": "Street crime in Asmara is very low; the real constraints are official. Travel permits from the Ministry of Tourism are required to leave the capital, the Ethiopian and Djiboutian border areas are closed and carry landmine risk, and consular support for foreigners is limited; official advisories recommend reconsidering travel.",
+    "commonScams": [
+     "Unofficial money-exchange offers (illegal, with heavy penalties)",
+     "People offering “informal tours” out of town without permits",
+     "Taxis quoting high flat fares to tourists"
+    ],
+    "safeTravelTips": [
+     "Get travel permits from the Ministry of Tourism for every trip outside Asmara and show them at checkpoints.",
+     "Declare your currency on arrival, change money only at official Himbol bureaus and keep the receipts.",
+     "Never photograph military sites, bridges or government buildings; avoid political conversations."
+    ],
+    "emergencyNumbers": {
+     "police": "113",
+     "ambulance": "114",
+     "general": "113"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Very limited: mobile data is effectively unavailable for most visitors; internet cafés in Asmara and slow hotel Wi-Fi are the only options.",
+    "costPerGbUsd": "N/A (internet café ~$1/hour)",
+    "esimAvailability": "None (international eSIMs and roaming don’t work)",
+    "bestCarriers": [
+     "EriTel"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Poor (city buses and shared taxis in Asmara)",
+    "costLevel": "Cheap (public transport) / expensive (permitted private car)",
+    "singleTicketUsd": "0.10 - 0.30 $ (city bus / shared taxi)",
+    "dailyPassUsd": "None",
+    "popularRideApps": [
+     "No apps – shared taxis",
+     "Contract taxis and drivers arranged by hotels"
+    ],
+    "taxiAdvice": "Shared taxis on fixed routes in Asmara are very cheap; agree prices first for a private (contract) taxi. Intercity buses are crowded and slow; hiring a car with driver plus permits is the most comfortable option. The historic Asmara–Massawa steam train runs only on group charters."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "40 - 70 $",
+    "dailyBudgetMidrangeUsd": "90 - 160 $",
+    "budgetMealUsd": "3 - 8 $",
+    "coffeeUsd": "0.50 - 1.50 $",
+    "waterBottleUsd": "0.70 - 1.50 $",
+    "hostelDormUsd": "No hostels; basic pensions 15 - 30 $",
+    "hotel3StarUsd": "50 - 120 $",
+    "flightCostIndex": "High (limited connections)",
+    "flightTip": "Asmara has limited service from airlines such as Turkish Airlines, flydubai, EgyptAir and Saudia; schedules change often, so check the current situation. Work out your cash needs before flying—cards can’t be used in the country."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Greetings are long and warm; acquaintances touch shoulders, and elders receive special respect.",
+     "If invited to a coffee ceremony, it is polite to stay for all three cups (awel, kalay, bereka).",
+     "Eat from the shared platter with your right hand; feeding a guest a bite (gursha) is a sign of affection.",
+     "Asmara has an evening “passeggiata” stroll and Italian-style café culture; dress neatly and modestly."
+    ],
+    "festivals": [
+     "Independence Day (24 May)",
+     "Meskel (Finding of the True Cross, 27 September)",
+     "Timket (Epiphany, 19 January) and Eid al-Fitr"
+    ],
+    "lifestyle": "Asmara is a calm, clean and very safe capital; modernist buildings from the Italian colonial era, espresso and macchiato culture and bicycle-filled streets define it. Christian and Muslim communities live side by side in harmony."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Asmara’s modernist city (UNESCO): Fiat Tagliero, Cinema Impero",
+     "Medebar market (recycling artisans)",
+     "Massawa old town (Ottoman and Egyptian-era buildings)",
+     "Dahlak Islands (separate permit)",
+     "Keren and the Mariam Dearit shrine",
+     "Qohaito ancient site"
+    ],
+    "bestSeasons": "October – March",
+    "travelStyleTip": "Base your plan in Asmara; apply for Massawa, Keren and Qohaito permits on day one (they can take 1–2 days). Be ready to carry lots of cash and spend days offline."
+   },
+   "religion": {
+    "primaryReligions": "Christian ~50% (mostly Eritrean Orthodox Tewahedo, plus Catholic and Lutheran) and Sunni Muslim ~50%",
+    "respectNorms": "Remove shoes in Orthodox churches and women cover their hair; women may not enter some monasteries (Debre Bizen). Avoid mosques at prayer times.",
+    "sacredSites": [
+     "Enda Mariam Orthodox Cathedral (Asmara)",
+     "Asmara Catholic Cathedral (Church of Our Lady of the Rosary)",
+     "Al Khulafa Al Rashiudin Grand Mosque (Asmara)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "There is no single official language; Tigrinya, Arabic and English are the main working languages. Nine ethnic languages (Tigre, Saho, Afar, Bilen, etc.) are spoken, and older people often know Italian.",
+    "englishProficiency": "Moderate; as it is the language of education, young people and Asmara shopkeepers speak basic English.",
+    "phrases": [
+     {
+      "phrase": "ሰላም (selam)",
+      "meaning": "Hello (Tigrinya)",
+      "translation": "Hello",
+      "pronunciation": "seh-LAHM"
+     },
+     {
+      "phrase": "ከመይ ኣለኻ? (kemey aleka?)",
+      "meaning": "How are you? (to a man; to a woman: ከመይ ኣለኺ kemey aleki)",
+      "translation": "How are you?",
+      "pronunciation": "KEH-mey a-LEH-ka"
+     },
+     {
+      "phrase": "የቐንየለይ (yeqenyeley)",
+      "meaning": "Thank you (Tigrinya)",
+      "translation": "Thank you",
+      "pronunciation": "yeh-k’en-yeh-LEY"
+     },
+     {
+      "phrase": "ክንደይ እዩ? (kndey iyu?)",
+      "meaning": "How much is it? (Tigrinya)",
+      "translation": "How much?",
+      "pronunciation": "KIN-dey IH-yu"
+     },
+     {
+      "phrase": "ሕራይ (ḥray)",
+      "meaning": "OK / All right (Tigrinya)",
+      "translation": "OK",
+      "pronunciation": "h-RAI"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "The region was the coastal gateway of the Kingdom of Aksum; Massawa became part of the Ottoman Habesh province in the 16th century and later came under Egyptian rule. Italy founded the colony of Eritrea in 1890 and built Asmara as a modernist city. British administration followed in 1941 and federation with Ethiopia in 1952; after a long war of independence the country became formally independent on 24 May 1993.",
+    "milestones": [
+     "1557: Massawa comes under Ottoman rule",
+     "1890: Founding of the Italian colony of Eritrea",
+     "1993: Independence (24 May)",
+     "2017: Asmara becomes a UNESCO World Heritage Site"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Zigni (spicy berbere meat stew) with injera / taita",
+     "Shiro (chickpea-flour stew)",
+     "Ful (breakfast fava beans)"
+    ],
+    "traditionalDrinks": [
+     "Bun (traditional coffee ceremony)",
+     "Macchiato and espresso (Italian legacy)",
+     "Suwa (home-brewed sorghum beer) and mies (honey wine)"
+    ],
+    "streetFoodAndDesserts": [
+     "Himbasha (spiced celebration bread)",
+     "Kicha fit-fit (buttery torn flatbread)",
+     "Italian-style pastries and frittata"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Zersenay Tadese (former half-marathon world record holder)",
+     "Ghirmay Ghebreslassie (2015 world marathon champion)",
+     "Biniam Girmay (Tour de France stage winner, 2024 green jersey)"
+    ],
+    "strongSectors": [
+     "Mining (Bisha gold, copper, zinc)",
+     "Agriculture and livestock",
+     "Fishing and Red Sea ports"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "The economy is entirely cash: foreign cards, ATMs and international transfers don’t work. Bring dollars or euros in cash, declare them on arrival and change only at official Himbol bureaus (official rate ~15 ERN = $1). Hotel bills are often paid in foreign currency.",
+    "tippingCulture": "Not mandatory; rounding up or leaving 5-10% in restaurants and small tips for drivers and guides are appreciated.",
+    "economicPillars": "Mining, agriculture, public services, diaspora remittances and fishing."
+   }
+  },
+  "itin": {
+   "routeName": "Eritrea Route: Asmara, Keren and Massawa",
+   "routeSummary": "A 7-day route, planned around travel permits, from UNESCO-listed modernist Asmara to baobab-studded Keren and Ottoman-flavoured Massawa on the Red Sea.",
+   "totalDays": 7,
+   "idealDurationText": "7-Day Itinerary",
+   "bestSeason": "October – March",
+   "transportMode": "Car with driver and permits + shared taxis in Asmara",
+   "paceLevel": "Relaxed (Architecture + Culture + Coast)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stop 1: Asmara (Modernist Capital)",
+     "recommendedDuration": "3 Days",
+     "durationBadge": "3 Days",
+     "highlights": [
+      "Fiat Tagliero service station (1938)",
+      "Harnet Avenue, Cinema Impero and Bar Zilli",
+      "Medebar market",
+      "Enda Mariam Cathedral and the Grand Mosque"
+     ],
+     "activities": [
+      "Take a city walk to see Art Deco and Futurist buildings.",
+      "Watch artisans turn scrap metal into tools at Medebar.",
+      "Join the evening passeggiata and have a macchiato in a café."
+     ],
+     "foodAndDrinks": [
+      "Zigni with injera",
+      "Macchiato",
+      "Pasta (Italian legacy)"
+     ],
+     "criticalTips": [
+      "On day one, apply at the Ministry of Tourism for permits for the other stops.",
+      "The city lies at 2,300 m; evenings are cool."
+     ],
+     "mapsQuery": "Asmara, Eritrea"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stop 2: Keren (Baobabs & Markets)",
+     "recommendedDuration": "1 Day",
+     "durationBadge": "1 Day",
+     "highlights": [
+      "Mariam Dearit: a shrine inside a baobab tree",
+      "Monday livestock market",
+      "British and Italian war cemeteries",
+      "Silversmiths’ market"
+     ],
+     "activities": [
+      "Watch the camel and goat trading at the Monday-morning livestock market.",
+      "Take a short walk to Mariam Dearit.",
+      "Enjoy the winding mountain road views on the way back to Asmara."
+     ],
+     "foodAndDrinks": [
+      "Shiro with taita",
+      "Spiced tea (shahi)"
+     ],
+     "criticalTips": [
+      "Keren works as a day trip from Asmara (~2.5 h).",
+      "Carry your permit and a passport copy."
+     ],
+     "mapsQuery": "Keren, Eritrea"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stop 3: Massawa & the Red Sea",
+     "recommendedDuration": "3 Days",
+     "durationBadge": "3 Days",
+     "highlights": [
+      "Ottoman and Egyptian-era old town (Taulud and Batse islands)",
+      "Sheikh Hanafi Mosque",
+      "The ruined Imperial Palace",
+      "Gurgusum beach and a Dahlak boat trip (with permit)"
+     ],
+     "activities": [
+      "Walk the old-town lanes built of coral stone.",
+      "Eat Yemeni-style oven-baked fish at the harbour in the evening.",
+      "With a permit, take a snorkelling trip to the Dahlak Islands."
+     ],
+     "foodAndDrinks": [
+      "Asa (Yemeni-style baked fish)",
+      "Ful with hot bread",
+      "Fresh fruit juice"
+     ],
+     "criticalTips": [
+      "Temperatures hit 45 °C June – September; avoid these months.",
+      "Don’t photograph the port or military areas."
+     ],
+     "mapsQuery": "Massawa, Eritrea"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Zigni (spicy berbere meat stew) with injera / taita",
+     "Shiro (chickpea-flour stew)",
+     "Ful (breakfast fava beans)"
+    ],
+    "drinks": [
+     "Bun (traditional coffee ceremony)",
+     "Macchiato and espresso (Italian legacy)",
+     "Suwa (home-brewed sorghum beer) and mies (honey wine)"
+    ],
+    "streetFoods": [
+     "Himbasha (spiced celebration bread)",
+     "Kicha fit-fit (buttery torn flatbread)",
+     "Italian-style pastries and frittata"
+    ],
+    "diningAdvice": "Asmara’s Italian-style cafés and pastry shops are cheap and good; in traditional restaurants injera is shared from one platter with the right hand. Menus change during fasting periods (Orthodox fasts, Ramadan)."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Enough cash dollars/euros for the whole trip",
+     "Passport copies and passport photos (for permits)",
+     "Offline maps and books (no internet)",
+     "A sweater for Asmara, sun protection for Massawa"
+    ],
+    "safetyAndEtiquette": [
+     "Avoid conversations about politics, national service and the government.",
+     "Don’t go anywhere not listed on your permit."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "L"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Two-round-pin Type C and Italian Type L sockets; most Turkish plugs fit Type C, a slim adapter helps for thick F plugs."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Tap water is not drinkable; drink sealed bottled water and stay well hydrated in Massawa.",
+    "vaccines": [
+     "Hepatitis A and typhoid",
+     "Yellow fever: certificate required if arriving from a risk country",
+     "Malaria: risk in the lowlands (Massawa, western plains), not in Asmara",
+     "Meningitis: consider for the dry season"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "114"
+   },
+   "tipping": {
+    "custom": "Optional; 5-10% or rounding up in restaurants is enough.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "Tip in nakfa; a few dollars a day suits drivers."
+   },
+   "taxFree": {
+    "vatRefundPercent": "No VAT refund for tourists",
+    "minSpend": "Not applicable",
+    "customsNote": "Eritrea has no tax refund for tourists. Currency declaration on arrival is mandatory and exchange receipts may be checked on departure. Nakfa cannot be exported, and antiquities may not be taken out."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "N/A",
+    "topCarriers": [
+     "EriTel"
+    ],
+    "airportSimTrapWarning": "International eSIMs and roaming don’t work in Eritrea; an EriTel SIM needs a permit for foreigners and mobile data is nearly non-existent. Tell family beforehand that you will be offline."
+   },
+   "touristScams": [
+    {
+     "title": "Black-Market Exchange",
+     "desc": "People promising a better rate can expose you to heavy fines and confiscation.",
+     "tip": "Change only at Himbol bureaus and keep receipts."
+    },
+    {
+     "title": "Permit-Free Tour Offer",
+     "desc": "Drivers saying “no permit needed” will land you in trouble at checkpoints.",
+     "tip": "Get permits via the Ministry of Tourism or a registered agency."
+    },
+    {
+     "title": "Tourist Taxi Fare",
+     "desc": "Private taxis may quote foreigners several times the local price.",
+     "tip": "Use shared taxis or check the fare with your hotel and agree it first."
+    }
+   ]
+  }
+ },
+ "de": {
+  "insights": {
+   "currency": "Eritreischer Nakfa (ERN)",
+   "plugType": "Typ C, L (230V, 50Hz)",
+   "bestMonths": "Oktober – März: im Hochland wie Asmara trocken und mild (15–25 °C), in Massawa und am Roten Meer ist die Sommerhitze (40 °C+) vorbei. Hauptregenzeit im Hochland: Juni – September.",
+   "safety": {
+    "safetyScore": 40,
+    "safetyLevel": "Erhöhte Vorsicht",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60",
+    "crimeRateSummary": "Straßenkriminalität ist in Asmara sehr gering; die eigentlichen Einschränkungen sind behördlich. Für Fahrten außerhalb der Hauptstadt braucht man eine Reisegenehmigung des Tourismusministeriums, die Grenzgebiete zu Äthiopien und Dschibuti sind gesperrt und verminungsgefährdet, konsularische Hilfe ist begrenzt; offizielle Hinweise raten, Reisen zu überdenken.",
+    "commonScams": [
+     "Inoffizielle Geldwechselangebote (illegal, hohe Strafen)",
+     "Personen, die „inoffizielle Touren“ ohne Genehmigung anbieten",
+     "Taxis verlangen von Touristen hohe Pauschalpreise"
+    ],
+    "safeTravelTips": [
+     "Für jede Fahrt außerhalb Asmaras vorab Genehmigungen beim Tourismusministerium holen und an Kontrollen zeigen.",
+     "Devisen bei der Einreise deklarieren, nur bei offiziellen Himbol-Wechselstuben tauschen und Belege aufheben.",
+     "Niemals Militäranlagen, Brücken oder Regierungsgebäude fotografieren; politische Gespräche meiden."
+    ],
+    "emergencyNumbers": {
+     "police": "113",
+     "ambulance": "114",
+     "general": "113"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Sehr begrenzt: Mobile Daten sind für Besucher praktisch nicht verfügbar; Internetcafés in Asmara und langsames Hotel-WLAN sind die einzigen Optionen.",
+    "costPerGbUsd": "Entfällt (Internetcafé ~1 $/Std.)",
+    "esimAvailability": "Keine (internationale eSIMs und Roaming funktionieren nicht)",
+    "bestCarriers": [
+     "EriTel"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Schwach (Stadtbusse und Sammeltaxis in Asmara)",
+    "costLevel": "Günstig (ÖPNV) / teuer (genehmigter Privatwagen)",
+    "singleTicketUsd": "0.10 - 0.30 $ (Stadtbus / Sammeltaxi)",
+    "dailyPassUsd": "Keiner",
+    "popularRideApps": [
+     "Keine Apps – Sammeltaxis",
+     "Vertragstaxis und Fahrer über das Hotel"
+    ],
+    "taxiAdvice": "Sammeltaxis auf festen Routen in Asmara sind sehr billig; beim privaten (Vertrags-)Taxi den Preis vorab klären. Fernbusse sind voll und langsam; ein Wagen mit Fahrer und Genehmigungen ist am bequemsten. Die historische Dampfbahn Asmara–Massawa fährt nur als Gruppencharter."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "40 - 70 $",
+    "dailyBudgetMidrangeUsd": "90 - 160 $",
+    "budgetMealUsd": "3 - 8 $",
+    "coffeeUsd": "0.50 - 1.50 $",
+    "waterBottleUsd": "0.70 - 1.50 $",
+    "hostelDormUsd": "Keine Hostels; einfache Pensionen 15 - 30 $",
+    "hotel3StarUsd": "50 - 120 $",
+    "flightCostIndex": "Hoch (wenige Verbindungen)",
+    "flightTip": "Asmara wird eingeschränkt von Airlines wie Turkish Airlines, flydubai, EgyptAir und Saudia angeflogen; Flugpläne ändern sich oft, aktuelle Lage prüfen. Bargeldbedarf vor dem Flug berechnen – Karten funktionieren im Land nicht."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Begrüßungen sind lang und herzlich; Bekannte berühren sich an der Schulter, Ältere werden besonders respektiert.",
+     "Bei einer Kaffeezeremonie ist es höflich, alle drei Tassen (Awel, Kalay, Bereka) zu trinken.",
+     "Mit der rechten Hand von der gemeinsamen Platte essen; einem Gast einen Bissen zu reichen (Gursha) ist Zuneigung.",
+     "In Asmara gibt es die abendliche „Passeggiata“ und italienische Café-Kultur; gepflegt und dezent kleiden."
+    ],
+    "festivals": [
+     "Unabhängigkeitstag (24. Mai)",
+     "Meskel (Kreuzauffindung, 27. September)",
+     "Timket (Epiphanias, 19. Januar) und Zuckerfest"
+    ],
+    "lifestyle": "Asmara ist eine ruhige, saubere und sehr sichere Hauptstadt; modernistische Bauten aus der italienischen Kolonialzeit, Espresso- und Macchiato-Kultur und Fahrradstraßen prägen sie. Christen und Muslime leben einträchtig nebeneinander."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Modernistisches Asmara (UNESCO): Fiat Tagliero, Cinema Impero",
+     "Medebar-Markt (Recycling-Handwerker)",
+     "Altstadt von Massawa (Bauten aus osmanischer und ägyptischer Zeit)",
+     "Dahlak-Inseln (separate Genehmigung)",
+     "Keren und der Schrein Mariam Dearit",
+     "Antike Stätte Qohaito"
+    ],
+    "bestSeasons": "Oktober – März",
+    "travelStyleTip": "Planen Sie mit Asmara als Basis; Genehmigungen für Massawa, Keren und Qohaito am ersten Tag beantragen (dauert 1–2 Tage). Auf viel Bargeld und Tage ohne Internet einstellen."
+   },
+   "religion": {
+    "primaryReligions": "Christen ~50 % (überwiegend eritreisch-orthodox Tewahedo, dazu Katholiken und Lutheraner) und sunnitische Muslime ~50 %",
+    "respectNorms": "In orthodoxen Kirchen Schuhe aus, Frauen bedecken das Haar; manche Klöster (Debre Bizen) dürfen Frauen nicht betreten. Moscheen zu Gebetszeiten meiden.",
+    "sacredSites": [
+     "Orthodoxe Kathedrale Enda Mariam (Asmara)",
+     "Katholische Kathedrale von Asmara (Rosenkranzkirche)",
+     "Große Moschee Al Khulafa Al Rashiudin (Asmara)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Es gibt keine einzelne Amtssprache; Tigrinya, Arabisch und Englisch sind Arbeitssprachen. Neun ethnische Sprachen (Tigre, Saho, Afar, Bilen u. a.) werden gesprochen, Ältere können oft Italienisch.",
+    "englishProficiency": "Mittel; als Unterrichtssprache sprechen junge Leute und Händler in Asmara Grundenglisch.",
+    "phrases": [
+     {
+      "phrase": "ሰላም (selam)",
+      "meaning": "Hallo (Tigrinya)",
+      "translation": "Hallo",
+      "pronunciation": "seh-LAHM"
+     },
+     {
+      "phrase": "ከመይ ኣለኻ? (kemey aleka?)",
+      "meaning": "Wie geht’s? (zu einem Mann; zu einer Frau: ከመይ ኣለኺ kemey aleki)",
+      "translation": "Wie geht’s?",
+      "pronunciation": "KEH-mey a-LEH-ka"
+     },
+     {
+      "phrase": "የቐንየለይ (yeqenyeley)",
+      "meaning": "Danke (Tigrinya)",
+      "translation": "Danke",
+      "pronunciation": "yeh-k’en-yeh-LEY"
+     },
+     {
+      "phrase": "ክንደይ እዩ? (kndey iyu?)",
+      "meaning": "Wie viel kostet das? (Tigrinya)",
+      "translation": "Wie viel?",
+      "pronunciation": "KIN-dey IH-yu"
+     },
+     {
+      "phrase": "ሕራይ (ḥray)",
+      "meaning": "Okay / In Ordnung (Tigrinya)",
+      "translation": "Okay",
+      "pronunciation": "h-RAI"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Die Region war das Küstentor des Reiches von Aksum; Massawa gehörte im 16. Jh. zur osmanischen Provinz Habesch und kam später unter ägyptische Herrschaft. Italien gründete 1890 die Kolonie Eritrea und baute Asmara als modernistische Stadt. 1941 folgte britische Verwaltung, 1952 die Föderation mit Äthiopien; nach langem Unabhängigkeitskrieg wurde das Land am 24. Mai 1993 formell unabhängig.",
+    "milestones": [
+     "1557: Massawa wird osmanisch",
+     "1890: Gründung der italienischen Kolonie Eritrea",
+     "1993: Unabhängigkeit (24. Mai)",
+     "2017: Asmara wird UNESCO-Welterbe"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Zigni (scharfer Berbere-Fleischeintopf) mit Injera / Taita",
+     "Shiro (Kichererbsenmehl-Eintopf)",
+     "Ful (Saubohnen zum Frühstück)"
+    ],
+    "traditionalDrinks": [
+     "Bun (traditionelle Kaffeezeremonie)",
+     "Macchiato und Espresso (italienisches Erbe)",
+     "Suwa (selbst gebrautes Hirsebier) und Mies (Honigwein)"
+    ],
+    "streetFoodAndDesserts": [
+     "Himbasha (gewürztes Festbrot)",
+     "Kicha Fit-Fit (gebuttertes Fladenbrot)",
+     "Italienisches Gebäck und Frittata"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Zersenay Tadese (ehemaliger Halbmarathon-Weltrekordler)",
+     "Ghirmay Ghebreslassie (Marathon-Weltmeister 2015)",
+     "Biniam Girmay (Etappensieger der Tour de France, Grünes Trikot 2024)"
+    ],
+    "strongSectors": [
+     "Bergbau (Bisha: Gold, Kupfer, Zink)",
+     "Landwirtschaft und Viehzucht",
+     "Fischerei und Häfen am Roten Meer"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Die Wirtschaft funktioniert nur bar: ausländische Karten, Geldautomaten und internationale Überweisungen gehen nicht. Dollar oder Euro bar mitbringen, bei der Einreise deklarieren und nur bei Himbol tauschen (offiziell ~15 ERN = 1 $). Hotelrechnungen zahlt man oft in Devisen.",
+    "tippingCulture": "Nicht verpflichtend; Aufrunden oder 5-10 % im Restaurant und kleine Trinkgelder für Fahrer und Guides sind willkommen.",
+    "economicPillars": "Bergbau, Landwirtschaft, öffentlicher Dienst, Überweisungen der Diaspora und Fischerei."
+   }
+  },
+  "itin": {
+   "routeName": "Eritrea-Route: Asmara, Keren und Massawa",
+   "routeSummary": "Eine 7-tägige, um Reisegenehmigungen geplante Route vom modernistischen UNESCO-Asmara ins baobabreiche Keren und ins osmanisch geprägte Massawa am Roten Meer.",
+   "totalDays": 7,
+   "idealDurationText": "7-tägige Route",
+   "bestSeason": "Oktober – März",
+   "transportMode": "Wagen mit Fahrer und Genehmigungen + Sammeltaxis in Asmara",
+   "paceLevel": "Gemächlich (Architektur + Kultur + Küste)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stopp 1: Asmara (Modernistische Hauptstadt)",
+     "recommendedDuration": "3 Tage",
+     "durationBadge": "3 Tage",
+     "highlights": [
+      "Tankstelle Fiat Tagliero (1938)",
+      "Harnet Avenue, Cinema Impero und Bar Zilli",
+      "Medebar-Markt",
+      "Kathedrale Enda Mariam und Große Moschee"
+     ],
+     "activities": [
+      "Bei einem Stadtrundgang Art-déco- und futuristische Bauten ansehen.",
+      "In Medebar Handwerkern zusehen, die aus Schrott Werkzeug machen.",
+      "Bei der abendlichen Passeggiata mitgehen und einen Macchiato trinken."
+     ],
+     "foodAndDrinks": [
+      "Zigni mit Injera",
+      "Macchiato",
+      "Pasta (italienisches Erbe)"
+     ],
+     "criticalTips": [
+      "Am ersten Tag beim Tourismusministerium Genehmigungen für die weiteren Stopps beantragen.",
+      "Die Stadt liegt auf 2.300 m; abends wird es kühl."
+     ],
+     "mapsQuery": "Asmara, Eritrea"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stopp 2: Keren (Baobabs & Märkte)",
+     "recommendedDuration": "1 Tag",
+     "durationBadge": "1 Tag",
+     "highlights": [
+      "Mariam Dearit: Schrein in einem Baobab",
+      "Viehmarkt am Montag",
+      "Britische und italienische Kriegsfriedhöfe",
+      "Silberschmiedemarkt"
+     ],
+     "activities": [
+      "Am Montagmorgen den Kamel- und Ziegenhandel auf dem Viehmarkt beobachten.",
+      "Kurz zum Schrein Mariam Dearit spazieren.",
+      "Auf der Rückfahrt die Serpentinen nach Asmara genießen."
+     ],
+     "foodAndDrinks": [
+      "Shiro mit Taita",
+      "Gewürztee (Shahi)"
+     ],
+     "criticalTips": [
+      "Keren ist als Tagesausflug ab Asmara machbar (~2,5 Std.).",
+      "Genehmigung und Passkopie mitführen."
+     ],
+     "mapsQuery": "Keren, Eritrea"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stopp 3: Massawa & Rotes Meer",
+     "recommendedDuration": "3 Tage",
+     "durationBadge": "3 Tage",
+     "highlights": [
+      "Altstadt aus osmanischer und ägyptischer Zeit (Inseln Taulud und Batse)",
+      "Scheich-Hanafi-Moschee",
+      "Der zerstörte Kaiserpalast",
+      "Strand Gurgusum und Bootsfahrt zu den Dahlak-Inseln (mit Genehmigung)"
+     ],
+     "activities": [
+      "Durch die aus Korallenstein gebauten Gassen der Altstadt laufen.",
+      "Abends am Hafen Fisch nach jemenitischer Art essen.",
+      "Mit Genehmigung einen Schnorchelausflug zu den Dahlak-Inseln machen."
+     ],
+     "foodAndDrinks": [
+      "Asa (Fisch nach jemenitischer Art)",
+      "Ful mit warmem Brot",
+      "Frischer Fruchtsaft"
+     ],
+     "criticalTips": [
+      "Juni – September bis 45 °C; diese Monate meiden.",
+      "Hafen und Militärgelände nicht fotografieren."
+     ],
+     "mapsQuery": "Massawa, Eritrea"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Zigni (scharfer Berbere-Fleischeintopf) mit Injera / Taita",
+     "Shiro (Kichererbsenmehl-Eintopf)",
+     "Ful (Saubohnen zum Frühstück)"
+    ],
+    "drinks": [
+     "Bun (traditionelle Kaffeezeremonie)",
+     "Macchiato und Espresso (italienisches Erbe)",
+     "Suwa (selbst gebrautes Hirsebier) und Mies (Honigwein)"
+    ],
+    "streetFoods": [
+     "Himbasha (gewürztes Festbrot)",
+     "Kicha Fit-Fit (gebuttertes Fladenbrot)",
+     "Italienisches Gebäck und Frittata"
+    ],
+    "diningAdvice": "Asmaras italienische Cafés und Konditoreien sind günstig und gut; in traditionellen Lokalen isst man Injera mit der rechten Hand von einer Platte. In Fastenzeiten (orthodoxe Fasten, Ramadan) ändern sich die Karten."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Genug Bargeld in Dollar/Euro für die ganze Reise",
+     "Passkopien und Passfotos (für Genehmigungen)",
+     "Offline-Karten und Bücher (kein Internet)",
+     "Pullover für Asmara, Sonnenschutz für Massawa"
+    ],
+    "safetyAndEtiquette": [
+     "Gespräche über Politik, Nationaldienst und Regierung meiden.",
+     "Keine Orte besuchen, die nicht in der Genehmigung stehen."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "L"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Typ C mit zwei Rundstiften und italienischer Typ L; die meisten türkischen Stecker passen in C, für dicke F-Stecker hilft ein schmaler Adapter."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Leitungswasser ist nicht trinkbar; versiegeltes Flaschenwasser trinken und in Massawa viel trinken.",
+    "vaccines": [
+     "Hepatitis A und Typhus",
+     "Gelbfieber: Nachweis bei Einreise aus Risikoländern",
+     "Malaria: Risiko im Tiefland (Massawa, westliche Ebenen), nicht in Asmara",
+     "Meningitis: für die Trockenzeit erwägen"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "114"
+   },
+   "tipping": {
+    "custom": "Freiwillig; 5-10 % oder Aufrunden reicht.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "Trinkgeld in Nakfa geben; für Fahrer ein paar Dollar pro Tag."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Keine Mehrwertsteuererstattung für Touristen",
+    "minSpend": "Entfällt",
+    "customsNote": "Eritrea erstattet Touristen keine Steuern. Devisenerklärung bei Einreise ist Pflicht, bei Ausreise werden Wechselbelege geprüft. Nakfa dürfen nicht ausgeführt werden, Antiquitäten ebenso nicht."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "Entfällt",
+    "topCarriers": [
+     "EriTel"
+    ],
+    "airportSimTrapWarning": "Internationale eSIMs und Roaming funktionieren in Eritrea nicht; eine EriTel-SIM erfordert für Ausländer eine Genehmigung, mobile Daten gibt es kaum. Angehörige vorab informieren, dass Sie offline sind."
+   },
+   "touristScams": [
+    {
+     "title": "Schwarzmarkt-Wechsel",
+     "desc": "Wer einen besseren Kurs verspricht, kann Ihnen hohe Strafen und Beschlagnahme einbringen.",
+     "tip": "Nur bei Himbol tauschen und Belege aufheben."
+    },
+    {
+     "title": "Tour ohne Genehmigung",
+     "desc": "Fahrer, die sagen „keine Genehmigung nötig“, bringen Sie an Kontrollen in Schwierigkeiten.",
+     "tip": "Genehmigungen über das Tourismusministerium oder eine registrierte Agentur einholen."
+    },
+    {
+     "title": "Touristen-Taxipreis",
+     "desc": "Private Taxis verlangen von Ausländern ein Vielfaches des lokalen Preises.",
+     "tip": "Sammeltaxis nutzen oder den Preis im Hotel erfragen und vorab vereinbaren."
+    }
+   ]
+  }
+ },
+ "es": {
+  "insights": {
+   "currency": "Nakfa eritreo (ERN)",
+   "plugType": "Tipo C, L (230V, 50Hz)",
+   "bestMonths": "Octubre – marzo: seco y templado en el altiplano como Asmara (15–25 °C) y sin el calor estival (40 °C+) de Massawa y la costa del mar Rojo. La época de lluvias del altiplano es de junio a septiembre.",
+   "safety": {
+    "safetyScore": 40,
+    "safetyLevel": "Precaución Aconsejada",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60",
+    "crimeRateSummary": "La delincuencia callejera en Asmara es muy baja; las limitaciones reales son oficiales. Para salir de la capital hace falta un permiso del Ministerio de Turismo, las fronteras con Etiopía y Yibuti están cerradas y hay riesgo de minas, y la asistencia consular es limitada; los avisos oficiales recomiendan reconsiderar el viaje.",
+    "commonScams": [
+     "Ofertas de cambio no oficiales (ilegales y con fuertes multas)",
+     "Personas que ofrecen “tours informales” sin permiso fuera de la ciudad",
+     "Taxis que piden tarifas fijas altas al turista"
+    ],
+    "safeTravelTips": [
+     "Obtenga permisos del Ministerio de Turismo para cada viaje fuera de Asmara y muéstrelos en los controles.",
+     "Declare su divisa al entrar, cambie solo en las oficinas oficiales Himbol y guarde los recibos.",
+     "No fotografíe nunca instalaciones militares, puentes ni edificios oficiales; evite conversaciones políticas."
+    ],
+    "emergencyNumbers": {
+     "police": "113",
+     "ambulance": "114",
+     "general": "113"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Muy limitada: los datos móviles prácticamente no existen para visitantes; solo cibercafés en Asmara y wifi lento de hoteles.",
+    "costPerGbUsd": "No aplica (cibercafé ~1 $/hora)",
+    "esimAvailability": "No hay (eSIM internacional y roaming no funcionan)",
+    "bestCarriers": [
+     "EriTel"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Deficiente (buses y taxis compartidos en Asmara)",
+    "costLevel": "Barato (transporte público) / caro (coche privado con permiso)",
+    "singleTicketUsd": "0.10 - 0.30 $ (bus urbano / taxi compartido)",
+    "dailyPassUsd": "No existe",
+    "popularRideApps": [
+     "Sin apps – taxis compartidos",
+     "Taxis por contrato y conductores vía hotel"
+    ],
+    "taxiAdvice": "Los taxis compartidos de ruta fija en Asmara son muy baratos; pacte el precio del taxi privado. Los buses interurbanos van llenos y lentos; un coche con conductor y permisos es lo más cómodo. El histórico tren de vapor Asmara–Massawa solo circula con chárter de grupo."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "40 - 70 $",
+    "dailyBudgetMidrangeUsd": "90 - 160 $",
+    "budgetMealUsd": "3 - 8 $",
+    "coffeeUsd": "0.50 - 1.50 $",
+    "waterBottleUsd": "0.70 - 1.50 $",
+    "hostelDormUsd": "No hay hostales; pensiones básicas 15 - 30 $",
+    "hotel3StarUsd": "50 - 120 $",
+    "flightCostIndex": "Alto (pocas conexiones)",
+    "flightTip": "Asmara tiene vuelos limitados de aerolíneas como Turkish Airlines, flydubai, EgyptAir y Saudia; los horarios cambian a menudo, compruébelos. Calcule el efectivo antes de volar: allí no se pueden usar tarjetas."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Los saludos son largos y cálidos; los conocidos se tocan el hombro y a los mayores se les respeta mucho.",
+     "Si le invitan a la ceremonia del café, lo cortés es tomar las tres tazas (awel, kalay, bereka).",
+     "Se come de la bandeja común con la mano derecha; dar un bocado al invitado (gursha) es muestra de afecto.",
+     "En Asmara existe la “passeggiata” vespertina y una cultura de café italiana; vista arreglado y recatado."
+    ],
+    "festivals": [
+     "Día de la Independencia (24 de mayo)",
+     "Meskel (Hallazgo de la Vera Cruz, 27 de septiembre)",
+     "Timket (Epifanía, 19 de enero) y Eid al-Fitr"
+    ],
+    "lifestyle": "Asmara es una capital tranquila, limpia y muy segura; la definen los edificios modernistas de la época colonial italiana, la cultura del espresso y el macchiato y las calles llenas de bicicletas. Cristianos y musulmanes conviven en armonía."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Asmara modernista (UNESCO): Fiat Tagliero, Cinema Impero",
+     "Mercado Medebar (artesanos del reciclaje)",
+     "Casco antiguo de Massawa (edificios otomanos y egipcios)",
+     "Islas Dahlak (permiso aparte)",
+     "Keren y el santuario de Mariam Dearit",
+     "Sitio antiguo de Qohaito"
+    ],
+    "bestSeasons": "Octubre – marzo",
+    "travelStyleTip": "Organice el viaje desde Asmara; solicite el primer día los permisos para Massawa, Keren y Qohaito (tardan 1–2 días). Prepárese para llevar mucho efectivo y pasar días sin internet."
+   },
+   "religion": {
+    "primaryReligions": "Cristianos ~50 % (sobre todo ortodoxos tewahedo, además de católicos y luteranos) y musulmanes suníes ~50 %",
+    "respectNorms": "En las iglesias ortodoxas se entra descalzo y las mujeres cubren el pelo; algunos monasterios (Debre Bizen) no admiten mujeres. Evite las mezquitas en horas de oración.",
+    "sacredSites": [
+     "Catedral ortodoxa de Enda Mariam (Asmara)",
+     "Catedral católica de Asmara (Nuestra Señora del Rosario)",
+     "Gran Mezquita Al Khulafa Al Rashiudin (Asmara)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "No hay un único idioma oficial; el tigriña, el árabe y el inglés son lenguas de trabajo. Se hablan nueve lenguas étnicas (tigré, saho, afar, bilen…) y los mayores suelen saber italiano.",
+    "englishProficiency": "Medio; al ser idioma educativo, jóvenes y comerciantes de Asmara hablan inglés básico.",
+    "phrases": [
+     {
+      "phrase": "ሰላም (selam)",
+      "meaning": "Hola (tigriña)",
+      "translation": "Hola",
+      "pronunciation": "seh-LAHM"
+     },
+     {
+      "phrase": "ከመይ ኣለኻ? (kemey aleka?)",
+      "meaning": "¿Qué tal? (a un hombre; a una mujer: ከመይ ኣለኺ kemey aleki)",
+      "translation": "¿Qué tal?",
+      "pronunciation": "KEH-mey a-LEH-ka"
+     },
+     {
+      "phrase": "የቐንየለይ (yeqenyeley)",
+      "meaning": "Gracias (tigriña)",
+      "translation": "Gracias",
+      "pronunciation": "yeh-k’en-yeh-LEY"
+     },
+     {
+      "phrase": "ክንደይ እዩ? (kndey iyu?)",
+      "meaning": "¿Cuánto cuesta? (tigriña)",
+      "translation": "¿Cuánto?",
+      "pronunciation": "KIN-dey IH-yu"
+     },
+     {
+      "phrase": "ሕራይ (ḥray)",
+      "meaning": "Vale / De acuerdo (tigriña)",
+      "translation": "Vale",
+      "pronunciation": "h-RAI"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "La región fue la puerta costera del reino de Aksum; Massawa formó parte de la provincia otomana de Habesh en el siglo XVI y luego pasó a dominio egipcio. Italia fundó la colonia de Eritrea en 1890 y construyó Asmara como ciudad modernista. Siguió la administración británica en 1941 y la federación con Etiopía en 1952; tras una larga guerra de independencia, el país se independizó formalmente el 24 de mayo de 1993.",
+    "milestones": [
+     "1557: Massawa pasa a dominio otomano",
+     "1890: fundación de la colonia italiana de Eritrea",
+     "1993: Independencia (24 de mayo)",
+     "2017: Asmara, Patrimonio Mundial de la UNESCO"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Zigni (guiso picante con berbere) con injera / taita",
+     "Shiro (guiso de harina de garbanzo)",
+     "Ful (habas del desayuno)"
+    ],
+    "traditionalDrinks": [
+     "Bun (ceremonia tradicional del café)",
+     "Macchiato y espresso (herencia italiana)",
+     "Suwa (cerveza casera de sorgo) y mies (vino de miel)"
+    ],
+    "streetFoodAndDesserts": [
+     "Himbasha (pan festivo especiado)",
+     "Kicha fit-fit (pan troceado con mantequilla)",
+     "Pastelería italiana y frittata"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Zersenay Tadese (ex plusmarquista mundial de medio maratón)",
+     "Ghirmay Ghebreslassie (campeón mundial de maratón 2015)",
+     "Biniam Girmay (ganador de etapas del Tour, maillot verde 2024)"
+    ],
+    "strongSectors": [
+     "Minería (Bisha: oro, cobre, zinc)",
+     "Agricultura y ganadería",
+     "Pesca y puertos del mar Rojo"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "La economía es solo en efectivo: no funcionan tarjetas extranjeras, cajeros ni transferencias internacionales. Traiga dólares o euros, declárelos al entrar y cambie solo en Himbol (oficial ~15 ERN = 1 $). Los hoteles suelen cobrarse en divisas.",
+    "tippingCulture": "No obligatoria; redondear o dejar 5-10 % y pequeñas propinas a conductores y guías se agradece.",
+    "economicPillars": "Minería, agricultura, servicios públicos, remesas de la diáspora y pesca."
+   }
+  },
+  "itin": {
+   "routeName": "Ruta por Eritrea: Asmara, Keren y Massawa",
+   "routeSummary": "Ruta de 7 días, planificada en torno a los permisos, desde la Asmara modernista (UNESCO) hasta Keren, con sus baobabs, y Massawa, de aire otomano, en el mar Rojo.",
+   "totalDays": 7,
+   "idealDurationText": "Ruta de 7 días",
+   "bestSeason": "Octubre – marzo",
+   "transportMode": "Coche con conductor y permisos + taxis compartidos en Asmara",
+   "paceLevel": "Tranquilo (arquitectura + cultura + costa)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Asmara (capital modernista)",
+     "recommendedDuration": "3 días",
+     "durationBadge": "3 días",
+     "highlights": [
+      "Gasolinera Fiat Tagliero (1938)",
+      "Avenida Harnet, Cinema Impero y Bar Zilli",
+      "Mercado Medebar",
+      "Catedral de Enda Mariam y Gran Mezquita"
+     ],
+     "activities": [
+      "Haga un paseo para ver edificios art déco y futuristas.",
+      "Vea en Medebar a artesanos que convierten chatarra en herramientas.",
+      "Súmese a la passeggiata y tome un macchiato en un café."
+     ],
+     "foodAndDrinks": [
+      "Zigni con injera",
+      "Macchiato",
+      "Pasta (herencia italiana)"
+     ],
+     "criticalTips": [
+      "El primer día, solicite en el Ministerio de Turismo los permisos para las demás paradas.",
+      "La ciudad está a 2.300 m; las noches son frescas."
+     ],
+     "mapsQuery": "Asmara, Eritrea"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Keren (baobabs y mercados)",
+     "recommendedDuration": "1 día",
+     "durationBadge": "1 día",
+     "highlights": [
+      "Mariam Dearit: santuario dentro de un baobab",
+      "Mercado de ganado del lunes",
+      "Cementerios de guerra británico e italiano",
+      "Mercado de plateros"
+     ],
+     "activities": [
+      "Vea el comercio de camellos y cabras del lunes por la mañana.",
+      "Camine hasta Mariam Dearit.",
+      "Disfrute de la sinuosa carretera de montaña de vuelta a Asmara."
+     ],
+     "foodAndDrinks": [
+      "Shiro con taita",
+      "Té especiado (shahi)"
+     ],
+     "criticalTips": [
+      "Keren se visita en el día desde Asmara (~2,5 h).",
+      "Lleve el permiso y una copia del pasaporte."
+     ],
+     "mapsQuery": "Keren, Eritrea"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Massawa y el mar Rojo",
+     "recommendedDuration": "3 días",
+     "durationBadge": "3 días",
+     "highlights": [
+      "Casco antiguo otomano y egipcio (islas Taulud y Batse)",
+      "Mezquita del jeque Hanafi",
+      "El Palacio Imperial en ruinas",
+      "Playa Gurgusum y excursión a Dahlak (con permiso)"
+     ],
+     "activities": [
+      "Pasee por las calles de piedra coralina del casco antiguo.",
+      "Cene en el puerto pescado al horno estilo yemení.",
+      "Con permiso, haga esnórquel en las islas Dahlak."
+     ],
+     "foodAndDrinks": [
+      "Asa (pescado al horno yemení)",
+      "Ful con pan caliente",
+      "Zumo natural"
+     ],
+     "criticalTips": [
+      "Entre junio y septiembre se alcanzan 45 °C; evite esos meses.",
+      "No fotografíe el puerto ni las zonas militares."
+     ],
+     "mapsQuery": "Massawa, Eritrea"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Zigni (guiso picante con berbere) con injera / taita",
+     "Shiro (guiso de harina de garbanzo)",
+     "Ful (habas del desayuno)"
+    ],
+    "drinks": [
+     "Bun (ceremonia tradicional del café)",
+     "Macchiato y espresso (herencia italiana)",
+     "Suwa (cerveza casera de sorgo) y mies (vino de miel)"
+    ],
+    "streetFoods": [
+     "Himbasha (pan festivo especiado)",
+     "Kicha fit-fit (pan troceado con mantequilla)",
+     "Pastelería italiana y frittata"
+    ],
+    "diningAdvice": "Los cafés y pastelerías italianos de Asmara son baratos y buenos; en los restaurantes tradicionales la injera se come de una bandeja común con la mano derecha. Los menús cambian en los ayunos (ortodoxos, Ramadán)."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Efectivo suficiente en dólares/euros para todo el viaje",
+     "Copias del pasaporte y fotos (para permisos)",
+     "Mapas y libros sin conexión (no hay internet)",
+     "Jersey para Asmara, protección solar para Massawa"
+    ],
+    "safetyAndEtiquette": [
+     "Evite hablar de política, servicio nacional o gobierno.",
+     "No vaya a lugares que no figuren en su permiso."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "L"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Enchufes tipo C y tipo L italiano; la mayoría de enchufes turcos entran en el C, para los F gruesos conviene un adaptador fino."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "El agua del grifo no es potable; beba agua embotellada y manténgase hidratado en Massawa.",
+    "vaccines": [
+     "Hepatitis A y fiebre tifoidea",
+     "Fiebre amarilla: certificado si llega de un país de riesgo",
+     "Malaria: riesgo en tierras bajas (Massawa, llanuras occidentales), no en Asmara",
+     "Meningitis: considerar en la estación seca"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "114"
+   },
+   "tipping": {
+    "custom": "Opcional; basta con 5-10 % o redondear.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "Dé la propina en nakfas; a los conductores, unos dólares al día."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Sin devolución de IVA para turistas",
+    "minSpend": "No aplica",
+    "customsNote": "Eritrea no devuelve impuestos a turistas. La declaración de divisas al entrar es obligatoria y al salir pueden pedir los recibos de cambio. No se pueden sacar nakfas ni antigüedades."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "No aplica",
+    "topCarriers": [
+     "EriTel"
+    ],
+    "airportSimTrapWarning": "En Eritrea no funcionan eSIM ni roaming; una SIM de EriTel requiere permiso para extranjeros y casi no hay datos móviles. Avise a su familia de que estará desconectado."
+   },
+   "touristScams": [
+    {
+     "title": "Cambio en el mercado negro",
+     "desc": "Quien promete mejor cambio puede acarrearle multas fuertes y confiscación.",
+     "tip": "Cambie solo en Himbol y guarde los recibos."
+    },
+    {
+     "title": "Tour sin permiso",
+     "desc": "Los conductores que dicen “no hace falta permiso” le meterán en problemas en los controles.",
+     "tip": "Obtenga los permisos en el Ministerio o mediante agencia registrada."
+    },
+    {
+     "title": "Tarifa de taxi para turistas",
+     "desc": "Los taxis privados pueden pedir a extranjeros varias veces el precio local.",
+     "tip": "Use taxis compartidos o consulte el precio en el hotel y páctelo antes."
+    }
+   ]
+  }
+ },
+ "ru": {
+  "insights": {
+   "currency": "Эритрейская накфа (ERN)",
+   "plugType": "Тип C, L (230V, 50Hz)",
+   "bestMonths": "Октябрь – март: в нагорье (Асмэра) сухо и тепло (15–25 °C), а в Массауа и на побережье Красного моря спадает летняя жара (40 °C+). Сезон дождей в нагорье — июнь – сентябрь.",
+   "safety": {
+    "safetyScore": 40,
+    "safetyLevel": "Требуется Осторожность",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60",
+    "crimeRateSummary": "Уличная преступность в Асмэре очень низкая; главные ограничения — официальные. Для выезда из столицы нужно разрешение Министерства туризма, приграничные районы с Эфиопией и Джибути закрыты и заминированы, консульская помощь ограничена; официальные рекомендации советуют пересмотреть поездку.",
+    "commonScams": [
+     "Неофициальный обмен валюты (незаконно, суровые наказания)",
+     "Предложения «неофициальных туров» за город без разрешений",
+     "Таксисты называют туристам высокую фиксированную цену"
+    ],
+    "safeTravelTips": [
+     "Оформляйте разрешение Минтуризма на каждую поездку за пределы Асмэры и показывайте его на блокпостах.",
+     "Задекларируйте валюту при въезде, меняйте только в официальных пунктах Himbol и храните чеки.",
+     "Никогда не снимайте военные объекты, мосты и госучреждения; избегайте разговоров о политике."
+    ],
+    "emergencyNumbers": {
+     "police": "113",
+     "ambulance": "114",
+     "general": "113"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Очень ограничено: мобильного интернета для туристов фактически нет; только интернет-кафе в Асмэре и медленный Wi-Fi в отелях.",
+    "costPerGbUsd": "Н/д (интернет-кафе ~1 $/час)",
+    "esimAvailability": "Нет (международные eSIM и роуминг не работают)",
+    "bestCarriers": [
+     "EriTel"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Слабый (городские автобусы и маршрутные такси в Асмэре)",
+    "costLevel": "Дёшево (общественный транспорт) / дорого (частная машина с разрешением)",
+    "singleTicketUsd": "0.10 - 0.30 $ (автобус / маршрутное такси)",
+    "dailyPassUsd": "Нет",
+    "popularRideApps": [
+     "Приложений нет – маршрутные такси",
+     "Такси по договорённости и водители через отель"
+    ],
+    "taxiAdvice": "Маршрутные такси в Асмэре очень дешёвые; цену частного такси оговаривайте заранее. Междугородние автобусы переполнены и медленны; удобнее всего машина с водителем и разрешениями. Исторический паровоз Асмэра — Массауа ходит только по групповому заказу."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "40 - 70 $",
+    "dailyBudgetMidrangeUsd": "90 - 160 $",
+    "budgetMealUsd": "3 - 8 $",
+    "coffeeUsd": "0.50 - 1.50 $",
+    "waterBottleUsd": "0.70 - 1.50 $",
+    "hostelDormUsd": "Хостелов нет; простые пансионы 15 - 30 $",
+    "hotel3StarUsd": "50 - 120 $",
+    "flightCostIndex": "Высокий (мало рейсов)",
+    "flightTip": "В Асмэру ограниченно летают Turkish Airlines, flydubai, EgyptAir и Saudia; расписание часто меняется — проверяйте. Рассчитайте наличные заранее: карты в стране не работают."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Приветствия долгие и тёплые; знакомые касаются плечами, к старшим относятся с особым почтением.",
+     "На кофейной церемонии вежливо выпить все три чашки (авель, калай, берека).",
+     "Едят с общего блюда правой рукой; угостить гостя кусочком из рук (гурша) — знак расположения.",
+     "В Асмэре есть вечерняя «пасседжата» и итальянская кофейная культура; одевайтесь опрятно и скромно."
+    ],
+    "festivals": [
+     "День независимости (24 мая)",
+     "Мескель (Обретение Креста, 27 сентября)",
+     "Тимкет (Крещение, 19 января) и Ураза-байрам"
+    ],
+    "lifestyle": "Асмэра — спокойная, чистая и очень безопасная столица: модернистская архитектура итальянской эпохи, культура эспрессо и макиато, улицы с велосипедами. Христиане и мусульмане живут в согласии."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Модернистская Асмэра (ЮНЕСКО): Фиат Тальеро, кинотеатр «Империо»",
+     "Рынок Медебар (мастера вторичной переработки)",
+     "Старый город Массауа (постройки османской и египетской эпох)",
+     "Острова Дахлак (отдельное разрешение)",
+     "Керен и святилище Мариам-Деарит",
+     "Древний город Кохайто"
+    ],
+    "bestSeasons": "Октябрь – март",
+    "travelStyleTip": "Стройте маршрут вокруг Асмэры; подавайте на разрешения в Массауа, Керен и Кохайто в первый же день (1–2 дня). Готовьтесь к большому количеству наличных и дням без интернета."
+   },
+   "religion": {
+    "primaryReligions": "Христиане ~50 % (в основном Эритрейская православная церковь Тэвахедо, а также католики и лютеране) и мусульмане-сунниты ~50 %",
+    "respectNorms": "В православные храмы входят без обуви, женщины покрывают голову; в некоторые монастыри (Дебре-Бизен) женщинам нельзя. Не посещайте мечети во время намаза.",
+    "sacredSites": [
+     "Православный собор Энда-Мариам (Асмэра)",
+     "Католический собор Асмэры (Богоматери Розария)",
+     "Соборная мечеть Аль-Хулафа-ар-Рашидин (Асмэра)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Единого официального языка нет; рабочие языки — тигринья, арабский и английский. В стране девять этнических языков (тигре, сахо, афарский, билен и др.), пожилые часто знают итальянский.",
+    "englishProficiency": "Средний; английский — язык обучения, поэтому молодёжь и торговцы в Асмэре говорят на базовом уровне.",
+    "phrases": [
+     {
+      "phrase": "ሰላም (selam)",
+      "meaning": "Привет (тигринья)",
+      "translation": "Привет",
+      "pronunciation": "seh-LAHM"
+     },
+     {
+      "phrase": "ከመይ ኣለኻ? (kemey aleka?)",
+      "meaning": "Как дела? (мужчине; женщине: ከመይ ኣለኺ кемей алеки)",
+      "translation": "Как дела?",
+      "pronunciation": "KEH-mey a-LEH-ka"
+     },
+     {
+      "phrase": "የቐንየለይ (yeqenyeley)",
+      "meaning": "Спасибо (тигринья)",
+      "translation": "Спасибо",
+      "pronunciation": "yeh-k’en-yeh-LEY"
+     },
+     {
+      "phrase": "ክንደይ እዩ? (kndey iyu?)",
+      "meaning": "Сколько стоит? (тигринья)",
+      "translation": "Сколько?",
+      "pronunciation": "KIN-dey IH-yu"
+     },
+     {
+      "phrase": "ሕራይ (ḥray)",
+      "meaning": "Хорошо / Ладно (тигринья)",
+      "translation": "Хорошо",
+      "pronunciation": "h-RAI"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Регион был морскими воротами Аксумского царства; в XVI веке Массауа вошла в османский эялет Хабеш, затем перешла под власть Египта. В 1890 году Италия основала колонию Эритрея и выстроила Асмэру как модернистский город. В 1941 году последовало британское управление, в 1952-м — федерация с Эфиопией; после долгой войны за независимость страна официально стала независимой 24 мая 1993 года.",
+    "milestones": [
+     "1557: Массауа переходит под власть Османов",
+     "1890: основание итальянской колонии Эритрея",
+     "1993: независимость (24 мая)",
+     "2017: Асмэра внесена в список ЮНЕСКО"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Цигни (острое рагу с берберой) с инджерой / тайтой",
+     "Широ (рагу из нутовой муки)",
+     "Фул (бобы на завтрак)"
+    ],
+    "traditionalDrinks": [
+     "Бун (традиционная кофейная церемония)",
+     "Макиато и эспрессо (итальянское наследие)",
+     "Сува (домашнее пиво из сорго) и мьес (медовое вино)"
+    ],
+    "streetFoodAndDesserts": [
+     "Химбаша (пряный праздничный хлеб)",
+     "Кича фит-фит (лепёшка с пряным маслом)",
+     "Итальянская выпечка и фриттата"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Зерсенай Тадесе (экс-рекордсмен мира в полумарафоне)",
+     "Гирмай Гебрселассие (чемпион мира по марафону 2015)",
+     "Бинием Гирмай (победитель этапов «Тур де Франс», зелёная майка 2024)"
+    ],
+    "strongSectors": [
+     "Горнодобыча (Биша: золото, медь, цинк)",
+     "Сельское хозяйство и животноводство",
+     "Рыболовство и порты Красного моря"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Экономика полностью наличная: иностранные карты, банкоматы и переводы не работают. Везите наличные доллары или евро, декларируйте их при въезде и меняйте только в Himbol (официально ~15 ERN = 1 $). Отели часто оплачиваются в валюте.",
+    "tippingCulture": "Не обязательны; округлить счёт или оставить 5–10 %, а также немного дать водителю и гиду — приятно.",
+    "economicPillars": "Горнодобыча, сельское хозяйство, госсектор, денежные переводы диаспоры и рыболовство."
+   }
+  },
+  "itin": {
+   "routeName": "Маршрут по Эритрее: Асмэра, Керен и Массауа",
+   "routeSummary": "7-дневный маршрут с учётом разрешений: модернистская Асмэра (ЮНЕСКО), Керен с баобабами и Массауа с османским колоритом на Красном море.",
+   "totalDays": 7,
+   "idealDurationText": "Маршрут на 7 дней",
+   "bestSeason": "Октябрь – март",
+   "transportMode": "Машина с водителем и разрешениями + маршрутки в Асмэре",
+   "paceLevel": "Спокойный (архитектура + культура + побережье)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Остановка 1: Асмэра (модернистская столица)",
+     "recommendedDuration": "3 дня",
+     "durationBadge": "3 дня",
+     "highlights": [
+      "Заправка «Фиат Тальеро» (1938)",
+      "Проспект Харнет, кинотеатр «Империо» и бар «Зилли»",
+      "Рынок Медебар",
+      "Собор Энда-Мариам и Соборная мечеть"
+     ],
+     "activities": [
+      "Прогуляйтесь по городу, рассматривая ар-деко и футуристическую архитектуру.",
+      "Посмотрите в Медебаре, как мастера делают инструменты из металлолома.",
+      "Присоединитесь к вечерней пасседжате и выпейте макиато в кафе."
+     ],
+     "foodAndDrinks": [
+      "Цигни с инджерой",
+      "Макиато",
+      "Паста (итальянское наследие)"
+     ],
+     "criticalTips": [
+      "В первый день подайте в Минтуризма заявку на разрешения для остальных остановок.",
+      "Город на высоте 2 300 м — вечерами прохладно."
+     ],
+     "mapsQuery": "Asmara, Eritrea"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Остановка 2: Керен (баобабы и рынки)",
+     "recommendedDuration": "1 день",
+     "durationBadge": "1 день",
+     "highlights": [
+      "Мариам-Деарит: святилище в стволе баобаба",
+      "Скотный рынок по понедельникам",
+      "Британское и итальянское военные кладбища",
+      "Рынок серебряных дел мастеров"
+     ],
+     "activities": [
+      "В понедельник утром посмотрите торговлю верблюдами и козами.",
+      "Прогуляйтесь к святилищу Мариам-Деарит.",
+      "По дороге обратно любуйтесь горным серпантином."
+     ],
+     "foodAndDrinks": [
+      "Широ с тайтой",
+      "Пряный чай (шахи)"
+     ],
+     "criticalTips": [
+      "Керен можно посетить за день из Асмэры (~2,5 ч).",
+      "Возьмите разрешение и копию паспорта."
+     ],
+     "mapsQuery": "Keren, Eritrea"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Остановка 3: Массауа и Красное море",
+     "recommendedDuration": "3 дня",
+     "durationBadge": "3 дня",
+     "highlights": [
+      "Старый город османской и египетской эпох (острова Таулуд и Батсе)",
+      "Мечеть шейха Ханафи",
+      "Разрушенный Императорский дворец",
+      "Пляж Гургусум и лодочная поездка на Дахлак (с разрешением)"
+     ],
+     "activities": [
+      "Пройдитесь по улочкам старого города из кораллового камня.",
+      "Вечером попробуйте в порту рыбу по-йеменски.",
+      "С разрешением отправьтесь на снорклинг к островам Дахлак."
+     ],
+     "foodAndDrinks": [
+      "Аса (рыба по-йеменски)",
+      "Фул с горячим хлебом",
+      "Свежий сок"
+     ],
+     "criticalTips": [
+      "С июня по сентябрь до 45 °C — не ездите в эти месяцы.",
+      "Не фотографируйте порт и военные объекты."
+     ],
+     "mapsQuery": "Massawa, Eritrea"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Цигни (острое рагу с берберой) с инджерой / тайтой",
+     "Широ (рагу из нутовой муки)",
+     "Фул (бобы на завтрак)"
+    ],
+    "drinks": [
+     "Бун (традиционная кофейная церемония)",
+     "Макиато и эспрессо (итальянское наследие)",
+     "Сува (домашнее пиво из сорго) и мьес (медовое вино)"
+    ],
+    "streetFoods": [
+     "Химбаша (пряный праздничный хлеб)",
+     "Кича фит-фит (лепёшка с пряным маслом)",
+     "Итальянская выпечка и фриттата"
+    ],
+    "diningAdvice": "Итальянские кафе и кондитерские Асмэры недороги и хороши; в традиционных ресторанах инджеру едят правой рукой с общего блюда. В посты (православные, Рамадан) меню меняется."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Наличные доллары/евро на всю поездку",
+     "Копии паспорта и фото (для разрешений)",
+     "Офлайн-карты и книги (интернета нет)",
+     "Свитер для Асмэры, защита от солнца для Массауа"
+    ],
+    "safetyAndEtiquette": [
+     "Не обсуждайте политику, нацслужбу и правительство.",
+     "Не посещайте места, не указанные в разрешении."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "L"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Розетки типа C и итальянского типа L; большинство турецких вилок подходит к C, для толстых вилок F пригодится тонкий адаптер."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Водопроводную воду не пьют; пейте бутилированную и не допускайте обезвоживания в Массауа.",
+    "vaccines": [
+     "Гепатит A и брюшной тиф",
+     "Жёлтая лихорадка: сертификат при въезде из страны риска",
+     "Малярия: риск в низинах (Массауа, западные равнины), в Асмэре нет",
+     "Менингит: стоит рассмотреть в сухой сезон"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "114"
+   },
+   "tipping": {
+    "custom": "По желанию; достаточно 5–10 % или округлить.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "Чаевые давайте в накфах; водителю — несколько долларов в день."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Возврат НДС туристам не предусмотрен",
+    "minSpend": "Не применяется",
+    "customsNote": "Возврата налогов туристам нет. Декларация валюты при въезде обязательна, при выезде могут проверить чеки обмена. Вывоз накфы и антиквариата запрещён."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "Н/д",
+    "topCarriers": [
+     "EriTel"
+    ],
+    "airportSimTrapWarning": "В Эритрее не работают eSIM и роуминг; SIM EriTel для иностранцев выдают по разрешению, мобильного интернета почти нет. Предупредите близких, что будете без связи."
+   },
+   "touristScams": [
+    {
+     "title": "Чёрный рынок валюты",
+     "desc": "Обещания выгодного курса могут обернуться крупным штрафом и конфискацией.",
+     "tip": "Меняйте только в Himbol и храните чеки."
+    },
+    {
+     "title": "Тур без разрешения",
+     "desc": "Водители, уверяющие, что «разрешение не нужно», подставят вас на блокпостах.",
+     "tip": "Оформляйте разрешения через Минтуризма или зарегистрированное агентство."
+    },
+    {
+     "title": "Туристический тариф такси",
+     "desc": "Частные такси могут назвать иностранцу цену в разы выше местной.",
+     "tip": "Пользуйтесь маршрутками или узнайте цену в отеле и договоритесь заранее."
+    }
+   ]
+  }
+ }
+}
