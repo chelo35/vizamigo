@@ -1,0 +1,1937 @@
+{
+ "tr": {
+  "insights": {
+   "currency": "Hong Kong Doları (HKD)",
+   "plugType": "Tip G (220V, 50Hz)",
+   "bestMonths": "Ekim – Aralık (serin ve kuru); Haziran – Eylül sıcak, nemli ve tayfunlu",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Güvenli",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Sokak suçu oranı çok düşüktür ve gece yürümek güvenlidir. Resmî uyarılar, yerel yasalar (ulusal güvenlik mevzuatı dahil) konusunda bilinçli olmayı ve gösterilerden uzak durmayı önerir.",
+    "commonScams": [
+     "Tsim Sha Tsui’de sahte saat ve terzi çığırtkanları",
+     "Bağış isteyip muska veren sahte keşişler",
+     "Taksimetreyi açmayan veya kısa mesafeyi reddeden taksiler"
+    ],
+    "safeTravelTips": [
+     "Octopus kartı alın; MTR, otobüs, feribot ve marketlerde geçer.",
+     "Tayfun sinyali T8 ve üzeri ilan edildiğinde ulaşım ve işletmeler kapanabilir; uyarıları takip edin.",
+     "Pasaportunuzu yanınızda taşıyın ve kamusal gösterilerden uzak durun."
+    ],
+    "emergencyNumbers": {
+     "police": "999",
+     "ambulance": "999",
+     "general": "999"
+    }
+   },
+   "internet": {
+    "networkCoverage": "%99 4G/5G; metroda ve tünellerde bile kesintisiz",
+    "costPerGbUsd": "~1 - 3 $",
+    "esimAvailability": "Mükemmel",
+    "bestCarriers": [
+     "CSL",
+     "SmarTone",
+     "3 Hong Kong",
+     "China Mobile Hong Kong"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Mükemmel",
+    "costLevel": "Pahalı",
+    "singleTicketUsd": "0.60 - 4 $",
+    "dailyPassUsd": "8 - 10 $",
+    "popularRideApps": [
+     "Uber",
+     "HKTaxi",
+     "Octopus",
+     "MTR Mobile / Citymapper"
+    ],
+    "taxiAdvice": "Kırmızı (şehir), yeşil (Yeni Bölgeler) ve mavi (Lantau) taksiler taksimetrelidir; tünel ve köprü ücretleri ayrıca eklenir. Uber ve HKTaxi uygulamaları da çalışır."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "60 - 90 $",
+    "dailyBudgetMidrangeUsd": "180 - 300 $",
+    "budgetMealUsd": "8 - 15 $",
+    "coffeeUsd": "4 - 6 $",
+    "waterBottleUsd": "1 - 1.50 $",
+    "hostelDormUsd": "25 - 45 $",
+    "hotel3StarUsd": "110 - 200 $",
+    "flightCostIndex": "Orta Seviye",
+    "flightTip": "Türk Hava Yolları İstanbul–Hong Kong arasında direkt uçar; Körfez aktarmalı rotalar da rekabetçi fiyatlar sunar."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "MTR’de yeme-içme yasaktır; yürüyen merdivenlerde sağda durun.",
+     "Kartvizit ve parayı iki elle verin; sırada beklemeye özen gösterin.",
+     "Masada çubukları pirince dikey saplamayın; çaydanlığın kapağını aralık bırakmak tazeleme isteği demektir.",
+     "Dim sum’da çay dolduran kişiye iki parmakla masaya hafifçe vurarak teşekkür edilir."
+    ],
+    "festivals": [
+     "Çin Yeni Yılı (Ocak/Şubat)",
+     "Cheung Chau Çörek Festivali (Nisan/Mayıs)",
+     "Ejderha Teknesi Festivali (Haziran)"
+    ],
+    "lifestyle": "Gökdelenler arasında hızlı şehir hayatı, çay evi (cha chaan teng) kültürü ve şehrin hemen dışında başlayan yürüyüş parkurları."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Victoria Tepesi (The Peak)",
+     "Star Ferry ve Victoria Limanı",
+     "Tian Tan Buda ve Ngong Ping 360 teleferiği",
+     "Temple Street Gece Pazarı",
+     "Dragon’s Back yürüyüş parkuru",
+     "Tai O balıkçı köyü"
+    ],
+    "bestSeasons": "Ekim – Aralık (serin ve kuru); Haziran – Eylül sıcak, nemli ve tayfunlu",
+    "travelStyleTip": "Toplu taşıma dünya standartlarındadır; Octopus kartla MTR, tramvay ve feribotları birleştirin."
+   },
+   "religion": {
+    "primaryReligions": "Nüfusun çoğu resmî bir dine bağlı değildir; Budizm, Taoizm ve halk inançları yaygın, Hristiyanlık ~%12.",
+    "respectNorms": "Tapınaklarda tütsü sunaklarına dokunmayın, ibadet edenleri fotoğraflarken izin isteyin.",
+    "sacredSites": [
+     "Wong Tai Sin Tapınağı",
+     "Man Mo Tapınağı",
+     "Po Lin Manastırı"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Çince (Kantonca konuşulur) ve İngilizce resmîdir.",
+    "englishProficiency": "İyi; tabelalar iki dillidir, otel ve restoranlarda İngilizce rahatça kullanılır.",
+    "phrases": [
+     {
+      "phrase": "你好",
+      "meaning": "Merhaba",
+      "translation": "Merhaba",
+      "pronunciation": "néih hóu"
+     },
+     {
+      "phrase": "多謝",
+      "meaning": "Teşekkürler (hediye/iyilik için)",
+      "translation": "Teşekkürler (hediye/iyilik için)",
+      "pronunciation": "dō jeh"
+     },
+     {
+      "phrase": "唔該",
+      "meaning": "Lütfen / Teşekkürler (hizmet için)",
+      "translation": "Lütfen / Teşekkürler (hizmet için)",
+      "pronunciation": "m̀h gōi"
+     },
+     {
+      "phrase": "幾多錢？",
+      "meaning": "Ne kadar?",
+      "translation": "Ne kadar?",
+      "pronunciation": "géi dō chín?"
+     },
+     {
+      "phrase": "埋單",
+      "meaning": "Hesap lütfen",
+      "translation": "Hesap lütfen",
+      "pronunciation": "màaih dāan"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "1842 Nanking Antlaşması’yla Hong Kong Adası İngiltere’ye bırakıldı, 1898’de Yeni Bölgeler 99 yıllığına kiralandı. 1997’de Çin Halk Cumhuriyeti’ne devredilerek Özel İdari Bölge oldu.",
+    "milestones": [
+     "1842: Nanking Antlaşması",
+     "1898: Yeni Bölgeler’in kiralanması",
+     "1941-1945: Japon işgali",
+     "1997: Çin’e devir"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Dim sum (har gow, siu mai)",
+     "Kızarmış kaz ve char siu (ballı kızarmış domuz)",
+     "Wonton erişte çorbası"
+    ],
+    "traditionalDrinks": [
+     "Hong Kong sütlü çayı",
+     "Yuenyeung (kahve + çay karışımı)",
+     "Bitki çayı (leung cha)"
+    ],
+    "streetFoodAndDesserts": [
+     "Yumurtalı waffle (gai daan jai)",
+     "Yumurtalı tart (dan tat)",
+     "Körili balık köftesi"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Bruce Lee (dövüş sanatçısı, aktör)",
+     "Jackie Chan (aktör)",
+     "Wong Kar-wai (yönetmen)"
+    ],
+    "strongSectors": [
+     "Finans ve bankacılık",
+     "Ticaret, liman ve lojistik",
+     "Turizm ve profesyonel hizmetler"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Octopus kart, temassız kart, Apple Pay/Google Pay ve AlipayHK yaygındır; küçük çay evleri ve minibüsler nakit veya Octopus ister.",
+    "tippingCulture": "Restoranlarda faturaya %10 servis eklenir; taksilerde küsurat yuvarlanır.",
+    "economicPillars": "Uluslararası finans, ticaret ve lojistik, turizm, profesyonel hizmetler."
+   }
+  },
+  "itin": {
+   "routeName": "Hong Kong Kent ve Doğa Rotası: Lantau, Hong Kong Adası, Kowloon ve Sai Kung",
+   "routeSummary": "Lantau’daki dev Buda heykelinden Hong Kong Adası’nın gökdelen manzarasına, Kowloon’un pazarlarından Sai Kung’un sahillerine uzanan 5 günlük rota.",
+   "totalDays": 5,
+   "idealDurationText": "5 Günlük Hong Kong Rotası",
+   "bestSeason": "Ekim – Aralık (serin ve kuru); Haziran – Eylül sıcak, nemli ve tayfunlu",
+   "transportMode": "MTR + Star Ferry, tramvay ve otobüs (Octopus kart)",
+   "paceLevel": "Tempolu (Şehir + Doğa)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "1. Durak: Lantau Adası",
+     "recommendedDuration": "1 Gün (Buda ve köy)",
+     "durationBadge": "1 Gün",
+     "highlights": [
+      "Tian Tan Buda (Big Buddha)",
+      "Po Lin Manastırı",
+      "Ngong Ping 360 teleferiği",
+      "Tai O balıkçı köyü"
+     ],
+     "activities": [
+      "Teleferikle Ngong Ping’e çıkın.",
+      "Po Lin Manastırı’nda vejetaryen öğle yemeği yiyin.",
+      "Tai O’da kazık evler arasında tekne turu yapın."
+     ],
+     "foodAndDrinks": [
+      "Vejetaryen manastır yemeği",
+      "Kurutulmuş deniz ürünleri"
+     ],
+     "criticalTips": [
+      "Havalimanına yakın olduğu için varış veya dönüş gününe koyabilirsiniz.",
+      "Rüzgârlı havalarda teleferik kapanabilir."
+     ],
+     "mapsQuery": "Ngong Ping, Lantau Island, Hong Kong"
+    },
+    {
+     "stopNumber": 2,
+     "name": "2. Durak: Hong Kong Adası (Central ve The Peak)",
+     "recommendedDuration": "2 Gün (Şehir merkezi)",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "Victoria Tepesi ve Peak Tram",
+      "Central–Mid-Levels yürüyen merdiveni",
+      "Man Mo Tapınağı ve Hollywood Road",
+      "Ding Ding tramvayı"
+     ],
+     "activities": [
+      "Gün batımında The Peak’ten limanı izleyin.",
+      "Ding Ding tramvayıyla adayı baştan başa geçin.",
+      "Soho ve PMQ’da kafe ve tasarım dükkânlarını gezin."
+     ],
+     "foodAndDrinks": [
+      "Wonton erişte",
+      "Hong Kong sütlü çayı",
+      "Yumurtalı tart"
+     ],
+     "criticalTips": [
+      "Peak Tram kuyruğu uzundur; biletinizi önceden alın.",
+      "Hafta sonları otobüsle The Peak’e çıkmak daha hızlı olabilir."
+     ],
+     "mapsQuery": "Central, Hong Kong Island"
+    },
+    {
+     "stopNumber": 3,
+     "name": "3. Durak: Kowloon (Tsim Sha Tsui ve Mong Kok)",
+     "recommendedDuration": "1 Gün (Pazarlar ve liman)",
+     "durationBadge": "1 Gün",
+     "highlights": [
+      "Tsim Sha Tsui sahil yolu ve Symphony of Lights",
+      "Temple Street Gece Pazarı",
+      "Mong Kok kadın pazarı ve kuş bahçesi",
+      "Wong Tai Sin Tapınağı"
+     ],
+     "activities": [
+      "Star Ferry ile limanı geçin.",
+      "Akşam saat 20.00’de ışık gösterisini izleyin.",
+      "Gece pazarında sokak lezzetlerini tadın."
+     ],
+     "foodAndDrinks": [
+      "Dim sum",
+      "Yumurtalı waffle",
+      "Körili balık köftesi"
+     ],
+     "criticalTips": [
+      "Sahte saat ve terzi çığırtkanlarını görmezden gelin.",
+      "Mong Kok’ta kalabalıkta değerli eşyalarınıza dikkat edin."
+     ],
+     "mapsQuery": "Tsim Sha Tsui, Kowloon, Hong Kong"
+    },
+    {
+     "stopNumber": 4,
+     "name": "4. Durak: Sai Kung",
+     "recommendedDuration": "1 Gün (Sahil ve doğa)",
+     "durationBadge": "1 Gün",
+     "highlights": [
+      "Sai Kung sahil kasabası",
+      "Hong Kong UNESCO Küresel Jeoparkı",
+      "Tai Long Wan plajları"
+     ],
+     "activities": [
+      "Kai-to teknesiyle adalara geçin.",
+      "Altıgen volkanik kayalıkları görün.",
+      "Rıhtımdaki balık restoranlarında yemek yiyin."
+     ],
+     "foodAndDrinks": [
+      "Taze deniz ürünleri",
+      "Bitki çayı"
+     ],
+     "criticalTips": [
+      "Yürüyüşlerde bol su taşıyın; yaz sıcağı ağırdır.",
+      "Uzak plajlar için dönüş teknesi saatini önceden öğrenin."
+     ],
+     "mapsQuery": "Sai Kung, Hong Kong"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Dim sum (har gow, siu mai)",
+     "Kızarmış kaz ve char siu (ballı kızarmış domuz)",
+     "Wonton erişte çorbası"
+    ],
+    "drinks": [
+     "Hong Kong sütlü çayı",
+     "Yuenyeung (kahve + çay karışımı)",
+     "Bitki çayı (leung cha)"
+    ],
+    "streetFoods": [
+     "Yumurtalı waffle (gai daan jai)",
+     "Yumurtalı tart (dan tat)",
+     "Körili balık köftesi"
+    ],
+    "diningAdvice": "Cha chaan teng’ler ekonomik ve otantiktir; kalabalık restoranlarda masa paylaşmak normaldir."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "G tipi priz adaptörü",
+     "Octopus kart",
+     "Şemsiye (güneş ve yağmur)",
+     "Rahat yürüyüş ayakkabısı"
+    ],
+    "safetyAndEtiquette": [
+     "MTR’de yemeyin içmeyin ve sırada bekleyin.",
+     "Yerel yasalara saygı gösterin, gösterilerden uzak durun."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "İngiliz tipi üç dikdörtgen pimli G tipi prizler (220V); Türkiye fişleri uymaz, adaptör gerekir."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Şebeke suyu Dünya Sağlık Örgütü standartlarını karşılar ve içilebilir; eski binalarda tesisat nedeniyle kaynatmak veya filtre kullanmak tercih edilir.",
+    "vaccines": [
+     "Rutin aşılar (tetanoz-difteri, KKK)",
+     "Hepatit A",
+     "Yaz aylarında dang hummasına karşı sivrisinek önlemi"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "999"
+   },
+   "tipping": {
+    "custom": "Restoranlar faturaya genellikle %10 servis ekler; ayrıca bahşiş beklenmez.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Taksilerde küsuratı yuvarlayın; otel taşıyıcılarına HK$10-20 verilir."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Hong Kong’da KDV veya satış vergisi yoktur",
+    "minSpend": "Uygulanmaz",
+    "customsNote": "Serbest liman olduğu için iade edilecek KDV yoktur; fiyatlar vergisizdir. Türkiye’ye dönüşte gümrük muafiyet limitlerine dikkat edin."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1 - $3",
+    "topCarriers": [
+     "CSL",
+     "SmarTone",
+     "3 Hong Kong",
+     "China Mobile Hong Kong"
+    ],
+    "airportSimTrapWarning": "Havalimanındaki 1010/CSL ve diğer operatör standları ile 7-Eleven’daki turist SIM’leri uygun fiyatlıdır; eSIM de yaygındır."
+   },
+   "touristScams": [
+    {
+     "title": "Sahte Saat ve Terzi Çığırtkanı",
+     "desc": "Tsim Sha Tsui’de \"copy watch\" veya \"ucuz takım elbise\" diye yaklaşan çığırtkanlar.",
+     "tip": "Kibarca reddedin ve dükkânlara takip etmeyin."
+    },
+    {
+     "title": "Sahte Keşiş",
+     "desc": "Muska verip bağış isteyen sahte keşişler.",
+     "tip": "Muskayı almayın, yürümeye devam edin."
+    },
+    {
+     "title": "Taksi Fiyatı",
+     "desc": "Bazı taksiler turistlere taksimetresiz sabit fiyat söyler veya kısa yolu reddeder.",
+     "tip": "Taksimetreyi açtırın; sorun olursa plaka numarasını not alıp 1823’e şikâyet edin."
+    }
+   ]
+  }
+ },
+ "en": {
+  "insights": {
+   "currency": "Hong Kong Dollar (HKD)",
+   "plugType": "Type G (220V, 50Hz)",
+   "bestMonths": "October – December (cool and dry); June – September is hot, humid and typhoon-prone",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Safe",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Street crime is very low and walking at night is safe. Official advice urges awareness of local laws (including national security legislation) and avoiding demonstrations.",
+    "commonScams": [
+     "Fake watch and tailor touts in Tsim Sha Tsui",
+     "Fake monks handing out amulets and asking for donations",
+     "Taxis not using the meter or refusing short trips"
+    ],
+    "safeTravelTips": [
+     "Get an Octopus card; it works on MTR, buses, ferries and in shops.",
+     "When typhoon signal T8 or higher is raised, transport and businesses may close; follow the warnings.",
+     "Carry your passport and stay away from public demonstrations."
+    ],
+    "emergencyNumbers": {
+     "police": "999",
+     "ambulance": "999",
+     "general": "999"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99% 4G/5G; seamless even in the metro and tunnels",
+    "costPerGbUsd": "~1 - 3 $",
+    "esimAvailability": "Excellent",
+    "bestCarriers": [
+     "CSL",
+     "SmarTone",
+     "3 Hong Kong",
+     "China Mobile Hong Kong"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Excellent",
+    "costLevel": "Expensive",
+    "singleTicketUsd": "0.60 - 4 $",
+    "dailyPassUsd": "8 - 10 $",
+    "popularRideApps": [
+     "Uber",
+     "HKTaxi",
+     "Octopus",
+     "MTR Mobile / Citymapper"
+    ],
+    "taxiAdvice": "Red (urban), green (New Territories) and blue (Lantau) taxis are metered; tunnel and bridge tolls are added. Uber and HKTaxi also work."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "60 - 90 $",
+    "dailyBudgetMidrangeUsd": "180 - 300 $",
+    "budgetMealUsd": "8 - 15 $",
+    "coffeeUsd": "4 - 6 $",
+    "waterBottleUsd": "1 - 1.50 $",
+    "hostelDormUsd": "25 - 45 $",
+    "hotel3StarUsd": "110 - 200 $",
+    "flightCostIndex": "Moderate",
+    "flightTip": "Turkish Airlines flies direct Istanbul–Hong Kong; Gulf-connecting routes are also competitively priced."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Eating and drinking on the MTR is banned; stand on the right on escalators.",
+     "Hand over business cards and money with both hands and always queue.",
+     "Do not stick chopsticks upright in rice; leaving the teapot lid ajar asks for a refill.",
+     "At dim sum, tap two fingers on the table to thank whoever pours your tea."
+    ],
+    "festivals": [
+     "Chinese New Year (January/February)",
+     "Cheung Chau Bun Festival (April/May)",
+     "Dragon Boat Festival (June)"
+    ],
+    "lifestyle": "Fast city life among skyscrapers, cha chaan teng cafe culture and hiking trails starting just outside the city."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Victoria Peak (The Peak)",
+     "Star Ferry and Victoria Harbour",
+     "Tian Tan Buddha and Ngong Ping 360 cable car",
+     "Temple Street Night Market",
+     "Dragon’s Back hiking trail",
+     "Tai O fishing village"
+    ],
+    "bestSeasons": "October – December (cool and dry); June – September is hot, humid and typhoon-prone",
+    "travelStyleTip": "Public transport is world-class; combine MTR, trams and ferries with an Octopus card."
+   },
+   "religion": {
+    "primaryReligions": "Most people follow no formal religion; Buddhism, Taoism and folk beliefs are widespread, Christianity ~12%.",
+    "respectNorms": "Do not touch incense altars in temples and ask before photographing worshippers.",
+    "sacredSites": [
+     "Wong Tai Sin Temple",
+     "Man Mo Temple",
+     "Po Lin Monastery"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Chinese (Cantonese spoken) and English are official.",
+    "englishProficiency": "Good; signs are bilingual and English is easily used in hotels and restaurants.",
+    "phrases": [
+     {
+      "phrase": "你好",
+      "meaning": "Hello",
+      "translation": "Hello",
+      "pronunciation": "néih hóu"
+     },
+     {
+      "phrase": "多謝",
+      "meaning": "Thank you (for a gift/favour)",
+      "translation": "Thank you (for a gift/favour)",
+      "pronunciation": "dō jeh"
+     },
+     {
+      "phrase": "唔該",
+      "meaning": "Please / Thanks (for a service)",
+      "translation": "Please / Thanks (for a service)",
+      "pronunciation": "m̀h gōi"
+     },
+     {
+      "phrase": "幾多錢？",
+      "meaning": "How much?",
+      "translation": "How much?",
+      "pronunciation": "géi dō chín?"
+     },
+     {
+      "phrase": "埋單",
+      "meaning": "The bill, please",
+      "translation": "The bill, please",
+      "pronunciation": "màaih dāan"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Hong Kong Island was ceded to Britain under the 1842 Treaty of Nanking, and the New Territories were leased for 99 years in 1898. In 1997 it was transferred to the People’s Republic of China as a Special Administrative Region.",
+    "milestones": [
+     "1842: Treaty of Nanking",
+     "1898: New Territories leased",
+     "1941-1945: Japanese occupation",
+     "1997: Transfer to China"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Dim sum (har gow, siu mai)",
+     "Roast goose and char siu (honey-roasted pork)",
+     "Wonton noodle soup"
+    ],
+    "traditionalDrinks": [
+     "Hong Kong milk tea",
+     "Yuenyeung (coffee and tea mix)",
+     "Herbal tea (leung cha)"
+    ],
+    "streetFoodAndDesserts": [
+     "Egg waffles (gai daan jai)",
+     "Egg tart (dan tat)",
+     "Curry fish balls"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Bruce Lee (martial artist, actor)",
+     "Jackie Chan (actor)",
+     "Wong Kar-wai (film director)"
+    ],
+    "strongSectors": [
+     "Finance and banking",
+     "Trade, port and logistics",
+     "Tourism and professional services"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Octopus, contactless cards, Apple Pay/Google Pay and AlipayHK are common; small cafes and minibuses want cash or Octopus.",
+    "tippingCulture": "Restaurants add a 10% service charge; round up in taxis.",
+    "economicPillars": "International finance, trade and logistics, tourism, professional services."
+   }
+  },
+  "itin": {
+   "routeName": "Hong Kong City & Nature Route: Lantau, Hong Kong Island, Kowloon and Sai Kung",
+   "routeSummary": "A 5-day route from Lantau’s giant Buddha to Hong Kong Island’s skyline, Kowloon’s markets and the beaches of Sai Kung.",
+   "totalDays": 5,
+   "idealDurationText": "5-Day Hong Kong Itinerary",
+   "bestSeason": "October – December (cool and dry); June – September is hot, humid and typhoon-prone",
+   "transportMode": "MTR + Star Ferry, trams and buses (Octopus card)",
+   "paceLevel": "Fast-paced (City & Nature)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stop 1: Lantau Island",
+     "recommendedDuration": "1 Day (Buddha and village)",
+     "durationBadge": "1 Day",
+     "highlights": [
+      "Tian Tan Buddha (Big Buddha)",
+      "Po Lin Monastery",
+      "Ngong Ping 360 cable car",
+      "Tai O fishing village"
+     ],
+     "activities": [
+      "Ride the cable car up to Ngong Ping.",
+      "Have a vegetarian lunch at Po Lin Monastery.",
+      "Take a boat tour among Tai O’s stilt houses."
+     ],
+     "foodAndDrinks": [
+      "Vegetarian monastery meal",
+      "Dried seafood"
+     ],
+     "criticalTips": [
+      "Being close to the airport, it fits your arrival or departure day.",
+      "The cable car may close in strong wind."
+     ],
+     "mapsQuery": "Ngong Ping, Lantau Island, Hong Kong"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stop 2: Hong Kong Island (Central and The Peak)",
+     "recommendedDuration": "2 Days (City centre)",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "Victoria Peak and Peak Tram",
+      "Central–Mid-Levels Escalator",
+      "Man Mo Temple and Hollywood Road",
+      "Ding Ding tram"
+     ],
+     "activities": [
+      "Watch the harbour from The Peak at sunset.",
+      "Cross the island end to end on the Ding Ding tram.",
+      "Browse cafes and design shops in Soho and PMQ."
+     ],
+     "foodAndDrinks": [
+      "Wonton noodles",
+      "Hong Kong milk tea",
+      "Egg tart"
+     ],
+     "criticalTips": [
+      "Peak Tram queues are long; buy tickets in advance.",
+      "At weekends taking the bus up to The Peak can be faster."
+     ],
+     "mapsQuery": "Central, Hong Kong Island"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stop 3: Kowloon (Tsim Sha Tsui and Mong Kok)",
+     "recommendedDuration": "1 Day (Markets and harbour)",
+     "durationBadge": "1 Day",
+     "highlights": [
+      "Tsim Sha Tsui promenade and Symphony of Lights",
+      "Temple Street Night Market",
+      "Mong Kok Ladies’ Market and Bird Garden",
+      "Wong Tai Sin Temple"
+     ],
+     "activities": [
+      "Cross the harbour on the Star Ferry.",
+      "Watch the 8 pm light show.",
+      "Taste street food at the night market."
+     ],
+     "foodAndDrinks": [
+      "Dim sum",
+      "Egg waffles",
+      "Curry fish balls"
+     ],
+     "criticalTips": [
+      "Ignore fake watch and tailor touts.",
+      "Watch your valuables in Mong Kok crowds."
+     ],
+     "mapsQuery": "Tsim Sha Tsui, Kowloon, Hong Kong"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Stop 4: Sai Kung",
+     "recommendedDuration": "1 Day (Coast and nature)",
+     "durationBadge": "1 Day",
+     "highlights": [
+      "Sai Kung seaside town",
+      "Hong Kong UNESCO Global Geopark",
+      "Tai Long Wan beaches"
+     ],
+     "activities": [
+      "Take a kai-to boat to the islands.",
+      "See the hexagonal volcanic rock columns.",
+      "Eat at the seafood restaurants on the pier."
+     ],
+     "foodAndDrinks": [
+      "Fresh seafood",
+      "Herbal tea"
+     ],
+     "criticalTips": [
+      "Carry plenty of water on hikes; summer heat is intense.",
+      "Check return boat times for remote beaches."
+     ],
+     "mapsQuery": "Sai Kung, Hong Kong"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Dim sum (har gow, siu mai)",
+     "Roast goose and char siu (honey-roasted pork)",
+     "Wonton noodle soup"
+    ],
+    "drinks": [
+     "Hong Kong milk tea",
+     "Yuenyeung (coffee and tea mix)",
+     "Herbal tea (leung cha)"
+    ],
+    "streetFoods": [
+     "Egg waffles (gai daan jai)",
+     "Egg tart (dan tat)",
+     "Curry fish balls"
+    ],
+    "diningAdvice": "Cha chaan tengs are cheap and authentic; sharing tables in busy restaurants is normal."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Type G plug adapter",
+     "Octopus card",
+     "Umbrella (sun and rain)",
+     "Comfortable walking shoes"
+    ],
+    "safetyAndEtiquette": [
+     "Do not eat or drink on the MTR and always queue.",
+     "Respect local laws and stay away from demonstrations."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "British-style type G sockets with three rectangular pins (220V); Turkish plugs do not fit, so an adapter is needed."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Mains water meets WHO standards and is drinkable; in older buildings boiling or filtering is preferred because of plumbing.",
+    "vaccines": [
+     "Routine vaccines (tetanus-diphtheria, MMR)",
+     "Hepatitis A",
+     "Mosquito precautions against dengue in summer"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "999"
+   },
+   "tipping": {
+    "custom": "Restaurants usually add a 10% service charge; no extra tip is expected.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Round up in taxis; give hotel porters HK$10-20."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Hong Kong has no VAT or sales tax",
+    "minSpend": "Not applicable",
+    "customsNote": "As a free port there is no VAT to refund; prices are tax-free. Watch the duty-free allowances when returning to Turkey."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1 - $3",
+    "topCarriers": [
+     "CSL",
+     "SmarTone",
+     "3 Hong Kong",
+     "China Mobile Hong Kong"
+    ],
+    "airportSimTrapWarning": "Operator desks at the airport (1010/CSL and others) and tourist SIMs at 7-Eleven are well priced; eSIM is also widespread."
+   },
+   "touristScams": [
+    {
+     "title": "Fake Watch and Tailor Touts",
+     "desc": "Touts in Tsim Sha Tsui offering \"copy watches\" or \"cheap suits\".",
+     "tip": "Politely decline and do not follow them into shops."
+    },
+    {
+     "title": "Fake Monk",
+     "desc": "Fake monks hand out amulets and ask for donations.",
+     "tip": "Do not take the amulet and keep walking."
+    },
+    {
+     "title": "Taxi Fare",
+     "desc": "Some taxis quote tourists a fixed price without the meter or refuse short trips.",
+     "tip": "Insist on the meter; if there is a problem, note the plate number and complain to 1823."
+    }
+   ]
+  }
+ },
+ "de": {
+  "insights": {
+   "currency": "Hongkong-Dollar (HKD)",
+   "plugType": "Typ G (220V, 50Hz)",
+   "bestMonths": "Oktober – Dezember (kühl und trocken); Juni – September heiß, feucht und taifungefährdet",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Sicher",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Die Straßenkriminalität ist sehr gering, nachts zu gehen ist sicher. Offizielle Hinweise raten, die lokalen Gesetze (einschließlich des Gesetzes zur nationalen Sicherheit) zu kennen und Demonstrationen zu meiden.",
+    "commonScams": [
+     "Schlepper für gefälschte Uhren und Maßanzüge in Tsim Sha Tsui",
+     "Falsche Mönche, die Amulette verteilen und Spenden verlangen",
+     "Taxis, die das Taxameter nicht einschalten oder kurze Fahrten ablehnen"
+    ],
+    "safeTravelTips": [
+     "Eine Octopus-Karte besorgen; sie gilt in MTR, Bussen, Fähren und Geschäften.",
+     "Ab Taifunsignal T8 können Verkehr und Geschäfte schließen; Warnungen verfolgen.",
+     "Den Pass mitführen und öffentliche Demonstrationen meiden."
+    ],
+    "emergencyNumbers": {
+     "police": "999",
+     "ambulance": "999",
+     "general": "999"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99 % 4G/5G; selbst in Metro und Tunneln lückenlos",
+    "costPerGbUsd": "~1 - 3 $",
+    "esimAvailability": "Ausgezeichnet",
+    "bestCarriers": [
+     "CSL",
+     "SmarTone",
+     "3 Hong Kong",
+     "China Mobile Hong Kong"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Ausgezeichnet",
+    "costLevel": "Teuer",
+    "singleTicketUsd": "0.60 - 4 $",
+    "dailyPassUsd": "8 - 10 $",
+    "popularRideApps": [
+     "Uber",
+     "HKTaxi",
+     "Octopus",
+     "MTR Mobile / Citymapper"
+    ],
+    "taxiAdvice": "Rote (Stadt), grüne (New Territories) und blaue (Lantau) Taxis fahren mit Taxameter; Tunnel- und Brückengebühren kommen hinzu. Uber und HKTaxi funktionieren ebenfalls."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "60 - 90 $",
+    "dailyBudgetMidrangeUsd": "180 - 300 $",
+    "budgetMealUsd": "8 - 15 $",
+    "coffeeUsd": "4 - 6 $",
+    "waterBottleUsd": "1 - 1.50 $",
+    "hostelDormUsd": "25 - 45 $",
+    "hotel3StarUsd": "110 - 200 $",
+    "flightCostIndex": "Moderat",
+    "flightTip": "Turkish Airlines fliegt direkt Istanbul–Hongkong; Verbindungen über den Golf sind ebenfalls preislich attraktiv."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Essen und Trinken in der MTR ist verboten; auf Rolltreppen rechts stehen.",
+     "Visitenkarten und Geld mit beiden Händen überreichen und stets anstehen.",
+     "Stäbchen nicht senkrecht in den Reis stecken; ein halb offener Teekannendeckel bedeutet \"bitte nachfüllen\".",
+     "Beim Dim Sum klopft man mit zwei Fingern auf den Tisch, um für das Nachschenken zu danken."
+    ],
+    "festivals": [
+     "Chinesisches Neujahr (Januar/Februar)",
+     "Cheung Chau Bun Festival (April/Mai)",
+     "Drachenbootfest (Juni)"
+    ],
+    "lifestyle": "Schnelles Stadtleben zwischen Wolkenkratzern, Cha-chaan-teng-Cafékultur und Wanderwege direkt vor der Stadt."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Victoria Peak (The Peak)",
+     "Star Ferry und Victoria Harbour",
+     "Tian-Tan-Buddha und Seilbahn Ngong Ping 360",
+     "Nachtmarkt Temple Street",
+     "Wanderweg Dragon’s Back",
+     "Fischerdorf Tai O"
+    ],
+    "bestSeasons": "Oktober – Dezember (kühl und trocken); Juni – September heiß, feucht und taifungefährdet",
+    "travelStyleTip": "Der Nahverkehr ist Weltklasse; MTR, Trams und Fähren mit der Octopus-Karte kombinieren."
+   },
+   "religion": {
+    "primaryReligions": "Die meisten Menschen gehören keiner formellen Religion an; Buddhismus, Daoismus und Volksglaube sind verbreitet, Christentum ~12 %.",
+    "respectNorms": "In Tempeln Räucheraltäre nicht berühren und vor Fotos von Betenden fragen.",
+    "sacredSites": [
+     "Wong-Tai-Sin-Tempel",
+     "Man-Mo-Tempel",
+     "Kloster Po Lin"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Chinesisch (gesprochen wird Kantonesisch) und Englisch sind Amtssprachen.",
+    "englishProficiency": "Gut; Schilder sind zweisprachig, in Hotels und Restaurants kommt man mit Englisch gut zurecht.",
+    "phrases": [
+     {
+      "phrase": "你好",
+      "meaning": "Hallo",
+      "translation": "Hallo",
+      "pronunciation": "néih hóu"
+     },
+     {
+      "phrase": "多謝",
+      "meaning": "Danke (für Geschenk/Gefallen)",
+      "translation": "Danke (für Geschenk/Gefallen)",
+      "pronunciation": "dō jeh"
+     },
+     {
+      "phrase": "唔該",
+      "meaning": "Bitte / Danke (für eine Dienstleistung)",
+      "translation": "Bitte / Danke (für eine Dienstleistung)",
+      "pronunciation": "m̀h gōi"
+     },
+     {
+      "phrase": "幾多錢？",
+      "meaning": "Wie viel?",
+      "translation": "Wie viel?",
+      "pronunciation": "géi dō chín?"
+     },
+     {
+      "phrase": "埋單",
+      "meaning": "Die Rechnung, bitte",
+      "translation": "Die Rechnung, bitte",
+      "pronunciation": "màaih dāan"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Mit dem Vertrag von Nanking 1842 wurde Hongkong Island an Großbritannien abgetreten, 1898 die New Territories für 99 Jahre gepachtet. 1997 ging Hongkong als Sonderverwaltungszone an die Volksrepublik China über.",
+    "milestones": [
+     "1842: Vertrag von Nanking",
+     "1898: Pacht der New Territories",
+     "1941-1945: Japanische Besatzung",
+     "1997: Übergabe an China"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Dim Sum (Har Gow, Siu Mai)",
+     "Gebratene Gans und Char Siu (Honig-Schweinebraten)",
+     "Wan-Tan-Nudelsuppe"
+    ],
+    "traditionalDrinks": [
+     "Hongkong-Milchtee",
+     "Yuenyeung (Kaffee-Tee-Mischung)",
+     "Kräutertee (leung cha)"
+    ],
+    "streetFoodAndDesserts": [
+     "Eierwaffeln (gai daan jai)",
+     "Eiertörtchen (dan tat)",
+     "Curry-Fischbällchen"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Bruce Lee (Kampfkünstler, Schauspieler)",
+     "Jackie Chan (Schauspieler)",
+     "Wong Kar-wai (Regisseur)"
+    ],
+    "strongSectors": [
+     "Finanzen und Banken",
+     "Handel, Hafen und Logistik",
+     "Tourismus und freiberufliche Dienste"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Octopus, kontaktlose Karten, Apple Pay/Google Pay und AlipayHK sind üblich; kleine Cafés und Minibusse wollen Bargeld oder Octopus.",
+    "tippingCulture": "Restaurants schlagen 10 % Service auf; im Taxi aufrunden.",
+    "economicPillars": "Internationale Finanzen, Handel und Logistik, Tourismus, freiberufliche Dienstleistungen."
+   }
+  },
+  "itin": {
+   "routeName": "Hongkong Stadt & Natur: Lantau, Hongkong Island, Kowloon und Sai Kung",
+   "routeSummary": "Eine 5-tägige Route vom Riesenbuddha auf Lantau zur Skyline von Hongkong Island, zu den Märkten Kowloons und an die Strände von Sai Kung.",
+   "totalDays": 5,
+   "idealDurationText": "5-Tage-Route durch Hongkong",
+   "bestSeason": "Oktober – Dezember (kühl und trocken); Juni – September heiß, feucht und taifungefährdet",
+   "transportMode": "MTR + Star Ferry, Trams und Busse (Octopus-Karte)",
+   "paceLevel": "Zügig (Stadt & Natur)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stopp 1: Lantau Island",
+     "recommendedDuration": "1 Tag (Buddha und Dorf)",
+     "durationBadge": "1 Tag",
+     "highlights": [
+      "Tian-Tan-Buddha (Big Buddha)",
+      "Kloster Po Lin",
+      "Seilbahn Ngong Ping 360",
+      "Fischerdorf Tai O"
+     ],
+     "activities": [
+      "Mit der Seilbahn nach Ngong Ping hinauffahren.",
+      "Im Kloster Po Lin vegetarisch zu Mittag essen.",
+      "Per Boot zwischen den Pfahlhäusern von Tai O fahren."
+     ],
+     "foodAndDrinks": [
+      "Vegetarisches Klosteressen",
+      "Getrocknete Meeresfrüchte"
+     ],
+     "criticalTips": [
+      "Wegen der Flughafennähe passt es zum An- oder Abreisetag.",
+      "Bei starkem Wind kann die Seilbahn schließen."
+     ],
+     "mapsQuery": "Ngong Ping, Lantau Island, Hong Kong"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stopp 2: Hongkong Island (Central und The Peak)",
+     "recommendedDuration": "2 Tage (Stadtzentrum)",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "Victoria Peak und Peak Tram",
+      "Central–Mid-Levels Escalator",
+      "Man-Mo-Tempel und Hollywood Road",
+      "Ding-Ding-Tram"
+     ],
+     "activities": [
+      "Den Hafen bei Sonnenuntergang vom Peak aus betrachten.",
+      "Mit der Ding-Ding-Tram die ganze Insel durchqueren.",
+      "Cafés und Designläden in Soho und PMQ entdecken."
+     ],
+     "foodAndDrinks": [
+      "Wan-Tan-Nudeln",
+      "Hongkong-Milchtee",
+      "Eiertörtchen"
+     ],
+     "criticalTips": [
+      "Die Schlange zur Peak Tram ist lang; Tickets vorab kaufen.",
+      "Am Wochenende ist der Bus zum Peak oft schneller."
+     ],
+     "mapsQuery": "Central, Hong Kong Island"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stopp 3: Kowloon (Tsim Sha Tsui und Mong Kok)",
+     "recommendedDuration": "1 Tag (Märkte und Hafen)",
+     "durationBadge": "1 Tag",
+     "highlights": [
+      "Uferpromenade Tsim Sha Tsui und Symphony of Lights",
+      "Nachtmarkt Temple Street",
+      "Ladies’ Market und Vogelgarten in Mong Kok",
+      "Wong-Tai-Sin-Tempel"
+     ],
+     "activities": [
+      "Mit der Star Ferry den Hafen überqueren.",
+      "Um 20 Uhr die Lichtshow ansehen.",
+      "Auf dem Nachtmarkt Streetfood probieren."
+     ],
+     "foodAndDrinks": [
+      "Dim Sum",
+      "Eierwaffeln",
+      "Curry-Fischbällchen"
+     ],
+     "criticalTips": [
+      "Schlepper für Uhren und Anzüge ignorieren.",
+      "Im Gedränge von Mong Kok auf Wertsachen achten."
+     ],
+     "mapsQuery": "Tsim Sha Tsui, Kowloon, Hong Kong"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Stopp 4: Sai Kung",
+     "recommendedDuration": "1 Tag (Küste und Natur)",
+     "durationBadge": "1 Tag",
+     "highlights": [
+      "Küstenstädtchen Sai Kung",
+      "Hong Kong UNESCO Global Geopark",
+      "Strände von Tai Long Wan"
+     ],
+     "activities": [
+      "Mit einem Kai-to-Boot zu den Inseln fahren.",
+      "Die sechseckigen Vulkangesteinssäulen ansehen.",
+      "In den Fischrestaurants am Pier essen."
+     ],
+     "foodAndDrinks": [
+      "Frische Meeresfrüchte",
+      "Kräutertee"
+     ],
+     "criticalTips": [
+      "Bei Wanderungen viel Wasser mitnehmen; die Sommerhitze ist stark.",
+      "Für entlegene Strände die Rückfahrzeiten der Boote prüfen."
+     ],
+     "mapsQuery": "Sai Kung, Hong Kong"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Dim Sum (Har Gow, Siu Mai)",
+     "Gebratene Gans und Char Siu (Honig-Schweinebraten)",
+     "Wan-Tan-Nudelsuppe"
+    ],
+    "drinks": [
+     "Hongkong-Milchtee",
+     "Yuenyeung (Kaffee-Tee-Mischung)",
+     "Kräutertee (leung cha)"
+    ],
+    "streetFoods": [
+     "Eierwaffeln (gai daan jai)",
+     "Eiertörtchen (dan tat)",
+     "Curry-Fischbällchen"
+    ],
+    "diningAdvice": "Cha chaan tengs sind günstig und authentisch; Tische zu teilen ist in vollen Lokalen normal."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Steckeradapter Typ G",
+     "Octopus-Karte",
+     "Schirm (Sonne und Regen)",
+     "Bequeme Schuhe"
+    ],
+    "safetyAndEtiquette": [
+     "In der MTR nicht essen oder trinken und anstehen.",
+     "Lokale Gesetze respektieren und Demonstrationen meiden."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Britische Steckdosen Typ G mit drei rechteckigen Stiften (220 V); türkische Stecker passen nicht, ein Adapter ist nötig."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Das Leitungswasser erfüllt die WHO-Standards und ist trinkbar; in älteren Gebäuden wegen der Leitungen lieber abkochen oder filtern.",
+    "vaccines": [
+     "Standardimpfungen (Tetanus-Diphtherie, MMR)",
+     "Hepatitis A",
+     "Im Sommer Mückenschutz gegen Dengue"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "999"
+   },
+   "tipping": {
+    "custom": "Restaurants schlagen meist 10 % Service auf; weiteres Trinkgeld wird nicht erwartet.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Im Taxi aufrunden; Hotelpagen HK$10-20 geben."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Hongkong hat keine MwSt. oder Umsatzsteuer",
+    "minSpend": "Entfällt",
+    "customsNote": "Als Freihafen gibt es keine MwSt. zu erstatten; die Preise sind steuerfrei. Bei der Rückkehr in die Türkei die Freimengen beachten."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1 - $3",
+    "topCarriers": [
+     "CSL",
+     "SmarTone",
+     "3 Hong Kong",
+     "China Mobile Hong Kong"
+    ],
+    "airportSimTrapWarning": "Anbieterstände am Flughafen (1010/CSL und andere) und Touristen-SIMs bei 7-Eleven sind preiswert; eSIM ist ebenfalls verbreitet."
+   },
+   "touristScams": [
+    {
+     "title": "Uhren- und Anzugschlepper",
+     "desc": "Schlepper in Tsim Sha Tsui bieten \"Copy Watches\" oder \"billige Anzüge\" an.",
+     "tip": "Höflich ablehnen und nicht in Läden folgen."
+    },
+    {
+     "title": "Falscher Mönch",
+     "desc": "Falsche Mönche verteilen Amulette und verlangen Spenden.",
+     "tip": "Das Amulett nicht annehmen und weitergehen."
+    },
+    {
+     "title": "Taxipreis",
+     "desc": "Manche Taxis nennen Touristen Festpreise ohne Taxameter oder lehnen kurze Fahrten ab.",
+     "tip": "Auf dem Taxameter bestehen; bei Problemen Kennzeichen notieren und bei 1823 beschweren."
+    }
+   ]
+  }
+ },
+ "es": {
+  "insights": {
+   "currency": "Dólar de Hong Kong (HKD)",
+   "plugType": "Tipo G (220V, 50Hz)",
+   "bestMonths": "Octubre – diciembre (fresco y seco); junio – septiembre es caluroso, húmedo y con tifones",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "La delincuencia callejera es muy baja y caminar de noche es seguro. Los avisos oficiales recomiendan conocer las leyes locales (incluida la legislación de seguridad nacional) y evitar las manifestaciones.",
+    "commonScams": [
+     "Captadores de relojes falsos y sastres en Tsim Sha Tsui",
+     "Falsos monjes que reparten amuletos y piden donativos",
+     "Taxis que no ponen el taxímetro o rechazan trayectos cortos"
+    ],
+    "safeTravelTips": [
+     "Consigue una tarjeta Octopus: sirve en MTR, autobuses, ferris y tiendas.",
+     "Con la señal de tifón T8 o superior pueden cerrar el transporte y los negocios; sigue los avisos.",
+     "Lleva el pasaporte y mantente lejos de manifestaciones públicas."
+    ],
+    "emergencyNumbers": {
+     "police": "999",
+     "ambulance": "999",
+     "general": "999"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99 % 4G/5G; sin cortes incluso en metro y túneles",
+    "costPerGbUsd": "~1 - 3 $",
+    "esimAvailability": "Excelente",
+    "bestCarriers": [
+     "CSL",
+     "SmarTone",
+     "3 Hong Kong",
+     "China Mobile Hong Kong"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Excelente",
+    "costLevel": "Caro",
+    "singleTicketUsd": "0.60 - 4 $",
+    "dailyPassUsd": "8 - 10 $",
+    "popularRideApps": [
+     "Uber",
+     "HKTaxi",
+     "Octopus",
+     "MTR Mobile / Citymapper"
+    ],
+    "taxiAdvice": "Los taxis rojos (ciudad), verdes (Nuevos Territorios) y azules (Lantau) usan taxímetro; se suman peajes de túneles y puentes. Uber y HKTaxi también funcionan."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "60 - 90 $",
+    "dailyBudgetMidrangeUsd": "180 - 300 $",
+    "budgetMealUsd": "8 - 15 $",
+    "coffeeUsd": "4 - 6 $",
+    "waterBottleUsd": "1 - 1.50 $",
+    "hostelDormUsd": "25 - 45 $",
+    "hotel3StarUsd": "110 - 200 $",
+    "flightCostIndex": "Moderado",
+    "flightTip": "Turkish Airlines vuela directo Estambul–Hong Kong; las rutas con escala en el Golfo también tienen precios competitivos."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "En el MTR está prohibido comer y beber; en las escaleras mecánicas colócate a la derecha.",
+     "Entrega tarjetas y dinero con ambas manos y respeta siempre la cola.",
+     "No claves los palillos en vertical en el arroz; dejar la tapa de la tetera entreabierta pide que la rellenen.",
+     "En el dim sum se agradece que te sirvan té dando dos golpecitos con los dedos en la mesa."
+    ],
+    "festivals": [
+     "Año Nuevo chino (enero/febrero)",
+     "Festival de los Bollos de Cheung Chau (abril/mayo)",
+     "Festival del Bote del Dragón (junio)"
+    ],
+    "lifestyle": "Vida urbana trepidante entre rascacielos, cultura de cafeterías cha chaan teng y rutas de senderismo nada más salir de la ciudad."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Victoria Peak (The Peak)",
+     "Star Ferry y puerto Victoria",
+     "Buda Tian Tan y teleférico Ngong Ping 360",
+     "Mercado nocturno de Temple Street",
+     "Sendero Dragon’s Back",
+     "Pueblo pesquero de Tai O"
+    ],
+    "bestSeasons": "Octubre – diciembre (fresco y seco); junio – septiembre es caluroso, húmedo y con tifones",
+    "travelStyleTip": "El transporte público es de primer nivel; combina MTR, tranvías y ferris con la tarjeta Octopus."
+   },
+   "religion": {
+    "primaryReligions": "La mayoría no sigue una religión formal; budismo, taoísmo y creencias populares están muy extendidos, cristianismo ~12 %.",
+    "respectNorms": "No toques los altares de incienso en los templos y pide permiso antes de fotografiar a los fieles.",
+    "sacredSites": [
+     "Templo Wong Tai Sin",
+     "Templo Man Mo",
+     "Monasterio Po Lin"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Chino (se habla cantonés) e inglés son oficiales.",
+    "englishProficiency": "Bueno; los carteles son bilingües y en hoteles y restaurantes el inglés se usa sin problema.",
+    "phrases": [
+     {
+      "phrase": "你好",
+      "meaning": "Hola",
+      "translation": "Hola",
+      "pronunciation": "néih hóu"
+     },
+     {
+      "phrase": "多謝",
+      "meaning": "Gracias (por un regalo/favor)",
+      "translation": "Gracias (por un regalo/favor)",
+      "pronunciation": "dō jeh"
+     },
+     {
+      "phrase": "唔該",
+      "meaning": "Por favor / Gracias (por un servicio)",
+      "translation": "Por favor / Gracias (por un servicio)",
+      "pronunciation": "m̀h gōi"
+     },
+     {
+      "phrase": "幾多錢？",
+      "meaning": "¿Cuánto?",
+      "translation": "¿Cuánto?",
+      "pronunciation": "géi dō chín?"
+     },
+     {
+      "phrase": "埋單",
+      "meaning": "La cuenta, por favor",
+      "translation": "La cuenta, por favor",
+      "pronunciation": "màaih dāan"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "La isla de Hong Kong se cedió a Gran Bretaña con el Tratado de Nankín de 1842 y los Nuevos Territorios se arrendaron por 99 años en 1898. En 1997 pasó a la República Popular China como Región Administrativa Especial.",
+    "milestones": [
+     "1842: Tratado de Nankín",
+     "1898: arrendamiento de los Nuevos Territorios",
+     "1941-1945: ocupación japonesa",
+     "1997: transferencia a China"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Dim sum (har gow, siu mai)",
+     "Ganso asado y char siu (cerdo asado con miel)",
+     "Sopa de fideos con wonton"
+    ],
+    "traditionalDrinks": [
+     "Té con leche de Hong Kong",
+     "Yuenyeung (mezcla de café y té)",
+     "Té de hierbas (leung cha)"
+    ],
+    "streetFoodAndDesserts": [
+     "Gofres de huevo (gai daan jai)",
+     "Tartaleta de huevo (dan tat)",
+     "Bolas de pescado al curry"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Bruce Lee (artista marcial, actor)",
+     "Jackie Chan (actor)",
+     "Wong Kar-wai (director de cine)"
+    ],
+    "strongSectors": [
+     "Finanzas y banca",
+     "Comercio, puerto y logística",
+     "Turismo y servicios profesionales"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Octopus, tarjetas sin contacto, Apple Pay/Google Pay y AlipayHK son habituales; los cafés pequeños y los minibuses piden efectivo u Octopus.",
+    "tippingCulture": "Los restaurantes añaden un 10 % de servicio; en taxis se redondea.",
+    "economicPillars": "Finanzas internacionales, comercio y logística, turismo, servicios profesionales."
+   }
+  },
+  "itin": {
+   "routeName": "Hong Kong ciudad y naturaleza: Lantau, isla de Hong Kong, Kowloon y Sai Kung",
+   "routeSummary": "Ruta de 5 días desde el Buda gigante de Lantau hasta el skyline de la isla de Hong Kong, los mercados de Kowloon y las playas de Sai Kung.",
+   "totalDays": 5,
+   "idealDurationText": "Itinerario de 5 días por Hong Kong",
+   "bestSeason": "Octubre – diciembre (fresco y seco); junio – septiembre es caluroso, húmedo y con tifones",
+   "transportMode": "MTR + Star Ferry, tranvías y autobuses (tarjeta Octopus)",
+   "paceLevel": "Intenso (ciudad y naturaleza)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Isla de Lantau",
+     "recommendedDuration": "1 día (Buda y pueblo)",
+     "durationBadge": "1 día",
+     "highlights": [
+      "Buda Tian Tan (Big Buddha)",
+      "Monasterio Po Lin",
+      "Teleférico Ngong Ping 360",
+      "Pueblo pesquero de Tai O"
+     ],
+     "activities": [
+      "Sube en teleférico hasta Ngong Ping.",
+      "Almuerza comida vegetariana en el monasterio Po Lin.",
+      "Haz un paseo en barca entre los palafitos de Tai O."
+     ],
+     "foodAndDrinks": [
+      "Comida vegetariana del monasterio",
+      "Marisco seco"
+     ],
+     "criticalTips": [
+      "Al estar cerca del aeropuerto, encaja el día de llegada o salida.",
+      "El teleférico puede cerrar con viento fuerte."
+     ],
+     "mapsQuery": "Ngong Ping, Lantau Island, Hong Kong"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Isla de Hong Kong (Central y The Peak)",
+     "recommendedDuration": "2 días (centro)",
+     "durationBadge": "2 días",
+     "highlights": [
+      "Victoria Peak y Peak Tram",
+      "Escalera mecánica Central–Mid-Levels",
+      "Templo Man Mo y Hollywood Road",
+      "Tranvía Ding Ding"
+     ],
+     "activities": [
+      "Contempla el puerto desde The Peak al atardecer.",
+      "Cruza la isla de punta a punta en el tranvía Ding Ding.",
+      "Recorre cafés y tiendas de diseño en Soho y PMQ."
+     ],
+     "foodAndDrinks": [
+      "Fideos con wonton",
+      "Té con leche de Hong Kong",
+      "Tartaleta de huevo"
+     ],
+     "criticalTips": [
+      "Las colas del Peak Tram son largas; compra la entrada con antelación.",
+      "Los fines de semana subir a The Peak en autobús puede ser más rápido."
+     ],
+     "mapsQuery": "Central, Hong Kong Island"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Kowloon (Tsim Sha Tsui y Mong Kok)",
+     "recommendedDuration": "1 día (mercados y puerto)",
+     "durationBadge": "1 día",
+     "highlights": [
+      "Paseo marítimo de Tsim Sha Tsui y Symphony of Lights",
+      "Mercado nocturno de Temple Street",
+      "Ladies’ Market y Jardín de los Pájaros de Mong Kok",
+      "Templo Wong Tai Sin"
+     ],
+     "activities": [
+      "Cruza el puerto en el Star Ferry.",
+      "Mira el espectáculo de luces de las 20:00.",
+      "Prueba comida callejera en el mercado nocturno."
+     ],
+     "foodAndDrinks": [
+      "Dim sum",
+      "Gofres de huevo",
+      "Bolas de pescado al curry"
+     ],
+     "criticalTips": [
+      "Ignora a los captadores de relojes y trajes.",
+      "Vigila tus objetos de valor entre la multitud de Mong Kok."
+     ],
+     "mapsQuery": "Tsim Sha Tsui, Kowloon, Hong Kong"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Sai Kung",
+     "recommendedDuration": "1 día (costa y naturaleza)",
+     "durationBadge": "1 día",
+     "highlights": [
+      "Pueblo costero de Sai Kung",
+      "Geoparque Mundial UNESCO de Hong Kong",
+      "Playas de Tai Long Wan"
+     ],
+     "activities": [
+      "Toma un barco kai-to hacia las islas.",
+      "Contempla las columnas hexagonales de roca volcánica.",
+      "Come en los restaurantes de marisco del muelle."
+     ],
+     "foodAndDrinks": [
+      "Marisco fresco",
+      "Té de hierbas"
+     ],
+     "criticalTips": [
+      "Lleva mucha agua en las caminatas; el calor del verano es intenso.",
+      "Consulta el horario de los barcos de vuelta en las playas remotas."
+     ],
+     "mapsQuery": "Sai Kung, Hong Kong"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Dim sum (har gow, siu mai)",
+     "Ganso asado y char siu (cerdo asado con miel)",
+     "Sopa de fideos con wonton"
+    ],
+    "drinks": [
+     "Té con leche de Hong Kong",
+     "Yuenyeung (mezcla de café y té)",
+     "Té de hierbas (leung cha)"
+    ],
+    "streetFoods": [
+     "Gofres de huevo (gai daan jai)",
+     "Tartaleta de huevo (dan tat)",
+     "Bolas de pescado al curry"
+    ],
+    "diningAdvice": "Los cha chaan teng son baratos y auténticos; compartir mesa en restaurantes llenos es normal."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptador de enchufe tipo G",
+     "Tarjeta Octopus",
+     "Paraguas (sol y lluvia)",
+     "Calzado cómodo"
+    ],
+    "safetyAndEtiquette": [
+     "No comas ni bebas en el MTR y respeta la cola.",
+     "Respeta las leyes locales y mantente lejos de las manifestaciones."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Enchufes británicos tipo G con tres clavijas rectangulares (220 V); las clavijas turcas no encajan, hace falta adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "El agua de red cumple los estándares de la OMS y es potable; en edificios antiguos es preferible hervirla o filtrarla por las tuberías.",
+    "vaccines": [
+     "Vacunas rutinarias (tétanos-difteria, triple vírica)",
+     "Hepatitis A",
+     "Protección antimosquitos frente al dengue en verano"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "999"
+   },
+   "tipping": {
+    "custom": "Los restaurantes suelen añadir un 10 % de servicio; no se espera más propina.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Redondea en los taxis; da HK$10-20 a los botones del hotel."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Hong Kong no tiene IVA ni impuesto sobre ventas",
+    "minSpend": "No aplica",
+    "customsNote": "Al ser puerto franco no hay IVA que reembolsar; los precios están libres de impuestos. Vigila las franquicias aduaneras al volver a Turquía."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1 - $3",
+    "topCarriers": [
+     "CSL",
+     "SmarTone",
+     "3 Hong Kong",
+     "China Mobile Hong Kong"
+    ],
+    "airportSimTrapWarning": "Los puestos de operadoras del aeropuerto (1010/CSL y otros) y las SIM turísticas de 7-Eleven tienen buen precio; la eSIM también está muy extendida."
+   },
+   "touristScams": [
+    {
+     "title": "Captadores de relojes y sastres",
+     "desc": "En Tsim Sha Tsui ofrecen \"relojes copia\" o \"trajes baratos\".",
+     "tip": "Rechaza con cortesía y no los sigas a las tiendas."
+    },
+    {
+     "title": "Falso monje",
+     "desc": "Falsos monjes reparten amuletos y piden donativos.",
+     "tip": "No aceptes el amuleto y sigue caminando."
+    },
+    {
+     "title": "Tarifa del taxi",
+     "desc": "Algunos taxis dan a los turistas un precio fijo sin taxímetro o rechazan trayectos cortos.",
+     "tip": "Exige el taxímetro; si hay problemas, anota la matrícula y reclama al 1823."
+    }
+   ]
+  }
+ },
+ "ru": {
+  "insights": {
+   "currency": "Гонконгский доллар (HKD)",
+   "plugType": "Тип G (220V, 50Hz)",
+   "bestMonths": "Октябрь – декабрь (прохладно и сухо); июнь – сентябрь жарко, влажно, бывают тайфуны",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Безопасно",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Уличная преступность очень низкая, гулять ночью безопасно. Официальные рекомендации советуют знать местные законы (включая закон о национальной безопасности) и избегать демонстраций.",
+    "commonScams": [
+     "Зазывалы с поддельными часами и портные в Цимшацуе",
+     "Фальшивые монахи, раздающие амулеты и просящие пожертвования",
+     "Таксисты, не включающие счётчик или отказывающиеся от коротких поездок"
+    ],
+    "safeTravelTips": [
+     "Купите карту Octopus: она работает в MTR, автобусах, паромах и магазинах.",
+     "При сигнале тайфуна T8 и выше транспорт и магазины могут закрыться — следите за предупреждениями.",
+     "Носите с собой паспорт и держитесь подальше от публичных акций."
+    ],
+    "emergencyNumbers": {
+     "police": "999",
+     "ambulance": "999",
+     "general": "999"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99 % 4G/5G; связь без перебоев даже в метро и тоннелях",
+    "costPerGbUsd": "~1 - 3 $",
+    "esimAvailability": "Отлично",
+    "bestCarriers": [
+     "CSL",
+     "SmarTone",
+     "3 Hong Kong",
+     "China Mobile Hong Kong"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Отлично",
+    "costLevel": "Дорого",
+    "singleTicketUsd": "0.60 - 4 $",
+    "dailyPassUsd": "8 - 10 $",
+    "popularRideApps": [
+     "Uber",
+     "HKTaxi",
+     "Octopus",
+     "MTR Mobile / Citymapper"
+    ],
+    "taxiAdvice": "Красные (город), зелёные (Новые территории) и синие (Лантау) такси ездят по счётчику; плата за тоннели и мосты добавляется. Работают также Uber и HKTaxi."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "60 - 90 $",
+    "dailyBudgetMidrangeUsd": "180 - 300 $",
+    "budgetMealUsd": "8 - 15 $",
+    "coffeeUsd": "4 - 6 $",
+    "waterBottleUsd": "1 - 1.50 $",
+    "hostelDormUsd": "25 - 45 $",
+    "hotel3StarUsd": "110 - 200 $",
+    "flightCostIndex": "Умеренно",
+    "flightTip": "Turkish Airlines летает напрямую Стамбул – Гонконг; маршруты со стыковкой в странах Залива тоже конкурентны по цене."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "В MTR запрещено есть и пить; на эскалаторе стойте справа.",
+     "Визитки и деньги передавайте двумя руками и всегда соблюдайте очередь.",
+     "Не втыкайте палочки в рис вертикально; приоткрытая крышка чайника — просьба долить.",
+     "За дим-самом благодарят наливающего чай, постукивая двумя пальцами по столу."
+    ],
+    "festivals": [
+     "Китайский Новый год (январь/февраль)",
+     "Фестиваль булочек на Чхёнчау (апрель/май)",
+     "Праздник драконьих лодок (июнь)"
+    ],
+    "lifestyle": "Стремительная жизнь среди небоскрёбов, культура кафе ча чхаан тхэн и пешие тропы сразу за городом."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Пик Виктория (The Peak)",
+     "Star Ferry и гавань Виктория",
+     "Будда Тянь Тань и канатная дорога Ngong Ping 360",
+     "Ночной рынок Temple Street",
+     "Тропа Dragon’s Back",
+     "Рыбацкая деревня Тай О"
+    ],
+    "bestSeasons": "Октябрь – декабрь (прохладно и сухо); июнь – сентябрь жарко, влажно, бывают тайфуны",
+    "travelStyleTip": "Общественный транспорт мирового уровня; сочетайте MTR, трамваи и паромы с картой Octopus."
+   },
+   "religion": {
+    "primaryReligions": "Большинство не исповедует формальную религию; широко распространены буддизм, даосизм и народные верования, христианство ~12 %.",
+    "respectNorms": "Не трогайте алтари с благовониями в храмах и спрашивайте разрешения, прежде чем фотографировать молящихся.",
+    "sacredSites": [
+     "Храм Вонг Тай Син",
+     "Храм Ман Мо",
+     "Монастырь По Лин"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Китайский (говорят на кантонском) и английский — официальные.",
+    "englishProficiency": "Хороший; вывески двуязычные, в отелях и ресторанах легко объясниться по-английски.",
+    "phrases": [
+     {
+      "phrase": "你好",
+      "meaning": "Здравствуйте",
+      "translation": "Здравствуйте",
+      "pronunciation": "néih hóu"
+     },
+     {
+      "phrase": "多謝",
+      "meaning": "Спасибо (за подарок/одолжение)",
+      "translation": "Спасибо (за подарок/одолжение)",
+      "pronunciation": "dō jeh"
+     },
+     {
+      "phrase": "唔該",
+      "meaning": "Пожалуйста / Спасибо (за услугу)",
+      "translation": "Пожалуйста / Спасибо (за услугу)",
+      "pronunciation": "m̀h gōi"
+     },
+     {
+      "phrase": "幾多錢？",
+      "meaning": "Сколько?",
+      "translation": "Сколько?",
+      "pronunciation": "géi dō chín?"
+     },
+     {
+      "phrase": "埋單",
+      "meaning": "Счёт, пожалуйста",
+      "translation": "Счёт, пожалуйста",
+      "pronunciation": "màaih dāan"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "По Нанкинскому договору 1842 года остров Гонконг отошёл Великобритании, а в 1898 году Новые территории были арендованы на 99 лет. В 1997 году Гонконг передан Китайской Народной Республике как Специальный административный район.",
+    "milestones": [
+     "1842: Нанкинский договор",
+     "1898: аренда Новых территорий",
+     "1941-1945: японская оккупация",
+     "1997: передача Китаю"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Дим-сам (хакау, сиумай)",
+     "Жареный гусь и чар сиу (свинина в мёде)",
+     "Суп с лапшой и вонтонами"
+    ],
+    "traditionalDrinks": [
+     "Гонконгский чай с молоком",
+     "Юэньён (смесь кофе и чая)",
+     "Травяной чай (лён ча)"
+    ],
+    "streetFoodAndDesserts": [
+     "Яичные вафли (гай дан чай)",
+     "Яичная тарталетка (дан тат)",
+     "Рыбные шарики в карри"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Брюс Ли (мастер боевых искусств, актёр)",
+     "Джеки Чан (актёр)",
+     "Вонг Кар-вай (кинорежиссёр)"
+    ],
+    "strongSectors": [
+     "Финансы и банки",
+     "Торговля, порт и логистика",
+     "Туризм и профессиональные услуги"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Распространены Octopus, бесконтактные карты, Apple Pay/Google Pay и AlipayHK; маленькие кафе и микроавтобусы просят наличные или Octopus.",
+    "tippingCulture": "Рестораны добавляют 10 % за обслуживание; в такси сумму округляют.",
+    "economicPillars": "Международные финансы, торговля и логистика, туризм, профессиональные услуги."
+   }
+  },
+  "itin": {
+   "routeName": "Гонконг: город и природа — Лантау, остров Гонконг, Коулун и Сайкун",
+   "routeSummary": "5-дневный маршрут от гигантского Будды на Лантау к панораме острова Гонконг, рынкам Коулуна и пляжам Сайкуна.",
+   "totalDays": 5,
+   "idealDurationText": "5-дневный маршрут по Гонконгу",
+   "bestSeason": "Октябрь – декабрь (прохладно и сухо); июнь – сентябрь жарко, влажно, бывают тайфуны",
+   "transportMode": "MTR + Star Ferry, трамваи и автобусы (карта Octopus)",
+   "paceLevel": "Динамичный (город и природа)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Остановка 1: Остров Лантау",
+     "recommendedDuration": "1 день (Будда и деревня)",
+     "durationBadge": "1 день",
+     "highlights": [
+      "Будда Тянь Тань (Большой Будда)",
+      "Монастырь По Лин",
+      "Канатная дорога Ngong Ping 360",
+      "Рыбацкая деревня Тай О"
+     ],
+     "activities": [
+      "Поднимитесь на канатной дороге в Нгонг Пинг.",
+      "Пообедайте вегетарианской едой в монастыре По Лин.",
+      "Прокатитесь на лодке среди домов на сваях в Тай О."
+     ],
+     "foodAndDrinks": [
+      "Вегетарианская монастырская трапеза",
+      "Сушёные морепродукты"
+     ],
+     "criticalTips": [
+      "Остров рядом с аэропортом — удобно в день прилёта или вылета.",
+      "При сильном ветре канатную дорогу могут закрыть."
+     ],
+     "mapsQuery": "Ngong Ping, Lantau Island, Hong Kong"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Остановка 2: Остров Гонконг (Сентрал и Пик)",
+     "recommendedDuration": "2 дня (центр)",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Пик Виктория и Peak Tram",
+      "Эскалатор Сентрал – Мид-Левелс",
+      "Храм Ман Мо и Hollywood Road",
+      "Трамвай «Динь-динь»"
+     ],
+     "activities": [
+      "Полюбуйтесь гаванью с Пика на закате.",
+      "Проедьте весь остров на трамвае «Динь-динь».",
+      "Загляните в кафе и дизайнерские лавки Сохо и PMQ."
+     ],
+     "foodAndDrinks": [
+      "Лапша с вонтонами",
+      "Гонконгский чай с молоком",
+      "Яичная тарталетка"
+     ],
+     "criticalTips": [
+      "Очередь на Peak Tram длинная — покупайте билеты заранее.",
+      "В выходные на Пик быстрее подняться автобусом."
+     ],
+     "mapsQuery": "Central, Hong Kong Island"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Остановка 3: Коулун (Цимшацуй и Монгкок)",
+     "recommendedDuration": "1 день (рынки и гавань)",
+     "durationBadge": "1 день",
+     "highlights": [
+      "Набережная Цимшацуй и шоу Symphony of Lights",
+      "Ночной рынок Temple Street",
+      "Женский рынок и Птичий сад в Монгкоке",
+      "Храм Вонг Тай Син"
+     ],
+     "activities": [
+      "Пересеките гавань на Star Ferry.",
+      "Посмотрите световое шоу в 20:00.",
+      "Попробуйте уличную еду на ночном рынке."
+     ],
+     "foodAndDrinks": [
+      "Дим-сам",
+      "Яичные вафли",
+      "Рыбные шарики в карри"
+     ],
+     "criticalTips": [
+      "Не обращайте внимания на зазывал с часами и костюмами.",
+      "В толпе Монгкока следите за ценными вещами."
+     ],
+     "mapsQuery": "Tsim Sha Tsui, Kowloon, Hong Kong"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Остановка 4: Сайкун",
+     "recommendedDuration": "1 день (побережье и природа)",
+     "durationBadge": "1 день",
+     "highlights": [
+      "Прибрежный городок Сайкун",
+      "Геопарк ЮНЕСКО Гонконга",
+      "Пляжи Тай Лонг Ван"
+     ],
+     "activities": [
+      "Переправьтесь на острова на лодке кай-то.",
+      "Посмотрите шестигранные вулканические столбы.",
+      "Поешьте в рыбных ресторанах на пирсе."
+     ],
+     "foodAndDrinks": [
+      "Свежие морепродукты",
+      "Травяной чай"
+     ],
+     "criticalTips": [
+      "В походы берите много воды — летняя жара очень сильная.",
+      "Для дальних пляжей заранее узнайте расписание обратных лодок."
+     ],
+     "mapsQuery": "Sai Kung, Hong Kong"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Дим-сам (хакау, сиумай)",
+     "Жареный гусь и чар сиу (свинина в мёде)",
+     "Суп с лапшой и вонтонами"
+    ],
+    "drinks": [
+     "Гонконгский чай с молоком",
+     "Юэньён (смесь кофе и чая)",
+     "Травяной чай (лён ча)"
+    ],
+    "streetFoods": [
+     "Яичные вафли (гай дан чай)",
+     "Яичная тарталетка (дан тат)",
+     "Рыбные шарики в карри"
+    ],
+    "diningAdvice": "Ча чхаан тхэн — дешёвый и аутентичный вариант; в людных ресторанах делить стол с незнакомцами нормально."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Переходник для розеток типа G",
+     "Карта Octopus",
+     "Зонт (от солнца и дождя)",
+     "Удобная обувь"
+    ],
+    "safetyAndEtiquette": [
+     "Не ешьте и не пейте в MTR, соблюдайте очередь.",
+     "Уважайте местные законы и держитесь подальше от демонстраций."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Британские розетки типа G с тремя прямоугольными штырями (220 В); турецкие вилки не подходят, нужен переходник."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Водопроводная вода соответствует стандартам ВОЗ и пригодна для питья; в старых домах из-за труб её лучше кипятить или фильтровать.",
+    "vaccines": [
+     "Плановые прививки (столбняк-дифтерия, КПК)",
+     "Гепатит A",
+     "Летом — защита от комаров против денге"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "999"
+   },
+   "tipping": {
+    "custom": "Рестораны обычно добавляют 10 % за обслуживание; дополнительных чаевых не ждут.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "В такси округляйте сумму; носильщикам в отеле — HK$10-20."
+   },
+   "taxFree": {
+    "vatRefundPercent": "В Гонконге нет НДС и налога с продаж",
+    "minSpend": "Не применяется",
+    "customsNote": "Гонконг — свободный порт, возвращать нечего: цены без налога. При возвращении в Турцию соблюдайте беспошлинные нормы."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1 - $3",
+    "topCarriers": [
+     "CSL",
+     "SmarTone",
+     "3 Hong Kong",
+     "China Mobile Hong Kong"
+    ],
+    "airportSimTrapWarning": "Стойки операторов в аэропорту (1010/CSL и др.) и туристические SIM в 7-Eleven недорогие; eSIM тоже широко распространены."
+   },
+   "touristScams": [
+    {
+     "title": "Зазывалы с часами и костюмами",
+     "desc": "В Цимшацуе предлагают «копии часов» или «дешёвые костюмы».",
+     "tip": "Вежливо откажитесь и не идите за ними в магазины."
+    },
+    {
+     "title": "Фальшивый монах",
+     "desc": "Фальшивые монахи раздают амулеты и просят пожертвования.",
+     "tip": "Не берите амулет и идите дальше."
+    },
+    {
+     "title": "Тариф такси",
+     "desc": "Некоторые таксисты называют туристам фиксированную цену без счётчика или отказываются от коротких поездок.",
+     "tip": "Требуйте включить счётчик; при проблемах запишите номер и пожалуйтесь по телефону 1823."
+    }
+   ]
+  }
+ }
+}

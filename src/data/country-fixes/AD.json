@@ -1,0 +1,1772 @@
+{
+ "tr": {
+  "insights": {
+   "currency": "Euro (EUR)",
+   "plugType": "Tip C, F (230V, 50Hz)",
+   "bestMonths": "Aralık – Mart (kayak sezonu) ve Haziran – Eylül (yürüyüş ve göller)",
+   "safety": {
+    "safetyScore": 85,
+    "safetyLevel": "Olağanüstü Güvenli",
+    "badgeColor": "bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-900/60",
+    "crimeRateSummary": "Avrupa’nın en güvenli ülkelerinden biridir; suç oranı çok düşüktür. Asıl riskler dağ koşulları, çığ ve kışın kar nedeniyle kapanan yollardır.",
+    "commonScams": [
+     "Kayak merkezlerinde gözetimsiz bırakılan kayak ve ekipman hırsızlığı",
+     "Sınırda gümrük limitini aşan alışverişin ceza ile sonuçlanması",
+     "Kalabalık alışveriş caddelerinde nadir yankesicilik"
+    ],
+    "safeTravelTips": [
+     "Dağ yürüyüşlerinde hava durumunu kontrol edin; acil kurtarma için 112’yi arayın.",
+     "Kışın araç kullanacaksanız kar zinciri veya kış lastiği bulundurun.",
+     "İspanya veya Fransa’ya dönerken tütün, alkol ve elektronikte gümrük limitlerine uyun."
+    ],
+    "emergencyNumbers": {
+     "police": "110",
+     "ambulance": "116",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Vadilerde %95+ 4G/5G; yüksek dağ patikalarında zayıf",
+    "costPerGbUsd": "~2 - 5 $",
+    "esimAvailability": "İyi",
+    "bestCarriers": [
+     "Andorra Telecom"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Orta Düzey",
+    "costLevel": "Orta Seviye",
+    "singleTicketUsd": "2 - 3.50 $",
+    "dailyPassUsd": "5 - 10 $",
+    "popularRideApps": [
+     "Telefonla taksi",
+     "Andbus / Alsa / Directbus (Barselona–Tuluz bağlantısı)",
+     "Google Maps"
+    ],
+    "taxiAdvice": "Uber gibi uygulamalar yoktur; taksiler telefonla çağrılır veya duraklardan alınır. Ülke içi otobüs hatları ucuz ve düzenlidir."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "70 - 100 $",
+    "dailyBudgetMidrangeUsd": "150 - 250 $",
+    "budgetMealUsd": "15 - 25 $",
+    "coffeeUsd": "2 - 3 $",
+    "waterBottleUsd": "1 - 2 $",
+    "hostelDormUsd": "25 - 45 $",
+    "hotel3StarUsd": "80 - 150 $",
+    "flightCostIndex": "Orta Seviye",
+    "flightTip": "Andorra’da havalimanı ve tren yoktur; Barselona veya Tuluz’a uçup otobüsle (3-3,5 saat) gelin."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Katalanca selamlamak (\"Bon dia\") yerel halk tarafından takdir edilir.",
+     "Öğle yemeği 13.00-15.00, akşam yemeği 20.00 sonrası yenir.",
+     "Kiliselerde ayin sırasında sessiz olun.",
+     "Dağ patikalarında işaretli yoldan ayrılmayın ve çöpünüzü geri getirin."
+    ],
+    "festivals": [
+     "Meritxell Günü (8 Eylül, ulusal gün)",
+     "Sant Antoni Escudella’sı (17 Ocak)",
+     "Andorra la Vella şehir festivali (Ağustos başı)"
+    ],
+    "lifestyle": "Pireneler’in arasında küçük vadi kasabaları, kayak ve yürüyüş kültürü, vergi avantajlı alışveriş caddeleri."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Andorra la Vella Eski Şehri ve Casa de la Vall",
+     "Caldea termal spa",
+     "Grandvalira kayak alanı",
+     "Madriu-Perafita-Claror Vadisi (UNESCO)",
+     "Meritxell Sığınağı",
+     "Roc del Quer seyir terası"
+    ],
+    "bestSeasons": "Aralık – Mart (kayak sezonu) ve Haziran – Eylül (yürüyüş ve göller)",
+    "travelStyleTip": "Ülke küçüktür; Andorra la Vella’da kalıp otobüsle vadileri gezebilirsiniz."
+   },
+   "religion": {
+    "primaryReligions": "Roma Katolik (~%85), küçük Protestan ve Müslüman topluluklar.",
+    "respectNorms": "Romanesk kiliselerde ışık ve sessizlik kurallarına uyun; flaşlı fotoğraf çekmeyin.",
+    "sacredSites": [
+     "Meritxell Sığınağı",
+     "Sant Joan de Caselles Kilisesi",
+     "Santa Coloma Kilisesi"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Katalanca (resmî). İspanyolca, Fransızca ve Portekizce de yaygındır.",
+    "englishProficiency": "Otellerde ve kayak merkezlerinde orta; İspanyolca veya Fransızca daha yaygındır.",
+    "phrases": [
+     {
+      "phrase": "Bon dia",
+      "meaning": "Günaydın / Merhaba",
+      "translation": "Günaydın / Merhaba",
+      "pronunciation": "bon DEE-ah"
+     },
+     {
+      "phrase": "Gràcies / Merci",
+      "meaning": "Teşekkürler",
+      "translation": "Teşekkürler",
+      "pronunciation": "GRAH-see-es / mer-SEE"
+     },
+     {
+      "phrase": "Si us plau",
+      "meaning": "Lütfen",
+      "translation": "Lütfen",
+      "pronunciation": "see oos PLOW"
+     },
+     {
+      "phrase": "Quant costa?",
+      "meaning": "Ne kadar?",
+      "translation": "Ne kadar?",
+      "pronunciation": "kwan KOS-tah?"
+     },
+     {
+      "phrase": "Adéu",
+      "meaning": "Hoşça kal",
+      "translation": "Hoşça kal",
+      "pronunciation": "ah-DEH-oo"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "1278 Paréage anlaşmasıyla Urgell Piskoposu ve Foix Kontu ortak prens oldu; bu ortak prenslik bugün Urgell Piskoposu ve Fransa Cumhurbaşkanıyla sürmektedir. 1993’te ilk anayasa kabul edildi.",
+    "milestones": [
+     "1278: Paréage anlaşması",
+     "1419: Consell de la Terra (ilk meclis)",
+     "1993: Anayasa ve BM üyeliği",
+     "2004: Madriu Vadisi UNESCO listesinde"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Trinxat (lahana, patates ve pastırmalı tava)",
+     "Escudella (etli kış güveci)",
+     "Canelons (Katalan usulü cannelloni)"
+    ],
+    "traditionalDrinks": [
+     "Ratafia (bitkili tatlı likör)",
+     "Andorra şarabı",
+     "Sıcak çikolata (xocolata desfeta)"
+    ],
+    "streetFoodAndDesserts": [
+     "Crema catalana",
+     "Coca (ince Katalan çöreği)",
+     "Yerel peynir ve sucuklar (embotits)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Şarlman (efsaneye göre kurucu, milli marşta anılır)",
+     "Albert Salvadó (yazar)",
+     "Joan Verdú (olimpik kayakçı)"
+    ],
+    "strongSectors": [
+     "Turizm ve kayak",
+     "Perakende ve vergisiz alışveriş",
+     "Bankacılık ve finans"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Euro kullanılır; kart her yerde geçer. Andorra AB üyesi değildir.",
+    "tippingCulture": "Bahşiş zorunlu değildir; restoranlarda %5-10 bırakmak nazik bir jesttir.",
+    "economicPillars": "Turizm, perakende, bankacılık ve inşaat."
+   }
+  },
+  "itin": {
+   "routeName": "Andorra Pireneler Rotası: Andorra la Vella, Ordino ve Canillo",
+   "routeSummary": "Başkentin taş sokakları ve Caldea kaplıcalarından Ordino’nun sakin vadilerine ve Canillo’nun kayak pistleri ile seyir teraslarına uzanan 4 günlük rota.",
+   "totalDays": 4,
+   "idealDurationText": "4 Günlük Pireneler Rotası",
+   "bestSeason": "Aralık – Mart (kayak sezonu) ve Haziran – Eylül (yürüyüş ve göller)",
+   "transportMode": "Ulusal otobüs hatları + yürüyüş (kışın kayak servisleri)",
+   "paceLevel": "Sakin (Doğa + Dinlenme)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "1. Durak: Andorra la Vella ve Escaldes",
+     "recommendedDuration": "2 Gün (Başkent ve spa)",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "Barri Antic (Eski Şehir)",
+      "Casa de la Vall",
+      "Caldea termal spa",
+      "Meritxell Caddesi alışveriş bölgesi"
+     ],
+     "activities": [
+      "Caldea’da termal havuzlarda dinlenin.",
+      "Eski şehrin taş sokaklarında yürüyün.",
+      "Madriu Vadisi girişinde kısa bir yürüyüş yapın."
+     ],
+     "foodAndDrinks": [
+      "Trinxat",
+      "Escudella",
+      "Crema catalana"
+     ],
+     "criticalTips": [
+      "Alışverişte gümrük limitlerini unutmayın.",
+      "Pazar günleri bazı dükkânlar kapalı olabilir."
+     ],
+     "mapsQuery": "Andorra la Vella, Andorra"
+    },
+    {
+     "stopNumber": 2,
+     "name": "2. Durak: Ordino",
+     "recommendedDuration": "1 Gün (Vadi ve göller)",
+     "durationBadge": "1 Gün",
+     "highlights": [
+      "Tristaina gölleri",
+      "Sorteny Doğal Parkı",
+      "Ordino köy merkezi"
+     ],
+     "activities": [
+      "Tristaina göllerine yaz yürüyüşü yapın.",
+      "Sorteny’de dağ bitkilerini keşfedin.",
+      "Taş evlerle dolu köy merkezini gezin."
+     ],
+     "foodAndDrinks": [
+      "Embotits",
+      "Ratafia"
+     ],
+     "criticalTips": [
+      "Göller yolu kışın kapalıdır.",
+      "Dağda hava hızla değişir, yağmurluk alın."
+     ],
+     "mapsQuery": "Ordino, Andorra"
+    },
+    {
+     "stopNumber": 3,
+     "name": "3. Durak: Canillo ve Soldeu",
+     "recommendedDuration": "1 Gün (Dağ ve kayak)",
+     "durationBadge": "1 Gün",
+     "highlights": [
+      "Roc del Quer seyir terası",
+      "Meritxell Sığınağı",
+      "Grandvalira pistleri",
+      "Sant Joan de Caselles Kilisesi"
+     ],
+     "activities": [
+      "Roc del Quer’de boşluğa uzanan platformda yürüyün.",
+      "Kışın Grandvalira’da kayak yapın.",
+      "Yazın Tobotronc kızak hattını deneyin."
+     ],
+     "foodAndDrinks": [
+      "Canelons",
+      "Sıcak çikolata",
+      "Coca"
+     ],
+     "criticalTips": [
+      "Kayak paslarını çevrimiçi almak daha ucuzdur.",
+      "Kışın yol koşullarını ve çığ uyarılarını kontrol edin."
+     ],
+     "mapsQuery": "Canillo, Andorra"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Trinxat (lahana, patates ve pastırmalı tava)",
+     "Escudella (etli kış güveci)",
+     "Canelons (Katalan usulü cannelloni)"
+    ],
+    "drinks": [
+     "Ratafia (bitkili tatlı likör)",
+     "Andorra şarabı",
+     "Sıcak çikolata (xocolata desfeta)"
+    ],
+    "streetFoods": [
+     "Crema catalana",
+     "Coca (ince Katalan çöreği)",
+     "Yerel peynir ve sucuklar (embotits)"
+    ],
+    "diningAdvice": "Borda denilen eski taş ahırlarda Pirene mutfağını deneyin; öğle menüleri (menú del dia) ekonomiktir."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Katmanlı dağ kıyafetleri",
+     "Yürüyüş ayakkabısı",
+     "Güneş gözlüğü ve krem",
+     "Kışın kar zinciri"
+    ],
+    "safetyAndEtiquette": [
+     "Dağda işaretli patikalardan ayrılmayın.",
+     "Gümrük limitlerine uyun ve kiliselerde sessiz olun."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Türkiye ile aynı C/F tipi prizler (230V); adaptör gerekmez."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Musluk suyu dağ kaynaklıdır, temiz ve içilebilir.",
+    "vaccines": [
+     "Rutin aşılar (tetanoz-difteri, KKK)",
+     "Özel bir aşı gerekmez"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "116"
+   },
+   "tipping": {
+    "custom": "Bahşiş isteğe bağlıdır; iyi hizmette %5-10 bırakılır.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "Kafelerde küsuratı yuvarlamak yeterlidir."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IGI (genel vergi) %4,5; turist iadesi yok",
+    "minSpend": "Uygulanmaz",
+    "customsNote": "Andorra AB üyesi değildir ve turiste vergi iadesi yapılmaz; vergiler zaten düşüktür. İspanya/Fransa’ya geçişte tütün, alkol ve diğer ürünlerde gümrük muafiyet limitleri uygulanır ve sık kontrol yapılır."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$2 - $5",
+    "topCarriers": [
+     "Andorra Telecom"
+    ],
+    "airportSimTrapWarning": "Tek operatör Andorra Telecom’dur; AB roaming kapsamında değildir, yabancı hatlarda roaming pahalı olabilir. Turist SIM’i veya Andorra’yı kapsayan bir eSIM alın."
+   },
+   "touristScams": [
+    {
+     "title": "Kayak Hırsızlığı",
+     "desc": "Restoran ve teleferik önünde bırakılan kayaklar çalınabilir.",
+     "tip": "Kayakları kilitleyin veya eşleri ayrı yerlere bırakın."
+    },
+    {
+     "title": "Gümrük Cezası",
+     "desc": "Ucuz diye fazla tütün veya alkol alanlar sınırda cezayla karşılaşır.",
+     "tip": "Muafiyet limitlerini önceden öğrenin."
+    },
+    {
+     "title": "Roaming Sürprizi",
+     "desc": "AB paketleri Andorra’da geçmez, faturada yüksek ücret çıkar.",
+     "tip": "Gelmeden önce yerel veya Andorra’yı kapsayan bir eSIM alın."
+    }
+   ]
+  }
+ },
+ "en": {
+  "insights": {
+   "currency": "Euro (EUR)",
+   "plugType": "Type C, F (230V, 50Hz)",
+   "bestMonths": "December – March (ski season) and June – September (hiking and lakes)",
+   "safety": {
+    "safetyScore": 85,
+    "safetyLevel": "Exceptional Safety",
+    "badgeColor": "bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-900/60",
+    "crimeRateSummary": "One of the safest countries in Europe with very low crime. The real risks are mountain conditions, avalanches and roads closed by snow in winter.",
+    "commonScams": [
+     "Theft of skis and equipment left unattended at resorts",
+     "Purchases over the customs allowance leading to fines at the border",
+     "Occasional pickpocketing on busy shopping streets"
+    ],
+    "safeTravelTips": [
+     "Check the weather before mountain hikes; call 112 for rescue.",
+     "If driving in winter, carry snow chains or use winter tyres.",
+     "Respect customs allowances for tobacco, alcohol and electronics when returning to Spain or France."
+    ],
+    "emergencyNumbers": {
+     "police": "110",
+     "ambulance": "116",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "95%+ 4G/5G in the valleys; weak on high mountain trails",
+    "costPerGbUsd": "~2 - 5 $",
+    "esimAvailability": "Good",
+    "bestCarriers": [
+     "Andorra Telecom"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Moderate",
+    "costLevel": "Moderate",
+    "singleTicketUsd": "2 - 3.50 $",
+    "dailyPassUsd": "5 - 10 $",
+    "popularRideApps": [
+     "Phone-booked taxis",
+     "Andbus / Alsa / Directbus (Barcelona–Toulouse links)",
+     "Google Maps"
+    ],
+    "taxiAdvice": "There is no Uber-style app; taxis are booked by phone or taken from ranks. National bus lines are cheap and regular."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "70 - 100 $",
+    "dailyBudgetMidrangeUsd": "150 - 250 $",
+    "budgetMealUsd": "15 - 25 $",
+    "coffeeUsd": "2 - 3 $",
+    "waterBottleUsd": "1 - 2 $",
+    "hostelDormUsd": "25 - 45 $",
+    "hotel3StarUsd": "80 - 150 $",
+    "flightCostIndex": "Moderate",
+    "flightTip": "Andorra has no airport or train; fly to Barcelona or Toulouse and take a bus (3-3.5 hours)."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Greeting in Catalan (\"Bon dia\") is appreciated by locals.",
+     "Lunch is 1-3 pm and dinner after 8 pm.",
+     "Keep quiet during Mass in churches.",
+     "Stay on marked mountain trails and carry your rubbish back."
+    ],
+    "festivals": [
+     "Meritxell Day (8 September, national day)",
+     "Escudella of Sant Antoni (17 January)",
+     "Andorra la Vella town festival (early August)"
+    ],
+    "lifestyle": "Small valley towns in the Pyrenees, ski and hiking culture, and tax-advantaged shopping streets."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Andorra la Vella Old Town and Casa de la Vall",
+     "Caldea thermal spa",
+     "Grandvalira ski area",
+     "Madriu-Perafita-Claror Valley (UNESCO)",
+     "Sanctuary of Meritxell",
+     "Roc del Quer viewpoint"
+    ],
+    "bestSeasons": "December – March (ski season) and June – September (hiking and lakes)",
+    "travelStyleTip": "The country is small; stay in Andorra la Vella and explore the valleys by bus."
+   },
+   "religion": {
+    "primaryReligions": "Roman Catholic (~85%), small Protestant and Muslim communities.",
+    "respectNorms": "Follow lighting and silence rules in Romanesque churches; avoid flash photography.",
+    "sacredSites": [
+     "Sanctuary of Meritxell",
+     "Church of Sant Joan de Caselles",
+     "Church of Santa Coloma"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Catalan (official). Spanish, French and Portuguese are also common.",
+    "englishProficiency": "Moderate in hotels and ski resorts; Spanish or French is more widespread.",
+    "phrases": [
+     {
+      "phrase": "Bon dia",
+      "meaning": "Good morning / Hello",
+      "translation": "Good morning / Hello",
+      "pronunciation": "bon DEE-ah"
+     },
+     {
+      "phrase": "Gràcies / Merci",
+      "meaning": "Thank you",
+      "translation": "Thank you",
+      "pronunciation": "GRAH-see-es / mer-SEE"
+     },
+     {
+      "phrase": "Si us plau",
+      "meaning": "Please",
+      "translation": "Please",
+      "pronunciation": "see oos PLOW"
+     },
+     {
+      "phrase": "Quant costa?",
+      "meaning": "How much is it?",
+      "translation": "How much is it?",
+      "pronunciation": "kwan KOS-tah?"
+     },
+     {
+      "phrase": "Adéu",
+      "meaning": "Goodbye",
+      "translation": "Goodbye",
+      "pronunciation": "ah-DEH-oo"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Under the 1278 Paréage, the Bishop of Urgell and the Count of Foix became co-princes; the co-principality continues today with the Bishop of Urgell and the President of France. The first constitution was adopted in 1993.",
+    "milestones": [
+     "1278: Paréage agreement",
+     "1419: Consell de la Terra (first assembly)",
+     "1993: Constitution and UN membership",
+     "2004: Madriu Valley listed by UNESCO"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Trinxat (cabbage, potato and bacon fry-up)",
+     "Escudella (hearty meat stew)",
+     "Canelons (Catalan-style cannelloni)"
+    ],
+    "traditionalDrinks": [
+     "Ratafia (sweet herbal liqueur)",
+     "Andorran wine",
+     "Hot chocolate (xocolata desfeta)"
+    ],
+    "streetFoodAndDesserts": [
+     "Crema catalana",
+     "Coca (thin Catalan flatbread)",
+     "Local cheese and cured sausages (embotits)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Charlemagne (legendary founder, named in the national anthem)",
+     "Albert Salvadó (writer)",
+     "Joan Verdú (Olympic skier)"
+    ],
+    "strongSectors": [
+     "Tourism and skiing",
+     "Retail and low-tax shopping",
+     "Banking and finance"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "The euro is used and cards are accepted everywhere. Andorra is not an EU member.",
+    "tippingCulture": "Tipping is not mandatory; leaving 5-10% in restaurants is a kind gesture.",
+    "economicPillars": "Tourism, retail, banking and construction."
+   }
+  },
+  "itin": {
+   "routeName": "Andorra Pyrenees Route: Andorra la Vella, Ordino and Canillo",
+   "routeSummary": "A 4-day route from the capital’s stone lanes and Caldea spa to the quiet valleys of Ordino and the slopes and viewpoints of Canillo.",
+   "totalDays": 4,
+   "idealDurationText": "4-Day Pyrenees Itinerary",
+   "bestSeason": "December – March (ski season) and June – September (hiking and lakes)",
+   "transportMode": "National bus lines + walking (ski shuttles in winter)",
+   "paceLevel": "Relaxed (Nature & Wellness)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stop 1: Andorra la Vella and Escaldes",
+     "recommendedDuration": "2 Days (Capital and spa)",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "Barri Antic (Old Town)",
+      "Casa de la Vall",
+      "Caldea thermal spa",
+      "Avinguda Meritxell shopping area"
+     ],
+     "activities": [
+      "Relax in Caldea’s thermal pools.",
+      "Walk the stone lanes of the old town.",
+      "Take a short hike at the entrance of the Madriu Valley."
+     ],
+     "foodAndDrinks": [
+      "Trinxat",
+      "Escudella",
+      "Crema catalana"
+     ],
+     "criticalTips": [
+      "Remember customs allowances when shopping.",
+      "Some shops may be closed on Sundays."
+     ],
+     "mapsQuery": "Andorra la Vella, Andorra"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stop 2: Ordino",
+     "recommendedDuration": "1 Day (Valley and lakes)",
+     "durationBadge": "1 Day",
+     "highlights": [
+      "Tristaina lakes",
+      "Sorteny Nature Park",
+      "Ordino village centre"
+     ],
+     "activities": [
+      "Hike to the Tristaina lakes in summer.",
+      "Discover mountain flora at Sorteny.",
+      "Explore the stone-house village centre."
+     ],
+     "foodAndDrinks": [
+      "Embotits",
+      "Ratafia"
+     ],
+     "criticalTips": [
+      "The road to the lakes is closed in winter.",
+      "Mountain weather changes fast; bring a raincoat."
+     ],
+     "mapsQuery": "Ordino, Andorra"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stop 3: Canillo and Soldeu",
+     "recommendedDuration": "1 Day (Mountain and skiing)",
+     "durationBadge": "1 Day",
+     "highlights": [
+      "Roc del Quer viewpoint",
+      "Sanctuary of Meritxell",
+      "Grandvalira slopes",
+      "Church of Sant Joan de Caselles"
+     ],
+     "activities": [
+      "Walk out on the platform over the void at Roc del Quer.",
+      "Ski Grandvalira in winter.",
+      "Try the Tobotronc mountain coaster in summer."
+     ],
+     "foodAndDrinks": [
+      "Canelons",
+      "Hot chocolate",
+      "Coca"
+     ],
+     "criticalTips": [
+      "Ski passes are cheaper online.",
+      "In winter check road conditions and avalanche warnings."
+     ],
+     "mapsQuery": "Canillo, Andorra"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Trinxat (cabbage, potato and bacon fry-up)",
+     "Escudella (hearty meat stew)",
+     "Canelons (Catalan-style cannelloni)"
+    ],
+    "drinks": [
+     "Ratafia (sweet herbal liqueur)",
+     "Andorran wine",
+     "Hot chocolate (xocolata desfeta)"
+    ],
+    "streetFoods": [
+     "Crema catalana",
+     "Coca (thin Catalan flatbread)",
+     "Local cheese and cured sausages (embotits)"
+    ],
+    "diningAdvice": "Try Pyrenean cuisine in bordas (old stone barns); set lunch menus (menú del dia) are good value."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Layered mountain clothing",
+     "Hiking boots",
+     "Sunglasses and sunscreen",
+     "Snow chains in winter"
+    ],
+    "safetyAndEtiquette": [
+     "Stay on marked trails in the mountains.",
+     "Respect customs allowances and keep quiet in churches."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Type C/F sockets (230V), same as Turkey; no adapter needed."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Tap water comes from mountain springs and is clean and drinkable.",
+    "vaccines": [
+     "Routine vaccines (tetanus-diphtheria, MMR)",
+     "No special vaccines required"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "116"
+   },
+   "tipping": {
+    "custom": "Tipping is optional; 5-10% for good service.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "Rounding up is enough in cafes."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IGI (general tax) 4.5%; no tourist refund",
+    "minSpend": "Not applicable",
+    "customsNote": "Andorra is not in the EU and offers no tourist tax refund; taxes are already low. Customs allowances for tobacco, alcohol and other goods apply when crossing into Spain/France, with frequent checks."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$2 - $5",
+    "topCarriers": [
+     "Andorra Telecom"
+    ],
+    "airportSimTrapWarning": "Andorra Telecom is the only operator; it is outside EU roaming and foreign roaming can be expensive. Get a tourist SIM or an eSIM that covers Andorra."
+   },
+   "touristScams": [
+    {
+     "title": "Ski Theft",
+     "desc": "Skis left outside restaurants and lifts may be stolen.",
+     "tip": "Lock your skis or leave each ski of a pair in a different spot."
+    },
+    {
+     "title": "Customs Fine",
+     "desc": "Buying too much cheap tobacco or alcohol leads to fines at the border.",
+     "tip": "Check the allowances beforehand."
+    },
+    {
+     "title": "Roaming Surprise",
+     "desc": "EU plans do not cover Andorra and bills can be high.",
+     "tip": "Get a local SIM or an eSIM that covers Andorra before arriving."
+    }
+   ]
+  }
+ },
+ "de": {
+  "insights": {
+   "currency": "Euro (EUR)",
+   "plugType": "Typ C, F (230V, 50Hz)",
+   "bestMonths": "Dezember – März (Skisaison) und Juni – September (Wandern und Seen)",
+   "safety": {
+    "safetyScore": 85,
+    "safetyLevel": "Außergewöhnlich sicher",
+    "badgeColor": "bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-900/60",
+    "crimeRateSummary": "Eines der sichersten Länder Europas mit sehr geringer Kriminalität. Die eigentlichen Risiken sind Bergbedingungen, Lawinen und im Winter schneebedingt gesperrte Straßen.",
+    "commonScams": [
+     "Diebstahl unbeaufsichtigter Ski und Ausrüstung in Skigebieten",
+     "Einkäufe über der Zollfreigrenze, die an der Grenze Bußgelder nach sich ziehen",
+     "Gelegentlicher Taschendiebstahl in belebten Einkaufsstraßen"
+    ],
+    "safeTravelTips": [
+     "Vor Bergwanderungen das Wetter prüfen; für Rettung 112 wählen.",
+     "Im Winter Schneeketten mitführen oder Winterreifen nutzen.",
+     "Bei der Rückkehr nach Spanien oder Frankreich die Zollfreimengen für Tabak, Alkohol und Elektronik einhalten."
+    ],
+    "emergencyNumbers": {
+     "police": "110",
+     "ambulance": "116",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "95 %+ 4G/5G in den Tälern; schwach auf hohen Bergwegen",
+    "costPerGbUsd": "~2 - 5 $",
+    "esimAvailability": "Gut",
+    "bestCarriers": [
+     "Andorra Telecom"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Angemessen",
+    "costLevel": "Moderat",
+    "singleTicketUsd": "2 - 3.50 $",
+    "dailyPassUsd": "5 - 10 $",
+    "popularRideApps": [
+     "Telefonisch bestellte Taxis",
+     "Andbus / Alsa / Directbus (Verbindungen nach Barcelona–Toulouse)",
+     "Google Maps"
+    ],
+    "taxiAdvice": "Es gibt keine Uber-ähnliche App; Taxis werden telefonisch bestellt oder am Stand genommen. Die nationalen Buslinien sind günstig und regelmäßig."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "70 - 100 $",
+    "dailyBudgetMidrangeUsd": "150 - 250 $",
+    "budgetMealUsd": "15 - 25 $",
+    "coffeeUsd": "2 - 3 $",
+    "waterBottleUsd": "1 - 2 $",
+    "hostelDormUsd": "25 - 45 $",
+    "hotel3StarUsd": "80 - 150 $",
+    "flightCostIndex": "Moderat",
+    "flightTip": "Andorra hat weder Flughafen noch Bahn; nach Barcelona oder Toulouse fliegen und mit dem Bus weiterfahren (3-3,5 Stunden)."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Ein katalanischer Gruß (\"Bon dia\") wird von Einheimischen geschätzt.",
+     "Mittagessen gibt es von 13 bis 15 Uhr, Abendessen nach 20 Uhr.",
+     "Während der Messe in Kirchen leise sein.",
+     "Auf markierten Bergwegen bleiben und Müll wieder mitnehmen."
+    ],
+    "festivals": [
+     "Meritxell-Tag (8. September, Nationalfeiertag)",
+     "Escudella von Sant Antoni (17. Januar)",
+     "Stadtfest Andorra la Vella (Anfang August)"
+    ],
+    "lifestyle": "Kleine Talorte in den Pyrenäen, Ski- und Wanderkultur sowie steuergünstige Einkaufsstraßen."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Altstadt von Andorra la Vella und Casa de la Vall",
+     "Thermalbad Caldea",
+     "Skigebiet Grandvalira",
+     "Tal Madriu-Perafita-Claror (UNESCO)",
+     "Heiligtum Meritxell",
+     "Aussichtspunkt Roc del Quer"
+    ],
+    "bestSeasons": "Dezember – März (Skisaison) und Juni – September (Wandern und Seen)",
+    "travelStyleTip": "Das Land ist klein; in Andorra la Vella übernachten und die Täler per Bus erkunden."
+   },
+   "religion": {
+    "primaryReligions": "Römisch-katholisch (~85 %), kleine protestantische und muslimische Gemeinden.",
+    "respectNorms": "In romanischen Kirchen Licht- und Ruheregeln befolgen; kein Blitz beim Fotografieren.",
+    "sacredSites": [
+     "Heiligtum Meritxell",
+     "Kirche Sant Joan de Caselles",
+     "Kirche Santa Coloma"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Katalanisch (Amtssprache). Spanisch, Französisch und Portugiesisch sind ebenfalls verbreitet.",
+    "englishProficiency": "Mittel in Hotels und Skigebieten; Spanisch oder Französisch ist verbreiteter.",
+    "phrases": [
+     {
+      "phrase": "Bon dia",
+      "meaning": "Guten Morgen / Hallo",
+      "translation": "Guten Morgen / Hallo",
+      "pronunciation": "bon DEE-ah"
+     },
+     {
+      "phrase": "Gràcies / Merci",
+      "meaning": "Danke",
+      "translation": "Danke",
+      "pronunciation": "GRAH-see-es / mer-SEE"
+     },
+     {
+      "phrase": "Si us plau",
+      "meaning": "Bitte",
+      "translation": "Bitte",
+      "pronunciation": "see oos PLOW"
+     },
+     {
+      "phrase": "Quant costa?",
+      "meaning": "Wie viel kostet das?",
+      "translation": "Wie viel kostet das?",
+      "pronunciation": "kwan KOS-tah?"
+     },
+     {
+      "phrase": "Adéu",
+      "meaning": "Auf Wiedersehen",
+      "translation": "Auf Wiedersehen",
+      "pronunciation": "ah-DEH-oo"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Mit dem Paréage von 1278 wurden der Bischof von Urgell und der Graf von Foix Ko-Fürsten; das Ko-Fürstentum besteht heute mit dem Bischof von Urgell und dem französischen Präsidenten fort. 1993 wurde die erste Verfassung angenommen.",
+    "milestones": [
+     "1278: Paréage-Vertrag",
+     "1419: Consell de la Terra (erste Versammlung)",
+     "1993: Verfassung und UN-Mitgliedschaft",
+     "2004: Madriu-Tal wird UNESCO-Welterbe"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Trinxat (Pfanne aus Kohl, Kartoffeln und Speck)",
+     "Escudella (deftiger Fleischeintopf)",
+     "Canelons (Cannelloni nach katalanischer Art)"
+    ],
+    "traditionalDrinks": [
+     "Ratafia (süßer Kräuterlikör)",
+     "Andorranischer Wein",
+     "Heiße Schokolade (xocolata desfeta)"
+    ],
+    "streetFoodAndDesserts": [
+     "Crema catalana",
+     "Coca (dünnes katalanisches Fladengebäck)",
+     "Lokaler Käse und Wurstwaren (embotits)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Karl der Große (legendärer Gründer, in der Nationalhymne genannt)",
+     "Albert Salvadó (Schriftsteller)",
+     "Joan Verdú (Olympia-Skirennläufer)"
+    ],
+    "strongSectors": [
+     "Tourismus und Skisport",
+     "Einzelhandel und steuergünstiges Einkaufen",
+     "Banken und Finanzen"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Es gilt der Euro, Karten werden überall akzeptiert. Andorra ist kein EU-Mitglied.",
+    "tippingCulture": "Trinkgeld ist keine Pflicht; 5-10 % im Restaurant sind eine nette Geste.",
+    "economicPillars": "Tourismus, Einzelhandel, Banken und Bauwirtschaft."
+   }
+  },
+  "itin": {
+   "routeName": "Andorra-Pyrenäenroute: Andorra la Vella, Ordino und Canillo",
+   "routeSummary": "Eine 4-tägige Route von den Steingassen der Hauptstadt und dem Caldea-Spa in die stillen Täler von Ordino und zu den Pisten und Aussichtspunkten von Canillo.",
+   "totalDays": 4,
+   "idealDurationText": "4-Tage-Pyrenäenroute",
+   "bestSeason": "Dezember – März (Skisaison) und Juni – September (Wandern und Seen)",
+   "transportMode": "Nationale Buslinien + zu Fuß (im Winter Skibusse)",
+   "paceLevel": "Gemütlich (Natur & Wellness)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stopp 1: Andorra la Vella und Escaldes",
+     "recommendedDuration": "2 Tage (Hauptstadt und Spa)",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "Barri Antic (Altstadt)",
+      "Casa de la Vall",
+      "Thermalbad Caldea",
+      "Einkaufsmeile Avinguda Meritxell"
+     ],
+     "activities": [
+      "In den Thermalbecken von Caldea entspannen.",
+      "Durch die Steingassen der Altstadt gehen.",
+      "Eine kurze Wanderung am Eingang des Madriu-Tals machen."
+     ],
+     "foodAndDrinks": [
+      "Trinxat",
+      "Escudella",
+      "Crema catalana"
+     ],
+     "criticalTips": [
+      "Beim Einkaufen an die Zollfreimengen denken.",
+      "Manche Läden sind sonntags geschlossen."
+     ],
+     "mapsQuery": "Andorra la Vella, Andorra"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stopp 2: Ordino",
+     "recommendedDuration": "1 Tag (Tal und Seen)",
+     "durationBadge": "1 Tag",
+     "highlights": [
+      "Seen von Tristaina",
+      "Naturpark Sorteny",
+      "Ortskern von Ordino"
+     ],
+     "activities": [
+      "Im Sommer zu den Tristaina-Seen wandern.",
+      "In Sorteny die Bergflora entdecken.",
+      "Den Ortskern mit Steinhäusern erkunden."
+     ],
+     "foodAndDrinks": [
+      "Embotits",
+      "Ratafia"
+     ],
+     "criticalTips": [
+      "Die Straße zu den Seen ist im Winter gesperrt.",
+      "Das Bergwetter wechselt schnell; Regenjacke mitnehmen."
+     ],
+     "mapsQuery": "Ordino, Andorra"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stopp 3: Canillo und Soldeu",
+     "recommendedDuration": "1 Tag (Berg und Ski)",
+     "durationBadge": "1 Tag",
+     "highlights": [
+      "Aussichtspunkt Roc del Quer",
+      "Heiligtum Meritxell",
+      "Pisten von Grandvalira",
+      "Kirche Sant Joan de Caselles"
+     ],
+     "activities": [
+      "Auf der Plattform über dem Abgrund am Roc del Quer gehen.",
+      "Im Winter in Grandvalira Ski fahren.",
+      "Im Sommer die Rodelbahn Tobotronc ausprobieren."
+     ],
+     "foodAndDrinks": [
+      "Canelons",
+      "Heiße Schokolade",
+      "Coca"
+     ],
+     "criticalTips": [
+      "Skipässe sind online günstiger.",
+      "Im Winter Straßenlage und Lawinenwarnungen prüfen."
+     ],
+     "mapsQuery": "Canillo, Andorra"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Trinxat (Pfanne aus Kohl, Kartoffeln und Speck)",
+     "Escudella (deftiger Fleischeintopf)",
+     "Canelons (Cannelloni nach katalanischer Art)"
+    ],
+    "drinks": [
+     "Ratafia (süßer Kräuterlikör)",
+     "Andorranischer Wein",
+     "Heiße Schokolade (xocolata desfeta)"
+    ],
+    "streetFoods": [
+     "Crema catalana",
+     "Coca (dünnes katalanisches Fladengebäck)",
+     "Lokaler Käse und Wurstwaren (embotits)"
+    ],
+    "diningAdvice": "Pyrenäenküche in Bordas (alten Steinscheunen) probieren; Mittagsmenüs (menú del dia) sind preiswert."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Bergkleidung im Zwiebellook",
+     "Wanderschuhe",
+     "Sonnenbrille und Sonnencreme",
+     "Im Winter Schneeketten"
+    ],
+    "safetyAndEtiquette": [
+     "In den Bergen auf markierten Wegen bleiben.",
+     "Zollfreimengen einhalten und in Kirchen leise sein."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Steckdosen Typ C/F (230 V) wie in der Türkei; kein Adapter nötig."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Das Leitungswasser stammt aus Bergquellen und ist sauber und trinkbar.",
+    "vaccines": [
+     "Standardimpfungen (Tetanus-Diphtherie, MMR)",
+     "Keine besonderen Impfungen nötig"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "116"
+   },
+   "tipping": {
+    "custom": "Trinkgeld ist freiwillig; 5-10 % bei gutem Service.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "Im Café genügt Aufrunden."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IGI (allgemeine Steuer) 4,5 %; keine Erstattung für Touristen",
+    "minSpend": "Entfällt",
+    "customsNote": "Andorra gehört nicht zur EU und erstattet Touristen keine Steuern; die Steuern sind ohnehin niedrig. Beim Grenzübertritt nach Spanien/Frankreich gelten Freimengen für Tabak, Alkohol und andere Waren, und es wird häufig kontrolliert."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$2 - $5",
+    "topCarriers": [
+     "Andorra Telecom"
+    ],
+    "airportSimTrapWarning": "Andorra Telecom ist der einzige Anbieter; das Land liegt außerhalb des EU-Roamings, ausländisches Roaming kann teuer sein. Touristen-SIM oder eine eSIM mit Andorra-Abdeckung besorgen."
+   },
+   "touristScams": [
+    {
+     "title": "Skidiebstahl",
+     "desc": "Vor Restaurants und Liften abgestellte Ski können gestohlen werden.",
+     "tip": "Ski abschließen oder die beiden Ski getrennt abstellen."
+    },
+    {
+     "title": "Zollstrafe",
+     "desc": "Wer zu viel billigen Tabak oder Alkohol kauft, zahlt an der Grenze Bußgeld.",
+     "tip": "Freimengen vorher prüfen."
+    },
+    {
+     "title": "Roaming-Überraschung",
+     "desc": "EU-Tarife gelten in Andorra nicht, die Rechnung kann hoch ausfallen.",
+     "tip": "Vor der Ankunft eine lokale SIM oder eSIM mit Andorra-Abdeckung besorgen."
+    }
+   ]
+  }
+ },
+ "es": {
+  "insights": {
+   "currency": "Euro (EUR)",
+   "plugType": "Tipo C, F (230V, 50Hz)",
+   "bestMonths": "Diciembre – marzo (temporada de esquí) y junio – septiembre (senderismo y lagos)",
+   "safety": {
+    "safetyScore": 85,
+    "safetyLevel": "Excepcionalmente Seguro",
+    "badgeColor": "bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-900/60",
+    "crimeRateSummary": "Uno de los países más seguros de Europa, con delincuencia muy baja. Los riesgos reales son las condiciones de montaña, los aludes y las carreteras cortadas por la nieve en invierno.",
+    "commonScams": [
+     "Robo de esquís y material dejados sin vigilancia en las estaciones",
+     "Compras por encima de la franquicia aduanera que acaban en multas en la frontera",
+     "Algún carterista en calles comerciales concurridas"
+    ],
+    "safeTravelTips": [
+     "Consulta el tiempo antes de las rutas de montaña; para rescates llama al 112.",
+     "Si conduces en invierno, lleva cadenas o neumáticos de invierno.",
+     "Respeta las franquicias de tabaco, alcohol y electrónica al volver a España o Francia."
+    ],
+    "emergencyNumbers": {
+     "police": "110",
+     "ambulance": "116",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "95 %+ 4G/5G en los valles; débil en senderos de alta montaña",
+    "costPerGbUsd": "~2 - 5 $",
+    "esimAvailability": "Buena",
+    "bestCarriers": [
+     "Andorra Telecom"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Adecuado",
+    "costLevel": "Moderado",
+    "singleTicketUsd": "2 - 3.50 $",
+    "dailyPassUsd": "5 - 10 $",
+    "popularRideApps": [
+     "Taxis por teléfono",
+     "Andbus / Alsa / Directbus (conexiones con Barcelona–Toulouse)",
+     "Google Maps"
+    ],
+    "taxiAdvice": "No hay apps tipo Uber; los taxis se piden por teléfono o en paradas. Las líneas nacionales de autobús son baratas y frecuentes."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "70 - 100 $",
+    "dailyBudgetMidrangeUsd": "150 - 250 $",
+    "budgetMealUsd": "15 - 25 $",
+    "coffeeUsd": "2 - 3 $",
+    "waterBottleUsd": "1 - 2 $",
+    "hostelDormUsd": "25 - 45 $",
+    "hotel3StarUsd": "80 - 150 $",
+    "flightCostIndex": "Moderado",
+    "flightTip": "Andorra no tiene aeropuerto ni tren; vuela a Barcelona o Toulouse y sigue en autobús (3-3,5 horas)."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Saludar en catalán (\"Bon dia\") es muy apreciado por los locales.",
+     "Se almuerza de 13 a 15 h y se cena después de las 20 h.",
+     "Guarda silencio durante la misa en las iglesias.",
+     "No te salgas de los senderos señalizados y llévate tu basura."
+    ],
+    "festivals": [
+     "Día de Meritxell (8 de septiembre, fiesta nacional)",
+     "Escudella de Sant Antoni (17 de enero)",
+     "Fiesta mayor de Andorra la Vella (principios de agosto)"
+    ],
+    "lifestyle": "Pequeños pueblos de valle en el Pirineo, cultura de esquí y senderismo, y calles comerciales con ventajas fiscales."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Barrio antiguo de Andorra la Vella y Casa de la Vall",
+     "Balneario termal Caldea",
+     "Estación de esquí Grandvalira",
+     "Valle de Madriu-Perafita-Claror (UNESCO)",
+     "Santuario de Meritxell",
+     "Mirador del Roc del Quer"
+    ],
+    "bestSeasons": "Diciembre – marzo (temporada de esquí) y junio – septiembre (senderismo y lagos)",
+    "travelStyleTip": "El país es pequeño; alójate en Andorra la Vella y recorre los valles en autobús."
+   },
+   "religion": {
+    "primaryReligions": "Católica romana (~85 %), pequeñas comunidades protestante y musulmana.",
+    "respectNorms": "Respeta las normas de luz y silencio en las iglesias románicas; no uses flash.",
+    "sacredSites": [
+     "Santuario de Meritxell",
+     "Iglesia de Sant Joan de Caselles",
+     "Iglesia de Santa Coloma"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Catalán (oficial). También son comunes el español, el francés y el portugués.",
+    "englishProficiency": "Moderado en hoteles y estaciones de esquí; el español o el francés están más extendidos.",
+    "phrases": [
+     {
+      "phrase": "Bon dia",
+      "meaning": "Buenos días / Hola",
+      "translation": "Buenos días / Hola",
+      "pronunciation": "bon DEE-ah"
+     },
+     {
+      "phrase": "Gràcies / Merci",
+      "meaning": "Gracias",
+      "translation": "Gracias",
+      "pronunciation": "GRAH-see-es / mer-SEE"
+     },
+     {
+      "phrase": "Si us plau",
+      "meaning": "Por favor",
+      "translation": "Por favor",
+      "pronunciation": "see oos PLOW"
+     },
+     {
+      "phrase": "Quant costa?",
+      "meaning": "¿Cuánto cuesta?",
+      "translation": "¿Cuánto cuesta?",
+      "pronunciation": "kwan KOS-tah?"
+     },
+     {
+      "phrase": "Adéu",
+      "meaning": "Adiós",
+      "translation": "Adiós",
+      "pronunciation": "ah-DEH-oo"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Con el Pareatge de 1278, el obispo de Urgel y el conde de Foix pasaron a ser copríncipes; el coprincipado continúa hoy con el obispo de Urgel y el presidente de Francia. La primera constitución se aprobó en 1993.",
+    "milestones": [
+     "1278: Pareatge",
+     "1419: Consell de la Terra (primera asamblea)",
+     "1993: Constitución e ingreso en la ONU",
+     "2004: el valle del Madriu, Patrimonio de la UNESCO"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Trinxat (col, patata y panceta salteadas)",
+     "Escudella (guiso contundente de carne)",
+     "Canelons (canelones a la catalana)"
+    ],
+    "traditionalDrinks": [
+     "Ratafía (licor dulce de hierbas)",
+     "Vino andorrano",
+     "Chocolate a la taza (xocolata desfeta)"
+    ],
+    "streetFoodAndDesserts": [
+     "Crema catalana",
+     "Coca (torta fina catalana)",
+     "Quesos y embutidos locales (embotits)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Carlomagno (fundador legendario, citado en el himno nacional)",
+     "Albert Salvadó (escritor)",
+     "Joan Verdú (esquiador olímpico)"
+    ],
+    "strongSectors": [
+     "Turismo y esquí",
+     "Comercio y compras con baja fiscalidad",
+     "Banca y finanzas"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Se usa el euro y las tarjetas se aceptan en todas partes. Andorra no es miembro de la UE.",
+    "tippingCulture": "La propina no es obligatoria; dejar un 5-10 % en restaurantes es un buen gesto.",
+    "economicPillars": "Turismo, comercio, banca y construcción."
+   }
+  },
+  "itin": {
+   "routeName": "Ruta pirenaica por Andorra: Andorra la Vella, Ordino y Canillo",
+   "routeSummary": "Ruta de 4 días desde las calles de piedra de la capital y el balneario Caldea hasta los tranquilos valles de Ordino y las pistas y miradores de Canillo.",
+   "totalDays": 4,
+   "idealDurationText": "Itinerario de 4 días por el Pirineo",
+   "bestSeason": "Diciembre – marzo (temporada de esquí) y junio – septiembre (senderismo y lagos)",
+   "transportMode": "Líneas nacionales de autobús + a pie (lanzaderas de esquí en invierno)",
+   "paceLevel": "Tranquilo (naturaleza y bienestar)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Andorra la Vella y Escaldes",
+     "recommendedDuration": "2 días (capital y spa)",
+     "durationBadge": "2 días",
+     "highlights": [
+      "Barri Antic (casco antiguo)",
+      "Casa de la Vall",
+      "Balneario termal Caldea",
+      "Zona comercial de la avenida Meritxell"
+     ],
+     "activities": [
+      "Relájate en las piscinas termales de Caldea.",
+      "Pasea por las calles de piedra del casco antiguo.",
+      "Haz una ruta corta a la entrada del valle del Madriu."
+     ],
+     "foodAndDrinks": [
+      "Trinxat",
+      "Escudella",
+      "Crema catalana"
+     ],
+     "criticalTips": [
+      "Recuerda las franquicias aduaneras al comprar.",
+      "Algunas tiendas cierran los domingos."
+     ],
+     "mapsQuery": "Andorra la Vella, Andorra"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Ordino",
+     "recommendedDuration": "1 día (valle y lagos)",
+     "durationBadge": "1 día",
+     "highlights": [
+      "Lagos de Tristaina",
+      "Parque Natural de Sorteny",
+      "Centro del pueblo de Ordino"
+     ],
+     "activities": [
+      "Sube en verano a los lagos de Tristaina.",
+      "Descubre la flora de montaña en Sorteny.",
+      "Recorre el centro del pueblo y sus casas de piedra."
+     ],
+     "foodAndDrinks": [
+      "Embotits",
+      "Ratafía"
+     ],
+     "criticalTips": [
+      "La carretera a los lagos está cerrada en invierno.",
+      "El tiempo en la montaña cambia rápido; lleva chubasquero."
+     ],
+     "mapsQuery": "Ordino, Andorra"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Canillo y Soldeu",
+     "recommendedDuration": "1 día (montaña y esquí)",
+     "durationBadge": "1 día",
+     "highlights": [
+      "Mirador del Roc del Quer",
+      "Santuario de Meritxell",
+      "Pistas de Grandvalira",
+      "Iglesia de Sant Joan de Caselles"
+     ],
+     "activities": [
+      "Camina por la pasarela sobre el vacío del Roc del Quer.",
+      "Esquía en Grandvalira en invierno.",
+      "Prueba en verano el trineo de montaña Tobotronc."
+     ],
+     "foodAndDrinks": [
+      "Canelons",
+      "Chocolate a la taza",
+      "Coca"
+     ],
+     "criticalTips": [
+      "Los forfaits son más baratos en línea.",
+      "En invierno consulta el estado de las carreteras y los avisos de aludes."
+     ],
+     "mapsQuery": "Canillo, Andorra"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Trinxat (col, patata y panceta salteadas)",
+     "Escudella (guiso contundente de carne)",
+     "Canelons (canelones a la catalana)"
+    ],
+    "drinks": [
+     "Ratafía (licor dulce de hierbas)",
+     "Vino andorrano",
+     "Chocolate a la taza (xocolata desfeta)"
+    ],
+    "streetFoods": [
+     "Crema catalana",
+     "Coca (torta fina catalana)",
+     "Quesos y embutidos locales (embotits)"
+    ],
+    "diningAdvice": "Prueba la cocina pirenaica en las bordas (antiguos pajares de piedra); el menú del día tiene buen precio."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Ropa de montaña por capas",
+     "Botas de senderismo",
+     "Gafas de sol y protector solar",
+     "Cadenas para la nieve en invierno"
+    ],
+    "safetyAndEtiquette": [
+     "No te salgas de los senderos señalizados en la montaña.",
+     "Respeta las franquicias aduaneras y guarda silencio en las iglesias."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Enchufes tipo C/F (230 V), como en Turquía; no hace falta adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "El agua del grifo procede de manantiales de montaña y es limpia y potable.",
+    "vaccines": [
+     "Vacunas rutinarias (tétanos-difteria, triple vírica)",
+     "No se requieren vacunas especiales"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "116"
+   },
+   "tipping": {
+    "custom": "La propina es opcional; un 5-10 % por buen servicio.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "En las cafeterías basta con redondear."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IGI (impuesto general) del 4,5 %; sin reembolso para turistas",
+    "minSpend": "No aplica",
+    "customsNote": "Andorra no pertenece a la UE y no reembolsa impuestos a turistas; la fiscalidad ya es baja. Al pasar a España/Francia rigen franquicias para tabaco, alcohol y otros productos, con controles frecuentes."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$2 - $5",
+    "topCarriers": [
+     "Andorra Telecom"
+    ],
+    "airportSimTrapWarning": "Andorra Telecom es el único operador; el país queda fuera de la itinerancia de la UE y el roaming extranjero puede ser caro. Hazte con una SIM turística o una eSIM que cubra Andorra."
+   },
+   "touristScams": [
+    {
+     "title": "Robo de esquís",
+     "desc": "Los esquís dejados ante restaurantes y remontes pueden desaparecer.",
+     "tip": "Ponles candado o deja cada esquí del par en un sitio distinto."
+    },
+    {
+     "title": "Multa aduanera",
+     "desc": "Comprar demasiado tabaco o alcohol barato acaba en multa en la frontera.",
+     "tip": "Consulta antes las franquicias."
+    },
+    {
+     "title": "Sorpresa del roaming",
+     "desc": "Las tarifas de la UE no cubren Andorra y la factura puede dispararse.",
+     "tip": "Consigue antes de llegar una SIM local o una eSIM que cubra Andorra."
+    }
+   ]
+  }
+ },
+ "ru": {
+  "insights": {
+   "currency": "Евро (EUR)",
+   "plugType": "Тип C, F (230V, 50Hz)",
+   "bestMonths": "Декабрь – март (горнолыжный сезон) и июнь – сентябрь (походы и озёра)",
+   "safety": {
+    "safetyScore": 85,
+    "safetyLevel": "Исключительно Безопасно",
+    "badgeColor": "bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-900/60",
+    "crimeRateSummary": "Одна из самых безопасных стран Европы с очень низкой преступностью. Реальные риски — горные условия, лавины и закрытые зимой из-за снега дороги.",
+    "commonScams": [
+     "Кража оставленных без присмотра лыж и снаряжения на курортах",
+     "Покупки сверх таможенной нормы, оборачивающиеся штрафом на границе",
+     "Редкие карманные кражи на оживлённых торговых улицах"
+    ],
+    "safeTravelTips": [
+     "Перед горными походами проверяйте погоду; для спасения звоните 112.",
+     "Зимой за рулём имейте цепи противоскольжения или зимние шины.",
+     "Возвращаясь в Испанию или Францию, соблюдайте нормы на табак, алкоголь и электронику."
+    ],
+    "emergencyNumbers": {
+     "police": "110",
+     "ambulance": "116",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "95 %+ 4G/5G в долинах; слабая связь на высокогорных тропах",
+    "costPerGbUsd": "~2 - 5 $",
+    "esimAvailability": "Хорошо",
+    "bestCarriers": [
+     "Andorra Telecom"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Удовлетворительно",
+    "costLevel": "Умеренно",
+    "singleTicketUsd": "2 - 3.50 $",
+    "dailyPassUsd": "5 - 10 $",
+    "popularRideApps": [
+     "Такси по телефону",
+     "Andbus / Alsa / Directbus (сообщение с Барселоной и Тулузой)",
+     "Google Maps"
+    ],
+    "taxiAdvice": "Приложений вроде Uber нет; такси вызывают по телефону или берут на стоянке. Национальные автобусы дешёвые и ходят регулярно."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "70 - 100 $",
+    "dailyBudgetMidrangeUsd": "150 - 250 $",
+    "budgetMealUsd": "15 - 25 $",
+    "coffeeUsd": "2 - 3 $",
+    "waterBottleUsd": "1 - 2 $",
+    "hostelDormUsd": "25 - 45 $",
+    "hotel3StarUsd": "80 - 150 $",
+    "flightCostIndex": "Умеренно",
+    "flightTip": "В Андорре нет аэропорта и железной дороги; летите в Барселону или Тулузу и дальше автобусом (3-3,5 часа)."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Местные ценят приветствие по-каталански («Bon dia»).",
+     "Обедают с 13 до 15 часов, ужинают после 20 часов.",
+     "Во время мессы в церквях соблюдайте тишину.",
+     "Не сходите с маркированных горных троп и уносите мусор с собой."
+    ],
+    "festivals": [
+     "День Мэричель (8 сентября, национальный праздник)",
+     "Эскуделья Сант-Антони (17 января)",
+     "Городской праздник Андорра-ла-Вельи (начало августа)"
+    ],
+    "lifestyle": "Небольшие городки в долинах Пиренеев, культура лыж и пеших походов, торговые улицы с налоговыми преимуществами."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Старый город Андорра-ла-Вельи и Каза-де-ла-Валь",
+     "Термальный комплекс Caldea",
+     "Горнолыжная зона Грандвалира",
+     "Долина Мадриу-Перафита-Кларор (ЮНЕСКО)",
+     "Святилище Мэричель",
+     "Смотровая площадка Рок-дель-Кер"
+    ],
+    "bestSeasons": "Декабрь – март (горнолыжный сезон) и июнь – сентябрь (походы и озёра)",
+    "travelStyleTip": "Страна маленькая: живите в Андорра-ла-Велье и путешествуйте по долинам на автобусе."
+   },
+   "religion": {
+    "primaryReligions": "Католицизм (~85 %), небольшие протестантская и мусульманская общины.",
+    "respectNorms": "В романских церквях соблюдайте правила освещения и тишины, не используйте вспышку.",
+    "sacredSites": [
+     "Святилище Мэричель",
+     "Церковь Сант-Жоан-де-Казельес",
+     "Церковь Санта-Колома"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Каталанский (государственный). Распространены также испанский, французский и португальский.",
+    "englishProficiency": "Средний в отелях и на курортах; испанский или французский распространены больше.",
+    "phrases": [
+     {
+      "phrase": "Bon dia",
+      "meaning": "Доброе утро / Здравствуйте",
+      "translation": "Доброе утро / Здравствуйте",
+      "pronunciation": "bon DEE-ah"
+     },
+     {
+      "phrase": "Gràcies / Merci",
+      "meaning": "Спасибо",
+      "translation": "Спасибо",
+      "pronunciation": "GRAH-see-es / mer-SEE"
+     },
+     {
+      "phrase": "Si us plau",
+      "meaning": "Пожалуйста",
+      "translation": "Пожалуйста",
+      "pronunciation": "see oos PLOW"
+     },
+     {
+      "phrase": "Quant costa?",
+      "meaning": "Сколько стоит?",
+      "translation": "Сколько стоит?",
+      "pronunciation": "kwan KOS-tah?"
+     },
+     {
+      "phrase": "Adéu",
+      "meaning": "До свидания",
+      "translation": "До свидания",
+      "pronunciation": "ah-DEH-oo"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "По договору Пареаж 1278 года епископ Урхельский и граф Фуа стали соправителями; соправительство сохраняется и сегодня — с епископом Урхельским и президентом Франции. Первая конституция принята в 1993 году.",
+    "milestones": [
+     "1278: договор Пареаж",
+     "1419: Consell de la Terra (первая ассамблея)",
+     "1993: конституция и вступление в ООН",
+     "2004: долина Мадриу в списке ЮНЕСКО"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Тринчат (капуста, картофель и бекон на сковороде)",
+     "Эскуделья (сытное мясное рагу)",
+     "Канелонс (каннеллони по-каталонски)"
+    ],
+    "traditionalDrinks": [
+     "Ратафия (сладкий травяной ликёр)",
+     "Андоррское вино",
+     "Горячий шоколад (xocolata desfeta)"
+    ],
+    "streetFoodAndDesserts": [
+     "Крема каталана",
+     "Кока (тонкая каталонская лепёшка)",
+     "Местные сыры и колбасы (embotits)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Карл Великий (легендарный основатель, упомянут в гимне)",
+     "Альберт Сальвадо (писатель)",
+     "Жоан Верду (олимпийский горнолыжник)"
+    ],
+    "strongSectors": [
+     "Туризм и горные лыжи",
+     "Розничная торговля и шопинг с низкими налогами",
+     "Банки и финансы"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Используется евро, карты принимают везде. Андорра не входит в ЕС.",
+    "tippingCulture": "Чаевые не обязательны; 5-10 % в ресторане — приятный жест.",
+    "economicPillars": "Туризм, розничная торговля, банки и строительство."
+   }
+  },
+  "itin": {
+   "routeName": "Пиренейский маршрут по Андорре: Андорра-ла-Велья, Ордино и Канильо",
+   "routeSummary": "4-дневный маршрут от каменных улочек столицы и спа Caldea к тихим долинам Ордино, склонам и смотровым площадкам Канильо.",
+   "totalDays": 4,
+   "idealDurationText": "4-дневный маршрут по Пиренеям",
+   "bestSeason": "Декабрь – март (горнолыжный сезон) и июнь – сентябрь (походы и озёра)",
+   "transportMode": "Национальные автобусы + пешком (зимой — лыжные шаттлы)",
+   "paceLevel": "Спокойный (природа и отдых)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Остановка 1: Андорра-ла-Велья и Эскальдес",
+     "recommendedDuration": "2 дня (столица и спа)",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Барри-Антик (Старый город)",
+      "Каза-де-ла-Валь",
+      "Термальный комплекс Caldea",
+      "Торговая зона авеню Мэричель"
+     ],
+     "activities": [
+      "Отдохните в термальных бассейнах Caldea.",
+      "Прогуляйтесь по каменным улочкам старого города.",
+      "Пройдите короткий маршрут у входа в долину Мадриу."
+     ],
+     "foodAndDrinks": [
+      "Тринчат",
+      "Эскуделья",
+      "Крема каталана"
+     ],
+     "criticalTips": [
+      "При покупках помните о таможенных нормах.",
+      "По воскресеньям некоторые магазины закрыты."
+     ],
+     "mapsQuery": "Andorra la Vella, Andorra"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Остановка 2: Ордино",
+     "recommendedDuration": "1 день (долина и озёра)",
+     "durationBadge": "1 день",
+     "highlights": [
+      "Озёра Тристайна",
+      "Природный парк Сортень",
+      "Центр деревни Ордино"
+     ],
+     "activities": [
+      "Летом поднимитесь к озёрам Тристайна.",
+      "Познакомьтесь с горной флорой в Сортене.",
+      "Осмотрите центр деревни с каменными домами."
+     ],
+     "foodAndDrinks": [
+      "Эмботитс",
+      "Ратафия"
+     ],
+     "criticalTips": [
+      "Дорога к озёрам зимой закрыта.",
+      "Погода в горах меняется быстро — возьмите дождевик."
+     ],
+     "mapsQuery": "Ordino, Andorra"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Остановка 3: Канильо и Сольдеу",
+     "recommendedDuration": "1 день (горы и лыжи)",
+     "durationBadge": "1 день",
+     "highlights": [
+      "Смотровая площадка Рок-дель-Кер",
+      "Святилище Мэричель",
+      "Склоны Грандвалиры",
+      "Церковь Сант-Жоан-де-Казельес"
+     ],
+     "activities": [
+      "Пройдитесь по платформе над пропастью на Рок-дель-Кер.",
+      "Зимой покатайтесь на лыжах в Грандвалире.",
+      "Летом попробуйте горные сани Tobotronc."
+     ],
+     "foodAndDrinks": [
+      "Канелонс",
+      "Горячий шоколад",
+      "Кока"
+     ],
+     "criticalTips": [
+      "Ски-пассы онлайн дешевле.",
+      "Зимой проверяйте состояние дорог и лавинные предупреждения."
+     ],
+     "mapsQuery": "Canillo, Andorra"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Тринчат (капуста, картофель и бекон на сковороде)",
+     "Эскуделья (сытное мясное рагу)",
+     "Канелонс (каннеллони по-каталонски)"
+    ],
+    "drinks": [
+     "Ратафия (сладкий травяной ликёр)",
+     "Андоррское вино",
+     "Горячий шоколад (xocolata desfeta)"
+    ],
+    "streetFoods": [
+     "Крема каталана",
+     "Кока (тонкая каталонская лепёшка)",
+     "Местные сыры и колбасы (embotits)"
+    ],
+    "diningAdvice": "Попробуйте пиренейскую кухню в бордах (старых каменных амбарах); обеденные меню (menú del dia) выгодны."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Многослойная горная одежда",
+     "Треккинговые ботинки",
+     "Солнцезащитные очки и крем",
+     "Зимой — цепи противоскольжения"
+    ],
+    "safetyAndEtiquette": [
+     "В горах не сходите с маркированных троп.",
+     "Соблюдайте таможенные нормы и тишину в церквях."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Розетки типа C/F (230 В), как в Турции; переходник не нужен."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Водопроводная вода из горных источников чистая и пригодна для питья.",
+    "vaccines": [
+     "Плановые прививки (столбняк-дифтерия, КПК)",
+     "Специальные прививки не требуются"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "116"
+   },
+   "tipping": {
+    "custom": "Чаевые по желанию; 5-10 % за хорошее обслуживание.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "В кафе достаточно округлить сумму."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IGI (общий налог) 4,5 %; возврата для туристов нет",
+    "minSpend": "Не применяется",
+    "customsNote": "Андорра не входит в ЕС и не возвращает налоги туристам; налоги и так низкие. При въезде в Испанию/Францию действуют нормы беспошлинного ввоза табака, алкоголя и других товаров, проверки частые."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$2 - $5",
+    "topCarriers": [
+     "Andorra Telecom"
+    ],
+    "airportSimTrapWarning": "Andorra Telecom — единственный оператор; страна вне роуминга ЕС, иностранный роуминг может быть дорогим. Купите туристическую SIM или eSIM с покрытием Андорры."
+   },
+   "touristScams": [
+    {
+     "title": "Кража лыж",
+     "desc": "Лыжи, оставленные у ресторанов и подъёмников, могут украсть.",
+     "tip": "Используйте замок или оставляйте лыжи из пары в разных местах."
+    },
+    {
+     "title": "Таможенный штраф",
+     "desc": "За слишком много дешёвого табака или алкоголя штрафуют на границе.",
+     "tip": "Заранее уточните нормы."
+    },
+    {
+     "title": "Сюрприз роуминга",
+     "desc": "Тарифы ЕС не действуют в Андорре, счёт может оказаться большим.",
+     "tip": "До приезда купите местную SIM или eSIM с покрытием Андорры."
+    }
+   ]
+  }
+ }
+}

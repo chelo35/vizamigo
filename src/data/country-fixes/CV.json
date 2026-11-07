@@ -1,0 +1,1887 @@
+{
+ "tr": {
+  "insights": {
+   "currency": "Yeşil Burun Esküdosu (CVE; euroya sabit, 1 € ≈ 110 CVE)",
+   "plugType": "Tip C, F (230V, 50Hz)",
+   "bestMonths": "Kasım – Haziran (kurak ve güneşli; Aralık – Mart rüzgârlı, kite sörfü için ideal) · Ağustos – Ekim kısa sağanaklı, sıcak ve nemli yağmur mevsimi",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Güvenli",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Genel olarak sakin ve misafirperver bir ülkedir. Praia'da (Plateau, Achada Santo António çevresi) ve Mindelo'da gece kapkaç ve gasp, Sal'daki Santa Maria plajında eşya hırsızlığı görülür.",
+    "commonScams": [
+     "Sal ve Boa Vista'da “hediye” bileklik takıp sonra para isteyen veya fahiş fiyatlı hediyelik satan satıcılar vardır.",
+     "Sokakta satılan ucuz tur ve quad kiralamalarında sigorta yoktur, hasar için fahiş para istenebilir.",
+     "Taksimetre olmadığından varışta fahiş ücret istenebilir."
+    ],
+    "safeTravelTips": [
+     "Praia ve Mindelo'da gece yürümek yerine taksi kullanın.",
+     "Atlantik akıntıları güçlüdür; yalnızca korunaklı ve işaretli plajlarda yüzün.",
+     "Adalar arası feribot seferleri hava nedeniyle iptal olabilir; dönüş uçuşundan önce bir gün pay bırakın."
+    ],
+    "emergencyNumbers": {
+     "police": "132",
+     "ambulance": "130",
+     "general": "132"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Ana adalarda ve kasabalarda iyi 4G; Santo Antão ve Fogo'nun dağlık bölgelerinde zayıf",
+    "costPerGbUsd": "1.50 - 4 $",
+    "esimAvailability": "Orta (uluslararası eSIM'ler çalışır; yerel SIM pasaportla alınır)",
+    "bestCarriers": [
+     "CVMóvel (Cabo Verde Telecom)",
+     "Unitel T+"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Orta (adalarda aluguer minibüsleri ve taksi; adalar arası feribot ve iç hat uçuşları)",
+    "costLevel": "Orta",
+    "singleTicketUsd": "Aluguer 1 - 5 $; feribot Mindelo – Porto Novo ~9 - 12 $",
+    "dailyPassUsd": "Yok (şoförlü ada turu 60 - 100 $/gün)",
+    "popularRideApps": [
+     "Uber/Bolt yok – taksi ve aluguer"
+    ],
+    "taxiAdvice": "Araç çağırma uygulaması yoktur. Taksiler taksimetresizdir; fiyatı önceden konuşun. Ucuz ve yerel seçenek, dolunca kalkan paylaşımlı aluguer minibüsleridir."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "40 - 65 $",
+    "dailyBudgetMidrangeUsd": "100 - 170 $",
+    "budgetMealUsd": "6 - 12 $",
+    "coffeeUsd": "1 - 2 $",
+    "waterBottleUsd": "0.80 - 1.50 $",
+    "hostelDormUsd": "15 - 25 $",
+    "hotel3StarUsd": "50 - 110 $",
+    "flightCostIndex": "Orta – yüksek (Türkiye'den direkt uçuş yok)",
+    "flightTip": "Sal (SID), Boa Vista (BVC), Praia (RAI) ve São Vicente'ye (VXE) Lizbon (TAP) aktarmalı veya Avrupa'dan charter uçuşlarla ulaşılır. Adalar arası uçuş ve feribot saatlerini önceden kontrol edin."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Herkese selam verin (“Bon dia”); “morabeza” denen misafirperverlik ulusal gururdur.",
+     "Kasaba merkezlerinde mayo veya çıplak üstle dolaşmayın.",
+     "Acele etmeyin; “no stress” adaların yaşam ritmidir."
+    ],
+    "festivals": [
+     "Mindelo Karnavalı (Şubat)",
+     "Baía das Gatas Müzik Festivali (Ağustos, São Vicente)",
+     "São João Bayramı (Haziran, Porto Novo ve Brava)"
+    ],
+    "lifestyle": "Afrika ve Portekiz kültürünün harmanlandığı, morna ve coladeira müziğinin günlük hayatın parçası olduğu, nüfusunun büyük kısmı yurt dışında yaşayan güçlü diasporaya sahip sakin bir ada ülkesi."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Cidade Velha (UNESCO, Santiago)",
+     "Mindelo ve Monte Verde (São Vicente)",
+     "Santo Antão vadileri (Paul, Ribeira Grande, Cova krateri)",
+     "Fogo Yanardağı ve Chã das Caldeiras",
+     "Pedra de Lume tuz krateri (Sal)",
+     "Santa Maria plajı (Sal)"
+    ],
+    "bestSeasons": "Kasım – Haziran (kurak ve güneşli; Aralık – Mart rüzgârlı, kite sörfü için ideal) · Ağustos – Ekim kısa sağanaklı, sıcak ve nemli yağmur mevsimi",
+    "travelStyleTip": "Her ada farklıdır: Sal ve Boa Vista plaj, Santiago kültür, São Vicente müzik, Santo Antão ve Fogo yürüyüş içindir. 2 – 3 adayı uçak ve feribotla birleştirmek en iyi deneyimi sunar."
+   },
+   "religion": {
+    "primaryReligions": "Katolik (~%77), Protestan ve diğer Hristiyan (Nasıralı, Adventist ~%10), dinsiz ve diğer",
+    "respectNorms": "Kiliselerde omuz ve dizler kapalı olmalı; köy bayramlarındaki dini alaylara saygıyla eşlik edin.",
+    "sacredSites": [
+     "Nossa Senhora do Rosário Kilisesi (1495, Cidade Velha)",
+     "Cidade Velha katedral kalıntıları",
+     "Nossa Senhora da Luz Kilisesi (Mindelo)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Resmî dil Portekizcedir; günlük dil Yeşil Burun Kreolü'dür (Kriolu/Kabuverdianu) ve adalara göre lehçe farkları vardır (Santiago'da Badiu, São Vicente'de Sanvisentí).",
+    "englishProficiency": "Orta; turistik Sal ve Boa Vista'da iyi, diğer adalarda Portekizce/Fransızca daha işe yarar.",
+    "phrases": [
+     {
+      "phrase": "Bon dia!",
+      "meaning": "Günaydın! / Merhaba (Kriolu)",
+      "translation": "Günaydın! / Merhaba (Kriolu)",
+      "pronunciation": "bon di-a"
+     },
+     {
+      "phrase": "Modi ki bu sta?",
+      "meaning": "Nasılsın? (Santiago Kriolu'su)",
+      "translation": "Nasılsın? (Santiago Kriolu'su)",
+      "pronunciation": "mo-di ki bu sta"
+     },
+     {
+      "phrase": "Obrigadu",
+      "meaning": "Teşekkürler (Kriolu)",
+      "translation": "Teşekkürler (Kriolu)",
+      "pronunciation": "o-bri-ga-du"
+     },
+     {
+      "phrase": "Kantu ki e?",
+      "meaning": "Ne kadar? (Kriolu)",
+      "translation": "Ne kadar? (Kriolu)",
+      "pronunciation": "kan-tu ki e"
+     },
+     {
+      "phrase": "Nu bai!",
+      "meaning": "Hadi gidelim! (Kriolu)",
+      "translation": "Hadi gidelim! (Kriolu)",
+      "pronunciation": "nu bay"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Adalar 1460'larda Portekizliler gelene kadar ıssızdı. Santiago'daki Ribeira Grande (bugünkü Cidade Velha) tropik bölgedeki ilk Avrupa kolonyal kenti ve Atlantik köle ticaretinin önemli bir durağı oldu. 19. yüzyılda Mindelo kömür limanı olarak büyüdü. Amílcar Cabral'ın önderliğindeki mücadelenin ardından 5 Temmuz 1975'te bağımsızlık kazanıldı; 1991'den beri çok partili istikrarlı bir demokrasidir.",
+    "milestones": [
+     "1462: Ribeira Grande'nin kuruluşu",
+     "1975: Bağımsızlık",
+     "2009: Cidade Velha UNESCO listesinde",
+     "2024: DSÖ sıtmadan arınmış ülke sertifikası"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Cachupa (mısır, fasulye ve et/balık yahnisi – milli yemek)",
+     "Izgara ıstakoz ve taze balık (garoupa, serra)",
+     "Caldo de peixe (balık çorbası)"
+    ],
+    "traditionalDrinks": [
+     "Grogue (şeker kamışı romu, Santo Antão)",
+     "Ponche (grogue ve pekmezli likör)",
+     "Fogo şarabı ve kahvesi"
+    ],
+    "streetFoodAndDesserts": [
+     "Pastel com diabo dentro (acılı ton balıklı kızarmış börek)",
+     "Cuscus (ballı mısır keki)",
+     "Doce de papaia ve keçi peyniri"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Cesária Évora (“yalınayak diva”, morna şarkıcısı)",
+     "Amílcar Cabral (bağımsızlık önderi)",
+     "Mayra Andrade (şarkıcı)"
+    ],
+    "strongSectors": [
+     "Turizm",
+     "Balıkçılık ve balık konserveciliği",
+     "Diaspora havaleleri ve hizmetler"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Esküdo euroya sabittir; turistik bölgelerde euro sık kabul edilir ama para üstü esküdo verilir. Sal ve Boa Vista'da kart yaygındır, diğer adalarda ve aluguer'de nakit gerekir; ATM'ler (Vinti4 ağı) kasabalarda bulunur.",
+    "tippingCulture": "Bahşiş isteğe bağlıdır ama takdir edilir. Restoranlarda %5 – 10 veya hesabı yuvarlamak yeterlidir; rehber ve şoförlere günlük küçük bahşiş verilir.",
+    "economicPillars": "Turizm, balıkçılık, diaspora havaleleri, hizmetler ve küçük ölçekli tarım."
+   }
+  },
+  "itin": {
+   "routeName": "Yeşil Burun Ada Turu: Sal, Santiago, São Vicente ve Santo Antão",
+   "routeSummary": "Sal'ın beyaz plajları ve tuz krateriyle başlayıp Santiago'da tarihi Cidade Velha'ya, São Vicente'de Mindelo'nun müzik sahnesine ve son olarak feribotla Santo Antão'nun yeşil vadilerinde yürüyüşe uzanan 11 günlük ada rotası.",
+   "totalDays": 11,
+   "idealDurationText": "11 Günlük Rota",
+   "bestSeason": "Kasım – Haziran (kurak ve güneşli; Aralık – Mart rüzgârlı, kite sörfü için ideal) · Ağustos – Ekim kısa sağanaklı, sıcak ve nemli yağmur mevsimi",
+   "transportMode": "İç hat uçuşları (Sal – Praia ~50 dk, Praia – São Vicente ~50 dk), feribot Mindelo – Porto Novo (~1 sa), adalarda aluguer ve şoförlü araç",
+   "paceLevel": "Dengeli (plaj + kültür + yürüyüş)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "1. Durak: Sal (Santa Maria)",
+     "recommendedDuration": "3 Gün",
+     "durationBadge": "3 Gün",
+     "highlights": [
+      "Santa Maria plajı ve iskelesi",
+      "Pedra de Lume tuz krateri",
+      "Buracona doğal havuzu ve “Mavi Göz”"
+     ],
+     "activities": [
+      "Pedra de Lume'de tuzlu suda batmadan yüzün.",
+      "Kite sörfü veya rüzgâr sörfü dersi alın.",
+      "İskelede balıkçıların sabah avını izleyin."
+     ],
+     "foodAndDrinks": [
+      "Izgara serra (wahoo) ve Strela birası",
+      "Pastel com diabo dentro"
+     ],
+     "criticalTips": [
+      "Rüzgâr güçlüdür; güneş yanığına karşı yüksek koruma kullanın.",
+      "Plajda değerli eşyalarınızı yalnız bırakmayın."
+     ],
+     "mapsQuery": "Santa Maria, Sal, Cabo Verde"
+    },
+    {
+     "stopNumber": 2,
+     "name": "2. Durak: Santiago (Praia ve Cidade Velha)",
+     "recommendedDuration": "2 Gün",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "Cidade Velha ve Real de São Filipe kalesi",
+      "Praia Plateau ve Sucupira pazarı",
+      "Serra Malagueta ve Tarrafal plajı"
+     ],
+     "activities": [
+      "Cidade Velha'da Rua Banana'nın taş evleri arasında yürüyün.",
+      "Sucupira pazarında renkli kumaş ve meyveleri görün.",
+      "Adanın içinden Tarrafal'a manzaralı yolculuk yapın."
+     ],
+     "foodAndDrinks": [
+      "Cachupa",
+      "Grogue ve ponche tadımı"
+     ],
+     "criticalTips": [
+      "Praia'da gece taksi kullanın.",
+      "Aluguer'ler Sucupira'dan dolunca kalkar; sabah erken gidin."
+     ],
+     "mapsQuery": "Cidade Velha, Santiago, Cabo Verde"
+    },
+    {
+     "stopNumber": 3,
+     "name": "3. Durak: São Vicente (Mindelo)",
+     "recommendedDuration": "2 Gün",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "Mindelo'nun renkli sömürge dönemi binaları",
+      "Canlı morna müziği",
+      "Monte Verde ve Baía das Gatas"
+     ],
+     "activities": [
+      "Akşam bir barda canlı morna ve coladeira dinleyin.",
+      "Balık pazarı ve Torre de Belém kopyasını görün.",
+      "Monte Verde'ye çıkıp körfez manzarasını izleyin."
+     ],
+     "foodAndDrinks": [
+      "Caldo de peixe",
+      "Cachupa refogada (kahvaltıda kızartılmış cachupa)"
+     ],
+     "criticalTips": [
+      "Müzik geceleri geç başlar; gece dönüşte taksi kullanın.",
+      "Karnaval döneminde konaklama aylar önce dolar."
+     ],
+     "mapsQuery": "Mindelo, São Vicente, Cabo Verde"
+    },
+    {
+     "stopNumber": 4,
+     "name": "4. Durak: Santo Antão",
+     "recommendedDuration": "4 Gün",
+     "durationBadge": "4 Gün",
+     "highlights": [
+      "Cova krateri – Paul Vadisi yürüyüşü",
+      "Ponta do Sol – Fontainhas kıyı patikası",
+      "Ribeira Grande vadisi ve şeker kamışı tarlaları"
+     ],
+     "activities": [
+      "Paul Vadisi'nde yokuş aşağı yürüyüş yapın.",
+      "Bir “trapiche”de geleneksel grogue üretimini izleyin.",
+      "Fontainhas köyünün manzarasını fotoğraflayın."
+     ],
+     "foodAndDrinks": [
+      "Grogue ve ev yapımı keçi peyniri",
+      "Doce de papaia"
+     ],
+     "criticalTips": [
+      "Patikalar dik ve kaygandır; sağlam yürüyüş ayakkabısı giyin.",
+      "Dönüş feribotu hava nedeniyle iptal olabilir; uçuştan önce bir gün pay bırakın."
+     ],
+     "mapsQuery": "Paul, Santo Antão, Cabo Verde"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Cachupa (mısır, fasulye ve et/balık yahnisi – milli yemek)",
+     "Izgara ıstakoz ve taze balık (garoupa, serra)",
+     "Caldo de peixe (balık çorbası)"
+    ],
+    "drinks": [
+     "Grogue (şeker kamışı romu, Santo Antão)",
+     "Ponche (grogue ve pekmezli likör)",
+     "Fogo şarabı ve kahvesi"
+    ],
+    "streetFoods": [
+     "Pastel com diabo dentro (acılı ton balıklı kızarmış börek)",
+     "Cuscus (ballı mısır keki)",
+     "Doce de papaia ve keçi peyniri"
+    ],
+    "diningAdvice": "Cachupa günün her saati yenir; sabah kızartılmış “cachupa refogada” yumurtayla servis edilir. Taze balık ve ıstakoz için limana yakın küçük lokantaları tercih edin."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Yüksek koruyuculu güneş kremi ve şapka",
+     "Rüzgârlık (adalar çok rüzgârlıdır)",
+     "Santo Antão için yürüyüş ayakkabısı",
+     "Euro nakit (küçük banknotlar)"
+    ],
+    "safetyAndEtiquette": [
+     "Herkese “Bon dia” diye selam verin.",
+     "Kasabada mayoyla dolaşmayın.",
+     "Yalnızca işaretli plajlarda yüzün."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Avrupa tipi C ve F (Schuko) prizler kullanılır; Türk fişleri adaptörsüz uyar."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Şebeke suyu çoğunlukla deniz suyu arıtmasıyla üretilir ve içilmesi önerilmez; şişe su için.",
+    "vaccines": [
+     "Rutin aşılar ve hepatit A",
+     "Tifo (kırsal geziler için)",
+     "Dang hummasına karşı sivrisinek koruması (yağmur mevsimi)",
+     "Sarıhumma sertifikası yalnızca riskli bir ülkeden geliyorsanız istenir; ülke 2024'ten beri sıtmadan arınmış kabul edilir"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "130"
+   },
+   "tipping": {
+    "custom": "Bahşiş isteğe bağlıdır ama takdir edilir.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Restoranlarda %5 – 10 veya hesabı yuvarlamak yeterlidir; rehber ve şoförlere günlük küçük bahşiş verilir."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Turiste iade yok (IVA %15)",
+    "minSpend": "Uygulanmaz",
+    "customsNote": "Yeşil Burun'da turiste KDV iadesi yoktur; otellerde gecelik küçük bir turizm vergisi alınır. Deniz kaplumbağası ürünleri, mercan ve kabukların çıkarılması yasaktır; plajdan kum götürmeyin."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.50 - $4",
+    "topCarriers": [
+     "CVMóvel (Cabo Verde Telecom)",
+     "Unitel T+"
+    ],
+    "airportSimTrapWarning": "Sal ve Praia havalimanlarında CVMóvel ve Unitel T+ noktaları bulunur, ancak kasaba mağazalarında paketler genellikle daha uygundur; Santo Antão dağlarında sinyal kesilebilir."
+   },
+   "touristScams": [
+    {
+     "title": "Israrcı plaj satıcıları",
+     "desc": "Sal ve Boa Vista'da “hediye” bileklik takıp sonra para isteyen veya fahiş fiyatlı hediyelik satan satıcılar vardır.",
+     "tip": "Kibarca “não, obrigado” deyip yürümeye devam edin."
+    },
+    {
+     "title": "Lisanssız tur ve quad kiralama",
+     "desc": "Sokakta satılan ucuz tur ve quad kiralamalarında sigorta yoktur, hasar için fahiş para istenebilir.",
+     "tip": "Otel veya lisanslı acente üzerinden rezervasyon yapın ve aracı teslim alırken fotoğraflayın."
+    },
+    {
+     "title": "Pazarlıksız taksi",
+     "desc": "Taksimetre olmadığından varışta fahiş ücret istenebilir.",
+     "tip": "Fiyatı binmeden netleştirin; havalimanı ücretleri genellikle panoda yazılıdır."
+    }
+   ]
+  }
+ },
+ "en": {
+  "insights": {
+   "currency": "Cape Verdean Escudo (CVE; pegged to the euro, 1 € ≈ 110 CVE)",
+   "plugType": "Type C, F (230V, 50Hz)",
+   "bestMonths": "November – June (dry and sunny; December – March windy, ideal for kitesurfing) · August – October short showers, hot and humid rainy season",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Safe",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Generally a calm, welcoming country. Praia (around Plateau and Achada Santo António) and Mindelo see night-time bag snatching and muggings, and thefts occur on Santa Maria beach on Sal.",
+    "commonScams": [
+     "On Sal and Boa Vista, vendors tie on a “gift” bracelet and then demand money, or sell overpriced souvenirs.",
+     "Cheap street-sold tours and quad rentals have no insurance, and steep damage fees may be demanded.",
+     "With no meters, an inflated fare may be demanded on arrival."
+    ],
+    "safeTravelTips": [
+     "In Praia and Mindelo take a taxi rather than walking at night.",
+     "Atlantic currents are strong; swim only at sheltered, marked beaches.",
+     "Inter-island ferries can be cancelled by weather; leave a buffer day before your flight home."
+    ],
+    "emergencyNumbers": {
+     "police": "132",
+     "ambulance": "130",
+     "general": "132"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Good 4G on the main islands and in towns; weak in the mountains of Santo Antão and Fogo",
+    "costPerGbUsd": "1.50 - 4 $",
+    "esimAvailability": "Moderate (international eSIMs work; local SIMs need a passport)",
+    "bestCarriers": [
+     "CVMóvel (Cabo Verde Telecom)",
+     "Unitel T+"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Moderate (aluguer minibuses and taxis on the islands; inter-island ferries and domestic flights)",
+    "costLevel": "Moderate",
+    "singleTicketUsd": "Aluguer 1 - 5 $; ferry Mindelo – Porto Novo ~9 - 12 $",
+    "dailyPassUsd": "None (island tour with driver 60 - 100 $/day)",
+    "popularRideApps": [
+     "No Uber/Bolt – taxis and aluguer"
+    ],
+    "taxiAdvice": "There are no ride-hailing apps. Taxis have no meters, so agree the fare first. The cheap local option is the shared aluguer minibus that leaves when full."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "40 - 65 $",
+    "dailyBudgetMidrangeUsd": "100 - 170 $",
+    "budgetMealUsd": "6 - 12 $",
+    "coffeeUsd": "1 - 2 $",
+    "waterBottleUsd": "0.80 - 1.50 $",
+    "hostelDormUsd": "15 - 25 $",
+    "hotel3StarUsd": "50 - 110 $",
+    "flightCostIndex": "Moderate – high (no direct flights from Türkiye)",
+    "flightTip": "Sal (SID), Boa Vista (BVC), Praia (RAI) and São Vicente (VXE) are reached via Lisbon (TAP) or on European charter flights. Check inter-island flight and ferry schedules in advance."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Greet everyone (“Bon dia”); the hospitality called “morabeza” is a point of national pride.",
+     "Don't walk around town centres in swimwear or shirtless.",
+     "Don't rush; “no stress” is the islands' rhythm of life."
+    ],
+    "festivals": [
+     "Mindelo Carnival (February)",
+     "Baía das Gatas Music Festival (August, São Vicente)",
+     "Festa de São João (June, Porto Novo and Brava)"
+    ],
+    "lifestyle": "A relaxed island nation blending African and Portuguese culture, where morna and coladeira music are part of daily life and a large diaspora lives abroad."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Cidade Velha (UNESCO, Santiago)",
+     "Mindelo and Monte Verde (São Vicente)",
+     "Santo Antão valleys (Paul, Ribeira Grande, Cova crater)",
+     "Fogo Volcano and Chã das Caldeiras",
+     "Pedra de Lume salt crater (Sal)",
+     "Santa Maria beach (Sal)"
+    ],
+    "bestSeasons": "November – June (dry and sunny; December – March windy, ideal for kitesurfing) · August – October short showers, hot and humid rainy season",
+    "travelStyleTip": "Each island is different: Sal and Boa Vista for beaches, Santiago for culture, São Vicente for music, Santo Antão and Fogo for hiking. Combining 2 – 3 islands by plane and ferry gives the best experience."
+   },
+   "religion": {
+    "primaryReligions": "Catholic (~77%), Protestant and other Christian (Nazarene, Adventist ~10%), no religion and other",
+    "respectNorms": "Cover shoulders and knees in churches; follow village religious processions respectfully.",
+    "sacredSites": [
+     "Church of Nossa Senhora do Rosário (1495, Cidade Velha)",
+     "Ruins of Cidade Velha cathedral",
+     "Church of Nossa Senhora da Luz (Mindelo)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Portuguese is official; the everyday language is Cape Verdean Creole (Kriolu/Kabuverdianu), with dialect differences between islands (Badiu on Santiago, Sanvisentí on São Vicente).",
+    "englishProficiency": "Moderate; good on touristy Sal and Boa Vista, while Portuguese/French helps more on other islands.",
+    "phrases": [
+     {
+      "phrase": "Bon dia!",
+      "meaning": "Good morning! / Hello (Kriolu)",
+      "translation": "Good morning! / Hello (Kriolu)",
+      "pronunciation": "bon di-a"
+     },
+     {
+      "phrase": "Modi ki bu sta?",
+      "meaning": "How are you? (Santiago Kriolu)",
+      "translation": "How are you? (Santiago Kriolu)",
+      "pronunciation": "mo-di ki bu sta"
+     },
+     {
+      "phrase": "Obrigadu",
+      "meaning": "Thank you (Kriolu)",
+      "translation": "Thank you (Kriolu)",
+      "pronunciation": "o-bri-ga-du"
+     },
+     {
+      "phrase": "Kantu ki e?",
+      "meaning": "How much is it? (Kriolu)",
+      "translation": "How much is it? (Kriolu)",
+      "pronunciation": "kan-tu ki e"
+     },
+     {
+      "phrase": "Nu bai!",
+      "meaning": "Let's go! (Kriolu)",
+      "translation": "Let's go! (Kriolu)",
+      "pronunciation": "nu bay"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "The islands were uninhabited until the Portuguese arrived in the 1460s. Ribeira Grande on Santiago (today's Cidade Velha) became the first European colonial city in the tropics and a key stop in the Atlantic slave trade. In the 19th century Mindelo grew as a coaling port. After the struggle led by Amílcar Cabral, independence came on 5 July 1975; it has been a stable multi-party democracy since 1991.",
+    "milestones": [
+     "1462: Founding of Ribeira Grande",
+     "1975: Independence",
+     "2009: Cidade Velha inscribed by UNESCO",
+     "2024: WHO certifies the country malaria-free"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Cachupa (corn, bean and meat/fish stew – the national dish)",
+     "Grilled lobster and fresh fish (grouper, wahoo)",
+     "Caldo de peixe (fish soup)"
+    ],
+    "traditionalDrinks": [
+     "Grogue (sugar-cane rum, Santo Antão)",
+     "Ponche (grogue and molasses liqueur)",
+     "Fogo wine and coffee"
+    ],
+    "streetFoodAndDesserts": [
+     "Pastel com diabo dentro (spicy tuna fried pastry)",
+     "Cuscus (corn cake with honey)",
+     "Doce de papaia with goat's cheese"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Cesária Évora (the “barefoot diva” of morna)",
+     "Amílcar Cabral (independence leader)",
+     "Mayra Andrade (singer)"
+    ],
+    "strongSectors": [
+     "Tourism",
+     "Fishing and fish canning",
+     "Diaspora remittances and services"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "The escudo is pegged to the euro; euros are often accepted in tourist areas, but change comes in escudos. Cards are common on Sal and Boa Vista, while other islands and alugueres need cash; ATMs (Vinti4 network) are found in towns.",
+    "tippingCulture": "Tipping is optional but appreciated. 5 – 10% in restaurants or rounding up is enough; guides and drivers get a small daily tip.",
+    "economicPillars": "Tourism, fishing, diaspora remittances, services and small-scale farming."
+   }
+  },
+  "itin": {
+   "routeName": "Cape Verde Island Hop: Sal, Santiago, São Vicente & Santo Antão",
+   "routeSummary": "An 11-day island route from Sal's white beaches and salt crater to historic Cidade Velha on Santiago, Mindelo's music scene on São Vicente and finally, by ferry, hikes through the green valleys of Santo Antão.",
+   "totalDays": 11,
+   "idealDurationText": "11-Day Itinerary",
+   "bestSeason": "November – June (dry and sunny; December – March windy, ideal for kitesurfing) · August – October short showers, hot and humid rainy season",
+   "transportMode": "Domestic flights (Sal – Praia ~50 min, Praia – São Vicente ~50 min), ferry Mindelo – Porto Novo (~1 h), alugueres and cars with drivers on the islands",
+   "paceLevel": "Balanced (beach + culture + hiking)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stop 1: Sal (Santa Maria)",
+     "recommendedDuration": "3 Days",
+     "durationBadge": "3 Days",
+     "highlights": [
+      "Santa Maria beach and pier",
+      "Pedra de Lume salt crater",
+      "Buracona natural pool and the “Blue Eye”"
+     ],
+     "activities": [
+      "Float effortlessly in the salt water at Pedra de Lume.",
+      "Take a kitesurfing or windsurfing lesson.",
+      "Watch fishermen land the morning catch at the pier."
+     ],
+     "foodAndDrinks": [
+      "Grilled serra (wahoo) with a Strela beer",
+      "Pastel com diabo dentro"
+     ],
+     "criticalTips": [
+      "The wind is strong and hides the sun's strength; use high-SPF sunscreen.",
+      "Never leave valuables unattended on the beach."
+     ],
+     "mapsQuery": "Santa Maria, Sal, Cabo Verde"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stop 2: Santiago (Praia & Cidade Velha)",
+     "recommendedDuration": "2 Days",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "Cidade Velha and the Real de São Filipe fortress",
+      "Praia's Plateau and Sucupira market",
+      "Serra Malagueta and Tarrafal beach"
+     ],
+     "activities": [
+      "Walk among the stone houses of Rua Banana in Cidade Velha.",
+      "See colourful fabrics and fruit at Sucupira market.",
+      "Take the scenic drive across the island to Tarrafal."
+     ],
+     "foodAndDrinks": [
+      "Cachupa",
+      "Grogue and ponche tasting"
+     ],
+     "criticalTips": [
+      "Use taxis at night in Praia.",
+      "Alugueres leave Sucupira when full; go early in the morning."
+     ],
+     "mapsQuery": "Cidade Velha, Santiago, Cabo Verde"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stop 3: São Vicente (Mindelo)",
+     "recommendedDuration": "2 Days",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "Mindelo's colourful colonial buildings",
+      "Live morna music",
+      "Monte Verde and Baía das Gatas"
+     ],
+     "activities": [
+      "Hear live morna and coladeira in a bar in the evening.",
+      "See the fish market and the replica of Lisbon's Torre de Belém.",
+      "Drive up Monte Verde for views over the bay."
+     ],
+     "foodAndDrinks": [
+      "Caldo de peixe",
+      "Cachupa refogada (fried leftover cachupa for breakfast)"
+     ],
+     "criticalTips": [
+      "Music nights start late; take a taxi back at night.",
+      "Accommodation fills up months ahead for Carnival."
+     ],
+     "mapsQuery": "Mindelo, São Vicente, Cabo Verde"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Stop 4: Santo Antão",
+     "recommendedDuration": "4 Days",
+     "durationBadge": "4 Days",
+     "highlights": [
+      "Cova crater to Paul Valley hike",
+      "Ponta do Sol – Fontainhas coastal trail",
+      "Ribeira Grande valley and sugar-cane fields"
+     ],
+     "activities": [
+      "Hike downhill through the Paul Valley.",
+      "Watch traditional grogue being made at a “trapiche” mill.",
+      "Photograph the view of Fontainhas village."
+     ],
+     "foodAndDrinks": [
+      "Grogue and homemade goat's cheese",
+      "Doce de papaia"
+     ],
+     "criticalTips": [
+      "Trails are steep and slippery; wear sturdy hiking boots.",
+      "The return ferry may be cancelled by weather; keep a buffer day before your flight."
+     ],
+     "mapsQuery": "Paul, Santo Antão, Cabo Verde"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Cachupa (corn, bean and meat/fish stew – the national dish)",
+     "Grilled lobster and fresh fish (grouper, wahoo)",
+     "Caldo de peixe (fish soup)"
+    ],
+    "drinks": [
+     "Grogue (sugar-cane rum, Santo Antão)",
+     "Ponche (grogue and molasses liqueur)",
+     "Fogo wine and coffee"
+    ],
+    "streetFoods": [
+     "Pastel com diabo dentro (spicy tuna fried pastry)",
+     "Cuscus (corn cake with honey)",
+     "Doce de papaia with goat's cheese"
+    ],
+    "diningAdvice": "Cachupa is eaten at any time of day; in the morning it's fried as “cachupa refogada” with eggs. For fresh fish and lobster choose small eateries near the harbour."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "High-SPF sunscreen and a hat",
+     "Windbreaker (the islands are very windy)",
+     "Hiking boots for Santo Antão",
+     "Euros in cash (small notes)"
+    ],
+    "safetyAndEtiquette": [
+     "Greet everyone with “Bon dia”.",
+     "Don't wander around town in swimwear.",
+     "Swim only at marked beaches."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "European Type C and F (Schuko) sockets are used; Turkish plugs fit without an adapter."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Mains water is mostly desalinated and not recommended for drinking; drink bottled water.",
+    "vaccines": [
+     "Routine vaccines and hepatitis A",
+     "Typhoid (for rural trips)",
+     "Mosquito protection against dengue (rainy season)",
+     "Yellow fever certificate only if arriving from a risk country; the country has been certified malaria-free since 2024"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "130"
+   },
+   "tipping": {
+    "custom": "Tipping is optional but appreciated.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "5 – 10% in restaurants or rounding up is enough; guides and drivers get a small daily tip."
+   },
+   "taxFree": {
+    "vatRefundPercent": "No tourist refund (VAT 15%)",
+    "minSpend": "Not applicable",
+    "customsNote": "Cape Verde has no VAT refund for tourists; hotels charge a small per-night tourist tax. Exporting sea-turtle products, coral and shells is prohibited; don't take sand from beaches."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.50 - $4",
+    "topCarriers": [
+     "CVMóvel (Cabo Verde Telecom)",
+     "Unitel T+"
+    ],
+    "airportSimTrapWarning": "CVMóvel and Unitel T+ outlets operate at Sal and Praia airports, but town shops usually have better bundles; signal can drop in Santo Antão's mountains."
+   },
+   "touristScams": [
+    {
+     "title": "Pushy beach vendors",
+     "desc": "On Sal and Boa Vista, vendors tie on a “gift” bracelet and then demand money, or sell overpriced souvenirs.",
+     "tip": "Say a polite “não, obrigado” and keep walking."
+    },
+    {
+     "title": "Unlicensed tours and quad hire",
+     "desc": "Cheap street-sold tours and quad rentals have no insurance, and steep damage fees may be demanded.",
+     "tip": "Book via your hotel or a licensed agency and photograph the vehicle at pickup."
+    },
+    {
+     "title": "Unagreed taxi fare",
+     "desc": "With no meters, an inflated fare may be demanded on arrival.",
+     "tip": "Agree the fare before getting in; airport fares are usually posted."
+    }
+   ]
+  }
+ },
+ "de": {
+  "insights": {
+   "currency": "Kap-Verde-Escudo (CVE; an den Euro gekoppelt, 1 € ≈ 110 CVE)",
+   "plugType": "Typ C, F (230V, 50Hz)",
+   "bestMonths": "November – Juni (trocken und sonnig; Dezember – März windig, ideal zum Kitesurfen) · August – Oktober heiß-feuchte Regenzeit mit kurzen Schauern",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Sicher",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Insgesamt ein ruhiges, gastfreundliches Land. In Praia (rund um Plateau und Achada Santo António) und Mindelo gibt es nachts Taschendiebstahl und Überfälle, am Strand von Santa Maria auf Sal Diebstähle.",
+    "commonScams": [
+     "Auf Sal und Boa Vista binden Verkäufer ein „Geschenk“-Armband um und verlangen dann Geld oder verkaufen überteuerte Souvenirs.",
+     "Billige Touren und Quadvermietungen auf der Straße sind unversichert; für Schäden werden hohe Summen verlangt.",
+     "Mangels Taxameter wird bei Ankunft mitunter ein überhöhter Preis verlangt."
+    ],
+    "safeTravelTips": [
+     "In Praia und Mindelo nachts lieber Taxi fahren als zu Fuß gehen.",
+     "Atlantikströmungen sind stark; nur an geschützten, markierten Stränden baden.",
+     "Fähren zwischen den Inseln fallen bei schlechtem Wetter aus; vor dem Rückflug einen Puffertag einplanen."
+    ],
+    "emergencyNumbers": {
+     "police": "132",
+     "ambulance": "130",
+     "general": "132"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Gutes 4G auf den Hauptinseln und in Orten; schwach in den Bergen von Santo Antão und Fogo",
+    "costPerGbUsd": "1.50 - 4 $",
+    "esimAvailability": "Mittel (internationale eSIMs funktionieren; lokale SIM mit Pass)",
+    "bestCarriers": [
+     "CVMóvel (Cabo Verde Telecom)",
+     "Unitel T+"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Mittel (Aluguer-Minibusse und Taxis auf den Inseln; Fähren und Inlandsflüge zwischen den Inseln)",
+    "costLevel": "Mittel",
+    "singleTicketUsd": "Aluguer 1 - 5 $; Fähre Mindelo – Porto Novo ~9 - 12 $",
+    "dailyPassUsd": "Keiner (Inseltour mit Fahrer 60 - 100 $/Tag)",
+    "popularRideApps": [
+     "Kein Uber/Bolt – Taxis und Aluguer"
+    ],
+    "taxiAdvice": "Es gibt keine Fahrdienst-Apps. Taxis haben kein Taxameter, Preis vorher vereinbaren. Günstig und lokal sind die Sammel-Minibusse (Aluguer), die abfahren, wenn sie voll sind."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "40 - 65 $",
+    "dailyBudgetMidrangeUsd": "100 - 170 $",
+    "budgetMealUsd": "6 - 12 $",
+    "coffeeUsd": "1 - 2 $",
+    "waterBottleUsd": "0.80 - 1.50 $",
+    "hostelDormUsd": "15 - 25 $",
+    "hotel3StarUsd": "50 - 110 $",
+    "flightCostIndex": "Mittel – hoch (keine Direktflüge aus der Türkei)",
+    "flightTip": "Sal (SID), Boa Vista (BVC), Praia (RAI) und São Vicente (VXE) erreicht man über Lissabon (TAP) oder mit Charterflügen aus Europa. Flug- und Fährpläne zwischen den Inseln vorab prüfen."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Alle grüßen („Bon dia“); die „Morabeza“ genannte Gastfreundschaft ist Nationalstolz.",
+     "In Ortszentren nicht in Badekleidung oder mit nacktem Oberkörper herumlaufen.",
+     "Nicht hetzen; „No stress“ ist der Lebensrhythmus der Inseln."
+    ],
+    "festivals": [
+     "Karneval in Mindelo (Februar)",
+     "Musikfestival Baía das Gatas (August, São Vicente)",
+     "Festa de São João (Juni, Porto Novo und Brava)"
+    ],
+    "lifestyle": "Ein entspannter Inselstaat, der afrikanische und portugiesische Kultur verbindet, in dem Morna und Coladeira zum Alltag gehören und eine große Diaspora im Ausland lebt."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Cidade Velha (UNESCO, Santiago)",
+     "Mindelo und Monte Verde (São Vicente)",
+     "Täler von Santo Antão (Paul, Ribeira Grande, Cova-Krater)",
+     "Vulkan Fogo und Chã das Caldeiras",
+     "Salzkrater Pedra de Lume (Sal)",
+     "Strand von Santa Maria (Sal)"
+    ],
+    "bestSeasons": "November – Juni (trocken und sonnig; Dezember – März windig, ideal zum Kitesurfen) · August – Oktober heiß-feuchte Regenzeit mit kurzen Schauern",
+    "travelStyleTip": "Jede Insel ist anders: Sal und Boa Vista für Strand, Santiago für Kultur, São Vicente für Musik, Santo Antão und Fogo zum Wandern. 2 – 3 Inseln per Flug und Fähre zu kombinieren lohnt am meisten."
+   },
+   "religion": {
+    "primaryReligions": "Katholisch (~77 %), protestantisch und andere christliche (Nazarener, Adventisten ~10 %), Konfessionslose und Sonstige",
+    "respectNorms": "In Kirchen Schultern und Knie bedecken; religiösen Prozessionen bei Dorffesten respektvoll folgen.",
+    "sacredSites": [
+     "Kirche Nossa Senhora do Rosário (1495, Cidade Velha)",
+     "Ruinen der Kathedrale von Cidade Velha",
+     "Kirche Nossa Senhora da Luz (Mindelo)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Amtssprache ist Portugiesisch; Alltagssprache ist das kapverdische Kreol (Kriolu/Kabuverdianu) mit Dialektunterschieden je Insel (Badiu auf Santiago, Sanvisentí auf São Vicente).",
+    "englishProficiency": "Mittel; auf den touristischen Inseln Sal und Boa Vista gut, auf den anderen helfen Portugiesisch/Französisch mehr.",
+    "phrases": [
+     {
+      "phrase": "Bon dia!",
+      "meaning": "Guten Morgen! / Hallo (Kriolu)",
+      "translation": "Guten Morgen! / Hallo (Kriolu)",
+      "pronunciation": "bon di-a"
+     },
+     {
+      "phrase": "Modi ki bu sta?",
+      "meaning": "Wie geht's dir? (Kriolu von Santiago)",
+      "translation": "Wie geht's dir? (Kriolu von Santiago)",
+      "pronunciation": "mo-di ki bu sta"
+     },
+     {
+      "phrase": "Obrigadu",
+      "meaning": "Danke (Kriolu)",
+      "translation": "Danke (Kriolu)",
+      "pronunciation": "o-bri-ga-du"
+     },
+     {
+      "phrase": "Kantu ki e?",
+      "meaning": "Wie viel kostet das? (Kriolu)",
+      "translation": "Wie viel kostet das? (Kriolu)",
+      "pronunciation": "kan-tu ki e"
+     },
+     {
+      "phrase": "Nu bai!",
+      "meaning": "Los geht's! (Kriolu)",
+      "translation": "Los geht's! (Kriolu)",
+      "pronunciation": "nu bay"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Die Inseln waren unbewohnt, bis die Portugiesen in den 1460er-Jahren kamen. Ribeira Grande auf Santiago (heute Cidade Velha) wurde erste europäische Kolonialstadt in den Tropen und wichtiger Ort des atlantischen Sklavenhandels. Im 19. Jahrhundert wuchs Mindelo als Kohlehafen. Nach dem von Amílcar Cabral geführten Kampf folgte am 5. Juli 1975 die Unabhängigkeit; seit 1991 ist das Land eine stabile Mehrparteiendemokratie.",
+    "milestones": [
+     "1462: Gründung von Ribeira Grande",
+     "1975: Unabhängigkeit",
+     "2009: Cidade Velha wird UNESCO-Welterbe",
+     "2024: WHO bescheinigt Malariafreiheit"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Cachupa (Eintopf aus Mais, Bohnen und Fleisch/Fisch – Nationalgericht)",
+     "Gegrillter Hummer und frischer Fisch (Zackenbarsch, Wahoo)",
+     "Caldo de peixe (Fischsuppe)"
+    ],
+    "traditionalDrinks": [
+     "Grogue (Zuckerrohrrum, Santo Antão)",
+     "Ponche (Likör aus Grogue und Melasse)",
+     "Wein und Kaffee aus Fogo"
+    ],
+    "streetFoodAndDesserts": [
+     "Pastel com diabo dentro (frittierte Teigtasche mit scharfem Thunfisch)",
+     "Cuscus (Maiskuchen mit Honig)",
+     "Doce de papaia mit Ziegenkäse"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Cesária Évora (die „barfüßige Diva“ der Morna)",
+     "Amílcar Cabral (Unabhängigkeitsführer)",
+     "Mayra Andrade (Sängerin)"
+    ],
+    "strongSectors": [
+     "Tourismus",
+     "Fischerei und Fischkonserven",
+     "Überweisungen der Diaspora und Dienstleistungen"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Der Escudo ist an den Euro gekoppelt; in Touristengebieten werden Euro oft akzeptiert, Wechselgeld gibt es in Escudos. Auf Sal und Boa Vista sind Karten üblich, auf anderen Inseln und im Aluguer braucht man Bargeld; Geldautomaten (Vinti4-Netz) gibt es in den Orten.",
+    "tippingCulture": "Trinkgeld ist freiwillig, wird aber geschätzt. 5 – 10 % im Restaurant oder Aufrunden genügt; Guides und Fahrer bekommen ein kleines Tagestrinkgeld.",
+    "economicPillars": "Tourismus, Fischerei, Überweisungen der Diaspora, Dienstleistungen und kleinbäuerliche Landwirtschaft."
+   }
+  },
+  "itin": {
+   "routeName": "Kap-Verde-Inselhopping: Sal, Santiago, São Vicente & Santo Antão",
+   "routeSummary": "Eine 11-tägige Inselroute von Sals weißen Stränden und dem Salzkrater zum historischen Cidade Velha auf Santiago, zur Musikszene Mindelos auf São Vicente und per Fähre zu Wanderungen in den grünen Tälern von Santo Antão.",
+   "totalDays": 11,
+   "idealDurationText": "11-tägige Route",
+   "bestSeason": "November – Juni (trocken und sonnig; Dezember – März windig, ideal zum Kitesurfen) · August – Oktober heiß-feuchte Regenzeit mit kurzen Schauern",
+   "transportMode": "Inlandsflüge (Sal – Praia ~50 Min., Praia – São Vicente ~50 Min.), Fähre Mindelo – Porto Novo (~1 Std.), auf den Inseln Aluguer und Wagen mit Fahrer",
+   "paceLevel": "Ausgewogen (Strand + Kultur + Wandern)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stopp 1: Sal (Santa Maria)",
+     "recommendedDuration": "3 Tage",
+     "durationBadge": "3 Tage",
+     "highlights": [
+      "Strand und Pier von Santa Maria",
+      "Salzkrater Pedra de Lume",
+      "Naturbecken Buracona und das „Blaue Auge“"
+     ],
+     "activities": [
+      "Im Salzwasser von Pedra de Lume mühelos treiben.",
+      "Eine Kite- oder Windsurfstunde nehmen.",
+      "Am Pier den Fischern beim Anlanden des Morgenfangs zusehen."
+     ],
+     "foodAndDrinks": [
+      "Gegrillter Serra (Wahoo) und Strela-Bier",
+      "Pastel com diabo dentro"
+     ],
+     "criticalTips": [
+      "Der starke Wind täuscht über die Sonne hinweg; hohen LSF verwenden.",
+      "Wertsachen am Strand nie unbeaufsichtigt lassen."
+     ],
+     "mapsQuery": "Santa Maria, Sal, Cabo Verde"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stopp 2: Santiago (Praia & Cidade Velha)",
+     "recommendedDuration": "2 Tage",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "Cidade Velha und Festung Real de São Filipe",
+      "Plateau von Praia und Sucupira-Markt",
+      "Serra Malagueta und Strand von Tarrafal"
+     ],
+     "activities": [
+      "Zwischen den Steinhäusern der Rua Banana in Cidade Velha spazieren.",
+      "Auf dem Sucupira-Markt bunte Stoffe und Obst entdecken.",
+      "Die landschaftlich schöne Fahrt quer über die Insel nach Tarrafal machen."
+     ],
+     "foodAndDrinks": [
+      "Cachupa",
+      "Grogue- und Ponche-Verkostung"
+     ],
+     "criticalTips": [
+      "Nachts in Praia Taxi fahren.",
+      "Aluguer fahren in Sucupira ab, wenn sie voll sind; früh morgens hingehen."
+     ],
+     "mapsQuery": "Cidade Velha, Santiago, Cabo Verde"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stopp 3: São Vicente (Mindelo)",
+     "recommendedDuration": "2 Tage",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "Bunte Kolonialbauten in Mindelo",
+      "Live-Morna-Musik",
+      "Monte Verde und Baía das Gatas"
+     ],
+     "activities": [
+      "Abends in einer Bar Live-Morna und Coladeira hören.",
+      "Den Fischmarkt und den Nachbau des Torre de Belém besuchen.",
+      "Auf den Monte Verde fahren und über die Bucht blicken."
+     ],
+     "foodAndDrinks": [
+      "Caldo de peixe",
+      "Cachupa refogada (gebratene Cachupa zum Frühstück)"
+     ],
+     "criticalTips": [
+      "Musikabende beginnen spät; nachts mit dem Taxi zurück.",
+      "Zum Karneval sind Unterkünfte Monate vorher ausgebucht."
+     ],
+     "mapsQuery": "Mindelo, São Vicente, Cabo Verde"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Stopp 4: Santo Antão",
+     "recommendedDuration": "4 Tage",
+     "durationBadge": "4 Tage",
+     "highlights": [
+      "Wanderung vom Cova-Krater ins Paul-Tal",
+      "Küstenweg Ponta do Sol – Fontainhas",
+      "Tal von Ribeira Grande und Zuckerrohrfelder"
+     ],
+     "activities": [
+      "Bergab durch das Paul-Tal wandern.",
+      "In einer „Trapiche“-Mühle die traditionelle Grogue-Herstellung ansehen.",
+      "Den Blick auf das Dorf Fontainhas fotografieren."
+     ],
+     "foodAndDrinks": [
+      "Grogue und hausgemachter Ziegenkäse",
+      "Doce de papaia"
+     ],
+     "criticalTips": [
+      "Die Wege sind steil und rutschig; feste Wanderschuhe tragen.",
+      "Die Rückfähre kann wetterbedingt ausfallen; vor dem Flug einen Puffertag lassen."
+     ],
+     "mapsQuery": "Paul, Santo Antão, Cabo Verde"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Cachupa (Eintopf aus Mais, Bohnen und Fleisch/Fisch – Nationalgericht)",
+     "Gegrillter Hummer und frischer Fisch (Zackenbarsch, Wahoo)",
+     "Caldo de peixe (Fischsuppe)"
+    ],
+    "drinks": [
+     "Grogue (Zuckerrohrrum, Santo Antão)",
+     "Ponche (Likör aus Grogue und Melasse)",
+     "Wein und Kaffee aus Fogo"
+    ],
+    "streetFoods": [
+     "Pastel com diabo dentro (frittierte Teigtasche mit scharfem Thunfisch)",
+     "Cuscus (Maiskuchen mit Honig)",
+     "Doce de papaia mit Ziegenkäse"
+    ],
+    "diningAdvice": "Cachupa isst man zu jeder Tageszeit; morgens gebraten als „Cachupa refogada“ mit Ei. Für frischen Fisch und Hummer kleine Lokale nahe dem Hafen wählen."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Sonnencreme mit hohem LSF und Hut",
+     "Windjacke (die Inseln sind sehr windig)",
+     "Wanderschuhe für Santo Antão",
+     "Euro in bar (kleine Scheine)"
+    ],
+    "safetyAndEtiquette": [
+     "Alle mit „Bon dia“ grüßen.",
+     "Nicht in Badekleidung durch den Ort laufen.",
+     "Nur an markierten Stränden baden."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Europäische Steckdosen Typ C und F (Schuko); türkische Stecker passen ohne Adapter."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Leitungswasser stammt meist aus Meerwasserentsalzung und wird nicht zum Trinken empfohlen; Flaschenwasser trinken.",
+    "vaccines": [
+     "Standardimpfungen und Hepatitis A",
+     "Typhus (für Reisen aufs Land)",
+     "Mückenschutz gegen Dengue (Regenzeit)",
+     "Gelbfieber-Nachweis nur bei Einreise aus einem Risikoland; das Land gilt seit 2024 als malariafrei"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "130"
+   },
+   "tipping": {
+    "custom": "Trinkgeld ist freiwillig, wird aber geschätzt.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "5 – 10 % im Restaurant oder Aufrunden genügt; Guides und Fahrer bekommen ein kleines Tagestrinkgeld."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Keine Erstattung für Touristen (MwSt. 15 %)",
+    "minSpend": "Entfällt",
+    "customsNote": "Kap Verde erstattet Touristen keine MwSt.; Hotels erheben eine kleine Touristensteuer pro Nacht. Die Ausfuhr von Meeresschildkrötenprodukten, Korallen und Muscheln ist verboten; keinen Sand von Stränden mitnehmen."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.50 - $4",
+    "topCarriers": [
+     "CVMóvel (Cabo Verde Telecom)",
+     "Unitel T+"
+    ],
+    "airportSimTrapWarning": "An den Flughäfen Sal und Praia gibt es CVMóvel- und Unitel-T+-Stände, in den Läden im Ort sind die Pakete aber meist günstiger; in den Bergen von Santo Antão bricht das Netz mitunter ab."
+   },
+   "touristScams": [
+    {
+     "title": "Aufdringliche Strandverkäufer",
+     "desc": "Auf Sal und Boa Vista binden Verkäufer ein „Geschenk“-Armband um und verlangen dann Geld oder verkaufen überteuerte Souvenirs.",
+     "tip": "Höflich „não, obrigado“ sagen und weitergehen."
+    },
+    {
+     "title": "Nicht lizenzierte Touren und Quadverleih",
+     "desc": "Billige Touren und Quadvermietungen auf der Straße sind unversichert; für Schäden werden hohe Summen verlangt.",
+     "tip": "Über Hotel oder lizenzierte Agentur buchen und das Fahrzeug bei Übernahme fotografieren."
+    },
+    {
+     "title": "Taxi ohne Preisabsprache",
+     "desc": "Mangels Taxameter wird bei Ankunft mitunter ein überhöhter Preis verlangt.",
+     "tip": "Preis vor dem Einsteigen vereinbaren; Flughafenpreise hängen meist aus."
+    }
+   ]
+  }
+ },
+ "es": {
+  "insights": {
+   "currency": "Escudo caboverdiano (CVE; vinculado al euro, 1 € ≈ 110 CVE)",
+   "plugType": "Tipo C, F (230V, 50Hz)",
+   "bestMonths": "Noviembre – junio (seco y soleado; diciembre – marzo ventoso, ideal para kitesurf) · agosto – octubre estación de lluvias corta, cálida y húmeda",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "En general es un país tranquilo y acogedor. En Praia (alrededor del Plateau y Achada Santo António) y Mindelo hay tirones y atracos nocturnos, y robos en la playa de Santa Maria, en Sal.",
+    "commonScams": [
+     "En Sal y Boa Vista, vendedores atan una pulsera de “regalo” y luego piden dinero, o venden souvenirs carísimos.",
+     "Los tours y quads baratos vendidos en la calle no tienen seguro y pueden exigir sumas altas por daños.",
+     "Sin taxímetro, al llegar pueden pedir una tarifa inflada."
+    ],
+    "safeTravelTips": [
+     "En Praia y Mindelo tome taxi en lugar de caminar de noche.",
+     "Las corrientes atlánticas son fuertes; nade solo en playas resguardadas y señalizadas.",
+     "Los ferris entre islas pueden cancelarse por el tiempo; deje un día de margen antes del vuelo de regreso."
+    ],
+    "emergencyNumbers": {
+     "police": "132",
+     "ambulance": "130",
+     "general": "132"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Buen 4G en las islas principales y pueblos; débil en las montañas de Santo Antão y Fogo",
+    "costPerGbUsd": "1.50 - 4 $",
+    "esimAvailability": "Media (las eSIM internacionales funcionan; la SIM local requiere pasaporte)",
+    "bestCarriers": [
+     "CVMóvel (Cabo Verde Telecom)",
+     "Unitel T+"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Moderado (minibuses aluguer y taxis en las islas; ferris y vuelos internos entre islas)",
+    "costLevel": "Moderado",
+    "singleTicketUsd": "Aluguer 1 - 5 $; ferri Mindelo – Porto Novo ~9 - 12 $",
+    "dailyPassUsd": "No existe (tour de la isla con conductor 60 - 100 $/día)",
+    "popularRideApps": [
+     "Sin Uber/Bolt – taxis y aluguer"
+    ],
+    "taxiAdvice": "No hay apps de transporte. Los taxis no tienen taxímetro: acuerde el precio. La opción barata y local es el minibús compartido aluguer, que sale cuando se llena."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "40 - 65 $",
+    "dailyBudgetMidrangeUsd": "100 - 170 $",
+    "budgetMealUsd": "6 - 12 $",
+    "coffeeUsd": "1 - 2 $",
+    "waterBottleUsd": "0.80 - 1.50 $",
+    "hostelDormUsd": "15 - 25 $",
+    "hotel3StarUsd": "50 - 110 $",
+    "flightCostIndex": "Moderado – alto (sin vuelos directos desde Turquía)",
+    "flightTip": "A Sal (SID), Boa Vista (BVC), Praia (RAI) y São Vicente (VXE) se llega vía Lisboa (TAP) o en vuelos chárter desde Europa. Consulte antes los horarios de vuelos y ferris entre islas."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Salude a todos (“Bon dia”); la hospitalidad llamada “morabeza” es orgullo nacional.",
+     "No pasee por los centros de los pueblos en bañador o sin camiseta.",
+     "No tenga prisa; “no stress” es el ritmo de vida de las islas."
+    ],
+    "festivals": [
+     "Carnaval de Mindelo (febrero)",
+     "Festival de Música de Baía das Gatas (agosto, São Vicente)",
+     "Fiesta de São João (junio, Porto Novo y Brava)"
+    ],
+    "lifestyle": "Un relajado país insular que mezcla culturas africana y portuguesa, donde la morna y la coladeira forman parte del día a día y una gran diáspora vive en el extranjero."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Cidade Velha (UNESCO, Santiago)",
+     "Mindelo y Monte Verde (São Vicente)",
+     "Valles de Santo Antão (Paul, Ribeira Grande, cráter de Cova)",
+     "Volcán del Fogo y Chã das Caldeiras",
+     "Cráter salino de Pedra de Lume (Sal)",
+     "Playa de Santa Maria (Sal)"
+    ],
+    "bestSeasons": "Noviembre – junio (seco y soleado; diciembre – marzo ventoso, ideal para kitesurf) · agosto – octubre estación de lluvias corta, cálida y húmeda",
+    "travelStyleTip": "Cada isla es distinta: Sal y Boa Vista para playa, Santiago para cultura, São Vicente para música, Santo Antão y Fogo para senderismo. Combinar 2 – 3 islas en avión y ferri es lo ideal."
+   },
+   "religion": {
+    "primaryReligions": "Católicos (~77 %), protestantes y otros cristianos (nazarenos, adventistas ~10 %), sin religión y otros",
+    "respectNorms": "Cubra hombros y rodillas en las iglesias; acompañe con respeto las procesiones de las fiestas.",
+    "sacredSites": [
+     "Iglesia de Nossa Senhora do Rosário (1495, Cidade Velha)",
+     "Ruinas de la catedral de Cidade Velha",
+     "Iglesia de Nossa Senhora da Luz (Mindelo)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "El portugués es oficial; la lengua cotidiana es el criollo caboverdiano (kriolu/kabuverdianu), con variantes según la isla (badiu en Santiago, sanvisentí en São Vicente).",
+    "englishProficiency": "Medio; bueno en las turísticas Sal y Boa Vista; en otras islas ayuda más el portugués/francés.",
+    "phrases": [
+     {
+      "phrase": "Bon dia!",
+      "meaning": "¡Buenos días! / Hola (kriolu)",
+      "translation": "¡Buenos días! / Hola (kriolu)",
+      "pronunciation": "bon di-a"
+     },
+     {
+      "phrase": "Modi ki bu sta?",
+      "meaning": "¿Cómo estás? (kriolu de Santiago)",
+      "translation": "¿Cómo estás? (kriolu de Santiago)",
+      "pronunciation": "mo-di ki bu sta"
+     },
+     {
+      "phrase": "Obrigadu",
+      "meaning": "Gracias (kriolu)",
+      "translation": "Gracias (kriolu)",
+      "pronunciation": "o-bri-ga-du"
+     },
+     {
+      "phrase": "Kantu ki e?",
+      "meaning": "¿Cuánto cuesta? (kriolu)",
+      "translation": "¿Cuánto cuesta? (kriolu)",
+      "pronunciation": "kan-tu ki e"
+     },
+     {
+      "phrase": "Nu bai!",
+      "meaning": "¡Vámonos! (kriolu)",
+      "translation": "¡Vámonos! (kriolu)",
+      "pronunciation": "nu bay"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Las islas estaban deshabitadas hasta la llegada de los portugueses en la década de 1460. Ribeira Grande, en Santiago (hoy Cidade Velha), fue la primera ciudad colonial europea en los trópicos y una escala clave de la trata atlántica. En el siglo XIX Mindelo creció como puerto carbonero. Tras la lucha liderada por Amílcar Cabral, la independencia llegó el 5 de julio de 1975; desde 1991 es una democracia multipartidista estable.",
+    "milestones": [
+     "1462: Fundación de Ribeira Grande",
+     "1975: Independencia",
+     "2009: Cidade Velha entra en la UNESCO",
+     "2024: La OMS certifica el país libre de malaria"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Cachupa (guiso de maíz, frijoles y carne/pescado, plato nacional)",
+     "Langosta a la parrilla y pescado fresco (mero, peto)",
+     "Caldo de peixe (sopa de pescado)"
+    ],
+    "traditionalDrinks": [
+     "Grogue (ron de caña, Santo Antão)",
+     "Ponche (licor de grogue y melaza)",
+     "Vino y café de Fogo"
+    ],
+    "streetFoodAndDesserts": [
+     "Pastel com diabo dentro (empanadilla frita de atún picante)",
+     "Cuscús (pastel de maíz con miel)",
+     "Dulce de papaya con queso de cabra"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Cesária Évora (la “diva de los pies descalzos” de la morna)",
+     "Amílcar Cabral (líder de la independencia)",
+     "Mayra Andrade (cantante)"
+    ],
+    "strongSectors": [
+     "Turismo",
+     "Pesca y conservas de pescado",
+     "Remesas de la diáspora y servicios"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "El escudo está vinculado al euro; en zonas turísticas se aceptan euros a menudo, pero el cambio se da en escudos. En Sal y Boa Vista se usa tarjeta; en otras islas y en los aluguer hace falta efectivo; hay cajeros (red Vinti4) en los pueblos.",
+    "tippingCulture": "La propina es opcional pero se agradece. En restaurantes basta un 5 – 10 % o redondear; a guías y conductores se les da una pequeña propina diaria.",
+    "economicPillars": "Turismo, pesca, remesas de la diáspora, servicios y agricultura a pequeña escala."
+   }
+  },
+  "itin": {
+   "routeName": "Islas de Cabo Verde: Sal, Santiago, São Vicente y Santo Antão",
+   "routeSummary": "Ruta de 11 días por las islas: de las playas blancas y el cráter salino de Sal a la histórica Cidade Velha en Santiago, la escena musical de Mindelo en São Vicente y, en ferri, caminatas por los valles verdes de Santo Antão.",
+   "totalDays": 11,
+   "idealDurationText": "Ruta de 11 días",
+   "bestSeason": "Noviembre – junio (seco y soleado; diciembre – marzo ventoso, ideal para kitesurf) · agosto – octubre estación de lluvias corta, cálida y húmeda",
+   "transportMode": "Vuelos internos (Sal – Praia ~50 min, Praia – São Vicente ~50 min), ferri Mindelo – Porto Novo (~1 h), aluguer y coches con conductor en las islas",
+   "paceLevel": "Equilibrado (playa + cultura + senderismo)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Sal (Santa Maria)",
+     "recommendedDuration": "3 días",
+     "durationBadge": "3 días",
+     "highlights": [
+      "Playa y muelle de Santa Maria",
+      "Cráter salino de Pedra de Lume",
+      "Piscina natural de Buracona y el “Ojo Azul”"
+     ],
+     "activities": [
+      "Flote sin esfuerzo en el agua salada de Pedra de Lume.",
+      "Tome una clase de kitesurf o windsurf.",
+      "Vea a los pescadores descargar la captura matinal en el muelle."
+     ],
+     "foodAndDrinks": [
+      "Serra (peto) a la parrilla con cerveza Strela",
+      "Pastel com diabo dentro"
+     ],
+     "criticalTips": [
+      "El viento fuerte engaña sobre el sol; use protección alta.",
+      "No deje objetos de valor sin vigilancia en la playa."
+     ],
+     "mapsQuery": "Santa Maria, Sal, Cabo Verde"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Santiago (Praia y Cidade Velha)",
+     "recommendedDuration": "2 días",
+     "durationBadge": "2 días",
+     "highlights": [
+      "Cidade Velha y la fortaleza Real de São Filipe",
+      "El Plateau de Praia y el mercado de Sucupira",
+      "Serra Malagueta y playa de Tarrafal"
+     ],
+     "activities": [
+      "Pasee entre las casas de piedra de la Rua Banana en Cidade Velha.",
+      "Vea telas coloridas y fruta en el mercado de Sucupira.",
+      "Haga el recorrido panorámico por el interior hasta Tarrafal."
+     ],
+     "foodAndDrinks": [
+      "Cachupa",
+      "Cata de grogue y ponche"
+     ],
+     "criticalTips": [
+      "De noche use taxi en Praia.",
+      "Los aluguer salen de Sucupira al llenarse; vaya temprano."
+     ],
+     "mapsQuery": "Cidade Velha, Santiago, Cabo Verde"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: São Vicente (Mindelo)",
+     "recommendedDuration": "2 días",
+     "durationBadge": "2 días",
+     "highlights": [
+      "Coloridos edificios coloniales de Mindelo",
+      "Morna en directo",
+      "Monte Verde y Baía das Gatas"
+     ],
+     "activities": [
+      "Escuche morna y coladeira en vivo en un bar por la noche.",
+      "Visite el mercado de pescado y la réplica de la Torre de Belém.",
+      "Suba al Monte Verde para ver la bahía."
+     ],
+     "foodAndDrinks": [
+      "Caldo de peixe",
+      "Cachupa refogada (cachupa frita para desayunar)"
+     ],
+     "criticalTips": [
+      "Las noches de música empiezan tarde; vuelva en taxi.",
+      "En Carnaval el alojamiento se agota con meses."
+     ],
+     "mapsQuery": "Mindelo, São Vicente, Cabo Verde"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Santo Antão",
+     "recommendedDuration": "4 días",
+     "durationBadge": "4 días",
+     "highlights": [
+      "Caminata del cráter de Cova al valle de Paul",
+      "Sendero costero Ponta do Sol – Fontainhas",
+      "Valle de Ribeira Grande y cañaverales"
+     ],
+     "activities": [
+      "Descienda a pie por el valle de Paul.",
+      "Vea la elaboración tradicional del grogue en un trapiche.",
+      "Fotografíe la vista del pueblo de Fontainhas."
+     ],
+     "foodAndDrinks": [
+      "Grogue y queso de cabra casero",
+      "Doce de papaia"
+     ],
+     "criticalTips": [
+      "Los senderos son empinados y resbaladizos; use botas firmes.",
+      "El ferri de vuelta puede cancelarse por el tiempo; deje un día de margen antes del vuelo."
+     ],
+     "mapsQuery": "Paul, Santo Antão, Cabo Verde"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Cachupa (guiso de maíz, frijoles y carne/pescado, plato nacional)",
+     "Langosta a la parrilla y pescado fresco (mero, peto)",
+     "Caldo de peixe (sopa de pescado)"
+    ],
+    "drinks": [
+     "Grogue (ron de caña, Santo Antão)",
+     "Ponche (licor de grogue y melaza)",
+     "Vino y café de Fogo"
+    ],
+    "streetFoods": [
+     "Pastel com diabo dentro (empanadilla frita de atún picante)",
+     "Cuscús (pastel de maíz con miel)",
+     "Dulce de papaya con queso de cabra"
+    ],
+    "diningAdvice": "La cachupa se come a cualquier hora; por la mañana, frita como “cachupa refogada” con huevo. Para pescado fresco y langosta, elija pequeños restaurantes cerca del puerto."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Protector solar alto y sombrero",
+     "Cortavientos (las islas son muy ventosas)",
+     "Botas de senderismo para Santo Antão",
+     "Euros en efectivo (billetes pequeños)"
+    ],
+    "safetyAndEtiquette": [
+     "Salude a todos con “Bon dia”.",
+     "No pasee por el pueblo en bañador.",
+     "Báñese solo en playas señalizadas."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Se usan enchufes europeos tipo C y F (Schuko); los enchufes turcos encajan sin adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "El agua de red es sobre todo desalinizada y no se recomienda beberla; tome agua embotellada.",
+    "vaccines": [
+     "Vacunas de rutina y hepatitis A",
+     "Fiebre tifoidea (viajes rurales)",
+     "Protección contra mosquitos por dengue (época de lluvias)",
+     "Certificado de fiebre amarilla solo si llega de un país de riesgo; el país está libre de malaria desde 2024"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "130"
+   },
+   "tipping": {
+    "custom": "La propina es opcional pero se agradece.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "En restaurantes basta un 5 – 10 % o redondear; a guías y conductores se les da una pequeña propina diaria."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Sin devolución al turista (IVA 15 %)",
+    "minSpend": "No aplica",
+    "customsNote": "Cabo Verde no devuelve el IVA a turistas; los hoteles cobran una pequeña tasa turística por noche. Está prohibido exportar productos de tortuga marina, coral y conchas; no se lleve arena de las playas."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.50 - $4",
+    "topCarriers": [
+     "CVMóvel (Cabo Verde Telecom)",
+     "Unitel T+"
+    ],
+    "airportSimTrapWarning": "En los aeropuertos de Sal y Praia hay puntos de CVMóvel y Unitel T+, pero en las tiendas del pueblo los paquetes suelen ser mejores; en las montañas de Santo Antão puede fallar la señal."
+   },
+   "touristScams": [
+    {
+     "title": "Vendedores insistentes en la playa",
+     "desc": "En Sal y Boa Vista, vendedores atan una pulsera de “regalo” y luego piden dinero, o venden souvenirs carísimos.",
+     "tip": "Diga “não, obrigado” con cortesía y siga caminando."
+    },
+    {
+     "title": "Tours y quads sin licencia",
+     "desc": "Los tours y quads baratos vendidos en la calle no tienen seguro y pueden exigir sumas altas por daños.",
+     "tip": "Reserve a través del hotel o una agencia con licencia y fotografíe el vehículo al recogerlo."
+    },
+    {
+     "title": "Taxi sin precio acordado",
+     "desc": "Sin taxímetro, al llegar pueden pedir una tarifa inflada.",
+     "tip": "Acuerde el precio antes de subir; las tarifas del aeropuerto suelen estar expuestas."
+    }
+   ]
+  }
+ },
+ "ru": {
+  "insights": {
+   "currency": "Эскудо Кабо-Верде (CVE; привязан к евро, 1 € ≈ 110 CVE)",
+   "plugType": "Тип C, F (230V, 50Hz)",
+   "bestMonths": "Ноябрь – июнь (сухо и солнечно; декабрь – март ветрено, идеально для кайтсёрфинга) · август – октябрь короткие ливни, жаркий и влажный сезон дождей",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Безопасно",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "В целом спокойная и гостеприимная страна. В Прае (районы Плато и Ашада-Санту-Антониу) и Минделу ночью случаются рывки сумок и грабежи, на пляже Санта-Мария на острове Сал — кражи вещей.",
+    "commonScams": [
+     "На Сале и Боа-Вишта торговцы повязывают «подарочный» браслет и требуют деньги или продают сувениры втридорога.",
+     "Дешёвые уличные туры и квадроциклы без страховки — за повреждения могут потребовать крупную сумму.",
+     "Счётчиков нет — по прибытии могут назвать завышенную цену."
+    ],
+    "safeTravelTips": [
+     "В Прае и Минделу ночью ездите на такси, а не ходите пешком.",
+     "Атлантические течения сильны — купайтесь только на защищённых обозначенных пляжах.",
+     "Паромы между островами отменяют из-за погоды — оставьте запасной день перед обратным рейсом."
+    ],
+    "emergencyNumbers": {
+     "police": "132",
+     "ambulance": "130",
+     "general": "132"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Хороший 4G на главных островах и в городах; слабо в горах Санту-Антана и Фогу",
+    "costPerGbUsd": "1.50 - 4 $",
+    "esimAvailability": "Средняя (международные eSIM работают; местная SIM по паспорту)",
+    "bestCarriers": [
+     "CVMóvel (Cabo Verde Telecom)",
+     "Unitel T+"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Средний (маршрутки-«алугер» и такси на островах; паромы и внутренние рейсы между островами)",
+    "costLevel": "Средне",
+    "singleTicketUsd": "Алугер 1 - 5 $; паром Минделу – Порту-Нову ~9 - 12 $",
+    "dailyPassUsd": "Нет (тур по острову с водителем 60 - 100 $/день)",
+    "popularRideApps": [
+     "Uber/Bolt нет – такси и алугер"
+    ],
+    "taxiAdvice": "Приложений такси нет. Счётчиков нет — договаривайтесь заранее. Дешёвый местный вариант — маршрутки-«алугер», отправляющиеся по заполнении."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "40 - 65 $",
+    "dailyBudgetMidrangeUsd": "100 - 170 $",
+    "budgetMealUsd": "6 - 12 $",
+    "coffeeUsd": "1 - 2 $",
+    "waterBottleUsd": "0.80 - 1.50 $",
+    "hostelDormUsd": "15 - 25 $",
+    "hotel3StarUsd": "50 - 110 $",
+    "flightCostIndex": "Средний – высокий (прямых рейсов из Турции нет)",
+    "flightTip": "На Сал (SID), Боа-Вишту (BVC), в Праю (RAI) и на Сан-Висенти (VXE) летят через Лиссабон (TAP) или европейскими чартерами. Расписание межостровных рейсов и паромов проверяйте заранее."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Здоровайтесь со всеми («Bon dia»); гостеприимство «морабеза» — национальная гордость.",
+     "Не ходите по центру городов в купальнике или без рубашки.",
+     "Не торопитесь: «no stress» — ритм жизни на островах."
+    ],
+    "festivals": [
+     "Карнавал в Минделу (февраль)",
+     "Музыкальный фестиваль Байя-даш-Гаташ (август, Сан-Висенти)",
+     "Праздник Сан-Жуан (июнь, Порту-Нову и Брава)"
+    ],
+    "lifestyle": "Спокойное островное государство, соединяющее африканскую и португальскую культуры, где морна и коладейра — часть повседневности, а большая диаспора живёт за рубежом."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Сидади-Велья (ЮНЕСКО, Сантьягу)",
+     "Минделу и Монте-Верде (Сан-Висенти)",
+     "Долины Санту-Антана (Паул, Рибейра-Гранди, кратер Кова)",
+     "Вулкан Фогу и Ша-даш-Калдейраш",
+     "Соляной кратер Педра-ди-Луми (Сал)",
+     "Пляж Санта-Мария (Сал)"
+    ],
+    "bestSeasons": "Ноябрь – июнь (сухо и солнечно; декабрь – март ветрено, идеально для кайтсёрфинга) · август – октябрь короткие ливни, жаркий и влажный сезон дождей",
+    "travelStyleTip": "Каждый остров особый: Сал и Боа-Вишта — пляжи, Сантьягу — культура, Сан-Висенти — музыка, Санту-Антан и Фогу — треккинг. Лучше всего совместить 2 – 3 острова самолётом и паромом."
+   },
+   "religion": {
+    "primaryReligions": "Католики (~77%), протестанты и другие христиане (назаряне, адвентисты ~10%), неверующие и прочие",
+    "respectNorms": "В церквях закрывайте плечи и колени; к крестным ходам на деревенских праздниках относитесь уважительно.",
+    "sacredSites": [
+     "Церковь Носса-Сеньора-ду-Розариу (1495, Сидади-Велья)",
+     "Руины собора в Сидади-Велья",
+     "Церковь Носса-Сеньора-да-Луш (Минделу)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Официальный язык — португальский; в быту говорят на кабовердианском креольском (криолу), диалекты различаются по островам (бадиу на Сантьягу, санвисенти на Сан-Висенти).",
+    "englishProficiency": "Средний: на туристических Сале и Боа-Вишта хороший, на других островах полезнее португальский/французский.",
+    "phrases": [
+     {
+      "phrase": "Bon dia!",
+      "meaning": "Доброе утро! / Здравствуйте (криолу)",
+      "translation": "Доброе утро! / Здравствуйте (криолу)",
+      "pronunciation": "bon di-a"
+     },
+     {
+      "phrase": "Modi ki bu sta?",
+      "meaning": "Как дела? (криолу Сантьягу)",
+      "translation": "Как дела? (криолу Сантьягу)",
+      "pronunciation": "mo-di ki bu sta"
+     },
+     {
+      "phrase": "Obrigadu",
+      "meaning": "Спасибо (криолу)",
+      "translation": "Спасибо (криолу)",
+      "pronunciation": "o-bri-ga-du"
+     },
+     {
+      "phrase": "Kantu ki e?",
+      "meaning": "Сколько стоит? (криолу)",
+      "translation": "Сколько стоит? (криолу)",
+      "pronunciation": "kan-tu ki e"
+     },
+     {
+      "phrase": "Nu bai!",
+      "meaning": "Пошли! (криолу)",
+      "translation": "Пошли! (криолу)",
+      "pronunciation": "nu bay"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Острова были необитаемы до прихода португальцев в 1460-х годах. Рибейра-Гранди на Сантьягу (ныне Сидади-Велья) стала первым европейским колониальным городом в тропиках и важным пунктом атлантической работорговли. В XIX веке Минделу вырос как угольный порт. После борьбы под руководством Амилкара Кабрала 5 июля 1975 года пришла независимость; с 1991 года — стабильная многопартийная демократия.",
+    "milestones": [
+     "1462: основание Рибейра-Гранди",
+     "1975: независимость",
+     "2009: Сидади-Велья в списке ЮНЕСКО",
+     "2024: ВОЗ признала страну свободной от малярии"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Кашупа (рагу из кукурузы, фасоли и мяса/рыбы — национальное блюдо)",
+     "Лобстер на гриле и свежая рыба (групер, ваху)",
+     "Калду-ди-пейши (рыбный суп)"
+    ],
+    "traditionalDrinks": [
+     "Грогу (ром из сахарного тростника, Санту-Антан)",
+     "Понше (ликёр из грогу и патоки)",
+     "Вино и кофе с острова Фогу"
+    ],
+    "streetFoodAndDesserts": [
+     "Паштел-кон-диабу-дентру (жареный пирожок с острым тунцом)",
+     "Кускус (кукурузный пирог с мёдом)",
+     "Варенье из папайи с козьим сыром"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Сезария Эвора («босоногая дива» морны)",
+     "Амилкар Кабрал (лидер борьбы за независимость)",
+     "Майра Андради (певица)"
+    ],
+    "strongSectors": [
+     "Туризм",
+     "Рыболовство и рыбоконсервное производство",
+     "Денежные переводы диаспоры и услуги"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Эскудо привязан к евро; в туристических местах часто берут евро, но сдачу дают в эскудо. На Сале и Боа-Вишта распространены карты, на других островах и в алугер нужны наличные; банкоматы (сеть Vinti4) есть в городах.",
+    "tippingCulture": "Чаевые по желанию, но их ценят. В ресторанах достаточно 5 – 10% или округлить счёт; гидам и водителям — небольшие чаевые за день.",
+    "economicPillars": "Туризм, рыболовство, переводы диаспоры, услуги и мелкое сельское хозяйство."
+   }
+  },
+  "itin": {
+   "routeName": "Острова Кабо-Верде: Сал, Сантьягу, Сан-Висенти и Санту-Антан",
+   "routeSummary": "11-дневный маршрут по островам: от белых пляжей и соляного кратера Сала к исторической Сидади-Велья на Сантьягу, музыкальному Минделу на Сан-Висенти и, на пароме, к походам по зелёным долинам Санту-Антана.",
+   "totalDays": 11,
+   "idealDurationText": "Маршрут на 11 дней",
+   "bestSeason": "Ноябрь – июнь (сухо и солнечно; декабрь – март ветрено, идеально для кайтсёрфинга) · август – октябрь короткие ливни, жаркий и влажный сезон дождей",
+   "transportMode": "Внутренние рейсы (Сал – Прая ~50 мин, Прая – Сан-Висенти ~50 мин), паром Минделу – Порту-Нову (~1 ч), на островах алугер и машины с водителем",
+   "paceLevel": "Сбалансированный (пляж + культура + треккинг)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Остановка 1: Сал (Санта-Мария)",
+     "recommendedDuration": "3 дня",
+     "durationBadge": "3 дня",
+     "highlights": [
+      "Пляж и пирс Санта-Мария",
+      "Соляной кратер Педра-ди-Луми",
+      "Природный бассейн Буракона и «Голубой глаз»"
+     ],
+     "activities": [
+      "Полежите на воде в солёном озере Педра-ди-Луми.",
+      "Возьмите урок кайт- или виндсёрфинга.",
+      "Посмотрите, как рыбаки выгружают утренний улов у пирса."
+     ],
+     "foodAndDrinks": [
+      "Серра (ваху) на гриле и пиво Strela",
+      "Паштел-кон-диабу-дентру"
+     ],
+     "criticalTips": [
+      "Сильный ветер скрывает силу солнца — используйте высокий SPF.",
+      "Не оставляйте ценности без присмотра на пляже."
+     ],
+     "mapsQuery": "Santa Maria, Sal, Cabo Verde"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Остановка 2: Сантьягу (Прая и Сидади-Велья)",
+     "recommendedDuration": "2 дня",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Сидади-Велья и крепость Реал-ди-Сан-Филипи",
+      "Плато Праи и рынок Сукупира",
+      "Серра-Малагета и пляж Таррафал"
+     ],
+     "activities": [
+      "Прогуляйтесь среди каменных домов улицы Руа-Банана в Сидади-Велья.",
+      "Посмотрите яркие ткани и фрукты на рынке Сукупира.",
+      "Совершите живописную поездку через остров в Таррафал."
+     ],
+     "foodAndDrinks": [
+      "Кашупа",
+      "Дегустация грогу и понше"
+     ],
+     "criticalTips": [
+      "Ночью в Прае ездите на такси.",
+      "Алугер отходят от Сукупиры по заполнении — приходите рано."
+     ],
+     "mapsQuery": "Cidade Velha, Santiago, Cabo Verde"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Остановка 3: Сан-Висенти (Минделу)",
+     "recommendedDuration": "2 дня",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Яркие колониальные дома Минделу",
+      "Живая морна",
+      "Монте-Верде и Байя-даш-Гаташ"
+     ],
+     "activities": [
+      "Вечером послушайте живую морну и коладейру в баре.",
+      "Посмотрите рыбный рынок и копию лиссабонской башни Белен.",
+      "Поднимитесь на Монте-Верде ради вида на бухту."
+     ],
+     "foodAndDrinks": [
+      "Калду-ди-пейши",
+      "Кашупа рефогада (обжаренная кашупа на завтрак)"
+     ],
+     "criticalTips": [
+      "Музыкальные вечера начинаются поздно — обратно на такси.",
+      "На карнавал жильё раскупают за месяцы."
+     ],
+     "mapsQuery": "Mindelo, São Vicente, Cabo Verde"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Остановка 4: Санту-Антан",
+     "recommendedDuration": "4 дня",
+     "durationBadge": "4 дня",
+     "highlights": [
+      "Поход от кратера Кова в долину Паул",
+      "Прибрежная тропа Понта-ду-Сол – Фонтаиньяш",
+      "Долина Рибейра-Гранди и плантации тростника"
+     ],
+     "activities": [
+      "Спуститесь пешком по долине Паул.",
+      "Посмотрите традиционное производство грогу на мельнице «трапише».",
+      "Сфотографируйте вид на деревню Фонтаиньяш."
+     ],
+     "foodAndDrinks": [
+      "Грогу и домашний козий сыр",
+      "Варенье из папайи"
+     ],
+     "criticalTips": [
+      "Тропы крутые и скользкие — нужна крепкая обувь.",
+      "Обратный паром могут отменить из-за погоды — оставьте день запаса до рейса."
+     ],
+     "mapsQuery": "Paul, Santo Antão, Cabo Verde"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Кашупа (рагу из кукурузы, фасоли и мяса/рыбы — национальное блюдо)",
+     "Лобстер на гриле и свежая рыба (групер, ваху)",
+     "Калду-ди-пейши (рыбный суп)"
+    ],
+    "drinks": [
+     "Грогу (ром из сахарного тростника, Санту-Антан)",
+     "Понше (ликёр из грогу и патоки)",
+     "Вино и кофе с острова Фогу"
+    ],
+    "streetFoods": [
+     "Паштел-кон-диабу-дентру (жареный пирожок с острым тунцом)",
+     "Кускус (кукурузный пирог с мёдом)",
+     "Варенье из папайи с козьим сыром"
+    ],
+    "diningAdvice": "Кашупу едят в любое время дня; утром — обжаренной («рефогада») с яйцом. За свежей рыбой и лобстерами идите в маленькие заведения у порта."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Крем с высоким SPF и шляпа",
+     "Ветровка (на островах очень ветрено)",
+     "Трекинговая обувь для Санту-Антана",
+     "Наличные евро (мелкие купюры)"
+    ],
+    "safetyAndEtiquette": [
+     "Здоровайтесь со всеми: «Bon dia».",
+     "Не гуляйте по городу в купальнике.",
+     "Купайтесь только на обозначенных пляжах."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Используются европейские розетки C и F (Schuko); турецкие вилки подходят без переходника."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Водопроводная вода в основном опреснённая, пить её не рекомендуют — пейте бутилированную.",
+    "vaccines": [
+     "Плановые прививки и гепатит A",
+     "Брюшной тиф (для поездок в глубинку)",
+     "Защита от комаров из-за денге (сезон дождей)",
+     "Сертификат о прививке от жёлтой лихорадки — только при прибытии из страны риска; с 2024 года страна признана свободной от малярии"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "130"
+   },
+   "tipping": {
+    "custom": "Чаевые по желанию, но их ценят.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "В ресторанах достаточно 5 – 10% или округлить счёт; гидам и водителям — небольшие чаевые за день."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Возврата туристам нет (НДС 15%)",
+    "minSpend": "Не применяется",
+    "customsNote": "Возврата НДС туристам нет; отели взимают небольшой туристический сбор за ночь. Вывоз изделий из морских черепах, кораллов и ракушек запрещён; не увозите песок с пляжей."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1.50 - $4",
+    "topCarriers": [
+     "CVMóvel (Cabo Verde Telecom)",
+     "Unitel T+"
+    ],
+    "airportSimTrapWarning": "В аэропортах Сала и Праи есть точки CVMóvel и Unitel T+, но в городских салонах пакеты обычно выгоднее; в горах Санту-Антана связь может пропадать."
+   },
+   "touristScams": [
+    {
+     "title": "Навязчивые пляжные торговцы",
+     "desc": "На Сале и Боа-Вишта торговцы повязывают «подарочный» браслет и требуют деньги или продают сувениры втридорога.",
+     "tip": "Вежливо скажите «não, obrigado» и идите дальше."
+    },
+    {
+     "title": "Нелицензированные туры и прокат квадроциклов",
+     "desc": "Дешёвые уличные туры и квадроциклы без страховки — за повреждения могут потребовать крупную сумму.",
+     "tip": "Бронируйте через отель или лицензированное агентство и фотографируйте технику при получении."
+    },
+    {
+     "title": "Такси без оговорённой цены",
+     "desc": "Счётчиков нет — по прибытии могут назвать завышенную цену.",
+     "tip": "Договаривайтесь о цене заранее; тарифы из аэропорта обычно вывешены."
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,1767 @@
+{
+ "tr": {
+  "insights": {
+   "currency": "Orta Afrika CFA Frangı (XAF; euroya sabit)",
+   "plugType": "Tip C, E (230V, 50Hz)",
+   "bestMonths": "Haziran – Eylül (ana kurak mevsim, görece serin) ve Aralık – Şubat (kısa kurak dönem) · Ekim – Kasım ve Mart – Mayıs yoğun yağış",
+   "safety": {
+    "safetyScore": 55,
+    "safetyLevel": "Orta Seviye",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60",
+    "crimeRateSummary": "Brazzaville ve Pointe-Noire'da kapkaç, gece soygunları ve sahte polis vakaları görülür. Pool bölgesinde ve ülke kuzeyinde uzak alanlarda dikkatli olunmalı; sağlık hizmetleri sınırlıdır.",
+    "commonScams": [
+     "Sokakta “belge kontrolü” yapan kişiler eksik evrak bahanesiyle para ister.",
+     "Resmî bina, köprü ya da nehir kıyısını fotoğraflayanlardan para istenir.",
+     "Sokak sarrafları eksik para verir veya sahte banknot karıştırır."
+    ],
+    "safeTravelTips": [
+     "Gece yürümeyin; otel veya güvenilir şoför ayarlayın.",
+     "Kalabalık gösteri ve siyasi toplantılardan uzak durun.",
+     "Tahliye kapsamlı sağlık sigortası yaptırın; ciddi durumlarda tedavi için yurt dışına sevk gerekebilir."
+    ],
+    "emergencyNumbers": {
+     "police": "117",
+     "ambulance": "—",
+     "general": "117"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Brazzaville, Pointe-Noire ve ana yollarda 3G/4G; kuzey ormanlarında yok",
+    "costPerGbUsd": "1 - 3 $",
+    "esimAvailability": "Zayıf (uluslararası eSIM'ler pahalı); yerel SIM pasaportla alınır",
+    "bestCarriers": [
+     "MTN Congo",
+     "Airtel Congo"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Zayıf (şehirde taksi ve minibüs; şehirlerarası RN1 yolu ve iç hat uçuşları)",
+    "costLevel": "Orta – pahalı",
+    "singleTicketUsd": "Paylaşımlı taksi/minibüs ~0.30 - 1 $; özel taksi kısa mesafe 2 - 5 $",
+    "dailyPassUsd": "Yok (şoförlü araç ~70 - 120 $/gün)",
+    "popularRideApps": [
+     "Yaygın uygulama yok – taksi veya otel aracı"
+    ],
+    "taxiAdvice": "Brazzaville'de yeşil-beyaz taksiler taksimetresizdir; fiyatı binmeden konuşun ve geceleri yalnızca otelin ayarladığı aracı kullanın."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "50 - 80 $",
+    "dailyBudgetMidrangeUsd": "140 - 250 $",
+    "budgetMealUsd": "5 - 12 $",
+    "coffeeUsd": "2 - 4 $",
+    "waterBottleUsd": "0.70 - 1.50 $",
+    "hostelDormUsd": "Hostel yok denecek kadar az",
+    "hotel3StarUsd": "90 - 170 $",
+    "flightCostIndex": "Yüksek (aktarmalı)",
+    "flightTip": "Brazzaville Maya-Maya (BZV) veya Pointe-Noire'a (PNR) Paris (Air France), Addis Ababa (Ethiopian) ya da Casablanca (Royal Air Maroc) aktarmasıyla ulaşılır. Odzala için lodge'ların charter uçuşları vardır."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Uzun selamlaşma ve el sıkışma önemlidir; büyüklere öncelik verin.",
+     "Şık giyim saygı göstergesidir; “La Sape” kültürü Brazzaville'in Bacongo semtinde doğmuştur.",
+     "Askerî alan, köprü ve resmî binaları fotoğraflamayın."
+    ],
+    "festivals": [
+     "FESPAM – Panafrika Müzik Festivali (Brazzaville, iki yılda bir)",
+     "Bağımsızlık Günü (15 Ağustos)",
+     "Bacongo'da sapeur geçitleri"
+    ],
+    "lifestyle": "Kongo Nehri'nin karşı kıyısında Kinşasa'ya bakan, rumba müziği, şık giyim ve canlı bar kültürüyle bilinen Brazzaville ile petrol kenti Pointe-Noire arasında şekillenen, büyük kısmı yağmur ormanı olan bir ülke."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Odzala-Kokoua Ulusal Parkı (UNESCO; ova gorilleri)",
+     "Sainte-Anne Bazilikası (Brazzaville)",
+     "Djoué akıntıları (Les Rapides)",
+     "Poto-Poto Resim Okulu",
+     "Diosso Kanyonu ve Loango (Pointe-Noire yakını)",
+     "Conkouati-Douli Ulusal Parkı"
+    ],
+    "bestSeasons": "Haziran – Eylül (ana kurak mevsim, görece serin) ve Aralık – Şubat (kısa kurak dönem) · Ekim – Kasım ve Mart – Mayıs yoğun yağış",
+    "travelStyleTip": "Odzala lodge paketleri pahalıdır ama ülkeye gelmenin asıl sebebidir; şehirlerde yerel bir rehberle gezmek hem güvenliği hem deneyimi artırır."
+   },
+   "religion": {
+    "primaryReligions": "Hristiyanlık (~%85: Katolik ~1/3, Protestan ve diriliş kiliseleri), İslam (~%1 – 2), geleneksel inançlar",
+    "respectNorms": "Kiliselerde şık ve kapalı giyinin; ayin sırasında fotoğraf için izin isteyin.",
+    "sacredSites": [
+     "Sainte-Anne du Congo Bazilikası",
+     "Sacré-Cœur Katedrali (Brazzaville)",
+     "Loango (tarihi misyon ve köle ticareti anıtı)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Resmî dil Fransızcadır; Lingala (kuzey ve Brazzaville) ve Kituba/Munukutuba (güney, Pointe-Noire) ulusal dillerdir.",
+    "englishProficiency": "Zayıf; Fransızca gerekir, İngilizce yalnızca bazı otel ve petrol şirketlerinde konuşulur.",
+    "phrases": [
+     {
+      "phrase": "Mbote!",
+      "meaning": "Merhaba! (Lingala ve Kituba)",
+      "translation": "Merhaba! (Lingala ve Kituba)",
+      "pronunciation": "mbo-te"
+     },
+     {
+      "phrase": "Sango nini?",
+      "meaning": "Ne haber? (Lingala)",
+      "translation": "Ne haber? (Lingala)",
+      "pronunciation": "san-go ni-ni"
+     },
+     {
+      "phrase": "Melesi mingi",
+      "meaning": "Çok teşekkürler (Lingala)",
+      "translation": "Çok teşekkürler (Lingala)",
+      "pronunciation": "me-le-si min-gi"
+     },
+     {
+      "phrase": "Matondo mingi",
+      "meaning": "Çok teşekkürler (Kituba, güneyde)",
+      "translation": "Çok teşekkürler (Kituba, güneyde)",
+      "pronunciation": "ma-ton-do min-gi"
+     },
+     {
+      "phrase": "C'est combien ?",
+      "meaning": "Ne kadar? (Fransızca)",
+      "translation": "Ne kadar? (Fransızca)",
+      "pronunciation": "se kom-byen"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Bölgede Loango, Kongo ve Teke krallıkları hüküm sürdü. 1880'de Pierre Savorgnan de Brazza ile Teke kralı Makoko arasındaki antlaşmayla Fransız yönetimi başladı; Brazzaville Fransız Ekvator Afrikası'nın başkenti, 1940'ta da Özgür Fransa'nın başkenti oldu. 15 Ağustos 1960'ta bağımsızlık kazanıldı; 1990'lardaki iç savaşların ardından ülke barış sürecine girdi.",
+    "milestones": [
+     "1880: Brazza – Makoko antlaşması",
+     "1940: Brazzaville, Özgür Fransa'nın başkenti",
+     "1960: Bağımsızlık",
+     "2012: Sangha Trinational UNESCO listesinde"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Poulet à la moambé (palm sosunda tavuk)",
+     "Saka-saka (yer fıstıklı manyok yaprağı)",
+     "Maboké (muz yaprağında balık)"
+    ],
+    "traditionalDrinks": [
+     "Ngok' birası",
+     "Palmiye şarabı",
+     "Zencefil suyu (jus de gingembre)"
+    ],
+    "streetFoodAndDesserts": [
+     "Izgara safou (Afrika eriği)",
+     "Et şişleri (brochettes)",
+     "Beignets (kızarmış hamur)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Sony Labou Tansi (yazar)",
+     "Alain Mabanckou (yazar)",
+     "Roga-Roga (Extra Musica, müzisyen)"
+    ],
+    "strongSectors": [
+     "Petrol ve gaz",
+     "Kereste ve ormancılık",
+     "Madencilik projeleri (potas, demir cevheri)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Nakit esastır; ATM'ler Brazzaville ve Pointe-Noire'da bulunur, kart yalnızca büyük otellerde geçer. Euro kolayca bozdurulur; mobil para (MTN MoMo, Airtel Money) yaygındır.",
+    "tippingCulture": "Bahşiş isteğe bağlıdır. İyi restoranlarda %5 – 10; lodge rehberleri ve iz sürücülere tur sonunda bahşiş verilir.",
+    "economicPillars": "Petrol (ihracatın büyük kısmı), kereste, tarım ve hizmetler."
+   }
+  },
+  "itin": {
+   "routeName": "Kongo-Brazavil: Pointe-Noire, Brazzaville ve Odzala",
+   "routeSummary": "Atlantik kıyısındaki Pointe-Noire ve Diosso Kanyonu'ndan başkent Brazzaville'in rumba ve sapeur kültürüne, oradan charter uçuşla Odzala-Kokoua'nın gorilli yağmur ormanlarına uzanan 9 günlük rota.",
+   "totalDays": 9,
+   "idealDurationText": "9 Günlük Rota",
+   "bestSeason": "Haziran – Eylül (ana kurak mevsim, görece serin) ve Aralık – Şubat (kısa kurak dönem) · Ekim – Kasım ve Mart – Mayıs yoğun yağış",
+   "transportMode": "İç hat uçuşu Pointe-Noire – Brazzaville (~1 sa), Brazzaville'de şoförlü araç, Odzala'ya lodge charter uçuşu",
+   "paceLevel": "Dengeli (şehir kültürü + yağmur ormanı)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "1. Durak: Pointe-Noire",
+     "recommendedDuration": "2 Gün",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "Diosso Kanyonu (kızıl kayalık kanyon)",
+      "Loango köle ticareti anıtı",
+      "Côte Sauvage plajları"
+     ],
+     "activities": [
+      "Diosso Kanyonu'nun manzara noktasına gidin.",
+      "Loango'da tarihi limanın hikâyesini dinleyin.",
+      "Sahilde taze deniz ürünleri yiyin."
+     ],
+     "foodAndDrinks": [
+      "Maboké",
+      "Izgara balık ve Ngok' birası"
+     ],
+     "criticalTips": [
+      "Atlantik'te akıntılar güçlüdür; yalnızca güvenli plajlarda yüzün.",
+      "Diosso'ya rehberle gidin."
+     ],
+     "mapsQuery": "Gorges de Diosso, Pointe-Noire, Republic of the Congo"
+    },
+    {
+     "stopNumber": 2,
+     "name": "2. Durak: Brazzaville",
+     "recommendedDuration": "3 Gün",
+     "durationBadge": "3 Gün",
+     "highlights": [
+      "Sainte-Anne Bazilikası",
+      "Djoué akıntıları",
+      "Poto-Poto Resim Okulu ve pazarı",
+      "Kongo Nehri kıyısından Kinşasa manzarası"
+     ],
+     "activities": [
+      "Akıntılar kıyısında bir restoranda gün batımını izleyin.",
+      "Poto-Poto'da ressamların atölyelerini gezin.",
+      "Bacongo'da sapeur kültürünü rehberle keşfedin."
+     ],
+     "foodAndDrinks": [
+      "Poulet à la moambé",
+      "Saka-saka ve manyok"
+     ],
+     "criticalTips": [
+      "Nehir kıyısında ve resmî binalarda fotoğraf çekmeyin.",
+      "Akşamları yalnızca otel aracını kullanın."
+     ],
+     "mapsQuery": "Basilique Sainte-Anne, Brazzaville, Republic of the Congo"
+    },
+    {
+     "stopNumber": 3,
+     "name": "3. Durak: Odzala-Kokoua Ulusal Parkı",
+     "recommendedDuration": "4 Gün",
+     "durationBadge": "4 Gün",
+     "highlights": [
+      "Batı ova gorili takibi",
+      "Bai'lerde orman filleri ve manda",
+      "Lekoli Nehri'nde kano"
+     ],
+     "activities": [
+      "İz sürücülerle goril grubuna yürüyün.",
+      "Bai kenarında yaban hayatı gözlemi yapın.",
+      "Gece yürüyüşünde orman seslerini dinleyin."
+     ],
+     "foodAndDrinks": [
+      "Lodge'un yerel menüsü",
+      "Taze tropik meyveler"
+     ],
+     "criticalTips": [
+      "Goril ziyaretinde mesafe ve maske kurallarına uyun; hastaysanız katılmayın.",
+      "Paketler pahalıdır ve sınırlı sayıdadır; aylar önce rezervasyon yapın."
+     ],
+     "mapsQuery": "Odzala-Kokoua National Park, Republic of the Congo"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Poulet à la moambé (palm sosunda tavuk)",
+     "Saka-saka (yer fıstıklı manyok yaprağı)",
+     "Maboké (muz yaprağında balık)"
+    ],
+    "drinks": [
+     "Ngok' birası",
+     "Palmiye şarabı",
+     "Zencefil suyu (jus de gingembre)"
+    ],
+    "streetFoods": [
+     "Izgara safou (Afrika eriği)",
+     "Et şişleri (brochettes)",
+     "Beignets (kızarmış hamur)"
+    ],
+    "diningAdvice": "Şehirde nehir kenarındaki “maquis” restoranlarda ızgara balık deneyin; sokak yemeğinde sıcak ve taze pişeni seçin, yaban hayvanı eti tüketmeyin."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Sarıhumma aşı kartı (zorunlu)",
+     "Euro nakit",
+     "Sıtma ilacı ve DEET'li kovucu",
+     "Ormanda yağmurluk ve hızlı kuruyan giysi"
+    ],
+    "safetyAndEtiquette": [
+     "Gece yürümeyin.",
+     "Resmî binaları fotoğraflamayın.",
+     "Selam vermeden konuya girmeyin."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "E"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Avrupa tipi C ve E prizler kullanılır; Türk fişleri uyar. Elektrik kesintileri sık olduğundan powerbank taşıyın."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Musluk suyu içilmez; kapalı şişe su için, buz ve çiğ salatadan kaçının.",
+    "vaccines": [
+     "Sarıhumma (girişte zorunlu)",
+     "Sıtma profilaksisi (tüm ülke yüksek risk)",
+     "Hepatit A, tifo ve çocuk felci rapeli",
+     "Kuduz (orman ve kırsal geziler için)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "—"
+   },
+   "tipping": {
+    "custom": "Bahşiş isteğe bağlıdır.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "İyi restoranlarda %5 – 10; lodge rehberleri ve iz sürücülere tur sonunda bahşiş verilir."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Turiste iade yok (KDV ~%18)",
+    "minSpend": "Uygulanmaz",
+    "customsNote": "Kongo Cumhuriyeti'nde turiste KDV iadesi yoktur. Fildişi, yaban hayvanı ürünleri ve izinsiz kereste/değerli taş çıkarmak yasaktır; sanat eserleri için ihracat belgesi istenebilir."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "$1 - $3",
+    "topCarriers": [
+     "MTN Congo",
+     "Airtel Congo"
+    ],
+    "airportSimTrapWarning": "Havalimanında SIM seçeneği sınırlıdır; şehirdeki resmî MTN veya Airtel mağazasından pasaportla hat alın. Odzala'da yalnızca lodge Wi-Fi'ı vardır."
+   },
+   "touristScams": [
+    {
+     "title": "Sahte polis kontrolü",
+     "desc": "Sokakta “belge kontrolü” yapan kişiler eksik evrak bahanesiyle para ister.",
+     "tip": "Pasaport fotokopisi gösterin ve karakola gitmeyi teklif edin."
+    },
+    {
+     "title": "Fotoğraf cezası",
+     "desc": "Resmî bina, köprü ya da nehir kıyısını fotoğraflayanlardan para istenir.",
+     "tip": "Fotoğraf çekmeden önce rehberinize danışın."
+    },
+    {
+     "title": "Döviz bozdurma hilesi",
+     "desc": "Sokak sarrafları eksik para verir veya sahte banknot karıştırır.",
+     "tip": "Banka veya otelde bozdurun ya da ATM kullanın."
+    }
+   ]
+  }
+ },
+ "en": {
+  "insights": {
+   "currency": "Central African CFA Franc (XAF; pegged to the euro)",
+   "plugType": "Type C, E (230V, 50Hz)",
+   "bestMonths": "June – September (main dry season, relatively cool) and December – February (short dry spell) · October – November and March – May heavy rain",
+   "safety": {
+    "safetyScore": 55,
+    "safetyLevel": "Moderate",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60",
+    "crimeRateSummary": "Brazzaville and Pointe-Noire see bag snatching, night-time robberies and fake police. Take care in the Pool department and remote northern areas; healthcare is limited.",
+    "commonScams": [
+     "People doing street “document checks” demand money over supposedly missing papers.",
+     "Money is demanded from people photographing official buildings, bridges or the riverbank.",
+     "Street money changers short-change you or slip in fake notes."
+    ],
+    "safeTravelTips": [
+     "Don't walk at night; arrange a hotel or trusted driver.",
+     "Stay away from crowds and political gatherings.",
+     "Get insurance with medical evacuation; serious cases may require treatment abroad."
+    ],
+    "emergencyNumbers": {
+     "police": "117",
+     "ambulance": "—",
+     "general": "117"
+    }
+   },
+   "internet": {
+    "networkCoverage": "3G/4G in Brazzaville, Pointe-Noire and along main roads; none in the northern forests",
+    "costPerGbUsd": "1 - 3 $",
+    "esimAvailability": "Poor (international eSIMs are pricey); local SIMs require a passport",
+    "bestCarriers": [
+     "MTN Congo",
+     "Airtel Congo"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Poor (taxis and minibuses in town; RN1 highway and domestic flights between cities)",
+    "costLevel": "Moderate – expensive",
+    "singleTicketUsd": "Shared taxi/minibus ~0.30 - 1 $; private taxi short ride 2 - 5 $",
+    "dailyPassUsd": "None (car with driver ~70 - 120 $/day)",
+    "popularRideApps": [
+     "No widely used app – taxis or hotel car"
+    ],
+    "taxiAdvice": "Brazzaville's green-and-white taxis have no meters; agree the fare before getting in, and at night use only a car arranged by your hotel."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "50 - 80 $",
+    "dailyBudgetMidrangeUsd": "140 - 250 $",
+    "budgetMealUsd": "5 - 12 $",
+    "coffeeUsd": "2 - 4 $",
+    "waterBottleUsd": "0.70 - 1.50 $",
+    "hostelDormUsd": "Practically no hostels",
+    "hotel3StarUsd": "90 - 170 $",
+    "flightCostIndex": "High (with connections)",
+    "flightTip": "Brazzaville Maya-Maya (BZV) or Pointe-Noire (PNR) are reached via Paris (Air France), Addis Ababa (Ethiopian) or Casablanca (Royal Air Maroc). Odzala lodges run charter flights."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Long greetings and handshakes matter; give elders priority.",
+     "Smart dress shows respect; the “La Sape” culture was born in Brazzaville's Bacongo district.",
+     "Don't photograph military sites, bridges or official buildings."
+    ],
+    "festivals": [
+     "FESPAM – Pan-African Music Festival (Brazzaville, biennial)",
+     "Independence Day (15 August)",
+     "Sapeur parades in Bacongo"
+    ],
+    "lifestyle": "A largely rainforest country shaped by Brazzaville, facing Kinshasa across the Congo River and known for rumba, stylish dress and lively bars, and the oil city of Pointe-Noire."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Odzala-Kokoua National Park (UNESCO; lowland gorillas)",
+     "Basilica of Sainte-Anne (Brazzaville)",
+     "Djoué rapids (Les Rapides)",
+     "Poto-Poto School of Painting",
+     "Diosso Gorge and Loango (near Pointe-Noire)",
+     "Conkouati-Douli National Park"
+    ],
+    "bestSeasons": "June – September (main dry season, relatively cool) and December – February (short dry spell) · October – November and March – May heavy rain",
+    "travelStyleTip": "Odzala lodge packages are expensive but are the main reason to come; in the cities, exploring with a local guide improves both safety and experience."
+   },
+   "religion": {
+    "primaryReligions": "Christianity (~85%: Catholic ~1/3, Protestant and revivalist churches), Islam (~1 – 2%), traditional beliefs",
+    "respectNorms": "Dress smartly and modestly in church and ask before photographing during services.",
+    "sacredSites": [
+     "Basilica of Sainte-Anne du Congo",
+     "Sacré-Cœur Cathedral (Brazzaville)",
+     "Loango (historic mission and slave-trade memorial)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "French is official; Lingala (north and Brazzaville) and Kituba/Munukutuba (south, Pointe-Noire) are national languages.",
+    "englishProficiency": "Low; you need French, English only in some hotels and oil companies.",
+    "phrases": [
+     {
+      "phrase": "Mbote!",
+      "meaning": "Hello! (Lingala and Kituba)",
+      "translation": "Hello! (Lingala and Kituba)",
+      "pronunciation": "mbo-te"
+     },
+     {
+      "phrase": "Sango nini?",
+      "meaning": "What's new? (Lingala)",
+      "translation": "What's new? (Lingala)",
+      "pronunciation": "san-go ni-ni"
+     },
+     {
+      "phrase": "Melesi mingi",
+      "meaning": "Thank you very much (Lingala)",
+      "translation": "Thank you very much (Lingala)",
+      "pronunciation": "me-le-si min-gi"
+     },
+     {
+      "phrase": "Matondo mingi",
+      "meaning": "Thank you very much (Kituba, in the south)",
+      "translation": "Thank you very much (Kituba, in the south)",
+      "pronunciation": "ma-ton-do min-gi"
+     },
+     {
+      "phrase": "C'est combien ?",
+      "meaning": "How much is it? (French)",
+      "translation": "How much is it? (French)",
+      "pronunciation": "se kom-byen"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "The Loango, Kongo and Teke kingdoms ruled the region. French rule began with the 1880 treaty between Pierre Savorgnan de Brazza and the Teke king Makoko; Brazzaville became capital of French Equatorial Africa and, in 1940, of Free France. Independence came on 15 August 1960; after the civil wars of the 1990s the country entered a peace process.",
+    "milestones": [
+     "1880: Brazza – Makoko treaty",
+     "1940: Brazzaville becomes capital of Free France",
+     "1960: Independence",
+     "2012: Sangha Trinational inscribed by UNESCO"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Poulet à la moambé (chicken in palm-nut sauce)",
+     "Saka-saka (cassava leaves with peanut)",
+     "Maboké (fish in banana leaves)"
+    ],
+    "traditionalDrinks": [
+     "Ngok' beer",
+     "Palm wine",
+     "Ginger juice (jus de gingembre)"
+    ],
+    "streetFoodAndDesserts": [
+     "Grilled safou (African plum)",
+     "Meat skewers (brochettes)",
+     "Beignets (fried dough)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Sony Labou Tansi (writer)",
+     "Alain Mabanckou (writer)",
+     "Roga-Roga (Extra Musica, musician)"
+    ],
+    "strongSectors": [
+     "Oil and gas",
+     "Timber and forestry",
+     "Mining projects (potash, iron ore)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Cash is essential; ATMs exist in Brazzaville and Pointe-Noire, and cards work only in large hotels. Euros are easy to exchange; mobile money (MTN MoMo, Airtel Money) is widespread.",
+    "tippingCulture": "Tipping is optional. 5 – 10% in good restaurants; lodge guides and trackers are tipped at the end of the stay.",
+    "economicPillars": "Oil (most exports), timber, agriculture and services."
+   }
+  },
+  "itin": {
+   "routeName": "Congo-Brazzaville: Pointe-Noire, Brazzaville & Odzala",
+   "routeSummary": "A 9-day route from Atlantic Pointe-Noire and the Diosso Gorge to the rumba and sapeur culture of Brazzaville, then by charter flight to the gorilla rainforests of Odzala-Kokoua.",
+   "totalDays": 9,
+   "idealDurationText": "9-Day Itinerary",
+   "bestSeason": "June – September (main dry season, relatively cool) and December – February (short dry spell) · October – November and March – May heavy rain",
+   "transportMode": "Domestic flight Pointe-Noire – Brazzaville (~1 h), car with driver in Brazzaville, lodge charter flight to Odzala",
+   "paceLevel": "Balanced (city culture + rainforest)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stop 1: Pointe-Noire",
+     "recommendedDuration": "2 Days",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "Diosso Gorge (red cliff canyon)",
+      "Loango slave-trade memorial",
+      "Côte Sauvage beaches"
+     ],
+     "activities": [
+      "Visit the Diosso Gorge viewpoint.",
+      "Learn the story of the historic port at Loango.",
+      "Eat fresh seafood by the beach."
+     ],
+     "foodAndDrinks": [
+      "Maboké",
+      "Grilled fish with a Ngok' beer"
+     ],
+     "criticalTips": [
+      "Atlantic currents are strong; swim only at safe beaches.",
+      "Go to Diosso with a guide."
+     ],
+     "mapsQuery": "Gorges de Diosso, Pointe-Noire, Republic of the Congo"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stop 2: Brazzaville",
+     "recommendedDuration": "3 Days",
+     "durationBadge": "3 Days",
+     "highlights": [
+      "Basilica of Sainte-Anne",
+      "Djoué rapids",
+      "Poto-Poto School of Painting and market",
+      "View of Kinshasa across the Congo River"
+     ],
+     "activities": [
+      "Watch sunset at a restaurant by the rapids.",
+      "Visit painters' studios in Poto-Poto.",
+      "Discover sapeur culture in Bacongo with a guide."
+     ],
+     "foodAndDrinks": [
+      "Poulet à la moambé",
+      "Saka-saka with cassava"
+     ],
+     "criticalTips": [
+      "Don't take photos on the riverbank or of official buildings.",
+      "In the evening use only the hotel car."
+     ],
+     "mapsQuery": "Basilique Sainte-Anne, Brazzaville, Republic of the Congo"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stop 3: Odzala-Kokoua National Park",
+     "recommendedDuration": "4 Days",
+     "durationBadge": "4 Days",
+     "highlights": [
+      "Western lowland gorilla tracking",
+      "Forest elephants and buffalo at the bais",
+      "Kayaking on the Lekoli River"
+     ],
+     "activities": [
+      "Hike with trackers to a gorilla group.",
+      "Watch wildlife at the edge of a bai.",
+      "Listen to the forest on a night walk."
+     ],
+     "foodAndDrinks": [
+      "The lodge's local menu",
+      "Fresh tropical fruit"
+     ],
+     "criticalTips": [
+      "Follow distance and mask rules with gorillas; don't go if you're ill.",
+      "Packages are expensive and limited; book months ahead."
+     ],
+     "mapsQuery": "Odzala-Kokoua National Park, Republic of the Congo"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Poulet à la moambé (chicken in palm-nut sauce)",
+     "Saka-saka (cassava leaves with peanut)",
+     "Maboké (fish in banana leaves)"
+    ],
+    "drinks": [
+     "Ngok' beer",
+     "Palm wine",
+     "Ginger juice (jus de gingembre)"
+    ],
+    "streetFoods": [
+     "Grilled safou (African plum)",
+     "Meat skewers (brochettes)",
+     "Beignets (fried dough)"
+    ],
+    "diningAdvice": "In town try grilled fish at riverside “maquis” eateries; with street food choose freshly cooked hot dishes and avoid bushmeat."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Yellow fever vaccination card (mandatory)",
+     "Euros in cash",
+     "Malaria tablets and DEET repellent",
+     "Rain jacket and quick-dry clothing for the forest"
+    ],
+    "safetyAndEtiquette": [
+     "Don't walk at night.",
+     "Don't photograph official buildings.",
+     "Always greet before getting to the point."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "E"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "European Type C and E sockets; Turkish plugs fit. Power cuts are frequent, so carry a power bank."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Tap water isn't drinkable; drink sealed bottled water and avoid ice and raw salads.",
+    "vaccines": [
+     "Yellow fever (mandatory on entry)",
+     "Malaria prophylaxis (high risk nationwide)",
+     "Hepatitis A, typhoid and polio booster",
+     "Rabies (for forest and rural trips)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "—"
+   },
+   "tipping": {
+    "custom": "Tipping is optional.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "5 – 10% in good restaurants; lodge guides and trackers are tipped at the end of the stay."
+   },
+   "taxFree": {
+    "vatRefundPercent": "No tourist refund (VAT ~18%)",
+    "minSpend": "Not applicable",
+    "customsNote": "The Republic of the Congo has no VAT refund for tourists. Exporting ivory, wildlife products, or timber/gemstones without permits is prohibited; artworks may need an export certificate."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "$1 - $3",
+    "topCarriers": [
+     "MTN Congo",
+     "Airtel Congo"
+    ],
+    "airportSimTrapWarning": "SIM options at the airport are limited; get one with your passport at an official MTN or Airtel shop in town. In Odzala there is only lodge Wi-Fi."
+   },
+   "touristScams": [
+    {
+     "title": "Fake police check",
+     "desc": "People doing street “document checks” demand money over supposedly missing papers.",
+     "tip": "Show a passport copy and offer to go to the police station."
+    },
+    {
+     "title": "Photo “fine”",
+     "desc": "Money is demanded from people photographing official buildings, bridges or the riverbank.",
+     "tip": "Check with your guide before taking photos."
+    },
+    {
+     "title": "Money-changing trick",
+     "desc": "Street money changers short-change you or slip in fake notes.",
+     "tip": "Change money at a bank or hotel, or use an ATM."
+    }
+   ]
+  }
+ },
+ "de": {
+  "insights": {
+   "currency": "CFA-Franc BEAC (XAF; an den Euro gekoppelt)",
+   "plugType": "Typ C, E (230V, 50Hz)",
+   "bestMonths": "Juni – September (große Trockenzeit, relativ kühl) und Dezember – Februar (kleine Trockenzeit) · Oktober – November und März – Mai starker Regen",
+   "safety": {
+    "safetyScore": 55,
+    "safetyLevel": "Mäßiges Risiko",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60",
+    "crimeRateSummary": "In Brazzaville und Pointe-Noire gibt es Taschendiebstahl, nächtliche Überfälle und falsche Polizisten. Im Departement Pool und in abgelegenen Gebieten im Norden ist Vorsicht geboten; die medizinische Versorgung ist begrenzt.",
+    "commonScams": [
+     "Bei „Ausweiskontrollen“ auf der Straße wird wegen angeblich fehlender Papiere Geld verlangt.",
+     "Wer Amtsgebäude, Brücken oder das Flussufer fotografiert, soll zahlen.",
+     "Straßenwechsler geben zu wenig heraus oder schmuggeln Falschgeld ein."
+    ],
+    "safeTravelTips": [
+     "Nachts nicht zu Fuß gehen; Hotel- oder vertrauenswürdigen Fahrer organisieren.",
+     "Menschenmengen und politische Versammlungen meiden.",
+     "Versicherung mit Rücktransport abschließen; schwere Fälle müssen oft im Ausland behandelt werden."
+    ],
+    "emergencyNumbers": {
+     "police": "117",
+     "ambulance": "—",
+     "general": "117"
+    }
+   },
+   "internet": {
+    "networkCoverage": "3G/4G in Brazzaville, Pointe-Noire und an Hauptstraßen; in den nördlichen Wäldern kein Netz",
+    "costPerGbUsd": "1 - 3 $",
+    "esimAvailability": "Schwach (internationale eSIMs teuer); lokale SIM mit Pass",
+    "bestCarriers": [
+     "MTN Congo",
+     "Airtel Congo"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Schwach (Taxis und Minibusse in der Stadt; zwischen Städten Fernstraße RN1 und Inlandsflüge)",
+    "costLevel": "Mittel – teuer",
+    "singleTicketUsd": "Sammeltaxi/Minibus ~0,30 - 1 $; Privattaxi Kurzstrecke 2 - 5 $",
+    "dailyPassUsd": "Keiner (Auto mit Fahrer ~70 - 120 $/Tag)",
+    "popularRideApps": [
+     "Keine verbreitete App – Taxi oder Hotelwagen"
+    ],
+    "taxiAdvice": "Die grün-weißen Taxis in Brazzaville haben kein Taxameter; Preis vorher vereinbaren und nachts nur vom Hotel organisierte Wagen nutzen."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "50 - 80 $",
+    "dailyBudgetMidrangeUsd": "140 - 250 $",
+    "budgetMealUsd": "5 - 12 $",
+    "coffeeUsd": "2 - 4 $",
+    "waterBottleUsd": "0.70 - 1.50 $",
+    "hostelDormUsd": "Praktisch keine Hostels",
+    "hotel3StarUsd": "90 - 170 $",
+    "flightCostIndex": "Hoch (mit Umstieg)",
+    "flightTip": "Brazzaville Maya-Maya (BZV) oder Pointe-Noire (PNR) erreicht man über Paris (Air France), Addis Abeba (Ethiopian) oder Casablanca (Royal Air Maroc). Die Odzala-Lodges bieten Charterflüge."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Ausführliche Begrüßung und Händedruck sind wichtig; Ältere zuerst.",
+     "Gepflegte Kleidung zeigt Respekt; die „La Sape“-Kultur entstand im Brazzaviller Viertel Bacongo.",
+     "Keine Militäranlagen, Brücken oder Amtsgebäude fotografieren."
+    ],
+    "festivals": [
+     "FESPAM – Panafrikanisches Musikfestival (Brazzaville, alle zwei Jahre)",
+     "Unabhängigkeitstag (15. August)",
+     "Sapeur-Paraden in Bacongo"
+    ],
+    "lifestyle": "Ein großteils von Regenwald bedecktes Land, geprägt von Brazzaville gegenüber Kinshasa am Kongo, bekannt für Rumba, elegante Kleidung und lebhafte Bars, und der Ölstadt Pointe-Noire."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Nationalpark Odzala-Kokoua (UNESCO; Flachlandgorillas)",
+     "Basilika Sainte-Anne (Brazzaville)",
+     "Stromschnellen am Djoué (Les Rapides)",
+     "Malschule Poto-Poto",
+     "Diosso-Schlucht und Loango (bei Pointe-Noire)",
+     "Nationalpark Conkouati-Douli"
+    ],
+    "bestSeasons": "Juni – September (große Trockenzeit, relativ kühl) und Dezember – Februar (kleine Trockenzeit) · Oktober – November und März – Mai starker Regen",
+    "travelStyleTip": "Odzala-Lodgepakete sind teuer, aber der Hauptgrund für die Reise; in den Städten verbessert ein lokaler Guide Sicherheit und Erlebnis."
+   },
+   "religion": {
+    "primaryReligions": "Christentum (~85 %: katholisch ~1/3, protestantische und Erweckungskirchen), Islam (~1 – 2 %), traditionelle Religionen",
+    "respectNorms": "In der Kirche elegant und dezent kleiden; während des Gottesdienstes vor dem Fotografieren fragen.",
+    "sacredSites": [
+     "Basilika Sainte-Anne du Congo",
+     "Kathedrale Sacré-Cœur (Brazzaville)",
+     "Loango (historische Mission und Sklavenhandels-Gedenkstätte)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Amtssprache ist Französisch; Lingala (Norden und Brazzaville) und Kituba/Munukutuba (Süden, Pointe-Noire) sind Nationalsprachen.",
+    "englishProficiency": "Gering; Französisch nötig, Englisch nur in manchen Hotels und Ölfirmen.",
+    "phrases": [
+     {
+      "phrase": "Mbote!",
+      "meaning": "Hallo! (Lingala und Kituba)",
+      "translation": "Hallo! (Lingala und Kituba)",
+      "pronunciation": "mbo-te"
+     },
+     {
+      "phrase": "Sango nini?",
+      "meaning": "Was gibt's Neues? (Lingala)",
+      "translation": "Was gibt's Neues? (Lingala)",
+      "pronunciation": "san-go ni-ni"
+     },
+     {
+      "phrase": "Melesi mingi",
+      "meaning": "Vielen Dank (Lingala)",
+      "translation": "Vielen Dank (Lingala)",
+      "pronunciation": "me-le-si min-gi"
+     },
+     {
+      "phrase": "Matondo mingi",
+      "meaning": "Vielen Dank (Kituba, im Süden)",
+      "translation": "Vielen Dank (Kituba, im Süden)",
+      "pronunciation": "ma-ton-do min-gi"
+     },
+     {
+      "phrase": "C'est combien ?",
+      "meaning": "Wie viel kostet das? (Französisch)",
+      "translation": "Wie viel kostet das? (Französisch)",
+      "pronunciation": "se kom-byen"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Die Königreiche Loango, Kongo und Teke herrschten in der Region. Mit dem Vertrag von 1880 zwischen Pierre Savorgnan de Brazza und dem Teke-König Makoko begann die französische Herrschaft; Brazzaville wurde Hauptstadt Französisch-Äquatorialafrikas und 1940 des Freien Frankreichs. Am 15. August 1960 folgte die Unabhängigkeit; nach den Bürgerkriegen der 1990er begann ein Friedensprozess.",
+    "milestones": [
+     "1880: Vertrag Brazza – Makoko",
+     "1940: Brazzaville wird Hauptstadt des Freien Frankreichs",
+     "1960: Unabhängigkeit",
+     "2012: Sangha Trinational wird UNESCO-Welterbe"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Poulet à la Moambé (Huhn in Palmnusssoße)",
+     "Saka-Saka (Maniokblätter mit Erdnuss)",
+     "Maboké (Fisch in Bananenblättern)"
+    ],
+    "traditionalDrinks": [
+     "Ngok'-Bier",
+     "Palmwein",
+     "Ingwersaft (Jus de gingembre)"
+    ],
+    "streetFoodAndDesserts": [
+     "Gegrillte Safou (Afrikanische Pflaume)",
+     "Fleischspieße (Brochettes)",
+     "Beignets (frittierter Teig)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Sony Labou Tansi (Schriftsteller)",
+     "Alain Mabanckou (Schriftsteller)",
+     "Roga-Roga (Extra Musica, Musiker)"
+    ],
+    "strongSectors": [
+     "Öl und Gas",
+     "Holz und Forstwirtschaft",
+     "Bergbauprojekte (Kali, Eisenerz)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Bargeld ist entscheidend; Geldautomaten gibt es in Brazzaville und Pointe-Noire, Karten nur in großen Hotels. Euro lassen sich leicht tauschen; Mobile Money (MTN MoMo, Airtel Money) ist verbreitet.",
+    "tippingCulture": "Trinkgeld ist freiwillig. 5 – 10 % in guten Restaurants; Lodge-Guides und Fährtenleser bekommen am Ende ein Trinkgeld.",
+    "economicPillars": "Öl (Großteil der Exporte), Holz, Landwirtschaft und Dienstleistungen."
+   }
+  },
+  "itin": {
+   "routeName": "Kongo-Brazzaville: Pointe-Noire, Brazzaville & Odzala",
+   "routeSummary": "Eine 9-tägige Route vom atlantischen Pointe-Noire und der Diosso-Schlucht zur Rumba- und Sapeur-Kultur Brazzavilles und per Charterflug in die Gorilla-Regenwälder von Odzala-Kokoua.",
+   "totalDays": 9,
+   "idealDurationText": "9-tägige Route",
+   "bestSeason": "Juni – September (große Trockenzeit, relativ kühl) und Dezember – Februar (kleine Trockenzeit) · Oktober – November und März – Mai starker Regen",
+   "transportMode": "Inlandsflug Pointe-Noire – Brazzaville (~1 Std.), Auto mit Fahrer in Brazzaville, Lodge-Charterflug nach Odzala",
+   "paceLevel": "Ausgewogen (Stadtkultur + Regenwald)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stopp 1: Pointe-Noire",
+     "recommendedDuration": "2 Tage",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "Diosso-Schlucht (rote Felsschlucht)",
+      "Gedenkstätte des Sklavenhandels in Loango",
+      "Strände der Côte Sauvage"
+     ],
+     "activities": [
+      "Den Aussichtspunkt der Diosso-Schlucht besuchen.",
+      "In Loango die Geschichte des historischen Hafens erfahren.",
+      "Am Strand frische Meeresfrüchte essen."
+     ],
+     "foodAndDrinks": [
+      "Maboké",
+      "Gegrillter Fisch und Ngok'-Bier"
+     ],
+     "criticalTips": [
+      "Die Atlantikströmungen sind stark; nur an sicheren Stränden baden.",
+      "Mit Guide nach Diosso fahren."
+     ],
+     "mapsQuery": "Gorges de Diosso, Pointe-Noire, Republic of the Congo"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stopp 2: Brazzaville",
+     "recommendedDuration": "3 Tage",
+     "durationBadge": "3 Tage",
+     "highlights": [
+      "Basilika Sainte-Anne",
+      "Stromschnellen am Djoué",
+      "Malschule und Markt von Poto-Poto",
+      "Blick über den Kongo auf Kinshasa"
+     ],
+     "activities": [
+      "Den Sonnenuntergang in einem Restaurant an den Stromschnellen genießen.",
+      "In Poto-Poto Malerateliers besuchen.",
+      "Mit Guide die Sapeur-Kultur in Bacongo entdecken."
+     ],
+     "foodAndDrinks": [
+      "Poulet à la Moambé",
+      "Saka-Saka mit Maniok"
+     ],
+     "criticalTips": [
+      "Am Flussufer und an Amtsgebäuden nicht fotografieren.",
+      "Abends nur den Hotelwagen nutzen."
+     ],
+     "mapsQuery": "Basilique Sainte-Anne, Brazzaville, Republic of the Congo"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stopp 3: Nationalpark Odzala-Kokoua",
+     "recommendedDuration": "4 Tage",
+     "durationBadge": "4 Tage",
+     "highlights": [
+      "Tracking Westlicher Flachlandgorillas",
+      "Waldelefanten und Büffel an den Bais",
+      "Kajakfahren auf dem Lekoli"
+     ],
+     "activities": [
+      "Mit Fährtenlesern zu einer Gorillagruppe wandern.",
+      "Am Rand eines Bais Tiere beobachten.",
+      "Bei einer Nachtwanderung dem Wald lauschen."
+     ],
+     "foodAndDrinks": [
+      "Lokales Menü der Lodge",
+      "Frisches tropisches Obst"
+     ],
+     "criticalTips": [
+      "Bei Gorillas Abstand und Maske einhalten; krank nicht teilnehmen.",
+      "Pakete sind teuer und begrenzt; Monate vorher buchen."
+     ],
+     "mapsQuery": "Odzala-Kokoua National Park, Republic of the Congo"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Poulet à la Moambé (Huhn in Palmnusssoße)",
+     "Saka-Saka (Maniokblätter mit Erdnuss)",
+     "Maboké (Fisch in Bananenblättern)"
+    ],
+    "drinks": [
+     "Ngok'-Bier",
+     "Palmwein",
+     "Ingwersaft (Jus de gingembre)"
+    ],
+    "streetFoods": [
+     "Gegrillte Safou (Afrikanische Pflaume)",
+     "Fleischspieße (Brochettes)",
+     "Beignets (frittierter Teig)"
+    ],
+    "diningAdvice": "In der Stadt gegrillten Fisch in „Maquis“-Lokalen am Fluss probieren; bei Straßenessen frisch und heiß Zubereitetes wählen, kein Buschfleisch."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Gelbfieber-Impfpass (Pflicht)",
+     "Euro in bar",
+     "Malariatabletten und DEET-Mückenschutz",
+     "Regenjacke und schnell trocknende Kleidung für den Wald"
+    ],
+    "safetyAndEtiquette": [
+     "Nachts nicht zu Fuß gehen.",
+     "Keine Amtsgebäude fotografieren.",
+     "Immer erst grüßen, dann zur Sache kommen."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "E"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Europäische Steckdosen Typ C und E; türkische Stecker passen. Häufige Stromausfälle, daher Powerbank mitnehmen."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Leitungswasser ist nicht trinkbar; versiegeltes Flaschenwasser trinken, Eis und rohe Salate meiden.",
+    "vaccines": [
+     "Gelbfieber (Pflicht bei Einreise)",
+     "Malariaprophylaxe (landesweit hohes Risiko)",
+     "Hepatitis A, Typhus und Polio-Auffrischung",
+     "Tollwut (für Wald- und Landreisen)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "—"
+   },
+   "tipping": {
+    "custom": "Trinkgeld ist freiwillig.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "5 – 10 % in guten Restaurants; Lodge-Guides und Fährtenleser bekommen am Ende ein Trinkgeld."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Keine Erstattung für Touristen (MwSt. ~18 %)",
+    "minSpend": "Entfällt",
+    "customsNote": "Die Republik Kongo erstattet Touristen keine MwSt. Die Ausfuhr von Elfenbein, Wildtierprodukten oder Holz/Edelsteinen ohne Genehmigung ist verboten; Kunstwerke brauchen evtl. eine Ausfuhrbescheinigung."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "$1 - $3",
+    "topCarriers": [
+     "MTN Congo",
+     "Airtel Congo"
+    ],
+    "airportSimTrapWarning": "Am Flughafen gibt es kaum SIM-Angebote; mit Pass in einem offiziellen MTN- oder Airtel-Laden in der Stadt kaufen. In Odzala gibt es nur Lodge-WLAN."
+   },
+   "touristScams": [
+    {
+     "title": "Falsche Polizeikontrolle",
+     "desc": "Bei „Ausweiskontrollen“ auf der Straße wird wegen angeblich fehlender Papiere Geld verlangt.",
+     "tip": "Passkopie zeigen und anbieten, zur Wache zu gehen."
+    },
+    {
+     "title": "Foto-„Strafe“",
+     "desc": "Wer Amtsgebäude, Brücken oder das Flussufer fotografiert, soll zahlen.",
+     "tip": "Vor dem Fotografieren den Guide fragen."
+    },
+    {
+     "title": "Wechseltrick",
+     "desc": "Straßenwechsler geben zu wenig heraus oder schmuggeln Falschgeld ein.",
+     "tip": "In Bank oder Hotel tauschen oder Geldautomaten nutzen."
+    }
+   ]
+  }
+ },
+ "es": {
+  "insights": {
+   "currency": "Franco CFA de África Central (XAF; vinculado al euro)",
+   "plugType": "Tipo C, E (230V, 50Hz)",
+   "bestMonths": "Junio – septiembre (estación seca principal, algo más fresca) y diciembre – febrero (breve periodo seco) · octubre – noviembre y marzo – mayo lluvias intensas",
+   "safety": {
+    "safetyScore": 55,
+    "safetyLevel": "Riesgo Moderado",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60",
+    "crimeRateSummary": "En Brazzaville y Pointe-Noire hay tirones, robos nocturnos y falsos policías. Precaución en el departamento de Pool y zonas remotas del norte; la atención médica es limitada.",
+    "commonScams": [
+     "En “controles de documentos” callejeros piden dinero por papeles supuestamente faltantes.",
+     "Se exige dinero a quien fotografía edificios oficiales, puentes o la ribera.",
+     "Los cambistas callejeros dan de menos o cuelan billetes falsos."
+    ],
+    "safeTravelTips": [
+     "No camine de noche; use un conductor del hotel o de confianza.",
+     "Evite multitudes y concentraciones políticas.",
+     "Contrate un seguro con evacuación; los casos graves pueden requerir tratamiento en el extranjero."
+    ],
+    "emergencyNumbers": {
+     "police": "117",
+     "ambulance": "—",
+     "general": "117"
+    }
+   },
+   "internet": {
+    "networkCoverage": "3G/4G en Brazzaville, Pointe-Noire y carreteras principales; sin señal en los bosques del norte",
+    "costPerGbUsd": "1 - 3 $",
+    "esimAvailability": "Escasa (las eSIM internacionales son caras); la SIM local requiere pasaporte",
+    "bestCarriers": [
+     "MTN Congo",
+     "Airtel Congo"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Deficiente (taxis y minibuses en la ciudad; carretera RN1 y vuelos internos entre ciudades)",
+    "costLevel": "Moderado – caro",
+    "singleTicketUsd": "Taxi compartido/minibús ~0,30 - 1 $; taxi privado trayecto corto 2 - 5 $",
+    "dailyPassUsd": "No existe (coche con conductor ~70 - 120 $/día)",
+    "popularRideApps": [
+     "Sin app extendida – taxi o coche del hotel"
+    ],
+    "taxiAdvice": "Los taxis verdes y blancos de Brazzaville no tienen taxímetro; acuerde el precio antes y de noche use solo coches gestionados por el hotel."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "50 - 80 $",
+    "dailyBudgetMidrangeUsd": "140 - 250 $",
+    "budgetMealUsd": "5 - 12 $",
+    "coffeeUsd": "2 - 4 $",
+    "waterBottleUsd": "0.70 - 1.50 $",
+    "hostelDormUsd": "Prácticamente no hay hostales",
+    "hotel3StarUsd": "90 - 170 $",
+    "flightCostIndex": "Alto (con escalas)",
+    "flightTip": "A Brazzaville Maya-Maya (BZV) o Pointe-Noire (PNR) se llega vía París (Air France), Adís Abeba (Ethiopian) o Casablanca (Royal Air Maroc). Los lodges de Odzala ofrecen vuelos chárter."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Los saludos largos y el apretón de manos importan; dé prioridad a los mayores.",
+     "Vestir bien es señal de respeto; la cultura “La Sape” nació en el barrio de Bacongo, en Brazzaville.",
+     "No fotografíe instalaciones militares, puentes ni edificios oficiales."
+    ],
+    "festivals": [
+     "FESPAM – Festival Panafricano de Música (Brazzaville, bienal)",
+     "Día de la Independencia (15 de agosto)",
+     "Desfiles de sapeurs en Bacongo"
+    ],
+    "lifestyle": "Un país mayormente de selva, marcado por Brazzaville, frente a Kinsasa al otro lado del Congo y conocida por la rumba, la elegancia y sus bares, y por la ciudad petrolera de Pointe-Noire."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Parque Nacional de Odzala-Kokoua (UNESCO; gorilas de llanura)",
+     "Basílica de Sainte-Anne (Brazzaville)",
+     "Rápidos del Djoué (Les Rapides)",
+     "Escuela de pintura de Poto-Poto",
+     "Garganta de Diosso y Loango (cerca de Pointe-Noire)",
+     "Parque Nacional Conkouati-Douli"
+    ],
+    "bestSeasons": "Junio – septiembre (estación seca principal, algo más fresca) y diciembre – febrero (breve periodo seco) · octubre – noviembre y marzo – mayo lluvias intensas",
+    "travelStyleTip": "Los paquetes de lodge en Odzala son caros pero son el gran motivo del viaje; en las ciudades, un guía local mejora la seguridad y la experiencia."
+   },
+   "religion": {
+    "primaryReligions": "Cristianismo (~85 %: católicos ~1/3, protestantes e iglesias de avivamiento), islam (~1 – 2 %), creencias tradicionales",
+    "respectNorms": "En la iglesia vista elegante y recatado y pida permiso para fotografiar durante la misa.",
+    "sacredSites": [
+     "Basílica de Sainte-Anne du Congo",
+     "Catedral del Sacré-Cœur (Brazzaville)",
+     "Loango (misión histórica y memorial de la trata)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "El francés es oficial; el lingala (norte y Brazzaville) y el kituba/munukutuba (sur, Pointe-Noire) son lenguas nacionales.",
+    "englishProficiency": "Bajo; se necesita francés, el inglés solo en algunos hoteles y petroleras.",
+    "phrases": [
+     {
+      "phrase": "Mbote!",
+      "meaning": "¡Hola! (lingala y kituba)",
+      "translation": "¡Hola! (lingala y kituba)",
+      "pronunciation": "mbo-te"
+     },
+     {
+      "phrase": "Sango nini?",
+      "meaning": "¿Qué hay de nuevo? (lingala)",
+      "translation": "¿Qué hay de nuevo? (lingala)",
+      "pronunciation": "san-go ni-ni"
+     },
+     {
+      "phrase": "Melesi mingi",
+      "meaning": "Muchas gracias (lingala)",
+      "translation": "Muchas gracias (lingala)",
+      "pronunciation": "me-le-si min-gi"
+     },
+     {
+      "phrase": "Matondo mingi",
+      "meaning": "Muchas gracias (kituba, en el sur)",
+      "translation": "Muchas gracias (kituba, en el sur)",
+      "pronunciation": "ma-ton-do min-gi"
+     },
+     {
+      "phrase": "C'est combien ?",
+      "meaning": "¿Cuánto cuesta? (francés)",
+      "translation": "¿Cuánto cuesta? (francés)",
+      "pronunciation": "se kom-byen"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Los reinos de Loango, Kongo y Teke gobernaron la región. El dominio francés comenzó con el tratado de 1880 entre Pierre Savorgnan de Brazza y el rey teke Makoko; Brazzaville fue capital del África Ecuatorial Francesa y, en 1940, de la Francia Libre. La independencia llegó el 15 de agosto de 1960; tras las guerras civiles de los noventa comenzó un proceso de paz.",
+    "milestones": [
+     "1880: Tratado Brazza – Makoko",
+     "1940: Brazzaville, capital de la Francia Libre",
+     "1960: Independencia",
+     "2012: Sangha Trinacional entra en la UNESCO"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Poulet à la moambé (pollo en salsa de nuez de palma)",
+     "Saka-saka (hojas de yuca con cacahuete)",
+     "Maboké (pescado en hojas de plátano)"
+    ],
+    "traditionalDrinks": [
+     "Cerveza Ngok'",
+     "Vino de palma",
+     "Zumo de jengibre"
+    ],
+    "streetFoodAndDesserts": [
+     "Safou asado (ciruela africana)",
+     "Brochetas de carne",
+     "Beignets (masa frita)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Sony Labou Tansi (escritor)",
+     "Alain Mabanckou (escritor)",
+     "Roga-Roga (Extra Musica, músico)"
+    ],
+    "strongSectors": [
+     "Petróleo y gas",
+     "Madera y silvicultura",
+     "Proyectos mineros (potasa, hierro)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Manda el efectivo; hay cajeros en Brazzaville y Pointe-Noire y la tarjeta solo funciona en grandes hoteles. Los euros se cambian fácilmente; el dinero móvil (MTN MoMo, Airtel Money) es habitual.",
+    "tippingCulture": "La propina es opcional. 5 – 10 % en buenos restaurantes; a guías y rastreadores del lodge se les da propina al final.",
+    "economicPillars": "Petróleo (la mayor parte de las exportaciones), madera, agricultura y servicios."
+   }
+  },
+  "itin": {
+   "routeName": "Congo-Brazzaville: Pointe-Noire, Brazzaville y Odzala",
+   "routeSummary": "Ruta de 9 días desde Pointe-Noire, en el Atlántico, y la garganta de Diosso hasta la cultura de rumba y sapeurs de Brazzaville, y en chárter a las selvas de gorilas de Odzala-Kokoua.",
+   "totalDays": 9,
+   "idealDurationText": "Ruta de 9 días",
+   "bestSeason": "Junio – septiembre (estación seca principal, algo más fresca) y diciembre – febrero (breve periodo seco) · octubre – noviembre y marzo – mayo lluvias intensas",
+   "transportMode": "Vuelo interno Pointe-Noire – Brazzaville (~1 h), coche con conductor en Brazzaville, chárter del lodge a Odzala",
+   "paceLevel": "Equilibrado (cultura urbana + selva)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Pointe-Noire",
+     "recommendedDuration": "2 días",
+     "durationBadge": "2 días",
+     "highlights": [
+      "Garganta de Diosso (cañón de acantilados rojos)",
+      "Memorial de la trata en Loango",
+      "Playas de la Côte Sauvage"
+     ],
+     "activities": [
+      "Visite el mirador de la garganta de Diosso.",
+      "Conozca la historia del antiguo puerto de Loango.",
+      "Coma marisco fresco junto a la playa."
+     ],
+     "foodAndDrinks": [
+      "Maboké",
+      "Pescado a la brasa con una Ngok'"
+     ],
+     "criticalTips": [
+      "Las corrientes del Atlántico son fuertes; báñese solo en playas seguras.",
+      "Vaya a Diosso con guía."
+     ],
+     "mapsQuery": "Gorges de Diosso, Pointe-Noire, Republic of the Congo"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Brazzaville",
+     "recommendedDuration": "3 días",
+     "durationBadge": "3 días",
+     "highlights": [
+      "Basílica de Sainte-Anne",
+      "Rápidos del Djoué",
+      "Escuela de pintura y mercado de Poto-Poto",
+      "Vista de Kinsasa al otro lado del Congo"
+     ],
+     "activities": [
+      "Vea el atardecer en un restaurante junto a los rápidos.",
+      "Visite talleres de pintores en Poto-Poto.",
+      "Descubra la cultura sapeur en Bacongo con un guía."
+     ],
+     "foodAndDrinks": [
+      "Poulet à la moambé",
+      "Saka-saka con yuca"
+     ],
+     "criticalTips": [
+      "No haga fotos en la ribera ni de edificios oficiales.",
+      "Por la noche use solo el coche del hotel."
+     ],
+     "mapsQuery": "Basilique Sainte-Anne, Brazzaville, Republic of the Congo"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Parque Nacional de Odzala-Kokoua",
+     "recommendedDuration": "4 días",
+     "durationBadge": "4 días",
+     "highlights": [
+      "Seguimiento de gorilas occidentales de llanura",
+      "Elefantes de bosque y búfalos en los bais",
+      "Kayak en el río Lekoli"
+     ],
+     "activities": [
+      "Camine con rastreadores hasta un grupo de gorilas.",
+      "Observe la fauna al borde de un bai.",
+      "Escuche la selva en un paseo nocturno."
+     ],
+     "foodAndDrinks": [
+      "Menú local del lodge",
+      "Fruta tropical fresca"
+     ],
+     "criticalTips": [
+      "Respete distancia y mascarilla con los gorilas; no vaya si está enfermo.",
+      "Los paquetes son caros y limitados; reserve con meses."
+     ],
+     "mapsQuery": "Odzala-Kokoua National Park, Republic of the Congo"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Poulet à la moambé (pollo en salsa de nuez de palma)",
+     "Saka-saka (hojas de yuca con cacahuete)",
+     "Maboké (pescado en hojas de plátano)"
+    ],
+    "drinks": [
+     "Cerveza Ngok'",
+     "Vino de palma",
+     "Zumo de jengibre"
+    ],
+    "streetFoods": [
+     "Safou asado (ciruela africana)",
+     "Brochetas de carne",
+     "Beignets (masa frita)"
+    ],
+    "diningAdvice": "En la ciudad pruebe pescado a la brasa en los “maquis” junto al río; en la calle elija comida recién hecha y caliente y evite la carne de caza."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Certificado de fiebre amarilla (obligatorio)",
+     "Euros en efectivo",
+     "Antipalúdicos y repelente con DEET",
+     "Chubasquero y ropa de secado rápido para la selva"
+    ],
+    "safetyAndEtiquette": [
+     "No camine de noche.",
+     "No fotografíe edificios oficiales.",
+     "Salude siempre antes de ir al grano."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "E"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Enchufes europeos tipo C y E, compatibles con los turcos. Hay cortes frecuentes: lleve batería externa."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "El agua del grifo no es potable; beba agua embotellada sellada y evite hielo y ensaladas crudas.",
+    "vaccines": [
+     "Fiebre amarilla (obligatoria al entrar)",
+     "Profilaxis antipalúdica (riesgo alto en todo el país)",
+     "Hepatitis A, fiebre tifoidea y refuerzo de polio",
+     "Rabia (viajes a la selva y zonas rurales)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "—"
+   },
+   "tipping": {
+    "custom": "La propina es opcional.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "5 – 10 % en buenos restaurantes; a guías y rastreadores del lodge se les da propina al final."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Sin devolución al turista (IVA ~18 %)",
+    "minSpend": "No aplica",
+    "customsNote": "La República del Congo no devuelve el IVA a turistas. Está prohibido exportar marfil, productos de fauna o madera/piedras sin permiso; las obras de arte pueden requerir certificado."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "$1 - $3",
+    "topCarriers": [
+     "MTN Congo",
+     "Airtel Congo"
+    ],
+    "airportSimTrapWarning": "En el aeropuerto hay pocas opciones de SIM; cómprela con pasaporte en una tienda oficial de MTN o Airtel en la ciudad. En Odzala solo hay wifi del lodge."
+   },
+   "touristScams": [
+    {
+     "title": "Falso control policial",
+     "desc": "En “controles de documentos” callejeros piden dinero por papeles supuestamente faltantes.",
+     "tip": "Muestre una copia del pasaporte y proponga ir a la comisaría."
+    },
+    {
+     "title": "“Multa” por fotos",
+     "desc": "Se exige dinero a quien fotografía edificios oficiales, puentes o la ribera.",
+     "tip": "Consulte al guía antes de fotografiar."
+    },
+    {
+     "title": "Truco del cambio",
+     "desc": "Los cambistas callejeros dan de menos o cuelan billetes falsos.",
+     "tip": "Cambie en banco u hotel, o use un cajero."
+    }
+   ]
+  }
+ },
+ "ru": {
+  "insights": {
+   "currency": "Центральноафриканский франк КФА (XAF; привязан к евро)",
+   "plugType": "Тип C, E (230V, 50Hz)",
+   "bestMonths": "Июнь – сентябрь (главный сухой сезон, относительно прохладно) и декабрь – февраль (короткий сухой период) · октябрь – ноябрь и март – май сильные дожди",
+   "safety": {
+    "safetyScore": 55,
+    "safetyLevel": "Умеренный Риск",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60",
+    "crimeRateSummary": "В Браззавиле и Пуэнт-Нуаре случаются кражи сумок, ночные ограбления и фальшивые полицейские. Осторожность нужна в департаменте Пул и глухих северных районах; медицина ограничена.",
+    "commonScams": [
+     "Во время уличной «проверки документов» требуют деньги за якобы недостающие бумаги.",
+     "С тех, кто фотографирует госздания, мосты или берег реки, требуют деньги.",
+     "Уличные менялы недодают или подсовывают фальшивки."
+    ],
+    "safeTravelTips": [
+     "Не гуляйте ночью; пользуйтесь водителем отеля или проверенным шофёром.",
+     "Избегайте толп и политических собраний.",
+     "Оформите страховку с эвакуацией: серьёзные случаи часто лечат за границей."
+    ],
+    "emergencyNumbers": {
+     "police": "117",
+     "ambulance": "—",
+     "general": "117"
+    }
+   },
+   "internet": {
+    "networkCoverage": "3G/4G в Браззавиле, Пуэнт-Нуаре и вдоль трасс; в северных лесах связи нет",
+    "costPerGbUsd": "1 - 3 $",
+    "esimAvailability": "Слабая (международные eSIM дороги); местная SIM по паспорту",
+    "bestCarriers": [
+     "MTN Congo",
+     "Airtel Congo"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Слабый (в городе такси и маршрутки; между городами трасса RN1 и внутренние рейсы)",
+    "costLevel": "Средне – дорого",
+    "singleTicketUsd": "Общее такси/маршрутка ~0,30 - 1 $; частное такси на короткую поездку 2 - 5 $",
+    "dailyPassUsd": "Нет (машина с водителем ~70 - 120 $/день)",
+    "popularRideApps": [
+     "Популярного приложения нет – такси или машина отеля"
+    ],
+    "taxiAdvice": "Бело-зелёные такси Браззавиля без счётчика; договаривайтесь о цене до посадки, а ночью пользуйтесь только машиной от отеля."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "50 - 80 $",
+    "dailyBudgetMidrangeUsd": "140 - 250 $",
+    "budgetMealUsd": "5 - 12 $",
+    "coffeeUsd": "2 - 4 $",
+    "waterBottleUsd": "0.70 - 1.50 $",
+    "hostelDormUsd": "Хостелов практически нет",
+    "hotel3StarUsd": "90 - 170 $",
+    "flightCostIndex": "Высокий (с пересадками)",
+    "flightTip": "В Браззавиль (Maya-Maya, BZV) или Пуэнт-Нуар (PNR) летят через Париж (Air France), Аддис-Абебу (Ethiopian) или Касабланку (Royal Air Maroc). Лоджи Одзалы организуют чартеры."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Важны долгие приветствия и рукопожатия; старшим — первенство.",
+     "Нарядная одежда — знак уважения; культура «La Sape» родилась в браззавильском районе Баконго.",
+     "Не фотографируйте военные объекты, мосты и госучреждения."
+    ],
+    "festivals": [
+     "ФЕСПАМ – Панафриканский музыкальный фестиваль (Браззавиль, раз в два года)",
+     "День независимости (15 августа)",
+     "Парады сапёров в Баконго"
+    ],
+    "lifestyle": "Страна, большей частью покрытая тропическим лесом, с Браззавилем напротив Киншасы через Конго — городом румбы, модной одежды и баров — и нефтяным Пуэнт-Нуаром."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Национальный парк Одзала-Кокуа (ЮНЕСКО; равнинные гориллы)",
+     "Базилика Сент-Анн (Браззавиль)",
+     "Пороги Джуэ (Les Rapides)",
+     "Школа живописи Пото-Пото",
+     "Ущелье Диоссо и Лоанго (у Пуэнт-Нуара)",
+     "Национальный парк Конкуати-Дули"
+    ],
+    "bestSeasons": "Июнь – сентябрь (главный сухой сезон, относительно прохладно) и декабрь – февраль (короткий сухой период) · октябрь – ноябрь и март – май сильные дожди",
+    "travelStyleTip": "Пакеты в лоджах Одзалы дороги, но ради них и едут; в городах местный гид повышает и безопасность, и впечатления."
+   },
+   "religion": {
+    "primaryReligions": "Христианство (~85%: католики ~1/3, протестанты и церкви пробуждения), ислам (~1 – 2%), традиционные верования",
+    "respectNorms": "В церкви одевайтесь нарядно и скромно; во время службы спрашивайте разрешения на съёмку.",
+    "sacredSites": [
+     "Базилика Сент-Анн-дю-Конго",
+     "Собор Сакре-Кёр (Браззавиль)",
+     "Лоанго (историческая миссия и мемориал работорговли)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Официальный язык — французский; национальные — лингала (север и Браззавиль) и китуба/мунукутуба (юг, Пуэнт-Нуар).",
+    "englishProficiency": "Низкий: нужен французский, английский лишь в некоторых отелях и нефтекомпаниях.",
+    "phrases": [
+     {
+      "phrase": "Mbote!",
+      "meaning": "Привет! (лингала и китуба)",
+      "translation": "Привет! (лингала и китуба)",
+      "pronunciation": "mbo-te"
+     },
+     {
+      "phrase": "Sango nini?",
+      "meaning": "Что нового? (лингала)",
+      "translation": "Что нового? (лингала)",
+      "pronunciation": "san-go ni-ni"
+     },
+     {
+      "phrase": "Melesi mingi",
+      "meaning": "Большое спасибо (лингала)",
+      "translation": "Большое спасибо (лингала)",
+      "pronunciation": "me-le-si min-gi"
+     },
+     {
+      "phrase": "Matondo mingi",
+      "meaning": "Большое спасибо (китуба, на юге)",
+      "translation": "Большое спасибо (китуба, на юге)",
+      "pronunciation": "ma-ton-do min-gi"
+     },
+     {
+      "phrase": "C'est combien ?",
+      "meaning": "Сколько стоит? (французский)",
+      "translation": "Сколько стоит? (французский)",
+      "pronunciation": "se kom-byen"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Регионом правили королевства Лоанго, Конго и Теке. Французское правление началось с договора 1880 года между Пьером Саворньяном де Бразза и королём теке Макоко; Браззавиль стал столицей Французской Экваториальной Африки, а в 1940 году — Свободной Франции. Независимость — 15 августа 1960 года; после гражданских войн 1990-х начался мирный процесс.",
+    "milestones": [
+     "1880: договор Бразза – Макоко",
+     "1940: Браззавиль — столица Свободной Франции",
+     "1960: независимость",
+     "2012: Санга-Тринасьональ в списке ЮНЕСКО"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Пуле а-ля моамбе (курица в пальмовом соусе)",
+     "Сака-сака (листья маниоки с арахисом)",
+     "Мабоке (рыба в банановых листьях)"
+    ],
+    "traditionalDrinks": [
+     "Пиво Ngok'",
+     "Пальмовое вино",
+     "Имбирный сок"
+    ],
+    "streetFoodAndDesserts": [
+     "Жареный сафу (африканская слива)",
+     "Мясные шашлычки",
+     "Беньеты (жареное тесто)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Сони Лабу Танси (писатель)",
+     "Ален Мабанку (писатель)",
+     "Рога-Рога (Extra Musica, музыкант)"
+    ],
+    "strongSectors": [
+     "Нефть и газ",
+     "Лесное хозяйство и древесина",
+     "Горнодобывающие проекты (калий, железная руда)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Главное — наличные; банкоматы есть в Браззавиле и Пуэнт-Нуаре, карты принимают только крупные отели. Евро легко обменять; распространены мобильные деньги (MTN MoMo, Airtel Money).",
+    "tippingCulture": "Чаевые по желанию. 5 – 10% в хороших ресторанах; гидам и следопытам лоджа — чаевые в конце.",
+    "economicPillars": "Нефть (основная часть экспорта), древесина, сельское хозяйство и услуги."
+   }
+  },
+  "itin": {
+   "routeName": "Конго-Браззавиль: Пуэнт-Нуар, Браззавиль и Одзала",
+   "routeSummary": "9-дневный маршрут: от атлантического Пуэнт-Нуара и ущелья Диоссо к культуре румбы и сапёров Браззавиля, затем чартером в тропические леса с гориллами Одзалы-Кокуа.",
+   "totalDays": 9,
+   "idealDurationText": "Маршрут на 9 дней",
+   "bestSeason": "Июнь – сентябрь (главный сухой сезон, относительно прохладно) и декабрь – февраль (короткий сухой период) · октябрь – ноябрь и март – май сильные дожди",
+   "transportMode": "Внутренний рейс Пуэнт-Нуар – Браззавиль (~1 ч), машина с водителем в Браззавиле, чартер лоджа в Одзалу",
+   "paceLevel": "Сбалансированный (город + тропический лес)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Остановка 1: Пуэнт-Нуар",
+     "recommendedDuration": "2 дня",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Ущелье Диоссо (красные скалы)",
+      "Мемориал работорговли в Лоанго",
+      "Пляжи Кот-Соваж"
+     ],
+     "activities": [
+      "Посетите смотровую площадку ущелья Диоссо.",
+      "Узнайте историю старого порта в Лоанго.",
+      "Поешьте свежих морепродуктов на берегу."
+     ],
+     "foodAndDrinks": [
+      "Мабоке",
+      "Рыба на гриле и пиво Ngok'"
+     ],
+     "criticalTips": [
+      "Атлантические течения сильны — купайтесь только на безопасных пляжах.",
+      "Езжайте в Диоссо с гидом."
+     ],
+     "mapsQuery": "Gorges de Diosso, Pointe-Noire, Republic of the Congo"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Остановка 2: Браззавиль",
+     "recommendedDuration": "3 дня",
+     "durationBadge": "3 дня",
+     "highlights": [
+      "Базилика Сент-Анн",
+      "Пороги Джуэ",
+      "Школа живописи и рынок Пото-Пото",
+      "Вид на Киншасу через реку Конго"
+     ],
+     "activities": [
+      "Встретьте закат в ресторане у порогов.",
+      "Посетите мастерские художников в Пото-Пото.",
+      "С гидом познакомьтесь с культурой сапёров в Баконго."
+     ],
+     "foodAndDrinks": [
+      "Пуле а-ля моамбе",
+      "Сака-сака с маниокой"
+     ],
+     "criticalTips": [
+      "Не фотографируйте у реки и госучреждения.",
+      "Вечером пользуйтесь только машиной отеля."
+     ],
+     "mapsQuery": "Basilique Sainte-Anne, Brazzaville, Republic of the Congo"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Остановка 3: Национальный парк Одзала-Кокуа",
+     "recommendedDuration": "4 дня",
+     "durationBadge": "4 дня",
+     "highlights": [
+      "Поиск западных равнинных горилл",
+      "Лесные слоны и буйволы на баях",
+      "Каякинг по реке Леколи"
+     ],
+     "activities": [
+      "Пройдите со следопытами к группе горилл.",
+      "Наблюдайте за животными у края бая.",
+      "Послушайте звуки леса на ночной прогулке."
+     ],
+     "foodAndDrinks": [
+      "Местное меню лоджа",
+      "Свежие тропические фрукты"
+     ],
+     "criticalTips": [
+      "Соблюдайте дистанцию и маску с гориллами; не идите, если больны.",
+      "Пакеты дорогие и ограничены — бронируйте за месяцы."
+     ],
+     "mapsQuery": "Odzala-Kokoua National Park, Republic of the Congo"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Пуле а-ля моамбе (курица в пальмовом соусе)",
+     "Сака-сака (листья маниоки с арахисом)",
+     "Мабоке (рыба в банановых листьях)"
+    ],
+    "drinks": [
+     "Пиво Ngok'",
+     "Пальмовое вино",
+     "Имбирный сок"
+    ],
+    "streetFoods": [
+     "Жареный сафу (африканская слива)",
+     "Мясные шашлычки",
+     "Беньеты (жареное тесто)"
+    ],
+    "diningAdvice": "В городе попробуйте рыбу на гриле в прибрежных «маки»; из уличной еды берите только горячее и свежее, не ешьте мясо диких животных."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Сертификат о прививке от жёлтой лихорадки (обязательно)",
+     "Наличные евро",
+     "Противомалярийные и репеллент с DEET",
+     "Дождевик и быстросохнущая одежда для леса"
+    ],
+    "safetyAndEtiquette": [
+     "Не гуляйте ночью.",
+     "Не фотографируйте госучреждения.",
+     "Сначала поздоровайтесь, потом к делу."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "E"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Европейские розетки C и E, турецкие вилки подходят. Свет часто отключают — возьмите пауэрбанк."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Водопроводную воду пить нельзя; пейте запечатанную бутилированную, избегайте льда и сырых салатов.",
+    "vaccines": [
+     "Жёлтая лихорадка (обязательна при въезде)",
+     "Профилактика малярии (высокий риск по всей стране)",
+     "Гепатит A, брюшной тиф, ревакцинация от полиомиелита",
+     "Бешенство (для поездок в лес и глубинку)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "—"
+   },
+   "tipping": {
+    "custom": "Чаевые по желанию.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "5 – 10% в хороших ресторанах; гидам и следопытам лоджа — чаевые в конце."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Возврата туристам нет (НДС ~18%)",
+    "minSpend": "Не применяется",
+    "customsNote": "Возврата НДС туристам в Республике Конго нет. Вывоз слоновой кости, продуктов дикой природы, древесины и камней без разрешения запрещён; на предметы искусства может потребоваться сертификат."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "$1 - $3",
+    "topCarriers": [
+     "MTN Congo",
+     "Airtel Congo"
+    ],
+    "airportSimTrapWarning": "В аэропорту выбор SIM мал — оформите её по паспорту в официальном салоне MTN или Airtel в городе. В Одзале есть только Wi-Fi лоджа."
+   },
+   "touristScams": [
+    {
+     "title": "Фальшивая проверка полиции",
+     "desc": "Во время уличной «проверки документов» требуют деньги за якобы недостающие бумаги.",
+     "tip": "Покажите копию паспорта и предложите пройти в участок."
+    },
+    {
+     "title": "«Штраф» за фото",
+     "desc": "С тех, кто фотографирует госздания, мосты или берег реки, требуют деньги.",
+     "tip": "Перед съёмкой посоветуйтесь с гидом."
+    },
+    {
+     "title": "Обман при обмене валюты",
+     "desc": "Уличные менялы недодают или подсовывают фальшивки.",
+     "tip": "Меняйте в банке или отеле либо снимайте в банкомате."
+    }
+   ]
+  }
+ }
+}

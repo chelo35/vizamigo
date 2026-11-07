@@ -1,0 +1,1807 @@
+{
+ "tr": {
+  "insights": {
+   "currency": "Makao Patakası (MOP)",
+   "plugType": "Tip G (220V, 50Hz)",
+   "bestMonths": "Ekim – Aralık (serin ve kuru); Haziran – Eylül sıcak, nemli ve tayfunlu",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Güvenli",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Sokak suçu çok düşüktür. Başlıca riskler kumarhane çevresindeki dolandırıcılıklar ve kalabalık turistik noktalarda yankesiciliktir; yerel yasalara (ulusal güvenlik mevzuatı dahil) uyun.",
+    "commonScams": [
+     "Kumarhanelerde \"kazandırma\" vaadiyle borç para veren tefeciler",
+     "Turistlere taksimetresiz fahiş fiyat söyleyen taksiler",
+     "Senado Meydanı ve St. Paul kalıntıları çevresinde yankesicilik"
+    ],
+    "safeTravelTips": [
+     "Kumarhanelerin ücretsiz servis otobüsleri Hong Kong feribot terminali ve sınır kapılarından şehre ulaşımı kolaylaştırır.",
+     "Tayfun sinyali 8 ve üzeri ilan edildiğinde feribot ve köprü seferleri aksayabilir.",
+     "Kumarhanelerde fotoğraf çekmek yasaktır; 21 yaş altı giremez."
+    ],
+    "emergencyNumbers": {
+     "police": "999 (110)",
+     "ambulance": "999",
+     "general": "999"
+    }
+   },
+   "internet": {
+    "networkCoverage": "%99 4G/5G",
+    "costPerGbUsd": "~1 - 3 $",
+    "esimAvailability": "Mükemmel",
+    "bestCarriers": [
+     "CTM",
+     "China Telecom Macau",
+     "3 Macau",
+     "SmarTone Macau"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "İyi",
+    "costLevel": "Orta Seviye",
+    "singleTicketUsd": "0.75 - 1.25 $",
+    "dailyPassUsd": "2 - 4 $",
+    "popularRideApps": [
+     "Uber (lisanslı taksi)",
+     "MAAS PLUS",
+     "Kumarhane servis otobüsleri",
+     "Makao Hafif Raylı Sistemi (LRT)"
+    ],
+    "taxiAdvice": "Taksiler taksimetrelidir ancak yoğun saatlerde bulmak zordur; Şubat 2026’dan beri Uber lisanslı taksi çağırır ve yalnızca elektronik ödeme kabul eder."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "60 - 90 $",
+    "dailyBudgetMidrangeUsd": "150 - 280 $",
+    "budgetMealUsd": "8 - 15 $",
+    "coffeeUsd": "3 - 6 $",
+    "waterBottleUsd": "1 - 1.50 $",
+    "hostelDormUsd": "30 - 50 $",
+    "hotel3StarUsd": "90 - 180 $",
+    "flightCostIndex": "Orta Seviye",
+    "flightTip": "Çoğu Türk gezgin Hong Kong’a uçup Hong Kong–Zhuhai–Makao Köprüsü otobüsüyle veya feribotla geçer; bu genellikle en ucuz yoldur."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Kartvizit ve parayı iki elle verin, sırada beklemeye özen gösterin.",
+     "Tapınaklarda tütsü sunaklarına dokunmayın, sessiz olun.",
+     "Kumarhanelerde masadaki oyunculara yakın durup fotoğraf çekmeyin.",
+     "Kiliselerde ayin sırasında sessiz olun ve örtülü giyinin."
+    ],
+    "festivals": [
+     "Makao Grand Prix (Kasım)",
+     "Makao Uluslararası Havai Fişek Yarışması (Eylül)",
+     "Çin Yeni Yılı (Ocak/Şubat)"
+    ],
+    "lifestyle": "Portekiz ve Kanton kültürlerinin kaynaştığı, Avrupa tarzı meydanlarla dev kumarhane-otellerin yan yana durduğu küçük bir şehir."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "St. Paul Katedrali kalıntıları",
+     "Senado Meydanı",
+     "A-Ma Tapınağı",
+     "Guia Kalesi ve Deniz Feneri",
+     "Taipa Köyü ve Rua do Cunha",
+     "Coloane Köyü"
+    ],
+    "bestSeasons": "Ekim – Aralık (serin ve kuru); Haziran – Eylül sıcak, nemli ve tayfunlu",
+    "travelStyleTip": "Tarihî merkez yürünerek gezilir; Taipa ve Cotai’ye otobüs, LRT veya kumarhane servisleriyle geçin."
+   },
+   "religion": {
+    "primaryReligions": "Budizm ve Çin halk inançları yaygın; Katolik Hristiyanlık ~%5, nüfusun önemli kısmı dinsiz.",
+    "respectNorms": "Tapınaklarda ibadet edenleri izinsiz fotoğraflamayın; kiliselerde omuzları örtün.",
+    "sacredSites": [
+     "A-Ma Tapınağı",
+     "Kun Iam Tong Tapınağı",
+     "St. Dominic Kilisesi"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Çince (Kantonca konuşulur) ve Portekizce resmîdir.",
+    "englishProficiency": "Otel, kumarhane ve turistik yerlerde iyi; küçük dükkânlarda sınırlı.",
+    "phrases": [
+     {
+      "phrase": "你好",
+      "meaning": "Merhaba",
+      "translation": "Merhaba",
+      "pronunciation": "néih hóu"
+     },
+     {
+      "phrase": "多謝",
+      "meaning": "Teşekkürler (hediye/iyilik için)",
+      "translation": "Teşekkürler (hediye/iyilik için)",
+      "pronunciation": "dō jeh"
+     },
+     {
+      "phrase": "唔該",
+      "meaning": "Lütfen / Teşekkürler (hizmet için)",
+      "translation": "Lütfen / Teşekkürler (hizmet için)",
+      "pronunciation": "m̀h gōi"
+     },
+     {
+      "phrase": "幾多錢？",
+      "meaning": "Ne kadar?",
+      "translation": "Ne kadar?",
+      "pronunciation": "géi dō chín?"
+     },
+     {
+      "phrase": "Obrigado / Obrigada",
+      "meaning": "Teşekkürler (Portekizce)",
+      "translation": "Teşekkürler (Portekizce)",
+      "pronunciation": "oh-bree-GAH-doo / oh-bree-GAH-dah"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "1557’de Portekizlilerin yerleştiği Makao, Asya’daki ilk ve son Avrupa yerleşimlerinden biri oldu. 1999’da Çin’e devredilerek Özel İdari Bölge oldu; tarihî merkezi 2005’te UNESCO listesine girdi.",
+    "milestones": [
+     "1557: Portekiz yerleşimi",
+     "1602-1640: St. Paul Katedrali’nin inşası",
+     "1999: Çin’e devir",
+     "2005: Tarihî Merkez UNESCO listesinde"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Minchi (kıymalı patatesli Makao yemeği)",
+     "Afrika usulü tavuk (galinha à africana)",
+     "Domuz pirzolalı sandviç (pork chop bun)"
+    ],
+    "traditionalDrinks": [
+     "Portekiz şarabı",
+     "Sütlü çay",
+     "Macau Beer"
+    ],
+    "streetFoodAndDesserts": [
+     "Portekiz usulü yumurtalı tart (pastel de nata)",
+     "Bademli kurabiye",
+     "Serradura (bisküvili krema tatlısı)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Luís de Camões (efsaneye göre Makao’da yaşamış Portekiz şairi)",
+     "Sun Yat-sen (Makao’da hekimlik yapmış lider)",
+     "Stanley Ho (iş insanı)"
+    ],
+    "strongSectors": [
+     "Kumarhane ve oyun sektörü",
+     "Turizm ve kongre (MICE)",
+     "Finansal hizmetler"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Pataka ve Hong Kong doları birebire yakın kabul edilir (para üstü pataka verilir); kartlar ve MPay yaygın, küçük dükkânlarda nakit gerekir.",
+    "tippingCulture": "Restoran ve otellerde %10 servis ücreti eklenir; ayrıca bahşiş beklenmez.",
+    "economicPillars": "Kumarhane gelirleri, turizm, perakende ve finansal hizmetler."
+   }
+  },
+  "itin": {
+   "routeName": "Makao Tarih ve Lezzet Rotası: Tarihî Merkez, Taipa ve Coloane",
+   "routeSummary": "Portekiz izlerini taşıyan UNESCO listesindeki tarihî merkezden Taipa’nın renkli sokaklarına, Cotai’nin ışıltısına ve sakin Coloane köyüne uzanan 3 günlük rota.",
+   "totalDays": 3,
+   "idealDurationText": "3 Günlük Makao Rotası",
+   "bestSeason": "Ekim – Aralık (serin ve kuru); Haziran – Eylül sıcak, nemli ve tayfunlu",
+   "transportMode": "Yürüyüş + otobüs, LRT ve kumarhane servisleri",
+   "paceLevel": "Rahat (Tarih + Lezzet)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "1. Durak: Makao Tarihî Merkezi",
+     "recommendedDuration": "1-2 Gün (UNESCO alanı)",
+     "durationBadge": "2 Gün",
+     "highlights": [
+      "Senado Meydanı",
+      "St. Paul Katedrali kalıntıları",
+      "Monte Kalesi ve Makao Müzesi",
+      "A-Ma Tapınağı"
+     ],
+     "activities": [
+      "Dalgalı mozaik kaldırımlarda yürüyüş yapın.",
+      "Guia Kalesi’nden şehri izleyin.",
+      "Lilau Meydanı’nın eski Portekiz evlerini gezin."
+     ],
+     "foodAndDrinks": [
+      "Minchi",
+      "Pastel de nata",
+      "Sütlü çay"
+     ],
+     "criticalTips": [
+      "St. Paul basamakları gün ortasında çok kalabalıktır; sabah erken gidin.",
+      "Yaz sıcağında bol su için."
+     ],
+     "mapsQuery": "Senado Square, Macau"
+    },
+    {
+     "stopNumber": 2,
+     "name": "2. Durak: Taipa Köyü ve Cotai",
+     "recommendedDuration": "1 Gün (Köy + ışıklar)",
+     "durationBadge": "1 Gün",
+     "highlights": [
+      "Rua do Cunha",
+      "Taipa Evleri Müzesi",
+      "Cotai Strip resort-otelleri"
+     ],
+     "activities": [
+      "Rua do Cunha’da sokak atıştırmalıklarını deneyin.",
+      "Taipa Evleri’nin pastel yapılarını fotoğraflayın.",
+      "Akşam Cotai’nin ışıklı gösterilerini izleyin."
+     ],
+     "foodAndDrinks": [
+      "Pork chop bun",
+      "Bademli kurabiye",
+      "Portekiz şarabı"
+     ],
+     "criticalTips": [
+      "Kumarhanelerde fotoğraf yasaktır.",
+      "Ücretsiz servisler otelden otele geçişi kolaylaştırır."
+     ],
+     "mapsQuery": "Taipa Village, Macau"
+    },
+    {
+     "stopNumber": 3,
+     "name": "3. Durak: Coloane Köyü",
+     "recommendedDuration": "Yarım Gün (Sakin köy)",
+     "durationBadge": "1 Gün",
+     "highlights": [
+      "St. Francis Xavier Şapeli",
+      "Lord Stow’s Bakery",
+      "Hác Sá plajı"
+     ],
+     "activities": [
+      "Orijinal yumurtalı tartı doğduğu fırında tadın.",
+      "Sahil boyunca yürüyün.",
+      "Hác Sá plajında dinlenin."
+     ],
+     "foodAndDrinks": [
+      "Pastel de nata",
+      "Galinha à africana",
+      "Serradura"
+     ],
+     "criticalTips": [
+      "Otobüsler seyrek olabilir, dönüş saatini kontrol edin.",
+      "Plajda yaz aylarında güneşe karşı önlem alın."
+     ],
+     "mapsQuery": "Coloane Village, Macau"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Minchi (kıymalı patatesli Makao yemeği)",
+     "Afrika usulü tavuk (galinha à africana)",
+     "Domuz pirzolalı sandviç (pork chop bun)"
+    ],
+    "drinks": [
+     "Portekiz şarabı",
+     "Sütlü çay",
+     "Macau Beer"
+    ],
+    "streetFoods": [
+     "Portekiz usulü yumurtalı tart (pastel de nata)",
+     "Bademli kurabiye",
+     "Serradura (bisküvili krema tatlısı)"
+    ],
+    "diningAdvice": "Makao mutfağı Portekiz ve Kanton tatlarının birleşimidir; popüler restoranlar için rezervasyon yapın."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "G tipi priz adaptörü",
+     "Rahat yürüyüş ayakkabısı",
+     "Şemsiye",
+     "Pasaport (Hong Kong geçişleri için)"
+    ],
+    "safetyAndEtiquette": [
+     "Kumarhanelerde fotoğraf çekmeyin ve borç teklif edenlerden uzak durun.",
+     "Tapınak ve kiliselerde saygılı davranın."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "İngiliz tipi G prizler (220V); eski binalarda yuvarlak pimli D tipi de görülür. Türkiye fişleri uymaz, adaptör gerekir."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Şebeke suyu arıtılmıştır ancak çoğu kişi kaynatarak veya şişe su içer; şişe su önerilir.",
+    "vaccines": [
+     "Rutin aşılar (tetanoz-difteri, KKK)",
+     "Hepatit A",
+     "Yaz aylarında dang hummasına karşı sivrisinek önlemi"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "999"
+   },
+   "tipping": {
+    "custom": "Restoran ve otellerde %10 servis ücreti faturaya eklenir.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Taksilerde küsurat yuvarlanabilir; ek bahşiş zorunlu değildir."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Makao’da KDV veya satış vergisi yoktur",
+    "minSpend": "Uygulanmaz",
+    "customsNote": "Serbest liman olduğu için turist vergi iadesi yoktur; fiyatlar vergisizdir. Türkiye’ye dönüşte muafiyet limitlerine dikkat edin."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1 - $3",
+    "topCarriers": [
+     "CTM",
+     "China Telecom Macau",
+     "3 Macau",
+     "SmarTone Macau"
+    ],
+    "airportSimTrapWarning": "Feribot terminali, havalimanı ve marketlerde CTM turist SIM’leri satılır; Hong Kong SIM’inin Makao’da roaming ücreti olabilir, kontrol edin."
+   },
+   "touristScams": [
+    {
+     "title": "Kumarhane Tefecisi",
+     "desc": "Kumarhane çevresinde kolay borç ve \"sistem\" teklif eden kişiler.",
+     "tip": "Kimseden borç almayın, bütçenizi önceden belirleyin."
+    },
+    {
+     "title": "Fahiş Taksi Ücreti",
+     "desc": "Bazı taksiler turistlere taksimetresiz yüksek fiyat söyler.",
+     "tip": "Taksimetreyi açtırın veya Uber kullanın."
+    },
+    {
+     "title": "Yankesicilik",
+     "desc": "St. Paul ve Senado Meydanı kalabalığında cep hırsızlığı.",
+     "tip": "Çanta ve telefonu önde tutun."
+    }
+   ]
+  }
+ },
+ "en": {
+  "insights": {
+   "currency": "Macanese Pataca (MOP)",
+   "plugType": "Type G (220V, 50Hz)",
+   "bestMonths": "October – December (cool and dry); June – September is hot, humid and typhoon-prone",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Safe",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Street crime is very low. Main risks are casino-related scams and pickpocketing at crowded sights; respect local laws, including national security legislation.",
+    "commonScams": [
+     "Loan sharks around casinos promising \"winning systems\"",
+     "Taxis quoting tourists high fares without the meter",
+     "Pickpocketing around Senado Square and the Ruins of St. Paul’s"
+    ],
+    "safeTravelTips": [
+     "Free casino shuttle buses make it easy to reach the city from the Hong Kong ferry terminal and border gates.",
+     "When typhoon signal 8 or higher is raised, ferries and bridge services may be disrupted.",
+     "Photography is banned in casinos and under-21s may not enter."
+    ],
+    "emergencyNumbers": {
+     "police": "999 (110)",
+     "ambulance": "999",
+     "general": "999"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99% 4G/5G",
+    "costPerGbUsd": "~1 - 3 $",
+    "esimAvailability": "Excellent",
+    "bestCarriers": [
+     "CTM",
+     "China Telecom Macau",
+     "3 Macau",
+     "SmarTone Macau"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Good",
+    "costLevel": "Moderate",
+    "singleTicketUsd": "0.75 - 1.25 $",
+    "dailyPassUsd": "2 - 4 $",
+    "popularRideApps": [
+     "Uber (licensed taxis)",
+     "MAAS PLUS",
+     "Casino shuttle buses",
+     "Macau Light Rapid Transit (LRT)"
+    ],
+    "taxiAdvice": "Taxis are metered but hard to find at peak times; since February 2026 Uber dispatches licensed taxis and accepts electronic payment only."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "60 - 90 $",
+    "dailyBudgetMidrangeUsd": "150 - 280 $",
+    "budgetMealUsd": "8 - 15 $",
+    "coffeeUsd": "3 - 6 $",
+    "waterBottleUsd": "1 - 1.50 $",
+    "hostelDormUsd": "30 - 50 $",
+    "hotel3StarUsd": "90 - 180 $",
+    "flightCostIndex": "Moderate",
+    "flightTip": "Most travellers from Turkey fly to Hong Kong and cross by Hong Kong–Zhuhai–Macau Bridge bus or ferry, usually the cheapest way."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Hand over business cards and money with both hands and always queue.",
+     "Do not touch incense altars in temples and keep quiet.",
+     "In casinos do not hover near players or take photos.",
+     "Be quiet during Mass in churches and dress modestly."
+    ],
+    "festivals": [
+     "Macau Grand Prix (November)",
+     "Macao International Fireworks Display Contest (September)",
+     "Chinese New Year (January/February)"
+    ],
+    "lifestyle": "A small city where Portuguese and Cantonese cultures blend, with European-style squares beside giant casino resorts."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Ruins of St. Paul’s",
+     "Senado Square",
+     "A-Ma Temple",
+     "Guia Fortress and Lighthouse",
+     "Taipa Village and Rua do Cunha",
+     "Coloane Village"
+    ],
+    "bestSeasons": "October – December (cool and dry); June – September is hot, humid and typhoon-prone",
+    "travelStyleTip": "Explore the historic centre on foot; reach Taipa and Cotai by bus, LRT or casino shuttles."
+   },
+   "religion": {
+    "primaryReligions": "Buddhism and Chinese folk beliefs are widespread; Catholic Christianity ~5%, and many people are non-religious.",
+    "respectNorms": "Do not photograph worshippers without permission; cover shoulders in churches.",
+    "sacredSites": [
+     "A-Ma Temple",
+     "Kun Iam Tong Temple",
+     "St. Dominic’s Church"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Chinese (Cantonese spoken) and Portuguese are official.",
+    "englishProficiency": "Good in hotels, casinos and tourist sites; limited in small shops.",
+    "phrases": [
+     {
+      "phrase": "你好",
+      "meaning": "Hello",
+      "translation": "Hello",
+      "pronunciation": "néih hóu"
+     },
+     {
+      "phrase": "多謝",
+      "meaning": "Thank you (for a gift/favour)",
+      "translation": "Thank you (for a gift/favour)",
+      "pronunciation": "dō jeh"
+     },
+     {
+      "phrase": "唔該",
+      "meaning": "Please / Thanks (for a service)",
+      "translation": "Please / Thanks (for a service)",
+      "pronunciation": "m̀h gōi"
+     },
+     {
+      "phrase": "幾多錢？",
+      "meaning": "How much?",
+      "translation": "How much?",
+      "pronunciation": "géi dō chín?"
+     },
+     {
+      "phrase": "Obrigado / Obrigada",
+      "meaning": "Thank you (Portuguese)",
+      "translation": "Thank you (Portuguese)",
+      "pronunciation": "oh-bree-GAH-doo / oh-bree-GAH-dah"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Settled by the Portuguese in 1557, Macau became one of the first and last European settlements in Asia. It was handed over to China in 1999 as a Special Administrative Region; its historic centre joined the UNESCO list in 2005.",
+    "milestones": [
+     "1557: Portuguese settlement",
+     "1602-1640: Construction of St. Paul’s",
+     "1999: Handover to China",
+     "2005: Historic Centre listed by UNESCO"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Minchi (Macanese minced meat with potatoes)",
+     "African chicken (galinha à africana)",
+     "Pork chop bun"
+    ],
+    "traditionalDrinks": [
+     "Portuguese wine",
+     "Milk tea",
+     "Macau Beer"
+    ],
+    "streetFoodAndDesserts": [
+     "Portuguese egg tart (pastel de nata)",
+     "Almond cookies",
+     "Serradura (biscuit-cream dessert)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Luís de Camões (Portuguese poet said to have lived in Macau)",
+     "Sun Yat-sen (leader who practised medicine in Macau)",
+     "Stanley Ho (businessman)"
+    ],
+    "strongSectors": [
+     "Casino and gaming industry",
+     "Tourism and MICE",
+     "Financial services"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Pataca and Hong Kong dollar are accepted at nearly par (change is given in pataca); cards and MPay are common, small shops want cash.",
+    "tippingCulture": "Restaurants and hotels add a 10% service charge; no extra tip is expected.",
+    "economicPillars": "Gaming revenue, tourism, retail and financial services."
+   }
+  },
+  "itin": {
+   "routeName": "Macau History & Flavour Route: Historic Centre, Taipa and Coloane",
+   "routeSummary": "A 3-day route from the UNESCO-listed historic centre with its Portuguese heritage to Taipa’s colourful lanes, the glitter of Cotai and quiet Coloane village.",
+   "totalDays": 3,
+   "idealDurationText": "3-Day Macau Itinerary",
+   "bestSeason": "October – December (cool and dry); June – September is hot, humid and typhoon-prone",
+   "transportMode": "Walking + buses, LRT and casino shuttles",
+   "paceLevel": "Relaxed (History & Food)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stop 1: Historic Centre of Macau",
+     "recommendedDuration": "1-2 Days (UNESCO area)",
+     "durationBadge": "2 Days",
+     "highlights": [
+      "Senado Square",
+      "Ruins of St. Paul’s",
+      "Monte Fortress and Macau Museum",
+      "A-Ma Temple"
+     ],
+     "activities": [
+      "Stroll the wave-patterned mosaic pavements.",
+      "View the city from Guia Fortress.",
+      "Explore old Portuguese houses around Lilau Square."
+     ],
+     "foodAndDrinks": [
+      "Minchi",
+      "Pastel de nata",
+      "Milk tea"
+     ],
+     "criticalTips": [
+      "The St. Paul’s steps are packed at midday; go early.",
+      "Drink plenty of water in summer heat."
+     ],
+     "mapsQuery": "Senado Square, Macau"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stop 2: Taipa Village and Cotai",
+     "recommendedDuration": "1 Day (Village + lights)",
+     "durationBadge": "1 Day",
+     "highlights": [
+      "Rua do Cunha",
+      "Taipa Houses Museum",
+      "Cotai Strip resorts"
+     ],
+     "activities": [
+      "Try street snacks on Rua do Cunha.",
+      "Photograph the pastel Taipa Houses.",
+      "Watch Cotai’s light shows in the evening."
+     ],
+     "foodAndDrinks": [
+      "Pork chop bun",
+      "Almond cookies",
+      "Portuguese wine"
+     ],
+     "criticalTips": [
+      "Photography is banned in casinos.",
+      "Free shuttles make hopping between resorts easy."
+     ],
+     "mapsQuery": "Taipa Village, Macau"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stop 3: Coloane Village",
+     "recommendedDuration": "Half Day (Quiet village)",
+     "durationBadge": "1 Day",
+     "highlights": [
+      "Chapel of St. Francis Xavier",
+      "Lord Stow’s Bakery",
+      "Hác Sá Beach"
+     ],
+     "activities": [
+      "Taste the original egg tart at the bakery where it was born.",
+      "Walk along the waterfront.",
+      "Relax on Hác Sá Beach."
+     ],
+     "foodAndDrinks": [
+      "Pastel de nata",
+      "Galinha à africana",
+      "Serradura"
+     ],
+     "criticalTips": [
+      "Buses can be infrequent; check the return time.",
+      "Protect yourself from the sun on the beach in summer."
+     ],
+     "mapsQuery": "Coloane Village, Macau"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Minchi (Macanese minced meat with potatoes)",
+     "African chicken (galinha à africana)",
+     "Pork chop bun"
+    ],
+    "drinks": [
+     "Portuguese wine",
+     "Milk tea",
+     "Macau Beer"
+    ],
+    "streetFoods": [
+     "Portuguese egg tart (pastel de nata)",
+     "Almond cookies",
+     "Serradura (biscuit-cream dessert)"
+    ],
+    "diningAdvice": "Macanese cuisine blends Portuguese and Cantonese flavours; book popular restaurants ahead."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Type G plug adapter",
+     "Comfortable walking shoes",
+     "Umbrella",
+     "Passport (for Hong Kong crossings)"
+    ],
+    "safetyAndEtiquette": [
+     "Do not take photos in casinos and avoid anyone offering loans.",
+     "Behave respectfully in temples and churches."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "British-style type G sockets (220V); round-pin type D appears in older buildings. Turkish plugs do not fit, so an adapter is needed."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Mains water is treated but most people boil it or drink bottled water; bottled water is recommended.",
+    "vaccines": [
+     "Routine vaccines (tetanus-diphtheria, MMR)",
+     "Hepatitis A",
+     "Mosquito precautions against dengue in summer"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "999"
+   },
+   "tipping": {
+    "custom": "Restaurants and hotels add a 10% service charge to the bill.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "You can round up in taxis; extra tips are not required."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Macau has no VAT or sales tax",
+    "minSpend": "Not applicable",
+    "customsNote": "As a free port there is no tourist tax refund; prices are tax-free. Watch the duty-free allowances when returning to Turkey."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1 - $3",
+    "topCarriers": [
+     "CTM",
+     "China Telecom Macau",
+     "3 Macau",
+     "SmarTone Macau"
+    ],
+    "airportSimTrapWarning": "CTM tourist SIMs are sold at the ferry terminal, airport and convenience stores; a Hong Kong SIM may charge roaming in Macau, so check first."
+   },
+   "touristScams": [
+    {
+     "title": "Casino Loan Shark",
+     "desc": "People around casinos offering easy loans and \"systems\".",
+     "tip": "Never borrow money and set your budget in advance."
+    },
+    {
+     "title": "Taxi Overcharge",
+     "desc": "Some taxis quote tourists high prices without the meter.",
+     "tip": "Insist on the meter or use Uber."
+    },
+    {
+     "title": "Pickpocketing",
+     "desc": "Pickpockets in the crowds at St. Paul’s and Senado Square.",
+     "tip": "Keep your bag and phone in front of you."
+    }
+   ]
+  }
+ },
+ "de": {
+  "insights": {
+   "currency": "Macau-Pataca (MOP)",
+   "plugType": "Typ G (220V, 50Hz)",
+   "bestMonths": "Oktober – Dezember (kühl und trocken); Juni – September heiß, feucht und taifungefährdet",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Sicher",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Straßenkriminalität ist sehr gering. Hauptrisiken sind Betrug rund um Casinos und Taschendiebstahl an vollen Sehenswürdigkeiten; lokale Gesetze, auch zur nationalen Sicherheit, respektieren.",
+    "commonScams": [
+     "Kredithaie an Casinos, die \"Gewinnsysteme\" versprechen",
+     "Taxis, die Touristen ohne Taxameter hohe Preise nennen",
+     "Taschendiebstahl am Senado-Platz und an der Ruine von São Paulo"
+    ],
+    "safeTravelTips": [
+     "Kostenlose Casino-Shuttlebusse bringen einen bequem vom Fährterminal und den Grenzübergängen in die Stadt.",
+     "Ab Taifunsignal 8 können Fähren und Brückenbusse ausfallen.",
+     "In Casinos ist Fotografieren verboten, unter 21 kein Zutritt."
+    ],
+    "emergencyNumbers": {
+     "police": "999 (110)",
+     "ambulance": "999",
+     "general": "999"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99 % 4G/5G",
+    "costPerGbUsd": "~1 - 3 $",
+    "esimAvailability": "Ausgezeichnet",
+    "bestCarriers": [
+     "CTM",
+     "China Telecom Macau",
+     "3 Macau",
+     "SmarTone Macau"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Gut",
+    "costLevel": "Moderat",
+    "singleTicketUsd": "0.75 - 1.25 $",
+    "dailyPassUsd": "2 - 4 $",
+    "popularRideApps": [
+     "Uber (lizenzierte Taxis)",
+     "MAAS PLUS",
+     "Casino-Shuttlebusse",
+     "Macau Light Rapid Transit (LRT)"
+    ],
+    "taxiAdvice": "Taxis fahren mit Taxameter, sind zu Stoßzeiten aber schwer zu finden; seit Februar 2026 vermittelt Uber lizenzierte Taxis, nur mit elektronischer Zahlung."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "60 - 90 $",
+    "dailyBudgetMidrangeUsd": "150 - 280 $",
+    "budgetMealUsd": "8 - 15 $",
+    "coffeeUsd": "3 - 6 $",
+    "waterBottleUsd": "1 - 1.50 $",
+    "hostelDormUsd": "30 - 50 $",
+    "hotel3StarUsd": "90 - 180 $",
+    "flightCostIndex": "Moderat",
+    "flightTip": "Die meisten Reisenden aus der Türkei fliegen nach Hongkong und fahren per Bus über die Hongkong-Zhuhai-Macau-Brücke oder per Fähre weiter – meist am günstigsten."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Visitenkarten und Geld mit beiden Händen überreichen und stets anstehen.",
+     "In Tempeln Räucheraltäre nicht berühren und leise sein.",
+     "In Casinos nicht dicht hinter Spielern stehen oder fotografieren.",
+     "Während der Messe in Kirchen leise sein und dezent kleiden."
+    ],
+    "festivals": [
+     "Macau Grand Prix (November)",
+     "Internationaler Feuerwerkswettbewerb Macau (September)",
+     "Chinesisches Neujahr (Januar/Februar)"
+    ],
+    "lifestyle": "Eine kleine Stadt, in der portugiesische und kantonesische Kultur verschmelzen und europäische Plätze neben riesigen Casino-Resorts stehen."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Ruine von São Paulo",
+     "Senado-Platz",
+     "A-Ma-Tempel",
+     "Guia-Festung und Leuchtturm",
+     "Dorf Taipa und Rua do Cunha",
+     "Dorf Coloane"
+    ],
+    "bestSeasons": "Oktober – Dezember (kühl und trocken); Juni – September heiß, feucht und taifungefährdet",
+    "travelStyleTip": "Das historische Zentrum zu Fuß erkunden; nach Taipa und Cotai mit Bus, LRT oder Casino-Shuttles."
+   },
+   "religion": {
+    "primaryReligions": "Buddhismus und chinesischer Volksglaube sind verbreitet; katholisches Christentum ~5 %, viele sind konfessionslos.",
+    "respectNorms": "Betende nicht ohne Erlaubnis fotografieren; in Kirchen Schultern bedecken.",
+    "sacredSites": [
+     "A-Ma-Tempel",
+     "Kun-Iam-Tong-Tempel",
+     "Kirche São Domingos"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Chinesisch (gesprochen wird Kantonesisch) und Portugiesisch sind Amtssprachen.",
+    "englishProficiency": "Gut in Hotels, Casinos und an Sehenswürdigkeiten; in kleinen Läden begrenzt.",
+    "phrases": [
+     {
+      "phrase": "你好",
+      "meaning": "Hallo",
+      "translation": "Hallo",
+      "pronunciation": "néih hóu"
+     },
+     {
+      "phrase": "多謝",
+      "meaning": "Danke (für Geschenk/Gefallen)",
+      "translation": "Danke (für Geschenk/Gefallen)",
+      "pronunciation": "dō jeh"
+     },
+     {
+      "phrase": "唔該",
+      "meaning": "Bitte / Danke (für eine Dienstleistung)",
+      "translation": "Bitte / Danke (für eine Dienstleistung)",
+      "pronunciation": "m̀h gōi"
+     },
+     {
+      "phrase": "幾多錢？",
+      "meaning": "Wie viel?",
+      "translation": "Wie viel?",
+      "pronunciation": "géi dō chín?"
+     },
+     {
+      "phrase": "Obrigado / Obrigada",
+      "meaning": "Danke (Portugiesisch)",
+      "translation": "Danke (Portugiesisch)",
+      "pronunciation": "oh-bree-GAH-doo / oh-bree-GAH-dah"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Seit 1557 von Portugiesen besiedelt, war Macau eine der ersten und letzten europäischen Niederlassungen in Asien. 1999 ging es als Sonderverwaltungszone an China; das historische Zentrum ist seit 2005 UNESCO-Welterbe.",
+    "milestones": [
+     "1557: Portugiesische Niederlassung",
+     "1602-1640: Bau von São Paulo",
+     "1999: Übergabe an China",
+     "2005: Historisches Zentrum wird UNESCO-Welterbe"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Minchi (macanesisches Hackfleisch mit Kartoffeln)",
+     "Afrikanisches Hähnchen (galinha à africana)",
+     "Pork Chop Bun (Schweinekotelett-Brötchen)"
+    ],
+    "traditionalDrinks": [
+     "Portugiesischer Wein",
+     "Milchtee",
+     "Macau Beer"
+    ],
+    "streetFoodAndDesserts": [
+     "Portugiesisches Eiertörtchen (pastel de nata)",
+     "Mandelkekse",
+     "Serradura (Keks-Sahne-Dessert)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Luís de Camões (portugiesischer Dichter, der der Legende nach in Macau lebte)",
+     "Sun Yat-sen (praktizierte in Macau als Arzt)",
+     "Stanley Ho (Unternehmer)"
+    ],
+    "strongSectors": [
+     "Casino- und Glücksspielbranche",
+     "Tourismus und MICE",
+     "Finanzdienstleistungen"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Pataca und Hongkong-Dollar werden fast 1:1 akzeptiert (Wechselgeld in Pataca); Karten und MPay sind üblich, kleine Läden wollen Bargeld.",
+    "tippingCulture": "Restaurants und Hotels schlagen 10 % Service auf; weiteres Trinkgeld wird nicht erwartet.",
+    "economicPillars": "Glücksspieleinnahmen, Tourismus, Einzelhandel und Finanzdienstleistungen."
+   }
+  },
+  "itin": {
+   "routeName": "Macau Geschichte & Genuss: Historisches Zentrum, Taipa und Coloane",
+   "routeSummary": "Eine 3-tägige Route vom portugiesisch geprägten UNESCO-Zentrum zu den bunten Gassen von Taipa, dem Glanz von Cotai und dem ruhigen Dorf Coloane.",
+   "totalDays": 3,
+   "idealDurationText": "3-Tage-Route durch Macau",
+   "bestSeason": "Oktober – Dezember (kühl und trocken); Juni – September heiß, feucht und taifungefährdet",
+   "transportMode": "Zu Fuß + Busse, LRT und Casino-Shuttles",
+   "paceLevel": "Gemütlich (Geschichte & Essen)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Stopp 1: Historisches Zentrum von Macau",
+     "recommendedDuration": "1-2 Tage (UNESCO-Gebiet)",
+     "durationBadge": "2 Tage",
+     "highlights": [
+      "Senado-Platz",
+      "Ruine von São Paulo",
+      "Monte-Festung und Museum von Macau",
+      "A-Ma-Tempel"
+     ],
+     "activities": [
+      "Über die gewellten Mosaikgehwege schlendern.",
+      "Von der Guia-Festung auf die Stadt blicken.",
+      "Alte portugiesische Häuser am Lilau-Platz erkunden."
+     ],
+     "foodAndDrinks": [
+      "Minchi",
+      "Pastel de nata",
+      "Milchtee"
+     ],
+     "criticalTips": [
+      "Die Treppe von São Paulo ist mittags überfüllt; früh hingehen.",
+      "In der Sommerhitze viel trinken."
+     ],
+     "mapsQuery": "Senado Square, Macau"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Stopp 2: Dorf Taipa und Cotai",
+     "recommendedDuration": "1 Tag (Dorf + Lichter)",
+     "durationBadge": "1 Tag",
+     "highlights": [
+      "Rua do Cunha",
+      "Museum Taipa Houses",
+      "Resorts am Cotai Strip"
+     ],
+     "activities": [
+      "Snacks in der Rua do Cunha probieren.",
+      "Die pastellfarbenen Taipa Houses fotografieren.",
+      "Abends die Lichtshows in Cotai ansehen."
+     ],
+     "foodAndDrinks": [
+      "Pork Chop Bun",
+      "Mandelkekse",
+      "Portugiesischer Wein"
+     ],
+     "criticalTips": [
+      "In Casinos ist Fotografieren verboten.",
+      "Kostenlose Shuttles erleichtern den Wechsel zwischen Resorts."
+     ],
+     "mapsQuery": "Taipa Village, Macau"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Stopp 3: Dorf Coloane",
+     "recommendedDuration": "Halber Tag (Ruhiges Dorf)",
+     "durationBadge": "1 Tag",
+     "highlights": [
+      "Kapelle des hl. Franz Xaver",
+      "Lord Stow’s Bakery",
+      "Strand Hác Sá"
+     ],
+     "activities": [
+      "Das originale Eiertörtchen in der Bäckerei probieren, wo es entstand.",
+      "An der Uferpromenade spazieren.",
+      "Am Strand Hác Sá entspannen."
+     ],
+     "foodAndDrinks": [
+      "Pastel de nata",
+      "Galinha à africana",
+      "Serradura"
+     ],
+     "criticalTips": [
+      "Busse fahren teils selten; Rückfahrzeit prüfen.",
+      "Im Sommer am Strand vor Sonne schützen."
+     ],
+     "mapsQuery": "Coloane Village, Macau"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Minchi (macanesisches Hackfleisch mit Kartoffeln)",
+     "Afrikanisches Hähnchen (galinha à africana)",
+     "Pork Chop Bun (Schweinekotelett-Brötchen)"
+    ],
+    "drinks": [
+     "Portugiesischer Wein",
+     "Milchtee",
+     "Macau Beer"
+    ],
+    "streetFoods": [
+     "Portugiesisches Eiertörtchen (pastel de nata)",
+     "Mandelkekse",
+     "Serradura (Keks-Sahne-Dessert)"
+    ],
+    "diningAdvice": "Die macanesische Küche verbindet portugiesische und kantonesische Aromen; beliebte Restaurants vorab reservieren."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Steckeradapter Typ G",
+     "Bequeme Schuhe",
+     "Schirm",
+     "Pass (für Fahrten nach Hongkong)"
+    ],
+    "safetyAndEtiquette": [
+     "In Casinos nicht fotografieren und Kreditangebote meiden.",
+     "In Tempeln und Kirchen respektvoll auftreten."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Britische Steckdosen Typ G (220 V); in älteren Gebäuden auch Rundstift-Typ D. Türkische Stecker passen nicht, ein Adapter ist nötig."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Das Leitungswasser ist aufbereitet, die meisten kochen es aber ab oder trinken Flaschenwasser; Flaschenwasser wird empfohlen.",
+    "vaccines": [
+     "Standardimpfungen (Tetanus-Diphtherie, MMR)",
+     "Hepatitis A",
+     "Im Sommer Mückenschutz gegen Dengue"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "999"
+   },
+   "tipping": {
+    "custom": "Restaurants und Hotels schlagen 10 % Service auf die Rechnung.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Im Taxi kann man aufrunden; zusätzliches Trinkgeld ist keine Pflicht."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Macau hat keine MwSt. oder Umsatzsteuer",
+    "minSpend": "Entfällt",
+    "customsNote": "Als Freihafen gibt es keine Steuererstattung für Touristen; die Preise sind steuerfrei. Bei der Rückkehr in die Türkei Freimengen beachten."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1 - $3",
+    "topCarriers": [
+     "CTM",
+     "China Telecom Macau",
+     "3 Macau",
+     "SmarTone Macau"
+    ],
+    "airportSimTrapWarning": "CTM-Touristen-SIMs gibt es am Fährterminal, am Flughafen und in Convenience Stores; eine Hongkong-SIM kann in Macau Roaming kosten, vorher prüfen."
+   },
+   "touristScams": [
+    {
+     "title": "Casino-Kredithai",
+     "desc": "Personen an Casinos bieten leichte Kredite und \"Systeme\" an.",
+     "tip": "Nie Geld leihen und das Budget vorab festlegen."
+    },
+    {
+     "title": "Überhöhter Taxipreis",
+     "desc": "Manche Taxis nennen Touristen hohe Preise ohne Taxameter.",
+     "tip": "Auf dem Taxameter bestehen oder Uber nutzen."
+    },
+    {
+     "title": "Taschendiebstahl",
+     "desc": "Taschendiebe im Gedränge an São Paulo und am Senado-Platz.",
+     "tip": "Tasche und Handy vor dem Körper tragen."
+    }
+   ]
+  }
+ },
+ "es": {
+  "insights": {
+   "currency": "Pataca de Macao (MOP)",
+   "plugType": "Tipo G (220V, 50Hz)",
+   "bestMonths": "Octubre – diciembre (fresco y seco); junio – septiembre es caluroso, húmedo y con tifones",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "La delincuencia callejera es muy baja. Los riesgos principales son las estafas ligadas a casinos y los carteristas en lugares concurridos; respeta las leyes locales, incluida la de seguridad nacional.",
+    "commonScams": [
+     "Prestamistas en torno a los casinos que prometen \"sistemas ganadores\"",
+     "Taxis que piden tarifas altas a turistas sin taxímetro",
+     "Carteristas en la plaza del Senado y las Ruinas de San Pablo"
+    ],
+    "safeTravelTips": [
+     "Los autobuses lanzadera gratuitos de los casinos facilitan llegar a la ciudad desde la terminal de ferris y los pasos fronterizos.",
+     "Con la señal de tifón 8 o superior pueden suspenderse ferris y autobuses del puente.",
+     "En los casinos no se permiten fotos ni la entrada a menores de 21 años."
+    ],
+    "emergencyNumbers": {
+     "police": "999 (110)",
+     "ambulance": "999",
+     "general": "999"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99 % 4G/5G",
+    "costPerGbUsd": "~1 - 3 $",
+    "esimAvailability": "Excelente",
+    "bestCarriers": [
+     "CTM",
+     "China Telecom Macau",
+     "3 Macau",
+     "SmarTone Macau"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Bueno",
+    "costLevel": "Moderado",
+    "singleTicketUsd": "0.75 - 1.25 $",
+    "dailyPassUsd": "2 - 4 $",
+    "popularRideApps": [
+     "Uber (taxis con licencia)",
+     "MAAS PLUS",
+     "Lanzaderas de casinos",
+     "Metro ligero de Macao (LRT)"
+    ],
+    "taxiAdvice": "Los taxis usan taxímetro pero escasean en horas punta; desde febrero de 2026 Uber asigna taxis con licencia y solo admite pago electrónico."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "60 - 90 $",
+    "dailyBudgetMidrangeUsd": "150 - 280 $",
+    "budgetMealUsd": "8 - 15 $",
+    "coffeeUsd": "3 - 6 $",
+    "waterBottleUsd": "1 - 1.50 $",
+    "hostelDormUsd": "30 - 50 $",
+    "hotel3StarUsd": "90 - 180 $",
+    "flightCostIndex": "Moderado",
+    "flightTip": "La mayoría de viajeros desde Turquía vuela a Hong Kong y cruza en autobús por el puente Hong Kong–Zhuhai–Macao o en ferri, normalmente la opción más barata."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Entrega tarjetas y dinero con ambas manos y respeta siempre la cola.",
+     "No toques los altares de incienso en los templos y guarda silencio.",
+     "En los casinos no te quedes encima de los jugadores ni hagas fotos.",
+     "Guarda silencio durante la misa y vístete con recato en las iglesias."
+    ],
+    "festivals": [
+     "Gran Premio de Macao (noviembre)",
+     "Concurso Internacional de Fuegos Artificiales de Macao (septiembre)",
+     "Año Nuevo chino (enero/febrero)"
+    ],
+    "lifestyle": "Una ciudad pequeña donde se funden las culturas portuguesa y cantonesa, con plazas de estilo europeo junto a enormes casinos."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Ruinas de San Pablo",
+     "Plaza del Senado",
+     "Templo de A-Ma",
+     "Fortaleza y faro de Guia",
+     "Pueblo de Taipa y Rua do Cunha",
+     "Pueblo de Coloane"
+    ],
+    "bestSeasons": "Octubre – diciembre (fresco y seco); junio – septiembre es caluroso, húmedo y con tifones",
+    "travelStyleTip": "Recorre a pie el centro histórico; a Taipa y Cotai llega en autobús, LRT o lanzaderas de casinos."
+   },
+   "religion": {
+    "primaryReligions": "Budismo y religión popular china muy extendidos; catolicismo ~5 % y muchos no religiosos.",
+    "respectNorms": "No fotografíes a los fieles sin permiso; cubre los hombros en las iglesias.",
+    "sacredSites": [
+     "Templo de A-Ma",
+     "Templo Kun Iam Tong",
+     "Iglesia de Santo Domingo"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Chino (se habla cantonés) y portugués son oficiales.",
+    "englishProficiency": "Bueno en hoteles, casinos y zonas turísticas; limitado en tiendas pequeñas.",
+    "phrases": [
+     {
+      "phrase": "你好",
+      "meaning": "Hola",
+      "translation": "Hola",
+      "pronunciation": "néih hóu"
+     },
+     {
+      "phrase": "多謝",
+      "meaning": "Gracias (por un regalo/favor)",
+      "translation": "Gracias (por un regalo/favor)",
+      "pronunciation": "dō jeh"
+     },
+     {
+      "phrase": "唔該",
+      "meaning": "Por favor / Gracias (por un servicio)",
+      "translation": "Por favor / Gracias (por un servicio)",
+      "pronunciation": "m̀h gōi"
+     },
+     {
+      "phrase": "幾多錢？",
+      "meaning": "¿Cuánto?",
+      "translation": "¿Cuánto?",
+      "pronunciation": "géi dō chín?"
+     },
+     {
+      "phrase": "Obrigado / Obrigada",
+      "meaning": "Gracias (en portugués)",
+      "translation": "Gracias (en portugués)",
+      "pronunciation": "oh-bree-GAH-doo / oh-bree-GAH-dah"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Asentada por los portugueses en 1557, Macao fue uno de los primeros y últimos enclaves europeos en Asia. En 1999 pasó a China como Región Administrativa Especial; su centro histórico entró en la lista de la UNESCO en 2005.",
+    "milestones": [
+     "1557: asentamiento portugués",
+     "1602-1640: construcción de San Pablo",
+     "1999: transferencia a China",
+     "2005: centro histórico, Patrimonio de la UNESCO"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Minchi (carne picada macaense con patatas)",
+     "Pollo africano (galinha à africana)",
+     "Bocadillo de chuleta de cerdo (pork chop bun)"
+    ],
+    "traditionalDrinks": [
+     "Vino portugués",
+     "Té con leche",
+     "Macau Beer"
+    ],
+    "streetFoodAndDesserts": [
+     "Pastel de nata portugués",
+     "Galletas de almendra",
+     "Serradura (postre de galleta y nata)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Luís de Camões (poeta portugués que, según la leyenda, vivió en Macao)",
+     "Sun Yat-sen (ejerció la medicina en Macao)",
+     "Stanley Ho (empresario)"
+    ],
+    "strongSectors": [
+     "Casinos y juego",
+     "Turismo y congresos (MICE)",
+     "Servicios financieros"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "La pataca y el dólar de Hong Kong se aceptan casi a la par (el cambio se da en patacas); tarjetas y MPay son habituales, las tiendas pequeñas piden efectivo.",
+    "tippingCulture": "Restaurantes y hoteles añaden un 10 % de servicio; no se espera más propina.",
+    "economicPillars": "Ingresos del juego, turismo, comercio minorista y servicios financieros."
+   }
+  },
+  "itin": {
+   "routeName": "Macao historia y sabor: centro histórico, Taipa y Coloane",
+   "routeSummary": "Ruta de 3 días desde el centro histórico de herencia portuguesa, Patrimonio de la UNESCO, hasta las coloridas calles de Taipa, el brillo de Cotai y el tranquilo pueblo de Coloane.",
+   "totalDays": 3,
+   "idealDurationText": "Itinerario de 3 días por Macao",
+   "bestSeason": "Octubre – diciembre (fresco y seco); junio – septiembre es caluroso, húmedo y con tifones",
+   "transportMode": "A pie + autobuses, LRT y lanzaderas de casinos",
+   "paceLevel": "Tranquilo (historia y gastronomía)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Centro histórico de Macao",
+     "recommendedDuration": "1-2 días (zona UNESCO)",
+     "durationBadge": "2 días",
+     "highlights": [
+      "Plaza del Senado",
+      "Ruinas de San Pablo",
+      "Fortaleza del Monte y Museo de Macao",
+      "Templo de A-Ma"
+     ],
+     "activities": [
+      "Pasea por las aceras de mosaico ondulado.",
+      "Contempla la ciudad desde la fortaleza de Guia.",
+      "Explora las antiguas casas portuguesas de la plaza de Lilau."
+     ],
+     "foodAndDrinks": [
+      "Minchi",
+      "Pastel de nata",
+      "Té con leche"
+     ],
+     "criticalTips": [
+      "La escalinata de San Pablo se abarrota a mediodía; madruga.",
+      "Bebe mucha agua con el calor del verano."
+     ],
+     "mapsQuery": "Senado Square, Macau"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Pueblo de Taipa y Cotai",
+     "recommendedDuration": "1 día (pueblo + luces)",
+     "durationBadge": "1 día",
+     "highlights": [
+      "Rua do Cunha",
+      "Museo Casas de Taipa",
+      "Resorts del Cotai Strip"
+     ],
+     "activities": [
+      "Prueba los aperitivos callejeros de la Rua do Cunha.",
+      "Fotografía las Casas de Taipa en tonos pastel.",
+      "Por la noche, disfruta de los espectáculos de luces de Cotai."
+     ],
+     "foodAndDrinks": [
+      "Pork chop bun",
+      "Galletas de almendra",
+      "Vino portugués"
+     ],
+     "criticalTips": [
+      "En los casinos no se permiten fotos.",
+      "Las lanzaderas gratuitas facilitan moverse entre resorts."
+     ],
+     "mapsQuery": "Taipa Village, Macau"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Pueblo de Coloane",
+     "recommendedDuration": "Medio día (pueblo tranquilo)",
+     "durationBadge": "1 día",
+     "highlights": [
+      "Capilla de San Francisco Javier",
+      "Lord Stow’s Bakery",
+      "Playa de Hác Sá"
+     ],
+     "activities": [
+      "Prueba el pastel de nata original en la panadería donde nació.",
+      "Pasea junto al mar.",
+      "Descansa en la playa de Hác Sá."
+     ],
+     "foodAndDrinks": [
+      "Pastel de nata",
+      "Galinha à africana",
+      "Serradura"
+     ],
+     "criticalTips": [
+      "Los autobuses pueden ser poco frecuentes; consulta la hora de vuelta.",
+      "Protégete del sol en la playa en verano."
+     ],
+     "mapsQuery": "Coloane Village, Macau"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Minchi (carne picada macaense con patatas)",
+     "Pollo africano (galinha à africana)",
+     "Bocadillo de chuleta de cerdo (pork chop bun)"
+    ],
+    "drinks": [
+     "Vino portugués",
+     "Té con leche",
+     "Macau Beer"
+    ],
+    "streetFoods": [
+     "Pastel de nata portugués",
+     "Galletas de almendra",
+     "Serradura (postre de galleta y nata)"
+    ],
+    "diningAdvice": "La cocina macaense mezcla sabores portugueses y cantoneses; reserva en los restaurantes populares."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptador de enchufe tipo G",
+     "Calzado cómodo",
+     "Paraguas",
+     "Pasaporte (para cruzar a Hong Kong)"
+    ],
+    "safetyAndEtiquette": [
+     "No hagas fotos en los casinos y evita a quien ofrezca préstamos.",
+     "Compórtate con respeto en templos e iglesias."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Enchufes británicos tipo G (220 V); en edificios antiguos también tipo D de clavijas redondas. Las clavijas turcas no encajan, hace falta adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "El agua de red se trata, pero la mayoría la hierve o bebe agua embotellada; se recomienda la embotellada.",
+    "vaccines": [
+     "Vacunas rutinarias (tétanos-difteria, triple vírica)",
+     "Hepatitis A",
+     "Protección antimosquitos frente al dengue en verano"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "999"
+   },
+   "tipping": {
+    "custom": "Restaurantes y hoteles añaden un 10 % de servicio a la cuenta.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "En los taxis se puede redondear; no es obligatoria más propina."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Macao no tiene IVA ni impuesto sobre ventas",
+    "minSpend": "No aplica",
+    "customsNote": "Al ser puerto franco no hay reembolso de impuestos para turistas; los precios están libres de impuestos. Vigila las franquicias al volver a Turquía."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1 - $3",
+    "topCarriers": [
+     "CTM",
+     "China Telecom Macau",
+     "3 Macau",
+     "SmarTone Macau"
+    ],
+    "airportSimTrapWarning": "Las SIM turísticas de CTM se venden en la terminal de ferris, el aeropuerto y tiendas de conveniencia; una SIM de Hong Kong puede cobrar itinerancia en Macao, compruébalo."
+   },
+   "touristScams": [
+    {
+     "title": "Prestamista del casino",
+     "desc": "Personas en torno a los casinos ofrecen préstamos fáciles y \"sistemas\".",
+     "tip": "No pidas dinero prestado y fija tu presupuesto antes."
+    },
+    {
+     "title": "Taxi abusivo",
+     "desc": "Algunos taxis piden precios altos a turistas sin taxímetro.",
+     "tip": "Exige el taxímetro o usa Uber."
+    },
+    {
+     "title": "Carteristas",
+     "desc": "Carteristas entre la multitud de San Pablo y la plaza del Senado.",
+     "tip": "Lleva bolso y móvil por delante."
+    }
+   ]
+  }
+ },
+ "ru": {
+  "insights": {
+   "currency": "Патака Макао (MOP)",
+   "plugType": "Тип G (220V, 50Hz)",
+   "bestMonths": "Октябрь – декабрь (прохладно и сухо); июнь – сентябрь жарко, влажно, бывают тайфуны",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Безопасно",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Уличная преступность очень низкая. Основные риски — мошенничество вокруг казино и карманники в людных местах; соблюдайте местные законы, включая закон о национальной безопасности.",
+    "commonScams": [
+     "Ростовщики у казино, обещающие «выигрышные системы»",
+     "Таксисты, называющие туристам высокую цену без счётчика",
+     "Карманники на площади Сенадо и у руин собора Святого Павла"
+    ],
+    "safeTravelTips": [
+     "Бесплатные шаттлы казино удобно довозят от паромного терминала и пограничных переходов в город.",
+     "При сигнале тайфуна 8 и выше паромы и автобусы по мосту могут не ходить.",
+     "В казино запрещено фотографировать, вход — с 21 года."
+    ],
+    "emergencyNumbers": {
+     "police": "999 (110)",
+     "ambulance": "999",
+     "general": "999"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99 % 4G/5G",
+    "costPerGbUsd": "~1 - 3 $",
+    "esimAvailability": "Отлично",
+    "bestCarriers": [
+     "CTM",
+     "China Telecom Macau",
+     "3 Macau",
+     "SmarTone Macau"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Хорошо",
+    "costLevel": "Умеренно",
+    "singleTicketUsd": "0.75 - 1.25 $",
+    "dailyPassUsd": "2 - 4 $",
+    "popularRideApps": [
+     "Uber (лицензированные такси)",
+     "MAAS PLUS",
+     "Шаттлы казино",
+     "Лёгкое метро Макао (LRT)"
+    ],
+    "taxiAdvice": "Такси ездят по счётчику, но в часы пик их мало; с февраля 2026 года Uber вызывает лицензированные такси с оплатой только электронно."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "60 - 90 $",
+    "dailyBudgetMidrangeUsd": "150 - 280 $",
+    "budgetMealUsd": "8 - 15 $",
+    "coffeeUsd": "3 - 6 $",
+    "waterBottleUsd": "1 - 1.50 $",
+    "hostelDormUsd": "30 - 50 $",
+    "hotel3StarUsd": "90 - 180 $",
+    "flightCostIndex": "Умеренно",
+    "flightTip": "Большинство путешественников из Турции летят в Гонконг и добираются автобусом по мосту Гонконг – Чжухай – Макао или паромом — обычно это дешевле всего."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Визитки и деньги передавайте двумя руками и соблюдайте очередь.",
+     "В храмах не трогайте алтари с благовониями и не шумите.",
+     "В казино не стойте над игроками и не фотографируйте.",
+     "Во время мессы в церквях соблюдайте тишину и скромный дресс-код."
+    ],
+    "festivals": [
+     "Гран-при Макао (ноябрь)",
+     "Международный конкурс фейерверков Макао (сентябрь)",
+     "Китайский Новый год (январь/февраль)"
+    ],
+    "lifestyle": "Маленький город, где смешались португальская и кантонская культуры, а европейские площади соседствуют с огромными казино-курортами."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Руины собора Святого Павла",
+     "Площадь Сенадо",
+     "Храм А-Ма",
+     "Крепость и маяк Гия",
+     "Деревня Тайпа и Руа-ду-Кунья",
+     "Деревня Колоан"
+    ],
+    "bestSeasons": "Октябрь – декабрь (прохладно и сухо); июнь – сентябрь жарко, влажно, бывают тайфуны",
+    "travelStyleTip": "Исторический центр осматривайте пешком; на Тайпу и Котай — автобусом, LRT или шаттлами казино."
+   },
+   "religion": {
+    "primaryReligions": "Широко распространены буддизм и китайские народные верования; католики ~5 %, многие неверующие.",
+    "respectNorms": "Не фотографируйте молящихся без разрешения; в церквях закрывайте плечи.",
+    "sacredSites": [
+     "Храм А-Ма",
+     "Храм Кун Иам Тонг",
+     "Церковь Святого Доминика"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Китайский (говорят на кантонском) и португальский — официальные.",
+    "englishProficiency": "Хороший в отелях, казино и туристических местах; в небольших лавках ограниченный.",
+    "phrases": [
+     {
+      "phrase": "你好",
+      "meaning": "Здравствуйте",
+      "translation": "Здравствуйте",
+      "pronunciation": "néih hóu"
+     },
+     {
+      "phrase": "多謝",
+      "meaning": "Спасибо (за подарок/одолжение)",
+      "translation": "Спасибо (за подарок/одолжение)",
+      "pronunciation": "dō jeh"
+     },
+     {
+      "phrase": "唔該",
+      "meaning": "Пожалуйста / Спасибо (за услугу)",
+      "translation": "Пожалуйста / Спасибо (за услугу)",
+      "pronunciation": "m̀h gōi"
+     },
+     {
+      "phrase": "幾多錢？",
+      "meaning": "Сколько?",
+      "translation": "Сколько?",
+      "pronunciation": "géi dō chín?"
+     },
+     {
+      "phrase": "Obrigado / Obrigada",
+      "meaning": "Спасибо (по-португальски)",
+      "translation": "Спасибо (по-португальски)",
+      "pronunciation": "oh-bree-GAH-doo / oh-bree-GAH-dah"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Заселённый португальцами в 1557 году, Макао стал одним из первых и последних европейских поселений в Азии. В 1999 году передан Китаю как Специальный административный район; исторический центр внесён в список ЮНЕСКО в 2005 году.",
+    "milestones": [
+     "1557: португальское поселение",
+     "1602-1640: строительство собора Святого Павла",
+     "1999: передача Китаю",
+     "2005: исторический центр в списке ЮНЕСКО"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Минши (макаоский фарш с картофелем)",
+     "Курица по-африкански (galinha à africana)",
+     "Булочка со свиной отбивной (pork chop bun)"
+    ],
+    "traditionalDrinks": [
+     "Португальское вино",
+     "Чай с молоком",
+     "Macau Beer"
+    ],
+    "streetFoodAndDesserts": [
+     "Португальская тарталетка (паштел-де-ната)",
+     "Миндальное печенье",
+     "Серрадура (десерт из печенья и сливок)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Луис де Камоэнс (португальский поэт, по легенде живший в Макао)",
+     "Сунь Ятсен (практиковал медицину в Макао)",
+     "Стэнли Хо (предприниматель)"
+    ],
+    "strongSectors": [
+     "Казино и игорный бизнес",
+     "Туризм и MICE",
+     "Финансовые услуги"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Патаку и гонконгский доллар принимают почти один к одному (сдачу дают патаками); карты и MPay распространены, мелкие лавки просят наличные.",
+    "tippingCulture": "Рестораны и отели добавляют 10 % за обслуживание; дополнительных чаевых не ждут.",
+    "economicPillars": "Доходы игорного бизнеса, туризм, розничная торговля и финансовые услуги."
+   }
+  },
+  "itin": {
+   "routeName": "Макао: история и вкус — исторический центр, Тайпа и Колоан",
+   "routeSummary": "3-дневный маршрут от португальского исторического центра из списка ЮНЕСКО к ярким улочкам Тайпы, блеску Котая и тихой деревне Колоан.",
+   "totalDays": 3,
+   "idealDurationText": "3-дневный маршрут по Макао",
+   "bestSeason": "Октябрь – декабрь (прохладно и сухо); июнь – сентябрь жарко, влажно, бывают тайфуны",
+   "transportMode": "Пешком + автобусы, LRT и шаттлы казино",
+   "paceLevel": "Спокойный (история и еда)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Остановка 1: Исторический центр Макао",
+     "recommendedDuration": "1-2 дня (зона ЮНЕСКО)",
+     "durationBadge": "2 дня",
+     "highlights": [
+      "Площадь Сенадо",
+      "Руины собора Святого Павла",
+      "Крепость Монте и Музей Макао",
+      "Храм А-Ма"
+     ],
+     "activities": [
+      "Прогуляйтесь по волнистым мозаичным тротуарам.",
+      "Посмотрите на город с крепости Гия.",
+      "Осмотрите старые португальские дома у площади Лилау."
+     ],
+     "foodAndDrinks": [
+      "Минши",
+      "Паштел-де-ната",
+      "Чай с молоком"
+     ],
+     "criticalTips": [
+      "Лестница собора Святого Павла в полдень переполнена — приходите рано.",
+      "В летнюю жару пейте больше воды."
+     ],
+     "mapsQuery": "Senado Square, Macau"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Остановка 2: Деревня Тайпа и Котай",
+     "recommendedDuration": "1 день (деревня + огни)",
+     "durationBadge": "1 день",
+     "highlights": [
+      "Руа-ду-Кунья",
+      "Музей «Дома Тайпы»",
+      "Курорты Котай-Стрип"
+     ],
+     "activities": [
+      "Попробуйте уличные закуски на Руа-ду-Кунья.",
+      "Сфотографируйте пастельные «Дома Тайпы».",
+      "Вечером посмотрите световые шоу Котая."
+     ],
+     "foodAndDrinks": [
+      "Pork chop bun",
+      "Миндальное печенье",
+      "Португальское вино"
+     ],
+     "criticalTips": [
+      "В казино фотографировать запрещено.",
+      "Бесплатные шаттлы упрощают переезды между курортами."
+     ],
+     "mapsQuery": "Taipa Village, Macau"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Остановка 3: Деревня Колоан",
+     "recommendedDuration": "Полдня (тихая деревня)",
+     "durationBadge": "1 день",
+     "highlights": [
+      "Часовня Святого Франциска Ксаверия",
+      "Пекарня Lord Stow’s",
+      "Пляж Хак Са"
+     ],
+     "activities": [
+      "Попробуйте оригинальную тарталетку в пекарне, где она появилась.",
+      "Прогуляйтесь по набережной.",
+      "Отдохните на пляже Хак Са."
+     ],
+     "foodAndDrinks": [
+      "Паштел-де-ната",
+      "Курица по-африкански",
+      "Серрадура"
+     ],
+     "criticalTips": [
+      "Автобусы ходят нечасто — проверьте время обратного рейса.",
+      "Летом на пляже защищайтесь от солнца."
+     ],
+     "mapsQuery": "Coloane Village, Macau"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Минши (макаоский фарш с картофелем)",
+     "Курица по-африкански (galinha à africana)",
+     "Булочка со свиной отбивной (pork chop bun)"
+    ],
+    "drinks": [
+     "Португальское вино",
+     "Чай с молоком",
+     "Macau Beer"
+    ],
+    "streetFoods": [
+     "Португальская тарталетка (паштел-де-ната)",
+     "Миндальное печенье",
+     "Серрадура (десерт из печенья и сливок)"
+    ],
+    "diningAdvice": "Макаоская кухня сочетает португальские и кантонские вкусы; в популярные рестораны бронируйте столик заранее."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Переходник для розеток типа G",
+     "Удобная обувь",
+     "Зонт",
+     "Паспорт (для поездок в Гонконг)"
+    ],
+    "safetyAndEtiquette": [
+     "Не фотографируйте в казино и избегайте тех, кто предлагает займы.",
+     "В храмах и церквях ведите себя уважительно."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Британские розетки типа G (220 В); в старых зданиях встречается тип D с круглыми штырями. Турецкие вилки не подходят, нужен переходник."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Водопроводная вода очищается, но большинство кипятит её или пьёт бутилированную; рекомендуется бутилированная.",
+    "vaccines": [
+     "Плановые прививки (столбняк-дифтерия, КПК)",
+     "Гепатит A",
+     "Летом — защита от комаров против денге"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "999"
+   },
+   "tipping": {
+    "custom": "Рестораны и отели добавляют в счёт 10 % за обслуживание.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "В такси можно округлить сумму; дополнительные чаевые не обязательны."
+   },
+   "taxFree": {
+    "vatRefundPercent": "В Макао нет НДС и налога с продаж",
+    "minSpend": "Не применяется",
+    "customsNote": "Макао — свободный порт, возврата налогов для туристов нет: цены без налога. При возвращении в Турцию соблюдайте беспошлинные нормы."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "$1 - $3",
+    "topCarriers": [
+     "CTM",
+     "China Telecom Macau",
+     "3 Macau",
+     "SmarTone Macau"
+    ],
+    "airportSimTrapWarning": "Туристические SIM CTM продаются в паромном терминале, аэропорту и магазинах у дома; гонконгская SIM в Макао может работать в роуминге — уточните заранее."
+   },
+   "touristScams": [
+    {
+     "title": "Ростовщик у казино",
+     "desc": "Люди у казино предлагают лёгкие займы и «системы».",
+     "tip": "Не берите в долг и заранее определите бюджет."
+    },
+    {
+     "title": "Завышенный тариф такси",
+     "desc": "Некоторые таксисты называют туристам высокую цену без счётчика.",
+     "tip": "Требуйте счётчик или пользуйтесь Uber."
+    },
+    {
+     "title": "Карманники",
+     "desc": "Карманники в толпе у собора Святого Павла и на площади Сенадо.",
+     "tip": "Держите сумку и телефон перед собой."
+    }
+   ]
+  }
+ }
+}
