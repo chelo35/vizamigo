@@ -74,7 +74,7 @@ export async function GET(req: Request) {
     // satori yalnızca PNG/JPEG resim alır; resimleri önceden indirip veri adresine çeviriyoruz
     const svg = await satori(el as never, { width: 1200, height: 630, fonts: await fonts(origin) });
     const png = new Resvg(svg, { fitTo: { mode: 'width', value: 1200 } }).render().asPng();
-    return new Response(png, { headers: { 'Content-Type': 'image/png', 'Cache-Control': 'public, max-age=86400, s-maxage=31536000, immutable' } });
+    return new Response(new Uint8Array(png), { headers: { 'Content-Type': 'image/png', 'Cache-Control': 'public, max-age=86400, s-maxage=31536000, immutable' } });
   } catch {
     return Response.redirect(`${origin}/logo.png`, 302);
   }
