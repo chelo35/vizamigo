@@ -161,55 +161,55 @@ async function main() {
     let html = tpl;
     if (ogImage) {
       // ülkeye özel paylaşım görseli (sosyal medyada ve aramada daha çok tıklanır)
-      html = html.replace(/(<meta property="og:image" content=")[^"]*(")/, `$1${ogImage}$2`);
-      html = html.replace(/(<meta name="twitter:image" content=")[^"]*(")/, `$1${ogImage}$2`);
+      html = html.replace(/(<meta property="og:image" content=")[^"]*(")/, (_m, a, b) => `${a}${ogImage}${b}`);
+      html = html.replace(/(<meta name="twitter:image" content=")[^"]*(")/, (_m, a, b) => `${a}${ogImage}${b}`);
       if (!ogImage.includes('/api/og')) html = html.replace(/\s*<meta property="og:image:(width|height)" content="[^"]*" \/>/g, '');
-      if (ogAlt) html = html.replace(/(<meta property="og:image:alt" content=")[^"]*(")/, `$1${esc(ogAlt)}$2`);
+      if (ogAlt) html = html.replace(/(<meta property="og:image:alt" content=")[^"]*(")/, (_m, a, b) => `${a}${esc(ogAlt)}${b}`);
     }
     if (lang !== 'tr') {
       // şablonun Türkçe site tanımlarını sayfa diline çevir (JSON-LD ve paylaşım görseli metni)
       const T = TPL_I18N[lang] || TPL_I18N.en;
-      html = html.replace('"Küresel vize serbestisi, çifte pasaport kıyaslama, Schengen 90/180 gün sayacı, acil durum konsolosluk rehberi ve seyahat güvenlik istihbaratı."', JSON.stringify(T.app));
-      html = html.replace('"Akıllı Pasaport, Vize & Küresel Seyahat Rehberi"', JSON.stringify(T.site));
-      html = html.replace('content="Vizamigo - Akıllı Pasaport & Vize Asistanı"', `content="${esc('Vizamigo - ' + T.ogAlt)}"`);
-      html = html.replace(/(<meta name="keywords" content=")[^"]*(")/, `$1${esc(T.kw)}$2`);
+      html = html.replace('"Küresel vize serbestisi, çifte pasaport kıyaslama, Schengen 90/180 gün sayacı, acil durum konsolosluk rehberi ve seyahat güvenlik istihbaratı."', () => JSON.stringify(T.app));
+      html = html.replace('"Akıllı Pasaport, Vize & Küresel Seyahat Rehberi"', () => JSON.stringify(T.site));
+      html = html.replace('content="Vizamigo - Akıllı Pasaport & Vize Asistanı"', () => `content="${esc('Vizamigo - ' + T.ogAlt)}"`);
+      html = html.replace(/(<meta name="keywords" content=")[^"]*(")/, (_m, a, b) => `${a}${esc(T.kw)}${b}`);
       if (!desc) desc = T.app;
     }
-    if (head) html = html.replace('</head>', `    ${head}\n  </head>`);
+    if (head) html = html.replace('</head>', () => `    ${head}\n  </head>`);
     html = html.replace(/<html lang="[^"]*"/, `<html lang="${lang}"`);
-    html = html.replace(/<title>[\s\S]*?<\/title>/, `<title>${esc(title)}</title>`);
-    html = html.replace(/(<meta property="og:title" content=")[^"]*(")/, `$1${esc(title)}$2`);
-    html = html.replace(/(<meta name="twitter:title" content=")[^"]*(")/, `$1${esc(title)}$2`);
+    html = html.replace(/<title>[\s\S]*?<\/title>/, () => `<title>${esc(title)}</title>`);
+    html = html.replace(/(<meta property="og:title" content=")[^"]*(")/, (_m, a, b) => `${a}${esc(title)}${b}`);
+    html = html.replace(/(<meta name="twitter:title" content=")[^"]*(")/, (_m, a, b) => `${a}${esc(title)}${b}`);
     if (desc) {
-      html = html.replace(/(<meta name="description" content=")[^"]*(")/, `$1${esc(desc)}$2`);
-      html = html.replace(/(<meta property="og:description" content=")[^"]*(")/, `$1${esc(desc)}$2`);
-      html = html.replace(/(<meta name="twitter:description" content=")[^"]*(")/, `$1${esc(desc)}$2`);
+      html = html.replace(/(<meta name="description" content=")[^"]*(")/, (_m, a, b) => `${a}${esc(desc)}${b}`);
+      html = html.replace(/(<meta property="og:description" content=")[^"]*(")/, (_m, a, b) => `${a}${esc(desc)}${b}`);
+      html = html.replace(/(<meta name="twitter:description" content=")[^"]*(")/, (_m, a, b) => `${a}${esc(desc)}${b}`);
     }
-    html = html.replace(/(<link rel="canonical" href=")[^"]*(")/, `$1${canonical}$2`);
-    html = html.replace(/(<meta property="og:url" content=")[^"]*(")/, `$1${canonical}$2`);
-    html = html.replace(/(<meta property="og:locale" content=")[^"]*(")/, `$1${OG[lang] || 'en_US'}$2`);
+    html = html.replace(/(<link rel="canonical" href=")[^"]*(")/, (_m, a, b) => `${a}${canonical}${b}`);
+    html = html.replace(/(<meta property="og:url" content=")[^"]*(")/, (_m, a, b) => `${a}${canonical}${b}`);
+    html = html.replace(/(<meta property="og:locale" content=")[^"]*(")/, (_m, a, b) => `${a}${OG[lang] || 'en_US'}${b}`);
     // dil alternatifleri: eskileri çıkar, bu sayfanınkini koy
     html = html.replace(/\s*<link rel="alternate" hreflang="[^"]*" href="[^"]*" data-dynamic-hreflang="true" \/>/g, '');
     const altTags = alts.map((a) => `<link rel="alternate" hreflang="${a.hreflang}" href="${a.href}" data-dynamic-hreflang="true" />`).join('\n    ');
-    html = html.replace(/(<link rel="canonical" href="[^"]*" \/>)/, `$1\n    ${altTags}`);
+    html = html.replace(/(<link rel="canonical" href="[^"]*" \/>)/, (_m, a) => `${a}\n    ${altTags}`);
     if (body) {
-      html = html.replace(/<span class="vzs-eye" id="vzs-eye">[\s\S]*?<div class="vzs-search"><\/div>\s*<div class="vzs-chips"><\/div>/, body);
+      html = html.replace(/<span class="vzs-eye" id="vzs-eye">[\s\S]*?<div class="vzs-search"><\/div>\s*<div class="vzs-chips"><\/div>/, () => body);
       // dil başlığını değiştiren küçük betik gerekmez
       html = html.replace(/<script>\s*\(function \(\) \{\s*try \{\s*var m = location\.pathname[\s\S]*?<\/script>/, '');
     }
     if (hero) {
-      html = html.replace(/<section class="vzs-hero">[\s\S]*?<div class="vzs-sea"><\/div><\/section>/, `${hero}${nav}`);
+      html = html.replace(/<section class="vzs-hero">[\s\S]*?<div class="vzs-sea"><\/div><\/section>/, () => `${hero}${nav}`);
       html = html.replace(/<script>\s*\(function \(\) \{\s*try \{\s*var m = location\.pathname[\s\S]*?<\/script>/, '');
-    } else if (nav) html = html.replace('<div class="vzs-sea"></div></section>', `<div class="vzs-sea"></div></section>${nav}`);
+    } else if (nav) html = html.replace('<div class="vzs-sea"></div></section>', () => `<div class="vzs-sea"></div></section>${nav}`);
     if (lang !== 'tr' && !body && !hero) {
       // ana sayfanın sabit karşılama metni: tarayıcıdaki küçük betiği beklemeden sayfa dilinde olsun
       const m = html.match(/var t = (\{ en: \[[\s\S]*?\] \})\[m && m\[1\]\];/);
       try {
         const t = m ? (Function(`return ${m[1]}`)() as Record<string, string[]>)[lang] : null;
         if (t) {
-          html = html.replace(/(<span class="vzs-eye" id="vzs-eye">)[^<]*(<\/span>)/, `$1${esc(t[0])}$2`);
-          html = html.replace(/(<h1 class="vzs-h1" id="vzs-h1">)[^<]*(<\/h1>)/, `$1${esc(t[1])}$2`);
-          html = html.replace(/(<p class="vzs-lead" id="vzs-lead">)[^<]*(<\/p>)/, `$1${esc(t[2])}$2`);
+          html = html.replace(/(<span class="vzs-eye" id="vzs-eye">)[^<]*(<\/span>)/, (_m, a, b) => `${a}${esc(t[0])}${b}`);
+          html = html.replace(/(<h1 class="vzs-h1" id="vzs-h1">)[^<]*(<\/h1>)/, (_m, a, b) => `${a}${esc(t[1])}${b}`);
+          html = html.replace(/(<p class="vzs-lead" id="vzs-lead">)[^<]*(<\/p>)/, (_m, a, b) => `${a}${esc(t[2])}${b}`);
         }
       } catch {}
     }
