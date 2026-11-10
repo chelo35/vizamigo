@@ -55,6 +55,7 @@ export type TpId =
   | 'avitovip'
   | 'woopdrive'
   | 'raynatours'
+  | 'sanatoriums'
   | 'hotelscom'
   | 'kayak'
   | 'bookingcars'
@@ -111,6 +112,7 @@ export const TP: Record<TpId, TpBrand> = {
   avitovip: { name: 'AvitoVIP', domain: 'avitovip.com', rate: '$3' },
   woopdrive: { name: 'WoopDrive', domain: 'woopdrive.com', rate: '4.2–6%' },
   raynatours: { name: 'Rayna Tours', domain: 'raynatours.com', rate: '4.8–8%' },
+  sanatoriums: { name: 'Sanatoriums', domain: 'sanatoriums.com', rate: 'Admitad' },
   safetywing: { name: 'SafetyWing', domain: 'safetywing.com', rate: '10%' },
   hellosafe: { name: 'HelloSafe', domain: 'hellosafe.com', rate: '10–20%' },
   tourradar: { name: 'TourRadar', domain: 'tourradar.com', rate: 'TourRadar' },
@@ -239,7 +241,8 @@ const ADMITAD_IDS: Record<string, TpId> = {
   '913bhutj0ze40c2b51fba8b9cbb737': 'lennuabi',
   '02swkf5uv6e40c2b51fbbabf13962c': 'avitovip',
   ffzns2ktmfe40c2b51fbd80355ec70: 'woopdrive',
-  ofc53p8nise40c2b51fbe94db72a90: 'raynatours'
+  ofc53p8nise40c2b51fbe94db72a90: 'raynatours',
+  '82hm46o8g4e40c2b51fb790b103c92': 'sanatoriums'
 };
 
 /** Bir bağlantının hangi Travelpayouts markasına gittiğini bulur (logo göstermek için) */
@@ -285,6 +288,8 @@ const EU_RAIL = new Set([
 const admitad = (base: string, ulp?: string) => (ulp ? `${base}?ulp=${encodeURIComponent(ulp)}` : base);
 /** Rayna Tours'un tur sattığı ülkeler (BAE, Umman, Suudi Arabistan, Singapur, Tayland, Malezya, Endonezya) */
 export const RAYNA_COUNTRIES = new Set(['AE', 'OM', 'SA', 'SG', 'TH', 'MY', 'ID']);
+/** Sanatoriums'un sanatoryum/kaplıca sattığı ülkeler (Rusya ve BDT) */
+export const SANATORIUM_COUNTRIES = new Set(['RU', 'BY', 'KZ', 'AZ', 'GE', 'AM', 'UZ', 'KG']);
 
 /** Ülkeye ve hub havalimanına göre hazır arama bağlantıları */
 export const tpLinks = {
@@ -327,6 +332,7 @@ export const tpLinks = {
   avitovip: () => admitad('https://kjuzv.com/g/02swkf5uv6e40c2b51fbbabf13962c/'),
   woopdrive: () => admitad('https://dkfrh.com/g/ffzns2ktmfe40c2b51fbd80355ec70/'),
   raynatours: () => admitad('https://xpuvo.com/g/ofc53p8nise40c2b51fbe94db72a90/'),
+  sanatoriums: () => admitad('https://kjuzv.com/g/82hm46o8g4e40c2b51fb790b103c92/'),
   safetywing: () => SAFETYWING,
   // HelloSafe (Awin, yayıncı 3138284): sigorta karşılaştırma, 20+ dil
   hellosafe: () => 'https://www.awin1.com/cread.php?awinmid=128757&awinaffid=3138284&clickref=vizamigo',
