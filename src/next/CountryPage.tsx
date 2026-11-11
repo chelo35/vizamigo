@@ -777,7 +777,7 @@ const CountryPageInner: React.FC<Props & { data: CountryBundle }> = ({ code, pas
             <button type="button" role="tab" aria-selected={view === 'guide'} className={view === 'guide' ? 'on' : ''} onClick={() => pickView('guide')}><Icon name="book" size={18} duo={false} />{l('Ülke rehberi', 'Country guide', 'Länderguide', 'Guía del país', 'Гид по стране')}</button>
           </div>
         )}
-        {isNew && view === 'book' && <BookingHub code={code} trip={trip} mustSee={enc.tourism?.mustSeePlaces || []} />}
+        {isNew && view === 'book' && <BookingHub code={code} trip={trip} setTrip={setTrip} mustSee={enc.tourism?.mustSeePlaces || []} />}
         {(!isNew || view === 'guide') && (
           <>
         {(() => {

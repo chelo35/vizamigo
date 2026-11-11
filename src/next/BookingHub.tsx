@@ -4,6 +4,7 @@ import { Icon } from './Icon';
 import { AdTag, Flag } from './ui';
 import { Picks, type PickItem } from './Picks';
 import { LiveTours } from './LiveTours';
+import { FareCalendar } from './FareCalendar';
 import { GEO_DATA } from '../data/geoData';
 import { getCountryName } from '../data/passportData';
 import { getCountryGeography } from '../data/countryGeography';
@@ -115,7 +116,7 @@ const Sec: React.FC<{ id: string; icon: string; title: string; note?: string; ch
   </section>
 );
 
-export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[] }> = ({ code, trip, mustSee = [] }) => {
+export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]; setTrip?: (p: Partial<Trip>) => void }> = ({ code, trip, mustSee = [], setTrip }) => {
   const { l, language } = useI18n();
   const cur = language === 'tr' ? 'TRY' : language === 'ru' ? 'RUB' : 'EUR';
   const loc = LOC[language] || 'en-GB';
@@ -139,6 +140,7 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
   // Uçuş: seçilen tarihlere en yakın gerçek fiyatlar (Aviasales önbelleği, sunucuda saatlerce önbelleklenir)
   const [fl, setFl] = useState<{ cur: string; res: Fl[] } | null>(null);
   const [directOnly, setDirectOnly] = useState(false);
+  const [calOpen, setCalOpen] = useState(false);
   useEffect(() => {
     setFl(null);
     if (!fromIata || !toIata || fromIata === toIata || trip.from === code) return;
@@ -277,10 +279,20 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
 
       {trip.from !== code && fromIata && toIata && (
         <Sec id="bk-flight" icon="plane" title={l(`${getCountryName(trip.from, language)} → ${getCountryName(code, language)} uçuşları`, `Flights ${getCountryName(trip.from, 'en')} → ${getCountryName(code, 'en')}`, `Flüge ${getCountryName(trip.from, language)} → ${getCountryName(code, language)}`, `Vuelos ${getCountryName(trip.from, language)} → ${getCountryName(code, language)}`, `Перелёт ${getCountryName(trip.from, language)} → ${getCountryName(code, language)}`)} note={l('Fiyatlar Aviasales’te son günlerde bulunan en düşük fiyatlar, kişi başı; birkaç saatte bir yenilenir. Kesin fiyat ödeme sayfasında.', 'Lowest fares seen on Aviasales recently, per person; refreshed every few hours. Final price at checkout.', 'Niedrigste kürzlich gesehene Preise auf Aviasales, pro Person; alle paar Stunden aktualisiert.', 'Tarifas más bajas vistas en Aviasales, por persona; se actualizan cada pocas horas.', 'Минимальные цены Aviasales, на человека; обновляются каждые несколько часов.')}>
+          <div className="vz-fl-tools">
+          <button type="button" className={`vz-fl-cal${calOpen ? ' on' : ''}`} aria-expanded={calOpen} onClick={() => setCalOpen((v) => !v)}>
+            <Icon name="cal" size={16} duo={false} />{l('Fiyat takvimi: en ucuz günler', 'Price calendar: cheapest days', 'Preiskalender: günstigste Tage', 'Calendario de precios', 'Календарь цен')}
+          </button>
           <label className="vz-bk-toggle">
             <input type="checkbox" checked={directOnly} onChange={(e) => setDirectOnly(e.target.checked)} />
             <span>{l('Sadece aktarmasız uçuşlar', 'Direct flights only', 'Nur Direktflüge', 'Solo vuelos directos', 'Только прямые рейсы')}</span>
           </label>
+          </div>
+          {calOpen && (
+            <div className="vz-fl-calbox">
+              <FareCalendar from={fromIata} to={toIata} nights={nights} cur={cur.toLowerCase()} dep={trip.d1} money={money} onPick={(d1, d2) => { setTrip?.({ d1, d2 }); setCalOpen(false); }} />
+            </div>
+          )}
           {fl === null ? (
             <div className="vz-live-skel" aria-hidden="true"><i /><i /><i /></div>
           ) : fl.res.length > 0 ? (
