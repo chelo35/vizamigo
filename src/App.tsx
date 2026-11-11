@@ -302,6 +302,7 @@ function AppContent() {
                 onReport={(code, name) => setReportingModalData({ code, name })}
                 onOpenRoute={() => handleSelectTab('plan')}
                 onOpenSos={() => openTool('nomad', 'sos')}
+                onOpenPassport={() => setIsPassportModalOpen(true)}
                 onOpenCountry={openCountryFromAnywhere}
               />
               </Suspense>

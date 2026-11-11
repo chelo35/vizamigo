@@ -34,6 +34,11 @@ import { getCrossRate, USD_RATES } from '../data/currencyRates';
 import { useLiveFx, useLiveWeather, liveWeatherKey, weatherCodeInfo } from '../utils/liveData';
 import { loadStoredRouteStops, saveStoredRouteStops, loadStoredPassport } from '../utils/storage';
 import { PASSPORT_PAGES } from '../data/passportPages';
+import { BookingHub, TripBar, useTrip } from './BookingHub';
+import { NOMAD_HUBS, getLocalizedNomadHub } from '../data/nomadData';
+
+/** Yeni "tek sayfa" düzeni (üstte yolculuk çubuğu, Rezervasyon / Ülke rehberi sekmeleri) açık olan ülkeler. */
+export const NEW_LAYOUT = new Set(['TH']);
 import { buildPassportPath, buildLocalizedPath } from '../utils/seoRouter';
 
 interface Props {
@@ -46,6 +51,7 @@ interface Props {
   onOpenSos: () => void;
   /** /:lang/:ülke/:pasaport sayfasında sabitlenen pasaport */
   pinnedPassport?: string | null;
+  onOpenPassport?: () => void;
 }
 
 type L3 = { tr: string; en: string; de: string };
@@ -116,8 +122,27 @@ const CountryHero: React.FC<{ code: string; passport: string; onBack: () => void
   );
 };
 
-const CountryPageInner: React.FC<Props & { data: CountryBundle }> = ({ code, passport, pinnedPassport, onBack, onReport, onOpenRoute, onOpenSos, onOpenCountry, data }) => {
+const CountryPageInner: React.FC<Props & { data: CountryBundle }> = ({ code, passport, pinnedPassport, onBack, onReport, onOpenRoute, onOpenSos, onOpenCountry, onOpenPassport, data }) => {
   const { l, language } = useI18n();
+  const isNew = NEW_LAYOUT.has(code);
+  const [trip, setTrip] = useTrip(passport);
+  const [view, setView] = useState<'book' | 'guide'>(() => {
+    try {
+      return (sessionStorage.getItem('vz_cview') as 'book' | 'guide') || 'book';
+    } catch {
+      return 'book';
+    }
+  });
+  const pickView = (v: 'book' | 'guide') => {
+    setView(v);
+    try {
+      sessionStorage.setItem('vz_cview', v);
+    } catch {}
+  };
+  const nomad = useMemo(() => {
+    const h = NOMAD_HUBS.find((x) => x.countryCode === code);
+    return h ? getLocalizedNomadHub(h, language === 'tr' || language === 'de' ? language : 'en') : null;
+  }, [code, language]);
   useLiveFx();
   const name = getCountryName(code, language);
   const item = useMemo(() => getPassportItems(passport).find((x) => x.c === code) || null, [passport, code]);
@@ -577,12 +602,22 @@ const CountryPageInner: React.FC<Props & { data: CountryBundle }> = ({ code, pas
         }
       ]
     },
-    {
-      id: 'work', icon: 'laptop',
-      title: l('Uzaktan çalışma saati', 'Remote work hours', 'Remote-Arbeitszeit', 'Horario remoto', 'Удалённая работа'),
-      desc: l('Şirketinin mesaisi orada kaçta?', 'Your company hours, local time', 'Firmenzeit vor Ort', 'Tu horario allí', 'Рабочие часы там'),
-      render: () => <WorkSim tz={tz} city={geog.capital || name} />
-    },
+    nomad
+      ? {
+          id: 'work', icon: 'laptop',
+          title: l('Dijital göçebe', 'Digital nomads', 'Digitale Nomaden', 'Nómadas digitales', 'Цифровые кочевники'),
+          desc: l('Uzun kalış vizesi, maliyet, internet', 'Long-stay visa, costs, internet', 'Langzeitvisum, Kosten, Internet', 'Visado largo, costes, internet', 'Долгая виза, расходы, интернет'),
+          tabs: [
+            { id: 'stay', label: l('Uzun kalış', 'Long stay', 'Langer Aufenthalt', 'Estancia larga', 'Долгое пребывание'), render: () => <NomadInfo hub={nomad} /> },
+            { id: 'hours', label: l('Çalışma saati', 'Work hours', 'Arbeitszeit', 'Horario', 'Рабочие часы'), render: () => <WorkSim tz={tz} city={geog.capital || name} /> }
+          ]
+        }
+      : {
+          id: 'work', icon: 'laptop',
+          title: l('Uzaktan çalışma saati', 'Remote work hours', 'Remote-Arbeitszeit', 'Horario remoto', 'Удалённая работа'),
+          desc: l('Şirketinin mesaisi orada kaçta?', 'Your company hours, local time', 'Firmenzeit vor Ort', 'Tu horario allí', 'Рабочие часы там'),
+          render: () => <WorkSim tz={tz} city={geog.capital || name} />
+        },
     {
       id: 'economy', icon: 'chart',
       title: l('Ekonomi & ünlüler', 'Economy & people', 'Wirtschaft & Persönlichkeiten', 'Economía y personas', 'Экономика и люди'),
@@ -719,9 +754,10 @@ const CountryPageInner: React.FC<Props & { data: CountryBundle }> = ({ code, pas
             <Stat value={timeStr} label={l(`${geog.capital || name} saati`, `Time in ${geog.capital || name}`, `Uhrzeit ${geog.capital || name}`, `Hora en ${geog.capital || name}`, `Время: ${geog.capital || name}`)} icon="clock" />
             <Stat value={w ? `${w.tempC}°` : '—'} label={wInfo ? `${wInfo[language] || wInfo.en} · ${l('hissedilen', 'feels', 'gefühlt', 'sensación', 'ощущ.')} ${w?.feelsLikeC}°` : l('Hava durumu', 'Weather', 'Wetter', 'Tiempo', 'Погода')} icon="sun" tone="sun" />
             <Stat value={fmtPair(GLOBAL_CURRENCIES[passport]?.symbol || homeCur, GLOBAL_CURRENCIES[code]?.symbol || destCur, rate, language)} label={`${homeCur} → ${destCur}`} icon="fx" />
-            <Stat value={insights.bestMonths || '—'} label={l('En iyi aylar', 'Best months', 'Beste Monate', 'Mejores meses', 'Лучшие месяцы')} icon="cal" tone="ok" />
+            <Stat value={(isNew ? (insights.bestMonths || '').split(/[(;·]/)[0].trim() : insights.bestMonths) || '—'} label={l('En iyi aylar', 'Best months', 'Beste Monate', 'Mejores meses', 'Лучшие месяцы')} icon="cal" tone="ok" />
           </div>
         </div>
+        {isNew && <TripBar passport={passport} trip={trip} setTrip={setTrip} onOpenPassport={onOpenPassport} />}
 
         <section className="vz-tldr" aria-label={l('Kısa cevap', 'Quick answer', 'Kurzantwort', 'Respuesta rápida', 'Коротко')}>
           <span className={`vz-ic tone-${passport === code ? 'ok' : visaTone(item)}`}><Icon name={passport !== code && visaTone(item) === 'warn' ? 'doc' : 'check'} size={22} /></span>
@@ -735,6 +771,15 @@ const CountryPageInner: React.FC<Props & { data: CountryBundle }> = ({ code, pas
             ))}
           </div>
         </section>
+        {isNew && (
+          <div className="vz-cview" role="tablist" aria-label={name}>
+            <button type="button" role="tab" aria-selected={view === 'book'} className={view === 'book' ? 'on' : ''} onClick={() => pickView('book')}><Icon name="bed" size={18} duo={false} />{l('Rezervasyon', 'Book your trip', 'Buchen', 'Reservar', 'Бронирование')}</button>
+            <button type="button" role="tab" aria-selected={view === 'guide'} className={view === 'guide' ? 'on' : ''} onClick={() => pickView('guide')}><Icon name="book" size={18} duo={false} />{l('Ülke rehberi', 'Country guide', 'Länderguide', 'Guía del país', 'Гид по стране')}</button>
+          </div>
+        )}
+        {isNew && view === 'book' && <BookingHub code={code} trip={trip} mustSee={enc.tourism?.mustSeePlaces || []} />}
+        {(!isNew || view === 'guide') && (
+          <>
         {(() => {
           const lg = language as SupportedLanguage;
           const others = PASSPORT_PAGES[lg].filter((p) => p !== code && p !== passport);
@@ -810,6 +855,8 @@ const CountryPageInner: React.FC<Props & { data: CountryBundle }> = ({ code, pas
           </div>
         </section>
 
+          </>
+        )}
         {similar.length > 0 && (
           <section className="vz-home-sec">
             <SecHead eyebrow={l('İlham', 'Inspiration', 'Inspiration', 'Inspiración', 'Идеи')} title={l('Bunları da sevebilirsin', 'You might also like', 'Das könnte dir auch gefallen', 'También te puede gustar', 'Вам может понравиться')} />
@@ -819,7 +866,7 @@ const CountryPageInner: React.FC<Props & { data: CountryBundle }> = ({ code, pas
           </section>
         )}
       </div>
-      <OfferCard code={code} passport={passport} />
+      {!isNew && <OfferCard code={code} passport={passport} />}
     </div>
   );
 };
@@ -989,6 +1036,38 @@ const EasyStages: React.FC<{ stages: Stage[]; tr: boolean; from?: string; to?: s
         ))}
       </div>
       {!st && stages.some((s) => s.partners.length > 3) && <Btn variant="ghost" small onClick={() => setAll(!all)}>{all ? l('Daha az göster', 'Show fewer', 'Weniger', 'Menos', 'Меньше') : l('Bütün seçenekleri göster', 'Show all options', 'Alle Optionen', 'Ver todas', 'Все варианты')}</Btn>}
+    </div>
+  );
+};
+
+/** Dijital göçebe: uzun kalış vizesi, gelir şartı, aylık maliyet, internet ve merkezler. */
+const NomadInfo: React.FC<{ hub: NonNullable<ReturnType<typeof getLocalizedNomadHub>> }> = ({ hub }) => {
+  const { l } = useI18n();
+  const cb = hub.costBreakdown;
+  return (
+    <div className="vz-stack">
+      <Card tone="sea" eyebrow={l('Uzun kalış vizesi', 'Long-stay visa', 'Langzeitvisum', 'Visado de larga estancia', 'Долгосрочная виза')} title={hub.visaName}>
+        <p>{hub.duration}</p>
+        <p className="vz-muted">{hub.incomeRequired}</p>
+        {hub.officialUrl && <LinkBtn small href={hub.officialUrl}>{l('Resmî başvuru sitesi', 'Official application site', 'Offizielle Antragsseite', 'Web oficial', 'Официальный сайт')}</LinkBtn>}
+      </Card>
+      <div className="vz-stats">
+        <Stat value={hub.monthlyLivingCost.split('(')[0].trim()} label={l('Aylık yaşam maliyeti', 'Monthly living cost', 'Monatliche Kosten', 'Coste mensual', 'Расходы в месяц')} icon="wallet" />
+        <Stat value={hub.processingTime.split('(')[0].trim()} label={l('Başvuru süresi', 'Processing time', 'Bearbeitungszeit', 'Tramitación', 'Срок оформления')} icon="cal" />
+      </div>
+      {cb && (
+        <List>
+          <Row icon="bed" title={l('Kira (1+1)', 'Rent (1-bed)', 'Miete (1 Zi.)', 'Alquiler (1 hab.)', 'Аренда (1-комн.)')} right={<b>{cb.rent1Bed.split('(')[0].trim()}</b>} />
+          <Row icon="food" title={l('Yemek', 'Food', 'Essen', 'Comida', 'Еда')} right={<b>{cb.foodDining.split('(')[0].trim()}</b>} />
+          <Row icon="laptop" title={l('Ortak çalışma alanı', 'Coworking', 'Coworking', 'Coworking', 'Коворкинг')} right={<b>{cb.coworking.split('(')[0].trim()}</b>} />
+          <Row icon="phone" title={l('Mobil hat', 'Mobile plan', 'Mobilfunk', 'Móvil', 'Связь')} right={<b>{cb.mobileSim.split('(')[0].trim()}</b>} />
+          <Row icon="transit" title={l('Ulaşım', 'Transport', 'Verkehr', 'Transporte', 'Транспорт')} right={<b>{cb.localTransit.split('(')[0].trim()}</b>} />
+        </List>
+      )}
+      <Card title={l('İnternet ve ortak çalışma', 'Internet & coworking', 'Internet & Coworking', 'Internet y coworking', 'Интернет и коворкинг')} icon="wifi"><p>{hub.internetAndCoworking}</p></Card>
+      <Card title={l('Popüler merkezler', 'Popular hubs', 'Beliebte Orte', 'Lugares populares', 'Популярные места')} icon="map"><Tags items={hub.popularHubs} /></Card>
+      {hub.keyRequirements?.length > 0 && <Card title={l('Başvuruda istenenler', 'What you need', 'Voraussetzungen', 'Requisitos', 'Что нужно')} icon="check"><Bullets items={hub.keyRequirements} /></Card>}
+      <p className="vz-muted" style={{ fontSize: 12.5 }}>{hub.taxRegime}</p>
     </div>
   );
 };
