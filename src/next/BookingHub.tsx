@@ -9,7 +9,7 @@ import { getCountryName } from '../data/passportData';
 import { getCountryGeography } from '../data/countryGeography';
 import { capitalName } from '../data/capitalNames';
 import { getCrossRate } from '../data/currencyRates';
-import { tpLinks, stay22, s22Flights, s22Cars, gygLink, RAYNA_COUNTRIES } from '../data/tpPartners';
+import { tpLinks, stay22, s22Flights, s22Cars, gygLink, RAYNA_COUNTRIES, STAY22_AID } from '../data/tpPartners';
 import { TOURS, PACKAGES, LIVE } from '../data/tours';
 import ESIM from '../data/esimPrices.json';
 
@@ -220,6 +220,12 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
   ];
   const short = (d: string) => new Date(`${d}T12:00:00`).toLocaleDateString(loc, { day: 'numeric', month: 'short' });
   const dates = `${short(trip.d1)} – ${short(trip.d2)}`;
+  const [hotelArea, setHotelArea] = useState('');
+  const [tourArea, setTourArea] = useState('');
+  useEffect(() => {
+    setHotelArea('');
+    setTourArea('');
+  }, [code]);
 
   return (
     <div className="vz-bk">
@@ -256,31 +262,22 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
       )}
 
       <Sec id="bk-hotel" icon="bed" title={l('Nerede kalınır?', 'Where to stay', 'Wo übernachten?', 'Dónde alojarse', 'Где остановиться')} note={l(`${nights} gece · ${trip.n} kişi. Fiyatlar seçtiğin tarihlerle ortak sitede açılır.`, `${nights} nights · ${trip.n} guests. Prices open with your dates on the partner site.`, `${nights} Nächte · ${trip.n} Personen. Preise mit deinen Daten beim Partner.`, `${nights} noches · ${trip.n} personas. Precios con tus fechas en el sitio del socio.`, `${nights} ноч. · ${trip.n} гост. Цены на ваши даты на сайте партнёра.`)}>
-        <div className="vz-bk-cards">
+        <div className="vz-bk-chips" role="tablist" aria-label={l('Bölge', 'Area', 'Gegend', 'Zona', 'Район')}>
           {areas.map((a) => (
-            <a key={a.en} className="vz-bk-card" href={stay22('booking', hq(a.en))} target="_blank" rel="noopener noreferrer sponsored">
-              <span className="vz-ic"><Icon name="bed" size={20} /></span>
-              <b>{a.name}</b>
-              <small>{dates}</small>
-              <span className="vz-bk-go">{l('Otelleri ve fiyatları gör', 'See hotels & prices', 'Hotels & Preise', 'Ver hoteles y precios', 'Отели и цены')} ›</span>
-            </a>
+            <button key={a.en} type="button" role="tab" aria-selected={(hotelArea || areas[0]?.en) === a.en} className={(hotelArea || areas[0]?.en) === a.en ? 'on' : ''} onClick={() => setHotelArea(a.en)}>{a.name}</button>
           ))}
         </div>
+        <Stay22Frame mode="accommodation" address={`${hotelArea || areas[0]?.en || cityEn}, ${countryEn}`} trip={trip} campaign={`cp_${code.toLowerCase()}_map`} title={l('Otel haritası ve fiyatlar', 'Hotel map and prices', 'Hotelkarte und Preise', 'Mapa de hoteles y precios', 'Карта отелей и цены')} />
         <Picks label={l('Otel sitesini seç:', 'Choose a hotel site:', 'Hotelseite wählen:', 'Elige un sitio:', 'Выберите сайт:')} items={hotelPicks} k={`h${code}${trip.d1}${trip.d2}${trip.n}`} />
       </Sec>
 
       <Sec id="bk-tours" icon="ticket" title={l('Turlar ve aktiviteler', 'Tours & activities', 'Touren & Aktivitäten', 'Tours y actividades', 'Экскурсии и развлечения')}>
-        {sights.length > 0 && (
-          <div className="vz-bk-cards">
-            {sights.map((s) => (
-              <a key={s} className="vz-bk-card" href={gyg(s)} target="_blank" rel="noopener noreferrer sponsored">
-                <span className="vz-ic"><Icon name="landmark" size={20} /></span>
-                <b>{s}</b>
-                <span className="vz-bk-go">{l('Tur ve bilet bul', 'Find tours & tickets', 'Touren & Tickets', 'Tours y entradas', 'Экскурсии и билеты')} ›</span>
-              </a>
-            ))}
-          </div>
-        )}
+        <div className="vz-bk-chips" role="tablist" aria-label={l('Yer', 'Place', 'Ort', 'Lugar', 'Место')}>
+          {[cityEn, ...sights].filter((x, i, a) => a.indexOf(x) === i).map((s) => (
+            <button key={s} type="button" role="tab" aria-selected={(tourArea || cityEn) === s} className={(tourArea || cityEn) === s ? 'on' : ''} onClick={() => setTourArea(s)}>{s === cityEn ? (GEO_DATA[code]?.capital ? capitalName(code, language, GEO_DATA[code].capital) : s) : s}</button>
+          ))}
+        </div>
+        <Stay22Frame mode="experience" address={`${tourArea || cityEn}, ${countryEn}`} trip={trip} campaign={`cp_${code.toLowerCase()}_exp`} title={l('Turlar, biletler ve fiyatlar', 'Tours, tickets and prices', 'Touren, Tickets und Preise', 'Tours, entradas y precios', 'Экскурсии, билеты и цены')} />
         {pkg && (
           <div className="vz-bk-pkg">
             <b>{l('Hazır paket turlar', 'Package tours', 'Pauschalrundreisen', 'Circuitos', 'Пакетные туры')} · {pkg.route}</b>
@@ -322,6 +319,52 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
 
       <p className="vz-bk-disc">{l('Bu bağlantılar iş ortağı bağlantısıdır; senin için fiyat değişmez, Vizamigo’nun ücretsiz kalmasına yardım eder. Ödeme her zaman ortak sitede yapılır.', 'These are partner links; your price stays the same and it keeps Vizamigo free. Payment always happens on the partner site.', 'Partnerlinks; dein Preis bleibt gleich. Bezahlt wird immer beim Partner.', 'Enlaces de socios; tu precio no cambia. El pago siempre se hace en el sitio del socio.', 'Партнёрские ссылки; цена для вас та же. Оплата всегда на сайте партнёра.')}</p>
 
+    </div>
+  );
+};
+
+/** Stay22 harita vitrini: fotoğraflı, tarihli canlı fiyatlar. Bölüme yaklaşınca yüklenir. */
+const S22_LANG = new Set(['tr', 'en', 'de', 'es']);
+export const Stay22Frame: React.FC<{ mode: 'accommodation' | 'experience'; address: string; trip: Trip; campaign: string; title: string }> = ({ mode, address, trip, campaign, title }) => {
+  const { language } = useI18n();
+  const ref = React.useRef<HTMLDivElement>(null);
+  const [on, setOn] = useState(false);
+  useEffect(() => {
+    const el = ref.current;
+    if (!el || on) return;
+    if (typeof IntersectionObserver === 'undefined') {
+      setOn(true);
+      return;
+    }
+    const io = new IntersectionObserver((es) => {
+      if (es.some((e) => e.isIntersecting)) {
+        setOn(true);
+        io.disconnect();
+      }
+    }, { rootMargin: '400px 0px' });
+    io.observe(el);
+    return () => io.disconnect();
+  }, [on]);
+  const q = new URLSearchParams({
+    aid: STAY22_AID,
+    address,
+    checkin: trip.d1,
+    checkout: trip.d2,
+    adults: String(trip.n),
+    campaign,
+    invmode: mode,
+    maincolor: '0b7287',
+    ljs: S22_LANG.has(language) ? language : 'en',
+    currency: language === 'tr' ? 'TRY' : language === 'ru' ? 'USD' : 'EUR',
+    viewmode: 'listview',
+    listviewexpand: 'true',
+    zoom: '12',
+    hidemodeswitcher: 'true',
+    hidebrandlogo: 'true'
+  });
+  return (
+    <div ref={ref} className="vz-s22">
+      {on ? <iframe title={title} src={`https://www.stay22.com/embed/gm?${q.toString()}`} loading="lazy" referrerPolicy="strict-origin-when-cross-origin" /> : <div className="vz-live-skel" aria-hidden="true"><i /><i /><i /></div>}
     </div>
   );
 };
