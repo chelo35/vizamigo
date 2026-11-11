@@ -9,7 +9,7 @@ import { getCountryName } from '../data/passportData';
 import { getCountryGeography } from '../data/countryGeography';
 import { capitalName } from '../data/capitalNames';
 import { getCrossRate } from '../data/currencyRates';
-import { tpLinks, stay22, s22Flights, s22Cars, gygLink, RAYNA_COUNTRIES, STAY22_AID } from '../data/tpPartners';
+import { tpLinks, tpLogo, stay22, s22Flights, s22Cars, gygLink, RAYNA_COUNTRIES, STAY22_AID } from '../data/tpPartners';
 import { TOURS, PACKAGES, LIVE } from '../data/tours';
 import ESIM from '../data/esimPrices.json';
 import { thirdPartyAllowed } from '../utils/consent';
@@ -227,6 +227,7 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
   const [hotelView, setHotelView] = useState<'listview' | 'map'>('listview');
+  const [hotelLive, setHotelLive] = useState(false);
   const [hotelPreset, setHotelPreset] = useState<'all' | 'budget' | 'rated' | 'stars'>('all');
   const [priceTotal, setPriceTotal] = useState(false);
   const budgetMax = language === 'tr' ? 3500 : 80;
@@ -283,6 +284,21 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
             <button key={a.en} type="button" role="tab" aria-selected={(hotelArea || areas[0]?.en) === a.en} className={(hotelArea || areas[0]?.en) === a.en ? 'on' : ''} onClick={() => setHotelArea(a.en)}>{a.name}</button>
           ))}
         </div>
+        {!hotelLive ? (
+          <>
+            <div className="vz-hq">
+              {(['booking', 'agoda', 'expedia', 'hotelscom'] as const).map((id) => (
+                <a key={id} className="vz-hq-card" href={stay22(id, hq((hotelArea || areas[0]?.en || cityEn)))} target="_blank" rel="noopener noreferrer sponsored">
+                  <img src={tpLogo(id)} alt="" width={28} height={28} loading="lazy" />
+                  <span><b>{({ booking: 'Booking.com', agoda: 'Agoda', expedia: 'Expedia', hotelscom: 'Hotels.com' } as const)[id]}</b><small>{(areas.find((x) => x.en === (hotelArea || areas[0]?.en))?.name || cityEn)} · {dates} · {trip.n} {l('kişi', 'guests', 'Pers.', 'pers.', 'чел.')}</small></span>
+                  <em>{l('Fiyatları gör', 'See prices', 'Preise ansehen', 'Ver precios', 'Цены')} ›</em>
+                </a>
+              ))}
+            </div>
+            <button type="button" className="vz-bk-cta vz-hq-live" onClick={() => setHotelLive(true)}><Icon name="map" size={16} duo={false} />{l('Haritada otelleri ve canlı fiyatları göster', 'Show hotels and live prices on the map', 'Hotels und Live-Preise auf der Karte', 'Ver hoteles y precios en el mapa', 'Отели и цены на карте')}</button>
+          </>
+        ) : (
+          <>
         <div className="vz-bk-seg" role="group" aria-label={l('Görünüm', 'View', 'Ansicht', 'Vista', 'Вид')}>
           <button type="button" aria-pressed={hotelView === 'listview'} className={hotelView === 'listview' ? 'on' : ''} onClick={() => setHotelView('listview')}><Icon name="doc" size={16} duo={false} />{l('Liste', 'List', 'Liste', 'Lista', 'Список')}</button>
           <button type="button" aria-pressed={hotelView === 'map'} className={hotelView === 'map' ? 'on' : ''} onClick={() => setHotelView('map')}><Icon name="map" size={16} duo={false} />{l('Harita', 'Map', 'Karte', 'Mapa', 'Карта')}</button>
@@ -304,7 +320,9 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
           </label>
         </div>
         <Stay22Frame view={hotelView} extra={hotelExtra} mode="accommodation" address={`${hotelArea || areas[0]?.en || cityEn}, ${countryEn}`} trip={trip} campaign={`cp_${code.toLowerCase()}_map`} title={l('Otel haritası ve fiyatlar', 'Hotel map and prices', 'Hotelkarte und Preise', 'Mapa de hoteles y precios', 'Карта отелей и цены')} />
-        <Picks label={l('Otel sitesini seç:', 'Choose a hotel site:', 'Hotelseite wählen:', 'Elige un sitio:', 'Выберите сайт:')} items={hotelPicks} k={`h${code}${trip.d1}${trip.d2}${trip.n}`} />
+          </>
+        )}
+        {hotelLive && <Picks label={l('Otel sitesini seç:', 'Choose a hotel site:', 'Hotelseite wählen:', 'Elige un sitio:', 'Выберите сайт:')} items={hotelPicks} k={`h${code}${trip.d1}${trip.d2}${trip.n}`} />}
       </Sec>
 
       <Sec id="bk-tours" icon="ticket" title={l('Turlar ve aktiviteler', 'Tours & activities', 'Touren & Aktivitäten', 'Tours y actividades', 'Экскурсии и развлечения')}>
