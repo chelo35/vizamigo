@@ -313,7 +313,7 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
             <button key={s} type="button" role="tab" aria-selected={(tourArea || cityEn) === s} className={(tourArea || cityEn) === s ? 'on' : ''} onClick={() => setTourArea(s)}>{s === cityEn ? (GEO_DATA[code]?.capital ? capitalName(code, language, GEO_DATA[code].capital) : s) : s}</button>
           ))}
         </div>
-        <Stay22Frame mode="experience" address={`${tourArea || cityEn}, ${countryEn}`} trip={trip} campaign={`cp_${code.toLowerCase()}_exp`} title={l('Turlar, biletler ve fiyatlar', 'Tours, tickets and prices', 'Touren, Tickets und Preise', 'Tours, entradas y precios', 'Экскурсии, билеты и цены')} />
+        <TourShowcase q={tourArea || cityEn} country={countryEn} money={(v: number, c: string) => money(v * getCrossRate(c, cur))} fallback={<Stay22Frame mode="experience" address={`${tourArea || cityEn}, ${countryEn}`} trip={trip} campaign={`cp_${code.toLowerCase()}_exp`} title={l('Turlar, biletler ve fiyatlar', 'Tours, tickets and prices', 'Touren, Tickets und Preise', 'Tours, entradas y precios', 'Экскурсии, билеты и цены')} />} />
         {pkg && (
           <div className="vz-bk-pkg">
             <b>{l('Hazır paket turlar', 'Package tours', 'Pauschalrundreisen', 'Circuitos', 'Пакетные туры')} · {pkg.route}</b>
@@ -375,7 +375,7 @@ export const Stay22Frame: React.FC<{ mode: 'accommodation' | 'experience'; addre
   }, []);
   useEffect(() => {
     // sayfa açıldıktan kısa süre sonra arka planda yüklemeye başla, kişi aşağı inince hazır olsun
-    const t = setTimeout(() => setOn(true), 1500);
+    const t = setTimeout(() => setOn(true), 700);
     return () => clearTimeout(t);
   }, []);
   useEffect(() => {
@@ -410,6 +410,8 @@ export const Stay22Frame: React.FC<{ mode: 'accommodation' | 'experience'; addre
     ...(view === 'listview' ? { listviewexpand: 'true' } : {}),
     zoom: '12',
     hidemodeswitcher: 'true',
+    hidesearchbar: 'true',
+    hideallezbutton: 'true',
     hidebrandlogo: 'true'
   });
   return (
@@ -426,6 +428,61 @@ export const Stay22Frame: React.FC<{ mode: 'accommodation' | 'experience'; addre
           {[0, 1, 2, 3, 4, 5].map((i) => <div key={i}><i /><b /><s /></div>)}
         </div>
       )}
+    </div>
+  );
+};
+
+/** Kendi tur vitrinimiz: fotoğraf, puan, süre, fiyat bizim kartlarımızda; yalnızca "Rezervasyon" ile ortak siteye gidilir. */
+type VItem = { id: string; title: string; img: string; rating: number | null; reviews: number; mins: number; price: number | null; cur: string; free: boolean; url: string };
+const vCache = new Map<string, { ok: boolean; items: VItem[] }>();
+export const TourShowcase: React.FC<{ q: string; country: string; money: (v: number, c: string) => string; fallback: React.ReactNode }> = ({ q, country, money, fallback }) => {
+  const { l, language } = useI18n();
+  const k = `${q}|${country}|${language}`;
+  const [data, setData] = useState<{ ok: boolean; items: VItem[] } | null>(() => vCache.get(k) || null);
+  useEffect(() => {
+    const hit = vCache.get(k);
+    if (hit) {
+      setData(hit);
+      return;
+    }
+    setData(null);
+    let alive = true;
+    fetch(`/api/viator?q=${encodeURIComponent(q)}&country=${encodeURIComponent(country)}&lang=${language}&n=12`)
+      .then((r) => (r.ok ? r.json() : { ok: false }))
+      .then((j) => {
+        const v = { ok: !!j.ok && Array.isArray(j.items) && j.items.length > 0, items: (j.items || []) as VItem[] };
+        vCache.set(k, v);
+        if (alive) setData(v);
+      })
+      .catch(() => alive && setData({ ok: false, items: [] }));
+    return () => {
+      alive = false;
+    };
+  }, [k, q, country, language]);
+  if (data && !data.ok) return <>{fallback}</>;
+  if (!data)
+    return (
+      <div className="vz-tc-grid" aria-hidden="true">
+        {[0, 1, 2, 3, 4, 5].map((i) => <div key={i} className="vz-tc-card sk"><i /><b /><s /></div>)}
+      </div>
+    );
+  const dur = (m: number) => (!m ? '' : m >= 1440 ? l(`${Math.round(m / 1440)} gün`, `${Math.round(m / 1440)} days`, `${Math.round(m / 1440)} Tage`, `${Math.round(m / 1440)} días`, `${Math.round(m / 1440)} дн.`) : m >= 60 ? l(`${Math.round(m / 60)} saat`, `${Math.round(m / 60)} h`, `${Math.round(m / 60)} Std.`, `${Math.round(m / 60)} h`, `${Math.round(m / 60)} ч`) : `${m} ${l('dk', 'min', 'Min.', 'min', 'мин')}`);
+  return (
+    <div className="vz-tc-grid">
+      {data.items.map((t, i) => (
+        <a key={t.id || i} className="vz-tc-card" href={t.url} target="_blank" rel="noopener noreferrer sponsored">
+          <span className="vz-tc-img">{t.img && <img src={t.img} alt="" loading={i < 4 ? 'eager' : 'lazy'} decoding="async" />}{t.free && <em>{l('Ücretsiz iptal', 'Free cancellation', 'Kostenlos stornierbar', 'Cancelación gratuita', 'Бесплатная отмена')}</em>}</span>
+          <span className="vz-tc-body">
+            <b>{t.title}</b>
+            <small>{t.rating ? `★ ${t.rating.toFixed(1)} (${t.reviews.toLocaleString()})` : ''}{t.rating && t.mins ? ' · ' : ''}{dur(t.mins)}</small>
+            <span className="vz-tc-foot">
+              {t.price != null && <span className="vz-tc-price"><small>{l('kişi başı', 'from', 'ab', 'desde', 'от')}</small> {money(t.price, t.cur)}</span>}
+              <span className="vz-tc-go">{l('Rezervasyon', 'Book', 'Buchen', 'Reservar', 'Бронь')} ›</span>
+            </span>
+          </span>
+        </a>
+      ))}
+      <p className="vz-bk-note" style={{ gridColumn: '1 / -1' }}>{l('Fiyatlar Viator’dan, 12 saatte bir yenilenir. Rezervasyon ve ödeme Viator’da yapılır.', 'Prices from Viator, refreshed every 12 hours. Booking and payment on Viator.', 'Preise von Viator, alle 12 Std. aktualisiert. Buchung bei Viator.', 'Precios de Viator, cada 12 horas. Reserva en Viator.', 'Цены Viator, обновляются каждые 12 часов. Бронь на Viator.')}</p>
     </div>
   );
 };

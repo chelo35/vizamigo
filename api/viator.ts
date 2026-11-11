@@ -1,0 +1,113 @@
+export const config = { runtime: 'edge' };
+
+/**
+ * Kendi tur vitrinimiz için Viator ürünleri (Viator Partner API, ortaklık anahtarı).
+ * GET /api/viator?q=Bangkok&country=Thailand&lang=tr&n=12
+ * Anahtar yoksa {ok:false} döner; sayfa o zaman yedek vitrini gösterir.
+ * Sonuçlar CDN'de 12 saat saklanır (hızlı açılış, Viator'a az istek).
+ * productUrl Viator'un ortaklık izini (pid/mcid) taşır; satış bize yazılır.
+ */
+const BASE = 'https://api.viator.com/partner';
+const LANGS: Record<string, string> = { de: 'de-DE', es: 'es-ES', en: 'en-US' };
+
+type Dest = { destinationId: number; name: string; type?: string; parentDestinationId?: number };
+let DESTS: { at: number; list: Dest[] } | null = null;
+
+const json = (body: unknown, status = 200, cache = 's-maxage=43200, stale-while-revalidate=86400') =>
+  new Response(JSON.stringify(body), { status, headers: { 'Content-Type': 'application/json; charset=utf-8', 'Cache-Control': `public, max-age=600, ${cache}` } });
+
+const norm = (s: string) => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, ' ').trim();
+
+async function destinations(key: string): Promise<Dest[]> {
+  if (DESTS && Date.now() - DESTS.at < 864e5) return DESTS.list;
+  const r = await fetch(`${BASE}/destinations`, { headers: { 'exp-api-key': key, Accept: 'application/json;version=2.0', 'Accept-Language': 'en-US' } });
+  if (!r.ok) return DESTS?.list || [];
+  const j = (await r.json()) as { destinations?: Dest[] };
+  DESTS = { at: Date.now(), list: j.destinations || [] };
+  return DESTS.list;
+}
+
+function findDest(list: Dest[], q: string, country: string): Dest | undefined {
+  const byId = new Map(list.map((d) => [d.destinationId, d]));
+  const inCountry = (d: Dest) => {
+    let p: Dest | undefined = d;
+    for (let i = 0; i < 6 && p; i++) {
+      if (norm(p.name) === norm(country)) return true;
+      p = p.parentDestinationId ? byId.get(p.parentDestinationId) : undefined;
+    }
+    return false;
+  };
+  const nq = norm(q);
+  const cands = list.filter((d) => norm(d.name) === nq);
+  return cands.find(inCountry) || cands[0] || (norm(country) === nq ? list.find((d) => norm(d.name) === nq) : undefined);
+}
+
+type P = {
+  productCode?: string;
+  title?: string;
+  images?: { isCover?: boolean; variants?: { url?: string; width?: number; height?: number }[] }[];
+  reviews?: { totalReviews?: number; combinedAverageRating?: number };
+  duration?: { fixedDurationInMinutes?: number; variableDurationFromMinutes?: number; variableDurationToMinutes?: number };
+  pricing?: { summary?: { fromPrice?: number }; currency?: string };
+  productUrl?: string;
+  flags?: string[];
+};
+
+function pickImg(p: P): string {
+  const img = p.images?.find((i) => i.isCover) || p.images?.[0];
+  const v = (img?.variants || []).filter((x) => x.url && (x.width || 0) >= 360).sort((a, b) => (a.width || 0) - (b.width || 0));
+  return v[0]?.url || img?.variants?.[0]?.url || '';
+}
+
+export default async function handler(req: Request) {
+  const key = (globalThis as unknown as { process?: { env?: Record<string, string | undefined> } }).process?.env?.VIATOR_API_KEY;
+  if (!key) return json({ ok: false, reason: 'no_key' }, 200, 's-maxage=300');
+  const u = new URL(req.url);
+  const q = (u.searchParams.get('q') || '').slice(0, 80);
+  const country = (u.searchParams.get('country') || '').slice(0, 60);
+  const lang = LANGS[u.searchParams.get('lang') || ''] || 'en-US';
+  const n = Math.min(24, Math.max(4, Number(u.searchParams.get('n')) || 12));
+  if (!q) return json({ ok: false, reason: 'no_query' }, 400, 's-maxage=60');
+  const headers = { 'exp-api-key': key, Accept: 'application/json;version=2.0', 'Accept-Language': lang, 'Content-Type': 'application/json' };
+  try {
+    let products: P[] = [];
+    const dest = findDest(await destinations(key), q, country);
+    if (dest) {
+      const r = await fetch(`${BASE}/products/search`, {
+        method: 'POST',
+        headers,
+        body: JSON.stringify({ filtering: { destination: String(dest.destinationId) }, sorting: { sort: 'TRAVELER_RATING', order: 'DESCENDING' }, pagination: { start: 1, count: n }, currency: 'EUR' })
+      });
+      if (r.ok) products = ((await r.json()) as { products?: P[] }).products || [];
+    }
+    if (!products.length) {
+      const r = await fetch(`${BASE}/search/freetext`, {
+        method: 'POST',
+        headers,
+        body: JSON.stringify({ searchTerm: country && norm(country) !== norm(q) ? `${q} ${country}` : q, searchTypes: [{ searchType: 'PRODUCTS', pagination: { start: 1, count: n } }], currency: 'EUR' })
+      });
+      if (r.ok) products = ((await r.json()) as { products?: { results?: P[] } }).products?.results || [];
+    }
+    const items = products
+      .filter((p) => p.title && p.productUrl)
+      .map((p) => {
+        const d = p.duration || {};
+        const mins = d.fixedDurationInMinutes || d.variableDurationFromMinutes || 0;
+        return {
+          id: p.productCode,
+          title: p.title,
+          img: pickImg(p),
+          rating: p.reviews?.combinedAverageRating ? Math.round(p.reviews.combinedAverageRating * 10) / 10 : null,
+          reviews: p.reviews?.totalReviews || 0,
+          mins,
+          price: p.pricing?.summary?.fromPrice ?? null,
+          cur: p.pricing?.currency || 'EUR',
+          free: (p.flags || []).includes('FREE_CANCELLATION'),
+          url: p.productUrl
+        };
+      });
+    return json({ ok: true, dest: dest?.name || null, items });
+  } catch {
+    return json({ ok: false, reason: 'error' }, 200, 's-maxage=120');
+  }
+}
