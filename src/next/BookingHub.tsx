@@ -13,7 +13,8 @@ import { getCrossRate } from '../data/currencyRates';
 import { tpLinks, tpLogo, stay22, s22Flights, s22Cars, gygLink, RAYNA_COUNTRIES, STAY22_AID } from '../data/tpPartners';
 import { TOURS, PACKAGES, LIVE } from '../data/tours';
 import ESIM from '../data/esimPrices.json';
-import { TRANSFER_ROUTES, kiwiRouteUrl, SCOOTER_CITIES, scooterUrl } from '../data/transferRoutes';
+import { TRANSFER_ROUTES, kiwiRouteUrl, scooterUrl } from '../data/transferRoutes';
+import { CITIES, PRICES_CHECKED, SAFETYWING_4W_USD, carCityUrl, type CarClass } from '../data/cityPrices';
 import { thirdPartyAllowed } from '../utils/consent';
 
 /* ---------- Yolculuk bilgisi: nereden, tarihler, kişi (cihazda saklanır, tüm ülke sayfalarında ortak) ---------- */
@@ -130,7 +131,12 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
   const fmtDay = (s: string) => new Date(`${s}T12:00:00`).toLocaleDateString(loc, { day: 'numeric', month: 'short', weekday: 'short' });
   const nights = nightsOf(trip);
   const fromIata = (GEO_DATA[trip.from]?.mainHub || '').split('/')[0];
-  const toIata = (GEO_DATA[code]?.mainHub || '').split('/')[0];
+  // Şehir seçici: seçilen şehir uçuş, otel, tur, transfer, araç ve scooter bölümlerini birlikte değiştirir
+  const cities = CITIES[code] || [];
+  const [cityId, setCityId] = useState('');
+  useEffect(() => setCityId(''), [code]);
+  const city = cities.find((c) => c.id === cityId) || cities[0];
+  const toIata = city?.iata || (GEO_DATA[code]?.mainHub || '').split('/')[0];
   const countryEn = getCountryName(code, 'en');
   const geoEn = useMemo(() => getCountryGeography(code, 'en'), [code]);
   const geoLoc = useMemo(() => getCountryGeography(code, language), [code, language]);
@@ -167,6 +173,7 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
 
   // Otel: başkent + büyük şehirler + turistik bölgeler
   const areas = useMemo(() => {
+    if ((CITIES[code] || []).length > 1) return (CITIES[code] || []).map((c) => ({ en: c.en, name: c.en }));
     const en = [geoEn.capital, ...geoEn.majorCities, ...geoEn.touristRegions];
     const lc = [geoLoc.capital, ...geoLoc.majorCities, ...geoLoc.touristRegions];
     const out: { en: string; name: string }[] = [];
@@ -174,7 +181,7 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
       if (e && !out.some((o) => o.en === e) && out.length < 4) out.push({ en: e, name: lc[i] || e });
     });
     return out;
-  }, [geoEn, geoLoc]);
+  }, [geoEn, geoLoc, code]);
   const hq = (place: string) => ({ address: `${place}, ${countryEn}`, checkin: trip.d1, checkout: trip.d2, adults: trip.n, campaign: `cp_${code.toLowerCase()}` });
   const hotelPicks: PickItem[] = [
     { id: 'booking', url: stay22('booking', hq(cityEn)) },
@@ -264,6 +271,27 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
     setHotelArea('');
     setTourArea('');
   }, [code]);
+  const pickCity = (id: string) => {
+    const c = cities.find((x) => x.id === id);
+    setCityId(id);
+    if (c) {
+      setHotelArea(c.en);
+      setTourArea(c.en);
+    }
+  };
+  const routes = (TRANSFER_ROUTES[code] || []).filter((r) => !cityId || !r.city || r.city === cityId);
+  const shownRoutes = routes.length ? routes : TRANSFER_ROUTES[code] || [];
+  const eurTo = (v: number) => money(v * getCrossRate('EUR', cur));
+  const checked = new Date(`${PRICES_CHECKED}T12:00:00`).toLocaleDateString(loc, { day: 'numeric', month: 'short' });
+  const insDays = nights + 1;
+  const insUsd = Math.round(((SAFETYWING_4W_USD / 28) * Math.max(7, insDays)) * trip.n * 100) / 100;
+  const carLabel: Record<CarClass, string> = {
+    mini: l('Mini', 'Mini', 'Mini', 'Mini', 'Мини'),
+    economy: l('Ekonomik', 'Economy', 'Economy', 'Económico', 'Эконом'),
+    compact: l('Kompakt', 'Compact', 'Kompakt', 'Compacto', 'Компакт'),
+    intermediate: l('Orta sınıf', 'Intermediate', 'Mittelklasse', 'Intermedio', 'Средний'),
+    standard: l('Standart / SUV', 'Standard / SUV', 'Standard / SUV', 'Estándar / SUV', 'Стандарт / SUV')
+  };
 
   return (
     <div className="vz-bk">
@@ -276,6 +304,18 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
         <a href="#bk-car" onClick={jump}>{l('Araç', 'Car', 'Mietwagen', 'Coche', 'Авто')}</a>
         <a href="#bk-ins" onClick={jump}>{l('Sigorta', 'Insurance', 'Versicherung', 'Seguro', 'Страховка')}</a>
       </nav>
+
+      {cities.length > 1 && (
+        <div className="vz-bk-city">
+          <b>{l('Hangi şehir?', 'Which city?', 'Welche Stadt?', '¿Qué ciudad?', 'Какой город?')}</b>
+          <div className="vz-bk-chips" role="tablist" aria-label={l('Şehir', 'City', 'Stadt', 'Ciudad', 'Город')}>
+            {cities.map((c) => (
+              <button key={c.id} type="button" role="tab" aria-selected={city?.id === c.id} className={city?.id === c.id ? 'on' : ''} onClick={() => pickCity(c.id)}>{c.en}</button>
+            ))}
+          </div>
+          <small>{l('Uçuş, otel, tur, transfer, araç ve motor fiyatları seçtiğin şehre göre değişir.', 'Flights, hotels, tours, transfers, cars and bikes follow the city you pick.', 'Flüge, Hotels, Touren, Transfers, Autos und Roller richten sich nach der Stadt.', 'Vuelos, hoteles, tours, traslados, coches y motos según la ciudad.', 'Рейсы, отели, туры, трансферы, авто и байки — по выбранному городу.')}</small>
+        </div>
+      )}
 
       {trip.from !== code && fromIata && toIata && (
         <Sec id="bk-flight" icon="plane" title={l(`${getCountryName(trip.from, language)} → ${getCountryName(code, language)} uçuşları`, `Flights ${getCountryName(trip.from, 'en')} → ${getCountryName(code, 'en')}`, `Flüge ${getCountryName(trip.from, language)} → ${getCountryName(code, language)}`, `Vuelos ${getCountryName(trip.from, language)} → ${getCountryName(code, language)}`, `Перелёт ${getCountryName(trip.from, language)} → ${getCountryName(code, language)}`)} note={l('Fiyatlar Aviasales’te son günlerde bulunan en düşük fiyatlar, kişi başı; birkaç saatte bir yenilenir. Kesin fiyat ödeme sayfasında.', 'Lowest fares seen on Aviasales recently, per person; refreshed every few hours. Final price at checkout.', 'Niedrigste kürzlich gesehene Preise auf Aviasales, pro Person; alle paar Stunden aktualisiert.', 'Tarifas más bajas vistas en Aviasales, por persona; se actualizan cada pocas horas.', 'Минимальные цены Aviasales, на человека; обновляются каждые несколько часов.')}>
@@ -383,11 +423,11 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
       </Sec>
 
       <Sec id="bk-transfer" icon="car" title={l(`Havalimanı transferi${toIata ? ` (${toIata})` : ''}`, `Airport transfer${toIata ? ` (${toIata})` : ''}`, `Flughafentransfer${toIata ? ` (${toIata})` : ''}`, `Traslado al aeropuerto${toIata ? ` (${toIata})` : ''}`, `Трансфер из аэропорта${toIata ? ` (${toIata})` : ''}`)}>
-        {(TRANSFER_ROUTES[code] || []).length > 0 && (
+        {shownRoutes.length > 0 && (
           <>
             <b className="vz-bk-op">Kiwitaxi</b>
             <div className="vz-bk-fares">
-              {(TRANSFER_ROUTES[code] || []).map((r) => (
+              {shownRoutes.map((r) => (
                 <a key={r.slug} className="vz-qd-fare" href={kiwiRouteUrl(code, r.slug, language)} target="_blank" rel="noopener noreferrer sponsored">
                   <b>~{usdTo(r.usd)}</b>
                   <span>{r.from} ({r.iata}) → {r.to}</span>
@@ -433,19 +473,43 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
 
       <div className="vz-bk-two">
         <Sec id="bk-car" icon="car" title={l('Araç ve scooter kiralama', 'Car & scooter rental', 'Auto & Roller mieten', 'Coches y motos', 'Аренда авто и скутеров')}>
-          {(SCOOTER_CITIES[code] || []).length > 0 && (
+          {city?.car?.usd && (
             <>
-              <b className="vz-bk-op">{l('Motor ve scooter', 'Motorbikes & scooters', 'Motorräder & Roller', 'Motos y scooters', 'Мотоциклы и скутеры')} · Rentalmotorbike</b>
-              <div className="vz-bk-chips sm">
-                {(SCOOTER_CITIES[code] || []).map((c) => (
-                  <a key={c.slug} href={scooterUrl(c.slug)} target="_blank" rel="noopener noreferrer sponsored">🛵 {c.name} ›</a>
+              <b className="vz-bk-op">{city.en} · EconomyBookings · {l('günlük, yaklaşık', 'per day, approx.', 'pro Tag, ca.', 'por día, aprox.', 'в день, ок.')}</b>
+              <div className="vz-bk-fares">
+                {(Object.entries(city.car.usd) as [CarClass, number][]).sort((a, b) => a[1] - b[1]).slice(0, 4).map(([k, v], i) => (
+                  <a key={k} className={`vz-qd-fare${i === 0 ? ' best' : ''}`} href={carCityUrl(city.car!.path)} target="_blank" rel="noopener noreferrer sponsored">
+                    <b>~{usdTo(v)}</b>
+                    <span>{carLabel[k]}</span>
+                    <small>{l('Araçları gör', 'See cars', 'Autos ansehen', 'Ver coches', 'Смотреть')} ›</small>
+                  </a>
                 ))}
               </div>
             </>
           )}
+          {city?.car && !city.car.usd && (
+            <a className="vz-bk-cta" href={carCityUrl(city.car.path)} target="_blank" rel="noopener noreferrer sponsored">{l(`${city.en} araç kiralama fiyatlarını gör`, `See car rental prices in ${city.en}`, `Mietwagenpreise in ${city.en}`, `Precios de alquiler en ${city.en}`, `Цены аренды авто: ${city.en}`)} <AdTag /></a>
+          )}
+          {cities.some((c) => c.moto) && (
+            <>
+              <b className="vz-bk-op">{l('Motor ve scooter', 'Motorbikes & scooters', 'Motorräder & Roller', 'Motos y scooters', 'Мотоциклы и скутеры')} · Rentalmotorbike{city?.moto?.eur ? ` · ${city.en}: ${l('günlüğü', 'from', 'ab', 'desde', 'от')} ~${eurTo(city.moto.eur)}${l("'den", '/day', '/Tag', '/día', '/день')}` : ''}</b>
+              <div className="vz-bk-chips sm">
+                {cities.filter((c) => c.moto).map((c) => (
+                  <a key={c.id} className={c.id === city?.id ? 'on' : ''} href={scooterUrl(c.moto!.slug)} target="_blank" rel="noopener noreferrer sponsored">🛵 {c.en}{c.moto!.eur ? ` · ~${eurTo(c.moto!.eur)}` : ''} ›</a>
+                ))}
+              </div>
+            </>
+          )}
+          <small className="vz-bk-checked">{l(`Fiyatlar ${checked} tarihinde ortak sitelerden alındı; kesin fiyat tarihe göre ortak sitede.`, `Prices checked on ${checked}; final price on the partner site.`, `Preise geprüft am ${checked}; Endpreis beim Partner.`, `Precios revisados el ${checked}; precio final en el sitio del socio.`, `Цены проверены ${checked}; итог — на сайте партнёра.`)}</small>
           <Picks label={l(`${dates}:`, `${dates}:`, `${dates}:`, `${dates}:`, `${dates}:`)} items={carPicks} k={`c${code}${trip.d1}`} />
         </Sec>
         <Sec id="bk-ins" icon="shield" title={l('Seyahat sigortası', 'Travel insurance', 'Reiseversicherung', 'Seguro de viaje', 'Страховка')}>
+          <a className="vz-qd-fare best vz-ins-card" href={tpLinks.safetywing()} target="_blank" rel="noopener noreferrer sponsored">
+            <em>SafetyWing Nomad Insurance</em>
+            <b>~{usdTo(insUsd)}</b>
+            <span>{l(`${insDays} gün · ${trip.n} kişi · 10–39 yaş`, `${insDays} days · ${trip.n} people · age 10–39`, `${insDays} Tage · ${trip.n} Pers. · 10–39 J.`, `${insDays} días · ${trip.n} pers. · 10–39 años`, `${insDays} дн. · ${trip.n} чел. · 10–39 лет`)}</span>
+            <small>{l('Toplam, ABD hariç dünya geneli. Yaş artınca fiyat artar.', 'Total, worldwide excl. US. Price rises with age.', 'Gesamt, weltweit ohne USA. Preis steigt mit dem Alter.', 'Total, mundial sin EE. UU. Sube con la edad.', 'Итого, весь мир кроме США. Дороже с возрастом.')} ›</small>
+          </a>
           <Picks label={l(`${nights + 1} gün · ${trip.n} kişi:`, `${nights + 1} days · ${trip.n} people:`, `${nights + 1} Tage · ${trip.n} Personen:`, `${nights + 1} días · ${trip.n} personas:`, `${nights + 1} дн. · ${trip.n} чел.:`)} items={insPicks} k={`i${code}`} />
         </Sec>
       </div>

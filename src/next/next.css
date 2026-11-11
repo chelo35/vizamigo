@@ -1300,3 +1300,11 @@ button.vz-tb-f { cursor: pointer; }
 .vz-fl-cal.on { background: var(--rd-sea, #0b7287); color: #fff; }
 .vz-fl-calbox { margin-bottom: 12px; }
 .vz-fl-tools .vz-bk-toggle { margin: 0; }
+
+/* Şehir seçici ve fiyat notları */
+.vz-bk-city { display: grid; gap: 8px; padding: 14px 16px; border-radius: 18px; background: var(--rd-card, #fff); border: 1px solid var(--rd-line, #dfe7e8); }
+.vz-bk-city > b { font-size: 15px; }
+.vz-bk-city small, .vz-bk-checked { font-size: 12px; color: var(--rd-muted, #5b6b70); }
+.vz-bk-checked { display: block; margin-top: 6px; }
+.vz-bk-chips a.on { background: var(--rd-sea, #0b7287); border-color: var(--rd-sea, #0b7287); color: #fff; }
+.vz-ins-card { margin-bottom: 10px; }
