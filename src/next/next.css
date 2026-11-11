@@ -1255,3 +1255,7 @@ button.vz-tb-f { cursor: pointer; }
 @media (min-width: 900px) { .vz-consent { bottom: 20px; left: auto; right: 20px; } }
 .vz-s22-ask { min-height: 220px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; padding: 20px; text-align: center; }
 .vz-s22-ask p { margin: 0; font-size: 14px; color: var(--rd-muted); max-width: 420px; }
+.vz-bk-filters { display: flex; flex-direction: column; gap: 8px; }
+.vz-bk-chips.sm button { min-height: 36px; font-size: 13px; padding: 0 12px; }
+.vz-bk-toggle { display: inline-flex; align-items: center; gap: 8px; min-height: 36px; font-size: 13.5px; color: var(--rd-fg); cursor: pointer; }
+.vz-bk-toggle input { width: 18px; height: 18px; accent-color: var(--rd-sea, #0b7287); }

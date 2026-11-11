@@ -227,6 +227,15 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
   const [hotelView, setHotelView] = useState<'listview' | 'map'>('listview');
+  const [hotelPreset, setHotelPreset] = useState<'all' | 'budget' | 'rated' | 'stars'>('all');
+  const [priceTotal, setPriceTotal] = useState(false);
+  const budgetMax = language === 'tr' ? 3500 : 80;
+  const hotelExtra: Record<string, string> = {
+    priceper: priceTotal ? 'total' : 'nightly',
+    ...(hotelPreset === 'budget' ? { max: String(priceTotal ? budgetMax * nightsOf(trip) : budgetMax) } : {}),
+    ...(hotelPreset === 'rated' ? { minguestrating: '8' } : {}),
+    ...(hotelPreset === 'stars' ? { minstarrating: '4' } : {})
+  };
   const [hotelArea, setHotelArea] = useState('');
   const [tourArea, setTourArea] = useState('');
   useEffect(() => {
@@ -278,7 +287,23 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
           <button type="button" aria-pressed={hotelView === 'listview'} className={hotelView === 'listview' ? 'on' : ''} onClick={() => setHotelView('listview')}><Icon name="doc" size={16} duo={false} />{l('Liste', 'List', 'Liste', 'Lista', 'Список')}</button>
           <button type="button" aria-pressed={hotelView === 'map'} className={hotelView === 'map' ? 'on' : ''} onClick={() => setHotelView('map')}><Icon name="map" size={16} duo={false} />{l('Harita', 'Map', 'Karte', 'Mapa', 'Карта')}</button>
         </div>
-        <Stay22Frame view={hotelView} mode="accommodation" address={`${hotelArea || areas[0]?.en || cityEn}, ${countryEn}`} trip={trip} campaign={`cp_${code.toLowerCase()}_map`} title={l('Otel haritası ve fiyatlar', 'Hotel map and prices', 'Hotelkarte und Preise', 'Mapa de hoteles y precios', 'Карта отелей и цены')} />
+        <div className="vz-bk-filters">
+          <div className="vz-bk-chips sm" role="group" aria-label={l('Hızlı seçim', 'Quick picks', 'Schnellauswahl', 'Selección rápida', 'Быстрый выбор')}>
+            {([
+              ['all', l('Tümü', 'All', 'Alle', 'Todos', 'Все')],
+              ['budget', l(`Ekonomik (gecelik ${budgetMax.toLocaleString('tr-TR')} ₺ altı)`, `Budget (under ${budgetMax} €/night)`, `Günstig (unter ${budgetMax} €/Nacht)`, `Económico (menos de ${budgetMax} €/noche)`, `Эконом (до ${budgetMax} $/ночь)`)],
+              ['rated', l('Misafir puanı 8+', 'Guest rating 8+', 'Gästebewertung 8+', 'Nota 8+', 'Оценка 8+')],
+              ['stars', l('4–5 yıldız', '4–5 stars', '4–5 Sterne', '4–5 estrellas', '4–5 звёзд')]
+            ] as const).map(([k, t]) => (
+              <button key={k} type="button" aria-pressed={hotelPreset === k} className={hotelPreset === k ? 'on' : ''} onClick={() => setHotelPreset(k)}>{t}</button>
+            ))}
+          </div>
+          <label className="vz-bk-toggle">
+            <input type="checkbox" checked={priceTotal} onChange={(e) => setPriceTotal(e.target.checked)} />
+            <span>{l(`Toplam fiyatı göster (${nights} gece, vergiler dahil)`, `Show total price (${nights} nights, taxes incl.)`, `Gesamtpreis zeigen (${nights} Nächte, inkl. Steuern)`, `Precio total (${nights} noches, impuestos incl.)`, `Итоговая цена (${nights} ноч., с налогами)`)}</span>
+          </label>
+        </div>
+        <Stay22Frame view={hotelView} extra={hotelExtra} mode="accommodation" address={`${hotelArea || areas[0]?.en || cityEn}, ${countryEn}`} trip={trip} campaign={`cp_${code.toLowerCase()}_map`} title={l('Otel haritası ve fiyatlar', 'Hotel map and prices', 'Hotelkarte und Preise', 'Mapa de hoteles y precios', 'Карта отелей и цены')} />
         <Picks label={l('Otel sitesini seç:', 'Choose a hotel site:', 'Hotelseite wählen:', 'Elige un sitio:', 'Выберите сайт:')} items={hotelPicks} k={`h${code}${trip.d1}${trip.d2}${trip.n}`} />
       </Sec>
 
@@ -337,7 +362,7 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
 
 /** Stay22 harita vitrini: fotoğraflı, tarihli canlı fiyatlar. Bölüme yaklaşınca yüklenir. */
 const S22_LANG = new Set(['tr', 'en', 'de', 'es']);
-export const Stay22Frame: React.FC<{ mode: 'accommodation' | 'experience'; address: string; trip: Trip; campaign: string; title: string; view?: 'listview' | 'map' }> = ({ mode, address, trip, campaign, title, view = 'listview' }) => {
+export const Stay22Frame: React.FC<{ mode: 'accommodation' | 'experience'; address: string; trip: Trip; campaign: string; title: string; view?: 'listview' | 'map'; extra?: Record<string, string> }> = ({ mode, address, trip, campaign, title, view = 'listview', extra }) => {
   const { language } = useI18n();
   const ref = React.useRef<HTMLDivElement>(null);
   const [on, setOn] = useState(false);
@@ -380,6 +405,7 @@ export const Stay22Frame: React.FC<{ mode: 'accommodation' | 'experience'; addre
     maincolor: '0b7287',
     ljs: S22_LANG.has(language) ? language : 'en',
     currency: language === 'tr' ? 'TRY' : language === 'ru' ? 'USD' : 'EUR',
+    ...(extra || {}),
     viewmode: view,
     ...(view === 'listview' ? { listviewexpand: 'true' } : {}),
     zoom: '12',
