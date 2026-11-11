@@ -22,3 +22,14 @@ export const TRANSFER_ROUTES: Record<string, TransferRoute[]> = {
 const KIWI_LANGS = new Set(['en', 'de', 'es', 'ru']);
 export const kiwiRouteUrl = (code: string, slug: string, lang: string) =>
   `https://kiwitaxi.com/${KIWI_LANGS.has(lang) ? lang : 'en'}/${KIWI_COUNTRY[code]}/${slug}`;
+
+/** Motor/scooter kiralama: Rentalmotorbike (Daisycon) şehir sayfaları; tıklayınca o şehrin kiralama listesi açılır */
+export const SCOOTER_CITIES: Record<string, { slug: string; name: string }[]> = {
+  TH: [
+    { slug: 'phuket', name: 'Phuket' },
+    { slug: 'bangkok', name: 'Bangkok' },
+    { slug: 'chiang-mai', name: 'Chiang Mai' },
+    { slug: 'pattaya', name: 'Pattaya' }
+  ]
+};
+export const scooterUrl = (slug: string) => `https://partners.rentalmotorbike.com/c/?si=22012&li=1928984&wi=442794&dl=${encodeURIComponent(`motorcycle-rental-${slug}`)}`;

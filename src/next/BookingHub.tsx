@@ -12,7 +12,7 @@ import { getCrossRate } from '../data/currencyRates';
 import { tpLinks, tpLogo, stay22, s22Flights, s22Cars, gygLink, RAYNA_COUNTRIES, STAY22_AID } from '../data/tpPartners';
 import { TOURS, PACKAGES, LIVE } from '../data/tours';
 import ESIM from '../data/esimPrices.json';
-import { TRANSFER_ROUTES, kiwiRouteUrl } from '../data/transferRoutes';
+import { TRANSFER_ROUTES, kiwiRouteUrl, SCOOTER_CITIES, scooterUrl } from '../data/transferRoutes';
 import { thirdPartyAllowed } from '../utils/consent';
 
 /* ---------- Yolculuk bilgisi: nereden, tarihler, kişi (cihazda saklanır, tüm ülke sayfalarında ortak) ---------- */
@@ -211,7 +211,7 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
       alive = false;
     };
   }, [code]);
-  const esimMin = Math.min(...esim.map((p) => p[2]), ...flexi.map((p) => p[2]));
+  const esimMin = Math.min(...(inTR ? [] : esim.map((p) => p[2])), ...flexi.map((p) => p[2]));
   const esimPicks: PickItem[] = [
     { id: 'nomad', url: tpLinks.nomad() },
     { id: 'flexiroam', url: tpLinks.flexiroam() },
@@ -421,6 +421,16 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
 
       <div className="vz-bk-two">
         <Sec id="bk-car" icon="car" title={l('Araç ve scooter kiralama', 'Car & scooter rental', 'Auto & Roller mieten', 'Coches y motos', 'Аренда авто и скутеров')}>
+          {(SCOOTER_CITIES[code] || []).length > 0 && (
+            <>
+              <b className="vz-bk-op">{l('Motor ve scooter', 'Motorbikes & scooters', 'Motorräder & Roller', 'Motos y scooters', 'Мотоциклы и скутеры')} · Rentalmotorbike</b>
+              <div className="vz-bk-chips sm">
+                {(SCOOTER_CITIES[code] || []).map((c) => (
+                  <a key={c.slug} href={scooterUrl(c.slug)} target="_blank" rel="noopener noreferrer sponsored">🛵 {c.name} ›</a>
+                ))}
+              </div>
+            </>
+          )}
           <Picks label={l(`${dates}:`, `${dates}:`, `${dates}:`, `${dates}:`, `${dates}:`)} items={carPicks} k={`c${code}${trip.d1}`} />
         </Sec>
         <Sec id="bk-ins" icon="shield" title={l('Seyahat sigortası', 'Travel insurance', 'Reiseversicherung', 'Seguro de viaje', 'Страховка')}>
