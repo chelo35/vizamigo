@@ -202,6 +202,16 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
     return want.map(pick).filter((x, i, arr): x is Pkg => !!x && arr.findIndex((y) => y && y[3] === x[3]) === i);
   }, [code, nights]);
   const usdTo = (v: number) => money(v * getCrossRate('USD', cur));
+  // FlexiRoam eSIM paketleri (Daisycon ürün verisi; ayrı parça olarak yalnızca gerekince yüklenir)
+  const [flexi, setFlexi] = useState<[number, number, number, string][]>([]);
+  useEffect(() => {
+    let alive = true;
+    import('../data/esimFlexi.json').then((m) => alive && setFlexi(((m.default as unknown as { p: Record<string, [number, number, number, string][]> }).p[code]) || [])).catch(() => {});
+    return () => {
+      alive = false;
+    };
+  }, [code]);
+  const esimMin = Math.min(...esim.map((p) => p[2]), ...flexi.map((p) => p[2]));
   const esimPicks: PickItem[] = [
     { id: 'nomad', url: tpLinks.nomad() },
     { id: 'flexiroam', url: tpLinks.flexiroam() },
@@ -378,19 +388,32 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
         <Picks label={l('Karşılamalı, sabit fiyatlı transfer:', 'Meet & greet, fixed price:', 'Mit Abholung, Festpreis:', 'Con recogida, precio fijo:', 'С встречей, фиксированная цена:')} items={transferPicks} k={`tr${code}`} />
       </Sec>
 
-      <Sec id="bk-esim" icon="phone" title={l('İnternet (eSIM)', 'Mobile data (eSIM)', 'Mobile Daten (eSIM)', 'Datos móviles (eSIM)', 'Мобильный интернет (eSIM)')} note={esim.length ? l('Yukarıdaki fiyatlar Airalo paketleri, günlük güncellenir. Diğer firmaların paket ve fiyatları kendi sitelerinde açılır.', 'Prices above are Airalo plans, updated daily. Other providers show their plans on their own sites.', 'Preise oben: Airalo-Tarife, täglich aktualisiert. Andere Anbieter zeigen ihre Tarife auf ihrer Seite.', 'Precios de planes Airalo, actualizados a diario. Otros proveedores muestran sus planes en su web.', 'Цены выше — тарифы Airalo, обновляются ежедневно. Тарифы других — на их сайтах.') : undefined}>
+      <Sec id="bk-esim" icon="phone" title={l('İnternet (eSIM)', 'Mobile data (eSIM)', 'Mobile Daten (eSIM)', 'Datos móviles (eSIM)', 'Мобильный интернет (eSIM)')} note={esim.length || flexi.length ? l('Yukarıdaki fiyatlar Airalo ve FlexiRoam paketleri, düzenli güncellenir. Diğer firmaların paketleri kendi sitelerinde açılır.', 'Prices above are Airalo and FlexiRoam plans, updated regularly. Other providers show their plans on their own sites.', 'Preise oben: Airalo-Tarife, täglich aktualisiert. Andere Anbieter zeigen ihre Tarife auf ihrer Seite.', 'Precios de planes Airalo, actualizados a diario. Otros proveedores muestran sus planes en su web.', 'Цены выше — тарифы Airalo, обновляются ежедневно. Тарифы других — на их сайтах.') : undefined}>
         {esim.length > 0 && <b className="vz-bk-op">Airalo</b>}
         {esim.length > 0 && (
           <div className="vz-bk-fares">
             {esim.map((p) =>
               React.createElement(
                 inTR ? 'div' : 'a',
-                { key: p[3], className: 'vz-qd-fare', ...(inTR ? {} : { href: `https://www.airalo.com/${p[3]}`, target: '_blank', rel: 'noopener noreferrer sponsored' }) },
+                { key: p[3], className: `vz-qd-fare${!inTR && p[2] === esimMin ? ' best' : ''}`, ...(inTR ? {} : { href: `https://www.airalo.com/${p[3]}`, target: '_blank', rel: 'noopener noreferrer sponsored' }) },
                 <b>{usdTo(p[2])}</b>,
                 <span>{p[0] ? `${p[0]} GB` : l('Sınırsız', 'Unlimited', 'Unbegrenzt', 'Ilimitado', 'Безлимит')} · {p[1]} {l('gün', 'days', 'Tage', 'días', 'дн.')}</span>,
                 <small>{inTR ? l('Airalo · yurt dışında açılır', 'Airalo', 'Airalo', 'Airalo', 'Airalo') : 'Airalo ›'}</small>
               )
             )}
+          </div>
+        )}
+        {flexi.length > 0 && <b className="vz-bk-op">FlexiRoam</b>}
+        {flexi.length > 0 && (
+          <div className="vz-bk-fares">
+            {flexi.map((p) => (
+              <a key={p[3]} className={`vz-qd-fare${p[2] === esimMin ? ' best' : ''}`} href={p[3]} target="_blank" rel="noopener noreferrer sponsored">
+                {p[2] === esimMin && <em>{l('En ucuz', 'Cheapest', 'Am günstigsten', 'Más barato', 'Дешевле всего')}</em>}
+                <b>{usdTo(p[2])}</b>
+                <span>{p[0]} GB · {p[1]} {l('gün', 'days', 'Tage', 'días', 'дн.')}</span>
+                <small>FlexiRoam ›</small>
+              </a>
+            ))}
           </div>
         )}
         <Picks label={l('eSIM firmasını seç:', 'Choose your eSIM:', 'eSIM wählen:', 'Elige tu eSIM:', 'Выберите eSIM:')} items={esimPicks} k={`e${code}`} />
