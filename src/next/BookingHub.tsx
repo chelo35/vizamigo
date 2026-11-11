@@ -96,7 +96,8 @@ const AIRLINES: Record<string, string> = {
   SV: 'Saudia', GF: 'Gulf Air', WY: 'Oman Air', MS: 'EgyptAir', TG: 'Thai Airways', FD: 'Thai AirAsia', WE: 'Thai Smile', DD: 'Nok Air', SL: 'Thai Lion Air', PG: 'Bangkok Airways',
   SQ: 'Singapore Airlines', TR: 'Scoot', MH: 'Malaysia Airlines', AK: 'AirAsia', CX: 'Cathay Pacific', CA: 'Air China', MU: 'China Eastern', CZ: 'China Southern', AI: 'Air India', '6E': 'IndiGo',
   UL: 'SriLankan', KC: 'Air Astana', HY: 'Uzbekistan Airways', J2: 'AZAL', LH: 'Lufthansa', LX: 'Swiss', OS: 'Austrian', AF: 'Air France', KL: 'KLM', BA: 'British Airways', IB: 'Iberia',
-  AZ: 'ITA Airways', LO: 'LOT', A3: 'Aegean', FR: 'Ryanair', W6: 'Wizz Air', U2: 'easyJet', VY: 'Vueling', SU: 'Aeroflot', ET: 'Ethiopian', KQ: 'Kenya Airways', RJ: 'Royal Jordanian', ME: 'MEA'
+  AZ: 'ITA Airways', LO: 'LOT', A3: 'Aegean', FR: 'Ryanair', W6: 'Wizz Air', U2: 'easyJet', VY: 'Vueling', SU: 'Aeroflot', ET: 'Ethiopian', KQ: 'Kenya Airways', RJ: 'Royal Jordanian', ME: 'MEA',
+  D7: 'AirAsia X', J9: 'Jazeera Airways', XY: 'flynas', KU: 'Kuwait Airways', OD: 'Batik Air Malaysia', ID: 'Batik Air', VZ: 'Thai VietJet', VJ: 'VietJet Air', '3U': 'Sichuan Airlines', HU: 'Hainan Airlines', BR: 'EVA Air', CI: 'China Airlines', KE: 'Korean Air', OZ: 'Asiana', JL: 'Japan Airlines', NH: 'ANA', PR: 'Philippine Airlines', GA: 'Garuda', VN: 'Vietnam Airlines', BG: 'Biman', PK: 'PIA', IX: 'Air India Express', QZ: 'Indonesia AirAsia', Z2: 'AirAsia Philippines', '8M': 'Myanmar Airways'
 };
 type Pkg = [number, number, number, string];
 const LOC: Record<string, string> = { tr: 'tr-TR', en: 'en-GB', de: 'de-DE', es: 'es-ES', ru: 'ru-RU' };
@@ -424,6 +425,7 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
 
       <Sec id="bk-hotel" icon="bed" title={l('Nerede kalınır?', 'Where to stay', 'Wo übernachten?', 'Dónde alojarse', 'Где остановиться')} note={l(`${nights} gece · ${trip.n} kişi. Fiyatlar seçtiğin tarihlerle ortak sitede açılır.`, `${nights} nights · ${trip.n} guests. Prices open with your dates on the partner site.`, `${nights} Nächte · ${trip.n} Personen. Preise mit deinen Daten beim Partner.`, `${nights} noches · ${trip.n} personas. Precios con tus fechas en el sitio del socio.`, `${nights} ноч. · ${trip.n} гост. Цены на ваши даты на сайте партнёра.`)}>
         <div className="vz-bk-chips" role="tablist" aria-label={l('Bölge', 'Area', 'Gegend', 'Zona', 'Район')}>
+          {hotelArea && !areas.some((a) => a.en === hotelArea) && <button type="button" role="tab" aria-selected className="on">{hotelArea}</button>}
           {areas.map((a) => (
             <button key={a.en} type="button" role="tab" aria-selected={(hotelArea || areas[0]?.en) === a.en} className={(hotelArea || areas[0]?.en) === a.en ? 'on' : ''} onClick={() => setHotelArea(a.en)}>{a.name}</button>
           ))}
@@ -434,7 +436,7 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
               {(['booking', 'agoda', 'expedia', 'hotelscom'] as const).map((id) => (
                 <a key={id} className="vz-hq-card" href={stay22(id, hq((hotelArea || areas[0]?.en || cityEn)))} target="_blank" rel="noopener noreferrer sponsored">
                   <img src={tpLogo(id)} alt="" width={28} height={28} loading="lazy" />
-                  <span><b>{({ booking: 'Booking.com', agoda: 'Agoda', expedia: 'Expedia', hotelscom: 'Hotels.com' } as const)[id]}</b><small>{(areas.find((x) => x.en === (hotelArea || areas[0]?.en))?.name || cityEn)} · {dates} · {trip.n} {l('kişi', 'guests', 'Pers.', 'pers.', 'чел.')}</small></span>
+                  <span><b>{({ booking: 'Booking.com', agoda: 'Agoda', expedia: 'Expedia', hotelscom: 'Hotels.com' } as const)[id]}</b><small>{(areas.find((x) => x.en === (hotelArea || areas[0]?.en))?.name || hotelArea || cityEn)} · {dates} · {trip.n} {l('kişi', 'guests', 'Pers.', 'pers.', 'чел.')}</small></span>
                   <em>{l('Fiyatları gör', 'See prices', 'Preise ansehen', 'Ver precios', 'Цены')} ›</em>
                 </a>
               ))}
