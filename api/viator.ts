@@ -82,7 +82,7 @@ export default async function handler(req: Request) {
       const r = await fetch(`${BASE}/products/search`, {
         method: 'POST',
         headers,
-        body: JSON.stringify({ filtering: { destination: String(dest.destinationId) }, sorting: { sort: 'TRAVELER_RATING', order: 'DESCENDING' }, pagination: { start: 1, count: n }, currency: 'EUR' })
+        body: JSON.stringify({ filtering: { destination: String(dest.destinationId) }, sorting: { sort: 'DEFAULT' }, pagination: { start: 1, count: n }, currency: 'EUR' })
       });
       DBG.searchStatus = r.status;
       if (r.ok) products = ((await r.json()) as { products?: P[] }).products || [];
@@ -117,6 +117,8 @@ export default async function handler(req: Request) {
         };
       });
     if (u.searchParams.get('debug') === '1') return json({ ok: true, dest: dest?.name || null, n: items.length, dbg: DBG }, 200, 's-maxage=0');
+    // Boş sonuç uzun süre CDN'de kalmasın (ör. anahtar yeni etkinleşirken)
+    if (!items.length) return json({ ok: true, dest: dest?.name || null, items }, 200, 's-maxage=300');
     return json({ ok: true, dest: dest?.name || null, items });
   } catch (e) {
     return json({ ok: false, reason: 'error', msg: String(e).slice(0, 200) }, 200, 's-maxage=120');
