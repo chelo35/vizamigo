@@ -12,6 +12,7 @@ const LANGS: Record<string, string> = { de: 'de-DE', es: 'es-ES', en: 'en-US' };
 
 type Dest = { destinationId: number; name: string; type?: string; parentDestinationId?: number };
 let DESTS: { at: number; list: Dest[] } | null = null;
+const DBG: Record<string, unknown> = {};
 
 const json = (body: unknown, status = 200, cache = 's-maxage=43200, stale-while-revalidate=86400') =>
   new Response(JSON.stringify(body), { status, headers: { 'Content-Type': 'application/json; charset=utf-8', 'Cache-Control': `public, max-age=600, ${cache}` } });
@@ -21,8 +22,13 @@ const norm = (s: string) => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,
 async function destinations(key: string): Promise<Dest[]> {
   if (DESTS && Date.now() - DESTS.at < 864e5) return DESTS.list;
   const r = await fetch(`${BASE}/destinations`, { headers: { 'exp-api-key': key, Accept: 'application/json;version=2.0', 'Accept-Language': 'en-US' } });
-  if (!r.ok) return DESTS?.list || [];
+  DBG.destStatus = r.status;
+  if (!r.ok) {
+    DBG.destErr = (await r.text()).slice(0, 300);
+    return DESTS?.list || [];
+  }
   const j = (await r.json()) as { destinations?: Dest[] };
+  DBG.destCount = (j.destinations || []).length;
   DESTS = { at: Date.now(), list: j.destinations || [] };
   return DESTS.list;
 }
@@ -78,7 +84,9 @@ export default async function handler(req: Request) {
         headers,
         body: JSON.stringify({ filtering: { destination: String(dest.destinationId) }, sorting: { sort: 'TRAVELER_RATING', order: 'DESCENDING' }, pagination: { start: 1, count: n }, currency: 'EUR' })
       });
+      DBG.searchStatus = r.status;
       if (r.ok) products = ((await r.json()) as { products?: P[] }).products || [];
+      else DBG.searchErr = (await r.text()).slice(0, 300);
     }
     if (!products.length) {
       const r = await fetch(`${BASE}/search/freetext`, {
@@ -86,7 +94,9 @@ export default async function handler(req: Request) {
         headers,
         body: JSON.stringify({ searchTerm: country && norm(country) !== norm(q) ? `${q} ${country}` : q, searchTypes: [{ searchType: 'PRODUCTS', pagination: { start: 1, count: n } }], currency: 'EUR' })
       });
+      DBG.freeStatus = r.status;
       if (r.ok) products = ((await r.json()) as { products?: { results?: P[] } }).products?.results || [];
+      else DBG.freeErr = (await r.text()).slice(0, 300);
     }
     const items = products
       .filter((p) => p.title && p.productUrl)
@@ -106,8 +116,9 @@ export default async function handler(req: Request) {
           url: p.productUrl
         };
       });
+    if (u.searchParams.get('debug') === '1') return json({ ok: true, dest: dest?.name || null, n: items.length, dbg: DBG }, 200, 's-maxage=0');
     return json({ ok: true, dest: dest?.name || null, items });
-  } catch {
-    return json({ ok: false, reason: 'error' }, 200, 's-maxage=120');
+  } catch (e) {
+    return json({ ok: false, reason: 'error', msg: String(e).slice(0, 200) }, 200, 's-maxage=120');
   }
 }
