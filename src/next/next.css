@@ -1235,3 +1235,17 @@ button.vz-tb-f { cursor: pointer; }
 .vz-s22 { border-radius: 16px; overflow: hidden; border: 1px solid var(--rd-line); background: var(--rd-bg); }
 .vz-s22 iframe { display: block; width: 100%; height: 560px; border: 0; }
 @media (min-width: 760px) { .vz-s22 iframe { height: 600px; } }
+.vz-bk-seg { display: inline-flex; align-self: flex-start; gap: 4px; padding: 3px; border-radius: 12px; background: var(--rd-bg); border: 1px solid var(--rd-line); }
+.vz-bk-seg button { display: inline-flex; align-items: center; gap: 6px; min-height: 36px; padding: 0 12px; border: 0; border-radius: 9px; background: transparent; color: var(--rd-fg); font: inherit; font-size: 13.5px; font-weight: 600; cursor: pointer; }
+.vz-bk-seg button.on { background: var(--rd-surface); color: var(--rd-sea-ink, #0b7287); font-weight: 800; box-shadow: var(--vz-shadow-sm); }
+.vz-bk-op { font-size: 13px; color: var(--rd-muted); margin-bottom: -4px; }
+.vz-s22 { position: relative; }
+.vz-s22-skel { position: absolute; inset: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 12px; padding: 56px 12px 12px; background: var(--rd-bg); align-content: start; }
+.vz-s22-skel > div { display: flex; flex-direction: column; gap: 8px; }
+.vz-s22-skel i, .vz-s22-skel b, .vz-s22-skel s { display: block; border-radius: 10px; background: linear-gradient(90deg, var(--rd-line) 0%, var(--rd-surface) 50%, var(--rd-line) 100%); background-size: 200% 100%; animation: vzShim 1.3s ease-in-out infinite; }
+.vz-s22-skel i { height: 110px; }
+.vz-s22-skel b { height: 14px; width: 85%; }
+.vz-s22-skel s { height: 12px; width: 55%; }
+.vz-s22:not(.ready) iframe { min-height: 560px; }
+@keyframes vzShim { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
+@media (prefers-reduced-motion: reduce) { .vz-s22-skel i, .vz-s22-skel b, .vz-s22-skel s { animation: none; } }

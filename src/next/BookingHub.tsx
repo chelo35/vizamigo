@@ -220,6 +220,12 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
   ];
   const short = (d: string) => new Date(`${d}T12:00:00`).toLocaleDateString(loc, { day: 'numeric', month: 'short' });
   const dates = `${short(trip.d1)} – ${short(trip.d2)}`;
+  const jump = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    const id = e.currentTarget.getAttribute('href')?.slice(1) || '';
+    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
+  const [hotelView, setHotelView] = useState<'listview' | 'map'>('listview');
   const [hotelArea, setHotelArea] = useState('');
   const [tourArea, setTourArea] = useState('');
   useEffect(() => {
@@ -230,13 +236,13 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
   return (
     <div className="vz-bk">
       <nav className="vz-bk-jump" aria-label={l('Kategoriler', 'Categories', 'Kategorien', 'Categorías', 'Категории')}>
-        <a href="#bk-flight">{l('Uçak', 'Flights', 'Flüge', 'Vuelos', 'Авиа')}</a>
-        <a href="#bk-hotel">{l('Otel', 'Hotels', 'Hotels', 'Hoteles', 'Отели')}</a>
-        <a href="#bk-tours">{l('Turlar', 'Tours', 'Touren', 'Tours', 'Туры')}</a>
-        <a href="#bk-transfer">{l('Transfer', 'Transfer', 'Transfer', 'Traslado', 'Трансфер')}</a>
-        <a href="#bk-esim">eSIM</a>
-        <a href="#bk-car">{l('Araç', 'Car', 'Mietwagen', 'Coche', 'Авто')}</a>
-        <a href="#bk-ins">{l('Sigorta', 'Insurance', 'Versicherung', 'Seguro', 'Страховка')}</a>
+        <a href="#bk-flight" onClick={jump}>{l('Uçak', 'Flights', 'Flüge', 'Vuelos', 'Авиа')}</a>
+        <a href="#bk-hotel" onClick={jump}>{l('Otel', 'Hotels', 'Hotels', 'Hoteles', 'Отели')}</a>
+        <a href="#bk-tours" onClick={jump}>{l('Turlar', 'Tours', 'Touren', 'Tours', 'Туры')}</a>
+        <a href="#bk-transfer" onClick={jump}>{l('Transfer', 'Transfer', 'Transfer', 'Traslado', 'Трансфер')}</a>
+        <a href="#bk-esim" onClick={jump}>eSIM</a>
+        <a href="#bk-car" onClick={jump}>{l('Araç', 'Car', 'Mietwagen', 'Coche', 'Авто')}</a>
+        <a href="#bk-ins" onClick={jump}>{l('Sigorta', 'Insurance', 'Versicherung', 'Seguro', 'Страховка')}</a>
       </nav>
 
       {trip.from !== code && fromIata && toIata && (
@@ -267,7 +273,11 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
             <button key={a.en} type="button" role="tab" aria-selected={(hotelArea || areas[0]?.en) === a.en} className={(hotelArea || areas[0]?.en) === a.en ? 'on' : ''} onClick={() => setHotelArea(a.en)}>{a.name}</button>
           ))}
         </div>
-        <Stay22Frame mode="accommodation" address={`${hotelArea || areas[0]?.en || cityEn}, ${countryEn}`} trip={trip} campaign={`cp_${code.toLowerCase()}_map`} title={l('Otel haritası ve fiyatlar', 'Hotel map and prices', 'Hotelkarte und Preise', 'Mapa de hoteles y precios', 'Карта отелей и цены')} />
+        <div className="vz-bk-seg" role="group" aria-label={l('Görünüm', 'View', 'Ansicht', 'Vista', 'Вид')}>
+          <button type="button" aria-pressed={hotelView === 'listview'} className={hotelView === 'listview' ? 'on' : ''} onClick={() => setHotelView('listview')}><Icon name="doc" size={16} duo={false} />{l('Liste', 'List', 'Liste', 'Lista', 'Список')}</button>
+          <button type="button" aria-pressed={hotelView === 'map'} className={hotelView === 'map' ? 'on' : ''} onClick={() => setHotelView('map')}><Icon name="map" size={16} duo={false} />{l('Harita', 'Map', 'Karte', 'Mapa', 'Карта')}</button>
+        </div>
+        <Stay22Frame view={hotelView} mode="accommodation" address={`${hotelArea || areas[0]?.en || cityEn}, ${countryEn}`} trip={trip} campaign={`cp_${code.toLowerCase()}_map`} title={l('Otel haritası ve fiyatlar', 'Hotel map and prices', 'Hotelkarte und Preise', 'Mapa de hoteles y precios', 'Карта отелей и цены')} />
         <Picks label={l('Otel sitesini seç:', 'Choose a hotel site:', 'Hotelseite wählen:', 'Elige un sitio:', 'Выберите сайт:')} items={hotelPicks} k={`h${code}${trip.d1}${trip.d2}${trip.n}`} />
       </Sec>
 
@@ -291,7 +301,8 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
         <Picks label={l('Karşılamalı, sabit fiyatlı transfer:', 'Meet & greet, fixed price:', 'Mit Abholung, Festpreis:', 'Con recogida, precio fijo:', 'С встречей, фиксированная цена:')} items={transferPicks} k={`tr${code}`} />
       </Sec>
 
-      <Sec id="bk-esim" icon="phone" title={l('İnternet (eSIM)', 'Mobile data (eSIM)', 'Mobile Daten (eSIM)', 'Datos móviles (eSIM)', 'Мобильный интернет (eSIM)')} note={esim.length ? l('Paket fiyatları Airalo listesinden, günlük güncellenir.', 'Plan prices from Airalo, updated daily.', 'Preise von Airalo, täglich aktualisiert.', 'Precios de Airalo, actualizados a diario.', 'Цены Airalo, обновляются ежедневно.') : undefined}>
+      <Sec id="bk-esim" icon="phone" title={l('İnternet (eSIM)', 'Mobile data (eSIM)', 'Mobile Daten (eSIM)', 'Datos móviles (eSIM)', 'Мобильный интернет (eSIM)')} note={esim.length ? l('Yukarıdaki fiyatlar Airalo paketleri, günlük güncellenir. Diğer firmaların paket ve fiyatları kendi sitelerinde açılır.', 'Prices above are Airalo plans, updated daily. Other providers show their plans on their own sites.', 'Preise oben: Airalo-Tarife, täglich aktualisiert. Andere Anbieter zeigen ihre Tarife auf ihrer Seite.', 'Precios de planes Airalo, actualizados a diario. Otros proveedores muestran sus planes en su web.', 'Цены выше — тарифы Airalo, обновляются ежедневно. Тарифы других — на их сайтах.') : undefined}>
+        {esim.length > 0 && <b className="vz-bk-op">Airalo</b>}
         {esim.length > 0 && (
           <div className="vz-bk-fares">
             {esim.map((p) =>
@@ -325,10 +336,16 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
 
 /** Stay22 harita vitrini: fotoğraflı, tarihli canlı fiyatlar. Bölüme yaklaşınca yüklenir. */
 const S22_LANG = new Set(['tr', 'en', 'de', 'es']);
-export const Stay22Frame: React.FC<{ mode: 'accommodation' | 'experience'; address: string; trip: Trip; campaign: string; title: string }> = ({ mode, address, trip, campaign, title }) => {
+export const Stay22Frame: React.FC<{ mode: 'accommodation' | 'experience'; address: string; trip: Trip; campaign: string; title: string; view?: 'listview' | 'map' }> = ({ mode, address, trip, campaign, title, view = 'listview' }) => {
   const { language } = useI18n();
   const ref = React.useRef<HTMLDivElement>(null);
   const [on, setOn] = useState(false);
+  const [ready, setReady] = useState(false);
+  useEffect(() => {
+    // sayfa açıldıktan kısa süre sonra arka planda yüklemeye başla, kişi aşağı inince hazır olsun
+    const t = setTimeout(() => setOn(true), 1500);
+    return () => clearTimeout(t);
+  }, []);
   useEffect(() => {
     const el = ref.current;
     if (!el || on) return;
@@ -341,7 +358,7 @@ export const Stay22Frame: React.FC<{ mode: 'accommodation' | 'experience'; addre
         setOn(true);
         io.disconnect();
       }
-    }, { rootMargin: '400px 0px' });
+    }, { rootMargin: '1500px 0px' });
     io.observe(el);
     return () => io.disconnect();
   }, [on]);
@@ -356,15 +373,20 @@ export const Stay22Frame: React.FC<{ mode: 'accommodation' | 'experience'; addre
     maincolor: '0b7287',
     ljs: S22_LANG.has(language) ? language : 'en',
     currency: language === 'tr' ? 'TRY' : language === 'ru' ? 'USD' : 'EUR',
-    viewmode: 'listview',
-    listviewexpand: 'true',
+    viewmode: view,
+    ...(view === 'listview' ? { listviewexpand: 'true' } : {}),
     zoom: '12',
     hidemodeswitcher: 'true',
     hidebrandlogo: 'true'
   });
   return (
-    <div ref={ref} className="vz-s22">
-      {on ? <iframe title={title} src={`https://www.stay22.com/embed/gm?${q.toString()}`} loading="lazy" referrerPolicy="strict-origin-when-cross-origin" /> : <div className="vz-live-skel" aria-hidden="true"><i /><i /><i /></div>}
+    <div ref={ref} className={`vz-s22${ready ? ' ready' : ''}`}>
+      {on && <iframe key={q.toString()} title={title} src={`https://www.stay22.com/embed/gm?${q.toString()}`} referrerPolicy="strict-origin-when-cross-origin" onLoad={() => setTimeout(() => setReady(true), 900)} />}
+      {!ready && (
+        <div className="vz-s22-skel" aria-hidden="true">
+          {[0, 1, 2, 3, 4, 5].map((i) => <div key={i}><i /><b /><s /></div>)}
+        </div>
+      )}
     </div>
   );
 };
