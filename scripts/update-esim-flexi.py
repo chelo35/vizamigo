@@ -5,7 +5,7 @@ FEED = 'https://daisycon.io/datafeed/?media_id=442794&standard_id=14&language_co
 names = json.load(open(os.path.join(ROOT, 'scripts', 'country-names-en.json')))
 alias = {'turkey':'TR','bosnia and herzegovina':'BA','czech republic':'CZ','united states':'US','usa':'US','uk':'GB','united kingdom':'GB','south korea':'KR','korea':'KR','vietnam':'VN','uae':'AE','united arab emirates':'AE','russia':'RU','ivory coast':'CI',"cote d'ivoire":'CI','macau':'MO','hong kong':'HK','taiwan':'TW','laos':'LA','north macedonia':'MK','macedonia':'MK','cape verde':'CV','eswatini':'SZ','swaziland':'SZ','myanmar':'MM','burma':'MM','dr congo':'CD','congo':'CG','palestine':'PS','moldova':'MD','bolivia':'BO','venezuela':'VE','iran':'IR','syria':'SY','tanzania':'TZ'}
 names.update(alias)
-raw = json.loads(urllib.request.urlopen(FEED, timeout=120).read())['datafeed']
+raw = json.loads(urllib.request.urlopen(urllib.request.Request(FEED, headers={'User-Agent': 'curl/8.4.0', 'Accept': '*/*'}), timeout=120).read())['datafeed']
 d = raw['programs'][0]['products']
 out = {}
 for p in d:
