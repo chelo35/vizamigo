@@ -12,6 +12,7 @@ import { getCrossRate } from '../data/currencyRates';
 import { tpLinks, stay22, s22Flights, s22Cars, gygLink, RAYNA_COUNTRIES, STAY22_AID } from '../data/tpPartners';
 import { TOURS, PACKAGES, LIVE } from '../data/tours';
 import ESIM from '../data/esimPrices.json';
+import { thirdPartyAllowed } from '../utils/consent';
 
 /* ---------- Yolculuk bilgisi: nereden, tarihler, kişi (cihazda saklanır, tüm ülke sayfalarında ortak) ---------- */
 
@@ -341,6 +342,12 @@ export const Stay22Frame: React.FC<{ mode: 'accommodation' | 'experience'; addre
   const ref = React.useRef<HTMLDivElement>(null);
   const [on, setOn] = useState(false);
   const [ready, setReady] = useState(false);
+  const [allowed, setAllowed] = useState(thirdPartyAllowed);
+  useEffect(() => {
+    const f = () => setAllowed(thirdPartyAllowed());
+    window.addEventListener('vz:consent', f);
+    return () => window.removeEventListener('vz:consent', f);
+  }, []);
   useEffect(() => {
     // sayfa açıldıktan kısa süre sonra arka planda yüklemeye başla, kişi aşağı inince hazır olsun
     const t = setTimeout(() => setOn(true), 1500);
@@ -381,8 +388,14 @@ export const Stay22Frame: React.FC<{ mode: 'accommodation' | 'experience'; addre
   });
   return (
     <div ref={ref} className={`vz-s22${ready ? ' ready' : ''}`}>
-      {on && <iframe key={q.toString()} title={title} src={`https://www.stay22.com/embed/gm?${q.toString()}`} referrerPolicy="strict-origin-when-cross-origin" onLoad={() => setTimeout(() => setReady(true), 900)} />}
-      {!ready && (
+      {!allowed && (
+        <div className="vz-s22-ask">
+          <p>{language === 'de' ? 'Live-Preise werden vom Partner Stay22 geladen (setzt Cookies).' : language === 'es' ? 'Los precios en vivo los carga el socio Stay22 (usa cookies).' : language === 'ru' ? 'Живые цены загружает партнёр Stay22 (использует cookies).' : language === 'tr' ? 'Canlı fiyatlar iş ortağımız Stay22’den yüklenir (çerez kullanır).' : 'Live prices are loaded from our partner Stay22 (uses cookies).'}</p>
+          <button type="button" className="vz-btn vz-btn-primary sm" onClick={() => setAllowed(true)}>{language === 'de' ? 'Preise laden' : language === 'es' ? 'Cargar precios' : language === 'ru' ? 'Загрузить цены' : language === 'tr' ? 'Fiyatları yükle' : 'Load prices'}</button>
+        </div>
+      )}
+      {allowed && on && <iframe key={q.toString()} title={title} src={`https://www.stay22.com/embed/gm?${q.toString()}`} referrerPolicy="strict-origin-when-cross-origin" onLoad={() => setTimeout(() => setReady(true), 900)} />}
+      {allowed && !ready && (
         <div className="vz-s22-skel" aria-hidden="true">
           {[0, 1, 2, 3, 4, 5].map((i) => <div key={i}><i /><b /><s /></div>)}
         </div>

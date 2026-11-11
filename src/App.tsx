@@ -3,6 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
+import { ConsentBanner } from './next/ConsentBanner';
 import React, { useState, useEffect, Suspense, lazy } from 'react';
 import type { TabKey } from './components/Navigation';
 import {
@@ -363,6 +364,7 @@ function AppContent() {
         />
       )}
       <BottomNav activeTab={activeTab} onSelectTab={handleSelectTab} />
+      <ConsentBanner />
 
       {/* User Login & Registration Modal */}
 

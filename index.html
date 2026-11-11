@@ -176,12 +176,20 @@
         }
         // Ana sayfada yüklenmez (oradaki bağlantılar zaten ortaklık bağlantısı; Drive o sayfada telefonu saniyelerce kilitliyordu).
         // Diğer sayfalarda ziyaretçinin ilk dokunuşu/kaydırması sonrasında, tarayıcı boşa çıkınca yüklenir.
+        // AB/İngiltere ziyaretçileri: çerez izni verilene kadar yüklenmez (izin verilince ConsentBanner window.__vzLoadDrive'ı çağırır)
+        var loaded = false;
+        window.__vzLoadDrive = function () { if (!loaded) { loaded = true; tp(); } };
+        try {
+          var tz = Intl.DateTimeFormat().resolvedOptions().timeZone || '';
+          var eu = (/^Europe\//.test(tz) && !/^Europe\/(Istanbul|Moscow|Minsk|Kaliningrad|Samara|Volgograd|Saratov|Ulyanovsk|Astrakhan|Kirov|Simferopol|Kiev|Kyiv|Chisinau|Belgrade|Sarajevo|Skopje|Podgorica|Tirane)$/.test(tz)) || /^Atlantic\/(Canary|Madeira|Azores|Reykjavik)$/.test(tz);
+          if (eu && localStorage.getItem('vz_consent') !== 'all') return;
+        } catch (e) {}
         if (/^\/((en|de|es|ru)\/?)?$/.test(location.pathname)) return;
         var done = false, ev = ['pointerdown', 'keydown', 'touchstart', 'scroll'];
         function go() {
           if (done) return; done = true;
           ev.forEach(function (e) { window.removeEventListener(e, go, true); });
-          ('requestIdleCallback' in window) ? requestIdleCallback(tp, { timeout: 3000 }) : setTimeout(tp, 1000);
+          ('requestIdleCallback' in window) ? requestIdleCallback(window.__vzLoadDrive, { timeout: 3000 }) : setTimeout(window.__vzLoadDrive, 1000);
         }
         ev.forEach(function (e) { window.addEventListener(e, go, { capture: true, passive: true }); });
       })();
