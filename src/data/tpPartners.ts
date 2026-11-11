@@ -218,6 +218,8 @@ export function routeLink(url: string): string {
   }
   const s22 = STAY22_HOSTS.find(([d]) => is(d));
   if (s22) return stay22(s22[1], { link: url });
+  // Viator ortaklığı onaylandı: ortaklık kodu (pid) taşıyan tur bağlantıları olduğu gibi gider
+  if (is('viator.com') && u.searchParams.get('pid')) return url;
   if (!LOCKED_HOSTS.some(is)) return url;
   const q = u.searchParams.get('q') || u.searchParams.get('text') || u.searchParams.get('query') || u.searchParams.get('destination') || '';
   // Uçuş: Trip.com / Skyscanner → Aviasales
