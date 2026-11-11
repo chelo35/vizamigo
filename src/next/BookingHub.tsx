@@ -12,6 +12,7 @@ import { getCrossRate } from '../data/currencyRates';
 import { tpLinks, tpLogo, stay22, s22Flights, s22Cars, gygLink, RAYNA_COUNTRIES, STAY22_AID } from '../data/tpPartners';
 import { TOURS, PACKAGES, LIVE } from '../data/tours';
 import ESIM from '../data/esimPrices.json';
+import { TRANSFER_ROUTES, kiwiRouteUrl } from '../data/transferRoutes';
 import { thirdPartyAllowed } from '../utils/consent';
 
 /* ---------- Yolculuk bilgisi: nereden, tarihler, kişi (cihazda saklanır, tüm ülke sayfalarında ortak) ---------- */
@@ -342,6 +343,20 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
       </Sec>
 
       <Sec id="bk-transfer" icon="car" title={l(`Havalimanı transferi${toIata ? ` (${toIata})` : ''}`, `Airport transfer${toIata ? ` (${toIata})` : ''}`, `Flughafentransfer${toIata ? ` (${toIata})` : ''}`, `Traslado al aeropuerto${toIata ? ` (${toIata})` : ''}`, `Трансфер из аэропорта${toIata ? ` (${toIata})` : ''}`)}>
+        {(TRANSFER_ROUTES[code] || []).length > 0 && (
+          <>
+            <b className="vz-bk-op">Kiwitaxi</b>
+            <div className="vz-bk-fares">
+              {(TRANSFER_ROUTES[code] || []).map((r) => (
+                <a key={r.slug} className="vz-qd-fare" href={kiwiRouteUrl(code, r.slug, language)} target="_blank" rel="noopener noreferrer sponsored">
+                  <b>~{usdTo(r.usd)}</b>
+                  <span>{r.from} ({r.iata}) → {r.to}</span>
+                  <small>{l('araç başı, sabit fiyat', 'per car, fixed price', 'pro Auto, Festpreis', 'por coche, precio fijo', 'за авто, фикс. цена')} ›</small>
+                </a>
+              ))}
+            </div>
+          </>
+        )}
         <Picks label={l('Karşılamalı, sabit fiyatlı transfer:', 'Meet & greet, fixed price:', 'Mit Abholung, Festpreis:', 'Con recogida, precio fijo:', 'С встречей, фиксированная цена:')} items={transferPicks} k={`tr${code}`} />
       </Sec>
 
