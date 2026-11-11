@@ -6,7 +6,7 @@ type Day = { price: number; ret: string | null; transfers: number | null; link: 
 type MonthRes = { currency: string; month: string; days: Record<string, Day>; cheapest: string | null };
 
 const cache = new Map<string, Promise<MonthRes | null>>();
-const load = (from: string, to: string, month: string, len: number, cur: string) => {
+const load = (from: string, to: string, month: string, len: number | 'any', cur: string) => {
   const k = `${from}${to}${month}${len}${cur}`;
   if (!cache.has(k))
     cache.set(
@@ -37,7 +37,9 @@ export const FareCalendar: React.FC<{
   dep: string;
   money: (v: number, c?: string) => string;
   onPick: (dep: string, ret: string) => void;
-}> = ({ from, to, nights, cur, dep, money, onPick }) => {
+  /** rt: kalış süresine göre gidiş-dönüş; any: süre fark etmez; ow: tek yön */
+  mode?: 'rt' | 'any' | 'ow';
+}> = ({ from, to, nights, cur, dep, money, onPick, mode = 'rt' }) => {
   const { l, language } = useI18n();
   const loc = language === 'tr' ? 'tr-TR' : language === 'de' ? 'de-DE' : language === 'es' ? 'es-ES' : language === 'ru' ? 'ru-RU' : 'en-GB';
   const months = useMemo(() => {
@@ -48,16 +50,17 @@ export const FareCalendar: React.FC<{
   const [month, setMonth] = useState(() => (months.includes(dep.slice(0, 7)) ? dep.slice(0, 7) : months[0]));
   const [all, setAll] = useState<Record<string, MonthRes | null | undefined>>({});
   const len = Math.max(1, Math.min(30, nights));
+  const q: number | 'any' = mode === 'ow' ? 0 : mode === 'any' ? 'any' : len;
   const c = cur.toLowerCase();
 
   useEffect(() => {
     let on = true;
     setAll({});
-    months.forEach((m) => load(from, to, m, len, c).then((r) => on && setAll((a) => ({ ...a, [m]: r }))));
+    months.forEach((m) => load(from, to, m, q, c).then((r) => on && setAll((a) => ({ ...a, [m]: r }))));
     return () => {
       on = false;
     };
-  }, [from, to, len, c, months]);
+  }, [from, to, q, c, months]);
 
   const compact = (v: number) => {
     try {
@@ -83,7 +86,7 @@ export const FareCalendar: React.FC<{
 
   return (
     <section className="vz-card vz-fcal">
-      <h3><Icon name="cal" size={18} /> {l(`Ucuz tarih takvimi · ${len} gece`, `Cheapest dates · ${len} nights`, `Günstigste Termine · ${len} Nächte`, `Fechas más baratas · ${len} noches`, `Дешёвые даты · ${len} ноч.`)}</h3>
+      <h3><Icon name="cal" size={18} /> {mode === 'ow' ? l('Ucuz tarih takvimi · tek yön', 'Cheapest dates · one way', 'Günstigste Termine · einfach', 'Fechas más baratas · solo ida', 'Дешёвые даты · в одну сторону') : mode === 'any' ? l('Ucuz tarih takvimi · süre esnek', 'Cheapest dates · any length', 'Günstigste Termine · flexibel', 'Fechas más baratas · flexible', 'Дешёвые даты · любой срок') : l(`Ucuz tarih takvimi · ${len} gece`, `Cheapest dates · ${len} nights`, `Günstigste Termine · ${len} Nächte`, `Fechas más baratas · ${len} noches`, `Дешёвые даты · ${len} ноч.`)}</h3>
       <div className="vz-fcal-months" role="tablist">
         {months.map((m) => {
           const b = best(m);
@@ -110,6 +113,7 @@ export const FareCalendar: React.FC<{
               disabled={!x || past}
               className={`vz-fcal-day ${tone}${d === dep ? ' sel' : ''}${res?.cheapest === d ? ' best' : ''}`}
               onClick={() => x && onPick(d, x.ret || addDays(d, len))}
+              title={x && x.ret ? `${d} → ${x.ret}` : undefined}
               aria-label={x ? `${d}: ${money(x.price, res!.currency)}` : d}
             >
               <span>{i + 1}</span>
@@ -122,7 +126,7 @@ export const FareCalendar: React.FC<{
         {res === undefined
           ? l('Fiyatlar yükleniyor…', 'Loading fares…', 'Preise werden geladen…', 'Cargando tarifas…', 'Загружаем цены…')
           : prices.length
-            ? l('Kişi başı gidiş-dönüş, son günlerde Aviasales\'te bulunan en düşük fiyatlar. Bir güne dokun, tarihler ayarlansın.', 'Per person, round trip; lowest fares seen on Aviasales recently. Tap a day to set your dates.', 'Pro Person, hin & zurück; zuletzt gefundene Tiefstpreise. Tag antippen.', 'Por persona, ida y vuelta; tarifas más bajas recientes. Toca un día.', 'На человека, туда-обратно; минимальные цены. Нажмите на день.')
+            ? l(mode === 'ow' ? 'Kişi başı tek yön, son günlerde Aviasales\'te bulunan en düşük fiyatlar. Bir güne dokun, tarih ayarlansın.' : 'Kişi başı gidiş-dönüş, son günlerde Aviasales\'te bulunan en düşük fiyatlar. Bir güne dokun, tarihler ayarlansın.', 'Per person, round trip; lowest fares seen on Aviasales recently. Tap a day to set your dates.', 'Pro Person, hin & zurück; zuletzt gefundene Tiefstpreise. Tag antippen.', 'Por persona, ida y vuelta; tarifas más bajas recientes. Toca un día.', 'На человека, туда-обратно; минимальные цены. Нажмите на день.')
             : l('Bu ay için kayıtlı fiyat yok; başka bir ay ya da kalış süresi dene.', 'No saved fares this month; try another month or trip length.', 'Keine Preise in diesem Monat.', 'Sin tarifas este mes.', 'Нет цен в этом месяце.')}
       </p>
     </section>

@@ -18,7 +18,8 @@ export default async function handler(req: Request) {
   const to = (url.searchParams.get('to') || '').toUpperCase();
   const start = url.searchParams.get('start') || '';
   const end = url.searchParams.get('end') || '';
-  const len = Math.max(0, Math.min(30, parseInt(url.searchParams.get('len') || '0', 10) || 0));
+  const anyLen = url.searchParams.get('len') === 'any';
+  const len = anyLen ? 0 : Math.max(0, Math.min(30, parseInt(url.searchParams.get('len') || '0', 10) || 0));
   const cur = (url.searchParams.get('cur') || 'eur').toLowerCase();
   const direct = url.searchParams.get('direct') === '1';
   const headers = new Headers({
@@ -45,7 +46,7 @@ export default async function handler(req: Request) {
   try {
     const lists = await Promise.all(
       months.map(async (m) => {
-        const q = new URLSearchParams({ origin: from, destination: to, currency: cur, departure_at: m, one_way: len ? 'false' : 'true', sorting: 'price', direct: direct ? 'true' : 'false', limit: '1000', page: '1' });
+        const q = new URLSearchParams({ origin: from, destination: to, currency: cur, departure_at: m, one_way: len || anyLen ? 'false' : 'true', sorting: 'price', direct: direct ? 'true' : 'false', limit: '1000', page: '1' });
         const r = await fetch(`https://api.travelpayouts.com/aviasales/v3/prices_for_dates?${q}`, { headers: { 'X-Access-Token': token, 'Accept-Encoding': 'gzip' } });
         if (!r.ok) return [] as Item[];
         const j = (await r.json()) as { success?: boolean; data?: Item[] };
@@ -65,7 +66,7 @@ export default async function handler(req: Request) {
         airline: x.airline || null,
         link: x.link ? `https://www.aviasales.com${x.link}` : null
       }))
-      .filter((x) => x.dep >= start && x.dep <= end && (!len || (x.ret && Math.abs(days(x.dep, x.ret) - len) <= 2)))
+      .filter((x) => x.dep >= start && x.dep <= end && (anyLen ? !!x.ret && days(x.dep, x.ret) >= 2 : !len || (x.ret && Math.abs(days(x.dep, x.ret) - len) <= 2)))
       .sort((a, b) => a.price - b.price)
       .filter((x) => {
         const k = `${x.dep}|${x.ret}`;

@@ -10,7 +10,7 @@ import { getCountryName } from '../data/passportData';
 import { getCountryGeography } from '../data/countryGeography';
 import { capitalName } from '../data/capitalNames';
 import { getCrossRate } from '../data/currencyRates';
-import { tpLinks, tpLogo, stay22, s22Flights, s22Cars, gygLink, RAYNA_COUNTRIES, STAY22_AID } from '../data/tpPartners';
+import { tpLinks, tpLogo, stay22, s22Flights, s22Cars, gygLink, STAY22_AID } from '../data/tpPartners';
 import { TOURS, PACKAGES, LIVE } from '../data/tours';
 import ESIM from '../data/esimPrices.json';
 import { TRANSFER_ROUTES, kiwiRouteUrl, scooterUrl } from '../data/transferRoutes';
@@ -134,8 +134,13 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
   // Şehir seçici: seçilen şehir uçuş, otel, tur, transfer, araç ve scooter bölümlerini birlikte değiştirir
   const cities = CITIES[code] || [];
   const [cityId, setCityId] = useState('');
-  useEffect(() => setCityId(''), [code]);
-  const city = cities.find((c) => c.id === cityId) || cities[0];
+  const [cityQ, setCityQ] = useState('');
+  useEffect(() => {
+    setCityId('');
+    setCityQ('');
+  }, [code]);
+  const custom = cityId.startsWith('q:') ? cityId.slice(2) : '';
+  const city = custom ? { id: cityId, en: custom } : cities.find((c) => c.id === cityId) || cities[0];
   const toIata = city?.iata || (GEO_DATA[code]?.mainHub || '').split('/')[0];
   const countryEn = getCountryName(code, 'en');
   const geoEn = useMemo(() => getCountryGeography(code, 'en'), [code]);
@@ -147,12 +152,19 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
   const [fl, setFl] = useState<{ cur: string; res: Fl[] } | null>(null);
   const [directOnly, setDirectOnly] = useState(false);
   const [calOpen, setCalOpen] = useState(false);
+  /** rt: gidiş-dönüş (kalış süresine göre), any: süre esnek, ow: sadece gidiş, ret: sadece dönüş */
+  const [fmode, setFmode] = useState<'rt' | 'any' | 'ow' | 'ret'>('rt');
+  const fA = fmode === 'ret' ? toIata : fromIata;
+  const fB = fmode === 'ret' ? fromIata : toIata;
+  const fDay = fmode === 'ret' ? trip.d2 : trip.d1;
   useEffect(() => {
     setFl(null);
     if (!fromIata || !toIata || fromIata === toIata || trip.from === code) return;
     let alive = true;
+    const win = fmode === 'any' ? 7 : 3;
+    const lenQ = fmode === 'rt' ? String(Math.min(30, nights)) : fmode === 'any' ? 'any' : '0';
     const t = setTimeout(() => {
-      fetch(`/api/cheap-flights?from=${fromIata}&to=${toIata}&start=${plusDays(trip.d1, -3)}&end=${plusDays(trip.d1, 3)}&len=${Math.min(30, nights)}&cur=${cur.toLowerCase()}${directOnly ? '&direct=1' : ''}`)
+      fetch(`/api/cheap-flights?from=${fA}&to=${fB}&start=${plusDays(fDay, -win)}&end=${plusDays(fDay, win)}&len=${lenQ}&cur=${cur.toLowerCase()}${directOnly ? '&direct=1' : ''}`)
         .then((r) => (r.ok ? r.json() : null))
         .then((j) => alive && setFl({ cur: j?.currency || cur, res: Array.isArray(j?.results) ? j.results.slice(0, 3) : [] }))
         .catch(() => alive && setFl({ cur, res: [] }));
@@ -161,10 +173,14 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
       alive = false;
       clearTimeout(t);
     };
-  }, [fromIata, toIata, trip.d1, nights, cur, code, trip.from, directOnly]);
+  }, [fromIata, toIata, fA, fB, fDay, fmode, nights, cur, code, trip.from, directOnly]);
   const ddmm = (s: string) => `${s.slice(8, 10)}${s.slice(5, 7)}`;
-  const aviaLink = `https://www.aviasales.com/search/${fromIata}${ddmm(trip.d1)}${toIata}${ddmm(trip.d2)}${trip.n}`;
-  const s22f = s22Flights(fromIata, toIata, trip.d1, trip.d2, trip.n, `cp_${code.toLowerCase()}`);
+  const aviaLink =
+    fmode === 'ow' || fmode === 'ret'
+      ? `https://www.aviasales.com/search/${fA}${ddmm(fDay)}${fB}${trip.n}`
+      : `https://www.aviasales.com/search/${fromIata}${ddmm(trip.d1)}${toIata}${ddmm(trip.d2)}${trip.n}`;
+  const oneWay = fmode === 'ow' || fmode === 'ret';
+  const s22f = s22Flights(fA, fB, fDay, oneWay ? '' : trip.d2, trip.n, `cp_${code.toLowerCase()}`);
   const flightPicks: PickItem[] = [
     { id: 'aviasales', url: aviaLink },
     { id: 'kayak', url: s22f.kayak },
@@ -196,7 +212,6 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
   const sights = mustSee.map((s) => s.split(/[:(–—-]\s/)[0].trim()).filter((s, i, a) => s && s.length < 48 && a.indexOf(s) === i).slice(0, 6);
   const gyg = (q: string) => stay22('getyourguide', { address: `${q}, ${countryEn}`, campaign: `cp_${code.toLowerCase()}_tour` });
   const tourPicks: PickItem[] = [
-    ...(RAYNA_COUNTRIES.has(code) ? [{ id: 'raynatours', url: tpLinks.raynatours() }] : []),
     { id: 'getyourguide', url: tourDest ? gygLink(tourDest.gyg, `cp_${code.toLowerCase()}`) : gyg(cityEn) },
     { id: 'klook', url: tpLinks.tours(tourDest?.search || cityEn) },
     { id: 'tiqets', url: tpLinks.tiqets() },
@@ -221,13 +236,15 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
     };
   }, [code]);
   const esimMin = Math.min(...(inTR ? [] : esim.map((p) => p[2])), ...flexi.map((p) => p[2]));
+  // Sadece komisyon getiren eSIM ortakları; Airalo Türkiye'de erişime kapalı olduğu için orada gösterilmez
   const esimPicks: PickItem[] = [
     { id: 'nomad', url: tpLinks.nomad() },
     { id: 'flexiroam', url: tpLinks.flexiroam() },
-    { id: 'drimsim', url: tpLinks.drimsim() },
-    { id: 'airalo', url: esim[0] ? `https://www.airalo.com/${esim[0][3].split('/')[0]}` : 'https://www.airalo.com/', blocked: inTR },
-    { id: 'saily', url: tpLinks.saily(), blocked: inTR }
+    { id: 'yesim', url: tpLinks.yesim() },
+    { id: 'gigsky', url: tpLinks.gigsky() },
+    ...(inTR ? [] : [{ id: 'airalo', url: esim[0] ? `https://www.airalo.com/${esim[0][3].split('/')[0]}` : 'https://www.airalo.com/' }])
   ];
+
 
   const s22c = s22Cars(cityEn, trip.d1, trip.d2, `cp_${code.toLowerCase()}_cars`);
   const carPicks: PickItem[] = [
@@ -279,7 +296,21 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
       setTourArea(c.en);
     }
   };
-  const routes = (TRANSFER_ROUTES[code] || []).filter((r) => !cityId || !r.city || r.city === cityId);
+  // Listede olmayan bir şehir/bölge: otel, tur ve haritalar o yere göre açılır
+  const citySuggest = useMemo(() => {
+    const g = getCountryGeography(code, 'en');
+    return [...cities.map((c) => c.en), g.capital, ...g.majorCities, ...g.touristRegions].filter((x, i, a) => x && a.indexOf(x) === i);
+  }, [code, cities]);
+  const searchCity = (raw: string) => {
+    const q = raw.trim();
+    if (!q) return;
+    const hit = cities.find((c) => c.en.toLowerCase() === q.toLowerCase() || c.id === q.toLowerCase());
+    if (hit) return pickCity(hit.id);
+    setCityId(`q:${q}`);
+    setHotelArea(q);
+    setTourArea(q);
+  };
+  const routes = (TRANSFER_ROUTES[code] || []).filter((r) => !cityId || custom || !r.city || r.city === cityId);
   const shownRoutes = routes.length ? routes : TRANSFER_ROUTES[code] || [];
   const eurTo = (v: number) => money(v * getCrossRate('EUR', cur));
   const checked = new Date(`${PRICES_CHECKED}T12:00:00`).toLocaleDateString(loc, { day: 'numeric', month: 'short' });
@@ -295,6 +326,24 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
 
   return (
     <div className="vz-bk">
+      {(
+        <div className="vz-bk-city">
+          <b><Flag code={code} size="sm" /> {l(`${getCountryName(code, language)}'da nereye gidiyorsun?`, `Where in ${getCountryName(code, 'en')} are you going?`, `Wohin in ${getCountryName(code, language)}?`, `¿A dónde en ${getCountryName(code, language)}?`, `Куда в ${getCountryName(code, language)}?`)}</b>
+          <form className="vz-bk-cityq" onSubmit={(e) => { e.preventDefault(); searchCity(cityQ); }}>
+            <input list={`vz-cities-${code}`} value={cityQ} onChange={(e) => setCityQ(e.target.value)} placeholder={l('Şehir, ada ya da bölge yaz (ör. Koh Phangan)', 'Type a city, island or region', 'Stadt, Insel oder Region', 'Ciudad, isla o región', 'Город, остров или регион')} aria-label={l('Şehir ara', 'Search city', 'Stadt suchen', 'Buscar ciudad', 'Поиск города')} />
+            <datalist id={`vz-cities-${code}`}>{citySuggest.map((c) => <option key={c} value={c} />)}</datalist>
+            <button type="submit">{l('Göster', 'Show', 'Zeigen', 'Mostrar', 'Показать')}</button>
+          </form>
+          <div className="vz-bk-chips" role="tablist" aria-label={l('Şehir', 'City', 'Stadt', 'Ciudad', 'Город')}>
+            {custom && <button type="button" role="tab" aria-selected className="on">{custom}</button>}
+            {cities.map((c) => (
+              <button key={c.id} type="button" role="tab" aria-selected={city?.id === c.id} className={city?.id === c.id ? 'on' : ''} onClick={() => { setCityQ(''); pickCity(c.id); }}>{c.en}</button>
+            ))}
+          </div>
+          <small>{l('Uçuş, otel, tur, transfer, araç ve motor fiyatları seçtiğin şehre göre değişir.', 'Flights, hotels, tours, transfers, cars and bikes follow the city you pick.', 'Flüge, Hotels, Touren, Transfers, Autos und Roller richten sich nach der Stadt.', 'Vuelos, hoteles, tours, traslados, coches y motos según la ciudad.', 'Рейсы, отели, туры, трансферы, авто и байки — по выбранному городу.')}</small>
+        </div>
+      )}
+
       <nav className="vz-bk-jump" aria-label={l('Kategoriler', 'Categories', 'Kategorien', 'Categorías', 'Категории')}>
         <a href="#bk-flight" onClick={jump}>{l('Uçak', 'Flights', 'Flüge', 'Vuelos', 'Авиа')}</a>
         <a href="#bk-hotel" onClick={jump}>{l('Otel', 'Hotels', 'Hotels', 'Hoteles', 'Отели')}</a>
@@ -305,20 +354,19 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
         <a href="#bk-ins" onClick={jump}>{l('Sigorta', 'Insurance', 'Versicherung', 'Seguro', 'Страховка')}</a>
       </nav>
 
-      {cities.length > 1 && (
-        <div className="vz-bk-city">
-          <b>{l('Hangi şehir?', 'Which city?', 'Welche Stadt?', '¿Qué ciudad?', 'Какой город?')}</b>
-          <div className="vz-bk-chips" role="tablist" aria-label={l('Şehir', 'City', 'Stadt', 'Ciudad', 'Город')}>
-            {cities.map((c) => (
-              <button key={c.id} type="button" role="tab" aria-selected={city?.id === c.id} className={city?.id === c.id ? 'on' : ''} onClick={() => pickCity(c.id)}>{c.en}</button>
-            ))}
-          </div>
-          <small>{l('Uçuş, otel, tur, transfer, araç ve motor fiyatları seçtiğin şehre göre değişir.', 'Flights, hotels, tours, transfers, cars and bikes follow the city you pick.', 'Flüge, Hotels, Touren, Transfers, Autos und Roller richten sich nach der Stadt.', 'Vuelos, hoteles, tours, traslados, coches y motos según la ciudad.', 'Рейсы, отели, туры, трансферы, авто и байки — по выбранному городу.')}</small>
-        </div>
-      )}
 
       {trip.from !== code && fromIata && toIata && (
         <Sec id="bk-flight" icon="plane" title={l(`${getCountryName(trip.from, language)} → ${getCountryName(code, language)} uçuşları`, `Flights ${getCountryName(trip.from, 'en')} → ${getCountryName(code, 'en')}`, `Flüge ${getCountryName(trip.from, language)} → ${getCountryName(code, language)}`, `Vuelos ${getCountryName(trip.from, language)} → ${getCountryName(code, language)}`, `Перелёт ${getCountryName(trip.from, language)} → ${getCountryName(code, language)}`)} note={l('Fiyatlar Aviasales’te son günlerde bulunan en düşük fiyatlar, kişi başı; birkaç saatte bir yenilenir. Kesin fiyat ödeme sayfasında.', 'Lowest fares seen on Aviasales recently, per person; refreshed every few hours. Final price at checkout.', 'Niedrigste kürzlich gesehene Preise auf Aviasales, pro Person; alle paar Stunden aktualisiert.', 'Tarifas más bajas vistas en Aviasales, por persona; se actualizan cada pocas horas.', 'Минимальные цены Aviasales, на человека; обновляются каждые несколько часов.')}>
+          <div className="vz-bk-seg vz-fl-mode" role="group" aria-label={l('Uçuş türü', 'Trip type', 'Reiseart', 'Tipo de viaje', 'Тип поездки')}>
+            {([
+              ['rt', l('Gidiş-dönüş', 'Round trip', 'Hin & zurück', 'Ida y vuelta', 'Туда-обратно')],
+              ['any', l('Süre esnek', 'Any length', 'Flexibel', 'Flexible', 'Любой срок')],
+              ['ow', l('Sadece gidiş', 'One way', 'Nur Hinflug', 'Solo ida', 'Только туда')],
+              ['ret', l('Sadece dönüş', 'Return only', 'Nur Rückflug', 'Solo vuelta', 'Только обратно')]
+            ] as const).map(([k, t]) => (
+              <button key={k} type="button" aria-pressed={fmode === k} className={fmode === k ? 'on' : ''} onClick={() => setFmode(k)}>{t}</button>
+            ))}
+          </div>
           <div className="vz-fl-tools">
           <button type="button" className={`vz-fl-cal${calOpen ? ' on' : ''}`} aria-expanded={calOpen} onClick={() => setCalOpen((v) => !v)}>
             <Icon name="cal" size={16} duo={false} />{l('Fiyat takvimi: en ucuz günler', 'Price calendar: cheapest days', 'Preiskalender: günstigste Tage', 'Calendario de precios', 'Календарь цен')}
@@ -330,7 +378,22 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
           </div>
           {calOpen && (
             <div className="vz-fl-calbox">
-              <FareCalendar from={fromIata} to={toIata} nights={nights} cur={cur.toLowerCase()} dep={trip.d1} money={money} onPick={(d1, d2) => { setTrip?.({ d1, d2 }); setCalOpen(false); }} />
+              <FareCalendar
+                key={fmode}
+                from={fA}
+                to={fB}
+                nights={nights}
+                cur={cur.toLowerCase()}
+                dep={fDay}
+                money={money}
+                mode={fmode === 'rt' ? 'rt' : fmode === 'any' ? 'any' : 'ow'}
+                onPick={(a, b) => {
+                  if (fmode === 'ret') setTrip?.({ d2: a });
+                  else if (fmode === 'ow') setTrip?.({ d1: a, d2: plusDays(a, nights) });
+                  else setTrip?.({ d1: a, d2: b });
+                  setCalOpen(false);
+                }}
+              />
             </div>
           )}
           {fl === null ? (
@@ -344,7 +407,7 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
                   {f.airline && (
                     <i className="vz-fl-air"><img src={`https://pics.avs.io/40/40/${f.airline}.png`} alt="" width={20} height={20} loading="lazy" />{AIRLINES[f.airline] || f.airline}</i>
                   )}
-                  <span>{fmtDay(f.dep)}{f.ret ? ` → ${fmtDay(f.ret)}` : ''}</span>
+                  <span>{fmtDay(f.dep)}{f.ret ? ` → ${fmtDay(f.ret)}` : ''}{f.ret && fmode === 'any' ? ` · ${Math.round((Date.parse(f.ret) - Date.parse(f.dep)) / 864e5)} ${l('gece', 'nights', 'Nächte', 'noches', 'ноч.')}` : ''}</span>
                   <small>{f.transfers === 0 ? l('Direkt', 'Direct', 'Direkt', 'Directo', 'Прямой') : l(`${f.transfers ?? '?'} aktarma`, `${f.transfers ?? '?'} stop(s)`, `${f.transfers ?? '?'} Umstieg`, `${f.transfers ?? '?'} escala`, `пересадок: ${f.transfers ?? '?'}`)} · {l('Bileti al', 'Book', 'Buchen', 'Reservar', 'Купить')} ›</small>
                 </a>
               ))}
@@ -408,7 +471,7 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
 
       <Sec id="bk-tours" icon="ticket" title={l('Turlar ve aktiviteler', 'Tours & activities', 'Touren & Aktivitäten', 'Tours y actividades', 'Экскурсии и развлечения')}>
         <div className="vz-bk-chips" role="tablist" aria-label={l('Yer', 'Place', 'Ort', 'Lugar', 'Место')}>
-          {[cityEn, ...sights].filter((x, i, a) => a.indexOf(x) === i).map((s) => (
+          {[...(tourArea && tourArea !== cityEn ? [tourArea] : []), cityEn, ...sights].filter((x, i, a) => a.indexOf(x) === i).map((s) => (
             <button key={s} type="button" role="tab" aria-selected={(tourArea || cityEn) === s} className={(tourArea || cityEn) === s ? 'on' : ''} onClick={() => setTourArea(s)}>{s === cityEn ? (GEO_DATA[code]?.capital ? capitalName(code, language, GEO_DATA[code].capital) : s) : s}</button>
           ))}
         </div>
@@ -441,8 +504,8 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
       </Sec>
 
       <Sec id="bk-esim" icon="phone" title={l('İnternet (eSIM)', 'Mobile data (eSIM)', 'Mobile Daten (eSIM)', 'Datos móviles (eSIM)', 'Мобильный интернет (eSIM)')} note={esim.length || flexi.length ? l('Yukarıdaki fiyatlar Airalo ve FlexiRoam paketleri, düzenli güncellenir. Diğer firmaların paketleri kendi sitelerinde açılır.', 'Prices above are Airalo and FlexiRoam plans, updated regularly. Other providers show their plans on their own sites.', 'Preise oben: Airalo-Tarife, täglich aktualisiert. Andere Anbieter zeigen ihre Tarife auf ihrer Seite.', 'Precios de planes Airalo, actualizados a diario. Otros proveedores muestran sus planes en su web.', 'Цены выше — тарифы Airalo, обновляются ежедневно. Тарифы других — на их сайтах.') : undefined}>
-        {esim.length > 0 && <b className="vz-bk-op">Airalo</b>}
-        {esim.length > 0 && (
+        {!inTR && esim.length > 0 && <b className="vz-bk-op">Airalo</b>}
+        {!inTR && esim.length > 0 && (
           <div className="vz-bk-fares">
             {esim.map((p) =>
               React.createElement(

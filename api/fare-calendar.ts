@@ -17,7 +17,8 @@ export default async function handler(req: Request) {
   const from = (u.searchParams.get('from') || '').toUpperCase();
   const to = (u.searchParams.get('to') || '').toUpperCase();
   const month = u.searchParams.get('month') || '';
-  const len = Math.max(0, Math.min(30, parseInt(u.searchParams.get('len') || '0', 10) || 0));
+  const anyLen = u.searchParams.get('len') === 'any';
+  const len = anyLen ? 0 : Math.max(0, Math.min(30, parseInt(u.searchParams.get('len') || '0', 10) || 0));
   const cur = (u.searchParams.get('cur') || 'eur').toLowerCase();
   const headers = new Headers({
     'Content-Type': 'application/json; charset=utf-8',
@@ -31,7 +32,7 @@ export default async function handler(req: Request) {
   if (!token) return send(none);
 
   try {
-    const q = new URLSearchParams({ origin: from, destination: to, currency: cur, departure_at: month, one_way: len ? 'false' : 'true', sorting: 'price', direct: 'false', limit: '1000', page: '1' });
+    const q = new URLSearchParams({ origin: from, destination: to, currency: cur, departure_at: month, one_way: len || anyLen ? 'false' : 'true', sorting: 'price', direct: 'false', limit: '1000', page: '1' });
     const r = await fetch(`https://api.travelpayouts.com/aviasales/v3/prices_for_dates?${q}`, { headers: { 'X-Access-Token': token, 'Accept-Encoding': 'gzip' } });
     const j = r.ok ? ((await r.json()) as { success?: boolean; data?: Item[] }) : null;
     const list = j?.success && Array.isArray(j.data) ? j.data : [];
@@ -41,7 +42,7 @@ export default async function handler(req: Request) {
       const dep = x.departure_at.slice(0, 10);
       if (dep.slice(0, 7) !== month) continue;
       const ret = x.return_at ? x.return_at.slice(0, 10) : null;
-      if (len && (!ret || Math.abs(days(dep, ret) - len) > 1)) continue;
+      if (anyLen ? !ret || days(dep, ret) < 2 : len && (!ret || Math.abs(days(dep, ret) - len) > 1)) continue;
       const price = Math.round(x.price);
       if (!out[dep] || price < out[dep].price) out[dep] = { price, ret, transfers: x.transfers ?? null, link: x.link ? `https://www.aviasales.com${x.link}` : null };
     }

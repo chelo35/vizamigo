@@ -1308,3 +1308,8 @@ button.vz-tb-f { cursor: pointer; }
 .vz-bk-checked { display: block; margin-top: 6px; }
 .vz-bk-chips a.on { background: var(--rd-sea, #0b7287); border-color: var(--rd-sea, #0b7287); color: #fff; }
 .vz-ins-card { margin-bottom: 10px; }
+.vz-bk-city > b { display: flex; align-items: center; gap: 8px; font-size: 17px; }
+.vz-bk-cityq { display: flex; gap: 8px; }
+.vz-bk-cityq input { flex: 1; min-width: 0; min-height: 44px; padding: 0 14px; border-radius: 12px; border: 1px solid var(--rd-line, #dfe7e8); background: var(--rd-bg, #fff); color: inherit; font: inherit; font-size: 15px; }
+.vz-bk-cityq button { min-height: 44px; padding: 0 18px; border: 0; border-radius: 12px; background: var(--rd-sea, #0b7287); color: #fff; font: inherit; font-weight: 700; cursor: pointer; }
+.vz-fl-mode { margin-bottom: 10px; flex-wrap: wrap; }
