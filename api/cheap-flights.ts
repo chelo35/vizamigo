@@ -20,6 +20,7 @@ export default async function handler(req: Request) {
   const end = url.searchParams.get('end') || '';
   const len = Math.max(0, Math.min(30, parseInt(url.searchParams.get('len') || '0', 10) || 0));
   const cur = (url.searchParams.get('cur') || 'eur').toLowerCase();
+  const direct = url.searchParams.get('direct') === '1';
   const headers = new Headers({
     'Content-Type': 'application/json; charset=utf-8',
     'Cache-Control': 'public, s-maxage=10800, stale-while-revalidate=43200',
@@ -44,7 +45,7 @@ export default async function handler(req: Request) {
   try {
     const lists = await Promise.all(
       months.map(async (m) => {
-        const q = new URLSearchParams({ origin: from, destination: to, currency: cur, departure_at: m, one_way: len ? 'false' : 'true', sorting: 'price', direct: 'false', limit: '1000', page: '1' });
+        const q = new URLSearchParams({ origin: from, destination: to, currency: cur, departure_at: m, one_way: len ? 'false' : 'true', sorting: 'price', direct: direct ? 'true' : 'false', limit: '1000', page: '1' });
         const r = await fetch(`https://api.travelpayouts.com/aviasales/v3/prices_for_dates?${q}`, { headers: { 'X-Access-Token': token, 'Accept-Encoding': 'gzip' } });
         if (!r.ok) return [] as Item[];
         const j = (await r.json()) as { success?: boolean; data?: Item[] };
@@ -60,6 +61,7 @@ export default async function handler(req: Request) {
         dep: x.departure_at!.slice(0, 10),
         ret: x.return_at ? x.return_at.slice(0, 10) : null,
         transfers: x.transfers ?? null,
+        rtransfers: x.return_transfers ?? null,
         airline: x.airline || null,
         link: x.link ? `https://www.aviasales.com${x.link}` : null
       }))

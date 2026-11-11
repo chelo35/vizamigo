@@ -1287,3 +1287,7 @@ button.vz-tb-f { cursor: pointer; }
 .vz-hq-card small { color: var(--rd-muted, #6b7280); font-size: 12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .vz-hq-card em { font-style: normal; font-weight: 600; font-size: 13px; color: #0b7287; white-space: nowrap; }
 .vz-hq-live { display: inline-flex; align-items: center; gap: 8px; border: 0; cursor: pointer; }
+
+/* Uçuş kartı: havayolu */
+.vz-fl-air { display: flex; align-items: center; gap: 6px; font-style: normal; font-size: 12.5px; font-weight: 600; color: var(--rd-ink, #0f2a30); }
+.vz-fl-air img { border-radius: 4px; background: #fff; }

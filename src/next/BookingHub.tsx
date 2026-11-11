@@ -87,7 +87,15 @@ export const TripBar: React.FC<{ passport: string; trip: Trip; setTrip: (p: Part
 
 /* ---------- Rezervasyon bölümü ---------- */
 
-type Fl = { price: number; dep: string; ret: string | null; transfers: number | null; link: string | null };
+type Fl = { price: number; dep: string; ret: string | null; transfers: number | null; airline?: string | null; link: string | null };
+/** Sık görülen havayolları (IATA → ad); listede olmayanlar kodla gösterilir */
+const AIRLINES: Record<string, string> = {
+  TK: 'Turkish Airlines', PC: 'Pegasus', XQ: 'SunExpress', AJ: 'AJet', VF: 'AJet', EK: 'Emirates', QR: 'Qatar Airways', EY: 'Etihad', FZ: 'flydubai', G9: 'Air Arabia',
+  SV: 'Saudia', GF: 'Gulf Air', WY: 'Oman Air', MS: 'EgyptAir', TG: 'Thai Airways', FD: 'Thai AirAsia', WE: 'Thai Smile', DD: 'Nok Air', SL: 'Thai Lion Air', PG: 'Bangkok Airways',
+  SQ: 'Singapore Airlines', TR: 'Scoot', MH: 'Malaysia Airlines', AK: 'AirAsia', CX: 'Cathay Pacific', CA: 'Air China', MU: 'China Eastern', CZ: 'China Southern', AI: 'Air India', '6E': 'IndiGo',
+  UL: 'SriLankan', KC: 'Air Astana', HY: 'Uzbekistan Airways', J2: 'AZAL', LH: 'Lufthansa', LX: 'Swiss', OS: 'Austrian', AF: 'Air France', KL: 'KLM', BA: 'British Airways', IB: 'Iberia',
+  AZ: 'ITA Airways', LO: 'LOT', A3: 'Aegean', FR: 'Ryanair', W6: 'Wizz Air', U2: 'easyJet', VY: 'Vueling', SU: 'Aeroflot', ET: 'Ethiopian', KQ: 'Kenya Airways', RJ: 'Royal Jordanian', ME: 'MEA'
+};
 type Pkg = [number, number, number, string];
 const LOC: Record<string, string> = { tr: 'tr-TR', en: 'en-GB', de: 'de-DE', es: 'es-ES', ru: 'ru-RU' };
 const EU = new Set(['AT', 'BE', 'CH', 'CZ', 'DE', 'DK', 'ES', 'FI', 'FR', 'GB', 'GR', 'HR', 'HU', 'IE', 'IS', 'IT', 'NL', 'NO', 'PL', 'PT', 'SE', 'SI', 'SK', 'MT', 'CY']);
@@ -130,12 +138,13 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
 
   // Uçuş: seçilen tarihlere en yakın gerçek fiyatlar (Aviasales önbelleği, sunucuda saatlerce önbelleklenir)
   const [fl, setFl] = useState<{ cur: string; res: Fl[] } | null>(null);
+  const [directOnly, setDirectOnly] = useState(false);
   useEffect(() => {
     setFl(null);
     if (!fromIata || !toIata || fromIata === toIata || trip.from === code) return;
     let alive = true;
     const t = setTimeout(() => {
-      fetch(`/api/cheap-flights?from=${fromIata}&to=${toIata}&start=${plusDays(trip.d1, -3)}&end=${plusDays(trip.d1, 3)}&len=${Math.min(30, nights)}&cur=${cur.toLowerCase()}`)
+      fetch(`/api/cheap-flights?from=${fromIata}&to=${toIata}&start=${plusDays(trip.d1, -3)}&end=${plusDays(trip.d1, 3)}&len=${Math.min(30, nights)}&cur=${cur.toLowerCase()}${directOnly ? '&direct=1' : ''}`)
         .then((r) => (r.ok ? r.json() : null))
         .then((j) => alive && setFl({ cur: j?.currency || cur, res: Array.isArray(j?.results) ? j.results.slice(0, 3) : [] }))
         .catch(() => alive && setFl({ cur, res: [] }));
@@ -144,7 +153,7 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
       alive = false;
       clearTimeout(t);
     };
-  }, [fromIata, toIata, trip.d1, nights, cur, code, trip.from]);
+  }, [fromIata, toIata, trip.d1, nights, cur, code, trip.from, directOnly]);
   const ddmm = (s: string) => `${s.slice(8, 10)}${s.slice(5, 7)}`;
   const aviaLink = `https://www.aviasales.com/search/${fromIata}${ddmm(trip.d1)}${toIata}${ddmm(trip.d2)}${trip.n}`;
   const s22f = s22Flights(fromIata, toIata, trip.d1, trip.d2, trip.n, `cp_${code.toLowerCase()}`);
@@ -169,8 +178,7 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
     { id: 'booking', url: stay22('booking', hq(cityEn)) },
     { id: 'agoda', url: stay22('agoda', hq(cityEn)) },
     { id: 'expedia', url: stay22('expedia', hq(cityEn)) },
-    { id: 'hotelscom', url: stay22('hotelscom', hq(cityEn)) },
-    { id: 'hostelworld', url: `https://www.hostelworld.com/find/?search_keywords=${encodeURIComponent(cityEn)}` }
+    { id: 'hotelscom', url: stay22('hotelscom', hq(cityEn)) }
   ];
 
   // Turlar: ülkedeki görülecek yerler + canlı paket turlar
@@ -259,6 +267,10 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
 
       {trip.from !== code && fromIata && toIata && (
         <Sec id="bk-flight" icon="plane" title={l(`${getCountryName(trip.from, language)} → ${getCountryName(code, language)} uçuşları`, `Flights ${getCountryName(trip.from, 'en')} → ${getCountryName(code, 'en')}`, `Flüge ${getCountryName(trip.from, language)} → ${getCountryName(code, language)}`, `Vuelos ${getCountryName(trip.from, language)} → ${getCountryName(code, language)}`, `Перелёт ${getCountryName(trip.from, language)} → ${getCountryName(code, language)}`)} note={l('Fiyatlar Aviasales’te son günlerde bulunan en düşük fiyatlar, kişi başı; birkaç saatte bir yenilenir. Kesin fiyat ödeme sayfasında.', 'Lowest fares seen on Aviasales recently, per person; refreshed every few hours. Final price at checkout.', 'Niedrigste kürzlich gesehene Preise auf Aviasales, pro Person; alle paar Stunden aktualisiert.', 'Tarifas más bajas vistas en Aviasales, por persona; se actualizan cada pocas horas.', 'Минимальные цены Aviasales, на человека; обновляются каждые несколько часов.')}>
+          <label className="vz-bk-toggle">
+            <input type="checkbox" checked={directOnly} onChange={(e) => setDirectOnly(e.target.checked)} />
+            <span>{l('Sadece aktarmasız uçuşlar', 'Direct flights only', 'Nur Direktflüge', 'Solo vuelos directos', 'Только прямые рейсы')}</span>
+          </label>
           {fl === null ? (
             <div className="vz-live-skel" aria-hidden="true"><i /><i /><i /></div>
           ) : fl.res.length > 0 ? (
@@ -267,13 +279,19 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
                 <a key={`${f.dep}${f.ret}`} className={`vz-qd-fare${i === 0 ? ' best' : ''}`} href={f.link || aviaLink} target="_blank" rel="noopener noreferrer sponsored">
                   {i === 0 && <em>{l('En ucuz', 'Cheapest', 'Am günstigsten', 'Más barato', 'Дешевле всего')}</em>}
                   <b>{money(f.price, fl.cur)}</b>
+                  {f.airline && (
+                    <i className="vz-fl-air"><img src={`https://pics.avs.io/40/40/${f.airline}.png`} alt="" width={20} height={20} loading="lazy" />{AIRLINES[f.airline] || f.airline}</i>
+                  )}
                   <span>{fmtDay(f.dep)}{f.ret ? ` → ${fmtDay(f.ret)}` : ''}</span>
                   <small>{f.transfers === 0 ? l('Direkt', 'Direct', 'Direkt', 'Directo', 'Прямой') : l(`${f.transfers ?? '?'} aktarma`, `${f.transfers ?? '?'} stop(s)`, `${f.transfers ?? '?'} Umstieg`, `${f.transfers ?? '?'} escala`, `пересадок: ${f.transfers ?? '?'}`)} · {l('Bileti al', 'Book', 'Buchen', 'Reservar', 'Купить')} ›</small>
                 </a>
               ))}
             </div>
           ) : (
+            <>
+            {directOnly && <p className="vz-bk-op">{l('Bu tarihlerde aktarmasız uçuş fiyatı bulunamadı.', 'No direct-flight fares found for these dates.', 'Keine Direktflug-Preise für diese Daten.', 'Sin tarifas directas para estas fechas.', 'Прямых рейсов на эти даты не найдено.')}</p>}
             <a className="vz-bk-cta" href={aviaLink} target="_blank" rel="noopener noreferrer sponsored">{l(`${dates} için uçuşları canlı ara`, `Search live flights for ${dates}`, `Flüge für ${dates} live suchen`, `Buscar vuelos para ${dates}`, `Искать рейсы на ${dates}`)} <AdTag /></a>
+            </>
           )}
           <Picks label={l('Diğer sitelerde karşılaştır:', 'Compare on other sites:', 'Woanders vergleichen:', 'Comparar en otros sitios:', 'Сравнить:')} items={flightPicks} k={`f${code}${trip.d1}${trip.d2}`} />
         </Sec>
