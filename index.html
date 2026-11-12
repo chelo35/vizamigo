@@ -73,8 +73,11 @@
     <link
       rel="preload"
       as="image"
-      href="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=420&q=50"
+      href="/images/hero/home3-1400.webp"
+      imagesrcset="/images/hero/home3-800.webp 800w, /images/hero/home3-1400.webp 1400w, /images/hero/home3-1920.webp 1920w"
+      imagesizes="100vw"
       fetchpriority="high"
+      id="vz-home-preload"
     />
 
     <!-- Schema.org JSON-LD Structured Data for Google Rich Snippets -->
@@ -160,6 +163,13 @@
       .vzs-links .vzs-lead { color: #1F4553; margin-bottom: 8px; }
       .vzs-sea { position: absolute; left: 0; right: 0; bottom: 0; height: 44%; background: linear-gradient(180deg, #7FD8E3, #1CA8BF 60%, #0E7F99); }
       html.dark .vzs-sea { background: linear-gradient(180deg, #C98C7A, #3F7684 60%, #2B5E6C); }
+      /* Açılış iskeleti: React gelmeden önce de yeni kapak fotoğrafı görünsün */
+      .vzs-hero { background: #6EC6E6 url(/images/hero/home3-800.webp) 70% 50% / cover no-repeat; }
+      @media (min-width: 820px) { .vzs-hero { background-image: url(/images/hero/home3-1400.webp); } }
+      html.dark .vzs-hero { background: #2A6F8A url(/images/hero/home3-800.webp) 70% 50% / cover no-repeat; }
+      .vzs-hero::before { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(6,40,56,.42) 0%, rgba(6,40,56,.18) 45%, rgba(6,40,56,0) 70%); }
+      .vzs-hero .vzs-sea { display: none; }
+      .vzs-hero .vzs-eye, .vzs-hero .vzs-h1, .vzs-hero .vzs-lead { color: #fff !important; text-shadow: 0 2px 14px rgba(0,30,45,.45); }
       @media (min-width: 900px) { .vzs-hero { min-height: 620px; } }
       @media (max-width: 640px) { .vzs-hero-in { padding-top: 92px; padding-bottom: 140px; } .vzs-chips { height: 47px; } }
     </style>

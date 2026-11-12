@@ -198,6 +198,8 @@ async function main() {
       html = html.replace(/<script>\s*\(function \(\) \{\s*try \{\s*var m = location\.pathname[\s\S]*?<\/script>/, '');
     }
     if (hero) {
+      // ülke vb. sayfalarda ana sayfa kapağını önceden yükleme
+      html = html.replace(/\s*<link\s+rel="preload"\s+as="image"[^>]*id="vz-home-preload"\s*\/>/, '');
       html = html.replace(/<section class="vzs-hero">[\s\S]*?<div class="vzs-sea"><\/div><\/section>/, () => `${hero}${nav}`);
       html = html.replace(/<script>\s*\(function \(\) \{\s*try \{\s*var m = location\.pathname[\s\S]*?<\/script>/, '');
     } else if (nav) html = html.replace('<div class="vzs-sea"></div></section>', () => `<div class="vzs-sea"></div></section>${nav}`);

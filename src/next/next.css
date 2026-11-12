@@ -1460,3 +1460,8 @@ button.vz-tb-f { cursor: pointer; }
 /* aydınlık kapakta cam kartlar okunaklı kalsın */
 .rd-glass .rd-card { background: rgba(8, 44, 60, 0.34); border-color: rgba(255, 255, 255, 0.32); }
 @media (max-width: 960px) { .vz-app .rd-hero.has-photo .rd-hero-in { padding-bottom: 330px; } }
+
+/* Açılışta zıplama olmasın: kapak fotoğrafı 1x'ten başlayıp çok yavaş yakınlaşır (iskeletle aynı kare) */
+@keyframes vz-kenburns-in { from { transform: scale(1); } to { transform: scale(1.06); } }
+.vz-chero-img img { animation: vz-kenburns-in 24s ease-out both; }
+.rd-hero.has-photo .rd-photo img { animation: vz-kenburns-in 26s ease-out both !important; }
