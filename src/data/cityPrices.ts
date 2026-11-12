@@ -134,6 +134,81 @@ export const CITIES: Record<string, City[]> = {
     { id: 'durban', en: "Durban", iata: 'DUR' },
     { id: 'kruger', en: "Kruger Park", iata: 'MQP', tr: 'Kruger Parkı' }
   ],
+  MU: [
+    { id: 'grand-baie', en: "Grand Baie", iata: 'MRU', lr: { path: 'mauritius/grand-baie' } },
+    { id: 'flic-en-flac', en: "Flic en Flac", iata: 'MRU', lr: { path: 'mauritius/flic-en-flac' } }
+  ],
+  CR: [
+    { id: 'san-jose', en: "San José", iata: 'SJO' },
+    { id: 'la-fortuna', en: "La Fortuna", iata: 'SJO' },
+    { id: 'liberia', en: "Liberia", iata: 'LIR' }
+  ],
+  PA: [
+    { id: 'panama-city', en: "Panama City", iata: 'PTY' },
+    { id: 'bocas-del-toro', en: "Bocas del Toro", iata: 'BOC' }
+  ],
+  CL: [
+    { id: 'santiago', en: "Santiago", iata: 'SCL', lr: { path: 'chile/santiago', eur: 18.48 } },
+    { id: 'san-pedro', en: "San Pedro de Atacama", iata: 'CJC' },
+    { id: 'puerto-natales', en: "Puerto Natales", iata: 'PNT' }
+  ],
+  UY: [
+    { id: 'montevideo', en: "Montevideo", iata: 'MVD' },
+    { id: 'punta-del-este', en: "Punta del Este", iata: 'PDP' }
+  ],
+  JM: [
+    { id: 'montego-bay', en: "Montego Bay", iata: 'MBJ', lr: { path: 'jamaica/montego-bay' } },
+    { id: 'kingston', en: "Kingston", iata: 'KIN' }
+  ],
+  FJ: [
+    { id: 'nadi', en: "Nadi", iata: 'NAN', lr: { path: 'fiji/nadi' } }
+  ],
+  SC: [
+    { id: 'mahe', en: "Mahé", iata: 'SEZ', lr: { path: 'seychelles/mahe', eur: 45 } },
+    { id: 'praslin', en: "Praslin", iata: 'PRI' }
+  ],
+  MK: [
+    { id: 'skopje', en: "Skopje", iata: 'SKP', tr: "Üsküp", lr: { path: 'macedonia/skopje', eur: 11.75 } },
+    { id: 'ohrid', en: "Ohrid", iata: 'OHD', tr: "Ohri" }
+  ],
+  SK: [
+    { id: 'bratislava', en: "Bratislava", iata: 'BTS' },
+    { id: 'high-tatras', en: "High Tatras", iata: 'TAT', tr: "Yüksek Tatra" }
+  ],
+  LV: [
+    { id: 'riga', en: "Riga", iata: 'RIX' }
+  ],
+  LT: [
+    { id: 'vilnius', en: "Vilnius", iata: 'VNO' }
+  ],
+  LU: [
+    { id: 'luxembourg', en: "Luxembourg", iata: 'LUX', tr: "Lüksemburg" }
+  ],
+  AM: [
+    { id: 'yerevan', en: "Yerevan", iata: 'EVN', tr: "Erivan", lr: { path: 'armenia/yerevan', eur: 28.05 } }
+  ],
+  KG: [
+    { id: 'bishkek', en: "Bishkek", iata: 'FRU', tr: "Bişkek", lr: { path: 'kyrgyzstan/bishkek' } }
+  ],
+  MN: [
+    { id: 'ulaanbaatar', en: "Ulaanbaatar", iata: 'UBN', tr: "Ulan Batur" }
+  ],
+  EC: [
+    { id: 'quito', en: "Quito", iata: 'UIO' },
+    { id: 'guayaquil', en: "Guayaquil", iata: 'GYE' },
+    { id: 'galapagos', en: "Galápagos", iata: 'GPS' }
+  ],
+  BS: [
+    { id: 'nassau', en: "Nassau", iata: 'NAS' },
+    { id: 'exuma', en: "Exuma", iata: 'GGT' }
+  ],
+  NA: [
+    { id: 'windhoek', en: "Windhoek", iata: 'WDH' }
+  ],
+  BO: [
+    { id: 'la-paz', en: "La Paz", iata: 'LPB' },
+    { id: 'uyuni', en: "Uyuni", iata: 'UYU' }
+  ],
   SE: [
     { id: 'stockholm', en: "Stockholm", iata: 'ARN' },
     { id: 'gothenburg', en: "Gothenburg", iata: 'GOT', tr: "Göteborg" },

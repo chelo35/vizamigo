@@ -38,7 +38,7 @@ import { BookingHub, TripBar, useTrip } from './BookingHub';
 import { NOMAD_HUBS, getLocalizedNomadHub } from '../data/nomadData';
 
 /** Yeni "tek sayfa" düzeni (üstte yolculuk çubuğu, Rezervasyon / Ülke rehberi sekmeleri) açık olan ülkeler. */
-export const NEW_LAYOUT = new Set(['TH', 'FR', 'ES', 'US', 'TR', 'IT', 'MX', 'GB', 'DE', 'JP', 'GR', 'SA', 'AT', 'CN', 'AE', 'PT', 'NL', 'CA', 'MY', 'PL', 'HR', 'HU', 'EG', 'MA', 'VN', 'KR', 'ID', 'CH', 'CZ', 'SG', 'IN', 'DK', 'IE', 'BE', 'HK', 'BR', 'PH', 'AU', 'NZ', 'LK', 'MV', 'AR', 'PE', 'CO', 'DO', 'CU', 'JO', 'TN', 'GE', 'ME', 'AL', 'CY', 'NO', 'IS', 'QA', 'ZA', 'SE', 'FI', 'RO', 'BG', 'SI', 'MT', 'EE', 'RS', 'BA', 'UZ', 'KE', 'KH', 'TW', 'OM', 'KZ', 'AZ', 'NP', 'LA', 'TZ', 'BH']);
+export const NEW_LAYOUT = new Set(['TH', 'FR', 'ES', 'US', 'TR', 'IT', 'MX', 'GB', 'DE', 'JP', 'GR', 'SA', 'AT', 'CN', 'AE', 'PT', 'NL', 'CA', 'MY', 'PL', 'HR', 'HU', 'EG', 'MA', 'VN', 'KR', 'ID', 'CH', 'CZ', 'SG', 'IN', 'DK', 'IE', 'BE', 'HK', 'BR', 'PH', 'AU', 'NZ', 'LK', 'MV', 'AR', 'PE', 'CO', 'DO', 'CU', 'JO', 'TN', 'GE', 'ME', 'AL', 'CY', 'NO', 'IS', 'QA', 'ZA', 'SE', 'FI', 'RO', 'BG', 'SI', 'MT', 'EE', 'RS', 'BA', 'UZ', 'KE', 'KH', 'TW', 'OM', 'KZ', 'AZ', 'NP', 'LA', 'TZ', 'BH', 'MU', 'CR', 'PA', 'CL', 'UY', 'JM', 'FJ', 'SC', 'MK', 'SK', 'LV', 'LT', 'LU', 'AM', 'KG', 'MN', 'EC', 'BS', 'NA', 'BO']);
 import { buildPassportPath, buildLocalizedPath } from '../utils/seoRouter';
 
 interface Props {

@@ -7,7 +7,7 @@
 /** usd: fiyat; cur 'EUR' ise değer euro'dur (Kiwitaxi o ülke sayfasında fiyatı euro gösteriyor) */
 export type TransferRoute = { slug: string; from: string; to: string; iata: string; usd: number; cur?: 'EUR'; city?: string };
 
-export const KIWI_COUNTRY: Record<string, string> = { TH: 'thailand', FR: 'france', ES: 'spain', US: 'usa', TR: 'turkey', IT: 'italy', MX: 'mexico', GB: 'united-kingdom', DE: 'germany', JP: 'japan', GR: 'greece', SA: 'saudi-arabia', AT: 'austria', CN: 'china', AE: 'uae', PT: 'portugal', CA: 'canada', MY: 'malaysia', PL: 'poland', HR: 'croatia', HU: 'hungary', EG: 'egypt', MA: 'morocco', VN: 'vietnam', ID: 'indonesia', CH: 'switzerland', CZ: 'czech-republic', SG: 'singapore', IN: 'india', DK: 'denmark', IE: 'ireland', HK: 'hong-kong', BR: 'brazil', PH: 'philippines', AU: 'australia', NZ: 'new-zealand', DO: 'dominican-republic', JO: 'jordan', TN: 'tunisia', GE: 'georgia', ME: 'montenegro', AL: 'albania', CY: 'cyprus', NO: 'norway', IS: 'iceland', QA: 'qatar', ZA: 'south-africa', SE: 'sweden', FI: 'finland', RO: 'romania', BG: 'bulgaria', SI: 'slovenia', RS: 'serbia', EE: 'estonia', AZ: 'azerbaijan', UZ: 'uzbekistan', KZ: 'kazakhstan', OM: 'oman', TW: 'taiwan', KH: 'cambodia', KE: 'kenya', TZ: 'tanzania' };
+export const KIWI_COUNTRY: Record<string, string> = { TH: 'thailand', FR: 'france', ES: 'spain', US: 'usa', TR: 'turkey', IT: 'italy', MX: 'mexico', GB: 'united-kingdom', DE: 'germany', JP: 'japan', GR: 'greece', SA: 'saudi-arabia', AT: 'austria', CN: 'china', AE: 'uae', PT: 'portugal', CA: 'canada', MY: 'malaysia', PL: 'poland', HR: 'croatia', HU: 'hungary', EG: 'egypt', MA: 'morocco', VN: 'vietnam', ID: 'indonesia', CH: 'switzerland', CZ: 'czech-republic', SG: 'singapore', IN: 'india', DK: 'denmark', IE: 'ireland', HK: 'hong-kong', BR: 'brazil', PH: 'philippines', AU: 'australia', NZ: 'new-zealand', DO: 'dominican-republic', JO: 'jordan', TN: 'tunisia', GE: 'georgia', ME: 'montenegro', AL: 'albania', CY: 'cyprus', NO: 'norway', IS: 'iceland', QA: 'qatar', ZA: 'south-africa', SE: 'sweden', FI: 'finland', RO: 'romania', BG: 'bulgaria', SI: 'slovenia', RS: 'serbia', EE: 'estonia', AZ: 'azerbaijan', UZ: 'uzbekistan', KZ: 'kazakhstan', OM: 'oman', TW: 'taiwan', KH: 'cambodia', KE: 'kenya', TZ: 'tanzania', MU: 'mauritius', PA: 'panama', CL: 'chile', SC: 'seychelles', SK: 'slovakia', LV: 'latvia', LT: 'lithuania', LU: 'luxembourg', AM: 'armenia', KG: 'kyrgyzstan', MN: 'mongolia' };
 
 export const TRANSFER_ROUTES: Record<string, TransferRoute[]> = {
   PH: [
@@ -58,6 +58,40 @@ export const TRANSFER_ROUTES: Record<string, TransferRoute[]> = {
   ZA: [
     { city: 'cape-town', slug: 'cape-town-airport-cape-town', iata: 'CPT', from: 'Cape Town', to: 'Cape Town', usd: 64 },
     { city: 'johannesburg', slug: 'johannesburg-airport-sandton', iata: 'JNB', from: 'Johannesburg', to: 'Sandton', usd: 64 }
+  ],
+  MU: [
+    { city: 'grand-baie', slug: 'taxi-from-port-louis-airport-to-grand-baie', iata: 'MRU', from: 'Mauritius', to: 'Grand Baie', usd: 55 },
+    { city: 'flic-en-flac', slug: 'taxi-from-port-louis-airport-to-flic-en-flac', iata: 'MRU', from: 'Mauritius', to: 'Flic en Flac', usd: 55 }
+  ],
+  PA: [
+    { city: 'panama-city', slug: 'panama-city-tocumen-airport-panama-city', iata: 'PTY', from: 'Tocumen', to: 'Panama City', usd: 61 }
+  ],
+  CL: [
+    { city: 'santiago', slug: 'santiago-airport-santiago', iata: 'SCL', from: 'Santiago', to: 'Santiago', usd: 68 }
+  ],
+  SC: [
+    { city: 'mahe', slug: 'victoria-airport-beau-vallon', iata: 'SEZ', from: 'Mahé', to: 'Beau Vallon', usd: 48 }
+  ],
+  SK: [
+    { city: 'bratislava', slug: 'bratislava-airport-bratislava', iata: 'BTS', from: 'Bratislava', to: 'Bratislava', usd: 53, cur: 'EUR' }
+  ],
+  LV: [
+    { city: 'riga', slug: 'riga-airport-riga', iata: 'RIX', from: 'Riga', to: 'Riga', usd: 48, cur: 'EUR' }
+  ],
+  LT: [
+    { city: 'vilnius', slug: 'vilnius-airport-vilnius', iata: 'VNO', from: 'Vilnius', to: 'Vilnius', usd: 48, cur: 'EUR' }
+  ],
+  LU: [
+    { city: 'luxembourg', slug: 'luxembourg-findel-airport-luxembourg', iata: 'LUX', from: 'Lüksemburg', to: 'Lüksemburg', usd: 68, cur: 'EUR' }
+  ],
+  AM: [
+    { city: 'yerevan', slug: 'yerevan-airport-zvartnots-yerevan', iata: 'EVN', from: 'Erivan', to: 'Erivan', usd: 28 }
+  ],
+  KG: [
+    { city: 'bishkek', slug: 'bishkek-airport-manas-bishkek', iata: 'FRU', from: 'Bişkek', to: 'Bişkek', usd: 45 }
+  ],
+  MN: [
+    { city: 'ulaanbaatar', slug: 'chinggis-khaan-international-airport-airport-ulaanbaatar', iata: 'UBN', from: 'Ulan Batur', to: 'Ulan Batur', usd: 48 }
   ],
   SE: [
     { city: 'stockholm', slug: 'taxi-from-stockholm-arlanda-airport-to-stockholm', iata: 'ARN', from: 'Arlanda', to: 'Stockholm', usd: 75, cur: 'EUR' },

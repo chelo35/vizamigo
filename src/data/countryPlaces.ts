@@ -66,6 +66,66 @@ export const PLACES: Record<string, Place[]> = {
   ZA: [
     { en: "Cape Town", iata: 'CPT' }, { en: "Table Mountain", iata: 'CPT' }, { en: "Stellenbosch", iata: 'CPT' }, { en: "Garden Route", iata: 'GRJ' }, { en: "Johannesburg", iata: 'JNB' }, { en: "Sandton", iata: 'JNB' }, { en: "Kruger Park", iata: 'MQP' }, { en: "Durban", iata: 'DUR' }, { en: "Port Elizabeth", iata: 'PLZ' }, { en: "Hermanus", iata: 'CPT' }
   ],
+  MU: [
+    { en: "Grand Baie", iata: 'MRU' }, { en: "Flic en Flac", iata: 'MRU' }, { en: "Le Morne", iata: 'MRU' }, { en: "Port Louis", iata: 'MRU' }, { en: "Belle Mare", iata: 'MRU' }, { en: "Trou aux Biches", iata: 'MRU' }, { en: "Chamarel", iata: 'MRU' }, { en: "Ile aux Cerfs", iata: 'MRU' }
+  ],
+  CR: [
+    { en: "San José", iata: 'SJO' }, { en: "San Jose", iata: 'SJO' }, { en: "La Fortuna", iata: 'SJO' }, { en: "Arenal", iata: 'SJO' }, { en: "Monteverde", iata: 'SJO' }, { en: "Manuel Antonio", iata: 'SJO' }, { en: "Tamarindo", iata: 'LIR' }, { en: "Liberia", iata: 'LIR' }, { en: "Guanacaste", iata: 'LIR' }, { en: "Puerto Viejo", iata: 'SJO' }, { en: "Tortuguero", iata: 'SJO' }
+  ],
+  PA: [
+    { en: "Panama City", iata: 'PTY' }, { en: "Panama", iata: 'PTY' }, { en: "San Blas", iata: 'PTY' }, { en: "Bocas del Toro", iata: 'BOC' }, { en: "Boquete", iata: 'DAV' }, { en: "Panama Canal", iata: 'PTY' }, { en: "Panama Kanalı", iata: 'PTY' }
+  ],
+  CL: [
+    { en: "Santiago", iata: 'SCL' }, { en: "Valparaíso", iata: 'SCL' }, { en: "Valparaiso", iata: 'SCL' }, { en: "Atacama", iata: 'CJC' }, { en: "San Pedro de Atacama", iata: 'CJC' }, { en: "Torres del Paine", iata: 'PNT' }, { en: "Puerto Natales", iata: 'PNT' }, { en: "Punta Arenas", iata: 'PUQ' }, { en: "Puerto Varas", iata: 'PMC' }, { en: "Easter Island", iata: 'IPC' }, { en: "Paskalya Adası", iata: 'IPC' }
+  ],
+  UY: [
+    { en: "Montevideo", iata: 'MVD' }, { en: "Punta del Este", iata: 'PDP' }, { en: "Colonia del Sacramento", iata: 'MVD' }, { en: "Colonia", iata: 'MVD' }, { en: "José Ignacio", iata: 'PDP' }, { en: "Cabo Polonio", iata: 'PDP' }
+  ],
+  JM: [
+    { en: "Montego Bay", iata: 'MBJ' }, { en: "Negril", iata: 'MBJ' }, { en: "Ocho Rios", iata: 'MBJ' }, { en: "Kingston", iata: 'KIN' }, { en: "Port Antonio", iata: 'KIN' }, { en: "Dunn's River Falls", iata: 'MBJ' }
+  ],
+  FJ: [
+    { en: "Nadi", iata: 'NAN' }, { en: "Denarau", iata: 'NAN' }, { en: "Suva", iata: 'SUV' }, { en: "Mamanuca", iata: 'NAN' }, { en: "Yasawa", iata: 'NAN' }, { en: "Coral Coast", iata: 'NAN' }, { en: "Taveuni", iata: 'TVU' }
+  ],
+  SC: [
+    { en: "Mahé", iata: 'SEZ' }, { en: "Mahe", iata: 'SEZ' }, { en: "Victoria", iata: 'SEZ' }, { en: "Beau Vallon", iata: 'SEZ' }, { en: "Praslin", iata: 'PRI' }, { en: "La Digue", iata: 'PRI' }, { en: "Anse Source d'Argent", iata: 'PRI' }
+  ],
+  MK: [
+    { en: "Skopje", iata: 'SKP' }, { en: "Üsküp", iata: 'SKP' }, { en: "Ohrid", iata: 'OHD' }, { en: "Ohri", iata: 'OHD' }, { en: "Bitola", iata: 'OHD' }, { en: "Manastır", iata: 'OHD' }, { en: "Matka Canyon", iata: 'SKP' }, { en: "Struga", iata: 'OHD' }
+  ],
+  SK: [
+    { en: "Bratislava", iata: 'BTS' }, { en: "High Tatras", iata: 'TAT' }, { en: "Tatras", iata: 'TAT' }, { en: "Štrbské Pleso", iata: 'TAT' }, { en: "Košice", iata: 'KSC' }, { en: "Kosice", iata: 'KSC' }, { en: "Banská Štiavnica", iata: 'BTS' }
+  ],
+  LV: [
+    { en: "Riga", iata: 'RIX' }, { en: "Jurmala", iata: 'RIX' }, { en: "Jūrmala", iata: 'RIX' }, { en: "Sigulda", iata: 'RIX' }, { en: "Cesis", iata: 'RIX' }, { en: "Liepaja", iata: 'LPX' }
+  ],
+  LT: [
+    { en: "Vilnius", iata: 'VNO' }, { en: "Trakai", iata: 'VNO' }, { en: "Kaunas", iata: 'KUN' }, { en: "Klaipeda", iata: 'PLQ' }, { en: "Palanga", iata: 'PLQ' }, { en: "Curonian Spit", iata: 'PLQ' }, { en: "Nida", iata: 'PLQ' }
+  ],
+  LU: [
+    { en: "Luxembourg", iata: 'LUX' }, { en: "Lüksemburg", iata: 'LUX' }, { en: "Vianden", iata: 'LUX' }, { en: "Echternach", iata: 'LUX' }, { en: "Mullerthal", iata: 'LUX' }
+  ],
+  AM: [
+    { en: "Yerevan", iata: 'EVN' }, { en: "Erivan", iata: 'EVN' }, { en: "Lake Sevan", iata: 'EVN' }, { en: "Sevan", iata: 'EVN' }, { en: "Dilijan", iata: 'EVN' }, { en: "Garni", iata: 'EVN' }, { en: "Geghard", iata: 'EVN' }, { en: "Khor Virap", iata: 'EVN' }, { en: "Gyumri", iata: 'LWN' }, { en: "Gümrü", iata: 'LWN' }, { en: "Tatev", iata: 'EVN' }
+  ],
+  KG: [
+    { en: "Bishkek", iata: 'FRU' }, { en: "Bişkek", iata: 'FRU' }, { en: "Issyk-Kul", iata: 'FRU' }, { en: "Issık Göl", iata: 'FRU' }, { en: "Karakol", iata: 'FRU' }, { en: "Cholpon-Ata", iata: 'FRU' }, { en: "Song-Kul", iata: 'FRU' }, { en: "Osh", iata: 'OSS' }, { en: "Oş", iata: 'OSS' }
+  ],
+  MN: [
+    { en: "Ulaanbaatar", iata: 'UBN' }, { en: "Ulan Batur", iata: 'UBN' }, { en: "Gobi", iata: 'UBN' }, { en: "Gobi Çölü", iata: 'UBN' }, { en: "Terelj", iata: 'UBN' }, { en: "Khövsgöl", iata: 'UBN' }, { en: "Kharkhorin", iata: 'UBN' }
+  ],
+  EC: [
+    { en: "Quito", iata: 'UIO' }, { en: "Guayaquil", iata: 'GYE' }, { en: "Galápagos", iata: 'GPS' }, { en: "Galapagos", iata: 'GPS' }, { en: "Cuenca", iata: 'CUE' }, { en: "Baños", iata: 'UIO' }, { en: "Banos", iata: 'UIO' }, { en: "Otavalo", iata: 'UIO' }, { en: "Montañita", iata: 'GYE' }
+  ],
+  BS: [
+    { en: "Nassau", iata: 'NAS' }, { en: "Paradise Island", iata: 'NAS' }, { en: "Cable Beach", iata: 'NAS' }, { en: "Exuma", iata: 'GGT' }, { en: "Freeport", iata: 'FPO' }, { en: "Grand Bahama", iata: 'FPO' }, { en: "Eleuthera", iata: 'ELH' }, { en: "Harbour Island", iata: 'ELH' }
+  ],
+  NA: [
+    { en: "Windhoek", iata: 'WDH' }, { en: "Sossusvlei", iata: 'WDH' }, { en: "Swakopmund", iata: 'WVB' }, { en: "Walvis Bay", iata: 'WVB' }, { en: "Etosha", iata: 'WDH' }, { en: "Deadvlei", iata: 'WDH' }
+  ],
+  BO: [
+    { en: "La Paz", iata: 'LPB' }, { en: "Uyuni", iata: 'UYU' }, { en: "Salar de Uyuni", iata: 'UYU' }, { en: "Sucre", iata: 'SRE' }, { en: "Santa Cruz", iata: 'VVI' }, { en: "Lake Titicaca", iata: 'LPB' }, { en: "Titikaka Gölü", iata: 'LPB' }, { en: "Copacabana", iata: 'LPB' }
+  ],
   SE: [
     { en: "Stockholm", iata: 'ARN' }, { en: "Gamla Stan", iata: 'ARN' }, { en: "Gothenburg", iata: 'GOT' }, { en: "Göteborg", iata: 'GOT' }, { en: "Malmö", iata: 'MMX' }, { en: "Kiruna", iata: 'KRN' }, { en: "Abisko", iata: 'KRN' }, { en: "Uppsala", iata: 'ARN' }, { en: "Visby", iata: 'VBY' }, { en: "Gotland", iata: 'VBY' }
   ],
