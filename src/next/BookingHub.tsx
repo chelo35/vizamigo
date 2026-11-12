@@ -143,9 +143,9 @@ const ModeBadge: React.FC<{ k: string; title?: string }> = ({ k, title }) => (
 /** Bölüm başlık görselleri: /images/bk/{ad}-480|960.webp */
 const SEC_IMG: Record<string, string> = { 'bk-flight': 'flight', 'bk-hotel': 'hotel', 'bk-tours': 'tours', 'bk-transfer': 'transfer', 'bk-ground': 'ground', 'bk-esim': 'esim', 'bk-car': 'car', 'bk-ins': 'ins' };
 /** Ülkeye özel tur görseli olan ülkeler (/images/bk/tours-{kod}-480|960.webp) */
-const TOUR_IMG = new Set(['FR', 'ES', 'US', 'TR', 'IT', 'MX', 'GB', 'DE', 'JP', 'GR', 'SA', 'AT', 'CN', 'AE', 'PT', 'IN', 'MY', 'CZ', 'BE', 'NL', 'IE', 'ID', 'SG', 'CA', 'BR', 'HU', 'MA', 'HK', 'KR', 'VN', 'CH', 'EG']);
+const TOUR_IMG = new Set(['FR', 'ES', 'US', 'TR', 'IT', 'MX', 'GB', 'DE', 'JP', 'GR', 'SA', 'AT', 'CN', 'AE', 'PT', 'IN', 'MY', 'CZ', 'BE', 'NL', 'IE', 'ID', 'SG', 'CA', 'BR', 'HU', 'MA', 'HK', 'KR', 'VN', 'CH', 'EG', 'AL', 'AR', 'AU', 'CO', 'CU', 'CY', 'DK', 'DO', 'GE', 'HR', 'IS', 'JO', 'LK', 'ME', 'MV', 'NO', 'NZ', 'PE', 'PH', 'PL', 'QA', 'TN', 'ZA']);
 /** Feribot görseli Güneydoğu Asya ve adalar için; diğer ülkelerde tren/otobüs görseli */
-const FERRY_IMG = new Set(['TH', 'VN', 'KH', 'LA', 'MY', 'ID', 'PH', 'MM', 'SG', 'LK', 'MV', 'FJ']);
+const FERRY_IMG = new Set(['TH', 'VN', 'KH', 'LA', 'MY', 'ID', 'PH', 'MM', 'SG', 'LK', 'MV', 'FJ', 'HR', 'GR', 'ME']);
 const secImg = (id: string, code: string) =>
   id === 'bk-tours' && TOUR_IMG.has(code) ? `tours-${code.toLowerCase()}` : id === 'bk-ground' && !FERRY_IMG.has(code) ? 'ground-land' : SEC_IMG[id];
 const Sec: React.FC<{ id: string; icon: string; title: string; note?: string; code?: string; children: React.ReactNode }> = ({ id, icon, title, note, code = '', children }) => (

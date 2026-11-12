@@ -7,9 +7,58 @@
 /** usd: fiyat; cur 'EUR' ise değer euro'dur (Kiwitaxi o ülke sayfasında fiyatı euro gösteriyor) */
 export type TransferRoute = { slug: string; from: string; to: string; iata: string; usd: number; cur?: 'EUR'; city?: string };
 
-export const KIWI_COUNTRY: Record<string, string> = { TH: 'thailand', FR: 'france', ES: 'spain', US: 'usa', TR: 'turkey', IT: 'italy', MX: 'mexico', GB: 'united-kingdom', DE: 'germany', JP: 'japan', GR: 'greece', SA: 'saudi-arabia', AT: 'austria', CN: 'china', AE: 'uae', PT: 'portugal', CA: 'canada', MY: 'malaysia', PL: 'poland', HR: 'croatia', HU: 'hungary', EG: 'egypt', MA: 'morocco', VN: 'vietnam', ID: 'indonesia', CH: 'switzerland', CZ: 'czech-republic', SG: 'singapore', IN: 'india', DK: 'denmark', IE: 'ireland', HK: 'hong-kong', BR: 'brazil' };
+export const KIWI_COUNTRY: Record<string, string> = { TH: 'thailand', FR: 'france', ES: 'spain', US: 'usa', TR: 'turkey', IT: 'italy', MX: 'mexico', GB: 'united-kingdom', DE: 'germany', JP: 'japan', GR: 'greece', SA: 'saudi-arabia', AT: 'austria', CN: 'china', AE: 'uae', PT: 'portugal', CA: 'canada', MY: 'malaysia', PL: 'poland', HR: 'croatia', HU: 'hungary', EG: 'egypt', MA: 'morocco', VN: 'vietnam', ID: 'indonesia', CH: 'switzerland', CZ: 'czech-republic', SG: 'singapore', IN: 'india', DK: 'denmark', IE: 'ireland', HK: 'hong-kong', BR: 'brazil', PH: 'philippines', AU: 'australia', NZ: 'new-zealand', DO: 'dominican-republic', JO: 'jordan', TN: 'tunisia', GE: 'georgia', ME: 'montenegro', AL: 'albania', CY: 'cyprus', NO: 'norway', IS: 'iceland', QA: 'qatar', ZA: 'south-africa' };
 
 export const TRANSFER_ROUTES: Record<string, TransferRoute[]> = {
+  PH: [
+    { city: 'manila', slug: 'ninoy-aquino-airport-makati', iata: 'MNL', from: 'Manila', to: 'Makati', usd: 35 }
+  ],
+  AU: [
+    { city: 'sydney', slug: 'sydney-airport-sydney', iata: 'SYD', from: 'Sidney', to: 'Sidney', usd: 73 }
+  ],
+  NZ: [
+    { city: 'auckland', slug: 'auckland-airport-auckland', iata: 'AKL', from: 'Auckland', to: 'Auckland', usd: 85 },
+    { city: 'queenstown', slug: 'queenstown-airport-queenstown', iata: 'ZQN', from: 'Queenstown', to: 'Queenstown', usd: 80 }
+  ],
+  DO: [
+    { city: 'punta-cana', slug: 'punta-cana-airport-punta-cana', iata: 'PUJ', from: 'Punta Cana', to: 'Punta Cana', usd: 34 }
+  ],
+  JO: [
+    { city: 'amman', slug: 'amman-civil-airport-amman', iata: 'AMM', from: 'Amman', to: 'Amman', usd: 50 },
+    { city: 'petra', slug: 'taxi-from-amman-civil-airport-to-petra', iata: 'AMM', from: 'Amman', to: 'Petra', usd: 50 }
+  ],
+  TN: [
+    { city: 'tunis', slug: 'tunis-airport-tunis', iata: 'TUN', from: 'Tunus', to: 'Tunus', usd: 45 },
+    { city: 'djerba', slug: 'djerba-airport-djerba', iata: 'DJE', from: 'Cerbe', to: 'Cerbe', usd: 73 }
+  ],
+  GE: [
+    { city: 'tbilisi', slug: 'tbilisi-airport-tbilisi', iata: 'TBS', from: 'Tiflis', to: 'Tiflis', usd: 35 },
+    { city: 'batumi', slug: 'batumi-airport-batumi', iata: 'BUS', from: 'Batum', to: 'Batum', usd: 37 }
+  ],
+  ME: [
+    { city: 'budva', slug: 'taxi-from-tivat-airport-to-budva', iata: 'TIV', from: 'Tivat', to: 'Budva', usd: 62, cur: 'EUR' },
+    { city: 'podgorica', slug: 'podgorica-airport-podgorica', iata: 'TGD', from: 'Podgorica', to: 'Podgorica', usd: 29, cur: 'EUR' }
+  ],
+  AL: [
+    { city: 'tirana', slug: 'tirana-airport-tirana', iata: 'TIA', from: 'Tiran', to: 'Tiran', usd: 30, cur: 'EUR' }
+  ],
+  CY: [
+    { city: 'ayia-napa', slug: 'larnaca-airport-ayia-napa', iata: 'LCA', from: 'Larnaka', to: 'Ayia Napa', usd: 81, cur: 'EUR' },
+    { city: 'paphos', slug: 'paphos-airport-paphos', iata: 'PFO', from: 'Baf', to: 'Baf', usd: 48, cur: 'EUR' }
+  ],
+  NO: [
+    { city: 'oslo', slug: 'gardermoen-airport-oslo', iata: 'OSL', from: 'Oslo', to: 'Oslo', usd: 144, cur: 'EUR' }
+  ],
+  IS: [
+    { city: 'reykjavik', slug: 'keflavik-airport-reykjavik', iata: 'KEF', from: 'Keflavik', to: 'Reykjavik', usd: 138, cur: 'EUR' }
+  ],
+  QA: [
+    { city: 'doha', slug: 'hamad-airport-doha', iata: 'DOH', from: 'Doha', to: 'Doha', usd: 40 }
+  ],
+  ZA: [
+    { city: 'cape-town', slug: 'cape-town-airport-cape-town', iata: 'CPT', from: 'Cape Town', to: 'Cape Town', usd: 64 },
+    { city: 'johannesburg', slug: 'johannesburg-airport-sandton', iata: 'JNB', from: 'Johannesburg', to: 'Sandton', usd: 64 }
+  ],
   CA: [
     { city: 'toronto', slug: 'toronto-billy-bishop-airport-toronto', iata: 'YTZ', from: 'Billy Bishop', to: 'Toronto', usd: 75 },
     { city: 'vancouver', slug: 'vancouver-airport-vancouver', iata: 'YVR', from: 'Vancouver', to: 'Vancouver', usd: 75 }

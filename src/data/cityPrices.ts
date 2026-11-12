@@ -24,6 +24,116 @@ export type City = {
 };
 
 export const CITIES: Record<string, City[]> = {
+  PH: [
+    { id: 'manila', en: "Manila", iata: 'MNL' },
+    { id: 'cebu', en: "Cebu", iata: 'CEB' },
+    { id: 'boracay', en: "Boracay", iata: 'MPH' },
+    { id: 'el-nido', en: "El Nido", iata: 'ENI' },
+    { id: 'bohol', en: "Bohol", iata: 'TAG' }
+  ],
+  AU: [
+    { id: 'sydney', en: "Sydney", iata: 'SYD', tr: 'Sidney' },
+    { id: 'melbourne', en: "Melbourne", iata: 'MEL' },
+    { id: 'gold-coast', en: "Gold Coast", iata: 'OOL' },
+    { id: 'cairns', en: "Cairns", iata: 'CNS' },
+    { id: 'perth', en: "Perth", iata: 'PER' }
+  ],
+  NZ: [
+    { id: 'auckland', en: "Auckland", iata: 'AKL' },
+    { id: 'queenstown', en: "Queenstown", iata: 'ZQN' },
+    { id: 'christchurch', en: "Christchurch", iata: 'CHC' },
+    { id: 'rotorua', en: "Rotorua", iata: 'ROT' }
+  ],
+  LK: [
+    { id: 'colombo', en: "Colombo", iata: 'CMB', tr: 'Kolombo' },
+    { id: 'kandy', en: "Kandy", iata: 'CMB' },
+    { id: 'ella', en: "Ella", iata: 'CMB' },
+    { id: 'galle', en: "Galle", iata: 'CMB' }
+  ],
+  MV: [
+    { id: 'male', en: "Male", iata: 'MLE' },
+    { id: 'maafushi', en: "Maafushi", iata: 'MLE' }
+  ],
+  AR: [
+    { id: 'buenos-aires', en: "Buenos Aires", iata: 'EZE', lr: { path: 'argentina/buenos-aires' } },
+    { id: 'el-calafate', en: "El Calafate", iata: 'FTE' },
+    { id: 'bariloche', en: "Bariloche", iata: 'BRC' },
+    { id: 'iguazu', en: "Puerto Iguazu", iata: 'IGR', tr: 'Iguazu' },
+    { id: 'mendoza', en: "Mendoza", iata: 'MDZ' }
+  ],
+  PE: [
+    { id: 'lima', en: "Lima", iata: 'LIM' },
+    { id: 'cusco', en: "Cusco", iata: 'CUZ' },
+    { id: 'arequipa', en: "Arequipa", iata: 'AQP' }
+  ],
+  CO: [
+    { id: 'cartagena', en: "Cartagena", iata: 'CTG' },
+    { id: 'bogota', en: "Bogota", iata: 'BOG' },
+    { id: 'medellin', en: "Medellin", iata: 'MDE', tr: 'Medellín' },
+    { id: 'santa-marta', en: "Santa Marta", iata: 'SMR' }
+  ],
+  DO: [
+    { id: 'punta-cana', en: "Punta Cana", iata: 'PUJ' },
+    { id: 'santo-domingo', en: "Santo Domingo", iata: 'SDQ' },
+    { id: 'puerto-plata', en: "Puerto Plata", iata: 'POP' }
+  ],
+  CU: [
+    { id: 'havana', en: "Havana", iata: 'HAV', tr: 'Havana' },
+    { id: 'varadero', en: "Varadero", iata: 'VRA' },
+    { id: 'trinidad', en: "Trinidad", iata: 'HAV' }
+  ],
+  JO: [
+    { id: 'amman', en: "Amman", iata: 'AMM', lr: { path: 'jordan/amman', eur: 15.88 } },
+    { id: 'petra', en: "Petra", iata: 'AMM' },
+    { id: 'aqaba', en: "Aqaba", iata: 'AQJ', tr: 'Akabe', lr: { path: 'jordan/aqaba', eur: 24.38 } },
+    { id: 'wadi-rum', en: "Wadi Rum", iata: 'AQJ' }
+  ],
+  TN: [
+    { id: 'tunis', en: "Tunis", iata: 'TUN', tr: 'Tunus', lr: { path: 'tunisia/tunis' } },
+    { id: 'djerba', en: "Djerba", iata: 'DJE', tr: 'Cerbe', lr: { path: 'tunisia/djerba' } },
+    { id: 'hammamet', en: "Hammamet", iata: 'NBE' },
+    { id: 'sousse', en: "Sousse", iata: 'MIR', tr: 'Susa' }
+  ],
+  GE: [
+    { id: 'tbilisi', en: "Tbilisi", iata: 'TBS', tr: 'Tiflis', lr: { path: 'georgia/tbilisi', eur: 21 } },
+    { id: 'batumi', en: "Batumi", iata: 'BUS', tr: 'Batum', lr: { path: 'georgia/batumi', eur: 26 } },
+    { id: 'kutaisi', en: "Kutaisi", iata: 'KUT', lr: { path: 'georgia/kutaisi', eur: 25 } }
+  ],
+  ME: [
+    { id: 'budva', en: "Budva", iata: 'TIV', lr: { path: 'montenegro/budva', eur: 14 } },
+    { id: 'kotor', en: "Kotor", iata: 'TIV', lr: { path: 'montenegro/tivat', eur: 14 } },
+    { id: 'podgorica', en: "Podgorica", iata: 'TGD', lr: { path: 'montenegro/podgorica', eur: 12.15 } }
+  ],
+  AL: [
+    { id: 'tirana', en: "Tirana", iata: 'TIA', tr: 'Tiran', lr: { path: 'albania/tirana' } },
+    { id: 'saranda', en: "Saranda", iata: 'TIA', tr: 'Sarande', lr: { path: 'albania/saranda', eur: 15 } },
+    { id: 'durres', en: "Durres", iata: 'TIA', tr: 'Dıraç', lr: { path: 'albania/durres', eur: 11 } }
+  ],
+  CY: [
+    { id: 'ayia-napa', en: "Ayia Napa", iata: 'LCA', lr: { path: 'cyprus/ayia-napa', eur: 14.58 } },
+    { id: 'paphos', en: "Paphos", iata: 'PFO', tr: 'Baf', lr: { path: 'cyprus/paphos' } },
+    { id: 'larnaca', en: "Larnaca", iata: 'LCA', tr: 'Larnaka', lr: { path: 'cyprus/larnaca', eur: 10.67 } },
+    { id: 'limassol', en: "Limassol", iata: 'LCA', tr: 'Limasol' }
+  ],
+  NO: [
+    { id: 'oslo', en: "Oslo", iata: 'OSL' },
+    { id: 'bergen', en: "Bergen", iata: 'BGO' },
+    { id: 'tromso', en: "Tromso", iata: 'TOS', tr: 'Tromsø' },
+    { id: 'lofoten', en: "Lofoten", iata: 'BOO' }
+  ],
+  IS: [
+    { id: 'reykjavik', en: "Reykjavik", iata: 'KEF', tr: 'Reykjavík', lr: { path: 'iceland/reykjavik' } },
+    { id: 'vik', en: "Vik", iata: 'KEF' }
+  ],
+  QA: [
+    { id: 'doha', en: "Doha", iata: 'DOH', lr: { path: 'qatar/doha', eur: 22 } }
+  ],
+  ZA: [
+    { id: 'cape-town', en: "Cape Town", iata: 'CPT' },
+    { id: 'johannesburg', en: "Johannesburg", iata: 'JNB' },
+    { id: 'durban', en: "Durban", iata: 'DUR' },
+    { id: 'kruger', en: "Kruger Park", iata: 'MQP', tr: 'Kruger Parkı' }
+  ],
   NL: [
     { id: 'amsterdam', en: 'Amsterdam', iata: 'AMS' },
     { id: 'rotterdam', en: 'Rotterdam', iata: 'RTM' },
