@@ -1,0 +1,46 @@
+/**
+ * Şehir arama listesi: ziyaretçi ülkedeki her ili / adayı / bölgeyi yazabilsin.
+ * Her yerin yanına en yakın (ticari uçuşu olan) havalimanı yazılır; uçuş araması oraya yapılır.
+ * Otel, tur, transfer ve şehirler arası ulaşım aynı adla aranır.
+ */
+export type Place = { en: string; iata?: string };
+
+export const PLACES: Record<string, Place[]> = {
+  TH: [
+    // Popüler yerler ve adalar
+    { en: 'Bangkok', iata: 'BKK' }, { en: 'Phuket', iata: 'HKT' }, { en: 'Chiang Mai', iata: 'CNX' }, { en: 'Pattaya', iata: 'BKK' },
+    { en: 'Krabi', iata: 'KBV' }, { en: 'Ao Nang', iata: 'KBV' }, { en: 'Koh Samui', iata: 'USM' }, { en: 'Koh Phangan', iata: 'USM' },
+    { en: 'Koh Tao', iata: 'USM' }, { en: 'Koh Phi Phi', iata: 'HKT' }, { en: 'Koh Lanta', iata: 'KBV' }, { en: 'Koh Chang', iata: 'TDX' },
+    { en: 'Koh Samet', iata: 'BKK' }, { en: 'Koh Lipe', iata: 'HDY' }, { en: 'Koh Yao Noi', iata: 'HKT' }, { en: 'Khao Lak', iata: 'HKT' },
+    { en: 'Patong', iata: 'HKT' }, { en: 'Railay', iata: 'KBV' }, { en: 'Hua Hin', iata: 'HHQ' }, { en: 'Pai', iata: 'CNX' },
+    { en: 'Khao Sok', iata: 'URT' }, { en: 'Ayutthaya', iata: 'BKK' }, { en: 'Kanchanaburi', iata: 'BKK' }, { en: 'Sukhothai', iata: 'THS' },
+    // İller (77)
+    { en: 'Amnat Charoen', iata: 'UBP' }, { en: 'Ang Thong', iata: 'BKK' }, { en: 'Bueng Kan', iata: 'UTH' }, { en: 'Buriram', iata: 'BFV' },
+    { en: 'Chachoengsao', iata: 'BKK' }, { en: 'Chai Nat', iata: 'BKK' }, { en: 'Chaiyaphum', iata: 'KKC' }, { en: 'Chanthaburi', iata: 'TDX' },
+    { en: 'Chiang Rai', iata: 'CEI' }, { en: 'Chonburi', iata: 'UTP' }, { en: 'Chumphon', iata: 'CJM' }, { en: 'Kalasin', iata: 'KKC' },
+    { en: 'Kamphaeng Phet', iata: 'PHS' }, { en: 'Khon Kaen', iata: 'KKC' }, { en: 'Lampang', iata: 'LPT' }, { en: 'Lamphun', iata: 'CNX' },
+    { en: 'Loei', iata: 'LOE' }, { en: 'Lopburi', iata: 'BKK' }, { en: 'Mae Hong Son', iata: 'HGN' }, { en: 'Maha Sarakham', iata: 'KKC' },
+    { en: 'Mukdahan', iata: 'KOP' }, { en: 'Nakhon Nayok', iata: 'BKK' }, { en: 'Nakhon Pathom', iata: 'BKK' }, { en: 'Nakhon Phanom', iata: 'KOP' },
+    { en: 'Nakhon Ratchasima', iata: 'BKK' }, { en: 'Khao Yai', iata: 'BKK' }, { en: 'Nakhon Sawan', iata: 'BKK' }, { en: 'Nakhon Si Thammarat', iata: 'NST' },
+    { en: 'Nan', iata: 'NNT' }, { en: 'Narathiwat', iata: 'NAW' }, { en: 'Nong Bua Lamphu', iata: 'UTH' }, { en: 'Nong Khai', iata: 'UTH' },
+    { en: 'Nonthaburi', iata: 'DMK' }, { en: 'Pathum Thani', iata: 'DMK' }, { en: 'Pattani', iata: 'NAW' }, { en: 'Phang Nga', iata: 'HKT' },
+    { en: 'Phatthalung', iata: 'HDY' }, { en: 'Phayao', iata: 'CEI' }, { en: 'Phetchabun', iata: 'PHY' }, { en: 'Phetchaburi', iata: 'HHQ' },
+    { en: 'Phichit', iata: 'PHS' }, { en: 'Phitsanulok', iata: 'PHS' }, { en: 'Phrae', iata: 'PRH' }, { en: 'Prachinburi', iata: 'BKK' },
+    { en: 'Prachuap Khiri Khan', iata: 'HHQ' }, { en: 'Ranong', iata: 'UNN' }, { en: 'Ratchaburi', iata: 'BKK' }, { en: 'Rayong', iata: 'UTP' },
+    { en: 'Roi Et', iata: 'ROI' }, { en: 'Sa Kaeo', iata: 'BKK' }, { en: 'Sakon Nakhon', iata: 'SNO' }, { en: 'Samut Prakan', iata: 'BKK' },
+    { en: 'Samut Sakhon', iata: 'BKK' }, { en: 'Samut Songkhram', iata: 'BKK' }, { en: 'Saraburi', iata: 'BKK' }, { en: 'Satun', iata: 'HDY' },
+    { en: 'Sing Buri', iata: 'BKK' }, { en: 'Sisaket', iata: 'UBP' }, { en: 'Songkhla', iata: 'HDY' }, { en: 'Hat Yai', iata: 'HDY' },
+    { en: 'Suphan Buri', iata: 'BKK' }, { en: 'Surat Thani', iata: 'URT' }, { en: 'Surin', iata: 'BFV' }, { en: 'Tak', iata: 'MAQ' },
+    { en: 'Mae Sot', iata: 'MAQ' }, { en: 'Trang', iata: 'TST' }, { en: 'Trat', iata: 'TDX' }, { en: 'Ubon Ratchathani', iata: 'UBP' },
+    { en: 'Udon Thani', iata: 'UTH' }, { en: 'Uthai Thani', iata: 'BKK' }, { en: 'Uttaradit', iata: 'PHS' }, { en: 'Yala', iata: 'NAW' },
+    { en: 'Yasothon', iata: 'UBP' }
+  ]
+};
+
+const norm = (s: string) => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/ı/g, 'i').replace(/[^a-z0-9]+/g, ' ').trim();
+
+/** Yazılan yeri listede bul (büyük/küçük harf, aksan ve "koh/ko" farkına aldırmadan) */
+export const findPlace = (code: string, q: string): Place | undefined => {
+  const n = norm(q).replace(/^ko /, 'koh ');
+  return (PLACES[code] || []).find((p) => norm(p.en) === n);
+};

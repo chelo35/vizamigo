@@ -128,13 +128,17 @@ const CountryHero: React.FC<{ code: string; passport: string; onBack: () => void
           {heroVideo && <video className="vz-chero-video" src={heroVideo} poster={`/videos/${HERO_VIDEO[code]}-poster.webp`} autoPlay muted loop playsInline preload="auto" onPlaying={(e) => e.currentTarget.classList.add('on')} />}
         </div>
         <div className="vz-wrap vz-chero-in">
-          <button type="button" className="vz-back" onClick={onBack}>
-            <Icon name="back" size={18} duo={false} />
-            <span>{l('Keşfet', 'Explore', 'Entdecken', 'Explorar', 'Обзор')}</span>
-          </button>
-          <span className="vz-row-flex">{passport === code ? <span className="vz-badge big tone-ok">{l('Kendi ülken', 'Your country', 'Dein Land', 'Tu país', 'Ваша страна')}</span> : <VisaBadge item={item} big />}{days && passport !== code && <span className="vz-badge big tone-mute">{l(`${days} gün`, `${days} days`, `${days} Tage`, `${days} días`, `${days} дн.`)}</span>}</span>
-          <h1><Flag code={code} size="lg" /><span className="vz-h1-main">{name}</span><span className="sr-only"> — {h1Rest}</span></h1>
-          <p>{[geog.capital, geog.currencyName, geog.callingCode].filter(Boolean).join(' · ')}</p>
+          <span className="vz-row-flex vz-chero-top">
+            <button type="button" className="vz-back" onClick={onBack}>
+              <Icon name="back" size={18} duo={false} />
+              <span>{l('Keşfet', 'Explore', 'Entdecken', 'Explorar', 'Обзор')}</span>
+            </button>
+            {passport === code ? <span className="vz-badge big tone-ok">{l('Kendi ülken', 'Your country', 'Dein Land', 'Tu país', 'Ваша страна')}</span> : <VisaBadge item={item} big />}
+          </span>
+          <div className="vz-chero-title">
+            <h1><Flag code={code} size="lg" /><span className="vz-h1-main">{name}</span><span className="sr-only"> — {h1Rest}</span></h1>
+            <p>{[geog.capital, geog.currencyName, geog.callingCode].filter(Boolean).join(' · ')}</p>
+          </div>
           {visual.landmark && <span className="vz-chero-cap">{visual.landmark}</span>}
         </div>
       </section>

@@ -14,6 +14,7 @@ import { tpLinks, tpLogo, stay22, s22Flights, s22Cars, gygLink, STAY22_AID, TWEL
 import { TOURS, PACKAGES, LIVE } from '../data/tours';
 import ESIM from '../data/esimPrices.json';
 import { TRANSFER_ROUTES, kiwiRouteUrl, scooterUrl } from '../data/transferRoutes';
+import { PLACES, findPlace } from '../data/countryPlaces';
 import { CITIES, PRICES_CHECKED, SAFETYWING_4W_USD, carCityUrl, type CarClass } from '../data/cityPrices';
 import { thirdPartyAllowed } from '../utils/consent';
 
@@ -110,6 +111,18 @@ const inTurkey = () => {
   }
 };
 
+/** Bölüm içi yer arama: ülkedeki her il / ada yazılabilir (ana şehir listesindeki önerilerle) */
+const PlaceQ: React.FC<{ code: string; id: string; onPick: (v: string) => void }> = ({ code, id, onPick }) => {
+  const { l } = useI18n();
+  const [v, setV] = useState('');
+  return (
+    <form className="vz-bk-cityq sm" onSubmit={(e) => { e.preventDefault(); const q = v.trim(); if (q) { onPick(findPlace(code, q)?.en || q); setV(''); } }}>
+      <input list={`vz-cities-${code}`} id={id} value={v} onChange={(e) => setV(e.target.value)} placeholder={l('Başka şehir ya da ada yaz…', 'Type another city or island…', 'Andere Stadt oder Insel…', 'Otra ciudad o isla…', 'Другой город или остров…')} aria-label={l('Şehir ara', 'Search city', 'Stadt suchen', 'Buscar ciudad', 'Поиск города')} />
+      <button type="submit">{l('Göster', 'Show', 'Zeigen', 'Mostrar', 'Показать')}</button>
+    </form>
+  );
+};
+
 /** Ulaşım türü rozeti: her türün kendi rengi (tren kırmızı, otobüs mavi, feribot turkuaz…) */
 const MODE_PATH: Record<string, string> = {
   train: 'M7 3h10a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V6a3 3 0 0 1 3-3zM4 11h16M8 21l-2-3M16 21l2-3',
@@ -117,7 +130,9 @@ const MODE_PATH: Record<string, string> = {
   ferry: 'M3 18c2 1.5 4 1.5 6 0 2 1.5 4 1.5 6 0 2 1.5 4 1.5 6 0M5 15l-1-4h16l-1 4M8 11V7h8v4M12 4v3',
   van: 'M3 16V7h12l5 5v4h-2M15 7v5h5M9 16.5h5M5 16.5a2 2 0 1 0 4 0 2 2 0 1 0-4 0M14 16.5a2 2 0 1 0 4 0 2 2 0 1 0-4 0',
   charter: 'M5 16H3v-4l2-5h14l2 5v4h-2M10 7V4h4v3M3 12h18M9.5 16.5h5M5.5 16.5a2 2 0 1 0 4 0 2 2 0 1 0-4 0M14.5 16.5a2 2 0 1 0 4 0 2 2 0 1 0-4 0',
-  avia: 'M2 16l20-8-3 9-6-2-3 4v-5l9-6-11 5z'
+  avia: 'M2 16l20-8-3 9-6-2-3 4v-5l9-6-11 5z',
+  car: 'M5 16H3v-4l2-5h14l2 5v4h-2M3 12h18M9.5 16.5h5M5.5 16.5a2 2 0 1 0 4 0 2 2 0 1 0-4 0M14.5 16.5a2 2 0 1 0 4 0 2 2 0 1 0-4 0',
+  scooter: 'M5 17a2.5 2.5 0 1 0 5 0 2.5 2.5 0 1 0-5 0M15 17a2.5 2.5 0 1 0 5 0 2.5 2.5 0 1 0-5 0M10 17h5l2-7h-3M14 7h3M7.5 14.5 10 10h4'
 };
 const ModeBadge: React.FC<{ k: string; title?: string }> = ({ k, title }) => (
   <span className={`vz-gm k-${k}`} title={title} aria-hidden={title ? undefined : true}>
@@ -165,7 +180,7 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
     setCityQ('');
   }, [code]);
   const custom = cityId.startsWith('q:') ? cityId.slice(2) : '';
-  const city = custom ? { id: cityId, en: custom } : cities.find((c) => c.id === cityId) || cities[0];
+  const city = custom ? { id: cityId, en: custom, iata: findPlace(code, custom)?.iata } : cities.find((c) => c.id === cityId) || cities[0];
   const toIata = city?.iata || (GEO_DATA[code]?.mainHub || '').split('/')[0];
   const countryEn = getCountryName(code, 'en');
   const geoEn = useMemo(() => getCountryGeography(code, 'en'), [code]);
@@ -307,6 +322,10 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
     ...(hotelPreset === 'rated' ? { minguestrating: '8' } : {}),
     ...(hotelPreset === 'stars' ? { minstarrating: '4' } : {})
   };
+  // Turlar seçilen şehre göre; paket turların altında aynı tarihlerin en ucuz uçağı
+  const tCity = city?.en || cityEn;
+  const pkgFl = fl && fl.res.length ? [...fl.res].sort((x, y) => x.price - y.price)[0] : null;
+  const [rentTab, setRentTab] = useState<'car' | 'moto'>('car');
   const [hotelArea, setHotelArea] = useState('');
   const [tourArea, setTourArea] = useState('');
   useEffect(() => {
@@ -324,16 +343,17 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
   // Listede olmayan bir şehir/bölge: otel, tur ve haritalar o yere göre açılır
   const citySuggest = useMemo(() => {
     const g = getCountryGeography(code, 'en');
-    return [...cities.map((c) => c.en), g.capital, ...g.majorCities, ...g.touristRegions].filter((x, i, a) => x && a.indexOf(x) === i);
+    return [...cities.map((c) => c.en), ...(PLACES[code] || []).map((p) => p.en), g.capital, ...g.majorCities, ...g.touristRegions].filter((x, i, a) => x && a.indexOf(x) === i);
   }, [code, cities]);
   const searchCity = (raw: string) => {
     const q = raw.trim();
     if (!q) return;
     const hit = cities.find((c) => c.en.toLowerCase() === q.toLowerCase() || c.id === q.toLowerCase());
     if (hit) return pickCity(hit.id);
-    setCityId(`q:${q}`);
-    setHotelArea(q);
-    setTourArea(q);
+    const name = findPlace(code, q)?.en || q;
+    setCityId(`q:${name}`);
+    setHotelArea(name);
+    setTourArea(name);
   };
   const routes = (TRANSFER_ROUTES[code] || []).filter((r) => !cityId || custom || !r.city || r.city === cityId);
   const shownRoutes = routes.length ? routes : TRANSFER_ROUTES[code] || [];
@@ -508,6 +528,7 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
             <button key={a.en} type="button" role="tab" aria-selected={(hotelArea || areas[0]?.en) === a.en} className={(hotelArea || areas[0]?.en) === a.en ? 'on' : ''} onClick={() => setHotelArea(a.en)}>{a.name}</button>
           ))}
         </div>
+        <PlaceQ code={code} id={`vz-hq-${code}`} onPick={setHotelArea} />
         {!hotelLive ? (
           <>
             <div className="vz-hq">
@@ -551,15 +572,24 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
 
       <Sec id="bk-tours" icon="ticket" title={l('Turlar ve aktiviteler', 'Tours & activities', 'Touren & Aktivitäten', 'Tours y actividades', 'Экскурсии и развлечения')}>
         <div className="vz-bk-chips" role="tablist" aria-label={l('Yer', 'Place', 'Ort', 'Lugar', 'Место')}>
-          {[...(tourArea && tourArea !== cityEn ? [tourArea] : []), cityEn, ...sights].filter((x, i, a) => a.indexOf(x) === i).map((s) => (
-            <button key={s} type="button" role="tab" aria-selected={(tourArea || cityEn) === s} className={(tourArea || cityEn) === s ? 'on' : ''} onClick={() => setTourArea(s)}>{s === cityEn ? (GEO_DATA[code]?.capital ? capitalName(code, language, GEO_DATA[code].capital) : s) : s}</button>
+          {[...(tourArea && tourArea !== tCity ? [tourArea] : []), tCity, ...sights].filter((x, i, a) => a.indexOf(x) === i).map((s) => (
+            <button key={s} type="button" role="tab" aria-selected={(tourArea || tCity) === s} className={(tourArea || tCity) === s ? 'on' : ''} onClick={() => setTourArea(s)}>{s === cityEn ? (GEO_DATA[code]?.capital ? capitalName(code, language, GEO_DATA[code].capital) : s) : s}</button>
           ))}
         </div>
-        <TourShowcase q={tourArea || cityEn} country={countryEn} money={(v: number, c: string) => money(v * getCrossRate(c, cur))} fallback={<Stay22Frame mode="experience" address={`${tourArea || cityEn}, ${countryEn}`} trip={trip} campaign={`cp_${code.toLowerCase()}_exp`} title={l('Turlar, biletler ve fiyatlar', 'Tours, tickets and prices', 'Touren, Tickets und Preise', 'Tours, entradas y precios', 'Экскурсии, билеты и цены')} />} />
+        <PlaceQ code={code} id={`vz-tq-${code}`} onPick={setTourArea} />
+        <TourShowcase q={tourArea || tCity} country={countryEn} money={(v: number, c: string) => money(v * getCrossRate(c, cur))} fallback={<Stay22Frame mode="experience" address={`${tourArea || tCity}, ${countryEn}`} trip={trip} campaign={`cp_${code.toLowerCase()}_exp`} title={l('Turlar, biletler ve fiyatlar', 'Tours, tickets and prices', 'Touren, Tickets und Preise', 'Tours, entradas y precios', 'Экскурсии, билеты и цены')} />} />
         {pkg && (
           <div className="vz-bk-pkg">
             <b>{l('Hazır paket turlar', 'Package tours', 'Pauschalrundreisen', 'Circuitos', 'Пакетные туры')} · {pkg.route}</b>
             <LiveTours pkg={pkg.id} />
+            {pkgFl && (
+              <a className="vz-pkg-fl" href={aviaLink} target="_blank" rel="noopener noreferrer sponsored">
+                <Icon name="plane" size={16} duo={false} />
+                <span>{l(`Aynı tarihlerde uçak: ${fromIata} → ${toIata}, ${dates}`, `Flights for these dates: ${fromIata} → ${toIata}, ${dates}`, `Flüge zu diesen Daten: ${fromIata} → ${toIata}, ${dates}`, `Vuelos en estas fechas: ${fromIata} → ${toIata}, ${dates}`, `Перелёт на эти даты: ${fromIata} → ${toIata}, ${dates}`)}</span>
+                <b>~{money(pkgFl.price, fl!.cur)}</b>
+                <small>{l('kişi başı · Aviasales', 'per person · Aviasales', 'pro Person · Aviasales', 'por persona · Aviasales', 'на человека · Aviasales')} ›</small>
+              </a>
+            )}
           </div>
         )}
         <Picks label={l('Tur sitesini seç:', 'Choose a tour site:', 'Tourseite wählen:', 'Elige un sitio:', 'Выберите сайт:')} items={tourPicks} k={`t${code}`} />
@@ -584,7 +614,7 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
       </Sec>
 
       {ground.length > 0 && (
-        <Sec id="bk-ground" icon="transit" title={l(`${groundCity} çıkışlı tren, otobüs ve feribot`, `Trains, buses & ferries from ${groundCity}`, `Zug, Bus & Fähre ab ${groundCity}`, `Trenes, buses y ferris desde ${groundCity}`, `Поезда, автобусы и паромы из ${groundCity}`)} note={l('Fiyat, o rotadaki en ucuz seçeneğin kişi başı başlangıç fiyatıdır (12Go). Türü seçersen o türün seferleri açılır; saatler ve kesin fiyat seçtiğin tarihle 12Go’da.', 'Lowest "from" prices via 12Go, per person. Times and final price open on 12Go with your date.', 'Ab-Preise über 12Go, pro Person. Zeiten und Endpreis mit deinem Datum auf 12Go.', 'Precios "desde" de 12Go, por persona. Horarios y precio final en 12Go con tu fecha.', 'Цены «от» через 12Go, за человека. Расписание и итоговая цена — на 12Go на вашу дату.')}>
+        <Sec id="bk-ground" icon="transit" title={l(`${groundCity} çıkışlı tren, otobüs ve feribot`, `Trains, buses & ferries from ${groundCity}`, `Zug, Bus & Fähre ab ${groundCity}`, `Trenes, buses y ferris desde ${groundCity}`, `Поезда, автобусы и паромы из ${groundCity}`)} note={l('"’den" fiyatı, o rotadaki en ucuz seçeneğin (tür fark etmeksizin) kişi başı başlangıç fiyatıdır (12Go). Bir tür seçince o türün saat ve fiyatları seçtiğin tarihle 12Go’da açılır.', 'Lowest "from" prices via 12Go, per person. Times and final price open on 12Go with your date.', 'Ab-Preise über 12Go, pro Person. Zeiten und Endpreis mit deinem Datum auf 12Go.', 'Precios "desde" de 12Go, por persona. Horarios y precio final en 12Go con tu fecha.', 'Цены «от» через 12Go, за человека. Расписание и итоговая цена — на 12Go на вашу дату.')}>
           <div className="vz-bk-chips sm" role="tablist" aria-label={l('Ulaşım türü', 'Transport type', 'Verkehrsmittel', 'Tipo de transporte', 'Тип транспорта')}>
             <button type="button" role="tab" aria-selected={!gMode} className={!gMode ? 'on' : ''} onClick={() => setGMode('')}>{l('Hepsi', 'All', 'Alle', 'Todos', 'Все')}</button>
             {gModesHere.map((m) => (
@@ -602,7 +632,11 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
           <div className="vz-bk-fares">
             {gShown.map((g) => (
               <a key={g.slug} className="vz-qd-fare" href={groundUrl(g)} target="_blank" rel="noopener noreferrer sponsored">
-                <b>{l('', '', 'ab ', 'desde ', 'от ')}~{usdTo(g.usd)}{l('’den', '', '', '', '')}</b>
+                {gMode ? (
+                  <b className="vz-gr-see">{l(`${GMODES.find((m) => m.k === gMode)?.t} saat ve fiyatları`, `${GMODES.find((m) => m.k === gMode)?.t} times & prices`, `${GMODES.find((m) => m.k === gMode)?.t}: Zeiten & Preise`, `${GMODES.find((m) => m.k === gMode)?.t}: horarios y precios`, `${GMODES.find((m) => m.k === gMode)?.t}: расписание и цены`)} ›</b>
+                ) : (
+                  <b>{l('', '', 'ab ', 'desde ', 'от ')}~{usdTo(g.usd)}{l('’den', '', '', '', '')}</b>
+                )}
                 <span>{groundCity} → {g.to}</span>
                 <small className="vz-gr-modes">{g.modes.map((x) => modeOf(x)).filter((m): m is NonNullable<typeof m> => !!m && (!gMode || m.k === gMode)).map((m) => <ModeBadge key={m.k} k={m.k} title={m.t} />)}</small>
               </a>
@@ -644,29 +678,45 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
 
       <div className="vz-bk-two">
         <Sec id="bk-car" icon="car" title={l('Araç ve scooter kiralama', 'Car & scooter rental', 'Auto & Roller mieten', 'Coches y motos', 'Аренда авто и скутеров')}>
-          {city?.car?.usd && (
-            <>
-              <b className="vz-bk-op">{city.en} · EconomyBookings · {l('günlük, yaklaşık', 'per day, approx.', 'pro Tag, ca.', 'por día, aprox.', 'в день, ок.')}</b>
-              <div className="vz-bk-fares">
-                {(Object.entries(city.car.usd) as [CarClass, number][]).sort((a, b) => a[1] - b[1]).slice(0, 4).map(([k, v], i) => (
-                  <a key={k} className={`vz-qd-fare${i === 0 ? ' best' : ''}`} href={carCityUrl(city.car!.path)} target="_blank" rel="noopener noreferrer sponsored">
-                    <b>~{usdTo(v)}</b>
-                    <span>{carLabel[k]}</span>
-                    <small>{l('Araçları gör', 'See cars', 'Autos ansehen', 'Ver coches', 'Смотреть')} ›</small>
-                  </a>
-                ))}
-              </div>
-            </>
-          )}
-          {city?.car && !city.car.usd && (
-            <a className="vz-bk-cta" href={carCityUrl(city.car.path)} target="_blank" rel="noopener noreferrer sponsored">{l(`${city.en} araç kiralama fiyatlarını gör`, `See car rental prices in ${city.en}`, `Mietwagenpreise in ${city.en}`, `Precios de alquiler en ${city.en}`, `Цены аренды авто: ${city.en}`)} <AdTag /></a>
-          )}
           {cities.some((c) => c.moto) && (
+            <div className="vz-bk-chips" role="tablist" aria-label={l('Kiralık araç türü', 'Rental type', 'Mietart', 'Tipo de alquiler', 'Тип аренды')}>
+              <button type="button" role="tab" aria-selected={rentTab === 'car'} className={rentTab === 'car' ? 'on' : ''} onClick={() => setRentTab('car')}><ModeBadge k="car" /> {l('Araba', 'Car', 'Auto', 'Coche', 'Авто')}</button>
+              <button type="button" role="tab" aria-selected={rentTab === 'moto'} className={rentTab === 'moto' ? 'on' : ''} onClick={() => setRentTab('moto')}><ModeBadge k="scooter" /> {l('Motor / scooter', 'Motorbike / scooter', 'Motorrad / Roller', 'Moto / scooter', 'Мото / скутер')}</button>
+            </div>
+          )}
+          {rentTab === 'car' || !cities.some((c) => c.moto) ? (
             <>
-              <b className="vz-bk-op">{l('Motor ve scooter', 'Motorbikes & scooters', 'Motorräder & Roller', 'Motos y scooters', 'Мотоциклы и скутеры')} · Rentalmotorbike{city?.moto?.eur ? ` · ${city.en}: ${l('günlüğü', 'from', 'ab', 'desde', 'от')} ~${eurTo(city.moto.eur)}${l("'den", '/day', '/Tag', '/día', '/день')}` : ''}</b>
-              <div className="vz-bk-chips sm">
-                {cities.filter((c) => c.moto).map((c) => (
-                  <a key={c.id} className={c.id === city?.id ? 'on' : ''} href={scooterUrl(c.moto!.slug)} target="_blank" rel="noopener noreferrer sponsored">🛵 {c.en}{c.moto!.eur ? ` · ~${eurTo(c.moto!.eur)}` : ''} ›</a>
+            {city?.car?.usd && (
+              <>
+                <b className="vz-bk-op">{city.en} · EconomyBookings · {l('günlük, yaklaşık', 'per day, approx.', 'pro Tag, ca.', 'por día, aprox.', 'в день, ок.')}</b>
+                <div className="vz-bk-fares">
+                  {(Object.entries(city.car.usd) as [CarClass, number][]).sort((a, b) => a[1] - b[1]).slice(0, 4).map(([k, v], i) => (
+                    <a key={k} className={`vz-qd-fare${i === 0 ? ' best' : ''}`} href={carCityUrl(city.car!.path)} target="_blank" rel="noopener noreferrer sponsored">
+                      <b>~{usdTo(v)}</b>
+                      <span>{carLabel[k]}</span>
+                      <small>{l('Araçları gör', 'See cars', 'Autos ansehen', 'Ver coches', 'Смотреть')} ›</small>
+                    </a>
+                  ))}
+                </div>
+              </>
+            )}
+            {!city?.car && (
+              <p className="vz-bk-note">{l(`${city?.en || cityEn} için kayıtlı araç fiyatımız yok; aşağıdaki sitelerde seçtiğin tarihlerle bak.`, `No saved car prices for ${city?.en || cityEn}; check the sites below with your dates.`, `Keine gespeicherten Preise für ${city?.en || cityEn}.`, `Sin precios guardados para ${city?.en || cityEn}.`, `Нет сохранённых цен для ${city?.en || cityEn}.`)}</p>
+            )}
+            {city?.car && !city.car.usd && (
+              <a className="vz-bk-cta" href={carCityUrl(city.car.path)} target="_blank" rel="noopener noreferrer sponsored">{l(`${city.en} araç kiralama fiyatlarını gör`, `See car rental prices in ${city.en}`, `Mietwagenpreise in ${city.en}`, `Precios de alquiler en ${city.en}`, `Цены аренды авто: ${city.en}`)} <AdTag /></a>
+            )}
+            </>
+          ) : (
+            <>
+              <b className="vz-bk-op">Rentalmotorbike · {l('günlük kiralama, başlayan fiyat', 'daily rental, from', 'pro Tag, ab', 'por día, desde', 'в день, от')}</b>
+              <div className="vz-bk-fares">
+                {[...cities.filter((c) => c.moto && c.id === city?.id), ...cities.filter((c) => c.moto && c.id !== city?.id)].map((c) => (
+                  <a key={c.id} className={`vz-qd-fare${c.id === city?.id ? ' best' : ''}`} href={scooterUrl(c.moto!.slug)} target="_blank" rel="noopener noreferrer sponsored">
+                    <b>{c.moto!.eur ? `~${eurTo(c.moto!.eur)}` : l('Fiyatları gör', 'See prices', 'Preise', 'Ver precios', 'Цены')}</b>
+                    <span>{c.en}</span>
+                    <small>{l('Motor ve scooter', 'Bikes & scooters', 'Motorräder & Roller', 'Motos y scooters', 'Мото и скутеры')} ›</small>
+                  </a>
                 ))}
               </div>
             </>

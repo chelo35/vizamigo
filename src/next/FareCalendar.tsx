@@ -64,7 +64,7 @@ export const FareCalendar: React.FC<{
 
   const compact = (v: number) => {
     try {
-      return new Intl.NumberFormat(loc, { notation: 'compact', maximumFractionDigits: v >= 10000 ? 0 : 1 }).format(v);
+      return new Intl.NumberFormat(loc, { maximumFractionDigits: 0 }).format(Math.round(v));
     } catch {
       return String(v);
     }
@@ -98,6 +98,16 @@ export const FareCalendar: React.FC<{
           );
         })}
       </div>
+      {(() => {
+        const sx = res?.days[dep];
+        return sx ? (
+          <div className="vz-fcal-pick" aria-live="polite">
+            <span>{new Date(`${dep}T12:00:00`).toLocaleDateString(loc, { day: 'numeric', month: 'short' })}{sx.ret ? ` → ${new Date(`${sx.ret}T12:00:00`).toLocaleDateString(loc, { day: 'numeric', month: 'short' })}` : ''}</span>
+            <b>{money(sx.price, res!.currency)}</b>
+            <small>{l('kişi başı', 'per person', 'pro Person', 'por persona', 'на человека')}</small>
+          </div>
+        ) : null;
+      })()}
       <div className="vz-fcal-grid">
         {wk.map((w, i) => <span key={`w${i}`} className="vz-fcal-wk">{w}</span>)}
         {Array.from({ length: lead }, (_, i) => <span key={`e${i}`} />)}
