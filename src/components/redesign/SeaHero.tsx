@@ -61,7 +61,7 @@ export const SeaHero: React.FC<Props> = ({ onSearch, chips = [], searchSlot }) =
       if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
       if ((navigator as Navigator & { connection?: { saveData?: boolean } }).connection?.saveData) return;
     } catch { /* yok */ }
-    const t = window.setTimeout(() => setHeroVideo(`/videos/home-hero${window.innerWidth < 820 ? '-720' : ''}.mp4`), 700);
+    const t = window.setTimeout(() => setHeroVideo(`/videos/home-hero2${window.innerWidth < 820 ? '-720' : ''}.mp4`), 700);
     return () => window.clearTimeout(t);
   }, []);
 
@@ -126,8 +126,8 @@ export const SeaHero: React.FC<Props> = ({ onSearch, chips = [], searchSlot }) =
         <div className="rd-wave w3"><svg viewBox="0 0 2400 240" preserveAspectRatio="none"><path d="M0 180 C 150 160 300 200 600 180 C 900 160 1050 200 1200 180 C 1350 160 1500 200 1800 180 C 2100 160 2250 200 2400 180 V240 H0 Z" /></svg></div>
       </div>
       <div className="rd-photo" aria-hidden="true">
-        <img src="/images/hero/home2-1400.webp" srcSet="/images/hero/home2-800.webp 800w, /images/hero/home2-1400.webp 1400w, /images/hero/home2-1920.webp 1920w" sizes="100vw" alt="" fetchPriority="high" />
-        {heroVideo && <video src={heroVideo} poster="/videos/home-hero-poster.webp" autoPlay muted loop playsInline preload="auto" onPlaying={(e) => e.currentTarget.classList.add('on')} />}
+        <img src="/images/hero/home3-1400.webp" srcSet="/images/hero/home3-800.webp 800w, /images/hero/home3-1400.webp 1400w, /images/hero/home3-1920.webp 1920w" sizes="100vw" alt="" fetchPriority="high" />
+        {heroVideo && <video src={heroVideo} poster="/videos/home-hero2-poster.webp" autoPlay muted loop playsInline preload="auto" onPlaying={(e) => e.currentTarget.classList.add('on')} />}
       </div>
       <div className="rd-hero-in">
         <span className="rd-eyebrow">{l('Pasaport · Vize · Yolculuk', 'Passport · Visa · Travel', 'Pass · Visum · Reise', 'Pasaporte · Visado · Viaje', 'Паспорт · Виза · Поездка')}</span>
