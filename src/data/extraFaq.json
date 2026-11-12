@@ -118,6 +118,42 @@
           "TR"
         ]
       }
+    ],
+    "TJ": [
+      {
+        "q": "Tacikistan vize istiyor mu?",
+        "a": "Evet. Tacikistan 20 Nisan 2024'ten beri umuma mahsus (bordo) pasaportlu Türk vatandaşlarından vize istiyor. Önce visa.gov.tj üzerinden seyahat amacına uygun vize için ön başvuru yapılır, ardından başvuru belgelerle birlikte Ankara Büyükelçiliği veya İstanbul Başkonsolosluğu'na verilir. Varıştan sonra 10 iş günü içinde adres kaydı zorunludur.",
+        "u": "https://www.mfa.gov.tr/tacikistan-seyahat-edecek-turk-vatandaslarinin-dikkatine.tr.mfa",
+        "h": "T.C. Dışişleri Bakanlığı: Tacikistan'a seyahat edecek Türk vatandaşlarının dikkatine",
+        "d": "2026-11-12",
+        "p": [
+          "TR"
+        ]
+      }
+    ],
+    "CR": [
+      {
+        "q": "Kosta Rika vize istiyor mu?",
+        "a": "Hayır. Umuma mahsus pasaportlu Türk vatandaşları Kosta Rika'ya turistik amaçla 180 gün içinde 30 güne kadar vizesiz gidebilir. Kalış süresi, ülkeye girdikten sonra zamanında başvurulursa 90 güne kadar uzatılabilir.",
+        "u": "https://www.mfa.gov.tr/turk-vatandaslarinin-tabi-oldugu-vize-uygulamalari.tr.mfa",
+        "h": "T.C. Dışişleri Bakanlığı: Türk vatandaşlarının tabi olduğu vize uygulamaları",
+        "d": "2026-11-12",
+        "p": [
+          "TR"
+        ]
+      }
+    ],
+    "SA": [
+      {
+        "q": "Suudi Arabistan vize istiyor mu? (2026)",
+        "a": "Evet, ama önceden konsolosluğa gitmek gerekmez. Umuma mahsus pasaportlu Türk vatandaşları turistik vizeyi internetten e-vize olarak ya da havalimanında varışta alabilir. Bu turist vizeleri hac için geçerli değildir.",
+        "u": "https://www.mfa.gov.tr/turk-vatandaslarinin-tabi-oldugu-vize-uygulamalari.tr.mfa",
+        "h": "T.C. Dışişleri Bakanlığı: Türk vatandaşlarının tabi olduğu vize uygulamaları",
+        "d": "2026-11-12",
+        "p": [
+          "TR"
+        ]
+      }
     ]
   },
   "en": {
@@ -164,6 +200,18 @@
         "d": "2026-11-11",
         "p": [
           "IN"
+        ]
+      }
+    ],
+    "GM": [
+      {
+        "q": "Do US citizens need a visa for The Gambia?",
+        "a": "Yes. US citizens need a visa for The Gambia, but you can get it before you travel or on arrival. A visa on arrival costs about $100–105 and must be paid in cash (US dollars or dalasi). Your passport must be valid for the length of your stay and have one blank page for the entry stamp.",
+        "u": "https://travel.state.gov/en/international-travel/travel-advisories/the-gambia.html",
+        "h": "U.S. Department of State: The Gambia travel information",
+        "d": "2026-11-12",
+        "p": [
+          "US"
         ]
       }
     ]
@@ -214,6 +262,42 @@
         "u": "https://gov.uz/en/mfa/pages/o-zbekiston-respublikasi-vizasi",
         "h": "Außenministerium Usbekistan",
         "d": "2026-11-11",
+        "p": [
+          "CH"
+        ]
+      }
+    ],
+    "CN": [
+      {
+        "q": "Gilt die visumfreie Einreise nach China auch 2027?",
+        "a": "Bisher nicht bestätigt. Deutsche dürfen derzeit bis zu 30 Tage ohne Visum nach China einreisen (Tourismus, Geschäft, Besuch, Transit) – diese Regel gilt laut Auswärtigem Amt bis 31. Dezember 2026. Eine Verlängerung für Deutsche ist noch nicht angekündigt; für Reisen ab 2027 vorher prüfen. Innerhalb von 24 Stunden nach Einreise ist eine Anmeldung nötig (im Hotel automatisch).",
+        "u": "https://www.auswaertiges-amt.de/de/ReiseUndSicherheit/200466",
+        "h": "Auswärtiges Amt: China – Reise- und Sicherheitshinweise",
+        "d": "2026-11-12",
+        "p": [
+          "DE"
+        ]
+      }
+    ],
+    "ZW": [
+      {
+        "q": "Brauchen Deutsche ein Visum für Simbabwe? Gibt es ein Visum bei Ankunft?",
+        "a": "Ja, ein Visum ist nötig, es wird aber bei der Einreise an den Flughäfen Harare und Victoria Falls sowie an den Landesgrenzen erteilt: 30 Tage, 30 USD. Ein Online-Antrag über evisa.gov.zw ist möglich. Der Reisepass muss noch mindestens 6 Monate über den Aufenthalt hinaus gültig sein und mindestens 4 leere Seiten haben (6 bei Transit über Südafrika).",
+        "u": "https://www.auswaertiges-amt.de/de/simbabwesicherheit/208948",
+        "h": "Auswärtiges Amt: Simbabwe – Einreise und Zoll",
+        "d": "2026-11-12",
+        "p": [
+          "DE"
+        ]
+      }
+    ],
+    "AR": [
+      {
+        "q": "Brauchen Schweizer ein Visum für Argentinien?",
+        "a": "Nein. Schweizer Staatsangehörige brauchen für touristische Aufenthalte bis 90 Tage kein Visum; nötig ist ein gültiger Reisepass. Der Aufenthalt kann bei der Migrationsbehörde in der Regel einmal um 90 Tage verlängert werden. Rück- oder Weiterreiseticket und genügend Geld können verlangt werden.",
+        "u": "https://www.eda.admin.ch/de/laenderdossier-argentinien-einreise-und-aufenthalt",
+        "h": "EDA: Argentinien – Einreise und Aufenthalt",
+        "d": "2026-11-12",
         "p": [
           "CH"
         ]
@@ -279,6 +363,15 @@
         "h": "Departamento de Estado de EE. UU.",
         "d": "2026-11-11"
       }
+    ],
+    "US": [
+      {
+        "q": "¿El ESTA es un visado?",
+        "a": "No. El ESTA es una autorización electrónica de CBP para viajar a EE. UU. sin visa, dentro del Programa de Exención de Visado, para turismo o negocios de hasta 90 días. Solo pueden pedirlo ciudadanos de países del programa (por ejemplo, España o Chile); quienes no lo son, como mexicanos o colombianos, necesitan visa B1/B2. Se solicita en la web oficial esta.cbp.dhs.gov.",
+        "u": "https://travel.state.gov/content/travel/en/us-visas/tourism-visit/visa-waiver-program.html",
+        "h": "U.S. Department of State: Visa Waiver Program",
+        "d": "2026-11-12"
+      }
     ]
   },
   "ru": {
@@ -327,6 +420,30 @@
         "d": "2026-11-11",
         "p": [
           "RU"
+        ]
+      }
+    ],
+    "NL": [
+      {
+        "q": "Нужна ли виза в Нидерланды для украинцев?",
+        "a": "С биометрическим паспортом гражданам Украины шенгенская виза не нужна: можно находиться в Шенгенской зоне до 90 дней в любые 180 дней. Без биометрического паспорта нужна виза, а подать заявление на шенгенскую визу через посольство Нидерландов или VFS Global в Киеве сейчас нельзя.",
+        "u": "https://www.netherlandsworldwide.nl/documents/frequently-asked-questions/ukraine",
+        "h": "Netherlands Worldwide: FAQ для граждан Украины",
+        "d": "2026-11-12",
+        "p": [
+          "UA"
+        ]
+      }
+    ],
+    "BR": [
+      {
+        "q": "Нужна ли казахстанцам виза в Бразилию?",
+        "a": "Нет. По соглашению о взаимной отмене виз граждане Казахстана могут находиться в Бразилии без визы до 30 дней. На границе могут попросить обратный билет, бронь жилья и подтверждение средств.",
+        "u": "https://en.tengrinews.kz/news_overview/where-kazakhstanis-can-travel-visa-free-in-2026-271660/",
+        "h": "Tengrinews: безвизовые страны для казахстанцев в 2026 году; Astana Times (2016): соглашение Казахстан–Бразилия",
+        "d": "2026-11-12",
+        "p": [
+          "KZ"
         ]
       }
     ]
