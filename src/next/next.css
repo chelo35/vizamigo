@@ -1538,3 +1538,9 @@ button.vz-tb-f { cursor: pointer; }
   .vz-hb-row { grid-template-columns: 2.2fr 1fr 1fr 0.6fr 1.2fr; }
   .vz-hb-dest { grid-column: auto; }
 }
+.vz-hb-dest { position: relative; }
+.vz-hb-sugg { position: absolute; left: -1px; right: -1px; top: calc(100% + 4px); z-index: 30; margin: 0; padding: 6px; list-style: none; background: var(--rd-surface); border: 1px solid var(--rd-line); border-radius: 14px; box-shadow: 0 16px 34px -14px rgba(20, 40, 60, 0.35); max-height: 320px; overflow-y: auto; }
+.vz-hb-sugg button { width: 100%; display: flex; align-items: baseline; justify-content: space-between; gap: 10px; padding: 10px 12px; border: 0; border-radius: 10px; background: transparent; color: var(--rd-fg); font: inherit; font-size: 15px; text-align: left; cursor: pointer; }
+.vz-hb-sugg button:hover, .vz-hb-sugg button:focus-visible { background: var(--rd-bg); outline: none; }
+.vz-hb-sugg span { font-size: 12.5px; color: var(--rd-muted); white-space: nowrap; }
+.vz-hb .vz-tb-f input:focus, .vz-hb .vz-tb-f select:focus { outline: none; box-shadow: none; }

@@ -74,15 +74,27 @@ export const HomeBooking: React.FC<{ passport: string; onOpenCountry: (code: str
     onOpenCountry(r.code);
   };
 
-  const cityOpts = useMemo(() => {
-    if (!places) return [];
-    const out: { v: string; c: string }[] = [];
-    for (const [code, list] of Object.entries(places)) {
-      const cn = getCountryName(code, language);
-      for (const p of list) out.push({ v: p.en, c: cn });
+  // Öneri listesi: yazılan metne göre en fazla 8 sonuç (binlerce seçenekli datalist mobilde donduruyordu)
+  const [open, setOpen] = useState(false);
+  const sugg = useMemo(() => {
+    const n = norm(q);
+    if (!n) return [] as { label: string; sub: string; value: string }[];
+    const out: { label: string; sub: string; value: string }[] = [];
+    for (const x of countries) {
+      if (norm(x.n).startsWith(n) || norm(x.en).startsWith(n)) out.push({ label: x.n, sub: '', value: x.n });
+      if (out.length >= 5) break;
+    }
+    if (places && n.length >= 2) {
+      for (const [code, list] of Object.entries(places)) {
+        for (const p of list) {
+          if (norm(p.en).startsWith(n) && !out.some((o) => o.value === p.en)) out.push({ label: p.en, sub: getCountryName(code, language), value: p.en });
+          if (out.length >= 8) break;
+        }
+        if (out.length >= 8) break;
+      }
     }
     return out;
-  }, [places, language]);
+  }, [q, countries, places, language]);
 
   return (
     <form className="vz-hb" onSubmit={go} aria-label={l('Tatil ara', 'Search a trip', 'Reise suchen', 'Buscar viaje', 'Поиск поездки')}>
@@ -95,18 +107,42 @@ export const HomeBooking: React.FC<{ passport: string; onOpenCountry: (code: str
         <label className={`vz-tb-f vz-hb-dest${err ? ' bad' : ''}`}>
           <small>{l('Nereye', 'Destination', 'Reiseziel', 'Destino', 'Куда')}</small>
           <input
-            list="vz-hb-list"
             value={q}
-            onChange={(e) => setQ(e.target.value)}
-            onFocus={loadPlaces}
+            onChange={(e) => {
+              setQ(e.target.value);
+              setOpen(true);
+            }}
+            onFocus={() => {
+              loadPlaces();
+              setOpen(true);
+            }}
+            onBlur={() => setTimeout(() => setOpen(false), 150)}
             placeholder={l('Ülke ya da şehir: Tayland, Bali, Paris…', 'Country or city: Thailand, Bali, Paris…', 'Land oder Stadt: Thailand, Bali, Paris…', 'País o ciudad: Tailandia, Bali, París…', 'Страна или город: Таиланд, Бали, Париж…')}
             autoComplete="off"
+            role="combobox"
+            aria-expanded={open && sugg.length > 0}
+            aria-controls="vz-hb-sugg"
             required
           />
-          <datalist id="vz-hb-list">
-            {countries.map((x) => <option key={x.c} value={x.n} />)}
-            {cityOpts.map((o, i) => <option key={`${o.v}-${i}`} value={o.v} label={o.c} />)}
-          </datalist>
+          {open && sugg.length > 0 && (
+            <ul className="vz-hb-sugg" id="vz-hb-sugg" role="listbox">
+              {sugg.map((s) => (
+                <li key={`${s.value}-${s.sub}`} role="option" aria-selected={false}>
+                  <button
+                    type="button"
+                    onMouseDown={(e) => e.preventDefault()}
+                    onClick={() => {
+                      setQ(s.value);
+                      setOpen(false);
+                    }}
+                  >
+                    <b>{s.label}</b>
+                    {s.sub && <span>{s.sub}</span>}
+                  </button>
+                </li>
+              ))}
+            </ul>
+          )}
         </label>
         <label className="vz-tb-f">
           <small>{l('Gidiş', 'Depart', 'Hinreise', 'Ida', 'Туда')}</small>
