@@ -111,7 +111,7 @@ const inTurkey = () => {
 };
 
 /** Bölüm başlık görselleri: /images/bk/{ad}-480|960.webp */
-const SEC_IMG: Record<string, string> = { 'bk-hotel': 'hotel', 'bk-tours': 'tours', 'bk-transfer': 'transfer', 'bk-ground': 'ground', 'bk-esim': 'esim', 'bk-car': 'car', 'bk-ins': 'ins' };
+const SEC_IMG: Record<string, string> = { 'bk-flight': 'flight', 'bk-hotel': 'hotel', 'bk-tours': 'tours', 'bk-transfer': 'transfer', 'bk-ground': 'ground', 'bk-esim': 'esim', 'bk-car': 'car', 'bk-ins': 'ins' };
 const Sec: React.FC<{ id: string; icon: string; title: string; note?: string; children: React.ReactNode }> = ({ id, icon, title, note, children }) => (
   <section id={id} className={`vz-bk-sec${SEC_IMG[id] ? ' has-img' : ''}`}>
     {SEC_IMG[id] ? (
