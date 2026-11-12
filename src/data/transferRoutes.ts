@@ -7,7 +7,7 @@
 /** usd: fiyat; cur 'EUR' ise değer euro'dur (Kiwitaxi o ülke sayfasında fiyatı euro gösteriyor) */
 export type TransferRoute = { slug: string; from: string; to: string; iata: string; usd: number; cur?: 'EUR'; city?: string };
 
-export const KIWI_COUNTRY: Record<string, string> = { TH: 'thailand', FR: 'france', ES: 'spain', US: 'usa', TR: 'turkey', IT: 'italy', MX: 'mexico', GB: 'united-kingdom', DE: 'germany', JP: 'japan', GR: 'greece', SA: 'saudi-arabia', AT: 'austria', CN: 'china', AE: 'uae', PT: 'portugal', CA: 'canada', MY: 'malaysia', PL: 'poland', HR: 'croatia', HU: 'hungary', EG: 'egypt', MA: 'morocco', VN: 'vietnam', ID: 'indonesia', CH: 'switzerland', CZ: 'czech-republic', SG: 'singapore', IN: 'india', DK: 'denmark', IE: 'ireland', HK: 'hong-kong', BR: 'brazil', PH: 'philippines', AU: 'australia', NZ: 'new-zealand', DO: 'dominican-republic', JO: 'jordan', TN: 'tunisia', GE: 'georgia', ME: 'montenegro', AL: 'albania', CY: 'cyprus', NO: 'norway', IS: 'iceland', QA: 'qatar', ZA: 'south-africa' };
+export const KIWI_COUNTRY: Record<string, string> = { TH: 'thailand', FR: 'france', ES: 'spain', US: 'usa', TR: 'turkey', IT: 'italy', MX: 'mexico', GB: 'united-kingdom', DE: 'germany', JP: 'japan', GR: 'greece', SA: 'saudi-arabia', AT: 'austria', CN: 'china', AE: 'uae', PT: 'portugal', CA: 'canada', MY: 'malaysia', PL: 'poland', HR: 'croatia', HU: 'hungary', EG: 'egypt', MA: 'morocco', VN: 'vietnam', ID: 'indonesia', CH: 'switzerland', CZ: 'czech-republic', SG: 'singapore', IN: 'india', DK: 'denmark', IE: 'ireland', HK: 'hong-kong', BR: 'brazil', PH: 'philippines', AU: 'australia', NZ: 'new-zealand', DO: 'dominican-republic', JO: 'jordan', TN: 'tunisia', GE: 'georgia', ME: 'montenegro', AL: 'albania', CY: 'cyprus', NO: 'norway', IS: 'iceland', QA: 'qatar', ZA: 'south-africa', SE: 'sweden', FI: 'finland', RO: 'romania', BG: 'bulgaria', SI: 'slovenia', RS: 'serbia', EE: 'estonia', AZ: 'azerbaijan', UZ: 'uzbekistan', KZ: 'kazakhstan', OM: 'oman', TW: 'taiwan', KH: 'cambodia', KE: 'kenya', TZ: 'tanzania' };
 
 export const TRANSFER_ROUTES: Record<string, TransferRoute[]> = {
   PH: [
@@ -58,6 +58,60 @@ export const TRANSFER_ROUTES: Record<string, TransferRoute[]> = {
   ZA: [
     { city: 'cape-town', slug: 'cape-town-airport-cape-town', iata: 'CPT', from: 'Cape Town', to: 'Cape Town', usd: 64 },
     { city: 'johannesburg', slug: 'johannesburg-airport-sandton', iata: 'JNB', from: 'Johannesburg', to: 'Sandton', usd: 64 }
+  ],
+  SE: [
+    { city: 'stockholm', slug: 'taxi-from-stockholm-arlanda-airport-to-stockholm', iata: 'ARN', from: 'Arlanda', to: 'Stockholm', usd: 75, cur: 'EUR' },
+    { city: 'gothenburg', slug: 'taxi-from-gothenburg-airport-to-gothenburg', iata: 'GOT', from: 'Göteborg', to: 'Göteborg', usd: 83, cur: 'EUR' }
+  ],
+  FI: [
+    { city: 'helsinki', slug: 'helsinki-airport-helsinki', iata: 'HEL', from: 'Helsinki', to: 'Helsinki', usd: 68, cur: 'EUR' }
+  ],
+  RO: [
+    { city: 'bucharest', slug: 'bucharest-henri-coanda-airport-bucharest', iata: 'OTP', from: 'Bükreş', to: 'Bükreş', usd: 48, cur: 'EUR' }
+  ],
+  BG: [
+    { city: 'sofia', slug: 'taxi-from-sofia-airport-to-sofia', iata: 'SOF', from: 'Sofya', to: 'Sofya', usd: 36, cur: 'EUR' },
+    { city: 'varna', slug: 'taxi-from-varna-airport-to-varna', iata: 'VAR', from: 'Varna', to: 'Varna', usd: 39, cur: 'EUR' },
+    { city: 'burgas', slug: 'taxi-from-burgas-airport-to-nessebar', iata: 'BOJ', from: 'Burgaz', to: 'Nessebar', usd: 53, cur: 'EUR' }
+  ],
+  SI: [
+    { city: 'ljubljana', slug: 'ljubljana-airport-ljubljana', iata: 'LJU', from: 'Ljubljana', to: 'Ljubljana', usd: 53, cur: 'EUR' },
+    { city: 'bled', slug: 'ljubljana-airport-bled', iata: 'LJU', from: 'Ljubljana', to: 'Bled', usd: 77, cur: 'EUR' }
+  ],
+  RS: [
+    { city: 'belgrade', slug: 'belgrade-airport-nikola-tesla-belgrade', iata: 'BEG', from: 'Belgrad', to: 'Belgrad', usd: 41, cur: 'EUR' }
+  ],
+  EE: [
+    { city: 'tallinn', slug: 'tallinn-airport-tallinn', iata: 'TLL', from: 'Tallinn', to: 'Tallinn', usd: 38, cur: 'EUR' }
+  ],
+  AZ: [
+    { city: 'baku', slug: 'taxi-from-baku-airport-to-baku', iata: 'GYD', from: 'Bakü', to: 'Bakü', usd: 30 }
+  ],
+  UZ: [
+    { city: 'tashkent', slug: 'tashkent-airport-tashkent', iata: 'TAS', from: 'Taşkent', to: 'Taşkent', usd: 37 },
+    { city: 'samarkand', slug: 'samarkand-airport-samarkand', iata: 'SKD', from: 'Semerkant', to: 'Semerkant', usd: 37 }
+  ],
+  KZ: [
+    { city: 'almaty', slug: 'almaty-airport-almaty', iata: 'ALA', from: 'Almatı', to: 'Almatı', usd: 32 },
+    { city: 'astana', slug: 'nur-sultan-astana-airport-nur-sultan-astana', iata: 'NQZ', from: 'Astana', to: 'Astana', usd: 38 }
+  ],
+  OM: [
+    { city: 'muscat', slug: 'muscat-airport-muscat', iata: 'MCT', from: 'Maskat', to: 'Maskat', usd: 63 }
+  ],
+  TW: [
+    { city: 'taipei', slug: 'taxi-from-taoyuan-airport-to-taipei', iata: 'TPE', from: 'Taoyuan', to: 'Taipei', usd: 75 }
+  ],
+  KH: [
+    { city: 'siem-reap', slug: 'angkor-international-airport-siem-reap', iata: 'SAI', from: 'Siem Reap', to: 'Siem Reap', usd: 55 },
+    { city: 'phnom-penh', slug: 'phnom-penh-airport-kh-phnom-penh', iata: 'KTI', from: 'Phnom Penh', to: 'Phnom Penh', usd: 60 }
+  ],
+  KE: [
+    { city: 'nairobi', slug: 'nairobi-airport-jomo-kenyatta-nairobi', iata: 'NBO', from: 'Nairobi', to: 'Nairobi', usd: 75 },
+    { city: 'mombasa', slug: 'moi-airport-mombasa', iata: 'MBA', from: 'Mombasa', to: 'Mombasa', usd: 64 }
+  ],
+  TZ: [
+    { city: 'zanzibar', slug: 'zanzibar-city-airport-zanzibar', iata: 'ZNZ', from: 'Zanzibar', to: 'Zanzibar', usd: 35 },
+    { city: 'arusha', slug: 'arusha-airport-arusha', iata: 'ARK', from: 'Arusha', to: 'Arusha', usd: 58 }
   ],
   CA: [
     { city: 'toronto', slug: 'toronto-billy-bishop-airport-toronto', iata: 'YTZ', from: 'Billy Bishop', to: 'Toronto', usd: 75 },

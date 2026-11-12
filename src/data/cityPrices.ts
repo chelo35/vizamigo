@@ -134,6 +134,87 @@ export const CITIES: Record<string, City[]> = {
     { id: 'durban', en: "Durban", iata: 'DUR' },
     { id: 'kruger', en: "Kruger Park", iata: 'MQP', tr: 'Kruger Parkı' }
   ],
+  SE: [
+    { id: 'stockholm', en: "Stockholm", iata: 'ARN' },
+    { id: 'gothenburg', en: "Gothenburg", iata: 'GOT', tr: "Göteborg" },
+    { id: 'malmo', en: "Malmö", iata: 'MMX' }
+  ],
+  FI: [
+    { id: 'helsinki', en: "Helsinki", iata: 'HEL', lr: { path: 'finland/helsinki' } },
+    { id: 'rovaniemi', en: "Rovaniemi", iata: 'RVN', lr: { path: 'finland/rovaniemi' } }
+  ],
+  RO: [
+    { id: 'bucharest', en: "Bucharest", iata: 'OTP', tr: "Bükreş", lr: { path: 'romania/bucharest', eur: 15 } },
+    { id: 'brasov', en: "Brasov", iata: 'OTP', tr: "Braşov", lr: { path: 'romania/brasov' } },
+    { id: 'cluj', en: "Cluj-Napoca", iata: 'CLJ', lr: { path: 'romania/cluj-napoca' } }
+  ],
+  BG: [
+    { id: 'sofia', en: "Sofia", iata: 'SOF', tr: "Sofya", lr: { path: 'bulgaria/sofia' } },
+    { id: 'varna', en: "Varna", iata: 'VAR', lr: { path: 'bulgaria/varna' } },
+    { id: 'burgas', en: "Burgas", iata: 'BOJ', tr: "Burgaz", lr: { path: 'bulgaria/burgas' } }
+  ],
+  SI: [
+    { id: 'ljubljana', en: "Ljubljana", iata: 'LJU', lr: { path: 'slovenia/ljubljana', eur: 9.58 } },
+    { id: 'bled', en: "Bled", iata: 'LJU' }
+  ],
+  RS: [
+    { id: 'belgrade', en: "Belgrade", iata: 'BEG', tr: "Belgrad", lr: { path: 'serbia/belgrade', eur: 14.4 } },
+    { id: 'novi-sad', en: "Novi Sad", iata: 'BEG', lr: { path: 'serbia/novi-sad' } }
+  ],
+  BA: [
+    { id: 'sarajevo', en: "Sarajevo", iata: 'SJJ', tr: "Saraybosna" },
+    { id: 'mostar', en: "Mostar", iata: 'OMO' }
+  ],
+  MT: [
+    { id: 'valletta', en: "Valletta", iata: 'MLA', lr: { path: 'malta/valletta' } },
+    { id: 'sliema', en: "Sliema", iata: 'MLA', lr: { path: 'malta/sliema' } }
+  ],
+  EE: [
+    { id: 'tallinn', en: "Tallinn", iata: 'TLL' }
+  ],
+  AZ: [
+    { id: 'baku', en: "Baku", iata: 'GYD', tr: "Bakü", lr: { path: 'azerbaijan/baku', eur: 19 } }
+  ],
+  UZ: [
+    { id: 'tashkent', en: "Tashkent", iata: 'TAS', tr: "Taşkent", lr: { path: 'uzbekistan/tashkent' } },
+    { id: 'samarkand', en: "Samarkand", iata: 'SKD', tr: "Semerkant" },
+    { id: 'bukhara', en: "Bukhara", iata: 'BHK', tr: "Buhara" }
+  ],
+  KZ: [
+    { id: 'almaty', en: "Almaty", iata: 'ALA', tr: "Almatı", lr: { path: 'kazakhstan/almaty' } },
+    { id: 'astana', en: "Astana", iata: 'NQZ' }
+  ],
+  OM: [
+    { id: 'muscat', en: "Muscat", iata: 'MCT', tr: "Maskat", lr: { path: 'oman/muscat', eur: 16 } },
+    { id: 'salalah', en: "Salalah", iata: 'SLL', lr: { path: 'oman/salalah' } }
+  ],
+  BH: [
+    { id: 'manama', en: "Manama", iata: 'BAH' }
+  ],
+  TW: [
+    { id: 'taipei', en: "Taipei", iata: 'TPE' },
+    { id: 'kaohsiung', en: "Kaohsiung", iata: 'KHH' }
+  ],
+  KH: [
+    { id: 'siem-reap', en: "Siem Reap", iata: 'SAI' },
+    { id: 'phnom-penh', en: "Phnom Penh", iata: 'KTI' }
+  ],
+  LA: [
+    { id: 'vientiane', en: "Vientiane", iata: 'VTE' },
+    { id: 'luang-prabang', en: "Luang Prabang", iata: 'LPQ' }
+  ],
+  NP: [
+    { id: 'kathmandu', en: "Kathmandu", iata: 'KTM', tr: "Katmandu" },
+    { id: 'pokhara', en: "Pokhara", iata: 'PKR' }
+  ],
+  KE: [
+    { id: 'nairobi', en: "Nairobi", iata: 'NBO' },
+    { id: 'mombasa', en: "Mombasa", iata: 'MBA' }
+  ],
+  TZ: [
+    { id: 'zanzibar', en: "Zanzibar", iata: 'ZNZ', lr: { path: 'tanzania/zanzibar', eur: 16.88 } },
+    { id: 'arusha', en: "Arusha", iata: 'ARK' }
+  ],
   NL: [
     { id: 'amsterdam', en: 'Amsterdam', iata: 'AMS' },
     { id: 'rotterdam', en: 'Rotterdam', iata: 'RTM' },

@@ -66,6 +66,66 @@ export const PLACES: Record<string, Place[]> = {
   ZA: [
     { en: "Cape Town", iata: 'CPT' }, { en: "Table Mountain", iata: 'CPT' }, { en: "Stellenbosch", iata: 'CPT' }, { en: "Garden Route", iata: 'GRJ' }, { en: "Johannesburg", iata: 'JNB' }, { en: "Sandton", iata: 'JNB' }, { en: "Kruger Park", iata: 'MQP' }, { en: "Durban", iata: 'DUR' }, { en: "Port Elizabeth", iata: 'PLZ' }, { en: "Hermanus", iata: 'CPT' }
   ],
+  SE: [
+    { en: "Stockholm", iata: 'ARN' }, { en: "Gamla Stan", iata: 'ARN' }, { en: "Gothenburg", iata: 'GOT' }, { en: "Göteborg", iata: 'GOT' }, { en: "Malmö", iata: 'MMX' }, { en: "Kiruna", iata: 'KRN' }, { en: "Abisko", iata: 'KRN' }, { en: "Uppsala", iata: 'ARN' }, { en: "Visby", iata: 'VBY' }, { en: "Gotland", iata: 'VBY' }
+  ],
+  FI: [
+    { en: "Helsinki", iata: 'HEL' }, { en: "Rovaniemi", iata: 'RVN' }, { en: "Lapland", iata: 'RVN' }, { en: "Laponya", iata: 'RVN' }, { en: "Levi", iata: 'KTT' }, { en: "Turku", iata: 'TKU' }, { en: "Tampere", iata: 'TMP' }, { en: "Porvoo", iata: 'HEL' }, { en: "Ivalo", iata: 'IVL' }, { en: "Saariselkä", iata: 'IVL' }
+  ],
+  RO: [
+    { en: "Bucharest", iata: 'OTP' }, { en: "Bükreş", iata: 'OTP' }, { en: "Brasov", iata: 'OTP' }, { en: "Braşov", iata: 'OTP' }, { en: "Bran", iata: 'OTP' }, { en: "Sinaia", iata: 'OTP' }, { en: "Sibiu", iata: 'SBZ' }, { en: "Cluj-Napoca", iata: 'CLJ' }, { en: "Sighisoara", iata: 'TGM' }, { en: "Constanta", iata: 'CND' }, { en: "Köstence", iata: 'CND' }, { en: "Timisoara", iata: 'TSR' }
+  ],
+  BG: [
+    { en: "Sofia", iata: 'SOF' }, { en: "Sofya", iata: 'SOF' }, { en: "Plovdiv", iata: 'PDV' }, { en: "Filibe", iata: 'PDV' }, { en: "Varna", iata: 'VAR' }, { en: "Golden Sands", iata: 'VAR' }, { en: "Burgas", iata: 'BOJ' }, { en: "Burgaz", iata: 'BOJ' }, { en: "Sunny Beach", iata: 'BOJ' }, { en: "Nessebar", iata: 'BOJ' }, { en: "Bansko", iata: 'SOF' }, { en: "Rila", iata: 'SOF' }, { en: "Veliko Tarnovo", iata: 'SOF' }
+  ],
+  SI: [
+    { en: "Ljubljana", iata: 'LJU' }, { en: "Bled", iata: 'LJU' }, { en: "Lake Bohinj", iata: 'LJU' }, { en: "Piran", iata: 'TRS' }, { en: "Postojna", iata: 'LJU' }, { en: "Maribor", iata: 'MBX' }, { en: "Kranjska Gora", iata: 'LJU' }
+  ],
+  RS: [
+    { en: "Belgrade", iata: 'BEG' }, { en: "Belgrad", iata: 'BEG' }, { en: "Novi Sad", iata: 'BEG' }, { en: "Niš", iata: 'INI' }, { en: "Nis", iata: 'INI' }, { en: "Zlatibor", iata: 'BEG' }, { en: "Kopaonik", iata: 'INI' }, { en: "Subotica", iata: 'BEG' }
+  ],
+  BA: [
+    { en: "Sarajevo", iata: 'SJJ' }, { en: "Saraybosna", iata: 'SJJ' }, { en: "Mostar", iata: 'OMO' }, { en: "Banja Luka", iata: 'BNX' }, { en: "Tuzla", iata: 'TZL' }, { en: "Jajce", iata: 'SJJ' }, { en: "Blagaj", iata: 'OMO' }, { en: "Kravica", iata: 'OMO' }, { en: "Trebinje", iata: 'SJJ' }
+  ],
+  MT: [
+    { en: "Valletta", iata: 'MLA' }, { en: "Sliema", iata: 'MLA' }, { en: "St. Julian's", iata: 'MLA' }, { en: "Mdina", iata: 'MLA' }, { en: "Gozo", iata: 'MLA' }, { en: "Comino", iata: 'MLA' }, { en: "Blue Lagoon", iata: 'MLA' }, { en: "Mellieha", iata: 'MLA' }, { en: "Bugibba", iata: 'MLA' }, { en: "Marsaxlokk", iata: 'MLA' }
+  ],
+  EE: [
+    { en: "Tallinn", iata: 'TLL' }, { en: "Tartu", iata: 'TAY' }, { en: "Pärnu", iata: 'TLL' }, { en: "Parnu", iata: 'TLL' }, { en: "Saaremaa", iata: 'URE' }, { en: "Lahemaa", iata: 'TLL' }
+  ],
+  AZ: [
+    { en: "Baku", iata: 'GYD' }, { en: "Bakü", iata: 'GYD' }, { en: "Gabala", iata: 'GBB' }, { en: "Gebele", iata: 'GBB' }, { en: "Sheki", iata: 'GYD' }, { en: "Şeki", iata: 'GYD' }, { en: "Gobustan", iata: 'GYD' }, { en: "Ganja", iata: 'KVD' }, { en: "Gence", iata: 'KVD' }, { en: "Nakhchivan", iata: 'NAJ' }, { en: "Nahçıvan", iata: 'NAJ' }, { en: "Shahdag", iata: 'GYD' }
+  ],
+  UZ: [
+    { en: "Tashkent", iata: 'TAS' }, { en: "Taşkent", iata: 'TAS' }, { en: "Samarkand", iata: 'SKD' }, { en: "Semerkant", iata: 'SKD' }, { en: "Bukhara", iata: 'BHK' }, { en: "Buhara", iata: 'BHK' }, { en: "Khiva", iata: 'UGC' }, { en: "Hive", iata: 'UGC' }, { en: "Urgench", iata: 'UGC' }, { en: "Fergana", iata: 'FEG' }
+  ],
+  KZ: [
+    { en: "Almaty", iata: 'ALA' }, { en: "Almatı", iata: 'ALA' }, { en: "Astana", iata: 'NQZ' }, { en: "Shymkent", iata: 'CIT' }, { en: "Çimkent", iata: 'CIT' }, { en: "Turkistan", iata: 'HSA' }, { en: "Türkistan", iata: 'HSA' }, { en: "Charyn Canyon", iata: 'ALA' }, { en: "Kolsai", iata: 'ALA' }, { en: "Shymbulak", iata: 'ALA' }, { en: "Big Almaty Lake", iata: 'ALA' }
+  ],
+  OM: [
+    { en: "Muscat", iata: 'MCT' }, { en: "Maskat", iata: 'MCT' }, { en: "Salalah", iata: 'SLL' }, { en: "Nizwa", iata: 'MCT' }, { en: "Sur", iata: 'MCT' }, { en: "Wadi Shab", iata: 'MCT' }, { en: "Wahiba Sands", iata: 'MCT' }, { en: "Musandam", iata: 'KHS' }, { en: "Khasab", iata: 'KHS' }, { en: "Jebel Akhdar", iata: 'MCT' }
+  ],
+  BH: [
+    { en: "Manama", iata: 'BAH' }, { en: "Bahrain", iata: 'BAH' }, { en: "Bahreyn", iata: 'BAH' }, { en: "Muharraq", iata: 'BAH' }, { en: "Amwaj", iata: 'BAH' }, { en: "Sakhir", iata: 'BAH' }
+  ],
+  TW: [
+    { en: "Taipei", iata: 'TPE' }, { en: "Jiufen", iata: 'TPE' }, { en: "Taroko", iata: 'HUN' }, { en: "Hualien", iata: 'HUN' }, { en: "Taichung", iata: 'RMQ' }, { en: "Sun Moon Lake", iata: 'RMQ' }, { en: "Tainan", iata: 'TNN' }, { en: "Kaohsiung", iata: 'KHH' }, { en: "Kenting", iata: 'KHH' }, { en: "Alishan", iata: 'RMQ' }
+  ],
+  KH: [
+    { en: "Siem Reap", iata: 'SAI' }, { en: "Angkor", iata: 'SAI' }, { en: "Angkor Wat", iata: 'SAI' }, { en: "Phnom Penh", iata: 'KTI' }, { en: "Sihanoukville", iata: 'KOS' }, { en: "Koh Rong", iata: 'KOS' }, { en: "Kampot", iata: 'KTI' }, { en: "Kep", iata: 'KTI' }, { en: "Battambang", iata: 'SAI' }
+  ],
+  LA: [
+    { en: "Vientiane", iata: 'VTE' }, { en: "Luang Prabang", iata: 'LPQ' }, { en: "Vang Vieng", iata: 'VTE' }, { en: "Pakse", iata: 'PKZ' }, { en: "4000 Islands", iata: 'PKZ' }, { en: "Kuang Si", iata: 'LPQ' }
+  ],
+  NP: [
+    { en: "Kathmandu", iata: 'KTM' }, { en: "Katmandu", iata: 'KTM' }, { en: "Thamel", iata: 'KTM' }, { en: "Pokhara", iata: 'PKR' }, { en: "Chitwan", iata: 'BHR' }, { en: "Lukla", iata: 'LUA' }, { en: "Everest", iata: 'LUA' }, { en: "Annapurna", iata: 'PKR' }, { en: "Bhaktapur", iata: 'KTM' }, { en: "Nagarkot", iata: 'KTM' }, { en: "Lumbini", iata: 'BWA' }
+  ],
+  KE: [
+    { en: "Nairobi", iata: 'NBO' }, { en: "Masai Mara", iata: 'NBO' }, { en: "Maasai Mara", iata: 'NBO' }, { en: "Mombasa", iata: 'MBA' }, { en: "Diani", iata: 'UKA' }, { en: "Diani Beach", iata: 'UKA' }, { en: "Malindi", iata: 'MYD' }, { en: "Watamu", iata: 'MYD' }, { en: "Amboseli", iata: 'NBO' }, { en: "Lake Naivasha", iata: 'NBO' }, { en: "Lamu", iata: 'LAU' }
+  ],
+  TZ: [
+    { en: "Zanzibar", iata: 'ZNZ' }, { en: "Stone Town", iata: 'ZNZ' }, { en: "Nungwi", iata: 'ZNZ' }, { en: "Paje", iata: 'ZNZ' }, { en: "Kendwa", iata: 'ZNZ' }, { en: "Arusha", iata: 'JRO' }, { en: "Kilimanjaro", iata: 'JRO' }, { en: "Serengeti", iata: 'JRO' }, { en: "Ngorongoro", iata: 'JRO' }, { en: "Dar es Salaam", iata: 'DAR' }, { en: "Darüsselam", iata: 'DAR' }, { en: "Moshi", iata: 'JRO' }
+  ],
   NL: [
     { en: "Amsterdam", iata: 'AMS' }, { en: "Rotterdam", iata: 'RTM' }, { en: "The Hague", iata: 'AMS' }, { en: "Lahey", iata: 'AMS' }, { en: "Utrecht", iata: 'AMS' }, { en: "Zaanse Schans", iata: 'AMS' }, { en: "Keukenhof", iata: 'AMS' }, { en: "Giethoorn", iata: 'AMS' }, { en: "Haarlem", iata: 'AMS' }, { en: "Delft", iata: 'RTM' }, { en: "Eindhoven", iata: 'EIN' }, { en: "Maastricht", iata: 'MST' }, { en: "Kinderdijk", iata: 'RTM' }
   ],
