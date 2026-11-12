@@ -11,7 +11,7 @@ import type { SupportedLanguage } from '../i18n/types';
 import { AdTag, VisaBadge } from './ui';
 import { getCrossRate } from '../data/currencyRates';
 import { useLiveFx } from '../utils/liveData';
-import { tpLinks, stay22, s22Flights, s22Cars, gygLink, RAYNA_COUNTRIES } from '../data/tpPartners';
+import { tpLinks, stay22, s22Flights, s22Cars, gygLink, RAYNA_COUNTRIES, klookLink } from '../data/tpPartners';
 import ESIM from '../data/esimPrices.json';
 import type { DealKind } from './QuickDeals';
 import { toursPath, TOURS } from '../data/tours';
@@ -102,7 +102,7 @@ const QuickDealPanel: React.FC<{ kind: DealKind; passport: string; destination: 
   const cq = encodeURIComponent(city);
   const hq = { address: `${city}, ${getCountryName(to, 'en')}`, checkin: start, checkout, adults: n, campaign: 'quick' };
   const hotelPicks: PickItem[] = [
-    { id: 'klook', url: 'https://www.klook.com/hotels/' },
+    { id: 'klook', url: klookLink('https://www.klook.com/hotels/') },
     { id: 'booking', url: stay22('booking', hq) },
     { id: 'agoda', url: stay22('agoda', hq) },
     { id: 'expedia', url: stay22('expedia', hq) },

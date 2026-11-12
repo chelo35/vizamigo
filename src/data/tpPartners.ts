@@ -221,6 +221,8 @@ export function routeLink(url: string): string {
   }
   const s22 = STAY22_HOSTS.find(([d]) => is(d));
   if (s22) return stay22(s22[1], { link: url });
+  // Klook: Admitad bağlantısına çevir
+  if (is('klook.com')) return klookLink(url);
   // Viator ortaklığı onaylandı: ortaklık kodu (pid) taşıyan tur bağlantıları olduğu gibi gider
   if (is('viator.com') && u.searchParams.get('pid')) return url;
   // 12Go doğrudan ortaklık (agent.12go.asia): z parametresi bizim ajans numaramız
@@ -233,7 +235,7 @@ export function routeLink(url: string): string {
   if (is('discovercars.com') || is('rentalcars.com')) return 'https://www.economybookings.com/';
   // Tur ve aktivite: GetYourGuide / Viator / Tripadvisor → Klook araması
   if (is('getyourguide.com') && q) return stay22('getyourguide', { address: q });
-  if (is('getyourguide.com') || is('viator.com') || is('tripadvisor.com')) return q ? `https://www.klook.com/search/result/?query=${encodeURIComponent(q)}` : 'https://www.klook.com/';
+  if (is('getyourguide.com') || is('viator.com') || is('tripadvisor.com')) return klookLink(q ? `https://www.klook.com/search/result/?query=${encodeURIComponent(q)}` : 'https://www.klook.com/');
   // Tren ve otobüs: Omio / 12Go → Kiwi.com (tren + otobüs + uçak)
   if (is('omio.com') || is('12go.asia') || is('12go.co')) return 'https://www.kiwi.com/en/';
   // Otel: bağlı otel markası yok; kullanıcı seçebilsin diye Booking, Agoda, Trip.com, Expedia vb. olduğu gibi kalır
@@ -249,7 +251,8 @@ const ADMITAD_IDS: Record<string, TpId> = {
   '02swkf5uv6e40c2b51fbbabf13962c': 'avitovip',
   ffzns2ktmfe40c2b51fbd80355ec70: 'woopdrive',
   ofc53p8nise40c2b51fbe94db72a90: 'raynatours',
-  '82hm46o8g4e40c2b51fb790b103c92': 'sanatoriums'
+  '82hm46o8g4e40c2b51fb790b103c92': 'sanatoriums',
+  uk7qqjwme4e40c2b51fb6ca26c9222: 'klook'
 };
 
 /** Bir bağlantının hangi Travelpayouts markasına gittiğini bulur (logo göstermek için) */
@@ -293,6 +296,8 @@ const EU_RAIL = new Set([
 
 /** Admitad bağlantısı; ulp verilirse markanın o sayfasına gider. */
 const admitad = (base: string, ulp?: string) => (ulp ? `${base}?ulp=${encodeURIComponent(ulp)}` : base);
+/** Klook: Admitad (Klook WW, %1,6–8 satış + bazı ülkelerde tıklama başı ücret). Tüm Klook bağlantıları buradan geçer. */
+export const klookLink = (url = 'https://www.klook.com/') => admitad('https://bjpql.com/g/uk7qqjwme4e40c2b51fb6ca26c9222/', url);
 /** Rayna Tours'un tur sattığı ülkeler (BAE, Umman, Suudi Arabistan, Singapur, Tayland, Malezya, Endonezya) */
 export const RAYNA_COUNTRIES = new Set(['AE', 'OM', 'SA', 'SG', 'TH', 'MY', 'ID']);
 /** Sanatoriums'un sanatoryum/kaplıca sattığı ülkeler (Rusya ve BDT) */
@@ -344,11 +349,11 @@ export const tpLinks = {
   // HelloSafe (Awin, yayıncı 3138284): sigorta karşılaştırma, 20+ dil
   hellosafe: () => 'https://www.awin1.com/cread.php?awinmid=128757&awinaffid=3138284&clickref=vizamigo',
   /** Tur/bilet araması: kilitliyse Klook */
-  tours: (place: string) => (LOCKED.has('getyourguide') ? `https://www.klook.com/search/result/?query=${encodeURIComponent(place)}` : `https://www.getyourguide.com/s/?q=${encodeURIComponent(place)}`),
+  tours: (place: string) => (LOCKED.has('getyourguide') ? klookLink(`https://www.klook.com/search/result/?query=${encodeURIComponent(place)}`) : `https://www.getyourguide.com/s/?q=${encodeURIComponent(place)}`),
   localrent: () => `https://localrent.com/`,
   getyourguide: (place: string) => routeLink(`https://www.getyourguide.com/s/?q=${encodeURIComponent(place)}`),
   viator: (place: string) => routeLink(`https://www.viator.com/searchResults/all?text=${encodeURIComponent(place)}`),
-  klook: () => `https://www.klook.com/`,
+  klook: () => klookLink(),
   tiqets: () => `https://www.tiqets.com/`,
   airalo: (countrySlug: string) => `https://www.airalo.com/${countrySlug}-esim`,
   yesim: () => `https://yesim.app/`,

@@ -11,7 +11,7 @@ import { getCountryInsights } from '../data/countryInsights';
 import { getPassportItems } from '../utils/calculator';
 import { getCrossRate } from '../data/currencyRates';
 import { useLiveFx } from '../utils/liveData';
-import { tpLinks, stay22, s22Flights, s22Cars, gygLink, RAYNA_COUNTRIES, SANATORIUM_COUNTRIES } from '../data/tpPartners';
+import { tpLinks, stay22, s22Flights, s22Cars, gygLink, RAYNA_COUNTRIES, SANATORIUM_COUNTRIES, klookLink } from '../data/tpPartners';
 import { TOURS } from '../data/tours';
 import ESIM from '../data/esimPrices.json';
 
@@ -171,7 +171,7 @@ export const TripPlanner: React.FC<{ passport: string; dest: string; onOpenCount
     const hq = { address: `${city}, ${getCountryName(s.to, 'en')}`, checkin: s.dep, checkout: s.ret, adults: s.n, campaign: 'planner' };
   // Önce komisyon getirenler: Klook (Travelpayouts) ve Stay22 üzerinden Booking, Agoda, Expedia, Hotels.com
   const hotelPicks: PickItem[] = [
-    { id: 'klook', url: 'https://www.klook.com/hotels/' },
+    { id: 'klook', url: klookLink('https://www.klook.com/hotels/') },
     { id: 'booking', url: stay22('booking', hq) },
     { id: 'agoda', url: stay22('agoda', hq) },
     { id: 'expedia', url: stay22('expedia', hq) },
