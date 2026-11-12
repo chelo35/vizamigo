@@ -94,6 +94,11 @@ export const CountryPage: React.FC<Props> = (props) => {
   return <CountryPageInner {...props} data={data.b} />;
 };
 
+/** Büyük ekran kapak fotoğrafı (1280/1920) olan ülkeler */
+const HERO_HI = new Set(['TH']);
+/** Kapak videosu olan ülkeler: /videos/{ad}.mp4, {ad}-720.mp4, {ad}-poster.webp */
+const HERO_VIDEO: Record<string, string> = { TH: 'th-hero' };
+
 /** Ülke başlığı: fotoğraf, vize rozeti, bayrak, ad, başkent. Veri beklemeden çizilir. */
 const CountryHero: React.FC<{ code: string; passport: string; onBack: () => void }> = ({ code, passport, onBack }) => {
   const { l, language } = useI18n();
@@ -103,10 +108,24 @@ const CountryHero: React.FC<{ code: string; passport: string; onBack: () => void
   const geog = useMemo(() => getCountryGeography(code, language), [code, language]);
   const days = stayDays(item);
   const h1Rest = getCountryNaturalH1(name, language as SupportedLanguage).replace(name, '').replace(/^[\s,]+|[\s,]+$/g, '');
+  // Kapak videosu: hareket azaltma / veri tasarrufu açık değilse, fotoğraf yüklendikten sonra gelir
+  const [heroVideo, setHeroVideo] = useState('');
+  useEffect(() => {
+    setHeroVideo('');
+    const v = HERO_VIDEO[code];
+    if (!v) return;
+    try {
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+      if ((navigator as Navigator & { connection?: { saveData?: boolean } }).connection?.saveData) return;
+    } catch { /* yok */ }
+    const t = window.setTimeout(() => setHeroVideo(`/videos/${v}${window.innerWidth < 820 ? '-720' : ''}.mp4`), 600);
+    return () => window.clearTimeout(t);
+  }, [code]);
   return (
       <section className="vz-chero">
         <div className="vz-chero-img" aria-hidden="true">
-          <img src={getOptimizedImageUrl(visual.image, { width: 720 })} srcSet={`${getOptimizedImageUrl(visual.image, { width: 480 })} 480w, ${getOptimizedImageUrl(visual.image, { width: 720 })} 720w`} sizes="100vw" alt="" fetchPriority="high" />
+          <img src={getOptimizedImageUrl(visual.image, { width: 720 })} srcSet={`${getOptimizedImageUrl(visual.image, { width: 480 })} 480w, ${getOptimizedImageUrl(visual.image, { width: 720 })} 720w${HERO_HI.has(code) ? `, /images/countries/${code.toLowerCase()}-1280.webp 1280w, /images/countries/${code.toLowerCase()}-1920.webp 1920w` : ''}`} sizes="100vw" alt="" fetchPriority="high" />
+          {heroVideo && <video className="vz-chero-video" src={heroVideo} poster={`/videos/${HERO_VIDEO[code]}-poster.webp`} autoPlay muted loop playsInline preload="auto" onPlaying={(e) => e.currentTarget.classList.add('on')} />}
         </div>
         <div className="vz-wrap vz-chero-in">
           <button type="button" className="vz-back" onClick={onBack}>

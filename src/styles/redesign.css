@@ -408,3 +408,13 @@ html.dark .rd-gulls path { stroke: #F4E6DC; opacity: 0.85; }
   .rd-strip-head { justify-content: center; }
   .rd-strip-head .rd-select { min-width: 62%; text-align: center; text-align-last: center; }
 }
+
+/* Ana sayfa kapak fotoğrafı */
+.rd-hero.has-photo .rd-photo { position: absolute; inset: 0; z-index: 0; }
+.rd-hero.has-photo .rd-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 70% 40%; display: block; animation: vz-kenburns 22s ease-out both; }
+.rd-hero.has-photo .rd-photo::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(8, 26, 36, 0.78) 0%, rgba(8, 26, 36, 0.5) 45%, rgba(8, 26, 36, 0.08) 100%), linear-gradient(180deg, rgba(8, 26, 36, 0) 60%, rgba(8, 26, 36, 0.45) 100%); }
+.rd-hero.has-photo .rd-hero-in { z-index: 1; }
+.rd-hero.has-photo h1 { color: #fff; text-shadow: 0 2px 24px rgba(0, 0, 0, 0.35); }
+.rd-hero.has-photo p, .rd-hero.has-photo .rd-eyebrow { color: rgba(255, 255, 255, 0.9); }
+.rd-hero.has-photo .rd-chips button { background: rgba(255, 255, 255, 0.16); color: #fff; border-color: rgba(255, 255, 255, 0.35); backdrop-filter: blur(6px); }
+@media (max-width: 720px) { .rd-hero.has-photo .rd-photo::after { background: linear-gradient(180deg, rgba(8, 26, 36, 0.55) 0%, rgba(8, 26, 36, 0.7) 100%); } }

@@ -110,9 +110,18 @@ const inTurkey = () => {
   }
 };
 
+/** Bölüm başlık görselleri: /images/bk/{ad}-480|960.webp */
+const SEC_IMG: Record<string, string> = { 'bk-hotel': 'hotel', 'bk-tours': 'tours', 'bk-transfer': 'transfer', 'bk-ground': 'ground', 'bk-esim': 'esim', 'bk-car': 'car', 'bk-ins': 'ins' };
 const Sec: React.FC<{ id: string; icon: string; title: string; note?: string; children: React.ReactNode }> = ({ id, icon, title, note, children }) => (
-  <section id={id} className="vz-bk-sec">
-    <h3 className="vz-bk-h"><span className="vz-ic sm"><Icon name={icon as never} size={18} /></span>{title}</h3>
+  <section id={id} className={`vz-bk-sec${SEC_IMG[id] ? ' has-img' : ''}`}>
+    {SEC_IMG[id] ? (
+      <div className="vz-bk-banner">
+        <img src={`/images/bk/${SEC_IMG[id]}-480.webp`} srcSet={`/images/bk/${SEC_IMG[id]}-480.webp 480w, /images/bk/${SEC_IMG[id]}-960.webp 960w`} sizes="(min-width: 900px) 560px, 100vw" alt="" loading="lazy" decoding="async" />
+        <h3 className="vz-bk-h"><span className="vz-ic sm"><Icon name={icon as never} size={18} /></span>{title}</h3>
+      </div>
+    ) : (
+      <h3 className="vz-bk-h"><span className="vz-ic sm"><Icon name={icon as never} size={18} /></span>{title}</h3>
+    )}
     {children}
     {note && <p className="vz-bk-note">{note}</p>}
   </section>

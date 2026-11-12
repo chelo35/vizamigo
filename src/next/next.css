@@ -1316,3 +1316,17 @@ button.vz-tb-f { cursor: pointer; }
 
 .vz-gr-q { margin: 10px 0 12px; }
 .vz-gr-modes { white-space: normal; line-height: 1.35; }
+
+/* Bölüm başlık görselleri */
+.vz-bk-sec.has-img { padding-top: 0; overflow: hidden; }
+.vz-bk-banner { position: relative; margin: 0 -16px 4px; height: 112px; overflow: hidden; display: flex; align-items: flex-end; isolation: isolate; }
+.vz-bk-banner img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: -2; transition: transform 0.6s ease; }
+.vz-bk-sec:hover .vz-bk-banner img { transform: scale(1.04); }
+.vz-bk-banner::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(180deg, rgba(8, 30, 40, 0) 20%, rgba(8, 30, 40, 0.72) 100%); }
+.vz-bk-banner .vz-bk-h { color: #fff; padding: 0 16px 12px; text-shadow: 0 1px 10px rgba(0, 0, 0, 0.35); }
+.vz-bk-banner .vz-ic { background: rgba(255, 255, 255, 0.9); color: #0b7287; }
+@media (min-width: 900px) { .vz-bk-banner { height: 132px; } }
+
+/* Ülke kapak videosu */
+.vz-chero-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity 0.8s ease; }
+.vz-chero-video.on { opacity: 1; }
