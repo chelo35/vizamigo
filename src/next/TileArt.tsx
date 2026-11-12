@@ -370,9 +370,10 @@ const ART: Record<string, (c: { hi: string; lo: string }) => React.ReactNode> = 
 /** Gerçekçi 3D simgeler (yapay zekâ ile üretildi): /images/icons/{ad}-96|192.webp. Varsa çizim yerine bunlar gösterilir. */
 export const ART_IMG: Record<string, string> = { passport: 'passport', plane: 'plane2', bed: 'bed', car: 'car', wifi: 'esim', ticket: 'ticket', transit: 'van', shield: 'shield' };
 
-export const TileArt: React.FC<{ name: string; size?: number; photo?: boolean }> = ({ name, size = 48, photo }) => {
-  if (photo && ART_IMG[name]) {
-    const b = `/images/icons/${ART_IMG[name]}`;
+export const TileArt: React.FC<{ name: string; size?: number; photo?: boolean; img?: string }> = ({ name, size = 48, photo, img }) => {
+  const key = img || (photo ? ART_IMG[name] : '');
+  if (key) {
+    const b = key.startsWith('/') ? key : `/images/icons/${key}`;
     return (
       <span className="vz-art vz-art-img" style={{ width: size, height: size }} aria-hidden="true">
         <img src={`${b}-96.webp`} srcSet={`${b}-96.webp 1x, ${b}-192.webp 2x`} width={size} height={size} alt="" loading="lazy" decoding="async" />

@@ -251,6 +251,8 @@ export interface Tile {
   title: string;
   desc: string;
   icon: IconName;
+  /** gerçekçi 3D simge: /images/icons/{img}-96|192.webp */
+  img?: string;
   badge?: string;
   isNew?: boolean;
   tabs?: TileTab[];
@@ -323,7 +325,7 @@ export const TileGrid: React.FC<{ tiles: Tile[]; openRequest?: OpenRequest; labe
         >
           {t.badge && <span className="vz-tile-badge">{t.badge}</span>}
           {t.isNew && !t.badge && <span className="vz-tile-badge new">{l('Yeni', 'New', 'Neu', 'Nuevo', 'Новое')}</span>}
-          <TileArt name={t.icon} size={46} />
+          <TileArt name={t.icon} size={46} img={t.img} />
           <span className="vz-tile-t">{t.title}</span>
           <span className="vz-tile-s">{t.desc}</span>
         </button>
