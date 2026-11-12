@@ -731,7 +731,21 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
                 </div>
               </>
             )}
-            {!city?.car && (
+            {cities.some((c) => c.lr) && (
+              <>
+                <b className="vz-bk-op">Localrent · {l('günlük, başlayan fiyat', 'per day, from', 'pro Tag, ab', 'por día, desde', 'в день, от')}</b>
+                <div className="vz-bk-fares">
+                  {[...cities.filter((c) => c.lr && c.id === city?.id), ...cities.filter((c) => c.lr && c.id !== city?.id)].map((c) => (
+                    <a key={c.id} className={`vz-qd-fare${c.id === city?.id ? ' best' : ''}`} href={`https://localrent.com/en/${c.lr!.path}/`} target="_blank" rel="noopener noreferrer sponsored">
+                      <b>{c.lr!.eur ? `~${eurTo(c.lr!.eur)}` : l('Fiyatları gör', 'See prices', 'Preise', 'Ver precios', 'Цены')}</b>
+                      <span>{(language === 'tr' && c.tr) || c.en}</span>
+                      <small>{l('Yerel kiralama firmaları', 'Local rental companies', 'Lokale Vermieter', 'Empresas locales', 'Местные прокаты')} ›</small>
+                    </a>
+                  ))}
+                </div>
+              </>
+            )}
+            {!city?.car && !cities.some((c) => c.lr) && (
               <p className="vz-bk-note">{l(`${city?.en || cityEn} için kayıtlı araç fiyatımız yok; aşağıdaki sitelerde seçtiğin tarihlerle bak.`, `No saved car prices for ${city?.en || cityEn}; check the sites below with your dates.`, `Keine gespeicherten Preise für ${city?.en || cityEn}.`, `Sin precios guardados para ${city?.en || cityEn}.`, `Нет сохранённых цен для ${city?.en || cityEn}.`)}</p>
             )}
             {city?.car && !city.car.usd && (
@@ -745,7 +759,7 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
                 {[...cities.filter((c) => c.moto && c.id === city?.id), ...cities.filter((c) => c.moto && c.id !== city?.id)].map((c) => (
                   <a key={c.id} className={`vz-qd-fare${c.id === city?.id ? ' best' : ''}`} href={scooterUrl(c.moto!.slug)} target="_blank" rel="noopener noreferrer sponsored">
                     <b>{c.moto!.eur ? `~${eurTo(c.moto!.eur)}` : l('Fiyatları gör', 'See prices', 'Preise', 'Ver precios', 'Цены')}</b>
-                    <span>{c.en}</span>
+                    <span>{(language === 'tr' && c.tr) || c.en}</span>
                     <small>{l('Motor ve scooter', 'Bikes & scooters', 'Motorräder & Roller', 'Motos y scooters', 'Мото и скутеры')} ›</small>
                   </a>
                 ))}
