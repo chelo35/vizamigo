@@ -7,7 +7,7 @@
 /** usd: fiyat; cur 'EUR' ise değer euro'dur (Kiwitaxi o ülke sayfasında fiyatı euro gösteriyor) */
 export type TransferRoute = { slug: string; from: string; to: string; iata: string; usd: number; cur?: 'EUR'; city?: string };
 
-export const KIWI_COUNTRY: Record<string, string> = { TH: 'thailand', FR: 'france', ES: 'spain', US: 'usa', TR: 'turkey', IT: 'italy', MX: 'mexico', GB: 'united-kingdom', DE: 'germany', JP: 'japan', GR: 'greece', SA: 'saudi-arabia', AT: 'austria', CN: 'china', AE: 'uae', PT: 'portugal', CA: 'canada', MY: 'malaysia', PL: 'poland', HR: 'croatia', HU: 'hungary', EG: 'egypt', MA: 'morocco', VN: 'vietnam', ID: 'indonesia', CH: 'switzerland', CZ: 'czech-republic', SG: 'singapore', IN: 'india', DK: 'denmark', IE: 'ireland', HK: 'hong-kong', BR: 'brazil', PH: 'philippines', AU: 'australia', NZ: 'new-zealand', DO: 'dominican-republic', JO: 'jordan', TN: 'tunisia', GE: 'georgia', ME: 'montenegro', AL: 'albania', CY: 'cyprus', NO: 'norway', IS: 'iceland', QA: 'qatar', ZA: 'south-africa', SE: 'sweden', FI: 'finland', RO: 'romania', BG: 'bulgaria', SI: 'slovenia', RS: 'serbia', EE: 'estonia', AZ: 'azerbaijan', UZ: 'uzbekistan', KZ: 'kazakhstan', OM: 'oman', TW: 'taiwan', KH: 'cambodia', KE: 'kenya', TZ: 'tanzania', MU: 'mauritius', PA: 'panama', CL: 'chile', SC: 'seychelles', SK: 'slovakia', LV: 'latvia', LT: 'lithuania', LU: 'luxembourg', AM: 'armenia', KG: 'kyrgyzstan', MN: 'mongolia' };
+export const KIWI_COUNTRY: Record<string, string> = { TH: 'thailand', FR: 'france', ES: 'spain', US: 'usa', TR: 'turkey', IT: 'italy', MX: 'mexico', GB: 'united-kingdom', DE: 'germany', JP: 'japan', GR: 'greece', SA: 'saudi-arabia', AT: 'austria', CN: 'china', AE: 'uae', PT: 'portugal', CA: 'canada', MY: 'malaysia', PL: 'poland', HR: 'croatia', HU: 'hungary', EG: 'egypt', MA: 'morocco', VN: 'vietnam', ID: 'indonesia', CH: 'switzerland', CZ: 'czech-republic', SG: 'singapore', IN: 'india', DK: 'denmark', IE: 'ireland', HK: 'hong-kong', BR: 'brazil', PH: 'philippines', AU: 'australia', NZ: 'new-zealand', DO: 'dominican-republic', JO: 'jordan', TN: 'tunisia', GE: 'georgia', ME: 'montenegro', AL: 'albania', CY: 'cyprus', NO: 'norway', IS: 'iceland', QA: 'qatar', ZA: 'south-africa', SE: 'sweden', FI: 'finland', RO: 'romania', BG: 'bulgaria', SI: 'slovenia', RS: 'serbia', EE: 'estonia', AZ: 'azerbaijan', UZ: 'uzbekistan', KZ: 'kazakhstan', OM: 'oman', TW: 'taiwan', KH: 'cambodia', KE: 'kenya', TZ: 'tanzania', MU: 'mauritius', PA: 'panama', CL: 'chile', SC: 'seychelles', SK: 'slovakia', LV: 'latvia', LT: 'lithuania', LU: 'luxembourg', AM: 'armenia', KG: 'kyrgyzstan', MN: 'mongolia', MD: 'moldova', MC: 'france', VA: 'italy', CV: 'cape-verde', DZ: 'algeria' };
 
 export const TRANSFER_ROUTES: Record<string, TransferRoute[]> = {
   PH: [
@@ -58,6 +58,22 @@ export const TRANSFER_ROUTES: Record<string, TransferRoute[]> = {
   ZA: [
     { city: 'cape-town', slug: 'cape-town-airport-cape-town', iata: 'CPT', from: 'Cape Town', to: 'Cape Town', usd: 64 },
     { city: 'johannesburg', slug: 'johannesburg-airport-sandton', iata: 'JNB', from: 'Johannesburg', to: 'Sandton', usd: 64 }
+  ],
+  MD: [
+    { city: 'chisinau', slug: 'chisinau-airport-chisinau', iata: 'KIV', from: 'Kişinev', to: 'Kişinev', usd: 43, cur: 'EUR' }
+  ],
+  MC: [
+    { city: 'monaco', slug: 'nice-airport-monaco', iata: 'NCE', from: 'Nice', to: 'Monako', usd: 113, cur: 'EUR' }
+  ],
+  VA: [
+    { city: 'vatican', slug: 'fiumicino-airport-vatican', iata: 'FCO', from: 'Fiumicino', to: 'Vatikan', usd: 73, cur: 'EUR' }
+  ],
+  CV: [
+    { city: 'praia', slug: 'nelson-mandela-airport-praia', iata: 'RAI', from: 'Praia', to: 'Praia', usd: 55 },
+    { city: 'sal', slug: 'amilcar-cabral-airport-santa-maria-cv', iata: 'SID', from: 'Sal', to: 'Santa Maria', usd: 74 }
+  ],
+  DZ: [
+    { city: 'algiers', slug: 'houari-boumediene-airport-algiers', iata: 'ALG', from: 'Cezayir', to: 'Cezayir', usd: 47 }
   ],
   MU: [
     { city: 'grand-baie', slug: 'taxi-from-port-louis-airport-to-grand-baie', iata: 'MRU', from: 'Mauritius', to: 'Grand Baie', usd: 55 },

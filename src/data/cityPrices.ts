@@ -134,6 +134,21 @@ export const CITIES: Record<string, City[]> = {
     { id: 'durban', en: "Durban", iata: 'DUR' },
     { id: 'kruger', en: "Kruger Park", iata: 'MQP', tr: 'Kruger Parkı' }
   ],
+  AD: [
+    { id: 'andorra', en: 'Andorra la Vella', iata: 'BCN' }
+  ],
+  LI: [
+    { id: 'vaduz', en: 'Vaduz', iata: 'ZRH' }
+  ],
+  MC: [
+    { id: 'monaco', en: 'Monaco', iata: 'NCE', tr: 'Monako' }
+  ],
+  SM: [
+    { id: 'san-marino', en: 'San Marino', iata: 'BLQ' }
+  ],
+  VA: [
+    { id: 'vatican', en: 'Vatican City', iata: 'FCO', tr: 'Vatikan' }
+  ],
   MU: [
     { id: 'grand-baie', en: "Grand Baie", iata: 'MRU', lr: { path: 'mauritius/grand-baie' } },
     { id: 'flic-en-flac', en: "Flic en Flac", iata: 'MRU', lr: { path: 'mauritius/flic-en-flac' } }
