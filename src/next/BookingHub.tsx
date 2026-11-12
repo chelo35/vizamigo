@@ -143,7 +143,7 @@ const ModeBadge: React.FC<{ k: string; title?: string }> = ({ k, title }) => (
 /** Bölüm başlık görselleri: /images/bk/{ad}-480|960.webp */
 const SEC_IMG: Record<string, string> = { 'bk-flight': 'flight', 'bk-hotel': 'hotel', 'bk-tours': 'tours', 'bk-transfer': 'transfer', 'bk-ground': 'ground', 'bk-esim': 'esim', 'bk-car': 'car', 'bk-ins': 'ins' };
 /** Ülkeye özel tur görseli olan ülkeler (/images/bk/tours-{kod}-480|960.webp) */
-const TOUR_IMG = new Set(['FR', 'ES', 'US', 'TR', 'IT', 'MX', 'GB', 'DE', 'JP', 'GR', 'SA', 'AT', 'CN', 'AE', 'PT', 'IN', 'MY', 'CZ', 'BE', 'NL', 'IE', 'ID', 'SG', 'CA', 'BR', 'HU', 'MA', 'HK', 'KR', 'VN', 'CH', 'EG', 'AL', 'AR', 'AU', 'CO', 'CU', 'CY', 'DK', 'DO', 'GE', 'HR', 'IS', 'JO', 'LK', 'ME', 'MV', 'NO', 'NZ', 'PE', 'PH', 'PL', 'QA', 'TN', 'ZA', 'SE', 'FI', 'RO', 'BG', 'SI', 'MT', 'EE', 'RS', 'BA', 'UZ', 'KE', 'KH', 'TW', 'OM', 'KZ', 'AZ', 'NP', 'LA', 'TZ', 'BH', 'MU', 'CR', 'PA', 'CL', 'UY', 'JM', 'FJ', 'SC', 'MK', 'SK', 'LV', 'LT', 'LU', 'AM', 'KG', 'MN', 'EC', 'BS', 'NA', 'BO', 'ZM', 'GH', 'UG', 'ZW', 'TJ', 'BW', 'BB', 'MG', 'LC', 'CV', 'DZ', 'BN', 'BT', 'MD', 'RW', 'GT', 'XK', 'KW', 'DJ', 'ET', 'BZ', 'CM', 'SM', 'CD', 'VA', 'BJ', 'MC', 'BI', 'ER', 'AO', 'CI', 'TM', 'LI', 'AD', 'TL', 'MO', 'CG', 'PK', 'LR', 'NI', 'GN', 'MR', 'GQ', 'MZ', 'KM', 'GW', 'SL', 'NG', 'LS', 'KN', 'TG', 'GA', 'GM', 'DM', 'MW', 'ST', 'PW', 'HN', 'SZ', 'GY', 'FM', 'MH', 'SB', 'PY', 'SV', 'WS', 'NR', 'SR', 'VC', 'KI', 'TV', 'TT', 'VU', 'PG', 'BD', 'SN']);
+const TOUR_IMG = new Set(['FR', 'ES', 'US', 'TR', 'IT', 'MX', 'GB', 'DE', 'JP', 'GR', 'SA', 'AT', 'CN', 'AE', 'PT', 'IN', 'MY', 'CZ', 'BE', 'NL', 'IE', 'ID', 'SG', 'CA', 'BR', 'HU', 'MA', 'HK', 'KR', 'VN', 'CH', 'EG', 'AL', 'AR', 'AU', 'CO', 'CU', 'CY', 'DK', 'DO', 'GE', 'HR', 'IS', 'JO', 'LK', 'ME', 'MV', 'NO', 'NZ', 'PE', 'PH', 'PL', 'QA', 'TN', 'ZA', 'SE', 'FI', 'RO', 'BG', 'SI', 'MT', 'EE', 'RS', 'BA', 'UZ', 'KE', 'KH', 'TW', 'OM', 'KZ', 'AZ', 'NP', 'LA', 'TZ', 'BH', 'MU', 'CR', 'PA', 'CL', 'UY', 'JM', 'FJ', 'SC', 'MK', 'SK', 'LV', 'LT', 'LU', 'AM', 'KG', 'MN', 'EC', 'BS', 'NA', 'BO', 'ZM', 'GH', 'UG', 'ZW', 'TJ', 'BW', 'BB', 'MG', 'LC', 'CV', 'DZ', 'BN', 'BT', 'MD', 'RW', 'GT', 'XK', 'KW', 'DJ', 'ET', 'BZ', 'CM', 'SM', 'CD', 'VA', 'BJ', 'MC', 'BI', 'ER', 'AO', 'CI', 'TM', 'LI', 'AD', 'TL', 'MO', 'CG', 'PK', 'LR', 'NI', 'GN', 'MR', 'GQ', 'MZ', 'KM', 'GW', 'SL', 'NG', 'LS', 'KN', 'TG', 'GA', 'GM', 'DM', 'MW', 'ST', 'PW', 'HN', 'SZ', 'GY', 'FM', 'MH', 'SB', 'PY', 'SV', 'WS', 'NR', 'SR', 'VC', 'KI', 'TV', 'TT', 'VU', 'PG', 'BD', 'SN', 'AG', 'GD', 'TO']);
 /** Feribot görseli Güneydoğu Asya ve adalar için; diğer ülkelerde tren/otobüs görseli */
 const FERRY_IMG = new Set(['TH', 'VN', 'KH', 'LA', 'MY', 'ID', 'PH', 'MM', 'SG', 'LK', 'MV', 'FJ', 'HR', 'GR', 'ME', 'MT', 'SC', 'BS', 'PA', 'MU']);
 const secImg = (id: string, code: string) =>
@@ -182,7 +182,18 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
   const [cityId, setCityId] = useState('');
   const [cityQ, setCityQ] = useState('');
   useEffect(() => {
-    setCityId('');
+    // Ana sayfa kutusundan şehir seçilip gelindiyse o şehri seçili aç
+    let pre = '';
+    try {
+      const k = `vz_bk_city_${code}`;
+      const v = sessionStorage.getItem(k);
+      if (v) {
+        sessionStorage.removeItem(k);
+        const hit = (CITIES[code] || []).find((c) => c.en.toLowerCase() === v.toLowerCase());
+        pre = hit ? hit.id : `q:${v}`;
+      }
+    } catch {}
+    setCityId(pre);
     setCityQ('');
   }, [code]);
   const custom = cityId.startsWith('q:') ? cityId.slice(2) : '';

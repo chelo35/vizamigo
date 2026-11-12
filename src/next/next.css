@@ -1520,3 +1520,21 @@ button.vz-tb-f { cursor: pointer; }
 .vz-top, .rd-topbar { backdrop-filter: none !important; -webkit-backdrop-filter: none !important; background: var(--rd-bg) !important; }
 .vz-bk-jump { backdrop-filter: none; -webkit-backdrop-filter: none; background: var(--rd-bg); }
 .vz-bnav-in, .rd-bnav, .vz-offer { backdrop-filter: none !important; -webkit-backdrop-filter: none !important; background: var(--rd-surface) !important; }
+
+/* Ana sayfa rezervasyon kutusu */
+.vz-hb { margin-bottom: 28px; background: var(--rd-surface); border: 1px solid var(--rd-line); border-radius: var(--vz-r-lg); padding: 14px; box-shadow: var(--vz-shadow-md, 0 14px 34px -18px rgba(20, 40, 60, 0.35)); display: grid; gap: 10px; }
+.vz-hb-h { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; color: var(--rd-fg); }
+.vz-hb-h b { font-size: 17px; }
+.vz-hb-h span { font-size: 13px; color: var(--rd-muted); flex-basis: 100%; }
+.vz-hb-row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+.vz-hb-dest { grid-column: 1 / -1; }
+.vz-hb-dest.bad { border-color: #d9534f; }
+.vz-hb-go { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 52px; border: 0; border-radius: 14px; background: var(--rd-sea); color: #fff; font: inherit; font-size: 16px; font-weight: 700; cursor: pointer; }
+.vz-hb-go:hover { filter: brightness(1.05); }
+.vz-hb-go:focus-visible { outline: none; box-shadow: var(--vz-ring); }
+.vz-hb-err { margin: 0; font-size: 13px; color: #c0392b; }
+@media (min-width: 900px) {
+  .vz-hb-h span { flex-basis: auto; }
+  .vz-hb-row { grid-template-columns: 2.2fr 1fr 1fr 0.6fr 1.2fr; }
+  .vz-hb-dest { grid-column: auto; }
+}

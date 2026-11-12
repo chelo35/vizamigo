@@ -10,6 +10,7 @@ import { GUIDE_LABELS, GUIDE_LINKS } from '../data/guideLinks';
 import { Icon } from './Icon';
 import { SmartSearch } from './SmartSearch';
 import { QuickDeals } from './QuickDeals';
+import { HomeBooking } from './HomeBooking';
 import type { TabKey } from '../components/Navigation';
 const V = () => import('./explore/views');
 const WhereView = lazy(() => V().then((m) => ({ default: m.WhereView })));
@@ -176,6 +177,7 @@ export const ExplorePage: React.FC<ExploreProps> = (p) => {
       </div>
 
       <div className="vz-wrap vz-page-body" style={{ paddingTop: 28 }}>
+        <HomeBooking passport={p.currentPassport} onOpenCountry={p.onOpenCountry} />
         <QuickDeals passport={p.currentPassport} destination={destination} />
         <section className="vz-home-sec" aria-labelledby="vz-h-tools">
           <SecHead
