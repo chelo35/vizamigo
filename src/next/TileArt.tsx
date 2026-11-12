@@ -368,10 +368,10 @@ const ART: Record<string, (c: { hi: string; lo: string }) => React.ReactNode> = 
 };
 
 /** Gerçekçi 3D simgeler (yapay zekâ ile üretildi): /images/icons/{ad}-96|192.webp. Varsa çizim yerine bunlar gösterilir. */
-export const ART_IMG: Record<string, string> = { plane: 'plane2' };
+export const ART_IMG: Record<string, string> = { plane: 'plane2', bed: 'bed', car: 'car', wifi: 'esim', ticket: 'ticket' };
 
-export const TileArt: React.FC<{ name: string; size?: number }> = ({ name, size = 48 }) => {
-  if (ART_IMG[name]) {
+export const TileArt: React.FC<{ name: string; size?: number; photo?: boolean }> = ({ name, size = 48, photo }) => {
+  if (photo && ART_IMG[name]) {
     const b = `/images/icons/${ART_IMG[name]}`;
     return (
       <span className="vz-art vz-art-img" style={{ width: size, height: size }} aria-hidden="true">

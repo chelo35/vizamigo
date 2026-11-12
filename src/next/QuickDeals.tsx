@@ -87,7 +87,7 @@ export const QuickDeals: React.FC<{ passport: string; destination: string }> = (
 
   const inner = (d: Deal) => (
     <>
-      <TileArt name={d.art} size={40} />
+      <TileArt name={d.art} size={40} photo />
       <b className="vz-qd-t">{d.t}</b>
     </>
   );
