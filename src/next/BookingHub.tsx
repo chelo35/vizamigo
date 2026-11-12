@@ -143,7 +143,7 @@ const ModeBadge: React.FC<{ k: string; title?: string }> = ({ k, title }) => (
 /** Bölüm başlık görselleri: /images/bk/{ad}-480|960.webp */
 const SEC_IMG: Record<string, string> = { 'bk-flight': 'flight', 'bk-hotel': 'hotel', 'bk-tours': 'tours', 'bk-transfer': 'transfer', 'bk-ground': 'ground', 'bk-esim': 'esim', 'bk-car': 'car', 'bk-ins': 'ins' };
 /** Ülkeye özel tur görseli olan ülkeler (/images/bk/tours-{kod}-480|960.webp) */
-const TOUR_IMG = new Set(['FR', 'ES', 'US', 'TR', 'IT', 'MX', 'GB', 'DE', 'JP', 'GR', 'SA', 'AT', 'CN', 'AE', 'PT']);
+const TOUR_IMG = new Set(['FR', 'ES', 'US', 'TR', 'IT', 'MX', 'GB', 'DE', 'JP', 'GR', 'SA', 'AT', 'CN', 'AE', 'PT', 'IN', 'MY', 'CZ', 'BE', 'NL', 'IE', 'ID', 'SG', 'CA', 'BR', 'HU', 'MA', 'HK', 'KR', 'VN', 'CH', 'EG']);
 /** Feribot görseli Güneydoğu Asya ve adalar için; diğer ülkelerde tren/otobüs görseli */
 const FERRY_IMG = new Set(['TH', 'VN', 'KH', 'LA', 'MY', 'ID', 'PH', 'MM', 'SG', 'LK', 'MV', 'FJ']);
 const secImg = (id: string, code: string) =>

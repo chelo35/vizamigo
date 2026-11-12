@@ -24,6 +24,120 @@ export type City = {
 };
 
 export const CITIES: Record<string, City[]> = {
+  NL: [
+    { id: 'amsterdam', en: 'Amsterdam', iata: 'AMS' },
+    { id: 'rotterdam', en: 'Rotterdam', iata: 'RTM' },
+    { id: 'utrecht', en: 'Utrecht', iata: 'AMS' },
+    { id: 'the-hague', en: 'The Hague', iata: 'AMS', tr: 'Lahey' }
+  ],
+  CA: [
+    { id: 'toronto', en: 'Toronto', iata: 'YYZ' },
+    { id: 'vancouver', en: 'Vancouver', iata: 'YVR' },
+    { id: 'montreal', en: 'Montreal', iata: 'YUL' },
+    { id: 'banff', en: 'Banff', iata: 'YYC' },
+    { id: 'quebec', en: 'Quebec City', iata: 'YQB', tr: 'Quebec' }
+  ],
+  MY: [
+    { id: 'kuala-lumpur', en: 'Kuala Lumpur', iata: 'KUL', lr: { path: 'malaysia/kuala-lumpur', eur: 33.36 } },
+    { id: 'langkawi', en: 'Langkawi', iata: 'LGK', lr: { path: 'malaysia/langkawi' } },
+    { id: 'penang', en: 'Penang', iata: 'PEN', lr: { path: 'malaysia/penang' } },
+    { id: 'kota-kinabalu', en: 'Kota Kinabalu', iata: 'BKI' }
+  ],
+  PL: [
+    { id: 'warsaw', en: 'Warsaw', iata: 'WAW', tr: 'Varşova', lr: { path: 'poland/warsaw', eur: 12.84 } },
+    { id: 'krakow', en: 'Krakow', iata: 'KRK', tr: 'Krakov', lr: { path: 'poland/krakow', eur: 12.84 } },
+    { id: 'gdansk', en: 'Gdansk', iata: 'GDN', tr: 'Gdańsk' },
+    { id: 'wroclaw', en: 'Wroclaw', iata: 'WRO', tr: 'Wrocław' }
+  ],
+  HR: [
+    { id: 'dubrovnik', en: 'Dubrovnik', iata: 'DBV', lr: { path: 'croatia/dubrovnik' } },
+    { id: 'split', en: 'Split', iata: 'SPU', lr: { path: 'croatia/split', eur: 12.5 } },
+    { id: 'zagreb', en: 'Zagreb', iata: 'ZAG', lr: { path: 'croatia/zagreb' }, moto: { slug: 'zagreb', eur: 50 } },
+    { id: 'zadar', en: 'Zadar', iata: 'ZAD' }
+  ],
+  HU: [
+    { id: 'budapest', en: 'Budapest', iata: 'BUD', tr: 'Budapeşte', lr: { path: 'hungary/budapest', eur: 16.83 } },
+    { id: 'balaton', en: 'Lake Balaton', iata: 'BUD', tr: 'Balaton Gölü' }
+  ],
+  EG: [
+    { id: 'cairo', en: 'Cairo', iata: 'CAI', tr: 'Kahire', lr: { path: 'egypt/cairo' } },
+    { id: 'hurghada', en: 'Hurghada', iata: 'HRG', tr: 'Hurgada', lr: { path: 'egypt/hurghada' } },
+    { id: 'sharm', en: 'Sharm El Sheikh', iata: 'SSH', tr: 'Şarm El Şeyh', lr: { path: 'egypt/sharm-el-sheikh' } },
+    { id: 'luxor', en: 'Luxor', iata: 'LXR', tr: 'Luksor' }
+  ],
+  MA: [
+    { id: 'marrakech', en: 'Marrakech', iata: 'RAK', tr: 'Marakeş', lr: { path: 'morocco/marrakech', eur: 22 }, moto: { slug: 'marrakech', eur: 11.5 } },
+    { id: 'casablanca', en: 'Casablanca', iata: 'CMN', tr: 'Kazablanka', lr: { path: 'morocco/casablanca', eur: 20.86 } },
+    { id: 'agadir', en: 'Agadir', iata: 'AGA', lr: { path: 'morocco/agadir', eur: 28.08 } },
+    { id: 'fes', en: 'Fes', iata: 'FEZ', tr: 'Fas' },
+    { id: 'chefchaouen', en: 'Chefchaouen', iata: 'TNG', tr: 'Şafşavan' }
+  ],
+  VN: [
+    { id: 'hanoi', en: 'Hanoi', iata: 'HAN', lr: { path: 'vietnam/hanoi', eur: 33 } },
+    { id: 'ho-chi-minh', en: 'Ho Chi Minh City', iata: 'SGN', tr: 'Ho Chi Minh', lr: { path: 'vietnam/ho-chi-minh-city' } },
+    { id: 'da-nang', en: 'Da Nang', iata: 'DAD', lr: { path: 'vietnam/da-nang' } },
+    { id: 'phu-quoc', en: 'Phu Quoc', iata: 'PQC' }
+  ],
+  KR: [
+    { id: 'seoul', en: 'Seoul', iata: 'ICN', tr: 'Seul' },
+    { id: 'busan', en: 'Busan', iata: 'PUS' },
+    { id: 'jeju', en: 'Jeju', iata: 'CJU', lr: { path: 'korea/jeju', eur: 35 } }
+  ],
+  ID: [
+    { id: 'bali', en: 'Bali', iata: 'DPS', lr: { path: 'indonesia/bali', eur: 16 }, moto: { slug: 'bali', eur: 10 } },
+    { id: 'jakarta', en: 'Jakarta', iata: 'CGK', tr: 'Cakarta' },
+    { id: 'lombok', en: 'Lombok', iata: 'LOP' },
+    { id: 'yogyakarta', en: 'Yogyakarta', iata: 'YIA' }
+  ],
+  CH: [
+    { id: 'zurich', en: 'Zurich', iata: 'ZRH', tr: 'Zürih' },
+    { id: 'geneva', en: 'Geneva', iata: 'GVA', tr: 'Cenevre' },
+    { id: 'interlaken', en: 'Interlaken', iata: 'ZRH' },
+    { id: 'lucerne', en: 'Lucerne', iata: 'ZRH', tr: 'Luzern' },
+    { id: 'zermatt', en: 'Zermatt', iata: 'GVA' }
+  ],
+  CZ: [
+    { id: 'prague', en: 'Prague', iata: 'PRG', tr: 'Prag', lr: { path: 'czech/prague' } },
+    { id: 'cesky-krumlov', en: 'Cesky Krumlov', iata: 'PRG', tr: 'Český Krumlov' },
+    { id: 'brno', en: 'Brno', iata: 'BRQ' }
+  ],
+  SG: [
+    { id: 'singapore', en: 'Singapore', iata: 'SIN', tr: 'Singapur' },
+    { id: 'sentosa', en: 'Sentosa', iata: 'SIN' }
+  ],
+  IN: [
+    { id: 'delhi', en: 'New Delhi', iata: 'DEL', tr: 'Yeni Delhi' },
+    { id: 'mumbai', en: 'Mumbai', iata: 'BOM' },
+    { id: 'goa', en: 'Goa', iata: 'GOI' },
+    { id: 'agra', en: 'Agra', iata: 'DEL' },
+    { id: 'jaipur', en: 'Jaipur', iata: 'JAI' }
+  ],
+  DK: [
+    { id: 'copenhagen', en: 'Copenhagen', iata: 'CPH', tr: 'Kopenhag' },
+    { id: 'aarhus', en: 'Aarhus', iata: 'AAR' }
+  ],
+  IE: [
+    { id: 'dublin', en: 'Dublin', iata: 'DUB' },
+    { id: 'galway', en: 'Galway', iata: 'SNN' },
+    { id: 'cork', en: 'Cork', iata: 'ORK' }
+  ],
+  BE: [
+    { id: 'brussels', en: 'Brussels', iata: 'BRU', tr: 'Brüksel' },
+    { id: 'bruges', en: 'Bruges', iata: 'BRU', tr: 'Brugge' },
+    { id: 'antwerp', en: 'Antwerp', iata: 'BRU', tr: 'Anvers' },
+    { id: 'ghent', en: 'Ghent', iata: 'BRU', tr: 'Gent' }
+  ],
+  HK: [
+    { id: 'hong-kong', en: 'Hong Kong', iata: 'HKG' },
+    { id: 'kowloon', en: 'Kowloon', iata: 'HKG' }
+  ],
+  BR: [
+    { id: 'rio', en: 'Rio de Janeiro', iata: 'GIG' },
+    { id: 'sao-paulo', en: 'Sao Paulo', iata: 'GRU', tr: 'São Paulo' },
+    { id: 'salvador', en: 'Salvador', iata: 'SSA' },
+    { id: 'florianopolis', en: 'Florianopolis', iata: 'FLN', tr: 'Florianópolis' },
+    { id: 'foz-do-iguacu', en: 'Foz do Iguacu', iata: 'IGU', tr: 'Iguazu Şelaleleri' }
+  ],
   SA: [
     { id: 'riyadh', en: 'Riyadh', iata: 'RUH', tr: 'Riyad' },
     { id: 'jeddah', en: 'Jeddah', iata: 'JED', tr: 'Cidde' },

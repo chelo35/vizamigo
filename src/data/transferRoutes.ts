@@ -7,9 +7,74 @@
 /** usd: fiyat; cur 'EUR' ise değer euro'dur (Kiwitaxi o ülke sayfasında fiyatı euro gösteriyor) */
 export type TransferRoute = { slug: string; from: string; to: string; iata: string; usd: number; cur?: 'EUR'; city?: string };
 
-export const KIWI_COUNTRY: Record<string, string> = { TH: 'thailand', FR: 'france', ES: 'spain', US: 'usa', TR: 'turkey', IT: 'italy', MX: 'mexico', GB: 'united-kingdom', DE: 'germany', JP: 'japan', GR: 'greece', SA: 'saudi-arabia', AT: 'austria', CN: 'china', AE: 'uae', PT: 'portugal' };
+export const KIWI_COUNTRY: Record<string, string> = { TH: 'thailand', FR: 'france', ES: 'spain', US: 'usa', TR: 'turkey', IT: 'italy', MX: 'mexico', GB: 'united-kingdom', DE: 'germany', JP: 'japan', GR: 'greece', SA: 'saudi-arabia', AT: 'austria', CN: 'china', AE: 'uae', PT: 'portugal', CA: 'canada', MY: 'malaysia', PL: 'poland', HR: 'croatia', HU: 'hungary', EG: 'egypt', MA: 'morocco', VN: 'vietnam', ID: 'indonesia', CH: 'switzerland', CZ: 'czech-republic', SG: 'singapore', IN: 'india', DK: 'denmark', IE: 'ireland', HK: 'hong-kong', BR: 'brazil' };
 
 export const TRANSFER_ROUTES: Record<string, TransferRoute[]> = {
+  CA: [
+    { city: 'toronto', slug: 'toronto-billy-bishop-airport-toronto', iata: 'YTZ', from: 'Billy Bishop', to: 'Toronto', usd: 75 },
+    { city: 'vancouver', slug: 'vancouver-airport-vancouver', iata: 'YVR', from: 'Vancouver', to: 'Vancouver', usd: 75 }
+  ],
+  MY: [
+    { city: 'kuala-lumpur', slug: 'taxi-from-kuala-lumpur-airport-to-kuala-lumpur', iata: 'KUL', from: 'Kuala Lumpur', to: 'Kuala Lumpur', usd: 45 },
+    { city: 'langkawi', slug: 'langkawi-airport-langkawi', iata: 'LGK', from: 'Langkawi', to: 'Langkawi', usd: 45 },
+    { city: 'penang', slug: 'penang-airport-penang', iata: 'PEN', from: 'Penang', to: 'George Town', usd: 41 }
+  ],
+  PL: [
+    { city: 'warsaw', slug: 'taxi-from-chopin-airport-to-warsaw', iata: 'WAW', from: 'Varşova', to: 'Varşova', usd: 41, cur: 'EUR' },
+    { city: 'krakow', slug: 'taxi-from-krakow-airport-to-krakow', iata: 'KRK', from: 'Krakov', to: 'Krakov', usd: 38, cur: 'EUR' }
+  ],
+  HR: [
+    { city: 'dubrovnik', slug: 'taxi-from-dubrovnik-airport-to-dubrovnik', iata: 'DBV', from: 'Dubrovnik', to: 'Dubrovnik', usd: 53, cur: 'EUR' },
+    { city: 'split', slug: 'taxi-from-split-airport-to-split', iata: 'SPU', from: 'Split', to: 'Split', usd: 45, cur: 'EUR' }
+  ],
+  HU: [
+    { city: 'budapest', slug: 'taxi-from-budapest-airport-to-budapest', iata: 'BUD', from: 'Budapeşte', to: 'Budapeşte', usd: 55, cur: 'EUR' }
+  ],
+  EG: [
+    { city: 'cairo', slug: 'cairo-airport-cairo', iata: 'CAI', from: 'Kahire', to: 'Kahire', usd: 44 },
+    { city: 'hurghada', slug: 'hurghada-airport-hurghada', iata: 'HRG', from: 'Hurgada', to: 'Hurgada', usd: 26 },
+    { city: 'sharm', slug: 'sharm-el-sheikh-airport-sharm-el-sheikh', iata: 'SSH', from: 'Şarm El Şeyh', to: 'Şarm El Şeyh', usd: 28 }
+  ],
+  MA: [
+    { city: 'marrakech', slug: 'menara-airport-marrakech', iata: 'RAK', from: 'Marakeş', to: 'Marakeş', usd: 29 },
+    { city: 'casablanca', slug: 'casablanca-mohammed-v-airport-casablanca', iata: 'CMN', from: 'Kazablanka', to: 'Kazablanka', usd: 38 }
+  ],
+  VN: [
+    { city: 'hanoi', slug: 'hanoi-noi-bai-airport-hanoi', iata: 'HAN', from: 'Hanoi', to: 'Hanoi', usd: 29 },
+    { city: 'ho-chi-minh', slug: 'ho-chi-minh-airport-ho-chi-minh', iata: 'SGN', from: 'Ho Chi Minh', to: 'Ho Chi Minh', usd: 30 },
+    { city: 'da-nang', slug: 'da-nang-airport-da-nang', iata: 'DAD', from: 'Da Nang', to: 'Da Nang', usd: 29 }
+  ],
+  ID: [
+    { city: 'bali', slug: 'taxi-from-bali-airport-to-kuta', iata: 'DPS', from: 'Bali', to: 'Kuta', usd: 21 },
+    { city: 'jakarta', slug: 'soekarno-hatta-airport-jakarta', iata: 'CGK', from: 'Cakarta', to: 'Cakarta', usd: 39 }
+  ],
+  CH: [
+    { city: 'zurich', slug: 'zurich-airport-zurich', iata: 'ZRH', from: 'Zürih', to: 'Zürih', usd: 90, cur: 'EUR' },
+    { city: 'geneva', slug: 'taxi-from-geneva-airport-to-geneva', iata: 'GVA', from: 'Cenevre', to: 'Cenevre', usd: 77, cur: 'EUR' }
+  ],
+  CZ: [
+    { city: 'prague', slug: 'taxi-from-prague-airport-to-prague', iata: 'PRG', from: 'Prag', to: 'Prag', usd: 43, cur: 'EUR' }
+  ],
+  SG: [
+    { city: 'singapore', slug: 'singapore-airport-singapore', iata: 'SIN', from: 'Changi', to: 'Singapur', usd: 60 }
+  ],
+  IN: [
+    { city: 'delhi', slug: 'delhi-airport-delhi', iata: 'DEL', from: 'Delhi', to: 'Yeni Delhi', usd: 93 },
+    { city: 'mumbai', slug: 'mumbai-airport-mumbai', iata: 'BOM', from: 'Mumbai', to: 'Mumbai', usd: 45 },
+    { city: 'goa', slug: 'taxi-from-goa-airport-to-baga', iata: 'GOI', from: 'Goa', to: 'Baga', usd: 48 }
+  ],
+  DK: [
+    { city: 'copenhagen', slug: 'copenhagen-kastrup-airport-copenhagen', iata: 'CPH', from: 'Kopenhag', to: 'Kopenhag', usd: 84, cur: 'EUR' }
+  ],
+  IE: [
+    { city: 'dublin', slug: 'taxi-from-dublin-airport-to-dublin', iata: 'DUB', from: 'Dublin', to: 'Dublin', usd: 71, cur: 'EUR' }
+  ],
+  HK: [
+    { city: 'hong-kong', slug: 'hong-kong-airport-hong-kong', iata: 'HKG', from: 'Hong Kong', to: 'Hong Kong', usd: 65 }
+  ],
+  BR: [
+    { city: 'sao-paulo', slug: 'guarulhos-guarulhos-airport-sao-paulo', iata: 'GRU', from: 'São Paulo', to: 'São Paulo', usd: 53 }
+  ],
   SA: [
     { city: 'jeddah', slug: 'jeddah-airport-medina', iata: 'JED', from: 'Cidde', to: 'Medine', usd: 136 }
   ],
