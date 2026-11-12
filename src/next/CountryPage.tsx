@@ -1,3 +1,4 @@
+import { LiveIcon } from './LiveIcon';
 import React, { useEffect, useMemo, useState } from 'react';
 import { getExtraFaq } from '../data/extraFaq';
 import { ruIn, ruOf } from '../data/ruCases';
@@ -770,10 +771,10 @@ const CountryPageInner: React.FC<Props & { data: CountryBundle }> = ({ code, pas
       <div className="vz-wrap vz-page-body">
         <div className="vz-summary" style={{ marginTop: -44 }}>
           <div className="vz-cfacts">
-            <Stat value={timeStr} label={l(`${geog.capital || name} saati`, `Time in ${geog.capital || name}`, `Uhrzeit ${geog.capital || name}`, `Hora en ${geog.capital || name}`, `Время: ${geog.capital || name}`)} icon="clock" />
-            <Stat value={w ? `${w.tempC}°` : '—'} label={wInfo ? `${wInfo[language] || wInfo.en} · ${l('hissedilen', 'feels', 'gefühlt', 'sensación', 'ощущ.')} ${w?.feelsLikeC}°` : l('Hava durumu', 'Weather', 'Wetter', 'Tiempo', 'Погода')} icon="sun" tone="sun" />
-            <Stat value={fmtPair(GLOBAL_CURRENCIES[passport]?.symbol || homeCur, GLOBAL_CURRENCIES[code]?.symbol || destCur, rate, language)} label={`${homeCur} → ${destCur}`} icon="fx" />
-            <Stat value={(isNew ? (insights.bestMonths || '').split(/[(;·]/)[0].trim() : insights.bestMonths) || '—'} label={l('En iyi aylar', 'Best months', 'Beste Monate', 'Mejores meses', 'Лучшие месяцы')} icon="cal" tone="ok" />
+            <Stat value={timeStr} label={l(`${geog.capital || name} saati`, `Time in ${geog.capital || name}`, `Uhrzeit ${geog.capital || name}`, `Hora en ${geog.capital || name}`, `Время: ${geog.capital || name}`)} icon="clock" art={<LiveIcon kind="clock" size={64} value={timeStr} />} />
+            <Stat value={w ? `${w.tempC}°` : '—'} label={wInfo ? `${wInfo[language] || wInfo.en} · ${l('hissedilen', 'feels', 'gefühlt', 'sensación', 'ощущ.')} ${w?.feelsLikeC}°` : l('Hava durumu', 'Weather', 'Wetter', 'Tiempo', 'Погода')} icon="sun" tone="sun" art={<LiveIcon kind="weather" size={64} value={w ? `${w.tempC}°` : undefined} />} />
+            <Stat value={fmtPair(GLOBAL_CURRENCIES[passport]?.symbol || homeCur, GLOBAL_CURRENCIES[code]?.symbol || destCur, rate, language)} label={`${homeCur} → ${destCur}`} icon="fx" art={<LiveIcon kind="fx" size={64} value={destCur} />} />
+            <Stat value={(isNew ? (insights.bestMonths || '').split(/[(;·]/)[0].trim() : insights.bestMonths) || '—'} label={l('En iyi aylar', 'Best months', 'Beste Monate', 'Mejores meses', 'Лучшие месяцы')} icon="cal" tone="ok" art={<LiveIcon kind="cal" size={64} sub={l('En iyi', 'Best', 'Beste', 'Mejor', 'Лучше')} value={((insights.bestMonths || '').trim().split(/[\s–\-,(;·]/)[0] || '').slice(0, 3).toLocaleUpperCase(language === 'tr' ? 'tr-TR' : undefined) || undefined} />} />
           </div>
         </div>
         {isNew && <TripBar passport={passport} trip={trip} setTrip={setTrip} onOpenPassport={onOpenPassport} />}

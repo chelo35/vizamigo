@@ -94,9 +94,9 @@ export const Card: React.FC<{ title?: string; eyebrow?: string; icon?: IconName;
   </section>
 );
 
-export const Stat: React.FC<{ value: React.ReactNode; label: string; icon?: IconName; tone?: 'sea' | 'ok' | 'warn' | 'sun' }> = ({ value, label, icon, tone = 'sea' }) => (
-  <div className={`vz-stat tone-${tone}`}>
-    {icon && <span className="vz-ic sm"><Icon name={icon} size={18} /></span>}
+export const Stat: React.FC<{ value: React.ReactNode; label: string; icon?: IconName; tone?: 'sea' | 'ok' | 'warn' | 'sun'; art?: React.ReactNode }> = ({ value, label, icon, tone = 'sea', art }) => (
+  <div className={`vz-stat tone-${tone}${art ? ' has-art' : ''}`}>
+    {art ? art : icon && <span className="vz-ic sm"><Icon name={icon} size={18} /></span>}
     <b className={typeof value === 'string' && value.length > 16 ? 'long' : undefined}>{value}</b>
     <span>{label}</span>
   </div>

@@ -1,3 +1,4 @@
+import { LiveIcon } from '../../next/LiveIcon';
 import React, { useEffect, useMemo, useState } from 'react';
 import { useI18n } from '../../data/i18n';
 import { ALL_WORLD_HUBS, flagToIso } from '../../data/worldHubs';
@@ -164,16 +165,9 @@ export const LiveStrip: React.FC<Props> = ({ passport, destination, onDestinatio
       </div>
       <div className="rd-strip-row">
         <div className="rd-card rd-kpi">
-          <div className="rd-kpi-h"><span className="rd-kpi-t"><TileArt name="clock" size={30} /><span className="rd-eyebrow">{l(`${cityName} saati`, `${cityName} time`, `Zeit in ${cityName}`, `Hora en ${cityName}`, `Время: ${cityName}`)}</span></span><span className="rd-tag">{l('Canlı', 'Live', 'Live', 'En vivo', 'Сейчас')}</span></div>
+          <div className="rd-kpi-h"><span className="rd-kpi-t"><span className="rd-eyebrow">{l(`${cityName} saati`, `${cityName} time`, `Zeit in ${cityName}`, `Hora en ${cityName}`, `Время: ${cityName}`)}</span></span><span className="rd-tag">{l('Canlı', 'Live', 'Live', 'En vivo', 'Сейчас')}</span></div>
           <div className="rd-clock">
-            <svg width="62" height="62" viewBox="0 0 64 64" role="img" aria-label={`${cityName} ${hh}:${String(mm).padStart(2, '0')}`}>
-              <circle cx="32" cy="32" r="29" className="rd-clock-face" />
-              <g className="rd-clock-tick"><path d="M32 6v4M32 54v4M6 32h4M54 32h4" /></g>
-              <line x1="32" y1="32" x2="32" y2="18" className="rd-clock-h" transform={`rotate(${((hh % 12) + mm / 60) * 30} 32 32)`} />
-              <line x1="32" y1="32" x2="32" y2="11" className="rd-clock-m" transform={`rotate(${(mm + ss / 60) * 6} 32 32)`} />
-              <line x1="32" y1="36" x2="32" y2="9" className="rd-clock-s" transform={`rotate(${ss * 6} 32 32)`} />
-              <circle cx="32" cy="32" r="2.5" className="rd-clock-pin" />
-            </svg>
+            <LiveIcon kind="clock" value={`${String(hh).padStart(2, '0')}:${String(mm).padStart(2, '0')}`} />
             <div>
               <div className="rd-big">{`${String(hh).padStart(2, '0')}:${String(mm).padStart(2, '0')}`}<small>:{String(ss).padStart(2, '0')}</small></div>
               <div className="rd-sub">
@@ -191,10 +185,10 @@ export const LiveStrip: React.FC<Props> = ({ passport, destination, onDestinatio
         </div>
 
         <div className="rd-card rd-kpi">
-          <div className="rd-kpi-h"><span className="rd-kpi-t"><TileArt name="sun" size={30} /><span className="rd-eyebrow">{l(`${cityName} hava`, `${cityName} weather`, `Wetter ${cityName}`, `Tiempo en ${cityName}`, `Погода: ${cityName}`)}</span></span>{w && <span className="rd-tag">{l('Canlı', 'Live', 'Live', 'En vivo', 'Сейчас')}</span>}</div>
+          <div className="rd-kpi-h"><span className="rd-kpi-t"><span className="rd-eyebrow">{l(`${cityName} hava`, `${cityName} weather`, `Wetter ${cityName}`, `Tiempo en ${cityName}`, `Погода: ${cityName}`)}</span></span>{w && <span className="rd-tag">{l('Canlı', 'Live', 'Live', 'En vivo', 'Сейчас')}</span>}</div>
           {w ? (
             <div className="rd-wxrow">
-              <WeatherGlyph code={w.code} isDay={w.isDay} />
+              <LiveIcon kind="weather" value={`${w.tempC}°`} />
               <div>
                 <div className="rd-big">{w.tempC}°</div>
                 <div className="rd-sub">{(weatherCodeInfo(w.code, w.isDay) as any)[language] || weatherCodeInfo(w.code, w.isDay).en}</div>
@@ -207,19 +201,20 @@ export const LiveStrip: React.FC<Props> = ({ passport, destination, onDestinatio
           ) : (
             wxSlow ? (
               <div className="rd-wxrow">
+                <LiveIcon kind="weather" />
                 <div>
                   <div className="rd-big rd-big-sm">—</div>
                   <div className="rd-sub">{l('Hava bilgisi şu an alınamadı', 'Weather is unavailable right now', 'Wetter gerade nicht verfügbar', 'Tiempo no disponible ahora', 'Погода сейчас недоступна')}</div>
                 </div>
               </div>
             ) : (
-              <div className="rd-wxrow"><div className="rd-skel" /><div className="rd-sub">{l('Yükleniyor…', 'Loading…', 'Lädt…', 'Cargando…', 'Загрузка…')}</div></div>
+              <div className="rd-wxrow"><LiveIcon kind="weather" /><div className="rd-sub">{l('Yükleniyor…', 'Loading…', 'Lädt…', 'Cargando…', 'Загрузка…')}</div></div>
             )
           )}
         </div>
 
         <div className="rd-card rd-kpi">
-          <div className="rd-kpi-h"><span className="rd-kpi-t"><TileArt name="fx" size={30} /><span className="rd-eyebrow">{l('Döviz kuru', 'Exchange rate', 'Wechselkurs', 'Tipo de cambio', 'Курс')}</span></span>{rate > 0 && <span className="rd-tag">{l('Canlı', 'Live', 'Live', 'En vivo', 'Сейчас')}</span>}</div>
+          <div className="rd-kpi-h"><span className="rd-kpi-t"><span className="rd-eyebrow">{l('Döviz kuru', 'Exchange rate', 'Wechselkurs', 'Tipo de cambio', 'Курс')}</span></span>{rate > 0 && <span className="rd-tag">{l('Canlı', 'Live', 'Live', 'En vivo', 'Сейчас')}</span>}</div>
           {fx ? (
             homeCur === destCur ? (
               <>
@@ -228,7 +223,9 @@ export const LiveStrip: React.FC<Props> = ({ passport, destination, onDestinatio
                 <div className="rd-sub">{fx.destName}</div>
               </>
             ) : (
-              <>
+              <div className="rd-wxrow">
+                <LiveIcon kind="fx" value={`${fx.value}${homeSym}`} />
+                <div>
                 <div className="rd-fx-pair">
                   <Flag code={destination} size="sm" /><b>{destCur}</b>
                   <span className="rd-fx-arrow" aria-hidden="true">→</span>
@@ -239,7 +236,8 @@ export const LiveStrip: React.FC<Props> = ({ passport, destination, onDestinatio
                   <span>{fx.value} <em>{homeSym}</em></span>
                 </div>
                 <div className="rd-sub">{fx.destName} · 1 {homeSym} = {fx.reverse} {destCur}</div>
-              </>
+                </div>
+              </div>
             )
           ) : (
             <>
@@ -251,9 +249,12 @@ export const LiveStrip: React.FC<Props> = ({ passport, destination, onDestinatio
 
         <div className="rd-card rd-kpi">
           <div className="rd-kpi-h">
-            <span className="rd-kpi-t"><TileArt name="passport" size={30} /><span className="rd-eyebrow">{l('Giriş kuralı', 'Entry rule', 'Einreise', 'Entrada', 'Въезд')}</span></span>
+            <span className="rd-kpi-t"><span className="rd-eyebrow">{l('Giriş kuralı', 'Entry rule', 'Einreise', 'Entrada', 'Въезд')}</span></span>
             <span className={`rd-tag ${visa && (visa.cat === 'free' || visa.id) ? 'ok' : visa && visa.cat === 'visa' ? 'warn' : ''}`}>{getCategoryBadgeLabel(visa || null, language)}</span>
           </div>
+          <div className="rd-wxrow">
+          <LiveIcon kind="entry" value={getCategoryBadgeLabel(visa || null, language)} tone={visa && (visa.cat === 'free' || visa.id) ? 'ok' : visa && visa.cat === 'visa' ? 'bad' : 'warn'} />
+          <div>
           {daysTo !== null && nextStop ? (
             <>
               <div className="rd-big">{daysTo} {l('gün', 'days', 'Tage', 'días', 'дн.')}</div>
@@ -267,6 +268,8 @@ export const LiveStrip: React.FC<Props> = ({ passport, destination, onDestinatio
               </button>
             </>
           )}
+          </div>
+          </div>
         </div>
       </div>
     </section>
