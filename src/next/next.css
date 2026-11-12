@@ -1350,3 +1350,9 @@ button.vz-tb-f { cursor: pointer; }
 .vz-fab:hover { transform: translateY(-2px); }
 @media (prefers-reduced-motion: reduce) { .vz-fab-bot { animation: none; } }
 .vz-fab-x { left: auto; right: -4px; top: -4px; }
+
+/* Gerçekçi 3D simgeler */
+.vz-art-img { filter: drop-shadow(0 6px 10px rgba(20, 40, 60, 0.18)); }
+.vz-art-img img { width: 100%; height: 100%; object-fit: contain; display: block; }
+.vz-qd-card .vz-art-img { width: 60px !important; height: 60px !important; margin: -6px 0 -4px; }
+.vz-qd-card:hover .vz-art-img { transform: translateY(-2px) scale(1.06); }
