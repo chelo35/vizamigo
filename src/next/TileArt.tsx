@@ -368,7 +368,7 @@ const ART: Record<string, (c: { hi: string; lo: string }) => React.ReactNode> = 
 };
 
 /** Gerçekçi 3D simgeler (yapay zekâ ile üretildi): /images/icons/{ad}-96|192.webp. Varsa çizim yerine bunlar gösterilir. */
-export const ART_IMG: Record<string, string> = { plane: 'plane2', bed: 'bed', car: 'car', wifi: 'esim', ticket: 'ticket' };
+export const ART_IMG: Record<string, string> = { passport: 'passport', plane: 'plane2', bed: 'bed', car: 'car', wifi: 'esim', ticket: 'ticket' };
 
 export const TileArt: React.FC<{ name: string; size?: number; photo?: boolean }> = ({ name, size = 48, photo }) => {
   if (photo && ART_IMG[name]) {
