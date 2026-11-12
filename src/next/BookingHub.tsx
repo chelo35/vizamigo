@@ -344,7 +344,28 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
       .catch(() => use([]));
     return () => { off = true; };
   }, [groundCity]);
-  const groundUrl = (g: Ground) => `https://12go.asia/en/travel/${g.from}/${g.slug}?z=${TWELVEGO_AGENT}&sub_id=vz_${code.toLowerCase()}&date=${trip.d1}&people=${trip.n}`;
+  // 12Go ulaşım türleri: veri emojiyle gelir, sonuç sayfası vehclasses_tab ile o türe açılır
+  const GMODES: { k: string; e: string; t: string }[] = [
+    { k: 'train', e: '🚆', t: l('Tren', 'Train', 'Zug', 'Tren', 'Поезд') },
+    { k: 'bus', e: '🚌', t: l('Otobüs', 'Bus', 'Bus', 'Autobús', 'Автобус') },
+    { k: 'ferry', e: '🚢', t: l('Feribot', 'Ferry', 'Fähre', 'Ferry', 'Паром') },
+    { k: 'van', e: '🚐', t: l('Minibüs', 'Minivan', 'Minivan', 'Minibús', 'Минивэн') },
+    { k: 'charter', e: '🚕', t: l('Özel araç / taksi', 'Private car / taxi', 'Privatwagen / Taxi', 'Coche privado / taxi', 'Такси / частный трансфер') },
+    { k: 'avia', e: '✈️', t: l('Uçak', 'Flight', 'Flug', 'Vuelo', 'Самолёт') }
+  ];
+  const modeOf = (emoji: string) => GMODES.find((m) => m.e.replace(/️/g, '') === emoji.replace(/️/g, ''));
+  const [gMode, setGMode] = useState('');
+  const [gTo, setGTo] = useState('');
+  useEffect(() => {
+    setGMode('');
+    setGTo('');
+  }, [groundCity]);
+  const gSlug = (v: string) => v.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/ı/g, 'i').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+  const gLink = (from: string, to: string, mode = gMode) => `https://12go.asia/en/travel/${from}/${to}?z=${TWELVEGO_AGENT}&sub_id=vz_${code.toLowerCase()}&date=${trip.d1}&people=${trip.n}${mode ? `&vehclasses_tab=${mode}` : ''}`;
+  const groundUrl = (g: Ground) => gLink(g.from, g.slug);
+  const gModesHere = GMODES.filter((m) => ground.some((g) => g.modes.some((x) => modeOf(x)?.k === m.k)));
+  const gShown = gMode ? ground.filter((g) => g.modes.some((x) => modeOf(x)?.k === gMode)) : ground;
+  const gSuggest = Array.from(new Set([...ground.map((g) => g.to), ...cities.map((c) => c.en)])).filter((x) => x.toLowerCase() !== groundCity.toLowerCase());
   const eurTo = (v: number) => money(v * getCrossRate('EUR', cur));
   const checked = new Date(`${PRICES_CHECKED}T12:00:00`).toLocaleDateString(loc, { day: 'numeric', month: 'short' });
   const insDays = nights + 1;
@@ -539,14 +560,27 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
       </Sec>
 
       {ground.length > 0 && (
-        <Sec id="bk-ground" icon="transit" title={l(`${groundCity} çıkışlı tren, otobüs ve feribot`, `Trains, buses & ferries from ${groundCity}`, `Zug, Bus & Fähre ab ${groundCity}`, `Trenes, buses y ferris desde ${groundCity}`, `Поезда, автобусы и паромы из ${groundCity}`)} note={l('En düşük "başlayan" fiyatlar 12Go’dan, kişi başı. Saatler ve kesin fiyat seçtiğin tarihle 12Go’da açılır.', 'Lowest "from" prices via 12Go, per person. Times and final price open on 12Go with your date.', 'Ab-Preise über 12Go, pro Person. Zeiten und Endpreis mit deinem Datum auf 12Go.', 'Precios "desde" de 12Go, por persona. Horarios y precio final en 12Go con tu fecha.', 'Цены «от» через 12Go, за человека. Расписание и итоговая цена — на 12Go на вашу дату.')}>
-          <b className="vz-bk-op">12Go</b>
+        <Sec id="bk-ground" icon="transit" title={l(`${groundCity} çıkışlı tren, otobüs ve feribot`, `Trains, buses & ferries from ${groundCity}`, `Zug, Bus & Fähre ab ${groundCity}`, `Trenes, buses y ferris desde ${groundCity}`, `Поезда, автобусы и паромы из ${groundCity}`)} note={l('Fiyat, o rotadaki en ucuz seçeneğin kişi başı başlangıç fiyatıdır (12Go). Türü seçersen o türün seferleri açılır; saatler ve kesin fiyat seçtiğin tarihle 12Go’da.', 'Lowest "from" prices via 12Go, per person. Times and final price open on 12Go with your date.', 'Ab-Preise über 12Go, pro Person. Zeiten und Endpreis mit deinem Datum auf 12Go.', 'Precios "desde" de 12Go, por persona. Horarios y precio final en 12Go con tu fecha.', 'Цены «от» через 12Go, за человека. Расписание и итоговая цена — на 12Go на вашу дату.')}>
+          <div className="vz-bk-chips sm" role="tablist" aria-label={l('Ulaşım türü', 'Transport type', 'Verkehrsmittel', 'Tipo de transporte', 'Тип транспорта')}>
+            <button type="button" role="tab" aria-selected={!gMode} className={!gMode ? 'on' : ''} onClick={() => setGMode('')}>{l('Hepsi', 'All', 'Alle', 'Todos', 'Все')}</button>
+            {gModesHere.map((m) => (
+              <button key={m.k} type="button" role="tab" aria-selected={gMode === m.k} className={gMode === m.k ? 'on' : ''} onClick={() => setGMode(m.k)}>
+                <span aria-hidden="true">{m.e}</span> {m.t}
+              </button>
+            ))}
+          </div>
+          <form className="vz-bk-cityq vz-gr-q" onSubmit={(e) => { e.preventDefault(); const hit = ground.find((g) => g.to.toLowerCase() === gTo.trim().toLowerCase()); const to = hit?.slug || gSlug(gTo); if (to) window.open(gLink(ground[0]?.from || gSlug(groundCity), to), '_blank', 'noopener'); }}>
+            <input list={`vz-gr-${code}`} value={gTo} onChange={(e) => setGTo(e.target.value)} placeholder={l(`${groundCity} → nereye? (ör. Krabi)`, `${groundCity} → where to? (e.g. Krabi)`, `${groundCity} → wohin? (z. B. Krabi)`, `${groundCity} → ¿a dónde? (p. ej. Krabi)`, `${groundCity} → куда? (напр. Krabi)`)} aria-label={l('Varış yeri', 'Destination', 'Ziel', 'Destino', 'Куда')} />
+            <datalist id={`vz-gr-${code}`}>{gSuggest.map((c) => <option key={c} value={c} />)}</datalist>
+            <button type="submit">{gMode ? l(`${GMODES.find((m) => m.k === gMode)?.t} ara`, `Find ${GMODES.find((m) => m.k === gMode)?.t}`, `${GMODES.find((m) => m.k === gMode)?.t} suchen`, `Buscar ${GMODES.find((m) => m.k === gMode)?.t}`, `Найти: ${GMODES.find((m) => m.k === gMode)?.t}`) : l('Sefer ara', 'Find trips', 'Suchen', 'Buscar', 'Найти')}</button>
+          </form>
+          <b className="vz-bk-op">{l('Popüler rotalar · 12Go', 'Popular routes · 12Go', 'Beliebte Strecken · 12Go', 'Rutas populares · 12Go', 'Популярные маршруты · 12Go')}</b>
           <div className="vz-bk-fares">
-            {ground.map((g) => (
+            {gShown.map((g) => (
               <a key={g.slug} className="vz-qd-fare" href={groundUrl(g)} target="_blank" rel="noopener noreferrer sponsored">
                 <b>{l('', '', 'ab ', 'desde ', 'от ')}~{usdTo(g.usd)}{l('’den', '', '', '', '')}</b>
                 <span>{groundCity} → {g.to}</span>
-                <small><span aria-hidden="true">{g.modes.join(' ')}</span> {l('bilet al', 'book', 'buchen', 'reservar', 'купить')} ›</small>
+                <small className="vz-gr-modes">{g.modes.map((x) => modeOf(x)).filter((m): m is NonNullable<typeof m> => !!m && (!gMode || m.k === gMode)).map((m) => `${m.e} ${m.t}`).join(' · ')}</small>
               </a>
             ))}
           </div>
