@@ -275,12 +275,21 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
       alive = false;
     };
   }, [code]);
-  const esimMin = Math.min(...(inTR ? [] : esim.map((p) => p[2])), ...flexi.map((p) => p[2]));
+  // Yesim: resmî ülke sayfasındaki 30 günlük paketler (haftalık güncellenir)
+  const [yesim, setYesim] = useState<{ slug: string; p: [number, number, number][] } | null>(null);
+  useEffect(() => {
+    let alive = true;
+    import('../data/esimMore.json').then((m) => alive && setYesim(((m.default as unknown as { yesim: Record<string, { slug: string; p: [number, number, number][] }> }).yesim[code]) || null)).catch(() => {});
+    return () => {
+      alive = false;
+    };
+  }, [code]);
+  const esimMin = Math.min(...(inTR ? [] : esim.map((p) => p[2])), ...flexi.map((p) => p[2]), ...(yesim?.p || []).map((p) => p[2]));
   // Sadece komisyon getiren eSIM ortakları; Airalo Türkiye'de erişime kapalı olduğu için orada gösterilmez
   const esimPicks: PickItem[] = [
     { id: 'nomad', url: tpLinks.nomad() },
     { id: 'flexiroam', url: tpLinks.flexiroam() },
-    { id: 'yesim', url: tpLinks.yesim() },
+    { id: 'yesim', url: yesim ? `https://yesim.app/country/${yesim.slug}/` : tpLinks.yesim() },
     { id: 'gigsky', url: tpLinks.gigsky() },
     ...(inTR ? [] : [{ id: 'airalo', url: esim[0] ? `https://www.airalo.com/${esim[0][3].split('/')[0]}` : 'https://www.airalo.com/' }])
   ];
@@ -654,7 +663,7 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
         </Sec>
       )}
 
-      <Sec id="bk-esim" icon="phone" title={l('İnternet (eSIM)', 'Mobile data (eSIM)', 'Mobile Daten (eSIM)', 'Datos móviles (eSIM)', 'Мобильный интернет (eSIM)')} note={esim.length || flexi.length ? l('Yukarıdaki fiyatlar Airalo ve FlexiRoam paketleri, düzenli güncellenir. Diğer firmaların paketleri kendi sitelerinde açılır.', 'Prices above are Airalo and FlexiRoam plans, updated regularly. Other providers show their plans on their own sites.', 'Preise oben: Airalo-Tarife, täglich aktualisiert. Andere Anbieter zeigen ihre Tarife auf ihrer Seite.', 'Precios de planes Airalo, actualizados a diario. Otros proveedores muestran sus planes en su web.', 'Цены выше — тарифы Airalo, обновляются ежедневно. Тарифы других — на их сайтах.') : undefined}>
+      <Sec id="bk-esim" icon="phone" title={l('İnternet (eSIM)', 'Mobile data (eSIM)', 'Mobile Daten (eSIM)', 'Datos móviles (eSIM)', 'Мобильный интернет (eSIM)')} note={esim.length || flexi.length ? l('Yukarıdaki fiyatlar Airalo, FlexiRoam ve Yesim paketleri, düzenli güncellenir. Nomad ve GigSky paketleri kendi sitelerinde açılır.', 'Prices above are Airalo, FlexiRoam and Yesim plans, updated regularly. Other providers show their plans on their own sites.', 'Preise oben: Airalo-Tarife, täglich aktualisiert. Andere Anbieter zeigen ihre Tarife auf ihrer Seite.', 'Precios de planes Airalo, actualizados a diario. Otros proveedores muestran sus planes en su web.', 'Цены выше — тарифы Airalo, обновляются ежедневно. Тарифы других — на их сайтах.') : undefined}>
         {!inTR && esim.length > 0 && <b className="vz-bk-op">Airalo</b>}
         {!inTR && esim.length > 0 && (
           <div className="vz-bk-fares">
@@ -678,6 +687,19 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
                 <b>{usdTo(p[2])}</b>
                 <span>{p[0]} GB · {p[1]} {l('gün', 'days', 'Tage', 'días', 'дн.')}</span>
                 <small>FlexiRoam ›</small>
+              </a>
+            ))}
+          </div>
+        )}
+        {yesim && yesim.p.length > 0 && <b className="vz-bk-op">Yesim</b>}
+        {yesim && yesim.p.length > 0 && (
+          <div className="vz-bk-fares">
+            {yesim.p.map((p) => (
+              <a key={`y${p[0]}-${p[1]}`} className={`vz-qd-fare${p[2] === esimMin ? ' best' : ''}`} href={`https://yesim.app/country/${yesim.slug}/`} target="_blank" rel="noopener noreferrer sponsored">
+                {p[2] === esimMin && <em>{l('En ucuz', 'Cheapest', 'Am günstigsten', 'Más barato', 'Дешевле всего')}</em>}
+                <b>{usdTo(p[2])}</b>
+                <span>{p[0]} GB · {p[1]} {l('gün', 'days', 'Tage', 'días', 'дн.')}</span>
+                <small>Yesim ›</small>
               </a>
             ))}
           </div>
