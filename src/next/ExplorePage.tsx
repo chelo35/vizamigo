@@ -135,7 +135,7 @@ export const ExplorePage: React.FC<ExploreProps> = (p) => {
       onOpen: () => p.onOpenTool('plan', 'nomad')
     },
     {
-      id: 'assistant', icon: 'spark', photo: 'x-bot',
+      id: 'assistant', icon: 'spark', photo: 'x-bot2',
       title: l('Vizamigo asistan', 'Vizamigo assistant', 'Vizamigo-Assistent', 'Asistente', 'Ассистент'),
       desc: l('Yaz ya da sesli sor', 'Type or speak', 'Schreiben oder sprechen', 'Escribe o habla', 'Пишите или говорите'),
       onOpen: p.onOpenAssistant
