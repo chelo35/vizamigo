@@ -166,19 +166,26 @@ export const TopBar: React.FC<TopProps> = (p) => {
   );
 };
 
-export const BottomNav: React.FC<{ activeTab: TabKey; onSelectTab: (t: TabKey) => void }> = ({ activeTab, onSelectTab }) => {
-  const items = useNavItems();
+export const BottomNav: React.FC<{ activeTab: TabKey; onSelectTab: (t: TabKey) => void; onAssistant?: () => void }> = ({ activeTab, onSelectTab, onAssistant }) => {
+  // Mobil alt menü: Keşfet · Rota · [Asistan] · Araçlar · Profil (Cüzdan, Profil'in içinde)
+  const items = useNavItems().filter((it) => it.key !== 'track');
   const { l } = useI18n();
-  const cur = activeMain(activeTab);
+  const main = activeMain(activeTab);
+  const cur = main === 'track' ? 'profile' : main;
+  const btn = (it: (typeof items)[number]) => (
+    <button key={it.key} type="button" aria-current={cur === it.key ? 'page' : undefined} onClick={() => onSelectTab(it.key)}>
+      <Icon name={it.icon} size={22} />
+      <span>{it.label}</span>
+    </button>
+  );
   return (
     <nav className="vz-bnav" aria-label={l('Alt menü', 'Bottom menu', 'Untere Navigation', 'Menú inferior', 'Нижнее меню')}>
       <div className="vz-bnav-in">
-        {items.map((it) => (
-          <button key={it.key} type="button" aria-current={cur === it.key ? 'page' : undefined} onClick={() => onSelectTab(it.key)}>
-            <Icon name={it.icon} size={22} />
-            <span>{it.label}</span>
-          </button>
-        ))}
+        {items.slice(0, 2).map(btn)}
+        <button type="button" className="vz-bnav-bot" onClick={onAssistant} aria-label={l('Seyahat asistanına sor (yazarak ya da sesli)', 'Ask the travel assistant (type or speak)', 'Reiseassistent fragen (tippen oder sprechen)', 'Pregunta al asistente de viaje (escribe o habla)', 'Спросить помощника (текстом или голосом)')}>
+          <img src="/images/mascot-192.webp" alt="" width="64" height="64" />
+        </button>
+        {items.slice(2).map(btn)}
       </div>
     </nav>
   );

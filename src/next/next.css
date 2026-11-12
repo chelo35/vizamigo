@@ -1330,3 +1330,13 @@ button.vz-tb-f { cursor: pointer; }
 /* Ülke kapak videosu */
 .vz-chero-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity 0.8s ease; }
 .vz-chero-video.on { opacity: 1; }
+
+/* Mobil alt menü: ortada asistan maskotu */
+.vz-bnav-in { overflow: visible; align-items: end; }
+.vz-bnav .vz-bnav-bot { position: relative; padding: 0; min-height: 52px; background: none; }
+.vz-bnav .vz-bnav-bot img { position: absolute; left: 50%; bottom: 2px; translate: -50% 0; width: 64px; height: 64px; border-radius: 50%; border: 3px solid var(--rd-surface, #fff); box-shadow: 0 8px 22px -6px rgba(11, 114, 135, 0.55); animation: vz-bot-bob 3.2s ease-in-out infinite; }
+.vz-bnav .vz-bnav-bot:active img { scale: 0.94; }
+@keyframes vz-bot-bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-3px); } }
+@media (prefers-reduced-motion: reduce) { .vz-bnav .vz-bnav-bot img { animation: none; } }
+/* alt menüde asistan olduğu için mobilde ayrı yüzen düğme gösterilmez */
+@media (max-width: 1023px) { .vz-fab-w { display: none !important; } }

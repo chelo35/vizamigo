@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { useI18n } from '../data/i18n';
 import { useAuth } from '../context/AuthContext';
-import { Icon } from './Icon';
+import { Icon, type IconName } from './Icon';
 import { Btn, Card, Chip, Chips, Empty, Field, Flag, LinkBtn, List, Page, Row, Stat, Tile, TileGrid, OpenRequest } from './ui';
 import { PassportCover } from '../components/redesign/PassportCover';
 import { getCountryName, AFFILIATE_PARTNERS, getLocalizedPartner, D } from '../data/passportData';
@@ -22,6 +22,7 @@ interface Props {
   onReport: () => void;
   onDataChanged: () => void;
   onOpenCountry: (c: string) => void;
+  onOpenWallet?: () => void;
 }
 
 const AccountView: React.FC = () => {
@@ -261,6 +262,7 @@ export const ProfilePage: React.FC<Props> = (p) => {
   const tiles: Tile[] = [
     { id: 'account', icon: 'user', title: l('Hesabım', 'My account', 'Mein Konto', 'Mi cuenta', 'Аккаунт'), desc: isAuthenticated ? user?.name || '' : l('Giriş yap ya da kaydol', 'Sign in or sign up', 'Anmelden', 'Entrar o registrarse', 'Войти'), render: () => <AccountView /> },
     { id: 'passports', icon: 'passport', title: l('Pasaportlarım', 'My passports', 'Meine Pässe', 'Mis pasaportes', 'Паспорта'), desc: l('Birincil ve ikinci pasaport', 'Main and second passport', 'Haupt- und Zweitpass', 'Principal y segundo', 'Основной и второй'), render: () => <PassportsView passport={p.passport} secondary={p.secondary} onOpenPassport={p.onOpenPassport} onSetSecondary={p.onSetSecondary} /> },
+    ...(p.onOpenWallet ? [{ id: 'wallet', icon: 'wallet' as IconName, title: l('Cüzdan', 'Wallet', 'Wallet', 'Cartera', 'Кошелёк'), desc: l('Biletler, belgeler, rezervasyonlar', 'Tickets, documents, bookings', 'Tickets, Dokumente, Buchungen', 'Billetes, documentos, reservas', 'Билеты, документы, брони'), onOpen: p.onOpenWallet }] : []),
     { id: 'alerts', icon: 'bell', title: l('Uyarılar', 'Alerts', 'Hinweise', 'Avisos', 'Уведомления'), desc: l('Takip ettiğin ülkeler', 'Countries you follow', 'Gefolgte Länder', 'Países que sigues', 'Отслеживаемые страны'), render: () => <AlertsView passport={p.passport} onOpenCountry={p.onOpenCountry} /> },
     { id: 'pro', icon: 'star', title: l('Üyelik', 'Membership', 'Mitgliedschaft', 'Membresía', 'Подписка'), desc: l('Ücretsiz ve PRO', 'Free and PRO', 'Gratis und PRO', 'Gratis y PRO', 'Бесплатно и PRO'), badge: user?.isPro ? 'PRO' : undefined, render: () => <MembershipView /> },
     { id: 'deals', icon: 'handshake', title: l('Fırsatlar', 'Deals', 'Angebote', 'Ofertas', 'Предложения'), desc: l('Sigorta, eSIM, otel', 'Insurance, eSIM, hotels', 'Versicherung, eSIM', 'Seguro, eSIM', 'Страховка, eSIM'), render: () => <DealsView /> },

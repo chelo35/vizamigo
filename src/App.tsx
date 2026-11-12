@@ -348,6 +348,7 @@ function AppContent() {
                   onOpenInfo={(pg) => openLegalModalWithTab(pg)}
                   onReport={() => setReportingModalData({ code: '', name: '' })}
                   onDataChanged={handleDataResetOrImported}
+                  onOpenWallet={() => handleSelectTab('track')}
                   onOpenCountry={openCountryFromAnywhere}
                 />
               )}
@@ -363,7 +364,7 @@ function AppContent() {
           onOpenTool={openTool}
         />
       )}
-      <BottomNav activeTab={activeTab} onSelectTab={handleSelectTab} />
+      <BottomNav activeTab={activeTab} onSelectTab={handleSelectTab} onAssistant={() => setIsAssistantOpen(true)} />
       <ConsentBanner />
 
       {/* User Login & Registration Modal */}
