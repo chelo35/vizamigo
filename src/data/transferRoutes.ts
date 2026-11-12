@@ -7,9 +7,43 @@
 /** usd: fiyat; cur 'EUR' ise değer euro'dur (Kiwitaxi o ülke sayfasında fiyatı euro gösteriyor) */
 export type TransferRoute = { slug: string; from: string; to: string; iata: string; usd: number; cur?: 'EUR'; city?: string };
 
-export const KIWI_COUNTRY: Record<string, string> = { TH: 'thailand', FR: 'france', ES: 'spain', US: 'usa', TR: 'turkey', IT: 'italy' };
+export const KIWI_COUNTRY: Record<string, string> = { TH: 'thailand', FR: 'france', ES: 'spain', US: 'usa', TR: 'turkey', IT: 'italy', MX: 'mexico', GB: 'united-kingdom', DE: 'germany', JP: 'japan', GR: 'greece' };
 
 export const TRANSFER_ROUTES: Record<string, TransferRoute[]> = {
+  MX: [
+    { city: 'cancun', slug: 'cancun-airport-playa-del-carmen', iata: 'CUN', from: 'Cancún', to: 'Playa del Carmen', usd: 80 },
+    { city: 'cancun', slug: 'cancun-airport-tulum', iata: 'CUN', from: 'Cancún', to: 'Tulum', usd: 96 },
+    { city: 'mexico-city', slug: 'mexico-city-airport-condesa-district-mexico-city', iata: 'MEX', from: 'Mexico City', to: 'Condesa', usd: 47 }
+  ],
+  GB: [
+    { city: 'london', slug: 'taxi-from-heathrow-airport-to-central-london', iata: 'LHR', from: 'Heathrow', to: 'Central London', usd: 85, cur: 'EUR' },
+    { city: 'london', slug: 'taxi-from-gatwick-airport-to-central-london', iata: 'LGW', from: 'Gatwick', to: 'Central London', usd: 111, cur: 'EUR' },
+    { city: 'edinburgh', slug: 'edinburgh-airport-edinburgh', iata: 'EDI', from: 'Edinburgh', to: 'Edinburgh', usd: 69, cur: 'EUR' },
+    { city: 'glasgow', slug: 'glasgow-airport-glasgow', iata: 'GLA', from: 'Glasgow', to: 'Glasgow', usd: 84, cur: 'EUR' },
+    { city: 'manchester', slug: 'taxi-from-manchester-airport-to-manchester', iata: 'MAN', from: 'Manchester', to: 'Manchester', usd: 52, cur: 'EUR' }
+  ],
+  DE: [
+    { city: 'berlin', slug: 'berlin-airport-berlin', iata: 'BER', from: 'Berlin', to: 'Berlin', usd: 73, cur: 'EUR' },
+    { city: 'munich', slug: 'taxi-from-munich-airport-to-munich', iata: 'MUC', from: 'München', to: 'München', usd: 104, cur: 'EUR' },
+    { city: 'frankfurt', slug: 'frankfurt-airport-frankfurt-am-main', iata: 'FRA', from: 'Frankfurt', to: 'Frankfurt', usd: 55, cur: 'EUR' },
+    { city: 'hamburg', slug: 'hamburg-airport-hamburg', iata: 'HAM', from: 'Hamburg', to: 'Hamburg', usd: 89, cur: 'EUR' }
+  ],
+  JP: [
+    { city: 'tokyo', slug: 'narita-airport-tokyo-shinjuku-train-station', iata: 'NRT', from: 'Narita', to: 'Shinjuku', usd: 183 },
+    { city: 'osaka', slug: 'kansai-airport-shin-osaka-train-station-train-station', iata: 'KIX', from: 'Kansai', to: 'Shin-Osaka', usd: 197 },
+    { city: 'sapporo', slug: 'new-chitose-airport-sapporo', iata: 'CTS', from: 'New Chitose', to: 'Sapporo', usd: 205 },
+    { city: 'fukuoka', slug: 'fukuoka-airport-fukuoka', iata: 'FUK', from: 'Fukuoka', to: 'Fukuoka', usd: 131 },
+    { city: 'okinawa', slug: 'naha-airport-naha', iata: 'OKA', from: 'Naha', to: 'Naha', usd: 103 }
+  ],
+  GR: [
+    { city: 'athens', slug: 'taxi-from-athens-airport-to-athens', iata: 'ATH', from: 'Atina', to: 'Atina', usd: 48, cur: 'EUR' },
+    { city: 'athens', slug: 'taxi-from-athens-airport-to-piraeus-port', iata: 'ATH', from: 'Atina', to: 'Pire Limanı', usd: 38, cur: 'EUR' },
+    { city: 'santorini', slug: 'santorini-airport-oia-santorini', iata: 'JTR', from: 'Santorini', to: 'Oia', usd: 47, cur: 'EUR' },
+    { city: 'mykonos', slug: 'mykonos-airport-mykonos-town', iata: 'JMK', from: 'Mikonos', to: 'Mikonos Kasabası', usd: 48, cur: 'EUR' },
+    { city: 'crete', slug: 'heraklion-airport-heraklion', iata: 'HER', from: 'Kandiye', to: 'Kandiye', usd: 32, cur: 'EUR' },
+    { city: 'crete', slug: 'chania-airport-chania-town', iata: 'CHQ', from: 'Hanya', to: 'Hanya', usd: 38, cur: 'EUR' },
+    { city: 'thessaloniki', slug: 'thessaloniki-airport-thessaloniki', iata: 'SKG', from: 'Selanik', to: 'Selanik', usd: 39, cur: 'EUR' }
+  ],
   FR: [
     { city: 'paris', slug: 'taxi-from-paris-airport-to-paris', iata: 'CDG', from: 'Charles de Gaulle', to: 'Paris', usd: 84, cur: 'EUR' },
     { city: 'paris', slug: 'orly-airport-paris', iata: 'ORY', from: 'Orly', to: 'Paris', usd: 71, cur: 'EUR' },

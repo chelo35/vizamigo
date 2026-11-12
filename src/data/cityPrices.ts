@@ -24,6 +24,46 @@ export type City = {
 };
 
 export const CITIES: Record<string, City[]> = {
+  MX: [
+    { id: 'cancun', en: 'Cancun', iata: 'CUN', tr: 'Cancún', lr: { path: 'mexico/cancun' }, moto: { slug: 'quintana-roo', eur: 26.04 } },
+    { id: 'mexico-city', en: 'Mexico City', iata: 'MEX', lr: { path: 'mexico/mexico-city' } },
+    { id: 'tulum', en: 'Tulum', iata: 'CUN' },
+    { id: 'playa-del-carmen', en: 'Playa del Carmen', iata: 'CUN' },
+    { id: 'puerto-vallarta', en: 'Puerto Vallarta', iata: 'PVR' },
+    { id: 'los-cabos', en: 'Los Cabos', iata: 'SJD' }
+  ],
+  GB: [
+    { id: 'london', en: 'London', iata: 'LHR', tr: 'Londra' },
+    { id: 'edinburgh', en: 'Edinburgh', iata: 'EDI', tr: 'Edinburg' },
+    { id: 'manchester', en: 'Manchester', iata: 'MAN' },
+    { id: 'glasgow', en: 'Glasgow', iata: 'GLA' },
+    { id: 'liverpool', en: 'Liverpool', iata: 'LPL' },
+    { id: 'birmingham', en: 'Birmingham', iata: 'BHX' }
+  ],
+  DE: [
+    { id: 'berlin', en: 'Berlin', iata: 'BER', lr: { path: 'germany/berlin' } },
+    { id: 'munich', en: 'Munich', iata: 'MUC', tr: 'Münih' },
+    { id: 'frankfurt', en: 'Frankfurt', iata: 'FRA', lr: { path: 'germany/frankfurt', eur: 30.69 } },
+    { id: 'hamburg', en: 'Hamburg', iata: 'HAM', lr: { path: 'germany/hamburg', eur: 31.19 } },
+    { id: 'cologne', en: 'Cologne', iata: 'CGN', tr: 'Köln', lr: { path: 'germany/cologne', eur: 36.34 } }
+  ],
+  JP: [
+    { id: 'tokyo', en: 'Tokyo', iata: 'HND', car: { path: 'asia/japan/tokyo', usd: { mini: 44, economy: 48, standard: 49, compact: 64, intermediate: 67 } }, moto: { slug: 'kanto', eur: 17.42 } },
+    { id: 'osaka', en: 'Osaka', iata: 'KIX' },
+    { id: 'kyoto', en: 'Kyoto', iata: 'KIX' },
+    { id: 'sapporo', en: 'Sapporo', iata: 'CTS' },
+    { id: 'fukuoka', en: 'Fukuoka', iata: 'FUK' },
+    { id: 'okinawa', en: 'Okinawa', iata: 'OKA' }
+  ],
+  GR: [
+    { id: 'athens', en: 'Athens', iata: 'ATH', tr: 'Atina', lr: { path: 'greece/athens' }, moto: { slug: 'attica', eur: 17 } },
+    { id: 'santorini', en: 'Santorini', iata: 'JTR', lr: { path: 'greece/santorini' }, moto: { slug: 'cyclades', eur: 11 } },
+    { id: 'mykonos', en: 'Mykonos', iata: 'JMK', tr: 'Mikonos', lr: { path: 'greece/mykonos' } },
+    { id: 'crete', en: 'Crete', iata: 'HER', tr: 'Girit', lr: { path: 'greece/heraklion' }, moto: { slug: 'crete', eur: 15 } },
+    { id: 'rhodes', en: 'Rhodes', iata: 'RHO', tr: 'Rodos', lr: { path: 'greece/rhodes', eur: 12.83 } },
+    { id: 'corfu', en: 'Corfu', iata: 'CFU', tr: 'Korfu', lr: { path: 'greece/corfu' } },
+    { id: 'thessaloniki', en: 'Thessaloniki', iata: 'SKG', tr: 'Selanik', lr: { path: 'greece/thessaloniki' } }
+  ],
   FR: [
     { id: 'paris', en: 'Paris', iata: 'CDG', car: { path: 'europe/france/paris', usd: { mini: 15, economy: 17, compact: 27, intermediate: 29, standard: 44 } }, lr: { path: 'france/paris' }, moto: { slug: 'ile-de-france', eur: 16.42 } },
     { id: 'nice', en: 'Nice', iata: 'NCE', car: { path: 'europe/france/nice', usd: { mini: 10, economy: 14, compact: 16, intermediate: 22, standard: 25 } }, lr: { path: 'france/nice', eur: 15.21 } },

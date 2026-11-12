@@ -142,11 +142,17 @@ const ModeBadge: React.FC<{ k: string; title?: string }> = ({ k, title }) => (
 
 /** Bölüm başlık görselleri: /images/bk/{ad}-480|960.webp */
 const SEC_IMG: Record<string, string> = { 'bk-flight': 'flight', 'bk-hotel': 'hotel', 'bk-tours': 'tours', 'bk-transfer': 'transfer', 'bk-ground': 'ground', 'bk-esim': 'esim', 'bk-car': 'car', 'bk-ins': 'ins' };
-const Sec: React.FC<{ id: string; icon: string; title: string; note?: string; children: React.ReactNode }> = ({ id, icon, title, note, children }) => (
+/** Ülkeye özel tur görseli olan ülkeler (/images/bk/tours-{kod}-480|960.webp) */
+const TOUR_IMG = new Set(['FR', 'ES', 'US', 'TR', 'IT', 'MX', 'GB', 'DE', 'JP', 'GR']);
+/** Feribot görseli Güneydoğu Asya ve adalar için; diğer ülkelerde tren/otobüs görseli */
+const FERRY_IMG = new Set(['TH', 'VN', 'KH', 'LA', 'MY', 'ID', 'PH', 'MM', 'SG', 'LK', 'MV', 'FJ']);
+const secImg = (id: string, code: string) =>
+  id === 'bk-tours' && TOUR_IMG.has(code) ? `tours-${code.toLowerCase()}` : id === 'bk-ground' && !FERRY_IMG.has(code) ? 'ground-land' : SEC_IMG[id];
+const Sec: React.FC<{ id: string; icon: string; title: string; note?: string; code?: string; children: React.ReactNode }> = ({ id, icon, title, note, code = '', children }) => (
   <section id={id} className={`vz-bk-sec${SEC_IMG[id] ? ' has-img' : ''}`}>
     {SEC_IMG[id] ? (
       <div className="vz-bk-banner">
-        <img src={`/images/bk/${SEC_IMG[id]}-480.webp`} srcSet={`/images/bk/${SEC_IMG[id]}-480.webp 480w, /images/bk/${SEC_IMG[id]}-960.webp 960w`} sizes="(min-width: 900px) 560px, 100vw" alt="" loading="lazy" decoding="async" />
+        <img src={`/images/bk/${secImg(id, code)}-480.webp`} srcSet={`/images/bk/${secImg(id, code)}-480.webp 480w, /images/bk/${secImg(id, code)}-960.webp 960w`} sizes="(min-width: 900px) 560px, 100vw" alt="" loading="lazy" decoding="async" />
         <h3 className="vz-bk-h"><span className="vz-ic sm"><Icon name={icon as never} size={18} /></span>{title}</h3>
       </div>
     ) : (
@@ -588,7 +594,7 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
         {hotelLive && <Picks label={l('Otel sitesini seç:', 'Choose a hotel site:', 'Hotelseite wählen:', 'Elige un sitio:', 'Выберите сайт:')} items={hotelPicks} k={`h${code}${trip.d1}${trip.d2}${trip.n}`} />}
       </Sec>
 
-      <Sec id="bk-tours" icon="ticket" title={l('Turlar ve aktiviteler', 'Tours & activities', 'Touren & Aktivitäten', 'Tours y actividades', 'Экскурсии и развлечения')}>
+      <Sec id="bk-tours" code={code} icon="ticket" title={l('Turlar ve aktiviteler', 'Tours & activities', 'Touren & Aktivitäten', 'Tours y actividades', 'Экскурсии и развлечения')}>
         <div className="vz-bk-chips" role="tablist" aria-label={l('Yer', 'Place', 'Ort', 'Lugar', 'Место')}>
           {[...(tourArea && tourArea !== tCity ? [tourArea] : []), tCity, ...sights].filter((x, i, a) => a.indexOf(x) === i).map((s) => (
             <button key={s} type="button" role="tab" aria-selected={(tourArea || tCity) === s} className={(tourArea || tCity) === s ? 'on' : ''} onClick={() => setTourArea(s)}>{s === cityEn ? (GEO_DATA[code]?.capital ? capitalName(code, language, GEO_DATA[code].capital) : s) : s}</button>
@@ -632,7 +638,7 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
       </Sec>
 
       {ground.length > 0 && (
-        <Sec id="bk-ground" icon="transit" title={l(`${groundCity} çıkışlı tren, otobüs ve feribot`, `Trains, buses & ferries from ${groundCity}`, `Zug, Bus & Fähre ab ${groundCity}`, `Trenes, buses y ferris desde ${groundCity}`, `Поезда, автобусы и паромы из ${groundCity}`)} note={l('"’den" fiyatı, o rotadaki en ucuz seçeneğin (tür fark etmeksizin) kişi başı başlangıç fiyatıdır (12Go). Bir tür seçince o türün saat ve fiyatları seçtiğin tarihle 12Go’da açılır.', 'Lowest "from" prices via 12Go, per person. Times and final price open on 12Go with your date.', 'Ab-Preise über 12Go, pro Person. Zeiten und Endpreis mit deinem Datum auf 12Go.', 'Precios "desde" de 12Go, por persona. Horarios y precio final en 12Go con tu fecha.', 'Цены «от» через 12Go, за человека. Расписание и итоговая цена — на 12Go на вашу дату.')}>
+        <Sec id="bk-ground" code={code} icon="transit" title={l(`${groundCity} çıkışlı tren, otobüs ve feribot`, `Trains, buses & ferries from ${groundCity}`, `Zug, Bus & Fähre ab ${groundCity}`, `Trenes, buses y ferris desde ${groundCity}`, `Поезда, автобусы и паромы из ${groundCity}`)} note={l('"’den" fiyatı, o rotadaki en ucuz seçeneğin (tür fark etmeksizin) kişi başı başlangıç fiyatıdır (12Go). Bir tür seçince o türün saat ve fiyatları seçtiğin tarihle 12Go’da açılır.', 'Lowest "from" prices via 12Go, per person. Times and final price open on 12Go with your date.', 'Ab-Preise über 12Go, pro Person. Zeiten und Endpreis mit deinem Datum auf 12Go.', 'Precios "desde" de 12Go, por persona. Horarios y precio final en 12Go con tu fecha.', 'Цены «от» через 12Go, за человека. Расписание и итоговая цена — на 12Go на вашу дату.')}>
           <div className="vz-bk-chips sm" role="tablist" aria-label={l('Ulaşım türü', 'Transport type', 'Verkehrsmittel', 'Tipo de transporte', 'Тип транспорта')}>
             <button type="button" role="tab" aria-selected={!gMode} className={!gMode ? 'on' : ''} onClick={() => setGMode('')}>{l('Hepsi', 'All', 'Alle', 'Todos', 'Все')}</button>
             {gModesHere.map((m) => (

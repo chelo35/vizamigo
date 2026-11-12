@@ -38,7 +38,7 @@ import { BookingHub, TripBar, useTrip } from './BookingHub';
 import { NOMAD_HUBS, getLocalizedNomadHub } from '../data/nomadData';
 
 /** Yeni "tek sayfa" düzeni (üstte yolculuk çubuğu, Rezervasyon / Ülke rehberi sekmeleri) açık olan ülkeler. */
-export const NEW_LAYOUT = new Set(['TH', 'FR', 'ES', 'US', 'TR', 'IT']);
+export const NEW_LAYOUT = new Set(['TH', 'FR', 'ES', 'US', 'TR', 'IT', 'MX', 'GB', 'DE', 'JP', 'GR']);
 import { buildPassportPath, buildLocalizedPath } from '../utils/seoRouter';
 
 interface Props {
