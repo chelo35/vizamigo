@@ -11,6 +11,8 @@ export type CarClass = 'mini' | 'economy' | 'compact' | 'intermediate' | 'standa
 export type City = {
   id: string;
   en: string;
+  /** Türkçe ad (farklıysa) */
+  tr?: string;
   /** en yakın havalimanı (uçuş fiyatları için) */
   iata?: string;
   /** EconomyBookings şehir sayfası yolu ve sınıf başına günlük USD */
@@ -20,6 +22,46 @@ export type City = {
 };
 
 export const CITIES: Record<string, City[]> = {
+  FR: [
+    { id: 'paris', en: 'Paris', iata: 'CDG' },
+    { id: 'nice', en: 'Nice', iata: 'NCE' },
+    { id: 'lyon', en: 'Lyon', iata: 'LYS' },
+    { id: 'marseille', en: 'Marseille', iata: 'MRS', tr: 'Marsilya' },
+    { id: 'bordeaux', en: 'Bordeaux', iata: 'BOD' },
+    { id: 'strasbourg', en: 'Strasbourg', iata: 'SXB', tr: 'Strazburg' }
+  ],
+  ES: [
+    { id: 'madrid', en: 'Madrid', iata: 'MAD' },
+    { id: 'barcelona', en: 'Barcelona', iata: 'BCN' },
+    { id: 'malaga', en: 'Malaga', iata: 'AGP' },
+    { id: 'palma', en: 'Palma de Mallorca', iata: 'PMI', tr: 'Mallorca' },
+    { id: 'tenerife', en: 'Tenerife', iata: 'TFS' },
+    { id: 'alicante', en: 'Alicante', iata: 'ALC' },
+    { id: 'seville', en: 'Seville', iata: 'SVQ', tr: 'Sevilla' }
+  ],
+  US: [
+    { id: 'new-york', en: 'New York', iata: 'JFK' },
+    { id: 'los-angeles', en: 'Los Angeles', iata: 'LAX' },
+    { id: 'miami', en: 'Miami', iata: 'MIA' },
+    { id: 'orlando', en: 'Orlando', iata: 'MCO' },
+    { id: 'las-vegas', en: 'Las Vegas', iata: 'LAS' },
+    { id: 'san-francisco', en: 'San Francisco', iata: 'SFO' }
+  ],
+  TR: [
+    { id: 'istanbul', en: 'Istanbul', iata: 'IST', tr: 'İstanbul' },
+    { id: 'antalya', en: 'Antalya', iata: 'AYT' },
+    { id: 'bodrum', en: 'Bodrum', iata: 'BJV' },
+    { id: 'dalaman', en: 'Fethiye', iata: 'DLM' },
+    { id: 'izmir', en: 'Izmir', iata: 'ADB', tr: 'İzmir' },
+    { id: 'cappadocia', en: 'Cappadocia', iata: 'NAV', tr: 'Kapadokya' }
+  ],
+  IT: [
+    { id: 'rome', en: 'Rome', iata: 'FCO', tr: 'Roma' },
+    { id: 'milan', en: 'Milan', iata: 'MXP', tr: 'Milano' },
+    { id: 'venice', en: 'Venice', iata: 'VCE', tr: 'Venedik' },
+    { id: 'florence', en: 'Florence', iata: 'FLR', tr: 'Floransa' },
+    { id: 'naples', en: 'Naples', iata: 'NAP', tr: 'Napoli' }
+  ],
   TH: [
     { id: 'bangkok', en: 'Bangkok', iata: 'BKK', car: { path: 'asia/thailand/bangkok', usd: { mini: 19, economy: 21, compact: 22, intermediate: 33, standard: 45 } }, moto: { slug: 'bangkok', eur: 27.77 } },
     { id: 'phuket', en: 'Phuket', iata: 'HKT', car: { path: 'asia/thailand/phuket' }, moto: { slug: 'phuket', eur: 5 } },

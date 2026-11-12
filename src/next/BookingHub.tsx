@@ -229,7 +229,7 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
 
   // Otel: başkent + büyük şehirler + turistik bölgeler
   const areas = useMemo(() => {
-    if ((CITIES[code] || []).length > 1) return (CITIES[code] || []).map((c) => ({ en: c.en, name: c.en }));
+    if ((CITIES[code] || []).length > 1) return (CITIES[code] || []).map((c) => ({ en: c.en, name: (language === 'tr' && c.tr) || c.en }));
     const en = [geoEn.capital, ...geoEn.majorCities, ...geoEn.touristRegions];
     const lc = [geoLoc.capital, ...geoLoc.majorCities, ...geoLoc.touristRegions];
     const out: { en: string; name: string }[] = [];
@@ -453,7 +453,7 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
           <div className="vz-bk-chips" role="tablist" aria-label={l('Şehir', 'City', 'Stadt', 'Ciudad', 'Город')}>
             {custom && <button type="button" role="tab" aria-selected className="on">{custom}</button>}
             {cities.map((c) => (
-              <button key={c.id} type="button" role="tab" aria-selected={city?.id === c.id} className={city?.id === c.id ? 'on' : ''} onClick={() => { setCityQ(''); pickCity(c.id); }}>{c.en}</button>
+              <button key={c.id} type="button" role="tab" aria-selected={city?.id === c.id} className={city?.id === c.id ? 'on' : ''} onClick={() => { setCityQ(''); pickCity(c.id); }}>{(language === 'tr' && c.tr) || c.en}</button>
             ))}
           </div>
           <small>{l('Uçuş, otel, tur, transfer, araç ve motor fiyatları seçtiğin şehre göre değişir.', 'Flights, hotels, tours, transfers, cars and bikes follow the city you pick.', 'Flüge, Hotels, Touren, Transfers, Autos und Roller richten sich nach der Stadt.', 'Vuelos, hoteles, tours, traslados, coches y motos según la ciudad.', 'Рейсы, отели, туры, трансферы, авто и байки — по выбранному городу.')}</small>
@@ -620,7 +620,7 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
             <div className="vz-bk-fares">
               {shownRoutes.map((r) => (
                 <a key={r.slug} className="vz-qd-fare" href={kiwiRouteUrl(code, r.slug, language)} target="_blank" rel="noopener noreferrer sponsored">
-                  <b>~{usdTo(r.usd)}</b>
+                  <b>~{r.cur === 'EUR' ? eurTo(r.usd) : usdTo(r.usd)}</b>
                   <span>{r.from} ({r.iata}) → {r.to}</span>
                   <small>{l('araç başı, sabit fiyat', 'per car, fixed price', 'pro Auto, Festpreis', 'por coche, precio fijo', 'за авто, фикс. цена')} ›</small>
                 </a>
