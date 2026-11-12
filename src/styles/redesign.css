@@ -421,3 +421,9 @@ html.dark .rd-gulls path { stroke: #F4E6DC; opacity: 0.85; }
 .rd-hero.has-photo .rd-photo video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 70% 50%; opacity: 0; transition: opacity 0.9s ease; }
 .rd-hero.has-photo .rd-photo video.on { opacity: 1; }
 .rd-hero.has-photo .rd-photo img { object-position: 70% 50%; }
+/* Kapak daha aydınlık: karartma hafifletildi, yazı gölgeyle okunur */
+.rd-hero.has-photo .rd-photo::after { background: linear-gradient(90deg, rgba(6, 40, 56, 0.42) 0%, rgba(6, 40, 56, 0.18) 45%, rgba(6, 40, 56, 0) 70%), linear-gradient(180deg, rgba(6, 40, 56, 0) 55%, rgba(6, 40, 56, 0.35) 100%); }
+.rd-hero.has-photo .rd-photo img, .rd-hero.has-photo .rd-photo video { filter: brightness(1.08) saturate(1.12); }
+.rd-hero.has-photo h1 { text-shadow: 0 2px 18px rgba(0, 30, 45, 0.45), 0 1px 3px rgba(0, 30, 45, 0.35); }
+.rd-hero.has-photo p, .rd-hero.has-photo .rd-eyebrow { text-shadow: 0 1px 10px rgba(0, 30, 45, 0.55); }
+@media (max-width: 720px) { .rd-hero.has-photo .rd-photo::after { background: linear-gradient(180deg, rgba(6, 40, 56, 0.32) 0%, rgba(6, 40, 56, 0.12) 40%, rgba(6, 40, 56, 0.3) 100%); } }

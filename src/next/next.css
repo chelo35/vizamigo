@@ -1457,3 +1457,6 @@ button.vz-tb-f { cursor: pointer; }
 .vz-gr-modes { display: flex !important; gap: 4px; flex-wrap: wrap; margin-top: 4px; }
 .vz-bk-chips button .vz-gm { margin-right: 4px; }
 .vz-bk-chips button.on .vz-gm { box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.8); }
+/* aydınlık kapakta cam kartlar okunaklı kalsın */
+.rd-glass .rd-card { background: rgba(8, 44, 60, 0.34); border-color: rgba(255, 255, 255, 0.32); }
+@media (max-width: 960px) { .vz-app .rd-hero.has-photo .rd-hero-in { padding-bottom: 330px; } }
