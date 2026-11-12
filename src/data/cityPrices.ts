@@ -24,6 +24,42 @@ export type City = {
 };
 
 export const CITIES: Record<string, City[]> = {
+  SA: [
+    { id: 'riyadh', en: 'Riyadh', iata: 'RUH', tr: 'Riyad' },
+    { id: 'jeddah', en: 'Jeddah', iata: 'JED', tr: 'Cidde' },
+    { id: 'mecca', en: 'Mecca', iata: 'JED', tr: 'Mekke' },
+    { id: 'medina', en: 'Medina', iata: 'MED', tr: 'Medine' },
+    { id: 'alula', en: 'AlUla', iata: 'ULH' },
+    { id: 'dammam', en: 'Dammam', iata: 'DMM' }
+  ],
+  AT: [
+    { id: 'vienna', en: 'Vienna', iata: 'VIE', tr: 'Viyana', lr: { path: 'austria/vienna', eur: 31.25 } },
+    { id: 'salzburg', en: 'Salzburg', iata: 'SZG', lr: { path: 'austria/salzburg' } },
+    { id: 'innsbruck', en: 'Innsbruck', iata: 'INN', lr: { path: 'austria/innsbruck' } },
+    { id: 'hallstatt', en: 'Hallstatt', iata: 'SZG' },
+    { id: 'graz', en: 'Graz', iata: 'GRZ' }
+  ],
+  CN: [
+    { id: 'beijing', en: 'Beijing', iata: 'PEK', tr: 'Pekin', lr: { path: 'china/beijing' } },
+    { id: 'shanghai', en: 'Shanghai', iata: 'PVG', tr: 'Şanghay', lr: { path: 'china/shanghai' } },
+    { id: 'guangzhou', en: 'Guangzhou', iata: 'CAN' },
+    { id: 'xian', en: 'Xi’an', iata: 'XIY', tr: 'Şian' },
+    { id: 'chengdu', en: 'Chengdu', iata: 'TFU' },
+    { id: 'guilin', en: 'Guilin', iata: 'KWL' }
+  ],
+  AE: [
+    { id: 'dubai', en: 'Dubai', iata: 'DXB', lr: { path: 'uae/dubai', eur: 25 } },
+    { id: 'abu-dhabi', en: 'Abu Dhabi', iata: 'AUH', tr: 'Abu Dabi', lr: { path: 'uae/abu-dhabi', eur: 29.29 } },
+    { id: 'sharjah', en: 'Sharjah', iata: 'SHJ', tr: 'Şarika' },
+    { id: 'ras-al-khaimah', en: 'Ras Al Khaimah', iata: 'DXB' }
+  ],
+  PT: [
+    { id: 'lisbon', en: 'Lisbon', iata: 'LIS', tr: 'Lizbon', lr: { path: 'portugal/lisbon' }, moto: { slug: 'lisboa', eur: 15.47 } },
+    { id: 'porto', en: 'Porto', iata: 'OPO', lr: { path: 'portugal/porto', eur: 8.96 } },
+    { id: 'algarve', en: 'Algarve', iata: 'FAO', lr: { path: 'portugal/faro' } },
+    { id: 'madeira', en: 'Madeira', iata: 'FNC', lr: { path: 'portugal/madeira', eur: 9.86 } },
+    { id: 'azores', en: 'Azores', iata: 'PDL', tr: 'Azor Adaları' }
+  ],
   MX: [
     { id: 'cancun', en: 'Cancun', iata: 'CUN', tr: 'Cancún', lr: { path: 'mexico/cancun' }, moto: { slug: 'quintana-roo', eur: 26.04 } },
     { id: 'mexico-city', en: 'Mexico City', iata: 'MEX', lr: { path: 'mexico/mexico-city' } },

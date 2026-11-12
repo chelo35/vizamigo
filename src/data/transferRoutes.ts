@@ -7,9 +7,34 @@
 /** usd: fiyat; cur 'EUR' ise değer euro'dur (Kiwitaxi o ülke sayfasında fiyatı euro gösteriyor) */
 export type TransferRoute = { slug: string; from: string; to: string; iata: string; usd: number; cur?: 'EUR'; city?: string };
 
-export const KIWI_COUNTRY: Record<string, string> = { TH: 'thailand', FR: 'france', ES: 'spain', US: 'usa', TR: 'turkey', IT: 'italy', MX: 'mexico', GB: 'united-kingdom', DE: 'germany', JP: 'japan', GR: 'greece' };
+export const KIWI_COUNTRY: Record<string, string> = { TH: 'thailand', FR: 'france', ES: 'spain', US: 'usa', TR: 'turkey', IT: 'italy', MX: 'mexico', GB: 'united-kingdom', DE: 'germany', JP: 'japan', GR: 'greece', SA: 'saudi-arabia', AT: 'austria', CN: 'china', AE: 'uae', PT: 'portugal' };
 
 export const TRANSFER_ROUTES: Record<string, TransferRoute[]> = {
+  SA: [
+    { city: 'jeddah', slug: 'jeddah-airport-medina', iata: 'JED', from: 'Cidde', to: 'Medine', usd: 136 }
+  ],
+  AT: [
+    { city: 'vienna', slug: 'taxi-from-vienna-airport-to-vienna', iata: 'VIE', from: 'Viyana', to: 'Viyana', usd: 62, cur: 'EUR' },
+    { city: 'innsbruck', slug: 'innsbruck-airport-innsbruck', iata: 'INN', from: 'Innsbruck', to: 'Innsbruck', usd: 56, cur: 'EUR' }
+  ],
+  CN: [
+    { city: 'beijing', slug: 'beijing-airport-beijing', iata: 'PEK', from: 'Pekin', to: 'Pekin', usd: 41 },
+    { city: 'shanghai', slug: 'shanghai-hongqiao-airport-shanghai', iata: 'SHA', from: 'Hongqiao', to: 'Şanghay', usd: 43 },
+    { city: 'guangzhou', slug: 'guangzhou-baiyun-airport-guangzhou', iata: 'CAN', from: 'Guangzhou', to: 'Guangzhou', usd: 43 }
+  ],
+  AE: [
+    { city: 'dubai', slug: 'taxi-from-dubai-airport-to-downtown', iata: 'DXB', from: 'Dubai', to: 'Downtown Dubai', usd: 37 },
+    { city: 'dubai', slug: 'taxi-from-dubai-airport-to-dubai-marina', iata: 'DXB', from: 'Dubai', to: 'Dubai Marina', usd: 38 },
+    { city: 'abu-dhabi', slug: 'taxi-from-dubai-airport-to-abu-dhabi', iata: 'DXB', from: 'Dubai', to: 'Abu Dabi', usd: 73 }
+  ],
+  PT: [
+    { city: 'lisbon', slug: 'humberto-delgado-airport-lisbon', iata: 'LIS', from: 'Lizbon', to: 'Lizbon', usd: 34, cur: 'EUR' },
+    { city: 'lisbon', slug: 'humberto-delgado-airport-sintra', iata: 'LIS', from: 'Lizbon', to: 'Sintra', usd: 49, cur: 'EUR' },
+    { city: 'lisbon', slug: 'taxi-from-lisbon-airport-to-cascais', iata: 'LIS', from: 'Lizbon', to: 'Cascais', usd: 50, cur: 'EUR' },
+    { city: 'porto', slug: 'porto-airport-porto', iata: 'OPO', from: 'Porto', to: 'Porto', usd: 42, cur: 'EUR' },
+    { city: 'algarve', slug: 'faro-airport-albufeira', iata: 'FAO', from: 'Faro', to: 'Albufeira', usd: 38, cur: 'EUR' },
+    { city: 'madeira', slug: 'madeira-airport-funchal', iata: 'FNC', from: 'Madeira', to: 'Funchal', usd: 33, cur: 'EUR' }
+  ],
   MX: [
     { city: 'cancun', slug: 'cancun-airport-playa-del-carmen', iata: 'CUN', from: 'Cancún', to: 'Playa del Carmen', usd: 80 },
     { city: 'cancun', slug: 'cancun-airport-tulum', iata: 'CUN', from: 'Cancún', to: 'Tulum', usd: 96 },
