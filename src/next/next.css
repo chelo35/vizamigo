@@ -1502,3 +1502,15 @@ button.vz-tb-f { cursor: pointer; }
 .vz-band-in .vz-back { background: rgba(255, 255, 255, 0.9); color: #12313E; }
 /* Ana sayfa kapağında eski çizim katmanları tamamen kapalı */
 .rd-hero.has-photo > :not(.rd-photo):not(.rd-hero-in) { display: none !important; }
+
+/* 12Go sefer saatleri paneli */
+.vz-bk-fares button.vz-qd-fare { font: inherit; text-align: left; cursor: pointer; color: inherit; }
+.vz-gr-tt { display: grid; gap: 8px; margin-top: 12px; }
+.vz-gr-row { display: grid; gap: 3px; padding: 11px 13px; border-radius: 14px; border: 1px solid var(--rd-line); background: var(--rd-surface); color: var(--rd-fg); text-decoration: none; }
+.vz-gr-row:hover { border-color: var(--rd-sea-ink, #0b7287); }
+.vz-gr-row-h { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.vz-gr-row-h b { font-size: 15px; }
+.vz-gr-row-h em { margin-left: auto; font-style: normal; font-weight: 800; font-size: 15px; }
+.vz-gr-row small { font-size: 12.5px; color: var(--rd-muted); line-height: 1.4; }
+.vz-gr-row .vz-gr-cls { overflow-wrap: anywhere; }
+.vz-gr-go { justify-self: end; font-size: 13px; font-weight: 800; color: var(--rd-sea-ink, #0b7287); }

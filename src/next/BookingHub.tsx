@@ -428,9 +428,30 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
     setGMode('');
     setGTo('');
   }, [groundCity]);
+  // Seçilen rota için 12Go sefer saatleri (resmî Timetable aracı): tür başına fiyat aralığı, süre ve kalkış saatleri
+  type TT = { mode: string; title: string; url: string; min: number; max: number; dur: string; classes: { n: string; t: string[] }[] };
+  const [gSel, setGSel] = useState<{ to: string; slug: string; from: string } | null>(null);
+  const [tt, setTt] = useState<TT[] | null>(null);
+  useEffect(() => {
+    setGSel(null);
+  }, [groundCity]);
+  useEffect(() => {
+    let off = false;
+    setTt(null);
+    if (!gSel) return;
+    fetch(`/api/timetable?cc=${code}&from=${encodeURIComponent(gSel.from)}&to=${encodeURIComponent(gSel.slug)}`)
+      .then((r) => (r.ok ? r.json() : null))
+      .then((j: { routes?: TT[] } | null) => { if (!off) setTt(j?.routes || []); })
+      .catch(() => { if (!off) setTt([]); });
+    return () => { off = true; };
+  }, [gSel, code]);
+  const ttLink = (u: string) => `${u}${u.includes('?') ? '&' : '?'}sub_id=vz_${code.toLowerCase()}&date=${trip.d1}&people=${trip.n}`;
+  const pickGround = (sel: { to: string; slug: string; from: string }) => {
+    setGSel(sel);
+    window.setTimeout(() => document.getElementById('vz-gr-tt')?.scrollIntoView({ behavior: 'smooth', block: 'nearest' }), 60);
+  };
   const gSlug = (v: string) => v.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/ı/g, 'i').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
   const gLink = (from: string, to: string, mode = gMode) => `https://12go.asia/en/travel/${from}/${to}?z=${TWELVEGO_AGENT}&sub_id=vz_${code.toLowerCase()}&date=${trip.d1}&people=${trip.n}${mode ? `&vehclasses_tab=${mode}` : ''}`;
-  const groundUrl = (g: Ground) => gLink(g.from, g.slug);
   const gModesHere = GMODES.filter((m) => ground.some((g) => g.modes.some((x) => modeOf(x)?.k === m.k)));
   const gShown = gMode ? ground.filter((g) => g.modes.some((x) => modeOf(x)?.k === gMode)) : ground;
   const gSuggest = Array.from(new Set([...ground.map((g) => g.to), ...cities.map((c) => c.en)])).filter((x) => x.toLowerCase() !== groundCity.toLowerCase());
@@ -638,7 +659,7 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
       </Sec>
 
       {ground.length > 0 && (
-        <Sec id="bk-ground" code={code} icon="transit" title={l(`${groundCity} çıkışlı tren, otobüs ve feribot`, `Trains, buses & ferries from ${groundCity}`, `Zug, Bus & Fähre ab ${groundCity}`, `Trenes, buses y ferris desde ${groundCity}`, `Поезда, автобусы и паромы из ${groundCity}`)} note={l('"’den" fiyatı, o rotadaki en ucuz seçeneğin (tür fark etmeksizin) kişi başı başlangıç fiyatıdır (12Go). Bir tür seçince o türün saat ve fiyatları seçtiğin tarihle 12Go’da açılır.', 'Lowest "from" prices via 12Go, per person. Times and final price open on 12Go with your date.', 'Ab-Preise über 12Go, pro Person. Zeiten und Endpreis mit deinem Datum auf 12Go.', 'Precios "desde" de 12Go, por persona. Horarios y precio final en 12Go con tu fecha.', 'Цены «от» через 12Go, за человека. Расписание и итоговая цена — на 12Go на вашу дату.')}>
+        <Sec id="bk-ground" code={code} icon="transit" title={l(`${groundCity} çıkışlı tren, otobüs ve feribot`, `Trains, buses & ferries from ${groundCity}`, `Zug, Bus & Fähre ab ${groundCity}`, `Trenes, buses y ferris desde ${groundCity}`, `Поезда, автобусы и паромы из ${groundCity}`)} note={l('"’den" fiyatı, o rotadaki en ucuz seçeneğin (tür fark etmeksizin) kişi başı başlangıç fiyatıdır (12Go). Bir rotaya dokununca tren, otobüs, feribot ve uçağın ayrı fiyatları ve kalkış saatleri açılır.', 'Lowest "from" prices via 12Go, per person. Times and final price open on 12Go with your date.', 'Ab-Preise über 12Go, pro Person. Zeiten und Endpreis mit deinem Datum auf 12Go.', 'Precios "desde" de 12Go, por persona. Horarios y precio final en 12Go con tu fecha.', 'Цены «от» через 12Go, за человека. Расписание и итоговая цена — на 12Go на вашу дату.')}>
           <div className="vz-bk-chips sm" role="tablist" aria-label={l('Ulaşım türü', 'Transport type', 'Verkehrsmittel', 'Tipo de transporte', 'Тип транспорта')}>
             <button type="button" role="tab" aria-selected={!gMode} className={!gMode ? 'on' : ''} onClick={() => setGMode('')}>{l('Hepsi', 'All', 'Alle', 'Todos', 'Все')}</button>
             {gModesHere.map((m) => (
@@ -647,7 +668,7 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
               </button>
             ))}
           </div>
-          <form className="vz-bk-cityq vz-gr-q" onSubmit={(e) => { e.preventDefault(); const hit = ground.find((g) => g.to.toLowerCase() === gTo.trim().toLowerCase()); const to = hit?.slug || gSlug(gTo); if (to) window.open(gLink(ground[0]?.from || gSlug(groundCity), to), '_blank', 'noopener'); }}>
+          <form className="vz-bk-cityq vz-gr-q" onSubmit={(e) => { e.preventDefault(); const hit = ground.find((g) => g.to.toLowerCase() === gTo.trim().toLowerCase()); const to = hit?.slug || gSlug(gTo); if (to) pickGround({ to: hit?.to || gTo.trim(), slug: to, from: ground[0]?.from || gSlug(groundCity) }); }}>
             <input list={`vz-gr-${code}`} value={gTo} onChange={(e) => setGTo(e.target.value)} placeholder={l(`${groundCity} → nereye? (ör. Krabi)`, `${groundCity} → where to? (e.g. Krabi)`, `${groundCity} → wohin? (z. B. Krabi)`, `${groundCity} → ¿a dónde? (p. ej. Krabi)`, `${groundCity} → куда? (напр. Krabi)`)} aria-label={l('Varış yeri', 'Destination', 'Ziel', 'Destino', 'Куда')} />
             <datalist id={`vz-gr-${code}`}>{gSuggest.map((c) => <option key={c} value={c} />)}</datalist>
             <button type="submit">{gMode ? l(`${GMODES.find((m) => m.k === gMode)?.t} ara`, `Find ${GMODES.find((m) => m.k === gMode)?.t}`, `${GMODES.find((m) => m.k === gMode)?.t} suchen`, `Buscar ${GMODES.find((m) => m.k === gMode)?.t}`, `Найти: ${GMODES.find((m) => m.k === gMode)?.t}`) : l('Sefer ara', 'Find trips', 'Suchen', 'Buscar', 'Найти')}</button>
@@ -655,7 +676,7 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
           <b className="vz-bk-op">{l('Popüler rotalar · 12Go', 'Popular routes · 12Go', 'Beliebte Strecken · 12Go', 'Rutas populares · 12Go', 'Популярные маршруты · 12Go')}</b>
           <div className="vz-bk-fares">
             {gShown.map((g) => (
-              <a key={g.slug} className="vz-qd-fare" href={groundUrl(g)} target="_blank" rel="noopener noreferrer sponsored">
+              <button key={g.slug} type="button" className={`vz-qd-fare${gSel?.slug === g.slug ? ' best' : ''}`} aria-expanded={gSel?.slug === g.slug} onClick={() => pickGround(g)}>
                 {gMode ? (
                   <b className="vz-gr-see">{l(`${GMODES.find((m) => m.k === gMode)?.t} saat ve fiyatları`, `${GMODES.find((m) => m.k === gMode)?.t} times & prices`, `${GMODES.find((m) => m.k === gMode)?.t}: Zeiten & Preise`, `${GMODES.find((m) => m.k === gMode)?.t}: horarios y precios`, `${GMODES.find((m) => m.k === gMode)?.t}: расписание и цены`)} ›</b>
                 ) : (
@@ -663,9 +684,36 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
                 )}
                 <span>{groundCity} → {g.to}</span>
                 <small className="vz-gr-modes">{g.modes.map((x) => modeOf(x)).filter((m): m is NonNullable<typeof m> => !!m && (!gMode || m.k === gMode)).map((m) => <ModeBadge key={m.k} k={m.k} title={m.t} />)}</small>
-              </a>
+              </button>
             ))}
           </div>
+          {gSel && (
+            <div id="vz-gr-tt" className="vz-gr-tt">
+              <b className="vz-bk-op">{groundCity} → {gSel.to} · {l('sefer saatleri ve fiyatlar', 'timetable & prices', 'Fahrplan & Preise', 'horarios y precios', 'расписание и цены')}</b>
+              {tt === null && <p className="vz-bk-note">{l('Seferler yükleniyor…', 'Loading trips…', 'Lade Verbindungen…', 'Cargando…', 'Загрузка…')}</p>}
+              {tt && tt.length === 0 && (
+                <a className="vz-bk-cta" href={gLink(gSel.from, gSel.slug)} target="_blank" rel="noopener noreferrer sponsored">{l(`${gSel.to} seferlerini 12Go'da gör`, `See trips to ${gSel.to} on 12Go`, `Verbindungen nach ${gSel.to} auf 12Go`, `Ver viajes a ${gSel.to} en 12Go`, `Рейсы в ${gSel.to} на 12Go`)} <AdTag /></a>
+              )}
+              {tt && tt.filter((r) => !gMode || r.mode === gMode).map((r) => {
+                const m = GMODES.find((x) => x.k === r.mode);
+                return (
+                  <a key={r.url} className="vz-gr-row" href={ttLink(r.url)} target="_blank" rel="noopener noreferrer sponsored">
+                    <span className="vz-gr-row-h">
+                      {m && <ModeBadge k={m.k} title={m.t} />}
+                      <b>{m?.t || r.title}</b>
+                      {r.min > 0 && <em>~{usdTo(r.min)}{r.max > r.min ? ` – ${usdTo(r.max)}` : ''}</em>}
+                    </span>
+                    {r.dur && <small>{l('Süre', 'Duration', 'Dauer', 'Duración', 'В пути')}: {r.dur.replace(/(\d+)h/g, l('$1 sa', '$1h', '$1 Std.', '$1 h', '$1 ч')).replace(/(\d+)m/g, l('$1 dk', '$1m', '$1 Min.', '$1 min', '$1 мин'))}</small>}
+                    {r.classes.slice(0, 3).map((c) => (
+                      <small key={c.n} className="vz-gr-cls">{c.n}{c.t.length > 0 && <>: {c.t.slice(0, 6).join(', ')}{c.t.length > 6 ? ` +${c.t.length - 6}` : ''}</>}</small>
+                    ))}
+                    <span className="vz-gr-go">{l('Bilet al', 'Book', 'Buchen', 'Reservar', 'Купить')} ›</span>
+                  </a>
+                );
+              })}
+              {tt && tt.length > 0 && <small className="vz-bk-checked">{l('Fiyatlar kişi başı (özel araç/taksi araç başı); 12Go sefer tablosu, günlük yenilenir.', 'Prices per person (private car/taxi per vehicle); 12Go timetable, refreshed daily.', 'Preise pro Person (Privatwagen/Taxi pro Fahrzeug); 12Go-Fahrplan, täglich aktualisiert.', 'Precio por persona (coche privado/taxi por vehículo); horario de 12Go, diario.', 'Цена за человека (такси/частный трансфер — за машину); расписание 12Go, обновляется ежедневно.')}</small>}
+            </div>
+          )}
         </Sec>
       )}
 
