@@ -341,7 +341,7 @@ export const AssistantFab: React.FC<{ onClick: () => void; hidden?: boolean }> =
   return (
     <div className={`vz-fab-w${away || atEnd ? ' away' : ''}`}>
       <button type="button" className="vz-fab" onClick={onClick} aria-label={l('Seyahat asistanına sor (yazarak ya da sesli)', 'Ask the travel assistant (type or speak)', 'Reiseassistent fragen (tippen oder sprechen)', 'Pregunta al asistente de viaje (escribe o habla)', 'Спросить помощника (текстом или голосом)')}>
-        <Icon name="headset" size={22} />
+        <img className="vz-fab-bot" src="/images/mascot-192.webp" alt="" width="56" height="56" />
         <span className="vz-fab-long">{l('Seyahat asistanı', 'Travel assistant', 'Reiseassistent', 'Asistente de viaje', 'Помощник')}</span>
         <span className="vz-fab-short">{l('Asistan', 'Assistant', 'Assistent', 'Asistente', 'Помощник')}</span>
       </button>
