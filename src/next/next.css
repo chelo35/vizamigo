@@ -1383,3 +1383,26 @@ button.vz-tb-f { cursor: pointer; }
 .vz-stat.has-art > b { align-self: end; }
 .vz-stat.has-art > span:not(.vz-l3d) { align-self: start; }
 @media (max-width: 640px) { .vz-stat.has-art { grid-template-columns: 1fr; } .vz-stat.has-art > .vz-l3d { grid-row: auto; width: 52px !important; height: 52px !important; margin-bottom: 4px; } }
+
+/* ---------- Fotoğraflı kartlar (Hemen ucuza al) ---------- */
+.vz-qd-grid4 { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; gap: 10px !important; }
+@media (min-width: 720px) { .vz-qd-grid4 { grid-template-columns: repeat(4, minmax(0, 1fr)) !important; gap: 14px !important; } }
+.vz-qd-card:has(.vz-qd-ph) { position: relative; padding: 0 !important; overflow: hidden; aspect-ratio: 4 / 3; justify-content: flex-end; align-items: stretch; border: 0; border-radius: 16px; isolation: isolate; color: #fff; text-align: left; box-shadow: 0 10px 26px -18px rgba(10, 30, 40, 0.5); }
+@media (min-width: 1024px) { .vz-qd-card:has(.vz-qd-ph) { aspect-ratio: 1 / 1; } }
+.vz-qd-ph { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: -2; transition: transform 0.5s ease; }
+.vz-qd-card:has(.vz-qd-ph)::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(180deg, rgba(0, 0, 0, 0) 45%, rgba(8, 20, 26, 0.78)); }
+.vz-qd-card:hover .vz-qd-ph { transform: scale(1.05); }
+.vz-qd-card.on:has(.vz-qd-ph) { box-shadow: 0 0 0 3px var(--rd-sea, #0b7287); }
+.vz-qd-cap { display: grid; gap: 2px; padding: 10px 12px 12px; }
+.vz-qd-cap .vz-qd-t { color: #fff; font-size: 15px; }
+.vz-qd-cap small { font-size: 12px; opacity: 0.9; line-height: 1.3; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden; }
+@media (min-width: 1024px) { .vz-qd-cap .vz-qd-t { font-size: 17px; } .vz-qd-cap small { font-size: 13px; } }
+
+/* ---------- Fotoğraflı Keşfet kartları ---------- */
+.vz-tile.has-ph { padding: 8px 8px 14px; gap: 6px; }
+.vz-tile-ph { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; border-radius: 13px; display: block; transition: transform 0.4s ease; }
+@media (min-width: 1024px) { .vz-tile.has-ph { padding: 10px 10px 16px; } .vz-tile-ph { aspect-ratio: 4 / 3; } }
+.vz-tile.has-ph .vz-tile-t, .vz-tile.has-ph .vz-tile-s { padding-inline: 6px; }
+.vz-tile.has-ph .vz-tile-badge { top: 16px; right: 16px; background: rgba(255, 255, 255, 0.92); }
+.vz-tile.has-ph:hover .vz-tile-ph { transform: scale(1.02); }
+@media (prefers-reduced-motion: reduce) { .vz-qd-ph, .vz-tile-ph { transition: none; } }

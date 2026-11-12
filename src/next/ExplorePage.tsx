@@ -80,62 +80,62 @@ export const ExplorePage: React.FC<ExploreProps> = (p) => {
 
   const tiles: Tile[] = [
     {
-      id: 'where', icon: 'pin', img: 'ex-where',
+      id: 'where', icon: 'pin', photo: 'x-where',
       title: l('Nereye gidebilirim?', 'Where can I go?', 'Wohin kann ich?', '¿Dónde puedo ir?', 'Куда можно?'),
       desc: l('Vizesiz, e-vize, kapıda vize', 'Visa-free, eVisa, on arrival', 'Visumfrei, eVisum, bei Ankunft', 'Sin visado, eVisa, a la llegada', 'Без визы, eVisa, по прилёте'),
       badge: `${counts.free}`,
       render: () => <WhereView passport={p.currentPassport} onOpenCountry={p.onOpenCountry} />
     },
     {
-      id: 'countries', icon: 'globe', img: 'ex-globe',
+      id: 'countries', icon: 'globe', photo: 'x-globe',
       title: l('Ülkeler', 'Countries', 'Länder', 'Países', 'Страны'),
       desc: l('199 ülke, ara ve filtrele', 'All 199, search and filter', 'Alle 199 Länder', 'Los 199 países', 'Все 199 стран'),
       render: () => <CountriesView key={query} passport={p.currentPassport} initialQuery={query} onOpenCountry={p.onOpenCountry} />
     },
     {
-      id: 'compare', icon: 'scale', img: 'ex-compare',
+      id: 'compare', icon: 'scale', photo: 'x-compare',
       title: l('Pasaport karşılaştır', 'Compare passports', 'Pässe vergleichen', 'Comparar pasaportes', 'Сравнить паспорта'),
       desc: l('İki pasaport yan yana', 'Two passports side by side', 'Zwei Pässe nebeneinander', 'Dos pasaportes', 'Два паспорта рядом'),
       render: () => <CompareView passportA={p.currentPassport} passportB={p.secondaryPassport} onOpenCountry={p.onOpenCountry} />
     },
     {
-      id: 'popular', icon: 'star', img: 'ex-routes',
+      id: 'popular', icon: 'star', photo: 'x-routes',
       title: l('Popüler rotalar', 'Popular trips', 'Beliebte Ziele', 'Destinos populares', 'Популярное'),
       desc: l('Gezginlerin sevdikleri', 'Travellers’ favourites', 'Lieblingsziele', 'Favoritos', 'Любимые места'),
       render: () => <PopularView passport={p.currentPassport} onOpenCountry={p.onOpenCountry} />
     },
     {
-      id: 'radar', icon: 'radar', img: 'ex-radar',
+      id: 'radar', icon: 'radar', photo: 'x-radar',
       title: l('Dünya radarı', 'World radar', 'Weltradar', 'Radar mundial', 'Мировой радар'),
       desc: l('Saat, hava, kur bir arada', 'Time, weather, currency', 'Zeit, Wetter, Kurse', 'Hora, tiempo, divisas', 'Время, погода, курсы'),
       render: () => <RadarView passport={p.currentPassport} destination={destination} onOpenCountry={p.onOpenCountry} />
     },
     {
-      id: 'changes', icon: 'bell', img: 'ex-bell',
+      id: 'changes', icon: 'bell', photo: 'x-bell',
       title: l('Kural değişiklikleri', 'Rule changes', 'Regeländerungen', 'Cambios de reglas', 'Изменения правил'),
       desc: l('Son değişen vize kuralları', 'Latest visa rule changes', 'Neueste Änderungen', 'Últimos cambios', 'Последние изменения'),
       render: () => <ChangesView passport={p.currentPassport} onOpenAudit={p.onOpenAudit} onReport={p.onReport} onOpenCountry={p.onOpenCountry} />
     },
     {
-      id: 'trip', icon: 'plane', img: 'ex-planner',
+      id: 'trip', icon: 'plane', photo: 'x-planner',
       title: l('Seyahat planlayıcı', 'Trip planner', 'Reiseplaner', 'Planificador de viaje', 'Планировщик поездки'),
       desc: l('Uçuş fiyatı, otel, toplam bütçe', 'Flight price, stay, total budget', 'Flugpreis, Hotel, Budget', 'Vuelo, hotel, presupuesto', 'Билеты, отель, бюджет'),
       onOpen: () => p.onOpenTool('nomad', 'trip')
     },
     {
-      id: 'easy', icon: 'sun', img: 'ex-easy',
+      id: 'easy', icon: 'sun', photo: 'x-easy',
       title: l('Kolay tatil', 'Easy trip', 'Einfache Reise', 'Viaje fácil', 'Лёгкая поездка'),
       desc: l('Uçuş, otel, ulaşım, sigorta', 'Flights, stay, transfer, insurance', 'Flug, Hotel, Transfer', 'Vuelo, hotel, traslado', 'Перелёт, отель, трансфер'),
       render: () => <EasyTripView passport={p.currentPassport} destination={destination} onDestination={changeDest} onOpenCountry={p.onOpenCountry} />
     },
     {
-      id: 'nomad', icon: 'laptop', img: 'ex-nomad',
+      id: 'nomad', icon: 'laptop', photo: 'x-nomad',
       title: l('Dijital göçebe', 'Digital nomads', 'Digitale Nomaden', 'Nómadas digitales', 'Цифровые кочевники'),
       desc: l('Vizeler, aylık maliyet, şehirler', 'Visas, monthly costs, cities', 'Visa, Kosten, Städte', 'Visados, costes, ciudades', 'Визы, расходы, города'),
       onOpen: () => p.onOpenTool('plan', 'nomad')
     },
     {
-      id: 'assistant', icon: 'spark', img: '/images/mascot',
+      id: 'assistant', icon: 'spark', photo: 'x-bot',
       title: l('Vizamigo asistan', 'Vizamigo assistant', 'Vizamigo-Assistent', 'Asistente', 'Ассистент'),
       desc: l('Yaz ya da sesli sor', 'Type or speak', 'Schreiben oder sprechen', 'Escribe o habla', 'Пишите или говорите'),
       onOpen: p.onOpenAssistant

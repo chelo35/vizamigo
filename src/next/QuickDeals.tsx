@@ -85,12 +85,23 @@ export const QuickDeals: React.FC<{ passport: string; destination: string }> = (
     }
   ];
 
-  const inner = (d: Deal) => (
-    <>
-      <TileArt name={d.art} size={40} photo />
-      <b className="vz-qd-t">{d.t}</b>
-    </>
-  );
+  // Fotoğraflı kartlar: /images/cards/q-{ad}-300|600.webp (yapay zekâ ile üretilmiş sahneler)
+  const PH: Record<string, string> = { passport: 'visa', plane: 'flight', bed: 'hotel', car: 'car', wifi: 'esim', transit: 'transfer', ticket: 'tours', shield: 'ins' };
+  const inner = (d: Deal) =>
+    PH[d.art] ? (
+      <>
+        <img className="vz-qd-ph" src={`/images/cards/q-${PH[d.art]}-300.webp`} srcSet={`/images/cards/q-${PH[d.art]}-300.webp 1x, /images/cards/q-${PH[d.art]}-600.webp 2x`} alt="" loading="lazy" decoding="async" />
+        <span className="vz-qd-cap">
+          <b className="vz-qd-t">{d.t}</b>
+          <small>{d.sub}</small>
+        </span>
+      </>
+    ) : (
+      <>
+        <TileArt name={d.art} size={40} />
+        <b className="vz-qd-t">{d.t}</b>
+      </>
+    );
 
   return (
     <section className="vz-qd" aria-labelledby="vz-qd-h">

@@ -54,6 +54,17 @@ export const SeaHero: React.FC<Props> = ({ onSearch, chips = [], searchSlot }) =
     };
   }, []);
 
+  // Kapak videosu: fotoğraf yüklendikten sonra gelir; hareket azaltma / veri tasarrufu açıksa hiç yüklenmez
+  const [heroVideo, setHeroVideo] = useState('');
+  useEffect(() => {
+    try {
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+      if ((navigator as Navigator & { connection?: { saveData?: boolean } }).connection?.saveData) return;
+    } catch { /* yok */ }
+    const t = window.setTimeout(() => setHeroVideo(`/videos/home-hero${window.innerWidth < 820 ? '-720' : ''}.mp4`), 700);
+    return () => window.clearTimeout(t);
+  }, []);
+
   const glints = React.useMemo(
     () => Array.from({ length: 22 }, (_, i) => ({ left: (i * 37) % 96 + 2, top: (i * 53) % 100, delay: ((i * 7) % 32) / 10, w: 8 + ((i * 11) % 16) })),
     []
@@ -115,7 +126,8 @@ export const SeaHero: React.FC<Props> = ({ onSearch, chips = [], searchSlot }) =
         <div className="rd-wave w3"><svg viewBox="0 0 2400 240" preserveAspectRatio="none"><path d="M0 180 C 150 160 300 200 600 180 C 900 160 1050 200 1200 180 C 1350 160 1500 200 1800 180 C 2100 160 2250 200 2400 180 V240 H0 Z" /></svg></div>
       </div>
       <div className="rd-photo" aria-hidden="true">
-        <img src="/images/hero/home-1400.webp" srcSet="/images/hero/home-800.webp 800w, /images/hero/home-1400.webp 1400w, /images/hero/home-2200.webp 2200w" sizes="100vw" alt="" fetchPriority="high" />
+        <img src="/images/hero/home2-1400.webp" srcSet="/images/hero/home2-800.webp 800w, /images/hero/home2-1400.webp 1400w, /images/hero/home2-1920.webp 1920w" sizes="100vw" alt="" fetchPriority="high" />
+        {heroVideo && <video src={heroVideo} poster="/videos/home-hero-poster.webp" autoPlay muted loop playsInline preload="auto" onPlaying={(e) => e.currentTarget.classList.add('on')} />}
       </div>
       <div className="rd-hero-in">
         <span className="rd-eyebrow">{l('Pasaport · Vize · Yolculuk', 'Passport · Visa · Travel', 'Pass · Visum · Reise', 'Pasaporte · Visado · Viaje', 'Паспорт · Виза · Поездка')}</span>

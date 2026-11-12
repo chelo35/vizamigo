@@ -418,3 +418,6 @@ html.dark .rd-gulls path { stroke: #F4E6DC; opacity: 0.85; }
 .rd-hero.has-photo p, .rd-hero.has-photo .rd-eyebrow { color: rgba(255, 255, 255, 0.9); }
 .rd-hero.has-photo .rd-chips button { background: rgba(255, 255, 255, 0.16); color: #fff; border-color: rgba(255, 255, 255, 0.35); backdrop-filter: blur(6px); }
 @media (max-width: 720px) { .rd-hero.has-photo .rd-photo::after { background: linear-gradient(180deg, rgba(8, 26, 36, 0.55) 0%, rgba(8, 26, 36, 0.7) 100%); } }
+.rd-hero.has-photo .rd-photo video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 70% 50%; opacity: 0; transition: opacity 0.9s ease; }
+.rd-hero.has-photo .rd-photo video.on { opacity: 1; }
+.rd-hero.has-photo .rd-photo img { object-position: 70% 50%; }

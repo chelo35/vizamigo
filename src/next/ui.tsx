@@ -253,6 +253,8 @@ export interface Tile {
   icon: IconName;
   /** gerçekçi 3D simge: /images/icons/{img}-96|192.webp */
   img?: string;
+  /** kartı dolduran fotoğraf: /images/cards/{photo}-300|600.webp */
+  photo?: string;
   badge?: string;
   isNew?: boolean;
   tabs?: TileTab[];
@@ -318,14 +320,14 @@ export const TileGrid: React.FC<{ tiles: Tile[]; openRequest?: OpenRequest; labe
           key={t.id}
           type="button"
           aria-controls={`vz-panel-${label.replace(/\W+/g, '')}`}
-          className={`vz-tile${openId === t.id ? ' on' : ''}${cols > 1 && tiles.length % cols === 1 && i === tiles.length - 1 ? ' wide' : ''}`}
+          className={`vz-tile${t.photo ? ' has-ph' : ''}${openId === t.id ? ' on' : ''}${cols > 1 && tiles.length % cols === 1 && i === tiles.length - 1 ? ' wide' : ''}`}
           style={{ order: i + 1, gridColumn: cols > 1 && tiles.length % cols === 1 && i === tiles.length - 1 ? '1 / -1' : undefined }}
           aria-expanded={t.onOpen && !t.render && !t.tabs ? undefined : openId === t.id}
           onClick={() => (openId === t.id ? setOpenId(null) : open(t.id))}
         >
           {t.badge && <span className="vz-tile-badge">{t.badge}</span>}
           {t.isNew && !t.badge && <span className="vz-tile-badge new">{l('Yeni', 'New', 'Neu', 'Nuevo', 'Новое')}</span>}
-          <TileArt name={t.icon} size={46} img={t.img} />
+          {t.photo ? <img className="vz-tile-ph" src={`/images/cards/${t.photo}-300.webp`} srcSet={`/images/cards/${t.photo}-300.webp 1x, /images/cards/${t.photo}-600.webp 2x`} alt="" loading="lazy" decoding="async" /> : <TileArt name={t.icon} size={46} img={t.img} />}
           <span className="vz-tile-t">{t.title}</span>
           <span className="vz-tile-s">{t.desc}</span>
         </button>
