@@ -1276,7 +1276,7 @@ button.vz-tb-f { cursor: pointer; }
 .vz-tc-card.sk i { aspect-ratio: 4 / 3; }
 .vz-tc-card.sk b { height: 14px; margin: 12px 12px 6px; border-radius: 8px; }
 .vz-tc-card.sk s { height: 12px; width: 50%; margin: 0 12px 14px; border-radius: 8px; }
-@media (max-width: 520px) { .vz-tc-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; } .vz-tc-body b { font-size: 13.5px; } }
+@media (max-width: 520px) { .vz-tc-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; } .vz-tc-body b { font-size: 13.5px; } .vz-tc-foot { flex-wrap: wrap; align-items: center; row-gap: 4px; } .vz-tc-body { padding: 9px 10px 11px; } }
 
 /* Otel: hemen açılan site kartları (bekleme yok) */
 .vz-hq { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 10px; margin: 12px 0; }
