@@ -128,7 +128,10 @@ export const TP: Record<TpId, TpBrand> = {
  * Kilit açılınca buradan çıkar; bağlantılar otomatik olarak markanın kendisine döner.
  * Kontrol: 4 Kasım 2026 (25 bağlı program, 20 kilitli).
  */
-export const LOCKED = new Set<TpId>(['tripcom', 'omio', 'twelvego', 'hostelworld', 'discovercars', 'getyourguide', 'viator']);
+export const LOCKED = new Set<TpId>(['tripcom', 'omio', 'hostelworld', 'discovercars', 'getyourguide', 'viator']);
+/** 12Go doğrudan ortaklık programındaki ajans numaramız */
+export const TWELVEGO_AGENT = '17478120';
+
 const LOCKED_HOSTS = ['trip.com', 'omio.com', '12go.asia', '12go.co', 'agoda.com', 'expedia.com', 'hostelworld.com', 'discovercars.com', 'getyourguide.com', 'viator.com', 'tripadvisor.com', 'hotels.com', 'vrbo.com', 'rentalcars.com', 'skyscanner.com', 'skyscanner.net'];
 
 /**
@@ -220,6 +223,8 @@ export function routeLink(url: string): string {
   if (s22) return stay22(s22[1], { link: url });
   // Viator ortaklığı onaylandı: ortaklık kodu (pid) taşıyan tur bağlantıları olduğu gibi gider
   if (is('viator.com') && u.searchParams.get('pid')) return url;
+  // 12Go doğrudan ortaklık (agent.12go.asia): z parametresi bizim ajans numaramız
+  if ((is('12go.asia') || is('12go.co')) && u.searchParams.get('z') === TWELVEGO_AGENT) return url;
   if (!LOCKED_HOSTS.some(is)) return url;
   const q = u.searchParams.get('q') || u.searchParams.get('text') || u.searchParams.get('query') || u.searchParams.get('destination') || '';
   // Uçuş: Trip.com / Skyscanner → Aviasales
@@ -305,7 +310,7 @@ export const tpLinks = {
   /** Kara/deniz yolu: Asya için 12Go, Avrupa/Amerika için Omio, diğerleri için Kiwi */
   ground: (fromCode: string, toCode: string): { id: TpId; url: string } =>
     ASIA_RAIL.has(toCode) || ASIA_RAIL.has(fromCode)
-      ? (LOCKED.has('twelvego') ? { id: 'kiwi', url: `https://www.kiwi.com/en/` } : { id: 'twelvego', url: `https://12go.asia/en` })
+      ? (LOCKED.has('twelvego') ? { id: 'kiwi', url: `https://www.kiwi.com/en/` } : { id: 'twelvego', url: `https://12go.asia/en?z=${TWELVEGO_AGENT}` })
       : EU_RAIL.has(toCode) && EU_RAIL.has(fromCode) && !LOCKED.has('omio')
         ? { id: 'omio', url: `https://www.omio.com/` }
         : { id: 'kiwi', url: `https://www.kiwi.com/en/` },

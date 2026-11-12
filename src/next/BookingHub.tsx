@@ -10,7 +10,7 @@ import { getCountryName } from '../data/passportData';
 import { getCountryGeography } from '../data/countryGeography';
 import { capitalName } from '../data/capitalNames';
 import { getCrossRate } from '../data/currencyRates';
-import { tpLinks, tpLogo, stay22, s22Flights, s22Cars, gygLink, STAY22_AID } from '../data/tpPartners';
+import { tpLinks, tpLogo, stay22, s22Flights, s22Cars, gygLink, STAY22_AID, TWELVEGO_AGENT } from '../data/tpPartners';
 import { TOURS, PACKAGES, LIVE } from '../data/tours';
 import ESIM from '../data/esimPrices.json';
 import { TRANSFER_ROUTES, kiwiRouteUrl, scooterUrl } from '../data/transferRoutes';
@@ -313,6 +313,38 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
   };
   const routes = (TRANSFER_ROUTES[code] || []).filter((r) => !cityId || custom || !r.city || r.city === cityId);
   const shownRoutes = routes.length ? routes : TRANSFER_ROUTES[code] || [];
+  // Şehirler arası tren / otobüs / feribot: 12Go'nun herkese açık şehir verisi (en ucuz "x'ten başlayan" fiyat)
+  type Ground = { to: string; slug: string; from: string; usd: number; modes: string[] };
+  const groundCity = (city?.en || cityEn || '').trim();
+  const [ground, setGround] = useState<Ground[]>([]);
+  useEffect(() => {
+    let off = false;
+    setGround([]);
+    if (!groundCity) return;
+    const key = `vz12go:${groundCity.toLowerCase()}`;
+    const use = (list: Ground[]) => {
+      if (!off) setGround(list);
+    };
+    try {
+      const c = sessionStorage.getItem(key);
+      if (c) {
+        use(JSON.parse(c));
+        return;
+      }
+    } catch { /* yok */ }
+    fetch(`/api/ground?city=${encodeURIComponent(groundCity)}`)
+      .then((r) => (r.ok ? r.json() : null))
+      .then((j: { list?: Ground[] } | null) => {
+        const list = j?.list || [];
+        if (list.length) {
+          try { sessionStorage.setItem(key, JSON.stringify(list)); } catch { /* yok */ }
+        }
+        use(list);
+      })
+      .catch(() => use([]));
+    return () => { off = true; };
+  }, [groundCity]);
+  const groundUrl = (g: Ground) => `https://12go.asia/en/travel/${g.from}/${g.slug}?z=${TWELVEGO_AGENT}&sub_id=vz_${code.toLowerCase()}&date=${trip.d1}&people=${trip.n}`;
   const eurTo = (v: number) => money(v * getCrossRate('EUR', cur));
   const checked = new Date(`${PRICES_CHECKED}T12:00:00`).toLocaleDateString(loc, { day: 'numeric', month: 'short' });
   const insDays = nights + 1;
@@ -350,6 +382,7 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
         <a href="#bk-hotel" onClick={jump}>{l('Otel', 'Hotels', 'Hotels', 'Hoteles', 'Отели')}</a>
         <a href="#bk-tours" onClick={jump}>{l('Turlar', 'Tours', 'Touren', 'Tours', 'Туры')}</a>
         <a href="#bk-transfer" onClick={jump}>{l('Transfer', 'Transfer', 'Transfer', 'Traslado', 'Трансфер')}</a>
+        {ground.length > 0 && <a href="#bk-ground" onClick={jump}>{l('Tren · Otobüs · Feribot', 'Train · Bus · Ferry', 'Zug · Bus · Fähre', 'Tren · Bus · Ferry', 'Поезд · Автобус · Паром')}</a>}
         <a href="#bk-esim" onClick={jump}>eSIM</a>
         <a href="#bk-car" onClick={jump}>{l('Araç', 'Car', 'Mietwagen', 'Coche', 'Авто')}</a>
         <a href="#bk-ins" onClick={jump}>{l('Sigorta', 'Insurance', 'Versicherung', 'Seguro', 'Страховка')}</a>
@@ -504,6 +537,21 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
         )}
         <Picks label={l('Karşılamalı, sabit fiyatlı transfer:', 'Meet & greet, fixed price:', 'Mit Abholung, Festpreis:', 'Con recogida, precio fijo:', 'С встречей, фиксированная цена:')} items={transferPicks} k={`tr${code}`} />
       </Sec>
+
+      {ground.length > 0 && (
+        <Sec id="bk-ground" icon="transit" title={l(`${groundCity} çıkışlı tren, otobüs ve feribot`, `Trains, buses & ferries from ${groundCity}`, `Zug, Bus & Fähre ab ${groundCity}`, `Trenes, buses y ferris desde ${groundCity}`, `Поезда, автобусы и паромы из ${groundCity}`)} note={l('En düşük "başlayan" fiyatlar 12Go’dan, kişi başı. Saatler ve kesin fiyat seçtiğin tarihle 12Go’da açılır.', 'Lowest "from" prices via 12Go, per person. Times and final price open on 12Go with your date.', 'Ab-Preise über 12Go, pro Person. Zeiten und Endpreis mit deinem Datum auf 12Go.', 'Precios "desde" de 12Go, por persona. Horarios y precio final en 12Go con tu fecha.', 'Цены «от» через 12Go, за человека. Расписание и итоговая цена — на 12Go на вашу дату.')}>
+          <b className="vz-bk-op">12Go</b>
+          <div className="vz-bk-fares">
+            {ground.map((g) => (
+              <a key={g.slug} className="vz-qd-fare" href={groundUrl(g)} target="_blank" rel="noopener noreferrer sponsored">
+                <b>{l('', '', 'ab ', 'desde ', 'от ')}~{usdTo(g.usd)}{l('’den', '', '', '', '')}</b>
+                <span>{groundCity} → {g.to}</span>
+                <small><span aria-hidden="true">{g.modes.join(' ')}</span> {l('bilet al', 'book', 'buchen', 'reservar', 'купить')} ›</small>
+              </a>
+            ))}
+          </div>
+        </Sec>
+      )}
 
       <Sec id="bk-esim" icon="phone" title={l('İnternet (eSIM)', 'Mobile data (eSIM)', 'Mobile Daten (eSIM)', 'Datos móviles (eSIM)', 'Мобильный интернет (eSIM)')} note={esim.length || flexi.length ? l('Yukarıdaki fiyatlar Airalo ve FlexiRoam paketleri, düzenli güncellenir. Diğer firmaların paketleri kendi sitelerinde açılır.', 'Prices above are Airalo and FlexiRoam plans, updated regularly. Other providers show their plans on their own sites.', 'Preise oben: Airalo-Tarife, täglich aktualisiert. Andere Anbieter zeigen ihre Tarife auf ihrer Seite.', 'Precios de planes Airalo, actualizados a diario. Otros proveedores muestran sus planes en su web.', 'Цены выше — тарифы Airalo, обновляются ежедневно. Тарифы других — на их сайтах.') : undefined}>
         {!inTR && esim.length > 0 && <b className="vz-bk-op">Airalo</b>}
