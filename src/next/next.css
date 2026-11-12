@@ -1491,3 +1491,14 @@ button.vz-tb-f { cursor: pointer; }
 .vz-pkg-fl span { font-size: 13.5px; font-weight: 600; }
 .vz-pkg-fl b { grid-row: span 2; font-size: 17px; font-weight: 800; white-space: nowrap; }
 .vz-pkg-fl small { font-size: 12px; color: var(--rd-muted); }
+
+/* Sayfa başlık bantları: eski çizim (uçak, deniz, kuş) yerine ana sayfadaki gerçek fotoğraf */
+.vz-band { background: #6EC6E6; }
+.vz-band-photo { position: absolute; inset: 0; z-index: -2; }
+.vz-band-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 60% 55%; display: block; filter: brightness(1.04) saturate(1.1); }
+.vz-band-photo::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(6, 40, 56, 0.55) 0%, rgba(6, 40, 56, 0.25) 55%, rgba(6, 40, 56, 0.05) 100%), linear-gradient(180deg, rgba(6, 40, 56, 0) 50%, rgba(6, 40, 56, 0.3) 100%); }
+.vz-band-in { padding-top: 64px !important; padding-bottom: 64px !important; }
+.vz-band-in .vz-eyebrow, .vz-band-in h1, .vz-band-in p { color: #fff !important; text-shadow: 0 1px 12px rgba(0, 30, 45, 0.45); }
+.vz-band-in .vz-back { background: rgba(255, 255, 255, 0.9); color: #12313E; }
+/* Ana sayfa kapağında eski çizim katmanları tamamen kapalı */
+.rd-hero.has-photo > :not(.rd-photo):not(.rd-hero-in) { display: none !important; }

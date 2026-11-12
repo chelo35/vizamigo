@@ -3,7 +3,6 @@ import { Icon, IconName } from './Icon';
 import { tpIdFromUrl, routeLink } from '../data/tpPartners';
 import { TileArt } from './TileArt';
 import { useI18n } from '../data/i18n';
-import { FlyingBanner } from '../components/redesign/FlyingBanner';
 import { CountryItem, getCategoryBadgeLabel } from '../data/passportData';
 
 /* ------------------------------------------------------------------ */
@@ -211,11 +210,8 @@ export const Page: React.FC<{
 }> = ({ eyebrow, title, sub, words, summary, back, children }) => (
   <div className="vz-page">
     <section className="vz-band">
-      <div className="vz-band-sky" aria-hidden="true" />
-      <FlyingBanner className="f1 vz-band-flight" words={words} />
-      <div className="vz-band-sea" aria-hidden="true">
-        <svg viewBox="0 0 2400 120" preserveAspectRatio="none" className="vz-wv a"><path d="M0 50 C 200 20 400 80 600 50 C 800 20 1000 80 1200 50 C 1400 20 1600 80 1800 50 C 2000 20 2200 80 2400 50 V120 H0 Z" /></svg>
-        <svg viewBox="0 0 2400 120" preserveAspectRatio="none" className="vz-wv b"><path d="M0 80 C 150 64 300 96 600 80 C 900 64 1050 96 1200 80 C 1350 64 1500 96 1800 80 C 2100 64 2250 96 2400 80 V120 H0 Z" /></svg>
+      <div className="vz-band-photo" aria-hidden="true">
+        <img src="/images/hero/home3-1400.webp" srcSet="/images/hero/home3-800.webp 800w, /images/hero/home3-1400.webp 1400w, /images/hero/home3-1920.webp 1920w" sizes="100vw" alt="" />
       </div>
       <div className="vz-wrap vz-band-in">
         {back && (

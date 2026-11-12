@@ -313,6 +313,15 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
   };
   const [hotelView, setHotelView] = useState<'listview' | 'map'>('listview');
   const [hotelLive, setHotelLive] = useState(false);
+  // Otel listesi (Stay22: Booking, Agoda, Expedia, Hotels.com fiyatlarıyla) bölüm ekrana yaklaşınca kendiliğinden açılır
+  useEffect(() => {
+    if (hotelLive) return;
+    const el = document.getElementById('bk-hotel');
+    if (!el || typeof IntersectionObserver === 'undefined') return;
+    const io = new IntersectionObserver((es) => { if (es.some((e) => e.isIntersecting)) { setHotelLive(true); io.disconnect(); } }, { rootMargin: '400px 0px' });
+    io.observe(el);
+    return () => io.disconnect();
+  }, [hotelLive, code]);
   const [hotelPreset, setHotelPreset] = useState<'all' | 'budget' | 'rated' | 'stars'>('all');
   const [priceTotal, setPriceTotal] = useState(false);
   const budgetMax = language === 'tr' ? 3500 : 80;
