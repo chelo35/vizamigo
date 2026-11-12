@@ -162,110 +162,65 @@ export const LiveStrip: React.FC<Props> = ({ passport, destination, onDestinatio
           ))}
         </select>
       </div>
-      <div className="rd-strip-row">
+      <div className="rd-strip-row rd-glass">
         <div className="rd-card rd-kpi">
-          <div className="rd-kpi-h"><span className="rd-kpi-t"><TileArt name="clock" size={30} /><span className="rd-eyebrow">{l(`${cityName} saati`, `${cityName} time`, `Zeit in ${cityName}`, `Hora en ${cityName}`, `Время: ${cityName}`)}</span></span><span className="rd-tag">{l('Canlı', 'Live', 'Live', 'En vivo', 'Сейчас')}</span></div>
-          <div className="rd-clock">
-            <svg width="62" height="62" viewBox="0 0 64 64" role="img" aria-label={`${cityName} ${hh}:${String(mm).padStart(2, '0')}`}>
-              <circle cx="32" cy="32" r="29" className="rd-clock-face" />
-              <g className="rd-clock-tick"><path d="M32 6v4M32 54v4M6 32h4M54 32h4" /></g>
-              <line x1="32" y1="32" x2="32" y2="18" className="rd-clock-h" transform={`rotate(${((hh % 12) + mm / 60) * 30} 32 32)`} />
-              <line x1="32" y1="32" x2="32" y2="11" className="rd-clock-m" transform={`rotate(${(mm + ss / 60) * 6} 32 32)`} />
-              <line x1="32" y1="36" x2="32" y2="9" className="rd-clock-s" transform={`rotate(${ss * 6} 32 32)`} />
-              <circle cx="32" cy="32" r="2.5" className="rd-clock-pin" />
-            </svg>
-            <div>
-              <div className="rd-big">{`${String(hh).padStart(2, '0')}:${String(mm).padStart(2, '0')}`}<small>:{String(ss).padStart(2, '0')}</small></div>
-              <div className="rd-sub">
-                {l('Senin saatin', 'Your time', 'Deine Zeit', 'Tu hora', 'Ваше время')} {homeTime}
-              </div>
-              <span className={`rd-chip-mini${diff === 0 ? '' : ' alt'}`}>
-                {diff === 0
-                  ? l('aynı saat', 'same time', 'gleiche Zeit', 'misma hora', 'то же время')
-                  : diff > 0
-                  ? l(`${diff} saat ileride`, `${diff} h ahead`, `${diff} Std. voraus`, `${diff} h por delante`, `на ${diff} ч впереди`)
-                  : l(`${-diff} saat geride`, `${-diff} h behind`, `${-diff} Std. zurück`, `${-diff} h por detrás`, `на ${-diff} ч позади`)}
-              </span>
-            </div>
+          <span className="rd-eyebrow"><svg className="rd-li" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M12 7v5l3 2" /></svg>{l(`${cityName} saati`, `${cityName} time`, `Zeit in ${cityName}`, `Hora en ${cityName}`, `Время: ${cityName}`)}</span>
+          <div className="rd-val"><b className="rd-big">{`${String(hh).padStart(2, '0')}:${String(mm).padStart(2, '0')}`}</b><i className="rd-live" title={l('Canlı', 'Live', 'Live', 'En vivo', 'Сейчас')}>{l('Canlı', 'Live', 'Live', 'En vivo', 'Сейчас')}</i></div>
+          <div className="rd-sub">
+            {diff === 0
+              ? l('Seninle aynı saat', 'Same time as you', 'Gleiche Zeit wie du', 'Misma hora que tú', 'То же время')
+              : diff > 0
+              ? l(`${diff} saat ileride · sende ${homeTime}`, `${diff} h ahead · yours ${homeTime}`, `${diff} Std. voraus · bei dir ${homeTime}`, `${diff} h por delante · tú ${homeTime}`, `на ${diff} ч впереди · у вас ${homeTime}`)
+              : l(`${-diff} saat geride · sende ${homeTime}`, `${-diff} h behind · yours ${homeTime}`, `${-diff} Std. zurück · bei dir ${homeTime}`, `${-diff} h por detrás · tú ${homeTime}`, `на ${-diff} ч позади · у вас ${homeTime}`)}
           </div>
         </div>
 
         <div className="rd-card rd-kpi">
-          <div className="rd-kpi-h"><span className="rd-kpi-t"><TileArt name="sun" size={30} /><span className="rd-eyebrow">{l(`${cityName} hava`, `${cityName} weather`, `Wetter ${cityName}`, `Tiempo en ${cityName}`, `Погода: ${cityName}`)}</span></span>{w && <span className="rd-tag">{l('Canlı', 'Live', 'Live', 'En vivo', 'Сейчас')}</span>}</div>
+          <span className="rd-eyebrow"><svg className="rd-li" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18h10a4 4 0 0 0 .5-8 6 6 0 0 0-11.4 1.6A3.3 3.3 0 0 0 7 18z" /></svg>{l(`${cityName} hava`, `${cityName} weather`, `Wetter ${cityName}`, `Tiempo en ${cityName}`, `Погода: ${cityName}`)}</span>
           {w ? (
-            <div className="rd-wxrow">
-              <WeatherGlyph code={w.code} isDay={w.isDay} />
-              <div>
-                <div className="rd-big">{w.tempC}°</div>
-                <div className="rd-sub">{(weatherCodeInfo(w.code, w.isDay) as any)[language] || weatherCodeInfo(w.code, w.isDay).en}</div>
-                <div className="rd-chips-mini">
-                  <span className="rd-chip-mini">{l('Hissedilen', 'Feels', 'Gefühlt', 'Sensación', 'Ощущ.')} {w.feelsLikeC}°</span>
-                  <span className="rd-chip-mini">{l('Nem', 'Humidity', 'Feuchte', 'Humedad', 'Влажн.')} {language === 'tr' ? `%${w.humidity}` : `${w.humidity}%`}</span>
-                </div>
-              </div>
-            </div>
+            <>
+              <div className="rd-val"><b className="rd-big">{w.tempC}°</b><i className="rd-live">{l('Canlı', 'Live', 'Live', 'En vivo', 'Сейчас')}</i></div>
+              <div className="rd-sub">{(weatherCodeInfo(w.code, w.isDay) as any)[language] || weatherCodeInfo(w.code, w.isDay).en} · {l('hissedilen', 'feels', 'gefühlt', 'sensación', 'ощущ.')} {w.feelsLikeC}°</div>
+            </>
           ) : (
-            wxSlow ? (
-              <div className="rd-wxrow">
-                <div>
-                  <div className="rd-big rd-big-sm">—</div>
-                  <div className="rd-sub">{l('Hava bilgisi şu an alınamadı', 'Weather is unavailable right now', 'Wetter gerade nicht verfügbar', 'Tiempo no disponible ahora', 'Погода сейчас недоступна')}</div>
-                </div>
-              </div>
-            ) : (
-              <div className="rd-wxrow"><div className="rd-skel" /><div className="rd-sub">{l('Yükleniyor…', 'Loading…', 'Lädt…', 'Cargando…', 'Загрузка…')}</div></div>
-            )
+            <>
+              <div className="rd-val"><b className="rd-big">—</b></div>
+              <div className="rd-sub">{wxSlow ? l('Şu an alınamadı', 'Unavailable right now', 'Gerade nicht verfügbar', 'No disponible ahora', 'Сейчас недоступно') : l('Yükleniyor…', 'Loading…', 'Lädt…', 'Cargando…', 'Загрузка…')}</div>
+            </>
           )}
         </div>
 
         <div className="rd-card rd-kpi">
-          <div className="rd-kpi-h"><span className="rd-kpi-t"><TileArt name="fx" size={30} /><span className="rd-eyebrow">{l('Döviz kuru', 'Exchange rate', 'Wechselkurs', 'Tipo de cambio', 'Курс')}</span></span>{rate > 0 && <span className="rd-tag">{l('Canlı', 'Live', 'Live', 'En vivo', 'Сейчас')}</span>}</div>
+          <span className="rd-eyebrow"><svg className="rd-li" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h13l-3-3M20 16H7l3 3" /></svg>{l('Döviz kuru', 'Exchange rate', 'Wechselkurs', 'Tipo de cambio', 'Курс')}</span>
           {fx ? (
             homeCur === destCur ? (
               <>
-                <div className="rd-fx-pair"><Flag code={destination} size="sm" /><b>{destCur}</b></div>
-                <div className="rd-big rd-big-sm">{l('Aynı para birimi', 'Same currency', 'Gleiche Währung', 'Misma moneda', 'Та же валюта')}</div>
+                <div className="rd-val"><b className="rd-big rd-big-sm">{l('Aynı para', 'Same currency', 'Gleiche Währung', 'Misma moneda', 'Та же валюта')}</b></div>
                 <div className="rd-sub">{fx.destName}</div>
               </>
             ) : (
               <>
-                <div className="rd-fx-pair">
-                  <Flag code={destination} size="sm" /><b>{destCur}</b>
-                  <span className="rd-fx-arrow" aria-hidden="true">→</span>
-                  <Flag code={passport} size="sm" /><b>{homeCur}</b>
-                </div>
-                <div className="rd-fx-big">
-                  <small>{fx.unitText} {destCur} =</small>
-                  <span>{fx.value} <em>{homeSym}</em></span>
-                </div>
-                <div className="rd-sub">{fx.destName} · 1 {homeSym} = {fx.reverse} {destCur}</div>
+                <div className="rd-val"><b className="rd-big">{fx.value}<em> {homeSym}</em></b>{rate > 0 && <i className="rd-live">{l('Canlı', 'Live', 'Live', 'En vivo', 'Сейчас')}</i>}</div>
+                <div className="rd-sub">{fx.unitText} {destCur} · 1 {homeSym} = {fx.reverse} {destCur}</div>
               </>
             )
           ) : (
             <>
-              <div className="rd-big rd-big-sm">—</div>
-              <div className="rd-sub">{l('Kur bilgisi yükleniyor', 'Rate loading', 'Kurs lädt', 'Cargando', 'Загрузка')}</div>
+              <div className="rd-val"><b className="rd-big">—</b></div>
+              <div className="rd-sub">{l('Yükleniyor…', 'Loading…', 'Lädt…', 'Cargando…', 'Загрузка…')}</div>
             </>
           )}
         </div>
 
         <div className="rd-card rd-kpi">
-          <div className="rd-kpi-h">
-            <span className="rd-kpi-t"><TileArt name="passport" size={30} /><span className="rd-eyebrow">{l('Giriş kuralı', 'Entry rule', 'Einreise', 'Entrada', 'Въезд')}</span></span>
-            <span className={`rd-tag ${visa && (visa.cat === 'free' || visa.id) ? 'ok' : visa && visa.cat === 'visa' ? 'warn' : ''}`}>{getCategoryBadgeLabel(visa || null, language)}</span>
-          </div>
+          <span className="rd-eyebrow"><svg className="rd-li" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2" /><circle cx="12" cy="10" r="3" /><path d="M9 16h6" /></svg>{l('Giriş kuralı', 'Entry rule', 'Einreise', 'Entrada', 'Въезд')}</span>
+          <div className="rd-val"><b className={`rd-big rd-big-rule ${visa && (visa.cat === 'free' || visa.id) ? 'ok' : visa && visa.cat === 'visa' ? 'warn' : ''}`}>{getCategoryBadgeLabel(visa || null, language)}</b></div>
           {daysTo !== null && nextStop ? (
-            <>
-              <div className="rd-big">{daysTo} {l('gün', 'days', 'Tage', 'días', 'дн.')}</div>
-              <div className="rd-sub">{l('Sıradaki yolculuk', 'Next trip', 'Nächste Reise', 'Próximo viaje', 'Следующая поездка')}: {getCountryName(nextStop.countryCode, language)} · {nextStop.entryDate}</div>
-            </>
+            <div className="rd-sub">{l(`Yolculuğa ${daysTo} gün`, `${daysTo} days to go`, `Noch ${daysTo} Tage`, `Faltan ${daysTo} días`, `Через ${daysTo} дн.`)} · {nextStop.entryDate}</div>
           ) : (
-            <>
-              <div className="rd-big rd-big-sm">{getCountryName(destination, language)}</div>
-              <button type="button" className="rd-link" onClick={onOpenRoutePlanner}>
-                {l('Tarih ekle, geri sayım başlasın', 'Add dates to start a countdown', 'Daten hinzufügen für Countdown', 'Añade fechas para la cuenta atrás', 'Добавьте даты для отсчёта')}
-              </button>
-            </>
+            <button type="button" className="rd-link" onClick={onOpenRoutePlanner}>
+              {l('Tarih ekle, geri sayım başlasın', 'Add dates for a countdown', 'Daten für Countdown hinzufügen', 'Añade fechas', 'Добавьте даты')}
+            </button>
           )}
         </div>
       </div>

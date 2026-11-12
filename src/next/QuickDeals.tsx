@@ -1,4 +1,4 @@
-import React, { Suspense, lazy, useState } from 'react';
+import React, { Suspense, lazy, useEffect, useState } from 'react';
 import { useI18n } from '../data/i18n';
 import { tpLinks } from '../data/tpPartners';
 import { GEO_DATA } from '../data/geoData';
@@ -26,6 +26,14 @@ interface Deal {
 export const QuickDeals: React.FC<{ passport: string; destination: string }> = ({ passport, destination }) => {
   const { l, language } = useI18n();
   const [open, setOpen] = useState<DealKind | null>(null);
+  // Panel tıklanan kartın satırının hemen altında açılsın: satırdaki kart sayısı ekran genişliğine göre
+  const colsNow = () => (typeof window !== 'undefined' && window.matchMedia('(min-width: 900px)').matches ? 8 : 4);
+  const [cols, setCols] = useState(colsNow);
+  useEffect(() => {
+    const on = () => setCols(colsNow());
+    window.addEventListener('resize', on);
+    return () => window.removeEventListener('resize', on);
+  }, []);
   const dest = destination && destination !== passport && GEO_DATA[destination] ? destination : 'TH';
   const from = GEO_DATA[passport] ? passport : 'TR';
   const destName = getCountryName(dest, language);
@@ -113,9 +121,9 @@ export const QuickDeals: React.FC<{ passport: string; destination: string }> = (
         <span className="vz-qd-note">{l('Gerçek fiyatlar, güvenilir siteler', 'Live prices from trusted sites', 'Echte Preise, bekannte Anbieter', 'Precios reales, sitios fiables', 'Реальные цены, надёжные сайты')} <AdTag /></span>
       </div>
       <div className="vz-qd-grid4" role="tablist" aria-label={l('Hemen ucuza al', 'Book it cheap', 'Günstig buchen', 'Reserva barato', 'Купить дешевле')}>
-        {deals.map((d) =>
+        {deals.map((d, i) =>
           d.href ? (
-            <a key={d.id} className="vz-qd-card" title={d.sub} href={d.href} target="_blank" rel="noopener noreferrer sponsored" onClick={() => setOpen(null)}>
+            <a key={d.id} className="vz-qd-card" style={{ order: 2 * (i + 1) }} title={d.sub} href={d.href} target="_blank" rel="noopener noreferrer sponsored" onClick={() => setOpen(null)}>
               {inner(d)}
             </a>
           ) : (
@@ -126,6 +134,7 @@ export const QuickDeals: React.FC<{ passport: string; destination: string }> = (
               aria-selected={open === d.id}
               aria-controls="vz-qd-panel"
               className={`vz-qd-card${open === d.id ? ' on' : ''}`}
+              style={{ order: 2 * (i + 1) }}
               title={d.sub}
               onClick={() => setOpen(open === d.id ? null : (d.id as DealKind))}
             >
@@ -133,14 +142,14 @@ export const QuickDeals: React.FC<{ passport: string; destination: string }> = (
             </button>
           )
         )}
+        {open && (
+          <div id="vz-qd-panel" className="vz-qd-panel" role="tabpanel" style={{ gridColumn: '1 / -1', order: 2 * (Math.floor(deals.findIndex((x) => x.id === open) / cols) + 1) * cols + 1 }}>
+            <Suspense fallback={<div className="vz-muted" style={{ padding: 12 }}>…</div>}>
+              <QuickDealPanel kind={open} passport={passport} destination={dest} onClose={() => setOpen(null)} />
+            </Suspense>
+          </div>
+        )}
       </div>
-      {open && (
-        <div id="vz-qd-panel" className="vz-qd-panel" role="tabpanel">
-          <Suspense fallback={<div className="vz-muted" style={{ padding: 12 }}>…</div>}>
-            <QuickDealPanel kind={open} passport={passport} destination={dest} onClose={() => setOpen(null)} />
-          </Suspense>
-        </div>
-      )}
     </section>
   );
 };

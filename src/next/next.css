@@ -1406,3 +1406,54 @@ button.vz-tb-f { cursor: pointer; }
 .vz-tile.has-ph .vz-tile-badge { top: 16px; right: 16px; background: rgba(255, 255, 255, 0.92); }
 .vz-tile.has-ph:hover .vz-tile-ph { transform: scale(1.02); }
 @media (prefers-reduced-motion: reduce) { .vz-qd-ph, .vz-tile-ph { transition: none; } }
+
+/* ---------- Bilgi kartları: kapağın üstünde cam, sıkı düzen ---------- */
+.vz-app .rd-hero.has-photo .rd-hero-in { padding-bottom: 200px; }
+.vz-app .rd-strip { margin-top: -176px; }
+@media (max-width: 960px) { .vz-app .rd-hero.has-photo .rd-hero-in { padding-bottom: 300px; } .vz-app .rd-strip { margin-top: -250px; } }
+.rd-glass .rd-card { background: rgba(255, 255, 255, 0.14); border: 1px solid rgba(255, 255, 255, 0.3); backdrop-filter: blur(16px) saturate(1.25); -webkit-backdrop-filter: blur(16px) saturate(1.25); box-shadow: 0 18px 40px -26px rgba(0, 0, 0, 0.6); color: #fff; padding: 14px 16px; gap: 4px; border-radius: 18px; }
+.rd-glass .rd-eyebrow { display: flex; align-items: center; gap: 7px; color: rgba(255, 255, 255, 0.86); font-size: 11.5px; letter-spacing: 0.08em; margin: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.rd-glass .rd-li { width: 16px; height: 16px; flex: none; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.rd-glass .rd-val { display: flex; align-items: center; gap: 8px; min-width: 0; margin-top: 4px; }
+.rd-glass .rd-big { color: #fff; font-size: 30px; line-height: 1.05; }
+.rd-glass .rd-big em { font-style: normal; font-size: 0.6em; font-weight: 700; opacity: 0.85; }
+.rd-glass .rd-big-rule { font-size: 19px; line-height: 1.15; letter-spacing: -0.01em; }
+.rd-glass .rd-big-rule.ok { color: #8BF0B8; } .rd-glass .rd-big-rule.warn { color: #FFD27A; }
+.rd-glass .rd-live { font-style: normal; display: inline-flex; align-items: center; gap: 5px; font-size: 11px; font-weight: 700; color: rgba(255, 255, 255, 0.9); background: rgba(255, 255, 255, 0.16); border-radius: 999px; padding: 3px 8px 3px 7px; white-space: nowrap; }
+.rd-glass .rd-live::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: #4BE38F; box-shadow: 0 0 0 3px rgba(75, 227, 143, 0.25); }
+.rd-glass .rd-sub { color: rgba(255, 255, 255, 0.82); font-size: 12.5px; line-height: 1.35; }
+.rd-glass .rd-link { color: #A9F2FF; font-size: 12.5px; text-align: left; padding: 0; background: none; border: 0; font: inherit; font-weight: 600; cursor: pointer; }
+.vz-app .rd-strip-head .rd-select { background: rgba(255, 255, 255, 0.94); }
+@media (max-width: 960px) {
+  .vz-app .rd-glass.rd-strip-row > * { padding: 11px 12px; }
+  .rd-glass .rd-big { font-size: 24px; }
+  .rd-glass .rd-big-rule { font-size: 15.5px; }
+  .rd-glass .rd-eyebrow { font-size: 10.5px; }
+  .rd-glass .rd-sub, .rd-glass .rd-link { font-size: 11.5px; }
+  .rd-glass .rd-live { font-size: 10px; padding: 2px 6px 2px 5px; gap: 4px; }
+  .rd-glass .rd-live::before { width: 5px; height: 5px; box-shadow: none; }
+}
+
+/* Hemen ucuza al: küçük fotoğraf + altında başlık (mobilde 4, geniş ekranda 8 yan yana) */
+.vz-qd-grid4 { grid-template-columns: repeat(4, minmax(0, 1fr)) !important; gap: 10px 8px !important; }
+@media (min-width: 900px) { .vz-qd-grid4 { grid-template-columns: repeat(8, minmax(0, 1fr)) !important; gap: 14px 12px !important; } }
+.vz-qd-card:has(.vz-qd-ph) { aspect-ratio: auto !important; display: flex; flex-direction: column; align-items: stretch; justify-content: flex-start; gap: 6px; background: none; box-shadow: none; overflow: visible; color: var(--rd-fg); border-radius: 0; padding: 0 !important; }
+@media (min-width: 1024px) { .vz-qd-card:has(.vz-qd-ph) { aspect-ratio: auto !important; } }
+.vz-qd-card:has(.vz-qd-ph)::after { display: none; }
+.vz-qd-ph { position: static; width: 100%; aspect-ratio: 1 / 1; height: auto; border-radius: 16px; box-shadow: 0 8px 20px -14px rgba(10, 30, 40, 0.55); z-index: auto; }
+.vz-qd-card.on:has(.vz-qd-ph) { box-shadow: none; }
+.vz-qd-card.on .vz-qd-ph { outline: 3px solid var(--rd-sea, #0b7287); outline-offset: 2px; }
+.vz-qd-cap { padding: 0 2px; text-align: center; }
+.vz-qd-cap .vz-qd-t { color: var(--rd-fg); font-size: 12.5px; }
+.vz-qd-cap small { display: none; }
+@media (min-width: 900px) { .vz-qd-cap .vz-qd-t { font-size: 14px; } }
+.vz-qd-panel { margin-block: 4px 6px; }
+
+/* Ulaşım rozetleri */
+.vz-gm { display: inline-grid; place-items: center; width: 22px; height: 22px; border-radius: 7px; color: #fff; flex: none; vertical-align: middle; }
+.vz-gm svg { width: 14px; height: 14px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.vz-gm.k-train { background: #D9473B; } .vz-gm.k-bus { background: #2D7FC4; } .vz-gm.k-ferry { background: #0E8C9A; }
+.vz-gm.k-van { background: #7B5CC4; } .vz-gm.k-charter { background: #E5A21C; } .vz-gm.k-avia { background: #16242B; }
+.vz-gr-modes { display: flex !important; gap: 4px; flex-wrap: wrap; margin-top: 4px; }
+.vz-bk-chips button .vz-gm { margin-right: 4px; }
+.vz-bk-chips button.on .vz-gm { box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.8); }

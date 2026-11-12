@@ -110,6 +110,21 @@ const inTurkey = () => {
   }
 };
 
+/** Ulaşım türü rozeti: her türün kendi rengi (tren kırmızı, otobüs mavi, feribot turkuaz…) */
+const MODE_PATH: Record<string, string> = {
+  train: 'M7 3h10a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V6a3 3 0 0 1 3-3zM4 11h16M8 21l-2-3M16 21l2-3',
+  bus: 'M6 4h12a2 2 0 0 1 2 2v11H4V6a2 2 0 0 1 2-2zM4 11h16M7 20v-3M17 20v-3',
+  ferry: 'M3 18c2 1.5 4 1.5 6 0 2 1.5 4 1.5 6 0 2 1.5 4 1.5 6 0M5 15l-1-4h16l-1 4M8 11V7h8v4M12 4v3',
+  van: 'M3 16V7h12l5 5v4h-2M15 7v5h5M9 16.5h5M5 16.5a2 2 0 1 0 4 0 2 2 0 1 0-4 0M14 16.5a2 2 0 1 0 4 0 2 2 0 1 0-4 0',
+  charter: 'M5 16H3v-4l2-5h14l2 5v4h-2M10 7V4h4v3M3 12h18M9.5 16.5h5M5.5 16.5a2 2 0 1 0 4 0 2 2 0 1 0-4 0M14.5 16.5a2 2 0 1 0 4 0 2 2 0 1 0-4 0',
+  avia: 'M2 16l20-8-3 9-6-2-3 4v-5l9-6-11 5z'
+};
+const ModeBadge: React.FC<{ k: string; title?: string }> = ({ k, title }) => (
+  <span className={`vz-gm k-${k}`} title={title} aria-hidden={title ? undefined : true}>
+    <svg viewBox="0 0 24 24"><path d={MODE_PATH[k] || MODE_PATH.bus} /></svg>
+  </span>
+);
+
 /** Bölüm başlık görselleri: /images/bk/{ad}-480|960.webp */
 const SEC_IMG: Record<string, string> = { 'bk-flight': 'flight', 'bk-hotel': 'hotel', 'bk-tours': 'tours', 'bk-transfer': 'transfer', 'bk-ground': 'ground', 'bk-esim': 'esim', 'bk-car': 'car', 'bk-ins': 'ins' };
 const Sec: React.FC<{ id: string; icon: string; title: string; note?: string; children: React.ReactNode }> = ({ id, icon, title, note, children }) => (
@@ -574,7 +589,7 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
             <button type="button" role="tab" aria-selected={!gMode} className={!gMode ? 'on' : ''} onClick={() => setGMode('')}>{l('Hepsi', 'All', 'Alle', 'Todos', 'Все')}</button>
             {gModesHere.map((m) => (
               <button key={m.k} type="button" role="tab" aria-selected={gMode === m.k} className={gMode === m.k ? 'on' : ''} onClick={() => setGMode(m.k)}>
-                <span aria-hidden="true">{m.e}</span> {m.t}
+                <ModeBadge k={m.k} /> {m.t}
               </button>
             ))}
           </div>
@@ -589,7 +604,7 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
               <a key={g.slug} className="vz-qd-fare" href={groundUrl(g)} target="_blank" rel="noopener noreferrer sponsored">
                 <b>{l('', '', 'ab ', 'desde ', 'от ')}~{usdTo(g.usd)}{l('’den', '', '', '', '')}</b>
                 <span>{groundCity} → {g.to}</span>
-                <small className="vz-gr-modes">{g.modes.map((x) => modeOf(x)).filter((m): m is NonNullable<typeof m> => !!m && (!gMode || m.k === gMode)).map((m) => `${m.e} ${m.t}`).join(' · ')}</small>
+                <small className="vz-gr-modes">{g.modes.map((x) => modeOf(x)).filter((m): m is NonNullable<typeof m> => !!m && (!gMode || m.k === gMode)).map((m) => <ModeBadge key={m.k} k={m.k} title={m.t} />)}</small>
               </a>
             ))}
           </div>
