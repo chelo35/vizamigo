@@ -58,7 +58,7 @@
     "flightCostIndex": "Yüksek",
     "flightTip": "Nouakchott-Oumtounsy Havalimanı’na (NKC) Türk Hava Yolları’nın İstanbul seferleri ve Kazablanka (Royal Air Maroc), Tunus (Tunisair) veya Paris aktarmalı uçuşlar vardır; THY seferleri bazen ara duraklıdır, tarifeyi kontrol edin."
    },
-   "plugType": "Tip C, F (220V, 50Hz)"
+   "plugType": "Tip C, E, F (220V, 50Hz)"
   },
   "enc": {
    "culture": {
@@ -300,6 +300,7 @@
    "plugs": {
     "types": [
      "C",
+     "E",
      "F"
     ],
     "voltage": "220V",
@@ -418,7 +419,7 @@
     "flightCostIndex": "High",
     "flightTip": "Nouakchott-Oumtounsy Airport (NKC) has Turkish Airlines flights from Istanbul and connections via Casablanca (Royal Air Maroc), Tunis (Tunisair) or Paris; some Turkish Airlines flights make an intermediate stop, so check the schedule."
    },
-   "plugType": "Type C, F (220V, 50Hz)"
+   "plugType": "Type C, E, F (220V, 50Hz)"
   },
   "enc": {
    "culture": {
@@ -660,6 +661,7 @@
    "plugs": {
     "types": [
      "C",
+     "E",
      "F"
     ],
     "voltage": "220V",
@@ -778,7 +780,7 @@
     "flightCostIndex": "Hoch",
     "flightTip": "Der Flughafen Nouakchott-Oumtounsy (NKC) wird von Turkish Airlines ab Istanbul sowie mit Umstieg in Casablanca (Royal Air Maroc), Tunis (Tunisair) oder Paris angeflogen; manche Flüge haben eine Zwischenlandung, Flugplan prüfen."
    },
-   "plugType": "Typ C, F (220V, 50Hz)"
+   "plugType": "Typ C, E, F (220V, 50Hz)"
   },
   "enc": {
    "culture": {
@@ -1020,6 +1022,7 @@
    "plugs": {
     "types": [
      "C",
+     "E",
      "F"
     ],
     "voltage": "220V",
@@ -1138,7 +1141,7 @@
     "flightCostIndex": "Alto",
     "flightTip": "Al aeropuerto de Nuakchot-Oumtounsy (NKC) vuelan Turkish Airlines desde Estambul y conexiones vía Casablanca (Royal Air Maroc), Túnez (Tunisair) o París; algunos vuelos hacen escala intermedia, revise el horario."
    },
-   "plugType": "Tipo C, F (220V, 50Hz)"
+   "plugType": "Tipo C, E, F (220V, 50Hz)"
   },
   "enc": {
    "culture": {
@@ -1380,6 +1383,7 @@
    "plugs": {
     "types": [
      "C",
+     "E",
      "F"
     ],
     "voltage": "220V",
@@ -1498,7 +1502,7 @@
     "flightCostIndex": "Высокий",
     "flightTip": "В аэропорт Нуакшот-Умтунси (NKC) летают Turkish Airlines из Стамбула и рейсы с пересадкой в Касабланке (Royal Air Maroc), Тунисе (Tunisair) или Париже; некоторые рейсы с промежуточной посадкой — проверьте расписание."
    },
-   "plugType": "Тип C, F (220V, 50Hz)"
+   "plugType": "Тип C, E, F (220V, 50Hz)"
   },
   "enc": {
    "culture": {
@@ -1740,6 +1744,7 @@
    "plugs": {
     "types": [
      "C",
+     "E",
      "F"
     ],
     "voltage": "220V",

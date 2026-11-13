@@ -2,7 +2,7 @@
  "tr": {
   "insights": {
    "currency": "Orta Afrika CFA Frangı (XAF)",
-   "plugType": "Tip C (220V, 50Hz)",
+   "plugType": "Tip C, E (220V, 50Hz)",
    "bestMonths": "Haziran – Eylül (uzun kurak mevsim; vahşi yaşam gözlemi ve Loango açıklarında kambur balinalar). Aralık – Şubat kısa kurak dönemdir (deri sırtlı kaplumbağalar). Ekim – Kasım ve Mart – Mayıs yoğun yağışlıdır.",
    "safety": {
     "safetyScore": 55,
@@ -298,7 +298,8 @@
   "intel": {
    "plugs": {
     "types": [
-     "C"
+     "C",
+     "E"
     ],
     "voltage": "220V",
     "frequency": "50Hz",
@@ -359,7 +360,7 @@
  "en": {
   "insights": {
    "currency": "Central African CFA Franc (XAF)",
-   "plugType": "Type C (220V, 50Hz)",
+   "plugType": "Type C, E (220V, 50Hz)",
    "bestMonths": "June – September (long dry season; wildlife viewing and humpback whales off Loango). December – February is the short dry season (leatherback turtles). October – November and March – May are very rainy.",
    "safety": {
     "safetyScore": 55,
@@ -655,7 +656,8 @@
   "intel": {
    "plugs": {
     "types": [
-     "C"
+     "C",
+     "E"
     ],
     "voltage": "220V",
     "frequency": "50Hz",
@@ -716,7 +718,7 @@
  "de": {
   "insights": {
    "currency": "CFA-Franc BEAC (XAF)",
-   "plugType": "Typ C (220V, 50Hz)",
+   "plugType": "Typ C, E (220V, 50Hz)",
    "bestMonths": "Juni – September (lange Trockenzeit; Tierbeobachtung und Buckelwale vor Loango). Dezember – Februar ist die kurze Trockenzeit (Lederschildkröten). Oktober – November und März – Mai sind sehr regnerisch.",
    "safety": {
     "safetyScore": 55,
@@ -1012,7 +1014,8 @@
   "intel": {
    "plugs": {
     "types": [
-     "C"
+     "C",
+     "E"
     ],
     "voltage": "220V",
     "frequency": "50Hz",
@@ -1073,7 +1076,7 @@
  "es": {
   "insights": {
    "currency": "Franco CFA de África Central (XAF)",
-   "plugType": "Tipo C (220V, 50Hz)",
+   "plugType": "Tipo C, E (220V, 50Hz)",
    "bestMonths": "Junio – septiembre (larga estación seca; fauna y ballenas jorobadas frente a Loango). Diciembre – febrero es la estación seca corta (tortugas laúd). Octubre – noviembre y marzo – mayo son muy lluviosos.",
    "safety": {
     "safetyScore": 55,
@@ -1369,7 +1372,8 @@
   "intel": {
    "plugs": {
     "types": [
-     "C"
+     "C",
+     "E"
     ],
     "voltage": "220V",
     "frequency": "50Hz",
@@ -1430,7 +1434,7 @@
  "ru": {
   "insights": {
    "currency": "Франк КФА BEAC (XAF)",
-   "plugType": "Тип C (220V, 50Hz)",
+   "plugType": "Тип C, E (220V, 50Hz)",
    "bestMonths": "Июнь – сентябрь (длинный сухой сезон; наблюдение за животными и горбатые киты у Лоанго). Декабрь – февраль — короткий сухой сезон (кожистые черепахи). Октябрь – ноябрь и март – май очень дождливы.",
    "safety": {
     "safetyScore": 55,
@@ -1726,7 +1730,8 @@
   "intel": {
    "plugs": {
     "types": [
-     "C"
+     "C",
+     "E"
     ],
     "voltage": "220V",
     "frequency": "50Hz",

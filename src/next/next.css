@@ -1422,7 +1422,7 @@ button.vz-tb-f { cursor: pointer; }
 .rd-glass .rd-live { font-style: normal; display: inline-flex; align-items: center; gap: 5px; font-size: 11px; font-weight: 700; color: rgba(255, 255, 255, 0.9); background: rgba(255, 255, 255, 0.16); border-radius: 999px; padding: 3px 8px 3px 7px; white-space: nowrap; }
 .rd-glass .rd-live::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: #4BE38F; box-shadow: 0 0 0 3px rgba(75, 227, 143, 0.25); }
 .rd-glass .rd-sub { color: rgba(255, 255, 255, 0.82); font-size: 12.5px; line-height: 1.35; }
-.rd-glass .rd-link { color: #A9F2FF; font-size: 12.5px; text-align: left; padding: 0; background: none; border: 0; font: inherit; font-weight: 600; cursor: pointer; }
+.rd-glass .rd-link { color: #fff; font-size: 12.5px; text-align: left; padding: 2px 7px; margin-left: -7px; background: rgba(4, 38, 48, 0.55); border: 0; border-radius: 6px; font: inherit; font-weight: 600; cursor: pointer; text-decoration: underline; text-underline-offset: 2px; line-height: 1.7; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
 .vz-app .rd-strip-head .rd-select { background: rgba(255, 255, 255, 0.94); }
 @media (max-width: 960px) {
   .vz-app .rd-glass.rd-strip-row > * { padding: 11px 12px; }
@@ -1548,7 +1548,7 @@ button.vz-tb-f { cursor: pointer; }
 .vz-bk-cta .vz-ad, .vz-hb-go .vz-ad { background: rgba(0, 0, 0, 0.22); color: #fff; }
 .vz-fl-picked { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; margin: 0 0 12px; padding: 10px 14px; border-radius: 12px; background: var(--rd-ok-soft, #e3f3e8); color: var(--rd-ok, #17714a); font-size: 14px; font-weight: 600; }
 .vz-fl-picked span { flex: 1 1 220px; color: var(--rd-fg); font-weight: 500; }
-.vz-fl-picked a { color: var(--rd-sea-ink, #0b7287); font-weight: 700; text-decoration: underline; text-underline-offset: 2px; }
+.vz-fl-picked a { color: var(--rd-sea-ink, #0b7287); font-weight: 700; text-decoration: underline; text-underline-offset: 2px; line-height: 1.7; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
 .vz-hq-cheap { display: flex; align-items: center; gap: 8px; width: 100%; margin: 0 0 12px; padding: 10px 14px; border: 1px dashed var(--rd-sea, #0c809a); border-radius: 12px; background: transparent; color: var(--rd-sea-ink, #0b7287); font: inherit; font-size: 14px; font-weight: 600; text-align: left; cursor: pointer; }
 .vz-hq-cheap:hover { background: var(--rd-sea-soft, #e3f3f6); }
 html.dark .vz-fl-picked { background: rgba(23, 113, 74, 0.18); color: #7fd3a8; }

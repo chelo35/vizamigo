@@ -2,7 +2,7 @@
  "tr": {
   "insights": {
    "currency": "Batı Afrika CFA Frangı (XOF)",
-   "plugType": "Tip C, F (220V, 50Hz)",
+   "plugType": "Tip C, E, F (220V, 50Hz)",
    "bestMonths": "Kasım – Mayıs (kurak mevsim); Haziran – Ekim yoğun yağışlı, adalara ulaşım zorlaşır",
    "safety": {
     "safetyScore": 40,
@@ -323,6 +323,7 @@
    "plugs": {
     "types": [
      "C",
+     "E",
      "F"
     ],
     "voltage": "220V",
@@ -384,7 +385,7 @@
  "en": {
   "insights": {
    "currency": "West African CFA Franc (XOF)",
-   "plugType": "Type C, F (220V, 50Hz)",
+   "plugType": "Type C, E, F (220V, 50Hz)",
    "bestMonths": "November – May (dry season); June – October is very wet and island access becomes difficult",
    "safety": {
     "safetyScore": 40,
@@ -705,6 +706,7 @@
    "plugs": {
     "types": [
      "C",
+     "E",
      "F"
     ],
     "voltage": "220V",
@@ -766,7 +768,7 @@
  "de": {
   "insights": {
    "currency": "CFA-Franc BCEAO (XOF)",
-   "plugType": "Typ C, F (220V, 50Hz)",
+   "plugType": "Typ C, E, F (220V, 50Hz)",
    "bestMonths": "November – Mai (Trockenzeit); Juni – Oktober sehr regnerisch, die Inseln sind dann schwer erreichbar",
    "safety": {
     "safetyScore": 40,
@@ -1087,6 +1089,7 @@
    "plugs": {
     "types": [
      "C",
+     "E",
      "F"
     ],
     "voltage": "220V",
@@ -1148,7 +1151,7 @@
  "es": {
   "insights": {
    "currency": "Franco CFA de África Occidental (XOF)",
-   "plugType": "Tipo C, F (220V, 50Hz)",
+   "plugType": "Tipo C, E, F (220V, 50Hz)",
    "bestMonths": "Noviembre – mayo (estación seca); de junio a octubre llueve mucho y el acceso a las islas se complica",
    "safety": {
     "safetyScore": 40,
@@ -1469,6 +1472,7 @@
    "plugs": {
     "types": [
      "C",
+     "E",
      "F"
     ],
     "voltage": "220V",
@@ -1530,7 +1534,7 @@
  "ru": {
   "insights": {
    "currency": "Западноафриканский франк КФА (XOF)",
-   "plugType": "Тип C, F (220V, 50Hz)",
+   "plugType": "Тип C, E, F (220V, 50Hz)",
    "bestMonths": "Ноябрь – май (сухой сезон); с июня по октябрь очень дождливо, добраться до островов сложно",
    "safety": {
     "safetyScore": 40,
@@ -1851,6 +1855,7 @@
    "plugs": {
     "types": [
      "C",
+     "E",
      "F"
     ],
     "voltage": "220V",

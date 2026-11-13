@@ -2,7 +2,7 @@
  "tr": {
   "insights": {
    "currency": "Türkmen Manatı (TMT)",
-   "plugType": "Tip C, F (220V, 50Hz)",
+   "plugType": "Tip B, C, F (220V, 50Hz)",
    "bestMonths": "Nisan – Mayıs ve Eylül – Ekim (yazlar 45°C’yi bulur)",
    "safety": {
     "safetyScore": 65,
@@ -315,6 +315,7 @@
   "intel": {
    "plugs": {
     "types": [
+     "B",
      "C",
      "F"
     ],
@@ -376,7 +377,7 @@
  "en": {
   "insights": {
    "currency": "Turkmenistani Manat (TMT)",
-   "plugType": "Type C, F (220V, 50Hz)",
+   "plugType": "Type B, C, F (220V, 50Hz)",
    "bestMonths": "April – May and September – October (summers reach 45°C)",
    "safety": {
     "safetyScore": 65,
@@ -689,6 +690,7 @@
   "intel": {
    "plugs": {
     "types": [
+     "B",
      "C",
      "F"
     ],
@@ -750,7 +752,7 @@
  "de": {
   "insights": {
    "currency": "Turkmenistan-Manat (TMT)",
-   "plugType": "Typ C, F (220V, 50Hz)",
+   "plugType": "Typ B, C, F (220V, 50Hz)",
    "bestMonths": "April – Mai und September – Oktober (im Sommer bis 45 °C)",
    "safety": {
     "safetyScore": 65,
@@ -1063,6 +1065,7 @@
   "intel": {
    "plugs": {
     "types": [
+     "B",
      "C",
      "F"
     ],
@@ -1124,7 +1127,7 @@
  "es": {
   "insights": {
    "currency": "Manat turcomano (TMT)",
-   "plugType": "Tipo C, F (220V, 50Hz)",
+   "plugType": "Tipo B, C, F (220V, 50Hz)",
    "bestMonths": "Abril – mayo y septiembre – octubre (en verano se alcanzan 45 °C)",
    "safety": {
     "safetyScore": 65,
@@ -1437,6 +1440,7 @@
   "intel": {
    "plugs": {
     "types": [
+     "B",
      "C",
      "F"
     ],
@@ -1498,7 +1502,7 @@
  "ru": {
   "insights": {
    "currency": "Туркменский манат (TMT)",
-   "plugType": "Тип C, F (220V, 50Hz)",
+   "plugType": "Тип B, C, F (220V, 50Hz)",
    "bestMonths": "Апрель – май и сентябрь – октябрь (летом до +45 °C)",
    "safety": {
     "safetyScore": 65,
@@ -1811,6 +1815,7 @@
   "intel": {
    "plugs": {
     "types": [
+     "B",
      "C",
      "F"
     ],
