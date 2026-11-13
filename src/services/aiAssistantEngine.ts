@@ -19,6 +19,7 @@
  * - 'radar': Global Radar Modal ('all' | 'clock' | 'weather' | 'currency')
  */
 
+import { CITY_IATA } from '../data/cityIata';
 import {
   getCountryName,
   getFlag,
@@ -116,6 +117,7 @@ export function detectQueryLanguage(rawQuery: string, fallbackLang: string = 'tr
 // ============================================================================
 
 const POPULAR_DESTINATION_ALIASES: Record<string, string> = {
+  'adana': 'TR', 'adiyaman': 'TR', 'amasya': 'TR', 'ankara': 'TR', 'balikesir': 'TR', 'edremit': 'TR', 'batman': 'TR', 'bingol': 'TR', 'canakkale': 'TR', 'dalaman': 'TR', 'denizli': 'TR', 'diyarbakir': 'TR', 'elazig': 'TR', 'erzincan': 'TR', 'erzurum': 'TR', 'gaziantep': 'TR', 'antep': 'TR', 'hatay': 'TR', 'antakya': 'TR', 'igdir': 'TR', 'isparta': 'TR', 'kahramanmaras': 'TR', 'kars': 'TR', 'kastamonu': 'TR', 'kayseri': 'TR', 'konya': 'TR', 'kutahya': 'TR', 'malatya': 'TR', 'mardin': 'TR', 'nevsehir': 'TR', 'giresun': 'TR', 'rize': 'TR', 'artvin': 'TR', 'samsun': 'TR', 'siirt': 'TR', 'sinop': 'TR', 'sivas': 'TR', 'sanliurfa': 'TR', 'urfa': 'TR', 'sirnak': 'TR', 'tekirdag': 'TR', 'tokat': 'TR', 'usak': 'TR', 'zonguldak': 'TR', 'hakkari': 'TR', 'gazipasa': 'TR', 'eskisehir': 'TR', 'mugla': 'TR',
   // Southeast Asia & Far East
   'bosna': 'BA', 'makedonya': 'MK', 'amerika': 'US', 'karadag': 'ME', 'cekya': 'CZ', 'emirlikler': 'AE', 'hurgada': 'EG', 'sarm el seyh': 'EG',
     'bali': 'ID', 'cakarta': 'ID', 'jakarta': 'ID', 'ubud': 'ID', 'lombok': 'ID', 'denpasar': 'ID', 'gili': 'ID',
@@ -331,7 +333,7 @@ export function extractDestinationCountry(query: string): string | null {
   for (const w of words) {
     if (w.length >= 4) {
       for (const key of sortedKeys) {
-        if (key.length >= 4 && w.startsWith(key)) {
+        if (key.length >= 4 && !CITY_IATA[key] && w.startsWith(key)) {
           return countryMap[key];
         }
       }
@@ -364,7 +366,8 @@ export async function processAssistantQuery(
   // Takip sorusu ("ne zaman gideyim", "otel öner"): ülke yazılmadıysa sohbetteki son ülke kullanılır
   const followUp = /(^| )(ne zaman|hava|mevsim|iklim|butce|fiyat|pahali|ucuz|guvenli|priz|vize|kimlik|otel|konaklama|nerede kal|yemek|rota|gun|taksi|ulasim|para|doviz|esim|internet|dil|bahsis|acil|tur|ucak|ucus|bilet|araba|transfer|sigorta|gezilecek|gorulecek|when|weather|season|budget|price|cost|safe|plug|visa|hotel|stay|food|route|itinerary|days|taxi|money|tip|emergency|tour|flight|car|insurance|see|do|wann|wetter|budget|preis|sicher|stecker|visum|essen|route|tage|cuando|clima|presupuesto|precio|seguro|enchufe|visado|hotel|comida|ruta|dias|когда|погод|бюджет|цен|безопас|розет|виз|отел|еда|маршрут|дн)/.test(normalizeText(rawQuery));
   const greet = /^(merhaba|selam|slm|gunaydin|iyi aksamlar|tesekkur|sagol|hi|hello|hey|thanks|hallo|danke|hola|gracias|привет|здравствуйте|спасибо)/.test(normalizeText(rawQuery));
-  const targetCountry = extractDestinationCountry(rawQuery) || (ctxCountry && followUp && !greet ? ctxCountry : null);
+  const capTr = /(^|[^\p{L}])(Van|Muş|Mus|Ordu)(?:'|’)?\p{L}{0,4}(?=$|[^\p{L}])/u.test(rawQuery) ? 'TR' : null;
+  const targetCountry = extractDestinationCountry(rawQuery) || capTr || (ctxCountry && followUp && !greet ? ctxCountry : null);
 
   const actions: AssistantActionPill[] = [];
   const passportItems = getPassportItems(currentPassport);
@@ -393,10 +396,13 @@ export async function processAssistantQuery(
 
   // ülke soruları: doğrulanmış ülke verisinden, sorunun konusuna göre 5 dilde cevap
   // soruda geçen şehir (ör. "Bangkok", "Antalya"): cevabın başlığında gösterilir
-  const cityKey = Object.keys(POPULAR_DESTINATION_ALIASES).sort((x, y) => y.length - x.length).find((k) => k.length >= 3 && new RegExp(`(^| )${k}`).test(norm));
+  const citySuffix = '(?:ye|ya|e|a|de|da|te|ta|den|dan|ten|tan|in|un|nin|nun|i|u|yi|yu|si|su|lar|ler|s|es|a|u)?';
+  const capCity = /(^|[^\p{L}])(Van|Muş|Mus|Ordu)(?:'|’)?\p{L}{0,4}(?=$|[^\p{L}])/u.exec(rawQuery)?.[2];
+  const cityKey = capCity ? normalizeText(capCity) : Object.keys(POPULAR_DESTINATION_ALIASES).sort((x, y) => y.length - x.length).find((k) => k.length >= 3 && new RegExp(`(^| )${k}${citySuffix}( |$)`).test(norm));
+  const cityCountry = cityKey ? POPULAR_DESTINATION_ALIASES[cityKey] || (CITY_IATA[cityKey] ? 'TR' : '') : '';
   const cityName = cityKey ? cityKey.replace(/(^| )\S/g, (m) => m.toLocaleUpperCase(activeLang === 'tr' ? 'tr' : 'en')) : '';
   const countryMsg = async (code: string): Promise<AssistantMessage> => {
-    const ans = await answerCountryQuestion(code, norm, activeLang, currentPassport, cityKey && POPULAR_DESTINATION_ALIASES[cityKey] === code ? cityName : '');
+    const ans = await answerCountryQuestion(code, norm, activeLang, currentPassport, cityKey && cityCountry === code ? cityName : '');
     return {
       id: `msg-${Date.now()}`,
       sender: 'assistant',
@@ -455,7 +461,7 @@ export async function processAssistantQuery(
   // Rezervasyon sorusu + ülke: vize durumu + o ülkenin rezervasyon sayfası + en fazla 2 ortaklık bağlantısı
   if (targetCountry && (bookIntents.length || isGeneralBooking(norm))) {
     const c = targetCountry;
-    const cn = cityKey && POPULAR_DESTINATION_ALIASES[cityKey] === c ? cityName : '';
+    const cn = cityKey && cityCountry === c ? cityName : '';
     const where = cn || getCountryName(c, activeLang);
     const vl = visaLine(c, currentPassport, activeLang);
     const lines: string[] = [];

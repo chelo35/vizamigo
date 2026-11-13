@@ -17,7 +17,7 @@
 import { capitalName } from './capitalNames';
 import { GEO_DATA } from './geoData';
 import { getCountryName } from './passportData';
-import { TP, tpLinks, LOCKED, gygSearch, tourRadarLink, RAYNA_COUNTRIES, type TpId } from './tpPartners';
+import { TP, tpLinks, s22Flights, LOCKED, gygSearch, tourRadarLink, RAYNA_COUNTRIES, type TpId } from './tpPartners';
 
 export type ConciergeStageId = 'flights' | 'accommodation' | 'transit' | 'activities' | 'essentials';
 
@@ -346,11 +346,11 @@ export function getCountryConciergePlan(
       tEn: `Compare ${homeHub ? homeHub + ' → ' : ''}${mainHub} fares across hundreds of airlines`,
       cTr: `${countryNameTr} uçuşlarını ara`, cEn: `Search ${countryNameEn} flights`
     }),
-    node('tripcom', 'flights', 2, tpLinks.tripFlights(), {
-      bTr: 'Uçak + otel', bEn: 'Flight + hotel',
-      tTr: `${mainHub} uçuşları, paket indirimleri ve esnek bilet seçenekleri`,
-      tEn: `Flights to ${mainHub}, bundle deals and flexible tickets`,
-      cTr: 'Trip.com fiyatlarını gör', cEn: 'Check Trip.com deals'
+    node('kayak', 'flights', 2, s22Flights(homeHub || 'IST', mainHub, new Date(Date.now() + 30 * 864e5).toISOString().slice(0, 10), undefined, 1, `cc_${code.toLowerCase()}`).kayak, {
+      bTr: 'Fiyat karşılaştırma', bEn: 'Price comparison',
+      tTr: `${homeHub ? homeHub + ' → ' : ''}${mainHub} fiyatlarını yüzlerce sitede karşılaştır`,
+      tEn: `Compare ${homeHub ? homeHub + ' → ' : ''}${mainHub} fares across hundreds of sites`,
+      cTr: 'Kayak’ta ara', cEn: 'Search on Kayak'
     }, undefined, 'slate'),
     node('kiwi', 'flights', 3, tpLinks.kiwi(), {
       bTr: 'Akıllı aktarma', bEn: 'Smart layovers',

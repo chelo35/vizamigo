@@ -4,6 +4,7 @@
  * ilgili site aracını ve en fazla 1–2 ortaklık bağlantısını önerir. Ortaklık bağlantıları sitenin
  * diğer yerlerinde kullanılan tpPartners yardımcılarıyla aynıdır.
  */
+import { CITY_IATA } from '../data/cityIata';
 import type { AssistantActionPill } from './aiAssistantEngine';
 import { getCountryName, getFlag, getCategoryBadgeLabel } from '../data/passportData';
 import { getPassportItems } from '../utils/calculator';
@@ -64,8 +65,11 @@ export function partnerPill(intent: Intent, code: string | null, lang: string, p
   const nameEn = code ? getCountryName(code, 'en') : '';
   const place = city || (code ? GEO_DATA[code]?.capital || nameEn : '');
   const where = city || (code ? getCountryName(code, lang) : '');
-  const fromHub = GEO_DATA[passport]?.mainHub;
-  const toHub = code ? GEO_DATA[code]?.mainHub : undefined;
+  // şehir sorulduysa o şehrin havalimanı (ör. Mardin → MQM); iç hatta varış İstanbul ise kalkış Ankara
+  const cityHub = city ? CITY_IATA[city.toLocaleLowerCase('tr').replace(/ı/g, 'i').normalize('NFD').replace(/[\u0300-\u036f]/g, '')] : undefined;
+  const homeHub = GEO_DATA[passport]?.mainHub?.split('/')[0];
+  const toHub = cityHub || (code ? GEO_DATA[code]?.mainHub?.split('/')[0] : undefined);
+  const fromHub = homeHub && homeHub === toHub ? (homeHub === 'IST' ? 'ESB' : 'IST') : homeHub;
   const base = { type: 'affiliate' as const };
   switch (intent) {
     case 'flight':

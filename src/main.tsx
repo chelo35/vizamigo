@@ -7,6 +7,7 @@ import './styles/redesign-pages.css';
 import './next/next.css';
 import { routeLink } from './data/tpPartners';
 import { captureRef, tagRef } from './utils/refTracking';
+import { watchToolbarInset } from './utils/toolbarInset';
 
 // Fenomen bağlantısıyla gelindiyse (?ref=kod) kodu 30 gün sakla
 captureRef();
@@ -49,3 +50,7 @@ createRoot(document.getElementById('root')!).render(
     <App />
   </ErrorBoundary>
 );
+
+try {
+  watchToolbarInset();
+} catch {}
