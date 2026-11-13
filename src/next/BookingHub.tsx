@@ -209,6 +209,7 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
   const [fl, setFl] = useState<{ cur: string; res: Fl[] } | null>(null);
   const [directOnly, setDirectOnly] = useState(false);
   const [calOpen, setCalOpen] = useState(false);
+  const [calPicked, setCalPicked] = useState(false);
   /** rt: gidiş-dönüş (kalış süresine göre), any: süre esnek, ow: sadece gidiş, ret: sadece dönüş */
   const [fmode, setFmode] = useState<'rt' | 'any' | 'ow' | 'ret'>('rt');
   const fA = fmode === 'ret' ? toIata : fromIata;
@@ -547,9 +548,17 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
                   else if (fmode === 'ow') setTrip?.({ d1: a, d2: plusDays(a, nights) });
                   else setTrip?.({ d1: a, d2: b });
                   setCalOpen(false);
+                  setCalPicked(true);
                 }}
               />
             </div>
+          )}
+          {calPicked && !calOpen && (
+            <p className="vz-fl-picked" role="status">
+              <Icon name="check" size={16} duo={false} />
+              <span>{l(`Tarihler en ucuz güne göre ayarlandı: ${dates}. Otel, tur ve araç fiyatları da bu tarihlerle açılır.`, `Dates set to the cheapest days: ${dates}. Hotels, tours and cars now open with these dates.`, `Daten auf die günstigsten Tage gesetzt: ${dates}. Hotels, Touren und Autos öffnen mit diesen Daten.`, `Fechas ajustadas a los días más baratos: ${dates}. Hoteles, tours y coches se abren con estas fechas.`, `Даты установлены на самые дешёвые дни: ${dates}. Отели, туры и авто открываются с этими датами.`)}</span>
+              <a href="#bk-hotel" onClick={jump}>{l('Bu tarihlerde otellere bak', 'See hotels for these dates', 'Hotels für diese Daten', 'Ver hoteles en estas fechas', 'Отели на эти даты')} ›</a>
+            </p>
           )}
           {fl === null ? (
             <div className="vz-live-skel" aria-hidden="true"><i /><i /><i /></div>
@@ -585,6 +594,19 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
           ))}
         </div>
         <PlaceQ code={code} id={`vz-hq-${code}`} onPick={setHotelArea} />
+        {trip.from !== code && fromIata && toIata && !calPicked && (
+          <button
+            type="button"
+            className="vz-hq-cheap"
+            onClick={() => {
+              setCalOpen(true);
+              document.getElementById('bk-flight')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }}
+          >
+            <Icon name="cal" size={16} duo={false} />
+            {l('Tarihin esnek mi? Uçuşun en ucuz olduğu günleri seç, otel o tarihlerle açılsın', 'Flexible dates? Pick the cheapest flight days and hotels will open with them', 'Flexibel? Wähle die günstigsten Flugtage, Hotels öffnen mit diesen Daten', '¿Fechas flexibles? Elige los días de vuelo más baratos y los hoteles se abrirán con ellas', 'Гибкие даты? Выберите самые дешёвые дни перелёта — отели откроются на них')}
+          </button>
+        )}
         {!hotelLive ? (
           <>
             <div className="vz-hq">

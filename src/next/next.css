@@ -1546,3 +1546,10 @@ button.vz-tb-f { cursor: pointer; }
 .vz-hb .vz-tb-f input:focus, .vz-hb .vz-tb-f select:focus { outline: none; box-shadow: none; }
 
 .vz-bk-cta .vz-ad, .vz-hb-go .vz-ad { background: rgba(0, 0, 0, 0.22); color: #fff; }
+.vz-fl-picked { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; margin: 0 0 12px; padding: 10px 14px; border-radius: 12px; background: var(--rd-ok-soft, #e3f3e8); color: var(--rd-ok, #17714a); font-size: 14px; font-weight: 600; }
+.vz-fl-picked span { flex: 1 1 220px; color: var(--rd-fg); font-weight: 500; }
+.vz-fl-picked a { color: var(--rd-sea-ink, #0b7287); font-weight: 700; text-decoration: underline; text-underline-offset: 2px; }
+.vz-hq-cheap { display: flex; align-items: center; gap: 8px; width: 100%; margin: 0 0 12px; padding: 10px 14px; border: 1px dashed var(--rd-sea, #0c809a); border-radius: 12px; background: transparent; color: var(--rd-sea-ink, #0b7287); font: inherit; font-size: 14px; font-weight: 600; text-align: left; cursor: pointer; }
+.vz-hq-cheap:hover { background: var(--rd-sea-soft, #e3f3f6); }
+html.dark .vz-fl-picked { background: rgba(23, 113, 74, 0.18); color: #7fd3a8; }
+html.dark .vz-hq-cheap { color: var(--rd-sea); }
