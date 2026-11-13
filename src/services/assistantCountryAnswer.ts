@@ -11,6 +11,8 @@ import { GEO_DATA } from '../data/geoData';
 import { capitalName } from '../data/capitalNames';
 import { advisoryAgencyName, advisoryLabel } from '../data/officialAdvisoryLabels';
 import { topicPartner } from './assistantCommerce';
+import { INFO } from '../data/passportData';
+import { GUIDE_LABELS } from '../data/guideLinks';
 
 type Lang = 'tr' | 'en' | 'de' | 'es' | 'ru';
 type Topic = 'visa' | 'id' | 'safety' | 'sos' | 'plug' | 'water' | 'tip' | 'taxi' | 'money' | 'season' | 'budget' | 'esim' | 'vat' | 'food' | 'route' | 'places' | 'language' | 'scam';
@@ -140,7 +142,10 @@ export async function answerCountryQuestion(
           out.push(T.home[lang]);
         } else if (item) {
           const stay = getStayDurationText(item.v, item.cat, lang as never);
-          out.push(generateDirectAnswerSnippet(name, P, item.cat, stay, item.id, lang as never));
+          const det = INFO[`${passport}-${code}`];
+          const note = det ? (lang === 'tr' ? det.n : lang === 'de' ? det.nDe || det.nEn || det.n : det.nEn || det.n) : '';
+          // Doğrulanmış özel not varsa (ör. Karadağ 1 Kasım 2026) genel şablon yerine onu ver
+          out.push(note || generateDirectAnswerSnippet(name, P, item.cat, stay, item.id, lang as never));
           if (passport === 'TR' && (t === 'id' || item.id)) out.push(item.id ? L('idY') : L('idN'));
         }
         if (overview) {
@@ -293,6 +298,12 @@ export async function answerCountryQuestion(
   // Konuya uygun tek ortaklık önerisi (abartmadan): vize gerekiyorsa başvuru, gezi sorusunda tur, güvenlikte sigorta…
   const partner = topicPartner(topics, code, lang, passport, city);
   if (partner) actions.push(partner);
+  // Bu ülke ve pasaport için güncel rehber varsa (ör. Karadağ vizesi 2026) onu da öner
+  if (topics.includes('visa') || topics.includes('id')) {
+    const { guidesForCountry } = await import('../data/guides');
+    const g = guidesForCountry(code, lang, passport).find((x) => (GUIDE_LABELS[lang] || {})[x]);
+    if (g) actions.splice(1, 0, { id: `guide-${g}`, type: 'goto', path: `/${lang}/info/${g}`, label: GUIDE_LABELS[lang][g].t, accentTone: 'teal' });
+  }
   if (topics.includes('tip')) actions.push({ id: 'tool-tipping', type: 'open_tool', toolKey: 'tipping', label: L('tipBtn'), accentTone: 'amber' });
   if (topics.includes('plug')) actions.push({ id: 'tool-packing', type: 'open_tool', toolKey: 'packing', label: L('packBtn'), accentTone: 'sky' });
 

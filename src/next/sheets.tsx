@@ -466,6 +466,7 @@ export const AssistantSheet: React.FC<{
     }
     else if (a.type === 'open_tile' && a.tab && a.tile) { onClose(); onOpenTool(a.tab, a.tile); }
     else if (a.type === 'goto' && a.path === 'tours') { onClose(); window.location.assign(toursPath(language)); }
+    else if (a.type === 'goto' && a.path?.startsWith('/')) { onClose(); window.location.assign(a.path); }
     else if (a.type === 'switch_tab' && a.tabKey) { onClose(); onSelectTab((a.tabKey === 'consular' ? 'nomad' : a.tabKey) as 'explore'); }
     else if (a.type === 'open_tool') {
       onClose();

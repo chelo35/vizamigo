@@ -308,11 +308,11 @@ export const INFO: Record<string, DetailedInfo> = {
     d: 'Kasım 2026'
   },
   'TR-ME': {
-    n: 'Karadağ, Türk vatandaşları için vizesiz rejimi sonlandırdı: 1 Kasım 2026 itibarıyla önceden konsolosluk vizesi zorunludur. Geçerli çok girişli Schengen/ABD/İngiltere vizesi olanlar muaf tutulabilmektedir.',
-    nEn: 'Montenegro has ended visa-free entry for Turkish passport holders: since Nov 1, 2026 an advance consular visa is required. Valid multi-entry Schengen/US/UK visa holders may be exempt.',
-    nDe: 'Montenegro hat die Visumfreiheit für türkische Staatsbürger beendet: Seit dem 1. November 2026 ist vorab ein Konsularvisum erforderlich. Inhaber gültiger Mehrfach-Schengen-/US-/UK-Visa können befreit sein.',
-    u: 'https://www.gov.me',
-    h: 'gov.me',
+    n: 'Karadağ, 1 Kasım 2026 itibarıyla bordo pasaportlu Türk vatandaşlarından önceden vize istiyor. Geçerli çok girişli Schengen, ABD, İngiltere veya İrlanda vizesi ya da oturum izni olanlar 30 güne kadar vizesiz girebilir. Yeşil, gri ve siyah pasaport sahipleri vizeden muaftır. Başvuru Karadağ temsilciliğine veya VFS Global merkezine yapılır; karar genelde 10 gün içinde çıkar.',
+    nEn: 'Since Nov 1, 2026 Montenegro requires an advance visa from Turkish ordinary passport holders. Holders of a valid multiple-entry Schengen, US, UK or Irish visa or residence permit may enter visa-free for up to 30 days. Diplomatic, special and service passports are exempt. Apply at a Montenegrin mission or VFS Global; a decision usually takes about 10 days.',
+    nDe: 'Seit dem 1. November 2026 verlangt Montenegro von Inhabern regulärer türkischer Pässe vorab ein Visum. Wer ein gültiges Mehrfach-Schengen-, US-, UK- oder Irland-Visum bzw. eine Aufenthaltserlaubnis hat, darf bis zu 30 Tage visumfrei einreisen. Diplomaten-, Sonder- und Dienstpässe sind befreit. Antrag bei einer montenegrinischen Vertretung oder VFS Global; Entscheidung meist in etwa 10 Tagen.',
+    u: 'https://www.mfa.gov.tr/karadag-seyahat-edecek-turk-vatandaslarinin-dikkatine.en.mfa',
+    h: 'mfa.gov.tr',
     d: 'Kasım 2026'
   },
   'TR-TH': {
