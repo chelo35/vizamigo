@@ -336,7 +336,7 @@ async function askAI(q: string, r: AssistantMessage, prev: AssistantMessage[], p
         passport: getCountryName(passport, 'en'),
         today: new Date().toISOString().slice(0, 10),
         facts: r.text,
-        buttons: (r.actions || []).map((a) => stripEmoji(a.label) + (a.type === 'affiliate' ? ' (partner link)' : '')),
+        buttons: (r.actions || []).map((a) => stripEmoji(a.label) + (a.type === 'affiliate' ? ' [partner]' : '')),
         features: siteFeatures(lang).map((f) => f.text.replace(/\*\*/g, '')),
         history: prev.slice(-8).map((m) => ({ role: m.sender === 'user' ? 'user' : 'assistant', content: m.text }))
       })
