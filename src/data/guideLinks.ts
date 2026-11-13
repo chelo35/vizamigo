@@ -1,7 +1,11 @@
 // Ana sayfa ve menü için hafif rehber listesi (tam metin guides.ts içinde, ayrı yüklenir)
-export const GUIDE_LINKS: { id: string; icon: string }[] = [{"id": "schengen_by_country", "icon": "doc"}, {"id": "schengen_india", "icon": "doc"}, {"id": "canada_eta_mx", "icon": "passport"}, {"id": "schengen_latam", "icon": "doc"}, {"id": "turkey_id_de", "icon": "user"}, {"id": "egypt_visa_de", "icon": "passport"}, {"id": "thailand_de", "icon": "passport"}, {"id": "egypt_visa_ru", "icon": "passport"}, {"id": "uae_ru", "icon": "passport"}, {"id": "japan_visa_india", "icon": "passport"}, {"id": "vietnam_visa_india", "icon": "passport"}, {"id": "us_visa", "icon": "passport"}, {"id": "uk_visa_india", "icon": "passport"}, {"id": "dubai_visa_india", "icon": "passport"}, {"id": "thailand_india", "icon": "passport"}, {"id": "visa_free_ru", "icon": "globe"}, {"id": "visa_fees", "icon": "wallet"}, {"id": "visa_appointments", "icon": "cal"}, {"id": "visa_free_tr", "icon": "globe"}, {"id": "id_card_travel", "icon": "user"}, {"id": "schengen_documents", "icon": "doc"}, {"id": "etias", "icon": "passport"}, {"id": "uk_eta", "icon": "passport"}, {"id": "esta", "icon": "passport"}, {"id": "greek_islands_visa", "icon": "ship"}];
+export const GUIDE_LINKS: { id: string; icon: string }[] = [{"id": "schengen_by_country", "icon": "doc"}, {"id": "schengen_india", "icon": "doc"}, {"id": "canada_eta_mx", "icon": "passport"}, {"id": "schengen_latam", "icon": "doc"}, {"id": "turkey_id_de", "icon": "user"}, {"id": "egypt_visa_de", "icon": "passport"}, {"id": "thailand_de", "icon": "passport"}, {"id": "egypt_visa_ru", "icon": "passport"}, {"id": "uae_ru", "icon": "passport"}, {"id": "japan_visa_india", "icon": "passport"}, {"id": "vietnam_visa_india", "icon": "passport"}, {"id": "us_visa", "icon": "passport"}, {"id": "uk_visa_india", "icon": "passport"}, {"id": "dubai_visa_india", "icon": "passport"}, {"id": "thailand_india", "icon": "passport"}, {"id": "visa_free_ru", "icon": "globe"}, {"id": "visa_fees", "icon": "wallet"}, {"id": "visa_appointments", "icon": "cal"}, {"id": "visa_free_tr", "icon": "globe"}, {"id": "id_card_travel", "icon": "user"}, {"id": "schengen_documents", "icon": "doc"}, {"id": "ees", "icon": "passport"}, {"id": "etias", "icon": "passport"}, {"id": "uk_eta", "icon": "passport"}, {"id": "esta", "icon": "passport"}, {"id": "greek_islands_visa", "icon": "ship"}];
 export const GUIDE_LABELS: Record<string, Record<string, { t: string; d: string }>> = {
  "tr": {
+  "ees": {
+   "t": "EES sorgulama: Giriş-Çıkış Sistemi",
+   "d": "Pasaport damgası yerine parmak izi ve fotoğraf; Schengen'de kaç gün kaldığını resmî araçla sorgulama."
+  },
   "schengen_by_country": {
    "t": "Ülke ülke Schengen vizesi",
    "d": "Yunanistan, İspanya, Almanya, İtalya, Fransa, Hollanda, Danimarka: merkez, ücret, evrak ve bekleme."
@@ -48,6 +52,10 @@ export const GUIDE_LABELS: Record<string, Record<string, { t: string; d: string 
   }
  },
  "en": {
+  "ees": {
+   "t": "EES check: Entry/Exit System",
+   "d": "Fingerprints and photo instead of stamps since 10 April 2026, who is exempt, and the official tool for days left."
+  },
   "schengen_india": {
    "t": "Schengen visa for Indians",
    "d": "€90 fee, VFS tips, cascade rule for 2- and 5-year visas."
@@ -62,7 +70,7 @@ export const GUIDE_LABELS: Record<string, Record<string, { t: string; d: string 
   },
   "uk_visa_india": {
    "t": "UK visa for Indians",
-   "d": "\u00a3135 fee, 3-week processing, priority options and documents."
+   "d": "£135 fee, 3-week processing, priority options and documents."
   },
   "dubai_visa_india": {
    "t": "Dubai visa for Indians",
@@ -118,6 +126,10 @@ export const GUIDE_LABELS: Record<string, Record<string, { t: string; d: string 
   }
  },
  "de": {
+  "ees": {
+   "t": "EES: Einreise-/Ausreisesystem",
+   "d": "Fingerabdrücke und Foto statt Stempel seit 10. April 2026, wer betroffen ist und das Tool für die Resttage."
+  },
   "turkey_id_de": {
    "t": "Türkei mit Personalausweis",
    "d": "Einreise mit Ausweis, 90 Tage, Kinder und Doppelstaatler."

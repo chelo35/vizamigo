@@ -13,13 +13,13 @@ import scDe from './guides/schengen.de.json';
 import scEs from './guides/schengen.es.json';
 import scRu from './guides/schengen.ru.json';
 
-export type GuideId = 'schengen_documents' | 'etias' | 'uk_eta' | 'esta' | 'greek_islands_visa' | 'visa_free_tr' | 'id_card_travel' | 'visa_fees' | 'visa_appointments' | 'visa_free_ru' | 'us_visa' | 'uk_visa_india' | 'dubai_visa_india' | 'thailand_india' | 'schengen_by_country' | 'schengen_india' | 'japan_visa_india' | 'vietnam_visa_india' | 'egypt_visa_ru' | 'uae_ru' | 'turkey_id_de' | 'egypt_visa_de' | 'thailand_de' | 'canada_eta_mx' | 'schengen_latam';
+export type GuideId = 'schengen_documents' | 'etias' | 'uk_eta' | 'esta' | 'greek_islands_visa' | 'visa_free_tr' | 'id_card_travel' | 'visa_fees' | 'visa_appointments' | 'visa_free_ru' | 'us_visa' | 'uk_visa_india' | 'dubai_visa_india' | 'thailand_india' | 'schengen_by_country' | 'schengen_india' | 'japan_visa_india' | 'vietnam_visa_india' | 'egypt_visa_ru' | 'uae_ru' | 'turkey_id_de' | 'egypt_visa_de' | 'thailand_de' | 'canada_eta_mx' | 'schengen_latam' | 'ees';
 export interface GuideSection { h: string; p?: string[]; list?: string[]; table?: { head: string[]; rows: string[][] } }
 export interface ChecklistGroup { id: string; label: string; docs: string[] }
 export interface GuideChecklist { title: string; statusLabel: string; purposeLabel: string; commonTitle: string; common: string[]; statuses: ChecklistGroup[]; purposes: ChecklistGroup[]; note: string; print: string }
 export interface GuideText { title: string; short: string; metaDesc: string; answer: string; sections: GuideSection[]; faq: { q: string; a: string }[]; checklist?: GuideChecklist }
 
-export const GUIDE_IDS: GuideId[] = ['schengen_by_country', 'schengen_india', 'canada_eta_mx', 'schengen_latam', 'turkey_id_de', 'egypt_visa_de', 'thailand_de', 'egypt_visa_ru', 'uae_ru', 'japan_visa_india', 'vietnam_visa_india', 'us_visa', 'uk_visa_india', 'dubai_visa_india', 'thailand_india', 'visa_free_ru', 'visa_fees', 'visa_appointments', 'visa_free_tr', 'id_card_travel', 'schengen_documents', 'etias', 'uk_eta', 'esta', 'greek_islands_visa'];
+export const GUIDE_IDS: GuideId[] = ['schengen_by_country', 'schengen_india', 'canada_eta_mx', 'schengen_latam', 'turkey_id_de', 'egypt_visa_de', 'thailand_de', 'egypt_visa_ru', 'uae_ru', 'japan_visa_india', 'vietnam_visa_india', 'us_visa', 'uk_visa_india', 'dubai_visa_india', 'thailand_india', 'visa_free_ru', 'visa_fees', 'visa_appointments', 'visa_free_tr', 'id_card_travel', 'schengen_documents', 'ees', 'etias', 'uk_eta', 'esta', 'greek_islands_visa'];
 /** Ülke listesi gösteren rehberler: listeyi canlı vize verisinden üretir (elle güncellemek gerekmez). */
 export type GuideListGroup = 'id' | 'free' | 'voa' | 'evisa' | 'eta';
 
@@ -292,6 +292,19 @@ export const GUIDE_META: Record<GuideId, { checked: string; icon: string; countr
     sources: [
       { label: 'European Commission: Applying for a Schengen visa', url: 'https://home-affairs.ec.europa.eu/policies/schengen-borders-and-visa/visa-policy/applying-schengen-visa_en' },
       { label: 'EU Delegation to Türkiye: cascade rules (15 July 2025)', url: 'https://www.eeas.europa.eu/delegations/t%C3%BCrkiye/more-favourable-visa-rules-turkish-citizens-applying-schengen-visas_en' }
+    ]
+  },
+  ees: {
+    checked: '2026-11-13',
+    icon: 'passport',
+    countries: ['AT', 'BE', 'BG', 'HR', 'CZ', 'DK', 'EE', 'FI', 'FR', 'DE', 'GR', 'HU', 'IS', 'IT', 'LV', 'LI', 'LT', 'LU', 'MT', 'NL', 'NO', 'PL', 'PT', 'RO', 'SK', 'SI', 'ES', 'SE', 'CH'],
+    langs: ['tr', 'en', 'de'],
+    sources: [
+      { label: 'European Union: What is the EES?', url: 'https://travel-europe.europa.eu/ees/what-is-the-ees' },
+      { label: 'European Union: How does the EES work?', url: 'https://travel-europe.europa.eu/ees/ltr/how-does-the-ees-work' },
+      { label: 'European Union: Check how long you can stay (official EES tool)', url: 'https://travel-europe.europa.eu/ees/check-how-long-you-can-stay' },
+      { label: 'European Union: To whom does the EES not apply?', url: 'https://travel-europe.europa.eu/ees/to-whom-does-ees-not-apply' },
+      { label: 'European Union: Data held by the EES', url: 'https://travel-europe.europa.eu/ees/data-held-by-ees' }
     ]
   },
   etias: {

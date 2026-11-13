@@ -24,6 +24,7 @@ const PLAN: Partial<Record<GuideId, { place: string; to?: string; picks: Pick[] 
   uk_visa_india: { place: 'London', to: 'LON', picks: VISA },
   esta: { place: 'New York', to: 'NYC', picks: ['flights', 'hotel', 'insurance', 'esim'] },
   uk_eta: { place: 'London', to: 'LON', picks: ['flights', 'hotel', 'insurance', 'esim'] },
+  ees: { place: 'Paris', to: 'PAR', picks: ['flights', 'hotel', 'insurance', 'esim'] },
   etias: { place: 'Paris', to: 'PAR', picks: ['flights', 'hotel', 'insurance', 'esim'] },
   greek_islands_visa: { place: 'Rhodes, Greece', picks: ['hotel', 'tours', 'insurance', 'esim'] },
   dubai_visa_india: { place: 'Dubai', to: 'DXB', picks: ['hotel', 'flights', 'transfer', 'tours', 'esim', 'insurance'] },

@@ -1,4 +1,69 @@
 {
+ "ees": {
+  "title": "EES nedir, kaç gün kaldı nasıl sorgulanır? AB Giriş-Çıkış Sistemi",
+  "short": "EES",
+  "metaDesc": "AB Giriş-Çıkış Sistemi (EES) 10 Nisan 2026'dan beri Schengen dış sınırlarında pasaport damgasının yerini aldı: yüz fotoğrafı ve parmak izi, kimler muaf ve kalan günleri gösteren resmî EES sorgulama aracı.",
+  "answer": "Giriş-Çıkış Sistemi (EES), AB dışından kısa süreli gelen yolcuların sınır geçişlerini dijital olarak kaydeden sistemdir. 10 Nisan 2026'dan beri kullanan 29 Avrupa ülkesinin dış sınırlarında tam olarak çalışıyor: ilk girişte yüz fotoğrafınız ve/veya parmak izleriniz alınır, pasaportunuza artık damga basılmaz. Vizeyle de vizesiz de gitseniz uygulanır; ayrıca başvuru ya da ücret yoktur. Resmî çevrim içi araçla 180 günde 90 günlük hakkınızdan kaç gün kaldığını sorgulayabilirsiniz.",
+  "sections": [
+   {
+    "h": "EES'e kimler kaydedilir?",
+    "p": [
+     "EES'i kullanan ülkelere kısa süreli (herhangi bir 180 günde en fazla 90 gün) giden tüm AB dışı vatandaşlar: Schengen vizesiyle gidenler de vizesiz girenler de. Türk vatandaşları Schengen vizesiyle girdiğinde de kaydedilir. 29 ülke şunlardır: Avusturya, Belçika, Bulgaristan, Hırvatistan, Çekya, Danimarka, Estonya, Finlandiya, Fransa, Almanya, Yunanistan, Macaristan, İzlanda, İtalya, Letonya, Lihtenştayn, Litvanya, Lüksemburg, Malta, Hollanda, Norveç, Polonya, Portekiz, Romanya, Slovakya, Slovenya, İspanya, İsveç ve İsviçre.",
+     "Kaydedilmeyenler: bu ülkelerin, Kıbrıs Cumhuriyeti'nin ve İrlanda'nın vatandaşları; oturum izni veya uzun süreli ulusal (D) vize sahipleri; Andorra, Monako ve San Marino vatandaşları ile Vatikan pasaportu sahipleri; oturum kartı olan ve AB vatandaşının aile üyesi olan AB dışı vatandaşlar. Kıbrıs Cumhuriyeti ve İrlanda'da pasaportlar elle damgalanmaya devam ediyor."
+    ]
+   },
+   {
+    "h": "Sınırda ne oluyor?",
+    "list": [
+     "EES başladıktan sonraki ilk geçişinizde kişisel bilgileriniz alınır, yüzünüzün fotoğrafı çekilir ve/veya parmak izleriniz taranır; dijital bir dosya açılır. Pasaportunuza damga basılmaz.",
+     "Bazı sınır kapılarındaki self-servis cihazlarda veya ülkenin sunduğu mobil uygulamada bilgilerinizi önceden girerseniz işlem hızlanır; yine de polis memuruyla görüşürsünüz.",
+     "Sonraki geçişlerde yalnızca fotoğraf ve/veya parmak iziniz doğrulanır. Biyometrik pasaportla varsa otomatik geçiş kapılarını kullanabilirsiniz.",
+     "Parmak izi veya fotoğraf vermeyi reddederseniz girişiniz reddedilir.",
+     "Diğer giriş şartları (geçerli pasaport, gerekiyorsa vize, yeterli para, konaklama, dönüş bileti) aynen geçerlidir."
+    ]
+   },
+   {
+    "h": "EES sorgulama: kaç günüm kaldı?",
+    "p": [
+     "AB'nin resmî aracı travel-europe.europa.eu/ees/check-how-long-you-can-stay adresinde ücretsizdir. Belge türü ve numarası, belgeyi veren ülkenin üç harfli kodu (Türkiye için TUR), gideceğiniz ülke ve durumunuza göre planlanan giriş ve/veya çıkış tarihini girersiniz; araç girişinizin uygun olup olmadığını ('OK' / 'not OK') ve kalan gün sayınızı gösterir.",
+     "Hesaba 10 Nisan 2026'dan önce başlayan Schengen kalışları dahil edilmez; o tarihten önce bölgedeyseniz bu günleri kendiniz ekleyin (Schengen 90/180 gün sayacımız yardımcı olur). Kalan gününüzü sınırdaki polise de sorabilirsiniz."
+    ]
+   },
+   {
+    "h": "Bilgiler ne kadar saklanır, vize süresini aşarsam?",
+    "list": [
+     "Giriş, çıkış ve giriş reddi kayıtları: 3 yıl.",
+     "Kişisel dosyanız: son çıkışınızdan itibaren 3 yıl 1 gün.",
+     "Çıkış kaydı yoksa: izinli kalış sürenizin bitiminden itibaren 5 yıl.",
+     "İzin verilen süreden fazla kalırsanız sistem sizi otomatik olarak 'süre aşımı yapan' listesine ekler; sınır, göç ve vize makamları bunu görür ve sonraki vize başvurularınızı etkileyebilir."
+    ]
+   },
+   {
+    "h": "EES ile ETIAS farklıdır",
+    "p": [
+     "EES yalnızca sınır geçişlerini kaydeder. ETIAS ise vizesiz yolcular için ayrı bir çevrim içi seyahat iznidir ve henüz çalışmıyor; güncel durum için ETIAS rehberimize bakın. Schengen vizesiyle gidenler ETIAS'a başvurmaz."
+    ]
+   }
+  ],
+  "faq": [
+   {
+    "q": "EES için başvuru yapmak veya ücret ödemek gerekiyor mu?",
+    "a": "Hayır. Başvuru da ücret de yoktur; EES'i kullanan bir ülkeye ilk girişinizde sınırda otomatik olarak kaydedilirsiniz."
+   },
+   {
+    "q": "EES vize sorgulama nasıl yapılır, Schengen'de kaç günüm kaldı?",
+    "a": "travel-europe.europa.eu/ees/check-how-long-you-can-stay adresindeki resmî araca pasaport numaranızı, TUR ülke kodunu ve gideceğiniz ülkeyi girin; 'OK' veya 'not OK' sonucu ile kalan gün sayınızı gösterir. 10 Nisan 2026'dan önce başlayan kalışlar hesaba katılmaz."
+   },
+   {
+    "q": "Schengen vizesiyle gidenler de EES'e kaydedilir mi?",
+    "a": "Evet. Vizeli ya da vizesiz tüm AB dışı kısa süreli yolcular kaydedilir. Oturum izni veya uzun süreli (D) vize sahipleri kaydedilmez."
+   },
+   {
+    "q": "Pasaporta hâlâ damga basılıyor mu?",
+    "a": "EES'i kullanan 29 ülkede hayır; giriş ve çıkışlar dijital olarak kaydediliyor. Kıbrıs Cumhuriyeti ve İrlanda'da pasaportlar elle damgalanmaya devam ediyor."
+   }
+  ]
+ },
  "etias": {
   "title": "ETIAS nedir? Avrupa'nın yeni seyahat izni: başlangıç tarihi belli değil",
   "short": "ETIAS",

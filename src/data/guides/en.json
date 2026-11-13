@@ -1,4 +1,69 @@
 {
+ "ees": {
+  "title": "EES check: how long can you stay in Schengen? The Entry/Exit System explained",
+  "short": "EES",
+  "metaDesc": "The EU Entry/Exit System (EES) has replaced passport stamps at Schengen external borders since 10 April 2026: photo and fingerprints, who is exempt, and the official tool to check how many days you have left.",
+  "answer": "The Entry/Exit System (EES) is the EU's digital register of non-EU travellers on short stays. It has been fully running at the external borders of the 29 European countries that use it since 10 April 2026: on your first crossing your face photo and/or fingerprints are recorded and your passport is no longer stamped. It applies whether or not you need a visa, there is nothing to apply or pay for, and an official online tool shows how many of your 90 days in any 180 days you have left.",
+  "sections": [
+   {
+    "h": "Who is registered in the EES?",
+    "p": [
+     "Every non-EU national travelling for a short stay (up to 90 days in any 180-day period) to the countries using the EES, both travellers who need a Schengen visa and visa-exempt travellers such as US, UK or Mexican citizens. The 29 countries are the Schengen states: Austria, Belgium, Bulgaria, Croatia, Czechia, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Iceland, Italy, Latvia, Liechtenstein, Lithuania, Luxembourg, Malta, the Netherlands, Norway, Poland, Portugal, Romania, Slovakia, Slovenia, Spain, Sweden and Switzerland.",
+     "Not registered: nationals of these countries and of Cyprus and Ireland; holders of residence permits and long-stay (D) visas; nationals of Andorra, Monaco and San Marino and holders of Vatican passports; non-EU family members of EU citizens who hold a residence card. In Cyprus and Ireland passports are still stamped by hand."
+    ]
+   },
+   {
+    "h": "What happens at the border",
+    "list": [
+     "First crossing since the EES started: you give your personal data, officers take a photo of your face and/or scan your fingerprints, and a digital file is created. Your passport is not stamped.",
+     "It can be quicker if you register some data in advance at a self-service kiosk at the border or in a mobile app, where the country offers one; you still meet a border officer.",
+     "Later crossings: your photo and/or fingerprints are only verified. With a biometric passport you may be able to use self-service gates.",
+     "If you refuse to give your fingerprints or photo, you are refused entry.",
+     "All other entry conditions (valid passport, visa if required, money, accommodation, return ticket) still apply."
+    ]
+   },
+   {
+    "h": "EES check: how many days do you have left?",
+    "p": [
+     "The EU's official online tool at travel-europe.europa.eu/ees/check-how-long-you-can-stay tells you whether your entry is allowed ('OK' or 'not OK') and how many days of your authorised stay remain. You enter your travel document type and number, the three-letter code of the issuing country (for example USA, GBR, IND, TUR), the country you are visiting and, depending on your case, your planned entry and/or exit date. It is free.",
+     "The count does not include any time spent in the Schengen area that began before 10 April 2026, so if you were there earlier, add those days yourself (our Schengen 90/180 calculator helps). You can also ask the border officer how many days you have left."
+    ]
+   },
+   {
+    "h": "How long is your data kept and what about overstays?",
+    "list": [
+     "Records of entries, exits and refusals: 3 years.",
+     "Your personal file: 3 years and 1 day after your last exit.",
+     "If no exit is recorded: 5 years from the end of your authorised stay.",
+     "If you stay longer than allowed, the system automatically flags you as an overstayer, and border, immigration and visa authorities can see it, which can affect future visas and entries."
+    ]
+   },
+   {
+    "h": "EES is not ETIAS",
+    "p": [
+     "The EES only records border crossings. ETIAS is a separate online travel authorisation for visa-exempt travellers that is not in operation yet; see our ETIAS guide for its status."
+    ]
+   }
+  ],
+  "faq": [
+   {
+    "q": "Do I have to apply or pay for the EES?",
+    "a": "No. There is no application and no fee; you are registered automatically at the border the first time you enter a country using the EES."
+   },
+   {
+    "q": "How do I check how long I can stay in Schengen with the EES?",
+    "a": "Use the official tool at travel-europe.europa.eu/ees/check-how-long-you-can-stay with your passport number, issuing country and destination; it shows 'OK' or 'not OK' and your remaining days. Days from stays that began before 10 April 2026 are not included."
+   },
+   {
+    "q": "Are passports still stamped?",
+    "a": "Not in the 29 countries using the EES; your entries and exits are recorded digitally. Cyprus and Ireland still stamp passports by hand."
+   },
+   {
+    "q": "Does the EES apply if I have a Schengen visa?",
+    "a": "Yes. It applies to all non-EU short-stay travellers, with or without a visa. Holders of residence permits or long-stay visas are not registered."
+   }
+  ]
+ },
  "etias": {
   "title": "What is ETIAS? Europe's new travel authorisation: no start date yet",
   "short": "ETIAS",

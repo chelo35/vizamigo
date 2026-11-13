@@ -1,4 +1,69 @@
 {
+ "ees": {
+  "title": "EES: Was ist das Einreise-/Ausreisesystem und wie prüfe ich meine Resttage?",
+  "short": "EES",
+  "metaDesc": "Das EU-Einreise-/Ausreisesystem (EES) ersetzt seit 10. April 2026 an den Schengen-Außengrenzen den Passstempel: Gesichtsbild und Fingerabdrücke, wer ausgenommen ist und das offizielle Tool für die verbleibenden Tage.",
+  "answer": "Das Einreise-/Ausreisesystem (EES) ist das digitale Grenzregister der EU für Nicht-EU-Bürger auf Kurzaufenthalt. Seit dem 10. April 2026 läuft es vollständig an den Außengrenzen der 29 europäischen Länder, die es nutzen: Beim ersten Grenzübertritt werden Gesichtsbild und/oder Fingerabdrücke erfasst, Pässe werden nicht mehr gestempelt. Für Deutsche, Österreicher und Schweizer gilt das EES nicht. Für Gäste aus Drittstaaten gibt es weder Antrag noch Gebühr, und ein offizielles Online-Tool zeigt die verbleibenden Tage der 90/180-Regel.",
+  "sections": [
+   {
+    "h": "Wer wird im EES erfasst?",
+    "p": [
+     "Alle Nicht-EU-Bürger, die für einen Kurzaufenthalt (bis 90 Tage in 180 Tagen) in die EES-Länder reisen, mit oder ohne Visum, also etwa auch türkische Staatsangehörige mit Schengen-Visum oder US-Bürger. Die 29 Länder: Belgien, Bulgarien, Dänemark, Deutschland, Estland, Finnland, Frankreich, Griechenland, Island, Italien, Kroatien, Lettland, Liechtenstein, Litauen, Luxemburg, Malta, Niederlande, Norwegen, Österreich, Polen, Portugal, Rumänien, Schweden, Schweiz, Slowakei, Slowenien, Spanien, Tschechien und Ungarn.",
+     "Nicht erfasst werden: Staatsangehörige dieser Länder sowie Zyperns und Irlands; Inhaber von Aufenthaltstiteln und nationalen D-Visa; Staatsangehörige von Andorra, Monaco und San Marino sowie Inhaber vatikanischer Pässe; Drittstaatsangehörige mit Aufenthaltskarte als Familienangehörige von EU-Bürgern. In Zypern und Irland wird weiterhin von Hand gestempelt."
+    ]
+   },
+   {
+    "h": "Ablauf an der Grenze",
+    "list": [
+     "Erster Grenzübertritt seit dem EES-Start: Personendaten, Gesichtsbild und/oder Fingerabdrücke werden erfasst, ein digitales Dossier wird angelegt. Der Pass wird nicht gestempelt.",
+     "Schneller geht es, wenn man Daten vorab an einem Self-Service-Terminal oder in einer App erfasst, sofern das Land sie anbietet; ein Grenzbeamter prüft trotzdem.",
+     "Bei späteren Reisen werden Bild und/oder Fingerabdrücke nur noch abgeglichen; mit biometrischem Pass sind oft Self-Service-Schleusen möglich.",
+     "Wer Fingerabdrücke oder Foto verweigert, wird an der Grenze zurückgewiesen.",
+     "Alle übrigen Einreisevoraussetzungen (gültiger Pass, ggf. Visum, ausreichende Mittel, Unterkunft, Rückflug) gelten weiter."
+    ]
+   },
+   {
+    "h": "EES-Check: Wie viele Tage bleiben?",
+    "p": [
+     "Das offizielle, kostenlose EU-Tool unter travel-europe.europa.eu/ees/check-how-long-you-can-stay zeigt, ob die Einreise möglich ist ('OK' oder 'not OK') und wie viele Tage des erlaubten Aufenthalts verbleiben. Einzugeben sind Art und Nummer des Reisedokuments, der Dreibuchstabencode des Ausstellerstaats (z. B. TUR, USA), das Zielland und je nach Fall das geplante Ein- und/oder Ausreisedatum.",
+     "Aufenthalte, die vor dem 10. April 2026 begonnen haben, zählt das Tool nicht mit; solche Tage muss man selbst hinzurechnen (unser Schengen-Rechner 90/180 hilft). Auch Grenzbeamte geben Auskunft über die Resttage."
+    ]
+   },
+   {
+    "h": "Speicherdauer und Überziehen",
+    "list": [
+     "Ein- und Ausreisen sowie Einreiseverweigerungen: 3 Jahre.",
+     "Persönliches Dossier: 3 Jahre und 1 Tag nach der letzten Ausreise.",
+     "Ohne erfasste Ausreise: 5 Jahre ab Ende des erlaubten Aufenthalts.",
+     "Wer zu lange bleibt, wird automatisch als 'Overstayer' markiert; Grenz-, Ausländer- und Visabehörden sehen das, was spätere Visa und Einreisen erschweren kann."
+    ]
+   },
+   {
+    "h": "EES ist nicht ETIAS",
+    "p": [
+     "Das EES erfasst nur Grenzübertritte. ETIAS ist eine eigene Online-Reisegenehmigung für visumfreie Drittstaatsangehörige und noch nicht in Betrieb; zum Stand siehe unseren ETIAS-Ratgeber."
+    ]
+   }
+  ],
+  "faq": [
+   {
+    "q": "Betrifft das EES Deutsche?",
+    "a": "Nein. Staatsangehörige der EU, Islands, Liechtensteins, Norwegens und der Schweiz werden nicht im EES erfasst. Es gilt nur für Nicht-EU-Bürger auf Kurzaufenthalt."
+   },
+   {
+    "q": "Muss man das EES beantragen oder bezahlen?",
+    "a": "Nein. Es gibt keinen Antrag und keine Gebühr; die Registrierung erfolgt automatisch bei der ersten Einreise in ein EES-Land."
+   },
+   {
+    "q": "Wie prüft man mit dem EES die verbleibenden Schengen-Tage?",
+    "a": "Mit dem offiziellen Tool unter travel-europe.europa.eu/ees/check-how-long-you-can-stay: Passnummer, Ausstellerstaat und Zielland eingeben. Es zeigt 'OK' oder 'not OK' und die Resttage; Aufenthalte, die vor dem 10. April 2026 begannen, sind nicht enthalten."
+   },
+   {
+    "q": "Wird der Pass noch gestempelt?",
+    "a": "In den 29 EES-Ländern nicht mehr; Ein- und Ausreisen werden digital erfasst. Zypern und Irland stempeln weiterhin von Hand."
+   }
+  ]
+ },
  "etias": {
   "title": "Was ist ETIAS? Europas neue Reisegenehmigung: noch kein Starttermin",
   "short": "ETIAS",
