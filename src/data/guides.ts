@@ -13,19 +13,32 @@ import scDe from './guides/schengen.de.json';
 import scEs from './guides/schengen.es.json';
 import scRu from './guides/schengen.ru.json';
 
-export type GuideId = 'schengen_documents' | 'etias' | 'uk_eta' | 'esta' | 'greek_islands_visa' | 'visa_free_tr' | 'id_card_travel' | 'visa_fees' | 'visa_appointments' | 'visa_free_ru' | 'us_visa' | 'uk_visa_india' | 'dubai_visa_india' | 'thailand_india' | 'schengen_by_country' | 'schengen_india' | 'japan_visa_india' | 'vietnam_visa_india' | 'egypt_visa_ru' | 'uae_ru' | 'turkey_id_de' | 'egypt_visa_de' | 'thailand_de' | 'canada_eta_mx' | 'schengen_latam' | 'ees';
+export type GuideId = 'montenegro_visa' | 'schengen_documents' | 'etias' | 'uk_eta' | 'esta' | 'greek_islands_visa' | 'visa_free_tr' | 'id_card_travel' | 'visa_fees' | 'visa_appointments' | 'visa_free_ru' | 'us_visa' | 'uk_visa_india' | 'dubai_visa_india' | 'thailand_india' | 'schengen_by_country' | 'schengen_india' | 'japan_visa_india' | 'vietnam_visa_india' | 'egypt_visa_ru' | 'uae_ru' | 'turkey_id_de' | 'egypt_visa_de' | 'thailand_de' | 'canada_eta_mx' | 'schengen_latam' | 'ees';
 export interface GuideSection { h: string; p?: string[]; list?: string[]; table?: { head: string[]; rows: string[][] } }
 export interface ChecklistGroup { id: string; label: string; docs: string[] }
 export interface GuideChecklist { title: string; statusLabel: string; purposeLabel: string; commonTitle: string; common: string[]; statuses: ChecklistGroup[]; purposes: ChecklistGroup[]; note: string; print: string }
 export interface GuideText { title: string; short: string; metaDesc: string; answer: string; sections: GuideSection[]; faq: { q: string; a: string }[]; checklist?: GuideChecklist }
 
-export const GUIDE_IDS: GuideId[] = ['schengen_by_country', 'schengen_india', 'canada_eta_mx', 'schengen_latam', 'turkey_id_de', 'egypt_visa_de', 'thailand_de', 'egypt_visa_ru', 'uae_ru', 'japan_visa_india', 'vietnam_visa_india', 'us_visa', 'uk_visa_india', 'dubai_visa_india', 'thailand_india', 'visa_free_ru', 'visa_fees', 'visa_appointments', 'visa_free_tr', 'id_card_travel', 'schengen_documents', 'ees', 'etias', 'uk_eta', 'esta', 'greek_islands_visa'];
+export const GUIDE_IDS: GuideId[] = ['montenegro_visa', 'schengen_by_country', 'schengen_india', 'canada_eta_mx', 'schengen_latam', 'turkey_id_de', 'egypt_visa_de', 'thailand_de', 'egypt_visa_ru', 'uae_ru', 'japan_visa_india', 'vietnam_visa_india', 'us_visa', 'uk_visa_india', 'dubai_visa_india', 'thailand_india', 'visa_free_ru', 'visa_fees', 'visa_appointments', 'visa_free_tr', 'id_card_travel', 'schengen_documents', 'ees', 'etias', 'uk_eta', 'esta', 'greek_islands_visa'];
 /** Ülke listesi gösteren rehberler: listeyi canlı vize verisinden üretir (elle güncellemek gerekmez). */
 export type GuideListGroup = 'id' | 'free' | 'voa' | 'evisa' | 'eta';
 
 const SCHENGEN = ['AT', 'BE', 'BG', 'HR', 'CZ', 'DK', 'EE', 'FI', 'FR', 'DE', 'GR', 'HU', 'IS', 'IT', 'LV', 'LI', 'LT', 'LU', 'MT', 'NL', 'NO', 'PL', 'PT', 'RO', 'SK', 'SI', 'ES', 'SE', 'CH', 'CY'];
 
 export const GUIDE_META: Record<GuideId, { checked: string; icon: string; countries: string[]; sources: { label: string; url: string }[]; list?: { passport: string; byLang?: Record<string, string>; groups: GuideListGroup[] }; langs?: string[]; passports?: string[] }> = {
+  montenegro_visa: {
+    checked: '2026-11-13',
+    passports: ['TR'],
+    icon: 'passport',
+    countries: ['ME'],
+    langs: ['tr'],
+    sources: [
+      { label: 'T.C. Dışişleri Bakanlığı: Travel regulations for Montenegro (muafiyetler)', url: 'https://www.mfa.gov.tr/karadag-seyahat-edecek-turk-vatandaslarinin-dikkatine.en.mfa' },
+      { label: 'CNBC-e: THY\'den Karadağ\'a gidecek yolculara vize uyarısı', url: 'https://www.cnbce.com/borsa/thyden-karadaga-gidecek-turk-vatandaslarina-vize-uyarisi-1-kasimda-basliyor-h40684' },
+      { label: 'NTV: Karadağ\'dan Türk vatandaşlarına vize kararı (1 Kasım)', url: 'https://www.ntv.com.tr/dunya/karadagdan-turk-vatandaslarina-vize-karari-1-kasimdan-itibaren-basliyor-1734840' },
+      { label: 'Evrensel: Türkiye vatandaşları bugünden itibaren Karadağ\'a vizesiz girmeyecek (1 Kasım 2026)', url: 'https://www.evrensel.net/haber/6007542/turkiye-vatandaslari-bugunden-itibaren-karadag-a-vizesiz-girmeyecek' }
+    ]
+  },
   schengen_by_country: {
     checked: '2026-11-05',
     passports: ['TR'],

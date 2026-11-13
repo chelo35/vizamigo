@@ -427,3 +427,7 @@ html.dark .rd-gulls path { stroke: #F4E6DC; opacity: 0.85; }
 .rd-hero.has-photo h1 { text-shadow: 0 2px 18px rgba(0, 30, 45, 0.45), 0 1px 3px rgba(0, 30, 45, 0.35); }
 .rd-hero.has-photo p, .rd-hero.has-photo .rd-eyebrow { text-shadow: 0 1px 10px rgba(0, 30, 45, 0.55); }
 @media (max-width: 720px) { .rd-hero.has-photo .rd-photo::after { background: linear-gradient(180deg, rgba(6, 40, 56, 0.32) 0%, rgba(6, 40, 56, 0.12) 40%, rgba(6, 40, 56, 0.3) 100%); } }
+
+/* Hızlı kaydırmada (mobil) henüz boyanmamış alanlarda eski mavi/turkuaz html zemini görünmesin */
+html, html.dark { background-color: var(--rd-bg); background-image: none; background-attachment: scroll; }
+body { background-color: var(--rd-bg); }

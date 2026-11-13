@@ -134,12 +134,6 @@ export const ExplorePage: React.FC<ExploreProps> = (p) => {
       title: l('Dijital göçebe', 'Digital nomads', 'Digitale Nomaden', 'Nómadas digitales', 'Цифровые кочевники'),
       desc: l('Vizeler, aylık maliyet, şehirler', 'Visas, monthly costs, cities', 'Visa, Kosten, Städte', 'Visados, costes, ciudades', 'Визы, расходы, города'),
       onOpen: () => p.onOpenTool('plan', 'nomad')
-    },
-    {
-      id: 'assistant', icon: 'spark', photo: 'x-bot2',
-      title: l('Vizamigo asistan', 'Vizamigo assistant', 'Vizamigo-Assistent', 'Asistente', 'Ассистент'),
-      desc: l('Yaz ya da sesli sor', 'Type or speak', 'Schreiben oder sprechen', 'Escribe o habla', 'Пишите или говорите'),
-      onOpen: p.onOpenAssistant
     }
   ];
 
@@ -203,16 +197,22 @@ export const ExplorePage: React.FC<ExploreProps> = (p) => {
             sub={l('Schengen evrakları, ETIAS, ETA, ESTA ve Yunan adaları kapıda vize: kaynaklı ve tarihli.', 'Schengen documents, ETIAS, ETA, ESTA and Greek islands visa: sourced and dated.', 'Schengen-Unterlagen, ETIAS, ETA, ESTA und Griechische Inseln: mit Quellen und Datum.', 'Documentos Schengen, ETIAS, ETA, ESTA e islas griegas: con fuentes y fecha.', 'Шенген, ETIAS, ETA, ESTA и греческие острова: с источниками и датой.')}
           />
           <div className="vz-guides">
-            {GUIDE_LINKS.filter((g) => (GUIDE_LABELS[language] || GUIDE_LABELS.en)[g.id]).map((g) => {
+            {(() => {
+              const list = GUIDE_LINKS.filter((g) => (GUIDE_LABELS[language] || GUIDE_LABELS.en)[g.id]);
+              // Mobilde 2 sütun: ana kart tam genişlik; kalan sayı tekse son kart da tam genişlik olsun, boşluk kalmasın
+              const rest = list.filter((g) => g.id !== 'schengen_documents');
+              const wideLast = rest.length % 2 === 1 ? rest[rest.length - 1]?.id : '';
+              return list.map((g) => {
               const x = (GUIDE_LABELS[language] || GUIDE_LABELS.en)[g.id];
               return (
-                <a key={g.id} className={`vz-guide-card${g.id === 'schengen_documents' ? ' main' : ''}`} href={`/${language}/info/${g.id}`}>
+                <a key={g.id} className={`vz-guide-card${g.id === 'schengen_documents' ? ' main' : ''}${g.id === wideLast ? ' wide-m' : ''}`} href={`/${language}/info/${g.id}`}>
                   <span className="vz-ic"><Icon name={g.icon as never} size={20} /></span>
                   <b>{x.t}</b>
                   <span>{x.d}</span>
                 </a>
               );
-            })}
+            });
+            })()}
           </div>
         </section>
 

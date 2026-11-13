@@ -426,7 +426,10 @@ textarea.vz-input { resize: vertical; font: inherit; }
 .vz-idea { display: flex; align-items: center; gap: 8px; text-align: left; border: 1px solid var(--rd-line); background: var(--rd-surface); color: var(--rd-fg); font: inherit; font-size: 14px; padding: 12px 14px; border-radius: 16px; cursor: pointer; }
 .vz-idea svg { color: var(--rd-sea-ink); flex: none; }
 .vz-idea:hover { border-color: var(--rd-sea-tint); }
-.vz-chat-in { position: sticky; bottom: 0; display: flex; gap: 8px; align-items: center; background: var(--rd-bg); padding-top: 6px; }
+.vz-chat-in { display: flex; gap: 8px; align-items: center; }
+.vz-sheet-b.has-f { padding-bottom: 16px; flex: 1 1 auto; min-height: 0; }
+.vz-sheet-f { flex: none; display: flex; flex-direction: column; gap: 8px; padding: 10px max(16px, env(safe-area-inset-right, 0px)) calc(12px + env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-left, 0px)); border-top: 1px solid var(--rd-line); background: var(--rd-bg); }
+.vz-sheet-f .vz-listen { margin: 0; }
 .vz-chat-in .vz-input { flex: 1; }
 .vz-chat-in .vz-btn { width: 46px; padding: 0; }
 .vz-iconbtn.on { background: var(--rd-sea-soft); color: var(--rd-sea-ink); border-color: var(--rd-sea); }
@@ -886,9 +889,9 @@ html.dark .vz-art { filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.35)); }
 .vz-guide-card.main { background: linear-gradient(135deg, var(--rd-sea-tint), var(--rd-surface)); border-color: var(--rd-sea-soft); }
 @media (min-width: 900px) { .vz-guide-card.main { grid-row: span 2; align-content: center; } .vz-guide-card.main b { font-size: 20px; } }
 @media (max-width: 640px) {
-  .vz-guides { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .vz-guides { grid-template-columns: 1fr 1fr; gap: 10px; grid-auto-flow: row dense; }
   .vz-guide-card { padding: 14px; }
-  .vz-guide-card.main { grid-column: 1 / -1; }
+  .vz-guide-card.main, .vz-guide-card.wide-m { grid-column: 1 / -1; }
   .vz-guide-card:not(.main) > span:last-child { display: none; }
   .vz-guide-card b { font-size: 15px; }
 }

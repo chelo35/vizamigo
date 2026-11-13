@@ -21,7 +21,7 @@ const norm = (s: string) => s.toLocaleLowerCase('tr').normalize('NFD').replace(/
 /* ------------------------------------------------------------------ */
 /* Ortak alt sayfa: mobilde aşağıdan kayar, masaüstünde ortada panel   */
 /* ------------------------------------------------------------------ */
-export const Sheet: React.FC<{ open: boolean; onClose: () => void; title: string; icon?: IconName; wide?: boolean; children: React.ReactNode }> = ({ open, onClose, title, icon, wide, children }) => {
+export const Sheet: React.FC<{ open: boolean; onClose: () => void; title: string; icon?: IconName; wide?: boolean; children: React.ReactNode; footer?: React.ReactNode }> = ({ open, onClose, title, icon, wide, children, footer }) => {
   const { l } = useI18n();
   const ref = useRef<HTMLDivElement>(null);
   useModalA11y({ isOpen: open, onClose, modalRef: ref });
@@ -46,7 +46,8 @@ export const Sheet: React.FC<{ open: boolean; onClose: () => void; title: string
             <Icon name="close" size={18} duo={false} />
           </button>
         </header>
-        <div className="vz-sheet-b">{children}</div>
+        <div className={`vz-sheet-b${footer ? ' has-f' : ''}`}>{children}</div>
+        {footer && <div className="vz-sheet-f">{footer}</div>}
       </div>
     </div>
   );
@@ -514,7 +515,24 @@ export const AssistantSheet: React.FC<{
     cl('Pasaportumu kaybettim, ne yapmalıyım?', 'I lost my passport, what now?', 'Pass verloren – was tun?', 'Perdí el pasaporte, ¿qué hago?', 'Потерял паспорт, что делать?')
   ];
   return (
-    <Sheet open={open} onClose={onClose} title={l('Vizamigo asistan', 'Vizamigo assistant', 'Vizamigo-Assistent', 'Asistente Vizamigo', 'Ассистент Vizamigo')} icon="spark">
+    <Sheet open={open} onClose={onClose} title={l('Vizamigo asistan', 'Vizamigo assistant', 'Vizamigo-Assistent', 'Asistente Vizamigo', 'Ассистент Vizamigo')} icon="spark" footer={<>
+      {listening && <p className="vz-listen" aria-live="polite">{cl('Dinliyorum… Bitirince 2-3 saniye bekle ya da mikrofona tekrar bas.', 'Listening… When you finish, pause 2–3 seconds or tap the mic again.', 'Ich höre zu… Danach 2–3 Sekunden warten oder erneut tippen.', 'Escuchando… Al terminar, espera 2-3 segundos o pulsa otra vez.', 'Слушаю… Закончив, подождите 2–3 секунды или нажмите ещё раз.')}</p>}
+      <form className="vz-chat-in" onSubmit={(e) => { e.preventDefault(); if (listening) finishMic(); else send(); }}>
+        <label htmlFor="vz-chat-q" className="sr-only">{cl('Sorunu yaz', 'Type your question', 'Frage eingeben', 'Escribe tu pregunta', 'Ваш вопрос')}</label>
+        <input id="vz-chat-q" className="vz-input" value={q} onChange={(e) => setQ(e.target.value)} placeholder={cl('Sorunu yaz…', 'Type your question…', 'Frage eingeben…', 'Escribe tu pregunta…', 'Ваш вопрос…')} autoComplete="off" lang={chatLang} />
+        {ttsOk && (
+          <button type="button" className={`vz-iconbtn${speakOn ? ' on' : ''}`} onClick={toggleSpeak} aria-pressed={speakOn} aria-label={speakOn ? cl('Sesli cevabı kapat', 'Turn off spoken replies', 'Sprachausgabe aus', 'Desactivar voz', 'Выключить голос') : cl('Cevapları sesli oku', 'Read replies aloud', 'Antworten vorlesen', 'Leer en voz alta', 'Озвучивать ответы')} title={speakOn ? cl('Sesli cevap açık', 'Spoken replies on', 'Sprachausgabe an', 'Voz activada', 'Голос включён') : cl('Sesli cevap kapalı', 'Spoken replies off', 'Sprachausgabe aus', 'Voz desactivada', 'Голос выключен')}>
+            <Icon name="sound" size={18} duo={false} />
+          </button>
+        )}
+        {isSpeechRecognitionSupported() && (
+          <button type="button" className={`vz-iconbtn${listening ? ' on rec' : ''}`} onClick={mic} aria-pressed={listening} aria-label={listening ? cl('Bitti, gönder', 'Done, send', 'Fertig, senden', 'Listo, enviar', 'Готово, отправить') : cl('Sesle sor', 'Ask by voice', 'Per Stimme fragen', 'Preguntar por voz', 'Спросить голосом')}>
+            <Icon name="mic" size={18} duo={false} />
+          </button>
+        )}
+        <Btn type="submit" icon="next" disabled={busy || !q.trim()} aria-label={cl('Gönder', 'Send', 'Senden', 'Enviar', 'Отправить')} />
+      </form>
+      </>}>
       <div className="vz-chatbar">
         <div className="vz-langs" role="radiogroup" aria-label={cl('Konuşma dili', 'Conversation language', 'Gesprächssprache', 'Idioma de la conversación', 'Язык разговора')}>
           {LANGS.map((x) => (
@@ -556,22 +574,6 @@ export const AssistantSheet: React.FC<{
         {busy && <div className="vz-msg assistant"><span className="vz-typing"><i /><i /><i /></span></div>}
         <div ref={endRef} />
       </div>
-      {listening && <p className="vz-listen" aria-live="polite">{cl('Dinliyorum… Bitirince 2-3 saniye bekle ya da mikrofona tekrar bas.', 'Listening… When you finish, pause 2–3 seconds or tap the mic again.', 'Ich höre zu… Danach 2–3 Sekunden warten oder erneut tippen.', 'Escuchando… Al terminar, espera 2-3 segundos o pulsa otra vez.', 'Слушаю… Закончив, подождите 2–3 секунды или нажмите ещё раз.')}</p>}
-      <form className="vz-chat-in" onSubmit={(e) => { e.preventDefault(); if (listening) finishMic(); else send(); }}>
-        <label htmlFor="vz-chat-q" className="sr-only">{cl('Sorunu yaz', 'Type your question', 'Frage eingeben', 'Escribe tu pregunta', 'Ваш вопрос')}</label>
-        <input id="vz-chat-q" className="vz-input" value={q} onChange={(e) => setQ(e.target.value)} placeholder={cl('Sorunu yaz…', 'Type your question…', 'Frage eingeben…', 'Escribe tu pregunta…', 'Ваш вопрос…')} autoComplete="off" lang={chatLang} />
-        {ttsOk && (
-          <button type="button" className={`vz-iconbtn${speakOn ? ' on' : ''}`} onClick={toggleSpeak} aria-pressed={speakOn} aria-label={speakOn ? cl('Sesli cevabı kapat', 'Turn off spoken replies', 'Sprachausgabe aus', 'Desactivar voz', 'Выключить голос') : cl('Cevapları sesli oku', 'Read replies aloud', 'Antworten vorlesen', 'Leer en voz alta', 'Озвучивать ответы')} title={speakOn ? cl('Sesli cevap açık', 'Spoken replies on', 'Sprachausgabe an', 'Voz activada', 'Голос включён') : cl('Sesli cevap kapalı', 'Spoken replies off', 'Sprachausgabe aus', 'Voz desactivada', 'Голос выключен')}>
-            <Icon name="sound" size={18} duo={false} />
-          </button>
-        )}
-        {isSpeechRecognitionSupported() && (
-          <button type="button" className={`vz-iconbtn${listening ? ' on rec' : ''}`} onClick={mic} aria-pressed={listening} aria-label={listening ? cl('Bitti, gönder', 'Done, send', 'Fertig, senden', 'Listo, enviar', 'Готово, отправить') : cl('Sesle sor', 'Ask by voice', 'Per Stimme fragen', 'Preguntar por voz', 'Спросить голосом')}>
-            <Icon name="mic" size={18} duo={false} />
-          </button>
-        )}
-        <Btn type="submit" icon="next" disabled={busy || !q.trim()} aria-label={cl('Gönder', 'Send', 'Senden', 'Enviar', 'Отправить')} />
-      </form>
     </Sheet>
   );
 };
