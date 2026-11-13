@@ -153,10 +153,10 @@ const Sec: React.FC<{ id: string; icon: string; title: string; note?: string; co
     {SEC_IMG[id] ? (
       <div className="vz-bk-banner">
         <img src={`/images/bk/${secImg(id, code)}-480.webp`} srcSet={`/images/bk/${secImg(id, code)}-480.webp 480w, /images/bk/${secImg(id, code)}-960.webp 960w`} sizes="(min-width: 900px) 560px, 100vw" alt="" loading="lazy" decoding="async" />
-        <h3 className="vz-bk-h"><span className="vz-ic sm"><Icon name={icon as never} size={18} /></span>{title}</h3>
+        <h2 className="vz-bk-h"><span className="vz-ic sm"><Icon name={icon as never} size={18} /></span>{title}</h2>
       </div>
     ) : (
-      <h3 className="vz-bk-h"><span className="vz-ic sm"><Icon name={icon as never} size={18} /></span>{title}</h3>
+      <h2 className="vz-bk-h"><span className="vz-ic sm"><Icon name={icon as never} size={18} /></span>{title}</h2>
     )}
     {children}
     {note && <p className="vz-bk-note">{note}</p>}

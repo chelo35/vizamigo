@@ -76,6 +76,12 @@ export const HomeBooking: React.FC<{ passport: string; onOpenCountry: (code: str
 
   // Öneri listesi: yazılan metne göre en fazla 8 sonuç (binlerce seçenekli datalist mobilde donduruyordu)
   const [open, setOpen] = useState(false);
+  const [act, setAct] = useState(-1);
+  const pick = (v: string) => {
+    setQ(v);
+    setOpen(false);
+    setAct(-1);
+  };
   const sugg = useMemo(() => {
     const n = norm(q);
     if (!n) return [] as { label: string; sub: string; value: string }[];
@@ -111,6 +117,20 @@ export const HomeBooking: React.FC<{ passport: string; onOpenCountry: (code: str
             onChange={(e) => {
               setQ(e.target.value);
               setOpen(true);
+              setAct(-1);
+            }}
+            onKeyDown={(e) => {
+              if (!open || !sugg.length) return;
+              if (e.key === 'ArrowDown') {
+                e.preventDefault();
+                setAct((a) => (a + 1) % sugg.length);
+              } else if (e.key === 'ArrowUp') {
+                e.preventDefault();
+                setAct((a) => (a <= 0 ? sugg.length - 1 : a - 1));
+              } else if (e.key === 'Enter' && act >= 0) {
+                e.preventDefault();
+                pick(sugg[act].value);
+              } else if (e.key === 'Escape') setOpen(false);
             }}
             onFocus={() => {
               loadPlaces();
@@ -122,23 +142,25 @@ export const HomeBooking: React.FC<{ passport: string; onOpenCountry: (code: str
             role="combobox"
             aria-expanded={open && sugg.length > 0}
             aria-controls="vz-hb-sugg"
+            aria-autocomplete="list"
+            aria-activedescendant={open && act >= 0 && act < sugg.length ? `vz-hb-o${act}` : undefined}
             required
           />
           {open && sugg.length > 0 && (
             <ul className="vz-hb-sugg" id="vz-hb-sugg" role="listbox">
-              {sugg.map((s) => (
-                <li key={`${s.value}-${s.sub}`} role="option" aria-selected={false}>
-                  <button
-                    type="button"
-                    onMouseDown={(e) => e.preventDefault()}
-                    onClick={() => {
-                      setQ(s.value);
-                      setOpen(false);
-                    }}
-                  >
-                    <b>{s.label}</b>
-                    {s.sub && <span>{s.sub}</span>}
-                  </button>
+              {sugg.map((s, i) => (
+                <li
+                  key={`${s.value}-${s.sub}`}
+                  id={`vz-hb-o${i}`}
+                  role="option"
+                  aria-selected={i === act}
+                  onMouseDown={(e) => {
+                    e.preventDefault();
+                    pick(s.value);
+                  }}
+                >
+                  <b>{s.label}</b>
+                  {s.sub && <span>{s.sub}</span>}
                 </li>
               ))}
             </ul>

@@ -323,7 +323,7 @@ export const TileGrid: React.FC<{ tiles: Tile[]; openRequest?: OpenRequest; labe
         >
           {t.badge && <span className="vz-tile-badge">{t.badge}</span>}
           {t.isNew && !t.badge && <span className="vz-tile-badge new">{l('Yeni', 'New', 'Neu', 'Nuevo', 'Новое')}</span>}
-          {t.photo ? <img className="vz-tile-ph" src={`/images/cards/${t.photo}-300.webp`} srcSet={`/images/cards/${t.photo}-300.webp 1x, /images/cards/${t.photo}-600.webp 2x`} alt="" loading="lazy" decoding="async" /> : <TileArt name={t.icon} size={46} img={t.img} />}
+          {t.photo ? <img className="vz-tile-ph" src={`/images/cards/${t.photo}-300.webp`} srcSet={`/images/cards/${t.photo}-300.webp 300w, /images/cards/${t.photo}-600.webp 600w`} sizes="(min-width: 1024px) 260px, (min-width: 600px) 300px, 42vw" alt="" loading="lazy" decoding="async" /> : <TileArt name={t.icon} size={46} img={t.img} />}
           <span className="vz-tile-t">{t.title}</span>
           <span className="vz-tile-s">{t.desc}</span>
         </button>

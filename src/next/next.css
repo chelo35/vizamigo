@@ -262,7 +262,7 @@ html.dark, .dark {
 .vz-foot { border-top: 1px solid var(--rd-line); background: var(--rd-surface); margin-top: 24px; }
 .vz-foot-in { display: grid; gap: 24px; padding-block: 32px 28px; grid-template-columns: 1fr; }
 @media (min-width: 768px) { .vz-foot-in { grid-template-columns: 1.4fr repeat(3, 1fr); } }
-.vz-foot h4 { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--rd-muted); margin-bottom: 10px; }
+.vz-foot h4, .vz-foot .vz-foot-h { margin-top: 0; line-height: 1.3; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--rd-muted); margin-bottom: 10px; }
 .vz-foot ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 4px; }
 .vz-foot li button { border: 0; background: none; padding: 4px 0; font: inherit; font-size: 14px; color: var(--rd-fg); cursor: pointer; text-align: left; }
 .vz-foot li button:hover { color: var(--rd-sea-ink); }
@@ -1051,7 +1051,7 @@ html.dark .vz-live-dep em { background: rgba(245, 158, 11, 0.15); color: #fbbf24
 html.dark .vz-live-skel i { background: rgba(255, 255, 255, 0.06); animation: none; }
 
 /* Reklam etiketi */
-.vz-ad { display: inline-block; vertical-align: middle; margin-left: 4px; padding: 1px 7px; border-radius: 999px; background: rgba(91, 107, 112, 0.1); color: var(--rd-muted, #5b6b70); font-size: 10.5px; font-weight: 600; line-height: 15px; white-space: nowrap; cursor: help; }
+.vz-ad { display: inline-block; vertical-align: middle; margin-left: 4px; padding: 1px 7px; border-radius: 999px; background: rgba(91, 107, 112, 0.1); color: #46555c; font-size: 10.5px; font-weight: 600; line-height: 15px; white-space: nowrap; cursor: help; }
 html.dark .vz-ad { background: rgba(255,255,255,0.08); color: #9fb3b6; }
 .vz-ad-line { display: block; margin-top: -4px; text-align: right; }
 .vz-foot-legal { flex-basis: 100%; order: 3; margin: 6px 0 0; max-width: 90ch; font-size: 12px; line-height: 1.5; color: var(--rd-muted, #5b6b70); }
@@ -1529,7 +1529,7 @@ button.vz-tb-f { cursor: pointer; }
 .vz-hb-row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
 .vz-hb-dest { grid-column: 1 / -1; }
 .vz-hb-dest.bad { border-color: #d9534f; }
-.vz-hb-go { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 52px; border: 0; border-radius: 14px; background: var(--rd-sea); color: #fff; font: inherit; font-size: 16px; font-weight: 700; cursor: pointer; }
+.vz-hb-go { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 52px; border: 0; border-radius: 14px; background: #0b6f84; color: #fff; font: inherit; font-size: 16px; font-weight: 700; cursor: pointer; }
 .vz-hb-go:hover { filter: brightness(1.05); }
 .vz-hb-go:focus-visible { outline: none; box-shadow: var(--vz-ring); }
 .vz-hb-err { margin: 0; font-size: 13px; color: #c0392b; }
@@ -1540,7 +1540,9 @@ button.vz-tb-f { cursor: pointer; }
 }
 .vz-hb-dest { position: relative; }
 .vz-hb-sugg { position: absolute; left: -1px; right: -1px; top: calc(100% + 4px); z-index: 30; margin: 0; padding: 6px; list-style: none; background: var(--rd-surface); border: 1px solid var(--rd-line); border-radius: 14px; box-shadow: 0 16px 34px -14px rgba(20, 40, 60, 0.35); max-height: 320px; overflow-y: auto; }
-.vz-hb-sugg button { width: 100%; display: flex; align-items: baseline; justify-content: space-between; gap: 10px; padding: 10px 12px; border: 0; border-radius: 10px; background: transparent; color: var(--rd-fg); font: inherit; font-size: 15px; text-align: left; cursor: pointer; }
-.vz-hb-sugg button:hover, .vz-hb-sugg button:focus-visible { background: var(--rd-bg); outline: none; }
+.vz-hb-sugg li { width: 100%; display: flex; align-items: baseline; justify-content: space-between; gap: 10px; padding: 10px 12px; border: 0; border-radius: 10px; background: transparent; color: var(--rd-fg); font: inherit; font-size: 15px; text-align: left; cursor: pointer; }
+.vz-hb-sugg li:hover, .vz-hb-sugg li[aria-selected="true"] { background: var(--rd-bg); }
 .vz-hb-sugg span { font-size: 12.5px; color: var(--rd-muted); white-space: nowrap; }
 .vz-hb .vz-tb-f input:focus, .vz-hb .vz-tb-f select:focus { outline: none; box-shadow: none; }
+
+.vz-bk-cta .vz-ad, .vz-hb-go .vz-ad { background: rgba(0, 0, 0, 0.22); color: #fff; }

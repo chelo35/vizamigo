@@ -30,7 +30,7 @@ export const PartnerLogo: React.FC<{ id?: string; url?: string; size?: number; f
   const label = name || (tid ? TP[tid].name : host);
   return (
     <span className="vz-plogo" style={{ width: size, height: size }} title={label}>
-      <img src={src} alt={label} width={Math.round(size * 0.68)} height={Math.round(size * 0.68)} loading="lazy" decoding="async" referrerPolicy="no-referrer" onError={() => setBad(true)} />
+      <img src={src} alt="" width={Math.round(size * 0.68)} height={Math.round(size * 0.68)} loading="lazy" decoding="async" referrerPolicy="no-referrer" onError={() => setBad(true)} />
     </span>
   );
 };

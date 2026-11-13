@@ -266,7 +266,7 @@ export const Footer: React.FC<{ onSelectTab: (t: TabKey) => void; onOpenInfo: (p
         </div>
         {cols.map((c) => (
           <div key={c.h}>
-            <h4>{c.h}</h4>
+            <h2 className="vz-foot-h">{c.h}</h2>
             <ul>
               {c.items.map((it) => (
                 <li key={it.label}><button type="button" onClick={it.go}>{it.label}</button></li>

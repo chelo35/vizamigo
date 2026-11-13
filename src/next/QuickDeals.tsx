@@ -98,7 +98,7 @@ export const QuickDeals: React.FC<{ passport: string; destination: string }> = (
   const inner = (d: Deal) =>
     PH[d.art] ? (
       <>
-        <img className="vz-qd-ph" src={`/images/cards/q-${PH[d.art]}-300.webp`} srcSet={`/images/cards/q-${PH[d.art]}-300.webp 1x, /images/cards/q-${PH[d.art]}-600.webp 2x`} alt="" loading="lazy" decoding="async" />
+        <img className="vz-qd-ph" src={`/images/cards/q-${PH[d.art]}-300.webp`} srcSet={`/images/cards/q-${PH[d.art]}-180.webp 180w, /images/cards/q-${PH[d.art]}-300.webp 300w, /images/cards/q-${PH[d.art]}-600.webp 600w`} sizes="(min-width: 1024px) 140px, (min-width: 600px) 180px, 24vw" alt="" loading="lazy" decoding="async" />
         <span className="vz-qd-cap">
           <b className="vz-qd-t">{d.t}</b>
           <small>{d.sub}</small>
@@ -120,7 +120,7 @@ export const QuickDeals: React.FC<{ passport: string; destination: string }> = (
         </div>
         <span className="vz-qd-note">{l('Gerçek fiyatlar, güvenilir siteler', 'Live prices from trusted sites', 'Echte Preise, bekannte Anbieter', 'Precios reales, sitios fiables', 'Реальные цены, надёжные сайты')} <AdTag /></span>
       </div>
-      <div className="vz-qd-grid4" role="tablist" aria-label={l('Hemen ucuza al', 'Book it cheap', 'Günstig buchen', 'Reserva barato', 'Купить дешевле')}>
+      <div className="vz-qd-grid4" role="group" aria-label={l('Hemen ucuza al', 'Book it cheap', 'Günstig buchen', 'Reserva barato', 'Купить дешевле')}>
         {deals.map((d, i) =>
           d.href ? (
             <a key={d.id} className="vz-qd-card" style={{ order: 2 * (i + 1) }} title={d.sub} href={d.href} target="_blank" rel="noopener noreferrer sponsored" onClick={() => setOpen(null)}>
@@ -130,9 +130,8 @@ export const QuickDeals: React.FC<{ passport: string; destination: string }> = (
             <button
               key={d.id}
               type="button"
-              role="tab"
-              aria-selected={open === d.id}
-              aria-controls="vz-qd-panel"
+              aria-expanded={open === d.id}
+              aria-controls={open === d.id ? 'vz-qd-panel' : undefined}
               className={`vz-qd-card${open === d.id ? ' on' : ''}`}
               style={{ order: 2 * (i + 1) }}
               title={d.sub}
@@ -143,7 +142,7 @@ export const QuickDeals: React.FC<{ passport: string; destination: string }> = (
           )
         )}
         {open && (
-          <div id="vz-qd-panel" className="vz-qd-panel" role="tabpanel" style={{ gridColumn: '1 / -1', order: 2 * (Math.floor(deals.findIndex((x) => x.id === open) / cols) + 1) * cols + 1 }}>
+          <div id="vz-qd-panel" className="vz-qd-panel" role="region" aria-label={deals.find((x) => x.id === open)?.sub} style={{ gridColumn: '1 / -1', order: 2 * (Math.floor(deals.findIndex((x) => x.id === open) / cols) + 1) * cols + 1 }}>
             <Suspense fallback={<div className="vz-muted" style={{ padding: 12 }}>…</div>}>
               <QuickDealPanel kind={open} passport={passport} destination={dest} onClose={() => setOpen(null)} />
             </Suspense>
