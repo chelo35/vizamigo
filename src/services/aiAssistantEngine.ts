@@ -36,6 +36,7 @@ import { GEO_DATA } from '../data/geoData';
 import { getConsularEmergencyInfo } from '../data/consularEmergencyData';
 import { TabKey } from '../components/Navigation';
 import { answerCountryQuestion } from './assistantCountryAnswer';
+import { detectIntents, isGeneralBooking, partnerPill, bookPill, tilePill, visaLine, siteFeatures, needsVisa, type Intent } from './assistantCommerce';
 import {
   playNaturalSpeech,
   stopAllPlayback
@@ -43,7 +44,14 @@ import {
 
 export interface AssistantActionPill {
   id: string;
-  type: 'open_country' | 'switch_tab' | 'open_tool' | 'affiliate';
+  type: 'open_country' | 'switch_tab' | 'open_tool' | 'affiliate' | 'open_tile' | 'goto';
+  /** open_country: ülke sayfasının hangi görünümü açılsın (rezervasyon ya da rehber) */
+  view?: 'book' | 'guide';
+  /** open_tile: sekme + araç kutusu */
+  tab?: 'explore' | 'plan' | 'track' | 'nomad' | 'profile';
+  tile?: string;
+  /** goto: site içi sayfa ('tours') */
+  path?: string;
   label: string;
   icon?: string;
   countryCode?: string;
@@ -302,7 +310,8 @@ export function extractDestinationCountry(query: string): string | null {
   const rawWords = query.split(/\s+/);
   for (const w of rawWords) {
     const upper = w.toUpperCase().replace(/[^A-Z]/g, '');
-    if (upper.length === 2 && getGlobalCountryMap()[upper.toLowerCase()]) {
+    // yalnızca büyük harfle yazılmış kodlar ("JP", "TH"); "ne", "de", "da" gibi kelimeler ülke sayılmaz
+    if (upper.length === 2 && /^[A-Z]{2}[^A-Za-z]*$/.test(w) && getGlobalCountryMap()[upper.toLowerCase()]) {
       return upper;
     }
   }
@@ -339,7 +348,8 @@ export async function processAssistantQuery(
   rawQuery: string,
   currentPassport: string = 'TR',
   lang: string = 'tr',
-  forceLang: boolean = false
+  forceLang: boolean = false,
+  ctxCountry?: string
 ): Promise<AssistantMessage> {
   // forceLang: kullanıcı konuşma dilini seçtiyse (ör. sesle soruyorsa) cevap o dilde olur
   const detectedLang = forceLang ? lang : detectQueryLanguage(rawQuery, lang);
@@ -351,7 +361,10 @@ export async function processAssistantQuery(
   const isRu = activeLang === 'ru';
 
   const norm = normalizeText(rawQuery);
-  const targetCountry = extractDestinationCountry(rawQuery);
+  // Takip sorusu ("ne zaman gideyim", "otel öner"): ülke yazılmadıysa sohbetteki son ülke kullanılır
+  const followUp = /(^| )(ne zaman|hava|mevsim|iklim|butce|fiyat|pahali|ucuz|guvenli|priz|vize|kimlik|otel|konaklama|nerede kal|yemek|rota|gun|taksi|ulasim|para|doviz|esim|internet|dil|bahsis|acil|tur|ucak|ucus|bilet|araba|transfer|sigorta|gezilecek|gorulecek|when|weather|season|budget|price|cost|safe|plug|visa|hotel|stay|food|route|itinerary|days|taxi|money|tip|emergency|tour|flight|car|insurance|see|do|wann|wetter|budget|preis|sicher|stecker|visum|essen|route|tage|cuando|clima|presupuesto|precio|seguro|enchufe|visado|hotel|comida|ruta|dias|когда|погод|бюджет|цен|безопас|розет|виз|отел|еда|маршрут|дн)/.test(normalizeText(rawQuery));
+  const greet = /^(merhaba|selam|slm|gunaydin|iyi aksamlar|tesekkur|sagol|hi|hello|hey|thanks|hallo|danke|hola|gracias|привет|здравствуйте|спасибо)/.test(normalizeText(rawQuery));
+  const targetCountry = extractDestinationCountry(rawQuery) || (ctxCountry && followUp && !greet ? ctxCountry : null);
 
   const actions: AssistantActionPill[] = [];
   const passportItems = getPassportItems(currentPassport);
@@ -395,6 +408,100 @@ export async function processAssistantQuery(
       autoTriggerAction: /(^| )(ac|goster|open|show|offnen|abrir|mostrar|открыть|покажи)( |$)/.test(norm) ? ans.actions[0] : undefined
     };
   };
+  // --- Sohbet, site yardımı, rezervasyon ve rota niyetleri ---
+  const LL = (tr: string, en: string, de: string, es: string, ru: string) => ({ tr, en, de, es, ru } as Record<string, string>)[activeLang] ?? en;
+  const mk = (text: string, acts: AssistantActionPill[], code?: string): AssistantMessage => ({
+    id: `msg-${Date.now()}`,
+    sender: 'assistant',
+    text,
+    timestamp: new Date(),
+    actions: acts.filter(Boolean).slice(0, 3),
+    detectedLang: activeLang,
+    detectedCountry: code ? { code, name: getCountryName(code, activeLang), flag: getFlag(code) } : undefined
+  });
+  const toursPill: AssistantActionPill = { id: 'go-tours', type: 'goto', path: 'tours', label: LL('Tur paketleri', 'Tour packages', 'Reisepakete', 'Paquetes de viaje', 'Турпакеты'), accentTone: 'amber' };
+  const tripPill = tilePill('tile-trip', 'nomad', 'trip', LL('Seyahat planlayıcı', 'Trip planner', 'Reiseplaner', 'Planificador de viaje', 'Планировщик поездки'), 'teal');
+  const routePill = tilePill('tile-planner', 'plan', 'planner', LL('Rota planlayıcı', 'Route planner', 'Routenplaner', 'Planificador de rutas', 'Маршрут'), 'sky');
+  const wherePill = tilePill('tile-where', 'explore', 'where', LL('Nereye gidebilirim?', 'Where can I go?', 'Wohin kann ich?', '¿Adónde puedo ir?', 'Куда можно?'), 'sky');
+
+  // Selam / teşekkür
+  if (!targetCountry && /^(merhaba|selam|selamlar|slm|hey|hi|hello|hallo|hola|привет|здравствуйте|gunaydin|iyi aksamlar|good morning)( .{0,20})?$/.test(norm)) {
+    return mk(LL(
+      `Merhaba! Vize, giriş şartları, rota, uçuş, otel, tur ve seyahatle ilgili her şeyi sorabilirsin. ${originName} pasaportuna göre cevaplıyorum. Nereye gitmeyi düşünüyorsun?`,
+      `Hi! Ask me about visas, entry rules, routes, flights, hotels, tours or anything travel. I answer for your ${originName} passport. Where are you thinking of going?`,
+      `Hallo! Frag mich zu Visum, Einreise, Routen, Flügen, Hotels, Touren oder allem rund ums Reisen. Ich antworte für deinen Pass aus ${originName}. Wohin soll es gehen?`,
+      `¡Hola! Pregúntame por visados, requisitos, rutas, vuelos, hoteles, tours o cualquier tema de viaje. Respondo para tu pasaporte de ${originName}. ¿Adónde piensas ir?`,
+      `Здравствуйте! Спрашивайте о визах, правилах въезда, маршрутах, билетах, отелях и экскурсиях. Отвечаю для паспорта: ${originName}. Куда собираетесь?`
+    ), [wherePill, tripPill]);
+  }
+  if (!targetCountry && /^(tesekkur|tesekkurler|sagol|sag ol|eyvallah|thanks|thank you|thx|danke|gracias|спасибо)( .{0,20})?$/.test(norm)) {
+    return mk(LL('Rica ederim, iyi yolculuklar! Başka bir sorun olursa buradayım.', 'You’re welcome, have a great trip! I’m here if you need anything else.', 'Gern geschehen, gute Reise!', '¡De nada, buen viaje!', 'Пожалуйста, хорошей поездки!'), []);
+  }
+
+  // Site yardımı: "neler yapabilirsin", "site ne işe yarar", "help"
+  if (!targetCountry && /(neler yapabilir|ne yapabilir|ne ise yarar|ozellik|nasil kullan|yardim|help|what can you do|features|how does this work|was kannst du|funktionen|hilfe|que puedes hacer|funciones|ayuda|что ты умеешь|помощь|возможност)/.test(norm)) {
+    const feats = siteFeatures(activeLang);
+    return mk(
+      `**${LL('Vizamigo’da neler var', 'What you can do on Vizamigo', 'Was Vizamigo kann', 'Qué puedes hacer en Vizamigo', 'Что умеет Vizamigo')}**\n` + feats.map((x) => `• ${x.text}`).join('\n') +
+        `\n\n${LL('Bana doğrudan da sorabilirsin: "Japonya’ya 7 günlük rota", "Bali otel", "İstanbul’dan Roma’ya en ucuz gün", "Dubai vizesi".', 'You can also just ask me: "7-day Japan itinerary", "Bali hotels", "cheapest day to fly to Rome", "Dubai visa".', 'Frag mich einfach: „7 Tage Japan Route“, „Bali Hotel“, „günstigster Tag nach Rom“, „Dubai Visum“.', 'También puedes preguntarme: "ruta de 7 días por Japón", "hoteles en Bali", "día más barato para volar a Roma", "visado Dubái".', 'Можно спросить прямо: «маршрут по Японии на 7 дней», «отели на Бали», «самый дешёвый день в Рим», «виза в Дубай».')}`,
+      feats.filter((x) => x.pill).map((x) => x.pill as AssistantActionPill)
+    );
+  }
+
+  const intents = detectIntents(norm);
+  const BOOK: Intent[] = ['flight', 'cheapest', 'hotel', 'tour', 'car', 'transfer', 'insurance', 'visaApply', 'ground'];
+  const bookIntents = intents.filter((x) => BOOK.includes(x));
+
+  // Rezervasyon sorusu + ülke: vize durumu + o ülkenin rezervasyon sayfası + en fazla 2 ortaklık bağlantısı
+  if (targetCountry && (bookIntents.length || isGeneralBooking(norm))) {
+    const c = targetCountry;
+    const cn = cityKey && POPULAR_DESTINATION_ALIASES[cityKey] === c ? cityName : '';
+    const where = cn || getCountryName(c, activeLang);
+    const vl = visaLine(c, currentPassport, activeLang);
+    const lines: string[] = [];
+    const want = bookIntents.length ? bookIntents : (['flight', 'hotel'] as Intent[]);
+    for (const it of want) {
+      if (it === 'flight') lines.push(LL(`✈️ **Uçuş:** ${where} için fiyatları karşılaştır; ${getCountryName(c, activeLang)} sayfasındaki takvim en ucuz günleri gösterir.`, `✈️ **Flights:** compare prices to ${where}; the calendar on the ${getCountryName(c, activeLang)} page shows the cheapest days.`, `✈️ **Flüge:** Preise nach ${where} vergleichen; der Kalender auf der Länderseite zeigt die günstigsten Tage.`, `✈️ **Vuelos:** compara precios a ${where}; el calendario de la página del país muestra los días más baratos.`, `✈️ **Билеты:** сравните цены до ${where}; календарь на странице страны покажет самые дешёвые дни.`));
+      if (it === 'cheapest') lines.push(LL(`📅 **En ucuz gün:** ${getCountryName(c, activeLang)} rezervasyon sayfasındaki fiyat takviminde bir ay boyunca günlük en düşük fiyatları görürsün; seçtiğin gün otel ve tur tarihlerine de aktarılır.`, `📅 **Cheapest day:** the fare calendar on the ${getCountryName(c, activeLang)} booking page shows the lowest price for each day of the month; the day you pick carries over to hotels and tours.`, `📅 **Günstigster Tag:** Der Preiskalender auf der Buchungsseite zeigt den Tiefstpreis je Tag; das gewählte Datum gilt auch für Hotels und Touren.`, `📅 **Día más barato:** el calendario de precios de la página de reservas muestra el precio más bajo de cada día; la fecha elegida pasa a hoteles y tours.`, `📅 **Самый дешёвый день:** календарь цен на странице бронирования показывает минимальную цену на каждый день; выбранная дата переносится в отели и экскурсии.`));
+      if (it === 'hotel') lines.push(LL(`🏨 **Konaklama:** ${where} otellerini tarih ve bütçeye göre filtreleyebilirsin.`, `🏨 **Stay:** filter hotels in ${where} by dates and budget.`, `🏨 **Unterkunft:** Hotels in ${where} nach Datum und Budget filtern.`, `🏨 **Alojamiento:** filtra hoteles en ${where} por fechas y presupuesto.`, `🏨 **Жильё:** отели в ${where} по датам и бюджету.`));
+      if (it === 'tour') lines.push(LL(`🎟️ **Turlar:** ${where} için günlük turlar, giriş biletleri ve aktiviteler.`, `🎟️ **Tours:** day trips, tickets and activities in ${where}.`, `🎟️ **Touren:** Tagesausflüge, Tickets und Aktivitäten in ${where}.`, `🎟️ **Tours:** excursiones, entradas y actividades en ${where}.`, `🎟️ **Экскурсии:** однодневные туры, билеты и активности в ${where}.`));
+      if (it === 'car') lines.push(LL(`🚗 **Araç kiralama:** ${where} için firmaları karşılaştır; ehliyetinle birlikte uluslararası sürücü belgesi istenip istenmediğine ülke sayfasından bak.`, `🚗 **Car rental:** compare companies in ${where}; check the country page for whether an International Driving Permit is required.`, `🚗 **Mietwagen:** Anbieter in ${where} vergleichen; ob ein internationaler Führerschein nötig ist, steht auf der Länderseite.`, `🚗 **Alquiler de coches:** compara empresas en ${where}; mira en la página del país si piden permiso internacional.`, `🚗 **Аренда авто:** сравните компании в ${where}; нужны ли международные права, смотрите на странице страны.`));
+      if (it === 'transfer') lines.push(LL(`🚕 **Transfer:** havalimanından otele sabit fiyatlı transfer önceden ayırtılabilir.`, `🚕 **Transfer:** pre-book a fixed-price airport-to-hotel transfer.`, `🚕 **Transfer:** Festpreis-Transfer vom Flughafen vorab buchen.`, `🚕 **Traslado:** reserva un traslado aeropuerto–hotel a precio fijo.`, `🚕 **Трансфер:** заранее закажите трансфер из аэропорта по фиксированной цене.`));
+      if (it === 'ground') lines.push(LL(`🚆 **Tren, otobüs, feribot:** ${getCountryName(c, activeLang)} rezervasyon sayfasında yer alan kara ve deniz ulaşımı seçeneklerine bak.`, `🚆 **Train, bus, ferry:** see the ground and sea transport options on the ${getCountryName(c, activeLang)} booking page.`, `🚆 **Zug, Bus, Fähre:** Optionen auf der Buchungsseite des Landes.`, `🚆 **Tren, bus, ferry:** opciones en la página de reservas del país.`, `🚆 **Поезд, автобус, паром:** варианты на странице бронирования страны.`));
+      if (it === 'insurance') lines.push(LL(`🛡️ **Sigorta:** ${needsVisa(c, currentPassport) ? 'vize başvurusunda genelde en az 30.000 € teminatlı sağlık sigortası istenir.' : 'zorunlu olmasa da sağlık giderleri yurt dışında çok yüksek olabilir.'}`, `🛡️ **Insurance:** ${needsVisa(c, currentPassport) ? 'visa applications usually require medical cover (often €30,000+ for Schengen).' : 'not always required, but medical bills abroad can be very high.'}`, `🛡️ **Versicherung:** ${needsVisa(c, currentPassport) ? 'für den Visumantrag meist Pflicht.' : 'nicht immer Pflicht, aber Arztkosten können hoch sein.'}`, `🛡️ **Seguro:** ${needsVisa(c, currentPassport) ? 'suele ser obligatorio para el visado.' : 'no siempre obligatorio, pero la atención médica puede ser muy cara.'}`, `🛡️ **Страховка:** ${needsVisa(c, currentPassport) ? 'обычно обязательна для визы.' : 'не всегда обязательна, но лечение за границей дорогое.'}`));
+      if (it === 'visaApply') lines.push(needsVisa(c, currentPassport)
+        ? LL('📝 **Vize başvurusu:** evrak listesini ülke sayfasında bulursun; istersen başvuruyu VisaHQ takip edebilir (hizmet bedeli vize ücretine eklenir).', '📝 **Visa application:** the document list is on the country page; VisaHQ can handle the application for you (service fee on top of the visa fee).', '📝 **Visumantrag:** Dokumentenliste auf der Länderseite; VisaHQ kann den Antrag übernehmen (Servicegebühr zusätzlich).', '📝 **Solicitud de visado:** la lista de documentos está en la página del país; VisaHQ puede tramitarlo (tarifa de servicio adicional).', '📝 **Оформление визы:** список документов на странице страны; VisaHQ может оформить за вас (сервисный сбор отдельно).')
+        : LL('📝 **Vize:** bu pasaportla konsolosluk vizesi gerekmiyor; ayrıntılar ülke sayfasında.', '📝 **Visa:** no consular visa needed with this passport; details are on the country page.', '📝 **Visum:** mit diesem Pass kein Konsulatsvisum nötig.', '📝 **Visado:** no hace falta visado consular con este pasaporte.', '📝 **Виза:** консульская виза с этим паспортом не нужна.'));
+    }
+    const affs = want.map((it) => partnerPill(it, c, activeLang, currentPassport, cn)).filter((x): x is AssistantActionPill => !!x);
+    const uniq = affs.filter((a, i) => affs.findIndex((b) => b.id === a.id) === i).slice(0, 2);
+    return mk(`**${where}**\n${vl ? `${vl}\n\n` : ''}${lines.join('\n')}`, [bookPill(c, activeLang), ...uniq], c);
+  }
+
+  // Rezervasyon sorusu ama ülke yok: nereye diye sor, araçları göster
+  const suggestAsk = /(oner|tavsiye|fikir|suggest|recommend|idea|empfiehl|vorschlag|recomiend|sugier|посоветуй|предлож|порекоменд)/.test(norm);
+  if (!targetCountry && !suggestAsk && (bookIntents.length || isGeneralBooking(norm))) {
+    const p = bookIntents.length ? partnerPill(bookIntents[0], null, activeLang, currentPassport) : null;
+    return mk(LL(
+      'Nereye gitmek istiyorsun? Şehir ya da ülke yazarsan (ör. "Roma otel", "Bali’ye uçak bileti", "Dubai tur") vize durumunu, en ucuz uçuş günlerini, otelleri ve turları birlikte gösteririm.',
+      'Where would you like to go? Type a city or country (e.g. "Rome hotels", "flights to Bali", "Dubai tours") and I’ll show the visa status, cheapest flight days, hotels and tours together.',
+      'Wohin soll es gehen? Schreib eine Stadt oder ein Land (z. B. „Rom Hotel“, „Flug nach Bali“), dann zeige ich Visum, günstigste Flugtage, Hotels und Touren.',
+      '¿Adónde quieres ir? Escribe una ciudad o país (p. ej. "hoteles en Roma", "vuelos a Bali") y te muestro el visado, los días más baratos, hoteles y tours.',
+      'Куда хотите поехать? Напишите город или страну (например, «отели в Риме», «билеты на Бали») — покажу визу, дешёвые дни, отели и экскурсии.'
+    ), [tripPill, toursPill, ...(p ? [p] : [wherePill])]);
+  }
+
+  // Rota sorusu ülkesiz: rota planlayıcı + hazır rotalar
+  if (!targetCountry && intents.includes('route')) {
+    return mk(LL(
+      'Hangi ülke ya da şehir için rota istiyorsun? Örneğin "İtalya 7 günlük rota" ya da "Balkanlar turu" yaz. Birden fazla ülkeyi kapsayan rotayı rota planlayıcıda çizebilir, hazır rotalara da bakabilirsin.',
+      'Which country or city is the trip for? Try "7-day Italy itinerary" or "Balkans route". For multi-country trips use the route planner or browse ready-made routes.',
+      'Für welches Land? Z. B. „Italien 7 Tage Route“. Für mehrere Länder gibt es den Routenplaner und fertige Routen.',
+      '¿Para qué país? Prueba "ruta de 7 días por Italia". Para varios países usa el planificador de rutas o las rutas listas.',
+      'Для какой страны? Например, «маршрут по Италии на 7 дней». Для нескольких стран есть планировщик и готовые маршруты.'
+    ), [routePill, tilePill('tile-presets', 'plan', 'presets', LL('Hazır rotalar', 'Ready-made routes', 'Fertige Routen', 'Rutas listas', 'Готовые маршруты'), 'amber'), toursPill]);
+  }
+
   // ülke adı geçen sorular önce buraya gelir; Schengen sayacı, transit, pasaport kaybı, dijital göçebe gibi araç konuları hariç
   if (targetCountry && !/(schengen|90 180|transit|aktarma|layover|umsteig|escala|пересадк|pasaport kay|pasaportumu kay|kaybettim|calindi|lost passport|stolen|konsolos|buyukelci|consul|embassy|botschaft|embajada|консульств|посольств|nomad|gocebe|remote work|saat farki|time zone|timezone|zeitzone)/.test(norm)) return countryMsg(targetCountry);
 
@@ -520,7 +627,7 @@ export async function processAssistantQuery(
   }
 
   // 10) Nereye gidebilirim
-  if (!targetCountry && (/^(radar|harita|map|karte|mapa|карта)$/.test(norm) || /(nereye|nerelere|tatil yeri|where can i go|where to go|wohin|a donde|adonde|куда поехать|куда можно)/.test(norm))) {
+  if (!targetCountry && (/^(radar|harita|map|karte|mapa|карта)$/.test(norm) || /(nereye|nerelere|tatil yeri|where can i go|where to go|wohin|a donde|adonde|куда поехать|куда можно)/.test(norm) || (suggestAsk && /(tatil|gezi|seyahat|ulke|yer|holiday|vacation|trip|destination|travel|urlaub|reise|ziel|vacacion|viaje|destino|отпуск|отдых|поездк|направлен)/.test(norm)))) {
     const groups: Array<[string, string[]]> = [
       [L5('Sıcak ve tropik', 'Warm and tropical', 'Warm und tropisch', 'Cálido y tropical', 'Тёплые и тропические'), ['TH', 'MY', 'ID', 'MV']],
       [L5('Balkanlar', 'Balkans', 'Balkan', 'Balcanes', 'Балканы'), ['ME', 'RS', 'AL', 'BA', 'MK']],

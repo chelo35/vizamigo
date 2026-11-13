@@ -1,3 +1,5 @@
+import { toursPath } from '../data/tours';
+import { siteFeatures } from '../services/assistantCommerce';
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { useI18n, lText } from '../data/i18n';
 import { useAuth } from '../context/AuthContext';
@@ -316,6 +318,43 @@ const RichText: React.FC<{ text: string }> = ({ text }) => {
   );
 };
 
+/** /api/chat: sitenin kendi cevabını (vize, ülke verisi, düğmeler) bilgi olarak verip doğal bir cevap ister. Anahtar yoksa ya da hata olursa null. */
+async function askAI(q: string, r: AssistantMessage, prev: AssistantMessage[], passport: string, lang: string): Promise<string | null> {
+  try {
+    if (sessionStorage.getItem('vz_ai_off') === '1') return null;
+  } catch {}
+  const ctl = new AbortController();
+  const timer = setTimeout(() => ctl.abort(), 20000);
+  try {
+    const res = await fetch('/api/chat', {
+      method: 'POST',
+      headers: { 'content-type': 'application/json' },
+      signal: ctl.signal,
+      body: JSON.stringify({
+        q,
+        lang,
+        passport: getCountryName(passport, 'en'),
+        today: new Date().toISOString().slice(0, 10),
+        facts: r.text,
+        buttons: (r.actions || []).map((a) => stripEmoji(a.label) + (a.type === 'affiliate' ? ' (partner link)' : '')),
+        features: siteFeatures(lang).map((f) => f.text.replace(/\*\*/g, '')),
+        history: prev.slice(-8).map((m) => ({ role: m.sender === 'user' ? 'user' : 'assistant', content: m.text }))
+      })
+    });
+    if (res.status === 503 || res.status === 404 || res.status === 405) {
+      try { sessionStorage.setItem('vz_ai_off', '1'); } catch {}
+      return null;
+    }
+    if (!res.ok) return null;
+    const j = (await res.json()) as { text?: string };
+    return j.text && j.text.trim() ? j.text.trim() : null;
+  } catch {
+    return null;
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
 export const AssistantSheet: React.FC<{
   open: boolean;
   onClose: () => void;
@@ -404,8 +443,12 @@ export const AssistantSheet: React.FC<{
     setBusy(true);
     try {
       // sesle sorulduysa seçili dilde cevap; yazıldıysa yazılan dil algılanır ve sohbet dili ona geçer
-      const r = await processAssistantQuery(t, passport, chatLang);
+      const lastCountry = [...msgs].reverse().find((m) => m.detectedCountry)?.detectedCountry?.code;
+      let r = await processAssistantQuery(t, passport, chatLang, false, lastCountry);
       const rl = (r.detectedLang || chatLang) as CL;
+      // Yapay zekâ katmanı (sunucuda anahtar varsa): sitenin cevabını bilgi olarak kullanıp sohbet tadında yazar
+      const ai = await askAI(t, r, msgs, passport, rl);
+      if (ai) r = { ...r, text: ai };
       if (rl !== chatLang && (LANGS as readonly string[]).includes(rl)) setChatLang(rl);
       setMsgs((m) => [...m, r]);
       if (speakOn) say(r.text, rl);
@@ -416,7 +459,12 @@ export const AssistantSheet: React.FC<{
     }
   };
   const act = (a: AssistantActionPill) => {
-    if (a.type === 'open_country' && a.countryCode) { onClose(); onOpenCountry(a.countryCode); }
+    if (a.type === 'open_country' && a.countryCode) {
+      if (a.view) { try { sessionStorage.setItem('vz_cview', a.view); } catch {} }
+      onClose(); onOpenCountry(a.countryCode);
+    }
+    else if (a.type === 'open_tile' && a.tab && a.tile) { onClose(); onOpenTool(a.tab, a.tile); }
+    else if (a.type === 'goto' && a.path === 'tours') { onClose(); window.location.assign(toursPath(language)); }
     else if (a.type === 'switch_tab' && a.tabKey) { onClose(); onSelectTab((a.tabKey === 'consular' ? 'nomad' : a.tabKey) as 'explore'); }
     else if (a.type === 'open_tool') {
       onClose();
@@ -460,8 +508,9 @@ export const AssistantSheet: React.FC<{
   };
   const ideas = [
     cl('Gürcistan’a kimlikle gidilir mi?', 'Do I need a visa for Japan?', 'Brauche ich ein Visum für Japan?', '¿Necesito visado para Japón?', 'Нужна ли виза в Японию?'),
-    cl('Dubai güvenli mi?', 'Is Dubai safe?', 'Ist Dubai sicher?', '¿Es seguro Dubái?', 'Безопасно ли в Дубае?'),
-    cl('Tayland’da bahşiş ne kadar?', 'Tipping in Thailand', 'Trinkgeld in Thailand', 'Propinas en Tailandia', 'Чаевые в Таиланде'),
+    cl('İtalya’ya 7 günlük rota', '7-day Italy itinerary', '7 Tage Italien Route', 'Ruta de 7 días por Italia', 'Маршрут по Италии на 7 дней'),
+    cl('Roma’ya en ucuz hangi gün uçarım?', 'Cheapest day to fly to Rome?', 'Günstigster Tag nach Rom?', '¿Día más barato para volar a Roma?', 'Самый дешёвый день до Рима?'),
+    cl('Bali’de nerede kalmalıyım?', 'Where should I stay in Bali?', 'Wo übernachten auf Bali?', '¿Dónde alojarme en Bali?', 'Где остановиться на Бали?'),
     cl('Pasaportumu kaybettim, ne yapmalıyım?', 'I lost my passport, what now?', 'Pass verloren – was tun?', 'Perdí el pasaporte, ¿qué hago?', 'Потерял паспорт, что делать?')
   ];
   return (
@@ -488,7 +537,7 @@ export const AssistantSheet: React.FC<{
       <div className="vz-chat">
         {msgs.length === 0 && (
           <div className="vz-stack" style={{ gap: 12 }}>
-            <p className="vz-muted">{cl('Bir ülke ve konu yaz ya da mikrofona bas. Örneğin:', 'Type a country and a topic, or tap the microphone. For example:', 'Schreib ein Land und ein Thema oder tippe aufs Mikrofon. Zum Beispiel:', 'Escribe un país y un tema o pulsa el micrófono. Por ejemplo:', 'Напишите страну и тему или нажмите на микрофон. Например:')}</p>
+            <p className="vz-muted">{cl('Vize, rota, uçuş, otel, tur ya da sitedeki araçlar hakkında sor; yazabilir ya da mikrofona basabilirsin. Örneğin:', 'Ask about visas, routes, flights, hotels, tours or the site’s tools; type or tap the microphone. For example:', 'Frag nach Visum, Route, Flügen, Hotels, Touren oder Tools; tippen oder Mikrofon. Zum Beispiel:', 'Pregunta por visados, rutas, vuelos, hoteles, tours o herramientas; escribe o usa el micrófono. Por ejemplo:', 'Спрашивайте о визах, маршрутах, билетах, отелях, экскурсиях и инструментах сайта. Например:')}</p>
             <div className="vz-stack" style={{ gap: 8 }}>{ideas.map((x) => <button key={x} type="button" className="vz-idea" onClick={() => send(x)}><Icon name="spark" size={16} duo={false} />{x}</button>)}</div>
           </div>
         )}
@@ -498,7 +547,7 @@ export const AssistantSheet: React.FC<{
             {m.actions && m.actions.length > 0 && (
               <div className="vz-actions">
                 {m.actions.slice(0, 4).map((a) => (
-                  <Btn key={a.id} variant="soft" small icon={a.type === 'open_country' ? 'globe' : a.type === 'affiliate' ? 'external' : 'next'} onClick={() => act(a)}>{stripEmoji(a.label)}</Btn>
+                  <Btn key={a.id} variant="soft" small icon={a.type === 'open_country' ? (a.view === 'book' ? 'bed' : 'globe') : a.type === 'affiliate' ? 'external' : 'next'} onClick={() => act(a)}>{stripEmoji(a.label)}{a.type === 'affiliate' && <span className="vz-adtag-s">{cl('reklam', 'ad', 'Anzeige', 'anuncio', 'реклама')}</span>}</Btn>
                 ))}
               </div>
             )}

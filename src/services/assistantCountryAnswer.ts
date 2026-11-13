@@ -10,7 +10,7 @@ import { getStayDurationText, generateDirectAnswerSnippet } from '../utils/schem
 import { GEO_DATA } from '../data/geoData';
 import { capitalName } from '../data/capitalNames';
 import { advisoryAgencyName, advisoryLabel } from '../data/officialAdvisoryLabels';
-import { tpLinks } from '../data/tpPartners';
+import { topicPartner } from './assistantCommerce';
 
 type Lang = 'tr' | 'en' | 'de' | 'es' | 'ru';
 type Topic = 'visa' | 'id' | 'safety' | 'sos' | 'plug' | 'water' | 'tip' | 'taxi' | 'money' | 'season' | 'budget' | 'esim' | 'vat' | 'food' | 'route' | 'places' | 'language' | 'scam';
@@ -107,7 +107,7 @@ export async function answerCountryQuestion(
   langIn: string,
   passport: string,
   city = ''
-): Promise<{ text: string; actions: AssistantActionPill[] }> {
+): Promise<{ text: string; actions: AssistantActionPill[]; topics: string[] }> {
   const lang = (['tr', 'en', 'de', 'es', 'ru'].includes(langIn) ? langIn : 'en') as Lang;
   const L = (k: keyof typeof T) => T[k][lang];
   // Türkçe dışı cevapta Türkçe kalmış bir metin varsa göstermeyelim
@@ -290,11 +290,11 @@ export async function answerCountryQuestion(
   }
 
   const actions: AssistantActionPill[] = [{ id: `open-${code}`, type: 'open_country', countryCode: code, label: `${flag} ${L('open')}`, accentTone: 'teal' }];
-  const nameEn = getCountryName(code, 'en');
-  if (topics.includes('esim')) actions.push({ id: 'aff-airalo', type: 'affiliate', url: tpLinks.airalo(nameEn.toLowerCase().replace(/&/g, 'and').normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')), label: L('esimBtn'), accentTone: 'sky' });
-  if (topics.includes('places') || topics.includes('route')) actions.push({ id: 'aff-gyg', type: 'affiliate', url: tpLinks.getyourguide(nameEn), label: L('toursBtn'), accentTone: 'amber' });
+  // Konuya uygun tek ortaklık önerisi (abartmadan): vize gerekiyorsa başvuru, gezi sorusunda tur, güvenlikte sigorta…
+  const partner = topicPartner(topics, code, lang, passport, city);
+  if (partner) actions.push(partner);
   if (topics.includes('tip')) actions.push({ id: 'tool-tipping', type: 'open_tool', toolKey: 'tipping', label: L('tipBtn'), accentTone: 'amber' });
   if (topics.includes('plug')) actions.push({ id: 'tool-packing', type: 'open_tool', toolKey: 'packing', label: L('packBtn'), accentTone: 'sky' });
 
-  return { text: out.filter((x, i, a) => !(x === '' && (i === 0 || a[i - 1] === ''))).join('\n'), actions: actions.slice(0, 3) };
+  return { text: out.filter((x, i, a) => !(x === '' && (i === 0 || a[i - 1] === ''))).join('\n'), actions: actions.slice(0, 3), topics };
 }
