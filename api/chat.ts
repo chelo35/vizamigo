@@ -8,8 +8,10 @@ export const config = {
  * ve bunu "facts" olarak buraya gönderir. Model bu bilgilere dayanarak doğal, sohbet tadında bir cevap yazar;
  * vize kuralı ya da fiyat uydurmaz. Anahtar yoksa 503 döner ve site kendi kural tabanlı cevabını gösterir.
  *
- * Vercel ortam değişkenleri (biri yeterli; ikisi de varsa önce Groq denenir, olmazsa Anthropic):
- *   GROQ_API_KEY        Groq API anahtarı (ücretsiz katman: dakikada 30, günde ~1.000 istek; veriler eğitimde kullanılmaz)
+ * Vercel ortam değişkenleri (biri yeterli). Sırayla denenir; biri sınıra takılırsa ya da hata verirse sıradakine geçilir:
+ *   GROQ_API_KEY        Groq (ücretsiz: dakikada 30, günde ~1.000 istek; veriler eğitimde kullanılmaz)
+ *   OPENROUTER_API_KEY  OpenRouter ücretsiz modeller (ücretsiz: günde 50 istek; hesaba bir kez 10 $ yüklenirse günde 1.000)
+ *                       En iyi ücretsiz modeller listeden otomatik seçilir; hepsi doluysa openrouter/free uygun olanı seçer
  *   ANTHROPIC_API_KEY   Anthropic API anahtarı (ücretli)
  *   CHAT_MODEL          (isteğe bağlı) Groq için varsayılan llama-3.3-70b-versatile
  *   ANTHROPIC_MODEL     (isteğe bağlı) varsayılan claude-haiku-5-5
@@ -32,12 +34,35 @@ const limited = (ip: string) => {
 
 const clip = (s: unknown, n: number) => String(s ?? '').slice(0, n);
 
+// OpenRouter'daki ücretsiz modellerden Türkçe dahil çok dilli sohbette güçlü olanları seçer (liste 6 saatte bir yenilenir).
+// OPENROUTER_MODELS ortam değişkeniyle elle de verilebilir (virgülle).
+let freeCache: { at: number; ids: string[] } | null = null;
+const PREFER = [/llama-3\.3-70b/, /deepseek-(chat|v3|r1)/, /qwen3?.*(235b|72b|32b)/, /gpt-oss-120b/, /gemma-3-27b/, /mistral-(small|medium)/, /nemotron.*(super|ultra)/, /glm-4/, /llama-4/];
+async function freeModels(): Promise<string[]> {
+  const manual = (process.env.OPENROUTER_MODELS || '').split(',').map((x) => x.trim()).filter(Boolean);
+  if (manual.length) return manual.slice(0, 3);
+  if (!freeCache || Date.now() - freeCache.at > 6 * 3600_000) {
+    let ids: string[] = [];
+    try {
+      const r = await fetch('https://openrouter.ai/api/v1/models');
+      const j = (await r.json()) as { data?: Array<{ id: string; context_length?: number; architecture?: { output_modalities?: string[] } }> };
+      const free = (j.data || []).filter((m) => m.id.endsWith(':free') && (m.context_length || 0) >= 16000).map((m) => m.id);
+      const rank = (id: string) => { const i = PREFER.findIndex((re) => re.test(id)); return i < 0 ? 99 : i; };
+      ids = free.filter((id) => rank(id) < 99).sort((a, b) => rank(a) - rank(b));
+    } catch {}
+    freeCache = { at: Date.now(), ids };
+  }
+  return [...freeCache.ids.slice(0, 2), 'openrouter/free'];
+}
+
+
 export default async function handler(req: Request) {
   const groqKey = process.env.GROQ_API_KEY;
+  const orKey = process.env.OPENROUTER_API_KEY;
   const anthKey = process.env.ANTHROPIC_API_KEY;
-  if (req.method === 'GET') return Response.json({ enabled: !!(groqKey || anthKey) });
+  if (req.method === 'GET') return Response.json({ enabled: !!(groqKey || orKey || anthKey) });
   if (req.method !== 'POST') return new Response('Method not allowed', { status: 405 });
-  if (!groqKey && !anthKey) return Response.json({ error: 'not_configured' }, { status: 503 });
+  if (!groqKey && !orKey && !anthKey) return Response.json({ error: 'not_configured' }, { status: 503 });
   const origin = req.headers.get('origin') || '';
   if (origin && !/^https:\/\/(www\.)?vizamigo\.com$|^http:\/\/localhost(:\d+)?$|\.vercel\.app$/.test(origin)) return new Response('Forbidden', { status: 403 });
   const ip = req.headers.get('x-forwarded-for')?.split(',')[0].trim() || 'x';
@@ -101,7 +126,22 @@ ${clip(b.facts, 6000) || 'none'}`;
       }
     } catch {}
   }
-  // 2) Anthropic (Groq yoksa, sınır dolduysa ya da hata verdiyse)
+  // 2) OpenRouter ücretsiz modelleri (en güçlü ücretsiz modeller sırayla, en sonda openrouter/free)
+  if (!text && orKey) {
+    try {
+      const models = await freeModels();
+      const r = await fetch('https://openrouter.ai/api/v1/chat/completions', {
+        method: 'POST',
+        headers: { Authorization: `Bearer ${orKey}`, 'content-type': 'application/json', 'HTTP-Referer': 'https://www.vizamigo.com', 'X-Title': 'Vizamigo' },
+        body: JSON.stringify({ models, max_tokens: 900, temperature: 0.4, messages: [{ role: 'system', content: system }, ...msgs] })
+      });
+      if (r.ok) {
+        const j = (await r.json()) as { choices?: Array<{ message?: { content?: string } }> };
+        text = (j.choices?.[0]?.message?.content || '').trim();
+      }
+    } catch {}
+  }
+  // 3) Anthropic (ücretli; yalnızca anahtar eklenmişse)
   if (!text && anthKey) {
     try {
       const r = await fetch('https://api.anthropic.com/v1/messages', {
