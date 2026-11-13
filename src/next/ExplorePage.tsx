@@ -137,6 +137,32 @@ export const ExplorePage: React.FC<ExploreProps> = (p) => {
     }
   ];
 
+  // Rehber ızgarasında son satırda boş hücre kalmasın: sütun sayısını ölçüp son kartı kalan hücrelere yayar
+  const guidesRef = React.useRef<HTMLDivElement>(null);
+  React.useLayoutEffect(() => {
+    const el = guidesRef.current;
+    if (!el) return;
+    const fit = () => {
+      const cards = [...el.children] as HTMLElement[];
+      cards.forEach((c) => (c.style.gridColumn = ''));
+      const cols = getComputedStyle(el).gridTemplateColumns.split(' ').filter(Boolean).length || 1;
+      if (cols < 2) return;
+      // Ana kart (CSS order:-1) her zaman başta: geniş ekranda 2 satır, mobilde tam satır kaplar
+      let used = 0;
+      for (const c of cards) {
+        const cs = getComputedStyle(c);
+        used += c.classList.contains('main') && cs.gridColumnEnd === '-1' ? cols : cs.gridRowStart.includes('span 2') || cs.gridRowEnd.includes('span 2') ? 2 : 1;
+      }
+      const rem = used % cols;
+      const last = cards.filter((c) => !c.classList.contains('main')).pop();
+      if (rem && last) last.style.gridColumn = `span ${cols - rem + 1}`;
+    };
+    fit();
+    const ro = new ResizeObserver(fit);
+    ro.observe(el);
+    return () => ro.disconnect();
+  }, [language]);
+
   return (
     <div className="vz-page">
       <div className="rd-home">
@@ -183,7 +209,7 @@ export const ExplorePage: React.FC<ExploreProps> = (p) => {
           <TileGrid tiles={tiles} openRequest={req} label={l('Keşfet araçları', 'Explore tools', 'Werkzeuge', 'Herramientas', 'Инструменты')} />
         </section>
 
-        <Deferred minHeight={320}>
+        <Deferred minHeight={isNarrow() ? 310 : 360} id="tours">
           <Suspense fallback={null}>
             <TourRail passport={p.currentPassport} />
           </Suspense>
@@ -196,16 +222,13 @@ export const ExplorePage: React.FC<ExploreProps> = (p) => {
             title={l('Güncel rehberler', 'Travel rules 2026', 'Reiseregeln 2026', 'Normas de viaje 2026', 'Правила въезда 2026')}
             sub={l('Schengen evrakları, ETIAS, ETA, ESTA ve Yunan adaları kapıda vize: kaynaklı ve tarihli.', 'Schengen documents, ETIAS, ETA, ESTA and Greek islands visa: sourced and dated.', 'Schengen-Unterlagen, ETIAS, ETA, ESTA und Griechische Inseln: mit Quellen und Datum.', 'Documentos Schengen, ETIAS, ETA, ESTA e islas griegas: con fuentes y fecha.', 'Шенген, ETIAS, ETA, ESTA и греческие острова: с источниками и датой.')}
           />
-          <div className="vz-guides">
+          <div className="vz-guides" ref={guidesRef}>
             {(() => {
               const list = GUIDE_LINKS.filter((g) => (GUIDE_LABELS[language] || GUIDE_LABELS.en)[g.id]);
-              // Mobilde 2 sütun: ana kart tam genişlik; kalan sayı tekse son kart da tam genişlik olsun, boşluk kalmasın
-              const rest = list.filter((g) => g.id !== 'schengen_documents');
-              const wideLast = rest.length % 2 === 1 ? rest[rest.length - 1]?.id : '';
               return list.map((g) => {
               const x = (GUIDE_LABELS[language] || GUIDE_LABELS.en)[g.id];
               return (
-                <a key={g.id} className={`vz-guide-card${g.id === 'schengen_documents' ? ' main' : ''}${g.id === wideLast ? ' wide-m' : ''}`} href={`/${language}/info/${g.id}`}>
+                <a key={g.id} className={`vz-guide-card${g.id === 'schengen_documents' ? ' main' : ''}`} href={`/${language}/info/${g.id}`}>
                   <span className="vz-ic"><Icon name={g.icon as never} size={20} /></span>
                   <b>{x.t}</b>
                   <span>{x.d}</span>
@@ -218,7 +241,7 @@ export const ExplorePage: React.FC<ExploreProps> = (p) => {
 
         <HomeMaps passport={p.currentPassport} onOpenCountry={p.onOpenCountry} />
 
-        <Deferred>
+        <Deferred minHeight={isNarrow() ? 1210 : 915} id="rails">
           <Suspense fallback={null}>
             <HomeRails passport={p.currentPassport} onOpenCountry={p.onOpenCountry} onOpenTile={(id) => openTile(id)} />
           </Suspense>
@@ -260,7 +283,7 @@ const HomeMaps: React.FC<{ passport: string; onOpenCountry: (c: string) => void 
       setNear(true);
       return;
     }
-    const io = new IntersectionObserver((e) => e.some((x) => x.isIntersecting) && setNear(true), { rootMargin: '400px' });
+    const io = new IntersectionObserver((e) => e.some((x) => x.isIntersecting) && setNear(true), { rootMargin: '1200px 0px' });
     io.observe(el);
     return () => io.disconnect();
   }, [near]);
@@ -294,19 +317,28 @@ const HomeMaps: React.FC<{ passport: string; onOpenCountry: (c: string) => void 
   );
 };
 
-/** Ekrana yaklaşınca (ya da tarayıcı boşalınca) çizer; ilk açılışı hafifletir. */
-const Deferred: React.FC<{ children: React.ReactNode; minHeight?: number }> = ({ children, minHeight = 600 }) => {
+const isNarrow = () => typeof window !== 'undefined' && window.innerWidth < 640;
+
+/** Ekrana yaklaşınca ya da sayfa yüklendikten sonra tarayıcı boşalınca çizer; ilk açılışı hafifletir.
+ *  Kullanıcı hızlı kaydırdığında boş alan görmesin diye içerik, ilk yüklemeden kısa süre sonra arka planda da hazırlanır. */
+const Deferred: React.FC<{ children: React.ReactNode; minHeight?: number; id?: string }> = ({ children, minHeight = 600, id }) => {
   const ref = React.useRef<HTMLDivElement>(null);
   const [show, setShow] = useState(false);
   useEffect(() => {
     if (show) return;
     const el = ref.current;
     let io: IntersectionObserver | null = null;
+    let idle: number | undefined;
+    let t: number | undefined;
+    const go = () => setShow(true);
     if (el && 'IntersectionObserver' in window) {
-      io = new IntersectionObserver((e) => e.some((x) => x.isIntersecting) && setShow(true), { rootMargin: '600px' });
+      io = new IntersectionObserver((e) => e.some((x) => x.isIntersecting) && go(), { rootMargin: '1400px 0px' });
       io.observe(el);
-    } else setShow(true);
-    return () => io?.disconnect();
+    } else go();
+    const w = window as Window & { requestIdleCallback?: (cb: () => void, o?: { timeout: number }) => number; cancelIdleCallback?: (n: number) => void };
+    const later = () => { t = window.setTimeout(() => { if (w.requestIdleCallback) idle = w.requestIdleCallback(go, { timeout: 3000 }); else go(); }, 1200); };
+    if (document.readyState === 'complete') later(); else window.addEventListener('load', later, { once: true });
+    return () => { io?.disconnect(); window.removeEventListener('load', later); if (t) clearTimeout(t); if (idle && w.cancelIdleCallback) w.cancelIdleCallback(idle); };
   }, [show]);
-  return show ? <>{children}</> : <div ref={ref} style={{ minHeight }} aria-hidden="true" />;
+  return <div ref={ref} data-defer={id} style={show ? undefined : { minHeight }}>{show ? children : null}</div>;
 };

@@ -881,17 +881,17 @@ html.dark .vz-art { filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.35)); }
 .vz-check-bar i { display: block; height: 100%; background: var(--rd-sea); transition: width .3s; }
 
 /* ana sayfa: güncel rehber kartları */
-.vz-guides { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; }
+.vz-guides { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; grid-auto-flow: row dense; }
 .vz-guide-card { display: grid; gap: 6px; padding: 16px; border-radius: var(--vz-r, 18px); background: var(--rd-surface); border: 1px solid var(--rd-line); color: var(--rd-fg); text-decoration: none; transition: transform .2s, box-shadow .2s; }
 .vz-guide-card:hover { transform: translateY(-2px); box-shadow: 0 10px 24px -14px rgba(0,0,0,.35); }
 .vz-guide-card b { font-size: 16px; }
 .vz-guide-card > span:last-child { font-size: 13.5px; line-height: 1.5; color: var(--rd-muted); }
-.vz-guide-card.main { background: linear-gradient(135deg, var(--rd-sea-tint), var(--rd-surface)); border-color: var(--rd-sea-soft); }
+.vz-guide-card.main { order: -1; background: linear-gradient(135deg, var(--rd-sea-tint), var(--rd-surface)); border-color: var(--rd-sea-soft); }
 @media (min-width: 900px) { .vz-guide-card.main { grid-row: span 2; align-content: center; } .vz-guide-card.main b { font-size: 20px; } }
 @media (max-width: 640px) {
   .vz-guides { grid-template-columns: 1fr 1fr; gap: 10px; grid-auto-flow: row dense; }
   .vz-guide-card { padding: 14px; }
-  .vz-guide-card.main, .vz-guide-card.wide-m { grid-column: 1 / -1; }
+  .vz-guide-card.main { grid-column: 1 / -1; }
   .vz-guide-card:not(.main) > span:last-child { display: none; }
   .vz-guide-card b { font-size: 15px; }
 }
