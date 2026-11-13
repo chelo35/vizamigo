@@ -758,7 +758,7 @@ const CountryPageInner: React.FC<Props & { data: CountryBundle }> = ({ code, pas
     <div className="vz-page">
       {/* yalnızca yazdırırken görünür: tek sayfalık seyahat dosyası */}
       <div className="vz-print" aria-hidden="true">
-        <h1>{name} · {l('Seyahat dosyası', 'Travel brief', 'Reiseübersicht', 'Dossier de viaje', 'Памятка')}</h1>
+        <p className="vz-print-h">{name} · {l('Seyahat dosyası', 'Travel brief', 'Reiseübersicht', 'Dossier de viaje', 'Памятка')}</p>
         <p><b>{getCountryName(passport, language)}:</b> {answer}</p>
         <table>
           <tbody>

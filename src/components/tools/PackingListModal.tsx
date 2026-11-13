@@ -268,10 +268,10 @@ export const PackingListModal: React.FC<Props> = ({ isOpen, onClose }) => {
               type="button"
               onClick={onClose}
               className="inline-flex items-center gap-2 px-3 sm:px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-slate-100 hover:bg-slate-200 dark:bg-white/10 dark:hover:bg-white/15 text-slate-700 dark:text-slate-200 transition-all cursor-pointer shrink-0"
-              title={l("Geri", 'Back', 'Zurück')}
+              title={l('Geri', 'Back', 'Zurück', 'Atrás', 'Назад')}
             >
               <ArrowLeft className="w-4 h-4 text-slate-600 dark:text-slate-300" />
-              <span>{l("Geri", 'Back', 'Zurück')}</span>
+              <span>{l('Geri', 'Back', 'Zurück', 'Atrás', 'Назад')}</span>
             </button>
             <div className="flex items-center gap-2.5 min-w-0">
               <div className="w-9 h-9 rounded-xl bg-teal-500/10 text-teal-600 dark:text-teal-400 flex items-center justify-center shrink-0">
@@ -282,7 +282,7 @@ export const PackingListModal: React.FC<Props> = ({ isOpen, onClose }) => {
                   {l('Akıllı Bavul Hazırlık Kontrol Listesi', 'Smart Packing Checklist', 'Smarte Packliste', 'Lista de Equipaje Inteligente', 'Умный список вещей')}
                 </h1>
                 <p className="text-xs text-slate-500 dark:text-slate-400 truncate hidden sm:block">
-                  {l('Seyahat tipine özel liste, ilerleme çubuğu ve kalıcı hafıza', 'Customized by trip style, progress tracker & auto-saved')}
+                  {l('Seyahat tipine özel liste, ilerleme çubuğu ve kalıcı hafıza', 'Customized by trip style, progress tracker & auto-saved', 'Passend zum Reisestil, mit Fortschrittsanzeige und automatisch gespeichert', 'Adaptada a tu tipo de viaje, con progreso y guardado automático', 'Под тип поездки, с прогрессом и автосохранением')}
                 </p>
               </div>
             </div>
@@ -293,19 +293,19 @@ export const PackingListModal: React.FC<Props> = ({ isOpen, onClose }) => {
               type="button"
               onClick={handlePrintPdf}
               className="inline-flex items-center gap-1.5 px-3 sm:px-4 py-2 rounded-xl text-xs font-black bg-gradient-to-r from-[#F97316] to-[#FB7185] text-white hover:brightness-110 shadow-sm cursor-pointer transition-all"
-              title={l('PDF Olarak İndir / Yazdır', 'Print / Save as PDF')}
+              title={l('PDF Olarak İndir / Yazdır', 'Print / Save as PDF', 'Drucken / als PDF speichern', 'Imprimir / guardar como PDF', 'Печать / сохранить в PDF')}
             >
               <span>📄</span>
-              <span className="hidden sm:inline">{l('PDF / Yazdır', 'PDF / Print')}</span>
+              <span className="hidden sm:inline">{l('PDF / Yazdır', 'PDF / Print', 'PDF / Drucken', 'PDF / Imprimir', 'PDF / Печать')}</span>
             </button>
             <button
               type="button"
               onClick={onClose}
               className="p-2 sm:px-3 sm:py-2 rounded-xl bg-slate-100 dark:bg-white/10 hover:bg-slate-200 dark:hover:bg-white/15 text-slate-600 dark:text-slate-300 transition-colors cursor-pointer shrink-0 inline-flex items-center gap-1.5"
-              title={l('Kapat', 'Close')}
+              title={l('Kapat', 'Close', 'Schließen', 'Cerrar', 'Закрыть')}
             >
               <X className="w-5 h-5" />
-              <span className="text-xs font-bold hidden sm:inline">{l('Kapat', 'Close')}</span>
+              <span className="text-xs font-bold hidden sm:inline">{l('Kapat', 'Close', 'Schließen', 'Cerrar', 'Закрыть')}</span>
             </button>
           </div>
         </div>

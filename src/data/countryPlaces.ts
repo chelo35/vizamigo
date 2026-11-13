@@ -329,3 +329,6 @@ export const findPlace = (code: string, q: string): Place | undefined => {
   const n = norm(q).replace(/^ko /, 'koh ');
   return (PLACES[code] || []).find((p) => norm(p.en) === n);
 };
+
+/** Yalnızca Türkçe yazımlar: aramada eşleşsin ama başka dillerdeki öneri listesinde gösterilmesin. */
+export const TR_ONLY_PLACES = new Set<string>(["Abu Dabi", "Akabe", "Almatı", "Anvers", "Asvan", "Atina", "Azor Adaları", "Baf", "Bahreyn", "Bakü", "Batum", "Belgrad", "Bişkek", "Brüksel", "Budapeşte", "Buhara", "Burgaz", "Bükreş", "Cakarta", "Cenevre", "Cerbe", "Cidde", "Darüsselam", "Dıraç", "Edinburg", "Erivan", "Fas", "Filibe", "Gebele", "Gence", "Girit", "Gize", "Gobi Çölü", "Gümrü", "Hive", "Hurgada", "Issık Göl", "Kahire", "Kapadokya", "Kartaca", "Kazablanka", "Kolombo", "Kopenhag", "Krakov", "Köstence", "Lahey", "Laponya", "Limasol", "Lizbon", "Londra", "Luksor", "Lut Gölü", "Lüksemburg", "Manastır", "Marakeş", "Medine", "Mekke", "Mikonos", "Münih", "Nahçıvan", "Ohri", "Oş", "Panama Kanalı", "Paskalya Adası", "Pekin", "Riyad", "Rodos", "Saraybosna", "Selanik", "Semerkant", "Seul", "Sidney", "Sofya", "Susa", "Tanca", "Taşkent", "Tiran", "Titikaka Gölü", "Tunus", "Türkistan", "Ulan Batur", "Varşova", "Viyana", "Yeni Delhi", "Zürih", "Çimkent", "Üsküp", "İskenderiye", "Şafşavan", "Şanghay", "Şarika", "Şarm El Şeyh", "Şian"]);

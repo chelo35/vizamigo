@@ -34,13 +34,20 @@ export const HomeBooking: React.FC<{ passport: string; onOpenCountry: (code: str
   const [q, setQ] = useState('');
   const [err, setErr] = useState(false);
   const [places, setPlaces] = useState<Record<string, { en: string }[]> | null>(null);
+  const [trOnly, setTrOnly] = useState<Set<string> | null>(null);
   const countries = useMemo(
     () => Object.keys(GEO_DATA).map((c) => ({ c, n: getCountryName(c, language), en: getCountryName(c, 'en') })).sort((a, b) => a.n.localeCompare(b.n, language)),
     [language]
   );
   // Şehir listesi yalnızca kutuya dokununca yüklenir (ana sayfa hızlı kalsın)
   const loadPlaces = () => {
-    if (!places) import('../data/countryPlaces').then((m) => setPlaces(m.PLACES)).catch(() => {});
+    if (!places)
+      import('../data/countryPlaces')
+        .then((m) => {
+          setPlaces(m.PLACES);
+          setTrOnly(m.TR_ONLY_PLACES);
+        })
+        .catch(() => {});
   };
   useEffect(() => setErr(false), [q]);
 
@@ -93,14 +100,14 @@ export const HomeBooking: React.FC<{ passport: string; onOpenCountry: (code: str
     if (places && n.length >= 2) {
       for (const [code, list] of Object.entries(places)) {
         for (const p of list) {
-          if (norm(p.en).startsWith(n) && !out.some((o) => o.value === p.en)) out.push({ label: p.en, sub: getCountryName(code, language), value: p.en });
+          if (norm(p.en).startsWith(n) && !(language !== 'tr' && trOnly?.has(p.en)) && !out.some((o) => o.value === p.en)) out.push({ label: p.en, sub: getCountryName(code, language), value: p.en });
           if (out.length >= 8) break;
         }
         if (out.length >= 8) break;
       }
     }
     return out;
-  }, [q, countries, places, language]);
+  }, [q, countries, places, language, trOnly]);
 
   return (
     <form className="vz-hb" onSubmit={go} aria-label={l('Tatil ara', 'Search a trip', 'Reise suchen', 'Buscar viaje', 'Поиск поездки')}>

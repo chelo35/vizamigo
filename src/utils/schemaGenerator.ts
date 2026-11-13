@@ -7,7 +7,7 @@ import { ruIn, ruOf } from '../data/ruCases';
  */
 
 import { SupportedLanguage } from '../i18n/types';
-import { getCountryName } from '../data/passportData';
+import { getCountryName, etaName } from '../data/passportData';
 import { getPassportItems } from '../utils/calculator';
 import { buildAbsoluteLocalizedUrl, BASE_URL } from './seoRouter';
 import { INFO } from '../data/passportData';
@@ -351,18 +351,30 @@ function getSerpAnswer(
 ): { title: string; description: string } {
   const days = v && /^\d+$/.test(v) ? v : '';
   const free = cat === 'free' || cat === 'id';
+  // Kendi ülkesi: vize sorusu yok, vatandaş kimlik ya da pasaportla girer
+  if (code === pass) {
+    const OWN: Record<string, { title: string; description: string }> = {
+      tr: { title: `${C} Seyahat Rehberi 2026: Gezilecek Yerler, Rota ve Fiyatlar`, description: `${C} için gezi rotası, şehirler, uçuş–otel fiyatları, acil numaralar ve pratik bilgiler. Kendi ülken olduğu için vize gerekmez.` },
+      en: { title: `${C} Travel Guide 2026: Places, Routes and Prices`, description: `${C} trip ideas, cities, flight and hotel prices, emergency numbers and practical tips. Your own country: no visa needed.` },
+      de: { title: `${C} Reiseführer 2026: Orte, Routen und Preise`, description: `${C}: Reiseideen, Städte, Flug- und Hotelpreise, Notrufnummern und praktische Tipps. Dein eigenes Land: kein Visum nötig.` },
+      es: { title: `Guía de viaje de ${C} 2026: lugares, rutas y precios`, description: `${C}: ideas de viaje, ciudades, precios de vuelos y hoteles, teléfonos de emergencia y consejos. Tu propio país: no necesitas visa.` },
+      ru: { title: `${C}: путеводитель 2026 — места, маршруты и цены`, description: `${C}: идеи поездок, города, цены на билеты и отели, экстренные номера и советы. Это ваша страна: виза не нужна.` }
+    };
+    return OWN[lang] || OWN.en;
+  }
+  const eta = etaName(code);
   const geo = GEO_DATA[code];
   const cap = geo?.capital ? capitalName(code, lang, geo.capital) : '';
   const CC = cap && cap !== C ? `${C} (${cap})` : C;
   switch (lang) {
     case 'tr': {
-      const short = cat === 'id' ? `Kimlikle Vizesiz${days ? ` ${days} Gün` : ''}` : free ? (days ? `${days} Gün Vizesiz` : 'Vizesiz') : cat === 'voa' ? 'Kapıda Vize' : cat === 'evisa' ? 'e-Vize Gerekli' : cat === 'eta' ? 'eTA Gerekli' : 'Vize Gerekli';
+      const short = cat === 'id' ? `Kimlikle Vizesiz${days ? ` ${days} Gün` : ''}` : free ? (days ? `${days} Gün Vizesiz` : 'Vizesiz') : cat === 'voa' ? 'Kapıda Vize' : cat === 'evisa' ? 'e-Vize Gerekli' : cat === 'eta' ? `${eta} Gerekli` : 'Vize Gerekli';
       const who = pass === 'TR' ? 'Türklere' : `${P} Pasaportuna`;
       const long = cat === 'id' ? `${P} vatandaşları vizesiz, çipli kimlik kartıyla da girebilir${days ? ` (${days} güne kadar)` : ''}`
         : free ? `${P} pasaportuyla vize gerekmez${days ? `, ${days} güne kadar kalınabilir` : ''}`
         : cat === 'voa' ? `${P} pasaportuyla vize varışta, havalimanında veya sınır kapısında alınır${days ? ` (${days} gün)` : ''}`
         : cat === 'evisa' ? `${P} pasaportuyla yola çıkmadan önce online e-Vize alınmalı${days ? ` (${days} gün)` : ''}`
-        : cat === 'eta' ? `${P} pasaportuyla yola çıkmadan önce elektronik seyahat izni (eTA) alınmalı`
+        : cat === 'eta' ? `${P} pasaportuyla yola çıkmadan önce elektronik seyahat izni (${eta}) alınmalı`
         : `${P} pasaportuyla yola çıkmadan önce konsolosluk vizesi alınmalı`;
       return {
         title: cat === 'id' && pass === 'TR' ? `${C} Kimlikle Gidilir mi? Vize İstiyor mu? (2026)` : `${C} Vize İstiyor mu? ${who} ${short} (2026)`,
@@ -370,12 +382,12 @@ function getSerpAnswer(
       };
     }
     case 'de': {
-      const short = free ? `visumfrei${days ? ` (${days} Tage)` : ''}` : cat === 'voa' ? 'Visum bei Ankunft' : cat === 'evisa' ? 'e-Visum nötig' : cat === 'eta' ? 'eTA nötig' : 'Visum nötig';
+      const short = free ? `visumfrei${days ? ` (${days} Tage)` : ''}` : cat === 'voa' ? 'Visum bei Ankunft' : cat === 'evisa' ? 'e-Visum nötig' : cat === 'eta' ? `${eta} nötig` : 'Visum nötig';
       const dem = DE_DEMONYM[pass] || `Pass aus ${P}`;
       const long = free ? `Mit ${P}-Pass visumfrei${days ? `, bis zu ${days} Tage` : ''}${cat === 'id' ? ', auch mit Personalausweis' : ''}`
         : cat === 'voa' ? `Mit ${P}-Pass gibt es das Visum bei der Ankunft${days ? ` (${days} Tage)` : ''}`
         : cat === 'evisa' ? `Mit ${P}-Pass vor der Reise online ein e-Visum beantragen${days ? ` (${days} Tage)` : ''}`
-        : cat === 'eta' ? `Mit ${P}-Pass vor der Reise eine elektronische Reisegenehmigung (eTA) beantragen`
+        : cat === 'eta' ? `Mit ${P}-Pass vor der Reise eine elektronische Reisegenehmigung (${eta}) beantragen`
         : `Mit ${P}-Pass vor der Reise ein Visum bei der Botschaft beantragen`;
       return {
         title: DE_DEMONYM[pass] && pass !== LANG_PASS.de ? `Einreise ${C} für ${dem} 2026: ${short}` : `Einreise ${C} 2026: Visum nötig? ${DE_DEMONYM[pass] ? `${dem}: ` : ''}${short}`,
@@ -383,11 +395,11 @@ function getSerpAnswer(
       };
     }
     case 'es': {
-      const short = free ? `sin visa${days ? ` ${days} días` : ''}` : cat === 'voa' ? 'visa a la llegada' : cat === 'evisa' ? 'e-Visa obligatoria' : cat === 'eta' ? 'eTA obligatoria' : 'visa obligatoria';
+      const short = free ? `sin visa${days ? ` ${days} días` : ''}` : cat === 'voa' ? 'visa a la llegada' : cat === 'evisa' ? 'e-Visa obligatoria' : cat === 'eta' ? `${eta} obligatoria` : 'visa obligatoria';
       const long = free ? `con pasaporte de ${P} no se necesita visa${days ? `, estancia de hasta ${days} días` : ''}`
         : cat === 'voa' ? `con pasaporte de ${P} la visa se obtiene a la llegada${days ? ` (${days} días)` : ''}`
         : cat === 'evisa' ? `con pasaporte de ${P} hay que tramitar una e-Visa en línea antes del viaje`
-        : cat === 'eta' ? `con pasaporte de ${P} hay que tramitar una autorización electrónica (eTA) antes del viaje`
+        : cat === 'eta' ? `con pasaporte de ${P} hay que tramitar una autorización electrónica (${eta}) antes del viaje`
         : `con pasaporte de ${P} hay que solicitar la visa en el consulado antes del viaje`;
       return {
         title: `Requisitos para viajar a ${C} 2026: ${short} con pasaporte de ${P}`,
@@ -395,12 +407,12 @@ function getSerpAnswer(
       };
     }
     case 'ru': {
-      const short = free ? `без визы${days ? ` ${days} дней` : ''}` : cat === 'voa' ? 'виза по прилёте' : cat === 'evisa' ? 'нужна e-Visa' : cat === 'eta' ? 'нужна eTA' : 'нужна виза';
+      const short = free ? `без визы${days ? ` ${days} дней` : ''}` : cat === 'voa' ? 'виза по прилёте' : cat === 'evisa' ? 'нужна e-Visa' : cat === 'eta' ? `нужна ${eta}` : 'нужна виза';
       const who = pass === 'RU' ? 'Россиянам' : `Гражданам ${ruOf(P)}`;
       const long = free ? `для граждан ${ruOf(P)} виза не нужна${days ? `, до ${days} дней` : ''}`
         : cat === 'voa' ? `гражданам ${ruOf(P)} виза ставится по прилёте${days ? ` (${days} дней)` : ''}`
         : cat === 'evisa' ? `гражданам ${ruOf(P)} нужно заранее оформить электронную визу`
-        : cat === 'eta' ? `гражданам ${ruOf(P)} нужно заранее оформить электронное разрешение (eTA)`
+        : cat === 'eta' ? `гражданам ${ruOf(P)} нужно заранее оформить электронное разрешение (${eta})`
         : `гражданам ${ruOf(P)} нужна виза, оформляется в консульстве до поездки`;
       return {
         title: `Нужна ли виза ${ruIn(C, 'acc')}? ${who}: ${short} (2026)`,
@@ -409,12 +421,12 @@ function getSerpAnswer(
     }
     case 'en':
     default: {
-      const short = free ? `Visa-Free${days ? ` ${days} Days` : ''}` : cat === 'voa' ? 'Visa on Arrival' : cat === 'evisa' ? 'eVisa Required' : cat === 'eta' ? 'eTA Required' : 'Visa Required';
+      const short = free ? `Visa-Free${days ? ` ${days} Days` : ''}` : cat === 'voa' ? 'Visa on Arrival' : cat === 'evisa' ? 'eVisa Required' : cat === 'eta' ? `${eta} Required` : 'Visa Required';
       const dem = EN_DEMONYM[pass] ? `${EN_DEMONYM[pass]} Citizens` : `${P} Passport`;
       const long = free ? `no visa needed with a ${P} passport${days ? `, stay up to ${days} days` : ''}`
         : cat === 'voa' ? `${P} passport holders get a visa on arrival${days ? ` (${days} days)` : ''}`
         : cat === 'evisa' ? `${P} passport holders must get an eVisa online before travel`
-        : cat === 'eta' ? `${P} passport holders need an electronic travel authorisation (eTA) before travel`
+        : cat === 'eta' ? `${P} passport holders need an electronic travel authorisation (${eta}) before travel`
         : `${P} passport holders must apply for a visa at an embassy before travel`;
       return {
         title: `${C} Visa Requirements 2026: ${short} for ${dem}`,

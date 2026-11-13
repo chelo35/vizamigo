@@ -14,6 +14,7 @@ import { tpLinks, tpLogo, stay22, s22Flights, s22Cars, gygLink, STAY22_AID, TWEL
 import { TOURS, PACKAGES, LIVE } from '../data/tours';
 import ESIM from '../data/esimPrices.json';
 import { TRANSFER_ROUTES, kiwiRouteUrl, scooterUrl } from '../data/transferRoutes';
+import { routeName } from '../data/routeNames';
 import { PLACES, findPlace } from '../data/countryPlaces';
 import { CITIES, PRICES_CHECKED, SAFETYWING_4W_USD, carCityUrl, type CarClass } from '../data/cityPrices';
 import { thirdPartyAllowed } from '../utils/consent';
@@ -681,7 +682,7 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
               {shownRoutes.map((r) => (
                 <a key={r.slug} className="vz-qd-fare" href={kiwiRouteUrl(code, r.slug, language)} target="_blank" rel="noopener noreferrer sponsored">
                   <b>~{r.cur === 'EUR' ? eurTo(r.usd) : usdTo(r.usd)}</b>
-                  <span>{r.from} ({r.iata}) → {r.to}</span>
+                  <span>{routeName(r.from, language)} ({r.iata}) → {routeName(r.to, language)}</span>
                   <small>{l('araç başı, sabit fiyat', 'per car, fixed price', 'pro Auto, Festpreis', 'por coche, precio fijo', 'за авто, фикс. цена')} ›</small>
                 </a>
               ))}
@@ -713,7 +714,7 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
                 {gMode ? (
                   <b className="vz-gr-see">{l(`${GMODES.find((m) => m.k === gMode)?.t} saat ve fiyatları`, `${GMODES.find((m) => m.k === gMode)?.t} times & prices`, `${GMODES.find((m) => m.k === gMode)?.t}: Zeiten & Preise`, `${GMODES.find((m) => m.k === gMode)?.t}: horarios y precios`, `${GMODES.find((m) => m.k === gMode)?.t}: расписание и цены`)} ›</b>
                 ) : (
-                  <b>{l('', '', 'ab ', 'desde ', 'от ')}~{usdTo(g.usd)}{l('’den', '', '', '', '')}</b>
+                  <b>{l('', '', 'ab ', 'desde ', 'от ')}~{usdTo(g.usd)}{language === 'tr' ? '’den' : ''}</b>
                 )}
                 <span>{groundCity} → {g.to}</span>
                 <small className="vz-gr-modes">{g.modes.map((x) => modeOf(x)).filter((m): m is NonNullable<typeof m> => !!m && (!gMode || m.k === gMode)).map((m) => <ModeBadge key={m.k} k={m.k} title={m.t} />)}</small>

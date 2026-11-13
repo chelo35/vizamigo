@@ -803,7 +803,7 @@ export const CAT_INFO: Record<VisaCategory, { label: string; color: string; badg
   none: { label: 'Kabul edilmiyor', color: '#94A3B8', badgeBg: 'bg-slate-500/10 text-slate-700 dark:text-slate-400 border border-slate-500/20 backdrop-blur-xs', badgeText: 'Giriş Yok' }
 };
 
-export function getCategoryBadgeLabel(item?: { cat: VisaCategory; id?: boolean; v: string } | null, lang?: string): string {
+export function getCategoryBadgeLabel(item?: { cat: VisaCategory; id?: boolean; v: string; c?: string } | null, lang?: string): string {
   const currentLang = lang || (typeof localStorage !== 'undefined' ? localStorage.getItem('vr_lang') || 'tr' : 'tr');
 
   if (!item) {
@@ -852,10 +852,12 @@ export function getCategoryBadgeLabel(item?: { cat: VisaCategory; id?: boolean; 
       if (currentLang === 'es') return 'Visado a la Llegada';
       if (currentLang === 'ru') return 'Виза по Прибытии';
       return currentLang === 'de' ? 'Visum bei Ankunft' : currentLang === 'en' ? 'Visa on Arrival' : 'Kapıda Vize';
-    case 'eta':
-      if (currentLang === 'es') return 'Autorización ETA';
-      if (currentLang === 'ru') return 'Разрешение ETA';
-      return currentLang === 'de' ? 'ETA-Genehmigung' : currentLang === 'en' ? 'ETA Authorization' : 'ETA İzni';
+    case 'eta': {
+      const n = item.c ? etaName(item.c) : 'ETA';
+      if (currentLang === 'es') return `Autorización ${n}`;
+      if (currentLang === 'ru') return `Разрешение ${n}`;
+      return currentLang === 'de' ? `${n}-Genehmigung` : currentLang === 'en' ? `${n} required` : `${n} izni`;
+    }
     case 'visa':
       if (currentLang === 'es') return 'Visado Obligatorio';
       if (currentLang === 'ru') return 'Требуется Виза';
@@ -1775,3 +1777,9 @@ export const PRACTICAL_INFO_MAP: Record<string, CountryPracticalInfo> = {
   'JP': getPracticalInfo('JP', 'tr'),
   'DE': getPracticalInfo('DE', 'tr')
 };
+
+/** Elektronik seyahat izninin ülkeye özgü resmî adı (ABD ESTA, İngiltere ETA, Kanada eTA…) */
+export function etaName(code: string): string {
+  return ({ US: 'ESTA', GB: 'ETA', CA: 'eTA', KR: 'K-ETA', NZ: 'NZeTA', AU: 'ETA', IL: 'ETA-IL', KE: 'eTA', LK: 'ETA', PK: 'ETA', KN: 'ETA', SC: 'ETA', SR: 'e-Entry', MX: 'SAE' } as Record<string, string>)[code] || 'eTA';
+}
+

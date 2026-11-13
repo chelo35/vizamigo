@@ -170,7 +170,7 @@ export const Navigation: React.FC<NavigationProps> = ({
               {/* Quick Tools */}
               <div>
                 <div className="text-xs font-extrabold uppercase tracking-wider text-[#0F766E] dark:text-[#2DD4BF] mb-2 px-1">
-                  {l('Hızlı Araçlar', 'Quick Tools')}
+                  {l('Hızlı Araçlar', 'Quick Tools', 'Schnelle Tools', 'Herramientas rápidas', 'Быстрые инструменты')}
                 </div>
                 <div className="grid grid-cols-2 gap-2">
                   {quickTools.map((tool) => {

@@ -10,6 +10,7 @@
  *
  * Hata olursa derlemeyi bozmaz: uyarı yazar ve çıkar.
  */
+import { getInfoPage } from '../src/data/infoPages';
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -506,13 +507,17 @@ async function main() {
     // bilgi sayfaları
     for (const [id, names] of Object.entries(INFO)) {
       const t = names[Math.max(0, ['tr', 'en', 'de', 'es', 'ru'].indexOf(lang))];
+      const ip = getInfoPage(id, lang);
       write(path.join(lang, 'info', id, 'index.html'), build({
         lang,
         canonical: `${BASE_URL}/${lang}/info/${id}`,
         alts: [...LANGS.map((c) => ({ hreflang: c, href: `${BASE_URL}/${c}/info/${id}` })), { hreflang: 'x-default', href: `${BASE_URL}/en/info/${id}` }],
-        title: `${t} | Vizamigo`,
+        title: ip ? (`${ip.title}: ${ip.sub} | Vizamigo`.length <= 65 ? `${ip.title}: ${ip.sub} | Vizamigo` : `${ip.title} | Vizamigo`) : `${t} | Vizamigo`,
+        desc: ip ? (() => { const d = `${ip.sub}. ${ip.blocks.map((b) => b.p || (b.li || []).join(' ')).join(' ')}`; return d.length > 155 ? d.slice(0, d.lastIndexOf(' ', 152)) + '…' : d; })() : undefined,
         head: PRE.info,
-        body: eyebrow(lang, ['Vizamigo']) + h1(t),
+        body: ip
+          ? eyebrow(lang, ['Vizamigo']) + h1(ip.title) + lead(ip.sub) + ip.blocks.map((b) => (b.h ? `<h2>${esc(b.h)}</h2>` : '') + (b.p ? `<p>${esc(b.p)}</p>` : '') + (b.li ? `<ul>${b.li.map((x) => `<li>${esc(x)}</li>`).join('')}</ul>` : '')).join('')
+          : eyebrow(lang, ['Vizamigo']) + h1(t),
         nav: navBlock(lang, `<p>${homeLink(lang)} · ${tabLinks(lang)}</p>`)
       }));
       n++;

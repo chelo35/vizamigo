@@ -34,8 +34,8 @@ const __dirname = path.dirname(__filename);
  * - DATA_UPDATED: ülke verisi (vize kuralları, çeviriler) en son ne zaman değişti
  * Ülke sayfasının tarihi = max(DATA_UPDATED, o ülkenin fotoğraf/künye kontrol tarihi).
  */
-const SITE_UPDATED = '2026-11-04';
-const DATA_UPDATED = '2026-11-05';
+const SITE_UPDATED = '2026-11-13';
+const DATA_UPDATED = '2026-11-13';
 const countryLastmod = (code: string): string => {
   const v = (COUNTRY_VISUALS_MAP[code] as { verifiedAt?: string } | undefined)?.verifiedAt || '';
   return /^\d{4}-\d{2}-\d{2}$/.test(v) && v > DATA_UPDATED ? v : DATA_UPDATED;
