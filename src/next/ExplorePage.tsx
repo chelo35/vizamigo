@@ -152,7 +152,7 @@ export const ExplorePage: React.FC<ExploreProps> = (p) => {
               id="rd-q"
               variant="hero"
               passport={p.currentPassport}
-              placeholder={l('Tayland, Japonya, Schengen…', 'Thailand, Japan, Schengen…', 'Thailand, Japan, Schengen…', 'Tailandia, Japón, Schengen…', 'Таиланд, Япония, Шенген…')}
+              placeholder={l('Vize kuralı, ülke ya da rehber ara…', 'Search visa rules, countries, guides…', 'Visaregeln, Länder, Ratgeber suchen…', 'Busca visados, países, guías…', 'Поиск: визы, страны, гиды…')}
               onOpenCountry={p.onOpenCountry}
               onOpenTool={(tab, tile) => (tab === 'explore' ? openTile(tile) : p.onOpenTool(tab, tile))}
               onQuery={(q) => {
@@ -177,7 +177,7 @@ export const ExplorePage: React.FC<ExploreProps> = (p) => {
       </div>
 
       <div className="vz-wrap vz-page-body" style={{ paddingTop: 28 }}>
-        <HomeBooking passport={p.currentPassport} onOpenCountry={p.onOpenCountry} />
+        <HomeBooking passport={p.currentPassport} onOpenCountry={p.onOpenCountry} destination={destination} onDestination={changeDest} />
         <QuickDeals passport={p.currentPassport} destination={destination} />
         <section className="vz-home-sec" aria-labelledby="vz-h-tools">
           <SecHead

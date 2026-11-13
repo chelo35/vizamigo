@@ -495,9 +495,18 @@ async function main() {
         lang,
         canonical: `${BASE_URL}${toursPath(lang)}`,
         alts: [...LANGS.map((c) => ({ hreflang: c, href: `${BASE_URL}${toursPath(c)}` })), { hreflang: 'x-default', href: `${BASE_URL}${toursPath('en')}` }],
-        title: `${T[0]} | Vizamigo`,
+        title: `${T[0]} | Vizamigo`.length <= 65 ? `${T[0]} | Vizamigo` : T[0],
         desc: T[1],
-        head: PRE.info,
+        head: `<script type="application/ld+json">${JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'ItemList',
+          name: T[0],
+          itemListElement: PACKAGES.map((p, k) => ({
+            '@type': 'ListItem',
+            position: k + 1,
+            item: { '@type': 'TouristTrip', name: p.name[ix], description: routeName(p.route, lang), url: `${BASE_URL}${toursPath(lang)}#${p.id}` }
+          }))
+        }).replace(/</g, '\\u003c')}</script>\n    ${PRE.info}`,
         body: eyebrow(lang, ['Vizamigo']) + h1(T[0]) + lead(T[1]),
         nav: navBlock(lang, `${list}<p>${homeLink(lang)} · ${tabLinks(lang)}</p>`)
       }));

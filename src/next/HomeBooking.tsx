@@ -20,7 +20,7 @@ const norm = (s: string) => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,
 
 type Trip = { from: string; d1: string; d2: string; n: number };
 
-export const HomeBooking: React.FC<{ passport: string; onOpenCountry: (code: string) => void }> = ({ passport, onOpenCountry }) => {
+export const HomeBooking: React.FC<{ passport: string; onOpenCountry: (code: string) => void; destination?: string; onDestination?: (code: string) => void }> = ({ passport, onOpenCountry, destination, onDestination }) => {
   const { l, language } = useI18n();
   const today = iso(new Date());
   const [trip, setTrip] = useState<Trip>(() => {
@@ -68,7 +68,8 @@ export const HomeBooking: React.FC<{ passport: string; onOpenCountry: (code: str
 
   const go = (e: React.FormEvent) => {
     e.preventDefault();
-    const r = resolve(q);
+    // kutu boşsa ana sayfada seçili ülke (üstteki şeritle aynı) kullanılır
+    const r = q.trim() ? resolve(q) : destination && GEO_DATA[destination] ? { code: destination } : null;
     if (!r) {
       setErr(true);
       return;
@@ -88,6 +89,8 @@ export const HomeBooking: React.FC<{ passport: string; onOpenCountry: (code: str
     setQ(v);
     setOpen(false);
     setAct(-1);
+    const r = resolve(v);
+    if (r && onDestination) onDestination(r.code);
   };
   const sugg = useMemo(() => {
     const n = norm(q);
@@ -144,14 +147,13 @@ export const HomeBooking: React.FC<{ passport: string; onOpenCountry: (code: str
               setOpen(true);
             }}
             onBlur={() => setTimeout(() => setOpen(false), 150)}
-            placeholder={l('Ülke ya da şehir: Tayland, Bali, Paris…', 'Country or city: Thailand, Bali, Paris…', 'Land oder Stadt: Thailand, Bali, Paris…', 'País o ciudad: Tailandia, Bali, París…', 'Страна или город: Таиланд, Бали, Париж…')}
+            placeholder={destination && GEO_DATA[destination] ? getCountryName(destination, language) + l(' ya da başka bir ülke, şehir…', ' or another country, city…', ' oder ein anderes Land, eine Stadt…', ' u otro país o ciudad…', ' или другая страна, город…') : l('Ülke ya da şehir: Tayland, Bali, Paris…', 'Country or city: Thailand, Bali, Paris…', 'Land oder Stadt: Thailand, Bali, Paris…', 'País o ciudad: Tailandia, Bali, París…', 'Страна или город: Таиланд, Бали, Париж…')}
             autoComplete="off"
             role="combobox"
             aria-expanded={open && sugg.length > 0}
             aria-controls="vz-hb-sugg"
             aria-autocomplete="list"
             aria-activedescendant={open && act >= 0 && act < sugg.length ? `vz-hb-o${act}` : undefined}
-            required
           />
           {open && sugg.length > 0 && (
             <ul className="vz-hb-sugg" id="vz-hb-sugg" role="listbox">

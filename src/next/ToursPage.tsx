@@ -28,6 +28,8 @@ export const ToursPage: React.FC<{ passport: string; onBack: () => void; onOpenC
     return (TOUR_REGIONS.find((r) => r.id === h)?.id as TourRegion) || 'all';
   });
   const [dur, setDur] = useState<'all' | 's' | 'm' | 'l'>('all');
+  const [more, setMore] = useState(false);
+  useEffect(() => setMore(false), [region, dur, view]);
   const pkgs = PACKAGES.filter((p) => (region === 'all' || p.region === region) && (dur === 'all' || (dur === 's' ? p.days <= 5 : dur === 'm' ? p.days >= 6 && p.days <= 9 : p.days >= 10)));
   const title = l('Turlar ve aktiviteler', 'Tours & activities', 'Touren & Aktivitäten', 'Tours y actividades', 'Экскурсии и туры');
 
@@ -66,9 +68,9 @@ export const ToursPage: React.FC<{ passport: string; onBack: () => void; onOpenC
       sub={l(
         'Dünyanın dört bir yanında rehberli paket turlar: Asya, Balkanlar, Avrupa, Mısır, Türkiye ve Amerika. Bölgeni ve süreni seç, turları karşılaştır.',
         'Guided multi-day tours around the world: Asia, the Balkans, Europe, Egypt, Türkiye and the Americas. Pick a region and length, then compare tours.',
-        'Touren, Museumstickets und Tagesausflüge an beliebten Zielen. Vergleiche Touren mit kostenloser Stornierung, dazu Flüge und Hotels.',
-        'Tours, entradas a museos y excursiones en los destinos favoritos. Compara tours con cancelación gratuita, vuelos y hoteles.',
-        'Экскурсии, билеты в музеи и однодневные поездки в любимых направлениях. Сравните туры с бесплатной отменой, перелёты и отели.'
+        'Geführte Rundreisen weltweit: Asien, Balkan, Europa, Ägypten, Türkei und Amerika. Region und Dauer wählen, dann Touren vergleichen.',
+        'Tours guiados de varios días por todo el mundo: Asia, los Balcanes, Europa, Egipto, Turquía y América. Elige región y duración y compara.',
+        'Многодневные туры с гидом по всему миру: Азия, Балканы, Европа, Египет, Турция и Америка. Выберите регион и длительность и сравните.'
       )}
       words={['Bangkok', 'Rome', 'Cairo', 'Dubai']}
       back={{ label: l('Keşfet', 'Explore', 'Entdecken', 'Explorar', 'Обзор'), onClick: onBack }}
@@ -91,7 +93,7 @@ export const ToursPage: React.FC<{ passport: string; onBack: () => void; onOpenC
             </div>
           </div>
           <div className="vz-tours">
-            {pkgs.map((p) => {
+            {(more ? pkgs : pkgs.slice(0, 8)).map((p) => {
               const img = p.photo || getOptimizedImageUrl(`/images/countries/${p.code.toLowerCase()}.webp`, { width: 480 });
               const regionName = TOUR_REGIONS.find((r) => r.id === p.region)!.name[i];
               const live = LIVE[p.id];
@@ -131,6 +133,11 @@ export const ToursPage: React.FC<{ passport: string; onBack: () => void; onOpenC
               );
             })}
           </div>
+          {!more && pkgs.length > 8 && (
+            <button type="button" className="vz-btn vz-btn-ghost vz-tours-more" onClick={() => setMore(true)}>
+              {l(`${pkgs.length - 8} tur daha göster`, `Show ${pkgs.length - 8} more tours`, `${pkgs.length - 8} weitere Touren`, `Ver ${pkgs.length - 8} tours más`, `Ещё ${pkgs.length - 8} туров`)}
+            </button>
+          )}
           {pkgs.length === 0 && <p className="vz-muted">{l('Bu seçimde tur yok; süreyi değiştir.', 'No tours for this choice; try another length.', 'Keine Touren; andere Dauer wählen.', 'Sin tours; prueba otra duración.', 'Нет туров; выберите другую длительность.')}</p>}
         </>
       )}
@@ -141,7 +148,7 @@ export const ToursPage: React.FC<{ passport: string; onBack: () => void; onOpenC
         ))}
       </nav>
       <div className="vz-tours">
-        {TOURS.map((t) => {
+        {(more || (typeof window !== 'undefined' && window.location.hash) ? TOURS : TOURS.slice(0, 8)).map((t) => {
           const img = t.photo?.startsWith('/') ? t.photo : getOptimizedImageUrl(`/images/countries/${(t.photo || t.code).toLowerCase()}.webp`, { width: 480 });
           const picks: PickItem[] = [
             { id: 'getyourguide', url: gygLink(t.gyg, `tours_${t.id}`) },
@@ -181,6 +188,11 @@ export const ToursPage: React.FC<{ passport: string; onBack: () => void; onOpenC
           );
         })}
       </div>
+      {!more && TOURS.length > 8 && !(typeof window !== 'undefined' && window.location.hash) && (
+        <button type="button" className="vz-btn vz-btn-ghost vz-tours-more" onClick={() => setMore(true)}>
+          {l(`${TOURS.length - 8} şehir daha göster`, `Show ${TOURS.length - 8} more cities`, `${TOURS.length - 8} weitere Städte`, `Ver ${TOURS.length - 8} ciudades más`, `Ещё ${TOURS.length - 8} городов`)}
+        </button>
+      )}
       </>)}
       <p className="vz-muted" style={{ fontSize: 12.5, marginTop: 16 }}>
         {l(

@@ -1554,3 +1554,4 @@ button.vz-tb-f { cursor: pointer; }
 html.dark .vz-fl-picked { background: rgba(23, 113, 74, 0.18); color: #7fd3a8; }
 html.dark .vz-hq-cheap { color: var(--rd-sea); }
 .vz-print .vz-print-h { font-size: 20px; font-weight: 800; margin: 0 0 8px; }
+.vz-tours-more { display: block; width: 100%; max-width: 360px; margin: 16px auto 0; }

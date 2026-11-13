@@ -336,6 +336,13 @@ export function getCountrySectionHeadings(
   }
 }
 
+/** Google sonuçlarında kesilmesin: başlık ≤ 60, açıklama ≤ 158 karakter; sığan ilk seçenek kullanılır. */
+const fitT = (opts: string[]): string => opts.find((t) => t.length <= 60) || opts[opts.length - 1];
+const fitD = (main: string, tails: string[]): string => {
+  for (const t of tails) if (main.length + 1 + t.length <= 158) return `${main} ${t}`;
+  return main.length <= 158 ? main : `${main.slice(0, main.lastIndexOf(' ', 155))}…`;
+};
+
 /**
  * Arama sonucunda tıklanma için: başlık sorunun cevabını içerir ("Malezya Vize İstiyor mu? Türklere 90 Gün Vizesiz"),
  * açıklama cevapla başlar. Gün sayısı yalnızca veride sayı olarak varsa yazılır; genel/doğrulanmamış iddia eklenmez.
@@ -377,8 +384,8 @@ function getSerpAnswer(
         : cat === 'eta' ? `${P} pasaportuyla yola çıkmadan önce elektronik seyahat izni (${eta}) alınmalı`
         : `${P} pasaportuyla yola çıkmadan önce konsolosluk vizesi alınmalı`;
       return {
-        title: cat === 'id' && pass === 'TR' ? `${C} Kimlikle Gidilir mi? Vize İstiyor mu? (2026)` : `${C} Vize İstiyor mu? ${who} ${short} (2026)`,
-        description: `${CC}: ${long}. Resmî kaynak, güvenlik seviyesi, acil numaralar, gezi rotası ve uçuş–otel fiyatları.`
+        title: cat === 'id' && pass === 'TR' ? fitT([`${C} Kimlikle Gidilir mi? Vize İstiyor mu? (2026)`, `${C} Kimlikle Gidilir mi? (2026)`]) : fitT([`${C} Vize İstiyor mu? ${who} ${short} (2026)`, `${C} Vizesi: ${who} ${short} (2026)`, `${C}: ${short} (2026)`]),
+        description: fitD(`${CC}: ${long}.`, ['Resmî kaynak, güvenlik seviyesi, acil numaralar, gezi rotası ve uçuş–otel fiyatları.', 'Resmî kaynak, acil numaralar, rota ve fiyatlar.', 'Resmî kaynak ve fiyatlar.'])
       };
     }
     case 'de': {
@@ -390,8 +397,8 @@ function getSerpAnswer(
         : cat === 'eta' ? `Mit ${P}-Pass vor der Reise eine elektronische Reisegenehmigung (${eta}) beantragen`
         : `Mit ${P}-Pass vor der Reise ein Visum bei der Botschaft beantragen`;
       return {
-        title: DE_DEMONYM[pass] && pass !== LANG_PASS.de ? `Einreise ${C} für ${dem} 2026: ${short}` : `Einreise ${C} 2026: Visum nötig? ${DE_DEMONYM[pass] ? `${dem}: ` : ''}${short}`,
-        description: `${CC}: ${long}. Offizielle Quelle, Reisewarnung, Notrufnummern, Reiseroute, günstige Flüge und Hotels.`
+        title: DE_DEMONYM[pass] && pass !== LANG_PASS.de ? fitT([`Einreise ${C} für ${dem} 2026: ${short}`, `${C} für ${dem} 2026: ${short}`]) : fitT([`Einreise ${C} 2026: Visum nötig? ${DE_DEMONYM[pass] ? `${dem}: ` : ''}${short}`, `Einreise ${C} 2026: ${DE_DEMONYM[pass] ? `${dem}: ` : ''}${short}`, `Einreise ${C} 2026: ${short}`, `${C} 2026: ${short}`]),
+        description: fitD(`${CC}: ${long}.`, ['Offizielle Quelle, Reisewarnung, Notrufnummern, Reiseroute, günstige Flüge und Hotels.', 'Offizielle Quelle, Notrufnummern, Route und Preise.', 'Offizielle Quelle und Preise.'])
       };
     }
     case 'es': {
@@ -402,8 +409,8 @@ function getSerpAnswer(
         : cat === 'eta' ? `con pasaporte de ${P} hay que tramitar una autorización electrónica (${eta}) antes del viaje`
         : `con pasaporte de ${P} hay que solicitar la visa en el consulado antes del viaje`;
       return {
-        title: `Requisitos para viajar a ${C} 2026: ${short} con pasaporte de ${P}`,
-        description: `${CC}: ${long}. Fuente oficial, nivel de seguridad, teléfonos de emergencia, itinerario, vuelos y hoteles baratos.`
+        title: fitT([`Requisitos para viajar a ${C} 2026: ${short} con pasaporte de ${P}`, `Viajar a ${C} 2026: ${short} con pasaporte de ${P}`, `Viajar a ${C} 2026: ${short}`, `${C} 2026: ${short}`]),
+        description: fitD(`${CC}: ${long}.`, ['Fuente oficial, nivel de seguridad, teléfonos de emergencia, itinerario, vuelos y hoteles baratos.', 'Fuente oficial, emergencias, ruta y precios.', 'Fuente oficial y precios.'])
       };
     }
     case 'ru': {
@@ -415,8 +422,8 @@ function getSerpAnswer(
         : cat === 'eta' ? `гражданам ${ruOf(P)} нужно заранее оформить электронное разрешение (${eta})`
         : `гражданам ${ruOf(P)} нужна виза, оформляется в консульстве до поездки`;
       return {
-        title: `Нужна ли виза ${ruIn(C, 'acc')}? ${who}: ${short} (2026)`,
-        description: `${CC}: ${long}. Официальный источник, уровень безопасности, экстренные номера, маршрут, дешёвые билеты и отели.`
+        title: fitT([`Нужна ли виза ${ruIn(C, 'acc')}? ${who}: ${short} (2026)`, `Виза ${ruIn(C, 'acc')}: ${who.toLowerCase()} ${short} (2026)`, `Виза ${ruIn(C, 'acc')}: ${short} (2026)`]),
+        description: fitD(`${CC}: ${long}.`, ['Официальный источник, уровень безопасности, экстренные номера, маршрут, дешёвые билеты и отели.', 'Официальный источник, экстренные номера, маршрут и цены.', 'Официальный источник и цены.'])
       };
     }
     case 'en':
@@ -429,8 +436,8 @@ function getSerpAnswer(
         : cat === 'eta' ? `${P} passport holders need an electronic travel authorisation (${eta}) before travel`
         : `${P} passport holders must apply for a visa at an embassy before travel`;
       return {
-        title: `${C} Visa Requirements 2026: ${short} for ${dem}`,
-        description: `${CC}: ${long}. Official sources, travel advisory, emergency numbers, itinerary, flight and hotel deals.`
+        title: fitT([`${C} Visa Requirements 2026: ${short} for ${dem}`, `${C} Visa 2026: ${short} for ${dem}`, `${C} Visa 2026: ${short}`]),
+        description: fitD(`${CC}: ${long}.`, ['Official sources, travel advisory, emergency numbers, itinerary, flight and hotel deals.', 'Official sources, emergency numbers, route and prices.', 'Official sources and prices.'])
       };
     }
   }

@@ -15,6 +15,7 @@ import { TOURS, PACKAGES, LIVE } from '../data/tours';
 import ESIM from '../data/esimPrices.json';
 import { TRANSFER_ROUTES, kiwiRouteUrl, scooterUrl } from '../data/transferRoutes';
 import { routeName } from '../data/routeNames';
+import { CITY_RU } from '../data/cityRu';
 import { PLACES, findPlace } from '../data/countryPlaces';
 import { CITIES, PRICES_CHECKED, SAFETYWING_4W_USD, carCityUrl, type CarClass } from '../data/cityPrices';
 import { thirdPartyAllowed } from '../utils/consent';
@@ -493,7 +494,7 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
           <div className="vz-bk-chips" role="tablist" aria-label={l('Şehir', 'City', 'Stadt', 'Ciudad', 'Город')}>
             {custom && <button type="button" role="tab" aria-selected className="on">{custom}</button>}
             {cities.map((c) => (
-              <button key={c.id} type="button" role="tab" aria-selected={city?.id === c.id} className={city?.id === c.id ? 'on' : ''} onClick={() => { setCityQ(''); pickCity(c.id); }}>{(language === 'tr' && c.tr) || c.en}</button>
+              <button key={c.id} type="button" role="tab" aria-selected={city?.id === c.id} className={city?.id === c.id ? 'on' : ''} onClick={() => { setCityQ(''); pickCity(c.id); }}>{(language === 'tr' && c.tr) || (language === 'ru' && CITY_RU[c.en]) || c.en}</button>
             ))}
           </div>
           <small>{l('Uçuş, otel, tur, transfer, araç ve motor fiyatları seçtiğin şehre göre değişir.', 'Flights, hotels, tours, transfers, cars and bikes follow the city you pick.', 'Flüge, Hotels, Touren, Transfers, Autos und Roller richten sich nach der Stadt.', 'Vuelos, hoteles, tours, traslados, coches y motos según la ciudad.', 'Рейсы, отели, туры, трансферы, авто и байки — по выбранному городу.')}</small>
@@ -659,7 +660,7 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
         <TourShowcase q={tourArea || tCity} country={countryEn} money={(v: number, c: string) => money(v * getCrossRate(c, cur))} fallback={<Stay22Frame mode="experience" address={`${tourArea || tCity}, ${countryEn}`} trip={trip} campaign={`cp_${code.toLowerCase()}_exp`} title={l('Turlar, biletler ve fiyatlar', 'Tours, tickets and prices', 'Touren, Tickets und Preise', 'Tours, entradas y precios', 'Экскурсии, билеты и цены')} />} />
         {pkg && (
           <div className="vz-bk-pkg">
-            <b>{l('Hazır paket turlar', 'Package tours', 'Pauschalrundreisen', 'Circuitos', 'Пакетные туры')} · {pkg.route}</b>
+            <b>{l('Hazır paket turlar', 'Package tours', 'Pauschalrundreisen', 'Circuitos', 'Пакетные туры')} · {routeName(pkg.route, language)}</b>
             <LiveTours pkg={pkg.id} />
             {pkgFl && (
               <a className="vz-pkg-fl" href={aviaLink} target="_blank" rel="noopener noreferrer sponsored">
