@@ -118,23 +118,18 @@
       "retrieved_at": "2026-11-05"
     },
     "ambulance": {
-      "value": "",
-      "status": "unverified",
-      "confidence": "low",
+      "value": "911",
+      "status": "verified",
+      "confidence": "medium",
       "sources": [
         {
-          "url": "https://travel.gc.ca/assistance/embassies-consulates/saint-vincent-the-grenadines",
-          "tier": 1,
-          "title": "Saint Vincent and the Grenadines (travel.gc.ca)"
-        },
-        {
-          "url": "https://www.searchlight.vc/news/2023/11/10/rsvgpf-issues-official-holiday-season-advisory",
-          "tier": 2,
-          "title": "RSVGPF issues official holiday season advisory (Searchlight)"
+          "url": "https://en.wikipedia.org/wiki/List_of_emergency_telephone_numbers",
+          "tier": 3,
+          "title": "List of emergency telephone numbers"
         }
       ],
-      "evidence_quote": "Fire, police, coast guard: 911 or 999; Medical assistance Kingstown: (784) 456 1955",
-      "retrieved_at": "2026-11-05"
+      "evidence_quote": "Saint Vincent and the Grenadines: 999, 911 or 112",
+      "retrieved_at": "2026-11-13"
     },
     "fire": {
       "value": "911 / 999",
@@ -156,23 +151,18 @@
       "retrieved_at": "2026-11-05"
     },
     "general": {
-      "value": "",
-      "status": "unverified",
-      "confidence": "low",
+      "value": "911",
+      "status": "verified",
+      "confidence": "medium",
       "sources": [
         {
-          "url": "https://travel.gc.ca/assistance/embassies-consulates/saint-vincent-the-grenadines",
-          "tier": 1,
-          "title": "Saint Vincent and the Grenadines (travel.gc.ca)"
-        },
-        {
-          "url": "https://www.searchlight.vc/news/2023/11/10/rsvgpf-issues-official-holiday-season-advisory",
-          "tier": 2,
-          "title": "RSVGPF issues official holiday season advisory (Searchlight)"
+          "url": "https://en.wikipedia.org/wiki/List_of_emergency_telephone_numbers",
+          "tier": 3,
+          "title": "List of emergency telephone numbers"
         }
       ],
-      "evidence_quote": "Fire, police, coast guard: 911 or 999; Medical assistance Kingstown: (784) 456 1955",
-      "retrieved_at": "2026-11-05"
+      "evidence_quote": "Saint Vincent and the Grenadines: 999, 911 or 112",
+      "retrieved_at": "2026-11-13"
     },
     "tourist_police": {
       "value": "+1 784 457-1211",

@@ -123,28 +123,18 @@
       "retrieved_at": "2026-11-05"
     },
     "ambulance": {
-      "value": "",
-      "status": "unverified",
-      "confidence": "low",
+      "value": "117",
+      "status": "verified",
+      "confidence": "medium",
       "sources": [
         {
-          "url": "https://www.gov.uk/foreign-travel-advice/mozambique/getting-help",
-          "tier": 1,
-          "title": "Mozambique - Getting help (GOV.UK)"
-        },
-        {
-          "url": "https://www.smartraveller.gov.au/destinations/africa/mozambique",
-          "tier": 1,
-          "title": "Mozambique (Smartraveller)"
-        },
-        {
-          "url": "https://travel.gc.ca/assistance/embassies-consulates/mozambique",
-          "tier": 1,
-          "title": "Mozambique (travel.gc.ca)"
+          "url": "https://en.wikipedia.org/wiki/List_of_emergency_telephone_numbers",
+          "tier": 3,
+          "title": "List of emergency telephone numbers"
         }
       ],
-      "evidence_quote": "Call 112 (ambulance, fire, police) ... Fire: 198; Police: 112",
-      "retrieved_at": "2026-11-05"
+      "evidence_quote": "Mozambique: police 119, ambulance 117, fire 198",
+      "retrieved_at": "2026-11-13"
     },
     "fire": {
       "value": "198",
