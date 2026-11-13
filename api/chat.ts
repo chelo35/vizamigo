@@ -13,7 +13,7 @@ export const config = {
  *   OPENROUTER_API_KEY  OpenRouter ücretsiz modeller (ücretsiz: günde 50 istek; hesaba bir kez 10 $ yüklenirse günde 1.000)
  *                       En iyi ücretsiz modeller listeden otomatik seçilir; hepsi doluysa openrouter/free uygun olanı seçer
  *   ANTHROPIC_API_KEY   Anthropic API anahtarı (ücretli)
- *   CHAT_MODEL          (isteğe bağlı) Groq için varsayılan llama-3.3-70b-versatile
+ *   CHAT_MODEL          (isteğe bağlı) Groq modeli; verilmezse güncel listeden en uygunu seçilir
  *   ANTHROPIC_MODEL     (isteğe bağlı) varsayılan claude-haiku-5-5
  */
 type Msg = { role: 'user' | 'assistant'; content: string };
@@ -33,6 +33,25 @@ const limited = (ip: string) => {
 };
 
 const clip = (s: unknown, n: number) => String(s ?? '').slice(0, n);
+
+// Groq'taki güncel modellerden en uygununu seçer (model adları zamanla değişiyor; 6 saatte bir yenilenir)
+let groqCache: { at: number; id: string } | null = null;
+const GROQ_PREFER = [/gpt-oss-120b/, /llama-4-maverick/, /llama-3\.3-70b/, /qwen3?-?.*32b/, /kimi-k2/, /llama-4-scout/, /gpt-oss-20b/, /llama.*70b/];
+async function groqModel(key: string): Promise<string> {
+  if (process.env.CHAT_MODEL) return process.env.CHAT_MODEL;
+  if (groqCache && Date.now() - groqCache.at < 6 * 3600_000) return groqCache.id;
+  let id = 'openai/gpt-oss-120b';
+  try {
+    const r = await fetch('https://api.groq.com/openai/v1/models', { headers: { Authorization: `Bearer ${key}` } });
+    const j = (await r.json()) as { data?: Array<{ id: string; active?: boolean }> };
+    const ids = (j.data || []).filter((m) => m.active !== false && !/whisper|tts|guard|playai|orpheus|distil|compound/i.test(m.id)).map((m) => m.id);
+    const rank = (x: string) => { const i = GROQ_PREFER.findIndex((re) => re.test(x)); return i < 0 ? 99 : i; };
+    const best = ids.sort((a, b) => rank(a) - rank(b))[0];
+    if (best) id = best;
+  } catch {}
+  groqCache = { at: Date.now(), id };
+  return id;
+}
 
 // OpenRouter'daki ücretsiz modellerden Türkçe dahil çok dilli sohbette güçlü olanları seçer (liste 6 saatte bir yenilenir).
 // OPENROUTER_MODELS ortam değişkeniyle elle de verilebilir (virgülle).
@@ -120,12 +139,12 @@ ${clip(b.facts, 6000) || 'none'}`;
       const r = await fetch('https://api.groq.com/openai/v1/chat/completions', {
         method: 'POST',
         headers: { Authorization: `Bearer ${groqKey}`, 'content-type': 'application/json' },
-        body: JSON.stringify({ model: process.env.CHAT_MODEL || 'llama-3.3-70b-versatile', max_tokens: 900, temperature: 0.4, messages: [{ role: 'system', content: system }, ...msgs] })
+        body: JSON.stringify({ model: await groqModel(groqKey), max_tokens: 900, temperature: 0.4, messages: [{ role: 'system', content: system }, ...msgs] })
       });
       if (r.ok) {
         const j = (await r.json()) as { choices?: Array<{ message?: { content?: string } }> };
         text = (j.choices?.[0]?.message?.content || '').trim();
-        if (text) via = 'groq';
+        if (text) via = `groq:${groqCache?.id || ''}`;
       } else errs.push(`groq ${r.status} ${(await r.text()).slice(0, 160)}`);
     } catch (e) { errs.push(`groq ${String(e).slice(0, 80)}`); }
   }
