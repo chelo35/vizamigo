@@ -8,9 +8,11 @@ export const config = {
  * ve bunu "facts" olarak buraya gönderir. Model bu bilgilere dayanarak doğal, sohbet tadında bir cevap yazar;
  * vize kuralı ya da fiyat uydurmaz. Anahtar yoksa 503 döner ve site kendi kural tabanlı cevabını gösterir.
  *
- * Vercel ortam değişkenleri:
- *   ANTHROPIC_API_KEY   Anthropic API anahtarı (gizli)
- *   CHAT_MODEL          (isteğe bağlı) varsayılan claude-haiku-5-5
+ * Vercel ortam değişkenleri (biri yeterli; ikisi de varsa önce Groq denenir, olmazsa Anthropic):
+ *   GROQ_API_KEY        Groq API anahtarı (ücretsiz katman: dakikada 30, günde ~1.000 istek; veriler eğitimde kullanılmaz)
+ *   ANTHROPIC_API_KEY   Anthropic API anahtarı (ücretli)
+ *   CHAT_MODEL          (isteğe bağlı) Groq için varsayılan llama-3.3-70b-versatile
+ *   ANTHROPIC_MODEL     (isteğe bağlı) varsayılan claude-haiku-5-5
  */
 type Msg = { role: 'user' | 'assistant'; content: string };
 type Body = { q?: string; history?: Msg[]; lang?: string; passport?: string; facts?: string; buttons?: string[]; features?: string[]; today?: string };
@@ -31,10 +33,11 @@ const limited = (ip: string) => {
 const clip = (s: unknown, n: number) => String(s ?? '').slice(0, n);
 
 export default async function handler(req: Request) {
-  if (req.method === 'GET') return Response.json({ enabled: !!process.env.ANTHROPIC_API_KEY });
+  const groqKey = process.env.GROQ_API_KEY;
+  const anthKey = process.env.ANTHROPIC_API_KEY;
+  if (req.method === 'GET') return Response.json({ enabled: !!(groqKey || anthKey) });
   if (req.method !== 'POST') return new Response('Method not allowed', { status: 405 });
-  const key = process.env.ANTHROPIC_API_KEY;
-  if (!key) return Response.json({ error: 'not_configured' }, { status: 503 });
+  if (!groqKey && !anthKey) return Response.json({ error: 'not_configured' }, { status: 503 });
   const origin = req.headers.get('origin') || '';
   if (origin && !/^https:\/\/(www\.)?vizamigo\.com$|^http:\/\/localhost(:\d+)?$|\.vercel\.app$/.test(origin)) return new Response('Forbidden', { status: 403 });
   const ip = req.headers.get('x-forwarded-for')?.split(',')[0].trim() || 'x';
@@ -83,14 +86,36 @@ ${(Array.isArray(b.features) ? b.features : []).map((x) => `- ${clip(x, 300)}`).
 SITE DATA FOR THIS QUESTION (verified, from Vizamigo):
 ${clip(b.facts, 6000) || 'none'}`;
 
-  const r = await fetch('https://api.anthropic.com/v1/messages', {
-    method: 'POST',
-    headers: { 'x-api-key': key, 'anthropic-version': '2023-06-01', 'content-type': 'application/json' },
-    body: JSON.stringify({ model: process.env.CHAT_MODEL || 'claude-haiku-5-5', max_tokens: 900, system, messages: msgs })
-  });
-  if (!r.ok) return Response.json({ error: 'upstream', status: r.status }, { status: 502 });
-  const j = (await r.json()) as { content?: Array<{ type: string; text?: string }> };
-  const text = (j.content || []).filter((c) => c.type === 'text').map((c) => c.text || '').join('').trim();
-  if (!text) return Response.json({ error: 'empty' }, { status: 502 });
+  let text = '';
+  // 1) Groq (ücretsiz, OpenAI uyumlu)
+  if (groqKey) {
+    try {
+      const r = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+        method: 'POST',
+        headers: { Authorization: `Bearer ${groqKey}`, 'content-type': 'application/json' },
+        body: JSON.stringify({ model: process.env.CHAT_MODEL || 'llama-3.3-70b-versatile', max_tokens: 900, temperature: 0.4, messages: [{ role: 'system', content: system }, ...msgs] })
+      });
+      if (r.ok) {
+        const j = (await r.json()) as { choices?: Array<{ message?: { content?: string } }> };
+        text = (j.choices?.[0]?.message?.content || '').trim();
+      }
+    } catch {}
+  }
+  // 2) Anthropic (Groq yoksa, sınır dolduysa ya da hata verdiyse)
+  if (!text && anthKey) {
+    try {
+      const r = await fetch('https://api.anthropic.com/v1/messages', {
+        method: 'POST',
+        headers: { 'x-api-key': anthKey, 'anthropic-version': '2023-06-01', 'content-type': 'application/json' },
+        body: JSON.stringify({ model: process.env.ANTHROPIC_MODEL || 'claude-haiku-5-5', max_tokens: 900, system, messages: msgs })
+      });
+      if (r.ok) {
+        const j = (await r.json()) as { content?: Array<{ type: string; text?: string }> };
+        text = (j.content || []).filter((c) => c.type === 'text').map((c) => c.text || '').join('').trim();
+      }
+    } catch {}
+  }
+  // Sınır dolduysa ya da servis cevap vermediyse: tarayıcı sitenin kendi cevabını gösterir
+  if (!text) return Response.json({ error: 'upstream' }, { status: 502 });
   return Response.json({ text }, { headers: { 'Cache-Control': 'no-store' } });
 }
