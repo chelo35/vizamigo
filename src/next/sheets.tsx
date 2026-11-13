@@ -1,5 +1,5 @@
 import { toursPath } from '../data/tours';
-import { siteFeatures } from '../services/assistantCommerce';
+import { siteFeatures, visaLine } from '../services/assistantCommerce';
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { useI18n, lText } from '../data/i18n';
 import { useAuth } from '../context/AuthContext';
@@ -335,7 +335,7 @@ async function askAI(q: string, r: AssistantMessage, prev: AssistantMessage[], p
         lang,
         passport: getCountryName(passport, 'en'),
         today: new Date().toISOString().slice(0, 10),
-        facts: r.text,
+        facts: [r.detectedCountry ? visaLine(r.detectedCountry.code, passport, lang).replace(/\*\*/g, '') : '', r.text].filter(Boolean).join('\n\n'),
         buttons: (r.actions || []).map((a) => stripEmoji(a.label) + (a.type === 'affiliate' ? ' [partner]' : '')),
         features: siteFeatures(lang).map((f) => f.text.replace(/\*\*/g, '')),
         history: prev.slice(-8).map((m) => ({ role: m.sender === 'user' ? 'user' : 'assistant', content: m.text }))
