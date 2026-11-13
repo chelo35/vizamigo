@@ -324,7 +324,7 @@ async function askAI(q: string, r: AssistantMessage, prev: AssistantMessage[], p
     if (sessionStorage.getItem('vz_ai_off') === '1') return null;
   } catch {}
   const ctl = new AbortController();
-  const timer = setTimeout(() => ctl.abort(), 20000);
+  const timer = setTimeout(() => ctl.abort(), 35000);
   try {
     const res = await fetch('/api/chat', {
       method: 'POST',

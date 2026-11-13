@@ -112,6 +112,8 @@ SITE DATA FOR THIS QUESTION (verified, from Vizamigo):
 ${clip(b.facts, 6000) || 'none'}`;
 
   let text = '';
+  let via = '';
+  const errs: string[] = [];
   // 1) Groq (ücretsiz, OpenAI uyumlu)
   if (groqKey) {
     try {
@@ -123,8 +125,9 @@ ${clip(b.facts, 6000) || 'none'}`;
       if (r.ok) {
         const j = (await r.json()) as { choices?: Array<{ message?: { content?: string } }> };
         text = (j.choices?.[0]?.message?.content || '').trim();
-      }
-    } catch {}
+        if (text) via = 'groq';
+      } else errs.push(`groq ${r.status} ${(await r.text()).slice(0, 160)}`);
+    } catch (e) { errs.push(`groq ${String(e).slice(0, 80)}`); }
   }
   // 2) OpenRouter ücretsiz modelleri (en güçlü ücretsiz modeller sırayla, en sonda openrouter/free)
   if (!text && orKey) {
@@ -136,10 +139,11 @@ ${clip(b.facts, 6000) || 'none'}`;
         body: JSON.stringify({ models, max_tokens: 900, temperature: 0.4, messages: [{ role: 'system', content: system }, ...msgs] })
       });
       if (r.ok) {
-        const j = (await r.json()) as { choices?: Array<{ message?: { content?: string } }> };
+        const j = (await r.json()) as { model?: string; choices?: Array<{ message?: { content?: string } }> };
         text = (j.choices?.[0]?.message?.content || '').trim();
-      }
-    } catch {}
+        if (text) via = `openrouter:${j.model || ''}`;
+      } else errs.push(`openrouter ${r.status} ${(await r.text()).slice(0, 160)}`);
+    } catch (e) { errs.push(`openrouter ${String(e).slice(0, 80)}`); }
   }
   // 3) Anthropic (ücretli; yalnızca anahtar eklenmişse)
   if (!text && anthKey) {
@@ -152,10 +156,11 @@ ${clip(b.facts, 6000) || 'none'}`;
       if (r.ok) {
         const j = (await r.json()) as { content?: Array<{ type: string; text?: string }> };
         text = (j.content || []).filter((c) => c.type === 'text').map((c) => c.text || '').join('').trim();
+        if (text) via = 'anthropic';
       }
     } catch {}
   }
   // Sınır dolduysa ya da servis cevap vermediyse: tarayıcı sitenin kendi cevabını gösterir
-  if (!text) return Response.json({ error: 'upstream' }, { status: 502 });
-  return Response.json({ text }, { headers: { 'Cache-Control': 'no-store' } });
+  if (!text) return Response.json({ error: 'upstream', errs }, { status: 502 });
+  return Response.json({ text, via, errs }, { headers: { 'Cache-Control': 'no-store' } });
 }
