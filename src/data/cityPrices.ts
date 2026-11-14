@@ -141,7 +141,7 @@ export const CITIES: Record<string, City[]> = {
     { id: 'vaduz', en: 'Vaduz', iata: 'ZRH' }
   ],
   MC: [
-    { id: 'monaco', en: 'Monaco', iata: 'NCE', tr: 'Monako' }
+    { id: 'monaco', en: 'Monaco', iata: 'NCE', tr: 'Monako', moto: { slug: 'monaco' } }
   ],
   SM: [
     { id: 'san-marino', en: 'San Marino', iata: 'BLQ' }
@@ -334,7 +334,7 @@ export const CITIES: Record<string, City[]> = {
     { id: 'dubrovnik', en: 'Dubrovnik', iata: 'DBV', lr: { path: 'croatia/dubrovnik' }, moto: { slug: 'dubrovnik' } },
     { id: 'split', en: 'Split', iata: 'SPU', lr: { path: 'croatia/split', eur: 12.5 }, moto: { slug: 'split' } },
     { id: 'zagreb', en: 'Zagreb', iata: 'ZAG', lr: { path: 'croatia/zagreb' }, moto: { slug: 'zagreb', eur: 50 } },
-    { id: 'zadar', en: 'Zadar', iata: 'ZAD' }
+    { id: 'zadar', en: 'Zadar', iata: 'ZAD', moto: { slug: 'zadar' } }
   ],
   HU: [
     { id: 'budapest', en: 'Budapest', iata: 'BUD', tr: 'Budapeşte', lr: { path: 'hungary/budapest', eur: 16.83 }, moto: { slug: 'budapest' } },
@@ -453,7 +453,7 @@ export const CITIES: Record<string, City[]> = {
     { id: 'porto', en: 'Porto', iata: 'OPO', lr: { path: 'portugal/porto', eur: 8.96 } },
     { id: 'algarve', en: 'Algarve', iata: 'FAO', lr: { path: 'portugal/faro' }, moto: { slug: 'algarve' } },
     { id: 'madeira', en: 'Madeira', iata: 'FNC', lr: { path: 'portugal/madeira', eur: 9.86 } },
-    { id: 'azores', en: 'Azores', iata: 'PDL', tr: 'Azor Adaları' }
+    { id: 'azores', en: 'Azores', iata: 'PDL', tr: 'Azor Adaları', moto: { slug: 'azores' } }
   ],
   MX: [
     { id: 'cancun', en: 'Cancun', iata: 'CUN', tr: 'Cancún', lr: { path: 'mexico/cancun' }, moto: { slug: 'quintana-roo', eur: 26.04 } },

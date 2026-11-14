@@ -13,7 +13,7 @@ import { getCrossRate } from '../data/currencyRates';
 import { tpLinks, tpLogo, stay22, s22Flights, s22Cars, gygLink, STAY22_AID, TWELVEGO_AGENT } from '../data/tpPartners';
 import { TOURS, PACKAGES, LIVE } from '../data/tours';
 import ESIM from '../data/esimPrices.json';
-import { TRANSFER_ROUTES, kiwiRouteUrl, scooterUrl } from '../data/transferRoutes';
+import { TRANSFER_ROUTES, kiwiRouteUrl, scooterUrl, BIKESBOOKING, bikesBookingUrl } from '../data/transferRoutes';
 import { routeName } from '../data/routeNames';
 import { CITY_RU } from '../data/cityRu';
 import { PLACES, findPlace } from '../data/countryPlaces';
@@ -390,6 +390,10 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
   const tCity = city?.en || cityEn;
   const pkgFl = fl && fl.res.length ? [...fl.res].sort((x, y) => x.price - y.price)[0] : null;
   const [rentTab, setRentTab] = useState<'car' | 'moto'>('car');
+  // İki tekerlek: Rentalmotorbike (moto) + BikesBooking (scooter, bisiklet)
+  const bbCities = cities.filter((c) => BIKESBOOKING[c.id]);
+  const hasTwo = cities.some((c) => c.moto) || bbCities.length > 0;
+  const hasBicycle = bbCities.some((c) => BIKESBOOKING[c.id].b);
   const [hotelArea, setHotelArea] = useState('');
   const [tourArea, setTourArea] = useState('');
   // Tur türü: tekne/gemi turları, bisiklet, müze ve bilet (Viator araması bu kelimeyle daralır)
@@ -831,13 +835,13 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
 
       <div className="vz-bk-two">
         <Sec id="bk-car" icon="car" title={l('Araç ve scooter kiralama', 'Car & scooter rental', 'Auto & Roller mieten', 'Coches y motos', 'Аренда авто и скутеров')}>
-          {cities.some((c) => c.moto) && (
+          {hasTwo && (
             <div className="vz-bk-chips" role="tablist" aria-label={l('Kiralık araç türü', 'Rental type', 'Mietart', 'Tipo de alquiler', 'Тип аренды')}>
               <button type="button" role="tab" aria-selected={rentTab === 'car'} className={rentTab === 'car' ? 'on' : ''} onClick={() => setRentTab('car')}><ModeBadge k="car" /> {l('Araba', 'Car', 'Auto', 'Coche', 'Авто')}</button>
-              <button type="button" role="tab" aria-selected={rentTab === 'moto'} className={rentTab === 'moto' ? 'on' : ''} onClick={() => setRentTab('moto')}><ModeBadge k="scooter" /> {l('Motor / scooter', 'Motorbike / scooter', 'Motorrad / Roller', 'Moto / scooter', 'Мото / скутер')}</button>
+              <button type="button" role="tab" aria-selected={rentTab === 'moto'} className={rentTab === 'moto' ? 'on' : ''} onClick={() => setRentTab('moto')}><ModeBadge k="scooter" /> {hasBicycle ? l('Motor · scooter · bisiklet', 'Motorbike · scooter · bicycle', 'Motorrad · Roller · Fahrrad', 'Moto · scooter · bici', 'Мото · скутер · велосипед') : l('Motor / scooter', 'Motorbike / scooter', 'Motorrad / Roller', 'Moto / scooter', 'Мото / скутер')}</button>
             </div>
           )}
-          {rentTab === 'car' || !cities.some((c) => c.moto) ? (
+          {rentTab === 'car' || !hasTwo ? (
             <>
             {city?.car?.usd && (
               <>
@@ -876,6 +880,7 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
             </>
           ) : (
             <>
+              {cities.some((c) => c.moto) && (<>
               <b className="vz-bk-op">Rentalmotorbike · {l('günlük kiralama, başlayan fiyat', 'daily rental, from', 'pro Tag, ab', 'por día, desde', 'в день, от')}</b>
               <div className="vz-bk-fares">
                 {[...cities.filter((c) => c.moto && c.id === city?.id), ...cities.filter((c) => c.moto && c.id !== city?.id)].map((c) => (
@@ -886,6 +891,22 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
                   </a>
                 ))}
               </div>
+              </>)}
+              {bbCities.length > 0 && (
+                <>
+                  <b className="vz-bk-op">BikesBooking · {l('scooter ve bisiklet, yerel kiralama firmaları', 'scooters & bicycles from local rental shops', 'Roller & Fahrräder von lokalen Verleihern', 'scooters y bicis de alquileres locales', 'скутеры и велосипеды от местных прокатов')}</b>
+                  <div className="vz-bk-fares">
+                    {[...bbCities.filter((c) => c.id === city?.id), ...bbCities.filter((c) => c.id !== city?.id)].flatMap((c) => {
+                      const b = BIKESBOOKING[c.id];
+                      const name = (language === 'tr' && c.tr) || c.en;
+                      return [
+                        ...(b.s ? [<a key={`${c.id}s`} className={`vz-qd-fare${c.id === city?.id ? ' best' : ''}`} href={bikesBookingUrl(b.en, 'scooter')} target="_blank" rel="noopener noreferrer sponsored"><b>🛵 {name}</b><span>{l('Scooter / motor', 'Scooter / moped', 'Roller', 'Scooter', 'Скутер')}</span><small>{l('Fiyatları gör', 'See prices', 'Preise', 'Ver precios', 'Цены')} ›</small></a>] : []),
+                        ...(b.b ? [<a key={`${c.id}b`} className={`vz-qd-fare${c.id === city?.id ? ' best' : ''}`} href={bikesBookingUrl(b.en, 'bicycle')} target="_blank" rel="noopener noreferrer sponsored"><b>🚲 {name}</b><span>{l('Bisiklet', 'Bicycle', 'Fahrrad', 'Bicicleta', 'Велосипед')}</span><small>{l('Fiyatları gör', 'See prices', 'Preise', 'Ver precios', 'Цены')} ›</small></a>] : [])
+                      ];
+                    })}
+                  </div>
+                </>
+              )}
             </>
           )}
           <small className="vz-bk-checked">{l(`Fiyatlar ${checked} tarihinde ortak sitelerden alındı; kesin fiyat tarihe göre ortak sitede.`, `Prices checked on ${checked}; final price on the partner site.`, `Preise geprüft am ${checked}; Endpreis beim Partner.`, `Precios revisados el ${checked}; precio final en el sitio del socio.`, `Цены проверены ${checked}; итог — на сайте партнёра.`)}</small>

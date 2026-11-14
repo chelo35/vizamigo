@@ -356,3 +356,35 @@ export const SCOOTER_CITIES: Record<string, { slug: string; name: string }[]> = 
   ]
 };
 export const scooterUrl = (slug: string) => `https://partners.rentalmotorbike.com/c/?si=22012&li=1928984&wi=442794&dl=${encodeURIComponent(`motorcycle-rental-${slug}`)}`;
+
+/** BikesBooking (Travelpayouts, %4): şehir sayfası teklif gösteren şehirler. s: scooter/motor, b: bisiklet. Kasım 2026'da tek tek kontrol edildi. */
+export const BIKESBOOKING: Record<string, { en: string; s?: 1; b?: 1 }> = {
+  'andorra': { en: 'Andorra-la-Vella', s: 1, b: 1 },
+  'seoul': { en: 'Seoul', s: 1 },
+  'bali': { en: 'Bali', s: 1 },
+  'lisbon': { en: 'Lisbon', s: 1, b: 1 },
+  'porto': { en: 'Porto', s: 1, b: 1 },
+  'madeira': { en: 'Madeira', s: 1, b: 1 },
+  'athens': { en: 'Athens', s: 1, b: 1 },
+  'santorini': { en: 'Santorini', s: 1, b: 1 },
+  'mykonos': { en: 'Mykonos', s: 1, b: 1 },
+  'crete': { en: 'Crete', s: 1, b: 1 },
+  'paris': { en: 'Paris', s: 1, b: 1 },
+  'nice': { en: 'Nice', s: 1, b: 1 },
+  'marseille': { en: 'Marseille', s: 1, b: 1 },
+  'madrid': { en: 'Madrid', s: 1, b: 1 },
+  'barcelona': { en: 'Barcelona', s: 1, b: 1 },
+  'malaga': { en: 'Malaga', s: 1, b: 1 },
+  'alicante': { en: 'Alicante', s: 1, b: 1 },
+  'los-angeles': { en: 'Los-Angeles', s: 1, b: 1 },
+  'miami': { en: 'Miami', s: 1, b: 1 },
+  'istanbul': { en: 'Istanbul', s: 1, b: 1 },
+  'rome': { en: 'Rome', s: 1, b: 1 },
+  'florence': { en: 'Florence', b: 1 },
+  'naples': { en: 'Naples', b: 1 },
+  'bangkok': { en: 'Bangkok', s: 1, b: 1 },
+  'phuket': { en: 'Phuket', s: 1, b: 1 },
+  'pattaya': { en: 'Pattaya', s: 1, b: 1 },
+  'tenerife': { en: 'Tenerife', s: 1 }
+};
+export const bikesBookingUrl = (en: string, kind: 'scooter' | 'bicycle') => `https://bikesbooking.com/en/rent-a-${kind}-in-${en}/`;
