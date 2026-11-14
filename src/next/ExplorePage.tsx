@@ -1,16 +1,14 @@
 import React, { lazy, Suspense, useEffect, useMemo, useState } from 'react';
 import { useI18n } from '../data/i18n';
-import { SeaHero } from '../components/redesign/SeaHero';
 import { LiveStrip, loadDestination } from '../components/redesign/LiveStrip';
 import { PassportCover } from '../components/redesign/PassportCover';
 import { getPassportItems } from '../utils/calculator';
 import { getCountryName } from '../data/passportData';
 import { Btn, OpenRequest, SecHead, Segmented, Tile, TileGrid } from './ui';
-import { GUIDE_LABELS, GUIDE_LINKS } from '../data/guideLinks';
-import { Icon } from './Icon';
 import { SmartSearch } from './SmartSearch';
 import { QuickDeals } from './QuickDeals';
 import { HomeBooking } from './HomeBooking';
+import { HomeHero, CheapFlights, DayTours, PackEasy, ChangesGuides, TrustStrip } from './explore/home2';
 import type { TabKey } from '../components/Navigation';
 const V = () => import('./explore/views');
 const WhereView = lazy(() => V().then((m) => ({ default: m.WhereView })));
@@ -24,7 +22,6 @@ const WM = () => import('./WorldMap');
 const VisaWorldMap = lazy(() => WM().then((m) => ({ default: m.VisaWorldMap })));
 const RadarWorldMap = lazy(() => WM().then((m) => ({ default: m.RadarWorldMap })));
 const HomeRails = lazy(() => import('./explore/rails').then((m) => ({ default: m.HomeRails })));
-const TourRail = lazy(() => import('./explore/rails').then((m) => ({ default: m.TourRail })));
 
 export interface ExploreProps {
   currentPassport: string;
@@ -137,37 +134,11 @@ export const ExplorePage: React.FC<ExploreProps> = (p) => {
     }
   ];
 
-  // Rehber ızgarasında son satırda boş hücre kalmasın: sütun sayısını ölçüp son kartı kalan hücrelere yayar
-  const guidesRef = React.useRef<HTMLDivElement>(null);
-  React.useLayoutEffect(() => {
-    const el = guidesRef.current;
-    if (!el) return;
-    const fit = () => {
-      const cards = [...el.children] as HTMLElement[];
-      cards.forEach((c) => (c.style.gridColumn = ''));
-      const cols = getComputedStyle(el).gridTemplateColumns.split(' ').filter(Boolean).length || 1;
-      if (cols < 2) return;
-      // Ana kart (CSS order:-1) her zaman başta: geniş ekranda 2 satır, mobilde tam satır kaplar
-      let used = 0;
-      for (const c of cards) {
-        const cs = getComputedStyle(c);
-        used += c.classList.contains('main') && cs.gridColumnEnd === '-1' ? cols : cs.gridRowStart.includes('span 2') || cs.gridRowEnd.includes('span 2') ? 2 : 1;
-      }
-      const rem = used % cols;
-      const last = cards.filter((c) => !c.classList.contains('main')).pop();
-      if (rem && last) last.style.gridColumn = `span ${cols - rem + 1}`;
-    };
-    fit();
-    const ro = new ResizeObserver(fit);
-    ro.observe(el);
-    return () => ro.disconnect();
-  }, [language]);
-
   return (
     <div className="vz-page">
-      <div className="rd-home">
-        <SeaHero
-          searchSlot={
+      <div className="rd-home vz-home2">
+        <HomeHero
+          search={
             <SmartSearch
               id="rd-q"
               variant="hero"
@@ -181,10 +152,6 @@ export const ExplorePage: React.FC<ExploreProps> = (p) => {
               }}
             />
           }
-          onSearch={(q) => {
-            setQuery(q);
-            openTile('countries');
-          }}
           chips={[
             { label: l('Nereye gidebilirim?', 'Where can I go?', 'Wohin kann ich?', '¿Dónde puedo ir?', 'Куда можно?'), onClick: () => openTile('where') },
             { label: l('Pasaport karşılaştır', 'Compare passports', 'Pässe vergleichen', 'Comparar', 'Сравнить'), onClick: () => openTile('compare') },
@@ -194,18 +161,16 @@ export const ExplorePage: React.FC<ExploreProps> = (p) => {
         <div className="rd-wrap vz-hb-lift">
           <HomeBooking passport={p.currentPassport} onOpenCountry={p.onOpenCountry} destination={destination} onDestination={changeDest} onEasy={() => openTile('easy')} />
         </div>
-        <div className="rd-wrap">
-          <LiveStrip passport={p.currentPassport} destination={destination} onDestinationChange={changeDest} onOpenRoutePlanner={p.onOpenRoute} />
-        </div>
       </div>
 
       <div className="vz-wrap vz-page-body" style={{ paddingTop: 28 }}>
-        <QuickDeals passport={p.currentPassport} destination={destination} />
-        <Deferred minHeight={isNarrow() ? 310 : 360} id="tours">
-          <Suspense fallback={null}>
-            <TourRail passport={p.currentPassport} />
-          </Suspense>
-        </Deferred>
+        <section className="vz-tripcard" aria-label={l('Seçili ülke', 'Selected country', 'Gewähltes Land', 'País elegido', 'Выбранная страна')}>
+          <LiveStrip passport={p.currentPassport} destination={destination} onDestinationChange={changeDest} onOpenRoutePlanner={p.onOpenRoute} />
+          <QuickDeals passport={p.currentPassport} destination={destination} />
+        </section>
+        <CheapFlights passport={p.currentPassport} onOpenCountry={p.onOpenCountry} />
+        <DayTours />
+        <PackEasy onEasy={() => openTile('easy')} onPlanner={() => p.onOpenTool('nomad', 'trip')} />
 
         <section className="vz-home-sec" aria-labelledby="vz-h-tools">
           <SecHead
@@ -214,34 +179,11 @@ export const ExplorePage: React.FC<ExploreProps> = (p) => {
             title={l('Ne yapmak istersin?', 'What would you like to do?', 'Was möchtest du tun?', '¿Qué quieres hacer?', 'Что хотите сделать?')}
             sub={l('Kutucuğa dokun, içeriği hemen altında açılsın.', 'Tap a tile and it opens right below.', 'Kachel antippen, sie öffnet sich darunter.', 'Toca una tarjeta y se abre debajo.', 'Нажмите — откроется ниже.')}
           />
-          <TileGrid tiles={tiles} openRequest={req} label={l('Keşfet araçları', 'Explore tools', 'Werkzeuge', 'Herramientas', 'Инструменты')} />
+          <TileGrid list tiles={tiles} openRequest={req} label={l('Keşfet araçları', 'Explore tools', 'Werkzeuge', 'Herramientas', 'Инструменты')} />
         </section>
 
         <HomeMaps passport={p.currentPassport} onOpenCountry={p.onOpenCountry} />
-
-        <section className="vz-home-sec" aria-labelledby="vz-h-guides">
-          <SecHead
-            id="vz-h-guides"
-            eyebrow={l('Güncel', 'Up to date', 'Aktuell', 'Actualizado', 'Актуально')}
-            title={l('Güncel rehberler', 'Travel rules 2026', 'Reiseregeln 2026', 'Normas de viaje 2026', 'Правила въезда 2026')}
-            sub={l('Schengen evrakları, ETIAS, ETA, ESTA ve Yunan adaları kapıda vize: kaynaklı ve tarihli.', 'Schengen documents, ETIAS, ETA, ESTA and Greek islands visa: sourced and dated.', 'Schengen-Unterlagen, ETIAS, ETA, ESTA und Griechische Inseln: mit Quellen und Datum.', 'Documentos Schengen, ETIAS, ETA, ESTA e islas griegas: con fuentes y fecha.', 'Шенген, ETIAS, ETA, ESTA и греческие острова: с источниками и датой.')}
-          />
-          <div className="vz-guides" ref={guidesRef}>
-            {(() => {
-              const list = GUIDE_LINKS.filter((g) => (GUIDE_LABELS[language] || GUIDE_LABELS.en)[g.id]);
-              return list.map((g) => {
-              const x = (GUIDE_LABELS[language] || GUIDE_LABELS.en)[g.id];
-              return (
-                <a key={g.id} className={`vz-guide-card${g.id === 'schengen_documents' ? ' main' : ''}`} href={`/${language}/info/${g.id}`}>
-                  <span className="vz-ic"><Icon name={g.icon as never} size={20} /></span>
-                  <b>{x.t}</b>
-                  <span>{x.d}</span>
-                </a>
-              );
-            });
-            })()}
-          </div>
-        </section>
+        <ChangesGuides />
 
         <Deferred minHeight={isNarrow() ? 1210 : 915} id="rails">
           <Suspense fallback={null}>
@@ -266,6 +208,7 @@ export const ExplorePage: React.FC<ExploreProps> = (p) => {
             </div>
           </div>
         </section>
+        <TrustStrip />
       </div>
     </div>
   );

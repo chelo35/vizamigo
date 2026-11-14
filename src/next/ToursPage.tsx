@@ -27,10 +27,16 @@ export const ToursPage: React.FC<{ passport: string; onBack: () => void; onOpenC
     const h = typeof window !== 'undefined' ? window.location.hash.slice(1) : '';
     return (TOUR_REGIONS.find((r) => r.id === h)?.id as TourRegion) || 'all';
   });
-  const [dur, setDur] = useState<'all' | 's' | 'm' | 'l'>('all');
+  // Süre: TourRadar'daki gibi en az–en çok gün aralığı; varsayılan tüm süreler (süre belirtmeden)
+  const DMIN = Math.min(...PACKAGES.map((p) => p.days));
+  const DMAX = Math.max(...PACKAGES.map((p) => p.days));
+  const [dLo, setDLo] = useState(DMIN);
+  const [dHi, setDHi] = useState(DMAX);
+  const dur = `${dLo}-${dHi}`;
+  const anyDur = dLo === DMIN && dHi === DMAX;
   const [more, setMore] = useState(false);
   useEffect(() => setMore(false), [region, dur, view]);
-  const pkgs = PACKAGES.filter((p) => (region === 'all' || p.region === region) && (dur === 'all' || (dur === 's' ? p.days <= 5 : dur === 'm' ? p.days >= 6 && p.days <= 9 : p.days >= 10)));
+  const pkgs = PACKAGES.filter((p) => (region === 'all' || p.region === region) && p.days >= dLo && p.days <= dHi);
   const title = l('Turlar ve aktiviteler', 'Tours & activities', 'Touren & Aktivitäten', 'Tours y actividades', 'Экскурсии и туры');
 
   useEffect(() => {
@@ -86,10 +92,21 @@ export const ToursPage: React.FC<{ passport: string; onBack: () => void; onOpenC
               <button type="button" className={region === 'all' ? 'on' : undefined} onClick={() => setRegion('all')}>{l('Tüm dünya', 'Worldwide', 'Weltweit', 'Todo el mundo', 'Весь мир')}</button>
               {TOUR_REGIONS.map((r) => <button key={r.id} type="button" className={region === r.id ? 'on' : undefined} onClick={() => setRegion(r.id)}>{r.name[i]}</button>)}
             </div>
-            <div className="vz-tours-jump" role="group" aria-label={l('Süre', 'Length', 'Dauer', 'Duración', 'Длительность')}>
-              {([['all', l('Her süre', 'Any length', 'Jede Dauer', 'Cualquiera', 'Любая')], ['s', l('5 güne kadar', 'Up to 5 days', 'Bis 5 Tage', 'Hasta 5 días', 'До 5 дней')], ['m', l('1 hafta (6–9 gün)', 'About a week', 'Etwa 1 Woche', 'Una semana', 'Неделя')], ['l', l('10 gün ve üzeri', '10+ days', '10+ Tage', '10+ días', '10+ дней')]] as const).map(([k, t]) => (
-                <button key={k} type="button" className={dur === k ? 'on' : undefined} onClick={() => setDur(k)}>{t}</button>
-              ))}
+            <div className="vz-dur" role="group" aria-label={l('Süre', 'Length', 'Dauer', 'Duración', 'Длительность')}>
+              <div className="vz-dur-h">
+                <b>{l('Süre', 'Length', 'Dauer', 'Duración', 'Длительность')}: {anyDur ? l('her süre', 'any length', 'jede Dauer', 'cualquiera', 'любая') : l(`${dLo}–${dHi} gün`, `${dLo}–${dHi} days`, `${dLo}–${dHi} Tage`, `${dLo}–${dHi} días`, `${dLo}–${dHi} дн.`)}</b>
+                {!anyDur && <button type="button" onClick={() => { setDLo(DMIN); setDHi(DMAX); }}>{l('Süre belirtme', 'Any length', 'Jede Dauer', 'Cualquiera', 'Любая')}</button>}
+              </div>
+              <div className="vz-dur-r">
+                <input type="range" min={DMIN} max={DMAX} value={dLo} aria-label={l('En az gün', 'Minimum days', 'Mindestens Tage', 'Mínimo de días', 'Минимум дней')} onChange={(e) => setDLo(Math.min(Number(e.target.value), dHi))} />
+                <input type="range" min={DMIN} max={DMAX} value={dHi} aria-label={l('En çok gün', 'Maximum days', 'Höchstens Tage', 'Máximo de días', 'Максимум дней')} onChange={(e) => setDHi(Math.max(Number(e.target.value), dLo))} />
+                <span className="vz-dur-fill" style={{ left: `${((dLo - DMIN) / (DMAX - DMIN || 1)) * 100}%`, right: `${100 - ((dHi - DMIN) / (DMAX - DMIN || 1)) * 100}%` }} />
+              </div>
+              <div className="vz-dur-q">
+                {([[DMIN, 5, l('Kısa (≤5)', 'Short (≤5)', 'Kurz (≤5)', 'Corto (≤5)', 'Короткие (≤5)')], [6, 9, l('1 hafta', '1 week', '1 Woche', '1 semana', '1 неделя')], [10, DMAX, l('10+ gün', '10+ days', '10+ Tage', '10+ días', '10+ дней')]] as const).map(([a, b, t]) => (
+                  <button key={t} type="button" className={dLo === a && dHi === b ? 'on' : undefined} onClick={() => { setDLo(a); setDHi(b); }}>{t}</button>
+                ))}
+              </div>
             </div>
           </div>
           <div className="vz-tours">

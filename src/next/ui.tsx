@@ -271,9 +271,11 @@ const useCols = (n: number) => {
   return cols;
 };
 
-export const TileGrid: React.FC<{ tiles: Tile[]; openRequest?: OpenRequest; label: string; defaultOpen?: string }> = ({ tiles, openRequest, label, defaultOpen }) => {
+export const TileGrid: React.FC<{ tiles: Tile[]; openRequest?: OpenRequest; label: string; defaultOpen?: string; list?: boolean }> = ({ tiles, openRequest, label, defaultOpen, list }) => {
   const { l } = useI18n();
-  const cols = useCols(tiles.length);
+  const autoCols = useCols(tiles.length);
+  // list: ana sayfa düzeni, her ekranda 3 sütun (masaüstünde yatay kart, mobilde simge ızgarası)
+  const cols = list ? 3 : autoCols;
   const [openId, setOpenId] = useState<string | null>(defaultOpen || null);
   const [tab, setTab] = useState('');
   const [fly, setFly] = useState(0);
@@ -310,7 +312,7 @@ export const TileGrid: React.FC<{ tiles: Tile[]; openRequest?: OpenRequest; labe
   const activeTab = tile?.tabs?.find((x) => x.id === tab) || tile?.tabs?.[0];
 
   return (
-    <div className="vz-tiles" role="group" aria-label={label} style={{ gridTemplateColumns: `repeat(${cols}, minmax(0, 1fr))` }}>
+    <div className={`vz-tiles${list ? ' vz-tiles-list' : ''}`} role="group" aria-label={label} style={{ gridTemplateColumns: `repeat(${cols}, minmax(0, 1fr))` }}>
       {tiles.map((t, i) => (
         <button
           key={t.id}

@@ -22,7 +22,10 @@ import { thirdPartyAllowed } from '../utils/consent';
 
 /* ---------- Yolculuk bilgisi: nereden, tarihler, kişi (cihazda saklanır, tüm ülke sayfalarında ortak) ---------- */
 
-export type Trip = { from: string; d1: string; d2: string; n: number };
+export type Trip = { from: string; d1: string; d2: string; n: number; c?: number };
+/** Aviasales yolcu kodu: yetişkin + çocuk (ör. 2 yetişkin 1 çocuk = "21") */
+const pax = (t: Trip) => `${t.n}${t.c ? t.c : ''}`;
+const people = (t: Trip) => t.n + (t.c || 0);
 const TRIP_KEY = 'vz_trip_v1';
 const iso = (d: Date) => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
 export const plusDays = (s: string, n: number) => {
@@ -80,9 +83,15 @@ export const TripBar: React.FC<{ passport: string; trip: Trip; setTrip: (p: Part
         <input type="date" min={plusDays(trip.d1, 1)} value={trip.d2} onChange={(e) => e.target.value && setTrip({ d2: e.target.value })} />
       </label>
       <label className="vz-tb-f sm">
-        <small>{l('Kişi', 'Guests', 'Personen', 'Personas', 'Гостей')}</small>
+        <small>{l('Yetişkin', 'Adults', 'Erwachsene', 'Adultos', 'Взрослые')}</small>
         <select value={trip.n} onChange={(e) => setTrip({ n: Number(e.target.value) })}>
-          {[1, 2, 3, 4, 5, 6].map((d) => <option key={d} value={d}>{d}</option>)}
+          {[1, 2, 3, 4, 5, 6, 7, 8].map((d) => <option key={d} value={d}>{d}</option>)}
+        </select>
+      </label>
+      <label className="vz-tb-f sm">
+        <small>{l('Çocuk', 'Children', 'Kinder', 'Niños', 'Дети')}</small>
+        <select value={trip.c || 0} onChange={(e) => setTrip({ c: Number(e.target.value) })}>
+          {[0, 1, 2, 3, 4].map((d) => <option key={d} value={d}>{d}</option>)}
         </select>
       </label>
       <p className="vz-tb-note">{l('Pasaportu değiştirince vize, belgeler ve kalış süresi; tarihleri değiştirince fiyatlar güncellenir.', 'Change the passport to update visa rules; change dates to update prices.', 'Pass ändern aktualisiert die Einreiseregeln, Daten ändern die Preise.', 'Cambia el pasaporte para actualizar el visado y las fechas para los precios.', 'Смена паспорта обновит визовые правила, смена дат — цены.')}</p>
@@ -254,8 +263,8 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
   const ddmm = (s: string) => `${s.slice(8, 10)}${s.slice(5, 7)}`;
   const aviaLink =
     fmode === 'ow' || fmode === 'ret'
-      ? `https://www.aviasales.com/search/${fA}${ddmm(fDay)}${fB}${trip.n}`
-      : `https://www.aviasales.com/search/${fromIata}${ddmm(trip.d1)}${toIata}${ddmm(trip.d2)}${trip.n}`;
+      ? `https://www.aviasales.com/search/${fA}${ddmm(fDay)}${fB}${pax(trip)}`
+      : `https://www.aviasales.com/search/${fromIata}${ddmm(trip.d1)}${toIata}${ddmm(trip.d2)}${pax(trip)}`;
   const oneWay = fmode === 'ow' || fmode === 'ret';
   const s22f = s22Flights(fA, fB, fDay, oneWay ? '' : trip.d2, trip.n, `cp_${code.toLowerCase()}`);
   const flightPicks: PickItem[] = [
@@ -476,20 +485,20 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
       .catch(() => { if (!off) setTt([]); });
     return () => { off = true; };
   }, [gSel, code]);
-  const ttLink = (u: string) => `${u}${u.includes('?') ? '&' : '?'}sub_id=vz_${code.toLowerCase()}&date=${trip.d1}&people=${trip.n}`;
+  const ttLink = (u: string) => `${u}${u.includes('?') ? '&' : '?'}sub_id=vz_${code.toLowerCase()}&date=${trip.d1}&people=${people(trip)}`;
   const pickGround = (sel: { to: string; slug: string; from: string }) => {
     setGSel(sel);
     window.setTimeout(() => document.getElementById('vz-gr-tt')?.scrollIntoView({ behavior: 'smooth', block: 'nearest' }), 60);
   };
   const gSlug = (v: string) => v.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/ı/g, 'i').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-  const gLink = (from: string, to: string, mode = gMode) => `https://12go.asia/en/travel/${from}/${to}?z=${TWELVEGO_AGENT}&sub_id=vz_${code.toLowerCase()}&date=${trip.d1}&people=${trip.n}${mode ? `&vehclasses_tab=${mode}` : ''}`;
+  const gLink = (from: string, to: string, mode = gMode) => `https://12go.asia/en/travel/${from}/${to}?z=${TWELVEGO_AGENT}&sub_id=vz_${code.toLowerCase()}&date=${trip.d1}&people=${people(trip)}${mode ? `&vehclasses_tab=${mode}` : ''}`;
   const gModesHere = GMODES.filter((m) => ground.some((g) => g.modes.some((x) => modeOf(x)?.k === m.k)));
   const gShown = gMode ? ground.filter((g) => g.modes.some((x) => modeOf(x)?.k === gMode)) : ground;
   const gSuggest = Array.from(new Set([...ground.map((g) => g.to), ...cities.map((c) => c.en)])).filter((x) => x.toLowerCase() !== groundCity.toLowerCase());
   const eurTo = (v: number) => money(v * getCrossRate('EUR', cur));
   const checked = new Date(`${PRICES_CHECKED}T12:00:00`).toLocaleDateString(loc, { day: 'numeric', month: 'short' });
   const insDays = nights + 1;
-  const insUsd = Math.round(((SAFETYWING_4W_USD / 28) * Math.max(7, insDays)) * trip.n * 100) / 100;
+  const insUsd = Math.round(((SAFETYWING_4W_USD / 28) * Math.max(7, insDays)) * people(trip) * 100) / 100;
   const carLabel: Record<CarClass, string> = {
     mini: l('Mini', 'Mini', 'Mini', 'Mini', 'Мини'),
     economy: l('Ekonomik', 'Economy', 'Economy', 'Económico', 'Эконом'),
@@ -879,7 +888,7 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
           <a className="vz-qd-fare best vz-ins-card" href={tpLinks.safetywing()} target="_blank" rel="noopener noreferrer sponsored">
             <em>SafetyWing Nomad Insurance</em>
             <b>~{usdTo(insUsd)}</b>
-            <span>{l(`${insDays} gün · ${trip.n} kişi · 10–39 yaş`, `${insDays} days · ${trip.n} people · age 10–39`, `${insDays} Tage · ${trip.n} Pers. · 10–39 J.`, `${insDays} días · ${trip.n} pers. · 10–39 años`, `${insDays} дн. · ${trip.n} чел. · 10–39 лет`)}</span>
+            <span>{l(`${insDays} gün · ${people(trip)} kişi · 10–39 yaş`, `${insDays} days · ${people(trip)} people · age 10–39`, `${insDays} Tage · ${trip.n} Pers. · 10–39 J.`, `${insDays} días · ${trip.n} pers. · 10–39 años`, `${insDays} дн. · ${trip.n} чел. · 10–39 лет`)}</span>
             <small>{l('Toplam, ABD hariç dünya geneli. Yaş artınca fiyat artar.', 'Total, worldwide excl. US. Price rises with age.', 'Gesamt, weltweit ohne USA. Preis steigt mit dem Alter.', 'Total, mundial sin EE. UU. Sube con la edad.', 'Итого, весь мир кроме США. Дороже с возрастом.')} ›</small>
           </a>
           <Picks label={l(`${nights + 1} gün · ${trip.n} kişi:`, `${nights + 1} days · ${trip.n} people:`, `${nights + 1} Tage · ${trip.n} Personen:`, `${nights + 1} días · ${trip.n} personas:`, `${nights + 1} дн. · ${trip.n} чел.:`)} items={insPicks} k={`i${code}`} />
@@ -967,7 +976,7 @@ export const Stay22Frame: React.FC<{ mode: 'accommodation' | 'experience'; addre
 /** Kendi tur vitrinimiz: fotoğraf, puan, süre, fiyat bizim kartlarımızda; yalnızca "Rezervasyon" ile ortak siteye gidilir. */
 type VItem = { id: string; title: string; img: string; rating: number | null; reviews: number; mins: number; price: number | null; cur: string; free: boolean; url: string };
 const vCache = new Map<string, { ok: boolean; items: VItem[] }>();
-export const TourShowcase: React.FC<{ q: string; country: string; money: (v: number, c: string) => string; fallback: React.ReactNode }> = ({ q, country, money, fallback }) => {
+export const TourShowcase: React.FC<{ q: string; country: string; money: (v: number, c: string) => string; fallback: React.ReactNode; n?: number }> = ({ q, country, money, fallback, n }) => {
   const { l, language } = useI18n();
   const k = `${q}|${country}|${language}`;
   const [data, setData] = useState<{ ok: boolean; items: VItem[] } | null>(() => vCache.get(k) || null);
@@ -1001,7 +1010,7 @@ export const TourShowcase: React.FC<{ q: string; country: string; money: (v: num
   const dur = (m: number) => (!m ? '' : m >= 1440 ? l(`${Math.round(m / 1440)} gün`, `${Math.round(m / 1440)} days`, `${Math.round(m / 1440)} Tage`, `${Math.round(m / 1440)} días`, `${Math.round(m / 1440)} дн.`) : m >= 60 ? l(`${Math.round(m / 60)} saat`, `${Math.round(m / 60)} h`, `${Math.round(m / 60)} Std.`, `${Math.round(m / 60)} h`, `${Math.round(m / 60)} ч`) : `${m} ${l('dk', 'min', 'Min.', 'min', 'мин')}`);
   return (
     <div className="vz-tc-grid">
-      {data.items.map((t, i) => (
+      {(n ? data.items.slice(0, n) : data.items).map((t, i) => (
         <a key={t.id || i} className="vz-tc-card" href={t.url} target="_blank" rel="noopener noreferrer sponsored">
           <span className="vz-tc-img">{t.img && <img src={t.img} alt="" loading={i < 4 ? 'eager' : 'lazy'} decoding="async" />}{t.free && <em>{l('Ücretsiz iptal', 'Free cancellation', 'Kostenlos stornierbar', 'Cancelación gratuita', 'Бесплатная отмена')}</em>}</span>
           <span className="vz-tc-body">

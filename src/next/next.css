@@ -1560,33 +1560,183 @@ html.dark .vz-hq-cheap { color: var(--rd-sea); }
 .vz-tours-more { display: block; width: 100%; max-width: 360px; margin: 16px auto 0; }
 .vz-adtag-s{margin-left:6px;font-size:10.5px;font-weight:500;opacity:.65;text-transform:lowercase}
 
-/* Ana sayfa: sekmeli arama kartı (Trip.com/Agoda düzeni) — hero'nun altına taşar */
-.vz-hb-lift { position: relative; z-index: 5; margin-top: -56px; }
-.vz-hb-lift .vz-hb { margin-bottom: 18px; padding: 6px 16px 16px; border-radius: 22px; box-shadow: 0 24px 50px -28px rgba(8, 60, 66, 0.45); }
+/* ================= Ana sayfa 2 (Trip.com / Agoda düzeni) ================= */
+.vz-hero2 { background: linear-gradient(180deg, #00C8CD 0%, #07626F 100%); color: #fff; padding: 40px 0 128px; }
+html.dark .vz-hero2 { background: linear-gradient(180deg, #0B7C83 0%, #063C44 100%); }
+.vz-hero2-in { display: grid; grid-template-columns: 1fr; gap: 18px; }
+.vz-hero2-eye { font-size: 12.5px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #D2F4F1; }
+.vz-hero2 h1 { margin: 8px 0 0; font-size: clamp(32px, 4.4vw, 46px); line-height: 1.05; font-weight: 800; letter-spacing: -0.03em; color: #fff; }
+.vz-hero2 p { margin: 10px 0 0; max-width: 40em; font-size: 16.5px; line-height: 1.5; color: #E2F7F5; }
+.vz-hero2-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.vz-hero2-chips button { border: 1px solid rgba(255,255,255,0.35); background: rgba(255,255,255,0.14); color: #fff; font: inherit; font-size: 14px; font-weight: 600; padding: 9px 15px; border-radius: 999px; cursor: pointer; }
+.vz-hero2-chips button:hover { background: rgba(255,255,255,0.24); }
+@media (min-width: 960px) {
+  .vz-hero2-in { grid-template-columns: 1fr auto; align-items: end; }
+  .vz-hero2-search { display: none; }
+}
+@media (max-width: 959px) {
+  .vz-hero2 { padding: 22px 0 270px; }
+  .vz-hero2-in { gap: 14px; }
+  .vz-hero2-search { order: -1; }
+  .vz-hero2 p { font-size: 14.5px; }
+  .vz-hero2-chips button { font-size: 13px; padding: 7px 12px; }
+}
+
+/* Sekmeli arama kartı */
+.vz-hb-lift { position: relative; z-index: 5; margin-top: -96px; }
+@media (max-width: 959px) { .vz-hb-lift { margin-top: -256px; } }
+.vz-hb-lift .vz-hb { margin-bottom: 0; padding: 6px 16px 16px; border-radius: 22px; box-shadow: 0 24px 50px -28px rgba(8, 60, 66, 0.45); }
 .vz-hb-tabs { display: flex; gap: 2px; overflow-x: auto; scrollbar-width: none; border-bottom: 1px solid var(--rd-line); margin: 0 -6px; }
 .vz-hb-tabs::-webkit-scrollbar { display: none; }
 .vz-hb-tabs button { flex: none; display: inline-flex; align-items: center; gap: 6px; padding: 12px 11px 11px; border: 0; border-bottom: 3px solid transparent; background: none; color: var(--rd-muted); font: inherit; font-size: 14px; font-weight: 600; cursor: pointer; white-space: nowrap; }
 .vz-hb-tabs button:hover { color: var(--rd-fg); }
 .vz-hb-tabs button.on { color: var(--rd-sea-ink); border-bottom-color: var(--rd-sea-ink); font-weight: 700; }
 .vz-hb-lift .vz-hb-go { background: #F2A93B; color: #10292D; font-weight: 800; }
-@media (min-width: 900px) {
-  .vz-hb-lift { margin-top: -84px; }
-  .vz-hb-lift .vz-hb { padding: 8px 22px 20px; }
+.vz-hb-lift .vz-hb-row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.vz-hb-lift .vz-hb-from, .vz-hb-lift .vz-hb-dest { grid-column: 1 / -1; }
+.vz-hb-lift .vz-hb-go { grid-column: 1 / -1; }
+.vz-hb-info { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; }
+.vz-hb-visa { display: inline-flex; align-items: center; gap: 7px; font-size: 13.5px; font-weight: 700; padding: 7px 12px; border-radius: 999px; background: #FFF3DD; color: #8A5300; }
+.vz-hb-visa.ok { background: #E6F5EE; color: #12623F; }
+.vz-hb-partners { font-size: 12.5px; color: var(--rd-muted); }
+@media (min-width: 960px) {
+  .vz-hb-lift .vz-hb { padding: 8px 22px 18px; }
   .vz-hb-tabs button { font-size: 15px; padding: 14px 13px 12px; }
-  .vz-hb-row.visa { grid-template-columns: 3fr 1.2fr; }
+  .vz-hb-lift .vz-hb-row { grid-template-columns: 1.3fr 1.7fr 1fr 1fr 0.62fr 0.62fr 1.15fr; }
+  .vz-hb-lift .vz-hb-from, .vz-hb-lift .vz-hb-dest, .vz-hb-lift .vz-hb-go { grid-column: auto; }
+  .vz-hb-lift .vz-hb-row.visa { grid-template-columns: 3fr 1.2fr; }
 }
-/* Arama kartı hero'nun alt boşluğuna oturur; canlı bilgi şeridi kartın altına iner */
-.vz-app .vz-hb-lift { margin-top: -176px; }
-.vz-app .vz-hb-lift + .rd-wrap .rd-strip { margin-top: 0; }
-@media (max-width: 960px) { .vz-app .vz-hb-lift { margin-top: -250px; } }
-/* Kartın altındaki canlı şerit artık fotoğraf üstünde değil: düz kart görünümü */
-.vz-hb-lift + .rd-wrap .rd-glass .rd-card { background: var(--rd-surface); border: 1px solid var(--rd-line); backdrop-filter: none; -webkit-backdrop-filter: none; box-shadow: 0 10px 24px -20px rgba(8, 60, 66, 0.4); color: var(--rd-fg); }
-.vz-hb-lift + .rd-wrap .rd-glass .rd-eyebrow { color: var(--rd-muted); }
-.vz-hb-lift + .rd-wrap .rd-glass .rd-big { color: var(--rd-fg); }
-.vz-hb-lift + .rd-wrap .rd-glass .rd-sub { color: var(--rd-muted); }
-.vz-hb-lift + .rd-wrap .rd-glass .rd-live { color: #12623F; background: #E6F5EE; }
-.vz-hb-lift + .rd-wrap .rd-glass .rd-big-rule.ok { color: #12623F; }
-.vz-hb-lift + .rd-wrap .rd-glass .rd-big-rule.warn { color: #9A5B00; }
-.vz-hb-lift + .rd-wrap .rd-glass .rd-link { color: var(--rd-sea-ink); background: var(--rd-sea-soft); }
-.vz-hb-lift + .rd-wrap .rd-strip-head .rd-select { background: var(--rd-surface); border: 1px solid var(--rd-line); }
-.vz-hb-lift + .rd-wrap .rd-strip-head .rd-eyebrow { color: var(--rd-sea-ink); }
+.vz-hb-from select { width: 100%; }
+
+/* Seçili ülke kartı: canlı bilgiler + hemen ucuza al tek kartta */
+.vz-tripcard { background: var(--rd-surface); border: 1px solid var(--rd-line); border-radius: 22px; padding: 18px; margin: 24px 0 8px; }
+.vz-tripcard .vz-qd { margin: 18px 0 0; }
+.vz-tripcard .rd-strip { margin-top: 0 !important; }
+.vz-tripcard .rd-glass .rd-card { background: var(--rd-bg); border: 1px solid var(--rd-line); backdrop-filter: none; -webkit-backdrop-filter: none; box-shadow: none; color: var(--rd-fg); }
+.vz-tripcard .rd-glass .rd-eyebrow { color: var(--rd-muted); }
+.vz-tripcard .rd-glass .rd-big { color: var(--rd-fg); }
+.vz-tripcard .rd-glass .rd-sub { color: var(--rd-muted); }
+.vz-tripcard .rd-glass .rd-live { color: #12623F; background: #E6F5EE; }
+.vz-tripcard .rd-glass .rd-big-rule.ok { color: #12623F; }
+.vz-tripcard .rd-glass .rd-big-rule.warn { color: #9A5B00; }
+.vz-tripcard .rd-glass .rd-link { color: var(--rd-sea-ink); background: var(--rd-sea-soft); }
+.vz-tripcard .rd-strip-head .rd-select { background: var(--rd-surface); border: 1px solid var(--rd-line); }
+.vz-tripcard .rd-strip-head .rd-eyebrow { color: var(--rd-sea-ink); }
+@media (max-width: 640px) { .vz-tripcard { padding: 12px; border-radius: 18px; } }
+
+/* Bölüm başlığı */
+.vz-h2-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 10px 16px; flex-wrap: wrap; margin-bottom: 16px; }
+.vz-h2-head h2 { margin: 4px 0 0; font-size: clamp(21px, 2.3vw, 28px); letter-spacing: -0.02em; }
+.vz-h2-note { font-size: 12.5px; color: var(--rd-muted); margin: 10px 2px 0; }
+.vz-h2-chips { display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; max-width: 100%; }
+.vz-h2-chips button { flex: none; border: 1px solid var(--rd-line); background: var(--rd-surface); color: var(--rd-fg); font: inherit; font-size: 13.5px; font-weight: 600; padding: 7px 13px; border-radius: 999px; cursor: pointer; }
+.vz-h2-chips button.on { background: var(--rd-sea-soft); border-color: var(--rd-sea-ink); color: var(--rd-sea-ink); font-weight: 700; }
+
+/* Ucuz uçuş kartları */
+.vz-fares { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
+.vz-fare { display: flex; flex-direction: column; text-align: left; padding: 0; border: 0; border-radius: 18px; overflow: hidden; background: var(--rd-surface); color: var(--rd-fg); font: inherit; cursor: pointer; box-shadow: 0 14px 30px -24px rgba(8, 60, 66, 0.5); transition: transform 0.2s ease; }
+.vz-fare:hover { transform: translateY(-3px); }
+.vz-fare img { width: 100%; height: 140px; object-fit: cover; display: block; }
+.vz-fare-b { display: flex; flex-direction: column; gap: 3px; padding: 12px 16px 16px; }
+.vz-fare-b small { font-size: 12.5px; color: var(--rd-muted); }
+.vz-fare-b small.ok { font-weight: 700; color: #12623F; letter-spacing: 0.02em; }
+.vz-fare-b b { font-size: 18px; font-weight: 800; }
+.vz-fare-b b span { font-size: 12px; font-weight: 600; color: var(--rd-muted); }
+.vz-fare-b strong { font-size: 23px; font-weight: 800; color: var(--rd-sea-ink); margin-top: 6px; }
+.vz-fare.sk { min-height: 270px; background: var(--rd-surface); animation: vzPulse 1.4s ease-in-out infinite; }
+@keyframes vzPulse { 50% { opacity: 0.55; } }
+@media (max-width: 959px) {
+  .vz-fares { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; gap: 10px; margin-inline: -16px; padding: 0 16px 4px; scrollbar-width: none; }
+  .vz-fare { flex: 0 0 158px; scroll-snap-align: start; }
+  .vz-fare img { height: 92px; }
+  .vz-fare-b { padding: 9px 11px 12px; }
+  .vz-fare-b b { font-size: 15px; }
+  .vz-fare-b strong { font-size: 18px; margin-top: 3px; }
+  .vz-fare.sk { min-height: 200px; }
+}
+
+/* Günün ülkesi turları */
+.vz-daytours .vz-tc-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.vz-daytours .vz-tc-grid > .vz-bk-note { margin-top: 4px; }
+@media (max-width: 959px) {
+  .vz-daytours .vz-tc-grid { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; gap: 10px; margin-inline: -16px; padding: 0 16px 4px; scrollbar-width: none; }
+  .vz-daytours .vz-tc-card { flex: 0 0 210px; scroll-snap-align: start; }
+  .vz-daytours .vz-tc-grid > .vz-bk-note { display: none; }
+}
+
+/* Paket turlar + kolay tatil */
+.vz-pe { display: grid; grid-template-columns: minmax(0, 1fr); gap: 16px; }
+.vz-pe-card { min-width: 0; }
+.vz-h2-head > * { min-width: 0; max-width: 100%; }
+@media (min-width: 900px) { .vz-pe { grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); } }
+.vz-pe-card { background: var(--rd-surface); border: 1px solid var(--rd-line); border-radius: 22px; padding: 20px 22px; display: flex; flex-direction: column; gap: 10px; align-items: flex-start; }
+.vz-pe-card h2 { margin: 0; font-size: 22px; letter-spacing: -0.02em; }
+.vz-pe-card p { margin: 0; font-size: 14.5px; line-height: 1.5; color: var(--rd-muted); }
+.vz-pe-note { display: flex; gap: 7px; align-items: flex-start; background: #FFF6E5; color: #6E4A00 !important; border-radius: 12px; padding: 9px 12px; font-size: 13.5px !important; }
+html.dark .vz-pe-note { background: #3B2F17; color: #F6D79A !important; }
+.vz-pe-list { display: flex; flex-direction: column; gap: 8px; width: 100%; }
+.vz-pe-list a { display: flex; align-items: center; gap: 12px; padding: 8px; border-radius: 14px; background: var(--rd-bg); color: var(--rd-fg); text-decoration: none; }
+.vz-pe-list img { width: 56px; height: 44px; object-fit: cover; border-radius: 10px; flex: none; }
+.vz-pe-list span { display: flex; flex-direction: column; min-width: 0; flex: 1; }
+.vz-pe-list b { font-size: 15px; }
+.vz-pe-list small { font-size: 12.5px; color: var(--rd-muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.vz-pe-list em { font-style: normal; font-weight: 800; font-size: 13px; color: var(--rd-sea-ink); background: var(--rd-sea-soft); padding: 4px 9px; border-radius: 999px; flex: none; }
+.vz-pe-card.easy { background: linear-gradient(160deg, #E6F7F5, var(--rd-surface)); }
+html.dark .vz-pe-card.easy { background: var(--rd-surface); }
+
+/* Ne yapmak istersin: 3 sütun */
+.vz-tiles-list { gap: 10px; }
+.vz-tiles-list .vz-tile { min-height: 0; }
+@media (min-width: 960px) {
+  .vz-tiles-list .vz-tile.has-ph { display: grid; grid-template-columns: 72px 1fr; grid-template-rows: auto auto; column-gap: 14px; row-gap: 2px; align-items: center; padding: 12px; }
+  .vz-tiles-list .vz-tile-ph { grid-row: 1 / span 2; width: 72px; height: 72px; aspect-ratio: auto; border-radius: 12px; }
+  .vz-tiles-list .vz-tile.has-ph .vz-tile-t { margin: 0; align-self: end; padding: 0; font-size: 16.5px; }
+  .vz-tiles-list .vz-tile.has-ph .vz-tile-s { align-self: start; padding: 0; }
+  .vz-tiles-list .vz-tile-badge { top: 8px; right: 8px; }
+}
+@media (max-width: 959px) {
+  .vz-tiles-list .vz-tile.has-ph { align-items: center; text-align: center; padding: 10px 6px 12px; gap: 6px; border-radius: 16px; }
+  .vz-tiles-list .vz-tile-ph { width: 52px; height: 52px; aspect-ratio: auto; border-radius: 14px; }
+  .vz-tiles-list .vz-tile.has-ph .vz-tile-t { font-size: 12.5px; margin: 0; padding: 0; }
+  .vz-tiles-list .vz-tile-s { display: none; }
+  .vz-tiles-list .vz-tile-badge { top: 4px; right: 4px; font-size: 10px; padding: 2px 6px; }
+}
+
+/* Harita + yan sütun */
+.vz-mapside { display: grid; grid-template-columns: 1fr; gap: 18px; align-items: start; }
+@media (min-width: 1100px) { .vz-mapside { grid-template-columns: minmax(0, 1.65fr) minmax(0, 1fr); } .vz-mapside .vz-maps-sec { margin-bottom: 0; } }
+.vz-side { display: flex; flex-direction: column; gap: 16px; }
+.vz-side-card { background: var(--rd-surface); border: 1px solid var(--rd-line); border-radius: 20px; padding: 16px 18px; }
+.vz-side-h { display: flex; justify-content: space-between; align-items: center; }
+.vz-side-h button { border: 0; background: none; color: var(--rd-sea-ink); font: inherit; font-size: 13px; font-weight: 700; cursor: pointer; }
+.vz-eyebrow.warn { color: #B4462F; }
+.vz-side-card h3 { margin: 4px 0 8px; font-size: 17px; }
+.vz-side-card ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
+.vz-side-card li + li { border-top: 1px solid var(--rd-line); }
+.vz-side-card li button { width: 100%; text-align: left; border: 0; background: none; font: inherit; color: var(--rd-fg); padding: 9px 0; cursor: pointer; display: grid; grid-template-columns: 1fr auto; gap: 2px 10px; }
+.vz-side-card li button b { font-size: 14px; }
+.vz-side-card li button span { grid-column: 1 / -1; font-size: 13px; color: var(--rd-muted); line-height: 1.35; }
+.vz-side-card li button small { grid-row: 1; grid-column: 2; font-size: 12px; color: var(--rd-muted); }
+.vz-side { margin: 8px 0 32px; }
+.vz-side-links { display: grid !important; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); column-gap: 24px; margin-top: 6px !important; }
+.vz-side-card .vz-side-links li + li { border-top: 0; }
+.vz-side-links a { display: flex; gap: 8px; align-items: center; padding: 8px 0; font-size: 14px; font-weight: 600; color: var(--rd-sea-ink); text-decoration: none; }
+
+/* Güven şeridi */
+.vz-trust { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px 24px; margin: 40px 0 8px; padding: 16px 22px; background: var(--rd-surface); border: 1px solid var(--rd-line); border-radius: 18px; font-size: 14px; font-weight: 600; color: var(--rd-muted); }
+.vz-trust span { display: inline-flex; align-items: center; gap: 8px; }
+
+/* Turlar sayfası: süre aralığı */
+.vz-dur { display: flex; flex-direction: column; gap: 8px; max-width: 520px; }
+.vz-dur-h { display: flex; align-items: center; gap: 12px; font-size: 14px; }
+.vz-dur-h button, .vz-dur-q button { border: 1px solid var(--rd-line); background: var(--rd-surface); color: var(--rd-fg); font: inherit; font-size: 13px; font-weight: 600; padding: 6px 12px; border-radius: 999px; cursor: pointer; }
+.vz-dur-q { display: flex; gap: 6px; flex-wrap: wrap; }
+.vz-dur-q button.on { background: var(--rd-sea-soft); color: var(--rd-sea-ink); border-color: var(--rd-sea-ink); }
+.vz-dur-r { position: relative; height: 28px; }
+.vz-dur-r::before { content: ''; position: absolute; left: 0; right: 0; top: 12px; height: 4px; border-radius: 4px; background: var(--rd-line); }
+.vz-dur-fill { position: absolute; top: 12px; height: 4px; border-radius: 4px; background: var(--rd-sea-ink); pointer-events: none; }
+.vz-dur-r input { position: absolute; inset: 0; width: 100%; margin: 0; background: none; pointer-events: none; -webkit-appearance: none; appearance: none; z-index: 1; }
+.vz-dur-r input::-webkit-slider-thumb { pointer-events: auto; -webkit-appearance: none; width: 22px; height: 22px; border-radius: 50%; background: #fff; border: 3px solid var(--rd-sea-ink); cursor: pointer; }
+.vz-dur-r input::-moz-range-thumb { pointer-events: auto; width: 18px; height: 18px; border-radius: 50%; background: #fff; border: 3px solid var(--rd-sea-ink); cursor: pointer; }
+.vz-dur-r input::-webkit-slider-runnable-track { background: none; }
+.vz-dur-r input::-moz-range-track { background: none; }

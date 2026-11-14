@@ -117,7 +117,7 @@ export const TourRail: React.FC<{ passport: string }> = ({ passport }) => {
     <section className="vz-home-sec" aria-labelledby="vz-h-tours">
       <div className="vz-sechead">
         <div>
-          <span className="vz-eyebrow">{l('Rehberli, her şey dahil', 'Guided, all-inclusive', 'Geführt, alles inklusive', 'Guiados, todo incluido', 'С гидом, всё включено')}</span>
+          <span className="vz-eyebrow">{l('Rehberli · konaklama dahil, uçak eklenebilir', 'Guided · stays included, add flights', 'Geführt · Unterkunft inklusive, Flüge hinzufügbar', 'Guiados · alojamiento incluido, añade vuelos', 'С гидом · проживание включено, перелёт добавляется')}</span>
           <h2 id="vz-h-tours">{l('Paket turlar', 'Multi-day tours', 'Rundreisen', 'Tours de varios días', 'Многодневные туры')}</h2>
         </div>
         <a className="vz-btn vz-btn-ghost sm" href={base}>{l('Tümünü gör', 'See all', 'Alle ansehen', 'Ver todo', 'Смотреть все')}</a>
