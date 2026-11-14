@@ -73,6 +73,18 @@ export default async function handler(req: Request) {
   const country = (u.searchParams.get('country') || '').slice(0, 60);
   const lang = LANGS[u.searchParams.get('lang') || ''] || 'en-US';
   const n = Math.min(24, Math.max(4, Number(u.searchParams.get('n')) || 12));
+  // Tür süzgeci (tekne/gemi, bisiklet, müze-bilet): yerin ürünlerinden başlığa göre süzülür; alakasız yerler (başka ülke) gelmesin diye
+  const kind = (u.searchParams.get('kind') || '') as '' | 'cruise' | 'bike' | 'tickets';
+  const KIND_RE: Record<string, RegExp> = {
+    cruise: /cruise|boat|sail|catamaran|yacht|ferry|snorkel|island[- ]hop|kayak|canoe|raft|jet ?boat|dolphin|whale|lagoon|river|bosphorus|gondola|canal|felucca|dhow|junk|speedboat|diving|scuba/i,
+    bike: /\b(bike|bicycle|cycling|biking|e-?bike|ebike)\b/i,
+    tickets: /ticket|admission|entry|entrance|museum|skip[- ]the[- ]line|\bpass\b|gallery|aquarium|\bzoo\b|theme park|palace|cathedral|castle|tower|observation|\bshow\b/i
+  };
+  const NOT_BIKE = /quad|atv|motorbike|motorcycle|dirt bike|scooter/i;
+  const NOT_TOUR = /\btransfers?\b|airport|shuttle|private car|\btaxi\b|chauffeur|pick-?up service/i;
+  const keep = (p: P) => !!p.title && !NOT_TOUR.test(p.title) && (!kind || (KIND_RE[kind]?.test(p.title) && !(kind === 'bike' && NOT_BIKE.test(p.title))));
+  const KW: Record<string, string> = { cruise: 'boat cruise', bike: 'bike tour', tickets: 'tickets' };
+  const take = kind ? 50 : n;
   if (!q) return json({ ok: false, reason: 'no_query' }, 400, 's-maxage=60');
   const headers = { 'exp-api-key': key, Accept: 'application/json;version=2.0', 'Accept-Language': lang, 'Content-Type': 'application/json' };
   try {
@@ -82,24 +94,25 @@ export default async function handler(req: Request) {
       const r = await fetch(`${BASE}/products/search`, {
         method: 'POST',
         headers,
-        body: JSON.stringify({ filtering: { destination: String(dest.destinationId) }, sorting: { sort: 'DEFAULT' }, pagination: { start: 1, count: n }, currency: 'EUR' })
+        body: JSON.stringify({ filtering: { destination: String(dest.destinationId) }, sorting: { sort: 'DEFAULT' }, pagination: { start: 1, count: take }, currency: 'EUR' })
       });
       DBG.searchStatus = r.status;
-      if (r.ok) products = ((await r.json()) as { products?: P[] }).products || [];
+      if (r.ok) products = (((await r.json()) as { products?: P[] }).products || []).filter(keep);
       else DBG.searchErr = (await r.text()).slice(0, 300);
     }
-    if (!products.length) {
+    if (!products.length && !(kind && dest)) {
       const r = await fetch(`${BASE}/search/freetext`, {
         method: 'POST',
         headers,
-        body: JSON.stringify({ searchTerm: country && norm(country) !== norm(q) ? `${q} ${country}` : q, searchTypes: [{ searchType: 'PRODUCTS', pagination: { start: 1, count: n } }], currency: 'EUR' })
+        body: JSON.stringify({ searchTerm: `${country && norm(country) !== norm(q) ? `${q} ${country}` : q}${kind ? ` ${KW[kind]}` : ''}`, searchTypes: [{ searchType: 'PRODUCTS', pagination: { start: 1, count: take } }], currency: 'EUR' })
       });
       DBG.freeStatus = r.status;
-      if (r.ok) products = ((await r.json()) as { products?: { results?: P[] } }).products?.results || [];
+      if (r.ok) products = (((await r.json()) as { products?: { results?: P[] } }).products?.results || []).filter(keep);
       else DBG.freeErr = (await r.text()).slice(0, 300);
     }
     const items = products
       .filter((p) => p.title && p.productUrl)
+      .slice(0, kind ? 24 : n)
       .map((p) => {
         const d = p.duration || {};
         const mins = d.fixedDurationInMinutes || d.variableDurationFromMinutes || 0;

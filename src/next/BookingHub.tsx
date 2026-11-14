@@ -397,7 +397,7 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
   const [hotelArea, setHotelArea] = useState('');
   const [tourArea, setTourArea] = useState('');
   // Tur türü: tekne/gemi turları, bisiklet, müze ve bilet (Viator araması bu kelimeyle daralır)
-  const [tourKind, setTourKind] = useState<'' | 'cruise' | 'bike' | 'tickets'>('');
+  const [tourKind, setTourKind] = useState<TourKind>('');
   useEffect(() => {
     setHotelArea('');
     setTourArea('');
@@ -436,8 +436,9 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
     setGround([]);
     if (!groundCity) return;
     const key = `vz12go:${groundCity.toLowerCase()}`;
+    // Yalnızca uçakla gidilen güzergâhlar bu bölümde gösterilmez (uçuşlar kendi bölümünde); kara/deniz yolu yoksa bölüm gizlenir
     const use = (list: Ground[]) => {
-      if (!off) setGround(list);
+      if (!off) setGround(list.filter((d) => d.modes.some((m) => !m.includes('✈'))));
     };
     try {
       const c = sessionStorage.getItem(key);
@@ -694,7 +695,7 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
             <button key={k || 'all'} type="button" role="tab" aria-selected={tourKind === k} className={tourKind === k ? 'on' : ''} onClick={() => setTourKind(k)}>{t}</button>
           ))}
         </div>
-        <TourShowcase q={`${tourArea || tCity}${tourKind === 'cruise' ? ' cruise' : tourKind === 'bike' ? ' bike tour' : tourKind === 'tickets' ? ' tickets' : ''}`} country={countryEn} money={(v: number, c: string) => money(v * getCrossRate(c, cur))} fallback={<Stay22Frame mode="experience" address={`${tourArea || tCity}, ${countryEn}`} trip={trip} campaign={`cp_${code.toLowerCase()}_exp`} title={l('Turlar, biletler ve fiyatlar', 'Tours, tickets and prices', 'Touren, Tickets und Preise', 'Tours, entradas y precios', 'Экскурсии, билеты и цены')} />} />
+        <TourShowcase q={tourArea || tCity} kind={tourKind} place={countryEn} country={countryEn} money={(v: number, c: string) => money(v * getCrossRate(c, cur))} fallback={tourKind ? <p className="vz-bk-note">{l(`${tourArea || tCity} için bu türde tur bulamadık.`, `No tours of this type found for ${tourArea || tCity}.`, `Keine Touren dieser Art für ${tourArea || tCity}.`, `No hay tours de este tipo en ${tourArea || tCity}.`, `Нет экскурсий этого типа: ${tourArea || tCity}.`)} <button type="button" className="vz-linkbtn" onClick={() => setTourKind('')}>{l('Tüm turları göster', 'Show all tours', 'Alle Touren', 'Ver todos', 'Все экскурсии')}</button></p> : <Stay22Frame mode="experience" address={`${tourArea || tCity}, ${countryEn}`} trip={trip} campaign={`cp_${code.toLowerCase()}_exp`} title={l('Turlar, biletler ve fiyatlar', 'Tours, tickets and prices', 'Touren, Tickets und Preise', 'Tours, entradas y precios', 'Экскурсии, билеты и цены')} />} />
         {pkg && (
           <div className="vz-bk-pkg">
             <b>{l('Hazır paket turlar', 'Package tours', 'Pauschalrundreisen', 'Circuitos', 'Пакетные туры')} · {routeName(pkg.route, language)}</b>
@@ -863,9 +864,9 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
                 <div className="vz-bk-fares">
                   {[...cities.filter((c) => c.lr && c.id === city?.id), ...cities.filter((c) => c.lr && c.id !== city?.id)].map((c) => (
                     <a key={c.id} className={`vz-qd-fare${c.id === city?.id ? ' best' : ''}`} href={`https://localrent.com/en/${c.lr!.path}/`} target="_blank" rel="noopener noreferrer sponsored">
-                      <b>{c.lr!.eur ? `~${eurTo(c.lr!.eur)}` : l('Fiyatları gör', 'See prices', 'Preise', 'Ver precios', 'Цены')}</b>
-                      <span>{(language === 'tr' && c.tr) || c.en}</span>
-                      <small>{l('Yerel kiralama firmaları', 'Local rental companies', 'Lokale Vermieter', 'Empresas locales', 'Местные прокаты')} ›</small>
+                      <b>{c.lr!.eur ? `~${eurTo(c.lr!.eur)}` : `🚗 ${(language === 'tr' && c.tr) || c.en}`}</b>
+                      <span>{c.lr!.eur ? (language === 'tr' && c.tr) || c.en : l('Yerel kiralama firmaları', 'Local rental companies', 'Lokale Vermieter', 'Empresas locales', 'Местные прокаты')}</span>
+                      <small>{c.lr!.eur ? l('Yerel kiralama firmaları', 'Local rental companies', 'Lokale Vermieter', 'Empresas locales', 'Местные прокаты') : l('Günlük fiyatları gör', 'See daily prices', 'Tagespreise ansehen', 'Ver precios por día', 'Цены за день')} ›</small>
                     </a>
                   ))}
                 </div>
@@ -885,8 +886,8 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
               <div className="vz-bk-fares">
                 {[...cities.filter((c) => c.moto && c.id === city?.id), ...cities.filter((c) => c.moto && c.id !== city?.id)].map((c) => (
                   <a key={c.id} className={`vz-qd-fare${c.id === city?.id ? ' best' : ''}`} href={scooterUrl(c.moto!.slug)} target="_blank" rel="noopener noreferrer sponsored">
-                    <b>{c.moto!.eur ? `~${eurTo(c.moto!.eur)}` : l('Fiyatları gör', 'See prices', 'Preise', 'Ver precios', 'Цены')}</b>
-                    <span>{(language === 'tr' && c.tr) || c.en}</span>
+                    <b>{c.moto!.eur ? `~${eurTo(c.moto!.eur)}` : `🏍️ ${(language === 'tr' && c.tr) || c.en}`}</b>
+                    <span>{c.moto!.eur ? (language === 'tr' && c.tr) || c.en : l('Günlük fiyatları gör', 'See daily prices', 'Tagespreise ansehen', 'Ver precios por día', 'Цены за день')}</span>
                     <small>{l('Motor ve scooter', 'Bikes & scooters', 'Motorräder & Roller', 'Motos y scooters', 'Мото и скутеры')} ›</small>
                   </a>
                 ))}
@@ -1004,9 +1005,13 @@ export const Stay22Frame: React.FC<{ mode: 'accommodation' | 'experience'; addre
 /** Kendi tur vitrinimiz: fotoğraf, puan, süre, fiyat bizim kartlarımızda; yalnızca "Rezervasyon" ile ortak siteye gidilir. */
 type VItem = { id: string; title: string; img: string; rating: number | null; reviews: number; mins: number; price: number | null; cur: string; free: boolean; url: string };
 const vCache = new Map<string, { ok: boolean; items: VItem[] }>();
-export const TourShowcase: React.FC<{ q: string; country: string; money: (v: number, c: string) => string; fallback: React.ReactNode; n?: number }> = ({ q, country, money, fallback, n }) => {
+/** Tur türü süzgeçleri: Viator aramasına kelime eklemek alakasız (transfer vb.) sonuç getiriyordu; bunun yerine başlıktan süzülür */
+export type TourKind = '' | 'cruise' | 'bike' | 'tickets';
+/** Transfer/taksi ürünleri tur vitrininde gösterilmez (kendi bölümleri var); tür süzgeci sunucuda (api/viator?kind=) */
+const NOT_TOUR = /\btransfers?\b|airport|shuttle|private car|\btaxi\b|chauffeur|pick-?up service/i;
+export const TourShowcase: React.FC<{ q: string; country: string; money: (v: number, c: string) => string; fallback: React.ReactNode; n?: number; kind?: TourKind; place?: string }> = ({ q, country, money, fallback, n, kind = '' }) => {
   const { l, language } = useI18n();
-  const k = `${q}|${country}|${language}`;
+  const k = `${q}|${country}|${language}|${kind}`;
   const [data, setData] = useState<{ ok: boolean; items: VItem[] } | null>(() => vCache.get(k) || null);
   useEffect(() => {
     const hit = vCache.get(k);
@@ -1016,10 +1021,11 @@ export const TourShowcase: React.FC<{ q: string; country: string; money: (v: num
     }
     setData(null);
     let alive = true;
-    fetch(`/api/viator?q=${encodeURIComponent(q)}&country=${encodeURIComponent(country)}&lang=${language}&n=12`)
+    fetch(`/api/viator?q=${encodeURIComponent(q)}&country=${encodeURIComponent(country)}&lang=${language}&n=16${kind ? `&kind=${kind}` : ''}`)
       .then((r) => (r.ok ? r.json() : { ok: false }))
       .then((j) => {
-        const v = { ok: !!j.ok && Array.isArray(j.items) && j.items.length > 0, items: (j.items || []) as VItem[] };
+        const items = ((j && j.ok && Array.isArray(j.items) ? j.items : []) as VItem[]).filter((t) => !NOT_TOUR.test(t.title));
+        const v = { ok: items.length > 0, items };
         vCache.set(k, v);
         if (alive) setData(v);
       })
@@ -1027,7 +1033,7 @@ export const TourShowcase: React.FC<{ q: string; country: string; money: (v: num
     return () => {
       alive = false;
     };
-  }, [k, q, country, language]);
+  }, [k, q, country, language, kind]);
   if (data && !data.ok) return <>{fallback}</>;
   if (!data)
     return (
