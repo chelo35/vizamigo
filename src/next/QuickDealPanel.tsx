@@ -129,7 +129,6 @@ const QuickDealPanel: React.FC<{ kind: DealKind; passport: string; destination: 
   ];
   const transferPicks: PickItem[] = [
     { id: 'kiwitaxi', url: tpLinks.kiwitaxi() },
-    { id: 'avitovip', url: tpLinks.avitovip() },
     ...(EU.has(to) ? [{ id: 'welcomepickups', url: tpLinks.welcomePickups() }] : []),
     { id: 'gettransfer', url: tpLinks.gettransfer() },
     { id: 'intui', url: 'https://intui.travel/' }

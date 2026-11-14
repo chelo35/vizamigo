@@ -432,12 +432,6 @@ export function getCountryConciergePlan(
       tEn: `Compare rental companies across ${countryNameEn}; free-cancellation options`,
       cTr: 'Araç kirala', cEn: 'Rent a car'
     }, undefined, 'coral'),
-    node('avitovip', 'transit', 3, tpLinks.avitovip(), {
-      bTr: 'VIP transfer', bEn: 'VIP transfer',
-      tTr: `${mainHub} havalimanından otele önceden ödenen özel araçla transfer`,
-      tEn: `Pre-booked private car from ${mainHub} airport to your hotel`,
-      cTr: 'Transfer fiyatı al', cEn: 'Get a transfer price'
-    }, undefined, 'slate'),
     node('woopdrive', 'transit', 3, tpLinks.woopdrive(), {
       bTr: 'Araç kiralama', bEn: 'Car rental',
       tTr: 'Kiralık araç fiyatlarını karşılaştır; havalimanında teslim',
