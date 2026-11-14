@@ -191,14 +191,22 @@ export const ExplorePage: React.FC<ExploreProps> = (p) => {
             { label: l('Popüler rotalar', 'Popular trips', 'Beliebte Ziele', 'Populares', 'Популярное'), onClick: () => openTile('popular') }
           ]}
         />
+        <div className="rd-wrap vz-hb-lift">
+          <HomeBooking passport={p.currentPassport} onOpenCountry={p.onOpenCountry} destination={destination} onDestination={changeDest} onEasy={() => openTile('easy')} />
+        </div>
         <div className="rd-wrap">
           <LiveStrip passport={p.currentPassport} destination={destination} onDestinationChange={changeDest} onOpenRoutePlanner={p.onOpenRoute} />
         </div>
       </div>
 
       <div className="vz-wrap vz-page-body" style={{ paddingTop: 28 }}>
-        <HomeBooking passport={p.currentPassport} onOpenCountry={p.onOpenCountry} destination={destination} onDestination={changeDest} />
         <QuickDeals passport={p.currentPassport} destination={destination} />
+        <Deferred minHeight={isNarrow() ? 310 : 360} id="tours">
+          <Suspense fallback={null}>
+            <TourRail passport={p.currentPassport} />
+          </Suspense>
+        </Deferred>
+
         <section className="vz-home-sec" aria-labelledby="vz-h-tools">
           <SecHead
             id="vz-h-tools"
@@ -209,11 +217,7 @@ export const ExplorePage: React.FC<ExploreProps> = (p) => {
           <TileGrid tiles={tiles} openRequest={req} label={l('Keşfet araçları', 'Explore tools', 'Werkzeuge', 'Herramientas', 'Инструменты')} />
         </section>
 
-        <Deferred minHeight={isNarrow() ? 310 : 360} id="tours">
-          <Suspense fallback={null}>
-            <TourRail passport={p.currentPassport} />
-          </Suspense>
-        </Deferred>
+        <HomeMaps passport={p.currentPassport} onOpenCountry={p.onOpenCountry} />
 
         <section className="vz-home-sec" aria-labelledby="vz-h-guides">
           <SecHead
@@ -238,8 +242,6 @@ export const ExplorePage: React.FC<ExploreProps> = (p) => {
             })()}
           </div>
         </section>
-
-        <HomeMaps passport={p.currentPassport} onOpenCountry={p.onOpenCountry} />
 
         <Deferred minHeight={isNarrow() ? 1210 : 915} id="rails">
           <Suspense fallback={null}>

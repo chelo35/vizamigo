@@ -197,6 +197,23 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
     } catch {}
     setCityId(pre);
     setCityQ('');
+    // Ana sayfadaki sekmeden (Otel, Tur, eSIM…) gelindiyse o bölüme kaydır
+    let jump = '';
+    try {
+      jump = sessionStorage.getItem('vz_bk_jump') || '';
+      if (jump) sessionStorage.removeItem('vz_bk_jump');
+    } catch {}
+    if (jump && jump !== 'bk-flight') {
+      let n = 0;
+      const t = window.setInterval(() => {
+        const el = document.getElementById(jump);
+        if (el || ++n > 20) {
+          window.clearInterval(t);
+          el?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }, 150);
+      return () => window.clearInterval(t);
+    }
   }, [code]);
   const custom = cityId.startsWith('q:') ? cityId.slice(2) : '';
   const city = custom ? { id: cityId, en: custom, iata: findPlace(code, custom)?.iata } : cities.find((c) => c.id === cityId) || cities[0];

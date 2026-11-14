@@ -20,8 +20,24 @@ const norm = (s: string) => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,
 
 type Trip = { from: string; d1: string; d2: string; n: number };
 
-export const HomeBooking: React.FC<{ passport: string; onOpenCountry: (code: string) => void; destination?: string; onDestination?: (code: string) => void }> = ({ passport, onOpenCountry, destination, onDestination }) => {
+type TabId = 'visa' | 'flight' | 'hotel' | 'tours' | 'car' | 'transfer' | 'esim' | 'ins' | 'easy';
+const JUMP: Partial<Record<TabId, string>> = { flight: 'bk-flight', hotel: 'bk-hotel', tours: 'bk-tours', car: 'bk-car', transfer: 'bk-transfer', esim: 'bk-esim', ins: 'bk-ins' };
+const TAB_ICON: Record<TabId, string> = { visa: 'passport', flight: 'plane', hotel: 'bed', tours: 'ticket', car: 'car', transfer: 'transit', esim: 'phone', ins: 'shield', easy: 'sun' };
+
+export const HomeBooking: React.FC<{ passport: string; onOpenCountry: (code: string) => void; destination?: string; onDestination?: (code: string) => void; onEasy?: () => void }> = ({ passport, onOpenCountry, destination, onDestination, onEasy }) => {
   const { l, language } = useI18n();
+  const [tab, setTab] = useState<TabId>('flight');
+  const TABS: { id: TabId; label: string }[] = [
+    { id: 'visa', label: l('Vize ve giriş', 'Visa & entry', 'Visum & Einreise', 'Visado y entrada', 'Виза и въезд') },
+    { id: 'flight', label: l('Uçak', 'Flights', 'Flüge', 'Vuelos', 'Авиабилеты') },
+    { id: 'hotel', label: l('Otel', 'Hotels', 'Hotels', 'Hoteles', 'Отели') },
+    { id: 'tours', label: l('Tur ve bilet', 'Tours & tickets', 'Touren & Tickets', 'Tours y entradas', 'Экскурсии') },
+    { id: 'car', label: l('Araç', 'Car rental', 'Mietwagen', 'Coches', 'Авто') },
+    { id: 'transfer', label: l('Transfer', 'Transfers', 'Transfer', 'Traslados', 'Трансфер') },
+    { id: 'esim', label: 'eSIM' },
+    { id: 'ins', label: l('Sigorta', 'Insurance', 'Versicherung', 'Seguro', 'Страховка') },
+    { id: 'easy', label: l('Kolay tatil', 'Easy trip', 'Einfache Reise', 'Viaje fácil', 'Лёгкая поездка') }
+  ];
   const today = iso(new Date());
   const [trip, setTrip] = useState<Trip>(() => {
     const def: Trip = { from: GEO_DATA[passport] ? passport : 'TR', d1: plus(today, 21), d2: plus(today, 28), n: 2 };
@@ -76,7 +92,9 @@ export const HomeBooking: React.FC<{ passport: string; onOpenCountry: (code: str
     }
     try {
       localStorage.setItem(TRIP_KEY, JSON.stringify(trip));
-      sessionStorage.setItem('vz_cview', 'book');
+      sessionStorage.setItem('vz_cview', tab === 'visa' ? 'guide' : 'book');
+      const j = JUMP[tab];
+      if (j) sessionStorage.setItem('vz_bk_jump', j);
       if (r.city) sessionStorage.setItem(`vz_bk_city_${r.code}`, r.city);
     } catch {}
     onOpenCountry(r.code);
@@ -114,12 +132,22 @@ export const HomeBooking: React.FC<{ passport: string; onOpenCountry: (code: str
 
   return (
     <form className="vz-hb" onSubmit={go} aria-label={l('Tatil ara', 'Search a trip', 'Reise suchen', 'Buscar viaje', 'Поиск поездки')}>
-      <div className="vz-hb-h">
-        <Icon name="plane" size={18} />
-        <b>{l('Nereye gidiyorsun?', 'Where are you going?', 'Wohin geht die Reise?', '¿A dónde vas?', 'Куда едете?')}</b>
-        <span>{l('Uçak, otel, tur, transfer ve eSIM fiyatları tek sayfada', 'Flights, hotels, tours, transfers and eSIM on one page', 'Flüge, Hotels, Touren, Transfers und eSIM auf einer Seite', 'Vuelos, hoteles, tours, traslados y eSIM en una página', 'Билеты, отели, туры, трансферы и eSIM на одной странице')}</span>
+      <div className="vz-hb-tabs" role="tablist" aria-label={l('Ne arıyorsun?', 'What are you looking for?', 'Was suchst du?', '¿Qué buscas?', 'Что ищете?')}>
+        {TABS.map((t) => (
+          <button
+            key={t.id}
+            type="button"
+            role="tab"
+            aria-selected={tab === t.id}
+            className={tab === t.id ? 'on' : ''}
+            onClick={() => (t.id === 'easy' && onEasy ? onEasy() : setTab(t.id))}
+          >
+            <Icon name={TAB_ICON[t.id] as never} size={16} />
+            {t.label}
+          </button>
+        ))}
       </div>
-      <div className="vz-hb-row">
+      <div className={`vz-hb-row${tab === 'visa' ? ' visa' : ''}`}>
         <label className={`vz-tb-f vz-hb-dest${err ? ' bad' : ''}`}>
           <small>{l('Nereye', 'Destination', 'Reiseziel', 'Destino', 'Куда')}</small>
           <input
@@ -175,6 +203,7 @@ export const HomeBooking: React.FC<{ passport: string; onOpenCountry: (code: str
             </ul>
           )}
         </label>
+        {tab !== 'visa' && (<>
         <label className="vz-tb-f">
           <small>{l('Gidiş', 'Depart', 'Hinreise', 'Ida', 'Туда')}</small>
           <input type="date" min={plus(today, 1)} value={trip.d1} onChange={(e) => e.target.value && setTrip((t) => ({ ...t, d1: e.target.value, d2: t.d2 > e.target.value ? t.d2 : plus(e.target.value, 7) }))} />
@@ -189,9 +218,10 @@ export const HomeBooking: React.FC<{ passport: string; onOpenCountry: (code: str
             {[1, 2, 3, 4, 5, 6].map((d) => <option key={d} value={d}>{d}</option>)}
           </select>
         </label>
+        </>)}
         <button type="submit" className="vz-hb-go">
           <Icon name="search" size={18} />
-          {l('Fiyatları gör', 'See prices', 'Preise ansehen', 'Ver precios', 'Смотреть цены')}
+          {tab === 'visa' ? l('Kuralı gör', 'See the rules', 'Regeln ansehen', 'Ver requisitos', 'Смотреть правила') : l('Fiyatları gör', 'See prices', 'Preise ansehen', 'Ver precios', 'Смотреть цены')}
         </button>
       </div>
       {err && <p className="vz-hb-err" role="alert">{l('Bu yeri bulamadık; listeden bir ülke ya da şehir seç.', 'We could not find that place; pick a country or city from the list.', 'Ort nicht gefunden; wähle ein Land oder eine Stadt aus der Liste.', 'No encontramos ese lugar; elige un país o ciudad de la lista.', 'Место не найдено; выберите страну или город из списка.')}</p>}
