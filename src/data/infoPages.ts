@@ -16,7 +16,7 @@ export const INFO_PAGES: Record<string, L5<InfoPage>> = {
       blocks: [
         { h: 'Cihazında kalan bilgiler', p: 'Dil, tema, seçtiğin pasaport, kayıtlı rotalar, Schengen sayacı ve yolculuk tarihlerin tarayıcının yerel belleğinde (localStorage) tutulur. Bu bilgiler bize gönderilmez; tarayıcı verilerini silersen ya da “Veri yedeği” sayfasından sıfırlarsan kaybolur.' },
         { h: 'Hesap açarsan', p: 'Giriş için e-posta adresin ve oturum bilgilerin, Avrupa Birliği’nde (Frankfurt) barındırılan Supabase altyapısında işlenir. Hesabını silmek istersen bize yazman yeterli.' },
-        { h: 'Ziyaret istatistikleri', p: 'Sayfa görüntüleme sayılarını Vercel Web Analytics ile ölçüyoruz. Bu ölçüm çerez kullanmaz ve seni kişi olarak tanımlamaz.' },
+        { h: 'Ziyaret istatistikleri', p: 'Sayfa görüntüleme sayılarını Vercel Web Analytics ile ölçüyoruz. Bu ölçüm çerez kullanmaz ve seni kişi olarak tanımlamaz. Ayrıca izin verdiğin ziyaretlerde Google Analytics 4 ile hangi sayfaların ve hangi iş ortağı bağlantılarının kullanıldığını anonim olarak ölçüyoruz (reklam kişiselleştirme ve Google sinyalleri kapalı). AB/İngiltere’de bu ölçüm yalnızca çerez iznini kabul edersen çalışır.' },
         { h: 'Ortak siteler ve çerezler', p: 'Uçak, otel, tur, transfer, eSIM ve sigorta bağlantılarımız ortak sitelere gider (“Ortaklık” etiketi). Bir bağlantıya tıkladığında, harita ve fiyat kutularını açtığında ya da ortaklık takip betiği yüklendiğinde bu siteler, satışın bizden geldiğini anlamak için kendi çerezlerini kullanabilir. Bu durumda o sitenin gizlilik politikası geçerlidir. Satın aldığında fiyat değişmez; biz komisyon alabiliriz.' },
         { h: 'Paylaşmadıklarımız', p: 'Kişisel bilgilerini satmayız ve reklam için başka şirketlerle paylaşmayız.' },
         { h: 'İletişim', p: `Gizlilikle ilgili her soru ve silme talebi için: ${MAIL}` }
@@ -28,7 +28,7 @@ export const INFO_PAGES: Record<string, L5<InfoPage>> = {
       blocks: [
         { h: 'Data that stays on your device', p: 'Your language, theme, chosen passport, saved routes, Schengen counter and trip dates are kept in your browser’s local storage. They are not sent to us; clearing browser data or resetting on the “Data backup” page removes them.' },
         { h: 'If you create an account', p: 'Your email address and login session are processed by Supabase, hosted in the European Union (Frankfurt). To delete your account, just email us.' },
-        { h: 'Visit statistics', p: 'We count page views with Vercel Web Analytics. It uses no cookies and does not identify you personally.' },
+        { h: 'Visit statistics', p: 'We count page views with Vercel Web Analytics. It uses no cookies and does not identify you personally. With your permission we also use Google Analytics 4 to measure, anonymously, which pages and partner links are used (ad personalisation and Google signals are off). In the EU/UK this only runs if you accept cookies.' },
         { h: 'Partner sites and cookies', p: 'Our flight, hotel, tour, transfer, eSIM and insurance links lead to partner sites (marked “Affiliate”). When you click one, open a map or price widget, or the affiliate tracking script loads, those sites may set their own cookies to see that a booking came from us. Their privacy policies then apply. Your price does not change; we may earn a commission.' },
         { h: 'What we never do', p: 'We do not sell your personal data or share it with other companies for advertising.' },
         { h: 'Contact', p: `For any privacy question or deletion request: ${MAIL}` }
@@ -40,7 +40,7 @@ export const INFO_PAGES: Record<string, L5<InfoPage>> = {
       blocks: [
         { h: 'Daten auf deinem Gerät', p: 'Sprache, Design, gewählter Pass, gespeicherte Routen, Schengen-Rechner und Reisedaten liegen im lokalen Speicher deines Browsers. Sie werden nicht an uns gesendet; wenn du die Browserdaten löschst oder auf der Seite „Datensicherung“ zurücksetzt, sind sie weg.' },
         { h: 'Wenn du ein Konto anlegst', p: 'E-Mail-Adresse und Anmeldesitzung werden von Supabase verarbeitet, gehostet in der Europäischen Union (Frankfurt). Zum Löschen deines Kontos genügt eine E-Mail an uns.' },
-        { h: 'Besucherstatistik', p: 'Seitenaufrufe zählen wir mit Vercel Web Analytics. Das funktioniert ohne Cookies und identifiziert dich nicht persönlich.' },
+        { h: 'Besucherstatistik', p: 'Seitenaufrufe zählen wir mit Vercel Web Analytics. Das funktioniert ohne Cookies und identifiziert dich nicht persönlich. Mit deiner Zustimmung messen wir außerdem mit Google Analytics 4 anonym, welche Seiten und Partnerlinks genutzt werden (Anzeigenpersonalisierung und Google-Signale sind aus). In der EU/im Vereinigten Königreich nur nach Annahme der Cookies.' },
         { h: 'Partnerseiten und Cookies', p: 'Unsere Links zu Flügen, Hotels, Touren, Transfers, eSIM und Versicherungen führen zu Partnerseiten (Kennzeichnung „Partner“). Wenn du klickst, eine Karte oder Preisbox öffnest oder das Partner-Tracking-Skript lädt, können diese Seiten eigene Cookies setzen, um eine Buchung uns zuzuordnen. Dann gilt deren Datenschutzerklärung. Dein Preis ändert sich nicht; wir erhalten eventuell eine Provision.' },
         { h: 'Was wir nie tun', p: 'Wir verkaufen keine personenbezogenen Daten und geben sie nicht für Werbung an andere Firmen weiter.' },
         { h: 'Kontakt', p: `Für Fragen zum Datenschutz und Löschanfragen: ${MAIL}` }
@@ -52,7 +52,7 @@ export const INFO_PAGES: Record<string, L5<InfoPage>> = {
       blocks: [
         { h: 'Datos que se quedan en tu dispositivo', p: 'Tu idioma, tema, pasaporte elegido, rutas guardadas, contador Schengen y fechas de viaje se guardan en el almacenamiento local de tu navegador. No nos llegan; si borras los datos del navegador o los restableces en la página “Copia de seguridad”, desaparecen.' },
         { h: 'Si creas una cuenta', p: 'Tu correo y tu sesión se procesan en Supabase, alojado en la Unión Europea (Fráncfort). Para eliminar tu cuenta, escríbenos.' },
-        { h: 'Estadísticas de visitas', p: 'Contamos las visitas con Vercel Web Analytics, que no usa cookies ni te identifica personalmente.' },
+        { h: 'Estadísticas de visitas', p: 'Contamos las visitas con Vercel Web Analytics, que no usa cookies ni te identifica personalmente. Con tu permiso también usamos Google Analytics 4 para medir de forma anónima qué páginas y enlaces de socios se usan (personalización de anuncios y señales de Google desactivadas). En la UE/Reino Unido solo funciona si aceptas las cookies.' },
         { h: 'Sitios asociados y cookies', p: 'Nuestros enlaces de vuelos, hoteles, tours, traslados, eSIM y seguros llevan a sitios asociados (marcados “Afiliado”). Al hacer clic, abrir un mapa o caja de precios, o cuando se carga el script de afiliación, esos sitios pueden usar sus propias cookies para saber que la reserva vino de nosotros. Rige su política de privacidad. Tu precio no cambia; podemos recibir una comisión.' },
         { h: 'Lo que nunca hacemos', p: 'No vendemos tus datos personales ni los compartimos con otras empresas para publicidad.' },
         { h: 'Contacto', p: `Para cualquier duda de privacidad o solicitud de borrado: ${MAIL}` }
@@ -64,7 +64,7 @@ export const INFO_PAGES: Record<string, L5<InfoPage>> = {
       blocks: [
         { h: 'Данные на вашем устройстве', p: 'Язык, тема, выбранный паспорт, сохранённые маршруты, счётчик Шенгена и даты поездки хранятся в локальном хранилище браузера. Нам они не отправляются; если очистить данные браузера или сбросить их на странице «Резервная копия», они удаляются.' },
         { h: 'Если вы создаёте аккаунт', p: 'Адрес эл. почты и сеанс входа обрабатываются в Supabase с серверами в Евросоюзе (Франкфурт). Чтобы удалить аккаунт, просто напишите нам.' },
-        { h: 'Статистика посещений', p: 'Просмотры страниц мы считаем через Vercel Web Analytics: без cookie и без идентификации личности.' },
+        { h: 'Статистика посещений', p: 'Просмотры страниц мы считаем через Vercel Web Analytics: без cookie и без идентификации личности. С вашего согласия мы также анонимно измеряем через Google Analytics 4, какие страницы и партнёрские ссылки используются (персонализация рекламы и сигналы Google отключены). В ЕС/Великобритании — только после согласия на cookie.' },
         { h: 'Сайты партнёров и cookie', p: 'Ссылки на авиабилеты, отели, туры, трансферы, eSIM и страховки ведут на сайты партнёров (метка «Партнёр»). При переходе, открытии карты или блока цен, а также при загрузке партнёрского скрипта эти сайты могут ставить свои cookie, чтобы учесть бронирование. Действует их политика конфиденциальности. Цена для вас не меняется; мы можем получить комиссию.' },
         { h: 'Чего мы не делаем', p: 'Мы не продаём персональные данные и не передаём их другим компаниям для рекламы.' },
         { h: 'Контакты', p: `Вопросы о конфиденциальности и запросы на удаление: ${MAIL}` }
