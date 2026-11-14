@@ -5,7 +5,7 @@ import { getCountryName } from '../../data/passportData';
 import { getPassportItems } from '../../utils/calculator';
 import { getOptimizedImageUrl } from '../../data/countryVisuals';
 import { GUIDE_LABELS, GUIDE_LINKS } from '../../data/guideLinks';
-import { PACKAGES, toursPath } from '../../data/tours';
+import { LIVE, PACKAGES, tourCurrency, toursPath } from '../../data/tours';
 import { Icon } from '../Icon';
 
 /**
@@ -74,6 +74,35 @@ export const HomeHero: React.FC<{ search: React.ReactNode; chips: { label: strin
   );
 };
 
+/* ---------- Pasaporta göre trend tatil ülkeleri (pasaport, ziyaretçinin IP'sinden gelen varsayılan) ---------- */
+const TRENDS: Record<string, string[]> = {
+  TR: ['TH', 'GE', 'AE', 'EG', 'BA', 'RS', 'JP', 'AZ', 'IT', 'MA'],
+  DE: ['ES', 'IT', 'TR', 'GR', 'HR', 'PT', 'FR', 'TH', 'EG', 'AT'],
+  GB: ['ES', 'FR', 'IT', 'PT', 'GR', 'TR', 'US', 'NL', 'HR', 'TH'],
+  US: ['MX', 'CA', 'IT', 'FR', 'GB', 'JP', 'ES', 'GR', 'DO', 'PT'],
+  RU: ['TR', 'AE', 'EG', 'TH', 'VN', 'GE', 'CN', 'AM', 'ID', 'LK'],
+  ES: ['IT', 'FR', 'PT', 'GB', 'MA', 'GR', 'US', 'MX', 'JP', 'TH'],
+  FR: ['ES', 'IT', 'PT', 'GR', 'MA', 'GB', 'US', 'TH', 'JP', 'HR'],
+  IT: ['ES', 'FR', 'GR', 'PT', 'EG', 'US', 'JP', 'TH', 'HR', 'GB'],
+  NL: ['ES', 'FR', 'IT', 'GR', 'TR', 'PT', 'TH', 'US', 'HR', 'AT'],
+  IN: ['AE', 'TH', 'SG', 'MY', 'ID', 'VN', 'LK', 'GE', 'JP', 'GB'],
+  MX: ['US', 'ES', 'CO', 'PE', 'AR', 'IT', 'FR', 'JP', 'CU', 'CA'],
+  AR: ['BR', 'UY', 'CL', 'ES', 'US', 'MX', 'IT', 'PE', 'CO', 'FR'],
+  CO: ['US', 'MX', 'ES', 'PE', 'AR', 'BR', 'PA', 'CL', 'DO', 'IT']
+};
+const GLOBAL_POP = ['TH', 'JP', 'IT', 'ES', 'FR', 'GR', 'AE', 'TR', 'PT', 'VN', 'ID', 'EG', 'MX', 'GE', 'MA', 'HR', 'MY', 'SG', 'KR', 'US', 'GB', 'BA', 'RS', 'AL', 'AZ', 'LK', 'BR', 'AR', 'PE', 'ZA'];
+/** Pasaporta göre 10 öneri: önce o ülkenin trend tatil yerleri, eksikse vize kolaylığına göre küresel popüler ülkeler */
+export const trendsFor = (passport: string, easyOnly = false) => {
+  const items = new Map(getPassportItems(passport).map((x) => [x.c, x]));
+  const easy = (c: string) => {
+    const it = items.get(c);
+    return !!it && (it.id || it.cat !== 'visa');
+  };
+  const base = (TRENDS[passport] || []).filter((c) => c !== passport && (!easyOnly || easy(c)));
+  const fill = GLOBAL_POP.filter((c) => c !== passport && !base.includes(c) && easy(c));
+  return [...base, ...fill].slice(0, 10);
+};
+
 /* ---------- Vizesiz rotalara en ucuz uçuşlar ---------- */
 const POP = ['GE', 'AZ', 'BA', 'RS', 'MK', 'AL', 'ME', 'TH', 'MA', 'JP', 'KR', 'MY', 'ID', 'SG', 'QA', 'TN', 'JO', 'BR', 'AR', 'MX', 'CO', 'ZA', 'GB', 'FR', 'IT', 'ES', 'DE', 'GR', 'PT', 'NL', 'AE', 'TR', 'US', 'CA'];
 type Fare = { code: string; hub: string; price: number; dep: string; ret: string | null; transfers: number | null; cur: string };
@@ -88,7 +117,8 @@ export const CheapFlights: React.FC<{ passport: string; onOpenCountry: (c: strin
   const cur = CUR[language] || 'eur';
   useEffect(() => {
     if (!near) return;
-    const dest = POP.filter((c) => {
+    const order = [...(TRENDS[passport] || []), ...POP];
+    const dest = [...new Set(order)].filter((c) => {
       const it = items.get(c);
       const hub = (GEO_DATA[c]?.mainHub || '').split('/')[0];
       return c !== passport && it && (it.id || it.cat === 'free') && /^[A-Z]{3}$/.test(hub) && hub !== from;
@@ -157,13 +187,16 @@ export const CheapFlights: React.FC<{ passport: string; onOpenCountry: (c: strin
 };
 
 /* ---------- Günün ülkesi: günübirlik turlar ---------- */
-const DAY_COUNTRIES = ['TH', 'JP', 'IT', 'VN', 'GR', 'AE', 'EG', 'ID', 'ES', 'GE', 'MA', 'FR'];
-export const DayTours: React.FC = () => {
+export const DayTours: React.FC<{ passport: string }> = ({ passport }) => {
   const { l, language } = useI18n();
   const [ref, near] = useNear<HTMLElement>();
-  const start = Math.floor(Date.now() / 864e5) % DAY_COUNTRIES.length;
-  const chips = [0, 1, 2, 3, 4].map((k) => DAY_COUNTRIES[(start + k) % DAY_COUNTRIES.length]);
-  const [code, setCode] = useState(chips[0]);
+  // Pasaporta göre 10 trend ülke; günün ülkesi her gün sıradaki
+  const list = useMemo(() => trendsFor(passport), [passport]);
+  const start = Math.floor(Date.now() / 864e5) % Math.max(list.length, 1);
+  const chips = useMemo(() => list.map((_, k) => list[(start + k) % list.length]), [list, start]);
+  const [pick, setPick] = useState('');
+  const code = pick && chips.includes(pick) ? pick : chips[0] || 'TH';
+  const setCode = setPick;
   const en = getCountryName(code, 'en');
   return (
     <section ref={ref} className="vz-home-sec" aria-labelledby="vz-h-day">
@@ -197,8 +230,31 @@ export const PackEasy: React.FC<{ onEasy: () => void; onPlanner: () => void }> =
   const i = Math.max(0, ['tr', 'en', 'de', 'es', 'ru'].indexOf(language));
   const base = toursPath(language);
   const list = FEATURED.map((id) => PACKAGES.find((p) => p.id === id)).filter((p): p is (typeof PACKAGES)[number] => !!p);
+  // Canlı "başlayan fiyat" (TourRadar): ekrana yaklaşınca yüklenir, gelmezse yalnızca gün sayısı görünür
+  const [ref, near] = useNear<HTMLElement>();
+  const [from, setFrom] = useState<Record<string, string>>({});
+  useEffect(() => {
+    if (!near) return;
+    let alive = true;
+    const cur = tourCurrency(language);
+    FEATURED.forEach((id) => {
+      const cfg = LIVE[id];
+      if (!cfg) return;
+      const qs = new URLSearchParams({ q: cfg.q, c: cfg.c.join(','), min: String(cfg.min), max: String(cfg.max), cur, n: '3', cmp: `pkg_${id}` });
+      fetch(`/api/tours?${qs}`)
+        .then((r) => (r.ok ? r.json() : null))
+        .then((j) => {
+          const ps = (j?.tours || []).map((t: { price?: number }) => t.price).filter((v: unknown): v is number => typeof v === 'number' && v > 0);
+          if (alive && ps.length) setFrom((m) => ({ ...m, [id]: money(Math.min(...ps), j.currency || cur, language) }));
+        })
+        .catch(() => {});
+    });
+    return () => {
+      alive = false;
+    };
+  }, [near, language]);
   return (
-    <section className="vz-home-sec vz-pe" aria-label={l('Paket turlar ve kolay tatil', 'Multi-day tours and easy trip', 'Rundreisen und einfache Reise', 'Tours y viaje fácil', 'Туры и лёгкая поездка')}>
+    <section ref={ref} className="vz-home-sec vz-pe" aria-label={l('Paket turlar ve kolay tatil', 'Multi-day tours and easy trip', 'Rundreisen und einfache Reise', 'Tours y viaje fácil', 'Туры и лёгкая поездка')}>
       <div className="vz-pe-card">
         <span className="vz-eyebrow">{l('Rehberli · konaklama dahil', 'Guided · stays included', 'Geführt · Unterkunft inklusive', 'Guiados · alojamiento incluido', 'С гидом · проживание включено')}</span>
         <h2>{l('Paket turlar', 'Multi-day tours', 'Rundreisen', 'Tours de varios días', 'Многодневные туры')}</h2>
@@ -211,7 +267,10 @@ export const PackEasy: React.FC<{ onEasy: () => void; onPlanner: () => void }> =
                 <b>{p.name[i]}</b>
                 <small>{p.route}</small>
               </span>
-              <em>{l(`${p.days} gün`, `${p.days} days`, `${p.days} Tage`, `${p.days} días`, `${p.days} дн.`)}</em>
+              <span className="vz-pe-r">
+                <em>{l(`${p.days} gün`, `${p.days} days`, `${p.days} Tage`, `${p.days} días`, `${p.days} дн.`)}</em>
+                {from[p.id] && <strong><small>{l('başlangıç', 'from', 'ab', 'desde', 'от')}</small>{from[p.id]}</strong>}
+              </span>
             </a>
           ))}
         </div>

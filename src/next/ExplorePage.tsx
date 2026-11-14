@@ -169,7 +169,7 @@ export const ExplorePage: React.FC<ExploreProps> = (p) => {
           <QuickDeals passport={p.currentPassport} destination={destination} />
         </section>
         <CheapFlights passport={p.currentPassport} onOpenCountry={p.onOpenCountry} />
-        <DayTours />
+        <DayTours passport={p.currentPassport} />
         <PackEasy onEasy={() => openTile('easy')} onPlanner={() => p.onOpenTool('nomad', 'trip')} />
 
         <section className="vz-home-sec" aria-labelledby="vz-h-tools">

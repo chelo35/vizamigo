@@ -35,6 +35,7 @@ html.dark, .dark {
 .vz-app h1, .vz-app h2, .vz-app h3, .vz-app h4 { margin: 0; letter-spacing: -0.025em; text-wrap: balance; color: var(--rd-fg); }
 .vz-app p { margin: 0; }
 .vz-main { flex: 1; padding-bottom: 96px; }
+.vz-main:has(+ .vz-foot) { padding-bottom: 8px; } /* alt bilgi varsa alt menü boşluğunu o bırakıyor */
 @media (min-width: 1024px) { .vz-main { padding-bottom: 0; } }
 .vz-wrap { width: 100%; max-width: 1200px; margin-inline: auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
 .vz-eyebrow { font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--rd-sea-ink); }
@@ -1740,3 +1741,22 @@ html.dark .vz-pe-card.easy { background: var(--rd-surface); }
 .vz-dur-r input::-moz-range-thumb { pointer-events: auto; width: 18px; height: 18px; border-radius: 50%; background: #fff; border: 3px solid var(--rd-sea-ink); cursor: pointer; }
 .vz-dur-r input::-webkit-slider-runnable-track { background: none; }
 .vz-dur-r input::-moz-range-track { background: none; }
+
+/* Paket tur başlangıç fiyatı */
+.vz-pe-r { display: flex !important; flex-direction: column; align-items: flex-end; gap: 3px; flex: none !important; }
+.vz-pe-r strong { font-size: 14px; font-weight: 800; color: var(--rd-fg); white-space: nowrap; display: flex; align-items: baseline; gap: 4px; }
+.vz-pe-r strong small { font-size: 11px; font-weight: 600; color: var(--rd-muted); }
+/* Mobil kapak: üç düğme tek satırda */
+@media (max-width: 959px) {
+  .vz-hero2-chips { flex-wrap: nowrap; gap: 6px; overflow-x: auto; scrollbar-width: none; margin-inline: -16px; padding-inline: 16px; }
+  .vz-hero2-chips::-webkit-scrollbar { display: none; }
+  .vz-hero2-chips button { flex: none; padding: 7px 11px; font-size: 13px; white-space: nowrap; }
+  .vz-hero2 { padding-bottom: 236px; }
+  .vz-hb-lift { margin-top: -222px; }
+}
+/* Koyu mod: turkuaz koyulaşır ve sayfa zeminine yumuşakça karışır */
+html.dark .vz-hero2 { background: linear-gradient(180deg, #0A5E63 0%, #0B3F45 55%, var(--rd-bg) 100%); }
+html.dark .vz-hero2-chips button { background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.22); }
+/* Güven şeridi ile alt bilgi arası boşluk */
+.vz-trust { margin-bottom: 0; }
+.vz-home2 ~ .vz-page-body { padding-bottom: 12px; }
