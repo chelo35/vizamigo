@@ -96,12 +96,17 @@ export const SeaMap: React.FC<Props> = ({
   const mapRef = useRef<any>(null);
   const markers = useRef<Map<string, any>>(new Map());
   const lineRef = useRef<any>(null);
-  const [mode, setMode] = useState<'loading' | 'google' | 'dots'>(forceDots ? 'dots' : 'loading');
+  // Google Haritalar ancak ziyaretçi isteyince yüklenir: kaydırma sırasında yüklenmesi ana iş parçacığını
+  // ~2 saniye kilitliyor, sayfa boş görünüyordu. Başta hafif nokta haritası çizilir.
+  const { l } = useI18n();
+  const [wantGoogle, setWantGoogle] = useState(false);
+  const [mode, setMode] = useState<'loading' | 'google' | 'dots'>(forceDots || !wantGoogle ? 'dots' : 'loading');
   const modeRef = useRef(mode);
   modeRef.current = mode;
 
   useEffect(() => {
-    if (forceDots) return;
+    if (forceDots || !wantGoogle) return;
+    setMode('loading');
     let alive = true;
     if (isGoogleMapsAuthFailed()) {
       setMode('dots');
@@ -133,7 +138,7 @@ export const SeaMap: React.FC<Props> = ({
       window.clearTimeout(t);
       window.removeEventListener('vizamigo:gmaps-auth-failure', onFail);
     };
-  }, [forceDots]);
+  }, [forceDots, wantGoogle]);
 
   // stil, etiketler ve tema
   useEffect(() => {
@@ -237,6 +242,11 @@ export const SeaMap: React.FC<Props> = ({
       <div ref={el} className="vz-seamap-g" style={{ display: mode === 'dots' ? 'none' : 'block' }} role="region" aria-label={ariaLabel} />
       {mode === 'loading' && <div className="vz-seamap-load" aria-hidden="true" />}
       {mode === 'dots' && <DotMap points={points} path={path} ariaLabel={ariaLabel} selectedId={selectedId} focus={focus} fitKey={autoKey} interactive={interactive} />}
+      {mode === 'dots' && !forceDots && !wantGoogle && !isGoogleMapsAuthFailed() && (
+        <button type="button" className="vz-map-up" onClick={() => setWantGoogle(true)}>
+          {l('Ayrıntılı harita', 'Detailed map', 'Detailkarte', 'Mapa detallado', 'Подробная карта')}
+        </button>
+      )}
     </div>
   );
 };

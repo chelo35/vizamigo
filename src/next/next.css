@@ -1755,3 +1755,6 @@ html.dark .vz-hero2-chips button { background: rgba(255,255,255,0.08); border-co
 .vz-trust { margin-bottom: 0; }
 .vz-home2 ~ .vz-page-body { padding-bottom: 12px; }
 .vz-bk-kinds { margin-top: 2px; }
+/* Nokta haritasından Google haritasına geçiş düğmesi (Google yalnızca istenince yüklenir) */
+.vz-seamap { position: relative; }
+.vz-map-up { position: absolute; left: 12px; top: 12px; z-index: 3; border: 1px solid var(--rd-line); background: var(--rd-surface); color: var(--rd-sea-ink); font: inherit; font-size: 13px; font-weight: 700; padding: 7px 12px; border-radius: 999px; cursor: pointer; box-shadow: 0 6px 16px -10px rgba(8, 60, 66, 0.5); }
