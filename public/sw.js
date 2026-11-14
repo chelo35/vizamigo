@@ -1,5 +1,5 @@
 // Vizamigo Service Worker - Offline In-Flight / Airport Resiliency
-const CACHE_NAME = 'vizamigo-v3';
+const CACHE_NAME = 'vizamigo-v4';
 const PRECACHE_ASSETS = [
   '/',
   '/manifest.json',
@@ -35,6 +35,9 @@ self.addEventListener('fetch', (event) => {
     );
     return;
   }
+
+  // API yanıtları önbelleğe alınmaz (fiyatlar ve turlar her zaman güncel gelsin)
+  if (req.url.includes('/api/')) return;
 
   // Handle static assets with stale-while-revalidate
   if (req.method === 'GET' && (req.url.startsWith(self.location.origin) || req.url.includes('fonts.'))) {

@@ -276,7 +276,7 @@ html.dark, .dark {
 /* ---------- Ülke sayfası ---------- */
 .vz-chero { position: relative; isolation: isolate; overflow: hidden; min-height: 420px; display: flex; align-items: flex-end; color: #FFFFFF; }
 .vz-chero-img { position: absolute; inset: 0; z-index: -2; }
-.vz-chero-img img { width: 100%; height: 100%; object-fit: cover; display: block; animation: vz-kenburns 18s ease-out both; }
+.vz-chero-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .vz-chero::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(180deg, rgba(10, 40, 50, 0.15) 0%, rgba(10, 40, 50, 0.05) 35%, rgba(10, 40, 50, 0.72) 100%); }
 .vz-chero-in { padding-top: 24px; padding-bottom: 72px; display: flex; flex-direction: column; gap: 10px; }
 .vz-chero h1 { color: #FFFFFF; font-size: clamp(36px, 6vw, 68px); font-weight: 800; line-height: 1; display: flex; align-items: center; gap: 12px; }
@@ -747,7 +747,9 @@ input[type="range"] { width: 100%; accent-color: var(--rd-sea); }
 /* ---- Geçiş ve açılış animasyonları (hafif; yalnızca transform/opacity, GPU'da çalışır) ---- */
 @media (prefers-reduced-motion: no-preference) {
   /* sayfa değiştirince yumuşak giriş; ilk yüklemede çalışmaz (LCP'yi bekletmesin) */
-  html.vz-nav .vz-page { animation: vz-pagein 0.32s cubic-bezier(0.2, 0.8, 0.2, 1) both; }
+  /* sayfa geçişi: yalnızca kısa bir solma; 'backwards' ile bitince sayfada hiçbir animasyon izi kalmaz
+     (önce 'both' + transform idi: tüm sayfa tek dev katmana dönüşüyor, hızlı kaydırmada boş görünüyordu) */
+  html.vz-nav .vz-page { animation: vz-pagein 0.2s ease-out backwards; }
 
   /* aşağı kaydırdıkça kartlar yerine süzülür; tarayıcı destekliyorsa, hiç JavaScript'siz */
   /* kaydırmaya bağlı kart animasyonu kaldırıldı: her kart ayrı katman oluyordu, hızlı kaydırmada Chrome alanları boş çiziyordu */
@@ -771,7 +773,7 @@ input[type="range"] { width: 100%; accent-color: var(--rd-sea); }
   .vz-panel-b .vz-grid > *:nth-child(5) { animation-delay: 0.16s; }
   .vz-panel-b .vz-grid > *:nth-child(n + 6) { animation-delay: 0.2s; }
 }
-@keyframes vz-pagein { from { opacity: 0; transform: translateY(8px); } }
+@keyframes vz-pagein { from { opacity: 0; } }
 @keyframes vz-reveal { from { opacity: 0; transform: translateY(18px) scale(0.985); } }
 
 /* Kutucuk çizimleri (TileArt) */
@@ -1461,8 +1463,8 @@ button.vz-tb-f { cursor: pointer; }
 
 /* Açılışta zıplama olmasın: kapak fotoğrafı 1x'ten başlayıp çok yavaş yakınlaşır (iskeletle aynı kare) */
 @keyframes vz-kenburns-in { from { transform: scale(1); } to { transform: scale(1.06); } }
-.vz-chero-img img { animation: vz-kenburns-in 24s ease-out both; }
-.rd-hero.has-photo .rd-photo img { animation: vz-kenburns-in 26s ease-out both !important; }
+.vz-chero-img img { animation: none; } /* uzun yakınlaştırma animasyonu kaydırırken büyük görseli sürekli yeniden çizdiriyordu */
+.rd-hero.has-photo .rd-photo img { animation: none !important; }
 
 /* Ülke kapağı: rozet ve Keşfet tek satırda; başkent · para · kod başlığın yanında */
 .vz-chero-top { gap: 8px; flex-wrap: wrap; align-items: center; }

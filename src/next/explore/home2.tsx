@@ -198,6 +198,9 @@ export const DayTours: React.FC<{ passport: string }> = ({ passport }) => {
   const code = pick && chips.includes(pick) ? pick : chips[0] || 'TH';
   const setCode = setPick;
   const en = getCountryName(code, 'en');
+  // Viator'da aynı adı taşıyan başka yerler var (Georgia = ABD eyaleti): bu ülkelerde başkentle aranır
+  const AMBIG: Record<string, string> = { GE: 'Tbilisi', JO: 'Amman', MC: 'Monaco', LU: 'Luxembourg', SG: 'Singapore' };
+  const tq = AMBIG[code] || en;
   return (
     <section ref={ref} className="vz-home-sec" aria-labelledby="vz-h-day">
       <Head
@@ -215,7 +218,7 @@ export const DayTours: React.FC<{ passport: string }> = ({ passport }) => {
       <div className="vz-daytours">
         {near && (
           <Suspense fallback={<div className="vz-skel" style={{ height: 320 }} />}>
-            <TourShowcase key={code} q={en} country={en} n={8} money={(v: number, c: string) => money(v, c, language)} fallback={<p className="vz-h2-note">{l('Bu ülke için turlar şu an yüklenemedi.', 'Tours could not be loaded right now.', 'Touren konnten nicht geladen werden.', 'No se pudieron cargar los tours.', 'Не удалось загрузить экскурсии.')}</p>} />
+            <TourShowcase key={code} q={tq} country={en} n={8} money={(v: number, c: string) => money(v, c, language)} fallback={<p className="vz-h2-note">{l('Bu ülke için turlar şu an yüklenemedi.', 'Tours could not be loaded right now.', 'Touren konnten nicht geladen werden.', 'No se pudieron cargar los tours.', 'Не удалось загрузить экскурсии.')}</p>} />
           </Suspense>
         )}
       </div>
