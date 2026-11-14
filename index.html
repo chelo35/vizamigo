@@ -167,37 +167,9 @@
     <!-- Vercel Web Analytics: çerezsiz ziyaretçi istatistiği (~1 KB, ertelenmiş) -->
     <script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
     <script defer src="/_vercel/insights/script.js"></script>
-    <!-- Travelpayouts Drive (vizamigo.com, proje 586306): seyahat bağlantılarını ortaklık bağlantısına çevirir.
-         Sayfa açılışını yavaşlatmasın diye ana sayfada hiç, diğer sayfalarda ilk etkileşimden sonra yüklenir. -->
-    <script nowprocket data-noptimize="1" data-cfasync="false" data-wpfc-render="false" seraph-accel-crit="1" data-no-defer="1" data-cmp-ab="2">
-      (function () {
-        function tp() {
-          var script = document.createElement("script");
-          script.async = 1;
-          script.setAttribute("data-cmp-ab", "2");
-          script.src = 'https://emrld.ltd/NTg2MzA2.js?t=586306';
-          document.head.appendChild(script);
-        }
-        // Ana sayfada yüklenmez (oradaki bağlantılar zaten ortaklık bağlantısı; Drive o sayfada telefonu saniyelerce kilitliyordu).
-        // Diğer sayfalarda ziyaretçinin ilk dokunuşu/kaydırması sonrasında, tarayıcı boşa çıkınca yüklenir.
-        // AB/İngiltere ziyaretçileri: çerez izni verilene kadar yüklenmez (izin verilince ConsentBanner window.__vzLoadDrive'ı çağırır)
-        var loaded = false;
-        window.__vzLoadDrive = function () { if (!loaded) { loaded = true; tp(); } };
-        try {
-          var tz = Intl.DateTimeFormat().resolvedOptions().timeZone || '';
-          var eu = (/^Europe\//.test(tz) && !/^Europe\/(Istanbul|Moscow|Minsk|Kaliningrad|Samara|Volgograd|Saratov|Ulyanovsk|Astrakhan|Kirov|Simferopol|Kiev|Kyiv|Chisinau|Belgrade|Sarajevo|Skopje|Podgorica|Tirane)$/.test(tz)) || /^Atlantic\/(Canary|Madeira|Azores|Reykjavik)$/.test(tz);
-          if (eu && localStorage.getItem('vz_consent') !== 'all') return;
-        } catch (e) {}
-        if (/^\/((en|de|es|ru)\/?)?$/.test(location.pathname)) return;
-        var done = false, ev = ['pointerdown', 'keydown', 'touchstart', 'scroll'];
-        function go() {
-          if (done) return; done = true;
-          ev.forEach(function (e) { window.removeEventListener(e, go, true); });
-          ('requestIdleCallback' in window) ? requestIdleCallback(window.__vzLoadDrive, { timeout: 3000 }) : setTimeout(window.__vzLoadDrive, 1000);
-        }
-        ev.forEach(function (e) { window.addEventListener(e, go, { capture: true, passive: true }); });
-      })();
-    </script>
+    <!-- Travelpayouts Drive kaldırıldı: sayfayı sürekli tarayıp ana iş parçacığını kilitliyordu (hızlı kaydırmada boş alanlar).
+         Ortaklık bağlantıları artık tıklanınca /api/tp ile üretiliyor (src/utils/analytics.ts). ConsentBanner'ın çağırdığı kanca boş kalır. -->
+    <script>window.__vzLoadDrive = function () {};</script>
   </head>
   <body>
     <div id="root">

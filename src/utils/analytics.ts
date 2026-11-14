@@ -42,15 +42,37 @@ function partnerOf(u: URL): string {
   if (h === 'tp.media' || h.endsWith('.tp.st') || h === 'tp.st') return `travelpayouts:${u.searchParams.get('campaign_id') || u.searchParams.get('p') || ''}`;
   if (h.endsWith('ad.admitad.com') || h.endsWith('admitad.com')) return 'admitad';
   if (h.endsWith('awin1.com')) return `awin:${u.searchParams.get('awinmid') || ''}`;
+  if (isTp(h)) return `travelpayouts:${h}`;
   return h;
 }
 
+/* ---- Travelpayouts ortaklık bağlantıları (Drive betiği yerine) ----
+ * Drive betiği sayfayı sürekli tarayıp ana iş parçacığını yarım saniyeye kadar kilitliyordu; hızlı kaydırınca sayfa boş görünüyordu.
+ * Artık bağlantı yalnızca dokunulduğu anda /api/tp üzerinden ortaklık bağlantısına çevrilir. */
+const TP_HOSTS = ['aviasales.com', 'kiwi.com', 'klook.com', 'yesim.app', 'kiwitaxi.com', 'localrent.com', 'welcomepickups.com', 'tiqets.com', 'gigsky.com', 'airalo.com', 'gettransfer.com', 'drimsim.com', 'getrentacar.com', 'airhelp.com', 'gocity.com', 'economybookings.com', 'bikesbooking.com', 'qeeq.com', 'wegotrip.com', 'autoeurope.eu', 'radicalstorage.com', 'intui.travel', 'compensair.com', 'saily.com', 'kkday.com'];
+const isTp = (h: string) => TP_HOSTS.some((d) => h === d || h.endsWith(`.${d}`));
+function toAff(e: Event): void {
+  const a = (e.target as Element | null)?.closest?.('a[href]') as HTMLAnchorElement | null;
+  if (!a || a.dataset.vzAff) return;
+  let u: URL;
+  try {
+    u = new URL(a.href, location.href);
+  } catch {
+    return;
+  }
+  if (u.protocol !== 'https:' || !isTp(u.hostname)) return;
+  const seg = location.pathname.split('/').filter(Boolean);
+  a.dataset.vzAff = u.toString();
+  a.href = `/api/tp?u=${encodeURIComponent(u.toString())}&c=${encodeURIComponent(`vz_${seg[1] || 'home'}`.slice(0, 40))}`;
+}
+
 function onClick(e: MouseEvent): void {
+  toAff(e);
   const a = (e.target as Element | null)?.closest?.('a[href]') as HTMLAnchorElement | null;
   if (!a) return;
   let u: URL;
   try {
-    u = new URL(a.href, location.href);
+    u = new URL(a.dataset.vzAff || a.href, location.href);
   } catch {
     return;
   }
@@ -75,4 +97,6 @@ export function initAnalytics(): void {
   });
   document.addEventListener('click', onClick, true);
   document.addEventListener('auxclick', onClick as EventListener, true);
+  // bağlantı yeni sekmede / uzun basışla açılsa da ortaklık bağlantısı olsun
+  for (const ev of ['pointerdown', 'contextmenu', 'keydown', 'focusin']) document.addEventListener(ev, toAff, true);
 }
