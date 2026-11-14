@@ -392,6 +392,8 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
   const [rentTab, setRentTab] = useState<'car' | 'moto'>('car');
   const [hotelArea, setHotelArea] = useState('');
   const [tourArea, setTourArea] = useState('');
+  // Tur türü: tekne/gemi turları, bisiklet, müze ve bilet (Viator araması bu kelimeyle daralır)
+  const [tourKind, setTourKind] = useState<'' | 'cruise' | 'bike' | 'tickets'>('');
   useEffect(() => {
     setHotelArea('');
     setTourArea('');
@@ -683,7 +685,12 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
           ))}
         </div>
         <PlaceQ code={code} id={`vz-tq-${code}`} onPick={setTourArea} />
-        <TourShowcase q={tourArea || tCity} country={countryEn} money={(v: number, c: string) => money(v * getCrossRate(c, cur))} fallback={<Stay22Frame mode="experience" address={`${tourArea || tCity}, ${countryEn}`} trip={trip} campaign={`cp_${code.toLowerCase()}_exp`} title={l('Turlar, biletler ve fiyatlar', 'Tours, tickets and prices', 'Touren, Tickets und Preise', 'Tours, entradas y precios', 'Экскурсии, билеты и цены')} />} />
+        <div className="vz-bk-chips vz-bk-kinds" role="tablist" aria-label={l('Tur türü', 'Tour type', 'Tourart', 'Tipo de tour', 'Тип экскурсии')}>
+          {([['', l('Hepsi', 'All', 'Alle', 'Todo', 'Все')], ['cruise', l('🚢 Tekne ve gemi turları', '🚢 Boat & cruises', '🚢 Boote & Kreuzfahrten', '🚢 Barcos y cruceros', '🚢 Круизы и лодки')], ['bike', l('🚲 Bisiklet turları', '🚲 Bike tours', '🚲 Radtouren', '🚲 Tours en bici', '🚲 Велотуры')], ['tickets', l('🎟️ Müze ve bilet', '🎟️ Museums & tickets', '🎟️ Museen & Tickets', '🎟️ Museos y entradas', '🎟️ Музеи и билеты')]] as const).map(([k, t]) => (
+            <button key={k || 'all'} type="button" role="tab" aria-selected={tourKind === k} className={tourKind === k ? 'on' : ''} onClick={() => setTourKind(k)}>{t}</button>
+          ))}
+        </div>
+        <TourShowcase q={`${tourArea || tCity}${tourKind === 'cruise' ? ' cruise' : tourKind === 'bike' ? ' bike tour' : tourKind === 'tickets' ? ' tickets' : ''}`} country={countryEn} money={(v: number, c: string) => money(v * getCrossRate(c, cur))} fallback={<Stay22Frame mode="experience" address={`${tourArea || tCity}, ${countryEn}`} trip={trip} campaign={`cp_${code.toLowerCase()}_exp`} title={l('Turlar, biletler ve fiyatlar', 'Tours, tickets and prices', 'Touren, Tickets und Preise', 'Tours, entradas y precios', 'Экскурсии, билеты и цены')} />} />
         {pkg && (
           <div className="vz-bk-pkg">
             <b>{l('Hazır paket turlar', 'Package tours', 'Pauschalrundreisen', 'Circuitos', 'Пакетные туры')} · {routeName(pkg.route, language)}</b>
