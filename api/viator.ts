@@ -99,6 +99,16 @@ export default async function handler(req: Request) {
       DBG.searchStatus = r.status;
       if (r.ok) products = (((await r.json()) as { products?: P[] }).products || []).filter(keep);
       else DBG.searchErr = (await r.text()).slice(0, 300);
+      // türe uyan az çıktıysa sonraki iki sayfaya da bak (ör. İstanbul bisiklet turları ilk 50 üründe yok)
+      for (let page = 1; kind && r.ok && products.length < 4 && page <= 2; page++) {
+        const r2 = await fetch(`${BASE}/products/search`, {
+          method: 'POST',
+          headers,
+          body: JSON.stringify({ filtering: { destination: String(dest.destinationId) }, sorting: { sort: 'DEFAULT' }, pagination: { start: 1 + page * 50, count: 50 }, currency: 'EUR' })
+        });
+        if (!r2.ok) break;
+        products = products.concat((((await r2.json()) as { products?: P[] }).products || []).filter(keep));
+      }
     }
     if (!products.length && !(kind && dest)) {
       const r = await fetch(`${BASE}/search/freetext`, {
