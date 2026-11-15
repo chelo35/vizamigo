@@ -373,6 +373,19 @@ function getSerpAnswer(
   const geo = GEO_DATA[code];
   const cap = geo?.capital ? capitalName(code, lang, geo.capital) : '';
   const CC = cap && cap !== C ? `${C} (${cap})` : C;
+  // Çok gösterim alan pasaport + ülke sayfaları: insanların aradığı şehir adlarıyla, resmî kaynaklı özel başlık/açıklama
+  // (Search Console: "krakow / warsaw visa requirements", "cappadocia visa requirements" — Hindistan'dan aramalar)
+  const PAIR: Record<string, { title: string; description: string }> = {
+    'en:PL:IN': {
+      title: 'Poland Visa for Indians 2026: Schengen Visa for Warsaw & Kraków',
+      description: 'Indian passport holders need a C-type Schengen visa for Poland, including Warsaw and Kraków. Apply at VFS Global 15 days to 6 months before travel; €30,000 travel insurance required.'
+    },
+    'en:TR:IN': {
+      title: 'Türkiye Visa for Indians 2026: Cappadocia, Istanbul & e-Visa Rules',
+      description: 'Indian citizens need a visa for Türkiye, including Cappadocia and Istanbul. With a valid Schengen, US, UK or Irish visa or residence permit you may get a one-month e-Visa online.'
+    }
+  };
+  if (PAIR[`${lang}:${code}:${pass}`]) return PAIR[`${lang}:${code}:${pass}`];
   switch (lang) {
     case 'tr': {
       const short = cat === 'id' ? `Kimlikle Vizesiz${days ? ` ${days} Gün` : ''}` : free ? (days ? `${days} Gün Vizesiz` : 'Vizesiz') : cat === 'voa' ? 'Kapıda Vize' : cat === 'evisa' ? 'e-Vize Gerekli' : cat === 'eta' ? `${eta} Gerekli` : 'Vize Gerekli';
