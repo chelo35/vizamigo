@@ -166,6 +166,18 @@
           "TR"
         ]
       }
+    ],
+    "JP": [
+      {
+        "q": "Japonya'ya vize var mı? Türk vatandaşları vizesiz gidebilir mi?",
+        "a": "Hayır, vize yok. Türk vatandaşları turizm ve iş ziyareti amacıyla Japonya'ya 90 güne kadar vizesiz gider; bunun için ICAO standartlarına uygun, makinece okunabilir pasaport gerekir. Japonya'da uzun süre yaşamak veya çalışmak için yola çıkmadan önce amaca uygun vize alınmalıdır; 90 günü aşanlara sınır dışı işlemi uygulanır.",
+        "u": "https://www.mfa.gov.tr/japonya-seyahat-edecek-turk-vatandaslarinin-dikkatine.tr.mfa",
+        "h": "T.C. Dışişleri Bakanlığı; Japonya Dışişleri Bakanlığı (vize muafiyeti listesi)",
+        "d": "2026-11-15",
+        "p": [
+          "TR"
+        ]
+      }
     ]
   },
   "en": {
@@ -273,6 +285,15 @@
         "p": [
           "US"
         ]
+      }
+    ],
+    "TR": [
+      {
+        "q": "Do I need a visa for Cappadocia (Türkiye)?",
+        "a": "Cappadocia is in Türkiye, so Turkish entry rules apply. US, UK, Canadian and Australian ordinary passport holders need no visa for up to 90 days in any 180-day period. Indian citizens need a visa; those holding a valid Schengen, US, UK or Irish visa or residence permit may get a one-month single-entry e-Visa if they meet the conditions.",
+        "u": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa",
+        "h": "Republic of Türkiye Ministry of Foreign Affairs: Visa information for foreigners",
+        "d": "2026-11-15"
       }
     ]
   },
@@ -396,6 +417,42 @@
           "DE"
         ]
       }
+    ],
+    "BS": [
+      {
+        "q": "Einreise Bahamas: Brauchen Deutsche ein Visum?",
+        "a": "Nein. Deutsche brauchen für touristische Aufenthalte bis 90 Tage kein Visum. Einreise nur mit Reisepass, vorläufigem Reisepass oder Kinderreisepass (kein Personalausweis); das Dokument muss mindestens sechs Monate über das Reiseende hinaus gültig sein.",
+        "u": "https://www.auswaertiges-amt.de/de/service/laender/bahamas-node/bahamassicherheit-220268",
+        "h": "Auswärtiges Amt: Bahamas – Einreise und Zoll",
+        "d": "2026-11-15",
+        "p": [
+          "DE"
+        ]
+      }
+    ],
+    "PH": [
+      {
+        "q": "Einreise Philippinen: Brauchen Deutsche ein Visum und was ist eTravel?",
+        "a": "Ein vorab beantragtes Visum ist für Urlaub nicht nötig: Touristen erhalten bei der Einreise gebührenfrei 30 Tage, wenn sie ein gültiges Rück- oder Weiterflugticket vorlegen; eine Verlängerung auf insgesamt bis zu 59 Tage ist beim Bureau of Immigration (auch online) möglich. Vor der Einreise ist die Registrierung auf etravel.gov.ph Pflicht. Nur mit Reisepass (kein Personalausweis), der noch sechs Monate über den Aufenthalt hinaus gültig ist.",
+        "u": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/philippinensicherheit-212492",
+        "h": "Auswärtiges Amt: Philippinen – Einreise und Zoll",
+        "d": "2026-11-15",
+        "p": [
+          "DE"
+        ]
+      }
+    ],
+    "TN": [
+      {
+        "q": "Einreise Tunesien: Reicht der Personalausweis?",
+        "a": "Nein. Mit dem deutschen Personalausweis ist die Einreise nicht möglich; nötig ist ein Reisepass (oder Kinderreisepass), der bei Einreise noch mindestens sechs Monate gültig ist. Ein Visum brauchen Deutsche für Aufenthalte bis 120 Tage nicht; bei Überschreitung werden 20 TND je fünf Tage fällig.",
+        "u": "https://www.auswaertiges-amt.de/de/service/laender/tunesien-node/tunesiensicherheit-219024",
+        "h": "Auswärtiges Amt: Tunesien – Einreise und Zoll",
+        "d": "2026-11-15",
+        "p": [
+          "DE"
+        ]
+      }
     ]
   },
   "es": {
@@ -497,6 +554,30 @@
         "u": "https://www.immigration.govt.nz/visit/what-you-need-to-visit-new-zealand/visa-waiver-countries-and-territories/",
         "h": "Immigration New Zealand: países con exención de visa; Tourism New Zealand: NZeTA e IVL",
         "d": "2026-11-14"
+      }
+    ],
+    "CA": [
+      {
+        "q": "¿Necesito visa para ir a Canadá si soy mexicano?",
+        "a": "Depende. Solo puedes viajar con eTA si vas en avión, por una estancia corta y además tuviste una visa canadiense de visitante en los últimos 10 años o tienes hoy una visa estadounidense de no inmigrante vigente. Si no cumples esas condiciones, o si entras por tierra o mar (incluidos cruceros), necesitas visa de visitante.",
+        "u": "https://www.canada.ca/en/immigration-refugees-citizenship/campaigns/eta-work-visa-mexico-es.html",
+        "h": "Gobierno de Canadá (IRCC): eTA y visas para ciudadanos mexicanos",
+        "d": "2026-11-15",
+        "p": [
+          "MX"
+        ]
+      }
+    ],
+    "JP": [
+      {
+        "q": "¿Necesito visa para ir a Japón si soy mexicano?",
+        "a": "No, para turismo, negocios o visitas cortas los mexicanos entran sin visa por hasta 90 días con pasaporte ordinario. Por el acuerdo bilateral se puede llegar hasta 6 meses pidiendo una prórroga en la Oficina Regional de Inmigración antes de que venzan los 90 días. Para trabajar o estudiar sí se necesita visa.",
+        "u": "https://www.mofa.go.jp/j_info/visit/visa/short/novisa.html",
+        "h": "Ministerio de Asuntos Exteriores de Japón: exención de visa (estancia corta)",
+        "d": "2026-11-15",
+        "p": [
+          "MX"
+        ]
       }
     ]
   },
@@ -613,6 +694,18 @@
         "u": "https://t-j.ru/vietnam-entry-rules/",
         "h": "Т—Ж: правила въезда во Вьетнам (обновлено 29.07.2026); Совкомбанк Журнал",
         "d": "2026-11-14",
+        "p": [
+          "RU"
+        ]
+      }
+    ],
+    "MA": [
+      {
+        "q": "Нужна ли виза в Марокко для россиян?",
+        "a": "Нет. Гражданам России с обычным загранпаспортом виза не нужна: безвизовое пребывание до 90 суток. Загранпаспорт должен быть действителен не менее 6 месяцев после даты выезда из Марокко; для пребывания дольше 90 дней нужно оформить вид на жительство в органах МВД Марокко.",
+        "u": "https://www.kdmid.ru/docs/morocco/information-about-the-country/",
+        "h": "Консульский портал МИД России: Марокко",
+        "d": "2026-11-15",
         "p": [
           "RU"
         ]
