@@ -449,7 +449,8 @@ function getSerpAnswer(
         : cat === 'eta' ? `${P} passport holders need an electronic travel authorisation (${eta}) before travel`
         : `${P} passport holders must apply for a visa at an embassy before travel`;
       return {
-        title: fitT([`${C} Visa Requirements 2026: ${short} for ${dem}`, `${C} Visa 2026: ${short} for ${dem}`, `${C} Visa 2026: ${short}`]),
+        // Başkent başlıkta: ABD/Kanada aramalarında "budapest / vienna / vilnius visa requirements" kalıbı sık (Search Console)
+        title: (cap && cap !== C && `${C} Visa 2026 (${cap}): ${short} for ${dem}`.length <= 64 ? `${C} Visa 2026 (${cap}): ${short} for ${dem}` : '') || fitT([`${C} Visa Requirements 2026: ${short} for ${dem}`, `${C} Visa 2026: ${short} for ${dem}`, `${C} Visa 2026: ${short}`]),
         description: fitD(`${CC}: ${long}.`, ['Official sources, travel advisory, emergency numbers, itinerary, flight and hotel deals.', 'Official sources, emergency numbers, route and prices.', 'Official sources and prices.'])
       };
     }
