@@ -56,6 +56,8 @@ export type TpId =
   | 'woopdrive'
   | 'raynatours'
   | 'sanatoriums'
+  | 'italiarail'
+  | 'feverup'
   | 'hotelscom'
   | 'kayak'
   | 'bookingcars'
@@ -113,6 +115,8 @@ export const TP: Record<TpId, TpBrand> = {
   woopdrive: { name: 'WoopDrive', domain: 'woopdrive.com', rate: '4.2–6%' },
   raynatours: { name: 'Rayna Tours', domain: 'raynatours.com', rate: '4.8–8%' },
   sanatoriums: { name: 'Sanatoriums', domain: 'sanatoriums.com', rate: 'Admitad' },
+  italiarail: { name: 'Italiarail', domain: 'italiarail.com', rate: 'Admitad' },
+  feverup: { name: 'Fever', domain: 'feverup.com', rate: 'Admitad' },
   safetywing: { name: 'SafetyWing', domain: 'safetywing.com', rate: '10%' },
   hellosafe: { name: 'HelloSafe', domain: 'hellosafe.com', rate: '10–20%' },
   tourradar: { name: 'TourRadar', domain: 'tourradar.com', rate: 'TourRadar' },
@@ -128,7 +132,7 @@ export const TP: Record<TpId, TpBrand> = {
  * Kilit açılınca buradan çıkar; bağlantılar otomatik olarak markanın kendisine döner.
  * Kontrol: 4 Kasım 2026 (25 bağlı program, 20 kilitli).
  */
-export const LOCKED = new Set<TpId>(['tripcom', 'omio', 'hostelworld', 'discovercars', 'getyourguide', 'viator']);
+export const LOCKED = new Set<TpId>(['tripcom', 'omio', 'hostelworld', 'getyourguide', 'viator']);
 /** 12Go doğrudan ortaklık programındaki ajans numaramız */
 export const TWELVEGO_AGENT = '17478120';
 
@@ -231,8 +235,9 @@ export function routeLink(url: string): string {
   const q = u.searchParams.get('q') || u.searchParams.get('text') || u.searchParams.get('query') || u.searchParams.get('destination') || '';
   // Uçuş: Trip.com / Skyscanner → Aviasales
   if ((is('trip.com') && u.pathname.startsWith('/flights')) || is('skyscanner.com') || is('skyscanner.net')) return 'https://www.aviasales.com/';
-  // Araç kiralama: DiscoverCars / Rentalcars → Economybookings
-  if (is('discovercars.com') || is('rentalcars.com')) return 'https://www.economybookings.com/';
+  // Araç kiralama: DiscoverCars (Admitad, 16 Kas 2026 onaylandı) / Rentalcars → DiscoverCars
+  if (is('discovercars.com')) return discovercarsLink(url);
+  if (is('rentalcars.com')) return discovercarsLink();
   // Tur ve aktivite: GetYourGuide / Viator / Tripadvisor → Klook araması
   if (is('getyourguide.com') && q) return stay22('getyourguide', { address: q });
   if (is('getyourguide.com') || is('viator.com') || is('tripadvisor.com')) return klookLink(q ? `https://www.klook.com/search/result/?query=${encodeURIComponent(q)}` : 'https://www.klook.com/');
@@ -252,7 +257,10 @@ const ADMITAD_IDS: Record<string, TpId> = {
   ffzns2ktmfe40c2b51fbd80355ec70: 'woopdrive',
   ofc53p8nise40c2b51fbe94db72a90: 'raynatours',
   '82hm46o8g4e40c2b51fb790b103c92': 'sanatoriums',
-  uk7qqjwme4e40c2b51fb6ca26c9222: 'klook'
+  uk7qqjwme4e40c2b51fb6ca26c9222: 'klook',
+  wqjhitsyjqe40c2b51fb5ea594bb46: 'discovercars',
+  ca326rdm5ve40c2b51fbef1cea9751: 'italiarail',
+  '76gmhzdzl4e40c2b51fb853277f5f6': 'feverup'
 };
 
 /** Bir bağlantının hangi Travelpayouts markasına gittiğini bulur (logo göstermek için) */
@@ -298,6 +306,12 @@ const EU_RAIL = new Set([
 const admitad = (base: string, ulp?: string) => (ulp ? `${base}?ulp=${encodeURIComponent(ulp)}` : base);
 /** Klook: Admitad (Klook WW, %1,6–8 satış + bazı ülkelerde tıklama başı ücret). Tüm Klook bağlantıları buradan geçer. */
 export const klookLink = (url = 'https://www.klook.com/') => admitad('https://bjpql.com/g/uk7qqjwme4e40c2b51fb6ca26c9222/', url);
+/** DiscoverCars: Admitad (DiscoverCars WW, 16 Kas 2026 onaylandı). ulp verilirse o sayfaya gider. */
+export const discovercarsLink = (url?: string) => admitad('https://naiawork.com/g/wqjhitsyjqe40c2b51fb5ea594bb46/', url);
+/** Italiarail (Admitad, 16 Kas 2026): İtalya tren biletleri */
+export const ITALIARAIL_COUNTRIES = new Set(['IT']);
+/** Fever (Admitad, 16 Kas 2026): konser, Candlelight, sergi ve etkinlik biletleri; güçlü olduğu ülkeler */
+export const FEVER_COUNTRIES = new Set(['US', 'GB', 'ES', 'FR', 'IT', 'DE', 'PT', 'NL', 'BE', 'IE', 'MX', 'CA', 'AU']);
 /** Rayna Tours'un tur sattığı ülkeler (BAE, Umman, Suudi Arabistan, Singapur, Tayland, Malezya, Endonezya) */
 export const RAYNA_COUNTRIES = new Set(['AE', 'OM', 'SA', 'SG', 'TH', 'MY', 'ID']);
 /** Sanatoriums'un sanatoryum/kaplıca sattığı ülkeler (Rusya ve BDT) */
@@ -327,7 +341,8 @@ export const tpLinks = {
   kiwitaxi: () => `https://kiwitaxi.com/`,
   welcomePickups: () => `https://www.welcomepickups.com/`,
   gettransfer: () => `https://gettransfer.com/`,
-  discovercars: (country: string) => (LOCKED.has('discovercars') ? `https://www.economybookings.com/` : `https://www.discovercars.com/${slug(country)}`),
+  // DiscoverCars ülke sayfası adları her zaman ülke adıyla eşleşmediği için ana sayfaya gider (arama orada)
+  discovercars: (_country: string) => discovercarsLink(),
   economybookings: () => `https://www.economybookings.com/`,
   getrentacar: () => `https://getrentacar.com/`,
   qeeq: () => `https://www.qeeq.com/`,
@@ -345,6 +360,8 @@ export const tpLinks = {
   woopdrive: () => admitad('https://dkfrh.com/g/ffzns2ktmfe40c2b51fbd80355ec70/'),
   raynatours: () => admitad('https://xpuvo.com/g/ofc53p8nise40c2b51fbe94db72a90/'),
   sanatoriums: () => admitad('https://kjuzv.com/g/82hm46o8g4e40c2b51fb790b103c92/'),
+  italiarail: () => admitad('https://ujhjj.com/g/ca326rdm5ve40c2b51fbef1cea9751/'),
+  feverup: () => admitad('https://bywiola.com/g/76gmhzdzl4e40c2b51fb853277f5f6/'),
   safetywing: () => SAFETYWING,
   // HelloSafe (Awin, yayıncı 3138284): sigorta karşılaştırma, 20+ dil
   hellosafe: () => 'https://www.awin1.com/cread.php?awinmid=128757&awinaffid=3138284&clickref=vizamigo',

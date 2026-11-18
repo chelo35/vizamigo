@@ -11,7 +11,7 @@ import { getCountryInsights } from '../data/countryInsights';
 import { getPassportItems } from '../utils/calculator';
 import { getCrossRate } from '../data/currencyRates';
 import { useLiveFx } from '../utils/liveData';
-import { tpLinks, stay22, s22Flights, s22Cars, gygLink, RAYNA_COUNTRIES, SANATORIUM_COUNTRIES, klookLink } from '../data/tpPartners';
+import { tpLinks, stay22, s22Flights, s22Cars, gygLink, RAYNA_COUNTRIES, SANATORIUM_COUNTRIES, ITALIARAIL_COUNTRIES, FEVER_COUNTRIES, klookLink } from '../data/tpPartners';
 import { TOURS } from '../data/tours';
 import ESIM from '../data/esimPrices.json';
 
@@ -368,6 +368,8 @@ export const TripPlanner: React.FC<{ passport: string; dest: string; onOpenCount
               <Row lead={<PartnerLogo id="compensair" />} title={l('Tazminat için ikinci seçenek', 'Second option for compensation', 'Zweite Option für Entschädigung', 'Segunda opción de compensación', 'Ещё один сервис компенсаций')} sub={l('Compensair · kazanamazsan ücret yok', 'Compensair · no win, no fee', 'Compensair · keine Gebühr ohne Erfolg', 'Compensair · sin éxito, sin coste', 'Compensair · без выплаты — без комиссии')} href={tpLinks.compensair()} />
               {RAYNA_COUNTRIES.has(s.to) && <Row key={`r-${s.to}`} lead={<PartnerLogo id="raynatours" />} title={l('Çöl safarisi, şehir turları ve biletler', 'Desert safaris, city tours & tickets', 'Wüstensafaris, Stadttouren & Tickets', 'Safaris, tours y entradas', 'Сафари, экскурсии и билеты')} sub={`Rayna Tours · ${city}`} href={tpLinks.raynatours()} />}
               {SANATORIUM_COUNTRIES.has(s.to) && <Row key={`sn-${s.to}`} lead={<PartnerLogo id="sanatoriums" />} title={l('Sanatoryum ve kaplıca tatili', 'Sanatoriums & spa resorts', 'Sanatorien & Kurorte', 'Sanatorios y balnearios', 'Санатории и курорты')} sub={`Sanatoriums · ${city}`} href={tpLinks.sanatoriums()} />}
+              {ITALIARAIL_COUNTRIES.has(s.to) && <Row key={`ir-${s.to}`} lead={<PartnerLogo id="italiarail" />} title={l('İtalya tren biletleri', 'Italy train tickets', 'Zugtickets Italien', 'Billetes de tren en Italia', 'Билеты на поезда по Италии')} sub={l('Italiarail · Frecciarossa, Italo ve bölgesel trenler', 'Italiarail · Frecciarossa, Italo & regional trains', 'Italiarail · Frecciarossa, Italo & Regionalzüge', 'Italiarail · Frecciarossa, Italo y regionales', 'Italiarail · Frecciarossa, Italo и региональные')} href={tpLinks.italiarail()} />}
+              {FEVER_COUNTRIES.has(s.to) && <Row key={`fv-${s.to}`} lead={<PartnerLogo id="feverup" />} title={l('Konser ve etkinlik biletleri', 'Concerts & event tickets', 'Konzerte & Event-Tickets', 'Conciertos y eventos', 'Концерты и события')} sub={`Fever · ${city}`} href={tpLinks.feverup()} />}
             </List>
           </section>
 
