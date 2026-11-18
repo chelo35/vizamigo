@@ -21,7 +21,7 @@ export const TRANSFER_ROUTES: Record<string, TransferRoute[]> = {
     { city: 'queenstown', slug: 'queenstown-airport-queenstown', iata: 'ZQN', from: 'Queenstown', to: 'Queenstown', usd: 80 }
   ],
   DO: [
-    { city: 'punta-cana', slug: 'punta-cana-airport-punta-cana', iata: 'PUJ', from: 'Punta Cana', to: 'Punta Cana', usd: 34 }
+    { city: 'punta-cana', slug: 'punta-cana-airport-punta-cana', iata: 'PUJ', from: 'Punta Cana', to: 'Punta Cana', usd: 32 }
   ],
   JO: [
     { city: 'amman', slug: 'amman-civil-airport-amman', iata: 'AMM', from: 'Amman', to: 'Amman', usd: 50 },
@@ -33,7 +33,7 @@ export const TRANSFER_ROUTES: Record<string, TransferRoute[]> = {
   ],
   GE: [
     { city: 'tbilisi', slug: 'tbilisi-airport-tbilisi', iata: 'TBS', from: 'Tiflis', to: 'Tiflis', usd: 35 },
-    { city: 'batumi', slug: 'batumi-airport-batumi', iata: 'BUS', from: 'Batum', to: 'Batum', usd: 37 }
+    { city: 'batumi', slug: 'batumi-airport-batumi', iata: 'BUS', from: 'Batum', to: 'Batum', usd: 35 }
   ],
   ME: [
     { city: 'budva', slug: 'taxi-from-tivat-airport-to-budva', iata: 'TIV', from: 'Tivat', to: 'Budva', usd: 62, cur: 'EUR' },
@@ -43,8 +43,8 @@ export const TRANSFER_ROUTES: Record<string, TransferRoute[]> = {
     { city: 'tirana', slug: 'tirana-airport-tirana', iata: 'TIA', from: 'Tiran', to: 'Tiran', usd: 30, cur: 'EUR' }
   ],
   CY: [
-    { city: 'ayia-napa', slug: 'larnaca-airport-ayia-napa', iata: 'LCA', from: 'Larnaka', to: 'Ayia Napa', usd: 81, cur: 'EUR' },
-    { city: 'paphos', slug: 'paphos-airport-paphos', iata: 'PFO', from: 'Baf', to: 'Baf', usd: 48, cur: 'EUR' }
+    { city: 'ayia-napa', slug: 'larnaca-airport-ayia-napa', iata: 'LCA', from: 'Larnaka', to: 'Ayia Napa', usd: 72, cur: 'EUR' },
+    { city: 'paphos', slug: 'paphos-airport-paphos', iata: 'PFO', from: 'Baf', to: 'Baf', usd: 58, cur: 'EUR' }
   ],
   NO: [
     { city: 'oslo', slug: 'gardermoen-airport-oslo', iata: 'OSL', from: 'Oslo', to: 'Oslo', usd: 144, cur: 'EUR' }

@@ -2,7 +2,7 @@
  * Ülke içi şehirler ve şehir bazlı yaklaşık fiyatlar (ortak sitelerin kendi sayfalarından elle/haftalık toplanır).
  * Fiyatlar "yaklaşık, başlayan" olarak gösterilir; kesin fiyat ortak sitede.
  */
-export const PRICES_CHECKED = '2026-11-11';
+export const PRICES_CHECKED = '2026-11-18';
 
 /** SafetyWing Nomad Insurance Essential, 10–39 yaş, 4 hafta (ABD hariç), USD — safetywing.com/nomad-insurance */
 export const SAFETYWING_4W_USD = 62.72;
@@ -100,8 +100,8 @@ export const CITIES: Record<string, City[]> = {
     { id: 'kutaisi', en: "Kutaisi", iata: 'KUT', lr: { path: 'georgia/kutaisi', eur: 25 } }
   ],
   ME: [
-    { id: 'budva', en: "Budva", iata: 'TIV', lr: { path: 'montenegro/budva', eur: 14 } },
-    { id: 'kotor', en: "Kotor", iata: 'TIV', lr: { path: 'montenegro/tivat', eur: 14 } },
+    { id: 'budva', en: "Budva", iata: 'TIV', lr: { path: 'montenegro/budva', eur: 13 } },
+    { id: 'kotor', en: "Kotor", iata: 'TIV', lr: { path: 'montenegro/tivat', eur: 13 } },
     { id: 'podgorica', en: "Podgorica", iata: 'TGD', lr: { path: 'montenegro/podgorica', eur: 12.15 } }
   ],
   AL: [
@@ -112,7 +112,7 @@ export const CITIES: Record<string, City[]> = {
   CY: [
     { id: 'ayia-napa', en: "Ayia Napa", iata: 'LCA', lr: { path: 'cyprus/ayia-napa', eur: 14.58 } },
     { id: 'paphos', en: "Paphos", iata: 'PFO', tr: 'Baf', lr: { path: 'cyprus/paphos' } },
-    { id: 'larnaca', en: "Larnaca", iata: 'LCA', tr: 'Larnaka', lr: { path: 'cyprus/larnaca', eur: 10.67 } },
+    { id: 'larnaca', en: "Larnaca", iata: 'LCA', tr: 'Larnaka', lr: { path: 'cyprus/larnaca', eur: 10.34 } },
     { id: 'limassol', en: "Limassol", iata: 'LCA', tr: 'Limasol' }
   ],
   NO: [
@@ -122,7 +122,7 @@ export const CITIES: Record<string, City[]> = {
     { id: 'lofoten', en: "Lofoten", iata: 'BOO' }
   ],
   IS: [
-    { id: 'reykjavik', en: "Reykjavik", iata: 'KEF', tr: 'Reykjavík', lr: { path: 'iceland/reykjavik' } },
+    { id: 'reykjavik', en: "Reykjavik", iata: 'KEF', tr: 'Reykjavík', lr: { path: 'iceland/reykjavik', eur: 81.2 } },
     { id: 'vik', en: "Vik", iata: 'KEF' }
   ],
   QA: [
@@ -141,7 +141,7 @@ export const CITIES: Record<string, City[]> = {
     { id: 'vaduz', en: 'Vaduz', iata: 'ZRH' }
   ],
   MC: [
-    { id: 'monaco', en: 'Monaco', iata: 'NCE', tr: 'Monako', moto: { slug: 'monaco' } }
+    { id: 'monaco', en: 'Monaco', iata: 'NCE', tr: 'Monako', moto: { slug: 'monaco', eur: 33 } }
   ],
   SM: [
     { id: 'san-marino', en: 'San Marino', iata: 'BLQ' }
@@ -179,7 +179,7 @@ export const CITIES: Record<string, City[]> = {
     { id: 'nadi', en: "Nadi", iata: 'NAN', lr: { path: 'fiji/nadi' } }
   ],
   SC: [
-    { id: 'mahe', en: "Mahé", iata: 'SEZ', lr: { path: 'seychelles/mahe', eur: 45 } },
+    { id: 'mahe', en: "Mahé", iata: 'SEZ', lr: { path: 'seychelles/mahe', eur: 40 } },
     { id: 'praslin', en: "Praslin", iata: 'PRI' }
   ],
   MK: [
@@ -244,11 +244,11 @@ export const CITIES: Record<string, City[]> = {
     { id: 'burgas', en: "Burgas", iata: 'BOJ', tr: "Burgaz", lr: { path: 'bulgaria/burgas' } }
   ],
   SI: [
-    { id: 'ljubljana', en: "Ljubljana", iata: 'LJU', lr: { path: 'slovenia/ljubljana', eur: 9.58 } },
+    { id: 'ljubljana', en: "Ljubljana", iata: 'LJU', lr: { path: 'slovenia/ljubljana', eur: 10.5 } },
     { id: 'bled', en: "Bled", iata: 'LJU' }
   ],
   RS: [
-    { id: 'belgrade', en: "Belgrade", iata: 'BEG', tr: "Belgrad", lr: { path: 'serbia/belgrade', eur: 14.4 } },
+    { id: 'belgrade', en: "Belgrade", iata: 'BEG', tr: "Belgrad", lr: { path: 'serbia/belgrade', eur: 19 } },
     { id: 'novi-sad', en: "Novi Sad", iata: 'BEG', lr: { path: 'serbia/novi-sad' } }
   ],
   BA: [
@@ -325,19 +325,19 @@ export const CITIES: Record<string, City[]> = {
     { id: 'kota-kinabalu', en: 'Kota Kinabalu', iata: 'BKI' }
   ],
   PL: [
-    { id: 'warsaw', en: 'Warsaw', iata: 'WAW', tr: 'Varşova', lr: { path: 'poland/warsaw', eur: 12.84 } },
-    { id: 'krakow', en: 'Krakow', iata: 'KRK', tr: 'Krakov', lr: { path: 'poland/krakow', eur: 12.84 }, moto: { slug: 'krakow' } },
+    { id: 'warsaw', en: 'Warsaw', iata: 'WAW', tr: 'Varşova', lr: { path: 'poland/warsaw', eur: 11.41 } },
+    { id: 'krakow', en: 'Krakow', iata: 'KRK', tr: 'Krakov', lr: { path: 'poland/krakow', eur: 11.41 }, moto: { slug: 'krakow' } },
     { id: 'gdansk', en: 'Gdansk', iata: 'GDN', tr: 'Gdańsk' },
     { id: 'wroclaw', en: 'Wroclaw', iata: 'WRO', tr: 'Wrocław' }
   ],
   HR: [
     { id: 'dubrovnik', en: 'Dubrovnik', iata: 'DBV', lr: { path: 'croatia/dubrovnik' }, moto: { slug: 'dubrovnik' } },
-    { id: 'split', en: 'Split', iata: 'SPU', lr: { path: 'croatia/split', eur: 12.5 }, moto: { slug: 'split' } },
+    { id: 'split', en: 'Split', iata: 'SPU', lr: { path: 'croatia/split', eur: 12.5 }, moto: { slug: 'split', eur: 25 } },
     { id: 'zagreb', en: 'Zagreb', iata: 'ZAG', lr: { path: 'croatia/zagreb' }, moto: { slug: 'zagreb', eur: 50 } },
-    { id: 'zadar', en: 'Zadar', iata: 'ZAD', moto: { slug: 'zadar' } }
+    { id: 'zadar', en: 'Zadar', iata: 'ZAD', moto: { slug: 'zadar', eur: 45 } }
   ],
   HU: [
-    { id: 'budapest', en: 'Budapest', iata: 'BUD', tr: 'Budapeşte', lr: { path: 'hungary/budapest', eur: 16.83 }, moto: { slug: 'budapest' } },
+    { id: 'budapest', en: 'Budapest', iata: 'BUD', tr: 'Budapeşte', lr: { path: 'hungary/budapest', eur: 16.83 }, moto: { slug: 'budapest', eur: 93 } },
     { id: 'balaton', en: 'Lake Balaton', iata: 'BUD', tr: 'Balaton Gölü' }
   ],
   EG: [
@@ -348,13 +348,13 @@ export const CITIES: Record<string, City[]> = {
   ],
   MA: [
     { id: 'marrakech', en: 'Marrakech', iata: 'RAK', tr: 'Marakeş', lr: { path: 'morocco/marrakech', eur: 22 }, moto: { slug: 'marrakech', eur: 11.5 } },
-    { id: 'casablanca', en: 'Casablanca', iata: 'CMN', tr: 'Kazablanka', lr: { path: 'morocco/casablanca', eur: 20.86 }, moto: { slug: 'casablanca' } },
-    { id: 'agadir', en: 'Agadir', iata: 'AGA', lr: { path: 'morocco/agadir', eur: 28.08 }, moto: { slug: 'agadir' } },
+    { id: 'casablanca', en: 'Casablanca', iata: 'CMN', tr: 'Kazablanka', lr: { path: 'morocco/casablanca', eur: 21 }, moto: { slug: 'casablanca', eur: 20 } },
+    { id: 'agadir', en: 'Agadir', iata: 'AGA', lr: { path: 'morocco/agadir', eur: 29 }, moto: { slug: 'agadir', eur: 20 } },
     { id: 'fes', en: 'Fes', iata: 'FEZ', tr: 'Fas' },
     { id: 'chefchaouen', en: 'Chefchaouen', iata: 'TNG', tr: 'Şafşavan' }
   ],
   VN: [
-    { id: 'hanoi', en: 'Hanoi', iata: 'HAN', lr: { path: 'vietnam/hanoi', eur: 33 }, moto: { slug: 'hanoi' } },
+    { id: 'hanoi', en: 'Hanoi', iata: 'HAN', lr: { path: 'vietnam/hanoi', eur: 33 }, moto: { slug: 'hanoi', eur: 7.81 } },
     { id: 'ho-chi-minh', en: 'Ho Chi Minh City', iata: 'SGN', tr: 'Ho Chi Minh', lr: { path: 'vietnam/ho-chi-minh-city' } },
     { id: 'da-nang', en: 'Da Nang', iata: 'DAD', lr: { path: 'vietnam/da-nang' } },
     { id: 'phu-quoc', en: 'Phu Quoc', iata: 'PQC' }
@@ -372,13 +372,13 @@ export const CITIES: Record<string, City[]> = {
   ],
   CH: [
     { id: 'zurich', en: 'Zurich', iata: 'ZRH', tr: 'Zürih' },
-    { id: 'geneva', en: 'Geneva', iata: 'GVA', tr: 'Cenevre', moto: { slug: 'geneva' } },
+    { id: 'geneva', en: 'Geneva', iata: 'GVA', tr: 'Cenevre', moto: { slug: 'geneva', eur: 110 } },
     { id: 'interlaken', en: 'Interlaken', iata: 'ZRH' },
     { id: 'lucerne', en: 'Lucerne', iata: 'ZRH', tr: 'Luzern' },
     { id: 'zermatt', en: 'Zermatt', iata: 'GVA' }
   ],
   CZ: [
-    { id: 'prague', en: 'Prague', iata: 'PRG', tr: 'Prag', lr: { path: 'czech/prague' } },
+    { id: 'prague', en: 'Prague', iata: 'PRG', tr: 'Prag', lr: { path: 'czech/prague', eur: 9.84 } },
     { id: 'cesky-krumlov', en: 'Cesky Krumlov', iata: 'PRG', tr: 'Český Krumlov' },
     { id: 'brno', en: 'Brno', iata: 'BRQ' }
   ],
@@ -414,7 +414,7 @@ export const CITIES: Record<string, City[]> = {
   ],
   BR: [
     { id: 'rio', en: 'Rio de Janeiro', iata: 'GIG' },
-    { id: 'sao-paulo', en: 'Sao Paulo', iata: 'GRU', tr: 'São Paulo', moto: { slug: 'sao-paulo' } },
+    { id: 'sao-paulo', en: 'Sao Paulo', iata: 'GRU', tr: 'São Paulo', moto: { slug: 'sao-paulo', eur: 52.94 } },
     { id: 'salvador', en: 'Salvador', iata: 'SSA' },
     { id: 'florianopolis', en: 'Florianopolis', iata: 'FLN', tr: 'Florianópolis' },
     { id: 'foz-do-iguacu', en: 'Foz do Iguacu', iata: 'IGU', tr: 'Iguazu Şelaleleri' }
@@ -428,8 +428,8 @@ export const CITIES: Record<string, City[]> = {
     { id: 'dammam', en: 'Dammam', iata: 'DMM' }
   ],
   AT: [
-    { id: 'vienna', en: 'Vienna', iata: 'VIE', tr: 'Viyana', lr: { path: 'austria/vienna', eur: 31.25 } },
-    { id: 'salzburg', en: 'Salzburg', iata: 'SZG', lr: { path: 'austria/salzburg' } },
+    { id: 'vienna', en: 'Vienna', iata: 'VIE', tr: 'Viyana', lr: { path: 'austria/vienna', eur: 19.84 } },
+    { id: 'salzburg', en: 'Salzburg', iata: 'SZG', lr: { path: 'austria/salzburg', eur: 82.15 } },
     { id: 'innsbruck', en: 'Innsbruck', iata: 'INN', lr: { path: 'austria/innsbruck' } },
     { id: 'hallstatt', en: 'Hallstatt', iata: 'SZG' },
     { id: 'graz', en: 'Graz', iata: 'GRZ' }
@@ -443,7 +443,7 @@ export const CITIES: Record<string, City[]> = {
     { id: 'guilin', en: 'Guilin', iata: 'KWL' }
   ],
   AE: [
-    { id: 'dubai', en: 'Dubai', iata: 'DXB', lr: { path: 'uae/dubai', eur: 25 }, moto: { slug: 'dubai' } },
+    { id: 'dubai', en: 'Dubai', iata: 'DXB', lr: { path: 'uae/dubai', eur: 25 }, moto: { slug: 'dubai', eur: 158 } },
     { id: 'abu-dhabi', en: 'Abu Dhabi', iata: 'AUH', tr: 'Abu Dabi', lr: { path: 'uae/abu-dhabi', eur: 29.29 } },
     { id: 'sharjah', en: 'Sharjah', iata: 'SHJ', tr: 'Şarika' },
     { id: 'ras-al-khaimah', en: 'Ras Al Khaimah', iata: 'DXB' }
@@ -451,9 +451,9 @@ export const CITIES: Record<string, City[]> = {
   PT: [
     { id: 'lisbon', en: 'Lisbon', iata: 'LIS', tr: 'Lizbon', lr: { path: 'portugal/lisbon' }, moto: { slug: 'lisboa', eur: 15.47 } },
     { id: 'porto', en: 'Porto', iata: 'OPO', lr: { path: 'portugal/porto', eur: 8.96 } },
-    { id: 'algarve', en: 'Algarve', iata: 'FAO', lr: { path: 'portugal/faro' }, moto: { slug: 'algarve' } },
-    { id: 'madeira', en: 'Madeira', iata: 'FNC', lr: { path: 'portugal/madeira', eur: 9.86 } },
-    { id: 'azores', en: 'Azores', iata: 'PDL', tr: 'Azor Adaları', moto: { slug: 'azores' } }
+    { id: 'algarve', en: 'Algarve', iata: 'FAO', lr: { path: 'portugal/faro' }, moto: { slug: 'algarve', eur: 15.47 } },
+    { id: 'madeira', en: 'Madeira', iata: 'FNC', lr: { path: 'portugal/madeira', eur: 8.1 } },
+    { id: 'azores', en: 'Azores', iata: 'PDL', tr: 'Azor Adaları', moto: { slug: 'azores', eur: 10 } }
   ],
   MX: [
     { id: 'cancun', en: 'Cancun', iata: 'CUN', tr: 'Cancún', lr: { path: 'mexico/cancun' }, moto: { slug: 'quintana-roo', eur: 26.04 } },
@@ -475,12 +475,12 @@ export const CITIES: Record<string, City[]> = {
     { id: 'berlin', en: 'Berlin', iata: 'BER', lr: { path: 'germany/berlin' } },
     { id: 'munich', en: 'Munich', iata: 'MUC', tr: 'Münih', moto: { slug: 'munich' } },
     { id: 'frankfurt', en: 'Frankfurt', iata: 'FRA', lr: { path: 'germany/frankfurt', eur: 30.69 } },
-    { id: 'hamburg', en: 'Hamburg', iata: 'HAM', lr: { path: 'germany/hamburg', eur: 31.19 } },
-    { id: 'cologne', en: 'Cologne', iata: 'CGN', tr: 'Köln', lr: { path: 'germany/cologne', eur: 36.34 } }
+    { id: 'hamburg', en: 'Hamburg', iata: 'HAM', lr: { path: 'germany/hamburg', eur: 29.38 } },
+    { id: 'cologne', en: 'Cologne', iata: 'CGN', tr: 'Köln', lr: { path: 'germany/cologne', eur: 33.16 } }
   ],
   JP: [
     { id: 'tokyo', en: 'Tokyo', iata: 'HND', car: { path: 'asia/japan/tokyo', usd: { mini: 44, economy: 48, standard: 49, compact: 64, intermediate: 67 } }, moto: { slug: 'kanto', eur: 17.42 } },
-    { id: 'osaka', en: 'Osaka', iata: 'KIX', moto: { slug: 'osaka' } },
+    { id: 'osaka', en: 'Osaka', iata: 'KIX', moto: { slug: 'osaka', eur: 42.53 } },
     { id: 'kyoto', en: 'Kyoto', iata: 'KIX' },
     { id: 'sapporo', en: 'Sapporo', iata: 'CTS' },
     { id: 'fukuoka', en: 'Fukuoka', iata: 'FUK' },
@@ -488,29 +488,29 @@ export const CITIES: Record<string, City[]> = {
   ],
   GR: [
     { id: 'athens', en: 'Athens', iata: 'ATH', tr: 'Atina', lr: { path: 'greece/athens' }, moto: { slug: 'attica', eur: 17 } },
-    { id: 'santorini', en: 'Santorini', iata: 'JTR', lr: { path: 'greece/santorini' }, moto: { slug: 'cyclades', eur: 11 } },
+    { id: 'santorini', en: 'Santorini', iata: 'JTR', lr: { path: 'greece/santorini', eur: 49.25 }, moto: { slug: 'cyclades', eur: 11 } },
     { id: 'mykonos', en: 'Mykonos', iata: 'JMK', tr: 'Mikonos', lr: { path: 'greece/mykonos' } },
     { id: 'crete', en: 'Crete', iata: 'HER', tr: 'Girit', lr: { path: 'greece/heraklion' }, moto: { slug: 'crete', eur: 15 } },
-    { id: 'rhodes', en: 'Rhodes', iata: 'RHO', tr: 'Rodos', lr: { path: 'greece/rhodes', eur: 12.83 }, moto: { slug: 'rhodes' } },
+    { id: 'rhodes', en: 'Rhodes', iata: 'RHO', tr: 'Rodos', lr: { path: 'greece/rhodes', eur: 14.26 }, moto: { slug: 'rhodes' } },
     { id: 'corfu', en: 'Corfu', iata: 'CFU', tr: 'Korfu', lr: { path: 'greece/corfu' } },
     { id: 'thessaloniki', en: 'Thessaloniki', iata: 'SKG', tr: 'Selanik', lr: { path: 'greece/thessaloniki' } }
   ],
   FR: [
     { id: 'paris', en: 'Paris', iata: 'CDG', car: { path: 'europe/france/paris', usd: { mini: 15, economy: 17, compact: 27, intermediate: 29, standard: 44 } }, lr: { path: 'france/paris' }, moto: { slug: 'ile-de-france', eur: 16.42 } },
-    { id: 'nice', en: 'Nice', iata: 'NCE', car: { path: 'europe/france/nice', usd: { mini: 10, economy: 14, compact: 16, intermediate: 22, standard: 25 } }, lr: { path: 'france/nice', eur: 15.21 } },
-    { id: 'lyon', en: 'Lyon', iata: 'LYS', lr: { path: 'france/lyon', eur: 21.36 } },
-    { id: 'marseille', en: 'Marseille', iata: 'MRS', tr: 'Marsilya', lr: { path: 'france/marseille', eur: 19.89 } },
-    { id: 'bordeaux', en: 'Bordeaux', iata: 'BOD', lr: { path: 'france/bordeaux', eur: 14.74 } },
+    { id: 'nice', en: 'Nice', iata: 'NCE', car: { path: 'europe/france/nice', usd: { mini: 10, economy: 14, compact: 16, intermediate: 22, standard: 25 } }, lr: { path: 'france/nice', eur: 11.53 } },
+    { id: 'lyon', en: 'Lyon', iata: 'LYS', lr: { path: 'france/lyon', eur: 18.86 } },
+    { id: 'marseille', en: 'Marseille', iata: 'MRS', tr: 'Marsilya', lr: { path: 'france/marseille', eur: 14.14 } },
+    { id: 'bordeaux', en: 'Bordeaux', iata: 'BOD', lr: { path: 'france/bordeaux', eur: 14.73 } },
     { id: 'strasbourg', en: 'Strasbourg', iata: 'SXB', tr: 'Strazburg' }
   ],
   ES: [
-    { id: 'madrid', en: 'Madrid', iata: 'MAD', lr: { path: 'spain/madrid', eur: 36.33 }, moto: { slug: 'madrid' } },
+    { id: 'madrid', en: 'Madrid', iata: 'MAD', lr: { path: 'spain/madrid', eur: 39.21 }, moto: { slug: 'madrid', eur: 20 } },
     { id: 'barcelona', en: 'Barcelona', iata: 'BCN', lr: { path: 'spain/barcelona' }, moto: { slug: 'barcelona', eur: 14 } },
-    { id: 'malaga', en: 'Malaga', iata: 'AGP', lr: { path: 'spain/malaga', eur: 14.81 }, moto: { slug: 'malaga', eur: 20 } },
+    { id: 'malaga', en: 'Malaga', iata: 'AGP', lr: { path: 'spain/malaga', eur: 10.91 }, moto: { slug: 'malaga', eur: 20 } },
     { id: 'palma', en: 'Palma de Mallorca', iata: 'PMI', tr: 'Mallorca', lr: { path: 'spain/palma' }, moto: { slug: 'mallorca', eur: 16 } },
-    { id: 'tenerife', en: 'Tenerife', iata: 'TFS', lr: { path: 'spain/tenerife', eur: 35.35 }, moto: { slug: 'tenerife', eur: 10 } },
+    { id: 'tenerife', en: 'Tenerife', iata: 'TFS', lr: { path: 'spain/tenerife', eur: 27.91 }, moto: { slug: 'tenerife', eur: 10 } },
     { id: 'alicante', en: 'Alicante', iata: 'ALC', lr: { path: 'spain/alicante', eur: 21.34 } },
-    { id: 'seville', en: 'Seville', iata: 'SVQ', tr: 'Sevilla', lr: { path: 'spain/seville', eur: 25.64 } }
+    { id: 'seville', en: 'Seville', iata: 'SVQ', tr: 'Sevilla', lr: { path: 'spain/seville', eur: 20.51 } }
   ],
   US: [
     { id: 'new-york', en: 'New York', iata: 'JFK', moto: { slug: 'new-york', eur: 64.22 } },
@@ -522,15 +522,15 @@ export const CITIES: Record<string, City[]> = {
   ],
   TR: [
     { id: 'istanbul', en: 'Istanbul', iata: 'IST', tr: 'İstanbul', lr: { path: 'turkey/istanbul', eur: 23 } },
-    { id: 'antalya', en: 'Antalya', iata: 'AYT', lr: { path: 'turkey/antalya', eur: 12.96 }, moto: { slug: 'antalya', eur: 18 } },
+    { id: 'antalya', en: 'Antalya', iata: 'AYT', lr: { path: 'turkey/antalya', eur: 13.21 }, moto: { slug: 'antalya', eur: 18 } },
     { id: 'bodrum', en: 'Bodrum', iata: 'BJV', lr: { path: 'turkey/bodrum', eur: 26.25 } },
-    { id: 'dalaman', en: 'Fethiye', iata: 'DLM', lr: { path: 'turkey/fethiye', eur: 25.58 } },
-    { id: 'izmir', en: 'Izmir', iata: 'ADB', tr: 'İzmir', lr: { path: 'turkey/izmir', eur: 17.6 } },
-    { id: 'cappadocia', en: 'Cappadocia', iata: 'NAV', tr: 'Kapadokya', lr: { path: 'turkey/kayseri', eur: 20 } }
+    { id: 'dalaman', en: 'Fethiye', iata: 'DLM', lr: { path: 'turkey/fethiye', eur: 24.22 } },
+    { id: 'izmir', en: 'Izmir', iata: 'ADB', tr: 'İzmir', lr: { path: 'turkey/izmir', eur: 18.54 } },
+    { id: 'cappadocia', en: 'Cappadocia', iata: 'NAV', tr: 'Kapadokya', lr: { path: 'turkey/kayseri', eur: 17.14 } }
   ],
   IT: [
     { id: 'rome', en: 'Rome', iata: 'FCO', tr: 'Roma', lr: { path: 'italy/rome', eur: 10.63 }, moto: { slug: 'roma', eur: 20 } },
-    { id: 'milan', en: 'Milan', iata: 'MXP', tr: 'Milano', lr: { path: 'italy/milan', eur: 22 }, moto: { slug: 'milano', eur: 9 } },
+    { id: 'milan', en: 'Milan', iata: 'MXP', tr: 'Milano', lr: { path: 'italy/milan', eur: 22.64 }, moto: { slug: 'milano', eur: 9 } },
     { id: 'venice', en: 'Venice', iata: 'VCE', tr: 'Venedik', lr: { path: 'italy/venice' } },
     { id: 'florence', en: 'Florence', iata: 'FLR', tr: 'Floransa', lr: { path: 'italy/florence' } },
     { id: 'naples', en: 'Naples', iata: 'NAP', tr: 'Napoli', lr: { path: 'italy/naples' } }
