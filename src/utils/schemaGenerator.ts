@@ -404,14 +404,18 @@ function getSerpAnswer(
     case 'de': {
       const short = free ? `visumfrei${days ? ` (${days} Tage)` : ''}` : cat === 'voa' ? 'Visum bei Ankunft' : cat === 'evisa' ? 'e-Visum nötig' : cat === 'eta' ? `${eta} nötig` : 'Visum nötig';
       const dem = DE_DEMONYM[pass] || `Pass aus ${P}`;
-      const long = free ? `Mit ${P}-Pass visumfrei${days ? `, bis zu ${days} Tage` : ''}${cat === 'id' ? ', auch mit Personalausweis' : ''}`
-        : cat === 'voa' ? `Mit ${P}-Pass gibt es das Visum bei der Ankunft${days ? ` (${days} Tage)` : ''}`
-        : cat === 'evisa' ? `Mit ${P}-Pass vor der Reise online ein e-Visum beantragen${days ? ` (${days} Tage)` : ''}`
-        : cat === 'eta' ? `Mit ${P}-Pass vor der Reise eine elektronische Reisegenehmigung (${eta}) beantragen`
-        : `Mit ${P}-Pass vor der Reise ein Visum bei der Botschaft beantragen`;
+      const PP = ({ CH: 'Schweizer Pass', AT: 'österreichischem Pass', DE: 'deutschem Pass' } as Record<string, string>)[pass] || `${P}-Pass`;
+      const long = free ? `Mit ${PP} visumfrei${days ? `, bis zu ${days} Tage` : ''}${cat === 'id' ? ', auch mit Personalausweis' : ''}`
+        : cat === 'voa' ? `Mit ${PP} gibt es das Visum bei der Ankunft${days ? ` (${days} Tage)` : ''}`
+        : cat === 'evisa' ? `Mit ${PP} vor der Reise online ein e-Visum beantragen${days ? ` (${days} Tage)` : ''}`
+        : cat === 'eta' ? `Mit ${PP} vor der Reise eine elektronische Reisegenehmigung (${eta}) beantragen`
+        : `Mit ${PP} vor der Reise ein Visum bei der Botschaft beantragen`;
       return {
-        title: DE_DEMONYM[pass] && pass !== LANG_PASS.de ? fitT([`Einreise ${C} für ${dem} 2026: ${short}`, `${C} für ${dem} 2026: ${short}`]) : fitT([`Einreise ${C} 2026: Visum nötig? ${DE_DEMONYM[pass] ? `${dem}: ` : ''}${short}`, `Einreise ${C} 2026: ${DE_DEMONYM[pass] ? `${dem}: ` : ''}${short}`, `Einreise ${C} 2026: ${short}`, `${C} 2026: ${short}`]),
-        description: fitD(`${CC}: ${long}.`, ['Offizielle Quelle, Reisewarnung, Notrufnummern, Reiseroute, günstige Flüge und Hotels.', 'Offizielle Quelle, Notrufnummern, Route und Preise.', 'Offizielle Quelle und Preise.'])
+        // Search Console (CH/DE/AT): "einreise simbabwe für schweizer", "visum argentinien für schweizer", "argentinien einreise"
+        title: DE_DEMONYM[pass] && pass !== LANG_PASS.de
+          ? fitT([`Einreise & Visum ${C} für ${dem} 2026: ${short}`, `Einreise ${C} für ${dem} 2026: ${short}`, `Einreise ${C} für ${dem}: ${short}`, `${C} für ${dem} 2026: ${short}`])
+          : fitT([`Einreise ${C} 2026: Visum nötig? ${DE_DEMONYM[pass] ? `${dem}: ` : ''}${short}`, `Einreise ${C} 2026${DE_DEMONYM[pass] ? ` für ${dem}` : ''}: ${short}`, `Einreise & Visum ${C} 2026: ${short}`, `Einreise ${C} 2026: ${short}`, `${C} 2026: ${short}`]),
+        description: fitD(`Einreisebestimmungen ${CC}${DE_DEMONYM[pass] && pass !== LANG_PASS.de ? ` für ${dem}` : ''} 2026: ${long}.`, ['Offizielle Quelle, Reisewarnung, Notrufnummern, Reiseroute, günstige Flüge und Hotels.', 'Offizielle Quelle, Reisewarnung, Notrufnummern, Flüge und Hotels.', 'Offizielle Quelle, Notrufnummern und Preise.', 'Offizielle Quelle und Preise.'])
       };
     }
     case 'es': {
