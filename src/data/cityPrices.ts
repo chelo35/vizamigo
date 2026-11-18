@@ -326,12 +326,12 @@ export const CITIES: Record<string, City[]> = {
   ],
   PL: [
     { id: 'warsaw', en: 'Warsaw', iata: 'WAW', tr: 'Varşova', lr: { path: 'poland/warsaw', eur: 11.41 } },
-    { id: 'krakow', en: 'Krakow', iata: 'KRK', tr: 'Krakov', lr: { path: 'poland/krakow', eur: 11.41 }, moto: { slug: 'krakow' } },
+    { id: 'krakow', en: 'Krakow', iata: 'KRK', tr: 'Krakov', lr: { path: 'poland/krakow', eur: 11.41 }, moto: { slug: 'krakow', eur: 49 } },
     { id: 'gdansk', en: 'Gdansk', iata: 'GDN', tr: 'Gdańsk' },
     { id: 'wroclaw', en: 'Wroclaw', iata: 'WRO', tr: 'Wrocław' }
   ],
   HR: [
-    { id: 'dubrovnik', en: 'Dubrovnik', iata: 'DBV', lr: { path: 'croatia/dubrovnik' }, moto: { slug: 'dubrovnik' } },
+    { id: 'dubrovnik', en: 'Dubrovnik', iata: 'DBV', lr: { path: 'croatia/dubrovnik' }, moto: { slug: 'dubrovnik', eur: 45 } },
     { id: 'split', en: 'Split', iata: 'SPU', lr: { path: 'croatia/split', eur: 12.5 }, moto: { slug: 'split', eur: 25 } },
     { id: 'zagreb', en: 'Zagreb', iata: 'ZAG', lr: { path: 'croatia/zagreb' }, moto: { slug: 'zagreb', eur: 50 } },
     { id: 'zadar', en: 'Zadar', iata: 'ZAD', moto: { slug: 'zadar', eur: 45 } }
