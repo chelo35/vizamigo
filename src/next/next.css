@@ -1773,6 +1773,8 @@ html.dark .vz-hero2-chips button { background: rgba(255,255,255,0.08); border-co
 .vz-pbrief-h3{font-size:15px;margin:14px 0 6px}
 .vz-pbrief-cmp{list-style:none;padding:0;margin:0;display:grid;gap:6px}
 .vz-pbrief-cmp li{display:flex;align-items:center;gap:8px;font-size:14px;flex-wrap:wrap}
-.vz-pbrief-cmp li span{margin-left:auto;color:var(--vz-muted,#5A6A72);font-size:13px}
+.vz-pbrief-cmp li>span:last-child{margin-left:auto;color:var(--vz-muted,#5A6A72);font-size:13px}
 .vz-pbrief-cmp li.on{font-weight:700}
 @media (max-width:560px){.vz-pbrief-dl>div{grid-template-columns:1fr;gap:2px}}
+.vz-pbrief-cmp{justify-items:stretch;text-align:left}
+.vz-pbrief-cmp li{justify-content:flex-start;width:100%;margin:0;padding:0}
