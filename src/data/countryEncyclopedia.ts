@@ -1,4 +1,4 @@
-import { LANDMARKS_EXTRA } from './landmarksExtra';
+import { landmarksExtra, landmarksExtraEn } from './landmarksExtra';
 import { applyCountryFix } from './countryFixHook';
 /**
  * Vizamigo - Ülke Kültür, Turizm, Dil, Tarih, Gastronomi ve Ekonomi Ansiklopedisi
@@ -1491,7 +1491,9 @@ function getCountryEncyclopediaImpl(countryCode: string, lang: string = 'tr'): C
         // Doldurma metin yok: görsel landmark + gerçek görülecek yerler listesi.
         const nz = (x: string) => x.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
         const lm = visual.landmark || '';
-        const extra = (LANDMARKS_EXTRA[code] || []).filter((x) => { const k = nz(x.split(/[ (]/)[0]); return !(k.length > 3 && nz(lm).includes(k)); });
+        const lmEn = nz(getCountryVisual(code, 'en').landmark || '');
+        const en = landmarksExtraEn(code);
+        const extra = landmarksExtra(code, lang).filter((_, i) => { const k = nz(en[i].split(/[ (]/)[0]); return !(k.length > 3 && lmEn.includes(k)); });
         return [lm, ...extra].filter(Boolean).slice(0, 4);
       })();
 
