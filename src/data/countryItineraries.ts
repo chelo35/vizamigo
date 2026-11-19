@@ -1,3 +1,4 @@
+import { topPlaces } from './topPlaces';
 import { applyCountryFix } from './countryFixHook';
 /**
  * Vizamigo - Ülke Bazlı Turistik Gezi Rehberi & Rota Planlama Veritabanı
@@ -1723,6 +1724,64 @@ export const CURATED_ITINERARIES: Record<string, CuratedItineraryDef> = {
   }
 };
 
+
+const _norm = (x: string) => x.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
+const _short = (x: string) => x.replace(/\s*\([^)]*\)\s*/g, ' ').replace(/\s+/g, ' ').trim();
+
+function buildRealStops(
+  code: string, lang: string, countryName: string, capital: string, cities: string[], mustSee: string[],
+  dishes: string[], drinks: string[], street: string[],
+  gastro: { famousDishes: string[]; traditionalDrinks: string[]; streetFoodAndDesserts: string[] },
+  taxiTip: string
+): { stops: ItineraryStop[]; routeName: string; routeSummary: string; totalDays: number } {
+  const L = (tr: string, en: string, de: string, es: string, ru: string) => (lang === 'tr' ? tr : lang === 'de' ? de : lang === 'es' ? es : lang === 'ru' ? ru : en);
+  const uniqCities = cities.filter((c, i, a) => c && c.length > 2 && a.findIndex((y) => _norm(y) === _norm(c)) === i);
+  const real = mustSee.filter((m) => m && m !== capital);
+  // Görülecek yerleri şehirlerine göre grupla (başkent önce), şehri bilinmeyenler kendi durağı olur.
+  const groups: { place: string; items: string[] }[] = [];
+  for (const m of real) {
+    const city = uniqCities.find((c) => _norm(m).includes(_norm(c)));
+    const place = city || _short(m);
+    const g = groups.find((x) => _norm(x.place) === _norm(place));
+    if (g) { if (g.items.length < 3) g.items.push(m); } else groups.push({ place, items: [m] });
+  }
+  groups.sort((x, y) => (_norm(y.place) === _norm(capital) ? 1 : 0) - (_norm(x.place) === _norm(capital) ? 1 : 0));
+  const picked = groups.slice(0, 4);
+  const hasRealFood = gastro.famousDishes.length > 0;
+  const prefix = L('{n}. Durak', 'Stop {n}', 'Stopp {n}', '{n}.ª Parada', 'Остановка {n}');
+  const days = (d: number) => L(`${d} Gün`, `${d} Days`, `${d} Tage`, `${d} Días`, `${d} ${d < 5 ? 'дня' : 'дней'}`);
+  const stops: ItineraryStop[] = picked.map((g, i) => {
+    const d = i === 0 ? 3 : 2;
+    const food = hasRealFood ? [dishes[i] || dishes[0], drinks[i] || drinks[0], street[i] || street[0]].filter((x, j, a) => x && a.indexOf(x) === j) : [];
+    return {
+      stopNumber: i + 1,
+      name: `${prefix.replace('{n}', String(i + 1))}: ${g.place}`,
+      recommendedDuration: days(d),
+      durationBadge: days(d),
+      highlights: g.items,
+      activities: [],
+      foodAndDrinks: food,
+      criticalTips: i === 0 && taxiTip ? [taxiTip] : [],
+      mapsQuery: `${g.place}, ${countryName}`
+    } as ItineraryStop;
+  });
+  const totalDays = stops.reduce((s, x, i) => s + (i === 0 ? 3 : 2), 0);
+  const names = picked.map((g) => g.place);
+  const list = names.length > 1 ? `${names.slice(0, -1).join(', ')} ${L('ve', 'and', 'und', 'y', 'и')} ${names[names.length - 1]}` : names[0] || '';
+  return {
+    stops,
+    totalDays,
+    routeName: L(`${countryName} Rotası: ${names.join(' → ')}`, `${countryName} Route: ${names.join(' → ')}`, `${countryName}-Route: ${names.join(' → ')}`, `Ruta por ${countryName}: ${names.join(' → ')}`, `Маршрут по ${countryName}: ${names.join(' → ')}`),
+    routeSummary: L(
+      `${countryName} için ${totalDays} günlük rota: ${list}. Duraklar, ülkenin en çok görülen yerlerine göre sıralandı.`,
+      `A ${totalDays}-day route through ${countryName} covering ${list}, built around the country's best-known sights.`,
+      `Eine ${totalDays}-tägige Route durch ${countryName}: ${list} – aufgebaut um die bekanntesten Sehenswürdigkeiten des Landes.`,
+      `Una ruta de ${totalDays} días por ${countryName}: ${list}, organizada en torno a sus lugares más conocidos.`,
+      `Маршрут на ${totalDays} дней по ${countryName}: ${list} — вокруг самых известных достопримечательностей страны.`
+    )
+  };
+}
+
 /**
  * Akıllı Dinamik Rota Sentezleyici
  * Küratörlü listesinde olmayan ülkeler için coğrafya, ansiklopedi ve güvenlik istihbaratını
@@ -2049,21 +2108,26 @@ export function generateDynamicCountryItinerary(
     ? `Междугородние поезда/автобусы + городской транспорт и такси в ${capital} (${insights.transport?.popularRideApps?.join(', ') || 'Местное такси'})`
     : `Intercity rail/bus network + urban transit and ride apps (${insights.transport?.popularRideApps?.join(', ') || 'Local Taxis'})`;
 
+  // Gerçek durak yapısı: "Metropolitan Area / Historic Core" gibi doldurma adlar yerine
+  // ülkenin görülecek yerleri, bulundukları şehre göre gruplanır; veri yoksa durak eklenmez.
+  const real = buildRealStops(code, lang, countryName, capital, [capital, ...majorCities, ...topPlaces(code, 4)], mustSee, famousDishes, drinks, streetFood, encyclopedia.gastronomy, stops[0]?.criticalTips?.[0] && insights.transport?.taxiAdvice ? insights.transport.taxiAdvice : '');
+  if (!real.stops.length) { real.stops = stops; real.routeName = routeName; real.routeSummary = routeSummary; real.totalDays = totalDays; }
+
   return {
     countryCode: code,
     countryName,
-    routeName,
-    routeSummary,
-    totalDays,
+    routeName: real.routeName,
+    routeSummary: real.routeSummary,
+    totalDays: real.totalDays,
     idealDurationText: isTr
-      ? `${totalDays} Günlük Klasik Rota`
+      ? `${real.totalDays} Günlük Klasik Rota`
       : isDe
-      ? `${totalDays}-Tage Entdeckerroute`
+      ? `${real.totalDays}-Tage Entdeckerroute`
       : isEs
-      ? `Ruta Clásica de ${totalDays} Días`
+      ? `Ruta Clásica de ${real.totalDays} Días`
       : isRu
-      ? `Классический маршрут на ${totalDays} дней`
-      : `${totalDays}-Day Signature Itinerary`,
+      ? `Классический маршрут на ${real.totalDays} дней`
+      : `${real.totalDays}-Day Signature Itinerary`,
     bestSeason,
     transportMode,
     paceLevel: isTr
@@ -2075,7 +2139,7 @@ export function generateDynamicCountryItinerary(
       : isRu
       ? 'Сбалансированный (Культура, город и природа)'
       : 'Balanced (Culture & Nature)',
-    stops,
+    stops: real.stops,
     signatureGastronomy: {
       dishes: famousDishes,
       drinks,

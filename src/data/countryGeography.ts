@@ -1,3 +1,5 @@
+import { COUNTRY_CITIES } from './countryCities';
+import { topPlaces } from './topPlaces';
 /**
  * Vizamigo - Ülke Coğrafi ve Seyahat Göstergeleri
  * Her ülkenin başkenti, büyük şehirleri, turistik bölgeleri, para birimi,
@@ -958,22 +960,20 @@ function getRegionalGeographyDefaults(code: string, capital: string, countryName
   const isDe = lang === 'de';
   const isEs = lang === 'es';
   const isRu = lang === 'ru';
+  // Gerçek veri: başkent + nüfusça büyük şehirler; turistik bölge olarak en çok aranan yerler.
+  // Veri yoksa doldurma metni üretmek yerine bölüm boş kalır (sayfa gizler).
+  const norm = (x: string) => x.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+  const realCities = [capital, ...(COUNTRY_CITIES[code] || [])].filter((x, i, a) => x && a.findIndex((y) => norm(y) === norm(x)) === i);
+  const capEn = GEO_DATA[code] ? capitalName(code, 'en', GEO_DATA[code].capital) : capital;
+  const realRegions = topPlaces(code, 4).filter((x) => norm(x) !== norm(capital) && norm(x) !== norm(capEn));
 
   if (match) {
     const currName = (match.name as any)[lang] || (
       isEs ? (match.name.en || match.name.tr) : isRu ? (match.name.en || match.name.tr) : match.name.tr
     );
     return {
-      majorCities: [
-        capital,
-        `${capital} ${isDe ? 'Metropolregion' : isEs ? 'Área Metropolitana' : isRu ? 'Метропольный регион' : isTr ? 'Metropol Bölgesi' : 'Metropolitan Area'}`,
-        `${countryName} ${isDe ? 'Wirtschaftszentrum' : isEs ? 'Centro Comercial y Cultural' : isRu ? 'Торгово-культурный центр' : isTr ? 'Ticaret ve Kültür Merkezi' : 'Commercial & Cultural Hub'}`
-      ],
-      touristRegions: [
-        `${capital} ${isDe ? 'Historisches Altstadtviertel & Museen' : isEs ? 'Centro Histórico y Museos' : isRu ? 'Исторический центр и музеи' : isTr ? 'Tarihi Şehir Merkezi & Müzeler' : 'Historic Center & Heritage Sites'}`,
-        `${countryName} ${isDe ? 'UNESCO-Welterbestätten' : isEs ? 'Patrimonio de la Humanidad UNESCO' : isRu ? 'Объекты Всемирного наследия ЮНЕСКО' : isTr ? 'UNESCO Kültür Mirası Noktaları' : 'UNESCO World Heritage Sites'}`,
-        `${countryName} ${isDe ? 'Nationalparks & Naturreservate' : isEs ? 'Parques Nacionales y Naturaleza' : isRu ? 'Национальные парки и природные маршруты' : isTr ? 'Milli Parklar & Doğal Rotalar' : 'National Parks & Natural Landscapes'}`
-      ],
+      majorCities: realCities,
+      touristRegions: realRegions,
       currencyCode: match.code,
       currencyName: currName,
       currencySymbol: match.symbol,
@@ -988,16 +988,8 @@ function getRegionalGeographyDefaults(code: string, capital: string, countryName
   const isEuro = euroCountries.includes(code);
 
   return {
-    majorCities: [
-      capital,
-      `${capital} ${isDe ? 'Metropolregion' : isEs ? 'Área Metropolitana' : isRu ? 'Метропольный регион' : isTr ? 'Metropol Bölgesi' : 'Metropolitan Area'}`,
-      `${countryName} ${isDe ? 'Hafenstadt' : isEs ? 'Centro Comercial e Industrial' : isRu ? 'Промышленный и торговый центр' : isTr ? 'Ticaret ve Sanayi Kenti' : 'Coastal / Commercial Hub'}`
-    ],
-    touristRegions: [
-      `${capital} ${isDe ? 'Historisches Altstadtviertel & Zitadelle' : isEs ? 'Casco Antiguo y Ciudadela' : isRu ? 'Старый город и крепость' : isTr ? 'Tarihi Eski Şehir & Kalesi' : 'Historic Old Town & Citadel'}`,
-      `${countryName} ${isDe ? 'UNESCO-Weltkultur- & Naturerbe' : isEs ? 'Patrimonio de la Humanidad UNESCO' : isRu ? 'Объекты Всемирного наследия ЮНЕСКО' : isTr ? 'Milli Parklar & UNESCO Doğal Mirası' : 'National Parks & UNESCO Heritage'}`,
-      `${countryName} ${isDe ? 'Küsten- & Seenlandschaft' : isEs ? 'Lagos y Rutas de Senderismo' : isRu ? 'Озера и живописные маршруты' : isTr ? 'Gölleri ve Doğa Yürüyüş Rotaları' : 'Scenic Coastal & Lake Shores'}`
-    ],
+    majorCities: realCities,
+    touristRegions: realRegions,
     currencyCode: isEuro ? 'EUR' : `${code}D`,
     currencyName: isEuro ? (isRu ? 'Евро' : 'Euro') : `${countryName} ${isDe ? 'Landeswährung' : isEs ? 'Moneda Nacional' : isRu ? 'Национальная валюта' : isTr ? 'Milli Para Birimi' : 'National Currency'}`,
     currencySymbol: isEuro ? '€' : '$',

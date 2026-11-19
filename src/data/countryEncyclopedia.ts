@@ -1,3 +1,4 @@
+import { LANDMARKS_EXTRA } from './landmarksExtra';
 import { applyCountryFix } from './countryFixHook';
 /**
  * Vizamigo - Ülke Kültür, Turizm, Dil, Tarih, Gastronomi ve Ekonomi Ansiklopedisi
@@ -1477,7 +1478,7 @@ function getCountryEncyclopediaImpl(countryCode: string, lang: string = 'tr'): C
 
   const heritage = COUNTRY_HERITAGE[code];
 
-  const visual = getCountryVisual(code);
+  const visual = getCountryVisual(code, lang);
   const mustSeePlaces = heritage
     ? (isDe
         ? heritage.landmarks.de
@@ -1486,11 +1487,13 @@ function getCountryEncyclopediaImpl(countryCode: string, lang: string = 'tr'): C
         : isEs || isRu
         ? heritage.landmarks.tr.map((l, idx) => lText(lang, l, heritage.landmarks.en?.[idx] || l, heritage.landmarks.de?.[idx]))
         : heritage.landmarks.en)
-    : [
-        visual.landmark,
-        `${capital} ${isDe ? 'Historisches Altstadtzentrum & Hauptboulevard' : isEs ? 'Centro Histórico y Plaza Mayor' : isRu ? 'Исторический центр города и главная площадь' : isTr ? 'Tarihi Şehir Merkezi & Kent Meydanı' : 'Historic Old Town & Grand Boulevard'}`,
-        `${countryName} ${isDe ? 'Nationales Kultur- und Naturerbe' : isEs ? 'Patrimonio Cultural y Parque Nacional' : isRu ? 'Национальное историческое и природное святилище' : isTr ? 'Ulusal Tarih ve Doğa Parkı' : 'National Cultural & Natural Sanctuary'}`
-      ];
+    : (() => {
+        // Doldurma metin yok: görsel landmark + gerçek görülecek yerler listesi.
+        const nz = (x: string) => x.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+        const lm = visual.landmark || '';
+        const extra = (LANDMARKS_EXTRA[code] || []).filter((x) => { const k = nz(x.split(/[ (]/)[0]); return !(k.length > 3 && nz(lm).includes(k)); });
+        return [lm, ...extra].filter(Boolean).slice(0, 4);
+      })();
 
   const famousFigures = heritage
     ? (isDe

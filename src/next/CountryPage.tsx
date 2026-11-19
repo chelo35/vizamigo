@@ -551,7 +551,7 @@ const CountryPageInner: React.FC<Props & { data: CountryBundle }> = ({ code, pas
               <Bullets items={enc.tourism.mustSeePlaces} />
               <div className="vz-grid two">
                 <Card title={l('Büyük şehirler', 'Major cities', 'Großstädte', 'Ciudades', 'Города')} icon="landmark"><Tags items={[geog.capital, ...geog.majorCities].filter((x, i, a) => x && a.indexOf(x) === i)} /></Card>
-                <Card title={l('Turistik bölgeler', 'Tourist regions', 'Regionen', 'Regiones', 'Регионы')} icon="map"><Tags items={geog.touristRegions} /></Card>
+                {geog.touristRegions.length > 0 && <Card title={l('Turistik bölgeler', 'Tourist regions', 'Regionen', 'Regiones', 'Регионы')} icon="map"><Tags items={geog.touristRegions} /></Card>}
               </div>
               <Card tone="sea" title={l('Ne zaman gidilir?', 'When to go', 'Beste Reisezeit', 'Cuándo ir', 'Когда ехать')} icon="sun"><p>{enc.tourism.bestSeasons}</p><p className="vz-muted">{enc.tourism.travelStyleTip}</p></Card>
             </div>
