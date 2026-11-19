@@ -2,7 +2,7 @@ import React, { useEffect, useMemo, useState } from 'react';
 import { getPassportBrief, getPassportFaq } from '../utils/passportBrief';
 import { LANG_PASS as BRIEF_LANG_PASS } from '../data/passportPages';
 import { getExtraFaq } from '../data/extraFaq';
-import { getFestivalGuide } from '../data/festivalGuide';
+import type { FestivalCardData } from '../data/festivalGuide';
 import { ruIn, ruOf } from '../data/ruCases';
 import { useI18n, lText } from '../data/i18n';
 import { Icon } from './Icon';
@@ -571,7 +571,8 @@ const CountryPageInner: React.FC<Props & { data: CountryBundle }> = ({ code, pas
         {
           id: 'fest', label: l('Festivaller', 'Festivals', 'Feste', 'Festivales', 'Праздники'),
           render: () => {
-            const fg = getFestivalGuide(code, language, enc.culture.festivals);
+            const fc = enc.culture as typeof enc.culture & { festivalCards?: FestivalCardData[]; festivalRest?: string[] };
+            const fg = { cards: fc.festivalCards || [], rest: fc.festivalRest || [] };
             if (!fg.cards.length) return <Bullets items={enc.culture.festivals} />;
             return (
               <div className="vz-stack vz-fest">

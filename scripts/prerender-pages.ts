@@ -18,7 +18,7 @@ import { fileURLToPath } from 'url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 import { applyDict, loadDict, makeSubstTranslator, mapStrings, DATA_LANGS } from './data-i18n';
 import { buildExtras } from './i18n-extras';
-import { getFestivalGuide } from '../src/data/festivalGuide';
+import { getFestivalGuide, buildFestivalCalendar, type FestivalGuideEntry } from '../src/data/festivalGuide';
 const DIST = path.resolve(__dirname, '../dist');
 
 const esc = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
@@ -30,6 +30,12 @@ async function main() {
     const all: Record<string, unknown> = {};
     if (fs.existsSync(dir)) for (const f of fs.readdirSync(dir)) if (/^[A-Z]{2}\.json$/.test(f)) { try { all[f.slice(0, 2)] = JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8')); } catch { console.warn('[prerender] okunamadı:', f); } }
     (globalThis as { __vzCountryFixes?: unknown }).__vzCountryFixes = all;
+  }
+  // Festival rehberi (src/data/festival-guide/<KOD>.json): kartlar ülke JSON'una, takvim ayrı dosyaya yazılır
+  const FG: Record<string, FestivalGuideEntry[]> = {};
+  {
+    const dir = path.join(process.cwd(), 'src', 'data', 'festival-guide');
+    if (fs.existsSync(dir)) for (const f of fs.readdirSync(dir)) if (/^[A-Z]{2}\.json$/.test(f)) { try { FG[f.slice(0, 2)] = JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8')); } catch { console.warn('[prerender] festival okunamadı:', f); } }
   }
   const tplPath = path.join(DIST, 'index.html');
   if (!fs.existsSync(tplPath)) {
@@ -281,6 +287,10 @@ async function main() {
           out = deepMerge(out, fix);
         }
         { const o = out as { insights?: { safety: { safetyScore: number } } }; if (o.insights) o.insights = capSafetyByAdvisory(o.insights, code, lang); }
+        if (FG[code]) {
+          const cu = (out as { enc?: { culture?: Record<string, unknown> } }).enc?.culture;
+          if (cu && Array.isArray(cu.festivals)) { const fg = getFestivalGuide(FG[code], lang, cu.festivals as string[]); if (fg.cards.length) { cu.festivalCards = fg.cards; cu.festivalRest = fg.rest; } }
+        }
         write(path.join('data', 'country', lang, `${code}.json`), JSON.stringify(out));
         (CDATA[lang] ||= {})[code] = lang === 'tr' && !(out as { intel?: unknown }).intel ? { ...out, intel } : out;
         files++;
@@ -333,8 +343,8 @@ async function main() {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const FEST_H: Record<string, string> = { tr: 'Festivaller ve etkinlikler', en: 'Festivals & events', de: 'Feste & Veranstaltungen', es: 'Festivales y eventos', ru: 'Праздники и фестивали' };
     const festHtml = (code: string, lang: string): string => {
-      const names = (CDATA[lang]?.[code]?.enc?.culture?.festivals as string[] | undefined) || [];
-      const fg = getFestivalGuide(code, lang, names);
+      const cu = CDATA[lang]?.[code]?.enc?.culture;
+      const fg = { cards: (cu?.festivalCards || []) as Array<{ name: string; when: string; place?: string; about: string; tip: string }> };
       if (!fg.cards.length) return '';
       return `<section class="vzs-fest"><h2>${esc(FEST_H[lang] || FEST_H.en)}</h2>${fg.cards.map((f) => `<h3>${esc(f.name)}</h3><p><b>${esc(f.when)}${f.place ? ` · ${esc(f.place)}` : ''}</b></p><p>${esc(f.about)} ${esc(f.tip)}</p>`).join('')}</section>`;
     };
@@ -464,7 +474,14 @@ async function main() {
 
     // güncel konu rehberleri (ETIAS, ETA, ESTA, Yunan adaları): tam metin önceden yazılı
     for (const id of guideIdsFor(lang)) {
-      const g = getGuide(id, lang);
+      let g = getGuide(id, lang);
+      if (id === 'festival_calendar') {
+        const names: Record<string, string[]> = {};
+        for (const c of Object.keys(FG)) names[c] = (CDATA[lang]?.[c]?.enc?.culture?.festivals as string[]) || [];
+        const cal = buildFestivalCalendar(lang, { entries: FG, names });
+        g = { ...g, sections: cal.sections, faq: cal.faq };
+        write(path.join('data', 'festival-calendar', `${lang}.json`), JSON.stringify({ sections: cal.sections, faq: cal.faq }));
+      }
       const gl = GUIDE_META[id].langs || LANGS;
       const meta = GUIDE_META[id];
       const url = `${BASE_URL}/${lang}/info/${id}`;

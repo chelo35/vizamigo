@@ -47,7 +47,16 @@ const PLAN: Partial<Record<GuideId, { place: string; to?: string; picks: Pick[] 
 /** Güncel konu rehberi: kısa cevap, bölümler, SSS, kaynaklar ve yolculuk bağlantıları. */
 export const GuideArticle: React.FC<{ id: GuideId }> = ({ id }) => {
   const { l, language } = useI18n();
-  const g = getGuide(id, language);
+  const g0 = getGuide(id, language);
+  // festival takvimi: bölümler derlemede üretilen dosyadan yüklenir (ana pakete gömülmez)
+  const [cal, setCal] = React.useState<{ lang: string; sections: typeof g0.sections; faq: typeof g0.faq } | null>(null);
+  React.useEffect(() => {
+    if (id !== 'festival_calendar') return;
+    let off = false;
+    fetch(`/data/festival-calendar/${language}.json`).then((r) => (r.ok ? r.json() : null)).then((d) => { if (!off && d) setCal({ lang: language, ...d }); }).catch(() => {});
+    return () => { off = true; };
+  }, [id, language]);
+  const g = id === 'festival_calendar' && cal && cal.lang === language ? { ...g0, sections: cal.sections, faq: cal.faq } : g0;
   const meta = GUIDE_META[id];
   const plan = PLAN[id] || PLAN_DEFAULT;
   const checked = new Date(meta.checked).toLocaleDateString(language, { day: 'numeric', month: 'long', year: 'numeric' });
