@@ -227,6 +227,7 @@ async function main() {
 
   const { LANG_PASS, PASSPORT_PAGES } = await import('../src/data/passportPages');
   const { buildPassportPath } = await import('../src/utils/seoRouter');
+  const { getPassportBrief } = await import('../src/utils/passportBrief');
   const PP_TITLE: Record<string, string> = { tr: 'Diğer pasaportlar', en: 'Entry rules for other passports', de: 'Einreise mit anderen Pässen', es: 'Requisitos para otros pasaportes', ru: 'Правила для других паспортов' };
   const FAQ_TITLE: Record<string, string> = { tr: 'Sık sorulan sorular', en: 'Frequently asked questions', de: 'Häufige Fragen', es: 'Preguntas frecuentes', ru: 'Частые вопросы' };
   // ülke verisi (sayfa içi bilgi bölümü de bundan beslenir)
@@ -397,6 +398,11 @@ async function main() {
       const faqHtml = faqNode?.mainEntity?.length
         ? `<section class="vzs-faq"><h2>${esc(FAQ_TITLE[lang] || FAQ_TITLE.en)}</h2>${faqNode.mainEntity.map((q) => `<h3>${esc(q.name)}</h3><p>${esc(q.acceptedAnswer.text)}</p>`).join('')}</section>`
         : '';
+      // pasaporta özel özet: her pasaport–ülke sayfasını gerçekten farklı kılan bilgiler
+      const br = getPassportBrief(code, pass, lang);
+      const briefHtml = br
+        ? `<section class="vzs-brief"><h2>${esc(br.title)}</h2><p>${esc(br.intro)}</p><dl>${br.rows.map((r) => `<dt>${esc(r.k)}</dt><dd>${esc(r.v)}${r.href ? ` · <a href="${esc(r.href)}" rel="noopener">${esc(r.linkText || r.href)}</a>` : ''}</dd>`).join('')}</dl>${br.compare.length > 1 ? `<h3>${esc(br.compareTitle)}</h3><ul>${br.compare.map((c) => `<li>${c.current ? `<b>${esc(c.name)}</b>` : `<a href="${c.pass === LANG_PASS[lang as 'en'] ? buildLocalizedPath(lang as never, 'explore', code) : buildPassportPath(lang as never, code, c.pass)}">${esc(c.name)}</a>`}: ${esc(c.label)}</li>`).join('')}</ul>` : ''}</section>`
+        : '';
       write(path.join(relPath, 'index.html'), build({
         lang,
         canonical: BASE_URL + relPath,
@@ -421,7 +427,7 @@ async function main() {
           const s720 = getOptimizedImageUrl(v.image, { width: 720 });
           return `<section class="vzs-chero"><img src="${s720}" srcset="${s480} 480w, ${s720} 720w" sizes="100vw" alt="${esc([name, v.landmark].filter(Boolean).join(': '))}" fetchpriority="high" /><div class="vzs-wrap vzs-chero-in">${eyebrow(lang, [EYEBROW[lang], region])}${h1(name, meta.h1.replace(name, '').trim())}${cap ? `<p>${esc(capitalName(code, lang, cap))}</p>` : ''}</div></section>`;
         })(),
-        nav: navBlock(lang, `${lead(meta.description)}${factsHtml(code, lang)}${faqHtml}${ppNav}<p>${homeLink(lang)} · ${tabLinks(lang)}</p>${near.length ? `<h2>${esc(UI[lang].region)}</h2><p>${countryLinks(lang, near)}</p>` : ''}`)
+        nav: navBlock(lang, `${lead(meta.description)}${briefHtml}${factsHtml(code, lang)}${faqHtml}${ppNav}<p>${homeLink(lang)} · ${tabLinks(lang)}</p>${near.length ? `<h2>${esc(UI[lang].region)}</h2><p>${countryLinks(lang, near)}</p>` : ''}`)
       }));
       n++;
     };

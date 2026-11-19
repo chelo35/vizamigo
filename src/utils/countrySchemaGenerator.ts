@@ -5,6 +5,7 @@
  */
 
 import { getExtraFaq } from '../data/extraFaq';
+import { getPassportFaq } from './passportBrief';
 import { SupportedLanguage } from '../i18n/types';
 import { ruIn } from '../data/ruCases';
 import { getCountryName } from '../data/passportData';
@@ -313,6 +314,11 @@ export function generateCountryJsonLd({
             }
           },
           ...getExtraFaq(code, language, currentPassport).map((f) => ({
+            '@type': 'Question',
+            name: f.q,
+            acceptedAnswer: { '@type': 'Answer', text: f.a }
+          })),
+          ...getPassportFaq(code, currentPassport, language).map((f) => ({
             '@type': 'Question',
             name: f.q,
             acceptedAnswer: { '@type': 'Answer', text: f.a }

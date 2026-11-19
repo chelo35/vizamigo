@@ -1,4 +1,6 @@
 import React, { useEffect, useMemo, useState } from 'react';
+import { getPassportBrief, getPassportFaq } from '../utils/passportBrief';
+import { LANG_PASS as BRIEF_LANG_PASS } from '../data/passportPages';
 import { getExtraFaq } from '../data/extraFaq';
 import { ruIn, ruOf } from '../data/ruCases';
 import { useI18n, lText } from '../data/i18n';
@@ -745,7 +747,8 @@ const CountryPageInner: React.FC<Props & { data: CountryBundle }> = ({ code, pas
     { q: l(`${trLoc(name)} acil durum numarası kaç?`, `What is the emergency number in ${name}?`, `Wie lautet die Notrufnummer in ${name}?`, `¿Cuál es el número de emergencias en ${name}?`, `Какой номер экстренных служб ${ruIn(name, 'loc')}?`), a: [emergency.general && `${l('Genel', 'General', 'Allgemein', 'General', 'Общий')}: ${emergency.general}`, emergency.police && `${l('Polis', 'Police', 'Polizei', 'Policía', 'Полиция')}: ${emergency.police}`, emergency.ambulance && `${l('Ambulans', 'Ambulance', 'Rettung', 'Ambulancia', 'Скорая')}: ${emergency.ambulance}`].filter(Boolean).join(' · ') },
     { q: l(`${trLoc(name)} musluk suyu içilir mi?`, `Is tap water safe to drink in ${name}?`, `Ist Leitungswasser in ${name} trinkbar?`, `¿Se puede beber agua del grifo en ${name}?`, `Можно ли пить воду из-под крана ${ruIn(name, 'loc')}?`), a: intel.waterAndHealth.tapWaterDesc },
     { q: l(`${trLoc(name)} bahşiş veriliyor mu?`, `Should I tip in ${name}?`, `Gibt man in ${name} Trinkgeld?`, `¿Se deja propina en ${name}?`, `Принято ли оставлять чаевые ${ruIn(name, 'loc')}?`), a: `${intel.tipping.custom}${intel.tipping.note ? ' ' + intel.tipping.note : ''}` },
-    ...getExtraFaq(code, language, passport).map((f) => ({ q: f.q, a: f.h ? `${f.a} (${l('Kaynak', 'Source', 'Quelle', 'Fuente', 'Источник')}: ${f.h})` : f.a }))
+    ...getExtraFaq(code, language, passport).map((f) => ({ q: f.q, a: f.h ? `${f.a} (${l('Kaynak', 'Source', 'Quelle', 'Fuente', 'Источник')}: ${f.h})` : f.a })),
+    ...getPassportFaq(code, passport, language)
   ].filter((f) => f.a);
   const similar = useMemo(() => {
     const reg = countryToRegion[code];
@@ -797,6 +800,39 @@ const CountryPageInner: React.FC<Props & { data: CountryBundle }> = ({ code, pas
             ))}
           </div>
         </section>
+        {(() => {
+          const br = getPassportBrief(code, passport, language);
+          if (!br) return null;
+          const lg = language as SupportedLanguage;
+          return (
+            <section className="vz-home-sec vz-pbrief" aria-labelledby="vz-pbrief-h">
+              <h2 id="vz-pbrief-h" className="vz-pbrief-h">{br.title}</h2>
+              <p className="vz-muted vz-pbrief-i">{br.intro}</p>
+              <dl className="vz-pbrief-dl">
+                {br.rows.map((r) => (
+                  <div key={r.k}>
+                    <dt>{r.k}</dt>
+                    <dd>{r.v}{r.href && <> · <a href={r.href} target="_blank" rel="noopener">{r.linkText || r.href}</a></>}</dd>
+                  </div>
+                ))}
+              </dl>
+              {br.compare.length > 1 && (
+                <>
+                  <h3 className="vz-pbrief-h3">{br.compareTitle}</h3>
+                  <ul className="vz-pbrief-cmp">
+                    {br.compare.map((c) => (
+                      <li key={c.pass} className={c.current ? 'on' : ''}>
+                        <Flag code={c.pass} />{' '}
+                        {c.current ? <b>{c.name}</b> : <a href={c.pass === BRIEF_LANG_PASS[lg] ? buildLocalizedPath(lg, 'explore', code) : buildPassportPath(lg, code, c.pass)}>{c.name}</a>}
+                        <span>{c.label}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </>
+              )}
+            </section>
+          );
+        })()}
         {isNew && (
           <div className="vz-cview" role="tablist" aria-label={name}>
             <button type="button" role="tab" aria-selected={view === 'book'} className={view === 'book' ? 'on' : ''} onClick={() => pickView('book')}><Icon name="bed" size={18} duo={false} />{l('Rezervasyon', 'Book your trip', 'Buchen', 'Reservar', 'Бронирование')}</button>
@@ -869,6 +905,9 @@ const CountryPageInner: React.FC<Props & { data: CountryBundle }> = ({ code, pas
           </div>
         </section>
 
+
+          </>
+        )}
         <section className="vz-home-sec" aria-labelledby="vz-faq-h">
           <SecHead eyebrow={l('Sık sorulanlar', 'FAQ', 'FAQ', 'Preguntas', 'Вопросы')} title={l(`${name} hakkında sık sorulan sorular`, `${name}: frequently asked questions`, `Häufige Fragen zu ${name}`, `Preguntas frecuentes sobre ${name}`, `Частые вопросы о ${name}`)} />
           <div className="vz-faq" id="vz-faq-h">
@@ -880,9 +919,6 @@ const CountryPageInner: React.FC<Props & { data: CountryBundle }> = ({ code, pas
             ))}
           </div>
         </section>
-
-          </>
-        )}
         {similar.length > 0 && (
           <section className="vz-home-sec">
             <SecHead eyebrow={l('İlham', 'Inspiration', 'Inspiration', 'Inspiración', 'Идеи')} title={l('Bunları da sevebilirsin', 'You might also like', 'Das könnte dir auch gefallen', 'También te puede gustar', 'Вам может понравиться')} />
