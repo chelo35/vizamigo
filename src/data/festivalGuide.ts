@@ -58,7 +58,24 @@ export function festivalWhen(e: FestivalGuideEntry, lang: string): string {
   return base;
 }
 
-export interface FestivalCardData { name: string; when: string; place?: string; about: string; tip: string; months: number[] }
+export interface FestivalCardData { name: string; when: string; place?: string; about: string; tip: string; months: number[]; d1?: string; d2?: string }
+
+const iso = (d: Date) => d.toISOString().slice(0, 10);
+const addDays = (s: string, n: number) => { const d = new Date(s + 'T00:00:00Z'); d.setUTCDate(d.getUTCDate() + n); return iso(d); };
+/** Otel araması için tarih: kesin tarih varsa bir gün önce giriş, bir gün sonra çıkış; yoksa boş. */
+function stayDates(e: FestivalGuideEntry, today = new Date()): { d1?: string; d2?: string } {
+  const now = iso(today);
+  if (e.y27 && e.y27[0] >= now) return { d1: addDays(e.y27[0], -1), d2: addDays(e.y27[1] || e.y27[0], 1) };
+  if (e.d && e.m.length === 1 && !e.lunar) {
+    const nums = e.d.match(/\d+/g); if (!nums) return {};
+    const a = +nums[0], b = +nums[nums.length - 1];
+    for (const y of [today.getUTCFullYear(), today.getUTCFullYear() + 1]) {
+      const start = iso(new Date(Date.UTC(y, e.m[0] - 1, a)));
+      if (start >= now) return { d1: addDays(start, -1), d2: addDays(iso(new Date(Date.UTC(y, e.m[0] - 1, b))), 1) };
+    }
+  }
+  return {};
+}
 
 /** Ülkenin festival listesini (sitedeki adlarla) rehber bilgisiyle eşleştirir; rehberde olmayanlar `rest` olarak döner. */
 export function getFestivalGuide(entries: FestivalGuideEntry[] | undefined, lang: string, names: string[]): { cards: FestivalCardData[]; rest: string[] } {
@@ -70,7 +87,7 @@ export function getFestivalGuide(entries: FestivalGuideEntry[] | undefined, lang
   for (const e of g) {
     if (!names[e.i]) continue;
     used.add(e.i);
-    cards.push({ name: names[e.i], when: festivalWhen(e, lang), place: e.place, about: e.about[k], tip: e.tip[k], months: e.m });
+    cards.push({ name: names[e.i], when: festivalWhen(e, lang), place: e.place, about: e.about[k], tip: e.tip[k], months: e.m, ...stayDates(e) });
   }
   return { cards, rest: names.filter((_, i) => !used.has(i)) };
 }

@@ -1784,3 +1784,5 @@ html.dark .vz-hero2-chips button { background: rgba(255,255,255,0.08); border-co
 .vz-fest-item p { margin: 6px 0 8px; line-height: 1.55; }
 .vz-fest-head { display: flex; flex-direction: column; gap: 4px; }
 .vz-fest-when { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; color: var(--rd-sea-ink); font-weight: 600; }
+.vz-fest-hotel { display: inline-flex; align-items: center; gap: 6px; margin-top: 10px; font-size: 13.5px; font-weight: 600; color: var(--rd-sea-ink); text-decoration: none; }
+.vz-fest-hotel:hover { text-decoration: underline; }

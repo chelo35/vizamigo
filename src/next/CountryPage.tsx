@@ -23,7 +23,7 @@ import { FollowCountry } from './FollowCountry';
 import { TripChecklist, buildChecklist } from './TripChecklist';
 import { advisoryAgencyName, advisoryLabel } from '../data/officialAdvisoryLabels';
 import { OfferCard } from './OfferCard';
-import { tpIdFromUrl } from '../data/tpPartners';
+import { tpIdFromUrl, stay22 } from '../data/tpPartners';
 import { getCountryVisual, getOptimizedImageUrl } from '../data/countryVisuals';
 import { GEO_DATA } from '../data/geoData';
 import { capitalName } from '../data/capitalNames';
@@ -581,6 +581,9 @@ const CountryPageInner: React.FC<Props & { data: CountryBundle }> = ({ code, pas
                     <div className="vz-fest-head"><b>{f.name}</b><span className="vz-fest-when"><Icon name="cal" size={15} duo={false} />{f.when}{f.place ? ` · ${f.place}` : ''}</span></div>
                     <p>{f.about}</p>
                     <div className="vz-note"><Icon name="info" size={18} duo={false} /><span>{f.tip}</span></div>
+                    <a className="vz-fest-hotel" href={stay22('booking', { address: `${(f.place || '').split(' / ')[0] || capitalName(code, 'en', GEO_DATA[code]?.capital || '')}, ${getCountryName(code, 'en')}`, checkin: f.d1, checkout: f.d2, campaign: `fest_${code.toLowerCase()}` })} target="_blank" rel="noopener noreferrer sponsored">
+                      <Icon name="bed" size={16} duo={false} />{f.d1 ? l('Bu tarihler için otel bul', 'Find hotels for these dates', 'Hotels für diese Tage finden', 'Buscar hoteles para estas fechas', 'Найти отели на эти даты') : l('Yakındaki otelleri gör', 'See hotels nearby', 'Hotels in der Nähe ansehen', 'Ver hoteles cerca', 'Отели поблизости')}
+                    </a>
                   </div>
                 ))}
                 {fg.rest.length > 0 && <Bullets items={fg.rest} />}
