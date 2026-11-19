@@ -14,6 +14,7 @@ import { INFO } from '../data/passportData';
 import { GEO_DATA } from '../data/geoData';
 import { capitalName } from '../data/capitalNames';
 import { SOCIALS, CONTACT_EMAIL } from '../data/socials';
+import { topPlaces } from '../data/topPlaces';
 
 export interface SchemaGeneratorOptions {
   countryCode: string;
@@ -454,8 +455,24 @@ function getSerpAnswer(
         : `${P} passport holders must apply for a visa at an embassy before travel`;
       return {
         // Başkent başlıkta: ABD/Kanada aramalarında "budapest / vienna / vilnius visa requirements" kalıbı sık (Search Console)
-        title: (cap && cap !== C && `${C} Visa 2026 (${cap}): ${short} for ${dem}`.length <= 64 ? `${C} Visa 2026 (${cap}): ${short} for ${dem}` : '') || fitT([`${C} Visa Requirements 2026: ${short} for ${dem}`, `${C} Visa 2026: ${short} for ${dem}`, `${C} Visa 2026: ${short}`]),
-        description: fitD(`${CC}: ${long}.`, ['Official sources, travel advisory, emergency numbers, itinerary, flight and hotel deals.', 'Official sources, emergency numbers, route and prices.', 'Official sources and prices.'])
+        // Search Console (ABD/İngiltere/Kanada): "krakow / cappadocia / machu picchu / budapest visa requirements" —
+        // aranan ifade "visa requirements" + turistik yer adı. Başlık ve açıklama bunu içerir (64 karakter sınırı).
+        title: (() => {
+          const pl = topPlaces(code, 1).filter((x) => x !== C)[0] || (cap && cap !== C ? cap : '');
+          const opts = [
+            pl && `${C} Visa Requirements 2026 (${pl}): ${short} for ${dem}`,
+            pl && `${pl} & ${C} Visa Requirements 2026: ${short}`,
+            pl && `${C} Visa Requirements 2026 (${pl}): ${short}`,
+            `${C} Visa Requirements 2026: ${short} for ${dem}`,
+            `${C} Visa Requirements 2026: ${short}`,
+            `${C} Visa 2026: ${short}`
+          ].filter(Boolean) as string[];
+          return opts.find((t) => t.length <= 64) || opts[opts.length - 1];
+        })(),
+        description: (() => {
+          const pls = topPlaces(code, 3).filter((x) => x !== C);
+          return fitD(`Visa requirements for ${C}${pls.length ? ` (${pls.join(', ')})` : cap && cap !== C ? ` (${cap})` : ''}: ${long}.`, ['Official sources, travel advisory, emergency numbers, flight and hotel deals.', 'Official sources, emergency numbers and prices.', 'Official sources.']);
+        })()
       };
     }
   }

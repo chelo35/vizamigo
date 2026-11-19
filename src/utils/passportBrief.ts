@@ -21,6 +21,7 @@ import { getOfficialAdvisories } from '../data/officialAdvisories';
 import { advisoryLabel, advisoryAgencyName } from '../data/officialAdvisoryLabels';
 import { CONSULAR_EMERGENCY_DATA } from '../data/consularEmergencyData';
 import { LANG_PASS, PASSPORT_PAGES } from '../data/passportPages';
+import { topPlaces } from '../data/topPlaces';
 
 type L5 = [string, string, string, string, string];
 const LI: Record<string, number> = { tr: 0, en: 1, de: 2, es: 3, ru: 4 };
@@ -159,6 +160,17 @@ export function getPassportFaq(code: string, pass: string, lang: string): { q: s
         `Сначала заявите в местную полицию, затем свяжитесь: ${min}${ce.hotline247 ? ` (круглосуточно: ${ce.hotline247})` : ''}. Для возвращения выдают документ: ${doc}.`
       ])
     });
+  }
+  // İngilizce: turistik yer adıyla aranan sorular ("krakow visa requirements")
+  if (lang === 'en') {
+    const it = getPassportItems(pass).find((x) => x.c === code);
+    if (it) {
+      const lab = getCategoryBadgeLabel(it as never, 'en');
+      const rule = it.cat === 'free' || it.id ? `no visa is needed with a ${P} passport (${lab.toLowerCase()})` : it.cat === 'voa' ? `${P} passport holders can get a visa on arrival` : it.cat === 'evisa' ? `${P} passport holders need an eVisa, applied for online before travel` : it.cat === 'eta' ? `${P} passport holders need an electronic travel authorisation before travel` : `${P} passport holders need a visa from an embassy or consulate before travel`;
+      for (const pl of topPlaces(code, 2).filter((x) => x !== C)) {
+        out.push({ q: `Do I need a visa to visit ${pl} with a ${P} passport?`, a: `${pl} is in ${C}, so ${C}'s entry rules apply: ${rule}.` });
+      }
+    }
   }
   const rev = getPassportItems(code).find((x) => x.c === pass);
   if (rev) {
