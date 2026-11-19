@@ -1778,3 +1778,9 @@ html.dark .vz-hero2-chips button { background: rgba(255,255,255,0.08); border-co
 @media (max-width:560px){.vz-pbrief-dl>div{grid-template-columns:1fr;gap:2px}}
 .vz-pbrief-cmp{justify-items:stretch;text-align:left}
 .vz-pbrief-cmp li{justify-content:flex-start;width:100%;margin:0;padding:0}
+
+/* Festival rehberi */
+.vz-fest-item { border: 1px solid var(--rd-line); border-radius: var(--vz-r-sm); padding: 12px 14px; background: var(--rd-surface); }
+.vz-fest-item p { margin: 6px 0 8px; line-height: 1.55; }
+.vz-fest-head { display: flex; flex-direction: column; gap: 4px; }
+.vz-fest-when { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; color: var(--rd-sea-ink); font-weight: 600; }

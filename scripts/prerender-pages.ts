@@ -18,6 +18,7 @@ import { fileURLToPath } from 'url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 import { applyDict, loadDict, makeSubstTranslator, mapStrings, DATA_LANGS } from './data-i18n';
 import { buildExtras } from './i18n-extras';
+import { getFestivalGuide } from '../src/data/festivalGuide';
 const DIST = path.resolve(__dirname, '../dist');
 
 const esc = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
@@ -330,6 +331,13 @@ async function main() {
       ru: { facts: 'Коротко', adv: 'Официальные предупреждения', eng: 'Английский', capital: 'Столица', currency: 'Валюта', best: 'Лучшее время', plug: 'Розетки', water: 'Вода из-под крана', waterY: 'Можно пить', waterN: 'Пить не рекомендуется', sos: 'Экстренные номера', police: 'Полиция', amb: 'Скорая', gen: 'Общий', safety: 'Безопасность', tip: 'Чаевые', pay: 'Оплата', ride: 'Такси-приложения', langs: 'Язык', budget: 'Бюджет в день', budgetB: 'эконом', budgetM: 'средний', esim: 'Интернет и eSIM', route: 'Рекомендуемый маршрут', places: 'Что посмотреть', food: 'Что попробовать', phrases: 'Полезные фразы', tips: 'Советы по безопасности' }
     };
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const FEST_H: Record<string, string> = { tr: 'Festivaller ve etkinlikler', en: 'Festivals & events', de: 'Feste & Veranstaltungen', es: 'Festivales y eventos', ru: 'Праздники и фестивали' };
+    const festHtml = (code: string, lang: string): string => {
+      const names = (CDATA[lang]?.[code]?.enc?.culture?.festivals as string[] | undefined) || [];
+      const fg = getFestivalGuide(code, lang, names);
+      if (!fg.cards.length) return '';
+      return `<section class="vzs-fest"><h2>${esc(FEST_H[lang] || FEST_H.en)}</h2>${fg.cards.map((f) => `<h3>${esc(f.name)}</h3><p><b>${esc(f.when)}${f.place ? ` · ${esc(f.place)}` : ''}</b></p><p>${esc(f.about)} ${esc(f.tip)}</p>`).join('')}</section>`;
+    };
     const factsHtml = (code: string, lang: string): string => {
       const d = CDATA[lang]?.[code];
       if (!d) return '';
@@ -427,7 +435,7 @@ async function main() {
           const s720 = getOptimizedImageUrl(v.image, { width: 720 });
           return `<section class="vzs-chero"><img src="${s720}" srcset="${s480} 480w, ${s720} 720w" sizes="100vw" alt="${esc([name, v.landmark].filter(Boolean).join(': '))}" fetchpriority="high" /><div class="vzs-wrap vzs-chero-in">${eyebrow(lang, [EYEBROW[lang], region])}${h1(name, meta.h1.replace(name, '').trim())}${cap ? `<p>${esc(capitalName(code, lang, cap))}</p>` : ''}</div></section>`;
         })(),
-        nav: navBlock(lang, `${lead(meta.description)}${briefHtml}${factsHtml(code, lang)}${faqHtml}${ppNav}<p>${homeLink(lang)} · ${tabLinks(lang)}</p>${near.length ? `<h2>${esc(UI[lang].region)}</h2><p>${countryLinks(lang, near)}</p>` : ''}`)
+        nav: navBlock(lang, `${lead(meta.description)}${briefHtml}${factsHtml(code, lang)}${festHtml(code, lang)}${faqHtml}${ppNav}<p>${homeLink(lang)} · ${tabLinks(lang)}</p>${near.length ? `<h2>${esc(UI[lang].region)}</h2><p>${countryLinks(lang, near)}</p>` : ''}`)
       }));
       n++;
     };

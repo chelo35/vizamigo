@@ -2,6 +2,7 @@ import React, { useEffect, useMemo, useState } from 'react';
 import { getPassportBrief, getPassportFaq } from '../utils/passportBrief';
 import { LANG_PASS as BRIEF_LANG_PASS } from '../data/passportPages';
 import { getExtraFaq } from '../data/extraFaq';
+import { getFestivalGuide } from '../data/festivalGuide';
 import { ruIn, ruOf } from '../data/ruCases';
 import { useI18n, lText } from '../data/i18n';
 import { Icon } from './Icon';
@@ -569,7 +570,22 @@ const CountryPageInner: React.FC<Props & { data: CountryBundle }> = ({ code, pas
         },
         {
           id: 'fest', label: l('Festivaller', 'Festivals', 'Feste', 'Festivales', 'Праздники'),
-          render: () => <Bullets items={enc.culture.festivals} />
+          render: () => {
+            const fg = getFestivalGuide(code, language, enc.culture.festivals);
+            if (!fg.cards.length) return <Bullets items={enc.culture.festivals} />;
+            return (
+              <div className="vz-stack vz-fest">
+                {fg.cards.map((f) => (
+                  <div className="vz-fest-item" key={f.name}>
+                    <div className="vz-fest-head"><b>{f.name}</b><span className="vz-fest-when"><Icon name="cal" size={15} duo={false} />{f.when}{f.place ? ` · ${f.place}` : ''}</span></div>
+                    <p>{f.about}</p>
+                    <div className="vz-note"><Icon name="info" size={18} duo={false} /><span>{f.tip}</span></div>
+                  </div>
+                ))}
+                {fg.rest.length > 0 && <Bullets items={fg.rest} />}
+              </div>
+            );
+          }
         }
       ]
     },
