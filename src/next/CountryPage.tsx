@@ -24,6 +24,7 @@ import { TripChecklist, buildChecklist } from './TripChecklist';
 import { advisoryAgencyName, advisoryLabel } from '../data/officialAdvisoryLabels';
 import { OfferCard } from './OfferCard';
 import { tpIdFromUrl, stay22 } from '../data/tpPartners';
+import { BEST_MONTHS, wtgIdFor, wtgMonthName } from '../data/whereToGo';
 import { getCountryVisual, getOptimizedImageUrl } from '../data/countryVisuals';
 import { GEO_DATA } from '../data/geoData';
 import { capitalName } from '../data/capitalNames';
@@ -554,7 +555,7 @@ const CountryPageInner: React.FC<Props & { data: CountryBundle }> = ({ code, pas
                 <Card title={l('Büyük şehirler', 'Major cities', 'Großstädte', 'Ciudades', 'Города')} icon="landmark"><Tags items={[geog.capital, ...geog.majorCities].filter((x, i, a) => x && a.indexOf(x) === i)} /></Card>
                 {geog.touristRegions.length > 0 && <Card title={l('Turistik bölgeler', 'Tourist regions', 'Regionen', 'Regiones', 'Регионы')} icon="map"><Tags items={geog.touristRegions} /></Card>}
               </div>
-              <Card tone="sea" title={l('Ne zaman gidilir?', 'When to go', 'Beste Reisezeit', 'Cuándo ir', 'Когда ехать')} icon="sun"><p>{enc.tourism.bestSeasons}</p><p className="vz-muted">{enc.tourism.travelStyleTip}</p></Card>
+              <Card tone="sea" title={l('Ne zaman gidilir?', 'When to go', 'Beste Reisezeit', 'Cuándo ir', 'Когда ехать')} icon="sun"><p>{enc.tourism.bestSeasons}</p><p className="vz-muted">{enc.tourism.travelStyleTip}</p>{BEST_MONTHS[code]?.length ? <nav className="vz-wtg-months sm" aria-label={l('Bu ülkenin en iyi ayları', 'Best months for this country', 'Beste Monate', 'Mejores meses', 'Лучшие месяцы')}><span className="vz-muted">{l('Bu aylarda başka nereye gidilir?', 'Where else to go in these months:', 'Wohin sonst in diesen Monaten?', '¿Dónde más en estos meses?', 'Куда ещё в эти месяцы:')}</span>{BEST_MONTHS[code].map((m) => <a key={m} href={`/${language}/info/${wtgIdFor(m)}`}>{wtgMonthName(m, language)}</a>)}</nav> : null}</Card>
             </div>
           )
         },

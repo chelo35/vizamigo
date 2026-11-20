@@ -17,6 +17,15 @@
   --vz-shadow-sm: 0 2px 8px rgba(29, 43, 51, 0.06);
   --vz-shadow: 0 12px 30px rgba(29, 43, 51, 0.10);
   --vz-ring: 0 0 0 3px var(--rd-sea-tint);
+  /* eski adlarla yazılmış kurallar için takma adlar (tanımsız kalınca #fff'e düşüp koyu modda beyaz kart çıkıyordu) */
+  --rd-card: var(--rd-surface);
+  --vz-card: var(--rd-surface);
+  --vz-line: var(--rd-line);
+  --vz-fg: var(--rd-fg);
+  --rd-ink: var(--rd-fg);
+  --vz-muted: var(--rd-muted);
+  --vz-shadow-md: var(--vz-shadow);
+  --vz-on-sea: #FFFFFF;
 }
 html.dark, .dark {
   --vz-acc-a: #86D9E7;
@@ -28,6 +37,7 @@ html.dark, .dark {
   --vz-mute: #BDB5AC; --vz-mute-soft: rgba(189, 181, 172, 0.12);
   --vz-shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.25);
   --vz-shadow: 0 14px 34px rgba(0, 0, 0, 0.35);
+  --vz-on-sea: #10232A; /* koyu modda deniz rengi açık: üstündeki yazı koyu olmalı */
 }
 
 .vz-app { min-height: 100dvh; display: flex; flex-direction: column; background: var(--rd-bg); color: var(--rd-fg); font-family: 'Plus Jakarta Sans', 'Plus Jakarta Sans Fallback', system-ui, sans-serif; }
@@ -907,7 +917,7 @@ html.dark .vz-trip-tag.est { background: rgba(255, 255, 255, 0.08); color: #b8c4
 .vz-trip-alt:hover, .vz-trip-alt:focus-visible { border-color: var(--rd-sea, #0d9488); }
 .vz-trip-alt b { font-size: 17px; }
 .vz-trip-alt span { font-size: 13px; color: var(--rd-muted, #5b6b70); }
-.vz-trip-alt i { font-style: normal; font-size: 12px; font-weight: 700; color: #15803d; }
+.vz-trip-alt i { font-style: normal; font-size: 12px; font-weight: 700; color: var(--vz-ok); }
 html.dark .vz-trip-alt i { color: #86efac; }
 @media (max-width: 640px) {
   .vz-trip .vz-formgrid { grid-template-columns: 1fr 1fr; gap: 10px; }
@@ -945,14 +955,14 @@ html.dark .vz-trip-note { color: #fbbf24; }
 .vz-qd-fare { position: relative; display: flex; flex-direction: column; gap: 2px; padding: 12px; border-radius: 14px; background: var(--rd-surface, #fff); border: 1px solid var(--rd-line, #dfe7e8); color: inherit; text-decoration: none; }
 .vz-qd-fare:hover { border-color: var(--rd-sea, #0d9488); }
 .vz-qd-fare.best { border-color: #16a34a; box-shadow: 0 0 0 1px #16a34a inset; }
-.vz-qd-fare em { font-style: normal; font-size: 11px; font-weight: 700; color: #15803d; }
+.vz-qd-fare em { font-style: normal; font-size: 11px; font-weight: 700; color: var(--vz-ok); }
 .vz-qd-fare b { font-size: 20px; letter-spacing: -0.01em; }
 .vz-qd-fare span { font-size: 13px; }
 .vz-qd-fare small { font-size: 12px; color: var(--rd-muted, #5b6b70); }
 .vz-qd-foot { margin: 0; font-size: 12px; color: var(--rd-muted, #5b6b70); }
 .vz-qd-chips { display: flex; flex-wrap: wrap; gap: 6px; }
 .vz-qd-chips button { padding: 6px 12px; border-radius: 99px; border: 1px solid var(--rd-line, #dfe7e8); background: var(--rd-surface, #fff); color: inherit; font: inherit; font-size: 13px; font-weight: 600; cursor: pointer; }
-.vz-qd-chips button.on { border-color: var(--rd-sea, #0d9488); color: var(--rd-sea-ink, #0b4f4a); background: #fff; box-shadow: 0 0 0 1px var(--rd-sea, #0d9488) inset; }
+.vz-qd-chips button.on { border-color: var(--rd-sea, #0d9488); color: var(--rd-sea-ink, #0b4f4a); background: var(--rd-surface); box-shadow: 0 0 0 1px var(--rd-sea, #0d9488) inset; }
 html.dark .vz-qd-card { background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.1); }
 
 
@@ -1007,7 +1017,7 @@ html.dark .vz-qd-more { color: #5eead4; }
 .vz-tours-view button.on { background: var(--rd-surface, #fff); box-shadow: 0 2px 8px rgba(13, 60, 70, 0.12); }
 .vz-tours-filters { display: flex; flex-direction: column; gap: 4px; margin-bottom: 6px; }
 .vz-tours-jump button { flex: none; padding: 7px 13px; border-radius: 99px; border: 1px solid var(--rd-line, #dfe7e8); background: var(--rd-surface, #fff); color: inherit; font: inherit; font-weight: 600; font-size: 13.5px; cursor: pointer; }
-.vz-tours-jump button.on { background: var(--rd-sea, #0d9488); border-color: var(--rd-sea, #0d9488); color: #fff; }
+.vz-tours-jump button.on { background: var(--rd-sea, #0d9488); border-color: var(--rd-sea, #0d9488); color: var(--vz-on-sea); }
 .vz-tour-days { position: absolute; right: 12px; top: 12px; padding: 5px 11px; border-radius: 99px; background: #0f172a; color: #fff; font-size: 13px; font-weight: 800; }
 .vz-tour-route { display: flex; align-items: flex-start; gap: 6px; color: var(--rd-muted, #5b6b70); font-size: 14px !important; }
 .vz-tour-route svg { flex: none; margin-top: 2px; }
@@ -1073,7 +1083,7 @@ html.dark .vz-pp-links > a.vz-pp-mine { background: rgba(245,158,11,0.12); color
 .vz-fcal-months button span { font-size: 12px; color: var(--rd-muted, #5b6b70); text-transform: capitalize; }
 .vz-fcal-months button b { font-size: 12.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .vz-fcal-months button.on { border-color: var(--rd-sea, #177fa4); background: var(--rd-sea-tint, #eef8f7); }
-.vz-fcal-months button.best b { color: #15803d; }
+.vz-fcal-months button.best b { color: var(--vz-ok); }
 .vz-fcal-grid { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 4px; }
 .vz-fcal-wk { text-align: center; font-size: 11.5px; font-weight: 700; color: var(--rd-muted, #5b6b70); padding-bottom: 2px; }
 .vz-fcal-day { display: grid; align-content: start; gap: 1px; min-height: 48px; padding: 4px 2px; border-radius: 10px; border: 1px solid transparent; background: var(--rd-sea-tint, #f3f8f8); font: inherit; cursor: pointer; text-align: center; }
@@ -1081,7 +1091,7 @@ html.dark .vz-pp-links > a.vz-pp-mine { background: rgba(245,158,11,0.12); color
 .vz-fcal-day b { font-size: 10.5px; line-height: 1.15; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .vz-fcal-day:disabled { cursor: default; opacity: 0.45; background: transparent; }
 .vz-fcal-day.lo { background: #e5f4e4; }
-.vz-fcal-day.lo b { color: #15803d; }
+.vz-fcal-day.lo b { color: var(--vz-ok); }
 .vz-fcal-day.hi b { color: #b45309; }
 .vz-fcal-day.best { border-color: #16a34a; }
 .vz-fcal-day.sel { border-color: var(--rd-sea, #177fa4); box-shadow: 0 0 0 2px rgba(23,127,164,0.25); }
@@ -1223,7 +1233,7 @@ button.vz-tb-f { cursor: pointer; }
 .vz-bk-card .vz-ic { margin-bottom: 2px; }
 .vz-bk-go { margin-top: auto; padding-top: 4px; font-size: 13px; font-weight: 700; color: var(--rd-sea-ink, #0b7287); }
 .vz-bk-card:hover, .vz-bk-card:focus-visible { border-color: var(--rd-sea); }
-.vz-bk-cta { display: flex; align-items: center; justify-content: center; gap: 8px; min-height: 48px; border-radius: 14px; background: var(--rd-sea, #0b7287); color: #fff; font-weight: 800; text-decoration: none; }
+.vz-bk-cta { display: flex; align-items: center; justify-content: center; gap: 8px; min-height: 48px; border-radius: 14px; background: var(--rd-sea, #0b7287); color: var(--vz-on-sea); font-weight: 800; text-decoration: none; }
 .vz-bk-pkg { display: flex; flex-direction: column; gap: 6px; }
 .vz-bk-pkg > b { font-size: 14px; }
 .vz-bk-two { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px; }
@@ -1231,7 +1241,7 @@ button.vz-tb-f { cursor: pointer; }
 .vz-bk-chips { display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; padding-bottom: 2px; }
 .vz-bk-chips::-webkit-scrollbar { display: none; }
 .vz-bk-chips button { flex: none; min-height: 40px; padding: 0 14px; border-radius: 99px; border: 1px solid var(--rd-line); background: var(--rd-bg); color: var(--rd-fg); font: inherit; font-size: 14px; font-weight: 600; cursor: pointer; white-space: nowrap; }
-.vz-bk-chips button.on { background: var(--rd-sea, #0b7287); border-color: var(--rd-sea, #0b7287); color: #fff; font-weight: 700; }
+.vz-bk-chips button.on { background: var(--rd-sea, #0b7287); border-color: var(--rd-sea, #0b7287); color: var(--vz-on-sea); font-weight: 700; }
 .vz-s22 { border-radius: 16px; overflow: hidden; border: 1px solid var(--rd-line); background: var(--rd-bg); }
 .vz-s22 iframe { display: block; width: 100%; height: 560px; border: 0; }
 @media (min-width: 760px) { .vz-s22 iframe { height: 600px; } }
@@ -1297,7 +1307,7 @@ button.vz-tb-f { cursor: pointer; }
 /* Uçuş: fiyat takvimi düğmesi ve kutusu */
 .vz-fl-tools { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; margin-bottom: 10px; }
 .vz-fl-cal { display: inline-flex; align-items: center; gap: 6px; min-height: 38px; padding: 0 14px; border-radius: 99px; border: 1px solid var(--rd-sea, #0b7287); background: transparent; color: var(--rd-sea, #0b7287); font: inherit; font-size: 13.5px; font-weight: 700; cursor: pointer; }
-.vz-fl-cal.on { background: var(--rd-sea, #0b7287); color: #fff; }
+.vz-fl-cal.on { background: var(--rd-sea, #0b7287); color: var(--vz-on-sea); }
 .vz-fl-calbox { margin-bottom: 12px; }
 .vz-fl-tools .vz-bk-toggle { margin: 0; }
 
@@ -1306,12 +1316,12 @@ button.vz-tb-f { cursor: pointer; }
 .vz-bk-city > b { font-size: 15px; }
 .vz-bk-city small, .vz-bk-checked { font-size: 12px; color: var(--rd-muted, #5b6b70); }
 .vz-bk-checked { display: block; margin-top: 6px; }
-.vz-bk-chips a.on { background: var(--rd-sea, #0b7287); border-color: var(--rd-sea, #0b7287); color: #fff; }
+.vz-bk-chips a.on { background: var(--rd-sea, #0b7287); border-color: var(--rd-sea, #0b7287); color: var(--vz-on-sea); }
 .vz-ins-card { margin-bottom: 10px; }
 .vz-bk-city > b { display: flex; align-items: center; gap: 8px; font-size: 17px; }
 .vz-bk-cityq { display: flex; gap: 8px; }
 .vz-bk-cityq input { flex: 1; min-width: 0; min-height: 44px; padding: 0 14px; border-radius: 12px; border: 1px solid var(--rd-line, #dfe7e8); background: var(--rd-bg, #fff); color: inherit; font: inherit; font-size: 15px; }
-.vz-bk-cityq button { min-height: 44px; padding: 0 18px; border: 0; border-radius: 12px; background: var(--rd-sea, #0b7287); color: #fff; font: inherit; font-weight: 700; cursor: pointer; }
+.vz-bk-cityq button { min-height: 44px; padding: 0 18px; border: 0; border-radius: 12px; background: var(--rd-sea, #0b7287); color: var(--vz-on-sea); font: inherit; font-weight: 700; cursor: pointer; }
 .vz-fl-mode { margin-bottom: 10px; flex-wrap: wrap; }
 
 .vz-gr-q { margin: 10px 0 12px; }
@@ -1789,7 +1799,7 @@ html.dark .vz-hero2-chips button { background: rgba(255,255,255,0.08); border-co
 /* "Bu ay nereye gidilir" */
 .vz-wtg-months { display: flex; flex-wrap: wrap; gap: 6px; margin: 4px 0 8px; font-size: 13.5px; }
 .vz-wtg-months a, .vz-wtg-months b { padding: 5px 10px; border-radius: 999px; border: 1px solid var(--rd-line); text-decoration: none; color: inherit; }
-.vz-wtg-months b { background: var(--rd-sea); border-color: var(--rd-sea); color: #fff; }
+.vz-wtg-months b { background: var(--rd-sea); border-color: var(--rd-sea); color: var(--vz-on-sea); }
 .vz-guide ul.vz-wtg { list-style: none; padding: 0; margin: 8px 0 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 8px; }
 .vz-guide .vz-wtg li { margin: 0; padding: 10px 12px; border: 1px solid var(--rd-line); border-radius: 14px; background: var(--rd-surface); display: flex; flex-direction: column; gap: 6px; }
 .vz-wtg li::marker { content: ''; }
@@ -1798,3 +1808,17 @@ html.dark .vz-hero2-chips button { background: rgba(255,255,255,0.08); border-co
 .vz-wtg-h em { font-style: normal; font-size: 12px; color: var(--rd-muted); white-space: nowrap; }
 .vz-wtg p { margin: 0; font-size: 13.5px; line-height: 1.45; color: var(--rd-muted); }
 .vz-wtg .vz-flag, .vz-wtg img { width: 22px !important; height: 16px !important; border-radius: 3px; object-fit: cover; flex: none; }
+
+/* koyu mod: açık zeminli küçük etiketler */
+html.dark .vz-live-dep em { background: rgba(255, 201, 138, 0.16); color: #ffc98a; }
+html.dark .vz-pp-links > a.vz-pp-mine { background: rgba(255, 201, 138, 0.12); border-color: rgba(255, 201, 138, 0.4); color: #ffc98a; }
+html.dark .vz-hq-card em { color: var(--rd-sea-ink); }
+html.dark .vz-tripcard .rd-glass .rd-big-rule.ok { color: var(--vz-ok); }
+html.dark .vz-tripcard .rd-glass .rd-big-rule.warn { color: var(--vz-sun); }
+html.dark .vz-tile.has-ph .vz-tile-badge { background: rgba(16, 35, 42, 0.85); color: var(--rd-sea-ink); }
+html.dark .vz-bk-cta .vz-ad, html.dark .vz-hb-go .vz-ad { background: rgba(0, 0, 0, 0.14); color: var(--vz-on-sea); }
+html.dark .vz-hb-err { color: var(--vz-warn); }
+html.dark .vz-fare-b small.ok { color: var(--vz-ok); }
+html.dark .vz-eyebrow.warn { color: var(--vz-warn); }
+.vz-wtg-months.sm { margin-top: 10px; align-items: center; font-size: 13px; }
+.vz-wtg-months.sm a { padding: 3px 9px; }

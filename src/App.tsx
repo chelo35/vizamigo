@@ -321,6 +321,7 @@ function AppContent() {
                 onOpenAssistant={() => setIsAssistantOpen(true)}
                 onOpenRoute={() => handleSelectTab('plan')}
                 onOpenTool={openTool}
+                onOpenInfo={(pg) => openLegalModalWithTab(pg)}
               />
             )}
           </ErrorBoundary>

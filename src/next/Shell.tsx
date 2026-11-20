@@ -1,5 +1,6 @@
 import { toursPath } from '../data/tours';
 import { SOCIALS, CONTACT_EMAIL } from '../data/socials';
+import { buildWhereToGo, wtgIdFor } from '../data/whereToGo';
 import React, { useState } from 'react';
 import { Icon } from './Icon';
 import { useI18n } from '../data/i18n';
@@ -237,6 +238,7 @@ export const Footer: React.FC<{ onSelectTab: (t: TabKey) => void; onOpenInfo: (p
     {
       h: l('Keşfet', 'Explore', 'Entdecken', 'Explorar', 'Обзор'),
       items: [
+        { label: buildWhereToGo(language, new Date().getMonth() + 1).short, go: () => onOpenInfo(wtgIdFor(new Date().getMonth() + 1)) },
         { label: l('Nereye gidebilirim?', 'Where can I go?', 'Wohin kann ich?', '¿Dónde puedo ir?', 'Куда можно?'), go: () => onOpenTool('explore', 'where') },
         { label: l('Pasaport karşılaştır', 'Compare passports', 'Pässe vergleichen', 'Comparar pasaportes', 'Сравнить паспорта'), go: () => onOpenTool('explore', 'compare') },
         { label: l('Rota planlayıcı', 'Route planner', 'Routenplaner', 'Planificador', 'Маршрут'), go: () => onOpenTool('plan', 'planner') },

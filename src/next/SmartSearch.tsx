@@ -32,6 +32,7 @@ export function useSearchIndex(passport: string) {
   );
   const items = useMemo(() => new Map(getPassportItems(passport).map((x) => [x.c, x])), [passport]);
   const tools: (SearchAction & { keys: string })[] = [
+    { kind: 'tool', id: 't-month', label: l('Bu ay nereye gidilir?', 'Where to go this month', 'Wohin diesen Monat?', '¿Dónde viajar este mes?', 'Куда поехать в этом месяце'), icon: 'sun', tab: 'explore', tile: 'month', keys: 'bu ay nereye gidilir mevsim sezon tatil ocak şubat mart nisan mayıs haziran temmuz ağustos eylül ekim kasım aralık where to go this month season wohin reisezeit dónde viajar mes куда поехать сезон' },
     { kind: 'tool', id: 't-where', label: l('Nereye gidebilirim?', 'Where can I go?', 'Wohin kann ich?', '¿Dónde puedo ir?', 'Куда можно?'), icon: 'pin', tab: 'explore', tile: 'where', keys: 'nereye gidebilirim vizesiz visa free where can i go kimlik' },
     { kind: 'tool', id: 't-compare', label: l('Pasaport karşılaştır', 'Compare passports', 'Pässe vergleichen', 'Comparar pasaportes', 'Сравнить паспорта'), icon: 'scale', tab: 'explore', tile: 'compare', keys: 'karsilastir compare cifte dual pasaport passport' },
     { kind: 'tool', id: 't-days', label: l('Schengen 90/180 sayacı', 'Schengen 90/180 counter', 'Schengen-Rechner', 'Contador Schengen', 'Счётчик Шенгена'), icon: 'cal', tab: 'track', tile: 'days', keys: 'schengen 90 180 gun sayaci day counter' },

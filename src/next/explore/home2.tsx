@@ -1,5 +1,6 @@
 import React, { lazy, Suspense, useEffect, useMemo, useRef, useState } from 'react';
 import { useI18n } from '../../data/i18n';
+import { buildWhereToGo, wtgIdFor } from '../../data/whereToGo';
 import { GEO_DATA } from '../../data/geoData';
 import { getCountryName } from '../../data/passportData';
 import { getPassportItems } from '../../utils/calculator';
@@ -303,6 +304,12 @@ export const ChangesGuides: React.FC = () => {
         <span className="vz-eyebrow">{l('Güncel', 'Up to date', 'Aktuell', 'Actualizado', 'Актуально')}</span>
         <h3>{l('Güncel rehberler: kaynaklı ve tarihli', 'Travel rules 2026: sourced and dated', 'Reiseregeln 2026: mit Quellen und Datum', 'Normas de viaje 2026: con fuentes y fecha', 'Правила въезда 2026: с источниками и датой')}</h3>
         <ul className="vz-side-links">
+          <li>
+            <a href={`/${language}/info/${wtgIdFor(new Date().getMonth() + 1)}`}>
+              <Icon name={'sun' as never} size={16} />
+              {buildWhereToGo(language, new Date().getMonth() + 1).short}
+            </a>
+          </li>
           {guides.map((g) => (
             <li key={g.id}>
               <a href={`/${language}/info/${g.id}`}>

@@ -6,6 +6,7 @@ import { getPassportItems } from '../utils/calculator';
 import { getCountryName } from '../data/passportData';
 import { Btn, OpenRequest, SecHead, Segmented, Tile, TileGrid } from './ui';
 import { SmartSearch } from './SmartSearch';
+import { wtgIdFor, wtgCountries, buildWhereToGo } from '../data/whereToGo';
 import { QuickDeals } from './QuickDeals';
 import { HomeBooking } from './HomeBooking';
 import { HomeHero, CheapFlights, DayTours, PackEasy, ChangesGuides, TrustStrip } from './explore/home2';
@@ -36,6 +37,7 @@ export interface ExploreProps {
   onOpenAssistant: () => void;
   onOpenRoute: () => void;
   onOpenTool: (tab: TabKey, tile: string) => void;
+  onOpenInfo?: (page: string) => void;
 }
 
 export const ExplorePage: React.FC<ExploreProps> = (p) => {
@@ -76,6 +78,15 @@ export const ExplorePage: React.FC<ExploreProps> = (p) => {
   const pct = (n: number) => `${Math.round((n / counts.total) * 100)}%`;
   const passName = getCountryName(p.currentPassport, language);
 
+  // "Bu ay nereye gidilir?" (içinde bulunulan ay)
+  const curM = new Date().getMonth() + 1;
+  const monthId = wtgIdFor(curM);
+  const openMonth = () => {
+    if (p.onOpenInfo) p.onOpenInfo(monthId);
+    else window.location.href = `/${language}/info/${monthId}`;
+  };
+  const monthTitle = buildWhereToGo(language, curM).short;
+
   const tiles: Tile[] = [
     {
       id: 'where', icon: 'pin', photo: 'x-where',
@@ -83,6 +94,12 @@ export const ExplorePage: React.FC<ExploreProps> = (p) => {
       desc: l('Vizesiz, e-vize, kapıda vize', 'Visa-free, eVisa, on arrival', 'Visumfrei, eVisum, bei Ankunft', 'Sin visado, eVisa, a la llegada', 'Без визы, eVisa, по прилёте'),
       badge: `${counts.free}`,
       render: () => <WhereView passport={p.currentPassport} onOpenCountry={p.onOpenCountry} />
+    },
+    {
+      id: 'month', icon: 'sun', photo: 'x-month',
+      title: monthTitle,
+      desc: l(`En iyi dönemindeki ${wtgCountries(curM).length} ülke ve festivaller`, `${wtgCountries(curM).length} countries in season, plus festivals`, `${wtgCountries(curM).length} Länder in Saison und Feste`, `${wtgCountries(curM).length} países en temporada y fiestas`, `${wtgCountries(curM).length} стран в сезон и праздники`),
+      onOpen: openMonth
     },
     {
       id: 'countries', icon: 'globe', photo: 'x-globe',
@@ -153,6 +170,7 @@ export const ExplorePage: React.FC<ExploreProps> = (p) => {
             />
           }
           chips={[
+            { label: monthTitle, onClick: openMonth },
             { label: l('Nereye gidebilirim?', 'Where can I go?', 'Wohin kann ich?', '¿Dónde puedo ir?', 'Куда можно?'), onClick: () => openTile('where') },
             { label: l('Pasaport karşılaştır', 'Compare passports', 'Pässe vergleichen', 'Comparar', 'Сравнить'), onClick: () => openTile('compare') },
             { label: l('Popüler rotalar', 'Popular trips', 'Beliebte Ziele', 'Populares', 'Популярное'), onClick: () => openTile('popular') }
