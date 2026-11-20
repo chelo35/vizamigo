@@ -3,6 +3,7 @@
 // Bilgi değişince: JSON metnini ve `checked` tarihini güncelle, sonra `node scripts/indexnow.mjs`.
 import { getPassportItems } from '../utils/calculator';
 import { buildFestivalCalendar, FESTIVAL_COUNTRIES } from './festivalGuide';
+import { buildPassportRanking } from './passportRanking';
 import { WTG_IDS, buildWhereToGo, isWtgId, wtgMonth, type WtgId } from './whereToGo';
 import tr from './guides/tr.json';
 import en from './guides/en.json';
@@ -15,19 +16,28 @@ import scDe from './guides/schengen.de.json';
 import scEs from './guides/schengen.es.json';
 import scRu from './guides/schengen.ru.json';
 
-export type GuideId = 'festival_calendar' | 'montenegro_visa' | 'schengen_documents' | 'etias' | 'uk_eta' | 'esta' | 'greek_islands_visa' | 'visa_free_tr' | 'id_card_travel' | 'visa_fees' | 'visa_appointments' | 'visa_free_ru' | 'us_visa' | 'uk_visa_india' | 'dubai_visa_india' | 'thailand_india' | 'schengen_by_country' | 'schengen_india' | 'japan_visa_india' | 'vietnam_visa_india' | 'egypt_visa_ru' | 'uae_ru' | 'turkey_id_de' | 'egypt_visa_de' | 'thailand_de' | 'canada_eta_mx' | 'schengen_latam' | 'ees' | WtgId;
+export type GuideId = 'passport_ranking' | 'festival_calendar' | 'montenegro_visa' | 'schengen_documents' | 'etias' | 'uk_eta' | 'esta' | 'greek_islands_visa' | 'visa_free_tr' | 'id_card_travel' | 'visa_fees' | 'visa_appointments' | 'visa_free_ru' | 'us_visa' | 'uk_visa_india' | 'dubai_visa_india' | 'thailand_india' | 'schengen_by_country' | 'schengen_india' | 'japan_visa_india' | 'vietnam_visa_india' | 'egypt_visa_ru' | 'uae_ru' | 'turkey_id_de' | 'egypt_visa_de' | 'thailand_de' | 'canada_eta_mx' | 'schengen_latam' | 'ees' | WtgId;
 export interface GuideSection { h: string; p?: string[]; list?: string[]; table?: { head: string[]; rows: string[][] } }
 export interface ChecklistGroup { id: string; label: string; docs: string[] }
 export interface GuideChecklist { title: string; statusLabel: string; purposeLabel: string; commonTitle: string; common: string[]; statuses: ChecklistGroup[]; purposes: ChecklistGroup[]; note: string; print: string }
 export interface GuideText { title: string; short: string; metaDesc: string; answer: string; sections: GuideSection[]; faq: { q: string; a: string }[]; checklist?: GuideChecklist }
 
-export const GUIDE_IDS: GuideId[] = ['festival_calendar', 'montenegro_visa', 'schengen_by_country', 'schengen_india', 'canada_eta_mx', 'schengen_latam', 'turkey_id_de', 'egypt_visa_de', 'thailand_de', 'egypt_visa_ru', 'uae_ru', 'japan_visa_india', 'vietnam_visa_india', 'us_visa', 'uk_visa_india', 'dubai_visa_india', 'thailand_india', 'visa_free_ru', 'visa_fees', 'visa_appointments', 'visa_free_tr', 'id_card_travel', 'schengen_documents', 'ees', 'etias', 'uk_eta', 'esta', 'greek_islands_visa', ...WTG_IDS];
+export const GUIDE_IDS: GuideId[] = ['passport_ranking', 'festival_calendar', 'montenegro_visa', 'schengen_by_country', 'schengen_india', 'canada_eta_mx', 'schengen_latam', 'turkey_id_de', 'egypt_visa_de', 'thailand_de', 'egypt_visa_ru', 'uae_ru', 'japan_visa_india', 'vietnam_visa_india', 'us_visa', 'uk_visa_india', 'dubai_visa_india', 'thailand_india', 'visa_free_ru', 'visa_fees', 'visa_appointments', 'visa_free_tr', 'id_card_travel', 'schengen_documents', 'ees', 'etias', 'uk_eta', 'esta', 'greek_islands_visa', ...WTG_IDS];
 /** Ülke listesi gösteren rehberler: listeyi canlı vize verisinden üretir (elle güncellemek gerekmez). */
 export type GuideListGroup = 'id' | 'free' | 'voa' | 'evisa' | 'eta';
 
 const SCHENGEN = ['AT', 'BE', 'BG', 'HR', 'CZ', 'DK', 'EE', 'FI', 'FR', 'DE', 'GR', 'HU', 'IS', 'IT', 'LV', 'LI', 'LT', 'LU', 'MT', 'NL', 'NO', 'PL', 'PT', 'RO', 'SK', 'SI', 'ES', 'SE', 'CH', 'CY'];
 
 export const GUIDE_META: Record<GuideId, { checked: string; icon: string; countries: string[]; sources: { label: string; url: string }[]; list?: { passport: string; byLang?: Record<string, string>; groups: GuideListGroup[] }; langs?: string[]; passports?: string[] }> = {
+  passport_ranking: {
+    checked: '2026-11-20',
+    icon: 'passport',
+    countries: [],
+    sources: [
+      { label: 'Passport Index (March 2026)', url: 'https://www.passportindex.org/' },
+      { label: 'Vizamigo: how we verify information', url: 'https://www.vizamigo.com/en/info/standards' }
+    ]
+  },
   festival_calendar: {
     checked: '2026-11-19',
     icon: 'cal',
@@ -412,6 +422,7 @@ export function guideGroups(id: GuideId, lang = 'tr'): Record<GuideListGroup, [s
 const fill = (t: string, n: Record<string, number>) => t.replace(/\{(free|id|voa|evisa|eta|easy)\}/g, (_, k) => String(n[k] ?? ''));
 
 export const getGuide = (id: GuideId, lang: string): GuideText => {
+  if (id === 'passport_ranking') return buildPassportRanking(lang) as GuideText;
   if (id === 'festival_calendar') return buildFestivalCalendar(lang) as GuideText;
   if (isWtgId(id)) return buildWhereToGo(lang, wtgMonth(id)) as GuideText;
   const g = (ALL[lang] || ALL.en)[id] || ALL.en[id];
