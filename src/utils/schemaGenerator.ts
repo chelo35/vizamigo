@@ -579,6 +579,9 @@ export function generatePortalJsonLd(language: SupportedLanguage): object {
  * Dynamically imports countrySchemaGenerator so heavy itineraries and encyclopedias
  * are never included in the initial entry bundle!
  */
+// Sayfanın ilk açıldığı adres: derlemede yazılmış şema yalnız bu adreste geçerlidir
+const INITIAL_PATH = typeof location !== 'undefined' ? location.pathname : '';
+
 export function injectCountrySchema(
   countryCode: string | null,
   language: SupportedLanguage,
@@ -592,7 +595,9 @@ export function injectCountrySchema(
   if (!countryCode) {
     // Portal/Root: Fallback schema already exists in static index.html.
     // If a country-specific schema was injected earlier, remove it cleanly.
-    if (scriptEl) {
+    // Açılışta ülke kodu henüz çözülmeden gelen boş çağrı, derlemede yazılmış şemayı silmesin
+    // (silinirse ağır şema modülü gereksiz yere yüklenir); başka sayfaya geçildiyse ya da şema tarayıcıda üretildiyse kaldır.
+    if (scriptEl && (scriptEl.dataset.client === '1' || location.pathname !== INITIAL_PATH)) {
       scriptEl.remove();
     }
     return;
@@ -614,6 +619,7 @@ export function injectCountrySchema(
     scriptEl.dataset.code = countryCode;
     scriptEl.dataset.lang = language;
     scriptEl.dataset.pass = currentPassport;
+    scriptEl.dataset.client = '1';
   }).catch(() => {});
   const idle = () => {
     const w = window as unknown as { requestIdleCallback?: (cb: () => void, o?: { timeout: number }) => void };

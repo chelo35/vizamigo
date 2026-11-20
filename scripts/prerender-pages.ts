@@ -73,6 +73,8 @@ async function main() {
   const { getCountryVisual, getOptimizedImageUrl } = await import('../src/data/countryVisuals');
   const { generateCountryJsonLd } = await import('../src/utils/countrySchemaGenerator');
   const { GUIDE_IDS, GUIDE_META, getGuide, guideGroups, guideIdsFor, sourceLabel } = await import('../src/data/guides');
+  const { BEST_MONTHS, WTG_IDS, isWtgId, wtgMonth, wtgIdFor, wtgCountries, wtgHeads, wtgMonthName, buildWtgFaq } = await import('../src/data/whereToGo');
+  const { festivalWhen } = await import('../src/data/festivalGuide');
 
   const { GEO_DATA } = await import('../src/data/geoData');
   // İspanyolca/Rusça/Almanca otomatik çeviri sözlükleri tarayıcıda sonradan yüklenir; derlemede baştan yükle
@@ -348,6 +350,12 @@ async function main() {
       if (!fg.cards.length) return '';
       return `<section class="vzs-fest"><h2>${esc(FEST_H[lang] || FEST_H.en)}</h2>${fg.cards.map((f) => `<h3>${esc(f.name)}</h3><p><b>${esc(f.when)}${f.place ? ` · ${esc(f.place)}` : ''}</b></p><p>${esc(f.about)} ${esc(f.tip)}</p>`).join('')}</section>`;
     };
+    const WTG_H: Record<string, string> = { tr: 'Gitmek için en iyi aylar', en: 'Best months to go', de: 'Beste Reisemonate', es: 'Mejores meses para ir', ru: 'Лучшие месяцы для поездки' };
+    const wtgHtml = (code: string, lang: string): string => {
+      const ms = BEST_MONTHS[code];
+      if (!ms?.length) return '';
+      return `<p><b>${esc(WTG_H[lang] || WTG_H.en)}:</b> ${ms.map((m) => `<a href="/${lang}/info/${wtgIdFor(m)}">${esc(wtgMonthName(m, lang))}</a>`).join(' · ')}</p>`;
+    };
     const factsHtml = (code: string, lang: string): string => {
       const d = CDATA[lang]?.[code];
       if (!d) return '';
@@ -445,7 +453,7 @@ async function main() {
           const s720 = getOptimizedImageUrl(v.image, { width: 720 });
           return `<section class="vzs-chero"><img src="${s720}" srcset="${s480} 480w, ${s720} 720w" sizes="100vw" alt="${esc([name, v.landmark].filter(Boolean).join(': '))}" fetchpriority="high" /><div class="vzs-wrap vzs-chero-in">${eyebrow(lang, [EYEBROW[lang], region])}${h1(name, meta.h1.replace(name, '').trim())}${cap ? `<p>${esc(capitalName(code, lang, cap))}</p>` : ''}</div></section>`;
         })(),
-        nav: navBlock(lang, `${lead(meta.description)}${briefHtml}${factsHtml(code, lang)}${festHtml(code, lang)}${faqHtml}${ppNav}<p>${homeLink(lang)} · ${tabLinks(lang)}</p>${near.length ? `<h2>${esc(UI[lang].region)}</h2><p>${countryLinks(lang, near)}</p>` : ''}`)
+        nav: navBlock(lang, `${lead(meta.description)}${briefHtml}${factsHtml(code, lang)}${festHtml(code, lang)}${wtgHtml(code, lang)}${faqHtml}${ppNav}<p>${homeLink(lang)} · ${tabLinks(lang)}</p>${near.length ? `<h2>${esc(UI[lang].region)}</h2><p>${countryLinks(lang, near)}</p>` : ''}`)
       }));
       n++;
     };
@@ -482,6 +490,29 @@ async function main() {
         g = { ...g, sections: cal.sections, faq: cal.faq };
         write(path.join('data', 'festival-calendar', `${lang}.json`), JSON.stringify({ sections: cal.sections, faq: cal.faq }));
       }
+      let wtgList = '';
+      if (isWtgId(id)) {
+        const m = wtgMonth(id);
+        const H = wtgHeads(lang, m);
+        const season: Record<string, string> = {};
+        for (const c of Object.keys(BEST_MONTHS)) season[c] = (CDATA[lang]?.[c]?.enc?.tourism?.bestSeasons as string) || '';
+        const codes = wtgCountries(m).filter((c) => season[c]);
+        const countries: [string, string, string][] = codes.map((c) => [c, season[c], (GEO_DATA as Record<string, { capital?: string }>)[c]?.capital ? capitalName(c, 'en', (GEO_DATA as Record<string, { capital?: string }>)[c].capital!) : '']);
+        const fest: string[] = [];
+        for (const [c, list] of Object.entries(FG)) {
+          const names = (CDATA[lang]?.[c]?.enc?.culture?.festivals as string[]) || [];
+          for (const e of list) if (names[e.i] && e.m.includes(m)) fest.push(`${names[e.i]} — ${getCountryName(c, lang)}${e.place ? ` (${e.place})` : ''}: ${festivalWhen(e, lang)}`);
+        }
+        fest.sort((a, b) => a.localeCompare(b, lang));
+        const pass = LANG_PASS[lang as 'en'];
+        const items = getPassportItems(pass);
+        const visaFree = codes.filter((c) => { const it = items.find((x) => x.c === c); return it && (it.cat === 'free' || it.id); });
+        const faq = buildWtgFaq(lang, m, season, fest, visaFree, getCountryName(pass, lang));
+        write(path.join('data', 'where-to-go', lang, `${m}.json`), JSON.stringify({ m, countries, fest, faq }));
+        g = { ...g, sections: [{ h: H.fest, list: fest }], faq };
+        wtgList = `<h2>${esc(H.countries)} (${countries.length})</h2><ul>${countries.map(([c, t]) => `<li><a href="${buildLocalizedPath(lang as never, 'explore', c)}">${esc(getCountryName(c, lang))}</a>: ${esc(t)}</li>`).join('')}</ul>`
+          + `<p><b>${esc(H.months)}:</b> ${WTG_IDS.filter((o) => o !== id).map((o) => `<a href="/${lang}/info/${o}">${esc(wtgMonthName(wtgMonth(o), lang))}</a>`).join(' · ')}</p>`;
+      }
       const gl = GUIDE_META[id].langs || LANGS;
       const meta = GUIDE_META[id];
       const url = `${BASE_URL}/${lang}/info/${id}`;
@@ -502,7 +533,7 @@ async function main() {
       const DAY: Record<string, string> = { tr: 'gün', en: 'days', de: 'Tage', es: 'días', ru: 'дн.' };
       const gr = guideGroups(id, lang);
       const list = gr ? (['id', 'free', 'voa', 'evisa', 'eta'] as const).filter((k) => GUIDE_META[id].list!.groups.includes(k) && gr[k].length).map((k) => `<h2>${esc((GL[lang] || GL.en)[['id', 'free', 'voa', 'evisa', 'eta'].indexOf(k)])} (${gr[k].length})</h2><ul>${gr[k].map(([c, v]) => `<li><a href="${buildLocalizedPath(lang as never, 'explore', c)}">${esc(getCountryName(c, lang))}</a>${/^\d+$/.test(v) ? ` · ${v} ${DAY[lang] || DAY.en}` : ''}</li>`).join('')}</ul>`).join('') : '';
-      const others = guideIdsFor(lang).filter((o) => o !== id).map((o) => `<a href="/${lang}/info/${o}">${esc(getGuide(o, lang).short)}</a>`).join(' · ');
+      const others = guideIdsFor(lang).filter((o) => o !== id && !isWtgId(o)).map((o) => `<a href="/${lang}/info/${o}">${esc(getGuide(o, lang).short)}</a>`).join(' · ');
       write(path.join(lang, 'info', id, 'index.html'), build({
         lang,
         canonical: url,
@@ -511,7 +542,7 @@ async function main() {
         desc: g.metaDesc,
         head: `<script type="application/ld+json">${JSON.stringify(ld).replace(/</g, '\\u003c')}</script>\n    ${PRE.info}`,
         body: eyebrow(lang, ['Vizamigo']) + h1(g.title) + lead(g.answer),
-        nav: navBlock(lang, `${check}${list}${secs}${faq}${src}<p>${others}</p><p>${homeLink(lang)} · ${tabLinks(lang)}</p>`)
+        nav: navBlock(lang, `${check}${list}${wtgList}${secs}${faq}${src}<p>${others}</p><p>${homeLink(lang)} · ${tabLinks(lang)}</p>`)
       }));
       n++;
     }

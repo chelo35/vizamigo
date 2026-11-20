@@ -3,6 +3,7 @@
 // Bilgi değişince: JSON metnini ve `checked` tarihini güncelle, sonra `node scripts/indexnow.mjs`.
 import { getPassportItems } from '../utils/calculator';
 import { buildFestivalCalendar, FESTIVAL_COUNTRIES } from './festivalGuide';
+import { WTG_IDS, buildWhereToGo, isWtgId, wtgMonth, type WtgId } from './whereToGo';
 import tr from './guides/tr.json';
 import en from './guides/en.json';
 import de from './guides/de.json';
@@ -14,13 +15,13 @@ import scDe from './guides/schengen.de.json';
 import scEs from './guides/schengen.es.json';
 import scRu from './guides/schengen.ru.json';
 
-export type GuideId = 'festival_calendar' | 'montenegro_visa' | 'schengen_documents' | 'etias' | 'uk_eta' | 'esta' | 'greek_islands_visa' | 'visa_free_tr' | 'id_card_travel' | 'visa_fees' | 'visa_appointments' | 'visa_free_ru' | 'us_visa' | 'uk_visa_india' | 'dubai_visa_india' | 'thailand_india' | 'schengen_by_country' | 'schengen_india' | 'japan_visa_india' | 'vietnam_visa_india' | 'egypt_visa_ru' | 'uae_ru' | 'turkey_id_de' | 'egypt_visa_de' | 'thailand_de' | 'canada_eta_mx' | 'schengen_latam' | 'ees';
+export type GuideId = 'festival_calendar' | 'montenegro_visa' | 'schengen_documents' | 'etias' | 'uk_eta' | 'esta' | 'greek_islands_visa' | 'visa_free_tr' | 'id_card_travel' | 'visa_fees' | 'visa_appointments' | 'visa_free_ru' | 'us_visa' | 'uk_visa_india' | 'dubai_visa_india' | 'thailand_india' | 'schengen_by_country' | 'schengen_india' | 'japan_visa_india' | 'vietnam_visa_india' | 'egypt_visa_ru' | 'uae_ru' | 'turkey_id_de' | 'egypt_visa_de' | 'thailand_de' | 'canada_eta_mx' | 'schengen_latam' | 'ees' | WtgId;
 export interface GuideSection { h: string; p?: string[]; list?: string[]; table?: { head: string[]; rows: string[][] } }
 export interface ChecklistGroup { id: string; label: string; docs: string[] }
 export interface GuideChecklist { title: string; statusLabel: string; purposeLabel: string; commonTitle: string; common: string[]; statuses: ChecklistGroup[]; purposes: ChecklistGroup[]; note: string; print: string }
 export interface GuideText { title: string; short: string; metaDesc: string; answer: string; sections: GuideSection[]; faq: { q: string; a: string }[]; checklist?: GuideChecklist }
 
-export const GUIDE_IDS: GuideId[] = ['festival_calendar', 'montenegro_visa', 'schengen_by_country', 'schengen_india', 'canada_eta_mx', 'schengen_latam', 'turkey_id_de', 'egypt_visa_de', 'thailand_de', 'egypt_visa_ru', 'uae_ru', 'japan_visa_india', 'vietnam_visa_india', 'us_visa', 'uk_visa_india', 'dubai_visa_india', 'thailand_india', 'visa_free_ru', 'visa_fees', 'visa_appointments', 'visa_free_tr', 'id_card_travel', 'schengen_documents', 'ees', 'etias', 'uk_eta', 'esta', 'greek_islands_visa'];
+export const GUIDE_IDS: GuideId[] = ['festival_calendar', 'montenegro_visa', 'schengen_by_country', 'schengen_india', 'canada_eta_mx', 'schengen_latam', 'turkey_id_de', 'egypt_visa_de', 'thailand_de', 'egypt_visa_ru', 'uae_ru', 'japan_visa_india', 'vietnam_visa_india', 'us_visa', 'uk_visa_india', 'dubai_visa_india', 'thailand_india', 'visa_free_ru', 'visa_fees', 'visa_appointments', 'visa_free_tr', 'id_card_travel', 'schengen_documents', 'ees', 'etias', 'uk_eta', 'esta', 'greek_islands_visa', ...WTG_IDS];
 /** Ülke listesi gösteren rehberler: listeyi canlı vize verisinden üretir (elle güncellemek gerekmez). */
 export type GuideListGroup = 'id' | 'free' | 'voa' | 'evisa' | 'eta';
 
@@ -369,7 +370,20 @@ export const GUIDE_META: Record<GuideId, { checked: string; icon: string; countr
     sources: [
       { label: 'Greek Consulate General in Istanbul / authorised ferry agencies', url: 'https://www.mfa.gr/missionsabroad/en/turkey-en/' }
     ]
-  }
+  },
+  // "Bu ay nereye gidilir?" (12 ay): ülke sayfalarıyla otomatik bağlanmaz (countries boş), aylar kendi aralarında bağlanır
+  ...(Object.fromEntries(
+    WTG_IDS.map((id) => [id, {
+      checked: '2026-11-19',
+      icon: 'cal',
+      countries: [] as string[],
+      sources: [
+        { label: 'UK FCDO: Foreign travel advice', url: 'https://www.gov.uk/foreign-travel-advice' },
+        { label: 'Government of Canada: Travel advice and advisories', url: 'https://travel.gc.ca/travelling/advisories' },
+        { label: 'UNESCO: Intangible Cultural Heritage lists', url: 'https://ich.unesco.org/en/lists' }
+      ]
+    }])
+  ) as Record<WtgId, { checked: string; icon: string; countries: string[]; sources: { label: string; url: string }[] }>)
 };
 
 const ALL: Record<string, Record<GuideId, GuideText>> = {
@@ -399,6 +413,7 @@ const fill = (t: string, n: Record<string, number>) => t.replace(/\{(free|id|voa
 
 export const getGuide = (id: GuideId, lang: string): GuideText => {
   if (id === 'festival_calendar') return buildFestivalCalendar(lang) as GuideText;
+  if (isWtgId(id)) return buildWhereToGo(lang, wtgMonth(id)) as GuideText;
   const g = (ALL[lang] || ALL.en)[id] || ALL.en[id];
   const gr = guideGroups(id, lang);
   if (!gr) return g;

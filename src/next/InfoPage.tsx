@@ -3,6 +3,7 @@ import { useI18n } from '../data/i18n';
 import { Chip, Chips, Page } from './ui';
 import { Icon } from './Icon';
 import { guideIdsFor, getGuide, isGuideId } from '../data/guides';
+import { isWtgId, wtgIdFor } from '../data/whereToGo';
 import { GuideArticle } from './GuideArticle';
 
 // Yasal sayfalar ayrı yüklenir; rehber sayfaları bu kodu (ve fotoğraf kaynak listesini) indirmez.
@@ -11,7 +12,7 @@ const LegalInfoModal = lazy(() => import('../components/LegalInfoModal').then((m
 export function useInfoGroups() {
   const { l, language } = useI18n();
   return [
-    { id: 'guides', icon: 'passport', label: l('Güncel rehberler', 'Travel rules 2026', 'Reiseregeln 2026', 'Normas de viaje 2026', 'Правила въезда 2026'), items: guideIdsFor(language).map((g) => [g, getGuide(g, language).short]) },
+    { id: 'guides', icon: 'passport', label: l('Güncel rehberler', 'Travel rules 2026', 'Reiseregeln 2026', 'Normas de viaje 2026', 'Правила въезда 2026'), items: [wtgIdFor(new Date().getMonth() + 1), ...guideIdsFor(language).filter((g) => !isWtgId(g))].map((g) => [g, getGuide(g, language).short]) },
     { id: 'legal', icon: 'shield', label: l('Yasal', 'Legal', 'Rechtliches', 'Legal', 'Правовое'), items: [['terms', l('Kullanım koşulları', 'Terms', 'Nutzungsbedingungen', 'Términos', 'Условия')], ['privacy', l('Gizlilik', 'Privacy', 'Datenschutz', 'Privacidad', 'Конфиденциальность')], ['disclaimer', l('Sorumluluk reddi', 'Disclaimer', 'Haftung', 'Descargo', 'Отказ')], ['kvkk_gdpr', 'KVKK & GDPR'], ['standards', l('Kaynaklar', 'Sources', 'Quellen', 'Fuentes', 'Источники')], ['attributions', l('Görseller', 'Photos', 'Bilder', 'Fotos', 'Фото')]] },
     { id: 'help', icon: 'sos', label: l('Destek', 'Support', 'Hilfe', 'Ayuda', 'Помощь'), items: [['appeals', l('Vize reddi itirazı', 'Visa appeals', 'Widerspruch', 'Apelación', 'Апелляция')], ['passport_lost', l('Pasaport kaybı', 'Lost passport', 'Passverlust', 'Pasaporte perdido', 'Утеря')], ['crisis', l('Kriz masası', 'Crisis desk', 'Krisenstab', 'Crisis', 'Кризис')], ['transit', l('Transit', 'Transit', 'Transit', 'Tránsito', 'Транзит')]] },
     { id: 'partners', icon: 'people', label: l('İş ortakları', 'Partners', 'Partner', 'Socios', 'Партнёры'), items: [['partners', l('Acenteler', 'Agencies', 'Agenturen', 'Agencias', 'Агентства')], ['airlines', l('Havayolları', 'Airlines', 'Airlines', 'Aerolíneas', 'Авиа')], ['insurance', l('Sigorta', 'Insurance', 'Versicherung', 'Seguro', 'Страховка')], ['community', l('Topluluk', 'Community', 'Community', 'Comunidad', 'Сообщество')], ['api', l('Kurumsal API', 'Business API', 'Business-API', 'API empresas', 'API')]] },

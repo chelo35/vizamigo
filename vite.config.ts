@@ -119,6 +119,10 @@ export default defineConfig(() => {
             if (id.includes('countryGeography.ts') || id.includes('geoData.ts')) {
               return 'data-geography';
             }
+            // küçük ortak modüller: ağır ülke verisi paketine düşerse ülke sayfası 1,7 MB'ı boşuna indirir
+            if (id.includes('officialAdvisories') || id.includes('countryFixHook.ts')) {
+              return 'data-advisories';
+            }
             if (id.includes('countryInsights.ts') || id.includes('countryTravelIntelligence.ts')) {
               return 'data-insights';
             }

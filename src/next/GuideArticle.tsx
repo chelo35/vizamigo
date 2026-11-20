@@ -7,7 +7,9 @@ import { loadStoredPassport } from '../utils/storage';
 import { buildLocalizedPath } from '../utils/seoRouter';
 import { Flag } from './ui';
 import type { SupportedLanguage } from '../i18n/types';
-import { tpLinks } from '../data/tpPartners';
+import { tpLinks, stay22 } from '../data/tpPartners';
+import { LANG_PASS } from '../data/passportPages';
+import { WTG_IDS, isWtgId, wtgMonth, wtgHeads, wtgMonthName, type WtgData } from '../data/whereToGo';
 import { AdTag, Btn, Chip, Chips, List, Row } from './ui';
 import { PartnerLogo } from './PartnerLogo';
 
@@ -56,9 +58,19 @@ export const GuideArticle: React.FC<{ id: GuideId }> = ({ id }) => {
     fetch(`/data/festival-calendar/${language}.json`).then((r) => (r.ok ? r.json() : null)).then((d) => { if (!off && d) setCal({ lang: language, ...d }); }).catch(() => {});
     return () => { off = true; };
   }, [id, language]);
-  const g = id === 'festival_calendar' && cal && cal.lang === language ? { ...g0, sections: cal.sections, faq: cal.faq } : g0;
+  // "bu ay nereye gidilir": ülke listesi, festivaller ve SSS derlemede üretilen dosyadan
+  const [wtg, setWtg] = React.useState<(WtgData & { lang: string; id: string }) | null>(null);
+  React.useEffect(() => {
+    if (!isWtgId(id)) return;
+    let off = false;
+    fetch(`/data/where-to-go/${language}/${wtgMonth(id)}.json`).then((r) => (r.ok ? r.json() : null)).then((d) => { if (!off && d) setWtg({ ...d, lang: language, id }); }).catch(() => {});
+    return () => { off = true; };
+  }, [id, language]);
+  const w = wtg && wtg.lang === language && wtg.id === id ? wtg : null;
+  const g1 = id === 'festival_calendar' && cal && cal.lang === language ? { ...g0, sections: cal.sections, faq: cal.faq } : g0;
+  const g = isWtgId(id) && w ? { ...g1, sections: w.fest.length ? [{ h: wtgHeads(language, wtgMonth(id)).fest, list: w.fest }] : [], faq: w.faq } : g1;
   const meta = GUIDE_META[id];
-  const plan = PLAN[id] || PLAN_DEFAULT;
+  const plan = isWtgId(id) ? { place: '', picks: ['flights', 'insurance', 'esim'] as Pick[] } : PLAN[id] || PLAN_DEFAULT;
   const checked = new Date(meta.checked).toLocaleDateString(language, { day: 'numeric', month: 'long', year: 'numeric' });
   return (
     <div className="vz-guide">
@@ -69,7 +81,8 @@ export const GuideArticle: React.FC<{ id: GuideId }> = ({ id }) => {
           <span className="vz-muted" style={{ fontSize: 12.5 }}>{l('Son kontrol', 'Last checked', 'Zuletzt geprüft', 'Última revisión', 'Проверено')}: {checked}</span>
         </div>
       </section>
-      <MyPassportBox id={id} />
+      {!isWtgId(id) && <MyPassportBox id={id} />}
+      {isWtgId(id) && <WtgCountries id={id} data={w} />}
       {g.checklist && <Checklist c={g.checklist} />}
       {meta.list && <CountryGroups id={id} />}
       {g.sections.map((s) => (
@@ -243,3 +256,61 @@ const MyPassportBox: React.FC<{ id: GuideId }> = ({ id }) => {
   );
 };
 
+
+/** Bu ay mevsimindeki ülkeler: seçili pasaporta göre vizesiz / kolay vize / vize gerekli gruplarında, sezon notu ve otel bağlantısıyla. */
+const WtgCountries: React.FC<{ id: GuideId; data: WtgData | null }> = ({ id, data }) => {
+  const { l, language } = useI18n();
+  const m = wtgMonth(id);
+  const H = wtgHeads(language, m);
+  const [pass] = useState(() => loadStoredPassport() || LANG_PASS[language as SupportedLanguage] || 'TR');
+  const lang = language as SupportedLanguage;
+  const months = (
+    <nav className="vz-wtg-months" aria-label={H.months}>
+      {WTG_IDS.map((o) => (o === id ? <b key={o}>{wtgMonthName(wtgMonth(o), language)}</b> : <a key={o} href={`/${language}/info/${o}`}>{wtgMonthName(wtgMonth(o), language)}</a>))}
+    </nav>
+  );
+  if (!data) return <section>{months}<p className="vz-muted">…</p></section>;
+  const items = getPassportItems(pass);
+  const P = getCountryName(pass, language);
+  const groups: { k: string; title: string; list: WtgData['countries'] }[] = [
+    { k: 'free', title: l('Vizesiz ya da kimlikle', 'Visa-free or ID card', 'Visumfrei oder mit Ausweis', 'Sin visado o con DNI', 'Без визы или по ID'), list: [] },
+    { k: 'easy', title: l('Kolay vize: kapıda, e-vize ya da ETA', 'Easy: visa on arrival, eVisa or ETA', 'Einfach: Visum bei Ankunft, eVisum oder ETA', 'Fácil: visado a la llegada, eVisa o ETA', 'Просто: виза по прилёте, e-Visa или ETA'), list: [] },
+    { k: 'visa', title: l('Önceden vize gerekli', 'Visa required in advance', 'Visum vorab nötig', 'Visado previo necesario', 'Нужна виза заранее'), list: [] }
+  ];
+  for (const row of data.countries) {
+    const it = items.find((x) => x.c === row[0]);
+    const g = row[0] === pass || (it && (it.cat === 'free' || it.id)) ? 0 : it && (it.cat === 'voa' || it.cat === 'evisa' || it.cat === 'eta') ? 1 : 2;
+    groups[g].list.push(row);
+  }
+  return (
+    <>
+      <section>
+        {months}
+        <h2>{H.countries} ({data.countries.length})</h2>
+        <p className="vz-muted">{l(`Vize durumu ${P} pasaportuna göre (profilinden değiştirebilirsin).`, `Visa status shown for a ${P} passport (change it in your profile).`, `Visastatus für einen Pass aus ${P} (im Profil änderbar).`, `Visado según pasaporte de ${P} (cámbialo en tu perfil).`, `Визовый режим для паспорта: ${P} (можно сменить в профиле).`)}</p>
+      </section>
+      {groups.map((gr) =>
+        gr.list.length ? (
+          <section key={gr.k}>
+            <h3>{gr.title} ({gr.list.length})</h3>
+            <ul className="vz-wtg">
+              {gr.list.map(([c, season, cap]) => {
+                const it = items.find((x) => x.c === c);
+                return (
+                  <li key={c}>
+                    <div className="vz-wtg-h">
+                      <a href={buildLocalizedPath(lang, 'explore', c)}><Flag code={c} size="sm" /> <b>{getCountryName(c, language)}</b></a>
+                      {c !== pass && it && <em>{getCategoryBadgeLabel(it, language)}</em>}
+                    </div>
+                    <p>{season}</p>
+                    <a className="vz-fest-hotel" href={stay22('booking', { address: `${cap ? `${cap}, ` : ''}${getCountryName(c, 'en')}`, campaign: `wtg_${m}_${c.toLowerCase()}` })} target="_blank" rel="noopener noreferrer sponsored">{l('Otellere bak', 'Browse hotels', 'Hotels ansehen', 'Ver hoteles', 'Отели')}{cap ? ` · ${cap}` : ''}</a>
+                  </li>
+                );
+              })}
+            </ul>
+          </section>
+        ) : null
+      )}
+    </>
+  );
+};
