@@ -262,6 +262,42 @@
           "TR"
         ]
       }
+    ],
+    "PG": [
+      {
+        "q": "Papua Yeni Gine vize istiyor mu?",
+        "a": "Evet. Umuma mahsus pasaportlu Türk vatandaşları Papua Yeni Gine'ye vizeye tabidir ve Türkiye varışta vize verilen ülkeler listesinde yer almıyor. Vize seyahatten önce Papua Yeni Gine Göçmenlik İdaresi'nin (ICSA) resmî e-vize portalı evisa.ica.gov.pg üzerinden alınır; varıştan önce çevrim içi Dijital Varış Kartı da doldurulmalıdır.",
+        "u": "https://icsa.gov.pg/travel/visa-on-arrival",
+        "h": "Papua Yeni Gine Göçmenlik ve Vatandaşlık İdaresi (ICSA)",
+        "d": "2026-11-20",
+        "p": [
+          "TR"
+        ]
+      }
+    ],
+    "MG": [
+      {
+        "q": "Madagaskar vize istiyor mu?",
+        "a": "Evet, ancak umuma mahsus pasaportlu Türk vatandaşları vizelerini Madagaskar'a girişte sınır kapısında alabilir (kapıda vize). Yani seyahatten önce konsolosluğa başvurmak zorunlu değildir.",
+        "u": "https://www.mfa.gov.tr/turk-vatandaslarinin-tabi-oldugu-vize-uygulamalari.tr.mfa",
+        "h": "T.C. Dışişleri Bakanlığı: Türk vatandaşlarının tabi olduğu vize uygulamaları",
+        "d": "2026-11-20",
+        "p": [
+          "TR"
+        ]
+      }
+    ],
+    "VU": [
+      {
+        "q": "Vanuatu vize istiyor mu?",
+        "a": "Hayır. Dışişleri Bakanlığı'na göre umuma mahsus pasaportlu Türk vatandaşları Vanuatu'ya 30 güne kadar vizesiz gidebilir.",
+        "u": "https://www.mfa.gov.tr/turk-vatandaslarinin-tabi-oldugu-vize-uygulamalari.tr.mfa",
+        "h": "T.C. Dışişleri Bakanlığı: Türk vatandaşlarının tabi olduğu vize uygulamaları",
+        "d": "2026-11-20",
+        "p": [
+          "TR"
+        ]
+      }
     ]
   },
   "en": {
@@ -378,6 +414,13 @@
         "u": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa",
         "h": "Republic of Türkiye Ministry of Foreign Affairs: Visa information for foreigners",
         "d": "2026-11-15"
+      },
+      {
+        "q": "Do I need a visa for Turkey from the UK?",
+        "a": "Not with a British citizen passport: you can visit Türkiye visa-free for up to 90 days in any 180-day period for tourism or business. Other types of British passport need a visa, and study, work or medical stays need the relevant visa.",
+        "u": "https://www.gov.uk/foreign-travel-advice/turkey/entry-requirements",
+        "h": "GOV.UK: Turkey travel advice – entry requirements",
+        "d": "2026-11-20"
       }
     ],
     "GB": [
@@ -414,6 +457,22 @@
         "p": [
           "US"
         ]
+      },
+      {
+        "q": "Do I need a visa for Vietnam from the UK?",
+        "a": "No. British passport holders can visit Vietnam visa-free for up to 45 days for tourism or business; check that your entry stamp shows the right leave-by date. For a longer stay, get an e-visa (up to 90 days, multiple entry) or another visa before you travel.",
+        "u": "https://www.gov.uk/foreign-travel-advice/vietnam/entry-requirements",
+        "h": "GOV.UK: Vietnam travel advice – entry requirements",
+        "d": "2026-11-20"
+      }
+    ],
+    "EG": [
+      {
+        "q": "Do I need a visa for Egypt from the UK?",
+        "a": "Yes, British passport holders normally need a visa: apply for an e-visa in advance (tourist e-visas are valid for up to 3 months) or buy a visa on arrival at approved airports for US$30 in cash. Exception: flying into Sharm El-Sheikh for under 15 days and staying in the Sharm El Sheikh, Dahab, Nuweiba or Taba resorts only needs a free entry stamp.",
+        "u": "https://www.gov.uk/foreign-travel-advice/egypt/entry-requirements",
+        "h": "GOV.UK: Egypt travel advice – entry requirements",
+        "d": "2026-11-20"
       }
     ]
   },
@@ -633,6 +692,42 @@
           "DE"
         ]
       }
+    ],
+    "AE": [
+      {
+        "q": "Braucht man für Dubai ein Visum?",
+        "a": "Nein. Deutsche brauchen für touristische, geschäftliche (ohne Arbeitsaufnahme) oder Besuchsaufenthalte in den VAE bis 90 Tage innerhalb von 180 Tagen kein Visum, wenn sie einen gültigen biometrischen Reisepass haben; Arbeiten ist dabei nicht erlaubt. Achtung: Das Auswärtige Amt rät derzeit von nicht notwendigen Reisen in die VAE ab.",
+        "u": "https://www.auswaertiges-amt.de/de/reiseundsicherheit/vereinigtearabischeemiratesicherheit-202332",
+        "h": "Auswärtiges Amt: Vereinigte Arabische Emirate – Reise- und Sicherheitshinweise",
+        "d": "2026-11-20",
+        "p": [
+          "DE"
+        ]
+      }
+    ],
+    "TZ": [
+      {
+        "q": "Visum Tansania online beantragen: Brauchen Deutsche ein Visum?",
+        "a": "Ja. Empfohlen wird, das Visum vorab als E-Visum zu beantragen und zu bezahlen; die Bearbeitung dauert mindestens zehn Arbeitstage. Für touristische Reisen gibt es auch ein Visum bei Ankunft, das aber nicht garantiert ist; es kostet derzeit 50 USD (auch für Kinder), zahlbar per Kreditkarte oder bar in USD.",
+        "u": "https://www.auswaertiges-amt.de/de/208662",
+        "h": "Auswärtiges Amt: Tansania – Einreise und Zoll",
+        "d": "2026-11-20",
+        "p": [
+          "DE"
+        ]
+      }
+    ],
+    "KE": [
+      {
+        "q": "Visum Kenia beantragen: Brauchen Deutsche ein Visum oder eine eTA?",
+        "a": "Ein Visum ist nicht mehr nötig, aber vor der Einreise braucht jeder eine elektronische Einreisegenehmigung (eTA), online frühestens drei Monate und spätestens 72 Stunden vor Abreise zu beantragen. Seit Anfang Oktober 2026 muss dabei zusätzlich eine kostenpflichtige kenianische Reisekrankenversicherung abgeschlossen werden; andere Versicherungen werden nicht akzeptiert.",
+        "u": "https://www.auswaertiges-amt.de/de/208058",
+        "h": "Auswärtiges Amt: Kenia – Einreise und Zoll",
+        "d": "2026-11-20",
+        "p": [
+          "DE"
+        ]
+      }
     ]
   },
   "es": {
@@ -770,6 +865,13 @@
           "MX"
         ],
         "d": "2026-11-18"
+      },
+      {
+        "q": "¿Qué requisitos piden para viajar a Belice desde Colombia?",
+        "a": "Los colombianos no necesitan visa para visitar Belice hasta 30 días. Si quieres quedarte más tiempo, debes pedir una extensión (Visitor's Permit Extension) en una oficina de Inmigración en Belice.",
+        "u": "https://immigration.gov.bz/visa/visa-who-qualify/",
+        "h": "Departamento de Inmigración de Belice",
+        "d": "2026-11-20"
       }
     ],
     "MX": [
@@ -955,6 +1057,30 @@
         "u": "https://evisa.imigrasi.go.id/",
         "h": "Официальный портал e-Visa Индонезии (Imigrasi)",
         "d": "2026-11-19",
+        "p": [
+          "RU"
+        ]
+      }
+    ],
+    "AR": [
+      {
+        "q": "Нужна ли виза в Аргентину для россиян?",
+        "a": "Нет. По соглашению о безвизовых поездках (действует с 2009 года) граждане России с действительным общегражданским паспортом могут находиться в Аргентине без визы до 90 дней в каждом 180-дневном периоде. Для более длительного пребывания, работы или коммерческой деятельности нужна виза.",
+        "u": "https://www.kdmid.ru/docs/argentina/information-about-the-country/",
+        "h": "Консульский департамент МИД России: Аргентина",
+        "d": "2026-11-20",
+        "p": [
+          "RU"
+        ]
+      }
+    ],
+    "PG": [
+      {
+        "q": "Нужна ли виза в Папуа — Новую Гвинею для россиян?",
+        "a": "Да. Россия не входит в список стран, гражданам которых виза выдаётся по прибытии, поэтому визу нужно оформить до поездки через официальный портал электронных виз evisa.ica.gov.pg. Перед прилётом также заполняется онлайн-карта прибытия (Digital Arrival Card).",
+        "u": "https://icsa.gov.pg/travel/visa-on-arrival",
+        "h": "Служба иммиграции Папуа — Новой Гвинеи (ICSA)",
+        "d": "2026-11-20",
         "p": [
           "RU"
         ]
