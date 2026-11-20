@@ -1,3 +1,4 @@
+import { enArticle } from './passportBrief';
 import { LANG_PASS } from '../data/passportPages';
 import { ruIn, ruOf } from '../data/ruCases';
 /**
@@ -448,7 +449,7 @@ function getSerpAnswer(
     default: {
       const short = free ? `Visa-Free${days ? ` ${days} Days` : ''}` : cat === 'voa' ? 'Visa on Arrival' : cat === 'evisa' ? 'eVisa Required' : cat === 'eta' ? `${eta} Required` : 'Visa Required';
       const dem = EN_DEMONYM[pass] ? `${EN_DEMONYM[pass]} Citizens` : `${P} Passport`;
-      const long = free ? `no visa needed with a ${P} passport${days ? `, stay up to ${days} days` : ''}`
+      const long = free ? `no visa needed with ${enArticle(P)} ${P} passport${days ? `, stay up to ${days} days` : ''}`
         : cat === 'voa' ? `${P} passport holders get a visa on arrival${days ? ` (${days} days)` : ''}`
         : cat === 'evisa' ? `${P} passport holders must get an eVisa online before travel`
         : cat === 'eta' ? `${P} passport holders need an electronic travel authorisation (${eta}) before travel`

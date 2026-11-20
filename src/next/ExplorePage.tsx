@@ -1,3 +1,4 @@
+import { enArticle } from '../utils/passportBrief';
 import React, { lazy, Suspense, useEffect, useMemo, useState } from 'react';
 import { useI18n } from '../data/i18n';
 import { LiveStrip, loadDestination } from '../components/redesign/LiveStrip';
@@ -213,7 +214,7 @@ export const ExplorePage: React.FC<ExploreProps> = (p) => {
           <PassportCover code={p.currentPassport} onClick={p.onOpenPassport} />
           <div className="rd-pass-info">
             <span className="vz-eyebrow">{l('Pasaportum', 'My passport', 'Mein Pass', 'Mi pasaporte', 'Мой паспорт')}</span>
-            <h2>{l(`${passName} pasaportuyla dünya`, `The world with a ${passName} passport`, `Die Welt mit Pass: ${passName}`, `El mundo con pasaporte de ${passName}`, `Мир с паспортом: ${passName}`)}</h2>
+            <h2>{l(`${passName} pasaportuyla dünya`, `The world with ${enArticle(passName)} ${passName} passport`, `Die Welt mit Pass: ${passName}`, `El mundo con pasaporte de ${passName}`, `Мир с паспортом: ${passName}`)}</h2>
             <p className="rd-sub">{l('Kapağa dokunarak pasaportunu değiştir; bütün sayfalar yeniden hesaplanır.', 'Tap the cover to change passport; every page recalculates.', 'Tippe auf den Pass, um ihn zu wechseln.', 'Toca la portada para cambiar de pasaporte.', 'Нажмите на обложку, чтобы сменить паспорт.')}</p>
             <div className="rd-bars">
               <div className="rd-bar"><span>{l('Vizesiz / kimlikle', 'Visa-free / ID', 'Visumfrei / Ausweis', 'Sin visado / DNI', 'Без визы')}</span><div className="rd-tr"><div className="rd-fl" style={{ width: pct(counts.free) }} /></div><b>{counts.free}</b></div>

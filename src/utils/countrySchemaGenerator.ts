@@ -60,6 +60,7 @@ export function generateCountryJsonLd({
     item.id,
     language
   );
+  const passportFaq = getPassportFaq(code, currentPassport, language);
   const voiceQuestion = getMobileVoiceQuestion(countryName, passportName, language, currentPassport);
 
   // Cross currency calculations (USD, EUR, TRY, GBP)
@@ -137,57 +138,8 @@ export function generateCountryJsonLd({
           },
           {
             '@type': 'PropertyValue',
-            name: 'Mobile Internet Speed',
-            value: `${insights.internet.mobileSpeedMbps} Mbps`,
-            unitText: 'Mbps'
-          },
-          {
-            '@type': 'PropertyValue',
-            name: 'Broadband Internet Speed',
-            value: `${insights.internet.broadbandSpeedMbps} Mbps`,
-            unitText: 'Mbps'
-          },
-          {
-            '@type': 'PropertyValue',
-            name: 'eSIM Availability',
-            value: insights.internet.esimAvailability || 'Local SIM Only'
-          },
-          {
-            '@type': 'PropertyValue',
-            name: 'Safety Score',
-            value: `${insights.safety.safetyScore}`,
-            minValue: '0',
-            maxValue: '100'
-          },
-          {
-            '@type': 'PropertyValue',
-            name: 'Cross Currency USD',
-            value: `1 USD = ${rate1Usd} ${destCurrency}`
-          },
-          {
-            '@type': 'PropertyValue',
-            name: 'Cross Currency EUR',
-            value: `1 EUR = ${rate1Eur} ${destCurrency}`
-          },
-          {
-            '@type': 'PropertyValue',
-            name: 'Cross Currency TRY',
-            value: `1 TRY = ${rate1Try} ${destCurrency}`
-          },
-          {
-            '@type': 'PropertyValue',
-            name: 'Cross Currency GBP',
-            value: `1 GBP = ${rate1Gbp} ${destCurrency}`
-          },
-          {
-            '@type': 'PropertyValue',
             name: 'Capital City',
             value: geography.capital || geo?.capital || ''
-          },
-          {
-            '@type': 'PropertyValue',
-            name: 'Main Airport IATA Hub',
-            value: geo?.mainHub || ''
           }
         ]
       },
@@ -209,29 +161,6 @@ export function generateCountryJsonLd({
           itemListOrder: 'https://schema.org/ItemListOrderAscending',
           numberOfItems: itineraryListElements.length,
           itemListElement: itineraryListElements
-        },
-        additionalProperty: [
-          {
-            '@type': 'PropertyValue',
-            name: 'Visa Validity Period',
-            value: stayDuration
-          },
-          {
-            '@type': 'PropertyValue',
-            name: 'Destination Currency Matrix',
-            value: `1 USD = ${rate1Usd} ${destCurrency} | 1 EUR = ${rate1Eur} ${destCurrency} | 1 TRY = ${rate1Try} ${destCurrency}`
-          },
-          {
-            '@type': 'PropertyValue',
-            name: 'Local Connectivity Speed',
-            value: `${insights.internet.mobileSpeedMbps} Mbps Mobile / ${insights.internet.broadbandSpeedMbps} Mbps Broadband`
-          }
-        ],
-        offers: {
-          '@type': 'Offer',
-          price: '0',
-          priceCurrency: 'USD',
-          category: 'Travel Guide'
         }
       },
 
@@ -241,88 +170,11 @@ export function generateCountryJsonLd({
         '@id': faqId,
         inLanguage: language,
         mainEntity: [
-          {
-            '@type': 'Question',
-            name: voiceQuestion,
-            acceptedAnswer: {
-              '@type': 'Answer',
-              text: directAnswerText
-            }
-          },
-          {
-            '@type': 'Question',
-            name: language === 'tr'
-              ? `${countryName} Para Birimi ve Güncel Döviz Kurları (USD/EUR/GBP) Nedir?`
-              : language === 'de'
-              ? `Welche Währung und Wechselkurse (USD/EUR/GBP) gelten in ${countryName}?`
-              : language === 'es'
-              ? `¿Cuál es la moneda y el tipo de cambio (USD/EUR/GBP) en ${countryName}?`
-              : language === 'ru'
-              ? `Какая валюта и курсы обмена (USD/EUR/GBP) ${ruIn(countryName, 'loc')}?`
-              : `What is the currency and exchange rate (USD/EUR/GBP) in ${countryName}?`,
-            acceptedAnswer: {
-              '@type': 'Answer',
-              text: `${countryName} (${currencyLabel(destCurrency, language, geography.currencyName)}, ${destCurrency} ${geography.currencySymbol}): 1 USD = ${rate1Usd} ${destCurrency}, 1 EUR = ${rate1Eur} ${destCurrency}, 1 GBP = ${rate1Gbp} ${destCurrency}.`
-            }
-          },
-          {
-            '@type': 'Question',
-            name: language === 'tr'
-              ? `${countryName} Priz Tipi, Voltaj ve Elektrik Standartları Nelerdir?`
-              : language === 'de'
-              ? `Welche Steckertypen und Netzspannung werden in ${countryName} verwendet?`
-              : language === 'es'
-              ? `¿Qué tipo de enchufe y voltaje se utiliza en ${countryName}?`
-              : language === 'ru'
-              ? `Какие типы розеток и напряжение электросети ${ruIn(countryName, 'loc')}?`
-              : `What plug type and electrical voltage are used in ${countryName}?`,
-            acceptedAnswer: {
-              '@type': 'Answer',
-              text: (language === 'tr' ? `${countryName} elektrik standartları: ${geography.plugTypes}. Seyahat öncesi adaptör ihtiyacını kontrol et.` : language === 'de' ? `Stromstandard in ${countryName}: ${geography.plugTypes}. Prüfe vor der Reise, ob du einen Reiseadapter brauchst.` : language === 'es' ? `Estándar eléctrico en ${countryName}: ${geography.plugTypes}. Comprueba antes de viajar si necesitas un adaptador.` : language === 'ru' ? `Электросеть в стране ${countryName}: ${geography.plugTypes}. Перед поездкой проверьте, нужен ли переходник.` : `Electrical standards in ${countryName}: ${geography.plugTypes}. Check whether you need a travel adapter before you go.`)
-            }
-          },
-          {
-            '@type': 'Question',
-            name: language === 'tr'
-              ? `${countryName} Seyahati İçin Pasaport Geçerlilik Süresi Ne Kadar Olmalıdır?`
-              : language === 'de'
-              ? `Wie lange muss der Reisepass für die Einreise nach ${countryName} noch gültig sein?`
-              : language === 'es'
-              ? `¿Cuánta validez de pasaporte se requiere para viajar a ${countryName}?`
-              : language === 'ru'
-              ? `Какой срок действия паспорта требуется для поездки ${ruIn(countryName, 'acc')}?`
-              : `How long must a passport be valid to enter ${countryName}?`,
-            acceptedAnswer: {
-              '@type': 'Answer',
-              text: (language === 'tr' ? `${countryName} için genel öneri: pasaportun seyahat tarihinden itibaren en az 6 ay geçerli olması ve en az 2 boş sayfa. Kesin kural için ülkenin resmî giriş sayfasını kontrol et.` : language === 'de' ? `Allgemeine Empfehlung für ${countryName}: Reisepass mindestens 6 Monate ab Reisedatum gültig und mindestens 2 leere Seiten. Die genaue Regel steht auf der offiziellen Einreiseseite.` : language === 'es' ? `Recomendación general para ${countryName}: pasaporte con al menos 6 meses de validez desde la fecha del viaje y al menos 2 páginas en blanco. Consulta la regla exacta en la web oficial de entrada.` : language === 'ru' ? `Общая рекомендация для страны ${countryName}: паспорт действителен не менее 6 месяцев с даты поездки и минимум 2 чистые страницы. Точное правило уточните на официальном сайте.` : `General advice for ${countryName}: a passport valid for at least 6 months from your travel date and at least 2 blank pages. Check the official entry page for the exact rule.`)
-            }
-          },
-          {
-            '@type': 'Question',
-            name: language === 'tr'
-              ? `${countryName} İnternet Hızı, eSIM ve Önerilen Gezi Rotası Nasıldır?`
-              : language === 'de'
-              ? `Wie schnell ist das Internet in ${countryName} und welche Reiseroute wird empfohlen?`
-              : language === 'es'
-              ? `¿Cuál es la velocidad de internet en ${countryName} y qué ruta de viaje se recomienda?`
-              : language === 'ru'
-              ? `Какая скорость интернета ${ruIn(countryName, 'loc')} и какой маршрут рекомендуется?`
-              : `What is the internet speed in ${countryName} and recommended travel route?`,
-            acceptedAnswer: {
-              '@type': 'Answer',
-              text: (language === 'tr' ? `${countryName} internet hızı: mobil ${insights.internet.mobileSpeedMbps} Mbps, sabit ${insights.internet.broadbandSpeedMbps} Mbps. Önerilen rota (${itinerary.routeName}): ${itinerary.stops.map(s => s.name).join(' → ')}.` : language === 'de' ? `Internet in ${countryName}: mobil ${insights.internet.mobileSpeedMbps} Mbit/s, Festnetz ${insights.internet.broadbandSpeedMbps} Mbit/s. Empfohlene Route (${itinerary.routeName}): ${itinerary.stops.map(s => s.name).join(' → ')}.` : language === 'es' ? `Internet en ${countryName}: ${insights.internet.mobileSpeedMbps} Mbps móvil, ${insights.internet.broadbandSpeedMbps} Mbps fijo. Ruta recomendada (${itinerary.routeName}): ${itinerary.stops.map(s => s.name).join(' → ')}.` : language === 'ru' ? `Интернет (${countryName}): мобильный ${insights.internet.mobileSpeedMbps} Мбит/с, домашний ${insights.internet.broadbandSpeedMbps} Мбит/с. Маршрут (${itinerary.routeName}): ${itinerary.stops.map(s => s.name).join(' → ')}.` : `Internet in ${countryName}: ${insights.internet.mobileSpeedMbps} Mbps mobile, ${insights.internet.broadbandSpeedMbps} Mbps broadband. Suggested route (${itinerary.routeName}): ${itinerary.stops.map(s => s.name).join(' → ')}.`)
-            }
-          },
-          ...getExtraFaq(code, language, currentPassport).map((f) => ({
-            '@type': 'Question',
-            name: f.q,
-            acceptedAnswer: { '@type': 'Answer', text: f.a }
-          })),
-          ...getPassportFaq(code, currentPassport, language).map((f) => ({
-            '@type': 'Question',
-            name: f.q,
-            acceptedAnswer: { '@type': 'Answer', text: f.a }
-          }))
+          // Şablon dolgu sorular (döviz, priz, internet, genel pasaport süresi) kaldırıldı: her sayfada aynı metin
+          // Google'a "ölçekli üretilmiş içerik" sinyali veriyordu. Pasaporta özel sorular varsa genel soru da tekrar edilmez.
+          ...(passportFaq.length ? [] : [{ '@type': 'Question', name: voiceQuestion, acceptedAnswer: { '@type': 'Answer', text: directAnswerText } }]),
+          ...getExtraFaq(code, language, currentPassport).map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+          ...passportFaq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } }))
         ]
       },
 

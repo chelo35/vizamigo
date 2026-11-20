@@ -1,3 +1,4 @@
+import { enArticle } from '../utils/passportBrief';
 /**
  * Vizamigo AI Copilot & Travel Concierge Intelligence Engine
  * Comprehensive multi-lingual natural language processor, destination mapper,
@@ -639,7 +640,7 @@ export async function processAssistantQuery(
       [L5('Balkanlar', 'Balkans', 'Balkan', 'Balcanes', 'Балканы'), ['ME', 'RS', 'AL', 'BA', 'MK']],
       [L5('Yakın', 'Nearby', 'In der Nähe', 'Cerca', 'Рядом'), ['GE', 'AZ', 'UZ']]
     ];
-    const text = `**${L5(`${originName} pasaportuyla kolay gidilen yerler`, `Easy destinations with a ${originName} passport`, `Einfache Ziele mit Pass aus ${originName}`, `Destinos fáciles con pasaporte de ${originName}`, `Простые направления (паспорт: ${originName})`)}**\n` +
+    const text = `**${L5(`${originName} pasaportuyla kolay gidilen yerler`, `Easy destinations with ${enArticle(originName)} ${originName} passport`, `Einfache Ziele mit Pass aus ${originName}`, `Destinos fáciles con pasaporte de ${originName}`, `Простые направления (паспорт: ${originName})`)}**\n` +
       groups.map(([g, cs]) => `• **${g}:** ${cs.map((c) => { const it = passportItems.find((x) => x.c === c); return it && it.cat !== 'visa' ? `${getCountryName(c, activeLang)}${days(it.v) ? ` (${days(it.v)})` : ''}` : ''; }).filter(Boolean).join(', ')}`).filter((x) => !/\*\*: $/.test(x)).join('\n');
     return reply(text, [radarPill, countryPill('GE')], radarPill);
   }

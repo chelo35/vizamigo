@@ -22,6 +22,8 @@ import { advisoryLabel, advisoryAgencyName } from '../data/officialAdvisoryLabel
 import { CONSULAR_EMERGENCY_DATA } from '../data/consularEmergencyData';
 import { LANG_PASS, PASSPORT_PAGES } from '../data/passportPages';
 import { topPlaces } from '../data/topPlaces';
+/** İngilizce belirsiz tanımlık: "an Indian…" değil ülke adıyla "an India passport" → "an" ünlüyle başlayan adlarda. */
+export const enArticle = (w: string): 'a' | 'an' => (/^(?:[AEIO]|Uz)/.test(w) ? 'an' : 'a');
 
 type L5 = [string, string, string, string, string];
 const LI: Record<string, number> = { tr: 0, en: 1, de: 2, es: 3, ru: 4 };
@@ -123,7 +125,7 @@ export function getPassportBrief(code: string, pass: string, lang: string): Pass
 
   const title = pick(lang, [
     `${P} pasaportuyla ${C}: bu pasaporta özel bilgiler`,
-    `${C} with a ${P} passport: what applies to you`,
+    `${C} with ${enArticle(P)} ${P} passport: what applies to you`,
     dem ? `${C} für ${dem}: das gilt für deinen Pass` : `${C} mit Pass aus ${P}: das gilt für dich`,
     `${C} con pasaporte de ${P}: lo que te aplica`,
     `${C} с паспортом: ${P} — что важно знать`
@@ -166,9 +168,9 @@ export function getPassportFaq(code: string, pass: string, lang: string): { q: s
     const it = getPassportItems(pass).find((x) => x.c === code);
     if (it) {
       const lab = getCategoryBadgeLabel(it as never, 'en');
-      const rule = it.cat === 'free' || it.id ? `no visa is needed with a ${P} passport (${lab.toLowerCase()})` : it.cat === 'voa' ? `${P} passport holders can get a visa on arrival` : it.cat === 'evisa' ? `${P} passport holders need an eVisa, applied for online before travel` : it.cat === 'eta' ? `${P} passport holders need an electronic travel authorisation before travel` : `${P} passport holders need a visa from an embassy or consulate before travel`;
+      const rule = it.cat === 'free' || it.id ? `no visa is needed with ${enArticle(P)} ${P} passport (${lab.toLowerCase()})` : it.cat === 'voa' ? `${P} passport holders can get a visa on arrival` : it.cat === 'evisa' ? `${P} passport holders need an eVisa, applied for online before travel` : it.cat === 'eta' ? `${P} passport holders need an electronic travel authorisation before travel` : `${P} passport holders need a visa from an embassy or consulate before travel`;
       for (const pl of topPlaces(code, 2).filter((x) => x !== C)) {
-        out.push({ q: `Do I need a visa to visit ${pl} with a ${P} passport?`, a: `${pl} is in ${C}, so ${C}'s entry rules apply: ${rule}.` });
+        out.push({ q: `Do I need a visa to visit ${pl} with ${enArticle(P)} ${P} passport?`, a: `${pl} is in ${C}, so ${C}'s entry rules apply: ${rule}.` });
       }
     }
   }

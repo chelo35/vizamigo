@@ -91,7 +91,7 @@ async function main() {
     SUBST[l] = makeSubstTranslator(DICTS[l], await buildExtras(l));
   }
   const trOut = (lang: string, html: string) => (SUBST[lang] ? SUBST[lang](html) : html);
-  const { getCountryName, countryToRegion, getRegionName, getCategoryBadgeLabel } = await import('../src/data/passportData');
+  const { getCountryName, countryToRegion, getRegionName, getCategoryBadgeLabel, INFO: VISA_INFO } = await import('../src/data/passportData');
   const { getPassportItems } = await import('../src/utils/calculator');
   const { getCountrySeoMeta } = await import('../src/utils/schemaGenerator');
   const { buildLocalizedPath, buildAbsoluteLocalizedUrl, getHreflangAlternatesForRoute, CORE_SEO_LANGUAGES, BASE_URL } = await import('../src/utils/seoRouter');
@@ -141,7 +141,7 @@ async function main() {
     insurance: ['Seyahat sigortası', 'Travel insurance', 'Reiseversicherung', 'Seguro de viaje', 'Туристическая страховка'],
     community: ['Topluluk', 'Community', 'Community', 'Comunidad', 'Сообщество'],
     api: ['Kurumsal API', 'Business API', 'Business-API', 'API para empresas', 'API для бизнеса'],
-    mission: ['Misyonumuz', 'Our mission', 'Unsere Mission', 'Nuestra misión', 'Наша миссия'],
+    mission: ['Hakkımızda', 'About Vizamigo', 'Über Vizamigo', 'Sobre Vizamigo', 'О Vizamigo'],
     sustainability: ['Sürdürülebilirlik', 'Sustainability', 'Nachhaltigkeit', 'Sostenibilidad', 'Устойчивое развитие'],
     careers: ['Kariyer', 'Careers', 'Karriere', 'Empleo', 'Карьера'],
     press: ['İletişim', 'Contact', 'Kontakt', 'Contacto', 'Контакты']
@@ -424,6 +424,24 @@ async function main() {
       const faqHtml = faqNode?.mainEntity?.length
         ? `<section class="vzs-faq"><h2>${esc(FAQ_TITLE[lang] || FAQ_TITLE.en)}</h2>${faqNode.mainEntity.map((q) => `<h3>${esc(q.name)}</h3><p>${esc(q.acceptedAnswer.text)}</p>`).join('')}</section>`
         : '';
+      // güven satırı: kimin, ne zaman, hangi kaynakla kontrol ettiği (YMYL sayfalarında Google'ın aradığı bilgi)
+      const trustHtml = (() => {
+        const det = (VISA_INFO as Record<string, { d?: string; h?: string }>)[`${pass}-${code}`];
+        const TRM = ['ocak', 'şubat', 'mart', 'nisan', 'mayıs', 'haziran', 'temmuz', 'ağustos', 'eylül', 'ekim', 'kasım', 'aralık'];
+        const mm = det?.d?.trim().match(/^(\p{L}+)\s+(\d{4})$/u);
+        const mi = mm ? TRM.indexOf(mm[1].toLocaleLowerCase('tr')) : -1;
+        const when = mi >= 0 ? new Intl.DateTimeFormat(lang, { month: 'long', year: 'numeric' }).format(new Date(Number(mm![2]), mi, 1)) : new Intl.DateTimeFormat(lang, { month: 'long', year: 'numeric' }).format(new Date(2026, 10, 1));
+        const src = det?.h ? (lang === 'tr' ? det.h : det.h.replace(/\s*\([^)]*\)/g, '').replace(/ ve /g, ' · ').trim()) : '';
+        const T = {
+          tr: ['Vizamigo editörlüğü tarafından kontrol edildi', 'Son kontrol', 'Kaynak', 'Passport Index ve resmî kaynak kontrolleri', 'Bilgileri nasıl doğruluyoruz', 'Hakkımızda'],
+          en: ['Checked by the Vizamigo editorial team', 'Last checked', 'Source', 'Passport Index and official-source checks', 'How we verify information', 'About Vizamigo'],
+          de: ['Geprüft von der Vizamigo-Redaktion', 'Zuletzt geprüft', 'Quelle', 'Passport Index und Prüfung amtlicher Quellen', 'So prüfen wir unsere Angaben', 'Über Vizamigo'],
+          es: ['Revisado por el equipo editorial de Vizamigo', 'Última revisión', 'Fuente', 'Passport Index y revisión de fuentes oficiales', 'Cómo verificamos la información', 'Sobre Vizamigo'],
+          ru: ['Проверено редакцией Vizamigo', 'Последняя проверка', 'Источник', 'Passport Index и проверка официальных источников', 'Как мы проверяем информацию', 'О Vizamigo']
+        } as Record<string, string[]>;
+        const w = T[lang] || T.en;
+        return `<p class="vzs-trust">${esc(w[0])} · ${esc(w[1])}: ${esc(when)} · ${esc(w[2])}: ${esc(src || w[3])} · <a href="/${lang}/info/standards">${esc(w[4])}</a> · <a href="/${lang}/info/mission">${esc(w[5])}</a></p>`;
+      })();
       // pasaporta özel özet: her pasaport–ülke sayfasını gerçekten farklı kılan bilgiler
       const br = getPassportBrief(code, pass, lang);
       const briefHtml = br
@@ -453,7 +471,7 @@ async function main() {
           const s720 = getOptimizedImageUrl(v.image, { width: 720 });
           return `<section class="vzs-chero"><img src="${s720}" srcset="${s480} 480w, ${s720} 720w" sizes="100vw" alt="${esc([name, v.landmark].filter(Boolean).join(': '))}" fetchpriority="high" /><div class="vzs-wrap vzs-chero-in">${eyebrow(lang, [EYEBROW[lang], region])}${h1(name, meta.h1.replace(name, '').trim())}${cap ? `<p>${esc(capitalName(code, lang, cap))}</p>` : ''}</div></section>`;
         })(),
-        nav: navBlock(lang, `${lead(meta.description)}${briefHtml}${factsHtml(code, lang)}${festHtml(code, lang)}${wtgHtml(code, lang)}${faqHtml}${ppNav}<p>${homeLink(lang)} · ${tabLinks(lang)}</p>${near.length ? `<h2>${esc(UI[lang].region)}</h2><p>${countryLinks(lang, near)}</p>` : ''}`)
+        nav: navBlock(lang, `${lead(meta.description)}${trustHtml}${briefHtml}${factsHtml(code, lang)}${festHtml(code, lang)}${wtgHtml(code, lang)}${faqHtml}${ppNav}<p>${homeLink(lang)} · ${tabLinks(lang)}</p>${near.length ? `<h2>${esc(UI[lang].region)}</h2><p>${countryLinks(lang, near)}</p>` : ''}`)
       }));
       n++;
     };

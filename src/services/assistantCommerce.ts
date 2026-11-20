@@ -1,3 +1,4 @@
+import { enArticle } from '../utils/passportBrief';
 /**
  * Asistanın rezervasyon, rota ve site kısayolu katmanı.
  * Sorudaki niyeti (uçuş, otel, tur, araç, transfer, eSIM, sigorta, vize başvurusu, rota) bulur;
@@ -49,7 +50,7 @@ export function visaLine(code: string, passport: string, lang: string): string {
   if (!it) return '';
   return L5(lang,
     `${getCountryName(passport, lang)} pasaportuyla ${getCountryName(code, lang)}: **${getCategoryBadgeLabel(it, lang)}**`,
-    `${getCountryName(code, lang)} with a ${getCountryName(passport, lang)} passport: **${getCategoryBadgeLabel(it, lang)}**`,
+    `${getCountryName(code, lang)} with ${enArticle(getCountryName(passport, lang))} ${getCountryName(passport, lang)} passport: **${getCategoryBadgeLabel(it, lang)}**`,
     `${getCountryName(code, lang)} mit Pass aus ${getCountryName(passport, lang)}: **${getCategoryBadgeLabel(it, lang)}**`,
     `${getCountryName(code, lang)} con pasaporte de ${getCountryName(passport, lang)}: **${getCategoryBadgeLabel(it, lang)}**`,
     `${getCountryName(code, lang)}, паспорт ${getCountryName(passport, lang)}: **${getCategoryBadgeLabel(it, lang)}**`);

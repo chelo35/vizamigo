@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo, useState } from 'react';
-import { getPassportBrief, getPassportFaq } from '../utils/passportBrief';
+import { getPassportBrief, getPassportFaq, enArticle } from '../utils/passportBrief';
 import { LANG_PASS as BRIEF_LANG_PASS } from '../data/passportPages';
 import { getExtraFaq } from '../data/extraFaq';
 import type { FestivalCardData } from '../data/festivalGuide';
@@ -158,9 +158,11 @@ const CountryPageInner: React.FC<Props & { data: CountryBundle }> = ({ code, pas
   const [trip, setTrip] = useTrip(passport);
   const [view, setView] = useState<'book' | 'guide'>(() => {
     try {
-      return (sessionStorage.getItem('vz_cview') as 'book' | 'guide') || 'book';
+      // varsayılan: önce bilgi (rehber). 12 Kasım'da rezervasyon sekmesi varsayılan yapılınca Google sayfayı
+      // bilgi sayfası değil rezervasyon sayfası olarak görmeye başladı; rehber metni sekmenin arkasında kalıyordu.
+      return (sessionStorage.getItem('vz_cview') as 'book' | 'guide') || 'guide';
     } catch {
-      return 'book';
+      return 'guide';
     }
   });
   const pickView = (v: 'book' | 'guide') => {
@@ -359,7 +361,7 @@ const CountryPageInner: React.FC<Props & { data: CountryBundle }> = ({ code, pas
             <div className="vz-stack">
               <Card tone={visaTone(item) === 'warn' ? 'warn' : visaTone(item) === 'ok' ? 'ok' : 'sea'}>
                 <div className="vz-row-flex"><VisaBadge item={item} big />{days && <b>{l(`${days} güne kadar kalış`, `Stay up to ${days} days`, `Bis zu ${days} Tage`, `Hasta ${days} días`, `До ${days} дней`)}</b>}</div>
-                {note ? <p>{note}</p> : <p>{l(`${getCountryName(passport, language)} pasaportuyla ${name} için giriş türü yukarıdaki gibidir. Yola çıkmadan önce resmî kaynaktan son durumu kontrol et.`, `This is the entry type for ${name} with a ${getCountryName(passport, 'en')} passport. Check the official source before you travel.`, `Einreiseart für ${name}. Vor der Reise offizielle Quelle prüfen.`, `Tipo de entrada para ${name}. Verifica la fuente oficial antes de viajar.`, `Тип въезда ${ruIn(name, 'acc')}. Проверьте официальный источник.`)}</p>}
+                {note ? <p>{note}</p> : <p>{l(`${getCountryName(passport, language)} pasaportuyla ${name} için giriş türü yukarıdaki gibidir. Yola çıkmadan önce resmî kaynaktan son durumu kontrol et.`, `This is the entry type for ${name} with ${enArticle(getCountryName(passport, 'en'))} ${getCountryName(passport, 'en')} passport. Check the official source before you travel.`, `Einreiseart für ${name}. Vor der Reise offizielle Quelle prüfen.`, `Tipo de entrada para ${name}. Verifica la fuente oficial antes de viajar.`, `Тип въезда ${ruIn(name, 'acc')}. Проверьте официальный источник.`)}</p>}
                 {detail?.u && (
                   <div className="vz-row-flex">
                     <LinkBtn href={detail.u} small>{(detail.h && sourceHost(detail.h, language)) || l('Resmî kaynak', 'Official source', 'Offizielle Quelle', 'Fuente oficial', 'Источник')}</LinkBtn>
@@ -762,7 +764,7 @@ const CountryPageInner: React.FC<Props & { data: CountryBundle }> = ({ code, pas
   const h1Rest = getCountryNaturalH1(name, lang).replace(name, '').replace(/^[\s,]+|[\s,]+$/g, '');
   const faq: { q: string; a: string }[] = [
     { q: l(`${passName} vatandaşları ${trDat(name)} vizesiz gidebilir mi?`, `Do ${passName} citizens need a visa for ${name}?`, `Brauchen Staatsbürger aus ${passName} ein Visum für ${name}?`, `¿Necesitan visado los ciudadanos de ${passName} para ${name}?`, `Нужна ли виза ${ruIn(name, 'acc')} гражданам ${ruOf(passName)}?`), a: answer },
-    { q: l(`${trLoc(name)} ne kadar kalabilirim?`, `How long can I stay in ${name}?`, `Wie lange darf ich in ${name} bleiben?`, `¿Cuánto tiempo puedo quedarme en ${name}?`, `Сколько можно находиться ${ruIn(name, 'loc')}?`), a: days ? l(`${passName} pasaportuyla tek seferde ${stayText} kalabilirsin.`, `With a ${passName} passport you can stay ${stayText} per visit.`, `Mit diesem Pass bis zu ${stayText} pro Aufenthalt.`, `Con este pasaporte hasta ${stayText} por visita.`, `С этим паспортом до ${stayText} за визит.`) : stayText },
+    { q: l(`${trLoc(name)} ne kadar kalabilirim?`, `How long can I stay in ${name}?`, `Wie lange darf ich in ${name} bleiben?`, `¿Cuánto tiempo puedo quedarme en ${name}?`, `Сколько можно находиться ${ruIn(name, 'loc')}?`), a: days ? l(`${passName} pasaportuyla tek seferde ${stayText} kalabilirsin.`, `With ${enArticle(passName)} ${passName} passport you can stay ${stayText} per visit.`, `Mit diesem Pass bis zu ${stayText} pro Aufenthalt.`, `Con este pasaporte hasta ${stayText} por visita.`, `С этим паспортом до ${stayText} за визит.`) : stayText },
     { q: l(`${trDat(name)} gitmek için en iyi zaman ne?`, `When is the best time to visit ${name}?`, `Wann ist die beste Reisezeit für ${name}?`, `¿Cuándo es mejor visitar ${name}?`, `Когда лучше ехать ${ruIn(name, 'acc')}?`), a: enc.tourism.bestSeasons || insights.bestMonths },
     { q: l(`${trLoc(name)} hangi priz kullanılıyor?`, `Which plug type does ${name} use?`, `Welcher Steckertyp gilt in ${name}?`, `¿Qué enchufe se usa en ${name}?`, `Какие розетки ${ruIn(name, 'loc')}?`), a: `${intel.plugs.types.join(', ')} · ${intel.plugs.voltage} ${intel.plugs.frequency}. ${intel.plugs.socketDesc}` },
     { q: l(`${trLoc(name)} acil durum numarası kaç?`, `What is the emergency number in ${name}?`, `Wie lautet die Notrufnummer in ${name}?`, `¿Cuál es el número de emergencias en ${name}?`, `Какой номер экстренных служб ${ruIn(name, 'loc')}?`), a: [emergency.general && `${l('Genel', 'General', 'Allgemein', 'General', 'Общий')}: ${emergency.general}`, emergency.police && `${l('Polis', 'Police', 'Polizei', 'Policía', 'Полиция')}: ${emergency.police}`, emergency.ambulance && `${l('Ambulans', 'Ambulance', 'Rettung', 'Ambulancia', 'Скорая')}: ${emergency.ambulance}`].filter(Boolean).join(' · ') },
@@ -812,8 +814,9 @@ const CountryPageInner: React.FC<Props & { data: CountryBundle }> = ({ code, pas
         <section className="vz-tldr" aria-label={l('Kısa cevap', 'Quick answer', 'Kurzantwort', 'Respuesta rápida', 'Коротко')}>
           <span className={`vz-ic tone-${passport === code ? 'ok' : visaTone(item)}`}><Icon name={passport !== code && visaTone(item) === 'warn' ? 'doc' : 'check'} size={22} /></span>
           <div className="vz-stack" style={{ gap: 6 }}>
-            <b>{l(`${getCountryName(passport, language)} pasaportuyla ${name}`, `${name} with a ${getCountryName(passport, language)} passport`, `${name} mit Pass: ${getCountryName(passport, language)}`, `${name} con pasaporte de ${getCountryName(passport, language)}`, `${name}: паспорт ${getCountryName(passport, language)}`)}</b>
+            <b>{l(`${getCountryName(passport, language)} pasaportuyla ${name}`, `${name} with ${enArticle(getCountryName(passport, language))} ${getCountryName(passport, language)} passport`, `${name} mit Pass: ${getCountryName(passport, language)}`, `${name} con pasaporte de ${getCountryName(passport, language)}`, `${name}: паспорт ${getCountryName(passport, language)}`)}</b>
             <p>{passport === code ? l('Bu senin kendi ülken: vize gerekmez, kimlik kartın ya da pasaportunla girersin.', 'This is your own country: no visa needed, you enter with your ID card or passport.', 'Das ist dein eigenes Land: kein Visum nötig, Einreise mit Ausweis oder Pass.', 'Es tu propio país: no necesitas visado, entras con tu documento de identidad o pasaporte.', 'Это ваша страна: виза не нужна, въезд по удостоверению личности или паспорту.') : answer}</p>
+            {passport !== code && <span className="vz-muted" style={{ fontSize: 12.5 }}>{l('Vizamigo editörlüğü tarafından kontrol edildi', 'Checked by the Vizamigo editorial team', 'Geprüft von der Vizamigo-Redaktion', 'Revisado por el equipo editorial de Vizamigo', 'Проверено редакцией Vizamigo')} · <a href={`/${language}/info/standards`}>{l('Bilgileri nasıl doğruluyoruz', 'How we verify', 'So prüfen wir', 'Cómo verificamos', 'Как мы проверяем')}</a> · <a href={`/${language}/info/mission`}>{l('Hakkımızda', 'About us', 'Über uns', 'Sobre nosotros', 'О нас')}</a></span>}
             {passport !== code && (detail?.d ? (
               <span className="vz-muted" style={{ fontSize: 12.5 }}>{l('Son kontrol', 'Last checked', 'Zuletzt geprüft', 'Última revisión', 'Проверено')}: {checkedLabel(detail.d, language)}{detail.h ? ` · ${sourceHost(detail.h, language)}` : ''}</span>
             ) : (
@@ -856,8 +859,8 @@ const CountryPageInner: React.FC<Props & { data: CountryBundle }> = ({ code, pas
         })()}
         {isNew && (
           <div className="vz-cview" role="tablist" aria-label={name}>
-            <button type="button" role="tab" aria-selected={view === 'book'} className={view === 'book' ? 'on' : ''} onClick={() => pickView('book')}><Icon name="bed" size={18} duo={false} />{l('Rezervasyon', 'Book your trip', 'Buchen', 'Reservar', 'Бронирование')}</button>
             <button type="button" role="tab" aria-selected={view === 'guide'} className={view === 'guide' ? 'on' : ''} onClick={() => pickView('guide')}><Icon name="book" size={18} duo={false} />{l('Ülke rehberi', 'Country guide', 'Länderguide', 'Guía del país', 'Гид по стране')}</button>
+            <button type="button" role="tab" aria-selected={view === 'book'} className={view === 'book' ? 'on' : ''} onClick={() => pickView('book')}><Icon name="bed" size={18} duo={false} />{l('Rezervasyon', 'Book your trip', 'Buchen', 'Reservar', 'Бронирование')}</button>
           </div>
         )}
         {isNew && view === 'book' && <BookingHub code={code} trip={trip} setTrip={setTrip} mustSee={enc.tourism?.mustSeePlaces || []} />}
