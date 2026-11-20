@@ -60,6 +60,12 @@ function toAff(e: Event): void {
   } catch {
     return;
   }
+  // Ferryhopper'a giden düz bağlantılar: Awin ortaklık bağlantısına çevir
+  if (u.protocol === 'https:' && (u.hostname === 'ferryhopper.com' || u.hostname.endsWith('.ferryhopper.com'))) {
+    a.dataset.vzAff = u.toString();
+    a.href = `https://www.awin1.com/cread.php?awinmid=129367&awinaffid=3138284&clickref=vizamigo&ued=${encodeURIComponent(u.toString())}`;
+    return;
+  }
   if (u.protocol !== 'https:' || !isTp(u.hostname)) return;
   const seg = location.pathname.split('/').filter(Boolean);
   a.dataset.vzAff = u.toString();

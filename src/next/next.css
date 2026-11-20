@@ -1822,3 +1822,9 @@ html.dark .vz-fare-b small.ok { color: var(--vz-ok); }
 html.dark .vz-eyebrow.warn { color: var(--vz-warn); }
 .vz-wtg-months.sm { margin-top: 10px; align-items: center; font-size: 13px; }
 .vz-wtg-months.sm a { padding: 3px 9px; }
+/* onaylı ortak kartları (DiscoverCars, Fever, Italiarail, Ferryhopper, Sanatoriums) */
+.vz-hq.vz-pc { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+.vz-pc .vz-hq-card { flex-wrap: wrap; }
+.vz-pc .vz-hq-card span { min-width: 140px; }
+.vz-pc .vz-hq-card small { white-space: normal; overflow: visible; line-height: 1.35; }
+.vz-pc .vz-hq-card em { margin-left: auto; }

@@ -58,6 +58,7 @@ export type TpId =
   | 'sanatoriums'
   | 'italiarail'
   | 'feverup'
+  | 'ferryhopper'
   | 'hotelscom'
   | 'kayak'
   | 'bookingcars'
@@ -117,6 +118,7 @@ export const TP: Record<TpId, TpBrand> = {
   sanatoriums: { name: 'Sanatoriums', domain: 'sanatoriums.com', rate: 'Admitad' },
   italiarail: { name: 'Italiarail', domain: 'italiarail.com', rate: 'Admitad' },
   feverup: { name: 'Fever', domain: 'feverup.com', rate: 'Admitad' },
+  ferryhopper: { name: 'Ferryhopper', domain: 'ferryhopper.com', rate: 'Awin' },
   safetywing: { name: 'SafetyWing', domain: 'safetywing.com', rate: '10%' },
   hellosafe: { name: 'HelloSafe', domain: 'hellosafe.com', rate: '10–20%' },
   tourradar: { name: 'TourRadar', domain: 'tourradar.com', rate: 'TourRadar' },
@@ -225,6 +227,8 @@ export function routeLink(url: string): string {
   }
   const s22 = STAY22_HOSTS.find(([d]) => is(d));
   if (s22) return stay22(s22[1], { link: url });
+  // Ferryhopper: Awin bağlantısına çevir
+  if (is('ferryhopper.com')) return `https://www.awin1.com/cread.php?awinmid=129367&awinaffid=3138284&clickref=vizamigo&ued=${encodeURIComponent(url)}`;
   // Klook: Admitad bağlantısına çevir
   if (is('klook.com')) return klookLink(url);
   // Viator ortaklığı onaylandı: ortaklık kodu (pid) taşıyan tur bağlantıları olduğu gibi gider
@@ -274,6 +278,11 @@ export function tpIdFromUrl(url: string | undefined): TpId | undefined {
   }
   const adm = ADMITAD_IDS[url.match(/\/g\/([a-z0-9]{20,})/)?.[1] || ''];
   if (adm) return adm;
+  if (host === 'awin1.com') {
+    const mid = url.match(/awinmid=(\d+)/)?.[1];
+    if (mid === '129367') return 'ferryhopper';
+    if (mid === '128757') return 'hellosafe';
+  }
   if (host === 'stay22.com') {
     const prov = url.match(/\/allez\/([a-z]+)/)?.[1];
     return prov === 'hotelscom' ? 'hotelscom' : prov && prov in TP ? (prov as TpId) : 'booking';
@@ -312,6 +321,12 @@ export const discovercarsLink = (url?: string) => admitad('https://naiawork.com/
 export const ITALIARAIL_COUNTRIES = new Set(['IT']);
 /** Fever (Admitad, 16 Kas 2026): konser, Candlelight, sergi ve etkinlik biletleri; güçlü olduğu ülkeler */
 export const FEVER_COUNTRIES = new Set(['US', 'GB', 'ES', 'FR', 'IT', 'DE', 'PT', 'NL', 'BE', 'IE', 'MX', 'CA', 'AU']);
+/** Ferryhopper (Awin, FerryHopper TR programı, 19 Kas 2026 onaylandı; reklamveren 129367, yayıncı 3138284) */
+const FERRY_LANG: Record<string, string> = { tr: 'tr', de: 'de', es: 'es', en: 'en', ru: 'en' };
+export const ferryhopperLink = (lang = 'en', path = '') =>
+  `https://www.awin1.com/cread.php?awinmid=129367&awinaffid=3138284&clickref=vizamigo&ued=${encodeURIComponent(`https://www.ferryhopper.com/${FERRY_LANG[lang] || 'en'}${path}`)}`;
+/** Ferryhopper'ın feribot sattığı ülkeler (Akdeniz, Adriyatik, Kuzey Avrupa ve Baltık) */
+export const FERRY_COUNTRIES = new Set(['GR', 'IT', 'HR', 'ES', 'FR', 'TR', 'AL', 'ME', 'MA', 'TN', 'MT', 'GB', 'IE', 'DK', 'SE', 'NO', 'FI', 'EE', 'DE', 'NL']);
 /** Rayna Tours'un tur sattığı ülkeler (BAE, Umman, Suudi Arabistan, Singapur, Tayland, Malezya, Endonezya) */
 export const RAYNA_COUNTRIES = new Set(['AE', 'OM', 'SA', 'SG', 'TH', 'MY', 'ID']);
 /** Sanatoriums'un sanatoryum/kaplıca sattığı ülkeler (Rusya ve BDT) */
@@ -362,6 +377,7 @@ export const tpLinks = {
   sanatoriums: () => admitad('https://kjuzv.com/g/82hm46o8g4e40c2b51fb790b103c92/'),
   italiarail: () => admitad('https://ujhjj.com/g/ca326rdm5ve40c2b51fbef1cea9751/'),
   feverup: () => admitad('https://bywiola.com/g/76gmhzdzl4e40c2b51fb853277f5f6/'),
+  ferryhopper: (lang = 'en') => ferryhopperLink(lang),
   safetywing: () => SAFETYWING,
   // HelloSafe (Awin, yayıncı 3138284): sigorta karşılaştırma, 20+ dil
   hellosafe: () => 'https://www.awin1.com/cread.php?awinmid=128757&awinaffid=3138284&clickref=vizamigo',

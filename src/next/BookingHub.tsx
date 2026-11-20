@@ -10,7 +10,7 @@ import { getCountryName } from '../data/passportData';
 import { getCountryGeography } from '../data/countryGeography';
 import { capitalName } from '../data/capitalNames';
 import { getCrossRate } from '../data/currencyRates';
-import { tpLinks, tpLogo, stay22, s22Flights, s22Cars, gygLink, STAY22_AID, TWELVEGO_AGENT } from '../data/tpPartners';
+import { tpLinks, tpLogo, stay22, s22Flights, s22Cars, gygLink, STAY22_AID, TWELVEGO_AGENT, discovercarsLink, ferryhopperLink, FERRY_COUNTRIES, ITALIARAIL_COUNTRIES, FEVER_COUNTRIES, SANATORIUM_COUNTRIES, type TpId } from '../data/tpPartners';
 import { TOURS, PACKAGES, LIVE } from '../data/tours';
 import ESIM from '../data/esimPrices.json';
 import { TRANSFER_ROUTES, kiwiRouteUrl, scooterUrl, BIKESBOOKING, bikesBookingUrl } from '../data/transferRoutes';
@@ -152,13 +152,21 @@ const ModeBadge: React.FC<{ k: string; title?: string }> = ({ k, title }) => (
 );
 
 /** Bölüm başlık görselleri: /images/bk/{ad}-480|960.webp */
-const SEC_IMG: Record<string, string> = { 'bk-flight': 'flight', 'bk-hotel': 'hotel', 'bk-tours': 'tours', 'bk-transfer': 'transfer', 'bk-ground': 'ground', 'bk-esim': 'esim', 'bk-car': 'car', 'bk-ins': 'ins' };
+const SEC_IMG: Record<string, string> = { 'bk-sea': 'ground', 'bk-flight': 'flight', 'bk-hotel': 'hotel', 'bk-tours': 'tours', 'bk-transfer': 'transfer', 'bk-ground': 'ground', 'bk-esim': 'esim', 'bk-car': 'car', 'bk-ins': 'ins' };
 /** Ülkeye özel tur görseli olan ülkeler (/images/bk/tours-{kod}-480|960.webp) */
 const TOUR_IMG = new Set(['FR', 'ES', 'US', 'TR', 'IT', 'MX', 'GB', 'DE', 'JP', 'GR', 'SA', 'AT', 'CN', 'AE', 'PT', 'IN', 'MY', 'CZ', 'BE', 'NL', 'IE', 'ID', 'SG', 'CA', 'BR', 'HU', 'MA', 'HK', 'KR', 'VN', 'CH', 'EG', 'AL', 'AR', 'AU', 'CO', 'CU', 'CY', 'DK', 'DO', 'GE', 'HR', 'IS', 'JO', 'LK', 'ME', 'MV', 'NO', 'NZ', 'PE', 'PH', 'PL', 'QA', 'TN', 'ZA', 'SE', 'FI', 'RO', 'BG', 'SI', 'MT', 'EE', 'RS', 'BA', 'UZ', 'KE', 'KH', 'TW', 'OM', 'KZ', 'AZ', 'NP', 'LA', 'TZ', 'BH', 'MU', 'CR', 'PA', 'CL', 'UY', 'JM', 'FJ', 'SC', 'MK', 'SK', 'LV', 'LT', 'LU', 'AM', 'KG', 'MN', 'EC', 'BS', 'NA', 'BO', 'ZM', 'GH', 'UG', 'ZW', 'TJ', 'BW', 'BB', 'MG', 'LC', 'CV', 'DZ', 'BN', 'BT', 'MD', 'RW', 'GT', 'XK', 'KW', 'DJ', 'ET', 'BZ', 'CM', 'SM', 'CD', 'VA', 'BJ', 'MC', 'BI', 'ER', 'AO', 'CI', 'TM', 'LI', 'AD', 'TL', 'MO', 'CG', 'PK', 'LR', 'NI', 'GN', 'MR', 'GQ', 'MZ', 'KM', 'GW', 'SL', 'NG', 'LS', 'KN', 'TG', 'GA', 'GM', 'DM', 'MW', 'ST', 'PW', 'HN', 'SZ', 'GY', 'FM', 'MH', 'SB', 'PY', 'SV', 'WS', 'NR', 'SR', 'VC', 'KI', 'TV', 'TT', 'VU', 'PG', 'BD', 'SN', 'AG', 'GD', 'TO', 'BY', 'YE', 'SY', 'SS', 'IR', 'LY', 'IQ', 'UA', 'AF', 'SD', 'HT', 'RU', 'SO', 'KP', 'NE', 'LB', 'ML', 'TD', 'VE', 'MM', 'IL', 'PS', 'CF', 'BF']);
 /** Feribot görseli Güneydoğu Asya ve adalar için; diğer ülkelerde tren/otobüs görseli */
 const FERRY_IMG = new Set(['TH', 'VN', 'KH', 'LA', 'MY', 'ID', 'PH', 'MM', 'SG', 'LK', 'MV', 'FJ', 'HR', 'GR', 'ME', 'MT', 'SC', 'BS', 'PA', 'MU']);
 const secImg = (id: string, code: string) =>
   id === 'bk-tours' && TOUR_IMG.has(code) ? `tours-${code.toLowerCase()}` : id === 'bk-ground' && !FERRY_IMG.has(code) ? 'ground-land' : SEC_IMG[id];
+/** Onaylı ortak için tek kart (logo, ad, kısa açıklama, düğme) */
+const PCard: React.FC<{ id: TpId; name: string; sub: string; href: string; cta: string }> = ({ id, name, sub, href, cta }) => (
+  <a className="vz-hq-card" href={href} target="_blank" rel="noopener noreferrer sponsored">
+    <img src={tpLogo(id)} alt="" width={28} height={28} loading="lazy" />
+    <span><b>{name}</b><small>{sub}</small></span>
+    <em>{cta} ›</em>
+  </a>
+);
 const Sec: React.FC<{ id: string; icon: string; title: string; note?: string; code?: string; children: React.ReactNode }> = ({ id, icon, title, note, code = '', children }) => (
   <section id={id} className={`vz-bk-sec${SEC_IMG[id] ? ' has-img' : ''}`}>
     {SEC_IMG[id] ? (
@@ -300,6 +308,7 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
   const tourPicks: PickItem[] = [
     { id: 'getyourguide', url: tourDest ? gygLink(tourDest.gyg, `cp_${code.toLowerCase()}`) : gyg(cityEn) },
     { id: 'klook', url: tpLinks.tours(tourDest?.search || cityEn) },
+    ...(FEVER_COUNTRIES.has(code) ? [{ id: 'feverup' as TpId, url: tpLinks.feverup() }] : []),
     { id: 'tiqets', url: tpLinks.tiqets() },
     { id: 'wegotrip', url: tpLinks.wegotrip() }
   ];
@@ -343,6 +352,7 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
 
   const s22c = s22Cars(cityEn, trip.d1, trip.d2, `cp_${code.toLowerCase()}_cars`);
   const carPicks: PickItem[] = [
+    { id: 'discovercars', url: discovercarsLink() },
     { id: 'localrent', url: tpLinks.localrent() },
     { id: 'economybookings', url: tpLinks.economybookings() },
     { id: 'bookingcars', url: s22c.booking },
@@ -361,6 +371,7 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
   ];
   const short = (d: string) => new Date(`${d}T12:00:00`).toLocaleDateString(loc, { day: 'numeric', month: 'short' });
   const dates = `${short(trip.d1)} – ${short(trip.d2)}`;
+  const hasSea = ITALIARAIL_COUNTRIES.has(code) || FERRY_COUNTRIES.has(code);
   const jump = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
     const id = e.currentTarget.getAttribute('href')?.slice(1) || '';
@@ -540,6 +551,7 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
         <a href="#bk-tours" onClick={jump}>{l('Turlar', 'Tours', 'Touren', 'Tours', 'Туры')}</a>
         <a href="#bk-transfer" onClick={jump}>{l('Transfer', 'Transfer', 'Transfer', 'Traslado', 'Трансфер')}</a>
         {ground.length > 0 && <a href="#bk-ground" onClick={jump}>{l('Tren · Otobüs · Feribot', 'Train · Bus · Ferry', 'Zug · Bus · Fähre', 'Tren · Bus · Ferry', 'Поезд · Автобус · Паром')}</a>}
+        {hasSea && <a href="#bk-sea" onClick={jump}>{ITALIARAIL_COUNTRIES.has(code) ? l('Tren · Feribot', 'Train · Ferry', 'Zug · Fähre', 'Tren · Ferry', 'Поезд · Паром') : l('Feribot', 'Ferry', 'Fähre', 'Ferry', 'Паром')}</a>}
         <a href="#bk-esim" onClick={jump}>eSIM</a>
         <a href="#bk-car" onClick={jump}>{l('Araç', 'Car', 'Mietwagen', 'Coche', 'Авто')}</a>
         <a href="#bk-ins" onClick={jump}>{l('Sigorta', 'Insurance', 'Versicherung', 'Seguro', 'Страховка')}</a>
@@ -680,6 +692,11 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
         <Stay22Frame view={hotelView} extra={hotelExtra} mode="accommodation" address={`${hotelArea || areas[0]?.en || cityEn}, ${countryEn}`} trip={trip} campaign={`cp_${code.toLowerCase()}_map`} title={l('Otel haritası ve fiyatlar', 'Hotel map and prices', 'Hotelkarte und Preise', 'Mapa de hoteles y precios', 'Карта отелей и цены')} />
           </>
         )}
+        {SANATORIUM_COUNTRIES.has(code) && (
+          <div className="vz-hq vz-pc">
+            <PCard id="sanatoriums" name="Sanatoriums" sub={l('Sanatoryum, kaplıca ve tedavi tatilleri', 'Sanatoriums, spa and wellness resorts', 'Sanatorien, Kur- und Wellnessresorts', 'Sanatorios, balnearios y spa', 'Санатории, курорты и лечебный отдых')} href={tpLinks.sanatoriums()} cta={l('Seçenekleri gör', 'See options', 'Angebote ansehen', 'Ver opciones', 'Смотреть')} />
+          </div>
+        )}
         {hotelLive && <Picks label={l('Otel sitesini seç:', 'Choose a hotel site:', 'Hotelseite wählen:', 'Elige un sitio:', 'Выберите сайт:')} items={hotelPicks} k={`h${code}${trip.d1}${trip.d2}${trip.n}`} />}
       </Sec>
 
@@ -708,6 +725,11 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
                 <small>{l('kişi başı · Aviasales', 'per person · Aviasales', 'pro Person · Aviasales', 'por persona · Aviasales', 'на человека · Aviasales')} ›</small>
               </a>
             )}
+          </div>
+        )}
+        {FEVER_COUNTRIES.has(code) && (
+          <div className="vz-hq vz-pc">
+            <PCard id="feverup" name="Fever" sub={l(`${getCountryName(code, language)}: konser, Candlelight, sergi ve etkinlik biletleri`, `${getCountryName(code, 'en')}: concerts, Candlelight, exhibitions and events`, `${getCountryName(code, language)}: Konzerte, Candlelight, Ausstellungen, Events`, `${getCountryName(code, language)}: conciertos, Candlelight, exposiciones y eventos`, `${getCountryName(code, language)}: концерты, Candlelight, выставки и события`)} href={tpLinks.feverup()} cta={l('Etkinlikleri gör', 'See events', 'Events ansehen', 'Ver eventos', 'События')} />
           </div>
         )}
         <Picks label={l('Tur sitesini seç:', 'Choose a tour site:', 'Tourseite wählen:', 'Elige un sitio:', 'Выберите сайт:')} items={tourPicks} k={`t${code}`} />
@@ -790,6 +812,15 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
         </Sec>
       )}
 
+      {hasSea && (
+        <Sec id="bk-sea" code={code} icon="transit" title={ITALIARAIL_COUNTRIES.has(code) ? l(`${getCountryName(code, language)}: tren ve feribot biletleri`, `${getCountryName(code, 'en')}: train & ferry tickets`, `${getCountryName(code, language)}: Zug- und Fährtickets`, `${getCountryName(code, language)}: billetes de tren y ferry`, `${getCountryName(code, language)}: билеты на поезд и паром`) : l(`${getCountryName(code, language)}: feribot biletleri`, `${getCountryName(code, 'en')}: ferry tickets`, `${getCountryName(code, language)}: Fährtickets`, `${getCountryName(code, language)}: billetes de ferry`, `${getCountryName(code, language)}: билеты на паром`)}>
+          <div className="vz-hq vz-pc">
+            {ITALIARAIL_COUNTRIES.has(code) && <PCard id="italiarail" name="Italiarail" sub={l('Frecciarossa, Italo ve bölgesel trenler; şehirler arası tren bileti', 'Frecciarossa, Italo and regional trains; intercity tickets', 'Frecciarossa, Italo und Regionalzüge', 'Frecciarossa, Italo y trenes regionales', 'Frecciarossa, Italo и региональные поезда')} href={tpLinks.italiarail()} cta={l('Tren bileti ara', 'Find trains', 'Züge suchen', 'Buscar trenes', 'Найти поезд')} />}
+            {FERRY_COUNTRIES.has(code) && <PCard id="ferryhopper" name="Ferryhopper" sub={l('Adalara ve komşu ülkelere feribot; tüm firmalar tek yerde', 'Ferries to islands and nearby countries; all operators in one place', 'Fähren zu Inseln und Nachbarländern; alle Reedereien', 'Ferris a islas y países vecinos; todas las navieras', 'Паромы на острова и в соседние страны; все перевозчики')} href={ferryhopperLink(language)} cta={l('Seferleri gör', 'See sailings', 'Fahrten ansehen', 'Ver salidas', 'Рейсы')} />}
+          </div>
+        </Sec>
+      )}
+
       <Sec id="bk-esim" icon="phone" title={l('İnternet (eSIM)', 'Mobile data (eSIM)', 'Mobile Daten (eSIM)', 'Datos móviles (eSIM)', 'Мобильный интернет (eSIM)')} note={esim.length || flexi.length ? l('Yukarıdaki fiyatlar Airalo, FlexiRoam ve Yesim paketleri, düzenli güncellenir. Nomad ve GigSky paketleri kendi sitelerinde açılır.', 'Prices above are Airalo, FlexiRoam and Yesim plans, updated regularly. Other providers show their plans on their own sites.', 'Preise oben: Airalo-Tarife, täglich aktualisiert. Andere Anbieter zeigen ihre Tarife auf ihrer Seite.', 'Precios de planes Airalo, actualizados a diario. Otros proveedores muestran sus planes en su web.', 'Цены выше — тарифы Airalo, обновляются ежедневно. Тарифы других — на их сайтах.') : undefined}>
         {!inTR && esim.length > 0 && <b className="vz-bk-op">Airalo</b>}
         {!inTR && esim.length > 0 && (
@@ -844,6 +875,9 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
           )}
           {rentTab === 'car' || !hasTwo ? (
             <>
+            <div className="vz-hq vz-pc">
+              <PCard id="discovercars" name="DiscoverCars" sub={l(`${getCountryName(code, language)} · ${dates} · tüm büyük firmalar, ücretsiz iptal`, `${getCountryName(code, 'en')} · ${dates} · all major companies, free cancellation`, `${getCountryName(code, language)} · ${dates} · alle großen Anbieter, kostenlose Stornierung`, `${getCountryName(code, language)} · ${dates} · todas las grandes empresas, cancelación gratuita`, `${getCountryName(code, language)} · ${dates} · все крупные компании, бесплатная отмена`)} href={discovercarsLink()} cta={l('Araçları karşılaştır', 'Compare cars', 'Autos vergleichen', 'Comparar coches', 'Сравнить авто')} />
+            </div>
             {city?.car?.usd && (
               <>
                 <b className="vz-bk-op">{city.en} · EconomyBookings · {l('günlük, yaklaşık', 'per day, approx.', 'pro Tag, ca.', 'por día, aprox.', 'в день, ок.')}</b>

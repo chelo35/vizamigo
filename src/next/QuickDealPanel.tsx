@@ -11,7 +11,7 @@ import type { SupportedLanguage } from '../i18n/types';
 import { AdTag, VisaBadge } from './ui';
 import { getCrossRate } from '../data/currencyRates';
 import { useLiveFx } from '../utils/liveData';
-import { tpLinks, stay22, s22Flights, s22Cars, gygLink, RAYNA_COUNTRIES, klookLink } from '../data/tpPartners';
+import { tpLinks, stay22, s22Flights, s22Cars, gygLink, RAYNA_COUNTRIES, klookLink, discovercarsLink } from '../data/tpPartners';
 import ESIM from '../data/esimPrices.json';
 import type { DealKind } from './QuickDeals';
 import { toursPath, TOURS } from '../data/tours';
@@ -118,6 +118,7 @@ const QuickDealPanel: React.FC<{ kind: DealKind; passport: string; destination: 
     { id: 'expedia', url: s22f.expedia }
   ];
   const carPicks: PickItem[] = [
+    { id: 'discovercars', url: discovercarsLink() },
     { id: 'economybookings', url: tpLinks.economybookings() },
     { id: 'woopdrive', url: tpLinks.woopdrive() },
     { id: 'bookingcars', url: s22c.booking },
