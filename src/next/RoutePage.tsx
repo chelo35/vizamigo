@@ -1,4 +1,4 @@
-import { tpLinks } from '../data/tpPartners';
+import { tpLinks, DAYTRIP_COUNTRIES } from '../data/tpPartners';
 import React, { useEffect, useMemo, useState } from 'react';
 import { useI18n, lText } from '../data/i18n';
 import { Icon } from './Icon';
@@ -335,6 +335,8 @@ const LegLink: React.FC<{ from: string; to: string; date: string }> = ({ from, t
     : mode === 'ferry' ? l('Feribot', 'Ferry', 'Fähre', 'Ferry', 'Паром')
     : l('Otobüs / araba', 'Bus / car', 'Bus / Auto', 'Bus / coche', 'Автобус / авто');
   // Para kazandıran ortak aramaları (Travelpayouts): uçuşta Aviasales, karada Omio / 12Go / Kiwi
+  // Avrupa içi kara yolu (≈700 km'ye kadar): Daytrip şoförlü şehirlerarası transfer
+  const daytrip = mode !== 'flight' && mode !== 'ferry' && from !== to && DAYTRIP_COUNTRIES.has(from) && DAYTRIP_COUNTRIES.has(to) && leg.distanceKm <= 700;
   const href = mode === 'flight' && a && b ? tpLinks.flights(a.split('/')[0], b.split('/')[0], date) : tpLinks.ground(from, to).url;
   return (
     <div className="vz-leg">
@@ -343,6 +345,9 @@ const LegLink: React.FC<{ from: string; to: string; date: string }> = ({ from, t
         {label} · {fmtNum(Math.round(leg.distanceKm), language)} km · ~{leg.estimatedTransitHours} {l('sa', 'h', 'Std.', 'h', 'ч')}
       </span>
       <a href={href} target="_blank" rel="noopener noreferrer sponsored">{mode === 'flight' ? l('Bilet ara', 'Find tickets', 'Tickets suchen', 'Buscar billetes', 'Найти билеты') : l('Yol bul', 'Find a way', 'Weg finden', 'Ver opciones', 'Как добраться')} ↗</a>
+      {daytrip && (
+        <a href={tpLinks.daytrip(`route_${from}_${to}`.toLowerCase())} target="_blank" rel="noopener noreferrer sponsored">{l('Şoförlü transfer', 'Private driver', 'Privatfahrer', 'Chófer privado', 'Трансфер с водителем')} · Daytrip ↗</a>
+      )}
     </div>
   );
 };

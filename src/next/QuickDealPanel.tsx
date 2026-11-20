@@ -11,7 +11,7 @@ import type { SupportedLanguage } from '../i18n/types';
 import { AdTag, VisaBadge } from './ui';
 import { getCrossRate } from '../data/currencyRates';
 import { useLiveFx } from '../utils/liveData';
-import { tpLinks, stay22, s22Flights, s22Cars, gygLink, RAYNA_COUNTRIES, klookLink, discovercarsLink } from '../data/tpPartners';
+import { tpLinks, stay22, s22Flights, s22Cars, gygLink, RAYNA_COUNTRIES, klookLink, discovercarsLink, DAYTRIP_COUNTRIES } from '../data/tpPartners';
 import ESIM from '../data/esimPrices.json';
 import type { DealKind } from './QuickDeals';
 import { toursPath, TOURS } from '../data/tours';
@@ -129,6 +129,7 @@ const QuickDealPanel: React.FC<{ kind: DealKind; passport: string; destination: 
     ...(EU.has(to) ? [{ id: 'autoeurope', url: tpLinks.autoeurope() }] : [])
   ];
   const transferPicks: PickItem[] = [
+    ...(DAYTRIP_COUNTRIES.has(to) ? [{ id: 'daytrip' as const, url: tpLinks.daytrip(`quick_${to.toLowerCase()}`) }] : []),
     { id: 'kiwitaxi', url: tpLinks.kiwitaxi() },
     ...(EU.has(to) ? [{ id: 'welcomepickups', url: tpLinks.welcomePickups() }] : []),
     { id: 'gettransfer', url: tpLinks.gettransfer() },

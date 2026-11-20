@@ -587,6 +587,7 @@ html.dark .vz-band-sky::after { background: linear-gradient(180deg, transparent,
 .vz-leg svg { color: var(--rd-sea-ink); }
 .vz-leg a { margin-left: auto; color: var(--rd-sea-ink); font-weight: 700; text-decoration: none; }
 .vz-leg a:hover { text-decoration: underline; }
+.vz-leg a + a { margin-left: 0; }
 
 /* ---- Priz çizimi ---- */
 .vz-plugs { display: flex; flex-wrap: wrap; gap: 14px; align-items: flex-end; }

@@ -41,6 +41,7 @@ function partnerOf(u: URL): string {
   if (h.endsWith('stay22.com')) return `stay22:${seg[1] || seg[0] || ''}`;
   if (h === 'tp.media' || h.endsWith('.tp.st') || h === 'tp.st') return `travelpayouts:${u.searchParams.get('campaign_id') || u.searchParams.get('p') || ''}`;
   if (h.endsWith('ad.admitad.com') || h.endsWith('admitad.com')) return 'admitad';
+  if (/(^|\.)(tkqlhce|anrdoezrs|dpbolvw|jdoqocy|kqzyfj)\.com$/.test(h)) return `cj:${u.pathname.split('-').pop() || ''}`;
   if (h.endsWith('awin1.com')) return `awin:${u.searchParams.get('awinmid') || ''}`;
   if (isTp(h)) return `travelpayouts:${h}`;
   return h;

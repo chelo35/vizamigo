@@ -26,6 +26,7 @@ export type TpId =
   | 'kiwitaxi'
   | 'welcomepickups'
   | 'gettransfer'
+  | 'daytrip'
   | 'intui'
   | 'discovercars'
   | 'localrent'
@@ -84,6 +85,8 @@ export const TP: Record<TpId, TpBrand> = {
   kiwitaxi: { name: 'Kiwitaxi', domain: 'kiwitaxi.com', rate: '9–11%' },
   welcomepickups: { name: 'Welcome Pickups', domain: 'welcomepickups.com', rate: '8–9%' },
   gettransfer: { name: 'GetTransfer', domain: 'gettransfer.com', rate: '4–25%' },
+  // CJ (yayıncı 7817772, site 101926414): Daytrip 20 Kas 2026 onaylandı, satış başı %13
+  daytrip: { name: 'Daytrip', domain: 'daytrip.com', rate: '13% (CJ)' },
   intui: { name: 'intui.travel', domain: 'intui.travel', rate: '10%' },
   discovercars: { name: 'DiscoverCars', domain: 'discovercars.com', rate: '23–54%' },
   localrent: { name: 'Localrent', domain: 'localrent.com', rate: '7.5–10%' },
@@ -283,6 +286,7 @@ export function tpIdFromUrl(url: string | undefined): TpId | undefined {
     if (mid === '129367') return 'ferryhopper';
     if (mid === '128757') return 'hellosafe';
   }
+  if (/(^|\.)(tkqlhce|anrdoezrs|dpbolvw|jdoqocy|kqzyfj)\.com$/.test(host) && url.includes('-17381224')) return 'daytrip';
   if (host === 'stay22.com') {
     const prov = url.match(/\/allez\/([a-z]+)/)?.[1];
     return prov === 'hotelscom' ? 'hotelscom' : prov && prov in TP ? (prov as TpId) : 'booking';
@@ -332,6 +336,16 @@ export const RAYNA_COUNTRIES = new Set(['AE', 'OM', 'SA', 'SG', 'TH', 'MY', 'ID'
 /** Sanatoriums'un sanatoryum/kaplıca sattığı ülkeler (Rusya ve BDT) */
 export const SANATORIUM_COUNTRIES = new Set(['RU', 'BY', 'KZ', 'AZ', 'GE', 'AM', 'UZ', 'KG']);
 
+/** Daytrip (CJ, 20 Kas 2026 onaylandı, %13): şoförlü şehirlerarası transfer, mola noktalı günübirlik yolculuk, saatlik şoför.
+ * Programda derin bağlantı kapalı; bağlantı ana sayfaya gider. sid ile hangi sayfadan geldiği raporda görünür. */
+export const DAYTRIP_CJ = 'https://www.tkqlhce.com/click-101926414-17381224';
+export const daytripLink = (sid = 'site') => `${DAYTRIP_CJ}?sid=${encodeURIComponent(sid.slice(0, 64))}`;
+/** Daytrip'in ağırlıklı çalıştığı Avrupa ülkeleri (Orta Avrupa ve Balkanlar dahil) */
+export const DAYTRIP_COUNTRIES = new Set([
+  'AT', 'BE', 'CH', 'CZ', 'DE', 'DK', 'ES', 'FR', 'GB', 'GR', 'HR', 'HU', 'IE', 'IT', 'NL', 'NO', 'PL', 'PT', 'SE', 'SI', 'SK',
+  'RO', 'BG', 'LU', 'AL', 'BA', 'ME', 'MK', 'RS'
+]);
+
 /** Ülkeye ve hub havalimanına göre hazır arama bağlantıları */
 export const tpLinks = {
   /** Aviasales uçuş araması: IATA kodlarıyla, ör. IST2811NRT1 */
@@ -356,6 +370,7 @@ export const tpLinks = {
   kiwitaxi: () => `https://kiwitaxi.com/`,
   welcomePickups: () => `https://www.welcomepickups.com/`,
   gettransfer: () => `https://gettransfer.com/`,
+  daytrip: (sid = 'site') => daytripLink(sid),
   // DiscoverCars ülke sayfası adları her zaman ülke adıyla eşleşmediği için ana sayfaya gider (arama orada)
   discovercars: (_country: string) => discovercarsLink(),
   economybookings: () => `https://www.economybookings.com/`,

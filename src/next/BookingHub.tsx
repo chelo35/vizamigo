@@ -10,7 +10,7 @@ import { getCountryName } from '../data/passportData';
 import { getCountryGeography } from '../data/countryGeography';
 import { capitalName } from '../data/capitalNames';
 import { getCrossRate } from '../data/currencyRates';
-import { tpLinks, tpLogo, stay22, s22Flights, s22Cars, gygLink, STAY22_AID, TWELVEGO_AGENT, discovercarsLink, ferryhopperLink, FERRY_COUNTRIES, ITALIARAIL_COUNTRIES, FEVER_COUNTRIES, SANATORIUM_COUNTRIES, type TpId } from '../data/tpPartners';
+import { tpLinks, tpLogo, stay22, s22Flights, s22Cars, gygLink, STAY22_AID, TWELVEGO_AGENT, discovercarsLink, ferryhopperLink, FERRY_COUNTRIES, ITALIARAIL_COUNTRIES, FEVER_COUNTRIES, SANATORIUM_COUNTRIES, DAYTRIP_COUNTRIES, type TpId } from '../data/tpPartners';
 import { TOURS, PACKAGES, LIVE } from '../data/tours';
 import ESIM from '../data/esimPrices.json';
 import { TRANSFER_ROUTES, kiwiRouteUrl, scooterUrl, BIKESBOOKING, bikesBookingUrl } from '../data/transferRoutes';
@@ -360,6 +360,7 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
     ...(EU.has(code) ? [{ id: 'autoeurope', url: tpLinks.autoeurope() }] : [])
   ];
   const transferPicks: PickItem[] = [
+    ...(DAYTRIP_COUNTRIES.has(code) ? [{ id: 'daytrip' as const, url: tpLinks.daytrip(`bk_${code.toLowerCase()}`) }] : []),
     { id: 'kiwitaxi', url: tpLinks.kiwitaxi() },
     ...(EU.has(code) ? [{ id: 'welcomepickups', url: tpLinks.welcomePickups() }] : []),
     { id: 'gettransfer', url: tpLinks.gettransfer() },
