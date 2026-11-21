@@ -296,7 +296,7 @@ async function main() {
           const cu = (out as { enc?: { culture?: Record<string, unknown> } }).enc?.culture;
           if (cu && Array.isArray(cu.festivals)) { const fg = getFestivalGuide(FG[code], lang, cu.festivals as string[]); if (fg.cards.length) { cu.festivalCards = fg.cards; cu.festivalRest = fg.rest; } }
         }
-        write(path.join('data', 'country', lang, `${code}.json`), JSON.stringify(out));
+        write(path.join('data', 'country', lang, `${code}.json`), lang === 'pt' ? ptArticles(JSON.stringify(out)) : JSON.stringify(out));
         (CDATA[lang] ||= {})[code] = lang === 'tr' && !(out as { intel?: unknown }).intel ? { ...out, intel } : out;
         files++;
       }
@@ -474,7 +474,7 @@ async function main() {
           const v = getCountryVisual(code, lang);
           const s480 = getOptimizedImageUrl(v.image, { width: 480 });
           const s720 = getOptimizedImageUrl(v.image, { width: 720 });
-          return `<section class="vzs-chero"><img src="${s720}" srcset="${s480} 480w, ${s720} 720w" sizes="100vw" alt="${esc([name, v.landmark].filter(Boolean).join(': '))}" fetchpriority="high" /><div class="vzs-wrap vzs-chero-in">${eyebrow(lang, [EYEBROW[lang], region])}${h1(name, meta.h1.replace(name, '').trim())}${cap ? `<p>${esc(capitalName(code, lang, cap))}</p>` : ''}</div></section>`;
+          return `<section class="vzs-chero"><img src="${s720}" srcset="${s480} 480w, ${s720} 720w" sizes="100vw" alt="${esc([name, v.landmark].filter(Boolean).join(': '))}" fetchpriority="high" /><div class="vzs-wrap vzs-chero-in">${eyebrow(lang, [EYEBROW[lang], region])}${h1(name, meta.h1.replace(name, '').replace(/^[\s:—–-]+|[\s:—–-]+$/g, '').replace(/\s+(de|para|por|en|em|do|da|dos|das)$/i, '').trim())}${cap ? `<p>${esc(capitalName(code, lang, cap))}</p>` : ''}</div></section>`;
         })(),
         nav: navBlock(lang, `${lead(meta.description)}${trustHtml}${briefHtml}${factsHtml(code, lang)}${festHtml(code, lang)}${wtgHtml(code, lang)}${faqHtml}${ppNav}<p>${homeLink(lang)} · ${tabLinks(lang)}</p>${near.length ? `<h2>${esc(UI[lang].region)}</h2><p>${countryLinks(lang, near)}</p>` : ''}`)
       }));

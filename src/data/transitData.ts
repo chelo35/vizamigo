@@ -1257,7 +1257,7 @@ export function getCountryTransitRule(
         : `Vizesiz Giriş ve Transit Serbestisi - ${countryName}`,
       summary: isEs
         ? `Los titulares de pasaporte ${passportCode} tienen derecho a entrar en ${countryName} sin visado ${idEligible ? 'o con documento nacional de identidad' : ''}. Tanto el transbordo dentro del aeropuerto como salir a recorrer la ciudad están completamente permitidos.`
-        : isPt ? `Portadores de passaporte ${passportCode} têm direito a entrar em ${countryName} sem visto ${idEligible ? 'o con documento nacional de identidad' : ''}. Tanto a conexão dentro do aeroporto quanto sair para conhecer a cidade são totalmente permitidas.` : isRu
+        : isPt ? `Portadores de passaporte ${passportCode} têm direito a entrar em ${countryName} sem visto ${idEligible ? 'ou com documento de identidade' : ''}. Tanto a conexão dentro do aeroporto quanto sair para conhecer a cidade são totalmente permitidas.` : isRu
         ? `Владельцы паспорта ${passportCode} имеют право безвизового въезда в ${countryName} ${idEligible ? 'или по удостоверению личности' : ''}. Во время пересадки можно как оставаться в аэропорту, так и свободно выходить в город.`
         : isDe
         ? `Inhaber eines ${passportCode}-Reisepasses können nach ${countryName} visumfrei ${idEligible ? 'oder mit Personalausweis ' : ''}einreisen. Sowohl Flughafentransfer als auch Stadtbesuch während des Zwischenstopps sind uneingeschränkt gestattet.`
@@ -1369,7 +1369,7 @@ export function getCountryTransitRule(
           'Permanecer estritamente na sala internacional de trânsito, sem passar pelo controle de imigração.',
           'Os voos de chegada e de saída devem estar, de preferência, sob um mesmo código de reserva (PNR).',
           'É preciso apresentar passagem válida e a documentação de visto para o terceiro país de destino.',
-          `Sair do aeroporto ou entrar na cidade exige obrigatoriamente um ${requiresVisaForEntry ? 'visado de entrada' : 'permiso oficial'}.`
+          `Sair do aeroporto ou entrar na cidade exige obrigatoriamente um ${requiresVisaForEntry ? 'visto de entrada' : 'autorização oficial'}.`
         ] : isRu
       ? [
           'Находиться исключительно в международном зале вылета/транзита без прохождения иммиграционного контроля.',

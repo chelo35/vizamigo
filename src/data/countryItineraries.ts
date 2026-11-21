@@ -14,6 +14,7 @@ import { getCountryInsights } from './countryInsights';
 import { CURATED_ITINERARIES_EXTRA } from './countryItinerariesExtra';
 import { CURATED_ITINERARIES_EXTRA_2 } from './countryItinerariesExtra2';
 import { lText } from '../i18n';
+import { ptArticles } from '../i18n/ptArticles';
 
 export interface ItineraryStop {
   stopNumber: number;
@@ -1734,7 +1735,7 @@ function buildRealStops(
   gastro: { famousDishes: string[]; traditionalDrinks: string[]; streetFoodAndDesserts: string[] },
   taxiTip: string
 ): { stops: ItineraryStop[]; routeName: string; routeSummary: string; totalDays: number } {
-  const L = (tr: string, en: string, de: string, es: string, ru: string, pt: string) => (lang === 'tr' ? tr : lang === 'de' ? de : lang === 'es' ? es : lang === 'ru' ? ru : lang === 'pt' ? pt : en);
+  const L = (tr: string, en: string, de: string, es: string, ru: string, pt: string) => (lang === 'tr' ? tr : lang === 'de' ? de : lang === 'es' ? es : lang === 'ru' ? ru : lang === 'pt' ? ptArticles(pt) : en);
   const uniqCities = cities.filter((c, i, a) => c && c.length > 2 && a.findIndex((y) => _norm(y) === _norm(c)) === i);
   const real = mustSee.filter((m) => m && m !== capital);
   // Görülecek yerleri şehirlerine göre grupla (başkent önce), şehri bilinmeyenler kendi durağı olur.
@@ -2105,7 +2106,7 @@ export function generateDynamicCountryItinerary(
     ? `Überlandbusse/Züge + Taxis/Apps (${insights.transport?.popularRideApps?.join(', ') || 'Lokale Taxis'})`
     : isEs
     ? `Red interurbana de trenes/autobuses + metro y apps de transporte en ${capital} (${insights.transport?.popularRideApps?.join(', ') || 'Taxi local'})`
-    : isPt ? `Rede intermunicipal de trens/ônibus + metrô e apps de transporte em ${capital} (${insights.transport?.popularRideApps?.join(', ') || 'Taxi local'})` : isRu
+    : isPt ? `Rede intermunicipal de trens/ônibus + metrô e apps de transporte em ${capital} (${insights.transport?.popularRideApps?.join(', ') || 'táxi local'})` : isRu
     ? `Междугородние поезда/автобусы + городской транспорт и такси в ${capital} (${insights.transport?.popularRideApps?.join(', ') || 'Местное такси'})`
     : `Intercity rail/bus network + urban transit and ride apps (${insights.transport?.popularRideApps?.join(', ') || 'Local Taxis'})`;
 
@@ -2158,7 +2159,7 @@ export function generateDynamicCountryItinerary(
     packingAndPrecautions: {
       essentials: [
         isTr ? 'Rahat yürüyüş ayakkabıları ve mevsime uygun giysiler' : isDe ? 'Bequeme Wanderschuhe' : isEs ? 'Calzado cómodo para caminar y ropa adecuada para la temporada' : isPt ? 'Calçado confortável para caminhar e roupas adequadas à estação' : isRu ? 'Удобная обувь для ходьбы и одежда по сезону' : 'Comfortable walking shoes',
-        isTr ? `Seyahat priz adaptörü (${geography.plugTypes || 'Uluslararası adaptör'})` : isDe ? `Reiseadapter (${geography.plugTypes})` : isEs ? `Adaptador de viaje (${geography.plugTypes || 'Adaptador universal'})` : isPt ? `Adaptador de tomada (${geography.plugTypes || 'Adaptador universal'})` : isRu ? `Адаптер для розеток (${geography.plugTypes || 'Универсальный переходник'})` : `Plug adapter (${geography.plugTypes})`,
+        isTr ? `Seyahat priz adaptörü (${geography.plugTypes || 'Uluslararası adaptör'})` : isDe ? `Reiseadapter (${geography.plugTypes})` : isEs ? `Adaptador de viaje (${geography.plugTypes || 'Adaptador universal'})` : isPt ? `Adaptador de tomada (${geography.plugTypes || 'adaptador universal'})` : isRu ? `Адаптер для розеток (${geography.plugTypes || 'Универсальный переходник'})` : `Plug adapter (${geography.plugTypes})`,
         isTr ? 'Taşınabilir şarj aleti (powerbank)' : isDe ? 'Powerbank' : isEs ? 'Batería externa portátil (powerbank)' : isPt ? 'Carregador portátil (power bank)' : isRu ? 'Портативный аккумулятор (пауэрбанк)' : 'Portable powerbank',
         isTr ? 'Güneş kremi ve su matarası' : isDe ? 'Sonnenschutz und Trinkflasche' : isEs ? 'Protector solar y botella de agua reutilizable' : isPt ? 'Protetor solar e garrafa de água reutilizável' : isRu ? 'Солнцезащитный крем и бутылка для воды' : 'Sun protection and water bottle'
       ],

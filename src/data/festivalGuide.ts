@@ -29,7 +29,7 @@ const monthName = (m: number, lang: string, ctx: 'standalone' | 'format' = 'stan
       return new Intl.DateTimeFormat(LOC[lang] || 'en-GB', { day: 'numeric', month: 'long', timeZone: 'UTC' }).formatToParts(d).find((p) => p.type === 'month')?.value || '';
     }
     const s = new Intl.DateTimeFormat(LOC[lang] || 'en-GB', { month: 'long', timeZone: 'UTC' }).format(d);
-    return s.charAt(0).toUpperCase() + s.slice(1);
+    return lang === 'pt' ? s : s.charAt(0).toUpperCase() + s.slice(1);
   } catch { return String(m); }
 };
 
@@ -39,7 +39,7 @@ const fmtIso = (iso: string, lang: string): string => {
 
 /** "Ne zaman" metni: sabit gün → "14 Temmuz", aylar → "Temmuz – Ağustos", + 2027 tarihi. */
 export function festivalWhen(e: FestivalGuideEntry, lang: string): string {
-  const L = (en: string, tr: string, de: string, es: string, ru: string, pt: string) => [en, tr, de, es, ru, pt][IDX[lang] ?? 0];
+  const L = (en: string, tr: string, de: string, es: string, ru: string, pt: string) => (lang === 'pt' ? ptArticles(pt) : [en, tr, de, es, ru, pt][IDX[lang] ?? 0]);
   let base: string;
   if (e.d && e.m.length === 1) base = lang === 'en' ? `${e.d} ${monthName(e.m[0], lang, 'format')}` : lang === 'de' ? `${e.d.replace(/(\d+)$/, '$1.')} ${monthName(e.m[0], lang, 'format')}`.replace(/^(\d+)–/, '$1.–') : lang === 'es' ? `${e.d} de ${monthName(e.m[0], lang, 'format')}` : lang === 'pt' ? `${e.d} de ${monthName(e.m[0], lang, 'format')}` : `${e.d} ${monthName(e.m[0], lang, 'format')}`;
   else if (e.d) base = e.m.map((m) => (lang === 'es' ? `${e.d} de ${monthName(m, lang, 'format')}` : lang === 'pt' ? `${e.d} de ${monthName(m, lang, 'format')}` : lang === 'de' ? `${e.d}. ${monthName(m, lang, 'format')}` : `${e.d} ${monthName(m, lang, 'format')}`)).join(L(' & ', ' ve ', ' und ', ' y ', ' и ', ' e '));
@@ -96,6 +96,7 @@ export function getFestivalGuide(entries: FestivalGuideEntry[] | undefined, lang
 // Bölümler derlemede üretilir (/data/festival-calendar/<dil>.json); tarayıcı sayfası bu dosyayı yükler.
 import FEST_CODES from './festival-guide/index.json';
 import { getCountryName } from './passportData';
+import { ptArticles } from '../i18n/ptArticles';
 
 export const FESTIVAL_COUNTRIES: string[] = FEST_CODES as string[];
 
@@ -103,7 +104,7 @@ interface CalSection { h: string; list: string[] }
 export interface FestivalCalendarText { title: string; short: string; metaDesc: string; answer: string; sections: CalSection[]; faq: { q: string; a: string }[] }
 
 export function buildFestivalCalendar(lang: string, data?: { entries: Record<string, FestivalGuideEntry[]>; names: Record<string, string[]> }): FestivalCalendarText {
-  const L = (en: string, tr: string, de: string, es: string, ru: string, pt: string) => [en, tr, de, es, ru, pt][IDX[lang] ?? 0];
+  const L = (en: string, tr: string, de: string, es: string, ru: string, pt: string) => (lang === 'pt' ? ptArticles(pt) : [en, tr, de, es, ru, pt][IDX[lang] ?? 0]);
   const byMonth: string[][] = Array.from({ length: 12 }, () => []);
   const faq: { q: string; a: string }[] = [];
   if (data) {

@@ -3,6 +3,7 @@
 import { getPassportItems } from '../utils/calculator';
 import { getCountryName } from './passportData';
 import { GEO_DATA } from './geoData';
+import { ptArticles } from '../i18n/ptArticles';
 
 export interface RankRow { p: string; rank: number; easy: number; free: number; voa: number; eta: number; evisa: number; visa: number; total: number }
 
@@ -24,7 +25,7 @@ const IDX: Record<string, number> = { en: 0, tr: 1, de: 2, es: 3, ru: 4, pt: 5 }
 const HOME: Record<string, string[]> = { tr: ['TR'], de: ['DE', 'AT', 'CH'], es: ['ES', 'MX', 'AR', 'CO'], ru: ['RU', 'KZ', 'UA'], en: ['US', 'GB', 'IN'], pt: ['BR', 'PT'] };
 
 export function buildPassportRanking(lang: string) {
-  const L = (en: string, tr: string, de: string, es: string, ru: string, pt: string) => [en, tr, de, es, ru, pt][IDX[lang] ?? 0];
+  const L = (en: string, tr: string, de: string, es: string, ru: string, pt: string) => (lang === 'pt' ? ptArticles(pt) : [en, tr, de, es, ru, pt][IDX[lang] ?? 0]);
   const nf = (n: number) => n.toLocaleString(lang === 'en' ? 'en-US' : lang);
   const rows = passportRanking();
   const top = rows[0], last = rows.at(-1)!;

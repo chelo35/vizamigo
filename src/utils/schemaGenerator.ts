@@ -16,6 +16,7 @@ import { GEO_DATA } from '../data/geoData';
 import { capitalName } from '../data/capitalNames';
 import { SOCIALS, CONTACT_EMAIL } from '../data/socials';
 import { topPlaces } from '../data/topPlaces';
+import { ptArticles } from '../i18n/ptArticles';
 
 export interface SchemaGeneratorOptions {
   countryCode: string;
@@ -173,18 +174,18 @@ export function generateDirectAnswerSnippet(
 
     case 'pt': {
       if (cat === 'free' || cat === 'id') {
-        return `Em 2026, quem tem passaporte de ${passportName} pode entrar em ${countryName} sem visto e ficar até ${stayDurationText}. A validade mínima do passaporte e a exigência de passagem de volta variam de país para país; confira na fonte oficial antes de viajar.`;
+        return ptArticles(`Em 2026, quem tem passaporte de ${passportName} pode entrar em ${countryName} sem visto e ficar até ${stayDurationText}. A validade mínima do passaporte e a exigência de passagem de volta variam de país para país; confira na fonte oficial antes de viajar.`);
       }
       if (cat === 'voa') {
-        return `Em 2026, ${countryName} concede visto na chegada a quem tem passaporte de ${passportName}. A permanência autorizada é de ${stayDurationText}; é preciso passaporte válido e pagar a taxa na fronteira.`;
+        return ptArticles(`Em 2026, ${countryName} concede visto na chegada a quem tem passaporte de ${passportName}. A permanência autorizada é de ${stayDurationText}; é preciso passaporte válido e pagar a taxa na fronteira.`);
       }
       if (cat === 'evisa') {
-        return `Em 2026, ${countryName} exige que quem tem passaporte de ${passportName} solicite um visto eletrônico (e-Visa) on-line antes da viagem. A autorização permite permanências de ${stayDurationText}.`;
+        return ptArticles(`Em 2026, ${countryName} exige que quem tem passaporte de ${passportName} solicite um visto eletrônico (e-Visa) on-line antes da viagem. A autorização permite permanências de ${stayDurationText}.`);
       }
       if (cat === 'eta') {
-        return `Em 2026, ${countryName} exige uma autorização eletrônica de viagem (ETA), solicitada pelo menos 72 horas antes do voo. A permanência máxima é de ${stayDurationText}.`;
+        return ptArticles(`Em 2026, ${countryName} exige uma autorização eletrônica de viagem (ETA), solicitada pelo menos 72 horas antes do voo. A permanência máxima é de ${stayDurationText}.`);
       }
-      return `Em 2026, ${countryName} exige que quem tem passaporte de ${passportName} tire um visto consular antes da viagem, na embaixada ou em um centro oficial de vistos.`;
+      return ptArticles(`Em 2026, ${countryName} exige que quem tem passaporte de ${passportName} tire um visto consular antes da viagem, na embaixada ou em um centro oficial de vistos.`);
     }
 
     case 'ru': {
@@ -478,8 +479,8 @@ function getSerpAnswer(
         : cat === 'eta' ? `com passaporte de ${P} é preciso solicitar uma autorização eletrônica (${eta}) antes da viagem`
         : `com passaporte de ${P} é preciso pedir o visto no consulado antes da viagem`;
       return {
-        title: fitT([`Precisa de visto para ${C}? 2026: ${short} com passaporte de ${P}`, `Viagem para ${C} 2026: ${short} com passaporte de ${P}`, `Viagem para ${C} 2026: ${short}`, `${C} 2026: ${short}`]),
-        description: fitD(`${CC}: ${long}.`, ['Fonte oficial, nível de segurança, telefones de emergência, roteiro, voos e hotéis baratos.', 'Fonte oficial, emergências, roteiro e preços.', 'Fonte oficial e preços.'])
+        title: fitT([`Precisa de visto para ${C}? 2026: ${short} com passaporte de ${P}`, `Viagem para ${C} 2026: ${short} com passaporte de ${P}`, `Viagem para ${C} 2026: ${short}`, `${C} 2026: ${short}`].map(ptArticles)),
+        description: fitD(ptArticles(`${CC}: ${long}.`), ['Fonte oficial, nível de segurança, telefones de emergência, roteiro, voos e hotéis baratos.', 'Fonte oficial, emergências, roteiro e preços.', 'Fonte oficial e preços.'])
       };
     }
     case 'ru': {
@@ -563,8 +564,8 @@ export function getMobileVoiceQuestion(
         : `¿${countryName} pide visa a ciudadanos de ${passportName}? Requisitos 2026`;
     case 'pt':
       return currentPassport === LANG_PASS.pt || currentPassport === 'TR'
-        ? `Preciso de visto para ${countryName}? (Regras de entrada 2026)`
-        : `${countryName} exige visto de quem tem passaporte de ${passportName}? Regras 2026`;
+        ? ptArticles(`Preciso de visto para ${countryName}? (Regras de entrada 2026)`)
+        : ptArticles(`${countryName} exige visto de quem tem passaporte de ${passportName}? Regras 2026`);
     case 'ru':
       return currentPassport === LANG_PASS.ru || currentPassport === 'TR'
         ? `Нужна ли виза ${ruIn(countryName, 'acc')}? (Правила въезда 2026)`
@@ -589,7 +590,7 @@ export function getCountryNaturalH1(
     case 'es':
       return `Política de Visados, Límites de Estancia e Itinerario de ${countryName}`;
     case 'pt':
-      return `Política de vistos, tempo de permanência e roteiro para ${countryName}`;
+      return ptArticles(`Política de vistos, tempo de permanência e roteiro para ${countryName}`);
     case 'ru':
       return `Визовый режим ${ruIn(countryName, 'loc')}, сроки пребывания и гид`;
   }

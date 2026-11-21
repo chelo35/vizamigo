@@ -5,6 +5,7 @@
  * Ülke başına sezon metni ve festival listesi derlemede üretilir: /data/where-to-go/<dil>/<ay>.json
  */
 import { getCountryName } from './passportData';
+import { ptArticles } from '../i18n/ptArticles';
 
 export const WTG_SLUGS = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december'] as const;
 export type WtgId = `where_to_go_${(typeof WTG_SLUGS)[number]}`;
@@ -215,7 +216,7 @@ export interface WtgText { title: string; short: string; metaDesc: string; answe
 
 /** Başlık ve kısa cevap (veri olmadan da çalışır); bölümler ve SSS derlemede doldurulur. */
 export function buildWhereToGo(lang: string, m: number): WtgText {
-  const L = (en: string, tr: string, de: string, es: string, ru: string, pt: string) => [en, tr, de, es, ru, pt][IDX[lang] ?? 0];
+  const L = (en: string, tr: string, de: string, es: string, ru: string, pt: string) => (lang === 'pt' ? ptArticles(pt) : [en, tr, de, es, ru, pt][IDX[lang] ?? 0]);
   const M = wtgMonthName(m, lang);
   const list = wtgCountries(m);
   const n = list.length;
@@ -245,7 +246,7 @@ export function buildWhereToGo(lang: string, m: number): WtgText {
 
 /** Bölüm başlıkları */
 export const wtgHeads = (lang: string, m: number) => {
-  const L = (en: string, tr: string, de: string, es: string, ru: string, pt: string) => [en, tr, de, es, ru, pt][IDX[lang] ?? 0];
+  const L = (en: string, tr: string, de: string, es: string, ru: string, pt: string) => (lang === 'pt' ? ptArticles(pt) : [en, tr, de, es, ru, pt][IDX[lang] ?? 0]);
   const M = wtgMonthName(m, lang);
   const ruM = RU_IN[m - 1];
   return {
@@ -259,7 +260,7 @@ export interface WtgData { m: number; countries: [string, string, string][]; fes
 
 /** SSS (derlemede): vizesiz seçenekler, festivaller, bilinen rotalar için "bu ay gidilir mi?" */
 export function buildWtgFaq(lang: string, m: number, season: Record<string, string>, fest: string[], visaFree: string[], passName: string): { q: string; a: string }[] {
-  const L = (en: string, tr: string, de: string, es: string, ru: string, pt: string) => [en, tr, de, es, ru, pt][IDX[lang] ?? 0];
+  const L = (en: string, tr: string, de: string, es: string, ru: string, pt: string) => (lang === 'pt' ? ptArticles(pt) : [en, tr, de, es, ru, pt][IDX[lang] ?? 0]);
   const M = wtgMonthName(m, lang);
   const ruM = RU_IN[m - 1];
   const faq: { q: string; a: string }[] = [];

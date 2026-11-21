@@ -91,7 +91,7 @@ export const HomeBooking: React.FC<{ passport: string; onOpenCountry: (code: str
     const name = getCountryName(destCode, language);
     const d = /^\d+$/.test(vi.v) ? vi.v : '';
     if (vi.id) return { ok: true, t: l(`${name}: kimlik kartıyla giriş`, `${name}: entry with ID card`, `${name}: Einreise mit Ausweis`, `${name}: entrada con DNI`, `${name}: въезд по ID-карте`, `${name}: entrada com RG`) };
-    if (vi.cat === 'free') return { ok: true, t: l(`${name}: ${d ? d + ' gün ' : ''}vizesiz`, `${name}: visa-free${d ? ` for ${d} days` : ''}`, `${name}: visumfrei${d ? ` für ${d} Tage` : ''}`, `${name}: sin visado${d ? ` ${d} días` : ''}`, `${name}: без визы${d ? ` ${d} дн.` : ''}`, `${name}: sem visto${d ? ` ${d} días` : ''}`) };
+    if (vi.cat === 'free') return { ok: true, t: l(`${name}: ${d ? d + ' gün ' : ''}vizesiz`, `${name}: visa-free${d ? ` for ${d} days` : ''}`, `${name}: visumfrei${d ? ` für ${d} Tage` : ''}`, `${name}: sin visado${d ? ` ${d} días` : ''}`, `${name}: без визы${d ? ` ${d} дн.` : ''}`, `${name}: sem visto${d ? ` ${d} dias` : ''}`) };
     if (vi.cat === 'evisa' || vi.cat === 'eta') return { ok: false, t: l(`${name}: online e-vize / ETA gerekli`, `${name}: eVisa / ETA needed online`, `${name}: eVisum / ETA online nötig`, `${name}: eVisa / ETA en línea`, `${name}: нужна eVisa / ETA`, `${name}: e-Visa / ETA on-line`) };
     if (vi.cat === 'voa') return { ok: false, t: l(`${name}: kapıda vize`, `${name}: visa on arrival`, `${name}: Visum bei Ankunft`, `${name}: visado a la llegada`, `${name}: виза по прилёте`, `${name}: visto na chegada`) };
     return { ok: false, t: l(`${name}: vize gerekli`, `${name}: visa required`, `${name}: Visum nötig`, `${name}: visado necesario`, `${name}: нужна виза`, `${name}: visto necessário`) };
