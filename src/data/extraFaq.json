@@ -298,6 +298,30 @@
           "TR"
         ]
       }
+    ],
+    "PL": [
+      {
+        "q": "Polonya vize istiyor mu? (2026)",
+        "a": "Evet. Umuma mahsus (bordo) pasaportlu Türk vatandaşları Polonya için Schengen vizesi almalıdır. Başvurular VFS Global merkezlerinden yapılır (İstanbul, İzmir, Gaziantep, Trabzon, Ankara, Antalya); vize harcı 106 USD (nakit) ve ayrıca VFS hizmet bedeli alınır.",
+        "u": "https://visa.vfsglobal.com/one-pager/poland/turkey/english/",
+        "h": "VFS Global – Polonya resmî vize başvuru merkezi",
+        "d": "2026-11-21",
+        "p": [
+          "TR"
+        ]
+      }
+    ],
+    "TW": [
+      {
+        "q": "Tayvan (Taipei) vize istiyor mu?",
+        "a": "Evet. Türk vatandaşları Tayvan için çevrimiçi eVisa alabilir: tek girişlidir, 30 güne kadar kalış sağlar (uzatılamaz) ve verildiği tarihten itibaren 3 ay geçerlidir. Ücret başvuru sırasında kartla online ödenir.",
+        "u": "https://www.boca.gov.tw/cp-181-8051-69fbd-2.html",
+        "h": "Tayvan Konsolosluk İşleri Bürosu (BOCA)",
+        "d": "2026-11-21",
+        "p": [
+          "TR"
+        ]
+      }
     ]
   },
   "en": {
@@ -549,6 +573,16 @@
         "p": [
           "DE"
         ]
+      },
+      {
+        "q": "Brauchen Schweizer ein Visum für Simbabwe?",
+        "a": "Ja, aber Schweizer gehören zur Kategorie B: Das Visum wird bei der Einreise erteilt (Visum bei Ankunft), ein Antrag vorab ist nicht nötig; alternativ kann man es online über evisa.gov.zw beantragen. Laut Botschaft kostet das Einfachvisum 30 USD; der Reisepass muss noch mindestens 6 Monate gültig sein.",
+        "u": "https://www.evisa.gov.zw/faq.html",
+        "h": "Simbabwe: offizielles E-Visa-Portal (FAQ)",
+        "d": "2026-11-21",
+        "p": [
+          "CH"
+        ]
       }
     ],
     "AR": [
@@ -728,6 +762,18 @@
           "DE"
         ]
       }
+    ],
+    "CU": [
+      {
+        "q": "Brauchen Schweizer ein Visum für Kuba (Touristenkarte)?",
+        "a": "Ja. Statt der früheren Touristenkarte gibt es jetzt ein elektronisches Touristenvisum, das online über evisacuba.cu beantragt wird. Den erhaltenen Visumcode trägt man anschliessend im Online-Formular D'Viajeros ein, das vor der Reise ausgefüllt werden muss; der QR-Code kommt per E-Mail.",
+        "u": "https://misiones.cubaminrex.cu/en/articulo/new-online-visa-system-travel-cuba",
+        "h": "Aussenministerium Kuba (MINREX)",
+        "d": "2026-11-21",
+        "p": [
+          "CH"
+        ]
+      }
     ]
   },
   "es": {
@@ -881,6 +927,15 @@
         "u": "https://cancilleria.gov.co/sala-de-prensa/noticias/antes-de-viajar-mexico-diligencie-el-pre-registro",
         "h": "Cancillería de Colombia y Embajada de México en Colombia",
         "d": "2026-11-19"
+      }
+    ],
+    "FR": [
+      {
+        "q": "¿Los dominicanos necesitan visa para viajar a Francia?",
+        "a": "Sí. Con pasaporte dominicano se necesita un visado Schengen de corta estancia, que se solicita a través de France-Visas. La tasa es de 90 € para adultos (45 € de 6 a 12 años) y se exige un seguro de viaje que cubra urgencias médicas, hospitalización y repatriación.",
+        "u": "https://home-affairs.ec.europa.eu/policies/schengen/visa-policy/applying-schengen-visa_en",
+        "h": "Comisión Europea – Solicitud de visado Schengen",
+        "d": "2026-11-21"
       }
     ]
   },
@@ -1081,6 +1136,30 @@
         "u": "https://icsa.gov.pg/travel/visa-on-arrival",
         "h": "Служба иммиграции Папуа — Новой Гвинеи (ICSA)",
         "d": "2026-11-20",
+        "p": [
+          "RU"
+        ]
+      }
+    ],
+    "BG": [
+      {
+        "q": "Нужна ли виза в Болгарию для россиян?",
+        "a": "Да. Россиянам нужна виза: с 31 марта 2024 года Болгария выдаёт единые шенгенские визы, действующие во всей Шенгенской зоне, а с 1 января 2025 года отменены проверки и на внутренних сухопутных границах. Подать документы можно в визовых центрах Болгарии в Москве и Санкт-Петербурге.",
+        "u": "https://www.mfa.bg/en/services-travel/consular-services/travel-bulgaria/visa-bulgaria",
+        "h": "МИД Болгарии",
+        "d": "2026-11-21",
+        "p": [
+          "RU"
+        ]
+      }
+    ],
+    "NP": [
+      {
+        "q": "Нужна ли виза в Непал для россиян?",
+        "a": "Да, но её можно получить по прилёту (аэропорты Катманду, Покхары, Бхайрахавы и сухопутные пункты пропуска) или заполнить онлайн-анкету заранее. Туристическая мультивиза стоит 30 USD на 15 дней, 50 USD на 30 дней и 125 USD на 90 дней.",
+        "u": "https://ntb.gov.np/plan-your-trip/before-you-come/tourist-visa",
+        "h": "Совет по туризму Непала (Nepal Tourism Board)",
+        "d": "2026-11-21",
         "p": [
           "RU"
         ]
