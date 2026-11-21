@@ -21,7 +21,7 @@ export function passportRanking(): RankRow[] {
 
 const IDX: Record<string, number> = { en: 0, tr: 1, de: 2, es: 3, ru: 4, pt: 5 };
 /** Dilin okurunun pasaportu (haber açısı): tr→TR, de→DE, es→ES, ru→RU, en→US ve GB. */
-const HOME: Record<string, string[]> = { tr: ['TR'], de: ['DE', 'AT', 'CH'], es: ['ES', 'MX', 'AR', 'CO'], ru: ['RU', 'KZ', 'UA'], en: ['US', 'GB', 'IN'] };
+const HOME: Record<string, string[]> = { tr: ['TR'], de: ['DE', 'AT', 'CH'], es: ['ES', 'MX', 'AR', 'CO'], ru: ['RU', 'KZ', 'UA'], en: ['US', 'GB', 'IN'], pt: ['BR', 'PT'] };
 
 export function buildPassportRanking(lang: string) {
   const L = (en: string, tr: string, de: string, es: string, ru: string, pt: string) => [en, tr, de, es, ru, pt][IDX[lang] ?? 0];
