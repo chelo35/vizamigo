@@ -628,6 +628,170 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Euro (EUR)",
+   "bestMonths": "Maio – junho e setembro – outubro (ideal para Paris e a Provença); julho–agosto são quentes e lotados; esqui nos Alpes de dezembro a abril",
+   "safety": {
+    "safetyScore": 55,
+    "safetyLevel": "Risco moderado",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60",
+    "crimeRateSummary": "No geral é seguro, mas em Paris (metrô, Torre Eiffel, Montmartre, Gare du Nord) batedores de carteira e roubos de celular são muito comuns, e alguns bairros de Marselha são arriscados à noite. O nível de ameaça terrorista continua alto.",
+    "commonScams": [
+     "Batedores de carteira organizados no metrô de Paris e nas estações Châtelet / Gare du Nord",
+     "O golpe da “pulseira da amizade” perto da Sacré-Cœur e da Torre Eiffel",
+     "Falsos abaixo-assinados ou pedidos de doação para distrair você e roubar o celular"
+    ],
+    "safeTravelTips": [
+     "No metrô, não fique com o celular na mão perto das portas; leve a mochila na frente do corpo.",
+     "Nos aeroportos, use só o ponto oficial de táxi; os táxis dos aeroportos de Paris têm tarifa fixa.",
+     "Fique longe de bolsas abandonadas e avise a equipe de segurança."
+    ],
+    "emergencyNumbers": {
+     "police": "17",
+     "ambulance": "15",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99% (4G/5G; sinal mais fraco em áreas de montanha isoladas)",
+    "costPerGbUsd": "~US$ 0,50 - 1,50",
+    "esimAvailability": "Excelente",
+    "bestCarriers": [
+     "Orange",
+     "SFR",
+     "Bouygues Telecom",
+     "Free Mobile"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Excelente (metrô de Paris, RER e trens de alta velocidade TGV)",
+    "costLevel": "Moderado",
+    "singleTicketUsd": "~2.90 $ (bilhete unitário de metrô/RER em Paris: 2,50 €)",
+    "dailyPassUsd": "~13 - 15 $ (passe diário Navigo Jour)",
+    "popularRideApps": [
+     "Bonjour RATP",
+     "SNCF Connect",
+     "Uber",
+     "G7",
+     "Bolt"
+    ],
+    "taxiAdvice": "Em Paris, os táxis G7 e o Uber são os mais usados; os táxis entre aeroporto e cidade têm tarifa fixa. Reservar o TGV com antecedência barateia muito a passagem, e o Ouigo é a opção de alta velocidade low cost."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 60 - 90",
+    "dailyBudgetMidrangeUsd": "US$ 140 - 220",
+    "budgetMealUsd": "15 - 25 $ (“formule” do almoço, crepe, sanduíche)",
+    "coffeeUsd": "US$ 2,50 - 4,50",
+    "waterBottleUsd": "US$ 1 - 2",
+    "hostelDormUsd": "US$ 35 - 60",
+    "hotel3StarUsd": "120 - 200 $ (Paris; mais barato em outras cidades)",
+    "flightCostIndex": "Baixo (voo direto ~3,5 h)",
+    "flightTip": "Há voos diretos de Istambul para Paris (CDG e Orly), Lyon, Nice e Marselha."
+   }
+  },
+  "enc": {
+   "language": {
+    "phrases": [
+     {
+      "phrase": "Bonjour",
+      "meaning": "Olá / Bom dia",
+      "translation": "Olá / Bom dia",
+      "pronunciation": "bon-JUR"
+     },
+     {
+      "phrase": "Merci beaucoup",
+      "meaning": "Muito obrigado",
+      "translation": "Muito obrigado",
+      "pronunciation": "mér-SI bô-KU"
+     },
+     {
+      "phrase": "Excusez-moi",
+      "meaning": "Com licença / Desculpe",
+      "translation": "Com licença / Desculpe",
+      "pronunciation": "ecs-kü-ZÊ muá"
+     },
+     {
+      "phrase": "C'est combien ?",
+      "meaning": "Quanto custa?",
+      "translation": "Quanto custa?",
+      "pronunciation": "sê com-BIÃ"
+     },
+     {
+      "phrase": "L'addition, s'il vous plaît",
+      "meaning": "A conta, por favor",
+      "translation": "A conta, por favor",
+      "pronunciation": "la-di-SSIÕ, sil vu PLÊ"
+     }
+    ]
+   },
+   "culture": {
+    "festivals": [
+     "Dia da Bastilha (14 de julho)",
+     "Festival Internacional de Cinema de Cannes",
+     "Fête de la Musique (Dia Mundial da Música)",
+     "Chegada do Tour de France",
+     "Carnaval de Nice"
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "E"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "As tomadas tipo E têm um pino de aterramento saliente; os plugues finos tipo C e os plugues aterrados compatíveis E/F (com furo) usados na Turquia encaixam sem problema, não é preciso adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "A água da torneira é potável em todo o país; nos restaurantes, você pode pedir uma “carafe d’eau” de graça.",
+    "vaccines": [
+     "Vacinas de rotina (tríplice viral, tétano)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "15"
+   },
+   "tipping": {
+    "custom": "Os preços já incluem 15 % de serviço (“service compris”); a gorjeta não é obrigatória.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "Se gostou do atendimento, deixe alguns euros ou 5-10 %; nos cafés, algumas moedas bastam."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA de 20 %; recupera-se 12-14 % depois das comissões",
+    "minSpend": "100,01 € na mesma loja, no mesmo dia",
+    "customsNote": "Peça o formulário “détaxe” na loja e escaneie o código de barras em um quiosque PABLO no último aeroporto de saída da UE, antes de despachar a bagagem."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 0,50 - 1,50",
+    "topCarriers": [
+     "Orange",
+     "SFR",
+     "Bouygues Telecom",
+     "Free Mobile"
+    ],
+    "airportSimTrapWarning": "Os pontos de venda do aeroporto são caros; compre um chip com o passaporte em lojas Orange, Free ou SFR na cidade ou use uma eSIM. O roaming da UE não vale para chips turcos."
+   },
+   "touristScams": [
+    {
+     "title": "Golpe da pulseira",
+     "desc": "Grupos nas escadarias da Sacré-Cœur, em Montmartre, amarram um fio no seu pulso e pedem dinheiro.",
+     "tip": "Mantenha as mãos nos bolsos e siga em frente."
+    },
+    {
+     "title": "O anel de ouro achado",
+     "desc": "Alguém entrega a você um anel de ouro que “achou” no chão e depois pede dinheiro; o anel é falso.",
+     "tip": "Não aceite nada e se afaste sem puxar conversa."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Евро (EUR)",

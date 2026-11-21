@@ -5,7 +5,8 @@
     "en": "Morocco",
     "de": "Marokko",
     "ru": "Марокко",
-    "es": "Marruecos"
+    "es": "Marruecos",
+    "pt": "Marrocos"
   },
   "capital": {
     "value": "Rabat",
@@ -238,7 +239,8 @@
       "en": "Exercise Increased Caution: Historic medinas and resorts safe, avoid remote border zones",
       "de": "Erhöhte Vorsicht: Medinas und Urlaubsregionen sicher, Grenzregionen meiden",
       "ru": "Повышенная осторожность: исторические медины безопасны, избегайте границы",
-      "es": "Mayor precaución: medinas y destinos turísticos seguros, evite zonas fronterizas"
+      "es": "Mayor precaución: medinas y destinos turísticos seguros, evite zonas fronterizas",
+      "pt": "Maior cautela: medinas e destinos turísticos são seguros; evite as áreas de fronteira"
     },
     "regional_warnings": [
       {
@@ -410,7 +412,8 @@
         "en": "Chefchaouen Blue City",
         "de": "Blaue Stadt Chefchaouen",
         "ru": "Синий город Шефшауэн",
-        "es": "Ciudad Azul de Chauen"
+        "es": "Ciudad Azul de Chauen",
+        "pt": "Cidade Azul de Chefchaouen"
       },
       "type": "historic_town",
       "sources": [
@@ -427,7 +430,8 @@
         "en": "Marrakech Jemaa el-Fnaa and Medina",
         "de": "Marrakesch Djemaa el Fna und Medina",
         "ru": "Площадь Джемаа-эль-Фна и медина Марракеша",
-        "es": "Plaza de Yamaa el Fna y Medina de Marrakech"
+        "es": "Plaza de Yamaa el Fna y Medina de Marrakech",
+        "pt": "Praça Jemaa el-Fna e medina de Marrakech"
       },
       "type": "unesco_heritage",
       "sources": [
@@ -444,7 +448,8 @@
         "en": "Fes el-Bali Historic Medina",
         "de": "Historische Medina von Fes el-Bali",
         "ru": "Историческая медина Фес-эль-Бали",
-        "es": "Medina Histórica de Fez el-Bali"
+        "es": "Medina Histórica de Fez el-Bali",
+        "pt": "Medina histórica de Fez el-Bali"
       },
       "type": "unesco_heritage",
       "sources": [
@@ -474,7 +479,8 @@
           "en": "Chefchaouen Blue City Streets, Morocco",
           "de": "Straßen der blauen Stadt Chefchaouen, Marokko",
           "ru": "Улицы синего города Шефшауэн, Марокко",
-          "es": "Calles de la Ciudad Azul de Chauen, Marruecos"
+          "es": "Calles de la Ciudad Azul de Chauen, Marruecos",
+          "pt": "Ruas da Cidade Azul de Chefchaouen, Marrocos"
         },
         "recognizability_checked": true
       }
@@ -486,21 +492,24 @@
       "en": "morocco",
       "de": "marokko",
       "ru": "marokko",
-      "es": "marruecos"
+      "es": "marruecos",
+      "pt": "marrocos"
     },
     "title": {
       "tr": "Fas Vize Rehberi, Seyahat ve Güvenlik Bilgileri | Vizamigo",
       "en": "Morocco Visa Guide, Travel Info & Safety | Vizamigo",
       "de": "Marokko Visum-Leitfaden, Reisehinweise & Sicherheit | Vizamigo",
       "ru": "Виза в Марокко, въезд и безопасность для туристов | Vizamigo",
-      "es": "Guía de Visa de Marruecos, Requisitos y Seguridad | Vizamigo"
+      "es": "Guía de Visa de Marruecos, Requisitos y Seguridad | Vizamigo",
+      "pt": "Visto para o Marrocos, requisitos e segurança | Vizamigo"
     },
     "meta_description": {
       "tr": "Fas vize koşulları, Şafşavan ve Marakeş medinası, priz tipleri, SIM kart ve resmi seyahat uyarıları.",
       "en": "Morocco visa requirements, Chefchaouen blue city, plug types, local transport apps, and verified safety advisories.",
       "de": "Marokko Visabestimmungen, Chefchaouen, Steckertypen, lokale Apps und offizielle Sicherheitshinweise.",
       "ru": "Визовые правила Марокко, Шефшауэн, типы розеток, мобильная связь и официальные рекомендации.",
-      "es": "Requisitos de visa para Marruecos, Chauen, tipos de enchufe, transporte local y advertencias de seguridad."
+      "es": "Requisitos de visa para Marruecos, Chauen, tipos de enchufe, transporte local y advertencias de seguridad.",
+      "pt": "Requisitos de visto para o Marrocos, Chefchaouen, tipos de tomada, transporte local e alertas de segurança."
     },
     "faq": []
   },

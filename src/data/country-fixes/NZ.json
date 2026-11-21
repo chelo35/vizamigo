@@ -1523,6 +1523,387 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Dólar neozelandês (NZD)",
+   "plugType": "Tipo I (230V, 50Hz)",
+   "bestMonths": "Dezembro – março (verão: trilhas, lagos e praias); junho – agosto para esquiar",
+   "safety": {
+    "crimeRateSummary": "Um dos países mais seguros do mundo, com pouquíssima criminalidade violenta. Os principais riscos são furtos em carros estacionados no início das trilhas e perigos naturais, como o clima alpino instável, terremotos e correntes de retorno.",
+    "commonScams": [
+     "Furtos com vidro quebrado em carros alugados estacionados em trilhas e mirantes",
+     "Cobrança por arranhões que já existiam na devolução do carro ou do motorhome alugado",
+     "Anúncios falsos de motorhomes ou hospedagem em redes sociais que pedem depósito antecipado"
+    ],
+    "safeTravelTips": [
+     "Não deixe nada à vista no carro; leve o passaporte e os eletrônicos com você.",
+     "Antes de uma caminhada na montanha, confira a previsão da MetService e registre sua rota no AdventureSmart.",
+     "A mão é inglesa (dirige-se pela esquerda); reduza a velocidade em estradas estreitas e respeite as placas de preferência nas pontes de uma só faixa."
+    ],
+    "emergencyNumbers": {
+     "police": "111",
+     "ambulance": "111",
+     "general": "111"
+    },
+    "safetyScore": 85,
+    "safetyLevel": "Excepcionalmente seguro",
+    "badgeColor": "bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Mais de 98 % nas cidades e vilarejos (4G/5G); sem sinal em partes de Fiordland, na estrada para Milford e na Costa Oeste",
+    "costPerGbUsd": "~US$ 1 - 3",
+    "esimAvailability": "Excelente",
+    "bestCarriers": [
+     "One NZ",
+     "Spark",
+     "2degrees"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Limitado (ônibus e trens urbanos nas cidades; ônibus InterCity entre as cidades menores; o mais prático é alugar carro ou motorhome)",
+    "costLevel": "Caro",
+    "singleTicketUsd": "US$ 1,50 - 3 (ônibus/trem de Auckland, AT HOP ou por aproximação)",
+    "dailyPassUsd": "US$ 6 - 12 (teto diário)",
+    "popularRideApps": [
+     "Uber",
+     "DiDi"
+    ],
+    "taxiAdvice": "Uber e DiDi funcionam nas principais cidades; em cidades pequenas é preciso ligar para uma empresa de táxi local. Os táxis têm taxímetro e são caros."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 60 - 90",
+    "dailyBudgetMidrangeUsd": "US$ 150 - 250",
+    "budgetMealUsd": "US$ 15 - 25",
+    "coffeeUsd": "US$ 3 - 4,50",
+    "waterBottleUsd": "US$ 1,50 - 2,50",
+    "hostelDormUsd": "US$ 25 - 45",
+    "hotel3StarUsd": "US$ 110 - 180",
+    "flightCostIndex": "Muito alto (24+ h com escalas)",
+    "flightTip": "Não há voos diretos da Turquia; as conexões via Dubai (Emirates), Doha (Qatar Airways) ou Cingapura (Singapore Airlines) para Auckland ou Christchurch costumam ser as mais convenientes."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "“Kia ora” é usado em todo lugar como cumprimento e agradecimento; os kiwis são descontraídos e se chamam pelo primeiro nome.",
+     "Se for convidado a um marae (local de encontro maori), aguarde a cerimônia de boas-vindas (pōwhiri) e tire os sapatos antes de entrar na casa de reuniões.",
+     "Na cultura maori a cabeça é sagrada (tapu); não toque na cabeça de ninguém nem se sente em mesas onde se serve comida.",
+     "O respeito pela natureza é levado a sério: não saia das trilhas sinalizadas, leve seu lixo de volta e declare todos os alimentos no aeroporto."
+    ],
+    "festivals": [
+     "Dia de Waitangi (6 de fevereiro – feriado nacional pelo Tratado de Waitangi)",
+     "Matariki (junho/julho – Ano-Novo maori, feriado)",
+     "World of WearableArt (setembro – outubro, Wellington)"
+    ],
+    "lifestyle": "Um estilo de vida simples e ao ar livre: trilhas no fim de semana, praias, rúgbi (os All Blacks) e uma forte cultura do café."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Milford Sound (Piopiotahi)",
+     "Travessia Alpina de Tongariro",
+     "Parques geotermais e cultura maori de Rotorua",
+     "Queenstown e o lago Wakatipu",
+     "Set de filmagem de Hobbiton (Matamata)",
+     "Parque Nacional Aoraki / Monte Cook"
+    ],
+    "bestSeasons": "O verão (dezembro – fevereiro) é alta temporada; o outono, de março a abril, é mais tranquilo e colorido; o inverno (junho – agosto) é temporada de esqui em Queenstown e Wanaka.",
+    "travelStyleTip": "O melhor é percorrer o país de carro ou motorhome; entre a Ilha Norte e a Ilha Sul, use a balsa Interislander/Bluebridge ou um voo doméstico. Reserve os abrigos das Great Walks com meses de antecedência no site do DOC."
+   },
+   "religion": {
+    "primaryReligions": "Sem religião ~52 %, cristãos ~32 %, hindus ~3 %, muçulmanos ~1,5 %, religiões maori e budistas ~1 % cada (censo de 2023)",
+    "respectNorms": "Nas visitas a um marae, siga as orientações dos anfitriões e peça permissão antes de fotografar; faça silêncio nas igrejas durante os cultos.",
+    "sacredSites": [
+     "Waitangi Treaty Grounds e Te Whare Rūnanga (Bay of Islands)",
+     "Igreja de St Faith e aldeia de Ōhinemutu (Rotorua)",
+     "Catedral de Papelão (Christchurch)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Inglês, te reo maori e língua de sinais neozelandesa",
+    "englishProficiency": "Nativo; palavras maori são frequentes em nomes de lugares e placas.",
+    "phrases": [
+     {
+      "phrase": "Kia ora",
+      "meaning": "Olá / Obrigado",
+      "translation": "Olá / Obrigado",
+      "pronunciation": "kee-ah OR-ah"
+     },
+     {
+      "phrase": "Tēnā koe",
+      "meaning": "Olá (formal, para uma pessoa)",
+      "translation": "Olá (formal, para uma pessoa)",
+      "pronunciation": "TEH-nah KWEH"
+     },
+     {
+      "phrase": "Haere mai",
+      "meaning": "Bem-vindo",
+      "translation": "Bem-vindo",
+      "pronunciation": "HAI-reh MAI"
+     },
+     {
+      "phrase": "Ka kite anō",
+      "meaning": "Até logo",
+      "translation": "Até logo",
+      "pronunciation": "kah KEE-teh ah-NAW"
+     },
+     {
+      "phrase": "Sweet as",
+      "meaning": "Legal / Sem problema (gíria kiwi)",
+      "translation": "Legal / Sem problema (gíria kiwi)",
+      "pronunciation": "SWEET az"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Os ancestrais polinésios dos maori se estabeleceram nas ilhas por volta de 1250–1300. O Tratado de Waitangi, assinado em 1840 entre a Coroa britânica e chefes maori, é considerado o documento fundador do país. Em 1893, a Nova Zelândia foi o primeiro país a conceder o direito de voto às mulheres.",
+    "milestones": [
+     "~1250–1300: navegadores polinésios se estabelecem nas ilhas",
+     "1840: assinatura do Tratado de Waitangi",
+     "1893: primeiro sufrágio feminino nacional do mundo",
+     "1947: adoção do Estatuto de Westminster, independência plena"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Hāngī (carne e legumes maori cozidos sob a terra sobre pedras quentes)",
+     "Cordeiro assado (cordeiro neozelandês)",
+     "Mexilhões-verdes e ostras de Bluff"
+    ],
+    "traditionalDrinks": [
+     "Flat white (café com leite)",
+     "Sauvignon Blanc de Marlborough (alcoólico)",
+     "L&P (Lemon & Paeroa, refrigerante de limão)"
+    ],
+    "streetFoodAndDesserts": [
+     "Meat pie (torta de carne moída e queijo)",
+     "Pavlova (sobremesa de merengue com frutas)",
+     "Sorvete hokey pokey (com caramelo crocante tipo favo de mel)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Sir Edmund Hillary (primeira escalada do Everest, 1953)",
+     "Ernest Rutherford (Nobel, núcleo atômico)",
+     "Kate Sheppard (líder do sufrágio feminino)"
+    ],
+    "strongSectors": [
+     "Laticínios e agricultura (Fonterra, kiwi – Zespri)",
+     "Turismo e esportes de aventura",
+     "Cinema e efeitos visuais (Wētā FX)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Quase tudo se paga com cartão; o pagamento por aproximação funciona em todo lugar. Alguns estabelecimentos cobram acréscimo de 1-2 %; pouco dinheiro vivo é suficiente.",
+    "tippingCulture": "Não se espera gorjeta, porque os funcionários recebem um salário digno. Os cafés podem cobrar um acréscimo de 10-15 % aos domingos e feriados.",
+    "economicPillars": "Exportação de laticínios, carne e kiwi, turismo, silvicultura e educação internacional."
+   }
+  },
+  "itin": {
+   "routeName": "Clássico da Nova Zelândia: Auckland, Rotorua, Queenstown e Milford Sound",
+   "routeSummary": "Um roteiro de 10 dias que começa no porto e nos vulcões de Auckland e nos gêiseres e na cultura maori de Rotorua, na Ilha Norte, e segue de voo doméstico para a aventura de Queenstown e o fiorde de Milford Sound, na Ilha Sul.",
+   "totalDays": 10,
+   "idealDurationText": "Roteiro de 10 dias",
+   "bestSeason": "Dezembro – março (verão)",
+   "transportMode": "Carro alugado (mão inglesa) + voo doméstico Auckland/Rotorua – Queenstown",
+   "paceLevel": "Ativo (natureza e aventura)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Auckland (porto e vulcões)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Sky Tower",
+      "Cratera Maungawhau / Mount Eden",
+      "Auckland War Memorial Museum (coleção maori)",
+      "Ilha Waiheke"
+     ],
+     "activities": [
+      "Pegue a balsa para a ilha Waiheke e visite vinícolas e praias.",
+      "Suba à borda da cratera do Mount Eden para ver a cidade.",
+      "Jante no Viaduct Harbour e no Wynyard Quarter."
+     ],
+     "foodAndDrinks": [
+      "Fish and chips",
+      "Café flat white",
+      "Vinhos de Waiheke (alcoólicos)"
+     ],
+     "criticalTips": [
+      "Use o cartão AT HOP ou um cartão bancário por aproximação em ônibus, trens e balsas.",
+      "O clima pode ter as quatro estações em um só dia; leve capa de chuva e roupas em camadas."
+     ],
+     "mapsQuery": "Auckland, New Zealand"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Rotorua (gêiseres e cultura maori)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Te Puia e o gêiser Pōhutu",
+      "Wai-O-Tapu Thermal Wonderland",
+      "Floresta Redwoods Whakarewarewa",
+      "Set de Hobbiton (Matamata, a ~1 h)"
+     ],
+     "activities": [
+      "Assista a um espetáculo cultural maori com jantar hāngī.",
+      "Relaxe nas piscinas termais do Polynesian Spa.",
+      "Percorra o Redwoods Treewalk por pontes suspensas."
+     ],
+     "foodAndDrinks": [
+      "Hāngī",
+      "Milho cozido em poças termais (aldeia Whakarewarewa)"
+     ],
+     "criticalTips": [
+      "O cheiro de enxofre vem da atividade geotermal e é normal.",
+      "Os tours para Hobbiton esgotam no verão; reserve com antecedência."
+     ],
+     "mapsQuery": "Rotorua, New Zealand"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Queenstown (capital da aventura)",
+     "recommendedDuration": "3 dias",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Teleférico Skyline e Bob’s Peak",
+      "Lago Wakatipu",
+      "Antiga cidade mineira de Arrowtown",
+      "Estrada panorâmica até Glenorchy"
+     ],
+     "activities": [
+      "Salte (ou assista) na ponte Kawarau, o primeiro bungee jump comercial do mundo.",
+      "Percorra o cânion no Shotover Jet.",
+      "Suba a Queenstown Hill ou faça a trilha Ben Lomond."
+     ],
+     "foodAndDrinks": [
+      "Fergburger (hambúrguer famoso)",
+      "Pinot Noir de Central Otago (alcoólico)"
+     ],
+     "criticalTips": [
+      "No verão, reserve atividades e hospedagem com antecedência; os preços são altos.",
+      "A radiação UV é muito forte; use protetor de fator alto mesmo com o céu nublado."
+     ],
+     "mapsQuery": "Queenstown, New Zealand"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Te Anau e Milford Sound (Fiordland)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Cruzeiro por Milford Sound e Mitre Peak",
+      "Mirror Lakes e túnel Homer",
+      "Cavernas de vaga-lumes de Te Anau"
+     ],
+     "activities": [
+      "Faça um cruzeiro ou um passeio guiado de caiaque pelo fiorde.",
+      "Faça a caminhada curta até o Key Summit, à beira da estrada de Milford.",
+      "Atravesse o lago Te Anau de barco para ver as cavernas de vaga-lumes."
+     ],
+     "foodAndDrinks": [
+      "Kōura (lagosta de Fiordland)",
+      "Torta de carne de veado"
+     ],
+     "criticalTips": [
+      "Não há posto de gasolina nem sinal entre Te Anau e Milford; encha o tanque antes.",
+      "Repelente contra os borrachudos (sandflies) é indispensável."
+     ],
+     "mapsQuery": "Milford Sound, New Zealand"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Hāngī",
+     "Cordeiro assado",
+     "Mexilhões-verdes"
+    ],
+    "drinks": [
+     "Flat white",
+     "Refrigerante L&P",
+     "Sauvignon Blanc (alcoólico)"
+    ],
+    "streetFoods": [
+     "Meat pie",
+     "Fish and chips",
+     "Pavlova"
+    ],
+    "diningAdvice": "Os cafés abrem cedo e muitos fecham às 15h–16h; o jantar costuma ser das 18h às 20h. Não se espera gorjeta, e alguns restaurantes deixam você levar o próprio vinho (BYO)."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptador de tomada tipo I",
+     "Jaqueta impermeável e roupas em camadas",
+     "Protetor solar de fator alto e chapéu",
+     "Repelente contra borrachudos e botas de trilha"
+    ],
+    "safetyAndEtiquette": [
+     "Declare todos os alimentos no aeroporto; não fazer isso pode render uma multa imediata de até 400 NZD.",
+     "Respeite o protocolo dos anfitriões nos marae e em locais sagrados."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "I"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Tomadas tipo I, como na Austrália, com dois pinos chatos inclinados (mais o terra) e interruptor. Plugues turcos precisam de adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "A água da torneira é potável. Na natureza, ferva ou filtre a água de rios e lagos (risco de giárdia).",
+    "vaccines": [
+     "Vacinas de rotina (tétano-difteria, tríplice viral)",
+     "Não são exigidas vacinas especiais"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "111"
+   },
+   "tipping": {
+    "custom": "Não se espera gorjeta; 5-10 % por um serviço excepcional é um bom gesto.",
+    "standardPercent": 0,
+    "rule": "optional",
+    "note": "Aos domingos e feriados, cafés e restaurantes podem cobrar um acréscimo de 10-15 %."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Não há (o GST de 15 % não é reembolsado a turistas)",
+    "minSpend": "Não se aplica",
+    "customsNote": "A Nova Zelândia não reembolsa o GST a turistas; compre nas lojas duty free do aeroporto ou envie a mercadoria para o exterior."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 1 - 3",
+    "topCarriers": [
+     "One NZ",
+     "Spark",
+     "2degrees"
+    ],
+    "airportSimTrapWarning": "As lojas das operadoras nos aeroportos de Auckland e Christchurch vendem pacotes razoáveis, mas configurar um eSIM antes é mais cômodo. Baixe mapas off-line: nas áreas rurais há falhas de cobertura."
+   },
+   "touristScams": [
+    {
+     "title": "Furtos em estacionamentos",
+     "desc": "Carros alugados são arrombados em trilhas e mirantes para roubar a bagagem.",
+     "tip": "Não deixe objetos de valor no carro; guarde-os na hospedagem."
+    },
+    {
+     "title": "Cobranças por danos no aluguel",
+     "desc": "Na devolução do veículo, podem cobrar de você arranhões e amassados que já existiam.",
+     "tip": "Fotografe e filme o veículo ao retirá-lo e contrate seguro com cobertura total."
+    },
+    {
+     "title": "Anúncios falsos de motorhomes ou hospedagem",
+     "desc": "Anúncios baratos demais em redes sociais pedem um depósito por transferência.",
+     "tip": "Reserve apenas com empresas conhecidas ou plataformas confiáveis e pague com cartão."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Новозеландский доллар (NZD)",

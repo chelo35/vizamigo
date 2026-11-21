@@ -1459,6 +1459,371 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Won sul-coreano (KRW)",
+   "bestMonths": "Abril a maio (cerejeiras em flor) e setembro a novembro (folhagem de outono); do fim de junho a julho há chuvas de monção, agosto é muito quente e úmido, e os invernos são gelados",
+   "safety": {
+    "safetyScore": 85,
+    "crimeRateSummary": "Um dos países mais seguros do mundo; celulares e bolsas esquecidos em cafés costumam continuar lá, e andar à noite é seguro. Fique atento a contas infladas na vida noturna, aos aliciadores de grupos religiosos e aos tufões de verão.",
+    "commonScams": [
+     "Aliciadores de grupos religiosos que convidam para uma 'cerimônia cultural' ou 'ritual aos ancestrais'",
+     "Contas infladas em alguns bares de 'acompanhantes' em Itaewon e Gangnam",
+     "Táxis sem licença e motoristas de 'call van' que cobram a mais no aeroporto de Incheon"
+    ],
+    "safeTravelTips": [
+     "Recuse com educação convites de desconhecidos para eventos culturais ou religiosos.",
+     "Use o Naver Map ou o KakaoMap para se orientar; o Google Maps não mostra rotas a pé nem de carro.",
+     "No verão, acompanhe os alertas de tufões e chuvas (app Emergency Ready / Safety Korea)."
+    ],
+    "emergencyNumbers": {
+     "police": "112",
+     "ambulance": "119",
+     "general": "112 / 119"
+    },
+    "safetyLevel": "Excepcionalmente seguro",
+    "badgeColor": "bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-900/60"
+   },
+   "internet": {
+    "networkCoverage": "99 % (uma das redes 5G mais rápidas do mundo; Wi-Fi grátis no metrô e nos trens)",
+    "costPerGbUsd": "~US$ 1,50 - 4",
+    "esimAvailability": "Excelente",
+    "bestCarriers": [
+     "SK Telecom",
+     "KT",
+     "LG U+"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Excelente (trem de alta velocidade KTX, metrôs limpos e pontuais)",
+    "costLevel": "Barato",
+    "singleTicketUsd": "US$ 1,10 - 1,30",
+    "dailyPassUsd": "US$ 3,50 - 4",
+    "popularRideApps": [
+     "Kakao T",
+     "Uber (UT)",
+     "Naver Map",
+     "KakaoMap",
+     "Korail Talk"
+    ],
+    "taxiAdvice": "Os táxis são baratos e seguros; chame pelo Kakao T ou pelo Uber com cartão estrangeiro. No metrô e no ônibus, use o T-money ou o Climate Card para turistas; Seul–Busan leva ~2,5 horas de KTX."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 50 - 75",
+    "dailyBudgetMidrangeUsd": "US$ 110 - 180",
+    "budgetMealUsd": "US$ 7 - 12",
+    "coffeeUsd": "US$ 3 - 5",
+    "waterBottleUsd": "US$ 0,70 - 1,20",
+    "hostelDormUsd": "US$ 18 - 35",
+    "hotel3StarUsd": "US$ 70 - 130",
+    "flightCostIndex": "Moderado a alto (direto ~10–11 h)",
+    "flightTip": "Turkish Airlines, Korean Air e Asiana voam direto Istambul–Seul (Incheon). As conexões pela China ou pelo Golfo às vezes saem mais baratas."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Use as duas mãos para dar ou receber dinheiro, presentes e bebidas.",
+     "Ao beber com pessoas mais velhas, vire um pouco a cabeça e encha o copo delas.",
+     "Em casas e alguns restaurantes, tiram-se os sapatos.",
+     "Não escreva o nome de ninguém com tinta vermelha; isso é associado à morte."
+    ],
+    "festivals": [
+     "Seollal (Ano-Novo Lunar, janeiro–fevereiro)",
+     "Chuseok (festa da colheita, setembro–outubro)",
+     "Festival das Lanternas de Lótus Yeondeunghoe (antes do aniversário de Buda, Seul, abril–maio)"
+    ],
+    "lifestyle": "O ritmo 'ppalli-ppalli' (rápido-rápido), a hierarquia por idade e o respeito confuciano, cafés abertos até tarde e a cultura do K-pop, dos K-dramas e dos cosméticos marcam o dia a dia."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Palácio Gyeongbokgung e vila hanok de Bukchon (Seul)",
+     "N Seoul Tower e Myeongdong",
+     "Gyeongju: templo Bulguksa e gruta de Seokguram (UNESCO)",
+     "Busan: Haeundae, vila cultural de Gamcheon e Haedong Yonggungsa",
+     "Ilha de Jeju e monte Hallasan",
+     "DMZ (com tour)"
+    ],
+    "bestSeasons": "Abril a maio (cerejeiras em flor) e setembro a novembro (folhagem de outono); do fim de junho a julho há chuvas de monção, agosto é muito quente e úmido, e os invernos são gelados",
+    "travelStyleTip": "O eixo Seul–Gyeongju–Busan é fácil de fazer de KTX. Quem veste hanbok entra de graça no Gyeongbokgung; os palácios fecham um dia por semana (o Gyeongbokgung, às terças)."
+   },
+   "religion": {
+    "primaryReligions": "Sem religião ~50–56 %, protestantes ~17–20 %, budistas ~15–17 %, católicos ~6–8 %; os valores confucianos orientam a moral social.",
+    "respectNorms": "Fique em silêncio nos templos, não use a porta central do salão principal e não fotografe quem está rezando. Há restaurantes halal ao redor da Mesquita Central de Seul (Itaewon).",
+    "sacredSites": [
+     "Templo Bulguksa e gruta de Seokguram (Gyeongju)",
+     "Templo Jogyesa (Seul)",
+     "Templo Haeinsa (placas de madeira da Tripitaka Koreana)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Coreano, escrito com o alfabeto hangul, criado sob o rei Sejong em 1443.",
+    "englishProficiency": "Moderado; os jovens sabem inglês básico e as placas têm inglês. O Naver Papago traduz muito bem.",
+    "phrases": [
+     {
+      "phrase": "안녕하세요 (Annyeonghaseyo)",
+      "meaning": "Olá",
+      "translation": "Olá",
+      "pronunciation": "ahn-nyong-hah-seh-yoh"
+     },
+     {
+      "phrase": "감사합니다 (Gamsahamnida)",
+      "meaning": "Obrigado",
+      "translation": "Obrigado",
+      "pronunciation": "kahm-sah-hahm-nee-dah"
+     },
+     {
+      "phrase": "이거 얼마예요? (Igeo eolmayeyo?)",
+      "meaning": "Quanto custa isto?",
+      "translation": "Quanto custa isto?",
+      "pronunciation": "ee-guh ul-mah-yeh-yoh"
+     },
+     {
+      "phrase": "돼지고기 빼 주세요 (Dwaejigogi ppae juseyo)",
+      "meaning": "Sem carne de porco, por favor",
+      "translation": "Sem carne de porco, por favor",
+      "pronunciation": "dweh-jee-go-gee ppeh joo-seh-yoh"
+     },
+     {
+      "phrase": "계산해 주세요 (Gyesanhae juseyo)",
+      "meaning": "A conta, por favor",
+      "translation": "A conta, por favor",
+      "pronunciation": "kyeh-sahn-heh joo-seh-yoh"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Depois dos Três Reinos, governaram Silla (668), Goryeo e a dinastia Joseon (fundada em 1392); em 1443 foi criado o alfabeto hangul. Após o domínio japonês (1910–1945), a península foi dividida; a Guerra da Coreia (1950–1953), para a qual a Turquia também enviou tropas, terminou com um armistício. A Coreia do Sul se industrializou com o 'milagre do rio Han' e se democratizou em 1987.",
+    "milestones": [
+     "1392: fundação da dinastia Joseon",
+     "1443: o rei Sejong cria o hangul",
+     "1950–1953: Guerra da Coreia e armistício",
+     "1988: Jogos Olímpicos de Seul"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Bibimbap (arroz com legumes e carne em tigela de pedra quente)",
+     "Bulgogi (carne bovina marinada e grelhada)",
+     "Kimchi jjigae (ensopado de kimchi)"
+    ],
+    "traditionalDrinks": [
+     "Soju (destilado de arroz/cereais)",
+     "Makgeolli (vinho de arroz turvo)",
+     "Sikhye (bebida doce de arroz)"
+    ],
+    "streetFoodAndDesserts": [
+     "Tteokbokki (bolinhos de arroz picantes)",
+     "Hotteok (panqueca recheada com calda doce)",
+     "Bungeoppang (waffle em forma de peixe com feijão-vermelho)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Rei Sejong (criador do hangul)",
+     "Almirante Yi Sun-sin (famoso pelos 'navios-tartaruga' blindados)",
+     "Han Kang (Nobel de Literatura de 2024)"
+    ],
+    "strongSectors": [
+     "Semicondutores (Samsung, SK hynix)",
+     "Indústria automobilística e construção naval (Hyundai, Kia)",
+     "Exportação cultural: K-pop, dramas, videogames e cosméticos"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Cartões funcionam em toda parte e quase não é preciso dinheiro vivo; o cartão T-money serve no transporte e nas lojas de conveniência. Alguns lugares pequenos só aceitam cartões ou apps coreanos, então leve alguns wons.",
+    "tippingCulture": "Não há costume de dar gorjeta e ela não é esperada; os hotéis de luxo cobram taxa de serviço.",
+    "economicPillars": "Semicondutores e eletrônicos, indústria automobilística, construção naval, petroquímica, indústria cultural (Hallyu) e turismo."
+   }
+  },
+  "itin": {
+   "routeName": "Clássicos da Coreia: Seul, Gyeongju e Busan",
+   "routeSummary": "Um roteiro de 8 dias de KTX que vai dos palácios Joseon e das ruas de neon de Seul até Gyeongju, o 'museu sem paredes' de Silla, e a litorânea Busan.",
+   "totalDays": 8,
+   "idealDurationText": "8 dias",
+   "bestSeason": "Abril a maio (cerejeiras em flor) e setembro a novembro (folhagem de outono); do fim de junho a julho há chuvas de monção, agosto é muito quente e úmido, e os invernos são gelados",
+   "transportMode": "Trem KTX, metrô e táxis Kakao T",
+   "paceLevel": "Moderado",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Seul (palácios e vila hanok)",
+     "recommendedDuration": "3–4 dias",
+     "durationBadge": "4 dias",
+     "highlights": [
+      "Palácio Gyeongbokgung e troca da guarda",
+      "Vila hanok de Bukchon e Insadong",
+      "N Seoul Tower (Namsan)",
+      "Mercado Gwangjang e Myeongdong"
+     ],
+     "activities": [
+      "Alugue um hanbok e visite o palácio de graça.",
+      "Caminhe às margens do riacho Cheonggyecheon ao anoitecer.",
+      "Assista aos artistas de rua de Hongdae ou faça um tour de meio dia à DMZ."
+     ],
+     "foodAndDrinks": [
+      "Bindaetteok (panqueca de feijão-mungo) no mercado Gwangjang",
+      "Churrasco coreano (carne bovina: bulgogi, galbi)",
+      "Comida coreana halal em Itaewon"
+     ],
+     "criticalTips": [
+      "O Gyeongbokgung fecha às terças; a troca da guarda acontece em horários fixos.",
+      "Nos churrascos, 'samgyeopsal' é barriga de porco; peça 'sogogi' se quiser carne bovina."
+     ],
+     "mapsQuery": "Gyeongbokgung Palace, Seoul, South Korea"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Gyeongju (capital de Silla)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Templo Bulguksa",
+      "O Buda da gruta de Seokguram",
+      "Túmulos reais de Daereungwon e observatório Cheomseongdae",
+      "Palácio Donggung e lago Wolji (iluminado à noite)"
+     ],
+     "activities": [
+      "Percorra os túmulos reais de bicicleta.",
+      "Faça uma pausa nos cafés hanok de Hwangnidan-gil.",
+      "Fotografe os reflexos do lago Wolji depois do pôr do sol."
+     ],
+     "foodAndDrinks": [
+      "Hwangnam-ppang (pãozinho de feijão-vermelho de Gyeongju)",
+      "Ssambap (arroz e acompanhamentos enrolados em folhas)",
+      "Makgeolli de Gyeongju"
+     ],
+     "criticalTips": [
+      "O KTX para na estação de Singyeongju, a ~20 min do centro; siga de ônibus ou táxi.",
+      "Para chegar a Seokguram, suba a partir do Bulguksa de ônibus ou táxi; fique de olho no último ônibus."
+     ],
+     "mapsQuery": "Bulguksa Temple, Gyeongju, South Korea"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Busan (praias e porto)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Praias de Haeundae e Gwangalli",
+      "Vila cultural de Gamcheon",
+      "Mercado de peixes de Jagalchi",
+      "Templo à beira-mar Haedong Yonggungsa"
+     ],
+     "activities": [
+      "Ande na Sky Capsule à beira-mar do Haeundae Blueline Park.",
+      "Procure a estátua do 'Pequeno Príncipe' entre as casas coloridas de Gamcheon.",
+      "Assista à noite ao show de luzes da ponte Gwangan."
+     ],
+     "foodAndDrinks": [
+      "Frutos do mar frescos em Jagalchi",
+      "Milmyeon (macarrão frio de trigo de Busan)",
+      "Ssiat hotteok (panqueca doce com sementes)"
+     ],
+     "criticalTips": [
+      "A famosa sopa dwaeji gukbap de Busan leva carne de porco; prefira peixes e frutos do mar.",
+      "Gamcheon é um bairro residencial; fique em silêncio e não fotografe o interior das casas."
+     ],
+     "mapsQuery": "Haeundae Beach, Busan, South Korea"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Bibimbap",
+     "Bulgogi",
+     "Galbi (costela bovina)",
+     "Japchae (macarrão de vidro)"
+    ],
+    "drinks": [
+     "Soju",
+     "Makgeolli",
+     "Sikhye",
+     "Chá de yuja"
+    ],
+    "streetFoods": [
+     "Tteokbokki",
+     "Hotteok",
+     "Gimbap",
+     "Bungeoppang"
+    ],
+    "diningAdvice": "Os acompanhamentos (banchan) são grátis e repostos à vontade. Carne de porco e caldos de carne são muito comuns; para comida halal, procure em Itaewon ou em restaurantes com certificação 'Muslim Friendly'. Muitos restaurantes de churrasco não servem porções individuais."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "T-money ou Climate Card",
+     "Apps Naver Map, KakaoMap e Papago",
+     "Calçado confortável (você vai andar muito)",
+     "Capa de chuva no verão e casaco grosso no inverno"
+    ],
+    "safetyAndEtiquette": [
+     "No metrô, não se sente nos assentos reservados a idosos e gestantes.",
+     "Evite falar alto ou ao telefone no transporte público.",
+     "As leis antidrogas, inclusive sobre a cannabis, são muito rígidas."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "220V",
+    "frequency": "60Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Tomadas de dois pinos redondos (C/F), como na Turquia; não é preciso adaptador. A frequência é de 60 Hz, o que não é problema para a maioria dos carregadores."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "A água da torneira atende oficialmente às normas de potabilidade, mas a maioria das pessoas bebe água filtrada ou mineral. Nos restaurantes, a água é grátis.",
+    "vaccines": [
+     "Vacinas de rotina (tétano, difteria, sarampo)",
+     "Recomenda-se a vacina contra hepatite A"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "119"
+   },
+   "tipping": {
+    "custom": "Não se dá gorjeta.",
+    "standardPercent": 0,
+    "rule": "optional",
+    "note": "Deixar gorjeta pode causar confusão; os hotéis de luxo já cobram 10 % de serviço."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA de 10 %; restituição líquida de ~5–8 %",
+    "minSpend": "Mínimo de 15.000 KRW numa loja 'Tax Free'",
+    "customsNote": "Muitas lojas fazem a restituição na hora, no caixa, até certos limites (com o passaporte). Para o restante, use os quiosques dos aeroportos de Incheon ou Gimpo com o passaporte e os recibos."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 1,50 - 4,00",
+    "topCarriers": [
+     "SK Telecom",
+     "KT",
+     "LG U+"
+    ],
+    "airportSimTrapWarning": "Os balcões das operadoras em Incheon são confiáveis, mas uma eSIM ou chip comprado on-line com antecedência costuma sair mais barato. Um chip com número coreano ajuda a verificar alguns apps (por exemplo, delivery e ingressos)."
+   },
+   "touristScams": [
+    {
+     "title": "Convite para uma 'cerimônia cultural'",
+     "desc": "Pessoas simpáticas em áreas turísticas convidam você para uma 'cerimônia tradicional' ou um 'teste de personalidade'; o objetivo é recrutar membros e arrecadar doações para um grupo religioso.",
+     "tip": "Recuse com educação e não passe seus contatos."
+    },
+    {
+     "title": "Conta em bares de acompanhantes",
+     "desc": "Alguns bares de Itaewon e Gangnam cobram caro pelas bebidas das acompanhantes que se sentam à sua mesa.",
+     "tip": "Evite bares sem cardápio de preços ou com aliciadores na rua."
+    },
+    {
+     "title": "'Call vans' e táxis sem licença no aeroporto",
+     "desc": "Em Incheon, alguns motoristas abordam os viajantes e oferecem tarifas fixas, porém muito altas, até a cidade.",
+     "tip": "Use a fila oficial de táxis, o Kakao T, o trem AREX ou os ônibus limusine do aeroporto."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Южнокорейская вона (KRW)",

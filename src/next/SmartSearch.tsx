@@ -32,22 +32,22 @@ export function useSearchIndex(passport: string) {
   );
   const items = useMemo(() => new Map(getPassportItems(passport).map((x) => [x.c, x])), [passport]);
   const tools: (SearchAction & { keys: string })[] = [
-    { kind: 'tool', id: 't-month', label: l('Bu ay nereye gidilir?', 'Where to go this month', 'Wohin diesen Monat?', '¿Dónde viajar este mes?', 'Куда поехать в этом месяце'), icon: 'sun', tab: 'explore', tile: 'month', keys: 'bu ay nereye gidilir mevsim sezon tatil ocak şubat mart nisan mayıs haziran temmuz ağustos eylül ekim kasım aralık where to go this month season wohin reisezeit dónde viajar mes куда поехать сезон' },
-    { kind: 'tool', id: 't-where', label: l('Nereye gidebilirim?', 'Where can I go?', 'Wohin kann ich?', '¿Dónde puedo ir?', 'Куда можно?'), icon: 'pin', tab: 'explore', tile: 'where', keys: 'nereye gidebilirim vizesiz visa free where can i go kimlik' },
-    { kind: 'tool', id: 't-compare', label: l('Pasaport karşılaştır', 'Compare passports', 'Pässe vergleichen', 'Comparar pasaportes', 'Сравнить паспорта'), icon: 'scale', tab: 'explore', tile: 'compare', keys: 'karsilastir compare cifte dual pasaport passport' },
-    { kind: 'tool', id: 't-days', label: l('Schengen 90/180 sayacı', 'Schengen 90/180 counter', 'Schengen-Rechner', 'Contador Schengen', 'Счётчик Шенгена'), icon: 'cal', tab: 'track', tile: 'days', keys: 'schengen 90 180 gun sayaci day counter' },
-    { kind: 'tool', id: 't-route', label: l('Rota planlayıcı', 'Route planner', 'Routenplaner', 'Planificador', 'Маршрут'), icon: 'route', tab: 'plan', tile: 'planner', keys: 'rota route plan planlayici itinerary' },
-    { kind: 'tool', id: 't-transit', label: l('Transit kuralları', 'Transit rules', 'Transitregeln', 'Tránsito', 'Транзит'), icon: 'transit', tab: 'plan', tile: 'transit', keys: 'transit aktarma layover' },
-    { kind: 'tool', id: 't-pack', label: l('Bavul listesi', 'Packing list', 'Packliste', 'Maleta', 'Список вещей'), icon: 'bag', tab: 'nomad', tile: 'pack', keys: 'bavul valiz packing liste' },
-    { kind: 'tool', id: 't-fx', label: l('Döviz çevirici', 'Currency converter', 'Währungsrechner', 'Conversor', 'Конвертер'), icon: 'fx', tab: 'nomad', tile: 'fx', keys: 'doviz kur currency exchange para euro dolar' },
-    { kind: 'tool', id: 't-tip', label: l('Bahşiş', 'Tipping', 'Trinkgeld', 'Propinas', 'Чаевые'), icon: 'receipt', tab: 'nomad', tile: 'tip', keys: 'bahsis tip tipping' },
-    { kind: 'tool', id: 't-plug', label: l('Priz & eSIM', 'Plugs & eSIM', 'Stecker & eSIM', 'Enchufes', 'Розетки'), icon: 'plug', tab: 'nomad', tile: 'plug', keys: 'priz plug esim sim internet voltaj' },
-    { kind: 'tool', id: 't-sos', label: l('Acil durum & konsolosluk', 'Emergency & consulate', 'Notfall & Konsulat', 'Emergencias', 'Экстренные'), icon: 'sos', tab: 'nomad', tile: 'sos', keys: 'acil emergency polis police ambulans konsolosluk consulate buyukelcilik' },
-    { kind: 'tool', id: 't-lost', label: l('Pasaport kaybı', 'Lost passport', 'Passverlust', 'Pasaporte perdido', 'Утеря паспорта'), icon: 'shield', tab: 'nomad', tile: 'loss', keys: 'kayip pasaport lost passport ret itiraz refusal' },
-    { kind: 'tool', id: 't-nomad', label: l('Dijital göçebe vizeleri', 'Digital nomad visas', 'Nomadenvisa', 'Visados nómada', 'Визы кочевников'), icon: 'laptop', tab: 'plan', tile: 'nomad', keys: 'gocebe nomad remote uzaktan calisma 183 vergi tax' },
-    { kind: 'tool', id: 't-changes', label: l('Kural değişiklikleri', 'Rule changes', 'Regeländerungen', 'Cambios', 'Изменения'), icon: 'bell', tab: 'explore', tile: 'changes', keys: 'degisiklik yeni kural change news' },
-    { kind: 'tool', id: 't-radar', label: l('Dünya radarı: saat, hava, kur', 'World radar: time, weather, money', 'Weltradar', 'Radar mundial', 'Мировой радар'), icon: 'radar', tab: 'explore', tile: 'radar', keys: 'saat hava durumu weather time clock radar harita map' },
-    { kind: 'tool', id: 't-docs', label: l('Belgelerim & cüzdan', 'My documents & wallet', 'Dokumente & Wallet', 'Documentos', 'Документы'), icon: 'wallet', tab: 'track', tile: 'docs', keys: 'cuzdan wallet belge document bilet ticket butce budget' }
+    { kind: 'tool', id: 't-month', label: l('Bu ay nereye gidilir?', 'Where to go this month', 'Wohin diesen Monat?', '¿Dónde viajar este mes?', 'Куда поехать в этом месяце', 'Para onde viajar este mês?'), icon: 'sun', tab: 'explore', tile: 'month', keys: 'bu ay nereye gidilir mevsim sezon tatil ocak şubat mart nisan mayıs haziran temmuz ağustos eylül ekim kasım aralık where to go this month season wohin reisezeit dónde viajar mes куда поехать сезон' },
+    { kind: 'tool', id: 't-where', label: l('Nereye gidebilirim?', 'Where can I go?', 'Wohin kann ich?', '¿Dónde puedo ir?', 'Куда можно?', 'Para onde posso ir?'), icon: 'pin', tab: 'explore', tile: 'where', keys: 'nereye gidebilirim vizesiz visa free where can i go kimlik' },
+    { kind: 'tool', id: 't-compare', label: l('Pasaport karşılaştır', 'Compare passports', 'Pässe vergleichen', 'Comparar pasaportes', 'Сравнить паспорта', 'Comparar passaportes'), icon: 'scale', tab: 'explore', tile: 'compare', keys: 'karsilastir compare cifte dual pasaport passport' },
+    { kind: 'tool', id: 't-days', label: l('Schengen 90/180 sayacı', 'Schengen 90/180 counter', 'Schengen-Rechner', 'Contador Schengen', 'Счётчик Шенгена', 'Contador Schengen'), icon: 'cal', tab: 'track', tile: 'days', keys: 'schengen 90 180 gun sayaci day counter' },
+    { kind: 'tool', id: 't-route', label: l('Rota planlayıcı', 'Route planner', 'Routenplaner', 'Planificador', 'Маршрут', 'Planejador'), icon: 'route', tab: 'plan', tile: 'planner', keys: 'rota route plan planlayici itinerary' },
+    { kind: 'tool', id: 't-transit', label: l('Transit kuralları', 'Transit rules', 'Transitregeln', 'Tránsito', 'Транзит', 'Trânsito'), icon: 'transit', tab: 'plan', tile: 'transit', keys: 'transit aktarma layover' },
+    { kind: 'tool', id: 't-pack', label: l('Bavul listesi', 'Packing list', 'Packliste', 'Maleta', 'Список вещей', 'Mala'), icon: 'bag', tab: 'nomad', tile: 'pack', keys: 'bavul valiz packing liste' },
+    { kind: 'tool', id: 't-fx', label: l('Döviz çevirici', 'Currency converter', 'Währungsrechner', 'Conversor', 'Конвертер', 'Conversor'), icon: 'fx', tab: 'nomad', tile: 'fx', keys: 'doviz kur currency exchange para euro dolar' },
+    { kind: 'tool', id: 't-tip', label: l('Bahşiş', 'Tipping', 'Trinkgeld', 'Propinas', 'Чаевые', 'Gorjetas'), icon: 'receipt', tab: 'nomad', tile: 'tip', keys: 'bahsis tip tipping' },
+    { kind: 'tool', id: 't-plug', label: l('Priz & eSIM', 'Plugs & eSIM', 'Stecker & eSIM', 'Enchufes', 'Розетки', 'Tomadas'), icon: 'plug', tab: 'nomad', tile: 'plug', keys: 'priz plug esim sim internet voltaj' },
+    { kind: 'tool', id: 't-sos', label: l('Acil durum & konsolosluk', 'Emergency & consulate', 'Notfall & Konsulat', 'Emergencias', 'Экстренные', 'Emergências'), icon: 'sos', tab: 'nomad', tile: 'sos', keys: 'acil emergency polis police ambulans konsolosluk consulate buyukelcilik' },
+    { kind: 'tool', id: 't-lost', label: l('Pasaport kaybı', 'Lost passport', 'Passverlust', 'Pasaporte perdido', 'Утеря паспорта', 'Passaporte perdido'), icon: 'shield', tab: 'nomad', tile: 'loss', keys: 'kayip pasaport lost passport ret itiraz refusal' },
+    { kind: 'tool', id: 't-nomad', label: l('Dijital göçebe vizeleri', 'Digital nomad visas', 'Nomadenvisa', 'Visados nómada', 'Визы кочевников', 'Vistos para nômades'), icon: 'laptop', tab: 'plan', tile: 'nomad', keys: 'gocebe nomad remote uzaktan calisma 183 vergi tax' },
+    { kind: 'tool', id: 't-changes', label: l('Kural değişiklikleri', 'Rule changes', 'Regeländerungen', 'Cambios', 'Изменения', 'Alterações'), icon: 'bell', tab: 'explore', tile: 'changes', keys: 'degisiklik yeni kural change news' },
+    { kind: 'tool', id: 't-radar', label: l('Dünya radarı: saat, hava, kur', 'World radar: time, weather, money', 'Weltradar', 'Radar mundial', 'Мировой радар', 'Radar mundial'), icon: 'radar', tab: 'explore', tile: 'radar', keys: 'saat hava durumu weather time clock radar harita map' },
+    { kind: 'tool', id: 't-docs', label: l('Belgelerim & cüzdan', 'My documents & wallet', 'Dokumente & Wallet', 'Documentos', 'Документы', 'Documentos'), icon: 'wallet', tab: 'track', tile: 'docs', keys: 'cuzdan wallet belge document bilet ticket butce budget' }
   ];
   const search = (q: string): SearchAction[] => {
     const raw = norm(q);
@@ -153,7 +153,7 @@ export const SmartSearch: React.FC<Props> = ({ id, passport, placeholder, varian
     >
       <div className="vz-searchbox">
         {isFull && (
-          <button type="button" className="vz-ss-back" onClick={() => { setFull(false); setOpen(false); }} aria-label={l('Aramayı kapat', 'Close search', 'Suche schließen', 'Cerrar búsqueda', 'Закрыть поиск')}>
+          <button type="button" className="vz-ss-back" onClick={() => { setFull(false); setOpen(false); }} aria-label={l('Aramayı kapat', 'Close search', 'Suche schließen', 'Cerrar búsqueda', 'Закрыть поиск', 'Fechar busca')}>
             <Icon name="back" size={18} duo={false} />
           </button>
         )}
@@ -196,21 +196,21 @@ export const SmartSearch: React.FC<Props> = ({ id, passport, placeholder, varian
         />
         </span>
         {q && (
-          <button type="button" onClick={() => { setQ(''); setOpen(false); }} aria-label={l('Temizle', 'Clear', 'Leeren', 'Borrar', 'Очистить')}>
+          <button type="button" onClick={() => { setQ(''); setOpen(false); }} aria-label={l('Temizle', 'Clear', 'Leeren', 'Borrar', 'Очистить', 'Excluir')}>
             <Icon name="close" size={16} duo={false} />
           </button>
         )}
-        {variant === 'hero' && <button type="submit" className="vz-btn vz-btn-primary vz-ss-go">{l('Ara', 'Search', 'Suchen', 'Buscar', 'Найти')}</button>}
+        {variant === 'hero' && <button type="submit" className="vz-btn vz-btn-primary vz-ss-go">{l('Ara', 'Search', 'Suchen', 'Buscar', 'Найти', 'Buscar')}</button>}
       </div>
       {isFull && !q.trim() && (
         <div className="vz-ss-pop">
-          <div className="vz-ss-empty">{l('Ülke adı ya da "Schengen", "bavul", "döviz" gibi bir araç yaz.', 'Type a country, or a tool like "Schengen", "packing", "currency".', 'Land oder Tool eingeben.', 'Escribe un país o una herramienta.', 'Введите страну или инструмент.')}</div>
+          <div className="vz-ss-empty">{l('Ülke adı ya da "Schengen", "bavul", "döviz" gibi bir araç yaz.', 'Type a country, or a tool like "Schengen", "packing", "currency".', 'Land oder Tool eingeben.', 'Escribe un país o una herramienta.', 'Введите страну или инструмент.', 'Digite um país ou uma ferramenta.')}</div>
         </div>
       )}
       {open && q.trim() && isFull === full && (
         <div className="vz-ss-pop" id={listId} role="listbox">
           {res.length === 0 ? (
-            <div className="vz-ss-empty">{l('Sonuç yok. Ülke adı ya da "Schengen", "bavul" gibi bir araç yaz.', 'No results. Try a country or a tool like "Schengen" or "packing".', 'Keine Treffer.', 'Sin resultados.', 'Ничего не найдено.')}</div>
+            <div className="vz-ss-empty">{l('Sonuç yok. Ülke adı ya da "Schengen", "bavul" gibi bir araç yaz.', 'No results. Try a country or a tool like "Schengen" or "packing".', 'Keine Treffer.', 'Sin resultados.', 'Ничего не найдено.', 'Nenhum resultado.')}</div>
           ) : (
             res.map((a, i) => (
               <button
@@ -229,7 +229,7 @@ export const SmartSearch: React.FC<Props> = ({ id, passport, placeholder, varian
                   <span className="vz-row-t">{a.label}</span>
                   {a.sub && <span className="vz-row-s">{a.sub}</span>}
                 </span>
-                {a.kind === 'country' && a.code ? <VisaBadge item={items.get(a.code)} /> : <span className="vz-ss-kind">{l('Araç', 'Tool', 'Tool', 'Herramienta', 'Инструмент')}</span>}
+                {a.kind === 'country' && a.code ? <VisaBadge item={items.get(a.code)} /> : <span className="vz-ss-kind">{l('Araç', 'Tool', 'Tool', 'Herramienta', 'Инструмент', 'Ferramenta')}</span>}
               </button>
             ))
           )}

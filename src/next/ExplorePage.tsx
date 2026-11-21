@@ -91,63 +91,63 @@ export const ExplorePage: React.FC<ExploreProps> = (p) => {
   const tiles: Tile[] = [
     {
       id: 'where', icon: 'pin', photo: 'x-where',
-      title: l('Nereye gidebilirim?', 'Where can I go?', 'Wohin kann ich?', '¿Dónde puedo ir?', 'Куда можно?'),
-      desc: l('Vizesiz, e-vize, kapıda vize', 'Visa-free, eVisa, on arrival', 'Visumfrei, eVisum, bei Ankunft', 'Sin visado, eVisa, a la llegada', 'Без визы, eVisa, по прилёте'),
+      title: l('Nereye gidebilirim?', 'Where can I go?', 'Wohin kann ich?', '¿Dónde puedo ir?', 'Куда можно?', 'Para onde posso ir?'),
+      desc: l('Vizesiz, e-vize, kapıda vize', 'Visa-free, eVisa, on arrival', 'Visumfrei, eVisum, bei Ankunft', 'Sin visado, eVisa, a la llegada', 'Без визы, eVisa, по прилёте', 'Sem visto, e-Visa, na chegada'),
       badge: `${counts.free}`,
       render: () => <WhereView passport={p.currentPassport} onOpenCountry={p.onOpenCountry} />
     },
     {
       id: 'month', icon: 'sun', photo: 'x-month',
       title: monthTitle,
-      desc: l(`En iyi dönemindeki ${wtgCountries(curM).length} ülke ve festivaller`, `${wtgCountries(curM).length} countries in season, plus festivals`, `${wtgCountries(curM).length} Länder in Saison und Feste`, `${wtgCountries(curM).length} países en temporada y fiestas`, `${wtgCountries(curM).length} стран в сезон и праздники`),
+      desc: l(`En iyi dönemindeki ${wtgCountries(curM).length} ülke ve festivaller`, `${wtgCountries(curM).length} countries in season, plus festivals`, `${wtgCountries(curM).length} Länder in Saison und Feste`, `${wtgCountries(curM).length} países en temporada y fiestas`, `${wtgCountries(curM).length} стран в сезон и праздники`, `${wtgCountries(curM).length} países em alta temporada e festas`),
       onOpen: openMonth
     },
     {
       id: 'countries', icon: 'globe', photo: 'x-globe',
-      title: l('Ülkeler', 'Countries', 'Länder', 'Países', 'Страны'),
-      desc: l('199 ülke, ara ve filtrele', 'All 199, search and filter', 'Alle 199 Länder', 'Los 199 países', 'Все 199 стран'),
+      title: l('Ülkeler', 'Countries', 'Länder', 'Países', 'Страны', 'Países'),
+      desc: l('199 ülke, ara ve filtrele', 'All 199, search and filter', 'Alle 199 Länder', 'Los 199 países', 'Все 199 стран', 'Os 199 países'),
       render: () => <CountriesView key={query} passport={p.currentPassport} initialQuery={query} onOpenCountry={p.onOpenCountry} />
     },
     {
       id: 'compare', icon: 'scale', photo: 'x-compare',
-      title: l('Pasaport karşılaştır', 'Compare passports', 'Pässe vergleichen', 'Comparar pasaportes', 'Сравнить паспорта'),
-      desc: l('İki pasaport yan yana', 'Two passports side by side', 'Zwei Pässe nebeneinander', 'Dos pasaportes', 'Два паспорта рядом'),
+      title: l('Pasaport karşılaştır', 'Compare passports', 'Pässe vergleichen', 'Comparar pasaportes', 'Сравнить паспорта', 'Comparar passaportes'),
+      desc: l('İki pasaport yan yana', 'Two passports side by side', 'Zwei Pässe nebeneinander', 'Dos pasaportes', 'Два паспорта рядом', 'Dois passaportes'),
       render: () => <CompareView passportA={p.currentPassport} passportB={p.secondaryPassport} onOpenCountry={p.onOpenCountry} />
     },
     {
       id: 'popular', icon: 'star', photo: 'x-routes',
-      title: l('Popüler rotalar', 'Popular trips', 'Beliebte Ziele', 'Destinos populares', 'Популярное'),
-      desc: l('Gezginlerin sevdikleri', 'Travellers’ favourites', 'Lieblingsziele', 'Favoritos', 'Любимые места'),
+      title: l('Popüler rotalar', 'Popular trips', 'Beliebte Ziele', 'Destinos populares', 'Популярное', 'Destinos populares'),
+      desc: l('Gezginlerin sevdikleri', 'Travellers’ favourites', 'Lieblingsziele', 'Favoritos', 'Любимые места', 'Favoritos'),
       render: () => <PopularView passport={p.currentPassport} onOpenCountry={p.onOpenCountry} />
     },
     {
       id: 'radar', icon: 'radar', photo: 'x-radar',
-      title: l('Dünya radarı', 'World radar', 'Weltradar', 'Radar mundial', 'Мировой радар'),
-      desc: l('Saat, hava, kur bir arada', 'Time, weather, currency', 'Zeit, Wetter, Kurse', 'Hora, tiempo, divisas', 'Время, погода, курсы'),
+      title: l('Dünya radarı', 'World radar', 'Weltradar', 'Radar mundial', 'Мировой радар', 'Radar mundial'),
+      desc: l('Saat, hava, kur bir arada', 'Time, weather, currency', 'Zeit, Wetter, Kurse', 'Hora, tiempo, divisas', 'Время, погода, курсы', 'Hora, clima, câmbio'),
       render: () => <RadarView passport={p.currentPassport} destination={destination} onOpenCountry={p.onOpenCountry} />
     },
     {
       id: 'changes', icon: 'bell', photo: 'x-bell',
-      title: l('Kural değişiklikleri', 'Rule changes', 'Regeländerungen', 'Cambios de reglas', 'Изменения правил'),
-      desc: l('Son değişen vize kuralları', 'Latest visa rule changes', 'Neueste Änderungen', 'Últimos cambios', 'Последние изменения'),
+      title: l('Kural değişiklikleri', 'Rule changes', 'Regeländerungen', 'Cambios de reglas', 'Изменения правил', 'Mudanças nas regras'),
+      desc: l('Son değişen vize kuralları', 'Latest visa rule changes', 'Neueste Änderungen', 'Últimos cambios', 'Последние изменения', 'Últimas mudanças'),
       render: () => <ChangesView passport={p.currentPassport} onOpenAudit={p.onOpenAudit} onReport={p.onReport} onOpenCountry={p.onOpenCountry} />
     },
     {
       id: 'trip', icon: 'plane', photo: 'x-planner',
-      title: l('Seyahat planlayıcı', 'Trip planner', 'Reiseplaner', 'Planificador de viaje', 'Планировщик поездки'),
-      desc: l('Uçuş fiyatı, otel, toplam bütçe', 'Flight price, stay, total budget', 'Flugpreis, Hotel, Budget', 'Vuelo, hotel, presupuesto', 'Билеты, отель, бюджет'),
+      title: l('Seyahat planlayıcı', 'Trip planner', 'Reiseplaner', 'Planificador de viaje', 'Планировщик поездки', 'Planejador de viagem'),
+      desc: l('Uçuş fiyatı, otel, toplam bütçe', 'Flight price, stay, total budget', 'Flugpreis, Hotel, Budget', 'Vuelo, hotel, presupuesto', 'Билеты, отель, бюджет', 'Voo, hotel, orçamento'),
       onOpen: () => p.onOpenTool('nomad', 'trip')
     },
     {
       id: 'easy', icon: 'sun', photo: 'x-easy',
-      title: l('Kolay tatil', 'Easy trip', 'Einfache Reise', 'Viaje fácil', 'Лёгкая поездка'),
-      desc: l('Uçuş, otel, ulaşım, sigorta', 'Flights, stay, transfer, insurance', 'Flug, Hotel, Transfer', 'Vuelo, hotel, traslado', 'Перелёт, отель, трансфер'),
+      title: l('Kolay tatil', 'Easy trip', 'Einfache Reise', 'Viaje fácil', 'Лёгкая поездка', 'Viagem sem complicação'),
+      desc: l('Uçuş, otel, ulaşım, sigorta', 'Flights, stay, transfer, insurance', 'Flug, Hotel, Transfer', 'Vuelo, hotel, traslado', 'Перелёт, отель, трансфер', 'Voo, hotel, transfer'),
       render: () => <EasyTripView passport={p.currentPassport} destination={destination} onDestination={changeDest} onOpenCountry={p.onOpenCountry} />
     },
     {
       id: 'nomad', icon: 'laptop', photo: 'x-nomad',
-      title: l('Dijital göçebe', 'Digital nomads', 'Digitale Nomaden', 'Nómadas digitales', 'Цифровые кочевники'),
-      desc: l('Vizeler, aylık maliyet, şehirler', 'Visas, monthly costs, cities', 'Visa, Kosten, Städte', 'Visados, costes, ciudades', 'Визы, расходы, города'),
+      title: l('Dijital göçebe', 'Digital nomads', 'Digitale Nomaden', 'Nómadas digitales', 'Цифровые кочевники', 'Nômades digitais'),
+      desc: l('Vizeler, aylık maliyet, şehirler', 'Visas, monthly costs, cities', 'Visa, Kosten, Städte', 'Visados, costes, ciudades', 'Визы, расходы, города', 'Vistos, custos, cidades'),
       onOpen: () => p.onOpenTool('plan', 'nomad')
     }
   ];
@@ -161,7 +161,7 @@ export const ExplorePage: React.FC<ExploreProps> = (p) => {
               id="rd-q"
               variant="hero"
               passport={p.currentPassport}
-              placeholder={l('Vize kuralı, ülke ya da rehber ara…', 'Search visa rules, countries, guides…', 'Visaregeln, Länder, Ratgeber suchen…', 'Busca visados, países, guías…', 'Поиск: визы, страны, гиды…')}
+              placeholder={l('Vize kuralı, ülke ya da rehber ara…', 'Search visa rules, countries, guides…', 'Visaregeln, Länder, Ratgeber suchen…', 'Busca visados, países, guías…', 'Поиск: визы, страны, гиды…', 'Busque vistos, países, guias…')}
               onOpenCountry={p.onOpenCountry}
               onOpenTool={(tab, tile) => (tab === 'explore' ? openTile(tile) : p.onOpenTool(tab, tile))}
               onQuery={(q) => {
@@ -172,9 +172,9 @@ export const ExplorePage: React.FC<ExploreProps> = (p) => {
           }
           chips={[
             { label: monthTitle, onClick: openMonth },
-            { label: l('Nereye gidebilirim?', 'Where can I go?', 'Wohin kann ich?', '¿Dónde puedo ir?', 'Куда можно?'), onClick: () => openTile('where') },
-            { label: l('Pasaport karşılaştır', 'Compare passports', 'Pässe vergleichen', 'Comparar', 'Сравнить'), onClick: () => openTile('compare') },
-            { label: l('Popüler rotalar', 'Popular trips', 'Beliebte Ziele', 'Populares', 'Популярное'), onClick: () => openTile('popular') }
+            { label: l('Nereye gidebilirim?', 'Where can I go?', 'Wohin kann ich?', '¿Dónde puedo ir?', 'Куда можно?', 'Para onde posso ir?'), onClick: () => openTile('where') },
+            { label: l('Pasaport karşılaştır', 'Compare passports', 'Pässe vergleichen', 'Comparar', 'Сравнить', 'Comparar'), onClick: () => openTile('compare') },
+            { label: l('Popüler rotalar', 'Popular trips', 'Beliebte Ziele', 'Populares', 'Популярное', 'Populares'), onClick: () => openTile('popular') }
           ]}
         />
         <div className="rd-wrap vz-hb-lift">
@@ -183,7 +183,7 @@ export const ExplorePage: React.FC<ExploreProps> = (p) => {
       </div>
 
       <div className="vz-wrap vz-page-body" style={{ paddingTop: 28 }}>
-        <section className="vz-tripcard" aria-label={l('Seçili ülke', 'Selected country', 'Gewähltes Land', 'País elegido', 'Выбранная страна')}>
+        <section className="vz-tripcard" aria-label={l('Seçili ülke', 'Selected country', 'Gewähltes Land', 'País elegido', 'Выбранная страна', 'País escolhido')}>
           <LiveStrip passport={p.currentPassport} destination={destination} onDestinationChange={changeDest} onOpenRoutePlanner={p.onOpenRoute} />
           <QuickDeals passport={p.currentPassport} destination={destination} />
         </section>
@@ -194,11 +194,11 @@ export const ExplorePage: React.FC<ExploreProps> = (p) => {
         <section className="vz-home-sec" aria-labelledby="vz-h-tools">
           <SecHead
             id="vz-h-tools"
-            eyebrow={l('Keşfet', 'Explore', 'Entdecken', 'Explorar', 'Обзор')}
-            title={l('Ne yapmak istersin?', 'What would you like to do?', 'Was möchtest du tun?', '¿Qué quieres hacer?', 'Что хотите сделать?')}
-            sub={l('Kutucuğa dokun, içeriği hemen altında açılsın.', 'Tap a tile and it opens right below.', 'Kachel antippen, sie öffnet sich darunter.', 'Toca una tarjeta y se abre debajo.', 'Нажмите — откроется ниже.')}
+            eyebrow={l('Keşfet', 'Explore', 'Entdecken', 'Explorar', 'Обзор', 'Explorar')}
+            title={l('Ne yapmak istersin?', 'What would you like to do?', 'Was möchtest du tun?', '¿Qué quieres hacer?', 'Что хотите сделать?', 'O que você quer fazer?')}
+            sub={l('Kutucuğa dokun, içeriği hemen altında açılsın.', 'Tap a tile and it opens right below.', 'Kachel antippen, sie öffnet sich darunter.', 'Toca una tarjeta y se abre debajo.', 'Нажмите — откроется ниже.', 'Toque em um cartão para abri-lo logo abaixo.')}
           />
-          <TileGrid list tiles={tiles} openRequest={req} label={l('Keşfet araçları', 'Explore tools', 'Werkzeuge', 'Herramientas', 'Инструменты')} />
+          <TileGrid list tiles={tiles} openRequest={req} label={l('Keşfet araçları', 'Explore tools', 'Werkzeuge', 'Herramientas', 'Инструменты', 'Ferramentas')} />
         </section>
 
         <HomeMaps passport={p.currentPassport} onOpenCountry={p.onOpenCountry} />
@@ -210,20 +210,20 @@ export const ExplorePage: React.FC<ExploreProps> = (p) => {
           </Suspense>
         </Deferred>
 
-        <section className="rd-pass" aria-label={l('Pasaportum', 'My passport', 'Mein Pass', 'Mi pasaporte', 'Мой паспорт')}>
+        <section className="rd-pass" aria-label={l('Pasaportum', 'My passport', 'Mein Pass', 'Mi pasaporte', 'Мой паспорт', 'Meu passaporte')}>
           <PassportCover code={p.currentPassport} onClick={p.onOpenPassport} />
           <div className="rd-pass-info">
-            <span className="vz-eyebrow">{l('Pasaportum', 'My passport', 'Mein Pass', 'Mi pasaporte', 'Мой паспорт')}</span>
-            <h2>{l(`${passName} pasaportuyla dünya`, `The world with ${enArticle(passName)} ${passName} passport`, `Die Welt mit Pass: ${passName}`, `El mundo con pasaporte de ${passName}`, `Мир с паспортом: ${passName}`)}</h2>
-            <p className="rd-sub">{l('Kapağa dokunarak pasaportunu değiştir; bütün sayfalar yeniden hesaplanır.', 'Tap the cover to change passport; every page recalculates.', 'Tippe auf den Pass, um ihn zu wechseln.', 'Toca la portada para cambiar de pasaporte.', 'Нажмите на обложку, чтобы сменить паспорт.')}</p>
+            <span className="vz-eyebrow">{l('Pasaportum', 'My passport', 'Mein Pass', 'Mi pasaporte', 'Мой паспорт', 'Meu passaporte')}</span>
+            <h2>{l(`${passName} pasaportuyla dünya`, `The world with ${enArticle(passName)} ${passName} passport`, `Die Welt mit Pass: ${passName}`, `El mundo con pasaporte de ${passName}`, `Мир с паспортом: ${passName}`, `O mundo com passaporte de ${passName}`)}</h2>
+            <p className="rd-sub">{l('Kapağa dokunarak pasaportunu değiştir; bütün sayfalar yeniden hesaplanır.', 'Tap the cover to change passport; every page recalculates.', 'Tippe auf den Pass, um ihn zu wechseln.', 'Toca la portada para cambiar de pasaporte.', 'Нажмите на обложку, чтобы сменить паспорт.', 'Toque na capa para trocar de passaporte.')}</p>
             <div className="rd-bars">
-              <div className="rd-bar"><span>{l('Vizesiz / kimlikle', 'Visa-free / ID', 'Visumfrei / Ausweis', 'Sin visado / DNI', 'Без визы')}</span><div className="rd-tr"><div className="rd-fl" style={{ width: pct(counts.free) }} /></div><b>{counts.free}</b></div>
-              <div className="rd-bar"><span>{l('E-vize / kapıda', 'eVisa / on arrival', 'eVisum / Ankunft', 'eVisa / llegada', 'eVisa / по прилёте')}</span><div className="rd-tr"><div className="rd-fl sun" style={{ width: pct(counts.easy) }} /></div><b>{counts.easy}</b></div>
-              <div className="rd-bar"><span>{l('Vize gerekli', 'Visa required', 'Visum nötig', 'Visado necesario', 'Нужна виза')}</span><div className="rd-tr"><div className="rd-fl mute" style={{ width: pct(counts.visa) }} /></div><b>{counts.visa}</b></div>
+              <div className="rd-bar"><span>{l('Vizesiz / kimlikle', 'Visa-free / ID', 'Visumfrei / Ausweis', 'Sin visado / DNI', 'Без визы', 'Sem visto / RG')}</span><div className="rd-tr"><div className="rd-fl" style={{ width: pct(counts.free) }} /></div><b>{counts.free}</b></div>
+              <div className="rd-bar"><span>{l('E-vize / kapıda', 'eVisa / on arrival', 'eVisum / Ankunft', 'eVisa / llegada', 'eVisa / по прилёте', 'e-Visa / na chegada')}</span><div className="rd-tr"><div className="rd-fl sun" style={{ width: pct(counts.easy) }} /></div><b>{counts.easy}</b></div>
+              <div className="rd-bar"><span>{l('Vize gerekli', 'Visa required', 'Visum nötig', 'Visado necesario', 'Нужна виза', 'Visto necessário')}</span><div className="rd-tr"><div className="rd-fl mute" style={{ width: pct(counts.visa) }} /></div><b>{counts.visa}</b></div>
             </div>
             <div className="vz-actions">
-              <Btn onClick={() => openTile('where')}>{l('Nereye gidebilirim?', 'Where can I go?', 'Wohin kann ich?', '¿Dónde puedo ir?', 'Куда можно?')}</Btn>
-              <Btn variant="soft" onClick={() => openTile('compare')}>{l('Pasaport karşılaştır', 'Compare passports', 'Pässe vergleichen', 'Comparar', 'Сравнить')}</Btn>
+              <Btn onClick={() => openTile('where')}>{l('Nereye gidebilirim?', 'Where can I go?', 'Wohin kann ich?', '¿Dónde puedo ir?', 'Куда можно?', 'Para onde posso ir?')}</Btn>
+              <Btn variant="soft" onClick={() => openTile('compare')}>{l('Pasaport karşılaştır', 'Compare passports', 'Pässe vergleichen', 'Comparar', 'Сравнить', 'Comparar')}</Btn>
             </div>
           </div>
         </section>
@@ -256,16 +256,16 @@ const HomeMaps: React.FC<{ passport: string; onOpenCountry: (c: string) => void 
     <section ref={ref} className="vz-home-sec vz-maps-sec" aria-labelledby="vz-h-maps">
       <SecHead
         id="vz-h-maps"
-        eyebrow={l('Haritalar', 'Maps', 'Karten', 'Mapas', 'Карты')}
-        title={kind === 'visa' ? l('Pasaportunla dünya haritası', 'The world map for your passport', 'Weltkarte für deinen Pass', 'El mapa del mundo para tu pasaporte', 'Карта мира для вашего паспорта') : l('Dünyada şu an: saat, hava, döviz', 'Right now: time, weather, currency', 'Gerade jetzt: Zeit, Wetter, Kurse', 'Ahora: hora, tiempo y divisas', 'Сейчас: время, погода, валюта')}
+        eyebrow={l('Haritalar', 'Maps', 'Karten', 'Mapas', 'Карты', 'Mapas')}
+        title={kind === 'visa' ? l('Pasaportunla dünya haritası', 'The world map for your passport', 'Weltkarte für deinen Pass', 'El mapa del mundo para tu pasaporte', 'Карта мира для вашего паспорта', 'O mapa-múndi para o seu passaporte') : l('Dünyada şu an: saat, hava, döviz', 'Right now: time, weather, currency', 'Gerade jetzt: Zeit, Wetter, Kurse', 'Ahora: hora, tiempo y divisas', 'Сейчас: время, погода, валюта', 'Agora: hora, clima e câmbio')}
         action={
           <Segmented
-            label={l('Harita', 'Map', 'Karte', 'Mapa', 'Карта')}
+            label={l('Harita', 'Map', 'Karte', 'Mapa', 'Карта', 'Mapa')}
             value={kind}
             onChange={setKind}
             options={[
-              { id: 'visa', label: l('Vize', 'Visa', 'Visum', 'Visado', 'Визы') },
-              { id: 'radar', label: l('Saat · hava · döviz', 'Time · weather · FX', 'Zeit · Wetter · Kurs', 'Hora · tiempo · divisa', 'Время · погода · курс') }
+              { id: 'visa', label: l('Vize', 'Visa', 'Visum', 'Visado', 'Визы', 'Visto') },
+              { id: 'radar', label: l('Saat · hava · döviz', 'Time · weather · FX', 'Zeit · Wetter · Kurs', 'Hora · tiempo · divisa', 'Время · погода · курс', 'Hora · clima · câmbio') }
             ]}
           />
         }

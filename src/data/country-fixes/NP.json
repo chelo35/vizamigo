@@ -1419,6 +1419,361 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Rupia nepalesa (NPR)",
+   "plugType": "Tipo C, D, M (230V, 50Hz)",
+   "bestMonths": "Outubro – novembro (céu limpo depois das monções, a melhor época para trekking) e março – abril (primavera, rododendros); de dezembro a fevereiro faz muito frio nas altitudes, e de junho a setembro é época de monções (risco de deslizamentos)",
+   "safety": {
+    "crimeRateSummary": "A criminalidade grave contra turistas é baixa; em Thamel há batedores de carteira e golpes. Manifestações políticas, como os protestos violentos de setembro de 2025, e greves gerais (bandh) podem paralisar o transporte de uma hora para outra. Os principais riscos são o mal de altitude, acidentes em estradas de montanha, terremotos e deslizamentos nas monções.",
+    "commonScams": [
+     "Agências de trekking que organizam resgates de helicóptero desnecessários e cobram a mais do seguro",
+     "Pessoas vestidas de sadhu que pedem dinheiro depois de uma foto",
+     "Guias sem licença em Thamel vendendo pacotes de trekking baratos"
+    ],
+    "safeTravelTips": [
+     "Para evitar o mal de altitude, não suba mais de 300-500 m por dia e desça se surgirem dor de cabeça e náusea.",
+     "Na maioria dos parques e áreas protegidas, o guia com licença é obrigatório; viaje com uma agência registrada e contrate um seguro com evacuação de helicóptero até 6.000 m.",
+     "Evite viajar entre cidades em dias de protesto ou bandh; a polícia turística atende pelo 1144."
+    ],
+    "emergencyNumbers": {
+     "police": "100",
+     "ambulance": "102",
+     "general": "100"
+    },
+    "safetyScore": 55,
+    "safetyLevel": "Risco moderado",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60"
+   },
+   "internet": {
+    "networkCoverage": "4G bom em Katmandu, Pokhara e Chitwan; irregular nas trilhas de trekking e, nas altitudes, muitas vezes só há wi-fi pago nos lodges",
+    "costPerGbUsd": "~US$ 0,30 - 1",
+    "esimAvailability": "Disponível – chips turísticos da Ncell e da Nepal Telecom no aeroporto; eSIMs internacionais funcionam",
+    "bestCarriers": [
+     "Ncell",
+     "Nepal Telecom (NTC)"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Fraco – não há trens; ônibus turísticos e jipes lentos por estradas de montanha, voos curtos para Pokhara ou Lukla (muito dependentes do tempo)",
+    "costLevel": "Barato",
+    "singleTicketUsd": "~US$ 0,20 - 0,50 (micro-ônibus em Katmandu)",
+    "dailyPassUsd": "Não há passe diário; ônibus turístico Katmandu – Pokhara ~US$ 8 - 25",
+    "popularRideApps": [
+     "Pathao",
+     "inDrive"
+    ],
+    "taxiAdvice": "Os táxis quase nunca usam taxímetro; combine o preço antes ou use Pathao / inDrive. Para ir a Thamel, o mais fácil é o balcão de táxi pré-pago do aeroporto."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 20 - 35",
+    "dailyBudgetMidrangeUsd": "US$ 50 - 100",
+    "budgetMealUsd": "US$ 2 - 5",
+    "coffeeUsd": "US$ 1,50 - 3",
+    "waterBottleUsd": "US$ 0,20 - 0,40",
+    "hostelDormUsd": "US$ 5 - 10",
+    "hotel3StarUsd": "US$ 25 - 55",
+    "flightCostIndex": "Moderado (Istambul – Katmandu direto, ~6,5 h)",
+    "flightTip": "A Turkish Airlines voa direto entre Istambul e Katmandu; conexões pelo Golfo (Qatar Airways, flydubai, Air Arabia) também são comuns. Outubro – novembro é alta temporada, então reserve cedo; os voos para Lukla são cancelados com frequência por causa do tempo, deixe 1-2 dias de folga."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "O cumprimento é feito com as palmas juntas e um “Namaste”; use a mão direita para dar, receber e comer.",
+     "Contorne estupas e rodas de oração no sentido horário; não aponte os pés para pessoas ou altares.",
+     "Compartilhar comida ou um copo que já tocou sua boca (“jutho”) é considerado impuro; as vacas são sagradas."
+    ],
+    "festivals": [
+     "Dashain (setembro/outubro – a maior festa hindu)",
+     "Tihar – festival das luzes (outubro/novembro)",
+     "Holi – festival das cores (março)"
+    ],
+    "lifestyle": "Uma vida em que tradições hindus e budistas se entrelaçam e o dia começa com a puja; o dal bhat é comido duas vezes por dia, sempre se oferece chá chiya e os vilarejos de montanha vivem no ritmo do trekking."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Praça Durbar de Katmandu e Swayambhunath (UNESCO)",
+     "Estupa de Boudhanath e templo de Pashupatinath",
+     "A medieval Bhaktapur",
+     "Pokhara – lago Phewa e vista do Annapurna a partir de Sarangkot",
+     "Parque Nacional de Chitwan (rinocerontes e tigres)",
+     "Trekkings ao acampamento-base do Everest e ao Annapurna"
+    ],
+    "bestSeasons": "Outubro – novembro (céu limpo depois das monções, a melhor época para trekking) e março – abril (primavera, rododendros); de dezembro a fevereiro faz muito frio nas altitudes, e de junho a setembro é época de monções (risco de deslizamentos)",
+    "travelStyleTip": "Na primeira visita, o trio vale de Katmandu + Pokhara + Chitwan é ideal; se for fazer trekking, acrescente 5-14 dias conforme a rota e providencie as licenças (TIMS, ACAP / parque) com sua agência."
+   },
+   "religion": {
+    "primaryReligions": "Hinduísmo (~81 %), budismo (~8 %), islamismo (~5 %), kirat (~3 %), cristianismo (~2 %).",
+    "respectNorms": "Não hindus não podem entrar no templo principal de Pashupatinath; observe as cremações com respeito a partir da margem oposta. Em alguns templos, couro é proibido e é preciso tirar os sapatos.",
+    "sacredSites": [
+     "Templo de Pashupatinath (Katmandu)",
+     "Estupa de Boudhanath",
+     "Lumbini – local de nascimento de Buda, templo de Maya Devi (UNESCO)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Nepalês (escrita devanágari); são faladas mais de 120 línguas, como maithili, bhojpuri, newar e tamang.",
+    "englishProficiency": "Bom no turismo, em Thamel e nas rotas de trekking; limitado nas áreas rurais.",
+    "phrases": [
+     {
+      "phrase": "नमस्ते (Namaste)",
+      "meaning": "Olá (cumprimento respeitoso)",
+      "translation": "Olá (cumprimento respeitoso)",
+      "pronunciation": "na-mas-TAY"
+     },
+     {
+      "phrase": "धन्यवाद (Dhanyabad)",
+      "meaning": "Obrigado",
+      "translation": "Obrigado",
+      "pronunciation": "DHUN-ya-baad"
+     },
+     {
+      "phrase": "कति हो? (Kati ho?)",
+      "meaning": "Quanto custa?",
+      "translation": "Quanto custa?",
+      "pronunciation": "KA-ti ho"
+     },
+     {
+      "phrase": "मीठो छ (Mitho chha)",
+      "meaning": "Está delicioso",
+      "translation": "Está delicioso",
+      "pronunciation": "MEE-tho chha"
+     },
+     {
+      "phrase": "फेरि भेटौँला (Pheri bhetaula)",
+      "meaning": "Até a próxima",
+      "translation": "Até a próxima",
+      "pronunciation": "PHE-ri bhe-TAU-la"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Os reinos licchavi e malla do vale de Katmandu deixaram um rico legado de arte newar. Prithvi Narayan Shah unificou o país em 1768; o Nepal nunca foi colônia. Em 2008, a monarquia foi abolida e uma república federal foi proclamada; o terremoto de 2015 causou uma destruição enorme.",
+    "milestones": [
+     "c. 563 a.C.: nasce Siddhartha Gautama em Lumbini",
+     "1768: Prithvi Narayan Shah unifica o Nepal",
+     "1953: Hillary e Tenzing Norgay chegam pela primeira vez ao cume do Everest",
+     "2008: proclamação da República Democrática Federal"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Dal bhat (sopa de lentilha, arroz, curry de legumes e conserva)",
+     "Momo (bolinhos de massa cozidos no vapor ou fritos)",
+     "Samay baji (bandeja cerimonial newar)"
+    ],
+    "traditionalDrinks": [
+     "Masala chiya (chá com leite e especiarias)",
+     "Tongba (cerveja quente de painço, leste do Nepal)",
+     "Lassi"
+    ],
+    "streetFoodAndDesserts": [
+     "Sel roti (pão doce de arroz em formato de argola)",
+     "Juju dhau (o “rei dos iogurtes” de Bhaktapur)",
+     "Chatamari (crepe de arroz newar)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Gautama Buda (nascido em Lumbini)",
+     "Tenzing Norgay (sherpa da primeira escalada do Everest)",
+     "Prithvi Narayan Shah (fundador do Nepal moderno)"
+    ],
+    "strongSectors": [
+     "Turismo de montanhismo e trekking",
+     "Energia hidrelétrica",
+     "Tapetes feitos à mão e pashmina"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Predomina o dinheiro vivo; cartões funcionam em hotéis, agências e restaurantes maiores (muitas vezes com acréscimo de 3-4 %). Os caixas eletrônicos têm limites baixos e cobram taxas; leve dinheiro suficiente antes do trekking, porque na montanha não há caixas eletrônicos.",
+    "tippingCulture": "Os restaurantes turísticos costumam acrescentar 10 % de serviço e 13 % de IVA. Guias e carregadores esperam uma gorjeta de ~10-15 % do valor do trekking no final.",
+    "economicPillars": "Remessas de trabalhadores no exterior, turismo, agricultura e energia hidrelétrica."
+   }
+  },
+  "itin": {
+   "routeName": "Vale de Katmandu, Pokhara e Chitwan: do Himalaia à selva",
+   "routeSummary": "Um roteiro de 9 dias que vai das praças e estupas do vale de Katmandu, Patrimônio da UNESCO, até Pokhara, à beira do lago e com vista para o Annapurna, descendo depois para as planícies de rinocerontes de Chitwan.",
+   "totalDays": 9,
+   "idealDurationText": "Roteiro de 9 dias",
+   "bestSeason": "Outubro – novembro (céu limpo depois das monções, a melhor época para trekking) e março – abril (primavera, rododendros); de dezembro a fevereiro faz muito frio nas altitudes, e de junho a setembro é época de monções (risco de deslizamentos)",
+   "transportMode": "Ônibus turístico ou voo doméstico (Katmandu – Pokhara), ônibus Pokhara – Chitwan, voo de volta Bharatpur – Katmandu + Pathao / táxis",
+   "paceLevel": "Equilibrado (cultura, montanha e vida selvagem)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Vale de Katmandu (Katmandu, Patan, Bhaktapur)",
+     "recommendedDuration": "3 dias",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Swayambhunath (o “templo dos macacos”)",
+      "Estupa de Boudhanath",
+      "Pashupatinath e os ghats do Bagmati",
+      "Praças Durbar de Bhaktapur e Patan"
+     ],
+     "activities": [
+      "Faça a kora (volta no sentido horário) em Boudhanath ao entardecer.",
+      "Visite a praça dos oleiros de Bhaktapur e prove o juju dhau.",
+      "Conheça a arte newar no Museu de Patan."
+     ],
+     "foodAndDrinks": [
+      "Momo e samay baji",
+      "Juju dhau",
+      "Masala chiya"
+     ],
+     "criticalTips": [
+      "As praças Durbar, Bhaktapur e Patan cobram ingressos separados; guarde o bilhete.",
+      "Katmandu tem muita poluição e poeira; leve máscara."
+     ],
+     "mapsQuery": "Boudhanath Stupa, Kathmandu, Nepal"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Pokhara (lago Phewa e vista do Annapurna)",
+     "recommendedDuration": "3 dias",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Nascer do sol em Sarangkot",
+      "Lago Phewa e templo Tal Barahi",
+      "Pagode da Paz Mundial"
+     ],
+     "activities": [
+      "Voe de parapente a partir de Sarangkot.",
+      "Faça um trekking curto até o Australian Camp ou o Poon Hill.",
+      "Alugue um barco no lago."
+     ],
+     "foodAndDrinks": [
+      "Dal bhat no estilo thakali",
+      "Peixe do lago grelhado"
+     ],
+     "criticalTips": [
+      "As montanhas ficam mais visíveis cedo; à tarde o céu fecha.",
+      "Antes do trekking, tire a licença ACAP e o cartão TIMS."
+     ],
+     "mapsQuery": "Phewa Lake, Pokhara, Nepal"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Parque Nacional de Chitwan (Sauraha)",
+     "recommendedDuration": "2-3 dias",
+     "durationBadge": "2-3 dias",
+     "highlights": [
+      "Rinocerontes-indianos",
+      "Pôr do sol no rio Rapti",
+      "Aldeias tharu"
+     ],
+     "activities": [
+      "Faça um safári de jipe com guia.",
+      "Reme de canoa para ver crocodilos e aves.",
+      "Assista a uma dança tradicional tharu."
+     ],
+     "foodAndDrinks": [
+      "Pratos tharu, como o dhikri",
+      "Lassi"
+     ],
+     "criticalTips": [
+      "Faça safáris a pé apenas com dois guias licenciados; rinocerontes e elefantes selvagens são perigosos.",
+      "Nas monções (junho – setembro), áreas do parque podem fechar e há muitos mosquitos."
+     ],
+     "mapsQuery": "Sauraha, Chitwan, Nepal"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Dal bhat",
+     "Momo",
+     "Thukpa (sopa tibetana de macarrão)",
+     "Samay baji"
+    ],
+    "drinks": [
+     "Masala chiya",
+     "Tongba",
+     "Lassi"
+    ],
+    "streetFoods": [
+     "Sel roti",
+     "Pani puri",
+     "Chatamari"
+    ],
+    "diningAdvice": "O dal bhat costuma ter refil grátis (“dal bhat power, 24 hour”). Nos lodges de montanha, a carne sobe a pé e pode não estar fresca; durante o trekking, é mais seguro comer vegetariano."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptador de tomada tipo D/M",
+     "Roupas em camadas e boas botas de trekking",
+     "Pastilhas purificadoras ou garrafa com filtro",
+     "Máscara e lanterna de cabeça (quedas de energia)"
+    ],
+    "safetyAndEtiquette": [
+     "Não tenha pressa nas altitudes e confirme que o seguro cobre resgate de helicóptero.",
+     "Contorne as estupas no sentido horário e seja respeitoso ao fotografar cremações."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "D",
+     "M"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "As tomadas costumam ser indianas, de três pinos redondos (D/M); carregadores finos (C) geralmente encaixam, os Schuko grossos não. Leve adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "A água da torneira não é potável. Use pastilhas ou filtro para reduzir o plástico; nas rotas de trekking há pontos pagos de água segura.",
+    "vaccines": [
+     "Hepatite A e febre tifoide",
+     "Tétano-difteria (rotina)",
+     "Raiva (cães e macacos) e encefalite japonesa para estadias longas no Terai/Chitwan; consulte o médico sobre medicação para a altitude"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "102"
+   },
+   "tipping": {
+    "custom": "No turismo, espera-se gorjeta; deixe ~10 % se não houver taxa de serviço.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Guias e carregadores recebem ~10-15 % do valor do trekking em um envelope no final."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Não há (IVA de 13 %)",
+    "minSpend": "Não se aplica",
+    "customsNote": "O Nepal não devolve o IVA a turistas. Antiguidades com mais de 100 anos e objetos religiosos exigem autorização do Departamento de Arqueologia; peça nota fiscal de tapetes e pashminas."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 0,30 - 1,00",
+    "topCarriers": [
+     "Ncell",
+     "Nepal Telecom (NTC)"
+    ],
+    "airportSimTrapWarning": "No aeroporto de Katmandu, a Ncell e a NTC registram o chip com passaporte e foto pelo preço oficial. Nas rotas de altitude (região do Everest), a NTC costuma ter sinal melhor."
+   },
+   "touristScams": [
+    {
+     "title": "Fraude de resgates de helicóptero",
+     "desc": "Alguns guias insistem no helicóptero mesmo com sintomas leves, e a conta enviada ao seguro é inflada.",
+     "tip": "Tente primeiro descer e decida junto com a central de emergência do seguro."
+    },
+    {
+     "title": "Sadhus que cobram por fotos",
+     "desc": "Sadhus que posam em Pashupatinath e na praça Durbar pedem muito dinheiro depois da foto.",
+     "tip": "Combine o preço antes da foto."
+    },
+    {
+     "title": "Pacotes de trekking sem licença",
+     "desc": "Os pacotes muito baratos em Thamel podem deixar de fora licenças, seguro ou o bem-estar dos carregadores.",
+     "tip": "Escolha agências registradas no Nepal Tourism Board e peça para ver a licença do guia."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Непальская рупия (NPR)",

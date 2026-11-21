@@ -22,13 +22,13 @@ interface QuickTool {
 export function useQuickTools(h: QuickToolHandlers): QuickTool[] {
   const { l } = useI18n();
   return [
-    { id: 'map', icon: MapIcon, label: l('Dünya Haritası', 'World Map', 'Weltkarte', 'Mapa', 'Карта'), accent: 'from-[#2A8C82] to-[#3E9E94]', onClick: () => h.onOpenGlobalRadar?.('all') },
-    { id: 'clock', icon: Clock, label: l('Saatler', 'Clocks', 'Uhren', 'Relojes', 'Время'), accent: 'from-[#3A7CA5] to-[#2A8C82]', onClick: () => h.onOpenGlobalRadar?.('clock') },
-    { id: 'weather', icon: CloudSun, label: l('Hava', 'Weather', 'Wetter', 'Clima', 'Погода'), accent: 'from-[#FF6B6B] to-[#E68A64]', onClick: () => h.onOpenGlobalRadar?.('weather') },
-    { id: 'fx', icon: ArrowRightLeft, label: l('Döviz', 'FX', 'Devisen', 'Divisas', 'Валюта'), accent: 'from-[#2A8C82] to-[#52B2A7]', onClick: () => h.onOpenGlobalRadar?.('currency') },
-    { id: 'packing', icon: Luggage, label: l('Bavul', 'Packing', 'Packliste', 'Equipaje', 'Багаж'), accent: 'from-[#3E9E94] to-[#2A8C82]', onClick: h.onOpenPackingList },
-    { id: 'tipping', icon: Coins, label: l('Bahşiş', 'Tipping', 'Trinkgeld', 'Propinas', 'Чаевые'), accent: 'from-[#D9A14A] to-[#E6B464]', onClick: h.onOpenTippingCalc },
-    { id: 'tz', icon: Timer, label: l('Saat Farkı', 'Time Diff', 'Zeitzonen', 'Husos', 'Пояса'), accent: 'from-[#6C7A9C] to-[#4F5D7D]', onClick: h.onOpenTimezoneOverlap }
+    { id: 'map', icon: MapIcon, label: l('Dünya Haritası', 'World Map', 'Weltkarte', 'Mapa', 'Карта', 'Mapa'), accent: 'from-[#2A8C82] to-[#3E9E94]', onClick: () => h.onOpenGlobalRadar?.('all') },
+    { id: 'clock', icon: Clock, label: l('Saatler', 'Clocks', 'Uhren', 'Relojes', 'Время', 'Relógios'), accent: 'from-[#3A7CA5] to-[#2A8C82]', onClick: () => h.onOpenGlobalRadar?.('clock') },
+    { id: 'weather', icon: CloudSun, label: l('Hava', 'Weather', 'Wetter', 'Clima', 'Погода', 'Clima'), accent: 'from-[#FF6B6B] to-[#E68A64]', onClick: () => h.onOpenGlobalRadar?.('weather') },
+    { id: 'fx', icon: ArrowRightLeft, label: l('Döviz', 'FX', 'Devisen', 'Divisas', 'Валюта', 'Câmbio'), accent: 'from-[#2A8C82] to-[#52B2A7]', onClick: () => h.onOpenGlobalRadar?.('currency') },
+    { id: 'packing', icon: Luggage, label: l('Bavul', 'Packing', 'Packliste', 'Equipaje', 'Багаж', 'Bagagem'), accent: 'from-[#3E9E94] to-[#2A8C82]', onClick: h.onOpenPackingList },
+    { id: 'tipping', icon: Coins, label: l('Bahşiş', 'Tipping', 'Trinkgeld', 'Propinas', 'Чаевые', 'Gorjetas'), accent: 'from-[#D9A14A] to-[#E6B464]', onClick: h.onOpenTippingCalc },
+    { id: 'tz', icon: Timer, label: l('Saat Farkı', 'Time Diff', 'Zeitzonen', 'Husos', 'Пояса', 'Fusos'), accent: 'from-[#6C7A9C] to-[#4F5D7D]', onClick: h.onOpenTimezoneOverlap }
   ];
 }
 
@@ -41,10 +41,10 @@ export const QuickToolsStrip: React.FC<QuickToolHandlers & { className?: string 
       <div
         className="w-full max-w-6xl mx-auto px-3 sm:px-4 py-2.5 flex items-center gap-2.5 overflow-x-auto scrollbar-none lg:justify-center"
         role="toolbar"
-        aria-label={l('Hızlı seyahat araçları', 'Quick travel tools', 'Reise-Tools', 'Herramientas', 'Инструменты')}
+        aria-label={l('Hızlı seyahat araçları', 'Quick travel tools', 'Reise-Tools', 'Herramientas', 'Инструменты', 'Ferramentas')}
       >
         <span className="hidden md:inline text-xs font-bold uppercase tracking-widest text-slate-400 dark:text-slate-500 mr-1 shrink-0">
-          {l('Araçlar', 'Tools', 'Tools', 'Herramientas', 'Инструменты')}
+          {l('Araçlar', 'Tools', 'Tools', 'Herramientas', 'Инструменты', 'Ferramentas')}
         </span>
         {tools.map((tool) => {
           const Icon = tool.icon;

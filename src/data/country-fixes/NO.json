@@ -1563,6 +1563,397 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Coroa norueguesa (NOK)",
+   "plugType": "Tipo C, F (230V, 50Hz)",
+   "bestMonths": "Fim de maio – agosto (fiordes, trilhas, sol da meia-noite no norte); setembro – março para a aurora boreal (Tromsø, Lofoten); janeiro – março para esqui",
+   "safety": {
+    "safetyScore": 85,
+    "safetyLevel": "Excepcionalmente seguro",
+    "badgeColor": "bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-900/60",
+    "crimeRateSummary": "Um dos países mais seguros do mundo, com pouquíssima criminalidade violenta. Cuidado com batedores de carteira na Estação Central de Oslo (Oslo S) e na Karl Johans gate, e à noite nos arredores da estação. O risco real é a natureza: mudanças bruscas de tempo e trilhas exigentes.",
+    "commonScams": [
+     "Tarifas infladas em algumas pequenas empresas de táxi (se você não perguntar o preço antes)",
+     "Batedores de carteira na Oslo S e em pontos turísticos movimentados",
+     "Taxas administrativas altas sobre os pedágios automáticos (AutoPASS) em carros alugados"
+    ],
+    "safeTravelTips": [
+     "Em trilhas de montanha, confira a previsão do tempo no yr.no e siga as “Fjellvettreglene” (regras de segurança na montanha).",
+     "Pergunte o preço antes de entrar no táxi ou use os apps Oslo Taxi / Uber.",
+     "Dirigir no inverno pelo norte exige pneus de inverno e experiência; é melhor contratar um passeio."
+    ],
+    "emergencyNumbers": {
+     "police": "112",
+     "ambulance": "113",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Mais de 99 % de cobertura da população (4G/5G); o sinal pode cair em túneis dos fiordes e passagens de montanha",
+    "costPerGbUsd": "~US$ 1,50 - 4,00",
+    "esimAvailability": "Excelente",
+    "bestCarriers": [
+     "Telenor",
+     "Telia",
+     "Ice",
+     "Airalo / Holafly eSIM"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Excelente (linhas de trem panorâmicas, balsas e ônibus costeiros; escassos em áreas remotas)",
+    "costLevel": "Muito caro",
+    "singleTicketUsd": "US$ 4,00 - 4,50 (Oslo Ruter, 1 zona)",
+    "dailyPassUsd": "US$ 12,00 - 13,50 (Oslo Ruter, 24h)",
+    "popularRideApps": [
+     "Ruter",
+     "Vy",
+     "Entur",
+     "Skyss",
+     "Uber",
+     "Oslo Taxi"
+    ],
+    "taxiAdvice": "Os táxis na Noruega são caríssimos; o Flytoget ou o trem da Vy do aeroporto até o centro sai muito mais barato. Compre as passagens de transporte pelos apps Ruter, Vy e Entur."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 100 - 150",
+    "dailyBudgetMidrangeUsd": "US$ 230 - 380",
+    "budgetMealUsd": "US$ 20 - 35",
+    "coffeeUsd": "US$ 5,00 - 7,50",
+    "waterBottleUsd": "US$ 3,00 - 4,50",
+    "hostelDormUsd": "US$ 45 - 75",
+    "hotel3StarUsd": "US$ 160 - 260",
+    "flightCostIndex": "Moderado – alto (Istambul – Oslo direto, ~4 h)",
+    "flightTip": "A Turkish Airlines voa direto de Istambul para Oslo; para Bergen, Stavanger e Tromsø, o comum são conexões com Norwegian, SAS ou Widerøe."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Os noruegueses são modestos e reservados; o espaço pessoal e o silêncio são respeitados.",
+     "Dentro de casa, tiram-se os sapatos.",
+     "Todos têm o direito de livre acesso à natureza (allemannsretten), mas é obrigatório não deixar lixo e respeitar as regras de acampamento.",
+     "A pontualidade é importante; chegue na hora marcada quando for convidado."
+    ],
+    "festivals": [
+     "17 de maio, Dia da Constituição (desfiles infantis com trajes tradicionais)",
+     "Sankthans (23 de junho, fogueiras no litoral)",
+     "Øyafestivalen (agosto, Oslo)"
+    ],
+    "lifestyle": "Cultura do “friluftsliv”, a vida ao ar livre; fins de semana na cabana (hytte), esqui e trilhas são indispensáveis."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Geirangerfjord e Nærøyfjord (UNESCO)",
+     "Preikestolen (o Púlpito)",
+     "Bryggen, Bergen (UNESCO)",
+     "Trem de Flåm",
+     "Ilhas Lofoten",
+     "Tromsø e a aurora boreal"
+    ],
+    "bestSeasons": "Fim de maio – agosto",
+    "travelStyleTip": "A linha de trem Oslo – Bergen e o roteiro “Norway in a Nutshell” são o jeito mais fácil de ver os fiordes sem carro; para o norte, vá de avião."
+   },
+   "religion": {
+    "primaryReligions": "Membros da Igreja da Noruega (luterana) ~62 %, outros grupos cristãos ~7 %, muçulmanos ~3-4 %",
+    "respectNorms": "Faça silêncio nas igrejas e nas históricas igrejas de madeira (stavkirke); não fique circulando durante as celebrações.",
+    "sacredSites": [
+     "Catedral de Nidaros (Trondheim)",
+     "Igreja de madeira de Urnes (UNESCO)",
+     "Igreja de madeira de Borgund"
+    ]
+   },
+   "language": {
+    "officialLanguages": "O norueguês (formas escritas bokmål e nynorsk) e, no norte, o sami são oficiais.",
+    "englishProficiency": "Excelente; quase todo mundo fala inglês com fluência.",
+    "phrases": [
+     {
+      "phrase": "Hei",
+      "meaning": "Olá",
+      "translation": "Oi",
+      "pronunciation": "hai"
+     },
+     {
+      "phrase": "Takk",
+      "meaning": "Obrigado",
+      "translation": "Obrigado",
+      "pronunciation": "tahk"
+     },
+     {
+      "phrase": "Unnskyld",
+      "meaning": "Desculpe / Com licença",
+      "translation": "Com licença",
+      "pronunciation": "UN-shyl"
+     },
+     {
+      "phrase": "Hva koster det?",
+      "meaning": "Quanto custa?",
+      "translation": "Quanto é?",
+      "pronunciation": "vah KOS-ter deh"
+     },
+     {
+      "phrase": "Skål!",
+      "meaning": "Saúde!",
+      "translation": "Saúde",
+      "pronunciation": "skohl"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Povo de navegadores da Era Viking, a Noruega foi unificada por Haroldo Cabelo Belo no século IX e passou séculos em união com a Dinamarca e, depois, com a Suécia. Adotou sua constituição em 17 de maio de 1814 e conquistou a independência plena em 1905; o petróleo descoberto em 1969 a transformou em um dos países mais ricos do mundo.",
+    "milestones": [
+     "~872: unificação sob Haroldo Cabelo Belo",
+     "17 de maio de 1814: Constituição de Eidsvoll",
+     "1905: fim da união com a Suécia, independência plena",
+     "1969: descoberta do campo de petróleo de Ekofisk"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Fårikål (ensopado de cordeiro com repolho, prato nacional)",
+     "Salmão norueguês fresco e defumado",
+     "Bacalhau / Klippfisk (ensopado de bacalhau seco e salgado)"
+    ],
+    "traditionalDrinks": [
+     "Akevitt (aquavit Linie)",
+     "Café coado (o país está entre os maiores consumidores do mundo)",
+     "Solo (refrigerante de laranja)"
+    ],
+    "streetFoodAndDesserts": [
+     "Pølse i lompe (salsicha no pão achatado de batata, geralmente de porco)",
+     "Skillingsboller (pãezinhos de canela de Bergen)",
+     "Kvæfjordkake (“o melhor bolo do mundo”)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Edvard Munch (pintor de O Grito)",
+     "Henrik Ibsen (dramaturgo)",
+     "Roald Amundsen (primeiro explorador a chegar ao Polo Sul)"
+    ],
+    "strongSectors": [
+     "Petróleo e gás (Equinor)",
+     "Pesca e criação de salmão",
+     "Transporte marítimo e energia hidrelétrica"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Um país quase totalmente sem dinheiro vivo; cartão por aproximação ou celular funcionam em todo lugar.",
+    "tippingCulture": "O serviço já está incluído; a gorjeta não é obrigatória, basta arredondar ou deixar 5-10 % se você ficou satisfeito.",
+    "economicPillars": "Exportação de petróleo e gás, o maior fundo soberano do mundo, frutos do mar, transporte marítimo e energias renováveis."
+   }
+  },
+  "itin": {
+   "routeName": "Noruega, rota dos fiordes: Oslo, Flåm, Bergen e Stavanger",
+   "routeSummary": "Roteiro de 7 dias saindo de Oslo por uma das linhas de trem mais bonitas do mundo até Flåm, passando por fiordes Patrimônio da UNESCO até o colorido cais de Bergen e o Preikestolen.",
+   "totalDays": 7,
+   "idealDurationText": "Roteiro de 7 dias",
+   "bestSeason": "Fim de maio – agosto",
+   "transportMode": "Trem (linha de Bergen da Vy + trem de Flåm), balsa pelo fiorde e ônibus/balsa costeira Bergen – Stavanger",
+   "paceLevel": "Equilibrado (cidade + fiordes + trilhas)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Oslo (capital à beira do fiorde)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Ópera de Oslo (caminhada pelo telhado)",
+      "Museu MUNCH",
+      "Parque de esculturas Vigeland",
+      "Fortaleza de Akershus e Aker Brygge"
+     ],
+     "activities": [
+      "Experimente as saunas flutuantes do fiorde e dê um mergulho.",
+      "Visite a rampa de salto de esqui de Holmenkollen.",
+      "Conheça o Museu Fram, em Bygdøy."
+     ],
+     "foodAndDrinks": [
+      "Salmão fresco",
+      "Pølse i lompe",
+      "Café coado"
+     ],
+     "criticalTips": [
+      "Do aeroporto, pegue o Flytoget ou o trem da Vy, que é mais barato.",
+      "O Oslo Pass gera economia em museus e transporte."
+     ],
+     "mapsQuery": "Oslo, Norway"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Flåm e Nærøyfjord (Norway in a Nutshell)",
+     "recommendedDuration": "1 dia",
+     "durationBadge": "1 dia",
+     "highlights": [
+      "Trem de Flåm (Myrdal – Flåm)",
+      "Passeio de barco pelo Nærøyfjord (UNESCO)",
+      "Mirante de Stegastein",
+      "Aurlandsfjord"
+     ],
+     "activities": [
+      "Pegue a linha de Bergen até Myrdal e depois o trem de Flåm até o fiorde.",
+      "Navegue pelo Nærøyfjord em um barco elétrico.",
+      "Faça uma caminhada curta pelo vale de Flåm."
+     ],
+     "foodAndDrinks": [
+      "Fårikål",
+      "Queijo de cabra local e brunost",
+      "Cerveja da cervejaria Ægir"
+     ],
+     "criticalTips": [
+      "No verão, reserve trem e barco com semanas de antecedência.",
+      "Flåm fica lotada nos dias de cruzeiro; prefira as saídas bem cedo."
+     ],
+     "mapsQuery": "Flam, Norway"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Bergen (porta de entrada dos fiordes)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Cais hanseático de Bryggen (UNESCO)",
+      "Funicular Fløibanen e monte Fløyen",
+      "Mercado de peixe (Fisketorget)",
+      "Teleférico de Ulriken"
+     ],
+     "activities": [
+      "Curta a vista do Fløyen e percorra suas trilhas.",
+      "Explore as vielas de madeira de Bryggen.",
+      "Veja obras de Munch nos museus de arte KODE."
+     ],
+     "foodAndDrinks": [
+      "Fiskesuppe (sopa de peixe de Bergen)",
+      "Skillingsboller",
+      "Akevitt"
+     ],
+     "criticalTips": [
+      "Bergen é uma das cidades mais chuvosas da Europa; capa de chuva é indispensável.",
+      "As barracas turísticas do mercado de peixe são caras; pergunte o preço antes."
+     ],
+     "mapsQuery": "Bergen, Norway"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Stavanger e Preikestolen",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Preikestolen (penhasco de 604 m)",
+      "Passeio de barco pelo Lysefjord",
+      "Gamle Stavanger (casas brancas de madeira)",
+      "Museu Norueguês do Petróleo"
+     ],
+     "activities": [
+      "Suba até o Preikestolen (~4 horas ida e volta).",
+      "Veja o Preikestolen lá de baixo em um barco pelo Lysefjord.",
+      "Passeie pelas ruelas da Stavanger antiga."
+     ],
+     "foodAndDrinks": [
+      "Camarões frescos (reker)",
+      "Bacalhau",
+      "Kvæfjordkake"
+     ],
+     "criticalTips": [
+      "Use botas de trilha firmes para o Preikestolen; de outubro a abril, vá com guia.",
+      "Tome cuidado na beira do penhasco se estiver ventando."
+     ],
+     "mapsQuery": "Stavanger, Norway"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Fårikål (ensopado de cordeiro com repolho, prato nacional)",
+     "Salmão norueguês fresco e defumado",
+     "Bacalhau / Klippfisk (ensopado de bacalhau seco e salgado)"
+    ],
+    "drinks": [
+     "Akevitt (aquavit Linie)",
+     "Café coado (o país está entre os maiores consumidores do mundo)",
+     "Solo (refrigerante de laranja)"
+    ],
+    "streetFoods": [
+     "Pølse i lompe (salsicha no pão achatado de batata, geralmente de porco)",
+     "Skillingsboller (pãezinhos de canela de Bergen)",
+     "Kvæfjordkake (“o melhor bolo do mundo”)"
+    ],
+    "diningAdvice": "Os preços nos restaurantes são altíssimos; refeições prontas e sanduíches de supermercado (Rema 1000, Kiwi, Coop) ajudam a poupar o orçamento. Os supermercados só vendem bebidas de baixo teor alcoólico; vinhos e destilados são vendidos apenas no Vinmonopolet. O pølse costuma ser de porco; peça o de frango (kylling)."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Jaqueta impermeável e camadas térmicas",
+     "Botas de trilha firmes",
+     "Cartão por aproximação (raramente é preciso dinheiro vivo)",
+     "Máscara de dormir no verão; luvas grossas e gorro no inverno"
+    ],
+    "safetyAndEtiquette": [
+     "Não deixe lixo na natureza e siga as regras de montanha.",
+     "Tire os sapatos ao entrar nas casas."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Tomadas europeias C/F, iguais às da Turquia; não é preciso adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "A água da torneira está entre as mais limpas do mundo; não é preciso comprar água engarrafada.",
+    "vaccines": [
+     "Vacinas de rotina (tétano, difteria, tríplice viral)",
+     "Considere a vacina contra a encefalite transmitida por carrapatos (TBE) para caminhadas em florestas do litoral sul"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "113"
+   },
+   "tipping": {
+    "custom": "A gorjeta não é obrigatória; basta arredondar ou deixar 5-10 %.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "As maquininhas de cartão podem sugerir gorjeta; é totalmente opcional."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA de 25 % (15 % em alimentos); a Noruega não faz parte da UE, reembolso líquido de ~11-19 % após as comissões",
+    "minSpend": "Mais de ~315 NOK por loja (menos para alimentos)",
+    "customsNote": "Os produtos precisam sair da Noruega em até um mês após a compra e lacrados; retire o reembolso no balcão Tax Free do aeroporto de saída."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "~US$ 1,50 - 4,00",
+    "topCarriers": [
+     "Telenor",
+     "Telia",
+     "Ice"
+    ],
+    "airportSimTrapWarning": "Evite os pacotes caros do aeroporto e configure um eSIM; na Narvesen e em supermercados há chips pré-pagos da Telia, Telenor ou MyCall."
+   },
+   "touristScams": [
+    {
+     "title": "Tarifas de táxi",
+     "desc": "Algumas pequenas empresas de táxi cobram muito acima do normal.",
+     "tip": "Pergunte o preço antes de entrar ou consiga preço fechado pelos apps Oslo Taxi / Uber."
+    },
+    {
+     "title": "Pedágios e estacionamento",
+     "desc": "Em carros alugados, as taxas sobre pedágios AutoPASS e as multas de estacionamento são cobradas depois no cartão.",
+     "tip": "Pergunte qual é a política de pedágios da locadora e pague o estacionamento com apps como o EasyPark."
+    },
+    {
+     "title": "Batedores de carteira na estação",
+     "desc": "Há furtos de carteiras e celulares na Oslo S e em pontos turísticos movimentados.",
+     "tip": "Leve os objetos de valor no bolso da frente ou em uma bolsa com zíper."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Норвежская крона (NOK)",

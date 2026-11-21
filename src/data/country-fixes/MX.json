@@ -1543,6 +1543,392 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Peso mexicano (MXN)",
+   "plugType": "Tipo A, B (127V, 60Hz)",
+   "bestMonths": "Novembro – abril (estação seca); de junho a novembro é temporada de furacões no litoral, e na primavera e no verão pode chegar sargaço ao Caribe",
+   "safety": {
+    "crimeRateSummary": "A violência ligada aos cartéis é muito alta em alguns estados (por exemplo, Guerrero, Michoacán, Sinaloa, Tamaulipas, Zacatecas e Colima), e os alertas oficiais desaconselham viagens para lá. As áreas turísticas são mais tranquilas, embora já tenha havido tiroteios até em Cancún e Tulum, e acontecem sequestros-relâmpago em táxis pegos na rua.",
+    "commonScams": [
+     "Pessoas que se passam por funcionários de traslado nos aeroportos de Cancún e da Cidade do México e levam você a apresentações de venda de timeshare",
+     "Postos de gasolina que não zeram a bomba ou trocam uma nota de 500 por uma de 50",
+     "Sequestros-relâmpago em táxis piratas pegos na rua, obrigando a vítima a sacar dinheiro no caixa eletrônico"
+    ],
+    "safeTravelTips": [
+     "Não pegue táxi na rua; use Uber, DiDi ou táxis de ponto (taxis de sitio).",
+     "Confira os alertas oficiais por estado antes de viajar e evite pegar a estrada à noite.",
+     "Use caixas eletrônicos de dia, dentro de bancos ou shoppings, e não exiba joias nem o celular."
+    ],
+    "emergencyNumbers": {
+     "police": "911",
+     "ambulance": "911",
+     "general": "911"
+    },
+    "safetyScore": 40,
+    "safetyLevel": "Cautela recomendada",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60"
+   },
+   "internet": {
+    "networkCoverage": "4G/5G bom nas cidades e áreas turísticas; em zonas rurais e de montanha, a Telcel tem a maior cobertura",
+    "costPerGbUsd": "~US$ 1 - 2",
+    "esimAvailability": "Boa",
+    "bestCarriers": [
+     "Telcel",
+     "AT&T México",
+     "Movistar"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Razoável (metrô e Metrobús amplos na Cidade do México; ônibus ADO confortáveis; Tren Maya em Yucatán)",
+    "costLevel": "Barato",
+    "singleTicketUsd": "US$ 0,30 - 0,60 (metrô da CDMX: 5 MXN)",
+    "dailyPassUsd": "Não há passe diário; ~US$ 1 - 3 por dia com o cartão recarregável de Movilidad Integrada",
+    "popularRideApps": [
+     "Uber",
+     "DiDi",
+     "inDrive"
+    ],
+    "taxiAdvice": "Uber e DiDi são seguros e baratos nas grandes cidades. Nos aeroportos, compre corrida pré-paga só nos balcões oficiais de táxi; em Cancún e Tulum os táxis são caros, então combine o valor antes de entrar."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 30 - 50 (mais em Cancún/Tulum)",
+    "dailyBudgetMidrangeUsd": "US$ 80 - 140",
+    "budgetMealUsd": "US$ 4 - 8",
+    "coffeeUsd": "US$ 1,50 - 3",
+    "waterBottleUsd": "US$ 0,70 - 1,20",
+    "hostelDormUsd": "US$ 12 - 25",
+    "hotel3StarUsd": "US$ 50 - 100",
+    "flightCostIndex": "Alto (~13-15 h)",
+    "flightTip": "A Turkish Airlines liga Istambul à Cidade do México e a Cancún (alguns voos com escala); compare também conexões via Madri ou EUA. Os voos domésticos da Volaris, Viva Aerobus e Aeroméxico são baratos."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "O cumprimento é um aperto de mão ou, entre conhecidos, um beijo no rosto; dizer “Buenos días” ao entrar numa loja é sinal de educação.",
+     "Ao passar perto de alguém que está comendo, diz-se “¡Provecho!”.",
+     "“Ahorita” é um conceito flexível; chegar atrasado é normal em encontros sociais, mas não nos de trabalho."
+    ],
+    "festivals": [
+     "Día de Muertos (1-2 de novembro)",
+     "Guelaguetza (julho, Oaxaca)",
+     "Dia da Independência e noite do Grito (15-16 de setembro)"
+    ],
+    "lifestyle": "Uma cultura familiar, calorosa e centrada na comida: a refeição principal é das 14h às 16h, e mercados, barracas de rua, mariachis e futebol fazem parte do dia a dia."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Chichén Itzá (Yucatán)",
+     "Pirâmides de Teotihuacán",
+     "Centro Histórico da CDMX e Museu Frida Kahlo",
+     "Oaxaca e Monte Albán",
+     "Tulum e os cenotes",
+     "San Miguel de Allende"
+    ],
+    "bestSeasons": "De novembro a abril o tempo é seco e ensolarado; fim de outubro – início de novembro para o Día de Muertos; dezembro – fevereiro é o período mais fresco em Yucatán.",
+    "travelStyleTip": "Para longas distâncias, use voos domésticos baratos e, para trechos curtos, os confortáveis ônibus ADO; em Yucatán, o Tren Maya ou um carro alugado são práticos."
+   },
+   "religion": {
+    "primaryReligions": "Católicos ~78%, protestantes/evangélicos ~11%, sem religião ~10% (censo de 2020)",
+    "respectNorms": "Cubra os ombros nas igrejas e não tire fotos durante a missa. Na igreja de San Juan Chamula (Chiapas), fotografar é totalmente proibido.",
+    "sacredSites": [
+     "Basílica de Santa María de Guadalupe (CDMX)",
+     "Catedral Metropolitana (Zócalo)",
+     "Templo de Santo Domingo de Guzmán (Oaxaca)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Espanhol (língua nacional de fato) e 68 línguas indígenas reconhecidas (náuatle, maia etc.)",
+    "englishProficiency": "Bom em Cancún e na Riviera Maya, razoável na Cidade do México e limitado nas áreas rurais.",
+    "phrases": [
+     {
+      "phrase": "¡Buenos días!",
+      "meaning": "Bom dia!",
+      "translation": "Bom dia!",
+      "pronunciation": "BWEH-nohs DEE-ahs"
+     },
+     {
+      "phrase": "¿Cuánto cuesta?",
+      "meaning": "Quanto custa?",
+      "translation": "Quanto custa?",
+      "pronunciation": "KWAN-toh KWES-tah"
+     },
+     {
+      "phrase": "La cuenta, por favor",
+      "meaning": "A conta, por favor",
+      "translation": "A conta, por favor",
+      "pronunciation": "lah KWEN-tah por fah-VOR"
+     },
+     {
+      "phrase": "¡Qué padre!",
+      "meaning": "Que legal! (expressão mexicana)",
+      "translation": "Que legal! (expressão mexicana)",
+      "pronunciation": "keh PAH-dreh"
+     },
+     {
+      "phrase": "¡Provecho!",
+      "meaning": "Bom apetite!",
+      "translation": "Bom apetite!",
+      "pronunciation": "proh-VEH-choh"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Berço de grandes civilizações, como a olmeca, a maia e a asteca, o território passou ao domínio espanhol com a queda de Tenochtitlán em 1521. A guerra de independência, iniciada em 1810, terminou em 1821, e a Revolução de 1910 deu forma ao México moderno.",
+    "milestones": [
+     "1325: os mexicas fundam Tenochtitlán",
+     "1521: queda de Tenochtitlán diante dos espanhóis",
+     "1821: consumação da independência",
+     "1910: começa a Revolução Mexicana"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Mole poblano",
+     "Tacos al pastor (porco no espeto vertical)",
+     "Chiles en nogada"
+    ],
+    "traditionalDrinks": [
+     "Agua de horchata e agua de jamaica (hibisco)",
+     "Café de olla",
+     "Tequila e mezcal (alcoólicos)"
+    ],
+    "streetFoodAndDesserts": [
+     "Elotes e esquites (milho)",
+     "Tamales",
+     "Churros com chocolate"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Frida Kahlo (pintora)",
+     "Octavio Paz (poeta, prêmio Nobel)",
+     "Guillermo del Toro (diretor vencedor do Oscar)"
+    ],
+    "strongSectors": [
+     "Indústria automotiva e eletrônica (exportação)",
+     "Turismo (Riviera Maya, CDMX)",
+     "Mineração (maior produtor de prata do mundo)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Nas cidades o cartão é muito usado; leve pesos em espécie para mercados, barracas, cidadezinhas e pedágios. Pagar em dólares sai caro.",
+    "tippingCulture": "Nos restaurantes espera-se 10-15% de gorjeta; frentistas e empacotadores de supermercado (cerillos) recebem alguns pesos.",
+    "economicPillars": "Indústria e exportações para os EUA, petróleo (Pemex), turismo, remessas de emigrantes e agricultura (abacate, tomate)."
+   }
+  },
+  "itin": {
+   "routeName": "Rota pelo México: da CDMX a Yucatán (Mérida, Chichén Itzá, Tulum)",
+   "routeSummary": "Uma rota de 10 dias que começa com os museus da CDMX e as pirâmides de Teotihuacán e segue de avião para Yucatán: a colonial Mérida, Valladolid com Chichén Itzá e cenotes, e o encerramento em Tulum, no Caribe.",
+   "totalDays": 10,
+   "idealDurationText": "Rota de 10 dias",
+   "bestSeason": "Novembro – abril",
+   "transportMode": "Voo doméstico CDMX – Mérida + ônibus ADO / Tren Maya + Uber/DiDi",
+   "paceLevel": "Equilibrado (cultura, história e praia)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Cidade do México",
+     "recommendedDuration": "3 dias",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Zócalo e Templo Mayor",
+      "Museu Nacional de Antropologia",
+      "Museu Frida Kahlo – Casa Azul (Coyoacán)",
+      "Teotihuacán (pirâmides do Sol e da Lua)"
+     ],
+     "activities": [
+      "Vá cedo a Teotihuacán e percorra a Calzada de los Muertos; se quiser, faça um voo de balão ao amanhecer.",
+      "Passeie de trajinera pelos canais de Xochimilco.",
+      "Explore taquerias e cafés na Roma e na Condesa."
+     ],
+     "foodAndDrinks": [
+      "Tacos al pastor (porco)",
+      "Churros com chocolate",
+      "Mezcal (alcoólico)"
+     ],
+     "criticalTips": [
+      "A cidade fica a 2.240 m de altitude; vá com calma no primeiro dia e beba bastante água.",
+      "Os ingressos para a Casa Azul esgotam com dias de antecedência; compre no site oficial."
+     ],
+     "mapsQuery": "Ciudad de México, México"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Mérida (a Cidade Branca)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Plaza Grande e Catedral",
+      "Paseo de Montejo",
+      "Sítio arqueológico de Uxmal (a ~1 h)",
+      "Gran Museo del Mundo Maya"
+     ],
+     "activities": [
+      "Faça um bate-volta a Uxmal.",
+      "Aproveite o “Mérida en Domingo” no centro.",
+      "Nade nos cenotes de Cuzamá."
+     ],
+     "foodAndDrinks": [
+      "Cochinita pibil (porco)",
+      "Sopa de lima",
+      "Marquesitas"
+     ],
+     "criticalTips": [
+      "Em abril – maio a temperatura passa dos 40 °C; fique na sombra ao meio-dia.",
+      "Mérida é uma das cidades mais seguras do México e tem Uber."
+     ],
+     "mapsQuery": "Mérida, Yucatán, México"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Valladolid e Chichén Itzá",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Chichén Itzá e El Castillo",
+      "Cenotes Suytun e Ik Kil",
+      "Convento de San Bernardino de Siena",
+      "Sítio arqueológico de Ek Balam"
+     ],
+     "activities": [
+      "Entre em Chichén Itzá às 8h, na abertura, para fugir das multidões e do calor.",
+      "Dê um mergulho na água fresca de um cenote.",
+      "Percorra de bicicleta as ruas coloniais de Valladolid."
+     ],
+     "foodAndDrinks": [
+      "Panuchos e salbutes",
+      "Agua de chaya"
+     ],
+     "criticalTips": [
+      "O ingresso de Chichén Itzá tem duas partes (INAH e estadual); leve dinheiro vivo e cartão.",
+      "Chapéu, protetor solar e água são indispensáveis; há pouca sombra."
+     ],
+     "mapsQuery": "Valladolid, Yucatán, México"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Tulum (costa caribenha)",
+     "recommendedDuration": "3 dias",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Ruínas maias de Tulum sobre a falésia",
+      "Gran Cenote",
+      "Reserva da Biosfera de Sian Ka’an",
+      "Tartarugas marinhas de Akumal"
+     ],
+     "activities": [
+      "Vá de bicicleta até as ruínas e a praia.",
+      "Faça snorkel no Gran Cenote.",
+      "Faça um passeio de lancha pelas lagoas de Sian Ka’an."
+     ],
+     "foodAndDrinks": [
+      "Tacos de peixe",
+      "Ceviche",
+      "Aguas frescas"
+     ],
+     "criticalTips": [
+      "Nos cenotes, use apenas protetor biodegradável ou nenhum.",
+      "Em Tulum, preços e táxis são caros; fique longe do ambiente de drogas da vida noturna."
+     ],
+     "mapsQuery": "Tulum, Quintana Roo, México"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Mole poblano",
+     "Chiles en nogada",
+     "Sopa de lima"
+    ],
+    "drinks": [
+     "Agua de horchata",
+     "Café de olla",
+     "Tequila / mezcal (alcoólicos)"
+    ],
+    "streetFoods": [
+     "Elotes / esquites",
+     "Tamales",
+     "Churros"
+    ],
+    "diningAdvice": "Na comida de rua, escolha barracas movimentadas; os molhos podem ser bem picantes, então prove um pouquinho antes. Se você não come porco, pergunte “¿Tiene cerdo?”."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptador de tomada tipo A/B",
+     "Protetor solar biodegradável e chapéu",
+     "Repelente de mosquitos (risco de dengue)",
+     "Jaqueta leve para as noites da CDMX"
+    ],
+    "safetyAndEtiquette": [
+     "Use Uber/DiDi em vez de táxis de rua e não viaje entre cidades à noite.",
+     "Cubra os ombros nas igrejas e não fotografe indígenas sem permissão."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "A",
+     "B"
+    ],
+    "voltage": "127V",
+    "frequency": "60Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Tomadas norte-americanas de pinos chatos; em prédios antigos muitas vezes só há o tipo A, sem aterramento. Plugues turcos precisam de adaptador; confira se seus carregadores aceitam 100-240 V."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Não beba água da torneira; use água mineral ou de galão (garrafón). O gelo em restaurantes turísticos costuma ser de água purificada.",
+    "vaccines": [
+     "Vacinas de rotina (difteria e tétano, tríplice viral)",
+     "Recomendam-se hepatite A e febre tifoide",
+     "Proteção contra mosquitos por causa da dengue"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "911"
+   },
+   "tipping": {
+    "custom": "Nos restaurantes espera-se 10-15% de gorjeta.",
+    "standardPercent": 15,
+    "rule": "expected",
+    "note": "Em áreas turísticas a conta pode já incluir o serviço; não pague duas vezes. Se puder, deixe a gorjeta em pesos, em dinheiro vivo."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Parcial (IVA de 16%, menos comissões)",
+    "minSpend": "~1.200 MXN (por nota fiscal, em lojas participantes)",
+    "customsNote": "A restituição do IVA para turistas só vale em lojas participantes, para notas pagas com cartão e com saída por avião ou navio, e não se recuperam os 16% completos. Apresente as notas fiscais, o passaporte e o cartão de embarque no balcão do aeroporto."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 1 - 2",
+    "topCarriers": [
+     "Telcel",
+     "AT&T México",
+     "Movistar"
+    ],
+    "airportSimTrapWarning": "Quem oferece “chip grátis / traslado” nos aeroportos de Cancún e da CDMX geralmente quer vender timeshare. Compre um chip da Telcel numa loja Telcel ou num OXXO na cidade, ou use eSIM."
+   },
+   "touristScams": [
+    {
+     "title": "O “tanque de tubarões” do aeroporto",
+     "desc": "No corredor depois da alfândega, pessoas com cara de funcionário oferecem traslados, passeios ou informações para levar você a apresentações de venda de timeshare.",
+     "tip": "Siga em frente sem parar; reserve o traslado antes e procure só o motorista com a placa com seu nome."
+    },
+    {
+     "title": "Truques no posto de gasolina",
+     "desc": "Não zeram a bomba ou trocam rapidinho sua nota de 500 por uma de 50.",
+     "tip": "Diga “en ceros, por favor”, olhe a bomba e fale em voz alta o valor da nota ao entregá-la."
+    },
+    {
+     "title": "Táxis piratas e sequestro-relâmpago",
+     "desc": "Em táxis sem licença pegos na rua, você pode ser roubado ou obrigado a sacar dinheiro.",
+     "tip": "Use Uber/DiDi ou táxis de ponto chamados pelo hotel ou restaurante."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Мексиканское песо (MXN)",

@@ -1431,6 +1431,364 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Franco CFA da África Central (XAF; atrelado ao euro)",
+   "plugType": "Tipo C, E (220V, 50Hz)",
+   "bestMonths": "Novembro – fevereiro (estação seca no sul; no norte, novembro – maio) · março – outubro é chuvoso, com chuvas muito fortes em Duala de julho a setembro",
+   "safety": {
+    "safetyScore": 40,
+    "safetyLevel": "Cautela recomendada",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60",
+    "crimeRateSummary": "Os alertas oficiais pedem que você não viaje às regiões Noroeste e Sudoeste (conflito separatista), ao Extremo Norte (Boko Haram) nem a áreas do leste junto à República Centro-Africana. Em Duala e Iaundé há furtos por arrastão, roubos de carros e assaltos noturnos.",
+    "commonScams": [
+     "Os “feymen” de Camarões abordam estrangeiros com ouro, heranças ou esquemas para multiplicar dinheiro; também há muitos anúncios falsos de venda de animais de estimação.",
+     "Nas barreiras da polícia e da gendarmaria, pequenas “multas” são frequentes.",
+     "Em táxis compartilhados, outros “passageiros” podem ser cúmplices de um roubo."
+    ],
+    "safeTravelTips": [
+     "Não vá às regiões Noroeste, Sudoeste (incluindo Buea e Limbe) nem ao Extremo Norte.",
+     "Viaje entre cidades só de dia; evite os ônibus noturnos.",
+     "Não ande a pé à noite em Duala e Iaundé; mantenha as janelas do carro fechadas."
+    ],
+    "emergencyNumbers": {
+     "police": "117",
+     "ambulance": "119",
+     "general": "117"
+    }
+   },
+   "internet": {
+    "networkCoverage": "4G nas cidades, 5G limitado em Duala e Iaundé; sinal fraco nas áreas rurais e de floresta",
+    "costPerGbUsd": "US$ 0,80 - 2,50",
+    "esimAvailability": "Limitada (eSIMs internacionais funcionam; o chip local é registrado com passaporte)",
+    "bestCarriers": [
+     "MTN Cameroon",
+     "Orange Cameroun",
+     "Camtel (Blue)",
+     "Nexttel"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Moderado (trem Camrail Duala – Iaundé, ônibus intermunicipais; na cidade, táxis e mototáxis “bendskin”)",
+    "costLevel": "Barato",
+    "singleTicketUsd": "Táxi compartilhado ~0,50 $; mototáxi 0,30 - 1 $",
+    "dailyPassUsd": "Não existe (ônibus Duala – Iaundé ~5 - 10 $)",
+    "popularRideApps": [
+     "Yango"
+    ],
+    "taxiAdvice": "Em Duala e Iaundé, o Yango mostra o preço antes e é mais seguro que os táxis amarelos. Diga “dépôt” para ter um táxi amarelo só para você; mototáxis não são recomendados pelo risco de acidente."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 30 - 50",
+    "dailyBudgetMidrangeUsd": "US$ 80 - 150",
+    "budgetMealUsd": "US$ 2 - 6",
+    "coffeeUsd": "US$ 1 - 2,50",
+    "waterBottleUsd": "US$ 0,50 - 1",
+    "hostelDormUsd": "12 - 20 $ (poucas opções)",
+    "hotel3StarUsd": "US$ 50 - 110",
+    "flightCostIndex": "Moderado (a Turkish Airlines voa Istambul – Duala e Iaundé)",
+    "flightTip": "A Turkish Airlines voa para Duala (DLA) e Iaundé-Nsimalen (NSI); chegar por uma e sair pela outra facilita o roteiro."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Os cumprimentos são longos; os mais velhos e os chefes tradicionais (fon, lamido) são especialmente respeitados.",
+     "Dê e receba com a mão direita; vista-se de forma discreta no norte muçulmano.",
+     "É proibido fotografar instalações militares, pontes e prédios oficiais."
+    ],
+    "festivals": [
+     "Ngondo (povo sawa, Duala, dezembro)",
+     "Nguon (reino bamum, Foumban, bienal)",
+     "Festa Nacional (20 de maio)"
+    ],
+    "lifestyle": "Chamado de “África em miniatura”, é um país colorido, com mais de 250 etnias, comunidades francófonas e anglófonas, paixão pelo futebol e a música makossa e bikutsi."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Praias de Kribi e cachoeiras de Lobé (que caem direto no oceano)",
+     "Iaundé: Mont Fébé, Museu Nacional e basílica de Mvolyé",
+     "Santuário de primatas de Mefou (Ape Action Africa)",
+     "Duala: Akwa, La Pagode e Doual'art",
+     "Parque Nacional Campo Ma'an e tartarugas de Ebodjé",
+     "Reserva de Fauna do Dja (UNESCO)"
+    ],
+    "bestSeasons": "Novembro – fevereiro (estação seca no sul; no norte, novembro – maio) · março – outubro é chuvoso, com chuvas muito fortes em Duala de julho a setembro",
+    "travelStyleTip": "Fique no triângulo sul-centro, considerado mais seguro (Duala, Kribi, Iaundé); o monte Camarões e Limbe são lindos, mas ficam no Sudoeste, área com alerta oficial."
+   },
+   "religion": {
+    "primaryReligions": "Cristianismo (~65% – 70%: católicos ~38%, protestantes ~26%), islamismo (~20% – 25%, no norte), crenças tradicionais",
+    "respectNorms": "Vista-se de forma discreta em mesquitas e igrejas; nos palácios tradicionais (chefferies), respeite as regras e as proibições de fotos.",
+    "sacredSites": [
+     "Basílica de Maria Rainha dos Apóstolos (Mvolyé, Iaundé)",
+     "Catedral de São Pedro e São Paulo (Duala)",
+     "Grande Mesquita de Foumban"
+    ]
+   },
+   "language": {
+    "officialLanguages": "O francês e o inglês são línguas oficiais (a maioria fala francês); também se falam o pidgin camaronês, o camfranglais e mais de 250 línguas locais, como ewondo, duala e fulfulde.",
+    "englishProficiency": "Médio; em Duala e Iaundé predomina o francês — o inglês e o pidgin aparecem sobretudo no oeste.",
+    "phrases": [
+     {
+      "phrase": "Mbolo!",
+      "meaning": "Olá! (ewondo/beti, Iaundé)",
+      "translation": "Olá! (ewondo/beti, Iaundé)",
+      "pronunciation": "mbo-lo"
+     },
+     {
+      "phrase": "On dit quoi ?",
+      "meaning": "E aí? (francês camaronês)",
+      "translation": "E aí? (francês camaronês)",
+      "pronunciation": "on di kwa"
+     },
+     {
+      "phrase": "How na?",
+      "meaning": "Tudo bem? (pidgin)",
+      "translation": "Tudo bem? (pidgin)",
+      "pronunciation": "hau na"
+     },
+     {
+      "phrase": "Na how much?",
+      "meaning": "Quanto custa? (pidgin)",
+      "translation": "Quanto custa? (pidgin)",
+      "pronunciation": "na hau mach"
+     },
+     {
+      "phrase": "Tenk yu",
+      "meaning": "Obrigado (pidgin)",
+      "translation": "Obrigado (pidgin)",
+      "pronunciation": "tenk yu"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Na região floresceram a civilização sao e Estados como o reino bamum, que criou sua própria escrita com o sultão Njoya. Em 1884 foi fundado o Kamerun alemão, dividido entre a França e o Reino Unido depois da Primeira Guerra Mundial. O Camarões francês se tornou independente em 1º de janeiro de 1960, reuniu-se ao Camarões do Sul em 1961 e passou a ser um Estado unitário em 1972.",
+    "milestones": [
+     "1884: Colônia alemã do Kamerun",
+     "1960: Independência",
+     "1961: Reunificação com o Camarões do Sul",
+     "1990: Quartas de final da Copa do Mundo (Roger Milla)"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Ndolé (folha amarga com amendoim e camarão/carne, prato nacional)",
+     "Poulet DG (frango com banana-da-terra e legumes)",
+     "Mbongo tchobi (ensopado preto de peixe apimentado)"
+    ],
+    "traditionalDrinks": [
+     "Vinho de palma (matango)",
+     "Folere (bebida de hibisco)",
+     "Cervejas “33” Export e Castel"
+    ],
+    "streetFoodAndDesserts": [
+     "Soya (espetinhos de carne bovina apimentados)",
+     "BHB: beignets, feijão e bouillie (mingau)",
+     "Banana-da-terra assada com safou"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Sultão Ibrahim Njoya (criador da escrita bamum)",
+     "Manu Dibango (saxofonista, “Soul Makossa”)",
+     "Samuel Eto'o (jogador de futebol)"
+    ],
+    "strongSectors": [
+     "Petróleo e gás",
+     "Agricultura (cacau, café, banana, algodão)",
+     "Madeira e silvicultura"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "O dinheiro vivo manda; em Duala e Iaundé há caixas eletrônicos, e os grandes hotéis aceitam cartão. O dinheiro móvel (MTN MoMo, Orange Money) é muito comum; euros são trocados com facilidade.",
+    "tippingCulture": "A gorjeta é opcional. 5% – 10% em bons restaurantes; uma pequena gorjeta por dia para guias e motoristas.",
+    "economicPillars": "Petróleo e gás, cacau, café, madeira, alumínio e o porto de Duala."
+   }
+  },
+  "itin": {
+   "routeName": "Triângulo do sul de Camarões: Duala, Kribi e Iaundé",
+   "routeSummary": "Roteiro de 8 dias longe das áreas com alerta: da arte e do makossa da cidade portuária de Duala às praias de Kribi e às cachoeiras de Lobé, que caem no oceano, e depois às colinas de Iaundé e seu santuário de primatas.",
+   "totalDays": 8,
+   "idealDurationText": "Roteiro de 8 dias",
+   "bestSeason": "Novembro – fevereiro (estação seca no sul; no norte, novembro – maio) · março – outubro é chuvoso, com chuvas muito fortes em Duala de julho a setembro",
+   "transportMode": "Carro particular ou ônibus (Duala – Kribi ~3h, Kribi – Iaundé ~3,5 – 4h); opção de voltar no trem Camrail Iaundé – Duala",
+   "paceLevel": "Equilibrado (cidade + praia + natureza)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Duala",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "La Pagode e o bairro de Akwa",
+      "Centro de arte contemporânea Doual'art",
+      "Rio Wouri e porto pesqueiro",
+      "Catedral de São Pedro e São Paulo"
+     ],
+     "activities": [
+      "Percorra os prédios coloniais de Bonanjo.",
+      "À noite, ouça makossa ao vivo num “cabaret”.",
+      "Coma peixe na brasa no mercado de Youpwe."
+     ],
+     "foodAndDrinks": [
+      "Ndolé com miondo (palitos de mandioca)",
+      "Peixe na brasa com uma “33” Export"
+     ],
+     "criticalTips": [
+      "Duala é muito quente e úmida; descanse na hora do almoço.",
+      "À noite, use o Yango e não deixe o celular perto da janela."
+     ],
+     "mapsQuery": "Akwa, Douala, Cameroon"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Kribi",
+     "recommendedDuration": "3 dias",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Cachoeiras de Lobé",
+      "Praias de areia dourada",
+      "Projeto de tartarugas marinhas de Ebodjé"
+     ],
+     "activities": [
+      "Navegue de piroga pelo rio Lobé até as cachoeiras.",
+      "Participe da observação noturna de tartarugas em Ebodjé (novembro – março).",
+      "Coma camarão e peixe fresquinhos nas vilas de pescadores."
+     ],
+     "foodAndDrinks": [
+      "Camarão e peixe na brasa",
+      "Coco fresco"
+     ],
+     "criticalTips": [
+      "As correntes são fortes; siga os avisos locais.",
+      "Nos fins de semana, a cidade lota de gente vinda de Duala e Iaundé; reserve antes."
+     ],
+     "mapsQuery": "Chutes de la Lobé, Kribi, Cameroon"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Iaundé",
+     "recommendedDuration": "3 dias",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Vista do Mont Fébé e Museu Beneditino",
+      "Museu Nacional",
+      "Basílica de Mvolyé",
+      "Santuário de primatas de Mefou"
+     ],
+     "activities": [
+      "Veja chimpanzés e gorilas resgatados em Mefou.",
+      "Admire a cidade do alto do Mont Fébé.",
+      "Percorra com guia o mercado de Mokolo ou de Mfoundi."
+     ],
+     "foodAndDrinks": [
+      "Poulet DG",
+      "Soya com folere"
+     ],
+     "criticalTips": [
+      "Não tire fotos perto do palácio presidencial nem de prédios oficiais.",
+      "Organize a visita a Mefou com antecedência; com chuva, a estrada fica complicada."
+     ],
+     "mapsQuery": "Mont Fébé, Yaoundé, Cameroon"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Ndolé (folha amarga com amendoim e camarão/carne, prato nacional)",
+     "Poulet DG (frango com banana-da-terra e legumes)",
+     "Mbongo tchobi (ensopado preto de peixe apimentado)"
+    ],
+    "drinks": [
+     "Vinho de palma (matango)",
+     "Folere (bebida de hibisco)",
+     "Cervejas “33” Export e Castel"
+    ],
+    "streetFoods": [
+     "Soya (espetinhos de carne bovina apimentados)",
+     "BHB: beignets, feijão e bouillie (mingau)",
+     "Banana-da-terra assada com safou"
+    ],
+    "diningAdvice": "A culinária camaronesa é uma das mais ricas da África Central; prove ndolé e poulet DG nos populares “chantiers” e soya nas barracas de churrasco noturnas."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Certificado de febre amarela (obrigatório)",
+     "Antimaláricos e repelente com DEET",
+     "Capa de chuva (em Duala pode chover o ano todo)",
+     "Cópias do passaporte e do visto"
+    ],
+    "safetyAndEtiquette": [
+     "Não vá ao Noroeste, ao Sudoeste nem ao Extremo Norte.",
+     "Não viaje entre cidades à noite.",
+     "Não fotografe prédios oficiais."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "E"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Usam-se tomadas europeias tipo C e E, compatíveis com as da Turquia. Um carregador com proteção contra surtos ajuda a enfrentar as oscilações de energia."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "A água da torneira não é potável; beba água mineral lacrada (por exemplo, Tangui, Supermont).",
+    "vaccines": [
+     "Febre amarela (obrigatória na entrada)",
+     "Profilaxia contra malária (risco alto em todo o país)",
+     "Hepatite A, febre tifoide e reforço da pólio",
+     "Meningite (norte) e raiva"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "119"
+   },
+   "tipping": {
+    "custom": "A gorjeta é opcional.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "5% – 10% em bons restaurantes; uma pequena gorjeta por dia para guias e motoristas."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Sem restituição para turistas (IVA de 19,25%)",
+    "minSpend": "Não se aplica",
+    "customsNote": "Camarões não devolve o IVA a turistas. É proibido exportar marfim, produtos de fauna ou antiguidades sem autorização; peça nota fiscal do artesanato."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 0,80 - 2,50",
+    "topCarriers": [
+     "MTN Cameroon",
+     "Orange Cameroun",
+     "Camtel (Blue)",
+     "Nexttel"
+    ],
+    "airportSimTrapWarning": "Nos aeroportos de Duala e Iaundé há pontos da MTN e da Orange; o chip precisa ser registrado com passaporte. Não compre chips sem registro de vendedores de rua."
+   },
+   "touristScams": [
+    {
+     "title": "Golpistas “feyman”",
+     "desc": "Os “feymen” de Camarões abordam estrangeiros com ouro, heranças ou esquemas para multiplicar dinheiro; também há muitos anúncios falsos de venda de animais de estimação.",
+     "tip": "Nunca pague por ofertas boas demais para ser verdade."
+    },
+    {
+     "title": "Propina em barreiras",
+     "desc": "Nas barreiras da polícia e da gendarmaria, pequenas “multas” são frequentes.",
+     "tip": "Leve cópias do passaporte e do visto; seja educado, mas firme."
+    },
+    {
+     "title": "Roubo no táxi",
+     "desc": "Em táxis compartilhados, outros “passageiros” podem ser cúmplices de um roubo.",
+     "tip": "Contrate o táxi só para você (“dépôt”) ou use o carro do hotel."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Центральноафриканский франк КФА (XAF; привязан к евро)",

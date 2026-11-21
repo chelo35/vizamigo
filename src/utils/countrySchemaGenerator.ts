@@ -192,7 +192,7 @@ export function generateCountryJsonLd({
           {
             '@type': 'ListItem',
             position: 2,
-            name: language === 'tr' ? 'Ülkeler' : language === 'de' ? 'Länder' : language === 'es' ? 'Países' : language === 'ru' ? 'Страны' : 'Countries',
+            name: language === 'tr' ? 'Ülkeler' : language === 'de' ? 'Länder' : language === 'es' ? 'Países' : language === 'pt' ? 'Países' : language === 'ru' ? 'Страны' : 'Countries',
             item: `${BASE_URL}/${language}/explore`
           },
           {

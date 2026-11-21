@@ -65,20 +65,20 @@ export const OfferCard: React.FC<{ code: string; passport: string }> = ({ code, 
     setGone(true);
   };
   const links = [
-    { id: 'booking', url: tpLinks.booking(`${geo?.capital ? capitalName(code, 'en', geo.capital) : nameEn}, ${nameEn}`), label: l('Oteller', 'Hotels', 'Hotels', 'Hoteles', 'Отели') },
-    { id: 'aviasales', url: tpLinks.flights(home, hub), label: fp ? `${l('Uçuş', 'Flights', 'Flüge', 'Vuelos', 'Авиа')} · ${fp.money}` : l('Uçuşlar', 'Flights', 'Flüge', 'Vuelos', 'Авиабилеты') },
+    { id: 'booking', url: tpLinks.booking(`${geo?.capital ? capitalName(code, 'en', geo.capital) : nameEn}, ${nameEn}`), label: l('Oteller', 'Hotels', 'Hotels', 'Hoteles', 'Отели', 'Hotéis') },
+    { id: 'aviasales', url: tpLinks.flights(home, hub), label: fp ? `${l('Uçuş', 'Flights', 'Flüge', 'Vuelos', 'Авиа', 'Voos')} · ${fp.money}` : l('Uçuşlar', 'Flights', 'Flüge', 'Vuelos', 'Авиабилеты', 'Voos') },
     { id: 'yesim', url: tpLinks.yesim(), label: 'eSIM' }
   ];
 
   return (
-    <aside className="vz-offer" role="complementary" aria-label={l('Yolculuk önerisi', 'Trip suggestion', 'Reisetipp', 'Sugerencia de viaje', 'Совет')}>
-      <button type="button" className="vz-offer-x" onClick={close} aria-label={l('Kapat', 'Close', 'Schließen', 'Cerrar', 'Закрыть')}>
+    <aside className="vz-offer" role="complementary" aria-label={l('Yolculuk önerisi', 'Trip suggestion', 'Reisetipp', 'Sugerencia de viaje', 'Совет', 'Sugestão de viagem')}>
+      <button type="button" className="vz-offer-x" onClick={close} aria-label={l('Kapat', 'Close', 'Schließen', 'Cerrar', 'Закрыть', 'Fechar')}>
         <Icon name="close" size={16} duo={false} />
       </button>
       <b className="vz-offer-t">
-        ✈️ {l(`${name} yolculuğunu planlıyor musun?`, `Planning a trip to ${name}?`, `Reise nach ${name} geplant?`, `¿Planeas viajar a ${name}?`, `Собираетесь в ${name}?`)}
+        ✈️ {l(`${name} yolculuğunu planlıyor musun?`, `Planning a trip to ${name}?`, `Reise nach ${name} geplant?`, `¿Planeas viajar a ${name}?`, `Собираетесь в ${name}?`, `Planejando viajar para ${name}?`)}
       </b>
-      <span className="vz-offer-s">{l('Güncel fiyatlara tek dokunuşla bak.', 'Check current prices in one tap.', 'Aktuelle Preise mit einem Tipp.', 'Mira precios actuales con un toque.', 'Актуальные цены в одно касание.')}</span>
+      <span className="vz-offer-s">{l('Güncel fiyatlara tek dokunuşla bak.', 'Check current prices in one tap.', 'Aktuelle Preise mit einem Tipp.', 'Mira precios actuales con un toque.', 'Актуальные цены в одно касание.', 'Veja os preços atuais com um toque.')}</span>
       <div className="vz-offer-a">
         {links.map((x) => (
           <a key={x.id} href={x.url} target="_blank" rel="noopener noreferrer sponsored" className="vz-offer-b">

@@ -1435,6 +1435,365 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Rublo bielorrusso (BYN)",
+   "plugType": "Tipo C, F (230V, 50Hz)",
+   "bestMonths": "Maio a setembro (verão ameno; os invernos são muito frios e com neve)",
+   "safety": {
+    "safetyScore": 40,
+    "safetyLevel": "Cautela recomendada",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60",
+    "crimeRateSummary": "A criminalidade de rua é baixa, mas os governos do Reino Unido e dos EUA desaconselham viagens a Belarus por causa do risco de detenções arbitrárias e da situação regional ligada à guerra na Ucrânia.",
+    "commonScams": [
+     "Pessoas conhecidas em baladas que levam você a bares caríssimos",
+     "Ofertas de câmbio não oficiais (ilegais e arriscadas)",
+     "Táxis sem licença no aeroporto e nas estações, com tarifas abusivas"
+    ],
+    "safeTravelTips": [
+     "Não fotografe prédios do governo, instalações militares nem áreas de fronteira.",
+     "Ande sempre com o passaporte e confirme que a sua hospedagem fez o registro.",
+     "Consulte os alertas oficiais antes de viajar e fique longe de manifestações e aglomerações."
+    ],
+    "emergencyNumbers": {
+     "police": "102",
+     "ambulance": "103",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "95%+ de 4G nas cidades; 5G limitado em Minsk",
+    "costPerGbUsd": "~US$ 0,50 - 1,50",
+    "esimAvailability": "Boa",
+    "bestCarriers": [
+     "A1",
+     "MTS Belarus",
+     "life:)"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Bom",
+    "costLevel": "Barato",
+    "singleTicketUsd": "US$ 0,25 - 0,40",
+    "dailyPassUsd": "US$ 1,50 - 3",
+    "popularRideApps": [
+     "Yandex Go",
+     "Yandex Maps",
+     "Metrô de Minsk (QR / cartão)"
+    ],
+    "taxiAdvice": "O Yandex Go é comum e barato em Minsk; as corridas dentro da cidade costumam custar 2-5 $."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 25 - 40",
+    "dailyBudgetMidrangeUsd": "US$ 60 - 100",
+    "budgetMealUsd": "US$ 5 - 10",
+    "coffeeUsd": "US$ 1,50 - 3",
+    "waterBottleUsd": "US$ 0,40 - 0,80",
+    "hostelDormUsd": "US$ 10 - 18",
+    "hotel3StarUsd": "US$ 40 - 80",
+    "flightCostIndex": "Moderado",
+    "flightTip": "A Belavia tem voo direto de Istambul para Minsk; as conexões pela UE podem ter restrições, então confira os horários atuais."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Tire os sapatos ao visitar uma casa e leve um pequeno presente.",
+     "Dê flores em número ímpar; números pares são para funerais.",
+     "Nas igrejas ortodoxas, as mulheres cobrem a cabeça e os homens tiram o chapéu.",
+     "Evite falar de política em público."
+    ],
+    "festivals": [
+     "Kupalle (6-7 de julho, festa de São João)",
+     "Slavianski Bazaar em Vitebsk (julho)",
+     "Maslenitsa (semana dos blinis antes da Quaresma)"
+    ],
+    "lifestyle": "Avenidas largas, cidades limpas e organizadas, cultura de florestas e lagos, fins de semana na dacha."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Minsk – avenida da Independência e bairro da Trindade",
+     "Castelo de Mir (UNESCO)",
+     "Palácio de Niasvizh (UNESCO)",
+     "Fortaleza de Brest",
+     "Parque Nacional Belovezhskaya Pushcha (bisão-europeu)",
+     "Polotsk e a catedral de Santa Sofia"
+    ],
+    "bestSeasons": "Maio a setembro (verão ameno; os invernos são muito frios e com neve)",
+    "travelStyleTip": "Mir e Niasvizh são bate-voltas fáceis a partir de Minsk; pegue o trem para Brest e pernoite lá para visitar a Pushcha."
+   },
+   "religion": {
+    "primaryReligions": "Cristianismo ortodoxo (~80%), católicos (~10%), pequenas comunidades protestante, muçulmana (tártara) e judaica.",
+    "respectNorms": "Fique em silêncio nas igrejas e não tire fotos durante as missas; para mulheres, prefere-se lenço e saia.",
+    "sacredSites": [
+     "Catedral do Espírito Santo, Minsk",
+     "Catedral de Santa Sofia, Polotsk",
+     "Mosteiro de Zhyrovichy"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Bielorrusso e russo (ambos oficiais). O russo predomina no dia a dia.",
+    "englishProficiency": "Limitado; fora do público jovem e dos hotéis de Minsk, você vai precisar de russo ou de um app de tradução.",
+    "phrases": [
+     {
+      "phrase": "Прывітанне / Здравствуйте",
+      "meaning": "Olá",
+      "translation": "Olá",
+      "pronunciation": "Pryvitannie / Zdravstvuyte"
+     },
+     {
+      "phrase": "Дзякуй / Спасибо",
+      "meaning": "Obrigado",
+      "translation": "Obrigado",
+      "pronunciation": "Dziakuj / Spasibo"
+     },
+     {
+      "phrase": "Калі ласка / Пожалуйста",
+      "meaning": "Por favor / De nada",
+      "translation": "Por favor / De nada",
+      "pronunciation": "Kali laska / Pozhaluysta"
+     },
+     {
+      "phrase": "Колькі каштуе? / Сколько стоит?",
+      "meaning": "Quanto custa?",
+      "translation": "Quanto custa?",
+      "pronunciation": "Kolki kashtuje? / Skolko stoit?"
+     },
+     {
+      "phrase": "Да пабачэння / До свидания",
+      "meaning": "Tchau",
+      "translation": "Até logo",
+      "pronunciation": "Da pabachennia / Do svidaniya"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Antes parte do Principado de Polotsk, do Grão-Ducado da Lituânia e da República das Duas Nações, o território passou ao Império Russo no século XVIII. Devastado na Segunda Guerra Mundial, tornou-se independente em 1991.",
+    "milestones": [
+     "862: primeira menção a Polotsk",
+     "1517: Francysk Skaryna imprime o primeiro livro bielorrusso",
+     "1941: defesa da fortaleza de Brest",
+     "1991: independência"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Draniki (panquecas de batata com creme azedo)",
+     "Machanka (molho de porco para molhar panquecas)",
+     "Kalduny (pasteizinhos de massa de batata recheados com carne)"
+    ],
+    "traditionalDrinks": [
+     "Kvas (bebida fermentada de pão)",
+     "Seiva de bétula",
+     "Krambambula (licor de mel com especiarias)"
+    ],
+    "streetFoodAndDesserts": [
+     "Syrniki (panquecas de ricota)",
+     "Babka (torta de batata assada)",
+     "Zefir e chocolates Kommunarka"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Marc Chagall (pintor, nascido em Vitebsk)",
+     "Francysk Skaryna (impressor, humanista)",
+     "Yanka Kupala (poeta)"
+    ],
+    "strongSectors": [
+     "Maquinário pesado (caminhões BelAZ, tratores MTZ)",
+     "Fertilizantes de potássio",
+     "TI e software"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Os cartões são amplamente aceitos, mas os estrangeiros podem não funcionar por causa das sanções; leve euros ou dólares de reserva e troque dinheiro só em casas de câmbio oficiais.",
+    "tippingCulture": "Em restaurantes, é comum deixar 10%; alguns já incluem taxa de serviço.",
+    "economicPillars": "Fabricação de máquinas, potássio e derivados de petróleo, agricultura e alimentos, serviços de TI."
+   }
+  },
+  "itin": {
+   "routeName": "Roteiro cultural por Belarus: Minsk, Mir–Niasvizh e Brest",
+   "routeSummary": "Roteiro de 6 dias que vai das amplas avenidas de Minsk aos castelos da UNESCO de Mir e Niasvizh e, depois, à fortaleza de Brest e à floresta de Belovezhskaya Pushcha.",
+   "totalDays": 6,
+   "idealDurationText": "Roteiro de 6 dias por Belarus",
+   "bestSeason": "Maio a setembro (verão ameno; os invernos são muito frios e com neve)",
+   "transportMode": "Trens intermunicipais (Ferrovias de Belarus) + metrô de Minsk e Yandex Go",
+   "paceLevel": "Tranquilo (cultura e natureza)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Minsk",
+     "recommendedDuration": "2 dias (centro)",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Avenida da Independência e praça da Vitória",
+      "Bairro histórico da Trindade",
+      "Museu da Grande Guerra Patriótica",
+      "Mirante da Biblioteca Nacional"
+     ],
+     "activities": [
+      "Percorra as estações de metrô do centro.",
+      "Caminhe às margens do rio Svislach.",
+      "Descubra produtos locais no mercado Komarovsky."
+     ],
+     "foodAndDrinks": [
+      "Draniki",
+      "Kvas",
+      "Syrniki"
+     ],
+     "criticalTips": [
+      "Não fotografe prédios do governo.",
+      "Confirme seu registro com o hotel."
+     ],
+     "mapsQuery": "Minsk, Belarus"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Mir e Niasvizh",
+     "recommendedDuration": "1 dia (bate-volta a partir de Minsk)",
+     "durationBadge": "1 dia",
+     "highlights": [
+      "Castelo de Mir (UNESCO)",
+      "Palácio e parque de Niasvizh (UNESCO)",
+      "Igreja de Corpus Christi, Niasvizh"
+     ],
+     "activities": [
+      "Suba nas torres do castelo de Mir.",
+      "Passeie pelo parque à beira do lago do palácio de Niasvizh.",
+      "Experimente pratos locais no restaurante do castelo."
+     ],
+     "foodAndDrinks": [
+      "Machanka",
+      "Krambambula"
+     ],
+     "criticalTips": [
+      "O transporte público é escasso; vale a pena contratar um tour ou motorista.",
+      "Confira com antecedência os horários de segunda-feira."
+     ],
+     "mapsQuery": "Mir Castle, Belarus"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Brest e Belovezhskaya Pushcha",
+     "recommendedDuration": "2-3 dias (história e floresta)",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Complexo memorial da fortaleza de Brest",
+      "Rua de pedestres Sovetskaya",
+      "Parque Nacional Belovezhskaya Pushcha",
+      "Áreas cercadas de bisões-europeus"
+     ],
+     "activities": [
+      "Visite os museus da fortaleza de Brest.",
+      "Alugue uma bicicleta e percorra as trilhas da floresta da Pushcha.",
+      "Assista ao acendimento dos lampiões ao entardecer na rua Sovetskaya."
+     ],
+     "foodAndDrinks": [
+      "Kalduny",
+      "Seiva de bétula",
+      "Babka"
+     ],
+     "criticalTips": [
+      "Perto da fronteira com a Polônia, espere controles de documentos.",
+      "Na floresta, use manga comprida e repelente contra carrapatos."
+     ],
+     "mapsQuery": "Brest Fortress, Belarus"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Draniki (panquecas de batata com creme azedo)",
+     "Machanka (molho de porco para molhar panquecas)",
+     "Kalduny (pasteizinhos de massa de batata recheados com carne)"
+    ],
+    "drinks": [
+     "Kvas (bebida fermentada de pão)",
+     "Seiva de bétula",
+     "Krambambula (licor de mel com especiarias)"
+    ],
+    "streetFoods": [
+     "Syrniki (panquecas de ricota)",
+     "Babka (torta de batata assada)",
+     "Zefir e chocolates Kommunarka"
+    ],
+    "diningAdvice": "Os menus de almoço durante a semana são baratos; a culinária, à base de batata, é bem substanciosa, e o creme azedo acompanha quase tudo."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Passaporte e apólice de seguro saúde",
+     "Dinheiro de reserva (euros/dólares)",
+     "Repelente contra carrapatos",
+     "Casaco e botas no inverno"
+    ],
+    "safetyAndEtiquette": [
+     "Não fotografe instalações governamentais nem militares.",
+     "Evite aglomerações e siga os alertas oficiais."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Tomadas europeias tipo C/F, como na Turquia; não é preciso adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "A água nas cidades é tratada, mas, por causa dos encanamentos antigos, os moradores a fervem; recomenda-se água engarrafada.",
+    "vaccines": [
+     "Vacinas de rotina (tétano-difteria, tríplice viral)",
+     "Hepatite A",
+     "Encefalite transmitida por carrapatos, para estadias longas em florestas"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "103"
+   },
+   "tipping": {
+    "custom": "A gorjeta é opcional; 10% por um bom atendimento.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Se a conta incluir uma linha de serviço (\"обслуживание\"), não é preciso dar mais gorjeta."
+   },
+   "taxFree": {
+    "vatRefundPercent": "15% do preço sem IVA",
+    "minSpend": "Mais de 80 BYN em uma mesma loja no mesmo dia",
+    "customsNote": "O Tax Free só funciona em lojas participantes; mostre a mercadoria na alfândega para carimbar o formulário. Reembolsos no cartão podem falhar por causa das sanções; pergunte por pontos de reembolso em dinheiro."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 0,50 - 1,50",
+    "topCarriers": [
+     "A1",
+     "MTS Belarus",
+     "life:)"
+    ],
+    "airportSimTrapWarning": "O aeroporto de Minsk tem quiosques da A1, da MTS e da life:); é preciso passaporte para comprar o chip. As lojas da cidade oferecem mais planos."
+   },
+   "touristScams": [
+    {
+     "title": "Táxi sem licença",
+     "desc": "Carros sem taxímetro no aeroporto e nas estações cobram tarifas altas.",
+     "tip": "Use o Yandex Go ou o ponto oficial de táxi."
+    },
+    {
+     "title": "Câmbio no mercado negro",
+     "desc": "Ofertas de rua com câmbio melhor podem incluir notas falsas e são ilegais.",
+     "tip": "Troque dinheiro só em bancos e casas de câmbio oficiais."
+    },
+    {
+     "title": "Convite para um bar caro",
+     "desc": "Pessoas que você acabou de conhecer levam você a um bar com uma conta absurda.",
+     "tip": "Escolha você mesmo o lugar e confira os preços antes."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Белорусский рубль (BYN)",

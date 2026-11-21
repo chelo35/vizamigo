@@ -481,6 +481,134 @@
    }
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "JPY (iene japonês)",
+   "bestMonths": "Fim de março a maio (cerejeiras em flor) e outubro a novembro (folhas de outono); de junho ao início de julho é a estação das chuvas, e agosto é muito quente e úmido",
+   "safety": {
+    "safetyScore": 85,
+    "safetyLevel": "Excepcionalmente seguro",
+    "badgeColor": "bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-900/60",
+    "crimeRateSummary": "Um dos países mais seguros do mundo; crimes violentos e furtos são muito raros, e objetos perdidos costumam ser devolvidos. Os principais riscos são terremotos, tufões e o calor extremo do verão.",
+    "commonScams": [
+     "Contas absurdas em bares para onde os aliciadores de rua levam turistas em Kabukicho e Roppongi (Tóquio)",
+     "“Taxas de mesa” e cobranças ocultas em bares sem preços à vista em áreas turísticas"
+    ],
+    "safeTravelTips": [
+     "Nunca siga aliciadores de rua até bares ou boates.",
+     "Instale o app “Safety tips” da JNTO para receber alertas de terremoto e tsunami.",
+     "Há poucas lixeiras; leve seu lixo com você."
+    ],
+    "emergencyNumbers": {
+     "police": "110",
+     "ambulance": "119",
+     "general": "110 (polícia) / 119 (ambulância e bombeiros)"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99% (5G e 4G em quase todo lugar, inclusive no metrô)",
+    "costPerGbUsd": "~US$ 1 - 2,50",
+    "esimAvailability": "Excelente",
+    "bestCarriers": [
+     "NTT Docomo",
+     "au (KDDI)",
+     "SoftBank",
+     "Rakuten Mobile"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Excelente (metrô, JR e Shinkansen; pontualidade extrema)",
+    "costLevel": "Moderado",
+    "singleTicketUsd": "US$ 1,20 - 2,20 (metrô de Tóquio 180–330 ¥)",
+    "dailyPassUsd": "~US$ 5,50 (Tokyo Subway 24 horas, 800 ¥)",
+    "popularRideApps": [
+     "GO (táxi)",
+     "Uber (chamar táxi)",
+     "Japan Travel by NAVITIME",
+     "Suica / PASMO (no celular)"
+    ],
+    "taxiAdvice": "Os táxis são seguros e impecáveis, com portas automáticas, mas caros. Use metrô e trem nas cidades e o Shinkansen entre elas; adicione um Suica/PASMO virtual ao seu celular."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 45 - 70",
+    "dailyBudgetMidrangeUsd": "US$ 110 - 180",
+    "budgetMealUsd": "US$ 6 - 10 (ramen, gyudon, bentô de konbini)",
+    "coffeeUsd": "US$ 2,50 - 4,50",
+    "waterBottleUsd": "US$ 0,70 - 1 (máquinas automáticas em cada esquina)",
+    "hostelDormUsd": "US$ 22 - 40",
+    "hotel3StarUsd": "US$ 80 - 150 (mais em Tóquio e Kyoto na alta temporada)",
+    "flightCostIndex": "Médio-alto (direto, ~11-13 h)",
+    "flightTip": "Há voos diretos de Istambul para Tóquio e Osaka. As conexões pelo Golfo ou pela China costumam ser mais baratas."
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "A",
+     "B"
+    ],
+    "voltage": "100V",
+    "frequency": "50/60Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Tomadas A de dois pinos chatos (às vezes B, com aterramento) em 100 V; plugues turcos precisam de adaptador. Confira se o seu carregador aceita 100-240 V; aparelhos só de 220 V, como secadores de cabelo, não funcionam bem."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "A água da torneira é potável em todo o país; há bebedouros em estações e parques.",
+    "vaccines": [
+     "Vacinas de rotina (tríplice viral, tétano)",
+     "Encefalite japonesa (estadias longas em áreas rurais)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "119"
+   },
+   "tipping": {
+    "custom": "No Japão não se dá gorjeta; o dinheiro deixado costuma ser devolvido e pode ser considerado falta de educação.",
+    "standardPercent": 0,
+    "rule": "forbidden",
+    "note": "Hotéis de luxo e ryokans podem acrescentar 10-15% de serviço; não é preciso dar mais gorjeta."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Imposto sobre consumo de 10% (8% em alimentos)",
+    "minSpend": "5.000 ¥ (sem impostos) por loja e por dia",
+    "customsNote": "Desde 1º de novembro de 2026 vale um sistema de reembolso no lugar da isenção: mostre o passaporte e pague o imposto na compra; quando a alfândega confirma os produtos na saída, a loja devolve o imposto."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 1 - 2,50",
+    "topCarriers": [
+     "NTT Docomo",
+     "au (KDDI)",
+     "SoftBank",
+     "Rakuten Mobile"
+    ],
+    "airportSimTrapWarning": "Os chips só de dados dos quiosques do aeroporto são caros e não têm número; um eSIM comprado antes costuma sair mais barato."
+   },
+   "touristScams": [
+    {
+     "title": "Aliciadores de Kabukicho/Roppongi",
+     "desc": "Os bares para onde os aliciadores de rua levam turistas podem cobrar centenas de milhares de ienes, e há denúncias de bebidas adulteradas.",
+     "tip": "Não siga aliciadores; escolha lugares conhecidos e com preços claros."
+    },
+    {
+     "title": "Falsos monges",
+     "desc": "Pessoas vestidas de monge em áreas turísticas distribuem “amuletos abençoados” e pedem doações.",
+     "tip": "Monges japoneses de verdade não pedem dinheiro ativamente na rua; siga seu caminho com educação."
+    }
+   ]
+  },
+  "enc": {
+   "culture": {
+    "festivals": [
+     "Contemplação das cerejeiras em flor (Hanami)",
+     "Gion Matsuri (Kyoto)",
+     "Festival da Neve de Sapporo",
+     "Nebuta Matsuri (Aomori)"
+    ]
+   }
+  }
+ },
  "ru": {
   "insights": {
    "currency": "JPY (японская иена)",

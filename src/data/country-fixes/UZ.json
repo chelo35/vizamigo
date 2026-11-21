@@ -1559,6 +1559,396 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Som uzbeque (UZS)",
+   "plugType": "Tipo C, F (220V, 50Hz)",
+   "bestMonths": "Abril ao início de junho e setembro a outubro (clima ameno; ideal para as cidades da Rota da Seda) · em julho e agosto faz muito calor (40 °C+); o inverno é frio, mas tranquilo",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Em geral, é um país seguro; crimes violentos contra turistas são raros. Pode haver batedores de carteira nos bazares cheios e tarifas de táxi infladas; há alertas oficiais para as áreas próximas à fronteira com o Afeganistão.",
+    "commonScams": [
+     "Táxis sem aplicativo que cobram de estrangeiros várias vezes a tarifa normal",
+     "Cambistas de rua não oficiais (risco de receber a menos ou notas falsas)",
+     "Cobranças não oficiais em alguns monumentos, como \"subidas secretas ao minarete\""
+    ],
+    "safeTravelTips": [
+     "Peça táxi pelo Yandex Go ou pelo MyTaxi para saber o preço antes.",
+     "Troque dinheiro apenas em bancos e casas de câmbio oficiais; há caixas eletrônicos por toda parte.",
+     "Guarde durante toda a viagem os comprovantes de registro (registratsiya) que os hotéis entregam."
+    ],
+    "emergencyNumbers": {
+     "police": "102",
+     "ambulance": "103",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "90%+ (4G)",
+    "costPerGbUsd": "US$ 0,20 - 0,60",
+    "esimAvailability": "Boa",
+    "bestCarriers": [
+     "Beeline Uzbekistan",
+     "Ucell",
+     "Mobiuz",
+     "Uzmobile"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Bom (metrô de Tashkent; trem de alta velocidade Afrosiyob Tashkent – Samarcanda – Bukhara)",
+    "costLevel": "Muito econômico",
+    "singleTicketUsd": "US$ 0,13 - 0,20",
+    "dailyPassUsd": "Não há; no metrô e nos ônibus de Tashkent, paga-se por viagem com o cartão ATTO",
+    "popularRideApps": [
+     "Yandex Go",
+     "MyTaxi",
+     "inDrive"
+    ],
+    "taxiAdvice": "Yandex Go e MyTaxi oferecem corridas baratas a preço fixo em Tashkent e em outras cidades. As passagens do trem Afrosiyob esgotam rápido; compre com antecedência no site oficial das Ferrovias do Uzbequistão."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 25 - 40",
+    "dailyBudgetMidrangeUsd": "US$ 60 - 110",
+    "budgetMealUsd": "US$ 3 - 6",
+    "coffeeUsd": "US$ 1 - 3,50",
+    "waterBottleUsd": "US$ 0,25 - 0,50",
+    "hostelDormUsd": "US$ 8 - 15",
+    "hotel3StarUsd": "US$ 35 - 70",
+    "flightCostIndex": "Moderado (voos diretos Istambul – Tashkent)",
+    "flightTip": "Há voos diretos de Istambul para Tashkent; começar por Tashkent e voltar a partir de Urgench (Khiva) em voo doméstico ou com escala economiza tempo."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Levar a mão direita ao coração ao cumprimentar é sinal de respeito.",
+     "O pão (non) é tratado com grande respeito: nunca é colocado de cabeça para baixo nem jogado fora.",
+     "Receber a xícara de chá servida só até a metade é uma demonstração de respeito ao convidado.",
+     "Nas casas, entra-se descalço; nas mesquitas, ombros e joelhos devem estar cobertos."
+    ],
+    "festivals": [
+     "Navruz (21 de março; prepara-se sumalak em caldeirões enormes)",
+     "Dia da Independência (1º de setembro)",
+     "Festival de música Sharq Taronalari (Samarcanda, agosto; a cada dois anos)"
+    ],
+    "lifestyle": "A vida de bairro (mahalla), as casas de chá, os bazares movimentados e os grandes casamentos estão no centro da sociedade; a hospitalidade e o plov (osh) na mesa são quase sagrados."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Praça Registan, Samarcanda",
+     "Gur-e-Amir (mausoléu de Tamerlão) e Shah-i-Zinda",
+     "Centro histórico de Bukhara e minarete Kalyan (UNESCO)",
+     "Itchan Kala, Khiva (UNESCO)",
+     "Metrô de Tashkent e bazar Chorsu",
+     "Lago Aydar e acampamento de iurtas no deserto de Kyzylkum"
+    ],
+    "bestSeasons": "Abril ao início de junho e setembro a outubro (clima ameno; ideal para as cidades da Rota da Seda) · em julho e agosto faz muito calor (40 °C+); o inverno é frio, mas tranquilo",
+    "travelStyleTip": "O trem de alta velocidade Afrosiyob liga Tashkent, Samarcanda e Bukhara; a Khiva se chega de trem, avião ou carro particular. Para o roteiro, o ideal são 8–10 dias."
+   },
+   "religion": {
+    "primaryReligions": "Islã (~94 %, majoritariamente sunita – hanafita), cristianismo ortodoxo russo (~4 %)",
+    "respectNorms": "Em mesquitas e mausoléus, as mulheres devem cobrir o cabelo e ninguém deve usar shorts; não tire fotos durante a oração.",
+    "sacredSites": [
+     "Necrópole de Shah-i-Zinda (Samarcanda)",
+     "Mausoléu de Bahauddin Naqshband (Bukhara)",
+     "Mausoléu do imã al-Bukhari (perto de Samarcanda)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "O uzbeque (alfabeto latino) é a língua oficial; o russo é muito difundido, e em Bukhara e Samarcanda também se fala tadjique.",
+    "englishProficiency": "Limitado; vem crescendo nos polos turísticos e entre os jovens. O russo é muito útil.",
+    "phrases": [
+     {
+      "phrase": "Assalomu alaykum",
+      "meaning": "A paz esteja com você (Olá)",
+      "translation": "A paz esteja com você",
+      "pronunciation": "as-sa-lo-mu a-lay-kum"
+     },
+     {
+      "phrase": "Rahmat",
+      "meaning": "Obrigado(a)",
+      "translation": "Obrigado(a)",
+      "pronunciation": "rah-mat"
+     },
+     {
+      "phrase": "Iltimos",
+      "meaning": "Por favor",
+      "translation": "Por favor / Eu peço",
+      "pronunciation": "il-ti-mos"
+     },
+     {
+      "phrase": "Bu qancha turadi?",
+      "meaning": "Quanto custa isto?",
+      "translation": "Qual é o preço?",
+      "pronunciation": "bu qan-cha tu-ra-di"
+     },
+     {
+      "phrase": "Mazali!",
+      "meaning": "Que gostoso!",
+      "translation": "Delicioso!",
+      "pronunciation": "ma-za-li"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Samarcanda e Bukhara, antigas cidades da Transoxiana, foram o coração da Rota da Seda; no século XIV, Tamerlão fez de Samarcanda a capital de seu império. Depois da era dos canatos e do domínio russo e soviético, o Uzbequistão proclamou sua independência em 1991.",
+    "milestones": [
+     "c. 700 a.C.: fundação de Samarcanda (Afrasiab)",
+     "1370: Tamerlão transforma Samarcanda em sua capital",
+     "1420: concluída a madraça de Ulugh Beg",
+     "1991: independência (1º de setembro)"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Osh / Plov (arroz pilaf nacional com cordeiro, cenoura e grão-de-bico)",
+     "Lagman (macarrão puxado à mão com carne e legumes)",
+     "Manti (grandes pasteizinhos de cordeiro cozidos no vapor)"
+    ],
+    "traditionalDrinks": [
+     "Kok choy (chá verde)",
+     "Ayron (bebida de iogurte)",
+     "Kompot (bebida de frutas)"
+    ],
+    "streetFoodAndDesserts": [
+     "Somsa (pastel de cordeiro assado no forno tandoor)",
+     "Non (pão de tandoor de Samarcanda)",
+     "Navvot e halva (açúcar cristalizado e halva)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Tamerlão / Amir Timur (fundador do Império Timúrida)",
+     "Ulugh Beg (soberano e astrônomo)",
+     "Al-Khwarizmi (pioneiro da álgebra e do algoritmo)"
+    ],
+    "strongSectors": [
+     "Produção de gás natural",
+     "Mineração de ouro (Muruntau, uma das maiores minas de ouro a céu aberto do mundo)",
+     "Algodão e têxteis"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Visa/Mastercard são cada vez mais aceitos nas grandes cidades, mas dinheiro vivo em som é indispensável em bazares, táxis e pequenos comércios. Há muitos caixas eletrônicos, e é fácil trocar dólares.",
+    "tippingCulture": "As contas de restaurante costumam incluir 10–15 % de serviço; não se espera gorjeta adicional.",
+    "economicPillars": "Gás natural, mineração de ouro e cobre, algodão e têxteis, agricultura e remessas de emigrantes."
+   }
+  },
+  "itin": {
+   "routeName": "Rota da Seda: Tashkent, Samarcanda, Bukhara e Khiva",
+   "routeSummary": "Um roteiro de 9 dias de leste a oeste: da moderna Tashkent a Samarcanda, a capital de Tamerlão, passando pelos bazares com cúpulas de Bukhara até a fabulosa Khiva, cercada de muralhas — a viagem clássica pela Rota da Seda.",
+   "totalDays": 9,
+   "idealDurationText": "Roteiro de 9 dias",
+   "bestSeason": "Abril ao início de junho e setembro a outubro (clima ameno; ideal para as cidades da Rota da Seda) · em julho e agosto faz muito calor (40 °C+); o inverno é frio, mas tranquilo",
+   "transportMode": "Trem de alta velocidade Afrosiyob (Tashkent – Samarcanda – Bukhara), trem ou carro particular Bukhara – Khiva (~6–7 horas pelo Kyzylkum); Yandex Go nas cidades",
+   "paceLevel": "Equilibrado (cidades da Rota da Seda)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Tashkent",
+     "recommendedDuration": "2 dias (a capital)",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Complexo Hast Imam (Alcorão de Uthman)",
+      "Bazar Chorsu",
+      "Estações de metrô ornamentadas",
+      "Praça Amir Timur"
+     ],
+     "activities": [
+      "Percorra as estações de metrô para ver a arquitetura.",
+      "Compre frutas secas e non saído do forno no bazar Chorsu.",
+      "Na hora do almoço, prove o plov preparado em caldeirões gigantes."
+     ],
+     "foodAndDrinks": [
+      "Osh (plov no estilo de Tashkent)",
+      "Somsa",
+      "Kok choy"
+     ],
+     "criticalTips": [
+      "O plov é servido no almoço e pode acabar à tarde.",
+      "Compre as passagens do Afrosiyob com alguns dias de antecedência."
+     ],
+     "mapsQuery": "Tashkent, Uzbekistan"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Samarcanda",
+     "recommendedDuration": "3 dias (a capital de Tamerlão)",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Praça Registan",
+      "Gur-e-Amir",
+      "Necrópole de Shah-i-Zinda",
+      "Mesquita Bibi-Khanym e bazar Siyob"
+     ],
+     "activities": [
+      "Admire o Registan ao pôr do sol e com a iluminação noturna.",
+      "Compre non de Samarcanda no bazar Siyob.",
+      "Visite a oficina de papel de seda do vilarejo de Konigil."
+     ],
+     "foodAndDrinks": [
+      "Plov de Samarcanda",
+      "Non de Samarcanda",
+      "Shashlik"
+     ],
+     "criticalTips": [
+      "Um único ingresso dá acesso a todas as madraças do Registan.",
+      "Nos mausoléus, cubra ombros e joelhos; mulheres devem usar lenço."
+     ],
+     "mapsQuery": "Registan, Samarkand, Uzbekistan"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Bukhara",
+     "recommendedDuration": "2 dias (cidade histórica)",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Poi Kalon e minarete Kalyan",
+      "Fortaleza de Ark",
+      "Lyabi-Hauz",
+      "Mausoléu dos Samânidas"
+     ],
+     "activities": [
+      "Jante à beira do lago de Lyabi-Hauz.",
+      "Garimpe artesanato nos bazares com cúpula (toki).",
+      "Visite o mausoléu de Bahauddin Naqshband."
+     ],
+     "foodAndDrinks": [
+      "Plov de Bukhara",
+      "Manti",
+      "Kok choy"
+     ],
+     "criticalTips": [
+      "Dá para percorrer o centro histórico a pé sem problemas.",
+      "Pechinchar é normal nos bazares."
+     ],
+     "mapsQuery": "Bukhara, Uzbekistan"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Khiva",
+     "recommendedDuration": "2 dias (cidade murada)",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Itchan Kala (UNESCO)",
+      "Minarete Kalta Minor",
+      "Minarete de Islam Khodja",
+      "Colunas de madeira da Mesquita Juma"
+     ],
+     "activities": [
+      "Veja o pôr do sol do alto das muralhas.",
+      "Suba ao minarete de Islam Khodja.",
+      "Admire as colunas de madeira entalhada da Mesquita Juma."
+     ],
+     "foodAndDrinks": [
+      "Shivit oshi (macarrão verde de endro)",
+      "Tukhum barak (pasteizinhos recheados com ovo)",
+      "Kok choy"
+     ],
+     "criticalTips": [
+      "O ingresso de Itchan Kala cobre a maioria dos museus; os minaretes podem ser pagos à parte.",
+      "No verão faz muito calor; visite logo cedo e no fim da tarde."
+     ],
+     "mapsQuery": "Itchan Kala, Khiva, Uzbekistan"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Osh / Plov (arroz pilaf nacional com cordeiro, cenoura e grão-de-bico)",
+     "Lagman (macarrão puxado à mão com carne e legumes)",
+     "Manti (grandes pasteizinhos de cordeiro cozidos no vapor)"
+    ],
+    "drinks": [
+     "Kok choy (chá verde)",
+     "Ayron (bebida de iogurte)",
+     "Kompot (bebida de frutas)"
+    ],
+    "streetFoods": [
+     "Somsa (pastel de cordeiro assado no forno tandoor)",
+     "Non (pão de tandoor de Samarcanda)",
+     "Navvot e halva (açúcar cristalizado e halva)"
+    ],
+    "diningAdvice": "O plov é tradicionalmente um prato de almoço, servido nas casas de chá com chá verde. Os restaurantes são em sua maioria halal; beba água engarrafada em vez da água da torneira."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Tomadas tipo C/F (como na Europa continental)",
+     "Calçados confortáveis para caminhar",
+     "Lenço e roupas compridas para as mesquitas",
+     "Som e dólares em dinheiro vivo, em notas pequenas"
+    ],
+    "safetyAndEtiquette": [
+     "Cubra a cabeça e fique em silêncio em mesquitas e mausoléus.",
+     "Nunca coloque o pão de cabeça para baixo nem o deixe cair no chão."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Tomadas europeias C/F (Schuko) de dois pinos redondos, iguais às da Turquia; não é preciso adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "A água da torneira não é potável; beba água engarrafada ou fervida. Chá e pratos quentes são seguros; lave bem saladas e frutas cruas.",
+    "vaccines": [
+     "Vacinas de rotina (tríplice viral, tétano)",
+     "Hepatite A",
+     "Febre tifoide"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "103"
+   },
+   "tipping": {
+    "custom": "As contas de restaurante costumam incluir 10–15 % de serviço; não se espera gorjeta adicional.",
+    "standardPercent": 0,
+    "rule": "optional",
+    "note": "Sem taxa de serviço, basta arredondar; pequenas gorjetas para guias e motoristas são bem-vindas."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA de 12 % (reembolso de ~85 % em dinheiro, ~90 % no cartão)",
+    "minSpend": "300.000 UZS",
+    "customsNote": "Compre apresentando o passaporte em lojas com o logo Tax Free e guarde o recibo; depois da validação na alfândega, receba o reembolso em dinheiro ou no cartão nos balcões Tax Free de todos os aeroportos internacionais."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 0,20 - 0,60",
+    "topCarriers": [
+     "Beeline Uzbekistan",
+     "Ucell",
+     "Mobiuz",
+     "Uzmobile"
+    ],
+    "airportSimTrapWarning": "Os balcões da Beeline e da Ucell no aeroporto de Tashkent têm preços oficiais, mas as filas são longas; nas lojas oficiais da cidade, você compra um chip barato em minutos com o passaporte, e também há eSIM."
+   },
+   "touristScams": [
+    {
+     "title": "Táxis sem aplicativo",
+     "desc": "Táxis sem aplicativo cobram de estrangeiros várias vezes a tarifa normal.",
+     "tip": "Use Yandex Go ou MyTaxi e evite os táxis de rua no aeroporto e nas estações."
+    },
+    {
+     "title": "Cambistas de rua",
+     "desc": "Cambistas não oficiais entregam dinheiro a menos ou notas falsas.",
+     "tip": "Troque dinheiro apenas em bancos e casas de câmbio oficiais, ou use caixas eletrônicos."
+    },
+    {
+     "title": "Subidas não oficiais a minaretes",
+     "desc": "Cobranças não oficiais em alguns locais históricos, como “subidas secretas ao minarete”.",
+     "tip": "Compre ingressos apenas na bilheteria e recuse passeios informais."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Узбекский сум (UZS)",

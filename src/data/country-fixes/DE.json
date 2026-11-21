@@ -611,6 +611,159 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "EUR (euro)",
+   "bestMonths": "Maio – setembro (clima ameno, dias longos); fim de novembro – dezembro para os mercados de Natal; a Oktoberfest de Munique vai do fim de setembro ao início de outubro",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Em geral, é seguro. Há batedores de carteira e algumas confusões à noite nos arredores das estações centrais das grandes cidades (p. ex. Berlim, Frankfurt); fique atento em eventos com muita gente por causa do risco de terrorismo comum na Europa.",
+    "commonScams": [
+     "Golpes de abaixo-assinados ou pedidos em praças turísticas para distrair e roubar carteiras",
+     "Batedores de carteira organizados em mercados de Natal, na Oktoberfest e em estações",
+     "Pessoas perto das máquinas de passagens que oferecem “ajuda” e pedem dinheiro ou dados do cartão"
+    ],
+    "safeTravelTips": [
+     "Compre (e valide, se for preciso) a passagem antes de embarcar; viajar sem bilhete custa no mínimo 60 €.",
+     "Não ande nas ciclovias vermelhas ou sinalizadas.",
+     "O comércio fecha aos domingos e feriados; faça as compras antes ou use os supermercados das estações."
+    ],
+    "emergencyNumbers": {
+     "police": "110",
+     "ambulance": "112",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "98% (4G; 5G nas grandes cidades), com quedas de sinal nos trens e em áreas rurais",
+    "costPerGbUsd": "~US$ 1 - 2,50",
+    "esimAvailability": "Excelente",
+    "bestCarriers": [
+     "Telekom",
+     "Vodafone",
+     "O2"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Muito bom (S-Bahn/U-Bahn e rede ICE; atrasos frequentes nos trens de longa distância)",
+    "costLevel": "Moderado",
+    "singleTicketUsd": "3.50 - 4.50 $ (p. ex. Berlim AB 3,80 €)",
+    "dailyPassUsd": "11 - 13 $ (passe diário Berlim AB)",
+    "popularRideApps": [
+     "DB Navigator",
+     "FREENOW",
+     "Uber",
+     "Bolt"
+    ],
+    "taxiAdvice": "Os táxis têm taxímetro, mas são caros. Para estadias longas, o Deutschlandticket mensal (63 € em 2026) vale para todo o transporte local e os trens regionais, mas não para os ICE/IC."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 55 - 80",
+    "dailyBudgetMidrangeUsd": "US$ 130 - 200",
+    "budgetMealUsd": "10 - 18 $ (döner, currywurst ou prato executivo no almoço)",
+    "coffeeUsd": "US$ 3,50 - 5",
+    "waterBottleUsd": "1 - 1.50 $ (+ depósito do casco, o Pfand)",
+    "hostelDormUsd": "US$ 28 - 50",
+    "hotel3StarUsd": "90 - 160 $ (bem mais em época de feiras e na Oktoberfest)",
+    "flightCostIndex": "Baixo (direto 2,5-3,5 h)",
+    "flightTip": "De muitas cidades turcas há voos diretos para Berlim, Munique, Frankfurt, Colônia, Düsseldorf, Hamburgo e Stuttgart."
+   }
+  },
+  "enc": {
+   "language": {
+    "phrases": [
+     {
+      "phrase": "Guten Tag",
+      "meaning": "Bom dia / Olá",
+      "translation": "Bom dia / Olá",
+      "pronunciation": "GU-ten tak"
+     },
+     {
+      "phrase": "Danke schön",
+      "meaning": "Muito obrigado",
+      "translation": "Muito obrigado",
+      "pronunciation": "DAN-ke shon"
+     },
+     {
+      "phrase": "Entschuldigung",
+      "meaning": "Com licença / Desculpe",
+      "translation": "Com licença / Desculpe",
+      "pronunciation": "ent-SHUL-di-gung"
+     },
+     {
+      "phrase": "Was kostet das?",
+      "meaning": "Quanto custa isto?",
+      "translation": "Quanto custa isto?",
+      "pronunciation": "vas KOS-tet das"
+     },
+     {
+      "phrase": "Die Rechnung, bitte",
+      "meaning": "A conta, por favor",
+      "translation": "A conta, por favor",
+      "pronunciation": "di RÉR-nung, BI-te"
+     }
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Tomadas europeias C/F (Schuko), de dois pinos redondos, iguais às da Turquia; não é preciso adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "A água da torneira é rigorosamente controlada em todo o país e é potável; nos restaurantes, a água costuma ser servida em garrafa e cobrada.",
+    "vaccines": [
+     "Vacinas de rotina (tríplice viral, tétano)",
+     "Encefalite transmitida por carrapatos (se for fazer trilhas no interior)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "112"
+   },
+   "tipping": {
+    "custom": "Em restaurantes e cafés, é comum deixar 5-10 % ou arredondar.",
+    "standardPercent": 10,
+    "rule": "round_up",
+    "note": "A gorjeta não é deixada na mesa: diga o valor total ao pagar (“Stimmt so” = pode ficar com o troco)."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA de 19 % (7 % em alimentos e livros); recupera-se 10-14 % após comissões",
+    "minSpend": "50,01 € por nota",
+    "customsNote": "Peça o formulário Tax Free na loja e mostre os produtos na alfândega (Zoll) do último aeroporto de saída da UE, antes de despachar a bagagem, para receber o carimbo."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 1 - 2,50",
+    "topCarriers": [
+     "Telekom",
+     "Vodafone",
+     "O2"
+    ],
+    "airportSimTrapWarning": "Comprar um chip na Alemanha exige verificação de identidade (video ident), e no aeroporto é caro; um eSIM ou os chips de supermercado, como Aldi Talk ou Lidl Connect, são práticos."
+   },
+   "touristScams": [
+    {
+     "title": "Jogo dos copinhos (Hütchenspiel)",
+     "desc": "Na Alexanderplatz, em Berlim, e em pontes turísticas, os “ganhadores” do jogo dos copinhos são cúmplices.",
+     "tip": "Nunca jogue; fique de olho na carteira onde se formar uma roda de gente."
+    },
+    {
+     "title": "Falsos abaixo-assinados",
+     "desc": "Perto do Portão de Brandemburgo e da Catedral de Colônia, supostos surdos-mudos pedem doações com uma prancheta enquanto podem roubar você.",
+     "tip": "Diga “Nein, danke” sem parar e siga andando."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "EUR (евро)",

@@ -1551,6 +1551,394 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Boliviano (BOB)",
+   "plugType": "Tipo A, C (230V, 50Hz)",
+   "bestMonths": "Maio a outubro (inverno seco; dias ensolarados e noites geladas no altiplano); de janeiro a março, época de chuvas, para ver o efeito espelho em Uyuni",
+   "safety": {
+    "safetyScore": 55,
+    "safetyLevel": "Risco moderado",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60",
+    "crimeRateSummary": "Batedores de carteira e furtos por arrastão são frequentes em La Paz, Cochabamba e Santa Cruz. “Sequestros-relâmpago” em táxis falsos e golpes de falsos policiais são riscos conhecidos. Bloqueios de estradas e protestos são comuns, e a falta de combustível e de moeda estrangeira pode atrapalhar a viagem.",
+    "commonScams": [
+     "Falsos policiais que pedem passaporte e carteira para uma “fiscalização antidrogas”",
+     "Sequestro-relâmpago em táxis piratas pegos na rua (com idas forçadas a caixas eletrônicos)",
+     "Jogam um líquido em você e, enquanto “ajudam”, roubam seus pertences"
+    ],
+    "safeTravelTips": [
+     "Não pegue táxi na rua; use Uber, InDrive, Yango ou radiotáxis.",
+     "Para evitar o soroche (mal de altitude), descanse no primeiro dia em La Paz, beba bastante água e evite álcool.",
+     "Antes de viajar, acompanhe as notícias sobre bloqueios e mantenha os planos flexíveis."
+    ],
+    "emergencyNumbers": {
+     "police": "110",
+     "ambulance": "118",
+     "general": "110"
+    }
+   },
+   "internet": {
+    "networkCoverage": "4G bom nas cidades; fraco ou inexistente em Uyuni, no altiplano e na Amazônia",
+    "costPerGbUsd": "~US$ 1,00 - 3,00",
+    "esimAvailability": "Boa (os planos de eSIM internacionais funcionam; o chip local é mais barato)",
+    "bestCarriers": [
+     "Entel",
+     "Tigo",
+     "Viva",
+     "Airalo / Holafly eSIM"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Média (rede de teleféricos em La Paz, ônibus intermunicipais e voos domésticos)",
+    "costLevel": "Barato",
+    "singleTicketUsd": "0,40 - 0,60 $ (Mi Teleférico / micro-ônibus)",
+    "dailyPassUsd": "Não existe",
+    "popularRideApps": [
+     "Uber",
+     "InDrive",
+     "Yango",
+     "Radiotáxis"
+    ],
+    "taxiAdvice": "Uber, InDrive e Yango funcionam em La Paz, Santa Cruz e Cochabamba; use esses apps ou chame radiotáxis por telefone em vez de pegar táxi na rua. O Mi Teleférico, entre La Paz e El Alto, é barato e espetacular. Nos ônibus noturnos, compre poltronas “cama”; para distâncias longas, como até Uyuni, os voos domésticos da BoA economizam tempo."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 25 - 40",
+    "dailyBudgetMidrangeUsd": "US$ 60 - 110",
+    "budgetMealUsd": "US$ 3 - 6",
+    "coffeeUsd": "US$ 1,50 - 3,00",
+    "waterBottleUsd": "US$ 0,50 - 1,00",
+    "hostelDormUsd": "US$ 8 - 15",
+    "hotel3StarUsd": "US$ 35 - 70",
+    "flightCostIndex": "Alto (sem voos diretos)",
+    "flightTip": "Não há voos diretos da Turquia; da Espanha há voos da Air Europa e da Boliviana de Aviación (Madri – Santa Cruz), além de conexões via São Paulo ou Lima. Uma opção é pousar em Santa Cruz em vez de La Paz (El Alto, ~4.000 m) e ir subindo aos poucos."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Cumprimentar com “Buenos días / Buenas tardes” é fundamental; os mais velhos são tratados por “señor / señora”.",
+     "Não fotografe as cholitas nem os vendedores do mercado sem pedir permissão.",
+     "Leve a sério as oferendas e os rituais à Pachamama; não faça piada com eles."
+    ],
+    "festivals": [
+     "Carnaval de Oruro (fevereiro a março, UNESCO)",
+     "Feira de Alasitas (24 de janeiro, La Paz)",
+     "Festa do Gran Poder (maio a junho, La Paz)"
+    ],
+    "lifestyle": "Uma vida colorida, centrada em mercados e festas, que mistura a cultura indígena andina e a herança colonial; o futebol e a comida de rua estão no centro do dia a dia."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Salar de Uyuni",
+     "Lago Titicaca e Isla del Sol",
+     "La Paz e o Mi Teleférico",
+     "Sítio arqueológico de Tiwanaku (UNESCO)",
+     "Centro histórico de Sucre (UNESCO)",
+     "Potosí e o Cerro Rico (UNESCO)"
+    ],
+    "bestSeasons": "Maio a outubro",
+    "travelStyleTip": "Por causa da altitude, planeje sem pressa: de La Paz ao Titicaca e volta; depois, ônibus noturno ou voo até Uyuni e descida para Sucre passando por Potosí."
+   },
+   "religion": {
+    "primaryReligions": "Católicos ~70%, evangélicos e protestantes ~18-20%; as crenças andinas (Pachamama) se misturam ao catolicismo",
+    "respectNorms": "Não tire fotos durante a missa; não suba nas pedras em lugares sagrados como Tiwanaku.",
+    "sacredSites": [
+     "Basílica de Copacabana (Virgem de Copacabana)",
+     "Basílica de São Francisco, La Paz",
+     "Tiwanaku e a Porta do Sol"
+    ]
+   },
+   "language": {
+    "officialLanguages": "O espanhol e 36 línguas indígenas são oficiais; as mais faladas são o quéchua, o aimará e o guarani.",
+    "englishProficiency": "Baixo; fora de hostels e agências de turismo, quase não se fala inglês. Com o espanhol (ou um bom portunhol), você se vira sem problemas.",
+    "phrases": [
+     {
+      "phrase": "Buenos días",
+      "meaning": "Bom dia",
+      "translation": "Bom dia",
+      "pronunciation": "BWE-nos DEE-as"
+     },
+     {
+      "phrase": "Kamisaki? – Waliki (Aymara)",
+      "meaning": "Como vai? – Bem (aimará)",
+      "translation": "Tudo bem? – Tudo bem",
+      "pronunciation": "ka-mee-SA-kee – wa-LEE-kee"
+     },
+     {
+      "phrase": "Yuspajara (Aymara) / Yusulpayki (Quechua)",
+      "meaning": "Obrigado (aimará / quéchua)",
+      "translation": "Obrigado",
+      "pronunciation": "yoos-pa-HA-ra / yoo-sool-PAI-kee"
+     },
+     {
+      "phrase": "¿Cuánto cuesta?",
+      "meaning": "Quanto custa?",
+      "translation": "Quanto é?",
+      "pronunciation": "KWAN-to KWES-ta"
+     },
+     {
+      "phrase": "La cuenta, por favor",
+      "meaning": "A conta, por favor",
+      "translation": "A conta",
+      "pronunciation": "la KWEN-ta por fa-VOR"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Berço da civilização de Tiwanaku, às margens do lago Titicaca, e depois parte do Império Inca, a região foi conquistada pelos espanhóis no século XVI; as minas de prata de Potosí estavam entre as mais ricas do mundo. O país se tornou independente em 6 de agosto de 1825 e ganhou o nome em homenagem a Simón Bolívar. Perdeu seu litoral na Guerra do Pacífico (1879–1884) e, em 2009, passou a ser um Estado Plurinacional.",
+    "milestones": [
+     "1545: Começa a exploração de prata em Potosí",
+     "1825: Independência (6 de agosto)",
+     "1879–1884: Guerra do Pacífico e perda do litoral",
+     "2009: Constituição do Estado Plurinacional da Bolívia"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Pique macho (carne, salsicha, batata e pimenta ají)",
+     "Silpancho (bife fino com arroz e ovo, de Cochabamba)",
+     "Sopa de amendoim (sopa de maní)"
+    ],
+    "traditionalDrinks": [
+     "Singani (destilado nacional de uva; base do coquetel chuflay)",
+     "Chá de coca (ajuda com a altitude)",
+     "Chicha (bebida de milho fermentado)"
+    ],
+    "streetFoodAndDesserts": [
+     "Salteña (empanada suculenta e levemente adocicada; típica do meio da manhã)",
+     "Tucumana (empanada frita de carne)",
+     "Api com buñuelo (bebida de milho roxo com massa frita)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Juana Azurduy (heroína da independência)",
+     "Jaime Escalante (célebre professor de matemática)",
+     "Marco Etcheverry (jogador de futebol lendário)"
+    ],
+    "strongSectors": [
+     "Gás natural",
+     "Mineração (prata, zinco, estanho; grandes reservas de lítio)",
+     "Agricultura (soja, quinoa)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Nas cidades, os cartões são aceitos, mas em mercados, ônibus e tours para Uyuni é preciso dinheiro vivo. Por causa da escassez de moeda estrangeira, o câmbio oficial e o paralelo podem ser diferentes; confira os limites do caixa eletrônico e a taxa aplicada aos pagamentos com cartão, e leve notas pequenas.",
+    "tippingCulture": "Em restaurantes, é comum deixar 5-10%; guias e motoristas dos tours para Uyuni esperam gorjeta.",
+    "economicPillars": "Gás natural, mineração, agricultura e turismo."
+   }
+  },
+  "itin": {
+   "routeName": "Roteiro andino pela Bolívia: La Paz, lago Titicaca, Salar de Uyuni e Sucre",
+   "routeSummary": "Um roteiro de altitude de 9 dias que vai de La Paz, a sede de governo mais alta do mundo, às ilhas sagradas do Titicaca, ao imenso Salar de Uyuni e à branca cidade colonial de Sucre.",
+   "totalDays": 9,
+   "idealDurationText": "Roteiro de 9 dias",
+   "bestSeason": "Maio a outubro",
+   "transportMode": "Ônibus intermunicipais (leito) + 4x4 no tour de Uyuni + voo doméstico opcional (BoA)",
+   "paceLevel": "Equilibrado (natureza + cultura + aclimatação)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: La Paz e El Alto (uma capital nas nuvens)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Rede de teleféricos Mi Teleférico",
+      "Mercado das Bruxas",
+      "Basílica de São Francisco",
+      "Valle de la Luna"
+     ],
+     "activities": [
+      "Suba de teleférico até El Alto para ver a cidade encaixada no vale.",
+      "Veja as oferendas à Pachamama no Mercado das Bruxas.",
+      "Faça uma caminhada curta entre as agulhas de argila do Valle de la Luna."
+     ],
+     "foodAndDrinks": [
+      "Salteña",
+      "Api com buñuelo",
+      "Chá de coca"
+     ],
+     "criticalTips": [
+      "A altitude é de ~3.600 m; descanse no primeiro dia e evite refeições pesadas.",
+      "Nos mercados movimentados, leve a mochila na frente do corpo."
+     ],
+     "mapsQuery": "La Paz, Bolivia"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Copacabana e Isla del Sol (lago Titicaca)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Basílica de Copacabana",
+      "Mirante do Cerro Calvario",
+      "Ruínas incas da Isla del Sol",
+      "Margens do lago Titicaca"
+     ],
+     "activities": [
+      "Suba o Cerro Calvario ao entardecer para ver o lago.",
+      "Atravesse de barco até a Isla del Sol e caminhe pelas trilhas incas.",
+      "Assista à bênção dos veículos (ch’alla) na basílica."
+     ],
+     "foodAndDrinks": [
+      "Truta do Titicaca",
+      "Sopa de quinoa"
+     ],
+     "criticalTips": [
+      "O acesso ao norte da Isla del Sol às vezes é fechado por conflitos entre comunidades; pergunte como está a situação.",
+      "O sol no lago é muito forte; protetor solar e chapéu são indispensáveis."
+     ],
+     "mapsQuery": "Copacabana, Bolivia"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Uyuni e o Salar (salar e lagoas)",
+     "recommendedDuration": "3 dias",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Salar de Uyuni",
+      "Isla Incahuasi (cactos gigantes)",
+      "Laguna Colorada (flamingos)",
+      "Cemitério de Trens"
+     ],
+     "activities": [
+      "Percorra o salar, as lagoas e os gêiseres em um tour 4x4 de 3 dias.",
+      "Tire fotos de perspectiva sobre o sal.",
+      "Veja o amanhecer nos gêiseres Sol de Mañana e se aqueça nas termas."
+     ],
+     "foodAndDrinks": [
+      "Charque de lhama",
+      "Pratos de quinoa"
+     ],
+     "criticalTips": [
+      "Os tours custam 150-250 $; pergunte sobre o histórico de segurança do veículo e do motorista e confirme que ele não bebe.",
+      "À noite a temperatura pode cair a -10 °C e a altitude passa dos 4.000 m; leve um saco de dormir quente e jaqueta."
+     ],
+     "mapsQuery": "Uyuni, Bolivia"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Sucre (Cidade Branca) e Potosí",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Centro histórico de Sucre (UNESCO)",
+      "Casa de la Libertad (onde foi assinada a independência)",
+      "Pegadas de dinossauro de Cal Orck’o",
+      "Cerro Rico e Casa de la Moneda, Potosí"
+     ],
+     "activities": [
+      "Passeie pelas ruas coloniais brancas de Sucre e pelo mirante da Recoleta.",
+      "Conheça a história da prata na Casa de la Moneda de Potosí.",
+      "Veja em Cal Orck’o uma das maiores paredes de pegadas de dinossauro do mundo."
+     ],
+     "foodAndDrinks": [
+      "Chorizo chuquisaqueño",
+      "Chocolate de Sucre",
+      "Singani"
+     ],
+     "criticalTips": [
+      "As visitas às minas do Cerro Rico são empoeiradas e arriscadas; evite-as se tiver problemas de saúde.",
+      "Potosí fica a ~4.000 m; hospedar-se em Sucre (2.800 m) é mais confortável."
+     ],
+     "mapsQuery": "Sucre, Bolivia"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Pique macho (carne, salsicha, batata e pimenta ají)",
+     "Silpancho (bife fino com arroz e ovo, de Cochabamba)",
+     "Sopa de amendoim (sopa de maní)"
+    ],
+    "drinks": [
+     "Singani (destilado nacional de uva; base do coquetel chuflay)",
+     "Chá de coca (ajuda com a altitude)",
+     "Chicha (bebida de milho fermentado)"
+    ],
+    "streetFoods": [
+     "Salteña (empanada suculenta e levemente adocicada; típica do meio da manhã)",
+     "Tucumana (empanada frita de carne)",
+     "Api com buñuelo (bebida de milho roxo com massa frita)"
+    ],
+    "diningAdvice": "O almoço é a principal refeição, com menus baratos de sopa, prato principal e sobremesa. As salteñas são comidas de manhã, e à tarde é difícil encontrá-las. Na altitude, o álcool sobe mais rápido."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Roupas em camadas, fleece e corta-vento",
+     "Protetor solar de fator alto, óculos de sol e protetor labial",
+     "Remédio para o soroche, após consultar um médico",
+     "Adaptador de tomada tipo A"
+    ],
+    "safetyAndEtiquette": [
+     "Não leve folhas de coca para fora do país; elas são ilegais em muitos países, incluindo a Espanha e a Turquia.",
+     "Fique longe de protestos e bloqueios."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "A",
+     "C"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Principalmente tipos A e C, normalmente em 230V; em alguns prédios antigos de La Paz pode haver 115V. Plugues europeus tipo C entram na maioria das tomadas, mas leve adaptador para as tomadas que são só tipo A."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "A água da torneira não é potável; beba água engarrafada ou fervida e use-a também para escovar os dentes.",
+    "vaccines": [
+     "Hepatite A e febre tifoide",
+     "Febre amarela (recomendada para a Amazônia e as planícies a leste dos Andes)",
+     "Raiva (áreas rurais)",
+     "Orientação médica sobre o mal de altitude"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "118"
+   },
+   "tipping": {
+    "custom": "Em restaurantes, o comum é deixar 5-10%; não é obrigatório.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "No fim do tour de Uyuni, costuma-se dar uma pequena gorjeta por pessoa ao guia e ao motorista."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA de 13%; não há um sistema geral de restituição para turistas",
+    "minSpend": "Não se aplica",
+    "customsNote": "Não existe um sistema amplo de restituição do IVA para turistas. Levar folhas de coca ou seus derivados para fora do país é crime em muitos países; é proibido exportar peças arqueológicas."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "~US$ 1,00 - 3,00",
+    "topCarriers": [
+     "Entel",
+     "Tigo",
+     "Viva"
+    ],
+    "airportSimTrapWarning": "No aeroporto há poucas opções de chip; compre um chip da Entel ou da Tigo na cidade apresentando seu passaporte. A Entel tem a melhor cobertura em áreas rurais e de altitude."
+   },
+   "touristScams": [
+    {
+     "title": "Falsa polícia",
+     "desc": "Supostos policiais à paisana pedem passaporte e carteira em uma “fiscalização”, muitas vezes com um falso “turista” como cúmplice.",
+     "tip": "Não entregue documentos na rua; ofereça-se para mostrá-los em uma delegacia."
+    },
+    {
+     "title": "Táxi pirata",
+     "desc": "Em táxis pegos na rua, pode haver roubos ou sequestros-relâmpago.",
+     "tip": "Use Uber, InDrive, Yango ou radiotáxis."
+    },
+    {
+     "title": "Golpe do líquido derramado",
+     "desc": "Jogam mostarda ou algum líquido em você e, enquanto “limpam”, roubam seus pertences.",
+     "tip": "Recuse a ajuda e afaste-se rapidamente."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Боливийский боливиано (BOB)",

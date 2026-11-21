@@ -1539,6 +1539,391 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Dólar do Caribe Oriental (XCD; câmbio fixo de 2,70 por USD)",
+   "plugType": "Tipo G (A/B em alguns hotéis), 230V, 50Hz",
+   "bestMonths": "Dezembro a maio (estação seca; de junho a novembro é temporada de furacões)",
+   "safety": {
+    "crimeRateSummary": "A criminalidade contra turistas é baixa, embora a violência armada tenha aumentado em Kingstown. As Granadinas costumam ser tranquilas.",
+    "commonScams": [
+     "Cobranças excessivas em táxis quando a tarifa não foi combinada antes",
+     "«Boat boys» insistentes nas baías de Wallilabou e Bequia que oferecem serviços caros aos iates",
+     "Guias sem licença que cobram a mais nas trilhas até La Soufrière e às cachoeiras"
+    ],
+    "safeTravelTips": [
+     "Combine a tarifa do táxi antes de entrar e confirme se é em dólares do Caribe Oriental ou americanos.",
+     "Evite ruas vazias de Kingstown à noite e não deixe objetos de valor sozinhos na praia.",
+     "Suba o vulcão La Soufrière cedo, com guia e água suficiente."
+    ],
+    "emergencyNumbers": {
+     "police": "911 / 999",
+     "ambulance": "911",
+     "general": "911 / 999"
+    },
+    "safetyScore": 65,
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Bom 4G LTE na ilha principal; mais fraco nas montanhas e nas ilhas pequenas",
+    "costPerGbUsd": "US$ 3 - 8",
+    "esimAvailability": "Limitada (planos de eSIM regionais do Caribe)",
+    "bestCarriers": [
+     "Digicel",
+     "FLOW"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Básico (micro-ônibus, táxis e ferries entre as ilhas)",
+    "costLevel": "Moderado a caro (táxis)",
+    "singleTicketUsd": "US$ 0,60 - 2,50",
+    "dailyPassUsd": "Sem passe diário (paga-se por trajeto no micro-ônibus)",
+    "popularRideApps": [
+     "Não há apps de transporte",
+     "Táxis licenciados (tarifas fixas)",
+     "Micro-ônibus («vans»)",
+     "Ferries Bequia Express / Admiral"
+    ],
+    "taxiAdvice": "Não há apps de transporte; os táxis têm tarifas fixas, então pergunte o preço antes de entrar. Os micro-ônibus, baratos e coloridos, percorrem a ilha principal."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 60 - 90",
+    "dailyBudgetMidrangeUsd": "US$ 150 - 250",
+    "budgetMealUsd": "US$ 8 - 15",
+    "coffeeUsd": "US$ 3 - 5",
+    "waterBottleUsd": "US$ 1 - 2",
+    "hostelDormUsd": "US$ 30 - 50 (poucos hostels; há muitas pousadas)",
+    "hotel3StarUsd": "US$ 120 - 200",
+    "flightCostIndex": "Alto",
+    "flightTip": "Não há voos diretos da Turquia; chega-se a Argyle (SVD) via Barbados, Miami, Nova York ou Toronto. Aviões pequenos e ferries ligam as Granadinas."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Cumprimente sempre com «Good morning» ou «Good afternoon»; perguntar algo sem cumprimentar é considerado falta de educação.",
+     "Não ande de roupa de banho fora da praia; cubra-se nos vilarejos e nas lojas.",
+     "Peça permissão antes de fotografar pessoas, sobretudo rastafáris.",
+     "Roupas camufladas são proibidas para civis."
+    ],
+    "festivals": [
+     "Carnaval Vincy Mas (fim de junho a início de julho)",
+     "Regata de Páscoa de Bequia",
+     "Nine Mornings (celebrações ao amanhecer, 16 a 24 de dezembro)"
+    ],
+    "lifestyle": "Ritmo de ilha tranquilo, vida comunitária em torno da igreja, soca e reggae; o «liming» (ficar à toa batendo papo) faz parte do dia a dia."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Parque Marinho de Tobago Cays (snorkel com tartarugas)",
+     "Vulcão La Soufrière",
+     "Bequia: Port Elizabeth e praia Princess Margaret",
+     "Cachoeiras Dark View",
+     "Jardim Botânico de Kingstown (1765, o mais antigo do hemisfério ocidental)",
+     "Mayreau – baía Salt Whistle"
+    ],
+    "bestSeasons": "Dezembro a maio (estação seca; de junho a novembro é temporada de furacões)",
+    "travelStyleTip": "São Vicente é para natureza e trilhas; as Granadinas, para velejar, fazer snorkel e curtir praias. Circule entre as ilhas de ferry ou avião pequeno."
+   },
+   "religion": {
+    "primaryReligions": "Protestantes ~75 % (pentecostais, anglicanos, adventistas, metodistas), católicos ~6 %, rastafáris e outros",
+    "respectNorms": "No domingo, as pessoas vão à igreja e tudo desacelera; cubra ombros e joelhos nos templos.",
+    "sacredSites": [
+     "Catedral anglicana de São Jorge (Kingstown)",
+     "Catedral católica de Santa Maria (Kingstown)",
+     "Igreja metodista de Kingstown"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Inglês (oficial); no dia a dia, fala-se o crioulo vicentino.",
+    "englishProficiency": "Muito alto; todos entendem inglês, embora entre si falem um crioulo rápido.",
+    "phrases": [
+     {
+      "phrase": "Good mornin'",
+      "meaning": "Bom dia (sempre cumprimente primeiro)",
+      "translation": "Bom dia (sempre cumprimente primeiro)",
+      "pronunciation": "gud MOR-nin"
+     },
+     {
+      "phrase": "Wha' happenin'?",
+      "meaning": "E aí? / Como vai?",
+      "translation": "E aí? / Como vai?",
+      "pronunciation": "uá RÉP-nin"
+     },
+     {
+      "phrase": "Tank yuh",
+      "meaning": "Obrigado(a)",
+      "translation": "Obrigado(a)",
+      "pronunciation": "tank iú"
+     },
+     {
+      "phrase": "How much fuh dis?",
+      "meaning": "Quanto custa isto?",
+      "translation": "Quanto custa isto?",
+      "pronunciation": "ráu mâtch fâ dis"
+     },
+     {
+      "phrase": "Leh we lime",
+      "meaning": "Vamos ficar de bobeira",
+      "translation": "Vamos ficar de bobeira",
+      "pronunciation": "lê uí LÁIM"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "As ilhas foram o lar dos kalinago e dos garífunas (caribes negros), que resistiram por muito tempo à colonização. Britânicas desde 1763 e marcadas pelas plantações de açúcar e banana, tornaram-se independentes em 27 de outubro de 1979. O La Soufrière teve grandes erupções em 1902, 1979 e 2021.",
+    "milestones": [
+     "1763: começa o domínio britânico",
+     "1795–1797: Segunda Guerra Caribe; morte do herói nacional Chatoyer e exílio dos garífunas",
+     "1979: independência (27 de outubro)",
+     "2021: erupção do La Soufrière"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Fruta-pão assada com jackfish frito (prato nacional)",
+     "Sopa de callaloo",
+     "Pelau (arroz com frango e feijão-guandu)"
+    ],
+    "traditionalDrinks": [
+     "Rum Sunset Very Strong",
+     "Cerveja Hairoun",
+     "Sorrel (bebida de hibisco)"
+    ],
+    "streetFoodAndDesserts": [
+     "Biscoitos de araruta",
+     "Torta de coco",
+     "Roti (wrap recheado com curry)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Joseph Chatoyer (chefe garífuna, herói nacional)",
+     "Kevin Lyttle (cantor de soca, «Turn Me On»)",
+     "Adonal Foyle (ex-jogador da NBA)"
+    ],
+    "strongSectors": [
+     "Turismo e aluguel de iates",
+     "Agricultura (banana, araruta, tubérculos)",
+     "Pesca e serviços"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Cartões funcionam em hotéis e restaurantes maiores; leve dinheiro em XCD para micro-ônibus, mercados e lojas. Dólares americanos são aceitos, mas o troco vem em XCD.",
+    "tippingCulture": "Normalmente se acrescenta 10 % de serviço; se não vier na conta, costuma-se deixar 10 %.",
+    "economicPillars": "Turismo, agricultura (banana e araruta), pesca e remessas da diáspora."
+   }
+  },
+  "itin": {
+   "routeName": "Do vulcão ao recife: São Vicente, Bequia e as Granadinas",
+   "routeSummary": "Roteiro de 7 dias: Kingstown e a exuberante ilha principal, subida ao La Soufrière, ferry até Bequia e barco até as águas azul-turquesa de Tobago Cays.",
+   "totalDays": 7,
+   "idealDurationText": "Roteiro de 7 dias pelas ilhas",
+   "bestSeason": "Dezembro a maio (estação seca; de junho a novembro é temporada de furacões)",
+   "transportMode": "Micro-ônibus e táxis na ilha principal; ferries (Bequia Express, Admiral) e aviões pequenos/barcos entre as ilhas",
+   "paceLevel": "Equilibrado (natureza + mar)",
+   "stops": [
+    {
+     "name": "Parada 1: Kingstown e costa de sotavento",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Jardim Botânico",
+      "Vista do Fort Charlotte",
+      "Baía de Wallilabou (cenário de Piratas do Caribe)",
+      "Cachoeiras Dark View"
+     ],
+     "activities": [
+      "Explore o mercado de Kingstown no sábado de manhã.",
+      "Pegue um micro-ônibus pela costa de sotavento até Wallilabou.",
+      "Atravesse a ponte de bambu de Dark View e tome banho no poço."
+     ],
+     "foodAndDrinks": [
+      "Fruta-pão assada com jackfish frito (prato nacional)",
+      "Água de coco fresca",
+      "Roti (wrap recheado com curry)"
+     ],
+     "criticalTips": [
+      "A maioria das lojas fecha no domingo; faça compras durante a semana.",
+      "O destino do micro-ônibus fica no para-brisa; avise o motorista quando quiser descer."
+     ],
+     "mapsQuery": "Kingstown, Saint Vincent and the Grenadines",
+     "stopNumber": 1
+    },
+    {
+     "name": "Parada 2: Vulcão La Soufrière e costa de barlavento",
+     "recommendedDuration": "1 dia",
+     "durationBadge": "1 dia",
+     "highlights": [
+      "A borda da cratera, a 1.234 m",
+      "Leito de lava do rio seco Rabacca",
+      "Praias de areia preta do Atlântico"
+     ],
+     "activities": [
+      "Suba com guia pela trilha leste até a cratera (4-5 h ida e volta).",
+      "Observe as marcas da erupção de 2021 em Rabacca.",
+      "Visite os Montreal Gardens na volta."
+     ],
+     "foodAndDrinks": [
+      "Café da manhã de bakes com bacalhau salgado antes da trilha",
+      "Sorrel (bebida de hibisco)"
+     ],
+     "criticalTips": [
+      "Consulte o nível de alerta em vigor da NEMO, a agência de emergências.",
+      "O topo pode ser frio e ter neblina; leve corta-vento e bons calçados."
+     ],
+     "mapsQuery": "La Soufrière, Saint Vincent",
+     "stopNumber": 2
+    },
+    {
+     "name": "Parada 3: Bequia",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Port Elizabeth e baía Admiralty",
+      "Praias Princess Margaret e Lower Bay",
+      "Santuário de tartarugas Old Hegg"
+     ],
+     "activities": [
+      "Pegue o ferry de Kingstown para Bequia (~1 hora).",
+      "Caminhe pelo Belmont Walkway, à beira da baía.",
+      "Visite as oficinas de miniaturas de barcos feitas à mão."
+     ],
+     "foodAndDrinks": [
+      "Lagosta grelhada (temporada: outubro a abril)",
+      "Cerveja Hairoun",
+      "Torta de coco"
+     ],
+     "criticalTips": [
+      "Confira os horários do ferry aos domingos e feriados.",
+      "Há poucos caixas eletrônicos; leve dinheiro suficiente."
+     ],
+     "mapsQuery": "Port Elizabeth, Bequia",
+     "stopNumber": 3
+    },
+    {
+     "name": "Parada 4: Union Island, Mayreau e Tobago Cays",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Snorkel com tartarugas em Tobago Cays",
+      "Baía Salt Whistle (Mayreau)",
+      "Happy Island (em frente a Union Island)"
+     ],
+     "activities": [
+      "Faça um passeio de barco de Union Island até Tobago Cays.",
+      "Nade na área das tartarugas em frente a Baradal.",
+      "Veja o pôr do sol na Happy Island."
+     ],
+     "foodAndDrinks": [
+      "Churrasco de peixe e lagosta na praia",
+      "Rum Sunset Very Strong"
+     ],
+     "criticalTips": [
+      "Pergunte se a taxa do parque marinho está incluída no passeio.",
+      "Não pise nos corais e use protetor solar que não agrida os recifes."
+     ],
+     "mapsQuery": "Tobago Cays Marine Park",
+     "stopNumber": 4
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Fruta-pão assada com jackfish frito (prato nacional)",
+     "Sopa de callaloo",
+     "Pelau (arroz com frango e feijão-guandu)"
+    ],
+    "drinks": [
+     "Rum Sunset Very Strong",
+     "Cerveja Hairoun",
+     "Sorrel (bebida de hibisco)"
+    ],
+    "streetFoods": [
+     "Biscoitos de araruta",
+     "Torta de coco",
+     "Roti (wrap recheado com curry)"
+    ],
+    "diningAdvice": "O «local plate» (arroz, ervilhas, tubérculos e carne ou peixe) é a opção mais econômica; confira os 10 % de serviço e o IVA na conta."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptador de tomada tipo G",
+     "Protetor solar que não agrida os recifes e máscara de snorkel",
+     "Repelente de mosquitos (risco de dengue)",
+     "Calçado de trilha e capa de chuva leve"
+    ],
+    "safetyAndEtiquette": [
+     "Combine a tarifa do táxi antes de entrar e confirme se é em dólares do Caribe Oriental ou americanos.",
+     "Cumprimente sempre com «Good morning» ou «Good afternoon»; perguntar algo sem cumprimentar é considerado falta de educação.",
+     "Roupas camufladas são proibidas para civis."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G",
+     "A",
+     "B"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Na maioria, tomadas britânicas tipo G, de três pinos; alguns hotéis têm tomadas americanas A/B (110V)."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Em São Vicente, a água da rede é tratada; nas Granadinas, usam-se cisternas de água da chuva, então prefira água engarrafada.",
+    "vaccines": [
+     "Vacinas de rotina (tétano-difteria, sarampo)",
+     "Recomenda-se hepatite A e febre tifoide",
+     "Certificado de febre amarela se você chegar de um país de risco",
+     "Proteção contra mosquitos por causa da dengue"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "911"
+   },
+   "tipping": {
+    "custom": "Se a conta não incluir 10 % de serviço, deixe 10 %; guias e capitães de barco também recebem gorjeta.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "As contas de hotel podem somar IVA e serviço à parte."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Não há (IVA de 16 % incluído)",
+    "minSpend": "Não se aplica",
+    "customsNote": "Não existe devolução de IVA para turistas. Algumas lojas vendem com isenção de impostos; respeite os limites alfandegários de rum e tabaco."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 3,00 - 8,00",
+    "topCarriers": [
+     "Digicel",
+     "FLOW"
+    ],
+    "airportSimTrapWarning": "No aeroporto de Argyle há poucas opções de chip; compre um pacote para turistas com o passaporte na Digicel ou na FLOW em Kingstown, ou ative antes um eSIM regional."
+   },
+   "touristScams": [
+    {
+     "title": "Táxi sem tarifa combinada",
+     "desc": "Cobranças excessivas em táxis quando a tarifa não foi combinada antes",
+     "tip": "Combine a tarifa do táxi antes de entrar e confirme se é em dólares do Caribe Oriental ou americanos."
+    },
+    {
+     "title": "«Boat boys» insistentes",
+     "desc": "«Boat boys» insistentes nas baías de Wallilabou e Bequia que oferecem serviços caros aos iates",
+     "tip": "Defina o preço antes de aceitar; se não quiser, diga não com educação e firmeza."
+    },
+    {
+     "title": "Guia sem licença",
+     "desc": "Guias sem licença que cobram a mais nas trilhas até La Soufrière e às cachoeiras",
+     "tip": "Contrate guias pelo hotel ou pelo órgão de turismo (Discover SVG)."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Восточнокарибский доллар (XCD; фиксирован: 2,70 за 1 USD)",

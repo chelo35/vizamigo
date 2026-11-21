@@ -90,7 +90,8 @@ async function main() {
     DICTS[l] = loadDict(path.resolve(DIST, '..'), l);
     SUBST[l] = makeSubstTranslator(DICTS[l], await buildExtras(l));
   }
-  const trOut = (lang: string, html: string) => (SUBST[lang] ? SUBST[lang](html) : html);
+  const { ptArticles } = await import('../src/i18n/ptArticles');
+  const trOut = (lang: string, html: string) => { const h = SUBST[lang] ? SUBST[lang](html) : html; return lang === 'pt' ? ptArticles(h) : h; };
   const { getCountryName, countryToRegion, getRegionName, getCategoryBadgeLabel, INFO: VISA_INFO } = await import('../src/data/passportData');
   const { getPassportItems } = await import('../src/utils/calculator');
   const { getCountrySeoMeta } = await import('../src/utils/schemaGenerator');
@@ -100,51 +101,52 @@ async function main() {
   const LANGS = CORE_SEO_LANGUAGES as readonly string[];
   const allCodes = Object.keys(GEO_DATA).sort();
   const OG: Record<string, string> = { tr: 'tr_TR', en: 'en_US', de: 'de_DE', es: 'es_ES', ru: 'ru_RU', pt: 'pt_BR' };
-  const EYEBROW: Record<string, string> = { tr: 'Vize rehberi', en: 'Visa guide', de: 'Visa-Ratgeber', es: 'Guía de visados', ru: 'Визовый гид' };
+  const EYEBROW: Record<string, string> = { tr: 'Vize rehberi', en: 'Visa guide', de: 'Visa-Ratgeber', es: 'Guía de visados', pt: 'Guia de vistos', ru: 'Визовый гид' };
   const HOME_TITLE: Record<string, string> = {
     tr: 'Vizamigo - 199 Ülke Vize Rejimi ve Küresel Pasaport Rehberi',
     en: 'Vizamigo - Global Visa Policy & Passport Mobility Guide',
     de: 'Vizamigo - Weltweite Visabestimmungen & Reisepass-Guide',
-    es: 'Vizamigo - Política Global de Visados y Guía de Pasaportes',
+    es: 'Vizamigo - Política Global de Visados y Guía de Pasaportes', pt: 'Vizamigo - Política global de vistos e guia de passaportes',
     ru: 'Vizamigo - Глобальный визовый режим и гид по паспортам'
   };
   const HOME_DESC: Record<string, string> = {
     tr: '199 ülkenin güncel vize kuralları ve kalış süreleri, pasaport karşılaştırma, Schengen 90/180 gün sayacı, rota planlayıcı, acil durum numaraları ve dijital göçebe rehberi.',
     en: 'Up-to-date visa rules and stay limits for 199 countries, passport comparison, Schengen 90/180 calculator, route planner, emergency numbers and a digital nomad guide.',
     de: 'Aktuelle Visaregeln und Aufenthaltsdauer für 199 Länder, Passvergleich, Schengen-Rechner 90/180, Routenplaner, Notrufnummern und Nomaden-Guide.',
-    es: 'Reglas de visado y estancia para 199 países, comparación de pasaportes, calculadora Schengen 90/180, planificador de rutas, emergencias y guía para nómadas digitales.',
+    es: 'Reglas de visado y estancia para 199 países, comparación de pasaportes, calculadora Schengen 90/180, planificador de rutas, emergencias y guía para nómadas digitales.', pt: 'Regras de visto e permanência para 199 países, comparação de passaportes, calculadora Schengen 90/180, planejador de roteiros, emergências e guia para nômades digitais.',
     ru: 'Актуальные визовые правила и сроки пребывания для 199 стран, сравнение паспортов, калькулятор Шенгена 90/180, планировщик маршрута и экстренные номера.'
   };
-  const CAPITAL: Record<string, string> = { tr: 'Başkent', en: 'Capital', de: 'Hauptstadt', es: 'Capital', ru: 'Столица' };
+  const CAPITAL: Record<string, string> = { tr: 'Başkent', en: 'Capital', de: 'Hauptstadt', es: 'Capital', pt: 'Capital', ru: 'Столица' };
   const UI: Record<string, { home: string; countries: string; tools: string; region: string }> = {
     tr: { home: 'Ana sayfa', countries: 'Ülkelere göre vize rehberi', tools: 'Araçlar', region: 'Aynı bölgedeki ülkeler' },
     en: { home: 'Home', countries: 'Visa guide by country', tools: 'Tools', region: 'Countries in the same region' },
     de: { home: 'Startseite', countries: 'Visa-Ratgeber nach Land', tools: 'Tools', region: 'Länder in derselben Region' },
     es: { home: 'Inicio', countries: 'Guía de visados por país', tools: 'Herramientas', region: 'Países de la misma región' },
+    pt: { home: 'Início', countries: 'Guia de vistos por país', tools: 'Ferramentas', region: 'Países da mesma região' },
     ru: { home: 'Главная', countries: 'Визовый гид по странам', tools: 'Инструменты', region: 'Страны того же региона' }
   };
   const TABS = ['plan', 'track', 'nomad', 'profile', 'consular'] as const;
   // bilgi sayfaları (yedekleme aracı hariç)
   const INFO: Record<string, [string, string, string, string, string, string]> = {
-    terms: ['Kullanım koşulları', 'Terms of use', 'Nutzungsbedingungen', 'Condiciones de uso', 'Условия использования'],
-    privacy: ['Gizlilik politikası', 'Privacy policy', 'Datenschutzerklärung', 'Política de privacidad', 'Политика конфиденциальности'],
-    disclaimer: ['Sorumluluk reddi', 'Disclaimer', 'Haftungsausschluss', 'Aviso legal', 'Отказ от ответственности'],
-    kvkk_gdpr: ['KVKK ve GDPR', 'KVKK & GDPR', 'KVKK & DSGVO', 'KVKK y RGPD', 'KVKK и GDPR'],
-    standards: ['Kaynaklar ve doğrulama', 'Sources & verification', 'Quellen & Überprüfung', 'Fuentes y verificación', 'Источники и проверка'],
-    attributions: ['Görsel kaynakları', 'Photo credits', 'Bildnachweise', 'Créditos de las fotos', 'Источники фотографий'],
-    appeals: ['Vize reddine itiraz', 'Visa refusal appeals', 'Widerspruch gegen Visumablehnung', 'Recurso contra la denegación de visado', 'Обжалование отказа в визе'],
-    passport_lost: ['Yurt dışında pasaport kaybı', 'Lost passport abroad', 'Reisepass im Ausland verloren', 'Pasaporte perdido en el extranjero', 'Потеря паспорта за границей'],
-    crisis: ['Kriz masası', 'Crisis desk', 'Krisenhilfe', 'Centro de crisis', 'Кризисный центр'],
-    transit: ['Transit kuralları', 'Transit rules', 'Transitbestimmungen', 'Normas de tránsito', 'Правила транзита'],
-    partners: ['Acenteler', 'Agencies', 'Reisebüros', 'Agencias', 'Агентства'],
-    airlines: ['Havayolları', 'Airlines', 'Fluggesellschaften', 'Aerolíneas', 'Авиакомпании'],
-    insurance: ['Seyahat sigortası', 'Travel insurance', 'Reiseversicherung', 'Seguro de viaje', 'Туристическая страховка'],
-    community: ['Topluluk', 'Community', 'Community', 'Comunidad', 'Сообщество'],
-    api: ['Kurumsal API', 'Business API', 'Business-API', 'API para empresas', 'API для бизнеса'],
-    mission: ['Hakkımızda', 'About Vizamigo', 'Über Vizamigo', 'Sobre Vizamigo', 'О Vizamigo'],
-    sustainability: ['Sürdürülebilirlik', 'Sustainability', 'Nachhaltigkeit', 'Sostenibilidad', 'Устойчивое развитие'],
-    careers: ['Kariyer', 'Careers', 'Karriere', 'Empleo', 'Карьера'],
-    press: ['İletişim', 'Contact', 'Kontakt', 'Contacto', 'Контакты']
+    terms: ['Kullanım koşulları', 'Terms of use', 'Nutzungsbedingungen', 'Condiciones de uso', 'Условия использования', 'Termos de uso'],
+    privacy: ['Gizlilik politikası', 'Privacy policy', 'Datenschutzerklärung', 'Política de privacidad', 'Политика конфиденциальности', 'Política de privacidade'],
+    disclaimer: ['Sorumluluk reddi', 'Disclaimer', 'Haftungsausschluss', 'Aviso legal', 'Отказ от ответственности', 'Aviso legal'],
+    kvkk_gdpr: ['KVKK ve GDPR', 'KVKK & GDPR', 'KVKK & DSGVO', 'KVKK y RGPD', 'KVKK и GDPR', 'KVKK e GDPR'],
+    standards: ['Kaynaklar ve doğrulama', 'Sources & verification', 'Quellen & Überprüfung', 'Fuentes y verificación', 'Источники и проверка', 'Fontes e verificação'],
+    attributions: ['Görsel kaynakları', 'Photo credits', 'Bildnachweise', 'Créditos de las fotos', 'Источники фотографий', 'Créditos das fotos'],
+    appeals: ['Vize reddine itiraz', 'Visa refusal appeals', 'Widerspruch gegen Visumablehnung', 'Recurso contra la denegación de visado', 'Обжалование отказа в визе', 'Recurso contra a recusa de visto'],
+    passport_lost: ['Yurt dışında pasaport kaybı', 'Lost passport abroad', 'Reisepass im Ausland verloren', 'Pasaporte perdido en el extranjero', 'Потеря паспорта за границей', 'Passaporte perdido no exterior'],
+    crisis: ['Kriz masası', 'Crisis desk', 'Krisenhilfe', 'Centro de crisis', 'Кризисный центр', 'Central de crises'],
+    transit: ['Transit kuralları', 'Transit rules', 'Transitbestimmungen', 'Normas de tránsito', 'Правила транзита', 'Regras de trânsito'],
+    partners: ['Acenteler', 'Agencies', 'Reisebüros', 'Agencias', 'Агентства', 'Agências'],
+    airlines: ['Havayolları', 'Airlines', 'Fluggesellschaften', 'Aerolíneas', 'Авиакомпании', 'Companhias aéreas'],
+    insurance: ['Seyahat sigortası', 'Travel insurance', 'Reiseversicherung', 'Seguro de viaje', 'Туристическая страховка', 'Seguro viagem'],
+    community: ['Topluluk', 'Community', 'Community', 'Comunidad', 'Сообщество', 'Comunidade'],
+    api: ['Kurumsal API', 'Business API', 'Business-API', 'API para empresas', 'API для бизнеса', 'API para empresas'],
+    mission: ['Hakkımızda', 'About Vizamigo', 'Über Vizamigo', 'Sobre Vizamigo', 'О Vizamigo', 'Sobre a Vizamigo'],
+    sustainability: ['Sürdürülebilirlik', 'Sustainability', 'Nachhaltigkeit', 'Sostenibilidad', 'Устойчивое развитие', 'Sustentabilidade'],
+    careers: ['Kariyer', 'Careers', 'Karriere', 'Empleo', 'Карьера', 'Vagas'],
+    press: ['İletişim', 'Contact', 'Kontakt', 'Contacto', 'Контакты', 'Contato']
   };
 
 
@@ -163,6 +165,7 @@ async function main() {
     en: { app: 'Visa-free access worldwide, passport comparison, Schengen 90/180-day calculator, consular emergency guide and travel safety updates.', site: 'Passport, Visa & Global Travel Guide', ogAlt: 'Passport & Visa Assistant', kw: 'visa requirements, visa-free countries, passport, Schengen 90/180 calculator, lost passport abroad, consular emergency, digital nomad visa, travel guide' },
     de: { app: 'Visumfreie Einreise weltweit, Reisepass-Vergleich, Schengen-90/180-Tage-Rechner, Notfallhilfe der Konsulate und Reisesicherheit.', site: 'Reisepass-, Visa- & Reiseführer weltweit', ogAlt: 'Reisepass- & Visa-Assistent', kw: 'Einreisebestimmungen, Visum, visumfreie Länder, Reisepass, Schengen 90/180 Rechner, Reisepass verloren, Konsulat Notfall, Digital-Nomaden-Visum, Reiseführer' },
     es: { app: 'Viajes sin visado en todo el mundo, comparación de pasaportes, calculadora Schengen 90/180 días, guía consular de emergencia y seguridad de viaje.', site: 'Guía mundial de pasaportes, visados y viajes', ogAlt: 'Asistente de pasaportes y visados', kw: 'requisitos de visado, países sin visa, pasaporte, calculadora Schengen 90/180, pasaporte perdido, emergencia consular, visa de nómada digital, guía de viaje' },
+    pt: { app: 'Viagens sem visto pelo mundo todo, comparação de passaportes, calculadora Schengen 90/180 dias, guia consular de emergência e segurança na viagem.', site: 'Guia mundial de passaportes, vistos e viagens', ogAlt: 'Assistente de passaportes e vistos', kw: 'requisitos de visto, países sem visto, passaporte, calculadora Schengen 90/180, passaporte perdido, emergência consular, visto de nômade digital, guia de viagem' },
     ru: { app: 'Безвизовые страны по всему миру, сравнение паспортов, калькулятор Шенгена 90/180 дней, консульская помощь и безопасность поездок.', site: 'Паспорта, визы и путешествия по всему миру', ogAlt: 'Помощник по паспортам и визам', kw: 'визовые требования, безвизовые страны, паспорт, калькулятор Шенгена 90/180, потеря паспорта, консульская помощь, виза цифрового кочевника, путеводитель' }
   };
 
@@ -237,8 +240,8 @@ async function main() {
   const { LANG_PASS, PASSPORT_PAGES } = await import('../src/data/passportPages');
   const { buildPassportPath } = await import('../src/utils/seoRouter');
   const { getPassportBrief } = await import('../src/utils/passportBrief');
-  const PP_TITLE: Record<string, string> = { tr: 'Diğer pasaportlar', en: 'Entry rules for other passports', de: 'Einreise mit anderen Pässen', es: 'Requisitos para otros pasaportes', ru: 'Правила для других паспортов' };
-  const FAQ_TITLE: Record<string, string> = { tr: 'Sık sorulan sorular', en: 'Frequently asked questions', de: 'Häufige Fragen', es: 'Preguntas frecuentes', ru: 'Частые вопросы' };
+  const PP_TITLE: Record<string, string> = { tr: 'Diğer pasaportlar', en: 'Entry rules for other passports', de: 'Einreise mit anderen Pässen', es: 'Requisitos para otros pasaportes', pt: 'Requisitos para outros passaportes', ru: 'Правила для других паспортов' };
+  const FAQ_TITLE: Record<string, string> = { tr: 'Sık sorulan sorular', en: 'Frequently asked questions', de: 'Häufige Fragen', es: 'Preguntas frecuentes', pt: 'Perguntas frequentes', ru: 'Частые вопросы' };
   // ülke verisi (sayfa içi bilgi bölümü de bundan beslenir)
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const CDATA: Record<string, Record<string, any>> = {};
@@ -340,17 +343,18 @@ async function main() {
       en: { facts: 'Quick facts', adv: 'Official travel advisories', eng: 'English', capital: 'Capital', currency: 'Currency', best: 'Best time to visit', plug: 'Plugs', water: 'Tap water', waterY: 'Safe to drink', waterN: 'Not recommended', sos: 'Emergency numbers', police: 'Police', amb: 'Ambulance', gen: 'General', safety: 'Safety', tip: 'Tipping', pay: 'Payments', ride: 'Ride apps', langs: 'Language', budget: 'Daily budget', budgetB: 'budget', budgetM: 'mid-range', esim: 'Internet & eSIM', route: 'Suggested itinerary', places: 'Must-see places', food: 'What to eat', phrases: 'Useful phrases', tips: 'Safety tips' },
       de: { facts: 'Kurz & knapp', adv: 'Offizielle Reisehinweise', eng: 'Englisch', capital: 'Hauptstadt', currency: 'Währung', best: 'Beste Reisezeit', plug: 'Steckdosen', water: 'Leitungswasser', waterY: 'Trinkbar', waterN: 'Nicht empfohlen', sos: 'Notrufnummern', police: 'Polizei', amb: 'Rettung', gen: 'Allgemein', safety: 'Sicherheit', tip: 'Trinkgeld', pay: 'Bezahlen', ride: 'Taxi-Apps', langs: 'Sprache', budget: 'Tagesbudget', budgetB: 'günstig', budgetM: 'Mittelklasse', esim: 'Internet & eSIM', route: 'Empfohlene Reiseroute', places: 'Sehenswürdigkeiten', food: 'Was man essen sollte', phrases: 'Nützliche Wörter', tips: 'Sicherheitstipps' },
       es: { facts: 'Datos rápidos', adv: 'Avisos oficiales de viaje', eng: 'Inglés', capital: 'Capital', currency: 'Moneda', best: 'Mejor época', plug: 'Enchufes', water: 'Agua del grifo', waterY: 'Potable', waterN: 'No recomendable', sos: 'Teléfonos de emergencia', police: 'Policía', amb: 'Ambulancia', gen: 'General', safety: 'Seguridad', tip: 'Propinas', pay: 'Pagos', ride: 'Apps de taxi', langs: 'Idioma', budget: 'Presupuesto diario', budgetB: 'económico', budgetM: 'medio', esim: 'Internet y eSIM', route: 'Itinerario recomendado', places: 'Lugares imprescindibles', food: 'Qué comer', phrases: 'Frases útiles', tips: 'Consejos de seguridad' },
+      pt: { facts: 'Resumo rápido', adv: 'Alertas oficiais de viagem', eng: 'Inglês', capital: 'Capital', currency: 'Moeda', best: 'Melhor época', plug: 'Tomadas', water: 'Água da torneira', waterY: 'Potável', waterN: 'Não recomendável', sos: 'Telefones de emergência', police: 'Polícia', amb: 'Ambulância', gen: 'Geral', safety: 'Segurança', tip: 'Gorjetas', pay: 'Pagamentos', ride: 'Apps de táxi', langs: 'Idioma', budget: 'Orçamento diário', budgetB: 'econômico', budgetM: 'médio', esim: 'Internet e eSIM', route: 'Roteiro recomendado', places: 'Lugares imperdíveis', food: 'O que comer', phrases: 'Frases úteis', tips: 'Dicas de segurança' },
       ru: { facts: 'Коротко', adv: 'Официальные предупреждения', eng: 'Английский', capital: 'Столица', currency: 'Валюта', best: 'Лучшее время', plug: 'Розетки', water: 'Вода из-под крана', waterY: 'Можно пить', waterN: 'Пить не рекомендуется', sos: 'Экстренные номера', police: 'Полиция', amb: 'Скорая', gen: 'Общий', safety: 'Безопасность', tip: 'Чаевые', pay: 'Оплата', ride: 'Такси-приложения', langs: 'Язык', budget: 'Бюджет в день', budgetB: 'эконом', budgetM: 'средний', esim: 'Интернет и eSIM', route: 'Рекомендуемый маршрут', places: 'Что посмотреть', food: 'Что попробовать', phrases: 'Полезные фразы', tips: 'Советы по безопасности' }
     };
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const FEST_H: Record<string, string> = { tr: 'Festivaller ve etkinlikler', en: 'Festivals & events', de: 'Feste & Veranstaltungen', es: 'Festivales y eventos', ru: 'Праздники и фестивали' };
+    const FEST_H: Record<string, string> = { tr: 'Festivaller ve etkinlikler', en: 'Festivals & events', de: 'Feste & Veranstaltungen', es: 'Festivales y eventos', pt: 'Festivais e eventos', ru: 'Праздники и фестивали' };
     const festHtml = (code: string, lang: string): string => {
       const cu = CDATA[lang]?.[code]?.enc?.culture;
       const fg = { cards: (cu?.festivalCards || []) as Array<{ name: string; when: string; place?: string; about: string; tip: string }> };
       if (!fg.cards.length) return '';
       return `<section class="vzs-fest"><h2>${esc(FEST_H[lang] || FEST_H.en)}</h2>${fg.cards.map((f) => `<h3>${esc(f.name)}</h3><p><b>${esc(f.when)}${f.place ? ` · ${esc(f.place)}` : ''}</b></p><p>${esc(f.about)} ${esc(f.tip)}</p>`).join('')}</section>`;
     };
-    const WTG_H: Record<string, string> = { tr: 'Gitmek için en iyi aylar', en: 'Best months to go', de: 'Beste Reisemonate', es: 'Mejores meses para ir', ru: 'Лучшие месяцы для поездки' };
+    const WTG_H: Record<string, string> = { tr: 'Gitmek için en iyi aylar', en: 'Best months to go', de: 'Beste Reisemonate', es: 'Mejores meses para ir', pt: 'Melhores meses para ir', ru: 'Лучшие месяцы для поездки' };
     const wtgHtml = (code: string, lang: string): string => {
       const ms = BEST_MONTHS[code];
       if (!ms?.length) return '';
@@ -437,6 +441,7 @@ async function main() {
           en: ['Checked by the Vizamigo editorial team', 'Last checked', 'Source', 'Passport Index and official-source checks', 'How we verify information', 'About Vizamigo'],
           de: ['Geprüft von der Vizamigo-Redaktion', 'Zuletzt geprüft', 'Quelle', 'Passport Index und Prüfung amtlicher Quellen', 'So prüfen wir unsere Angaben', 'Über Vizamigo'],
           es: ['Revisado por el equipo editorial de Vizamigo', 'Última revisión', 'Fuente', 'Passport Index y revisión de fuentes oficiales', 'Cómo verificamos la información', 'Sobre Vizamigo'],
+          pt: ['Revisado pela equipe editorial da Vizamigo', 'Última revisão', 'Fonte', 'Passport Index e revisão de fontes oficiais', 'Como verificamos as informações', 'Sobre a Vizamigo'],
           ru: ['Проверено редакцией Vizamigo', 'Последняя проверка', 'Источник', 'Passport Index и проверка официальных источников', 'Как мы проверяем информацию', 'О Vizamigo']
         } as Record<string, string[]>;
         const w = T[lang] || T.en;
@@ -457,7 +462,7 @@ async function main() {
           // ülkeye özel paylaşım görseli: fotoğraf + bayrak + bu pasaportla vize durumu
           const it = getPassportItems(pass).find((x) => x.c === code);
           const P = getCountryName(pass, lang);
-          const sub = ({ tr: `${P} pasaportuyla · 2026`, en: `With a ${P} passport · 2026`, de: `Mit Pass aus ${P} · 2026`, es: `Con pasaporte de ${P} · 2026`, ru: `Паспорт: ${P} · 2026` } as Record<string, string>)[lang];
+          const sub = ({ tr: `${P} pasaportuyla · 2026`, en: `With a ${P} passport · 2026`, de: `Mit Pass aus ${P} · 2026`, es: `Con pasaporte de ${P} · 2026`, pt: `Com passaporte de ${P} · 2026`, ru: `Паспорт: ${P} · 2026` } as Record<string, string>)[lang];
           const tone = !it ? 'sea' : it.id || it.cat === 'free' ? 'ok' : it.cat === 'visa' ? 'warn' : 'sun';
           const q = new URLSearchParams({ c: code, t: name, b: getCategoryBadgeLabel(it as never, lang), s: sub, tone, v: '1' });
           return `${BASE_URL}/api/og?${q.toString()}`;
@@ -547,8 +552,9 @@ async function main() {
       const check = c ? `<h2>${esc(c.title)}</h2><h3>${esc(c.commonTitle)}</h3>${ul(c.common)}${[...c.statuses, ...c.purposes].map((x) => `<h3>${esc(x.label)}</h3>${ul(x.docs)}`).join('')}<p>${esc(c.note)}</p>` : '';
       const faq = `<section class="vzs-faq"><h2>${esc(FAQ_TITLE[lang] || FAQ_TITLE.en)}</h2>${g.faq.map((f) => `<h3>${esc(f.q)}</h3><p>${esc(f.a)}</p>`).join('')}</section>`;
       const src = `<p>${meta.sources.map((x) => `<a href="${esc(x.url)}" rel="noopener">${esc(sourceLabel(x.label, lang))}</a>`).join(' · ')} · ${esc(meta.checked)}</p>`;
-      const GL: Record<string, string[]> = { tr: ['Kimlikle gidilebilen ülkeler', 'Vizesiz ülkeler', 'Kapıda vize', 'E-vize', 'Elektronik izin (ETA)'], en: ['ID card accepted', 'Visa-free countries', 'Visa on arrival', 'eVisa', 'Travel authorisation (ETA)'], de: ['Mit Personalausweis', 'Visumfreie Länder', 'Visum bei Ankunft', 'eVisum', 'Reisegenehmigung (ETA)'], es: ['Con DNI', 'Países sin visado', 'Visado a la llegada', 'eVisa', 'Autorización (ETA)'], ru: ['По ID-карте', 'Без визы', 'Виза по прилёте', 'Электронная виза', 'Разрешение ETA'] };
-      const DAY: Record<string, string> = { tr: 'gün', en: 'days', de: 'Tage', es: 'días', ru: 'дн.' };
+      const GL: Record<string, string[]> = { tr: ['Kimlikle gidilebilen ülkeler', 'Vizesiz ülkeler', 'Kapıda vize', 'E-vize', 'Elektronik izin (ETA)'], en: ['ID card accepted', 'Visa-free countries', 'Visa on arrival', 'eVisa', 'Travel authorisation (ETA)'], de: ['Mit Personalausweis', 'Visumfreie Länder', 'Visum bei Ankunft', 'eVisum', 'Reisegenehmigung (ETA)'], es: ['Con DNI', 'Países sin visado', 'Visado a la llegada', 'eVisa', 'Autorización (ETA)'],
+      pt: ['Com RG', 'Países sem visto', 'Visto na chegada', 'e-Visa', 'Autorização (ETA)'], ru: ['По ID-карте', 'Без визы', 'Виза по прилёте', 'Электронная виза', 'Разрешение ETA'] };
+      const DAY: Record<string, string> = { tr: 'gün', en: 'days', de: 'Tage', es: 'días', pt: 'dias', ru: 'дн.' };
       const gr = guideGroups(id, lang);
       const list = gr ? (['id', 'free', 'voa', 'evisa', 'eta'] as const).filter((k) => GUIDE_META[id].list!.groups.includes(k) && gr[k].length).map((k) => `<h2>${esc((GL[lang] || GL.en)[['id', 'free', 'voa', 'evisa', 'eta'].indexOf(k)])} (${gr[k].length})</h2><ul>${gr[k].map(([c, v]) => `<li><a href="${buildLocalizedPath(lang as never, 'explore', c)}">${esc(getCountryName(c, lang))}</a>${/^\d+$/.test(v) ? ` · ${v} ${DAY[lang] || DAY.en}` : ''}</li>`).join('')}</ul>`).join('') : '';
       const others = guideIdsFor(lang).filter((o) => o !== id && !isWtgId(o)).map((o) => `<a href="/${lang}/info/${o}">${esc(getGuide(o, lang).short)}</a>`).join(' · ');
@@ -569,7 +575,8 @@ async function main() {
     {
       const { TOURS, TOURS_SLUG, toursPath, PACKAGES, routeName } = await import('../src/data/tours');
       const ix = ({ tr: 0, en: 1, de: 2, es: 3, ru: 4, pt: 5 } as Record<string, number>)[lang] ?? 1;
-      const T = ({ tr: ['Paket turlar ve aktiviteler: Tayland, Balkanlar, Mısır, İtalya, Türkiye', 'Tayland, İstanbul, Kapadokya, Mısır, İtalya, Balkanlar, Dubai ve daha fazlasında tur, müze bileti ve günübirlik geziler. Ücretsiz iptalli turları karşılaştır.'], en: ['Multi-day tours & activities: Thailand, the Balkans, Egypt, Italy, Türkiye', 'Tours, museum tickets and day trips in Thailand, Istanbul, Cappadocia, Egypt, Italy, the Balkans, Dubai and more. Compare tours with free cancellation.'], de: ['Touren & Aktivitäten: Thailand, Istanbul, Ägypten, Italien, Balkan', 'Touren, Museumstickets und Tagesausflüge in Thailand, Istanbul, Kappadokien, Ägypten, Italien, auf dem Balkan, in Dubai und mehr.'], es: ['Tours y actividades: Tailandia, Estambul, Egipto, Italia, los Balcanes', 'Tours, entradas y excursiones en Tailandia, Estambul, Capadocia, Egipto, Italia, los Balcanes, Dubái y más.'], ru: ['Экскурсии и туры: Таиланд, Стамбул, Египет, Италия, Балканы', 'Экскурсии, билеты в музеи и однодневные поездки: Таиланд, Стамбул, Каппадокия, Египет, Италия, Балканы, Дубай и другие.'] } as Record<string, [string, string]>)[lang];
+      const T = ({ tr: ['Paket turlar ve aktiviteler: Tayland, Balkanlar, Mısır, İtalya, Türkiye', 'Tayland, İstanbul, Kapadokya, Mısır, İtalya, Balkanlar, Dubai ve daha fazlasında tur, müze bileti ve günübirlik geziler. Ücretsiz iptalli turları karşılaştır.'], en: ['Multi-day tours & activities: Thailand, the Balkans, Egypt, Italy, Türkiye', 'Tours, museum tickets and day trips in Thailand, Istanbul, Cappadocia, Egypt, Italy, the Balkans, Dubai and more. Compare tours with free cancellation.'], de: ['Touren & Aktivitäten: Thailand, Istanbul, Ägypten, Italien, Balkan', 'Touren, Museumstickets und Tagesausflüge in Thailand, Istanbul, Kappadokien, Ägypten, Italien, auf dem Balkan, in Dubai und mehr.'], es: ['Tours y actividades: Tailandia, Estambul, Egipto, Italia, los Balcanes', 'Tours, entradas y excursiones en Tailandia, Estambul, Capadocia, Egipto, Italia, los Balcanes, Dubái y más.'],
+      pt: ['Tours e atividades: Tailândia, Istambul, Egito, Itália, Bálcãs', 'Tours, ingressos e passeios na Tailândia, em Istambul, na Capadócia, no Egito, na Itália, nos Bálcãs, em Dubai e muito mais.'], ru: ['Экскурсии и туры: Таиланд, Стамбул, Египет, Италия, Балканы', 'Экскурсии, билеты в музеи и однодневные поездки: Таиланд, Стамбул, Каппадокия, Египет, Италия, Балканы, Дубай и другие.'] } as Record<string, [string, string]>)[lang];
       const list = PACKAGES.map((p) => `<section id="${p.id}"><h2>${esc(p.name[ix])} (${p.days})</h2><p>${esc(routeName(p.route, lang))}</p></section>`).join('') + TOURS.map((t) => `<section id="${t.id}"><h2>${esc(t.name[ix])}</h2><p>${esc(t.pitch[ix])}</p></section>`).join('');
       write(path.join(lang, TOURS_SLUG[lang] || 'tours', 'index.html'), build({
         lang,
@@ -624,5 +631,5 @@ async function main() {
 }
 
 main().catch((e) => {
-  console.warn('[prerender] atlandı:', e instanceof Error ? e.message : e);
+  console.warn('[prerender] atlandı:', e instanceof Error ? e.stack : e);
 });

@@ -326,7 +326,7 @@ export const ITALIARAIL_COUNTRIES = new Set(['IT']);
 /** Fever (Admitad, 16 Kas 2026): konser, Candlelight, sergi ve etkinlik biletleri; güçlü olduğu ülkeler */
 export const FEVER_COUNTRIES = new Set(['US', 'GB', 'ES', 'FR', 'IT', 'DE', 'PT', 'NL', 'BE', 'IE', 'MX', 'CA', 'AU']);
 /** Ferryhopper (Awin, FerryHopper TR programı, 19 Kas 2026 onaylandı; reklamveren 129367, yayıncı 3138284) */
-const FERRY_LANG: Record<string, string> = { tr: 'tr', de: 'de', es: 'es', en: 'en', ru: 'en' };
+const FERRY_LANG: Record<string, string> = { tr: 'tr', de: 'de', es: 'es', pt: 'pt', en: 'en', ru: 'en' };
 export const ferryhopperLink = (lang = 'en', path = '') =>
   `https://www.awin1.com/cread.php?awinmid=129367&awinaffid=3138284&clickref=vizamigo&ued=${encodeURIComponent(`https://www.ferryhopper.com/${FERRY_LANG[lang] || 'en'}${path}`)}`;
 /** Ferryhopper'ın feribot sattığı ülkeler (Akdeniz, Adriyatik, Kuzey Avrupa ve Baltık) */

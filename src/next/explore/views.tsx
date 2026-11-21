@@ -42,11 +42,11 @@ export const WhereView: React.FC<{ passport: string; onOpenCountry: (c: string) 
   const [limit, setLimit] = useState(24);
 
   const catDefs: { k: CatKey; label: string }[] = [
-    { k: 'free', label: l('Vizesiz', 'Visa-free', 'Visumfrei', 'Sin visado', 'Без визы') },
-    { k: 'id', label: l('Kimlikle', 'With ID card', 'Mit Ausweis', 'Con DNI', 'По ID') },
-    { k: 'easy', label: l('E-vize / ETA', 'eVisa / ETA', 'eVisum / ETA', 'eVisa / ETA', 'eVisa / ETA') },
-    { k: 'voa', label: l('Kapıda vize', 'Visa on arrival', 'Bei Ankunft', 'A la llegada', 'По прилёте') },
-    { k: 'visa', label: l('Vize gerekli', 'Visa required', 'Visum nötig', 'Visado necesario', 'Нужна виза') }
+    { k: 'free', label: l('Vizesiz', 'Visa-free', 'Visumfrei', 'Sin visado', 'Без визы', 'Sem visto') },
+    { k: 'id', label: l('Kimlikle', 'With ID card', 'Mit Ausweis', 'Con DNI', 'По ID', 'Com RG') },
+    { k: 'easy', label: l('E-vize / ETA', 'eVisa / ETA', 'eVisum / ETA', 'eVisa / ETA', 'eVisa / ETA', 'e-Visa / ETA') },
+    { k: 'voa', label: l('Kapıda vize', 'Visa on arrival', 'Bei Ankunft', 'A la llegada', 'По прилёте', 'Na chegada') },
+    { k: 'visa', label: l('Vize gerekli', 'Visa required', 'Visum nötig', 'Visado necesario', 'Нужна виза', 'Visto necessário') }
   ];
   const counts = useMemo(() => Object.fromEntries(catDefs.map((c) => [c.k, items.filter((it) => inCat(it, c.k)).length])), [items]); // eslint-disable-line react-hooks/exhaustive-deps
 
@@ -70,32 +70,32 @@ export const WhereView: React.FC<{ passport: string; onOpenCountry: (c: string) 
         ))}
       </Chips>
       <div className="vz-formgrid">
-        <Field label={l('Ülke ara', 'Search', 'Suchen', 'Buscar', 'Поиск')} htmlFor="vz-where-q">
-          <SearchInput id="vz-where-q" value={q} onChange={setQ} placeholder={l('Ör. Japonya', 'e.g. Japan', 'z. B. Japan', 'p. ej. Japón', 'напр. Япония')} />
+        <Field label={l('Ülke ara', 'Search', 'Suchen', 'Buscar', 'Поиск', 'Buscar')} htmlFor="vz-where-q">
+          <SearchInput id="vz-where-q" value={q} onChange={setQ} placeholder={l('Ör. Japonya', 'e.g. Japan', 'z. B. Japan', 'p. ej. Japón', 'напр. Япония', 'ex.: Japão')} />
         </Field>
-        <Field label={l('Bölge', 'Region', 'Region', 'Región', 'Регион')} htmlFor="vz-where-r">
+        <Field label={l('Bölge', 'Region', 'Region', 'Región', 'Регион', 'Região')} htmlFor="vz-where-r">
           <select id="vz-where-r" className="vz-select" value={region} onChange={(e) => setRegion(e.target.value)}>
-            <option value="">{l('Bütün bölgeler', 'All regions', 'Alle Regionen', 'Todas', 'Все регионы')}</option>
+            <option value="">{l('Bütün bölgeler', 'All regions', 'Alle Regionen', 'Todas', 'Все регионы', 'Todas')}</option>
             {Object.keys(REGIONS).map((r) => (
               <option key={r} value={r}>{getRegionName(r, language)}</option>
             ))}
           </select>
         </Field>
-        <Field label={l('En az kalış', 'Minimum stay', 'Mindestaufenthalt', 'Estancia mínima', 'Мин. срок')} htmlFor="vz-where-d">
+        <Field label={l('En az kalış', 'Minimum stay', 'Mindestaufenthalt', 'Estancia mínima', 'Мин. срок', 'Estadia mínima')} htmlFor="vz-where-d">
           <select id="vz-where-d" className="vz-select" value={minDays} onChange={(e) => setMinDays(Number(e.target.value))}>
-            <option value={0}>{l('Fark etmez', 'Any', 'Egal', 'Cualquiera', 'Любой')}</option>
+            <option value={0}>{l('Fark etmez', 'Any', 'Egal', 'Cualquiera', 'Любой', 'Qualquer duração')}</option>
             {[14, 30, 60, 90, 180].map((d) => (
-              <option key={d} value={d}>{l(`${d}+ gün`, `${d}+ days`, `${d}+ Tage`, `${d}+ días`, `${d}+ дн.`)}</option>
+              <option key={d} value={d}>{l(`${d}+ gün`, `${d}+ days`, `${d}+ Tage`, `${d}+ días`, `${d}+ дн.`, `${d}+ dias`)}</option>
             ))}
           </select>
         </Field>
       </div>
       <div className="vz-row-flex" style={{ justifyContent: 'space-between' }}>
-        <b style={{ fontSize: 15 }}>{l(`${res.length} ülke`, `${res.length} countries`, `${res.length} Länder`, `${res.length} países`, `${res.length} стран`)}</b>
-        <span className="vz-muted" style={{ fontSize: 13 }}>{l('Karta dokun, ülke sayfası açılsın', 'Tap a card to open the country', 'Karte antippen für Details', 'Toca para ver el país', 'Нажмите, чтобы открыть')}</span>
+        <b style={{ fontSize: 15 }}>{l(`${res.length} ülke`, `${res.length} countries`, `${res.length} Länder`, `${res.length} países`, `${res.length} стран`, `${res.length} países`)}</b>
+        <span className="vz-muted" style={{ fontSize: 13 }}>{l('Karta dokun, ülke sayfası açılsın', 'Tap a card to open the country', 'Karte antippen für Details', 'Toca para ver el país', 'Нажмите, чтобы открыть', 'Toque para ver o país')}</span>
       </div>
       {res.length === 0 ? (
-        <Empty icon="filter" title={l('Bu filtrelerle ülke yok', 'No countries match', 'Keine Treffer', 'Sin resultados', 'Нет результатов')} text={l('Bir iki filtreyi kaldırıp yeniden dene.', 'Remove a filter or two and try again.', 'Filter lockern und erneut versuchen.', 'Quita algún filtro.', 'Уберите фильтры.')} />
+        <Empty icon="filter" title={l('Bu filtrelerle ülke yok', 'No countries match', 'Keine Treffer', 'Sin resultados', 'Нет результатов', 'Nenhum resultado')} text={l('Bir iki filtreyi kaldırıp yeniden dene.', 'Remove a filter or two and try again.', 'Filter lockern und erneut versuchen.', 'Quita algún filtro.', 'Уберите фильтры.', 'Remova algum filtro.')} />
       ) : (
         <div className="vz-cgrid">
           {res.slice(0, limit).map((it) => (
@@ -105,7 +105,7 @@ export const WhereView: React.FC<{ passport: string; onOpenCountry: (c: string) 
       )}
       {res.length > limit && (
         <Btn variant="ghost" block onClick={() => setLimit((n) => n + 24)}>
-          {l(`${res.length - limit} ülke daha göster`, `Show ${res.length - limit} more`, `${res.length - limit} weitere`, `Ver ${res.length - limit} más`, `Ещё ${res.length - limit}`)}
+          {l(`${res.length - limit} ülke daha göster`, `Show ${res.length - limit} more`, `${res.length - limit} weitere`, `Ver ${res.length - limit} más`, `Ещё ${res.length - limit}`, `Ver mais ${res.length - limit}`)}
         </Btn>
       )}
     </div>
@@ -144,40 +144,40 @@ export const CountriesView: React.FC<{ passport: string; initialQuery?: string; 
 
   return (
     <div className="vz-stack">
-      {view === 'list' && <SearchInput id="vz-countries-q" value={q} onChange={setQ} placeholder={l('Ülke adı yaz…', 'Type a country…', 'Land eingeben…', 'Escribe un país…', 'Введите страну…')} autoFocus={!!initialQuery} />}
+      {view === 'list' && <SearchInput id="vz-countries-q" value={q} onChange={setQ} placeholder={l('Ülke adı yaz…', 'Type a country…', 'Land eingeben…', 'Escribe un país…', 'Введите страну…', 'Digite um país…')} autoFocus={!!initialQuery} />}
       <div className="vz-row-flex" style={{ justifyContent: 'space-between', display: view === 'list' ? undefined : 'none' }}>
         <Segmented
-          label={l('Filtre', 'Filter', 'Filter', 'Filtro', 'Фильтр')}
+          label={l('Filtre', 'Filter', 'Filter', 'Filtro', 'Фильтр', 'Filtro')}
           value={mode}
           onChange={setMode}
           options={[
-            { id: 'all', label: l('Tümü', 'All', 'Alle', 'Todos', 'Все') },
-            { id: 'easy', label: l('Kolay giriş', 'Easy entry', 'Einfach', 'Fácil', 'Легко') },
-            { id: 'visa', label: l('Vize gerekli', 'Visa needed', 'Visum', 'Visado', 'Виза') }
+            { id: 'all', label: l('Tümü', 'All', 'Alle', 'Todos', 'Все', 'Todos') },
+            { id: 'easy', label: l('Kolay giriş', 'Easy entry', 'Einfach', 'Fácil', 'Легко', 'Fácil') },
+            { id: 'visa', label: l('Vize gerekli', 'Visa needed', 'Visum', 'Visado', 'Виза', 'Visto') }
           ]}
         />
-        <select className="vz-select" style={{ width: 'auto', minWidth: 170 }} value={region} onChange={(e) => setRegion(e.target.value)} aria-label={l('Bölge', 'Region', 'Region', 'Región', 'Регион')}>
-          <option value="">{l('Bütün bölgeler', 'All regions', 'Alle Regionen', 'Todas', 'Все регионы')}</option>
+        <select className="vz-select" style={{ width: 'auto', minWidth: 170 }} value={region} onChange={(e) => setRegion(e.target.value)} aria-label={l('Bölge', 'Region', 'Region', 'Región', 'Регион', 'Região')}>
+          <option value="">{l('Bütün bölgeler', 'All regions', 'Alle Regionen', 'Todas', 'Все регионы', 'Todas')}</option>
           {Object.keys(REGIONS).map((r) => (
             <option key={r} value={r}>{getRegionName(r, language)}</option>
           ))}
         </select>
       </div>
       <div className="vz-row-flex" style={{ justifyContent: 'space-between' }}>
-        <span className="vz-muted" style={{ fontSize: 13 }}>{l(`${res.length} ülke`, `${res.length} countries`, `${res.length} Länder`, `${res.length} países`, `${res.length} стран`)}</span>
+        <span className="vz-muted" style={{ fontSize: 13 }}>{l(`${res.length} ülke`, `${res.length} countries`, `${res.length} Länder`, `${res.length} países`, `${res.length} стран`, `${res.length} países`)}</span>
         <Segmented
-          label={l('Görünüm', 'View', 'Ansicht', 'Vista', 'Вид')}
+          label={l('Görünüm', 'View', 'Ansicht', 'Vista', 'Вид', 'Visualização')}
           value={view}
           onChange={setView}
           options={[
-            { id: 'list', label: l('Liste', 'List', 'Liste', 'Lista', 'Список') },
-            { id: 'map', label: l('Harita', 'Map', 'Karte', 'Mapa', 'Карта') }
+            { id: 'list', label: l('Liste', 'List', 'Liste', 'Lista', 'Список', 'Lista') },
+            { id: 'map', label: l('Harita', 'Map', 'Karte', 'Mapa', 'Карта', 'Mapa') }
           ]}
         />
       </div>
       {view === 'map' && <VisaWorldMap passport={passport} onOpenCountry={onOpenCountry} height={460} />}
       {view === 'map' ? null : res.length === 0 ? (
-        <Empty icon="search" title={l('Ülke bulunamadı', 'No country found', 'Kein Land gefunden', 'No encontrado', 'Не найдено')} />
+        <Empty icon="search" title={l('Ülke bulunamadı', 'No country found', 'Kein Land gefunden', 'No encontrado', 'Не найдено', 'Não encontrado')} />
       ) : (
         <List>
           {res.map((c) => {
@@ -188,7 +188,7 @@ export const CountriesView: React.FC<{ passport: string; initialQuery?: string; 
                 key={c}
                 lead={<Flag code={c} />}
                 title={getCountryName(c, language)}
-                sub={[getRegionName(countryToRegion[c] || '', language), GEO_DATA[c]?.capital && capitalName(c, language, GEO_DATA[c].capital), d ? l(`${d} gün`, `${d} days`, `${d} Tage`, `${d} días`, `${d} дн.`) : ''].filter(Boolean).join(' · ')}
+                sub={[getRegionName(countryToRegion[c] || '', language), GEO_DATA[c]?.capital && capitalName(c, language, GEO_DATA[c].capital), d ? l(`${d} gün`, `${d} days`, `${d} Tage`, `${d} días`, `${d} дн.`, `${d} dias`) : ''].filter(Boolean).join(' · ')}
                 right={<VisaBadge item={it} />}
                 onClick={() => onOpenCountry(c)}
               />
@@ -217,36 +217,36 @@ export const CompareView: React.FC<{ passportA: string; passportB: string; onOpe
   return (
     <div className="vz-stack">
       <div className="vz-vs">
-        <Field label={l('1. pasaport', 'Passport 1', 'Pass 1', 'Pasaporte 1', 'Паспорт 1')} htmlFor="vz-cmp-a">
+        <Field label={l('1. pasaport', 'Passport 1', 'Pass 1', 'Pasaporte 1', 'Паспорт 1', 'Passaporte 1')} htmlFor="vz-cmp-a">
           <select id="vz-cmp-a" className="vz-select" value={a} onChange={(e) => setA(e.target.value)}>
             {opts.map((o) => <option key={o.c} value={o.c}>{o.n}</option>)}
           </select>
         </Field>
         <span className="vz-vs-mid">VS</span>
-        <Field label={l('2. pasaport', 'Passport 2', 'Pass 2', 'Pasaporte 2', 'Паспорт 2')} htmlFor="vz-cmp-b">
+        <Field label={l('2. pasaport', 'Passport 2', 'Pass 2', 'Pasaporte 2', 'Паспорт 2', 'Passaporte 2')} htmlFor="vz-cmp-b">
           <select id="vz-cmp-b" className="vz-select" value={b} onChange={(e) => setB(e.target.value)}>
             {opts.map((o) => <option key={o.c} value={o.c}>{o.n}</option>)}
           </select>
         </Field>
       </div>
       <div className="vz-stats">
-        <Stat value={cmp.scoreA} label={l(`${nA}: kolay giriş`, `${nA}: easy entry`, `${nA}: einfach`, `${nA}: fácil`, `${nA}: легко`)} icon="passport" />
-        <Stat value={cmp.scoreB} label={l(`${nB}: kolay giriş`, `${nB}: easy entry`, `${nB}: einfach`, `${nB}: fácil`, `${nB}: легко`)} icon="passport" />
-        <Stat value={cmp.combinedFreedomScore} label={l('İkisi birlikte', 'Both together', 'Beide zusammen', 'Ambos juntos', 'Вместе')} icon="star" tone="ok" />
+        <Stat value={cmp.scoreA} label={l(`${nA}: kolay giriş`, `${nA}: easy entry`, `${nA}: einfach`, `${nA}: fácil`, `${nA}: легко`, `${nA}: fácil`)} icon="passport" />
+        <Stat value={cmp.scoreB} label={l(`${nB}: kolay giriş`, `${nB}: easy entry`, `${nB}: einfach`, `${nB}: fácil`, `${nB}: легко`, `${nB}: fácil`)} icon="passport" />
+        <Stat value={cmp.combinedFreedomScore} label={l('İkisi birlikte', 'Both together', 'Beide zusammen', 'Ambos juntos', 'Вместе', 'Os dois juntos')} icon="star" tone="ok" />
       </div>
       <Segmented
-        label={l('Liste', 'List', 'Liste', 'Lista', 'Список')}
+        label={l('Liste', 'List', 'Liste', 'Lista', 'Список', 'Lista')}
         value={view}
         onChange={setView}
         options={[
-          { id: 'betterB', label: l(`${nB} daha iyi (${cmp.betterB.length})`, `${nB} better (${cmp.betterB.length})`, `${nB} besser (${cmp.betterB.length})`, `${nB} mejor (${cmp.betterB.length})`, `${nB} лучше (${cmp.betterB.length})`) },
-          { id: 'betterA', label: l(`${nA} daha iyi (${cmp.betterA.length})`, `${nA} better (${cmp.betterA.length})`, `${nA} besser (${cmp.betterA.length})`, `${nA} mejor (${cmp.betterA.length})`, `${nA} лучше (${cmp.betterA.length})`) },
-          { id: 'both', label: l(`Eşit (${cmp.equalEasiness.length})`, `Equal (${cmp.equalEasiness.length})`, `Gleich (${cmp.equalEasiness.length})`, `Igual (${cmp.equalEasiness.length})`, `Равно (${cmp.equalEasiness.length})`) },
-          { id: 'none', label: l(`İkisi de vize (${cmp.bothVisaRequired.length})`, `Both need visa (${cmp.bothVisaRequired.length})`, `Beide Visum (${cmp.bothVisaRequired.length})`, `Ambos visado (${cmp.bothVisaRequired.length})`, `Обоим виза (${cmp.bothVisaRequired.length})`) }
+          { id: 'betterB', label: l(`${nB} daha iyi (${cmp.betterB.length})`, `${nB} better (${cmp.betterB.length})`, `${nB} besser (${cmp.betterB.length})`, `${nB} mejor (${cmp.betterB.length})`, `${nB} лучше (${cmp.betterB.length})`, `${nB} melhor (${cmp.betterB.length})`) },
+          { id: 'betterA', label: l(`${nA} daha iyi (${cmp.betterA.length})`, `${nA} better (${cmp.betterA.length})`, `${nA} besser (${cmp.betterA.length})`, `${nA} mejor (${cmp.betterA.length})`, `${nA} лучше (${cmp.betterA.length})`, `${nA} melhor (${cmp.betterA.length})`) },
+          { id: 'both', label: l(`Eşit (${cmp.equalEasiness.length})`, `Equal (${cmp.equalEasiness.length})`, `Gleich (${cmp.equalEasiness.length})`, `Igual (${cmp.equalEasiness.length})`, `Равно (${cmp.equalEasiness.length})`, `Igual (${cmp.equalEasiness.length})`) },
+          { id: 'none', label: l(`İkisi de vize (${cmp.bothVisaRequired.length})`, `Both need visa (${cmp.bothVisaRequired.length})`, `Beide Visum (${cmp.bothVisaRequired.length})`, `Ambos visado (${cmp.bothVisaRequired.length})`, `Обоим виза (${cmp.bothVisaRequired.length})`, `Ambos com visto (${cmp.bothVisaRequired.length})`) }
         ]}
       />
       {list.length === 0 ? (
-        <Empty icon="scale" title={l('Bu grupta ülke yok', 'No countries here', 'Keine Länder', 'Sin países', 'Нет стран')} />
+        <Empty icon="scale" title={l('Bu grupta ülke yok', 'No countries here', 'Keine Länder', 'Sin países', 'Нет стран', 'Nenhum país')} />
       ) : (
         <List>
           {list
@@ -295,12 +295,12 @@ export const PopularView: React.FC<{ passport: string; onOpenCountry: (c: string
     evisa: pick(Array.from(items.values()).filter((it) => it.cat === 'evisa' || it.cat === 'eta').map((it) => it.c)).slice(0, 12)
   };
   const defs: { k: PopKey; label: string }[] = [
-    { k: 'free', label: l('Vizesiz', 'Visa-free', 'Visumfrei', 'Sin visado', 'Без визы') },
-    { k: 'id', label: l('Kimlikle', 'With ID', 'Mit Ausweis', 'Con DNI', 'По ID') },
+    { k: 'free', label: l('Vizesiz', 'Visa-free', 'Visumfrei', 'Sin visado', 'Без визы', 'Sem visto') },
+    { k: 'id', label: l('Kimlikle', 'With ID', 'Mit Ausweis', 'Con DNI', 'По ID', 'Com RG') },
     { k: 'schengen', label: 'Schengen' },
-    { k: 'metro', label: l('Metropoller', 'Big cities', 'Metropolen', 'Metrópolis', 'Мегаполисы') },
-    { k: 'nomad', label: l('Göçebe', 'Nomad', 'Nomaden', 'Nómada', 'Кочевники') },
-    { k: 'evisa', label: l('E-vize', 'eVisa', 'eVisum', 'eVisa', 'eVisa') }
+    { k: 'metro', label: l('Metropoller', 'Big cities', 'Metropolen', 'Metrópolis', 'Мегаполисы', 'Metrópoles') },
+    { k: 'nomad', label: l('Göçebe', 'Nomad', 'Nomaden', 'Nómada', 'Кочевники', 'Nômade') },
+    { k: 'evisa', label: l('E-vize', 'eVisa', 'eVisum', 'eVisa', 'eVisa', 'e-Visa') }
   ];
   const list = groups[k];
   return (
@@ -311,7 +311,7 @@ export const PopularView: React.FC<{ passport: string; onOpenCountry: (c: string
         ))}
       </Chips>
       {list.length === 0 ? (
-        <Empty icon="star" title={l('Bu pasaport için bu grupta ülke yok', 'Nothing in this group for your passport', 'Für deinen Pass leer', 'Vacío para tu pasaporte', 'Пусто для вашего паспорта')} />
+        <Empty icon="star" title={l('Bu pasaport için bu grupta ülke yok', 'Nothing in this group for your passport', 'Für deinen Pass leer', 'Vacío para tu pasaporte', 'Пусто для вашего паспорта', 'Vazio para o seu passaporte')} />
       ) : (
         <div className="vz-cgrid">
           {list.map((c) => (
@@ -333,21 +333,21 @@ export const ChangesView: React.FC<{ passport: string; onOpenAudit: () => void; 
     <div className="vz-stack">
       <div className="vz-row-flex" style={{ justifyContent: 'space-between' }}>
         <Segmented
-          label={l('Kapsam', 'Scope', 'Umfang', 'Alcance', 'Охват')}
+          label={l('Kapsam', 'Scope', 'Umfang', 'Alcance', 'Охват', 'Abrangência')}
           value={mine ? 'mine' : 'all'}
           onChange={(v) => setMine(v === 'mine')}
           options={[
-            { id: 'mine', label: l('Pasaportumu etkileyen', 'Affects my passport', 'Mein Pass', 'Mi pasaporte', 'Мой паспорт') },
-            { id: 'all', label: l('Hepsi', 'All', 'Alle', 'Todos', 'Все') }
+            { id: 'mine', label: l('Pasaportumu etkileyen', 'Affects my passport', 'Mein Pass', 'Mi pasaporte', 'Мой паспорт', 'Meu passaporte') },
+            { id: 'all', label: l('Hepsi', 'All', 'Alle', 'Todos', 'Все', 'Todos') }
           ]}
         />
         <div className="vz-actions">
-          <Btn variant="soft" small icon="shield" onClick={onOpenAudit}>{l('Doğrulama masası', 'Verification desk', 'Prüfpult', 'Verificación', 'Проверка')}</Btn>
-          <Btn variant="ghost" small icon="flag" onClick={onReport}>{l('Hata bildir', 'Report an error', 'Fehler melden', 'Reportar', 'Сообщить')}</Btn>
+          <Btn variant="soft" small icon="shield" onClick={onOpenAudit}>{l('Doğrulama masası', 'Verification desk', 'Prüfpult', 'Verificación', 'Проверка', 'Verificação')}</Btn>
+          <Btn variant="ghost" small icon="flag" onClick={onReport}>{l('Hata bildir', 'Report an error', 'Fehler melden', 'Reportar', 'Сообщить', 'Reportar')}</Btn>
         </div>
       </div>
       {list.length === 0 ? (
-        <Empty icon="bell" title={l('Pasaportunu etkileyen yeni değişiklik yok', 'No new changes for your passport', 'Keine Änderungen für deinen Pass', 'Sin cambios para tu pasaporte', 'Нет изменений')} />
+        <Empty icon="bell" title={l('Pasaportunu etkileyen yeni değişiklik yok', 'No new changes for your passport', 'Keine Änderungen für deinen Pass', 'Sin cambios para tu pasaporte', 'Нет изменений', 'Sem mudanças para o seu passaporte')} />
       ) : (
         <div className="vz-grid two">
           {list.map((a) => (
@@ -360,10 +360,10 @@ export const ChangesView: React.FC<{ passport: string; onOpenAudit: () => void; 
             >
               <p>{pick(a.summary, a.summaryEn, a.summaryDe)}</p>
               <div className="vz-actions">
-                <Btn variant="soft" small onClick={() => onOpenCountry(a.countryCode)}>{l('Ülke sayfası', 'Country page', 'Länderseite', 'Página del país', 'Страница страны')}</Btn>
+                <Btn variant="soft" small onClick={() => onOpenCountry(a.countryCode)}>{l('Ülke sayfası', 'Country page', 'Länderseite', 'Página del país', 'Страница страны', 'Página do país')}</Btn>
                 {a.officialUrl && <LinkBtn href={a.officialUrl} small variant="ghost">{pick(a.officialSource, a.officialSourceEn, a.officialSourceDe)}</LinkBtn>}
               </div>
-              <span className="vz-muted" style={{ fontSize: 12 }}>{l('Doğrulandı', 'Verified', 'Geprüft', 'Verificado', 'Проверено')}: {a.verifiedDate}</span>
+              <span className="vz-muted" style={{ fontSize: 12 }}>{l('Doğrulandı', 'Verified', 'Geprüft', 'Verificado', 'Проверено', 'Verificado')}: {a.verifiedDate}</span>
             </Card>
           ))}
         </div>
@@ -382,17 +382,17 @@ export const EasyTripView: React.FC<{ passport: string; destination: string; onD
   return (
     <div className="vz-stack">
       <div className="vz-row-flex">
-        <Field label={l('Nereye?', 'Where to?', 'Wohin?', '¿A dónde?', 'Куда?')} htmlFor="vz-easy-d">
+        <Field label={l('Nereye?', 'Where to?', 'Wohin?', '¿A dónde?', 'Куда?', 'Para onde?')} htmlFor="vz-easy-d">
           <select id="vz-easy-d" className="vz-select" value={destination} onChange={(e) => onDestination(e.target.value)} style={{ minWidth: 220 }}>
             {opts.map((o) => <option key={o.c} value={o.c}>{o.n}</option>)}
           </select>
         </Field>
         <Btn variant="soft" icon="globe" onClick={() => onOpenCountry(destination)} style={{ alignSelf: 'flex-end' }}>
-          {l('Ülke sayfası', 'Country page', 'Länderseite', 'Página del país', 'Страница страны')}
+          {l('Ülke sayfası', 'Country page', 'Länderseite', 'Página del país', 'Страница страны', 'Página do país')}
         </Btn>
       </div>
       {plan.hasRegionalRestrictionAlert && (
-        <div className="vz-note"><Icon name="alert" size={18} duo={false} />{l('Bu bölgede bazı uygulamalar kısıtlı olabilir; önerilerde yerel alternatifler öne çıkarıldı.', 'Some services may be restricted in this region; local alternatives are listed first.', 'Einige Dienste sind hier eingeschränkt; lokale Alternativen zuerst.', 'Algunos servicios están restringidos; se priorizan alternativas locales.', 'Некоторые сервисы ограничены; показаны местные альтернативы.')}</div>
+        <div className="vz-note"><Icon name="alert" size={18} duo={false} />{l('Bu bölgede bazı uygulamalar kısıtlı olabilir; önerilerde yerel alternatifler öne çıkarıldı.', 'Some services may be restricted in this region; local alternatives are listed first.', 'Einige Dienste sind hier eingeschränkt; lokale Alternativen zuerst.', 'Algunos servicios están restringidos; se priorizan alternativas locales.', 'Некоторые сервисы ограничены; показаны местные альтернативы.', 'Alguns serviços são restritos; damos prioridade a alternativas locais.')}</div>
       )}
       <div className="vz-steps">
         {plan.stages.map((s, i) => (
@@ -416,7 +416,7 @@ export const EasyTripView: React.FC<{ passport: string; destination: string; onD
           </div>
         ))}
       </div>
-      <p className="vz-muted" style={{ fontSize: 12 }}>{l('Bazı bağlantılar iş ortağı bağlantısıdır; senin için fiyat değişmez.', 'Some links are partner links; your price does not change.', 'Einige Links sind Partnerlinks.', 'Algunos enlaces son de socios.', 'Некоторые ссылки партнёрские.')}</p>
+      <p className="vz-muted" style={{ fontSize: 12 }}>{l('Bazı bağlantılar iş ortağı bağlantısıdır; senin için fiyat değişmez.', 'Some links are partner links; your price does not change.', 'Einige Links sind Partnerlinks.', 'Algunos enlaces son de socios.', 'Некоторые ссылки партнёрские.', 'Alguns links são de parceiros.')}</p>
     </div>
   );
 };
@@ -467,7 +467,7 @@ export const RadarView: React.FC<{ passport: string; destination: string; onOpen
   );
   return (
     <div className="vz-stack">
-      <SeaMap points={radarPoints} height={300} ariaLabel={l('Seçtiğin şehirler haritada', 'Your cities on the map', 'Deine Städte auf der Karte', 'Tus ciudades en el mapa', 'Ваши города на карте')} />
+      <SeaMap points={radarPoints} height={300} ariaLabel={l('Seçtiğin şehirler haritada', 'Your cities on the map', 'Deine Städte auf der Karte', 'Tus ciudades en el mapa', 'Ваши города на карте', 'Suas cidades no mapa')} />
       <List>
         {sel.map((h, i) => {
           const iso = h.iso || flagToIso(h.flag);
@@ -490,15 +490,15 @@ export const RadarView: React.FC<{ passport: string; destination: string; onOpen
               </span>
               <span className="vz-row-r">
                 <b style={{ fontSize: 20, fontVariantNumeric: 'tabular-nums' }}>{time}</b>
-                <button type="button" className="vz-iconbtn" style={{ width: 34, height: 34 }} onClick={() => save(cities.filter((x) => x !== h.city))} aria-label={l('Kaldır', 'Remove', 'Entfernen', 'Quitar', 'Убрать')}><Icon name="close" size={14} duo={false} /></button>
+                <button type="button" className="vz-iconbtn" style={{ width: 34, height: 34 }} onClick={() => save(cities.filter((x) => x !== h.city))} aria-label={l('Kaldır', 'Remove', 'Entfernen', 'Quitar', 'Убрать', 'Remover')}><Icon name="close" size={14} duo={false} /></button>
               </span>
             </div>
           );
         })}
       </List>
-      <Field label={l('Şehir ekle', 'Add a city', 'Stadt hinzufügen', 'Añadir ciudad', 'Добавить город')} htmlFor="vz-radar-add">
+      <Field label={l('Şehir ekle', 'Add a city', 'Stadt hinzufügen', 'Añadir ciudad', 'Добавить город', 'Adicionar cidade')} htmlFor="vz-radar-add">
         <select id="vz-radar-add" className="vz-select" value="" onChange={(e) => e.target.value && save([...cities, e.target.value])}>
-          <option value="">{l('Şehir seç…', 'Choose a city…', 'Stadt wählen…', 'Elige ciudad…', 'Выберите город…')}</option>
+          <option value="">{l('Şehir seç…', 'Choose a city…', 'Stadt wählen…', 'Elige ciudad…', 'Выберите город…', 'Escolha uma cidade…')}</option>
           {opts.map((o) => <option key={o.v + o.n} value={o.v}>{o.n}</option>)}
         </select>
       </Field>

@@ -1219,6 +1219,311 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "GBP (£ libra esterlina)",
+   "bestMonths": "Maio – setembro (dias longos, época mais seca); junho – agosto para a Escócia; dezembro é lindo pelo clima de Natal",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "No geral é seguro. Os problemas mais comuns são os roubos de celular por ladrões de patinete ou bicicleta em Londres, os batedores de carteira em lugares movimentados e as brigas em áreas de vida noturna.",
+    "commonScams": [
+     "Ladrões de patinete que arrancam o celular da mão dos pedestres",
+     "Grupos do jogo dos copinhos (“find the lady”) na ponte de Westminster",
+     "Motoristas de minicab sem licência que abordam passageiros na saída das baladas"
+    ],
+    "safeTravelTips": [
+     "Não ande pelo lado da rua olhando o celular; segure-o com as duas mãos.",
+     "Use só black cabs ou carros reservados por app.",
+     "A mão é inglesa: ao atravessar, olhe primeiro para a direita (siga os avisos pintados no chão)."
+    ],
+    "emergencyNumbers": {
+     "police": "999 (não urgente: 101)",
+     "ambulance": "999",
+     "general": "999 / 112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99% (4G/5G; áreas sem sinal nas Highlands escocesas)",
+    "costPerGbUsd": "~US$ 1 - 2",
+    "esimAvailability": "Excelente",
+    "bestCarriers": [
+     "EE",
+     "O2",
+     "Vodafone",
+     "Three"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Excelente (metrô de Londres e rede ferroviária nacional)",
+    "costLevel": "Caro",
+    "singleTicketUsd": "~3.90 $ (Londres, zona 1, por aproximação: 2,90 £); ônibus 1,75 £",
+    "dailyPassUsd": "~12 $ (teto diário zonas 1-2 ~8,90 £)",
+    "popularRideApps": [
+     "Citymapper",
+     "TfL Go",
+     "Uber",
+     "Bolt",
+     "Trainline"
+    ],
+    "taxiAdvice": "Use cartão bancário por aproximação ou o celular em vez do Oyster; os tetos diários e semanais são aplicados automaticamente. Comprar os trens intermunicipais com antecedência (“Advance”) economiza muito. Os black cabs são seguros, mas caros."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 65 - 95",
+    "dailyBudgetMidrangeUsd": "US$ 160 - 250",
+    "budgetMealUsd": "13 - 22 $ (comida de pub; “meal deal” de supermercado ~5 $)",
+    "coffeeUsd": "US$ 4 - 5,50",
+    "waterBottleUsd": "US$ 1,20 - 2",
+    "hostelDormUsd": "US$ 35 - 65",
+    "hotel3StarUsd": "130 - 230 $ (Londres; mais barato em outras cidades)",
+    "flightCostIndex": "Baixo (voo direto ~4 h)",
+    "flightTip": "Há voos diretos de Istambul, Ancara, Esmirna, Antália e Dalaman para Londres (Heathrow, Gatwick, Stansted, Luton) e Manchester, e também para Edimburgo."
+   }
+  },
+  "enc": {
+   "language": {
+    "phrases": [
+     {
+      "phrase": "Hiya / Hello",
+      "meaning": "Oi / Olá (informal / neutro)",
+      "translation": "Oi / Olá (informal / neutro)",
+      "pronunciation": "RÁI-ia / rê-LOU"
+     },
+     {
+      "phrase": "Cheers",
+      "meaning": "Valeu (coloquial) / Saúde",
+      "translation": "Valeu (coloquial) / Saúde",
+      "pronunciation": "tchírs"
+     },
+     {
+      "phrase": "Excuse me / Sorry",
+      "meaning": "Com licença / Desculpe",
+      "translation": "Com licença / Desculpe",
+      "pronunciation": "eks-KIÚZ mi / SÓ-ri"
+     },
+     {
+      "phrase": "How much is this?",
+      "meaning": "Quanto custa isto?",
+      "translation": "Quanto custa isto?",
+      "pronunciation": "ráu MÂTCH iz dis"
+     },
+     {
+      "phrase": "Could I have the bill, please?",
+      "meaning": "Pode trazer a conta, por favor?",
+      "translation": "Pode trazer a conta, por favor?",
+      "pronunciation": "kud ai rév dê BIL, pliiz"
+     }
+    ]
+   }
+  },
+  "itin": {
+   "routeName": "Reino Unido: Londres, Bath e Stonehenge, York e Edimburgo",
+   "routeSummary": "Um roteiro de 10 dias de trem que começa com o patrimônio real e os museus gratuitos de Londres e segue pelas termas romanas de Bath, pelas misteriosas pedras de Stonehenge, pelas muralhas medievais de York e, via Edimburgo, pelas Highlands escocesas.",
+   "totalDays": 10,
+   "idealDurationText": "Roteiro de 10 dias pela Inglaterra e Escócia",
+   "bestSeason": "Maio – setembro (junho – agosto para a Escócia)",
+   "transportMode": "Trens intermunicipais (tarifas Advance) + metrô de Londres + excursão às Highlands",
+   "paceLevel": "Equilibrado a intenso (inclui trechos longos de trem)",
+   "signatureGastronomy": {
+    "dishes": [
+     "Fish and chips",
+     "Sunday roast",
+     "Full English breakfast",
+     "Haggis (Escócia)"
+    ],
+    "drinks": [
+     "Chá inglês com leite",
+     "Cask ale (cerveja de barril)",
+     "Uísque escocês"
+    ],
+    "streetFoods": [
+     "Cornish pasty",
+     "Scones com clotted cream",
+     "Sticky toffee pudding"
+    ],
+    "diningAdvice": "Nos pubs, você pede e paga no balcão; não há serviço de mesa. Os restaurantes de Londres costumam incluir 12,5% de serviço, então não precisa dar gorjeta extra. O bacon e as linguiças do Full English são de porco."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Jaqueta impermeável e guarda-chuva",
+     "Adaptador tipo G (britânico de três pinos)",
+     "Cartão bancário por aproximação ou carteira digital no celular",
+     "Roupas em camadas (a Escócia é fresca e ventosa)"
+    ],
+    "safetyAndEtiquette": [
+     "Respeitar a fila é sagrado; nunca fure fila.",
+     "A mão é inglesa: ao atravessar, olhe primeiro para a direita.",
+     "Não ande com o celular na mão pelo lado da rua."
+    ]
+   },
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Londres (patrimônio real e museus de primeira)",
+     "recommendedDuration": "4 dias (bairros principais e museus)",
+     "durationBadge": "4 dias",
+     "highlights": [
+      "Palácio de Westminster, Big Ben e Abadia de Westminster",
+      "British Museum e National Gallery (grátis)",
+      "Torre de Londres e Tower Bridge",
+      "Borough Market e South Bank"
+     ],
+     "activities": [
+      "Assista à troca da guarda no Palácio de Buckingham e caminhe pelo St James’s Park até Westminster.",
+      "Veja a Pedra de Roseta no British Museum; a maioria dos grandes museus é gratuita.",
+      "Passeie pela South Bank, às margens do Tâmisa, e almoce no Borough Market."
+     ],
+     "foodAndDrinks": [
+      "Fish and chips (com purê de ervilha)",
+      "Sunday roast com Yorkshire pudding",
+      "Afternoon tea com scones e clotted cream"
+     ],
+     "criticalTips": [
+      "Compre online os ingressos da Torre de Londres e da Abadia de Westminster; as filas são longas.",
+      "Nas escadas rolantes do metrô, fique à direita; a esquerda é para quem anda."
+     ],
+     "mapsQuery": "Westminster, London, United Kingdom"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Bath e Stonehenge (termas romanas e pedras pré-históricas)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Termas romanas (Roman Baths)",
+      "Royal Crescent e arquitetura georgiana",
+      "Abadia de Bath",
+      "Stonehenge (UNESCO)"
+     ],
+     "activities": [
+      "Conheça as termas romanas de 2.000 anos, onde a água termal ainda corre para a piscina antiga.",
+      "Passeie diante das fachadas georgianas cor de mel do Royal Crescent e do The Circus.",
+      "Visite Stonehenge em uma excursão saindo de Bath ou de trem via Salisbury."
+     ],
+     "foodAndDrinks": [
+      "Sally Lunn bun (pão histórico de Bath)",
+      "Cornish pasty (pastel assado de carne)",
+      "Sidra de Somerset"
+     ],
+     "criticalTips": [
+      "Compre online ingressos com horário marcado para Stonehenge; só é possível caminhar entre as pedras em visitas especiais.",
+      "O trem Londres–Bath leva cerca de 1,5 hora; as tarifas “Advance” são bem mais baratas."
+     ],
+     "mapsQuery": "Roman Baths, Bath, United Kingdom"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: York (muralhas medievais e catedral)",
+     "recommendedDuration": "1-2 dias",
+     "durationBadge": "1 dia",
+     "highlights": [
+      "Catedral York Minster",
+      "Rua medieval The Shambles",
+      "Passeio pelas muralhas",
+      "Museu Nacional Ferroviário (grátis)"
+     ],
+     "activities": [
+      "Suba na torre da York Minster para ver a cidade do alto.",
+      "Percorra os cerca de 3 km de muralhas medievais que cercam a cidade.",
+      "Passeie entre as casas tortas de enxaimel de The Shambles."
+     ],
+     "foodAndDrinks": [
+      "Yorkshire pudding (com molho e assado)",
+      "Afternoon tea na Bettys",
+      "Queijo Wensleydale"
+     ],
+     "criticalTips": [
+      "The Shambles lota à tarde; vale ir bem cedo pela manhã.",
+      "Durante as missas, a visita à York Minster pode ser limitada; confira os horários."
+     ],
+     "mapsQuery": "York Minster, York, United Kingdom"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Edimburgo e as Highlands escocesas (castelo, lagos e montanhas)",
+     "recommendedDuration": "3 dias (com excursão às Highlands)",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Castelo de Edimburgo e Royal Mile",
+      "Arthur’s Seat",
+      "Lago Ness e Glencoe (bate e volta)",
+      "Palácio de Holyroodhouse"
+     ],
+     "activities": [
+      "Percorra a Royal Mile do Castelo de Edimburgo até o Palácio de Holyroodhouse.",
+      "Suba o Arthur’s Seat ao pôr do sol para ver a cidade e o mar.",
+      "Faça uma excursão de dia inteiro por Glencoe e pelo Lago Ness."
+     ],
+     "foodAndDrinks": [
+      "Haggis, neeps and tatties (prato nacional escocês com miúdos de cordeiro)",
+      "Uísque escocês single malt",
+      "Cranachan e shortbread"
+     ],
+     "criticalTips": [
+      "Durante o Fringe, em agosto, os preços da hospedagem disparam; reserve com meses de antecedência.",
+      "No verão há muitos mosquitinhos (midges) nas Highlands; leve repelente e capa de chuva."
+     ],
+     "mapsQuery": "Edinburgh Castle, Edinburgh, United Kingdom"
+    }
+   ]
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Tomadas tipo G, com três pinos retangulares (a maioria com interruptor); plugues turcos precisam de adaptador. Nos banheiros só há tomadas para barbeadores."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "A água da torneira é potável em todo o país; em restaurantes e pubs, você pode pedir “tap water” de graça.",
+    "vaccines": [
+     "Vacinas de rotina (tríplice viral, tétano)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "999"
+   },
+   "tipping": {
+    "custom": "Os restaurantes costumam incluir 10-12,5 % de “discretionary service charge”; se não incluírem, é comum deixar 10 %.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Nos pubs ninguém espera gorjeta; nos táxis, basta arredondar. A taxa de serviço é opcional, e você pode pedir para tirá-la."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Não há (sem restituição do IVA a turistas desde 1º de janeiro de 2021)",
+    "minSpend": "—",
+    "customsNote": "Na Grã-Bretanha, a restituição do IVA nas lojas foi extinta; só dá para comprar sem IVA se a loja enviar o produto direto para um endereço no exterior."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 1 - 2",
+    "topCarriers": [
+     "EE",
+     "O2",
+     "Vodafone",
+     "Three"
+    ],
+    "airportSimTrapWarning": "As máquinas e quiosques do aeroporto são caros; chips da giffgaff, Lebara ou Three/EE comprados em supermercados e lojas, ou uma eSIM, saem mais baratos. O roaming da UE não vale aqui."
+   },
+   "touristScams": [
+    {
+     "title": "Jogo dos copinhos na ponte de Westminster",
+     "desc": "Quem comanda o jogo dos copinhos na ponte e os espectadores que “ganham” são da mesma equipe, e há batedores de carteira no meio do público.",
+     "tip": "Nunca jogue e não fique no meio da aglomeração."
+    },
+    {
+     "title": "Minicabs sem licença",
+     "desc": "Os carros sem licença que procuram clientes na porta de baladas e aeroportos são caros e inseguros.",
+     "tip": "Use só black cabs ou carros reservados por app."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "GBP (£ британский фунт стерлингов)",

@@ -1515,6 +1515,385 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Dólar do Caribe Oriental (XCD) – atrelado ao dólar americano (US$ 1 ≈ 2,70 XCD); o USD é aceito em toda parte",
+   "plugType": "Tipo A, B, D, G (230V, 60Hz)",
+   "bestMonths": "Dezembro a abril (seco e mais fresco); de junho a novembro é temporada de furacões (maior risco de agosto a outubro)",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "As áreas turísticas costumam ser tranquilas, mas em alguns bairros de Basseterre há violência armada entre gangues locais. Tome cuidado em praias desertas e ao andar sozinho à noite.",
+    "commonScams": [
+     "Tarifas de táxi não combinadas e confusão entre XCD e USD",
+     "\"Guias\" e vendedores de passeios que abordam turistas no porto de cruzeiros",
+     "Cobranças inventadas por danos depois de alugar um jet ski"
+    ],
+    "safeTravelTips": [
+     "Combine a tarifa do táxi antes de entrar e confirme se é em USD ou XCD.",
+     "Não deixe objetos de valor sem vigilância na praia.",
+     "Na temporada de furacões, acompanhe os alertas e compre passagens flexíveis."
+    ],
+    "emergencyNumbers": {
+     "police": "911",
+     "ambulance": "911",
+     "general": "911"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Boa cobertura 4G/LTE nas duas ilhas; mais fraca no interior montanhoso",
+    "costPerGbUsd": "~US$ 3 - 7",
+    "esimAvailability": "Boa – os chips da Digicel e da FLOW são fáceis de conseguir; eSIMs internacionais também funcionam",
+    "bestCarriers": [
+     "Digicel",
+     "FLOW"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Médio – sem metrô; micro-ônibus particulares (placa verde \"H\"), táxis e a balsa Basseterre–Charlestown",
+    "costLevel": "Caro",
+    "singleTicketUsd": "US$ 1 - 1,50 (micro-ônibus, 2,50-4 XCD)",
+    "dailyPassUsd": "Balsa St. Kitts–Nevis, só ida ~US$ 10 - 12",
+    "popularRideApps": [
+     "Não há Uber nem Bolt",
+     "Tarifas fixas da associação de táxis",
+     "Aluguel de carro (licença local obrigatória)"
+    ],
+    "taxiAdvice": "Não há Uber; os táxis cobram tarifas oficiais fixas, normalmente em USD, mais caras à noite. Se alugar carro, lembre que a mão é inglesa (dirige-se pela esquerda) e que você precisa de uma licença local temporária."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 80 - 120",
+    "dailyBudgetMidrangeUsd": "US$ 180 - 300",
+    "budgetMealUsd": "US$ 12 - 20",
+    "coffeeUsd": "US$ 3 - 5",
+    "waterBottleUsd": "A água da torneira é tratada e geralmente potável; na dúvida ou depois de tempestades, prefira água mineral.",
+    "hostelDormUsd": "US$ 60 - 100",
+    "hotel3StarUsd": "US$ 150 - 280",
+    "flightCostIndex": "Alto (via EUA ou Europa)",
+    "flightTip": "Da Turquia, normalmente se voa via EUA (Miami, Nova York, Atlanta) ou Londres–Antígua até o aeroporto Robert L. Bradshaw (SKB). Nevis fica a 45 minutos de balsa de Basseterre."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Sempre diga \"Good morning/afternoon\" ao entrar numa loja ou antes de perguntar algo; falar sem cumprimentar é considerado falta de educação.",
+     "Não ande pela cidade, igrejas ou bancos em roupa de banho.",
+     "Peça permissão antes de fotografar os moradores."
+    ],
+    "festivals": [
+     "Carnaval Sugar Mas (fim de dezembro a 2 de janeiro)",
+     "St. Kitts Music Festival (fim de junho)",
+     "Nevis Culturama (fim de julho a início de agosto)"
+    ],
+    "lifestyle": "Ritmo caribenho tranquilo: \"liming\" na praia, igreja e almoço em família aos domingos, e soca e reggae nos bares da \"Strip\" de Frigate Bay à noite."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Fortaleza de Brimstone Hill (UNESCO)",
+     "St. Kitts Scenic Railway (antigo trem do açúcar)",
+     "Basseterre – The Circus e Independence Square",
+     "Romney Manor e Caribelle Batik",
+     "Trilha até o monte Liamuiga",
+     "Nevis – Charlestown, Museu Alexander Hamilton e Pinney's Beach"
+    ],
+    "bestSeasons": "Dezembro a abril (seco e mais fresco); de junho a novembro é temporada de furacões (maior risco de agosto a outubro)",
+    "travelStyleTip": "Combine as duas ilhas: St. Kitts para história e atividades, Nevis para sossego. Basseterre fica lotada nos dias de cruzeiro."
+   },
+   "religion": {
+    "primaryReligions": "Maioria cristã (mais de ~85 %): anglicanos (~17 %), metodistas (~16 %), pentecostais, morávios, católicos (~6 %) e outros; pequena comunidade rastafári.",
+    "respectNorms": "Vista-se adequadamente na igreja; os domingos são tranquilos e muitas lojas fecham.",
+    "sacredSites": [
+     "Igreja anglicana de St. George (Basseterre)",
+     "Co-catedral da Imaculada Conceição (Basseterre)",
+     "Igreja anglicana de St. Thomas (Nevis, 1643)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Inglês; no dia a dia, crioulo kittitiano (de base inglesa).",
+    "englishProficiency": "Excelente – o inglês é a língua oficial.",
+    "phrases": [
+     {
+      "phrase": "Good mornin'",
+      "meaning": "Bom dia (a regra de ouro do cumprimento)",
+      "translation": "Bom dia (a regra de ouro do cumprimento)",
+      "pronunciation": "good MOR-nin"
+     },
+     {
+      "phrase": "Wha' you sayin'?",
+      "meaning": "E aí? / Como vai?",
+      "translation": "E aí? / Como vai?",
+      "pronunciation": "wah yuh SAY-in"
+     },
+     {
+      "phrase": "Liming",
+      "meaning": "Passar o tempo com os amigos, relaxar",
+      "translation": "Passar o tempo com os amigos, relaxar",
+      "pronunciation": "LIME-ing"
+     },
+     {
+      "phrase": "Jump-up",
+      "meaning": "Festa de rua, dança de carnaval",
+      "translation": "Festa de rua, dança de carnaval",
+      "pronunciation": "JUMP-up"
+     },
+     {
+      "phrase": "Soon come",
+      "meaning": "Já vou (sem pressa)",
+      "translation": "Já vou (sem pressa)",
+      "pronunciation": "soon KUM"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Os ingleses fundaram em 1623 sua primeira colônia no Caribe em St. Kitts – \"Liamuiga\" para os kalinago – e a dividiram por um tempo com a França. As plantações de açúcar e a escravidão marcaram a economia; a abolição veio em 1834 e a independência, em 19 de setembro de 1983. A indústria açucareira fechou em 2005 e o turismo tomou o seu lugar.",
+    "milestones": [
+     "1623: Assentamento inglês de Thomas Warner",
+     "1782: Cerco de Brimstone Hill",
+     "19 de setembro de 1983: Independência",
+     "2005: Fechamento da indústria açucareira"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Bacalhau ensopado com banana-da-terra apimentada, bolinhos de coco e fruta-pão (prato nacional)",
+     "Goat water (ensopado de cabra)",
+     "Bolinhos fritos de concha (conch fritters)"
+    ],
+    "traditionalDrinks": [
+     "CSR (Cane Spirit Rothschild)",
+     "Cerveja Carib (produzida na ilha)",
+     "Sorrel (bebida de hibisco típica do Natal)"
+    ],
+    "streetFoodAndDesserts": [
+     "Johnny cakes (massa frita)",
+     "Torta de coco",
+     "Sugar cake (doce de coco)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Alexander Hamilton (um dos pais fundadores dos EUA, nascido em Nevis)",
+     "Kim Collins (campeão mundial dos 100 m em 2003)",
+     "Robert L. Bradshaw (primeiro premiê, \"pai da nação\")"
+    ],
+    "strongSectors": [
+     "Turismo e cruzeiros",
+     "Programa de cidadania por investimento",
+     "Faculdades de medicina/veterinária e indústria leve"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Cartões são amplamente aceitos em hotéis e restaurantes; o USD vale em toda parte, mas o troco vem em XCD. Leve dinheiro trocado para micro-ônibus e mercados.",
+    "tippingCulture": "A conta costuma incluir 10 % de serviço; se não incluir, espera-se de 10 a 15 %.",
+    "economicPillars": "Turismo, cidadania por investimento, serviços financeiros e educacionais."
+   }
+  },
+  "itin": {
+   "routeName": "Roteiro das duas ilhas: Basseterre, Brimstone Hill, península sudeste e Nevis",
+   "routeSummary": "Roteiro de 7 dias que sai da capital, Basseterre, vai até Brimstone Hill, na costa oeste, segue para as praias da península sudeste e termina com uma travessia de balsa até a tranquila Nevis.",
+   "totalDays": 7,
+   "idealDurationText": "Roteiro de 7 dias por duas ilhas",
+   "bestSeason": "Dezembro a abril (seco e mais fresco); de junho a novembro é temporada de furacões (maior risco de agosto a outubro)",
+   "transportMode": "Carro alugado ou táxi + balsa Basseterre–Charlestown",
+   "paceLevel": "Equilibrado (história, praia e natureza)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Basseterre (capital)",
+     "recommendedDuration": "1 dia",
+     "durationBadge": "1 dia",
+     "highlights": [
+      "Torre do relógio The Circus",
+      "Independence Square",
+      "Port Zante e o Museu Nacional"
+     ],
+     "activities": [
+      "Passeie pelas ruas coloniais.",
+      "Visite o mercado no sábado de manhã.",
+      "Coma com vista para o porto em Port Zante."
+     ],
+     "foodAndDrinks": [
+      "Bacalhau ensopado",
+      "Sorrel fresco"
+     ],
+     "criticalTips": [
+      "O centro fica lotado nos dias de cruzeiro.",
+      "Combine a tarifa do táxi antes de entrar."
+     ],
+     "mapsQuery": "Basseterre, St Kitts"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Costa oeste – Romney Manor e Brimstone Hill",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Fortaleza de Brimstone Hill (UNESCO)",
+      "Jardins e ateliê de batik de Romney Manor",
+      "Trilha até a cratera do monte Liamuiga"
+     ],
+     "activities": [
+      "Admire as ilhas vizinhas do alto das muralhas.",
+      "Dê a volta na ilha no Scenic Railway.",
+      "Suba com guia pela floresta até a cratera."
+     ],
+     "foodAndDrinks": [
+      "Goat water",
+      "Cerveja Carib"
+     ],
+     "criticalTips": [
+      "A trilha do Liamuiga é longa e enlameada; guia e bons calçados são indispensáveis.",
+      "A fortaleza fica exposta ao sol; leve chapéu e água."
+     ],
+     "mapsQuery": "Brimstone Hill Fortress, St Kitts"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Península sudeste (Frigate Bay e Cockleshell)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Frigate Bay e \"The Strip\"",
+      "South Friar's Bay",
+      "Vista de Nevis a partir de Cockleshell Bay"
+     ],
+     "activities": [
+      "Faça snorkel ou experimente o stand up paddle.",
+      "Veja dois mares ao mesmo tempo do mirante de Timothy Hill.",
+      "Curta música ao vivo nos bares da Strip."
+     ],
+     "foodAndDrinks": [
+      "Bolinhos fritos de concha",
+      "Um coquetel de CSR"
+     ],
+     "criticalTips": [
+      "Os macacos-verdes podem roubar sua comida.",
+      "Não deixe objetos de valor em praias desertas."
+     ],
+     "mapsQuery": "Frigate Bay, St Kitts"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Nevis (Charlestown e Pinney's Beach)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Charlestown e o Museu Alexander Hamilton",
+      "Pinney's Beach",
+      "Águas termais do Bath Hotel e Nevis Peak"
+     ],
+     "activities": [
+      "Atravesse de balsa até Nevis.",
+      "Almoce numa antiga pousada de fazenda colonial.",
+      "Suba o Nevis Peak com guia (puxado)."
+     ],
+     "foodAndDrinks": [
+      "Torta de coco",
+      "Peixe fresco grelhado"
+     ],
+     "criticalTips": [
+      "Confira o horário da última balsa.",
+      "A subida do Nevis Peak é íngreme e escorregadia; só com guia."
+     ],
+     "mapsQuery": "Charlestown, Nevis"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Bacalhau ensopado com banana-da-terra apimentada, bolinhos de coco e fruta-pão (prato nacional)",
+     "Goat water (ensopado de cabra)",
+     "Bolinhos fritos de concha (conch fritters)"
+    ],
+    "drinks": [
+     "CSR (Cane Spirit Rothschild)",
+     "Cerveja Carib (produzida na ilha)",
+     "Sorrel (bebida de hibisco típica do Natal)"
+    ],
+    "streetFoods": [
+     "Johnny cakes (massa frita)",
+     "Torta de coco",
+     "Sugar cake (doce de coco)"
+    ],
+    "diningAdvice": "Comer fora é caro; os restaurantes populares e os churrascos de praia de sábado saem mais em conta. Veja se a conta já inclui o serviço."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptador de tomada tipo A/G",
+     "Protetor solar e chapéu",
+     "Equipamento de snorkel",
+     "Calçado de trilha"
+    ],
+    "safetyAndEtiquette": [
+     "Nunca comece uma conversa sem cumprimentar.",
+     "Não ande pela cidade em roupa de banho."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "A",
+     "B",
+     "D",
+     "G"
+    ],
+    "voltage": "230V",
+    "frequency": "60Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Sistema misto: tomadas americanas de pinos chatos (A/B) e britânicas de três pinos (G); 230V (110V em alguns hotéis). Plugues turcos precisam de adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "A água da torneira é tratada e geralmente potável; na dúvida ou depois de tempestades, prefira água mineral.",
+    "vaccines": [
+     "Vacinas de rotina",
+     "Hepatite A",
+     "Certificado de febre amarela se você chegar de um país de risco"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "911"
+   },
+   "tipping": {
+    "custom": "Se a conta não incluir os 10 % de serviço, espera-se de 10 a 15 %.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Também é comum dar uma pequena gorjeta a taxistas e guias."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Sem restituição de IVA para turistas",
+    "minSpend": "—",
+    "customsNote": "São Cristóvão e Névis não devolve o IVA a turistas; as lojas duty-free de Port Zante vendem sem impostos mediante apresentação do documento do cruzeiro ou do voo."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 3,00 - 7,00",
+    "topCarriers": [
+     "Digicel",
+     "FLOW"
+    ],
+    "airportSimTrapWarning": "Há poucos pontos de venda no aeroporto; uma loja Digicel ou FLOW em Basseterre, ou uma eSIM instalada antes da viagem, é mais prático."
+   },
+   "touristScams": [
+    {
+     "title": "Truque da moeda no táxi",
+     "desc": "Cobrar a tarifa em USD em vez de XCD só no fim da corrida.",
+     "tip": "Confirme preço e moeda antes de entrar."
+    },
+    {
+     "title": "Guias não solicitados no porto",
+     "desc": "Passeios caros e improvisados na saída do cruzeiro.",
+     "tip": "Reserve no balcão oficial ou com antecedência."
+    },
+    {
+     "title": "Cobrança por danos no jet ski",
+     "desc": "Culpam você por arranhões que já existiam.",
+     "tip": "Fotografe o jet ski antes de alugar."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Восточнокарибский доллар (XCD) – привязан к доллару США (1 $ ≈ 2,70 XCD); USD принимают везде",

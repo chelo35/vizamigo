@@ -12,11 +12,11 @@ const LegalInfoModal = lazy(() => import('../components/LegalInfoModal').then((m
 export function useInfoGroups() {
   const { l, language } = useI18n();
   return [
-    { id: 'guides', icon: 'passport', label: l('Güncel rehberler', 'Travel rules 2026', 'Reiseregeln 2026', 'Normas de viaje 2026', 'Правила въезда 2026'), items: [wtgIdFor(new Date().getMonth() + 1), ...guideIdsFor(language).filter((g) => !isWtgId(g))].map((g) => [g, getGuide(g, language).short]) },
-    { id: 'legal', icon: 'shield', label: l('Yasal', 'Legal', 'Rechtliches', 'Legal', 'Правовое'), items: [['terms', l('Kullanım koşulları', 'Terms', 'Nutzungsbedingungen', 'Términos', 'Условия')], ['privacy', l('Gizlilik', 'Privacy', 'Datenschutz', 'Privacidad', 'Конфиденциальность')], ['disclaimer', l('Sorumluluk reddi', 'Disclaimer', 'Haftung', 'Descargo', 'Отказ')], ['kvkk_gdpr', 'KVKK & GDPR'], ['standards', l('Kaynaklar', 'Sources', 'Quellen', 'Fuentes', 'Источники')], ['attributions', l('Görseller', 'Photos', 'Bilder', 'Fotos', 'Фото')]] },
-    { id: 'help', icon: 'sos', label: l('Destek', 'Support', 'Hilfe', 'Ayuda', 'Помощь'), items: [['appeals', l('Vize reddi itirazı', 'Visa appeals', 'Widerspruch', 'Apelación', 'Апелляция')], ['passport_lost', l('Pasaport kaybı', 'Lost passport', 'Passverlust', 'Pasaporte perdido', 'Утеря')], ['crisis', l('Kriz masası', 'Crisis desk', 'Krisenstab', 'Crisis', 'Кризис')], ['transit', l('Transit', 'Transit', 'Transit', 'Tránsito', 'Транзит')]] },
-    { id: 'partners', icon: 'people', label: l('İş ortakları', 'Partners', 'Partner', 'Socios', 'Партнёры'), items: [['partners', l('Acenteler', 'Agencies', 'Agenturen', 'Agencias', 'Агентства')], ['airlines', l('Havayolları', 'Airlines', 'Airlines', 'Aerolíneas', 'Авиа')], ['insurance', l('Sigorta', 'Insurance', 'Versicherung', 'Seguro', 'Страховка')], ['community', l('Topluluk', 'Community', 'Community', 'Comunidad', 'Сообщество')], ['api', l('Kurumsal API', 'Business API', 'Business-API', 'API empresas', 'API')]] },
-    { id: 'about', icon: 'info', label: l('Hakkımızda', 'About', 'Über uns', 'Nosotros', 'О нас'), items: [['mission', l('Hakkımızda', 'About Vizamigo', 'Über Vizamigo', 'Sobre Vizamigo', 'О Vizamigo')], ['standards', l('Bilgileri nasıl doğruluyoruz', 'How we verify', 'So prüfen wir', 'Cómo verificamos', 'Как мы проверяем')], ['sustainability', l('Sürdürülebilirlik', 'Sustainability', 'Nachhaltigkeit', 'Sostenibilidad', 'Экология')], ['careers', l('Kariyer', 'Careers', 'Karriere', 'Empleo', 'Карьера')], ['press', l('İletişim', 'Contact', 'Kontakt', 'Contacto', 'Контакты')], ['backup', l('Veri yedeği', 'Backup', 'Backup', 'Copia', 'Копия')]] }
+    { id: 'guides', icon: 'passport', label: l('Güncel rehberler', 'Travel rules 2026', 'Reiseregeln 2026', 'Normas de viaje 2026', 'Правила въезда 2026', 'Regras de viagem 2026'), items: [wtgIdFor(new Date().getMonth() + 1), ...guideIdsFor(language).filter((g) => !isWtgId(g))].map((g) => [g, getGuide(g, language).short]) },
+    { id: 'legal', icon: 'shield', label: l('Yasal', 'Legal', 'Rechtliches', 'Legal', 'Правовое', 'Jurídico'), items: [['terms', l('Kullanım koşulları', 'Terms', 'Nutzungsbedingungen', 'Términos', 'Условия', 'Termos')], ['privacy', l('Gizlilik', 'Privacy', 'Datenschutz', 'Privacidad', 'Конфиденциальность', 'Privacidade')], ['disclaimer', l('Sorumluluk reddi', 'Disclaimer', 'Haftung', 'Descargo', 'Отказ', 'Isenção')], ['kvkk_gdpr', 'KVKK & GDPR'], ['standards', l('Kaynaklar', 'Sources', 'Quellen', 'Fuentes', 'Источники', 'Fontes')], ['attributions', l('Görseller', 'Photos', 'Bilder', 'Fotos', 'Фото', 'Fotos')]] },
+    { id: 'help', icon: 'sos', label: l('Destek', 'Support', 'Hilfe', 'Ayuda', 'Помощь', 'Ajuda'), items: [['appeals', l('Vize reddi itirazı', 'Visa appeals', 'Widerspruch', 'Apelación', 'Апелляция', 'Recurso')], ['passport_lost', l('Pasaport kaybı', 'Lost passport', 'Passverlust', 'Pasaporte perdido', 'Утеря', 'Passaporte perdido')], ['crisis', l('Kriz masası', 'Crisis desk', 'Krisenstab', 'Crisis', 'Кризис', 'Crises')], ['transit', l('Transit', 'Transit', 'Transit', 'Tránsito', 'Транзит', 'Trânsito')]] },
+    { id: 'partners', icon: 'people', label: l('İş ortakları', 'Partners', 'Partner', 'Socios', 'Партнёры', 'Parceiros'), items: [['partners', l('Acenteler', 'Agencies', 'Agenturen', 'Agencias', 'Агентства', 'Agências')], ['airlines', l('Havayolları', 'Airlines', 'Airlines', 'Aerolíneas', 'Авиа', 'Companhias aéreas')], ['insurance', l('Sigorta', 'Insurance', 'Versicherung', 'Seguro', 'Страховка', 'Seguro')], ['community', l('Topluluk', 'Community', 'Community', 'Comunidad', 'Сообщество', 'Comunidade')], ['api', l('Kurumsal API', 'Business API', 'Business-API', 'API empresas', 'API', 'API para empresas')]] },
+    { id: 'about', icon: 'info', label: l('Hakkımızda', 'About', 'Über uns', 'Nosotros', 'О нас', 'Quem somos'), items: [['mission', l('Hakkımızda', 'About Vizamigo', 'Über Vizamigo', 'Sobre Vizamigo', 'О Vizamigo', 'Sobre a Vizamigo')], ['standards', l('Bilgileri nasıl doğruluyoruz', 'How we verify', 'So prüfen wir', 'Cómo verificamos', 'Как мы проверяем', 'Como verificamos')], ['sustainability', l('Sürdürülebilirlik', 'Sustainability', 'Nachhaltigkeit', 'Sostenibilidad', 'Экология', 'Sustentabilidade')], ['careers', l('Kariyer', 'Careers', 'Karriere', 'Empleo', 'Карьера', 'Vagas')], ['press', l('İletişim', 'Contact', 'Kontakt', 'Contacto', 'Контакты', 'Contato')], ['backup', l('Veri yedeği', 'Backup', 'Backup', 'Copia', 'Копия', 'Backup')]] }
   ] as { id: string; icon: string; label: string; items: [string, string][] }[];
 }
 
@@ -33,13 +33,13 @@ export const InfoPage: React.FC<{ page: string; onPage: (p: string) => void; onB
   }, [title]);
   return (
     <Page
-      eyebrow={`${l('Bilgi merkezi', 'Help centre', 'Hilfezentrum', 'Centro de ayuda', 'Справка')} · ${grp.label}`}
+      eyebrow={`${l('Bilgi merkezi', 'Help centre', 'Hilfezentrum', 'Centro de ayuda', 'Справка', 'Central de ajuda')} · ${grp.label}`}
       title={title}
       words={['Help', 'Privacy', 'Sources', 'Support']}
-      back={{ label: l('Keşfet', 'Explore', 'Entdecken', 'Explorar', 'Обзор'), onClick: onBack }}
+      back={{ label: l('Keşfet', 'Explore', 'Entdecken', 'Explorar', 'Обзор', 'Explorar'), onClick: onBack }}
     >
       <div className="vz-info">
-        <nav className="vz-info-nav" aria-label={l('Bilgi merkezi içindekiler', 'Help centre contents', 'Inhalt', 'Contenido', 'Содержание')}>
+        <nav className="vz-info-nav" aria-label={l('Bilgi merkezi içindekiler', 'Help centre contents', 'Inhalt', 'Contenido', 'Содержание', 'Conteúdo')}>
           {groups.map((g) => (
             <div key={g.id} className="vz-info-grp">
               <span className="vz-info-grp-h"><Icon name={g.icon} size={16} />{g.label}</span>

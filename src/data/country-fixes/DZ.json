@@ -1447,6 +1447,368 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Dinar argelino (DZD)",
+   "plugType": "Tipo C, F (230V, 50Hz)",
+   "bestMonths": "Norte: março – maio e outubro – novembro (clima ameno); Saara (Ghardaïa, Djanet, Tassili): novembro – março. Julho – agosto é quente e cheio no litoral, e no Saara passa de 45 °C.",
+   "safety": {
+    "safetyScore": 55,
+    "safetyLevel": "Risco moderado",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60",
+    "crimeRateSummary": "A criminalidade nas cidades é moderada; há furtos por arrancão e batedores de carteira em áreas movimentadas. Os alertas oficiais desaconselham as regiões do sul e do leste próximas às fronteiras com Líbia, Níger, Mali, Mauritânia e Tunísia por causa de terrorismo e sequestros; visite o Saara somente com agência autorizada.",
+    "commonScams": [
+     "Cambistas de rua (por exemplo, na Square Port Saïd, em Argel) com notas falsas ou que contam a menos",
+     "Táxis do aeroporto que pedem tarifas fixas infladas",
+     "“Guias” improvisados na Casbá que no fim cobram caro"
+    ],
+    "safeTravelTips": [
+     "Percorra o Saara e o sul somente com agência e guia registrados; evite as fronteiras.",
+     "Tenha o passaporte à mão nos postos de controle; não fotografe prédios oficiais.",
+     "Explore as vielas da Casbá de dia e com um guia de confiança."
+    ],
+    "emergencyNumbers": {
+     "police": "17 / 1548",
+     "ambulance": "14 / 1021",
+     "general": "17 / 1548"
+    }
+   },
+   "internet": {
+    "networkCoverage": "4G bom nas cidades e no litoral norte; fraco no Saara fora das estradas e oásis. Na época dos exames nacionais (junho), a internet pode ser restringida.",
+    "costPerGbUsd": "~US$ 0,30 - 1,00",
+    "esimAvailability": "Média (há eSIMs internacionais; o chip local é barato e sai com passaporte)",
+    "bestCarriers": [
+     "Mobilis",
+     "Djezzy",
+     "Ooredoo"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Regular (metrô e bondes de Argel são bons; ampla rede de trens e ônibus)",
+    "costLevel": "Barato",
+    "singleTicketUsd": "0.30 - 0.50 $ (metrô/bonde)",
+    "dailyPassUsd": "Não existe (bilhetes avulsos muito baratos)",
+    "popularRideApps": [
+     "Yassir",
+     "Heetch",
+     "Táxis oficiais (amarelos)"
+    ],
+    "taxiAdvice": "Em Argel, Orã e Constantina, o app local Yassir e o Heetch são comuns e mostram o preço antes. Os táxis raramente usam taxímetro: combine o valor. Para longas distâncias, use os trens da SNTF e os voos domésticos da Air Algérie."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 30 - 50",
+    "dailyBudgetMidrangeUsd": "US$ 70 - 130",
+    "budgetMealUsd": "US$ 3 - 7",
+    "coffeeUsd": "US$ 0,40 - 1,50",
+    "waterBottleUsd": "US$ 0,25 - 0,50",
+    "hostelDormUsd": "Poucos hostels; albergues da juventude e hotéis simples 15 - 30 $",
+    "hotel3StarUsd": "US$ 50 - 100",
+    "flightCostIndex": "Acessível (voos diretos)",
+    "flightTip": "Turkish Airlines e Air Algérie voam direto Istambul – Argel (~3 h), e também para Orã e Constantina. Os voos domésticos da Air Algérie para Ghardaïa e Djanet poupam longos trajetos por terra."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Cumprimente com “As-salamu alaykum”; o aperto de mão é comum, mas espere que uma pessoa do sexo oposto estenda a mão primeiro.",
+     "Vista-se de forma discreta; evite shorts e regatas, principalmente em vilarejos e no sul.",
+     "Nas cidades do M’zab (Ghardaïa) é proibido passear sem guia e fotografar mulheres.",
+     "Se for convidado para uma casa, leve doces ou frutas; desperdiçar pão é falta de respeito."
+    ],
+    "festivals": [
+     "Yennayer – Ano-Novo amazigh (12 de janeiro)",
+     "Dia da Independência (5 de julho)",
+     "Festival Sebiba em Djanet (na Ashura, UNESCO)"
+    ],
+    "lifestyle": "A vida gira em torno do café, da família e do futebol; influências árabes, amazighes (berberes), otomanas e francesas se misturam. O raï nasceu em Orã e o chaâbi na Casbá de Argel. No Ramadã, as ruas fervem até o amanhecer."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Casbá de Argel (UNESCO, palácios otomanos)",
+     "Ruínas romanas de Tipasa (UNESCO)",
+     "Cidade romana de Djémila (Cuicul, UNESCO)",
+     "Pontes sobre o desfiladeiro de Constantina",
+     "Vale do M’zab e Ghardaïa (UNESCO)",
+     "Cidade romana de Timgad (UNESCO)"
+    ],
+    "bestSeasons": "Março – maio, outubro – novembro (norte); novembro – março (Saara)",
+    "travelStyleTip": "O norte dá para percorrer por conta própria de trem e Yassir; para o Saara (Ghardaïa, Djanet, Tassili n’Ajjer), um tour com agência local autorizada é obrigatório e mais seguro."
+   },
+   "religion": {
+    "primaryReligions": "Muçulmanos sunitas ~99 % (escola maliquita; comunidade ibadita no M’zab), pequena minoria cristã",
+    "respectNorms": "Entre nas mesquitas fora dos horários de oração, descalço e com roupas discretas; mulheres devem usar lenço. No Ramadã, não coma em público durante o dia.",
+    "sacredSites": [
+     "Grande Mesquita de Argel (Djamaa El Djazaïr, o minarete mais alto do mundo)",
+     "Mesquita Ketchaoua – época otomana, Casbá",
+     "Basílica de Notre-Dame d’Afrique"
+    ]
+   },
+   "language": {
+    "officialLanguages": "As línguas oficiais são o árabe e o tamazight (berbere); nas ruas se fala o árabe argelino (darja). O francês é muito comum nos negócios e nas cidades.",
+    "englishProficiency": "Baixo; está crescendo entre os jovens, mas o francês é muito mais útil.",
+    "phrases": [
+     {
+      "phrase": "السلام عليكم (as-salāmu ʿalaykum)",
+      "meaning": "A paz esteja com você / Olá",
+      "translation": "Olá",
+      "pronunciation": "as-sa-LAA-mu a-LAY-kum"
+     },
+     {
+      "phrase": "واش راك؟ (wesh rak?)",
+      "meaning": "Tudo bem? (árabe argelino)",
+      "translation": "Tudo bem?",
+      "pronunciation": "wesh RAK"
+     },
+     {
+      "phrase": "يعطيك الصحة (yaʿṭik saḥḥa)",
+      "meaning": "Obrigado (lit. “que Deus te dê saúde”)",
+      "translation": "Obrigado",
+      "pronunciation": "YAA-tik SA-ha"
+     },
+     {
+      "phrase": "بشحال؟ (beshhal?)",
+      "meaning": "Quanto custa? (árabe argelino)",
+      "translation": "Quanto custa?",
+      "pronunciation": "besh-HAL"
+     },
+     {
+      "phrase": "Tanemmirt (ⵜⴰⵏⴻⵎⵎⵉⵔⵜ)",
+      "meaning": "Obrigado (tamazight / cabila)",
+      "translation": "Obrigado",
+      "pronunciation": "ta-nem-MIRT"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Depois do reino númida, de Cartago e de Roma, os árabes chegaram no século VII. A época otomana, iniciada em 1516 pelos irmãos Barbarroxa (Oruç e Hızır), durou até 1830, com Argel como centro das regências. A França invadiu o país em 1830; após a guerra de independência de 1954–1962, a Argélia se tornou independente em 5 de julho de 1962. É o maior país da África em extensão.",
+    "milestones": [
+     "Século III a.C.: reino da Numídia (Masinissa)",
+     "1516: começa a época otomana com os Barbarroxa",
+     "1830: invasão francesa",
+     "1962: Independência (5 de julho)"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Cuscuz (seksu)",
+     "Chakhchoukha (pão achatado em pedaços num ensopado de carne)",
+     "Rechta (macarrão fino com frango, Argel)"
+    ],
+    "traditionalDrinks": [
+     "Chá verde com hortelã",
+     "Lben (leite fermentado)",
+     "Refrigerantes Hamoud Boualem (Selecto)"
+    ],
+    "streetFoodAndDesserts": [
+     "Karantika / garantita (assado de farinha de grão-de-bico)",
+     "Mhadjeb (crepe de semolina recheado com cebola e tomate)",
+     "Makroud e zlabia (doces do Ramadã)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Emir Abdelkader (líder da resistência e pensador)",
+     "Assia Djebar (romancista, membro da Academia Francesa)",
+     "Riyad Mahrez (jogador de futebol, campeão da Copa Africana de Nações 2019)"
+    ],
+    "strongSectors": [
+     "Gás natural e petróleo (~90 % das exportações)",
+     "Tâmaras (Deglet Nour) e agricultura",
+     "Aço, cimento e fertilizantes"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "A economia funciona principalmente em dinheiro vivo; cartões estrangeiros só servem nos grandes hotéis e a maioria dos caixas eletrônicos os recusa. Leve euros e troque em bancos ou hotéis pelo câmbio oficial; a diferença para o mercado paralelo é grande, e os cambistas de rua são arriscados.",
+    "tippingCulture": "Não é obrigatória; deixar o troco nos cafés e 5-10 % nos restaurantes é bem-visto.",
+    "economicPillars": "Hidrocarbonetos (Sonatrach), agricultura, construção, serviços públicos e uma mineração em expansão."
+   }
+  },
+  "itin": {
+   "routeName": "Roteiro clássico pela Argélia: Argel, Constantina e Ghardaïa",
+   "routeSummary": "Roteiro de 9 dias que vai da Casbá otomana de Argel e das ruínas romanas de Tipasa, à beira-mar, até Constantina, a cidade das pontes, e Djémila, terminando no vale do M’zab, porta de entrada do Saara.",
+   "totalDays": 9,
+   "idealDurationText": "Roteiro de 9 dias",
+   "bestSeason": "Março – maio, outubro – novembro",
+   "transportMode": "Trem SNTF (Argel – Constantina) + voo doméstico da Air Algérie (para Ghardaïa) + Yassir",
+   "paceLevel": "Equilibrado (história + cultura + deserto)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Argel e Tipasa",
+     "recommendedDuration": "3 dias",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "A Casbá e o palácio Dar Mustapha Pacha",
+      "Monumento dos Mártires (Maqam Echahid) e Museu do Bardo",
+      "Jardim botânico Jardin d’Essai",
+      "Ruínas de Tipasa e Mausoléu Real da Mauritânia"
+     ],
+     "activities": [
+      "Visite com um guia local as casas otomanas da Casbá e a mesquita Ketchaoua.",
+      "Suba de teleférico até Notre-Dame d’Afrique para ver a baía.",
+      "Num passeio a Tipasa, caminhe pelas ruínas romanas de frente para o mar."
+     ],
+     "foodAndDrinks": [
+      "Rechta",
+      "Karantika",
+      "Chá com hortelã"
+     ],
+     "criticalTips": [
+      "Evite a parte alta da Casbá ao anoitecer.",
+      "Alguns museus fecham às segundas ou sextas; confira os horários."
+     ],
+     "mapsQuery": "Algiers, Algeria"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Constantina e Djémila",
+     "recommendedDuration": "3 dias",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Ponte suspensa Sidi M’Cid e garganta do Rhumel",
+      "Palácio de Ahmed Bey (otomano)",
+      "Mesquita Emir Abdelkader",
+      "Cidade romana de Djémila (UNESCO)"
+     ],
+     "activities": [
+      "Caminhe de ponte em ponte pela trilha do desfiladeiro.",
+      "Visite os pátios de azulejos do palácio de Ahmed Bey.",
+      "Em Djémila, conheça o museu de mosaicos e o fórum."
+     ],
+     "foodAndDrinks": [
+      "Chakhchoukha",
+      "Jari frik (sopa de trigo verde)",
+      "Makroud"
+     ],
+     "criticalTips": [
+      "O trem Argel – Constantina leva ~6–7 h; o avião é mais rápido.",
+      "Leve chapéu e água: Djémila não tem sombra."
+     ],
+     "mapsQuery": "Constantine, Algeria"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Ghardaïa e vale do M’zab",
+     "recommendedDuration": "3 dias",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Os cinco ksur do M’zab: Ghardaïa, Beni Isguen, Melika, Bou Noura, El Atteuf",
+      "Mercado de leilões de Beni Isguen",
+      "Palmeirais e sistema tradicional de divisão da água",
+      "Mesquita Sidi Brahim (El Atteuf)"
+     ],
+     "activities": [
+      "Visite a cidade santa de Beni Isguen com o guia local obrigatório.",
+      "Assista ao leilão no fim da tarde.",
+      "Tome um chá numa casa tradicional do palmeiral."
+     ],
+     "foodAndDrinks": [
+      "Tâmaras Deglet Nour",
+      "Cuscuz ao estilo do M’zab",
+      "Lben"
+     ],
+     "criticalTips": [
+      "Não fotografe mulheres nem casas; vista-se de forma discreta.",
+      "Pode haver postos de controle rumo ao sul; peça informações atualizadas à sua agência."
+     ],
+     "mapsQuery": "Ghardaia, Algeria"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Cuscuz (seksu)",
+     "Chakhchoukha (pão achatado em pedaços num ensopado de carne)",
+     "Rechta (macarrão fino com frango, Argel)"
+    ],
+    "drinks": [
+     "Chá verde com hortelã",
+     "Lben (leite fermentado)",
+     "Refrigerantes Hamoud Boualem (Selecto)"
+    ],
+    "streetFoods": [
+     "Karantika / garantita (assado de farinha de grão-de-bico)",
+     "Mhadjeb (crepe de semolina recheado com cebola e tomate)",
+     "Makroud e zlabia (doces do Ramadã)"
+    ],
+    "diningAdvice": "O menu do almoço é muito barato; bebidas alcoólicas só são servidas em alguns hotéis e restaurantes. No Ramadã quase tudo fecha durante o dia, e a cidade ganha vida depois do iftar."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Dinheiro em euros (cartões quase não funcionam)",
+     "Lenço e mangas compridas para mulheres",
+     "Para o Saara: óculos de sol, chapéu e um fleece para as noites frias",
+     "Cópias do passaporte (para os postos de controle)"
+    ],
+    "safetyAndEtiquette": [
+     "Não fotografe instalações militares ou oficiais.",
+     "Evite discussões políticas e respeite os costumes locais."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Tomadas C/F (Schuko), como na Turquia; não é preciso adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "A água da rede nas cidades é clorada, mas recomenda-se a engarrafada por causa dos encanamentos velhos; no Saara, só engarrafada.",
+    "vaccines": [
+     "Vacinas de rotina",
+     "Hepatite A e febre tifoide",
+     "Raiva (considere em áreas rurais com cães de rua)",
+     "Febre amarela: certificado se você chegar de um país de risco"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "14"
+   },
+   "tipping": {
+    "custom": "Opcional; 5-10 % nos restaurantes é suficiente.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "Nos tours pelo Saara, dá-se gorjeta separada ao guia, ao motorista e ao cozinheiro."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Sem reembolso de IVA para turistas",
+    "minSpend": "Não se aplica",
+    "customsNote": "A Argélia não reembolsa o IVA a turistas. Moeda estrangeira acima de 1.000 € deve ser declarada na entrada, e o formulário precisa ser apresentado na saída; não é permitido sair do país com dinares."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 0,30 - 1,00",
+    "topCarriers": [
+     "Mobilis",
+     "Djezzy",
+     "Ooredoo"
+    ],
+    "airportSimTrapWarning": "No aeroporto há quiosques da Mobilis/Djezzy/Ooredoo com preços parecidos aos da cidade; o cadastro é feito com passaporte. A eSIM é mais cara, mas útil nas primeiras horas."
+   },
+   "touristScams": [
+    {
+     "title": "Câmbio na rua",
+     "desc": "Prometem um bom câmbio paralelo e entregam notas falsas ou valor a menos.",
+     "tip": "Troque dinheiro em bancos ou hotéis e conte as notas na hora."
+    },
+    {
+     "title": "Táxi do aeroporto",
+     "desc": "Quem acaba de chegar recebe uma tarifa fixa inflada até o centro.",
+     "tip": "Chame um carro pelo Yassir ou peça traslado ao hotel."
+    },
+    {
+     "title": "Guia não solicitado na Casbá",
+     "desc": "Alguém insiste que você está perdido, acompanha você e depois exige muito dinheiro.",
+     "tip": "Contrate guia pelo hotel ou pelo posto de turismo e combine o preço antes."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Алжирский динар (DZD)",

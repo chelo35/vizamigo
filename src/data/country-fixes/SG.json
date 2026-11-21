@@ -1443,6 +1443,367 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Dólar de Cingapura (SGD)",
+   "bestMonths": "Fevereiro a abril (período relativamente mais seco); faz calor (~31 °C) e há umidade o ano todo, de novembro a janeiro é a época mais chuvosa e de junho a setembro pode haver névoa seca",
+   "safety": {
+    "safetyScore": 85,
+    "crimeRateSummary": "Uma das cidades-Estado mais seguras do mundo: crimes de rua são raríssimos e dá para caminhar à noite sem preocupação. As regras são muito rígidas — jogar lixo no chão, comer ou beber no MRT, usar vape e drogas são punidos com severidade.",
+    "commonScams": [
+     "Algumas lojas de eletrônicos do Sim Lim Square pressionam para vender 'pacotes de garantia' caros",
+     "Falsos monges pedindo doações na Orchard Road e em Chinatown",
+     "Ingressos falsos para shows e eventos e anúncios de aluguel fraudulentos na internet"
+    ],
+    "safeTravelTips": [
+     "Não leve nem use cigarros eletrônicos; as punições ficaram mais duras em 2025.",
+     "Jogar lixo no chão, comer ou beber no MRT e atravessar fora da faixa dão multa.",
+     "Fique na sombra ao meio-dia e beba bastante água para evitar a exaustão pelo calor."
+    ],
+    "emergencyNumbers": {
+     "police": "999",
+     "ambulance": "995",
+     "general": "999 / 995"
+    },
+    "safetyLevel": "Excepcionalmente seguro",
+    "badgeColor": "bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-900/60"
+   },
+   "internet": {
+    "networkCoverage": "99 %+ (5G em todo lugar, inclusive no MRT)",
+    "costPerGbUsd": "~US$ 0,30 - 1,50",
+    "esimAvailability": "Excelente",
+    "bestCarriers": [
+     "Singtel",
+     "StarHub",
+     "M1",
+     "SIMBA"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "De primeira linha (MRT e ônibus limpos, pontuais e climatizados)",
+    "costLevel": "Moderado",
+    "singleTicketUsd": "US$ 0,85 - 2",
+    "dailyPassUsd": "~US$ 13 (Singapore Tourist Pass de 1 dia)",
+    "popularRideApps": [
+     "Grab",
+     "Gojek",
+     "TADA",
+     "CDG Zig",
+     "SimplyGo"
+    ],
+    "taxiAdvice": "No MRT e nos ônibus você pode pagar direto com Visa/Mastercard por aproximação (SimplyGo). Os táxis têm taxímetro e são seguros; Grab, Gojek e TADA mostram o valor antes da corrida. Há sobretaxas depois da meia-noite e nos horários de pico."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 60 - 90",
+    "dailyBudgetMidrangeUsd": "US$ 150 - 260",
+    "budgetMealUsd": "US$ 4 - 8 (hawker)",
+    "coffeeUsd": "US$ 1,50 - 6",
+    "waterBottleUsd": "US$ 1 - 2",
+    "hostelDormUsd": "US$ 25 - 45",
+    "hotel3StarUsd": "US$ 150 - 260",
+    "flightCostIndex": "Moderado a alto (voo direto ~11 h)",
+    "flightTip": "A Turkish Airlines e a Singapore Airlines têm voos diretos Istambul–Cingapura. As conexões pelo Golfo costumam sair mais baratas; Cingapura é um bom hub para seguir até Bali e a Malásia."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "A cultura da fila é forte; nas escadas rolantes, fique à esquerda para deixar o pessoal passar.",
+     "Um pacotinho de lenços sobre uma mesa de hawker centre significa que ela está reservada ('chope').",
+     "Nas comunidades malaia e indiana, use a mão direita para entregar coisas e não toque na cabeça de ninguém.",
+     "Tire os sapatos ao entrar em mesquitas, templos e casas."
+    ],
+    "festivals": [
+     "Ano-Novo Chinês (janeiro–fevereiro; iluminação de Chinatown)",
+     "Hari Raya Puasa (fim do Ramadã; bazar de Geylang Serai)",
+     "Deepavali (outubro–novembro; festival das luzes em Little India)"
+    ],
+    "lifestyle": "Uma sociedade multicultural (chinesa, malaia e indiana); a cultura hawker reconhecida pela UNESCO, os shoppings climatizados, a eficiência e o respeito às regras marcam o dia a dia."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Gardens by the Bay (Supertree Grove e Cloud Forest)",
+     "Marina Bay Sands e Merlion Park",
+     "Chinatown e o Templo da Relíquia do Dente de Buda",
+     "Kampong Glam (Mesquita do Sultão) e Little India",
+     "Jardim Botânico de Cingapura (UNESCO)",
+     "Ilha de Sentosa e a cachoeira do Jewel Changi"
+    ],
+    "bestSeasons": "Fevereiro a abril (período relativamente mais seco); faz calor (~31 °C) e há umidade o ano todo, de novembro a janeiro é a época mais chuvosa e de junho a setembro pode haver névoa seca",
+    "travelStyleTip": "De 3 a 4 dias são suficientes. O MRT chega a todo lugar; deixe museus e shoppings para o calor do meio-dia e os espetáculos ao ar livre (Supertree, Spectra) para a noite."
+   },
+   "religion": {
+    "primaryReligions": "Budistas ~31 %, cristãos ~19 %, sem religião ~20 %, muçulmanos ~15–16 %, taoístas ~9 %, hindus ~5 %.",
+    "respectNorms": "Cubra ombros e joelhos nos locais de culto; na Mesquita do Sultão eles emprestam túnicas. Nos templos hindus, tire os sapatos e não toque nos altares.",
+    "sacredSites": [
+     "Mesquita do Sultão (Kampong Glam)",
+     "Templo da Relíquia do Dente de Buda (Chinatown)",
+     "Templo Sri Mariamman (o templo hindu mais antigo)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Inglês (língua franca), malaio (língua nacional), chinês mandarim e tâmil. Nas ruas é comum ouvir o 'singlish'.",
+    "englishProficiency": "Excelente; o inglês é a língua da educação e dos negócios.",
+    "phrases": [
+     {
+      "phrase": "Terima kasih",
+      "meaning": "Obrigado(a)",
+      "translation": "Obrigado(a)",
+      "pronunciation": "teh-REE-mah KAH-see"
+     },
+     {
+      "phrase": "Selamat pagi",
+      "meaning": "Bom dia",
+      "translation": "Bom dia",
+      "pronunciation": "seh-LAH-maht PAH-gee"
+     },
+     {
+      "phrase": "打包 (dǎbāo / ta pau)",
+      "meaning": "Para viagem, por favor",
+      "translation": "Para viagem, por favor",
+      "pronunciation": "dah-bow / tah-pow"
+     },
+     {
+      "phrase": "Kopi O",
+      "meaning": "Café preto com açúcar",
+      "translation": "Café preto com açúcar",
+      "pronunciation": "KOH-pee oh"
+     },
+     {
+      "phrase": "Can lah!",
+      "meaning": "Claro, dá sim! (singlish)",
+      "translation": "Claro, dá sim! (singlish)",
+      "pronunciation": "kan lah"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Conhecida na Idade Média como 'Temasek', a ilha virou um grande porto depois que Stamford Raffles fundou ali um entreposto comercial britânico em 1819. Após a ocupação japonesa (1942–1945), uniu-se à Malásia em 1963 e, em 9 de agosto de 1965, tornou-se uma república independente. Logo se transformou em um dos maiores portos e centros financeiros do mundo.",
+    "milestones": [
+     "1819: Stamford Raffles funda o entreposto comercial britânico",
+     "1942–1945: ocupação japonesa",
+     "1965: independência (9 de agosto)",
+     "2020: a cultura hawker entra para o Patrimônio Imaterial da UNESCO"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Arroz com frango à moda de Hainan (Hainanese chicken rice)",
+     "Chilli crab (caranguejo ao molho de pimenta)",
+     "Laksa (sopa picante de macarrão com leite de coco)"
+    ],
+    "traditionalDrinks": [
+     "Kopi (café local)",
+     "Teh tarik (chá com leite 'puxado')",
+     "Singapore Sling (coquetel do Raffles Hotel)"
+    ],
+    "streetFoodAndDesserts": [
+     "Satay (espetinhos com molho de amendoim)",
+     "Kaya toast (torrada com geleia de coco e ovos quentes)",
+     "Ice kachang e chendol (sobremesas de gelo raspado)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Sir Stamford Raffles (fundador da Cingapura moderna)",
+     "Lee Kuan Yew (primeiro primeiro-ministro)",
+     "Joseph Schooling (campeão olímpico de natação em 2016)"
+    ],
+    "strongSectors": [
+     "Finanças e gestão de patrimônio",
+     "Porto, logística e aviação (Changi)",
+     "Semicondutores, petroquímica e biomedicina"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Cartões, pagamento por aproximação e QR Code (PayNow) estão em todo lugar; algumas barracas hawker só aceitam dinheiro ou QR local, então leve alguns SGD.",
+    "tippingCulture": "Gorjeta não é costume. Nos restaurantes, '++' ao lado do preço indica que serão somados 10 % de serviço e 9 % de GST.",
+    "economicPillars": "Finanças, comércio e serviços portuários, indústria avançada (chips, farmacêutica), turismo e sedes regionais de empresas."
+   }
+  },
+  "itin": {
+   "routeName": "As quatro faces de Cingapura: Marina Bay, bairros históricos e Sentosa",
+   "routeSummary": "Um roteiro urbano de 4 dias que vai da futurista Marina Bay aos bairros chinês, malaio e indiano e ao Jardim Botânico, terminando na ilha de Sentosa.",
+   "totalDays": 4,
+   "idealDurationText": "4 dias",
+   "bestSeason": "Fevereiro a abril (período relativamente mais seco); faz calor (~31 °C) e há umidade o ano todo, de novembro a janeiro é a época mais chuvosa e de junho a setembro pode haver névoa seca",
+   "transportMode": "MRT, a pé e Grab",
+   "paceLevel": "Tranquilo",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Marina Bay e Civic District",
+     "recommendedDuration": "1,5 dia",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Gardens by the Bay: Supertree Grove, Cloud Forest e Flower Dome",
+      "SkyPark do Marina Bay Sands",
+      "Merlion Park",
+      "National Gallery Singapore e Raffles Hotel"
+     ],
+     "activities": [
+      "Assista ao anoitecer ao espetáculo gratuito Garden Rhapsody no Supertree Grove.",
+      "Veja o show de laser e água Spectra em Marina Bay.",
+      "Faça um passeio de barco pelo rio saindo de Clarke Quay."
+     ],
+     "foodAndDrinks": [
+      "Satay no Lau Pa Sat (a 'Satay Street' funciona à noite)",
+      "Comida hawker no Makansutra Gluttons Bay",
+      "Um Singapore Sling no Raffles Hotel"
+     ],
+     "criticalTips": [
+      "Compre antes, pela internet, os ingressos para o Cloud Forest e o Flower Dome; o show dos Supertree é gratuito.",
+      "No MRT é proibido comer e beber (até água), e isso dá multa."
+     ],
+     "mapsQuery": "Gardens by the Bay, Singapore"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Chinatown, Kampong Glam e Little India",
+     "recommendedDuration": "1,5 dia",
+     "durationBadge": "1,5 dia",
+     "highlights": [
+      "Templo da Relíquia do Dente de Buda e Templo Sri Mariamman",
+      "Mesquita do Sultão e Haji Lane",
+      "Tekka Centre e Templo Sri Veeramakaliamman, em Little India",
+      "Jardim Botânico e Jardim Nacional de Orquídeas"
+     ],
+     "activities": [
+      "Caminhe cedo pelo Jardim Botânico.",
+      "Percorra as lojas de tecidos e perfumes da Arab Street, em Kampong Glam.",
+      "Almoce nos hawker centres Maxwell ou Tekka."
+     ],
+     "foodAndDrinks": [
+      "Arroz com frango à moda de Hainan do Tian Tian, no Maxwell",
+      "Murtabak e roti prata em Kampong Glam",
+      "Biryani e teh tarik em Little India"
+     ],
+     "criticalTips": [
+      "As barracas halal exibem o certificado verde 'MUIS Halal'; há muitas em Kampong Glam e Geylang Serai.",
+      "Visite a Mesquita do Sultão fora dos horários de oração e evite a sexta-feira ao meio-dia."
+     ],
+     "mapsQuery": "Sultan Mosque, Kampong Glam, Singapore"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Ilha de Sentosa e Jewel Changi",
+     "recommendedDuration": "1 dia",
+     "durationBadge": "1 dia",
+     "highlights": [
+      "Universal Studios Singapore",
+      "S.E.A. Aquarium",
+      "Praias de Siloso e Palawan",
+      "Cachoeira HSBC Rain Vortex, no Jewel Changi"
+     ],
+     "activities": [
+      "Chegue à ilha de teleférico ou pelo Sentosa Express.",
+      "Atravesse a ponte suspensa da Palawan Beach até a ilhota apresentada como o 'ponto mais ao sul da Ásia continental'.",
+      "Antes do voo, admire a cachoeira coberta do Jewel Changi."
+     ],
+     "foodAndDrinks": [
+      "Chilli crab ou caranguejo com pimenta-do-reino",
+      "Ice kachang"
+     ],
+     "criticalTips": [
+      "Comprar on-line os ingressos do Universal Studios e do aquário sai mais barato e evita filas.",
+      "O chilli crab costuma ser cobrado por quilo; pergunte o preço total antes de pedir."
+     ],
+     "mapsQuery": "Sentosa Island, Singapore"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Arroz com frango à moda de Hainan",
+     "Chilli crab",
+     "Laksa",
+     "Char kway teow (macarrão largo salteado)"
+    ],
+    "drinks": [
+     "Kopi",
+     "Teh tarik",
+     "Caldo de cana",
+     "Singapore Sling"
+    ],
+    "streetFoods": [
+     "Satay",
+     "Roti prata",
+     "Kaya toast",
+     "Nasi lemak"
+    ],
+    "diningAdvice": "Uma boa refeição em um hawker centre custa US$ 4–8; nos restaurantes, o '++' acrescenta ~20 %. Para comer halal, procure o selo 'MUIS Halal'; a maioria das barracas chinesas usa carne de porco. Lembre-se de 'chopear' a mesa com lenços e de devolver a bandeja."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptador tipo G (britânico)",
+     "Roupas leves e respiráveis e uma camada fina para o ar-condicionado",
+     "Guarda-chuva dobrável (pancadas de chuva tropicais repentinas)",
+     "Repelente de mosquitos (dengue)"
+    ],
+    "safetyAndEtiquette": [
+     "A venda de chiclete é proibida; não entre no país com quantidades comerciais.",
+     "Ter e usar cigarros eletrônicos é ilegal; no aeroporto eles são confiscados e você leva multa.",
+     "O tráfico de drogas tem as penas mais duras, incluindo a de morte."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Tomadas no padrão britânico, com três pinos retangulares (G); aparelhos turcos precisam de adaptador tipo G."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "A água da torneira é potável; os sistemas de tratamento, incluindo o NEWater, são de nível mundial.",
+    "vaccines": [
+     "Vacinas de rotina (tétano, difteria, sarampo)",
+     "Recomenda-se a vacina contra hepatite A",
+     "Certificado de febre amarela obrigatório se você chegar de um país de risco"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "995"
+   },
+   "tipping": {
+    "custom": "Não se espera gorjeta.",
+    "standardPercent": 0,
+    "rule": "optional",
+    "note": "Restaurantes e hotéis já acrescentam 10 % de serviço ('++'); nos hawker centres não se deixa gorjeta."
+   },
+   "taxFree": {
+    "vatRefundPercent": "GST de 9 %; reembolso líquido de ~6–7 %",
+    "minSpend": "Mínimo de 100 SGD com GST em uma mesma loja",
+    "customsNote": "Registre a compra no eTRS na própria loja e confirme o reembolso com o passaporte nos quiosques eTRS do aeroporto de Changi. Se os itens forem na bagagem despachada, faça isso antes do check-in da bagagem."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 0,30 - 1,50",
+    "topCarriers": [
+     "Singtel",
+     "StarHub",
+     "M1",
+     "SIMBA"
+    ],
+    "airportSimTrapWarning": "Os balcões das operadoras em Changi e os chips turísticos da 7-Eleven (pacotes de cerca de 100 GB) têm preços razoáveis; não há pegadinha, mas um eSIM comprado antes sai igualmente barato."
+   },
+   "touristScams": [
+    {
+     "title": "Armadilha dos eletrônicos no Sim Lim Square",
+     "desc": "Algumas lojas atraem com preços baixos e, na hora de pagar, incluem uma 'garantia' obrigatória ou taxas extras sem direito a reembolso.",
+     "tip": "Compre em lojas oficiais ou grandes redes; confira o valor total antes de assinar o recibo."
+    },
+    {
+     "title": "Falsos monges",
+     "desc": "Pessoas de túnica laranja distribuem amuletos e pedem doações; monges budistas de verdade não pedem dinheiro na rua.",
+     "tip": "Recuse com educação; se insistirem, você pode chamar a polícia (999)."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Сингапурский доллар (SGD)",

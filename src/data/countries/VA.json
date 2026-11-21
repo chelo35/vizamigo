@@ -5,7 +5,8 @@
     "en": "Vatican City",
     "de": "Vatikanstadt",
     "ru": "Ватикан",
-    "es": "Ciudad del Vaticano"
+    "es": "Ciudad del Vaticano",
+    "pt": "Cidade do Vaticano"
   },
   "capital": {
     "value": "Vatican City",
@@ -229,7 +230,8 @@
       "en": "Vatican City is extremely safe; be mindful of pickpockets in crowded tourist lines at St. Peter's Square.",
       "de": "Die Vatikanstadt ist überaus sicher; achten Sie auf Taschendiebe in Warteschlangen am Petersplatz.",
       "ru": "Ватикан исключительно безопасен; остерегайтесь карманных краж в толпе у собора Святого Петра.",
-      "es": "La Ciudad del Vaticano es sumamente segura; preste atención a los carteristas en las filas de la Plaza de San Pedro."
+      "es": "La Ciudad del Vaticano es sumamente segura; preste atención a los carteristas en las filas de la Plaza de San Pedro.",
+      "pt": "A Cidade do Vaticano é extremamente segura; fique atento aos batedores de carteira nas filas da Praça de São Pedro."
     },
     "regional_warnings": [],
     "risk_categories": {
@@ -391,7 +393,8 @@
         "en": "St. Peter's Basilica & Square",
         "de": "Petersdom & Petersplatz",
         "ru": "Собор и площадь Святого Петра",
-        "es": "Basílica y Plaza de San Pedro"
+        "es": "Basílica y Plaza de San Pedro",
+        "pt": "Basílica e Praça de São Pedro"
       },
       "type": "landmark",
       "sources": [
@@ -408,7 +411,8 @@
         "en": "Vatican Museums & Sistine Chapel",
         "de": "Vatikanische Museen & Sixtinische Kapelle",
         "ru": "Музеи Ватикана и Сикстинская капелла",
-        "es": "Museos Vaticanos y Capilla Sixtina"
+        "es": "Museos Vaticanos y Capilla Sixtina",
+        "pt": "Museus Vaticanos e Capela Sistina"
       },
       "type": "heritage",
       "sources": [
@@ -438,7 +442,8 @@
           "en": "St. Peter's Basilica & Square, Vatican City",
           "de": "Petersdom und Petersplatz, Vatikanstadt",
           "ru": "Собор и площадь Святого Петра, Ватикан",
-          "es": "Basílica y Plaza de San Pedro, Ciudad del Vaticano"
+          "es": "Basílica y Plaza de San Pedro, Ciudad del Vaticano",
+          "pt": "Basílica e Praça de São Pedro, Cidade do Vaticano"
         },
         "recognizability_checked": true
       }
@@ -450,21 +455,24 @@
       "en": "vatican-city",
       "de": "vatikanstadt",
       "ru": "vatikan",
-      "es": "ciudad-del-vaticano"
+      "es": "ciudad-del-vaticano",
+      "pt": "cidade-do-vaticano"
     },
     "title": {
       "tr": "Vatikan Gezi Rehberi, Kıyafet Kuralları ve Aziz Petrus Bazilikası | Vizamigo",
       "en": "Vatican City Travel Guide, Dress Code & St. Peter's Basilica | Vizamigo",
       "de": "Vatikanstadt Reiseführer, Kleiderordnung & Petersdom | Vizamigo",
       "ru": "Путеводитель по Ватикану, дресс-код и собор Святого Петра | Vizamigo",
-      "es": "Guía de Viaje del Vaticano, Código de Vestimenta y Basílica de San Pedro | Vizamigo"
+      "es": "Guía de Viaje del Vaticano, Código de Vestimenta y Basílica de San Pedro | Vizamigo",
+      "pt": "Guia de viagem do Vaticano, código de vestimenta e Basílica de São Pedro | Vizamigo"
     },
     "meta_description": {
       "tr": "Vatikan vize ve Schengen giriş kuralları, omuz-diz kıyafet zorunluluğu, Sistina Şapeli biletleri, Tip C/F/L prizler ve Aziz Petrus Meydanı rehberi.",
       "en": "Vatican City Schengen entry rules, strict dress code requirements, Sistine Chapel tickets, Type C/F/L plugs, and St. Peter's guide.",
       "de": "Vatikanstadt Schengen-Einreise, strenge Kleiderordnung, Tickets für die Sixtinische Kapelle, Steckdosentyp C/F/L und Petersdom.",
       "ru": "Правила посещения Ватикана через Италию, строгий дресс-код, билеты в Сикстинскую капеллу, евро и собор Святого Петра.",
-      "es": "Requisitos de entrada Schengen al Vaticano, código de vestimenta estricto, boletos para la Capilla Sixtina y Basílica de San Pedro."
+      "es": "Requisitos de entrada Schengen al Vaticano, código de vestimenta estricto, boletos para la Capilla Sixtina y Basílica de San Pedro.",
+      "pt": "Requisitos de entrada Schengen no Vaticano, código de vestimenta rigoroso, ingressos para a Capela Sistina e Basílica de São Pedro."
     },
     "faq": []
   },

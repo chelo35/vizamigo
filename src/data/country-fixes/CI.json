@@ -1423,6 +1423,362 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Franco CFA da África Ocidental (XOF; atrelado ao euro)",
+   "plugType": "Tipo C, E (220V, 50Hz)",
+   "bestMonths": "Novembro – março (estação seca; harmatã, vento carregado de poeira, de dezembro a fevereiro) · maio – julho, chuvas principais; outubro – novembro, chuvas curtas (no sul)",
+   "safety": {
+    "safetyScore": 55,
+    "safetyLevel": "Risco moderado",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60",
+    "crimeRateSummary": "Em Abidjan (sobretudo Adjamé, Treichville, Yopougon), furtos por arrastão, roubos de celular e assaltos noturnos são comuns. Há alertas oficiais para o norte, perto de Burkina Faso e do Mali, por risco de terrorismo; o sul e o litoral costumam ser tranquilos.",
+    "commonScams": [
+     "Golpistas conhecidos como “brouteurs” pedem dinheiro com romances ou negócios on-line; desconfie de “amigos” que você conheceu pela internet antes da viagem.",
+     "No aeroporto Félix-Houphouët-Boigny, motoristas não oficiais cobram tarifas infladas.",
+     "Nas barreiras de fiscalização, podem pedir pequenas “multas”."
+    ],
+    "safeTravelTips": [
+     "Não vá às áreas de fronteira do norte; siga os alertas oficiais.",
+     "As correntes em Grand-Bassam e Assinie podem ser fatais; só entre no mar em áreas seguras.",
+     "Não use o celular na janela do táxi nem à beira da estrada."
+    ],
+    "emergencyNumbers": {
+     "police": "111",
+     "ambulance": "185",
+     "general": "111"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Bom 4G em Abidjan e nas cidades; 5G em áreas das grandes cidades; irregular no interior",
+    "costPerGbUsd": "US$ 0,80 - 2,50",
+    "esimAvailability": "Média (a Orange oferece eSIM local; eSIMs internacionais funcionam)",
+    "bestCarriers": [
+     "Orange Côte d'Ivoire",
+     "MTN Côte d'Ivoire",
+     "Moov Africa"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Moderado (em Abidjan, táxis, wôrô-wôrô, gbaka e ônibus/barcos da SOTRA; ônibus intermunicipais confortáveis)",
+    "costLevel": "Barato – moderado",
+    "singleTicketUsd": "Ônibus/barco da SOTRA ~0,30 - 0,80 $; wôrô-wôrô ~0,50 - 1 $",
+    "dailyPassUsd": "Não existe",
+    "popularRideApps": [
+     "Yango",
+     "Heetch"
+    ],
+    "taxiAdvice": "Em Abidjan, Yango e Heetch são as opções mais práticas, porque mostram o preço antes. Nos táxis laranja “taxi compteur”, confira se o taxímetro está ligado; os wôrô-wôrô compartilhados fazem rotas fixas."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 35 - 60",
+    "dailyBudgetMidrangeUsd": "US$ 100 - 180",
+    "budgetMealUsd": "US$ 3 - 8",
+    "coffeeUsd": "US$ 1 - 3",
+    "waterBottleUsd": "US$ 0,50 - 1",
+    "hostelDormUsd": "15 - 25 $ (poucas opções)",
+    "hotel3StarUsd": "US$ 60 - 130",
+    "flightCostIndex": "Moderado (a Turkish Airlines voa Istambul – Abidjan)",
+    "flightTip": "A Turkish Airlines voa de Istambul para Abidjan (ABJ); a Air Côte d'Ivoire oferece conexões regionais. Nas festas da estação seca (dezembro – janeiro), as passagens ficam caras."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Toda conversa começa com cumprimentos e perguntas sobre a família; ir direto ao assunto é falta de educação.",
+     "Use a mão direita para comer, dar dinheiro e cumprimentar.",
+     "Sempre peça permissão antes de fotografar florestas sagradas e cerimônias."
+    ],
+    "festivals": [
+     "Abissa (povo n'zima, Grand-Bassam, outubro – novembro)",
+     "FEMUA – Festival de Músicas Urbanas de Anoumabo (Abidjan)",
+     "Festival das Máscaras (região de Man)"
+    ],
+    "lifestyle": "Abidjan, centro econômico da África Ocidental, é sinônimo de vida noturna, música coupé-décalé e gíria nouchi; mais de 60 etnias e os “maquis” ao ar livre são o coração do dia a dia."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Centro histórico de Grand-Bassam (UNESCO)",
+     "Basílica de Nossa Senhora da Paz (Yamoussoukro)",
+     "O Plateau de Abidjan e a catedral de São Paulo",
+     "Parque Nacional do Banco (floresta dentro da cidade)",
+     "Praias e laguna de Assinie",
+     "Parque Nacional de Taï (UNESCO; chimpanzés)"
+    ],
+    "bestSeasons": "Novembro – março (estação seca; harmatã, vento carregado de poeira, de dezembro a fevereiro) · maio – julho, chuvas principais; outubro – novembro, chuvas curtas (no sul)",
+    "travelStyleTip": "Use Abidjan como base, com bate-voltas a Grand-Bassam e Assinie e uma noite em Yamoussoukro; as grandes empresas de ônibus, como a UTB, são seguras e baratas."
+   },
+   "religion": {
+    "primaryReligions": "Islamismo (~42%, concentrado no norte), cristianismo (~40%: católicos e evangélicos), crenças tradicionais e sem religião",
+    "respectNorms": "Em mesquitas e igrejas, cubra ombros e joelhos; tire os sapatos na mesquita. Não entre em florestas sagradas sem permissão.",
+    "sacredSites": [
+     "Basílica de Nossa Senhora da Paz",
+     "Grande Mesquita de Kong (mesquitas de estilo sudanês, UNESCO)",
+     "Catedral de São Paulo (Abidjan)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "O francês é a língua oficial; o diúla (jula) é uma língua comercial muito difundida, ao lado de mais de 60 línguas locais, como baulê, bété e senufo, e da gíria nouchi de Abidjan.",
+    "englishProficiency": "Baixo; você vai precisar de francês — inglês, só no meio empresarial e nos grandes hotéis.",
+    "phrases": [
+     {
+      "phrase": "I ni sɔgɔma",
+      "meaning": "Bom dia (diúla)",
+      "translation": "Bom dia (diúla)",
+      "pronunciation": "i ni so-go-ma"
+     },
+     {
+      "phrase": "I ni ce",
+      "meaning": "Obrigado / saudações (diúla)",
+      "translation": "Obrigado / saudações (diúla)",
+      "pronunciation": "i ni che"
+     },
+     {
+      "phrase": "I ka kɛnɛ wa?",
+      "meaning": "Você está bem? (diúla)",
+      "translation": "Você está bem? (diúla)",
+      "pronunciation": "i ka ke-ne wa"
+     },
+     {
+      "phrase": "A ye joli ye?",
+      "meaning": "Quanto custa? (diúla)",
+      "translation": "Quanto custa? (diúla)",
+      "pronunciation": "a ye jo-li ye"
+     },
+     {
+      "phrase": "On dit quoi ?",
+      "meaning": "E aí? (gíria de Abidjan, nouchi)",
+      "translation": "E aí? (gíria de Abidjan, nouchi)",
+      "pronunciation": "on di kwa"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "O Império de Kong e os reinos baulê e abron governaram a região. A França a declarou colônia em 1893, com Grand-Bassam como primeira capital. A independência veio em 7 de agosto de 1960, com Félix Houphouët-Boigny, seguida de um rápido crescimento impulsionado pelo cacau. Yamoussoukro é a capital oficial desde 1983; depois das crises de 2002 – 2011, o país voltou a crescer com força.",
+    "milestones": [
+     "1893: Colônia francesa",
+     "1960: Independência",
+     "1983: Yamoussoukro vira capital",
+     "2024: Sedia e vence a Copa Africana de Nações (edição 2023)"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Attiéké com peixe na brasa (cuscuz de mandioca)",
+     "Kedjenou (frango cozido em panela de barro)",
+     "Foutou com sauce graine (molho de noz de palma)"
+    ],
+    "traditionalDrinks": [
+     "Bangui (vinho de palma)",
+     "Bissap (bebida de hibisco)",
+     "Gnamankoudji (suco de gengibre)"
+    ],
+    "streetFoodAndDesserts": [
+     "Alloco (banana-da-terra frita)",
+     "Garba (attiéké com atum frito)",
+     "Dêguê (sobremesa de milhete e iogurte)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Félix Houphouët-Boigny (presidente fundador)",
+     "Didier Drogba (jogador de futebol)",
+     "Alpha Blondy (músico de reggae)"
+    ],
+    "strongSectors": [
+     "Cacau (maior produtor mundial) e castanha-de-caju",
+     "Porto de Abidjan e logística",
+     "Petróleo e gás (campo de Baleine)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Em Abidjan, hotéis e restaurantes aceitam cartão e há muitos caixas eletrônicos, mas mercados, táxis e maquis pedem dinheiro vivo. O dinheiro móvel (Orange Money, Wave, MTN MoMo) é muito comum.",
+    "tippingCulture": "A gorjeta é opcional. 5% – 10% em bons restaurantes; nos maquis, basta deixar o troco. Guias e motoristas recebem uma pequena gorjeta por dia.",
+    "economicPillars": "Exportação de cacau, castanha-de-caju, borracha e óleo de palma, comércio portuário, petróleo e gás, e serviços."
+   }
+  },
+  "itin": {
+   "routeName": "Costa do Marfim clássica: Grand-Bassam, Abidjan e Yamoussoukro",
+   "routeSummary": "Roteiro de 7 dias que começa perto do aeroporto, na colonial Grand-Bassam e nas praias de Assinie, segue pelos arranha-céus, lagunas e maquis de Abidjan e termina em Yamoussoukro, com sua enorme basílica.",
+   "totalDays": 7,
+   "idealDurationText": "Roteiro de 7 dias",
+   "bestSeason": "Novembro – março (estação seca; harmatã, vento carregado de poeira, de dezembro a fevereiro) · maio – julho, chuvas principais; outubro – novembro, chuvas curtas (no sul)",
+   "transportMode": "Yango/carro particular (Abidjan – Grand-Bassam ~45 min), ônibus ou transfer particular Abidjan – Yamoussoukro (~3h pela autoestrada)",
+   "paceLevel": "Equilibrado (cidade + praia + cultura)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Grand-Bassam e Assinie",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Bairro colonial de Grand-Bassam (UNESCO)",
+      "Museu Nacional do Traje",
+      "Laguna e praias de Assinie"
+     ],
+     "activities": [
+      "Passeie entre os antigos prédios coloniais.",
+      "Confira o artesanato na vila dos artesãos.",
+      "Faça um passeio de barco pela laguna de Assinie."
+     ],
+     "foodAndDrinks": [
+      "Attiéké com peixe na brasa",
+      "Água de coco fresca"
+     ],
+     "criticalTips": [
+      "As correntes são muito fortes; não entre no mar em dias de ressaca.",
+      "Vá durante a semana para fugir das multidões de Abidjan."
+     ],
+     "mapsQuery": "Grand-Bassam, Côte d'Ivoire"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Abidjan",
+     "recommendedDuration": "3 dias",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Distrito financeiro do Plateau e catedral de São Paulo",
+      "Parque Nacional do Banco",
+      "Mercados de Treichville e Cocody",
+      "Laguna Ébrié"
+     ],
+     "activities": [
+      "Atravesse a laguna no barco-ônibus da SOTRA.",
+      "Faça uma caminhada guiada pela floresta do Banco.",
+      "À noite, ouça música ao vivo num maquis da Zone 4 ou de Marcory."
+     ],
+     "foodAndDrinks": [
+      "Kedjenou com alloco",
+      "Garba e bissap"
+     ],
+     "criticalTips": [
+      "Esconda os objetos de valor em Adjamé e Yopougon.",
+      "À noite, use o Yango e evite táxis de rua."
+     ],
+     "mapsQuery": "Plateau, Abidjan, Côte d'Ivoire"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Yamoussoukro",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Basílica de Nossa Senhora da Paz",
+      "Lago dos crocodilos ao lado do Palácio Presidencial",
+      "Fundação Félix Houphouët-Boigny para a Paz"
+     ],
+     "activities": [
+      "Suba à cúpula da basílica e admire os vitrais.",
+      "Veja a alimentação dos crocodilos ao entardecer.",
+      "Percorra os amplos bulevares de bicicleta ou de carro."
+     ],
+     "foodAndDrinks": [
+      "Foutou com sauce graine",
+      "Bangui (vinho de palma)"
+     ],
+     "criticalTips": [
+      "Na basílica, é preciso cobrir ombros e joelhos.",
+      "Não chegue perto demais do lago dos crocodilos."
+     ],
+     "mapsQuery": "Basilique Notre-Dame de la Paix, Yamoussoukro, Côte d'Ivoire"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Attiéké com peixe na brasa (cuscuz de mandioca)",
+     "Kedjenou (frango cozido em panela de barro)",
+     "Foutou com sauce graine (molho de noz de palma)"
+    ],
+    "drinks": [
+     "Bangui (vinho de palma)",
+     "Bissap (bebida de hibisco)",
+     "Gnamankoudji (suco de gengibre)"
+    ],
+    "streetFoods": [
+     "Alloco (banana-da-terra frita)",
+     "Garba (attiéké com atum frito)",
+     "Dêguê (sobremesa de milhete e iogurte)"
+    ],
+    "diningAdvice": "Para provar o autêntico sabor local, vá aos maquis ao ar livre: peixe ou frango na brasa com attiéké e alloco, muitas vezes comidos com a mão."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Certificado de febre amarela (obrigatório)",
+     "Antimaláricos e repelente",
+     "Roupas leves e respiráveis de algodão",
+     "Protetor solar e chapéu"
+    ],
+    "safetyAndEtiquette": [
+     "Não comece a falar sem cumprimentar.",
+     "Não viaje para as áreas de fronteira do norte.",
+     "Coma e entregue dinheiro com a mão direita."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "E"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Usam-se tomadas europeias tipo C e E, compatíveis com as da Turquia."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "A água de Abidjan é tratada, mas recomenda-se beber água mineral; cuidado com gelo e saladas cruas.",
+    "vaccines": [
+     "Febre amarela (obrigatória na entrada)",
+     "Profilaxia contra malária (risco em todo o país)",
+     "Hepatite A e febre tifoide",
+     "Meningite (norte, estação seca) e raiva"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "185"
+   },
+   "tipping": {
+    "custom": "A gorjeta é opcional.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "5% – 10% em bons restaurantes; nos maquis, basta deixar o troco. Guias e motoristas recebem uma pequena gorjeta por dia."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Sem restituição para turistas (IVA de 18%)",
+    "minSpend": "Não se aplica",
+    "customsNote": "A Costa do Marfim não devolve o IVA a turistas. É proibido exportar marfim, produtos de fauna ou máscaras/estátuas antigas sem autorização; peça nota fiscal do artesanato."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 0,80 - 2,50",
+    "topCarriers": [
+     "Orange Côte d'Ivoire",
+     "MTN Côte d'Ivoire",
+     "Moov Africa"
+    ],
+    "airportSimTrapWarning": "Os balcões da Orange e da MTN no aeroporto de Abidjan ativam o chip rapidinho com o passaporte; nas lojas oficiais da cidade, os pacotes podem sair um pouco mais baratos."
+   },
+   "touristScams": [
+    {
+     "title": "Golpes on-line e românticos",
+     "desc": "Golpistas conhecidos como “brouteurs” pedem dinheiro com romances ou negócios on-line; desconfie de “amigos” que você conheceu pela internet antes da viagem.",
+     "tip": "Não envie dinheiro para quem você só conhece on-line."
+    },
+    {
+     "title": "Falso táxi do aeroporto",
+     "desc": "No aeroporto Félix-Houphouët-Boigny, motoristas não oficiais cobram tarifas infladas.",
+     "tip": "Chame um Yango ou peça o transfer do hotel."
+    },
+    {
+     "title": "Falsa polícia / propina",
+     "desc": "Nas barreiras de fiscalização, podem pedir pequenas “multas”.",
+     "tip": "Mantenha a calma, mostre cópias e peça recibo."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Западноафриканский франк КФА (XOF; привязан к евро)",

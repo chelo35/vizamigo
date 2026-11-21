@@ -1527,6 +1527,388 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Rial saudita (SAR)",
+   "plugType": "Tipo G (230V, 60Hz)",
+   "bestMonths": "Novembro a março (fresco e seco; ideal para Riad e AlUla) · de junho a setembro faz um calor extremo (45 °C+); as montanhas de Asir (Abha) são frescas no verão",
+   "safety": {
+    "safetyScore": 55,
+    "safetyLevel": "Risco moderado",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60",
+    "crimeRateSummary": "A criminalidade de rua é baixa, mas as leis são muito rígidas e há alertas oficiais por causa das tensões regionais. Viagens perto da fronteira com o Iêmen são desaconselhadas, e não se pode descartar o risco de ataques com mísseis ou drones.",
+    "commonScams": [
+     "Agências de umrah sem licença que vendem pacotes falsos ou incompletos",
+     "Taxistas sem licença no aeroporto com tarifas fixas infladas",
+     "Batedores de carteira e falsos coletores de doações no meio das multidões de Meca e Medina"
+    ],
+    "safeTravelTips": [
+     "Não chegue a menos de 10 km da fronteira com o Iêmen e acompanhe os alertas oficiais em vigor.",
+     "Homens e mulheres devem se vestir de forma discreta (ombros e joelhos cobertos); a abaya não é obrigatória para turistas.",
+     "Leve a receita dos seus medicamentos (principalmente psicotrópicos e analgésicos fortes); crimes ligados a drogas têm penas duríssimas."
+    ]
+   },
+   "internet": {
+    "networkCoverage": "95%+ (4G / 5G)",
+    "costPerGbUsd": "US$ 1,00 - 3,00",
+    "esimAvailability": "Excelente",
+    "bestCarriers": [
+     "STC",
+     "Mobily",
+     "Zain KSA"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Bom e melhorando (metrô de Riad, trem de alta velocidade Haramain Meca – Jeddah – Medina; cidades muito dependentes do carro)",
+    "costLevel": "Moderado",
+    "singleTicketUsd": "US$ 1,10 - 2,70",
+    "dailyPassUsd": "US$ 3 - 6",
+    "popularRideApps": [
+     "Uber",
+     "Careem",
+     "Jeeny"
+    ],
+    "taxiAdvice": "Uber, Careem e Jeeny são muito usados e seguros nas cidades; com táxis de rua, combine o preço antes. Para longas distâncias, os voos domésticos (Saudia, flynas, flyadeal) e o trem Haramain são práticos."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 50 - 80",
+    "dailyBudgetMidrangeUsd": "US$ 130 - 220",
+    "budgetMealUsd": "US$ 4 - 10",
+    "coffeeUsd": "US$ 1 - 6",
+    "waterBottleUsd": "US$ 0,30 - 0,60",
+    "hostelDormUsd": "US$ 20 - 40",
+    "hotel3StarUsd": "US$ 60 - 120",
+    "flightCostIndex": "Moderado (voos diretos de Istambul para Riad, Jeddah e Medina)",
+    "flightTip": "Na alta temporada da umrah (principalmente no Ramadã), os voos para Jeddah e Medina lotam cedo; reserve também com antecedência o voo doméstico para AlUla."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Coma, entregue e receba coisas com a mão direita; sentado, não mostre a sola do pé para ninguém.",
+     "Deixe a outra pessoa tomar a iniciativa ao cumprimentar com aperto de mão alguém do sexo oposto.",
+     "Não recuse o gahwa; balance levemente a xícara quando não quiser mais.",
+     "Algumas lojas e restaurantes podem fechar por um tempo na hora da oração."
+    ],
+    "festivals": [
+     "Riyadh Season (outubro – março; shows, entretenimento e esportes)",
+     "Dia da Fundação (22 de fevereiro)",
+     "Dia Nacional (23 de setembro)"
+    ],
+    "lifestyle": "A vida começa com o frescor da noite; visitas à família, piqueniques e acampamentos no deserto (kashta) e os shoppings são o centro da vida social. Com a Visão 2030, o lazer e o turismo estão se abrindo em ritmo acelerado."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Masjid al-Haram e a Caaba (Meca; só muçulmanos)",
+     "Mesquita do Profeta (Medina)",
+     "Hegra / Mada'in Salih (AlUla, UNESCO)",
+     "Jeddah histórica – Al-Balad (UNESCO)",
+     "Diriyah – At-Turaif (Riad, UNESCO)",
+     "Penhascos do \"Edge of the World\" (perto de Riad)"
+    ],
+    "bestSeasons": "Novembro a março (fresco e seco; ideal para Riad e AlUla) · de junho a setembro faz um calor extremo (45 °C+); as montanhas de Asir (Abha) são frescas no verão",
+    "travelStyleTip": "As distâncias são enormes: voe entre as cidades ou use o trem Haramain, circule por aplicativo dentro das cidades e alugue um carro ou contrate passeios para AlUla e o deserto."
+   },
+   "religion": {
+    "primaryReligions": "Islã (religião oficial; maioria sunita, com minoria xiita na Província Oriental); comunidades cristãs e hindus entre os expatriados",
+    "respectNorms": "Só muçulmanos podem entrar na área do Haram de Meca e na área central do Haram de Medina. O álcool é terminantemente proibido; no Ramadã, não coma nem beba em público durante o dia.",
+    "sacredSites": [
+     "Masjid al-Haram (Meca)",
+     "Mesquita do Profeta (Medina)",
+     "Mesquita de Quba (Medina)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "O árabe é a língua oficial; o inglês é cada vez mais comum nas cidades e no turismo, e entre os expatriados se fala urdu, hindi e tagalo.",
+    "englishProficiency": "De moderado a bom; bom em hotéis, aeroportos e grandes cidades, limitado nas zonas rurais.",
+    "phrases": [
+     {
+      "phrase": "السلام عليكم (as-salāmu ʿalaykum)",
+      "meaning": "Que a paz esteja com você (Olá)",
+      "translation": "Que a paz esteja com você",
+      "pronunciation": "as-sa-laa-mu a-lay-kum"
+     },
+     {
+      "phrase": "يا هلا (yā hala)",
+      "meaning": "Bem-vindo / Olá",
+      "translation": "Bem-vindo!",
+      "pronunciation": "yaa ha-la"
+     },
+     {
+      "phrase": "لو سمحت (law samaḥt)",
+      "meaning": "Por favor / Com licença",
+      "translation": "Com licença",
+      "pronunciation": "law sa-maht"
+     },
+     {
+      "phrase": "بكم هذا؟ (bikam hādha?)",
+      "meaning": "Quanto custa isto?",
+      "translation": "Quanto?",
+      "pronunciation": "bi-kam haa-dha"
+     },
+     {
+      "phrase": "مشكور (mashkūr)",
+      "meaning": "Obrigado(a)",
+      "translation": "Obrigado(a) / Muito grato(a)",
+      "pronunciation": "mash-koor"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Na terra onde nasceu o islã, o primeiro Estado saudita foi fundado em Diriyah em 1744; Abdulaziz ibn Saud proclamou o reino atual em 1932. O petróleo descoberto em 1938 transformou o país em um dos maiores exportadores do mundo, e a Visão 2030 está diversificando a economia e o turismo.",
+    "milestones": [
+     "622: a Hégira (migração de Meca para Medina)",
+     "1744: primeiro Estado saudita, em Diriyah",
+     "1932: proclamação do Reino da Arábia Saudita",
+     "1938: descoberta de petróleo em Dammam"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Kabsa (arroz temperado com frango ou cordeiro)",
+     "Mandi (carne assada em forno subterrâneo sobre arroz defumado)",
+     "Jareesh (mingau de trigo partido com iogurte)"
+    ],
+    "traditionalDrinks": [
+     "Gahwa (café árabe com cardamomo e açafrão, servido com tâmaras)",
+     "Champanhe saudita (sem álcool: suco de maçã, água com gás e hortelã)",
+     "Laban (bebida de iogurte)"
+    ],
+    "streetFoodAndDesserts": [
+     "Mutabbaq (massa fina recheada com carne ou ovo, clássico de Jeddah)",
+     "Shawarma",
+     "Kleija (biscoitos de tâmara da região de Qasim)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Abdulaziz ibn Saud (rei fundador)",
+     "Rayyanah Barnawi (primeira astronauta saudita no espaço)",
+     "Salem Al-Dawsari (marcou contra a Argentina na Copa do Mundo de 2022)"
+    ],
+    "strongSectors": [
+     "Produção e exportação de petróleo (Saudi Aramco)",
+     "Petroquímica (SABIC)",
+     "Turismo religioso (hajj e umrah) e novos projetos turísticos"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Cartões Mada, Apple Pay e pagamento por aproximação são aceitos em quase todo lugar; basta um pouco de dinheiro em riais para lojinhas e souks.",
+    "tippingCulture": "Não é obrigatória; nos restaurantes, costuma-se deixar 10 % ou arredondar, e pequenas gorjetas para funcionários do hotel e guias são bem-vindas.",
+    "economicPillars": "Petróleo e gás, petroquímica, mineração, megaprojetos de construção e um turismo em rápido crescimento."
+   }
+  },
+  "itin": {
+   "routeName": "Clássicos da Arábia Saudita: Riad, AlUla, Medina e Jeddah",
+   "routeSummary": "Um roteiro de 10 dias que sai da capital, Riad, vai até os túmulos nabateus de AlUla, no noroeste, e segue para Medina e para a Jeddah histórica, à beira do mar Vermelho; viajantes muçulmanos podem continuar de trem até Meca.",
+   "totalDays": 10,
+   "idealDurationText": "Roteiro de 10 dias",
+   "bestSeason": "Novembro a março (fresco e seco; ideal para Riad e AlUla) · de junho a setembro faz um calor extremo (45 °C+); as montanhas de Asir (Abha) são frescas no verão",
+   "transportMode": "Voo doméstico Riad – AlUla, carro alugado ou transfer privado AlUla – Medina (~4 horas), trem de alta velocidade Haramain Medina – Jeddah",
+   "paceLevel": "Equilibrado (cultura, deserto e cidades sagradas)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Riad",
+     "recommendedDuration": "2-3 dias (capital e Diriyah)",
+     "durationBadge": "2-3 dias",
+     "highlights": [
+      "Diriyah – At-Turaif (UNESCO)",
+      "Fortaleza de Masmak",
+      "Sky Bridge do Kingdom Centre",
+      "Penhascos do \"Edge of the World\""
+     ],
+     "activities": [
+      "Jante no Bujairi Terrace, em Diriyah.",
+      "Descubra a história da Arábia no Museu Nacional.",
+      "Faça um passeio de 4x4 ao Edge of the World no fim da tarde."
+     ],
+     "foodAndDrinks": [
+      "Kabsa",
+      "Jareesh",
+      "Gahwa e tâmaras"
+     ],
+     "criticalTips": [
+      "A estrada até o Edge of the World é de terra e muito irregular; 4x4 e guia são indispensáveis.",
+      "Compre com antecedência os ingressos dos eventos do Riyadh Season."
+     ],
+     "mapsQuery": "Diriyah, Riyadh, Saudi Arabia"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: AlUla",
+     "recommendedDuration": "3 dias (sítios arqueológicos e deserto)",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Túmulos nabateus de Hegra (Mada'in Salih)",
+      "Rocha do Elefante (Jabal AlFil)",
+      "Cidade velha de adobe de AlUla",
+      "Prédio espelhado Maraya"
+     ],
+     "activities": [
+      "Visite Hegra em um passeio guiado.",
+      "Veja o pôr do sol do Harrat Viewpoint.",
+      "Participe de uma sessão de observação de estrelas no deserto."
+     ],
+     "foodAndDrinks": [
+      "Tâmaras de AlUla",
+      "Mandi",
+      "Champanhe saudita"
+     ],
+     "criticalTips": [
+      "Hegra só pode ser visitada em passeios com ingresso reservado previamente.",
+      "As noites e as manhãs são frescas; vista-se em camadas."
+     ],
+     "mapsQuery": "AlUla, Saudi Arabia"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Medina",
+     "recommendedDuration": "2 dias (cidade espiritual)",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Mesquita do Profeta e Al-Rawdah",
+      "Mesquita de Quba",
+      "Monte Uhud e cemitério dos mártires",
+      "Museu da Estação da Ferrovia do Hejaz"
+     ],
+     "activities": [
+      "Visite a Mesquita de Quba.",
+      "Conheça o cemitério dos mártires de Uhud.",
+      "Compre tâmaras Ajwa no mercado de tâmaras."
+     ],
+     "foodAndDrinks": [
+      "Tâmaras Ajwa",
+      "Mutabbaq",
+      "Kabsa"
+     ],
+     "criticalTips": [
+      "Para visitar Al-Rawdah, é preciso reservar pelo app Nusuk.",
+      "Respeite os limites da área do Haram fechada a não muçulmanos."
+     ],
+     "mapsQuery": "Medina, Saudi Arabia"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Jeddah",
+     "recommendedDuration": "2 dias (litoral do mar Vermelho)",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Cidade histórica de Al-Balad (UNESCO) e Casa Nasseef",
+      "Fonte do Rei Fahd",
+      "Corniche de Jeddah",
+      "Recifes de coral do mar Vermelho"
+     ],
+     "activities": [
+      "Passeie ao anoitecer entre as casas de pedra de coral de Al-Balad.",
+      "Curta o pôr do sol na Corniche.",
+      "Faça um passeio de barco com snorkel no mar Vermelho."
+     ],
+     "foodAndDrinks": [
+      "Mutabbaq",
+      "Ful com pão tamees",
+      "Sobia (bebida refrescante do Hejaz)"
+     ],
+     "criticalTips": [
+      "Viajantes muçulmanos chegam a Meca em cerca de 35 minutos no trem Haramain.",
+      "Explore Al-Balad no frescor da noite; durante o dia o calor é intenso."
+     ],
+     "mapsQuery": "Al-Balad, Jeddah, Saudi Arabia"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Kabsa (arroz temperado com frango ou cordeiro)",
+     "Mandi (carne assada em forno subterrâneo sobre arroz defumado)",
+     "Jareesh (mingau de trigo partido com iogurte)"
+    ],
+    "drinks": [
+     "Gahwa (café árabe com cardamomo e açafrão, servido com tâmaras)",
+     "Champanhe saudita (sem álcool: suco de maçã, água com gás e hortelã)",
+     "Laban (bebida de iogurte)"
+    ],
+    "streetFoods": [
+     "Mutabbaq (massa fina recheada com carne ou ovo, clássico de Jeddah)",
+     "Shawarma",
+     "Kleija (biscoitos de tâmara da região de Qasim)"
+    ],
+    "diningAdvice": "A comida é halal e não há álcool; a kabsa e o mandi chegam em grandes travessas para compartilhar. Alguns restaurantes mantêm áreas separadas para famílias e para solteiros."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptador de tomada tipo G",
+     "Roupas folgadas que cubram ombros e joelhos; lenço para as mulheres",
+     "Protetor solar, chapéu e óculos de sol",
+     "Casaquinho para as noites no deserto"
+    ],
+    "safetyAndEtiquette": [
+     "É proibido entrar com álcool, produtos de porco ou drogas; as punições são muito severas.",
+     "Não fotografe pessoas nem prédios oficiais sem permissão."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G"
+    ],
+    "voltage": "230V",
+    "frequency": "60Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Tomadas britânicas tipo G (três pinos retangulares); os plugues turcos não encaixam, leve um adaptador tipo G. Em prédios antigos ainda há tomadas tipo A/B (127V)."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "A água da torneira, dessalinizada, é tratada, mas as caixas-d'água nos telhados tornam desaconselhável bebê-la; a água engarrafada é barata e encontrada em todo lugar.",
+    "vaccines": [
+     "Vacinas de rotina (tríplice viral, tétano)",
+     "Hepatite A",
+     "Meningocócica ACWY (obrigatória para Umrah/Hajj)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "997"
+   },
+   "tipping": {
+    "custom": "A gorjeta não é obrigatória; nos restaurantes, é comum deixar 10 % ou arredondar.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Pequenas gorjetas para funcionários do hotel e guias são bem-vindas; na Umrah, alguns riais bastam para os motoristas de ônibus."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA de 15 %",
+    "minSpend": "500 SAR (na mesma loja)",
+    "customsNote": "Com o sistema lançado em 2025, compre apresentando o passaporte em lojas certificadas pela ZATCA/Global Blue e valide em até 90 dias nos quiosques da Global Blue dos aeroportos de Riad, Jeddah ou Dammam. Serviços, hotéis e alimentação ficam de fora."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 1,00 - 3,00",
+    "topCarriers": [
+     "STC",
+     "Mobily",
+     "Zain KSA"
+    ],
+    "airportSimTrapWarning": "Os balcões da STC, Mobily e Zain no aeroporto têm preços oficiais, mas os pacotes para turistas podem ser caros; o chip exige passaporte e impressão digital, então instalar um eSIM antes economiza tempo."
+   },
+   "touristScams": [
+    {
+     "title": "Agentes de Umrah sem licença",
+     "desc": "Intermediários sem licença vendem pacotes de Umrah falsos ou incompletos.",
+     "tip": "Reserve só pela plataforma Nusuk ou por agências licenciadas."
+    },
+    {
+     "title": "Táxis piratas no aeroporto",
+     "desc": "Motoristas sem licença cobram tarifas fixas altas no aeroporto.",
+     "tip": "Use Uber, Careem ou Jeeny, ou vá ao ponto oficial de táxis."
+    },
+    {
+     "title": "Batedores de carteira na multidão",
+     "desc": "Batedores de carteira e falsos coletores de doações nas multidões de Meca e Medina.",
+     "tip": "Deixe os objetos de valor no hotel e doe apenas a organizações oficiais."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Саудовский риял (SAR)",

@@ -636,6 +636,172 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Euro (EUR)",
+   "bestMonths": "Abril a junho e setembro a outubro (clima agradável, menos gente); julho e agosto são quentes e lotados; de dezembro a março, esqui nas Dolomitas",
+   "safety": {
+    "crimeRateSummary": "A criminalidade violenta raramente atinge turistas, mas batedores de carteira e golpes de rua são muito comuns em Roma, Florença, Nápoles, Milão e Veneza; tome cuidado redobrado na estação Termini, no metrô de Roma e nos monumentos cheios.",
+    "commonScams": [
+     "Pessoas que amarram uma pulseira “de presente” no seu pulso ou dão comida para pombos na Piazza del Duomo de Milão e em Roma e depois pedem dinheiro",
+     "“Gladiadores” fantasiados diante do Coliseu que cobram caro depois de uma foto",
+     "Grupos com falsos abaixo-assinados que distraem você enquanto roubam"
+    ],
+    "safeTravelTips": [
+     "No transporte e no meio da multidão, mantenha a bolsa fechada e na frente do corpo; não deixe o celular na mesa nem no bolso de trás.",
+     "Se alugar carro, cuidado com as câmeras das ZTL (zonas de tráfego limitado) nos centros históricos; as multas chegam meses depois.",
+     "Valide as passagens de trem regional (Regionale) antes de embarcar; no Vaticano e nas igrejas, cubra ombros e joelhos."
+    ],
+    "emergencyNumbers": {
+     "police": "113 / 112",
+     "ambulance": "118",
+     "general": "112"
+    },
+    "safetyScore": 55,
+    "safetyLevel": "Risco moderado",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60"
+   },
+   "internet": {
+    "networkCoverage": "4G sólido em todo o país e 5G difundido nas cidades; mais fraco nos Alpes e em alguns vales rurais",
+    "costPerGbUsd": "~US$ 0,50 - 2",
+    "esimAvailability": "Disponível – Airalo, Holafly, eSIMs com roaming na UE e planos para turistas da TIM / Vodafone",
+    "bestCarriers": [
+     "TIM",
+     "Vodafone Italia",
+     "WindTre",
+     "Iliad"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Muito bom – os trens de alta velocidade Frecciarossa e Italo ligam as cidades; metrô e ônibus nas grandes cidades, vaporetti em Veneza",
+    "costLevel": "Moderado a caro",
+    "singleTicketUsd": "~US$ 1,70 - 2,50 (Roma 1,50 €, Milão 2,20 €)",
+    "dailyPassUsd": "~US$ 8 - 11 (bilhete de 24 horas)",
+    "popularRideApps": [
+     "FREENOW",
+     "itTaxi",
+     "Uber",
+     "Trenitalia / Italo"
+    ],
+    "taxiAdvice": "Os táxis são caros; pegue os táxis brancos oficiais nos pontos ou chame pelo FREENOW / itTaxi. Em Roma há tarifa fixa entre o aeroporto de Fiumicino e o centro dentro das muralhas (cerca de 55-60 €); recuse quem se aproximar no aeroporto oferecendo “táxi”."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 70 - 100",
+    "dailyBudgetMidrangeUsd": "US$ 150 - 250",
+    "budgetMealUsd": "US$ 15 - 25",
+    "coffeeUsd": "US$ 1,30 - 2 (espresso no balcão)",
+    "waterBottleUsd": "US$ 0,50 - 1,50",
+    "hostelDormUsd": "US$ 35 - 60",
+    "hotel3StarUsd": "US$ 100 - 180",
+    "flightCostIndex": "Moderado (Istambul – Roma/Milão direto, ~2,5 h)",
+    "flightTip": "THY, Pegasus, AJet e ITA Airways voam direto de Istambul para Roma, Milão, Veneza, Nápoles e Bolonha. Planeje uma viagem com chegada e saída por cidades diferentes (por exemplo, chegar por Veneza e voltar por Roma); as passagens de trem rápido saem muito mais baratas compradas com antecedência."
+   }
+  },
+  "enc": {
+   "language": {
+    "officialLanguages": "Italiano; no Tirol do Sul o alemão também é oficial, e no Vale de Aosta, o francês.",
+    "englishProficiency": "De moderado a bom nas cidades turísticas e entre os jovens; limitado em cidades pequenas e entre os mais velhos.",
+    "phrases": [
+     {
+      "phrase": "Buongiorno",
+      "meaning": "Bom dia",
+      "translation": "Bom dia",
+      "pronunciation": "bwon-JOR-no"
+     },
+     {
+      "phrase": "Grazie",
+      "meaning": "Obrigado",
+      "translation": "Obrigado",
+      "pronunciation": "GRAH-tsee-eh"
+     },
+     {
+      "phrase": "Per favore",
+      "meaning": "Por favor",
+      "translation": "Por favor",
+      "pronunciation": "per fa-VO-reh"
+     },
+     {
+      "phrase": "Quanto costa?",
+      "meaning": "Quanto custa?",
+      "translation": "Quanto custa?",
+      "pronunciation": "KWAN-to KOS-ta"
+     },
+     {
+      "phrase": "Il conto, per favore",
+      "meaning": "A conta, por favor",
+      "translation": "A conta, por favor",
+      "pronunciation": "eel KON-to per fa-VO-reh"
+     }
+    ]
+   },
+   "culture": {
+    "festivals": [
+     "Carnaval de Veneza (máscaras históricas)",
+     "Palio de Siena (corrida de cavalos)",
+     "Festival da Canção de Sanremo",
+     "Semana de Moda de Milão",
+     "Ferragosto (15 de agosto)"
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F",
+     "L"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "A maioria das tomadas é do tipo L (três pinos redondos em linha) ou “bipasso”, que só aceitam plugues C finos; os plugues turcos F (Schuko), mais grossos, não entram em todas, então leve um adaptador pequeno."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "A água da torneira e a dos bebedouros de rua “nasone” é potável; em Roma você pode encher a garrafa de graça.",
+    "vaccines": [
+     "Vacinas de rotina (tríplice viral, tétano)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "118"
+   },
+   "tipping": {
+    "custom": "O “coperto” (couvert) e às vezes o “servizio” cobrados na conta não são gorjeta; a gorjeta não é obrigatória.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "Se gostou do atendimento, alguns euros ou 5-10% bastam; para o café no balcão, algumas moedas."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA de 22%; recupera-se 12-15% após as taxas",
+    "minSpend": "70,01 € por nota fiscal",
+    "customsNote": "Peça na loja a nota ou o formulário tax free (com passaporte) e valide-o no quiosque da alfândega (OTELLO) do último aeroporto de saída da UE, antes de despachar a bagagem."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 0,50 - 2",
+    "topCarriers": [
+     "TIM",
+     "Vodafone Italia",
+     "WindTre",
+     "Iliad"
+    ],
+    "airportSimTrapWarning": "Os pacotes para turistas do aeroporto podem ser caros; as lojas TIM, Vodafone, WindTre e Iliad na cidade vendem chips baratos com passaporte e código fiscal (codice fiscale). O roaming da UE não vale para chips turcos."
+   },
+   "touristScams": [
+    {
+     "title": "“Presentes” de pulseiras e rosas",
+     "desc": "Perto do Coliseu, do Duomo e de outras praças, alguém amarra um fio no seu pulso ou entrega uma rosa e depois pede dinheiro.",
+     "tip": "Não deixe que coloquem nada nas suas mãos; diga “No, grazie” e siga em frente."
+    },
+    {
+     "title": "Fotos com gladiadores",
+     "desc": "Os “gladiadores” fantasiados do Coliseu pedem 10-20 € por pessoa depois da foto.",
+     "tip": "Pergunte o preço antes da foto ou não pose."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Евро (EUR)",

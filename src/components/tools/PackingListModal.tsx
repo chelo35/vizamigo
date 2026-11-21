@@ -268,10 +268,10 @@ export const PackingListModal: React.FC<Props> = ({ isOpen, onClose }) => {
               type="button"
               onClick={onClose}
               className="inline-flex items-center gap-2 px-3 sm:px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-slate-100 hover:bg-slate-200 dark:bg-white/10 dark:hover:bg-white/15 text-slate-700 dark:text-slate-200 transition-all cursor-pointer shrink-0"
-              title={l('Geri', 'Back', 'Zurück', 'Atrás', 'Назад')}
+              title={l('Geri', 'Back', 'Zurück', 'Atrás', 'Назад', 'Voltar')}
             >
               <ArrowLeft className="w-4 h-4 text-slate-600 dark:text-slate-300" />
-              <span>{l('Geri', 'Back', 'Zurück', 'Atrás', 'Назад')}</span>
+              <span>{l('Geri', 'Back', 'Zurück', 'Atrás', 'Назад', 'Voltar')}</span>
             </button>
             <div className="flex items-center gap-2.5 min-w-0">
               <div className="w-9 h-9 rounded-xl bg-teal-500/10 text-teal-600 dark:text-teal-400 flex items-center justify-center shrink-0">
@@ -279,10 +279,10 @@ export const PackingListModal: React.FC<Props> = ({ isOpen, onClose }) => {
               </div>
               <div className="min-w-0">
                 <h1 id="packing-page-title" className="text-base sm:text-lg font-black text-slate-900 dark:text-white leading-tight truncate">
-                  {l('Akıllı Bavul Hazırlık Kontrol Listesi', 'Smart Packing Checklist', 'Smarte Packliste', 'Lista de Equipaje Inteligente', 'Умный список вещей')}
+                  {l('Akıllı Bavul Hazırlık Kontrol Listesi', 'Smart Packing Checklist', 'Smarte Packliste', 'Lista de Equipaje Inteligente', 'Умный список вещей', 'Lista de bagagem inteligente')}
                 </h1>
                 <p className="text-xs text-slate-500 dark:text-slate-400 truncate hidden sm:block">
-                  {l('Seyahat tipine özel liste, ilerleme çubuğu ve kalıcı hafıza', 'Customized by trip style, progress tracker & auto-saved', 'Passend zum Reisestil, mit Fortschrittsanzeige und automatisch gespeichert', 'Adaptada a tu tipo de viaje, con progreso y guardado automático', 'Под тип поездки, с прогрессом и автосохранением')}
+                  {l('Seyahat tipine özel liste, ilerleme çubuğu ve kalıcı hafıza', 'Customized by trip style, progress tracker & auto-saved', 'Passend zum Reisestil, mit Fortschrittsanzeige und automatisch gespeichert', 'Adaptada a tu tipo de viaje, con progreso y guardado automático', 'Под тип поездки, с прогрессом и автосохранением', 'Adaptada ao seu tipo de viagem, com progresso e salvamento automático')}
                 </p>
               </div>
             </div>
@@ -293,19 +293,19 @@ export const PackingListModal: React.FC<Props> = ({ isOpen, onClose }) => {
               type="button"
               onClick={handlePrintPdf}
               className="inline-flex items-center gap-1.5 px-3 sm:px-4 py-2 rounded-xl text-xs font-black bg-gradient-to-r from-[#F97316] to-[#FB7185] text-white hover:brightness-110 shadow-sm cursor-pointer transition-all"
-              title={l('PDF Olarak İndir / Yazdır', 'Print / Save as PDF', 'Drucken / als PDF speichern', 'Imprimir / guardar como PDF', 'Печать / сохранить в PDF')}
+              title={l('PDF Olarak İndir / Yazdır', 'Print / Save as PDF', 'Drucken / als PDF speichern', 'Imprimir / guardar como PDF', 'Печать / сохранить в PDF', 'Imprimir / salvar como PDF')}
             >
               <span>📄</span>
-              <span className="hidden sm:inline">{l('PDF / Yazdır', 'PDF / Print', 'PDF / Drucken', 'PDF / Imprimir', 'PDF / Печать')}</span>
+              <span className="hidden sm:inline">{l('PDF / Yazdır', 'PDF / Print', 'PDF / Drucken', 'PDF / Imprimir', 'PDF / Печать', 'PDF / Imprimir')}</span>
             </button>
             <button
               type="button"
               onClick={onClose}
               className="p-2 sm:px-3 sm:py-2 rounded-xl bg-slate-100 dark:bg-white/10 hover:bg-slate-200 dark:hover:bg-white/15 text-slate-600 dark:text-slate-300 transition-colors cursor-pointer shrink-0 inline-flex items-center gap-1.5"
-              title={l('Kapat', 'Close', 'Schließen', 'Cerrar', 'Закрыть')}
+              title={l('Kapat', 'Close', 'Schließen', 'Cerrar', 'Закрыть', 'Fechar')}
             >
               <X className="w-5 h-5" />
-              <span className="text-xs font-bold hidden sm:inline">{l('Kapat', 'Close', 'Schließen', 'Cerrar', 'Закрыть')}</span>
+              <span className="text-xs font-bold hidden sm:inline">{l('Kapat', 'Close', 'Schließen', 'Cerrar', 'Закрыть', 'Fechar')}</span>
             </button>
           </div>
         </div>
@@ -344,7 +344,7 @@ export const PackingListModal: React.FC<Props> = ({ isOpen, onClose }) => {
             <div className="flex-1">
               <div className="flex items-center justify-between text-xs font-bold mb-1.5">
                 <span className="text-slate-700 dark:text-slate-300">
-                  {completedCount} / {activeItems.length} {l('Madde Tamamlandı', 'Items Packed', 'Gepackt', 'Empacado', 'Собрано')}
+                  {completedCount} / {activeItems.length} {l('Madde Tamamlandı', 'Items Packed', 'Gepackt', 'Empacado', 'Собрано', 'Na mala')}
                 </span>
                 <span className="text-teal-600 dark:text-teal-400 font-mono font-black">{progressPercent}%</span>
               </div>
@@ -362,14 +362,14 @@ export const PackingListModal: React.FC<Props> = ({ isOpen, onClose }) => {
                 onClick={checkAll}
                 className="px-3 py-1.5 rounded-xl text-xs font-bold bg-teal-50 dark:bg-teal-950/40 text-teal-700 dark:text-teal-300 border border-teal-200 dark:border-teal-800/40 hover:bg-teal-100 transition-colors cursor-pointer"
               >
-                {l('Tümünü Seç', 'Check All', 'Alle wählen', 'Marcar Todo', 'Все')}
+                {l('Tümünü Seç', 'Check All', 'Alle wählen', 'Marcar Todo', 'Все', 'Marcar tudo')}
               </button>
               <button
                 type="button"
                 onClick={clearAll}
                 className="px-3 py-1.5 rounded-xl text-xs font-bold bg-slate-100 dark:bg-white/5 text-slate-600 dark:text-slate-400 hover:bg-slate-200 transition-colors cursor-pointer"
               >
-                {l('Temizle', 'Clear', 'Leeren', 'Limpiar', 'Сброс')}
+                {l('Temizle', 'Clear', 'Leeren', 'Limpiar', 'Сброс', 'Limpar')}
               </button>
             </div>
           </div>
@@ -437,7 +437,7 @@ export const PackingListModal: React.FC<Props> = ({ isOpen, onClose }) => {
             value={newCustomText}
             onChange={(e) => setNewCustomText(e.target.value)}
             onKeyDown={(e) => e.key === 'Enter' && addCustomItem()}
-            placeholder={l('Özel eşya ekle... (örn: Drone, Dalış maskesi)', 'Add custom item... (e.g. Drone, Snorkel mask)', 'Eigenen Gegenstand hinzufügen...', 'Añadir elemento...', 'Добавить вещь...')}
+            placeholder={l('Özel eşya ekle... (örn: Drone, Dalış maskesi)', 'Add custom item... (e.g. Drone, Snorkel mask)', 'Eigenen Gegenstand hinzufügen...', 'Añadir elemento...', 'Добавить вещь...', 'Adicionar item...')}
             className="flex-1 px-4 py-2.5 text-xs sm:text-sm rounded-xl bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-1 focus:ring-teal-500"
           />
           <button
@@ -446,7 +446,7 @@ export const PackingListModal: React.FC<Props> = ({ isOpen, onClose }) => {
             className="px-5 py-2.5 rounded-xl bg-teal-600 hover:bg-teal-500 text-white text-xs sm:text-sm font-bold flex items-center gap-1.5 transition-colors cursor-pointer shadow-sm shrink-0"
           >
             <Plus className="w-4 h-4" />
-            <span>{l('Ekle', 'Add', 'Hinzufügen', 'Añadir', 'Добавить')}</span>
+            <span>{l('Ekle', 'Add', 'Hinzufügen', 'Añadir', 'Добавить', 'Adicionar')}</span>
           </button>
         </div>
       </div>

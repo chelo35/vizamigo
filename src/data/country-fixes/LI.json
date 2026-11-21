@@ -1515,6 +1515,385 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Franco suíço (CHF) – o euro é aceito em alguns lugares, mas o troco vem em CHF",
+   "plugType": "Tipo C, J (230V, 50Hz)",
+   "bestMonths": "Maio – setembro (trilhas e rotas do vinho); de dezembro a março, temporada de esqui em Malbun",
+   "safety": {
+    "safetyScore": 85,
+    "safetyLevel": "Excepcionalmente seguro",
+    "badgeColor": "bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-900/60",
+    "crimeRateSummary": "Um dos países mais seguros do mundo, com criminalidade baixíssima. Os principais riscos são as mudanças bruscas de tempo na montanha e o perigo de avalanches no inverno.",
+    "commonScams": [
+     "Cotações muito ruins ao pagar em euros",
+     "A armadilha da conversão dinâmica de moeda (\"pagar em liras turcas?\") no cartão",
+     "\"Carimbos de passaporte de lembrança\" caros e preços de lojas turísticas"
+    ],
+    "safeTravelTips": [
+     "Pague em CHF, a moeda local; recuse a conversão dinâmica.",
+     "Confira a previsão do tempo antes das trilhas de montanha e não saia dos caminhos sinalizados.",
+     "A maioria das lojas fecha aos domingos; planeje as compras."
+    ],
+    "emergencyNumbers": {
+     "police": "117",
+     "ambulance": "144",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Excelente 4G/5G em todo o país; boa cobertura até nos vales de montanha",
+    "costPerGbUsd": "~US$ 1 - 4",
+    "esimAvailability": "Excelente – eSIMs internacionais e operadoras suíças/liechtensteinenses funcionam sem problemas. Observação: como o país é membro do EEE, valem as regras de roaming da UE, mas o roaming com linhas turcas é caro",
+    "bestCarriers": [
+     "FL1 (Telecom Liechtenstein)",
+     "Swisscom",
+     "Salt"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Muito bom – quase não há trem (só algumas paradas); os ônibus LIEmobil ligam o país inteiro de hora em hora e com pontualidade",
+    "costLevel": "Muito caro",
+    "singleTicketUsd": "US$ 3 - 5",
+    "dailyPassUsd": "US$ 6 - 12",
+    "popularRideApps": [
+     "App LIEmobil",
+     "SBB Mobile (conexões suíças)",
+     "Empresas locais de táxi"
+    ],
+    "taxiAdvice": "Não há Uber, e os táxis são muito caros. Os ônibus LIEmobil vão a todo lugar; vindo da Suíça, você troca para o ônibus nas estações de Sargans ou Buchs SG."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 110 - 160",
+    "dailyBudgetMidrangeUsd": "US$ 230 - 350",
+    "budgetMealUsd": "US$ 25 - 40",
+    "coffeeUsd": "US$ 4,50 - 6",
+    "waterBottleUsd": "A água da torneira é de excelente qualidade e potável; você também pode encher sua garrafa nas fontes públicas.",
+    "hostelDormUsd": "US$ 45 - 65",
+    "hotel3StarUsd": "US$ 160 - 260",
+    "flightCostIndex": "Médio (via Zurique)",
+    "flightTip": "Liechtenstein não tem aeroporto. Voe da Turquia para Zurique (ZRH), pegue o trem até Sargans ou Buchs SG (~1h15) e depois o ônibus até Vaduz. Os aeroportos de St. Gallen-Altenrhein ou Friedrichshafen são alternativas."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Cumprimente com \"Grüezi\" ao entrar em uma loja ou restaurante.",
+     "A pontualidade é fundamental; chegue na hora exata a compromissos e visitas.",
+     "Não faça barulho aos domingos e feriados (cortar a grama ou ouvir música alta é malvisto)."
+    ],
+    "festivals": [
+     "Dia Nacional (Staatsfeiertag) – 15 de agosto: o jardim do castelo de Vaduz abre ao público, com fogos de artifício",
+     "Funkensonntag – primeiro domingo da Quaresma, com enormes torres de fogueira",
+     "Alpabfahrt – em setembro, as vacas enfeitadas descem dos pastos alpinos"
+    ],
+    "lifestyle": "Um principado pequeno, organizado e próspero: cultura de vilarejo, vinhedos no vale do Reno, trilhas alpinas e um forte setor industrial e financeiro."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Castelo de Vaduz (por fora; residência da família principesca)",
+     "Kunstmuseum Liechtenstein e Hilti Art Foundation",
+     "Museu Nacional de Liechtenstein",
+     "Adega do Príncipe (Hofkellerei)",
+     "Malbun e a trilha Fürstensteig",
+     "Castelo de Gutenberg (Balzers)"
+    ],
+    "bestSeasons": "Maio – setembro (trilhas e rotas do vinho); de dezembro a março, temporada de esqui em Malbun",
+    "travelStyleTip": "O país tem 25 km e dá para percorrê-lo facilmente em 2-4 dias. O ideal é combiná-lo com a Suíça (Sargans, Maienfeld) ou a Áustria (Feldkirch)."
+   },
+   "religion": {
+    "primaryReligions": "Católicos (~71 %, igreja oficial do Estado), protestantes (~7 %), muçulmanos (~6 %), sem religião e outros.",
+    "respectNorms": "Faça silêncio nas igrejas e não fique circulando durante a missa; as festas católicas (por exemplo, 15 de agosto e Corpus Christi) são feriados oficiais.",
+    "sacredSites": [
+     "Catedral de São Florino (Vaduz)",
+     "Igreja de peregrinação Maria zum Trost (Dux, Schaan)",
+     "Capela de São Mamerto (Triesen)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Alemão (oficial); no dia a dia, dialeto alemânico (próximo do alemão suíço).",
+    "englishProficiency": "Bom – o inglês é comum no turismo, nos hotéis e nos negócios.",
+    "phrases": [
+     {
+      "phrase": "Grüezi",
+      "meaning": "Olá (formal)",
+      "translation": "Olá (formal)",
+      "pronunciation": "GRUE-tsee"
+     },
+     {
+      "phrase": "Hoi",
+      "meaning": "Oi (informal)",
+      "translation": "Oi (informal)",
+      "pronunciation": "hoy"
+     },
+     {
+      "phrase": "Merci vilmal",
+      "meaning": "Muito obrigado",
+      "translation": "Muito obrigado",
+      "pronunciation": "MER-see FEEL-mal"
+     },
+     {
+      "phrase": "Uf Widerluege",
+      "meaning": "Tchau",
+      "translation": "Tchau",
+      "pronunciation": "oof VEE-der-lue-geh"
+     },
+     {
+      "phrase": "Was choschtet das?",
+      "meaning": "Quanto custa isto?",
+      "translation": "Quanto custa isto?",
+      "pronunciation": "vas KHOSH-tet das"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Os senhorios de Vaduz e Schellenberg foram comprados pela família Liechtenstein em 1699 e 1712, e o imperador do Sacro Império os elevou a principado em 1719. O país se tornou soberano em 1806 e aboliu seu exército em 1868. Desde 1923 mantém uma união aduaneira com a Suíça; entrou na ONU em 1990, no Espaço Econômico Europeu em 1995 e no Espaço Schengen em 2011.",
+    "milestones": [
+     "1719: Fundação do Principado de Liechtenstein",
+     "1868: Abolição do exército",
+     "1923: União aduaneira com a Suíça",
+     "1995: Entrada no Espaço Econômico Europeu"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Käsknöpfle (nhoque de queijo com cebola frita e compota de maçã)",
+     "Ribel (prato tradicional de sêmola de milho)",
+     "Hafalaab (sopa com presunto e bolinhos de farinha)"
+    ],
+    "traditionalDrinks": [
+     "Vinhos de Liechtenstein (Pinot Noir de Vaduz)",
+     "Cerveja Liechtensteiner Brauhaus",
+     "Suco de maçã fresco e sidra (Most)"
+    ],
+    "streetFoodAndDesserts": [
+     "Bratwurst (em barracas de rua)",
+     "Birnbrot (pão de pera)",
+     "Rösti (panqueca de batata ralada)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Josef Rheinberger (compositor nascido em Vaduz)",
+     "Hanni Wenzel (campeã olímpica de esqui em 1980)",
+     "Tina Weirather (esquiadora campeã da Copa do Mundo)"
+    ],
+    "strongSectors": [
+     "Fabricação de precisão (Hilti, tecnologia odontológica Ivoclar)",
+     "Bancos e gestão de patrimônio (LGT)",
+     "Máquinas e componentes automotivos"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Cartões e pagamento por aproximação funcionam em todo lugar; a moeda principal é o CHF. Dá para pagar em euros, mas com cotação ruim.",
+    "tippingCulture": "O serviço está incluído; arredondar ou deixar 5-10 % é um gesto de cortesia.",
+    "economicPillars": "Indústria (máquinas, tecnologia odontológica), serviços financeiros e exportações."
+   }
+  },
+  "itin": {
+   "routeName": "Roteiro do Principado: Balzers, Vaduz, Triesenberg e Malbun e o Unterland",
+   "routeSummary": "Roteiro de 4 dias que começa no castelo de Gutenberg, em Balzers, no sul, segue pelos museus da capital Vaduz, sobe até as vistas alpinas de Triesenberg e Malbun e termina nos vilarejos do Unterland, no norte.",
+   "totalDays": 4,
+   "idealDurationText": "Roteiro de 4 dias",
+   "bestSeason": "Maio – setembro (trilhas e rotas do vinho); de dezembro a março, temporada de esqui em Malbun",
+   "transportMode": "Ônibus LIEmobil + a pé (ou bicicleta alugada)",
+   "paceLevel": "Tranquilo (cultura e natureza)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Balzers e Triesen (sul)",
+     "recommendedDuration": "Meio dia",
+     "durationBadge": "Meio dia",
+     "highlights": [
+      "Castelo de Gutenberg",
+      "Capela de São Mamerto",
+      "Ciclovia sobre o dique do Reno"
+     ],
+     "activities": [
+      "Suba a pé a colina do castelo.",
+      "Pedale pelo dique do Reno.",
+      "Percorra o centro antigo de Triesen."
+     ],
+     "foodAndDrinks": [
+      "Käsknöpfle",
+      "Sidra local"
+     ],
+     "criticalTips": [
+      "O interior do castelo de Gutenberg só abre em eventos.",
+      "Confira os horários de ônibus no app LIEmobil."
+     ],
+     "mapsQuery": "Balzers, Liechtenstein"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Vaduz (capital)",
+     "recommendedDuration": "1,5 dia",
+     "durationBadge": "1,5 dia",
+     "highlights": [
+      "Vistas do castelo de Vaduz",
+      "Kunstmuseum Liechtenstein",
+      "Museu Nacional e Museu Postal",
+      "Adega do Príncipe"
+     ],
+     "activities": [
+      "Pegue o caminho em direção ao castelo para ver a cidade.",
+      "Faça uma degustação de vinhos na Hofkellerei.",
+      "Consiga um carimbo de lembrança no centro de informações turísticas."
+     ],
+     "foodAndDrinks": [
+      "Ribel",
+      "Pinot Noir de Vaduz"
+     ],
+     "criticalTips": [
+      "O castelo é a residência da família principesca; não é possível visitá-lo por dentro.",
+      "Os restaurantes são caros; prefira os menus de almoço."
+     ],
+     "mapsQuery": "Vaduz, Liechtenstein"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Triesenberg e Malbun (Alpes)",
+     "recommendedDuration": "1 dia",
+     "durationBadge": "1 dia",
+     "highlights": [
+      "Museu Walser (Triesenberg)",
+      "Malbun e teleférico de cadeira de Sareis",
+      "Trilha Fürstensteig"
+     ],
+     "activities": [
+      "Suba até Sareis para ver os Alpes.",
+      "Esquie em Malbun no inverno.",
+      "Faça a Fürstensteig se tiver experiência."
+     ],
+     "foodAndDrinks": [
+      "Hafalaab",
+      "Chocolate quente"
+     ],
+     "criticalTips": [
+      "A Fürstensteig é estreita e tem precipícios; é preciso calçado adequado e não ter medo de altura.",
+      "O tempo na montanha muda rápido; leve capa de chuva."
+     ],
+     "mapsQuery": "Malbun, Liechtenstein"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Schaan e o Unterland (norte)",
+     "recommendedDuration": "Meio dia",
+     "durationBadge": "Meio dia",
+     "highlights": [
+      "Igreja de peregrinação de Dux (Schaan)",
+      "Ruínas dos castelos de Schellenberg",
+      "Reserva natural Ruggeller Riet"
+     ],
+     "activities": [
+      "Caminhe entre os vilarejos do Unterland.",
+      "Veja os campos de íris de Ruggell em maio–junho.",
+      "Coma em uma pousada local em Eschen."
+     ],
+     "foodAndDrinks": [
+      "Bratwurst",
+      "Cerveja Liechtensteiner Brauhaus"
+     ],
+     "criticalTips": [
+      "As lojas fecham aos domingos.",
+      "Feldkirch (Áustria) fica perto e rende um bom passeio."
+     ],
+     "mapsQuery": "Schellenberg, Liechtenstein"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Käsknöpfle (nhoque de queijo com cebola frita e compota de maçã)",
+     "Ribel (prato tradicional de sêmola de milho)",
+     "Hafalaab (sopa com presunto e bolinhos de farinha)"
+    ],
+    "drinks": [
+     "Vinhos de Liechtenstein (Pinot Noir de Vaduz)",
+     "Cerveja Liechtensteiner Brauhaus",
+     "Suco de maçã fresco e sidra (Most)"
+    ],
+    "streetFoods": [
+     "Bratwurst (em barracas de rua)",
+     "Birnbrot (pão de pera)",
+     "Rösti (panqueca de batata ralada)"
+    ],
+    "diningAdvice": "A comida tem preços suíços; o \"Mittagsmenü\" do almoço sai mais em conta. Os supermercados (Migros, Coop) são uma boa opção econômica."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptador de tomada tipo J/C (suíço)",
+     "Calçado de montanha e capa de chuva",
+     "Cartão de crédito para pagar em CHF",
+     "Roupas de frio no inverno"
+    ],
+    "safetyAndEtiquette": [
+     "Seja pontual e respeite o descanso de domingo.",
+     "Na montanha, não saia das trilhas sinalizadas."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "J"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Tomada suíça de três pinos redondos (tipo J); os plugues finos de dois pinos (C) encaixam, mas os plugues grossos com aterramento (F) usados na Turquia não: é preciso adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "A água da torneira é de excelente qualidade e potável; você também pode encher sua garrafa nas fontes públicas.",
+    "vaccines": [
+     "Vacinas de rotina",
+     "Vacina contra encefalite transmitida por carrapatos (TBE) – para quem faz trilhas em florestas e montanhas"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "144"
+   },
+   "tipping": {
+    "custom": "O serviço está incluído; arredondar ou deixar 5-10 % é cortesia.",
+    "standardPercent": 5,
+    "rule": "round_up",
+    "note": "Não é obrigatório; deixa-se algo a mais por um bom atendimento."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA de 8,1 % (sistema compartilhado com a Suíça)",
+    "minSpend": "300 CHF por loja",
+    "customsNote": "Peça o formulário tax-free nas lojas participantes; para a devolução, a alfândega suíça precisa carimbar a mercadoria e o formulário na saída (por exemplo, no aeroporto de Zurique)."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 1,00 - 4,00",
+    "topCarriers": [
+     "FL1 (Telecom Liechtenstein)",
+     "Swisscom",
+     "Salt"
+    ],
+    "airportSimTrapWarning": "No aeroporto de Zurique é fácil conseguir chip e eSIM; o roaming com uma linha turca pode sair muito caro, então uma eSIM é mais barata."
+   },
+   "touristScams": [
+    {
+     "title": "Cotação ruim do euro",
+     "desc": "Margem alta ao pagar em euros, com troco em CHF.",
+     "tip": "Pague com cartão em CHF."
+    },
+    {
+     "title": "Conversão dinâmica de moeda",
+     "desc": "A maquininha oferece converter o pagamento para liras turcas.",
+     "tip": "Escolha sempre a moeda local (CHF)."
+    },
+    {
+     "title": "Preços de lojas turísticas",
+     "desc": "Lembranças caríssimas no centro de Vaduz.",
+     "tip": "Compare preços; os carimbos saem mais em conta no centro de informações turísticas."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Швейцарский франк (CHF) – евро местами принимают, но сдачу дают во франках",

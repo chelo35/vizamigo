@@ -55,16 +55,16 @@ const StyleBar: React.FC<{ style: MapStyle; setStyle: (s: MapStyle) => void; lab
   return (
     <div className="vz-wm-tools">
       <Segmented
-        label={l('Harita stili', 'Map style', 'Kartenstil', 'Estilo', 'Стиль')}
+        label={l('Harita stili', 'Map style', 'Kartenstil', 'Estilo', 'Стиль', 'Estilo')}
         value={style}
         onChange={setStyle}
         options={[
-          { id: 'sea', label: l('Deniz', 'Sea', 'Meer', 'Mar', 'Море') },
-          { id: 'road', label: l('Yol', 'Road', 'Straße', 'Calles', 'Дороги') },
-          { id: 'satellite', label: l('Uydu', 'Satellite', 'Satellit', 'Satélite', 'Спутник') }
+          { id: 'sea', label: l('Deniz', 'Sea', 'Meer', 'Mar', 'Море', 'Mar') },
+          { id: 'road', label: l('Yol', 'Road', 'Straße', 'Calles', 'Дороги', 'Ruas') },
+          { id: 'satellite', label: l('Uydu', 'Satellite', 'Satellit', 'Satélite', 'Спутник', 'Satélite') }
         ]}
       />
-      <Chip on={labels} icon={labels ? 'check' : 'plus'} onClick={() => setLabels(!labels)}>{l('Etiketler', 'Labels', 'Beschriftung', 'Etiquetas', 'Подписи')}</Chip>
+      <Chip on={labels} icon={labels ? 'check' : 'plus'} onClick={() => setLabels(!labels)}>{l('Etiketler', 'Labels', 'Beschriftung', 'Etiquetas', 'Подписи', 'Rótulos')}</Chip>
     </div>
   );
 };
@@ -114,11 +114,11 @@ export const VisaWorldMap: React.FC<{ passport: string; onOpenCountry: (c: strin
   }, [q, all, language]);
 
   const catLabel: Record<VisaCat, string> = {
-    id: l('Kimlikle', 'ID card', 'Ausweis', 'Con DNI', 'По ID'),
-    free: l('Vizesiz', 'Visa-free', 'Visumfrei', 'Sin visado', 'Без визы'),
-    evisa: l('E-vize / ETA', 'eVisa / ETA', 'eVisum / ETA', 'eVisa / ETA', 'eVisa / ETA'),
-    voa: l('Kapıda vize', 'On arrival', 'Bei Ankunft', 'A la llegada', 'По прилёте'),
-    visa: l('Vize gerekli', 'Visa required', 'Visum nötig', 'Visado', 'Нужна виза')
+    id: l('Kimlikle', 'ID card', 'Ausweis', 'Con DNI', 'По ID', 'Com RG'),
+    free: l('Vizesiz', 'Visa-free', 'Visumfrei', 'Sin visado', 'Без визы', 'Sem visto'),
+    evisa: l('E-vize / ETA', 'eVisa / ETA', 'eVisum / ETA', 'eVisa / ETA', 'eVisa / ETA', 'e-Visa / ETA'),
+    voa: l('Kapıda vize', 'On arrival', 'Bei Ankunft', 'A la llegada', 'По прилёте', 'Na chegada'),
+    visa: l('Vize gerekli', 'Visa required', 'Visum nötig', 'Visado', 'Нужна виза', 'Visto')
   };
   const toggleCat = (c: VisaCat) => setCats(cats.includes(c) ? (cats.length > 1 ? cats.filter((x) => x !== c) : cats) : [...cats, c]);
 
@@ -127,13 +127,13 @@ export const VisaWorldMap: React.FC<{ passport: string; onOpenCountry: (c: strin
       <div className="vz-wm-head">
         <div className="vz-wm-search">
           <Icon name="search" size={18} duo={false} />
-          <label htmlFor="vz-wm-q" className="sr-only">{l('Haritada ülke bul', 'Find a country on the map', 'Land finden', 'Buscar país', 'Найти страну')}</label>
+          <label htmlFor="vz-wm-q" className="sr-only">{l('Haritada ülke bul', 'Find a country on the map', 'Land finden', 'Buscar país', 'Найти страну', 'Buscar país')}</label>
           <input
             id="vz-wm-q"
             type="search"
             autoComplete="off"
             value={q}
-            placeholder={l('Haritada ülke bul…', 'Find a country on the map…', 'Land auf der Karte…', 'Busca un país…', 'Найти страну…')}
+            placeholder={l('Haritada ülke bul…', 'Find a country on the map…', 'Land auf der Karte…', 'Busca un país…', 'Найти страну…', 'Busque um país…')}
             onChange={(e) => setQ(e.target.value)}
             onKeyDown={(e) => {
               if (e.key === 'Enter' && matches[0]) {
@@ -157,7 +157,7 @@ export const VisaWorldMap: React.FC<{ passport: string; onOpenCountry: (c: strin
         <StyleBar style={style} setStyle={setStyle} labels={labels} setLabels={setLabels} />
       </div>
 
-      <div className="vz-legend vz-wm-legend" role="group" aria-label={l('Vize durumuna göre süz', 'Filter by visa status', 'Nach Visastatus', 'Filtrar por visado', 'Фильтр по визе')}>
+      <div className="vz-legend vz-wm-legend" role="group" aria-label={l('Vize durumuna göre süz', 'Filter by visa status', 'Nach Visastatus', 'Filtrar por visado', 'Фильтр по визе', 'Filtrar por visto')}>
         {(Object.keys(CAT_HEX) as VisaCat[]).map((c) => (
           <button key={c} type="button" className={`vz-wm-cat${cats.includes(c) ? ' on' : ''}`} aria-pressed={cats.includes(c)} onClick={() => toggleCat(c)}>
             <i style={{ background: CAT_HEX[c] }} />
@@ -166,7 +166,7 @@ export const VisaWorldMap: React.FC<{ passport: string; onOpenCountry: (c: strin
         ))}
       </div>
       <Chips scroll>
-        <Chip on={!region} onClick={() => setRegion('')}>{l('Bütün dünya', 'Whole world', 'Ganze Welt', 'Todo el mundo', 'Весь мир')}</Chip>
+        <Chip on={!region} onClick={() => setRegion('')}>{l('Bütün dünya', 'Whole world', 'Ganze Welt', 'Todo el mundo', 'Весь мир', 'Mundo todo')}</Chip>
         {Object.keys(REGIONS).map((r) => (
           <Chip key={r} on={region === r} onClick={() => setRegion(region === r ? '' : r)}>{getRegionName(r, language)}</Chip>
         ))}
@@ -176,7 +176,7 @@ export const VisaWorldMap: React.FC<{ passport: string; onOpenCountry: (c: strin
         <SeaMap
           points={points}
           height={height}
-          ariaLabel={l('Vize durumuna göre renkli dünya haritası', 'World map coloured by visa status', 'Weltkarte nach Visastatus', 'Mapa mundial por visado', 'Карта мира по визам')}
+          ariaLabel={l('Vize durumuna göre renkli dünya haritası', 'World map coloured by visa status', 'Weltkarte nach Visastatus', 'Mapa mundial por visado', 'Карта мира по визам', 'Mapa-múndi por tipo de visto')}
           styleMode={style}
           labels={labels}
           selectedId={sel}
@@ -188,7 +188,7 @@ export const VisaWorldMap: React.FC<{ passport: string; onOpenCountry: (c: strin
         ) : (
           <div className="vz-wm-hint">
             <Icon name="pin" size={18} duo={false} />
-            <span>{l(`${shown.length} ülke gösteriliyor. Bir noktaya dokun, ülkenin özeti burada açılsın.`, `Showing ${shown.length} countries. Tap a dot to see its summary here.`, `${shown.length} Länder. Punkt antippen für Details.`, `${shown.length} países. Toca un punto.`, `${shown.length} стран. Нажмите на точку.`)}</span>
+            <span>{l(`${shown.length} ülke gösteriliyor. Bir noktaya dokun, ülkenin özeti burada açılsın.`, `Showing ${shown.length} countries. Tap a dot to see its summary here.`, `${shown.length} Länder. Punkt antippen für Details.`, `${shown.length} países. Toca un punto.`, `${shown.length} стран. Нажмите на точку.`, `${shown.length} países. Toque em um ponto.`)}</span>
           </div>
         )}
       </div>
@@ -227,26 +227,26 @@ const CountryMapCard: React.FC<{ code: string; item?: CountryItem; onClose: () =
             <span className="vz-muted" style={{ fontSize: 13 }}>{[g?.capital && capitalName(code, language, g.capital), g?.mainHub && `✈ ${g.mainHub}`, getRegionName(countryToRegion[code] || '', language)].filter(Boolean).join(' · ')}</span>
           </span>
         </span>
-        <button type="button" className="vz-iconbtn" onClick={onClose} aria-label={l('Kapat', 'Close', 'Schließen', 'Cerrar', 'Закрыть')}><Icon name="close" size={16} duo={false} /></button>
+        <button type="button" className="vz-iconbtn" onClick={onClose} aria-label={l('Kapat', 'Close', 'Schließen', 'Cerrar', 'Закрыть', 'Fechar')}><Icon name="close" size={16} duo={false} /></button>
       </div>
       <div className="vz-row-flex" style={{ gap: 8 }}>
         <VisaBadge item={item} big />
-        {d && <span className="vz-badge tone-sea">{l(`${d} gün`, `${d} days`, `${d} Tage`, `${d} días`, `${d} дн.`)}</span>}
+        {d && <span className="vz-badge tone-sea">{l(`${d} gün`, `${d} days`, `${d} Tage`, `${d} días`, `${d} дн.`, `${d} dias`)}</span>}
       </div>
       {ins ? (
         <dl className="vz-wm-facts">
-          <div><dt>{l('Güvenlik', 'Safety', 'Sicherheit', 'Seguridad', 'Безопасность')}</dt><dd>{ins.safety}/100</dd></div>
-          <div><dt>{l('Mobil internet', 'Mobile data', 'Mobiles Internet', 'Internet móvil', 'Моб. интернет')}</dt><dd>{ins.mbps} Mbps</dd></div>
-          <div><dt>{l('1 GB', '1 GB', '1 GB', '1 GB', '1 ГБ')}</dt><dd>{ins.gb}</dd></div>
-          <div><dt>{l('Sırt çantalı / gün', 'Backpacker / day', 'Rucksack / Tag', 'Mochilero / día', 'Бюджет / день')}</dt><dd>{ins.backpacker}</dd></div>
-          <div className="wide"><dt>{l('Ulaşım', 'Transport', 'Verkehr', 'Transporte', 'Транспорт')}</dt><dd>{ins.transport}</dd></div>
-          <div className="wide"><dt>{l('En iyi aylar', 'Best months', 'Beste Monate', 'Mejores meses', 'Лучшие месяцы')}</dt><dd>{ins.best}</dd></div>
+          <div><dt>{l('Güvenlik', 'Safety', 'Sicherheit', 'Seguridad', 'Безопасность', 'Segurança')}</dt><dd>{ins.safety}/100</dd></div>
+          <div><dt>{l('Mobil internet', 'Mobile data', 'Mobiles Internet', 'Internet móvil', 'Моб. интернет', 'Internet móvel')}</dt><dd>{ins.mbps} Mbps</dd></div>
+          <div><dt>{l('1 GB', '1 GB', '1 GB', '1 GB', '1 ГБ', '1 GB')}</dt><dd>{ins.gb}</dd></div>
+          <div><dt>{l('Sırt çantalı / gün', 'Backpacker / day', 'Rucksack / Tag', 'Mochilero / día', 'Бюджет / день', 'Mochileiro / dia')}</dt><dd>{ins.backpacker}</dd></div>
+          <div className="wide"><dt>{l('Ulaşım', 'Transport', 'Verkehr', 'Transporte', 'Транспорт', 'Transporte')}</dt><dd>{ins.transport}</dd></div>
+          <div className="wide"><dt>{l('En iyi aylar', 'Best months', 'Beste Monate', 'Mejores meses', 'Лучшие месяцы', 'Melhores meses')}</dt><dd>{ins.best}</dd></div>
         </dl>
       ) : (
         <div className="vz-skel" style={{ height: 110 }} />
       )}
       <div className="vz-actions">
-        <Btn small onClick={() => onOpenCountry(code)}>{l('Ülke sayfası', 'Country page', 'Länderseite', 'Página del país', 'Страница страны')}</Btn>
+        <Btn small onClick={() => onOpenCountry(code)}>{l('Ülke sayfası', 'Country page', 'Länderseite', 'Página del país', 'Страница страны', 'Página do país')}</Btn>
         <LinkBtn small variant="ghost" icon="map" href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(getCountryName(code, 'en'))}`}>Google Maps</LinkBtn>
       </div>
     </aside>
@@ -317,13 +317,13 @@ export const RadarWorldMap: React.FC<{ passport: string; onOpenCountry: (c: stri
     <div className="vz-wm">
       <div className="vz-wm-head">
         <Segmented
-          label={l('Gösterilen', 'Showing', 'Anzeige', 'Mostrar', 'Показать')}
+          label={l('Gösterilen', 'Showing', 'Anzeige', 'Mostrar', 'Показать', 'Mostrar')}
           value={mode}
           onChange={setMode}
           options={[
-            { id: 'time', label: l('Saat', 'Time', 'Zeit', 'Hora', 'Время') },
-            { id: 'weather', label: l('Hava', 'Weather', 'Wetter', 'Tiempo', 'Погода') },
-            { id: 'fx', label: l('Döviz', 'Currency', 'Währung', 'Divisas', 'Валюта') }
+            { id: 'time', label: l('Saat', 'Time', 'Zeit', 'Hora', 'Время', 'Hora') },
+            { id: 'weather', label: l('Hava', 'Weather', 'Wetter', 'Tiempo', 'Погода', 'Clima') },
+            { id: 'fx', label: l('Döviz', 'Currency', 'Währung', 'Divisas', 'Валюта', 'Câmbio') }
           ]}
         />
         {mode === 'weather' && (
@@ -332,24 +332,24 @@ export const RadarWorldMap: React.FC<{ passport: string; onOpenCountry: (c: stri
         <StyleBar style={style} setStyle={setStyle} labels={labels} setLabels={setLabels} />
       </div>
       <Chips scroll>
-        <Chip on={!region} onClick={() => setRegion('')}>{l('Bütün dünya', 'Whole world', 'Ganze Welt', 'Todo el mundo', 'Весь мир')}</Chip>
+        <Chip on={!region} onClick={() => setRegion('')}>{l('Bütün dünya', 'Whole world', 'Ganze Welt', 'Todo el mundo', 'Весь мир', 'Mundo todo')}</Chip>
         {HUB_REGIONS.map((r) => (
           <Chip key={r} on={region === r} onClick={() => setRegion(region === r ? '' : r)}>
-            {({ Europe: l('Avrupa', 'Europe', 'Europa', 'Europa', 'Европа'), 'Middle East': l('Orta Doğu', 'Middle East', 'Nahost', 'Oriente Medio', 'Ближний Восток'), Asia: l('Asya', 'Asia', 'Asien', 'Asia', 'Азия'), Africa: l('Afrika', 'Africa', 'Afrika', 'África', 'Африка'), Americas: l('Amerika', 'Americas', 'Amerika', 'América', 'Америка'), Oceania: l('Okyanusya', 'Oceania', 'Ozeanien', 'Oceanía', 'Океания') } as Record<string, string>)[r]}
+            {({ Europe: l('Avrupa', 'Europe', 'Europa', 'Europa', 'Европа', 'Europa'), 'Middle East': l('Orta Doğu', 'Middle East', 'Nahost', 'Oriente Medio', 'Ближний Восток', 'Oriente Médio'), Asia: l('Asya', 'Asia', 'Asien', 'Asia', 'Азия', 'Ásia'), Africa: l('Afrika', 'Africa', 'Afrika', 'África', 'Африка', 'África'), Americas: l('Amerika', 'Americas', 'Amerika', 'América', 'Америка', 'Américas'), Oceania: l('Okyanusya', 'Oceania', 'Ozeanien', 'Oceanía', 'Океания', 'Oceania') } as Record<string, string>)[r]}
           </Chip>
         ))}
       </Chips>
       <div className="vz-legend">
-        {mode === 'time' && (<><span><i style={{ background: '#E5A21C' }} />{l('Gündüz', 'Daytime', 'Tag', 'Día', 'День')}</span><span><i style={{ background: '#4A5BA8' }} />{l('Gece', 'Night', 'Nacht', 'Noche', 'Ночь')}</span></>)}
+        {mode === 'time' && (<><span><i style={{ background: '#E5A21C' }} />{l('Gündüz', 'Daytime', 'Tag', 'Día', 'День', 'Dia')}</span><span><i style={{ background: '#4A5BA8' }} />{l('Gece', 'Night', 'Nacht', 'Noche', 'Ночь', 'Noite')}</span></>)}
         {mode === 'weather' && [[-5, '≤0°'], [5, '1–10°'], [15, '11–18°'], [22, '19–25°'], [29, '26–32°'], [35, '33°+']].map(([c, t]) => <span key={String(t)}><i style={{ background: tempColor(c as number) }} />{t}</span>)}
-        {mode === 'fx' && (<><span><i style={{ background: '#1F9D6B' }} />{l(`Senin paran (${home})`, `Your currency (${home})`, `Deine Währung (${home})`, `Tu moneda (${home})`, `Ваша валюта (${home})`)}</span><span><i style={{ background: '#1095AE' }} />{l('Kur var', 'Rate available', 'Kurs verfügbar', 'Con cambio', 'Есть курс')}</span></>)}
-        <span className="vz-muted">{showTags ? '' : l('Bir bölge seç, değerler haritada yazsın', 'Pick a region to label the map', 'Region wählen für Beschriftung', 'Elige una región', 'Выберите регион')}</span>
+        {mode === 'fx' && (<><span><i style={{ background: '#1F9D6B' }} />{l(`Senin paran (${home})`, `Your currency (${home})`, `Deine Währung (${home})`, `Tu moneda (${home})`, `Ваша валюта (${home})`, `Sua moeda (${home})`)}</span><span><i style={{ background: '#1095AE' }} />{l('Kur var', 'Rate available', 'Kurs verfügbar', 'Con cambio', 'Есть курс', 'Com cotação')}</span></>)}
+        <span className="vz-muted">{showTags ? '' : l('Bir bölge seç, değerler haritada yazsın', 'Pick a region to label the map', 'Region wählen für Beschriftung', 'Elige una región', 'Выберите регион', 'Escolha uma região')}</span>
       </div>
       <div className={`vz-wm-body${selHub ? ' has-sel' : ''}`}>
         <SeaMap
           points={points}
           height={height}
-          ariaLabel={l('Şehirlerin saati, havası ve kuru', 'Time, weather and currency by city', 'Zeit, Wetter, Kurse', 'Hora, tiempo y divisas', 'Время, погода, валюта')}
+          ariaLabel={l('Şehirlerin saati, havası ve kuru', 'Time, weather and currency by city', 'Zeit, Wetter, Kurse', 'Hora, tiempo y divisas', 'Время, погода, валюта', 'Hora, clima e câmbio')}
           styleMode={style}
           labels={labels}
           selectedId={sel}
@@ -360,7 +360,7 @@ export const RadarWorldMap: React.FC<{ passport: string; onOpenCountry: (c: stri
         ) : (
           <div className="vz-wm-hint">
             <Icon name="radar" size={18} duo={false} />
-            <span>{l(`${hubs.length} şehir. Bir noktaya dokun; saati, havası ve kuru burada açılsın.`, `${hubs.length} cities. Tap a dot for its time, weather and rate.`, `${hubs.length} Städte. Punkt antippen.`, `${hubs.length} ciudades. Toca un punto.`, `${hubs.length} городов. Нажмите на точку.`)}</span>
+            <span>{l(`${hubs.length} şehir. Bir noktaya dokun; saati, havası ve kuru burada açılsın.`, `${hubs.length} cities. Tap a dot for its time, weather and rate.`, `${hubs.length} Städte. Punkt antippen.`, `${hubs.length} ciudades. Toca un punto.`, `${hubs.length} городов. Нажмите на точку.`, `${hubs.length} cidades. Toque em um ponto.`)}</span>
           </div>
         )}
       </div>
@@ -392,17 +392,17 @@ const CityCard: React.FC<{ hub: WorldHub; home: string; homeSym: string; unit: '
             <span className="vz-muted" style={{ fontSize: 13 }}>{hub.country[language as 'tr'] || hub.country.en}</span>
           </span>
         </span>
-        <button type="button" className="vz-iconbtn" onClick={onClose} aria-label={l('Kapat', 'Close', 'Schließen', 'Cerrar', 'Закрыть')}><Icon name="close" size={16} duo={false} /></button>
+        <button type="button" className="vz-iconbtn" onClick={onClose} aria-label={l('Kapat', 'Close', 'Schließen', 'Cerrar', 'Закрыть', 'Fechar')}><Icon name="close" size={16} duo={false} /></button>
       </div>
       <dl className="vz-wm-facts">
-        <div><dt>{l('Yerel saat', 'Local time', 'Ortszeit', 'Hora local', 'Местное время')}</dt><dd>{time}</dd></div>
-        <div><dt>{l('Hava', 'Weather', 'Wetter', 'Tiempo', 'Погода')}</dt><dd>{w ? `${t(w.tempC)} · ${wi?.[language] || wi?.en || ''}` : '—'}</dd></div>
-        {w && <div><dt>{l('Hissedilen', 'Feels like', 'Gefühlt', 'Sensación', 'Ощущается')}</dt><dd>{t(w.feelsLikeC)}</dd></div>}
-        {w && <div><dt>{l('Nem · rüzgâr', 'Humidity · wind', 'Feuchte · Wind', 'Humedad · viento', 'Влажность · ветер')}</dt><dd>%{w.humidity} · {w.windKmh} km/s</dd></div>}
+        <div><dt>{l('Yerel saat', 'Local time', 'Ortszeit', 'Hora local', 'Местное время', 'Hora local')}</dt><dd>{time}</dd></div>
+        <div><dt>{l('Hava', 'Weather', 'Wetter', 'Tiempo', 'Погода', 'Clima')}</dt><dd>{w ? `${t(w.tempC)} · ${wi?.[language] || wi?.en || ''}` : '—'}</dd></div>
+        {w && <div><dt>{l('Hissedilen', 'Feels like', 'Gefühlt', 'Sensación', 'Ощущается', 'Sensação térmica')}</dt><dd>{t(w.feelsLikeC)}</dd></div>}
+        {w && <div><dt>{l('Nem · rüzgâr', 'Humidity · wind', 'Feuchte · Wind', 'Humedad · viento', 'Влажность · ветер', 'Umidade · vento')}</dt><dd>%{w.humidity} · {w.windKmh} km/s</dd></div>}
       </dl>
       {rate > 0 && (
         <div className="vz-wm-fx">
-          <label htmlFor="vz-wm-amt" className="vz-muted" style={{ fontSize: 13 }}>{l(`Tutar (${home})`, `Amount (${home})`, `Betrag (${home})`, `Importe (${home})`, `Сумма (${home})`)}</label>
+          <label htmlFor="vz-wm-amt" className="vz-muted" style={{ fontSize: 13 }}>{l(`Tutar (${home})`, `Amount (${home})`, `Betrag (${home})`, `Importe (${home})`, `Сумма (${home})`, `Valor (${home})`)}</label>
           <div className="vz-row-flex" style={{ gap: 8 }}>
             <input id="vz-wm-amt" inputMode="decimal" className="vz-input" style={{ maxWidth: 120 }} value={amt} onChange={(e) => setAmt(e.target.value)} />
             <b style={{ fontSize: 18 }}>= {fmt(n * rate)} {sym}</b>
@@ -411,7 +411,7 @@ const CityCard: React.FC<{ hub: WorldHub; home: string; homeSym: string; unit: '
         </div>
       )}
       <div className="vz-actions">
-        {iso && GEO_DATA[iso] && <Btn small onClick={() => onOpenCountry(iso)}>{l('Ülke sayfası', 'Country page', 'Länderseite', 'Página del país', 'Страница страны')}</Btn>}
+        {iso && GEO_DATA[iso] && <Btn small onClick={() => onOpenCountry(iso)}>{l('Ülke sayfası', 'Country page', 'Länderseite', 'Página del país', 'Страница страны', 'Página do país')}</Btn>}
       </div>
     </aside>
   );

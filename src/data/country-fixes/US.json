@@ -1211,6 +1211,309 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "USD ($)",
+   "bestMonths": "Depende da região: abril a junho e setembro a outubro para a maior parte do país; novembro a abril para a Flórida e os desertos do sudoeste; junho a setembro para parques do norte, como Yellowstone",
+   "safety": {
+    "safetyScore": 55,
+    "safetyLevel": "Risco moderado",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60",
+    "crimeRateSummary": "As áreas turísticas costumam ser seguras, mas crimes violentos e incidentes com armas de fogo são mais frequentes do que na Europa, e alguns bairros das grandes cidades são arriscados à noite. Arrombamentos de carros alugados são muito comuns.",
+    "commonScams": [
+     "Personagens fantasiados ou vendedores de “CD grátis” na Times Square que exigem dinheiro por fotos",
+     "Roubos com quebra do vidro de carros alugados (principalmente em San Francisco e Los Angeles)",
+     "As “resort fees” e taxas extras de hotel que não aparecem com clareza na hora da reserva"
+    ],
+    "safeTravelTips": [
+     "Não deixe nada à vista no carro nem bagagem no porta-malas durante a noite.",
+     "À noite, use Uber ou Lyft em vez de caminhar por bairros que você não conhece.",
+     "A saúde é caríssima; contrate um seguro viagem com cobertura médica completa."
+    ],
+    "emergencyNumbers": {
+     "police": "911",
+     "ambulance": "911",
+     "general": "911"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99% nas cidades (5G amplo); sem sinal em partes dos parques nacionais e dos desertos",
+    "costPerGbUsd": "~US$ 2 - 5",
+    "esimAvailability": "Excelente",
+    "bestCarriers": [
+     "T-Mobile",
+     "Verizon",
+     "AT&T"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Depende da cidade (bom em Nova York, Chicago e Washington; nas demais, é preciso carro)",
+    "costLevel": "Caro",
+    "singleTicketUsd": "US$ 2,90 - 3 (metrô de Nova York, OMNY)",
+    "dailyPassUsd": "~US$ 34 (Nova York, ilimitado por 7 dias; teto semanal do OMNY)",
+    "popularRideApps": [
+     "Uber",
+     "Lyft",
+     "Waymo (San Francisco, Los Angeles, Phoenix)",
+     "Amtrak"
+    ],
+    "taxiAdvice": "Uber e Lyft estão em toda parte; os táxis amarelos de Nova York têm taxímetro. As distâncias entre as cidades são enormes: use voos domésticos ou carro alugado; na Costa Leste, a Amtrak é prática."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 80 - 120",
+    "dailyBudgetMidrangeUsd": "US$ 200 - 320",
+    "budgetMealUsd": "US$ 15 - 25 (sem impostos nem gorjeta)",
+    "coffeeUsd": "US$ 4 - 6,50",
+    "waterBottleUsd": "US$ 1,50 - 3",
+    "hostelDormUsd": "US$ 45 - 90",
+    "hotel3StarUsd": "US$ 140 - 260 (+ imposto de hospedagem e resort fees)",
+    "flightCostIndex": "Alto (voo direto ~10-13 h)",
+    "flightTip": "Há voos diretos de Istambul para Nova York, Washington, Chicago, Los Angeles, Miami, San Francisco e outras grandes cidades."
+   }
+  },
+  "enc": {
+   "language": {
+    "phrases": [
+     {
+      "phrase": "Hi, how's it going?",
+      "meaning": "Oi, tudo bem?",
+      "translation": "Oi, tudo bem?",
+      "pronunciation": "rái, ráus it GÔU-in"
+     },
+     {
+      "phrase": "Thanks, I appreciate it",
+      "meaning": "Obrigado(a), agradeço muito",
+      "translation": "Obrigado(a), agradeço muito",
+      "pronunciation": "fénks, ái a-PRÍ-chi-eit it"
+     },
+     {
+      "phrase": "Excuse me",
+      "meaning": "Com licença",
+      "translation": "Com licença",
+      "pronunciation": "eks-KIÚZ mi"
+     },
+     {
+      "phrase": "Can I get the check, please?",
+      "meaning": "Pode trazer a conta, por favor?",
+      "translation": "Pode trazer a conta, por favor?",
+      "pronunciation": "ken ái guét dâ TCHÉK, plíiz"
+     },
+     {
+      "phrase": "Where's the restroom?",
+      "meaning": "Onde fica o banheiro?",
+      "translation": "Onde fica o banheiro?",
+      "pronunciation": "uérz dâ RÉST-rum"
+     }
+    ]
+   }
+  },
+  "itin": {
+   "routeName": "EUA: Nova York, Washington, Grand Canyon e Los Angeles",
+   "routeSummary": "Um roteiro clássico de 10 dias de leste a oeste: o icônico skyline de Nova York, os monumentos e museus gratuitos de Washington, um voo para Las Vegas para ver os paredões vermelhos do Grand Canyon e, por fim, a costa do Pacífico em Los Angeles.",
+   "totalDays": 10,
+   "idealDurationText": "Roteiro de 10 dias pelos EUA, de leste a oeste",
+   "bestSeason": "Abril a junho e setembro a outubro",
+   "transportMode": "Trem da Amtrak (Nova York–Washington) + voo doméstico + carro alugado (Oeste)",
+   "paceLevel": "Intenso (grandes distâncias e mudanças de fuso horário)",
+   "signatureGastronomy": {
+    "dishes": [
+     "Brisket defumado no estilo do Texas",
+     "Clam chowder da Nova Inglaterra",
+     "Cheeseburger",
+     "Asinhas Buffalo"
+    ],
+    "drinks": [
+     "Bourbon do Kentucky",
+     "Cervejas artesanais IPA",
+     "Chá gelado adoçado (sweet tea)"
+    ],
+    "streetFoods": [
+     "Fatia de pizza nova-iorquina",
+     "Tacos",
+     "Torta de maçã e cheesecake"
+    ],
+    "diningAdvice": "Nos restaurantes, a gorjeta de 18-22% é praticamente obrigatória, e o imposto é somado aos preços. As porções são enormes e dividir é comum. Nas grandes cidades, é fácil encontrar comida halal (como nos food carts de Nova York)."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptador tipo A/B (110 V)",
+     "Seguro viagem com cobertura médica completa",
+     "Protetor solar, chapéu e muita água para o deserto",
+     "Permissão Internacional para Dirigir para alugar carro (exigida em alguns estados)"
+    ],
+    "safetyAndEtiquette": [
+     "Se a polícia mandar você parar, mantenha as mãos à vista e fique sentado no carro.",
+     "Beber álcool na rua é ilegal na maioria dos estados.",
+     "Nunca deixe objetos de valor no carro."
+    ]
+   },
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Nova York (Manhattan, Estátua da Liberdade e Brooklyn)",
+     "recommendedDuration": "4 dias (Manhattan e Brooklyn)",
+     "durationBadge": "4 dias",
+     "highlights": [
+      "Estátua da Liberdade e Ellis Island",
+      "Central Park e Metropolitan Museum of Art",
+      "Times Square e Broadway",
+      "Ponte do Brooklyn e DUMBO"
+     ],
+     "activities": [
+      "Pegue a balsa oficial no Battery Park até a Estátua da Liberdade e Ellis Island.",
+      "Passeie pelo Central Park e visite o Met.",
+      "Atravesse a pé a Ponte do Brooklyn ao pôr do sol e admire o skyline de Manhattan a partir de DUMBO."
+     ],
+     "foodAndDrinks": [
+      "Fatia de pizza nova-iorquina",
+      "Bagel com cream cheese e salmão defumado",
+      "Frango com arroz de um food cart halal"
+     ],
+     "criticalTips": [
+      "Compre os ingressos para a Estátua da Liberdade apenas com a vendedora oficial, a Statue City Cruises; ignore os vendedores de rua.",
+      "Os preços do cardápio não incluem impostos (~8,9%) nem a gorjeta de 18-22%; leve isso em conta."
+     ],
+     "mapsQuery": "Manhattan, New York, USA"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Washington D.C. (monumentos e museus gratuitos)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "National Mall, Lincoln Memorial e Monumento a Washington",
+      "Museus do Smithsonian (gratuitos)",
+      "Capitólio e Biblioteca do Congresso",
+      "Georgetown"
+     ],
+     "activities": [
+      "Percorra o National Mall do Lincoln Memorial até o Capitólio.",
+      "Visite de graça o Museu Nacional do Ar e do Espaço e o Museu de História Natural.",
+      "Faça um passeio noturno pelas ruas de tijolinhos de Georgetown e pela margem do Potomac."
+     ],
+     "foodAndDrinks": [
+      "Bolinhos de caranguejo de Maryland",
+      "A famosa culinária etíope de D.C.",
+      "Uma salsicha “half-smoke” no Ben’s Chili Bowl"
+     ],
+     "criticalTips": [
+      "Reserve on-line com antecedência a visita gratuita ao Capitólio.",
+      "De Amtrak, o trajeto Nova York–Washington leva cerca de 3 horas; passagens compradas com antecedência são mais baratas."
+     ],
+     "mapsQuery": "National Mall, Washington, DC, USA"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Las Vegas e Grand Canyon (deserto e cânion)",
+     "recommendedDuration": "2 dias (de carro)",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "A Strip de Las Vegas",
+      "Represa Hoover",
+      "South Rim do Grand Canyon (Mather Point)",
+      "Histórica Rota 66 em Seligman"
+     ],
+     "activities": [
+      "Assista ao show das fontes do Bellagio na Strip de Las Vegas.",
+      "Atravesse a Represa Hoover rumo ao Arizona e pare em Seligman, cidadezinha da Rota 66.",
+      "Caminhe pela Rim Trail do South Rim ao nascer ou ao pôr do sol."
+     ],
+     "foodAndDrinks": [
+      "Bufês de Las Vegas",
+      "Milk-shakes e hambúrgueres nos diners da Rota 66",
+      "Pão frito navajo (fry bread)"
+     ],
+     "criticalTips": [
+      "De Las Vegas ao South Rim são cerca de 4,5 horas de carro; no verão, leve muita água e não faça trilhas no calor do meio-dia.",
+      "Os parques nacionais cobram entrada por veículo; o passe anual “America the Beautiful” compensa se você for visitar vários."
+     ],
+     "mapsQuery": "Grand Canyon South Rim, Arizona, USA"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Los Angeles (Hollywood e a costa do Pacífico)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Calçada da Fama e Griffith Observatory",
+      "Píer de Santa Monica e Venice Beach",
+      "Getty Center (entrada gratuita)",
+      "Malibu e a Pacific Coast Highway"
+     ],
+     "activities": [
+      "Admire o letreiro de Hollywood e a cidade ao pôr do sol a partir do Griffith Observatory.",
+      "Pedale pela orla de Santa Monica até Venice Beach.",
+      "Dirija pela Pacific Coast Highway até Malibu."
+     ],
+     "foodAndDrinks": [
+      "Tacos de rua de L.A.",
+      "Hambúrguer do In-N-Out",
+      "Churrasco coreano em Koreatown"
+     ],
+     "criticalTips": [
+      "O trânsito é intenso; organize o dia por bairros e evite os horários de pico.",
+      "Não deixe nada à vista no carro estacionado; roubos com quebra de vidro são frequentes."
+     ],
+     "mapsQuery": "Santa Monica Pier, Los Angeles, USA"
+    }
+   ]
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "A",
+     "B"
+    ],
+    "voltage": "120V",
+    "frequency": "60Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Tomadas tipo A, de dois pinos chatos (B com aterramento), em 120 V/60 Hz; plugues turcos precisam de adaptador. Confira se seu carregador aceita 100-240 V; aparelhos que funcionam só em 220 V precisam de transformador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "A água da torneira é potável na maioria das grandes cidades; fique de olho nos comunicados municipais sobre eventuais avisos locais para ferver a água (“boil water notice”).",
+    "vaccines": [
+     "Vacinas de rotina (tríplice viral, tétano)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "911"
+   },
+   "tipping": {
+    "custom": "Nos restaurantes, espera-se gorjeta de 18-20 %, que representa a maior parte do salário dos garçons; o imposto estadual sobre vendas é somado ao preço.",
+    "standardPercent": 18,
+    "rule": "expected",
+    "note": "É comum dar 15-20 % em táxis/Uber, US$ 1-2 por drinque ao bartender e US$ 2-5 por noite à equipe de limpeza do hotel."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Não há (sem IVA; imposto estadual/local sobre vendas de 0-10 %+)",
+    "minSpend": "—",
+    "customsNote": "Os EUA não têm IVA; o imposto sobre vendas é acrescentado no caixa e, em geral, não é devolvido aos turistas."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 2 - 5",
+    "topCarriers": [
+     "T-Mobile",
+     "Verizon",
+     "AT&T"
+    ],
+    "airportSimTrapWarning": "As máquinas do aeroporto são caras; chips pré-pagos da T-Mobile ou da AT&T comprados em lojas, ou um eSIM, saem mais baratos. O roaming com o chip turco é muito caro."
+   },
+   "touristScams": [
+    {
+     "title": "Personagens fantasiados na Times Square",
+     "desc": "Pessoas fantasiadas de personagens de desenho animado exigem US$ 10-20 por pessoa depois da foto e insistem.",
+     "tip": "Não pose, ou combine o preço antes."
+    },
+    {
+     "title": "Vendedores de CD “grátis”",
+     "desc": "Na rua, entregam a você um CD “de presente”, escrevem seu nome nele e depois pedem dinheiro.",
+     "tip": "Não pegue nada que oferecerem e siga em frente."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "USD ($)",

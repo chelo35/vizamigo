@@ -1551,6 +1551,394 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Peso colombiano (COP)",
+   "plugType": "Tipo A, B (110V, 60Hz)",
+   "bestMonths": "Dezembro – março e julho – agosto (épocas mais secas); dezembro – abril para a costa caribenha; a “eterna primavera” de Medellín é amena o ano todo",
+   "safety": {
+    "crimeRateSummary": "Os alertas oficiais desaconselham viajar a algumas áreas rurais e de fronteira com presença de grupos armados (por exemplo, Arauca, Cauca, Norte de Santander, fronteira com a Venezuela). Nas grandes cidades, assaltos e roubos de celular são frequentes, e em Medellín, Cartagena e Bogotá é um risco sério ser drogado com escopolamina (burundanga) e roubado por pessoas que você conheceu em apps de namoro.",
+    "commonScams": [
+     "Pessoas de apps de namoro que colocam escopolamina na bebida e roubam a vítima",
+     "“Paseo millonario” em táxis pegos na rua, em que a vítima é levada de caixa eletrônico em caixa eletrônico",
+     "Falsos policiais que pedem para “conferir” seu dinheiro ou seus cartões"
+    ],
+    "safeTravelTips": [
+     "“No dé papaya”: não exiba celular, joias nem dinheiro e não se torne um alvo fácil.",
+     "Peça táxi por app (Uber, DiDi, Cabify) ou pelo hotel; não pegue na rua.",
+     "Marque encontros com pessoas novas em lugares movimentados e nunca deixe sua bebida sem vigilância."
+    ],
+    "emergencyNumbers": {
+     "police": "123",
+     "ambulance": "123",
+     "general": "123"
+    },
+    "safetyScore": 40,
+    "safetyLevel": "Cautela recomendada",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Bom 4G nas cidades (5G recém-lançado); nas áreas de montanha e de selva, a Claro tem a melhor cobertura",
+    "costPerGbUsd": "~US$ 0,50 - 1,50",
+    "esimAvailability": "Boa",
+    "bestCarriers": [
+     "Claro",
+     "Movistar",
+     "Tigo",
+     "WOM"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Razoável (o metrô e o Metrocable de Medellín são excelentes; Bogotá tem o lotado TransMilenio; as estradas de montanha são lentas, e vale a pena voar entre as cidades)",
+    "costLevel": "Barato",
+    "singleTicketUsd": "0,70 - 1,10 $ (metrô de Medellín / TransMilenio)",
+    "dailyPassUsd": "Não há passe diário; ~2 - 5 $ por dia na cidade",
+    "popularRideApps": [
+     "Uber",
+     "DiDi",
+     "Cabify",
+     "inDrive"
+    ],
+    "taxiAdvice": "Uber, DiDi, Cabify e inDrive são comuns e mais seguros que o táxi de rua. Se for usar táxi amarelo, peça por app (por exemplo, Taxis Libres) ou pelo hotel; nos aeroportos, use a fila oficial."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 30 - 45",
+    "dailyBudgetMidrangeUsd": "US$ 70 - 120",
+    "budgetMealUsd": "3,50 - 7 $ (prato do dia / corrientazo)",
+    "coffeeUsd": "US$ 1 - 2,50",
+    "waterBottleUsd": "US$ 0,50 - 1",
+    "hostelDormUsd": "US$ 10 - 20",
+    "hotel3StarUsd": "40 - 85 $ (mais em Cartagena)",
+    "flightCostIndex": "Alto (~13-16h)",
+    "flightTip": "A Turkish Airlines opera Istambul – Bogotá (alguns voos via Panamá); compare também Avianca e Iberia via Madri. Os voos domésticos da Avianca, LATAM e Wingo são baratos."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "O aperto de mão é comum; as mulheres se cumprimentam com um beijo. Em Bogotá, até entre amigos se usa o “usted”.",
+     "Dizer “¿Me regala…?” é a forma educada de pedir algo.",
+     "Piadas sobre drogas e o passado dos cartéis, ou o “narcoturismo”, ofendem os moradores."
+    ],
+    "festivals": [
+     "Carnaval de Barranquilla (fevereiro/março, UNESCO)",
+     "Feria de las Flores (agosto, Medellín)",
+     "Feria de Cali (dezembro, salsa)"
+    ],
+    "lifestyle": "Uma vida calorosa e cheia de música: salsa, vallenato e cumbia, paixão pelo futebol, “tintos” (cafezinhos) o dia inteiro e grandes reuniões de família."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Cidade murada de Cartagena (UNESCO)",
+     "Medellín: Comuna 13 e Metrocable",
+     "Eixo Cafeeiro e Valle de Cocora (Salento)",
+     "Parque Nacional Tayrona",
+     "Bogotá: La Candelaria, Museu do Ouro e Monserrate",
+     "Guatapé e a Piedra del Peñol"
+    ],
+    "bestSeasons": "De dezembro a março é a época mais seca; dezembro – abril para o Caribe, junho – novembro para o rio de cores de Caño Cristales e julho – outubro para observar baleias no Pacífico.",
+    "travelStyleTip": "As estradas andinas são longas e lentas; use voos domésticos baratos entre as regiões. Confira os alertas oficiais por região e evite viajar por estrada à noite."
+   },
+   "religion": {
+    "primaryReligions": "Católicos ~70%, evangélicos/protestantes ~15-20%, sem religião ~10% (aproximado)",
+    "respectNorms": "Vista-se com sobriedade em igrejas e santuários e faça silêncio durante a missa. Não entre sem permissão nos territórios sagrados dos povos da Sierra Nevada (kogui, arhuaco).",
+    "sacredSites": [
+     "Catedral de Sal de Zipaquirá",
+     "Santuário de Las Lajas (Ipiales)",
+     "Santuário de Monserrate (Bogotá)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Espanhol, além de mais de 60 línguas indígenas e crioulas em San Andrés e San Basilio de Palenque",
+    "englishProficiency": "Em geral limitado; razoável nas áreas turísticas de Cartagena e Medellín.",
+    "phrases": [
+     {
+      "phrase": "¿Qué más?",
+      "meaning": "Tudo bem?",
+      "translation": "Tudo bem?",
+      "pronunciation": "keh MAHS"
+     },
+     {
+      "phrase": "¿Me regala…?",
+      "meaning": "Você me dá…? (pedido educado)",
+      "translation": "Você me dá…? (pedido educado)",
+      "pronunciation": "meh reh-GAH-lah"
+     },
+     {
+      "phrase": "¿Cuánto vale?",
+      "meaning": "Quanto custa?",
+      "translation": "Quanto custa?",
+      "pronunciation": "KWAN-toh VAH-leh"
+     },
+     {
+      "phrase": "¡Qué chévere!",
+      "meaning": "Que legal!",
+      "translation": "Que legal!",
+      "pronunciation": "keh CHEH-veh-reh"
+     },
+     {
+      "phrase": "Con mucho gusto",
+      "meaning": "De nada / Com prazer",
+      "translation": "De nada / Com prazer",
+      "pronunciation": "kohn MOO-choh GOOS-toh"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Em terras de culturas como a muísca e a tayrona, os espanhóis fundaram Cartagena em 1533 e Bogotá em 1538. A independência começou em 20 de julho de 1810 e se consolidou com a vitória de Bolívar em Boyacá, em 1819. Em 2016, foi assinado o acordo de paz entre o governo e as FARC.",
+    "milestones": [
+     "1533: fundação de Cartagena de Indias",
+     "1810: Grito de Independência (20 de julho)",
+     "1819: Batalha de Boyacá e independência",
+     "2016: acordo de paz entre o governo e as FARC"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Ajiaco santafereño",
+     "Bandeja paisa (com torresmo de porco)",
+     "Sancocho"
+    ],
+    "traditionalDrinks": [
+     "Tinto (cafezinho preto)",
+     "Aguapanela",
+     "Aguardiente (alcoólico)"
+    ],
+    "streetFoodAndDesserts": [
+     "Arepa de huevo",
+     "Empanadas",
+     "Obleas con arequipe (wafers com doce de leite)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Gabriel García Márquez (escritor, prêmio Nobel)",
+     "Fernando Botero (pintor e escultor)",
+     "Shakira (cantora)"
+    ],
+    "strongSectors": [
+     "Exportação de café e flores",
+     "Petróleo e carvão",
+     "Turismo e serviços de BPO"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Nas cidades, o cartão é muito usado; leve dinheiro vivo para táxis, vendinhas e mercados. Os preços têm números grandes (por exemplo, 50.000 COP); os moradores usam Nequi e Daviplata.",
+    "tippingCulture": "Nos restaurantes, perguntam se você quer incluir os 10% de serviço voluntário; o normal é aceitar.",
+    "economicPillars": "Petróleo e mineração, agricultura (café, flores, banana), serviços, indústria e turismo."
+   }
+  },
+  "itin": {
+   "routeName": "Roteiro pela Colômbia: Bogotá, Eixo Cafeeiro, Medellín e Cartagena",
+   "routeSummary": "Um roteiro de 10 dias que sai de Bogotá, a capital andina, passa pelas fazendas de café e pelo Valle de Cocora, em Salento, e por Medellín, a “cidade da eterna primavera”, e termina na colonial Cartagena, no Caribe.",
+   "totalDays": 10,
+   "idealDurationText": "Roteiro de 10 dias",
+   "bestSeason": "Dezembro – março",
+   "transportMode": "Voos domésticos (Bogotá – Armenia/Pereira, Medellín – Cartagena) + ônibus ou voo Eixo Cafeeiro – Medellín + Uber/DiDi e metrô de Medellín",
+   "paceLevel": "Equilibrado (cidade, natureza e praia)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Bogotá",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Bairro histórico de La Candelaria",
+      "Museu do Ouro",
+      "Cerro de Monserrate",
+      "Museu Botero"
+     ],
+     "activities": [
+      "Suba a Monserrate de teleférico ou funicular.",
+      "Faça um tour de grafite por La Candelaria.",
+      "Faça um bate-volta até a Catedral de Sal de Zipaquirá."
+     ],
+     "foodAndDrinks": [
+      "Ajiaco",
+      "Chocolate santafereño com queijo"
+     ],
+     "criticalTips": [
+      "A cidade fica a 2.600 m e é fria e chuvosa; leve jaqueta e guarda-chuva.",
+      "O TransMilenio vive lotado; leve a bolsa na frente do corpo por causa dos batedores de carteira."
+     ],
+     "mapsQuery": "Bogotá, Colombia"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Salento e Valle de Cocora (Eixo Cafeeiro)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Palmeiras-de-cera do Valle de Cocora",
+      "Tour por uma fazenda de café",
+      "Calle Real de Salento",
+      "Vilarejo de Filandia"
+     ],
+     "activities": [
+      "Faça a trilha circular do Valle de Cocora.",
+      "Aprenda numa fazenda todo o processo, do grão à xícara.",
+      "Jogue tejo, o esporte local em que se arremessam discos contra mechas de pólvora."
+     ],
+     "foodAndDrinks": [
+      "Truta com patacón",
+      "Café local passado na hora"
+     ],
+     "criticalTips": [
+      "Vá a Cocora nos jipes Willys que saem da praça e vá cedo: à tarde costuma chover.",
+      "As trilhas podem estar enlameadas; use calçado impermeável."
+     ],
+     "mapsQuery": "Salento, Quindío, Colombia"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Medellín e Guatapé",
+     "recommendedDuration": "3 dias",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Graffitour da Comuna 13",
+      "Metrocable e Parque Arví",
+      "Plaza Botero",
+      "Guatapé e a Piedra del Peñol"
+     ],
+     "activities": [
+      "Visite a Comuna 13 com um guia local.",
+      "Suba os 740 degraus de El Peñol para ver a represa.",
+      "Percorra de Metrocable os bairros nas encostas."
+     ],
+     "foodAndDrinks": [
+      "Bandeja paisa (leva carne de porco)",
+      "Arepa paisa",
+      "Lulada"
+     ],
+     "criticalTips": [
+      "Na balada de El Poblado e Provenza, redobre o cuidado com encontros marcados por app e com a sua bebida.",
+      "Vá cedo de ônibus para Guatapé; nos fins de semana fica lotado."
+     ],
+     "mapsQuery": "Medellín, Antioquia, Colombia"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Cartagena (costa caribenha)",
+     "recommendedDuration": "3 dias",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Cidade murada",
+      "Castelo de San Felipe de Barajas",
+      "Bairro de Getsemaní",
+      "Ilhas do Rosário e Barú"
+     ],
+     "activities": [
+      "Admire o pôr do sol das muralhas.",
+      "Faça um passeio de lancha às Ilhas do Rosário.",
+      "Curta a vida noturna da Plaza de la Trinidad, em Getsemaní."
+     ],
+     "foodAndDrinks": [
+      "Arepa de huevo",
+      "Peixe frito com arroz de coco e patacón",
+      "Limonada de coco"
+     ],
+     "criticalTips": [
+      "Vendedores e massagens “grátis” na praia são insistentes; combine o preço antes.",
+      "Faz muito calor e umidade; fique na sombra ao meio-dia e beba bastante água."
+     ],
+     "mapsQuery": "Cartagena de Indias, Bolívar, Colombia"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Ajiaco",
+     "Bandeja paisa (leva carne de porco)",
+     "Sancocho"
+    ],
+    "drinks": [
+     "Tinto (cafezinho preto)",
+     "Aguapanela",
+     "Sucos naturais (lulo, maracujá)"
+    ],
+    "streetFoods": [
+     "Arepa",
+     "Empanadas",
+     "Buñuelos"
+    ],
+    "diningAdvice": "O prato do dia, ou corrientazo (sopa + prato principal + suco), é a opção mais econômica. Vão perguntar sobre os 10% de serviço voluntário; não deixe de provar os sucos de frutas tropicais."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptador tipo A/B (110 V; confira se o seu aparelho aceita 100-240 V)",
+     "Jaqueta para Bogotá e roupas leves para Cartagena",
+     "Repelente e protetor solar",
+     "Certificado de vacina contra febre amarela (para Tayrona e a Amazônia)"
+    ],
+    "safetyAndEtiquette": [
+     "Não exiba o celular na rua nem aceite bebidas de desconhecidos.",
+     "Não faça piadas sobre o passado dos cartéis; é um tema delicado."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "A",
+     "B"
+    ],
+    "voltage": "110V - 120V",
+    "frequency": "60Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Tomadas norte-americanas de dois pinos chatos. Os plugues turcos precisam de adaptador; com 110-120 V, use só aparelhos de 100-240 V (a maioria dos carregadores)."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Em Bogotá e Medellín a água é tratada e costuma ser potável; em Cartagena, no litoral e nas áreas rurais, beba água mineral.",
+    "vaccines": [
+     "Febre amarela: recomendada para Tayrona, a Amazônia e muitas áreas rurais; depois do surto de 2025, algumas regiões podem pedir o certificado de vacinação",
+     "Hepatite A e febre tifoide",
+     "Proteção contra mosquitos por causa da dengue"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "123"
+   },
+   "tipping": {
+    "custom": "Nos restaurantes, perguntam sobre os 10% de serviço voluntário, que normalmente é aceito.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Por lei, o serviço é voluntário e você pode recusá-lo. Em táxis não se espera gorjeta; para guias, sim."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Parte do IVA de 19% (descontadas as taxas)",
+    "minSpend": "Há um valor mínimo por nota fiscal; consulte na loja",
+    "customsNote": "Turistas estrangeiros podem pedir a restituição do IVA de produtos pagos com cartão estrangeiro no posto da DIAN dos aeroportos internacionais, antes do check-in, com as notas fiscais e o passaporte. Estrangeiros não residentes costumam ser isentos de IVA nos hotéis."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 0,50 - 1,50",
+    "topCarriers": [
+     "Claro",
+     "Movistar",
+     "Tigo",
+     "WOM"
+    ],
+    "airportSimTrapWarning": "Os quiosques do aeroporto El Dorado são caros; compre uma linha pré-paga com passaporte numa loja da Claro na cidade ou use eSIM. A Claro tem a melhor cobertura nas áreas rurais."
+   },
+   "touristScams": [
+    {
+     "title": "Apps de namoro e escopolamina",
+     "desc": "Alguém que você conheceu num app coloca escopolamina na bebida ou na comida; a vítima perde a vontade própria e é roubada em casa ou no hotel.",
+     "tip": "No primeiro encontro, escolha lugares movimentados, não leve desconhecidos ao seu quarto e não largue a bebida."
+    },
+    {
+     "title": "Paseo millonario",
+     "desc": "Cúmplices entram num táxi pego na rua e levam o passageiro de caixa eletrônico em caixa eletrônico.",
+     "tip": "Peça táxi só por app ou pelo hotel."
+    },
+    {
+     "title": "Falsos policiais",
+     "desc": "Homens à paisana dizem ser policiais e pedem a carteira ou o cartão para “verificar notas falsas”.",
+     "tip": "Não entregue carteira nem senha; peça identificação e confirme ligando para o 123."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Колумбийское песо (COP)",

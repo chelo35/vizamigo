@@ -1567,6 +1567,398 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Euro (EUR)",
+   "plugType": "Tipo C, E (230V, 50Hz)",
+   "bestMonths": "Abril a junho e setembro (clima ameno e relativamente seco); julho e agosto têm festivais, mas também multidões; em dezembro, mercados de Natal (Plaisirs d’Hiver de Bruxelas, Bruges)",
+   "safety": {
+    "safetyScore": 55,
+    "safetyLevel": "Risco moderado",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60",
+    "crimeRateSummary": "Em geral é seguro, mas em Bruxelas os batedores de carteira são frequentes, principalmente em Bruxelas-Midi/Zuid e na Gare du Nord, no metrô e no meio da multidão da Grand-Place. Em alguns bairros há incidentes ligados a drogas, e o nível de ameaça terrorista é monitorado oficialmente.",
+    "commonScams": [
+     "Furtos por distração (pedir informação, sujar sua roupa) em Bruxelas-Midi e no metrô",
+     "Contas infladas por promotores de “menus especiais” na Rue des Bouchers",
+     "Grupos com abaixo-assinados que pedem doações enquanto roubam"
+    ],
+    "safeTravelTips": [
+     "À noite, use táxi ou aplicativo em vez de caminhar por Bruxelas-Midi e pela Gare du Nord.",
+     "Fique atento aos dias de greve nacional (grève / staking); trens e voos podem ser cancelados.",
+     "Confira o cardápio e os preços antes de se sentar em um restaurante."
+    ],
+    "emergencyNumbers": {
+     "police": "101",
+     "ambulance": "112",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99 % da população coberta (4G/5G); o sinal pode enfraquecer em alguns vales das Ardenas",
+    "costPerGbUsd": "~US$ 1,00 - 3,00",
+    "esimAvailability": "Excelente",
+    "bestCarriers": [
+     "Proximus",
+     "Orange Belgium",
+     "BASE (Telenet)",
+     "Digi",
+     "Airalo / Holafly eSIM"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Muito boa (rede ferroviária densa e rápida; metrô, bondes e ônibus em Bruxelas)",
+    "costLevel": "Caro",
+    "singleTicketUsd": "US$ 2,50 - 3,20 (STIB, Bruxelas)",
+    "dailyPassUsd": "US$ 9,00 - 10,00 (Bruxelas, 24h)",
+    "popularRideApps": [
+     "SNCB / NMBS",
+     "STIB-MIVB",
+     "De Lijn",
+     "Uber",
+     "Heetch",
+     "Taxis Verts"
+    ],
+    "taxiAdvice": "Entre as cidades, o melhor é o trem: Bruxelas – Bruges ~1 h, Bruxelas – Gante ~30 min. Em Bruxelas, use Uber, Heetch ou Taxis Verts; evite carros sem licença na estação Midi."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 75 - 110",
+    "dailyBudgetMidrangeUsd": "US$ 170 - 280",
+    "budgetMealUsd": "US$ 18 - 28",
+    "coffeeUsd": "US$ 3,50 - 5,00",
+    "waterBottleUsd": "US$ 1,00 - 2,50",
+    "hostelDormUsd": "US$ 35 - 55",
+    "hotel3StarUsd": "US$ 120 - 200",
+    "flightCostIndex": "Moderado (Istambul – Bruxelas direto ~3,5 h)",
+    "flightTip": "A Turkish Airlines voa direto de Istambul para Bruxelas; compare também as saídas de Sabiha Gökçen. A SNCB oferece passagens de ida e volta com desconto nos fins de semana."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Em Flandres fala-se neerlandês e na Valônia, francês; cumprimentar no idioma certo é bem-visto (na dúvida, comece em inglês).",
+     "As pessoas se cumprimentam com aperto de mão; conhecidos trocam um beijo no rosto.",
+     "A pontualidade é importante em compromissos e reservas.",
+     "Chame o garçom com o olhar, não em voz alta."
+    ],
+    "festivals": [
+     "Carnaval de Binche (fevereiro – março, UNESCO)",
+     "Gentse Feesten (julho, festa de 10 dias em Gante)",
+     "Tomorrowland (julho, Boom)"
+    ],
+    "lifestyle": "Descontraída, mas organizada, com uma forte cultura de cafés e cerveja; os quadrinhos, o chocolate e a gastronomia fazem parte da identidade nacional."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Grand-Place e Atomium, Bruxelas",
+     "Canais e Campanário de Bruges",
+     "Castelo de Gravensteen e Retábulo de Gante (Van Eyck)",
+     "Catedral de Nossa Senhora e Estação Central, Antuérpia",
+     "Museu Magritte (Bruxelas)",
+     "Dinant e as Ardenas"
+    ],
+    "bestSeasons": "Abril a junho e setembro",
+    "travelStyleTip": "O país é pequeno e a rede ferroviária, densa; hospede-se em Bruxelas ou Gante e faça bate-voltas a Antuérpia e Bruges."
+   },
+   "religion": {
+    "primaryReligions": "Católicos ~50 % (pouco praticantes), sem religião ~30-35 %, muçulmanos ~7 %",
+    "respectNorms": "Faça silêncio nas igrejas; não circule durante a missa nem use flash.",
+    "sacredSites": [
+     "Catedral de São Miguel e Santa Gúdula, Bruxelas",
+     "Basílica do Santo Sangue, Bruges",
+     "Catedral de Nossa Senhora, Antuérpia (quadros de Rubens)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Neerlandês (Flandres), francês (Valônia e Bruxelas) e alemão (fronteira leste) são línguas oficiais.",
+    "englishProficiency": "Muito bom, principalmente em Flandres e entre os jovens; na Valônia, um pouco de francês ajuda.",
+    "phrases": [
+     {
+      "phrase": "Goeiedag (NL) / Bonjour (FR)",
+      "meaning": "Bom dia / Olá",
+      "translation": "Olá",
+      "pronunciation": "KHOO-yeh-dakh / bon-ZHOOR"
+     },
+     {
+      "phrase": "Dank u wel / Merci",
+      "meaning": "Obrigado",
+      "translation": "Obrigado",
+      "pronunciation": "dahnk ew VEL / mehr-SEE"
+     },
+     {
+      "phrase": "Alstublieft / S’il vous plaît",
+      "meaning": "Por favor (em Bruxelas, também “aqui está”)",
+      "translation": "Por favor",
+      "pronunciation": "AHL-stew-bleeft / seel voo PLEH"
+     },
+     {
+      "phrase": "Hoeveel kost het? / Combien ça coûte ?",
+      "meaning": "Quanto custa?",
+      "translation": "Quanto é?",
+      "pronunciation": "hoo-VAYL kost et / kom-BYAN sa KOOT"
+     },
+     {
+      "phrase": "De rekening, alstublieft / L’addition, s’il vous plaît",
+      "meaning": "A conta, por favor",
+      "translation": "A conta, por favor",
+      "pronunciation": "deh RAY-keh-ning AHL-stew-bleeft / la-dee-SYON seel voo PLEH"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Famosa na Idade Média pelas ricas cidades comerciais de Flandres, a região passou pelo domínio espanhol, austríaco, francês e neerlandês até que a revolução de 1830 criou o Reino da Bélgica. Ocupada nas duas guerras mundiais, foi membro fundador da CEE, e Bruxelas é hoje sede da UE e da OTAN.",
+    "milestones": [
+     "1830: Revolução Belga e independência",
+     "1831: Leopoldo I se torna rei",
+     "1958: membro fundador da CEE; Bruxelas se torna sua sede",
+     "1993: torna-se um Estado federal"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Moules-frites (mexilhões com batata frita)",
+     "Carbonnade flamande / Stoofvlees (carne bovina cozida na cerveja)",
+     "Waterzooi (ensopado cremoso de frango ou peixe ao estilo de Gante)"
+    ],
+    "traditionalDrinks": [
+     "Cervejas trapistas (Westvleteren, Chimay, Orval)",
+     "Cervejas lambic e gueuze",
+     "Jenever (destilado de zimbro)"
+    ],
+    "streetFoodAndDesserts": [
+     "Batata frita com molho de uma friterie",
+     "Waffles de Liège e de Bruxelas",
+     "Bombons e chocolate belga"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Peter Paul Rubens (pintor barroco)",
+     "René Magritte (pintor surrealista)",
+     "Hergé (criador de Tintim)"
+    ],
+    "strongSectors": [
+     "Química e farmacêutica (polo químico de Antuérpia)",
+     "Logística (porto de Antuérpia-Bruges)",
+     "Instituições da UE e da OTAN e serviços internacionais"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Cartão e pagamento por aproximação (Bancontact) são muito difundidos; algumas friteries e mercados pequenos podem exigir dinheiro.",
+    "tippingCulture": "O serviço já está incluído no preço; basta arredondar ou deixar 5-10 % se você ficou satisfeito.",
+    "economicPillars": "Química, farmacêutica e manufatura avançada, logística portuária, instituições internacionais e serviços."
+   }
+  },
+  "itin": {
+   "routeName": "Bélgica, roteiro de cidades: Bruxelas, Antuérpia, Gante e Bruges",
+   "routeSummary": "Roteiro de trem de 6 dias, da Grand-Place de Bruxelas à Antuérpia de Rubens, ao castelo medieval de Gante e aos canais de Bruges.",
+   "totalDays": 6,
+   "idealDurationText": "Roteiro de 6 dias",
+   "bestSeason": "Abril a junho e setembro",
+   "transportMode": "Trem (SNCB / NMBS); a pé, de bonde e de metrô dentro das cidades",
+   "paceLevel": "Equilibrado (arte + história + gastronomia)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Bruxelas (capital e Grand-Place)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Grand-Place e Prefeitura",
+      "Atomium",
+      "Museu Magritte e Museus Reais de Belas Artes",
+      "Galerias Reais Saint-Hubert"
+     ],
+     "activities": [
+      "Faça a rota dos murais de quadrinhos.",
+      "Visite as chocolaterias do Sablon.",
+      "Veja o Manneken Pis e prove um waffle."
+     ],
+     "foodAndDrinks": [
+      "Moules-frites",
+      "Waffle de Bruxelas",
+      "Bombons"
+     ],
+     "criticalTips": [
+      "Evite os menus dos promotores na Rue des Bouchers.",
+      "Leve a bolsa na frente do corpo no metrô e na estação Midi."
+     ],
+     "mapsQuery": "Brussels, Belgium"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Antuérpia (cidade de Rubens e dos diamantes)",
+     "recommendedDuration": "1 dia",
+     "durationBadge": "1 dia",
+     "highlights": [
+      "Catedral de Nossa Senhora (obras de Rubens)",
+      "Estação Central de Antuérpia",
+      "Museu MAS e seu terraço",
+      "Grote Markt e fonte de Brabo"
+     ],
+     "activities": [
+      "Aproveite a vista gratuita do terraço do MAS.",
+      "Faça compras no bairro da moda (Meir e Nationalestraat).",
+      "Passeie às margens do rio Escalda."
+     ],
+     "foodAndDrinks": [
+      "Batata frita",
+      "Cerveja De Koninck (“bolleke”)",
+      "Antwerpse handjes (biscoitos em forma de mão)"
+     ],
+     "criticalTips": [
+      "Peça certificado nas joalherias de diamantes.",
+      "A catedral cobra entrada; confira o horário."
+     ],
+     "mapsQuery": "Antwerp, Belgium"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Gante (castelo medieval e canais)",
+     "recommendedDuration": "1 dia",
+     "durationBadge": "1 dia",
+     "highlights": [
+      "Castelo de Gravensteen",
+      "Catedral de São Bavão e o Retábulo de Gante",
+      "Cais Graslei e Korenlei",
+      "Campanário"
+     ],
+     "activities": [
+      "Faça um passeio de barco pelos canais.",
+      "Admire a Adoração do Cordeiro Místico, de Van Eyck.",
+      "Caminhe pelos cais iluminados à noite."
+     ],
+     "foodAndDrinks": [
+      "Waterzooi",
+      "Gentse neuzen (balas cuberdon)",
+      "Cerveja lambic"
+     ],
+     "criticalTips": [
+      "Reserve com antecedência o ingresso para o Retábulo de Gante.",
+      "Durante as Gentse Feesten, a hospedagem fica cara e lotada."
+     ],
+     "mapsQuery": "Ghent, Belgium"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Bruges (canais e praça medieval)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Markt e Campanário (366 degraus)",
+      "Basílica do Santo Sangue",
+      "Beguinário e Minnewater",
+      "Museu Groeninge"
+     ],
+     "activities": [
+      "Conheça a cidade de barco pelos canais.",
+      "Suba ao Campanário pela vista.",
+      "Vá de bicicleta até o vilarejo de Damme."
+     ],
+     "foodAndDrinks": [
+      "Carbonnade flamande",
+      "Chocolate belga",
+      "Cerveja trapista"
+     ],
+     "criticalTips": [
+      "Passe uma noite em Bruges para fugir dos turistas que vêm só por um dia.",
+      "Use calçados confortáveis para o calçamento de pedra."
+     ],
+     "mapsQuery": "Bruges, Belgium"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Moules-frites (mexilhões com batata frita)",
+     "Carbonnade flamande / Stoofvlees (carne bovina cozida na cerveja)",
+     "Waterzooi (ensopado cremoso de frango ou peixe ao estilo de Gante)"
+    ],
+    "drinks": [
+     "Cervejas trapistas (Westvleteren, Chimay, Orval)",
+     "Cervejas lambic e gueuze",
+     "Jenever (destilado de zimbro)"
+    ],
+    "streetFoods": [
+     "Batata frita com molho de uma friterie",
+     "Waffles de Liège e de Bruxelas",
+     "Bombons e chocolate belga"
+    ],
+    "diningAdvice": "Os bairros de Saint-Josse e Schaerbeek, em Bruxelas, têm uma grande comunidade turca e muitos restaurantes halal. A carbonnade e alguns molhos levam cerveja; a batata frita às vezes é frita, à moda tradicional, em gordura bovina."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Capa de chuva ou guarda-chuva dobrável",
+     "Calçados confortáveis para o calçamento de pedra",
+     "Cartão por aproximação (compatível com Bancontact)",
+     "Bolsa transversal com zíper contra furtos"
+    ],
+    "safetyAndEtiquette": [
+     "Leve a bolsa na frente do corpo em estações movimentadas.",
+     "Em Flandres, começar em inglês em vez de francês pode ser mais bem recebido."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "E"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Tomadas tipo C e E (dois pinos redondos; a E tem o pino de aterramento na própria tomada). Plugues turcos C e híbridos E/F encaixam."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "A água da torneira é potável; os restaurantes costumam servir água engarrafada paga, então peça expressamente água da torneira.",
+    "vaccines": [
+     "Vacinas de rotina (tétano, difteria, tríplice viral)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "112"
+   },
+   "tipping": {
+    "custom": "O serviço está incluído; basta arredondar ou deixar 5-10 %.",
+    "standardPercent": 5,
+    "rule": "round_up",
+    "note": "Nos táxis é comum arredondar; gorjeta não é esperada."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA de 21 % (restituição líquida de ~10-14 % depois das comissões)",
+    "minSpend": "Acima de 125,01 € na mesma loja, no mesmo dia",
+    "customsNote": "Valide o formulário na alfândega do último ponto de saída da UE (por exemplo, Bruxelas-Zaventem); os produtos devem estar sem uso e na bagagem de mão."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "~US$ 1,00 - 3,00",
+    "topCarriers": [
+     "Proximus",
+     "Orange Belgium",
+     "BASE (Telenet)",
+     "Digi"
+    ],
+    "airportSimTrapWarning": "Evite os pacotes caros do aeroporto; configure um eSIM ou compre um chip pré-pago da Proximus, Orange ou BASE na cidade (é preciso passaporte para o cadastro)."
+   },
+   "touristScams": [
+    {
+     "title": "Furto por distração",
+     "desc": "Em Bruxelas-Midi e no metrô, alguém pede uma informação ou suja sua roupa enquanto um cúmplice leva sua carteira.",
+     "tip": "Segure a bolsa quando estranhos se aproximarem e não deixe o celular sobre a mesa."
+    },
+    {
+     "title": "Armadilha do menu na Rue des Bouchers",
+     "desc": "Os promotores atraem com um menu barato, e a conta vem com bebidas e extras caros.",
+     "tip": "Evite restaurantes com promotores na porta e confirme os preços antes de pedir."
+    },
+    {
+     "title": "Falso abaixo-assinado",
+     "desc": "Grupos nos arredores da Grand-Place oferecem uma lista, pedem doações ou roubam você.",
+     "tip": "Não pare nem assine nada."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Евро (EUR)",

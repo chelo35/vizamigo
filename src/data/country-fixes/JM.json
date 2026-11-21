@@ -1539,6 +1539,391 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Dólar jamaicano (JMD)",
+   "plugType": "Tipo A, B (110V, 50Hz)",
+   "bestMonths": "Dezembro a abril (seco e com o clima mais fresco); de junho a novembro é temporada de furacões. O oeste ainda está se recuperando do furacão Melissa (outubro de 2025).",
+   "safety": {
+    "safetyScore": 40,
+    "safetyLevel": "Recomenda-se cautela",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60",
+    "crimeRateSummary": "A Jamaica tem uma das taxas de homicídio mais altas do mundo, embora a violência se concentre em certos bairros de Kingston e Montego Bay. Os alertas oficiais pedem cautela redobrada; as áreas de resorts são mais seguras, mas há roubos e golpes.",
+    "commonScams": [
+     "Vendedores insistentes em praias e mercados que oferecem passeios caros ou drogas",
+     "Táxis sem licença (sem placa vermelha PPV) com tarifas infladas",
+     "Golpes por telefone de “loteria” voltados a estrangeiros"
+    ],
+    "safeTravelTips": [
+     "Use só táxis licenciados, com placa vermelha “PP”, ou os traslados do hotel.",
+     "Evite os bairros não turísticos de Kingston e Montego Bay e não ande a pé à noite.",
+     "Recuse ofertas de drogas; as leis sobre a cannabis também valem para turistas."
+    ],
+    "emergencyNumbers": {
+     "police": "119",
+     "ambulance": "110",
+     "general": "119"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Bom 4G/5G no litoral e nas cidades; mais fraco nas Blue Mountains e no interior, com possíveis falhas depois do furacão",
+    "costPerGbUsd": "~US$ 1,50 - 4,00",
+    "esimAvailability": "Boa",
+    "bestCarriers": [
+     "Digicel Jamaica",
+     "Flow Jamaica"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Moderado",
+    "costLevel": "Caro",
+    "singleTicketUsd": "US$ 1,00 - 3,00",
+    "dailyPassUsd": "US$ 30 - 60",
+    "popularRideApps": [
+     "Sem Uber",
+     "Táxis turísticos licenciados JUTA",
+     "Ônibus intermunicipais Knutsford Express"
+    ],
+    "taxiAdvice": "Na Jamaica não há Uber. Os táxis turísticos (JUTA) têm tarifas fixas; combine o preço antes. Entre cidades, os confortáveis ônibus da Knutsford Express são ideais; os “route taxis” compartilhados são baratos, mas andam lotados."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 50 - 80",
+    "dailyBudgetMidrangeUsd": "US$ 140 - 250",
+    "budgetMealUsd": "US$ 6 - 14",
+    "coffeeUsd": "US$ 2,50 - 5",
+    "waterBottleUsd": "US$ 1,00 - 2,00",
+    "hostelDormUsd": "US$ 25 - 45",
+    "hotel3StarUsd": "US$ 120 - 220",
+    "flightCostIndex": "Alto",
+    "flightTip": "Não há voos diretos a partir da Turquia; faça conexão em Londres, Madri, Frankfurt ou cidades dos EUA até Montego Bay (MBJ) ou Kingston (KIN)."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Cumprimentar é importante; dizer “Good morning” ao entrar é sinal de educação.",
+     "Respeite as comunidades rastafáris e suas crenças; peça permissão para tirar fotos.",
+     "Com os vendedores, um “No, thanks” gentil, mas firme.",
+     "Expressões como “Respect” e “Irie” transmitem simpatia."
+    ],
+    "festivals": [
+     "Carnaval da Jamaica (abril)",
+     "Reggae Sumfest (julho, Montego Bay)",
+     "Dia da Independência (6 de agosto)"
+    ],
+    "lifestyle": "Ritmos de reggae e dancehall, atitude “no problem”, churrasqueiras de jerk e uma enorme paixão pelo atletismo."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Cachoeiras Dunn’s River (Ocho Rios)",
+     "Seven Mile Beach, em Negril, e as falésias do Rick’s Café",
+     "Museu Bob Marley, Kingston",
+     "Fazendas de café das Blue Mountains",
+     "Port Antonio e a Blue Lagoon",
+     "Luminous Lagoon (Falmouth)"
+    ],
+    "bestSeasons": "Dezembro a abril (seco e com o clima mais fresco); de junho a novembro é temporada de furacões. O oeste ainda está se recuperando do furacão Melissa (outubro de 2025).",
+    "travelStyleTip": "Desembarque em Montego Bay, siga para oeste até Negril, depois percorra a costa norte até Ocho Rios e termine em Kingston e nas Blue Mountains."
+   },
+   "religion": {
+    "primaryReligions": "Protestantes (~65%), católicos (~2%), rastafáris (~1%) e sem religião (~20%).",
+    "respectNorms": "Vista-se com discrição nas igrejas e respeite os espaços sagrados e os costumes rastafáris.",
+    "sacredSites": [
+     "Igreja Paroquial de St. Andrew, Kingston",
+     "Catedral de Spanish Town (a catedral anglicana mais antiga das Américas)",
+     "Comunidade rastafári Bobo Shanti (Bull Bay)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Inglês (oficial). A língua do dia a dia é o patoá jamaicano (patwa).",
+    "englishProficiency": "Muito bom; todos entendem inglês, embora o patoá falado rápido possa ser difícil de acompanhar.",
+    "phrases": [
+     {
+      "phrase": "Wah gwaan?",
+      "meaning": "E aí, tudo bem?",
+      "translation": "E aí, tudo bem?",
+      "pronunciation": "wah GWAHN"
+     },
+     {
+      "phrase": "Mi deh yah",
+      "meaning": "Estou bem / estou aqui",
+      "translation": "Estou bem / estou aqui",
+      "pronunciation": "mee deh YAH"
+     },
+     {
+      "phrase": "Tank yuh",
+      "meaning": "Obrigado",
+      "translation": "Obrigado",
+      "pronunciation": "TANK yuh"
+     },
+     {
+      "phrase": "Ow much fi dis?",
+      "meaning": "Quanto custa isto?",
+      "translation": "Quanto custa isto?",
+      "pronunciation": "ow MUCH fee dis"
+     },
+     {
+      "phrase": "Likkle more",
+      "meaning": "Até logo",
+      "translation": "Até logo",
+      "pronunciation": "LIK-kul mor"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Originalmente habitada pelos taínos, a ilha recebeu Colombo em 1494; os ingleses a tomaram em 1655, e ela se tornou um centro de plantações de açúcar e de escravidão. A escravidão foi totalmente abolida em 1838, e a independência veio em 1962.",
+    "milestones": [
+     "1494: Colombo chega à ilha",
+     "1655: a Inglaterra conquista a Jamaica",
+     "1838: abolição total da escravidão",
+     "1962: independência"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Ackee and saltfish (prato nacional)",
+     "Frango/porco jerk (churrasco temperado)",
+     "Curry de cabrito e rabada (oxtail)"
+    ],
+    "traditionalDrinks": [
+     "Café Blue Mountain",
+     "Rum Appleton e cerveja Red Stripe",
+     "Sorrel (bebida de hibisco) e Ting"
+    ],
+    "streetFoodAndDesserts": [
+     "Beef patty (pastel assado de carne)",
+     "Festival e bammy (massa frita e pão de mandioca)",
+     "Gizzada (tortinha de coco)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Bob Marley (lenda do reggae)",
+     "Usain Bolt (velocista, recordista mundial)",
+     "Marcus Garvey (pensador pan-africanista)"
+    ],
+    "strongSectors": [
+     "Turismo",
+     "Bauxita e alumina",
+     "Remessas de emigrantes e call centers"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Nas áreas turísticas, cartões e dólares americanos são amplamente aceitos; em mercados locais e nos route taxis, é melhor pagar em dólares jamaicanos.",
+    "tippingCulture": "Nos restaurantes espera-se 10-15%; alguns resorts all inclusive têm política de não aceitar gorjetas.",
+    "economicPillars": "Turismo, bauxita-alumina, remessas de emigrantes, agricultura e serviços de BPO."
+   }
+  },
+  "itin": {
+   "routeName": "Roteiro pela Jamaica: Negril, Montego Bay, Ocho Rios e Kingston–Blue Mountains",
+   "routeSummary": "Um roteiro de 9 dias que vai das falésias do pôr do sol de Negril a Montego Bay, às cachoeiras de Ocho Rios e ao legado do reggae em Kingston, com as fazendas de café das Blue Mountains.",
+   "totalDays": 9,
+   "idealDurationText": "Roteiro de 9 dias pela Jamaica",
+   "bestSeason": "Dezembro a abril (seco e com o clima mais fresco); de junho a novembro é temporada de furacões. O oeste ainda está se recuperando do furacão Melissa (outubro de 2025).",
+   "transportMode": "Knutsford Express + táxi licenciado/carro com motorista",
+   "paceLevel": "Equilibrado (praia + cultura + natureza)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Negril",
+     "recommendedDuration": "2 dias (praia e pôr do sol)",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Seven Mile Beach",
+      "Falésias do Rick’s Café",
+      "Farol de Negril",
+      "YS Falls (passeio)"
+     ],
+     "activities": [
+      "Nade e faça snorkel na Seven Mile Beach.",
+      "Veja o pôr do sol no Rick’s Café.",
+      "Faça um passeio até as YS Falls."
+     ],
+     "foodAndDrinks": [
+      "Frango jerk",
+      "Cerveja Red Stripe"
+     ],
+     "criticalTips": [
+      "Depois do furacão Melissa, confirme antes se os hotéis e atrações do oeste estão abertos.",
+      "Salte das falésias apenas nos pontos seguros."
+     ],
+     "mapsQuery": "Negril, Jamaica"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Montego Bay",
+     "recommendedDuration": "2 dias (litoral e história)",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Doctor’s Cave Beach",
+      "Rose Hall Great House",
+      "Luminous Lagoon (Falmouth)",
+      "Passeio de jangada no Martha Brae"
+     ],
+     "activities": [
+      "Faça uma visita histórica a Rose Hall.",
+      "Nade à noite na água bioluminescente da Luminous Lagoon.",
+      "Desça o rio Martha Brae numa jangada de bambu."
+     ],
+     "foodAndDrinks": [
+      "Beef patty",
+      "Rum Appleton"
+     ],
+     "criticalTips": [
+      "À noite, não vá a bairros além do Hip Strip.",
+      "Diga um “não” claro aos vendedores de praia."
+     ],
+     "mapsQuery": "Montego Bay, Jamaica"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Ocho Rios",
+     "recommendedDuration": "2 dias (cachoeiras)",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Cachoeiras Dunn’s River",
+      "Blue Hole (Island Gully Falls)",
+      "Nine Mile (vilarejo natal de Bob Marley)",
+      "Mystic Mountain"
+     ],
+     "activities": [
+      "Suba as cachoeiras Dunn’s River com guia.",
+      "Mergulhe nas piscinas naturais azul-turquesa do Blue Hole.",
+      "Visite o mausoléu de Bob Marley em Nine Mile."
+     ],
+     "foodAndDrinks": [
+      "Ackee and saltfish",
+      "Festival",
+      "Ting"
+     ],
+     "criticalTips": [
+      "Use sapatilhas aquáticas antiderrapantes para subir a cachoeira.",
+      "Nos dias de navio de cruzeiro, Dunn’s River fica lotada; chegue cedo."
+     ],
+     "mapsQuery": "Ocho Rios, Jamaica"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Kingston e Blue Mountains",
+     "recommendedDuration": "3 dias (música e montanha)",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Museu Bob Marley",
+      "Devon House",
+      "Port Royal",
+      "Blue Mountain Peak e fazendas de café"
+     ],
+     "activities": [
+      "Visite o Museu Bob Marley e tome um sorvete na Devon House.",
+      "Suba de madrugada ao Blue Mountain Peak para ver o nascer do sol.",
+      "Faça uma degustação numa fazenda de café."
+     ],
+     "foodAndDrinks": [
+      "Curry de cabrito",
+      "Café Blue Mountain",
+      "Gizzada"
+     ],
+     "criticalTips": [
+      "Em Kingston, fique em New Kingston e nos pontos turísticos.",
+      "As estradas de montanha são estreitas e cheias de curvas; viaje com um motorista experiente."
+     ],
+     "mapsQuery": "Kingston, Jamaica"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Ackee and saltfish (prato nacional)",
+     "Frango/porco jerk (churrasco temperado)",
+     "Curry de cabrito e rabada (oxtail)"
+    ],
+    "drinks": [
+     "Café Blue Mountain",
+     "Rum Appleton e cerveja Red Stripe",
+     "Sorrel (bebida de hibisco) e Ting"
+    ],
+    "streetFoods": [
+     "Beef patty (pastel assado de carne)",
+     "Festival e bammy (massa frita e pão de mandioca)",
+     "Gizzada (tortinha de coco)"
+    ],
+    "diningAdvice": "As churrasqueiras de jerk, principalmente em Boston Bay e nos “jerk centres” de beira de estrada, são a experiência mais autêntica. A pimenta scotch bonnet é ardidíssima: cuidado."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptador de tomada tipo A/B",
+     "Protetor solar e chapéu",
+     "Repelente (dengue)",
+     "Sapatilhas aquáticas"
+    ],
+    "safetyAndEtiquette": [
+     "Use táxis licenciados e não ande a pé à noite.",
+     "Recuse ofertas de drogas e seja gentil, mas firme, com os vendedores."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "A",
+     "B"
+    ],
+    "voltage": "110V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Tomadas norte-americanas de pinos chatos (A/B) em 110V/50Hz; você vai precisar de adaptador. Confira se seus aparelhos aceitam 100–240V."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "A água encanada nas cidades e nos hotéis é tratada e muitas vezes potável, mas nas áreas rurais e no oeste atingido pelo furacão é melhor beber água engarrafada.",
+    "vaccines": [
+     "Hepatite A e febre tifoide",
+     "Vacinas de rotina",
+     "Risco de dengue: use repelente",
+     "Febre amarela exigida apenas de quem chega de país de risco"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "110"
+   },
+   "tipping": {
+    "custom": "Nos restaurantes espera-se gorjeta de 10-15%.",
+    "standardPercent": 15,
+    "rule": "expected",
+    "note": "Confira se o serviço já está incluído; guias de turismo, motoristas e guias das cachoeiras esperam gorjeta."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Sem restituição do GCT (IVA) para turistas (GCT de 15%)",
+    "minSpend": "Não se aplica",
+    "customsNote": "A Jamaica não devolve o GCT aos turistas, mas as lojas “in-bond” de Montego Bay e Ocho Rios permitem comprar sem impostos apresentando o passaporte. Levar produtos de cannabis para fora do país é ilegal."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 1,50 - 4,00",
+    "topCarriers": [
+     "Digicel Jamaica",
+     "Flow Jamaica"
+    ],
+    "airportSimTrapWarning": "Digicel e Flow têm quiosques nos aeroportos de Montego Bay e Kingston; os pacotes para turistas são práticos, mas um pouco mais caros que na cidade. É preciso apresentar o passaporte."
+   },
+   "touristScams": [
+    {
+     "title": "Táxi sem licença",
+     "desc": "Carros sem placa vermelha PP cobram tarifas infladas.",
+     "tip": "Use táxis JUTA ou do hotel e pergunte o preço antes."
+    },
+    {
+     "title": "Vendedor de passeios insistente",
+     "desc": "Pessoas nas praias e no porto que oferecem passeios caros, “guias” ou drogas.",
+     "tip": "Recuse com gentileza; reserve passeios pelo hotel ou por agências licenciadas."
+    },
+    {
+     "title": "Golpe da loteria",
+     "desc": "Ligações dizendo que você ganhou um prêmio e pedindo um pagamento adiantado.",
+     "tip": "Nunca envie dinheiro para números desconhecidos nem passe dados pessoais."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Ямайский доллар (JMD)",

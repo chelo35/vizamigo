@@ -595,6 +595,155 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Dinar macedônio (MKD)",
+   "bestMonths": "Maio – setembro (banho no lago Ohrid de junho a setembro); no verão Skopje pode passar dos 35 °C, então abril–junho e setembro–outubro são melhores para a cidade",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "No geral é um país seguro; crimes violentos raramente atingem turistas. Os principais pontos de atenção são os batedores de carteira em Skopje, a forte poluição no inverno e o trânsito.",
+    "commonScams": [
+     "Taxistas que não ligam o taxímetro ou cobram uma tarifa fixa alta no aeroporto",
+     "Ofertas na rua para trocar dinheiro fora das casas de câmbio oficiais",
+     "Passeios de barco na orla de Ohrid sem preço combinado antes"
+    ],
+    "safeTravelTips": [
+     "Chame táxi por apps como Wizi ou Global Taxi; no aeroporto, use o ponto oficial.",
+     "Troque dinheiro só em casas de câmbio oficiais (menuvačnica).",
+     "De novembro a fevereiro a poluição em Skopje pode ser muito alta; leve máscara se tiver problemas respiratórios."
+    ],
+    "emergencyNumbers": {
+     "police": "192",
+     "ambulance": "194",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "98% (4G amplo; 5G em Skopje e nas cidades maiores)",
+    "costPerGbUsd": "~US$ 0,50 - 1,50",
+    "esimAvailability": "Boa (eSIMs internacionais funcionam; chips locais são baratos)",
+    "bestCarriers": [
+     "Makedonski Telekom",
+     "A1 Makedonija"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Média (principalmente ônibus intermunicipais; trem limitado)",
+    "costLevel": "Muito barato",
+    "singleTicketUsd": "~US$ 0,60 - 0,80 (ônibus urbano de Skopje); ônibus Skopje–Ohrid ~US$ 10 - 12",
+    "dailyPassUsd": "Passes diários são pouco comuns; as passagens avulsas já são muito baratas",
+    "popularRideApps": [
+     "Wizi",
+     "Global Taxi Skopje",
+     "BeeRide"
+    ],
+    "taxiAdvice": "Não há Uber nem Bolt. Os táxis em Skopje são baratos; peça para ligarem o taxímetro ou reserve pelo app. Em Ohrid e Bitola, peça à hospedagem para chamar o táxi; a maioria só aceita dinares em dinheiro."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 30 - 45",
+    "dailyBudgetMidrangeUsd": "US$ 70 - 110",
+    "budgetMealUsd": "US$ 6 - 10 (tavče gravče, kebapi ou burek)",
+    "coffeeUsd": "US$ 1,20 - 2,50",
+    "waterBottleUsd": "US$ 0,40 - 0,70",
+    "hostelDormUsd": "US$ 12 - 22",
+    "hotel3StarUsd": "US$ 45 - 80",
+    "flightCostIndex": "Baixo (voo direto de ~1h30)",
+    "flightTip": "Turkish Airlines e Pegasus têm voos diretos de Istambul para Skopje. Ohrid fica a cerca de 3 horas de Skopje de ônibus."
+   }
+  },
+  "enc": {
+   "language": {
+    "phrases": [
+     {
+      "phrase": "Здраво (Zdravo)",
+      "meaning": "Olá",
+      "translation": "Olá",
+      "pronunciation": "SDRA-vo"
+     },
+     {
+      "phrase": "Благодарам (Blagodaram)",
+      "meaning": "Obrigado(a)",
+      "translation": "Obrigado(a)",
+      "pronunciation": "bla-GO-da-ram"
+     },
+     {
+      "phrase": "Извинете (Izvinete)",
+      "meaning": "Com licença / Desculpe",
+      "translation": "Com licença / Desculpe",
+      "pronunciation": "is-vi-NE-te"
+     },
+     {
+      "phrase": "Колку чини? (Kolku čini?)",
+      "meaning": "Quanto custa?",
+      "translation": "Quanto custa?",
+      "pronunciation": "KOL-ku CHI-ni"
+     },
+     {
+      "phrase": "Сметка, молам (Smetka, molam)",
+      "meaning": "A conta, por favor",
+      "translation": "A conta, por favor",
+      "pronunciation": "SMET-ka, MO-lam"
+     }
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Tomadas europeias C/F (Schuko) de dois pinos redondos, iguais às da Turquia; não é preciso adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "A água da torneira é potável em Skopje e Ohrid; a água de Skopje vem de nascentes nas montanhas.",
+    "vaccines": [
+     "Vacinas de rotina (tríplice viral, tétano)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "194"
+   },
+   "tipping": {
+    "custom": "Nos restaurantes é comum deixar 10% de gorjeta.",
+    "standardPercent": 10,
+    "rule": "round_up",
+    "note": "Em cafés e táxis basta arredondar o valor."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Praticamente inexistente (IVA de 18%)",
+    "minSpend": "—",
+    "customsNote": "A Macedônia do Norte não tem um sistema difundido de restituição de IVA para turistas; pouquíssimas lojas emitem o formulário, então não faça compras contando com o reembolso."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 0,50 - 1,50",
+    "topCarriers": [
+     "Makedonski Telekom",
+     "A1 Makedonija"
+    ],
+    "airportSimTrapWarning": "No aeroporto há poucos pontos de venda; compre um chip turístico barato com o passaporte nas lojas Telekom ou A1 da cidade. O país fica fora do roaming da UE."
+   },
+   "touristScams": [
+    {
+     "title": "Táxis do aeroporto",
+     "desc": "Motoristas não oficiais no aeroporto de Skopje cobram tarifas muito altas até o centro.",
+     "tip": "Use o ponto oficial do aeroporto ou apps como Wizi ou Global Taxi."
+    },
+    {
+     "title": "Cambistas de rua",
+     "desc": "Quem troca dinheiro na rua perto do Bazar Velho oferece câmbio ruim ou entrega menos dinheiro.",
+     "tip": "Use só casas de câmbio oficiais (“menuvačnica”)."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Македонский денар (MKD)",

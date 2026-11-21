@@ -1419,6 +1419,361 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Libra sudanesa (SDG)",
+   "bestMonths": "Novembro a fevereiro (relativamente fresco e seco) · Abril a junho, calor extremo (45 °C+); julho a setembro, chuvas no centro e no sul e tempestades de areia haboob no norte",
+   "safety": {
+    "safetyScore": 10,
+    "safetyLevel": "Zona de conflito (não viaje)",
+    "badgeColor": "bg-rose-600 text-white border-rose-700 dark:bg-rose-950 dark:text-rose-200",
+    "crimeRateSummary": "Desde abril de 2023 há uma guerra entre as Forças Armadas Sudanesas e as Forças de Apoio Rápido (RSF); em grande parte do país ocorrem combates, bombardeios, saques, sequestros e uma grave crise humanitária (fome, epidemias). A Turquia, o FCDO britânico e os EUA desaconselham qualquer viagem; a assistência consular é muito limitada.",
+    "commonScams": [
+     "Notas falsas ou contagem a menos no câmbio do mercado paralelo",
+     "Falsas ofertas de “passagem segura” ou serviços de evacuação",
+     "“Taxas” não oficiais nos postos de controle"
+    ],
+    "safeTravelTips": [
+     "Não viaje ao país; se já estiver lá, acompanhe as informações oficiais atualizadas sobre segurança e evacuação.",
+     "Tenha sempre com você passaporte, dinheiro e medicamentos essenciais.",
+     "Nunca fotografe instalações militares, pontes nem postos de controle."
+    ],
+    "emergencyNumbers": {
+     "police": "999",
+     "ambulance": "333",
+     "general": "999"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Muito afetada pela guerra; algumas regiões ficam semanas sem comunicação, mais estável em Port Sudan e no leste",
+    "costPerGbUsd": "0,50 - 2,00 $ (preços e acesso incertos)",
+    "esimAvailability": "Muito limitada (eSIMs internacionais geralmente não funcionam; chip local com passaporte)",
+    "bestCarriers": [
+     "Zain Sudan",
+     "MTN Sudan",
+     "Sudani (Sudatel)"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Muito precário (estradas e aeroportos muito afetados pela guerra; falta de combustível)",
+    "costLevel": "Incerto / alto (preço do combustível instável)",
+    "singleTicketUsd": "Incerto (as tarifas de micro-ônibus e riquixá variam)",
+    "dailyPassUsd": "Não existe",
+    "popularRideApps": [
+     "Não há app confiável (os apps locais de antes da guerra, como o Tirhal, funcionam mal)",
+     "Micro-ônibus amjad e riquixás (raksha)",
+     "Carro com motorista por meio de um contato local de confiança"
+    ],
+    "taxiAdvice": "O aeroporto de Cartum sofreu danos graves na guerra; a maioria dos voos internacionais usa Port Sudan. As estradas têm postos de controle, falta de combustível e risco de combates; desloque-se só com um motorista de confiança, de dia e com informações atualizadas."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "40 - 70 $ (muito variável por causa da guerra)",
+    "dailyBudgetMidrangeUsd": "US$ 100 - 200",
+    "budgetMealUsd": "US$ 3 - 8",
+    "coffeeUsd": "US$ 0,50 - 1,50",
+    "waterBottleUsd": "US$ 0,50 - 1,00",
+    "hostelDormUsd": "Não há albergues (pensões simples por 20 - 40 $)",
+    "hotel3StarUsd": "US$ 60 - 150",
+    "flightCostIndex": "Alto (voos limitados)",
+    "flightTip": "Viajar não é recomendado. O principal aeroporto em operação é Port Sudan (PZU); há poucos voos, via Cairo, Jeddah e algumas cidades do Golfo, com horários que mudam com frequência."
+   },
+   "plugType": "Tipo C, D (230V, 50Hz)"
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "A hospitalidade é muito forte; é educado não recusar o chá ou o café oferecido.",
+     "Coma e entregue coisas com a mão direita; pegue a comida da parte do prato comum que fica à sua frente.",
+     "Vista-se de forma discreta; as mulheres cobrem ombros, braços e pernas, e é bom levar um lenço.",
+     "Fotografar pode exigir autorização oficial; não fotografe ninguém sem consentimento."
+    ],
+    "festivals": [
+     "Eid al-Fitr e Eid al-Adha",
+     "Mawlid an-Nabi (grandes celebrações em Omdurman)",
+     "Dhikr sufi das sextas-feiras no túmulo de Hamed al-Nil (Omdurman)"
+    ],
+    "lifestyle": "Os laços familiares e tribais são fortes; as “sitt al-shai” (mulheres do chá) nas esquinas, as tradições sufis e as conversas à beira do Nilo fazem parte do dia a dia. A guerra deslocou milhões de pessoas."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Pirâmides de Meroé (Bajrawiya, UNESCO)",
+     "Jebel Barkal e Napata (Karima, UNESCO)",
+     "Templos de Naqa e Musawwarat es-Sufra",
+     "Suakin, porto da época otomana",
+     "Parques marinhos de Sanganeb e baía de Dungonab (UNESCO)",
+     "Confluência do Nilo Azul e do Nilo Branco (Al-Mogran, Cartum)"
+    ],
+    "bestSeasons": "Novembro a fevereiro (relativamente fresco e seco) · Abril a junho, calor extremo (45 °C+); julho a setembro, chuvas no centro e no sul e tempestades de areia haboob no norte",
+    "travelStyleTip": "Hoje, viagens turísticas não são possíveis nem seguras. Quando a paz voltar, o ideal será viajar com operadoras reconhecidas para os sítios núbios do norte, os acampamentos no deserto e os pontos de mergulho do mar Vermelho."
+   },
+   "religion": {
+    "primaryReligions": "Islã (~97 %, sunita, com fortes ordens sufis), cristianismo (~3 %, copta e outras igrejas)",
+    "respectNorms": "Tire os sapatos nas mesquitas; no Ramadã, não coma, beba nem fume em público durante o dia. O álcool é proibido.",
+    "sacredSites": [
+     "Túmulo de Hamed al-Nil (Omdurman)",
+     "Túmulo do Mahdi (Omdurman)",
+     "Jebel Barkal (montanha sagrada do antigo Kush)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "O árabe e o inglês são oficiais; a língua do dia a dia é o árabe sudanês. Também se falam línguas núbias, beja (bedawi), fur e outras.",
+    "englishProficiency": "Baixo a médio; há quem fale inglês entre pessoas com formação superior e nas ONGs.",
+    "phrases": [
+     {
+      "phrase": "السلام عليكم (as-salāmu ʿalaykum)",
+      "meaning": "Que a paz esteja com você (Olá)",
+      "translation": "Que a paz esteja com você (Olá)",
+      "pronunciation": "as-sa-LAA-mu a-LAY-kum"
+     },
+     {
+      "phrase": "كيفنك؟ (keyfinnak?)",
+      "meaning": "Como vai? (árabe sudanês)",
+      "translation": "Como vai? (árabe sudanês)",
+      "pronunciation": "KAY-fin-nak"
+     },
+     {
+      "phrase": "شكراً (shukran)",
+      "meaning": "Obrigado(a)",
+      "translation": "Obrigado(a)",
+      "pronunciation": "SHUK-ran"
+     },
+     {
+      "phrase": "بكم ده؟ (bi-kam da?)",
+      "meaning": "Quanto custa isto?",
+      "translation": "Quanto custa isto?",
+      "pronunciation": "bi-KAM da"
+     },
+     {
+      "phrase": "مافي مشكلة (māfi mushkila)",
+      "meaning": "Sem problema",
+      "translation": "Sem problema",
+      "pronunciation": "MAA-fi MUSH-ki-la"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Berço do antigo Kush, com os reinos de Kerma, Napata e Meroé às margens do Nilo, o Sudão tem mais pirâmides que o Egito. Depois dos reinos cristãos núbios medievais, a região foi islamizada; em 1821 passou ao domínio otomano-egípcio com Mehmet Ali, em 1885 surgiu o Estado mahdista e, em seguida, o condomínio anglo-egípcio. Independente desde 1956, viu o Sudão do Sul se separar em 2011.",
+    "milestones": [
+     "~750 a.C.: os reis kushitas governam o Egito (XXV dinastia)",
+     "1821: domínio otomano-egípcio sob Mehmet Ali",
+     "1956: independência (1º de janeiro)",
+     "2011: secessão do Sudão do Sul; 2023: começa a guerra"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Ful medames (favas com azeite e especiarias; o prato do dia a dia)",
+     "Kisra com mullah (panqueca de sorgo com ensopado de carne ou quiabo)",
+     "Asida (mingau de sorgo com ensopado)"
+    ],
+    "traditionalDrinks": [
+     "Café jabana (com gengibre, feito em pote de barro)",
+     "Karkadé (bebida de hibisco)",
+     "Aradeib (bebida de tamarindo)"
+    ],
+    "streetFoodAndDesserts": [
+     "Ta’amiya (falafel sudanês)",
+     "Lugaimat (bolinhos de massa fritos na calda)",
+     "Basbousa (bolo de semolina)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Piye (Piankhi; rei kushita que conquistou o Egito)",
+     "Tayeb Salih (escritor, “Tempo de migrar para o norte”)",
+     "Mohammed Wardi (lenda da música sudanesa)"
+    ],
+    "strongSectors": [
+     "Mineração de ouro",
+     "Goma arábica (a maior parte da produção mundial), gergelim e algodão",
+     "Exportação de gado"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "O dinheiro vivo domina; cartões Visa/Mastercard internacionais geralmente não funcionam. Os moradores usam apps de banco móvel como o Bankak; o visitante deve levar dólares em espécie. O câmbio é muito instável por causa da guerra.",
+    "tippingCulture": "Não é obrigatória; pequenas gorjetas e arredondar o valor são bem-vindos.",
+    "economicPillars": "Agricultura e pecuária, mineração de ouro e comércio via Port Sudan; a guerra encolheu gravemente a economia."
+   }
+  },
+  "itin": {
+   "routeName": "Nas pegadas de Kush (quando a paz voltar): Cartum, Meroé e Jebel Barkal",
+   "routeSummary": "Os alertas oficiais desaconselham viajar; este roteiro de 8 dias é apenas informativo. Em tempos de paz, o percurso clássico vai de Cartum e Omdurman às pirâmides de Meroé e, pelo deserto de Bayuda, até Jebel Barkal, em Karima.",
+   "totalDays": 8,
+   "bestSeason": "Novembro a fevereiro (relativamente fresco e seco) · Abril a junho, calor extremo (45 °C+); julho a setembro, chuvas no centro e no sul e tempestades de areia haboob no norte",
+   "transportMode": "4x4 com motorista por meio de uma operadora reconhecida; acampamentos no deserto",
+   "paceLevel": "História e deserto (longos trajetos de carro)",
+   "signatureGastronomy": {
+    "dishes": [
+     "Ful medames",
+     "Kisra com mullah",
+     "Asida"
+    ],
+    "drinks": [
+     "Café jabana",
+     "Karkadé",
+     "Aradeib"
+    ],
+    "streetFoods": [
+     "Ta’amiya",
+     "Lugaimat",
+     "Basbousa"
+    ],
+    "diningAdvice": "O café da manhã costuma ser tardio e à base de ful; come-se de uma travessa comum com a mão direita. Por causa da guerra, o abastecimento e os preços dos alimentos são muito imprevisíveis."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Dólares em espécie suficientes (notas de séries recentes)",
+     "Certificado de febre amarela e antimaláricos",
+     "Medicamentos pessoais e kit de primeiros socorros",
+     "Lenço, chapéu e óculos de sol contra a poeira e o sol"
+    ],
+    "safetyAndEtiquette": [
+     "Não fotografe instalações militares, pontes nem postos de controle.",
+     "Vista-se de forma discreta e não coma nem beba em público durante o dia no Ramadã."
+    ]
+   },
+   "idealDurationText": "Roteiro de 8 dias",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Cartum e Omdurman",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Al-Mogran, confluência do Nilo Azul e do Nilo Branco",
+      "Dhikr das sextas-feiras no túmulo de Hamed al-Nil",
+      "Souk de Omdurman",
+      "Museu Nacional (danificado na guerra)"
+     ],
+     "activities": [
+      "Assista com respeito ao dhikr dos dervixes sufis ao entardecer.",
+      "Tome um chá com uma sitt al-shai à beira do Nilo.",
+      "Dê uma olhada no artesanato do souk de Omdurman."
+     ],
+     "foodAndDrinks": [
+      "Ful medames",
+      "Ta’amiya",
+      "Café jabana"
+     ],
+     "criticalTips": [
+      "Fotografar pode exigir autorização; nunca fotografe áreas militares.",
+      "Esta região hoje tem risco de combates; siga os alertas oficiais."
+     ],
+     "mapsQuery": "Omdurman, Sudan"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Pirâmides de Meroé, Naqa e Musawwarat",
+     "recommendedDuration": "2-3 dias",
+     "durationBadge": "2-3 dias",
+     "highlights": [
+      "Quase 200 pirâmides de laterais íngremes em Bajrawiya",
+      "Templo do Leão de Naqa",
+      "Grande Recinto de Musawwarat es-Sufra"
+     ],
+     "activities": [
+      "Veja o nascer do sol das dunas entre as pirâmides.",
+      "Durma sob as estrelas em um acampamento no deserto.",
+      "Faça um passeio curto de camelo pelo deserto."
+     ],
+     "foodAndDrinks": [
+      "Kisra com mullah",
+      "Karkadé"
+     ],
+     "criticalTips": [
+      "O sol e o calor são extremos; muita água, chapéu e protetor solar são indispensáveis.",
+      "Não escale os monumentos nem leve fragmentos."
+     ],
+     "mapsQuery": "Meroe Pyramids, Sudan"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Karima e Jebel Barkal",
+     "recommendedDuration": "2-3 dias",
+     "durationBadge": "2-3 dias",
+     "highlights": [
+      "Montanha sagrada de Jebel Barkal e templo de Amon",
+      "Túmulos reais de El-Kurru (câmaras pintadas)",
+      "Pirâmides de Nuri",
+      "Antiga Dongola (capital núbia medieval)"
+     ],
+     "activities": [
+      "Suba o Jebel Barkal ao entardecer.",
+      "Visite aldeias núbias à beira do Nilo.",
+      "Veja as pinturas murais dos túmulos de El-Kurru."
+     ],
+     "foodAndDrinks": [
+      "Peixe do Nilo",
+      "Tâmaras",
+      "Aradeib"
+     ],
+     "criticalTips": [
+      "A travessia do Bayuda é longa e tem poucos serviços; abasteça-se de combustível e água.",
+      "Os ingressos e as autorizações para fotografar são emitidos pela autoridade local."
+     ],
+     "mapsQuery": "Jebel Barkal, Karima, Sudan"
+    }
+   ]
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "D"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Tomadas tipo C (dois pinos redondos) e D (três pinos redondos), 230V/50Hz, e algumas tipo G. Os plugues C finos quase sempre encaixam, mas os Schuko grossos não entram nas tomadas D; leve um adaptador universal. As quedas de energia são frequentes."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Nunca beba água da torneira; houve surtos de cólera. Use apenas água engarrafada lacrada ou tratada.",
+    "vaccines": [
+     "Febre amarela (certificado se você vier de um país de risco; recomendada para o sul)",
+     "Hepatite A, febre tifoide e cólera",
+     "Meningite (ACWY), reforço da pólio e raiva",
+     "Prevenção contra malária (risco disseminado) e dengue"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "333"
+   },
+   "tipping": {
+    "custom": "Não é obrigatória; pequenas gorjetas e arredondar o valor são bem-vindos.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "A gorjeta é dada em dinheiro; é comum dar uma pequena gorjeta diária a guias e motoristas."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Não há",
+    "minSpend": "Não se aplica",
+    "customsNote": "O Sudão não devolve o IVA a turistas. É proibido levar antiguidades e objetos arqueológicos para fora do país; a exportação de ouro é rigidamente controlada."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "US$ 0,50 - 2,00",
+    "topCarriers": [
+     "Zain Sudan",
+     "MTN Sudan",
+     "Sudani"
+    ],
+    "airportSimTrapWarning": "eSIMs internacionais e roaming geralmente não funcionam; compre o chip apenas em pontos oficiais da Zain, MTN ou Sudani, com passaporte. Considere um comunicador via satélite por causa dos apagões regionais."
+   },
+   "touristScams": [
+    {
+     "title": "Câmbio no mercado paralelo",
+     "desc": "Promessas de boa cotação podem vir com notas falsas, gastas ou a menos.",
+     "tip": "Use canais de confiança, conte o dinheiro na hora e leve dólares de séries novas; notas velhas ou rasgadas podem ser recusadas."
+    },
+    {
+     "title": "Falsos serviços de evacuação ou travessia",
+     "desc": "Em crises, surgem intermediários que prometem travessias ou evacuações “garantidas” em troca de dinheiro.",
+     "tip": "Use apenas os canais de evacuação divulgados por embaixadas e órgãos oficiais."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Суданский фунт (SDG)",

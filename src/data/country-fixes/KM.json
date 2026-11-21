@@ -1499,6 +1499,381 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Franco comoriano (KMF) – atrelado ao euro (1 € ≈ 492 KMF)",
+   "plugType": "Tipo C, E (220V, 50Hz)",
+   "bestMonths": "Maio a outubro (estação seca e mais fresca dos ventos alísios; baleias-jubarte de julho a outubro); de novembro a abril faz calor, chove e há risco de ciclones",
+   "safety": {
+    "safetyScore": 55,
+    "safetyLevel": "Risco moderado",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60",
+    "crimeRateSummary": "A criminalidade é baixa, mas a tensão política pode provocar protestos e bloqueios de estradas. Furtos, atendimento médico precário e barcos superlotados entre as ilhas são os principais riscos.",
+    "commonScams": [
+     "\"Guias\" sem licença no monte Karthala que cobram caro",
+     "Cambistas no porto que revendem passagens de barco mais caras",
+     "Câmbio ruim e notas a menos com doleiros de rua"
+    ],
+    "safeTravelTips": [
+     "Evite manifestações e aglomerações e acompanhe o noticiário local.",
+     "Entre as ilhas, prefira o avião; os barcos costumam viajar superlotados.",
+     "Vista-se de forma conservadora; no Ramadã, não coma nem beba em público durante o dia."
+    ]
+   },
+   "internet": {
+    "networkCoverage": "3G/4G em Moroni e nas cidades maiores; fraco no interior montanhoso e em Mohéli",
+    "costPerGbUsd": "~US$ 2 - 5",
+    "esimAvailability": "Limitada – a cobertura das eSIMs internacionais é fraca e cara; compre um chip local com o passaporte em Moroni",
+    "bestCarriers": [
+     "Comores Telecom (Huri)",
+     "Telma Comores"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Básico – sem metrô; táxis compartilhados e micro-ônibus (taxi-brousse), aviões de pequeno porte e barcos entre as ilhas",
+    "costLevel": "Barato",
+    "singleTicketUsd": "US$ 0,70 - 1,20 (táxi compartilhado em Moroni, 300-500 KMF)",
+    "dailyPassUsd": "Carro com motorista ~US$ 50 - 80 / dia",
+    "popularRideApps": [
+     "Não há apps de transporte",
+     "Táxis compartilhados",
+     "Carro com motorista"
+    ],
+    "taxiAdvice": "Não há apps. Os táxis compartilhados de Moroni cobram uma tarifa fixa pequena; para uma corrida particular (\"course\"), combine o preço antes. Um carro com motorista é o jeito mais confortável de percorrer cada ilha."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 35 - 55",
+    "dailyBudgetMidrangeUsd": "US$ 80 - 140",
+    "budgetMealUsd": "US$ 4 - 8",
+    "coffeeUsd": "US$ 1 - 2",
+    "waterBottleUsd": "A água da torneira não é potável; use água mineral ou fervida.",
+    "hostelDormUsd": "US$ 25 - 45",
+    "hotel3StarUsd": "US$ 60 - 110",
+    "flightCostIndex": "Alto (com escala)",
+    "flightTip": "Da Turquia, a conexão costuma ser via Adis Abeba (Ethiopian), Nairóbi (Kenya Airways) ou Dar es Salaam até o aeroporto Prince Said Ibrahim, em Moroni (HAH). Os voos domésticos para Mohéli e Anjouan são curtos, mas os horários mudam com frequência."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Cumprimente com a mão direita e comece pelos mais velhos.",
+     "Homens e mulheres devem cobrir ombros e joelhos; bermudas e shorts são malvistos na cidade.",
+     "Fique em silêncio perto das mesquitas, sobretudo durante a oração de sexta-feira.",
+     "Peça permissão antes de fotografar pessoas, especialmente mulheres."
+    ],
+    "festivals": [
+     "Dia da Independência – 6 de julho",
+     "Temporada de casamentos do Grand Mariage (Anda) – julho e agosto, Grande Comore",
+     "Festa do fim do Ramadã e celebrações do Mawlid"
+    ],
+    "lifestyle": "Uma vida tranquila de ilha com raízes suaílis, árabes e malgaxes; a família, a mesquita e cerimônias como o Grand Mariage são o centro da sociedade."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Medina de Moroni e a Antiga Mesquita de Sexta-Feira",
+     "Monte Karthala (2.361 m, vulcão ativo)",
+     "Lac Salé e Trou du Prophète (norte de Grande Comore)",
+     "Parque Marinho de Mohéli e tartarugas em Itsamia",
+     "Medina e cidadela de Mutsamudu (Anjouan)",
+     "Praias de Itsandra e Chomoni"
+    ],
+    "bestSeasons": "Maio a outubro (estação seca e mais fresca dos ventos alísios; baleias-jubarte de julho a outubro); de novembro a abril faz calor, chove e há risco de ciclones",
+    "travelStyleTip": "Espere uma experiência autêntica do oceano Índico, não luxo; leve dinheiro em espécie em euros/KMF e mantenha um plano flexível."
+   },
+   "religion": {
+    "primaryReligions": "Islamismo sunita (~98 %, escola shafi'i; religião do Estado) e uma pequena minoria católica.",
+    "respectNorms": "Entre nas mesquitas só com permissão e com roupas adequadas; no Ramadã, evite comer, beber ou fumar em público durante o dia. Bebidas alcoólicas são difíceis de encontrar.",
+    "sacredSites": [
+     "Antiga Mesquita de Sexta-Feira (Moroni, 1427)",
+     "Mesquita de Sexta-Feira de Mutsamudu (Anjouan)",
+     "Iconi – antiga capital e suas mesquitas históricas"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Comoriano (shikomori), francês e árabe.",
+    "englishProficiency": "Muito limitado; o francês e algumas frases em comoriano ajudam muito.",
+    "phrases": [
+     {
+      "phrase": "Jeje?",
+      "meaning": "Oi, tudo bem? (shingazidja)",
+      "translation": "Oi, tudo bem? (shingazidja)",
+      "pronunciation": "JEH-jeh"
+     },
+     {
+      "phrase": "Ndjema",
+      "meaning": "Estou bem",
+      "translation": "Estou bem",
+      "pronunciation": "n-JEH-mah"
+     },
+     {
+      "phrase": "Marahaba",
+      "meaning": "Obrigado",
+      "translation": "Obrigado",
+      "pronunciation": "mah-rah-HAH-bah"
+     },
+     {
+      "phrase": "Salam aleykum",
+      "meaning": "A paz esteja com você (saudação)",
+      "translation": "A paz esteja com você (saudação)",
+      "pronunciation": "sa-LAAM a-LEY-kum"
+     },
+     {
+      "phrase": "C'est combien ?",
+      "meaning": "Quanto custa? (francês)",
+      "translation": "Quanto custa? (francês)",
+      "pronunciation": "seh kom-BYAN"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Povos bantos, suaílis, árabes e malgaxes moldaram as ilhas, governadas durante séculos por sultanatos rivais. A França assumiu o controle no século XIX; a independência veio em 6 de julho de 1975 (Mayotte continuou francesa). Houve vários golpes de Estado; desde 2001 o país se chama União das Comores.",
+    "milestones": [
+     "Século XV: sultanatos suaíli-shirazi e a Mesquita de Sexta-Feira de Moroni",
+     "1886-1912: Protetorado e colônia francesa",
+     "6 de julho de 1975: Independência",
+     "2001: Constituição da União das Comores"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Lagosta com baunilha (langouste à la vanille)",
+     "Mataba (folhas de mandioca no leite de coco)",
+     "Pilao (arroz temperado)"
+    ],
+    "traditionalDrinks": [
+     "Chá de gengibre com especiarias",
+     "Água de coco fresca",
+     "Sucos tropicais (maracujá, baobá)"
+    ],
+    "streetFoodAndDesserts": [
+     "Mkatra foutra (pão achatado de coco)",
+     "Espetinhos de carne grelhada",
+     "Fruta-pão e mandioca fritas"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Said Mohamed Cheikh (estadista do período anterior à independência)",
+     "Salim Ali Amir (cantor popular)",
+     "El Fardou Ben Nabouhane (jogador da seleção de futebol)"
+    ],
+    "strongSectors": [
+     "Exportação de baunilha, cravo e ylang-ylang",
+     "Remessas da diáspora na França",
+     "Pesca e agricultura"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "O dinheiro vivo (KMF e euros) é o que manda; quase não há caixas eletrônicos fora de Moroni e Mutsamudu, e os cartões só funcionam nos hotéis maiores.",
+    "tippingCulture": "A gorjeta não é obrigatória; arredondar a conta nos restaurantes ou dar algo aos guias é bem-visto.",
+    "economicPillars": "Agricultura (baunilha, cravo, ylang-ylang), remessas e ajuda externa."
+   }
+  },
+  "itin": {
+   "routeName": "Roteiro pelas Ilhas da Lua: Grande Comore, Mohéli e Anjouan",
+   "routeSummary": "Roteiro de 10 dias pelas ilhas que começa na medina de Moroni e no vulcão Karthala, passa pelo parque marinho de Mohéli e termina na histórica Mutsamudu, em Anjouan.",
+   "totalDays": 10,
+   "idealDurationText": "Roteiro de 10 dias pelas ilhas",
+   "bestSeason": "Maio a outubro (estação seca e mais fresca dos ventos alísios; baleias-jubarte de julho a outubro); de novembro a abril faz calor, chove e há risco de ciclones",
+   "transportMode": "Carro com motorista / táxi compartilhado + voos domésticos entre as ilhas",
+   "paceLevel": "Equilibrado (natureza, cultura e mar)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Moroni e Itsandra (Grande Comore)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Antiga Mesquita de Sexta-Feira e porto",
+      "Medina de Moroni e mercado Volo Volo",
+      "Praia e antigo forte de Itsandra"
+     ],
+     "activities": [
+      "Passeie pelas vielas da medina.",
+      "Compre baunilha e especiarias no mercado Volo Volo.",
+      "Tome banho de mar em Itsandra ao pôr do sol."
+     ],
+     "foodAndDrinks": [
+      "Lagosta com baunilha",
+      "Chá de gengibre"
+     ],
+     "criticalTips": [
+      "As mesquitas fecham para visitantes durante a oração de sexta-feira.",
+      "Leve dinheiro em espécie em KMF; cartões quase não são aceitos."
+     ],
+     "mapsQuery": "Moroni, Comoros"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Karthala e norte de Grande Comore",
+     "recommendedDuration": "3 dias",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Cratera do Karthala",
+      "Lago de cratera Lac Salé",
+      "Trou du Prophète e praia de Mitsamiouli"
+     ],
+     "activities": [
+      "Faça o trekking guiado de 2 dias até o Karthala.",
+      "Caminhe ao redor do Lac Salé.",
+      "Descanse na areia branca de Chomoni."
+     ],
+     "foodAndDrinks": [
+      "Mataba",
+      "Água de coco fresca"
+     ],
+     "criticalTips": [
+      "Suba o Karthala só com guia licenciado e bastante água.",
+      "Acompanhe os avisos locais sobre atividade vulcânica."
+     ],
+     "mapsQuery": "Mitsamiouli, Grande Comore, Comoros"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Mohéli (Parque Marinho de Mwali)",
+     "recommendedDuration": "3 dias",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Parque Marinho de Mohéli e ilhotas de Nioumachoua",
+      "Tartarugas-verdes desovando em Itsamia",
+      "Baleias-jubarte de julho a outubro"
+     ],
+     "activities": [
+      "Faça snorkel ao redor das ilhotas.",
+      "Observe à noite a desova das tartarugas com um guia.",
+      "Saia de barco para ver baleias."
+     ],
+     "foodAndDrinks": [
+      "Peixe grelhado com pilao",
+      "Sucos tropicais"
+     ],
+     "criticalTips": [
+      "As opções de hospedagem são muito poucas; reserve com antecedência.",
+      "Não ilumine nem toque nas tartarugas."
+     ],
+     "mapsQuery": "Nioumachoua, Moheli, Comoros"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Anjouan (Mutsamudu e Moya)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Medina e cidadela de Mutsamudu",
+      "Cachoeira de Dziancoundré",
+      "Praia de Moya"
+     ],
+     "activities": [
+      "Admire o porto do alto das muralhas da cidadela.",
+      "Visite destilarias de ylang-ylang.",
+      "Tome banho de mar em Moya."
+     ],
+     "foodAndDrinks": [
+      "Mkatra foutra",
+      "Espetinhos grelhados"
+     ],
+     "criticalTips": [
+      "As estradas de montanha são estreitas e cheias de curvas; contrate um motorista experiente.",
+      "Peça permissão antes de fotografar os trabalhadores do ylang-ylang."
+     ],
+     "mapsQuery": "Mutsamudu, Anjouan, Comoros"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Lagosta com baunilha (langouste à la vanille)",
+     "Mataba (folhas de mandioca no leite de coco)",
+     "Pilao (arroz temperado)"
+    ],
+    "drinks": [
+     "Chá de gengibre com especiarias",
+     "Água de coco fresca",
+     "Sucos tropicais (maracujá, baobá)"
+    ],
+    "streetFoods": [
+     "Mkatra foutra (pão achatado de coco)",
+     "Espetinhos de carne grelhada",
+     "Fruta-pão e mandioca fritas"
+    ],
+    "diningAdvice": "Os restaurantes simples servem peixe, arroz e pratos com coco a bons preços; bebidas alcoólicas só são encontradas em alguns hotéis."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Remédio antimalárico e repelente",
+     "Dinheiro suficiente em euros",
+     "Roupas compridas e discretas",
+     "Calçado de trilha (para o Karthala)"
+    ],
+    "safetyAndEtiquette": [
+     "Vista-se de forma conservadora e respeite os costumes do Ramadã.",
+     "Não embarque em barcos superlotados."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "E"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Tomadas europeias de dois pinos redondos (C/E); os plugues turcos costumam encaixar diretamente."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "A água da torneira não é potável; use água mineral ou fervida.",
+    "vaccines": [
+     "Vacinas de rotina",
+     "Hepatite A",
+     "Febre tifoide",
+     "Profilaxia contra malária (há risco da doença)",
+     "Certificado de febre amarela se você chegar de um país de risco"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "772 03 73"
+   },
+   "tipping": {
+    "custom": "A gorjeta não é obrigatória; um pequeno extra é bem-vindo.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "É comum dar uma pequena gorjeta a guias e motoristas no fim do dia."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Sem restituição de IVA para turistas",
+    "minSpend": "—",
+    "customsNote": "As Comores não têm sistema tax-free nem restituição de IVA para turistas. Baunilha e especiarias podem ser levadas em quantidades razoáveis."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "US$ 2,00 - 5,00",
+    "topCarriers": [
+     "Comores Telecom (Huri)",
+     "Telma Comores"
+    ],
+    "airportSimTrapWarning": "Pode ser que não haja balcão de chips no aeroporto; compre o seu com o passaporte numa loja Huri (Comores Telecom) ou Telma em Moroni."
+   },
+   "touristScams": [
+    {
+     "title": "Guias de vulcão sem licença",
+     "desc": "Guias sem equipamento que cobram caro ao pé do Karthala.",
+     "tip": "Encontre um guia pelo hotel ou por uma agência conhecida."
+    },
+    {
+     "title": "Cambistas de passagens de barco",
+     "desc": "Passagens revendidas e barcos superlotados no porto.",
+     "tip": "Use voos domésticos sempre que puder."
+    },
+    {
+     "title": "Câmbio na rua",
+     "desc": "Cotações ruins e notas contadas errado.",
+     "tip": "Troque dinheiro em banco ou hotel e confira a quantia."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Коморский франк (KMF) – привязан к евро (1 € ≈ 492 KMF)",

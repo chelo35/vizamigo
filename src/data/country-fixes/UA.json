@@ -1431,6 +1431,364 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Grívnia ucraniana (UAH)",
+   "plugType": "Tipo C, F (230V, 50Hz)",
+   "bestMonths": "Em tempos de paz: maio a junho e setembro (clima ameno); dezembro a março para esquiar nos Cárpatos. No momento, viajar não é recomendado.",
+   "safety": {
+    "safetyScore": 10,
+    "safetyLevel": "Zona de conflito (não viaje)",
+    "badgeColor": "bg-rose-600 text-white border-rose-700 dark:bg-rose-950 dark:text-rose-200",
+    "crimeRateSummary": "O país está em guerra ativa: todas as regiões, inclusive Kiev e Lviv, podem sofrer ataques com mísseis e drones, e as frentes de combate do leste e do sul, além das áreas de fronteira, são extremamente perigosas. Vigoram a lei marcial e toques de recolher; muitos governos desaconselham qualquer viagem.",
+    "commonScams": [
+     "Falsas arrecadações de caridade e voluntariado (on-line e na rua)",
+     "Motoristas e intermediários não oficiais que cobram a mais nas passagens de fronteira",
+     "Cambistas de rua que entregam notas falsas ou dinheiro a menos"
+    ],
+    "safeTravelTips": [
+     "Se você precisar estar lá, instale o app de alertas aéreos ‘Povitriana Tryvoha’ e descubra onde fica o abrigo mais próximo.",
+     "É proibido fotografar ou publicar instalações militares, infraestrutura ou locais atingidos por ataques.",
+     "Cadastre-se na embaixada do seu país, respeite o toque de recolher e contrate um seguro que cubra riscos de guerra."
+    ],
+    "emergencyNumbers": {
+     "police": "102",
+     "ambulance": "103",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Bom 4G nas cidades; a rede pode cair durante apagões e ataques, e não há sinal perto da linha de frente.",
+    "costPerGbUsd": "~US$ 0,10 - 0,50",
+    "esimAvailability": "Boa (Kyivstar, Vodafone e lifecell oferecem eSIM)",
+    "bestCarriers": [
+     "Kyivstar",
+     "Vodafone Ukraine",
+     "lifecell"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Regular (espaço aéreo fechado; as viagens são feitas principalmente nos trens da Ukrzaliznytsia e de ônibus)",
+    "costLevel": "Muito barato",
+    "singleTicketUsd": "US$ 0,20 - 0,40",
+    "dailyPassUsd": "Pouco comum",
+    "popularRideApps": [
+     "Uklon",
+     "Bolt",
+     "Uber",
+     "Ukrzaliznytsia (UZ)"
+    ],
+    "taxiAdvice": "Com o espaço aéreo fechado, a entrada é por terra ou de trem a partir da Polônia, da Moldávia ou da Romênia. Nas cidades, use Uklon, Bolt ou Uber; durante os alertas aéreos, o metrô pode parar e funciona como abrigo."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 25 - 40",
+    "dailyBudgetMidrangeUsd": "US$ 55 - 100",
+    "budgetMealUsd": "US$ 5 - 10",
+    "coffeeUsd": "US$ 1,50 - 2,50",
+    "waterBottleUsd": "US$ 0,40 - 0,80",
+    "hostelDormUsd": "US$ 8 - 15",
+    "hotel3StarUsd": "US$ 40 - 85",
+    "flightCostIndex": "Sem voos (espaço aéreo fechado)",
+    "flightTip": "Não há voos comerciais para a Ucrânia. Os aeroportos mais próximos são Rzeszów e Cracóvia (Polônia), Chisinau (Moldávia) e Suceava (Romênia); de lá, siga de trem ou de ônibus."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Ao visitar alguém, leve flores (em número ímpar), doces ou bebida; dentro de casa, tira-se o sapato.",
+     "Cumprimentar em ucraniano (Добрий день) é sempre bem-visto.",
+     "A guerra e as perdas são temas muito delicados; faça silêncio nas homenagens e no minuto de silêncio diário das 9h.",
+     "Ao entrar em uma igreja, as mulheres cobrem a cabeça e os homens tiram o chapéu."
+    ],
+    "festivals": [
+     "Tradição de Ivana Kupala, solstício de verão (noite de 23 para 24 de junho; desde a mudança de calendário de 2023)",
+     "Páscoa (Velykden) e a tradição dos ovos pintados pysanka",
+     "Dia da Independência (24 de agosto)"
+    ],
+    "lifestyle": "Forte solidariedade familiar e comunitária, a cultura de cafés de Lviv, as camisas bordadas vyshyvanka e uma rica música folclórica; a vida cultural continua mesmo em meio à guerra."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Kiev: Catedral de Santa Sofia (UNESCO)",
+     "Lavra das Cavernas de Kiev (UNESCO)",
+     "Descida de Santo André e bairro de Podil",
+     "Centro histórico de Lviv e Praça Rynok (UNESCO)",
+     "Montes Cárpatos: Yaremche, Hoverla e Bukovel",
+     "Fortaleza de Kamianets-Podilskyi"
+    ],
+    "bestSeasons": "Em tempos de paz, fim da primavera e início do outono; esqui no inverno nos Cárpatos",
+    "travelStyleTip": "A Ucrânia está em guerra; não é recomendado viajar até que os alertas oficiais sejam suspensos. Este roteiro é apenas informativo e pensado para tempos de paz. Em tempos de paz, o trajeto Kiev – Lviv – Cárpatos é feito com conforto em trens noturnos."
+   },
+   "religion": {
+    "primaryReligions": "Maioria cristã ortodoxa (~65 %), greco-católicos ucranianos ~9 % (sobretudo no oeste); pequenas comunidades católica romana, protestante, muçulmana (tártaros da Crimeia) e judaica.",
+    "respectNorms": "Nas igrejas, cubra ombros e joelhos; as mulheres usam lenço. Não use flash durante as celebrações.",
+    "sacredSites": [
+     "Lavra das Cavernas de Kiev",
+     "Catedral de São Jorge (Lviv)",
+     "Lavra de Pochaiv"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Ucraniano",
+    "englishProficiency": "De médio a bom entre os jovens de Kiev e Lviv; limitado no interior. O russo é amplamente entendido, mas o ucraniano é o preferido.",
+    "phrases": [
+     {
+      "phrase": "Добрий день (Dobryi den)",
+      "meaning": "Bom dia / Olá",
+      "translation": "Olá",
+      "pronunciation": "DOB-riy den"
+     },
+     {
+      "phrase": "Дякую (Diakuiu)",
+      "meaning": "Obrigado(a)",
+      "translation": "Obrigado(a)",
+      "pronunciation": "DYA-ku-yu"
+     },
+     {
+      "phrase": "Будь ласка (Bud laska)",
+      "meaning": "Por favor / De nada",
+      "translation": "Por favor",
+      "pronunciation": "bud LAS-ka"
+     },
+     {
+      "phrase": "Скільки коштує? (Skilky koshtuie?)",
+      "meaning": "Quanto custa?",
+      "translation": "Quanto?",
+      "pronunciation": "SKIL-ky KOSH-tu-ye"
+     },
+     {
+      "phrase": "Вибачте (Vybachte)",
+      "meaning": "Com licença / Desculpe",
+      "translation": "Desculpe",
+      "pronunciation": "VY-bach-te"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Kiev foi o centro da Rus de Kiev entre os séculos IX e XIII, e foi ali que o cristianismo foi adotado, em 988. No século XVII surgiu o Hetmanato cossaco; depois, as terras foram divididas entre os impérios russo e dos Habsburgo. A Ucrânia declarou independência em 1991, vive um conflito desde 2014 e, desde fevereiro de 2022, uma guerra em grande escala com a Rússia.",
+    "milestones": [
+     "988: cristianização da Rus de Kiev",
+     "1648: Bohdan Khmelnytsky e o Hetmanato cossaco",
+     "1991: declaração de independência",
+     "2022: início da guerra em grande escala com a Rússia"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Borsch (sopa de beterraba com creme azedo e pampushky de alho)",
+     "Varenyky (pasteizinhos cozidos de batata, ricota ou ginja)",
+     "Holubtsi (charutinhos de repolho com arroz e carne)"
+    ],
+    "traditionalDrinks": [
+     "Uzvar (bebida de frutas secas e mel)",
+     "Horilka (vodca ucraniana, por exemplo com pimenta)",
+     "Kvas (bebida fermentada de pão)"
+    ],
+    "streetFoodAndDesserts": [
+     "Syrnyky (panquequinhas de ricota)",
+     "Bolo Kiev (merengue com avelãs)",
+     "Syrnyk de Lviv (cheesecake assado) e café de Lviv"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Taras Shevchenko (poeta nacional)",
+     "Lesya Ukrainka (poeta e escritora)",
+     "Igor Sikorsky (pioneiro do helicóptero, nascido em Kiev)"
+    ],
+    "strongSectors": [
+     "Agricultura (líder mundial na exportação de cereais e óleo de girassol)",
+     "Tecnologia da informação e serviços de software",
+     "Metalurgia e indústria de defesa"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Cartões e pagamento por aproximação (Apple Pay/Google Pay) são muito comuns nas cidades; leve algum dinheiro em grívnias, porque as maquininhas podem falhar durante os apagões.",
+    "tippingCulture": "Nos restaurantes, costuma-se deixar 10 %.",
+    "economicPillars": "Exportações agrícolas e de alimentos, metalurgia, serviços de TI, ajuda internacional e reconstrução."
+   }
+  },
+  "itin": {
+   "routeName": "Roteiro para tempos de paz: Kiev, Lviv e os Cárpatos",
+   "routeSummary": "A Ucrânia está em guerra; não é recomendado viajar até que os alertas oficiais sejam suspensos. Este roteiro é apenas informativo e pensado para tempos de paz. Ele vai dos mosteiros de cúpulas douradas de Kiev ao centro histórico cheio de cafés de Lviv e às aldeias hutsul dos Cárpatos.",
+   "totalDays": 7,
+   "idealDurationText": "7 dias (em tempos de paz)",
+   "bestSeason": "Em tempos de paz: maio a junho, setembro",
+   "transportMode": "Trens da Ukrzaliznytsia (Intercity e noturnos Kiev – Lviv), trem ou micro-ônibus até os Cárpatos; metrô e Uklon/Bolt nas cidades",
+   "paceLevel": "Equilibrado (cultura + natureza)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Kiev (cúpulas douradas e o Dnipro)",
+     "recommendedDuration": "3 dias",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Catedral de Santa Sofia e Mosteiro de São Miguel das Cúpulas Douradas",
+      "Lavra das Cavernas de Kiev",
+      "Descida de Santo André e Podil",
+      "Portão Dourado e rua Khreshchatyk"
+     ],
+     "activities": [
+      "Percorra à luz de velas as cavernas subterrâneas da Lavra.",
+      "Passeie pelos parques às margens do Dnipro (colina de Volodymyr).",
+      "Visite Arsenalna, uma das estações de metrô mais profundas do mundo."
+     ],
+     "foodAndDrinks": [
+      "Borsch (sopa de beterraba com creme azedo e pampushky de alho)",
+      "Bolo Kiev (merengue com avelãs)",
+      "Uzvar (bebida de frutas secas e mel)"
+     ],
+     "criticalTips": [
+      "Durante um alerta aéreo, vá para o abrigo ou a estação de metrô mais próxima.",
+      "Confira o horário do toque de recolher e não fique na rua à noite."
+     ],
+     "mapsQuery": "Kyiv, Ukraine"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Lviv (café, chocolate e centro histórico)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Praça Rynok e torre da Prefeitura",
+      "Ópera de Lviv",
+      "Catedral Armênia e Catedral de São Jorge",
+      "Colina do Castelo Alto (Vysokyi Zamok)"
+     ],
+     "activities": [
+      "Prove o café de Lviv em torrefações históricas como a Lviv Coffee Manufacture.",
+      "Visite a oficina Lviv Handmade Chocolate.",
+      "Caminhe pelas trilhas cheias de esculturas do cemitério de Lychakiv."
+     ],
+     "foodAndDrinks": [
+      "Syrnyk de Lviv (cheesecake assado) e café de Lviv",
+      "Varenyky (pasteizinhos cozidos de batata, ricota ou ginja)"
+     ],
+     "criticalTips": [
+      "Mesmo perto da fronteira com a Polônia, Lviv também pode ser atacada; mantenha o app de alertas ativo.",
+      "Use calçados confortáveis para as ruas de paralelepípedo do centro histórico."
+     ],
+     "mapsQuery": "Lviv, Ukraine"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Cárpatos (Yaremche e região hutsul)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Cachoeira de Probiy (Yaremche)",
+      "Monte Hoverla (2061 m, o pico mais alto do país)",
+      "Estação de esqui de Bukovel"
+     ],
+     "activities": [
+      "Suba o Hoverla com guia no verão.",
+      "Explore o mercado de artesanato hutsul de Yaremche.",
+      "Esquie em Bukovel no inverno."
+     ],
+     "foodAndDrinks": [
+      "Banosh (polenta cremosa com queijo brynza)",
+      "Chás de ervas dos Cárpatos e mel da montanha"
+     ],
+     "criticalTips": [
+      "O tempo na montanha muda rápido; não faça trilhas sozinho e leve um kit de primeiros socorros.",
+      "Pode haver controle de documentos nas trilhas perto da fronteira; leve o passaporte."
+     ],
+     "mapsQuery": "Yaremche, Ukraine"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Borsch (sopa de beterraba com creme azedo e pampushky de alho)",
+     "Varenyky (pasteizinhos cozidos de batata, ricota ou ginja)",
+     "Holubtsi (charutinhos de repolho com arroz e carne)"
+    ],
+    "drinks": [
+     "Uzvar (bebida de frutas secas e mel)",
+     "Horilka (vodca ucraniana, por exemplo com pimenta)",
+     "Kvas (bebida fermentada de pão)"
+    ],
+    "streetFoods": [
+     "Syrnyky (panquequinhas de ricota)",
+     "Bolo Kiev (merengue com avelãs)",
+     "Syrnyk de Lviv (cheesecake assado) e café de Lviv"
+    ],
+    "diningAdvice": "A cozinha ucraniana usa muito carne de porco e toucinho curado (salo); há muitas opções sem carne, como varenyky e syrnyky. Cafés e restaurantes podem funcionar com geradores durante os apagões."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Carregador portátil, lanterna e pilhas extras (para os apagões)",
+     "Cópias off-line do passaporte e do seguro",
+     "Kit básico de primeiros socorros e água",
+     "Roupas bem quentes para o inverno"
+    ],
+    "safetyAndEtiquette": [
+     "Acompanhe os alertas oficiais e só viaje se for indispensável.",
+     "Não fotografe militares, postos de controle nem infraestrutura."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Tomadas europeias C/F (Schuko) de dois pinos redondos, iguais às da Turquia; não é preciso adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Não beba água da torneira sem ferver; use água engarrafada ou as máquinas de água purificada dos bairros. Por causa da guerra, pode haver cortes de água em algumas áreas.",
+    "vaccines": [
+     "Vacinas de rotina (tríplice viral, tétano)",
+     "Hepatite A"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "103"
+   },
+   "tipping": {
+    "custom": "É comum deixar 10 % nos restaurantes.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Nos cafés, basta deixar o troco; os motoristas (Uklon, Bolt) não esperam gorjeta."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Não há",
+    "minSpend": "Não há",
+    "customsNote": "A Ucrânia não tem um sistema de devolução de IVA (Tax Free) em funcionamento para turistas. Na entrada, podem pedir um seguro saúde válido na Ucrânia; objetos de valor e grandes quantias em dinheiro devem ser declarados na alfândega."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 0,10 - 0,50",
+    "topCarriers": [
+     "Kyivstar",
+     "Vodafone Ukraine",
+     "lifecell"
+    ],
+    "airportSimTrapWarning": "O espaço aéreo está fechado, então a entrada é por terra; os chips da Kyivstar, Vodafone e lifecell são baratos nas lojas oficiais e supermercados das cidades — não compre de intermediários na fronteira. O eSIM é configurado pelo app da operadora."
+   },
+   "touristScams": [
+    {
+     "title": "Falsas campanhas beneficentes",
+     "desc": "Falsas arrecadações de voluntários e de caridade, na internet e na rua.",
+     "tip": "Doe apenas para contas verificadas de organizações oficiais."
+    },
+    {
+     "title": "“Despachantes” na fronteira",
+     "desc": "Motoristas e intermediários não oficiais cobram preços inflados nas passagens de fronteira.",
+     "tip": "Reserve com antecedência ônibus licenciados ou trens (Ukrzaliznytsia)."
+    },
+    {
+     "title": "Cambistas de rua",
+     "desc": "Cambistas na rua entregam notas falsas ou dinheiro a menos.",
+     "tip": "Use apenas bancos e casas de câmbio autorizadas."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Украинская гривна (UAH)",

@@ -1403,6 +1403,357 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Franco CFA da África Ocidental (XOF)",
+   "bestMonths": "Novembro – fevereiro (seco e relativamente fresco); março – maio é muito quente (mais de 40 °C) e junho – setembro é a estação das chuvas",
+   "safety": {
+    "safetyScore": 10,
+    "safetyLevel": "Zona de conflito (não viaje)",
+    "badgeColor": "bg-rose-600 text-white border-rose-700 dark:bg-rose-950 dark:text-rose-200",
+    "crimeRateSummary": "Turquia, Reino Unido e EUA desaconselham qualquer viagem ao Mali: ataques de grupos armados em todo o país, alto risco de sequestro de estrangeiros e bloqueios de combustível geram grave instabilidade, e nenhuma região, nem mesmo Bamako, é considerada segura. A assistência consular é muito limitada.",
+    "commonScams": [
+     "Pessoas que se apresentam como “guias” ou “estudantes” e levam você a lojas caras",
+     "“Taxas” não oficiais nos postos de controle",
+     "Venda de antiguidades falsas e de “manuscritos de Timbuktu”"
+    ],
+    "safeTravelTips": [
+     "Adie a viagem; se for inevitável, registre-se na embaixada do seu país em Bamako e conte com apoio de segurança profissional.",
+     "Não saia da cidade por estrada; não divulgue seus deslocamentos e evite rotinas.",
+     "Confirme se o seu seguro cobre o Mali; a maioria exclui países com alerta oficial."
+    ],
+    "emergencyNumbers": {
+     "police": "17",
+     "ambulance": "15",
+     "general": "17"
+    }
+   },
+   "internet": {
+    "networkCoverage": "3G/4G em Bamako e nas cidades maiores; sinal fraco no norte e nas áreas rurais, com cortes ocasionais por motivos de segurança",
+    "costPerGbUsd": "~US$ 1,00 - 2,50",
+    "esimAvailability": "Escassa (poucas eSIMs internacionais; o chip local é comprado com passaporte)",
+    "bestCarriers": [
+     "Orange Mali",
+     "Moov Africa Malitel",
+     "Telecel Mali"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Precária (estradas intermunicipais inseguras)",
+    "costLevel": "Barato (exceto veículos com segurança)",
+    "singleTicketUsd": "US$ 0,30 - 0,60 (micro-ônibus verde Sotrama)",
+    "dailyPassUsd": "Não existe",
+    "popularRideApps": [
+     "Teliman (mototáxi, Bamako)",
+     "Táxis do hotel"
+    ],
+    "taxiAdvice": "Os táxis amarelos de Bamako não têm taxímetro e a tarifa é negociada; estrangeiros devem usar apenas um motorista de confiança indicado pelo hotel. Os micro-ônibus Sotrama e os mototáxis trazem risco de acidentes e roubos. Não é recomendado viajar entre cidades por estrada nem por rio, devido ao risco de ataques armados."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 35 - 60",
+    "dailyBudgetMidrangeUsd": "US$ 100 - 180",
+    "budgetMealUsd": "US$ 2 - 6",
+    "coffeeUsd": "US$ 0,50 - 2,00",
+    "waterBottleUsd": "US$ 0,40 - 1,00",
+    "hostelDormUsd": "Quase não há hostels (pousada simples US$ 15 - 25)",
+    "hotel3StarUsd": "US$ 60 - 120",
+    "flightCostIndex": "Alto",
+    "flightTip": "Para Bamako (BKO) voam a Turkish Airlines a partir de Istambul e, com escala, Air Côte d’Ivoire, Ethiopian e Royal Air Maroc; os voos podem ser cancelados em cima da hora por motivos de segurança."
+   },
+   "plugType": "Tipo C, E (220V, 50Hz)"
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "O cumprimento é um ritual longo; pergunte pela família e pela saúde antes de ir direto ao assunto.",
+     "Use a mão direita para comer e para passar objetos.",
+     "É proibido fotografar soldados, policiais, pontes e prédios oficiais."
+    ],
+    "festivals": [
+     "Reboco anual da Grande Mesquita de Djenné (Crépissage, por volta de abril)",
+     "Festival sur le Niger (Ségou, fevereiro)",
+     "Tabaski (Festa do Sacrifício)"
+    ],
+    "lifestyle": "Uma sociedade em que os griôs (historiadores orais) e a música estão no centro de tudo e a hospitalidade (jatigiya) é sagrada; as tardes passam ao ritmo de três rodadas de chá."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Grande Mesquita de Djenné (UNESCO)",
+     "Timbuktu (UNESCO)",
+     "Falésia de Bandiagara e País Dogon (UNESCO)",
+     "Museu Nacional do Mali (Bamako)",
+     "Orla de Ségou e vilarejos de ceramistas"
+    ],
+    "bestSeasons": "Novembro – fevereiro (se a segurança permitir)",
+    "travelStyleTip": "Com os alertas oficiais atuais, o turismo não é recomendado; conheça o país pela música, por livros e documentários e adie a visita até a situação melhorar."
+   },
+   "religion": {
+    "primaryReligions": "Muçulmanos ~95% (maioria sunita, com fortes tradições sufis), cristãos ~2-3%, crenças tradicionais",
+    "respectNorms": "Use roupas que cubram ombros e joelhos; muitas mesquitas são fechadas a não muçulmanos. Não coma nem beba em público durante o dia no Ramadã.",
+    "sacredSites": [
+     "Grande Mesquita de Djenné",
+     "Mesquita de Djinguereber (Timbuktu, 1327)",
+     "Mesquita e universidade de Sankoré (Timbuktu)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Com a Constituição de 2023, 13 línguas nacionais, entre elas o bambara, passaram a ser oficiais; o francês continua como língua de trabalho. O bambara é a língua franca.",
+    "englishProficiency": "Muito baixo; é preciso falar francês ou bambara.",
+    "phrases": [
+     {
+      "phrase": "I ni ce",
+      "meaning": "Olá / Obrigado(a)",
+      "translation": "Olá / Obrigado(a)",
+      "pronunciation": "ee nee CHEH"
+     },
+     {
+      "phrase": "I ka kɛnɛ wa?",
+      "meaning": "Você está bem?",
+      "translation": "Você está bem?",
+      "pronunciation": "ee ka KEH-neh wa"
+     },
+     {
+      "phrase": "Aw ni ce",
+      "meaning": "Olá / Obrigado(a) (para um grupo ou com respeito)",
+      "translation": "Olá / Obrigado(a) (para um grupo ou com respeito)",
+      "pronunciation": "aw nee CHEH"
+     },
+     {
+      "phrase": "Joli don?",
+      "meaning": "Quanto custa?",
+      "translation": "Quanto custa?",
+      "pronunciation": "JO-lee don"
+     },
+     {
+      "phrase": "K’an bɛn sɔni",
+      "meaning": "Até logo",
+      "translation": "Até logo",
+      "pronunciation": "kan ben SO-nee"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "A região abrigou os impérios de Gana, Mali e Songhai; no século XIV, o Império do Mali de Mansa Musa era um dos Estados mais ricos do mundo graças ao ouro, e Timbuktu era um centro do saber islâmico. Colonizado como Sudão Francês, o país conquistou a independência em 22 de setembro de 1960. Desde 2012 continua uma crise de segurança no norte e no centro.",
+    "milestones": [
+     "~1235: Sundiata Keita funda o Império do Mali",
+     "1324: famosa peregrinação de Mansa Musa a Meca",
+     "1960: independência (22 de setembro)",
+     "2012: início da crise de segurança no norte"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Tiguadèguèna (ensopado de carne com molho de amendoim)",
+     "Tô (mingau de milhete ou milho com molho de quiabo)",
+     "Capitaine grelhado (perca-do-nilo)"
+    ],
+    "traditionalDrinks": [
+     "Chá maliano (três rodadas, “attaya”)",
+     "Dabileni (bissap, refresco de hibisco)",
+     "Gnamakoudji (suco de gengibre)"
+    ],
+    "streetFoodAndDesserts": [
+     "Espetinhos de carne",
+     "Alloco (banana-da-terra frita)",
+     "Dégué (sobremesa de milhete com iogurte)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Mansa Musa (imperador do Mali, século XIV)",
+     "Ali Farka Touré (músico vencedor do Grammy)",
+     "Salif Keita (“a Voz de Ouro da África”)"
+    ],
+    "strongSectors": [
+     "Mineração de ouro (a maior parte das exportações)",
+     "Algodão",
+     "Pecuária e agricultura"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "O dinheiro vivo (francos CFA) domina; cartões só funcionam nos grandes hotéis. Leve euros e troque em bancos (o CFA é atrelado ao euro). Dinheiro móvel como o Orange Money é muito difundido.",
+    "tippingCulture": "Não é obrigatória; arredondar a conta nos restaurantes e dar algo a motoristas e guias é bem-visto.",
+    "economicPillars": "Ouro, algodão, pecuária e agricultura de subsistência; as remessas dos malianos no exterior são uma fonte essencial de renda."
+   }
+  },
+  "itin": {
+   "routeName": "Rota do Níger no Mali: Bamako, Ségou e Djenné (só quando a segurança melhorar)",
+   "routeSummary": "IMPORTANTE: está em vigor um alerta oficial de “não viaje” para o Mali; este roteiro serve apenas como referência para quando a situação melhorar. Um itinerário clássico de 7 dias que vai da música e dos museus de Bamako até Ségou, às margens do Níger, e à Grande Mesquita de Djenné, a maior construção de adobe do mundo.",
+   "totalDays": 7,
+   "bestSeason": "Novembro – fevereiro",
+   "transportMode": "Veículo particular com escolta (só se as condições permitirem)",
+   "paceLevel": "Tranquilo (cultura + rio)",
+   "signatureGastronomy": {
+    "dishes": [
+     "Tiguadèguèna",
+     "Tô",
+     "Capitaine grelhado"
+    ],
+    "drinks": [
+     "Chá maliano (attaya)",
+     "Dabileni",
+     "Gnamakoudji"
+    ],
+    "streetFoods": [
+     "Brochettes",
+     "Alloco",
+     "Dégué"
+    ],
+    "diningAdvice": "Come-se num prato comum com a mão direita; prefira comida quente e bem cozida e água engarrafada."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Certificado de vacina contra febre amarela (obrigatório na entrada)",
+     "Antimaláricos e repelente",
+     "Lenço contra a poeira e protetor solar (harmatã)",
+     "Euros em dinheiro e cópia colorida do passaporte"
+    ],
+    "safetyAndEtiquette": [
+     "Acompanhe os alertas oficiais e registre-se na embaixada do seu país.",
+     "Vista-se com discrição e use a mão direita."
+    ]
+   },
+   "idealDurationText": "Roteiro de 7 dias",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Bamako (capital, música e museus)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Museu Nacional do Mali",
+      "Grand Marché e Marché de Médine",
+      "Vista do Níger do morro de Point G",
+      "Monumento à Independência"
+     ],
+     "activities": [
+      "Veja máscaras dogon e bambara no Museu Nacional.",
+      "Ouça kora e ngoni numa noite de música ao vivo.",
+      "Visite um ateliê de bogolan (tecido tingido com lama)."
+     ],
+     "foodAndDrinks": [
+      "Tiguadèguèna",
+      "Capitaine grelhado",
+      "Dabileni"
+     ],
+     "criticalTips": [
+      "Desloque-se só em veículo de confiança do hotel; não saia à noite.",
+      "Não fotografe prédios oficiais nem postos militares."
+     ],
+     "mapsQuery": "Bamako, Mali"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Ségou (orla do Níger e arquitetura colonial)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Orla do Níger",
+      "Vilarejo de ceramistas de Kalabougou",
+      "Ségou Koro (antiga capital do reino bambara)"
+     ],
+     "activities": [
+      "Faça um passeio de pinasse pelo rio ao pôr do sol.",
+      "Observe as ceramistas de Kalabougou trabalhando.",
+      "Percorra os mercados de bogolan e de cobertores tecidos."
+     ],
+     "foodAndDrinks": [
+      "Peixe de rio com arroz",
+      "Chá maliano"
+     ],
+     "criticalTips": [
+      "A estrada Bamako – Ségou (~240 km) só deve ser usada de dia e com informações de segurança atualizadas.",
+      "Peça colete salva-vidas no rio."
+     ],
+     "mapsQuery": "Ségou, Mali"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Djenné (mesquita de adobe e feira de segunda-feira)",
+     "recommendedDuration": "3 dias",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Grande Mesquita de Djenné",
+      "Feira de segunda-feira (na praça da mesquita)",
+      "Sítio arqueológico de Djenné-Djeno",
+      "Casas de adobe em estilo sudano-saheliano"
+     ],
+     "activities": [
+      "Admire a mesquita por fora e de terraços próximos (fechada a não muçulmanos).",
+      "Observe a vida local na feira de segunda-feira.",
+      "Percorra as vielas do centro antigo com um guia local."
+     ],
+     "foodAndDrinks": [
+      "Tô",
+      "Dégué de milhete"
+     ],
+     "criticalTips": [
+      "A região de Djenné e Mopti é hoje de risco muito alto; considere esta parada só quando os alertas forem suspensos.",
+      "Não suba nos telhados de adobe sem permissão."
+     ],
+     "mapsQuery": "Djenné, Mali"
+    }
+   ]
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "E"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Tomadas tipo C e E (dois pinos redondos); os plugues europeus encaixam. Quedas de energia são frequentes."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "A água da torneira não é potável; beba água engarrafada e evite gelo.",
+    "vaccines": [
+     "Febre amarela (certificado obrigatório para todos os viajantes)",
+     "Meningite (ACWY, cinturão da meningite)",
+     "Hepatite A, febre tifoide e reforço da pólio",
+     "Profilaxia contra malária (alto risco em todo o país)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "15"
+   },
+   "tipping": {
+    "custom": "Não é obrigatória; pequenas gorjetas são bem-vindas.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "Basta arredondar a conta e dar 500-1.000 CFA a motoristas e carregadores."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA de 18%; sem restituição para turistas",
+    "minSpend": "Não se aplica",
+    "customsNote": "Não há restituição de IVA para turistas. É proibido exportar antiguidades, objetos arqueológicos e manuscritos antigos sem autorização do Museu Nacional; guarde as notas fiscais do artesanato."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "~US$ 1,00 - 2,50",
+    "topCarriers": [
+     "Orange Mali",
+     "Moov Africa Malitel",
+     "Telecel Mali"
+    ],
+    "airportSimTrapWarning": "As opções de eSIM são limitadas e caras; compre um chip da Orange Mali em loja oficial com o seu passaporte. A internet móvel pode ser restringida durante incidentes de segurança."
+   },
+   "touristScams": [
+    {
+     "title": "Guia falso",
+     "desc": "Alguém que se apresenta como guia ou estudante leva você a lojas onde recebe comissão.",
+     "tip": "Contrate guias apenas por meio do hotel."
+    },
+    {
+     "title": "“Taxa” no posto de controle",
+     "desc": "Nos postos de controle podem pedir dinheiro mesmo com seus documentos em ordem.",
+     "tip": "Mantenha a calma, mostre cópias e deixe seu motorista local conversar."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Западноафриканский франк КФА (XOF)",

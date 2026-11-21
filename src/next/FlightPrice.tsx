@@ -49,7 +49,7 @@ export const FlightFrom: React.FC<{ from?: string; to?: string; className?: stri
   if (!p) return null;
   return (
     <span className={className || 'vz-fprice'}>
-      {l(`en uygun ${p.money}`, `from ${p.money}`, `ab ${p.money}`, `desde ${p.money}`, `от ${p.money}`)}
+      {l(`en uygun ${p.money}`, `from ${p.money}`, `ab ${p.money}`, `desde ${p.money}`, `от ${p.money}`, `a partir de ${p.money}`)}
     </span>
   );
 };

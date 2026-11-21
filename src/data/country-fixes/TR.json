@@ -663,6 +663,172 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Lira turca (TRY)",
+   "plugType": "Tipo C, F (230V, 50Hz)",
+   "bestMonths": "Abril – junho e setembro – outubro (turismo cultural); junho – setembro (praias do Egeu e do Mediterrâneo); dezembro – março (esqui)",
+   "safety": {
+    "crimeRateSummary": "Crimes violentos contra turistas são raros; em lugares movimentados das grandes cidades há batedores de carteira e golpes (táxis, bares, tapetes). Alguns países emitem alertas para áreas próximas à fronteira com a Síria.",
+    "commonScams": [
+     "Táxis que não ligam o taxímetro ou fazem desvios (principalmente nos aeroportos e em Sultanahmet)",
+     "Um engraxate deixa a escova cair e, como «agradecimento», engraxa seus sapatos e cobra por isso",
+     "Um desconhecido «simpático» convida você para um bar onde cobram uma conta absurda (Istiklal, Sultanahmet)"
+    ],
+    "safeTravelTips": [
+     "Chame táxis pelo BiTaksi ou pelo Uber, ou confira se o taxímetro está ligado ao entrar.",
+     "Fique de olho na bolsa e no celular em bazares, bondes e metrôs lotados.",
+     "Alguns governos emitem alertas para as áreas próximas à fronteira com a Síria; consulte as informações atualizadas antes de viajar para o sudeste."
+    ],
+    "emergencyNumbers": {
+     "police": "112 (155)",
+     "ambulance": "112",
+     "general": "112"
+    },
+    "safetyScore": 65,
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "4.5G forte em todo o país; o 5G está chegando aos poucos às grandes cidades",
+    "costPerGbUsd": "US$ 1,50 - 3",
+    "esimAvailability": "Excelente (operadoras locais e eSIMs internacionais)",
+    "bestCarriers": [
+     "Turkcell",
+     "Vodafone",
+     "Türk Telekom"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Muito bom (metrô, Marmaray, bonde, balsas, trem de alta velocidade, ampla rede de voos domésticos e ônibus)",
+    "costLevel": "Moderado",
+    "singleTicketUsd": "US$ 0,60 - 1",
+    "dailyPassUsd": "Não há passe diário; paga-se por viagem com o Istanbulkart",
+    "popularRideApps": [
+     "BiTaksi",
+     "Uber",
+     "Martı"
+    ],
+    "taxiAdvice": "Em Istambul, o BiTaksi e o Uber permitem chamar táxis amarelos com preço estimado; o Martı TAG também é comum. Para o transporte público, use o Istanbulkart (ou os cartões de outras cidades)."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 35 - 55",
+    "dailyBudgetMidrangeUsd": "US$ 90 - 160",
+    "budgetMealUsd": "US$ 5 - 10",
+    "coffeeUsd": "US$ 2,50 - 5",
+    "waterBottleUsd": "US$ 0,30 - 0,70",
+    "hostelDormUsd": "US$ 15 - 30",
+    "hotel3StarUsd": "US$ 60 - 120",
+    "flightCostIndex": "Baixo – moderado",
+    "flightTip": "Istambul (IST e SAW) é um dos hubs mais bem conectados do mundo; os voos domésticos da Turkish Airlines, da Pegasus e da AJet reservados com antecedência costumam custar 30 – 80 $."
+   }
+  },
+  "enc": {
+   "language": {
+    "officialLanguages": "Turco (oficial). Nas áreas turísticas, entende-se inglês, russo e alemão.",
+    "englishProficiency": "Alto no turismo, na aviação e nos hotéis; básico nas áreas rurais e no pequeno comércio.",
+    "phrases": [
+     {
+      "phrase": "Merhaba",
+      "meaning": "Olá",
+      "translation": "Olá",
+      "pronunciation": "mer-ha-BA"
+     },
+     {
+      "phrase": "Teşekkür ederim",
+      "meaning": "Obrigado",
+      "translation": "Obrigado",
+      "pronunciation": "te-shek-KÜR e-de-RIM"
+     },
+     {
+      "phrase": "Lütfen",
+      "meaning": "Por favor",
+      "translation": "Por favor",
+      "pronunciation": "LÜT-fen"
+     },
+     {
+      "phrase": "Bu ne kadar?",
+      "meaning": "Quanto custa isto?",
+      "translation": "Quanto custa isto?",
+      "pronunciation": "bu NE ka-dar"
+     },
+     {
+      "phrase": "Hesap, lütfen",
+      "meaning": "A conta, por favor",
+      "translation": "A conta, por favor",
+      "pronunciation": "he-SAP LÜT-fen"
+     }
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Cartões e pagamento por aproximação são muito comuns; mercados, lojinhas, dolmuş e alguns táxis podem pedir liras em dinheiro. As casas de câmbio costumam ter cotação melhor que a dos bancos.",
+    "tippingCulture": "Nos restaurantes, o costume é deixar 5-10%; se a conta já incluir serviço, basta um pequeno extra. Nos táxis, costuma-se arredondar.",
+    "economicPillars": "Indústria (automotiva, têxtil, eletrodomésticos), turismo, construção, agricultura e exportações de defesa."
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Tomadas europeias C/F (Schuko) de dois pinos redondos."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Nas grandes cidades, a água é tratada e atende às normas, mas, por causa da tubulação antiga, o costume é beber água engarrafada ou de galão.",
+    "vaccines": [
+     "Vacinas de rotina (dT, sarampo)",
+     "Recomendam-se as de hepatite A e B",
+     "Raiva para estadias longas em áreas rurais"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "112"
+   },
+   "tipping": {
+    "custom": "É costume deixar 5-10% da conta nos restaurantes.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Alguns restaurantes cobram taxa de serviço ou couvert; confira a nota. Também se dá gorjeta no hammam, no hotel e aos guias."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA de 20% (devolvido descontada a comissão da operadora)",
+    "minSpend": "Valor mínimo atualizado todo ano (pergunte na loja)",
+    "customsNote": "Não residentes podem recuperar o IVA em lojas com o logo «Tax Free»: carimbe a nota fiscal na alfândega ao sair e receba o valor no aeroporto; os produtos precisam sair do país em até 3 meses."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 1,50 - 3,00",
+    "topCarriers": [
+     "Turkcell",
+     "Vodafone",
+     "Türk Telekom"
+    ],
+    "airportSimTrapWarning": "Os pacotes turísticos dos quiosques do aeroporto podem sair mais caros que na cidade. Celulares estrangeiros com chip local são bloqueados após 120 dias se o IMEI não for registrado; para estadias curtas, o mais prático é uma eSIM ou um pacote turístico."
+   },
+   "touristScams": [
+    {
+     "title": "Golpe do taxímetro",
+     "desc": "Táxis que não ligam o taxímetro ou fazem desvios (principalmente nos aeroportos e em Sultanahmet)",
+     "tip": "Chame táxis pelo BiTaksi ou pelo Uber, ou confira se o taxímetro está ligado ao entrar."
+    },
+    {
+     "title": "A escova do engraxate",
+     "desc": "Um engraxate deixa a escova cair e, como «agradecimento», engraxa seus sapatos e cobra por isso",
+     "tip": "Mesmo que você devolva a escova, recuse educadamente a engraxada e siga em frente."
+    },
+    {
+     "title": "A armadilha do «vamos tomar alguma coisa»",
+     "desc": "Um desconhecido «simpático» convida você para um bar onde cobram uma conta absurda (Istiklal, Sultanahmet)",
+     "tip": "Não aceite convites de desconhecidos para ir a bares; escolha você o lugar."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Турецкая лира (TRY)",

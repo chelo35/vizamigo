@@ -142,7 +142,7 @@ export function getCountryVisual(
       tr: `${code} ${reg} Manzaraları`,
       en: `${code} ${reg} Landscapes`,
       de: `${code} ${reg} Landschaften`,
-      es: `${code} ${reg} Paisajes`,
+      es: `${code} ${reg} Paisajes`, pt: `${code} ${reg} Paisagens`,
       ru: `${code} ${reg} Пейзажи`
     },
     author: 'Vizamigo',

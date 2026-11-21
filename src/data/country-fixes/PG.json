@@ -1535,6 +1535,390 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Kina de Papua-Nova Guiné (PGK)",
+   "plugType": "Tipo I (240V, 50Hz)",
+   "bestMonths": "Maio – outubro (estação seca; festivais das Terras Altas em agosto – setembro)",
+   "safety": {
+    "crimeRateSummary": "A criminalidade é muito alta: em Port Moresby e Lae há risco de assalto à mão armada, roubo de veículos e agressões sexuais. Os alertas oficiais desaconselham Enga, Hela e Southern Highlands por causa dos confrontos tribais, e disputas por terras podem se tornar violentas.",
+    "commonScams": [
+     "Ser seguido e assaltado ao sair do aeroporto ou de um caixa eletrônico",
+     "Arrastões e batedores de carteira nos mercados",
+     "Artesanato novo vendido como “antigo” e peças exportadas sem autorização"
+    ],
+    "safeTravelTips": [
+     "Não ande a pé por Port Moresby; use carros do hotel ou motoristas de confiança e evite os micro-ônibus PMV.",
+     "Visite as Terras Altas e os rios apenas com um operador que tenha contatos locais.",
+     "Não saia à noite; mantenha as portas travadas e os vidros fechados."
+    ],
+    "emergencyNumbers": {
+     "police": "112",
+     "ambulance": "111",
+     "general": "112"
+    },
+    "safetyScore": 40,
+    "safetyLevel": "Cautela recomendada",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60"
+   },
+   "internet": {
+    "networkCoverage": "4G nas cidades; fraco ou inexistente nas aldeias de montanha e nas ilhas",
+    "costPerGbUsd": "~US$ 2 - 5",
+    "esimAvailability": "Limitada",
+    "bestCarriers": [
+     "Digicel PNG",
+     "Vodafone PNG",
+     "bmobile"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Precário",
+    "costLevel": "Caro",
+    "singleTicketUsd": "US$ 0,30 - 0,60 (PMV; não recomendado)",
+    "dailyPassUsd": "Carro com motorista ~US$ 100 - 200/dia",
+    "popularRideApps": [
+     "Traslados do hotel",
+     "Motoristas do operador",
+     "Air Niugini / PNG Air"
+    ],
+    "taxiAdvice": "Não há um app de transporte difundido, e os táxis de rua não são considerados seguros. A malha rodoviária é ruim; voe entre as regiões com a Air Niugini ou a PNG Air."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 80 - 120",
+    "dailyBudgetMidrangeUsd": "US$ 200 - 350",
+    "budgetMealUsd": "US$ 6 - 15",
+    "coffeeUsd": "US$ 2,50 - 5",
+    "waterBottleUsd": "US$ 1 - 2",
+    "hostelDormUsd": "Não há albergues (pousadas US$ 50 - 90)",
+    "hotel3StarUsd": "US$ 150 - 280",
+    "flightCostIndex": "Muito caro",
+    "flightTip": "Normalmente se chega a Port Moresby (POM) com a Air Niugini via Brisbane, Cairns, Cingapura ou Manila; reserve cedo os voos domésticos junto com o seu tour."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Peça permissão ao líder local antes de entrar em uma aldeia; pode ser cobrada uma taxa tradicional por cerimônias e locais sagrados.",
+     "As mulheres devem usar saia ou calça abaixo do joelho; evite deixar os ombros à mostra.",
+     "Peça permissão antes de fotografar; em cerimônias, podem cobrar uma taxa.",
+     "Mascar buai (noz de bétel) é comum, mas é proibido em público em muitas cidades; você verá manchas vermelhas de saliva."
+    ],
+    "festivals": [
+     "Goroka Show (setembro, fim de semana da Independência)",
+     "Mount Hagen Show (agosto)",
+     "Festival Nacional de Máscaras (julho, Kokopo)"
+    ],
+    "lifestyle": "A maioria vive em aldeias unidas pelo clã e pelo sistema “wantok” (parentes que falam a mesma língua). As roças, a criação de porcos e as cerimônias “sing-sing” estão no centro da vida social."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Trilha de Kokoda",
+     "Aldeias e casas dos espíritos do rio Sepik",
+     "Goroka e os homens de barro de Asaro",
+     "Vulcões de Rabaul (Tavurvur)",
+     "Fiordes de Tufi",
+     "Lagoa de Madang e pontos de mergulho"
+    ],
+    "bestSeasons": "Maio – outubro (estação seca; festivais das Terras Altas em agosto – setembro)",
+    "travelStyleTip": "Papua-Nova Guiné é um destino difícil para viajar por conta própria; vá com um operador local que combine voos, hospedagem e traslados."
+   },
+   "religion": {
+    "primaryReligions": "Cristãos (~95 %: católicos ~26 %, luteranos ~18 %, adventistas ~12 %, pentecostais e outros); crenças tradicionais persistem",
+    "respectNorms": "Os cultos de domingo são importantes, e nas áreas adventistas o sábado é sagrado. Não entre em casas dos espíritos nem em recintos cerimoniais sem permissão; alguns são proibidos para mulheres.",
+    "sacredSites": [
+     "Casas haus tambaran do Sepik",
+     "Catedral católica de St Mary, Port Moresby",
+     "Recintos cerimoniais das aldeias (com permissão)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Inglês, tok pisin, hiri motu e a língua de sinais de PNG são oficiais; são faladas mais de 800 línguas.",
+    "englishProficiency": "Médio nas cidades e hotéis; nas aldeias predomina o tok pisin.",
+    "phrases": [
+     {
+      "phrase": "Moning!",
+      "meaning": "Bom dia!",
+      "translation": "Bom dia!",
+      "pronunciation": "MOH-ning"
+     },
+     {
+      "phrase": "Tenkyu tru",
+      "meaning": "Muito obrigado",
+      "translation": "Muito obrigado",
+      "pronunciation": "TENK-yoo troo"
+     },
+     {
+      "phrase": "Hamas long dispela?",
+      "meaning": "Quanto custa isto?",
+      "translation": "Quanto custa isto?",
+      "pronunciation": "HAH-mahs long dis-PEH-lah"
+     },
+     {
+      "phrase": "Mi no save",
+      "meaning": "Não entendo / Não sei",
+      "translation": "Não entendo / Não sei",
+      "pronunciation": "mee noh SAH-veh"
+     },
+     {
+      "phrase": "Lukim yu",
+      "meaning": "Até logo",
+      "translation": "Até logo",
+      "pronunciation": "LOO-keem yoo"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "A Nova Guiné foi povoada há pelo menos 50.000 anos, e a agricultura no pântano de Kuk (UNESCO) data de cerca de 7.000–10.000 anos atrás. Em 1884, o norte passou para a Alemanha e o sul para a Grã-Bretanha, e depois para a Austrália. A trilha de Kokoda foi palco de combates duros na Segunda Guerra Mundial. O país se tornou independente em 16 de setembro de 1975.",
+    "milestones": [
+     "1884 – Domínio colonial alemão e britânico",
+     "1942 – Batalhas da trilha de Kokoda",
+     "1975 – Independência",
+     "2008 – O sítio agrícola de Kuk entra na lista da UNESCO"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Mumu (porco, batata-doce e legumes em forno de terra)",
+     "Kokoda (peixe cru no coco e limão)",
+     "Saksak (bolinhos de sagu)"
+    ],
+    "traditionalDrinks": [
+     "Café das Terras Altas",
+     "Cerveja SP Lager",
+     "Kulau (água de coco verde)"
+    ],
+    "streetFoodAndDesserts": [
+     "Kaukau assado (batata-doce)",
+     "Abacaxi e bananas frescos do mercado",
+     "Panquecas e pãezinhos de coco"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Sir Michael Somare (primeiro-ministro fundador)",
+     "Mathias Kauage (pintor de fama internacional)",
+     "Dika Toua (halterofilista, cinco vezes olímpica)"
+    ],
+    "strongSectors": [
+     "GNL e petróleo",
+     "Mineração de ouro e cobre",
+     "Café, óleo de palma e cacau"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Predomina o dinheiro vivo em kina; cartões só funcionam em grandes hotéis, supermercados e companhias aéreas. Use caixas eletrônicos durante o dia, dentro de bancos ou shoppings.",
+    "tippingCulture": "Dar gorjeta não é costume e, em alguns lugares, pode ser interpretado como uma obrigação; um pequeno agrado para os guias não tem problema.",
+    "economicPillars": "GNL, mineração de ouro e cobre, madeira, café, cacau e palma; a maioria vive da agricultura de subsistência."
+   }
+  },
+  "itin": {
+   "routeName": "Do litoral às Terras Altas: Port Moresby, Mount Hagen, Goroka e Madang",
+   "routeSummary": "Roteiro de 8 dias com operador e voos domésticos: da capital, Port Moresby, a Mount Hagen, no vale de Wahgi, passando por Goroka, terra dos homens de barro de Asaro, até a lagoa de Madang, no litoral norte.",
+   "totalDays": 8,
+   "idealDurationText": "Roteiro de 8 dias",
+   "bestSeason": "Maio – outubro (estação seca; festivais das Terras Altas em agosto – setembro)",
+   "transportMode": "Voos domésticos (Air Niugini, PNG Air) + veículos do operador com motorista",
+   "paceLevel": "Controlado (segurança em primeiro lugar, foco cultural)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Port Moresby (capital e Museu Nacional)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Museu Nacional e Galeria de Arte",
+      "Parlamento no estilo haus tambaran",
+      "Port Moresby Nature Park (aves-do-paraíso)",
+      "Cemitério de Guerra de Bomana"
+     ],
+     "activities": [
+      "Veja as coleções de máscaras e canoas do museu.",
+      "Observe aves-do-paraíso e cangurus-arborícolas no parque.",
+      "Vá com guia até Owers’ Corner, início da trilha de Kokoda."
+     ],
+     "foodAndDrinks": [
+      "Kokoda",
+      "SP Lager"
+     ],
+     "criticalTips": [
+      "Do aeroporto ao hotel, vá apenas no carro do hotel.",
+      "Não ande a pé pela cidade nem leve objetos de valor ou joias."
+     ],
+     "mapsQuery": "Port Moresby, Papua New Guinea"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Mount Hagen (vale de Wahgi)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Mount Hagen Show (agosto)",
+      "Plantações de chá e café do vale de Wahgi",
+      "Apresentações tradicionais sing-sing"
+     ],
+     "activities": [
+      "Assista a centenas de grupos tribais se apresentando no festival.",
+      "Conheça a colheita de café em uma aldeia.",
+      "Visite o mercado local com um guia."
+     ],
+     "foodAndDrinks": [
+      "Mumu (forno de terra)",
+      "Café de altitude",
+      "Kaukau assado"
+     ],
+     "criticalTips": [
+      "Não entre na vizinha província de Enga; há alertas oficiais por causa de confrontos tribais.",
+      "Na época do festival, a hospedagem esgota com meses de antecedência; reserve cedo."
+     ],
+     "mapsQuery": "Mount Hagen, Papua New Guinea"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Goroka (homens de barro de Asaro e café)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Aldeia dos homens de barro de Asaro",
+      "Museu J.K. McCarthy",
+      "Goroka Show (setembro)",
+      "Parque Provincial Mount Gahavisuka"
+     ],
+     "activities": [
+      "Assista à apresentação mascarada dos homens de barro.",
+      "Torre e deguste café em uma cooperativa.",
+      "Caminhe pelo parque para ver orquídeas e aves."
+     ],
+     "foodAndDrinks": [
+      "Café de Goroka",
+      "Frutas e verduras frescas do mercado"
+     ],
+     "criticalTips": [
+      "Faça a estrada Hagen – Goroka apenas de dia e no veículo do operador.",
+      "As noites nas Terras Altas são frescas (1.600 m); vista-se em camadas."
+     ],
+     "mapsQuery": "Goroka, Papua New Guinea"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Madang (lagoa e mergulho)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Ilha Krangket e lagoa de Madang",
+      "Naufrágios da Segunda Guerra Mundial",
+      "Aldeia de oleiros de Bilbil",
+      "Farol do Memorial Coastwatchers"
+     ],
+     "activities": [
+      "Faça snorkel ou mergulho nos jardins de coral.",
+      "Vá de canoa até as ilhas da lagoa.",
+      "Veja os grandes morcegos frugívoros voando ao anoitecer."
+     ],
+     "foodAndDrinks": [
+      "Peixe no leite de coco",
+      "Kulau (coco verde)",
+      "Saksak (sagu)"
+     ],
+     "criticalTips": [
+      "Mergulhe apenas com um centro certificado; não há câmara hiperbárica por perto.",
+      "O risco de malária é alto; tome profilaxia e use manga comprida ao entardecer."
+     ],
+     "mapsQuery": "Madang, Papua New Guinea"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Mumu",
+     "Kokoda",
+     "Saksak"
+    ],
+    "drinks": [
+     "Café de altitude",
+     "SP Lager",
+     "Kulau"
+    ],
+    "streetFoods": [
+     "Kaukau assado",
+     "Pãezinhos de coco"
+    ],
+    "diningAdvice": "Para comer com segurança e higiene, prefira os restaurantes de hotéis e lodges; compre no mercado frutas que dão para descascar e prove o mumu em uma visita a uma aldeia."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Profilaxia contra malária e repelente forte",
+     "Adaptador tipo I",
+     "Jaqueta leve e impermeável para as Terras Altas",
+     "Seguro viagem com evacuação"
+    ],
+    "safetyAndEtiquette": [
+     "Desloque-se apenas em veículos do operador ou do hotel; não saia à noite.",
+     "Para exportar objetos tradicionais, é preciso autorização do Museu Nacional."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "I"
+    ],
+    "voltage": "240V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Tomadas tipo I australianas; plugues turcos precisam de adaptador tipo I. As quedas de energia são frequentes."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Não beba água da torneira; use água engarrafada ou tratada, inclusive para escovar os dentes.",
+    "vaccines": [
+     "Vacinas de rotina, hepatite A e febre tifoide",
+     "Profilaxia contra malária (risco alto em quase todo o país)",
+     "Encefalite japonesa e raiva (áreas rurais e estadias longas)",
+     "Febre amarela: certificado se você chegar de um país de risco"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "111"
+   },
+   "tipping": {
+    "custom": "Dar gorjeta não é costume.",
+    "standardPercent": 0,
+    "rule": "optional",
+    "note": "Em hotéis de padrão mais alto e com guias, pequenas gorjetas são aceitas; nas aldeias, é melhor uma contribuição para a comunidade."
+   },
+   "taxFree": {
+    "vatRefundPercent": "GST de 10 %; sem devolução para turistas",
+    "minSpend": "Não se aplica",
+    "customsNote": "Não há devolução de impostos. Exportar artesanato e objetos tradicionais exige autorização do Museu Nacional; algumas peças não podem sair do país."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "US$ 2 - 5",
+    "topCarriers": [
+     "Digicel PNG",
+     "Vodafone PNG",
+     "bmobile"
+    ],
+    "airportSimTrapWarning": "Os eSIMs internacionais são limitados e caros; geralmente é melhor um chip local registrado no quiosque da Digicel ou da Vodafone no aeroporto. Em áreas remotas não há cobertura."
+   },
+   "touristScams": [
+    {
+     "title": "Assalto depois do caixa eletrônico",
+     "desc": "Quem saca dinheiro em caixas eletrônicos de rua pode ser seguido e assaltado.",
+     "tip": "Use caixas eletrônicos dentro de bancos ou hotéis, durante o dia e com o seu motorista."
+    },
+    {
+     "title": "Falsos objetos “antigos”",
+     "desc": "Máscaras e entalhes novos são vendidos caro como “centenários”; exportar sem autorização resulta em apreensão.",
+     "tip": "Compre em galerias sérias ou cooperativas e pergunte sobre a autorização de exportação."
+    },
+    {
+     "title": "Assalto em micro-ônibus PMV",
+     "desc": "Nos PMV lotados e em seus pontos, os turistas são alvo fácil.",
+     "tip": "Evite os PMV; organize o transporte pelo hotel ou pelo operador."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Кина Папуа — Новой Гвинеи (PGK)",

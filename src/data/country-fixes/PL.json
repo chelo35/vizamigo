@@ -1551,6 +1551,394 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Zloty polonês (PLN)",
+   "plugType": "Tipo C, E (230V, 50Hz)",
+   "bestMonths": "Maio a setembro (clima ameno e dias longos); dezembro, pelas feiras de Natal",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "No geral é seguro, com pouca criminalidade violenta. Há relatos de batedores de carteira no centro de Cracóvia e Varsóvia, além de contas infladas e bebidas adulteradas em algumas casas noturnas.",
+    "commonScams": [
+     "Táxis sem licença em aeroportos e estações com tarifas abusivas",
+     "Casas noturnas do centro histórico de Cracóvia, para onde aliciadores de rua levam turistas, que cobram centenas de euros",
+     "Casas de câmbio (kantor) do aeroporto com cotações péssimas"
+    ],
+    "safeTravelTips": [
+     "Chame táxi pelo Bolt, Uber ou FREE NOW.",
+     "Compare as cotações nos kantor do centro ou pague com cartão em PLN.",
+     "Não deixe sua bebida sem vigilância e recuse convites de aliciadores."
+    ],
+    "emergencyNumbers": {
+     "police": "997",
+     "ambulance": "999",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99 % de cobertura (4G em todo o país, 5G nas cidades)",
+    "costPerGbUsd": "~US$ 0,30 - 1,50",
+    "esimAvailability": "Excelente",
+    "bestCarriers": [
+     "Orange Polska",
+     "Play",
+     "Plus",
+     "T-Mobile Polska"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Muito bom (metrô de Varsóvia, bondes e trens PKP Intercity)",
+    "costLevel": "Econômico",
+    "singleTicketUsd": "1.00 - 1.70 $ (4-6 PLN)",
+    "dailyPassUsd": "4.00 - 5.00 $ (24 h)",
+    "popularRideApps": [
+     "Jakdojade",
+     "Koleo",
+     "Bolt",
+     "Uber",
+     "FREE NOW"
+    ],
+    "taxiAdvice": "Os apps de transporte (Bolt, Uber, FREE NOW) são baratos e confiáveis. Compre as passagens urbanas no Jakdojade e as de trem no Koleo ou no app da PKP Intercity; nos trens expressos, a reserva de assento é obrigatória."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 35 - 55",
+    "dailyBudgetMidrangeUsd": "US$ 80 - 130",
+    "budgetMealUsd": "US$ 8 - 14",
+    "coffeeUsd": "US$ 3,00 - 4,50",
+    "waterBottleUsd": "US$ 0,60 - 1,20",
+    "hostelDormUsd": "US$ 15 - 30",
+    "hotel3StarUsd": "US$ 60 - 110",
+    "flightCostIndex": "Baixo (Istambul – Varsóvia/Cracóvia direto em ~2,5 h)",
+    "flightTip": "Há voos diretos de Istambul para Varsóvia, Cracóvia e Gdansk; a Wizz Air e a Ryanair oferecem conexões baratas."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Em casa, tiram-se os sapatos; quem faz uma visita leva flores (em número ímpar) ou doces.",
+     "No tratamento formal, usa-se ‘Pan’ (senhor) e ‘Pani’ (senhora).",
+     "Ao brindar, diz-se ‘Na zdrowie!’ olhando nos olhos.",
+     "Seja discreto e respeitoso nos memoriais da Segunda Guerra Mundial (por exemplo, Auschwitz-Birkenau)."
+    ],
+    "festivals": [
+     "Wigilia e feiras de Natal (Cracóvia, Breslávia, Gdansk – dezembro)",
+     "Wianki – festival das coroas de flores do solstício (junho)",
+     "Festival de Cultura Judaica de Cracóvia (junho – julho)"
+    ],
+    "lifestyle": "Laços familiares e religiosos fortes, os baratíssimos ‘bares de leite’ (bar mleczny), as hortas (działka) e uma vida urbana moderna em rápido crescimento."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Cracóvia: castelo de Wawel e Praça do Mercado",
+     "Mina de sal de Wieliczka (UNESCO)",
+     "Memorial e Museu de Auschwitz-Birkenau",
+     "Centro histórico e Castelo Real de Varsóvia",
+     "Via Real de Gdansk e castelo de Malbork",
+     "Zakopane e os montes Tatras"
+    ],
+    "bestSeasons": "Fim da primavera e verão para as cidades e os Tatras; dezembro pelas feiras, de janeiro a março para esquiar em Zakopane",
+    "travelStyleTip": "Percorra o país de norte a sul nos trens rápidos da PKP Intercity; Cracóvia é uma boa base para Wieliczka e Auschwitz. Reserve a visita a Auschwitz no site oficial."
+   },
+   "religion": {
+    "primaryReligions": "Católicos ~71 %; sem religião ~7 % e grande parte não declarada; pequenas comunidades ortodoxas e protestantes.",
+    "respectNorms": "Cubra ombros e joelhos nas igrejas e não tire fotos durante a missa; nos feriados católicos (Páscoa, Natal, 1º de novembro) muitos lugares fecham.",
+    "sacredSites": [
+     "Mosteiro de Jasna Góra e Nossa Senhora Negra (Częstochowa)",
+     "Catedral de Wawel (Cracóvia)",
+     "Basílica de Santa Maria (Kościół Mariacki, Cracóvia)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Polonês",
+    "englishProficiency": "Bom entre os jovens e nas grandes cidades; limitado entre os mais velhos e nas áreas rurais.",
+    "phrases": [
+     {
+      "phrase": "Dzień dobry",
+      "meaning": "Bom dia / Olá",
+      "translation": "Olá",
+      "pronunciation": "jeyn DOB-ri"
+     },
+     {
+      "phrase": "Dziękuję",
+      "meaning": "Obrigado(a)",
+      "translation": "Obrigado(a)",
+      "pronunciation": "jen-KOO-yeh"
+     },
+     {
+      "phrase": "Proszę",
+      "meaning": "Por favor / Aqui está",
+      "translation": "Por favor",
+      "pronunciation": "PRO-sheh"
+     },
+     {
+      "phrase": "Ile to kosztuje?",
+      "meaning": "Quanto custa?",
+      "translation": "Quanto?",
+      "pronunciation": "EE-leh to kosh-TOO-yeh"
+     },
+     {
+      "phrase": "Na zdrowie!",
+      "meaning": "À sua saúde! (Saúde)",
+      "translation": "Saúde!",
+      "pronunciation": "na ZDRO-vyeh"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "A Polônia adotou o cristianismo em 966 e, unida à Lituânia em 1569, foi um dos maiores Estados da Europa. Repartida pelos vizinhos em 1795, sumiu do mapa por 123 anos, até recuperar a independência em 1918. Devastada na Segunda Guerra Mundial, passou à democracia em 1989, após o movimento Solidariedade, e entrou na UE em 2004.",
+    "milestones": [
+     "966: Batismo de Mieszko I",
+     "1569: União de Lublin (Comunidade Polaco-Lituana)",
+     "1795–1918: Partilhas e recuperação da independência",
+     "1989: Transição para a democracia; 2004: entrada na UE"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Pierogi (pastéis cozidos ‘ruskie’ de batata e queijo, de carne ou de frutas)",
+     "Żurek (sopa azeda de centeio com ovo e linguiça)",
+     "Bigos (ensopado do caçador com chucrute e carnes)"
+    ],
+    "traditionalDrinks": [
+     "Vodca polonesa (por exemplo, Żubrówka, com erva-de-bisão)",
+     "Kompot (bebida caseira de frutas)",
+     "Cerveja polonesa (Tyskie, Żywiec, artesanais)"
+    ],
+    "streetFoodAndDesserts": [
+     "Zapiekanka (baguete aberta gratinada com champignon e queijo)",
+     "Obwarzanek krakowski (rosca de pão de Cracóvia)",
+     "Pączki e Sernik (sonhos recheados de geleia e cheesecake polonês)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Nicolau Copérnico (modelo heliocêntrico)",
+     "Marie Skłodowska-Curie (duas vezes Nobel)",
+     "Frédéric Chopin (compositor)"
+    ],
+    "strongSectors": [
+     "Indústria e autopeças",
+     "Tecnologia da informação e videogames (CD Projekt – The Witcher)",
+     "Agricultura e alimentos (um dos maiores produtores de maçã da Europa)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "A moeda é o zloty; o euro quase não é aceito. Cartões por aproximação e o BLIK funcionam em quase todo lugar; basta um pouco de dinheiro vivo para os mercados.",
+    "tippingCulture": "Nos restaurantes, deixa-se cerca de 10 %. Atenção: dizer ‘dziękuję’ ao entregar o dinheiro pode ser entendido como ‘fique com o troco’.",
+    "economicPillars": "Exportações industriais, centros de serviços empresariais, TI, logística e agricultura."
+   }
+  },
+  "itin": {
+   "routeName": "Do Báltico aos Tatras: Gdansk, Varsóvia, Cracóvia e Zakopane",
+   "routeSummary": "Roteiro de trem de 8 dias de norte a sul: da cidade hanseática de Gdansk à capital, Varsóvia, à Cracóvia real e a Zakopane, ao pé dos Tatras.",
+   "totalDays": 8,
+   "idealDurationText": "8 dias",
+   "bestSeason": "Maio a setembro",
+   "transportMode": "Trens rápidos PKP Intercity (Gdansk – Varsóvia – Cracóvia), ônibus ou trem para Zakopane; bonde e metrô nas cidades",
+   "paceLevel": "Equilibrado (história + cidade + montanha)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Gdansk (cidade hanseática do Báltico)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Via Real: Długi Targ e Fonte de Netuno",
+      "Museu da Segunda Guerra Mundial e Westerplatte",
+      "Centro Europeu da Solidariedade",
+      "Castelo de Malbork (Ordem Teutônica, UNESCO)"
+     ],
+     "activities": [
+      "Passeie pela margem do Motława, junto ao guindaste medieval Żuraw.",
+      "Pegue o trem SKM até o píer de madeira de Sopot.",
+      "Conheça as oficinas de âmbar da rua Mariacka."
+     ],
+     "foodAndDrinks": [
+      "Śledź (arenque marinado)",
+      "Goldwasser (licor de ervas com flocos de ouro)"
+     ],
+     "criticalTips": [
+      "Compre âmbar em lojas certificadas; em barracas de rua ele pode ser falso.",
+      "Malbork fica a uns 30–45 minutos de trem; saia cedo."
+     ],
+     "mapsQuery": "Gdańsk, Poland"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Varsóvia (capital e centro histórico reconstruído)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Centro histórico e Castelo Real (UNESCO)",
+      "Parque Łazienki e monumento a Chopin",
+      "Museu da Revolta de Varsóvia e Museu POLIN",
+      "Mirante do Palácio da Cultura e da Ciência"
+     ],
+     "activities": [
+      "Assista a um concerto gratuito de Chopin ao ar livre no Łazienki aos domingos de verão.",
+      "Passeie no fim da tarde pelos bulevares do Vístula.",
+      "Coma comida tradicional e barata em um ‘bar mleczny’."
+     ],
+     "foodAndDrinks": [
+      "Pierogi (pastéis cozidos ‘ruskie’ de batata e queijo, de carne ou de frutas)",
+      "Żurek (sopa azeda de centeio com ovo e linguiça)",
+      "Kompot (bebida caseira de frutas)"
+     ],
+     "criticalTips": [
+      "Compre as passagens no app Jakdojade; trens e ônibus ligam o aeroporto Chopin ao centro.",
+      "Por lei, a maioria das grandes lojas fecha aos domingos."
+     ],
+     "mapsQuery": "Warsaw, Poland"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Cracóvia (Wawel, Kazimierz, Wieliczka e Auschwitz)",
+     "recommendedDuration": "3 dias",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Castelo e catedral de Wawel",
+      "Praça do Mercado, Mercado dos Tecidos e Basílica de Santa Maria",
+      "Kazimierz (bairro judeu histórico)",
+      "Mina de sal de Wieliczka e Memorial de Auschwitz-Birkenau"
+     ],
+     "activities": [
+      "Ouça o toque de trompete ‘hejnał’, que soa a cada hora na torre de Santa Maria.",
+      "Veja em Wieliczka a capela subterrânea de Santa Kinga, esculpida no sal.",
+      "Reserve um dia para a visita guiada a Auschwitz-Birkenau."
+     ],
+     "foodAndDrinks": [
+      "Obwarzanek krakowski (rosca de pão de Cracóvia)",
+      "Zapiekanka (baguete aberta gratinada com champignon e queijo)",
+      "Vodca polonesa (por exemplo, Żubrówka, com erva-de-bisão)"
+     ],
+     "criticalTips": [
+      "Reserve a entrada para Auschwitz-Birkenau com semanas de antecedência em visit.auschwitz.org; bolsas grandes não são permitidas.",
+      "Evite as casas noturnas do centro histórico para onde os aliciadores levam turistas."
+     ],
+     "mapsQuery": "Kraków, Poland"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Zakopane (montes Tatras)",
+     "recommendedDuration": "1-2 dias",
+     "durationBadge": "1-2 dias",
+     "highlights": [
+      "Teleférico de Kasprowy Wierch",
+      "Lago Morskie Oko",
+      "Funicular de Gubałówka e rua Krupówki"
+     ],
+     "activities": [
+      "Caminhe os 9 km de estrada asfaltada até o Morskie Oko.",
+      "Conheça a arquitetura de madeira no estilo Zakopane e o cemitério de Pęksowy Brzyzek.",
+      "Esquie em Kasprowy Wierch no inverno."
+     ],
+     "foodAndDrinks": [
+      "Oscypek (queijo defumado de ovelha com geleia de oxicoco)",
+      "Kwaśnica (sopa de chucrute)"
+     ],
+     "criticalTips": [
+      "O Parque Nacional dos Tatras cobra entrada; compre pela internet o teleférico de Kasprowy Wierch.",
+      "O tempo muda rápido; leve calçado adequado e capa de chuva, e conte com multidões nos fins de semana."
+     ],
+     "mapsQuery": "Zakopane, Poland"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Pierogi (pastéis cozidos ‘ruskie’ de batata e queijo, de carne ou de frutas)",
+     "Żurek (sopa azeda de centeio com ovo e linguiça)",
+     "Bigos (ensopado do caçador com chucrute e carnes)"
+    ],
+    "drinks": [
+     "Vodca polonesa (por exemplo, Żubrówka, com erva-de-bisão)",
+     "Kompot (bebida caseira de frutas)",
+     "Cerveja polonesa (Tyskie, Żywiec, artesanais)"
+    ],
+    "streetFoods": [
+     "Zapiekanka (baguete aberta gratinada com champignon e queijo)",
+     "Obwarzanek krakowski (rosca de pão de Cracóvia)",
+     "Pączki e Sernik (sonhos recheados de geleia e cheesecake polonês)"
+    ],
+    "diningAdvice": "Os ‘bares de leite’ são muito baratos; procure os menus de almoço nos restaurantes. Muitos pratos levam carne de porco ou banha (smalec), então não hesite em perguntar."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptador (tipo E; plugues Schuko costumam encaixar)",
+     "Calçado confortável e botas para a montanha",
+     "Casaco bem quente no inverno (pode chegar a −10 °C)",
+     "Capa de chuva ou guarda-chuva"
+    ],
+    "safetyAndEtiquette": [
+     "Evite selfies sorridentes e barulho nos memoriais.",
+     "Não atravesse no sinal vermelho; dá multa."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "E"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Tomadas tipo C/E (padrão francês com pino de aterramento); os plugues turcos C e os Schuko híbridos E/F encaixam, sem necessidade de adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "A água da torneira atende às normas e é potável; em prédios antigos o encanamento pode alterar o sabor, e muitos moradores preferem água filtrada.",
+    "vaccines": [
+     "Vacinas de rotina (tríplice viral, tétano)",
+     "Encefalite transmitida por carrapatos (se for fazer trilhas em áreas rurais)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "999"
+   },
+   "tipping": {
+    "custom": "Nos restaurantes, é costume deixar cerca de 10 %.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Atenção: dizer “dziękuję” (obrigado) ao entregar o dinheiro pode ser entendido como “fique com o troco”; se quiser o troco, agradeça depois."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA de 23 % (~12–17 % líquido após comissões)",
+    "minSpend": "200 PLN por nota",
+    "customsNote": "Na Polônia, o Tax Free é totalmente eletrônico (TAX FREE PUESC): a loja emite um documento digital, que é validado em um quiosque ou balcão da alfândega no aeroporto ao sair da UE."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 0,30 - 1,50",
+    "topCarriers": [
+     "Orange Polska",
+     "Play",
+     "Plus",
+     "T-Mobile Polska"
+    ],
+    "airportSimTrapWarning": "As casas de câmbio e os quiosques do aeroporto são caros; chips da Orange, Play, Plus ou T-Mobile são vendidos baratos com passaporte em lojas e bancas (Żabka), e também há eSIM. Chips turcos não têm roaming da UE."
+   },
+   "touristScams": [
+    {
+     "title": "Táxis sem licença",
+     "desc": "Táxis sem licença em aeroportos e estações cobram tarifas infladas.",
+     "tip": "Use Bolt, Uber ou FreeNow ou pegue um táxi oficial no ponto."
+    },
+    {
+     "title": "Contas de casas noturnas em Cracóvia",
+     "desc": "Casas noturnas do centro histórico de Cracóvia, para onde aliciadores de rua levam turistas, apresentam contas de centenas de euros.",
+     "tip": "Ignore os aliciadores e confira os preços antes de pedir."
+    },
+    {
+     "title": "Kantor do aeroporto",
+     "desc": "Casas de câmbio (kantor) do aeroporto com cotações péssimas.",
+     "tip": "No aeroporto, use só caixas eletrônicos de bancos e escolha pagar em zlotys."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Польский злотый (PLN)",

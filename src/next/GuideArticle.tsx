@@ -74,11 +74,11 @@ export const GuideArticle: React.FC<{ id: GuideId }> = ({ id }) => {
   const checked = new Date(meta.checked).toLocaleDateString(language, { day: 'numeric', month: 'long', year: 'numeric' });
   return (
     <div className="vz-guide">
-      <section className="vz-tldr" aria-label={l('Kısa cevap', 'Quick answer', 'Kurzantwort', 'Respuesta rápida', 'Коротко')}>
+      <section className="vz-tldr" aria-label={l('Kısa cevap', 'Quick answer', 'Kurzantwort', 'Respuesta rápida', 'Коротко', 'Resposta rápida')}>
         <div className="vz-stack" style={{ gap: 6 }}>
-          <b>{l('Kısa cevap', 'Quick answer', 'Kurzantwort', 'Respuesta rápida', 'Коротко')}</b>
+          <b>{l('Kısa cevap', 'Quick answer', 'Kurzantwort', 'Respuesta rápida', 'Коротко', 'Resposta rápida')}</b>
           <p>{g.answer}</p>
-          <span className="vz-muted" style={{ fontSize: 12.5 }}>{l('Son kontrol', 'Last checked', 'Zuletzt geprüft', 'Última revisión', 'Проверено')}: {checked}</span>
+          <span className="vz-muted" style={{ fontSize: 12.5 }}>{l('Son kontrol', 'Last checked', 'Zuletzt geprüft', 'Última revisión', 'Проверено', 'Última revisão')}: {checked}</span>
         </div>
       </section>
       {!isWtgId(id) && <MyPassportBox id={id} />}
@@ -101,31 +101,31 @@ export const GuideArticle: React.FC<{ id: GuideId }> = ({ id }) => {
         </section>
       ))}
       <section>
-        <h2>{l('Yolculuğunu planla', 'Plan your trip', 'Reise planen', 'Planea tu viaje', 'Спланируйте поездку')}</h2>
+        <h2>{l('Yolculuğunu planla', 'Plan your trip', 'Reise planen', 'Planea tu viaje', 'Спланируйте поездку', 'Planeje sua viagem')}</h2>
         <List>
           {plan.picks.map((k) => {
             if (k === 'visahq')
               return (
-                <Row key={k} lead={<PartnerLogo url="https://www.visahq.com" name="VisaHQ" fallback="passport" />} title={<>{l('Başvurunu VisaHQ hazırlasın', 'Let VisaHQ handle your application', 'Antrag über VisaHQ', 'Tramita con VisaHQ', 'Оформить через VisaHQ')} <AdTag /></>} sub={l('Evrak kontrolü ve takip; hizmet bedeli vize ücretine eklenir', 'Document check and tracking; service fee on top of the visa fee', 'Dokumentenprüfung und Verfolgung; Servicegebühr zusätzlich', 'Revisión de documentos y seguimiento; tarifa de servicio adicional', 'Проверка документов и сопровождение; сервисный сбор сверх консульского')} href="https://vizamigo.visahq.net/" />
+                <Row key={k} lead={<PartnerLogo url="https://www.visahq.com" name="VisaHQ" fallback="passport" />} title={<>{l('Başvurunu VisaHQ hazırlasın', 'Let VisaHQ handle your application', 'Antrag über VisaHQ', 'Tramita con VisaHQ', 'Оформить через VisaHQ', 'Faça o pedido com a VisaHQ')} <AdTag /></>} sub={l('Evrak kontrolü ve takip; hizmet bedeli vize ücretine eklenir', 'Document check and tracking; service fee on top of the visa fee', 'Dokumentenprüfung und Verfolgung; Servicegebühr zusätzlich', 'Revisión de documentos y seguimiento; tarifa de servicio adicional', 'Проверка документов и сопровождение; сервисный сбор сверх консульского', 'Revisão de documentos e acompanhamento; taxa de serviço adicional')} href="https://vizamigo.visahq.net/" />
               );
             if (k === 'insurance')
               return (
                 <React.Fragment key={k}>
-                  <Row lead={<PartnerLogo id="safetywing" />} title={l('Seyahat sağlık sigortası', 'Travel medical insurance', 'Reisekrankenversicherung', 'Seguro médico de viaje', 'Медицинская страховка')} sub={l('SafetyWing · Schengen için en az 30.000 € teminat', 'SafetyWing', 'SafetyWing', 'SafetyWing', 'SafetyWing')} href={tpLinks.safetywing()} />
-                  <Row lead={<PartnerLogo id="hellosafe" />} title={l('Sigortaları karşılaştır', 'Compare travel insurance', 'Versicherungen vergleichen', 'Comparar seguros', 'Сравнить страховки')} sub="HelloSafe" href={tpLinks.hellosafe()} />
+                  <Row lead={<PartnerLogo id="safetywing" />} title={l('Seyahat sağlık sigortası', 'Travel medical insurance', 'Reisekrankenversicherung', 'Seguro médico de viaje', 'Медицинская страховка', 'Seguro saúde de viagem')} sub={l('SafetyWing · Schengen için en az 30.000 € teminat', 'SafetyWing', 'SafetyWing', 'SafetyWing', 'SafetyWing', 'SafetyWing')} href={tpLinks.safetywing()} />
+                  <Row lead={<PartnerLogo id="hellosafe" />} title={l('Sigortaları karşılaştır', 'Compare travel insurance', 'Versicherungen vergleichen', 'Comparar seguros', 'Сравнить страховки', 'Comparar seguros')} sub="HelloSafe" href={tpLinks.hellosafe()} />
                 </React.Fragment>
               );
-            if (k === 'flights') return <Row key={k} lead={<PartnerLogo id="aviasales" />} title={l('Uçuşlar', 'Flights', 'Flüge', 'Vuelos', 'Авиабилеты')} sub="Aviasales" href={tpLinks.flights(language === 'tr' ? 'IST' : undefined, plan.to)} />;
-            if (k === 'hotel') return <Row key={k} lead={<PartnerLogo id="booking" />} title={l('Oteller', 'Hotels', 'Hotels', 'Hoteles', 'Отели')} sub="Booking.com" href={tpLinks.booking(plan.place)} />;
+            if (k === 'flights') return <Row key={k} lead={<PartnerLogo id="aviasales" />} title={l('Uçuşlar', 'Flights', 'Flüge', 'Vuelos', 'Авиабилеты', 'Voos')} sub="Aviasales" href={tpLinks.flights(language === 'tr' ? 'IST' : undefined, plan.to)} />;
+            if (k === 'hotel') return <Row key={k} lead={<PartnerLogo id="booking" />} title={l('Oteller', 'Hotels', 'Hotels', 'Hoteles', 'Отели', 'Hotéis')} sub="Booking.com" href={tpLinks.booking(plan.place)} />;
             if (k === 'esim') return <Row key={k} lead={<PartnerLogo id="nomad" />} title="eSIM" sub="Nomad eSIM" href={tpLinks.nomad()} />;
-            if (k === 'transfer') return <Row key={k} lead={<PartnerLogo id="kiwitaxi" />} title={l('Havalimanı transferi', 'Airport transfer', 'Flughafentransfer', 'Traslado al aeropuerto', 'Трансфер из аэропорта')} sub="Kiwitaxi" href={tpLinks.kiwitaxi()} />;
-            if (k === 'tours') return <Row key={k} lead={<PartnerLogo id="getyourguide" />} title={l('Turlar ve biletler', 'Tours and tickets', 'Touren und Tickets', 'Tours y entradas', 'Экскурсии и билеты')} sub="GetYourGuide" href={tpLinks.tours(plan.place)} />;
+            if (k === 'transfer') return <Row key={k} lead={<PartnerLogo id="kiwitaxi" />} title={l('Havalimanı transferi', 'Airport transfer', 'Flughafentransfer', 'Traslado al aeropuerto', 'Трансфер из аэропорта', 'Transfer do aeroporto')} sub="Kiwitaxi" href={tpLinks.kiwitaxi()} />;
+            if (k === 'tours') return <Row key={k} lead={<PartnerLogo id="getyourguide" />} title={l('Turlar ve biletler', 'Tours and tickets', 'Touren und Tickets', 'Tours y entradas', 'Экскурсии и билеты', 'Passeios e ingressos')} sub="GetYourGuide" href={tpLinks.tours(plan.place)} />;
             return null;
           })}
         </List>
       </section>
       <section>
-        <h2>{l('Sık sorulan sorular', 'Frequently asked questions', 'Häufige Fragen', 'Preguntas frecuentes', 'Частые вопросы')}</h2>
+        <h2>{l('Sık sorulan sorular', 'Frequently asked questions', 'Häufige Fragen', 'Preguntas frecuentes', 'Частые вопросы', 'Perguntas frequentes')}</h2>
         {g.faq.map((f) => (
           <details key={f.q} className="vz-faq-i">
             <summary>{f.q}</summary>
@@ -134,9 +134,9 @@ export const GuideArticle: React.FC<{ id: GuideId }> = ({ id }) => {
         ))}
       </section>
       <section>
-        <h2>{l('Kaynaklar', 'Sources', 'Quellen', 'Fuentes', 'Источники')}</h2>
+        <h2>{l('Kaynaklar', 'Sources', 'Quellen', 'Fuentes', 'Источники', 'Fontes')}</h2>
         <ul>{meta.sources.map((s) => <li key={s.url}><a href={s.url} target="_blank" rel="noopener noreferrer">{sourceLabel(s.label, language)}</a></li>)}</ul>
-        <p className="vz-muted" style={{ fontSize: 13 }}>{l('Kurallar değişebilir; seyahatten önce resmî kaynaktan teyit et.', 'Rules can change; confirm with the official source before you travel.', 'Regeln können sich ändern; prüfe vor der Reise die offizielle Quelle.', 'Las normas pueden cambiar; confírmalo en la fuente oficial antes de viajar.', 'Правила могут меняться; перед поездкой проверьте официальный источник.')}</p>
+        <p className="vz-muted" style={{ fontSize: 13 }}>{l('Kurallar değişebilir; seyahatten önce resmî kaynaktan teyit et.', 'Rules can change; confirm with the official source before you travel.', 'Regeln können sich ändern; prüfe vor der Reise die offizielle Quelle.', 'Las normas pueden cambiar; confírmalo en la fuente oficial antes de viajar.', 'Правила могут меняться; перед поездкой проверьте официальный источник.', 'As regras podem mudar; confirme na fonte oficial antes de viajar.')}</p>
       </section>
     </div>
   );
@@ -184,13 +184,13 @@ const CountryGroups: React.FC<{ id: GuideId }> = ({ id }) => {
   const gr = guideGroups(id, language);
   if (!gr) return null;
   const title: Record<GuideListGroup, string> = {
-    id: l('Kimlikle gidilebilen ülkeler', 'ID card accepted', 'Mit Personalausweis', 'Con DNI', 'По ID-карте'),
-    free: l('Vizesiz ülkeler', 'Visa-free countries', 'Visumfreie Länder', 'Países sin visado', 'Без визы'),
-    voa: l('Kapıda vize', 'Visa on arrival', 'Visum bei Ankunft', 'Visado a la llegada', 'Виза по прилёте'),
-    evisa: l('E-vize (önceden çevrim içi)', 'eVisa (apply online first)', 'eVisum (vorab online)', 'eVisa (en línea antes)', 'Электронная виза'),
-    eta: l('Elektronik izin (ETA)', 'Travel authorisation (ETA)', 'Reisegenehmigung (ETA)', 'Autorización (ETA)', 'Разрешение ETA')
+    id: l('Kimlikle gidilebilen ülkeler', 'ID card accepted', 'Mit Personalausweis', 'Con DNI', 'По ID-карте', 'Com RG'),
+    free: l('Vizesiz ülkeler', 'Visa-free countries', 'Visumfreie Länder', 'Países sin visado', 'Без визы', 'Países sem visto'),
+    voa: l('Kapıda vize', 'Visa on arrival', 'Visum bei Ankunft', 'Visado a la llegada', 'Виза по прилёте', 'Visto na chegada'),
+    evisa: l('E-vize (önceden çevrim içi)', 'eVisa (apply online first)', 'eVisum (vorab online)', 'eVisa (en línea antes)', 'Электронная виза', 'e-Visa (on-line antes)'),
+    eta: l('Elektronik izin (ETA)', 'Travel authorisation (ETA)', 'Reisegenehmigung (ETA)', 'Autorización (ETA)', 'Разрешение ETA', 'Autorização (ETA)')
   };
-  const dayTxt = (v: string) => (/^\d+$/.test(v) ? l(`${v} gün`, `${v} days`, `${v} Tage`, `${v} días`, `${v} дн.`) : '');
+  const dayTxt = (v: string) => (/^\d+$/.test(v) ? l(`${v} gün`, `${v} days`, `${v} Tage`, `${v} días`, `${v} дн.`, `${v} dias`) : '');
   const lang = language as SupportedLanguage;
   return (
     <>
@@ -233,23 +233,23 @@ const MyPassportBox: React.FC<{ id: GuideId }> = ({ id }) => {
   const free = items.filter((x) => x.cat === 'free').length;
   const easy = items.filter((x) => x.cat === 'evisa' || x.cat === 'voa' || x.cat === 'eta').length;
   return (
-    <section className="vz-mypass" aria-label={l('Senin pasaportun', 'Your passport', 'Dein Pass', 'Tu pasaporte', 'Ваш паспорт')}>
-      <div className="vz-mypass-h"><Flag code={pass} /> <b>{l(`Senin pasaportun: ${P}`, `Your passport: ${P}`, `Dein Pass: ${P}`, `Tu pasaporte: ${P}`, `Ваш паспорт: ${P}`)}</b></div>
+    <section className="vz-mypass" aria-label={l('Senin pasaportun', 'Your passport', 'Dein Pass', 'Tu pasaporte', 'Ваш паспорт', 'Seu passaporte')}>
+      <div className="vz-mypass-h"><Flag code={pass} /> <b>{l(`Senin pasaportun: ${P}`, `Your passport: ${P}`, `Dein Pass: ${P}`, `Tu pasaporte: ${P}`, `Ваш паспорт: ${P}`, `Seu passaporte: ${P}`)}</b></div>
       <p className="vz-muted">
         {A
-          ? l(`Bu rehber ${A} vatandaşları için yazıldı. ${P} pasaportuyla durumun:`, `This guide is written for citizens of ${A}. With a ${P} passport:`, `Dieser Ratgeber gilt für Bürger von ${A}. Mit Pass aus ${P}:`, `Esta guía es para ciudadanos de ${A}. Con pasaporte de ${P}:`, `Этот гид написан для граждан: ${A}. С паспортом (${P}):`)
-          : l(`Bu rehber başka pasaportlar için yazıldı. ${P} pasaportuyla durumun:`, `This guide is written for other passports. With a ${P} passport:`, `Dieser Ratgeber gilt für andere Pässe. Mit Pass aus ${P}:`, `Esta guía es para otros pasaportes. Con pasaporte de ${P}:`, `Этот гид для других паспортов. С паспортом (${P}):`)}
+          ? l(`Bu rehber ${A} vatandaşları için yazıldı. ${P} pasaportuyla durumun:`, `This guide is written for citizens of ${A}. With a ${P} passport:`, `Dieser Ratgeber gilt für Bürger von ${A}. Mit Pass aus ${P}:`, `Esta guía es para ciudadanos de ${A}. Con pasaporte de ${P}:`, `Этот гид написан для граждан: ${A}. С паспортом (${P}):`, `Este guia é para cidadãos de ${A}. Com passaporte de ${P}:`)
+          : l(`Bu rehber başka pasaportlar için yazıldı. ${P} pasaportuyla durumun:`, `This guide is written for other passports. With a ${P} passport:`, `Dieser Ratgeber gilt für andere Pässe. Mit Pass aus ${P}:`, `Esta guía es para otros pasaportes. Con pasaporte de ${P}:`, `Этот гид для других паспортов. С паспортом (${P}):`, `Este guia é para outros passaportes. Com passaporte de ${P}:`)}
       </p>
       {rows.length > 0 ? (
         <List>
           {rows.map(({ c, it }) => (
-            <Row key={c} lead={<Flag code={c} />} title={getCountryName(c, language)} sub={it ? getCategoryBadgeLabel(it, language) : l('Bilgi yok', 'No data', 'Keine Daten', 'Sin datos', 'Нет данных')} href={buildLocalizedPath(language as SupportedLanguage, 'explore', c)} />
+            <Row key={c} lead={<Flag code={c} />} title={getCountryName(c, language)} sub={it ? getCategoryBadgeLabel(it, language) : l('Bilgi yok', 'No data', 'Keine Daten', 'Sin datos', 'Нет данных', 'Sem dados')} href={buildLocalizedPath(language as SupportedLanguage, 'explore', c)} />
           ))}
         </List>
       ) : (
         <p>
-          {l(`${P} pasaportuyla ${free} ülkeye vizesiz, ${easy} ülkeye kapıda vize, e-vize ya da elektronik izinle gidilebiliyor.`, `With a ${P} passport: ${free} countries visa-free, ${easy} with visa on arrival, eVisa or eTA.`, `Mit Pass aus ${P}: ${free} Länder visumfrei, ${easy} mit Visum bei Ankunft, e-Visum oder eTA.`, `Con pasaporte de ${P}: ${free} países sin visado, ${easy} con visa a la llegada, e-Visa o eTA.`, `С паспортом (${P}): без визы ${free} стран, ещё ${easy} — виза по прилёте, e-Visa или eTA.`)}{' '}
-          <a href={buildLocalizedPath(language as SupportedLanguage, 'explore', null)}>{l('Ülkeleri gör ›', 'See countries ›', 'Länder ansehen ›', 'Ver países ›', 'Смотреть страны ›')}</a>
+          {l(`${P} pasaportuyla ${free} ülkeye vizesiz, ${easy} ülkeye kapıda vize, e-vize ya da elektronik izinle gidilebiliyor.`, `With a ${P} passport: ${free} countries visa-free, ${easy} with visa on arrival, eVisa or eTA.`, `Mit Pass aus ${P}: ${free} Länder visumfrei, ${easy} mit Visum bei Ankunft, e-Visum oder eTA.`, `Con pasaporte de ${P}: ${free} países sin visado, ${easy} con visa a la llegada, e-Visa o eTA.`, `С паспортом (${P}): без визы ${free} стран, ещё ${easy} — виза по прилёте, e-Visa или eTA.`, `Com passaporte de ${P}: ${free} países sem visto, ${easy} com visto na chegada, e-Visa ou eTA.`)}{' '}
+          <a href={buildLocalizedPath(language as SupportedLanguage, 'explore', null)}>{l('Ülkeleri gör ›', 'See countries ›', 'Länder ansehen ›', 'Ver países ›', 'Смотреть страны ›', 'Ver países ›')}</a>
         </p>
       )}
     </section>
@@ -273,9 +273,9 @@ const WtgCountries: React.FC<{ id: GuideId; data: WtgData | null }> = ({ id, dat
   const items = getPassportItems(pass);
   const P = getCountryName(pass, language);
   const groups: { k: string; title: string; list: WtgData['countries'] }[] = [
-    { k: 'free', title: l('Vizesiz ya da kimlikle', 'Visa-free or ID card', 'Visumfrei oder mit Ausweis', 'Sin visado o con DNI', 'Без визы или по ID'), list: [] },
-    { k: 'easy', title: l('Kolay vize: kapıda, e-vize ya da ETA', 'Easy: visa on arrival, eVisa or ETA', 'Einfach: Visum bei Ankunft, eVisum oder ETA', 'Fácil: visado a la llegada, eVisa o ETA', 'Просто: виза по прилёте, e-Visa или ETA'), list: [] },
-    { k: 'visa', title: l('Önceden vize gerekli', 'Visa required in advance', 'Visum vorab nötig', 'Visado previo necesario', 'Нужна виза заранее'), list: [] }
+    { k: 'free', title: l('Vizesiz ya da kimlikle', 'Visa-free or ID card', 'Visumfrei oder mit Ausweis', 'Sin visado o con DNI', 'Без визы или по ID', 'Sem visto ou com RG'), list: [] },
+    { k: 'easy', title: l('Kolay vize: kapıda, e-vize ya da ETA', 'Easy: visa on arrival, eVisa or ETA', 'Einfach: Visum bei Ankunft, eVisum oder ETA', 'Fácil: visado a la llegada, eVisa o ETA', 'Просто: виза по прилёте, e-Visa или ETA', 'Fácil: visto na chegada, e-Visa ou ETA'), list: [] },
+    { k: 'visa', title: l('Önceden vize gerekli', 'Visa required in advance', 'Visum vorab nötig', 'Visado previo necesario', 'Нужна виза заранее', 'Visto prévio necessário'), list: [] }
   ];
   for (const row of data.countries) {
     const it = items.find((x) => x.c === row[0]);
@@ -287,7 +287,7 @@ const WtgCountries: React.FC<{ id: GuideId; data: WtgData | null }> = ({ id, dat
       <section>
         {months}
         <h2>{H.countries} ({data.countries.length})</h2>
-        <p className="vz-muted">{l(`Vize durumu ${P} pasaportuna göre (profilinden değiştirebilirsin).`, `Visa status shown for a ${P} passport (change it in your profile).`, `Visastatus für einen Pass aus ${P} (im Profil änderbar).`, `Visado según pasaporte de ${P} (cámbialo en tu perfil).`, `Визовый режим для паспорта: ${P} (можно сменить в профиле).`)}</p>
+        <p className="vz-muted">{l(`Vize durumu ${P} pasaportuna göre (profilinden değiştirebilirsin).`, `Visa status shown for a ${P} passport (change it in your profile).`, `Visastatus für einen Pass aus ${P} (im Profil änderbar).`, `Visado según pasaporte de ${P} (cámbialo en tu perfil).`, `Визовый режим для паспорта: ${P} (можно сменить в профиле).`, `Visto conforme o passaporte de ${P} (altere no seu perfil).`)}</p>
       </section>
       {groups.map((gr) =>
         gr.list.length ? (
@@ -303,7 +303,7 @@ const WtgCountries: React.FC<{ id: GuideId; data: WtgData | null }> = ({ id, dat
                       {c !== pass && it && <em>{getCategoryBadgeLabel(it, language)}</em>}
                     </div>
                     <p>{season}</p>
-                    <a className="vz-fest-hotel" href={stay22('booking', { address: `${cap ? `${cap}, ` : ''}${getCountryName(c, 'en')}`, campaign: `wtg_${m}_${c.toLowerCase()}` })} target="_blank" rel="noopener noreferrer sponsored">{l('Otellere bak', 'Browse hotels', 'Hotels ansehen', 'Ver hoteles', 'Отели')}{cap ? ` · ${cap}` : ''}</a>
+                    <a className="vz-fest-hotel" href={stay22('booking', { address: `${cap ? `${cap}, ` : ''}${getCountryName(c, 'en')}`, campaign: `wtg_${m}_${c.toLowerCase()}` })} target="_blank" rel="noopener noreferrer sponsored">{l('Otellere bak', 'Browse hotels', 'Hotels ansehen', 'Ver hoteles', 'Отели', 'Ver hotéis')}{cap ? ` · ${cap}` : ''}</a>
                   </li>
                 );
               })}

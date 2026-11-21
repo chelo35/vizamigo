@@ -1563,6 +1563,397 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Rupia indonésia (IDR)",
+   "plugType": "Tipo C, F (230V, 50Hz)",
+   "bestMonths": "Abril – outubro (estação seca: Bali, Java, Lombok, Komodo) · de novembro a março é temporada de chuvas; Sumatra e Kalimantan seguem outros padrões",
+   "safety": {
+    "safetyScore": 55,
+    "safetyLevel": "Risco moderado",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60",
+    "crimeRateSummary": "A criminalidade violenta contra turistas é baixa; em Bali e Jacarta são frequentes os furtos de bolsas e celulares por arrastão e a clonagem de cartões em caixas eletrônicos. Há alertas oficiais para a região da Papua, e vale considerar o risco de terremotos, vulcões e tsunamis.",
+    "commonScams": [
+     "Pequenas casas de câmbio de Bali que dão dinheiro a menos com truques de mão",
+     "Locadoras de motos que cobram \"danos\" por arranhões que já existiam",
+     "Motoristas e guias que levam você a plantações de kopi luwak e lojas caras em troca de comissão"
+    ],
+    "safeTravelTips": [
+     "Use apenas casas de câmbio autorizadas e conte o dinheiro no balcão.",
+     "Evite o arak caseiro e drinques suspeitamente baratos; já houve casos de intoxicação por metanol.",
+     "Não alugue moto sem carteira de habilitação válida e permissão internacional para dirigir, e use sempre capacete."
+    ],
+    "emergencyNumbers": {
+     "police": "110",
+     "ambulance": "118 / 119",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "90%+ (4G / 5G)",
+    "costPerGbUsd": "US$ 0,30 - 1,00",
+    "esimAvailability": "Muito boa (eSIMs locais e internacionais; chips locais são cadastrados com o passaporte)",
+    "bestCarriers": [
+     "Telkomsel",
+     "Indosat Ooredoo (IM3)",
+     "XL Axiata / XLSmart"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Variável (bom MRT e TransJakarta em Jacarta; transporte público escasso nas ilhas)",
+    "costLevel": "Barato",
+    "singleTicketUsd": "US$ 0,20 - 0,90",
+    "dailyPassUsd": "Não há (paga-se por trajeto com o cartão JakLingko / e-money em Jacarta)",
+    "popularRideApps": [
+     "Gojek",
+     "Grab",
+     "Maxim",
+     "Bluebird (MyBluebird)"
+    ],
+    "taxiAdvice": "Gojek e Grab são a opção mais fácil e barata para carros e mototáxis (ojek); na rua, pegue apenas os táxis azuis da Bluebird. Em algumas áreas de Bali, os cartéis de táxis locais barram os motoristas de app: marque o embarque na estrada principal."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 25 - 40",
+    "dailyBudgetMidrangeUsd": "US$ 60 - 110",
+    "budgetMealUsd": "US$ 1,50 - 4",
+    "coffeeUsd": "US$ 1 - 4",
+    "waterBottleUsd": "US$ 0,25 - 0,50",
+    "hostelDormUsd": "US$ 6 - 15",
+    "hotel3StarUsd": "US$ 25 - 60",
+    "flightCostIndex": "Moderado – alto (voos diretos Istambul – Jacarta)",
+    "flightTip": "Há voos diretos de Istambul para Jacarta; para Bali (Denpasar), compare opções com escala. Entre as ilhas, Lion Air, Batik Air e Citilink são baratas."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Use a mão direita para dar, receber e comer.",
+     "Nunca toque na cabeça de ninguém, nem mesmo de uma criança.",
+     "Tire os sapatos ao entrar em casas e locais de culto.",
+     "Levantar a voz ou demonstrar raiva é perder a compostura; resolva os problemas com calma e um sorriso."
+    ],
+    "festivals": [
+     "Nyepi (Dia do Silêncio em Bali, março; tudo fecha por 24 horas, inclusive o aeroporto)",
+     "Galungan e Kuningan (a cada 210 dias em Bali, com as ruas enfeitadas com os mastros penjor)",
+     "Waisak (maio–junho; procissão budista de lanternas em Borobudur)"
+    ],
+    "lifestyle": "Centenas de grupos étnicos vivem em mais de 17.000 ilhas; o espírito do \"gotong royong\" (ajuda mútua), os warungs de bairro e o trânsito de motos estão no centro da vida diária."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Templo de Borobudur (UNESCO, perto de Yogyakarta)",
+     "Templos hindus de Prambanan",
+     "Arrozais de Ubud e Tegallalang (Bali)",
+     "Monte Bromo e o mar de areia de Tengger (Java Oriental)",
+     "Parque Nacional de Komodo (Labuan Bajo)",
+     "Ilhas Gili e Lombok"
+    ],
+    "bestSeasons": "Abril – outubro (estação seca: Bali, Java, Lombok, Komodo) · de novembro a março é temporada de chuvas; Sumatra e Kalimantan seguem outros padrões",
+    "travelStyleTip": "As distâncias entre as ilhas são grandes: ligue Java – Bali – Flores com voos domésticos. Em Bali, contratar um motorista por dia é prático e barato."
+   },
+   "religion": {
+    "primaryReligions": "Islã (~87 %), cristianismo protestante (~7 %), catolicismo (~3 %), hinduísmo (~1,7 %; majoritário em Bali), budismo (~0,7 %)",
+    "respectNorms": "Nos templos balineses, o sarongue e a faixa são obrigatórios, e pede-se às mulheres menstruadas que não entrem. Em Aceh vigora a sharia: vista-se de forma conservadora. No Ramadã, seja discreto ao comer e beber durante o dia em lugares movimentados.",
+    "sacredSites": [
+     "Borobudur (o maior monumento budista do mundo)",
+     "Mesquita Istiqlal (Jacarta)",
+     "Pura Besakih (o \"templo-mãe\" de Bali)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "O indonésio (Bahasa Indonesia) é a língua oficial; falam-se centenas de línguas regionais, como o javanês, o sundanês e o balinês.",
+    "englishProficiency": "Bom em Bali e nas áreas turísticas; bastante limitado na Java rural e em outras ilhas.",
+    "phrases": [
+     {
+      "phrase": "Selamat pagi",
+      "meaning": "Bom dia",
+      "translation": "Bom dia",
+      "pronunciation": "se-la-mat pa-gi"
+     },
+     {
+      "phrase": "Terima kasih",
+      "meaning": "Obrigado",
+      "translation": "Obrigado",
+      "pronunciation": "te-ri-ma ka-sih"
+     },
+     {
+      "phrase": "Berapa harganya?",
+      "meaning": "Quanto custa?",
+      "translation": "Qual é o preço?",
+      "pronunciation": "be-ra-pa har-ga-nya"
+     },
+     {
+      "phrase": "Jangan pedas, ya",
+      "meaning": "Sem pimenta, por favor",
+      "translation": "Sem pimenta, tá?",
+      "pronunciation": "jang-an pe-das, ya"
+     },
+     {
+      "phrase": "Permisi",
+      "meaning": "Com licença / Desculpe",
+      "translation": "Licença, posso passar?",
+      "pronunciation": "per-mi-si"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Depois de reinos poderosos como Srivijaya e Majapahit, as ilhas ficaram sob domínio colonial holandês a partir do século XVII; a independência foi proclamada em 17 de agosto de 1945 e reconhecida em 1949. Hoje é o país com a maior população muçulmana do mundo.",
+    "milestones": [
+     "c. 800: Construção de Borobudur",
+     "1602: Fundação da Companhia Holandesa das Índias Orientais (VOC)",
+     "1945: Proclamação da independência por Sukarno e Hatta",
+     "1998: Reformasi e transição para a democracia"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Nasi Goreng (arroz frito com ovo e biscoitos de camarão)",
+     "Rendang (carne bovina ao estilo minang, cozida lentamente no coco e em especiarias)",
+     "Gado-gado (legumes escaldados com molho de amendoim)"
+    ],
+    "traditionalDrinks": [
+     "Kopi Tubruk (café javanês com a borra)",
+     "Es Teh Manis (chá gelado adoçado)",
+     "Jamu (tônico de gengibre e cúrcuma)"
+    ],
+    "streetFoodAndDesserts": [
+     "Sate Ayam (espetinhos de frango com molho de amendoim)",
+     "Bakso (sopa de almôndegas)",
+     "Martabak Manis (panqueca grossa e doce com chocolate ou queijo)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Sukarno (presidente fundador)",
+     "B. J. Habibie (engenheiro aeronáutico e terceiro presidente)",
+     "Pramoedya Ananta Toer (romancista)"
+    ],
+    "strongSectors": [
+     "Mineração e processamento de níquel (maior produtor mundial)",
+     "Óleo de palma (maior produtor mundial)",
+     "Exportação de carvão e gás natural"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "O pagamento por QR com o QRIS funciona em quase todo lugar; cartões são aceitos nas cidades, mas em warungs, mercados e ilhas pequenas o dinheiro vivo é indispensável. Use caixas eletrônicos que ficam em agências bancárias.",
+    "tippingCulture": "Não é obrigatória; se o preço vier com \"++\", somam-se serviço e 10 % de imposto. Uma gorjeta de 20.000–50.000 rupias para motoristas e guias é bem-vinda.",
+    "economicPillars": "Mineração (níquel, carvão), óleo de palma, indústria, turismo (sobretudo Bali) e um grande mercado interno."
+   }
+  },
+  "itin": {
+   "routeName": "De Java a Bali: Yogyakarta, Bromo, Ubud e Uluwatu",
+   "routeSummary": "Um roteiro de 10 dias de oeste a leste: os templos antigos de Borobudur e Prambanan, o nascer do sol sobre o Bromo, os arrozais de Ubud e um final no templo à beira do penhasco de Uluwatu.",
+   "totalDays": 10,
+   "idealDurationText": "Roteiro de 10 dias",
+   "bestSeason": "Abril – outubro (estação seca: Bali, Java, Lombok, Komodo) · de novembro a março é temporada de chuvas; Sumatra e Kalimantan seguem outros padrões",
+   "transportMode": "Voo para Jacarta + trem/voo doméstico para Yogyakarta; Bromo via Probolinggo, depois voo Surabaya – Denpasar ou balsa Ketapang – Gilimanuk; em Bali, motorista particular e Grab/Gojek",
+   "paceLevel": "Moderado – intenso (inclui passeio ao vulcão de madrugada)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Yogyakarta",
+     "recommendedDuration": "3 dias (Borobudur e Prambanan)",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Templo de Borobudur",
+      "Complexo de templos de Prambanan",
+      "Kraton (Palácio do Sultão)",
+      "Rua Malioboro"
+     ],
+     "activities": [
+      "Percorra Borobudur no frescor das primeiras horas da manhã.",
+      "Assista ao balé Ramayana ao ar livre em Prambanan.",
+      "Tinja seu próprio tecido em uma oficina de batik."
+     ],
+     "foodAndDrinks": [
+      "Gudeg (jaca verde cozida com açúcar de palma)",
+      "Bakpia (bolinhos recheados de feijão)",
+      "Kopi Joss (café com uma brasa de carvão dentro)"
+     ],
+     "criticalTips": [
+      "Os terraços superiores de Borobudur têm limite diário de visitantes; compre o ingresso especial on-line com antecedência.",
+      "As \"exposições de estudantes\" de batik para onde levam você costumam ser armadilhas de comissão."
+     ],
+     "mapsQuery": "Yogyakarta, Indonesia"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Monte Bromo",
+     "recommendedDuration": "1-2 dias (passeio ao nascer do sol)",
+     "durationBadge": "1-2 dias",
+     "highlights": [
+      "Nascer do sol no mirante de Penanjakan",
+      "Borda da cratera do Bromo",
+      "Mar de areia de Tengger (Pasir Berbisik)"
+     ],
+     "activities": [
+      "Suba de jipe até o mirante do nascer do sol por volta das 3h30.",
+      "Atravesse o mar de areia e suba os degraus até a borda da cratera.",
+      "Conheça a vida nos vilarejos tengger."
+     ],
+     "foodAndDrinks": [
+      "Rawon (sopa de carne de Java Oriental com noz keluak)",
+      "Bakso",
+      "Wedang Jahe (bebida quente de gengibre)"
+     ],
+     "criticalTips": [
+      "Ao amanhecer, a temperatura cai para cerca de 5 °C; leve casaco, gorro e luvas.",
+      "A cratera pode ser fechada conforme a atividade vulcânica; consulte os avisos do parque nacional."
+     ],
+     "mapsQuery": "Mount Bromo, East Java, Indonesia"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Ubud (Bali)",
+     "recommendedDuration": "3 dias (cultura e arrozais)",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Arrozais de Tegallalang",
+      "Floresta Sagrada dos Macacos",
+      "Templo das águas Tirta Empul",
+      "Palácio de Ubud e mercado de arte"
+     ],
+     "activities": [
+      "Caminhe pelos arrozais de manhã.",
+      "Observe ou participe do ritual de purificação de Tirta Empul.",
+      "À noite, assista a uma dança Legong no Palácio de Ubud."
+     ],
+     "foodAndDrinks": [
+      "Bebek Betutu (pato assado condimentado)",
+      "Nasi Campur Bali",
+      "Jamu"
+     ],
+     "criticalTips": [
+      "Na Floresta dos Macacos, guarde óculos, chapéu e joias na mochila.",
+      "Nos templos, o sarongue e a faixa são obrigatórios; dá para alugar na entrada."
+     ],
+     "mapsQuery": "Ubud, Bali, Indonesia"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Uluwatu (Bali)",
+     "recommendedDuration": "2 dias (penhascos e praias)",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Templo de Uluwatu no alto do penhasco",
+      "Dança do fogo Kecak ao pôr do sol",
+      "Praias de Padang Padang e Melasti",
+      "Baía de Jimbaran"
+     ],
+     "activities": [
+      "Assista à dança Kecak no templo ao pôr do sol.",
+      "Nade ou faça uma aula de surfe em Padang Padang ou Melasti.",
+      "Jante frutos do mar na praia de Jimbaran."
+     ],
+     "foodAndDrinks": [
+      "Ikan Bakar Jimbaran (peixe na brasa)",
+      "Sate Lilit (espetinho de peixe com capim-limão)",
+      "Es Kelapa Muda (coco verde fresco)"
+     ],
+     "criticalTips": [
+      "Os macacos de Uluwatu roubam celulares e óculos de sol; segure bem suas coisas.",
+      "As correntes são fortes: nunca nade com bandeira vermelha."
+     ],
+     "mapsQuery": "Uluwatu, Bali, Indonesia"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Nasi Goreng (arroz frito com ovo e biscoitos de camarão)",
+     "Rendang (carne bovina ao estilo minang, cozida lentamente no coco e em especiarias)",
+     "Gado-gado (legumes escaldados com molho de amendoim)"
+    ],
+    "drinks": [
+     "Kopi Tubruk (café javanês com a borra)",
+     "Es Teh Manis (chá gelado adoçado)",
+     "Jamu (tônico de gengibre e cúrcuma)"
+    ],
+    "streetFoods": [
+     "Sate Ayam (espetinhos de frango com molho de amendoim)",
+     "Bakso (sopa de almôndegas)",
+     "Martabak Manis (panqueca grossa e doce com chocolate ou queijo)"
+    ],
+    "diningAdvice": "Os warungs são a opção mais barata e autêntica; em Bali a carne de porco (babi) é comum, então procure a placa \"halal\". Não beba água da torneira e confira se o gelo é industrializado."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Tomadas tipo C/F (como na Europa continental)",
+     "Sarongue e faixa para os templos",
+     "Protetor solar forte e repelente de mosquitos",
+     "Casaco e gorro para o Bromo"
+    ],
+    "safetyAndEtiquette": [
+     "Use sarongue nos templos e nunca toque na cabeça de ninguém.",
+     "Evite o arak caseiro e bebidas suspeitamente baratas."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Tomadas europeias C/F (Schuko) de dois pinos redondos, iguais às da Turquia; não é preciso adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "A água da torneira não é potável; use água engarrafada até para escovar os dentes. O gelo costuma ser industrializado, mas tome cuidado em barracas pequenas.",
+    "vaccines": [
+     "Vacinas de rotina (tríplice viral, tétano)",
+     "Hepatite A",
+     "Febre tifoide",
+     "Raiva (áreas rurais ou estadias longas)",
+     "Encefalite japonesa (estadias longas em áreas rurais)",
+     "Certificado de febre amarela apenas se você chegar de um país de risco"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "118 / 119"
+   },
+   "tipping": {
+    "custom": "A gorjeta não é obrigatória; os preços com “++” somam serviço e 10 % de imposto.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "Motoristas e guias agradecem 20.000–50.000 IDR; em Bali é comum deixar algo para a equipe do spa e do hotel."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA de 11 % (PPN)",
+    "minSpend": "5.000.000 IDR (mínimo de 500.000 IDR por nota fiscal)",
+    "customsNote": "Compre com o passaporte em lojas com o selo “VAT Refund for Tourists” e apresente as notas fiscais e os produtos no balcão de VAT Refund antes do check-in em aeroportos internacionais como Soekarno-Hatta ou Ngurah Rai (Bali)."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 0,30 - 1,00",
+    "topCarriers": [
+     "Telkomsel",
+     "Indosat Ooredoo (IM3)",
+     "XL Axiata / XLSmart"
+    ],
+    "airportSimTrapWarning": "Os quiosques do aeroporto (sobretudo em Bali) cobram duas ou três vezes o preço da cidade; compre antes um eSIM da Telkomsel/by.U ou vá a uma loja oficial GraPARI. Chips locais exigem cadastro do passaporte e do IMEI."
+   },
+   "touristScams": [
+    {
+     "title": "Truque na casa de câmbio",
+     "desc": "Em pequenas casas de câmbio de Bali, escondem cédulas na contagem e entregam menos dinheiro.",
+     "tip": "Troque dinheiro só em casas autorizadas com “PT” no nome e conte você mesmo o dinheiro no balcão."
+    },
+    {
+     "title": "Golpe dos danos na moto",
+     "desc": "A locadora cobra “danos” por arranhões que já existiam.",
+     "tip": "Grave um vídeo da moto inteira antes de sair e nunca deixe o passaporte como caução."
+    },
+    {
+     "title": "“Tour do café” com comissão",
+     "desc": "Motoristas e guias levam você a plantações caras de kopi luwak e a lojas de souvenirs.",
+     "tip": "Combine o roteiro antes e recuse com educação as paradas que você não pediu."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Индонезийская рупия (IDR)",

@@ -244,7 +244,7 @@ export const SeaMap: React.FC<Props> = ({
       {mode === 'dots' && <DotMap points={points} path={path} ariaLabel={ariaLabel} selectedId={selectedId} focus={focus} fitKey={autoKey} interactive={interactive} />}
       {mode === 'dots' && !forceDots && !wantGoogle && !isGoogleMapsAuthFailed() && (
         <button type="button" className="vz-map-up" onClick={() => setWantGoogle(true)}>
-          {l('Ayrıntılı harita', 'Detailed map', 'Detailkarte', 'Mapa detallado', 'Подробная карта')}
+          {l('Ayrıntılı harita', 'Detailed map', 'Detailkarte', 'Mapa detallado', 'Подробная карта', 'Mapa detalhado')}
         </button>
       )}
     </div>
@@ -392,9 +392,9 @@ const DotMap: React.FC<{
       </svg>
       {interactive && (
         <div className="vz-map-ctrl">
-          <button type="button" onClick={() => zoomBy(1 / 1.5)} aria-label={l('Yakınlaştır', 'Zoom in', 'Vergrößern', 'Acercar', 'Приблизить')}><Icon name="plus" size={16} duo={false} /></button>
-          <button type="button" onClick={() => zoomBy(1.5)} aria-label={l('Uzaklaştır', 'Zoom out', 'Verkleinern', 'Alejar', 'Отдалить')}><span aria-hidden="true" style={{ fontSize: 20, lineHeight: 1 }}>−</span></button>
-          <button type="button" onClick={() => setVb(fit)} aria-label={l('Tümünü göster', 'Fit to view', 'Alles anzeigen', 'Ver todo', 'Показать всё')}><Icon name="globe" size={16} duo={false} /></button>
+          <button type="button" onClick={() => zoomBy(1 / 1.5)} aria-label={l('Yakınlaştır', 'Zoom in', 'Vergrößern', 'Acercar', 'Приблизить', 'Aproximar')}><Icon name="plus" size={16} duo={false} /></button>
+          <button type="button" onClick={() => zoomBy(1.5)} aria-label={l('Uzaklaştır', 'Zoom out', 'Verkleinern', 'Alejar', 'Отдалить', 'Afastar')}><span aria-hidden="true" style={{ fontSize: 20, lineHeight: 1 }}>−</span></button>
+          <button type="button" onClick={() => setVb(fit)} aria-label={l('Tümünü göster', 'Fit to view', 'Alles anzeigen', 'Ver todo', 'Показать всё', 'Ver tudo')}><Icon name="globe" size={16} duo={false} /></button>
         </div>
       )}
     </>

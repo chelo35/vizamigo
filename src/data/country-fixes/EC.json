@@ -1555,6 +1555,395 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Dólar americano (USD)",
+   "plugType": "Tipo A, B (120V, 60Hz)",
+   "bestMonths": "Andes (Quito, Cuenca): junho – setembro, seco e ensolarado. Galápagos: dezembro – maio, quente e com mar calmo; junho – novembro, mais fresco, mas com muita vida marinha. O litoral é chuvoso de dezembro a maio.",
+   "safety": {
+    "safetyScore": 40,
+    "safetyLevel": "Recomenda-se cautela",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60",
+    "crimeRateSummary": "Desde 2024 o Equador aplica medidas de emergência contra facções do crime organizado, e sua taxa de homicídios está entre as mais altas da região. Há alertas oficiais de “não viajar” para o sul e o norte de Guayaquil, Esmeraldas, Los Ríos, partes de Manabí e a fronteira com a Colômbia; em Quito são comuns os sequestros-relâmpago e os furtos por arrancão. Galápagos e os povoados andinos são relativamente tranquilos.",
+    "commonScams": [
+     "Sequestro-relâmpago em táxis pegos na rua (saques forçados em caixas eletrônicos)",
+     "Sujam você com algum líquido e roubam sua carteira enquanto “ajudam a limpar”",
+     "Furto de mochilas deixadas no chão ou no bagageiro de cima do ônibus"
+    ],
+    "safeTravelTips": [
+     "Não pegue táxi na rua; use Uber, Cabify, DiDi ou um táxi registrado chamado pelo hotel.",
+     "Em Guayaquil, fique só no aeroporto e no Malecón 2000, de dia; evite Esmeraldas e a fronteira com a Colômbia.",
+     "Evite ônibus noturnos; em Quito, não suba a pé ao Panecillo."
+    ],
+    "emergencyNumbers": {
+     "police": "911",
+     "ambulance": "911",
+     "general": "911"
+    }
+   },
+   "internet": {
+    "networkCoverage": "4G bom nas cidades e 5G limitado em Quito e Guayaquil; fraco na Amazônia e nos Andes mais altos. Em Galápagos a internet é lenta e cara.",
+    "costPerGbUsd": "~US$ 1,50 - 4,00",
+    "esimAvailability": "Boa (eSIMs internacionais são comuns; pré-pago Claro e Movistar com passaporte)",
+    "bestCarriers": [
+     "Claro",
+     "Movistar",
+     "CNT"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Regular (metrô moderno em Quito; ônibus intermunicipais frequentes e baratos)",
+    "costLevel": "Barato",
+    "singleTicketUsd": "0.45 $ (metrô/ônibus de Quito)",
+    "dailyPassUsd": "Não existe",
+    "popularRideApps": [
+     "Uber",
+     "Cabify",
+     "DiDi",
+     "inDrive"
+    ],
+    "taxiAdvice": "Uber, Cabify, DiDi e inDrive funcionam em Quito, Guayaquil e Cuenca e são a opção mais segura. Os táxis amarelos devem usar taxímetro; confira a placa e o número de registro na porta. Para viagens entre províncias, pegue ônibus nos terminais oficiais e viaje de dia."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 30 - 50",
+    "dailyBudgetMidrangeUsd": "US$ 70 - 130",
+    "budgetMealUsd": "US$ 3 - 6",
+    "coffeeUsd": "US$ 1,50 - 3,00",
+    "waterBottleUsd": "US$ 0,50 - 1,00",
+    "hostelDormUsd": "US$ 10 - 18",
+    "hotel3StarUsd": "US$ 45 - 90",
+    "flightCostIndex": "Alto (longa distância com escalas)",
+    "flightTip": "Não há voos diretos da Turquia; faça conexão em Madri (Iberia, Air Europa), Amsterdã (KLM), Bogotá (Avianca) ou Cidade do Panamá (Copa). Inclua no orçamento os voos para Galápagos (LATAM, Avianca) e a taxa de entrada de 200 $ do parque nacional."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "O cumprimento é com aperto de mão; entre conhecidos, um beijo no rosto. Comece sempre com “Buenos días”.",
+     "Não fotografe indígenas (principalmente em Otavalo) sem permissão.",
+     "Em Galápagos, mantenha 2 m de distância dos animais e não saia das trilhas.",
+     "Não fique com o celular à mostra na rua; os próprios moradores evitam isso."
+    ],
+    "festivals": [
+     "Inti Raymi (festa do Sol, junho, Otavalo e Andes do norte)",
+     "Mama Negra (Latacunga, setembro e novembro)",
+     "Festas de Quito (início de dezembro) e Dia de Finados (2 de novembro, com colada morada)"
+    ],
+    "lifestyle": "Mistura de culturas mestiça, kichwa, afro-equatoriana e montubia; na Serra o dia começa cedo, e no Litoral a vida é mais descontraída. O almoço (sopa, prato principal e suco) é a refeição principal, e o futebol é paixão nacional."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Ilhas Galápagos (UNESCO)",
+     "Centro Histórico de Quito (UNESCO)",
+     "Parque Nacional Cotopaxi",
+     "Lagoa da cratera do Quilotoa",
+     "Baños e a Rota das Cachoeiras (Pailón del Diablo)",
+     "Centro Histórico de Cuenca (UNESCO)"
+    ],
+    "bestSeasons": "Junho – setembro (Andes); dezembro – maio (temporada quente em Galápagos)",
+    "travelStyleTip": "Quito fica a 2.850 m; descanse no primeiro dia e beba bastante água. Por segurança, concentre-se na “Avenida dos Vulcões” e em Galápagos, e use Guayaquil só para conexões."
+   },
+   "religion": {
+    "primaryReligions": "Católicos ~70 %, evangélicos ~15 %, sem religião ~10 %; nos Andes, as crenças kichwa se misturam ao catolicismo",
+    "respectNorms": "Tire o chapéu nas igrejas e não fotografe durante a missa; em igrejas como La Compañía, fotos no interior são proibidas.",
+    "sacredSites": [
+     "Igreja da Compañía de Jesús (barroco dourado, Quito)",
+     "Basílica do Voto Nacional (Quito)",
+     "Santuário de El Quinche (local de peregrinação)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "O espanhol é a língua oficial; o kichwa e o shuar são línguas oficiais de relação intercultural. Na Serra fala-se muito kichwa.",
+    "englishProficiency": "Baixo; fala-se inglês em Galápagos e nos hotéis turísticos, mas no resto do país é preciso um espanhol básico.",
+    "phrases": [
+     {
+      "phrase": "Buenos días",
+      "meaning": "Bom dia",
+      "translation": "Bom dia",
+      "pronunciation": "BWEH-nos DEE-as"
+     },
+     {
+      "phrase": "¿Cuánto cuesta?",
+      "meaning": "Quanto custa?",
+      "translation": "Quanto?",
+      "pronunciation": "KWAN-to KWES-ta"
+     },
+     {
+      "phrase": "¿Qué fue?",
+      "meaning": "E aí? (gíria equatoriana)",
+      "translation": "E aí?",
+      "pronunciation": "keh FWEH"
+     },
+     {
+      "phrase": "¡Achachay!",
+      "meaning": "Que frio! (exclamação de origem kichwa)",
+      "translation": "Que frio!",
+      "pronunciation": "a-cha-CHAI"
+     },
+     {
+      "phrase": "Yupaychani",
+      "meaning": "Obrigado (kichwa)",
+      "translation": "Obrigado",
+      "pronunciation": "yu-pai-CHA-ni"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "No fim do século XV a região foi incorporada ao Império Inca; os espanhóis fundaram Quito em 1534. A Batalha de Pichincha, em 24 de maio de 1822, trouxe a independência, e em 1830 o Equador se separou da Grã-Colômbia. Darwin visitou Galápagos em 1835; o país adotou o dólar em 2000.",
+    "milestones": [
+     "1534: fundação espanhola de Quito",
+     "1822: Batalha de Pichincha e independência",
+     "1835: Darwin visita Galápagos",
+     "2000: Dolarização"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Encebollado (sopa de albacora, cebola e mandioca)",
+     "Locro de papa (com queijo e abacate)",
+     "Hornado e llapingachos"
+    ],
+    "traditionalDrinks": [
+     "Canelazo (bebida quente de canela)",
+     "Colada morada (novembro)",
+     "Cerveja Pilsener e sucos de naranjilla e tomate de árvore (tamarillo)"
+    ],
+    "streetFoodAndDesserts": [
+     "Empanada de viento",
+     "Humita",
+     "Helado de paila (Ibarra)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Eloy Alfaro (líder da Revolução Liberal)",
+     "Oswaldo Guayasamín (pintor)",
+     "Richard Carapaz (campeão olímpico de ciclismo de estrada em Tóquio 2020)"
+    ],
+    "strongSectors": [
+     "Petróleo",
+     "Exportação de banana, camarão e cacau (entre os líderes mundiais)",
+     "Flores (rosas) e turismo"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "A moeda é o dólar; muitos estabelecimentos recusam notas de 50 e 100 $, então leve notas pequenas. Nas cidades usa-se cartão; mercados, ônibus e áreas rurais pedem dinheiro vivo.",
+    "tippingCulture": "Os restaurantes acrescentam a taxa de serviço legal de 10 %; o resto é opcional. Guias e motoristas esperam gorjeta.",
+    "economicPillars": "Petróleo, banana, camarão, cacau, flores, mineração e turismo."
+   }
+  },
+  "itin": {
+   "routeName": "Rota dos Vulcões: Quito, Otavalo, Cotopaxi – Baños e Cuenca",
+   "routeSummary": "Roteiro andino de 10 dias que sai do centro colonial de Quito, passa pelo mercado indígena de Otavalo, pelo vulcão Cotopaxi e pelas cachoeiras de Baños e chega a Cuenca (UNESCO); dá para incluir Galápagos.",
+   "totalDays": 10,
+   "idealDurationText": "Roteiro de 10 dias",
+   "bestSeason": "Junho – setembro",
+   "transportMode": "Ônibus intermunicipal de dia ou motorista particular + Uber/Cabify; voo Quito – Cuenca",
+   "paceLevel": "Equilibrado (cultura + natureza + altitude)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Quito (Centro Histórico e Mitad del Mundo)",
+     "recommendedDuration": "3 dias",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Plaza Grande e igreja de La Compañía",
+      "TelefériQo até o Pichincha (3.945 m)",
+      "Mitad del Mundo e Museu Intiñan",
+      "Capilla del Hombre, de Guayasamín"
+     ],
+     "activities": [
+      "Explore o centro histórico de dia, com guia.",
+      "Tire uma foto na linha do Equador e visite o museu das culturas indígenas.",
+      "Tome um canelazo em La Ronda (ao entardecer)."
+     ],
+     "foodAndDrinks": [
+      "Locro de papa",
+      "Empanada de viento",
+      "Canelazo"
+     ],
+     "criticalTips": [
+      "Vá com calma no primeiro dia por causa do mal da altitude (soroche).",
+      "Não caminhe pelo centro à noite; chame um Uber."
+     ],
+     "mapsQuery": "Quito, Ecuador"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Otavalo e Cuicocha",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Mercado da Plaza de los Ponchos (maior aos sábados)",
+      "Lagoa de Cuicocha",
+      "Cachoeira de Peguche",
+      "Rua do couro de Cotacachi"
+     ],
+     "activities": [
+      "Pechinche no mercado de tecidos e artesanato.",
+      "Faça a trilha pela borda da Cuicocha (4–5 h).",
+      "Visite uma oficina de tecelagem de uma família kichwa."
+     ],
+     "foodAndDrinks": [
+      "Fritada",
+      "Helado de paila",
+      "Chicha de jora"
+     ],
+     "criticalTips": [
+      "~2 h de ônibus a partir do terminal de Carcelén; viaje de dia.",
+      "No mercado, leve a mochila na frente do corpo."
+     ],
+     "mapsQuery": "Otavalo, Ecuador"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Cotopaxi, Quilotoa e Baños",
+     "recommendedDuration": "3 dias",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Vulcão Cotopaxi e lagoa de Limpiopungo",
+      "Lagoa do Quilotoa",
+      "Cachoeira Pailón del Diablo",
+      "Balanço da Casa del Árbol"
+     ],
+     "activities": [
+      "Suba com guia até o refúgio José Rivas (4.864 m).",
+      "Desça de bicicleta a Rota das Cachoeiras a partir de Baños.",
+      "Relaxe nas piscinas termais."
+     ],
+     "foodAndDrinks": [
+      "Chugchucaras (Latacunga)",
+      "Melcocha de Baños"
+     ],
+     "criticalTips": [
+      "Acompanhe a situação do vulcão Tungurahua e os alertas locais.",
+      "Escolha operadoras certificadas para rafting e canionismo."
+     ],
+     "mapsQuery": "Baños de Agua Santa, Ecuador"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Cuenca e El Cajas",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "A Catedral Nova, com suas cúpulas azuis",
+      "Ruínas incas e museu Pumapungo",
+      "Oficinas de chapéu de palha toquilla (chapéu-panamá)",
+      "Parque Nacional El Cajas"
+     ],
+     "activities": [
+      "Passeie às margens do rio Tomebamba.",
+      "Veja como se tecem os chapéus de palha toquilla.",
+      "Faça trilhas entre as lagoas de El Cajas."
+     ],
+     "foodAndDrinks": [
+      "Mote pillo",
+      "Cuy assado (porquinho-da-índia)",
+      "Horchata lojana"
+     ],
+     "criticalTips": [
+      "Quito – Cuenca por estrada leva ~9 h; melhor ir de avião.",
+      "El Cajas passa dos 4.000 m; leve agasalho e capa de chuva."
+     ],
+     "mapsQuery": "Cuenca, Ecuador"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Encebollado (sopa de albacora, cebola e mandioca)",
+     "Locro de papa (com queijo e abacate)",
+     "Hornado e llapingachos"
+    ],
+    "drinks": [
+     "Canelazo (bebida quente de canela)",
+     "Colada morada (novembro)",
+     "Cerveja Pilsener e sucos de naranjilla e tomate de árvore (tamarillo)"
+    ],
+    "streetFoods": [
+     "Empanada de viento",
+     "Humita",
+     "Helado de paila (Ibarra)"
+    ],
+    "diningAdvice": "O almoço completo (sopa, prato principal e suco) por 3-5 $ é a opção mais barata. As contas discriminam o IVA de 15 % e os 10 % de serviço; cuidado com saladas cruas e sucos de rua feitos com água da torneira."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Roupas em camadas (manhãs frias e meio-dia ensolarado)",
+     "Protetor solar com FPS alto e boné (sol equatorial)",
+     "Adaptador tipo A/B",
+     "Notas pequenas de dólar"
+    ],
+    "safetyAndEtiquette": [
+     "Siga os alertas oficiais e evite as províncias litorâneas de risco.",
+     "Pechinche com respeito e não fotografe sem permissão."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "A",
+     "B"
+    ],
+    "voltage": "120V",
+    "frequency": "60Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Tomadas americanas de pinos chatos (A/B), 120V; é preciso adaptador e só use carregadores de 100–240V."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Em Quito e Cuenca a água é tratada, mas recomenda-se a engarrafada ou filtrada; no litoral, na Amazônia e em Galápagos, só engarrafada.",
+    "vaccines": [
+     "Hepatite A e febre tifoide",
+     "Febre amarela: recomendada para a Amazônia; o certificado pode ser exigido se você chegar de um país de risco",
+     "Malária e dengue: proteja-se dos mosquitos na Amazônia e no litoral",
+     "Mal da altitude: Quito 2.850 m, Cotopaxi mais de 4.800 m"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "911"
+   },
+   "tipping": {
+    "custom": "Os restaurantes acrescentam 10 % de serviço; gorjeta extra é opcional.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Em Galápagos é costume dar gorjeta à tripulação e aos guias naturalistas (~10-20 $ por pessoa por dia)."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Reembolso do IVA de 15 % para turistas (SRI)",
+    "minSpend": "~50 $ por nota fiscal (emitida no seu passaporte)",
+    "customsNote": "O SRI oferece a turistas estrangeiros o reembolso do IVA de produtos comprados no país; peça notas fiscais com o número do seu passaporte e confira as regras em vigor no site do SRI. É proibido levar plantas, animais, areia ou conchas de Galápagos."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 1,50 - 4,00",
+    "topCarriers": [
+     "Claro",
+     "Movistar",
+     "CNT"
+    ],
+    "airportSimTrapWarning": "No aeroporto há poucos quiosques e os pacotes são caros; ative a eSIM antes para chamar um Uber na chegada: sai mais barato e é mais seguro."
+   },
+   "touristScams": [
+    {
+     "title": "Sequestro-relâmpago",
+     "desc": "Um táxi pego na rua muda de rota, cúmplices entram no carro e obrigam você a sacar dinheiro em caixas eletrônicos.",
+     "tip": "Peça carro só por aplicativo ou pelo hotel e compartilhe a placa."
+    },
+    {
+     "title": "Truque da mancha",
+     "desc": "Alguém aponta ketchup ou “cocô de passarinho” na sua roupa e um cúmplice rouba você enquanto limpam.",
+     "tip": "Recuse a ajuda e entre logo numa loja movimentada."
+    },
+    {
+     "title": "Furto de mochilas no ônibus",
+     "desc": "Nos ônibus intermunicipais, cortam e esvaziam as mochilas deixadas no chão ou no bagageiro.",
+     "tip": "Leve os objetos de valor no colo e despache a bagagem grande com comprovante."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Доллар США (USD)",

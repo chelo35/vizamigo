@@ -1523,6 +1523,387 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Euro (EUR)",
+   "plugType": "Tipo C, F (230V, 50Hz)",
+   "bestMonths": "Maio a junho e setembro a outubro (cidades); julho a agosto (trilhas nos Alpes); dezembro a março (esqui e mercados de Natal)",
+   "safety": {
+    "safetyScore": 85,
+    "safetyLevel": "Excepcionalmente seguro",
+    "badgeColor": "bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-900/60",
+    "crimeRateSummary": "Um dos países mais seguros da Europa, com pouquíssima criminalidade violenta. Cuidado com os batedores de carteira no U-Bahn de Viena, no Prater e nas grandes estações.",
+    "commonScams": [
+     "Vendedores fantasiados de ‘Mozart’ perto da Catedral de Santo Estêvão que vendem ingressos caros para concertos medianos",
+     "Furtos por distração em bondes e metrôs lotados"
+    ],
+    "safeTravelTips": [
+     "Compre ingressos nas bilheterias oficiais ou nos sites da Staatsoper / Musikverein.",
+     "Confira a previsão do tempo antes de ir para a montanha e não saia das trilhas sinalizadas.",
+     "Aos domingos a maioria das lojas fecha; planeje suas compras."
+    ],
+    "emergencyNumbers": {
+     "police": "133",
+     "ambulance": "144",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99 % de cobertura (5G amplo; mais fraco nos vales alpinos mais altos)",
+    "costPerGbUsd": "~US$ 0,50 - 2,00",
+    "esimAvailability": "Excelente",
+    "bestCarriers": [
+     "A1",
+     "Magenta Telekom",
+     "Drei (3)",
+     "Airalo / Holafly eSIM"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Excelente (trens pontuais da ÖBB e metrô de Viena)",
+    "costLevel": "Caro",
+    "singleTicketUsd": "3,40 - 3,80 $ (Viena)",
+    "dailyPassUsd": "9,00 - 10,50 $ (Viena, 24h)",
+    "popularRideApps": [
+     "WienMobil",
+     "ÖBB Tickets",
+     "Uber",
+     "Bolt",
+     "Taxi 40100",
+     "Westbahn"
+    ],
+    "taxiAdvice": "Nas cidades, o transporte público dá conta; para táxi, use Uber, Bolt ou Taxi 40100. As passagens da ÖBB e da Westbahn saem muito mais baratas compradas com antecedência (tarifas Sparschiene)."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 60 - 90",
+    "dailyBudgetMidrangeUsd": "US$ 140 - 230",
+    "budgetMealUsd": "US$ 15 - 22",
+    "coffeeUsd": "US$ 4,00 - 6,00",
+    "waterBottleUsd": "US$ 1,00 - 2,20",
+    "hostelDormUsd": "US$ 30 - 50",
+    "hotel3StarUsd": "US$ 110 - 190",
+    "flightCostIndex": "Baixo (Istambul – Viena direto ~2,5 h)",
+    "flightTip": "Turkish Airlines, Pegasus e Austrian têm voos diretos para Viena; também há voos sazonais para Salzburgo e Innsbruck. Os preços sobem nas semanas de férias de esqui."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "O cumprimento é ‘Grüß Gott’ ou, de modo informal, ‘Servus’; títulos (Herr Doktor) são importantes.",
+     "A pontualidade é muito valorizada; chegue na hora.",
+     "Aos domingos e feriados, espera-se silêncio (nada de tarefas barulhentas).",
+     "Ficar muito tempo num café é normal; para pagar, procure o olhar do garçom e diga ‘Zahlen, bitte’."
+    ],
+    "festivals": [
+     "Festival de Salzburgo (fim de julho – agosto)",
+     "Temporada de bailes de Viena e Baile da Ópera (janeiro – fevereiro)",
+     "Mercados de Natal Christkindlmarkt (fim de novembro – dezembro)"
+    ],
+    "lifestyle": "Cultura dos cafés vienenses (patrimônio imaterial da UNESCO), música clássica, esqui, trilhas e tavernas de vinho ‘Heuriger’."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Palácio de Schönbrunn (Viena)",
+     "Hofburg e Catedral de Santo Estêvão",
+     "Centro histórico de Salzburgo e fortaleza de Hohensalzburg",
+     "Hallstatt e a região do Dachstein",
+     "Vale do Wachau e abadia de Melk",
+     "Innsbruck e a montanha Nordkette"
+    ],
+    "bestSeasons": "Primavera e outono para as cidades; verão para os lagos alpinos; inverno para as estações de esqui",
+    "travelStyleTip": "Viaje de trem de Viena rumo ao oeste: Viena – Salzburgo – Hallstatt – Innsbruck é fácil com a ÖBB, e as passagens Railjet compradas com antecedência são baratas."
+   },
+   "religion": {
+    "primaryReligions": "Católicos ~55 %, sem religião ~22 %, muçulmanos ~8 %, ortodoxos ~5 %, protestantes ~4 %.",
+    "respectNorms": "Não circule nem tire fotos durante a missa; cubra ombros e joelhos. Em Viena e em outras cidades há mesquitas.",
+    "sacredSites": [
+     "Catedral de Santo Estêvão (Viena)",
+     "Abadia de Melk (beneditina)",
+     "Basílica de Mariazell (local de peregrinação)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Alemão (alemão austríaco); em algumas regiões, o croata, o esloveno e o húngaro também são oficiais.",
+    "englishProficiency": "Muito bom; o inglês é amplamente falado nas áreas turísticas e entre os jovens.",
+    "phrases": [
+     {
+      "phrase": "Grüß Gott",
+      "meaning": "Olá (cumprimento típico austríaco)",
+      "translation": "Olá",
+      "pronunciation": "grüs GOT"
+     },
+     {
+      "phrase": "Servus",
+      "meaning": "Oi / Tchau (informal)",
+      "translation": "Oi",
+      "pronunciation": "SER-vus"
+     },
+     {
+      "phrase": "Danke schön",
+      "meaning": "Muito obrigado(a)",
+      "translation": "Obrigado(a)",
+      "pronunciation": "DAN-ke shön"
+     },
+     {
+      "phrase": "Was kostet das?",
+      "meaning": "Quanto custa?",
+      "translation": "Quanto?",
+      "pronunciation": "vas KOS-tet das"
+     },
+     {
+      "phrase": "Zahlen, bitte!",
+      "meaning": "A conta, por favor!",
+      "translation": "A conta",
+      "pronunciation": "TSAH-len BIT-te"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Os Habsburgo governaram um vasto império a partir de Viena por cerca de 640 anos; o segundo cerco de Viena, em 1683, foi um ponto de virada. Em 1918 foi fundada a república, e o Tratado de Estado de 1955 criou uma Áustria independente e neutra, que entrou na UE em 1995.",
+    "milestones": [
+     "1273: Ascensão dos Habsburgo",
+     "1683: Segundo cerco de Viena",
+     "1918: Proclamação da república",
+     "1955: Tratado de Estado e neutralidade; 1995: entrada na UE"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Wiener Schnitzel (tradicionalmente de vitela; ‘vom Schwein’ é de porco)",
+     "Tafelspitz (carne bovina cozida com molho de maçã e raiz-forte)",
+     "Käsespätzle (massinha alpina com queijo e cebola frita)"
+    ],
+    "traditionalDrinks": [
+     "Wiener Melange (café vienense com leite vaporizado)",
+     "Grüner Veltliner (vinho branco)",
+     "Almdudler (refrigerante de ervas)"
+    ],
+    "streetFoodAndDesserts": [
+     "Salsichas do Würstelstand (por ex., Käsekrainer)",
+     "Sachertorte (torta de chocolate com geleia de damasco)",
+     "Apfelstrudel e Kaiserschmarrn (strudel de maçã e panqueca picada)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Wolfgang Amadeus Mozart (compositor)",
+     "Sigmund Freud (fundador da psicanálise)",
+     "Gustav Klimt (pintor, ‘O beijo’)"
+    ],
+    "strongSectors": [
+     "Turismo e esportes de inverno",
+     "Engenharia e fornecedores automotivos (Magna Steyr, KTM)",
+     "Marcas de alimentos e cristais (Red Bull, Swarovski)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Cartões e pagamento por aproximação são comuns, mas alguns cafés tradicionais, Heurigen e refúgios de montanha só aceitam dinheiro.",
+    "tippingCulture": "Arredonda-se em 5–10 %; ao pagar, você diz ao garçom o valor total (por ex., ‘20’ para uma conta de 18,50 €).",
+    "economicPillars": "Turismo, indústria avançada e engenharia, energia, serviços e setor bancário voltado para a Europa Central e Oriental."
+   }
+  },
+  "itin": {
+   "routeName": "Das cidades imperiais aos Alpes: Viena, Salzburgo, Hallstatt e Innsbruck",
+   "routeSummary": "Roteiro de trem de 8 dias de leste a oeste: os palácios e cafés de Viena, a Salzburgo de Mozart, Hallstatt à beira do lago e Innsbruck no coração dos Alpes tiroleses.",
+   "totalDays": 8,
+   "idealDurationText": "8 dias",
+   "bestSeason": "Maio a setembro (dezembro, pelos mercados de Natal)",
+   "transportMode": "Trens Railjet da ÖBB e Westbahn; trem + balsa ou ônibus até Hallstatt; bonde e metrô nas cidades",
+   "paceLevel": "Equilibrado",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Viena (palácios, museus e cafés)",
+     "recommendedDuration": "3 dias",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Palácio e jardins de Schönbrunn",
+      "Hofburg, Museu de Sissi e Catedral de Santo Estêvão",
+      "Palácio Belvedere (‘O beijo’, de Klimt)",
+      "Naschmarkt e MuseumsQuartier"
+     ],
+     "activities": [
+      "Tome uma Melange num café histórico, como o Café Central ou o Café Sperl.",
+      "Assista a uma ópera na Staatsoper com ingresso em pé por poucos euros.",
+      "Suba na histórica roda-gigante Riesenrad, no Prater."
+     ],
+     "foodAndDrinks": [
+      "Wiener Schnitzel (tradicionalmente de vitela; ‘vom Schwein’ é de porco)",
+      "Sachertorte (torta de chocolate com geleia de damasco)",
+      "Wiener Melange (café vienense com leite vaporizado)"
+     ],
+     "criticalTips": [
+      "Economize com o bilhete de 24/48/72 horas ou o Vienna City Card.",
+      "Se você não come porco, pergunte se o schnitzel é de vitela (Kalb) ou de porco (Schwein)."
+     ],
+     "mapsQuery": "Vienna, Austria"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Salzburgo (a cidade de Mozart)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Fortaleza de Hohensalzburg",
+      "Getreidegasse e casa onde Mozart nasceu",
+      "Palácio e jardins de Mirabell",
+      "Catedral de Salzburgo"
+     ],
+     "activities": [
+      "Suba de funicular até a fortaleza para ver o centro histórico e os Alpes.",
+      "Veja os jogos de água do palácio de Hellbrunn.",
+      "Passeie à beira do rio Salzach e suba o Kapuzinerberg."
+     ],
+     "foodAndDrinks": [
+      "Salzburger Nockerl (suflê doce assado)",
+      "Mozartkugel (bombom de marzipã e pistache)"
+     ],
+     "criticalTips": [
+      "Durante o festival (fim de julho – agosto), os hotéis ficam bem mais caros; reserve cedo.",
+      "O Salzburg Card inclui museus, funicular e ônibus."
+     ],
+     "mapsQuery": "Salzburg, Austria"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Hallstatt (lagos do Salzkammergut)",
+     "recommendedDuration": "1 dia (recomenda-se pernoitar)",
+     "durationBadge": "1 dia",
+     "highlights": [
+      "Vila de Hallstatt à beira do lago (UNESCO)",
+      "Mina de sal Salzwelten e mirante Skywalk",
+      "Caverna de gelo do Dachstein e plataforma ‘5 Fingers’"
+     ],
+     "activities": [
+      "Atravesse de balsa até a vila a partir da estação de Hallstatt.",
+      "Faça uma visita guiada à mina de sal mais antiga do mundo.",
+      "Fotografe a vista de cartão-postal cedo, antes das multidões."
+     ],
+     "foodAndDrinks": [
+      "Peixe do lago (Reinanke ou truta-alpina grelhados)",
+      "Apfelstrudel e Kaiserschmarrn (strudel de maçã e panqueca picada)"
+     ],
+     "criticalTips": [
+      "Hallstatt sofre com o turismo de massa: não entre em áreas particulares, não use drones e não faça barulho.",
+      "As cavernas do Dachstein fecham no inverno; confira a temporada."
+     ],
+     "mapsQuery": "Hallstatt, Austria"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Innsbruck (Alpes tiroleses)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Telhadinho de Ouro (Goldenes Dachl) e centro histórico",
+      "Teleférico Nordkette (da cidade a 2.300 m)",
+      "Trampolim de salto de esqui de Bergisel",
+      "Mundos de Cristal Swarovski (Wattens)"
+     ],
+     "activities": [
+      "Suba ao Hafelekar para ver o panorama dos Alpes.",
+      "Faça trilhas no verão ou esquie nas estações próximas no inverno.",
+      "Passeie no fim da tarde junto às casas coloridas à beira do rio Inn."
+     ],
+     "foodAndDrinks": [
+      "Tiroler Gröstl (batatas salteadas com carne e ovo)",
+      "Käsespätzle (massinha alpina com queijo e cebola frita)"
+     ],
+     "criticalTips": [
+      "O Innsbruck Card inclui teleféricos, museus e transporte.",
+      "O tempo na montanha muda rápido; leve casaco e capa de chuva mesmo no verão."
+     ],
+     "mapsQuery": "Innsbruck, Austria"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Wiener Schnitzel (tradicionalmente de vitela; ‘vom Schwein’ é de porco)",
+     "Tafelspitz (carne bovina cozida com molho de maçã e raiz-forte)",
+     "Käsespätzle (massinha alpina com queijo e cebola frita)"
+    ],
+    "drinks": [
+     "Wiener Melange (café vienense com leite vaporizado)",
+     "Grüner Veltliner (vinho branco)",
+     "Almdudler (refrigerante de ervas)"
+    ],
+    "streetFoods": [
+     "Salsichas do Würstelstand (por ex., Käsekrainer)",
+     "Sachertorte (torta de chocolate com geleia de damasco)",
+     "Apfelstrudel e Kaiserschmarrn (strudel de maçã e panqueca picada)"
+    ],
+    "diningAdvice": "O ‘Mittagsmenü’ (menu do almoço) é econômico. Carne de porco é comum; se você evita, fique atento a ‘Schwein’, ‘Speck’ ou ‘Schinken’ no cardápio."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Roupas em camadas e jaqueta impermeável (o tempo na montanha muda rápido)",
+     "Calçados de trilha",
+     "Tomadas tipo C/F (plugue europeu)",
+     "Roupa mais arrumada para ópera ou concertos"
+    ],
+    "safetyAndEtiquette": [
+     "Não ande pelas ciclovias; os ciclistas em Viena andam rápido.",
+     "Se for dirigir, a ‘Vignette’ digital (selo de pedágio) é obrigatória nas rodovias."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Tomadas europeias C/F (Schuko) de dois pinos redondos, iguais às da Turquia; não é preciso adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "A água da torneira vem de nascentes alpinas e está entre as mais limpas da Europa; em Viena dá para beber até nos bebedouros de rua.",
+    "vaccines": [
+     "Vacinas de rotina (tríplice viral, tétano)",
+     "Encefalite transmitida por carrapatos (se for fazer trilhas em áreas rurais)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "144"
+   },
+   "tipping": {
+    "custom": "Arredonda-se em 5–10 %; ao pagar, diga ao garçom o total que quer pagar (por ex., “20” para uma conta de 18,50 €).",
+    "standardPercent": 10,
+    "rule": "round_up",
+    "note": "A gorjeta não fica na mesa, é dada na hora de pagar; nos táxis também basta arredondar."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA de 20 % (~10–15 % líquido após as taxas)",
+    "minSpend": "75,01 € por nota",
+    "customsNote": "Residentes fora da UE recebem na loja um formulário Tax Free; valide os produtos sem uso na alfândega do aeroporto de Viena antes do check-in, ao sair da UE."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 0,50 - 2,00",
+    "topCarriers": [
+     "A1",
+     "Magenta Telekom",
+     "Drei (3)"
+    ],
+    "airportSimTrapWarning": "Os pontos de venda do aeroporto são caros; compre um chip pré-pago nas lojas da A1, Magenta ou Drei ou em supermercados, ou instale um eSIM antes. Os chips turcos não têm roaming da UE."
+   },
+   "touristScams": [
+    {
+     "title": "Vendedores “Mozart”",
+     "desc": "Vendedores fantasiados de “Mozart” perto da Catedral de Santo Estêvão vendem ingressos caros e de baixa qualidade.",
+     "tip": "Compre os ingressos diretamente no Musikverein, na Staatsoper ou em bilheterias oficiais."
+    },
+    {
+     "title": "Batedores de carteira no bonde",
+     "desc": "Furtos por distração em bondes e metrôs lotados.",
+     "tip": "Leve a bolsa fechada e na frente do corpo."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Евро (EUR)",

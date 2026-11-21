@@ -4,7 +4,7 @@
  */
 export type InfoBlock = { h?: string; p?: string; li?: string[] };
 export type InfoPage = { title: string; sub: string; blocks: InfoBlock[] };
-type L5<T> = { tr: T; en: T; de: T; es: T; ru: T };
+type L5<T> = { tr: T; en: T; de: T; es: T; pt: T; ru: T };
 
 const MAIL = 'info@vizamigo.com';
 
@@ -56,6 +56,18 @@ export const INFO_PAGES: Record<string, L5<InfoPage>> = {
         { h: 'Sitios asociados y cookies', p: 'Nuestros enlaces de vuelos, hoteles, tours, traslados, eSIM y seguros llevan a sitios asociados (marcados “Afiliado”). Al hacer clic, abrir un mapa o caja de precios, o cuando se carga el script de afiliación, esos sitios pueden usar sus propias cookies para saber que la reserva vino de nosotros. Rige su política de privacidad. Tu precio no cambia; podemos recibir una comisión.' },
         { h: 'Lo que nunca hacemos', p: 'No vendemos tus datos personales ni los compartimos con otras empresas para publicidad.' },
         { h: 'Contacto', p: `Para cualquier duda de privacidad o solicitud de borrado: ${MAIL}` }
+      ]
+    },
+    pt: {
+      title: 'Privacidade',
+      sub: 'Quais dados tratamos, onde e por quê',
+      blocks: [
+        { h: 'Dados que ficam no seu dispositivo', p: 'Seu idioma, tema, passaporte escolhido, roteiros salvos, contador Schengen e datas de viagem ficam salvos no armazenamento local do seu navegador. Eles não chegam até nós; se você apagar os dados do navegador ou redefini-los na página “Backup”, eles desaparecem.' },
+        { h: 'Se você criar uma conta', p: 'Seu e-mail e sua sessão são processados no Supabase, hospedado na União Europeia (Frankfurt). Para excluir sua conta, escreva para nós.' },
+        { h: 'Estatísticas de visitas', p: 'Contamos as visitas com o Vercel Web Analytics, que não usa cookies nem identifica você pessoalmente. Com a sua permissão, também usamos o Google Analytics 4 para medir de forma anônima quais páginas e links de parceiros são usados (personalização de anúncios e sinais do Google desativados). Na UE/Reino Unido, ele só funciona se você aceitar os cookies.' },
+        { h: 'Sites parceiros e cookies', p: 'Nossos links de voos, hotéis, passeios, traslados, eSIM e seguros levam a sites parceiros (marcados como “Afiliado”). Quando você clica, abre um mapa ou uma caixa de preços, ou quando o script de afiliação é carregado, esses sites podem usar seus próprios cookies para saber que a reserva veio de nós. Vale a política de privacidade deles. O seu preço não muda; nós podemos receber uma comissão.' },
+        { h: 'O que nunca fazemos', p: 'Não vendemos seus dados pessoais nem os compartilhamos com outras empresas para fins de publicidade.' },
+        { h: 'Contato', p: `Para qualquer dúvida sobre privacidade ou pedido de exclusão: ${MAIL}` }
       ]
     },
     ru: {
@@ -117,6 +129,17 @@ export const INFO_PAGES: Record<string, L5<InfoPage>> = {
         { p: `Envía tus solicitudes a ${MAIL}; respondemos en un plazo de 30 días.` }
       ]
     },
+    pt: {
+      title: 'Aviso RGPD e KVKK',
+      sub: 'De acordo com o Regulamento Geral de Proteção de Dados da UE e a Lei turca nº 6698',
+      blocks: [
+        { h: 'Controlador', p: `Vizamigo (vizamigo.com). Contato: ${MAIL}` },
+        { h: 'Dados e finalidade', li: ['Seu e-mail, se você criar uma conta: para que você possa entrar.', 'Contagem anônima de visitas: para melhorar o site.', 'Preferências no seu dispositivo (idioma, passaporte, roteiros): ficam no seu navegador e nunca chegam até nós.'] },
+        { h: 'Fornecedores', li: ['Supabase: contas e login (UE, Frankfurt).', 'Vercel: hospedagem e estatísticas anônimas.', 'Sites parceiros: só quando você clica ou abre uma caixa de preços, com as condições deles.'] },
+        { h: 'Seus direitos', li: ['Saber se seus dados são tratados e quais', 'Corrigir dados incorretos', 'Pedir a exclusão', 'Opor-se ao tratamento', 'Receber seus dados em formato portátil (página “Backup” para os dados do dispositivo)'] },
+        { p: `Envie suas solicitações para ${MAIL}; respondemos em até 30 dias.` }
+      ]
+    },
     ru: {
       title: 'Уведомление по GDPR и KVKK',
       sub: 'В соответствии с GDPR ЕС и законом Турции № 6698',
@@ -137,7 +160,7 @@ export const INFO_PAGES: Record<string, L5<InfoPage>> = {
       blocks: [
         { h: 'Kaynaklar', li: ['Ülkelerin dışişleri bakanlıkları, büyükelçilik ve konsoloslukları', 'Resmî e-vize ve göç idaresi siteleri', 'Türkiye Dışişleri, ABD Dışişleri, İngiltere FCDO, Kanada ve Almanya Dışişleri seyahat uyarıları'] },
         { h: 'Vize verisi nasıl oluşturuldu', li: ['Temel tablo: Passport Index (Mart 2026) verisi.', 'Bu tablo Wikipedia’daki ülke vize politikalarıyla karşılaştırıldı; iki kaynağın ayrıştığı 1.464 pasaport–ülke çifti ülkenin resmî politikasına göre düzeltildi (Kasım 2026).', 'En çok ziyaret edilen 30 ülke, en yaygın 20 pasaport için tek tek resmî kaynaktan kontrol edildi (Kasım 2026).', 'Her ülke sayfasında son kontrol tarihi ve kaynak yazar.'] },
-        { h: 'Metinleri nasıl yazıyoruz', p: 'Metinleri taslaklamak ve 5 dile çevirmek için yapay zekâ dahil yazılım araçları kullanıyoruz. Vize kuralları, ücretler ve süreler bu araçlarla üretilmez; yukarıdaki kaynaklardan alınır ve yayından önce kontrol edilir.' },
+        { h: 'Metinleri nasıl yazıyoruz', p: 'Metinleri taslaklamak ve 6 dile çevirmek için yapay zekâ dahil yazılım araçları kullanıyoruz. Vize kuralları, ücretler ve süreler bu araçlarla üretilmez; yukarıdaki kaynaklardan alınır ve yayından önce kontrol edilir.' },
         { h: 'Bağımsızlık', p: 'İş ortaklarımız (uçak, otel, tur, sigorta siteleri) vize bilgisini göremez ve değiştiremez. Ortaklık bağlantıları “Ortaklık” etiketiyle işaretlidir.' },
         { h: 'Düzeltmeler', p: `Hata gördüğünde her sayfadaki “Hata bildir” düğmesini kullan ya da ${MAIL} adresine yaz. Her bildirimi inceliyor, doğrulanınca sayfayı ve tarihini güncelliyoruz.` },
         { h: 'Yolculuktan önce', p: 'Kurallar haber vermeden değişebilir. Vizamigo resmî bir kurum değildir; yola çıkmadan önce ilgili ülkenin resmî kaynağına mutlaka bak.' }
@@ -149,7 +172,7 @@ export const INFO_PAGES: Record<string, L5<InfoPage>> = {
       blocks: [
         { h: 'Sources', li: ['Foreign ministries, embassies and consulates', 'Official eVisa and immigration websites', 'Travel advisories from Türkiye, the US State Department, the UK FCDO, Canada and the German Foreign Office'] },
         { h: 'How the visa data was built', li: ['Base table: Passport Index data (March 2026).', 'We compared it with each country’s visa policy on Wikipedia; the 1,464 passport–country pairs where the two disagreed were corrected against the country’s official policy (November 2026).', 'The 30 most visited countries were checked one by one against official sources for the 20 most common passports (November 2026).', 'Every country page shows the date of the last check and the source.'] },
-        { h: 'How we write', p: 'We use software tools, including AI, to draft texts and translate them into 5 languages. Visa rules, fees and durations are never generated by these tools; they come from the sources above and are checked before publishing.' },
+        { h: 'How we write', p: 'We use software tools, including AI, to draft texts and translate them into 6 languages. Visa rules, fees and durations are never generated by these tools; they come from the sources above and are checked before publishing.' },
         { h: 'Independence', p: 'Our partners (flight, hotel, tour and insurance sites) cannot see or change our visa information. Partner links are marked “Affiliate”.' },
         { h: 'Corrections', p: `If you spot a mistake, use the “Report an error” button on any page or email ${MAIL}. We review every report and update the page and its date once it is confirmed.` },
         { h: 'Before you travel', p: 'Rules can change without notice. Vizamigo is not a government site; always check the official source of your destination before you go.' }
@@ -161,7 +184,7 @@ export const INFO_PAGES: Record<string, L5<InfoPage>> = {
       blocks: [
         { h: 'Quellen', li: ['Außenministerien, Botschaften und Konsulate', 'Offizielle eVisa- und Einwanderungsportale', 'Reisehinweise der Türkei, des US-Außenministeriums, des britischen FCDO, Kanadas und des Auswärtigen Amts'] },
         { h: 'Wie die Visadaten entstanden sind', li: ['Basis: Daten des Passport Index (März 2026).', 'Abgleich mit den Visabestimmungen der Länder auf Wikipedia; die 1.464 Pass-Land-Paare mit abweichenden Angaben wurden nach der offiziellen Regelung des Landes korrigiert (November 2026).', 'Die 30 meistbesuchten Länder wurden für die 20 häufigsten Pässe einzeln anhand amtlicher Quellen geprüft (November 2026).', 'Jede Länderseite nennt Datum der letzten Prüfung und Quelle.'] },
-        { h: 'Wie wir schreiben', p: 'Für Entwürfe und die Übersetzung in 5 Sprachen nutzen wir Software, auch KI. Visaregeln, Gebühren und Fristen werden damit nie erzeugt; sie stammen aus den genannten Quellen und werden vor der Veröffentlichung geprüft.' },
+        { h: 'Wie wir schreiben', p: 'Für Entwürfe und die Übersetzung in 6 Sprachen nutzen wir Software, auch KI. Visaregeln, Gebühren und Fristen werden damit nie erzeugt; sie stammen aus den genannten Quellen und werden vor der Veröffentlichung geprüft.' },
         { h: 'Unabhängigkeit', p: 'Unsere Partner (Flug-, Hotel-, Tour- und Versicherungsseiten) können unsere Visaangaben weder sehen noch ändern. Partnerlinks sind mit „Partner“ gekennzeichnet.' },
         { h: 'Korrekturen', p: `Fehler kannst du über „Fehler melden“ auf jeder Seite oder per E-Mail an ${MAIL} mitteilen. Wir prüfen jede Meldung und aktualisieren Seite und Datum nach Bestätigung.` },
         { h: 'Vor der Reise', p: 'Regeln können sich ohne Ankündigung ändern. Vizamigo ist keine Behörde; prüfe vor der Abreise immer die offizielle Quelle des Ziellands.' }
@@ -173,10 +196,22 @@ export const INFO_PAGES: Record<string, L5<InfoPage>> = {
       blocks: [
         { h: 'Fuentes', li: ['Ministerios de Asuntos Exteriores, embajadas y consulados', 'Webs oficiales de visado electrónico e inmigración', 'Avisos de viaje de Turquía, el Departamento de Estado de EE. UU., el FCDO británico, Canadá y el Ministerio alemán'] },
         { h: 'Cómo se construyeron los datos de visado', li: ['Tabla base: datos de Passport Index (marzo de 2026).', 'Los comparamos con la política de visados de cada país en Wikipedia; los 1.464 pares pasaporte–país en los que no coincidían se corrigieron según la política oficial del país (noviembre de 2026).', 'Los 30 países más visitados se revisaron uno a uno en fuentes oficiales para los 20 pasaportes más comunes (noviembre de 2026).', 'Cada página de país muestra la fecha de la última revisión y la fuente.'] },
-        { h: 'Cómo escribimos', p: 'Usamos herramientas de software, incluida la IA, para redactar textos y traducirlos a 5 idiomas. Las reglas de visado, tasas y plazos nunca se generan con ellas: proceden de las fuentes indicadas y se revisan antes de publicar.' },
+        { h: 'Cómo escribimos', p: 'Usamos herramientas de software, incluida la IA, para redactar textos y traducirlos a 6 idiomas. Las reglas de visado, tasas y plazos nunca se generan con ellas: proceden de las fuentes indicadas y se revisan antes de publicar.' },
         { h: 'Independencia', p: 'Nuestros socios (webs de vuelos, hoteles, tours y seguros) no pueden ver ni cambiar la información de visados. Los enlaces de socios están marcados como “Afiliado”.' },
         { h: 'Correcciones', p: `Si ves un error, usa “Informar de un error” en cualquier página o escribe a ${MAIL}. Revisamos cada aviso y, una vez confirmado, actualizamos la página y su fecha.` },
         { h: 'Antes de viajar', p: 'Las reglas pueden cambiar sin aviso. Vizamigo no es un sitio oficial; consulta siempre la fuente oficial del destino antes de salir.' }
+      ]
+    },
+    pt: {
+      title: 'Como verificamos as informações',
+      sub: 'Informações com fonte e data para 199 países e todos os passaportes',
+      blocks: [
+        { h: 'Fontes', li: ['Ministérios das Relações Exteriores, embaixadas e consulados', 'Sites oficiais de visto eletrônico e de imigração', 'Alertas de viagem da Turquia, do Departamento de Estado dos EUA, do FCDO britânico, do Canadá e do Ministério alemão'] },
+        { h: 'Como os dados de visto foram montados', li: ['Tabela base: dados do Passport Index (março de 2026).', 'Comparamos esses dados com a política de vistos de cada país na Wikipédia; os 1.464 pares passaporte–país que não batiam foram corrigidos de acordo com a política oficial do país (novembro de 2026).', 'Os 30 países mais visitados foram revisados um a um em fontes oficiais para os 20 passaportes mais comuns (novembro de 2026).', 'Cada página de país mostra a data da última revisão e a fonte.'] },
+        { h: 'Como escrevemos', p: 'Usamos ferramentas de software, incluindo IA, para redigir os textos e traduzi-los para 6 idiomas. As regras de visto, taxas e prazos nunca são geradas por elas: vêm das fontes indicadas e são revisadas antes da publicação.' },
+        { h: 'Independência', p: 'Nossos parceiros (sites de voos, hotéis, passeios e seguros) não podem ver nem alterar as informações de vistos. Os links de parceiros são marcados como “Afiliado”.' },
+        { h: 'Correções', p: `Se você encontrar um erro, use “Informar um erro” em qualquer página ou escreva para ${MAIL}. Analisamos cada aviso e, depois de confirmado, atualizamos a página e a data.` },
+        { h: 'Antes de viajar', p: 'As regras podem mudar sem aviso. A Vizamigo não é um site oficial; sempre confira a fonte oficial do destino antes de sair.' }
       ]
     },
     ru: {
@@ -185,7 +220,7 @@ export const INFO_PAGES: Record<string, L5<InfoPage>> = {
       blocks: [
         { h: 'Источники', li: ['МИД, посольства и консульства', 'Официальные порталы электронных виз и миграционных служб', 'Рекомендации для путешественников Турции, Госдепартамента США, FCDO Великобритании, Канады и МИД Германии'] },
         { h: 'Как собраны визовые данные', li: ['Основа: данные Passport Index (март 2026).', 'Мы сравнили их с визовой политикой стран в Википедии; 1 464 пары «паспорт — страна», где источники расходились, исправлены по официальной политике страны (ноябрь 2026).', '30 самых посещаемых стран проверены по официальным источникам для 20 самых распространённых паспортов (ноябрь 2026).', 'На каждой странице страны указаны дата последней проверки и источник.'] },
-        { h: 'Как мы пишем', p: 'Для черновиков и перевода на 5 языков мы используем программные инструменты, в том числе ИИ. Визовые правила, сборы и сроки ими не создаются: они берутся из указанных источников и проверяются перед публикацией.' },
+        { h: 'Как мы пишем', p: 'Для черновиков и перевода на 6 языков мы используем программные инструменты, в том числе ИИ. Визовые правила, сборы и сроки ими не создаются: они берутся из указанных источников и проверяются перед публикацией.' },
         { h: 'Независимость', p: 'Партнёры (сайты авиабилетов, отелей, туров и страховок) не видят и не могут менять визовую информацию. Партнёрские ссылки отмечены меткой «Партнёр».' },
         { h: 'Исправления', p: `Если заметили ошибку, нажмите «Сообщить об ошибке» на любой странице или напишите на ${MAIL}. Мы проверяем каждое сообщение и после подтверждения обновляем страницу и дату.` },
         { h: 'Перед поездкой', p: 'Правила могут измениться без предупреждения. Vizamigo не является государственным сайтом; перед поездкой всегда сверяйтесь с официальным источником.' }
@@ -232,6 +267,16 @@ export const INFO_PAGES: Record<string, L5<InfoPage>> = {
         { h: 'Empieza por el motivo', p: 'La casilla marcada en el formulario estándar indica el problema: motivo del viaje no justificado, medios insuficientes, intención de regresar no acreditada, etc. Responde exactamente a ese punto con documentos.' },
         { h: 'Alemania es diferente', p: 'Desde el 1 de julio de 2025 Alemania ya no admite la reclamación escrita (remonstración) ante el consulado. Solo cabe demanda ante el Tribunal Administrativo de Berlín; el plazo figura en la denegación. Para la mayoría, una nueva solicitud mejor documentada es más rápida.' },
         { h: 'Recurrir o volver a solicitar', li: ['Recurre si la denegación se debe a un error claro, como un documento mal leído.', 'Si faltaban documentos o vínculos, completar y volver a solicitar suele ser más rápido.', 'Añade una carta breve que responda a cada motivo de denegación.'] }
+      ]
+    },
+    pt: {
+      title: 'Recurso contra a recusa de um visto Schengen',
+      sub: 'Como ler a carta de recusa: recorrer ou pedir de novo',
+      blocks: [
+        { h: 'Você tem direito', p: 'De acordo com o artigo 32 do Código de Vistos, quem tem o visto recusado pode recorrer conforme a lei do país que emitiu a decisão. Onde, como e em que prazo aparecem no formulário de recusa e variam de país para país.' },
+        { h: 'Comece pelo motivo', p: 'O quadrado marcado no formulário padrão indica o problema: motivo da viagem não justificado, recursos insuficientes, intenção de retorno não comprovada etc. Responda exatamente a esse ponto com documentos.' },
+        { h: 'A Alemanha é diferente', p: 'Desde 1º de julho de 2025, a Alemanha não aceita mais a reclamação por escrito (remonstração) no consulado. Só é possível entrar com uma ação no Tribunal Administrativo de Berlim; o prazo aparece na recusa. Para a maioria das pessoas, um novo pedido mais bem documentado é mais rápido.' },
+        { h: 'Recorrer ou pedir de novo', li: ['Recorra se a recusa se deve a um erro claro, como um documento mal interpretado.', 'Se faltavam documentos ou vínculos, completar e pedir de novo costuma ser mais rápido.', 'Inclua uma carta curta respondendo a cada motivo da recusa.'] }
       ]
     },
     ru: {
@@ -283,6 +328,15 @@ export const INFO_PAGES: Record<string, L5<InfoPage>> = {
         { p: 'La “Lista de preparación” de cada país lo muestra según tu pasaporte.' }
       ]
     },
+    pt: {
+      title: 'Controle de embarque no aeroporto',
+      sub: 'Como evitar ter o embarque negado',
+      blocks: [
+        { p: 'No check-in, a companhia aérea confere se você tem os documentos para entrar no destino. Se faltar algo, pode ser que não deixem você embarcar.' },
+        { h: 'Confira antes de sair', li: ['Validade do passaporte (muitos países exigem de 3 a 6 meses além da data de volta)', 'Visto, eVisa ou autorização de viagem (ESTA, ETA, eTA)', 'Passagem de volta ou de saída', 'Em alguns países, reserva de hospedagem e seguro saúde'] },
+        { p: 'A “Lista de preparação” de cada país mostra isso de acordo com o seu passaporte.' }
+      ]
+    },
     ru: {
       title: 'Проверка документов при посадке',
       sub: 'Как избежать отказа в посадке',
@@ -331,6 +385,15 @@ export const INFO_PAGES: Record<string, L5<InfoPage>> = {
         { h: 'Enlaces de seguros en este sitio', p: `Los enlaces de seguros llevan a sitios asociados y están marcados como “Afiliado”. Las aseguradoras pueden escribirnos a ${MAIL}.` }
       ]
     },
+    pt: {
+      title: 'Seguro saúde de viagem',
+      sub: 'Quando é obrigatório e o que conferir',
+      blocks: [
+        { h: 'Para o Schengen', p: 'O visto Schengen exige uma apólice de pelo menos 30.000 € que cubra emergências, internação e repatriação, válida em todo o Espaço Schengen.' },
+        { h: 'Outros países', p: 'Alguns países exigem seguro na entrada (por exemplo, Cuba); em outros é opcional, mas o atendimento médico pode ser muito caro.' },
+        { h: 'Links de seguros neste site', p: `Os links de seguros levam a sites parceiros e são marcados como “Afiliado”. Seguradoras podem escrever para ${MAIL}.` }
+      ]
+    },
     ru: {
       title: 'Медицинская страховка для поездок',
       sub: 'Когда она обязательна и что проверить',
@@ -373,6 +436,14 @@ export const INFO_PAGES: Record<string, L5<InfoPage>> = {
       blocks: [
         { p: 'Si una regla cambió o ves un error, avísanos; lo comprobamos en la fuente oficial y lo corregimos lo antes posible.' },
         { h: 'Cómo informar', li: ['Con el botón “Informar de un error” de cada país', `o por correo a ${MAIL} con tu pasaporte, la fecha y el paso fronterizo`] }
+      ]
+    },
+    pt: {
+      title: 'Informe uma mudança, colabore',
+      sub: 'Encontrou outra regra na fronteira?',
+      blocks: [
+        { p: 'Se uma regra mudou ou você viu um erro, avise a gente; conferimos na fonte oficial e corrigimos o quanto antes.' },
+        { h: 'Como informar', li: ['Pelo botão “Informar um erro” de cada país', `ou por e-mail para ${MAIL}, com seu passaporte, a data e o posto de fronteira`] }
       ]
     },
     ru: {
@@ -422,6 +493,15 @@ export const INFO_PAGES: Record<string, L5<InfoPage>> = {
         { h: 'Contacto', p: MAIL }
       ]
     },
+    pt: {
+      title: 'Agências e parcerias',
+      sub: 'Para agências de viagem, marcas e criadores',
+      blocks: [
+        { p: 'A Vizamigo é um site independente de informações de viagem. Avaliamos propostas de agências, marcas e criadores.' },
+        { p: 'Por enquanto, não oferecemos painel para agências nem serviço de dados.' },
+        { h: 'Contato', p: MAIL }
+      ]
+    },
     ru: {
       title: 'Агентствам и партнёрам',
       sub: 'Для турагентств, брендов и блогеров',
@@ -438,6 +518,7 @@ export const INFO_PAGES: Record<string, L5<InfoPage>> = {
     en: { title: 'Data and API', sub: 'Business use', blocks: [{ p: 'We do not currently offer a public API or data licence.' }, { p: `If you are interested, email ${MAIL} and we will let you know if that changes.` }] },
     de: { title: 'Daten und API', sub: 'Geschäftliche Nutzung', blocks: [{ p: 'Eine öffentliche API oder Datenlizenz bieten wir derzeit nicht an.' }, { p: `Bei Interesse schreib an ${MAIL}; wir melden uns, wenn sich das ändert.` }] },
     es: { title: 'Datos y API', sub: 'Uso empresarial', blocks: [{ p: 'Por ahora no ofrecemos una API pública ni licencias de datos.' }, { p: `Si te interesa, escribe a ${MAIL} y te avisaremos si cambia.` }] },
+    pt: { title: 'Dados e API', sub: 'Uso empresarial', blocks: [{ p: 'Por enquanto, não oferecemos API pública nem licenciamento de dados.' }, { p: `Se tiver interesse, escreva para ${MAIL} e avisaremos se isso mudar.` }] },
     ru: { title: 'Данные и API', sub: 'Для бизнеса', blocks: [{ p: 'Сейчас мы не предоставляем публичный API или лицензию на данные.' }, { p: `Если интересно, напишите на ${MAIL} — сообщим, когда это появится.` }] }
   },
 
@@ -446,6 +527,7 @@ export const INFO_PAGES: Record<string, L5<InfoPage>> = {
     en: { title: 'Careers', sub: 'Working with Vizamigo', blocks: [{ p: 'Vizamigo is a small, independent project. We have no open positions right now.' }, { p: `For volunteer help, translations or collaboration ideas, email ${MAIL}.` }] },
     de: { title: 'Karriere', sub: 'Mitarbeit bei Vizamigo', blocks: [{ p: 'Vizamigo ist ein kleines, unabhängiges Projekt. Derzeit gibt es keine offenen Stellen.' }, { p: `Für ehrenamtliche Hilfe, Übersetzungen oder Kooperationsideen schreib an ${MAIL}.` }] },
     es: { title: 'Empleo', sub: 'Trabajar con Vizamigo', blocks: [{ p: 'Vizamigo es un proyecto pequeño e independiente. Ahora mismo no hay vacantes.' }, { p: `Para ayuda voluntaria, traducciones o ideas de colaboración, escribe a ${MAIL}.` }] },
+    pt: { title: 'Vagas', sub: 'Trabalhe com a Vizamigo', blocks: [{ p: 'A Vizamigo é um projeto pequeno e independente. No momento, não há vagas abertas.' }, { p: `Para ajuda voluntária, traduções ou ideias de parceria, escreva para ${MAIL}.` }] },
     ru: { title: 'Вакансии', sub: 'Работа с Vizamigo', blocks: [{ p: 'Vizamigo — небольшой независимый проект. Открытых вакансий сейчас нет.' }, { p: `Для волонтёрской помощи, переводов или идей сотрудничества пишите на ${MAIL}.` }] }
   },
 
@@ -454,6 +536,7 @@ export const INFO_PAGES: Record<string, L5<InfoPage>> = {
     en: { title: 'Press and contact', sub: 'How to reach us', blocks: [{ h: 'Email', p: MAIL }, { h: 'Social media', p: 'Instagram @vizamigo · TikTok @vizamigo.com · X @Vizamigo · Facebook' }, { p: 'Press, interview and partnership requests go to the same address.' }] },
     de: { title: 'Presse und Kontakt', sub: 'So erreichst du uns', blocks: [{ h: 'E-Mail', p: MAIL }, { h: 'Social Media', p: 'Instagram @vizamigo · TikTok @vizamigo.com · X @Vizamigo · Facebook' }, { p: 'Presse-, Interview- und Kooperationsanfragen bitte an dieselbe Adresse.' }] },
     es: { title: 'Prensa y contacto', sub: 'Cómo contactarnos', blocks: [{ h: 'Correo', p: MAIL }, { h: 'Redes sociales', p: 'Instagram @vizamigo · TikTok @vizamigo.com · X @Vizamigo · Facebook' }, { p: 'Solicitudes de prensa, entrevistas y colaboraciones a la misma dirección.' }] },
+    pt: { title: 'Imprensa e contato', sub: 'Como falar com a gente', blocks: [{ h: 'E-mail', p: MAIL }, { h: 'Redes sociais', p: 'Instagram @vizamigo · TikTok @vizamigo.com · X @Vizamigo · Facebook' }, { p: 'Pedidos de imprensa, entrevistas e parcerias pelo mesmo endereço.' }] },
     ru: { title: 'Пресса и контакты', sub: 'Как с нами связаться', blocks: [{ h: 'Эл. почта', p: MAIL }, { h: 'Соцсети', p: 'Instagram @vizamigo · TikTok @vizamigo.com · X @Vizamigo · Facebook' }, { p: 'Запросы прессы, интервью и сотрудничества — на тот же адрес.' }] }
   },
 
@@ -478,6 +561,11 @@ export const INFO_PAGES: Record<string, L5<InfoPage>> = {
       { h: 'Enlaces de afiliado', p: 'Podemos recibir una comisión por reservas hechas desde enlaces marcados “Afiliado”. La venta, el pago y la cancelación siguen las condiciones del socio, que fija el precio.' },
       { h: 'Uso de nuestro contenido', p: 'Los textos, el diseño y los datos recopilados son de Vizamigo. Puedes citar con enlace a la fuente; no se permite la copia masiva ni la extracción automática. Las licencias de fotos están en la página “Créditos de imágenes”.' },
       { h: 'Cambios', p: `Podemos actualizar estas condiciones; la versión vigente está siempre aquí. Dudas: ${MAIL}` } ] },
+    pt: { title: 'Termos de uso', sub: 'As regras para usar a Vizamigo', blocks: [
+      { h: 'Natureza das informações', p: 'A Vizamigo não é um órgão oficial, embaixada nem centro de vistos; não emite vistos nem recebe pedidos. Prazos de permanência, taxas e requisitos são informações gerais para planejamento. A palavra final é sempre do agente de fronteira.' },
+      { h: 'Links de afiliado', p: 'Podemos receber uma comissão por reservas feitas a partir de links marcados como “Afiliado”. A venda, o pagamento e o cancelamento seguem as condições do parceiro, que define o preço.' },
+      { h: 'Uso do nosso conteúdo', p: 'Os textos, o design e os dados compilados são da Vizamigo. Você pode citar com link para a fonte; não são permitidas a cópia em massa nem a extração automatizada. As licenças das fotos estão na página “Créditos de imagens”.' },
+      { h: 'Alterações', p: `Podemos atualizar estes termos; a versão em vigor está sempre aqui. Dúvidas: ${MAIL}` } ] },
     ru: { title: 'Условия использования', sub: 'Правила пользования Vizamigo', blocks: [
       { h: 'Характер информации', p: 'Vizamigo — не госорган, не посольство и не визовый центр; мы не выдаём визы и не принимаем заявления. Сроки, сборы и требования на сайте — общая информация для планирования. Окончательное решение всегда за пограничником.' },
       { h: 'Партнёрские ссылки', p: 'За бронирования по ссылкам с меткой «Партнёр» мы можем получить комиссию. Продажа, оплата и отмена — по условиям партнёра, цену устанавливает он.' },
@@ -498,6 +586,9 @@ export const INFO_PAGES: Record<string, L5<InfoPage>> = {
     es: { title: 'Aviso legal', sub: 'Consulta siempre la fuente oficial antes de viajar', blocks: [
       { p: 'Recopilamos la información de fuentes oficiales y la mostramos con fecha y fuente, pero las reglas pueden cambiar sin aviso y puede haber errores.' },
       { p: 'Antes de viajar, confirma las reglas con la embajada, el consulado o la web oficial de inmigración del destino. Vizamigo no se hace responsable de daños causados por errores o retrasos en la información.' } ] },
+    pt: { title: 'Aviso legal', sub: 'Sempre confira a fonte oficial antes de viajar', blocks: [
+      { p: 'Reunimos as informações de fontes oficiais e as mostramos com data e fonte, mas as regras podem mudar sem aviso e pode haver erros.' },
+      { p: 'Antes de viajar, confirme as regras com a embaixada, o consulado ou o site oficial de imigração do destino. A Vizamigo não se responsabiliza por danos causados por erros ou atrasos nas informações.' } ] },
     ru: { title: 'Отказ от ответственности', sub: 'Перед поездкой всегда сверяйтесь с официальным источником', blocks: [
       { p: 'Мы собираем информацию из официальных источников и указываем дату и источник, но правила могут измениться без предупреждения, возможны ошибки.' },
       { p: 'Перед поездкой уточните правила в посольстве, консульстве или на официальном миграционном сайте страны. Vizamigo не несёт ответственности за ущерб из-за ошибок или устаревших данных.' } ] }
@@ -516,6 +607,9 @@ export const INFO_PAGES: Record<string, L5<InfoPage>> = {
     es: { title: 'Pérdida del pasaporte en el extranjero', sub: 'Qué hacer, paso a paso', blocks: [
       { li: ['Ve a la comisaría más cercana y pide una denuncia de pérdida o robo. El consulado la pedirá.', 'Contacta con la embajada o el consulado de tu país para un documento de viaje de emergencia o un pasaporte nuevo (lleva documento de identidad y fotos si las tienes).', 'Avisa a la aerolínea y al hotel; tu fecha de regreso puede cambiar.', 'Si tu visado estaba en el pasaporte, pregunta al consulado cómo seguir con el nuevo documento.'] },
       { p: 'Los datos consulares están en la sección “Emergencias” de cada país.' } ] },
+    pt: { title: 'Perda do passaporte no exterior', sub: 'O que fazer, passo a passo', blocks: [
+      { li: ['Vá à delegacia mais próxima e peça um boletim de ocorrência de perda ou roubo. O consulado vai pedir esse documento.', 'Entre em contato com a embaixada ou o consulado do seu país para obter um documento de viagem de emergência ou um passaporte novo (leve um documento de identidade e fotos, se tiver).', 'Avise a companhia aérea e o hotel; sua data de volta pode mudar.', 'Se o seu visto estava no passaporte, pergunte ao consulado como proceder com o novo documento.'] },
+      { p: 'Os dados consulares estão na seção “Emergências” de cada país.' } ] },
     ru: { title: 'Потеря паспорта за границей', sub: 'Что делать по шагам', blocks: [
       { li: ['Обратитесь в ближайший полицейский участок и получите справку об утере или краже. Консульство её запросит.', 'Свяжитесь с посольством или консульством своей страны, чтобы получить свидетельство на возвращение или новый паспорт (возьмите удостоверение личности и фото, если есть).', 'Сообщите авиакомпании и отелю: дата возвращения может измениться.', 'Если виза была в паспорте, уточните в консульстве, как действовать с новым документом.'] },
       { p: 'Контакты консульств — в разделе «Экстренная помощь» на странице каждой страны.' } ] }
@@ -534,6 +628,9 @@ export const INFO_PAGES: Record<string, L5<InfoPage>> = {
     es: { title: 'Emergencias en el extranjero', sub: 'Accidentes, desastres, detención o evacuación', blocks: [
       { p: 'Primero llama al número de emergencias local (indicado en cada país). Después avisa a la embajada o el consulado de tu país.' },
       { h: 'Para ciudadanos españoles', p: 'El Ministerio de Asuntos Exteriores recomienda inscribirse en el Registro de Viajeros; las embajadas tienen teléfonos de emergencia consular.' } ] },
+    pt: { title: 'Emergências no exterior', sub: 'Acidentes, desastres, detenção ou evacuação', blocks: [
+      { p: 'Primeiro, ligue para o número de emergência local (indicado em cada país). Depois, avise a embaixada ou o consulado do seu país.' },
+      { h: 'Para cidadãos espanhóis', p: 'O Ministério das Relações Exteriores recomenda a inscrição no Registro de Viajantes; as embaixadas têm telefones de emergência consular.' } ] },
     ru: { title: 'Экстренные ситуации за границей', sub: 'Авария, стихийное бедствие, задержание или эвакуация', blocks: [
       { p: 'Сначала звоните по местному экстренному номеру (указан на странице страны). Затем сообщите в посольство или консульство своей страны.' },
       { h: 'Для граждан России', p: 'У посольств и консульств есть дежурные телефоны для экстренных случаев; их можно найти на сайте МИД России.' } ] }
@@ -556,6 +653,10 @@ export const INFO_PAGES: Record<string, L5<InfoPage>> = {
       { p: 'En una escala, si te quedas en la zona de tránsito sin pasar el control de pasaportes, la mayoría de países no exigen visado.' },
       { h: 'Atención', li: ['Algunos países piden visado de tránsito aeroportuario (ATV) a ciertos pasaportes; los países Schengen aplican una lista común.', 'Si debes recoger y volver a facturar el equipaje o cambiar de terminal, pasas el control y se aplican las reglas de entrada.', 'En EE. UU. y Canadá los pasajeros en tránsito también deben cumplir las reglas de entrada (ESTA, eTA o visado).'] },
       { p: 'Consulta la regla para tu pasaporte en la página del país de tu escala.' } ] },
+    pt: { title: 'Escalas no aeroporto', sub: 'Quando você precisa de visto de trânsito', blocks: [
+      { p: 'Em uma escala, se você ficar na área de trânsito sem passar pelo controle de passaportes, a maioria dos países não exige visto.' },
+      { h: 'Atenção', li: ['Alguns países exigem visto de trânsito aeroportuário (ATV) para certos passaportes; os países do Schengen aplicam uma lista comum.', 'Se você precisar retirar e despachar de novo a bagagem ou trocar de terminal, vai passar pelo controle e valem as regras de entrada.', 'Nos EUA e no Canadá, passageiros em trânsito também precisam cumprir as regras de entrada (ESTA, eTA ou visto).'] },
+      { p: 'Confira a regra para o seu passaporte na página do país da sua escala.' } ] },
     ru: { title: 'Транзит через аэропорт', sub: 'Когда нужна транзитная виза', blocks: [
       { p: 'При пересадке без прохождения паспортного контроля в большинстве стран виза не нужна.' },
       { h: 'Обратите внимание', li: ['Некоторые страны требуют аэропортовую транзитную визу (ATV) для отдельных паспортов; у стран Шенгена общий список.', 'Если нужно получить и заново сдать багаж или сменить терминал, вы проходите паспортный контроль и действуют правила въезда.', 'В США и Канаде транзитные пассажиры тоже должны соблюдать правила въезда (ESTA, eTA или виза).'] },
@@ -571,6 +672,8 @@ export const INFO_PAGES: Record<string, L5<InfoPage>> = {
       { li: ['Auf kurzen Strecken möglichst Bahn und Bus nehmen.', 'In lokalen Lokalen essen und lokale Guides buchen, damit das Geld vor Ort bleibt.', 'Nachfüllbare Flasche und Stoffbeutel mitnehmen; unsere Packliste schlägt sie vor.', 'Lokale Regeln und Kleiderordnungen an religiösen Orten respektieren.'] } ] },
     es: { title: 'Viajar de forma responsable', sub: 'Dejar una buena huella', blocks: [
       { li: ['En trayectos cortos, elige tren o autobús cuando puedas.', 'Come en sitios locales y contrata guías locales para que el dinero se quede en la zona.', 'Lleva botella reutilizable y bolsa de tela; nuestra lista de equipaje ya los sugiere.', 'Respeta las normas locales y el código de vestimenta en lugares religiosos.'] } ] },
+    pt: { title: 'Viajar de forma responsável', sub: 'Deixar uma boa marca', blocks: [
+      { li: ['Em trajetos curtos, escolha trem ou ônibus sempre que puder.', 'Coma em lugares locais e contrate guias locais para que o dinheiro fique na região.', 'Leve uma garrafa reutilizável e uma sacola de pano; nossa lista de bagagem já sugere esses itens.', 'Respeite as normas locais e o código de vestimenta em locais religiosos.'] } ] },
     ru: { title: 'Ответственные путешествия', sub: 'Оставить хороший след', blocks: [
       { li: ['На короткие расстояния по возможности выбирайте поезд и автобус.', 'Ешьте в местных заведениях и нанимайте местных гидов — деньги останутся в регионе.', 'Берите многоразовую бутылку и тканевую сумку; наш список вещей их уже предлагает.', 'Соблюдайте местные правила и дресс-код в религиозных местах.'] } ] }
   },
@@ -607,6 +710,14 @@ export const INFO_PAGES: Record<string, L5<InfoPage>> = {
       { h: 'Cómo ganamos dinero', p: 'El sitio es gratuito. Podemos recibir una comisión cuando reservas vuelos, hoteles, tours, seguros o eSIM con nuestros enlaces, marcados como “Afiliado”. Las comisiones nunca influyen en la información de visados y los socios no pueden cambiarla.' },
       { h: 'No somos un sitio oficial', p: 'Vizamigo no es un sitio gubernamental ni tramita visados. Confirma siempre la regla con la fuente oficial del destino antes de viajar.' },
       { h: 'Contacto', p: 'Preguntas, sugerencias y correcciones: info@vizamigo.com' }
+    ] },
+    pt: { title: 'Sobre a Vizamigo', sub: 'Regras de visto claras para todo mundo', blocks: [
+      { p: 'A Vizamigo é um site independente de informações de viagem fundado em Esmirna (Turquia) em 2026. Queremos mostrar as regras de visto e de entrada de 199 países para todos os passaportes, de forma clara, com fonte e data, em um só lugar: em turco, inglês, alemão, espanhol e russo.' },
+      { h: 'O que fazemos', li: ['Tipo de visto, permanência permitida e como solicitar para cada par passaporte–país', 'Alertas oficiais de viagem, calculadora Schengen 90/180 e planejador de roteiros', 'Guias de país: melhor época, segurança, pagamentos, transporte e festivais'] },
+      { h: 'Como verificamos', p: 'Nossas fontes, como os dados foram montados e como corrigimos erros estão explicados na página “Como verificamos as informações”. Cada página de país mostra a data da última revisão e a fonte.' },
+      { h: 'Como ganhamos dinheiro', p: 'O site é gratuito. Podemos receber uma comissão quando você reserva voos, hotéis, passeios, seguros ou eSIM pelos nossos links, marcados como “Afiliado”. As comissões nunca influenciam as informações de vistos, e os parceiros não podem alterá-las.' },
+      { h: 'Não somos um site oficial', p: 'A Vizamigo não é um site do governo nem processa vistos. Sempre confirme a regra com a fonte oficial do destino antes de viajar.' },
+      { h: 'Contato', p: 'Perguntas, sugestões e correções: info@vizamigo.com' }
     ] },
     ru: { title: 'О Vizamigo', sub: 'Понятные визовые правила для всех', blocks: [
       { p: 'Vizamigo — независимый сайт о путешествиях, основанный в Измире (Турция) в 2026 году. Наша цель — понятно, с источниками и датами показать правила въезда в 199 стран для любого паспорта в одном месте — на турецком, английском, немецком, испанском и русском.' },

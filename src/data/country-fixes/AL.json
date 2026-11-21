@@ -579,6 +579,151 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Lek albanês (ALL)",
+   "bestMonths": "Maio a junho e setembro (mar morno na Riviera e menos gente); julho e agosto são muito quentes e lotados; de junho a setembro para os Alpes Albaneses (Theth–Valbona)",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Em geral, é seguro para turistas; incidentes violentos raramente envolvem visitantes. Os principais riscos são o trânsito caótico, as estradas de montanha em mau estado e pequenos furtos em praias lotadas.",
+    "commonScams": [
+     "Corridas de táxi superfaturadas, principalmente no aeroporto de Tirana",
+     "Preços altos de espreguiçadeiras nas praias de Ksamil e Sarandë",
+     "Câmbio ruim ao pagar em euro e tarifas altas nos caixas eletrônicos"
+    ],
+    "safeTravelTips": [
+     "Evite dirigir em estradas entre cidades à noite; pode haver pedestres e animais na pista.",
+     "Pague em lek sempre que puder; o euro costuma ser aceito, mas com câmbio desfavorável.",
+     "No caixa eletrônico, escolha “recusar conversão” e evite as máquinas que cobram tarifas altas."
+    ]
+   },
+   "internet": {
+    "networkCoverage": "95%+ (4G amplo; áreas sem sinal nas montanhas)",
+    "costPerGbUsd": "~0,30 - 1,00 $ (pacotes turísticos muito baratos)",
+    "esimAvailability": "Boa (os eSIMs internacionais funcionam)",
+    "bestCarriers": [
+     "One Albania",
+     "Vodafone Albania"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Médio (ônibus e vans do tipo furgon; quase não há trens de passageiros)",
+    "costLevel": "Muito barato",
+    "singleTicketUsd": "~0,45 - 0,60 $ (ônibus urbano de Tirana); ônibus Tirana–Berat ~5 - 7 $",
+    "dailyPassUsd": "Passes diários não são comuns",
+    "popularRideApps": [
+     "Speed Taxi",
+     "MerrTaxi",
+     "Táxis locais (telefone / WhatsApp)"
+    ],
+    "taxiAdvice": "Não há Uber. Combine o preço antes de entrar; entre o aeroporto de Tirana e o centro há tarifa fixa. Os furgons são baratos, mas não têm horário fixo; para a Riviera e os Alpes, vale a pena alugar um carro."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 30 - 45",
+    "dailyBudgetMidrangeUsd": "US$ 65 - 110",
+    "budgetMealUsd": "6 - 12 $ (byrek, qofte ou comida caseira)",
+    "coffeeUsd": "US$ 1 - 2",
+    "waterBottleUsd": "US$ 0,40 - 0,70",
+    "hostelDormUsd": "US$ 12 - 25",
+    "hotel3StarUsd": "45 - 90 $ (mais caro na Riviera em pleno verão)",
+    "flightCostIndex": "Baixo (voo direto de ~1h30)",
+    "flightTip": "Turkish Airlines e Pegasus têm voos diretos de Istambul para Tirana. O ônibus de Tirana para Sarandë leva cerca de 5 horas."
+   }
+  },
+  "enc": {
+   "language": {
+    "phrases": [
+     {
+      "phrase": "Mirëdita",
+      "meaning": "Bom dia / Olá",
+      "translation": "Bom dia / Olá",
+      "pronunciation": "MI-re-DI-ta"
+     },
+     {
+      "phrase": "Faleminderit",
+      "meaning": "Obrigado(a)",
+      "translation": "Obrigado(a)",
+      "pronunciation": "fa-le-min-DE-rit"
+     },
+     {
+      "phrase": "Ju lutem",
+      "meaning": "Por favor",
+      "translation": "Por favor",
+      "pronunciation": "yu LU-tem"
+     },
+     {
+      "phrase": "Sa kushton?",
+      "meaning": "Quanto custa?",
+      "translation": "Quanto custa?",
+      "pronunciation": "sa kush-TON"
+     },
+     {
+      "phrase": "Llogarinë, ju lutem",
+      "meaning": "A conta, por favor",
+      "translation": "A conta, por favor",
+      "pronunciation": "lo-ga-RI-ne, yu LU-tem"
+     }
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Tomadas europeias C/F (Schuko) de dois pinos redondos, iguais às da Turquia; não é preciso adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Não é recomendável beber água da torneira; por causa das interrupções no abastecimento e dos encanamentos antigos, beba água mineral, como faz a maioria das pessoas em Tirana.",
+    "vaccines": [
+     "Vacinas de rotina (tríplice viral, tétano)",
+     "Hepatite A"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "127"
+   },
+   "tipping": {
+    "custom": "Nos restaurantes, é comum deixar uma gorjeta de cerca de 10 %.",
+    "standardPercent": 10,
+    "rule": "round_up",
+    "note": "Em cafés e táxis, basta arredondar o valor."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Praticamente não existe (IVA de 20 %)",
+    "minSpend": "—",
+    "customsNote": "A Albânia não tem um sistema de devolução de IVA para turistas em funcionamento; os preços já incluem o IVA."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 0,30 - 1",
+    "topCarriers": [
+     "One Albania",
+     "Vodafone Albania"
+    ],
+    "airportSimTrapWarning": "Os quiosques da One e da Vodafone no aeroporto de Tirana vendem pacotes turísticos a bom preço; na cidade sai um pouco mais barato. O país fica fora do roaming da UE."
+   },
+   "touristScams": [
+    {
+     "title": "Táxis sem taxímetro",
+     "desc": "Taxistas do aeroporto de Tirana e das rodoviárias que não ligam o taxímetro e cobram a mais.",
+     "tip": "Informe-se sobre a tarifa fixa aeroporto–centro e combine o preço antes de entrar."
+    },
+    {
+     "title": "Espreguiçadeiras em Ksamil",
+     "desc": "Em praias anunciadas como “gratuitas” em Ksamil e Sarandë, cobram caro pela espreguiçadeira assim que você se senta.",
+     "tip": "Pergunte o preço da espreguiçadeira e do guarda-sol antes de se sentar."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Албанский лек (ALL)",

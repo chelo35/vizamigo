@@ -1419,6 +1419,361 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Dinar bareinita (BHD)",
+   "plugType": "Tipo G (230V, 50Hz)",
+   "bestMonths": "Novembro a março (ameno e seco) · de junho a setembro é muito quente e úmido; o Grande Prêmio de Fórmula 1 do Barein costuma acontecer na primavera",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "A criminalidade é baixa, e incidentes violentos contra turistas são raros. Em alguns vilarejos pode haver manifestações pontuais; mantenha distância. Acompanhe os alertas oficiais atuais por causa das tensões regionais.",
+    "commonScams": [
+     "Táxis sem taxímetro que cobram tarifas altas de estrangeiros",
+     "SMS falsos de encomendas ou entregas pedindo dados do cartão",
+     "Cobranças extras não informadas em casas noturnas"
+    ],
+    "safeTravelTips": [
+     "Fique longe de manifestações e concentrações políticas.",
+     "No verão, fique em locais fechados ao meio-dia e beba bastante água.",
+     "Vista-se com discrição em público; no Ramadã, não coma nem beba em público durante o dia."
+    ],
+    "emergencyNumbers": {
+     "police": "999",
+     "ambulance": "999",
+     "general": "999"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99 % da população (4G / 5G)",
+    "costPerGbUsd": "US$ 1,50 - 4",
+    "esimAvailability": "Muito boa (Batelco, Zain e stc oferecem eSIM)",
+    "bestCarriers": [
+     "Batelco",
+     "Zain Bahrain",
+     "stc Bahrain"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Média (a rede da Bahrain Bus é regular, mas limitada; táxis e Careem são comuns)",
+    "costLevel": "Médio",
+    "singleTicketUsd": "US$ 0,80 - 1",
+    "dailyPassUsd": "Passe diário de ônibus ~US$ 2 - 3",
+    "popularRideApps": [
+     "Careem"
+    ],
+    "taxiAdvice": "O Careem é confiável e tem preço fixo; nos táxis de rua, peça para ligar o taxímetro. A ilha é pequena: de carro alugado, tudo fica a 30-40 minutos."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 50 - 80",
+    "dailyBudgetMidrangeUsd": "US$ 120 - 200",
+    "budgetMealUsd": "US$ 5 - 12",
+    "coffeeUsd": "US$ 3 - 5",
+    "waterBottleUsd": "US$ 0,30 - 0,80",
+    "hostelDormUsd": "US$ 25 - 40",
+    "hotel3StarUsd": "US$ 70 - 130",
+    "flightCostIndex": "Médio (Istambul – Barein direto com Turkish Airlines e Gulf Air, ~4 horas)",
+    "flightTip": "Turkish Airlines e Gulf Air voam direto Istambul – Barein; na semana da F1, os preços de voos e hotéis disparam."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Os cumprimentos são longos e calorosos; perguntar como a outra pessoa está é importante.",
+     "Espere que a outra pessoa estenda a mão antes de cumprimentar alguém do sexo oposto.",
+     "Aceite o café (gahwa) oferecido; balance a xícara quando não quiser mais.",
+     "Cubra ombros e joelhos em público; em locais sagrados, as mulheres cobrem o cabelo."
+    ],
+    "festivals": [
+     "Grande Prêmio de Fórmula 1 do Barein (primavera)",
+     "Dia Nacional (16–17 de dezembro)",
+     "Festival Primavera da Cultura (fevereiro – abril)"
+    ],
+    "lifestyle": "O Barein é um dos países mais descontraídos do Golfo; o fim de semana é sexta e sábado, e a ilha se enche de visitantes que chegam da Arábia Saudita pela Ponte Rei Fahd. A cultura de cafés, shoppings e beach clubs é muito difundida."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Forte do Barein – Qal’at al-Bahrain (UNESCO)",
+     "Rota das Pérolas, Muharraq (UNESCO)",
+     "Túmulos funerários de Dilmun (UNESCO)",
+     "Grande Mesquita Al Fateh",
+     "Museu Nacional do Barein",
+     "Bab Al Bahrain e souq de Manama"
+    ],
+    "bestSeasons": "Novembro a março (ameno e seco) · de junho a setembro é muito quente e úmido; o Grande Prêmio de Fórmula 1 do Barein costuma acontecer na primavera",
+    "travelStyleTip": "Pense no Barein como uma parada de 2-3 dias; viaje no inverno e conheça os sítios da época de Dilmun em um único dia."
+   },
+   "religion": {
+    "primaryReligions": "Islã (~70 %; xiitas e sunitas), cristianismo (~14 %), hinduísmo (~10 %) e outros",
+    "respectNorms": "A Grande Mesquita Al Fateh é aberta a visitantes e empresta abayas às mulheres; não há visitas durante as orações.",
+    "sacredSites": [
+     "Grande Mesquita Al Fateh (Manama)",
+     "Igreja do Sagrado Coração (Manama, 1939)",
+     "Catedral de Nossa Senhora da Arábia (Awali)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "O árabe é a língua oficial; o inglês é muito difundido, e também se falam persa, urdu e idiomas da Índia.",
+    "englishProficiency": "Muito bom; o inglês é usado nos negócios, no turismo e nas placas.",
+    "phrases": [
+     {
+      "phrase": "أهلاً وسهلاً (ahlan wa sahlan)",
+      "meaning": "Bem-vindo",
+      "translation": "Bem-vindo",
+      "pronunciation": "ah-lan-wa-sah-lan"
+     },
+     {
+      "phrase": "شخبارك؟ (shakhbārak?)",
+      "meaning": "Quais as novidades? / Como vai? (dialeto do Golfo)",
+      "translation": "Quais as novidades? / Como vai? (dialeto do Golfo)",
+      "pronunciation": "shah-ba-rak"
+     },
+     {
+      "phrase": "مشكور (mashkūr)",
+      "meaning": "Obrigado",
+      "translation": "Obrigado",
+      "pronunciation": "mash-kur"
+     },
+     {
+      "phrase": "بكم؟ (bikam?)",
+      "meaning": "Quanto?",
+      "translation": "Quanto?",
+      "pronunciation": "bi-kam"
+     },
+     {
+      "phrase": "يعطيك العافية (yaʿṭīk al-ʿāfya)",
+      "meaning": "Que Deus te dê forças (obrigado pelo esforço)",
+      "translation": "Que Deus te dê forças (obrigado pelo esforço)",
+      "pronunciation": "ya-tik el-af-ya"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "O Barein foi o centro da antiga civilização de Dilmun, que fazia comércio entre a Mesopotâmia e o Indo; os gregos a chamavam de Tylos. Ficou sob domínio português de 1521 a 1602; a família Al Khalifa governa desde 1783. Em 1932 foi encontrado aqui o primeiro petróleo da margem árabe do Golfo, e a independência veio em 1971.",
+    "milestones": [
+     "c. 2000 a.C.: apogeu da civilização de Dilmun",
+     "1783: começa o governo da família Al Khalifa",
+     "1932: descoberta de petróleo",
+     "1971: independência"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Machboos (arroz temperado com carne ou peixe; prato nacional)",
+     "Muhammar (arroz doce com melaço de tâmara, servido com peixe)",
+     "Harees (mingau de trigo com carne)"
+    ],
+    "traditionalDrinks": [
+     "Gahwa (café árabe com cardamomo)",
+     "Chá karak",
+     "Laban (leitelho)"
+    ],
+    "streetFoodAndDesserts": [
+     "Halwa bareinita (estilo Showaiter)",
+     "Luqaimat (bolinhos de massa na calda)",
+     "Sambusa"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Ebrahim Al-Arrayedh (poeta)",
+     "Rashid Al Oraifi (pintor conhecido por obras sobre Dilmun)",
+     "Ali Bahar (cantor do grupo Al-Ekhwa)"
+    ],
+    "strongSectors": [
+     "Petróleo e alumínio (Alba, uma das maiores fundições do mundo)",
+     "Bancos e finanças islâmicas",
+     "Turismo e eventos (Fórmula 1)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Cartões e pagamento por aproximação funcionam em quase todo lugar; leve um pouco de dinheiro em dinares para os souqs e restaurantes pequenos.",
+    "tippingCulture": "A gorjeta não é obrigatória; hotéis e restaurantes costumam cobrar taxa de serviço; se não cobrarem, 10 % é bem-vindo.",
+    "economicPillars": "Petróleo e gás, alumínio, finanças e bancos, turismo, logística."
+   }
+  },
+  "itin": {
+   "routeName": "Parada no Barein: Muharraq, Manama e o legado de Dilmun",
+   "routeSummary": "Roteiro de 3 dias que vai da Rota das Pérolas de Muharraq, Patrimônio da UNESCO, ao souq e aos museus de Manama e, depois, ao Forte do Barein, aos túmulos de Dilmun e à Árvore da Vida, no deserto.",
+   "totalDays": 3,
+   "idealDurationText": "Roteiro de 3 dias",
+   "bestSeason": "Novembro a março (ameno e seco) · de junho a setembro é muito quente e úmido; o Grande Prêmio de Fórmula 1 do Barein costuma acontecer na primavera",
+   "transportMode": "Careem/táxi ou carro alugado (ilha pequena, distâncias curtas)",
+   "paceLevel": "Tranquilo (parada curta)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Muharraq (Rota das Pérolas)",
+     "recommendedDuration": "1 dia",
+     "durationBadge": "1 dia",
+     "highlights": [
+      "Rota das Pérolas (UNESCO; casas da época do comércio de pérolas)",
+      "Casa do xeque Isa bin Ali",
+      "Souq de Muharraq",
+      "Casa Bin Matar"
+     ],
+     "activities": [
+      "Percorra as casas de mercadores restauradas da Rota das Pérolas.",
+      "Prove a halwa bareinita no souq de Muharraq.",
+      "À tarde, tome chá karak em cafés instalados em casas antigas."
+     ],
+     "foodAndDrinks": [
+      "Muhammar com peixe",
+      "Halwa bareinita"
+     ],
+     "criticalTips": [
+      "Os pontos da Rota das Pérolas abrem em horários diferentes; confira a programação antes.",
+      "No verão, visite logo cedo ou no fim da tarde."
+     ],
+     "mapsQuery": "Pearling Path, Muharraq, Bahrain"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Manama",
+     "recommendedDuration": "1 dia",
+     "durationBadge": "1 dia",
+     "highlights": [
+      "Bab Al Bahrain e souq de Manama",
+      "Museu Nacional do Barein",
+      "Grande Mesquita Al Fateh",
+      "Skyline com o Bahrain World Trade Center"
+     ],
+     "activities": [
+      "Conheça a arquitetura em uma visita guiada à Grande Mesquita Al Fateh.",
+      "Admire os tesouros de Dilmun no Museu Nacional.",
+      "À tarde, percorra as lojas de especiarias e de ouro do souq de Bab Al Bahrain."
+     ],
+     "foodAndDrinks": [
+      "Machboos",
+      "Sambusa e suco natural"
+     ],
+     "criticalTips": [
+      "Respeite o código de vestimenta da mesquita e evite os horários de oração.",
+      "Pechinchar é normal no souq."
+     ],
+     "mapsQuery": "Bab Al Bahrain, Manama, Bahrain"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Forte do Barein e o sul",
+     "recommendedDuration": "1 dia",
+     "durationBadge": "1 dia",
+     "highlights": [
+      "Qal’at al-Bahrain (UNESCO) e seu museu",
+      "Túmulos funerários de Dilmun em A’ali (UNESCO)",
+      "Árvore da Vida (árvore de 400 anos no deserto)",
+      "Circuito Internacional do Barein (Sakhir)"
+     ],
+     "activities": [
+      "Caminhe ao redor do Forte do Barein ao entardecer.",
+      "Admire os túmulos milenares de A’ali.",
+      "Faça uma visita ou uma experiência de pilotagem no circuito de F1 de Sakhir."
+     ],
+     "foodAndDrinks": [
+      "Café e tâmaras no café do forte",
+      "Luqaimat"
+     ],
+     "criticalTips": [
+      "Leve água para a Árvore da Vida; há pouca estrutura por perto.",
+      "Fora da semana da F1, reserve as visitas ao circuito com antecedência."
+     ],
+     "mapsQuery": "Qal'at al-Bahrain, Bahrain"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Machboos (arroz temperado com carne ou peixe; prato nacional)",
+     "Muhammar (arroz doce com melaço de tâmara, servido com peixe)",
+     "Harees (mingau de trigo com carne)"
+    ],
+    "drinks": [
+     "Gahwa (café árabe com cardamomo)",
+     "Chá karak",
+     "Laban (leitelho)"
+    ],
+    "streetFoods": [
+     "Halwa bareinita (estilo Showaiter)",
+     "Luqaimat (bolinhos de massa na calda)",
+     "Sambusa"
+    ],
+    "diningAdvice": "No Barein há bebidas alcoólicas em hotéis e estabelecimentos licenciados; nos restaurantes tradicionais, o machboos é servido em grandes travessas para compartilhar."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptador tipo G",
+     "Protetor solar, chapéu e água",
+     "Roupas que cubram ombros e joelhos",
+     "Lenço para mulheres que forem visitar mesquitas"
+    ],
+    "safetyAndEtiquette": [
+     "Fique longe de manifestações.",
+     "Vista-se com discrição em público.",
+     "Não fotografe prédios oficiais nem de segurança."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Usam-se tomadas britânicas tipo G (três pinos retangulares); plugues Schuko precisam de adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "A água da torneira é dessalinizada; prefere-se a mineral por causa do sabor e das caixas-d’água.",
+    "vaccines": [
+     "Vacinas de rotina (tétano-difteria, sarampo)",
+     "Hepatite A (recomendada)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "999"
+   },
+   "tipping": {
+    "custom": "Não é obrigatória.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Se não houver taxa de serviço, 10 % nos restaurantes é bem-vindo; nos táxis, basta arredondar."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA de 10 % (restituição a turistas pouco difundida)",
+    "minSpend": "Pergunte na loja",
+    "customsNote": "Tolerância zero com drogas; leve receita para alguns medicamentos. Ao comprar pérolas e ouro, peça certificado e nota fiscal."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 1,50 - 4,00",
+    "topCarriers": [
+     "Batelco",
+     "Zain Bahrain",
+     "stc Bahrain"
+    ],
+    "airportSimTrapWarning": "Nos quiosques da Batelco, Zain e stc do aeroporto você compra um chip turístico com o passaporte; também é fácil ativar um eSIM."
+   },
+   "touristScams": [
+    {
+     "title": "Táxi sem taxímetro",
+     "desc": "Alguns táxis cobram preços altos de estrangeiros sem ligar o taxímetro.",
+     "tip": "Use o Careem ou peça para ligar o taxímetro."
+    },
+    {
+     "title": "SMS falso de entrega",
+     "desc": "Mensagens que se passam por transportadoras ou pela alfândega pedem dados do cartão.",
+     "tip": "Não clique nos links."
+    },
+    {
+     "title": "Extras na noite",
+     "desc": "Taxas de mesa ou de serviço não informadas são incluídas na conta.",
+     "tip": "Pergunte os preços antes e confira a conta."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Бахрейнский динар (BHD)",

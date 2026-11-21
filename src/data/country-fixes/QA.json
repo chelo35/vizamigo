@@ -1527,6 +1527,388 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Rial catariano (QAR)",
+   "plugType": "Tipo G (240V, 50Hz)",
+   "bestMonths": "Novembro a março (ameno e seco, 20–28 °C) · de junho a setembro faz um calor extremo e úmido, acima de 45 °C",
+   "safety": {
+    "safetyScore": 85,
+    "safetyLevel": "Excepcionalmente seguro",
+    "badgeColor": "bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-900/60",
+    "crimeRateSummary": "Um dos índices de criminalidade mais baixos do mundo; crimes de rua são raríssimos. Os principais riscos são o calor extremo e o trânsito. As leis são rígidas: drogas e embriaguez em público são punidas com severidade.",
+    "commonScams": [
+     "Lembranças a preços inflacionados no Souq Waqif para turistas que não pechincham",
+     "Ofertas de \"limusines\" sem licença na saída do aeroporto e dos hotéis",
+     "SMS ou WhatsApp de phishing que se passam por bancos, transportadoras ou multas de trânsito"
+    ],
+    "safeTravelTips": [
+     "No verão, evite ficar muito tempo ao ar livre entre 11h e 16h e beba bastante água.",
+     "Em público, cubra ombros e joelhos; em museus e shoppings, isso é esperado.",
+     "Não fotografe pessoas, principalmente mulheres, sem permissão, nem prédios do governo ou militares."
+    ],
+    "emergencyNumbers": {
+     "police": "999",
+     "ambulance": "999",
+     "general": "999"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Mais de 95% (4G / 5G)",
+    "costPerGbUsd": "US$ 1,00 - 3,00",
+    "esimAvailability": "Excelente",
+    "bestCarriers": [
+     "Ooredoo Qatar",
+     "Vodafone Qatar"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Excelente (moderno Metrô de Doha, VLT de Lusail e ônibus metrolink)",
+    "costLevel": "Moderado",
+    "singleTicketUsd": "US$ 0,55 - 2,75",
+    "dailyPassUsd": "US$ 1,65 - 8,25",
+    "popularRideApps": [
+     "Uber",
+     "Careem",
+     "Karwa Taxi"
+    ],
+    "taxiAdvice": "Uber, Careem e os táxis oficiais Karwa são confiáveis. A linha vermelha do metrô liga o aeroporto ao centro; atenção aos vagões Gold (primeira classe) e aos vagões para famílias."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 60 - 90",
+    "dailyBudgetMidrangeUsd": "US$ 150 - 250",
+    "budgetMealUsd": "US$ 4 - 10",
+    "coffeeUsd": "US$ 0,30 - 6",
+    "waterBottleUsd": "US$ 0,30 - 0,80",
+    "hostelDormUsd": "US$ 25 - 45",
+    "hotel3StarUsd": "US$ 70 - 130",
+    "flightCostIndex": "Moderado (direto Istambul – Doha, cerca de 4 horas)",
+    "flightTip": "Há voos diretos diários entre Istambul e Doha; em viagens longas com escala em Doha, os pacotes de stopover permitem passar alguns dias na cidade."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Os homens devem esperar que as mulheres catarianas estendam a mão.",
+     "Vista-se com discrição em público; roupa de banho e shorts, só nas praias e piscinas de hotel.",
+     "Aceite o gahwa com a mão direita e balance levemente a xícara quando não quiser mais.",
+     "No Ramadã, é proibido comer, beber e fumar em público durante o dia."
+    ],
+    "festivals": [
+     "Dia Nacional do Catar (18 de dezembro; desfile e fogos de artifício na Corniche)",
+     "Garangao (festa infantil na 14ª noite do Ramadã)",
+     "Dia Nacional do Esporte (segunda terça-feira de fevereiro; eventos esportivos em todo o país)"
+    ],
+    "lifestyle": "A vida ganha ritmo no fim da tarde e à noite: passeios pela Corniche, chá karak no Souq Waqif e shoppings climatizados. A maior parte da população é estrangeira."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Museu de Arte Islâmica (MIA) e MIA Park",
+     "Souq Waqif e Mercado de Falcões",
+     "Museu Nacional do Catar (arquitetura inspirada na rosa do deserto)",
+     "The Pearl e Vila Cultural Katara",
+     "Dunas de Khor Al Udeid (Mar Interior)",
+     "Sítio arqueológico de Al Zubarah (UNESCO)"
+    ],
+    "bestSeasons": "Novembro a março (ameno e seco, 20–28 °C) · de junho a setembro faz um calor extremo e úmido, acima de 45 °C",
+    "travelStyleTip": "Em Doha, o metrô e os apps de transporte bastam; para o deserto e o norte, faça um passeio de 4x4 ou alugue um carro. Para a maioria das pessoas, 3–5 dias são suficientes."
+   },
+   "religion": {
+    "primaryReligions": "Islã (~67 %), cristianismo (~14 %), hinduísmo (~14 %), budismo (~3 %) — números que refletem a grande população de expatriados",
+    "respectNorms": "As mulheres devem cobrir o cabelo nas mesquitas. Bebidas alcoólicas só são servidas em bares e restaurantes de hotel com licença; embriaguez em público é crime.",
+    "sacredSites": [
+     "Mesquita Imam Muhammad ibn Abd al-Wahhab (Mesquita do Estado)",
+     "Mesquita de Katara (de azulejos coloridos)",
+     "Centro Cultural Islâmico Abdullah bin Zaid Al Mahmoud (minarete em espiral)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "O árabe é a língua oficial; o inglês é muito usado nos negócios e no dia a dia, e hindi/urdu e malaiala também são comuns.",
+    "englishProficiency": "Excelente; quase todos os funcionários do setor de serviços falam inglês.",
+    "phrases": [
+     {
+      "phrase": "السلام عليكم (as-salāmu ʿalaykum)",
+      "meaning": "A paz esteja com você (Olá)",
+      "translation": "A paz esteja com você",
+      "pronunciation": "as-sa-laa-mu a-lay-kum"
+     },
+     {
+      "phrase": "حياك الله (ḥayyāk allāh)",
+      "meaning": "Bem-vindo(a)",
+      "translation": "Que Deus o proteja / Bem-vindo(a)",
+      "pronunciation": "hay-yaak al-laah"
+     },
+     {
+      "phrase": "شكراً (shukran)",
+      "meaning": "Obrigado(a)",
+      "translation": "Obrigado(a)",
+      "pronunciation": "shuk-ran"
+     },
+     {
+      "phrase": "بكم هذا؟ (bikam hādha?)",
+      "meaning": "Quanto custa isto?",
+      "translation": "Quanto?",
+      "pronunciation": "bi-kam haa-dha"
+     },
+     {
+      "phrase": "يعطيك العافية (yaʿṭīk al-ʿāfya)",
+      "meaning": "Bom trabalho / Obrigado pelo esforço",
+      "translation": "Que Deus lhe dê saúde",
+      "pronunciation": "ya-tiik al-aaf-ya"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Governada pela família Al Thani desde o século XIX, a península era uma sociedade costeira de pescadores de pérolas; foi protetorado britânico a partir de 1916 e tornou-se independente em 1971. O petróleo e a enorme jazida de gás North Field a transformaram em um dos países mais ricos do mundo, e em 2022 ela sediou a Copa do Mundo da FIFA.",
+    "milestones": [
+     "1878: Liderança do xeique Jassim bin Mohammed Al Thani (origem do Dia Nacional)",
+     "1940: Descoberta de petróleo em Dukhan",
+     "1971: Independência",
+     "2022: Copa do Mundo da FIFA"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Machboos (arroz temperado com frango ou cordeiro)",
+     "Harees (mingau de trigo e carne cozido lentamente, clássico do Ramadã)",
+     "Thareed (ensopado de carne e legumes sobre pão fino)"
+    ],
+    "traditionalDrinks": [
+     "Chá karak (chá com leite e especiarias)",
+     "Gahwa (café árabe com cardamomo, servido com tâmaras)",
+     "Laban (bebida de iogurte)"
+    ],
+    "streetFoodAndDesserts": [
+     "Luqaimat (bolinhos fritos com calda de tâmara)",
+     "Balaleet (aletria doce com omelete, para o café da manhã)",
+     "Shawarma enrolado"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Xeique Jassim bin Mohammed Al Thani (fundador do Catar moderno)",
+     "Mutaz Essa Barshim (campeão olímpico de salto em altura)",
+     "Akram Afif (jogador campeão da Copa da Ásia)"
+    ],
+    "strongSectors": [
+     "Exportação de GNL (entre os maiores exportadores do mundo)",
+     "Aviação (Qatar Airways, aeroporto Hamad)",
+     "Investimentos do fundo soberano (QIA)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Cartões e pagamento por aproximação funcionam em quase todo lugar; leve um pouco de dinheiro vivo em riais para as lojinhas do Souq Waqif.",
+    "tippingCulture": "Nos restaurantes, o normal é cerca de 10 % (alguns já incluem o serviço); no táxi, basta arredondar.",
+    "economicPillars": "Gás natural e petróleo, petroquímica, finanças, aviação e turismo."
+   }
+  },
+  "itin": {
+   "routeName": "Catar de sul a norte: Mar Interior, Doha, Lusail e Al Zubarah",
+   "routeSummary": "Um roteiro compacto de 5 dias: safári no deserto saindo de Doha até as dunas do Mar Interior, museus e mercados da capital, a moderna Lusail e o patrimônio da UNESCO de Al Zubarah, no norte.",
+   "totalDays": 5,
+   "idealDurationText": "Roteiro de 5 dias",
+   "bestSeason": "Novembro a março (ameno e seco, 20–28 °C) · de junho a setembro faz um calor extremo e úmido, acima de 45 °C",
+   "transportMode": "Metrô e Uber/Careem em Doha; passeio de 4x4 ou carro alugado para o deserto e o norte",
+   "paceLevel": "Tranquilo (cidade, museus e deserto)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Khor Al Udeid (Mar Interior)",
+     "recommendedDuration": "1 dia (passeio ao deserto saindo de Doha)",
+     "durationBadge": "1 dia",
+     "highlights": [
+      "Mar Interior, onde as dunas encontram o mar",
+      "Dunas de Sealine",
+      "Pôr do sol no deserto"
+     ],
+     "activities": [
+      "Faça \"dune bashing\" de 4x4.",
+      "Experimente o sandboard e um passeio de camelo.",
+      "Jante em um acampamento no estilo beduíno."
+     ],
+     "foodAndDrinks": [
+      "Machboos",
+      "Gahwa e tâmaras",
+      "Luqaimat"
+     ],
+     "criticalTips": [
+      "Vá só com agências licenciadas; nunca entre na areia fofa com um carro alugado.",
+      "No verão, saia no fim da tarde, não ao meio-dia."
+     ],
+     "mapsQuery": "Khor Al Adaid, Qatar"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Centro de Doha",
+     "recommendedDuration": "2 dias (museus e mercados)",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Museu de Arte Islâmica e MIA Park",
+      "Souq Waqif e Mercado de Falcões",
+      "Museu Nacional do Catar",
+      "A Corniche"
+     ],
+     "activities": [
+      "Caminhe pela Corniche no fim da tarde.",
+      "Faça um passeio de dhow tradicional pela baía.",
+      "Percorra os mercados de especiarias e de falcões do Souq Waqif."
+     ],
+     "foodAndDrinks": [
+      "Machboos",
+      "Chá karak",
+      "Luqaimat"
+     ],
+     "criticalTips": [
+      "Nos museus é preciso estar com ombros e joelhos cobertos.",
+      "Pergunte os preços e pechinche no souq; algumas lojas têm preço fixo."
+     ],
+     "mapsQuery": "Souq Waqif, Doha, Qatar"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Lusail e The Pearl",
+     "recommendedDuration": "1 dia (a Doha moderna)",
+     "durationBadge": "1 dia",
+     "highlights": [
+      "The Pearl e o colorido Qanat Quartier",
+      "Vila Cultural Katara",
+      "Lusail Boulevard e Estádio de Lusail"
+     ],
+     "activities": [
+      "Passeie pelos canais do Qanat Quartier.",
+      "Visite o anfiteatro e a praia de Katara.",
+      "Jante na Lusail Marina."
+     ],
+     "foodAndDrinks": [
+      "Frutos do mar grelhados",
+      "Kunafa",
+      "Sucos de fruta natural"
+     ],
+     "criticalTips": [
+      "A linha vermelha do metrô e o VLT de Lusail facilitam o acesso.",
+      "Confira antes as regras de vestimenta e de acesso à praia de Katara."
+     ],
+     "mapsQuery": "Lusail, Qatar"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Al Zubarah e o norte",
+     "recommendedDuration": "1 dia (bate-volta)",
+     "durationBadge": "1 dia",
+     "highlights": [
+      "Forte de Al Zubarah",
+      "Cidade arqueológica de Zubarah (UNESCO)",
+      "Manguezais de Al Thakhira"
+     ],
+     "activities": [
+      "Visite o pequeno museu do forte.",
+      "Explore os manguezais de caiaque.",
+      "Faça uma parada no porto pesqueiro de Al Khor."
+     ],
+     "foodAndDrinks": [
+      "Peixe grelhado em Al Khor",
+      "Chá karak",
+      "Tâmaras"
+     ],
+     "criticalTips": [
+      "Não há transporte público; alugue um carro ou entre em um passeio organizado.",
+      "Leve bastante água e chapéu."
+     ],
+     "mapsQuery": "Al Zubarah Fort, Qatar"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Machboos (arroz temperado com frango ou cordeiro)",
+     "Harees (mingau de trigo e carne cozido lentamente, clássico do Ramadã)",
+     "Thareed (ensopado de carne e legumes sobre pão fino)"
+    ],
+    "drinks": [
+     "Chá karak (chá com leite e especiarias)",
+     "Gahwa (café árabe com cardamomo, servido com tâmaras)",
+     "Laban (bebida de iogurte)"
+    ],
+    "streetFoods": [
+     "Luqaimat (bolinhos fritos com calda de tâmara)",
+     "Balaleet (aletria doce com omelete, para o café da manhã)",
+     "Shawarma enrolado"
+    ],
+    "diningAdvice": "O Souq Waqif e os restaurantes indianos e paquistaneses têm preços acessíveis; bebida alcoólica só em hotéis com licença. Para um café da manhã local, prove balaleet e karak."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptador de tomada tipo G",
+     "Óculos de sol, chapéu e protetor solar de fator alto",
+     "Casaquinho leve para lugares com ar-condicionado",
+     "Roupas leves que cubram ombros e joelhos"
+    ],
+    "safetyAndEtiquette": [
+     "Beijar em público, xingar e fazer gestos obscenos pode ser punido.",
+     "Não coma nem beba em público durante o dia no Ramadã."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G",
+     "D"
+    ],
+    "voltage": "240V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Tomadas britânicas tipo G (três pinos retangulares); os plugues turcos não encaixam, então leve um adaptador tipo G. Em prédios antigos também pode haver tomadas tipo D."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "A água da torneira, dessalinizada, atende às normas e é potável, embora a maioria dos moradores prefira água engarrafada.",
+    "vaccines": [
+     "Vacinas de rotina (tríplice viral, tétano)",
+     "Hepatite A"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "999"
+   },
+   "tipping": {
+    "custom": "Nos restaurantes, o normal é 10 % (alguns já incluem o serviço); no táxi, basta arredondar.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Se o serviço já estiver incluído, não precisa dar mais; 5–10 QAR bastam para os funcionários do hotel e os manobristas."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Não há",
+    "minSpend": "Não há",
+    "customsNote": "O Catar não tem IVA, então não há devolução de impostos para turistas. É proibido entrar com bebidas alcoólicas e produtos de porco; no aeroporto Hamad há lojas duty-free."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 1,00 - 3,00",
+    "topCarriers": [
+     "Ooredoo Qatar",
+     "Vodafone Qatar"
+    ],
+    "airportSimTrapWarning": "Os balcões da Ooredoo e da Vodafone no aeroporto Hamad vendem pacotes oficiais “Visitor” a bom preço, mas um eSIM instalado antes pode sair mais barato. Para o chip, é preciso passaporte."
+   },
+   "touristScams": [
+    {
+     "title": "Preços do Souq Waqif",
+     "desc": "Lembranças são vendidas a preços inflacionados para turistas que não pechincham.",
+     "tip": "Compare várias lojas e pechinche começando pela metade do primeiro preço."
+    },
+    {
+     "title": "“Limusines” sem licença",
+     "desc": "Carros sem licença oferecem tarifas fixas altas na saída do aeroporto e dos hotéis.",
+     "tip": "Use táxis Mowasalat (Karwa), Uber ou Careem; o metrô de Doha chega ao aeroporto."
+    },
+    {
+     "title": "Mensagens de phishing",
+     "desc": "SMS ou WhatsApp falsos em nome de bancos, transportadoras ou multas de trânsito.",
+     "tip": "Não clique em links; consulte as multas só no app oficial Metrash."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Катарский риал (QAR)",

@@ -181,7 +181,7 @@ export interface VerifiedCountryRecord {
     en: string;
     de: string;
     ru: string;
-    es: string;
+    es: string; pt: string;
   };
   capital: VerifiedSourcedField<string>;
   currency: VerifiedSourcedField<string>;
@@ -212,7 +212,7 @@ export interface VerifiedCountryRecord {
       en: string;
       de: string;
       ru: string;
-      es: string;
+      es: string; pt: string;
     };
     regional_warnings: Array<{
       area: string;
@@ -245,7 +245,7 @@ export interface VerifiedCountryRecord {
       en: string;
       de: string;
       ru: string;
-      es: string;
+      es: string; pt: string;
     };
     type: string;
     sources: VerifiedSource[];
@@ -264,7 +264,7 @@ export interface VerifiedCountryRecord {
         en: string;
         de: string;
         ru: string;
-        es: string;
+        es: string; pt: string;
       };
       recognizability_checked: boolean;
     }>;
@@ -275,21 +275,21 @@ export interface VerifiedCountryRecord {
       en: string;
       de: string;
       ru: string;
-      es: string;
+      es: string; pt: string;
     };
     title: {
       tr: string;
       en: string;
       de: string;
       ru: string;
-      es: string;
+      es: string; pt: string;
     };
     meta_description: {
       tr: string;
       en: string;
       de: string;
       ru: string;
-      es: string;
+      es: string; pt: string;
     };
     faq: any[];
   };

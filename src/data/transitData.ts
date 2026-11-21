@@ -746,12 +746,13 @@ function getLocalizedTransitRuleTitle(countryCode: string, countryName: string, 
   if (lang === 'tr') return fallbackTr;
   const isDe = lang === 'de';
   const isEs = lang === 'es';
+  const isPt = lang === 'pt';
   const isRu = lang === 'ru';
   switch (countryCode) {
     case 'QA':
       return isEs
         ? `Catar Hamad (DOH) Programa de Tránsito y Escala de 24h`
-        : isRu
+        : isPt ? `Catar, Hamad (DOH): programa de trânsito e escala de 24h` : isRu
         ? `Катар Хамад (DOH) 24-часовая транзитная программа и стоповер`
         : isDe
         ? `Katar Hamad (DOH) 24h Transit- & Stopover-Programm`
@@ -759,7 +760,7 @@ function getLocalizedTransitRuleTitle(countryCode: string, countryName: string, 
     case 'SA':
       return isEs
         ? `Arabia Saudí Visado de Escala / Tránsito Gratuito (96 Horas)`
-        : isRu
+        : isPt ? `Arábia Saudita: visto gratuito de escala / trânsito (96 horas)` : isRu
         ? `Саудовская Аравия Бесплатная транзитная виза (96 часов)`
         : isDe
         ? `Saudi-Arabien Kostenloses Stopover- & Transitvisum (96 Std.)`
@@ -767,7 +768,7 @@ function getLocalizedTransitRuleTitle(countryCode: string, countryName: string, 
     case 'SG':
       return isEs
         ? `Singapur Changi (SIN) Tránsito y Salida a la Ciudad sin Visado`
-        : isRu
+        : isPt ? `Cingapura, Changi (SIN): trânsito e saída para a cidade sem visto` : isRu
         ? `Сингапур Чанги (SIN) Транзит и безвизовый выход в город`
         : isDe
         ? `Singapur Changi (SIN) Transit & Visumfreier Stadtbesuch`
@@ -775,7 +776,7 @@ function getLocalizedTransitRuleTitle(countryCode: string, countryName: string, 
     case 'CN':
       return isEs
         ? `China Tránsito de 24h y Escala sin Visado de 72/144 Horas (TWOV)`
-        : isRu
+        : isPt ? `China: trânsito de 24h e escala sem visto de 72/144 horas (TWOV)` : isRu
         ? `Китай 24-часовой транзит и 72/144-часовой безвизовый стоповер (TWOV)`
         : isDe
         ? `China 24h Transit & 144h Visumfreier Stadtbesuch (TWOV)`
@@ -783,7 +784,7 @@ function getLocalizedTransitRuleTitle(countryCode: string, countryName: string, 
     case 'JP':
       return isEs
         ? `Japón Área de Tránsito Aeroportuario y Permiso Shore Pass`
-        : isRu
+        : isPt ? `Japão: área de trânsito aeroportuário e permissão Shore Pass` : isRu
         ? `Япония Транзитная зона аэропорта и разрешение Shore Pass`
         : isDe
         ? `Japan Flughafen-Transitzone & Shore Pass-Genehmigung`
@@ -791,7 +792,7 @@ function getLocalizedTransitRuleTitle(countryCode: string, countryName: string, 
     case 'AE':
       return isEs
         ? `EAU Dubái y Abu Dabi (DXB/AUH) Tránsito y Visado de 48-96h`
-        : isRu
+        : isPt ? `EAU, Dubai e Abu Dhabi (DXB/AUH): trânsito e visto de 48-96h` : isRu
         ? `ОАЭ Дубай и Абу-Даби (DXB/AUH) Транзит и виза на 48-96 часов`
         : isDe
         ? `VAE Dubai & Abu Dhabi (DXB/AUH) Transit & 48-96h Visum`
@@ -799,7 +800,7 @@ function getLocalizedTransitRuleTitle(countryCode: string, countryName: string, 
     case 'GB':
       return isEs
         ? `Reino Unido Londres Heathrow (LHR) - Obligatoriedad de Visado DATV`
-        : isRu
+        : isPt ? `Reino Unido, Londres Heathrow (LHR) - obrigatoriedade do visto DATV` : isRu
         ? `Великобритания Лондон Хитроу (LHR) - Обязательная транзитная виза DATV`
         : isDe
         ? `Großbritannien London Heathrow (LHR) - DATV Transitvisum-Pflicht`
@@ -807,7 +808,7 @@ function getLocalizedTransitRuleTitle(countryCode: string, countryName: string, 
     case 'US':
       return isEs
         ? `Estados Unidos (EE. UU.) - Visado de Tránsito C-1 Obligatorio`
-        : isRu
+        : isPt ? `Estados Unidos (EUA) - visto de trânsito C-1 obrigatório` : isRu
         ? `США - Обязательная транзитная виза C-1`
         : isDe
         ? `Vereinigte Staaten (USA) - C-1 Transitvisum erforderlich`
@@ -815,7 +816,7 @@ function getLocalizedTransitRuleTitle(countryCode: string, countryName: string, 
     case 'CA':
       return isEs
         ? `Canadá (YVR/YYZ/YUL) - Visado de Tránsito y Normativa TWOV`
-        : isRu
+        : isPt ? `Canadá (YVR/YYZ/YUL) - visto de trânsito e regras TWOV` : isRu
         ? `Канада (YVR/YYZ/YUL) - Транзитная виза и правила TWOV`
         : isDe
         ? `Kanada (YVR/YYZ/YUL) - Transitvisum & TWOV-Bestimmungen`
@@ -823,7 +824,7 @@ function getLocalizedTransitRuleTitle(countryCode: string, countryName: string, 
     case 'DE':
       return isEs
         ? `Alemania Fráncfort y Múnich (FRA/MUC) - Normativa de Visado de Tránsito`
-        : isRu
+        : isPt ? `Alemanha, Frankfurt e Munique (FRA/MUC) - regras de visto de trânsito` : isRu
         ? `Германия Франкфурт и Мюнхен (FRA/MUC) - Правила транзитной визы (ATV)`
         : isDe
         ? `Deutschland Frankfurt & München (FRA/MUC) - Transitvisum-Regeln`
@@ -831,7 +832,7 @@ function getLocalizedTransitRuleTitle(countryCode: string, countryName: string, 
     case 'FR':
       return isEs
         ? `Francia París CDG - Visado de Tránsito Aeroportuario (ATV)`
-        : isRu
+        : isPt ? `França, Paris CDG - visto de trânsito aeroportuário (ATV)` : isRu
         ? `Франция Париж CDG - Аэропортовая транзитная виза (ATV)`
         : isDe
         ? `Frankreich Paris CDG - Flughafen-Transitvisum (ATV)`
@@ -839,7 +840,7 @@ function getLocalizedTransitRuleTitle(countryCode: string, countryName: string, 
     case 'NL':
       return isEs
         ? `Países Bajos Ámsterdam Schiphol (AMS) - Política de Visado ATV`
-        : isRu
+        : isPt ? `Países Baixos, Amsterdã Schiphol (AMS) - política de visto ATV` : isRu
         ? `Нидерланды Амстердам Схипхол (AMS) - Правила транзитной визы ATV`
         : isDe
         ? `Niederlande Amsterdam Schiphol (AMS) - ATV Transitvisum-Regeln`
@@ -847,7 +848,7 @@ function getLocalizedTransitRuleTitle(countryCode: string, countryName: string, 
     case 'CH':
       return isEs
         ? `Suiza Zúrich y Ginebra (ZRH/GVA) - Visado de Tránsito Aeroportuario`
-        : isRu
+        : isPt ? `Suíça, Zurique e Genebra (ZRH/GVA) - visto de trânsito aeroportuário` : isRu
         ? `Швейцария Цюрих и Женева (ZRH/GVA) - Аэропортовая транзитная виза`
         : isDe
         ? `Schweiz Zürich & Genf (ZRH/GVA) - Flughafen-Transitvisum`
@@ -855,7 +856,7 @@ function getLocalizedTransitRuleTitle(countryCode: string, countryName: string, 
     case 'AZ':
       return isEs
         ? `Azerbaiyán Bakú (GYD) - Tránsito Abierto con DNI`
-        : isRu
+        : isPt ? `Azerbaijão, Baku (GYD) - trânsito livre com documento de identidade` : isRu
         ? `Азербайджан Баку (GYD) - Свободный транзит по удостоверению личности`
         : isDe
         ? `Aserbaidschan Baku (GYD) - Freier Transit mit Personalausweis`
@@ -863,7 +864,7 @@ function getLocalizedTransitRuleTitle(countryCode: string, countryName: string, 
     case 'GE':
       return isEs
         ? `Georgia Tiflis y Batumi - Tránsito Abierto con DNI Biométrico`
-        : isRu
+        : isPt ? `Geórgia, Tbilisi e Batumi - trânsito livre com documento de identidade biométrico` : isRu
         ? `Грузия Тбилиси и Батуми - Свободный транзит по биометрическому ID`
         : isDe
         ? `Georgien Tiflis & Batumi - Freier Transit mit Personalausweis`
@@ -871,7 +872,7 @@ function getLocalizedTransitRuleTitle(countryCode: string, countryName: string, 
     case 'ME':
       return isEs
         ? `Montenegro Podgorica y Tivat - Conexión Directa y Tránsito`
-        : isRu
+        : isPt ? `Montenegro, Podgorica e Tivat - conexão direta e trânsito` : isRu
         ? `Черногория Подгорица и Тиват - Прямой трансфер и транзит`
         : isDe
         ? `Montenegro Podgorica & Tivat - Direkter Transfer & Transit`
@@ -879,7 +880,7 @@ function getLocalizedTransitRuleTitle(countryCode: string, countryName: string, 
     case 'RS':
       return isEs
         ? `Serbia Belgrado Nikola Tesla (BEG) - Tránsito Abierto y Conexión`
-        : isRu
+        : isPt ? `Sérvia, Belgrado Nikola Tesla (BEG) - trânsito livre e conexão` : isRu
         ? `Сербия Белград Никола Тесла (BEG) - Свободный транзит и пересадка`
         : isDe
         ? `Serbien Belgrad Nikola Tesla (BEG) - Freier Transit`
@@ -887,7 +888,7 @@ function getLocalizedTransitRuleTitle(countryCode: string, countryName: string, 
     default:
       return isEs
         ? `Normas Internacionales de Tránsito Aeroportuario - ${countryName}`
-        : isRu
+        : isPt ? `Regras internacionais de trânsito aeroportuário - ${countryName}` : isRu
         ? `Международные правила аэропортового транзита - ${countryName}`
         : isDe
         ? `Internationale Flughafen-Transitregeln - ${countryName}`
@@ -903,6 +904,7 @@ export function getCountryTransitRule(
   const isDe = lang === 'de';
   const isEn = lang === 'en';
   const isEs = lang === 'es';
+  const isPt = lang === 'pt';
   const isRu = lang === 'ru';
   const isIntl = isDe || isEn || isEs || isRu || lang === 'pt';
   const countryName = getCountryName(countryCode, lang);
@@ -929,7 +931,7 @@ export function getCountryTransitRule(
     let adjustedCityExit = curated.cityExitAllowed;
     let badgeTitle = isEs
       ? 'Tránsito sin Visado en Zona Internacional'
-      : isRu
+      : isPt ? 'Trânsito sem visto na área internacional' : isRu
       ? 'Безвизовый транзит в чистой зоне'
       : isDe
       ? 'Visumfreier Airside-Transit'
@@ -942,13 +944,13 @@ export function getCountryTransitRule(
       adjustedStatus = 'entry_visa_free';
       adjustedCityExit = true;
       badgeTitle = idEligible
-        ? (isEs ? 'Entrada con DNI y Libre Tránsito' : isRu ? 'Въезд по ID-карте и свободный транзит' : isDe ? 'Personalausweis-Einreise & Freier Transit' : isEn ? 'National ID Entry & Free Transit' : 'Kimlikle Giriş & Serbest Transit')
-        : (isEs ? 'Entrada sin Visado y Libre Tránsito' : isRu ? 'Безвизовый въезд и свободный транзит' : isDe ? 'Visumfreie Einreise & Freier Transit' : isEn ? 'Visa-Free Entry & Free Transit' : 'Vizesiz Giriş & Serbest Transit');
+        ? (isEs ? 'Entrada con DNI y Libre Tránsito' : isPt ? 'Entrada com documento de identidade e trânsito livre' : isRu ? 'Въезд по ID-карте и свободный транзит' : isDe ? 'Personalausweis-Einreise & Freier Transit' : isEn ? 'National ID Entry & Free Transit' : 'Kimlikle Giriş & Serbest Transit')
+        : (isEs ? 'Entrada sin Visado y Libre Tránsito' : isPt ? 'Entrada sem visto e trânsito livre' : isRu ? 'Безвизовый въезд и свободный транзит' : isDe ? 'Visumfreie Einreise & Freier Transit' : isEn ? 'Visa-Free Entry & Free Transit' : 'Vizesiz Giriş & Serbest Transit');
       badgeClass = 'bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-900/60';
     } else if (curated.statusType === 'visa_required') {
       badgeTitle = isEs
         ? 'Visado de Tránsito Directo (DATV) Obligatorio'
-        : isRu
+        : isPt ? 'Visto de trânsito direto (DATV) obrigatório' : isRu
         ? 'Требуется транзитная виза (DATV)'
         : isDe
         ? 'Direktes Airside-Transitvisum (DATV) erforderlich'
@@ -959,7 +961,7 @@ export function getCountryTransitRule(
     } else if (curated.statusType === 'no_airside_zone') {
       badgeTitle = isEs
         ? 'Sin Zona de Tránsito Aislada (Visado Obligatorio)'
-        : isRu
+        : isPt ? 'Sem área de trânsito isolada (visto obrigatório)' : isRu
         ? 'Нет изолированной транзитной зоны (нужна виза)'
         : isDe
         ? 'Keine Transitzone (Einreisevisum Pflicht)'
@@ -970,7 +972,7 @@ export function getCountryTransitRule(
     } else if (curated.statusType === 'special_hub_stopover') {
       badgeTitle = isEs
         ? 'Programa Especial de Escala y Tránsito en Hub'
-        : isRu
+        : isPt ? 'Programa especial de escala e trânsito no hub' : isRu
         ? 'Специальная программа стоповера и транзита'
         : isDe
         ? 'Spezielles Stopover- & Transitprogramm'
@@ -988,17 +990,17 @@ export function getCountryTransitRule(
         badgeTitle,
         badgeClass,
         maxHours: curated.maxHours
-          .replace('saate kadar', isEs ? 'horas' : isRu ? 'часов' : isDe ? 'Stunden' : 'hours')
-          .replace('saat', isEs ? 'horas' : isRu ? 'часов' : isDe ? 'Stunden' : 'hours')
-          .replace('Gün', isEs ? 'Días' : isRu ? 'Дней' : isDe ? 'Tage' : 'Days')
-          .replace('Aynı gün aktarma', isEs ? 'Conexión el mismo día' : isRu ? 'Пересадка в тот же день' : isDe ? 'Transfer am selben Tag' : 'Same-day connection'),
+          .replace('saate kadar', isEs ? 'horas' : isPt ? 'horas' : isRu ? 'часов' : isDe ? 'Stunden' : 'hours')
+          .replace('saat', isEs ? 'horas' : isPt ? 'horas' : isRu ? 'часов' : isDe ? 'Stunden' : 'hours')
+          .replace('Gün', isEs ? 'Días' : isPt ? 'Dias' : isRu ? 'Дней' : isDe ? 'Tage' : 'Days')
+          .replace('Aynı gün aktarma', isEs ? 'Conexión el mismo día' : isPt ? 'Conexão no mesmo dia' : isRu ? 'Пересадка в тот же день' : isDe ? 'Transfer am selben Tag' : 'Same-day connection'),
         airsideTransitAllowed: curated.airsideTransitAllowed,
         cityExitAllowed: adjustedCityExit,
         ruleTitle: getLocalizedTransitRuleTitle(countryCode, countryName, lang, curated.ruleTitle),
         summary: adjustedStatus === 'entry_visa_free'
           ? (isEs
               ? `Los titulares de pasaporte ${passportCode} disfrutan de entrada sin visado a ${countryName}. Tanto la transferencia en el aeropuerto como salir a la ciudad están totalmente autorizados.`
-              : isRu
+              : isPt ? `Portadores de passaporte ${passportCode} podem entrar em ${countryName} sem visto. Tanto a conexão no aeroporto quanto a saída para a cidade são totalmente permitidas.` : isRu
               ? `Владельцы паспорта ${passportCode} пользуются правом безвизового въезда в ${countryName}. Пересадка в аэропорту и выход в город разрешены без ограничений.`
               : isDe
               ? `Inhaber eines ${passportCode}-Reisepasses genießen visumfreie Einreise nach ${countryName}. Flughafentransfer und Stadtbesuch sind uneingeschränkt gestattet.`
@@ -1006,7 +1008,7 @@ export function getCountryTransitRule(
           : curated.statusType === 'visa_required'
           ? (isEs
               ? `Los viajeros requieren obligatoriamente un visado de tránsito directo en aeropuerto (DATV) o visado consular antes de abordar vuelos de conexión en ${countryName}.`
-              : isRu
+              : isPt ? `Os viajantes precisam obrigatoriamente de um visto de trânsito aeroportuário direto (DATV) ou de um visto consular antes de embarcar em voos de conexão em ${countryName}.` : isRu
               ? `Пассажирам строго требуется заблаговременная прямая аэропортовая транзитная виза (DATV) или консульская виза перед посадкой на стыковочные рейсы в ${countryName}.`
               : isDe
               ? `Reisende benötigen zwingend vor Abflug ein Transitvisum (DATV) für Umsteigeverbindungen in ${countryName}.`
@@ -1014,14 +1016,14 @@ export function getCountryTransitRule(
           : curated.statusType === 'no_airside_zone'
           ? (isEs
               ? `Los aeropuertos de ${countryName} no disponen de una zona internacional de tránsito aislada. Todos los pasajeros deben pasar el control de pasaportes, lo que requiere visado.`
-              : isRu
+              : isPt ? `Os aeroportos de ${countryName} não têm uma área internacional de trânsito isolada. Todos os passageiros precisam passar pelo controle de passaportes, o que exige visto.` : isRu
               ? `Аэропорты в ${countryName} не имеют изолированной международной транзитной зоны. Все пассажиры должны пройти пограничный контроль, требующий визу.`
               : isDe
               ? `Flughäfen in ${countryName} verfügen über keine isolierte internationale Transitzone. Alle Umsteiger müssen die Passkontrolle passieren.`
               : `${countryName} airports have no isolated international transit zone. All connecting passengers must clear immigration and customs, requiring an entry visa or pre-authorization.`)
           : (isEs
               ? `Se permite el tránsito sin visado de entrada permaneciendo dentro de la zona de transferencia internacional y conectando dentro de ${curated.maxHours}.`
-              : isRu
+              : isPt ? `É permitido o trânsito sem visto de entrada, desde que você permaneça na área de conexão internacional e faça a conexão dentro de ${curated.maxHours}.` : isRu
               ? `Безвизовый транзит разрешен при нахождении в международной трансферной зоне аэропорта и вылете стыковочным рейсом в течение ${curated.maxHours}.`
               : isDe
               ? `Visumfreier Transit im internationalen Transferbereich bei Weiterreise innerhalb von ${curated.maxHours} gestattet.`
@@ -1032,7 +1034,11 @@ export function getCountryTransitRule(
               'El vuelo de conexión debe estar confirmado en un billete único con equipaje facturado hasta el destino final.',
               'Debe presentarse pasaporte válido y permisos de entrada para el país de destino final al momento del embarque.'
             ]
-          : isRu
+          : isPt ? [
+              'Permanecer estritamente dentro da área internacional de trânsito (airside), sem passar pelo controle de passaportes.',
+              'O voo de conexão deve estar confirmado em uma passagem única, com a bagagem despachada até o destino final.',
+              'É preciso apresentar passaporte válido e as autorizações de entrada do país de destino final no momento do embarque.'
+            ] : isRu
           ? [
               'Находиться строго в международной чистой зоне аэропорта (Airside), не проходя паспортный контроль.',
               'Стыковочный рейс должен быть оформлен единым билетом, а багаж зарегистрирован до конечного пункта назначения.',
@@ -1054,7 +1060,10 @@ export function getCountryTransitRule(
               'Los titulares de visados válidos o tarjetas de residencia expedidas por EE. UU., Canadá, Japón o el Espacio Schengen están exentos del visado de tránsito.',
               'Los titulares de pasaportes diplomáticos u oficiales están exentos según los acuerdos bilaterales vigentes.'
             ]
-          : isRu
+          : isPt ? [
+              'Portadores de vistos válidos ou cartões de residência emitidos pelos EUA, Canadá, Japão ou Espaço Schengen estão isentos do visto de trânsito.',
+              'Portadores de passaportes diplomáticos ou oficiais estão isentos conforme os acordos bilaterais em vigor.'
+            ] : isRu
           ? [
               'Владельцы действующих виз или ВНЖ США, Канады, Японии или Шенгенской зоны освобождены от транзитных виз.',
               'Владельцы дипломатических и служебных паспортов освобождены в рамках двусторонних соглашений.'
@@ -1070,7 +1079,7 @@ export function getCountryTransitRule(
             ],
         baggageAndTransferTip: isEs
           ? 'AVISO IMPORTANTE: En vuelos con autotransfer (billetes separados) en aerolíneas de bajo coste, se debe salir de la zona de tránsito para recoger equipaje; en tales casos es legalmente obligatorio un visado de entrada.'
-          : isRu
+          : isPt ? 'AVISO IMPORTANTE: em voos com autoconexão (passagens separadas) em companhias low cost, é preciso sair da área de trânsito para retirar a bagagem; nesses casos, o visto de entrada é legalmente obrigatório.' : isRu
           ? 'ВАЖНОЕ ПРИМЕЧАНИЕ: При раздельных билетах (самостоятельная пересадка) лоукостерами необходимо выходить из транзитной зоны для получения багажа; в таких случаях въездная виза обязательна.'
           : isDe
           ? 'WICHTIGER HINWEIS: Bei getrennten Tickets (Self-Transfer) mit Billigfliegern muss die Transitzone zur Gepäckabholung verlassen werden; hierfür ist ein Einreisevisum erforderlich.'
@@ -1105,17 +1114,17 @@ export function getCountryTransitRule(
       countryName,
       statusType: isFree ? 'entry_visa_free' : 'airside_free',
       badgeTitle: isFree
-        ? (isEs ? 'Libre Circulación / Espacio Schengen' : isRu ? 'Свободное перемещение / Шенгенская зона' : isDe ? 'Freizügigkeit / Schengen-Raum' : isEn ? 'Freedom of Movement / Schengen Area' : 'Schengen İçi Serbest Dolaşım')
-        : (isEs ? 'Tránsito Airside sin Visado (Exento de ATV)' : isRu ? 'Безвизовый транзит в чистой зоне (без ATV)' : isDe ? 'Airside visumfrei (ATV-befreit)' : isEn ? 'Airside Visa-Free (ATV Exempt)' : 'Havalimanı İçi Vizesiz (ATV Muaf)'),
+        ? (isEs ? 'Libre Circulación / Espacio Schengen' : isPt ? 'Livre circulação / Espaço Schengen' : isRu ? 'Свободное перемещение / Шенгенская зона' : isDe ? 'Freizügigkeit / Schengen-Raum' : isEn ? 'Freedom of Movement / Schengen Area' : 'Schengen İçi Serbest Dolaşım')
+        : (isEs ? 'Tránsito Airside sin Visado (Exento de ATV)' : isPt ? 'Trânsito airside sem visto (isento de ATV)' : isRu ? 'Безвизовый транзит в чистой зоне (без ATV)' : isDe ? 'Airside visumfrei (ATV-befreit)' : isEn ? 'Airside Visa-Free (ATV Exempt)' : 'Havalimanı İçi Vizesiz (ATV Muaf)'),
       badgeClass: isFree
         ? 'bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-900/60'
         : 'bg-blue-50 text-blue-700 border-blue-200 dark:bg-blue-950/40 dark:text-blue-300 dark:border-blue-900/60',
-      maxHours: isEs ? 'Hasta 24 horas (Conexión el mismo día)' : isRu ? 'До 24 часов (Пересадка в тот же день)' : isDe ? 'Bis zu 24 Stunden (gleichtägiger Transfer)' : isEn ? 'Up to 24 hours (Same-day connection)' : '24 saate kadar (Aynı gün aktarma)',
+      maxHours: isEs ? 'Hasta 24 horas (Conexión el mismo día)' : isPt ? 'Até 24 horas (conexão no mesmo dia)' : isRu ? 'До 24 часов (Пересадка в тот же день)' : isDe ? 'Bis zu 24 Stunden (gleichtägiger Transfer)' : isEn ? 'Up to 24 hours (Same-day connection)' : '24 saate kadar (Aynı gün aktarma)',
       airsideTransitAllowed: true,
       cityExitAllowed: isFree,
       ruleTitle: isEs
         ? `Visado de Tránsito Aeroportuario Schengen (ATV / Categoría A) - ${countryName}`
-        : isRu
+        : isPt ? `Visto de trânsito aeroportuário Schengen (ATV / categoria A) - ${countryName}` : isRu
         ? `Шенгенская аэропортовая транзитная виза (ATV / Категория A) - ${countryName}`
         : isDe
         ? `Schengen-Flughafentransitvisum (ATV / Kategorie A) - ${countryName}`
@@ -1125,7 +1134,7 @@ export function getCountryTransitRule(
       summary: isFree
         ? (isEs
             ? `Los titulares de pasaporte ${passportCode} disfrutan de acceso libre sin visado a ${countryName}; tanto la transferencia en aeropuerto como la salida a la ciudad están permitidas.`
-            : isRu
+            : isPt ? `Portadores de passaporte ${passportCode} têm acesso livre, sem visto, a ${countryName}; tanto a conexão no aeroporto quanto a saída para a cidade são permitidas.` : isRu
             ? `Владельцы паспорта ${passportCode} пользуются полным безвизовым доступом в ${countryName}; как пересадка в аэропорту, так и выход в город разрешены.`
             : isDe
             ? `Inhaber eines ${passportCode}-Reisepasses genießen visumfreien Zugang zu ${countryName}; Flughafentransfer und Stadtbesuch sind uneingeschränkt gestattet.`
@@ -1134,7 +1143,7 @@ export function getCountryTransitRule(
             : `${passportCode} pasaportu bu ülkeye vizesiz giriş hakkına sahip olduğundan hem havalimanı içi aktarma hem de şehre çıkış serbesttir.`)
         : (isEs
             ? `Al transitar por ${countryName} hacia un tercer país fuera de Schengen, por lo general no se requiere visado de tránsito aeroportuario (ATV) siempre que no se abandone la zona de tránsito.`
-            : isRu
+            : isPt ? `Ao transitar por ${countryName} rumo a um terceiro país fora do Schengen, em geral não é exigido visto de trânsito aeroportuário (ATV), desde que você não saia da área de trânsito.` : isRu
             ? `При транзите через ${countryName} в третью страну за пределами Шенгена транзитная виза (ATV) обычно не требуется при условии нахождения в транзитной зоне.`
             : isDe
             ? `Bei Transit über ${countryName} in ein Drittland außerhalb des Schengen-Raums ist kein Flughafentransitvisum (ATV) erforderlich, solange die Transitzone nicht verlassen wird.`
@@ -1147,7 +1156,11 @@ export function getCountryTransitRule(
             'ADVERTENCIA CRÍTICA: En conexiones entre DOS aeropuertos Schengen (p. ej., Estambul -> Fráncfort -> ' + countryName + ' -> Nueva York), el control de pasaportes se realiza en el primer aeropuerto Schengen. ¡Se requiere obligatoriamente un visado Schengen de Categoría C!',
             'El vuelo de conexión debe salir del mismo aeropuerto dentro de las 24 horas con billete único.'
           ]
-        : isRu
+        : isPt ? [
+            'Permanecer estritamente dentro da área internacional de trânsito (airside), sem passar pelo controle de fronteira.',
+            'ALERTA CRÍTICO: em conexões entre DOIS aeroportos do Schengen (ex.: Istambul -> Frankfurt -> ' + countryName + ' -> Nova York), o controle de passaportes é feito no primeiro aeroporto do Schengen. É obrigatório ter um visto Schengen de categoria C!',
+            'O voo de conexão deve sair do mesmo aeroporto em até 24 horas, com passagem única.'
+          ] : isRu
         ? [
             'Не покидать международную чистую зону (Airside) и не проходить пограничный контроль.',
             'КРИТИЧЕСКОЕ ПРЕДУПРЕЖДЕНИЕ: При пересадке между ДВУМЯ аэропортами Шенгена (напр., Стамбул -> Франкфурт -> ' + countryName + ' -> Нью-Йорк) паспортный контроль проходит в первом аэропорту Шенгена. Требуется полноценная шенгенская виза категории C!',
@@ -1176,7 +1189,11 @@ export function getCountryTransitRule(
             'Los titulares de un permiso de residencia válido de la UE / EEE o Suiza están exentos.',
             'Los titulares de pasaportes oficiales o especiales están exentos según los acuerdos aplicables.'
           ]
-        : isRu
+        : isPt ? [
+            'Portadores de vistos válidos ou cartões de residência dos EUA, Canadá, Japão ou Espaço Schengen estão isentos.',
+            'Portadores de autorização de residência válida da UE / EEE ou da Suíça estão isentos.',
+            'Portadores de passaportes oficiais ou especiais estão isentos conforme os acordos aplicáveis.'
+          ] : isRu
         ? [
             'Владельцы действующих виз или ВНЖ США, Канады, Японии или Шенгенской зоны освобождены от транзитных виз.',
             'Владельцы действующего ВНЖ ЕС / ЕЭЗ или Швейцарии освобождены.',
@@ -1201,7 +1218,7 @@ export function getCountryTransitRule(
           ],
       baggageAndTransferTip: isEs
         ? 'En billetes separados con aerolíneas de bajo coste (como Ryanair o Wizz Air), se debe pasar el control de inmigración para recoger equipaje; en este caso es obligatorio un visado Schengen válido.'
-        : isRu
+        : isPt ? 'Com passagens separadas em companhias low cost (como Ryanair ou Wizz Air), é preciso passar pela imigração para retirar a bagagem; nesse caso, é obrigatório ter um visto Schengen válido.' : isRu
         ? 'При перелетах раздельными билетами лоукостерами (Ryanair, Wizz Air и др.) необходимо проходить пограничный контроль для получения багажа; в этом случае действующая шенгенская виза обязательна.'
         : isDe
         ? 'Bei getrennten Tickets mit Billigfluggesellschaften (z. B. Ryanair, Wizz Air) muss zur Gepäckabholung die Passkontrolle passiert werden; hierfür ist ein gültiges Schengen-Visum erforderlich.'
@@ -1219,19 +1236,19 @@ export function getCountryTransitRule(
       countryName,
       statusType: 'entry_visa_free',
       badgeTitle: idEligible
-        ? (isEs ? 'Entrada con DNI y Libre Tránsito' : isRu ? 'Въезд по ID-карте и свободный транзит' : isDe ? 'Personalausweis & Freier Transit' : isEn ? 'National ID Entry & Free Transit' : 'Kimlikle Giriş & Serbest Transit')
-        : (isEs ? 'Entrada sin Visado y Libre Tránsito' : isRu ? 'Безвизовый въезд и свободный транзит' : isDe ? 'Visumfreie Einreise & Freier Transit' : isEn ? 'Visa-Free Entry & Free Transit' : 'Vizesiz Giriş & Serbest Transit'),
+        ? (isEs ? 'Entrada con DNI y Libre Tránsito' : isPt ? 'Entrada com documento de identidade e trânsito livre' : isRu ? 'Въезд по ID-карте и свободный транзит' : isDe ? 'Personalausweis & Freier Transit' : isEn ? 'National ID Entry & Free Transit' : 'Kimlikle Giriş & Serbest Transit')
+        : (isEs ? 'Entrada sin Visado y Libre Tránsito' : isPt ? 'Entrada sem visto e trânsito livre' : isRu ? 'Безвизовый въезд и свободный транзит' : isDe ? 'Visumfreie Einreise & Freier Transit' : isEn ? 'Visa-Free Entry & Free Transit' : 'Vizesiz Giriş & Serbest Transit'),
       badgeClass: 'bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-900/60',
       maxHours: idEligible
-        ? (isEs ? 'Ilimitado / Larga estancia' : isRu ? 'Бессрочно / Долгосрочно' : isDe ? 'Unbegrenzt / Langzeitaufenthalt' : isEn ? 'Unrestricted / Long stay' : 'Süresiz / Uzun süreli')
+        ? (isEs ? 'Ilimitado / Larga estancia' : isPt ? 'Ilimitado / longa permanência' : isRu ? 'Бессрочно / Долгосрочно' : isDe ? 'Unbegrenzt / Langzeitaufenthalt' : isEn ? 'Unrestricted / Long stay' : 'Süresiz / Uzun süreli')
         : /^\d+$/.test(visaRaw)
-        ? (isEs ? `${visaRaw} días sin visado` : isRu ? `${visaRaw} дн. без визы` : isDe ? `${visaRaw} Tage visumfrei` : isEn ? `${visaRaw} days visa-free` : `${visaRaw} gün serbest giriş`)
-        : (isEs ? 'Hasta 90 días' : isRu ? 'До 90 дней' : isDe ? 'Bis zu 90 Tage' : isEn ? 'Up to 90 days' : '90 güne kadar'),
+        ? (isEs ? `${visaRaw} días sin visado` : isPt ? `${visaRaw} dias sem visto` : isRu ? `${visaRaw} дн. без визы` : isDe ? `${visaRaw} Tage visumfrei` : isEn ? `${visaRaw} days visa-free` : `${visaRaw} gün serbest giriş`)
+        : (isEs ? 'Hasta 90 días' : isPt ? 'Até 90 dias' : isRu ? 'До 90 дней' : isDe ? 'Bis zu 90 Tage' : isEn ? 'Up to 90 days' : '90 güne kadar'),
       airsideTransitAllowed: true,
       cityExitAllowed: true,
       ruleTitle: isEs
         ? `Entrada sin Visado y Tránsito Abierto - ${countryName}`
-        : isRu
+        : isPt ? `Entrada sem visto e trânsito livre - ${countryName}` : isRu
         ? `Безвизовый въезд и свободный транзит - ${countryName}`
         : isDe
         ? `Visumfreie Einreise und offener Transit - ${countryName}`
@@ -1240,7 +1257,7 @@ export function getCountryTransitRule(
         : `Vizesiz Giriş ve Transit Serbestisi - ${countryName}`,
       summary: isEs
         ? `Los titulares de pasaporte ${passportCode} tienen derecho a entrar en ${countryName} sin visado ${idEligible ? 'o con documento nacional de identidad' : ''}. Tanto el transbordo dentro del aeropuerto como salir a recorrer la ciudad están completamente permitidos.`
-        : isRu
+        : isPt ? `Portadores de passaporte ${passportCode} têm direito a entrar em ${countryName} sem visto ${idEligible ? 'o con documento nacional de identidad' : ''}. Tanto a conexão dentro do aeroporto quanto sair para conhecer a cidade são totalmente permitidas.` : isRu
         ? `Владельцы паспорта ${passportCode} имеют право безвизового въезда в ${countryName} ${idEligible ? 'или по удостоверению личности' : ''}. Во время пересадки можно как оставаться в аэропорту, так и свободно выходить в город.`
         : isDe
         ? `Inhaber eines ${passportCode}-Reisepasses können nach ${countryName} visumfrei ${idEligible ? 'oder mit Personalausweis ' : ''}einreisen. Sowohl Flughafentransfer als auch Stadtbesuch während des Zwischenstopps sind uneingeschränkt gestattet.`
@@ -1253,7 +1270,11 @@ export function getCountryTransitRule(
             'El pasaporte debe ser válido por al menos 6 meses a partir de la fecha de viaje.',
             'Tenga a mano el billete de vuelo de conexión y la reserva de alojamiento en el control de fronteras.'
           ]
-        : isRu
+        : isPt ? [
+            'Você pode sair livremente do aeroporto durante a escala, ficar em hotéis ou visitar o centro da cidade.',
+            'O passaporte deve ter validade de pelo menos 6 meses a partir da data da viagem.',
+            'Tenha à mão a passagem do voo de conexão e a reserva de hospedagem no controle de fronteira.'
+          ] : isRu
         ? [
             'Вы можете свободно выходить из аэропорта во время пересадки, останавливаться в отелях или осматривать город.',
             'Паспорт должен быть действителен не менее 6 месяцев с даты поездки.',
@@ -1278,7 +1299,7 @@ export function getCountryTransitRule(
           ],
       exemptions: isEs
         ? ['Se aplican derechos directos de entrada sin visado; no se requiere permiso de tránsito ni tasa consular.']
-        : isRu
+        : isPt ? ['Valem os direitos diretos de entrada sem visto; não é necessária autorização de trânsito nem taxa consular.'] : isRu
         ? ['Действует право прямого безвизового въезда; никаких транзитных разрешений или консульских сборов не требуется.']
         : isDe
         ? ['Direkte visumfreie Einreiseberechtigung; keine Transitgenehmigung oder Gebühr erforderlich.']
@@ -1287,7 +1308,7 @@ export function getCountryTransitRule(
         : ['Ülkeye doğrudan vizesiz giriş hakkı mevcuttur; hiçbir transit vizesi veya ek izin gerekmez.'],
       baggageAndTransferTip: isEs
         ? 'En vuelos con billetes separados (autotransfer), puede recoger su equipaje en la recogida de maletas y volver a facturarlo sin inconvenientes legales.'
-        : isRu
+        : isPt ? 'Em voos com passagens separadas (autoconexão), você pode retirar sua bagagem na esteira e despachá-la de novo sem problemas legais.' : isRu
         ? 'При перелетах по раздельным билетам (самостоятельная пересадка) вы можете получить багаж на выдаче и зарегистрировать его снова без ограничений.'
         : isDe
         ? 'Bei separaten Tickets (Self-Transfer) können Sie Ihr Gepäck an der Gepäckausgabe abholen und am Abflugschalter neu einchecken.'
@@ -1308,7 +1329,7 @@ export function getCountryTransitRule(
     statusType: 'airside_free',
     badgeTitle: isEs
       ? 'Tránsito sin Visado en Zona Internacional'
-      : isRu
+      : isPt ? 'Trânsito sem visto na área internacional' : isRu
       ? 'Безвизовый транзит в чистой зоне'
       : isDe
       ? 'Visumfreier Airside-Transit'
@@ -1316,12 +1337,12 @@ export function getCountryTransitRule(
       ? 'Airside Visa-Free Transit'
       : 'Havalimanı İçi Vizesiz (Airside)',
     badgeClass: 'bg-blue-50 text-blue-700 border-blue-200 dark:bg-blue-950/40 dark:text-blue-300 dark:border-blue-900/60',
-    maxHours: isEs ? 'De 12 a 24 horas' : isRu ? 'От 12 до 24 часов' : isDe ? '12 - 24 Stunden' : isEn ? '12 - 24 hours' : '12 - 24 saat arası',
+    maxHours: isEs ? 'De 12 a 24 horas' : isPt ? 'De 12 a 24 horas' : isRu ? 'От 12 до 24 часов' : isDe ? '12 - 24 Stunden' : isEn ? '12 - 24 hours' : '12 - 24 saat arası',
     airsideTransitAllowed: true,
     cityExitAllowed: false,
     ruleTitle: isEs
       ? `Normas Internacionales de Tránsito Aeroportuario (TWOV) - ${countryName}`
-      : isRu
+      : isPt ? `Regras internacionais de trânsito aeroportuário (TWOV) - ${countryName}` : isRu
       ? `Международные правила транзита через аэропорт (TWOV) - ${countryName}`
       : isDe
       ? `Internationale Flughafentransit-Regeln (TWOV) - ${countryName}`
@@ -1330,7 +1351,7 @@ export function getCountryTransitRule(
       : `Uluslararası Havalimanı Transit Kuralları (TWOV) - ${countryName}`,
     summary: isEs
       ? `Para escalas en ${countryName}, por lo general no se requiere visado de tránsito aeroportuario siempre que los viajeros permanezcan en la zona internacional y continúen viaje dentro de las 24 horas.`
-      : isRu
+      : isPt ? `Em escalas em ${countryName}, em geral não é exigido visto de trânsito aeroportuário, desde que os viajantes permaneçam na área internacional e sigam viagem em até 24 horas.` : isRu
       ? `При стыковках через ${countryName} транзитная виза обычно не требуется при условии, что пассажиры остаются в международной транзитной зоне и вылетают в течение 24 часов.`
       : isDe
       ? `Für Zwischenstopps in ${countryName} ist in der Regel kein Transitvisum erforderlich, sofern Reisende im internationalen Transitbereich verbleiben und innerhalb von 24 Stunden weiterfliegen.`
@@ -1344,7 +1365,12 @@ export function getCountryTransitRule(
           'Debe presentarse billete válido y documentación de visado para el tercer país de destino.',
           `Salir del aeropuerto o ingresar a la ciudad requiere obligatoriamente un ${requiresVisaForEntry ? 'visado de entrada' : 'permiso oficial'}.`
         ]
-      : isRu
+      : isPt ? [
+          'Permanecer estritamente na sala internacional de trânsito, sem passar pelo controle de imigração.',
+          'Os voos de chegada e de saída devem estar, de preferência, sob um mesmo código de reserva (PNR).',
+          'É preciso apresentar passagem válida e a documentação de visto para o terceiro país de destino.',
+          `Sair do aeroporto ou entrar na cidade exige obrigatoriamente um ${requiresVisaForEntry ? 'visado de entrada' : 'permiso oficial'}.`
+        ] : isRu
       ? [
           'Находиться исключительно в международном зале вылета/транзита без прохождения иммиграционного контроля.',
           'Рейсы прибытия и вылета должны быть оформлены под единым кодом бронирования (PNR).',
@@ -1376,7 +1402,10 @@ export function getCountryTransitRule(
           'El tránsito sin visado (TWOV) se aplica en aeropuertos internacionales con zonas de tránsito 24h dedicadas.',
           'Algunos países conceden pases temporales de emergencia ante la presentación de visados válidos de EE. UU., Reino Unido o Schengen.'
         ]
-      : isRu
+      : isPt ? [
+          'O trânsito sem visto (TWOV) se aplica em aeroportos internacionais com áreas de trânsito 24h dedicadas.',
+          'Alguns países concedem permissões temporárias de emergência mediante apresentação de vistos válidos dos EUA, do Reino Unido ou do Schengen.'
+        ] : isRu
       ? [
           'Транзит без визы (TWOV) действует в международных аэропортах с круглосуточной транзитной зоной.',
           'Некоторые страны выдают экстренные временные пропуска при наличии действующих виз США, Великобритании или Шенгена.'
@@ -1397,7 +1426,7 @@ export function getCountryTransitRule(
         ],
     baggageAndTransferTip: isEs
       ? 'ATENCIÓN: En itinerarios con billetes separados (autotransfer), debe pasar el control de pasaportes para recoger equipaje. En este caso el visado de entrada es obligatorio; asegúrese de que sus maletas estén etiquetadas hasta el destino final.'
-      : isRu
+      : isPt ? 'ATENÇÃO: em roteiros com passagens separadas (autoconexão), você precisa passar pelo controle de passaportes para retirar a bagagem. Nesse caso, o visto de entrada é obrigatório; confira se suas malas estão etiquetadas até o destino final.' : isRu
       ? 'ВНИМАНИЕ: При перелете по раздельным билетам (самостоятельная пересадка) вы должны пройти паспортный контроль для получения багажа. В этом случае въездная виза обязательна; убедитесь, что багаж оформлен до конечного пункта при первой регистрации.'
       : isDe
       ? 'ACHTUNG: Bei separaten Tickets (Self-Transfer) müssen Sie die Passkontrolle passieren, um das Gepäck abzuholen. In diesem Fall ist ein Einreisevisum erforderlich.'

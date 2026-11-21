@@ -1559,6 +1559,396 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Euro (EUR)",
+   "plugType": "Tipo C, F (230V, 50Hz)",
+   "bestMonths": "Maio–junho e setembro–outubro (ideal para lagos e cidades); julho–agosto (Alpes e litoral, com muita gente); dezembro–março (esqui: Kranjska Gora, Vogel)",
+   "safety": {
+    "safetyScore": 85,
+    "safetyLevel": "Excepcionalmente seguro",
+    "badgeColor": "bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-900/60",
+    "crimeRateSummary": "Um dos países mais seguros da Europa, com pouquíssimos crimes violentos. No verão, fique de olho nos furtos no centro histórico de Liubliana e nas áreas movimentadas de Bled.",
+    "commonScams": [
+     "Sites revendedores não oficiais que cobram comissões altas pela vinheta eletrônica das rodovias",
+     "Táxis sem licença e sem taxímetro no aeroporto e de madrugada",
+     "Batedores de carteira no meio das multidões de verão em Bled e Liubliana"
+    ],
+    "safeTravelTips": [
+     "Se for alugar carro, compre a vinheta apenas no site oficial evinjeta.dars.si.",
+     "Peça táxis de empresas conhecidas, como Cammeo ou Taxi Metro, por telefone ou aplicativo.",
+     "O tempo na montanha muda rápido; não saia das trilhas sinalizadas do Triglav."
+    ],
+    "emergencyNumbers": {
+     "police": "113",
+     "ambulance": "112",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99 % de cobertura da população (4G/5G); o sinal pode enfraquecer nos vales profundos dos Alpes Julianos",
+    "costPerGbUsd": "~US$ 1,00 - 2,50",
+    "esimAvailability": "Excelente",
+    "bestCarriers": [
+     "Telekom Slovenije",
+     "A1 Slovenija",
+     "Telemach",
+     "Airalo / Holafly eSIM"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Muito boa (ônibus limpos e pontuais; malha ferroviária limitada, mas com paisagens lindas)",
+    "costLevel": "Moderado",
+    "singleTicketUsd": "US$ 1,50 (LPP, 90 min)",
+    "dailyPassUsd": "US$ 5 - 8",
+    "popularRideApps": [
+     "Urbana (LPP)",
+     "Cammeo",
+     "Taxi Metro",
+     "BicikeLJ",
+     "Nomago / FlixBus",
+     "Slovenske železnice (SŽ)"
+    ],
+    "taxiAdvice": "O Uber não é muito difundido em Liubliana; empresas com taxímetro, como Cammeo e Taxi Metro, são confiáveis. Os ônibus intermunicipais (Nomago, FlixBus) costumam ser mais rápidos que o trem."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 55 - 80",
+    "dailyBudgetMidrangeUsd": "US$ 120 - 200",
+    "budgetMealUsd": "US$ 12 - 20",
+    "coffeeUsd": "US$ 2,00 - 3,20",
+    "waterBottleUsd": "US$ 0,60 - 1,20",
+    "hostelDormUsd": "US$ 25 - 40",
+    "hotel3StarUsd": "US$ 90 - 150",
+    "flightCostIndex": "Moderado (Istambul – Liubliana direto ~2 h)",
+    "flightTip": "A Turkish Airlines voa direto de Istambul para Liubliana; voar para Zagreb, Veneza/Trieste ou Viena e seguir de ônibus ou trem costuma sair mais barato."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Espera-se contato visual e um aperto de mão firme; use o sobrenome ao se apresentar.",
+     "Em casa, tiram-se os sapatos; o anfitrião pode oferecer chinelos (copati).",
+     "O respeito à natureza é fundamental: leve seu lixo embora e não saia das trilhas nos parques nacionais.",
+     "A maioria das lojas fecha no domingo; faça as compras no sábado."
+    ],
+    "festivals": [
+     "Kurentovanje (Ptuj, fevereiro – carnaval de inverno com máscaras de kurent, UNESCO)",
+     "Festival de Liubliana (julho–agosto, concertos e ópera ao ar livre)",
+     "Festival Lent (Maribor, fim de junho – música às margens do rio Drava)"
+    ],
+    "lifestyle": "Ao ar livre, esportivo e organizado: trilhas no fim de semana, bicicleta e piqueniques à beira do lago são costume nacional."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Liubliana: Praça Prešeren, Ponte Tripla e Castelo de Liubliana",
+     "Lago Bled e a Igreja da Assunção, na ilha",
+     "Lago Bohinj e Garganta de Vintgar",
+     "Caverna de Postojna e Castelo de Predjama",
+     "Cavernas de Škocjan (UNESCO)",
+     "Piran e o litoral do Adriático"
+    ],
+    "bestSeasons": "Maio–junho e setembro–outubro",
+    "travelStyleTip": "O país é pequeno: hospede-se em Liubliana e faça bate-voltas para Bled, Postojna e Piran. Alugar carro é o jeito mais prático de explorar os Alpes."
+   },
+   "religion": {
+    "primaryReligions": "Católicos ~55-60 %, sem filiação ~25-30 %, muçulmanos ~3 %, ortodoxos ~2 %",
+    "respectNorms": "Nas igrejas, cubra ombros e joelhos, não tire fotos durante a missa e fique em silêncio.",
+    "sacredSites": [
+     "Igreja da Assunção, na ilha de Bled (sino dos desejos)",
+     "Basílica de Brezje (santuário nacional)",
+     "Centro Religioso e Cultural Islâmico de Liubliana (2020)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Esloveno (oficial); o italiano no litoral da Ístria e o húngaro em Prekmurje são oficiais em nível regional.",
+    "englishProficiency": "Muito alto; a maioria dos jovens fala inglês fluente, e alemão e italiano também são comuns.",
+    "phrases": [
+     {
+      "phrase": "Dober dan",
+      "meaning": "Bom dia (cumprimento educado)",
+      "translation": "Olá",
+      "pronunciation": "DOH-ber dahn"
+     },
+     {
+      "phrase": "Hvala",
+      "meaning": "Obrigado(a)",
+      "translation": "Obrigado(a)",
+      "pronunciation": "HVAH-lah"
+     },
+     {
+      "phrase": "Prosim",
+      "meaning": "Por favor / De nada",
+      "translation": "Por favor",
+      "pronunciation": "PROH-seem"
+     },
+     {
+      "phrase": "Koliko stane?",
+      "meaning": "Quanto custa?",
+      "translation": "Quanto é?",
+      "pronunciation": "KOH-lee-koh STAH-neh"
+     },
+     {
+      "phrase": "Račun, prosim",
+      "meaning": "A conta, por favor",
+      "translation": "A conta, por favor",
+      "pronunciation": "rah-CHOON PROH-seem"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "No cruzamento entre os Alpes, o Mediterrâneo e a planície da Panônia, a Eslovênia nasceu como o principado eslavo da Carantânia no século VII. Depois de séculos sob os Habsburgo e do período iugoslavo, declarou independência em 1991 e hoje é um pequeno e próspero membro da UE.",
+    "milestones": [
+     "Século VII: principado eslavo da Carantânia",
+     "1918: passa a integrar o Reino dos Sérvios, Croatas e Eslovenos",
+     "25 de junho de 1991: declaração de independência",
+     "2004: entrada na UE e na OTAN; 2007: adoção do euro"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Idrijski žlikrofi (raviólis pequenos recheados com batata)",
+     "Jota (ensopado de feijão com chucrute)",
+     "Štruklji (rolinhos de massa com ricota)"
+    ],
+    "traditionalDrinks": [
+     "Água mineral Radenska",
+     "Vinhos Cviček e Teran",
+     "Borovničke (licor de mirtilo)"
+    ],
+    "streetFoodAndDesserts": [
+     "Blejska kremna rezina (torta de creme de Bled)",
+     "Prekmurska gibanica (torta em camadas de papoula, nozes, maçã e ricota)",
+     "Burek (o lanche da madrugada de Liubliana)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "France Prešeren (poeta nacional, autor do hino)",
+     "Jože Plečnik (arquiteto que deu forma a Liubliana)",
+     "Luka Dončić (astro da NBA)"
+    ],
+    "strongSectors": [
+     "Farmacêutico (Krka, Lek)",
+     "Autopeças e eletrodomésticos (Gorenje)",
+     "Logística (porto de Koper) e turismo"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Cartão e pagamento por aproximação funcionam em quase todo lugar; leve dinheiro para os refúgios de montanha (koča) e as feirinhas.",
+    "tippingCulture": "A gorjeta não é obrigatória; arredonde a conta ou deixe 5-10 % se tiver gostado do atendimento.",
+    "economicPillars": "Indústria exportadora (farmacêutica, autopeças, eletrodomésticos), logística do porto de Koper e turismo de natureza."
+   }
+  },
+  "itin": {
+   "routeName": "Eslovênia clássica: Liubliana, Bled, Postojna e Piran",
+   "routeSummary": "Um circuito compacto de 7 dias que sai da verde Liubliana e passa por lagos alpinos e cavernas até chegar à veneziana Piran, no Adriático.",
+   "totalDays": 7,
+   "idealDurationText": "Roteiro de 7 dias",
+   "bestSeason": "Maio–junho e setembro–outubro",
+   "transportMode": "Carro alugado (o mais prático) ou ônibus/trens a partir de Liubliana com bate-voltas",
+   "paceLevel": "Equilibrado (cidade + lagos + cavernas + litoral)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Liubliana (capital verde e centro histórico)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Praça Prešeren e Ponte Tripla",
+      "Castelo de Liubliana (de funicular)",
+      "Ponte dos Dragões e Mercado Central",
+      "Parque Tivoli"
+     ],
+     "activities": [
+      "Faça um passeio de barco pelo rio Ljubljanica.",
+      "Visite o mercado gastronômico Odprta kuhna nas sextas-feiras de verão.",
+      "Explore o bairro artístico de Metelkova."
+     ],
+     "foodAndDrinks": [
+      "Štruklji",
+      "Burek",
+      "Água mineral Radenska"
+     ],
+     "criticalTips": [
+      "O centro histórico é só para pedestres; ande a pé ou use o Kavalir elétrico gratuito.",
+      "Os ônibus não aceitam dinheiro; arrume um cartão Urbana."
+     ],
+     "mapsQuery": "Ljubljana, Slovenia"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Bled e Bohinj (lagos dos Alpes Julianos)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Ilha de Bled e Igreja da Assunção",
+      "Castelo de Bled",
+      "Garganta de Vintgar",
+      "Lago Bohinj e cachoeira Savica"
+     ],
+     "activities": [
+      "Vá até a ilha em um barco tradicional pletna.",
+      "Suba ao mirante de Ojstrica ou de Mala Osojnica.",
+      "Pegue o teleférico de Vogel, acima de Bohinj."
+     ],
+     "foodAndDrinks": [
+      "Blejska kremna rezina",
+      "Truta (postrv)",
+      "Borovničke"
+     ],
+     "criticalTips": [
+      "Reserve o ingresso de Vintgar pela internet; a garganta fecha no inverno.",
+      "Estacionar em Bled é caro e lota no verão; chegue cedo."
+     ],
+     "mapsQuery": "Lake Bled, Slovenia"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Postojna e Predjama (região do Carste)",
+     "recommendedDuration": "1 dia",
+     "durationBadge": "1 dia",
+     "highlights": [
+      "Caverna de Postojna (trem subterrâneo)",
+      "Castelo de Predjama (escavado na rocha)",
+      "Cavernas de Škocjan (UNESCO)"
+     ],
+     "activities": [
+      "Embarque no trem da caverna e caminhe entre as estalactites.",
+      "Veja o proteu, o “peixe humano” das cavernas.",
+      "Deguste vinhos em uma propriedade rural do Carste."
+     ],
+     "foodAndDrinks": [
+      "Kraški pršut (presunto do Carste, de porco)",
+      "Vinho Teran",
+      "Jota"
+     ],
+     "criticalTips": [
+      "Dentro das cavernas faz uns 10 °C o ano inteiro; leve um casaco.",
+      "Economize com o ingresso combinado Postojna + Predjama."
+     ],
+     "mapsQuery": "Postojna Cave, Slovenia"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Piran (litoral do Adriático)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Praça Tartini",
+      "Muralhas e campanário de São Jorge",
+      "Salinas de Sečovlje",
+      "Orlas de Izola e Portorož"
+     ],
+     "activities": [
+      "Assista ao pôr do sol do alto das muralhas.",
+      "Visite as salinas de Sečovlje e seu museu do sal.",
+      "Percorra o litoral de bicicleta ou dê um mergulho."
+     ],
+     "foodAndDrinks": [
+      "Peixe do Adriático e lula grelhada",
+      "Frutos do mar com sal de Piran",
+      "Vinho branco Malvazija"
+     ],
+     "criticalTips": [
+      "O centro de Piran é só para pedestres; estacione em Fornače e pegue o ônibus de traslado.",
+      "As praias são de pedra; sapatilhas aquáticas ajudam."
+     ],
+     "mapsQuery": "Piran, Slovenia"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Idrijski žlikrofi (raviólis pequenos recheados com batata)",
+     "Jota (ensopado de feijão com chucrute)",
+     "Štruklji (rolinhos de massa com ricota)"
+    ],
+    "drinks": [
+     "Água mineral Radenska",
+     "Vinhos Cviček e Teran",
+     "Borovničke (licor de mirtilo)"
+    ],
+    "streetFoods": [
+     "Blejska kremna rezina (torta de creme de Bled)",
+     "Prekmurska gibanica (torta em camadas de papoula, nozes, maçã e ricota)",
+     "Burek (o lanche da madrugada de Liubliana)"
+    ],
+    "diningAdvice": "Muitos restaurantes oferecem um menu executivo barato no almoço (kosilo/malica). No Carste e nos Alpes, pergunte se os pratos de carne levam porco (svinjina)."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Jaqueta impermeável e calçado de trilha confortável",
+     "Casaco leve para as cavernas",
+     "Cartão por aproximação e um pouco de dinheiro em euros",
+     "Power bank e mapas off-line"
+    ],
+    "safetyAndEtiquette": [
+     "Não saia das trilhas sinalizadas nos parques nacionais e leve seu lixo embora.",
+     "Tire os sapatos ao entrar nas casas."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Tomadas europeias de dois pinos redondos (C/F), iguais às da Turquia; não é preciso adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "A água da torneira está entre as melhores da Europa; a água de nascente alpina é totalmente potável.",
+    "vaccines": [
+     "Vacinas de rotina (tétano, difteria, tríplice viral)",
+     "Recomenda-se a vacina contra encefalite transmitida por carrapatos (TBE) para quem vai fazer trilhas em florestas"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "112"
+   },
+   "tipping": {
+    "custom": "A gorjeta não é obrigatória; arredondar a conta ou deixar 5-10 % é um gesto gentil.",
+    "standardPercent": 10,
+    "rule": "round_up",
+    "note": "Nas cafeterias basta deixar as moedas; raramente se cobra taxa de serviço."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA de 22 % (reembolso líquido de ~10-15 % após as comissões)",
+    "minSpend": "Acima de 50 € por nota",
+    "customsNote": "Carimbe o formulário Tax Free na alfândega do último ponto de saída da UE (por exemplo, Liubliana ou o aeroporto de conexão na UE); os produtos devem estar sem uso."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "~US$ 1,00 - 2,50",
+    "topCarriers": [
+     "Telekom Slovenije",
+     "A1 Slovenija",
+     "Telemach"
+    ],
+    "airportSimTrapWarning": "No aeroporto de Liubliana há poucas opções de chip; configure um eSIM antes da viagem ou compre um pré-pago em uma loja da Telekom Slovenije / A1 na cidade."
+   },
+   "touristScams": [
+    {
+     "title": "Sites falsos de vinheta eletrônica",
+     "desc": "Revendedores cobram pela vinheta das rodovias várias vezes o preço oficial; circular sem ela rende multas pesadas.",
+     "tip": "Use apenas o site oficial evinjeta.dars.si ou os postos de gasolina."
+    },
+    {
+     "title": "Táxis sem licença",
+     "desc": "Carros sem taxímetro que cobram tarifas infladas no aeroporto e de madrugada.",
+     "tip": "Reserve com antecedência Cammeo, Taxi Metro ou um traslado GoOpti."
+    },
+    {
+     "title": "Batedores de carteira na multidão",
+     "desc": "No verão acontecem furtos na orla do Lago Bled e no centro histórico de Liubliana.",
+     "tip": "Leve o celular e a carteira em um bolso da frente ou em uma bolsa com zíper."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Евро (EUR)",

@@ -1435,6 +1435,365 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Peso filipino (PHP)",
+   "plugType": "Tipo A, B, C (220V, 60Hz)",
+   "bestMonths": "Dezembro a maio (estação seca; de dezembro a fevereiro é mais fresco, de março a maio, quente); de junho a novembro, chuvas e tufões",
+   "safety": {
+    "crimeRateSummary": "As ilhas turísticas (Palawan, Bohol, Siargao) costumam ser tranquilas; em Manila, batedores de carteira, roubos por arrastão e golpes são comuns. Há alertas oficiais contra viagens ao oeste de Mindanao e ao arquipélago de Sulu.",
+    "commonScams": [
+     "Táxis no aeroporto de Manila e em rodoviárias que não ligam o taxímetro e cobram preços fixos inflacionados",
+     "Desconhecidos simpáticos que convidam você para a casa deles ou para um jogo de cartas e às vezes colocam droga na bebida",
+     "Casas de câmbio que, com truques de mão, entregam menos dinheiro"
+    ],
+    "safeTravelTips": [
+     "Use o Grab em Manila e mantenha o celular à frente do corpo nos jeepneys e no LRT.",
+     "Na temporada de tufões (junho a novembro), acompanhe os alertas da PAGASA; balsas e voos domésticos são cancelados com frequência.",
+     "Deixe dias de folga entre as ilhas e só embarque em barcos com coletes salva-vidas."
+    ],
+    "emergencyNumbers": {
+     "police": "911",
+     "ambulance": "911",
+     "general": "911"
+    },
+    "safetyScore": 55,
+    "safetyLevel": "Risco moderado",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Bom 4G/5G nas cidades e nas principais ilhas turísticas; sinal fraco em ilhas pequenas e áreas montanhosas",
+    "costPerGbUsd": "~US$ 0,30 - 1",
+    "esimAvailability": "Disponível – chips turísticos da Globe e da Smart no aeroporto; eSIMs internacionais como Airalo ou Holafly",
+    "bestCarriers": [
+     "Smart",
+     "Globe",
+     "DITO"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Fraco a regular: Manila tem LRT/MRT e jeepneys, mas o trânsito é muito pesado; as ilhas são ligadas por voos domésticos e balsas",
+    "costLevel": "Barato",
+    "singleTicketUsd": "~0.25 - 0.60 $ (jeepney / LRT-MRT)",
+    "dailyPassUsd": "Não há passe diário; cartão recarregável Beep (~2 $)",
+    "popularRideApps": [
+     "Grab",
+     "Angkas",
+     "JoyRide",
+     "inDrive"
+    ],
+    "taxiAdvice": "O Grab é a opção mais segura em Manila; os mototáxis Angkas e JoyRide driblam o trânsito. Os táxis amarelos do aeroporto são mais caros; nos brancos, exija o taxímetro. Nas ilhas, combine o preço do tricycle antes de subir."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 30 - 45",
+    "dailyBudgetMidrangeUsd": "US$ 70 - 130",
+    "budgetMealUsd": "US$ 3 - 6",
+    "coffeeUsd": "US$ 2 - 4",
+    "waterBottleUsd": "US$ 0,30 - 0,60",
+    "hostelDormUsd": "US$ 10 - 22",
+    "hotel3StarUsd": "US$ 35 - 75",
+    "flightCostIndex": "Alto (longa distância; Istambul – Manila direto em ~11 h)",
+    "flightTip": "A Turkish Airlines voa direto de Istambul para Manila; conexões pelo Golfo às vezes saem mais baratas. Reserve cedo os voos domésticos da Cebu Pacific e da Philippine Airlines para El Nido, Coron e Bohol e confira a bagagem incluída."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Acrescentar “po” ao falar com pessoas mais velhas e com funcionários demonstra respeito (Salamat po).",
+     "Os jovens levam a mão do mais velho à testa (“mano”); recusar comida oferecida é falta de educação.",
+     "Discutir aos gritos ou envergonhar alguém em público (“hiya”) é malvisto; mantenha a calma."
+    ],
+    "festivals": [
+     "Sinulog (janeiro, Cebu – desfile de dança em homenagem ao Santo Niño)",
+     "Ati-Atihan (janeiro, Kalibo – Aklan)",
+     "Festival das Flores Panagbenga (fevereiro, Baguio)"
+    ],
+    "lifestyle": "Sociedade familiar, hospitaleira e apaixonada por música: tem karaokê por toda parte, o Natal começa em setembro e os shopping centers são o coração da vida social."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "El Nido – lagoas da baía de Bacuit (Palawan)",
+     "Coron – lago Kayangan e mergulho em naufrágios",
+     "Rio subterrâneo de Puerto Princesa (UNESCO)",
+     "Bohol – Chocolate Hills e santuário de társios",
+     "Terraços de arroz de Banaue e Batad (UNESCO)",
+     "Intramuros – a cidade murada espanhola de Manila"
+    ],
+    "bestSeasons": "Dezembro a maio (estação seca; de dezembro a fevereiro é mais fresco, de março a maio, quente); de junho a novembro, chuvas e tufões",
+    "travelStyleTip": "Com mais de 7.600 ilhas, não tente ver tudo: concentre-se em um grupo, como Palawan ou as Visayas (Cebu–Bohol), e voe via Manila ou Cebu."
+   },
+   "religion": {
+    "primaryReligions": "Católicos (~79 %), outras denominações cristãs (~10 %, incl. Iglesia ni Cristo), muçulmanos (~6 %, sobretudo em Mindanao).",
+    "respectNorms": "Cubra ombros e joelhos nas igrejas e não tire fotos durante a missa. Em Mindanao, respeite os costumes islâmicos e o jejum do Ramadã.",
+    "sacredSites": [
+     "Igreja de San Agustín (Manila, UNESCO)",
+     "Basílica do Santo Niño (Cebu)",
+     "Igreja de Quiapo – Nazareno Negro (Manila)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Filipino (baseado no tagalo) e inglês, além de mais de 170 línguas regionais, como cebuano, ilocano e hiligaynon.",
+    "englishProficiency": "Muito bom – um dos níveis de inglês mais altos da Ásia; placas e cardápios em inglês.",
+    "phrases": [
+     {
+      "phrase": "Kumusta po?",
+      "meaning": "Como vai? / Olá",
+      "translation": "Como vai? / Olá",
+      "pronunciation": "koo-MOOS-ta po"
+     },
+     {
+      "phrase": "Salamat po",
+      "meaning": "Obrigado(a)",
+      "translation": "Obrigado(a)",
+      "pronunciation": "sa-LA-mat po"
+     },
+     {
+      "phrase": "Magkano po ito?",
+      "meaning": "Quanto custa isto?",
+      "translation": "Quanto custa isto?",
+      "pronunciation": "mag-KA-no po i-TO"
+     },
+     {
+      "phrase": "Para po!",
+      "meaning": "Pare aqui, por favor! (no jeepney)",
+      "translation": "Pare aqui, por favor! (no jeepney)",
+      "pronunciation": "PA-ra po"
+     },
+     {
+      "phrase": "Masarap!",
+      "meaning": "Delicioso!",
+      "translation": "Delicioso!",
+      "pronunciation": "ma-sa-RAP"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "As sociedades insulares austronésias ficaram sob domínio espanhol a partir de 1565, durante 333 anos; em 1898 foi proclamada a independência, seguida do governo dos Estados Unidos e da ocupação japonesa na Segunda Guerra Mundial. A independência plena veio em 1946.",
+    "milestones": [
+     "1521: Fernão de Magalhães chega a Cebu; batalha de Mactan (Lapulapu)",
+     "1898: Declaração de independência em Kawit",
+     "1946: Independência plena dos EUA",
+     "1986: Revolução EDSA do Poder Popular"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Adobo (frango ou porco cozido no vinagre, shoyu e alho)",
+     "Sinigang (sopa azeda de tamarindo)",
+     "Lechón (leitão inteiro assado – orgulho de Cebu)"
+    ],
+    "traditionalDrinks": [
+     "Suco de calamansi",
+     "Buko juice (água de coco fresco)",
+     "Kapeng barako (café forte de Batangas)"
+    ],
+    "streetFoodAndDesserts": [
+     "Halo-halo (gelo picado com feijão, ube e frutas)",
+     "Turón (rolinho crocante de banana)",
+     "Taho (tofu macio com calda e sagu – café da manhã de rua)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "José Rizal (herói nacional e escritor)",
+     "Manny Pacquiao (campeão mundial de boxe em oito categorias)",
+     "Lea Salonga (cantora e atriz vencedora do Tony)"
+    ],
+    "strongSectors": [
+     "Terceirização de processos (BPO) e call centers",
+     "Remessas de trabalhadores no exterior e marinheiros",
+     "Montagem de eletrônicos e semicondutores"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Nas cidades, usam-se cartões e carteiras digitais como GCash / Maya; nas ilhas, nos tricycles e nos mercados, é preciso dinheiro vivo. Caixas eletrônicos são raros em ilhas pequenas e cobram ~250 PHP por saque.",
+    "tippingCulture": "Os restaurantes costumam incluir 10 % de serviço; se não incluírem, 5-10 % é bem-vindo. É comum dar algo às tripulações de barco e aos guias.",
+    "economicPillars": "Serviços e BPO, remessas, exportação de eletrônicos, turismo e agricultura (arroz, coco, banana)."
+   }
+  },
+  "itin": {
+   "routeName": "Manila, El Nido e Coron: roteiro pelas ilhas de Palawan",
+   "routeSummary": "Um roteiro de 9 dias: a herança espanhola de Manila, voo para as lagoas de calcário de El Nido e barco até os lagos e naufrágios de Coron.",
+   "totalDays": 9,
+   "idealDurationText": "Roteiro de 9 dias pelas ilhas",
+   "bestSeason": "Dezembro a maio (estação seca; de dezembro a fevereiro é mais fresco, de março a maio, quente); de junho a novembro, chuvas e tufões",
+   "transportMode": "Voos domésticos (Manila – El Nido, Coron – Manila) + balsa El Nido – Coron + Grab e tricycles",
+   "paceLevel": "Tranquilo (mar e natureza)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Manila (Intramuros e centro histórico)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Muralhas de Intramuros e Forte Santiago",
+      "Igreja de San Agustín (UNESCO)",
+      "Parque Rizal e Museu Nacional",
+      "Binondo – uma das Chinatowns mais antigas do mundo"
+     ],
+     "activities": [
+      "Percorra Intramuros de bicicleta de bambu ou de kalesa (charrete).",
+      "Faça um tour gastronômico por Binondo.",
+      "Veja o pôr do sol na baía de Manila."
+     ],
+     "foodAndDrinks": [
+      "Adobo e sinigang",
+      "Hopia e siopao em Binondo",
+      "Halo-halo"
+     ],
+     "criticalTips": [
+      "O trânsito é caótico; calcule 1-2 horas entre o aeroporto e a cidade e use o Grab.",
+      "O Museu Nacional é gratuito, mas fecha às segundas-feiras."
+     ],
+     "mapsQuery": "Intramuros, Manila, Philippines"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: El Nido (baía de Bacuit, Palawan)",
+     "recommendedDuration": "3-4 dias",
+     "durationBadge": "3-4 dias",
+     "highlights": [
+      "Big Lagoon e Small Lagoon",
+      "Praia de Nacpan",
+      "Pôr do sol em Las Cabanas"
+     ],
+     "activities": [
+      "Faça o island hopping Tour A ou C.",
+      "Reme de caiaque entre falésias de calcário.",
+      "Vá de scooter ou tricycle até Nacpan."
+     ],
+     "foodAndDrinks": [
+      "Peixe e lula grelhados",
+      "Kinilaw (peixe cru curtido no vinagre)"
+     ],
+     "criticalTips": [
+      "É cobrada uma taxa ecológica e o acesso às lagoas é limitado; reserve o passeio com um dia de antecedência.",
+      "Há poucos caixas eletrônicos e eles costumam ficar sem dinheiro; leve dinheiro vivo."
+     ],
+     "mapsQuery": "El Nido, Palawan, Philippines"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Coron (Busuanga, Palawan)",
+     "recommendedDuration": "3 dias",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Mirante do lago Kayangan",
+      "Lago Barracuda e Twin Lagoon",
+      "Naufrágios japoneses da Segunda Guerra Mundial"
+     ],
+     "activities": [
+      "Mergulhe com cilindro ou faça snorkel nos naufrágios.",
+      "Suba o monte Tapyas no fim da tarde.",
+      "Relaxe nas águas termais de Maquinit."
+     ],
+     "foodAndDrinks": [
+      "Frutos do mar e castanhas-de-caju de Palawan",
+      "Buko juice"
+     ],
+     "criticalTips": [
+      "A balsa El Nido – Coron leva 4-5 h e é cancelada com mau tempo; deixe um dia de folga antes do voo.",
+      "Não voe nas 24 horas seguintes a um mergulho."
+     ],
+     "mapsQuery": "Coron, Palawan, Philippines"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Adobo",
+     "Sinigang",
+     "Kare-kare (ensopado com amendoim)",
+     "Lechón"
+    ],
+    "drinks": [
+     "Suco de calamansi",
+     "Buko juice",
+     "Cerveja San Miguel"
+    ],
+    "streetFoods": [
+     "Halo-halo",
+     "Turón",
+     "Fishballs e kwek-kwek (ovos de codorna empanados)"
+    ],
+    "diningAdvice": "Carne de porco está em toda parte; para comida halal, procure restaurantes muçulmanos em Manila ou escolha frutos do mar e pergunte “walang baboy?” (sem porco?)."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptador de tomada tipo A/B",
+     "Protetor solar seguro para recifes e máscara de snorkel",
+     "Capa impermeável e bolsa estanque (dry bag)",
+     "Repelente de mosquitos (risco de dengue)"
+    ],
+    "safetyAndEtiquette": [
+     "Mantenha os planos de barco flexíveis na temporada de tufões.",
+     "Use “po” com os mais velhos e não levante a voz."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "A",
+     "B",
+     "C"
+    ],
+    "voltage": "220V",
+    "frequency": "60Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "A maioria das tomadas é de pinos chatos no padrão dos EUA (A/B); alguns hotéis têm tomadas universais. Leve adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "A água da torneira não é potável; beba água engarrafada ou filtrada e confira se o gelo é industrial.",
+    "vaccines": [
+     "Hepatite A e febre tifoide",
+     "Tétano e difteria (rotina)",
+     "Encefalite japonesa e raiva para estadias longas em áreas rurais; proteção contra mosquitos por causa da dengue"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "911"
+   },
+   "tipping": {
+    "custom": "Não é obrigatória; deixe 5-10 % se não houver taxa de serviço.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Se a conta já incluir service charge, não precisa dar mais nada; 100-200 PHP para a tripulação do barco é uma boa gentileza."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA de 12 % – sistema novo (lei de 2024), só em lojas credenciadas",
+    "minSpend": "~3.000 PHP por recibo",
+    "customsNote": "A devolução do IVA para turistas foi aprovada em 2024 e está sendo implantada aos poucos; pergunte se a loja participa — se não participar, não conte com o reembolso."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 0,30 - 1,00",
+    "topCarriers": [
+     "Smart",
+     "Globe",
+     "DITO"
+    ],
+    "airportSimTrapWarning": "Os chips turísticos da Smart e da Globe no NAIA são registrados com o passaporte e têm preço justo; confira a franquia de dados em vez de pagar caro por pacotes “ilimitados”."
+   },
+   "touristScams": [
+    {
+     "title": "Armadilha do táxi do aeroporto",
+     "desc": "Motoristas sem licença no NAIA cobram 2-3 vezes a tarifa do taxímetro.",
+     "tip": "Chame um Grab no ponto oficial de embarque."
+    },
+    {
+     "title": "O simpático “eu conheço você”",
+     "desc": "Desconhecidos em Manila se passam por funcionários do hotel e convidam você para ir à casa deles, jogar cartas ou beber.",
+     "tip": "Recuse com educação e não aceite bebidas de estranhos."
+    },
+    {
+     "title": "Aliciadores de passeios de barco",
+     "desc": "Os passeios baratos vendidos na rua em El Nido e Coron podem não ter segurança ou simplesmente não sair.",
+     "tip": "Reserve com agências licenciadas ou pelo seu hotel e peça recibo."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Филиппинское песо (PHP)",

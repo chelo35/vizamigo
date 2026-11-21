@@ -1471,6 +1471,374 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Yuan chinês / renminbi (CNY)",
+   "bestMonths": "Abril – maio e setembro – outubro (clima ameno e seco); verões quentes, úmidos e chuvosos, invernos rigorosos no norte. O Ano-Novo Chinês e a Semana Dourada (1–7 de outubro) ficam lotados",
+   "safety": {
+    "safetyScore": 55,
+    "crimeRateSummary": "A criminalidade de rua e a violência são muito baixas nas grandes cidades, e andar à noite costuma ser seguro. Porém, os golpes de casas de chá e galerias de arte são comuns, e as leis locais podem ser aplicadas de forma rígida e arbitrária, por isso os alertas oficiais pedem cautela extra.",
+    "commonScams": [
+     "Armadilha da 'cerimônia do chá': 'estudantes' que falam inglês levam você a uma casa de chá e a conta chega a centenas de dólares (Wangfujing, em Pequim; rua Nanjing, em Xangai)",
+     "Galerias de 'estudantes de arte' que vendem quadros sem valor a preços altos",
+     "Motoristas de 'táxis pretos' (hei che) sem taxímetro em aeroportos e estações"
+    ],
+    "safeTravelTips": [
+     "Ande sempre com o passaporte; ele é pedido em hotéis, estações e entradas de museus.",
+     "Configure uma VPN ou um eSIM de roaming antes de chegar; Google, WhatsApp e Instagram são bloqueados.",
+     "As penas por drogas são duríssimas; não fotografe instalações militares nem governamentais."
+    ],
+    "emergencyNumbers": {
+     "police": "110",
+     "ambulance": "120",
+     "general": "110 / 120 / 119"
+    },
+    "safetyLevel": "Risco moderado",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60"
+   },
+   "internet": {
+    "networkCoverage": "99% (5G amplamente disponível nas cidades, inclusive no metrô)",
+    "costPerGbUsd": "~US$ 1,50 - 5",
+    "esimAvailability": "Boa (eSIM de roaming; o chip local exige registro com passaporte)",
+    "bestCarriers": [
+     "China Mobile",
+     "China Unicom",
+     "China Telecom"
+    ],
+    "vpnRequired": true
+   },
+   "transport": {
+    "transportQuality": "De primeiro mundo (mais de 45.000 km de trens de alta velocidade e metrôs modernos)",
+    "costLevel": "Barato",
+    "singleTicketUsd": "US$ 0,40 - 1,50",
+    "dailyPassUsd": "US$ 2,50 - 3",
+    "popularRideApps": [
+     "DiDi",
+     "Alipay",
+     "WeChat",
+     "Amap (Gaode)",
+     "Railway 12306",
+     "Trip.com"
+    ],
+    "taxiAdvice": "O DiDi tem interface em inglês e funciona com cartões estrangeiros; também dá para chamá-lo dentro do Alipay. No metrô, escaneie o QR code de transporte do Alipay ou do WeChat. Reserve trens com o passaporte no 12306 ou no Trip.com."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 30 - 50",
+    "dailyBudgetMidrangeUsd": "US$ 80 - 140",
+    "budgetMealUsd": "US$ 3 - 8",
+    "coffeeUsd": "US$ 2 - 5",
+    "waterBottleUsd": "US$ 0,30 - 0,60",
+    "hostelDormUsd": "US$ 10 - 22",
+    "hotel3StarUsd": "US$ 45 - 90",
+    "flightCostIndex": "Moderado",
+    "flightTip": "A Turkish Airlines voa direto de Istambul para Pequim, Xangai e Cantão; as companhias chinesas com escala ou as conexões pelo Golfo costumam sair mais baratas."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Não espete os hashis na vertical no arroz; lembra o incenso dos funerais.",
+     "Entregue e receba cartões e presentes com as duas mãos.",
+     "Nunca constranja ninguém em público; a 'face' (mianzi) é importante.",
+     "O número 4 soa como 'morte' e é considerado de má sorte."
+    ],
+    "festivals": [
+     "Festa da Primavera / Ano-Novo Chinês (janeiro–fevereiro; a maior migração anual do mundo)",
+     "Festival do Barco-Dragão (junho)",
+     "Festival do Meio do Outono (setembro–outubro; bolos da lua)"
+    ],
+    "lifestyle": "A vida gira em torno dos 'superapps' (WeChat, Alipay): pagamentos, transporte e delivery de comida, tudo pelo celular. Danças nas praças ao entardecer, a cultura do chá e as longas refeições em família fazem parte do dia a dia."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Cidade Proibida (Pequim)",
+     "Muralha da China – Mutianyu ou Jinshanling",
+     "Guerreiros de terracota (Xi'an)",
+     "O Bund e o skyline de Lujiazui (Xangai)",
+     "Rio Li, Guilin e os picos cársticos de Yangshuo",
+     "Base de criação de pandas-gigantes de Chengdu"
+    ],
+    "bestSeasons": "Abril – maio e setembro – outubro (clima ameno e seco); verões quentes, úmidos e chuvosos, invernos rigorosos no norte. O Ano-Novo Chinês e a Semana Dourada (1–7 de outubro) ficam lotados",
+    "travelStyleTip": "Viaje entre as cidades de trem de alta velocidade (Pequim–Xangai ~4,5–6 horas). Para a Cidade Proibida ou os Guerreiros de terracota, reserve on-line com dias de antecedência usando o número do passaporte."
+   },
+   "religion": {
+    "primaryReligions": "A maioria não tem religião ou segue crenças populares; budistas ~15–18%, práticas taoístas difundidas, cristãos ~2–5%, muçulmanos ~2% (hui e uigures).",
+    "respectNorms": "Nos templos, não aponte para as estátuas de Buda, não pise nas soleiras e peça permissão antes de fotografar quem está queimando incenso. Nas mesquitas, espera-se roupa discreta.",
+    "sacredSites": [
+     "Templo do Lama Yonghe (Pequim)",
+     "Grande Mesquita de Xi'an (bairro muçulmano)",
+     "Templo do Buda de Jade (Xangai)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Chinês mandarim padrão (putonghua), escrito com caracteres simplificados. No sul, falam-se cantonês e muitos dialetos.",
+    "englishProficiency": "Baixo; fora dos grandes hotéis e aeroportos, quase ninguém fala inglês. Baixe um tradutor offline (Apple Tradutor, Baidu, Youdao); o Google Tradutor não funciona sem VPN.",
+    "phrases": [
+     {
+      "phrase": "你好 (Nǐ hǎo)",
+      "meaning": "Olá",
+      "translation": "Olá",
+      "pronunciation": "nee how"
+     },
+     {
+      "phrase": "谢谢 (Xièxie)",
+      "meaning": "Obrigado",
+      "translation": "Obrigado",
+      "pronunciation": "shyeh-shyeh"
+     },
+     {
+      "phrase": "多少钱？(Duōshao qián?)",
+      "meaning": "Quanto custa?",
+      "translation": "Quanto custa?",
+      "pronunciation": "dwoh-shao chyen"
+     },
+     {
+      "phrase": "清真吗？(Qīngzhēn ma?)",
+      "meaning": "É halal?",
+      "translation": "É halal?",
+      "pronunciation": "ching-jun mah"
+     },
+     {
+      "phrase": "买单 (Mǎidān)",
+      "meaning": "A conta, por favor",
+      "translation": "A conta, por favor",
+      "pronunciation": "my-dahn"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Uma das civilizações contínuas mais antigas do mundo, a China foi unificada por Qin Shi Huang em 221 a.C. Com os Han e os Tang, a Rota da Seda a ligou ao Ocidente, e os Ming construíram a Cidade Proibida. A última dinastia, a Qing, caiu em 1912 e deu lugar a uma república; em 1949 foi proclamada a República Popular, e a partir de 1978 a 'reforma e abertura' a transformou na segunda maior economia do mundo.",
+    "milestones": [
+     "221 a.C.: Qin Shi Huang unifica a China",
+     "Século II a.C.: a Rota da Seda é aberta com os Han",
+     "1420: a Cidade Proibida de Pequim é concluída",
+     "1949: proclamação da República Popular da China; 1978: reforma e abertura"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Pato laqueado de Pequim (pele crocante, panquecas finas e molho adocicado)",
+     "Xiaolongbao (bolinhos recheados com caldo, de Xangai)",
+     "Mapo tofu (tofu apimentado com pimenta de Sichuan)"
+    ],
+    "traditionalDrinks": [
+     "Chá verde (Longjing de Hangzhou)",
+     "Baijiu (aguardente de sorgo, como o Moutai)",
+     "Doujiang (leite de soja quente no café da manhã)"
+    ],
+    "streetFoodAndDesserts": [
+     "Jianbing (crepe de café da manhã com ovo)",
+     "Roujiamo (sanduíche de carne de Xi'an; de boi ou de cordeiro no bairro muçulmano)",
+     "Tanghulu (espetinhos de fruta de espinheiro caramelizada)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Confúcio (filósofo)",
+     "Qin Shi Huang (primeiro imperador da China)",
+     "Zheng He (almirante e explorador muçulmano)"
+    ],
+    "strongSectors": [
+     "Eletrônicos e manufatura ('a fábrica do mundo')",
+     "Veículos elétricos e baterias (BYD, CATL)",
+     "Trens de alta velocidade e infraestrutura"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Pagamento quase exclusivamente pelo celular: Alipay e WeChat Pay já permitem vincular Visa/Mastercard estrangeiros. Por lei, o dinheiro vivo tem de ser aceito, mas o pequeno comércio pode não ter troco, e poucas lojas aceitam cartões estrangeiros diretamente.",
+    "tippingCulture": "Gorjeta não é costume e às vezes é recusada; hotéis e restaurantes de luxo podem cobrar 10–15% de serviço.",
+    "economicPillars": "Manufatura e exportações, tecnologia e comércio eletrônico, infraestrutura e construção, energia verde (solar, eólica, veículos elétricos) e consumo interno."
+   }
+  },
+  "itin": {
+   "routeName": "A China imperial: Pequim, Xi'an e Xangai",
+   "routeSummary": "Um roteiro clássico de 9 dias de trem de alta velocidade: Cidade Proibida e Muralha da China, os Guerreiros de terracota em Xi'an, cidade da Rota da Seda, e a futurista Xangai.",
+   "totalDays": 9,
+   "idealDurationText": "9 dias",
+   "bestSeason": "Abril – maio e setembro – outubro (clima ameno e seco); verões quentes, úmidos e chuvosos, invernos rigorosos no norte. O Ano-Novo Chinês e a Semana Dourada (1–7 de outubro) ficam lotados",
+   "transportMode": "Trem de alta velocidade (série G), metrô e DiDi",
+   "paceLevel": "Moderado a intenso",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Pequim (Cidade Proibida e Muralha da China)",
+     "recommendedDuration": "3–4 dias",
+     "durationBadge": "4 dias",
+     "highlights": [
+      "Cidade Proibida e vista do parque Jingshan",
+      "Muralha da China em Mutianyu",
+      "Templo do Céu",
+      "Hutongs e lago Houhai"
+     ],
+     "activities": [
+      "Em Mutianyu, suba de teleférico e desça de tobogã.",
+      "Assista ao tai chi ao amanhecer no parque do Templo do Céu.",
+      "Percorra os hutongs de bicicleta ou a pé."
+     ],
+     "foodAndDrinks": [
+      "Pato laqueado",
+      "Zhajiangmian (macarrão com molho de soja fermentada)",
+      "Restaurantes halal e espetinhos de cordeiro (yangrou chuan) em Niujie"
+     ],
+     "criticalTips": [
+      "Os ingressos para a Cidade Proibida só são vendidos on-line, com passaporte, e ela fecha às segundas; reserve com até 7 dias de antecedência.",
+      "Para entrar na Praça da Paz Celestial (Tiananmen) e arredores há revista de segurança com passaporte; espere filas longas."
+     ],
+     "mapsQuery": "Forbidden City, Beijing, China"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Xi'an (Guerreiros de terracota e bairro muçulmano)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Guerreiros de terracota (fossos 1, 2 e 3)",
+      "Muralha de Xi'an",
+      "Bairro muçulmano (Huimin Jie) e Grande Mesquita",
+      "Grande Pagode do Ganso Selvagem"
+     ],
+     "activities": [
+      "Percorra de bicicleta os 14 km da muralha da época Ming.",
+      "Prove a comida de rua do bairro muçulmano ao anoitecer.",
+      "Assista ao espetáculo de fontes musicais em frente ao pagode."
+     ],
+     "foodAndDrinks": [
+      "Yangrou paomo (sopa de cordeiro com pão esfarelado)",
+      "Macarrão biangbiang",
+      "Roujiamo e liangpi (macarrão frio)"
+     ],
+     "criticalTips": [
+      "Compre o ingresso para os Guerreiros por canais oficiais, com passaporte; eles ficam a ~1 hora da cidade, cuidado com falsos vendedores de 'tours'.",
+      "Nas vielas laterais do bairro muçulmano há lugares mais autênticos que na rua turística."
+     ],
+     "mapsQuery": "Terracotta Army Museum, Xi'an, China"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Xangai (o Bund e a cidade velha)",
+     "recommendedDuration": "3 dias",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Calçadão do Bund",
+      "Lujiazui e o mirante da Shanghai Tower",
+      "Jardim Yu e bazar de Chenghuangmiao",
+      "Antiga Concessão Francesa"
+     ],
+     "activities": [
+      "À noite, admire do Bund o skyline iluminado de Pudong.",
+      "Explore os cafés das ruas arborizadas da Concessão Francesa.",
+      "Faça um bate-volta de trem aos jardins de Suzhou ou ao Lago Oeste, em Hangzhou."
+     ],
+     "foodAndDrinks": [
+      "Xiaolongbao",
+      "Shengjianbao (pãezinhos recheados com caldo, feitos na chapa)",
+      "Caranguejo-peludo no outono"
+     ],
+     "criticalTips": [
+      "Na rua Nanjing, recuse ofertas para 'praticar inglês' ou de 'massagens'.",
+      "O trem Maglev liga o aeroporto de Pudong à cidade em cerca de 8 minutos; depois, pegue o metrô."
+     ],
+     "mapsQuery": "The Bund, Shanghai, China"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Pato laqueado",
+     "Xiaolongbao",
+     "Mapo tofu",
+     "Yangrou paomo"
+    ],
+    "drinks": [
+     "Chá verde Longjing",
+     "Chá de jasmim",
+     "Doujiang (leite de soja)",
+     "Baijiu"
+    ],
+    "streetFoods": [
+     "Jianbing",
+     "Roujiamo",
+     "Espetinhos de cordeiro (yangrou chuan)",
+     "Tanghulu"
+    ],
+    "diningAdvice": "Carne de porco está em toda parte; para comer halal, procure restaurantes hui e uigures com a placa verde '清真' (qīngzhēn), presentes em todas as cidades (por exemplo, as casas de macarrão de Lanzhou). Dá para pedir apontando as fotos no Meituan/Dianping."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "VPN ou eSIM de roaming configurado antes da viagem",
+     "Contas do Alipay e do WeChat Pay vinculadas ao seu cartão estrangeiro",
+     "Adaptador de tomada universal",
+     "Apps de tradução offline e de mapas (Amap)"
+    ],
+    "safetyAndEtiquette": [
+     "É preciso mostrar o passaporte em hotéis, estações e museus; leve-o sempre com você.",
+     "Em voos domésticos, só são permitidos carregadores portáteis com o selo CCC (3C).",
+     "Evite discussões políticas em público e não fotografe locais sensíveis."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "A",
+     "C",
+     "I"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "A maioria das tomadas é para dois pinos chatos (A) e três pinos inclinados (I); o plugue europeu fino (C) entra em muitas tomadas combinadas, mas os grossos com aterramento não: leve um adaptador universal."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "A água da torneira não é potável; ferva-a ou use água mineral. A maioria dos hotéis tem chaleira elétrica e água de cortesia.",
+    "vaccines": [
+     "Vacinas de rotina (tétano, difteria, sarampo)",
+     "Hepatite A e febre tifoide",
+     "Encefalite japonesa e raiva para viagens longas em áreas rurais"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "120"
+   },
+   "tipping": {
+    "custom": "Gorjeta não é costume.",
+    "standardPercent": 0,
+    "rule": "optional",
+    "note": "Hotéis e restaurantes de luxo podem cobrar 10–15% de serviço; guias particulares agradecem uma pequena gorjeta."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA de 13%; restituição ao turista de ~11% (descontadas as taxas)",
+    "minSpend": "~200 CNY ou mais no mesmo dia em uma loja 'Tax Free'",
+    "customsNote": "Só em lojas com o logo '离境退税 / Tax Free'; apresente os itens sem uso na alfândega do aeroporto de saída e depois vá ao balcão de restituição. Em algumas cidades há restituição imediata na própria loja."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 1,50 - 5,00",
+    "topCarriers": [
+     "China Mobile",
+     "China Unicom",
+     "China Telecom"
+    ],
+    "airportSimTrapWarning": "Os chips chineses locais ficam atrás do 'Grande Firewall': Google, WhatsApp, Instagram e Gmail não funcionam. Os eSIMs de roaming roteados por Hong Kong costumam contorná-lo; mesmo assim, instale antes uma VPN reserva, porque baixá-la dentro da China é muito difícil."
+   },
+   "touristScams": [
+    {
+     "title": "Golpe da cerimônia do chá",
+     "desc": "Em ruas turísticas, 'estudantes' que querem praticar inglês convidam você para uma casa de chá; algumas xícaras acabam custando centenas de dólares.",
+     "tip": "Recuse com educação convites de desconhecidos para casas de chá, bares ou karaokês; escolha você o lugar."
+    },
+    {
+     "title": "Galeria de 'estudantes de arte'",
+     "desc": "'Estudantes' convidam você para 'a exposição deles' e vendem quadros produzidos em série como obra própria, a preços altos.",
+     "tip": "Não ceda à pressão; compre arte autêntica em lojas de museus."
+    },
+    {
+     "title": "Táxi preto (hei che)",
+     "desc": "Motoristas nas saídas de aeroportos e estações usam carros sem taxímetro e cobram tarifas altíssimas.",
+     "tip": "Use a fila oficial de táxis ou o DiDi e confira a placa no app antes de entrar."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Китайский юань (CNY)",

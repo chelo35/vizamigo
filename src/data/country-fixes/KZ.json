@@ -1551,6 +1551,394 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Tenge cazaque (KZT)",
+   "plugType": "Tipo C, F (220V, 50Hz)",
+   "bestMonths": "Maio – junho e setembro (ideal para as montanhas, lagos e cânions de Almaty) · julho – agosto é quente, mas a montanha é fresca; o inverno é muito frio (−30 °C em Astana) e a temporada de esqui em Shymbulak vai de dezembro a março",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "No geral, é um país seguro; nas cidades grandes pode haver brigas e furtos por arrastão perto de casas noturnas, além de batedores de carteira em bazares movimentados. Na montanha e na estepe, os principais riscos são o isolamento e as mudanças bruscas de tempo.",
+    "commonScams": [
+     "Taxistas não oficiais em aeroportos e estações cobrando tarifas infladas",
+     "Falsos policiais que pedem dinheiro com a desculpa de checar documentos",
+     "Contas infladas ou bebidas adulteradas em alguns bares (cuidado na vida noturna)"
+    ],
+    "safeTravelTips": [
+     "Peça táxi sempre pelo Yandex Go ou pelo inDrive.",
+     "Nas trilhas de montanha (Grande Lago de Almaty, Kolsai) o tempo muda rápido; leve agasalho e água.",
+     "Ande com uma fotocópia e uma cópia digital do passaporte; a polícia pode pedir identificação."
+    ],
+    "emergencyNumbers": {
+     "police": "102",
+     "ambulance": "103",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "90%+ (4G / 5G)",
+    "costPerGbUsd": "US$ 0,20 - 0,60",
+    "esimAvailability": "Boa",
+    "bestCarriers": [
+     "Beeline Kazakhstan",
+     "Kcell / Activ",
+     "Tele2 / Altel"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Bom (metrô e ônibus em Almaty, ônibus em Astana; trens rápidos e noturnos entre as cidades)",
+    "costLevel": "Barato",
+    "singleTicketUsd": "US$ 0,30 - 0,50",
+    "dailyPassUsd": "Não existe; em Almaty você paga por viagem com o cartão Onay",
+    "popularRideApps": [
+     "Yandex Go",
+     "inDrive"
+    ],
+    "taxiAdvice": "Os táxis do Yandex Go e do inDrive são baratos e confiáveis; pegar carona com carros particulares parados na rua é comum, mas não é recomendado para estrangeiros. O voo Almaty – Astana dura cerca de 1,5 hora; de trem, são mais de 12."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 30 - 45",
+    "dailyBudgetMidrangeUsd": "US$ 70 - 120",
+    "budgetMealUsd": "US$ 4 - 8",
+    "coffeeUsd": "US$ 1,50 - 4",
+    "waterBottleUsd": "US$ 0,40 - 0,70",
+    "hostelDormUsd": "US$ 8 - 18",
+    "hotel3StarUsd": "US$ 40 - 80",
+    "flightCostIndex": "Moderado (voos diretos de Istambul para Almaty e Astana)",
+    "flightTip": "Os voos domésticos da Air Astana e da FlyArystan têm preços acessíveis; as distâncias são enormes, então vale a pena voar em vez de encarar longos trechos de estrada."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "A hospitalidade é sagrada; não se recusa chá, e a tigela é servida só até a metade.",
+     "Demonstre respeito aos mais velhos; os homens podem se cumprimentar com as duas mãos.",
+     "O pão (nan) é respeitado: nunca fica de cabeça para baixo nem vai para o lixo.",
+     "Nas casas, entra-se descalço."
+    ],
+    "festivals": [
+     "Nauryz (21 a 23 de março; festa da primavera com a sopa nauryz kozhe)",
+     "Dia de Astana (6 de julho)",
+     "Dia da Independência (16 de dezembro)"
+    ],
+    "lifestyle": "As tradições nômades se misturam à vida urbana moderna; são comuns os piqueniques em família na montanha nos fins de semana, os grandes casamentos \"toy\" e os banquetes com muita carne."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Torre Bayterek e o skyline moderno de Astana",
+     "Almaty e a colina Kok Tobe",
+     "Grande Lago de Almaty",
+     "Cânion de Charyn",
+     "Lagos Kolsai e Kaindy",
+     "Mausoléu de Khoja Ahmed Yasawi (Turquestão, UNESCO)"
+    ],
+    "bestSeasons": "Maio – junho e setembro (ideal para as montanhas, lagos e cânions de Almaty) · julho – agosto é quente, mas a montanha é fresca; o inverno é muito frio (−30 °C em Astana) e a temporada de esqui em Shymbulak vai de dezembro a março",
+    "travelStyleTip": "Use Almaty como base e chegue aos cânions e lagos em passeios ou de carro; os voos domésticos para Astana e Turquestão economizam muito tempo."
+   },
+   "religion": {
+    "primaryReligions": "Islã (~70 %, majoritariamente sunita – hanafita), cristianismo (~17 %, majoritariamente ortodoxo russo)",
+    "respectNorms": "As mulheres devem cobrir o cabelo nas mesquitas; em lugares sagrados como o Mausoléu de Khoja Ahmed Yasawi, faça silêncio e vista-se com discrição.",
+    "sacredSites": [
+     "Mausoléu de Khoja Ahmed Yasawi (Turquestão)",
+     "Mesquita Hazrat Sultan (Astana)",
+     "Catedral de Zenkov (da Ascensão) (Almaty)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "O cazaque é a língua do Estado; o russo tem uso oficial e é a principal língua de comunicação nas cidades.",
+    "englishProficiency": "Limitado; vem crescendo entre os jovens e no setor de serviços de Almaty e Astana, mas o russo é muito mais útil.",
+    "phrases": [
+     {
+      "phrase": "Сәлеметсіз бе (Sälemetsiz be)",
+      "meaning": "Olá (formal)",
+      "translation": "O senhor está bem? / Saudações",
+      "pronunciation": "sä-le-met-siz be"
+     },
+     {
+      "phrase": "Рақмет (Raqmet)",
+      "meaning": "Obrigado",
+      "translation": "Obrigado",
+      "pronunciation": "rakh-met"
+     },
+     {
+      "phrase": "Өтінемін (Ötinemin)",
+      "meaning": "Por favor",
+      "translation": "Eu lhe peço",
+      "pronunciation": "ö-ti-ne-min"
+     },
+     {
+      "phrase": "Бұл қанша тұрады? (Bul qansha turady?)",
+      "meaning": "Quanto custa isto?",
+      "translation": "Qual é o preço?",
+      "pronunciation": "bul qan-sha tu-ra-dy"
+     },
+     {
+      "phrase": "Сау болыңыз (Sau bolyñyz)",
+      "meaning": "Tchau",
+      "translation": "Fique com saúde",
+      "pronunciation": "sau bo-lyng-yz"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Nas estepes dos sakas, dos hunos e dos canatos túrquicos foi fundado, em 1465, o Canato Cazaque. Incorporada ao Império Russo no século XIX, a região proclamou a independência em 16 de dezembro de 1991, depois do período soviético; em 1997, a capital passou de Almaty para Astana.",
+    "milestones": [
+     "1465: Fundação do Canato Cazaque",
+     "1961: Yuri Gagarin decola rumo ao espaço a partir de Baikonur",
+     "1991: Independência (16 de dezembro)",
+     "1997: Transferência da capital para Astana"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Beshbarmak (carne de cavalo ou de cordeiro cozida com massa aberta à mão e molho de cebola)",
+     "Kazy (embutido de carne de cavalo)",
+     "Kuyrdak (fritada de miúdos e carne)"
+    ],
+    "traditionalDrinks": [
+     "Kumis (leite de égua fermentado)",
+     "Shubat (leite de camela fermentado)",
+     "Chá cazaque com leite"
+    ],
+    "streetFoodAndDesserts": [
+     "Baursak (bolinhos de massa fritos)",
+     "Samsa (pastel de carne assado no forno tandoor)",
+     "Kurt (bolinhas de iogurte seco e salgado)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Abai Kunanbayev (poeta e pensador nacional)",
+     "Al-Farabi (filósofo nascido, segundo a tradição, perto de Otrar)",
+     "Gennady Golovkin (boxeador campeão mundial)"
+    ],
+    "strongSectors": [
+     "Petróleo e gás (Tengiz, Kashagan)",
+     "Urânio (maior produtor mundial)",
+     "Produção de grãos e logística de trânsito (Corredor Médio)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Os pagamentos por QR do Kaspi.kz e os cartões são aceitos em quase todo lugar; leve um pouco de dinheiro em tenge para bazares e cidades pequenas.",
+    "tippingCulture": "As contas de restaurante costumam incluir 10–15 % de serviço; se não incluírem, o normal é deixar 10 %.",
+    "economicPillars": "Petróleo e gás, mineração (urânio, cobre, ferro), agricultura, construção e logística de trânsito."
+   }
+  },
+  "itin": {
+   "routeName": "Roteiro pelo Cazaquistão: Astana, Turquestão, Almaty e Charyn – Kolsai",
+   "routeSummary": "Um roteiro de 8 dias: da futurista Astana ao Turquestão, coração espiritual do mundo túrquico, e depois a Almaty, aos pés das montanhas, e à natureza selvagem do cânion de Charyn e dos lagos Kolsai.",
+   "totalDays": 8,
+   "idealDurationText": "Roteiro de 8 dias",
+   "bestSeason": "Maio – junho e setembro (ideal para as montanhas, lagos e cânions de Almaty) · julho – agosto é quente, mas a montanha é fresca; o inverno é muito frio (−30 °C em Astana) e a temporada de esqui em Shymbulak vai de dezembro a março",
+   "transportMode": "Voos domésticos Astana – Turquestão e Turquestão – Almaty (ou trem noturno); passeio de 4x4 ou carro alugado de Almaty até Charyn e Kolsai",
+   "paceLevel": "Equilibrado (cidade, cultura e natureza)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Astana",
+     "recommendedDuration": "2 dias (capital moderna)",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Torre Bayterek",
+      "Mesquita Hazrat Sultan",
+      "Khan Shatyr",
+      "Museu Nacional do Cazaquistão"
+     ],
+     "activities": [
+      "Aprecie a cidade do mirante da Bayterek.",
+      "Passeie pela orla do rio Yesil.",
+      "Veja a armadura do \"Homem de Ouro\" no Museu Nacional."
+     ],
+     "foodAndDrinks": [
+      "Beshbarmak",
+      "Baursak",
+      "Kumis"
+     ],
+     "criticalTips": [
+      "No inverno a temperatura chega a −30 °C; o melhor é viajar entre maio e setembro.",
+      "As distâncias são grandes para fazer a pé; use o Yandex Go."
+     ],
+     "mapsQuery": "Bayterek, Astana, Kazakhstan"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Turquestão",
+     "recommendedDuration": "1 dia (centro espiritual)",
+     "durationBadge": "1 dia",
+     "highlights": [
+      "Mausoléu de Khoja Ahmed Yasawi (UNESCO)",
+      "Complexo turístico Keruen Saray",
+      "Mausoléu de Arystan Bab",
+      "Antiga Otrar"
+     ],
+     "activities": [
+      "Visite o Mausoléu de Khoja Ahmed Yasawi.",
+      "À noite, assista ao espetáculo de água e luz do Keruen Saray.",
+      "Faça um passeio até o Mausoléu de Arystan Bab e Otrar."
+     ],
+     "foodAndDrinks": [
+      "Samsa",
+      "Plov ao estilo do sul",
+      "Shubat"
+     ],
+     "criticalTips": [
+      "Vista-se com discrição no mausoléu; as mulheres devem cobrir o cabelo.",
+      "No verão faz muito calor; programe as visitas para a manhã e o fim da tarde."
+     ],
+     "mapsQuery": "Mausoleum of Khoja Ahmed Yasawi, Turkistan, Kazakhstan"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Almaty",
+     "recommendedDuration": "3 dias (aos pés das montanhas)",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Teleférico de Kok Tobe",
+      "Catedral de Zenkov e Parque Panfilov",
+      "Bazar Verde (Zelyony Bazar)",
+      "Medeu e Shymbulak",
+      "Grande Lago de Almaty"
+     ],
+     "activities": [
+      "Veja o pôr do sol sobre a cidade a partir de Kok Tobe.",
+      "Suba a montanha no teleférico de Shymbulak.",
+      "Faça um passeio de meio dia ao Grande Lago de Almaty."
+     ],
+     "foodAndDrinks": [
+      "Kazy e kuyrdak",
+      "Lagman",
+      "As famosas maçãs aport de Almaty"
+     ],
+     "criticalTips": [
+      "O Grande Lago de Almaty é área de proteção de mananciais; confira antes os horários e as regras de acesso.",
+      "O tempo na montanha muda rápido; leve capa de chuva e fleece."
+     ],
+     "mapsQuery": "Almaty, Kazakhstan"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Cânion de Charyn e lagos Kolsai",
+     "recommendedDuration": "2 dias (passeio de natureza)",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Vale dos Castelos, cânion de Charyn",
+      "Lagos Kolsai",
+      "Floresta submersa do lago Kaindy",
+      "Vilarejo de Saty"
+     ],
+     "activities": [
+      "Percorra a pé o Vale dos Castelos.",
+      "Ande a cavalo em Kolsai.",
+      "Observe as árvores submersas do lago Kaindy."
+     ],
+     "foodAndDrinks": [
+      "Beshbarmak em uma casa de família no campo",
+      "Baursak",
+      "Kumis"
+     ],
+     "criticalTips": [
+      "As estradas são longas e em parte ruins; o recomendado é fazer um passeio de 4x4.",
+      "Leve tenge em dinheiro para as entradas dos parques nacionais."
+     ],
+     "mapsQuery": "Charyn Canyon, Kazakhstan"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Beshbarmak (carne de cavalo ou de cordeiro cozida com massa aberta à mão e molho de cebola)",
+     "Kazy (embutido de carne de cavalo)",
+     "Kuyrdak (fritada de miúdos e carne)"
+    ],
+    "drinks": [
+     "Kumis (leite de égua fermentado)",
+     "Shubat (leite de camela fermentado)",
+     "Chá cazaque com leite"
+    ],
+    "streetFoods": [
+     "Baursak (bolinhos de massa fritos)",
+     "Samsa (pastel de carne assado no forno tandoor)",
+     "Kurt (bolinhas de iogurte seco e salgado)"
+    ],
+    "diningAdvice": "A culinária, muito baseada em carne, inclui com frequência carne de cavalo; pergunte se preferir evitá-la. Experimente o kumis em pequenas quantidades no começo, porque ele pode não cair bem."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Tomadas tipo C/F (como na Europa continental)",
+     "Roupas em camadas para montanha e estepe",
+     "Calçado de trilha",
+     "Protetor solar de fator alto (o sol é forte na altitude)"
+    ],
+    "safetyAndEtiquette": [
+     "Em mausoléus e mesquitas, vista-se com discrição e cubra a cabeça.",
+     "Respeite os mais velhos e nunca coloque o pão de cabeça para baixo na mesa."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Tomadas europeias C/F (Schuko) de dois pinos redondos, iguais às da Turquia; não é preciso adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Em Almaty e Astana a água da torneira é tratada, mas por causa dos encanamentos antigos é melhor beber água engarrafada ou filtrada; ferva a água de riachos de montanha antes de beber.",
+    "vaccines": [
+     "Vacinas de rotina (tríplice viral, tétano)",
+     "Hepatite A",
+     "Encefalite transmitida por carrapatos (se for fazer trilhas na zona rural)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "103"
+   },
+   "tipping": {
+    "custom": "As contas de restaurante costumam incluir 10–15 % de serviço; se não incluírem, o costume é deixar 10 %.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Se a conta tiver uma linha “обслуживание” (serviço), não é preciso dar mais nada; os taxistas não esperam gorjeta."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA de 16 % (projeto piloto Tax Free)",
+    "minSpend": "10 MRP por nota (~43.000 KZT)",
+    "customsNote": "Compre produtos não alimentícios em lojas participantes do projeto piloto Tax Free (por exemplo, grandes shoppings) e valide-os na alfândega do aeroporto ao levá-los para fora da União Econômica Eurasiática. Há poucas lojas participantes, então pergunte antes."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 0,20 - 0,60",
+    "topCarriers": [
+     "Beeline Kazakhstan",
+     "Kcell / Activ",
+     "Tele2 / Altel"
+    ],
+    "airportSimTrapWarning": "Os balcões do aeroporto vendem pacotes turísticos mais caros do que na cidade; compre um chip barato com o passaporte nas lojas da Beeline, Kcell ou Tele2. Celulares estrangeiros podem precisar de registro do IMEI."
+   },
+   "touristScams": [
+    {
+     "title": "Táxis não oficiais",
+     "desc": "Motoristas sem licença em aeroportos e estações cobram tarifas infladas.",
+     "tip": "Use o Yandex Go ou o inDrive e confira o preço no app."
+    },
+    {
+     "title": "Falsa polícia",
+     "desc": "Falsos agentes pedem dinheiro com a desculpa de checar documentos.",
+     "tip": "Peça a identificação e não entregue dinheiro; ande com uma cópia do passaporte e ligue para o 102 se tiver dúvida."
+    },
+    {
+     "title": "Contas e bebidas em bares",
+     "desc": "Contas infladas ou bebidas adulteradas em alguns bares.",
+     "tip": "Não perca sua bebida de vista e não peça nada sem ver os preços."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Казахстанский тенге (KZT)",

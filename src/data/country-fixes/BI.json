@@ -1435,6 +1435,365 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Franco burundiano (BIF)",
+   "plugType": "Tipo C, E (220V, 50Hz)",
+   "bestMonths": "Junho a agosto (estação seca longa) e dezembro a janeiro (estação seca curta); de fevereiro a maio e de setembro a novembro chove",
+   "safety": {
+    "safetyScore": 40,
+    "safetyLevel": "Cautela recomendada",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60",
+    "crimeRateSummary": "Os EUA recomendam reconsiderar a viagem; o Reino Unido (FCDO) desaconselha viagens às províncias de Cibitoke e Bubanza, na fronteira com a RD do Congo, e aos arredores do Parque Nacional de Kibira. Em Bujumbura há roubos à mão armada e assaltos; manifestações podem ficar violentas em momentos de tensão política, e a falta de combustível costuma afetar o transporte.",
+    "commonScams": [
+     "Ofertas na rua para trocar dinheiro bem acima do câmbio oficial (ilegal e com risco de notas falsas)",
+     "Taxistas que não informam o preço e na chegada exigem um valor alto em dólares",
+     "Pessoas que se passam por funcionários públicos e cobram “ingressos” no lago ou em parques"
+    ],
+    "safeTravelTips": [
+     "Não saia à noite; desloque-se de dia com um motorista de confiança.",
+     "A fronteira terrestre com Ruanda está fechada desde 2024; planeje a entrada e a saída de avião.",
+     "Não fotografe prédios oficiais, áreas militares nem instalações presidenciais."
+    ],
+    "emergencyNumbers": {
+     "police": "112",
+     "ambulance": "112",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "4G em Bujumbura e Gitega; 3G ou cobertura fraca nas áreas rurais e montanhosas",
+    "costPerGbUsd": "~US$ 1,00 - 3,00",
+    "esimAvailability": "Limitada (poucas opções de eSIM internacional; o chip local exige cadastro com passaporte)",
+    "bestCarriers": [
+     "Lumitel",
+     "Econet Leo",
+     "Onamob (Onatel)"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Precária (micro-ônibus e táxis; irregular por causa da falta de combustível)",
+    "costLevel": "Barato",
+    "singleTicketUsd": "US$ 0,30 - 0,70 (micro-ônibus urbano)",
+    "dailyPassUsd": "Não existe",
+    "popularRideApps": [
+     "Não há apps internacionais de transporte",
+     "Táxis do hotel ou de agências"
+    ],
+    "taxiAdvice": "Uber, Bolt e apps parecidos não funcionam. Em Bujumbura, combine o preço do táxi antes de entrar; desde 2022, mototáxis, tuk-tuks e bicitáxis são proibidos no centro. Por causa da falta de combustível, reserve carro e motorista com antecedência para viagens entre cidades."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 30 - 45",
+    "dailyBudgetMidrangeUsd": "US$ 80 - 130",
+    "budgetMealUsd": "US$ 3 - 7",
+    "coffeeUsd": "US$ 1,00 - 3,00",
+    "waterBottleUsd": "US$ 0,50 - 1,00",
+    "hostelDormUsd": "US$ 20 - 35",
+    "hotel3StarUsd": "US$ 50 - 90",
+    "flightCostIndex": "Alto (poucas conexões)",
+    "flightTip": "Para chegar a Bujumbura (BJM), normalmente se faz conexão em Adis Abeba (Ethiopian Airlines) ou Nairóbi (Kenya Airways); há poucos voos, então reserve cedo."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Os cumprimentos são longos e respeitosos; primeiro se pergunta como a pessoa está, e os mais velhos recebem respeito especial.",
+     "Entregue e receba as coisas com a mão direita; segurar o pulso direito com a mão esquerda é sinal de cortesia.",
+     "Vista-se com discrição; shorts e regatas são malvistos na cidade.",
+     "Peça sempre permissão antes de fotografar alguém."
+    ],
+    "festivals": [
+     "Dia da Independência (1º de julho)",
+     "Festa da colheita Umuganuro (agosto)",
+     "Dia da Unidade (5 de fevereiro)"
+    ],
+    "lifestyle": "Vida tranquila e agrícola em aldeias espalhadas pelas colinas; a tradição dos tambores, o café e a cerveja de banana estão no centro da vida social."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Santuário dos Tambores Reais de Gishora (Gitega, patrimônio imaterial da UNESCO)",
+     "Praias do lago Tanganica (Bujumbura)",
+     "Parque Nacional de Rusizi (hipopótamos e crocodilos)",
+     "Monumento Livingstone–Stanley em Mugere",
+     "Nascente do Nilo e sua pirâmide (Rutovu)",
+     "Cachoeiras de Karera (Rutana)"
+    ],
+    "bestSeasons": "Junho a agosto e dezembro a janeiro",
+    "travelStyleTip": "O país é pequeno, mas as estradas são montanhosas e lentas; fique baseado em Bujumbura e faça passeios curtos de carro com motorista."
+   },
+   "religion": {
+    "primaryReligions": "Cristãos ~93 % (católicos ~60 %, protestantes ~33 %), muçulmanos ~3 %",
+    "respectNorms": "Entre nas igrejas com ombros e joelhos cobertos; as missas de domingo são longas e lotadas, então faça silêncio.",
+    "sacredSites": [
+     "Catedral Regina Mundi (Bujumbura)",
+     "Catedral de Cristo Rei, Gitega",
+     "Santuário dos Tambores Reais de Gishora"
+    ]
+   },
+   "language": {
+    "officialLanguages": "O kirundi, o francês e o inglês são oficiais; no comércio também se usa o suaíli.",
+    "englishProficiency": "Baixo; embora o inglês seja oficial, poucos o falam. O francês e algumas palavras em kirundi são muito úteis.",
+    "phrases": [
+     {
+      "phrase": "Amahoro",
+      "meaning": "Olá (paz)",
+      "translation": "Olá",
+      "pronunciation": "a-ma-HO-ro"
+     },
+     {
+      "phrase": "Bwakeye",
+      "meaning": "Bom dia",
+      "translation": "Bom dia",
+      "pronunciation": "bwa-KEH-yeh"
+     },
+     {
+      "phrase": "Urakoze",
+      "meaning": "Obrigado",
+      "translation": "Obrigado",
+      "pronunciation": "oo-ra-KO-zeh"
+     },
+     {
+      "phrase": "Ni angahe?",
+      "meaning": "Quanto custa?",
+      "translation": "Quanto é?",
+      "pronunciation": "nee an-GA-heh"
+     },
+     {
+      "phrase": "Murakaza neza",
+      "meaning": "Bem-vindo",
+      "translation": "Bem-vindo",
+      "pronunciation": "moo-ra-KA-za NEH-za"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Governado por um mwami (rei) desde o século XVII, o Reino do Burundi passou a fazer parte da África Oriental Alemã no fim do século XIX e, depois da Primeira Guerra Mundial, de Ruanda-Urundi, sob administração belga. Tornou-se independente em 1º de julho de 1962; a guerra civil de 1993–2005 terminou com o processo de paz de Arusha. Em 2019, Gitega passou a ser a capital política.",
+    "milestones": [
+     "1962: independência (1º de julho)",
+     "1993: começa a guerra civil",
+     "2000: Acordo de Paz de Arusha",
+     "2019: Gitega se torna a capital política"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Mukeke (peixe do lago Tanganica, grelhado ou ao molho)",
+     "Ndagala (peixinhos do lago fritos)",
+     "Ibiharage e ibitoke (feijão com banana-da-terra cozida)"
+    ],
+    "traditionalDrinks": [
+     "Cerveja Primus",
+     "Urwarwa (cerveja de banana)",
+     "Café e chá do Burundi"
+    ],
+    "streetFoodAndDesserts": [
+     "Espetinhos de cabra",
+     "Sambusa (pastéis triangulares)",
+     "Mandazi (bolinho de massa frita)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Príncipe Louis Rwagasore (herói da independência)",
+     "Vénuste Niyongabo (campeão olímpico dos 5.000 m em 1996)",
+     "Francine Niyonsaba (medalhista olímpica de prata)"
+    ],
+    "strongSectors": [
+     "Café (principal exportação)",
+     "Chá",
+     "Agricultura e mineração"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "A economia depende muito do dinheiro vivo; cartões quase não são aceitos e poucos caixas eletrônicos aceitam cartões estrangeiros. Leve dólares em bom estado emitidos depois de 2013 e troque-os só em bancos ou casas de câmbio autorizadas; há uma grande diferença entre o câmbio oficial e o de mercado.",
+    "tippingCulture": "A gorjeta não é obrigatória; 5-10 % ou arredondar o valor nos restaurantes é bem-vindo.",
+    "economicPillars": "Agricultura (café, chá), agricultura de subsistência e mineração."
+   }
+  },
+  "itin": {
+   "routeName": "Roteiro curto pelo Burundi: Bujumbura, Gitega e a Nascente do Nilo",
+   "routeSummary": "Um roteiro curto de 6 dias, pensado levando em conta os alertas de segurança, de Bujumbura, às margens do lago Tanganica, a Gitega, cidade dos tambores reais, e à nascente mais ao sul do Nilo.",
+   "totalDays": 6,
+   "idealDurationText": "Roteiro de 6 dias",
+   "bestSeason": "Junho a agosto e dezembro a janeiro",
+   "transportMode": "Carro alugado com motorista (reserve com antecedência por causa da falta de combustível)",
+   "paceLevel": "Tranquilo (lago + cultura + natureza)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Bujumbura (às margens do lago Tanganica)",
+     "recommendedDuration": "3 dias",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Praias do lago Tanganica (Saga Beach)",
+      "Parque Nacional de Rusizi",
+      "Monumento Livingstone–Stanley em Mugere",
+      "Museu Vivo de Bujumbura (Musée Vivant)"
+     ],
+     "activities": [
+      "Observe hipopótamos e aves de barco no delta do Rusizi.",
+      "Jante mukeke fresco ao pôr do sol à beira do lago.",
+      "Visite o lugar onde Livingstone e Stanley se hospedaram em 1871."
+     ],
+     "foodAndDrinks": [
+      "Mukeke",
+      "Ndagala",
+      "Cerveja Primus"
+     ],
+     "criticalTips": [
+      "Nade só em praias seguras: no lago há crocodilos e hipopótamos.",
+      "À noite, use táxi e não ande a pé."
+     ],
+     "mapsQuery": "Bujumbura, Burundi"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Gitega (tambores reais e história)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Santuário dos Tambores Reais de Gishora",
+      "Museu Nacional do Burundi",
+      "Catedral de Cristo Rei",
+      "Colinas de chá e café ao redor de Gitega"
+     ],
+     "activities": [
+      "Assista à apresentação dos tamboreiros reais Karyenda em Gishora.",
+      "Veja objetos da monarquia no Museu Nacional.",
+      "Visite uma cooperativa de café nas colinas."
+     ],
+     "foodAndDrinks": [
+      "Ibiharage e ibitoke",
+      "Urwarwa (cerveja de banana)",
+      "Café do Burundi"
+     ],
+     "criticalTips": [
+      "Combine a apresentação dos tambores com antecedência e acerte o preço.",
+      "A estrada Bujumbura – Gitega é montanhosa e cheia de curvas; viaje de dia."
+     ],
+     "mapsQuery": "Gitega, Burundi"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Nascente do Nilo (Rutovu)",
+     "recommendedDuration": "1 dia",
+     "durationBadge": "1 dia",
+     "highlights": [
+      "Nascente mais ao sul do Nilo (Kasumo)",
+      "Monumento da pirâmide da nascente",
+      "Colinas verdes ao redor de Bururi"
+     ],
+     "activities": [
+      "Veja a fonte considerada a nascente mais ao sul do Nilo.",
+      "Aproveite a vista do alto da colina do monumento em forma de pirâmide.",
+      "Faça uma caminhada curta pelas aldeias próximas."
+     ],
+     "foodAndDrinks": [
+      "Milho assado (ibigori)",
+      "Sambusa"
+     ],
+     "criticalTips": [
+      "Quase não há estrutura; leve água e algo para comer.",
+      "Na temporada de chuvas, as estradas de terra viram lama; melhor ir de 4x4."
+     ],
+     "mapsQuery": "Source du Nil, Rutovu, Burundi"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Mukeke (peixe do lago Tanganica, grelhado ou ao molho)",
+     "Ndagala (peixinhos do lago fritos)",
+     "Ibiharage e ibitoke (feijão com banana-da-terra cozida)"
+    ],
+    "drinks": [
+     "Cerveja Primus",
+     "Urwarwa (cerveja de banana)",
+     "Café e chá do Burundi"
+    ],
+    "streetFoods": [
+     "Espetinhos de cabra",
+     "Sambusa (pastéis triangulares)",
+     "Mandazi (bolinho de massa frita)"
+    ],
+    "diningAdvice": "Os restaurantes à beira do lago em Bujumbura são os lugares mais animados à noite. Espetinhos com batata frita são o jantar mais comum; coma os legumes e verduras bem cozidos."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Certificado internacional de vacinação contra febre amarela (obrigatório)",
+     "Antimaláricos e repelente",
+     "Dólares em bom estado e recentes (notas pequenas e grandes)",
+     "Capa de chuva e calçado fechado"
+    ],
+    "safetyAndEtiquette": [
+     "Fique longe de manifestações políticas e aglomerações.",
+     "Não viaje para as áreas de fronteira com a RD do Congo."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "E"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Tipos C e E (dois pinos redondos). Plugues europeus funcionam; as quedas de energia são frequentes, então leve um carregador portátil."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "A água da torneira não é potável; beba água mineral ou fervida. Já houve casos de cólera, então tome cuidado com alimentos crus.",
+    "vaccines": [
+     "Febre amarela (obrigatória para a entrada de todos os viajantes com mais de 1 ano)",
+     "Hepatite A e febre tifoide",
+     "Profilaxia contra a malária (risco em todo o país)",
+     "Raiva e cólera (conforme o risco); acompanhe os alertas sanitários atuais sobre a mpox"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "112"
+   },
+   "tipping": {
+    "custom": "A gorjeta não é obrigatória; 5-10 % é bem-vindo.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "Pequenas gorjetas para guias e motoristas são comuns."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA (TVA) de 18 %; sem restituição para turistas",
+    "minSpend": "Não se aplica",
+    "customsNote": "Não há restituição do IVA para turistas. A exportação de ouro, marfim e produtos de espécies protegidas é proibida ou exige autorização."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "~US$ 1,00 - 3,00",
+    "topCarriers": [
+     "Lumitel",
+     "Econet Leo",
+     "Onamob (Onatel)"
+    ],
+    "airportSimTrapWarning": "Quase não se vendem chips no aeroporto; compre um chip da Lumitel ou da Econet Leo na cidade com o seu passaporte."
+   },
+   "touristScams": [
+    {
+     "title": "Câmbio no mercado negro",
+     "desc": "As ofertas de rua com câmbio alto são ilegais e trazem risco de notas falsas.",
+     "tip": "Troque dinheiro só em bancos ou casas de câmbio autorizadas."
+    },
+    {
+     "title": "Táxi sem preço combinado",
+     "desc": "Na chegada, exigem um valor alto em dólares.",
+     "tip": "Combine o preço e a moeda antes de entrar."
+    },
+    {
+     "title": "Ingresso falso",
+     "desc": "Supostos funcionários públicos cobram em praias ou parques.",
+     "tip": "Peça o ingresso oficial e o recibo."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Бурундийский франк (BIF)",

@@ -611,6 +611,159 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Euro (EUR) – a Bulgária trocou o lev pelo euro em 1º de janeiro de 2026",
+   "bestMonths": "Maio a setembro (cidades e montanhas); de junho a setembro para o litoral do mar Negro e de dezembro a março para esquiar em Bansko e Borovets",
+   "safety": {
+    "crimeRateSummary": "Em geral é seguro; a criminalidade violenta raramente atinge os visitantes. Cuidado com batedores de carteira e cobranças abusivas no centro de Sofia, no transporte público e em centros turísticos como Sunny Beach.",
+    "commonScams": [
+     "Táxis no aeroporto e na estação com tarifas altíssimas no adesivo da janela",
+     "Casas de câmbio cuja cotação anunciada só vale para valores muito altos",
+     "Alguns bares das áreas de praia incluem na conta itens que não estavam no cardápio"
+    ],
+    "safeTravelTips": [
+     "Em Sofia, use empresas conhecidas como OK Supertrans ou Yellow Taxi, ou o app TaxiMe, e confira se o taxímetro está ligado.",
+     "Saque dinheiro em caixas eletrônicos de bancos; em caixas independentes como os da Euronet, recuse a conversão de moeda.",
+     "Os búlgaros podem balançar a cabeça de um lado para o outro para dizer “sim” e acenar para “não”; confirme com palavras."
+    ],
+    "emergencyNumbers": {
+     "police": "112 / 166",
+     "ambulance": "112 / 150",
+     "general": "112"
+    },
+    "safetyScore": 65,
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Bom 4G em todo o país e 5G nas grandes cidades; irregular nas montanhas de Rila e Pirin",
+    "costPerGbUsd": "~US$ 1 - 3",
+    "esimAvailability": "Disponível – Airalo, Holafly e eSIMs com roaming da UE",
+    "bestCarriers": [
+     "A1 Bulgaria",
+     "Yettel",
+     "Vivacom"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Razoável – bom metrô em Sofia; os ônibus intermunicipais são mais rápidos e frequentes que o trem",
+    "costLevel": "Barato",
+    "singleTicketUsd": "~US$ 0,90 - 1",
+    "dailyPassUsd": "~US$ 2,50 - 3",
+    "popularRideApps": [
+     "TaxiMe",
+     "Yellow Taxi",
+     "OK Supertrans"
+    ],
+    "taxiAdvice": "Os táxis usam taxímetro e a tarifa aparece num adesivo no para-brisa; em Sofia, evite carros que cobrem bem mais de US$ 1 por km. Corridas curtas dentro da cidade costumam custar US$ 4-8."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 35 - 55",
+    "dailyBudgetMidrangeUsd": "US$ 80 - 130",
+    "budgetMealUsd": "US$ 8 - 15",
+    "coffeeUsd": "US$ 1,50 - 3",
+    "waterBottleUsd": "US$ 0,60 - 1",
+    "hostelDormUsd": "US$ 15 - 25",
+    "hotel3StarUsd": "US$ 50 - 90",
+    "flightCostIndex": "Muito baixo (acesso fácil por estrada; voo Istambul – Sofia ~1 h)",
+    "flightTip": "O mais econômico é entrar de carro ou ônibus pela fronteira de Kapıkule – Kapitan Andreevo; no verão e em feriados, atravesse cedo. THY, Pegasus e AJet também voam Istambul – Sofia."
+   }
+  },
+  "enc": {
+   "language": {
+    "officialLanguages": "Búlgaro (alfabeto cirílico). A minoria turca também fala turco.",
+    "englishProficiency": "Bom entre os jovens de Sofia, Plovdiv e das áreas turísticas; limitado no interior.",
+    "phrases": [
+     {
+      "phrase": "Здравейте (Zdraveyte)",
+      "meaning": "Olá",
+      "translation": "Olá",
+      "pronunciation": "zdra-VEY-te"
+     },
+     {
+      "phrase": "Благодаря (Blagodarya)",
+      "meaning": "Obrigado",
+      "translation": "Obrigado",
+      "pronunciation": "bla-go-da-RYA"
+     },
+     {
+      "phrase": "Моля (Molya)",
+      "meaning": "Por favor",
+      "translation": "Por favor",
+      "pronunciation": "MO-lya"
+     },
+     {
+      "phrase": "Колко струва? (Kolko struva?)",
+      "meaning": "Quanto custa?",
+      "translation": "Quanto custa?",
+      "pronunciation": "KOL-ko STRU-va"
+     },
+     {
+      "phrase": "Наздраве! (Nazdrave!)",
+      "meaning": "Saúde!",
+      "translation": "Saúde!",
+      "pronunciation": "naz-DRAH-veh"
+     }
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Tomadas europeias C/F (Schuko), de dois pinos redondos, iguais às da Turquia; não é preciso adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "A água de Sofia vem das montanhas de Rila e é potável; também é segura na maioria das cidades, mas no litoral, no verão, pode ser melhor preferir água mineral.",
+    "vaccines": [
+     "Vacinas de rotina (tríplice viral, tétano)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "112 / 150"
+   },
+   "tipping": {
+    "custom": "Nos restaurantes é comum, e esperado, deixar 10 % de gorjeta.",
+    "standardPercent": 10,
+    "rule": "round_up",
+    "note": "Em táxis e cafés, basta arredondar o valor."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA de 20 %; você recupera 10-15 % depois das comissões",
+    "minSpend": "~128 € (antes 250 BGN), em uma mesma loja, no mesmo dia",
+    "customsNote": "Cidadãos turcos têm direito: carimbe o formulário na alfândega de Kapitan Andreevo ou do aeroporto de Sofia. A Bulgária usa o euro desde 1º de janeiro de 2026."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 1 - 3",
+    "topCarriers": [
+     "A1 Bulgaria",
+     "Yettel",
+     "Vivacom"
+    ],
+    "airportSimTrapWarning": "Os pontos de venda do aeroporto são caros; compre nas lojas da A1, Yettel ou Vivacom ou leve um eSIM."
+   },
+   "touristScams": [
+    {
+     "title": "Táxis falsos",
+     "desc": "Táxis no aeroporto e na estação central de Sofia com logotipos que imitam o da OK Supertrans e tarifas altíssimas no adesivo.",
+     "tip": "Use o balcão oficial da OK Supertrans ou o app TaxiMe e confira o adesivo de tarifas."
+    },
+    {
+     "title": "Armadilha da conversão no caixa eletrônico",
+     "desc": "Caixas independentes, como os da Euronet, oferecem o saque na sua moeda com um câmbio ruim.",
+     "tip": "Use caixas eletrônicos de bancos e escolha “sem conversão”."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Евро (EUR) – Болгария перешла с лева на евро 1 января 2026 года",

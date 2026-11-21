@@ -611,6 +611,159 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Marco conversível (BAM / KM)",
+   "bestMonths": "Maio a junho e setembro a outubro; em julho e agosto Mostar costuma passar dos 35 °C, de junho a setembro é época de nadar em Kravica e de dezembro a março, de esquiar em Jahorina e Bjelašnica",
+   "safety": {
+    "crimeRateSummary": "A criminalidade contra turistas é baixa; Sarajevo e Mostar costumam ser tranquilas. O maior risco são as minas da guerra em áreas rurais: não saia das trilhas sinalizadas nem das estradas asfaltadas.",
+    "commonScams": [
+     "Táxis no aeroporto e na rodoviária de Sarajevo que não ligam o taxímetro",
+     "Batedores de carteira que se aproveitam das aglomerações em Baščaršija e no bonde",
+     "Contas infladas em restaurantes sem cardápio perto da Ponte Velha de Mostar"
+    ],
+    "safeTravelTips": [
+     "Não ande por áreas rurais, casas abandonadas ou terrenos sem sinalização; respeite sempre as placas vermelhas de “Mine!”.",
+     "Para táxis, prefira empresas conhecidas chamadas por telefone ou aplicativo e fique de olho no taxímetro.",
+     "A guerra e as questões étnicas são temas delicados; se surgirem, ouça e não tome partido."
+    ],
+    "emergencyNumbers": {
+     "police": "122",
+     "ambulance": "124",
+     "general": "122"
+    },
+    "safetyScore": 65,
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Bom 4G nas cidades e nas principais estradas; irregular em vales e cânions de montanha",
+    "costPerGbUsd": "~US$ 1 - 3",
+    "esimAvailability": "Disponível – eSIMs internacionais como Airalo e Holafly (a Bósnia e Herzegovina não faz parte do roaming da UE)",
+    "bestCarriers": [
+     "BH Telecom",
+     "m:tel",
+     "HT Eronet"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Razoável – bondes e ônibus em Sarajevo; muitos ônibus intermunicipais e um trem panorâmico Sarajevo – Mostar",
+    "costLevel": "Barato",
+    "singleTicketUsd": "~US$ 1 - 1,50",
+    "dailyPassUsd": "~US$ 3 - 4",
+    "popularRideApps": [
+     "Crveni Taxi (Sarajevo)",
+     "Sarajevo Taxi"
+    ],
+    "taxiAdvice": "Não há Uber nem Bolt em Sarajevo; corridas de táxi dentro da cidade costumam custar US$ 4-8. Use empresas conhecidas chamadas por telefone e confira se o taxímetro está funcionando."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 30 - 45",
+    "dailyBudgetMidrangeUsd": "US$ 70 - 110",
+    "budgetMealUsd": "US$ 7 - 12",
+    "coffeeUsd": "US$ 1,50 - 2,50",
+    "waterBottleUsd": "US$ 0,60 - 1",
+    "hostelDormUsd": "US$ 12 - 22",
+    "hotel3StarUsd": "US$ 50 - 90",
+    "flightCostIndex": "Baixo (Istambul – Sarajevo direto ~1,5-2 h)",
+    "flightTip": "THY, Pegasus e AJet têm voos diretos de Istambul para Sarajevo; no verão pode haver voos sazonais para Mostar. Você pode começar por Sarajevo e seguir de Mostar para o litoral croata."
+   }
+  },
+  "enc": {
+   "language": {
+    "officialLanguages": "Bósnio, croata e sérvio (muito parecidos entre si; usam-se os alfabetos latino e cirílico).",
+    "englishProficiency": "Bom entre os jovens e os profissionais do turismo em Sarajevo e Mostar; limitado no interior. Muitas palavras vêm do turco (čaršija, kahva, ćevap).",
+    "phrases": [
+     {
+      "phrase": "Dobar dan",
+      "meaning": "Bom dia / Olá",
+      "translation": "Bom dia / Olá",
+      "pronunciation": "DO-bar dahn"
+     },
+     {
+      "phrase": "Hvala",
+      "meaning": "Obrigado",
+      "translation": "Obrigado",
+      "pronunciation": "HVAH-la"
+     },
+     {
+      "phrase": "Molim",
+      "meaning": "Por favor / De nada",
+      "translation": "Por favor / De nada",
+      "pronunciation": "MO-lim"
+     },
+     {
+      "phrase": "Koliko košta?",
+      "meaning": "Quanto custa?",
+      "translation": "Quanto custa?",
+      "pronunciation": "KO-li-ko KOSH-ta"
+     },
+     {
+      "phrase": "Jednu kafu, molim",
+      "meaning": "Um café, por favor",
+      "translation": "Um café, por favor",
+      "pronunciation": "YED-noo KAH-foo MO-lim"
+     }
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Tomadas europeias C/F (Schuko), de dois pinos redondos, iguais às da Turquia; não é preciso adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "A água da torneira é potável em Sarajevo, Mostar e outras cidades grandes; as fontes públicas também são limpas.",
+    "vaccines": [
+     "Vacinas de rotina (tríplice viral, tétano)",
+     "Encefalite transmitida por carrapatos (se for fazer trilhas no interior)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "124"
+   },
+   "tipping": {
+    "custom": "Nos restaurantes é comum deixar 10 % de gorjeta.",
+    "standardPercent": 10,
+    "rule": "round_up",
+    "note": "Em cafés e táxis, basta arredondar o valor."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA de 17 % (devolvido a não residentes para mercadorias que saem do país)",
+    "minSpend": "200 BAM por nota fiscal (desde agosto de 2025)",
+    "customsNote": "Peça na loja o formulário de restituição do IVA e carimbe-o na alfândega ao sair do país, mostrando a mercadoria e a nota fiscal. Combustível, bebidas alcoólicas e tabaco não entram."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 1 - 3",
+    "topCarriers": [
+     "BH Telecom",
+     "m:tel",
+     "HT Eronet"
+    ],
+    "airportSimTrapWarning": "Há poucos pontos de venda no aeroporto; compre um chip turístico barato nas lojas da BH Telecom ou da m:tel na cidade. O país fica fora do roaming da UE."
+   },
+   "touristScams": [
+    {
+     "title": "Táxis sem taxímetro",
+     "desc": "Taxistas do aeroporto e da rodoviária que não ligam o taxímetro e cobram preços altos.",
+     "tip": "Chame empresas conhecidas por telefone ou aplicativo e confira o taxímetro."
+    },
+    {
+     "title": "Câmbio ruim em euros",
+     "desc": "Os lugares que aceitam euros aplicam câmbios ruins, como 1 € = 1,5-2 KM.",
+     "tip": "Pague em marcos conversíveis (KM); o câmbio oficial é 1 € ≈ 1,96 KM."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Конвертируемая марка (BAM / KM)",

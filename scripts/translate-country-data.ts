@@ -18,7 +18,7 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 dotenv.config({ path: path.join(ROOT, '.env.local') });
 dotenv.config({ path: path.join(ROOT, '.env') });
 
-const NAMES: Record<DataLang, string> = { en: 'English', de: 'German', es: 'Spanish', ru: 'Russian' };
+const NAMES: Record<DataLang, string> = { en: 'English', de: 'German', es: 'Spanish', ru: 'Russian', pt: 'Brazilian Portuguese' };
 const BATCH = 80;
 const PARALLEL = 4;
 

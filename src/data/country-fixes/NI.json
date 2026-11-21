@@ -1543,6 +1543,392 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Córdoba nicaraguense (NIO); o dólar americano é amplamente aceito",
+   "plugType": "Tipo A, B (120V, 60Hz)",
+   "bestMonths": "Dezembro – abril (estação seca; o ideal é dezembro – fevereiro)",
+   "safety": {
+    "crimeRateSummary": "EUA e Reino Unido recomendam muita cautela por causa da aplicação arbitrária das leis, do risco de detenção de estrangeiros e do atendimento médico limitado. Em Managua acontecem assaltos à noite, e nas praias e nos ônibus os furtos são frequentes; Granada, León e Ometepe costumam ser mais tranquilas.",
+    "commonScams": [
+     "Táxis de rua em Managua que pegam falsos “passageiros”, que depois assaltam você",
+     "Cambistas de rua em fronteiras e rodoviárias com cotações ruins ou notas falsas",
+     "Furto de pertences deixados sem vigilância nas praias de San Juan del Sur"
+    ],
+    "safeTravelTips": [
+     "Evite manifestações e reuniões políticas; não fotografe policiais nem prédios oficiais.",
+     "Não leve drone: a alfândega apreende; equipamentos fotográficos profissionais também podem ser questionados.",
+     "Use shuttles turísticos entre as cidades e, dentro delas, táxis chamados pelo hotel."
+    ],
+    "emergencyNumbers": {
+     "police": "118",
+     "ambulance": "128",
+     "general": "118"
+    },
+    "safetyScore": 40,
+    "safetyLevel": "Cautela recomendada",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60"
+   },
+   "internet": {
+    "networkCoverage": "4G LTE bom nas cidades; fraco na costa caribenha e nas áreas rurais",
+    "costPerGbUsd": "~US$ 1 - 3",
+    "esimAvailability": "Boa",
+    "bestCarriers": [
+     "Claro",
+     "Tigo"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Adequado",
+    "costLevel": "Barato",
+    "singleTicketUsd": "US$ 0,10 - 1",
+    "dailyPassUsd": "Sem passe diário",
+    "popularRideApps": [
+     "inDrive",
+     "Shuttles turísticos",
+     "Táxis do hotel"
+    ],
+    "taxiAdvice": "Não há Uber; em Managua o inDrive é muito usado. Os táxis não têm taxímetro: combine a tarifa antes de entrar. Os “chicken buses” intermunicipais são baratíssimos, mas lentos e lotados."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 30 - 45",
+    "dailyBudgetMidrangeUsd": "US$ 70 - 120",
+    "budgetMealUsd": "US$ 3 - 7",
+    "coffeeUsd": "US$ 1,50 - 3",
+    "waterBottleUsd": "US$ 0,60 - 1",
+    "hostelDormUsd": "US$ 10 - 18",
+    "hotel3StarUsd": "US$ 45 - 85",
+    "flightCostIndex": "Moderado",
+    "flightTip": "Não há voos diretos da Turquia; reserve com antecedência para Managua (MGA) via Panamá (Copa), San Salvador (Avianca) ou aeroportos dos EUA."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "É comum cumprimentar com um “¡Buenas!” e um aperto de mão; entre mulheres, com um beijo no rosto.",
+     "Política é um assunto delicado; evite discussões políticas com os moradores.",
+     "Vista-se de forma discreta em igrejas e cidadezinhas; não ande pela cidade de roupa de banho.",
+     "Peça permissão antes de fotografar pessoas, sobretudo em mercados e crianças."
+    ],
+    "festivals": [
+     "La Gritería e La Purísima (7–8 de dezembro)",
+     "El Güegüense – festas de San Sebastián em Diriamba (janeiro; patrimônio imaterial da UNESCO)",
+     "Festas de Santo Domingo em Managua (1–10 de agosto)"
+    ],
+    "lifestyle": "Uma vida tranquila, familiar e de tradição católica; as conversas na calçada ao entardecer, a paixão pelo beisebol e a fritanga do fim de semana fazem parte do dia a dia."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "A colonial Granada e Las Isletas",
+     "Catedral de León (UNESCO) e seu terraço",
+     "Os vulcões gêmeos da ilha de Ometepe (Concepción e Maderas)",
+     "Parque Nacional Vulcão Masaya (lago de lava ao anoitecer)",
+     "Laguna de Apoyo",
+     "San Juan del Sur e suas praias de surfe"
+    ],
+    "bestSeasons": "Dezembro – abril (estação seca; o ideal é dezembro – fevereiro)",
+    "travelStyleTip": "Desembarque em Managua (MGA) e siga direto para León ou Granada; os shuttles turísticos são a opção mais prática entre as cidades."
+   },
+   "religion": {
+    "primaryReligions": "Católica (~45%), evangélica (~35%), sem religião e outras (~20%)",
+    "respectNorms": "Cubra ombros e joelhos nas igrejas, não tire fotos durante a missa e não interrompa as procissões.",
+    "sacredSites": [
+     "Catedral da Assunção, León",
+     "Catedral de Granada e Igreja La Merced",
+     "Basílica da Virgem do Trono, El Viejo"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Espanhol (oficial). Na costa caribenha falam-se miskito, inglês crioulo e outras línguas indígenas.",
+    "englishProficiency": "Baixo; fora de hostels e agências, um espanhol básico ajuda muito.",
+    "phrases": [
+     {
+      "phrase": "¡Buenas!",
+      "meaning": "Olá! (a qualquer hora)",
+      "translation": "Olá! (a qualquer hora)",
+      "pronunciation": "BWEH-nahs"
+     },
+     {
+      "phrase": "Muchas gracias",
+      "meaning": "Muito obrigado",
+      "translation": "Muito obrigado",
+      "pronunciation": "MOO-chahs GRAH-syahs"
+     },
+     {
+      "phrase": "¿Cuánto vale?",
+      "meaning": "Quanto custa?",
+      "translation": "Quanto custa?",
+      "pronunciation": "KWAN-toh VAH-leh"
+     },
+     {
+      "phrase": "Dale pues",
+      "meaning": "Combinado",
+      "translation": "Combinado",
+      "pronunciation": "DAH-leh pwes"
+     },
+     {
+      "phrase": "¡Qué tuanis!",
+      "meaning": "Que demais!",
+      "translation": "Que demais!",
+      "pronunciation": "keh TWAH-nees"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Em terras dos povos nicarao e chorotega, os espanhóis fundaram Granada e León em 1524. A independência veio em 1821; na década de 1850, William Walker tentou se apoderar do país, e o século XX trouxe a era Somoza, a revolução de 1979 e a guerra dos anos 80. Hoje a economia depende da agricultura e do turismo.",
+    "milestones": [
+     "1524 – Fundação de Granada e León",
+     "1821 – Independência da Espanha",
+     "1856 – Batalha de San Jacinto e derrota de Walker",
+     "1979 – Fim do regime de Somoza"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Gallo pinto",
+     "Nacatamal",
+     "Vigorón"
+    ],
+    "traditionalDrinks": [
+     "Rum Flor de Caña",
+     "Pinolillo",
+     "Cervejas Toña e Victoria"
+    ],
+    "streetFoodAndDesserts": [
+     "Quesillo",
+     "Bolo de três leites",
+     "Rosquillas"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Rubén Darío (pai do modernismo)",
+     "Alexis Argüello (campeão mundial de boxe)",
+     "Dennis Martínez (arremessador com jogo perfeito na MLB)"
+    ],
+    "strongSectors": [
+     "Exportação de café, carne e açúcar",
+     "Mineração de ouro",
+     "Têxteis em zonas francas"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "O dinheiro vivo predomina: córdobas para compras pequenas e dólares nos hotéis. Os cartões funcionam em hotéis e restaurantes urbanos; leve notas de dólar em bom estado e sem rasgos.",
+    "tippingCulture": "Os restaurantes costumam acrescentar 10% de gorjeta sugerida, que é opcional; pequenas gorjetas para guias e motoristas são bem-vindas.",
+    "economicPillars": "Agricultura (café, gado, açúcar), ouro, indústria maquiladora em zonas francas, remessas de emigrantes e turismo."
+   }
+  },
+  "itin": {
+   "routeName": "Vulcões e cidades coloniais: León, Granada, Ometepe e San Juan del Sur",
+   "routeSummary": "Rota de 8 dias que vai da cidade universitária de León, no norte, às ruas coloridas de Granada e ao vulcão Masaya, à ilha de Ometepe, no lago Cocibolca, e a San Juan del Sur, no Pacífico.",
+   "totalDays": 8,
+   "idealDurationText": "Rota de 8 dias",
+   "bestSeason": "Dezembro – abril (estação seca; o ideal é dezembro – fevereiro)",
+   "transportMode": "Shuttles turísticos, ônibus locais e o ferry San Jorge – Moyogalpa",
+   "paceLevel": "Equilibrado (cultura, vulcões e praia)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: León (catedral e volcano boarding)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "O terraço branco da Catedral de León",
+      "Vulcão Cerro Negro",
+      "Museu de Arte Fundación Ortiz-Gurdián",
+      "Ruínas de León Viejo (UNESCO)"
+     ],
+     "activities": [
+      "Deslize de prancha pela encosta de cinzas negras do Cerro Negro.",
+      "Percorra o terraço da catedral ao entardecer.",
+      "Jante de frente para o Pacífico na praia de Las Peñitas."
+     ],
+     "foodAndDrinks": [
+      "Quesillo de La Paz Centro",
+      "Fritangas noturnas",
+      "Pinolillo gelado"
+     ],
+     "criticalTips": [
+      "Contrate a descida com uma agência autorizada que forneça capacete e macacão; evite o calor do meio-dia.",
+      "León é uma das cidades mais quentes da América Central; beba bastante água."
+     ],
+     "mapsQuery": "León, Nicaragua"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Granada e Masaya (herança colonial e lago de lava)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Catedral de Granada e Calle La Calzada",
+      "Passeio de lancha por Las Isletas",
+      "Cratera Santiago do vulcão Masaya",
+      "Laguna de Apoyo"
+     ],
+     "activities": [
+      "Navegue entre as ilhotas vulcânicas do lago.",
+      "Veja a lava incandescente numa visita noturna à cratera do Masaya.",
+      "Nade nas águas mornas da Laguna de Apoyo."
+     ],
+     "foodAndDrinks": [
+      "Vigorón do parque central",
+      "Indio viejo",
+      "Refresco natural (suco de frutas)"
+     ],
+     "criticalTips": [
+      "A visita noturna ao Masaya tem tempo e vagas limitados; conte com filas.",
+      "Pechinche com simpatia no mercado de artesanato de Masaya."
+     ],
+     "mapsQuery": "Granada, Nicaragua"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Ilha de Ometepe (vulcões gêmeos)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Vulcões Concepción e Maderas",
+      "Ojo de Agua",
+      "Punta Jesús María",
+      "Cachoeira San Ramón"
+     ],
+     "activities": [
+      "Suba com guia até a floresta nebulosa do Maderas.",
+      "Percorra a ilha de bicicleta ou moto alugada.",
+      "Veja o pôr do sol em Punta Jesús María."
+     ],
+     "foodAndDrinks": [
+      "Guapote frito",
+      "Tostones",
+      "Vitamina de frutas"
+     ],
+     "criticalTips": [
+      "Para subir os vulcões é obrigatório ter guia local; o Concepción toma o dia inteiro, então saia cedo.",
+      "Os ferries podem ser suspensos com mar agitado; deixe um dia de folga."
+     ],
+     "mapsQuery": "Isla de Ometepe, Nicaragua"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: San Juan del Sur (surfe e Pacífico)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Cristo de la Misericordia",
+      "Playa Maderas e Playa Hermosa",
+      "Refúgio de Vida Silvestre La Flor"
+     ],
+     "activities": [
+      "Faça uma aula de surfe na Playa Maderas.",
+      "Suba até o Cristo ao entardecer para ver a baía.",
+      "Observe a desova das tartarugas em La Flor entre julho e dezembro."
+     ],
+     "foodAndDrinks": [
+      "Ceviche de peixe",
+      "Peixe e lagosta grelhados na praia",
+      "Toña bem gelada"
+     ],
+     "criticalTips": [
+      "Não deixe suas coisas sem vigilância na praia nem caminhe à noite até praias isoladas.",
+      "Vá às praias de surfe do norte de shuttle ou de táxi de confiança."
+     ],
+     "mapsQuery": "San Juan del Sur, Nicaragua"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Gallo pinto",
+     "Nacatamal",
+     "Indio viejo"
+    ],
+    "drinks": [
+     "Rum Flor de Caña",
+     "Pinolillo",
+     "Chicha de milho"
+    ],
+    "streetFoods": [
+     "Vigorón",
+     "Quesillo",
+     "Pratos de fritanga"
+    ],
+    "diningAdvice": "Os comedores e as fritangas são o que há de mais barato e saboroso; nos restaurantes, a gorjeta sugerida de 10% pode já vir incluída."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Protetor solar e repelente",
+     "Calçado de trilha",
+     "Dólares em bom estado e em notas pequenas",
+     "Jaqueta impermeável leve"
+    ],
+    "safetyAndEtiquette": [
+     "Fique longe de protestos e não fotografe policiais nem prédios oficiais.",
+     "Não leve drone; a alfândega apreende."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "A",
+     "B"
+    ],
+    "voltage": "120V",
+    "frequency": "60Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Tomadas tipo A/B de pinos chatos, em 120V; leve adaptador A/B e confira se seus aparelhos aceitam 110-240V."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Não beba água da torneira; use água mineral ou purificada e tome cuidado com gelo e saladas cruas.",
+    "vaccines": [
+     "Vacinas de rotina (difteria e tétano, tríplice viral)",
+     "Hepatite A e febre tifoide",
+     "Febre amarela: certificado só se você vier de um país de risco",
+     "Proteção contra mosquitos (dengue, zika)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "128"
+   },
+   "tipping": {
+    "custom": "Os restaurantes costumam acrescentar 10% de gorjeta sugerida.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "A gorjeta sugerida é opcional; você pode pedir para retirá-la se o serviço tiver sido ruim."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA de 15%; sem restituição para turistas",
+    "minSpend": "Não se aplica",
+    "customsNote": "A Nicarágua não restitui o IVA a turistas. Drones, câmeras profissionais e binóculos podem ser inspecionados ou retidos na entrada."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 1 - 3",
+    "topCarriers": [
+     "Claro",
+     "Tigo"
+    ],
+    "airportSimTrapWarning": "No aeroporto de Managua vendem chips da Claro/Tigo, mas as lojas oficiais na cidade são mais baratas; é preciso apresentar o passaporte."
+   },
+   "touristScams": [
+    {
+     "title": "Táxi com falsos passageiros",
+     "desc": "Outras pessoas entram no táxi no meio do caminho e obrigam o passageiro a sacar dinheiro no caixa eletrônico.",
+     "tip": "Peça o táxi pelo hotel ou use o inDrive; não aceite passageiros extras."
+    },
+    {
+     "title": "Armadilha dos cambistas na fronteira",
+     "desc": "Em passagens como Peñas Blancas, os cambistas oferecem cotações ruins ou notas falsas.",
+     "tip": "Troque pouco, conte na hora e, se puder, use caixas eletrônicos de bancos."
+    },
+    {
+     "title": "Furto na praia",
+     "desc": "Em San Juan del Sur, bolsas e celulares deixados na areia são furtados enquanto você nada.",
+     "tip": "Leve só o dinheiro necessário e deixe os objetos de valor no cofre."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Никарагуанская кордоба (NIO); доллары США широко принимаются",

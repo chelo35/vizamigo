@@ -1543,6 +1543,392 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Dólar guianense (GYD)",
+   "plugType": "Tipo A, B, D, G (120V / 240V, 60Hz)",
+   "bestMonths": "Setembro – novembro e fevereiro – abril (períodos mais secos); de maio a agosto é a principal temporada de chuvas",
+   "safety": {
+    "safetyScore": 40,
+    "safetyLevel": "Recomenda-se cautela",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60",
+    "crimeRateSummary": "Em Georgetown são frequentes os assaltos à mão armada e os furtos por arrastão; os alertas oficiais recomendam mais cautela ou que você reconsidere a viagem. Os lodges na selva e o Rupununi são bem mais tranquilos.",
+    "commonScams": [
+     "Táxis sem licença no aeroporto, com tarifas infladas",
+     "Arrastões e truques de distração ao redor do mercado Stabroek",
+     "Ofertas de “ouro” ou diamantes falsos"
+    ],
+    "safeTravelTips": [
+     "Não ande a pé por Georgetown à noite; use táxis com licença indicados pelo hotel.",
+     "Não exiba o celular nem joias.",
+     "Vá para o interior com tours organizados ou com os traslados do lodge."
+    ],
+    "emergencyNumbers": {
+     "police": "911",
+     "ambulance": "913",
+     "general": "911"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Bom 4G em Georgetown e no litoral; sem cobertura em grande parte do interior e da selva",
+    "costPerGbUsd": "~US$ 1,50 - 4,00",
+    "esimAvailability": "Boa",
+    "bestCarriers": [
+     "GTT",
+     "Digicel Guyana"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Limitado",
+    "costLevel": "Moderado",
+    "singleTicketUsd": "US$ 0,50 - 1,50",
+    "dailyPassUsd": "US$ 15 - 30",
+    "popularRideApps": [
+     "Nenhum app de transporte relevante",
+     "Empresas de táxi com licença",
+     "Traslados do hotel"
+    ],
+    "taxiAdvice": "Não há Uber. Em Georgetown, chame empresas de táxi com licença (placa começando com “H”); uma corrida dentro da cidade costuma custar US$ 3-6. Os aviões pequenos são o jeito mais prático de chegar a Kaieteur e ao interior."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 45 - 70",
+    "dailyBudgetMidrangeUsd": "US$ 120 - 200",
+    "budgetMealUsd": "US$ 5 - 12",
+    "coffeeUsd": "US$ 2 - 4",
+    "waterBottleUsd": "US$ 0,50 - 1,00",
+    "hostelDormUsd": "US$ 25 - 40",
+    "hotel3StarUsd": "US$ 90 - 170",
+    "flightCostIndex": "Alto",
+    "flightTip": "Não há voos diretos da Turquia; chega-se a Georgetown (GEO) via Nova York, Miami ou Porto de Espanha."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Os guianenses são calorosos; cumprimentar com “Morning!” ou “Afternoon!” é educado.",
+     "Nas aldeias ameríndias, peça permissão para fotografar e respeite as regras locais.",
+     "O “lime”, um encontro descontraído entre amigos, é o centro da vida social.",
+     "Respeite as inúmeras festas étnicas e religiosas."
+    ],
+    "festivals": [
+     "Mashramani (23 de fevereiro, carnaval da República)",
+     "Phagwah (Holi, março)",
+     "Diwali (outubro/novembro)"
+    ],
+    "lifestyle": "Mistura de culturas indiana, africana, ameríndia, chinesa e europeia com clima caribenho, paixão pelo críquete e cultura do rum."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Cataratas de Kaieteur (queda livre de 226 m)",
+     "Floresta de Iwokrama e passarela na copa das árvores",
+     "Savana do Rupununi",
+     "Georgetown: catedral de São Jorge e mercado Stabroek",
+     "Ecovila de Surama",
+     "Shell Beach (tartarugas marinhas)"
+    ],
+    "bestSeasons": "Setembro – novembro e fevereiro – abril (períodos mais secos); de maio a agosto é a principal temporada de chuvas",
+    "travelStyleTip": "Fique pouco tempo em Georgetown, faça um bate-volta de avião a Kaieteur e depois escolha pacotes de lodge para Iwokrama e o Rupununi."
+   },
+   "religion": {
+    "primaryReligions": "Cristianismo (~64 %), hinduísmo (~25 %), islã (~7 %) e outros.",
+    "respectNorms": "Tire os sapatos e cubra-se em templos hindus (mandirs) e mesquitas; respeite os costumes durante as festas religiosas.",
+    "sacredSites": [
+     "Catedral de São Jorge (catedral anglicana de madeira)",
+     "Templos hindus (mandirs) de Georgetown",
+     "Jama Masjid de Queenstown"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Inglês (oficial). A língua do dia a dia é o crioulo guianense (creolese); também se falam línguas ameríndias e de origem indiana.",
+    "englishProficiency": "Muito bom; é o único país de língua inglesa da América do Sul.",
+    "phrases": [
+     {
+      "phrase": "Wha happenin?",
+      "meaning": "E aí? (crioulo guianense)",
+      "translation": "E aí? (crioulo guianense)",
+      "pronunciation": "wah HAP-nin"
+     },
+     {
+      "phrase": "Me deh good",
+      "meaning": "Estou bem (crioulo guianense)",
+      "translation": "Estou bem (crioulo guianense)",
+      "pronunciation": "mee deh GOOD"
+     },
+     {
+      "phrase": "Tank yuh",
+      "meaning": "Obrigado (crioulo guianense)",
+      "translation": "Obrigado (crioulo guianense)",
+      "pronunciation": "TANK yuh"
+     },
+     {
+      "phrase": "How much fuh dis?",
+      "meaning": "Quanto custa isto? (crioulo guianense)",
+      "translation": "Quanto custa isto? (crioulo guianense)",
+      "pronunciation": "how much fuh DIS"
+     },
+     {
+      "phrase": "Leh we go lime",
+      "meaning": "Bora dar um rolê (crioulo guianense)",
+      "translation": "Bora dar um rolê (crioulo guianense)",
+      "pronunciation": "leh wee go LIME"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Primeiro colônia holandesa e depois britânica, a Guiana recebeu trabalhadores contratados da Índia após o fim da escravidão. Tornou-se independente em 1966, e a produção de petróleo em alto-mar desde 2019 impulsionou um crescimento acelerado.",
+    "milestones": [
+     "1616: Os holandeses erguem Kyk-Over-Al no Essequibo",
+     "1838: Chegada dos trabalhadores contratados indianos",
+     "1966: Independência do Reino Unido",
+     "2019: Início da produção de petróleo em alto-mar"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Pepperpot (ensopado de carne com cassareep, prato nacional)",
+     "Cook-up rice (arroz com feijão e coco)",
+     "Curry com roti"
+    ],
+    "traditionalDrinks": [
+     "Rum El Dorado",
+     "Mauby (bebida de casca de árvore)",
+     "Sorrel (bebida de hibisco)"
+    ],
+    "streetFoodAndDesserts": [
+     "Pholourie (bolinho frito com molho azedinho)",
+     "Cheese rolls e egg balls",
+     "Black cake (bolo de frutas com rum)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Clive Lloyd (capitão da seleção de críquete das Índias Ocidentais)",
+     "Shivnarine Chanderpaul (jogador de críquete)",
+     "Eddy Grant (músico)"
+    ],
+    "strongSectors": [
+     "Petróleo e gás",
+     "Mineração de ouro e bauxita",
+     "Arroz e açúcar"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Cartões funcionam em parte de Georgetown; no interior é preciso dinheiro vivo em dólares guianenses ou americanos. Use caixas eletrônicos dentro de bancos.",
+    "tippingCulture": "Se a taxa de serviço de 10 % não vier na conta, é comum deixar 10 % nos restaurantes; os guias do lodge recebem gorjeta à parte.",
+    "economicPillars": "Exportação de petróleo, ouro, agricultura (arroz, açúcar), madeira e serviços."
+   }
+  },
+  "itin": {
+   "routeName": "Roteiro pela Guiana: Georgetown, Kaieteur, Iwokrama e Rupununi",
+   "routeSummary": "Um roteiro de 8 dias que vai dos prédios coloniais de madeira de Georgetown às cataratas de Kaieteur, à selva de Iwokrama e às aldeias ameríndias da savana do Rupununi.",
+   "totalDays": 8,
+   "idealDurationText": "Roteiro de 8 dias pela Guiana",
+   "bestSeason": "Setembro – novembro e fevereiro – abril (períodos mais secos); de maio a agosto é a principal temporada de chuvas",
+   "transportMode": "Avião pequeno (Kaieteur) + 4x4 por terra + traslados de lodge",
+   "paceLevel": "Aventura (natureza + vida selvagem)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Georgetown",
+     "recommendedDuration": "2 dias (capital)",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Catedral de São Jorge",
+      "Mercado Stabroek",
+      "Promenade Gardens",
+      "Pôr do sol no Seawall"
+     ],
+     "activities": [
+      "Veja os peixes-boi sendo alimentados no Jardim Botânico.",
+      "Faça uma degustação na destilaria de rum El Dorado.",
+      "Caminhe pelo Seawall no fim da tarde."
+     ],
+     "foodAndDrinks": [
+      "Pepperpot",
+      "Pholourie",
+      "Rum El Dorado"
+     ],
+     "criticalTips": [
+      "Visite o mercado Stabroek sem objetos de valor.",
+      "À noite, use táxis com licença."
+     ],
+     "mapsQuery": "Georgetown, Guyana"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Cataratas de Kaieteur",
+     "recommendedDuration": "1 dia (bate-volta de avião)",
+     "durationBadge": "1 dia",
+     "highlights": [
+      "Mirantes de Kaieteur",
+      "Rãs-douradas e bromélias",
+      "Vista da selva do avião"
+     ],
+     "activities": [
+      "Voe até as cataratas em avião pequeno saindo do aeroporto de Ogle.",
+      "Percorra com guia a trilha da borda.",
+      "Em alguns tours, dá para tomar banho nas cataratas de Orinduik."
+     ],
+     "foodAndDrinks": [
+      "Lanche para viagem",
+      "Sorrel"
+     ],
+     "criticalTips": [
+      "Os voos dependem do clima; deixe as datas flexíveis.",
+      "O limite de peso da bagagem no avião pequeno é baixo."
+     ],
+     "mapsQuery": "Kaieteur Falls, Guyana"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Iwokrama e Surama",
+     "recommendedDuration": "2-3 dias (selva)",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Passarela na copa das árvores de Iwokrama",
+      "Turtle Mountain",
+      "Ecovila de Surama",
+      "Rio Essequibo"
+     ],
+     "activities": [
+      "Observe aves da passarela ao amanhecer.",
+      "Procure jacarés em um passeio noturno de barco.",
+      "Caminhe pela selva com guias makushi em Surama."
+     ],
+     "foodAndDrinks": [
+      "Cook-up rice",
+      "Mauby"
+     ],
+     "criticalTips": [
+      "É possível ver onças, mas não há garantia; siga o guia.",
+      "Repelente e manga comprida são indispensáveis."
+     ],
+     "mapsQuery": "Iwokrama, Guyana"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Savana do Rupununi",
+     "recommendedDuration": "2 dias (savana e ariranhas)",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Ariranhas em Karanambu",
+      "Savana do Rupununi e cupinzeiros",
+      "Rock View e aldeia de Annai",
+      "Vitórias-régias gigantes"
+     ],
+     "activities": [
+      "Faça um passeio para ver ariranhas no rio Rupununi.",
+      "Percorra a savana a cavalo ou de 4x4.",
+      "Visite uma aldeia ameríndia."
+     ],
+     "foodAndDrinks": [
+      "Peixe de rio na brasa",
+      "Pratos com farine (farinha de mandioca)",
+      "Kasiri (bebida de mandioca)"
+     ],
+     "criticalTips": [
+      "Na estação seca, as estradas de terra ficam mais transitáveis.",
+      "Perto da fronteira com o Brasil, em Lethem, respeite as normas oficiais."
+     ],
+     "mapsQuery": "Lethem, Guyana"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Pepperpot (ensopado de carne com cassareep, prato nacional)",
+     "Cook-up rice (arroz com feijão e coco)",
+     "Curry com roti"
+    ],
+    "drinks": [
+     "Rum El Dorado",
+     "Mauby (bebida de casca de árvore)",
+     "Sorrel (bebida de hibisco)"
+    ],
+    "streetFoods": [
+     "Pholourie (bolinho frito com molho azedinho)",
+     "Cheese rolls e egg balls",
+     "Black cake (bolo de frutas com rum)"
+    ],
+    "diningAdvice": "A culinária mistura influências indianas, africanas e ameríndias; há curry e roti em toda parte. O pepperpot é preparado principalmente no Natal."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptadores de tomada tipo A/B e G",
+     "Repelente e comprimidos contra malária (interior)",
+     "Capa de chuva",
+     "Botas leves de trilha"
+    ],
+    "safetyAndEtiquette": [
+     "Em Georgetown, esconda os objetos de valor e não ande a pé à noite.",
+     "Não tire fotos em aldeias ameríndias sem permissão."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "A",
+     "B",
+     "D",
+     "G"
+    ],
+    "voltage": "120V / 240V",
+    "frequency": "60Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Há tomadas de 120V (tipos A/B) e de 240V (tipos G/D); confira a voltagem no seu hotel. Você vai precisar de adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "A água da torneira não é potável; use água engarrafada.",
+    "vaccines": [
+     "Febre amarela (recomendada para o interior; certificado exigido se você chegar de um país de risco)",
+     "Hepatite A e febre tifoide",
+     "Prevenção contra malária no interior (consulte seu médico)",
+     "Vacinas de rotina"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "913"
+   },
+   "tipping": {
+    "custom": "A gorjeta não é obrigatória, mas é esperada quando o serviço é bom.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Se não houver taxa de serviço, deixe 10 %; os guias do lodge recebem uma gorjeta diária."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Sem restituição de IVA para turistas (IVA de 14 %)",
+    "minSpend": "Não se aplica",
+    "customsNote": "A Guiana não tem sistema de restituição de IVA (tax-free) para turistas. Levar ouro e diamantes para fora do país exige documentos oficiais; produtos de fauna protegida são proibidos."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 1,50 - 4,00",
+    "topCarriers": [
+     "GTT",
+     "Digicel Guyana"
+    ],
+    "airportSimTrapWarning": "A Digicel e a GTT têm balcões no aeroporto Cheddi Jagan; o cadastro exige passaporte. Lembre-se de que em grande parte do interior não há sinal."
+   },
+   "touristScams": [
+    {
+     "title": "Táxi sem licença",
+     "desc": "Táxis não registrados no aeroporto e nos pontos de ônibus, com tarifas infladas.",
+     "tip": "Chame a empresa de táxi com licença indicada pelo seu hotel."
+    },
+    {
+     "title": "Arrastões no mercado",
+     "desc": "Truques de distração e furto de bolsas ao redor do mercado Stabroek.",
+     "tip": "Não leve objetos de valor e carregue a bolsa na frente."
+    },
+    {
+     "title": "Ouro falso",
+     "desc": "Ofertas de ouro ou diamantes baratos na rua.",
+     "tip": "Compre apenas em joalherias licenciadas e com nota fiscal."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Гайанский доллар (GYD)",

@@ -1575,6 +1575,400 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Coroa sueca (SEK)",
+   "plugType": "Tipo C, F (230V, 50Hz)",
+   "bestMonths": "Junho a agosto (claridade quase até a meia-noite, arquipélago e Midsommar); maio e setembro são mais tranquilos; de dezembro a março, auroras boreais na Lapônia (Abisko, Kiruna)",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "No geral, é seguro para turistas. Em algumas periferias de Estocolmo, Gotemburgo e Malmö há tiroteios ligados a gangues, mas eles raramente afetam as áreas turísticas. Cuidado com batedores de carteira em Gamla Stan e na T-Centralen, e acompanhe o nível oficial de ameaça terrorista.",
+    "commonScams": [
+     "Táxis com preço livre: tarifas absurdas se você embarcar sem olhar a etiqueta amarela de preços (jämförpris) no vidro traseiro",
+     "Batedores de carteira em pontos turísticos e estações movimentadas",
+     "Conversão dinâmica de moeda (DCC), que empurra você a pagar em liras/euros em vez de coroas"
+    ],
+    "safeTravelTips": [
+     "Confira a etiqueta amarela de preços no vidro traseiro antes de entrar em um táxi, ou use Uber/Bolt.",
+     "Ao pagar com cartão, escolha sempre SEK (coroas).",
+     "Nos passeios de verão pelo arquipélago, use calça comprida e repelente contra carrapatos."
+    ],
+    "emergencyNumbers": {
+     "police": "112",
+     "ambulance": "112",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Cobertura de mais de 99 % da população (4G/5G); o sinal pode enfraquecer em áreas remotas da Lapônia",
+    "costPerGbUsd": "~US$ 1,00 - 3,00",
+    "esimAvailability": "Excelente",
+    "bestCarriers": [
+     "Telia",
+     "Tele2",
+     "Telenor",
+     "Tre (3)",
+     "Airalo / Holafly eSIM"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Excelente (metrô de Estocolmo, trens rápidos da SJ, bondes e barcos urbanos)",
+    "costLevel": "Caro",
+    "singleTicketUsd": "4,00 - 4,60 $ (Estocolmo SL, 75 min)",
+    "dailyPassUsd": "15,00 - 18,00 $ (Estocolmo SL, 24h)",
+    "popularRideApps": [
+     "SL",
+     "SJ",
+     "Västtrafik To Go",
+     "Skånetrafiken",
+     "Uber",
+     "Bolt",
+     "Taxi Stockholm"
+    ],
+    "taxiAdvice": "As tarifas de táxi na Suécia são livres; escolha grandes empresas como a Taxi Stockholm ou use Uber/Bolt. Os trens da SJ são rápidos para viagens entre cidades, e as passagens compradas com antecedência saem bem mais baratas."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 80 - 120",
+    "dailyBudgetMidrangeUsd": "US$ 180 - 300",
+    "budgetMealUsd": "US$ 13 - 22",
+    "coffeeUsd": "US$ 4,00 - 6,00",
+    "waterBottleUsd": "US$ 2,00 - 3,50",
+    "hostelDormUsd": "US$ 35 - 60",
+    "hotel3StarUsd": "US$ 130 - 220",
+    "flightCostIndex": "Moderado (Istambul – Estocolmo direto, ~3,5 h)",
+    "flightTip": "A Turkish Airlines tem voos diretos para Estocolmo-Arlanda e Gotemburgo, e a Pegasus para Estocolmo. Para Malmö, voe até o aeroporto de Copenhague e pegue o trem de ~20 minutos."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "A “fika” é sagrada: a pausa diária para café e um doce é um ritual social.",
+     "Pontualidade e filas são importantes; em muitos lugares se pega uma senha (kölapp).",
+     "Tire os sapatos ao entrar em casa.",
+     "O Allemansrätten (direito de acesso público) permite aproveitar a natureza, mas espera-se respeito por ela e pela propriedade privada."
+    ],
+    "festivals": [
+     "Midsommar (fim de junho – coroas de flores e dança ao redor do mastro de maio)",
+     "Lúcia (13 de dezembro – procissão de luz)",
+     "Kräftskiva (agosto – festas de lagostim de água doce)"
+    ],
+    "lifestyle": "Igualitária, tranquila e voltada para a natureza; a filosofia “lagom” (na medida certa) e as longas férias de verão marcam o dia a dia."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Gamla Stan e Palácio Real, Estocolmo",
+     "Museu Vasa",
+     "Arquipélago de Estocolmo (Vaxholm)",
+     "Palácio de Drottningholm (UNESCO)",
+     "Haga e Liseberg, Gotemburgo",
+     "Abisko e Kiruna (auroras boreais, Icehotel)"
+    ],
+    "bestSeasons": "Junho a agosto",
+    "travelStyleTip": "O sul da Suécia é fácil de percorrer de trem; para a Lapônia, voe a partir de Estocolmo ou pegue o trem noturno (Arctic Circle Train)."
+   },
+   "religion": {
+    "primaryReligions": "Membros da Igreja da Suécia (luterana) ~52 %, muçulmanos ~5-8 % (estimativa); sociedade majoritariamente secular",
+    "respectNorms": "Faça silêncio nas igrejas; evite visitas durante os cultos.",
+    "sacredSites": [
+     "Catedral de Uppsala (a maior igreja da Escandinávia)",
+     "Catedral de Estocolmo (Storkyrkan)",
+     "Catedral de Lund"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Sueco (oficial); as línguas sami, o finlandês e o meänkieli são línguas minoritárias reconhecidas.",
+    "englishProficiency": "Excelente; quase todo mundo fala inglês fluentemente.",
+    "phrases": [
+     {
+      "phrase": "Hej",
+      "meaning": "Olá",
+      "translation": "Olá",
+      "pronunciation": "hey"
+     },
+     {
+      "phrase": "Tack",
+      "meaning": "Obrigado(a)",
+      "translation": "Obrigado(a)",
+      "pronunciation": "tahk"
+     },
+     {
+      "phrase": "Ursäkta",
+      "meaning": "Com licença / Desculpe",
+      "translation": "Com licença",
+      "pronunciation": "OOR-shek-ta"
+     },
+     {
+      "phrase": "Vad kostar det?",
+      "meaning": "Quanto custa?",
+      "translation": "Quanto é?",
+      "pronunciation": "vah KOS-tar deh"
+     },
+     {
+      "phrase": "Kan jag få notan?",
+      "meaning": "Pode me trazer a conta?",
+      "translation": "A conta, por favor",
+      "pronunciation": "kahn yah foh NOO-tan"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Depois da Era Viking e da União de Kalmar, a Suécia se tornou independente com Gustavo Vasa em 1523 e, no século XVII, virou uma grande potência do norte da Europa. Em paz desde 1814, ficou famosa pelo seu modelo de Estado de bem-estar social e entrou na UE em 1995 e na OTAN em 2024.",
+    "milestones": [
+     "1523: Gustavo Vasa rompe com a União de Kalmar",
+     "1611–1718: a era de “Grande Potência”",
+     "1995: entrada na UE",
+     "2024: entrada na OTAN"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Köttbullar (almôndegas com geleia de lingonberry e purê; geralmente de carne bovina e suína)",
+     "Gravlax (salmão curado com endro)",
+     "Toast Skagen (torrada com camarão)"
+    ],
+    "traditionalDrinks": [
+     "Café (cultura da fika)",
+     "Snaps / Akvavit",
+     "Julmust (refrigerante de Natal)"
+    ],
+    "streetFoodAndDesserts": [
+     "Kanelbulle (rolinho de canela)",
+     "Prinsesstårta (bolo princesa coberto de marzipã verde)",
+     "Semla (pão doce com creme e pasta de amêndoa, fevereiro – março)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Alfred Nobel (inventor da dinamite, criador do Prêmio Nobel)",
+     "Astrid Lindgren (autora de Píppi Meialonga)",
+     "Carl Lineu (pai da taxonomia moderna)"
+    ],
+    "strongSectors": [
+     "Setor automotivo e máquinas (Volvo, Scania, Atlas Copco)",
+     "Telecomunicações e tecnologia (Ericsson, Spotify)",
+     "Varejo e design (IKEA, H&M)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Uma das sociedades que menos usam dinheiro vivo no mundo; muitos cafés e ônibus não aceitam dinheiro. Basta um cartão por aproximação ou o celular.",
+    "tippingCulture": "O serviço está incluído; arredondar ou deixar 5-10 % nos restaurantes é opcional.",
+    "economicPillars": "Indústria exportadora (automotiva, máquinas, produtos florestais), tecnologia, mineração e serviços."
+   }
+  },
+  "itin": {
+   "routeName": "Suécia clássica: Uppsala, Estocolmo, Gotemburgo e Malmö",
+   "routeSummary": "Roteiro de trem de 7 dias que vai da Uppsala viking a Estocolmo e suas 14 ilhas, à litorânea Gotemburgo e a Malmö, a cidade da ponte de Øresund.",
+   "totalDays": 7,
+   "idealDurationText": "Roteiro de 7 dias",
+   "bestSeason": "Junho a agosto",
+   "transportMode": "Trens da SJ; metrô, bondes e barcos dentro das cidades",
+   "paceLevel": "Equilibrado (cidade + história + arquipélago)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Uppsala (cidade universitária e herança viking)",
+     "recommendedDuration": "1 dia",
+     "durationBadge": "1 dia",
+     "highlights": [
+      "Catedral de Uppsala",
+      "Túmulos reais de Gamla Uppsala",
+      "Jardim de Lineu",
+      "Castelo de Uppsala"
+     ],
+     "activities": [
+      "Caminhe entre os túmulos da Era Viking em Gamla Uppsala.",
+      "Veja o teatro anatômico do museu Gustavianum.",
+      "Faça uma pausa para a fika à beira do rio Fyris."
+     ],
+     "foodAndDrinks": [
+      "Kanelbulle",
+      "Köttbullar",
+      "Café"
+     ],
+     "criticalTips": [
+      "Fica a ~20 minutos de trem do aeroporto de Arlanda; ideal para o dia da chegada.",
+      "Compre as passagens pelo app SL ou UL."
+     ],
+     "mapsQuery": "Uppsala, Sweden"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Estocolmo (capital sobre 14 ilhas)",
+     "recommendedDuration": "3 dias",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Gamla Stan e Palácio Real",
+      "Museu Vasa",
+      "Museu a céu aberto Skansen",
+      "Stadshuset (Prefeitura, local do banquete do Nobel)"
+     ],
+     "activities": [
+      "Faça um passeio de barco até Vaxholm, no arquipélago.",
+      "Percorra as estações de metrô decoradas como galerias de arte.",
+      "Aproveite a vista do Monteliusvägen, em Södermalm."
+     ],
+     "foodAndDrinks": [
+      "Köttbullar",
+      "Gravlax",
+      "Prinsesstårta"
+     ],
+     "criticalTips": [
+      "A maioria dos lugares em Estocolmo só aceita cartão.",
+      "Os bilhetes SL de 24/72 horas cobrem metrô, ônibus e alguns barcos."
+     ],
+     "mapsQuery": "Stockholm, Sweden"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Gotemburgo (costa oeste)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Bairro de Haga",
+      "Parque de diversões Liseberg",
+      "Mercado de peixe Feskekôrka",
+      "Arquipélago de Gotemburgo (Styrsö, Vrångö)"
+     ],
+     "activities": [
+      "Faça uma fika com um rolinho de canela gigante em Haga.",
+      "Vá de barco ao arquipélago sul com o bilhete do transporte público.",
+      "Passeie pelo parque Slottsskogen."
+     ],
+     "foodAndDrinks": [
+      "Räksmörgås (sanduíche de camarão)",
+      "Kanelbulle",
+      "Cerveja artesanal local"
+     ],
+     "criticalTips": [
+      "Os barcos do arquipélago estão incluídos no bilhete da Västtrafik.",
+      "O Liseberg abre por temporadas; confira o calendário."
+     ],
+     "mapsQuery": "Gothenburg, Sweden"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Malmö e Lund (costa do Øresund)",
+     "recommendedDuration": "1 dia",
+     "durationBadge": "1 dia",
+     "highlights": [
+      "Turning Torso",
+      "Lilla Torg",
+      "Vista da ponte de Øresund",
+      "Catedral de Lund"
+     ],
+     "activities": [
+      "Experimente a sauna do Kallbadhus na praia de Ribersborg.",
+      "Passeie pelas ruas universitárias de Lund.",
+      "Se quiser, pegue o trem para Copenhague."
+     ],
+     "foodAndDrinks": [
+      "Falafel (clássico de rua de Malmö)",
+      "Spettekaka (bolo de espeto da Escânia)",
+      "Café"
+     ],
+     "criticalTips": [
+      "Leve o passaporte ao cruzar para Copenhague; pode haver controles.",
+      "Compre as passagens do trem do Øresund pelo app da Skånetrafiken."
+     ],
+     "mapsQuery": "Malmo, Sweden"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Köttbullar (almôndegas com geleia de lingonberry e purê; geralmente de carne bovina e suína)",
+     "Gravlax (salmão curado com endro)",
+     "Toast Skagen (torrada com camarão)"
+    ],
+    "drinks": [
+     "Café (cultura da fika)",
+     "Snaps / Akvavit",
+     "Julmust (refrigerante de Natal)"
+    ],
+    "streetFoods": [
+     "Kanelbulle (rolinho de canela)",
+     "Prinsesstårta (bolo princesa coberto de marzipã verde)",
+     "Semla (pão doce com creme e pasta de amêndoa, fevereiro – março)"
+    ],
+    "diningAdvice": "Nos dias de semana, o “dagens lunch” (com salada, pão e café incluídos) é a opção mais barata. Bebidas com mais de 3,5 % de álcool só são vendidas nas lojas estatais Systembolaget. As köttbullar costumam levar carne de porco; pergunte ao pedir."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Roupas em camadas e jaqueta corta-vento",
+     "Máscara de dormir no verão (noites claras)",
+     "Cartão por aproximação (dinheiro raramente é aceito)",
+     "Repelente de carrapatos (arquipélago e florestas)"
+    ],
+    "safetyAndEtiquette": [
+     "Confira a etiqueta de preços antes de entrar em um táxi.",
+     "Respeite o sistema de senhas nas filas."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Tomadas europeias C/F, iguais às da Turquia; não é preciso adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "A água da torneira é excelente e potável; não é preciso comprar água engarrafada.",
+    "vaccines": [
+     "Vacinas de rotina (tétano, difteria, tríplice viral)",
+     "Recomenda-se a vacina contra encefalite transmitida por carrapatos (TBE) para visitas no verão ao arquipélago de Estocolmo e às florestas do litoral"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "112"
+   },
+   "tipping": {
+    "custom": "A gorjeta é opcional; arredondar ou deixar 5-10 % é comum.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "As maquininhas de cartão podem sugerir gorjeta; ela não é obrigatória."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA de 25 % (restituição líquida de ~12-19 % após as comissões)",
+    "minSpend": "Mais de 200 SEK na mesma loja",
+    "customsNote": "Valide o formulário na alfândega do último ponto de saída da UE (por exemplo, Arlanda); os produtos precisam estar sem uso."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "~US$ 1,00 - 3,00",
+    "topCarriers": [
+     "Telia",
+     "Tele2",
+     "Telenor",
+     "Tre (3)"
+    ],
+    "airportSimTrapWarning": "Evite os pacotes caros para turistas em Arlanda e configure um eSIM; na Pressbyrån e nos supermercados há chips pré-pagos como Comviq ou Lycamobile."
+   },
+   "touristScams": [
+    {
+     "title": "Táxi com preço livre",
+     "desc": "As tarifas de táxi na Suécia são liberadas; algumas empresas pequenas cobram várias vezes o valor normal.",
+     "tip": "Confira a etiqueta amarela “jämförpris” no vidro traseiro ou use Uber/Bolt/Taxi Stockholm."
+    },
+    {
+     "title": "Conversão dinâmica de moeda",
+     "desc": "A maquininha mostra o valor em liras ou euros com uma cotação ruim.",
+     "tip": "Escolha sempre SEK."
+    },
+    {
+     "title": "Batedores de carteira",
+     "desc": "Há furtos de carteiras e celulares em Gamla Stan, na T-Centralen e em metrôs lotados.",
+     "tip": "Leve os objetos de valor no bolso da frente ou em uma bolsa com zíper."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Шведская крона (SEK)",

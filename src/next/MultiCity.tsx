@@ -133,15 +133,15 @@ export const MultiCity: React.FC<{ passport: string }> = ({ passport }) => {
     <div className="vz-stack vz-trip">
       <form className="vz-card tone-sea" onSubmit={(e) => e.preventDefault()}>
         <div className="vz-formgrid">
-          <Field label={l('Nereden', 'From', 'Von', 'Desde', 'Откуда')} htmlFor="vz-mc-f" hint={hub(s.from)}>
+          <Field label={l('Nereden', 'From', 'Von', 'Desde', 'Откуда', 'De')} htmlFor="vz-mc-f" hint={hub(s.from)}>
             <select id="vz-mc-f" className="vz-select" value={s.from} onChange={(e) => set({ from: e.target.value })}>
               {opts.map((o) => <option key={o.c} value={o.c}>{o.n}</option>)}
             </select>
           </Field>
-          <Field label={l('Yola çıkış', 'Start date', 'Abreise', 'Salida', 'Начало')} htmlFor="vz-mc-d">
+          <Field label={l('Yola çıkış', 'Start date', 'Abreise', 'Salida', 'Начало', 'Saída')} htmlFor="vz-mc-d">
             <input id="vz-mc-d" type="date" className="vz-input" min={plus(iso(new Date()), 1)} value={s.start} onChange={(e) => e.target.value && set({ start: e.target.value })} />
           </Field>
-          <Field label={l('Kişi', 'Travellers', 'Reisende', 'Viajeros', 'Человек')} htmlFor="vz-mc-n">
+          <Field label={l('Kişi', 'Travellers', 'Reisende', 'Viajeros', 'Человек', 'Viajantes')} htmlFor="vz-mc-n">
             <select id="vz-mc-n" className="vz-select" value={s.n} onChange={(e) => set({ n: Number(e.target.value) })}>
               {[1, 2, 3, 4, 5, 6].map((n) => <option key={n} value={n}>{n}</option>)}
             </select>
@@ -151,14 +151,14 @@ export const MultiCity: React.FC<{ passport: string }> = ({ passport }) => {
           {s.stops.map((st, i) => (
             <li key={i}>
               <span className="vz-mc-num">{i + 1}</span>
-              <select aria-label={l(`${i + 1}. durak`, `Stop ${i + 1}`, `Station ${i + 1}`, `Parada ${i + 1}`, `Остановка ${i + 1}`)} className="vz-select" value={st.to} onChange={(e) => setStop(i, { to: e.target.value })}>
+              <select aria-label={l(`${i + 1}. durak`, `Stop ${i + 1}`, `Station ${i + 1}`, `Parada ${i + 1}`, `Остановка ${i + 1}`, `Parada ${i + 1}`)} className="vz-select" value={st.to} onChange={(e) => setStop(i, { to: e.target.value })}>
                 {opts.map((o) => <option key={o.c} value={o.c}>{o.n}</option>)}
               </select>
-              <select aria-label={l('Gece', 'Nights', 'Nächte', 'Noches', 'Ночей')} className="vz-select vz-mc-n" value={st.nights} onChange={(e) => setStop(i, { nights: Number(e.target.value) })}>
-                {[1, 2, 3, 4, 5, 6, 7, 10, 14].map((n) => <option key={n} value={n}>{l(`${n} gece`, `${n} nights`, `${n} Nächte`, `${n} noches`, `${n} ноч.`)}</option>)}
+              <select aria-label={l('Gece', 'Nights', 'Nächte', 'Noches', 'Ночей', 'Noites')} className="vz-select vz-mc-n" value={st.nights} onChange={(e) => setStop(i, { nights: Number(e.target.value) })}>
+                {[1, 2, 3, 4, 5, 6, 7, 10, 14].map((n) => <option key={n} value={n}>{l(`${n} gece`, `${n} nights`, `${n} Nächte`, `${n} noches`, `${n} ноч.`, `${n} noites`)}</option>)}
               </select>
               {s.stops.length > 1 && (
-                <button type="button" className="vz-mc-del" aria-label={l('Durağı sil', 'Remove stop', 'Entfernen', 'Quitar', 'Удалить')} onClick={() => set({ stops: s.stops.filter((_, j) => j !== i) })}>✕</button>
+                <button type="button" className="vz-mc-del" aria-label={l('Durağı sil', 'Remove stop', 'Entfernen', 'Quitar', 'Удалить', 'Remover')} onClick={() => set({ stops: s.stops.filter((_, j) => j !== i) })}>✕</button>
               )}
             </li>
           ))}
@@ -166,22 +166,22 @@ export const MultiCity: React.FC<{ passport: string }> = ({ passport }) => {
         <div className="vz-row-flex" style={{ gap: 10, flexWrap: 'wrap', alignItems: 'center' }}>
           {s.stops.length < 5 && (
             <button type="button" className="vz-btn vz-btn-soft sm" onClick={() => set({ stops: [...s.stops, { to: 'ES', nights: 3 }] })}>
-              <Icon name="plus" size={16} duo={false} /> {l('Durak ekle', 'Add stop', 'Station hinzufügen', 'Añadir parada', 'Добавить')}
+              <Icon name="plus" size={16} duo={false} /> {l('Durak ekle', 'Add stop', 'Station hinzufügen', 'Añadir parada', 'Добавить', 'Adicionar parada')}
             </button>
           )}
           <label className="vz-row-flex" style={{ gap: 6, fontSize: 14 }}>
             <input type="checkbox" checked={s.back} onChange={(e) => set({ back: e.target.checked })} />
-            {l(`Sonunda başlangıç ülkesine dön (${getCountryName(s.from, language)})`, `Return to ${getCountryName(s.from, language)}`, `Rückflug nach ${getCountryName(s.from, language)}`, `Volver a ${getCountryName(s.from, language)}`, `Обратно: ${getCountryName(s.from, language)}`)}
+            {l(`Sonunda başlangıç ülkesine dön (${getCountryName(s.from, language)})`, `Return to ${getCountryName(s.from, language)}`, `Rückflug nach ${getCountryName(s.from, language)}`, `Volver a ${getCountryName(s.from, language)}`, `Обратно: ${getCountryName(s.from, language)}`, `Voltar para ${getCountryName(s.from, language)}`)}
           </label>
         </div>
       </form>
 
       <section className="vz-card vz-trip-total" aria-live="polite">
-        <span className="vz-muted">{l(`${s.stops.length} durak · ${totalNights} gece · ${s.n} kişi`, `${s.stops.length} stops · ${totalNights} nights · ${s.n} ${s.n > 1 ? 'people' : 'person'}`, `${s.stops.length} Stationen · ${totalNights} Nächte`, `${s.stops.length} paradas · ${totalNights} noches`, `${s.stops.length} ост. · ${totalNights} ноч.`)}</span>
+        <span className="vz-muted">{l(`${s.stops.length} durak · ${totalNights} gece · ${s.n} kişi`, `${s.stops.length} stops · ${totalNights} nights · ${s.n} ${s.n > 1 ? 'people' : 'person'}`, `${s.stops.length} Stationen · ${totalNights} Nächte`, `${s.stops.length} paradas · ${totalNights} noches`, `${s.stops.length} ост. · ${totalNights} ноч.`, `${s.stops.length} paradas · ${totalNights} noites`)}</span>
         <b>{busy ? '…' : money(flightPP * s.n + stayTotal)}</b>
         <span className="vz-muted" style={{ fontSize: 13 }}>
-          {l(`Uçuşlar ${money(flightPP * s.n)} + konaklama ortalaması ${money(stayTotal)}`, `Flights ${money(flightPP * s.n)} + average stay ${money(stayTotal)}`, `Flüge ${money(flightPP * s.n)} + Unterkunft ${money(stayTotal)}`, `Vuelos ${money(flightPP * s.n)} + alojamiento ${money(stayTotal)}`, `Перелёты ${money(flightPP * s.n)} + жильё ${money(stayTotal)}`)}
-          {missing > 0 && l(` · ${missing} ayak için fiyat bulunamadı`, ` · no fare found for ${missing} leg(s)`, ` · ${missing} Strecke(n) ohne Preis`, ` · ${missing} tramo(s) sin tarifa`, ` · нет цены для ${missing}`)}
+          {l(`Uçuşlar ${money(flightPP * s.n)} + konaklama ortalaması ${money(stayTotal)}`, `Flights ${money(flightPP * s.n)} + average stay ${money(stayTotal)}`, `Flüge ${money(flightPP * s.n)} + Unterkunft ${money(stayTotal)}`, `Vuelos ${money(flightPP * s.n)} + alojamiento ${money(stayTotal)}`, `Перелёты ${money(flightPP * s.n)} + жильё ${money(stayTotal)}`, `Voos ${money(flightPP * s.n)} + hospedagem ${money(stayTotal)}`)}
+          {missing > 0 && l(` · ${missing} ayak için fiyat bulunamadı`, ` · no fare found for ${missing} leg(s)`, ` · ${missing} Strecke(n) ohne Preis`, ` · ${missing} tramo(s) sin tarifa`, ` · нет цены для ${missing}`, ` · ${missing} trecho(s) sem tarifa`)}
         </span>
       </section>
 
@@ -194,7 +194,7 @@ export const MultiCity: React.FC<{ passport: string }> = ({ passport }) => {
                 key={`${q}-g${i}`}
                 lead={<PartnerLogo id={gr.id} />}
                 title={`${getCountryName(g.from, language)} → ${getCountryName(g.to, language)}`}
-                sub={l('Aynı havalimanı: uçuş gerekmez, tren ya da otobüse bak', 'Same airport: no flight needed, check trains or buses', 'Gleicher Flughafen: Zug oder Bus', 'Mismo aeropuerto: tren o autobús', 'Тот же аэропорт: поезд или автобус')}
+                sub={l('Aynı havalimanı: uçuş gerekmez, tren ya da otobüse bak', 'Same airport: no flight needed, check trains or buses', 'Gleicher Flughafen: Zug oder Bus', 'Mismo aeropuerto: tren o autobús', 'Тот же аэропорт: поезд или автобус', 'Mesmo aeroporto: trem ou ônibus')}
                 right={<span className="vz-trip-amt">—</span>}
                 href={gr.url}
               />
@@ -210,7 +210,7 @@ export const MultiCity: React.FC<{ passport: string }> = ({ passport }) => {
               title={`${getCountryName(g.from, language)} → ${getCountryName(g.to, language)}`}
               sub={
                 f
-                  ? `${hub(g.from)} → ${hub(g.to)} · ${fmtDay(f.dep)}${f.dep !== g.date ? l(' (en yakın tarih)', ' (closest date)', ' (nächstes Datum)', ' (fecha más cercana)', ' (ближайшая дата)') : ''}${f.transfers === 0 ? l(' · direkt', ' · direct', ' · direkt', ' · directo', ' · прямой') : ''}`
+                  ? `${hub(g.from)} → ${hub(g.to)} · ${fmtDay(f.dep)}${f.dep !== g.date ? l(' (en yakın tarih)', ' (closest date)', ' (nächstes Datum)', ' (fecha más cercana)', ' (ближайшая дата)', ' (data mais próxima)') : ''}${f.transfers === 0 ? l(' · direkt', ' · direct', ' · direkt', ' · directo', ' · прямой', ' · direto') : ''}`
                   : `${hub(g.from)} → ${hub(g.to)} · ${fmtDay(g.date)}`
               }
               right={<span className="vz-trip-amt">{f ? money(f.price * s.n) : busy ? '…' : '—'}</span>}
@@ -221,7 +221,7 @@ export const MultiCity: React.FC<{ passport: string }> = ({ passport }) => {
       </List>
       {legs.length > 0 && (
         <Picks
-          label={l('İlk uçuşu başka sitelerde de karşılaştır:', 'Compare the first flight elsewhere:', 'Ersten Flug vergleichen:', 'Compara el primer vuelo:', 'Сравнить первый перелёт:')}
+          label={l('İlk uçuşu başka sitelerde de karşılaştır:', 'Compare the first flight elsewhere:', 'Ersten Flug vergleichen:', 'Compara el primer vuelo:', 'Сравнить первый перелёт:', 'Compare o primeiro voo:')}
           items={[
             { id: 'kayak', url: s22Flights(hub(legs[0].from), hub(legs[0].to), legs[0].date, undefined, s.n, 'multi_city').kayak },
             { id: 'expedia', url: s22Flights(hub(legs[0].from), hub(legs[0].to), legs[0].date, undefined, s.n, 'multi_city').expedia }
@@ -231,7 +231,7 @@ export const MultiCity: React.FC<{ passport: string }> = ({ passport }) => {
       )}
 
       <section className="vz-card">
-        <h3 style={{ margin: '0 0 8px', fontSize: 16 }}><Icon name="bed" size={18} /> {l('Duraklarda konaklama', 'Where to stay', 'Unterkünfte', 'Alojamiento', 'Где жить')}</h3>
+        <h3 style={{ margin: '0 0 8px', fontSize: 16 }}><Icon name="bed" size={18} /> {l('Duraklarda konaklama', 'Where to stay', 'Unterkünfte', 'Alojamiento', 'Где жить', 'Hospedagem')}</h3>
         <div className="vz-stack" style={{ gap: 12 }}>
           {s.stops.map((st, i) => {
             const city = GEO_DATA[st.to]?.capital ? capitalName(st.to, 'en', GEO_DATA[st.to].capital) : getCountryName(st.to, 'en');
@@ -247,17 +247,17 @@ export const MultiCity: React.FC<{ passport: string }> = ({ passport }) => {
             return (
               <div key={`${st.to}-${i}`} className="vz-mc-stay">
                 <div className="vz-row-flex" style={{ justifyContent: 'space-between', gap: 8 }}>
-                  <b>{i + 1}. {city} · {l(`${st.nights} gece`, `${st.nights} nights`, `${st.nights} Nächte`, `${st.nights} noches`, `${st.nights} ноч.`)}</b>
+                  <b>{i + 1}. {city} · {l(`${st.nights} gece`, `${st.nights} nights`, `${st.nights} Nächte`, `${st.nights} noches`, `${st.nights} ноч.`, `${st.nights} noites`)}</b>
                   {st.to !== passport && <VisaBadge item={items.get(st.to) || null} />}
                 </div>
-                <span className="vz-muted" style={{ fontSize: 13 }}>{fmtDay(ci)} → {fmtDay(co)}{stays[i].night ? ` · ≈ ${money(stays[i].night)} / ${l('gece', 'night', 'Nacht', 'noche', 'ночь')}` : ''}</span>
+                <span className="vz-muted" style={{ fontSize: 13 }}>{fmtDay(ci)} → {fmtDay(co)}{stays[i].night ? ` · ≈ ${money(stays[i].night)} / ${l('gece', 'night', 'Nacht', 'noche', 'ночь', 'noite')}` : ''}</span>
                 <Picks label="" items={picks} k={`${st.to}${ci}${co}${s.n}`} />
               </div>
             );
           })}
         </div>
       </section>
-      <p className="vz-trip-note">{l('Uçuş fiyatları her ayak için seçilen tarihe en yakın (±3 gün) en ucuz tek yön biletlerdir; kişi başı fiyat × kişi sayısı. Konaklama ülke ortalamasıdır.', 'Flight fares are the cheapest one-way tickets within ±3 days of each leg date, times travellers. Stays are country averages.', 'Flugpreise: günstigste Einzelflüge ±3 Tage je Strecke. Unterkunft: Landesdurchschnitt.', 'Vuelos: ida más barata ±3 días por tramo. Alojamiento: media del país.', 'Перелёты: самые дешёвые билеты ±3 дня на каждый участок. Жильё: средние цены.')}</p>
+      <p className="vz-trip-note">{l('Uçuş fiyatları her ayak için seçilen tarihe en yakın (±3 gün) en ucuz tek yön biletlerdir; kişi başı fiyat × kişi sayısı. Konaklama ülke ortalamasıdır.', 'Flight fares are the cheapest one-way tickets within ±3 days of each leg date, times travellers. Stays are country averages.', 'Flugpreise: günstigste Einzelflüge ±3 Tage je Strecke. Unterkunft: Landesdurchschnitt.', 'Vuelos: ida más barata ±3 días por tramo. Alojamiento: media del país.', 'Перелёты: самые дешёвые билеты ±3 дня на каждый участок. Жильё: средние цены.', 'Voos: só ida mais barata ±3 dias por trecho. Hospedagem: média do país.')}</p>
     </div>
   );
 };

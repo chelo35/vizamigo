@@ -1532,6 +1532,7 @@ function getRegionalSafetyIntelligence(code: string, lang: string, popularRideAp
   const isEn = lang === 'en';
   const isDe = lang === 'de';
   const isEs = lang === 'es';
+  const isPt = lang === 'pt';
   const isRu = lang === 'ru';
 
   // Doğu / Güneydoğu Asya
@@ -1543,7 +1544,11 @@ function getRegionalSafetyIntelligence(code: string, lang: string, popularRideAp
             'Extorsión por daños en alquiler de scooters reclamando dinero por arañazos preexistentes',
             'Agencias piratas que venden billetes falsos para excursiones a islas o autobuses'
           ]
-        : isRu
+        : isPt ? [
+            'Recusa em usar o taxímetro nos terminais de balsa e nas saídas dos aeroportos, com exigência de tarifas fixas abusivas',
+            'Extorsão por danos no aluguel de scooters, com cobrança por arranhões que já existiam',
+            'Agências piratas que vendem passagens falsas para passeios às ilhas ou ônibus'
+          ] : isRu
         ? [
             'Отказ включить таксометр у пирсов и в аэропортах с требованием завышенной фиксированной оплаты',
             'Вымогательство за повреждения арендованных скутеров со ссылкой на старые царапины',
@@ -1572,7 +1577,11 @@ function getRegionalSafetyIntelligence(code: string, lang: string, popularRideAp
             'Al alquilar un scooter, grabe un vídeo detallado del vehículo antes de salir y nunca deje su pasaporte original como depósito.',
             'Consuma exclusivamente agua embotellada y precintada.'
           ]
-        : isRu
+        : isPt ? [
+            `Use apps locais verificados (${popularRideApps.slice(0, 2).join('/')}) para corridas com tarifa fixa por GPS.`,
+            'Ao alugar uma scooter, grave um vídeo detalhado do veículo antes de sair e nunca deixe seu passaporte original como caução.',
+            'Beba apenas água engarrafada e lacrada.'
+          ] : isRu
         ? [
             `Используйте официальные приложения (${popularRideApps.slice(0, 2).join('/')}) с фиксированной оплатой и GPS-трекингом.`,
             'При аренде скутера снимите подробное видео состояния до поездки и никогда не оставляйте паспорт в залог.',
@@ -1607,7 +1616,11 @@ function getRegionalSafetyIntelligence(code: string, lang: string, popularRideAp
             'Casas de cambio con comisiones y márgenes ocultos en avenidas turísticas principales',
             'Suplementos de servicio abusivos no indicados en terrazas frente a monumentos emblemáticos'
           ]
-        : isRu
+        : isPt ? [
+            'Batedores de carteira oportunistas em estações de trem muito movimentadas e praças históricas',
+            'Casas de câmbio com comissões e margens ocultas nas principais avenidas turísticas',
+            'Taxas de serviço abusivas e não informadas em mesas ao ar livre diante de monumentos famosos'
+          ] : isRu
         ? [
             'Карманники на оживленных вокзалах, в метро и на исторических площадях',
             'Пункты обмена валют со скрытыми комиссиями на центральных туристических улицах',
@@ -1636,7 +1649,11 @@ function getRegionalSafetyIntelligence(code: string, lang: string, popularRideAp
             'Priorice los pagos con tarjeta; prácticamente todo se puede pagar sin comisiones y sin cambiar efectivo.',
             'Utilice pases oficiales diarios o turísticos de transporte público para ahorrar en metro y trenes.'
           ]
-        : isRu
+        : isPt ? [
+            'Leve a carteira e o celular nos bolsos da frente em áreas de pedestres movimentadas.',
+            'Dê preferência aos pagamentos com cartão; dá para pagar praticamente tudo sem tarifas e sem trocar dinheiro.',
+            'Use passes oficiais diários ou turísticos de transporte público para economizar no metrô e nos trens.'
+          ] : isRu
         ? [
             'В оживленных местах держите кошелек и смартфон во внутренних или передних карманах.',
             'Расплачивайтесь банковской картой; безналичный расчет распространен повсеместно и избавляет от комиссий.',
@@ -1671,7 +1688,11 @@ function getRegionalSafetyIntelligence(code: string, lang: string, popularRideAp
             'Tirones de bolsos colgados en el respaldo de sillas o en el suelo en restaurantes',
             'Guías de senderismo y montaña clandestinos sin licencia ni equipos de comunicación'
           ]
-        : isRu
+        : isPt ? [
+            'Notas falsas devolvidas como troco em táxis de rua e pequenos quiosques',
+            'Furtos de bolsas penduradas no encosto das cadeiras ou deixadas no chão em restaurantes',
+            'Guias clandestinos de trilha e montanha, sem licença nem equipamento de comunicação'
+          ] : isRu
         ? [
             'Фальшивые купюры при сдаче в уличных такси и небольших киосках',
             'Кража сумок, оставленных на спинках стульев или на полу в ресторанах и кафе',
@@ -1700,7 +1721,11 @@ function getRegionalSafetyIntelligence(code: string, lang: string, popularRideAp
             'Al recibir cambio en efectivo, verifique rápidamente la marca de agua en billetes grandes.',
             'Evite calles desiertas tras el anochecer y guarde su pasaporte original en la caja fuerte del hotel.'
           ]
-        : isRu
+        : isPt ? [
+            `Use apenas apps de transporte oficiais (${popularRideApps.slice(0, 2).join('/')}).`,
+            'Ao receber troco em dinheiro, confira rapidamente a marca d\'água das notas de valor alto.',
+            'Evite ruas desertas depois que escurecer e guarde seu passaporte original no cofre do hotel.'
+          ] : isRu
         ? [
             `Пользуйтесь только официальными приложениями для вызова авто (${popularRideApps.slice(0, 2).join('/')}).`,
             'Проверяйте водяные знаки на крупных купюрах при получении сдачи.',
@@ -1734,7 +1759,11 @@ function getRegionalSafetyIntelligence(code: string, lang: string, popularRideAp
           'Tácticas de distracción en nudos de transporte concurridos para robar pertenencias',
           'Venta de billetes y excursiones sin licencia oficial de turismo'
         ]
-      : isRu
+      : isPt ? [
+          'Preços abusivos de veículos não oficiais, sem taxímetro nem tarifas reguladas',
+          'Táticas de distração em pontos de conexão de transporte movimentados para furtar pertences',
+          'Venda de passagens e passeios sem licença oficial de turismo'
+        ] : isRu
       ? [
           'Завышенные цены у нелегальных перевозчиков без счетчика',
           'Отвлекающие маневры в плотных пересадочных узлах для кражи смартфонов',
@@ -1763,7 +1792,11 @@ function getRegionalSafetyIntelligence(code: string, lang: string, popularRideAp
           'Lleve siempre una copia digital de su pasaporte guardada sin conexión en el móvil.',
           'Contrate siempre un seguro médico internacional y de repatriación antes de viajar.'
         ]
-      : isRu
+      : isPt ? [
+          `Reserve traslados por apps oficiais (${popularRideApps.slice(0, 2).join('/')}) ou em pontos verificados.`,
+          'Tenha sempre uma cópia digital do passaporte salva offline no celular.',
+          'Contrate sempre um seguro saúde internacional com cobertura de repatriação antes de viajar.'
+        ] : isRu
       ? [
           `Заказывайте поездки через проверенные приложения (${popularRideApps.slice(0, 2).join('/')}) или на официальных стойках.`,
           'Сохраните цифровую копию паспорта и страховки офлайн на телефоне.',
@@ -1797,6 +1830,7 @@ function getCountryInsightsImpl(countryCode: string, lang: string = 'tr'): Count
   const isEn = lang === 'en';
   const isDe = lang === 'de';
   const isEs = lang === 'es';
+  const isPt = lang === 'pt';
   const isRu = lang === 'ru';
   const code = countryCode.toUpperCase();
   const countryName = getCountryName(code, lang);
@@ -1880,16 +1914,16 @@ function getCountryInsightsImpl(countryCode: string, lang: string = 'tr'): Count
 
   const safetyLevelText =
     safetyScore < 25
-      ? (isEs ? 'Zona de Conflicto (No Viajar)' : isRu ? 'Зона конфликта (Не въезжать)' : isDe ? 'Kriegsgebiet (Reisewarnung)' : isEn ? 'Do Not Travel (Conflict Zone)' : 'Seyahat Uyarısı (Kırmızı Bölge)')
+      ? (isEs ? 'Zona de Conflicto (No Viajar)' : isPt ? 'Zona de conflito (não viaje)' : isRu ? 'Зона конфликта (Не въезжать)' : isDe ? 'Kriegsgebiet (Reisewarnung)' : isEn ? 'Do Not Travel (Conflict Zone)' : 'Seyahat Uyarısı (Kırmızı Bölge)')
       : safetyScore >= 85
-      ? (isEs ? 'Excepcionalmente Seguro' : isRu ? 'Исключительно Безопасно' : isDe ? 'Außergewöhnlich sicher' : isEn ? 'Exceptional Safety' : 'Olağanüstü Güvenli')
+      ? (isEs ? 'Excepcionalmente Seguro' : isPt ? 'Excepcionalmente seguro' : isRu ? 'Исключительно Безопасно' : isDe ? 'Außergewöhnlich sicher' : isEn ? 'Exceptional Safety' : 'Olağanüstü Güvenli')
       : safetyScore >= 75
-      ? (isEs ? 'Muy Seguro' : isRu ? 'Очень Безопасно' : isDe ? 'Sehr sicher' : isEn ? 'Very Safe' : 'Çok Güvenli')
+      ? (isEs ? 'Muy Seguro' : isPt ? 'Muito seguro' : isRu ? 'Очень Безопасно' : isDe ? 'Sehr sicher' : isEn ? 'Very Safe' : 'Çok Güvenli')
       : safetyScore >= 65
-      ? (isEs ? 'Seguro' : isRu ? 'Безопасно' : isDe ? 'Sicher' : isEn ? 'Safe' : 'Güvenli')
+      ? (isEs ? 'Seguro' : isPt ? 'Seguro' : isRu ? 'Безопасно' : isDe ? 'Sicher' : isEn ? 'Safe' : 'Güvenli')
       : safetyScore >= 50
-      ? (isEs ? 'Riesgo Moderado' : isRu ? 'Умеренный Риск' : isDe ? 'Mäßiges Risiko' : isEn ? 'Moderate' : 'Orta Seviye')
-      : (isEs ? 'Precaución Aconsejada' : isRu ? 'Требуется Осторожность' : isDe ? 'Erhöhte Vorsicht' : isEn ? 'Caution Advised' : 'Hassas / Tedbir Gerekir');
+      ? (isEs ? 'Riesgo Moderado' : isPt ? 'Risco moderado' : isRu ? 'Умеренный Риск' : isDe ? 'Mäßiges Risiko' : isEn ? 'Moderate' : 'Orta Seviye')
+      : (isEs ? 'Precaución Aconsejada' : isPt ? 'Cautela recomendada' : isRu ? 'Требуется Осторожность' : isDe ? 'Erhöhte Vorsicht' : isEn ? 'Caution Advised' : 'Hassas / Tedbir Gerekir');
 
   const safetyBadgeColor =
     safetyScore < 25
@@ -1906,7 +1940,7 @@ function getCountryInsightsImpl(countryCode: string, lang: string = 'tr'): Count
     safetyScore < 25
       ? (isEs
           ? 'Zona de conflicto activo o alto riesgo bélico. Todos los ministerios de exteriores desaconsejan cualquier viaje.'
-          : isRu
+          : isPt ? 'Zona de conflito ativo ou de alto risco de guerra. Todos os ministérios das Relações Exteriores desaconselham qualquer viagem.' : isRu
           ? 'Зона активного конфликта или боевых действий. МИД настоятельно рекомендует воздержаться от любых поездок.'
           : isDe
           ? 'Aktives Kriegs- oder Krisengebiet. Es gilt eine offizielle Reisewarnung der Außenministerien; von allen Reisen wird dringend abgeraten.'
@@ -1916,7 +1950,7 @@ function getCountryInsightsImpl(countryCode: string, lang: string = 'tr'): Count
       : safetyScore >= 85
       ? (isEs
           ? 'Uno de los países más seguros del mundo. El delito violento es casi inexistente; excelente para viajeros en solitario y tranquilidad nocturna.'
-          : isRu
+          : isPt ? 'Um dos países mais seguros do mundo. Crimes violentos são quase inexistentes; excelente para quem viaja sozinho e para sair à noite com tranquilidade.' : isRu
           ? 'Одна из самых безопасных стран мира. Насильственная преступность практически отсутствует; крайне комфортно для соло-путешественников.'
           : isDe
           ? 'Eines der sichersten Länder der Welt. Gewaltkriminalität ist quasi nicht existent; ideal für Alleinreisende.'
@@ -1926,7 +1960,7 @@ function getCountryInsightsImpl(countryCode: string, lang: string = 'tr'): Count
       : safetyScore >= 75
       ? (isEs
           ? 'Destino muy seguro. Bajo índice de delincuencia; la precaución básica en puntos turísticos es suficiente.'
-          : isRu
+          : isPt ? 'Destino muito seguro. Baixo índice de criminalidade; a cautela básica nos pontos turísticos é suficiente.' : isRu
           ? 'Очень безопасное направление. Низкий уровень преступности; стандартной бдительности в туристических местах более чем достаточно.'
           : isDe
           ? 'Sehr sicheres Reiseland. Sehr niedrige Kriminalitätsrate; grundlegende Sorgfalt an Sehenswürdigkeiten reicht völlig aus.'
@@ -1936,7 +1970,7 @@ function getCountryInsightsImpl(countryCode: string, lang: string = 'tr'): Count
       : safetyScore >= 65
       ? (isEs
           ? 'Generalmente seguro. El principal riesgo en áreas metropolitanas son los carteristas y descuidos con las pertenencias.'
-          : isRu
+          : isPt ? 'Em geral seguro. O principal risco nas regiões metropolitanas são os batedores de carteira e os descuidos com os pertences.' : isRu
           ? 'В целом безопасно. Основное внимание в мегаполисах следует уделять карманникам и контролю за личными вещами.'
           : isDe
           ? 'Generell sicher. Hauptrisiko in Metropolen sind Taschendiebstahl und unachtsame Taschenaufbewahrung.'
@@ -1946,7 +1980,7 @@ function getCountryInsightsImpl(countryCode: string, lang: string = 'tr'): Count
       : safetyScore >= 50
       ? (isEs
           ? 'Nivel de seguridad moderado. Se recomienda prudencia tras caer la noche y en calles comerciales muy concurridas.'
-          : isRu
+          : isPt ? 'Nível de segurança moderado. Recomenda-se cautela depois que escurece e em ruas comerciais muito movimentadas.' : isRu
           ? 'Умеренный уровень безопасности. Избегайте безлюдных улиц в темное время суток и не держите ценности на виду.'
           : isDe
           ? 'Mäßige Sicherheitslage. Nach Einbruch der Dunkelheit und in belebten Vierteln erhöhte Wachsamkeit geboten.'
@@ -1955,7 +1989,7 @@ function getCountryInsightsImpl(countryCode: string, lang: string = 'tr'): Count
           : 'Orta düzey güvenlik profili. Gece saatlerinde tenha sokaklardan kaçınılmalı, değerli eşyalar açıkta taşınmamalıdır.')
       : (isEs
           ? 'Perfil de seguridad de mayor riesgo. Utilice únicamente aplicaciones de transporte verificadas y mantenga objetos de valor fuera de la vista.'
-          : isRu
+          : isPt ? 'Perfil de segurança de maior risco. Use apenas apps de transporte verificados e mantenha os objetos de valor fora de vista.' : isRu
           ? 'Повышенный уровень риска. Пользуйтесь только проверенными приложениями такси, не демонстрируйте ценности и следуйте советам.'
           : isDe
           ? 'Erhöhte Kriminalitätsrate. Offizielle Transporte nutzen, Wertgegenstände diskret halten und Sicherheitsratschläge strikt befolgen.'
@@ -2046,18 +2080,18 @@ function getCountryInsightsImpl(countryCode: string, lang: string = 'tr'): Count
 
   const transportQuality = cur?.transport?.transportQuality ?? (
     'CH JP KR SG DE FR NL'.split(' ').includes(code)
-      ? (isEs ? 'Excelente (Tren de alta velocidad / Metro puntual)' : isRu ? 'Превосходное (Скоростные поезда и метро мирового уровня)' : isDe ? 'Hervorragend (Pünktliches Bahn-/Metronetz)' : isEn ? 'World-Class (High-Speed Rail & Metro)' : 'Kusursuz (Dünya Standartlarında Hızlı Tren/Metro)')
+      ? (isEs ? 'Excelente (Tren de alta velocidad / Metro puntual)' : isPt ? 'Excelente (trem de alta velocidade / metrô pontual)' : isRu ? 'Превосходное (Скоростные поезда и метро мирового уровня)' : isDe ? 'Hervorragend (Pünktliches Bahn-/Metronetz)' : isEn ? 'World-Class (High-Speed Rail & Metro)' : 'Kusursuz (Dünya Standartlarında Hızlı Tren/Metro)')
       : 'GB ES IT AT SE NO DK'.split(' ').includes(code)
-      ? (isEs ? 'Muy Bueno (Amplia red de tren y transporte)' : isRu ? 'Очень Хорошее (Разветвленная сеть поездов и транспорта)' : isDe ? 'Sehr gut (Gefächertes ÖPNV-Netz)' : isEn ? 'Very Good (Extensive Rail & Transit)' : 'Çok İyi (Geniş Raylı Sistem)')
+      ? (isEs ? 'Muy Bueno (Amplia red de tren y transporte)' : isPt ? 'Muito bom (ampla rede de trens e transporte)' : isRu ? 'Очень Хорошее (Разветвленная сеть поездов и транспорта)' : isDe ? 'Sehr gut (Gefächertes ÖPNV-Netz)' : isEn ? 'Very Good (Extensive Rail & Transit)' : 'Çok İyi (Geniş Raylı Sistem)')
       : 'TR TH GE RS BA'.split(' ').includes(code)
-      ? (isEs ? 'Bueno y Económico (Metro/Autobús/Apps de viaje)' : isRu ? 'Хорошее и Доступное (Метро/Автобус/Приложения)' : isDe ? 'Gut & Günstig (Metro/Bus/Fahrdienste)' : isEn ? 'Good & Affordable (Metro/Bus/Apps)' : 'İyi ve Ekonomik (Metro/Otobüs/Araç Çağırma)')
-      : (isEs ? 'Adecuado' : isRu ? 'Удовлетворительное' : isDe ? 'Angemessen' : isEn ? 'Adequate' : 'Orta Düzey')
+      ? (isEs ? 'Bueno y Económico (Metro/Autobús/Apps de viaje)' : isPt ? 'Bom e barato (metrô/ônibus/apps de transporte)' : isRu ? 'Хорошее и Доступное (Метро/Автобус/Приложения)' : isDe ? 'Gut & Günstig (Metro/Bus/Fahrdienste)' : isEn ? 'Good & Affordable (Metro/Bus/Apps)' : 'İyi ve Ekonomik (Metro/Otobüs/Araç Çağırma)')
+      : (isEs ? 'Adecuado' : isPt ? 'Adequado' : isRu ? 'Удовлетворительное' : isDe ? 'Angemessen' : isEn ? 'Adequate' : 'Orta Düzey')
   );
 
   const taxiAdvice = cur?.transport?.taxiAdvice ?? (
     isEs
       ? `En transporte urbano, las aplicaciones oficiales (${popularRideApps.slice(0, 3).join(', ')}) garantizan tarifa fija y seguimiento por GPS frente al regateo callejero.`
-      : isRu
+      : isPt ? `No transporte urbano, os apps oficiais (${popularRideApps.slice(0, 3).join(', ')}) garantem tarifa fixa e rastreamento por GPS, sem a pechincha da rua.` : isRu
       ? `Для городских поездок официальные приложения вызова авто (${popularRideApps.slice(0, 3).join(', ')}) обеспечивают фиксированную цену и безопасность по GPS.`
       : isDe
       ? `Für transparente Tarife und GPS-Sicherheit werden lokale Fahrdienst-Apps (${popularRideApps.slice(0, 3).join(', ')}) dringend empfohlen.`
@@ -2069,18 +2103,18 @@ function getCountryInsightsImpl(countryCode: string, lang: string = 'tr'): Count
   const geoCurrencyMatch = GLOBAL_CURRENCIES[code];
   const autoCurrencyName = geoCurrencyMatch
     ? `${(geoCurrencyMatch.name as any)[lang] || geoCurrencyMatch.name.en || geoCurrencyMatch.name.tr} (${geoCurrencyMatch.code})`
-    : (isEs ? 'Moneda Local' : isRu ? 'Местная валюта' : isDe ? 'Landeswährung' : isEn ? 'Local Currency' : 'Milli Para Birimi');
+    : (isEs ? 'Moneda Local' : isPt ? 'Moeda local' : isRu ? 'Местная валюта' : isDe ? 'Landeswährung' : isEn ? 'Local Currency' : 'Milli Para Birimi');
 
   const autoPlugType = verifiedRec
     ? `Tip ${verifiedRec.electricity.plug_types.value.join(', ')} (${verifiedRec.electricity.voltage.value}, ${verifiedRec.electricity.frequency_hz.value}Hz)`
-    : (geoCurrencyMatch?.plug ? `${geoCurrencyMatch.plug} (230V)` : (isEs ? 'Tipo C, F o estándar regional' : isRu ? 'Тип C, F или региональный стандарт' : isDe ? 'Typ C, F oder regionaler Standard' : isEn ? 'Type C, F or regional standard' : 'C, F tipi veya bölgesel standart'));
+    : (geoCurrencyMatch?.plug ? `${geoCurrencyMatch.plug} (230V)` : (isEs ? 'Tipo C, F o estándar regional' : isPt ? 'Tipo C, F ou padrão regional' : isRu ? 'Тип C, F или региональный стандарт' : isDe ? 'Typ C, F oder regionaler Standard' : isEn ? 'Type C, F or regional standard' : 'C, F tipi veya bölgesel standart'));
 
   return {
     countryCode: code,
     countryName,
     currency: cur?.currency || autoCurrencyName,
     plugType: cur?.plugType || autoPlugType,
-    bestMonths: cur?.bestMonths || (isEs ? 'Meses de primavera y otoño' : isRu ? 'Весенние и осенние месяцы' : isDe ? 'Frühlings- & Herbstmonate' : isEn ? 'Spring & Autumn months' : 'İlkbahar ve Sonbahar ayları'),
+    bestMonths: cur?.bestMonths || (isEs ? 'Meses de primavera y otoño' : isPt ? 'Meses de primavera e outono' : isRu ? 'Весенние и осенние месяцы' : isDe ? 'Frühlings- & Herbstmonate' : isEn ? 'Spring & Autumn months' : 'İlkbahar ve Sonbahar ayları'),
     safety: {
       safetyScore,
       safetyLevel: safetyLevelText,
@@ -2115,14 +2149,14 @@ function getCountryInsightsImpl(countryCode: string, lang: string = 'tr'): Count
       broadbandSpeedMbps: broadbandSpeed,
       networkCoverage: cur?.internet?.networkCoverage || '%95+ (4G LTE / 5G)',
       costPerGbUsd: cur?.internet?.costPerGbUsd || (netRecord ? netRecord.costPerGb : '~0.80 - 1.80 $'),
-      esimAvailability: cur?.internet?.esimAvailability || (isEs ? 'Excelente' : isRu ? 'Отлично' : isDe ? 'Ausgezeichnet' : isEn ? 'Excellent' : 'Mükemmel'),
-      bestCarriers: cur?.internet?.bestCarriers || (isEs ? ['Principales operadores móviles nacionales', 'Airalo / Maya Mobile eSIM'] : isRu ? ['Ведущие национальные операторы связи', 'Airalo / Maya Mobile eSIM'] : isDe ? ['Führende nationale Netzbetreiber', 'Airalo / Maya Mobile eSIM'] : isEn ? ['Leading National Telecoms', 'Airalo / Maya Mobile eSIM'] : ['Yerel lider mobil operatörler', 'Airalo / Maya Mobile eSIM']),
+      esimAvailability: cur?.internet?.esimAvailability || (isEs ? 'Excelente' : isPt ? 'Excelente' : isRu ? 'Отлично' : isDe ? 'Ausgezeichnet' : isEn ? 'Excellent' : 'Mükemmel'),
+      bestCarriers: cur?.internet?.bestCarriers || (isEs ? ['Principales operadores móviles nacionales', 'Airalo / Maya Mobile eSIM'] : isPt ? ['Principais operadoras móveis nacionais', 'Airalo / Maya Mobile eSIM'] : isRu ? ['Ведущие национальные операторы связи', 'Airalo / Maya Mobile eSIM'] : isDe ? ['Führende nationale Netzbetreiber', 'Airalo / Maya Mobile eSIM'] : isEn ? ['Leading National Telecoms', 'Airalo / Maya Mobile eSIM'] : ['Yerel lider mobil operatörler', 'Airalo / Maya Mobile eSIM']),
       vpnRequired: cur?.internet?.vpnRequired ?? false,
       vpnNote: cur?.internet?.vpnNote
     },
     transport: {
       transportQuality,
-      costLevel: cur?.transport?.costLevel || (isEs ? 'Económico' : isRu ? 'Бюджетно' : isDe ? 'Preiswert' : isEn ? 'Budget-Friendly' : 'Ekonomik'),
+      costLevel: cur?.transport?.costLevel || (isEs ? 'Económico' : isPt ? 'Econômico' : isRu ? 'Бюджетно' : isDe ? 'Preiswert' : isEn ? 'Budget-Friendly' : 'Ekonomik'),
       singleTicketUsd: singleTicket,
       dailyPassUsd: cur?.transport?.dailyPassUsd || '3.50 - 6.00 $',
       popularRideApps,
@@ -2136,10 +2170,10 @@ function getCountryInsightsImpl(countryCode: string, lang: string = 'tr'): Count
       waterBottleUsd: cur?.livingCosts?.waterBottleUsd || '0.60 $',
       hostelDormUsd: cur?.livingCosts?.hostelDormUsd || '15 - 28 $',
       hotel3StarUsd: hotel3Star,
-      flightCostIndex: cur?.livingCosts?.flightCostIndex || (isEs ? 'Moderado' : isRu ? 'Умеренный' : isDe ? 'Moderat' : isEn ? 'Moderate' : 'Orta Seviye'),
+      flightCostIndex: cur?.livingCosts?.flightCostIndex || (isEs ? 'Moderado' : isPt ? 'Moderado' : isRu ? 'Умеренный' : isDe ? 'Moderat' : isEn ? 'Moderate' : 'Orta Seviye'),
       flightTip: cur?.livingCosts?.flightTip || (isEs
         ? `Reservar con anticipación y comparar vuelos directos hacia ${countryName} garantiza las tarifas más económicas.`
-        : isRu
+        : isPt ? `Reservar com antecedência e comparar voos diretos para ${countryName} garante as tarifas mais baratas.` : isRu
         ? `Раннее бронирование и сравнение прямых рейсов в ${countryName} позволяют найти самые выгодные билеты.`
         : isDe
         ? `Frühzeitiges Buchen und Direktflug-Vergleiche nach ${countryName} sichern die günstigsten Reisetarife.`
@@ -2150,7 +2184,10 @@ function getCountryInsightsImpl(countryCode: string, lang: string = 'tr'): Count
   };
 }
 
-const SAFETY_ENUM: Record<number, Record<string, [string, string]>> = {"10": {"tr": ["Seyahat Uyarısı (Kırmızı Bölge)", "bg-rose-600 text-white border-rose-700 dark:bg-rose-950 dark:text-rose-200"], "en": ["Do Not Travel (Conflict Zone)", "bg-rose-600 text-white border-rose-700 dark:bg-rose-950 dark:text-rose-200"], "de": ["Kriegsgebiet (Reisewarnung)", "bg-rose-600 text-white border-rose-700 dark:bg-rose-950 dark:text-rose-200"], "es": ["Zona de Conflicto (No Viajar)", "bg-rose-600 text-white border-rose-700 dark:bg-rose-950 dark:text-rose-200"], "ru": ["Зона конфликта (Не въезжать)", "bg-rose-600 text-white border-rose-700 dark:bg-rose-950 dark:text-rose-200"]}, "40": {"tr": ["Hassas / Tedbir Gerekir", "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60"], "en": ["Caution Advised", "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60"], "de": ["Erhöhte Vorsicht", "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60"], "es": ["Precaución Aconsejada", "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60"], "ru": ["Требуется Осторожность", "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60"]}, "65": {"tr": ["Güvenli", "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"], "en": ["Safe", "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"], "de": ["Sicher", "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"], "es": ["Seguro", "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"], "ru": ["Безопасно", "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"]}};
+const SAFETY_ENUM: Record<number, Record<string, [string, string]>> = {"10": {"tr": ["Seyahat Uyarısı (Kırmızı Bölge)", "bg-rose-600 text-white border-rose-700 dark:bg-rose-950 dark:text-rose-200"], "en": ["Do Not Travel (Conflict Zone)", "bg-rose-600 text-white border-rose-700 dark:bg-rose-950 dark:text-rose-200"], "de": ["Kriegsgebiet (Reisewarnung)", "bg-rose-600 text-white border-rose-700 dark:bg-rose-950 dark:text-rose-200"], "es": ["Zona de Conflicto (No Viajar)", "bg-rose-600 text-white border-rose-700 dark:bg-rose-950 dark:text-rose-200"],
+"pt": ["Zona de conflito (não viaje)", "bg-rose-600 text-white border-rose-700 dark:bg-rose-950 dark:text-rose-200"], "ru": ["Зона конфликта (Не въезжать)", "bg-rose-600 text-white border-rose-700 dark:bg-rose-950 dark:text-rose-200"]}, "40": {"tr": ["Hassas / Tedbir Gerekir", "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60"], "en": ["Caution Advised", "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60"], "de": ["Erhöhte Vorsicht", "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60"], "es": ["Precaución Aconsejada", "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60"],
+"pt": ["Cautela recomendada", "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60"], "ru": ["Требуется Осторожность", "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60"]}, "65": {"tr": ["Güvenli", "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"], "en": ["Safe", "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"], "de": ["Sicher", "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"], "es": ["Seguro", "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"],
+"pt": ["Seguro", "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"], "ru": ["Безопасно", "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"]}};
 export function getCountryInsights(countryCode: string, lang: string = 'tr'): CountryFullInsights {
   return capSafetyByAdvisory(applyCountryFix('insights', countryCode, lang, getCountryInsightsImpl(countryCode, lang)), countryCode, lang);
 }

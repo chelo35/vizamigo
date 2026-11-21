@@ -104,7 +104,7 @@ export const Stat: React.FC<{ value: React.ReactNode; label: string; icon?: Icon
 /** Komisyonlu bağlantı etiketi (Ticari Reklam Yönetmeliği: ticari içerik açıkça belirtilmeli) */
 export const AdTag: React.FC = () => {
   const { l } = useI18n();
-  return <span className="vz-ad" title={l('Ortaklık bağlantısı: buradan yapılan alışverişten Vizamigo komisyon alabilir; senin için fiyat değişmez.', 'Vizamigo may earn a commission on purchases through this link; your price is the same.', 'Vizamigo erhält ggf. eine Provision; dein Preis bleibt gleich.', 'Vizamigo puede recibir una comisión; tu precio no cambia.', 'Vizamigo может получить комиссию; цена для вас не меняется.')}>{l('Ortaklık', 'Ad', 'Anzeige', 'Publicidad', 'Реклама')}</span>;
+  return <span className="vz-ad" title={l('Ortaklık bağlantısı: buradan yapılan alışverişten Vizamigo komisyon alabilir; senin için fiyat değişmez.', 'Vizamigo may earn a commission on purchases through this link; your price is the same.', 'Vizamigo erhält ggf. eine Provision; dein Preis bleibt gleich.', 'Vizamigo puede recibir una comisión; tu precio no cambia.', 'Vizamigo может получить комиссию; цена для вас не меняется.', 'A Vizamigo pode receber uma comissão; o seu preço não muda.')}>{l('Ortaklık', 'Ad', 'Anzeige', 'Publicidad', 'Реклама', 'Publicidade')}</span>;
 };
 
 export const Row: React.FC<{ icon?: IconName; lead?: React.ReactNode; title: React.ReactNode; sub?: React.ReactNode; right?: React.ReactNode; onClick?: () => void; href?: string }> = ({ icon, lead, title, sub, right, onClick, href: raw }) => {
@@ -324,7 +324,7 @@ export const TileGrid: React.FC<{ tiles: Tile[]; openRequest?: OpenRequest; labe
           onClick={() => (openId === t.id ? setOpenId(null) : open(t.id))}
         >
           {t.badge && <span className="vz-tile-badge">{t.badge}</span>}
-          {t.isNew && !t.badge && <span className="vz-tile-badge new">{l('Yeni', 'New', 'Neu', 'Nuevo', 'Новое')}</span>}
+          {t.isNew && !t.badge && <span className="vz-tile-badge new">{l('Yeni', 'New', 'Neu', 'Nuevo', 'Новое', 'Novo')}</span>}
           {t.photo ? <img className="vz-tile-ph" src={`/images/cards/${t.photo}-300.webp`} srcSet={`/images/cards/${t.photo}-300.webp 300w, /images/cards/${t.photo}-600.webp 600w`} sizes="(min-width: 1024px) 260px, (min-width: 600px) 300px, 40vw" alt="" loading="lazy" decoding="async" /> : <TileArt name={t.icon} size={46} img={t.img} />}
           <span className="vz-tile-t">{t.title}</span>
           <span className="vz-tile-s">{t.desc}</span>
@@ -340,7 +340,7 @@ export const TileGrid: React.FC<{ tiles: Tile[]; openRequest?: OpenRequest; labe
               <header className="vz-panel-h">
                 <span className="vz-ic"><Icon name={tile.icon} size={20} /></span>
                 <h2>{tile.title}</h2>
-                <button type="button" className="vz-iconbtn" onClick={() => setOpenId(null)} aria-label={l('Kapat', 'Close', 'Schließen', 'Cerrar', 'Закрыть')}>
+                <button type="button" className="vz-iconbtn" onClick={() => setOpenId(null)} aria-label={l('Kapat', 'Close', 'Schließen', 'Cerrar', 'Закрыть', 'Fechar')}>
                   <Icon name="close" size={18} duo={false} />
                 </button>
               </header>

@@ -1547,6 +1547,393 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Tugrik mongol (MNT)",
+   "plugType": "Tipo C, E (220V, 50Hz)",
+   "bestMonths": "Junho – setembro (Naadam: 11 a 15 de julho); no inverno a temperatura cai abaixo de -30 °C",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "No geral é seguro; em Ulan Bator há muitos batedores de carteira no mercado Narantuul, nos arredores da State Department Store e nos ônibus. À noite, cuidado com brigas motivadas por álcool.",
+    "commonScams": [
+     "Bolsas cortadas e batedores de carteira em mercados e ônibus lotados",
+     "Táxis não oficiais no aeroporto com tarifas abusivas",
+     "Passeios pelo interior que depois cobram combustível ou \"serviços extras\""
+    ],
+    "safeTravelTips": [
+     "Contrate os passeios com contrato por escrito detalhando o que está incluído.",
+     "Chame táxi pelo app UBCab; com carros parados na rua, combine o preço antes.",
+     "No interior as distâncias são longas e o sinal é escasso; leve kit de primeiros socorros e dinheiro de reserva."
+    ],
+    "emergencyNumbers": {
+     "police": "102",
+     "ambulance": "103",
+     "general": "105"
+    }
+   },
+   "internet": {
+    "networkCoverage": "4G/5G em Ulan Bator; no interior só há sinal nas capitais de província e de distrito",
+    "costPerGbUsd": "~US$ 0,50 - 1,50",
+    "esimAvailability": "Boa",
+    "bestCarriers": [
+     "Unitel",
+     "Mobicom",
+     "Skytel",
+     "G-Mobile"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Básico",
+    "costLevel": "Barato",
+    "singleTicketUsd": "US$ 0,15 - 0,30",
+    "dailyPassUsd": "~US$ 1 - 2",
+    "popularRideApps": [
+     "UBCab",
+     "Toki",
+     "Google Maps",
+     "MAPS.ME"
+    ],
+    "taxiAdvice": "O trânsito em Ulan Bator é intenso; corridas curtas com o UBCab custam US$ 2-5. Para longas distâncias, use o veículo do passeio ou um voo doméstico."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 35 - 55",
+    "dailyBudgetMidrangeUsd": "US$ 80 - 150",
+    "budgetMealUsd": "US$ 5 - 10",
+    "coffeeUsd": "US$ 2 - 4",
+    "waterBottleUsd": "US$ 0,40 - 0,80",
+    "hostelDormUsd": "US$ 10 - 18",
+    "hotel3StarUsd": "US$ 50 - 100",
+    "flightCostIndex": "Caro",
+    "flightTip": "A Turkish Airlines voa entre Istambul e Ulan Bator; para a temporada do Naadam (julho), reserve com meses de antecedência."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Ao entrar num ger, não pise na soleira e circule no sentido horário.",
+     "Aceite chá ou comida com a mão direita ou com as duas; pelo menos experimente.",
+     "Não aponte os pés para o fogão nem para o altar, e não assobie dentro do ger.",
+     "Respeite os animais dos pastores e os montes de pedras ovoo; contorne um ovoo três vezes no sentido horário."
+    ],
+    "festivals": [
+     "Naadam (julho; luta, tiro com arco, corridas de cavalos)",
+     "Tsagaan Sar (Ano-Novo lunar)",
+     "Festival da Águia Dourada (Bayan-Ölgii, início de outubro)"
+    ],
+    "lifestyle": "Pastoreio nômade, tendas ger, cultura equestre e estepe a perder de vista, ao lado da vida cada vez mais moderna da capital."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Ulan Bator – praça Gengis Khan (Sükhbaatar)",
+     "Mosteiro de Gandan",
+     "Parque Nacional Gorkhi-Terelj",
+     "Estátua equestre de Gengis Khan",
+     "Karakorum e mosteiro Erdene Zuu",
+     "Gobi – dunas de Khongoryn Els"
+    ],
+    "bestSeasons": "Junho – setembro (Naadam: 11 a 15 de julho); no inverno a temperatura cai abaixo de -30 °C",
+    "travelStyleTip": "Explore a Mongólia rural de 4x4 com motorista e hospede-se em acampamentos de gers; as distâncias são enormes."
+   },
+   "religion": {
+    "primaryReligions": "Budismo tibetano (~52%), sem religião (~40%), islamismo (~3%, cazaques), xamanismo e cristianismo.",
+    "respectNorms": "Gire as rodas de oração no sentido horário, respeite monges e altares e peça permissão antes de fotografar nos mosteiros.",
+    "sacredSites": [
+     "Mosteiro Gandan Tegchenling",
+     "Mosteiro Erdene Zuu",
+     "Mosteiro Amarbayasgalant"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Mongol (oficial, escrito em alfabeto cirílico). No oeste fala-se cazaque.",
+    "englishProficiency": "Moderado entre os jovens de Ulan Bator; no interior é preciso guia ou app de tradução.",
+    "phrases": [
+     {
+      "phrase": "Сайн байна уу?",
+      "meaning": "Olá (Como vai?)",
+      "translation": "Olá (Como vai?)",
+      "pronunciation": "Sain baina uu?"
+     },
+     {
+      "phrase": "Баярлалаа",
+      "meaning": "Obrigado(a)",
+      "translation": "Obrigado(a)",
+      "pronunciation": "Bayarlalaa"
+     },
+     {
+      "phrase": "Гуйя",
+      "meaning": "Por favor",
+      "translation": "Por favor",
+      "pronunciation": "Guiya"
+     },
+     {
+      "phrase": "Энэ хэд вэ?",
+      "meaning": "Quanto custa isto?",
+      "translation": "Quanto custa isto?",
+      "pronunciation": "Ene khed we?"
+     },
+     {
+      "phrase": "Баяртай",
+      "meaning": "Tchau",
+      "translation": "Tchau",
+      "pronunciation": "Bayartai"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Em terras antes governadas por impérios das estepes como os xiongnu e os göktürk, Gengis Khan fundou o Império Mongol em 1206. Uma revolução em 1921 trouxe a independência, e em 1990 veio a transição democrática.",
+    "milestones": [
+     "209 a.C.: fundação do Estado xiongnu",
+     "Século VIII: inscrições do Orkhon (göktürk)",
+     "1206: Gengis Khan é proclamado Grande Khan",
+     "1990: revolução democrática"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Buuz (bolinhos de carne no vapor)",
+     "Khuushuur (pastel frito de carne)",
+     "Khorkhog (cordeiro cozido com pedras quentes)"
+    ],
+    "traditionalDrinks": [
+     "Süütei tsai (chá com leite salgado)",
+     "Airag (leite de égua fermentado)",
+     "Arkhi (vodca mongol)"
+    ],
+    "streetFoodAndDesserts": [
+     "Boortsog (massa frita)",
+     "Aaruul (coalhada seca)",
+     "Tsuivan (macarrão caseiro com carne)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Gengis Khan (fundador do Império Mongol)",
+     "Zanabazar (escultor, líder budista)",
+     "Hakuhō Shō (yokozuna do sumô)"
+    ],
+    "strongSectors": [
+     "Mineração (cobre, carvão, ouro)",
+     "Pecuária e caxemira",
+     "Turismo"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Em Ulan Bator, cartões e pagamento por QR code são comuns; no interior, nos acampamentos ger e nos mercados, é preciso dinheiro vivo em tugrik.",
+    "tippingCulture": "Nos restaurantes, 10% é bem-vindo; é costume dar gorjeta ao motorista e ao guia no fim do passeio.",
+    "economicPillars": "Exportações de mineração, pecuária e caxemira, construção e turismo."
+   }
+  },
+  "itin": {
+   "routeName": "Rota da estepe mongol: Ulan Bator, Terelj, Karakorum e o Gobi",
+   "routeSummary": "Roteiro de 8 dias saindo de Ulan Bator rumo aos vales rochosos de Terelj, ao vale do Orkhon e a Karakorum, com seu legado göktürk, e depois às dunas do deserto de Gobi.",
+   "totalDays": 8,
+   "idealDurationText": "Roteiro de 8 dias pela estepe e pelo deserto",
+   "bestSeason": "Junho – setembro (Naadam: 11 a 15 de julho); no inverno a temperatura cai abaixo de -30 °C",
+   "transportMode": "4x4 com motorista (UAZ / Land Cruiser) + noites em acampamentos ger",
+   "paceLevel": "Aventura (natureza e cultura nômade)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Ulan Bator",
+     "recommendedDuration": "2 dias (capital)",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Praça Gengis Khan e Palácio do Governo",
+      "Mosteiro de Gandan",
+      "Museu Nacional Gengis Khan",
+      "Memorial de Zaisan"
+     ],
+     "activities": [
+      "Assista às orações matinais em Gandan.",
+      "Ouça canto difônico (khöömii) num espetáculo do Tumen Ekh.",
+      "Compre caxemira na State Department Store."
+     ],
+     "foodAndDrinks": [
+      "Buuz",
+      "Süütei tsai",
+      "Tsuivan"
+     ],
+     "criticalTips": [
+      "Fique de olho na bolsa e no celular no mercado Narantuul.",
+      "O trânsito é muito pesado; reserve tempo extra."
+     ],
+     "mapsQuery": "Ulaanbaatar, Mongolia"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Parque Nacional Gorkhi-Terelj",
+     "recommendedDuration": "1 dia (natureza)",
+     "durationBadge": "1 dia",
+     "highlights": [
+      "Rocha da Tartaruga",
+      "Templo de meditação Aryabal",
+      "Estátua equestre de Gengis Khan (no caminho)"
+     ],
+     "activities": [
+      "Ande a cavalo com uma família nômade.",
+      "Passe uma noite num acampamento ger.",
+      "Faça uma caminhada pelo vale."
+     ],
+     "foodAndDrinks": [
+      "Khorkhog",
+      "Airag"
+     ],
+     "criticalTips": [
+      "À noite esfria bastante, mesmo no verão.",
+      "Peça capacete para cavalgar; os cavalos mongóis são semisselvagens."
+     ],
+     "mapsQuery": "Gorkhi-Terelj National Park, Mongolia"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Karakorum e vale do Orkhon",
+     "recommendedDuration": "2 dias (história)",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Mosteiro Erdene Zuu",
+      "Museu de Karakorum",
+      "Khöshöö Tsaidam – inscrições do Orkhon (Kul Tigin e Bilge Kagan)",
+      "Cachoeira do Orkhon"
+     ],
+     "activities": [
+      "Veja de perto as inscrições göktürk.",
+      "Passeie dentro do muro de 108 estupas de Erdene Zuu.",
+      "Conheça famílias nômades no vale do Orkhon."
+     ],
+     "foodAndDrinks": [
+      "Khuushuur",
+      "Süütei tsai",
+      "Aaruul"
+     ],
+     "criticalTips": [
+      "As estradas de terra são cansativas; planeje paradas.",
+      "Fotografar dentro do mosteiro pode exigir pagamento ou permissão."
+     ],
+     "mapsQuery": "Kharkhorin, Mongolia"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Deserto de Gobi",
+     "recommendedDuration": "3 dias (deserto)",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Dunas de Khongoryn Els",
+      "Bayanzag (Penhascos Flamejantes, fósseis de dinossauro)",
+      "Cânion gelado de Yolyn Am"
+     ],
+     "activities": [
+      "Atravesse as dunas de camelo.",
+      "Assista ao pôr do sol em Bayanzag.",
+      "Faça trilha pelo cânion de Yolyn Am."
+     ],
+     "foodAndDrinks": [
+      "Boortsog",
+      "Chá com leite de camela"
+     ],
+     "criticalTips": [
+      "Leve bastante água, protetor solar e máscara contra a poeira.",
+      "Um voo doméstico (Dalanzadgad) encurta o trajeto."
+     ],
+     "mapsQuery": "Khongoryn Els, Gobi, Mongolia"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Buuz (bolinhos de carne no vapor)",
+     "Khuushuur (pastel frito de carne)",
+     "Khorkhog (cordeiro cozido com pedras quentes)"
+    ],
+    "drinks": [
+     "Süütei tsai (chá com leite salgado)",
+     "Airag (leite de égua fermentado)",
+     "Arkhi (vodca mongol)"
+    ],
+    "streetFoods": [
+     "Boortsog (massa frita)",
+     "Aaruul (coalhada seca)",
+     "Tsuivan (macarrão caseiro com carne)"
+    ],
+    "diningAdvice": "A culinária mongol se baseia em carne e laticínios; fora da capital há poucas opções vegetarianas. Evite carne de marmota (tarbagan) pelo risco de peste."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Roupas quentes em camadas (grande diferença entre dia e noite)",
+     "Óculos de sol e protetor solar",
+     "Lenços umedecidos e álcool em gel",
+     "Power bank (pouca eletricidade nos acampamentos ger)"
+    ],
+    "safetyAndEtiquette": [
+     "Entre nos gers com respeito e sem pisar na soleira.",
+     "Leve seus objetos de valor na frente do corpo em mercados movimentados."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "E"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Tomadas tipo C e E (220 V); os plugues turcos tipo C encaixam diretamente, e um adaptador universal ajuda com os tipo F com aterramento."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "A água da torneira não é potável; use água engarrafada ou fervida. No interior, a água é escassa.",
+    "vaccines": [
+     "Vacinas de rotina (tétano-difteria, tríplice viral)",
+     "Hepatite A e febre tifoide",
+     "Raiva e encefalite transmitida por carrapatos para estadias longas no interior"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "103"
+   },
+   "tipping": {
+    "custom": "A gorjeta não é tradicional, mas é bem-vinda em locais turísticos.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "No fim de um passeio pelo interior, é costume dar alguns dólares por dia ao motorista e ao guia."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA de 10%; sem restituição geral para turistas",
+    "minSpend": "Não se aplica",
+    "customsNote": "A Mongólia não tem um sistema difundido de restituição de IVA para turistas. Exportar fósseis, antiguidades e objetos budistas é proibido ou exige licenças especiais."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 0,50 - 1,50",
+    "topCarriers": [
+     "Unitel",
+     "Mobicom",
+     "Skytel",
+     "G-Mobile"
+    ],
+    "airportSimTrapWarning": "Unitel e Mobicom têm balcões no aeroporto com preços parecidos com os da cidade. Unitel e Mobicom costumam oferecer a melhor cobertura no interior."
+   },
+   "touristScams": [
+    {
+     "title": "Batedores de carteira no mercado",
+     "desc": "Bolsas cortadas e furtos no mercado Narantuul e nos ônibus.",
+     "tip": "Leve a bolsa na frente do corpo e deixe os objetos de valor no hotel."
+    },
+    {
+     "title": "Táxi não oficial",
+     "desc": "Carros quaisquer no aeroporto e à noite cobram preços exorbitantes.",
+     "tip": "Use o UBCab ou reserve um traslado pelo hotel."
+    },
+    {
+     "title": "Surpresa no preço do passeio",
+     "desc": "No meio do caminho cobram extras por combustível, ingressos ou refeições.",
+     "tip": "Deixe tudo o que está incluído por escrito no contrato."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Монгольский тугрик (MNT)",

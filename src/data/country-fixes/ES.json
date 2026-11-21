@@ -628,6 +628,170 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Euro (EUR)",
+   "bestMonths": "Abril – junho e setembro – outubro; em julho–agosto, a Andaluzia e Madri podem passar dos 40 °C; as Canárias têm clima ameno o ano todo",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Em geral é seguro e com pouca criminalidade violenta. Por outro lado, os batedores de carteira de Barcelona (La Rambla, metrô, praias) e do centro de Madri estão entre os mais ativos da Europa.",
+    "commonScams": [
+     "Falsos policiais à paisana em La Rambla e no Bairro Gótico de Barcelona que “revistam” sua carteira e ficam com o dinheiro",
+     "O truque da mancha: sujam sua roupa e roubam você enquanto “ajudam” a limpar",
+     "Furtos de pertences deixados na areia e de celulares em cima das mesas dos terraços"
+    ],
+    "safeTravelTips": [
+     "Não deixe o celular em cima da mesa em bares e restaurantes.",
+     "A polícia de verdade não revista carteiras na rua; ofereça-se para se identificar na delegacia.",
+     "Não leve objetos de valor à praia ou deixe sempre alguém de olho nas coisas."
+    ],
+    "emergencyNumbers": {
+     "police": "091 (Polícia Nacional) / 112",
+     "ambulance": "112 / 061",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99% (4G/5G)",
+    "costPerGbUsd": "~US$ 0,50 - 1,50",
+    "esimAvailability": "Excelente",
+    "bestCarriers": [
+     "Movistar",
+     "Orange",
+     "Vodafone",
+     "Digi"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Muito bom (trem de alta velocidade AVE, metrôs de Madri e Barcelona)",
+    "costLevel": "Moderado",
+    "singleTicketUsd": "1.70 - 3.50 $ (bilhete simples de metrô em Madri e Barcelona)",
+    "dailyPassUsd": "~9 - 12 $ (Abono Turístico de Madri, 1 dia)",
+    "popularRideApps": [
+     "Cabify",
+     "Uber",
+     "FreeNow",
+     "Bolt",
+     "Renfe"
+    ],
+    "taxiAdvice": "Os táxis oficiais têm taxímetro, e há tarifa fixa entre o aeroporto de Madri e o centro. Comprar com antecedência as passagens do AVE, da Ouigo e da Iryo sai muito mais barato."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 45 - 70",
+    "dailyBudgetMidrangeUsd": "US$ 110 - 170",
+    "budgetMealUsd": "13 - 20 $ (menu do dia)",
+    "coffeeUsd": "US$ 1,50 - 2,50",
+    "waterBottleUsd": "US$ 0,60 - 1,50",
+    "hostelDormUsd": "US$ 25 - 50",
+    "hotel3StarUsd": "90 - 160 $ (mais caro em Barcelona e nas ilhas no verão)",
+    "flightCostIndex": "Baixo (direto ~4 h)",
+    "flightTip": "Há voos diretos de Istambul para Madri, Barcelona, Valência, Málaga e Sevilha."
+   }
+  },
+  "enc": {
+   "language": {
+    "phrases": [
+     {
+      "phrase": "¡Hola! / Buenos días",
+      "meaning": "Cumprimento informal / formal da manhã",
+      "translation": "Cumprimento informal / formal da manhã",
+      "pronunciation": "O-la / BUE-nos DÍ-as"
+     },
+     {
+      "phrase": "Muchas gracias",
+      "meaning": "Muito obrigado",
+      "translation": "Muito obrigado",
+      "pronunciation": "MU-chas GRA-cias"
+     },
+     {
+      "phrase": "Perdone / Disculpe",
+      "meaning": "Para chamar a atenção ou pedir desculpas",
+      "translation": "Para chamar a atenção ou pedir desculpas",
+      "pronunciation": "per-DO-ne / dis-KUL-pe"
+     },
+     {
+      "phrase": "¿Cuánto cuesta?",
+      "meaning": "Para perguntar o preço",
+      "translation": "Para perguntar o preço",
+      "pronunciation": "CUÁN-to CUES-ta"
+     },
+     {
+      "phrase": "La cuenta, por favor",
+      "meaning": "Para pedir a conta",
+      "translation": "Para pedir a conta",
+      "pronunciation": "la CUEN-ta, por fa-VOR"
+     }
+    ]
+   },
+   "culture": {
+    "festivals": [
+     "La Tomatina (guerra de tomates em Buñol)",
+     "Corridas de touros de San Fermín (Pamplona)",
+     "Las Fallas (Valência)",
+     "Feria de Abril (Sevilha)",
+     "Semana Santa"
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Tomadas europeias C/F (Schuko) de dois pinos redondos, iguais às da Turquia; não é preciso adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "A água da torneira é potável em todo o país; em Barcelona tem gosto forte de cloro, e em partes das Canárias os moradores preferem a engarrafada.",
+    "vaccines": [
+     "Vacinas de rotina (tríplice viral, tétano)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "112 / 061"
+   },
+   "tipping": {
+    "custom": "A gorjeta não é obrigatória; nos restaurantes, basta arredondar ou deixar 5-10 %.",
+    "standardPercent": 5,
+    "rule": "round_up",
+    "note": "É comum deixar umas moedas pelo café ou pelas tapas no balcão."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA de 21 %; recupera-se 12-15 % depois das comissões",
+    "minSpend": "Sem mínimo legal (depende da loja)",
+    "customsNote": "Peça na loja o formulário eletrônico DIVA e escaneie-o num quiosque DIVA do último aeroporto de saída da UE antes de despachar a bagagem."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 0,50 - 1,50",
+    "topCarriers": [
+     "Movistar",
+     "Orange",
+     "Vodafone",
+     "Digi"
+    ],
+    "airportSimTrapWarning": "Os pontos de venda do aeroporto são caros; compre um chip com passaporte nas lojas da Digi, Orange ou Movistar na cidade ou use uma eSIM. O roaming da UE não vale para chips turcos."
+   },
+   "touristScams": [
+    {
+     "title": "Falsos policiais",
+     "desc": "Supostos policiais à paisana pedem sua carteira para “verificar notas falsas” e ficam com o dinheiro.",
+     "tip": "A polícia de verdade não revista carteiras na rua; ofereça-se para se identificar na delegacia."
+    },
+    {
+     "title": "O raminho de alecrim e a leitura da sorte",
+     "desc": "Perto das catedrais de Sevilha e Granada, entregam a você um raminho de alecrim, leem sua mão e depois exigem dinheiro.",
+     "tip": "Não deixe que coloquem nada na sua mão; recuse com educação e siga andando."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Евро (EUR)",

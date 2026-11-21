@@ -80,17 +80,17 @@ const weatherCache = new Map<string, { ts: number; data: LiveWeather }>();
 const WX_TTL_MS = 15 * 60 * 1000;
 const keyOf = (lat: number, lng: number) => `${lat.toFixed(2)},${lng.toFixed(2)}`;
 
-export function weatherCodeInfo(code: number, isDay = true): { icon: string; tr: string; en: string; de: string; es: string; ru: string } {
-  if (code === 0) return { icon: isDay ? '☀️' : '🌙', tr: 'Açık', en: 'Clear', de: 'Klar', es: 'Despejado', ru: 'Ясно' };
-  if (code <= 2) return { icon: isDay ? '🌤️' : '☁️', tr: 'Az Bulutlu', en: 'Mostly Clear', de: 'Leicht bewölkt', es: 'Poco nuboso', ru: 'Малооблачно' };
-  if (code === 3) return { icon: '☁️', tr: 'Kapalı', en: 'Overcast', de: 'Bedeckt', es: 'Cubierto', ru: 'Пасмурно' };
-  if (code <= 48) return { icon: '🌫️', tr: 'Sisli', en: 'Fog', de: 'Nebel', es: 'Niebla', ru: 'Туман' };
-  if (code <= 57) return { icon: '🌦️', tr: 'Çisenti', en: 'Drizzle', de: 'Nieselregen', es: 'Llovizna', ru: 'Морось' };
-  if (code <= 67) return { icon: '🌧️', tr: 'Yağmurlu', en: 'Rain', de: 'Regen', es: 'Lluvia', ru: 'Дождь' };
-  if (code <= 77) return { icon: '🌨️', tr: 'Karlı', en: 'Snow', de: 'Schnee', es: 'Nieve', ru: 'Снег' };
-  if (code <= 82) return { icon: '🌧️', tr: 'Sağanak', en: 'Showers', de: 'Schauer', es: 'Chubascos', ru: 'Ливень' };
-  if (code <= 86) return { icon: '🌨️', tr: 'Kar Sağanağı', en: 'Snow Showers', de: 'Schneeschauer', es: 'Chubascos de nieve', ru: 'Снегопад' };
-  return { icon: '⛈️', tr: 'Gök Gürültülü', en: 'Thunderstorm', de: 'Gewitter', es: 'Tormenta', ru: 'Гроза' };
+export function weatherCodeInfo(code: number, isDay = true): { icon: string; tr: string; en: string; de: string; es: string; pt: string; ru: string } {
+  if (code === 0) return { icon: isDay ? '☀️' : '🌙', tr: 'Açık', en: 'Clear', de: 'Klar', es: 'Despejado', pt: 'Céu limpo', ru: 'Ясно' };
+  if (code <= 2) return { icon: isDay ? '🌤️' : '☁️', tr: 'Az Bulutlu', en: 'Mostly Clear', de: 'Leicht bewölkt', es: 'Poco nuboso', pt: 'Poucas nuvens', ru: 'Малооблачно' };
+  if (code === 3) return { icon: '☁️', tr: 'Kapalı', en: 'Overcast', de: 'Bedeckt', es: 'Cubierto', pt: 'Nublado', ru: 'Пасмурно' };
+  if (code <= 48) return { icon: '🌫️', tr: 'Sisli', en: 'Fog', de: 'Nebel', es: 'Niebla', pt: 'Neblina', ru: 'Туман' };
+  if (code <= 57) return { icon: '🌦️', tr: 'Çisenti', en: 'Drizzle', de: 'Nieselregen', es: 'Llovizna', pt: 'Garoa', ru: 'Морось' };
+  if (code <= 67) return { icon: '🌧️', tr: 'Yağmurlu', en: 'Rain', de: 'Regen', es: 'Lluvia', pt: 'Chuva', ru: 'Дождь' };
+  if (code <= 77) return { icon: '🌨️', tr: 'Karlı', en: 'Snow', de: 'Schnee', es: 'Nieve', pt: 'Neve', ru: 'Снег' };
+  if (code <= 82) return { icon: '🌧️', tr: 'Sağanak', en: 'Showers', de: 'Schauer', es: 'Chubascos', pt: 'Pancadas de chuva', ru: 'Ливень' };
+  if (code <= 86) return { icon: '🌨️', tr: 'Kar Sağanağı', en: 'Snow Showers', de: 'Schneeschauer', es: 'Chubascos de nieve', pt: 'Pancadas de neve', ru: 'Снегопад' };
+  return { icon: '⛈️', tr: 'Gök Gürültülü', en: 'Thunderstorm', de: 'Gewitter', es: 'Tormenta', pt: 'Tempestade', ru: 'Гроза' };
 }
 
 /** Birden fazla koordinat için tek istekte canlı hava durumu (Open-Meteo toplu sorgu). */

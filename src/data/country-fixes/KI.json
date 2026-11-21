@@ -1411,6 +1411,359 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Dólar australiano (AUD)",
+   "plugType": "Tipo I (240V, 50Hz)",
+   "bestMonths": "Maio a outubro (estação mais seca, dos ventos alísios); de novembro a abril chegam os ventos de oeste e mais chuva",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Crimes graves contra visitantes são muito raros; os principais riscos são o isolamento, o atendimento médico limitado, o trânsito e brigas noturnas ligadas ao álcool. Uma evacuação médica significa voar para Fiji ou para a Austrália.",
+    "commonScams": [
+     "Tarifas altas não combinadas em veículos sem taxímetro",
+     "Passeios de barco ou de pesca sem coletes salva-vidas nem rádio",
+     "Câmbio desfavorável nos hotéis"
+    ],
+    "safeTravelTips": [
+     "Contrate um seguro completo com evacuação médica; não há atendimento avançado no país.",
+     "Não beba água da torneira e use repelente contra a dengue.",
+     "Exija colete salva-vidas nos barcos e confira as marés antes de atravessar a laguna."
+    ],
+    "emergencyNumbers": {
+     "police": "992",
+     "ambulance": "994",
+     "general": "999"
+    }
+   },
+   "internet": {
+    "networkCoverage": "3G/4G em Tarawa do Sul; cobertura muito fraca ou inexistente nas ilhas externas",
+    "costPerGbUsd": "~US$ 3 - 8",
+    "esimAvailability": "Muito limitada – eSIMs internacionais quase nunca funcionam; compre um chip local da Vodafone Kiribati",
+    "bestCarriers": [
+     "Vodafone Kiribati",
+     "OceanLink"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Básico – sem metrô nem trem; micro-ônibus particulares pela estrada de Tarawa do Sul, voos domésticos da Air Kiribati e barcos",
+    "costLevel": "Médio (os produtos importados são caros)",
+    "singleTicketUsd": "US$ 0,70 - 1,50 (micro-ônibus, trajeto Betio–Bonriki)",
+    "dailyPassUsd": "Carro alugado ~US$ 50 - 80 por dia",
+    "popularRideApps": [
+     "Não há apps de transporte",
+     "Transfers do hotel",
+     "Aluguel de carro / scooter"
+    ],
+    "taxiAdvice": "Não existem apps; os micro-ônibus circulam sem parar pela estrada Betio–Bonriki, com uma tarifa fixa pequena. Se alugar carro ou contratar motorista, combine o preço em AUD antes."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 60 - 90",
+    "dailyBudgetMidrangeUsd": "US$ 130 - 220",
+    "budgetMealUsd": "US$ 6 - 15",
+    "coffeeUsd": "US$ 3 - 5",
+    "waterBottleUsd": "A água da torneira não é potável; use água fervida ou mineral.",
+    "hostelDormUsd": "US$ 30 - 60",
+    "hotel3StarUsd": "US$ 100 - 170",
+    "flightCostIndex": "Muito alto (longa distância, várias escalas)",
+    "flightTip": "Da Turquia, normalmente a conexão é via Nadi (Fiji Airways) ou Brisbane/Nauru (Nauru Airlines) até Tarawa Bonriki (TRW); só há voos em alguns dias da semana, então planeje a viagem de acordo com os horários. Para Kiritimati (Ilha Christmas) é preciso outro voo."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Tire os sapatos ao entrar numa casa ou numa maneaba (casa de reuniões) e não se encoste nos pilares sem ser convidado.",
+     "Vista-se com discrição: cubra coxas e ombros; roupa de banho só na praia.",
+     "Peça permissão antes de fotografar e procure não recusar a comida oferecida.",
+     "Pechinchar é pouco comum; paciência e cortesia funcionam melhor."
+    ],
+    "festivals": [
+     "Dia da Independência – 12 de julho (corridas de canoa, danças tradicionais)",
+     "Dia do Evangelho – 11 de julho",
+     "Celebrações de Natal e Ano-Novo nas maneabas"
+    ],
+    "lifestyle": "A vida gira em torno da laguna, da pesca e da maneaba; a família e a igreja vêm em primeiro lugar e o ritmo é tranquilo (\"hora de Kiribati\")."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Vestígios da Segunda Guerra Mundial em Betio (batalha de Tarawa, 1943, canhões costeiros japoneses)",
+     "Laguna de Tarawa do Sul e Ambo",
+     "Centro Cultural e Museu Te Umanibong (Bikenibeu)",
+     "Tarawa do Norte (Buariki) – vida tradicional de aldeia",
+     "Laguna da ilha Abaiang",
+     "Kiritimati – pesca com mosca e observação de aves"
+    ],
+    "bestSeasons": "Maio a outubro (estação mais seca, dos ventos alísios); de novembro a abril chegam os ventos de oeste e mais chuva",
+    "travelStyleTip": "Kiribati é uma aventura que exige paciência, não umas férias de luxo; planeje de acordo com os dias de voo e leve dinheiro em espécie em AUD."
+   },
+   "religion": {
+    "primaryReligions": "Católicos (~57 %), Igreja Unida de Kiribati (~21 %), Igreja Protestante de Kiribati (~8 %), mórmons (~5 %), pequenas comunidades bahá'í e adventista.",
+    "respectNorms": "O domingo é dia de descanso e de culto; cubra ombros e joelhos na igreja e não tire fotos durante a missa.",
+    "sacredSites": [
+     "Catedral do Sagrado Coração (Tarawa)",
+     "Maneabas tradicionais",
+     "Templos da Igreja Unida em Tarawa do Sul"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Inglês e gilbertês (te taetae ni Kiribati).",
+    "englishProficiency": "Bom em repartições e hotéis; limitado nas ilhas externas. Observação: \"Kiribati\" se pronuncia \"Kiribas\".",
+    "phrases": [
+     {
+      "phrase": "Mauri",
+      "meaning": "Olá / Saudação (bênção)",
+      "translation": "Olá / Saudação (bênção)",
+      "pronunciation": "MOW-ree"
+     },
+     {
+      "phrase": "Ko rabwa",
+      "meaning": "Obrigado",
+      "translation": "Obrigado",
+      "pronunciation": "ko RAH-ba"
+     },
+     {
+      "phrase": "Ko rabwa n te bati",
+      "meaning": "Muito obrigado",
+      "translation": "Muito obrigado",
+      "pronunciation": "ko RAH-ba n teh BAH-see"
+     },
+     {
+      "phrase": "Tiabo",
+      "meaning": "Tchau",
+      "translation": "Tchau",
+      "pronunciation": "SAH-bo"
+     },
+     {
+      "phrase": "Eng / Tiaki",
+      "meaning": "Sim / Não",
+      "translation": "Sim / Não",
+      "pronunciation": "eng / SAH-kee"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Os micronésios povoaram as ilhas há cerca de 3.000 anos. Depois do protetorado britânico (1892) e da colônia das Ilhas Gilbert e Ellice, Tarawa foi palco, em 1943, de uma das batalhas mais sangrentas da Guerra do Pacífico. A independência veio em 12 de julho de 1979; hoje o país é conhecido pela luta contra a elevação do nível do mar.",
+    "milestones": [
+     "1892: Protetorado britânico",
+     "Novembro de 1943: Batalha de Tarawa",
+     "12 de julho de 1979: Independência",
+     "1995: A Linha Internacional de Data é deslocada para o leste"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Peixe cru no creme de coco (atum)",
+     "Te bwabwai (taro gigante de pântano, prato de festa)",
+     "Fruta-pão (te mai) – assada ou em chips"
+    ],
+    "traditionalDrinks": [
+     "Te karewe (seiva fresca de coqueiro)",
+     "Kamaimai (xarope de seiva de coqueiro)",
+     "Água de coco fresca"
+    ],
+    "streetFoodAndDesserts": [
+     "Te kabubu (farinha de pandano)",
+     "Pasta seca de pandano (te tuae)",
+     "Chips fritos de fruta-pão"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Ieremia Tabai (primeiro presidente)",
+     "Anote Tong (ex-presidente e defensor do clima)",
+     "David Katoatau (halterofilista medalha de ouro nos Jogos da Commonwealth)"
+    ],
+    "strongSectors": [
+     "Licenças de pesca de atum",
+     "Copra e produtos de coco",
+     "Remessas de marinheiros no exterior"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "O dinheiro vivo (AUD) é o que manda; há poucos caixas eletrônicos em Tarawa do Sul e os cartões só funcionam em alguns hotéis. Leve dinheiro suficiente para as ilhas externas.",
+    "tippingCulture": "Dar gorjeta não é costume; um agradecimento sincero basta.",
+    "economicPillars": "Licenças de pesca, copra, ajuda externa e remessas."
+   }
+  },
+  "itin": {
+   "routeName": "Roteiro pelo atol de Tarawa: Betio, Tarawa do Sul e Tarawa do Norte",
+   "routeSummary": "Roteiro de 8 dias que começa pela história de guerra de Betio, no extremo oeste do atol, segue pela laguna e pelos pontos culturais de Tarawa do Sul e termina nas aldeias tranquilas de Tarawa do Norte.",
+   "totalDays": 8,
+   "idealDurationText": "Roteiro de 8 dias pelo atol",
+   "bestSeason": "Maio a outubro (estação mais seca, dos ventos alísios); de novembro a abril chegam os ventos de oeste e mais chuva",
+   "transportMode": "Micro-ônibus + carro alugado; barco até Tarawa do Norte",
+   "paceLevel": "Tranquilo (história e vida na ilha)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Betio (patrimônio da Segunda Guerra Mundial)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Canhões costeiros e bunkers japoneses",
+      "Área de desembarque de Red Beach",
+      "Porto de Betio"
+     ],
+     "activities": [
+      "Faça um passeio guiado pelos vestígios da batalha.",
+      "Observe os pescadores no porto.",
+      "Caminhe pela orla na maré baixa."
+     ],
+     "foodAndDrinks": [
+      "Peixe cru no creme de coco",
+      "Atum fresco grelhado"
+     ],
+     "criticalTips": [
+      "Não suba nos destroços; há metal enferrujado e munição não detonada.",
+      "O sol do meio-dia é forte; leve chapéu e água."
+     ],
+     "mapsQuery": "Betio, Tarawa, Kiribati"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Bairiki – Bikenibeu (Tarawa do Sul)",
+     "recommendedDuration": "3 dias",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Centro Cultural Te Umanibong",
+      "Laguna de Ambo",
+      "Parlamento (Ambo)"
+     ],
+     "activities": [
+      "Assista a uma dança tradicional numa maneaba.",
+      "Nade na laguna ou saia de canoa.",
+      "Compre artesanato de pandano nos mercados."
+     ],
+     "foodAndDrinks": [
+      "Te bwabwai",
+      "Te karewe"
+     ],
+     "criticalTips": [
+      "Ao anoitecer passam menos micro-ônibus; planeje a volta.",
+      "Quase tudo fecha aos domingos."
+     ],
+     "mapsQuery": "Bairiki, South Tarawa, Kiribati"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Tarawa do Norte (aldeias de Buariki)",
+     "recommendedDuration": "3 dias",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Aldeias de Buariki e Taratai",
+      "Praias de laguna intocadas",
+      "Hospedagem em cabanas tradicionais (buia)"
+     ],
+     "activities": [
+      "Hospede-se numa pousada e saia para pescar.",
+      "Caminhe entre as ilhotas na maré baixa.",
+      "Aproveite o céu estrelado."
+     ],
+     "foodAndDrinks": [
+      "Chips fritos de fruta-pão",
+      "Água de coco fresca"
+     ],
+     "criticalTips": [
+      "Os barcos dependem da maré; confirme o horário de volta.",
+      "Eletricidade e sinal são limitados; leve carregador portátil e dinheiro em espécie."
+     ],
+     "mapsQuery": "North Tarawa, Kiribati"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Peixe cru no creme de coco (atum)",
+     "Te bwabwai (taro gigante de pântano, prato de festa)",
+     "Fruta-pão (te mai) – assada ou em chips"
+    ],
+    "drinks": [
+     "Te karewe (seiva fresca de coqueiro)",
+     "Kamaimai (xarope de seiva de coqueiro)",
+     "Água de coco fresca"
+    ],
+    "streetFoods": [
+     "Te kabubu (farinha de pandano)",
+     "Pasta seca de pandano (te tuae)",
+     "Chips fritos de fruta-pão"
+    ],
+    "diningAdvice": "As opções se limitam a restaurantes de hotel e pequenos estabelecimentos. O peixe é fresquíssimo; legumes, verduras e frutas são importados e caros."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptador de tomada tipo I",
+     "Repelente de mosquitos e protetor solar",
+     "Dinheiro suficiente em AUD",
+     "Kit básico de primeiros socorros e remédios pessoais"
+    ],
+    "safetyAndEtiquette": [
+     "Vista-se com discrição e tire os sapatos nas aldeias e maneabas.",
+     "Não viaje sem um seguro que cubra evacuação médica."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "I"
+    ],
+    "voltage": "240V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Tomada no padrão australiano, com dois pinos chatos inclinados e pino de aterramento (tipo I); plugues turcos precisam de adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "A água da torneira não é potável; use água fervida ou mineral.",
+    "vaccines": [
+     "Vacinas de rotina",
+     "Hepatite A",
+     "Febre tifoide",
+     "Certificado de febre amarela se você chegar de um país de risco"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "994"
+   },
+   "tipping": {
+    "custom": "Gorjeta não é praticada nem esperada.",
+    "standardPercent": 0,
+    "rule": "optional",
+    "note": "Um agradecimento gentil basta; insistir em dar gorjeta pode causar constrangimento."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Sem restituição de IVA para turistas",
+    "minSpend": "—",
+    "customsNote": "Kiribati não tem sistema tax-free nem restituição de IVA para visitantes."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "US$ 3,00 - 8,00",
+    "topCarriers": [
+     "Vodafone Kiribati",
+     "OceanLink"
+    ],
+    "airportSimTrapWarning": "Pode ser que o aeroporto não venda chips; compre o seu com o passaporte na loja da Vodafone Kiribati em Bairiki."
+   },
+   "touristScams": [
+    {
+     "title": "Tarifas não combinadas",
+     "desc": "Motoristas que cobram mais caro dos turistas.",
+     "tip": "Combine o preço em AUD antes de entrar."
+    },
+    {
+     "title": "Passeios de barco inseguros",
+     "desc": "Barcos sem coletes nem equipamentos de comunicação.",
+     "tip": "Reserve com um operador conhecido por meio do hotel."
+    },
+    {
+     "title": "Câmbio ruim",
+     "desc": "Troca de moeda com comissões altas nos hotéis.",
+     "tip": "Leve AUD suficientes com você."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Австралийский доллар (AUD)",

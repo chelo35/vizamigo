@@ -1531,6 +1531,389 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Colón costarriquenho (CRC); o dólar americano é amplamente aceito",
+   "plugType": "Tipo A, B (120V, 60Hz)",
+   "bestMonths": "Dezembro – abril (verão seco, ideal para o Pacífico) · maio – novembro é a temporada verde/chuvosa (pancadas de chuva à tarde); no Caribe, setembro – outubro são os meses mais secos",
+   "safety": {
+    "safetyScore": 55,
+    "safetyLevel": "Risco moderado",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60",
+    "crimeRateSummary": "Os principais riscos para turistas são furtos em carros, roubos por arrastão e furtos na praia. A taxa de homicídios subiu por causa das gangues do narcotráfico (sobretudo em Limón e em partes de San José); as áreas turísticas costumam ser tranquilas.",
+    "commonScams": [
+     "Perto do aeroporto ou em saídas de rodovia, furam o pneu do carro alugado e uns “ajudantes” esvaziam o porta-malas.",
+     "Os táxis “piratas”, sem licença, não usam a “maría” (taxímetro) e cobram a mais.",
+     "Carros que parecem baratíssimos na internet recebem, na retirada, o seguro local obrigatório, e o preço se multiplica."
+    ],
+    "safeTravelTips": [
+     "Não deixe nada no carro, principalmente em estacionamentos de trilhas e praias.",
+     "Cuidado com as correntes de retorno no Pacífico e no Caribe; não nade onde não houver salva-vidas.",
+     "Em San José, à noite, prefira Uber ou táxi oficial em vez de andar a pé."
+    ],
+    "emergencyNumbers": {
+     "police": "911",
+     "ambulance": "911",
+     "general": "911"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Bom 4G em quase todo o país; sinal fraco em florestas e montanhas remotas (Corcovado, Talamanca)",
+    "costPerGbUsd": "US$ 1 - 3",
+    "esimAvailability": "Boa (Kölbi e Claro oferecem eSIM; as internacionais funcionam bem)",
+    "bestCarriers": [
+     "Kölbi (ICE)",
+     "Claro",
+     "Liberty"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Moderado (rede de ônibus barata e extensa, shuttles turísticos; estradas estreitas e cheias de curvas)",
+    "costLevel": "Moderado (ônibus barato; shuttles e aluguel de carro caros)",
+    "singleTicketUsd": "Ônibus urbano 0,50 - 1,50 $; intermunicipal 3 - 15 $",
+    "dailyPassUsd": "Não existe (shuttle turístico 50 - 80 $ por trecho)",
+    "popularRideApps": [
+     "Uber",
+     "DiDi",
+     "InDrive"
+    ],
+    "taxiAdvice": "Os táxis oficiais são vermelhos, com um triângulo amarelo na porta, e devem usar a “maría” (taxímetro); no aeroporto, os oficiais são laranja. Uber e DiDi são comuns e baratos na região de San José."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 50 - 80",
+    "dailyBudgetMidrangeUsd": "US$ 130 - 230",
+    "budgetMealUsd": "US$ 8 - 14",
+    "coffeeUsd": "US$ 2 - 4",
+    "waterBottleUsd": "US$ 1 - 2",
+    "hostelDormUsd": "US$ 15 - 30",
+    "hotel3StarUsd": "US$ 80 - 160",
+    "flightCostIndex": "Alto (sem voos diretos da Turquia)",
+    "flightTip": "Voe para San José (SJO) ou Liberia (LIR) via Madri (Iberia), Frankfurt (Lufthansa/Condor), Amsterdã (KLM), Paris (Air France) ou com conexões nos EUA e no Panamá. Liberia fica mais perto das praias de Guanacaste."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "“Pura vida” é cumprimento, agradecimento e filosofia de vida; use à vontade.",
+     "Os ticos evitam confronto; fale com educação em vez de reclamar aos gritos.",
+     "É proibido alimentar os animais nos parques nacionais."
+    ],
+    "festivals": [
+     "Festas de Palmares (janeiro)",
+     "Romaria à Virgem dos Anjos (2 de agosto, Cartago)",
+     "Desfiles de lanternas pela Independência (14 – 15 de setembro)"
+    ],
+    "lifestyle": "Um país que aboliu o exército em 1948, fez da conservação parte da sua identidade (cerca de um quarto do território é protegido) e é famoso pelo café e pelo seu “pura vida”."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Vulcão Arenal e águas termais de La Fortuna",
+     "Floresta Nublada de Monteverde",
+     "Parque Nacional Manuel Antonio",
+     "Parque Nacional Tortuguero (desova de tartarugas)",
+     "Parque Nacional Corcovado (península de Osa)",
+     "Río Celeste e vulcão Tenorio"
+    ],
+    "bestSeasons": "Dezembro – abril (verão seco, ideal para o Pacífico) · maio – novembro é a temporada verde/chuvosa (pancadas de chuva à tarde); no Caribe, setembro – outubro são os meses mais secos",
+    "travelStyleTip": "As distâncias parecem curtas, mas as estradas são sinuosas e lentas; não planeje mais de 3 – 4 horas de direção por dia. Os shuttles são confortáveis e os ônibus, baratos; se for alugar carro, escolha um 4x4."
+   },
+   "religion": {
+    "primaryReligions": "Católicos (~47 %, religião oficial), evangélicos e protestantes (~25 %), sem religião (~20 %), outros",
+    "respectNorms": "Não entre nas igrejas com roupa de praia; faça silêncio durante a missa e não use flash.",
+    "sacredSites": [
+     "Basílica de Nossa Senhora dos Anjos (Cartago)",
+     "Igreja de Orosi (século XVIII)",
+     "Ruínas da igreja de Ujarrás"
+    ]
+   },
+   "language": {
+    "officialLanguages": "O espanhol é o idioma oficial; também se falam o inglês crioulo limonense (mekatelyu) e as línguas indígenas bribri e cabécar.",
+    "englishProficiency": "Bom; o inglês é comum em áreas turísticas, hotéis e agências.",
+    "phrases": [
+     {
+      "phrase": "¡Pura vida!",
+      "meaning": "Legal! / Oi / Obrigado (a frase-símbolo da Costa Rica)",
+      "translation": "Legal! / Oi / Obrigado (a frase-símbolo da Costa Rica)",
+      "pronunciation": "pu-ra vi-da"
+     },
+     {
+      "phrase": "Con mucho gusto",
+      "meaning": "De nada, com muito prazer",
+      "translation": "De nada, com muito prazer",
+      "pronunciation": "kon mu-tcho gus-to"
+     },
+     {
+      "phrase": "¿Diay, mae, cómo está?",
+      "meaning": "E aí, cara, tudo bem? (gíria tica)",
+      "translation": "E aí, cara, tudo bem? (gíria tica)",
+      "pronunciation": "di-ai, ma-e, ko-mo es-ta"
+     },
+     {
+      "phrase": "¡Qué tuanis!",
+      "meaning": "Que massa! (gíria tica)",
+      "translation": "Que massa! (gíria tica)",
+      "pronunciation": "ke tu-a-nis"
+     },
+     {
+      "phrase": "¿Cuánto cuesta?",
+      "meaning": "Quanto custa?",
+      "translation": "Quanto custa?",
+      "pronunciation": "kuan-to kues-ta"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "A região era habitada por povos indígenas como os chorotegas, bribris e huetares. Foi colônia espanhola a partir do século XVI e se tornou independente junto com a América Central em 1821. Em 1856, Juan Santamaría virou lenda ao enfrentar a invasão de William Walker. Depois da guerra civil de 1948, José Figueres aboliu o exército; em 1987, Óscar Arias recebeu o Nobel da Paz.",
+    "milestones": [
+     "1821: Independência",
+     "1856: Vitória sobre William Walker",
+     "1948: Abolição do exército",
+     "1987: Nobel da Paz para Óscar Arias"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Gallo pinto (café da manhã de arroz com feijão)",
+     "Casado (arroz, feijão, salada, banana-da-terra e carne/peixe)",
+     "Olla de carne (sopa de carne bovina com legumes)"
+    ],
+    "traditionalDrinks": [
+     "Café da Costa Rica (Tarrazú)",
+     "Agua dulce (bebida de rapadura)",
+     "Cerveja Imperial e guaro (Cacique)"
+    ],
+    "streetFoodAndDesserts": [
+     "Chifrijo (feijão, torresmo e pico de gallo)",
+     "Empanadas e arreglados",
+     "Tres leches e churchill (raspadinha de Puntarenas)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Óscar Arias (presidente e Nobel da Paz)",
+     "Franklin Chang-Díaz (astronauta da NASA)",
+     "Keylor Navas (goleiro)"
+    ],
+    "strongSectors": [
+     "Exportação de dispositivos médicos",
+     "Ecoturismo",
+     "Agricultura (abacaxi, banana, café)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "O cartão funciona em quase todo lugar; o dólar é aceito em áreas turísticas, mas o troco costuma vir em colones. Leve colones em dinheiro para sodas (restaurantes populares), mercados e ônibus. O SINPE Móvil é muito usado pelos moradores.",
+    "tippingCulture": "Por lei, as contas de restaurante incluem 10 % de serviço. A conta inclui 13 % de IVA e 10 % de serviço; não é preciso dar mais gorjeta, mas um extra por um ótimo atendimento é bem-vindo. Aos guias, costuma-se dar 5 - 10 $ por pessoa.",
+    "economicPillars": "Serviços e turismo, exportação de dispositivos médicos e tecnologia, agricultura (abacaxi, banana, café)."
+   }
+  },
+  "itin": {
+   "routeName": "Costa Rica clássica: San José, Arenal, Monteverde e Manuel Antonio",
+   "routeSummary": "Roteiro clássico de natureza em 10 dias: da capital San José às termas do vulcão Arenal, às pontes suspensas da floresta nublada de Monteverde e a Manuel Antonio, no Pacífico, cheio de bichos-preguiça.",
+   "totalDays": 10,
+   "idealDurationText": "Roteiro de 10 dias",
+   "bestSeason": "Dezembro – abril (verão seco, ideal para o Pacífico) · maio – novembro é a temporada verde/chuvosa (pancadas de chuva à tarde); no Caribe, setembro – outubro são os meses mais secos",
+   "transportMode": "Shuttle turístico ou 4x4 alugado (San José – La Fortuna ~3 h, La Fortuna – Monteverde ~3,5 h ou jipe-barco-jipe, Monteverde – Manuel Antonio ~4 h)",
+   "paceLevel": "Ativo (trilhas, aventura e praia)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: San José e Vale Central",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Teatro Nacional",
+      "Museus do Ouro e do Jade",
+      "Mercado Central",
+      "Passeio ao vulcão Poás ou Irazú"
+     ],
+     "activities": [
+      "Coma um casado numa soda do Mercado Central.",
+      "Visite uma cratera bem cedo (para o Poás é preciso comprar o ingresso on-line).",
+      "Faça um tour com degustação numa fazenda de café."
+     ],
+     "foodAndDrinks": [
+      "Casado com suco natural",
+      "Café de Tarrazú"
+     ],
+     "criticalTips": [
+      "Os cumes ficam encobertos por nuvens à tarde; vá de manhã.",
+      "À noite, use Uber no centro."
+     ],
+     "mapsQuery": "Teatro Nacional, San José, Costa Rica"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: La Fortuna e Arenal",
+     "recommendedDuration": "3 dias",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Parque Nacional Vulcão Arenal",
+      "Cachoeira La Fortuna",
+      "Águas termais (Tabacón e outras)",
+      "Pontes suspensas Mistico"
+     ],
+     "activities": [
+      "Caminhe sobre os fluxos de lava de 1968.",
+      "Tome um banho ao pé da cachoeira.",
+      "Relaxe à noite nas termas."
+     ],
+     "foodAndDrinks": [
+      "Chifrijo com uma Imperial",
+      "Arroz com frango"
+     ],
+     "criticalTips": [
+      "Nos pontos termais gratuitos do rio, fique de olho nos seus pertences.",
+      "É proibido subir até o topo; use apenas as trilhas do parque."
+     ],
+     "mapsQuery": "La Fortuna, Alajuela, Costa Rica"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Monteverde",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Reserva Floresta Nublada de Monteverde",
+      "Pontes suspensas e tirolesas",
+      "Observação do quetzal"
+     ],
+     "activities": [
+      "Faça uma caminhada guiada de observação de aves ao amanhecer.",
+      "Procure tarântulas, sapos e preguiças numa caminhada noturna.",
+      "Deslize de tirolesa sobre a copa das árvores."
+     ],
+     "foodAndDrinks": [
+      "Queijo e sorvete locais (Monteverde Cheese Factory)",
+      "Café quente e agua dulce"
+     ],
+     "criticalTips": [
+      "Monteverde é fresco e venta bastante; leve capa de chuva e fleece.",
+      "A reserva tem limite diário de visitantes; compre o ingresso antes."
+     ],
+     "mapsQuery": "Monteverde Cloud Forest Reserve, Puntarenas, Costa Rica"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Manuel Antonio",
+     "recommendedDuration": "3 dias",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Parque Nacional Manuel Antonio e praias",
+      "Bichos-preguiça, macacos-prego e macacos-de-cheiro",
+      "Pôr do sol em Quepos"
+     ],
+     "activities": [
+      "Percorra o parque com guia logo cedo (fechado às segundas).",
+      "Tome banho na Playa Manuel Antonio.",
+      "Explore o litoral de caiaque ou catamarã."
+     ],
+     "foodAndDrinks": [
+      "Ceviche e peixe fresco",
+      "Água de coco gelada"
+     ],
+     "criticalTips": [
+      "A entrada de comida no parque é restrita e é proibido alimentar os macacos.",
+      "Compre o ingresso com antecedência no site do SINAC."
+     ],
+     "mapsQuery": "Manuel Antonio National Park, Quepos, Costa Rica"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Gallo pinto (café da manhã de arroz com feijão)",
+     "Casado (arroz, feijão, salada, banana-da-terra e carne/peixe)",
+     "Olla de carne (sopa de carne bovina com legumes)"
+    ],
+    "drinks": [
+     "Café da Costa Rica (Tarrazú)",
+     "Agua dulce (bebida de rapadura)",
+     "Cerveja Imperial e guaro (Cacique)"
+    ],
+    "streetFoods": [
+     "Chifrijo (feijão, torresmo e pico de gallo)",
+     "Empanadas e arreglados",
+     "Tres leches e churchill (raspadinha de Puntarenas)"
+    ],
+    "diningAdvice": "O mais barato e gostoso é um casado numa soda local (8 – 12 $). Nas áreas turísticas, os preços se aproximam dos dos EUA; confira se o cardápio já inclui os 13 % de IVA e os 10 % de serviço."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptador tipo A/B (120 V)",
+     "Capa de chuva leve e roupas de secagem rápida",
+     "Repelente e protetor solar",
+     "Binóculo (para observar animais e aves)"
+    ],
+    "safetyAndEtiquette": [
+     "Não deixe nada no carro.",
+     "Não alimente os animais.",
+     "Não nade em praias sem salva-vidas."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "A",
+     "B"
+    ],
+    "voltage": "120V",
+    "frequency": "60Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Tomadas americanas tipo A (dois pinos chatos) e B (com aterramento); quem vem com plugues europeus precisa de adaptador. A voltagem é 120 V: aparelhos só de 230 V, como alguns secadores, podem não funcionar."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "A água da torneira é potável na maior parte do país (San José, Vale Central e principais áreas turísticas); em alguns lugares remotos do litoral e do interior, prefira água engarrafada.",
+    "vaccines": [
+     "Vacinas de rotina e hepatite A",
+     "Febre tifoide (viagens a áreas rurais)",
+     "Proteção contra mosquitos (dengue e zika)",
+     "Certificado de febre amarela só se você chegar de certos países de risco"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "911"
+   },
+   "tipping": {
+    "custom": "Por lei, as contas de restaurante incluem 10 % de serviço.",
+    "standardPercent": 10,
+    "rule": "mandatory",
+    "note": "A conta inclui 13 % de IVA e 10 % de serviço; não é preciso dar mais gorjeta, mas um extra por um ótimo atendimento é bem-vindo. Aos guias, costuma-se dar 5 - 10 $ por pessoa."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Sem restituição para turistas (IVA 13 %)",
+    "minSpend": "Não se aplica",
+    "customsNote": "A Costa Rica não devolve o IVA a turistas. É proibido levar para fora do país produtos de tartaruga, coral, conchas, animais silvestres e peças arqueológicas pré-colombianas."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 1 - 3",
+    "topCarriers": [
+     "Kölbi (ICE)",
+     "Claro",
+     "Liberty"
+    ],
+    "airportSimTrapWarning": "Os balcões da Kölbi e da Claro no aeroporto de San José são práticos; as lojas oficiais na cidade às vezes saem mais baratas. Com o passaporte, o chip é ativado em minutos, e o eSIM também funciona bem."
+   },
+   "touristScams": [
+    {
+     "title": "Golpe do pneu furado",
+     "desc": "Perto do aeroporto ou em saídas de rodovia, furam o pneu do carro alugado e uns “ajudantes” esvaziam o porta-malas.",
+     "tip": "Siga até um posto de gasolina seguro e iluminado e não deixe suas coisas sem vigilância."
+    },
+    {
+     "title": "Táxi pirata",
+     "desc": "Os táxis “piratas”, sem licença, não usam a “maría” (taxímetro) e cobram a mais.",
+     "tip": "Use os táxis vermelhos com triângulo amarelo, os laranja do aeroporto ou Uber/DiDi."
+    },
+    {
+     "title": "Surpresa no seguro do carro alugado",
+     "desc": "Carros que parecem baratíssimos na internet recebem, na retirada, o seguro local obrigatório, e o preço se multiplica.",
+     "tip": "Peça por escrito o preço total com o seguro obrigatório (SLI)."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Костариканский колон (CRC); доллары США принимают широко",

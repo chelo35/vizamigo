@@ -639,6 +639,166 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Libra egípcia (EGP)",
+   "bestMonths": "Outubro – abril (fresco e seco; ideal para Luxor e Assuã); de junho a agosto o sul costuma passar dos 40 °C, enquanto o mar Vermelho é bom para banho o ano todo",
+   "safety": {
+    "crimeRateSummary": "Cairo, Luxor, Assuã e os balneários do mar Vermelho estão abertos ao turismo, com forte esquema de segurança; a violência é rara, mas os ambulantes insistentes e os golpes são muito comuns. Os alertas oficiais desaconselham viajar ao norte do Sinai e às áreas de fronteira com a Líbia e o Sudão.",
+    "commonScams": [
+     "Condutores de camelo ou de cavalo em Gizé que cobram pouco para você subir e muito mais para deixar você descer",
+     "Desconhecidos simpáticos que dizem que um lugar “hoje está fechado” e levam você a lojas de papiro, perfume ou tapetes",
+     "Táxis que não usam taxímetro e motoristas que dizem não ter troco"
+    ],
+    "safeTravelTips": [
+     "No Cairo, use Uber ou Careem; com táxis de rua, combine o preço antes e leve notas pequenas.",
+     "Para qualquer serviço – camelo, cavalo ou foto –, confirme antes, em voz alta, o preço total e a moeda (libras ou dólares).",
+     "De junho a agosto, visite os sítios ao ar livre cedo, fique na sombra ao meio-dia e beba bastante água."
+    ],
+    "emergencyNumbers": {
+     "police": "122",
+     "ambulance": "123",
+     "general": "122"
+    },
+    "safetyScore": 40,
+    "safetyLevel": "Recomenda-se cautela",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60"
+   },
+   "internet": {
+    "networkCoverage": "4G bom nas cidades e no vale do Nilo; fraco no deserto e em alguns sítios arqueológicos",
+    "costPerGbUsd": "~US$ 0,30 - 1",
+    "esimAvailability": "Disponível – Airalo, Holafly e eSIM da Vodafone / Orange; também há chips para turistas no aeroporto",
+    "bestCarriers": [
+     "Vodafone Egypt",
+     "Orange Egypt",
+     "e& (Etisalat Misr)",
+     "WE"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Razoável – o metrô do Cairo é rápido e barato, mas vive lotado; trens e trens-leito ao longo do Nilo, ônibus intermunicipais; trânsito muito pesado",
+    "costLevel": "Muito barato",
+    "singleTicketUsd": "~US$ 0,20 - 0,40",
+    "dailyPassUsd": "Sem passe diário (os bilhetes avulsos são muito baratos)",
+    "popularRideApps": [
+     "Uber",
+     "Careem",
+     "inDrive",
+     "DiDi"
+    ],
+    "taxiAdvice": "As corridas de Uber pelo Cairo costumam custar 2-5 $, e do aeroporto até Gizé cerca de 10-15 $. Em Luxor e Assuã, negocie sempre antes o preço do táxi e da faluca."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 25 - 40",
+    "dailyBudgetMidrangeUsd": "US$ 70 - 120",
+    "budgetMealUsd": "US$ 3 - 7",
+    "coffeeUsd": "US$ 1,50 - 4",
+    "waterBottleUsd": "US$ 0,20 - 0,50",
+    "hostelDormUsd": "US$ 8 - 15",
+    "hotel3StarUsd": "US$ 35 - 70",
+    "flightCostIndex": "Baixo a moderado (Istambul – Cairo direto ~2 h)",
+    "flightTip": "THY, EgyptAir, Pegasus e AJet voam direto de Istambul para o Cairo, e também há voos para Hurghada e Sharm el-Sheikh. Os ingressos dos sítios arqueológicos (principalmente o Grande Museu Egípcio e o Vale dos Reis) pesam bastante no orçamento."
+   }
+  },
+  "enc": {
+   "language": {
+    "officialLanguages": "Árabe (no dia a dia se fala o árabe egípcio).",
+    "englishProficiency": "Bom nas áreas turísticas, nos hotéis e entre os guias; limitado nos bairros locais.",
+    "phrases": [
+     {
+      "phrase": "السلام عليكم (As-salamu alaykum)",
+      "meaning": "A paz esteja com você / Olá",
+      "translation": "A paz esteja com você / Olá",
+      "pronunciation": "as-sa-LAA-mu a-LAY-kum"
+     },
+     {
+      "phrase": "شكراً (Shukran)",
+      "meaning": "Obrigado",
+      "translation": "Obrigado",
+      "pronunciation": "SHUK-ran"
+     },
+     {
+      "phrase": "من فضلك (Min fadlak)",
+      "meaning": "Por favor",
+      "translation": "Por favor",
+      "pronunciation": "min FAD-lak"
+     },
+     {
+      "phrase": "بكام؟ (Bikam?)",
+      "meaning": "Quanto custa?",
+      "translation": "Quanto custa?",
+      "pronunciation": "bi-KAAM"
+     },
+     {
+      "phrase": "لا، شكراً (La, shukran)",
+      "meaning": "Não, obrigado",
+      "translation": "Não, obrigado",
+      "pronunciation": "laa SHUK-ran"
+     }
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Tomadas C/F de dois pinos redondos, iguais às da Turquia; não é preciso adaptador. Em hotéis antigos elas podem estar frouxas."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "A água da torneira não é potável; recomenda-se escovar os dentes com água engarrafada e evitar gelo e saladas cruas.",
+    "vaccines": [
+     "Vacinas de rotina (tríplice viral, tétano)",
+     "Hepatite A",
+     "Febre tifoide",
+     "Raiva (áreas rurais ou estadias longas)",
+     "Certificado de febre amarela só se você chegar de um país de risco"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "123"
+   },
+   "tipping": {
+    "custom": "A gorjeta (“baksheesh”) é esperada em todo lugar; os restaurantes acrescentam 12 % de serviço mais 14 % de IVA, e ainda se deixa mais 5-10 % para o garçom.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Tenha notas pequenas de 5-20 EGP para guias, motoristas, funcionários do hotel e atendentes de banheiro."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA de 14 % (sistema limitado)",
+    "minSpend": "1.500 EGP",
+    "customsNote": "Em lojas com o aviso “VAT Refund”, é possível pedir o reembolso no balcão do aeroporto para compras de pelo menos 1.500 EGP por nota; poucas lojas participam, então não conte com isso."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 0,30 - 1",
+    "topCarriers": [
+     "Vodafone Egypt",
+     "Orange Egypt",
+     "e& (Etisalat Misr)",
+     "WE"
+    ],
+    "airportSimTrapWarning": "Os quiosques de chip do aeroporto do Cairo vendem pacotes para turistas pelo dobro ou triplo do preço da cidade; o chip é registrado com o passaporte, então é melhor comprar numa loja oficial da Vodafone ou da Orange."
+   },
+   "touristScams": [
+    {
+     "title": "Armadilha do camelo em Gizé",
+     "desc": "Um passeio vendido como “grátis” ou barato termina com uma cobrança alta para deixar você descer.",
+     "tip": "Combine o preço total e a moeda (EGP ou USD) logo no início e pague só no final."
+    },
+    {
+     "title": "Visitas a lojas com comissão",
+     "desc": "Com desculpas como “museu”, “escola do governo” ou “hoje está fechado”, levam você a lojas de papiro, perfume e tapetes.",
+     "tip": "Recuse com educação a ajuda de desconhecidos e confira os horários em fontes oficiais."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Египетский фунт (EGP)",

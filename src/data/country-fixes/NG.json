@@ -1547,6 +1547,393 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Naira nigeriana (NGN)",
+   "bestMonths": "Novembro – fevereiro (estação seca; de dezembro a fevereiro há névoa seca e poeira do harmatã); abril – outubro é a estação das chuvas, com risco de enchentes em Lagos em junho – julho",
+   "safety": {
+    "safetyScore": 40,
+    "safetyLevel": "Cautela recomendada",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60",
+    "crimeRateSummary": "Muitos estados têm alerta de “não viaje” por causa do terrorismo no nordeste (Borno, Yobe, Adamawa), das gangues armadas e sequestros no noroeste e no cinturão central e dos sequestros no delta do Níger. Em Lagos e Abuja acontecem assaltos à mão armada, roubos “one chance” em veículos e celulares arrancados da mão; os estados do sudoeste são relativamente mais tranquilos.",
+    "commonScams": [
+     "“One chance”: falso ônibus ou táxi cheio de assaltantes que fingem ser passageiros",
+     "Pessoas no aeroporto que se dizem “agentes de protocolo” e pedem dinheiro",
+     "Ofertas fraudulentas com pagamento adiantado (“419”) pela internet e por e-mail"
+    ],
+    "safeTravelTips": [
+     "Não vá aos estados com alerta de “não viaje”; planeje a rota de acordo com os alertas oficiais.",
+     "Não pegue táxi na rua; use Uber, Bolt ou um carro do hotel e confira a placa e o motorista.",
+     "Evite viajar entre cidades à noite e não use o celular com a janela aberta."
+    ],
+    "emergencyNumbers": {
+     "police": "112",
+     "ambulance": "112",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "4G bom em Lagos, Abuja e nas grandes cidades, 5G em algumas áreas; irregular nas zonas rurais",
+    "costPerGbUsd": "~US$ 0,30 - 1,00",
+    "esimAvailability": "Média (MTN e Airtel oferecem eSIM; o cadastro exige passaporte)",
+    "bestCarriers": [
+     "MTN Nigeria",
+     "Airtel Nigeria",
+     "Glo",
+     "Airalo eSIM"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Precário a razoável (trânsito pesado; BRT e linhas Azul/Vermelha de trem em Lagos)",
+    "costLevel": "Barato (por causa da desvalorização da naira)",
+    "singleTicketUsd": "US$ 0,30 - 0,80 (BRT ou trem de Lagos)",
+    "dailyPassUsd": "Não existe (recarrega-se o cartão Cowry)",
+    "popularRideApps": [
+     "Uber",
+     "Bolt",
+     "inDrive"
+    ],
+    "taxiAdvice": "Uber e Bolt são muito usados em Lagos e Abuja; confira no app a placa e o motorista e não se sente na frente. Os micro-ônibus danfo e os okada (mototáxis) trazem risco de acidentes e roubos. O trânsito de Lagos é muito pesado; reserve 2 horas para chegar ao aeroporto e prefira voos domésticos entre cidades."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 35 - 60",
+    "dailyBudgetMidrangeUsd": "US$ 100 - 180",
+    "budgetMealUsd": "US$ 2 - 6",
+    "coffeeUsd": "US$ 2,00 - 4,00",
+    "waterBottleUsd": "US$ 0,30 - 0,70",
+    "hostelDormUsd": "Poucos hostels (pousada simples: US$ 15 - 30)",
+    "hotel3StarUsd": "US$ 60 - 130",
+    "flightCostIndex": "Moderado",
+    "flightTip": "A Turkish Airlines voa direto de Istambul para Lagos, Abuja e Kano; o aeroporto Murtala Muhammed, em Lagos (LOS), é a principal porta de entrada. As companhias domésticas, como Air Peace e Arik Air, costumam atrasar."
+   },
+   "plugType": "Tipo D, G (230V, 50Hz)"
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Cumprimentos e títulos são importantes; chame os mais velhos de “Sir/Ma”; os jovens iorubás se curvam ou se ajoelham para cumprimentar.",
+     "Use a mão direita para entregar coisas e para comer.",
+     "Vista-se de forma discreta nos estados do norte; no sul, vestir-se com elegância em ocasiões formais é sinal de respeito."
+    ],
+    "festivals": [
+     "Festival Osun-Osogbo (agosto, no bosque sagrado)",
+     "Carnaval de Calabar (dezembro)",
+     "Festival Eyo (Lagos, em datas irregulares)"
+    ],
+    "lifestyle": "Uma sociedade cheia de energia, com mais de 250 grupos étnicos; o afrobeats, Nollywood, as enormes festas “owambe” e o espírito empreendedor fazem parte do dia a dia."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Lekki Conservation Centre (passarela suspensa entre as copas das árvores, Lagos)",
+     "Galeria de Arte Nike (Lagos)",
+     "Bosque sagrado de Osun-Osogbo (UNESCO)",
+     "Rocha Olumo (Abeokuta)",
+     "Rocha Zuma (perto de Abuja)",
+     "Obudu Mountain Resort (Cross River)"
+    ],
+    "bestSeasons": "Novembro – fevereiro",
+    "travelStyleTip": "Por segurança, concentre-se em Lagos e nos estados do sudoeste (Ogun, Oyo, Osun); viaje com uma agência local ou um motorista de confiança e voe nos trechos longos."
+   },
+   "religion": {
+    "primaryReligions": "Muçulmanos ~50% (sobretudo no norte), cristãos ~45-48% (sobretudo no sul), crenças tradicionais iorubás, igbos e outras",
+    "respectNorms": "Vista-se adequadamente em mesquitas e igrejas; nos bosques sagrados, siga as regras do guia e não fotografe sem permissão. Evite discussões religiosas.",
+    "sacredSites": [
+     "Bosque sagrado de Osun-Osogbo",
+     "Mesquita Nacional de Abuja",
+     "Centro Cristão Nacional (Abuja)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "A língua oficial é o inglês; hauçá, iorubá e igbo são as línguas maternas mais faladas. O pidgin nigeriano é a língua franca nacional, e fala-se mais de 500 línguas no país.",
+    "englishProficiency": "Bom; o inglês é a língua da educação e dos negócios, e nas ruas se fala pidgin.",
+    "phrases": [
+     {
+      "phrase": "How far?",
+      "meaning": "E aí, tudo bem? (pidgin)",
+      "translation": "E aí, tudo bem? (pidgin)",
+      "pronunciation": "how FAH"
+     },
+     {
+      "phrase": "Na how much?",
+      "meaning": "Quanto custa? (pidgin)",
+      "translation": "Quanto custa? (pidgin)",
+      "pronunciation": "na how MUCH"
+     },
+     {
+      "phrase": "Ẹ ṣé",
+      "meaning": "Obrigado (iorubá)",
+      "translation": "Obrigado (iorubá)",
+      "pronunciation": "eh SHEH"
+     },
+     {
+      "phrase": "Daalụ",
+      "meaning": "Obrigado (igbo)",
+      "translation": "Obrigado (igbo)",
+      "pronunciation": "DAH-ah-loo"
+     },
+     {
+      "phrase": "Sannu",
+      "meaning": "Olá (hauçá)",
+      "translation": "Olá (hauçá)",
+      "pronunciation": "SAN-noo"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "As terracotas da cultura Nok remontam ao I milênio a.C.; os reinos de Ifé e do Benim produziram seus famosos bronzes, e no norte surgiram as cidades-Estado hauçás e, a partir de 1804, o Califado de Sokoto. O Reino Unido unificou o norte e o sul em 1914, e a Nigéria se tornou independente em 1 de outubro de 1960. Depois da guerra civil de 1967 – 1970, a capital passou para Abuja em 1991, e em 1999 o governo civil voltou.",
+    "milestones": [
+     "~1000 a.C. – 300 d.C.: cultura Nok",
+     "1914: unificação do norte e do sul da Nigéria",
+     "1960: independência (1 de outubro)",
+     "1991: a capital é transferida para Abuja"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Arroz jollof (arroz com molho de tomate e pimentão)",
+     "Inhame socado com sopa egusi (de sementes de melão)",
+     "Pepper soup (sopa apimentada com cabrito ou peixe)"
+    ],
+    "traditionalDrinks": [
+     "Vinho de palma",
+     "Zobo (bebida de hibisco)",
+     "Chapman (coquetel frutado sem álcool)"
+    ],
+    "streetFoodAndDesserts": [
+     "Suya (espetinhos de carne apimentados)",
+     "Puff-puff (bolinhos doces fritos)",
+     "Akara (bolinhos de feijão) e boli (banana-da-terra assada)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Wole Soyinka (Prêmio Nobel de Literatura, 1986)",
+     "Chinua Achebe (autor de “O mundo se despedaça”)",
+     "Fela Kuti (criador do afrobeat)"
+    ],
+    "strongSectors": [
+     "Petróleo e gás",
+     "Nollywood e a indústria musical do afrobeats",
+     "Fintechs, telecomunicações e agricultura"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Em Lagos e Abuja, cartões e transferências (POS) são comuns, mas às vezes cartões estrangeiros são recusados; leve nairas em espécie. Troque dinheiro só em bancos ou casas de câmbio autorizadas; os limites de saque nos caixas eletrônicos são baixos e as tarifas para cartões estrangeiros, altas.",
+    "tippingCulture": "Os restaurantes costumam acrescentar 10% de serviço; se não, deixar 5-10% é gentil. Pequenas gorjetas (“dash”) para motoristas e carregadores são comuns.",
+    "economicPillars": "Exportação de petróleo e gás, agricultura, telecomunicações e fintechs, entretenimento (Nollywood, música) e comércio."
+   }
+  },
+  "itin": {
+   "routeName": "Rota iorubá pelo sudoeste da Nigéria: Lagos, Abeokuta, Ibadan e Osogbo",
+   "routeSummary": "Uma rota de 8 dias de carro com motorista: das galerias de arte e da floresta de Lekki, em Lagos, à rocha Olumo de Abeokuta, às colinas históricas de Ibadan e ao bosque sagrado de Osun-Osogbo, Patrimônio da UNESCO.",
+   "totalDays": 8,
+   "bestSeason": "Novembro – fevereiro",
+   "transportMode": "Carro particular com motorista (Uber/Bolt na cidade)",
+   "paceLevel": "Equilibrado (cultura + arte + natureza)",
+   "signatureGastronomy": {
+    "dishes": [
+     "Arroz jollof",
+     "Inhame socado com egusi",
+     "Pepper soup"
+    ],
+    "drinks": [
+     "Vinho de palma",
+     "Zobo",
+     "Chapman"
+    ],
+    "streetFoods": [
+     "Suya",
+     "Puff-puff",
+     "Akara"
+    ],
+    "diningAdvice": "A comida nigeriana pode ser bem apimentada; peça “not too spicy”. Os restaurantes simples chamados “buka” são baratos e saborosos; beba água mineral e coma pratos bem cozidos."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptador tipo G (britânico) e carregador portátil (quedas de energia)",
+     "Carteira de vacinação contra febre amarela (obrigatória na entrada)",
+     "Antimaláricos e repelente",
+     "Cópias do passaporte e nairas em espécie"
+    ],
+    "safetyAndEtiquette": [
+     "Fique longe dos estados com alerta de “não viaje”.",
+     "Trate os mais velhos com respeito e use a mão direita."
+    ]
+   },
+   "idealDurationText": "Rota de 8 dias",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Lagos (arte, praias e vida noturna)",
+     "recommendedDuration": "3 dias",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Galeria de Arte Nike",
+      "Passarela suspensa do Lekki Conservation Centre",
+      "Freedom Park e o centro histórico de Lagos Island",
+      "Praia de Tarkwa Bay (de barco)"
+     ],
+     "activities": [
+      "Conheça a arte iorubá e os tecidos adire na Galeria Nike.",
+      "Percorra em Lekki uma das passarelas suspensas mais longas da África.",
+      "À noite, vá a um show de afrobeats ou a uma casa de música ao vivo (com transporte seguro)."
+     ],
+     "foodAndDrinks": [
+      "Arroz jollof",
+      "Suya",
+      "Chapman"
+     ],
+     "criticalTips": [
+      "Não pegue táxi na rua; confira a placa no Uber/Bolt.",
+      "Não use o celular perto da janela no trânsito; mantenha as portas trancadas."
+     ],
+     "mapsQuery": "Lagos, Nigeria"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Abeokuta (rocha Olumo e mercado de adire)",
+     "recommendedDuration": "1 dia",
+     "durationBadge": "1 dia",
+     "highlights": [
+      "Rocha Olumo e seus abrigos históricos",
+      "Mercado de adire (tecido tingido de índigo) de Itoku",
+      "Vistas do rio Ogun"
+     ],
+     "activities": [
+      "Suba a rocha Olumo com guia e conheça a história dos egbás.",
+      "Veja o tingimento numa oficina de adire.",
+      "Compre seu próprio tecido adire."
+     ],
+     "foodAndDrinks": [
+      "Amala e ewedu (massa de farinha de inhame com sopa de folhas de juta)",
+      "Zobo"
+     ],
+     "criticalTips": [
+      "A estrada Lagos – Abeokuta (~100 km) pode levar 2-3 horas, dependendo do trânsito; saia cedo.",
+      "Cuidado com os trechos escorregadios da rocha e use calçados confortáveis."
+     ],
+     "mapsQuery": "Olumo Rock, Abeokuta, Nigeria"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Ibadan (cidade histórica e universitária)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Vista da cidade da Torre Bower",
+      "Cocoa House (um dos primeiros arranha-céus da África)",
+      "Jardim zoológico da Universidade de Ibadan",
+      "Jardins Agodi"
+     ],
+     "activities": [
+      "Suba a Torre Bower para ver os telhados marrons da cidade.",
+      "Percorra o campus da primeira universidade do país.",
+      "Observe a vida local no mercado de Bodija."
+     ],
+     "foodAndDrinks": [
+      "Inhame socado com egusi",
+      "Akara",
+      "Vinho de palma"
+     ],
+     "criticalTips": [
+      "Carregue a bolsa na frente do corpo em mercados lotados.",
+      "Desloque-se com seu motorista em vez de usar okada (mototáxi)."
+     ],
+     "mapsQuery": "Ibadan, Nigeria"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Osogbo (bosque sagrado de Osun-Osogbo)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Bosque sagrado de Osun-Osogbo (UNESCO)",
+      "Esculturas e santuários de Susanne Wenger",
+      "Rio Osun",
+      "Cachoeira de Erin Ijesha (nos arredores)"
+     ],
+     "activities": [
+      "Percorra com guia o bosque sagrado e seus santuários.",
+      "Visite os ateliês de arte de Osogbo.",
+      "Faça um bate-volta à cachoeira de Erin Ijesha."
+     ],
+     "foodAndDrinks": [
+      "Amala",
+      "Pepper soup",
+      "Puff-puff"
+     ],
+     "criticalTips": [
+      "Respeite as regras sobre calçados e fotos nos locais sagrados.",
+      "O festival de agosto fica lotado; reserve a hospedagem com antecedência."
+     ],
+     "mapsQuery": "Osun-Osogbo Sacred Grove, Osogbo, Nigeria"
+    }
+   ]
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "D",
+     "G"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Principalmente tomadas tipo G (três pinos chatos, padrão britânico) e tipo D em alguns prédios antigos; quem vem da Europa precisa de adaptador. As quedas de energia são frequentes, e os hotéis usam geradores."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "A água da torneira não é potável; beba água mineral lacrada e evite a água em saquinhos (“pure water”) e o gelo.",
+    "vaccines": [
+     "Febre amarela (certificado obrigatório para todos os viajantes com mais de 9 meses)",
+     "Profilaxia contra malária (alto risco no país todo)",
+     "Hepatite A, febre tifoide e meningite (ACWY, sobretudo no norte)",
+     "Reforço contra pólio, cólera e raiva (consulte seu médico)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "112"
+   },
+   "tipping": {
+    "custom": "Não é obrigatória; se o serviço não estiver incluído, espera-se uma pequena gorjeta.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "As contas costumam incluir 7,5% de IVA e 10% de serviço; confira o recibo."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA de 7,5%; sem restituição para turistas",
+    "minSpend": "Não se aplica",
+    "customsNote": "Não há restituição do IVA para turistas. Antiguidades e bens culturais, como os bronzes do Benim, não podem ser exportados sem autorização da Comissão Nacional de Museus e Monumentos; valores em espécie acima de US$ 10.000 devem ser declarados."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "~US$ 0,30 - 1,00",
+    "topCarriers": [
+     "MTN Nigeria",
+     "Airtel Nigeria",
+     "Glo"
+    ],
+    "airportSimTrapWarning": "Evite os vendedores de chip não oficiais do aeroporto; compre o chip numa loja oficial da MTN ou da Airtel com seu passaporte, ou instale uma eSIM antes da viagem. Os pacotes de dados são muito baratos."
+   },
+   "touristScams": [
+    {
+     "title": "Veículo “one chance”",
+     "desc": "Você entra num ônibus ou táxi cheio de assaltantes que fingem ser passageiros e é roubado.",
+     "tip": "Entre só em veículos reservados por app ou pelo hotel."
+    },
+    {
+     "title": "Falso “agente de protocolo”",
+     "desc": "No aeroporto, alguém se oferece para agilizar os procedimentos e depois pede dinheiro ou some com sua bagagem.",
+     "tip": "Confie apenas no motorista do hotel com uma placa com seu nome."
+    },
+    {
+     "title": "Falsa blitz policial",
+     "desc": "Numa blitz, exigem de você uma “multa” em dinheiro por uma infração inventada.",
+     "tip": "Mantenha a calma, peça a identificação e deixe seu motorista resolver."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Нигерийская найра (NGN)",

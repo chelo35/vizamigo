@@ -29,15 +29,15 @@ export const HomeBooking: React.FC<{ passport: string; onOpenCountry: (code: str
   const { l, language } = useI18n();
   const [tab, setTab] = useState<TabId>('flight');
   const TABS: { id: TabId; label: string }[] = [
-    { id: 'visa', label: l('Vize ve giriş', 'Visa & entry', 'Visum & Einreise', 'Visado y entrada', 'Виза и въезд') },
-    { id: 'flight', label: l('Uçak', 'Flights', 'Flüge', 'Vuelos', 'Авиабилеты') },
-    { id: 'hotel', label: l('Otel', 'Hotels', 'Hotels', 'Hoteles', 'Отели') },
-    { id: 'tours', label: l('Tur ve bilet', 'Tours & tickets', 'Touren & Tickets', 'Tours y entradas', 'Экскурсии') },
-    { id: 'car', label: l('Araç', 'Car rental', 'Mietwagen', 'Coches', 'Авто') },
-    { id: 'transfer', label: l('Transfer', 'Transfers', 'Transfer', 'Traslados', 'Трансфер') },
+    { id: 'visa', label: l('Vize ve giriş', 'Visa & entry', 'Visum & Einreise', 'Visado y entrada', 'Виза и въезд', 'Visto e entrada') },
+    { id: 'flight', label: l('Uçak', 'Flights', 'Flüge', 'Vuelos', 'Авиабилеты', 'Voos') },
+    { id: 'hotel', label: l('Otel', 'Hotels', 'Hotels', 'Hoteles', 'Отели', 'Hotéis') },
+    { id: 'tours', label: l('Tur ve bilet', 'Tours & tickets', 'Touren & Tickets', 'Tours y entradas', 'Экскурсии', 'Passeios e ingressos') },
+    { id: 'car', label: l('Araç', 'Car rental', 'Mietwagen', 'Coches', 'Авто', 'Carros') },
+    { id: 'transfer', label: l('Transfer', 'Transfers', 'Transfer', 'Traslados', 'Трансфер', 'Transfers') },
     { id: 'esim', label: 'eSIM' },
-    { id: 'ins', label: l('Sigorta', 'Insurance', 'Versicherung', 'Seguro', 'Страховка') },
-    { id: 'easy', label: l('Kolay tatil', 'Easy trip', 'Einfache Reise', 'Viaje fácil', 'Лёгкая поездка') }
+    { id: 'ins', label: l('Sigorta', 'Insurance', 'Versicherung', 'Seguro', 'Страховка', 'Seguro') },
+    { id: 'easy', label: l('Kolay tatil', 'Easy trip', 'Einfache Reise', 'Viaje fácil', 'Лёгкая поездка', 'Viagem sem complicação') }
   ];
   const today = iso(new Date());
   const [trip, setTrip] = useState<Trip>(() => {
@@ -90,11 +90,11 @@ export const HomeBooking: React.FC<{ passport: string; onOpenCountry: (code: str
     if (!destCode || !vi) return null;
     const name = getCountryName(destCode, language);
     const d = /^\d+$/.test(vi.v) ? vi.v : '';
-    if (vi.id) return { ok: true, t: l(`${name}: kimlik kartıyla giriş`, `${name}: entry with ID card`, `${name}: Einreise mit Ausweis`, `${name}: entrada con DNI`, `${name}: въезд по ID-карте`) };
-    if (vi.cat === 'free') return { ok: true, t: l(`${name}: ${d ? d + ' gün ' : ''}vizesiz`, `${name}: visa-free${d ? ` for ${d} days` : ''}`, `${name}: visumfrei${d ? ` für ${d} Tage` : ''}`, `${name}: sin visado${d ? ` ${d} días` : ''}`, `${name}: без визы${d ? ` ${d} дн.` : ''}`) };
-    if (vi.cat === 'evisa' || vi.cat === 'eta') return { ok: false, t: l(`${name}: online e-vize / ETA gerekli`, `${name}: eVisa / ETA needed online`, `${name}: eVisum / ETA online nötig`, `${name}: eVisa / ETA en línea`, `${name}: нужна eVisa / ETA`) };
-    if (vi.cat === 'voa') return { ok: false, t: l(`${name}: kapıda vize`, `${name}: visa on arrival`, `${name}: Visum bei Ankunft`, `${name}: visado a la llegada`, `${name}: виза по прилёте`) };
-    return { ok: false, t: l(`${name}: vize gerekli`, `${name}: visa required`, `${name}: Visum nötig`, `${name}: visado necesario`, `${name}: нужна виза`) };
+    if (vi.id) return { ok: true, t: l(`${name}: kimlik kartıyla giriş`, `${name}: entry with ID card`, `${name}: Einreise mit Ausweis`, `${name}: entrada con DNI`, `${name}: въезд по ID-карте`, `${name}: entrada com RG`) };
+    if (vi.cat === 'free') return { ok: true, t: l(`${name}: ${d ? d + ' gün ' : ''}vizesiz`, `${name}: visa-free${d ? ` for ${d} days` : ''}`, `${name}: visumfrei${d ? ` für ${d} Tage` : ''}`, `${name}: sin visado${d ? ` ${d} días` : ''}`, `${name}: без визы${d ? ` ${d} дн.` : ''}`, `${name}: sem visto${d ? ` ${d} días` : ''}`) };
+    if (vi.cat === 'evisa' || vi.cat === 'eta') return { ok: false, t: l(`${name}: online e-vize / ETA gerekli`, `${name}: eVisa / ETA needed online`, `${name}: eVisum / ETA online nötig`, `${name}: eVisa / ETA en línea`, `${name}: нужна eVisa / ETA`, `${name}: e-Visa / ETA on-line`) };
+    if (vi.cat === 'voa') return { ok: false, t: l(`${name}: kapıda vize`, `${name}: visa on arrival`, `${name}: Visum bei Ankunft`, `${name}: visado a la llegada`, `${name}: виза по прилёте`, `${name}: visto na chegada`) };
+    return { ok: false, t: l(`${name}: vize gerekli`, `${name}: visa required`, `${name}: Visum nötig`, `${name}: visado necesario`, `${name}: нужна виза`, `${name}: visto necessário`) };
   })();
   const fromOpts = useMemo(() => countries.filter((x) => GEO_DATA[x.c]?.mainHub), [countries]);
 
@@ -147,8 +147,8 @@ export const HomeBooking: React.FC<{ passport: string; onOpenCountry: (code: str
   }, [q, countries, places, language, trOnly]);
 
   return (
-    <form className="vz-hb" onSubmit={go} aria-label={l('Tatil ara', 'Search a trip', 'Reise suchen', 'Buscar viaje', 'Поиск поездки')}>
-      <div className="vz-hb-tabs" role="tablist" aria-label={l('Ne arıyorsun?', 'What are you looking for?', 'Was suchst du?', '¿Qué buscas?', 'Что ищете?')}>
+    <form className="vz-hb" onSubmit={go} aria-label={l('Tatil ara', 'Search a trip', 'Reise suchen', 'Buscar viaje', 'Поиск поездки', 'Buscar viagem')}>
+      <div className="vz-hb-tabs" role="tablist" aria-label={l('Ne arıyorsun?', 'What are you looking for?', 'Was suchst du?', '¿Qué buscas?', 'Что ищете?', 'O que você procura?')}>
         {TABS.map((t) => (
           <button
             key={t.id}
@@ -166,14 +166,14 @@ export const HomeBooking: React.FC<{ passport: string; onOpenCountry: (code: str
       <div className={`vz-hb-row${tab === 'visa' ? ' visa' : ''}`}>
         {tab !== 'visa' && (
           <label className="vz-tb-f vz-hb-from">
-            <small>{l('Nereden', 'From', 'Von', 'Desde', 'Откуда')}</small>
+            <small>{l('Nereden', 'From', 'Von', 'Desde', 'Откуда', 'De')}</small>
             <select value={trip.from} onChange={(e) => setTrip((t) => ({ ...t, from: e.target.value }))}>
               {fromOpts.map((o) => <option key={o.c} value={o.c}>{o.n}{GEO_DATA[o.c].mainHub ? ` (${GEO_DATA[o.c].mainHub.split('/')[0]})` : ''}</option>)}
             </select>
           </label>
         )}
         <label className={`vz-tb-f vz-hb-dest${err ? ' bad' : ''}`}>
-          <small>{l('Nereye', 'Destination', 'Reiseziel', 'Destino', 'Куда')}</small>
+          <small>{l('Nereye', 'Destination', 'Reiseziel', 'Destino', 'Куда', 'Destino')}</small>
           <input
             value={q}
             onChange={(e) => {
@@ -199,7 +199,7 @@ export const HomeBooking: React.FC<{ passport: string; onOpenCountry: (code: str
               setOpen(true);
             }}
             onBlur={() => setTimeout(() => setOpen(false), 150)}
-            placeholder={destination && GEO_DATA[destination] ? getCountryName(destination, language) + l(' ya da başka bir ülke, şehir…', ' or another country, city…', ' oder ein anderes Land, eine Stadt…', ' u otro país o ciudad…', ' или другая страна, город…') : l('Ülke ya da şehir: Tayland, Bali, Paris…', 'Country or city: Thailand, Bali, Paris…', 'Land oder Stadt: Thailand, Bali, Paris…', 'País o ciudad: Tailandia, Bali, París…', 'Страна или город: Таиланд, Бали, Париж…')}
+            placeholder={destination && GEO_DATA[destination] ? getCountryName(destination, language) + l(' ya da başka bir ülke, şehir…', ' or another country, city…', ' oder ein anderes Land, eine Stadt…', ' u otro país o ciudad…', ' или другая страна, город…', ' ou outro país ou cidade…') : l('Ülke ya da şehir: Tayland, Bali, Paris…', 'Country or city: Thailand, Bali, Paris…', 'Land oder Stadt: Thailand, Bali, Paris…', 'País o ciudad: Tailandia, Bali, París…', 'Страна или город: Таиланд, Бали, Париж…', 'País ou cidade: Tailândia, Bali, Paris…')}
             autoComplete="off"
             role="combobox"
             aria-expanded={open && sugg.length > 0}
@@ -229,21 +229,21 @@ export const HomeBooking: React.FC<{ passport: string; onOpenCountry: (code: str
         </label>
         {tab !== 'visa' && (<>
         <label className="vz-tb-f">
-          <small>{l('Gidiş', 'Depart', 'Hinreise', 'Ida', 'Туда')}</small>
+          <small>{l('Gidiş', 'Depart', 'Hinreise', 'Ida', 'Туда', 'Ida')}</small>
           <input type="date" min={plus(today, 1)} value={trip.d1} onChange={(e) => e.target.value && setTrip((t) => ({ ...t, d1: e.target.value, d2: t.d2 > e.target.value ? t.d2 : plus(e.target.value, 7) }))} />
         </label>
         <label className="vz-tb-f">
-          <small>{l('Dönüş', 'Return', 'Rückreise', 'Vuelta', 'Обратно')}</small>
+          <small>{l('Dönüş', 'Return', 'Rückreise', 'Vuelta', 'Обратно', 'Volta')}</small>
           <input type="date" min={plus(trip.d1, 1)} value={trip.d2} onChange={(e) => e.target.value && setTrip((t) => ({ ...t, d2: e.target.value }))} />
         </label>
         <label className="vz-tb-f sm">
-          <small>{l('Yetişkin', 'Adults', 'Erwachsene', 'Adultos', 'Взрослые')}</small>
+          <small>{l('Yetişkin', 'Adults', 'Erwachsene', 'Adultos', 'Взрослые', 'Adultos')}</small>
           <select value={trip.n} onChange={(e) => setTrip((t) => ({ ...t, n: Number(e.target.value) }))}>
             {[1, 2, 3, 4, 5, 6, 7, 8].map((d) => <option key={d} value={d}>{d}</option>)}
           </select>
         </label>
         <label className="vz-tb-f sm">
-          <small>{l('Çocuk', 'Children', 'Kinder', 'Niños', 'Дети')}</small>
+          <small>{l('Çocuk', 'Children', 'Kinder', 'Niños', 'Дети', 'Crianças')}</small>
           <select value={trip.c || 0} onChange={(e) => setTrip((t) => ({ ...t, c: Number(e.target.value) }))}>
             {[0, 1, 2, 3, 4].map((d) => <option key={d} value={d}>{d}</option>)}
           </select>
@@ -251,7 +251,7 @@ export const HomeBooking: React.FC<{ passport: string; onOpenCountry: (code: str
         </>)}
         <button type="submit" className="vz-hb-go">
           <Icon name="search" size={18} />
-          {tab === 'visa' ? l('Kuralı gör', 'See the rules', 'Regeln ansehen', 'Ver requisitos', 'Смотреть правила') : l('Fiyatları gör', 'See prices', 'Preise ansehen', 'Ver precios', 'Смотреть цены')}
+          {tab === 'visa' ? l('Kuralı gör', 'See the rules', 'Regeln ansehen', 'Ver requisitos', 'Смотреть правила', 'Ver requisitos') : l('Fiyatları gör', 'See prices', 'Preise ansehen', 'Ver precios', 'Смотреть цены', 'Ver preços')}
         </button>
       </div>
       <div className="vz-hb-info">
@@ -261,9 +261,9 @@ export const HomeBooking: React.FC<{ passport: string; onOpenCountry: (code: str
             {visaLine.t}
           </span>
         )}
-        <span className="vz-hb-partners">{tab === 'visa' ? l('Resmî kaynaklar, kontrol tarihiyle', 'Official sources with check dates', 'Amtliche Quellen mit Prüfdatum', 'Fuentes oficiales con fecha', 'Официальные источники с датой') : l('Aviasales · Kayak · Booking · Agoda · Viator fiyatları karşılaştırılır', 'Compare Aviasales · Kayak · Booking · Agoda · Viator', 'Vergleich: Aviasales · Kayak · Booking · Agoda · Viator', 'Compara Aviasales · Kayak · Booking · Agoda · Viator', 'Сравнение: Aviasales · Kayak · Booking · Agoda · Viator')}</span>
+        <span className="vz-hb-partners">{tab === 'visa' ? l('Resmî kaynaklar, kontrol tarihiyle', 'Official sources with check dates', 'Amtliche Quellen mit Prüfdatum', 'Fuentes oficiales con fecha', 'Официальные источники с датой', 'Fontes oficiais com data') : l('Aviasales · Kayak · Booking · Agoda · Viator fiyatları karşılaştırılır', 'Compare Aviasales · Kayak · Booking · Agoda · Viator', 'Vergleich: Aviasales · Kayak · Booking · Agoda · Viator', 'Compara Aviasales · Kayak · Booking · Agoda · Viator', 'Сравнение: Aviasales · Kayak · Booking · Agoda · Viator', 'Compare Aviasales · Kayak · Booking · Agoda · Viator')}</span>
       </div>
-      {err && <p className="vz-hb-err" role="alert">{l('Bu yeri bulamadık; listeden bir ülke ya da şehir seç.', 'We could not find that place; pick a country or city from the list.', 'Ort nicht gefunden; wähle ein Land oder eine Stadt aus der Liste.', 'No encontramos ese lugar; elige un país o ciudad de la lista.', 'Место не найдено; выберите страну или город из списка.')}</p>}
+      {err && <p className="vz-hb-err" role="alert">{l('Bu yeri bulamadık; listeden bir ülke ya da şehir seç.', 'We could not find that place; pick a country or city from the list.', 'Ort nicht gefunden; wähle ein Land oder eine Stadt aus der Liste.', 'No encontramos ese lugar; elige un país o ciudad de la lista.', 'Место не найдено; выберите страну или город из списка.', 'Não encontramos esse lugar; escolha um país ou cidade da lista.')}</p>}
     </form>
   );
 };

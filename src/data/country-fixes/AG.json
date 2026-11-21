@@ -1551,6 +1551,394 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Dólar do Caribe Oriental (XCD)",
+   "plugType": "Tipo A, B (230V, 60Hz)",
+   "bestMonths": "Dezembro a abril (seco, ensolarado e com brisa); de junho a novembro é temporada de furacões, com risco maior de agosto a outubro",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "É um país insular em geral seguro e tranquilo, mas em St. John’s, à noite, acontecem trombadinhas e assaltos em ruas desertas, e objetos deixados nas praias costumam ser furtados.",
+    "commonScams": [
+     "Taxistas que informam o preço sem deixar claro se é em dólar americano ou do Caribe Oriental e, no fim, cobram em US$",
+     "Vendedores de passeios sem licença no porto de cruzeiros (Heritage Quay) com preços inflados",
+     "Vendedores insistentes na praia que cobram um sinal por jet ski ou passeio de barco e não voltam mais"
+    ],
+    "safeTravelTips": [
+     "Antes de entrar no táxi, confirme a tarifa oficial e a moeda (US$ / EC$).",
+     "Não deixe objetos de valor sem vigilância na praia nem à vista dentro do carro.",
+     "Se for viajar na temporada de furacões, contrate um seguro que cubra cancelamento de voos."
+    ],
+    "emergencyNumbers": {
+     "police": "911",
+     "ambulance": "911",
+     "general": "911"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Boa cobertura 4G/LTE em Antígua; mais fraca em Barbuda e em algumas baías",
+    "costPerGbUsd": "~US$ 3,00 - 6,00",
+    "esimAvailability": "Boa (os planos de eSIM internacionais funcionam)",
+    "bestCarriers": [
+     "Digicel",
+     "Flow",
+     "APUA",
+     "Airalo / Holafly eSIM"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Médio (micro-ônibus particulares, táxis e carros alugados)",
+    "costLevel": "Caro",
+    "singleTicketUsd": "1,00 - 1,30 $ (EC$2,75 – 3,50 no micro-ônibus)",
+    "dailyPassUsd": "Não existe",
+    "popularRideApps": [
+     "Sem Uber / Bolt",
+     "Táxis licenciados (tarifas fixas)",
+     "Carro alugado"
+    ],
+    "taxiAdvice": "Uber e Bolt não operam. Os táxis cobram tarifas fixas oficiais, afixadas no aeroporto. Os micro-ônibus saem das rodoviárias West e East Bus Station, em St. John’s, e ficam escassos aos domingos e à noite. Para alugar carro é preciso uma licença local temporária; a mão é inglesa (dirige-se pela esquerda)."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 80 - 120",
+    "dailyBudgetMidrangeUsd": "US$ 200 - 350",
+    "budgetMealUsd": "US$ 12 - 25",
+    "coffeeUsd": "US$ 3,00 - 5,00",
+    "waterBottleUsd": "US$ 1,50 - 3,00",
+    "hostelDormUsd": "US$ 35 - 60",
+    "hotel3StarUsd": "US$ 150 - 300",
+    "flightCostIndex": "Alto (sem voos diretos da Turquia nem da Espanha)",
+    "flightTip": "Para chegar a Antígua (ANU), o normal é passar por Londres (British Airways, Virgin Atlantic) ou pelos EUA (Miami, Nova York); os preços sobem de dezembro a abril."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Ao entrar numa loja ou num ônibus, espera-se que você diga “Good morning / Good afternoon”; fazer perguntas sem cumprimentar é considerado falta de educação.",
+     "Andar de roupa de banho fora da praia, principalmente em St. John’s e nas igrejas, é malvisto.",
+     "Peça permissão antes de fotografar as pessoas; alguns vendedores do mercado cobram uma taxa."
+    ],
+    "festivals": [
+     "Carnaval de Antígua (fim de julho até a primeira terça-feira de agosto)",
+     "Antigua Sailing Week (fim de abril – início de maio)",
+     "Dia da Independência (1º de novembro)"
+    ],
+    "lifestyle": "Ritmo tranquilo de “island time”, paixão pelo críquete, igreja e praia aos domingos e “limes” (encontros noturnos) com música."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Nelson’s Dockyard (UNESCO, English Harbour)",
+     "Shirley Heights Lookout (festa no domingo à tarde)",
+     "Half Moon Bay e Devil’s Bridge",
+     "Stingray City (nado com arraias)",
+     "Pink Sand Beach e santuário de fragatas de Barbuda",
+     "Antigo engenho de açúcar Betty’s Hope"
+    ],
+    "bestSeasons": "Dezembro a abril",
+    "travelStyleTip": "O transporte público é limitado, então o carro alugado dá mais liberdade; hospede-se em English Harbour ou Jolly Harbour e explore as praias."
+   },
+   "religion": {
+    "primaryReligions": "Cristãos ~90 % (anglicanos ~17 %, adventistas ~12 %, pentecostais ~12 %, morávios, católicos e metodistas); pequena comunidade rastafári",
+    "respectNorms": "Entre nas igrejas com ombros e joelhos cobertos e fique em silêncio durante os cultos de domingo.",
+    "sacredSites": [
+     "Catedral de St. John’s (St. John the Divine)",
+     "Catedral católica da Sagrada Família (St. John’s)",
+     "Igreja anglicana de St. Peter (Parham, 1840)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "O inglês é a língua oficial; no dia a dia, fala-se muito o crioulo antiguano.",
+    "englishProficiency": "Muito bom; todo mundo fala inglês, mas o crioulo falado rápido é difícil de acompanhar no começo.",
+    "phrases": [
+     {
+      "phrase": "Mornin’ / Good afternoon",
+      "meaning": "Bom dia / Boa tarde (cumprimente sempre primeiro)",
+      "translation": "Bom dia",
+      "pronunciation": "MOR-nin / gud af-ta-NOON"
+     },
+     {
+      "phrase": "Wha’ happen?",
+      "meaning": "E aí? / Tudo bem?",
+      "translation": "Tudo certo?",
+      "pronunciation": "wha HAP-pen"
+     },
+     {
+      "phrase": "Me deh yah",
+      "meaning": "Estou bem (“estou aqui”)",
+      "translation": "Tudo bem",
+      "pronunciation": "mee deh YAH"
+     },
+     {
+      "phrase": "Tank yuh",
+      "meaning": "Obrigado(a)",
+      "translation": "Obrigado(a)",
+      "pronunciation": "TANK yuh"
+     },
+     {
+      "phrase": "Le’ we go lime",
+      "meaning": "Vamos dar um rolê / passar um tempo juntos",
+      "translation": "Bora curtir",
+      "pronunciation": "leh wee go LIME"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Habitada pelos povos aruaque e kalinago, a ilha foi batizada por Colombo de Santa María la Antigua em 1493. Colônia britânica desde 1632, sua economia se baseou em plantações de açúcar trabalhadas por africanos escravizados; a escravidão foi abolida em 1834. O país conquistou a independência em 1º de novembro de 1981, e o furacão Irma devastou Barbuda em 2017.",
+    "milestones": [
+     "1632: Começa a colonização britânica",
+     "1834: Abolição da escravidão",
+     "1981: Independência (1º de novembro)",
+     "2017: O furacão Irma devasta Barbuda"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Fungee e pepperpot (polenta de milho com ensopado de carne e legumes, prato nacional)",
+     "Ducana e saltfish (bolinho de batata-doce com bacalhau salgado)",
+     "Lagosta caribenha grelhada e peixe do dia"
+    ],
+    "traditionalDrinks": [
+     "Runs English Harbour e Cavalier",
+     "Cerveja Wadadli",
+     "Ginger beer caseira e sorrel"
+    ],
+    "streetFoodAndDesserts": [
+     "Johnny cakes (massa frita)",
+     "Abacaxi Antigua Black (um dos mais doces do mundo)",
+     "Sugar cake (doce de coco)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Sir Viv Richards (lendário jogador de críquete)",
+     "Jamaica Kincaid (escritora)",
+     "Sir Vere Cornwall Bird (primeiro primeiro-ministro, herói nacional)"
+    ],
+    "strongSectors": [
+     "Turismo e cruzeiros",
+     "Serviços financeiros",
+     "Construção civil e serviços náuticos"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Cartões são comuns em hotéis, restaurantes e supermercados; o dólar americano é aceito em toda parte, mas o troco costuma vir em EC$ (1 US$ ≈ 2,70 EC$). Leve notas pequenas de EC$ para micro-ônibus e mercados.",
+    "tippingCulture": "As contas costumam incluir 10 % de serviço mais impostos; se não incluírem, espera-se 10-15 %.",
+    "economicPillars": "Turismo, serviços financeiros, construção civil e serviços náuticos."
+   }
+  },
+  "itin": {
+   "routeName": "Roteiro por Antígua e Barbuda: St. John’s, costa oeste, English Harbour e Barbuda",
+   "routeSummary": "Um roteiro de 6 dias pelas ilhas, do colorido porto de St. John’s às praias tranquilas da costa oeste, passando pela história do Nelson’s Dockyard até as areias cor-de-rosa de Barbuda.",
+   "totalDays": 6,
+   "idealDurationText": "Roteiro de 6 dias",
+   "bestSeason": "Dezembro a abril",
+   "transportMode": "Carro alugado ou táxi + ferry (Barbuda Express) ou avião de pequeno porte até Barbuda",
+   "paceLevel": "Tranquilo (praia + história + natureza)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: St. John’s (capital e porto)",
+     "recommendedDuration": "1 dia",
+     "durationBadge": "1 dia",
+     "highlights": [
+      "Heritage Quay e Redcliffe Quay",
+      "Catedral de St. John’s",
+      "Museu de Antígua e Barbuda",
+      "Fort James"
+     ],
+     "activities": [
+      "Passeie entre as coloridas casas de madeira de Redcliffe Quay.",
+      "Compre frutas e temperos no mercado no sábado de manhã.",
+      "Veja o pôr do sol na praia de Fort James."
+     ],
+     "foodAndDrinks": [
+      "Fungee e pepperpot",
+      "Ducana e saltfish",
+      "Cerveja Wadadli"
+     ],
+     "criticalTips": [
+      "O centro fica lotado nos dias de navio de cruzeiro.",
+      "Pergunte sempre se os preços estão em US$ ou EC$."
+     ],
+     "mapsQuery": "St. John's, Antigua"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Costa oeste e Jolly Harbour (praias e floresta tropical)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Darkwood Beach e Ffryes Beach",
+      "Valley Church Beach",
+      "Estrada Fig Tree Drive, em meio à floresta",
+      "Mount Obama (402 m, ponto mais alto)"
+     ],
+     "activities": [
+      "Faça tirolesa no Antigua Rainforest Canopy Tour.",
+      "Suba o Mount Obama bem cedo.",
+      "Dê um mergulho em Ffryes Beach no fim da tarde."
+     ],
+     "foodAndDrinks": [
+      "Lagosta grelhada nos quiosques de praia",
+      "Abacaxi Antigua Black",
+      "Ponche de rum"
+     ],
+     "criticalTips": [
+      "O transporte público é escasso; alugue um carro e lembre-se de que a mão é inglesa.",
+      "O sol é muito forte; use protetor solar que não agrida os corais."
+     ],
+     "mapsQuery": "Jolly Harbour, Antigua"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: English Harbour e Falmouth (história e vela)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Nelson’s Dockyard (UNESCO)",
+      "Shirley Heights Lookout",
+      "Pigeon Point Beach",
+      "Devil’s Bridge e Half Moon Bay (costa leste)"
+     ],
+     "activities": [
+      "Visite o museu e os prédios restaurados do estaleiro naval georgiano.",
+      "Curta o pôr do sol de domingo ao som de uma banda de steel drums em Shirley Heights.",
+      "Faça um passeio até Half Moon Bay e ao arco natural de Devil’s Bridge."
+     ],
+     "foodAndDrinks": [
+      "Rum de English Harbour",
+      "Pratos de búzio (conch)",
+      "Peixe fresco e bolinhos fritos"
+     ],
+     "criticalTips": [
+      "Reserve com antecedência o táxi de volta da festa de Shirley Heights.",
+      "Em Devil’s Bridge, as ondas batem de repente; não chegue perto da borda."
+     ],
+     "mapsQuery": "English Harbour, Antigua"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Barbuda (areia rosa e fragatas)",
+     "recommendedDuration": "1 dia",
+     "durationBadge": "1 dia",
+     "highlights": [
+      "Santuário de fragatas da laguna de Codrington",
+      "Pink Sand Beach",
+      "11 Mile Beach",
+      "Vilarejo de Codrington"
+     ],
+     "activities": [
+      "Observe de barco a maior colônia de fragatas do Caribe.",
+      "Nade ao longo de quilômetros de praia rosa e deserta.",
+      "Almoce lagosta em um restaurante local."
+     ],
+     "foodAndDrinks": [
+      "Lagosta de Barbuda",
+      "Peixe grelhado com arroz"
+     ],
+     "criticalTips": [
+      "O ferry Barbuda Express leva ~90 minutos e o mar pode estar agitado; reserve o passeio com antecedência.",
+      "Depois do furacão Irma, os serviços são limitados; leve água e dinheiro vivo."
+     ],
+     "mapsQuery": "Codrington, Barbuda"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Fungee e pepperpot (polenta de milho com ensopado de carne e legumes, prato nacional)",
+     "Ducana e saltfish (bolinho de batata-doce com bacalhau salgado)",
+     "Lagosta caribenha grelhada e peixe do dia"
+    ],
+    "drinks": [
+     "Runs English Harbour e Cavalier",
+     "Cerveja Wadadli",
+     "Ginger beer caseira e sorrel"
+    ],
+    "streetFoods": [
+     "Johnny cakes (massa frita)",
+     "Abacaxi Antigua Black (um dos mais doces do mundo)",
+     "Sugar cake (doce de coco)"
+    ],
+    "diningAdvice": "Aos domingos, na hora do almoço, os restaurantes locais servem comida caseira tradicional. Confira se a conta já inclui o serviço; a temporada de lagosta costuma ficar fechada por alguns meses no verão."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptador de tomada tipo A/B",
+     "Protetor solar seguro para corais e chapéu",
+     "Repelente contra mosquitos (dengue)",
+     "Equipamento de snorkel e sapatilhas aquáticas"
+    ],
+    "safetyAndEtiquette": [
+     "Não ande pela cidade de roupa de banho.",
+     "À noite, evite as ruas desertas de St. John’s e use táxi."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "A",
+     "B"
+    ],
+    "voltage": "230V",
+    "frequency": "60Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Tipos A e B (pinos chatos, padrão americano); 230V na maioria dos lugares e 110V em alguns hotéis. Plugues europeus precisam de adaptador; confira a voltagem aceita pelos seus aparelhos."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "A água encanada é principalmente água do mar dessalinizada e costuma ser segura nos hotéis, mas recomenda-se beber água mineral por causa de interrupções no abastecimento e de cisternas contaminadas.",
+    "vaccines": [
+     "Vacinas de rotina (tétano, difteria, tríplice viral)",
+     "Hepatite A",
+     "Febre amarela: certificado exigido só de quem chega de um país de risco",
+     "Proteção contra mosquitos por causa da dengue e da chikungunya"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "911"
+   },
+   "tipping": {
+    "custom": "Os restaurantes costumam incluir 10 % de serviço; se não incluírem, deixe 10-15 %.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Espera-se uma pequena gorjeta para taxistas, carregadores de bagagem e guias."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Não há devolução do imposto sobre vendas (ABST) para turistas",
+    "minSpend": "Não se aplica",
+    "customsNote": "Não existe sistema de reembolso; as lojas duty-free do Heritage Quay, em St. John’s, vendem sem impostos mediante apresentação do passaporte e dos dados do voo."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "~US$ 3,00 - 6,00",
+    "topCarriers": [
+     "Digicel",
+     "Flow",
+     "APUA"
+    ],
+    "airportSimTrapWarning": "Os chips turísticos do aeroporto podem sair caros; instale um eSIM antes da viagem ou compre um chip pré-pago numa loja da Digicel ou da Flow em St. John’s."
+   },
+   "touristScams": [
+    {
+     "title": "Truque da moeda",
+     "desc": "Informam o preço do táxi ou do passeio em “dólares” e, no fim, cobram em US$ em vez de EC$.",
+     "tip": "Combine o preço e a moeda antes de entrar."
+    },
+    {
+     "title": "Vendedores de passeios sem licença",
+     "desc": "Vendedores não registrados no porto de cruzeiros vendem passeios a preços inflados.",
+     "tip": "Reserve os passeios no seu hotel ou em agências licenciadas."
+    },
+    {
+     "title": "Sinal pago na praia",
+     "desc": "Vendedores de praia cobram um sinal por um passeio de barco ou jet ski e desaparecem.",
+     "tip": "Pague depois do serviço ou a uma empresa registrada."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Восточнокарибский доллар (XCD)",

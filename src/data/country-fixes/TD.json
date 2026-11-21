@@ -1427,6 +1427,363 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Franco CFA da África Central (XAF)",
+   "plugType": "C, D, E, F (220V, 50Hz)",
+   "bestMonths": "Novembro – fevereiro (seco e relativamente fresco; Zakouma de dezembro a abril)",
+   "safety": {
+    "crimeRateSummary": "Os alertas oficiais apontam risco alto: terrorismo (sobretudo no lago Chade), sequestros, confrontos armados nas áreas de fronteira e crise de refugiados na fronteira com o Sudão. O Reino Unido desaconselha qualquer viagem às regiões de fronteira e a grande parte do norte, e viagens não essenciais ao resto do país, incluindo N'Djamena.",
+    "commonScams": [
+     "'Multas' falsas ou propinas nos postos de controle",
+     "Supostos funcionários que pedem dinheiro por fotos 'proibidas'",
+     "Carregadores no aeroporto que pegam a bagagem e cobram muito caro"
+    ],
+    "safeTravelTips": [
+     "Confira os alertas oficiais antes de viajar; viaje apenas com parceiros locais que ofereçam apoio de segurança.",
+     "Nunca fotografe prédios oficiais, pontes, áreas militares ou aeroportos.",
+     "Não saia à noite nem viaje por estrada fora da cidade à noite."
+    ],
+    "emergencyNumbers": {
+     "police": "17",
+     "ambulance": "18",
+     "general": "17"
+    },
+    "safetyScore": 40,
+    "safetyLevel": "Cautela recomendada",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60"
+   },
+   "internet": {
+    "networkCoverage": "3G/4G em N'Djamena e nas cidades grandes; cobertura muito fraca ou inexistente no interior e no deserto. Já houve bloqueios de internet.",
+    "costPerGbUsd": "~US$ 3 - 8",
+    "esimAvailability": "Muito limitada (eSIMs de roaming caras)",
+    "bestCarriers": [
+     "Airtel Tchad",
+     "Moov Africa Tchad"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Precário",
+    "costLevel": "Caro (para visitantes)",
+    "singleTicketUsd": "US$ 0,50 - 2",
+    "dailyPassUsd": "Sem passe; carro com motorista 80 - 150 $/dia",
+    "popularRideApps": [
+     "Carro com motorista do hotel",
+     "Táxis amarelos urbanos",
+     "4x4 alugado com motorista"
+    ],
+    "taxiAdvice": "Não há apps de transporte. Os táxis compartilhados e os mototáxis 'clando' são baratos, mas inseguros; para estrangeiros, o certo é usar um motorista de confiança do hotel."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 50 - 80",
+    "dailyBudgetMidrangeUsd": "US$ 150 - 250",
+    "budgetMealUsd": "US$ 4 - 10",
+    "coffeeUsd": "US$ 1,50 - 4",
+    "waterBottleUsd": "US$ 0,60 - 1,50",
+    "hostelDormUsd": "Sem albergues; pousada simples 25 - 45 $",
+    "hotel3StarUsd": "US$ 100 - 180",
+    "flightCostIndex": "Alto",
+    "flightTip": "Os voos para N'Djamena (NDJ) são poucos e caros; compare conexões via Istambul, Paris, Adis Abeba e norte da África. Até Zakouma, normalmente se vai de voo fretado."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Espera-se que os cumprimentos sejam longos; perguntar pela família e pela saúde é sinal de cortesia.",
+     "Use a mão direita para comer e entregar coisas.",
+     "Vista-se de forma discreta; as mulheres devem cobrir ombros e pernas.",
+     "Não fotografe pessoas nem locais oficiais sem permissão."
+    ],
+    "festivals": [
+     "Eid al-Fitr e Eid al-Adha",
+     "Gerewol (encontro dos nômades wodaabe depois das chuvas)",
+     "Dia da Independência – 11 de agosto"
+    ],
+    "lifestyle": "Mais de 200 etnias e línguas, com culturas de pastoreio nômade e agricultura entre o Saara e o Sahel. A hospitalidade e o chá doce são muito importantes."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Parque Nacional de Zakouma (elefantes e leões)",
+     "Planalto de Ennedi – UNESCO (arco de Aloba, Guelta d'Archei)",
+     "Lagos de Ounianga – UNESCO",
+     "Museu Nacional do Chade (N'Djamena)",
+     "Grande Mercado e Grande Mesquita de N'Djamena",
+     "Vila de Gaoui (herança sao, casas de adobe pintadas)"
+    ],
+    "bestSeasons": "Novembro – fevereiro (seco e relativamente fresco; Zakouma de dezembro a abril)",
+    "travelStyleTip": "O Chade não é um destino para viajar por conta própria. Zakouma (administrado pela African Parks) e Ennedi devem ser visitados com operadores especializados que cuidem de licenças e segurança; partes do norte têm alerta de não viajar."
+   },
+   "religion": {
+    "primaryReligions": "Muçulmanos (~55 %, sobretudo sunitas), cristãos (~40 %; católicos e protestantes), crenças tradicionais",
+    "respectNorms": "O norte e o leste são mais conservadores; evite comer em público durante o Ramadã e entre nas mesquitas com roupa discreta e com permissão.",
+    "sacredSites": [
+     "Mesquita Rei Faisal (Grande Mesquita de N'Djamena)",
+     "Catedral de Notre-Dame de la Paix, N'Djamena",
+     "Arte rupestre pré-histórica do Ennedi"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Francês e árabe (muito falado: árabe chadiano); sara e mais de 100 línguas locais",
+    "englishProficiency": "Muito baixo; saber francês ou árabe faz toda a diferença.",
+    "phrases": [
+     {
+      "phrase": "السلام عليكم (as-salām ʿalēkum)",
+      "meaning": "Olá (a paz esteja com você)",
+      "translation": "Olá (a paz esteja com você)",
+      "pronunciation": "as-sa-LAAM a-LEY-kum"
+     },
+     {
+      "phrase": "شكراً (shukran)",
+      "meaning": "Obrigado(a)",
+      "translation": "Obrigado(a)",
+      "pronunciation": "SHUK-ran"
+     },
+     {
+      "phrase": "بكم؟ (be kam?)",
+      "meaning": "Quanto?",
+      "translation": "Quanto?",
+      "pronunciation": "be KAM"
+     },
+     {
+      "phrase": "S'il vous plaît",
+      "meaning": "Por favor",
+      "translation": "Por favor",
+      "pronunciation": "sil vu PLE"
+     },
+     {
+      "phrase": "Ça va ?",
+      "meaning": "Tudo bem?",
+      "translation": "Tudo bem?",
+      "pronunciation": "sa VA"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "A bacia do lago Chade guarda alguns dos vestígios humanos mais antigos (o fóssil 'Toumaï', de 7 milhões de anos, encontrado em 2001). À civilização sao seguiram-se o Império Kanem-Bornu e os sultanatos de Baguirmi e Uadai. Colônia francesa desde 1900, o Chade se tornou independente em 11 de agosto de 1960; depois vieram décadas de guerra civil e instabilidade. Desde 2003, o petróleo é o pilar da economia.",
+    "milestones": [
+     "Séculos IX–XIX – Império Kanem-Bornu",
+     "1900 – Batalha de Kousséri e domínio francês",
+     "11 de agosto de 1960 – Independência",
+     "2003 – Começam as exportações de petróleo"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Boule (massa de milheto ou sorgo com molho de quiabo ou de amendoim)",
+     "Daraba (ensopado de quiabo, tomate e pasta de amendoim)",
+     "Kisra (panqueca fina de sorgo) com ensopado"
+    ],
+    "traditionalDrinks": [
+     "Karkanji (bebida gelada de hibisco)",
+     "Chá verde doce (tradição dos três copos)",
+     "Bili-bili (cerveja de sorgo, no sul)"
+    ],
+    "streetFoodAndDesserts": [
+     "Espetinhos de carne grelhada",
+     "Bolinhos fritos (beignets)",
+     "Tâmaras frescas e amendoim torrado"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Mahamat-Saleh Haroun (cineasta premiado em Cannes)",
+     "Japhet N'Doram (jogador de futebol, lenda do FC Nantes)",
+     "Kaltouma Nadjina (velocista campeã africana)"
+    ],
+    "strongSectors": [
+     "Petróleo",
+     "Pecuária (bovinos e camelos)",
+     "Algodão e goma-arábica"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "O dinheiro vivo manda; cartões só funcionam em poucos hotéis grandes, e há poucos caixas eletrônicos. Leve euros e troque em banco (o franco CFA é atrelado ao euro).",
+    "economicPillars": "Exportação de petróleo, pecuária, algodão, goma-arábica e agricultura de subsistência.",
+    "tippingCulture": "A gorjeta não é obrigatória; 5-10 % nos restaurantes de hotel e uma pequena gorjeta diária para motoristas e guias são bem-vindos."
+   }
+  },
+  "itin": {
+   "routeName": "Expedição ao Chade: N'Djamena, Zakouma e Ennedi (tour organizado)",
+   "routeSummary": "Roteiro de 9 dias, possível apenas com um operador especializado: breve parada cultural na capital, N'Djamena, safári entre manadas de elefantes em Zakouma e, se as licenças e a segurança permitirem, os arcos de arenito do planalto de Ennedi. Confira sempre os alertas de segurança.",
+   "totalDays": 9,
+   "idealDurationText": "Expedição organizada de 8-10 dias",
+   "bestSeason": "Novembro – fevereiro (seco e relativamente fresco; Zakouma de dezembro a abril)",
+   "transportMode": "Voos fretados e 4x4 com motorista (apenas tour organizado)",
+   "paceLevel": "Aventura (safári e deserto)",
+   "stops": [
+    {
+     "name": "Parada 1: N'Djamena (capital e rio Chari)",
+     "recommendedDuration": "1-2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Museu Nacional do Chade (réplica de Toumaï)",
+      "Grande Mercado",
+      "Mesquita Rei Faisal",
+      "Vila de Gaoui"
+     ],
+     "activities": [
+      "Visite com guia as casas pintadas e os ceramistas de Gaoui.",
+      "Admire o pôr do sol sobre o rio Chari do terraço de um hotel.",
+      "Veja tecidos e artigos de couro no mercado (com guia)."
+     ],
+     "foodAndDrinks": [
+      "Peixe de rio grelhado (capitaine / perca-do-nilo)",
+      "Boule com molho de quiabo",
+      "Karkanji"
+     ],
+     "criticalTips": [
+      "Nunca fotografe pontes, o palácio presidencial nem áreas militares.",
+      "Desloque-se apenas em veículos do hotel e não saia à noite."
+     ],
+     "mapsQuery": "N'Djamena, Chad",
+     "stopNumber": 1
+    },
+    {
+     "name": "Parada 2: Parque Nacional de Zakouma (safári)",
+     "recommendedDuration": "3-4 dias",
+     "durationBadge": "4 dias",
+     "highlights": [
+      "Manadas de centenas de elefantes",
+      "Girafas-do-cordofão e leões",
+      "Milhares de aves nas lagoas da estação seca"
+     ],
+     "activities": [
+      "Faça safáris de manhã e à tarde a partir do acampamento Tinga.",
+      "Faça um safári a pé com guarda-parques.",
+      "Conheça o trabalho de conservação da African Parks."
+     ],
+     "foodAndDrinks": [
+      "Pensão completa no acampamento",
+      "Chá doce e café"
+     ],
+     "criticalTips": [
+      "O parque costuma fechar na estação chuvosa (aprox. junho – outubro); confirme as datas com o operador.",
+      "De março a maio a temperatura passa dos 40 °C; água em abundância e chapéu são indispensáveis."
+     ],
+     "mapsQuery": "Zakouma National Park, Chad",
+     "stopNumber": 2
+    },
+    {
+     "name": "Parada 3: Planalto de Ennedi (arcos do deserto)",
+     "recommendedDuration": "3 dias",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Arco de Aloba",
+      "Guelta d'Archei (camelos e poço no deserto)",
+      "Arte rupestre e cânions de arenito"
+     ],
+     "activities": [
+      "Percorra arcos e cânions de 4x4.",
+      "Veja os camelos descendo para beber na guelta ao amanhecer.",
+      "Acampe sob as estrelas no deserto."
+     ],
+     "foodAndDrinks": [
+      "Pão assado nas brasas (taguella) e ensopado",
+      "Os três copos de chá"
+     ],
+     "criticalTips": [
+      "Partes do norte do Chade têm alerta de não viajar; verifique a situação e as licenças com seu operador.",
+      "Nunca entre no deserto sem comboio de pelo menos dois veículos, telefone via satélite e água de reserva."
+     ],
+     "mapsQuery": "Ennedi Plateau, Chad",
+     "stopNumber": 3
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Boule",
+     "Daraba",
+     "Kisra"
+    ],
+    "drinks": [
+     "Karkanji",
+     "Chá verde doce",
+     "Bili-bili"
+    ],
+    "streetFoods": [
+     "Espetinhos de carne",
+     "Beignets"
+    ],
+    "diningAdvice": "Prefira restaurantes de hotel e comida quente e bem cozida à comida de rua; come-se com a mão direita, de um prato coletivo."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Certificado de vacinação contra febre amarela (obrigatório)",
+     "Antimaláricos, repelente e kit de primeiros socorros",
+     "Euros em espécie suficientes",
+     "Lenço ou máscara contra a poeira, óculos de sol e chapéu"
+    ],
+    "safetyAndEtiquette": [
+     "Acompanhe constantemente os alertas oficiais e faça seu registro na embaixada do seu país.",
+     "Vista-se de forma discreta e sempre peça permissão antes de fotografar."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "D",
+     "E",
+     "F"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Principalmente tomadas europeias de dois pinos (C/E/F); em prédios antigos pode haver tipo D. As quedas de energia são frequentes: leve um carregador portátil."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Não beba água da torneira; só água mineral lacrada. Evite gelo e verduras cruas.",
+    "vaccines": [
+     "Febre amarela (certificado obrigatório para entrar)",
+     "Meningite (ACWY) – cinturão da meningite",
+     "Hepatite A, febre tifoide e raiva",
+     "Profilaxia contra malária (todo o país)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "18"
+   },
+   "tipping": {
+    "custom": "A gorjeta não é obrigatória; uma pequena gorjeta em hotéis e restaurantes é bem-vinda.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "No fim do tour, é comum dar uma gorjeta conjunta para guias, motoristas e equipe do acampamento."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Não há devolução de IVA para turistas",
+    "minSpend": "—",
+    "customsNote": "O Chade não tem sistema tax-free. É proibido exportar marfim, produtos da fauna ou antiguidades (fósseis, ferramentas de pedra)."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "US$ 3 - 8",
+    "topCarriers": [
+     "Airtel Tchad",
+     "Moov Africa Tchad"
+    ],
+    "airportSimTrapWarning": "As opções de eSIM são muito limitadas; compre um chip da Airtel ou da Moov em loja, com seu passaporte. Em áreas remotas não há sinal; os tours levam telefone via satélite."
+   },
+   "touristScams": [
+    {
+     "title": "Propinas em postos de controle",
+     "desc": "Policiais ou soldados podem dizer que faltam documentos e pedir dinheiro.",
+     "tip": "Leve cópias do passaporte e as licenças do operador, mantenha a calma e deixe o motorista falar."
+    },
+    {
+     "title": "'Multas por fotos'",
+     "desc": "Acusações de ter fotografado um local proibido, com confisco do equipamento ou pedido de dinheiro.",
+     "tip": "Na cidade, fotografe apenas onde o guia autorizar."
+    },
+    {
+     "title": "Carregadores do aeroporto",
+     "desc": "Pessoas que pegam sua bagagem sem você pedir e exigem muito dinheiro.",
+     "tip": "Peça traslado ao hotel ou ao operador e carregue você mesmo a sua bagagem."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Центральноафриканский франк КФА (XAF)",

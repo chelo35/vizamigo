@@ -217,6 +217,48 @@ export const GUIDE_LABELS: Record<string, Record<string, { t: string; d: string 
    "d": "Los ciudadanos turcos pueden visitar 12 islas griegas con un visado exprés: hasta 7 días,…"
   }
  },
+ "pt": {
+  "canada_eta_mx": {
+   "t": "eTA do Canadá para mexicanos",
+   "d": "Quem pode usar a eTA de 7 CAD e quando você precisa de visto."
+  },
+  "schengen_latam": {
+   "t": "Schengen para latino-americanos",
+   "d": "Quem entra na Europa sem visto, visto de 90 € e ETIAS."
+  },
+  "us_visa": {
+   "t": "Visto americano 2026",
+   "d": "Custo de 185 USD, DS-160, agendamento no CASV e no consulado, entrevista e renovação sem entrevista."
+  },
+  "id_card_travel": {
+   "t": "Viajar com documento de identidade",
+   "d": "Países que aceitam o documento de identidade no lugar do passaporte, com condições."
+  },
+  "visa_free_tr": {
+   "t": "Sem visto com passaporte turco",
+   "d": "Países sem visto, com documento de identidade, com visto na chegada ou com eVisa para cidadãos turcos."
+  },
+  "schengen_documents": {
+   "t": "Documentos do visto Schengen",
+   "d": "Documentos para o visto Schengen: listas para empregados, empresários, estudantes,…"
+  },
+  "etias": {
+   "t": "ETIAS",
+   "d": "O ETIAS ainda não começou e não tem data: taxa de 20 €, validade de 3 anos e quem vai precisar dele."
+  },
+  "uk_eta": {
+   "t": "ETA do Reino Unido",
+   "d": "A ETA britânica é obrigatória desde 25 de fevereiro de 2026. Custa 20 £, vale por 2 anos…"
+  },
+  "esta": {
+   "t": "ESTA dos EUA",
+   "d": "O ESTA para os 42 países do Programa de Isenção de Visto: cerca de US$ 40, válido por 2 anos,…"
+  },
+  "greek_islands_visa": {
+   "t": "Visto expresso para as ilhas gregas",
+   "d": "Cidadãos turcos podem visitar 12 ilhas gregas com um visto expresso: até 7 dias,…"
+  }
+ },
  "ru": {
   "egypt_visa_ru": {
    "t": "Египет для россиян",

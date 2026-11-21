@@ -86,7 +86,7 @@ export const FareCalendar: React.FC<{
 
   return (
     <section className="vz-card vz-fcal">
-      <h3><Icon name="cal" size={18} /> {mode === 'ow' ? l('Ucuz tarih takvimi · tek yön', 'Cheapest dates · one way', 'Günstigste Termine · einfach', 'Fechas más baratas · solo ida', 'Дешёвые даты · в одну сторону') : mode === 'any' ? l('Ucuz tarih takvimi · süre esnek', 'Cheapest dates · any length', 'Günstigste Termine · flexibel', 'Fechas más baratas · flexible', 'Дешёвые даты · любой срок') : l(`Ucuz tarih takvimi · ${len} gece`, `Cheapest dates · ${len} nights`, `Günstigste Termine · ${len} Nächte`, `Fechas más baratas · ${len} noches`, `Дешёвые даты · ${len} ноч.`)}</h3>
+      <h3><Icon name="cal" size={18} /> {mode === 'ow' ? l('Ucuz tarih takvimi · tek yön', 'Cheapest dates · one way', 'Günstigste Termine · einfach', 'Fechas más baratas · solo ida', 'Дешёвые даты · в одну сторону', 'Datas mais baratas · só ida') : mode === 'any' ? l('Ucuz tarih takvimi · süre esnek', 'Cheapest dates · any length', 'Günstigste Termine · flexibel', 'Fechas más baratas · flexible', 'Дешёвые даты · любой срок', 'Datas mais baratas · flexível') : l(`Ucuz tarih takvimi · ${len} gece`, `Cheapest dates · ${len} nights`, `Günstigste Termine · ${len} Nächte`, `Fechas más baratas · ${len} noches`, `Дешёвые даты · ${len} ноч.`, `Datas mais baratas · ${len} noites`)}</h3>
       <div className="vz-fcal-months" role="tablist">
         {months.map((m) => {
           const b = best(m);
@@ -104,7 +104,7 @@ export const FareCalendar: React.FC<{
           <div className="vz-fcal-pick" aria-live="polite">
             <span>{new Date(`${dep}T12:00:00`).toLocaleDateString(loc, { day: 'numeric', month: 'short' })}{sx.ret ? ` → ${new Date(`${sx.ret}T12:00:00`).toLocaleDateString(loc, { day: 'numeric', month: 'short' })}` : ''}</span>
             <b>{money(sx.price, res!.currency)}</b>
-            <small>{l('kişi başı', 'per person', 'pro Person', 'por persona', 'на человека')}</small>
+            <small>{l('kişi başı', 'per person', 'pro Person', 'por persona', 'на человека', 'por pessoa')}</small>
           </div>
         ) : null;
       })()}
@@ -134,10 +134,10 @@ export const FareCalendar: React.FC<{
       </div>
       <p className="vz-qd-foot">
         {res === undefined
-          ? l('Fiyatlar yükleniyor…', 'Loading fares…', 'Preise werden geladen…', 'Cargando tarifas…', 'Загружаем цены…')
+          ? l('Fiyatlar yükleniyor…', 'Loading fares…', 'Preise werden geladen…', 'Cargando tarifas…', 'Загружаем цены…', 'Carregando tarifas…')
           : prices.length
-            ? l(mode === 'ow' ? 'Kişi başı tek yön, son günlerde Aviasales\'te bulunan en düşük fiyatlar. Bir güne dokun, tarih ayarlansın.' : 'Kişi başı gidiş-dönüş, son günlerde Aviasales\'te bulunan en düşük fiyatlar. Bir güne dokun, tarihler ayarlansın.', 'Per person, round trip; lowest fares seen on Aviasales recently. Tap a day to set your dates.', 'Pro Person, hin & zurück; zuletzt gefundene Tiefstpreise. Tag antippen.', 'Por persona, ida y vuelta; tarifas más bajas recientes. Toca un día.', 'На человека, туда-обратно; минимальные цены. Нажмите на день.')
-            : l('Bu ay için kayıtlı fiyat yok; başka bir ay ya da kalış süresi dene.', 'No saved fares this month; try another month or trip length.', 'Keine Preise in diesem Monat.', 'Sin tarifas este mes.', 'Нет цен в этом месяце.')}
+            ? l(mode === 'ow' ? 'Kişi başı tek yön, son günlerde Aviasales\'te bulunan en düşük fiyatlar. Bir güne dokun, tarih ayarlansın.' : 'Kişi başı gidiş-dönüş, son günlerde Aviasales\'te bulunan en düşük fiyatlar. Bir güne dokun, tarihler ayarlansın.', 'Per person, round trip; lowest fares seen on Aviasales recently. Tap a day to set your dates.', 'Pro Person, hin & zurück; zuletzt gefundene Tiefstpreise. Tag antippen.', 'Por persona, ida y vuelta; tarifas más bajas recientes. Toca un día.', 'На человека, туда-обратно; минимальные цены. Нажмите на день.', 'Por pessoa, ida e volta; tarifas mais baixas recentes. Toque em um dia.')
+            : l('Bu ay için kayıtlı fiyat yok; başka bir ay ya da kalış süresi dene.', 'No saved fares this month; try another month or trip length.', 'Keine Preise in diesem Monat.', 'Sin tarifas este mes.', 'Нет цен в этом месяце.', 'Sem tarifas neste mês.')}
       </p>
     </section>
   );

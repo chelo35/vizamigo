@@ -52,32 +52,32 @@ export const Navigation: React.FC<NavigationProps> = ({
   }> = [
     {
       key: 'explore',
-      label: l('Keşfet & Pano', 'Explore & Dashboard', 'Entdecken', 'Explorar', 'Обзор'),
-      shortLabel: l('Keşfet', 'Explore', 'Entdecken', 'Explorar', 'Обзор'),
+      label: l('Keşfet & Pano', 'Explore & Dashboard', 'Entdecken', 'Explorar', 'Обзор', 'Explorar'),
+      shortLabel: l('Keşfet', 'Explore', 'Entdecken', 'Explorar', 'Обзор', 'Explorar'),
       icon: Compass
     },
     {
       key: 'plan',
-      label: l('Rota & Sinerji', 'Route & Synergy', 'Routenplaner', 'Ruta', 'Маршрут'),
-      shortLabel: l('Rota', 'Route', 'Route', 'Ruta', 'Маршрут'),
+      label: l('Rota & Sinerji', 'Route & Synergy', 'Routenplaner', 'Ruta', 'Маршрут', 'Roteiro'),
+      shortLabel: l('Rota', 'Route', 'Route', 'Ruta', 'Маршрут', 'Roteiro'),
       icon: Route
     },
     {
       key: 'nomad',
-      label: l('Gezgin Araçları', 'Traveler Tools', 'Werkzeuge', 'Herramientas', 'Инструменты'),
-      shortLabel: l('Araçlar', 'Tools', 'Tools', 'Herramientas', 'Инструм.'),
+      label: l('Gezgin Araçları', 'Traveler Tools', 'Werkzeuge', 'Herramientas', 'Инструменты', 'Ferramentas'),
+      shortLabel: l('Araçlar', 'Tools', 'Tools', 'Herramientas', 'Инструм.', 'Ferramentas'),
       icon: Wrench
     },
     {
       key: 'track',
-      label: l('Cüzdan & Gün Sayacı', 'Wallet & Day Counter', 'Wallet & Tage', 'Cartera', 'Кошелек'),
-      shortLabel: l('Cüzdan', 'Wallet', 'Wallet', 'Cartera', 'Кошелек'),
+      label: l('Cüzdan & Gün Sayacı', 'Wallet & Day Counter', 'Wallet & Tage', 'Cartera', 'Кошелек', 'Carteira'),
+      shortLabel: l('Cüzdan', 'Wallet', 'Wallet', 'Cartera', 'Кошелек', 'Carteira'),
       icon: Wallet
     },
     {
       key: 'profile',
-      label: l('Profil & Acil Yardım', 'Profile & SOS', 'Profil & SOS', 'Perfil', 'Профиль'),
-      shortLabel: l('Profil', 'Profile', 'Profil', 'Perfil', 'Профиль'),
+      label: l('Profil & Acil Yardım', 'Profile & SOS', 'Profil & SOS', 'Perfil', 'Профиль', 'Perfil'),
+      shortLabel: l('Profil', 'Profile', 'Profil', 'Perfil', 'Профиль', 'Perfil'),
       icon: User
     }
   ];
@@ -170,7 +170,7 @@ export const Navigation: React.FC<NavigationProps> = ({
               {/* Quick Tools */}
               <div>
                 <div className="text-xs font-extrabold uppercase tracking-wider text-[#0F766E] dark:text-[#2DD4BF] mb-2 px-1">
-                  {l('Hızlı Araçlar', 'Quick Tools', 'Schnelle Tools', 'Herramientas rápidas', 'Быстрые инструменты')}
+                  {l('Hızlı Araçlar', 'Quick Tools', 'Schnelle Tools', 'Herramientas rápidas', 'Быстрые инструменты', 'Ferramentas rápidas')}
                 </div>
                 <div className="grid grid-cols-2 gap-2">
                   {quickTools.map((tool) => {

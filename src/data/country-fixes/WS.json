@@ -1411,6 +1411,359 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Tala samoano (WST)",
+   "plugType": "Tipo I (230V, 50Hz)",
+   "bestMonths": "Maio a outubro (estação seca; de novembro a abril, chuvas e ciclones)",
+   "safety": {
+    "crimeRateSummary": "A criminalidade é baixa e a violência contra turistas é rara; tirando pequenos furtos e cães de rua, os riscos são ciclones e tsunamis.",
+    "commonScams": [
+     "Preços inflacionados em táxis sem valor combinado antes",
+     "Mais de uma pessoa cobrando a taxa da aldeia (custom fee) em praias e atrações naturais",
+     "Furto de pertences deixados sozinhos na praia"
+    ],
+    "safeTravelTips": [
+     "Durante o toque de oração do fim da tarde (sa), normalmente das 18h às 19h, fique em silêncio e não caminhe pelas aldeias.",
+     "Algumas aldeias proíbem nadar e fazer barulho aos domingos; pergunte antes.",
+     "Não nade além do recife por causa das correntes; aqui se dirige pela esquerda."
+    ],
+    "safetyScore": 65,
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "4G em quase toda Upolu e Savai'i; sinal fraco em alguns pontos",
+    "costPerGbUsd": "US$ 1,50 - 4",
+    "esimAvailability": "Limitada (eSIMs internacionais)",
+    "bestCarriers": [
+     "Digicel Samoa",
+     "Vodafone Samoa"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Básico (ônibus coloridos de madeira, táxis e balsa)",
+    "costLevel": "Barato",
+    "singleTicketUsd": "US$ 0,40 - 2,50",
+    "dailyPassUsd": "Não disponível",
+    "popularRideApps": [
+     "Não há apps de transporte",
+     "Táxis (combine o preço)",
+     "Ônibus locais",
+     "Balsa da Samoa Shipping Corporation"
+    ],
+    "taxiAdvice": "Não há apps de transporte; os táxis não têm taxímetro, então combine o preço antes. Os ônibus de madeira saem do mercado de Apia, sem horário fixo, e quase não circulam aos domingos."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 40 - 70",
+    "dailyBudgetMidrangeUsd": "US$ 100 - 180",
+    "budgetMealUsd": "US$ 6 - 12",
+    "coffeeUsd": "US$ 2,50 - 4",
+    "waterBottleUsd": "US$ 1 - 2",
+    "hostelDormUsd": "US$ 35 - 60 (fale de praia com café da manhã e jantar)",
+    "hotel3StarUsd": "US$ 80 - 150",
+    "flightCostIndex": "Alto",
+    "flightTip": "Chega-se a Faleolo (APW) via Auckland, Brisbane, Sydney ou Nadi (Fiji); Samoa fica a oeste da Linha Internacional de Data, então fique de olho na diferença de fuso."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Tire os sapatos ao entrar em um fale (casa tradicional) e sente-se de pernas cruzadas; não aponte os pés para ninguém.",
+     "Não use roupa de banho nas aldeias; homens e mulheres devem cobrir ombros e joelhos, por exemplo com um ie lavalava (canga).",
+     "Não coma andando pela aldeia e passe em silêncio diante da casa do chefe (matai)."
+    ],
+    "festivals": [
+     "Festival Teuila (início de setembro, Apia)",
+     "Comemorações da independência (por volta de 1º de junho)",
+     "Domingo Branco – Lotu Tamaiti (segundo domingo de outubro, dia das crianças)"
+    ],
+    "lifestyle": "A vida segue o fa'a Samoa (o jeito samoano): a família estendida (aiga), os chefes (matai), a igreja e o banquete de domingo (to'ona'i)."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Fossa oceânica To Sua (Upolu)",
+     "Praia de Lalomanu",
+     "Museu Robert Louis Stevenson (Vailima)",
+     "Gêiseres marinhos de Alofaaga (Savai'i)",
+     "Campos de lava de Saleaula (Savai'i)",
+     "Tobogãs naturais de Papase'ea"
+    ],
+    "bestSeasons": "Maio a outubro (estação seca; de novembro a abril, chuvas e ciclones)",
+    "travelStyleTip": "Alugue um carro em Upolu, durma em fales de praia na costa sul e depois pegue a balsa para Savai'i, tranquila e tradicional."
+   },
+   "religion": {
+    "primaryReligions": "Cristãos ~97% (congregacionalistas ~27%, católicos ~19%, mórmons ~17%, metodistas ~12% e outros)",
+    "respectNorms": "O domingo é sagrado: vai-se à igreja de branco e espera-se silêncio nas aldeias. Peça permissão para fotografar durante os cultos.",
+    "sacredSites": [
+     "Catedral da Imaculada Conceição (Apia)",
+     "Casa de Adoração bahá'í (Tiapapata)",
+     "Templo de Apia (Santos dos Últimos Dias)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Samoano e inglês (oficiais).",
+    "englishProficiency": "Bom em Apia e nas áreas turísticas; nas aldeias predomina o samoano.",
+    "phrases": [
+     {
+      "phrase": "Talofa lava",
+      "meaning": "Olá (cumprimento formal)",
+      "translation": "Olá (cumprimento formal)",
+      "pronunciation": "ta-LO-fa LA-va"
+     },
+     {
+      "phrase": "Fa'afetai tele lava",
+      "meaning": "Muito obrigado",
+      "translation": "Muito obrigado",
+      "pronunciation": "fa-a-fe-TAI TE-le LA-va"
+     },
+     {
+      "phrase": "E fia le tau?",
+      "meaning": "Quanto custa?",
+      "translation": "Quanto custa?",
+      "pronunciation": "eh FEE-a le TAU"
+     },
+     {
+      "phrase": "Manuia!",
+      "meaning": "Saúde! / Boa sorte!",
+      "translation": "Saúde! / Boa sorte!",
+      "pronunciation": "ma-nu-EE-a"
+     },
+     {
+      "phrase": "Tōfā soifua",
+      "meaning": "Tchau / Adeus",
+      "translation": "Tchau / Adeus",
+      "pronunciation": "TOH-fah soy-FU-a"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Povoada há cerca de 3.000 anos, Samoa é um dos berços da cultura polinésia. Os missionários chegaram em 1830; as ilhas ocidentais viraram Samoa Alemã em 1900 e passaram ao controle da Nova Zelândia em 1914. Depois do movimento Mau, em 1962 Samoa se tornou o primeiro país do Pacífico a conquistar a independência.",
+    "milestones": [
+     "1900: Samoa Alemã",
+     "1914: administração neozelandesa",
+     "1962: independência (1º de janeiro)",
+     "2011: mudança para o oeste da Linha de Data (o dia 30 de dezembro foi pulado)"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Oka (peixe cru no creme de coco)",
+     "Palusami (folhas de taro com creme de coco assadas no umu)",
+     "Sapasui (chop suey samoano)"
+    ],
+    "traditionalDrinks": [
+     "Koko Samoa (bebida local de cacau)",
+     "Cerveja Vailima",
+     "'Ava (kava, em cerimônias)"
+    ],
+    "streetFoodAndDesserts": [
+     "Pani popo (pãezinhos com calda de coco)",
+     "Koko alaisa (arroz com cacau)",
+     "Fa'ausi (taro com calda de coco caramelizada)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Tupua Tamasese Lealofi III (líder do movimento Mau)",
+     "Albert Wendt (escritor)",
+     "Robert Louis Stevenson (“Tusitala”; passou seus últimos anos em Samoa)"
+    ],
+    "strongSectors": [
+     "Turismo",
+     "Agricultura e pesca (coco, taro, noni)",
+     "Remessas da diáspora"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Em Apia, hotéis e restaurantes aceitam cartão; leve tala em dinheiro para taxas de aldeia, mercados, ônibus e fales. Há caixas eletrônicos em Apia e Salelologa.",
+    "tippingCulture": "Gorjeta não é costume e insistir pode causar constrangimento; prefira fazer uma doação à aldeia.",
+    "economicPillars": "Turismo, remessas, agricultura e pesca, indústria de pequena escala."
+   }
+  },
+  "itin": {
+   "routeName": "Fa'a Samoa: Apia, praias de Upolu e Savai'i",
+   "routeSummary": "Roteiro de 7 dias que sai das atrações de Apia, passa pelas águas azul-turquesa de To Sua e Lalomanu e segue de balsa até Savai'i, com seus campos de lava e gêiseres marinhos.",
+   "totalDays": 7,
+   "idealDurationText": "Roteiro de 7 dias",
+   "bestSeason": "Maio a outubro (estação seca; de novembro a abril, chuvas e ciclones)",
+   "transportMode": "Carro alugado (mão inglesa) + balsa Mulifanua – Salelologa",
+   "paceLevel": "Tranquilo (praia + cultura)",
+   "stops": [
+    {
+     "name": "Parada 1: Apia e norte de Upolu",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Museu Robert Louis Stevenson",
+      "Mercado de Fugalei e mercado de peixe",
+      "Tobogãs de Papase'ea",
+      "Reserva marinha Palolo Deep"
+     ],
+     "activities": [
+      "Suba o monte Vaea até o túmulo de Stevenson.",
+      "Faça snorkel direto da margem em Palolo Deep.",
+      "Assista a um fiafia (dança tradicional e show com fogo) numa sexta à noite."
+     ],
+     "foodAndDrinks": [
+      "Oka (peixe cru no creme de coco)",
+      "Pani popo (pãezinhos com calda de coco)",
+      "Cerveja Vailima"
+     ],
+     "criticalTips": [
+      "Aos domingos quase tudo fecha em Apia; faça as compras no sábado.",
+      "Para alugar carro é preciso uma permissão temporária local, que a locadora providencia."
+     ],
+     "mapsQuery": "Apia, Upolu, Samoa",
+     "stopNumber": 1
+    },
+    {
+     "name": "Parada 2: Sul e leste de Upolu",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Fossa To Sua",
+      "Praia de Lalomanu",
+      "Piscina da caverna de Piula",
+      "Cachoeira Sopoaga"
+     ],
+     "activities": [
+      "Desça a escada de To Sua e nade na piscina natural.",
+      "Durma em um fale de praia em Lalomanu.",
+      "Refresque-se na piscina de água doce de Piula."
+     ],
+     "foodAndDrinks": [
+      "Palusami (folhas de taro com creme de coco assadas no umu)",
+      "Koko Samoa (bebida local de cacau)"
+     ],
+     "criticalTips": [
+      "As taxas (custom fee) são pagas em tala, em dinheiro.",
+      "Esta costa foi atingida pelo tsunami de 2009; conheça as placas de evacuação."
+     ],
+     "mapsQuery": "To Sua Ocean Trench, Lotofaga, Samoa",
+     "stopNumber": 2
+    },
+    {
+     "name": "Parada 3: Savai'i",
+     "recommendedDuration": "3 dias",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Gêiseres marinhos de Alofaaga",
+      "Campos de lava de Saleaula e igreja soterrada",
+      "Cachoeira Afu Aau",
+      "Montículo de Pulemelei (maior estrutura antiga da Polinésia)"
+     ],
+     "activities": [
+      "Pegue a balsa de Mulifanua para Salelologa (~1 hora).",
+      "Veja os gêiseres marinhos lançarem cocos para o alto.",
+      "Faça a caminhada pelas copas das árvores em Falealupo."
+     ],
+     "foodAndDrinks": [
+      "Banquete do umu (to'ona'i de domingo)",
+      "Koko alaisa (arroz com cacau)"
+     ],
+     "criticalTips": [
+      "Em Savai'i há poucos caixas eletrônicos e postos de gasolina; prepare-se em Salelologa.",
+      "Confira os horários da balsa e chegue cedo se for levar o carro."
+     ],
+     "mapsQuery": "Salelologa, Savai'i, Samoa",
+     "stopNumber": 3
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Oka (peixe cru no creme de coco)",
+     "Palusami (folhas de taro com creme de coco assadas no umu)",
+     "Sapasui (chop suey samoano)"
+    ],
+    "drinks": [
+     "Koko Samoa (bebida local de cacau)",
+     "Cerveja Vailima",
+     "'Ava (kava, em cerimônias)"
+    ],
+    "streetFoods": [
+     "Pani popo (pãezinhos com calda de coco)",
+     "Koko alaisa (arroz com cacau)",
+     "Fa'ausi (taro com calda de coco caramelizada)"
+    ],
+    "diningAdvice": "Não perca um to'ona'i de domingo saído direto do umu; nos fales de praia as refeições costumam estar incluídas."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptador tipo I",
+     "Um ie lavalava (canga) para as aldeias",
+     "Repelente e protetor solar",
+     "Sapatilhas aquáticas para recifes e pedras"
+    ],
+    "safetyAndEtiquette": [
+     "Durante o toque de oração do fim da tarde (sa), normalmente das 18h às 19h, fique em silêncio e não caminhe pelas aldeias.",
+     "Não use roupa de banho nas aldeias; homens e mulheres devem cobrir ombros e joelhos, por exemplo com um ie lavalava (canga).",
+     "Não nade além do recife por causa das correntes; aqui se dirige pela esquerda."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "I"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Tomada tipo I australiana/neozelandesa, com dois pinos chatos em V."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "A água encanada de Apia é tratada, mas a qualidade varia, sobretudo depois de chuvas; beba água mineral ou fervida.",
+    "vaccines": [
+     "Hepatite A e febre tifoide",
+     "Vacinas de rotina (incluindo sarampo)",
+     "Proteção contra a dengue (não há malária)",
+     "Certificado de febre amarela se você chegar de um país de risco"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "996 / 911"
+   },
+   "tipping": {
+    "custom": "Gorjeta não é esperada nem faz parte da tradição.",
+    "standardPercent": 0,
+    "rule": "optional",
+    "note": "Alguns resorts têm uma caixinha de Natal para os funcionários; é opcional."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Não há (VAGST de 15%)",
+    "minSpend": "Não se aplica",
+    "customsNote": "Não há reembolso de IVA; o aeroporto de Faleolo tem loja duty free."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "US$ 1,50 - 4,00",
+    "topCarriers": [
+     "Digicel Samoa",
+     "Vodafone Samoa"
+    ],
+    "airportSimTrapWarning": "Os pacotes turísticos da Digicel e da Vodafone no aeroporto de Faleolo têm bom preço e costumam sair mais baratos que as eSIMs internacionais."
+   },
+   "touristScams": [
+    {
+     "title": "Táxi sem preço combinado",
+     "desc": "Preços inflacionados em táxis sem valor combinado antes",
+     "tip": "Combine o preço antes ou pergunte no hotel qual é a tarifa normal."
+    },
+    {
+     "title": "Taxa de aldeia em dobro",
+     "desc": "Mais de uma pessoa cobrando a taxa da aldeia (custom fee) em praias e atrações naturais",
+     "tip": "A taxa geralmente vem indicada na entrada; pague a uma única pessoa e peça recibo."
+    },
+    {
+     "title": "Furto na praia",
+     "desc": "Furto de pertences deixados sozinhos na praia",
+     "tip": "Guarde objetos de valor trancados ou na recepção."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Самоанская тала (WST)",

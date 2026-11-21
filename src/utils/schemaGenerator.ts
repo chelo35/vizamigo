@@ -39,6 +39,7 @@ export function getStayDurationText(
       case 'en': return `${days} Days`;
       case 'de': return `${days} Tage`;
       case 'es': return `${days} Días`;
+      case 'pt': return `${days} dias`;
       case 'ru': return `${days} дней`;
     }
   }
@@ -49,6 +50,7 @@ export function getStayDurationText(
       case 'en': return '90 Days (National ID Card)';
       case 'de': return '90 Tage (Personalausweis)';
       case 'es': return '90 Días (DNI / Tarjeta de Identidad)';
+      case 'pt': return '90 dias (com documento de identidade)';
       case 'ru': return '90 дней (по удостоверению личности)';
     }
   }
@@ -59,6 +61,7 @@ export function getStayDurationText(
       case 'en': return 'Up to 90 Days Visa-Free';
       case 'de': return 'Bis zu 90 Tage Visumfrei';
       case 'es': return 'Hasta 90 Días Sin Visado';
+      case 'pt': return 'Até 90 dias sem visto';
       case 'ru': return 'До 90 дней без визы';
     }
   }
@@ -69,6 +72,7 @@ export function getStayDurationText(
       case 'en': return '30 Days (Visa on Arrival)';
       case 'de': return '30 Tage (Visum bei Ankunft)';
       case 'es': return '30 Días (Visado a la Llegada)';
+      case 'pt': return '30 dias (visto na chegada)';
       case 'ru': return '30 дней (виза по прибытии)';
     }
   }
@@ -79,6 +83,7 @@ export function getStayDurationText(
       case 'en': return '30-90 Days (Online eVisa)';
       case 'de': return '30-90 Tage (Elektronisches Visum)';
       case 'es': return '30-90 Días (Visado Electrónico)';
+      case 'pt': return '30-90 dias (visto eletrônico)';
       case 'ru': return '30-90 дней (электронная виза)';
     }
   }
@@ -89,6 +94,7 @@ export function getStayDurationText(
       case 'en': return '90 Days (Electronic Travel Authorization)';
       case 'de': return '90 Tage (Elektronische Einreiseerlaubnis)';
       case 'es': return '90 Días (Autorización Electrónica - ETA)';
+      case 'pt': return '90 dias (autorização eletrônica - ETA)';
       case 'ru': return '90 дней (электронное разрешение - ETA)';
     }
   }
@@ -99,6 +105,7 @@ export function getStayDurationText(
     case 'en': return 'Consular Visa Required';
     case 'de': return 'Konsularvisum erforderlich';
     case 'es': return 'Visado Consular Requerido';
+    case 'pt': return 'Visto consular obrigatório';
     case 'ru': return 'Требуется консульская виза';
   }
 }
@@ -162,6 +169,22 @@ export function generateDirectAnswerSnippet(
         return `A partir de 2026, ${countryName} requiere una Autorización Electrónica de Viaje (ETA) solicitada al menos 72 horas antes del vuelo. El periodo máximo de estancia es de ${stayDurationText}.`;
       }
       return `A partir de 2026, ${countryName} exige a los titulares de pasaporte de ${passportName} tramitar un visado consular antes del viaje a través de la embajada o centro oficial de visados.`;
+    }
+
+    case 'pt': {
+      if (cat === 'free' || cat === 'id') {
+        return `Em 2026, quem tem passaporte de ${passportName} pode entrar em ${countryName} sem visto e ficar até ${stayDurationText}. A validade mínima do passaporte e a exigência de passagem de volta variam de país para país; confira na fonte oficial antes de viajar.`;
+      }
+      if (cat === 'voa') {
+        return `Em 2026, ${countryName} concede visto na chegada a quem tem passaporte de ${passportName}. A permanência autorizada é de ${stayDurationText}; é preciso passaporte válido e pagar a taxa na fronteira.`;
+      }
+      if (cat === 'evisa') {
+        return `Em 2026, ${countryName} exige que quem tem passaporte de ${passportName} solicite um visto eletrônico (e-Visa) on-line antes da viagem. A autorização permite permanências de ${stayDurationText}.`;
+      }
+      if (cat === 'eta') {
+        return `Em 2026, ${countryName} exige uma autorização eletrônica de viagem (ETA), solicitada pelo menos 72 horas antes do voo. A permanência máxima é de ${stayDurationText}.`;
+      }
+      return `Em 2026, ${countryName} exige que quem tem passaporte de ${passportName} tire um visto consular antes da viagem, na embaixada ou em um centro oficial de vistos.`;
     }
 
     case 'ru': {
@@ -307,6 +330,20 @@ export function getCountrySectionHeadings(
         passportSynergyH2: `Política de Visados y Comparativa de Pasaportes para ${countryName}`,
         geographyMapH2: `Ubicación Geográfica, Capital y Mapa de ${countryName}`
       };
+    case 'pt':
+      return {
+        h1,
+        currencyH2: `Moeda de ${countryName} e câmbio atual (USD/EUR/GBP)`,
+        clockWeatherH2: `Horário local, fuso horário e clima em ${countryName}`,
+        internetEsimH2: `Velocidade da internet, eSIM e dados móveis em ${countryName}`,
+        transportTaxiH2: `Transporte, traslado do aeroporto e apps de táxi em ${countryName}`,
+        itineraryRouteH2: `Roteiro de viagem, cidades populares e rota por ${countryName}`,
+        practicalEtiquetteH2: `Tomadas, gorjetas e costumes locais em ${countryName}`,
+        budgetAccommodationH2: `Orçamento diário, hospedagem e voos para ${countryName}`,
+        transitRulesH2: `Regras de trânsito no aeroporto e conexões em ${countryName}`,
+        passportSynergyH2: `Política de vistos e comparação de passaportes para ${countryName}`,
+        geographyMapH2: `Localização, capital e mapa de ${countryName}`
+      };
     case 'ru':
       return {
         h1,
@@ -367,6 +404,7 @@ function getSerpAnswer(
       en: { title: `${C} Travel Guide 2026: Places, Routes and Prices`, description: `${C} trip ideas, cities, flight and hotel prices, emergency numbers and practical tips. Your own country: no visa needed.` },
       de: { title: `${C} Reiseführer 2026: Orte, Routen und Preise`, description: `${C}: Reiseideen, Städte, Flug- und Hotelpreise, Notrufnummern und praktische Tipps. Dein eigenes Land: kein Visum nötig.` },
       es: { title: `Guía de viaje de ${C} 2026: lugares, rutas y precios`, description: `${C}: ideas de viaje, ciudades, precios de vuelos y hoteles, teléfonos de emergencia y consejos. Tu propio país: no necesitas visa.` },
+      pt: { title: `Guia de viagem de ${C} 2026: lugares, roteiros e preços`, description: `${C}: ideias de viagem, cidades, preços de voos e hotéis, telefones de emergência e dicas. É o seu próprio país: você não precisa de visto.` },
       ru: { title: `${C}: путеводитель 2026 — места, маршруты и цены`, description: `${C}: идеи поездок, города, цены на билеты и отели, экстренные номера и советы. Это ваша страна: виза не нужна.` }
     };
     return OWN[lang] || OWN.en;
@@ -430,6 +468,18 @@ function getSerpAnswer(
       return {
         title: fitT([`Requisitos para viajar a ${C} 2026: ${short} con pasaporte de ${P}`, `Viajar a ${C} 2026: ${short} con pasaporte de ${P}`, `Viajar a ${C} 2026: ${short}`, `${C} 2026: ${short}`]),
         description: fitD(`${CC}: ${long}.`, ['Fuente oficial, nivel de seguridad, teléfonos de emergencia, itinerario, vuelos y hoteles baratos.', 'Fuente oficial, emergencias, ruta y precios.', 'Fuente oficial y precios.'])
+      };
+    }
+    case 'pt': {
+      const short = free ? `sem visto${days ? ` ${days} dias` : ''}` : cat === 'voa' ? 'visto na chegada' : cat === 'evisa' ? 'e-Visa obrigatório' : cat === 'eta' ? `${eta} obrigatória` : 'visto obrigatório';
+      const long = free ? `com passaporte de ${P} não é preciso visto${days ? `, permanência de até ${days} dias` : ''}`
+        : cat === 'voa' ? `com passaporte de ${P} o visto é emitido na chegada${days ? ` (${days} dias)` : ''}`
+        : cat === 'evisa' ? `com passaporte de ${P} é preciso tirar um e-Visa on-line antes da viagem`
+        : cat === 'eta' ? `com passaporte de ${P} é preciso solicitar uma autorização eletrônica (${eta}) antes da viagem`
+        : `com passaporte de ${P} é preciso pedir o visto no consulado antes da viagem`;
+      return {
+        title: fitT([`Precisa de visto para ${C}? 2026: ${short} com passaporte de ${P}`, `Viagem para ${C} 2026: ${short} com passaporte de ${P}`, `Viagem para ${C} 2026: ${short}`, `${C} 2026: ${short}`]),
+        description: fitD(`${CC}: ${long}.`, ['Fonte oficial, nível de segurança, telefones de emergência, roteiro, voos e hotéis baratos.', 'Fonte oficial, emergências, roteiro e preços.', 'Fonte oficial e preços.'])
       };
     }
     case 'ru': {
@@ -511,6 +561,10 @@ export function getMobileVoiceQuestion(
       return currentPassport === LANG_PASS.es || currentPassport === 'TR'
         ? `¿Necesito Visa para ${countryName}? (Requisitos de Entrada 2026)`
         : `¿${countryName} pide visa a ciudadanos de ${passportName}? Requisitos 2026`;
+    case 'pt':
+      return currentPassport === LANG_PASS.pt || currentPassport === 'TR'
+        ? `Preciso de visto para ${countryName}? (Regras de entrada 2026)`
+        : `${countryName} exige visto de quem tem passaporte de ${passportName}? Regras 2026`;
     case 'ru':
       return currentPassport === LANG_PASS.ru || currentPassport === 'TR'
         ? `Нужна ли виза ${ruIn(countryName, 'acc')}? (Правила въезда 2026)`
@@ -534,6 +588,8 @@ export function getCountryNaturalH1(
       return `${countryName} Visabestimmungen, Aufenthaltsdauer & Reiseführer`;
     case 'es':
       return `Política de Visados, Límites de Estancia e Itinerario de ${countryName}`;
+    case 'pt':
+      return `Política de vistos, tempo de permanência e roteiro para ${countryName}`;
     case 'ru':
       return `Визовый режим ${ruIn(countryName, 'loc')}, сроки пребывания и гид`;
   }

@@ -1507,6 +1507,383 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Dólar americano (muito usado) e Zimbabwe Gold (ZiG/ZWG)",
+   "plugType": "Tipo G e D (220-240V, 50Hz)",
+   "bestMonths": "Maio a outubro (estação seca; melhores safáris de agosto a outubro); as Cataratas Vitória têm mais volume de água de fevereiro a maio",
+   "safety": {
+    "crimeRateSummary": "As áreas turísticas (Victoria Falls, Hwange, Matobo) costumam ser seguras; em Harare e Bulawayo há furtos por arrastão, roubos de carros e assaltos. O país enfrenta dificuldades econômicas e tensões políticas pontuais.",
+    "commonScams": [
+     "Cambistas de rua que entregam notas falsas ou enganam no câmbio ZiG–dólar",
+     "“Multas” sem recibo em blitze policiais nas estradas",
+     "Vendedores insistentes e falsos intermediários de passeios em Victoria Falls"
+    ],
+    "safeTravelTips": [
+     "Leve notas pequenas de dólar; por falta de troco, às vezes devolvem ZiG ou balas.",
+     "Evite aglomerações políticas e não fotografe a residência presidencial nem prédios oficiais.",
+     "Se for multado em uma blitz, peça recibo oficial; não viaje à noite entre cidades."
+    ],
+    "safetyScore": 55,
+    "safetyLevel": "Risco moderado",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60"
+   },
+   "internet": {
+    "networkCoverage": "4G nas cidades (5G limitado na Econet); sinal fraco ou inexistente em parques e áreas rurais",
+    "costPerGbUsd": "US$ 2 - 5",
+    "esimAvailability": "Moderada (eSIMs internacionais)",
+    "bestCarriers": [
+     "Econet",
+     "NetOne",
+     "Telecel"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Básico (vans kombi, ônibus de viagem; traslados para os parques)",
+    "costLevel": "Moderado",
+    "singleTicketUsd": "US$ 0,50 - 1",
+    "dailyPassUsd": "Não disponível",
+    "popularRideApps": [
+     "InDrive",
+     "Vaya"
+    ],
+    "taxiAdvice": "Em Harare e Bulawayo, os apps InDrive e Vaya são mais seguros; evite as kombis. Em Victoria Falls, use os traslados do hotel ou táxis licenciados."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 40 - 70",
+    "dailyBudgetMidrangeUsd": "US$ 100 - 200",
+    "budgetMealUsd": "US$ 5 - 10",
+    "coffeeUsd": "US$ 2 - 4",
+    "waterBottleUsd": "US$ 0,70 - 1,50",
+    "hostelDormUsd": "US$ 15 - 25",
+    "hotel3StarUsd": "US$ 70 - 130 (lodges de safári a partir de US$ 250 por pessoa)",
+    "flightCostIndex": "Alto",
+    "flightTip": "Chega-se a Harare (HRE) e Victoria Falls (VFA) via Joanesburgo, Adis Abeba, Nairóbi ou Dubai; para as cataratas e Hwange, voe para VFA."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Os cumprimentos são importantes; cumprimente os mais velhos com respeito, com uma leve inclinação e a mão direita (a esquerda apoiada no cotovelo).",
+     "Entregue e receba coisas com as duas mãos ou com a direita; bater palmas de leve expressa gratidão.",
+     "Roupas camufladas são proibidas; não fotografe áreas militares nem a polícia."
+    ],
+    "festivals": [
+     "Dia da Independência (18 de abril)",
+     "Carnaval de Victoria Falls (Ano-Novo)",
+     "HIFA – Festival Internacional de Artes de Harare (em alguns anos)"
+    ],
+    "lifestyle": "Sociedade calorosa e paciente, marcada pelas culturas shona e ndebele, que valoriza a educação; destacam-se a música de mbira, a escultura em pedra e a vida nas igrejas."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Cataratas Vitória",
+     "Parque Nacional Hwange",
+     "Parque Nacional Mana Pools (UNESCO)",
+     "Monumento Nacional do Grande Zimbábue (UNESCO)",
+     "Colinas de Matobo (rinocerontes e arte rupestre)",
+     "Lago Kariba"
+    ],
+    "bestSeasons": "Maio a outubro (estação seca; melhores safáris de agosto a outubro); as Cataratas Vitória têm mais volume de água de fevereiro a maio",
+    "travelStyleTip": "Comece por Victoria Falls, siga para Hwange e depois, passando por Bulawayo, vá a Matobo e ao Grande Zimbábue; de carro alugado, não dirija à noite."
+   },
+   "religion": {
+    "primaryReligions": "Cristãos ~85% (apostólicos, pentecostais, protestantes, católicos); crenças ancestrais difundidas e pequena comunidade muçulmana",
+    "respectNorms": "Siga as regras do guia em colinas e cavernas sagradas (por exemplo, em Matobo); use roupas discretas em igrejas e aldeias.",
+    "sacredSites": [
+     "Ruínas do Grande Zimbábue",
+     "Colinas de Matobo – santuário de Njelele",
+     "Catedral de Santa Maria e Todos os Santos (Harare)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "16 línguas oficiais; as mais usadas são inglês, shona e ndebele.",
+    "englishProficiency": "Muito bom; uma das maiores taxas de alfabetização da África.",
+    "phrases": [
+     {
+      "phrase": "Mhoroi (Shona)",
+      "meaning": "Olá",
+      "translation": "Olá",
+      "pronunciation": "mho-RO-i"
+     },
+     {
+      "phrase": "Makadii? (Shona)",
+      "meaning": "Como vai?",
+      "translation": "Como vai?",
+      "pronunciation": "ma-ka-DI-i"
+     },
+     {
+      "phrase": "Ndatenda (Shona)",
+      "meaning": "Obrigado",
+      "translation": "Obrigado",
+      "pronunciation": "nda-TEN-da"
+     },
+     {
+      "phrase": "Imarii? (Shona)",
+      "meaning": "Quanto custa?",
+      "translation": "Quanto custa?",
+      "pronunciation": "i-ma-RI-i"
+     },
+     {
+      "phrase": "Ngiyabonga (Ndebele)",
+      "meaning": "Obrigado (ndebele)",
+      "translation": "Obrigado (ndebele)",
+      "pronunciation": "ngi-ya-BON-ga"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Entre os séculos XI e XV, a cidade de pedra do Grande Zimbábue foi o centro de um poderoso reino comercial, seguido pelos Estados Mutapa e Rozvi. Em 1890, a British South Africa Company passou a governar a região como Rodésia do Sul. Depois de uma longa luta de libertação, o Zimbábue nasceu em 18 de abril de 1980; houve hiperinflação nos anos 2000, e em 2024 foi introduzido o ZiG.",
+    "milestones": [
+     "Séculos XI–XV: auge do Grande Zimbábue",
+     "1890: é estabelecida a Rodésia do Sul",
+     "1980: independência (18 de abril)",
+     "2024: introdução do ZiG"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Sadza (angu de milho) com nyama (ensopado de carne)",
+     "Dovi (ensopado com pasta de amendoim)",
+     "Madora (lagartas mopane fritas)"
+    ],
+    "traditionalDrinks": [
+     "Cerveja Zambezi Lager",
+     "Maheu (bebida de milho fermentado)",
+     "Refresco de laranja Mazoe"
+    ],
+    "streetFoodAndDesserts": [
+     "Maputi (milho estourado)",
+     "Milho assado (chibage)",
+     "Mazhanje (fruta silvestre da estação)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Oliver Mtukudzi (músico)",
+     "Kirsty Coventry (nadadora campeã olímpica, presidente do COI)",
+     "Tsitsi Dangarembga (escritora e cineasta)"
+    ],
+    "strongSectors": [
+     "Mineração (ouro, platina, lítio, diamantes)",
+     "Tabaco e agricultura",
+     "Turismo (Cataratas Vitória e safáris)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "O dólar em dinheiro é a forma de pagamento mais útil; hotéis e lodges aceitam cartão, mas maquininhas e caixas eletrônicos falham com frequência. Os moradores usam o EcoCash.",
+    "tippingCulture": "Nos restaurantes, 10% é o habitual; guias de safári, US$ 10-20 por dia, e para a equipe, uma caixinha coletiva.",
+    "economicPillars": "Mineração, agricultura (tabaco, milho, algodão), turismo e remessas."
+   }
+  },
+  "itin": {
+   "routeName": "Das cataratas à cidade de pedra: Victoria Falls, Hwange, Matobo e Grande Zimbábue",
+   "routeSummary": "Roteiro de 10 dias que vai das Cataratas Vitória aos elefantes de Hwange, aos rinocerontes e à arte rupestre de Matobo e à antiga cidade de pedra do Grande Zimbábue.",
+   "totalDays": 10,
+   "idealDurationText": "Roteiro de 10 dias",
+   "bestSeason": "Maio a outubro (estação seca)",
+   "transportMode": "4x4 alugado ou carro com motorista (só de dia) + traslados para os parques",
+   "paceLevel": "Equilibrado (safári + história)",
+   "stops": [
+    {
+     "name": "Parada 1: Victoria Falls",
+     "recommendedDuration": "2-3 dias",
+     "durationBadge": "2-3 dias",
+     "highlights": [
+      "Os 16 mirantes do lado zimbabuano",
+      "Ponte das Cataratas Vitória",
+      "Cruzeiro ao pôr do sol pelo Zambeze"
+     ],
+     "activities": [
+      "Percorra a trilha da floresta tropical ao longo das cataratas.",
+      "Faça o voo de helicóptero “Flight of Angels”.",
+      "Admire o desfiladeiro de Batoka do Lookout Café."
+     ],
+     "foodAndDrinks": [
+      "Prato de caça, como kudu ou impala",
+      "Cerveja Zambezi Lager"
+     ],
+     "criticalTips": [
+      "De fevereiro a maio a névoa encharca tudo; alugue ou leve uma capa de chuva.",
+      "À noite, elefantes circulam pela cidade; não ande no escuro."
+     ],
+     "mapsQuery": "Victoria Falls Rainforest, Zimbabwe",
+     "stopNumber": 1
+    },
+    {
+     "name": "Parada 2: Parque Nacional Hwange",
+     "recommendedDuration": "3 dias",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Enormes manadas de elefantes",
+      "Leões e mabecos nos bebedouros",
+      "Plataforma de observação Nyamandhlovu"
+     ],
+     "activities": [
+      "Faça safáris de manhã e no fim da tarde.",
+      "Observe os animais de um esconderijo ao lado de um bebedouro.",
+      "Faça um safári a pé guiado."
+     ],
+     "foodAndDrinks": [
+      "Sadza (angu de milho) com nyama (ensopado de carne)",
+      "Maheu (bebida de milho fermentado)"
+     ],
+     "criticalTips": [
+      "O fim da estação seca (setembro a outubro) é a melhor época para ver animais, mas faz muito calor.",
+      "Os portões fecham ao pôr do sol; planeje-se."
+     ],
+     "mapsQuery": "Main Camp, Hwange National Park, Zimbabwe",
+     "stopNumber": 2
+    },
+    {
+     "name": "Parada 3: Bulawayo e colinas de Matobo",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Rastreamento de rinocerontes a pé",
+      "Arte rupestre san (Nswatugi e White Rhino)",
+      "World's View (colina Malindidzimu)",
+      "Museu de História Natural de Bulawayo"
+     ],
+     "activities": [
+      "Rastreie rinocerontes-brancos a pé com um guia.",
+      "Veja o pôr do sol do alto das cúpulas de granito.",
+      "Passeie pelas ruas coloniais de Bulawayo."
+     ],
+     "foodAndDrinks": [
+      "Dovi (ensopado com pasta de amendoim)",
+      "Maputi (milho estourado)",
+      "Refresco de laranja Mazoe"
+     ],
+     "criticalTips": [
+      "Fale baixo nas colinas sagradas e siga o guia.",
+      "Em Bulawayo pode faltar combustível e dinheiro em espécie; prepare-se."
+     ],
+     "mapsQuery": "Matobo National Park, Zimbabwe",
+     "stopNumber": 3
+    },
+    {
+     "name": "Parada 4: Masvingo e Grande Zimbábue",
+     "recommendedDuration": "1-2 dias",
+     "durationBadge": "1-2 dias",
+     "highlights": [
+      "O Grande Recinto e a torre cônica",
+      "O Complexo da Colina",
+      "Lago Mutirikwi"
+     ],
+     "activities": [
+      "Percorra com guia a cidade de pedra dos séculos XI–XV.",
+      "Veja as aves do Zimbábue esculpidas, no museu.",
+      "Descanse às margens do lago Mutirikwi."
+     ],
+     "foodAndDrinks": [
+      "“Road runner” (frango caipira) grelhado com sadza",
+      "Mazhanje (fruta silvestre da estação)"
+     ],
+     "criticalTips": [
+      "A subida ao Complexo da Colina cansa no calor; vá cedo.",
+      "A volta para Harare leva ~4-5 h; não viaje à noite."
+     ],
+     "mapsQuery": "Great Zimbabwe National Monument, Masvingo",
+     "stopNumber": 4
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Sadza (angu de milho) com nyama (ensopado de carne)",
+     "Dovi (ensopado com pasta de amendoim)",
+     "Madora (lagartas mopane fritas)"
+    ],
+    "drinks": [
+     "Cerveja Zambezi Lager",
+     "Maheu (bebida de milho fermentado)",
+     "Refresco de laranja Mazoe"
+    ],
+    "streetFoods": [
+     "Maputi (milho estourado)",
+     "Milho assado (chibage)",
+     "Mazhanje (fruta silvestre da estação)"
+    ],
+    "diningAdvice": "A sadza é comida com a mão direita; tenha notas pequenas e deixe 10% se o serviço não estiver incluído."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptador tipo G/D",
+     "Dólares em notas pequenas",
+     "Antimaláricos e repelente",
+     "Power bank e lanterna (quedas de energia)"
+    ],
+    "safetyAndEtiquette": [
+     "Evite aglomerações políticas e não fotografe a residência presidencial nem prédios oficiais.",
+     "Se for multado em uma blitz, peça recibo oficial; não viaje à noite entre cidades.",
+     "Roupas camufladas são proibidas; não fotografe áreas militares nem a polícia."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G",
+     "D"
+    ],
+    "voltage": "220-240V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Tomadas britânicas tipo G e as antigas tipo D, de três pinos redondos; os cortes de energia programados são frequentes."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Não beba água da torneira; Harare já enfrentou interrupções no abastecimento e surtos de cólera. Use água mineral ou tratada.",
+    "vaccines": [
+     "Hepatite A, febre tifoide e raiva",
+     "Profilaxia contra malária para o vale do Zambeze, Hwange e Victoria Falls",
+     "Certificado de febre amarela se você chegar de um país de risco",
+     "Avalie a vacina contra cólera"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "994 / 999"
+   },
+   "tipping": {
+    "custom": "10% nos restaurantes se o serviço não estiver incluído; guias, motoristas e funcionários esperam gorjeta.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "A gorjeta em dólares é a preferida."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Em geral não disponível (IVA de 15,5%)",
+    "minSpend": "Não se aplica",
+    "customsNote": "Na prática, não há reembolso de IVA para turistas. Levar para fora do país marfim, chifre ou produtos de fauna protegida é ilegal; guarde as notas fiscais das esculturas em pedra."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 2,00 - 5,00",
+    "topCarriers": [
+     "Econet",
+     "NetOne",
+     "Telecel"
+    ],
+    "airportSimTrapWarning": "O chip local exige cadastro com passaporte; a Econet tem a maior cobertura. Baixe mapas offline, porque nos parques não há sinal."
+   },
+   "touristScams": [
+    {
+     "title": "Cambistas de rua",
+     "desc": "Cambistas de rua que entregam notas falsas ou enganam no câmbio ZiG–dólar",
+     "tip": "Leve notas pequenas de dólar; por falta de troco, às vezes devolvem ZiG ou balas."
+    },
+    {
+     "title": "“Multas” em blitze",
+     "desc": "“Multas” sem recibo em blitze policiais nas estradas",
+     "tip": "Se for multado em uma blitz, peça recibo oficial; não viaje à noite entre cidades."
+    },
+    {
+     "title": "Vendedores insistentes e falsos intermediários",
+     "desc": "Vendedores insistentes e falsos intermediários de passeios em Victoria Falls",
+     "tip": "Reserve atividades pelo hotel ou com operadoras autorizadas e recuse com firmeza."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Доллар США (широко используется) и зимбабвийское золото (ZiG/ZWG)",

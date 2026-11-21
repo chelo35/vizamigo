@@ -1427,6 +1427,363 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Rupia seichelense (SCR)",
+   "plugType": "Tipo G (240V, 50Hz)",
+   "bestMonths": "Abril a maio e outubro a novembro (mar calmo entre as temporadas de ventos alísios); de maio a setembro venta, e de dezembro a março há umidade e chuva",
+   "safety": {
+    "crimeRateSummary": "No geral, é um país seguro; há furtos de objetos deixados em praias ou carros, arrombamentos de casas de temporada e um ou outro roubo por arrastão à noite em lugares isolados. Nas monções, algumas praias têm correntes perigosas.",
+    "commonScams": [
+     "Táxis no aeroporto e nos cais que cobram a mais",
+     "Venda de coco de mer sem certificado ou de conchas protegidas",
+     "Furto de objetos deixados na praia ou no carro"
+    ],
+    "safeTravelTips": [
+     "Respeite as bandeiras vermelhas e os avisos de correnteza, principalmente em Grand Anse (La Digue) e Anse Intendance.",
+     "Tranque portas e janelas nas casas de temporada e guarde os objetos de valor no cofre.",
+     "Em Mahé, dirige-se pela esquerda em estradas de montanha estreitas; cuidado à noite."
+    ],
+    "emergencyNumbers": {
+     "police": "999",
+     "ambulance": "151",
+     "general": "999"
+    },
+    "safetyScore": 65,
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Bom 4G em Mahé, Praslin e La Digue; limitado nas ilhas remotas",
+    "costPerGbUsd": "~US$ 3 - 7",
+    "esimAvailability": "Boa",
+    "bestCarriers": [
+     "Cable & Wireless Seychelles",
+     "Airtel Seychelles"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Adequado",
+    "costLevel": "Caro",
+    "singleTicketUsd": "US$ 0,70 - 1",
+    "dailyPassUsd": "Sem passe diário (aluguel de carro ~50 - 70 $/dia)",
+    "popularRideApps": [
+     "Ônibus SPTC",
+     "Ferries Cat Cocos",
+     "Bicicletas de aluguel em La Digue"
+    ],
+    "taxiAdvice": "Não há apps como o Uber e os táxis são caros: combine o preço antes. Os ônibus SPTC de Mahé e Praslin são muito baratos; entre as ilhas, use o ferry Cat Cocos ou os voos domésticos da Air Seychelles, e explore La Digue de bicicleta."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 100 - 150",
+    "dailyBudgetMidrangeUsd": "US$ 250 - 400",
+    "budgetMealUsd": "US$ 8 - 20",
+    "coffeeUsd": "US$ 3 - 5",
+    "waterBottleUsd": "US$ 1 - 2",
+    "hostelDormUsd": "Sem albergues (pousadas por 70 - 120 $)",
+    "hotel3StarUsd": "US$ 180 - 300",
+    "flightCostIndex": "Caro",
+    "flightTip": "Para Mahé (SEZ), compare conexões via Dubai (Emirates), Doha (Qatar Airways) ou Adis Abeba (Ethiopian); abril – maio e outubro – novembro valem a pena pelo clima e pelo preço."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Cumprimentar com um “Bonzour” e um sorriso é importante; a vida nas ilhas é tranquila, sem pressa.",
+     "Não use roupa de banho em vilarejos nem igrejas; o topless é malvisto.",
+     "Não toque em tartarugas-gigantes, corais nem aves, e não saia das trilhas nas reservas."
+    ],
+    "festivals": [
+     "Festival Kreol (fim de outubro)",
+     "Dia Nacional / Independência (29 de junho)",
+     "Festa da Assunção em La Digue (15 de agosto)"
+    ],
+    "lifestyle": "Uma cultura crioula insular e tranquila, que mistura raízes africanas, francesas, indianas e chinesas; a pesca, a dança moutya, a música sega e os encontros de família aos domingos fazem parte da vida."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Vallée de Mai e suas palmeiras coco de mer (UNESCO, Praslin)",
+     "Anse Source d’Argent (La Digue)",
+     "Anse Lazio (Praslin)",
+     "Parque Nacional Morne Seychellois (Mahé)",
+     "Tartarugas-gigantes da ilha Curieuse",
+     "Mercado de Victoria (Sir Selwyn Selwyn-Clarke)"
+    ],
+    "bestSeasons": "Abril a maio e outubro a novembro (mar calmo entre as temporadas de ventos alísios); de maio a setembro venta, e de dezembro a março há umidade e chuva",
+    "travelStyleTip": "Combine de ferry as três ilhas principais (Mahé, Praslin e La Digue); casas crioulas e apartamentos com cozinha reduzem muito os gastos."
+   },
+   "religion": {
+    "primaryReligions": "Católicos (~76 %), anglicanos (~6 %), outros cristãos (~7 %), hindus (~2,5 %), muçulmanos (~1,6 %)",
+    "respectNorms": "Cubra ombros e joelhos em igrejas, templos e mesquitas; tire os sapatos em templos e mesquitas.",
+    "sacredSites": [
+     "Catedral da Imaculada Conceição, Victoria",
+     "Templo hindu Arul Mihu Navasakthi Vinayagar",
+     "Mesquita Sheikh Mohamed bin Khalifa, Victoria"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Crioulo seichelense (kreol seselwa), inglês e francês",
+    "englishProficiency": "Bom; o inglês é muito usado no turismo e na administração pública.",
+    "phrases": [
+     {
+      "phrase": "Bonzour",
+      "meaning": "Olá / Bom dia",
+      "translation": "Olá / Bom dia",
+      "pronunciation": "bon-ZOOR"
+     },
+     {
+      "phrase": "Ki manyer?",
+      "meaning": "Como vai?",
+      "translation": "Como vai?",
+      "pronunciation": "kee man-YEH"
+     },
+     {
+      "phrase": "Mersi",
+      "meaning": "Obrigado(a)",
+      "translation": "Obrigado(a)",
+      "pronunciation": "mair-SEE"
+     },
+     {
+      "phrase": "Konbyen sa?",
+      "meaning": "Quanto custa isto?",
+      "translation": "Quanto custa isto?",
+      "pronunciation": "kon-BYEN sah"
+     },
+     {
+      "phrase": "Orevwar",
+      "meaning": "Tchau",
+      "translation": "Tchau",
+      "pronunciation": "oh-reh-VWAR"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "O arquipélago ficou desabitado até a colonização francesa de 1770; africanos escravizados e, depois, comerciantes indianos e chineses formaram a sociedade crioula. Cedidas à Grã-Bretanha pelo Tratado de Paris de 1814, as Seicheles se tornaram independentes em 29 de junho de 1976. Em 1993 veio o multipartidarismo, e o turismo e a pesca de atum garantem ao país uma das maiores rendas per capita da África.",
+    "milestones": [
+     "1770 – Primeiro assentamento francês",
+     "1814 – Domínio britânico (Tratado de Paris)",
+     "1976 – Independência",
+     "1983 – Vallée de Mai entra na lista da UNESCO"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Kari koko zourit (curry de polvo com coco)",
+     "Satini reken (chutney de tubarão)",
+     "Peixe grelhado com molho crioulo rougaille"
+    ],
+    "traditionalDrinks": [
+     "Rum Takamaka",
+     "Cerveja SeyBrew",
+     "Kalou (vinho de palma)"
+    ],
+    "streetFoodAndDesserts": [
+     "Ladob (banana-da-terra ou fruta-pão no leite de coco)",
+     "Chips de fruta-pão",
+     "Marmitas de curry crioulo para viagem"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Sir James Mancham (primeiro presidente)",
+     "Antoine Abel (pioneiro da literatura crioula)",
+     "Patrick Victor (músico de sega e moutya)"
+    ],
+    "strongSectors": [
+     "Turismo de luxo e de natureza",
+     "Pesca e conservas de atum",
+     "Economia azul e conservação marinha"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Cartões são aceitos em hotéis, restaurantes e supermercados; leve rupias em espécie para ônibus, lojinhas e mercados. Muitos passeios e hospedagens cobram em euros ou dólares.",
+    "tippingCulture": "Os restaurantes costumam cobrar 10 % de serviço; gorjeta adicional é opcional.",
+    "economicPillars": "Turismo, pesca e conservas de atum, economia azul e serviços financeiros."
+   }
+  },
+  "itin": {
+   "routeName": "Roteiro das três ilhas: Mahé, Praslin e La Digue",
+   "routeSummary": "Roteiro de 7 dias que começa nas florestas de montanha de Mahé e na capital, Victoria, segue de ferry para o vale do coco de mer e Anse Lazio, em Praslin, e termina em La Digue, famosa pelas praias com rochas de granito.",
+   "totalDays": 7,
+   "idealDurationText": "Roteiro de 7 dias",
+   "bestSeason": "Abril a maio e outubro a novembro (mar calmo entre as temporadas de ventos alísios); de maio a setembro venta, e de dezembro a março há umidade e chuva",
+   "transportMode": "Carro alugado ou ônibus SPTC em Mahé + ferries Cat Cocos e La Digue + bicicleta",
+   "paceLevel": "Tranquilo (praias, trilhas e snorkel)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Mahé (Victoria e florestas de montanha)",
+     "recommendedDuration": "3 dias",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Mercado e Torre do Relógio de Victoria",
+      "Parque Nacional Morne Seychellois (trilha Copolia)",
+      "Praia de Beau Vallon",
+      "Anse Intendance e Anse Takamaka"
+     ],
+     "activities": [
+      "Suba ao topo do Copolia para ver Victoria lá de cima.",
+      "Faça snorkel no Parque Marinho de Sainte Anne.",
+      "Visite o Bazar Labrin de Beau Vallon na quarta-feira à noite."
+     ],
+     "foodAndDrinks": [
+      "Kari koko zourit",
+      "Peixe grelhado com rougaille",
+      "Degustação de rum Takamaka"
+     ],
+     "criticalTips": [
+      "Dirige-se pela esquerda em estradas de montanha estreitas e cheias de curvas; cuidado à noite.",
+      "De maio a setembro, as ondas e correntes aumentam nas praias do sul; respeite as bandeiras."
+     ],
+     "mapsQuery": "Victoria, Mahé, Seychelles"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Praslin (Vallée de Mai e Anse Lazio)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Reserva Natural Vallée de Mai (UNESCO)",
+      "Anse Lazio",
+      "Anse Georgette",
+      "Tartarugas e manguezais de Curieuse"
+     ],
+     "activities": [
+      "Procure o papagaio-negro-das-seicheles na floresta de coco de mer.",
+      "Vá de barco até Curieuse para ver as tartarugas-gigantes.",
+      "Nade e faça snorkel em Anse Lazio."
+     ],
+     "foodAndDrinks": [
+      "Salada de polvo",
+      "Satini reken",
+      "Cerveja SeyBrew"
+     ],
+     "criticalTips": [
+      "A entrada da Vallée de Mai é cara; vá cedo para ver aves.",
+      "O acesso a Anse Georgette exige cadastro prévio pelo resort."
+     ],
+     "mapsQuery": "Vallée de Mai, Praslin, Seychelles"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: La Digue (praias de granito e bicicleta)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Anse Source d’Argent (L’Union Estate)",
+      "Grand Anse e Anse Cocos",
+      "Reserva La Veuve (papa-moscas-do-paraíso)",
+      "Mirante de Belle Vue"
+     ],
+     "activities": [
+      "Alugue uma bicicleta e percorra a ilha.",
+      "Siga a trilha até Anse Cocos.",
+      "Fotografe o pôr do sol em Anse Source d’Argent."
+     ],
+     "foodAndDrinks": [
+      "Bufê crioulo",
+      "Ladob",
+      "Suco de fruta natural"
+     ],
+     "criticalTips": [
+      "Para entrar em Anse Source d’Argent, paga-se em L’Union Estate; para fazer snorkel, prefira a maré baixa.",
+      "As correntes de Grand Anse podem ser fatais; não entre na água com mar agitado."
+     ],
+     "mapsQuery": "La Digue, Seychelles"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Kari koko zourit",
+     "Satini reken",
+     "Peixe com rougaille"
+    ],
+    "drinks": [
+     "Rum Takamaka",
+     "SeyBrew",
+     "Kalou"
+    ],
+    "streetFoods": [
+     "Marmitas de curry crioulo",
+     "Chips de fruta-pão",
+     "Ladob"
+    ],
+    "diningAdvice": "Para economizar, experimente no almoço as marmitas de curry crioulo para viagem; os restaurantes podem acrescentar 10 % de serviço e IVA."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptador tipo G",
+     "Protetor solar seguro para recifes",
+     "Equipamento de snorkel e sapatilhas de água",
+     "Repelente"
+    ],
+    "safetyAndEtiquette": [
+     "Não entre no mar em praias com bandeira vermelha.",
+     "Compre coco de mer só com o certificado oficial."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G"
+    ],
+    "voltage": "240V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Tomadas britânicas tipo G, de três pinos retangulares; os plugues turcos precisam de adaptador tipo G."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "A água encanada em Mahé, Praslin e La Digue é tratada e, em geral, considerada potável; quem tem estômago sensível pode preferir água engarrafada.",
+    "vaccines": [
+     "Febre amarela: certificado obrigatório e verificado se você vier de um país de risco",
+     "Vacinas de rotina e hepatite A",
+     "Proteção contra mosquitos (dengue, chikungunya)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "151"
+   },
+   "tipping": {
+    "custom": "A gorjeta não é obrigatória; os restaurantes costumam incluir o serviço.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "Se o serviço não estiver incluído, 5-10 % é uma boa gentileza; capitães de barco e guias agradecem pequenas gorjetas."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA de 15 %; sem restituição para turistas",
+    "minSpend": "Não se aplica",
+    "customsNote": "As Seicheles não devolvem o IVA a turistas, embora o aeroporto tenha lojas duty free. O coco de mer só pode sair do país com certificado oficial de exportação; corais, casco de tartaruga-de-pente e conchas protegidas são proibidos."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 3 - 7",
+    "topCarriers": [
+     "Cable & Wireless Seychelles",
+     "Airtel Seychelles"
+    ],
+    "airportSimTrapWarning": "Os pacotes de chip para turistas do aeroporto são práticos, mas caros; ative um eSIM antes ou compre um chip com o passaporte em uma loja da Cable & Wireless/Airtel em Victoria."
+   },
+   "touristScams": [
+    {
+     "title": "Táxis dos cais e do aeroporto",
+     "desc": "Nos horários de ferries e voos, os taxistas podem cobrar preços muito altos por trajetos curtos.",
+     "tip": "Organize o traslado com a sua hospedagem ou combine o preço antes."
+    },
+    {
+     "title": "Coco de mer sem certificado",
+     "desc": "Um coco de mer barato comprado na rua pode ser confiscado no aeroporto, com multa.",
+     "tip": "Compre só de vendedores autorizados que forneçam certificado de exportação."
+    },
+    {
+     "title": "Furto na praia",
+     "desc": "Bolsas, celulares e câmeras deixados na areia enquanto você nada podem sumir.",
+     "tip": "Deixe os objetos de valor no cofre e leve uma bolsinha estanque para a praia."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Сейшельская рупия (SCR)",

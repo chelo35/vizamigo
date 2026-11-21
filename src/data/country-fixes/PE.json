@@ -1547,6 +1547,393 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Sol peruano (PEN)",
+   "plugType": "Tipo A, C (220V, 60Hz)",
+   "bestMonths": "Maio – setembro (época seca nos Andes; ideal para Machu Picchu e Cusco); dezembro – março para o litoral de Lima; a Trilha Inca fecha em fevereiro para manutenção",
+   "safety": {
+    "crimeRateSummary": "Nas áreas turísticas, os problemas mais comuns são batedores de carteira, furto de celulares e assaltos em táxis informais. Em 2025, foi decretado estado de emergência em Lima e Callao por causa do aumento das extorsões, e os alertas oficiais desaconselham zonas de narcotráfico como o VRAEM. Protestos e bloqueios podem afetar a viagem entre Cusco e Machu Picchu.",
+    "commonScams": [
+     "Táxis informais e sequestros-relâmpago no aeroporto de Lima e nos terminais rodoviários",
+     "Cambistas de rua com notas falsas ou calculadoras adulteradas",
+     "Ingressos falsos para Machu Picchu e pacotes vendidos na rua em Cusco"
+    ],
+    "safeTravelTips": [
+     "Compre ingressos para Machu Picchu apenas no site oficial (tuboleto.cultura.pe) ou em agências autorizadas.",
+     "Para evitar o soroche (mal de altitude), descanse no primeiro dia em Cusco ou durma primeiro no Vale Sagrado, que é mais baixo.",
+     "Não pegue táxi na rua; use Uber, Cabify ou um táxi chamado pelo hotel."
+    ],
+    "emergencyNumbers": {
+     "police": "105",
+     "ambulance": "106",
+     "general": "105"
+    },
+    "safetyScore": 55,
+    "safetyLevel": "Risco moderado",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60"
+   },
+   "internet": {
+    "networkCoverage": "4G bom em Lima, Cusco e Arequipa; cobertura fraca nos Andes mais altos e na Amazônia",
+    "costPerGbUsd": "~US$ 0,50 - 1,50",
+    "esimAvailability": "Regular – boa",
+    "bestCarriers": [
+     "Claro",
+     "Movistar",
+     "Entel",
+     "Bitel"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Regular (Metropolitano e Linha 1 do metrô em Lima; ônibus interestaduais confortáveis, como a Cruz del Sur; trens PeruRail e Inca Rail para Machu Picchu)",
+    "costLevel": "Barato (exceto o trem para Machu Picchu)",
+    "singleTicketUsd": "US$ 0,50 - 1 (Metropolitano / metrô de Lima)",
+    "dailyPassUsd": "Não há passe diário; ~US$ 2 - 5 por dia na cidade",
+    "popularRideApps": [
+     "Uber",
+     "Cabify",
+     "inDrive",
+     "DiDi"
+    ],
+    "taxiAdvice": "Em Lima, Uber, Cabify e inDrive são seguros e baratos. No aeroporto, use apenas as empresas oficiais de táxi (por ex., Taxi Green) ou o ponto de embarque dos apps; em Cusco, prefira táxis chamados pelo hotel."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 30 - 45",
+    "dailyBudgetMidrangeUsd": "US$ 70 - 120",
+    "budgetMealUsd": "US$ 3 - 7 (menu do dia)",
+    "coffeeUsd": "US$ 1,50 - 3",
+    "waterBottleUsd": "US$ 0,50 - 1",
+    "hostelDormUsd": "US$ 10 - 20",
+    "hotel3StarUsd": "US$ 40 - 80",
+    "flightCostIndex": "Alto (~18-22 h com escala)",
+    "flightTip": "Não há voos diretos da Turquia; compare conexões para Lima via Madri (Iberia, Air Europa, LATAM), Amsterdã (KLM), São Paulo ou Bogotá. Lima – Cusco tem ~1 hora de voo; reserve LATAM ou Sky com antecedência."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "O aperto de mão é comum; mulheres e conhecidos se cumprimentam com um beijo no rosto. Diga “Buenos días” ao entrar em uma loja.",
+     "Peça permissão antes de fotografar pessoas com roupas tradicionais ou suas lhamas; geralmente se espera uma gorjeta.",
+     "É proibido escalar muros incas ou tocar nas pedras dos sítios arqueológicos."
+    ],
+    "festivals": [
+     "Inti Raymi – Festa do Sol (24 de junho, Cusco)",
+     "Virgem da Candelária (fevereiro, Puno)",
+     "Señor de los Milagros (outubro, Lima)"
+    ],
+    "lifestyle": "Uma sociedade familiar onde as culturas andina e litorânea se cruzam, muito orgulhosa da sua culinária; mercados, futebol, o respeito à Pachamama e as festas coloridas estão no centro da vida."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Machu Picchu",
+     "Cusco e o Vale Sagrado",
+     "Montanha Colorida (Vinicunca)",
+     "Lago Titicaca e ilhas flutuantes dos Uros",
+     "Arequipa e o Cânion do Colca",
+     "Linhas de Nazca"
+    ],
+    "bestSeasons": "De maio a setembro, os Andes ficam secos e ensolarados (noites frias); o litoral de Lima é ensolarado de dezembro a março e cinzento, com garoa (garúa), de junho a outubro; a Amazônia é mais seca de junho a outubro.",
+    "travelStyleTip": "Voe de Lima para Cusco e se aclimate primeiro no Vale Sagrado (2.800 m). Reserve com meses de antecedência os ingressos para Machu Picchu, os trens e as licenças da Trilha Inca."
+   },
+   "religion": {
+    "primaryReligions": "Católicos ~76 %, evangélicos ~14 %, sem religião ~5 % (censo de 2017); nos Andes, o catolicismo se mistura às crenças da Pachamama",
+    "respectNorms": "Vista-se com discrição nas igrejas e não tire fotos durante a missa (na Catedral de Cusco é proibido fotografar). Respeite as oferendas tradicionais à Pachamama.",
+    "sacredSites": [
+     "Catedral de Cusco",
+     "Qorikancha – Templo do Sol e Convento de Santo Domingo",
+     "Santuário de Las Nazarenas (Señor de los Milagros, Lima)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Espanhol, quéchua e aimará",
+    "englishProficiency": "Bom no turismo de Cusco e Machu Picchu, regular em Lima, limitado nas áreas rurais.",
+    "phrases": [
+     {
+      "phrase": "Allillanchu",
+      "meaning": "Olá / Tudo bem? (quéchua)",
+      "translation": "Olá / Tudo bem? (quéchua)",
+      "pronunciation": "ah-yee-YAN-choo"
+     },
+     {
+      "phrase": "Sulpayki",
+      "meaning": "Obrigado (quéchua)",
+      "translation": "Obrigado (quéchua)",
+      "pronunciation": "sool-PAI-kee"
+     },
+     {
+      "phrase": "¿Cuánto cuesta?",
+      "meaning": "Quanto custa?",
+      "translation": "Quanto custa?",
+      "pronunciation": "KWAN-toh KWES-tah"
+     },
+     {
+      "phrase": "La cuenta, por favor",
+      "meaning": "A conta, por favor",
+      "translation": "A conta, por favor",
+      "pronunciation": "lah KWEN-tah por fah-VOR"
+     },
+     {
+      "phrase": "¡Chévere!",
+      "meaning": "Que legal!",
+      "translation": "Que legal!",
+      "pronunciation": "CHEH-veh-reh"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Na terra de Caral, a cidade mais antiga das Américas, e das culturas moche, nazca e wari, surgiu no século XV o Império Inca. Os espanhóis capturaram Atahualpa em 1532, e Lima foi o centro do poder colonial na América do Sul. O Peru proclamou sua independência em 1821.",
+    "milestones": [
+     "~1450: os incas constroem Machu Picchu",
+     "1532: Pizarro captura Atahualpa em Cajamarca",
+     "1821: San Martín proclama a independência (28 de julho)",
+     "1911: Hiram Bingham apresenta Machu Picchu ao mundo"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Ceviche",
+     "Lomo saltado",
+     "Ají de gallina"
+    ],
+    "traditionalDrinks": [
+     "Pisco sour (alcoólico)",
+     "Inca Kola",
+     "Chicha morada"
+    ],
+    "streetFoodAndDesserts": [
+     "Anticuchos",
+     "Picarones",
+     "Suspiro a la limeña"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Mario Vargas Llosa (escritor, Prêmio Nobel)",
+     "Chabuca Granda (cantora e compositora)",
+     "Gastón Acurio (chef que levou a culinária peruana ao mundo)"
+    ],
+    "strongSectors": [
+     "Mineração (cobre, ouro, prata)",
+     "Agroexportação (mirtilo, abacate, aspargo)",
+     "Turismo e gastronomia"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Nas cidades e nos lugares turísticos, aceita-se cartão; leve soles em dinheiro vivo para mercados, vilarejos e táxis. Os peruanos pagam com Yape e Plin; notas rasgadas ou gastas não são aceitas.",
+    "tippingCulture": "Nos restaurantes turísticos, costuma-se deixar 10 %; guias e carregadores da Trilha Inca esperam gorjeta. Taxistas não recebem gorjeta.",
+    "economicPillars": "Mineração, agroexportação e pesca, turismo, construção e serviços."
+   }
+  },
+  "itin": {
+   "routeName": "Rota inca pelo Peru: Lima, Vale Sagrado, Machu Picchu e Cusco",
+   "routeSummary": "Um roteiro de 8 dias que começa pela gastronomia de Lima, segue de avião para Cusco com uma primeira parada de aclimatação no Vale Sagrado, continua de trem até Machu Picchu e termina na capital inca, Cusco.",
+   "totalDays": 8,
+   "idealDurationText": "Roteiro de 8 dias",
+   "bestSeason": "Maio – setembro",
+   "transportMode": "Voo doméstico Lima – Cusco + táxi/passeios no Vale Sagrado + trem Ollantaytambo – Aguas Calientes (PeruRail / Inca Rail)",
+   "paceLevel": "Equilibrado (história, cultura e altitude)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Lima (capital gastronômica)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Malecón de Miraflores e vista para o Pacífico",
+      "Centro Histórico e catacumbas de San Francisco",
+      "Bairro boêmio de Barranco",
+      "Museu Larco"
+     ],
+     "activities": [
+      "Almoce ceviche em uma cevicheria.",
+      "Percorra o Malecón de bicicleta e veja os parapentes.",
+      "Passeie ao entardecer pela Ponte dos Suspiros, em Barranco."
+     ],
+     "foodAndDrinks": [
+      "Ceviche",
+      "Anticuchos",
+      "Chicha morada"
+     ],
+     "criticalTips": [
+      "O ceviche é tradicionalmente um prato de almoço; coma ao meio-dia.",
+      "Locomova-se de Uber ou Cabify e tome cuidado no Centro à noite."
+     ],
+     "mapsQuery": "Lima, Perú"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Vale Sagrado (Pisac, Urubamba, Ollantaytambo)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Ruínas e mercado de Pisac",
+      "Fortaleza de Ollantaytambo",
+      "Terraços circulares de Moray",
+      "Salinas de Maras"
+     ],
+     "activities": [
+      "Confira os tecidos feitos à mão no mercado de Pisac.",
+      "Visite Maras e Moray no mesmo dia.",
+      "Caminhe pelas ruas incas de Ollantaytambo."
+     ],
+     "foodAndDrinks": [
+      "Choclo con queso (milho com queijo)",
+      "Truta grelhada",
+      "Chá de coca"
+     ],
+     "criticalTips": [
+      "O vale fica a 2.800 – 2.900 m; dormir aqui antes de Cusco facilita a aclimatação.",
+      "Muitos sítios exigem o Boleto Turístico del Cusco; leve soles em dinheiro vivo."
+     ],
+     "mapsQuery": "Valle Sagrado, Cusco, Perú"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Machu Picchu (Aguas Calientes)",
+     "recommendedDuration": "1 dia",
+     "durationBadge": "1 dia",
+     "highlights": [
+      "Cidadela de Machu Picchu",
+      "Huayna Picchu (ingresso à parte)",
+      "Porta do Sol (Inti Punku)"
+     ],
+     "activities": [
+      "Pegue o trem panorâmico de Ollantaytambo até Aguas Calientes.",
+      "Suba cedo à cidadela e escale o Huayna Picchu.",
+      "Relaxe à tarde nas águas termais de Aguas Calientes."
+     ],
+     "foodAndDrinks": [
+      "Lomo saltado",
+      "Sopa de quinoa"
+     ],
+     "criticalTips": [
+      "Os ingressos têm horário e circuito definidos e esgotam rápido; é preciso mostrar o passaporte na entrada.",
+      "As licenças da Trilha Inca clássica de 4 dias esgotam com meses de antecedência e só podem ser obtidas com operadores autorizados."
+     ],
+     "mapsQuery": "Machu Picchu, Cusco, Perú"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Cusco (capital inca)",
+     "recommendedDuration": "3 dias",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Plaza de Armas e Catedral",
+      "Qorikancha (Templo do Sol)",
+      "Sacsayhuamán",
+      "Passeio à Montanha Colorida (Vinicunca)"
+     ],
+     "activities": [
+      "Tome um suco e explore os produtos do Mercado San Pedro.",
+      "Percorra os ateliês de artesanato nas ruas de San Blas.",
+      "Saia bem cedo para a Montanha Colorida (~5.000 m)."
+     ],
+     "foodAndDrinks": [
+      "Cuy al horno (porquinho-da-índia assado)",
+      "Chá de coca"
+     ],
+     "criticalTips": [
+      "Cusco fica a 3.400 m; as noites são frias, vá com calma e modere no álcool.",
+      "Escolha agências autorizadas e bem avaliadas em vez dos aliciadores (jaladores) da Plaza de Armas."
+     ],
+     "mapsQuery": "Cusco, Perú"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Ceviche",
+     "Lomo saltado",
+     "Ají de gallina"
+    ],
+    "drinks": [
+     "Pisco sour (alcoólico)",
+     "Inca Kola",
+     "Chicha morada"
+    ],
+    "streetFoods": [
+     "Anticuchos",
+     "Picarones",
+     "Salchipapas"
+    ],
+    "diningAdvice": "Os menus de almoço (sopa + prato principal + bebida) são a opção mais barata. Coma leve nos primeiros dias na altitude e evite saladas cruas e água da torneira."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptador de tomada tipo A/C",
+     "Roupas quentes em camadas (as noites andinas são muito frias)",
+     "Protetor solar de fator alto e chapéu",
+     "Medicação para o soroche, com orientação do seu médico"
+    ],
+    "safetyAndEtiquette": [
+     "Leve uma cópia do passaporte; o original é exigido na entrada de Machu Picchu.",
+     "Peça permissão antes de fotografar pessoas e locais sagrados."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "A",
+     "C"
+    ],
+    "voltage": "220V",
+    "frequency": "60Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "A maioria das tomadas aceita pinos chatos americanos (A) e pinos redondos finos europeus (C); em prédios antigos pode haver só o tipo A. Leve adaptador para plugues Schuko (F) grossos. Com 220 V, os aparelhos turcos funcionam sem problema."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Não beba água da torneira; use água engarrafada, fervida ou filtrada. Cuidado com o gelo e com verduras cruas lavadas.",
+    "vaccines": [
+     "Recomendam-se hepatite A e febre tifoide",
+     "Febre amarela: recomendada para áreas amazônicas abaixo de 2.300 m; não é necessária para Lima, Cusco nem Machu Picchu",
+     "Preparação para o mal de altitude (com orientação médica)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "106"
+   },
+   "tipping": {
+    "custom": "Nos restaurantes turísticos, costuma-se deixar 10 %, mas não é obrigatório.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Separe um orçamento à parte para gorjetas de guias, motoristas e carregadores da Trilha Inca."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Pouco difundido nas compras; isenção do IGV de 18 % em hotéis",
+    "minSpend": "Não se aplica",
+    "customsNote": "No Peru, não há devolução de IGV amplamente disponível para turistas nas compras. Turistas estrangeiros que apresentam o passaporte e o registro de entrada no hotel (estadias de até 60 dias) não pagam o IGV de 18 %."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 0,50 - 1,50",
+    "topCarriers": [
+     "Claro",
+     "Movistar",
+     "Entel",
+     "Bitel"
+    ],
+    "airportSimTrapWarning": "Os quiosques do aeroporto de Lima são mais caros que os da cidade; para um chip local, vá com o passaporte à Claro ou à Entel, ou configure um eSIM antes. No Vale Sagrado e na serra, Claro e Movistar costumam ter sinal melhor."
+   },
+   "touristScams": [
+    {
+     "title": "Táxis informais",
+     "desc": "Em táxis informais pegos fora do aeroporto e dos terminais, ocorrem assaltos e sequestros-relâmpago.",
+     "tip": "Use os balcões oficiais de táxi ou Uber/Cabify."
+    },
+    {
+     "title": "Cambistas de rua",
+     "desc": "Com calculadoras adulteradas, eles dão menos dinheiro ou misturam notas falsas.",
+     "tip": "Use caixas eletrônicos ou casas de câmbio oficiais e confira as notas na hora."
+    },
+    {
+     "title": "Ingressos falsos para Machu Picchu",
+     "desc": "Quem vende ingressos “de última hora” ou pacotes baratos nas ruas de Cusco pode entregar ingressos inválidos.",
+     "tip": "Compre no site oficial ou em agência autorizada e confira se seu nome e passaporte constam no ingresso."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Перуанский соль (PEN)",

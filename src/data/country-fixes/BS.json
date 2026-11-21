@@ -1435,6 +1435,365 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Dólar bahamense (BSD)",
+   "plugType": "Tipo A, B (120V, 60Hz)",
+   "bestMonths": "Meados de dezembro a abril (seco e ameno); de junho a novembro é temporada de furacões, com risco maior de agosto a outubro (o furacão Dorian devastou Abaco e Grand Bahama em 2019)",
+   "safety": {
+    "safetyScore": 55,
+    "safetyLevel": "Risco moderado",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60",
+    "crimeRateSummary": "As Out Islands costumam ser tranquilas, mas em Nassau e Freeport há assaltos à mão armada, furtos e agressões sexuais, principalmente na região de “Over-the-Hill” e à noite. Os EUA emitiram um alerta sobre agressões cometidas por operadores de jet ski em Nassau e Paradise Island.",
+    "commonScams": [
+     "Locadores de jet ski sem licença (risco de golpe e de agressão)",
+     "Táxis com tarifa por zona em vez de taxímetro, que acrescentam cobranças extras por pessoa",
+     "Produtos de marca falsificados vendidos como “originais” no Straw Market e na rua"
+    ],
+    "safeTravelTips": [
+     "Evite alugar jet ski em Nassau e Paradise Island; contrate as atividades aquáticas pelo hotel ou com operadores licenciados.",
+     "À noite, não caminhe fora do centro de Nassau e peça o táxi pelo hotel.",
+     "Na temporada de furacões, confirme se o seu seguro cobre cancelamento e evacuação."
+    ],
+    "emergencyNumbers": {
+     "police": "911",
+     "ambulance": "911",
+     "general": "911"
+    }
+   },
+   "internet": {
+    "networkCoverage": "4G/LTE bom em Nassau, Freeport e nas ilhas maiores; fraco nos cayos pequenos",
+    "costPerGbUsd": "~US$ 4,00 - 8,00",
+    "esimAvailability": "Boa (os planos de eSIM internacionais funcionam)",
+    "bestCarriers": [
+     "BTC",
+     "Aliv",
+     "Airalo / Holafly eSIM"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Média (ônibus jitney em Nassau; voos e balsas entre as ilhas)",
+    "costLevel": "Muito caro",
+    "singleTicketUsd": "1,25 - 2,00 $ (ônibus jitney de Nassau)",
+    "dailyPassUsd": "Não existe",
+    "popularRideApps": [
+     "Sem Uber / Bolt",
+     "Táxis licenciados com tarifa por zona",
+     "Ônibus jitney e balsas entre as ilhas"
+    ],
+    "taxiAdvice": "Uber e Bolt não funcionam no país. Os táxis cobram tarifas oficiais por zona; pergunte o preço e as cobranças extras por pessoa antes de entrar. Os jitneys de Nassau são baratos, mas param de circular cedo. Entre as ilhas, usam-se a Bahamasair e pequenas companhias aéreas ou a Bahamas Fast Ferries; com carro alugado, dirige-se pela esquerda."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 100 - 150",
+    "dailyBudgetMidrangeUsd": "US$ 250 - 400",
+    "budgetMealUsd": "US$ 15 - 30",
+    "coffeeUsd": "US$ 3,00 - 6,00",
+    "waterBottleUsd": "US$ 2,00 - 3,00",
+    "hostelDormUsd": "US$ 40 - 70",
+    "hotel3StarUsd": "US$ 180 - 350",
+    "flightCostIndex": "Alto (sem voos diretos da Turquia nem da Espanha)",
+    "flightTip": "Para chegar a Nassau (NAS), o comum é ir via Londres (voo direto da British Airways) ou pelos EUA (Miami, Nova York); para as Out Islands, pegam-se voos domésticos a partir de Nassau."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Espera-se que você diga “Good morning / Good afternoon” ao entrar em qualquer lugar.",
+     "Andar de roupa de banho pelo centro de Nassau ou entrar assim nas lojas é malvisto.",
+     "Peça permissão antes de fotografar pessoas, principalmente crianças."
+    ],
+    "festivals": [
+     "Junkanoo (26 de dezembro e 1º de janeiro; desfile de fantasias na Bay Street, Nassau)",
+     "Dia da Independência (10 de julho)",
+     "National Family Island Regatta (abril, George Town, Exuma)"
+    ],
+    "lifestyle": "Uma vida de ilha descontraída, marcada pela música junkanoo, pelas barracas de conch (caramujo-rainha) e pelas comunidades religiosas; nas Out Islands tudo anda bem mais devagar."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Pig Beach (Big Major Cay, Exuma – porcos nadadores)",
+     "Pink Sands Beach (Harbour Island)",
+     "Dean’s Blue Hole (Long Island)",
+     "Thunderball Grotto (Exuma)",
+     "Queen’s Staircase e Fort Fincastle, Nassau",
+     "Glass Window Bridge (Eleuthera)"
+    ],
+    "bestSeasons": "Dezembro a abril",
+    "travelStyleTip": "Passe alguns dias em Nassau e depois pegue um voo ou uma balsa para Out Islands como Eleuthera e Exuma para ver a verdadeira beleza do país; conte com um orçamento alto."
+   },
+   "religion": {
+    "primaryReligions": "Cristãos ~93% (batistas ~31-35%, anglicanos ~14%, católicos ~12%, pentecostais e outros)",
+    "respectNorms": "Os cultos de domingo são um evento social importante; entre nas igrejas bem-vestido.",
+    "sacredSites": [
+     "Catedral de Christ Church (Nassau)",
+     "Catedral de São Francisco Xavier (Nassau)",
+     "The Hermitage no Monte Alvernia (Cat Island, ponto mais alto do país)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "O inglês é a língua oficial; no dia a dia se fala o crioulo bahamense.",
+    "englishProficiency": "Excelente; todo mundo fala inglês.",
+    "phrases": [
+     {
+      "phrase": "Good mornin’",
+      "meaning": "Bom dia (sempre cumprimente ao entrar)",
+      "translation": "Bom dia",
+      "pronunciation": "gud MOR-nin"
+     },
+     {
+      "phrase": "Wha’ ya sayin’?",
+      "meaning": "O que você conta? / Tudo bem?",
+      "translation": "E aí, tudo bem?",
+      "pronunciation": "wha ya SAY-in"
+     },
+     {
+      "phrase": "I dey",
+      "meaning": "Estou bem, estou aqui",
+      "translation": "Tudo bem",
+      "pronunciation": "eye DAY"
+     },
+     {
+      "phrase": "Sip sip",
+      "meaning": "Fofoca",
+      "translation": "Fofoca",
+      "pronunciation": "SIP sip"
+     },
+     {
+      "phrase": "Mudda sick!",
+      "meaning": "Incrível! (exclamação de surpresa)",
+      "translation": "Não acredito!",
+      "pronunciation": "MUD-da SICK"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Habitadas pelos lucaios (taínos), as ilhas foram o primeiro lugar do Novo Mundo onde Colombo desembarcou, em 1492 (San Salvador). Depois da era dos piratas, tornaram-se colônia da Coroa britânica em 1718 e, após a independência dos Estados Unidos, receberam colonos leais à Coroa. As Bahamas se tornaram independentes em 10 de julho de 1973.",
+    "milestones": [
+     "1492: Colombo desembarca em San Salvador",
+     "1718: Colônia da Coroa britânica e fim da pirataria",
+     "1973: Independência (10 de julho)",
+     "2019: Furacão Dorian"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Cracked conch e conch salad (caramujo-rainha, o grande favorito nacional)",
+     "Stew fish com peas ’n’ rice (ensopado de peixe e arroz com ervilhas)",
+     "Lagosta-espinhosa bahamense"
+    ],
+    "traditionalDrinks": [
+     "Cervejas Kalik e Sands",
+     "Sky juice (gim, água de coco e leite condensado)",
+     "Goombay Smash (coquetel de rum)"
+    ],
+    "streetFoodAndDesserts": [
+     "Bolinhos de conch no Arawak Cay Fish Fry",
+     "Guava duff (sobremesa de goiaba)",
+     "Bolo de rum bahamense"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Sir Sidney Poitier (ator vencedor do Oscar)",
+     "Sir Lynden Pindling (líder da independência e primeiro primeiro-ministro)",
+     "Shaunae Miller-Uibo (campeã olímpica de velocidade)"
+    ],
+    "strongSectors": [
+     "Turismo (quase metade da economia)",
+     "Serviços financeiros",
+     "Pesca (lagosta)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "O dólar bahamense tem paridade de 1:1 com o dólar americano, que é aceito em todo lugar. Cartões são comuns; nas Out Islands e em barracas pequenas é preciso dinheiro vivo.",
+    "tippingCulture": "As contas costumam incluir automaticamente 15% de gorjeta; se não incluírem, espera-se 15-20%.",
+    "economicPillars": "Turismo, serviços financeiros, pesca e transporte marítimo."
+   }
+  },
+  "itin": {
+   "routeName": "Roteiro pelas ilhas das Bahamas: Nassau, Eleuthera e Harbour Island, Exuma",
+   "routeSummary": "Um roteiro de 7 dias pelas ilhas, das coloridas ruas coloniais de Nassau às areias cor-de-rosa de Harbour Island e aos cayos turquesa de Exuma, com seus porcos nadadores e a Thunderball Grotto.",
+   "totalDays": 7,
+   "idealDurationText": "Roteiro de 7 dias",
+   "bestSeason": "Dezembro a abril",
+   "transportMode": "Voos domésticos (Bahamasair) + balsa (Bahamas Fast Ferries) + passeio de barco por Exuma",
+   "paceLevel": "Tranquilo (praia + mar + vida de ilha)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Nassau e Paradise Island (capital)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Queen’s Staircase e Fort Fincastle",
+      "Bay Street e o Straw Market",
+      "Arawak Cay Fish Fry",
+      "Cable Beach"
+     ],
+     "activities": [
+      "Suba os 66 degraus da Queen’s Staircase e aprecie o porto do alto do Fort Fincastle.",
+      "Veja a conch salad sendo preparada na hora em Arawak Cay e experimente.",
+      "Dê um mergulho em Cable Beach."
+     ],
+     "foodAndDrinks": [
+      "Conch salad",
+      "Cerveja Kalik",
+      "Guava duff"
+     ],
+     "criticalTips": [
+      "Não alugue jet ski; os EUA emitiram alerta sobre eles.",
+      "Nos dias de navios de cruzeiro, o centro fica muito cheio."
+     ],
+     "mapsQuery": "Nassau, Bahamas"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Eleuthera e Harbour Island (areias cor-de-rosa)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Pink Sands Beach",
+      "Casas coloridas de Dunmore Town",
+      "Glass Window Bridge",
+      "Gregory Town e as piscinas naturais Queen’s Baths"
+     ],
+     "activities": [
+      "Percorra Harbour Island de carrinho de golfe.",
+      "Veja na Glass Window Bridge o contraste de cores entre o Atlântico e o Caribe.",
+      "Caminhe pela areia cor-de-rosa ao pôr do sol."
+     ],
+     "foodAndDrinks": [
+      "Lagosta grelhada",
+      "Doces de abacaxi (Gregory Town)"
+     ],
+     "criticalTips": [
+      "A balsa de Nassau leva ~2-3 horas; se o mar estiver agitado, é melhor ir de avião.",
+      "Não suba nas pedras dos Queen’s Baths com o mar bravo."
+     ],
+     "mapsQuery": "Harbour Island, Eleuthera, Bahamas"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Exuma (cayos turquesa)",
+     "recommendedDuration": "3 dias",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Pig Beach, Big Major Cay",
+      "Thunderball Grotto (Staniel Cay)",
+      "Tubarões-lixa de Compass Cay",
+      "Exuma Cays Land and Sea Park"
+     ],
+     "activities": [
+      "Faça um passeio de barco de dia inteiro até os porcos nadadores e os bancos de areia.",
+      "Faça snorkel na Thunderball Grotto (fique de olho nas marés).",
+      "Nade com os inofensivos tubarões-lixa em Compass Cay."
+     ],
+     "foodAndDrinks": [
+      "Bolinhos de conch",
+      "Peixe fresco com peas ’n’ rice",
+      "Goombay Smash"
+     ],
+     "criticalTips": [
+      "Não dê álcool aos porcos nem comida na areia; respeite as regras.",
+      "O sol e o reflexo do mar são muito fortes; chapéu e protetor solar são indispensáveis."
+     ],
+     "mapsQuery": "Staniel Cay, Exuma, Bahamas"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Cracked conch e conch salad (caramujo-rainha, o grande favorito nacional)",
+     "Stew fish com peas ’n’ rice (ensopado de peixe e arroz com ervilhas)",
+     "Lagosta-espinhosa bahamense"
+    ],
+    "drinks": [
+     "Cervejas Kalik e Sands",
+     "Sky juice (gim, água de coco e leite condensado)",
+     "Goombay Smash (coquetel de rum)"
+    ],
+    "streetFoods": [
+     "Bolinhos de conch no Arawak Cay Fish Fry",
+     "Guava duff (sobremesa de goiaba)",
+     "Bolo de rum bahamense"
+    ],
+    "diningAdvice": "Os restaurantes podem ser muito caros; Arawak Cay e as barracas locais de conch são mais em conta. Verifique se a conta já inclui os 15% de gorjeta e os 10% de IVA."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptador de tomada tipo A/B (120V; aparelhos bivolt)",
+     "Protetor solar seguro para recifes",
+     "Equipamento de snorkel",
+     "Repelente de mosquitos"
+    ],
+    "safetyAndEtiquette": [
+     "Fique longe de operadores de jet ski e de barcos sem licença.",
+     "Não passeie pela cidade em roupa de banho."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "A",
+     "B"
+    ],
+    "voltage": "120V",
+    "frequency": "60Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Tipos A e B (pinos chatos, padrão americano), 120V / 60Hz. Plugues europeus precisam de adaptador, e aparelhos que só funcionam em 230V precisam de conversor."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "A água encanada de Nassau é tratada, mas tem gosto salgado, e nas Out Islands a qualidade varia; recomenda-se água engarrafada.",
+    "vaccines": [
+     "Vacinas de rotina (tétano, difteria, tríplice viral)",
+     "Hepatite A",
+     "Febre amarela: certificado apenas se você chegar de um país de risco",
+     "Precauções contra mosquitos por causa da dengue"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "911"
+   },
+   "tipping": {
+    "custom": "Os restaurantes costumam acrescentar automaticamente 15%; se não acrescentarem, deixe 15-20%.",
+    "standardPercent": 15,
+    "rule": "expected",
+    "note": "Para taxistas, deixa-se 10-15%, e para carregadores de bagagem, 1-2 $ por volume."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA de 10%; sem restituição para turistas",
+    "minSpend": "Não se aplica",
+    "customsNote": "Não há restituição do IVA, mas as lojas duty-free de Nassau vendem artigos de luxo, como joias, relógios e perfumes, sem tarifas alfandegárias."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "~US$ 4,00 - 8,00",
+    "topCarriers": [
+     "BTC",
+     "Aliv"
+    ],
+    "airportSimTrapWarning": "Os chips turísticos do aeroporto são caros; instale um eSIM ou compre um chip pré-pago em uma loja da BTC ou da Aliv em Nassau."
+   },
+   "touristScams": [
+    {
+     "title": "Armadilha do jet ski",
+     "desc": "Locadores sem licença cobram danos inexistentes, e há denúncias de agressões.",
+     "tip": "Não alugue jet ski; contrate as atividades pelo hotel."
+    },
+    {
+     "title": "Tarifa de táxi por zona",
+     "desc": "Acrescentam cobranças extras por pessoa e por bagagem.",
+     "tip": "Pergunte a tarifa e o valor total antes de entrar."
+    },
+    {
+     "title": "Falsificações",
+     "desc": "No Straw Market e na rua, vendem imitações como se fossem originais.",
+     "tip": "Faça as compras caras em lojas oficiais."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Багамский доллар (BSD)",

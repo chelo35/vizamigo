@@ -1523,6 +1523,387 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Peso uruguaio (UYU)",
+   "plugType": "C, F, I, L (220V, 50Hz)",
+   "bestMonths": "Dezembro a março (verão, temporada de praia e Carnaval); outubro a novembro e abril são tranquilos e de clima ameno",
+   "safety": {
+    "crimeRateSummary": "É um dos países relativamente seguros da região, embora os crimes violentos e ligados ao tráfico de drogas tenham aumentado. Para turistas, os principais riscos são roubos por arrancão, assaltos e arrombamentos de carros em Montevidéu (sobretudo à noite na Ciudad Vieja e no Centro).",
+    "commonScams": [
+     "Motochorros (ladrões de moto) que arrancam celulares e bolsas",
+     "Sujam sua roupa e, enquanto 'ajudam' a limpar, roubam sua carteira",
+     "Furto de pertences deixados nas praias e na Rambla"
+    ],
+    "safeTravelTips": [
+     "À noite, evite as ruas transversais da Ciudad Vieja e volte de Uber ou táxi.",
+     "Não ande com o celular na mão pela rua, principalmente perto do meio-fio.",
+     "Não deixe nada à vista no carro e use estacionamentos vigiados."
+    ],
+    "emergencyNumbers": {
+     "police": "911",
+     "ambulance": "911",
+     "general": "911"
+    },
+    "safetyScore": 65,
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Cobertura muito boa, com 4G LTE em todo o país e 5G em Montevidéu; uma das melhores redes de fibra da América Latina.",
+    "costPerGbUsd": "~US$ 1,50 - 4",
+    "esimAvailability": "Boa",
+    "bestCarriers": [
+     "Antel",
+     "Movistar",
+     "Claro"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Bom (rede de ônibus intermunicipais)",
+    "costLevel": "Moderado a caro",
+    "singleTicketUsd": "US$ 1,30 - 1,80 (ônibus de Montevidéu, STM)",
+    "dailyPassUsd": "Não há passe diário; integração em até 1 hora com o cartão STM",
+    "popularRideApps": [
+     "Uber",
+     "Cabify",
+     "Táxis com taxímetro",
+     "Ônibus intermunicipais saindo do Tres Cruces"
+    ],
+    "taxiAdvice": "Em Montevidéu, Uber e Cabify são comuns; os táxis oficiais usam taxímetro, com tarifa noturna mais alta. Do terminal Tres Cruces saem ônibus confortáveis (COT, Copsa, Rutas del Sol) para Colonia, Punta del Este e o litoral leste."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 50 - 75",
+    "dailyBudgetMidrangeUsd": "US$ 120 - 200",
+    "budgetMealUsd": "US$ 12 - 22",
+    "coffeeUsd": "US$ 2,50 - 4,50",
+    "waterBottleUsd": "US$ 1 - 2",
+    "hostelDormUsd": "US$ 18 - 35",
+    "hotel3StarUsd": "US$ 80 - 140",
+    "flightCostIndex": "Alto",
+    "flightTip": "Montevidéu (MVD) tem voos diretos de Madri; também são comuns as conexões via São Paulo e Buenos Aires. Muitas vezes sai mais barato voar para Buenos Aires e atravessar de ferry (Buquebus/Colonia Express) até Colonia ou Montevidéu."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "É comum dar um beijo no rosto ao cumprimentar e se despedir (inclusive entre homens).",
+     "O mate é compartilhado: aceite o que oferecerem; dizer 'obrigado' (gracias) significa que você não quer mais.",
+     "O jantar é tarde (depois das 21h); pequenos atrasos são normais.",
+     "A paixão pelo futebol é enorme; cuidado ao tomar partido entre Peñarol e Nacional."
+    ],
+    "festivals": [
+     "Carnaval de Montevidéu (janeiro a março, um dos mais longos do mundo; murga e candombe)",
+     "Desfile de Llamadas (fevereiro, candombe pelos bairros Sur e Palermo)",
+     "Semana Criolla / Semana de Turismo (Semana Santa, rodeios gaúchos)"
+    ],
+    "lifestyle": "Sociedade tranquila, laica e descontraída: andar com a garrafa térmica e o mate, passear pela Rambla, o churrasco de domingo e o futebol fazem parte do dia a dia. O país é conhecido por suas leis liberais e pela democracia estável."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Bairro Histórico de Colonia del Sacramento – UNESCO",
+     "Montevidéu: Ciudad Vieja, Mercado del Puerto e a Rambla",
+     "Punta del Este (escultura La Mano) e Casapueblo",
+     "Cabo Polonio (vilarejo entre dunas, sem rede elétrica, com lobos-marinhos)",
+     "Praias de José Ignacio e Punta del Diablo",
+     "Vinícolas de Carmelo e Canelones (vinho Tannat)"
+    ],
+    "bestSeasons": "Dezembro a março (verão, temporada de praia e Carnaval); outubro a novembro e abril são tranquilos e de clima ameno",
+    "travelStyleTip": "O país é pequeno e tem boa rede de ônibus; o trajeto de oeste a leste Colonia–Montevidéu–Punta del Este–Rocha cabe com folga em uma semana. Em janeiro, Punta del Este fica lotada e cara; o fim de fevereiro e março são mais tranquilos."
+   },
+   "religion": {
+    "primaryReligions": "O país mais laico da América Latina: sem religião ou com fé sem filiação (~40-45 %), católicos (~35 %), protestantes e evangélicos (~10 %), pequenas comunidades judaica e afro-brasileira (umbanda)",
+    "respectNorms": "Igreja e Estado são rigorosamente separados; o Natal é oficialmente o 'Dia da Família' e a Semana Santa, a 'Semana de Turismo'. Nas igrejas, roupas simples bastam.",
+    "sacredSites": [
+     "Catedral Metropolitana de Montevidéu (Ciudad Vieja)",
+     "Basílica do Santíssimo Sacramento de Colonia (a igreja mais antiga do país)",
+     "Cerro del Toro e Virgem Stella Maris em Piriápolis"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Espanhol (variante rio-platense: voseo e o som de 'sh'); portunhol na fronteira com o Brasil",
+    "englishProficiency": "Moderado; em Montevidéu e Punta del Este, o setor de turismo fala inglês; no interior, é preciso espanhol.",
+    "phrases": [
+     {
+      "phrase": "¡Buen día!",
+      "meaning": "Bom dia / Olá",
+      "translation": "Bom dia / Olá",
+      "pronunciation": "buen DÍ-a"
+     },
+     {
+      "phrase": "Gracias",
+      "meaning": "Obrigado(a)",
+      "translation": "Obrigado(a)",
+      "pronunciation": "GRA-ssias"
+     },
+     {
+      "phrase": "¿Cuánto sale?",
+      "meaning": "Quanto custa?",
+      "translation": "Quanto custa?",
+      "pronunciation": "KUAN-to SA-le"
+     },
+     {
+      "phrase": "¡Ta!",
+      "meaning": "Tá bom! / Combinado! (bem uruguaio)",
+      "translation": "Tá bom! / Combinado! (bem uruguaio)",
+      "pronunciation": "TA"
+     },
+     {
+      "phrase": "La cuenta, por favor",
+      "meaning": "A conta, por favor",
+      "translation": "A conta, por favor",
+      "pronunciation": "la KUEN-ta por fa-VOR"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "A região era habitada por povos originários como os charruas. Os portugueses fundaram Colonia del Sacramento em 1680, e os espanhóis, Montevidéu em 1724-1726. Depois da luta pela independência liderada por José Artigas e de um período de domínio brasileiro, a independência foi declarada em 25 de agosto de 1825, e em 1830 foi aprovada a primeira Constituição. O Uruguai sediou e venceu a primeira Copa do Mundo, em 1930, e voltou a vencê-la em 1950, com o 'Maracanazo'. Após a ditadura de 1973-1985, recuperou a democracia.",
+    "milestones": [
+     "1680 – Os portugueses fundam Colonia del Sacramento",
+     "25 de agosto de 1825 – Declaração de Independência",
+     "1930 – Sede e campeão da primeira Copa do Mundo da FIFA",
+     "1985 – Retorno à democracia"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Chivito (sanduíche com filé, presunto, queijo e ovo)",
+     "Asado (carnes na parrilla a lenha)",
+     "Milanesa (à milanesa de carne ou de frango)"
+    ],
+    "traditionalDrinks": [
+     "Mate (erva-mate)",
+     "Vinho Tannat",
+     "Medio y medio e grappamiel"
+    ],
+    "streetFoodAndDesserts": [
+     "Torta frita (clássico dos dias de chuva)",
+     "Alfajores e doce de leite",
+     "Chajá (sobremesa de merengue e pão de ló de Paysandú)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "José Gervasio Artigas (herói nacional)",
+     "Eduardo Galeano (escritor)",
+     "Luis Suárez (jogador de futebol)"
+    ],
+    "strongSectors": [
+     "Carne bovina e agronegócio (soja, arroz, laticínios)",
+     "Celulose e silvicultura",
+     "Serviços de software e energias renováveis"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Cartões e pagamento por aproximação são aceitos em toda parte; pagando com cartão estrangeiro, você tem desconto do IVA em restaurantes e alguns serviços turísticos. O dólar é muito usado em hotéis e imóveis.",
+    "economicPillars": "Agropecuária (carne, soja), celulose, exportação de software e serviços, turismo e eletricidade quase totalmente renovável.",
+    "tippingCulture": "Nos restaurantes, deixa-se 10 %, que normalmente não vem incluído na conta."
+   }
+  },
+  "itin": {
+   "routeName": "Do Rio da Prata ao Atlântico: Colonia, Montevidéu, Punta del Este e Cabo Polonio",
+   "routeSummary": "Roteiro de 9 dias de oeste a leste: as ruas de pedra de Colonia (UNESCO), a Rambla e a cultura do churrasco em Montevidéu, as praias de Punta del Este e o Cabo Polonio, sem rede elétrica, no litoral de Rocha.",
+   "totalDays": 9,
+   "idealDurationText": "Roteiro de 8 a 10 dias",
+   "bestSeason": "Dezembro a março (verão, temporada de praia e Carnaval); outubro a novembro e abril são tranquilos e de clima ameno",
+   "transportMode": "Ônibus intermunicipais (COT, Copsa, Rutas del Sol) ou carro alugado; Uber/Cabify em Montevidéu",
+   "paceLevel": "Equilibrado (história, cidade e praia)",
+   "stops": [
+    {
+     "name": "Parada 1: Colonia del Sacramento (centro histórico da UNESCO)",
+     "recommendedDuration": "1-2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Calle de los Suspiros",
+      "Farol e Portón de Campo",
+      "Pôr do sol sobre o Rio da Prata"
+     ],
+     "activities": [
+      "Percorra o centro histórico e a orla de carrinho de golfe ou de bike.",
+      "Suba ao farol para ver a cidade do alto.",
+      "Deguste Tannat em vinícolas no caminho para Carmelo."
+     ],
+     "foodAndDrinks": [
+      "Chivito",
+      "Vinho Tannat",
+      "Sobremesas com doce de leite"
+     ],
+     "criticalTips": [
+      "Nos fins de semana, a cidade lota de visitantes de Buenos Aires; durma lá para aproveitar a calma da noite.",
+      "Use calçados confortáveis para as ruas de pedra."
+     ],
+     "mapsQuery": "Colonia del Sacramento, Uruguay",
+     "stopNumber": 1
+    },
+    {
+     "name": "Parada 2: Montevidéu (capital, Rambla e churrasco)",
+     "recommendedDuration": "3 dias",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Ciudad Vieja e Plaza Independencia",
+      "Parrilla no Mercado del Puerto",
+      "Palacio Salvo e Teatro Solís",
+      "Passeio pela Rambla (cerca de 22 km)"
+     ],
+     "activities": [
+      "Faça uma visita guiada ao Teatro Solís.",
+      "Explore a feira de Tristán Narvaja no domingo.",
+      "No Carnaval, assista a uma murga em um tablado."
+     ],
+     "foodAndDrinks": [
+      "Asado e morcilla",
+      "Medio y medio (Café Roldós)",
+      "Torta frita"
+     ],
+     "criticalTips": [
+      "Não caminhe à noite pelas ruas transversais da Ciudad Vieja; use Uber ou táxi.",
+      "Pague com cartão estrangeiro nos restaurantes para ganhar o desconto do IVA."
+     ],
+     "mapsQuery": "Ciudad Vieja, Montevideo, Uruguay",
+     "stopNumber": 2
+    },
+    {
+     "name": "Parada 3: Punta del Este e José Ignacio (praias e arte)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Escultura La Mano (Los Dedos), Playa Brava",
+      "Casapueblo (obra branca de Carlos Páez Vilaró, Punta Ballena)",
+      "Lobos-marinhos da Isla de Lobos (passeio de barco)"
+     ],
+     "activities": [
+      "Assista à cerimônia do pôr do sol na Casapueblo.",
+      "Tome banho na Playa Mansa e veja os surfistas na Brava.",
+      "Almoce no tranquilo vilarejo litorâneo de José Ignacio."
+     ],
+     "foodAndDrinks": [
+      "Frutos do mar frescos e peixe na parrilla",
+      "Clericó"
+     ],
+     "criticalTips": [
+      "Em janeiro, preços e movimento estão no auge; reserve com meses de antecedência.",
+      "Na Playa Brava há correntes fortes; respeite as bandeiras."
+     ],
+     "mapsQuery": "Punta del Este, Uruguay",
+     "stopNumber": 3
+    },
+    {
+     "name": "Parada 4: Cabo Polonio e litoral de Rocha (dunas e lobos-marinhos)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Vilarejo entre dunas, sem rede elétrica",
+      "Farol e colônia de lobos-marinhos",
+      "Punta del Diablo e Parque Nacional Santa Teresa"
+     ],
+     "activities": [
+      "Chegue ao vilarejo atravessando as dunas em caminhões 4x4.",
+      "Observe as estrelas em um céu sem poluição luminosa.",
+      "Entre junho e novembro, aviste baleias-francas a partir da costa."
+     ],
+     "foodAndDrinks": [
+      "Bolinhos de algas",
+      "Peixe fresco e mate"
+     ],
+     "criticalTips": [
+      "No vilarejo quase não há caixas eletrônicos nem pagamento com cartão; leve dinheiro vivo.",
+      "A hospedagem é simples (energia solar/gerador); leve lanterna."
+     ],
+     "mapsQuery": "Cabo Polonio, Rocha, Uruguay",
+     "stopNumber": 4
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Chivito",
+     "Asado",
+     "Milanesa"
+    ],
+    "drinks": [
+     "Mate",
+     "Tannat",
+     "Medio y medio"
+    ],
+    "streetFoods": [
+     "Torta frita",
+     "Alfajor",
+     "Chajá"
+    ],
+    "diningAdvice": "Na parrilla, prove o asado de tira e a entraña; o jantar é depois das 21h. Confira o desconto do IVA ao pagar com cartão estrangeiro e deixe 10 % de gorjeta."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Corta-vento e agasalho leve (até as noites de verão podem ser frescas e com vento)",
+     "Protetor solar (radiação UV alta)",
+     "Calçados confortáveis para caminhar",
+     "Cartão bancário estrangeiro (para o desconto do IVA)"
+    ],
+    "safetyAndEtiquette": [
+     "Não ande com o celular na mão pela rua; cuidado com os motochorros.",
+     "Se oferecerem mate, aceite: compartilhá-lo é sinal de amizade."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F",
+     "I",
+     "L"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Tomadas variadas: as europeias C/F são comuns; em prédios novos há tipo I (argentina) e nos antigos, tipo L (italiana). Os plugues europeus encaixam quase sempre, mas vale levar um adaptador universal."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "A água da OSE é tratada e potável; o sabor pode variar em algumas áreas do litoral.",
+    "vaccines": [
+     "Vacinas de rotina (sarampo, tétano-difteria)",
+     "Hepatite A (recomendada)",
+     "Nenhuma vacina especial é exigida para entrar"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "911"
+   },
+   "tipping": {
+    "custom": "Nos restaurantes, costuma-se deixar 10 %.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "A gorjeta normalmente não vem incluída; nos táxis, basta arredondar."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Sem devolução geral de IVA nas compras; desconto do IVA (22 %) em restaurantes, hotéis e aluguel de carros pagando com cartão estrangeiro",
+    "minSpend": "—",
+    "customsNote": "O desconto é aplicado automaticamente no pagamento, sem nenhum procedimento no aeroporto; a abrangência e os percentuais podem mudar, então confira o comprovante. O aeroporto de Carrasco tem free shop."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 1,50 - 4",
+    "topCarriers": [
+     "Antel",
+     "Movistar",
+     "Claro"
+    ],
+    "airportSimTrapWarning": "Os pacotes para turistas no aeroporto podem custar mais do que na cidade; é mais econômico instalar um eSIM antes da viagem ou comprar um chip da Antel na cidade. Também há muito Wi-Fi público gratuito (Antel)."
+   },
+   "touristScams": [
+    {
+     "title": "Motochorros",
+     "desc": "Ladrões em dupla, de moto, arrancam celulares e bolsas de pedestres perto do meio-fio.",
+     "tip": "Leve a bolsa do lado oposto à rua e guarde o celular enquanto caminha."
+    },
+    {
+     "title": "O golpe da mancha",
+     "desc": "Alguém joga mostarda ou algum líquido em você e, enquanto 'ajuda' a limpar, um cúmplice pega sua carteira.",
+     "tip": "Recuse a ajuda com educação, afaste-se e vá para um lugar movimentado."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Уругвайское песо (UYU)",

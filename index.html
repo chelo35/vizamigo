@@ -184,7 +184,7 @@
         <section class="vzs-hero"><div class="vzs-wrap vzs-hero-in">
           <span class="vzs-eye" id="vzs-eye">PASAPORT · VİZE · YOLCULUK</span>
           <h1 class="vzs-h1" id="vzs-h1">Nereye gidiyoruz?</h1>
-          <p class="vzs-lead" id="vzs-lead">199 ülkenin vize kuralı, kalış süresi ve yolculuk hazırlığı tek panoda. Resmî kaynaklı, tarihli, beş dilde.</p>
+          <p class="vzs-lead" id="vzs-lead">199 ülkenin vize kuralı, kalış süresi ve yolculuk hazırlığı tek panoda. Resmî kaynaklı, tarihli, altı dilde.</p>
           <div class="vzs-search"></div>
           <div class="vzs-chips"></div>
         </div><div class="vzs-sea"></div></section>
@@ -193,7 +193,7 @@
         (function () {
           try {
             var m = location.pathname.match(/^\/(en|de|es|ru|pt)(\/|$)/);
-            var t = { en: ['PASSPORT · VISA · TRAVEL', 'Where to next?', 'Visa rules, stay limits and trip prep for 199 countries in one place. Officially sourced, dated, in five languages.'], de: ['PASS · VISUM · REISE', 'Wohin geht’s?', 'Visaregeln, Aufenthaltsdauer und Reisevorbereitung für 199 Länder an einem Ort. Amtlich belegt, datiert, in fünf Sprachen.'], es: ['PASAPORTE · VISADO · VIAJE', '¿A dónde vamos?', 'Reglas de visado, estancias y preparación para 199 países en un solo lugar. Fuentes oficiales, fechadas, en cinco idiomas.'], pt: ['PASSAPORTE · VISTO · VIAGEM', 'Para onde vamos?', 'Regras de visto, tempo de permanência e preparação de viagem para 199 países em um só lugar. Fontes oficiais, datadas, em seis idiomas.'], ru: ['ПАСПОРТ · ВИЗА · ПОЕЗДКА', 'Куда летим?', 'Визовые правила, сроки пребывания и подготовка к поездке для 199 стран в одном месте. Официальные источники, на пяти языках.'] }[m && m[1]];
+            var t = { en: ['PASSPORT · VISA · TRAVEL', 'Where to next?', 'Visa rules, stay limits and trip prep for 199 countries in one place. Officially sourced, dated, in six languages.'], de: ['PASS · VISUM · REISE', 'Wohin geht’s?', 'Visaregeln, Aufenthaltsdauer und Reisevorbereitung für 199 Länder an einem Ort. Amtlich belegt, datiert, in sechs Sprachen.'], es: ['PASAPORTE · VISADO · VIAJE', '¿A dónde vamos?', 'Reglas de visado, estancias y preparación para 199 países en un solo lugar. Fuentes oficiales, fechadas, en seis idiomas.'], pt: ['PASSAPORTE · VISTO · VIAGEM', 'Para onde vamos?', 'Regras de visto, tempo de permanência e preparação de viagem para 199 países em um só lugar. Fontes oficiais, datadas, em seis idiomas.'], ru: ['ПАСПОРТ · ВИЗА · ПОЕЗДКА', 'Куда летим?', 'Визовые правила, сроки пребывания и подготовка к поездке для 199 стран в одном месте. Официальные источники, на шести языках.'] }[m && m[1]];
             if (t) { document.getElementById('vzs-eye').textContent = t[0]; document.getElementById('vzs-h1').textContent = t[1]; document.getElementById('vzs-lead').textContent = t[2]; }
           } catch (e) {}
         })();

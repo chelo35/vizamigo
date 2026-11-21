@@ -47,6 +47,13 @@ export const NotFoundView: React.FC<NotFoundViewProps> = ({
       btn: 'Explorar Catálogo Global',
       suggestionsTitle: 'Destinos Populares:'
     },
+    pt: {
+      badge: '404 NÃO ENCONTRADO',
+      title: 'Destino ou página não encontrado',
+      desc: 'O guia de viagem, ferramenta ou código de país solicitado não existe em nosso registro global.',
+      btn: 'Explorar catálogo global',
+      suggestionsTitle: 'Destinos populares:'
+    },
     ru: {
       badge: '404 ОШИБКА',
       title: 'Направление или страница не найдена',

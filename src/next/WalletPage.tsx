@@ -49,12 +49,12 @@ type W = ReturnType<typeof useWallet>;
 const DocsView: React.FC<{ w: W }> = ({ w }) => {
   const { l, language } = useI18n();
   const types: { id: DocType; label: string; icon: IconName }[] = [
-    { id: 'passport', label: l('Pasaport', 'Passport', 'Reisepass', 'Pasaporte', 'Паспорт'), icon: 'passport' },
-    { id: 'visa', label: l('Vize / e-vize', 'Visa / eVisa', 'Visum', 'Visado', 'Виза'), icon: 'doc' },
-    { id: 'insurance', label: l('Seyahat sigortası', 'Travel insurance', 'Versicherung', 'Seguro', 'Страховка'), icon: 'heart' },
-    { id: 'id', label: l('Kimlik kartı', 'ID card', 'Ausweis', 'DNI', 'ID-карта'), icon: 'card' },
-    { id: 'licence', label: l('Ehliyet', 'Driving licence', 'Führerschein', 'Carné', 'Права'), icon: 'car' },
-    { id: 'other', label: l('Diğer', 'Other', 'Andere', 'Otro', 'Другое'), icon: 'doc' }
+    { id: 'passport', label: l('Pasaport', 'Passport', 'Reisepass', 'Pasaporte', 'Паспорт', 'Passaporte'), icon: 'passport' },
+    { id: 'visa', label: l('Vize / e-vize', 'Visa / eVisa', 'Visum', 'Visado', 'Виза', 'Visto'), icon: 'doc' },
+    { id: 'insurance', label: l('Seyahat sigortası', 'Travel insurance', 'Versicherung', 'Seguro', 'Страховка', 'Seguro'), icon: 'heart' },
+    { id: 'id', label: l('Kimlik kartı', 'ID card', 'Ausweis', 'DNI', 'ID-карта', 'Identidade'), icon: 'card' },
+    { id: 'licence', label: l('Ehliyet', 'Driving licence', 'Führerschein', 'Carné', 'Права', 'CNH'), icon: 'car' },
+    { id: 'other', label: l('Diğer', 'Other', 'Andere', 'Otro', 'Другое', 'Outro'), icon: 'doc' }
   ];
   const [type, setType] = useState<DocType>('passport');
   const [country, setCountry] = useState(w.passport);
@@ -72,19 +72,19 @@ const DocsView: React.FC<{ w: W }> = ({ w }) => {
   };
   return (
     <div className="vz-stack">
-      <div className="vz-note"><Icon name="lock" size={18} duo={false} /><span>{l('Belgeler yalnızca bu cihazda saklanır. Belge numarası istemiyoruz; sadece bitiş tarihi yeter.', 'Documents stay on this device only. No document numbers needed, just the expiry date.', 'Nur auf diesem Gerät gespeichert; nur das Ablaufdatum nötig.', 'Solo en este dispositivo; basta la fecha de caducidad.', 'Хранится только на этом устройстве; нужен лишь срок.')}</span></div>
+      <div className="vz-note"><Icon name="lock" size={18} duo={false} /><span>{l('Belgeler yalnızca bu cihazda saklanır. Belge numarası istemiyoruz; sadece bitiş tarihi yeter.', 'Documents stay on this device only. No document numbers needed, just the expiry date.', 'Nur auf diesem Gerät gespeichert; nur das Ablaufdatum nötig.', 'Solo en este dispositivo; basta la fecha de caducidad.', 'Хранится только на этом устройстве; нужен лишь срок.', 'Só neste dispositivo; basta a data de validade.')}</span></div>
       {w.docs.length === 0 ? (
-        <Empty icon="passport" title={l('Cüzdanın boş', 'Your wallet is empty', 'Wallet ist leer', 'Cartera vacía', 'Кошелёк пуст')} text={l('Pasaportunu ekleyerek başla; bitiş tarihi yaklaşınca seni uyaralım.', 'Start with your passport; we’ll warn you before it expires.', 'Beginne mit deinem Pass.', 'Empieza por tu pasaporte.', 'Начните с паспорта.')}
+        <Empty icon="passport" title={l('Cüzdanın boş', 'Your wallet is empty', 'Wallet ist leer', 'Cartera vacía', 'Кошелёк пуст', 'Carteira vazia')} text={l('Pasaportunu ekleyerek başla; bitiş tarihi yaklaşınca seni uyaralım.', 'Start with your passport; we’ll warn you before it expires.', 'Beginne mit deinem Pass.', 'Empieza por tu pasaporte.', 'Начните с паспорта.', 'Comece pelo seu passaporte.')}
           steps={[
-            l('Belge türünü seç (pasaport, vize, sigorta…)', 'Choose a type (passport, visa, insurance…)', 'Typ wählen (Pass, Visum, Versicherung…)', 'Elige el tipo', 'Выберите тип'),
-            l('Sadece bitiş tarihini gir', 'Enter only the expiry date', 'Nur das Ablaufdatum eingeben', 'Solo la fecha de caducidad', 'Только срок действия'),
-            l('Süre azalınca Uyarılar kutusunda görürsün', 'See it in Alerts when time runs short', 'Hinweis, wenn es knapp wird', 'Te avisamos a tiempo', 'Предупредим заранее')
+            l('Belge türünü seç (pasaport, vize, sigorta…)', 'Choose a type (passport, visa, insurance…)', 'Typ wählen (Pass, Visum, Versicherung…)', 'Elige el tipo', 'Выберите тип', 'Escolha o tipo'),
+            l('Sadece bitiş tarihini gir', 'Enter only the expiry date', 'Nur das Ablaufdatum eingeben', 'Solo la fecha de caducidad', 'Только срок действия', 'Só a data de validade'),
+            l('Süre azalınca Uyarılar kutusunda görürsün', 'See it in Alerts when time runs short', 'Hinweis, wenn es knapp wird', 'Te avisamos a tiempo', 'Предупредим заранее', 'Avisamos você a tempo')
           ]}
         />
       ) : (
         <>
         {w.docs.length > 3 && (
-          <input className="vz-input" type="search" value={docQ} onChange={(e) => setDocQ(e.target.value)} placeholder={l('Belgelerde ara…', 'Search documents…', 'Dokumente suchen…', 'Buscar documentos…', 'Поиск документов…')} aria-label={l('Belgelerde ara', 'Search documents', 'Dokumente suchen', 'Buscar documentos', 'Поиск документов')} />
+          <input className="vz-input" type="search" value={docQ} onChange={(e) => setDocQ(e.target.value)} placeholder={l('Belgelerde ara…', 'Search documents…', 'Dokumente suchen…', 'Buscar documentos…', 'Поиск документов…', 'Buscar documentos…')} aria-label={l('Belgelerde ara', 'Search documents', 'Dokumente suchen', 'Buscar documentos', 'Поиск документов', 'Buscar documentos')} />
         )}
         <div className="vz-grid">
           {w.docs.filter((d) => !docQ.trim() || `${d.title} ${getCountryName(d.country, language)} ${d.type}`.toLocaleLowerCase(language).includes(docQ.trim().toLocaleLowerCase(language))).map((d) => {
@@ -92,12 +92,12 @@ const DocsView: React.FC<{ w: W }> = ({ w }) => {
             const left = daysLeft(d.expiry);
             const tone = left < 0 ? 'warn' : left < 180 ? 'sun' : 'ok';
             return (
-              <Card key={d.id} icon={t.icon} eyebrow={t.label} title={d.title} actions={<button type="button" className="vz-iconbtn" onClick={() => w.setDocs(w.docs.filter((x) => x.id !== d.id))} aria-label={l('Sil', 'Delete', 'Löschen', 'Borrar', 'Удалить')}><Icon name="trash" size={16} duo={false} /></button>}>
+              <Card key={d.id} icon={t.icon} eyebrow={t.label} title={d.title} actions={<button type="button" className="vz-iconbtn" onClick={() => w.setDocs(w.docs.filter((x) => x.id !== d.id))} aria-label={l('Sil', 'Delete', 'Löschen', 'Borrar', 'Удалить', 'Excluir')}><Icon name="trash" size={16} duo={false} /></button>}>
                 <div className="vz-row-flex" style={{ justifyContent: 'space-between' }}>
                   <span className="vz-row-flex" style={{ gap: 8 }}><Flag code={d.country} size="sm" />{getCountryName(d.country, language)}</span>
-                  <span className={`vz-badge tone-${tone}`}>{left < 0 ? l('Süresi doldu', 'Expired', 'Abgelaufen', 'Caducado', 'Истёк') : l(`${left} gün kaldı`, `${left} days left`, `${left} Tage übrig`, `${left} días`, `${left} дн.`)}</span>
+                  <span className={`vz-badge tone-${tone}`}>{left < 0 ? l('Süresi doldu', 'Expired', 'Abgelaufen', 'Caducado', 'Истёк', 'Vencido') : l(`${left} gün kaldı`, `${left} days left`, `${left} Tage übrig`, `${left} días`, `${left} дн.`, `${left} dias`)}</span>
                 </div>
-                <span className="vz-muted" style={{ fontSize: 13 }}>{l('Bitiş', 'Expires', 'Ablauf', 'Caduca', 'Истекает')}: {formatLocalizedDate(dateToDayIndex(d.expiry), language)}</span>
+                <span className="vz-muted" style={{ fontSize: 13 }}>{l('Bitiş', 'Expires', 'Ablauf', 'Caduca', 'Истекает', 'Vence em')}: {formatLocalizedDate(dateToDayIndex(d.expiry), language)}</span>
               </Card>
             );
           })}
@@ -105,22 +105,22 @@ const DocsView: React.FC<{ w: W }> = ({ w }) => {
         </>
       )}
       <form className="vz-card tone-sea" onSubmit={add}>
-        <b>{l('Belge ekle', 'Add a document', 'Dokument hinzufügen', 'Añadir documento', 'Добавить документ')}</b>
+        <b>{l('Belge ekle', 'Add a document', 'Dokument hinzufügen', 'Añadir documento', 'Добавить документ', 'Adicionar documento')}</b>
         <div className="vz-formgrid">
-          <Field label={l('Tür', 'Type', 'Art', 'Tipo', 'Тип')} htmlFor="vz-doc-t">
+          <Field label={l('Tür', 'Type', 'Art', 'Tipo', 'Тип', 'Tipo')} htmlFor="vz-doc-t">
             <select id="vz-doc-t" className="vz-select" value={type} onChange={(e) => setType(e.target.value as DocType)}>{types.map((t) => <option key={t.id} value={t.id}>{t.label}</option>)}</select>
           </Field>
-          <Field label={l('Ülke', 'Country', 'Land', 'País', 'Страна')} htmlFor="vz-doc-c">
+          <Field label={l('Ülke', 'Country', 'Land', 'País', 'Страна', 'País')} htmlFor="vz-doc-c">
             <select id="vz-doc-c" className="vz-select" value={country} onChange={(e) => setCountry(e.target.value)}>{opts.map((o) => <option key={o.c} value={o.c}>{o.n}</option>)}</select>
           </Field>
-          <Field label={l('Bitiş tarihi', 'Expiry date', 'Ablaufdatum', 'Caducidad', 'Срок')} htmlFor="vz-doc-e">
+          <Field label={l('Bitiş tarihi', 'Expiry date', 'Ablaufdatum', 'Caducidad', 'Срок', 'Validade')} htmlFor="vz-doc-e">
             <input id="vz-doc-e" type="date" className="vz-input" value={expiry} onChange={(e) => setExpiry(e.target.value)} required />
           </Field>
-          <Field label={l('Ad (isteğe bağlı)', 'Name (optional)', 'Name (optional)', 'Nombre (opcional)', 'Название')} htmlFor="vz-doc-n">
-            <input id="vz-doc-n" className="vz-input" value={title} onChange={(e) => setTitle(e.target.value)} placeholder={l('Ör. Japonya e-vizesi', 'e.g. Japan eVisa', 'z. B. Japan eVisum', 'p. ej. eVisa Japón', 'напр. eVisa Япония')} />
+          <Field label={l('Ad (isteğe bağlı)', 'Name (optional)', 'Name (optional)', 'Nombre (opcional)', 'Название', 'Nome (opcional)')} htmlFor="vz-doc-n">
+            <input id="vz-doc-n" className="vz-input" value={title} onChange={(e) => setTitle(e.target.value)} placeholder={l('Ör. Japonya e-vizesi', 'e.g. Japan eVisa', 'z. B. Japan eVisum', 'p. ej. eVisa Japón', 'напр. eVisa Япония', 'ex.: e-Visa Japão')} />
           </Field>
         </div>
-        <Btn type="submit" icon="plus" style={{ alignSelf: 'flex-start' }}>{l('Ekle', 'Add', 'Hinzufügen', 'Añadir', 'Добавить')}</Btn>
+        <Btn type="submit" icon="plus" style={{ alignSelf: 'flex-start' }}>{l('Ekle', 'Add', 'Hinzufügen', 'Añadir', 'Добавить', 'Adicionar')}</Btn>
       </form>
     </div>
   );
@@ -130,11 +130,11 @@ const DocsView: React.FC<{ w: W }> = ({ w }) => {
 const TicketsView: React.FC<{ w: W }> = ({ w }) => {
   const { l, language } = useI18n();
   const types: { id: TicketType; label: string; icon: IconName }[] = [
-    { id: 'flight', label: l('Uçuş', 'Flight', 'Flug', 'Vuelo', 'Рейс'), icon: 'plane' },
-    { id: 'hotel', label: l('Konaklama', 'Stay', 'Unterkunft', 'Alojamiento', 'Жильё'), icon: 'bed' },
-    { id: 'train', label: l('Tren / otobüs', 'Train / bus', 'Zug / Bus', 'Tren / bus', 'Поезд / автобус'), icon: 'transit' },
-    { id: 'car', label: l('Araç kiralama', 'Car hire', 'Mietwagen', 'Coche', 'Авто'), icon: 'car' },
-    { id: 'activity', label: l('Etkinlik', 'Activity', 'Aktivität', 'Actividad', 'Экскурсия'), icon: 'ticket' }
+    { id: 'flight', label: l('Uçuş', 'Flight', 'Flug', 'Vuelo', 'Рейс', 'Voo'), icon: 'plane' },
+    { id: 'hotel', label: l('Konaklama', 'Stay', 'Unterkunft', 'Alojamiento', 'Жильё', 'Hospedagem'), icon: 'bed' },
+    { id: 'train', label: l('Tren / otobüs', 'Train / bus', 'Zug / Bus', 'Tren / bus', 'Поезд / автобус', 'Trem / ônibus'), icon: 'transit' },
+    { id: 'car', label: l('Araç kiralama', 'Car hire', 'Mietwagen', 'Coche', 'Авто', 'Carro'), icon: 'car' },
+    { id: 'activity', label: l('Etkinlik', 'Activity', 'Aktivität', 'Actividad', 'Экскурсия', 'Atividade'), icon: 'ticket' }
   ];
   const [type, setType] = useState<TicketType>('flight');
   const [title, setTitle] = useState('');
@@ -159,12 +159,12 @@ const TicketsView: React.FC<{ w: W }> = ({ w }) => {
             key={t.id}
             icon={tt.icon}
             title={t.title}
-            sub={`${formatLocalizedDate(dateToDayIndex(t.date), language)}${t.ref ? ` · ${l('Kod', 'Ref', 'Code', 'Código', 'Код')}: ${t.ref}` : ''}`}
+            sub={`${formatLocalizedDate(dateToDayIndex(t.date), language)}${t.ref ? ` · ${l('Kod', 'Ref', 'Code', 'Código', 'Код', 'Código')}: ${t.ref}` : ''}`}
             right={
               <span className="vz-row-flex" style={{ gap: 6 }}>
-                {left >= 0 && <span className="vz-badge tone-sea">{left === 0 ? l('Bugün', 'Today', 'Heute', 'Hoy', 'Сегодня') : l(`${left} gün`, `${left} d`, `${left} T`, `${left} d`, `${left} д`)}</span>}
-                {t.link && <a className="vz-iconbtn" href={t.link} target="_blank" rel="noopener noreferrer" aria-label={l('Bağlantıyı aç', 'Open link', 'Link öffnen', 'Abrir', 'Открыть')}><Icon name="external" size={16} duo={false} /></a>}
-                <button type="button" className="vz-iconbtn" onClick={() => w.setTickets(w.tickets.filter((x) => x.id !== t.id))} aria-label={l('Sil', 'Delete', 'Löschen', 'Borrar', 'Удалить')}><Icon name="trash" size={16} duo={false} /></button>
+                {left >= 0 && <span className="vz-badge tone-sea">{left === 0 ? l('Bugün', 'Today', 'Heute', 'Hoy', 'Сегодня', 'Hoje') : l(`${left} gün`, `${left} d`, `${left} T`, `${left} d`, `${left} д`, `${left} d`)}</span>}
+                {t.link && <a className="vz-iconbtn" href={t.link} target="_blank" rel="noopener noreferrer" aria-label={l('Bağlantıyı aç', 'Open link', 'Link öffnen', 'Abrir', 'Открыть', 'Abrir')}><Icon name="external" size={16} duo={false} /></a>}
+                <button type="button" className="vz-iconbtn" onClick={() => w.setTickets(w.tickets.filter((x) => x.id !== t.id))} aria-label={l('Sil', 'Delete', 'Löschen', 'Borrar', 'Удалить', 'Excluir')}><Icon name="trash" size={16} duo={false} /></button>
               </span>
             }
           />
@@ -175,33 +175,33 @@ const TicketsView: React.FC<{ w: W }> = ({ w }) => {
   return (
     <div className="vz-stack">
       {w.tickets.length === 0 ? (
-        <Empty icon="ticket" title={l('Henüz bilet yok', 'No bookings yet', 'Noch keine Buchungen', 'Sin reservas', 'Нет броней')} text={l('Uçuş, otel ve tren rezervasyonlarını tarihleriyle ekle; geri sayım burada görünsün.', 'Add flights, hotels and trains with dates to see a countdown here.', 'Buchungen mit Datum hinzufügen.', 'Añade reservas con fechas.', 'Добавьте брони с датами.')} />
+        <Empty icon="ticket" title={l('Henüz bilet yok', 'No bookings yet', 'Noch keine Buchungen', 'Sin reservas', 'Нет броней', 'Sem reservas')} text={l('Uçuş, otel ve tren rezervasyonlarını tarihleriyle ekle; geri sayım burada görünsün.', 'Add flights, hotels and trains with dates to see a countdown here.', 'Buchungen mit Datum hinzufügen.', 'Añade reservas con fechas.', 'Добавьте брони с датами.', 'Adicione reservas com datas.')} />
       ) : (
         <>
           {upcoming.length > 0 && rowsOf(upcoming)}
-          {past.length > 0 && <><span className="vz-eyebrow">{l('Geçmiş', 'Past', 'Vergangen', 'Pasadas', 'Прошедшие')}</span>{rowsOf(past)}</>}
+          {past.length > 0 && <><span className="vz-eyebrow">{l('Geçmiş', 'Past', 'Vergangen', 'Pasadas', 'Прошедшие', 'Anteriores')}</span>{rowsOf(past)}</>}
         </>
       )}
       <form className="vz-card tone-sea" onSubmit={add}>
-        <b>{l('Rezervasyon ekle', 'Add a booking', 'Buchung hinzufügen', 'Añadir reserva', 'Добавить бронь')}</b>
+        <b>{l('Rezervasyon ekle', 'Add a booking', 'Buchung hinzufügen', 'Añadir reserva', 'Добавить бронь', 'Adicionar reserva')}</b>
         <div className="vz-formgrid">
-          <Field label={l('Tür', 'Type', 'Art', 'Tipo', 'Тип')} htmlFor="vz-tk-t">
+          <Field label={l('Tür', 'Type', 'Art', 'Tipo', 'Тип', 'Tipo')} htmlFor="vz-tk-t">
             <select id="vz-tk-t" className="vz-select" value={type} onChange={(e) => setType(e.target.value as TicketType)}>{types.map((t) => <option key={t.id} value={t.id}>{t.label}</option>)}</select>
           </Field>
-          <Field label={l('Başlık', 'Title', 'Titel', 'Título', 'Название')} htmlFor="vz-tk-n">
-            <input id="vz-tk-n" className="vz-input" value={title} onChange={(e) => setTitle(e.target.value)} placeholder={l('İstanbul → Bangkok', 'Istanbul → Bangkok', 'Istanbul → Bangkok', 'Estambul → Bangkok', 'Стамбул → Бангкок')} required />
+          <Field label={l('Başlık', 'Title', 'Titel', 'Título', 'Название', 'Título')} htmlFor="vz-tk-n">
+            <input id="vz-tk-n" className="vz-input" value={title} onChange={(e) => setTitle(e.target.value)} placeholder={l('İstanbul → Bangkok', 'Istanbul → Bangkok', 'Istanbul → Bangkok', 'Estambul → Bangkok', 'Стамбул → Бангкок', 'Istambul → Bangkok')} required />
           </Field>
-          <Field label={l('Tarih', 'Date', 'Datum', 'Fecha', 'Дата')} htmlFor="vz-tk-d">
+          <Field label={l('Tarih', 'Date', 'Datum', 'Fecha', 'Дата', 'Data')} htmlFor="vz-tk-d">
             <input id="vz-tk-d" type="date" className="vz-input" value={date} onChange={(e) => setDate(e.target.value)} required />
           </Field>
-          <Field label={l('Rezervasyon kodu', 'Booking ref', 'Buchungscode', 'Código', 'Код брони')} htmlFor="vz-tk-r">
+          <Field label={l('Rezervasyon kodu', 'Booking ref', 'Buchungscode', 'Código', 'Код брони', 'Código')} htmlFor="vz-tk-r">
             <input id="vz-tk-r" className="vz-input" value={ref} onChange={(e) => setRef(e.target.value)} />
           </Field>
-          <Field label={l('Bağlantı (isteğe bağlı)', 'Link (optional)', 'Link (optional)', 'Enlace', 'Ссылка')} htmlFor="vz-tk-l">
+          <Field label={l('Bağlantı (isteğe bağlı)', 'Link (optional)', 'Link (optional)', 'Enlace', 'Ссылка', 'Link')} htmlFor="vz-tk-l">
             <input id="vz-tk-l" type="url" className="vz-input" value={link} onChange={(e) => setLink(e.target.value)} placeholder="https://" />
           </Field>
         </div>
-        <Btn type="submit" icon="plus" style={{ alignSelf: 'flex-start' }}>{l('Ekle', 'Add', 'Hinzufügen', 'Añadir', 'Добавить')}</Btn>
+        <Btn type="submit" icon="plus" style={{ alignSelf: 'flex-start' }}>{l('Ekle', 'Add', 'Hinzufügen', 'Añadir', 'Добавить', 'Adicionar')}</Btn>
       </form>
     </div>
   );
@@ -216,21 +216,21 @@ const AlertsView: React.FC<{ w: W; onGoDocs: () => void }> = ({ w, onGoDocs }) =
   const alerts: { tone: 'warn' | 'sun' | 'ok'; title: string; text: string }[] = [];
   w.docs.forEach((d) => {
     const left = daysLeft(d.expiry);
-    if (left < 0) alerts.push({ tone: 'warn', title: d.title, text: l('Süresi dolmuş. Yolculuktan önce yenile.', 'Expired. Renew it before you travel.', 'Abgelaufen. Vor der Reise erneuern.', 'Caducado. Renuévalo.', 'Истёк. Обновите.') });
-    else if (left < 180) alerts.push({ tone: 'sun', title: d.title, text: l(`${left} gün içinde bitiyor. Birçok ülke pasaportun en az 6 ay geçerli olmasını ister.`, `Expires in ${left} days. Many countries require 6 months’ validity.`, `Läuft in ${left} Tagen ab.`, `Caduca en ${left} días.`, `Истекает через ${left} дн.`) });
+    if (left < 0) alerts.push({ tone: 'warn', title: d.title, text: l('Süresi dolmuş. Yolculuktan önce yenile.', 'Expired. Renew it before you travel.', 'Abgelaufen. Vor der Reise erneuern.', 'Caducado. Renuévalo.', 'Истёк. Обновите.', 'Vencido. Renove.') });
+    else if (left < 180) alerts.push({ tone: 'sun', title: d.title, text: l(`${left} gün içinde bitiyor. Birçok ülke pasaportun en az 6 ay geçerli olmasını ister.`, `Expires in ${left} days. Many countries require 6 months’ validity.`, `Läuft in ${left} Tagen ab.`, `Caduca en ${left} días.`, `Истекает через ${left} дн.`, `Vence em ${left} dias.`) });
   });
   if (lastExit) {
     passports.forEach((p) => {
       const margin = dateToDayIndex(p.expiry) - dateToDayIndex(lastExit);
-      if (margin < 183) alerts.push({ tone: 'warn', title: l('6 ay kuralı', '6-month rule', '6-Monats-Regel', 'Regla de 6 meses', 'Правило 6 месяцев'), text: l(`${p.title}, rotandaki son çıkış tarihinden (${formatLocalizedDate(dateToDayIndex(lastExit), language)}) sonra yalnızca ${Math.max(0, margin)} gün geçerli. Çoğu ülke 6 ay ister.`, `${p.title} is valid only ${Math.max(0, margin)} days after your last exit date. Most countries want 6 months.`, `Nur ${Math.max(0, margin)} Tage nach Ausreise gültig.`, `Solo ${Math.max(0, margin)} días tras la salida.`, `Только ${Math.max(0, margin)} дн. после выезда.`) });
+      if (margin < 183) alerts.push({ tone: 'warn', title: l('6 ay kuralı', '6-month rule', '6-Monats-Regel', 'Regla de 6 meses', 'Правило 6 месяцев', 'Regra dos 6 meses'), text: l(`${p.title}, rotandaki son çıkış tarihinden (${formatLocalizedDate(dateToDayIndex(lastExit), language)}) sonra yalnızca ${Math.max(0, margin)} gün geçerli. Çoğu ülke 6 ay ister.`, `${p.title} is valid only ${Math.max(0, margin)} days after your last exit date. Most countries want 6 months.`, `Nur ${Math.max(0, margin)} Tage nach Ausreise gültig.`, `Solo ${Math.max(0, margin)} días tras la salida.`, `Только ${Math.max(0, margin)} дн. после выезда.`, `Só ${Math.max(0, margin)} dias após a saída.`) });
     });
   }
   return (
     <div className="vz-stack">
       {w.docs.length === 0 ? (
-        <Empty icon="bell" title={l('Uyarı için belge ekle', 'Add documents to get alerts', 'Dokumente für Hinweise hinzufügen', 'Añade documentos', 'Добавьте документы')} action={<Btn variant="soft" onClick={onGoDocs}>{l('Belgelerime git', 'Go to my documents', 'Zu Dokumenten', 'Ir a documentos', 'К документам')}</Btn>} />
+        <Empty icon="bell" title={l('Uyarı için belge ekle', 'Add documents to get alerts', 'Dokumente für Hinweise hinzufügen', 'Añade documentos', 'Добавьте документы', 'Adicione documentos')} action={<Btn variant="soft" onClick={onGoDocs}>{l('Belgelerime git', 'Go to my documents', 'Zu Dokumenten', 'Ir a documentos', 'К документам', 'Ir para documentos')}</Btn>} />
       ) : alerts.length === 0 ? (
-        <Card tone="ok" icon="check" title={l('Her şey yolunda', 'All good', 'Alles in Ordnung', 'Todo bien', 'Всё в порядке')}><p>{l('Belgelerinin hiçbiri yakında bitmiyor.', 'None of your documents expire soon.', 'Kein Dokument läuft bald ab.', 'Nada caduca pronto.', 'Ничего не истекает скоро.')}</p></Card>
+        <Card tone="ok" icon="check" title={l('Her şey yolunda', 'All good', 'Alles in Ordnung', 'Todo bien', 'Всё в порядке', 'Tudo certo')}><p>{l('Belgelerinin hiçbiri yakında bitmiyor.', 'None of your documents expire soon.', 'Kein Dokument läuft bald ab.', 'Nada caduca pronto.', 'Ничего не истекает скоро.', 'Nada vence em breve.')}</p></Card>
       ) : (
         <div className="vz-grid two">
           {alerts.map((a, i) => (
@@ -249,8 +249,8 @@ const BudgetView: React.FC<{ w: W }> = ({ w }) => {
   const home = GLOBAL_CURRENCIES[w.passport]?.code || 'EUR';
   const curList = useMemo(() => Array.from(new Set([home, 'EUR', 'USD', 'GBP', 'TRY', ...Object.keys(USD_RATES)])).filter((c) => USD_RATES[c] || c === home), [home]);
   const catLabel: Record<string, string> = {
-    flight: l('Uçuş', 'Flights', 'Flüge', 'Vuelos', 'Перелёты'), stay: l('Konaklama', 'Stay', 'Unterkunft', 'Alojamiento', 'Жильё'), food: l('Yeme-içme', 'Food', 'Essen', 'Comida', 'Еда'),
-    transport: l('Ulaşım', 'Transport', 'Transport', 'Transporte', 'Транспорт'), fun: l('Gezi & eğlence', 'Fun', 'Freizeit', 'Ocio', 'Досуг'), other: l('Diğer', 'Other', 'Andere', 'Otro', 'Другое')
+    flight: l('Uçuş', 'Flights', 'Flüge', 'Vuelos', 'Перелёты', 'Voos'), stay: l('Konaklama', 'Stay', 'Unterkunft', 'Alojamiento', 'Жильё', 'Hospedagem'), food: l('Yeme-içme', 'Food', 'Essen', 'Comida', 'Еда', 'Comida'),
+    transport: l('Ulaşım', 'Transport', 'Transport', 'Transporte', 'Транспорт', 'Transporte'), fun: l('Gezi & eğlence', 'Fun', 'Freizeit', 'Ocio', 'Досуг', 'Lazer'), other: l('Diğer', 'Other', 'Andere', 'Otro', 'Другое', 'Outro')
   };
   const [title, setTitle] = useState('');
   const [amount, setAmount] = useState('');
@@ -271,12 +271,12 @@ const BudgetView: React.FC<{ w: W }> = ({ w }) => {
   return (
     <div className="vz-stack">
       <div className="vz-stats">
-        <Stat value={`${fmtNum(total, language)} ${sym}`} label={l('Harcanan', 'Spent', 'Ausgegeben', 'Gastado', 'Потрачено')} icon="wallet" />
+        <Stat value={`${fmtNum(total, language)} ${sym}`} label={l('Harcanan', 'Spent', 'Ausgegeben', 'Gastado', 'Потрачено', 'Gasto')} icon="wallet" />
         <div className="vz-stat">
-          <label htmlFor="vz-bud" style={{ fontSize: 13, color: 'var(--rd-muted)' }}>{l(`Bütçe (${home})`, `Budget (${home})`, `Budget (${home})`, `Presupuesto (${home})`, `Бюджет (${home})`)}</label>
+          <label htmlFor="vz-bud" style={{ fontSize: 13, color: 'var(--rd-muted)' }}>{l(`Bütçe (${home})`, `Budget (${home})`, `Budget (${home})`, `Presupuesto (${home})`, `Бюджет (${home})`, `Orçamento (${home})`)}</label>
           <input id="vz-bud" type="number" min={0} className="vz-input" value={w.budget || ''} onChange={(e) => w.setBudget(Math.max(0, Number(e.target.value) || 0))} placeholder="0" />
         </div>
-        {w.budget > 0 && <Stat value={`${fmtNum(Math.max(0, w.budget - total), language)} ${sym}`} label={l('Kalan', 'Left', 'Übrig', 'Restante', 'Осталось')} icon="coin" tone={total > w.budget ? 'warn' : 'ok'} />}
+        {w.budget > 0 && <Stat value={`${fmtNum(Math.max(0, w.budget - total), language)} ${sym}`} label={l('Kalan', 'Left', 'Übrig', 'Restante', 'Осталось', 'Restante')} icon="coin" tone={total > w.budget ? 'warn' : 'ok'} />}
       </div>
       {w.budget > 0 && <div className="vz-meter" aria-hidden="true"><i style={{ width: `${pct}%`, background: total > w.budget ? 'var(--vz-warn)' : 'linear-gradient(90deg, var(--vz-acc-a), var(--vz-acc-b))' }} /></div>}
       {byCat.length > 0 && (
@@ -288,23 +288,23 @@ const BudgetView: React.FC<{ w: W }> = ({ w }) => {
             <Row key={e.id} icon={e.cat === 'flight' ? 'plane' : e.cat === 'stay' ? 'bed' : e.cat === 'food' ? 'food' : e.cat === 'transport' ? 'transit' : e.cat === 'fun' ? 'star' : 'receipt'} title={e.title} sub={catLabel[e.cat]} right={
               <span className="vz-row-flex" style={{ gap: 8 }}>
                 <span>{fmtNum(e.amount, language, 2)} {e.currency}</span>
-                <button type="button" className="vz-iconbtn" onClick={() => w.setExpenses(w.expenses.filter((x) => x.id !== e.id))} aria-label={l('Sil', 'Delete', 'Löschen', 'Borrar', 'Удалить')}><Icon name="trash" size={16} duo={false} /></button>
+                <button type="button" className="vz-iconbtn" onClick={() => w.setExpenses(w.expenses.filter((x) => x.id !== e.id))} aria-label={l('Sil', 'Delete', 'Löschen', 'Borrar', 'Удалить', 'Excluir')}><Icon name="trash" size={16} duo={false} /></button>
               </span>
             } />
           ))}
         </List>
       ) : (
-        <Empty icon="wallet" title={l('Henüz harcama yok', 'No expenses yet', 'Noch keine Ausgaben', 'Sin gastos', 'Нет расходов')} text={l('Harcamaları farklı para birimlerinde gir; toplam kendi para biriminde hesaplanır.', 'Enter expenses in any currency; the total is shown in yours.', 'Ausgaben in jeder Währung erfassen.', 'Añade gastos en cualquier moneda.', 'Вводите расходы в любой валюте.')} />
+        <Empty icon="wallet" title={l('Henüz harcama yok', 'No expenses yet', 'Noch keine Ausgaben', 'Sin gastos', 'Нет расходов', 'Sem gastos')} text={l('Harcamaları farklı para birimlerinde gir; toplam kendi para biriminde hesaplanır.', 'Enter expenses in any currency; the total is shown in yours.', 'Ausgaben in jeder Währung erfassen.', 'Añade gastos en cualquier moneda.', 'Вводите расходы в любой валюте.', 'Adicione gastos em qualquer moeda.')} />
       )}
       <form className="vz-card tone-sea" onSubmit={add}>
-        <b>{l('Harcama ekle', 'Add an expense', 'Ausgabe hinzufügen', 'Añadir gasto', 'Добавить расход')}</b>
+        <b>{l('Harcama ekle', 'Add an expense', 'Ausgabe hinzufügen', 'Añadir gasto', 'Добавить расход', 'Adicionar gasto')}</b>
         <div className="vz-formgrid">
-          <Field label={l('Ne için?', 'What for?', 'Wofür?', '¿Para qué?', 'На что?')} htmlFor="vz-ex-t"><input id="vz-ex-t" className="vz-input" value={title} onChange={(e) => setTitle(e.target.value)} required /></Field>
-          <Field label={l('Tutar', 'Amount', 'Betrag', 'Importe', 'Сумма')} htmlFor="vz-ex-a"><input id="vz-ex-a" inputMode="decimal" className="vz-input" value={amount} onChange={(e) => setAmount(e.target.value)} required /></Field>
-          <Field label={l('Para birimi', 'Currency', 'Währung', 'Moneda', 'Валюта')} htmlFor="vz-ex-c"><select id="vz-ex-c" className="vz-select" value={cur} onChange={(e) => setCur(e.target.value)}>{curList.map((c) => <option key={c} value={c}>{c}</option>)}</select></Field>
-          <Field label={l('Kategori', 'Category', 'Kategorie', 'Categoría', 'Категория')} htmlFor="vz-ex-k"><select id="vz-ex-k" className="vz-select" value={cat} onChange={(e) => setCat(e.target.value)}>{CATS.map((c) => <option key={c} value={c}>{catLabel[c]}</option>)}</select></Field>
+          <Field label={l('Ne için?', 'What for?', 'Wofür?', '¿Para qué?', 'На что?', 'Para quê?')} htmlFor="vz-ex-t"><input id="vz-ex-t" className="vz-input" value={title} onChange={(e) => setTitle(e.target.value)} required /></Field>
+          <Field label={l('Tutar', 'Amount', 'Betrag', 'Importe', 'Сумма', 'Valor')} htmlFor="vz-ex-a"><input id="vz-ex-a" inputMode="decimal" className="vz-input" value={amount} onChange={(e) => setAmount(e.target.value)} required /></Field>
+          <Field label={l('Para birimi', 'Currency', 'Währung', 'Moneda', 'Валюта', 'Moeda')} htmlFor="vz-ex-c"><select id="vz-ex-c" className="vz-select" value={cur} onChange={(e) => setCur(e.target.value)}>{curList.map((c) => <option key={c} value={c}>{c}</option>)}</select></Field>
+          <Field label={l('Kategori', 'Category', 'Kategorie', 'Categoría', 'Категория', 'Categoria')} htmlFor="vz-ex-k"><select id="vz-ex-k" className="vz-select" value={cat} onChange={(e) => setCat(e.target.value)}>{CATS.map((c) => <option key={c} value={c}>{catLabel[c]}</option>)}</select></Field>
         </div>
-        <Btn type="submit" icon="plus" style={{ alignSelf: 'flex-start' }}>{l('Ekle', 'Add', 'Hinzufügen', 'Añadir', 'Добавить')}</Btn>
+        <Btn type="submit" icon="plus" style={{ alignSelf: 'flex-start' }}>{l('Ekle', 'Add', 'Hinzufügen', 'Añadir', 'Добавить', 'Adicionar')}</Btn>
       </form>
     </div>
   );
@@ -353,7 +353,7 @@ const DaysView: React.FC<{ tr: ReturnType<typeof useTrips> }> = ({ tr: T }) => {
   const addRule = (e: React.FormEvent) => {
     e.preventDefault();
     if (!cName.trim() || cAllowed < 1 || cWindow < cAllowed) return;
-    const nr: RollingRule & { countries?: string[] } = { id: `c-${Date.now()}`, countries: cCountry ? [cCountry] : undefined, name: `${cName.trim()} (${cAllowed}/${cWindow})`, allowedDays: cAllowed, windowDays: cWindow, description: l(`Herhangi bir ${cWindow} günlük dönemde en fazla ${cAllowed} gün.`, `Up to ${cAllowed} days in any ${cWindow}-day window.`, `Max. ${cAllowed} Tage in ${cWindow} Tagen.`, `Hasta ${cAllowed} días en ${cWindow}.`, `До ${cAllowed} дн. за ${cWindow}.`) };
+    const nr: RollingRule & { countries?: string[] } = { id: `c-${Date.now()}`, countries: cCountry ? [cCountry] : undefined, name: `${cName.trim()} (${cAllowed}/${cWindow})`, allowedDays: cAllowed, windowDays: cWindow, description: l(`Herhangi bir ${cWindow} günlük dönemde en fazla ${cAllowed} gün.`, `Up to ${cAllowed} days in any ${cWindow}-day window.`, `Max. ${cAllowed} Tage in ${cWindow} Tagen.`, `Hasta ${cAllowed} días en ${cWindow}.`, `До ${cAllowed} дн. за ${cWindow}.`, `Até ${cAllowed} dias em ${cWindow}.`) };
     const next = [...rules, nr];
     setRules(next);
     saveStoredRules(next);
@@ -381,8 +381,8 @@ const DaysView: React.FC<{ tr: ReturnType<typeof useTrips> }> = ({ tr: T }) => {
     if (fresh.length) T.save([...T.trips, ...fresh]);
     setImportMsg(
       fresh.length
-        ? l(`Rotandan ${fresh.length} durak eklendi.`, `${fresh.length} stops added from your route.`, `${fresh.length} Stopps übernommen.`, `${fresh.length} paradas añadidas.`, `Добавлено ${fresh.length}.`)
-        : l('Rotanda bu kurala giren yeni durak yok.', 'No new stops on your route for this rule.', 'Keine neuen passenden Stopps.', 'No hay paradas nuevas.', 'Нет новых остановок.')
+        ? l(`Rotandan ${fresh.length} durak eklendi.`, `${fresh.length} stops added from your route.`, `${fresh.length} Stopps übernommen.`, `${fresh.length} paradas añadidas.`, `Добавлено ${fresh.length}.`, `${fresh.length} paradas adicionadas.`)
+        : l('Rotanda bu kurala giren yeni durak yok.', 'No new stops on your route for this rule.', 'Keine neuen passenden Stopps.', 'No hay paradas nuevas.', 'Нет новых остановок.', 'Não há paradas novas.')
     );
   };
   const rule = rules.find((r) => r.id === ruleId) || rules[0];
@@ -423,82 +423,82 @@ const DaysView: React.FC<{ tr: ReturnType<typeof useTrips> }> = ({ tr: T }) => {
         {rules.map((r) => (
           <Chip key={r.id} on={r.id === ruleId} onClick={() => { setRuleId(r.id); setImportMsg(''); }}>{ruleName(r, language)}</Chip>
         ))}
-        <Chip on={showCustom} icon="plus" onClick={() => setShowCustom((v) => !v)}>{l('Özel kural', 'Custom rule', 'Eigene Regel', 'Regla propia', 'Своё правило')}</Chip>
+        <Chip on={showCustom} icon="plus" onClick={() => setShowCustom((v) => !v)}>{l('Özel kural', 'Custom rule', 'Eigene Regel', 'Regla propia', 'Своё правило', 'Regra personalizada')}</Chip>
       </Chips>
       {showCustom && (
         <form className="vz-card tone-sea" onSubmit={addRule}>
-          <b>{l('Kendi kuralını ekle', 'Add your own rule', 'Eigene Regel hinzufügen', 'Añade tu regla', 'Добавьте правило')}</b>
+          <b>{l('Kendi kuralını ekle', 'Add your own rule', 'Eigene Regel hinzufügen', 'Añade tu regla', 'Добавьте правило', 'Adicione sua regra')}</b>
           <div className="vz-formgrid">
-            <Field label={l('Ad', 'Name', 'Name', 'Nombre', 'Название')} htmlFor="vz-cr-n"><input id="vz-cr-n" className="vz-input" value={cName} onChange={(e) => setCName(e.target.value)} placeholder={l('ör. Tayland', 'e.g. Thailand', 'z. B. Thailand', 'p. ej. Tailandia', 'напр. Таиланд')} required /></Field>
-            <Field label={l('İzin verilen gün', 'Days allowed', 'Erlaubte Tage', 'Días permitidos', 'Дней можно')} htmlFor="vz-cr-a"><input id="vz-cr-a" type="number" min={1} max={365} className="vz-input" value={cAllowed} onChange={(e) => setCAllowed(Number(e.target.value) || 1)} /></Field>
-            <Field label={l('Hangi ülke (rotadan aktarmak için)', 'Which country (for route import)', 'Welches Land', 'Qué país', 'Какая страна')} htmlFor="vz-cr-c">
+            <Field label={l('Ad', 'Name', 'Name', 'Nombre', 'Название', 'Nome')} htmlFor="vz-cr-n"><input id="vz-cr-n" className="vz-input" value={cName} onChange={(e) => setCName(e.target.value)} placeholder={l('ör. Tayland', 'e.g. Thailand', 'z. B. Thailand', 'p. ej. Tailandia', 'напр. Таиланд', 'ex.: Tailândia')} required /></Field>
+            <Field label={l('İzin verilen gün', 'Days allowed', 'Erlaubte Tage', 'Días permitidos', 'Дней можно', 'Dias permitidos')} htmlFor="vz-cr-a"><input id="vz-cr-a" type="number" min={1} max={365} className="vz-input" value={cAllowed} onChange={(e) => setCAllowed(Number(e.target.value) || 1)} /></Field>
+            <Field label={l('Hangi ülke (rotadan aktarmak için)', 'Which country (for route import)', 'Welches Land', 'Qué país', 'Какая страна', 'Qual país')} htmlFor="vz-cr-c">
               <select id="vz-cr-c" className="vz-select" value={cCountry} onChange={(e) => { setCCountry(e.target.value); if (e.target.value && !cName.trim()) setCName(getCountryName(e.target.value, language)); }}>
-                <option value="">{l('Bütün ülkeler', 'All countries', 'Alle Länder', 'Todos', 'Все страны')}</option>
+                <option value="">{l('Bütün ülkeler', 'All countries', 'Alle Länder', 'Todos', 'Все страны', 'Todos')}</option>
                 {Object.keys(GEO_DATA).map((c) => ({ c, n: getCountryName(c, language) })).sort((x, y) => x.n.localeCompare(y.n, language)).map((o) => <option key={o.c} value={o.c}>{o.n}</option>)}
               </select>
             </Field>
-            <Field label={l('Kaç günlük dönemde', 'Within how many days', 'Innerhalb von Tagen', 'En cuántos días', 'За сколько дней')} htmlFor="vz-cr-w"><input id="vz-cr-w" type="number" min={1} max={730} className="vz-input" value={cWindow} onChange={(e) => setCWindow(Number(e.target.value) || 1)} /></Field>
+            <Field label={l('Kaç günlük dönemde', 'Within how many days', 'Innerhalb von Tagen', 'En cuántos días', 'За сколько дней', 'Em quantos dias')} htmlFor="vz-cr-w"><input id="vz-cr-w" type="number" min={1} max={730} className="vz-input" value={cWindow} onChange={(e) => setCWindow(Number(e.target.value) || 1)} /></Field>
           </div>
-          <Btn type="submit" icon="plus" style={{ alignSelf: 'flex-start' }}>{l('Kuralı ekle', 'Add rule', 'Regel hinzufügen', 'Añadir regla', 'Добавить')}</Btn>
+          <Btn type="submit" icon="plus" style={{ alignSelf: 'flex-start' }}>{l('Kuralı ekle', 'Add rule', 'Regel hinzufügen', 'Añadir regla', 'Добавить', 'Adicionar regra')}</Btn>
         </form>
       )}
       <div className="vz-row-flex" style={{ justifyContent: 'space-between' }}>
         <p className="vz-muted" style={{ fontSize: 14, flex: 1, minWidth: 200 }}>{ruleDesc(rule, language)}</p>
         <span className="vz-row-flex" style={{ gap: 6 }}>
-          <Btn small variant="soft" icon="route" onClick={importFromRoute}>{l('Rotamdan aktar', 'Import from my route', 'Aus Route übernehmen', 'Importar de mi ruta', 'Из маршрута')}</Btn>
-          {!rule.preset && <Btn small variant="ghost" icon="trash" onClick={() => removeRule(rule.id)}>{l('Kuralı sil', 'Delete rule', 'Regel löschen', 'Borrar regla', 'Удалить')}</Btn>}
+          <Btn small variant="soft" icon="route" onClick={importFromRoute}>{l('Rotamdan aktar', 'Import from my route', 'Aus Route übernehmen', 'Importar de mi ruta', 'Из маршрута', 'Importar do meu roteiro')}</Btn>
+          {!rule.preset && <Btn small variant="ghost" icon="trash" onClick={() => removeRule(rule.id)}>{l('Kuralı sil', 'Delete rule', 'Regel löschen', 'Borrar regla', 'Удалить', 'Apagar regra')}</Btn>}
         </span>
       </div>
       {importMsg && <div className="vz-note"><Icon name="check" size={18} duo={false} /><span>{importMsg}</span></div>}
       <div className="vz-daysgrid">
         <div className="vz-card" style={{ alignItems: 'center' }}>
-          <Gauge used={res.daysUsed} max={rule.allowedDays} label={l(`${res.daysUsed} gün kullanıldı`, `${res.daysUsed} days used`, `${res.daysUsed} Tage genutzt`, `${res.daysUsed} días usados`, `Использовано ${res.daysUsed}`)} />
-          <b>{l('Son', 'Last', 'Letzte', 'Últimos', 'За')} {rule.windowDays} {l('günde kullanılan', 'days used', 'Tage genutzt', 'días usados', 'дн.')}</b>
+          <Gauge used={res.daysUsed} max={rule.allowedDays} label={l(`${res.daysUsed} gün kullanıldı`, `${res.daysUsed} days used`, `${res.daysUsed} Tage genutzt`, `${res.daysUsed} días usados`, `Использовано ${res.daysUsed}`, `${res.daysUsed} dias usados`)} />
+          <b>{l('Son', 'Last', 'Letzte', 'Últimos', 'За', 'Últimos')} {rule.windowDays} {l('günde kullanılan', 'days used', 'Tage genutzt', 'días usados', 'дн.', 'dias usados')}</b>
         </div>
         <div className="vz-stack" style={{ gap: 10 }}>
-          <Stat value={res.isOverstay ? `−${res.overstayDays}` : res.remainingDays} label={res.isOverstay ? l('Gün fazla kaldın', 'Days over the limit', 'Tage überzogen', 'Días de exceso', 'Превышение') : l('Kalan hak', 'Days left', 'Verbleibend', 'Restantes', 'Осталось')} icon={res.isOverstay ? 'alert' : 'check'} tone={res.isOverstay ? 'warn' : 'ok'} />
-          <Stat value={res.maxConsecutiveStayIfEnteringToday} label={l('Bugün girersen en fazla kalış', 'Max stay if you enter today', 'Max. Aufenthalt ab heute', 'Máx. si entras hoy', 'Макс. с сегодня')} icon="cal" />
-          {res.safeExitDate && <Stat value={formatLocalizedDate(dateToDayIndex(res.safeExitDate), language)} label={l('En geç çıkış', 'Latest exit', 'Späteste Ausreise', 'Salida límite', 'Последний выезд')} icon="plane" tone="sun" />}
+          <Stat value={res.isOverstay ? `−${res.overstayDays}` : res.remainingDays} label={res.isOverstay ? l('Gün fazla kaldın', 'Days over the limit', 'Tage überzogen', 'Días de exceso', 'Превышение', 'Dias excedidos') : l('Kalan hak', 'Days left', 'Verbleibend', 'Restantes', 'Осталось', 'Restantes')} icon={res.isOverstay ? 'alert' : 'check'} tone={res.isOverstay ? 'warn' : 'ok'} />
+          <Stat value={res.maxConsecutiveStayIfEnteringToday} label={l('Bugün girersen en fazla kalış', 'Max stay if you enter today', 'Max. Aufenthalt ab heute', 'Máx. si entras hoy', 'Макс. с сегодня', 'Máx. se entrar hoje')} icon="cal" />
+          {res.safeExitDate && <Stat value={formatLocalizedDate(dateToDayIndex(res.safeExitDate), language)} label={l('En geç çıkış', 'Latest exit', 'Späteste Ausreise', 'Salida límite', 'Последний выезд', 'Saída até')} icon="plane" tone="sun" />}
         </div>
       </div>
-      <Card title={l('Gelecek tarihi dene', 'Try a future date', 'Zukunftsdatum testen', 'Prueba una fecha', 'Проверить дату')} icon="spark" tone="sea">
+      <Card title={l('Gelecek tarihi dene', 'Try a future date', 'Zukunftsdatum testen', 'Prueba una fecha', 'Проверить дату', 'Teste uma data')} icon="spark" tone="sea">
         <div className="vz-row-flex">
-          <Field label={l('Giriş tarihi', 'Entry date', 'Einreise', 'Entrada', 'Въезд')} htmlFor="vz-sim"><input id="vz-sim" type="date" className="vz-input" value={simDate} onChange={(e) => setSimDate(e.target.value)} /></Field>
-          <p style={{ flex: 1, minWidth: 200 }}>{l(`O gün girersen en fazla ${sim.maxConsecutiveStayIfEnteringToday} gün kalabilirsin.`, `If you enter that day you can stay up to ${sim.maxConsecutiveStayIfEnteringToday} days.`, `Dann max. ${sim.maxConsecutiveStayIfEnteringToday} Tage.`, `Podrías quedarte ${sim.maxConsecutiveStayIfEnteringToday} días.`, `Можно до ${sim.maxConsecutiveStayIfEnteringToday} дн.`)}</p>
+          <Field label={l('Giriş tarihi', 'Entry date', 'Einreise', 'Entrada', 'Въезд', 'Entrada')} htmlFor="vz-sim"><input id="vz-sim" type="date" className="vz-input" value={simDate} onChange={(e) => setSimDate(e.target.value)} /></Field>
+          <p style={{ flex: 1, minWidth: 200 }}>{l(`O gün girersen en fazla ${sim.maxConsecutiveStayIfEnteringToday} gün kalabilirsin.`, `If you enter that day you can stay up to ${sim.maxConsecutiveStayIfEnteringToday} days.`, `Dann max. ${sim.maxConsecutiveStayIfEnteringToday} Tage.`, `Podrías quedarte ${sim.maxConsecutiveStayIfEnteringToday} días.`, `Можно до ${sim.maxConsecutiveStayIfEnteringToday} дн.`, `Você poderia ficar ${sim.maxConsecutiveStayIfEnteringToday} dias.`)}</p>
         </div>
       </Card>
-      <Card title={l('Planladığın yolculuk sığıyor mu?', 'Does your planned trip fit?', 'Passt die geplante Reise?', '¿Cabe tu viaje?', 'Поместится ли поездка?')} icon="plane">
+      <Card title={l('Planladığın yolculuk sığıyor mu?', 'Does your planned trip fit?', 'Passt die geplante Reise?', '¿Cabe tu viaje?', 'Поместится ли поездка?', 'Sua viagem cabe no limite?')} icon="plane">
         <div className="vz-formgrid">
-          <Field label={l('Giriş', 'Entry', 'Einreise', 'Entrada', 'Въезд')} htmlFor="vz-pl-a"><input id="vz-pl-a" type="date" className="vz-input" value={planA} onChange={(e) => setPlanA(e.target.value)} /></Field>
-          <Field label={l('Çıkış', 'Exit', 'Ausreise', 'Salida', 'Выезд')} htmlFor="vz-pl-b"><input id="vz-pl-b" type="date" className="vz-input" value={planB} onChange={(e) => setPlanB(e.target.value)} /></Field>
+          <Field label={l('Giriş', 'Entry', 'Einreise', 'Entrada', 'Въезд', 'Entrada')} htmlFor="vz-pl-a"><input id="vz-pl-a" type="date" className="vz-input" value={planA} onChange={(e) => setPlanA(e.target.value)} /></Field>
+          <Field label={l('Çıkış', 'Exit', 'Ausreise', 'Salida', 'Выезд', 'Saída')} htmlFor="vz-pl-b"><input id="vz-pl-b" type="date" className="vz-input" value={planB} onChange={(e) => setPlanB(e.target.value)} /></Field>
         </div>
         {plan && (
           plan.firstBad === null ? (
-            <div className="vz-note" style={{ borderColor: 'var(--vz-ok)' }}><Icon name="check" size={18} duo={false} /><span>{l(`Sığıyor: ${plan.len} günlük yolculukta en yüksek kullanım ${plan.worst}/${rule.allowedDays} gün.`, `It fits: peak use during this ${plan.len}-day trip is ${plan.worst}/${rule.allowedDays} days.`, `Passt: max. ${plan.worst}/${rule.allowedDays} Tage.`, `Cabe: máximo ${plan.worst}/${rule.allowedDays} días.`, `Подходит: максимум ${plan.worst}/${rule.allowedDays}.`)}</span></div>
+            <div className="vz-note" style={{ borderColor: 'var(--vz-ok)' }}><Icon name="check" size={18} duo={false} /><span>{l(`Sığıyor: ${plan.len} günlük yolculukta en yüksek kullanım ${plan.worst}/${rule.allowedDays} gün.`, `It fits: peak use during this ${plan.len}-day trip is ${plan.worst}/${rule.allowedDays} days.`, `Passt: max. ${plan.worst}/${rule.allowedDays} Tage.`, `Cabe: máximo ${plan.worst}/${rule.allowedDays} días.`, `Подходит: максимум ${plan.worst}/${rule.allowedDays}.`, `Cabe: máximo de ${plan.worst}/${rule.allowedDays} dias.`)}</span></div>
           ) : (
-            <div className="vz-note" style={{ borderColor: 'var(--vz-warn)', color: 'var(--vz-warn)' }}><Icon name="alert" size={18} duo={false} /><span>{l(`Sığmıyor: ${formatLocalizedDate(plan.firstBad, language)} tarihinde ${rule.allowedDays} gün sınırı aşılıyor. En geç bir gün önce çıkmalısın.`, `It doesn't fit: you pass the ${rule.allowedDays}-day limit on ${formatLocalizedDate(plan.firstBad, language)}. Leave the day before at the latest.`, `Grenze am ${formatLocalizedDate(plan.firstBad, language)} überschritten.`, `Superas el límite el ${formatLocalizedDate(plan.firstBad, language)}.`, `Превышение ${formatLocalizedDate(plan.firstBad, language)}.`)}</span></div>
+            <div className="vz-note" style={{ borderColor: 'var(--vz-warn)', color: 'var(--vz-warn)' }}><Icon name="alert" size={18} duo={false} /><span>{l(`Sığmıyor: ${formatLocalizedDate(plan.firstBad, language)} tarihinde ${rule.allowedDays} gün sınırı aşılıyor. En geç bir gün önce çıkmalısın.`, `It doesn't fit: you pass the ${rule.allowedDays}-day limit on ${formatLocalizedDate(plan.firstBad, language)}. Leave the day before at the latest.`, `Grenze am ${formatLocalizedDate(plan.firstBad, language)} überschritten.`, `Superas el límite el ${formatLocalizedDate(plan.firstBad, language)}.`, `Превышение ${formatLocalizedDate(plan.firstBad, language)}.`, `Você ultrapassa o limite em ${formatLocalizedDate(plan.firstBad, language)}.`)}</span></div>
           )
         )}
       </Card>
       <form className="vz-card" onSubmit={add}>
-        <b>{l(`${ruleName(rule, language)} için yolculuk ekle`, `Add a trip for ${ruleName(rule, language)}`, `Reise hinzufügen`, `Añadir viaje`, `Добавить поездку`)}</b>
+        <b>{l(`${ruleName(rule, language)} için yolculuk ekle`, `Add a trip for ${ruleName(rule, language)}`, `Reise hinzufügen`, `Añadir viaje`, `Добавить поездку`, `Adicionar viagem`)}</b>
         <div className="vz-formgrid">
-          <Field label={l('Giriş', 'Entry', 'Einreise', 'Entrada', 'Въезд')} htmlFor="vz-tr-a"><input id="vz-tr-a" type="date" className="vz-input" value={a} onChange={(e) => setA(e.target.value)} /></Field>
-          <Field label={l('Çıkış', 'Exit', 'Ausreise', 'Salida', 'Выезд')} htmlFor="vz-tr-b"><input id="vz-tr-b" type="date" className="vz-input" value={b} onChange={(e) => setB(e.target.value)} /></Field>
-          <Field label={l('Not (isteğe bağlı)', 'Note (optional)', 'Notiz (optional)', 'Nota (opcional)', 'Заметка')} htmlFor="vz-tr-note"><input id="vz-tr-note" className="vz-input" value={note} onChange={(e) => setNote(e.target.value)} placeholder={l('ör. İş toplantısı', 'e.g. Business trip', 'z. B. Geschäftsreise', 'p. ej. Viaje de trabajo', 'напр. Командировка')} /></Field>
-          <Field label={l('Ülke (183 gün için)', 'Country (for 183 days)', 'Land (183 Tage)', 'País (183 días)', 'Страна (183)')} htmlFor="vz-tr-c">
+          <Field label={l('Giriş', 'Entry', 'Einreise', 'Entrada', 'Въезд', 'Entrada')} htmlFor="vz-tr-a"><input id="vz-tr-a" type="date" className="vz-input" value={a} onChange={(e) => setA(e.target.value)} /></Field>
+          <Field label={l('Çıkış', 'Exit', 'Ausreise', 'Salida', 'Выезд', 'Saída')} htmlFor="vz-tr-b"><input id="vz-tr-b" type="date" className="vz-input" value={b} onChange={(e) => setB(e.target.value)} /></Field>
+          <Field label={l('Not (isteğe bağlı)', 'Note (optional)', 'Notiz (optional)', 'Nota (opcional)', 'Заметка', 'Observação (opcional)')} htmlFor="vz-tr-note"><input id="vz-tr-note" className="vz-input" value={note} onChange={(e) => setNote(e.target.value)} placeholder={l('ör. İş toplantısı', 'e.g. Business trip', 'z. B. Geschäftsreise', 'p. ej. Viaje de trabajo', 'напр. Командировка', 'ex.: Viagem a trabalho')} /></Field>
+          <Field label={l('Ülke (183 gün için)', 'Country (for 183 days)', 'Land (183 Tage)', 'País (183 días)', 'Страна (183)', 'País (183 dias)')} htmlFor="vz-tr-c">
             <select id="vz-tr-c" className="vz-select" value={country} onChange={(e) => setCountry(e.target.value)}>
               <option value="">—</option>
               {Object.keys(GEO_DATA).map((c) => ({ c, n: getCountryName(c, language) })).sort((x, y) => x.n.localeCompare(y.n, language)).map((o) => <option key={o.c} value={o.c}>{o.n}</option>)}
             </select>
           </Field>
         </div>
-        <Btn type="submit" icon="plus" style={{ alignSelf: 'flex-start' }}>{l('Yolculuğu ekle', 'Add trip', 'Reise hinzufügen', 'Añadir', 'Добавить')}</Btn>
+        <Btn type="submit" icon="plus" style={{ alignSelf: 'flex-start' }}>{l('Yolculuğu ekle', 'Add trip', 'Reise hinzufügen', 'Añadir', 'Добавить', 'Adicionar')}</Btn>
       </form>
       {mine.length > 0 && (
         <List>
           {mine.map((t) => (
-            <Row key={t.id} lead={t.countryCode ? <Flag code={t.countryCode} size="sm" /> : undefined} icon="cal" title={`${formatLocalizedDate(t.start, language)} → ${formatLocalizedDate(t.end, language)}`} sub={[l(`${t.end - t.start + 1} gün`, `${t.end - t.start + 1} days`, `${t.end - t.start + 1} Tage`, `${t.end - t.start + 1} días`, `${t.end - t.start + 1} дн.`), t.note].filter(Boolean).join(' · ')} right={<button type="button" className="vz-iconbtn" onClick={() => T.save(T.trips.filter((x) => x.id !== t.id))} aria-label={l('Sil', 'Delete', 'Löschen', 'Borrar', 'Удалить')}><Icon name="trash" size={16} duo={false} /></button>} />
+            <Row key={t.id} lead={t.countryCode ? <Flag code={t.countryCode} size="sm" /> : undefined} icon="cal" title={`${formatLocalizedDate(t.start, language)} → ${formatLocalizedDate(t.end, language)}`} sub={[l(`${t.end - t.start + 1} gün`, `${t.end - t.start + 1} days`, `${t.end - t.start + 1} Tage`, `${t.end - t.start + 1} días`, `${t.end - t.start + 1} дн.`, `${t.end - t.start + 1} dias`), t.note].filter(Boolean).join(' · ')} right={<button type="button" className="vz-iconbtn" onClick={() => T.save(T.trips.filter((x) => x.id !== t.id))} aria-label={l('Sil', 'Delete', 'Löschen', 'Borrar', 'Удалить', 'Excluir')}><Icon name="trash" size={16} duo={false} /></button>} />
           ))}
         </List>
       )}
@@ -513,10 +513,10 @@ const TaxView: React.FC<{ tr: ReturnType<typeof useTrips>; onGoDays: () => void 
   const list = useMemo(() => computeTaxResidency(T.trips, year), [T.trips, year]);
   return (
     <div className="vz-stack">
-      <div className="vz-note"><Icon name="info" size={18} duo={false} /><span>{l('Birçok ülkede bir takvim yılında 183 gün ve üzeri kalan kişi vergi mukimi sayılabilir. Bu bir hukuki görüş değildir; kendi durumun için bir vergi danışmanına sor.', 'In many countries, spending 183+ days in a calendar year can make you tax-resident. This is not legal advice; check with a tax adviser.', '183+ Tage können Steuerpflicht auslösen. Keine Rechtsberatung.', '183+ días pueden generar residencia fiscal. No es asesoría legal.', '183+ дней могут дать налоговое резидентство. Не юр. совет.')}</span></div>
-      <Segmented label={l('Yıl', 'Year', 'Jahr', 'Año', 'Год')} value={String(year)} onChange={(v) => setYear(Number(v))} options={[year - 1, new Date().getFullYear(), new Date().getFullYear() + 1].filter((v, i, a) => a.indexOf(v) === i).map((y) => ({ id: String(y), label: String(y) }))} />
+      <div className="vz-note"><Icon name="info" size={18} duo={false} /><span>{l('Birçok ülkede bir takvim yılında 183 gün ve üzeri kalan kişi vergi mukimi sayılabilir. Bu bir hukuki görüş değildir; kendi durumun için bir vergi danışmanına sor.', 'In many countries, spending 183+ days in a calendar year can make you tax-resident. This is not legal advice; check with a tax adviser.', '183+ Tage können Steuerpflicht auslösen. Keine Rechtsberatung.', '183+ días pueden generar residencia fiscal. No es asesoría legal.', '183+ дней могут дать налоговое резидентство. Не юр. совет.', '183 dias ou mais podem gerar residência fiscal. Isto não é assessoria jurídica.')}</span></div>
+      <Segmented label={l('Yıl', 'Year', 'Jahr', 'Año', 'Год', 'Ano')} value={String(year)} onChange={(v) => setYear(Number(v))} options={[year - 1, new Date().getFullYear(), new Date().getFullYear() + 1].filter((v, i, a) => a.indexOf(v) === i).map((y) => ({ id: String(y), label: String(y) }))} />
       {list.length === 0 ? (
-        <Empty icon="chart" title={l('Bu yıl için ülkeli yolculuk yok', 'No trips with a country this year', 'Keine Reisen mit Land', 'Sin viajes con país', 'Нет поездок')} text={l('Gün sayacında yolculuk eklerken ülke seç; burada sayılır.', 'Pick a country when you add trips in the day counter.', 'Beim Hinzufügen ein Land wählen.', 'Elige país al añadir viajes.', 'Указывайте страну при добавлении.')} action={<Btn variant="soft" onClick={onGoDays}>{l('Gün sayacına git', 'Go to day counter', 'Zum Tagezähler', 'Ir al contador', 'К счётчику')}</Btn>} />
+        <Empty icon="chart" title={l('Bu yıl için ülkeli yolculuk yok', 'No trips with a country this year', 'Keine Reisen mit Land', 'Sin viajes con país', 'Нет поездок', 'Nenhuma viagem com país')} text={l('Gün sayacında yolculuk eklerken ülke seç; burada sayılır.', 'Pick a country when you add trips in the day counter.', 'Beim Hinzufügen ein Land wählen.', 'Elige país al añadir viajes.', 'Указывайте страну при добавлении.', 'Escolha o país ao adicionar viagens.')} action={<Btn variant="soft" onClick={onGoDays}>{l('Gün sayacına git', 'Go to day counter', 'Zum Tagezähler', 'Ir al contador', 'К счётчику', 'Ir para o contador')}</Btn>} />
       ) : (
         <div className="vz-stack" style={{ gap: 10 }}>
           {list.map((s) => (
@@ -551,30 +551,30 @@ export const WalletPage: React.FC<{ passport: string; openRequest: OpenRequest }
   const warnCount = w.docs.filter((d) => daysLeft(d.expiry) < 180).length;
 
   const tiles: Tile[] = [
-    { id: 'docs', icon: 'passport', title: l('Belgelerim', 'My documents', 'Meine Dokumente', 'Mis documentos', 'Документы'), desc: l('Pasaport, vize, sigorta', 'Passport, visas, insurance', 'Pass, Visa, Versicherung', 'Pasaporte, visados', 'Паспорт, визы'), badge: w.docs.length ? `${w.docs.length}` : undefined, render: () => <DocsView w={w} /> },
-    { id: 'tickets', icon: 'ticket', title: l('Biletlerim', 'My bookings', 'Buchungen', 'Reservas', 'Брони'), desc: l('Uçuş ve rezervasyonlar', 'Flights and bookings', 'Flüge und Buchungen', 'Vuelos y reservas', 'Рейсы и брони'), badge: w.tickets.length ? `${w.tickets.length}` : undefined, render: () => <TicketsView w={w} /> },
-    { id: 'alerts', icon: 'bell', title: l('Geçerlilik uyarıları', 'Expiry alerts', 'Ablaufhinweise', 'Avisos', 'Предупреждения'), desc: l('Süresi dolanlar, 6 ay kuralı', 'Expiries, 6-month rule', 'Ablauf, 6-Monats-Regel', 'Caducidades, regla 6 meses', 'Сроки, правило 6 мес.'), badge: warnCount ? `${warnCount}` : undefined, render: () => <AlertsView w={w} onGoDocs={() => go('docs')} /> },
-    { id: 'budget', icon: 'wallet', title: l('Bütçe', 'Budget', 'Budget', 'Presupuesto', 'Бюджет'), desc: l('Harcamalar, tek para biriminde', 'Spending in one currency', 'Ausgaben in einer Währung', 'Gastos en una moneda', 'Расходы в одной валюте'), render: () => <BudgetView w={w} /> },
-    { id: 'days', icon: 'cal', title: l('Dünya gün sayacı', 'World day counter', 'Welt-Tagezähler', 'Contador mundial', 'Счётчик дней'), desc: l('Schengen 90/180 ve diğerleri', 'Schengen 90/180 and more', 'Schengen 90/180 u. a.', 'Schengen 90/180 y más', 'Шенген 90/180 и др.'), badge: `${schRes.daysUsed}/90`, render: () => <DaysView tr={T} /> },
-    { id: 'tax', icon: 'chart', title: l('183 gün vergi takibi', '183-day tax tracker', '183-Tage-Steuer', '183 días fiscal', 'Налог 183 дня'), desc: l('Ülke başına geçen gün', 'Days spent per country', 'Tage pro Land', 'Días por país', 'Дни по странам'), render: () => <TaxView tr={T} onGoDays={() => go('days')} /> }
+    { id: 'docs', icon: 'passport', title: l('Belgelerim', 'My documents', 'Meine Dokumente', 'Mis documentos', 'Документы', 'Meus documentos'), desc: l('Pasaport, vize, sigorta', 'Passport, visas, insurance', 'Pass, Visa, Versicherung', 'Pasaporte, visados', 'Паспорт, визы', 'Passaporte, vistos'), badge: w.docs.length ? `${w.docs.length}` : undefined, render: () => <DocsView w={w} /> },
+    { id: 'tickets', icon: 'ticket', title: l('Biletlerim', 'My bookings', 'Buchungen', 'Reservas', 'Брони', 'Reservas'), desc: l('Uçuş ve rezervasyonlar', 'Flights and bookings', 'Flüge und Buchungen', 'Vuelos y reservas', 'Рейсы и брони', 'Voos e reservas'), badge: w.tickets.length ? `${w.tickets.length}` : undefined, render: () => <TicketsView w={w} /> },
+    { id: 'alerts', icon: 'bell', title: l('Geçerlilik uyarıları', 'Expiry alerts', 'Ablaufhinweise', 'Avisos', 'Предупреждения', 'Alertas'), desc: l('Süresi dolanlar, 6 ay kuralı', 'Expiries, 6-month rule', 'Ablauf, 6-Monats-Regel', 'Caducidades, regla 6 meses', 'Сроки, правило 6 мес.', 'Vencimentos, regra dos 6 meses'), badge: warnCount ? `${warnCount}` : undefined, render: () => <AlertsView w={w} onGoDocs={() => go('docs')} /> },
+    { id: 'budget', icon: 'wallet', title: l('Bütçe', 'Budget', 'Budget', 'Presupuesto', 'Бюджет', 'Orçamento'), desc: l('Harcamalar, tek para biriminde', 'Spending in one currency', 'Ausgaben in einer Währung', 'Gastos en una moneda', 'Расходы в одной валюте', 'Gastos em uma só moeda'), render: () => <BudgetView w={w} /> },
+    { id: 'days', icon: 'cal', title: l('Dünya gün sayacı', 'World day counter', 'Welt-Tagezähler', 'Contador mundial', 'Счётчик дней', 'Contador mundial'), desc: l('Schengen 90/180 ve diğerleri', 'Schengen 90/180 and more', 'Schengen 90/180 u. a.', 'Schengen 90/180 y más', 'Шенген 90/180 и др.', 'Schengen 90/180 e mais'), badge: `${schRes.daysUsed}/90`, render: () => <DaysView tr={T} /> },
+    { id: 'tax', icon: 'chart', title: l('183 gün vergi takibi', '183-day tax tracker', '183-Tage-Steuer', '183 días fiscal', 'Налог 183 дня', '183 dias (fiscal)'), desc: l('Ülke başına geçen gün', 'Days spent per country', 'Tage pro Land', 'Días por país', 'Дни по странам', 'Dias por país'), render: () => <TaxView tr={T} onGoDays={() => go('days')} /> }
   ];
 
   return (
     <Page
-      eyebrow={l('Cüzdan', 'Wallet', 'Wallet', 'Cartera', 'Кошелёк')}
-      title={l('Belgelerin ve günlerin', 'Your documents and days', 'Deine Dokumente und Tage', 'Tus documentos y días', 'Документы и дни')}
-      sub={l('Tarihler, kalan günler ve uyarılar tek yerde. Hepsi yalnızca bu cihazda saklanır.', 'Dates, remaining days and alerts in one place, stored only on this device.', 'Daten, Resttage und Hinweise, nur auf diesem Gerät.', 'Fechas, días y avisos, solo en este dispositivo.', 'Даты, дни и предупреждения — только на этом устройстве.')}
+      eyebrow={l('Cüzdan', 'Wallet', 'Wallet', 'Cartera', 'Кошелёк', 'Carteira')}
+      title={l('Belgelerin ve günlerin', 'Your documents and days', 'Deine Dokumente und Tage', 'Tus documentos y días', 'Документы и дни', 'Seus documentos e dias')}
+      sub={l('Tarihler, kalan günler ve uyarılar tek yerde. Hepsi yalnızca bu cihazda saklanır.', 'Dates, remaining days and alerts in one place, stored only on this device.', 'Daten, Resttage und Hinweise, nur auf diesem Gerät.', 'Fechas, días y avisos, solo en este dispositivo.', 'Даты, дни и предупреждения — только на этом устройстве.', 'Datas, dias e alertas, só neste dispositivo.')}
       words={['France', 'Spain', 'Portugal', 'Germany']}
       summary={
         <div className="vz-cfacts">
-          <Stat value={`${schRes.daysUsed}/90`} label={l('Schengen (son 180 gün)', 'Schengen (last 180 days)', 'Schengen (180 T.)', 'Schengen (180 d)', 'Шенген (180 дн.)')} icon="shield" tone={schRes.isOverstay ? 'warn' : 'ok'} />
-          <Stat value={pass ? l(`${daysLeft(pass.expiry)} gün`, `${daysLeft(pass.expiry)} days`, `${daysLeft(pass.expiry)} T.`, `${daysLeft(pass.expiry)} d`, `${daysLeft(pass.expiry)} дн.`) : '—'} label={l('Pasaport geçerliliği', 'Passport validity', 'Passgültigkeit', 'Validez pasaporte', 'Срок паспорта')} icon="passport" tone={pass && daysLeft(pass.expiry) < 180 ? 'warn' : 'sea'} />
-          <Stat value={nextTicket ? formatLocalizedDate(dateToDayIndex(nextTicket.date), language) : '—'} label={nextTicket ? nextTicket.title : l('Sıradaki rezervasyon', 'Next booking', 'Nächste Buchung', 'Próxima reserva', 'Следующая бронь')} icon="ticket" tone="sun" />
-          <Stat value={w.docs.length} label={l('Kayıtlı belge', 'Saved documents', 'Dokumente', 'Documentos', 'Документов')} icon="doc" />
+          <Stat value={`${schRes.daysUsed}/90`} label={l('Schengen (son 180 gün)', 'Schengen (last 180 days)', 'Schengen (180 T.)', 'Schengen (180 d)', 'Шенген (180 дн.)', 'Schengen (180 d)')} icon="shield" tone={schRes.isOverstay ? 'warn' : 'ok'} />
+          <Stat value={pass ? l(`${daysLeft(pass.expiry)} gün`, `${daysLeft(pass.expiry)} days`, `${daysLeft(pass.expiry)} T.`, `${daysLeft(pass.expiry)} d`, `${daysLeft(pass.expiry)} дн.`, `${daysLeft(pass.expiry)} d`) : '—'} label={l('Pasaport geçerliliği', 'Passport validity', 'Passgültigkeit', 'Validez pasaporte', 'Срок паспорта', 'Validade do passaporte')} icon="passport" tone={pass && daysLeft(pass.expiry) < 180 ? 'warn' : 'sea'} />
+          <Stat value={nextTicket ? formatLocalizedDate(dateToDayIndex(nextTicket.date), language) : '—'} label={nextTicket ? nextTicket.title : l('Sıradaki rezervasyon', 'Next booking', 'Nächste Buchung', 'Próxima reserva', 'Следующая бронь', 'Próxima reserva')} icon="ticket" tone="sun" />
+          <Stat value={w.docs.length} label={l('Kayıtlı belge', 'Saved documents', 'Dokumente', 'Documentos', 'Документов', 'Documentos')} icon="doc" />
         </div>
       }
     >
-      <TileGrid tiles={tiles} openRequest={req} label={l('Cüzdan', 'Wallet', 'Wallet', 'Cartera', 'Кошелёк')} />
+      <TileGrid tiles={tiles} openRequest={req} label={l('Cüzdan', 'Wallet', 'Wallet', 'Cartera', 'Кошелёк', 'Carteira')} />
     </Page>
   );
 };

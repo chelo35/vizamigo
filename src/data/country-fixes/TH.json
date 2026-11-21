@@ -643,6 +643,167 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "THB (baht tailandês)",
+   "bestMonths": "Novembro – fevereiro (fresco e seco; ideal para Bangkok, o norte e o litoral do mar de Andamão); de março a maio faz muito calor e de junho a outubro é época de monções; na região de Koh Samui, os meses mais chuvosos são outubro – dezembro",
+   "safety": {
+    "crimeRateSummary": "A violência nas áreas turísticas é rara, mas golpes, roubos de bolsa e acidentes de trânsito (sobretudo de scooter) são frequentes. Há alertas oficiais para as províncias de Narathiwat, Pattani, Yala e partes de Songkhla, no sul, assim como para a fronteira com o Camboja.",
+    "commonScams": [
+     "Golpistas que dizem que “o Grande Palácio está fechado hoje” e levam você de tuk-tuk a joalherias ou alfaiatarias",
+     "Em Phuket e Pattaya, cobrança por danos que já existiam em jet skis ou scooters alugados",
+     "Táxis que não ligam o taxímetro e cobram um preço fixo alto do turista"
+    ],
+    "safeTravelTips": [
+     "Use Grab ou Bolt; nos táxis de rua, peça o taxímetro (“meter, please”) e, se o motorista se recusar, pegue outro.",
+     "Se alugar scooter, tenha habilitação válida e use capacete; muitos seguros viagem não cobrem acidentes sem habilitação.",
+     "Nunca fale mal da família real (as penas são severas); nos templos, cubra ombros e joelhos e tire os sapatos."
+    ],
+    "emergencyNumbers": {
+     "police": "191",
+     "ambulance": "1669",
+     "general": "191"
+    },
+    "safetyScore": 55,
+    "safetyLevel": "Risco moderado",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Excelente – 4G/5G amplo nas cidades e ilhas; fraco só em montanhas e florestas remotas",
+    "costPerGbUsd": "~US$ 0,30 - 1",
+    "esimAvailability": "Disponível – eSIMs turísticas da AIS e da True, Airalo, Holafly; também há chips turísticos no aeroporto",
+    "bestCarriers": [
+     "AIS",
+     "TrueMove H (True – dtac)",
+     "NT (National Telecom)"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Bom – BTS Skytrain, MRT e barcos no rio em Bangkok; voos domésticos baratos, trens noturnos, ônibus e balsas para as ilhas",
+    "costLevel": "Barato",
+    "singleTicketUsd": "~0,50 - 2 $ (BTS / MRT, conforme a distância)",
+    "dailyPassUsd": "~4,50 $ (passe diário do BTS)",
+    "popularRideApps": [
+     "Grab",
+     "Bolt",
+     "LINE MAN"
+    ],
+    "taxiAdvice": "Os táxis com taxímetro em Bangkok são baratos; as corridas urbanas costumam custar 3-8 $, com uma pequena taxa extra no aeroporto, mais os pedágios. Nos tuk-tuks e nos songthaews das ilhas, combine o preço antes de embarcar."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 30 - 45",
+    "dailyBudgetMidrangeUsd": "US$ 70 - 120",
+    "budgetMealUsd": "US$ 2 - 5",
+    "coffeeUsd": "US$ 1,50 - 3,50",
+    "waterBottleUsd": "US$ 0,30 - 0,50",
+    "hostelDormUsd": "US$ 8 - 18",
+    "hotel3StarUsd": "US$ 30 - 70",
+    "flightCostIndex": "Alto (longa distância; Istambul – Bangkok direto ~10 h)",
+    "flightTip": "A THY voa direto de Istambul para Bangkok e também para Phuket; as conexões pelo Golfo (Emirates, Qatar Airways, Etihad) costumam ser mais baratas. Dentro do país, são comuns os voos baratos da AirAsia, Thai Lion Air e Nok Air."
+   }
+  },
+  "enc": {
+   "language": {
+    "officialLanguages": "Tailandês (língua tonal com alfabeto próprio).",
+    "englishProficiency": "Suficiente nas áreas turísticas, nos hotéis e nas ilhas; limitado no interior e com taxistas: ajuda mostrar o endereço escrito em tailandês.",
+    "phrases": [
+     {
+      "phrase": "สวัสดีครับ / ค่ะ (Sawasdee khrap / kha)",
+      "meaning": "Olá (homens dizem “khrap”, mulheres dizem “kha”)",
+      "translation": "Olá (homens dizem “khrap”, mulheres dizem “kha”)",
+      "pronunciation": "sa-wat-DEE khrap / kha"
+     },
+     {
+      "phrase": "ขอบคุณครับ / ค่ะ (Khop khun khrap / kha)",
+      "meaning": "Obrigado(a)",
+      "translation": "Obrigado(a)",
+      "pronunciation": "khop-KHUN khrap / kha"
+     },
+     {
+      "phrase": "เท่าไหร่ (Tao rai?)",
+      "meaning": "Quanto?",
+      "translation": "Quanto?",
+      "pronunciation": "tao-RAI"
+     },
+     {
+      "phrase": "ไม่เผ็ด (Mai phet)",
+      "meaning": "Sem pimenta",
+      "translation": "Sem pimenta",
+      "pronunciation": "mai PET"
+     },
+     {
+      "phrase": "ไม่เป็นไร (Mai pen rai)",
+      "meaning": "Não tem problema / Tudo bem",
+      "translation": "Não tem problema / Tudo bem",
+      "pronunciation": "mai pen RAI"
+     }
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "A",
+     "B",
+     "C",
+     "F",
+     "O"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "As tomadas são mistas (A/B/C/F/O); a maioria das “universais” aceita plugues C finos de dois pinos, mas os plugues turcos F, mais grossos e com aterramento, muitas vezes não entram: leve um adaptador universal."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "A água da torneira não é potável; há água mineral barata e máquinas de recarga por toda parte. O gelo geralmente é industrializado e seguro.",
+    "vaccines": [
+     "Vacinas de rotina (tríplice viral, tétano)",
+     "Hepatite A",
+     "Febre tifoide",
+     "Raiva (áreas rurais ou estadias longas)",
+     "Encefalite japonesa (estadias rurais longas)",
+     "Certificado de febre amarela só se você chegar de um país de risco"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "1669"
+   },
+   "tipping": {
+    "custom": "A gorjeta não é obrigatória; restaurantes e hotéis de categoria acrescentam 10 % de taxa de serviço.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "É comum deixar 50-100 THB depois de uma massagem e algumas moedas em táxis e barracas de rua."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA de 7 % (cerca de 5-6 % líquidos após as taxas)",
+    "minSpend": "2.000 THB por loja e por dia (mínimo de 5.000 THB no total)",
+    "customsNote": "Peça o formulário P.P.10 nas lojas com a placa “VAT Refund for Tourists”; mostre os produtos à alfândega do aeroporto antes do check-in para receber o carimbo e retire o reembolso depois do controle de passaportes."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 0,30 - 1",
+    "topCarriers": [
+     "AIS",
+     "TrueMove H (True – dtac)",
+     "NT (National Telecom)"
+    ],
+    "airportSimTrapWarning": "Os chips turísticos da AIS e da True no aeroporto têm preço fixo e são confiáveis; não compre chips sem registro de vendedores não oficiais."
+   },
+   "touristScams": [
+    {
+     "title": "“Hoje o palácio está fechado”",
+     "desc": "Perto do Grande Palácio, alguém diz que ele está fechado e manda você de tuk-tuk barato para uma joalheria ou alfaiataria.",
+     "tip": "Vá você mesmo até a entrada; o horário oficial está em grandpalace.thai.net."
+    },
+    {
+     "title": "Golpe dos danos no jet ski",
+     "desc": "Em Phuket e Pattaya, na devolução do jet ski, exigem quantias altas por arranhões que já existiam.",
+     "tip": "Fotografe e filme o jet ski antes de alugar e nunca deixe o passaporte como caução."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "THB (тайский бат)",

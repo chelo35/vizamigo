@@ -1439,6 +1439,366 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Kip laosiano (LAK)",
+   "plugType": "Tipo A, B, C, E, F (230V, 50Hz)",
+   "bestMonths": "Novembro – fevereiro (seco e fresco); março – abril quente e com névoa por causa das queimadas no norte, maio – outubro monção (cachoeiras no auge)",
+   "safety": {
+    "crimeRateSummary": "O Laos é tranquilo e tem pouca criminalidade; os principais riscos são furtos, acidentes de scooter e munição não detonada (UXO) em áreas rurais. Na zona econômica do Triângulo Dourado, no norte, foram denunciados casos de tráfico de pessoas ligados a falsas ofertas de emprego.",
+    "commonScams": [
+     "Cobranças abusivas por danos antigos da scooter e retenção do passaporte",
+     "Motoristas de tuk-tuk que pedem várias vezes o preço local",
+     "Falsas ofertas de emprego bem pago no Laos nas redes sociais"
+    ],
+    "safeTravelTips": [
+     "Não saia das trilhas sinalizadas; em regiões como Xieng Khouang (Planície dos Jarros) a UXO continua sendo um perigo.",
+     "Ao alugar uma scooter, filme o veículo, use capacete e deixe um depósito em vez do passaporte.",
+     "Não faça tubing em Vang Vieng sob efeito de álcool ou drogas; as penas por drogas são muito duras."
+    ],
+    "emergencyNumbers": {
+     "police": "1191",
+     "ambulance": "1195",
+     "general": "1191"
+    },
+    "safetyScore": 65,
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "4G nas cidades e estradas principais; irregular no norte montanhoso e no interior",
+    "costPerGbUsd": "~US$ 0,30 - 1",
+    "esimAvailability": "Limitada – os chips físicos da Unitel e da Lao Telecom são comuns; eSIMs internacionais funcionam",
+    "bestCarriers": [
+     "Unitel",
+     "Lao Telecom (LTC)",
+     "ETL",
+     "TPLUS"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Regular – o trem rápido Laos–China (Vientiane – Vang Vieng – Luang Prabang) é muito confortável; o resto, de ônibus, van e songthaew, é lento",
+    "costLevel": "Barato",
+    "singleTicketUsd": "~0.30 - 0.50 $ (ônibus urbano de Vientiane)",
+    "dailyPassUsd": "Não há passe diário; trem Vientiane – Luang Prabang ~12 - 25 $",
+    "popularRideApps": [
+     "LOCA",
+     "inDrive"
+    ],
+    "taxiAdvice": "Em Vientiane, o app LOCA oferece preços fixos; em Luang Prabang e Vang Vieng, negocie o tuk-tuk antes de embarcar. As estações de trem ficam fora da cidade; conte com os traslados."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 25 - 40",
+    "dailyBudgetMidrangeUsd": "US$ 55 - 100",
+    "budgetMealUsd": "US$ 2 - 5",
+    "coffeeUsd": "US$ 1,50 - 3",
+    "waterBottleUsd": "US$ 0,30 - 0,50",
+    "hostelDormUsd": "US$ 5 - 12",
+    "hotel3StarUsd": "US$ 25 - 55",
+    "flightCostIndex": "Alto (sem voos diretos, pelo menos uma escala)",
+    "flightTip": "Saindo da Turquia, voe com escala em Bangkok, Hanói ou Kunming até Vientiane ou Luang Prabang. Também sai barato voar para Bangkok e cruzar por terra ou de trem via Nong Khai."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "O cumprimento é feito com as palmas unidas e uma leve inclinação (“nop”), dizendo “Sabaidee”.",
+     "Demonstrar raiva ou levantar a voz em público é vergonhoso; a calma (“bo pen nyang”) é fundamental.",
+     "Se for assistir à oferenda matinal (Tak Bat), fique em silêncio, não use flash e mantenha distância dos monges."
+    ],
+    "festivals": [
+     "Boun Pi Mai – Ano-Novo laosiano (meados de abril, festa da água)",
+     "Boun Ok Phansa e barcos iluminados (outubro, Luang Prabang)",
+     "Boun That Luang (novembro, Vientiane)"
+    ],
+    "lifestyle": "Ritmo lento e relaxado, refeições compartilhadas com arroz glutinoso (khao niao), pores do sol no Mekong e uma cultura de baguete e café herdada da época francesa."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Centro histórico de Luang Prabang (UNESCO)",
+     "Cachoeiras de Kuang Si",
+     "Montanhas cársticas e Blue Lagoons de Vang Vieng",
+     "Pha That Luang (Vientiane)",
+     "Planície dos Jarros (Xieng Khouang, UNESCO)",
+     "Si Phan Don – 4.000 Ilhas (sul do Mekong)"
+    ],
+    "bestSeasons": "Novembro – fevereiro (seco e fresco); março – abril quente e com névoa por causa das queimadas no norte, maio – outubro monção (cachoeiras no auge)",
+    "travelStyleTip": "O trem Laos–China facilita a viagem de norte a sul; compre as passagens alguns dias antes pelo app LCR Ticket, porque na alta temporada elas esgotam."
+   },
+   "religion": {
+    "primaryReligions": "Budismo theravada (~65 %), religião popular e animismo (~30 %), cristãos (~2 %).",
+    "respectNorms": "Nos templos, cubra ombros e joelhos e tire os sapatos; não pose de costas para as imagens de Buda nem aponte os pés para elas.",
+    "sacredSites": [
+     "Pha That Luang (símbolo nacional)",
+     "Wat Xieng Thong (Luang Prabang)",
+     "Wat Phou (Champasak, UNESCO)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Laosiano (aparentado com o tailandês, com escrita própria); alguns idosos falam francês.",
+    "englishProficiency": "Básico nas áreas turísticas; muito limitado no interior.",
+    "phrases": [
+     {
+      "phrase": "ສະບາຍດີ (Sabaidee)",
+      "meaning": "Olá",
+      "translation": "Olá",
+      "pronunciation": "sa-bai-DEE"
+     },
+     {
+      "phrase": "ຂອບໃຈ (Khop jai)",
+      "meaning": "Obrigado",
+      "translation": "Obrigado",
+      "pronunciation": "khop-JAI"
+     },
+     {
+      "phrase": "ເທົ່າໃດ? (Tao dai?)",
+      "meaning": "Quanto?",
+      "translation": "Quanto?",
+      "pronunciation": "tao-DAI"
+     },
+     {
+      "phrase": "ບໍ່ເປັນຫຍັງ (Bo pen nyang)",
+      "meaning": "Não tem problema",
+      "translation": "Não tem problema",
+      "pronunciation": "bo pen NYANG"
+     },
+     {
+      "phrase": "ແຊບຫຼາຍ (Saep lai)",
+      "meaning": "Muito gostoso",
+      "translation": "Muito gostoso",
+      "pronunciation": "sep LAI"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Fundado em 1353 por Fa Ngum, o reino de Lan Xang (“Milhão de Elefantes”) foi uma potência regional. O Laos foi protetorado francês a partir de 1893, conquistou a independência plena em 1953 e, em 1975, foi proclamada a República Democrática Popular do Laos. Os bombardeios de 1964-1973 fizeram dele o país mais bombardeado per capita.",
+    "milestones": [
+     "1353: Fundação do reino de Lan Xang",
+     "1560: A capital é transferida para Vientiane",
+     "1953: Independência plena da França",
+     "2021: Inauguração da ferrovia Laos–China"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Larb / laap (salada de carne picada com ervas – prato nacional)",
+     "Tam mak hoong (salada picante de mamão verde)",
+     "Or lam (ensopado de Luang Prabang com madeira de pimenta)"
+    ],
+    "traditionalDrinks": [
+     "Beerlao",
+     "Café do planalto de Bolaven",
+     "Lao-lao (aguardente de arroz)"
+    ],
+    "streetFoodAndDesserts": [
+     "Khao jee (sanduíche laosiano de baguete)",
+     "Khao piak sen (sopa de macarrão grosso de arroz)",
+     "Khao lam (arroz glutinoso doce cozido no bambu)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Fa Ngum (fundador de Lan Xang)",
+     "Rei Setthathirath (construiu o Pha That Luang)",
+     "Príncipe Phetsarath (pioneiro da independência)"
+    ],
+    "strongSectors": [
+     "Energia hidrelétrica e exportação de eletricidade (“bateria do Sudeste Asiático”)",
+     "Mineração (cobre, ouro)",
+     "Agricultura e café"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "O dinheiro vivo predomina; como o kip oscila, valores altos às vezes são cobrados em dólares ou bahts. Os cartões se limitam a hotéis e restaurantes caros; os caixas eletrônicos cobram taxa e têm limites baixos.",
+    "tippingCulture": "Não é tradição, mas nas áreas turísticas pequenas gorjetas e arredondamentos são bem-vindos.",
+    "economicPillars": "Hidreletricidade, mineração, agricultura, turismo e comércio de trânsito ferroviário com a China."
+   }
+  },
+  "itin": {
+   "routeName": "Luang Prabang – Vang Vieng – Vientiane: roteiro do Mekong e do carste",
+   "routeSummary": "Um roteiro de 7 dias de norte a sul: templos e cachoeiras de Luang Prabang (UNESCO), trem rápido até os picos cársticos de Vang Vieng e final na capital, Vientiane.",
+   "totalDays": 7,
+   "idealDurationText": "Roteiro de 7 dias",
+   "bestSeason": "Novembro – fevereiro (seco e fresco); março – abril quente e com névoa por causa das queimadas no norte, maio – outubro monção (cachoeiras no auge)",
+   "transportMode": "Trem rápido Laos–China + tuk-tuks, scooters e LOCA",
+   "paceLevel": "Tranquilo (cultura e natureza)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Luang Prabang (templos e Kuang Si)",
+     "recommendedDuration": "3 dias",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Wat Xieng Thong",
+      "Pôr do sol do monte Phou Si",
+      "Cachoeiras de Kuang Si e centro de resgate de ursos",
+      "Cavernas de Pak Ou (no Mekong)"
+     ],
+     "activities": [
+      "Assista com respeito à procissão de esmolas Tak Bat ao amanhecer.",
+      "Garimpe tecidos artesanais no mercado noturno.",
+      "Navegue pelo Mekong até as cavernas de Pak Ou."
+     ],
+     "foodAndDrinks": [
+      "Or lam e sai oua (linguiça de Luang Prabang)",
+      "Khao soi (macarrão ao estilo de Luang Prabang)"
+     ],
+     "criticalTips": [
+      "A cidade tem um toque de recolher por volta das 23h30; os estabelecimentos fecham cedo.",
+      "Vá a Kuang Si cedo, antes das multidões."
+     ],
+     "mapsQuery": "Luang Prabang, Laos"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Vang Vieng (picos cársticos e rio)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Rio Nam Song",
+      "Blue Lagoon 1 e caverna Tham Phu Kham",
+      "Mirante de Pha Ngern"
+     ],
+     "activities": [
+      "Faça um voo de balão ao amanhecer.",
+      "Ande de caiaque no Nam Song.",
+      "Escale as paredes cársticas ou percorra os vilarejos de bicicleta."
+     ],
+     "foodAndDrinks": [
+      "Larb com arroz glutinoso",
+      "Peixe grelhado à beira do rio (ping pa)"
+     ],
+     "criticalTips": [
+      "Use colete salva-vidas no rio; depois da chuva a correnteza fica forte.",
+      "A estação fica a ~3 km; combine o preço do tuk-tuk."
+     ],
+     "mapsQuery": "Vang Vieng, Laos"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Vientiane (capital e margem do Mekong)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Pha That Luang",
+      "Monumento da Vitória Patuxai",
+      "Parque de Buda (Xieng Khuan)",
+      "Centro de visitantes COPE (vítimas de UXO)"
+     ],
+     "activities": [
+      "Visite o Wat Si Saket e o Haw Phra Kaew.",
+      "Passeie pelo mercado noturno à beira do Mekong.",
+      "Experimente uma massagem laosiana ou uma sauna de ervas."
+     ],
+     "foodAndDrinks": [
+      "Khao piak sen",
+      "Khao jee com patê e café laosiano"
+     ],
+     "criticalTips": [
+      "Muitos templos fecham por volta das 16h; visite-os de manhã.",
+      "Para seguir para a Tailândia, cruze a Ponte da Amizade até Nong Khai de ônibus ou trem."
+     ],
+     "mapsQuery": "Pha That Luang, Vientiane, Laos"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Larb",
+     "Tam mak hoong",
+     "Or lam",
+     "Mok pa (peixe no vapor em folha de bananeira)"
+    ],
+    "drinks": [
+     "Beerlao",
+     "Café laosiano (Bolaven)",
+     "Lao-lao"
+    ],
+    "streetFoods": [
+     "Khao jee",
+     "Sai oua",
+     "Khao lam"
+    ],
+    "diningAdvice": "O arroz glutinoso é enrolado em bolinhas com a mão e molhado nos pratos. O larb e as linguiças costumam ser de porco; peça frango (gai) ou peixe (pa)."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Dinheiro vivo suficiente (kip e dólares para emergências)",
+     "Sapatilhas aquáticas e bolsa estanque",
+     "Repelente de mosquitos",
+     "Uma jaqueta leve para novembro – fevereiro (manhãs frias no norte)"
+    ],
+    "safetyAndEtiquette": [
+     "Respeite as placas de UXO e não pise em terrenos sem sinalização.",
+     "Silêncio e roupa adequada nos templos e durante o Tak Bat."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "A",
+     "B",
+     "C",
+     "E",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "A maioria das tomadas é combinada, para pinos chatos (A) e redondos (C); os plugues europeus costumam encaixar, mas um adaptador universal ajuda."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "A água da torneira não é potável; beba água engarrafada ou a filtrada dos hotéis.",
+    "vaccines": [
+     "Hepatite A e febre tifoide",
+     "Difteria e tétano (rotina)",
+     "Encefalite japonesa e raiva para estadias rurais/longas; consulte um médico sobre malária no sul e em áreas de floresta"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "1195"
+   },
+   "tipping": {
+    "custom": "A gorjeta não é tradição, mas é bem-vinda.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "Basta arredondar a conta ou deixar algo para o guia."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Não há",
+    "minSpend": "Não se aplica",
+    "customsNote": "O Laos não devolve o IVA a turistas. Exportar imagens de Buda e antiguidades exige autorização; guarde os recibos das réplicas."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 0,30 - 1,00",
+    "topCarriers": [
+     "Unitel",
+     "Lao Telecom (LTC)",
+     "ETL"
+    ],
+    "airportSimTrapWarning": "Nos aeroportos de Vientiane e Luang Prabang vendem chips turísticos com passaporte a bom preço; a Unitel costuma ter melhor cobertura no interior."
+   },
+   "touristScams": [
+    {
+     "title": "Golpe dos danos da scooter",
+     "desc": "Na devolução, cobram por arranhões antigos enquanto ficam com o seu passaporte.",
+     "tip": "Filme a scooter ao retirá-la e deixe um depósito em dinheiro em vez do passaporte."
+    },
+    {
+     "title": "Ofertas de trabalho falsas",
+     "desc": "Centros de golpes no Triângulo Dourado atraem estrangeiros com salários altos e os obrigam a trabalhar.",
+     "tip": "Não confie em ofertas pelas redes sociais; na dúvida, entre em contato com a embaixada do seu país."
+    },
+    {
+     "title": "Preço de turista no tuk-tuk",
+     "desc": "Preços fixos inflados das estações até a cidade.",
+     "tip": "Use o balcão oficial de vans compartilhadas ou compare com o LOCA."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Лаосский кип (LAK)",

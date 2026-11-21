@@ -1427,6 +1427,363 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Euro (EUR)",
+   "bestMonths": "Maio – setembro (verão ameno, praias do istmo da Curlândia); dezembro pela árvore e pelos mercados de Natal de Vilnius; invernos frios",
+   "safety": {
+    "safetyScore": 65,
+    "crimeRateSummary": "A Lituânia é, no geral, segura, e a violência contra turistas é rara. Os principais riscos são os batedores de carteira e as contas infladas na vida noturna do centro histórico de Vilnius.",
+    "commonScams": [
+     "Contas abusivas por bebidas sem preço em casas noturnas",
+     "Táxis com tarifa alta perto das rodoviárias e estações de trem",
+     "Batedores de carteira na movimentada rua Pilies e no mercado de Natal"
+    ],
+    "safeTravelTips": [
+     "Peça táxi pelo app Bolt.",
+     "Confira o cardápio e os preços ao entrar em um bar.",
+     "Não saia das trilhas nas dunas da Curlândia; é área protegida."
+    ],
+    "emergencyNumbers": {
+     "police": "112",
+     "ambulance": "112",
+     "general": "112"
+    },
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "99 % (4G rápido, 5G nas grandes cidades)",
+    "costPerGbUsd": "~US$ 0,80 - 2",
+    "esimAvailability": "Excelente",
+    "bestCarriers": [
+     "Telia",
+     "Bitė",
+     "Tele2"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Bom (ônibus e trólebus em Vilnius e Kaunas; trens LTG Link e ônibus intermunicipais)",
+    "costLevel": "Barato",
+    "singleTicketUsd": "US$ 1,10 - 1,60",
+    "dailyPassUsd": "US$ 5 - 6",
+    "popularRideApps": [
+     "Bolt",
+     "Uber",
+     "Trafi",
+     "m.Ticket"
+    ],
+    "taxiAdvice": "O Bolt é a opção mais barata e comum. Compre as passagens do transporte de Vilnius pelos apps Trafi ou m.Ticket; o trem Vilnius–Kaunas leva 1–1,5 hora."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 40 - 60",
+    "dailyBudgetMidrangeUsd": "US$ 95 - 150",
+    "budgetMealUsd": "US$ 10 - 15",
+    "coffeeUsd": "US$ 2,50 - 4",
+    "waterBottleUsd": "US$ 0,80 - 1,30",
+    "hostelDormUsd": "US$ 15 - 28",
+    "hotel3StarUsd": "US$ 65 - 120",
+    "flightCostIndex": "Moderado",
+    "flightTip": "A Turkish Airlines voa direto Istambul–Vilnius; para Kaunas há opções low cost via Europa."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "O cumprimento é com aperto de mão; dá-lo por cima da soleira da porta traz azar.",
+     "Flores se dão em número ímpar.",
+     "Se for convidado para uma casa, leve um pequeno presente e tire os sapatos.",
+     "O basquete é quase uma religião; respeite o time local."
+    ],
+    "festivals": [
+     "Feira de Kaziukas (início de março, artesanato em Vilnius)",
+     "Joninės / Rasos (solstício de verão, 23–24 de junho)",
+     "Dia da República de Užupis (1º de abril)"
+    ],
+    "lifestyle": "Convivem tradições católicas, festas de raiz pagã, paixão pelo basquete e uma cena criativa e de cafés bem animada."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Centro histórico de Vilnius (UNESCO) e praça da Catedral",
+     "Torre de Gediminas",
+     "Portão da Aurora (Aušros Vartai)",
+     "Bairro artístico de Užupis",
+     "Castelo da ilha de Trakai",
+     "Istmo da Curlândia e dunas de Nida (UNESCO)"
+    ],
+    "bestSeasons": "Maio – setembro (verão ameno, praias do istmo da Curlândia); dezembro pela árvore e pelos mercados de Natal de Vilnius; invernos frios",
+    "travelStyleTip": "Vilnius e Kaunas são ligadas por trem; Trakai fica a 30–40 minutos de ônibus ou trem. Ao istmo da Curlândia se chega de balsa a partir de Klaipėda."
+   },
+   "religion": {
+    "primaryReligions": "Católicos ~74 %, ortodoxos ~4 %, sem religião ~6 %; pequenas comunidades luteranas e caraítas.",
+    "respectNorms": "Faça silêncio na capela do Portão da Aurora; cubra ombros e joelhos nas igrejas e evite usar flash durante a missa.",
+    "sacredSites": [
+     "Capela da Virgem do Portão da Aurora (Vilnius)",
+     "Colina das Cruzes (perto de Šiauliai)",
+     "Catedral de Vilnius e igreja de Santa Ana"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Lituano (uma das línguas indo-europeias mais antigas). As minorias falam russo e polonês.",
+    "englishProficiency": "Bom; os jovens e os profissionais do turismo falam inglês, os mais velhos, menos.",
+    "phrases": [
+     {
+      "phrase": "Labas!",
+      "meaning": "Olá",
+      "translation": "Olá",
+      "pronunciation": "LAH-bahs"
+     },
+     {
+      "phrase": "Ačiū",
+      "meaning": "Obrigado",
+      "translation": "Obrigado",
+      "pronunciation": "AH-choo"
+     },
+     {
+      "phrase": "Prašau",
+      "meaning": "Por favor / De nada",
+      "translation": "Por favor / De nada",
+      "pronunciation": "prah-SHOW"
+     },
+     {
+      "phrase": "Kiek kainuoja?",
+      "meaning": "Quanto custa?",
+      "translation": "Quanto custa?",
+      "pronunciation": "kyek kai-NWOH-yah"
+     },
+     {
+      "phrase": "Į sveikatą!",
+      "meaning": "Saúde!",
+      "translation": "Saúde!",
+      "pronunciation": "ee svay-KAH-tah"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Nos séculos XIV–XV, o Grão-Ducado da Lituânia se estendia do Báltico ao mar Negro, um dos maiores Estados da Europa, e se uniu à Polônia em 1569. Passou ao Império Russo em 1795, tornou-se independente em 1918, foi anexado pela URSS em 1940 e, em 11 de março de 1990, foi a primeira república soviética a declarar independência.",
+    "milestones": [
+     "1253: coroação de Mindaugas como rei da Lituânia",
+     "1410: batalha de Grunwald (Žalgiris)",
+     "1918: Ato de Independência (16 de fevereiro)",
+     "1990: restauração da independência (11 de março); 2004 UE e OTAN"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Cepelinai (bolinhos de batata recheados de carne, com creme azedo e bacon)",
+     "Šaltibarščiai (sopa fria cor-de-rosa de beterraba e kefir)",
+     "Kibinai (pastéis caraítas de carne de Trakai)"
+    ],
+    "traditionalDrinks": [
+     "Gira (kvas de pão)",
+     "Midus (hidromel)",
+     "Cervejas Švyturys e Utenos"
+    ],
+    "streetFoodAndDesserts": [
+     "Kepta duona (pão de centeio frito com alho)",
+     "Šakotis (bolo-árvore feito no espeto)",
+     "Tinginys (bolo 'preguiçoso' de biscoito e chocolate)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Arvydas Sabonis (lenda do basquete)",
+     "Mikalojus Konstantinas Čiurlionis (pintor e compositor)",
+     "Czesław Miłosz (poeta Nobel, nascido na Lituânia)"
+    ],
+    "strongSectors": [
+     "Tecnologia laser",
+     "Fintech e serviços de TI",
+     "Logística e porto de Klaipėda"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "O pagamento com cartão e celular é muito comum; um pouco de dinheiro vivo ajuda em mercados e cidades pequenas.",
+    "tippingCulture": "Nos restaurantes, 5–10 % é bem-vindo, mas é opcional.",
+    "economicPillars": "Indústria (móveis, alimentos, química), logística, fintech, indústria de laser e agricultura."
+   }
+  },
+  "itin": {
+   "routeName": "Clássicos da Lituânia: Vilnius, Trakai e Kaunas",
+   "routeSummary": "Um roteiro de 5 dias da Vilnius barroca até o castelo à beira do lago de Trakai e a Kaunas modernista do entreguerras.",
+   "totalDays": 5,
+   "idealDurationText": "5 dias",
+   "bestSeason": "Maio – setembro (verão ameno, praias do istmo da Curlândia); dezembro pela árvore e pelos mercados de Natal de Vilnius; invernos frios",
+   "transportMode": "A pé, trem e ônibus intermunicipal",
+   "paceLevel": "Tranquilo",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Vilnius (centro histórico e Užupis)",
+     "recommendedDuration": "2–3 dias",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Praça da Catedral e campanário",
+      "Vista da torre de Gediminas",
+      "Portão da Aurora",
+      "Užupis e seu muro da constituição"
+     ],
+     "activities": [
+      "Passeie pelas ruas Pilies e Literatų.",
+      "Visite o Palácio dos Grão-Duques e o Museu das Ocupações.",
+      "Suba a colina das Três Cruzes ao pôr do sol."
+     ],
+     "foodAndDrinks": [
+      "Cepelinai",
+      "Šaltibarščiai (no verão)",
+      "Kepta duona com cerveja local"
+     ],
+     "criticalTips": [
+      "Use calçado confortável para os paralelepípedos.",
+      "Compre a passagem no app antes de embarcar; a fiscalização é frequente."
+     ],
+     "mapsQuery": "Vilnius Cathedral Square, Lithuania"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Trakai (castelo da ilha e os caraítas)",
+     "recommendedDuration": "1 dia",
+     "durationBadge": "1 dia",
+     "highlights": [
+      "Castelo de Trakai no lago Galvė",
+      "Casas de madeira caraítas e kenesa (casa de oração)",
+      "Passeio à beira do lago"
+     ],
+     "activities": [
+      "Explore o museu e o pátio do castelo.",
+      "No verão, alugue um barco ou uma prancha de SUP no lago.",
+      "Conheça a comunidade caraíta, de língua túrquica."
+     ],
+     "foodAndDrinks": [
+      "Kibinai (também de cordeiro ou legumes)",
+      "Midus (hidromel)"
+     ],
+     "criticalTips": [
+      "O castelo fica lotado nos fins de semana; prefira ir num dia útil, de manhã.",
+      "Confira antes os horários de volta para Vilnius."
+     ],
+     "mapsQuery": "Trakai Island Castle, Lithuania"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Kaunas (arquitetura modernista e centro histórico)",
+     "recommendedDuration": "1–2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Castelo de Kaunas e praça da Prefeitura",
+      "Laisvės Alėja e prédios modernistas do entreguerras (UNESCO)",
+      "Memorial do Nono Forte",
+      "Mosteiro de Pažaislis"
+     ],
+     "activities": [
+      "Suba no funicular de Aleksotas até o mirante.",
+      "Visite o Museu Nacional de Arte M. K. Čiurlionis.",
+      "Descubra os murais de arte urbana do centro histórico."
+     ],
+     "foodAndDrinks": [
+      "Šakotis com café",
+      "Gira (kvas)",
+      "Panquecas de batata (bulviniai blynai)"
+     ],
+     "criticalTips": [
+      "O Nono Forte é um memorial do Holocausto; comporte-se com respeito.",
+      "O aeroporto de Kaunas é uma alternativa para voos baratos."
+     ],
+     "mapsQuery": "Kaunas Old Town, Lithuania"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Cepelinai",
+     "Šaltibarščiai",
+     "Kibinai",
+     "Panquecas de batata"
+    ],
+    "drinks": [
+     "Gira",
+     "Midus",
+     "Cerveja Švyturys",
+     "Trejos devynerios (bitter de ervas)"
+    ],
+    "streetFoods": [
+     "Kepta duona",
+     "Kibinai",
+     "Šakotis",
+     "Spurgos (bolinhos fritos de requeijão)"
+    ],
+    "diningAdvice": "Os cepelinai tradicionais levam carne de porco; os restaurantes caraítas de Trakai servem kibinai de cordeiro. As porções são grandes."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Capa de chuva e roupas em camadas",
+     "Calçado confortável",
+     "Repelente de carrapatos e mosquitos",
+     "Casaco e gorro no inverno"
+    ],
+    "safetyAndEtiquette": [
+     "Beber álcool na rua é proibido.",
+     "A venda de bebidas alcoólicas é limitada à noite e aos domingos.",
+     "Pedestres devem usar refletor no escuro."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Tomadas de dois pinos redondos (C/F), como na Turquia; não é preciso adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "A água da torneira vem de aquíferos e é potável.",
+    "vaccines": [
+     "Vacinas de rotina (tétano, difteria, sarampo)",
+     "Vacina contra encefalite transmitida por carrapatos para florestas e lagos no verão"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "112"
+   },
+   "tipping": {
+    "custom": "Nos restaurantes, é comum deixar 5–10 %.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Em cafés e bares, basta arredondar a conta."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA de 21 %; devolução líquida ~10–14 %",
+    "minSpend": "~55 € ou mais em uma loja",
+    "customsNote": "Viajantes de fora da UE precisam validar os formulários na alfândega na última saída da UE (por exemplo, no aeroporto de Vilnius); na Lituânia o processo costuma ser eletrônico."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 0,80 - 2,00",
+    "topCarriers": [
+     "Telia",
+     "Bitė",
+     "Tele2"
+    ],
+    "airportSimTrapWarning": "O roaming com linhas turcas é caro; uma eSIM ou um chip pré-pago da Bitė, Telia ou Tele2 (Pildyk) comprado na Narvesen ou no Maxima sai muito barato."
+   },
+   "touristScams": [
+    {
+     "title": "Conta abusiva em casas noturnas",
+     "desc": "Algumas casas noturnas do centro histórico servem bebidas sem preço e apresentam uma conta enorme.",
+     "tip": "Não peça nada sem ver os preços e confira a conta com frequência."
+    },
+    {
+     "title": "Táxis das estações",
+     "desc": "Alguns táxis em frente às estações cobram tarifas altas de turistas.",
+     "tip": "Use o Bolt e confira o preço no app."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Евро (EUR)",

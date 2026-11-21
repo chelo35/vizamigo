@@ -77,7 +77,7 @@ const QuickDealPanel: React.FC<{ kind: DealKind; passport: string; destination: 
       </select>
     </Field>
   );
-  const toSel = countrySel(`vz-qd-to-${kind}`, l('Nereye', 'Where to', 'Wohin', 'Destino', 'Куда'), to, setTo);
+  const toSel = countrySel(`vz-qd-to-${kind}`, l('Nereye', 'Where to', 'Wohin', 'Destino', 'Куда', 'Destino'), to, setTo);
 
   const findFlights = async () => {
     setBusy(true);
@@ -180,11 +180,11 @@ const QuickDealPanel: React.FC<{ kind: DealKind; passport: string; destination: 
       {kind === 'visa' && (
         <>
           <div className="vz-formgrid vz-qd-grid">
-            {countrySel('vz-qd-pp', l('Pasaportun', 'Your passport', 'Dein Pass', 'Tu pasaporte', 'Ваш паспорт'), from, setFrom)}
+            {countrySel('vz-qd-pp', l('Pasaportun', 'Your passport', 'Dein Pass', 'Tu pasaporte', 'Ваш паспорт', 'Seu passaporte'), from, setFrom)}
             {toSel}
           </div>
           {from === to ? (
-            <p className="vz-muted" style={{ margin: 0 }}>{l('Kendi ülkene vize gerekmez.', 'No visa needed for your own country.', 'Für dein eigenes Land brauchst du kein Visum.', 'No necesitas visado para tu propio país.', 'Для своей страны виза не нужна.')}</p>
+            <p className="vz-muted" style={{ margin: 0 }}>{l('Kendi ülkene vize gerekmez.', 'No visa needed for your own country.', 'Für dein eigenes Land brauchst du kein Visum.', 'No necesitas visado para tu propio país.', 'Для своей страны виза не нужна.', 'Você não precisa de visto para o seu próprio país.')}</p>
           ) : (
             <div className="vz-qd-visa">
               <div className="vz-row-flex" style={{ gap: 8, alignItems: 'center' }}>
@@ -192,19 +192,19 @@ const QuickDealPanel: React.FC<{ kind: DealKind; passport: string; destination: 
               </div>
               {visaAnswer && <p style={{ margin: 0 }}>{visaAnswer}</p>}
               <div className="vz-row-flex" style={{ gap: 8, flexWrap: 'wrap' }}>
-                <a className="vz-btn vz-btn-primary sm" href={buildLocalizedPath(lang, 'explore', to)}>{l(`${toName} giriş şartlarının tamamı ›`, `Full ${toName} entry rules ›`, `Alle Einreiseregeln: ${toName} ›`, `Requisitos completos: ${toName} ›`, `Все правила въезда: ${toName} ›`)}</a>
-                {visaInfo?.u && <a className="vz-btn vz-btn-soft sm" href={visaInfo.u} target="_blank" rel="noopener noreferrer">{l('Resmî başvuru sitesi', 'Official application site', 'Offizielle Antragsseite', 'Web oficial', 'Официальный сайт')}: {visaInfo.h || new URL(visaInfo.u).hostname}</a>}
+                <a className="vz-btn vz-btn-primary sm" href={buildLocalizedPath(lang, 'explore', to)}>{l(`${toName} giriş şartlarının tamamı ›`, `Full ${toName} entry rules ›`, `Alle Einreiseregeln: ${toName} ›`, `Requisitos completos: ${toName} ›`, `Все правила въезда: ${toName} ›`, `Requisitos completos: ${toName} ›`)}</a>
+                {visaInfo?.u && <a className="vz-btn vz-btn-soft sm" href={visaInfo.u} target="_blank" rel="noopener noreferrer">{l('Resmî başvuru sitesi', 'Official application site', 'Offizielle Antragsseite', 'Web oficial', 'Официальный сайт', 'Site oficial')}: {visaInfo.h || new URL(visaInfo.u).hostname}</a>}
               </div>
               {needsPaper && (
                 <a className="vz-qd-fare" href="https://vizamigo.visahq.net/" target="_blank" rel="noopener noreferrer sponsored">
                   <span><b style={{ fontSize: 15 }}>VisaHQ</b> <AdTag /></span>
-                  <small>{l('Belgelerle uğraşmak istemezsen başvurunu senin için hazırlayıp takip eder. Resmî vize ücretine ek olarak hizmet bedeli alır.', 'Prefer not to deal with the paperwork? VisaHQ prepares and tracks your application for a service fee on top of the official visa fee.', 'Keine Lust auf Papierkram? VisaHQ übernimmt den Antrag gegen eine Servicegebühr zusätzlich zur Visagebühr.', '¿Sin papeleo? VisaHQ prepara tu solicitud por una tarifa de servicio además de la tasa oficial.', 'Не хотите возиться с документами? VisaHQ оформит заявку за сервисный сбор сверх консульского.')}</small>
+                  <small>{l('Belgelerle uğraşmak istemezsen başvurunu senin için hazırlayıp takip eder. Resmî vize ücretine ek olarak hizmet bedeli alır.', 'Prefer not to deal with the paperwork? VisaHQ prepares and tracks your application for a service fee on top of the official visa fee.', 'Keine Lust auf Papierkram? VisaHQ übernimmt den Antrag gegen eine Servicegebühr zusätzlich zur Visagebühr.', '¿Sin papeleo? VisaHQ prepara tu solicitud por una tarifa de servicio además de la tasa oficial.', 'Не хотите возиться с документами? VisaHQ оформит заявку за сервисный сбор сверх консульского.', 'Sem burocracia? A VisaHQ prepara seu pedido por uma taxa de serviço, além da taxa oficial.')}</small>
                 </a>
               )}
               {needsPaper && (
-                <Picks label={l('Başvuruda genelde istenenler: seyahat sigortası, konaklama ve uçuş rezervasyonu', 'Usually required: travel insurance, hotel and flight bookings', 'Meist verlangt: Reiseversicherung, Hotel- und Flugbuchung', 'Suelen pedir: seguro, hotel y vuelo', 'Обычно нужны: страховка, отель и билеты')} items={visaPicks} k={`${from}${to}`} />
+                <Picks label={l('Başvuruda genelde istenenler: seyahat sigortası, konaklama ve uçuş rezervasyonu', 'Usually required: travel insurance, hotel and flight bookings', 'Meist verlangt: Reiseversicherung, Hotel- und Flugbuchung', 'Suelen pedir: seguro, hotel y vuelo', 'Обычно нужны: страховка, отель и билеты', 'Costumam pedir: seguro, hotel e voo')} items={visaPicks} k={`${from}${to}`} />
               )}
-              <p className="vz-qd-foot">{l('Vizamigo vize vermez; başvuruyu her zaman resmî siteden ya da konsolosluktan yap. Ücret isteyen aracı sitelere dikkat.', 'Vizamigo does not issue visas; always apply on the official site or at the consulate. Beware of look-alike sites charging extra fees.', 'Vizamigo stellt keine Visa aus; beantrage sie immer offiziell.', 'Vizamigo no emite visados; solicítalo siempre en la web oficial.', 'Vizamigo не выдаёт визы; подавайте только на официальном сайте.')}</p>
+              <p className="vz-qd-foot">{l('Vizamigo vize vermez; başvuruyu her zaman resmî siteden ya da konsolosluktan yap. Ücret isteyen aracı sitelere dikkat.', 'Vizamigo does not issue visas; always apply on the official site or at the consulate. Beware of look-alike sites charging extra fees.', 'Vizamigo stellt keine Visa aus; beantrage sie immer offiziell.', 'Vizamigo no emite visados; solicítalo siempre en la web oficial.', 'Vizamigo не выдаёт визы; подавайте только на официальном сайте.', 'A Vizamigo não emite vistos; faça sempre o pedido no site oficial.')}</p>
             </div>
           )}
         </>
@@ -213,44 +213,44 @@ const QuickDealPanel: React.FC<{ kind: DealKind; passport: string; destination: 
       {kind === 'flight' && (
         <>
           <div className="vz-formgrid vz-qd-grid">
-            {countrySel('vz-qd-from', l('Nereden', 'From', 'Von', 'Desde', 'Откуда'), from, setFrom)}
+            {countrySel('vz-qd-from', l('Nereden', 'From', 'Von', 'Desde', 'Откуда', 'De'), from, setFrom)}
             {toSel}
-            <Field label={l('En erken gidiş', 'Earliest departure', 'Frühester Abflug', 'Salida desde', 'Вылет с')} htmlFor="vz-qd-s">
+            <Field label={l('En erken gidiş', 'Earliest departure', 'Frühester Abflug', 'Salida desde', 'Вылет с', 'Saída a partir de')} htmlFor="vz-qd-s">
               <input id="vz-qd-s" type="date" className="vz-input" min={plus(today, 1)} value={start} onChange={(e) => { if (e.target.value) { setStart(e.target.value); if (end < e.target.value) setEnd(plus(e.target.value, 14)); setRes(null); } }} />
             </Field>
-            <Field label={l('En geç gidiş', 'Latest departure', 'Spätester Abflug', 'Salida hasta', 'Вылет до')} htmlFor="vz-qd-e">
+            <Field label={l('En geç gidiş', 'Latest departure', 'Spätester Abflug', 'Salida hasta', 'Вылет до', 'Saída até')} htmlFor="vz-qd-e">
               <input id="vz-qd-e" type="date" className="vz-input" min={start} max={plus(start, 92)} value={end} onChange={(e) => { if (e.target.value) { setEnd(e.target.value); setRes(null); } }} />
             </Field>
-            <Field label={l('Kaç gün kalacaksın?', 'Trip length', 'Reisedauer', 'Duración', 'Сколько дней')} htmlFor="vz-qd-l">
+            <Field label={l('Kaç gün kalacaksın?', 'Trip length', 'Reisedauer', 'Duración', 'Сколько дней', 'Duração')} htmlFor="vz-qd-l">
               <select id="vz-qd-l" className="vz-select" value={len} onChange={(e) => { setLen(Number(e.target.value)); setRes(null); }}>
-                <option value={0}>{l('Tek yön', 'One way', 'Nur Hinflug', 'Solo ida', 'В одну сторону')}</option>
-                {[3, 5, 7, 10, 14, 21].map((d) => <option key={d} value={d}>{l(`${d} gün (gidiş-dönüş)`, `${d} days (return)`, `${d} Tage (hin & zurück)`, `${d} días (ida y vuelta)`, `${d} дн. (туда-обратно)`)}</option>)}
+                <option value={0}>{l('Tek yön', 'One way', 'Nur Hinflug', 'Solo ida', 'В одну сторону', 'Só ida')}</option>
+                {[3, 5, 7, 10, 14, 21].map((d) => <option key={d} value={d}>{l(`${d} gün (gidiş-dönüş)`, `${d} days (return)`, `${d} Tage (hin & zurück)`, `${d} días (ida y vuelta)`, `${d} дн. (туда-обратно)`, `${d} dias (ida e volta)`)}</option>)}
               </select>
             </Field>
           </div>
           <Btn icon="search" onClick={findFlights} disabled={busy || !fromIata || !toIata || from === to}>
-            {busy ? l('Aranıyor…', 'Searching…', 'Suche…', 'Buscando…', 'Ищем…') : l('En ucuz bileti bul', 'Find the cheapest fare', 'Günstigsten Flug finden', 'Buscar el más barato', 'Найти дешевле всего')}
+            {busy ? l('Aranıyor…', 'Searching…', 'Suche…', 'Buscando…', 'Ищем…', 'Buscando…') : l('En ucuz bileti bul', 'Find the cheapest fare', 'Günstigsten Flug finden', 'Buscar el más barato', 'Найти дешевле всего', 'Buscar o mais barato')}
           </Btn>
           {res && res.length > 0 && (
             <div className="vz-qd-res">
               {res.map((f, i) => (
                 <a key={`${f.dep}${f.ret}`} className={`vz-qd-fare${i === 0 ? ' best' : ''}`} href={f.link || searchLink} target="_blank" rel="noopener noreferrer sponsored">
-                  {i === 0 && <em>{l('En ucuz', 'Cheapest', 'Am günstigsten', 'Más barato', 'Дешевле всего')}</em>}
+                  {i === 0 && <em>{l('En ucuz', 'Cheapest', 'Am günstigsten', 'Más barato', 'Дешевле всего', 'Mais barato')}</em>}
                   <b>{money(f.price, rc)}</b>
                   <span>{fmtDay(f.dep)}{f.ret ? ` → ${fmtDay(f.ret)}` : ''}</span>
-                  <small>{f.transfers === 0 ? l('Direkt', 'Direct', 'Direkt', 'Directo', 'Прямой') : l(`${f.transfers ?? '?'} aktarma`, `${f.transfers ?? '?'} stop(s)`, `${f.transfers ?? '?'} Umstieg`, `${f.transfers ?? '?'} escala`, `пересадок: ${f.transfers ?? '?'}`)} · {l('Bileti al', 'Book', 'Buchen', 'Reservar', 'Купить')} ›</small>
+                  <small>{f.transfers === 0 ? l('Direkt', 'Direct', 'Direkt', 'Directo', 'Прямой', 'Direto') : l(`${f.transfers ?? '?'} aktarma`, `${f.transfers ?? '?'} stop(s)`, `${f.transfers ?? '?'} Umstieg`, `${f.transfers ?? '?'} escala`, `пересадок: ${f.transfers ?? '?'}`, `${f.transfers ?? '?'} escala`)} · {l('Bileti al', 'Book', 'Buchen', 'Reservar', 'Купить', 'Reservar')} ›</small>
                 </a>
               ))}
             </div>
           )}
           {res && res.length === 0 && (
             <p className="vz-muted" style={{ margin: 0 }}>
-              {l('Bu aralık için kayıtlı fiyat bulunamadı. ', 'No saved fares for these dates. ', 'Keine gespeicherten Preise. ', 'Sin tarifas guardadas. ', 'Нет сохранённых цен. ')}
-              <a href={searchLink} target="_blank" rel="noopener noreferrer sponsored">{l('Aviasales\'te canlı ara ›', 'Search live on Aviasales ›', 'Live auf Aviasales suchen ›', 'Buscar en Aviasales ›', 'Искать на Aviasales ›')}</a>
+              {l('Bu aralık için kayıtlı fiyat bulunamadı. ', 'No saved fares for these dates. ', 'Keine gespeicherten Preise. ', 'Sin tarifas guardadas. ', 'Нет сохранённых цен. ', 'Sem tarifas salvas. ')}
+              <a href={searchLink} target="_blank" rel="noopener noreferrer sponsored">{l('Aviasales\'te canlı ara ›', 'Search live on Aviasales ›', 'Live auf Aviasales suchen ›', 'Buscar en Aviasales ›', 'Искать на Aviasales ›', 'Buscar na Aviasales ›')}</a>
             </p>
           )}
-          <Picks label={l('Diğer sitelerde de karşılaştır:', 'Compare on other sites too:', 'Auch woanders vergleichen:', 'Compara en otros sitios:', 'Сравнить на других сайтах:')} items={flightPicks} k={`${fromIata}${toIata}${start}${len}`} />
-          <p className="vz-qd-foot">{l('Fiyatlar Aviasales\'te son günlerde bulunan en düşük fiyatlardır; kişi başı.', 'Lowest fares found on Aviasales in recent days; per person.', 'Niedrigste kürzlich gefundene Preise auf Aviasales; pro Person.', 'Tarifas más bajas halladas en Aviasales; por persona.', 'Минимальные цены Aviasales за последние дни; на человека.')}</p>
+          <Picks label={l('Diğer sitelerde de karşılaştır:', 'Compare on other sites too:', 'Auch woanders vergleichen:', 'Compara en otros sitios:', 'Сравнить на других сайтах:', 'Compare em outros sites:')} items={flightPicks} k={`${fromIata}${toIata}${start}${len}`} />
+          <p className="vz-qd-foot">{l('Fiyatlar Aviasales\'te son günlerde bulunan en düşük fiyatlardır; kişi başı.', 'Lowest fares found on Aviasales in recent days; per person.', 'Niedrigste kürzlich gefundene Preise auf Aviasales; pro Person.', 'Tarifas más bajas halladas en Aviasales; por persona.', 'Минимальные цены Aviasales за последние дни; на человека.', 'Tarifas mais baixas encontradas na Aviasales; por pessoa.')}</p>
         </>
       )}
 
@@ -258,35 +258,35 @@ const QuickDealPanel: React.FC<{ kind: DealKind; passport: string; destination: 
         <>
           <div className="vz-formgrid vz-qd-grid">
             {toSel}
-            <Field label={l('Giriş', 'Check-in', 'Anreise', 'Entrada', 'Заезд')} htmlFor="vz-qd-hs">
+            <Field label={l('Giriş', 'Check-in', 'Anreise', 'Entrada', 'Заезд', 'Entrada')} htmlFor="vz-qd-hs">
               <input id="vz-qd-hs" type="date" className="vz-input" min={plus(today, 1)} value={start} onChange={(e) => e.target.value && setStart(e.target.value)} />
             </Field>
-            <Field label={l('Gece', 'Nights', 'Nächte', 'Noches', 'Ночей')} htmlFor="vz-qd-hn">
+            <Field label={l('Gece', 'Nights', 'Nächte', 'Noches', 'Ночей', 'Noites')} htmlFor="vz-qd-hn">
               <select id="vz-qd-hn" className="vz-select" value={len || 3} onChange={(e) => setLen(Number(e.target.value))}>
                 {[1, 2, 3, 4, 5, 7, 10, 14].map((d) => <option key={d} value={d}>{d}</option>)}
               </select>
             </Field>
-            <Field label={l('Kişi', 'Guests', 'Gäste', 'Huéspedes', 'Гостей')} htmlFor="vz-qd-hp">
+            <Field label={l('Kişi', 'Guests', 'Gäste', 'Huéspedes', 'Гостей', 'Hóspedes')} htmlFor="vz-qd-hp">
               <select id="vz-qd-hp" className="vz-select" value={n} onChange={(e) => setN(Number(e.target.value))}>
                 {[1, 2, 3, 4, 5, 6].map((d) => <option key={d} value={d}>{d}</option>)}
               </select>
             </Field>
           </div>
-          <Picks label={l(`${city} otellerini şurada karşılaştır:`, `Compare ${city} hotels on:`, `Hotels in ${city} vergleichen:`, `Compara hoteles en ${city}:`, `Отели ${city}:`)} items={hotelPicks} k={`${to}${start}${len}${n}`} />
+          <Picks label={l(`${city} otellerini şurada karşılaştır:`, `Compare ${city} hotels on:`, `Hotels in ${city} vergleichen:`, `Compara hoteles en ${city}:`, `Отели ${city}:`, `Compare hotéis em ${city}:`)} items={hotelPicks} k={`${to}${start}${len}${n}`} />
         </>
       )}
 
       {kind === 'car' && (
         <>
           <div className="vz-formgrid vz-qd-grid">{toSel}</div>
-          <Picks label={l(`${toName} için araç kiralama sitesini seç:`, `Car rental in ${toName}:`, `Mietwagen in ${toName}:`, `Alquiler en ${toName}:`, `Аренда в ${toName}:`)} items={carPicks} k={to} />
+          <Picks label={l(`${toName} için araç kiralama sitesini seç:`, `Car rental in ${toName}:`, `Mietwagen in ${toName}:`, `Alquiler en ${toName}:`, `Аренда в ${toName}:`, `Aluguel de carro em ${toName}:`)} items={carPicks} k={to} />
         </>
       )}
 
       {kind === 'transfer' && (
         <>
           <div className="vz-formgrid vz-qd-grid">{toSel}</div>
-          <Picks label={l(`${toIata} havalimanından otele sabit fiyatlı transfer:`, `Fixed-price transfer from ${toIata} airport:`, `Festpreis-Transfer ab ${toIata}:`, `Traslado desde ${toIata}:`, `Трансфер из ${toIata}:`)} items={transferPicks} k={to} />
+          <Picks label={l(`${toIata} havalimanından otele sabit fiyatlı transfer:`, `Fixed-price transfer from ${toIata} airport:`, `Festpreis-Transfer ab ${toIata}:`, `Traslado desde ${toIata}:`, `Трансфер из ${toIata}:`, `Transfer a partir de ${toIata}:`)} items={transferPicks} k={to} />
         </>
       )}
 
@@ -297,8 +297,8 @@ const QuickDealPanel: React.FC<{ kind: DealKind; passport: string; destination: 
               <button key={c} type="button" className={tourCity === ct ? 'on' : undefined} onClick={() => setTourCity(ct)}>{getCountryName(c, language)}</button>
             ))}
           </div>
-          <Picks label={l(`${tourCity} turları, biletler ve günübirlik geziler:`, `Tours, tickets and day trips in ${tourCity}:`, `Touren und Tickets in ${tourCity}:`, `Tours y entradas en ${tourCity}:`, `Экскурсии в ${tourCity}:`)} items={tourPicks} k={tourCity} />
-          <a className="vz-qd-more" href={toursPath(language)}>{l('Tüm turlar sayfası ›', 'All tours ›', 'Alle Touren ›', 'Todos los tours ›', 'Все туры ›')}</a>
+          <Picks label={l(`${tourCity} turları, biletler ve günübirlik geziler:`, `Tours, tickets and day trips in ${tourCity}:`, `Touren und Tickets in ${tourCity}:`, `Tours y entradas en ${tourCity}:`, `Экскурсии в ${tourCity}:`, `Passeios e ingressos em ${tourCity}:`)} items={tourPicks} k={tourCity} />
+          <a className="vz-qd-more" href={toursPath(language)}>{l('Tüm turlar sayfası ›', 'All tours ›', 'Alle Touren ›', 'Todos los tours ›', 'Все туры ›', 'Todos os passeios ›')}</a>
         </>
       )}
 
@@ -312,18 +312,18 @@ const QuickDealPanel: React.FC<{ kind: DealKind; passport: string; destination: 
                   inTR ? 'div' : 'a',
                   { key: p[3], className: 'vz-qd-fare', ...(inTR ? {} : { href: `https://www.airalo.com/${p[3]}`, target: '_blank', rel: 'noopener noreferrer sponsored' }) },
                   <b>{usd(p[2])}</b>,
-                  <span>{p[0] ? `${p[0]} GB` : l('Sınırsız', 'Unlimited', 'Unbegrenzt', 'Ilimitado', 'Безлимит')} · {p[1]} {l('gün', 'days', 'Tage', 'días', 'дн.')}</span>,
-                  <small>{inTR ? l('Airalo fiyatı · yurt dışında açılır', 'Airalo price', 'Airalo-Preis', 'Precio Airalo', 'Цена Airalo') : 'Airalo ›'}</small>
+                  <span>{p[0] ? `${p[0]} GB` : l('Sınırsız', 'Unlimited', 'Unbegrenzt', 'Ilimitado', 'Безлимит', 'Ilimitado')} · {p[1]} {l('gün', 'days', 'Tage', 'días', 'дн.', 'dias')}</span>,
+                  <small>{inTR ? l('Airalo fiyatı · yurt dışında açılır', 'Airalo price', 'Airalo-Preis', 'Precio Airalo', 'Цена Airalo', 'Preço na Airalo') : 'Airalo ›'}</small>
                 )
               ))}
             </div>
           )}
-          <Picks label={l('eSIM firmasını seç:', 'Choose your eSIM provider:', 'eSIM-Anbieter wählen:', 'Elige tu eSIM:', 'Выберите eSIM:')} items={esimPicks} k={to} />
-          {inTR && <p className="vz-trip-note" style={{ padding: 0 }}>{l('Türkiye\'den Airalo, Yesim, Saily ve GigSky sitelerine erişim engelli; Drimsim açılıyor. Diğerlerini yurt dışına çıkınca satın alabilirsin.', 'Airalo, Yesim, Saily and GigSky are blocked in Türkiye; Drimsim opens.', 'Airalo, Yesim, Saily und GigSky sind in der Türkei gesperrt.', 'Airalo, Yesim, Saily y GigSky están bloqueados en Turquía.', 'Airalo, Yesim, Saily и GigSky заблокированы в Турции.')}</p>}
+          <Picks label={l('eSIM firmasını seç:', 'Choose your eSIM provider:', 'eSIM-Anbieter wählen:', 'Elige tu eSIM:', 'Выберите eSIM:', 'Escolha sua eSIM:')} items={esimPicks} k={to} />
+          {inTR && <p className="vz-trip-note" style={{ padding: 0 }}>{l('Türkiye\'den Airalo, Yesim, Saily ve GigSky sitelerine erişim engelli; Drimsim açılıyor. Diğerlerini yurt dışına çıkınca satın alabilirsin.', 'Airalo, Yesim, Saily and GigSky are blocked in Türkiye; Drimsim opens.', 'Airalo, Yesim, Saily und GigSky sind in der Türkei gesperrt.', 'Airalo, Yesim, Saily y GigSky están bloqueados en Turquía.', 'Airalo, Yesim, Saily и GigSky заблокированы в Турции.', 'Airalo, Yesim, Saily e GigSky estão bloqueados na Turquia.')}</p>}
         </>
       )}
 
-      <button type="button" className="vz-qd-close" onClick={onClose} aria-label={l('Kapat', 'Close', 'Schließen', 'Cerrar', 'Закрыть')}>✕</button>
+      <button type="button" className="vz-qd-close" onClick={onClose} aria-label={l('Kapat', 'Close', 'Schließen', 'Cerrar', 'Закрыть', 'Fechar')}>✕</button>
     </div>
   );
 };

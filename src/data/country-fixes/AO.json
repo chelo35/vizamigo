@@ -1443,6 +1443,367 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Kwanza angolano (AOA)",
+   "plugType": "Tipo C, F (220V, 50Hz)",
+   "bestMonths": "Maio a setembro (estação seca e fresca do “cacimbo”); de outubro a abril faz calor e chove; as quedas de Kalandula têm mais água em abril e maio",
+   "safety": {
+    "safetyScore": 40,
+    "safetyLevel": "Recomenda-se cautela",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60",
+    "crimeRateSummary": "Em Luanda são frequentes os assaltos à mão armada, o roubo de carros e o roubo de celulares por trombadinhas, principalmente à noite. Os protestos contra o aumento dos combustíveis em julho de 2025 deixaram mortos; evite manifestações e redobre a cautela em Cabinda e nas zonas diamantíferas (Lunda Norte/Sul).",
+    "commonScams": [
+     "Cambistas de rua (kinguilas) que entregam notas falsas ou contam rápido para enganar",
+     "Falsos policiais que pedem dinheiro com a desculpa de verificar documentos",
+     "Táxis sem licença no aeroporto com tarifas abusivas"
+    ],
+    "safeTravelTips": [
+     "Não ande a pé à noite; em Luanda, use Yango, Heetch ou um carro providenciado pelo hotel.",
+     "Não use o celular na rua nem com a janela do carro aberta; leve uma cópia colorida em vez do passaporte.",
+     "Evite estradas entre cidades à noite; para longas distâncias, pegue voos domésticos (TAAG)."
+    ],
+    "emergencyNumbers": {
+     "police": "113",
+     "ambulance": "112",
+     "general": "113"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Bom 4G em Luanda e nas capitais de província; fraco ou inexistente nas áreas rurais e fora das vias principais",
+    "costPerGbUsd": "~US$ 1,00 - 2,50",
+    "esimAvailability": "Média (alguns planos de eSIM internacionais; o chip local é mais barato e exige cadastro com passaporte)",
+    "bestCarriers": [
+     "Unitel",
+     "Africell",
+     "Movicel",
+     "Airalo eSIM"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Precário (transporte público irregular, muito trânsito)",
+    "costLevel": "Moderado",
+    "singleTicketUsd": "0,30 - 0,60 $ (micro-ônibus candongueiro)",
+    "dailyPassUsd": "Não existe",
+    "popularRideApps": [
+     "Yango",
+     "Heetch",
+     "Traslados do hotel"
+    ],
+    "taxiAdvice": "Em Luanda funcionam o Yango e o Heetch, a opção mais segura porque mostram o preço antes. As vans compartilhadas azuis e brancas (candongueiros) são muito baratas, mas vivem lotadas e têm casos de roubo, por isso não são recomendadas a estrangeiros. O novo Aeroporto Internacional Dr. António Agostinho Neto fica a ~40 km do centro; reserve o traslado com antecedência."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 45 - 70",
+    "dailyBudgetMidrangeUsd": "US$ 120 - 200",
+    "budgetMealUsd": "US$ 5 - 12",
+    "coffeeUsd": "US$ 1,50 - 3,00",
+    "waterBottleUsd": "US$ 0,50 - 1,00",
+    "hostelDormUsd": "US$ 20 - 40",
+    "hotel3StarUsd": "US$ 80 - 150",
+    "flightCostIndex": "Alto (poucas conexões)",
+    "flightTip": "Para chegar a Luanda, o normal é passar por Lisboa (TAP, TAAG), Dubai (Emirates) ou Adis Abeba (Ethiopian); confira também as opções de voo direto disponíveis no momento."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Os cumprimentos são longos e calorosos; ir direto ao assunto sem dizer “Bom dia” e perguntar pela família é falta de educação.",
+     "Chamar os mais velhos de “Mais velho / Mais velha” é sinal de respeito.",
+     "É proibido fotografar prédios oficiais, a polícia, instalações militares e os arredores do Palácio Presidencial."
+    ],
+    "festivals": [
+     "Carnaval de Luanda (fevereiro – março)",
+     "Festa de Nossa Senhora do Monte (Lubango, agosto)",
+     "Dia da Independência (11 de novembro)"
+    ],
+    "lifestyle": "Vida de rua e noturna muito animada, ao som de semba e kizomba; nos fins de semana, as famílias vão às praias da Ilha de Luanda."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Quedas de Kalandula (Malanje)",
+     "Miradouro da Lua (perto de Luanda)",
+     "Estrada sinuosa da Serra da Leba",
+     "Fenda da Tundavala (Lubango)",
+     "Pedras Negras de Pungo Andongo",
+     "Fortaleza de São Miguel e Ilha de Luanda"
+    ],
+    "bestSeasons": "Maio a setembro",
+    "travelStyleTip": "As distâncias são enormes e as estradas, difíceis; voe de Luanda para as regiões e alugue um carro com motorista local."
+   },
+   "religion": {
+    "primaryReligions": "Católicos ~40 %, protestantes e evangélicos ~38 %; crenças tradicionais e pessoas sem religião são minoria",
+    "respectNorms": "Vista-se com discrição em igrejas e santuários; não tire fotos durante a missa.",
+    "sacredSites": [
+     "Santuário de Nossa Senhora da Muxima (local de peregrinação)",
+     "Igreja da Nazaré (Luanda, 1664)",
+     "Ruínas da catedral de Kulumbimbi em Mbanza Kongo (UNESCO)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "O português é a língua oficial; também se falam muito línguas bantas como o umbundu, o kimbundu e o kikongo.",
+    "englishProficiency": "Baixo; o inglês é falado principalmente no setor de petróleo, nos grandes hotéis e nos negócios. Para brasileiros, o português resolve quase tudo.",
+    "phrases": [
+     {
+      "phrase": "Bom dia",
+      "meaning": "Bom dia",
+      "translation": "Bom dia",
+      "pronunciation": "bong DEE-a"
+     },
+     {
+      "phrase": "Obrigado / Obrigada",
+      "meaning": "Obrigado(a) (quem fala é homem / mulher)",
+      "translation": "Obrigado(a)",
+      "pronunciation": "o-bri-GAH-du / o-bri-GAH-da"
+     },
+     {
+      "phrase": "Por favor",
+      "meaning": "Por favor",
+      "translation": "Por favor",
+      "pronunciation": "pur fa-VOR"
+     },
+     {
+      "phrase": "Quanto custa?",
+      "meaning": "Quanto custa?",
+      "translation": "Quanto é?",
+      "pronunciation": "KWAN-tu KUSH-ta"
+     },
+     {
+      "phrase": "A conta, por favor",
+      "meaning": "A conta, por favor",
+      "translation": "A conta",
+      "pronunciation": "a KON-ta pur fa-VOR"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Quando os portugueses chegaram, em 1482, a região era governada pelos reinos do Kongo e do Ndongo; em 1576 eles fundaram Luanda, e a rainha Njinga Mbande se tornou símbolo da resistência. Durante séculos um centro do tráfico de escravizados, Angola conquistou a independência em 11 de novembro de 1975, seguida de uma guerra civil que durou até 2002.",
+    "milestones": [
+     "1482: O navegador português Diogo Cão chega à costa do Kongo",
+     "1576: Fundação de Luanda",
+     "1975: Independência (11 de novembro)",
+     "2002: Fim da guerra civil"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Muamba de galinha (ensopado de frango com óleo de palma e quiabo, prato nacional)",
+     "Funje (pirão de mandioca ou milho)",
+     "Calulu (ensopado de peixe seco e legumes)"
+    ],
+    "traditionalDrinks": [
+     "Cerveja Cuca",
+     "Kissângua (bebida de milho fermentado)",
+     "Maruvo (vinho de palma)"
+    ],
+    "streetFoodAndDesserts": [
+     "Ginguba torrada (amendoim torrado)",
+     "Gelado de múcua (sorvete de fruta do baobá)",
+     "Cocada amarela (doce de ovos e coco)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Rainha Njinga Mbande (líder da resistência no século XVII)",
+     "Agostinho Neto (poeta e primeiro presidente)",
+     "Pepetela (romancista premiado)"
+    ],
+    "strongSectors": [
+     "Petróleo e gás (a maior parte das exportações)",
+     "Mineração de diamantes",
+     "Agricultura e pesca"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Os cartões locais Multicaixa são muito difundidos, mas os estrangeiros falham em muitos caixas eletrônicos e lojas. Leve dólares ou euros em espécie em quantidade suficiente e troque em bancos ou casas de câmbio oficiais; evite os cambistas de rua.",
+    "tippingCulture": "Deixar 10 % nos restaurantes é gentil quando o serviço não está incluído; não é obrigatório.",
+    "economicPillars": "Petróleo e gás, diamantes, construção civil, agricultura e pesca."
+   }
+  },
+  "itin": {
+   "routeName": "Roteiro de descoberta de Angola: Luanda, Kalandula e Lubango",
+   "routeSummary": "Um roteiro de 7 dias com um voo doméstico, da Ilha e da fortaleza de Luanda às imensas quedas de Kalandula, passando pelos penhascos da Tundavala e pela estrada da Serra da Leba, em Lubango.",
+   "totalDays": 7,
+   "idealDurationText": "Roteiro de 7 dias",
+   "bestSeason": "Maio a setembro",
+   "transportMode": "Carro alugado com motorista local + voo doméstico (Luanda – Lubango, TAAG)",
+   "paceLevel": "Equilibrado (cidade + natureza + paisagens)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Luanda (capital, Ilha e Miradouro da Lua)",
+     "recommendedDuration": "3 dias",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Fortaleza de São Miguel",
+      "Museu Nacional da Escravatura",
+      "Mausoléu de Agostinho Neto",
+      "Miradouro da Lua (60 km ao sul)"
+     ],
+     "activities": [
+      "Passeie pela orla da Marginal e coma à beira-mar na Ilha de Luanda.",
+      "Faça um passeio até os cânions vermelhos do Miradouro da Lua.",
+      "Atravesse de barco até as praias da península do Mussulo."
+     ],
+     "foodAndDrinks": [
+      "Muamba de galinha",
+      "Peixe grelhado com funje",
+      "Cerveja Cuca"
+     ],
+     "criticalTips": [
+      "Não use o celular à vista na rua nem ande a pé à noite.",
+      "Respeite as regras para fotos na fortaleza e perto de prédios oficiais."
+     ],
+     "mapsQuery": "Luanda, Angola"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Kalandula e Pungo Andongo (quedas e Pedras Negras)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Quedas de Kalandula (~105 m de altura)",
+      "Mirante inferior das quedas",
+      "Pedras Negras de Pungo Andongo",
+      "Savanas nos arredores de Malanje"
+     ],
+     "activities": [
+      "Contemple as quedas do terraço superior e da trilha que desce.",
+      "Suba nas enormes rochas de Pungo Andongo e ouça a lenda das pegadas da rainha Njinga.",
+      "Compre frutas frescas nos mercados dos vilarejos pelo caminho."
+     ],
+     "foodAndDrinks": [
+      "Funje com peixe seco",
+      "Kissângua"
+     ],
+     "criticalTips": [
+      "De Luanda são ~6 horas de estrada; saia ainda com luz do dia.",
+      "Não chegue perto das pedras escorregadias da borda; não há guarda-corpos."
+     ],
+     "mapsQuery": "Kalandula, Malanje, Angola"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Lubango (montanhas e estradas panorâmicas)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Fenda da Tundavala (~1.000 m de queda)",
+      "Estrada sinuosa da Serra da Leba",
+      "Estátua do Cristo Rei, Lubango",
+      "Planalto da Huíla"
+     ],
+     "activities": [
+      "Contemple a planície do mirante no penhasco da Tundavala.",
+      "Fotografe do alto as famosas curvas da Serra da Leba.",
+      "Veja o pôr do sol sobre a cidade do morro do Cristo Rei."
+     ],
+     "foodAndDrinks": [
+      "Cabrito e vitela grelhados",
+      "Mufete (peixe grelhado com feijão e mandioca)",
+      "Frutas frescas"
+     ],
+     "criticalTips": [
+      "A altitude é de ~1.750 m; as noites são frescas, leve um casaco.",
+      "Parar na Serra da Leba pode ser perigoso; use o recuo do mirante."
+     ],
+     "mapsQuery": "Lubango, Huíla, Angola"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Muamba de galinha (ensopado de frango com óleo de palma e quiabo, prato nacional)",
+     "Funje (pirão de mandioca ou milho)",
+     "Calulu (ensopado de peixe seco e legumes)"
+    ],
+    "drinks": [
+     "Cerveja Cuca",
+     "Kissângua (bebida de milho fermentado)",
+     "Maruvo (vinho de palma)"
+    ],
+    "streetFoods": [
+     "Ginguba torrada (amendoim torrado)",
+     "Gelado de múcua (sorvete de fruta do baobá)",
+     "Cocada amarela (doce de ovos e coco)"
+    ],
+    "diningAdvice": "Os preços dos restaurantes em Luanda podem ser altos; as “tascas” locais são mais baratas. Os restaurantes à beira-mar da Ilha de Luanda lotam aos domingos."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Certificado de vacinação contra a febre amarela (conferido na chegada)",
+     "Antimaláricos e repelente",
+     "Dólares ou euros em espécie em quantidade suficiente",
+     "Cópia colorida do passaporte"
+    ],
+    "safetyAndEtiquette": [
+     "Fique longe de manifestações e aglomerações.",
+     "Nunca fotografe a polícia nem áreas militares."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Tipos C e F (dois pinos redondos). Plugues europeus funcionam; há quedas de energia, então vale levar um power bank."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "A água da torneira não é potável; beba água mineral e evite gelo. Em 2025 houve um surto de cólera, então capriche na higiene das mãos.",
+    "vaccines": [
+     "Febre amarela (obrigatória para a entrada de todos os viajantes com mais de 9 meses)",
+     "Hepatite A e febre tifoide",
+     "Profilaxia contra a malária (risco em todo o país)",
+     "Cólera e raiva (consulte seu médico conforme o risco)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "112"
+   },
+   "tipping": {
+    "custom": "A gorjeta não é obrigatória; 10 % nos restaurantes é um gesto simpático.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Uma pequena gorjeta para os funcionários do hotel e os motoristas é bem-vinda."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA de 14 %; sem devolução para turistas",
+    "minSpend": "Não se aplica",
+    "customsNote": "Não há devolução de IVA para turistas. A saída com grandes quantias em kwanzas e a exportação de diamantes são rigorosamente controladas; gaste seus kwanzas antes de ir embora."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "~US$ 1,00 - 2,50",
+    "topCarriers": [
+     "Unitel",
+     "Africell",
+     "Movicel"
+    ],
+    "airportSimTrapWarning": "Dá para comprar chip no aeroporto, mas as filas são longas; compre um chip da Unitel ou da Africell numa loja oficial na cidade, com seu passaporte."
+   },
+   "touristScams": [
+    {
+     "title": "Golpe do kinguila",
+     "desc": "Os cambistas de rua enganam contando rápido ou com notas falsas.",
+     "tip": "Troque dinheiro apenas em bancos ou casas de câmbio oficiais."
+    },
+    {
+     "title": "Falsa blitz policial",
+     "desc": "Supostos policiais exigem uma “multa” durante uma verificação de documentos.",
+     "tip": "Peça a identificação, não entregue dinheiro e ligue para o seu hotel."
+    },
+    {
+     "title": "Táxi do aeroporto",
+     "desc": "Táxis sem licença cobram tarifas abusivas até o centro.",
+     "tip": "Combine o traslado com o hotel ou use o Yango."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Ангольская кванза (AOA)",

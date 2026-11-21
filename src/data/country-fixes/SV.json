@@ -1539,6 +1539,391 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Dólar americano (USD)",
+   "bestMonths": "Novembro – abril (estação seca, ensolarada e ideal para subir vulcões) · Maio – outubro, estação chuvosa: pancadas de chuva à tarde, mas as melhores ondas para surfar",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Com o regime de exceção em vigor desde 2022, as operações contra as gangues reduziram muito os homicídios, e as áreas turísticas costumam ser tranquilas. Os furtos continuam; as blitze policiais e militares são frequentes, então ande sempre com documento de identificação.",
+    "commonScams": [
+     "Taxistas não oficiais no aeroporto que cobram a mais até San Salvador",
+     "“Guias” sem licença que cobram a mais em passeios a vulcões e praias",
+     "Furtos por distração em ônibus lotados e mercados"
+    ],
+    "safeTravelTips": [
+     "Leve sempre o passaporte ou uma cópia; mantenha a calma e colabore nas blitze.",
+     "Suba vulcões como o de Santa Ana com guia oficial e bem cedo pela manhã.",
+     "O Pacífico tem correntes fortes; nade com cuidado em praias sem salva-vidas."
+    ],
+    "emergencyNumbers": {
+     "police": "911",
+     "ambulance": "911 / 132",
+     "general": "911"
+    }
+   },
+   "internet": {
+    "networkCoverage": "90 %+ (4G; bom em San Salvador e no litoral, mais fraco nas montanhas)",
+    "costPerGbUsd": "US$ 1,00 - 3,00",
+    "esimAvailability": "Boa (eSIM da Claro e da Tigo; eSIMs internacionais funcionam)",
+    "bestCarriers": [
+     "Claro",
+     "Tigo",
+     "Movistar",
+     "Digicel"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Razoável (os ônibus coloridos e os micro-ônibus são baratos, mas lentos; as distâncias são curtas)",
+    "costLevel": "Econômico",
+    "singleTicketUsd": "US$ 0,25 - 1,50",
+    "dailyPassUsd": "Não existe (15 - 35 $ por dia de Uber)",
+    "popularRideApps": [
+     "Uber",
+     "inDrive",
+     "Shuttles turísticos"
+    ],
+    "taxiAdvice": "Em San Salvador e arredores, o Uber é comum, seguro e barato; no aeroporto, use o balcão oficial de táxis ou o Uber. Os ônibus para a Ruta de las Flores e Santa Ana são muito baratos; se você tiver pouco tempo, os shuttles turísticos são práticos."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 35 - 55",
+    "dailyBudgetMidrangeUsd": "US$ 80 - 140",
+    "budgetMealUsd": "US$ 3 - 8",
+    "coffeeUsd": "US$ 1,50 - 3,00",
+    "waterBottleUsd": "US$ 0,50 - 1,00",
+    "hostelDormUsd": "US$ 12 - 22",
+    "hotel3StarUsd": "US$ 50 - 100",
+    "flightCostIndex": "Alto (longa distância, com escalas)",
+    "flightTip": "San Salvador (SAL) é um hub da Avianca; da Turquia, normalmente se voa via Madri (Iberia) ou cidades dos EUA (Miami, Houston). Se a conexão for nos EUA, confira antes as exigências de trânsito."
+   },
+   "plugType": "Tipo A, B (115V, 60Hz)"
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "O cumprimento é um aperto de mão; entre mulheres, é comum um beijo no rosto.",
+     "Tratar as pessoas por “usted” e começar com um “buenos días” é sinal de boa educação.",
+     "Não fotografe militares, policiais nem presídios.",
+     "As pupusas se comem com a mão, acompanhadas de curtido e molho de tomate."
+    ],
+    "festivals": [
+     "Fiestas Agostinas (1 – 6 de agosto, festas do padroeiro de San Salvador)",
+     "Dia da Independência (15 de setembro)",
+     "Bolas de Fuego (Nejapa, 31 de agosto)"
+    ],
+    "lifestyle": "O menor e mais densamente povoado país da América Central; gente calorosa, trabalhadora e muito ligada à família, com a cultura da pupusa, o futebol e as escapadas à praia no fim de semana."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Vulcão de Santa Ana (Ilamatepec) e sua lagoa na cratera",
+     "Lago de Coatepeque",
+     "Ruta de las Flores (Juayúa, Apaneca, Ataco)",
+     "Joya de Cerén (UNESCO, aldeia maia soterrada por cinzas)",
+     "El Tunco e o litoral de Surf City",
+     "Cidade colonial de Suchitoto"
+    ],
+    "bestSeasons": "Novembro – abril (estação seca, ensolarada e ideal para subir vulcões) · Maio – outubro, estação chuvosa: pancadas de chuva à tarde, mas as melhores ondas para surfar",
+    "travelStyleTip": "O país é pequeno: com base em San Salvador ou no litoral, dá para conhecer quase tudo em bate-voltas; reserve um fim de semana para a Ruta de las Flores e a feira gastronômica de Juayúa."
+   },
+   "religion": {
+    "primaryReligions": "Católicos (~40-45 %), protestantes/evangélicos (~35-40 %), sem religião (~15-20 %)",
+    "respectNorms": "Fique em silêncio durante a missa e tire o chapéu; acompanhe com respeito as procissões da Semana Santa.",
+    "sacredSites": [
+     "Catedral Metropolitana de San Salvador (túmulo de santo Óscar Romero)",
+     "Igreja El Rosario (vitrais modernistas)",
+     "Catedral de Santa Ana (neogótica)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "O espanhol é a língua oficial; há esforços para revitalizar a língua indígena náhuat (pipil).",
+    "englishProficiency": "Baixo a médio; fala-se inglês nas vilas de surfe e nos hotéis, no resto é preciso um espanhol básico.",
+    "phrases": [
+     {
+      "phrase": "¿Qué onda?",
+      "meaning": "E aí? (cumprimento informal)",
+      "translation": "E aí? (cumprimento informal)",
+      "pronunciation": "ke ON-da"
+     },
+     {
+      "phrase": "¡Qué chivo!",
+      "meaning": "Que legal! / Massa!",
+      "translation": "Que legal! / Massa!",
+      "pronunciation": "ke CHEE-vo"
+     },
+     {
+      "phrase": "¿Cuánto cuesta?",
+      "meaning": "Quanto custa?",
+      "translation": "Quanto custa?",
+      "pronunciation": "KWAN-to KWES-ta"
+     },
+     {
+      "phrase": "Va pues",
+      "meaning": "Combinado / Tudo bem",
+      "translation": "Combinado / Tudo bem",
+      "pronunciation": "va PWES"
+     },
+     {
+      "phrase": "Muchas gracias",
+      "meaning": "Muito obrigado(a)",
+      "translation": "Muito obrigado(a)",
+      "pronunciation": "MOO-chas GRA-syas"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Cuzcatlán, terra dos pipiles, foi conquistada pelos espanhóis em 1524; em 1821, proclamou a independência junto com a América Central. A guerra civil de 1980–1992 terminou com os Acordos de Paz de Chapultepec, e em 2001 o dólar americano passou a ser a moeda oficial.",
+    "milestones": [
+     "~600: A aldeia de Joya de Cerén é soterrada pela erupção do Loma Caldera",
+     "1821: Independência junto com a América Central (15 de setembro)",
+     "1992: Os Acordos de Paz de Chapultepec põem fim à guerra civil",
+     "2001: O dólar se torna a moeda oficial"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Pupusa (tortilha de milho recheada com queijo, torresmo, feijão ou loroco; prato nacional)",
+     "Mandioca frita com torresmo",
+     "Sopa de gallina india (galinha caipira)"
+    ],
+    "traditionalDrinks": [
+     "Horchata salvadorenha (feita com semente de morro e especiarias)",
+     "Atol de elote (bebida quente de milho verde)",
+     "Café salvadorenho de altitude"
+    ],
+    "streetFoodAndDesserts": [
+     "Pan con pollo (sanduíche de frango)",
+     "Quesadilla salvadorenha",
+     "Manga verde com alguashte"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Santo Óscar Romero (arcebispo, canonizado em 2018)",
+     "Jorge “el Mágico” González (jogador de futebol lendário)",
+     "Salarrué (escritor e pintor)"
+    ],
+    "strongSectors": [
+     "Têxtil e confecção (maquila)",
+     "Café e cana-de-açúcar",
+     "Turismo (surfe e vulcões) e serviços"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "A moeda é o dólar; cartões são comuns nas cidades e nos hotéis, mas leve notas pequenas e moedas para as pupuserías e os ônibus. Alguns lugares aceitam bitcoin, embora desde 2025 a aceitação não seja mais obrigatória.",
+    "tippingCulture": "Os restaurantes costumam incluir 10 % de gorjeta na conta (por lei, opcional); se não incluírem, espera-se que você deixe 10 %.",
+    "economicPillars": "Remessas de emigrantes, serviços, exportações têxteis, agricultura e turismo."
+   }
+  },
+  "itin": {
+   "routeName": "Vulcões, flores e ondas: San Salvador, Santa Ana, Ruta de las Flores e El Tunco",
+   "routeSummary": "Um circuito de 9 dias que sai da capital e de Joya de Cerén rumo ao oeste, até o vulcão de Santa Ana e o lago de Coatepeque, passa pelas cidadezinhas cafeeiras da Ruta de las Flores e termina em El Tunco, no Pacífico.",
+   "totalDays": 9,
+   "bestSeason": "Novembro – abril (estação seca, ensolarada e ideal para subir vulcões) · Maio – outubro, estação chuvosa: pancadas de chuva à tarde, mas as melhores ondas para surfar",
+   "transportMode": "Uber, ônibus intermunicipais e shuttles turísticos, ou carro alugado (trechos de 1-2 h)",
+   "paceLevel": "Equilibrado (natureza, cultura e praia)",
+   "signatureGastronomy": {
+    "dishes": [
+     "Pupusas",
+     "Mandioca frita com torresmo",
+     "Sopa de gallina india"
+    ],
+    "drinks": [
+     "Horchata",
+     "Atol de elote",
+     "Café salvadorenho"
+    ],
+    "streetFoods": [
+     "Pan con pollo",
+     "Pastelitos",
+     "Quesadilla salvadorenha"
+    ],
+    "diningAdvice": "As melhores pupusas estão nas pupuserías de bairro que abrem à tarde (~0,50 - 1 $ cada); confira se os 10 % de gorjeta já estão na conta para não pagar duas vezes."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptador tipo A/B (padrão americano, 115V)",
+     "Tênis de trilha e corta-vento",
+     "Repelente (risco de dengue)",
+     "Protetor solar e chapéu"
+    ],
+    "safetyAndEtiquette": [
+     "Ande sempre com documento de identificação e não fotografe militares nem policiais.",
+     "À noite, use Uber, mesmo para trajetos curtos."
+    ]
+   },
+   "idealDurationText": "Roteiro de 9 dias",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: San Salvador",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Centro histórico: Catedral, Palácio Nacional e Teatro Nacional",
+      "Biblioteca Nacional (BINAES)",
+      "Parque Nacional El Boquerón (cratera do vulcão de San Salvador)",
+      "Joya de Cerén (UNESCO)"
+     ],
+     "activities": [
+      "Explore o centro histórico a pé pela manhã e veja os vitrais da igreja El Rosario.",
+      "Percorra a trilha da borda da cratera de El Boquerón.",
+      "Visite Joya de Cerén em um passeio de meio dia."
+     ],
+     "foodAndDrinks": [
+      "Pupusas",
+      "Pan con pollo",
+      "Horchata"
+     ],
+     "criticalTips": [
+      "Visite o centro durante o dia e use Uber à noite.",
+      "Lembre-se de que os museus podem fechar às segundas-feiras."
+     ],
+     "mapsQuery": "San Salvador, El Salvador"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Santa Ana e lago de Coatepeque",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "A lagoa turquesa na cratera do vulcão de Santa Ana",
+      "Mirantes do lago de Coatepeque",
+      "Catedral e Teatro de Santa Ana",
+      "Ruínas maias de Tazumal (Chalchuapa)"
+     ],
+     "activities": [
+      "Suba o vulcão de Santa Ana com guia a partir do Parque Cerro Verde (~4 h ida e volta).",
+      "Reme de caiaque em Coatepeque ou relaxe em um restaurante à beira do lago.",
+      "Conheça Tazumal e seu pequeno museu."
+     ],
+     "foodAndDrinks": [
+      "Peixe do lago",
+      "Mandioca frita",
+      "Café salvadorenho"
+     ],
+     "criticalTips": [
+      "As subidas ao vulcão saem com guia em horário fixo pela manhã; chegue cedo.",
+      "A borda da cratera é fresca e venta muito; leve casaco e água."
+     ],
+     "mapsQuery": "Santa Ana, El Salvador"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Ruta de las Flores",
+     "recommendedDuration": "2-3 dias",
+     "durationBadge": "2-3 dias",
+     "highlights": [
+      "Murais nas ruas de Concepción de Ataco",
+      "Feira gastronômica de fim de semana em Juayúa",
+      "Cachoeiras de Los Chorros de la Calera",
+      "Fazendas de café de Apaneca"
+     ],
+     "activities": [
+      "Faça um tour por uma fazenda de café com degustação.",
+      "Faça com guia a trilha das Sete Cachoeiras saindo de Juayúa.",
+      "Experimente a tirolesa ou o canopy em Apaneca."
+     ],
+     "foodAndDrinks": [
+      "Pupusas de loroco",
+      "Carnes assadas na feira de Juayúa",
+      "Atol de elote"
+     ],
+     "criticalTips": [
+      "A feira de Juayúa só acontece aos sábados e domingos; planeje-se de acordo.",
+      "Nas terras altas esfria; leve uma blusa para a noite."
+     ],
+     "mapsQuery": "Juayúa, El Salvador"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: El Tunco e Surf City",
+     "recommendedDuration": "2-3 dias",
+     "durationBadge": "2-3 dias",
+     "highlights": [
+      "A rocha de El Tunco e seus pores do sol",
+      "Punta Roca (La Libertad), onda de nível mundial",
+      "Praia El Zonte",
+      "Píer e mercado de peixe de La Libertad"
+     ],
+     "activities": [
+      "Faça uma aula de surfe para iniciantes.",
+      "Coma frutos do mar frescos no píer de La Libertad.",
+      "Passeie pela praia ao entardecer."
+     ],
+     "foodAndDrinks": [
+      "Coquetel de conchas (mariscos)",
+      "Peixe na chapa",
+      "Água de coco fresca"
+     ],
+     "criticalTips": [
+      "Há fundos de pedra e correntes fortes; surfe em pontos adequados ao seu nível.",
+      "O aeroporto fica a ~30-40 minutos, então passar a última noite aqui é prático."
+     ],
+     "mapsQuery": "El Tunco, El Salvador"
+    }
+   ]
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "A",
+     "B"
+    ],
+    "voltage": "115V",
+    "frequency": "60Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Tomadas tipo A (dois pinos chatos) e B (com aterramento), 115V/60Hz. Plugues europeus não encaixam: o adaptador é indispensável; use apenas carregadores de 100-240V."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Não beba água da torneira; use água mineral ou os bebedouros de água purificada dos hotéis. O gelo dos restaurantes costuma ser feito com água purificada.",
+    "vaccines": [
+     "Hepatite A e febre tifoide",
+     "Febre amarela: certificado só se você chegar de um país de risco",
+     "Vacinas de rotina; proteção contra mosquitos por causa da dengue"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "911 / 132 (Cruz Vermelha)"
+   },
+   "tipping": {
+    "custom": "Nos restaurantes, espera-se 10 % de gorjeta, que geralmente já vem na conta.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "A gorjeta é opcional por lei, e você pode pedir para retirá-la se o serviço tiver sido ruim; para instrutores de surfe e guias, 5 - 10 $."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Não há",
+    "minSpend": "Não se aplica",
+    "customsNote": "El Salvador não devolve o IVA (13 %) a turistas. É proibido comprar ou tirar do país objetos arqueológicos pré-colombianos."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 1,00 - 3,00",
+    "topCarriers": [
+     "Claro",
+     "Tigo",
+     "Movistar",
+     "Digicel"
+    ],
+    "airportSimTrapWarning": "Os pacotes para turistas nos quiosques do aeroporto são mais caros que nas lojas Claro/Tigo da cidade; para comprar o chip é preciso passaporte."
+   },
+   "touristScams": [
+    {
+     "title": "Táxi do aeroporto",
+     "desc": "Motoristas não oficiais na saída do terminal cobram o dobro até San Salvador.",
+     "tip": "Use o balcão oficial ou o Uber e confirme o preço antes."
+    },
+    {
+     "title": "Falso guia do vulcão",
+     "desc": "Do lado de fora da entrada do parque, há quem se passe por guia e cobre, o que pode deixar você sem o tour oficial.",
+     "tip": "Pague apenas na bilheteria oficial na entrada do Parque Cerro Verde."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Доллар США (USD)",

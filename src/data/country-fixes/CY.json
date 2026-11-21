@@ -1559,6 +1559,396 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Euro (EUR)",
+   "plugType": "Tipo G (230V, 50Hz)",
+   "bestMonths": "Abril – junho e setembro – novembro (mar com temperatura agradável, turismo confortável); julho – agosto muito quente (38-40 °C no interior); janeiro – fevereiro, neve em Troodos",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "A criminalidade é baixa. Na vida noturna de Ayia Napa e Limassol, cuidado com furtos e bebidas adulteradas. O maior risco é o trânsito: a mão é inglesa (dirige-se pela esquerda) e há estradas de montanha estreitas.",
+    "commonScams": [
+     "Locadoras que, na devolução, cobram por danos que já existiam no carro",
+     "Contas infladas depois de ofertas de “bebida grátis” na porta das baladas de Ayia Napa",
+     "Restaurantes que vendem o peixe por peso sem informar o preço antes"
+    ],
+    "safeTravelTips": [
+     "Dirige-se pela esquerda; fotografe cada arranhão ao retirar o carro alugado.",
+     "À noite, não perca sua bebida de vista.",
+     "Evite o sol do meio-dia no verão e beba bastante água."
+    ],
+    "emergencyNumbers": {
+     "police": "112 / 199",
+     "ambulance": "112 / 199",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Cobertura de 99 % da população (4G/5G); o sinal pode enfraquecer em alguns vales de Troodos e de Akamas",
+    "costPerGbUsd": "~US$ 1,00 - 3,00",
+    "esimAvailability": "Excelente",
+    "bestCarriers": [
+     "Cyta",
+     "Epic",
+     "Cablenet",
+     "PrimeTel",
+     "Airalo / Holafly eSIM"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Moderada (bons ônibus intermunicipais; ônibus urbanos pouco frequentes, sem trens)",
+    "costLevel": "Moderado",
+    "singleTicketUsd": "1.70 - 2.80 $ (ônibus urbano)",
+    "dailyPassUsd": "US$ 5,50 - 9,50",
+    "popularRideApps": [
+     "Bolt",
+     "Cyprus by Bus",
+     "Intercity Buses",
+     "Travel Express",
+     "Kapnos Airport Shuttle"
+    ],
+    "taxiAdvice": "Os táxis urbanos têm taxímetro; o Bolt funciona em Nicósia, Limassol, Larnaca e Pafos. Para trajetos entre cidades, os táxis compartilhados da Travel Express e os ônibus da Intercity Buses são econômicos."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 60 - 90",
+    "dailyBudgetMidrangeUsd": "US$ 130 - 220",
+    "budgetMealUsd": "US$ 15 - 25",
+    "coffeeUsd": "US$ 3,50 - 5,00",
+    "waterBottleUsd": "US$ 0,60 - 1,20",
+    "hostelDormUsd": "US$ 25 - 45",
+    "hotel3StarUsd": "US$ 90 - 160",
+    "flightCostIndex": "Moderado – alto (com escalas)",
+    "flightTip": "Não há voos diretos da Turquia para Larnaca ou Pafos; compare voos com escala em Atenas, Sófia ou outros hubs europeus."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "A hospitalidade é importante; aceitar com simpatia um “kopiaste” (sente-se e coma com a gente) é muito bem-visto.",
+     "Cubra ombros e joelhos em mosteiros e igrejas; em Kykkos não é permitido entrar de bermuda.",
+     "Algumas lojas pequenas fecham durante o calor da tarde.",
+     "Assuntos políticos sobre a ilha são delicados; é melhor evitá-los nas conversas."
+    ],
+    "festivals": [
+     "Kataklysmos (Pentecostes, junho – festa do mar em Larnaca)",
+     "Carnaval de Limassol (fevereiro – março)",
+     "Festival do Vinho de Limassol (agosto – setembro)"
+    ],
+    "lifestyle": "Ritmo mediterrâneo, centrado na família e na mesa; longos papos com frappé nos cafés e jantares que vão até tarde."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Túmulos dos Reis e mosaicos de Pafos (UNESCO)",
+     "Igrejas bizantinas pintadas de Troodos (UNESCO)",
+     "Hala Sultan Tekke e lago salgado de Larnaca",
+     "Cabo Greco e as enseadas de Ayia Napa",
+     "Rocha de Afrodite (Petra tou Romiou)",
+     "Antiga Kourion"
+    ],
+    "bestSeasons": "Abril – junho e setembro – novembro",
+    "travelStyleTip": "O transporte público é limitado; alugar um carro é a melhor opção (volante à direita, trânsito pela esquerda)."
+   },
+   "religion": {
+    "primaryReligions": "Ortodoxos gregos ~75-80 %; minorias católica, maronita, armênia, muçulmana e protestante",
+    "respectNorms": "Cubra ombros e joelhos nos mosteiros; não tire fotos durante as celebrações.",
+    "sacredSites": [
+     "Hala Sultan Tekke (santuário de Umm Haram, Larnaca)",
+     "Mosteiro de Kykkos (Troodos)",
+     "Igreja de São Lázaro (Larnaca)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Grego e turco (oficiais); o inglês é muito difundido.",
+    "englishProficiency": "Muito alto; por causa do passado colonial britânico, fala-se inglês em quase todo lugar.",
+    "phrases": [
+     {
+      "phrase": "Γεια σας (Yiá sas)",
+      "meaning": "Olá (formal/plural)",
+      "translation": "Olá",
+      "pronunciation": "YAH-sas"
+     },
+     {
+      "phrase": "Ευχαριστώ (Efcharistó)",
+      "meaning": "Obrigado",
+      "translation": "Obrigado",
+      "pronunciation": "ef-ha-ree-STOH"
+     },
+     {
+      "phrase": "Παρακαλώ (Parakaló)",
+      "meaning": "Por favor / De nada",
+      "translation": "Por favor",
+      "pronunciation": "pa-ra-ka-LOH"
+     },
+     {
+      "phrase": "Πόσο κάνει; (Póso káni?)",
+      "meaning": "Quanto custa?",
+      "translation": "Quanto é?",
+      "pronunciation": "POH-so KAH-nee"
+     },
+     {
+      "phrase": "Τον λογαριασμό, παρακαλώ (Ton logariasmó, parakaló)",
+      "meaning": "A conta, por favor",
+      "translation": "A conta, por favor",
+      "pronunciation": "ton lo-ghar-yaz-MOH pa-ra-ka-LOH"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Na Antiguidade, abrigou cidades-reino famosas pelo culto a Afrodite; a ilha passou pelo domínio bizantino, lusinhano (1192), veneziano (1489), otomano (1571–1878) e britânico antes de se tornar independente em 1960. Entrou para a UE em 2004.",
+    "milestones": [
+     "1192: Reino dos Lusinhanos",
+     "1571: início do domínio otomano",
+     "1960: independência",
+     "2004: entrada na UE; 2008: adoção do euro"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Halloumi (grelhado ou fresco)",
+     "Kleftiko (cordeiro assado lentamente)",
+     "Mesa de meze (até 20 pratinhos)"
+    ],
+    "traditionalDrinks": [
+     "Commandaria (o vinho doce com nome mais antigo do mundo)",
+     "Zivania (aguardente de bagaço de uva)",
+     "Café frappé / freddo"
+    ],
+    "streetFoodAndDesserts": [
+     "Souvlaki no pão pita (há opção de frango)",
+     "Loukoumades (bolinhos fritos com calda de mel)",
+     "Glyko tou koutaliou (doces de colher)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Zenão de Cítio (fundador do estoicismo)",
+     "Christopher Pissarides (Nobel de Economia 2010)",
+     "Marcos Baghdatis (tenista)"
+    ],
+    "strongSectors": [
+     "Turismo",
+     "Transporte marítimo e gestão de navios (Limassol)",
+     "Serviços financeiros e profissionais"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Cartão e pagamento por aproximação são comuns; leve euros em dinheiro para os cafés de vilarejo e tavernas pequenas.",
+    "tippingCulture": "A gorjeta é opcional; se não houver taxa de serviço, é comum deixar 5-10 %.",
+    "economicPillars": "Turismo, transporte marítimo, serviços financeiros e profissionais, setor imobiliário."
+   }
+  },
+  "itin": {
+   "routeName": "Chipre, costa sul e Troodos: Larnaca, Nicósia, Troodos e Pafos",
+   "routeSummary": "Roteiro de 7 dias do calçadão à beira-mar de Larnaca às muralhas venezianas de Nicósia, aos vilarejos de Troodos e aos mosaicos de Pafos, Patrimônio da UNESCO.",
+   "totalDays": 7,
+   "idealDurationText": "Roteiro de 7 dias",
+   "bestSeason": "Abril – junho e setembro – novembro",
+   "transportMode": "Carro alugado (recomendado, trânsito pela esquerda) ou ônibus da Intercity Buses",
+   "paceLevel": "Tranquilo (mar + história + vilarejos de montanha)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Larnaca e Ayia Napa (costa leste)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Hala Sultan Tekke e lago salgado (flamingos no inverno)",
+      "Calçadão de Finikoudes",
+      "Igreja de São Lázaro",
+      "Cabo Greco e praia Nissi"
+     ],
+     "activities": [
+      "Caminhe até as grutas marinhas do Cabo Greco.",
+      "Veja o pôr do sol à beira do lago salgado.",
+      "Tome banho de mar nas enseadas de Ayia Napa."
+     ],
+     "foodAndDrinks": [
+      "Halloumi",
+      "Mesa de meze",
+      "Frappé"
+     ],
+     "criticalTips": [
+      "Ayia Napa fica lotada e barulhenta no verão; Larnaca é uma base mais tranquila.",
+      "Guarda-sóis e espreguiçadeiras são pagos à parte."
+     ],
+     "mapsQuery": "Larnaca, Cyprus"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Nicósia (muralhas venezianas e centro histórico)",
+     "recommendedDuration": "1 dia",
+     "durationBadge": "1 dia",
+     "highlights": [
+      "Muralhas venezianas e Porta de Famagusta",
+      "Museu de Chipre",
+      "Rua Ledra e Laiki Geitonia",
+      "Museu Municipal Leventis"
+     ],
+     "activities": [
+      "Passeie ao longo das muralhas.",
+      "Veja achados antigos no Museu de Chipre.",
+      "Faça uma pausa num café tradicional do centro histórico."
+     ],
+     "foodAndDrinks": [
+      "Souvlaki",
+      "Loukoumades",
+      "Café cipriota"
+     ],
+     "criticalTips": [
+      "No verão, visite museus e lugares cobertos durante o calor do meio-dia.",
+      "Dirigir no centro histórico é difícil; estacione e vá a pé."
+     ],
+     "mapsQuery": "Nicosia, Cyprus"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Montes Troodos e Limassol",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Igrejas bizantinas pintadas (UNESCO)",
+      "Mosteiro de Kykkos",
+      "Vilarejo vinícola de Omodos",
+      "Castelo de Limassol e antiga Kourion"
+     ],
+     "activities": [
+      "Percorra a trilha da cachoeira Caledonia.",
+      "Prove Commandaria numa vinícola de Omodos.",
+      "Curta a vista do mar do anfiteatro de Kourion."
+     ],
+     "foodAndDrinks": [
+      "Kleftiko",
+      "Commandaria",
+      "Zivania"
+     ],
+     "criticalTips": [
+      "As estradas de montanha são estreitas e cheias de curvas; vá devagar.",
+      "Em Troodos as noites são frescas mesmo no verão; leve uma jaqueta leve."
+     ],
+     "mapsQuery": "Troodos, Cyprus"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Pafos (Patrimônio da UNESCO e Akamas)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Túmulos dos Reis",
+      "Mosaicos do Parque Arqueológico de Pafos",
+      "Rocha de Afrodite (Petra tou Romiou)",
+      "Península de Akamas e Lagoa Azul"
+     ],
+     "activities": [
+      "Visite os mosaicos logo cedo.",
+      "Faça trilha no desfiladeiro de Avakas.",
+      "Veja o pôr do sol na Rocha de Afrodite."
+     ],
+     "foodAndDrinks": [
+      "Meze de peixe",
+      "Halloumi",
+      "Glyko tou koutaliou"
+     ],
+     "criticalTips": [
+      "Nos Túmulos dos Reis há pouca sombra; leve chapéu e água.",
+      "As estradas de Akamas são de terra; escolha um 4x4 ou um passeio de barco."
+     ],
+     "mapsQuery": "Paphos, Cyprus"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Halloumi (grelhado ou fresco)",
+     "Kleftiko (cordeiro assado lentamente)",
+     "Mesa de meze (até 20 pratinhos)"
+    ],
+    "drinks": [
+     "Commandaria (o vinho doce com nome mais antigo do mundo)",
+     "Zivania (aguardente de bagaço de uva)",
+     "Café frappé / freddo"
+    ],
+    "streetFoods": [
+     "Souvlaki no pão pita (há opção de frango)",
+     "Loukoumades (bolinhos fritos com calda de mel)",
+     "Glyko tou koutaliou (doces de colher)"
+    ],
+    "diningAdvice": "Chegue com fome ao meze; os pratos não param de chegar. A sheftalia, a afelia e alguns souvlakis são de porco; peça frango (kotopoulo) ou cordeiro (arni)."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptador de tomada tipo G (britânico)",
+     "Protetor solar com FPS alto, chapéu e óculos de sol",
+     "Carteira de motorista e cartão de crédito para o carro alugado",
+     "Garrafa de água"
+    ],
+    "safetyAndEtiquette": [
+     "Lembre-se de que o trânsito é pela esquerda.",
+     "Cubra ombros e joelhos nos mosteiros."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Tomadas britânicas tipo G, com três pinos chatos; aparelhos da Turquia precisam de adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "A água da torneira em geral é segura, mas em grande parte dessalinizada e dura; muita gente prefere água engarrafada para beber.",
+    "vaccines": [
+     "Vacinas de rotina (tétano, difteria, tríplice viral)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "112 / 199"
+   },
+   "tipping": {
+    "custom": "A gorjeta é opcional; 5-10 % se o serviço não estiver incluído.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Alguns restaurantes acrescentam 10 % de serviço; confira a conta."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA de 19 % (restituição líquida de ~10-12 % após comissões)",
+    "minSpend": "Acima de 50 € por nota",
+    "customsNote": "Carimbe o formulário Tax Free na alfândega do aeroporto de Larnaca ou Pafos; os itens precisam estar sem uso e com você."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "~US$ 1,00 - 3,00",
+    "topCarriers": [
+     "Cyta",
+     "Epic",
+     "Cablenet",
+     "PrimeTel"
+    ],
+    "airportSimTrapWarning": "Evite os quiosques do aeroporto; configure um eSIM ou compre um chip pré-pago turístico numa loja Cyta, Epic ou Cablenet."
+   },
+   "touristScams": [
+    {
+     "title": "Armadilha dos danos no carro alugado",
+     "desc": "Na devolução, cobram por arranhões e amassados que já existiam.",
+     "tip": "Filme o carro inteiro na retirada e contrate seguro com cobertura total."
+    },
+    {
+     "title": "Armadilha da “bebida grátis”",
+     "desc": "Promotores na porta das casas noturnas de Ayia Napa atraem com bebidas grátis e depois apresentam uma conta inflada.",
+     "tip": "Confira a tabela de preços e não perca sua bebida de vista."
+    },
+    {
+     "title": "Peixe por peso",
+     "desc": "O peixe fresco é vendido por quilo, e a conta pode sair bem mais alta do que o esperado.",
+     "tip": "Peça para pesarem e informarem o preço antes de fazer o pedido."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Евро (EUR)",

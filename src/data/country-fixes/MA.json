@@ -1555,6 +1555,395 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Dirham marroquino (MAD)",
+   "plugType": "Tipo C, E (220V, 50Hz)",
+   "bestMonths": "Março – maio e setembro – novembro (clima ameno para cidades e deserto) · no verão faz um calor extremo no interior e no Saara; no inverno neva no Atlas e as noites no deserto são geladas",
+   "safety": {
+    "safetyScore": 55,
+    "safetyLevel": "Risco moderado",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60",
+    "crimeRateSummary": "A criminalidade violenta contra turistas é baixa, mas batedores de carteira, vendedores insistentes e falsos guias são muito comuns nas medinas, e mulheres viajando sozinhas podem sofrer assédio verbal. As fontes oficiais não descartam a ameaça terrorista.",
+    "commonScams": [
+     "Falsos guias na medina (\"esta rua está fechada, eu te mostro o caminho\") que levam você a uma loja ou curtume",
+     "Pessoas na Jemaa el-Fnaa que pintam henna em você sem pedir ou tiram fotos suas com cobras e macacos e depois cobram muito dinheiro",
+     "Táxis que não ligam o taxímetro ou pedem tarifas fixas infladas no aeroporto"
+    ],
+    "safeTravelTips": [
+     "Explore a medina apenas com guias oficiais credenciados; aos insistentes, diga \"la, shukran\" e siga andando.",
+     "Nos petit taxis, exija o taxímetro; combine o preço dos grand taxis e do trajeto ao aeroporto antes de entrar.",
+     "Se chegar ao riad à noite, peça que alguém vá buscar você; na medina, o GPS costuma falhar."
+    ],
+    "emergencyNumbers": {
+     "police": "190 / 19",
+     "ambulance": "150 / 15",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "90%+ (4G)",
+    "costPerGbUsd": "US$ 0,50 - 1,50",
+    "esimAvailability": "Boa",
+    "bestCarriers": [
+     "Maroc Telecom (IAM)",
+     "Orange Maroc",
+     "inwi"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Moderado a bom (trem de alta velocidade Al Boraq Tânger – Casablanca, trens ONCF, ônibus CTM e Supratours)",
+    "costLevel": "Barato",
+    "singleTicketUsd": "US$ 0,60 - 1,00",
+    "dailyPassUsd": "Não há; trem intermunicipal ONCF Casablanca – Marrakech ~12 - 20 $",
+    "popularRideApps": [
+     "inDrive",
+     "Heetch",
+     "Petit taxi (táxi urbano com taxímetro)"
+    ],
+    "taxiAdvice": "Os \"petit taxis\" rodam com taxímetro na cidade (com adicional noturno); os \"grand taxis\" compartilhados entre cidades têm tarifas fixas combinadas antes. inDrive e Heetch são comuns nas grandes cidades."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 30 - 50",
+    "dailyBudgetMidrangeUsd": "US$ 80 - 140",
+    "budgetMealUsd": "US$ 3 - 7",
+    "coffeeUsd": "US$ 1 - 2,50",
+    "waterBottleUsd": "US$ 0,50 - 0,80",
+    "hostelDormUsd": "US$ 10 - 20",
+    "hotel3StarUsd": "US$ 45 - 90",
+    "flightCostIndex": "Moderado (voos diretos Istambul – Casablanca)",
+    "flightTip": "Há voos diretos de Istambul para Casablanca; compare opções diretas e com escala para Marrakech e Fez. Começar por Fez e voltar por Marrakech economiza tempo."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "O cumprimento é \"Salam alikum\" com a mão direita; entre pessoas do mesmo sexo, beijos no rosto são comuns.",
+     "Coma com a mão direita; o tajine é compartilhado de uma travessa comum, usando pão para pegar a comida.",
+     "Não muçulmanos não podem entrar em mesquitas, exceto na de Hassan II.",
+     "Peça permissão antes de fotografar pessoas; algumas pedem dinheiro."
+    ],
+    "festivals": [
+     "Festival de Músicas Sagradas do Mundo de Fez (maio–junho)",
+     "Festival Gnaoua e Músicas do Mundo (Essaouira, junho)",
+     "Festival Internacional de Cinema de Marrakech (novembro–dezembro)"
+    ],
+    "lifestyle": "A vida acontece nas vielas estreitas das medinas, nos souks e nos hammams; o chá de hortelã é servido a toda hora, e o cuscuz de sexta-feira é sagrado na mesa da família."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Marrakech: Jemaa el-Fnaa e mesquita Koutoubia",
+     "Medina de Fez el-Bali e curtume Chouara (UNESCO)",
+     "As ruas azuis de Chefchaouen",
+     "Merzouga – dunas de Erg Chebbi (Saara)",
+     "Mesquita de Hassan II (Casablanca)",
+     "Kasbah de Aït Benhaddou (UNESCO)"
+    ],
+    "bestSeasons": "Março – maio e setembro – novembro (clima ameno para cidades e deserto) · no verão faz um calor extremo no interior e no Saara; no inverno neva no Atlas e as noites no deserto são geladas",
+    "travelStyleTip": "No norte, prefira o trem (Al Boraq, ONCF); no sul, ônibus CTM/Supratours ou motorista particular. Ficar em um riad tradicional dentro da medina faz parte da experiência."
+   },
+   "religion": {
+    "primaryReligions": "Islã (~99%, sunita – escola maliquita); pequenas comunidades judaicas e cristãs",
+    "respectNorms": "Não muçulmanos não podem entrar em mesquitas, exceto na de Hassan II, em Casablanca. No Ramadã, evite comer e beber em público durante o dia e vista-se com discrição.",
+    "sacredSites": [
+     "Mesquita de Hassan II (Casablanca)",
+     "Mesquita e Universidade Al-Qarawiyyin (Fez, 859)",
+     "Mausoléu de Moulay Idriss (Moulay Idriss Zerhoun)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "O árabe e o amazigh (berbere) são oficiais; a língua do dia a dia é o darija (árabe marroquino), o francês é muito usado nos negócios e na educação, e no norte se fala espanhol.",
+    "englishProficiency": "Moderado; vem crescendo nas áreas turísticas e entre os jovens, mas o francês é mais útil.",
+    "phrases": [
+     {
+      "phrase": "السلام عليكم (salam ʿalikum)",
+      "meaning": "A paz esteja com você (Olá)",
+      "translation": "A paz esteja com você",
+      "pronunciation": "sa-laam a-lii-kum"
+     },
+     {
+      "phrase": "شكرا بزاف (shukran bzzaf)",
+      "meaning": "Muito obrigado(a)",
+      "translation": "Muitíssimo obrigado(a)",
+      "pronunciation": "shuk-ran bzaaf"
+     },
+     {
+      "phrase": "عافاك (ʿafak)",
+      "meaning": "Por favor",
+      "translation": "Por favor / Se puder fazer a gentileza",
+      "pronunciation": "aa-fak"
+     },
+     {
+      "phrase": "بشحال؟ (bshḥal?)",
+      "meaning": "Quanto?",
+      "translation": "Quanto custa isto?",
+      "pronunciation": "b-shhal"
+     },
+     {
+      "phrase": "لا، شكرا (la, shukran)",
+      "meaning": "Não, obrigado(a)",
+      "translation": "Não quero, obrigado(a)",
+      "pronunciation": "laa, shuk-ran"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Na terra dos povos amazigh (berberes), as dinastias iniciadas pelos idríssidas no século VIII (almorávidas, almóadas, merínidas, saadianos e, desde 1666, alauitas) construíram uma sólida tradição de Estado. Sob protetorado francês e espanhol a partir de 1912, o país recuperou a independência em 1956.",
+    "milestones": [
+     "789: fundação da dinastia idríssida e de Fez",
+     "859: fundação da Al-Qarawiyyin em Fez",
+     "1666: chega ao poder a atual dinastia alauita",
+     "1956: independência"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Tajine (frango com limão em conserva e azeitonas, ou cordeiro com ameixas)",
+     "Cuscuz (prato tradicional de sexta-feira, com sete legumes)",
+     "Pastilla (torta agridoce de massa folhada com frango e amêndoas)"
+    ],
+    "traditionalDrinks": [
+     "Chá de hortelã (atay)",
+     "Nus-nus (metade leite, metade café)",
+     "Suco de laranja espremido na hora"
+    ],
+    "streetFoodAndDesserts": [
+     "Harira (sopa de grão-de-bico e lentilha)",
+     "Msemen (pão achatado folhado)",
+     "Chebakia (doce frito de gergelim e mel)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Ibn Battuta (o grande viajante de Tânger)",
+     "Fátima al-Fihri (fundadora da Al-Qarawiyyin)",
+     "Achraf Hakimi (jogador de futebol de nível mundial)"
+    ],
+    "strongSectors": [
+     "Fosfatos e fertilizantes (maiores reservas do mundo; OCP)",
+     "Indústria automobilística (fábricas em Tânger e Kenitra)",
+     "Turismo e agricultura (cítricos, azeitona, argan)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Cartões funcionam em hotéis e restaurantes grandes; nas medinas, táxis e souks, dinheiro vivo em dirhams é indispensável. O dirham não é conversível: troque o que sobrar antes de sair do país.",
+    "tippingCulture": "É comum deixar 10% nos restaurantes e alguns dirhams nos cafés; guias, motoristas e funcionários do hammam esperam gorjeta.",
+    "economicPillars": "Fosfatos e fertilizantes, peças automotivas e aeronáuticas, agricultura, turismo e remessas de emigrantes."
+   }
+  },
+  "itin": {
+   "routeName": "Clássicos do Marrocos: Chefchaouen, Fez, o Saara e Marrakech",
+   "routeSummary": "Um roteiro de 9 dias de norte a sul: as vielas azuis de Chefchaouen, a medina medieval de Fez, uma noite nas dunas de Merzouga e o final na colorida praça de Marrakech depois de cruzar o Atlas.",
+   "totalDays": 9,
+   "idealDurationText": "Roteiro de 9 dias",
+   "bestSeason": "Março – maio e setembro – novembro (clima ameno para cidades e deserto) · no verão faz um calor extremo no interior e no Saara; no inverno neva no Atlas e as noites no deserto são geladas",
+   "transportMode": "Chegada por Fez; ônibus CTM Chefchaouen – Fez, transfer particular ou excursão ao deserto Fez – Merzouga, tour Merzouga – Marrakech (passando por Todra, Dadès e Aït Benhaddou)",
+   "paceLevel": "Moderado a intenso (inclui longos trechos de estrada)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Chefchaouen",
+     "recommendedDuration": "2 dias (a cidade azul)",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Vielas azuis da medina",
+      "Praça Outa el-Hammam e Kasbah",
+      "Pôr do sol na Mesquita Espanhola",
+      "Cachoeiras de Akchour"
+     ],
+     "activities": [
+      "Faça um passeio fotográfico logo cedo pelas ruas vazias.",
+      "Suba até a Mesquita Espanhola ao entardecer.",
+      "Faça um bate-volta até as cachoeiras de Akchour."
+     ],
+     "foodAndDrinks": [
+      "Jben (queijo de cabra local)",
+      "Bissara (sopa de fava)",
+      "Chá de hortelã"
+     ],
+     "criticalTips": [
+      "Não ache que a cannabis (kif) oferecida a você é legal para uso recreativo; recuse com firmeza.",
+      "As ruas são íngremes e de pedra; use calçado confortável."
+     ],
+     "mapsQuery": "Chefchaouen, Morocco"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Fez",
+     "recommendedDuration": "2 dias (medina medieval)",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Medina de Fez el-Bali (UNESCO)",
+      "Curtume Chouara",
+      "Madraça Bou Inania",
+      "Bab Bou Jeloud (Porta Azul)"
+     ],
+     "activities": [
+      "Percorra o labirinto da medina com um guia credenciado.",
+      "Observe os tanques de tingimento do terraço de um curtume.",
+      "Faça uma esfoliação em um hammam tradicional."
+     ],
+     "foodAndDrinks": [
+      "Pastilla",
+      "Harira",
+      "Msemen"
+     ],
+     "criticalTips": [
+      "Se perder na medina é normal; pergunte aos lojistas, não aos jovens que seguem você.",
+      "Nos terraços dos curtumes há pressão para comprar; você não tem obrigação nenhuma."
+     ],
+     "mapsQuery": "Fes el Bali, Fes, Morocco"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Merzouga (Saara)",
+     "recommendedDuration": "2 dias (acampamento no deserto)",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Dunas de Erg Chebbi",
+      "Nascer e pôr do sol no deserto",
+      "Vilarejo gnawa de Khamlia",
+      "Acampamento berbere"
+     ],
+     "activities": [
+      "Chegue ao acampamento de camelo ao entardecer.",
+      "Ouça música berbere ao redor da fogueira.",
+      "Experimente o sandboard nas dunas."
+     ],
+     "foodAndDrinks": [
+      "Medfouna (\"pizza berbere\" recheada de carne)",
+      "Tajine",
+      "Chá de hortelã"
+     ],
+     "criticalTips": [
+      "No inverno, as noites chegam perto de 0 °C; leve um casaco quente.",
+      "Confirme se o preço do acampamento inclui refeições, camelos e transfers."
+     ],
+     "mapsQuery": "Merzouga, Morocco"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Marrakech",
+     "recommendedDuration": "3 dias (a cidade vermelha)",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Praça Jemaa el-Fnaa",
+      "Mesquita Koutoubia",
+      "Palácio da Bahia",
+      "Jardim Majorelle e Museu YSL"
+     ],
+     "activities": [
+      "Jante nas barracas de comida da Jemaa el-Fnaa.",
+      "Faça compras pechinchando nos souks.",
+      "Faça uma excursão ao Atlas (Imlil ou Ourika)."
+     ],
+     "foodAndDrinks": [
+      "Tanjia (carne cozida lentamente em pote de barro, ao estilo de Marrakech)",
+      "Cuscuz",
+      "Suco de laranja natural"
+     ],
+     "criticalTips": [
+      "Compre on-line e com antecedência os ingressos do Jardim Majorelle.",
+      "No souk, comece a pechinchar oferecendo entre um terço e metade do primeiro preço."
+     ],
+     "mapsQuery": "Jemaa el-Fnaa, Marrakesh, Morocco"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Tajine (frango com limão em conserva e azeitonas, ou cordeiro com ameixas)",
+     "Cuscuz (prato tradicional de sexta-feira, com sete legumes)",
+     "Pastilla (torta agridoce de massa folhada com frango e amêndoas)"
+    ],
+    "drinks": [
+     "Chá de hortelã (atay)",
+     "Nus-nus (metade leite, metade café)",
+     "Suco de laranja espremido na hora"
+    ],
+    "streetFoods": [
+     "Harira (sopa de grão-de-bico e lentilha)",
+     "Msemen (pão achatado folhado)",
+     "Chebakia (doce frito de gergelim e mel)"
+    ],
+    "diningAdvice": "As barracas numeradas da Jemaa el-Fnaa são baratas e saborosas; escolha as que estiverem cheias de locais. Bebidas alcoólicas só são vendidas em hotéis e restaurantes licenciados; prefira água engarrafada à da torneira."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Tomadas tipo C/E (como na Europa continental)",
+     "Roupas que cubram ombros e joelhos, e um lenço",
+     "Casaco quente para as noites no deserto",
+     "Pochete escondida para o dinheiro"
+    ],
+    "safetyAndEtiquette": [
+     "Aos vendedores insistentes, diga com educação \"la, shukran\" e siga seu caminho.",
+     "Peça permissão antes de fotografar pessoas."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "E"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Tomadas tipo C/E (padrão francês com pino de aterramento); os plugues turcos C e os Schuko híbridos E/F encaixam, não é preciso adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Nas grandes cidades, a água da torneira é clorada, mas a água engarrafada é recomendada para quem não está acostumado; em áreas rurais e nas medinas, beba sempre água engarrafada.",
+    "vaccines": [
+     "Vacinas de rotina (tríplice viral, tétano)",
+     "Hepatite A",
+     "Febre tifoide",
+     "Raiva (áreas rurais ou estadias longas)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "150"
+   },
+   "tipping": {
+    "custom": "Nos restaurantes, é costume deixar 10%, e nos cafés, alguns dirhams; guias, motoristas e funcionários do hammam esperam gorjeta.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Artistas de rua que você fotografar e crianças que indicarem o caminho também podem pedir dinheiro; tenha moedas pequenas à mão."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA de 20%",
+    "minSpend": "2.000 MAD por nota fiscal (IVA incluído)",
+    "customsNote": "Compre com passaporte em lojas com serviço tax-free; os produtos devem estar sem uso. Valide o formulário na alfândega antes de despachar a bagagem em aeroportos como Casablanca ou Marrakech e receba o reembolso. Alimentos, remédios e tabaco ficam de fora."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 0,50 - 1,50",
+    "topCarriers": [
+     "Maroc Telecom (IAM)",
+     "Orange Maroc",
+     "inwi"
+    ],
+    "airportSimTrapWarning": "No aeroporto, a Maroc Telecom, a Orange e a inwi dão de graça ou vendem barato o chip, mas empurram pacotes caros; os pacotes “*3” de 10–20 MAD em lojas da cidade saem bem mais baratos."
+   },
+   "touristScams": [
+    {
+     "title": "Falsos guias",
+     "desc": "Na medina, dizem a você “esta rua está fechada, eu te mostro o caminho” e levam você a uma loja ou curtume.",
+     "tip": "Recuse com educação e siga andando; use um mapa offline ou contrate um guia oficial."
+    },
+    {
+     "title": "Armadilha na Jemaa el-Fnaa",
+     "desc": "Pintam henna em você sem pedir ou fazem você posar com cobras ou macacos e depois exigem muito dinheiro.",
+     "tip": "Não estenda a mão e combine o preço antes da foto; 10–20 MAD é razoável."
+    },
+    {
+     "title": "Táxis sem taxímetro",
+     "desc": "Táxis que não usam taxímetro ou pedem tarifas fixas infladas no aeroporto.",
+     "tip": "Peça o “compteur” nos petit taxis; consulte a tabela oficial de tarifas no aeroporto ou use o inDrive."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Марокканский дирхам (MAD)",

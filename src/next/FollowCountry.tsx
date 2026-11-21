@@ -39,20 +39,20 @@ export const FollowCountry: React.FC<{ code: string; name: string; passport: str
   };
   if (!on) return null; // sunucu tarafı kurulmadıysa gösterme
   return (
-    <Card icon="bell" title={l(`${name} için değişiklik olunca haber ver`, `Get notified when ${name} changes`, `Benachrichtigen, wenn sich ${name} ändert`, `Avísame si cambia ${name}`, `Сообщить об изменениях: ${name}`)}>
+    <Card icon="bell" title={l(`${name} için değişiklik olunca haber ver`, `Get notified when ${name} changes`, `Benachrichtigen, wenn sich ${name} ändert`, `Avísame si cambia ${name}`, `Сообщить об изменениях: ${name}`, `Avise-me se ${name} mudar`)}>
       {state === 'sent' ? (
-        <p role="status">{l('Onay e-postası gönderdik. E-postadaki düğmeye basınca takip başlar.', 'We sent a confirmation email. Tap the button in it to start.', 'Bestätigungs-E-Mail gesendet. Bitte den Button darin antippen.', 'Te enviamos un correo de confirmación. Pulsa el botón para activar.', 'Мы отправили письмо. Нажмите кнопку в нём, чтобы подтвердить.')}</p>
+        <p role="status">{l('Onay e-postası gönderdik. E-postadaki düğmeye basınca takip başlar.', 'We sent a confirmation email. Tap the button in it to start.', 'Bestätigungs-E-Mail gesendet. Bitte den Button darin antippen.', 'Te enviamos un correo de confirmación. Pulsa el botón para activar.', 'Мы отправили письмо. Нажмите кнопку в нём, чтобы подтвердить.', 'Enviamos um e-mail de confirmação. Clique no botão para ativar.')}</p>
       ) : state === 'already' ? (
-        <p role="status">{l('Bu ülkeyi zaten takip ediyorsun.', 'You already follow this country.', 'Du folgst diesem Land bereits.', 'Ya sigues este país.', 'Вы уже подписаны.')}</p>
+        <p role="status">{l('Bu ülkeyi zaten takip ediyorsun.', 'You already follow this country.', 'Du folgst diesem Land bereits.', 'Ya sigues este país.', 'Вы уже подписаны.', 'Você já segue este país.')}</p>
       ) : (
         <form className="vz-follow" onSubmit={submit}>
-          <p className="vz-muted">{l('Vize kuralı ya da resmî seyahat uyarısı değişince ücretsiz e-posta gönderelim. İstediğin zaman tek tıkla bırakabilirsin.', 'We email you for free when the visa rule or official travel advisory changes. Unsubscribe anytime in one click.', 'Kostenlose E-Mail bei Änderung von Visumregel oder Reisehinweis. Jederzeit abbestellbar.', 'Te avisamos gratis si cambian el visado o el aviso oficial. Cancela cuando quieras.', 'Бесплатно напишем при изменении визы или предупреждения. Отписка в один клик.')}</p>
+          <p className="vz-muted">{l('Vize kuralı ya da resmî seyahat uyarısı değişince ücretsiz e-posta gönderelim. İstediğin zaman tek tıkla bırakabilirsin.', 'We email you for free when the visa rule or official travel advisory changes. Unsubscribe anytime in one click.', 'Kostenlose E-Mail bei Änderung von Visumregel oder Reisehinweis. Jederzeit abbestellbar.', 'Te avisamos gratis si cambian el visado o el aviso oficial. Cancela cuando quieras.', 'Бесплатно напишем при изменении визы или предупреждения. Отписка в один клик.', 'Avisamos você de graça se o visto ou o alerta oficial mudar. Cancele quando quiser.')}</p>
           <div className="vz-follow-row">
-            <label htmlFor={`vz-follow-${code}`} className="sr-only">{l('E-posta adresin', 'Your email', 'Deine E-Mail', 'Tu email', 'Ваш email')}</label>
-            <input id={`vz-follow-${code}`} type="email" required className="vz-input" placeholder={l('E-posta adresin', 'Your email', 'Deine E-Mail', 'Tu email', 'Ваш email')} value={email} onChange={(e) => setEmail(e.target.value)} autoComplete="email" />
-            <Btn type="submit" icon="bell" disabled={state === 'busy'}>{state === 'busy' ? '…' : l('Takip et', 'Follow', 'Folgen', 'Seguir', 'Следить')}</Btn>
+            <label htmlFor={`vz-follow-${code}`} className="sr-only">{l('E-posta adresin', 'Your email', 'Deine E-Mail', 'Tu email', 'Ваш email', 'Seu e-mail')}</label>
+            <input id={`vz-follow-${code}`} type="email" required className="vz-input" placeholder={l('E-posta adresin', 'Your email', 'Deine E-Mail', 'Tu email', 'Ваш email', 'Seu e-mail')} value={email} onChange={(e) => setEmail(e.target.value)} autoComplete="email" />
+            <Btn type="submit" icon="bell" disabled={state === 'busy'}>{state === 'busy' ? '…' : l('Takip et', 'Follow', 'Folgen', 'Seguir', 'Следить', 'Seguir')}</Btn>
           </div>
-          {state === 'err' && <p className="vz-muted" role="alert">{l('Şu an kaydedemedik, birazdan tekrar dener misin?', 'Could not save right now, please try again shortly.', 'Gerade nicht möglich, bitte später erneut.', 'No se pudo guardar, inténtalo luego.', 'Не удалось сохранить, попробуйте позже.')}</p>}
+          {state === 'err' && <p className="vz-muted" role="alert">{l('Şu an kaydedemedik, birazdan tekrar dener misin?', 'Could not save right now, please try again shortly.', 'Gerade nicht möglich, bitte später erneut.', 'No se pudo guardar, inténtalo luego.', 'Не удалось сохранить, попробуйте позже.', 'Não foi possível salvar. Tente de novo mais tarde.')}</p>}
         </form>
       )}
     </Card>

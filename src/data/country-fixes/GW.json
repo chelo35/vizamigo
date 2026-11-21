@@ -1531,6 +1531,389 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Franco CFA da África Ocidental (XOF)",
+   "plugType": "Tipo C, E, F (220V, 50Hz)",
+   "bestMonths": "Novembro – maio (estação seca); de junho a outubro chove muito e o acesso às ilhas fica difícil",
+   "safety": {
+    "safetyScore": 40,
+    "safetyLevel": "Recomenda-se cautela",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60",
+    "crimeRateSummary": "O país convive com uma longa instabilidade política; depois que os militares tomaram o poder em novembro de 2025, os alertas oficiais recomendam reconsiderar a viagem. A violência contra turistas é rara, mas há roubos à noite e furtos por arrastão.",
+    "commonScams": [
+     "“Taxas” informais em barreiras nas estradas",
+     "Preços de barco para as ilhas inflados para estrangeiros",
+     "Cédulas falsas ou troco a menos ao trocar dinheiro na rua"
+    ],
+    "safeTravelTips": [
+     "Acompanhe o noticiário político e possíveis toques de recolher; fique longe de manifestações.",
+     "Vá para as Bijagós apenas em barcos confiáveis, com coletes salva-vidas.",
+     "Leve o certificado de febre amarela; ele é obrigatório na entrada."
+    ],
+    "emergencyNumbers": {
+     "police": "117",
+     "ambulance": "1313",
+     "general": "117"
+    }
+   },
+   "internet": {
+    "networkCoverage": "3G/4G em Bissau; cobertura muito limitada nas ilhas Bijagós e nas áreas rurais",
+    "costPerGbUsd": "~US$ 1,50 - 4,00",
+    "esimAvailability": "Limitada",
+    "bestCarriers": [
+     "Orange Bissau",
+     "MTN Bissau"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Precário",
+    "costLevel": "Barato",
+    "singleTicketUsd": "US$ 0,30 - 1,00",
+    "dailyPassUsd": "US$ 20 - 40",
+    "popularRideApps": [
+     "Sem apps de transporte",
+     "Táxis urbanos azuis e brancos",
+     "Micro-ônibus toca-toca"
+    ],
+    "taxiAdvice": "Não há Uber nem Bolt. Em Bissau, os táxis compartilhados azuis e brancos e os micro-ônibus “toca-toca” são baratos; combine o preço antes. As balsas regulares para as ilhas são raras, por isso a maioria usa barcos particulares ou os traslados do lodge."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 35 - 55",
+    "dailyBudgetMidrangeUsd": "US$ 80 - 150",
+    "budgetMealUsd": "US$ 3 - 8",
+    "coffeeUsd": "US$ 1 - 2,50",
+    "waterBottleUsd": "US$ 0,50 - 1,00",
+    "hostelDormUsd": "US$ 15 - 30",
+    "hotel3StarUsd": "US$ 50 - 110",
+    "flightCostIndex": "Alto",
+    "flightTip": "Não há voos diretos da Turquia; a conexão é feita em Lisboa, Dacar ou Casablanca."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Os cumprimentos são longos; pergunte “Kuma ku bu sta?” para mostrar interesse pela pessoa.",
+     "Nas Bijagós, algumas ilhas e florestas sagradas são proibidas para forasteiros; siga o seu guia.",
+     "Peça permissão antes de tirar fotos.",
+     "Demonstre respeito pelos mais velhos e pelos chefes de aldeia."
+    ],
+    "festivals": [
+     "Carnaval de Bissau (fevereiro/março)",
+     "Dia da Independência (24 de setembro)",
+     "Cerimônias de iniciação bijagó (só com convite)"
+    ],
+    "lifestyle": "Música gumbé, a época da colheita do caju, as tradições matriarcais bijagó nas aldeias das ilhas e um ritmo de vida tranquilo."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Arquipélago dos Bijagós (Reserva da Biosfera da UNESCO)",
+     "Hipopótamos de água salgada de Orango",
+     "Tartarugas marinhas de João Vieira–Poilão",
+     "Bissau Velho (antigo bairro português)",
+     "Forte de Cacheu e memorial do tráfico de escravizados",
+     "Praias de Varela"
+    ],
+    "bestSeasons": "Novembro – maio (estação seca); de junho a outubro chove muito e o acesso às ilhas fica difícil",
+    "travelStyleTip": "Depois de Bissau, dedique a maior parte do tempo às Bijagós; os traslados organizados pelos lodges são o jeito mais seguro de circular entre as ilhas."
+   },
+   "religion": {
+    "primaryReligions": "Islã (~45 %), cristianismo (~22 %) e crenças tradicionais (~15-30 %).",
+    "respectNorms": "Não entre em florestas ou ilhas sagradas sem permissão; cubra-se nas mesquitas.",
+    "sacredSites": [
+     "Ilhas sagradas das Bijagós (apenas do lado de fora)",
+     "Catedral de Bissau",
+     "Igreja histórica de Cacheu"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Português (oficial). A língua do dia a dia é o crioulo da Guiné-Bissau; também se falam fula, balanta e mandinga.",
+    "englishProficiency": "Baixo; quase ninguém fala inglês, e o português ou o francês são mais úteis.",
+    "phrases": [
+     {
+      "phrase": "Bon dia",
+      "meaning": "Bom dia (crioulo)",
+      "translation": "Bom dia (crioulo)",
+      "pronunciation": "bon DEE-ah"
+     },
+     {
+      "phrase": "Kuma ku bu sta?",
+      "meaning": "Como vai você? (crioulo)",
+      "translation": "Como vai você? (crioulo)",
+      "pronunciation": "KOO-mah koo boo STAH"
+     },
+     {
+      "phrase": "Obrigadu",
+      "meaning": "Obrigado (crioulo)",
+      "translation": "Obrigado (crioulo)",
+      "pronunciation": "oh-bree-GAH-doo"
+     },
+     {
+      "phrase": "Kantu ki kusta?",
+      "meaning": "Quanto custa? (crioulo)",
+      "translation": "Quanto custa? (crioulo)",
+      "pronunciation": "KAHN-too kee KOOS-tah"
+     },
+     {
+      "phrase": "Mantenha",
+      "meaning": "Saudações (crioulo)",
+      "translation": "Saudações (crioulo)",
+      "pronunciation": "man-TEN-ya"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "A costa, alcançada pelos portugueses no século XV, foi um centro do tráfico de escravizados. Depois da guerra de libertação liderada por Amílcar Cabral, a independência foi proclamada em 1973 e reconhecida por Portugal em 1974.",
+    "milestones": [
+     "1588: Fundação de Cacheu",
+     "1973: Proclamação da independência",
+     "1974: Portugal reconhece a independência",
+     "1996: Criação da Reserva da Biosfera Bolama-Bijagós"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Caldo de mancarra (ensopado de amendoim)",
+     "Arroz com ostras (arroz cozido com ostras)",
+     "Caldo branco (sopa branca de peixe)"
+    ],
+    "traditionalDrinks": [
+     "Vinho de caju (feito com o pedúnculo do caju)",
+     "Cana (aguardente de cana)",
+     "Vinho de palma"
+    ],
+    "streetFoodAndDesserts": [
+     "Ostras na brasa",
+     "Peixe na brasa com banana-da-terra",
+     "Fataya (pastel frito)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Amílcar Cabral (líder da independência)",
+     "Flora Gomes (cineasta)",
+     "Éder (nascido em Bissau, autor do gol da final da Eurocopa de 2016)"
+    ],
+    "strongSectors": [
+     "Caju (principal exportação)",
+     "Pesca",
+     "Cultivo de arroz"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Dinheiro vivo em francos CFA é indispensável; há poucos caixas eletrônicos e cartões quase não são aceitos. Leve euros e troque-os em um banco.",
+    "tippingCulture": "Não é obrigatória; deixar o troco ou uma pequena gorjeta para guias e barqueiros é bem-visto.",
+    "economicPillars": "Exportação de caju, licenças de pesca, agricultura e ajuda externa."
+   }
+  },
+  "itin": {
+   "routeName": "Roteiro pela Guiné-Bissau: Bissau, ilhas Bijagós e Cacheu",
+   "routeSummary": "Um roteiro de 8 dias que vai das velhas ruas portuguesas de Bissau às remotas ilhas Bijagós, aos hipopótamos de Orango e à histórica Cacheu.",
+   "totalDays": 8,
+   "idealDurationText": "Roteiro de 8 dias pela Guiné-Bissau",
+   "bestSeason": "Novembro – maio (estação seca); de junho a outubro chove muito e o acesso às ilhas fica difícil",
+   "transportMode": "Barcos particulares/traslados do lodge + carro com motorista",
+   "paceLevel": "Tranquilo (ilhas + natureza)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Bissau",
+     "recommendedDuration": "1-2 dias (capital)",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Ruas de Bissau Velho",
+      "Fortaleza de São José da Amura",
+      "Mercado de Bandim",
+      "Memorial de Pidjiguiti"
+     ],
+     "activities": [
+      "Percorra os prédios coloniais do centro histórico.",
+      "Compre tecidos e castanhas de caju no mercado de Bandim.",
+      "Ouça música gumbé ao vivo à noite."
+     ],
+     "foodAndDrinks": [
+      "Caldo de mancarra",
+      "Vinho de caju"
+     ],
+     "criticalTips": [
+      "Não fotografe instalações militares nem a fortaleza.",
+      "À noite, pegue um táxi em vez de andar a pé."
+     ],
+     "mapsQuery": "Bissau, Guinea-Bissau"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Bubaque (Bijagós)",
+     "recommendedDuration": "2 dias (vida na ilha)",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Praia de Bruce",
+      "Vila e mercado de Bubaque",
+      "Passeio de barco às ilhas Rubane e Soga"
+     ],
+     "activities": [
+      "Percorra a ilha de bicicleta.",
+      "Pule de barco para as ilhas vizinhas.",
+      "Observe aves nos manguezais."
+     ],
+     "foodAndDrinks": [
+      "Peixe na brasa",
+      "Ostras na brasa"
+     ],
+     "criticalTips": [
+      "Os horários dos barcos são irregulares; organize a volta com antecedência.",
+      "Eletricidade e internet são limitadas; leve uma bateria externa."
+     ],
+     "mapsQuery": "Bubaque, Guinea-Bissau"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Ilha de Orango",
+     "recommendedDuration": "2 dias (vida selvagem)",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Hipopótamos de água salgada",
+      "Parque Nacional de Orango",
+      "Aldeias tradicionais bijagó"
+     ],
+     "activities": [
+      "Faça uma caminhada guiada para ver hipopótamos.",
+      "Visite o túmulo da rainha Okinka Pampa.",
+      "Conheça a cultura bijagó em uma aldeia."
+     ],
+     "foodAndDrinks": [
+      "Arroz com ostras",
+      "Vinho de palma"
+     ],
+     "criticalTips": [
+      "Os hipopótamos são perigosos; siga as orientações do guia.",
+      "Não entre em locais sagrados."
+     ],
+     "mapsQuery": "Orango, Guinea-Bissau"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Cacheu e Varela",
+     "recommendedDuration": "2 dias (história e praia)",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Forte de Cacheu",
+      "Memorial da Escravatura",
+      "Parque Nacional dos Mangais do Rio Cacheu",
+      "Praia de Varela"
+     ],
+     "activities": [
+      "Visite o museu de história de Cacheu.",
+      "Navegue pelos manguezais.",
+      "Descanse na ampla praia de Varela."
+     ],
+     "foodAndDrinks": [
+      "Caldo branco",
+      "Cana",
+      "Ostras na brasa"
+     ],
+     "criticalTips": [
+      "As estradas estão em mau estado; use um 4x4 e viaje de dia.",
+      "Perto da fronteira com o Senegal, siga os alertas oficiais."
+     ],
+     "mapsQuery": "Cacheu, Guinea-Bissau"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Caldo de mancarra (ensopado de amendoim)",
+     "Arroz com ostras (arroz cozido com ostras)",
+     "Caldo branco (sopa branca de peixe)"
+    ],
+    "drinks": [
+     "Vinho de caju (feito com o pedúnculo do caju)",
+     "Cana (aguardente de cana)",
+     "Vinho de palma"
+    ],
+    "streetFoods": [
+     "Ostras na brasa",
+     "Peixe na brasa com banana-da-terra",
+     "Fataya (pastel frito)"
+    ],
+    "diningAdvice": "Ostras e peixe são fartos e baratos; a base das refeições é o arroz. Na época do caju (abril–junho), prove o vinho de caju fresco."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Bastante dinheiro vivo (euros)",
+     "Repelente e comprimidos contra malária",
+     "Certificado de febre amarela",
+     "Bateria externa e lanterna"
+    ],
+    "safetyAndEtiquette": [
+     "Acompanhe o noticiário político e evite manifestações.",
+     "Respeite as regras dos locais sagrados nas Bijagós."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "E",
+     "F"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "São usadas tomadas europeias tipo C e F; os plugues turcos encaixam. As quedas de energia são muito frequentes."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "A água da torneira não é potável; use água engarrafada e lacrada.",
+    "vaccines": [
+     "Febre amarela (certificado obrigatório na entrada)",
+     "Hepatite A e febre tifoide",
+     "Prevenção contra malária (consulte seu médico)",
+     "Meningite (recomendada na estação seca)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "1313"
+   },
+   "tipping": {
+    "custom": "A gorjeta não é obrigatória.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "Nos restaurantes, deixe o troco; dê uma pequena gorjeta a barqueiros e guias."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Sem restituição de IVA para turistas",
+    "minSpend": "Não se aplica",
+    "customsNote": "A Guiné-Bissau não tem sistema de restituição de IVA (tax-free) para turistas. Comprar produtos de tartaruga marinha ou partes de animais selvagens é ilegal."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "US$ 1,50 - 4,00",
+    "topCarriers": [
+     "Orange Bissau",
+     "MTN Bissau"
+    ],
+    "airportSimTrapWarning": "No aeroporto quase não se vendem chips; compre o seu com o passaporte em uma loja da Orange ou da MTN em Bissau. Nas ilhas o sinal é muito fraco."
+   },
+   "touristScams": [
+    {
+     "title": "Taxas em barreiras",
+     "desc": "Cobranças informais de dinheiro em barreiras nas estradas.",
+     "tip": "Deixe os documentos à mão, mantenha a calma e peça recibo."
+    },
+    {
+     "title": "Preços de barco",
+     "desc": "Tarifas infladas para estrangeiros na travessia para as ilhas.",
+     "tip": "Organize os traslados com o lodge ou com uma agência confiável."
+    },
+    {
+     "title": "Câmbio na rua",
+     "desc": "Cédulas falsas ou troco a menos ao trocar dinheiro.",
+     "tip": "Troque dinheiro em um banco ou no hotel."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Западноафриканский франк КФА (XOF)",

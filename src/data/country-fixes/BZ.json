@@ -1415,6 +1415,360 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Dólar de Belize (BZD; câmbio fixo de 2 BZD = 1 dólar americano)",
+   "plugType": "Tipo A, B, G (110V/220V, 60Hz)",
+   "bestMonths": "Dezembro a abril (estação seca, ideal para mergulho e ruínas maias) · junho a novembro é época de chuvas e temporada de furacões (risco maior de agosto a outubro)",
+   "safety": {
+    "safetyScore": 55,
+    "safetyLevel": "Risco moderado",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60",
+    "crimeRateSummary": "No Southside de Belize City há violência de gangues e assaltos à mão armada; nos cayos turísticos (Caye Caulker, San Pedro) predominam os furtos. Em áreas remotas perto da fronteira com a Guatemala e no caminho para Caracol, recomenda-se ir com escolta.",
+    "commonScams": [
+     "Perto do terminal de ônibus e dos píeres de Belize City, há quem se ofereça para guiar você e depois exija dinheiro.",
+     "Passam um preço sem dizer a moeda e depois cobram o dobro em dólares americanos.",
+     "Guias sem licença que oferecem a caverna ATM ou o recife por preços baixos podem ignorar a segurança."
+    ],
+    "safeTravelTips": [
+     "Não caminhe à noite por Belize City; use um táxi chamado pelo hotel.",
+     "Nos cayos, prenda a bicicleta e seus pertences com cadeado; não deixe objetos de valor na praia.",
+     "Na temporada de furacões, acompanhe os alertas do NHC."
+    ],
+    "emergencyNumbers": {
+     "police": "911",
+     "ambulance": "911",
+     "general": "911"
+    }
+   },
+   "internet": {
+    "networkCoverage": "4G LTE nas cidades e nos cayos; fraco nas Montanhas Maias e na floresta do sul",
+    "costPerGbUsd": "US$ 2 - 5",
+    "esimAvailability": "Média (a Digi oferece eSIM; os eSIMs internacionais também funcionam)",
+    "bestCarriers": [
+     "Digi (Belize Telemedia)",
+     "Smart (Speednet)"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Moderado (ônibus baratos em antigos ônibus escolares, táxis aquáticos para os cayos, voos domésticos em aviões de pequeno porte)",
+    "costLevel": "Moderado (ônibus barato; táxi aquático e avião, caros)",
+    "singleTicketUsd": "Ônibus 1 - 6 $; táxi aquático Belize City – Caye Caulker ~20 - 30 $",
+    "dailyPassUsd": "Não existe (aluguel de carrinho de golfe nos cayos ~50 - 80 $/dia)",
+    "popularRideApps": [
+     "Sem Uber/Bolt – táxis licenciados de placa verde"
+    ],
+    "taxiAdvice": "Os táxis licenciados têm placa verde e não usam taxímetro; combine o preço (BZD/USD) antes de entrar. Do aeroporto para a cidade, a tarifa é fixa."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 50 - 80",
+    "dailyBudgetMidrangeUsd": "US$ 130 - 220",
+    "budgetMealUsd": "US$ 7 - 15",
+    "coffeeUsd": "US$ 2,50 - 4",
+    "waterBottleUsd": "US$ 1 - 2",
+    "hostelDormUsd": "US$ 18 - 35",
+    "hotel3StarUsd": "US$ 80 - 160",
+    "flightCostIndex": "Alto (sem voos diretos da Turquia)",
+    "flightTip": "Chega-se a Belize City (BZE) via EUA (Miami, Houston, Dallas) ou de ônibus/avião a partir de Cancún. Confira antes os requisitos de trânsito nos EUA."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Os belizenhos são descontraídos e simpáticos; ir direto ao assunto sem cumprimentar é falta de educação.",
+     "O “island time” é real; não tenha pressa nos cayos.",
+     "Peça permissão antes de fotografar em aldeias maias e comunidades menonitas."
+    ],
+    "festivals": [
+     "Dia do Assentamento Garífuna (19 de novembro, Dangriga e Hopkins)",
+     "Celebrações de setembro (10/set, Dia de St. George's Caye, e 21/set, Independência)",
+     "Lobster Fest (junho a julho; Caye Caulker, San Pedro, Placencia)"
+    ],
+    "lifestyle": "Uma mistura descontraída de kriols, mestiços, garífunas, maias, menonitas e indo-belizenhos que une o ritmo caribenho à América Central; a música punta e o mar marcam o dia a dia."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Grande Buraco Azul e Lighthouse Reef",
+     "Barreira de Corais de Belize (UNESCO) e Reserva Marinha Hol Chan",
+     "Caverna Actun Tunichil Muknal (ATM)",
+     "Cidades maias de Caracol e Xunantunich",
+     "Caye Caulker",
+     "Reserva do Jaguar de Cockscomb"
+    ],
+    "bestSeasons": "Dezembro a abril (estação seca, ideal para mergulho e ruínas maias) · junho a novembro é época de chuvas e temporada de furacões (risco maior de agosto a outubro)",
+    "travelStyleTip": "Combine cavernas e cidades maias no interior (Cayo), cultura garífuna no litoral e termine mergulhando nos cayos; entre as ilhas, o táxi aquático é o mais prático."
+   },
+   "religion": {
+    "primaryReligions": "Católicos (~40%), protestantes e evangélicos (pentecostais, adventistas, menonitas, anglicanos ~35%), sem religião (~15%), outros",
+    "respectNorms": "Cubra os ombros nas igrejas; nas cavernas maias (ATM) é proibido tocar em restos humanos e cerâmicas, e a câmara interna é percorrida só de meias.",
+    "sacredSites": [
+     "Actun Tunichil Muknal (caverna cerimonial maia)",
+     "Caracol (pirâmide Caana)",
+     "Catedral de St. John (1812, Belize City)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "O inglês é a língua oficial (caso único na América Central); o kriol belizenho é a língua do dia a dia. Cerca de metade da população fala espanhol; também se falam garífuna, q'eqchi', maia mopán e o plautdietsch dos menonitas.",
+    "englishProficiency": "Muito bom; o inglês é falado em todo lugar, e você logo se acostuma ao sotaque kriol.",
+    "phrases": [
+     {
+      "phrase": "Weh di go aan?",
+      "meaning": "E aí? / O que está rolando? (cumprimento kriol)",
+      "translation": "E aí? / O que está rolando? (cumprimento kriol)",
+      "pronunciation": "weh di go aan"
+     },
+     {
+      "phrase": "Ah deh yah",
+      "meaning": "Tudo bem / estou por aqui (resposta)",
+      "translation": "Tudo bem / estou por aqui (resposta)",
+      "pronunciation": "ah deh yah"
+     },
+     {
+      "phrase": "Tenk yu",
+      "meaning": "Obrigado",
+      "translation": "Obrigado",
+      "pronunciation": "tenk yu"
+     },
+     {
+      "phrase": "Homuch dis kaas?",
+      "meaning": "Quanto custa isto?",
+      "translation": "Quanto custa isto?",
+      "pronunciation": "ho-much dis kaas"
+     },
+     {
+      "phrase": "Lata!",
+      "meaning": "Até mais!",
+      "translation": "Até mais!",
+      "pronunciation": "lay-ta"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Entre os anos 250 e 900 d.C., grandes cidades maias como Caracol floresceram aqui. Os “Baymen” britânicos extraíam madeira desde o século XVII e resistiram à Espanha na batalha de St. George's Caye, em 1798. Em 1862 o território se tornou a colônia de Honduras Britânica, em 1973 passou a se chamar Belize e, em 21 de setembro de 1981, conquistou a independência.",
+    "milestones": [
+     "c. 650 d.C.: auge de Caracol",
+     "1798: Batalha de St. George's Caye",
+     "1862: Colônia de Honduras Britânica",
+     "1981: Independência"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Rice and beans com stew chicken (arroz com feijão e coco, frango ensopado)",
+     "Hudut (peixe em caldo de coco com banana-da-terra amassada, garífuna)",
+     "Lagosta grelhada e ceviche de conch (caramujo-rainha)"
+    ],
+    "traditionalDrinks": [
+     "Cerveja Belikin",
+     "Seaweed shake (vitamina de algas com leite)",
+     "Rum local (One Barrel) e vinho de caju"
+    ],
+    "streetFoodAndDesserts": [
+     "Fry jacks (massa frita do café da manhã)",
+     "Garnachas, salbutes e panades",
+     "Torta de coco e powder bun"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "George Price (pai da independência)",
+     "Andy Palacio (músico garífuna)",
+     "Marie Sharp (fundadora do famoso molho de pimenta)"
+    ],
+    "strongSectors": [
+     "Turismo (recife, cayos, ruínas maias)",
+     "Agricultura (cana-de-açúcar, banana, cítricos)",
+     "Pesca e frutos do mar"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "O dólar americano é aceito em todo lugar (o troco costuma vir em BZD). Os cartões funcionam em hotéis e restaurantes, com acréscimo de 3 – 5%; os pequenos comércios pedem dinheiro vivo.",
+    "tippingCulture": "Espera-se gorjeta. 10 – 15% em restaurantes (alguns incluem o serviço); 10 – 15% para guias de passeio e de mergulho.",
+    "economicPillars": "Turismo, exportações agrícolas, pesca e serviços."
+   }
+  },
+  "itin": {
+   "routeName": "Belize da floresta ao recife: San Ignacio, Hopkins e Caye Caulker",
+   "routeSummary": "Roteiro de 9 dias que começa na caverna ATM e nas cidades maias de Cayo, segue pela Hummingbird Highway até o vilarejo garífuna de Hopkins e a reserva do jaguar, e termina em Caye Caulker, com o recife e o Buraco Azul.",
+   "totalDays": 9,
+   "idealDurationText": "Roteiro de 9 dias",
+   "bestSeason": "Dezembro a abril (estação seca, ideal para mergulho e ruínas maias) · junho a novembro é época de chuvas e temporada de furacões (risco maior de agosto a outubro)",
+   "transportMode": "Ônibus ou traslado particular (San Ignacio – Hopkins ~3 h); depois, voo doméstico saindo de Dangriga ou táxi aquático saindo de Belize City (~45 min) até Caye Caulker",
+   "paceLevel": "Ativo (cavernas, floresta e mergulho)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: San Ignacio (Cayo)",
+     "recommendedDuration": "3 dias",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Caverna Actun Tunichil Muknal (ATM)",
+      "Xunantunich (com balsa de manivela)",
+      "Caracol (passando por Mountain Pine Ridge)",
+      "Feira de sábado de San Ignacio"
+     ],
+     "activities": [
+      "Com guia, nade e atravesse a pé a caverna ATM até a câmara de sacrifícios maia.",
+      "Suba a pirâmide Caana, em Caracol.",
+      "Reme de canoa pelo rio Macal."
+     ],
+     "foodAndDrinks": [
+      "Garnachas e salbutes",
+      "Rice and beans com stew chicken"
+     ],
+     "criticalTips": [
+      "Só é possível entrar na caverna ATM com guia, e câmeras são proibidas.",
+      "O caminho até Caracol é longo e empoeirado; vá com um tour guiado."
+     ],
+     "mapsQuery": "San Ignacio, Cayo, Belize"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Hopkins e Cockscomb",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Hummingbird Highway e St. Herman's Blue Hole",
+      "Reserva do Jaguar de Cockscomb",
+      "Oficinas de tambor garífuna"
+     ],
+     "activities": [
+      "Faça a trilha até a cachoeira de Cockscomb e desça o rio de boia.",
+      "Faça uma aula de tambor garífuna em Hopkins.",
+      "Reme de caiaque ao longo da praia tranquila."
+     ],
+     "foodAndDrinks": [
+      "Hudut",
+      "Pão de mandioca (cassava, garífuna)"
+     ],
+     "criticalTips": [
+      "Os maruins (mosquitos-pólvora) picam ao entardecer; use repelente.",
+      "Ver uma onça-pintada em Cockscomb é raro; vá pela floresta em si."
+     ],
+     "mapsQuery": "Hopkins, Stann Creek, Belize"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Caye Caulker",
+     "recommendedDuration": "4 dias",
+     "durationBadge": "4 dias",
+     "highlights": [
+      "The Split (banho de mar e pôr do sol)",
+      "Snorkel em Hol Chan e Shark Ray Alley",
+      "Mergulho ou sobrevoo no Grande Buraco Azul"
+     ],
+     "activities": [
+      "Passe um dia fazendo snorkel com peixes-boi, raias e tubarões-lixa.",
+      "Se você for mergulhador experiente, faça a excursão ao Buraco Azul e ao Lighthouse Reef.",
+      "Percorra a ilha de bicicleta no ritmo “go slow”."
+     ],
+     "foodAndDrinks": [
+      "Lagosta grelhada (temporada de junho a fevereiro)",
+      "Bolinhos de conch com uma Belikin"
+     ],
+     "criticalTips": [
+      "A lagosta tem defeso de 15 de fevereiro a 14 de junho, e o conch de julho a setembro; pergunte se aparecerem no cardápio.",
+      "Não toque no recife e use protetor solar seguro para os corais."
+     ],
+     "mapsQuery": "Caye Caulker, Belize"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Rice and beans com stew chicken (arroz com feijão e coco, frango ensopado)",
+     "Hudut (peixe em caldo de coco com banana-da-terra amassada, garífuna)",
+     "Lagosta grelhada e ceviche de conch (caramujo-rainha)"
+    ],
+    "drinks": [
+     "Cerveja Belikin",
+     "Seaweed shake (vitamina de algas com leite)",
+     "Rum local (One Barrel) e vinho de caju"
+    ],
+    "streetFoods": [
+     "Fry jacks (massa frita do café da manhã)",
+     "Garnachas, salbutes e panades",
+     "Torta de coco e powder bun"
+    ],
+    "diningAdvice": "Um prato local de rice and beans custa cerca de 7 – 12 $; nos cayos, os frutos do mar ficam mais caros. O molho Marie Sharp's está em quase todas as mesas."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptador tipo A/B (confira a compatibilidade com 110 V)",
+     "Protetor solar seguro para os corais e máscara de snorkel",
+     "Repelente contra mosquitos e maruins",
+     "Meias e sapatilhas aquáticas para a caverna ATM"
+    ],
+    "safetyAndEtiquette": [
+     "Não caminhe à noite por Belize City.",
+     "Pergunte se o preço é em BZD ou USD.",
+     "Não escale estruturas de acesso restrito nem leve nada dos sítios maias."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "A",
+     "B",
+     "G"
+    ],
+    "voltage": "110V/220V",
+    "frequency": "60Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Principalmente tomadas americanas tipo A/B (110 V) e algumas britânicas tipo G (220 V). Plugues europeus precisam de adaptador; confira se o seu aparelho aceita 110 V."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Em Belize City e nas cidades maiores a água é tratada, mas recomenda-se que os visitantes bebam água engarrafada ou filtrada; nos cayos, usa-se muitas vezes água da chuva ou dessalinizada.",
+    "vaccines": [
+     "Hepatite A e febre tifoide",
+     "Proteção contra doenças transmitidas por mosquitos (dengue, zika)",
+     "Risco baixo de malária (áreas rurais de Toledo e Stann Creek); consulte seu médico",
+     "Certificado de febre amarela apenas se você chegar de um país de risco"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "911"
+   },
+   "tipping": {
+    "custom": "Espera-se gorjeta.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "10 – 15% em restaurantes (alguns incluem o serviço); 10 – 15% para guias de passeio e de mergulho."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Sem restituição para turistas (GST de 12,5%)",
+    "minSpend": "Não se aplica",
+    "customsNote": "Belize não devolve o GST a turistas. É proibido exportar coral, casco de tartaruga-de-pente e joias de coral-negro, e comprar ou levar objetos maias para fora do país é crime."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 2 - 5",
+    "topCarriers": [
+     "Digi (Belize Telemedia)",
+     "Smart (Speednet)"
+    ],
+    "airportSimTrapWarning": "O balcão da Digi no aeroporto de Belize City é prático, mas as lojas da cidade têm mais pacotes; os dados móveis são caros, então compare opções de eSIM antes."
+   },
+   "touristScams": [
+    {
+     "title": "Guia de rua “prestativo”",
+     "desc": "Perto do terminal de ônibus e dos píeres de Belize City, há quem se ofereça para guiar você e depois exija dinheiro.",
+     "tip": "Recuse com educação e vá direto à bilheteria oficial."
+    },
+    {
+     "title": "Dólar americano ou belizenho?",
+     "desc": "Passam um preço sem dizer a moeda e depois cobram o dobro em dólares americanos.",
+     "tip": "Pergunte sempre: “BZD ou USD?”."
+    },
+    {
+     "title": "Guia sem licença",
+     "desc": "Guias sem licença que oferecem a caverna ATM ou o recife por preços baixos podem ignorar a segurança.",
+     "tip": "Vá com um guia licenciado pelo BTB (Belize Tourism Board)."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Белизский доллар (BZD; фиксированно 2 BZD = 1 доллар США)",

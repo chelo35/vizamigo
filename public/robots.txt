@@ -1,6 +1,6 @@
 # ==============================================================================
 # Vizamigo Mobile-First Indexing & Crawl Budget Optimization (robots.txt)
-# Active Languages: TR, EN, DE, ES, RU + x-default
+# Active Languages: TR, EN, DE, ES, RU, PT + x-default
 # ==============================================================================
 
 User-agent: *
@@ -12,6 +12,7 @@ Allow: /en/
 Allow: /de/
 Allow: /es/
 Allow: /ru/
+Allow: /pt/
 Allow: /*.css$
 Allow: /*.js$
 Allow: /*.webp$

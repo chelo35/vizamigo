@@ -1748,8 +1748,8 @@ function buildRealStops(
   groups.sort((x, y) => (_norm(y.place) === _norm(capital) ? 1 : 0) - (_norm(x.place) === _norm(capital) ? 1 : 0));
   const picked = groups.slice(0, 4);
   const hasRealFood = gastro.famousDishes.length > 0;
-  const prefix = L('{n}. Durak', 'Stop {n}', 'Stopp {n}', '{n}.ª Parada', 'Остановка {n}');
-  const days = (d: number) => L(`${d} Gün`, `${d} Days`, `${d} Tage`, `${d} Días`, `${d} ${d < 5 ? 'дня' : 'дней'}`);
+  const prefix = L('{n}. Durak', 'Stop {n}', 'Stopp {n}', '{n}.ª Parada', 'Остановка {n}', '{n}ª parada');
+  const days = (d: number) => L(`${d} Gün`, `${d} Days`, `${d} Tage`, `${d} Días`, `${d} ${d < 5 ? 'дня' : 'дней'}`, `${d} dias`);
   const stops: ItineraryStop[] = picked.map((g, i) => {
     const d = i === 0 ? 3 : 2;
     const food = hasRealFood ? [dishes[i] || dishes[0], drinks[i] || drinks[0], street[i] || street[0]].filter((x, j, a) => x && a.indexOf(x) === j) : [];
@@ -1767,17 +1767,17 @@ function buildRealStops(
   });
   const totalDays = stops.reduce((s, x, i) => s + (i === 0 ? 3 : 2), 0);
   const names = picked.map((g) => g.place);
-  const list = names.length > 1 ? `${names.slice(0, -1).join(', ')} ${L('ve', 'and', 'und', 'y', 'и')} ${names[names.length - 1]}` : names[0] || '';
+  const list = names.length > 1 ? `${names.slice(0, -1).join(', ')} ${L('ve', 'and', 'und', 'y', 'и', 'e')} ${names[names.length - 1]}` : names[0] || '';
   return {
     stops,
     totalDays,
-    routeName: L(`${countryName} Rotası: ${names.join(' → ')}`, `${countryName} Route: ${names.join(' → ')}`, `${countryName}-Route: ${names.join(' → ')}`, `Ruta por ${countryName}: ${names.join(' → ')}`, `Маршрут по ${countryName}: ${names.join(' → ')}`),
+    routeName: L(`${countryName} Rotası: ${names.join(' → ')}`, `${countryName} Route: ${names.join(' → ')}`, `${countryName}-Route: ${names.join(' → ')}`, `Ruta por ${countryName}: ${names.join(' → ')}`, `Маршрут по ${countryName}: ${names.join(' → ')}`, `Roteiro por ${countryName}: ${names.join(' → ')}`),
     routeSummary: L(
       `${countryName} için ${totalDays} günlük rota: ${list}. Duraklar, ülkenin en çok görülen yerlerine göre sıralandı.`,
       `A ${totalDays}-day route through ${countryName} covering ${list}, built around the country's best-known sights.`,
       `Eine ${totalDays}-tägige Route durch ${countryName}: ${list} – aufgebaut um die bekanntesten Sehenswürdigkeiten des Landes.`,
       `Una ruta de ${totalDays} días por ${countryName}: ${list}, organizada en torno a sus lugares más conocidos.`,
-      `Маршрут на ${totalDays} дней по ${countryName}: ${list} — вокруг самых известных достопримечательностей страны.`
+      `Маршрут на ${totalDays} дней по ${countryName}: ${list} — вокруг самых известных достопримечательностей страны.`, `Um roteiro de ${totalDays} dias por ${countryName}: ${list}, organizado em torno dos lugares mais conhecidos.`
     )
   };
 }
@@ -1812,6 +1812,7 @@ export function generateDynamicCountryItinerary(
   const isTr = lang === 'tr';
   const isDe = lang === 'de';
   const isEs = lang === 'es';
+  const isPt = lang === 'pt';
   const isRu = lang === 'ru';
 
   // Durak 1: Başkent & Tarihi Çekirdek
@@ -1824,7 +1825,7 @@ export function generateDynamicCountryItinerary(
       ? `Stopp 1: ${capital} (Historisches Zentrum & Kultur)`
       : isEs
       ? `1.ª Parada: ${capital} (Centro Histórico y Patrimonio)`
-      : isRu
+      : isPt ? `1ª parada: ${capital} (centro histórico e patrimônio)` : isRu
       ? `Остановка 1: ${capital} (Исторический центр и наследие)`
       : `Stop 1: ${capital} (Historic Core & Heritage)`,
     recommendedDuration: isTr
@@ -1833,10 +1834,10 @@ export function generateDynamicCountryItinerary(
       ? '2-3 Tage (Ideal für Kultur)'
       : isEs
       ? '2-3 Días (Ideal para explorar)'
-      : isRu
+      : isPt ? '2-3 dias (ideal para explorar)' : isRu
       ? '2-3 дня (Идеально для первого знакомства)'
       : '2-3 Days (Ideal for core sights)',
-    durationBadge: isTr ? '3 Gün' : isDe ? '3 Tage' : isEs ? '3 Días' : isRu ? '3 дня' : '3 Days',
+    durationBadge: isTr ? '3 Gün' : isDe ? '3 Tage' : isEs ? '3 Días' : isPt ? '3 dias' : isRu ? '3 дня' : '3 Days',
     highlights: stop1Highlights.length > 0 ? stop1Highlights : [
       isTr
         ? `${capital} Şehir Meydanı & Ulusal Müze`
@@ -1844,7 +1845,7 @@ export function generateDynamicCountryItinerary(
         ? `${capital} Hauptplatz & Nationalmuseum`
         : isEs
         ? `${capital} Plaza Mayor y Museo Nacional`
-        : isRu
+        : isPt ? `${capital} Praça principal e Museu Nacional` : isRu
         ? `${capital} Главная площадь и Национальный музей`
         : `${capital} City Square & National Museum`
     ],
@@ -1855,7 +1856,7 @@ export function generateDynamicCountryItinerary(
         ? `Spaziergang über den Hauptplatz von ${capital}.`
         : isEs
         ? `Pasee por el centro histórico de ${capital} admirando la arquitectura y monumentos.`
-        : isRu
+        : isPt ? `Passeie pelo centro histórico de ${capital} admirando a arquitetura e os monumentos.` : isRu
         ? `Прогуляйтесь по историческому центру ${capital}, знакомясь с архитектурой и достопримечательностями.`
         : `Walk through the historic center of ${capital} exploring national landmarks.`,
       isTr
@@ -1864,7 +1865,7 @@ export function generateDynamicCountryItinerary(
         ? `Erkundung traditioneller Handwerksmärkte.`
         : isEs
         ? `Explore los mercados tradicionales y tiendas de artesanía local.`
-        : isRu
+        : isPt ? `Explore os mercados tradicionais e as lojas de artesanato local.` : isRu
         ? `Посетите колоритные рынки традиционных ремесел и сувениров.`
         : `Explore traditional bazaars and artisan craft markets.`,
       isTr
@@ -1873,14 +1874,14 @@ export function generateDynamicCountryItinerary(
         ? `Sonnenuntergang von einem Aussichtspunkt genießen.`
         : isEs
         ? `Disfrute de la puesta de sol desde un mirador panorámico de la ciudad.`
-        : isRu
+        : isPt ? `Curta o pôr do sol de um mirante panorâmico da cidade.` : isRu
         ? `Встретьте закат на смотровой площадке с панорамным видом на город.`
         : `Enjoy sunset views from a panoramic city lookout.`
     ],
     foodAndDrinks: [
-      famousDishes[0] || (isTr ? 'Geleneksel yemekler' : isDe ? 'Traditionelle Gerichte' : isEs ? 'Platos tradicionales' : isRu ? 'Традиционные блюда' : 'Traditional dishes'),
-      drinks[0] || (isTr ? 'Yerel içecekler' : isDe ? 'Lokale Getränke' : isEs ? 'Bebidas locales' : isRu ? 'Местные напитки' : 'Local drinks'),
-      streetFood[0] || (isTr ? 'Taze yerel tatlar' : isDe ? 'Frische Snacks' : isEs ? 'Bocados callejeros frescos' : isRu ? 'Свежие местные деликатесы' : 'Fresh local snacks')
+      famousDishes[0] || (isTr ? 'Geleneksel yemekler' : isDe ? 'Traditionelle Gerichte' : isEs ? 'Platos tradicionales' : isPt ? 'Pratos tradicionais' : isRu ? 'Традиционные блюда' : 'Traditional dishes'),
+      drinks[0] || (isTr ? 'Yerel içecekler' : isDe ? 'Lokale Getränke' : isEs ? 'Bebidas locales' : isPt ? 'Bebidas locais' : isRu ? 'Местные напитки' : 'Local drinks'),
+      streetFood[0] || (isTr ? 'Taze yerel tatlar' : isDe ? 'Frische Snacks' : isEs ? 'Bocados callejeros frescos' : isPt ? 'Petiscos de rua fresquinhos' : isRu ? 'Свежие местные деликатесы' : 'Fresh local snacks')
     ],
     criticalTips: [
       insights.transport?.taxiAdvice || (
@@ -1890,7 +1891,7 @@ export function generateDynamicCountryItinerary(
           ? 'Nutzen Sie lizenzierte Taxis oder Apps.'
           : isEs
           ? 'Utilice taxis oficiales con taxímetro o aplicaciones de transporte verificadas.'
-          : isRu
+          : isPt ? 'Use táxis oficiais com taxímetro ou apps de transporte verificados.' : isRu
           ? 'Пользуйтесь официальными такси со счетчиком или проверенными приложениями.'
           : 'Use licensed metered taxis or verified ride apps.'
       ),
@@ -1900,7 +1901,7 @@ export function generateDynamicCountryItinerary(
         ? 'Öffnungszeiten von Museen und Sehenswürdigkeiten vorab prüfen.'
         : isEs
         ? 'Consulte con antelación los horarios de apertura de museos y monumentos.'
-        : isRu
+        : isPt ? 'Confira com antecedência o horário de funcionamento de museus e monumentos.' : isRu
         ? 'Заранее уточняйте часы работы музеев и достопримечательностей.'
         : 'Check operating hours for museums and heritage monuments in advance.'
     ],
@@ -1918,7 +1919,7 @@ export function generateDynamicCountryItinerary(
       ? `Stopp 2: ${secondCity} (Kultur & Lebensart)`
       : isEs
       ? `2.ª Parada: ${secondCity} (Cultura y Vida Local)`
-      : isRu
+      : isPt ? `2ª parada: ${secondCity} (cultura e vida local)` : isRu
       ? `Остановка 2: ${secondCity} (Культура и местный колорит)`
       : `Stop 2: ${secondCity} (Culture & Local Life)`,
     recommendedDuration: isTr
@@ -1927,10 +1928,10 @@ export function generateDynamicCountryItinerary(
       ? '2 Tage (Ausreichend für Highlights)'
       : isEs
       ? '2 Días (Suficiente para los puntos destacados)'
-      : isRu
+      : isPt ? '2 dias (suficientes para os destaques)' : isRu
       ? '2 дня (Достаточно для главных мест)'
       : '2 Days (Sufficient for highlights)',
-    durationBadge: isTr ? '2 Gün' : isDe ? '2 Tage' : isEs ? '2 Días' : isRu ? '2 дня' : '2 Days',
+    durationBadge: isTr ? '2 Gün' : isDe ? '2 Tage' : isEs ? '2 Días' : isPt ? '2 dias' : isRu ? '2 дня' : '2 Days',
     highlights: stop2Highlights.length > 0 ? stop2Highlights : [
       isTr
         ? `${secondCity} Tarihi Yapıları & Parkları`
@@ -1938,7 +1939,7 @@ export function generateDynamicCountryItinerary(
         ? `${secondCity} Historische Bauten & Parks`
         : isEs
         ? `${secondCity} Monumentos Históricos y Parques`
-        : isRu
+        : isPt ? `${secondCity} Monumentos históricos e parques` : isRu
         ? `${secondCity} Исторические здания и парки`
         : `${secondCity} Historic Landmarks & Parks`
     ],
@@ -1949,7 +1950,7 @@ export function generateDynamicCountryItinerary(
         ? `Atmosphäre in den Straßen von ${secondCity} genießen.`
         : isEs
         ? `Sumérjase en el ambiente local en los cafés y calles de ${secondCity}.`
-        : isRu
+        : isPt ? `Mergulhe no clima local nos cafés e nas ruas de ${secondCity}.` : isRu
         ? `Почувствуйте ритм жизни в уютных кафе и на улочках ${secondCity}.`
         : `Absorb the local lifestyle and relaxing cafes in ${secondCity}.`,
       isTr
@@ -1958,14 +1959,14 @@ export function generateDynamicCountryItinerary(
         ? `Fotostopps an den wichtigsten Sehenswürdigkeiten.`
         : isEs
         ? `Fotografíe los monumentos y edificios emblemáticos propios de la región.`
-        : isRu
+        : isPt ? `Fotografe os monumentos e edifícios emblemáticos típicos da região.` : isRu
         ? `Сфотографируйте уникальные региональные памятники и архитектуру.`
         : `Photograph historic landmarks unique to this region.`
     ],
     foodAndDrinks: [
-      famousDishes[1] || famousDishes[0] || (isTr ? 'Bölgesel lezzetler' : isDe ? 'Regionale Spezialitäten' : isEs ? 'Especialidades regionales' : isRu ? 'Региональные блюда' : 'Regional dishes'),
-      drinks[1] || drinks[0] || (isTr ? 'Yerel içecekler' : isDe ? 'Lokale Getränke' : isEs ? 'Bebidas locales' : isRu ? 'Местные напитки' : 'Local drinks'),
-      streetFood[1] || streetFood[0] || (isTr ? 'Sokak tatlısı' : isDe ? 'Lokale Süßspeisen' : isEs ? 'Postres tradicionales' : isRu ? 'Традиционные сладости' : 'Street sweets')
+      famousDishes[1] || famousDishes[0] || (isTr ? 'Bölgesel lezzetler' : isDe ? 'Regionale Spezialitäten' : isEs ? 'Especialidades regionales' : isPt ? 'Especialidades regionais' : isRu ? 'Региональные блюда' : 'Regional dishes'),
+      drinks[1] || drinks[0] || (isTr ? 'Yerel içecekler' : isDe ? 'Lokale Getränke' : isEs ? 'Bebidas locales' : isPt ? 'Bebidas locais' : isRu ? 'Местные напитки' : 'Local drinks'),
+      streetFood[1] || streetFood[0] || (isTr ? 'Sokak tatlısı' : isDe ? 'Lokale Süßspeisen' : isEs ? 'Postres tradicionales' : isPt ? 'Doces tradicionais' : isRu ? 'Традиционные сладости' : 'Street sweets')
     ],
     criticalTips: [
       isTr
@@ -1974,7 +1975,7 @@ export function generateDynamicCountryItinerary(
         ? 'Für Überlandfahrten bequeme Fernbusse oder Züge wählen.'
         : isEs
         ? 'Opte por trenes expresos o autobuses cómodos para los desplazamientos entre ciudades.'
-        : isRu
+        : isPt ? 'Prefira trens expressos ou ônibus confortáveis para os deslocamentos entre cidades.' : isRu
         ? 'Для междугородних поездок выбирайте скоростные поезда или комфортные автобусы.'
         : 'Choose intercity express trains or comfortable coaches for transfers.',
       isTr
@@ -1983,7 +1984,7 @@ export function generateDynamicCountryItinerary(
         ? 'Auf belebten Märkten auf Wertsachen achten.'
         : isEs
         ? 'Preste atención a sus pertenencias en mercados y zonas concurridas.'
-        : isRu
+        : isPt ? 'Fique de olho nos seus pertences em mercados e áreas movimentadas.' : isRu
         ? 'Следите за личными вещами на оживленных рынках и площадях.'
         : 'Keep watchful care over personal items in crowded public markets.'
     ],
@@ -2001,7 +2002,7 @@ export function generateDynamicCountryItinerary(
       ? `Stopp 3: ${natureRegion} (Natur & Erholung)`
       : isEs
       ? `3.ª Parada: ${natureRegion} (Naturaleza, Vistas y Descanso)`
-      : isRu
+      : isPt ? `3ª parada: ${natureRegion} (natureza, vistas e descanso)` : isRu
       ? `Остановка 3: ${natureRegion} (Природа, пейзажи и отдых)`
       : `Stop 3: ${natureRegion} (Nature & Relaxation)`,
     recommendedDuration: isTr
@@ -2010,10 +2011,10 @@ export function generateDynamicCountryItinerary(
       ? '2-3 Tage (Ideal für Natur)'
       : isEs
       ? '2-3 Días (Ideal para disfrutar de la naturaleza)'
-      : isRu
+      : isPt ? '2-3 dias (ideal para curtir a natureza)' : isRu
       ? '2-3 дня (Идеально для природы и пейзажей)'
       : '2-3 Days (Ideal for nature)',
-    durationBadge: isTr ? '2-3 Gün' : isDe ? '2-3 Tage' : isEs ? '2-3 Días' : isRu ? '2-3 дня' : '2-3 Days',
+    durationBadge: isTr ? '2-3 Gün' : isDe ? '2-3 Tage' : isEs ? '2-3 Días' : isPt ? '2-3 dias' : isRu ? '2-3 дня' : '2-3 Days',
     highlights: stop3Highlights.length > 0 ? stop3Highlights : [
       isTr
         ? `${natureRegion} Doğal Seyir Alanları & Parklar`
@@ -2021,7 +2022,7 @@ export function generateDynamicCountryItinerary(
         ? `${natureRegion} Panoramablicke & Naturparks`
         : isEs
         ? `${natureRegion} Miradores Naturales y Parques`
-        : isRu
+        : isPt ? `${natureRegion} Mirantes naturais e parques` : isRu
         ? `${natureRegion} Панорамные смотровые площадки и парки`
         : `${natureRegion} Scenic Viewpoints & Parks`
     ],
@@ -2032,7 +2033,7 @@ export function generateDynamicCountryItinerary(
         ? `Wandern in der Natur und Panoramablicke genießen.`
         : isEs
         ? `Disfrute de rutas de senderismo y miradores con vistas panorámicas.`
-        : isRu
+        : isPt ? `Aproveite trilhas e mirantes com vistas panorâmicas.` : isRu
         ? `Совершите пешие прогулки на свежем воздухе и насладитесь панорамами.`
         : `Hike scenic trails and take in panoramic vistas in the great outdoors.`,
       isTr
@@ -2041,14 +2042,14 @@ export function generateDynamicCountryItinerary(
         ? `Authentische regionale Spezialitäten probieren.`
         : isEs
         ? `Pruebe los platos tradicionales en restaurantes rurales y auténticos.`
-        : isRu
+        : isPt ? `Prove pratos tradicionais em restaurantes rurais e autênticos.` : isRu
         ? `Попробуйте аутентичные блюда в традиционных местных тавернах.`
         : `Sample regional specialties at an authentic countryside venue.`
     ],
     foodAndDrinks: [
-      famousDishes[2] || famousDishes[0] || (isTr ? 'Yöresel fırın yemekleri' : isDe ? 'Regionale Spezialitäten' : isEs ? 'Guisos regionales tradicionales' : isRu ? 'Традиционные региональные блюда' : 'Regional oven-baked dishes'),
-      drinks[0] || (isTr ? 'Taze kaynak suları ve çaylar' : isDe ? 'Frisches Quellwasser & Tees' : isEs ? 'Infusiones y agua fresca de manantial' : isRu ? 'Свежая родниковая вода и чай' : 'Spring water & teas'),
-      streetFood[0] || (isTr ? 'Doğal meyveler' : isDe ? 'Frisches Obst' : isEs ? 'Frutas naturales y delicias locales' : isRu ? 'Свежие фрукты и местные угощения' : 'Local seasonal fruits')
+      famousDishes[2] || famousDishes[0] || (isTr ? 'Yöresel fırın yemekleri' : isDe ? 'Regionale Spezialitäten' : isEs ? 'Guisos regionales tradicionales' : isPt ? 'Ensopados regionais tradicionais' : isRu ? 'Традиционные региональные блюда' : 'Regional oven-baked dishes'),
+      drinks[0] || (isTr ? 'Taze kaynak suları ve çaylar' : isDe ? 'Frisches Quellwasser & Tees' : isEs ? 'Infusiones y agua fresca de manantial' : isPt ? 'Chás e água fresca de nascente' : isRu ? 'Свежая родниковая вода и чай' : 'Spring water & teas'),
+      streetFood[0] || (isTr ? 'Doğal meyveler' : isDe ? 'Frisches Obst' : isEs ? 'Frutas naturales y delicias locales' : isPt ? 'Frutas naturais e delícias locais' : isRu ? 'Свежие фрукты и местные угощения' : 'Local seasonal fruits')
     ],
     criticalTips: [
       isTr
@@ -2057,7 +2058,7 @@ export function generateDynamicCountryItinerary(
         ? 'Für Naturtouren festes Schuhwerk und wetterfeste Kleidung mitbringen.'
         : isEs
         ? 'Lleve calzado adecuado de montaña y ropa según la estación para las excursiones.'
-        : isRu
+        : isPt ? 'Leve calçado adequado para montanha e roupas de acordo com a estação para os passeios.' : isRu
         ? 'Для загородных поездок возьмите удобную треккинговую обувь и одежду по сезону.'
         : 'Bring suitable hiking footwear and weather-resistant gear for nature excursions.',
       isTr
@@ -2066,7 +2067,7 @@ export function generateDynamicCountryItinerary(
         ? 'Wetterbericht vor Ausflügen prüfen.'
         : isEs
         ? 'Consulte el pronóstico del tiempo antes de salir a la naturaleza.'
-        : isRu
+        : isPt ? 'Confira a previsão do tempo antes de sair para a natureza.' : isRu
         ? 'Проверяйте прогноз погоды перед отправлением на природные локации.'
         : 'Monitor local weather forecasts prior to departures.'
     ],
@@ -2080,7 +2081,7 @@ export function generateDynamicCountryItinerary(
     ? `${countryName} Entdeckerroute: ${capital}, ${secondCity} & Natur`
     : isEs
     ? `Ruta Clásica por ${countryName}: ${capital}, ${secondCity} y Paisajes Naturales`
-    : isRu
+    : isPt ? `Roteiro clássico por ${countryName}: ${capital}, ${secondCity} e paisagens naturais` : isRu
     ? `Классический маршрут по ${countryName}: ${capital}, ${secondCity} и природа`
     : `${countryName} Essential Highlights Route: ${capital}, ${secondCity} & Nature`;
 
@@ -2090,12 +2091,12 @@ export function generateDynamicCountryItinerary(
     ? `Eine ausgewogene ${totalDays}-tägige Entdeckungsreise durch ${countryName}, von der Hauptstadt ${capital} bis zu malerischen Kultur- und Naturlandschaften.`
     : isEs
     ? `Un itinerario completo y equilibrado de ${totalDays} días por ${countryName}, desde la capital histórica de ${capital} hasta centros culturales y sobrecogedores paisajes naturales.`
-    : isRu
+    : isPt ? `Um roteiro completo e equilibrado de ${totalDays} dias por ${countryName}, da histórica capital ${capital} a centros culturais e paisagens naturais de tirar o fôlego.` : isRu
     ? `Сбалансированный ${totalDays}-дневный маршрут по ${countryName}: от исторической столицы ${capital} до культурных центров и живописных природных ландшафтов.`
     : `A balanced ${totalDays}-day travel itinerary taking you from the historic capital of ${capital} through authentic cultural hubs and scenic natural landscapes in ${countryName}.`;
 
   const bestSeason = encyclopedia.tourism.bestSeasons || (
-    isTr ? 'İlkbahar ve Sonbahar ayları' : isDe ? 'Frühling und Herbst' : isEs ? 'Meses de primavera y otoño' : isRu ? 'Весна и осень' : 'Spring and Autumn months'
+    isTr ? 'İlkbahar ve Sonbahar ayları' : isDe ? 'Frühling und Herbst' : isEs ? 'Meses de primavera y otoño' : isPt ? 'Meses de primavera e outono' : isRu ? 'Весна и осень' : 'Spring and Autumn months'
   );
 
   const transportMode = isTr
@@ -2104,7 +2105,7 @@ export function generateDynamicCountryItinerary(
     ? `Überlandbusse/Züge + Taxis/Apps (${insights.transport?.popularRideApps?.join(', ') || 'Lokale Taxis'})`
     : isEs
     ? `Red interurbana de trenes/autobuses + metro y apps de transporte en ${capital} (${insights.transport?.popularRideApps?.join(', ') || 'Taxi local'})`
-    : isRu
+    : isPt ? `Rede intermunicipal de trens/ônibus + metrô e apps de transporte em ${capital} (${insights.transport?.popularRideApps?.join(', ') || 'Taxi local'})` : isRu
     ? `Междугородние поезда/автобусы + городской транспорт и такси в ${capital} (${insights.transport?.popularRideApps?.join(', ') || 'Местное такси'})`
     : `Intercity rail/bus network + urban transit and ride apps (${insights.transport?.popularRideApps?.join(', ') || 'Local Taxis'})`;
 
@@ -2125,7 +2126,7 @@ export function generateDynamicCountryItinerary(
       ? `${real.totalDays}-Tage Entdeckerroute`
       : isEs
       ? `Ruta Clásica de ${real.totalDays} Días`
-      : isRu
+      : isPt ? `Roteiro clássico de ${real.totalDays} dias` : isRu
       ? `Классический маршрут на ${real.totalDays} дней`
       : `${real.totalDays}-Day Signature Itinerary`,
     bestSeason,
@@ -2136,7 +2137,7 @@ export function generateDynamicCountryItinerary(
       ? 'Ausgewogen (Kultur & Natur)'
       : isEs
       ? 'Equilibrado (Cultura, Ciudad y Naturaleza)'
-      : isRu
+      : isPt ? 'Equilibrado (cultura, cidade e natureza)' : isRu
       ? 'Сбалансированный (Культура, город и природа)'
       : 'Balanced (Culture & Nature)',
     stops: real.stops,
@@ -2156,10 +2157,10 @@ export function generateDynamicCountryItinerary(
     },
     packingAndPrecautions: {
       essentials: [
-        isTr ? 'Rahat yürüyüş ayakkabıları ve mevsime uygun giysiler' : isDe ? 'Bequeme Wanderschuhe' : isEs ? 'Calzado cómodo para caminar y ropa adecuada para la temporada' : isRu ? 'Удобная обувь для ходьбы и одежда по сезону' : 'Comfortable walking shoes',
-        isTr ? `Seyahat priz adaptörü (${geography.plugTypes || 'Uluslararası adaptör'})` : isDe ? `Reiseadapter (${geography.plugTypes})` : isEs ? `Adaptador de viaje (${geography.plugTypes || 'Adaptador universal'})` : isRu ? `Адаптер для розеток (${geography.plugTypes || 'Универсальный переходник'})` : `Plug adapter (${geography.plugTypes})`,
-        isTr ? 'Taşınabilir şarj aleti (powerbank)' : isDe ? 'Powerbank' : isEs ? 'Batería externa portátil (powerbank)' : isRu ? 'Портативный аккумулятор (пауэрбанк)' : 'Portable powerbank',
-        isTr ? 'Güneş kremi ve su matarası' : isDe ? 'Sonnenschutz und Trinkflasche' : isEs ? 'Protector solar y botella de agua reutilizable' : isRu ? 'Солнцезащитный крем и бутылка для воды' : 'Sun protection and water bottle'
+        isTr ? 'Rahat yürüyüş ayakkabıları ve mevsime uygun giysiler' : isDe ? 'Bequeme Wanderschuhe' : isEs ? 'Calzado cómodo para caminar y ropa adecuada para la temporada' : isPt ? 'Calçado confortável para caminhar e roupas adequadas à estação' : isRu ? 'Удобная обувь для ходьбы и одежда по сезону' : 'Comfortable walking shoes',
+        isTr ? `Seyahat priz adaptörü (${geography.plugTypes || 'Uluslararası adaptör'})` : isDe ? `Reiseadapter (${geography.plugTypes})` : isEs ? `Adaptador de viaje (${geography.plugTypes || 'Adaptador universal'})` : isPt ? `Adaptador de tomada (${geography.plugTypes || 'Adaptador universal'})` : isRu ? `Адаптер для розеток (${geography.plugTypes || 'Универсальный переходник'})` : `Plug adapter (${geography.plugTypes})`,
+        isTr ? 'Taşınabilir şarj aleti (powerbank)' : isDe ? 'Powerbank' : isEs ? 'Batería externa portátil (powerbank)' : isPt ? 'Carregador portátil (power bank)' : isRu ? 'Портативный аккумулятор (пауэрбанк)' : 'Portable powerbank',
+        isTr ? 'Güneş kremi ve su matarası' : isDe ? 'Sonnenschutz und Trinkflasche' : isEs ? 'Protector solar y botella de agua reutilizable' : isPt ? 'Protetor solar e garrafa de água reutilizável' : isRu ? 'Солнцезащитный крем и бутылка для воды' : 'Sun protection and water bottle'
       ],
       safetyAndEtiquette: [
         isTr

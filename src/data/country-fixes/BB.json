@@ -1543,6 +1543,392 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Dólar de Barbados (BBD)",
+   "plugType": "Tipo A, B (115V, 50Hz)",
+   "bestMonths": "Dezembro a abril (seco e ensolarado, alta temporada); de junho a novembro é temporada de furacões e chuvas: a ilha fica um pouco ao sul da rota principal, mas o risco existe",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Em geral é seguro para turistas; o aumento de incidentes com armas nos últimos anos envolve sobretudo gangues. Podem ocorrer furtos nas praias e arrastões à noite em áreas de lazer como St. Lawrence Gap.",
+    "commonScams": [
+     "“Beach boys” oferecendo jet ski, passeios ou drogas nas praias",
+     "Sem taxímetro: no fim da corrida cobram uma tarifa alta que não foi combinada",
+     "Táxis sem licença, que não têm o “Z” na placa"
+    ],
+    "safeTravelTips": [
+     "Use só táxis licenciados com placa começando por “Z” e combine o preço antes.",
+     "Usar roupa camuflada é ilegal para civis; não coloque na mala.",
+     "Recuse com firmeza qualquer oferta de drogas; as penas são muito duras."
+    ],
+    "emergencyNumbers": {
+     "police": "211",
+     "ambulance": "511",
+     "general": "211"
+    }
+   },
+   "internet": {
+    "networkCoverage": "4G/LTE em quase toda a ilha e 5G nas cidades",
+    "costPerGbUsd": "~US$ 3,00 - 6,00",
+    "esimAvailability": "Excelente (planos de eSIM internacionais funcionam sem problemas)",
+    "bestCarriers": [
+     "Digicel",
+     "Flow",
+     "Airalo / Holafly eSIM"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Boa (rede de ônibus densa, micro-ônibus e vans ZR)",
+    "costLevel": "Caro",
+    "singleTicketUsd": "US$ 1,75 (tarifa única de BBD 3,50 no ônibus)",
+    "dailyPassUsd": "Não existe (tarifa única por viagem)",
+    "popularRideApps": [
+     "Sem Uber / Bolt",
+     "Táxis licenciados (placa “Z”)",
+     "Ônibus do Transport Board e micro-ônibus ZR"
+    ],
+    "taxiAdvice": "Uber e Bolt não operam. Os táxis não têm taxímetro; use táxis licenciados com placa “Z” e combine o preço antes de entrar. Os ônibus azuis do governo, os micro-ônibus amarelos particulares e as vans brancas ZR percorrem a ilha toda por uma tarifa única de BBD 3,50 (nem sempre têm troco). Para alugar carro é preciso uma licença temporária; a mão é inglesa (dirige-se pela esquerda)."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 80 - 120",
+    "dailyBudgetMidrangeUsd": "US$ 180 - 300",
+    "budgetMealUsd": "US$ 12 - 20",
+    "coffeeUsd": "US$ 3,00 - 5,00",
+    "waterBottleUsd": "US$ 1,50 - 2,50",
+    "hostelDormUsd": "US$ 35 - 60",
+    "hotel3StarUsd": "US$ 150 - 280",
+    "flightCostIndex": "Alto (sem voos diretos da Turquia nem da Espanha)",
+    "flightTip": "Para chegar a Barbados (BGI), normalmente se faz conexão em Londres (British Airways, Virgin Atlantic) ou Frankfurt (Condor, sazonal); as tarifas sobem de dezembro a abril."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Dizer “Good morning / Good afternoon” ao entrar em qualquer lugar é a cortesia básica.",
+     "Andar por Bridgetown ou entrar em lojas usando roupa de banho é malvisto.",
+     "Roupas camufladas são proibidas para civis."
+    ],
+    "festivals": [
+     "Festival Crop Over (junho – agosto; encerramento com o Grand Kadooment na primeira segunda-feira de agosto)",
+     "Festival de Holetown (fevereiro)",
+     "Festival do Peixe de Oistins (fim de semana de Páscoa)"
+    ],
+    "lifestyle": "O críquete, os rum shops, o “pudding and souse” dos sábados e a festa do peixe de Oistins nas noites de sexta são parte essencial da vida local."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Harrison’s Cave (caverna de estalactites)",
+     "Bathsheba e o litoral do Soup Bowl",
+     "Bridgetown histórica e seu Garrison (UNESCO)",
+     "Carlisle Bay (naufrágios e tartarugas marinhas)",
+     "St. Nicholas Abbey (mansão do século XVII e destilaria de rum)",
+     "Fish Fry das sextas-feiras em Oistins"
+    ],
+    "bestSeasons": "Dezembro a abril",
+    "travelStyleTip": "A ilha é pequena (~34 km); hospede-se na costa sul ou oeste e chegue a todos os lugares em bate-voltas de ônibus com tarifa única ou de carro alugado."
+   },
+   "religion": {
+    "primaryReligions": "Cristãos ~75 % (anglicanos ~24 %, pentecostais ~20 %, adventistas ~6 %, metodistas e católicos), sem religião ~21 %; pequenas comunidades muçulmana, hindu e judaica",
+    "respectNorms": "Entre em igrejas e na sinagoga com ombros e joelhos cobertos; faça silêncio durante os cultos de domingo.",
+    "sacredSites": [
+     "Catedral de St. Michael (Bridgetown)",
+     "Sinagoga e museu Nidhe Israel (Bridgetown)",
+     "Igreja paroquial de St. John (com vista para a costa leste)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "O inglês é a língua oficial; no dia a dia fala-se o “bajan”, um crioulo de base inglesa.",
+    "englishProficiency": "Excelente; todo mundo fala inglês e você se acostuma rápido com o sotaque bajan.",
+    "phrases": [
+     {
+      "phrase": "Good mornin’",
+      "meaning": "Bom dia (cumprimente sempre ao entrar)",
+      "translation": "Bom dia",
+      "pronunciation": "gud MOR-nin"
+     },
+     {
+      "phrase": "Wuh gine on?",
+      "meaning": "E aí? / Tudo bem?",
+      "translation": "Tudo certo?",
+      "pronunciation": "wuh GINE on"
+     },
+     {
+      "phrase": "Cheese on bread!",
+      "meaning": "Incrível! (exclamação de surpresa)",
+      "translation": "Nossa senhora!",
+      "pronunciation": "CHEEZ on BRED"
+     },
+     {
+      "phrase": "Leh we go lime",
+      "meaning": "Vamos passar um tempo juntos",
+      "translation": "Bora curtir",
+      "pronunciation": "leh wee go LIME"
+     },
+     {
+      "phrase": "Tanks, wunna",
+      "meaning": "Obrigado a todos",
+      "translation": "Obrigado a todos",
+      "pronunciation": "TANKS WUN-na"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Já abandonada pelos povos indígenas, a ilha foi colonizada pelos ingleses em Holetown em 1627; enriquecida com as plantações de açúcar e a mão de obra escravizada, viveu a rebelião de Bussa em 1816. A escravidão foi abolida em 1834, Barbados se tornou independente em 30 de novembro de 1966 e virou república em 30 de novembro de 2021.",
+    "milestones": [
+     "1627: os ingleses se estabelecem em Holetown",
+     "1816: rebelião de Bussa",
+     "1966: independência (30 de novembro)",
+     "2021: proclamação da república"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Cou-cou com peixe-voador (prato nacional)",
+     "Macaroni pie (macarrão gratinado com queijo)",
+     "Pudding and souse (batata-doce e porco em conserva, prato de sábado)"
+    ],
+    "traditionalDrinks": [
+     "Rum Mount Gay e ponche de rum",
+     "Cerveja Banks",
+     "Mauby (bebida agridoce feita de casca de árvore)"
+    ],
+    "streetFoodAndDesserts": [
+     "Fish cakes (bolinhos picantes de bacalhau)",
+     "Flying fish cutter (sanduíche de peixe-voador)",
+     "Conkies (doce de fubá do mês da Independência)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Rihanna (cantora de fama mundial)",
+     "Sir Garfield Sobers (lendário jogador de críquete)",
+     "Errol Barrow (pai da independência, primeiro primeiro-ministro)"
+    ],
+    "strongSectors": [
+     "Turismo",
+     "Negócios internacionais e serviços financeiros",
+     "Produção de rum (Mount Gay, desde 1703)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Cartões são aceitos em quase todo lugar; o dólar americano também (câmbio fixo de 1 US$ = 2 BBD), mas o troco costuma vir em BBD. Leve moedas de BBD para ônibus e barracas de comida.",
+    "tippingCulture": "As contas costumam incluir 10 % de serviço; se não incluírem, espera-se 10-15 %.",
+    "economicPillars": "Turismo, serviços financeiros internacionais, rum e indústria leve."
+   }
+  },
+  "itin": {
+   "routeName": "Volta por Barbados: costa sul, Bridgetown, costa oeste e costa leste",
+   "routeSummary": "Um roteiro de 7 dias pela ilha, da festa do peixe de Oistins a Bridgetown, Patrimônio da UNESCO, passando pela costa oeste das tartarugas até as ondas selvagens de Bathsheba.",
+   "totalDays": 7,
+   "idealDurationText": "Roteiro de 7 dias",
+   "bestSeason": "Dezembro a abril",
+   "transportMode": "Ônibus de tarifa única e micro-ônibus ZR + carro alugado ou táxi para os passeios",
+   "paceLevel": "Tranquilo (praia + cultura + natureza)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Costa sul e Oistins (praias e Fish Fry)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Fish Fry das sextas-feiras em Oistins",
+      "Miami Beach (Enterprise)",
+      "Accra Beach",
+      "Vida noturna de St. Lawrence Gap"
+     ],
+     "activities": [
+      "Coma peixe grelhado e dance ao som de música local em Oistins na sexta à noite.",
+      "Experimente windsurfe ou kitesurfe em Silver Sands.",
+      "Nade no lado tranquilo de Miami Beach."
+     ],
+     "foodAndDrinks": [
+      "Mahi mahi e peixe-espada grelhados",
+      "Macaroni pie",
+      "Cerveja Banks"
+     ],
+     "criticalTips": [
+      "Não leve objetos de valor a St. Lawrence Gap à noite.",
+      "Oistins fica muito cheio; chegue cedo para conseguir mesa."
+     ],
+     "mapsQuery": "Oistins, Christ Church, Barbados"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Bridgetown e o Garrison (capital histórica)",
+     "recommendedDuration": "1 dia",
+     "durationBadge": "1 dia",
+     "highlights": [
+      "Prédios do Parlamento e National Heroes Square",
+      "Garrison Savannah e George Washington House",
+      "Sinagoga Nidhe Israel",
+      "Naufrágios de Carlisle Bay"
+     ],
+     "activities": [
+      "Percorra a pé o centro histórico tombado pela UNESCO e a área do Garrison.",
+      "Faça snorkel sobre naufrágios e com tartarugas em Carlisle Bay.",
+      "Participe de uma degustação de rum no Mount Gay Visitor Centre."
+     ],
+     "foodAndDrinks": [
+      "Cou-cou com peixe-voador",
+      "Fish cakes",
+      "Ponche de rum Mount Gay"
+     ],
+     "criticalTips": [
+      "Aos domingos quase todas as lojas fecham.",
+      "Leve o passaporte para as compras duty-free na Broad Street."
+     ],
+     "mapsQuery": "Bridgetown, Barbados"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Costa oeste: Holetown e Speightstown (Costa de Platina)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Parque Marinho Folkestone",
+      "Mullins Beach",
+      "Holetown histórica e igreja paroquial de St. James",
+      "Museu Arlington House, Speightstown"
+     ],
+     "activities": [
+      "Nade com tartarugas marinhas em um passeio de barco.",
+      "Assista ao pôr do sol em Mullins Beach.",
+      "Explore as ruas do antigo porto de Speightstown."
+     ],
+     "foodAndDrinks": [
+      "Flying fish cutter",
+      "Lagosta fresca",
+      "Ponche de rum"
+     ],
+     "criticalTips": [
+      "Não toque nem alimente as tartarugas.",
+      "A costa oeste é de luxo; para economizar, coma nos rum shops locais."
+     ],
+     "mapsQuery": "Holetown, Saint James, Barbados"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Costa leste e interior: Bathsheba (costa atlântica selvagem)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Bathsheba e a onda do Soup Bowl",
+      "Harrison’s Cave",
+      "St. Nicholas Abbey e Cherry Tree Hill",
+      "Andromeda Botanic Gardens e Hunte’s Gardens"
+     ],
+     "activities": [
+      "Percorra a Harrison’s Cave no trenzinho.",
+      "Visite a mansão do século XVII de St. Nicholas Abbey e prove o rum da casa.",
+      "Fotografe as enormes rochas de Bathsheba."
+     ],
+     "foodAndDrinks": [
+      "Pudding and souse",
+      "Bajan sweet bread"
+     ],
+     "criticalTips": [
+      "Na costa leste as correntes são muito fortes; não nade, refresque-se só em piscinas naturais rasas.",
+      "Escolha um dia de mar calmo para a Animal Flower Cave, no norte."
+     ],
+     "mapsQuery": "Bathsheba, Saint Joseph, Barbados"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Cou-cou com peixe-voador (prato nacional)",
+     "Macaroni pie (macarrão gratinado com queijo)",
+     "Pudding and souse (batata-doce e porco em conserva, prato de sábado)"
+    ],
+    "drinks": [
+     "Rum Mount Gay e ponche de rum",
+     "Cerveja Banks",
+     "Mauby (bebida agridoce feita de casca de árvore)"
+    ],
+    "streetFoods": [
+     "Fish cakes (bolinhos picantes de bacalhau)",
+     "Flying fish cutter (sanduíche de peixe-voador)",
+     "Conkies (doce de fubá do mês da Independência)"
+    ],
+    "diningAdvice": "No sábado é dia de “pudding and souse” e, na sexta à noite, da festa do peixe de Oistins. Confira se a conta já inclui serviço e os 17,5 % de IVA."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptador de tomada tipo A/B (115V; aparelhos bivolt)",
+     "Protetor solar seguro para recifes",
+     "Equipamento de snorkel",
+     "Repelente de mosquitos"
+    ],
+    "safetyAndEtiquette": [
+     "Não use roupa camuflada; é ilegal.",
+     "Não ande pela cidade nem entre em lojas usando roupa de banho."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "A",
+     "B"
+    ],
+    "voltage": "115V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Tipos A e B (pinos chatos, padrão americano), 115V / 50Hz. Plugues europeus precisam de adaptador; aparelhos só de 230V (alguns secadores) precisam de conversor."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "A água da torneira é potável; a água subterrânea filtrada pelo calcário coralino está entre as melhores da região.",
+    "vaccines": [
+     "Vacinas de rotina (tétano, difteria, tríplice viral)",
+     "Hepatite A",
+     "Febre amarela: certificado só se você chegar de um país de risco",
+     "Cuidados contra mosquitos por causa da dengue"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "511"
+   },
+   "tipping": {
+    "custom": "Os restaurantes costumam incluir 10 % de serviço; se não incluírem, deixe 10-15 %.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Espera-se uma pequena gorjeta para taxistas e funcionários do hotel."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA de 17,5 %; sem restituição para turistas",
+    "minSpend": "Não se aplica",
+    "customsNote": "Não há restituição do IVA, mas as lojas duty-free de Bridgetown e do aeroporto vendem sem impostos mediante apresentação do passaporte e da passagem (alguns itens são entregues no aeroporto)."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "~US$ 3,00 - 6,00",
+    "topCarriers": [
+     "Digicel",
+     "Flow"
+    ],
+    "airportSimTrapWarning": "Os pacotes de chip no aeroporto podem sair caros; instale um eSIM ou compre um chip turístico em uma loja da Digicel ou da Flow em Bridgetown."
+   },
+   "touristScams": [
+    {
+     "title": "Táxi sem licença",
+     "desc": "Carros sem placa “Z” se passam por táxis e cobram a mais.",
+     "tip": "Use só táxis com placa “Z” e combine o preço antes."
+    },
+    {
+     "title": "Ofertas dos beach boys",
+     "desc": "Nas praias oferecem jet ski, passeios ou drogas, cobram um adiantamento e desaparecem.",
+     "tip": "Escolha operadores registrados e recuse ofertas de drogas."
+    },
+    {
+     "title": "Tarifa de táxi não combinada",
+     "desc": "Sem taxímetro, na chegada cobram um preço alto.",
+     "tip": "Combine a tarifa antes de entrar ou pergunte no seu hotel."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Барбадосский доллар (BBD)",

@@ -1431,6 +1431,364 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Peso dominicano (DOP)",
+   "plugType": "Tipo A, B (120V, 60Hz)",
+   "bestMonths": "Dezembro – abril (seco e menos úmido); temporada das baleias-jubarte em Samaná de janeiro a março; de junho a novembro é época de furacões, principalmente de agosto a outubro",
+   "safety": {
+    "crimeRateSummary": "Os resorts costumam ser seguros, mas em Santo Domingo e em algumas áreas turísticas são comuns assaltos, roubos por motoqueiros e furtos. A taxa de mortes no trânsito está entre as mais altas da região, então dirigir à noite é arriscado. Cuidado com bebidas alcoólicas de origem duvidosa.",
+    "commonScams": [
+     "Motoqueiros que arrancam celulares e bolsas das mãos em Santo Domingo",
+     "Vendedores de passeios sem licença na praia e aluguel de jet ski que cobra por danos falsos",
+     "Clonagem de cartões em caixas eletrônicos e alguns estabelecimentos"
+    ],
+    "safeTravelTips": [
+     "Use Uber ou táxis chamados pelo hotel e evite os mototáxis (motoconchos).",
+     "Reserve passeios com operadoras autorizadas ou pelo hotel e não pague adiantado a vendedores de praia.",
+     "Beba só bebidas lacradas e de marca, e não dirija entre cidades à noite."
+    ],
+    "emergencyNumbers": {
+     "police": "911",
+     "ambulance": "911",
+     "general": "911"
+    },
+    "safetyScore": 55,
+    "safetyLevel": "Risco moderado",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60"
+   },
+   "internet": {
+    "networkCoverage": "4G bom nas cidades e áreas turísticas (5G limitado); a cobertura cai no interior montanhoso",
+    "costPerGbUsd": "~US$ 1 - 2",
+    "esimAvailability": "Boa",
+    "bestCarriers": [
+     "Claro",
+     "Altice",
+     "Viva"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Regular (metrô e teleférico em Santo Domingo; ônibus confortáveis da Caribe Tours e da Metro Tours; as guaguas locais andam lotadas e sem horário fixo)",
+    "costLevel": "Barato a moderado",
+    "singleTicketUsd": "0.35 - 0.60 $ (metrô de Santo Domingo)",
+    "dailyPassUsd": "Não há passe diário; ~3 - 8 $ por dia na cidade (com Uber)",
+    "popularRideApps": [
+     "Uber",
+     "inDrive",
+     "Apolo Taxi"
+    ],
+    "taxiAdvice": "O Uber funciona em Santo Domingo, Santiago e Punta Cana. Nas áreas turísticas os táxis não têm taxímetro e cobram tarifas fixas: pergunte o preço antes de entrar. No aeroporto de Punta Cana, use o ponto oficial ou um traslado reservado."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 35 - 55",
+    "dailyBudgetMidrangeUsd": "US$ 90 - 150",
+    "budgetMealUsd": "5 - 10 $ (prato do dia / comedor)",
+    "coffeeUsd": "US$ 1,50 - 3",
+    "waterBottleUsd": "US$ 0,50 - 1",
+    "hostelDormUsd": "US$ 15 - 30",
+    "hotel3StarUsd": "50 - 100 $ (os all-inclusive custam mais)",
+    "flightCostIndex": "Alto (~15-18 h com escala)",
+    "flightTip": "Não há voos diretos da Turquia; compare conexões para Santo Domingo e Punta Cana via Madri (Iberia, Air Europa), Paris ou Frankfurt. No inverno também há voos fretados da Europa para Punta Cana."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Cumprimentar todo mundo com um “Buenos días” ao entrar é importante; os dominicanos são muito calorosos e bons de papo.",
+     "Não ande de roupa de banho pela cidade nem em igrejas; nas igrejas, cubra ombros e joelhos.",
+     "Ser convidado para dançar merengue ou bachata é um gesto amigável; aceite ou recuse com gentileza."
+    ],
+    "festivals": [
+     "Carnaval (fevereiro; La Vega e Santo Domingo)",
+     "Dia da Independência (27 de fevereiro)",
+     "Festival do Merengue (verão, Santo Domingo)"
+    ],
+    "lifestyle": "A música (merengue, bachata) está em toda parte; a paixão pelo beisebol, as conversas na frente do colmado (mercadinho de bairro), o dominó e os encontros de família são o centro da vida cotidiana."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Zona Colonial de Santo Domingo (UNESCO)",
+     "Praias de Punta Cana e Bávaro",
+     "Península de Samaná e Las Terrenas",
+     "Ilha Saona",
+     "27 Charcos de Damajagua (Puerto Plata)",
+     "Parque Nacional Los Haitises"
+    ],
+    "bestSeasons": "De dezembro a abril o tempo é seco e ensolarado; de janeiro a março é a época ideal para ver baleias em Samaná. O verão é quente e úmido, com maior risco de furacões de agosto a outubro.",
+    "travelStyleTip": "Não fique só no resort: inclua o centro histórico de Santo Domingo e a natureza de Samaná. Os ônibus da Caribe Tours são confiáveis; se alugar carro, não dirija à noite por causa do trânsito caótico."
+   },
+   "religion": {
+    "primaryReligions": "Católicos ~50 %, evangélicos ~20-25 %, sem religião ~20 % (aproximado, segundo pesquisas)",
+    "respectNorms": "Vista-se de forma discreta nas igrejas e fique em silêncio durante a missa; na Semana Santa a venda de bebidas alcoólicas pode ser restrita em muitos lugares.",
+    "sacredSites": [
+     "Catedral Primada da América (Santo Domingo)",
+     "Basílica de Nossa Senhora da Altagracia (Higüey)",
+     "Santuário do Santo Cerro (La Vega)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Espanhol (dominicano, rápido e com gírias próprias)",
+    "englishProficiency": "Bom nos resorts de Punta Cana, razoável em Santo Domingo e limitado no resto do país.",
+    "phrases": [
+     {
+      "phrase": "¿Qué lo que?",
+      "meaning": "E aí, tudo bem? (expressão dominicana)",
+      "translation": "E aí, tudo bem? (expressão dominicana)",
+      "pronunciation": "keh loh KEH"
+     },
+     {
+      "phrase": "Tato",
+      "meaning": "Tá bom / Tudo certo",
+      "translation": "Tá bom / Tudo certo",
+      "pronunciation": "TAH-toh"
+     },
+     {
+      "phrase": "¿Cuánto cuesta?",
+      "meaning": "Quanto custa?",
+      "translation": "Quanto custa?",
+      "pronunciation": "KWAN-toh KWES-tah"
+     },
+     {
+      "phrase": "La cuenta, por favor",
+      "meaning": "A conta, por favor",
+      "translation": "A conta, por favor",
+      "pronunciation": "lah KWEN-tah por fah-VOR"
+     },
+     {
+      "phrase": "¡Qué chévere!",
+      "meaning": "Que legal!",
+      "translation": "Que legal!",
+      "pronunciation": "keh CHEH-veh-reh"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Colombo chegou em 1492 a La Española (Hispaniola), terra dos taínos; Santo Domingo, fundada em 1496, foi a primeira cidade europeia permanente das Américas. Sob domínio haitiano entre 1822 e 1844, o país proclamou sua independência em 27 de fevereiro de 1844 e venceu a Guerra da Restauração contra o breve domínio espanhol em 1865.",
+    "milestones": [
+     "1492: Colombo chega a La Española (Hispaniola)",
+     "1496: fundação de Santo Domingo",
+     "1844: proclamação da independência (27 de fevereiro)",
+     "1865: vitória na Guerra da Restauração"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "La Bandera dominicana",
+     "Sancocho",
+     "Mangú con los tres golpes"
+    ],
+    "traditionalDrinks": [
+     "Morir soñando",
+     "Café dominicano",
+     "Mamajuana (alcoólica)"
+    ],
+    "streetFoodAndDesserts": [
+     "Chimi",
+     "Yaniqueques",
+     "Habichuelas con dulce"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Juan Luis Guerra (músico)",
+     "Oscar de la Renta (estilista)",
+     "Julia Álvarez (escritora)"
+    ],
+    "strongSectors": [
+     "Turismo (um dos países mais visitados do Caribe)",
+     "Zonas francas e exportação de charutos",
+     "Mineração de ouro"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Nas áreas turísticas e nas cidades o cartão é aceito; leve pesos em espécie para colmados, guaguas e pequenos comércios. Em lugares turísticos aceitam dólares, normalmente com câmbio ruim.",
+    "tippingCulture": "Por lei, a conta inclui 10 % de serviço mais 18 % de ITBIS; por um bom atendimento, espera-se ainda uma gorjeta de 5-10 %.",
+    "economicPillars": "Turismo, remessas de emigrantes, exportações das zonas francas, mineração e agricultura (cacau, banana, tabaco)."
+   }
+  },
+  "itin": {
+   "routeName": "Roteiro dominicano: Santo Domingo, Samaná e Punta Cana",
+   "routeSummary": "Um roteiro de 8 dias que sai de Santo Domingo, a primeira cidade colonial das Américas, passa pelas baleias, cachoeiras e praias tranquilas da península de Samaná e termina nas areias brancas de Punta Cana, com passeio à Ilha Saona.",
+   "totalDays": 8,
+   "idealDurationText": "Roteiro de 8 dias",
+   "bestSeason": "Dezembro – abril (janeiro – março para ver baleias)",
+   "transportMode": "Ônibus Caribe Tours ou carro alugado (Santo Domingo – Samaná) + traslado privado (Samaná – Punta Cana via Miches) + Uber",
+   "paceLevel": "Tranquilo (praia, natureza e cultura)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Santo Domingo (Zona Colonial)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Catedral Primada da América",
+      "Alcázar de Colón e Plaza de España",
+      "Calle El Conde",
+      "Los Tres Ojos"
+     ],
+     "activities": [
+      "Faça um tour guiado pelas ruas de pedra da Zona Colonial.",
+      "Explore os lagos subterrâneos de Los Tres Ojos.",
+      "No domingo à tarde, vá ao show de son e merengue nas Ruínas de San Francisco."
+     ],
+     "foodAndDrinks": [
+      "La Bandera",
+      "Mangú",
+      "Morir soñando"
+     ],
+     "criticalTips": [
+      "À noite, não saia das ruas principais da Zona Colonial e segure bem o celular por causa dos motoqueiros.",
+      "Ande de Uber; o trânsito é pesado e caótico."
+     ],
+     "mapsQuery": "Zona Colonial, Santo Domingo, República Dominicana"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Península de Samaná e Las Terrenas",
+     "recommendedDuration": "3 dias",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Observação de baleias-jubarte na baía de Samaná (janeiro – março)",
+      "Cachoeira El Limón",
+      "Praia Rincón",
+      "Cavernas e manguezais do Parque Nacional Los Haitises"
+     ],
+     "activities": [
+      "Faça um passeio de observação de baleias com uma operadora certificada.",
+      "Chegue à Cachoeira El Limón a pé ou a cavalo.",
+      "Vá de barco até as cavernas de Los Haitises e Cayo Levantado."
+     ],
+     "foodAndDrinks": [
+      "Peixe ao coco (pescado con coco)",
+      "Água de coco fresca"
+     ],
+     "criticalTips": [
+      "Escolha barcos autorizados que respeitem as regras de aproximação das baleias.",
+      "Não dirija à noite pelas estradas estreitas da península."
+     ],
+     "mapsQuery": "Las Terrenas, Samaná, República Dominicana"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Punta Cana e Bávaro",
+     "recommendedDuration": "3 dias",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Praia Bávaro",
+      "Ilha Saona (Parque Nacional Cotubanamá)",
+      "Hoyo Azul",
+      "Altos de Chavón (La Romana)"
+     ],
+     "activities": [
+      "Faça um passeio de catamarã até a Ilha Saona.",
+      "Nade nas águas turquesa do Hoyo Azul.",
+      "Faça snorkel no recife."
+     ],
+     "foodAndDrinks": [
+      "Peixe frito com tostones numa barraca de praia",
+      "Mamajuana (alcoólica)"
+     ],
+     "criticalTips": [
+      "Reserve com operadoras autorizadas, e não com vendedores de praia; se alugar jet ski, fotografe-o antes.",
+      "Na primavera e no verão pode chegar sargaço; pergunte no hotel como está a situação."
+     ],
+     "mapsQuery": "Bávaro, Punta Cana, República Dominicana"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "La Bandera",
+     "Sancocho",
+     "Peixe ao coco (pescado con coco)"
+    ],
+    "drinks": [
+     "Morir soñando",
+     "Água de coco",
+     "Mamajuana (alcoólica)"
+    ],
+    "streetFoods": [
+     "Chimi",
+     "Empanadas",
+     "Yaniqueques"
+    ],
+    "diningAdvice": "O almoço é a refeição principal, e o prato do dia nos comedores é muito barato. A conta inclui 10 % de serviço e 18 % de ITBIS; lembre que o salame e o torresmo (chicharrón) podem levar carne de porco."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptador tipo A/B (confira se seu aparelho aceita 100-240 V)",
+     "Protetor solar com FPS alto e que não agrida os recifes",
+     "Repelente de mosquitos (risco de dengue)",
+     "Roupas que cubram o corpo para a cidade e as igrejas"
+    ],
+    "safetyAndEtiquette": [
+     "Use Uber ou táxis oficiais e não viaje entre cidades à noite.",
+     "Não ande pela cidade com roupa de praia e cumprimente as pessoas ao entrar."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "A",
+     "B"
+    ],
+    "voltage": "120V",
+    "frequency": "60Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Tomadas norte-americanas de pinos chatos (tipo B com aterramento). Plugues turcos precisam de adaptador; com 120 V, use só aparelhos de 100-240 V. Pode haver quedas de energia; os hotéis grandes têm gerador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Não beba água da torneira; use água engarrafada ou de galão. Os resorts usam água purificada para beber e para o gelo.",
+    "vaccines": [
+     "Vacinas de rotina (difteria e tétano, tríplice viral)",
+     "Recomendam-se hepatite A e febre tifoide",
+     "Proteção contra mosquitos por causa da dengue"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "911"
+   },
+   "tipping": {
+    "custom": "Por lei, a conta inclui 10 % de serviço; por um bom atendimento, deixe mais 5-10 %.",
+    "standardPercent": 10,
+    "rule": "mandatory",
+    "note": "A conta mostra separadamente os 10 % de serviço e os 18 % de ITBIS. Nos all-inclusive, pequenas gorjetas para camareiras e bartenders são bem-vindas."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Não há (o ITBIS de 18 % não é reembolsado)",
+    "minSpend": "Não se aplica",
+    "customsNote": "A República Dominicana não reembolsa o ITBIS a turistas. Para compras sem impostos, use as lojas duty-free do aeroporto e confira os limites alfandegários do seu país ao comprar charutos e rum."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 1 - 2",
+    "topCarriers": [
+     "Claro",
+     "Altice",
+     "Viva"
+    ],
+    "airportSimTrapWarning": "Os chips vendidos no aeroporto de Punta Cana e nos resorts são caros; compre uma linha pré-paga com passaporte nas lojas da Claro ou da Altice na cidade ou configure uma eSIM antes de viajar."
+   },
+   "touristScams": [
+    {
+     "title": "Roubos por motoqueiros",
+     "desc": "Em Santo Domingo, motoqueiros miram quem anda com o celular na mão ou a bolsa do lado da calçada.",
+     "tip": "Não use o celular na rua e leve a bolsa atravessada no corpo, do lado da parede."
+    },
+    {
+     "title": "Golpe do jet ski",
+     "desc": "Ao devolver o jet ski, cobram valores altos por danos que já existiam.",
+     "tip": "Contrate esportes aquáticos pelo hotel ou por uma empresa autorizada e fotografe o equipamento antes."
+    },
+    {
+     "title": "Clonagem de cartões",
+     "desc": "Os dados são copiados com dispositivos em caixas eletrônicos de rua ou quando levam o cartão para longe da sua vista.",
+     "tip": "Use caixas eletrônicos dentro de bancos ou shoppings e não perca o cartão de vista."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Доминиканское песо (DOP)",

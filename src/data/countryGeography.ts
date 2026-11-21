@@ -645,13 +645,13 @@ export const CURATED_GEOGRAPHY: Record<string, CuratedGeographyItem> = {
  */
 /** Saat dilimi ve priz açıklamalarındaki Türkçe ifadeleri sayfa diline çevirir. */
 const GEO_TEXT: Record<string, Record<string, string>> = {
-  'Yazın ': { en: 'summer ', de: 'Sommer ', es: 'verano ', ru: 'летом ' },
-  'Brasília Saati': { en: 'Brasília Time', de: 'Brasília-Zeit', es: 'hora de Brasilia', ru: 'время Бразилиа' },
-  ' ile ': { en: ' to ', de: ' bis ', es: ' a ', ru: ' до ' },
-  ' arası (Doğu/Pasifik)': { en: ' (Eastern/Pacific)', de: ' (Ost/Pazifik)', es: ' (Este/Pacífico)', ru: ' (восток/Тихоокеанское)' },
-  '3 uçlu İngiliz prizi': { en: 'British 3-pin socket', de: 'britischer 3-poliger Stecker', es: 'enchufe británico de 3 clavijas', ru: 'британская розетка с 3 штырями' },
-  'İngiliz tipi 3 uçlu': { en: 'British-style 3-pin', de: 'britischer Typ, 3-polig', es: 'tipo británico de 3 clavijas', ru: 'британский тип, 3 штыря' },
-  'İsviçre 3 uçlu prizi': { en: 'Swiss 3-pin socket', de: 'Schweizer 3-poliger Stecker', es: 'enchufe suizo de 3 clavijas', ru: 'швейцарская розетка с 3 штырями' }
+  'Yazın ': { en: 'summer ', de: 'Sommer ', es: 'verano ', pt: 'verão ', ru: 'летом ' },
+  'Brasília Saati': { en: 'Brasília Time', de: 'Brasília-Zeit', es: 'hora de Brasilia', pt: 'horário de Brasília', ru: 'время Бразилиа' },
+  ' ile ': { en: ' to ', de: ' bis ', es: ' a ', pt: ' a ', ru: ' до ' },
+  ' arası (Doğu/Pasifik)': { en: ' (Eastern/Pacific)', de: ' (Ost/Pazifik)', es: ' (Este/Pacífico)', pt: ' (Leste/Pacífico)', ru: ' (восток/Тихоокеанское)' },
+  '3 uçlu İngiliz prizi': { en: 'British 3-pin socket', de: 'britischer 3-poliger Stecker', es: 'enchufe británico de 3 clavijas', pt: 'tomada britânica de 3 pinos', ru: 'британская розетка с 3 штырями' },
+  'İngiliz tipi 3 uçlu': { en: 'British-style 3-pin', de: 'britischer Typ, 3-polig', es: 'tipo británico de 3 clavijas', pt: 'tipo britânico de 3 pinos', ru: 'британский тип, 3 штыря' },
+  'İsviçre 3 uçlu prizi': { en: 'Swiss 3-pin socket', de: 'Schweizer 3-poliger Stecker', es: 'enchufe suizo de 3 clavijas', pt: 'tomada suíça de 3 pinos', ru: 'швейцарская розетка с 3 штырями' }
 };
 function intlCurrency(code: string, lang: string): string {
   try {
@@ -673,7 +673,7 @@ export function getCountryGeography(countryCode: string, lang: string = 'tr'): C
   const countryName = getCountryName(code, lang);
   const geo = GEO_DATA[code];
   const curated = CURATED_GEOGRAPHY[code];
-  const capital = geo ? capitalName(code, lang, geo.capital) : (lang === 'de' ? 'Hauptstadt' : lang === 'es' ? 'Capital' : lang === 'ru' ? 'Столица' : lang === 'tr' ? 'Başkent' : 'Capital');
+  const capital = geo ? capitalName(code, lang, geo.capital) : (lang === 'de' ? 'Hauptstadt' : lang === 'es' ? 'Capital' : lang === 'pt' ? 'Capital' : lang === 'ru' ? 'Столица' : lang === 'tr' ? 'Başkent' : 'Capital');
 
   if (curated) {
     const tField = (obj: { tr: string; en: string; de: string }): string => {
@@ -959,6 +959,7 @@ function getRegionalGeographyDefaults(code: string, capital: string, countryName
   const isTr = lang === 'tr';
   const isDe = lang === 'de';
   const isEs = lang === 'es';
+  const isPt = lang === 'pt';
   const isRu = lang === 'ru';
   // Gerçek veri: başkent + nüfusça büyük şehirler; turistik bölge olarak en çok aranan yerler.
   // Veri yoksa doldurma metni üretmek yerine bölüm boş kalır (sayfa gizler).
@@ -991,7 +992,7 @@ function getRegionalGeographyDefaults(code: string, capital: string, countryName
     majorCities: realCities,
     touristRegions: realRegions,
     currencyCode: isEuro ? 'EUR' : `${code}D`,
-    currencyName: isEuro ? (isRu ? 'Евро' : 'Euro') : `${countryName} ${isDe ? 'Landeswährung' : isEs ? 'Moneda Nacional' : isRu ? 'Национальная валюта' : isTr ? 'Milli Para Birimi' : 'National Currency'}`,
+    currencyName: isEuro ? (isRu ? 'Евро' : 'Euro') : `${countryName} ${isDe ? 'Landeswährung' : isEs ? 'Moneda Nacional' : isPt ? 'Moeda nacional' : isRu ? 'Национальная валюта' : isTr ? 'Milli Para Birimi' : 'National Currency'}`,
     currencySymbol: isEuro ? '€' : '$',
     timeZone: 'UTC+1 - UTC+3',
     callingCode: '+..',

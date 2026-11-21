@@ -1519,6 +1519,386 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Lempira hondurenha (HNL)",
+   "plugType": "Tipo A, B (120V, 60Hz)",
+   "bestMonths": "Fevereiro – maio (seco no continente e chuvas diminuindo nas Ilhas da Baía); de junho a novembro há furacões e de outubro a janeiro chove nas ilhas",
+   "safety": {
+    "safetyScore": 40,
+    "safetyLevel": "Recomenda-se cautela",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60",
+    "crimeRateSummary": "Alguns bairros de San Pedro Sula e Tegucigalpa estão entre as áreas urbanas mais perigosas do mundo por causa da violência de gangues e dos assaltos à mão armada; os alertas oficiais recomendam reconsiderar a viagem. Áreas turísticas como Copán Ruinas e as Ilhas da Baía são relativamente tranquilas.",
+    "commonScams": [
+     "Assaltos ou tarifas infladas em táxis parados na rua",
+     "Furtos por arrastão em rodoviárias e mercados lotados",
+     "Clonagem de cartões em caixas eletrônicos"
+    ],
+    "safeTravelTips": [
+     "Evite dormir em San Pedro Sula e Tegucigalpa; se puder, faça a conexão direto.",
+     "Entre cidades, use ônibus executivos como os da Hedman Alas ou shuttles.",
+     "Não exiba objetos de valor e nunca reaja a um assalto."
+    ],
+    "emergencyNumbers": {
+     "police": "911",
+     "ambulance": "195",
+     "general": "911"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Bom 4G nas cidades e áreas turísticas; fraco em La Mosquitia e nas áreas rurais de montanha",
+    "costPerGbUsd": "~US$ 1,00 - 3,00",
+    "esimAvailability": "Boa",
+    "bestCarriers": [
+     "Tigo",
+     "Claro"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Limitado",
+    "costLevel": "Barato",
+    "singleTicketUsd": "US$ 0,50 - 1,50",
+    "dailyPassUsd": "US$ 10 - 25",
+    "popularRideApps": [
+     "Uber",
+     "inDrive"
+    ],
+    "taxiAdvice": "Em Tegucigalpa e San Pedro Sula, Uber e inDrive são as opções seguras; não pegue táxi na rua. Em Copán e nas ilhas, mototáxis e táxis coletivos são baratos; combine o preço antes."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 35 - 55",
+    "dailyBudgetMidrangeUsd": "US$ 80 - 140",
+    "budgetMealUsd": "US$ 4 - 9",
+    "coffeeUsd": "US$ 1,50 - 3,50",
+    "waterBottleUsd": "US$ 0,50 - 1,00",
+    "hostelDormUsd": "US$ 12 - 25",
+    "hotel3StarUsd": "US$ 50 - 110",
+    "flightCostIndex": "Médio-alto",
+    "flightTip": "Não há voos diretos da Turquia; faça conexão em Miami, Houston ou Madri para San Pedro Sula, Tegucigalpa (Palmerola) ou direto para Roatán."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "“Buenas” é um cumprimento comum; cumprimente ao entrar nas lojas.",
+     "Peça permissão antes de fotografar nas comunidades garífunas.",
+     "Faça silêncio e vista-se de forma adequada nas igrejas.",
+     "Os hondurenhos se chamam carinhosamente de “catrachos”."
+    ],
+    "festivals": [
+     "Feria Juniana (San Pedro Sula, junho)",
+     "Carnaval de La Ceiba (maio)",
+     "Dia do Assentamento Garífuna (12 de abril)"
+    ],
+    "lifestyle": "Uma vida calorosa, com paixão pelo futebol, barracas de baleadas, tambores garífunas e música punta na costa caribenha."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Ruínas maias de Copán (UNESCO)",
+     "Roatán e Utila (Recife Mesoamericano)",
+     "Lago de Yojoa e cachoeira de Pulhapanzak",
+     "Parque Nacional Pico Bonito e rio Cangrejal",
+     "Gracias e Parque Nacional Celaque",
+     "Punta Sal / Parque Nacional Jeannette Kawas"
+    ],
+    "bestSeasons": "Fevereiro – maio (seco no continente e chuvas diminuindo nas Ilhas da Baía); de junho a novembro há furacões e de outubro a janeiro chove nas ilhas",
+    "travelStyleTip": "Comece em Copán, perto da fronteira com a Guatemala, desça pelo Yojoa até a costa caribenha e pegue a balsa de La Ceiba para as ilhas."
+   },
+   "religion": {
+    "primaryReligions": "Evangélicos (~40 %), católicos (~35-45 %) e sem religião/outros.",
+    "respectNorms": "Cubra os ombros nas igrejas e respeite as procissões da Semana Santa.",
+    "sacredSites": [
+     "Basílica de Suyapa (Tegucigalpa)",
+     "Catedral de Comayagua (com seu relógio histórico)",
+     "Catedral de São Miguel Arcanjo, Tegucigalpa"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Espanhol (oficial). Nas Ilhas da Baía fala-se um crioulo de base inglesa, na costa o garífuna e em La Mosquitia o misquito.",
+    "englishProficiency": "Baixo no continente; nas Ilhas da Baía o inglês é comum.",
+    "phrases": [
+     {
+      "phrase": "¿Qué onda, maje?",
+      "meaning": "E aí, cara? (gíria hondurenha)",
+      "translation": "E aí, cara? (gíria hondurenha)",
+      "pronunciation": "keh ON-dah MAH-heh"
+     },
+     {
+      "phrase": "¡Qué macizo!",
+      "meaning": "Que demais! (gíria hondurenha)",
+      "translation": "Que demais! (gíria hondurenha)",
+      "pronunciation": "keh mah-SEE-soh"
+     },
+     {
+      "phrase": "¿Cuánto vale?",
+      "meaning": "Quanto custa?",
+      "translation": "Quanto custa?",
+      "pronunciation": "KWAN-toh VAH-leh"
+     },
+     {
+      "phrase": "Muchas gracias",
+      "meaning": "Muito obrigado",
+      "translation": "Muito obrigado",
+      "pronunciation": "MOO-chas GRAH-syas"
+     },
+     {
+      "phrase": "Buiti binafi",
+      "meaning": "Bom dia (garífuna)",
+      "translation": "Bom dia (garífuna)",
+      "pronunciation": "BWEE-tee bee-NAH-fee"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Copán foi um dos centros artísticos e científicos do mundo maia. Colombo chegou às Ilhas da Baía em 1502; depois do domínio espanhol, Honduras se tornou independente em 1821.",
+    "milestones": [
+     "426–820: Dinastia de Copán",
+     "1502: Colombo chega a Guanaja",
+     "1821: Independência",
+     "1998: Devastação causada pelo furacão Mitch"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Baleada (tortilha de farinha de trigo com feijão, queijo e manteiga)",
+     "Sopa de caracol (com leite de coco)",
+     "Plato típico (carne, feijão, banana-da-terra, queijo)"
+    ],
+    "traditionalDrinks": [
+     "Café hondurenho",
+     "Horchata",
+     "Cerveja Salva Vida e guaro (aguardente de cana)"
+    ],
+    "streetFoodAndDesserts": [
+     "Pupusas",
+     "Tajadas (banana-da-terra frita com carne)",
+     "Pão de coco (garífuna)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Francisco Morazán (líder da Federação Centro-Americana)",
+     "José Antonio Velásquez (pintor primitivista)",
+     "David Suazo (jogador de futebol)"
+    ],
+    "strongSectors": [
+     "Café (maior produtor da América Central)",
+     "Têxteis (maquilas)",
+     "Banana, camarão e remessas"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Cartões são aceitos nas cidades e nas ilhas; em Roatán o dólar americano circula muito. Nas áreas rurais é preciso dinheiro vivo em lempiras.",
+    "tippingCulture": "Nos restaurantes espera-se uma gorjeta de 10 %; às vezes ela já vem na conta, então confira.",
+    "economicPillars": "Remessas, café, têxteis, agricultura e turismo."
+   }
+  },
+  "itin": {
+   "routeName": "Roteiro por Honduras: Copán, Lago de Yojoa, La Ceiba e Ilhas da Baía",
+   "routeSummary": "Um roteiro de 9 dias que vai das estelas maias de Copán às cachoeiras do Lago de Yojoa, à selva de Pico Bonito e aos recifes de coral de Roatán.",
+   "totalDays": 9,
+   "idealDurationText": "Roteiro de 9 dias por Honduras",
+   "bestSeason": "Fevereiro – maio (seco no continente e chuvas diminuindo nas Ilhas da Baía); de junho a novembro há furacões e de outubro a janeiro chove nas ilhas",
+   "transportMode": "Ônibus executivo/shuttle + balsa La Ceiba–Roatán (Galaxy Wave)",
+   "paceLevel": "Equilibrado (história + natureza + praia)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Copán Ruinas",
+     "recommendedDuration": "2 dias (herança maia)",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Parque Arqueológico de Copán e Escadaria Hieroglífica",
+      "Las Sepulturas",
+      "Parque de aves Macaw Mountain"
+     ],
+     "activities": [
+      "Percorra com guia as estelas e a Escadaria Hieroglífica.",
+      "Observe araras-vermelhas no parque de aves.",
+      "Prove café nas ruas de paralelepípedo da cidadezinha."
+     ],
+     "foodAndDrinks": [
+      "Baleada",
+      "Café hondurenho"
+     ],
+     "criticalTips": [
+      "Visite o parque cedo; à tarde faz muito calor.",
+      "Compre os ingressos e contrate guias oficiais na entrada."
+     ],
+     "mapsQuery": "Copán Ruinas, Honduras"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Lago de Yojoa",
+     "recommendedDuration": "1-2 dias (lago e cachoeira)",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Cachoeira de Pulhapanzak",
+      "Observação de aves no Lago de Yojoa",
+      "Parque Nacional Cerro Azul Meámbar"
+     ],
+     "activities": [
+      "Entre com guia na caverna atrás da cachoeira de Pulhapanzak.",
+      "Observe aves de canoa pela manhã.",
+      "Visite a cervejaria artesanal local."
+     ],
+     "foodAndDrinks": [
+      "Peixe frito do lago",
+      "Tajadas"
+     ],
+     "criticalTips": [
+      "Faça o percurso atrás da cachoeira só com guias oficiais.",
+      "Viaje de dia."
+     ],
+     "mapsQuery": "Lago de Yojoa, Honduras"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: La Ceiba e Pico Bonito",
+     "recommendedDuration": "2 dias (selva e rafting)",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Parque Nacional Pico Bonito",
+      "Rio Cangrejal",
+      "Refúgio de Vida Silvestre Cuero y Salado"
+     ],
+     "activities": [
+      "Faça rafting no Cangrejal.",
+      "Caminhe até as cachoeiras de Pico Bonito.",
+      "Procure peixes-boi e macacos de barco em Cuero y Salado."
+     ],
+     "foodAndDrinks": [
+      "Sopa de caracol",
+      "Pão de coco",
+      "Horchata"
+     ],
+     "criticalTips": [
+      "Tenha cuidado no centro de La Ceiba à noite.",
+      "Depois das chuvas, consulte o nível do rio com a operadora."
+     ],
+     "mapsQuery": "La Ceiba, Honduras"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Roatán / Utila",
+     "recommendedDuration": "3 dias (recife e praia)",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Praia de West Bay",
+      "Pontos de mergulho de West End",
+      "Tubarão-baleia em Utila (sazonal)",
+      "Parque Gumbalimba"
+     ],
+     "activities": [
+      "Mergulhe ou faça snorkel no Recife Mesoamericano.",
+      "Tire uma certificação de mergulho barata em Utila.",
+      "Jante frutos do mar ao pôr do sol em West End."
+     ],
+     "foodAndDrinks": [
+      "Peixe grelhado com arroz de coco",
+      "Cerveja Salva Vida"
+     ],
+     "criticalTips": [
+      "A balsa pode balançar bastante; tome remédio para enjoo.",
+      "Use protetor solar seguro para recifes e não toque nos corais."
+     ],
+     "mapsQuery": "Roatán, Honduras"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Baleada (tortilha de farinha de trigo com feijão, queijo e manteiga)",
+     "Sopa de caracol (com leite de coco)",
+     "Plato típico (carne, feijão, banana-da-terra, queijo)"
+    ],
+    "drinks": [
+     "Café hondurenho",
+     "Horchata",
+     "Cerveja Salva Vida e guaro (aguardente de cana)"
+    ],
+    "streetFoods": [
+     "Pupusas",
+     "Tajadas (banana-da-terra frita com carne)",
+     "Pão de coco (garífuna)"
+    ],
+    "diningAdvice": "A baleada é a comida de rua mais barata e que mais sustenta. No litoral, não deixe de provar os frutos do mar com coco da culinária garífuna."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptador de tomada tipo A/B",
+     "Repelente",
+     "Protetor solar seguro para recifes",
+     "Capa de chuva"
+    ],
+    "safetyAndEtiquette": [
+     "Nas cidades grandes, use Uber e não pegue táxi na rua.",
+     "Peça permissão para tirar fotos nas comunidades garífunas."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "A",
+     "B"
+    ],
+    "voltage": "120V",
+    "frequency": "60Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Tomadas norte-americanas de pinos chatos (A/B) em 120V; você vai precisar de adaptador. Confira se seus aparelhos aceitam 100–240V."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "A água da torneira não é potável; use água engarrafada ou purificada.",
+    "vaccines": [
+     "Hepatite A e febre tifoide",
+     "Vacinas de rotina",
+     "Prevenção contra malária em áreas rurais como La Mosquitia (consulte seu médico)",
+     "Risco de dengue: use repelente"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "195"
+   },
+   "tipping": {
+    "custom": "Nos restaurantes, espera-se uma gorjeta de 10 %.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Confira se o serviço está incluído; dê gorjeta à parte a guias de mergulho e barqueiros."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Sem restituição de IVA para turistas (ISV de 15 %)",
+    "minSpend": "Não se aplica",
+    "customsNote": "Honduras não tem sistema de restituição de IVA (tax-free) para turistas. Levar objetos maias ou corais para fora do país é ilegal."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 1,00 - 3,00",
+    "topCarriers": [
+     "Tigo",
+     "Claro"
+    ],
+    "airportSimTrapWarning": "A Tigo e a Claro têm balcões nos aeroportos, mas as lojas da cidade são mais baratas; o cadastro do chip exige passaporte."
+   },
+   "touristScams": [
+    {
+     "title": "Táxi de rua",
+     "desc": "Assaltos ou tarifas infladas em táxis parados na rua.",
+     "tip": "Use Uber, inDrive ou um táxi chamado pelo hotel."
+    },
+    {
+     "title": "Roubos em rodoviárias",
+     "desc": "Furto de bolsas nas rodoviárias.",
+     "tip": "Use empresas de ônibus executivo com terminal próprio."
+    },
+    {
+     "title": "Clonagem em caixas eletrônicos",
+     "desc": "Os dados do cartão são copiados em caixas eletrônicos de rua.",
+     "tip": "Use caixas eletrônicos dentro de bancos ou shopping centers."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Гондурасская лемпира (HNL)",

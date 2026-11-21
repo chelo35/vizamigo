@@ -1515,6 +1515,385 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Libra libanesa (LBP) – no dia a dia, o dólar americano é muito usado",
+   "plugType": "Tipo C, D, G (230V, 50Hz)",
+   "bestMonths": "Abril – junho e setembro – outubro (clima ameno, mar e montanha ao mesmo tempo) · julho – agosto quente e úmido; de janeiro a março, temporada de esqui nas montanhas",
+   "safety": {
+    "safetyScore": 10,
+    "safetyLevel": "Zona de conflito (não viaje)",
+    "badgeColor": "bg-rose-600 text-white border-rose-700 dark:bg-rose-950 dark:text-rose-200",
+    "crimeRateSummary": "Continuam em vigor o alerta “Do Not Travel” dos EUA e os avisos do UK FCDO: não se recomenda viajar ao sul do Líbano, ao vale do Bekaa e a Baalbek-Hermel, à fronteira com a Síria e aos subúrbios do sul de Beirute, onde podem ocorrer ataques aéreos e confrontos armados. No centro de Beirute e no litoral norte a vida cotidiana continua, mas a situação pode mudar muito rápido. A criminalidade de rua é relativamente baixa.",
+    "commonScams": [
+     "Entrar em um táxi compartilhado (“service”) e, na chegada, ser cobrado pela tarifa de táxi particular",
+     "Troco de pagamentos em dólar devolvido em libras libanesas a uma cotação péssima",
+     "Taxas de garrafa e de mesa “VIP” não informadas acrescentadas à conta de baladas"
+    ],
+    "safeTravelTips": [
+     "Confira os alertas oficiais logo antes e durante toda a viagem; registre-se na embaixada do seu país.",
+     "Não vá ao sul, ao Bekaa nem a áreas de fronteira; evite manifestações.",
+     "Leve dólares em notas pequenas e esteja preparado para possíveis cancelamentos de voos."
+    ],
+    "emergencyNumbers": {
+     "police": "112",
+     "ambulance": "140",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "95 % da população (4G; as antenas podem ser afetadas por cortes de energia)",
+    "costPerGbUsd": "US$ 1,50 - 4",
+    "esimAvailability": "Boa (eSIMs internacionais funcionam; os chips da Alfa e da touch são comprados com passaporte)",
+    "bestCarriers": [
+     "Alfa",
+     "touch"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Precário (sem transporte público regular; táxis compartilhados “service”, micro-ônibus e táxis particulares)",
+    "costLevel": "Médio",
+    "singleTicketUsd": "US$ 1 - 3",
+    "dailyPassUsd": "Não existe (táxi compartilhado na cidade ~1 - 3 $)",
+    "popularRideApps": [
+     "Uber",
+     "Bolt"
+    ],
+    "taxiAdvice": "Em Beirute, o mais prático é usar Uber e Bolt. Na rua, confirme antes de entrar se é “service” (compartilhado) ou “taxi” (particular) e qual é o preço; para sair da cidade, contrate um carro com motorista."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 40 - 70",
+    "dailyBudgetMidrangeUsd": "US$ 100 - 180",
+    "budgetMealUsd": "US$ 5 - 12",
+    "coffeeUsd": "US$ 2 - 4",
+    "waterBottleUsd": "US$ 0,50 - 1",
+    "hostelDormUsd": "US$ 15 - 25",
+    "hotel3StarUsd": "US$ 70 - 130",
+    "flightCostIndex": "Médio (Istambul – Beirute direto, ~1,5 hora)",
+    "flightTip": "Os voos diretos Istambul – Beirute são curtos e frequentes, mas compre passagens flexíveis, porque pode haver cancelamentos em momentos de tensão regional."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Os libaneses misturam árabe, francês e inglês na mesma frase: “Hi, kifak, ça va?”",
+     "A hospitalidade é generosa; não recuse o café que lhe oferecerem.",
+     "As comunidades religiosas são diversas; evite opinar sobre política e religião.",
+     "Não fotografe postos de controle militares nem soldados."
+    ],
+    "festivals": [
+     "Festival Internacional de Biblos (verão)",
+     "Festival de Arte de Beiteddine (Chouf, verão)",
+     "Natal e Eid al-Fitr (ambos comemorados com entusiasmo nesta sociedade multiconfessional)"
+    ],
+    "lifestyle": "Dá para nadar no Mediterrâneo de manhã e subir para vilarejos de montanha à tarde. As longas refeições de mezze e a cultura de cafés e bares de Mar Mikhael e Gemmayzeh, em Beirute, são o centro da vida social."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Centro de Beirute, Museu Nacional e rochas de Raouché",
+     "Antiga Biblos (UNESCO)",
+     "Gruta de Jeita",
+     "Vale de Qadisha e Cedros de Deus (UNESCO)",
+     "Harissa – Nossa Senhora do Líbano",
+     "Cidade litorânea de Batroun"
+    ],
+    "bestSeasons": "Abril – junho e setembro – outubro (clima ameno, mar e montanha ao mesmo tempo) · julho – agosto quente e úmido; de janeiro a março, temporada de esqui nas montanhas",
+    "travelStyleTip": "Hospede-se em Beirute e faça bate-voltas ao litoral norte e aos vilarejos de montanha; para o sul e o Bekaa, siga os alertas oficiais."
+   },
+   "religion": {
+    "primaryReligions": "Islã (~60 %; sunitas e xiitas), cristianismo (~33 %; sobretudo maronitas), drusos (~5 %); 18 confissões reconhecidas oficialmente",
+    "respectNorms": "As mulheres cobrem o cabelo ao entrar em mesquitas; em mosteiros e igrejas, ombros e joelhos devem estar cobertos.",
+    "sacredSites": [
+     "Mesquita Mohammad Al-Amin (Beirute)",
+     "Nossa Senhora do Líbano (Harissa)",
+     "Mosteiros do vale de Qadisha e mosteiro de São Charbel (Annaya)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "O árabe é a língua oficial; o francês e o inglês são muito difundidos, e também se fala armênio.",
+    "englishProficiency": "Muito bom; em Beirute quase todo mundo fala inglês ou francês.",
+    "phrases": [
+     {
+      "phrase": "مرحبا (marḥaba)",
+      "meaning": "Olá",
+      "translation": "Olá",
+      "pronunciation": "mar-ha-ba"
+     },
+     {
+      "phrase": "كيفك؟ (kīfak?)",
+      "meaning": "Como vai? (para um homem; para uma mulher, “kīfik?”)",
+      "translation": "Como vai? (para um homem; para uma mulher, “kīfik?”)",
+      "pronunciation": "ki-fak"
+     },
+     {
+      "phrase": "يسلمو (yislamo)",
+      "meaning": "Obrigado (árabe libanês)",
+      "translation": "Obrigado (árabe libanês)",
+      "pronunciation": "yis-la-mo"
+     },
+     {
+      "phrase": "قدّيش؟ (addēsh?)",
+      "meaning": "Quanto?",
+      "translation": "Quanto?",
+      "pronunciation": "ad-deysh"
+     },
+     {
+      "phrase": "يلّا (yalla)",
+      "meaning": "Vamos! / Bora!",
+      "translation": "Vamos! / Bora!",
+      "pronunciation": "yal-la"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "As cidades portuárias fenícias de Biblos, Sidon e Tiro foram centros a partir dos quais o alfabeto se difundiu. Depois dos períodos romano, bizantino e árabe, a região esteve sob domínio otomano de 1516 a 1918. Independente desde 1943, após o Mandato Francês, o Líbano se reconstruiu depois da guerra civil de 1975–1990.",
+    "milestones": [
+     "c. 1200 a.C.: O alfabeto fenício se desenvolve em Biblos",
+     "1516: Começa o domínio otomano",
+     "1943: Independência",
+     "1975–1990: Guerra civil"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Kibbeh (bolinhos de trigo para quibe e carne; também o kibbeh nayyeh, cru)",
+     "Saladas tabule e fattoush",
+     "Shish taouk e mezze variado"
+    ],
+    "traditionalDrinks": [
+     "Arak (licor de anis)",
+     "Vinhos libaneses",
+     "Jallab (bebida de tâmara e água de rosas)"
+    ],
+    "streetFoodAndDesserts": [
+     "Man’oushe (pão sírio com za’atar)",
+     "Shawarma",
+     "Knafeh e doces de ashta (creme de leite)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Khalil Gibran (autor de “O Profeta”)",
+     "Fairuz (cantora lendária)",
+     "Amin Maalouf (escritor, membro da Academia Francesa)"
+    ],
+    "strongSectors": [
+     "Turismo e gastronomia",
+     "Bancos e serviços",
+     "Vinicultura e agricultura"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Desde a crise de 2019, o dinheiro vivo manda, sobretudo o dólar, e os preços costumam estar em dólares. Os cartões funcionam em grandes hotéis e restaurantes, mas não são confiáveis em todo lugar; leve notas pequenas de dólar.",
+    "tippingCulture": "Nos restaurantes, espera-se 10 - 15 %; pequenas gorjetas para manobristas e funcionários de hotel são comuns.",
+    "economicPillars": "Serviços, turismo, remessas da diáspora libanesa, agricultura e vinho."
+   }
+  },
+  "itin": {
+   "routeName": "Litoral e montanhas do Líbano: Beirute, Jeita, Biblos e vale de Qadisha",
+   "routeSummary": "Roteiro de 6 dias que vai das mesas de mezze de Beirute à gruta de Jeita e a Harissa, ao porto fenício de Biblos e a Batroun, e às florestas de cedros do vale de Qadisha; somente se os alertas oficiais permitirem.",
+   "totalDays": 6,
+   "idealDurationText": "Roteiro de 6 dias",
+   "bestSeason": "Abril – junho e setembro – outubro (clima ameno, mar e montanha ao mesmo tempo) · julho – agosto quente e úmido; de janeiro a março, temporada de esqui nas montanhas",
+   "transportMode": "Carro com motorista ou Uber; distâncias curtas pelo litoral",
+   "paceLevel": "Equilibrado (cidade, mar e montanha)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Beirute",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Museu Nacional",
+      "Rochas de Raouché (dos Pombos) e a Corniche",
+      "Mesquita Mohammad Al-Amin e o centro",
+      "Bairros de Mar Mikhael e Gemmayzeh"
+     ],
+     "activities": [
+      "Caminhe pela Corniche ao pôr do sol.",
+      "Admire tesouros fenícios e romanos no Museu Nacional.",
+      "Aproveite um banquete de mezze à noite em Gemmayzeh."
+     ],
+     "foodAndDrinks": [
+      "Mezze variado e arak",
+      "Café da manhã com man’oushe"
+     ],
+     "criticalTips": [
+      "Não vá aos subúrbios do sul; confira os alertas todos os dias.",
+      "Pergunte antes os preços de mesas e garrafas nas baladas."
+     ],
+     "mapsQuery": "Beirut Downtown, Beirut, Lebanon"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Gruta de Jeita e Harissa",
+     "recommendedDuration": "1 dia",
+     "durationBadge": "1 dia",
+     "highlights": [
+      "Estalactites e estalagmites da gruta de Jeita",
+      "Nossa Senhora do Líbano (Harissa)",
+      "Teleférico sobre a baía de Jounieh"
+     ],
+     "activities": [
+      "Percorra de barco a gruta inferior de Jeita.",
+      "Suba de teleférico de Jounieh até Harissa.",
+      "Aprecie a vista da baía a partir de Harissa."
+     ],
+     "foodAndDrinks": [
+      "Restaurantes de peixe em Jounieh",
+      "Coquetel de frutas frescas"
+     ],
+     "criticalTips": [
+      "Em Jeita é proibido fotografar; os celulares ficam guardados na entrada.",
+      "Nos fins de semana fica muito cheio; prefira ir durante a semana."
+     ],
+     "mapsQuery": "Jeita Grotto, Lebanon"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Biblos e Batroun",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Antiga Biblos e castelo dos cruzados (UNESCO)",
+      "Suq antigo e porto pesqueiro",
+      "Muralha fenícia e praias de Batroun"
+     ],
+     "activities": [
+      "Percorra as ruínas antigas de Biblos.",
+      "Tome uma limonada e dê um mergulho em Batroun.",
+      "Faça uma degustação de vinhos em vinícolas da região."
+     ],
+     "foodAndDrinks": [
+      "Peixe grelhado",
+      "Limonada de Batroun"
+     ],
+     "criticalTips": [
+      "Os beach clubs são caros no verão; pergunte pelas praias públicas.",
+      "À tarde, a estrada do litoral fica congestionada."
+     ],
+     "mapsQuery": "Byblos Old Souk, Byblos, Lebanon"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Vale de Qadisha e Cedros de Deus",
+     "recommendedDuration": "1 dia",
+     "durationBadge": "1 dia",
+     "highlights": [
+      "Cedros de Deus (Arz el-Rab)",
+      "Mosteiros escavados na rocha do vale de Qadisha (UNESCO)",
+      "Bsharri e Museu Gibran"
+     ],
+     "activities": [
+      "Caminhe entre cedros milenares.",
+      "Desça a pé até o mosteiro de Qannoubine, no vale.",
+      "Visite o Museu Khalil Gibran."
+     ],
+     "foodAndDrinks": [
+      "Café da manhã de vilarejo de montanha (labneh e azeitonas)",
+      "Frutas frescas da montanha"
+     ],
+     "criticalTips": [
+      "No inverno, a neve pode bloquear estradas; verifique as correntes e o veículo.",
+      "Use calçado firme para a caminhada pelo vale."
+     ],
+     "mapsQuery": "Cedars of God, Bsharri, Lebanon"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Kibbeh (bolinhos de trigo para quibe e carne; também o kibbeh nayyeh, cru)",
+     "Saladas tabule e fattoush",
+     "Shish taouk e mezze variado"
+    ],
+    "drinks": [
+     "Arak (licor de anis)",
+     "Vinhos libaneses",
+     "Jallab (bebida de tâmara e água de rosas)"
+    ],
+    "streetFoods": [
+     "Man’oushe (pão sírio com za’atar)",
+     "Shawarma",
+     "Knafeh e doces de ashta (creme de leite)"
+    ],
+    "diningAdvice": "Os mezze são compartilhados e as refeições duram horas; os libaneses jantam tarde (depois das 21h)."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptador múltiplo (C, D, G) e power bank (cortes de energia)",
+     "Dólares em dinheiro, em notas pequenas",
+     "Jaqueta leve para a montanha",
+     "Roupas que cubram ombros e joelhos para lugares sagrados"
+    ],
+    "safetyAndEtiquette": [
+     "Nunca vá a áreas com alertas oficiais.",
+     "Não fotografe postos militares.",
+     "Evite conversas sobre política."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "D",
+     "G"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Sistema misto: tomadas europeias C/F, britânicas G e indianas D; leve um adaptador múltiplo. A rede elétrica é limitada e os prédios dependem de geradores de bairro."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "A água da torneira não é potável; use água engarrafada.",
+    "vaccines": [
+     "Vacinas de rotina (difteria e tétano, sarampo)",
+     "Hepatite A e febre tifoide"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "140"
+   },
+   "tipping": {
+    "custom": "A gorjeta é esperada.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "10 - 15 % nos restaurantes (se não houver taxa de serviço); 1 - 2 $ para manobristas e porteiros."
+   },
+   "taxFree": {
+    "vatRefundPercent": "11 % de IVA (devolução a turistas limitada desde a crise)",
+    "minSpend": "Depende da loja",
+    "customsNote": "No aeroporto de Beirute existe um sistema de devolução, mas ele funciona de forma limitada; pergunte na loja antes de comprar. Exportar antiguidades exige autorização."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 1,50 - 4,00",
+    "topCarriers": [
+     "Alfa",
+     "touch"
+    ],
+    "airportSimTrapWarning": "Nos quiosques da Alfa e da touch no aeroporto você compra linhas turísticas; os preços são em dólares e parecidos com os da cidade."
+   },
+   "touristScams": [
+    {
+     "title": "Confusão service–táxi",
+     "desc": "Você entra achando que é tarifa compartilhada (“service”) e, na chegada, cobram a de táxi particular.",
+     "tip": "Pergunte “service?” antes de entrar ou use Uber/Bolt."
+    },
+    {
+     "title": "Troco com cotação ruim",
+     "desc": "Ao pagar em dólares, devolvem o troco em libras a uma cotação muito ruim.",
+     "tip": "Leve notas pequenas de dólar e pergunte a cotação antes."
+    },
+    {
+     "title": "Conta da balada",
+     "desc": "São acrescentadas taxas de mesa e de garrafa não informadas.",
+     "tip": "Peça os preços por escrito antes e confira a conta."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Ливанский фунт (LBP) — в повседневной жизни широко используют доллар США",

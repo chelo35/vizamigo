@@ -1387,6 +1387,353 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Franco CFA da África Central (XAF; atrelado ao euro)",
+   "plugType": "Tipo C, E (220V, 50Hz)",
+   "bestMonths": "Dezembro – fevereiro (estação seca; melhor acesso a Dzanga-Sangha) · maio – outubro, chuvas fortes e estradas bloqueadas",
+   "safety": {
+    "safetyScore": 10,
+    "safetyLevel": "Zona de conflito (não viaje)",
+    "badgeColor": "bg-rose-600 text-white border-rose-700 dark:bg-rose-950 dark:text-rose-200",
+    "crimeRateSummary": "Os alertas oficiais pedem que você não viaje de forma alguma: grupos armados atuam em grande parte do país, e sequestros, assaltos nas estradas e violência são comuns. Mesmo em Bangui há risco de assaltos à mão armada e confrontos; a assistência consular é muito limitada.",
+    "commonScams": [
+     "Nas barreiras das estradas, grupos oficiais e não oficiais exigem “pedágios” ou propina.",
+     "No aeroporto ou na cidade, pessoas se passando por policiais pedem documentos e dinheiro."
+    ],
+    "safeTravelTips": [
+     "Não viaje; em viagens de trabalho indispensáveis, siga o plano de segurança e as regras de comboio da sua organização.",
+     "Contrate um seguro que cubra evacuação e risco de sequestro; as apólices comuns costumam excluir o país.",
+     "Respeite o toque de recolher em Bangui e nunca saia à noite."
+    ],
+    "emergencyNumbers": {
+     "police": "117",
+     "ambulance": "117",
+     "general": "117"
+    }
+   },
+   "internet": {
+    "networkCoverage": "3G/4G em Bangui e em algumas localidades; sem cobertura na maior parte do país",
+    "costPerGbUsd": "US$ 2 - 5",
+    "esimAvailability": "Muito limitada (eSIMs internacionais quase não funcionam ou são caríssimos); recomenda-se telefone via satélite",
+    "bestCarriers": [
+     "Orange Centrafrique",
+     "Telecel Centrafrique",
+     "Moov Africa Centrafrique"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Muito precário (poucas estradas asfaltadas; transporte público inseguro)",
+    "costLevel": "Muito caro (veículos com segurança e voos fretados)",
+    "singleTicketUsd": "Não recomendado (mototáxis e táxis compartilhados são inseguros)",
+    "dailyPassUsd": "Não existe",
+    "popularRideApps": [
+     "Nenhum app – veículo da organização ou do hotel"
+    ],
+    "taxiAdvice": "Os táxis amarelos e os mototáxis não são seguros para estrangeiros. Use apenas veículos da sua organização, do hotel ou de uma empresa de segurança."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 150 - 250",
+    "dailyBudgetMidrangeUsd": "US$ 200 - 350",
+    "budgetMealUsd": "US$ 8 - 20",
+    "coffeeUsd": "US$ 2 - 4",
+    "waterBottleUsd": "US$ 1 - 2",
+    "hostelDormUsd": "Não há hostels",
+    "hotel3StarUsd": "US$ 100 - 200",
+    "flightCostIndex": "Muito alto (poucos voos, com escalas)",
+    "flightTip": "Para chegar a Bangui M'Poko (BGF), voe via Paris (Air France), Casablanca (Royal Air Maroc), Adis Abeba (Ethiopian) ou Duala; há cancelamentos, então compre passagens flexíveis."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Cumprimentos e apertos de mão são importantes; cumprimente primeiro os mais velhos.",
+     "Nunca fotografe soldados, veículos da MINUSCA ou prédios oficiais.",
+     "Vista-se de forma discreta e evite dar opinião sobre temas religiosos ou étnicos."
+    ],
+    "festivals": [
+     "Dia da Independência (13 de agosto)",
+     "Dia de Boganda (29 de março)",
+     "Dia da República (1º de dezembro)"
+    ],
+    "lifestyle": "Em Bangui, às margens do Ubangui, a vida gira em torno de mercados, música e igreja; no interior, as pessoas vivem da agricultura e da floresta. O sango une a sociedade como língua comum."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Áreas protegidas de Dzanga-Sangha (Sangha Trinacional, UNESCO)",
+     "Dzanga Bai (clareira onde se reúnem elefantes-da-floresta)",
+     "Cachoeiras de Boali",
+     "Catedral de Notre-Dame de Bangui",
+     "A orla do Ubangui"
+    ],
+    "bestSeasons": "Dezembro – fevereiro (estação seca; melhor acesso a Dzanga-Sangha) · maio – outubro, chuvas fortes e estradas bloqueadas",
+    "travelStyleTip": "Este país não está apto para o turismo. Apenas em visitas indispensáveis e organizadas por profissionais é possível voar de Bangui a Dzanga-Sangha em voo fretado; não use as estradas."
+   },
+   "religion": {
+    "primaryReligions": "Cristianismo (~80%: protestantes e católicos), islamismo (~10% – 15%), crenças tradicionais",
+    "respectNorms": "Vista-se de forma discreta em igrejas e mesquitas; a identidade religiosa é um ponto sensível do conflito, então evite dar opinião.",
+    "sacredSites": [
+     "Catedral de Notre-Dame da Imaculada Conceição (Bangui)",
+     "Mesquita Central de Bangui",
+     "Missão Saint-Paul des Rapides (Bangui)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "As línguas oficiais são o francês e o sango; o sango é a língua franca falada por quase todo mundo.",
+    "englishProficiency": "Muito baixo; você vai precisar de francês ou sango.",
+    "phrases": [
+     {
+      "phrase": "Balaô!",
+      "meaning": "Olá! (sango)",
+      "translation": "Olá! (sango)",
+      "pronunciation": "ba-la-o"
+     },
+     {
+      "phrase": "Mo yeke nzönî?",
+      "meaning": "Como vai? (sango)",
+      "translation": "Como vai? (sango)",
+      "pronunciation": "mo ye-ke n-dzo-ni"
+     },
+     {
+      "phrase": "Mbi yeke nzönî",
+      "meaning": "Estou bem (sango)",
+      "translation": "Estou bem (sango)",
+      "pronunciation": "mbi ye-ke n-dzo-ni"
+     },
+     {
+      "phrase": "Singîla",
+      "meaning": "Obrigado (sango)",
+      "translation": "Obrigado (sango)",
+      "pronunciation": "sin-gi-la"
+     },
+     {
+      "phrase": "Ngêrê nî ayeke ôke?",
+      "meaning": "Quanto custa? (sango)",
+      "translation": "Quanto custa? (sango)",
+      "pronunciation": "nge-re ni a-ye-ke o-ke"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Administrado como a colônia francesa de Ubangui-Chari, o país conquistou a independência em 13 de agosto de 1960, após o movimento liderado por Barthélemy Boganda. De 1976 a 1979, Bokassa se proclamou imperador. Desde 2013 há um conflito interno, e desde 2014 atua a missão de paz da ONU MINUSCA.",
+    "milestones": [
+     "1960: Independência",
+     "1976 – 1979: Império Centro-Africano",
+     "2013: Eclosão do conflito interno",
+     "2014: Início da missão MINUSCA"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Gozo (massa de mandioca) com ngunza (ensopado de folhas de mandioca)",
+     "Folhas de koko (gnetum) ao molho de amendoim",
+     "Peixe do Ubangui, na brasa ou assado em folhas"
+    ],
+    "traditionalDrinks": [
+     "Cerveja Mocaf (local)",
+     "Vinho de palma",
+     "Suco de gengibre"
+    ],
+    "streetFoodAndDesserts": [
+     "Makara (massa frita)",
+     "Espetinhos de carne",
+     "Amendoim torrado"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Barthélemy Boganda (líder da independência)",
+     "Romain Sato (jogador de basquete)",
+     "Geoffrey Kondogbia (jogador de futebol)"
+    ],
+    "strongSectors": [
+     "Diamantes e ouro",
+     "Madeira e silvicultura",
+     "Agricultura (algodão, café, mandioca)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Dinheiro vivo (francos CFA ou euros) é indispensável; há pouquíssimos caixas eletrônicos, que falham com frequência, e cartões quase não são aceitos. Leve euros suficientes.",
+    "tippingCulture": "A gorjeta é opcional. 5% – 10% nos restaurantes de hotel; guias, motoristas e rastreadores recebem gorjeta no fim.",
+    "economicPillars": "Diamantes, ouro, madeira, agricultura de subsistência e ajuda internacional."
+   }
+  },
+  "itin": {
+   "routeName": "Apenas viagens indispensáveis: Bangui, Boali e Dzanga-Sangha",
+   "routeSummary": "Os alertas oficiais pedem que você não viaje, então este roteiro é apenas informativo, não uma recomendação: Bangui, as cachoeiras de Boali, ali perto, e, em voo fretado, os elefantes-da-floresta e gorilas de Dzanga-Sangha. Se precisar ir, vá apenas com apoio de segurança profissional.",
+   "totalDays": 7,
+   "idealDurationText": "Roteiro de 7 dias",
+   "bestSeason": "Dezembro – fevereiro (estação seca; melhor acesso a Dzanga-Sangha) · maio – outubro, chuvas fortes e estradas bloqueadas",
+   "transportMode": "Veículo com segurança (Bangui – Boali ~2h, só com autorização) e voo fretado Bangui – Bayanga",
+   "paceLevel": "Muito tranquilo (protocolo de segurança rigoroso)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Bangui",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Catedral de Notre-Dame",
+      "Orla do Ubangui",
+      "Museu Boganda"
+     ],
+     "activities": [
+      "Visite a orla nos horários aprovados pela sua equipe de segurança.",
+      "Faça uma visita rápida à catedral.",
+      "Prove pratos locais no hotel."
+     ],
+     "foodAndDrinks": [
+      "Gozo com ngunza",
+      "Cerveja Mocaf"
+     ],
+     "criticalTips": [
+      "Não vá ao PK5 nem aos bairros do norte.",
+      "Nunca saia depois que escurecer."
+     ],
+     "mapsQuery": "Bangui, Central African Republic"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Cachoeiras de Boali",
+     "recommendedDuration": "1 dia",
+     "durationBadge": "1 dia",
+     "highlights": [
+      "A queda-d'água de ~50 m no rio Mbali",
+      "Maior volume de água depois das chuvas",
+      "Vista da floresta ao redor"
+     ],
+     "activities": [
+      "Admire a cachoeira do mirante.",
+      "Faça uma curta caminhada pela natureza.",
+      "Volte a Bangui antes do entardecer."
+     ],
+     "foodAndDrinks": [
+      "Almoço para viagem preparado pelo hotel",
+      "Amendoim torrado"
+     ],
+     "criticalTips": [
+      "Vá apenas se a segurança permitir e com escolta.",
+      "Fique longe das pedras escorregadias."
+     ],
+     "mapsQuery": "Chutes de Boali, Central African Republic"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Dzanga-Sangha (Bayanga)",
+     "recommendedDuration": "4 dias",
+     "durationBadge": "4 dias",
+     "highlights": [
+      "Elefantes-da-floresta em Dzanga Bai",
+      "Gorilas-ocidentais-das-terras-baixas habituados em Bai Hokou",
+      "Caminhada pela floresta e demonstração de caça com rede com o povo BaAka"
+     ],
+     "activities": [
+      "Observe dezenas ou centenas de elefantes da plataforma de Dzanga Bai.",
+      "Junte-se aos rastreadores em um trekking de gorilas.",
+      "Navegue de piroga pelo rio Sangha."
+     ],
+     "foodAndDrinks": [
+      "Cozinha do lodge e peixe de rio",
+      "Ensopado de folhas de koko"
+     ],
+     "criticalTips": [
+      "Respeite a distância de 7 m e use máscara na visita aos gorilas.",
+      "Organize transporte e autorizações com antecedência, diretamente com a administração do parque (parceria com o WWF)."
+     ],
+     "mapsQuery": "Dzanga-Sangha, Bayanga, Central African Republic"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Gozo (massa de mandioca) com ngunza (ensopado de folhas de mandioca)",
+     "Folhas de koko (gnetum) ao molho de amendoim",
+     "Peixe do Ubangui, na brasa ou assado em folhas"
+    ],
+    "drinks": [
+     "Cerveja Mocaf (local)",
+     "Vinho de palma",
+     "Suco de gengibre"
+    ],
+    "streetFoods": [
+     "Makara (massa frita)",
+     "Espetinhos de carne",
+     "Amendoim torrado"
+    ],
+    "diningAdvice": "Faça as refeições no hotel ou no lodge; comida de rua e carne de caça não são recomendadas."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Certificado de febre amarela (obrigatório)",
+     "Euros em espécie suficientes",
+     "Telefone via satélite e carregador portátil",
+     "Antimaláricos, repelente e kit de primeiros socorros"
+    ],
+    "safetyAndEtiquette": [
+     "Não viaje; se for indispensável, conte com segurança profissional.",
+     "Não fotografe soldados nem prédios oficiais.",
+     "Não viaje de uma cidade a outra por estrada."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "E"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Usam-se tomadas europeias tipo C e E, compatíveis com as da Turquia. As quedas de energia são muito frequentes: escolha um hotel com gerador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "A água da torneira não é potável; use apenas água mineral lacrada ou tratada.",
+    "vaccines": [
+     "Febre amarela (obrigatória na entrada)",
+     "Profilaxia contra malária (risco alto em todo o país)",
+     "Hepatite A, febre tifoide, meningite e raiva",
+     "Reforço da pólio"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "117"
+   },
+   "tipping": {
+    "custom": "A gorjeta é opcional.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "5% – 10% nos restaurantes de hotel; guias, motoristas e rastreadores recebem gorjeta no fim."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Sem restituição para turistas (IVA de 19%)",
+    "minSpend": "Não se aplica",
+    "customsNote": "A República Centro-Africana não devolve o IVA a turistas. Exportar diamantes, ouro, marfim ou produtos de fauna sem autorização é proibido e punido com rigor."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "US$ 2 - 5",
+    "topCarriers": [
+     "Orange Centrafrique",
+     "Telecel Centrafrique",
+     "Moov Africa Centrafrique"
+    ],
+    "airportSimTrapWarning": "Em Bangui, compre o chip com passaporte num ponto oficial da Orange ou da Telecel, com a ajuda do hotel. Fora de Bangui não há cobertura: leve um telefone ou comunicador via satélite."
+   },
+   "touristScams": [
+    {
+     "title": "Propina em barreiras",
+     "desc": "Nas barreiras das estradas, grupos oficiais e não oficiais exigem “pedágios” ou propina.",
+     "tip": "Não viaje por estrada; se for inevitável, só com apoio de segurança profissional."
+    },
+    {
+     "title": "Falsos funcionários",
+     "desc": "No aeroporto ou na cidade, pessoas se passando por policiais pedem documentos e dinheiro.",
+     "tip": "Não entregue o passaporte original; mostre uma cópia e ligue para sua organização ou hotel."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Центральноафриканский франк КФА (XAF; привязан к евро)",

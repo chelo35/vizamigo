@@ -947,6 +947,243 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Coroa islandesa (ISK)",
+   "bestMonths": "Junho a agosto (sol da meia-noite, estradas das Terras Altas abertas); setembro a março para ver a aurora boreal (dias curtos e com tempestades)",
+   "safety": {
+    "safetyScore": 85,
+    "crimeRateSummary": "Um dos países mais seguros do mundo, com pouquíssima criminalidade. Os perigos reais são naturais: tempestades repentinas, estradas congeladas, ondas traiçoeiras em Reynisfjara e atividade vulcânica na península de Reykjanes.",
+    "commonScams": [
+     "Cobranças altas por arranhões e danos de cascalho preexistentes na devolução do carro alugado",
+     "Guias sem licença que vendem passeios a cavernas de gelo ou geleiras sem certificação",
+     "Cartões sem PIN que não funcionam nos postos de gasolina e pré-autorizações que ficam bloqueadas"
+    ],
+    "safeTravelTips": [
+     "Em Reynisfjara, nunca dê as costas para o mar e respeite as luzes de alerta.",
+     "Consulte todos os dias safetravel.is, vedur.is e umferdin.is (condições das estradas).",
+     "Fotografe todos os danos ao retirar o carro e contrate seguro contra cascalho e areia/cinzas."
+    ],
+    "emergencyNumbers": {
+     "police": "112",
+     "ambulance": "112",
+     "general": "112"
+    },
+    "safetyLevel": "Excepcionalmente seguro",
+    "badgeColor": "bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Bom 4G/5G nas cidades e na Ring Road; falhas nas Terras Altas e em fiordes remotos",
+    "costPerGbUsd": "~US$ 1,50 - 4",
+    "esimAvailability": "Excelente",
+    "bestCarriers": [
+     "Síminn",
+     "Vodafone Iceland",
+     "Nova"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Limitado (sem trens; ônibus Strætó em Reykjavík e poucas linhas rurais; o melhor é alugar um carro)",
+    "costLevel": "Muito caro",
+    "singleTicketUsd": "US$ 4,50 - 5,50",
+    "dailyPassUsd": "US$ 17 - 22",
+    "popularRideApps": [
+     "Klappið (Strætó)",
+     "Hopp",
+     "Hreyfill",
+     "Flybus / Airport Direct"
+    ],
+    "taxiAdvice": "Na Islândia não há Uber nem Bolt. Em Reykjavík, use a Hreyfill ou o app Hopp para táxis; do aeroporto de Keflavík até a cidade (~50 km), o Flybus ou o Airport Direct sai muito mais barato que um táxi."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 90 - 140",
+    "dailyBudgetMidrangeUsd": "US$ 230 - 380",
+    "budgetMealUsd": "US$ 22 - 35",
+    "coffeeUsd": "US$ 5 - 7",
+    "waterBottleUsd": "US$ 2 - 3,50",
+    "hostelDormUsd": "US$ 40 - 70",
+    "hotel3StarUsd": "US$ 180 - 320",
+    "flightCostIndex": "Alto",
+    "flightTip": "Não há voos diretos a partir da Turquia; o mais comum é fazer conexão em Londres, Copenhague, Amsterdã ou Oslo com Icelandair, easyJet ou Wizz Air. Fora do inverno, reserve cedo."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "É obrigatório tomar banho sem roupa de banho no vestiário antes de entrar em piscinas e lagoas termais.",
+     "Os islandeses se tratam pelo primeiro nome; em vez de sobrenome, usam patronímicos (-son/-dóttir).",
+     "É proibido sair das trilhas e dirigir fora da estrada; o musgo leva décadas para se recuperar.",
+     "Não se espera gorjeta; o serviço já está incluído."
+    ],
+    "festivals": [
+     "Þorrablót (janeiro–fevereiro, banquete tradicional do auge do inverno)",
+     "Dia Nacional (17 de junho)",
+     "Menningarnótt – Noite Cultural de Reykjavík (agosto) e festival Iceland Airwaves (novembro)"
+    ],
+    "lifestyle": "Papo nas piscinas aquecidas ao ar livre (sundlaug), vida perto da natureza, forte cultura de leitura e música e o lema 'Þetta reddast' (tudo vai dar certo)."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Círculo Dourado: Þingvellir (UNESCO), Geysir e Gullfoss",
+     "Cachoeiras Seljalandsfoss e Skógafoss",
+     "Praia de areia preta de Reynisfjara e Vík",
+     "Lagoa glacial Jökulsárlón e Diamond Beach",
+     "Península de Snæfellsnes e Kirkjufell",
+     "Lago Mývatn e observação de baleias em Húsavík"
+    ],
+    "bestSeasons": "Junho a agosto (sol da meia-noite, estradas das Terras Altas abertas); setembro a março para ver a aurora boreal (dias curtos e com tempestades)",
+    "travelStyleTip": "Reserve pelo menos 7–10 dias para a Ring Road completa (Rota 1). No inverno, um 4x4 com pneus de inverno é indispensável; as estradas F só abrem no verão e apenas para veículos 4x4."
+   },
+   "religion": {
+    "primaryReligions": "Igreja da Islândia (luterana) ~56%; católicos ~4%; Ásatrú (antiga fé nórdica) ~1,5%; parcela crescente de pessoas sem religião.",
+    "respectNorms": "A maioria das igrejas aceita visitas; faça silêncio durante os cultos. Não empilhe pedras em locais naturais ou históricos.",
+    "sacredSites": [
+     "Hallgrímskirkja (Reykjavík)",
+     "Catedral de Skálholt",
+     "Akureyrarkirkja (Akureyri)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Islandês (a língua viva mais próxima do nórdico antigo).",
+    "englishProficiency": "Excelente; quase todo mundo fala inglês fluentemente.",
+    "phrases": [
+     {
+      "phrase": "Halló / Góðan daginn",
+      "meaning": "Olá / Bom dia",
+      "translation": "Olá / Bom dia",
+      "pronunciation": "HAH-loh / GOH-than DAI-in"
+     },
+     {
+      "phrase": "Takk fyrir",
+      "meaning": "Obrigado",
+      "translation": "Obrigado",
+      "pronunciation": "tahk FIR-ir"
+     },
+     {
+      "phrase": "Vinsamlegast",
+      "meaning": "Por favor",
+      "translation": "Por favor",
+      "pronunciation": "VIN-sam-leh-gast"
+     },
+     {
+      "phrase": "Hvað kostar þetta?",
+      "meaning": "Quanto custa isto?",
+      "translation": "Quanto custa isto?",
+      "pronunciation": "kvath KOS-tar THET-ta"
+     },
+     {
+      "phrase": "Skál!",
+      "meaning": "Saúde!",
+      "translation": "Saúde!",
+      "pronunciation": "skowl"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "A colonização começou em 874, quando Ingólfur Arnarson se estabeleceu em Reykjavík, seguido por nórdicos e celtas. Em 930 foi fundado em Þingvellir o Alþingi, um dos parlamentos mais antigos ainda em funcionamento. A Islândia passou para a Noruega em 1262 e depois para a Dinamarca, obteve a soberania em 1918 e tornou-se república em 1944.",
+    "milestones": [
+     "874: Ingólfur Arnarson se estabelece em Reykjavík",
+     "930: fundação do Alþingi em Þingvellir",
+     "1262: união à coroa norueguesa",
+     "1944: proclamação da república (17 de junho)"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Kjötsúpa (sopa de cordeiro com legumes)",
+     "Plokkfiskur (ensopado de peixe com batata)",
+     "Hangikjöt (cordeiro defumado, prato de Natal)"
+    ],
+    "traditionalDrinks": [
+     "Brennivín (aguardente de alcaravia)",
+     "Malt og Appelsín (mistura natalina de malte e laranja)",
+     "Cervejas Einstök e Gull"
+    ],
+    "streetFoodAndDesserts": [
+     "Pylsur (cachorro-quente de cordeiro, 'eina með öllu' = com tudo)",
+     "Skyr (laticínio fermentado e espesso)",
+     "Kleinur (rosquinhas fritas trançadas)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Björk (música)",
+     "Halldór Laxness (Prêmio Nobel de Literatura, 1955)",
+     "Vigdís Finnbogadóttir (primeira mulher eleita democraticamente presidente no mundo)"
+    ],
+    "strongSectors": [
+     "Pesca e exportação de frutos do mar",
+     "Energia geotérmica/hidrelétrica e alumínio",
+     "Turismo de natureza e aventura"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Um país quase sem dinheiro vivo; cartões e pagamentos pelo celular funcionam em todo lugar. As bombas de combustível exigem cartão com PIN.",
+    "tippingCulture": "Não se espera gorjeta; o serviço já está incluído. Mesmo assim, um agrado por um serviço excepcional é bem-vindo.",
+    "economicPillars": "Turismo, pesca, fundição de alumínio (graças à energia renovável barata) e indústrias criativas e de tecnologia."
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Tomadas de dois pinos redondos (C/F), como na Turquia; não é preciso adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "A água fria da torneira está entre as mais puras do mundo; não compre água engarrafada. A quente é geotérmica e pode ter cheiro de enxofre, então beba a fria.",
+    "vaccines": [
+     "Vacinas de rotina (tétano, difteria, sarampo)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "112"
+   },
+   "tipping": {
+    "custom": "Não há costume de dar gorjeta; o serviço já está incluído.",
+    "standardPercent": 0,
+    "rule": "optional",
+    "note": "Uma pequena gorjeta para guias ou por um serviço excelente é possível, mas não é esperada."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA de 24%; restituição de até ~14% do preço",
+    "minSpend": "Mínimo de 6.000 ISK por nota fiscal",
+    "customsNote": "A restituição é feita na saída, no aeroporto de Keflavík; para valores altos, mostre os produtos na alfândega antes de despachar a bagagem."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 1,50 - 4,00",
+    "topCarriers": [
+     "Síminn",
+     "Vodafone Iceland",
+     "Nova"
+    ],
+    "airportSimTrapWarning": "O roaming com linhas turcas é muito caro. A loja 10-11 de Keflavík vende chips para turistas, mas um eSIM comprado antes costuma sair mais barato; em partes das Terras Altas não há sinal."
+   },
+   "touristScams": [
+    {
+     "title": "Cobranças por danos no carro alugado",
+     "desc": "Na devolução, podem cobrar caro por pequenos impactos de pedras ou danos causados pelo vento nas portas.",
+     "tip": "Filme o carro por todos os lados ao retirá-lo; contrate seguro contra cascalho (GP) e contra areia e cinzas (SAAP) e abra as portas com as duas mãos quando estiver ventando."
+    },
+    {
+     "title": "Passeios a geleiras e cavernas de gelo sem certificação",
+     "desc": "Alguns passeios baratos vendidos em redes sociais usam guias sem licença e são perigosos.",
+     "tip": "Escolha empresas licenciadas pelo Icelandic Tourist Board e guias de montanha certificados (AIMG)."
+    },
+    {
+     "title": "Pré-autorizações nos postos de gasolina",
+     "desc": "As bombas bloqueiam um valor alto no cartão, que pode levar dias para ser liberado.",
+     "tip": "Use cartões pré-pagos de combustível da N1, Olís ou Orkan ou pague no caixa."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Исландская крона (ISK)",

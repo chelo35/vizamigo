@@ -1211,6 +1211,309 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Euro (EUR)",
+   "bestMonths": "Abril – maio (temporada das tulipas e Dia do Rei, em 27 de abril) e junho – setembro; os invernos são frescos, com muito vento e chuva",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "É um país seguro, onde crimes violentos raramente atingem turistas. No centro de Amsterdã, na estação Centraal e nos trens, batedores de carteira e roubo de bicicletas são comuns.",
+    "commonScams": [
+     "Falsos traficantes e aliciadores nos arredores do Distrito da Luz Vermelha (De Wallen)",
+     "Bicicletas roubadas oferecidas a preço muito baixo (comprá-las também é crime)",
+     "Golpistas que se passam por policiais à paisana e pedem para revistar sua carteira e seus cartões"
+    ],
+    "safeTravelTips": [
+     "Não ande pelas ciclovias vermelhas; as bicicletas sempre têm a preferência.",
+     "Ao usar cartão por aproximação (OVpay) em trens, bondes e metrô, sempre registre a entrada e a saída.",
+     "Fumar maconha na rua é proibido no centro histórico de Amsterdã e dá multa."
+    ],
+    "emergencyNumbers": {
+     "police": "112 (não urgente: 0900-8844)",
+     "ambulance": "112",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99% (4G/5G muito forte em todo o país)",
+    "costPerGbUsd": "~US$ 1,50 - 3",
+    "esimAvailability": "Excelente",
+    "bestCarriers": [
+     "KPN",
+     "Vodafone",
+     "Odido"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Excelente (trens da NS, bonde, metrô e rede de ciclovias)",
+    "costLevel": "Caro",
+    "singleTicketUsd": "~US$ 3,50 - 4 (bilhete GVB de 1 hora em Amsterdã)",
+    "dailyPassUsd": "~US$ 10 - 12 (bilhete GVB de 24 horas)",
+    "popularRideApps": [
+     "NS app",
+     "9292",
+     "Uber",
+     "Bolt"
+    ],
+    "taxiAdvice": "Os táxis são muito caros. Nos trens, bondes e metrôs, dá para passar na entrada e na saída com cartão bancário por aproximação ou com o celular. Nas cidades, o mais prático é alugar uma bicicleta."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 60 - 90",
+    "dailyBudgetMidrangeUsd": "US$ 150 - 230",
+    "budgetMealUsd": "US$ 14 - 22 (kibbeling, falafel, menu do almoço)",
+    "coffeeUsd": "US$ 3,50 - 5",
+    "waterBottleUsd": "US$ 1,50 - 2,50",
+    "hostelDormUsd": "US$ 35 - 70 (mais caro em Amsterdã no verão)",
+    "hotel3StarUsd": "US$ 130 - 220",
+    "flightCostIndex": "Baixo (voo direto de ~3,5 h)",
+    "flightTip": "Há voos diretos para Amsterdã saindo de Istambul, Ancara, Esmirna e Antália; voar para Roterdã ou Eindhoven às vezes sai mais barato."
+   }
+  },
+  "enc": {
+   "language": {
+    "phrases": [
+     {
+      "phrase": "Hallo / Goedendag",
+      "meaning": "Olá / Bom dia",
+      "translation": "Olá / Bom dia",
+      "pronunciation": "JA-lo / JU-den-daj"
+     },
+     {
+      "phrase": "Dank je wel",
+      "meaning": "Muito obrigado",
+      "translation": "Muito obrigado",
+      "pronunciation": "DANK ye vel"
+     },
+     {
+      "phrase": "Sorry / Pardon",
+      "meaning": "Desculpe / Com licença",
+      "translation": "Desculpe / Com licença",
+      "pronunciation": "SO-ri / par-DON"
+     },
+     {
+      "phrase": "Hoeveel kost dit?",
+      "meaning": "Quanto custa isto?",
+      "translation": "Quanto custa isto?",
+      "pronunciation": "ju-VEIL kost dit"
+     },
+     {
+      "phrase": "Mag ik de rekening?",
+      "meaning": "Pode me trazer a conta?",
+      "translation": "Pode me trazer a conta?",
+      "pronunciation": "maj ik de RE-ke-ning"
+     }
+    ]
+   }
+  },
+  "itin": {
+   "routeName": "Países Baixos: canais de Amsterdã, jardins de tulipas, Haia e Roterdã",
+   "routeSummary": "Um roteiro de 7 dias fácil de fazer de trem: dos canais de Amsterdã, Patrimônio da UNESCO, aos campos de tulipas de Haarlem e Keukenhof, passando pelo legado real e pela porcelana de Haia e Delft, pela arquitetura ousada de Roterdã e pelos moinhos de Kinderdijk.",
+   "totalDays": 7,
+   "idealDurationText": "Roteiro clássico de 7 dias pelos Países Baixos",
+   "bestSeason": "Abril – maio (tulipas) ou junho – setembro",
+   "transportMode": "Trens da NS + bonde/metrô (cartão por aproximação) + bicicleta alugada",
+   "paceLevel": "Equilibrado (trechos curtos de trem, muita caminhada e bicicleta)",
+   "signatureGastronomy": {
+    "dishes": [
+     "Arenque Hollandse Nieuwe",
+     "Stamppot (purê com couve crespa)",
+     "Kibbeling",
+     "Kapsalon"
+    ],
+    "drinks": [
+     "Jenever (aguardente de zimbro)",
+     "Cerveja holandesa",
+     "Chocomel (achocolatado)"
+    ],
+    "streetFoods": [
+     "Stroopwafel",
+     "Poffertjes",
+     "Bitterballen"
+    ],
+    "diningAdvice": "O jantar é cedo (18h–19h). Muitos lugares só aceitam cartão (“PIN only”). Se você não come carne de porco, pergunte qual é o recheio das kroketten e bitterballen."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Capa de chuva e corta-vento (o tempo muda com frequência)",
+     "Cartão bancário por aproximação ou carteira digital (OVpay)",
+     "Calçado confortável para caminhar",
+     "Tomada tipo C/F (230 V); quem vem da Espanha não precisa de adaptador"
+    ],
+    "safetyAndEtiquette": [
+     "Não ande pelas ciclovias e fique de olho nas bicicletas nos cruzamentos.",
+     "É proibido fotografar as profissionais do Distrito da Luz Vermelha.",
+     "Não fale ao telefone nos vagões silenciosos (“Stilte”)."
+    ]
+   },
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Amsterdã (canais e museus)",
+     "recommendedDuration": "3 dias (centro, museus e bairros)",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Anel de canais (UNESCO) e passeio de barco",
+      "Rijksmuseum e Museu Van Gogh",
+      "Casa de Anne Frank",
+      "Bairro do Jordaan e Vondelpark"
+     ],
+     "activities": [
+      "Navegue pelos canais Prinsengracht e Herengracht, entre casas de mercadores do século XVII.",
+      "Admire “A Ronda Noturna”, de Rembrandt, no Rijksmuseum e os “Girassóis” no Museu Van Gogh, na Museumplein.",
+      "Alugue uma bicicleta e percorra as ruelas do Jordaan e o Vondelpark como um morador."
+     ],
+     "foodAndDrinks": [
+      "Arenque Hollandse Nieuwe (com cebola e picles)",
+      "Bitterballen (bolinhos de ragu com mostarda)",
+      "Appeltaart (torta de maçã holandesa)"
+     ],
+     "criticalTips": [
+      "Os ingressos para a Casa de Anne Frank só são vendidos on-line, geralmente com semanas de antecedência.",
+      "Nunca ande pelas ciclovias e sempre prenda a bicicleta com dois cadeados."
+     ],
+     "mapsQuery": "Amsterdam Canal Ring, Netherlands"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Haarlem e Keukenhof (região dos bulbos)",
+     "recommendedDuration": "1 dia (bate-volta de Amsterdã)",
+     "durationBadge": "1 dia",
+     "highlights": [
+      "Jardins de Keukenhof (fim de março – meados de maio)",
+      "Campos de tulipas do Bollenstreek",
+      "Grote Markt e Igreja de São Bavão, em Haarlem",
+      "Museu Frans Hals"
+     ],
+     "activities": [
+      "Passeie entre milhões de tulipas, jacintos e narcisos em Keukenhof.",
+      "Pedale ao lado dos campos coloridos de bulbos nos arredores de Lisse.",
+      "Descubra os canais tranquilos de Haarlem e as mesinhas ao ar livre da Grote Markt."
+     ],
+     "foodAndDrinks": [
+      "Poffertjes (minipanquecas com manteiga)",
+      "Jopenbier (cerveja histórica de Haarlem)",
+      "Stroopwafel feito na hora"
+     ],
+     "criticalTips": [
+      "Keukenhof só abre na primavera (aprox. do fim de março a meados de maio); compre on-line o ingresso com transporte incluído.",
+      "É proibido entrar nos campos ou arrancar flores; tire as fotos da borda."
+     ],
+     "mapsQuery": "Keukenhof, Lisse, Netherlands"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Haia e Delft (cidade real e porcelana azul)",
+     "recommendedDuration": "1-2 dias",
+     "durationBadge": "1 dia",
+     "highlights": [
+      "Mauritshuis (Moça com Brinco de Pérola)",
+      "Praia e píer de Scheveningen",
+      "Praça Markt e Nieuwe Kerk de Delft",
+      "Ateliê de porcelana Royal Delft"
+     ],
+     "activities": [
+      "Admire a “Moça com Brinco de Pérola”, de Vermeer, no Mauritshuis.",
+      "Caminhe pela orla do Mar do Norte em Scheveningen.",
+      "Percorra as ruas à beira dos canais de Delft e veja como é feita a porcelana azul e branca na Royal Delft."
+     ],
+     "foodAndDrinks": [
+      "Kibbeling (pedacinhos de bacalhau frito)",
+      "Broodje haring (sanduíche de arenque)",
+      "Queijos holandeses (Gouda, Leerdammer)"
+     ],
+     "criticalTips": [
+      "O bonde entre Haia e Delft leva cerca de 20 minutos, então dá para conhecer as duas em um só dia.",
+      "Em Scheveningen venta muito; leve uma jaqueta leve mesmo no verão."
+     ],
+     "mapsQuery": "Mauritshuis, The Hague, Netherlands"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Roterdã e Kinderdijk (arquitetura moderna e moinhos)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Markthal e Casas Cubo",
+      "Ponte Erasmus e Kop van Zuid",
+      "Moinhos de Kinderdijk (UNESCO)",
+      "Depot Boijmans Van Beuningen"
+     ],
+     "activities": [
+      "Percorra as barracas sob o enorme arco pintado da Markthal.",
+      "Pegue o Waterbus no cais da Erasmusbrug até os 19 moinhos históricos de Kinderdijk.",
+      "Contemple a cidade portuária do alto do Euromast ou do terraço do Depot Boijmans."
+     ],
+     "foodAndDrinks": [
+      "Kapsalon (invenção de Roterdã: döner, batata frita e queijo derretido)",
+      "Stroopwafel feito na hora na Markthal",
+      "Café coado de torrefações locais"
+     ],
+     "criticalTips": [
+      "O Waterbus é o jeito mais fácil de chegar a Kinderdijk; confira os horários antes.",
+      "De Roterdã, o trem chega ao aeroporto de Schiphol em cerca de 30–40 minutos."
+     ],
+     "mapsQuery": "Markthal, Rotterdam, Netherlands"
+    }
+   ]
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Tomadas europeias C/F (Schuko), de dois pinos redondos, iguais às da Turquia; não é preciso adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "A água da torneira está entre as melhores da Europa e é potável em todo lugar.",
+    "vaccines": [
+     "Vacinas de rotina (tríplice viral, tétano)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "112"
+   },
+   "tipping": {
+    "custom": "O serviço já está incluído nos preços; se você ficou satisfeito, é comum deixar 5-10 % ou arredondar a conta.",
+    "standardPercent": 10,
+    "rule": "round_up",
+    "note": "Em cafés e táxis, basta arredondar."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA de 21 %; recupera-se 10-14 % depois das comissões",
+    "minSpend": "Normalmente 50 € por loja ou nota fiscal",
+    "customsNote": "Peça o formulário nas lojas com Tax Free e carimbe-o na alfândega do último aeroporto de saída da UE (por ex., Schiphol) antes de despachar a bagagem."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 1,50 - 3",
+    "topCarriers": [
+     "KPN",
+     "Vodafone",
+     "Odido"
+    ],
+    "airportSimTrapWarning": "Os pontos de venda em Schiphol são caros; chips da Lebara ou da Lycamobile, vendidos em supermercados e bancas, ou um eSIM saem mais baratos. O roaming da UE não vale para chips turcos."
+   },
+   "touristScams": [
+    {
+     "title": "Traficantes de rua",
+     "desc": "Quem vende drogas na rua no Distrito da Luz Vermelha oferece substâncias falsas ou perigosas; a polícia alerta os turistas expressamente.",
+     "tip": "Não negocie com ninguém que tente vender algo para você na rua."
+    },
+    {
+     "title": "Bicicletas roubadas",
+     "desc": "Quem vende bicicletas muito baratas nas pontes está vendendo objetos roubados, e comprá-las também é crime.",
+     "tip": "Pegue bicicleta apenas em locadoras (por ex., MacBike, OV-fiets)."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Евро (EUR)",

@@ -1539,6 +1539,391 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Metical moçambicano (MZN)",
+   "bestMonths": "Maio – novembro (seco e ameno); janeiro – março é quente, chuvoso e temporada de ciclones; tubarões-baleia em Tofo o ano todo, baleias-jubarte de junho a outubro",
+   "safety": {
+    "safetyScore": 40,
+    "safetyLevel": "Cautela recomendada",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60",
+    "crimeRateSummary": "Os ataques de insurgentes armados continuam na província de Cabo Delgado, no norte; Turquia, Reino Unido e EUA desaconselham viagens para lá e para alguns distritos do norte de Niassa e Nampula. Em Maputo acontecem assaltos à mão armada, roubos de carros e sequestros para extorsão, e os protestos pós-eleitorais de 2024 – 2025 foram violentos.",
+    "commonScams": [
+     "Policiais de trânsito em blitze que inventam multas para pedir propina",
+     "Cambistas de rua que entregam meticais falsos ou contam a menos",
+     "Vendedores de praia que cobram adiantado por passeios para ver tubarões-baleia ou de dhow e somem"
+    ],
+    "safeTravelTips": [
+     "Não vá a Cabo Delgado nem aos distritos perigosos do norte; fique na rota litorânea do sul.",
+     "Leve uma cópia autenticada do passaporte; a polícia pede documentos com frequência.",
+     "Não pegue a estrada à noite nem ande a pé por Maputo depois que escurece."
+    ]
+   },
+   "internet": {
+    "networkCoverage": "4G bom em Maputo e nas cidades do litoral; fraco no interior e nas ilhas",
+    "costPerGbUsd": "~US$ 1,00 - 2,50",
+    "esimAvailability": "Média (há eSIMs internacionais; o chip local é mais barato e exige passaporte)",
+    "bestCarriers": [
+     "Vodacom Moçambique",
+     "Movitel",
+     "Tmcel",
+     "Airalo eSIM"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Precário (micro-ônibus chapa, longas distâncias)",
+    "costLevel": "Moderado",
+    "singleTicketUsd": "US$ 0,30 - 0,60 (micro-ônibus chapa)",
+    "dailyPassUsd": "Não existe",
+    "popularRideApps": [
+     "Yango",
+     "Tuk-tuks Txopela (Maputo)",
+     "Táxis do hotel"
+    ],
+    "taxiAdvice": "Em Maputo, o Yango é o mais prático porque mostra a tarifa antes; os táxis não têm taxímetro, então combine o preço antes. Os chapas lotados trazem risco de roubos e acidentes. Para longas distâncias, use voos domésticos da LAM ou um motorista de confiança, e nunca pegue a EN1 à noite."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 40 - 65",
+    "dailyBudgetMidrangeUsd": "US$ 110 - 180",
+    "budgetMealUsd": "US$ 4 - 9",
+    "coffeeUsd": "US$ 1,00 - 2,50",
+    "waterBottleUsd": "US$ 0,50 - 1,00",
+    "hostelDormUsd": "US$ 12 - 25",
+    "hotel3StarUsd": "US$ 60 - 120",
+    "flightCostIndex": "Alto (com escalas)",
+    "flightTip": "Para chegar a Maputo (MPM), o comum é voar via Doha (Qatar Airways), Adis Abeba (Ethiopian) ou Joanesburgo (Airlink, LAM); os voos regionais diretos de Joanesburgo para Vilanculos e Inhambane economizam tempo."
+   },
+   "plugType": "Tipo C, F, M (220V, 50Hz)"
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Cumprimente com um aperto de mão e “Bom dia / Boa tarde”; trate os mais velhos com respeito.",
+     "Fotografar policiais, militares, aeroportos e prédios oficiais pode dar problema.",
+     "Vista-se de forma discreta nas cidades litorâneas muçulmanas do norte (por exemplo, a Ilha de Moçambique)."
+    ],
+    "festivals": [
+     "Dia da Independência (25 de junho)",
+     "Festival de Timbila (Zavala, agosto – setembro, patrimônio imaterial da UNESCO)",
+     "Festival de Marrabenta (Maputo e Marracuene, fevereiro)"
+    ],
+    "lifestyle": "Uma cultura litorânea descontraída que mistura influências portuguesas, africanas, árabes e indianas; a marrabenta, os frutos do mar e os animados mercados de rua fazem parte do dia a dia."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Ilha de Moçambique (UNESCO)",
+     "Parque Nacional do Arquipélago de Bazaruto",
+     "Praia do Tofo (tubarões-baleia e raias-manta)",
+     "Parque Nacional da Gorongosa",
+     "Maputo: Casa de Ferro, Estação Central e a Baixa",
+     "Centro histórico de Inhambane"
+    ],
+    "bestSeasons": "Maio – novembro",
+    "travelStyleTip": "Concentre-se no litoral sul, entre Maputo, Tofo e Vilanculos; voe via Nampula para a Ilha de Moçambique e fique longe de Cabo Delgado."
+   },
+   "religion": {
+    "primaryReligions": "Cristãos ~60% (católicos ~27%, igrejas sionistas e protestantes), muçulmanos ~19% (maioria no litoral norte), crenças tradicionais",
+    "respectNorms": "Entre em igrejas e mesquitas com ombros e joelhos cobertos; tire os sapatos nas mesquitas e evite os horários de oração.",
+    "sacredSites": [
+     "Capela de Nossa Senhora do Baluarte (Ilha de Moçambique, 1522)",
+     "Catedral de Maputo (Nossa Senhora da Conceição)",
+     "Mesquita Jumma de Maputo (Baixa)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "A língua oficial é o português; também são muito faladas línguas bantas como o macua (norte), o changana e o ronga (sul), o sena e o ndau.",
+    "englishProficiency": "Baixo; nas vilas de praia turísticas fala-se inglês, mas no resto do país você vai precisar do português.",
+    "phrases": [
+     {
+      "phrase": "Bom dia",
+      "meaning": "Bom dia",
+      "translation": "Bom dia",
+      "pronunciation": "bong DEE-a"
+     },
+     {
+      "phrase": "Tudo bem?",
+      "meaning": "Tudo bem? / Como vai?",
+      "translation": "Tudo bem? / Como vai?",
+      "pronunciation": "TOO-doo beng"
+     },
+     {
+      "phrase": "Obrigado / Obrigada",
+      "meaning": "Obrigado (homem / mulher)",
+      "translation": "Obrigado (homem / mulher)",
+      "pronunciation": "o-bri-GAH-doo / o-bri-GAH-da"
+     },
+     {
+      "phrase": "Quanto custa?",
+      "meaning": "Quanto custa?",
+      "translation": "Quanto custa?",
+      "pronunciation": "KWAN-too KOOSH-ta"
+     },
+     {
+      "phrase": "Khanimambo",
+      "meaning": "Obrigado (em changana)",
+      "translation": "Obrigado (em changana)",
+      "pronunciation": "ka-nee-MAM-bo"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Durante séculos o litoral fez parte da rede comercial suaíli e árabe; Vasco da Gama chegou à Ilha de Moçambique em 1498, e Portugal governou por quase cinco séculos. Depois da guerra de independência liderada pela FRELIMO, o país se tornou independente em 25 de junho de 1975; a guerra civil de 1977 – 1992 terminou com os Acordos de Paz de Roma.",
+    "milestones": [
+     "1498: Vasco da Gama chega à Ilha de Moçambique",
+     "1964: início da guerra de independência",
+     "1975: independência (25 de junho)",
+     "1992: Acordos de Paz de Roma"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Matapa (folhas de mandioca com amendoim e coco)",
+     "Frango à zambeziana (frango ao molho de coco)",
+     "Camarões grelhados com piri-piri"
+    ],
+    "traditionalDrinks": [
+     "Cervejas 2M e Laurentina",
+     "Sura (vinho de palma)",
+     "Bebidas de caju (Inhambane)"
+    ],
+    "streetFoodAndDesserts": [
+     "Badjias (bolinhos fritos de feijão-fradinho)",
+     "Prego no pão (sanduíche de bife)",
+     "Bolo polana (bolo de castanha de caju e batata)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Eusébio (jogador de futebol lendário)",
+     "Mia Couto (romancista premiado)",
+     "Malangatana Ngwenya (pintor)"
+    ],
+    "strongSectors": [
+     "Gás natural e projetos de GNL",
+     "Alumínio (Mozal) e carvão",
+     "Castanha de caju, açúcar e turismo de praia"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Em Maputo os cartões são cada vez mais comuns, mas nas vilas de praia e nos mercados você vai precisar de meticais em espécie. Os caixas eletrônicos do Millennium BIM e do BCI aceitam Visa; em áreas turísticas às vezes aceitam rand e dólares, com câmbio ruim. O M-Pesa (Vodacom) é muito usado.",
+    "tippingCulture": "Nos restaurantes é comum deixar 10%; guias de mergulho e tripulações também recebem gorjeta.",
+    "economicPillars": "Exportação de gás, carvão e alumínio, agricultura (caju, açúcar, tabaco), portos e turismo."
+   }
+  },
+  "itin": {
+   "routeName": "Rota pelo litoral sul e pela Ilha de Moçambique: Maputo, Tofo, Bazaruto e Ilha de Moçambique",
+   "routeSummary": "Uma rota de 11 dias que vai da arquitetura portuguesa de Maputo aos tubarões-baleia do Tofo, às dunas e águas turquesa de Bazaruto e, de avião, à Ilha de Moçambique, Patrimônio da UNESCO (sem passar por Cabo Delgado, no norte).",
+   "totalDays": 11,
+   "bestSeason": "Maio – novembro",
+   "transportMode": "Carro com motorista (litoral sul) + voo doméstico (Nampula)",
+   "paceLevel": "Equilibrado (praia + mergulho + história)",
+   "signatureGastronomy": {
+    "dishes": [
+     "Matapa",
+     "Frango à zambeziana",
+     "Camarões piri-piri"
+    ],
+    "drinks": [
+     "2M",
+     "Laurentina",
+     "Sura"
+    ],
+    "streetFoods": [
+     "Badjias",
+     "Prego no pão",
+     "Bolo polana"
+    ],
+    "diningAdvice": "Os frutos do mar são frescos e baratos; pergunte o preço por quilo. Evite ostras cruas e gelo, e atenção: o piri-piri é bem picante."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Antimaláricos e repelente",
+     "Cópia autenticada do passaporte",
+     "Equipamento de snorkel e protetor solar seguro para recifes",
+     "Meticais e dólares em espécie"
+    ],
+    "safetyAndEtiquette": [
+     "Não vá a Cabo Delgado nem aos distritos perigosos do norte.",
+     "Mantenha a calma nas blitze e não pague nada sem recibo."
+    ]
+   },
+   "idealDurationText": "Rota de 11 dias",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Maputo (capital, Baixa e mercados)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Estação Central dos Caminhos de Ferro (CFM)",
+      "Casa de Ferro",
+      "Mercado Municipal e Mercado do Peixe",
+      "Fortaleza de Maputo"
+     ],
+     "activities": [
+      "Escolha frutos do mar no Mercado do Peixe e peça para prepararem nos restaurantes ao lado.",
+      "Percorra os prédios coloniais da Baixa.",
+      "Veja arte moçambicana contemporânea no Núcleo de Arte."
+     ],
+     "foodAndDrinks": [
+      "Camarões piri-piri",
+      "Matapa",
+      "Laurentina"
+     ],
+     "criticalTips": [
+      "Não ande a pé à noite; use o Yango ou um táxi do hotel.",
+      "Leve uma cópia do passaporte; as blitze policiais são frequentes."
+     ],
+     "mapsQuery": "Maputo, Mozambique"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Tofo e Inhambane (tubarões-baleia e praias)",
+     "recommendedDuration": "3 dias",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "“Safári oceânico” com tubarões-baleia",
+      "Ponto de mergulho Manta Reef",
+      "Praias do Tofo e do Tofinho",
+      "Centro histórico e catedral de Inhambane"
+     ],
+     "activities": [
+      "Faça snorkel com tubarões-baleia com uma operadora autorizada.",
+      "Mergulhe no Manta Reef.",
+      "Atravesse a baía de Inhambane de dhow e visite o mercado."
+     ],
+     "foodAndDrinks": [
+      "Matapa",
+      "Peixe grelhado com xima",
+      "Badjias"
+     ],
+     "criticalTips": [
+      "Não chegue a menos de 3 m dos tubarões-baleia nem toque neles.",
+      "De Maputo ao Tofo são ~7-8 horas; saia cedo."
+     ],
+     "mapsQuery": "Tofo, Inhambane, Mozambique"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Vilanculos e arquipélago de Bazaruto (dunas e águas turquesa)",
+     "recommendedDuration": "3 dias",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Dunas da ilha de Bazaruto",
+      "Ponto de snorkel Two Mile Reef",
+      "Ilhas de Magaruque e Benguerra",
+      "Dugongos e golfinhos (com sorte)"
+     ],
+     "activities": [
+      "Faça um passeio de um dia pelas ilhas num dhow tradicional.",
+      "Faça snorkel no Two Mile Reef.",
+      "Suba as dunas de Bazaruto para apreciar a paisagem."
+     ],
+     "foodAndDrinks": [
+      "Lagosta e lulas grelhadas",
+      "2M",
+      "Prego no pão"
+     ],
+     "criticalTips": [
+      "Pergunte se a taxa do parque nacional está incluída no preço.",
+      "Confira se o barco tem coletes salva-vidas e sombra; o sol é forte."
+     ],
+     "mapsQuery": "Vilanculos, Mozambique"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Ilha de Moçambique (cidade insular, Patrimônio da UNESCO)",
+     "recommendedDuration": "3 dias",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Fortaleza de São Sebastião",
+      "Capela de Nossa Senhora do Baluarte (1522)",
+      "Cidade de Pedra e Cidade de Macuti",
+      "Museu do Palácio de São Paulo"
+     ],
+     "activities": [
+      "Atravesse a ponte de 3,5 km e explore o centro histórico a pé.",
+      "Veja o pôr do sol da fortaleza.",
+      "Navegue de dhow até a ilha de Goa, ali perto, ou até as praias."
+     ],
+     "foodAndDrinks": [
+      "Curry de camarão com coco",
+      "Frango à zambeziana",
+      "Bolo polana"
+     ],
+     "criticalTips": [
+      "Voe até Nampula e siga de carro (~3 horas); não continue rumo a Cabo Delgado.",
+      "Vista-se de forma discreta nesta ilha de maioria muçulmana."
+     ],
+     "mapsQuery": "Ilha de Moçambique, Nampula, Mozambique"
+    }
+   ]
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F",
+     "M"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Os tipos C e F são comuns, e em alguns prédios há o tipo M sul-africano (três pinos redondos grossos); plugues europeus encaixam quase sempre."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "A água da torneira não é potável; beba água mineral. Na época das chuvas pode haver surtos de cólera; capriche na higiene das mãos.",
+    "vaccines": [
+     "Febre amarela (certificado se você vier de um país de risco)",
+     "Hepatite A e febre tifoide",
+     "Profilaxia contra malária (no país todo)",
+     "Cólera e raiva (consulte um médico conforme o risco)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "117"
+   },
+   "tipping": {
+    "custom": "Nos restaurantes é comum e espera-se 10%.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "É costume deixar alguns dólares por saída para guias de mergulho e tripulação."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA de 16%; sem restituição para turistas",
+    "minSpend": "Não se aplica",
+    "customsNote": "Não há restituição do IVA para turistas. É proibido exportar marfim, chifre de rinoceronte, coral e produtos de tartaruga; levar grandes quantias em meticais para fora do país é restrito."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "~US$ 1,00 - 2,50",
+    "topCarriers": [
+     "Vodacom Moçambique",
+     "Movitel",
+     "Tmcel"
+    ],
+    "airportSimTrapWarning": "O balcão da Vodacom no aeroporto de Maputo é prático, mas pede passaporte para o cadastro; no litoral, a Vodacom costuma ter a melhor cobertura."
+   },
+   "touristScams": [
+    {
+     "title": "“Multa” da polícia de trânsito",
+     "desc": "Nas blitze, podem cobrar de você uma multa em dinheiro por um colete ou documento “faltando”.",
+     "tip": "Tenha dois triângulos e um colete no carro e peça recibo."
+    },
+    {
+     "title": "Passeio de praia pago adiantado",
+     "desc": "Passeios baratos vendidos na praia podem ser cobrados adiantado e nunca acontecer.",
+     "tip": "Reserve com um centro de mergulho ou pelo seu lodge."
+    },
+    {
+     "title": "Cambista de rua",
+     "desc": "Uma cotação boa que termina com notas falsas ou dinheiro a menos.",
+     "tip": "Use caixas eletrônicos ou bancos."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Мозамбикский метикал (MZN)",

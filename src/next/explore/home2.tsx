@@ -17,7 +17,7 @@ import { Icon } from '../Icon';
 
 const TourShowcase = lazy(() => import('../BookingHub').then((m) => ({ default: m.TourShowcase })));
 const LOC: Record<string, string> = { tr: 'tr-TR', en: 'en-GB', de: 'de-DE', es: 'es-ES', ru: 'ru-RU', pt: 'pt-BR' };
-const CUR: Record<string, string> = { tr: 'try', en: 'eur', de: 'eur', es: 'eur', ru: 'eur' };
+const CUR: Record<string, string> = { tr: 'try', en: 'eur', de: 'eur', es: 'eur', pt: 'eur', ru: 'eur' };
 const iso = (d: Date) => d.toISOString().slice(0, 10);
 const money = (v: number, c: string, lang: string) => {
   try {
@@ -57,12 +57,12 @@ const Head: React.FC<{ id: string; eyebrow: string; title: string; action?: Reac
 export const HomeHero: React.FC<{ search: React.ReactNode; chips: { label: string; onClick: () => void }[] }> = ({ search, chips }) => {
   const { l } = useI18n();
   return (
-    <section className="vz-hero2" aria-label={l('Arama', 'Search', 'Suche', 'Búsqueda', 'Поиск')}>
+    <section className="vz-hero2" aria-label={l('Arama', 'Search', 'Suche', 'Búsqueda', 'Поиск', 'Busca')}>
       <div className="rd-wrap vz-hero2-in">
         <div className="vz-hero2-t">
-          <span className="vz-hero2-eye">{l('Pasaport · Vize · Yolculuk', 'Passport · Visa · Travel', 'Pass · Visum · Reise', 'Pasaporte · Visado · Viaje', 'Паспорт · Виза · Поездка')}</span>
-          <h1>{l('Nereye gidiyoruz?', 'Where are we going?', 'Wohin geht’s?', '¿A dónde vamos?', 'Куда едем?')}</h1>
-          <p>{l('199 ülkenin vize kuralı, uçak, otel ve turlar tek aramada. Resmî kaynaklı, beş dilde, ücretsiz.', 'Visa rules for 199 countries plus flights, hotels and tours in one search. Official sources, five languages, free.', 'Visaregeln für 199 Länder plus Flüge, Hotels und Touren in einer Suche. Amtliche Quellen, fünf Sprachen, kostenlos.', 'Requisitos de visado de 199 países y vuelos, hoteles y tours en una sola búsqueda. Fuentes oficiales, cinco idiomas, gratis.', 'Визовые правила 199 стран, билеты, отели и туры в одном поиске. Официальные источники, пять языков, бесплатно.')}</p>
+          <span className="vz-hero2-eye">{l('Pasaport · Vize · Yolculuk', 'Passport · Visa · Travel', 'Pass · Visum · Reise', 'Pasaporte · Visado · Viaje', 'Паспорт · Виза · Поездка', 'Passaporte · Visto · Viagem')}</span>
+          <h1>{l('Nereye gidiyoruz?', 'Where are we going?', 'Wohin geht’s?', '¿A dónde vamos?', 'Куда едем?', 'Para onde vamos?')}</h1>
+          <p>{l('199 ülkenin vize kuralı, uçak, otel ve turlar tek aramada. Resmî kaynaklı, altı dilde, ücretsiz.', 'Visa rules for 199 countries plus flights, hotels and tours in one search. Official sources, six languages, free.', 'Visaregeln für 199 Länder plus Flüge, Hotels und Touren in einer Suche. Amtliche Quellen, sechs Sprachen, kostenlos.', 'Requisitos de visado de 199 países y vuelos, hoteles y tours en una sola búsqueda. Fuentes oficiales, seis idiomas, gratis.', 'Визовые правила 199 стран, билеты, отели и туры в одном поиске. Официальные источники, шесть языков, бесплатно.', 'Requisitos de visto de 199 países e voos, hotéis e tours em uma só busca. Fontes oficiais, seis idiomas, grátis.')}</p>
         </div>
         <div className="vz-hero2-chips">
           {chips.map((c) => (
@@ -162,8 +162,8 @@ export const CheapFlights: React.FC<{ passport: string; onOpenCountry: (c: strin
     <section ref={ref} className="vz-home-sec" aria-labelledby="vz-h-fares">
       <Head
         id="vz-h-fares"
-        eyebrow={l('Fırsatlar · bu hafta', 'Deals · this week', 'Angebote · diese Woche', 'Ofertas · esta semana', 'Скидки · эта неделя')}
-        title={l('Vizesiz rotalara en ucuz uçuşlar', 'Cheapest flights to visa-free places', 'Günstigste Flüge zu visumfreien Zielen', 'Vuelos más baratos a destinos sin visado', 'Самые дешёвые билеты туда, где не нужна виза')}
+        eyebrow={l('Fırsatlar · bu hafta', 'Deals · this week', 'Angebote · diese Woche', 'Ofertas · esta semana', 'Скидки · эта неделя', 'Ofertas · esta semana')}
+        title={l('Vizesiz rotalara en ucuz uçuşlar', 'Cheapest flights to visa-free places', 'Günstigste Flüge zu visumfreien Zielen', 'Vuelos más baratos a destinos sin visado', 'Самые дешёвые билеты туда, где не нужна виза', 'Voos mais baratos para destinos sem visto')}
       />
       <div className="vz-fares">
         {(fares || [0, 1, 2, 3]).map((f, i) =>
@@ -173,16 +173,16 @@ export const CheapFlights: React.FC<{ passport: string; onOpenCountry: (c: strin
             <button key={f.code} type="button" className="vz-fare" onClick={() => open(f.code)}>
               <img src={img(f.code)} alt="" loading="lazy" decoding="async" />
               <span className="vz-fare-b">
-                <small className="ok">{items.get(f.code)?.id ? l('Kimlikle giriş', 'ID card entry', 'Einreise mit Ausweis', 'Entrada con DNI', 'По ID-карте') : l('Vizesiz', 'Visa-free', 'Visumfrei', 'Sin visado', 'Без визы')}{/^\d+$/.test(items.get(f.code)?.v || '') ? ` · ${items.get(f.code)!.v} ${l('gün', 'days', 'Tage', 'días', 'дн.')}` : ''}</small>
+                <small className="ok">{items.get(f.code)?.id ? l('Kimlikle giriş', 'ID card entry', 'Einreise mit Ausweis', 'Entrada con DNI', 'По ID-карте', 'Entrada com RG') : l('Vizesiz', 'Visa-free', 'Visumfrei', 'Sin visado', 'Без визы', 'Sem visto')}{/^\d+$/.test(items.get(f.code)?.v || '') ? ` · ${items.get(f.code)!.v} ${l('gün', 'days', 'Tage', 'días', 'дн.', 'dias')}` : ''}</small>
                 <b>{getCountryName(f.code, language)} <span>{from} → {f.hub}</span></b>
-                <small>{day(f.dep)}{f.ret ? ` – ${day(f.ret)}` : ''}{f.transfers === 0 ? ` · ${l('aktarmasız', 'non-stop', 'nonstop', 'directo', 'без пересадок')}` : ''}</small>
+                <small>{day(f.dep)}{f.ret ? ` – ${day(f.ret)}` : ''}{f.transfers === 0 ? ` · ${l('aktarmasız', 'non-stop', 'nonstop', 'directo', 'без пересадок', 'direto')}` : ''}</small>
                 <strong>{money(f.price, f.cur, language)}</strong>
               </span>
             </button>
           )
         )}
       </div>
-      <p className="vz-h2-note">{l('Aviasales’te son günlerde görülen en düşük gidiş-dönüş fiyatları, kişi başı. Karta dokununca o ülkenin uçuş bölümü açılır.', 'Lowest return fares seen on Aviasales recently, per person. Tap a card to open that country’s flights.', 'Niedrigste kürzlich gesehene Hin- und Rückflugpreise auf Aviasales, pro Person.', 'Tarifas de ida y vuelta más bajas vistas en Aviasales, por persona.', 'Минимальные цены туда-обратно на Aviasales, на человека.')}</p>
+      <p className="vz-h2-note">{l('Aviasales’te son günlerde görülen en düşük gidiş-dönüş fiyatları, kişi başı. Karta dokununca o ülkenin uçuş bölümü açılır.', 'Lowest return fares seen on Aviasales recently, per person. Tap a card to open that country’s flights.', 'Niedrigste kürzlich gesehene Hin- und Rückflugpreise auf Aviasales, pro Person.', 'Tarifas de ida y vuelta más bajas vistas en Aviasales, por persona.', 'Минимальные цены туда-обратно на Aviasales, на человека.', 'Tarifas de ida e volta mais baixas vistas na Aviasales, por pessoa.')}</p>
     </section>
   );
 };
@@ -206,10 +206,10 @@ export const DayTours: React.FC<{ passport: string }> = ({ passport }) => {
     <section ref={ref} className="vz-home-sec" aria-labelledby="vz-h-day">
       <Head
         id="vz-h-day"
-        eyebrow={l('Günün ülkesi', 'Country of the day', 'Land des Tages', 'País del día', 'Страна дня')}
-        title={l(`${getCountryName(code, language)}: turlar ve aktiviteler`, `Things to do in ${en}`, `Erlebnisse: ${getCountryName(code, language)}`, `Qué hacer en ${getCountryName(code, language)}`, `Чем заняться: ${getCountryName(code, language)}`)}
+        eyebrow={l('Günün ülkesi', 'Country of the day', 'Land des Tages', 'País del día', 'Страна дня', 'País do dia')}
+        title={l(`${getCountryName(code, language)}: turlar ve aktiviteler`, `Things to do in ${en}`, `Erlebnisse: ${getCountryName(code, language)}`, `Qué hacer en ${getCountryName(code, language)}`, `Чем заняться: ${getCountryName(code, language)}`, `O que fazer em ${getCountryName(code, language)}`)}
         action={
-          <div className="vz-h2-chips" role="group" aria-label={l('Ülke', 'Country', 'Land', 'País', 'Страна')}>
+          <div className="vz-h2-chips" role="group" aria-label={l('Ülke', 'Country', 'Land', 'País', 'Страна', 'País')}>
             {chips.map((c) => (
               <button key={c} type="button" className={c === code ? 'on' : ''} onClick={() => setCode(c)}>{getCountryName(c, language)}</button>
             ))}
@@ -219,7 +219,7 @@ export const DayTours: React.FC<{ passport: string }> = ({ passport }) => {
       <div className="vz-daytours">
         {near && (
           <Suspense fallback={<div className="vz-skel" style={{ height: 320 }} />}>
-            <TourShowcase key={code} q={tq} country={en} n={8} money={(v: number, c: string) => money(v, c, language)} fallback={<p className="vz-h2-note">{l('Bu ülke için turlar şu an yüklenemedi.', 'Tours could not be loaded right now.', 'Touren konnten nicht geladen werden.', 'No se pudieron cargar los tours.', 'Не удалось загрузить экскурсии.')}</p>} />
+            <TourShowcase key={code} q={tq} country={en} n={8} money={(v: number, c: string) => money(v, c, language)} fallback={<p className="vz-h2-note">{l('Bu ülke için turlar şu an yüklenemedi.', 'Tours could not be loaded right now.', 'Touren konnten nicht geladen werden.', 'No se pudieron cargar los tours.', 'Не удалось загрузить экскурсии.', 'Não foi possível carregar os tours.')}</p>} />
           </Suspense>
         )}
       </div>
@@ -258,11 +258,11 @@ export const PackEasy: React.FC<{ onEasy: () => void; onPlanner: () => void }> =
     };
   }, [near, language]);
   return (
-    <section ref={ref} className="vz-home-sec vz-pe" aria-label={l('Paket turlar ve kolay tatil', 'Multi-day tours and easy trip', 'Rundreisen und einfache Reise', 'Tours y viaje fácil', 'Туры и лёгкая поездка')}>
+    <section ref={ref} className="vz-home-sec vz-pe" aria-label={l('Paket turlar ve kolay tatil', 'Multi-day tours and easy trip', 'Rundreisen und einfache Reise', 'Tours y viaje fácil', 'Туры и лёгкая поездка', 'Tours e viagem sem complicação')}>
       <div className="vz-pe-card">
-        <span className="vz-eyebrow">{l('Rehberli · konaklama dahil', 'Guided · stays included', 'Geführt · Unterkunft inklusive', 'Guiados · alojamiento incluido', 'С гидом · проживание включено')}</span>
-        <h2>{l('Paket turlar', 'Multi-day tours', 'Rundreisen', 'Tours de varios días', 'Многодневные туры')}</h2>
-        <p className="vz-pe-note"><Icon name="plane" size={15} /> {l('Uçak bileti fiyata dahil değil; her turda, tur tarihine göre uçuşu tek dokunuşla ekleyebilirsin.', 'Flights are not included; on every tour you can add flights for your tour dates in one tap.', 'Flüge sind nicht inklusive; bei jeder Tour kannst du passende Flüge mit einem Tipp hinzufügen.', 'Los vuelos no están incluidos; en cada tour puedes añadir vuelos para tus fechas con un toque.', 'Перелёт не включён; к каждому туру можно добавить билеты на ваши даты одним нажатием.')}</p>
+        <span className="vz-eyebrow">{l('Rehberli · konaklama dahil', 'Guided · stays included', 'Geführt · Unterkunft inklusive', 'Guiados · alojamiento incluido', 'С гидом · проживание включено', 'Guiados · hospedagem incluída')}</span>
+        <h2>{l('Paket turlar', 'Multi-day tours', 'Rundreisen', 'Tours de varios días', 'Многодневные туры', 'Tours de vários dias')}</h2>
+        <p className="vz-pe-note"><Icon name="plane" size={15} /> {l('Uçak bileti fiyata dahil değil; her turda, tur tarihine göre uçuşu tek dokunuşla ekleyebilirsin.', 'Flights are not included; on every tour you can add flights for your tour dates in one tap.', 'Flüge sind nicht inklusive; bei jeder Tour kannst du passende Flüge mit einem Tipp hinzufügen.', 'Los vuelos no están incluidos; en cada tour puedes añadir vuelos para tus fechas con un toque.', 'Перелёт не включён; к каждому туру можно добавить билеты на ваши даты одним нажатием.', 'Os voos não estão incluídos; em cada tour você pode adicionar voos para as suas datas com um toque.')}</p>
         <div className="vz-pe-list">
           {list.map((p) => (
             <a key={p.id} href={`${base}#${p.id}`}>
@@ -272,21 +272,21 @@ export const PackEasy: React.FC<{ onEasy: () => void; onPlanner: () => void }> =
                 <small>{p.route}</small>
               </span>
               <span className="vz-pe-r">
-                <em>{l(`${p.days} gün`, `${p.days} days`, `${p.days} Tage`, `${p.days} días`, `${p.days} дн.`)}</em>
-                {from[p.id] && <strong><small>{l('başlangıç', 'from', 'ab', 'desde', 'от')}</small>{from[p.id]}</strong>}
+                <em>{l(`${p.days} gün`, `${p.days} days`, `${p.days} Tage`, `${p.days} días`, `${p.days} дн.`, `${p.days} dias`)}</em>
+                {from[p.id] && <strong><small>{l('başlangıç', 'from', 'ab', 'desde', 'от', 'a partir de')}</small>{from[p.id]}</strong>}
               </span>
             </a>
           ))}
         </div>
-        <a className="vz-btn vz-btn-soft sm" href={base}>{l('Tüm paket turlar', 'All multi-day tours', 'Alle Rundreisen', 'Todos los tours', 'Все туры')}</a>
+        <a className="vz-btn vz-btn-soft sm" href={base}>{l('Tüm paket turlar', 'All multi-day tours', 'Alle Rundreisen', 'Todos los tours', 'Все туры', 'Todos os tours')}</a>
       </div>
       <div className="vz-pe-card easy">
-        <span className="vz-eyebrow">{l('Kolay tatil', 'Easy trip', 'Einfache Reise', 'Viaje fácil', 'Лёгкая поездка')}</span>
-        <h2>{l('Uçuş + otel + transfer + sigorta, tek planda', 'Flights + hotel + transfer + insurance in one plan', 'Flug + Hotel + Transfer + Versicherung in einem Plan', 'Vuelo + hotel + traslado + seguro en un plan', 'Перелёт + отель + трансфер + страховка в одном плане')}</h2>
-        <p>{l('Tarihine göre uçuş fiyatını, oteli ve toplam bütçeyi birlikte hesaplar; daha ucuz alternatif günleri önerir.', 'Works out flight price, hotel and total budget for your dates, and suggests cheaper days.', 'Berechnet Flugpreis, Hotel und Gesamtbudget für deine Daten und schlägt günstigere Tage vor.', 'Calcula vuelo, hotel y presupuesto total para tus fechas y sugiere días más baratos.', 'Считает билеты, отель и общий бюджет на ваши даты и предлагает более дешёвые дни.')}</p>
+        <span className="vz-eyebrow">{l('Kolay tatil', 'Easy trip', 'Einfache Reise', 'Viaje fácil', 'Лёгкая поездка', 'Viagem sem complicação')}</span>
+        <h2>{l('Uçuş + otel + transfer + sigorta, tek planda', 'Flights + hotel + transfer + insurance in one plan', 'Flug + Hotel + Transfer + Versicherung in einem Plan', 'Vuelo + hotel + traslado + seguro en un plan', 'Перелёт + отель + трансфер + страховка в одном плане', 'Voo + hotel + transfer + seguro em um só plano')}</h2>
+        <p>{l('Tarihine göre uçuş fiyatını, oteli ve toplam bütçeyi birlikte hesaplar; daha ucuz alternatif günleri önerir.', 'Works out flight price, hotel and total budget for your dates, and suggests cheaper days.', 'Berechnet Flugpreis, Hotel und Gesamtbudget für deine Daten und schlägt günstigere Tage vor.', 'Calcula vuelo, hotel y presupuesto total para tus fechas y sugiere días más baratos.', 'Считает билеты, отель и общий бюджет на ваши даты и предлагает более дешёвые дни.', 'Calcula voo, hotel e orçamento total para as suas datas e sugere dias mais baratos.')}</p>
         <div className="vz-actions">
-          <button type="button" className="vz-btn vz-btn-primary sm" onClick={onEasy}>{l('Planlamaya başla', 'Start planning', 'Planung starten', 'Empezar a planificar', 'Начать')}</button>
-          <button type="button" className="vz-btn vz-btn-ghost sm" onClick={onPlanner}>{l('Seyahat planlayıcı', 'Trip planner', 'Reiseplaner', 'Planificador', 'Планировщик')}</button>
+          <button type="button" className="vz-btn vz-btn-primary sm" onClick={onEasy}>{l('Planlamaya başla', 'Start planning', 'Planung starten', 'Empezar a planificar', 'Начать', 'Começar a planejar')}</button>
+          <button type="button" className="vz-btn vz-btn-ghost sm" onClick={onPlanner}>{l('Seyahat planlayıcı', 'Trip planner', 'Reiseplaner', 'Planificador', 'Планировщик', 'Planejador')}</button>
         </div>
       </div>
     </section>
@@ -301,8 +301,8 @@ export const ChangesGuides: React.FC = () => {
   return (
     <div className="vz-side">
       <div className="vz-side-card">
-        <span className="vz-eyebrow">{l('Güncel', 'Up to date', 'Aktuell', 'Actualizado', 'Актуально')}</span>
-        <h3>{l('Güncel rehberler: kaynaklı ve tarihli', 'Travel rules 2026: sourced and dated', 'Reiseregeln 2026: mit Quellen und Datum', 'Normas de viaje 2026: con fuentes y fecha', 'Правила въезда 2026: с источниками и датой')}</h3>
+        <span className="vz-eyebrow">{l('Güncel', 'Up to date', 'Aktuell', 'Actualizado', 'Актуально', 'Atualizado')}</span>
+        <h3>{l('Güncel rehberler: kaynaklı ve tarihli', 'Travel rules 2026: sourced and dated', 'Reiseregeln 2026: mit Quellen und Datum', 'Normas de viaje 2026: con fuentes y fecha', 'Правила въезда 2026: с источниками и датой', 'Regras de viagem 2026: com fontes e data')}</h3>
         <ul className="vz-side-links">
           <li>
             <a href={`/${language}/info/${wtgIdFor(new Date().getMonth() + 1)}`}>
@@ -329,10 +329,10 @@ export const TrustStrip: React.FC = () => {
   const { l } = useI18n();
   return (
     <div className="vz-trust">
-      <span><Icon name="shield" size={16} />{l('Resmî kaynaklı vize bilgisi, kontrol tarihiyle', 'Official-source visa info with check dates', 'Visa-Infos aus amtlichen Quellen mit Prüfdatum', 'Información oficial con fecha de revisión', 'Официальные данные с датой проверки')}</span>
-      <span><Icon name="globe" size={16} />{l('199 ülke · 5 dil', '199 countries · 5 languages', '199 Länder · 5 Sprachen', '199 países · 5 idiomas', '199 стран · 5 языков')}</span>
-      <span><Icon name="handshake" size={16} />{l('Fiyatlar güvenilir ortaklardan: Aviasales, Booking, Viator', 'Prices from trusted partners: Aviasales, Booking, Viator', 'Preise von Partnern: Aviasales, Booking, Viator', 'Precios de socios: Aviasales, Booking, Viator', 'Цены партнёров: Aviasales, Booking, Viator')}</span>
-      <span><Icon name="check" size={16} />{l('Ücretsiz, üyelik gerekmez', 'Free, no sign-up needed', 'Kostenlos, ohne Anmeldung', 'Gratis, sin registro', 'Бесплатно, без регистрации')}</span>
+      <span><Icon name="shield" size={16} />{l('Resmî kaynaklı vize bilgisi, kontrol tarihiyle', 'Official-source visa info with check dates', 'Visa-Infos aus amtlichen Quellen mit Prüfdatum', 'Información oficial con fecha de revisión', 'Официальные данные с датой проверки', 'Informação oficial com data de revisão')}</span>
+      <span><Icon name="globe" size={16} />{l('199 ülke · 6 dil', '199 countries · 6 languages', '199 Länder · 6 Sprachen', '199 países · 6 idiomas', '199 стран · 6 языков', '199 países · 6 idiomas')}</span>
+      <span><Icon name="handshake" size={16} />{l('Fiyatlar güvenilir ortaklardan: Aviasales, Booking, Viator', 'Prices from trusted partners: Aviasales, Booking, Viator', 'Preise von Partnern: Aviasales, Booking, Viator', 'Precios de socios: Aviasales, Booking, Viator', 'Цены партнёров: Aviasales, Booking, Viator', 'Preços de parceiros: Aviasales, Booking, Viator')}</span>
+      <span><Icon name="check" size={16} />{l('Ücretsiz, üyelik gerekmez', 'Free, no sign-up needed', 'Kostenlos, ohne Anmeldung', 'Gratis, sin registro', 'Бесплатно, без регистрации', 'Grátis, sem cadastro')}</span>
     </div>
   );
 };

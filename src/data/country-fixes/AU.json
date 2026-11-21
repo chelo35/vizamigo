@@ -1427,6 +1427,363 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Dólar australiano (AUD)",
+   "plugType": "Tipo I (230V, 50Hz)",
+   "bestMonths": "Hemisfério sul: setembro a novembro (primavera) e março a maio (outono) para Sydney e Melbourne; de dezembro a fevereiro é verão (praia, risco de incêndios) e de junho a agosto, inverno. Para o norte tropical (Cairns, Darwin) e Uluru, o melhor é a estação seca, de maio a outubro; de novembro a abril há chuvas e ciclones no norte",
+   "safety": {
+    "crimeRateSummary": "A criminalidade é baixa; nas grandes cidades há uma ou outra briga à noite e pequenos furtos. Os principais riscos vêm da natureza: radiação UV intensa, correntes de retorno, crocodilos e águas-vivas no norte, incêndios no verão e grandes distâncias desertas no outback.",
+    "commonScams": [
+     "Anúncios falsos de aluguel para estadias longas que pedem caução adiantada",
+     "Ofertas de emprego falsas ou trabalho rural mal pago para quem está com working holiday",
+     "Sites falsos de “visto/ETA” ou de pagamento de multas com aparência oficial"
+    ],
+    "safeTravelTips": [
+     "Entre no mar só em praias com salva-vidas, entre as bandeiras vermelhas e amarelas.",
+     "No norte, respeite as placas de crocodilos; de novembro a maio, use roupa de proteção contra águas-vivas no litoral de Queensland.",
+     "No outback, leve bastante água e combustível e avise alguém sobre sua rota; use chapéu e protetor FPS 50+."
+    ],
+    "emergencyNumbers": {
+     "police": "000",
+     "ambulance": "000",
+     "general": "000 (112)"
+    },
+    "safetyScore": 85,
+    "safetyLevel": "Excepcionalmente seguro",
+    "badgeColor": "bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Excelente 4G/5G nas cidades e no litoral; sem sinal em grande parte do outback (a Telstra tem a maior cobertura)",
+    "costPerGbUsd": "~US$ 0,50 - 2",
+    "esimAvailability": "Excelente – eSIMs pré-pagos da Telstra, Optus e Vodafone e eSIMs internacionais amplamente disponíveis",
+    "bestCarriers": [
+     "Telstra",
+     "Optus",
+     "Vodafone"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Muito bom – trens, metrô e ferries em Sydney (Opal), uma das maiores redes de bonde do mundo em Melbourne (myki, com zona gratuita no centro); as distâncias são enormes, então vale a pena voar",
+    "costLevel": "Caro",
+    "singleTicketUsd": "~2,50 - 6 $ (Opal / myki, conforme a distância)",
+    "dailyPassUsd": "~7,50 - 13 $ (teto diário do myki e do Opal)",
+    "popularRideApps": [
+     "Uber",
+     "DiDi",
+     "13cabs"
+    ],
+    "taxiAdvice": "Em Sydney você não precisa do cartão Opal; pague com cartão bancário por aproximação ou com o celular (em Melbourne é preciso o cartão myki). Uber e DiDi são comuns e seguros; os táxis usam taxímetro, com acréscimos para aeroporto e horário noturno."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 60 - 90",
+    "dailyBudgetMidrangeUsd": "US$ 150 - 260",
+    "budgetMealUsd": "US$ 12 - 20",
+    "coffeeUsd": "US$ 3 - 4,50",
+    "waterBottleUsd": "US$ 1,50 - 3",
+    "hostelDormUsd": "US$ 25 - 45",
+    "hotel3StarUsd": "US$ 110 - 190",
+    "flightCostIndex": "Muito alto (com escala, ~20-24 h)",
+    "flightTip": "A Turkish Airlines voa de Istambul para Melbourne via Cingapura e para Sydney via Kuala Lumpur, com uma escala; Emirates, Qatar Airways e Singapore Airlines são boas alternativas. Dentro do país, voe de Qantas, Virgin Australia ou Jetstar; destinos remotos como Cairns e Uluru exigem voo doméstico."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "O trato é informal e igualitário; todo mundo se chama pelo primeiro nome, e se gabar é malvisto.",
+     "Nos pubs existe o “shout”: cada pessoa do grupo paga uma rodada, revezando.",
+     "Respeite a cultura aborígene e dos povos das ilhas do Estreito de Torres; escalar Uluru é proibido desde 2019, e alguns lugares sagrados não podem ser fotografados."
+    ],
+    "festivals": [
+     "Queima de fogos de Réveillon em Sydney (31 de dezembro)",
+     "Festival de luzes Vivid Sydney (maio – junho)",
+     "Dia de Anzac (25 de abril – homenagem a Galípoli)"
+    ],
+    "lifestyle": "A vida ao ar livre é central: surfe de manhã, churrasco no parque, cultura do café (flat white) e paixão por críquete e futebol australiano (AFL). O equilíbrio entre vida e trabalho é valorizado, e as lojas fecham cedo."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Opera House de Sydney e Harbour Bridge (UNESCO)",
+     "Grande Barreira de Corais (Cairns / Port Douglas)",
+     "Parque Nacional Uluru – Kata Tjuta",
+     "Great Ocean Road e os Doze Apóstolos",
+     "Floresta tropical de Daintree",
+     "Blue Mountains (Montanhas Azuis)"
+    ],
+    "bestSeasons": "Hemisfério sul: setembro a novembro (primavera) e março a maio (outono) para Sydney e Melbourne; de dezembro a fevereiro é verão (praia, risco de incêndios) e de junho a agosto, inverno. Para o norte tropical (Cairns, Darwin) e Uluru, o melhor é a estação seca, de maio a outubro; de novembro a abril há chuvas e ciclones no norte",
+    "travelStyleTip": "A Austrália é quase do tamanho da Europa; numa viagem de menos de duas semanas, escolha no máximo três regiões e voe entre elas. Para viajantes turcos, o Memorial de Atatürk em Canberra e o legado Anzac ligado a Galípoli são de interesse especial."
+   },
+   "religion": {
+    "primaryReligions": "Cristianismo (~44 %), sem religião (~39 %), islamismo (~3 %), hinduísmo (~3 %), budismo (~2,5 %); tradições espirituais aborígenes com mais de 65.000 anos.",
+    "respectNorms": "A sociedade é laica e multicultural; em locais de culto, roupas discretas bastam. Respeite sempre as placas e as proibições de fotos nos lugares sagrados aborígenes.",
+    "sacredSites": [
+     "Uluru (rocha sagrada do povo anangu)",
+     "Catedral de St Mary (Sydney)",
+     "Mesquita Auburn Gallipoli (Sydney – construída pela comunidade turca)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Inglês (oficial de fato); nos lares se falam mais de 300 línguas, e as línguas aborígenes estão sendo revitalizadas.",
+    "englishProficiency": "Língua materna; a gíria australiana (abreviações e terminações “-ie/-o”) pode confundir no começo.",
+    "phrases": [
+     {
+      "phrase": "G’day (mate)!",
+      "meaning": "Olá (parceiro)!",
+      "translation": "Olá (parceiro)!",
+      "pronunciation": "g’DAY mayt"
+     },
+     {
+      "phrase": "How ya going?",
+      "meaning": "Tudo bem?",
+      "translation": "Tudo bem?",
+      "pronunciation": "how-ya-GO-in"
+     },
+     {
+      "phrase": "Cheers",
+      "meaning": "Obrigado(a) / Saúde",
+      "translation": "Obrigado(a) / Saúde",
+      "pronunciation": "CHEERZ"
+     },
+     {
+      "phrase": "No worries",
+      "meaning": "Sem problemas / De nada",
+      "translation": "Sem problemas / De nada",
+      "pronunciation": "noh WUH-reez"
+     },
+     {
+      "phrase": "Arvo",
+      "meaning": "À tarde",
+      "translation": "À tarde",
+      "pronunciation": "AH-voh"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Há mais de 65.000 anos o continente é o lar dos povos aborígenes e das ilhas do Estreito de Torres, uma das culturas contínuas mais antigas do mundo. Em 1788 foi fundada uma colônia britânica e, em 1901, seis colônias se uniram na Comunidade da Austrália. A campanha de Galípoli de 1915 (Anzac) é fundamental para a identidade nacional.",
+    "milestones": [
+     "1788: A Primeira Frota chega a Sydney Cove",
+     "1901: Federação da Austrália",
+     "1915: Campanha de Galípoli e a lenda Anzac",
+     "2008: Pedido de desculpas nacional às Gerações Roubadas"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Meat pie (torta de carne)",
+     "Churrasco australiano (costeletas de cordeiro, linguiças, camarões)",
+     "Barramundi"
+    ],
+    "traditionalDrinks": [
+     "Flat white",
+     "Shiraz do vale de Barossa",
+     "Ginger beer de Bundaberg"
+    ],
+    "streetFoodAndDesserts": [
+     "Pavlova (merengue com frutas)",
+     "Lamington (bolo de chocolate e coco)",
+     "Sausage sizzle (linguiça grelhada no pão)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Cathy Freeman (velocista campeã olímpica)",
+     "Sir Donald Bradman (lenda do críquete)",
+     "Howard Florey (Nobel que transformou a penicilina em medicamento)"
+    ],
+    "strongSectors": [
+     "Mineração e energia (ferro, lítio, GNL)",
+     "Educação internacional",
+     "Agricultura (carne bovina, trigo, vinho)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Paga-se por aproximação com cartão ou celular em quase todo lugar, e dinheiro vivo quase não é usado. Cartões podem ter acréscimo de 1-2 %, e os cafés cobram 10-15 % a mais nos fins de semana e feriados. O GST de 10 % já vem incluído no preço.",
+    "tippingCulture": "Não se espera gorjeta, porque o salário mínimo é alto; ~10 % por um serviço excelente em restaurantes sofisticados é um gesto simpático.",
+    "economicPillars": "Exportação de minérios e energia, serviços e finanças, educação internacional, turismo e agricultura."
+   }
+  },
+  "itin": {
+   "routeName": "Dos corais à Ocean Road: Cairns, Sydney e Melbourne",
+   "routeSummary": "Um roteiro de 11 dias de norte a sul: a Grande Barreira de Corais e Daintree no norte tropical, a baía de Sydney e as Blue Mountains e, para fechar, as vielas de Melbourne e a Great Ocean Road (voos domésticos entre as cidades).",
+   "totalDays": 11,
+   "idealDurationText": "Roteiro de 11 dias",
+   "bestSeason": "Setembro a novembro (fim da estação seca no norte, primavera em Sydney e Melbourne)",
+   "transportMode": "Voos domésticos (Cairns – Sydney – Melbourne) + transporte público (Opal, myki) + carro alugado para a Great Ocean Road (mão inglesa)",
+   "paceLevel": "Equilibrado (natureza e cidade)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Cairns e a Grande Barreira de Corais",
+     "recommendedDuration": "3 dias",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Snorkel e mergulho na barreira externa",
+      "Floresta de Daintree e Cape Tribulation",
+      "Trem panorâmico de Kuranda e teleférico Skyrail"
+     ],
+     "activities": [
+      "Faça um passeio de dia inteiro aos corais.",
+      "Faça um cruzeiro para ver crocodilos no rio Daintree.",
+      "Nade de graça na Esplanade Lagoon."
+     ],
+     "foodAndDrinks": [
+      "Barramundi e camarões frescos",
+      "Frutas tropicais (manga, pitaia)"
+     ],
+     "criticalTips": [
+      "De novembro a maio é temporada de águas-vivas; entre no mar só em áreas com rede de proteção e com roupa antiáguas-vivas.",
+      "Não toque nos corais e use protetor solar seguro para recifes."
+     ],
+     "mapsQuery": "Cairns, Queensland, Australia"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Sydney e as Blue Mountains",
+     "recommendedDuration": "4 dias",
+     "durationBadge": "4 dias",
+     "highlights": [
+      "Opera House e Harbour Bridge",
+      "Caminhada costeira de Bondi a Coogee",
+      "The Rocks e Jardim Botânico Real",
+      "Blue Mountains – as Três Irmãs"
+     ],
+     "activities": [
+      "Pegue o ferry de Circular Quay até Manly.",
+      "Faça um bate-volta de trem até as Blue Mountains.",
+      "Visite a mesquita Auburn Gallipoli."
+     ],
+     "foodAndDrinks": [
+      "Frutos do mar no Sydney Fish Market",
+      "Meat pie e flat white"
+     ],
+     "criticalTips": [
+      "Você não precisa do cartão Opal; pague por aproximação, e os tetos diários e semanais são aplicados automaticamente.",
+      "Entre no mar só entre as bandeiras; em Bondi as correntes são fortes."
+     ],
+     "mapsQuery": "Sydney Opera House, Sydney, Australia"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Melbourne e a Great Ocean Road",
+     "recommendedDuration": "4 dias",
+     "durationBadge": "4 dias",
+     "highlights": [
+      "Hosier Lane e as vielas de cafés",
+      "Queen Victoria Market",
+      "Doze Apóstolos e Loch Ard Gorge",
+      "Desfile de pinguins em Phillip Island"
+     ],
+     "activities": [
+      "Explore a cidade dentro da zona gratuita do bonde.",
+      "Percorra a Great Ocean Road de carro em 2 dias.",
+      "Assista a um jogo de AFL ou de críquete no MCG."
+     ],
+     "foodAndDrinks": [
+      "Café e brunch de Melbourne",
+      "Vinhos do vale do Yarra",
+      "Pide e gözleme turcos em Brunswick"
+     ],
+     "criticalTips": [
+      "Na Austrália a mão é inglesa; a Great Ocean Road tem muitas curvas, e não dirija à noite por causa dos cangurus.",
+      "Melbourne pode ter as quatro estações num só dia; vista-se em camadas e compre o cartão myki."
+     ],
+     "mapsQuery": "Twelve Apostles, Great Ocean Road, Victoria, Australia"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Meat pie",
+     "Churrasco",
+     "Barramundi",
+     "Torrada com abacate"
+    ],
+    "drinks": [
+     "Flat white",
+     "Shiraz",
+     "Ginger beer"
+    ],
+    "streetFoods": [
+     "Sausage sizzle",
+     "Pavlova",
+     "Lamington"
+    ],
+    "diningAdvice": "Muitos restaurantes são “BYO” (leve seu próprio vinho). Graças às grandes comunidades turca e libanesa, Melbourne e Sydney têm muitas opções halal e padarias turcas; o jantar costuma ser por volta das 18h-20h."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptador de tomada tipo I",
+     "Protetor FPS 50+, chapéu e óculos com proteção UV",
+     "Roupas em camadas (as estações são invertidas em relação ao hemisfério norte)",
+     "Permissão Internacional para Dirigir (para alugar carro)"
+    ],
+    "safetyAndEtiquette": [
+     "Declare na alfândega todos os alimentos, sementes e produtos de origem animal; não declarar rende multas pesadas.",
+     "Respeite as regras nos lugares sagrados aborígenes e não escale Uluru."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "I"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "A Austrália usa tomadas tipo I, com dois pinos chatos inclinados (mais o terra); os plugues europeus não encaixam, então o adaptador é indispensável. A maioria das tomadas tem interruptor próprio."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Nas cidades, a água da torneira é potável; em áreas remotas do outback, fique atento às placas.",
+    "vaccines": [
+     "Vacinas de rotina (difteria e tétano, sarampo)",
+     "Exige-se certificado de febre amarela de quem esteve num país endêmico nos últimos 6 dias",
+     "Proteção contra mosquitos no norte (vírus Ross River, encefalite japonesa)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "000"
+   },
+   "tipping": {
+    "custom": "Não se espera gorjeta.",
+    "standardPercent": 0,
+    "rule": "optional",
+    "note": "Uns ~10 % por um serviço excelente em restaurantes sofisticados é ótimo; o pote de gorjetas dos cafés é opcional."
+   },
+   "taxFree": {
+    "vatRefundPercent": "GST de 10 % (~1/11 do preço) – Tourist Refund Scheme (TRS)",
+    "minSpend": "300 AUD no total na mesma empresa (ABN)",
+    "customsNote": "Os itens precisam ter sido comprados nos 60 dias anteriores à saída e ir na bagagem de mão com a nota fiscal. Peça a devolução no balcão do TRS no aeroporto com pelo menos 30 minutos de antecedência; preencher os dados no app do TRS agiliza o processo."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 0,50 - 2,00",
+    "topCarriers": [
+     "Telstra",
+     "Optus",
+     "Vodafone"
+    ],
+    "airportSimTrapWarning": "Os “pacotes turísticos” do aeroporto podem sair mais caros que os pré-pagos vendidos em supermercados e lojas na cidade. Em rotas rurais como o outback e a Great Ocean Road, a Telstra tem, de longe, a melhor cobertura."
+   },
+   "touristScams": [
+    {
+     "title": "Anúncios de aluguel falsos",
+     "desc": "Em quartos para estadias longas ou working holiday, pedem caução e o primeiro aluguel sem você ver o imóvel.",
+     "tip": "Não pague sem ver o imóvel nem confirmar a identidade do anunciante; deposite a caução no órgão oficial."
+    },
+    {
+     "title": "Armadilhas de emprego para working holiday",
+     "desc": "Cobram “taxas de cadastro” adiantadas por vagas em fazendas ou hostels, ou pagam menos que o salário mínimo.",
+     "tip": "Confira o ABN do empregador e informe-se sobre seus direitos no Fair Work Ombudsman."
+    },
+    {
+     "title": "Sites oficiais falsos",
+     "desc": "Sites com cara de oficiais para vistos, ETA ou pagamento de pedágios e multas cobram altas “taxas de serviço”.",
+     "tip": "Use apenas sites oficiais terminados em “.gov.au”."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Австралийский доллар (AUD)",

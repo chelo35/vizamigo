@@ -619,6 +619,161 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "GEL (lari georgiano)",
+   "bestMonths": "Maio – junho e setembro – outubro (vindima em outubro); julho – agosto para as praias de Batumi e as trilhas em Svaneti",
+   "safety": {
+    "crimeRateSummary": "A criminalidade violenta é baixa, e cidades como Tbilisi e Batumi costumam ser tranquilas à noite. Não viaje para as regiões ocupadas da Abecásia e da Ossétia do Sul (Tskhinvali) e fique longe das manifestações políticas em Tbilisi.",
+    "commonScams": [
+     "Desconhecidos em Tbilisi que convidam você para um bar onde depois aparece uma conta absurda",
+     "Taxistas sem taxímetro no aeroporto e nas estações cobrando tarifas infladas",
+     "Casas de câmbio que aplicam uma cotação diferente da anunciada ou uma comissão escondida"
+    ],
+    "safeTravelTips": [
+     "Use Bolt ou Yandex Go; com táxis de rua, combine o preço antes de entrar.",
+     "Nas estradas de montanha (passo de Jvari, Svaneti), confira as condições no inverno: neve e avalanches podem fechá-las.",
+     "Nas igrejas, cubra ombros e joelhos; espera-se que as mulheres usem lenço na cabeça."
+    ],
+    "emergencyNumbers": {
+     "police": "112",
+     "ambulance": "112",
+     "general": "112"
+    },
+    "safetyScore": 65,
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "4G sólido nas cidades e estradas principais; irregular nas aldeias de alta montanha",
+    "costPerGbUsd": "~US$ 0,50 - 1",
+    "esimAvailability": "Disponível – Airalo, Holafly e eSIM local da Magti",
+    "bestCarriers": [
+     "Magti",
+     "Silknet",
+     "Cellfie"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Razoável – bom metrô e ônibus em Tbilisi; marshrutkas e trens Stadler entre as cidades",
+    "costLevel": "Muito barato",
+    "singleTicketUsd": "~0.40 $ (1 GEL)",
+    "dailyPassUsd": "~1.10 $ (3 GEL)",
+    "popularRideApps": [
+     "Bolt",
+     "Yandex Go",
+     "Maxim"
+    ],
+    "taxiAdvice": "As corridas de Bolt em Tbilisi e Batumi costumam custar 2-5 $. Um motorista particular para um passeio a Kazbegi ou Kakheti sai por volta de 60-100 $; combine o preço por escrito antes."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 25 - 40",
+    "dailyBudgetMidrangeUsd": "US$ 60 - 100",
+    "budgetMealUsd": "US$ 6 - 12",
+    "coffeeUsd": "US$ 2 - 3,50",
+    "waterBottleUsd": "US$ 0,40 - 0,70",
+    "hostelDormUsd": "US$ 8 - 15",
+    "hotel3StarUsd": "US$ 40 - 80",
+    "flightCostIndex": "Baixo (voo direto saindo de Istambul ~2 h)",
+    "flightTip": "Há voos diretos da THY, Pegasus e AJet de Istambul para Tbilisi e Batumi; saindo da costa turca do mar Negro, cruzar pela fronteira de Sarp até Batumi é o mais barato."
+   }
+  },
+  "enc": {
+   "language": {
+    "officialLanguages": "Georgiano (com alfabeto próprio, o mkhedruli); abecásio na Abecásia. O russo é amplamente compreendido.",
+    "englishProficiency": "Bom entre os jovens e funcionários do turismo em Tbilisi e Batumi; nas zonas rurais, o russo é mais útil.",
+    "phrases": [
+     {
+      "phrase": "გამარჯობა (Gamarjoba)",
+      "meaning": "Olá",
+      "translation": "Olá",
+      "pronunciation": "ga-mar-jo-ba"
+     },
+     {
+      "phrase": "მადლობა (Madloba)",
+      "meaning": "Obrigado",
+      "translation": "Obrigado",
+      "pronunciation": "mad-lo-ba"
+     },
+     {
+      "phrase": "თუ შეიძლება (Tu sheidzleba)",
+      "meaning": "Por favor",
+      "translation": "Por favor",
+      "pronunciation": "tu shey-dzle-ba"
+     },
+     {
+      "phrase": "რა ღირს? (Ra ghirs?)",
+      "meaning": "Quanto custa?",
+      "translation": "Quanto custa?",
+      "pronunciation": "ra ghirs"
+     },
+     {
+      "phrase": "გაუმარჯოს! (Gaumarjos!)",
+      "meaning": "Saúde!",
+      "translation": "Saúde!",
+      "pronunciation": "ga-u-mar-jos"
+     }
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Tomadas europeias C/F (Schuko), de dois pinos redondos, iguais às da Turquia; não é preciso adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "A água da torneira costuma ser potável em Tbilisi e Batumi; nas aldeias de montanha e em prédios antigos, prefira água engarrafada.",
+    "vaccines": [
+     "Vacinas de rotina (tríplice viral, tétano)",
+     "Hepatite A",
+     "Raiva (zonas rurais ou estadias longas)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "112"
+   },
+   "tipping": {
+    "custom": "Os restaurantes costumam incluir uma taxa de serviço de 10-18 %.",
+    "standardPercent": 10,
+    "rule": "round_up",
+    "note": "Se o serviço já estiver incluído, não precisa dar gorjeta; se não estiver, 5-10 % ou arredondar a conta é suficiente."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA de 18 % (cerca de 15 % líquidos depois das comissões)",
+    "minSpend": "200 GEL",
+    "customsNote": "Peça o formulário Tax Free em compras de pelo menos 200 GEL por nota e carimbe-o na alfândega dos aeroportos de Tbilisi, Batumi ou Kutaisi ou na fronteira de Sarpi."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 0,50 - 1",
+    "topCarriers": [
+     "Magti",
+     "Silknet",
+     "Cellfie"
+    ],
+    "airportSimTrapWarning": "Os quiosques da Magti e da Silknet no aeroporto têm preços razoáveis; a armadilha são as casas de câmbio do aeroporto, então troque dinheiro na cidade."
+   },
+   "touristScams": [
+    {
+     "title": "Táxis piratas",
+     "desc": "Taxistas do aeroporto e da estação que não usam taxímetro e cobram várias vezes a tarifa normal.",
+     "tip": "Use Bolt ou Yandex Go; com táxis de rua, combine o preço antes."
+    },
+    {
+     "title": "Golpe da conta do bar",
+     "desc": "Desconhecidos simpáticos levam você a um bar onde aparece uma conta de bebidas absurda.",
+     "tip": "Não siga desconhecidos até bares nem peça nada sem ver os preços."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "GEL (грузинский лари)",

@@ -222,21 +222,21 @@ export function buildWhereToGo(lang: string, m: number): WtgText {
   const ex = joinNames(list.slice(0, 5).map((c) => getCountryName(c, lang)), lang);
   const ruM = RU_IN[m - 1];
   return {
-    title: L(`Where to go in ${M}: ${n} countries in their best season`, `${M} ayında nereye gidilir? En iyi dönemindeki ${n} ülke`, `Wohin im ${M}? ${n} Länder in ihrer besten Reisezeit`, `¿Dónde viajar en ${M}? ${n} países en su mejor temporada`, `Куда поехать в ${ruM}: ${n} стран в лучший сезон`),
-    short: L(`Where to go in ${M}`, `${M} ayında nereye gidilir?`, `Wohin im ${M}?`, `Dónde viajar en ${M}`, `Куда поехать в ${ruM}`),
+    title: L(`Where to go in ${M}: ${n} countries in their best season`, `${M} ayında nereye gidilir? En iyi dönemindeki ${n} ülke`, `Wohin im ${M}? ${n} Länder in ihrer besten Reisezeit`, `¿Dónde viajar en ${M}? ${n} países en su mejor temporada`, `Куда поехать в ${ruM}: ${n} стран в лучший сезон`, `Para onde viajar em ${M}? ${n} países na melhor época`),
+    short: L(`Where to go in ${M}`, `${M} ayında nereye gidilir?`, `Wohin im ${M}?`, `Dónde viajar en ${M}`, `Куда поехать в ${ruM}`, `Para onde viajar em ${M}`),
     metaDesc: L(
       `${M} is one of the best months to visit ${ex}. See all ${n} countries in season, visa rules for your passport and ${M} festivals.`,
       `${M} ayı ${ex} için en iyi seyahat dönemlerinden. Mevsimindeki ${n} ülke, pasaportuna göre vize durumu ve ${M} festivalleri.`,
       `Der ${M} ist eine der besten Reisezeiten für ${ex}. Alle ${n} Länder in Saison, Visaregeln für Ihren Pass und Feste im ${M}.`,
       `${M.charAt(0).toUpperCase() + M.slice(1)} es uno de los mejores meses para visitar ${ex}. Los ${n} países en temporada, visados según tu pasaporte y fiestas de ${M}.`,
-      `В ${ruM} — один из лучших сезонов для поездки: ${ex}. Все ${n} стран в сезон, визовые правила для вашего паспорта и праздники месяца.`
+      `В ${ruM} — один из лучших сезонов для поездки: ${ex}. Все ${n} стран в сезон, визовые правила для вашего паспорта и праздники месяца.`, `${M.charAt(0).toUpperCase() + M.slice(1)} é um dos melhores meses para visitar ${ex}. Os ${n} países na melhor época, vistos de acordo com o seu passaporte e festas de ${M}.`
     ),
     answer: L(
       `In ${M}, ${n} countries are in their best travel season — among them ${ex}. Below, each country is listed with its ideal season and the visa rule for your passport, followed by the festivals held in ${M}. Season notes come from our country guides; countries under “avoid all travel” government warnings are left out.`,
       `${M} ayında ${n} ülke en iyi seyahat dönemini yaşıyor; başlıcaları ${ex}. Aşağıda her ülke ideal sezonu ve pasaportuna göre vize durumuyla, ardından ${M} ayında yapılan festivallerle listelenmiştir. Mevsim notları ülke rehberlerimizden alınmıştır; resmî “tüm seyahatlerden kaçının” uyarısı bulunan ülkeler listeye alınmadı.`,
       `Im ${M} haben ${n} Länder ihre beste Reisezeit – darunter ${ex}. Unten steht jedes Land mit seiner idealen Saison und der Visaregel für Ihren Pass, danach die Feste im ${M}. Die Saisonangaben stammen aus unseren Länderguides; Länder mit offizieller Warnung vor allen Reisen sind nicht aufgeführt.`,
       `En ${M}, ${n} países están en su mejor temporada de viaje, entre ellos ${ex}. Abajo aparece cada país con su temporada ideal y la norma de visado para tu pasaporte, y después las fiestas de ${M}. Las notas de temporada provienen de nuestras guías de país; no se incluyen países con advertencia oficial de evitar todo viaje.`,
-      `В ${ruM} у ${n} стран лучший туристический сезон — среди них ${ex}. Ниже — каждая страна с идеальным сезоном и визовым режимом для вашего паспорта, а затем праздники месяца. Сведения о сезонах взяты из наших гидов по странам; страны с официальной рекомендацией воздержаться от любых поездок не включены.`
+      `В ${ruM} у ${n} стран лучший туристический сезон — среди них ${ex}. Ниже — каждая страна с идеальным сезоном и визовым режимом для вашего паспорта, а затем праздники месяца. Сведения о сезонах взяты из наших гидов по странам; страны с официальной рекомендацией воздержаться от любых поездок не включены.`, `Em ${M}, ${n} países estão na melhor época para viajar, entre eles ${ex}. Abaixo, cada país aparece com sua época ideal e a regra de visto para o seu passaporte, e depois as festas de ${M}. As notas sobre a época vêm dos nossos guias de país; não incluímos países com alerta oficial para evitar qualquer viagem.`
     ),
     sections: [],
     faq: []
@@ -249,9 +249,9 @@ export const wtgHeads = (lang: string, m: number) => {
   const M = wtgMonthName(m, lang);
   const ruM = RU_IN[m - 1];
   return {
-    countries: L(`Countries in their best season in ${M}`, `${M} ayında en iyi dönemindeki ülkeler`, `Länder mit bester Reisezeit im ${M}`, `Países en su mejor temporada en ${M}`, `Страны в лучший сезон в ${ruM}`),
-    fest: L(`Festivals in ${M}`, `${M} ayındaki festivaller`, `Feste im ${M}`, `Fiestas en ${M}`, `Праздники в ${ruM}`),
-    months: L('Other months', 'Diğer aylar', 'Andere Monate', 'Otros meses', 'Другие месяцы')
+    countries: L(`Countries in their best season in ${M}`, `${M} ayında en iyi dönemindeki ülkeler`, `Länder mit bester Reisezeit im ${M}`, `Países en su mejor temporada en ${M}`, `Страны в лучший сезон в ${ruM}`, `Países na melhor época em ${M}`),
+    fest: L(`Festivals in ${M}`, `${M} ayındaki festivaller`, `Feste im ${M}`, `Fiestas en ${M}`, `Праздники в ${ruM}`, `Festas em ${M}`),
+    months: L('Other months', 'Diğer aylar', 'Andere Monate', 'Otros meses', 'Другие месяцы', 'Outros meses')
   };
 };
 
@@ -266,13 +266,13 @@ export function buildWtgFaq(lang: string, m: number, season: Record<string, stri
   if (visaFree.length) {
     const names = joinNames(visaFree.slice(0, 10).map((c) => getCountryName(c, lang)), lang);
     faq.push({
-      q: L(`Where can I go in ${M} without a visa?`, `${M} ayında vizesiz nereye gidilir?`, `Wohin im ${M} ohne Visum?`, `¿Adónde viajar sin visado en ${M}?`, `Куда поехать без визы в ${ruM}?`),
-      a: L(`With a ${passName} passport, countries in their best season in ${M} that need no visa include ${names}. Check the list above for your own passport.`, `${passName} pasaportuyla ${M} ayında en iyi döneminde olup vize istemeyen ülkeler arasında ${names} var. Kendi pasaportuna göre durumu yukarıdaki listede görebilirsin.`, `Mit Pass aus ${passName} sind im ${M} unter anderem ${names} visumfrei und in bester Reisezeit. Ihre eigene Passlage sehen Sie in der Liste oben.`, `Con pasaporte de ${passName}, entre los países en temporada en ${M} sin visado están ${names}. Consulta la lista de arriba para tu pasaporte.`, `С паспортом (${passName}) без визы и в лучший сезон в ${ruM}: ${names}. Режим для вашего паспорта — в списке выше.`)
+      q: L(`Where can I go in ${M} without a visa?`, `${M} ayında vizesiz nereye gidilir?`, `Wohin im ${M} ohne Visum?`, `¿Adónde viajar sin visado en ${M}?`, `Куда поехать без визы в ${ruM}?`, `Para onde viajar sem visto em ${M}?`),
+      a: L(`With a ${passName} passport, countries in their best season in ${M} that need no visa include ${names}. Check the list above for your own passport.`, `${passName} pasaportuyla ${M} ayında en iyi döneminde olup vize istemeyen ülkeler arasında ${names} var. Kendi pasaportuna göre durumu yukarıdaki listede görebilirsin.`, `Mit Pass aus ${passName} sind im ${M} unter anderem ${names} visumfrei und in bester Reisezeit. Ihre eigene Passlage sehen Sie in der Liste oben.`, `Con pasaporte de ${passName}, entre los países en temporada en ${M} sin visado están ${names}. Consulta la lista de arriba para tu pasaporte.`, `С паспортом (${passName}) без визы и в лучший сезон в ${ruM}: ${names}. Режим для вашего паспорта — в списке выше.`, `Com passaporte de ${passName}, entre os países na melhor época em ${M} que não exigem visto estão ${names}. Confira a lista acima para o seu passaporte.`)
     });
   }
   if (fest.length) {
     const top = fest.slice(0, 6).map((f) => f.split(':')[0]).join('; ');
-    faq.push({ q: L(`Which festivals take place in ${M}?`, `${M} ayında hangi festivaller var?`, `Welche Feste gibt es im ${M}?`, `¿Qué fiestas hay en ${M}?`, `Какие праздники проходят в ${ruM}?`), a: `${top}.` });
+    faq.push({ q: L(`Which festivals take place in ${M}?`, `${M} ayında hangi festivaller var?`, `Welche Feste gibt es im ${M}?`, `¿Qué fiestas hay en ${M}?`, `Какие праздники проходят в ${ruM}?`, `Que festas acontecem em ${M}?`), a: `${top}.` });
   }
   const inSeason = wtgCountries(m).slice(0, 3);
   for (const c of [...inSeason, ...wtgOffSeason(m).slice(0, 2)]) {
@@ -280,8 +280,8 @@ export function buildWtgFaq(lang: string, m: number, season: Record<string, stri
     const C = getCountryName(c, lang);
     const yes = BEST_MONTHS[c].includes(m);
     faq.push({
-      q: L(`Is ${M} a good time to visit ${C}?`, `${C} için ${M} uygun bir dönem mi?`, `${C}: Ist der ${M} eine gute Reisezeit?`, `¿Es ${M} buen momento para visitar ${C}?`, `${C}: стоит ли ехать в ${ruM}?`),
-      a: `${yes ? L('Yes. ', 'Evet. ', 'Ja. ', 'Sí. ', 'Да. ') : L(`${M} is not its best season. `, `${M} en iyi dönemi değil. `, `Der ${M} ist nicht die beste Reisezeit. `, `${M.charAt(0).toUpperCase() + M.slice(1)} no es su mejor temporada. `, `${ruM.charAt(0).toUpperCase() + ruM.slice(1)} — не лучший сезон. `)}${L('Best time to visit', 'En iyi dönem', 'Beste Reisezeit', 'Mejor época', 'Лучшее время')}: ${season[c]}`
+      q: L(`Is ${M} a good time to visit ${C}?`, `${C} için ${M} uygun bir dönem mi?`, `${C}: Ist der ${M} eine gute Reisezeit?`, `¿Es ${M} buen momento para visitar ${C}?`, `${C}: стоит ли ехать в ${ruM}?`, `${M} é uma boa época para visitar ${C}?`),
+      a: `${yes ? L('Yes. ', 'Evet. ', 'Ja. ', 'Sí. ', 'Да. ', 'Sim. ') : L(`${M} is not its best season. `, `${M} en iyi dönemi değil. `, `Der ${M} ist nicht die beste Reisezeit. `, `${M.charAt(0).toUpperCase() + M.slice(1)} no es su mejor temporada. `, `${ruM.charAt(0).toUpperCase() + ruM.slice(1)} — не лучший сезон. `, `${M.charAt(0).toUpperCase() + M.slice(1)} não é a melhor época. `)}${L('Best time to visit', 'En iyi dönem', 'Beste Reisezeit', 'Mejor época', 'Лучшее время', 'Melhor época')}: ${season[c]}`
     });
   }
   return faq;

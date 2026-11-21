@@ -1419,6 +1419,361 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Kyat birmanês (MMK)",
+   "plugType": "Tipo C, D, F, G (230V, 50Hz)",
+   "bestMonths": "Pelo clima, novembro – fevereiro (seco e fresco); março – maio é muito quente e junho – outubro é época de monções. Por causa da guerra civil em curso, no momento não se recomenda viajar.",
+   "safety": {
+    "crimeRateSummary": "Desde 2021, grande parte do país enfrenta conflito armado, ataques aéreos e risco de detenções arbitrárias; a Turquia e outros governos desaconselham viagens. O terremoto de março de 2025 causou danos graves em Mandalay e Sagaing; infraestrutura, internet e saúde estão muito afetadas.",
+    "commonScams": [
+     "Ofertas de câmbio no mercado paralelo que exploram a diferença entre a cotação oficial e a de mercado",
+     "Guias sem licença que vendem passeios “seguros” para áreas fechadas ou em conflito",
+     "Falsas ofertas de emprego que atraem pessoas para centros de golpes em regiões de fronteira"
+    ],
+    "safeTravelTips": [
+     "Não viaje; se for indispensável, registre-se antes na embaixada do seu país e acompanhe os alertas atuais.",
+     "Evite aglomerações políticas, instalações militares e fotografar postos de controle.",
+     "Baixe mapas off-line por causa dos cortes de internet e leve cédulas de dólar novas."
+    ],
+    "emergencyNumbers": {
+     "police": "199",
+     "ambulance": "192",
+     "general": "199"
+    },
+    "safetyScore": 10,
+    "safetyLevel": "Zona de conflito (não viaje)",
+    "badgeColor": "bg-rose-600 text-white border-rose-700 dark:bg-rose-950 dark:text-rose-200"
+   },
+   "internet": {
+    "networkCoverage": "4G em Yangon e nas grandes cidades, mas nas zonas de conflito a internet móvel costuma ser cortada por completo",
+    "costPerGbUsd": "~US$ 0,30 - 1",
+    "esimAvailability": "Muito limitada – chips locais exigem cadastro com passaporte; as eSIMs internacionais também sofrem com os cortes",
+    "bestCarriers": [
+     "MPT",
+     "ATOM",
+     "Mytel"
+    ],
+    "vpnRequired": true
+   },
+   "transport": {
+    "transportQuality": "Fraca – muitas estradas estão fechadas ou inseguras por causa do conflito; os voos domésticos são escassos e cancelados com frequência",
+    "costLevel": "Barato",
+    "singleTicketUsd": "~US$ 0,10 - 0,30 (ônibus de Yangon / trem circular)",
+    "dailyPassUsd": "Não há passe diário",
+    "popularRideApps": [
+     "Grab"
+    ],
+    "taxiAdvice": "Em Yangon funcionam o Grab e os táxis; não há taxímetro, então combine o preço antes. Evite se deslocar à noite e em áreas com toque de recolher."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 30 - 45",
+    "dailyBudgetMidrangeUsd": "US$ 60 - 110",
+    "budgetMealUsd": "US$ 2 - 4",
+    "coffeeUsd": "US$ 1 - 3",
+    "waterBottleUsd": "US$ 0,20 - 0,40",
+    "hostelDormUsd": "US$ 8 - 15",
+    "hotel3StarUsd": "US$ 30 - 65",
+    "flightCostIndex": "Alto (sem voos diretos, conexões limitadas)",
+    "flightTip": "Não há voos diretos da Turquia; chega-se a Yangon via Bangkok, Cingapura ou Kuala Lumpur. Nas condições atuais não se recomenda viajar; se for indispensável, escolha passagens reembolsáveis e um seguro com cobertura de evacuação."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Nos pagodes, tiram-se sapatos e meias; shorts e camisetas regata não são permitidos.",
+     "Entregue e receba coisas com a mão direita, apoiando a esquerda sob o cotovelo direito.",
+     "Evite perguntar às pessoas sobre política; isso pode colocá-las em risco."
+    ],
+    "festivals": [
+     "Thingyan – festa da água e Ano-Novo (abril)",
+     "Thadingyut – festa das luzes (outubro)",
+     "Tazaungdaing – festival de balões de Taunggyi (novembro)"
+    ],
+    "lifestyle": "As casas de chá são o centro da vida social; homens e mulheres usam o longyi (sarongue) e as mulheres pintam o rosto com pasta de thanaka. As oferendas budistas fazem parte do dia a dia."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Pagode Shwedagon (Yangon)",
+     "Planície de templos de Bagan (UNESCO)",
+     "Lago Inle e seus pescadores que remam com a perna",
+     "Colina de Mandalay e pagode Mahamuni",
+     "Ponte U Bein (Amarapura)",
+     "Rocha Dourada – Kyaiktiyo"
+    ],
+    "bestSeasons": "Pelo clima, novembro – fevereiro (seco e fresco); março – maio é muito quente e junho – outubro é época de monções. Por causa da guerra civil em curso, no momento não se recomenda viajar.",
+    "travelStyleTip": "Grande parte do país não é segura hoje. Estas informações servem para planejar quando a situação melhorar; consulte sempre os alertas oficiais antes."
+   },
+   "religion": {
+    "primaryReligions": "Budismo theravada (~88%), cristianismo (~6%), islamismo (~4%), hinduísmo e animismo.",
+    "respectNorms": "Nas plataformas dos pagodes, anda-se descalço e no sentido horário; mulheres não devem tocar nos monges e ninguém posa de costas para uma imagem de Buda.",
+    "sacredSites": [
+     "Pagode Shwedagon",
+     "Pagode Mahamuni (Mandalay)",
+     "Pagode da Rocha Dourada de Kyaiktiyo"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Birmanês (língua de Mianmar, com escrita arredondada própria); há muitas línguas étnicas, como shan, karen e kachin.",
+    "englishProficiency": "Moderado em hotéis e entre guias de Yangon; limitado no resto do país.",
+    "phrases": [
+     {
+      "phrase": "မင်္ဂလာပါ (Mingalaba)",
+      "meaning": "Olá",
+      "translation": "Olá",
+      "pronunciation": "min-ga-la-BA"
+     },
+     {
+      "phrase": "ကျေးဇူးတင်ပါတယ် (Kyay zu tin ba deh)",
+      "meaning": "Obrigado(a)",
+      "translation": "Obrigado(a)",
+      "pronunciation": "chay-ZOO tin-ba-DEH"
+     },
+     {
+      "phrase": "ဘယ်လောက်လဲ (Beh lauk leh?)",
+      "meaning": "Quanto é?",
+      "translation": "Quanto é?",
+      "pronunciation": "beh-LAUK leh"
+     },
+     {
+      "phrase": "ရပါတယ် (Ya ba deh)",
+      "meaning": "Tudo bem / Sem problema",
+      "translation": "Tudo bem / Sem problema",
+      "pronunciation": "YA ba-deh"
+     },
+     {
+      "phrase": "စားလို့ကောင်းတယ် (Sa lo kaung deh)",
+      "meaning": "Delicioso",
+      "translation": "Delicioso",
+      "pronunciation": "SA-lo KAUNG-deh"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "O reino de Pagan (Bagan), fundado por Anawrahta no século XI, lançou as bases da cultura birmanesa. Após as guerras de 1824-1885, o país passou ao domínio britânico e se tornou independente em 1948. Desde a tomada do poder pelos militares em 2021, vive um conflito armado generalizado.",
+    "milestones": [
+     "1044: Anawrahta funda o reino de Pagan",
+     "1885: os britânicos tomam Mandalay, a última capital real",
+     "1948: independência",
+     "2025: grande terremoto perto de Mandalay"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Mohinga (caldo de peixe com macarrão de arroz – o café da manhã nacional)",
+     "Laphet thoke (salada de folhas de chá fermentadas)",
+     "Macarrão shan (Shan khauk swe)"
+    ],
+    "traditionalDrinks": [
+     "Laphet yay (chá com leite adoçado)",
+     "Caldo de cana",
+     "Seiva de palmeira (htan ye)"
+    ],
+    "streetFoodAndDesserts": [
+     "Samosa thoke (salada de samosa)",
+     "Mont lone yay baw (bolinhas de arroz com açúcar de palma)",
+     "Shwe yin aye (sobremesa gelada de coco)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Anawrahta (fundador do reino de Pagan)",
+     "General Aung San (líder da independência)",
+     "U Thant (secretário-geral da ONU, 1961-1971)"
+    ],
+    "strongSectors": [
+     "Gás natural",
+     "Pedras preciosas como jade e rubis",
+     "Agricultura (arroz, leguminosas) e confecção"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "O dinheiro vivo manda; cartões internacionais quase não funcionam e os caixas eletrônicos não são confiáveis. Leve dólares novos e sem dobras; a cotação oficial e a de mercado podem ser bem diferentes.",
+    "tippingCulture": "Não é obrigatória; pequenas gorjetas para guias, motoristas e funcionários de hotel são bem-vindas.",
+    "economicPillars": "Gás natural, mineração e pedras preciosas, agricultura e confecção; a economia encolheu muito por causa do conflito e do terremoto."
+   }
+  },
+  "itin": {
+   "routeName": "Yangon – Bagan – Mandalay: roteiro clássico (só quando a situação melhorar)",
+   "routeSummary": "O roteiro clássico de 7 dias, do dourado Shwedagon aos milhares de templos de Bagan e ao legado real de Mandalay. Por causa da guerra civil, no momento não se recomenda viajar; use este plano só quando os alertas forem suspensos.",
+   "totalDays": 7,
+   "idealDurationText": "Roteiro de 7 dias (conforme a situação)",
+   "bestSeason": "Pelo clima, novembro – fevereiro (seco e fresco); março – maio é muito quente e junho – outubro é época de monções. Por causa da guerra civil em curso, no momento não se recomenda viajar.",
+   "transportMode": "Voos domésticos (Yangon – Bagan – Mandalay); por segurança, não se recomenda ir por estrada",
+   "paceLevel": "Tranquilo (cultura e história)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Yangon (Shwedagon e centro colonial)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Pôr do sol no pagode Shwedagon",
+      "Pagode Sule e prédios coloniais",
+      "Mercado Bogyoke Aung San"
+     ],
+     "activities": [
+      "Percorra os subúrbios no trem circular.",
+      "Tome um laphet yay numa casa de chá tradicional.",
+      "Passeie ao redor do lago Kandawgyi."
+     ],
+     "foodAndDrinks": [
+      "Mohinga",
+      "Laphet thoke"
+     ],
+     "criticalTips": [
+      "Fique longe de protestos e aglomerações; não saia tarde da noite.",
+      "No Shwedagon se entra descalço e com ombros e joelhos cobertos."
+     ],
+     "mapsQuery": "Shwedagon Pagoda, Yangon, Myanmar"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Bagan (planície de templos)",
+     "recommendedDuration": "2-3 dias",
+     "durationBadge": "2-3 dias",
+     "highlights": [
+      "Templo de Ananda",
+      "Pagode Shwezigon",
+      "Templo de Dhammayangyi"
+     ],
+     "activities": [
+      "Percorra os templos de scooter elétrica.",
+      "Navegue pelo Irrawaddy ao pôr do sol.",
+      "Visite oficinas de laca."
+     ],
+     "foodAndDrinks": [
+      "Mesa de curries birmaneses",
+      "Seiva de palmeira"
+     ],
+     "criticalTips": [
+      "É proibido subir nos templos, para protegê-los.",
+      "Confira de novo a situação de segurança antes de ir: houve combates nas proximidades."
+     ],
+     "mapsQuery": "Bagan, Myanmar"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Mandalay (herança real)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Colina de Mandalay",
+      "Pagode Mahamuni",
+      "Ponte U Bein em Amarapura"
+     ],
+     "activities": [
+      "Assista ao pôr do sol na ponte U Bein.",
+      "Visite oficinas de folha de ouro.",
+      "Vá de barco até Mingun."
+     ],
+     "foodAndDrinks": [
+      "Macarrão shan",
+      "Mont lone yay baw"
+     ],
+     "criticalTips": [
+      "O terremoto de 2025 causou danos graves na cidade e arredores; alguns lugares podem estar fechados ou destruídos.",
+      "Não viaje por terra para a região de Sagaing nem mais ao norte."
+     ],
+     "mapsQuery": "Mandalay, Myanmar"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Mohinga",
+     "Laphet thoke",
+     "Macarrão shan",
+     "Ohn no khao swè (macarrão de frango com coco)"
+    ],
+    "drinks": [
+     "Laphet yay",
+     "Caldo de cana",
+     "Seiva de palmeira"
+    ],
+    "streetFoods": [
+     "Samosa thoke",
+     "Mont lone yay baw",
+     "Shwe yin aye"
+    ],
+    "diningAdvice": "O curry birmanês é servido com muitos acompanhamentos pequenos e sopa. Os restaurantes da comunidade muçulmana que servem “danbauk” (biryani) oferecem opções halal."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Cédulas de dólar novas e sem dobras",
+     "Sandálias fáceis de tirar (para os pagodes)",
+     "Mapas off-line e power bank (quedas de energia e de internet)",
+     "Seguro viagem com cobertura de evacuação"
+    ],
+    "safetyAndEtiquette": [
+     "Consulte os alertas oficiais e os avisos da embaixada antes de viajar.",
+     "Não fotografe militares, instalações nem postos de controle."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "D",
+     "F",
+     "G"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "As tomadas são variadas: europeias (C/F), indianas de três pinos redondos (D) e britânicas (G); um adaptador universal é indispensável. Quedas de energia são frequentes."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "A água da torneira não é potável; beba apenas água engarrafada lacrada.",
+    "vaccines": [
+     "Hepatite A e febre tifoide",
+     "Tétano-difteria e sarampo (rotina)",
+     "Consulte um médico sobre encefalite japonesa, raiva e prevenção da malária; o atendimento de saúde é muito limitado"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "192"
+   },
+   "tipping": {
+    "custom": "Não é obrigatória; pequenas gorjetas são bem-vindas.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "O comum é dar alguns dólares ou alguns milhares de kyats por dia a guias e motoristas."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Não há",
+    "minSpend": "Não se aplica",
+    "customsNote": "Mianmar não restitui impostos a turistas. Exportar pedras preciosas e antiguidades exige nota fiscal de vendedor autorizado e licença; declare grandes quantias em moeda estrangeira."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "US$ 0,30 - 1,00",
+    "topCarriers": [
+     "MPT",
+     "ATOM",
+     "Mytel"
+    ],
+    "airportSimTrapWarning": "Os chips locais são cadastrados com o passaporte; muitas redes sociais estão bloqueadas e o uso de VPN é restrito. Os cortes regionais podem durar dias."
+   },
+   "touristScams": [
+    {
+     "title": "Câmbio no mercado paralelo",
+     "desc": "Cambistas de rua com cotação vantajosa podem entregar notas falsas ou a menos — e é ilegal.",
+     "tip": "Use apenas bancos e casas de câmbio licenciados."
+    },
+    {
+     "title": "Passeios a “zonas seguras”",
+     "desc": "Guias sem licença vendem viagens para áreas fechadas; ser pego pode terminar em detenção.",
+     "tip": "Nunca entre em áreas restritas."
+    },
+    {
+     "title": "Ofertas de emprego falsas",
+     "desc": "Centros de golpes em regiões de fronteira atraem estrangeiros com bons salários e os mantêm presos.",
+     "tip": "Recuse ofertas de trabalho na região e denuncie anúncios suspeitos."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Мьянманский кьят (MMK)",

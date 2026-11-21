@@ -1407,6 +1407,358 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Vatu de Vanuatu (VUV)",
+   "plugType": "Tipo I (230V, 50Hz)",
+   "bestMonths": "Maio a outubro (época seca e mais fresca; de novembro a abril há ciclones)",
+   "safety": {
+    "crimeRateSummary": "A criminalidade é baixa, com furtos oportunistas e alguns pequenos delitos à noite em Port Vila. Os maiores riscos vêm da natureza: ciclones, terremotos e vulcões.",
+    "commonScams": [
+     "Preços inflacionados para turistas em táxis sem taxímetro (placa T)",
+     "Taxas “kastom” em praias, cachoeiras e aldeias cobradas por mais de uma pessoa",
+     "Bolsas arrancadas à noite e furtos em carros estacionados em Port Vila"
+    ],
+    "safeTravelTips": [
+     "Pergunte o preço antes de entrar no ônibus (micro-ônibus com placa B) ou no táxi; em Port Vila a tarifa do micro-ônibus é fixa e baixa.",
+     "Acompanhe os alertas de ciclones, terremotos e vulcões do Departamento de Meteorologia e Riscos Geológicos (VMGD).",
+     "Peça permissão ao dono da terra e pague a taxa antes de entrar em aldeias, praias ou cachoeiras."
+    ],
+    "safetyScore": 65,
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "4G em Port Vila e Luganville; 3G/2G ou sem sinal nas ilhas remotas",
+    "costPerGbUsd": "US$ 2 - 5",
+    "esimAvailability": "Limitada (eSIMs internacionais)",
+    "bestCarriers": [
+     "Digicel Vanuatu",
+     "Vodafone Vanuatu"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Básico (micro-ônibus, táxis, voos domésticos e barcos)",
+    "costLevel": "Moderado (voos domésticos caros)",
+    "singleTicketUsd": "US$ 1,30 - 2,50",
+    "dailyPassUsd": "Não disponível",
+    "popularRideApps": [
+     "Não há apps de transporte",
+     "Micro-ônibus com placa B",
+     "Táxis com placa T"
+    ],
+    "taxiAdvice": "Não há apps de transporte. Em Port Vila, os micro-ônibus com placa B levam você até o destino; combine antes o preço dos táxis (placa T). A Air Vanuatu e aviões fretados de pequeno porte ligam as ilhas."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 50 - 80",
+    "dailyBudgetMidrangeUsd": "US$ 120 - 200",
+    "budgetMealUsd": "US$ 6 - 12",
+    "coffeeUsd": "US$ 3 - 5",
+    "waterBottleUsd": "US$ 1,50 - 2,50",
+    "hostelDormUsd": "US$ 20 - 35",
+    "hotel3StarUsd": "US$ 90 - 160",
+    "flightCostIndex": "Alto",
+    "flightTip": "Chega-se a Port Vila (VLI) via Brisbane, Sydney, Auckland ou Nadi (Fiji); os horários dos voos domésticos mudam com frequência, então planeje com folga."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Nas aldeias, cubra ombros e joelhos; shorts curtos e biquíni, só na praia.",
+     "No nakamal, a kava é bebida em silêncio e de um gole só; mulheres não entram em alguns nakamal tradicionais.",
+     "Não toque na cabeça de ninguém e peça permissão antes de fotografar.",
+     "Quase toda a terra é de propriedade tradicional (kastom); as taxas de entrada são legítimas."
+    ],
+    "festivals": [
+     "Dia da Independência (30 de julho)",
+     "Saltos Nagol na ilha de Pentecostes (abril a junho)",
+     "Festival de música Fest'Napuan (Port Vila)"
+    ],
+    "lifestyle": "A vida nas aldeias, o sistema de chefes e as tradições kastom continuam fortes; o fim de tarde costuma terminar com kava no nakamal. Reina o ritmo tranquilo do “island time”."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Vulcão Yasur (Tanna)",
+     "Praia Champagne (Espírito Santo)",
+     "Naufrágio do SS President Coolidge e Million Dollar Point",
+     "Blue holes de Santo (Matevulu, Nanda)",
+     "Cachoeiras de Mele (Efate)",
+     "Domínio do chefe Roi Mata (UNESCO)"
+    ],
+    "bestSeasons": "Maio a outubro (época seca e mais fresca; de novembro a abril há ciclones)",
+    "travelStyleTip": "Fique baseado em Efate (Port Vila) e pegue voos para Tanna e Espírito Santo; nas ilhas remotas há bangalôs simples e hospedagem em aldeias."
+   },
+   "religion": {
+    "primaryReligions": "Cristãos ~93% (presbiterianos ~28%, anglicanos ~15%, adventistas ~12%, católicos ~12% e outros); crenças kastom e o movimento John Frum em Tanna",
+    "respectNorms": "Domingo é dia de ir à igreja e as atividades param; nas áreas adventistas, o sábado é sagrado. Não entre em locais sagrados (tabu) sem permissão.",
+    "sacredSites": [
+     "Vulcão Yasur (sagrado para o povo de Tanna)",
+     "Local de sepultamento de Roi Mata (ilha Artok/Eretoka)",
+     "Aldeia de Sulphur Bay (movimento John Frum, Tanna)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Bislama, inglês e francês (oficiais); além disso, falam-se mais de 100 línguas locais.",
+    "englishProficiency": "Bom em Port Vila e Luganville; nas ilhas remotas predomina o bislama.",
+    "phrases": [
+     {
+      "phrase": "Halo",
+      "meaning": "Olá",
+      "translation": "Olá",
+      "pronunciation": "HA-lo"
+     },
+     {
+      "phrase": "Tangkyu tumas",
+      "meaning": "Muito obrigado",
+      "translation": "Muito obrigado",
+      "pronunciation": "TANG-kyu TU-mas"
+     },
+     {
+      "phrase": "Olsem wanem?",
+      "meaning": "Como vai?",
+      "translation": "Como vai?",
+      "pronunciation": "OL-sem WA-nem"
+     },
+     {
+      "phrase": "Hamas long hem?",
+      "meaning": "Quanto custa?",
+      "translation": "Quanto custa?",
+      "pronunciation": "HA-mas long hem"
+     },
+     {
+      "phrase": "Lukim yu",
+      "meaning": "Até logo",
+      "translation": "Até logo",
+      "pronunciation": "LU-kim yu"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "O povo lapita povoou as ilhas há cerca de 3.000 anos. Quirós chegou em 1606 e James Cook (que as chamou de Novas Hébridas) em 1774. Sob um condomínio britânico-francês desde 1906, o arquipélago conquistou a independência como Vanuatu em 30 de julho de 1980.",
+    "milestones": [
+     "1606: Pedro Fernández de Quirós chega a Espírito Santo",
+     "1906: condomínio anglo-francês",
+     "1980: independência (30 de julho)",
+     "2015: o ciclone Pam causa grande destruição"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Lap lap (inhame ou banana-da-terra ralados com creme de coco, assados em forno de terra; prato nacional)",
+     "Simboro (mandioca ralada enrolada em folhas)",
+     "Caranguejo-dos-coqueiros"
+    ],
+    "traditionalDrinks": [
+     "Kava (nos nakamal, bares de kava)",
+     "Café de Tanna",
+     "Cerveja Tusker"
+    ],
+    "streetFoodAndDesserts": [
+     "Tuluk (lap lap recheado com carne)",
+     "Frutas tropicais do mercado de Port Vila",
+     "Lap lap doce de banana com coco"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Chefe Roi Mata (líder lendário do século XVII)",
+     "Walter Lini (primeiro primeiro-ministro)",
+     "Miller Pata e Linline Matauatu (vôlei de praia)"
+    ],
+    "strongSectors": [
+     "Turismo (cruzeiros e mergulho)",
+     "Agricultura (copra, kava, cacau)",
+     "Carne bovina (Santo beef)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Em Port Vila, hotéis e restaurantes aceitam cartão; leve vatu em dinheiro para mercados, micro-ônibus e ilhas remotas. Os caixas eletrônicos ficam principalmente em Port Vila e Luganville.",
+    "tippingCulture": "Gorjeta não é costume nem é esperada; um agradecimento sincero basta.",
+    "economicPillars": "Turismo, agricultura (copra, kava, cacau, gado), pesca e serviços financeiros."
+   }
+  },
+  "itin": {
+   "routeName": "Vulcões e blue holes: Efate, Tanna e Espírito Santo",
+   "routeSummary": "Roteiro de 8 dias que vai dos mercados e cachoeiras de Port Vila ao vulcão ativo Yasur, em Tanna, e às praias de areia branca e naufrágios de Espírito Santo.",
+   "totalDays": 8,
+   "idealDurationText": "Roteiro de 8 dias",
+   "bestSeason": "Maio a outubro (época seca e mais fresca; de novembro a abril há ciclones)",
+   "transportMode": "Voos domésticos (Port Vila – Tanna – Santo) + micro-ônibus, táxis e carro alugado",
+   "paceLevel": "Equilibrado (natureza + aventura + mar)",
+   "stops": [
+    {
+     "name": "Parada 1: Efate (Port Vila)",
+     "recommendedDuration": "3 dias",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Mercado de Port Vila",
+      "Cachoeiras de Mele",
+      "Lagoa Azul (Efate)",
+      "Museu Nacional de Vanuatu"
+     ],
+     "activities": [
+      "Assista a uma demonstração de desenho na areia (UNESCO) no Museu Nacional.",
+      "Alugue um carro e percorra a estrada que circunda Efate.",
+      "Mande um cartão-postal da agência de correio submarina de Hideaway Island."
+     ],
+     "foodAndDrinks": [
+      "Lap lap (inhame ou banana-da-terra ralados com creme de coco, assados em forno de terra; prato nacional)",
+      "Kava (nos nakamal, bares de kava)",
+      "Frutas tropicais do mercado de Port Vila"
+     ],
+     "criticalTips": [
+      "Se for provar kava pela primeira vez, comece com uma “shell” (cuia) pequena.",
+      "A maioria das lojas fecha aos domingos."
+     ],
+     "mapsQuery": "Port Vila, Efate, Vanuatu",
+     "stopNumber": 1
+    },
+    {
+     "name": "Parada 2: Tanna e vulcão Yasur",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Explosões de lava vistas da borda do Yasur",
+      "Aldeias tradicionais kastom",
+      "Baía de Port Resolution"
+     ],
+     "activities": [
+      "Suba até a cratera no fim da tarde.",
+      "Conheça as danças e a vida tradicional em uma aldeia kastom.",
+      "Visite a figueira-de-bengala gigante."
+     ],
+     "foodAndDrinks": [
+      "Café de Tanna",
+      "Tuluk (lap lap recheado com carne)"
+     ],
+     "criticalTips": [
+      "Se o nível de alerta subir, as visitas à cratera são suspensas; consulte o VMGD.",
+      "Siga o guia e não chegue perto da borda."
+     ],
+     "mapsQuery": "Mount Yasur, Tanna, Vanuatu",
+     "stopNumber": 2
+    },
+    {
+     "name": "Parada 3: Espírito Santo",
+     "recommendedDuration": "3 dias",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Praia Champagne",
+      "Blue holes Matevulu e Nanda",
+      "Naufrágio do SS President Coolidge",
+      "Million Dollar Point"
+     ],
+     "activities": [
+      "Mergulhe no Coolidge, um dos melhores naufrágios do mundo.",
+      "Nade nos blue holes e salte da corda.",
+      "Coma frutos do mar em Port Olry."
+     ],
+     "foodAndDrinks": [
+      "Bife de Santo",
+      "Caranguejo-dos-coqueiros"
+     ],
+     "criticalTips": [
+      "O caranguejo-dos-coqueiros é protegido; coma apenas o que for servido legalmente.",
+      "O Coolidge é profundo e técnico; mergulhe com uma operadora certificada."
+     ],
+     "mapsQuery": "Luganville, Espiritu Santo, Vanuatu",
+     "stopNumber": 3
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Lap lap (inhame ou banana-da-terra ralados com creme de coco, assados em forno de terra; prato nacional)",
+     "Simboro (mandioca ralada enrolada em folhas)",
+     "Caranguejo-dos-coqueiros"
+    ],
+    "drinks": [
+     "Kava (nos nakamal, bares de kava)",
+     "Café de Tanna",
+     "Cerveja Tusker"
+    ],
+    "streetFoods": [
+     "Tuluk (lap lap recheado com carne)",
+     "Frutas tropicais do mercado de Port Vila",
+     "Lap lap doce de banana com coco"
+    ],
+    "diningAdvice": "As barracas do mercado de Port Vila servem almoços baratos; gorjeta não é esperada."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptador de tomada tipo I",
+     "Repelente (malária e dengue)",
+     "Roupas discretas para as aldeias",
+     "Vatu em dinheiro para as ilhas remotas"
+    ],
+    "safetyAndEtiquette": [
+     "Peça permissão ao dono da terra e pague a taxa antes de entrar em aldeias, praias ou cachoeiras.",
+     "Nas aldeias, cubra ombros e joelhos; shorts curtos e biquíni, só na praia.",
+     "No nakamal, a kava é bebida em silêncio e de um gole só; mulheres não entram em alguns nakamal tradicionais."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "I"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Tomada tipo I australiana, com dois pinos chatos em V (e aterramento)."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "A água encanada de Port Vila é tratada, mas pode ser contaminada após terremotos e ciclones; as ilhas remotas usam água da chuva. Prefira água mineral.",
+    "vaccines": [
+     "Hepatite A e febre tifoide",
+     "Prevenção contra malária (sobretudo nas ilhas remotas)",
+     "Proteção contra a dengue",
+     "Vacinas de rotina (tétano-difteria, sarampo)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "112"
+   },
+   "tipping": {
+    "custom": "Gorjeta não faz parte da cultura melanésia.",
+    "standardPercent": 0,
+    "rule": "optional",
+    "note": "Alguns resorts têm uma caixinha coletiva de gorjetas para os funcionários."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Não há (IVA de 15%)",
+    "minSpend": "Não se aplica",
+    "customsNote": "Não há reembolso de IVA, mas as lojas duty free de Port Vila vendem mediante apresentação do passaporte e às vezes entregam no aeroporto."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "US$ 2,00 - 5,00",
+    "topCarriers": [
+     "Digicel Vanuatu",
+     "Vodafone Vanuatu"
+    ],
+    "airportSimTrapWarning": "Os balcões da Digicel e da Vodafone no aeroporto de Bauerfield costumam ter preços razoáveis; compare a cobertura nas ilhas remotas."
+   },
+   "touristScams": [
+    {
+     "title": "Tarifas de táxi",
+     "desc": "Preços inflacionados para turistas em táxis sem taxímetro (placa T)",
+     "tip": "Pergunte o preço antes de entrar no ônibus (micro-ônibus com placa B) ou no táxi; em Port Vila a tarifa do micro-ônibus é fixa e baixa."
+    },
+    {
+     "title": "Taxa kastom em dobro",
+     "desc": "Taxas “kastom” em praias, cachoeiras e aldeias cobradas por mais de uma pessoa",
+     "tip": "Pergunte no hotel ou ao guia a quem pagar e peça recibo."
+    },
+    {
+     "title": "Furtos à noite",
+     "desc": "Bolsas arrancadas à noite e furtos em carros estacionados em Port Vila",
+     "tip": "À noite, use táxi e não deixe nada no carro."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Вату Вануату (VUV)",

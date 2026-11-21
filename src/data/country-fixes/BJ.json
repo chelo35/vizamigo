@@ -1551,6 +1551,394 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Franco CFA da África Ocidental (XOF)",
+   "plugType": "Tipo C, E (220V, 50Hz)",
+   "bestMonths": "Novembro a fevereiro (estação seca; poeira do harmatã de dezembro a fevereiro) e, no sul, uma breve estação seca do fim de julho ao início de setembro; abril a julho e setembro a novembro são chuvosos",
+   "safety": {
+    "safetyScore": 40,
+    "safetyLevel": "Cautela recomendada",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60",
+    "crimeRateSummary": "O Reino Unido (FCDO) e os EUA desaconselham viagens às áreas do norte na fronteira com Burkina Faso e Níger (incluindo os parques nacionais de Pendjari e W), onde grupos armados cometem ataques e sequestros. No sul há roubos por arrancão em Cotonou, batedores de carteira no mercado de Dantokpa e assaltos noturnos nas praias.",
+    "commonScams": [
+     "Guias não oficiais em Uidá e Ganvié que cobram caro por cerimônias vodu ou por uma “taxa da aldeia”",
+     "Pilotos de zémidjan (mototáxi) que, na chegada, exigem mais do que o combinado",
+     "Cambistas de rua que manipulam o câmbio"
+    ],
+    "safeTravelTips": [
+     "Não vá aos parques nacionais do norte nem às áreas de fronteira; limite seu roteiro ao sul.",
+     "As correntes no litoral atlântico são muito fortes; não entre no mar nas praias de Cotonou e Uidá.",
+     "Peça capacete nos mototáxis e não os use à noite."
+    ],
+    "emergencyNumbers": {
+     "police": "117",
+     "ambulance": "118",
+     "general": "117"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Bom 4G em Cotonou, Porto Novo e nas cidades do sul; fraco no norte e nas áreas rurais",
+    "costPerGbUsd": "~US$ 1,00 - 2,00",
+    "esimAvailability": "Média (alguns planos de eSIM internacional; o chip local exige cadastro com passaporte)",
+    "bestCarriers": [
+     "MTN Bénin",
+     "Moov Africa Bénin",
+     "Celtiis",
+     "Airalo eSIM"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Média (mototáxis, táxis compartilhados e micro-ônibus intermunicipais)",
+    "costLevel": "Barato",
+    "singleTicketUsd": "US$ 0,30 - 1,00 (mototáxi zémidjan)",
+    "dailyPassUsd": "Não existe",
+    "popularRideApps": [
+     "Gozem (moto e carro)",
+     "Mototáxis zémidjan",
+     "Táxis do hotel"
+    ],
+    "taxiAdvice": "Uber e Bolt não operam; em Cotonou dá para chamar mototáxis e carros pelo app local Gozem. Os zémidjan de colete amarelo estão por toda parte; combine o preço antes. Para trajetos entre cidades, alugar carro com motorista é mais seguro do que usar táxis compartilhados."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 25 - 40",
+    "dailyBudgetMidrangeUsd": "US$ 70 - 120",
+    "budgetMealUsd": "US$ 2 - 5",
+    "coffeeUsd": "US$ 1,00 - 2,50",
+    "waterBottleUsd": "US$ 0,50 - 1,00",
+    "hostelDormUsd": "US$ 15 - 25",
+    "hotel3StarUsd": "US$ 45 - 90",
+    "flightCostIndex": "Médio – alto",
+    "flightTip": "A Turkish Airlines voa de Istambul para Cotonou; também há conexões via Paris (Air France), Adis Abeba (Ethiopian) ou Casablanca (Royal Air Maroc)."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Cumprimentar todo mundo é muito importante; ninguém começa a falar sem um “Bonjour” e sem perguntar como o outro está.",
+     "Use a mão direita para cumprimentar, entregar dinheiro e comer.",
+     "Siga as regras do guia em templos e cerimônias vodu; algumas florestas sagradas são proibidas para quem é de fora.",
+     "Peça permissão antes de fotografar pessoas e, principalmente, cerimônias; às vezes espera-se uma pequena taxa."
+    ],
+    "festivals": [
+     "Vodun Days (9–10 de janeiro, Uidá)",
+     "Dia da Independência (1º de agosto)",
+     "Cerimônias de máscaras Gèlèdè (regiões iorubás, patrimônio imaterial da UNESCO)"
+    ],
+    "lifestyle": "Mercados animados, enxames de mototáxis e uma vida social calorosa, em que a tradição vodu convive com o cristianismo e o islã."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Palácios Reais de Abomey (UNESCO)",
+     "Aldeia lacustre de Ganvié (lago Nokoué)",
+     "Rota dos Escravos e Porta do Não Retorno, Uidá",
+     "Templo das Pítons, Uidá",
+     "Grande Mesquita e Palácio Honmè, Porto Novo",
+     "Mercado de Dantokpa, Cotonou"
+    ],
+    "bestSeasons": "Novembro a fevereiro",
+    "travelStyleTip": "O sul do Benin é compacto; hospede-se em Cotonou e faça passeios curtos de carro com motorista a Porto Novo, Ganvié, Uidá e Abomey."
+   },
+   "religion": {
+    "primaryReligions": "Cristãos ~52 % (católicos ~25 %), muçulmanos ~27 %, vodu ~12 %; muitos praticam rituais vodu junto com outras religiões",
+    "respectNorms": "Nos templos vodu pode ser preciso tirar os sapatos, e fotos podem ser proibidas; entre nas mesquitas com roupas discretas.",
+    "sacredSites": [
+     "Templo das Pítons, Uidá",
+     "Basílica da Imaculada Conceição, Uidá",
+     "Grande Mesquita de Porto Novo (arquitetura afro-brasileira)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "O francês é a língua oficial; línguas locais como o fon, o iorubá, o bariba e o dendi são muito faladas.",
+    "englishProficiency": "Baixo; fora dos funcionários de hotéis e do turismo, quase ninguém fala inglês. Um francês básico é necessário.",
+    "phrases": [
+     {
+      "phrase": "A fɔ̀n ganji à? (Fon)",
+      "meaning": "Bom dia – acordou bem? (fon)",
+      "translation": "Bom dia",
+      "pronunciation": "a fon gan-JEE a"
+     },
+     {
+      "phrase": "Àwánú (Fon)",
+      "meaning": "Obrigado (fon)",
+      "translation": "Obrigado",
+      "pronunciation": "a-wa-NOO"
+     },
+     {
+      "phrase": "Mi kwàbɔ̀ (Fon)",
+      "meaning": "Bem-vindo (fon)",
+      "translation": "Bem-vindo",
+      "pronunciation": "mee KWA-bo"
+     },
+     {
+      "phrase": "C’est combien ?",
+      "meaning": "Quanto custa?",
+      "translation": "Quanto é?",
+      "pronunciation": "say kom-BYAN"
+     },
+     {
+      "phrase": "Yovo",
+      "meaning": "Estrangeiro (o que as crianças gritam)",
+      "translation": "Estrangeiro",
+      "pronunciation": "YO-vo"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Do século XVII até 1894, a região foi sede do poderoso Reino do Daomé, famoso por suas guerreiras agojie e pelos palácios de Abomey; Uidá foi um dos principais portos do tráfico atlântico de escravizados. A colônia francesa do Daomé se tornou independente em 1º de agosto de 1960, passou a se chamar Benin em 1975 e adotou o multipartidarismo após a Conferência Nacional de 1990.",
+    "milestones": [
+     "1625: fundação do Reino do Daomé (data tradicional)",
+     "1894: início do domínio colonial francês",
+     "1960: independência (1º de agosto)",
+     "1990: Conferência Nacional e transição para o multipartidarismo"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Amiwo (massa de milho vermelha com tomate e frango)",
+     "Wagasi (queijo fulani frito)",
+     "Pâte com molho de quiabo (massa de milho com molho)"
+    ],
+    "traditionalDrinks": [
+     "Sodabi (aguardente destilada do vinho de palma)",
+     "Tchoukoutou (cerveja de sorgo)",
+     "Bissap (bebida de hibisco)"
+    ],
+    "streetFoodAndDesserts": [
+     "Atassi (arroz com feijão)",
+     "Klui-klui (palitinhos fritos de amendoim)",
+     "Yovo doko (bolinhos doces fritos)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Angélique Kidjo (cantora vencedora do Grammy)",
+     "Rei Béhanzin (rei do Daomé que resistiu à conquista francesa)",
+     "Djimon Hounsou (ator indicado ao Oscar)"
+    ],
+    "strongSectors": [
+     "Algodão e castanha-de-caju (principais exportações)",
+     "Porto de Cotonou e comércio regional",
+     "Turismo cultural e de memória"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Predominam o dinheiro vivo (CFA) e o dinheiro móvel (MTN MoMo, Moov Money); cartões só em hotéis e supermercados de categoria. Os caixas eletrônicos de bancos como o Ecobank costumam funcionar com cartões Visa estrangeiros.",
+    "tippingCulture": "A gorjeta não é obrigatória; basta arredondar ou deixar um valor pequeno.",
+    "economicPillars": "Algodão, castanha-de-caju, comércio portuário e de trânsito, agricultura e serviços."
+   }
+  },
+  "itin": {
+   "routeName": "Roteiro cultural pelo sul do Benin: Porto Novo, Cotonou e Ganvié, Uidá e Abomey",
+   "routeSummary": "Um roteiro seguro de 6 dias pelo sul: da arquitetura afro-brasileira de Porto Novo aos mercados de Cotonou e às palafitas de Ganvié, aos memoriais do tráfico de escravizados e templos vodu de Uidá e aos palácios reais de Abomey.",
+   "totalDays": 6,
+   "idealDurationText": "Roteiro de 6 dias",
+   "bestSeason": "Novembro a fevereiro",
+   "transportMode": "Carro alugado com motorista + Gozem ou mototáxis zémidjan na cidade",
+   "paceLevel": "Equilibrado (história + cultura + lago)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Porto Novo (capital oficial)",
+     "recommendedDuration": "1 dia",
+     "durationBadge": "1 dia",
+     "highlights": [
+      "Grande Mesquita de Porto Novo",
+      "Museu Real do Palácio Honmè",
+      "Museu Da Silva (herança afro-brasileira)",
+      "Centro agrícola Songhaï"
+     ],
+     "activities": [
+      "Admire por fora a fachada afro-brasileira da Grande Mesquita.",
+      "Conheça a história do reino de Porto Novo no Palácio Honmè.",
+      "Percorra a fazenda ecológica de Songhaï e prove seus produtos."
+     ],
+     "foodAndDrinks": [
+      "Amiwo",
+      "Bissap"
+     ],
+     "criticalTips": [
+      "A estrada Cotonou – Porto Novo vive congestionada; saia cedo.",
+      "Para entrar na mesquita é preciso autorização prévia e roupa adequada."
+     ],
+     "mapsQuery": "Porto-Novo, Benin"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Cotonou e Ganvié (centro econômico e aldeia lacustre)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Mercado de Dantokpa",
+      "Aldeia lacustre de Ganvié",
+      "Fondation Zinsou e estátua da Amazona",
+      "Orla de Fidjrossè"
+     ],
+     "activities": [
+      "Percorra Ganvié de piroga pelo lago Nokoué.",
+      "Conheça as seções de tecidos e de artigos vodu do mercado de Dantokpa.",
+      "Jante peixe grelhado na orla de Fidjrossè."
+     ],
+     "foodAndDrinks": [
+      "Peixe grelhado com aloko (banana-da-terra frita)",
+      "Wagasi",
+      "Cerveja La Béninoise"
+     ],
+     "criticalTips": [
+      "Contrate o passeio a Ganvié no embarcadouro oficial, com preço fixo; peça permissão para fotografar na aldeia.",
+      "Em Dantokpa, leve a bolsa na frente do corpo por causa dos batedores de carteira."
+     ],
+     "mapsQuery": "Cotonou, Benin"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Uidá (Rota dos Escravos e centro do vodu)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Rota dos Escravos e Porta do Não Retorno",
+      "Templo das Pítons",
+      "Floresta sagrada de Kpassè",
+      "Museu de História de Uidá (forte português)"
+     ],
+     "activities": [
+      "Percorra a pé os 4 km da Rota dos Escravos até o monumento da Porta do Não Retorno.",
+      "Ouça um guia falar sobre o vodu no Templo das Pítons.",
+      "Se for em janeiro, participe das cerimônias dos Vodun Days."
+     ],
+     "foodAndDrinks": [
+      "Pâte com molho de quiabo",
+      "Sodabi",
+      "Klui-klui"
+     ],
+     "criticalTips": [
+      "Não entre no mar por causa das correntes fortes.",
+      "Combine antes o valor do guia em templos e florestas."
+     ],
+     "mapsQuery": "Ouidah, Benin"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Abomey (Palácios Reais do Daomé)",
+     "recommendedDuration": "1 dia",
+     "durationBadge": "1 dia",
+     "highlights": [
+      "Palácios Reais de Abomey (UNESCO)",
+      "Museu Histórico e muros com baixos-relevos",
+      "Oficinas de tecidos com apliques",
+      "Estátua do rei Béhanzin"
+     ],
+     "activities": [
+      "Visite com guia os palácios e tronos dos reis do Daomé.",
+      "Compre uma lembrança nas oficinas de tecidos com apliques.",
+      "Ouça a história das guerreiras agojie."
+     ],
+     "foodAndDrinks": [
+      "Télibo (massa de farinha de inhame)",
+      "Tchoukoutou"
+     ],
+     "criticalTips": [
+      "Algumas áreas podem estar fechadas para restauração; confira o horário.",
+      "Não viaje para o norte além de Abomey."
+     ],
+     "mapsQuery": "Abomey, Benin"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Amiwo (massa de milho vermelha com tomate e frango)",
+     "Wagasi (queijo fulani frito)",
+     "Pâte com molho de quiabo (massa de milho com molho)"
+    ],
+    "drinks": [
+     "Sodabi (aguardente destilada do vinho de palma)",
+     "Tchoukoutou (cerveja de sorgo)",
+     "Bissap (bebida de hibisco)"
+    ],
+    "streetFoods": [
+     "Atassi (arroz com feijão)",
+     "Klui-klui (palitinhos fritos de amendoim)",
+     "Yovo doko (bolinhos doces fritos)"
+    ],
+    "diningAdvice": "Os maquis e as barracas de rua são baratos e saborosos; escolha só pratos bem cozidos e servidos quentes. Costuma-se comer com a mão direita, e o molho apimentado vem à parte se você pedir."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Certificado internacional de vacinação contra febre amarela (obrigatório)",
+     "Antimaláricos e repelente",
+     "Roupas leves de manga comprida",
+     "Dinheiro em francos CFA e notas pequenas"
+    ],
+    "safetyAndEtiquette": [
+     "Não vá às áreas de fronteira do norte nem aos parques nacionais.",
+     "Respeite as regras para fotos em cerimônias e templos."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "E"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Tipos C e E (dois pinos redondos). Plugues europeus funcionam; leve um carregador portátil por causa das quedas de energia."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "A água da torneira não é potável; beba água mineral e evite a água vendida em saquinhos e o gelo.",
+    "vaccines": [
+     "Febre amarela (obrigatória para a entrada de todos os viajantes com mais de 9 meses)",
+     "Hepatite A e febre tifoide",
+     "Profilaxia contra a malária (risco alto em todo o país)",
+     "Meningite (norte, na estação seca) e raiva"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "118"
+   },
+   "tipping": {
+    "custom": "A gorjeta não é obrigatória; basta arredondar.",
+    "standardPercent": 5,
+    "rule": "round_up",
+    "note": "Uma pequena gorjeta para guias, motoristas e funcionários do hotel é bem-vinda."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA (TVA) de 18 %; sem restituição para turistas",
+    "minSpend": "Não se aplica",
+    "customsNote": "Não há restituição do IVA para turistas. Exportar antiguidades e objetos sagrados vodu exige autorização; peça nota fiscal ao vendedor."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "~US$ 1,00 - 2,00",
+    "topCarriers": [
+     "MTN Bénin",
+     "Moov Africa Bénin",
+     "Celtiis"
+    ],
+    "airportSimTrapWarning": "Quase não se vendem chips no aeroporto; compre um chip da MTN ou da Moov em uma loja oficial em Cotonou com o seu passaporte."
+   },
+   "touristScams": [
+    {
+     "title": "Taxa falsa de cerimônia",
+     "desc": "Guias não oficiais cobram caro por cerimônias vodu ou visitas a aldeias.",
+     "tip": "Contrate guias pelo hotel ou pelo posto de informações turísticas."
+    },
+    {
+     "title": "Golpe do zémidjan",
+     "desc": "Os mototaxistas pedem mais dinheiro na chegada.",
+     "tip": "Combine o preço antes de subir ou use o Gozem."
+    },
+    {
+     "title": "Armadilha dos barcos de Ganvié",
+     "desc": "Pessoas fora do embarcadouro vendem passeios de piroga a preços inflados.",
+     "tip": "Escolha passeios com preço fixo no embarcadouro oficial de Ganvié."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Франк КФА BCEAO (XOF)",

@@ -1515,6 +1515,385 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Libra síria (SYP)",
+   "bestMonths": "Março – maio e setembro – novembro (clima ameno, bom para visitar) · Junho – agosto chega a 35-40 °C no interior; no inverno, Damasco e Aleppo são frias e chuvosas, com possibilidade de neve nas montanhas",
+   "safety": {
+    "safetyScore": 10,
+    "safetyLevel": "Zona de conflito (não viaje)",
+    "badgeColor": "bg-rose-600 text-white border-rose-700 dark:bg-rose-950 dark:text-rose-200",
+    "crimeRateSummary": "Após a mudança de governo em dezembro de 2024, o país passa por uma transição; em algumas regiões continuam os riscos de confrontos armados, atentados, sequestros e artefatos não detonados. Os alertas oficiais (Turquia, FCDO do Reino Unido, EUA) desaconselham qualquer viagem; a assistência consular pode ser limitada.",
+    "commonScams": [
+     "Câmbio não oficial abusivo e notas falsas",
+     "Pessoas que se passam por “guias” ou “agentes de segurança” e exigem dinheiro",
+     "Corridas de táxi superfaturadas nas fronteiras e nas estradas"
+    ],
+    "safeTravelTips": [
+     "Consulte os alertas oficiais antes de viajar; se a viagem for indispensável, conte com contatos locais de confiança e informações de segurança atualizadas.",
+     "Não saia das estradas asfaltadas nem entre em campos ou prédios danificados: há artefatos não detonados.",
+     "Não fotografe instalações militares nem postos de controle e ande sempre com seus documentos."
+    ],
+    "emergencyNumbers": {
+     "police": "112",
+     "ambulance": "110",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "3G/4G em Damasco e nas grandes cidades; irregular em áreas danificadas e rurais",
+    "costPerGbUsd": "US$ 1,00 - 4,00",
+    "esimAvailability": "Muito limitada (poucas eSIMs internacionais; o chip local é comprado com passaporte)",
+    "bestCarriers": [
+     "Syriatel",
+     "MTN Syria"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Precário (táxis compartilhados “servees”, micro-ônibus e ônibus rodoviários; infraestrutura danificada, com possível falta de combustível e de energia)",
+    "costLevel": "Econômico",
+    "singleTicketUsd": "US$ 0,10 - 0,50",
+    "dailyPassUsd": "Não existe (carro com motorista: 40 - 80 $ por dia)",
+    "popularRideApps": [
+     "Não há Uber/Careem",
+     "Táxis amarelos (preço negociado)",
+     "Carro com motorista pelo hotel"
+    ],
+    "taxiAdvice": "Os táxis amarelos raramente usam taxímetro; combine o preço antes de entrar. A segurança entre as cidades pode mudar rápido; viaje só durante o dia e com um motorista de confiança."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 30 - 50",
+    "dailyBudgetMidrangeUsd": "US$ 80 - 150",
+    "budgetMealUsd": "US$ 3 - 7",
+    "coffeeUsd": "US$ 1,00 - 3,00",
+    "waterBottleUsd": "US$ 0,30 - 0,70",
+    "hostelDormUsd": "US$ 10 - 20",
+    "hotel3StarUsd": "US$ 40 - 90",
+    "flightCostIndex": "Moderado (voos Istambul – Damasco)",
+    "flightTip": "Desde 2025, a Turkish Airlines e a AJet voam de Istambul para Damasco (DAM); horários e segurança mudam com frequência, então confira os alertas em vigor e os comunicados da companhia aérea antes de reservar."
+   },
+   "plugType": "Tipo C, E, L (220V, 50Hz)"
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "A hospitalidade é muito forte; aceitar um café ou um chá é sinal de boa educação.",
+     "Coma e entregue as coisas com a mão direita; com pessoas do sexo oposto, espere para ver se estendem a mão.",
+     "Vista-se de forma discreta, com ombros e joelhos cobertos; as mulheres usam lenço nas mesquitas.",
+     "Evite política e experiências do conflito, a menos que seu anfitrião toque no assunto."
+    ],
+    "festivals": [
+     "Eid al-Fitr e Eid al-Adha",
+     "Festa da Cruz em Maalula (14 de setembro; fogueiras nas rochas)",
+     "Feira Internacional de Damasco (fim do verão)"
+    ],
+    "lifestyle": "Os laços familiares e de vizinhança são fortes; souks, cafés, narguilé e jantares demorados marcam o dia a dia. Depois do longo conflito, a reconstrução e o retorno das pessoas continuam."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Mesquita dos Omíadas (Damasco)",
+     "Cidade velha de Damasco e souk Al-Hamidiyah (UNESCO)",
+     "Krak des Chevaliers (UNESCO)",
+     "Cidadela e cidade velha de Aleppo (UNESCO, danificadas pela guerra)",
+     "Noras (rodas-d’água) de Hama",
+     "Maalula (vilarejo onde se fala aramaico)"
+    ],
+    "bestSeasons": "Março – maio e setembro – novembro (clima ameno, bom para visitar) · Junho – agosto chega a 35-40 °C no interior; no inverno, Damasco e Aleppo são frias e chuvosas, com possibilidade de neve nas montanhas",
+    "travelStyleTip": "Os alertas oficiais desaconselham viajar. Para quem planeja uma visita quando as condições permitirem, o mais sensato é contar com um operador local reconhecido, que acompanhe de perto a segurança, e ter um roteiro flexível."
+   },
+   "religion": {
+    "primaryReligions": "Islamismo (~87 %; maioria sunita, com minorias alauíta, ismaelita e xiita), cristianismo (~10 %; igrejas ortodoxas e católicas), drusos (~3 %)",
+    "respectNorms": "Tire os sapatos nas mesquitas; as mulheres cobrem a cabeça e o corpo (na Mesquita dos Omíadas emprestam túnicas). No Ramadã, não coma nem beba em público durante o dia.",
+    "sacredSites": [
+     "Mesquita dos Omíadas (santuário de São João Batista)",
+     "Santuário de Sayyida Zaynab (perto de Damasco)",
+     "Mosteiro de Mar Taqla (Maalula)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "O árabe é a língua oficial (dialeto levantino/damasceno); também se falam curdo, armênio, turcomano, circassiano e, em Maalula, aramaico ocidental.",
+    "englishProficiency": "Baixo a médio; limitado fora do meio universitário e dos hotéis. No norte, há quem fale turco.",
+    "phrases": [
+     {
+      "phrase": "مرحبا (marḥaba)",
+      "meaning": "Olá",
+      "translation": "Olá",
+      "pronunciation": "MAR-ha-ba"
+     },
+     {
+      "phrase": "كيفك؟ (kīfak? / kīfik?)",
+      "meaning": "Como vai? (para um homem / para uma mulher)",
+      "translation": "Como vai? (para um homem / para uma mulher)",
+      "pronunciation": "KEE-fak / KEE-fik"
+     },
+     {
+      "phrase": "شكراً (shukran)",
+      "meaning": "Obrigado(a)",
+      "translation": "Obrigado(a)",
+      "pronunciation": "SHUK-ran"
+     },
+     {
+      "phrase": "قدّيش هاد؟ (addēsh hād?)",
+      "meaning": "Quanto custa isto?",
+      "translation": "Quanto custa isto?",
+      "pronunciation": "ad-DAYSH haad"
+     },
+     {
+      "phrase": "يعطيك العافية (yaʿṭīk el-ʿāfye)",
+      "meaning": "Que Deus lhe dê saúde (obrigado pelo esforço)",
+      "translation": "Que Deus lhe dê saúde (obrigado pelo esforço)",
+      "pronunciation": "ya-a-TEEK el-AAF-ye"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Damasco e Aleppo estão entre as cidades habitadas continuamente mais antigas do mundo; aqui ficam centros antigos como Ebla, Ugarit e Palmira. Damasco foi a capital do califado omíada em 661; depois da batalha de Marj Dabiq (1516), a região passou 400 anos sob domínio otomano. Independente desde 1946, após o mandato francês, o país sofreu uma destruição enorme no conflito iniciado em 2011; em dezembro de 2024, o governo mudou.",
+    "milestones": [
+     "661: Damasco se torna capital do califado omíada",
+     "1516: Batalha de Marj Dabiq e início do domínio otomano",
+     "1946: Fim do mandato francês e independência",
+     "2011: Começa o conflito; dezembro de 2024: mudança de governo"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Kibbeh (quibe), frito ou assado",
+     "Kebab halabi (kebab de Aleppo, também com cerejas ácidas)",
+     "Fatteh (iogurte, grão-de-bico e pão torrado)"
+    ],
+    "traditionalDrinks": [
+     "Café árabe (com cardamomo)",
+     "Jallab (bebida de xarope de tâmara e água de rosas)",
+     "Bebida de tamarindo (tamr hindi)"
+    ],
+    "streetFoodAndDesserts": [
+     "Sorvete de Damasco (Bakdash, com almécega e pistache)",
+     "Halawet el-jibn (rolinhos doces de queijo de Hama)",
+     "Falafel e shawarma de frango"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Nizar Qabbani (poeta damasceno)",
+     "Adonis (pioneiro da poesia árabe moderna)",
+     "Sabah Fakhri (mestre alepino do tarab e da muwashshah)"
+    ],
+    "strongSectors": [
+     "Agricultura (trigo, algodão, azeitonas, pistaches)",
+     "Têxteis e sabão de Aleppo",
+     "Construção e reconstrução"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "O dinheiro vivo domina, e o dólar é amplamente aceito. Cartões internacionais em geral não funcionam: leve dinheiro suficiente e troque em casas de câmbio oficiais. A cotação pode variar rapidamente.",
+    "tippingCulture": "Nos restaurantes, espera-se cerca de 10 %; pequenas gorjetas para funcionários do hotel e motoristas são comuns.",
+    "economicPillars": "Agricultura, comércio, serviços, pequena indústria e reconstrução; as remessas do exterior são importantes."
+   }
+  },
+  "itin": {
+   "routeName": "Cidades milenares (quando as condições permitirem): Damasco, Krak des Chevaliers, Hama e Aleppo",
+   "routeSummary": "Os alertas oficiais desaconselham viajar no momento. Este roteiro de 9 dias mostra, apenas a título informativo, o itinerário clássico para quando a segurança permitir: de Damasco e Maalula ao castelo cruzado de Krak des Chevaliers, às noras de Hama e a Aleppo.",
+   "totalDays": 9,
+   "bestSeason": "Março – maio e setembro – novembro (clima ameno, bom para visitar) · Junho – agosto chega a 35-40 °C no interior; no inverno, Damasco e Aleppo são frias e chuvosas, com possibilidade de neve nas montanhas",
+   "transportMode": "Carro com motorista contratado por um operador local de confiança; só durante o dia e por estradas principais",
+   "paceLevel": "Cultura e história (roteiro flexível)",
+   "signatureGastronomy": {
+    "dishes": [
+     "Kibbeh",
+     "Kebab halabi",
+     "Fatteh"
+    ],
+    "drinks": [
+     "Café árabe",
+     "Jallab",
+     "Bebida de tamarindo"
+    ],
+    "streetFoods": [
+     "Falafel",
+     "Shawarma",
+     "Sorvete Bakdash"
+    ],
+    "diningAdvice": "A culinária síria soa familiar: mezze, kebabs e doces são tradições compartilhadas. Come-se em pratos coletivos; no Ramadã, o horário dos restaurantes segue o horário do iftar."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Dólares em espécie suficientes (inclusive notas pequenas)",
+     "Cópias do passaporte e lista de contatos de emergência",
+     "Carregador portátil e lanterna (quedas de energia)",
+     "Roupas discretas e lenço para mulheres"
+    ],
+    "safetyAndEtiquette": [
+     "Não fotografe instalações militares nem postos de controle.",
+     "Não pise em terrenos sem asfalto, campos nem estruturas danificadas."
+    ]
+   },
+   "idealDurationText": "Roteiro de 9 dias",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Damasco e Maalula",
+     "recommendedDuration": "3 dias",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Mesquita dos Omíadas",
+      "Souk Al-Hamidiyah e Palácio Azm",
+      "Rua Direita (Via Recta) e Bab Tuma",
+      "Mosteiro de Mar Taqla em Maalula"
+     ],
+     "activities": [
+      "Passeie pelos souks da cidade velha e visite um antigo caravançará.",
+      "Tome um café em uma casa tradicional damascena com pátio.",
+      "Ouça orações em aramaico em Maalula."
+     ],
+     "foodAndDrinks": [
+      "Fatteh",
+      "Sorvete Bakdash",
+      "Jallab"
+     ],
+     "criticalTips": [
+      "Visite a Mesquita dos Omíadas fora dos horários de oração e com roupa adequada.",
+      "Confirme diariamente a situação de segurança com seu guia local."
+     ],
+     "mapsQuery": "Umayyad Mosque, Damascus, Syria"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Krak des Chevaliers",
+     "recommendedDuration": "1 dia",
+     "durationBadge": "1 dia",
+     "highlights": [
+      "Muralhas e grande salão do castelo cruzado",
+      "Vista do desfiladeiro de Homs",
+      "Mosteiro de São Jorge (Wadi al-Nasara)"
+     ],
+     "activities": [
+      "Percorra o castelo com guia e suba às torres.",
+      "Visite os vilarejos cristãos do vale.",
+      "Veja o pôr do sol dos terraços do castelo."
+     ],
+     "foodAndDrinks": [
+      "Mezze caseiro (homus, mutabbal)",
+      "Café árabe"
+     ],
+     "criticalTips": [
+      "Partes do castelo estão danificadas; não saia das áreas sinalizadas.",
+      "As escadas são íngremes e escuras; leve lanterna."
+     ],
+     "mapsQuery": "Krak des Chevaliers, Syria"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Hama",
+     "recommendedDuration": "1-2 dias",
+     "durationBadge": "1-2 dias",
+     "highlights": [
+      "Noras sobre o rio Orontes",
+      "Palácio Azm (Hama)",
+      "Antiga Apameia, nos arredores (danificada)"
+     ],
+     "activities": [
+      "Passeie pela margem do rio entre as noras.",
+      "Experimente as docerias de halawet el-jibn.",
+      "Se as condições permitirem, conheça com guia a rua das colunas de Apameia."
+     ],
+     "foodAndDrinks": [
+      "Halawet el-jibn",
+      "Kibbeh",
+      "Bebida de tamarindo"
+     ],
+     "criticalTips": [
+      "Hama é conservadora; atenção às roupas.",
+      "Visite os sítios arqueológicos só com guia e autorização."
+     ],
+     "mapsQuery": "Hama, Syria"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Aleppo",
+     "recommendedDuration": "2-3 dias",
+     "durationBadge": "2-3 dias",
+     "highlights": [
+      "Cidadela de Aleppo",
+      "Mesquita dos Omíadas de Aleppo e seu minarete reconstruído",
+      "Souks cobertos históricos (al-Saqatiyya)",
+      "Igreja de São Simeão (Qal’at Sim’an, nos arredores)"
+     ],
+     "activities": [
+      "Suba à cidadela e observe a restauração da cidade velha.",
+      "Visite uma oficina tradicional de sabão de Aleppo.",
+      "Prove os kebabs e mezze da culinária alepina."
+     ],
+     "foodAndDrinks": [
+      "Kebab de cereja ácida (kebab karaz)",
+      "Muhammara (pasta de pimentão e nozes)",
+      "Café árabe"
+     ],
+     "criticalTips": [
+      "Não entre em ruínas de bairros danificados: há risco de artefatos não detonados.",
+      "Faça passeios fora da cidade só depois de confirmar a segurança."
+     ],
+     "mapsQuery": "Aleppo Citadel, Syria"
+    }
+   ]
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "E",
+     "L"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Tomadas europeias tipo C e compatíveis E/F e, em alguns lugares, tipo L italiano, 220V/50Hz. Plugues europeus encaixam na maioria delas; um carregador portátil e um protetor contra surtos ajudam com apagões e picos de tensão."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Por causa dos danos à infraestrutura, não beba água da torneira; use água mineral lacrada.",
+    "vaccines": [
+     "Hepatite A e febre tifoide",
+     "Reforço contra pólio e vacinas de rotina (incluindo sarampo)",
+     "Raiva e cólera (recomendadas durante surtos)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "110"
+   },
+   "tipping": {
+    "custom": "Nos restaurantes, espera-se cerca de 10 %.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "As gorjetas são dadas em dinheiro, de preferência em notas pequenas; é comum dar gorjeta diária a motoristas e guias."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Não há",
+    "minSpend": "Não se aplica",
+    "customsNote": "A Síria não tem devolução de impostos para turistas. É proibido levar antiguidades e objetos arqueológicos para fora do país; na volta para casa, valem os limites e as proibições da alfândega."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "US$ 1,00 - 4,00",
+    "topCarriers": [
+     "Syriatel",
+     "MTN Syria"
+    ],
+    "airportSimTrapWarning": "As opções de eSIM internacional e roaming são limitadas. Compre o chip apenas em pontos oficiais da Syriatel ou da MTN que façam o cadastro com o seu passaporte; não use chip em nome de outra pessoa."
+   },
+   "touristScams": [
+    {
+     "title": "Câmbio não oficial",
+     "desc": "Quem promete “câmbio bom” na rua pode entregar notas falsas ou fora de circulação.",
+     "tip": "Use apenas casas de câmbio oficiais e confira as notas ali mesmo."
+    },
+    {
+     "title": "Falsos guias ou taxas de “autorização”",
+     "desc": "Em locais históricos, há quem se passe por funcionário público e peça dinheiro por uma “autorização”.",
+     "tip": "Organize todas as visitas com seu operador de confiança e pague apenas em bilheterias oficiais."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Сирийский фунт (SYP)",

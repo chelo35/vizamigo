@@ -1460,11 +1460,12 @@ function getCountryEncyclopediaImpl(countryCode: string, lang: string = 'tr'): C
   const isEn = lang === 'en';
   const isDe = lang === 'de';
   const isEs = lang === 'es';
+  const isPt = lang === 'pt';
   const isRu = lang === 'ru';
   const normLang: 'tr' | 'en' | 'de' = isDe ? 'de' : isTr ? 'tr' : 'en';
 
-  const capital = geo ? geo.capital : (isDe ? 'Hauptstadt' : isEs ? 'Capital' : isRu ? 'Столица' : isTr ? 'Başkent' : 'Capital');
-  const hub = geo ? geo.mainHub : (isDe ? 'Flughafen' : isEs ? 'Aeropuerto' : isRu ? 'Аэропорт' : isTr ? 'Havalimanı' : 'Airport');
+  const capital = geo ? geo.capital : (isDe ? 'Hauptstadt' : isEs ? 'Capital' : isPt ? 'Capital' : isRu ? 'Столица' : isTr ? 'Başkent' : 'Capital');
+  const hub = geo ? geo.mainHub : (isDe ? 'Flughafen' : isEs ? 'Aeropuerto' : isPt ? 'Aeroporto' : isRu ? 'Аэропорт' : isTr ? 'Havalimanı' : 'Airport');
   const currency = insights.currency;
   const region = getCountryRegion(code);
   const profileTr = getRegionalProfile(region, capital, countryName, 'tr');
@@ -1506,9 +1507,9 @@ function getCountryEncyclopediaImpl(countryCode: string, lang: string = 'tr'): C
         ? heritage.figures.tr.map((f, idx) => lText(lang, f, heritage.figures.en?.[idx] || f, heritage.figures.de?.[idx]))
         : heritage.figures.en)
     : [
-        `${countryName} ${isDe ? 'Historische Persönlichkeiten & Pioniere' : isEs ? 'Líderes Históricos y Pioneros' : isRu ? 'Исторические лидеры и национальные деятели' : isTr ? 'Tarihi Önderleri ve Milli Şahsiyetleri' : 'Historical Leaders & Cultural Pioneers'}`,
-        `${countryName} ${isDe ? 'Anerkannte Künstler & Kulturschaffende' : isEs ? 'Artistas y Escritores Destacados' : isRu ? 'Известные деятели культуры и искусства' : isTr ? 'Tanınan Sanatçıları ve Yazarları' : 'Acclaimed Artists & Creators'}`,
-        `${countryName} ${isDe ? 'Internationale Spitzensportler' : isEs ? 'Deportistas Destacados' : isRu ? 'Национальные спортсмены' : isTr ? 'Milli Sporcuları ve Başarı İsimleri' : 'International Athletes'}`
+        `${countryName} ${isDe ? 'Historische Persönlichkeiten & Pioniere' : isEs ? 'Líderes Históricos y Pioneros' : isPt ? 'Líderes históricos e pioneiros' : isRu ? 'Исторические лидеры и национальные деятели' : isTr ? 'Tarihi Önderleri ve Milli Şahsiyetleri' : 'Historical Leaders & Cultural Pioneers'}`,
+        `${countryName} ${isDe ? 'Anerkannte Künstler & Kulturschaffende' : isEs ? 'Artistas y Escritores Destacados' : isPt ? 'Artistas e escritores de destaque' : isRu ? 'Известные деятели культуры и искусства' : isTr ? 'Tanınan Sanatçıları ve Yazarları' : 'Acclaimed Artists & Creators'}`,
+        `${countryName} ${isDe ? 'Internationale Spitzensportler' : isEs ? 'Deportistas Destacados' : isPt ? 'Atletas de destaque' : isRu ? 'Национальные спортсмены' : isTr ? 'Milli Sporcuları ve Başarı İsimleri' : 'International Athletes'}`
       ];
 
   const strongSectors = heritage ? heritage.sectors : profile.sectors;
@@ -1523,12 +1524,12 @@ function getCountryEncyclopediaImpl(countryCode: string, lang: string = 'tr'): C
     },
     tourism: {
       mustSeePlaces,
-      bestSeasons: insights.bestMonths || (isDe ? 'Mai - Oktober für beste Reisebedingungen' : isEs ? 'Mayo - Octubre para el mejor clima' : isRu ? 'Май - октябрь для наилучшей погоды' : isTr ? 'Mayıs - Ekim ayları en ideal seyahat dönemidir' : 'May - October for best weather'),
+      bestSeasons: insights.bestMonths || (isDe ? 'Mai - Oktober für beste Reisebedingungen' : isEs ? 'Mayo - Octubre para el mejor clima' : isPt ? 'Maio - outubro, para o melhor clima' : isRu ? 'Май - октябрь для наилучшей погоды' : isTr ? 'Mayıs - Ekim ayları en ideal seyahat dönemidir' : 'May - October for best weather'),
       travelStyleTip: isDe
         ? `Anreise über den internationalen Flughafen ${hub}. Nutzen Sie lokale Fahrdienste und Züge.`
         : isEs
         ? `Llegada a través del centro internacional de ${hub}. Se recomienda el uso de apps de viaje compartido y trenes.`
-        : isRu
+        : isPt ? `Chegada pelo polo internacional de ${hub}. Recomenda-se usar apps de transporte por aplicativo e trens.` : isRu
         ? `Прибытие через международный хаб ${hub}. Рекомендуется использовать сервисы такси и поезда.`
         : isTr
         ? `${hub} havalimanı ana giriş kapısıdır. Şehir içinde araç çağırma uygulamaları ve trenler tercih edilebilir.`
@@ -1540,7 +1541,7 @@ function getCountryEncyclopediaImpl(countryCode: string, lang: string = 'tr'): C
         ? 'In Gotteshäusern wird respektvolle Kleidung (Schultern und Knie bedecken) erwartet.'
         : isEs
         ? 'En lugares sagrados y templos se espera vestimenta modesta (hombros y rodillas cubiertos) y respeto al silencio.'
-        : isRu
+        : isPt ? 'Em locais sagrados e templos, espera-se roupa discreta (ombros e joelhos cobertos) e respeito ao silêncio.' : isRu
         ? 'При посещении религиозных объектов требуется скромная одежда (закрытые плечи и колени) и соблюдение тишины.'
         : isTr
         ? 'İbadethanelere girerken omuz ve dizlerin örtülü olmasına ve sessizliğe özen gösterilir.'
@@ -1554,7 +1555,7 @@ function getCountryEncyclopediaImpl(countryCode: string, lang: string = 'tr'): C
             ? heritage.sacredSites.tr.map((s, idx) => lText(lang, s, heritage?.sacredSites?.en?.[idx] || s, heritage?.sacredSites?.de?.[idx]))
             : heritage.sacredSites.en)
         : [
-            isDe ? `${capital} Historische Kathedrale & Heiligtum` : isEs ? `${capital} Templo Histórico y Patrimonio Religioso` : isRu ? `${capital} Исторический собор и святыня` : isTr ? `${capital} Tarihi Başkent Mabedi ve Dini Mirası` : `${capital} Historic Sanctuary & Religious Heritage`
+            isDe ? `${capital} Historische Kathedrale & Heiligtum` : isEs ? `${capital} Templo Histórico y Patrimonio Religioso` : isPt ? `${capital} Templo histórico e patrimônio religioso` : isRu ? `${capital} Исторический собор и святыня` : isTr ? `${capital} Tarihi Başkent Mabedi ve Dini Mirası` : `${capital} Historic Sanctuary & Religious Heritage`
           ]
     },
     language: {
@@ -1562,7 +1563,7 @@ function getCountryEncyclopediaImpl(countryCode: string, lang: string = 'tr'): C
         ? `${countryName} Landessprache. Englisch in Tourismuszentren geläufig.`
         : isEs
         ? `Idioma oficial de ${countryName}. El inglés es habitual en zonas turísticas.`
-        : isRu
+        : isPt ? `Idioma oficial de ${countryName}. O inglês é comum nas áreas turísticas.` : isRu
         ? `Государственный язык: ${countryName}. Английский понятен в туристических зонах.`
         : isTr
         ? `${countryName} resmi dili. Turistik noktalarda ve otellerde İngilizce anlaşılabilir.`
@@ -1571,7 +1572,7 @@ function getCountryEncyclopediaImpl(countryCode: string, lang: string = 'tr'): C
         ? 'Gut in Großstädten; Übersetzungs-Apps auf dem Land nützlich.'
         : isEs
         ? 'Bueno en las principales ciudades; apps de traducción recomendadas en zonas rurales.'
-        : isRu
+        : isPt ? 'Bom nas principais cidades; nas áreas rurais, recomenda-se usar apps de tradução.' : isRu
         ? 'Хороший в крупных городах; в сельской местности полезны приложения-переводчики.'
         : isTr
         ? 'Büyük şehirlerde ve otellerde iyi; kırsal bölgelerde çeviri uygulamaları faydalıdır.'
@@ -1590,7 +1591,7 @@ function getCountryEncyclopediaImpl(countryCode: string, lang: string = 'tr'): C
         ? `${countryName} besitzt ein reiches historisches Erbe, geprägt von frühen Epochen, Handelsrouten und der modernen Unabhängigkeit.`
         : isEs
         ? `${countryName} cuenta con un rico legado histórico marcado por antiguas rutas comerciales, soberanía e independencia, y un dinámico desarrollo moderno.`
-        : isRu
+        : isPt ? `${countryName} tem um rico legado histórico marcado por antigas rotas comerciais, soberania e independência, e um dinâmico desenvolvimento moderno.` : isRu
         ? `${countryName} обладает богатым историческим наследием, сформированным древними торговыми путями, независимостью и современным развитием.`
         : isTr
         ? `${countryName}, antik ticaret rotaları, bağımsızlık mücadelesi ve modern kalkınmayla şekillenmiş köklü bir tarihe sahiptir.`
@@ -1604,9 +1605,9 @@ function getCountryEncyclopediaImpl(countryCode: string, lang: string = 'tr'): C
             ? heritage.history.milestones.tr.map((m, idx) => lText(lang, m, heritage?.history?.milestones?.en?.[idx] || m, heritage?.history?.milestones?.de?.[idx]))
             : heritage.history.milestones.en)
         : [
-            isDe ? `${countryName} Frühe Siedlungen & Meilensteine` : isEs ? `Primeros Asentamientos e Hitos Históricos de ${countryName}` : isRu ? `Ранние поселения и исторические вехи: ${countryName}` : isTr ? `${countryName} Erken Yerleşimleri ve Tarihi Dönüm Noktaları` : `${countryName} Early Settlements & Historic Milestones`,
-            isDe ? `${countryName} Nationale Unabhängigkeit` : isEs ? `Declaración de Independencia y Soberanía de ${countryName}` : isRu ? `Провозглашение независимости и суверенитета: ${countryName}` : isTr ? `${countryName} Milli Bağımsızlık ve Egemenlik İlanı` : `${countryName} National Independence & Sovereignty`,
-            isDe ? `${countryName} Moderne Ära & Globale Kooperation` : isEs ? `Era Moderna y Alianzas Globales de ${countryName}` : isRu ? `Современная эпоха и глобальное партнерство: ${countryName}` : isTr ? `${countryName} Modern Dönem ve Küresel İş Birlikleri` : `${countryName} Modern Era & Global Partnerships`
+            isDe ? `${countryName} Frühe Siedlungen & Meilensteine` : isEs ? `Primeros Asentamientos e Hitos Históricos de ${countryName}` : isPt ? `Primeiros assentamentos e marcos históricos de ${countryName}` : isRu ? `Ранние поселения и исторические вехи: ${countryName}` : isTr ? `${countryName} Erken Yerleşimleri ve Tarihi Dönüm Noktaları` : `${countryName} Early Settlements & Historic Milestones`,
+            isDe ? `${countryName} Nationale Unabhängigkeit` : isEs ? `Declaración de Independencia y Soberanía de ${countryName}` : isPt ? `Declaração de independência e soberania de ${countryName}` : isRu ? `Провозглашение независимости и суверенитета: ${countryName}` : isTr ? `${countryName} Milli Bağımsızlık ve Egemenlik İlanı` : `${countryName} National Independence & Sovereignty`,
+            isDe ? `${countryName} Moderne Ära & Globale Kooperation` : isEs ? `Era Moderna y Alianzas Globales de ${countryName}` : isPt ? `Era moderna e alianças globais de ${countryName}` : isRu ? `Современная эпоха и глобальное партнерство: ${countryName}` : isTr ? `${countryName} Modern Dönem ve Küresel İş Birlikleri` : `${countryName} Modern Era & Global Partnerships`
           ]
     },
     gastronomy: {
@@ -1623,7 +1624,7 @@ function getCountryEncyclopediaImpl(countryCode: string, lang: string = 'tr'): C
         ? `Währung: ${currency}. Kartenzahlung in Städten verbreitet; etwas Bargeld für Märkte empfohlen.`
         : isEs
         ? `Moneda oficial: ${currency}. Las tarjetas son ampliamente aceptadas en ciudades; conviene llevar algo de efectivo para pequeños comercios.`
-        : isRu
+        : isPt ? `Moeda oficial: ${currency}. Cartões são amplamente aceitos nas cidades; vale levar algum dinheiro em espécie para pequenos comércios.` : isRu
         ? `Официальная валюта: ${currency}. Банковские карты распространены в городах; рекомендуется иметь наличные для рынков.`
         : isTr
         ? `Resmi para birimi: ${currency}. Şehirlerde kart yaygındır; pazarlar ve küçük esnaf için nakit bulundurulmalıdır.`
@@ -1632,7 +1633,7 @@ function getCountryEncyclopediaImpl(countryCode: string, lang: string = 'tr'): C
         ? 'Dienstleistungen, Tourismus, Außenhandel und lokale Industrie.'
         : isEs
         ? 'Servicios, turismo, comercio exterior y manufactura regional.'
-        : isRu
+        : isPt ? 'Serviços, turismo, comércio exterior e manufatura regional.' : isRu
         ? 'Сфера услуг, туризм, экспортная торговля и региональная промышленность.'
         : isTr
         ? 'Hizmet sektörü, turizm, ticaret ve yerel imalat sanayii.'
@@ -1641,7 +1642,7 @@ function getCountryEncyclopediaImpl(countryCode: string, lang: string = 'tr'): C
         ? 'Ca. 5-10% Trinkgeld im Restaurant ist üblich und wird geschätzt.'
         : isEs
         ? 'Se acostumbra dejar alrededor del 5-10% de propina en restaurantes con servicio.'
-        : isRu
+        : isPt ? 'Costuma-se deixar cerca de 5-10% de gorjeta em restaurantes com serviço de mesa.' : isRu
         ? 'В ресторанах с обслуживанием принято оставлять около 5-10% чаевых.'
         : isTr
         ? 'Restoranlarda %5-10 civarında bahşiş bırakmak nezaket kuralıdır.'

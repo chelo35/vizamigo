@@ -1531,6 +1531,389 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Dólar liberiano (LRD) – o dólar americano também tem curso legal e é muito usado",
+   "plugType": "Tipo A, B, C, F, G (120V / 230V, 50Hz / 60Hz)",
+   "bestMonths": "Novembro – abril (estação seca; possível poeira do harmatã de dezembro a fevereiro); de maio a outubro chove muito e as estradas rurais ficam intransitáveis",
+   "safety": {
+    "safetyScore": 40,
+    "safetyLevel": "Cautela recomendada",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60",
+    "crimeRateSummary": "Em Monróvia são frequentes os assaltos à mão armada, os furtos por arrastão e os roubos a casas e carros, e o risco aumenta muito à noite. A polícia tem pouca capacidade e o sistema de saúde é precário; pode haver tensão em eleições e protestos. Os alertas oficiais recomendam redobrar a cautela.",
+    "commonScams": [
+     "Funcionários reais ou falsos em postos de controle que pedem \"cold water\" (propina)",
+     "\"Ajudantes\" insistentes com a bagagem ou com os procedimentos no aeroporto Roberts International",
+     "Notas falsas ou troco a menos com cambistas de rua"
+    ],
+    "safeTravelTips": [
+     "Não ande a pé à noite; use um motorista de confiança e mantenha as portas travadas.",
+     "Combine o traslado do aeroporto com o seu hotel (ele fica a ~60 km da cidade).",
+     "Leve sua caderneta de vacinação contra febre amarela e antimaláricos; o certificado de febre amarela é obrigatório para entrar."
+    ],
+    "emergencyNumbers": {
+     "police": "911",
+     "ambulance": "911",
+     "general": "911"
+    }
+   },
+   "internet": {
+    "networkCoverage": "3G/4G em Monróvia e nas capitais de condado; fraca ou inexistente em áreas rurais e no sudeste de floresta",
+    "costPerGbUsd": "~US$ 1 - 3",
+    "esimAvailability": "Limitada – algumas eSIMs internacionais funcionam, mas são caras; um chip local da Orange ou da Lonestar Cell MTN sai mais barato",
+    "bestCarriers": [
+     "Orange Liberia",
+     "Lonestar Cell MTN"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Precário – sem metrô; táxis compartilhados amarelos, \"kekes\" (mototáxis de três rodas) e mototáxis; as estradas pioram na estação chuvosa",
+    "costLevel": "Médio (a hospedagem é cara)",
+    "singleTicketUsd": "0.50 - 1.50 $ (táxi compartilhado / keke)",
+    "dailyPassUsd": "4x4 com motorista ~80 - 150 $ / dia",
+    "popularRideApps": [
+     "Não há apps de transporte difundidos",
+     "Motoristas do hotel",
+     "Carro com motorista"
+    ],
+    "taxiAdvice": "Não há Uber nem Bolt. Os táxis compartilhados e os kekes são baratos, mas andam lotados e são inseguros; os mototáxis não são recomendados pelo alto risco de acidente. Para estrangeiros, o mais seguro é um carro com motorista contratado pelo hotel."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 50 - 80",
+    "dailyBudgetMidrangeUsd": "US$ 120 - 200",
+    "budgetMealUsd": "US$ 5 - 12",
+    "coffeeUsd": "US$ 2 - 4",
+    "waterBottleUsd": "A água da torneira não é potável; beba apenas água engarrafada ou tratada.",
+    "hostelDormUsd": "US$ 40 - 70",
+    "hotel3StarUsd": "US$ 100 - 180",
+    "flightCostIndex": "Alto (com escala)",
+    "flightTip": "Saindo da Turquia, a conexão costuma ser via Bruxelas (Brussels Airlines), Casablanca (Royal Air Maroc), Adis Abeba (Ethiopian) ou Acra/Abidjan até o aeroporto Roberts International (ROB). Ele fica a 1–1,5 hora de Monróvia."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "O aperto de mão liberiano com \"snap\": no final, os dois estalam os dedos médios.",
+     "Demonstre respeito aos mais velhos e aos líderes comunitários e cumprimente-os primeiro.",
+     "Não fotografe prédios oficiais, policiais nem instalações militares.",
+     "Use a mão direita para comer e para entregar coisas."
+    ],
+    "festivals": [
+     "Dia da Independência – 26 de julho",
+     "Dia da Bandeira – 24 de agosto",
+     "Dia Nacional de Ação de Graças – primeira quinta-feira de novembro"
+    ],
+    "lifestyle": "Mercados animados, comunidades de igrejas e mesquitas, música alta e paixão pelo futebol; uma sociedade acolhedora que se reconstrói rapidamente depois das guerras civis."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Ilha Providence (onde desembarcaram os colonos de 1822, Monróvia)",
+     "Robertsport – praias de surfe do cabo Mount",
+     "Parque Nacional de Sapo (floresta tropical, hipopótamos-pigmeus)",
+     "Cachoeira de Kpatawee (condado de Bong)",
+     "Museu Nacional da Libéria (Broad Street, Monróvia)",
+     "Lago Piso e Harper (cabo Palmas)"
+    ],
+    "bestSeasons": "Novembro – abril (estação seca; possível poeira do harmatã de dezembro a fevereiro); de maio a outubro chove muito e as estradas rurais ficam intransitáveis",
+    "travelStyleTip": "Viajar por conta própria é difícil; planeje com carro e motorista e uma agência local, e evite o interior na estação chuvosa."
+   },
+   "religion": {
+    "primaryReligions": "Cristãos (~85 %), muçulmanos (~12 %), crenças tradicionais e sociedades secretas (Poro, Sande).",
+    "respectNorms": "Cubra-se em igrejas e mesquitas; nunca entre sem permissão nas florestas sagradas tradicionais (terrenos Poro/Sande).",
+    "sacredSites": [
+     "Igreja Batista Providence (Monróvia, onde foi assinada a Declaração de Independência de 1847)",
+     "Catedral do Sagrado Coração (Monróvia)",
+     "Florestas sagradas das sociedades Poro e Sande (fechadas a estrangeiros)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Inglês (oficial); no dia a dia, inglês liberiano (kolokwa) e cerca de 16 línguas locais, como o kpelle, o bassa e o vai.",
+    "englishProficiency": "Bom – o inglês é oficial, embora o sotaque liberiano e o kolokwa sejam difíceis no começo.",
+    "phrases": [
+     {
+      "phrase": "How da body?",
+      "meaning": "Tudo bem? (Como vai o corpo?)",
+      "translation": "Tudo bem? (Como vai o corpo?)",
+      "pronunciation": "how dah BAH-dee"
+     },
+     {
+      "phrase": "I tank God",
+      "meaning": "Estou bem, graças a Deus",
+      "translation": "Estou bem, graças a Deus",
+      "pronunciation": "ah TANK gawd"
+     },
+     {
+      "phrase": "I beg you",
+      "meaning": "Por favor",
+      "translation": "Por favor",
+      "pronunciation": "ah BEG yah"
+     },
+     {
+      "phrase": "Small-small",
+      "meaning": "Pouco a pouco, devagar",
+      "translation": "Pouco a pouco, devagar",
+      "pronunciation": "SMAH-smah"
+     },
+     {
+      "phrase": "I coming",
+      "meaning": "Já volto (com licença)",
+      "translation": "Já volto (com licença)",
+      "pronunciation": "ah KUM-in"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "A partir de 1822, afro-americanos libertos enviados pela American Colonization Society se instalaram em terras de povos indígenas como os kpelle, bassa, kru, grebo e vai. Independente desde 26 de julho de 1847, a Libéria é a república mais antiga da África. Depois das guerras civis de 1989–2003, Ellen Johnson Sirleaf se tornou, em 2005, a primeira chefe de Estado eleita da África; a epidemia de ebola de 2014–2016 atingiu duramente o país.",
+    "milestones": [
+     "1822: Primeiro assentamento na ilha Providence",
+     "26 de julho de 1847: Independência",
+     "1989–2003: Guerras civis",
+     "2005: Eleição de Ellen Johnson Sirleaf"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Palm butter (molho de fruto de palmeira) com arroz",
+     "Cassava leaf (ensopado de folhas de mandioca)",
+     "Arroz jollof"
+    ],
+    "traditionalDrinks": [
+     "Cerveja de gengibre picante caseira",
+     "Vinho de palma",
+     "Club Beer (cerveja local)"
+    ],
+    "streetFoodAndDesserts": [
+     "Kala (bolinhos de massa fritos)",
+     "Banana-da-terra frita",
+     "Pão de arroz liberiano"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Ellen Johnson Sirleaf (Nobel da Paz 2011)",
+     "Leymah Gbowee (Nobel da Paz 2011)",
+     "George Weah (Bola de Ouro 1995)"
+    ],
+    "strongSectors": [
+     "Mineração de ferro",
+     "Borracha (plantação Firestone) e óleo de palma",
+     "Registro de navios (um dos maiores do mundo)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "O dinheiro vivo manda: USD e LRD são usados lado a lado; leve notas de dólar limpas e de série nova. Os cartões só funcionam em grandes hotéis e supermercados; os caixas eletrônicos não são confiáveis.",
+    "tippingCulture": "Não é obrigatória; 10 % nos restaurantes e pequenas gorjetas para motoristas e guias são bem-vindos.",
+    "economicPillars": "Mineração (ferro, ouro), borracha, agricultura e receitas do registro de navios."
+   }
+  },
+  "itin": {
+   "routeName": "Libéria, litoral e interior: Robertsport, Monróvia, Harbel e Bong",
+   "routeSummary": "Roteiro de 8 dias que vai das praias de surfe de Robertsport, no noroeste, passa pela história da capital Monróvia e pelas plantações de borracha de Harbel e chega à cachoeira do condado de Bong, no interior.",
+   "totalDays": 8,
+   "idealDurationText": "Roteiro de 8 dias",
+   "bestSeason": "Novembro – abril (estação seca; possível poeira do harmatã de dezembro a fevereiro); de maio a outubro chove muito e as estradas rurais ficam intransitáveis",
+   "transportMode": "4x4 com motorista (pelo hotel/agência)",
+   "paceLevel": "Equilibrado (litoral, história e natureza)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Robertsport (Grand Cape Mount)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Praias de surfe de Cotton Trees e Fishermen's Point",
+      "Vistas do cabo Mount",
+      "Lago Piso"
+     ],
+     "activities": [
+      "Faça uma aula de surfe ou assista aos surfistas.",
+      "Percorra a vila de pescadores.",
+      "Passeie de canoa pelo lago Piso."
+     ],
+     "foodAndDrinks": [
+      "Peixe grelhado com arroz",
+      "Coco fresco"
+     ],
+     "criticalTips": [
+      "O trajeto a partir de Monróvia leva 2-3 horas; viaje durante o dia.",
+      "As correntezas são fortes; entre no mar só onde a escola de surfe indicar."
+     ],
+     "mapsQuery": "Robertsport, Liberia"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Monróvia (capital)",
+     "recommendedDuration": "3 dias",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Ilha Providence",
+      "Museu Nacional da Libéria",
+      "Mirante de Ducor Hill",
+      "Mercado de Waterside"
+     ],
+     "activities": [
+      "Conheça a história da fundação na ilha Providence.",
+      "Percorra o mercado de Waterside com um guia.",
+      "Veja o pôr do sol no litoral de Sinkor."
+     ],
+     "foodAndDrinks": [
+      "Palm butter com arroz",
+      "Cerveja de gengibre"
+     ],
+     "criticalTips": [
+      "Esconda os objetos de valor em mercados e aglomerações.",
+      "Não caminhe à noite; use o motorista do hotel."
+     ],
+     "mapsQuery": "Monrovia, Liberia"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Harbel e Marshall (Firestone)",
+     "recommendedDuration": "1 dia",
+     "durationBadge": "1 dia",
+     "highlights": [
+      "Plantação de borracha Firestone (Harbel)",
+      "Praia de Marshall e rio Farmington",
+      "Extração de látex das seringueiras"
+     ],
+     "activities": [
+      "Faça uma visita guiada pela plantação.",
+      "Descanse à beira do rio Farmington.",
+      "Passe aqui a última noite, perto do aeroporto."
+     ],
+     "foodAndDrinks": [
+      "Cassava leaf",
+      "Vinho de palma"
+     ],
+     "criticalTips": [
+      "A plantação é propriedade privada; a visita exige autorização.",
+      "Na época de chuvas, as estradas viram lama."
+     ],
+     "mapsQuery": "Harbel, Liberia"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Condado de Bong (cachoeira de Kpatawee e Gbarnga)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Cachoeira de Kpatawee",
+      "Mercado de Gbarnga",
+      "Aldeias kpelle e floresta tropical"
+     ],
+     "activities": [
+      "Tome banho e faça um piquenique na cachoeira.",
+      "Conheça o artesanato tradicional em uma aldeia kpelle.",
+      "Faça uma caminhada curta pela floresta."
+     ],
+     "foodAndDrinks": [
+      "Arroz jollof",
+      "Banana-da-terra frita"
+     ],
+     "criticalTips": [
+      "As pedras da cachoeira são escorregadias; tome cuidado.",
+      "Peça permissão ao chefe local antes de entrar nas aldeias."
+     ],
+     "mapsQuery": "Kpatawee Waterfalls, Bong, Liberia"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Palm butter (molho de fruto de palmeira) com arroz",
+     "Cassava leaf (ensopado de folhas de mandioca)",
+     "Arroz jollof"
+    ],
+    "drinks": [
+     "Cerveja de gengibre picante caseira",
+     "Vinho de palma",
+     "Club Beer (cerveja local)"
+    ],
+    "streetFoods": [
+     "Kala (bolinhos de massa fritos)",
+     "Banana-da-terra frita",
+     "Pão de arroz liberiano"
+    ],
+    "diningAdvice": "Os restaurantes libaneses e internacionais de Monróvia são caros; os \"cookshops\" locais são baratos, mas fique atento à higiene. A comida costuma ser apimentada."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Caderneta de vacinação contra febre amarela (obrigatória) e antimaláricos",
+     "Notas de USD limpas e de série nova",
+     "Adaptador universal e power bank",
+     "Repelente e mosquiteiro"
+    ],
+    "safetyAndEtiquette": [
+     "Não fique na rua à noite; viaje com um motorista de confiança.",
+     "Não fotografe prédios nem agentes oficiais."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "A",
+     "B",
+     "C",
+     "F",
+     "G"
+    ],
+    "voltage": "120V / 230V",
+    "frequency": "50Hz / 60Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Sistema misto: tomadas americanas (A/B), europeias (C/F) e britânicas (G); a voltagem pode ser 120V ou 230V, dependendo do prédio. Leve um adaptador universal; as quedas de energia são frequentes."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "A água da torneira não é potável; beba apenas água engarrafada ou tratada.",
+    "vaccines": [
+     "Febre amarela – certificado obrigatório para entrar",
+     "Profilaxia contra malária (risco alto)",
+     "Hepatite A e febre tifoide",
+     "Raiva e meningite (estadias longas ou rurais)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "911"
+   },
+   "tipping": {
+    "custom": "A gorjeta não é obrigatória; deixa-se 10 % por um bom atendimento.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "É comum dar pequenas gorjetas em USD aos funcionários do hotel, motoristas e guias."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Sem devolução de IVA para turistas",
+    "minSpend": "—",
+    "customsNote": "A Libéria não tem sistema tax-free nem devolução de impostos para turistas. Comprar ou exportar marfim e produtos da fauna silvestre é ilegal."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "US$ 1,00 - 3,00",
+    "topCarriers": [
+     "Orange Liberia",
+     "Lonestar Cell MTN"
+    ],
+    "airportSimTrapWarning": "No aeroporto pode haver vendedores ambulantes de chips; compre um chip registrado com passaporte em uma loja oficial da Orange ou da Lonestar em Monróvia."
+   },
+   "touristScams": [
+    {
+     "title": "Propina do \"cold water\"",
+     "desc": "Pedem pequenos pagamentos nos postos de controle.",
+     "tip": "Mantenha a calma e a cortesia, mostre seus documentos e deixe que o seu motorista resolva."
+    },
+    {
+     "title": "\"Ajudantes\" do aeroporto",
+     "desc": "Ajuda insistente com malas ou procedimentos e, depois, cobram dinheiro.",
+     "tip": "Combine antes um serviço de traslado com o hotel."
+    },
+    {
+     "title": "Notas falsas",
+     "desc": "Notas velhas, rasgadas ou falsas de cambistas de rua.",
+     "tip": "Troque dinheiro em banco ou hotel e confira as notas."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Либерийский доллар (LRD) – доллар США тоже законное платёжное средство и широко используется",

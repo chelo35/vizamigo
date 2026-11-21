@@ -105,7 +105,7 @@ export const LiveTours: React.FC<{ pkg: string }> = ({ pkg }) => {
         <>
           <p className="vz-live-head">
             <span className="vz-live-dot" />
-            {l('Güncel turlar ve fiyatlar', 'Live tours & prices', 'Aktuelle Touren & Preise', 'Tours y precios actuales', 'Актуальные туры и цены')} <AdTag />
+            {l('Güncel turlar ve fiyatlar', 'Live tours & prices', 'Aktuelle Touren & Preise', 'Tours y precios actuales', 'Актуальные туры и цены', 'Passeios e preços atuais')} <AdTag />
           </p>
           <ul className="vz-live-list">
             {state.tours.map((t) => {
@@ -120,14 +120,14 @@ export const LiveTours: React.FC<{ pkg: string }> = ({ pkg }) => {
                     <span className="vz-live-main">
                       <b>{t.name}</b>
                       <small>
-                        {t.days ? l(`${t.days} gün`, `${t.days} days`, `${t.days} Tage`, `${t.days} días`, `${t.days} дн.`) : ''}
+                        {t.days ? l(`${t.days} gün`, `${t.days} days`, `${t.days} Tage`, `${t.days} días`, `${t.days} дн.`, `${t.days} dias`) : ''}
                         {t.op ? ` · ${t.op}` : ''}
                         {t.rating ? ` · ★ ${t.rating.toFixed(1)}${t.reviews ? ` (${t.reviews})` : ''}` : ''}
                       </small>
                       {t.dep && (
                         <small className="vz-live-dep">
-                          {l(`${day(t.dep.date)} çıkışlı`, `Departs ${day(t.dep.date)}`, `Abreise ${day(t.dep.date)}`, `Salida ${day(t.dep.date)}`, `Выезд ${day(t.dep.date)}`)}
-                          {few && <em>{l(`son ${t.dep.seats} yer`, `${t.dep.seats} spots left`, `noch ${t.dep.seats} Plätze`, `quedan ${t.dep.seats}`, `осталось ${t.dep.seats}`)}</em>}
+                          {l(`${day(t.dep.date)} çıkışlı`, `Departs ${day(t.dep.date)}`, `Abreise ${day(t.dep.date)}`, `Salida ${day(t.dep.date)}`, `Выезд ${day(t.dep.date)}`, `Saída ${day(t.dep.date)}`)}
+                          {few && <em>{l(`son ${t.dep.seats} yer`, `${t.dep.seats} spots left`, `noch ${t.dep.seats} Plätze`, `quedan ${t.dep.seats}`, `осталось ${t.dep.seats}`, `restam ${t.dep.seats}`)}</em>}
                         </small>
                       )}
                     </span>
@@ -135,7 +135,7 @@ export const LiveTours: React.FC<{ pkg: string }> = ({ pkg }) => {
                       {pct >= 5 && <span className="vz-live-off">-{pct}%</span>}
                       {orig && orig > price && <s>{money(orig, state.currency)}</s>}
                       <b>{money(price, state.currency)}</b>
-                      <small>{l('kişi başı', 'per person', 'pro Person', 'por persona', 'с человека')}</small>
+                      <small>{l('kişi başı', 'per person', 'pro Person', 'por persona', 'с человека', 'por pessoa')}</small>
                     </span>
                   </a>
                 </li>
@@ -148,7 +148,7 @@ export const LiveTours: React.FC<{ pkg: string }> = ({ pkg }) => {
               'Prices and dates come live from TourRadar, where you book.',
               'Preise und Termine kommen live von TourRadar; dort wird gebucht.',
               'Precios y fechas en directo de TourRadar, donde reservas.',
-              'Цены и даты в реальном времени с TourRadar, бронирование там.'
+              'Цены и даты в реальном времени с TourRadar, бронирование там.', 'Preços e datas ao vivo da TourRadar, onde você reserva.'
             )}
           </p>
         </>

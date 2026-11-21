@@ -1431,6 +1431,364 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Euro (EUR)",
+   "plugType": "Tipo C, F (230V, 50Hz)",
+   "bestMonths": "Maio a setembro (quente e seco; temporada de festivais); dezembro a março para esquiar em Brezovica",
+   "safety": {
+    "crimeRateSummary": "A criminalidade contra turistas é baixa, e dá para circular por Pristina e Prizren sem problemas. Nos municípios do norte surgem, às vezes, tensões étnicas e políticas.",
+    "commonScams": [
+     "Táxis do aeroporto e da rodoviária que não usam taxímetro e cobram a mais",
+     "Restaurantes turísticos que incluem na conta pão, entradas ou acompanhamentos que você não pediu",
+     "Batedores de carteira em bazares e ônibus lotados"
+    ],
+    "safeTravelTips": [
+     "Acompanhe o noticiário local sobre as tensões no norte de Kosovo (Mitrovica Norte, Zvečan, Zubin Potok, Leposavić) e evite manifestações.",
+     "Confira se o taxímetro está ligado ou chame um táxi de empresa.",
+     "Nas trilhas de montanha, não saia dos caminhos sinalizados; em áreas remotas há registro de minas antigas."
+    ],
+    "emergencyNumbers": {
+     "police": "192",
+     "ambulance": "194",
+     "general": "112"
+    },
+    "safetyScore": 65,
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Bom 4G nas cidades e estradas; a IPKO oferece 5G; sinal mais fraco nas montanhas",
+    "costPerGbUsd": "US$ 0,50 - 1,50",
+    "esimAvailability": "Boa (eSIMs internacionais)",
+    "bestCarriers": [
+     "Vala",
+     "IPKO"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Boa rede de ônibus intermunicipais; nas cidades, ônibus e táxi",
+    "costLevel": "Barato",
+    "singleTicketUsd": "US$ 0,50 - 0,80",
+    "dailyPassUsd": "Não há (ônibus Pristina–Prizren ~US$ 4-5)",
+    "popularRideApps": [
+     "Não há apps internacionais de transporte",
+     "Empresas de táxi (por telefone/Viber)",
+     "Ônibus intermunicipais"
+    ],
+    "taxiAdvice": "Não há Uber nem Bolt; os táxis de empresa com taxímetro em Pristina são baratos e podem ser chamados por telefone ou Viber. Entre cidades, o mais prático são os ônibus, que saem com frequência."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 25 - 40",
+    "dailyBudgetMidrangeUsd": "US$ 60 - 100",
+    "budgetMealUsd": "US$ 4 - 8",
+    "coffeeUsd": "US$ 1 - 2",
+    "waterBottleUsd": "US$ 0,40 - 0,80",
+    "hostelDormUsd": "US$ 10 - 18",
+    "hotel3StarUsd": "US$ 40 - 75",
+    "flightCostIndex": "Baixo a moderado",
+    "flightTip": "Turkish Airlines, Pegasus e AJet têm voos diretos de Istambul para Pristina (PRN) em ~1,5 h; no verão os preços sobem por causa da diáspora."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "O cumprimento é um aperto de mão; entre pessoas próximas, beijos no rosto. Cumprimente primeiro os mais velhos.",
+     "Os gestos com a cabeça podem confundir: entre os albaneses de Kosovo, balançar a cabeça para cima e para baixo pode significar “não”, e para os lados, “sim”.",
+     "Evite discussões políticas e étnicas e tome cuidado com os nomes de lugares que usar.",
+     "Aceitar um convite para um café honra a hospitalidade; geralmente quem convida paga."
+    ],
+    "festivals": [
+     "Dokufest – Festival Internacional de Documentários e Curtas-Metragens (Prizren, agosto)",
+     "Sunny Hill Festival (Pristina, verão)",
+     "Dia da Independência (17 de fevereiro)"
+    ],
+    "lifestyle": "Uma das populações mais jovens da Europa; a cultura do café, a vida noturna e a diáspora que volta no verão agitam as cidades. A família e a hospitalidade (besa) têm muito peso."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Centro histórico de Prizren, ponte de pedra e fortaleza",
+     "Cânion de Rugova (Peja)",
+     "Mosteiro de Visoki Dečani (UNESCO)",
+     "Mosteiro de Gračanica (UNESCO)",
+     "Pristina: monumento Newborn e Biblioteca Nacional",
+     "Cachoeiras de Mirusha"
+    ],
+    "bestSeasons": "Maio a setembro (quente e seco; temporada de festivais); dezembro a março para esquiar em Brezovica",
+    "travelStyleTip": "O país é pequeno: fique baseado em Pristina ou Prizren e faça bate-voltas de ônibus; em Prizren, muita gente entende turco."
+   },
+   "religion": {
+    "primaryReligions": "Muçulmanos ~95% (sobretudo sunitas, além de bektashis e ordens sufis), católicos ~2%, ortodoxos sérvios e outros",
+    "respectNorms": "A sociedade é majoritariamente laica; cubra ombros e joelhos em mesquitas e mosteiros, tire os sapatos nas mesquitas, e as mulheres devem usar lenço.",
+    "sacredSites": [
+     "Mesquita de Sinan Paxá (Prizren)",
+     "Mausoléu do sultão Murad I (perto de Pristina)",
+     "Mosteiro de Visoki Dečani"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Albanês e sérvio (oficiais); turco, bósnio e romani são oficiais em alguns municípios (por exemplo, Prizren e Mamusha).",
+    "englishProficiency": "Muito bom entre os jovens; os mais velhos entendem melhor alemão ou turco.",
+    "phrases": [
+     {
+      "phrase": "Mirëdita",
+      "meaning": "Bom dia / Olá",
+      "translation": "Bom dia / Olá",
+      "pronunciation": "mi-rë-DI-ta"
+     },
+     {
+      "phrase": "Faleminderit",
+      "meaning": "Obrigado",
+      "translation": "Obrigado",
+      "pronunciation": "fa-le-min-DE-rit"
+     },
+     {
+      "phrase": "Ju lutem",
+      "meaning": "Por favor",
+      "translation": "Por favor",
+      "pronunciation": "yu LU-tem"
+     },
+     {
+      "phrase": "Sa kushton?",
+      "meaning": "Quanto custa?",
+      "translation": "Quanto custa?",
+      "pronunciation": "sa kush-TON"
+     },
+     {
+      "phrase": "Mirupafshim",
+      "meaning": "Tchau / Adeus",
+      "translation": "Tchau / Adeus",
+      "pronunciation": "mi-ru-PAF-shim"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Com herança dardânia e romana (Ulpiana), a região fez parte do reino sérvio medieval e, após a Batalha de Kosovo, em 1389, do Império Otomano por cerca de cinco séculos. Depois das Guerras Balcânicas passou à Sérvia e à Iugoslávia; após o conflito de 1999 ficou sob administração da ONU e declarou independência em 17 de fevereiro de 2008.",
+    "milestones": [
+     "1389: Batalha de Kosovo",
+     "1912: Guerras Balcânicas e fim do domínio otomano",
+     "1999: conflito e administração da ONU (UNMIK)",
+     "2008: declaração de independência (17 de fevereiro)"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Flija (torta de camadas de massa)",
+     "Tavë Prizreni (cordeiro assado no forno ao estilo de Prizren)",
+     "Pite / byrek (torta salgada)"
+    ],
+    "traditionalDrinks": [
+     "Macchiato (símbolo dos cafés de Pristina)",
+     "Rakia (aguardente de frutas)",
+     "Cerveja Birra Peja"
+    ],
+    "streetFoodAndDesserts": [
+     "Qebapa (rolinhos de carne grelhados)",
+     "Trileçe (bolo de três leites)",
+     "Baklava e tulumba"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Majlinda Kelmendi (campeã olímpica de judô em 2016)",
+     "Distria Krasniqi (campeã olímpica de judô em Tóquio 2020)",
+     "Rita Ora (cantora nascida em Pristina)"
+    ],
+    "strongSectors": [
+     "Remessas da diáspora e construção civil",
+     "TI e serviços de terceirização",
+     "Mineração e energia (linhito)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "A moeda é o euro. Nas cidades os cartões são aceitos, mas cafés pequenos, padarias e restaurantes no interior preferem dinheiro. É fácil encontrar caixas eletrônicos.",
+    "tippingCulture": "Nos restaurantes é comum arredondar a conta ou deixar 5-10%.",
+    "economicPillars": "Remessas, construção civil, comércio, serviços de TI, agricultura e mineração."
+   }
+  },
+  "itin": {
+   "routeName": "Coração dos Bálcãs: Pristina, Prizren e Rugova",
+   "routeSummary": "Roteiro compacto de 6 dias: a jovem Pristina, a otomana Prizren, o bazar de Gjakova, o mosteiro de Dečani e as montanhas de Rugova.",
+   "totalDays": 6,
+   "idealDurationText": "Roteiro de 6 dias",
+   "bestSeason": "Maio a setembro (quente e seco; temporada de festivais); dezembro a março para esquiar em Brezovica",
+   "transportMode": "Ônibus intermunicipais + táxi ou carro alugado para Rugova",
+   "paceLevel": "Equilibrado (cultura + natureza)",
+   "stops": [
+    {
+     "name": "Parada 1: Pristina e Gračanica",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Monumento Newborn e bulevar Madre Teresa",
+      "Biblioteca Nacional",
+      "Mosteiro de Gračanica",
+      "Mausoléu de Murad I"
+     ],
+     "activities": [
+      "Tome um macchiato no bulevar Madre Teresa.",
+      "Visite a mesquita Fatih e o antigo bazar.",
+      "Passeie pelo parque Germia."
+     ],
+     "foodAndDrinks": [
+      "Flija (torta de camadas de massa)",
+      "Macchiato (símbolo dos cafés de Pristina)"
+     ],
+     "criticalTips": [
+      "Gračanica fica a 20 min de ônibus ou táxi; use roupas discretas no mosteiro.",
+      "Em agosto a diáspora lota a cidade; reserve com antecedência."
+     ],
+     "mapsQuery": "Newborn Monument, Pristina, Kosovo",
+     "stopNumber": 1
+    },
+    {
+     "name": "Parada 2: Prizren",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Ponte de pedra e praça Shadervan",
+      "Vista da fortaleza",
+      "Mesquita de Sinan Paxá",
+      "Hammam de Gazi Mehmed Paxá"
+     ],
+     "activities": [
+      "Suba até a fortaleza no fim da tarde.",
+      "Visite as oficinas de filigrana de prata.",
+      "Assista às sessões do Dokufest em agosto."
+     ],
+     "foodAndDrinks": [
+      "Tavë Prizreni (cordeiro assado no forno ao estilo de Prizren)",
+      "Baklava e tulumba"
+     ],
+     "criticalTips": [
+      "O caminho até a fortaleza é íngreme e escorregadio; use um bom calçado.",
+      "Em Prizren se fala muito turco, até no comércio."
+     ],
+     "mapsQuery": "Shadervan, Prizren, Kosovo",
+     "stopNumber": 2
+    },
+    {
+     "name": "Parada 3: Gjakova, Peja e cânion de Rugova",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Grande Bazar de Gjakova",
+      "Mosteiro de Visoki Dečani",
+      "Cânion de Rugova e via ferrata",
+      "Patriarcado de Peć"
+     ],
+     "activities": [
+      "Faça uma pausa para o café no bazar otomano de Gjakova.",
+      "Faça trilha, tirolesa ou via ferrata em Rugova.",
+      "Tome café da manhã em uma casa rural na montanha."
+     ],
+     "foodAndDrinks": [
+      "Queijo e cordeiro de Rugova",
+      "Cerveja Birra Peja",
+      "Qebapa (rolinhos de carne grelhados)"
+     ],
+     "criticalTips": [
+      "Nos mosteiros pode haver controle da KFOR/polícia; leve o passaporte.",
+      "O tempo na montanha muda rápido; no inverno, é preciso usar correntes nos pneus."
+     ],
+     "mapsQuery": "Rugova Canyon, Peja, Kosovo",
+     "stopNumber": 3
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Flija (torta de camadas de massa)",
+     "Tavë Prizreni (cordeiro assado no forno ao estilo de Prizren)",
+     "Pite / byrek (torta salgada)"
+    ],
+    "drinks": [
+     "Macchiato (símbolo dos cafés de Pristina)",
+     "Rakia (aguardente de frutas)",
+     "Cerveja Birra Peja"
+    ],
+    "streetFoods": [
+     "Qebapa (rolinhos de carne grelhados)",
+     "Trileçe (bolo de três leites)",
+     "Baklava e tulumba"
+    ],
+    "diningAdvice": "Porções grandes e preços baixos; prove flija e tavë em restaurantes tradicionais; arredondar a conta basta."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Calçado confortável",
+     "Lenço para mesquitas e mosteiros",
+     "Roupas quentes no inverno (frio e neve)",
+     "Euros em dinheiro, em notas pequenas"
+    ],
+    "safetyAndEtiquette": [
+     "Acompanhe o noticiário local sobre as tensões no norte de Kosovo (Mitrovica Norte, Zvečan, Zubin Potok, Leposavić) e evite manifestações.",
+     "Evite discussões políticas e étnicas e tome cuidado com os nomes de lugares que usar.",
+     "O cumprimento é um aperto de mão; entre pessoas próximas, beijos no rosto. Cumprimente primeiro os mais velhos."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Tomadas europeias de dois pinos redondos (C/F), como na Turquia; não é preciso adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "A água encanada de Pristina, Prizren e Peja é tratada e geralmente potável; em prédios antigos e áreas rurais, prefira água mineral.",
+    "vaccines": [
+     "Vacinas de rotina (tétano-difteria, sarampo)",
+     "Hepatite A é recomendada",
+     "Encefalite transmitida por carrapatos e raiva para estadias longas em áreas rurais"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "194"
+   },
+   "tipping": {
+    "custom": "É comum arredondar a conta ou deixar 5-10%.",
+    "standardPercent": 5,
+    "rule": "round_up",
+    "note": "Nos cafés, algumas moedas bastam."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Não há (IVA de 18%)",
+    "minSpend": "Não se aplica",
+    "customsNote": "Kosovo não tem reembolso de IVA para turistas. Respeite as cotas de isenção da alfândega na volta."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 0,50 - 1,50",
+    "topCarriers": [
+     "Vala",
+     "IPKO"
+    ],
+    "airportSimTrapWarning": "O roaming com chip estrangeiro pode sair caro; um chip pré-pago da Vala ou da IPKO custa poucos euros no aeroporto ou na cidade, ou instale uma eSIM antes de viajar."
+   },
+   "touristScams": [
+    {
+     "title": "Táxi do aeroporto",
+     "desc": "Táxis do aeroporto e da rodoviária que não usam taxímetro e cobram a mais",
+     "tip": "Confira se o taxímetro está ligado ou chame um táxi de empresa."
+    },
+    {
+     "title": "Extras na conta",
+     "desc": "Restaurantes turísticos que incluem na conta pão, entradas ou acompanhamentos que você não pediu",
+     "tip": "Peça o cardápio com preços e confira a conta item por item."
+    },
+    {
+     "title": "Batedores de carteira",
+     "desc": "Batedores de carteira em bazares e ônibus lotados",
+     "tip": "Leve celular e carteira no bolso da frente ou em uma bolsa com zíper."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Евро (EUR)",

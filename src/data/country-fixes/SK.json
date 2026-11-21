@@ -1571,6 +1571,399 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Euro (EUR)",
+   "plugType": "Tipo C, E (230V, 50Hz)",
+   "bestMonths": "Maio–setembro (as melhores trilhas nos Altos Tatras vão de junho a setembro); dezembro–março (esqui: Jasná, Tatranská Lomnica; mercados de Natal de Bratislava)",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Em geral é seguro, com poucos crimes violentos. Cuidado com batedores de carteira no centro histórico de Bratislava e nas estações, e com contas infladas em casas noturnas.",
+    "commonScams": [
+     "Táxis parados na rua que cobram tarifas infladas, em vez de corridas por aplicativo",
+     "Contas infladas em bares/boates depois de convites “amigáveis” no centro histórico",
+     "Casas de câmbio em áreas turísticas com cotações péssimas e taxas escondidas"
+    ],
+    "safeTravelTips": [
+     "Em Bratislava, peça corridas pelo Bolt, Uber ou Hopin.",
+     "Antes de fazer trilha nos Tatras, confira a previsão do tempo e os fechamentos sazonais (trilhas altas fechadas de 1º de nov a 15 de jun).",
+     "Se for alugar carro, compre a vinheta (e-známka) apenas no site oficial eznamka.sk."
+    ],
+    "emergencyNumbers": {
+     "police": "158",
+     "ambulance": "155",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99 % de cobertura da população (4G, 5G nas cidades grandes); o sinal pode enfraquecer nos vales de montanha",
+    "costPerGbUsd": "~US$ 1,00 - 3,00",
+    "esimAvailability": "Excelente",
+    "bestCarriers": [
+     "Orange Slovensko",
+     "Slovak Telekom",
+     "O2 Slovakia",
+     "4ka",
+     "Airalo / Holafly eSIM"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Boa (trens frequentes na linha Bratislava–Košice; bondes e trólebus nas cidades)",
+    "costLevel": "Barato a moderado",
+    "singleTicketUsd": "US$ 1,20 - 1,80 (Bratislava DPB, 30 min)",
+    "dailyPassUsd": "US$ 5,00 - 6,50 (Bratislava, 24h)",
+    "popularRideApps": [
+     "Bolt",
+     "Uber",
+     "Hopin Taxi",
+     "IDS BK / DPB app",
+     "ZSSK",
+     "RegioJet"
+    ],
+    "taxiAdvice": "Bolt, Uber e Hopin são comuns em Bratislava e mais baratos que os táxis de rua. Os trens da ZSSK, RegioJet e Leo Express têm preços acessíveis para viagens entre cidades."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 45 - 65",
+    "dailyBudgetMidrangeUsd": "US$ 100 - 160",
+    "budgetMealUsd": "US$ 9 - 15",
+    "coffeeUsd": "US$ 2,00 - 3,20",
+    "waterBottleUsd": "US$ 0,60 - 1,20",
+    "hostelDormUsd": "US$ 20 - 35",
+    "hotel3StarUsd": "US$ 70 - 120",
+    "flightCostIndex": "Moderado (acesso mais fácil via Viena)",
+    "flightTip": "O aeroporto de Viena fica a apenas ~1 hora de Bratislava e tem muitos voos diretos saindo de Istambul; os ônibus da Slovak Lines / FlixBus fazem o trajeto Viena–Bratislava com frequência."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Cumprimente com “Dobrý deň” e um aperto de mão; use os pronomes de tratamento (pán / pani).",
+     "Tiram-se os sapatos ao entrar em casa.",
+     "Ao brindar, olhe nos olhos e diga “Na zdravie!”.",
+     "Valide a passagem ao embarcar no transporte público; as multas são altas."
+    ],
+    "festivals": [
+     "Pohoda (Trenčín, julho – o maior festival de música do país)",
+     "Festival Folclórico de Východná (julho)",
+     "Mercado de Natal de Bratislava (Hlavné námestie, fim de novembro – dezembro)"
+    ],
+    "lifestyle": "Tranquilo, familiar e apaixonado pela natureza; os eslovacos adoram caminhadas, estâncias termais e vinícolas."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Castelo e centro histórico de Bratislava",
+     "Castelo de Devín (confluência do Danúbio com o Morava)",
+     "Banská Štiavnica (cidade mineira, UNESCO)",
+     "Altos Tatras: Štrbské Pleso e Lomnický štít",
+     "Castelo de Spiš (UNESCO)",
+     "Catedral de Santa Isabel, em Košice"
+    ],
+    "bestSeasons": "Maio–setembro",
+    "travelStyleTip": "O país se estende de oeste a leste e é fácil de percorrer de trem; nos Tatras, o trem de montanha TEŽ liga os vilarejos."
+   },
+   "religion": {
+    "primaryReligions": "Católicos romanos ~56 %, sem filiação ~24 %, luteranos ~5 %, greco-católicos ~4 %",
+    "respectNorms": "Nas igrejas, cubra ombros e joelhos, tire o chapéu e não fique circulando durante as celebrações.",
+    "sacredSites": [
+     "Catedral de São Martinho, Bratislava (igreja de coroação dos reis húngaros)",
+     "Basílica de São Tiago, Levoča (o altar gótico de madeira mais alto do mundo)",
+     "Igrejas de madeira dos Cárpatos (UNESCO)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Eslovaco (oficial); o húngaro é comum no sul. Eslovacos e tchecos se entendem mutuamente.",
+    "englishProficiency": "Moderado a bom; os jovens e quem trabalha com turismo falam inglês, os mais velhos falam mais alemão ou russo.",
+    "phrases": [
+     {
+      "phrase": "Dobrý deň",
+      "meaning": "Bom dia (cumprimento educado)",
+      "translation": "Olá",
+      "pronunciation": "DOH-bree dyen"
+     },
+     {
+      "phrase": "Ďakujem",
+      "meaning": "Obrigado(a)",
+      "translation": "Obrigado(a)",
+      "pronunciation": "DYAH-koo-yem"
+     },
+     {
+      "phrase": "Prosím",
+      "meaning": "Por favor / Aqui está",
+      "translation": "Por favor",
+      "pronunciation": "PROH-seem"
+     },
+     {
+      "phrase": "Koľko to stojí?",
+      "meaning": "Quanto custa?",
+      "translation": "Quanto é?",
+      "pronunciation": "KOL-koh toh STOH-yee"
+     },
+     {
+      "phrase": "Účet, prosím",
+      "meaning": "A conta, por favor",
+      "translation": "A conta, por favor",
+      "pronunciation": "OO-chet PROH-seem"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Coração da Grande Morávia no século IX, a região pertenceu depois por quase mil anos ao Reino da Hungria; após a conquista otomana de Buda, Bratislava (Pressburg) foi capital e cidade de coroação húngara de 1536 a 1830. Parte da Tchecoslováquia a partir de 1918, a Eslováquia se tornou independente após uma separação pacífica em 1993.",
+    "milestones": [
+     "863: Cirilo e Metódio chegam à Grande Morávia",
+     "1536–1830: Bratislava é a capital do Reino da Hungria",
+     "1º de janeiro de 1993: República Eslovaca independente",
+     "2004: entrada na UE e na OTAN; 2009: adoção do euro"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Bryndzové halušky (nhoque de batata com queijo de ovelha, normalmente com bacon)",
+     "Kapustnica (sopa de chucrute)",
+     "Vyprážaný syr (queijo empanado com batatas e molho tártaro)"
+    ],
+    "traditionalDrinks": [
+     "Kofola (refrigerante de cola local)",
+     "Borovička (aguardente de zimbro)",
+     "Vinho Tokaj eslovaco"
+    ],
+    "streetFoodAndDesserts": [
+     "Lokše (panquecas finas de batata)",
+     "Skalický trdelník (doce assado no espeto)",
+     "Bratislavské rožky (croissants de nozes ou papoula)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Milan Rastislav Štefánik (astrônomo, cofundador da Tchecoslováquia)",
+     "Peter Sagan (três vezes campeão mundial de ciclismo)",
+     "Jozef Murgaš (pioneiro da telegrafia sem fio)"
+    ],
+    "strongSectors": [
+     "Automotivo (a maior produção de carros per capita do mundo: VW, Kia, Stellantis, JLR)",
+     "Eletrônicos e maquinário",
+     "Metalurgia (aço de Košice)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Cartão e pagamento por aproximação são muito difundidos; leve dinheiro em euros para refúgios, feiras do interior e bancas.",
+    "tippingCulture": "Espera-se arredondar a conta ou deixar 5-10 % nos restaurantes; diga o valor total na hora de pagar, em vez de deixar moedas na mesa.",
+    "economicPillars": "Exportações automotivas e industriais, integração às cadeias de suprimentos europeias e um setor de serviços em crescimento."
+   }
+  },
+  "itin": {
+   "routeName": "Eslováquia de oeste a leste: Bratislava, Banská Štiavnica, Tatras e Spiš",
+   "routeSummary": "Roteiro de 7 dias que sai de Bratislava, às margens do Danúbio, e passa pela cidade mineira de Banská Štiavnica (UNESCO), pelos lagos glaciais dos Altos Tatras, pelo Castelo de Spiš e por Levoča.",
+   "totalDays": 7,
+   "idealDurationText": "Roteiro de 7 dias",
+   "bestSeason": "Maio–setembro",
+   "transportMode": "Trem (ZSSK / RegioJet) + trem de montanha dos Tatras (TEŽ); ônibus ou carro alugado para Banská Štiavnica",
+   "paceLevel": "Equilibrado (cidade + história + montanha)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Bratislava (capital às margens do Danúbio)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Castelo de Bratislava",
+      "Centro histórico e Portão de São Miguel",
+      "Catedral de São Martinho",
+      "Castelo de Devín"
+     ],
+     "activities": [
+      "Aproveite a vista do mirante da Ponte UFO.",
+      "Procure as estátuas de bronze (Čumil) do centro histórico.",
+      "Vá até o Castelo de Devín de barco ou de bicicleta."
+     ],
+     "foodAndDrinks": [
+      "Bryndzové halušky",
+      "Bratislavské rožky",
+      "Kofola"
+     ],
+     "criticalTips": [
+      "Compre e valide a passagem antes de embarcar.",
+      "Evite os bares do centro histórico sem cardápio com preços."
+     ],
+     "mapsQuery": "Bratislava, Slovakia"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Banská Štiavnica (cidade mineira, UNESCO)",
+     "recommendedDuration": "1 dia",
+     "durationBadge": "1 dia",
+     "highlights": [
+      "Castelo Velho e Castelo Novo",
+      "Calvário de Banská Štiavnica",
+      "Museu de mineração a céu aberto",
+      "Tajchy (lagos históricos de mineração)"
+     ],
+     "activities": [
+      "Faça uma visita subterrânea de capacete no museu de mineração.",
+      "Suba ao Calvário para ver a cidade do alto.",
+      "Dê um mergulho no lago Počúvadlo no verão."
+     ],
+     "foodAndDrinks": [
+      "Kapustnica",
+      "Pirohy (pastéis eslovacos)",
+      "Cerveja artesanal local"
+     ],
+     "criticalTips": [
+      "A cidade tem muitas ladeiras; use calçados confortáveis.",
+      "O transporte público é escasso; confira o horário de volta."
+     ],
+     "mapsQuery": "Banská Štiavnica, Slovakia"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Altos Tatras (Štrbské Pleso e Starý Smokovec)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Lago glacial Štrbské Pleso",
+      "Teleférico até o Lomnický štít (2.634 m)",
+      "Hrebienok e as cachoeiras do Studený potok",
+      "Popradské pleso"
+     ],
+     "activities": [
+      "Faça a trilha de Štrbské Pleso até Popradské pleso.",
+      "Suba de funicular até Hrebienok e desça ao lado das cachoeiras.",
+      "Esquie em Tatranská Lomnica no inverno."
+     ],
+     "foodAndDrinks": [
+      "Sopa quente e halušky em um refúgio (chata)",
+      "Žinčica (soro de leite de ovelha)",
+      "Borovička"
+     ],
+     "criticalTips": [
+      "Os ingressos para o Lomnický štít são limitados; reserve com alguns dias de antecedência.",
+      "O resgate em montanha (HZS) é cobrado; contrate um seguro que cubra trilhas."
+     ],
+     "mapsQuery": "Štrbské Pleso, Slovakia"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Spiš, Levoča e Košice (leste da Eslováquia)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Castelo de Spiš (UNESCO)",
+      "Basílica de São Tiago e muralhas, em Levoča",
+      "Catedral de Santa Isabel, em Košice",
+      "Rua Hlavná e a fonte cantante, em Košice"
+     ],
+     "activities": [
+      "Explore Spiš, uma das maiores ruínas de castelo da Europa Central.",
+      "Admire o altar de madeira do Mestre Paulo.",
+      "Passeie por Košice ao entardecer."
+     ],
+     "foodAndDrinks": [
+      "Lokše",
+      "Vyprážaný syr",
+      "Vinho Tokaj eslovaco"
+     ],
+     "criticalTips": [
+      "O Castelo de Spiš fecha ou funciona em horário reduzido no inverno.",
+      "Planeje a volta a partir de Košice via Budapeste ou Viena."
+     ],
+     "mapsQuery": "Levoča, Slovakia"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Bryndzové halušky (nhoque de batata com queijo de ovelha, normalmente com bacon)",
+     "Kapustnica (sopa de chucrute)",
+     "Vyprážaný syr (queijo empanado com batatas e molho tártaro)"
+    ],
+    "drinks": [
+     "Kofola (refrigerante de cola local)",
+     "Borovička (aguardente de zimbro)",
+     "Vinho Tokaj eslovaco"
+    ],
+    "streetFoods": [
+     "Lokše (panquecas finas de batata)",
+     "Skalický trdelník (doce assado no espeto)",
+     "Bratislavské rožky (croissants de nozes ou papoula)"
+    ],
+    "diningAdvice": "O “denné menu” do almoço (sopa + prato principal) é a opção mais barata. As halušky e a kapustnica costumam levar porco; você pode pedir “bez slaniny” (sem bacon)."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Jaqueta impermeável e botas de trilha",
+     "Roupas em camadas e gorro no inverno",
+     "Um pouco de dinheiro em euros",
+     "Power bank e mapas off-line"
+    ],
+    "safetyAndEtiquette": [
+     "Não saia das trilhas sinalizadas do Parque Nacional dos Tatras; há ursos.",
+     "Nunca ande no transporte público sem a passagem validada."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "E"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Tomadas tipo C e E (dois pinos redondos; a E tem o pino terra na própria tomada). A maioria dos plugues turcos (C e híbridos E/F) encaixa."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "A água da torneira é segura e de boa qualidade.",
+    "vaccines": [
+     "Vacinas de rotina (tétano, difteria, tríplice viral)",
+     "Recomenda-se a vacina contra encefalite transmitida por carrapatos (TBE) para quem vai fazer trilhas"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "155"
+   },
+   "tipping": {
+    "custom": "Espera-se arredondar a conta ou deixar 5-10 %.",
+    "standardPercent": 10,
+    "rule": "round_up",
+    "note": "O costume é dizer o valor total já com a gorjeta na hora de pagar, em vez de deixá-la na mesa."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA de 23 % (reembolso líquido de ~10-15 % após as comissões)",
+    "minSpend": "Varia conforme a loja; pergunte se emitem o formulário Tax Free antes de comprar",
+    "customsNote": "Carimbe o formulário na alfândega do último ponto de saída da UE (por exemplo, o aeroporto de Viena); os produtos devem estar sem uso."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "~US$ 1,00 - 3,00",
+    "topCarriers": [
+     "Orange Slovensko",
+     "Slovak Telekom",
+     "O2 Slovakia",
+     "4ka"
+    ],
+    "airportSimTrapWarning": "Evite os pacotes turísticos caros dos aeroportos de Viena ou Bratislava; configure um eSIM ou compre um chip pré-pago em uma loja Orange / Telekom."
+   },
+   "touristScams": [
+    {
+     "title": "Táxis de rua",
+     "desc": "Os táxis parados na rua no centro histórico podem cobrar várias vezes a tarifa normal.",
+     "tip": "Use os aplicativos Bolt, Uber ou Hopin."
+    },
+    {
+     "title": "Golpe da conta do bar",
+     "desc": "Nos bares para onde novos “amigos” levam você, as bebidas custam muito mais caro.",
+     "tip": "Evite lugares sem cardápio com preços e pergunte antes de pedir."
+    },
+    {
+     "title": "Casas de câmbio abusivas",
+     "desc": "As que anunciam “0 % de comissão” aplicam cotações muito baixas.",
+     "tip": "Use caixas eletrônicos de bancos; evite os caixas Euronet e a conversão dinâmica de moeda."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Евро (EUR)",

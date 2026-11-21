@@ -1507,6 +1507,383 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Dólar do Caribe Oriental (XCD) – atrelado ao dólar americano (1 $ ≈ 2,70 XCD); o USD é amplamente aceito",
+   "plugType": "Tipo G (230V, 50Hz)",
+   "bestMonths": "Dezembro – abril (estação seca, a melhor época); de junho a novembro, temporada de furacões e chuvas (maior risco de agosto a outubro)",
+   "safety": {
+    "safetyScore": 55,
+    "safetyLevel": "Risco moderado",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60",
+    "crimeRateSummary": "Nos últimos anos, a violência armada aumentou, sobretudo entre moradores locais. Para os turistas, os principais riscos são furtos oportunistas e assaltos em praias isoladas e em áreas de Castries à noite.",
+    "commonScams": [
+     "Vendedores e \"guias\" insistentes nas praias e em Rodney Bay",
+     "Tarifas de táxi ou de táxi aquático não combinadas antes",
+     "Passeios improvisados caríssimos no porto de cruzeiros"
+    ],
+    "safeTravelTips": [
+     "Combine a tarifa do táxi antes de entrar; ela costuma ser informada em USD.",
+     "Não caminhe à noite por lugares desertos e não deixe suas coisas sem vigilância na praia.",
+     "Na temporada de furacões, acompanhe os alertas meteorológicos."
+    ],
+    "emergencyNumbers": {
+     "police": "999 / 911",
+     "ambulance": "911",
+     "general": "911"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Bom 4G/LTE em quase toda a ilha; mais fraco no interior montanhoso e em algumas enseadas",
+    "costPerGbUsd": "~US$ 3 - 7",
+    "esimAvailability": "Boa – os chips da Digicel e da FLOW são fáceis de encontrar; eSIMs internacionais também funcionam",
+    "bestCarriers": [
+     "Digicel",
+     "FLOW"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Médio – sem metrô; micro-ônibus particulares numerados, táxis e táxis aquáticos",
+    "costLevel": "Caro",
+    "singleTicketUsd": "1 - 3 $ (micro-ônibus, 2.50-8 XCD)",
+    "dailyPassUsd": "Táxi Hewanorra–Rodney Bay ~90 - 110 $",
+    "popularRideApps": [
+     "Não há Uber nem Bolt",
+     "Tarifas oficiais de táxi",
+     "Táxis aquáticos (Soufrière – Marigot)"
+    ],
+    "taxiAdvice": "Não há Uber; os táxis têm placa azul \"TX\" e tarifas oficiais: confirme o preço em USD/XCD antes de entrar. Os micro-ônibus são baratos, mas param de circular cedo, no fim da tarde."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 70 - 110",
+    "dailyBudgetMidrangeUsd": "US$ 170 - 300",
+    "budgetMealUsd": "US$ 10 - 18",
+    "coffeeUsd": "US$ 3 - 5",
+    "waterBottleUsd": "A água da torneira (WASCO) é tratada e potável na maioria das regiões; depois de tempestades ou em áreas rurais, prefira a engarrafada.",
+    "hostelDormUsd": "US$ 35 - 60",
+    "hotel3StarUsd": "US$ 150 - 280",
+    "flightCostIndex": "Alto (via EUA ou Europa)",
+    "flightTip": "Os voos de longa distância chegam ao aeroporto de Hewanorra (UVF), no sul; saindo da Turquia, a conexão costuma ser via Londres (British Airways/Virgin) ou EUA. O aeroporto George F. L. Charles (SLU), no norte, opera voos regionais. De UVF até Castries/Rodney Bay são cerca de 1,5 hora de estrada."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Cumprimente com \"Good morning / Bonjou\" antes de começar a falar.",
+     "Roupa de banho só na praia; cubra-se nas cidades e nas igrejas.",
+     "Peça permissão antes de fotografar pessoas e barracas de feira."
+    ],
+    "festivals": [
+     "Carnaval de Santa Lúcia (julho)",
+     "Jounen Kwéyòl – Dia Crioulo (último domingo de outubro)",
+     "Festa de rua de sexta-feira em Gros Islet (semanal)"
+    ],
+    "lifestyle": "Vida caribenha animada, que mistura herança francesa e britânica com a língua e a música kwéyòl; festas de rua às sextas, igreja e família aos domingos."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Os Pitons – Gros Piton e Petit Piton (UNESCO)",
+     "Sulphur Springs – o \"vulcão onde se entra de carro\" (Soufrière)",
+     "Jardim Botânico e Cachoeira Diamond",
+     "Pigeon Island National Landmark",
+     "Marigot Bay",
+     "Snorkel em Anse Chastanet e Sugar Beach"
+    ],
+    "bestSeasons": "Dezembro – abril (estação seca, a melhor época); de junho a novembro, temporada de furacões e chuvas (maior risco de agosto a outubro)",
+    "travelStyleTip": "Em vez de bate-voltas a partir de Rodney Bay, passe algumas noites em Soufrière; as estradas são sinuosas e lentas."
+   },
+   "religion": {
+    "primaryReligions": "Católicos (~60 %), adventistas do sétimo dia (~10 %), pentecostais (~9 %), anglicanos, evangélicos e uma pequena comunidade rastafári.",
+    "respectNorms": "Cubra ombros e joelhos nas igrejas; os domingos são tranquilos.",
+    "sacredSites": [
+     "Catedral Basílica da Imaculada Conceição (Castries, murais de Dunstan St. Omer)",
+     "Igreja de Nossa Senhora da Assunção (Soufrière)",
+     "Igreja de Jacmel – pinturas de St. Omer (vale de Roseau)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Inglês (oficial) e o kwéyòl de Santa Lúcia, muito falado (crioulo antilhano de base francesa).",
+    "englishProficiency": "Excelente – o inglês é a língua oficial.",
+    "phrases": [
+     {
+      "phrase": "Bonjou",
+      "meaning": "Bom dia / Olá",
+      "translation": "Bom dia / Olá",
+      "pronunciation": "bon-ZHOO"
+     },
+     {
+      "phrase": "Sa ka fèt?",
+      "meaning": "Tudo bem? (E aí?)",
+      "translation": "Tudo bem? (E aí?)",
+      "pronunciation": "sah kah FET"
+     },
+     {
+      "phrase": "Mèsi",
+      "meaning": "Obrigado",
+      "translation": "Obrigado",
+      "pronunciation": "meh-SEE"
+     },
+     {
+      "phrase": "Konbyen sa yé?",
+      "meaning": "Quanto custa?",
+      "translation": "Quanto custa?",
+      "pronunciation": "kon-BYEN sah YEH"
+     },
+     {
+      "phrase": "Orevwa",
+      "meaning": "Tchau",
+      "translation": "Tchau",
+      "pronunciation": "oh-reh-VWAH"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Chamada de \"Iouanalao\" (terra das iguanas) pelos aruaques e kalinagos, a ilha trocou de mãos entre a Grã-Bretanha e a França 14 vezes entre os séculos XVII e XIX, o que lhe rendeu o apelido de \"Helena das Índias Ocidentais\". Passou definitivamente para a Grã-Bretanha em 1814 e se tornou independente em 22 de fevereiro de 1979. Tem mais prêmios Nobel per capita do que qualquer outro país: Arthur Lewis (1979) e Derek Walcott (1992).",
+    "milestones": [
+     "Década de 1660: colonização francesa e rivalidade anglo-francesa",
+     "1814: domínio britânico pelo Tratado de Paris",
+     "22 de fevereiro de 1979: Independência",
+     "1992: Derek Walcott ganha o Nobel de Literatura"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Green fig and saltfish (banana verde e bacalhau salgado – prato nacional)",
+     "Bouyon (sopa grossa de carne e legumes)",
+     "Sopa de callaloo"
+    ],
+    "traditionalDrinks": [
+     "Cerveja Piton",
+     "Rum Chairman's Reserve (St Lucia Distillers)",
+     "Cocoa tea (chocolate quente com especiarias)"
+    ],
+    "streetFoodAndDesserts": [
+     "Accra (bolinhos de bacalhau)",
+     "Bakes (pão frito) com bacalhau",
+     "Pasteizinhos doces de coco"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Derek Walcott (Nobel de Literatura 1992)",
+     "Sir W. Arthur Lewis (Nobel de Economia 1979)",
+     "Julien Alfred (campeã olímpica dos 100 m em 2024)"
+    ],
+    "strongSectors": [
+     "Turismo",
+     "Banana e agricultura",
+     "Produção de rum e cidadania por investimento"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Os cartões são comuns em hotéis e restaurantes; leve dinheiro em XCD para micro-ônibus, mercados e estabelecimentos pequenos. O USD é aceito, mas o troco vem em XCD.",
+    "tippingCulture": "A conta costuma incluir 10 % de serviço; se não incluir, espera-se 10-15 %.",
+    "economicPillars": "Turismo, agricultura (banana), indústria leve e serviços financeiros."
+   }
+  },
+  "itin": {
+   "routeName": "Santa Lúcia de norte a sul: Rodney Bay, Castries e Marigot, Soufrière e Vieux Fort",
+   "routeSummary": "Roteiro de 7 dias que começa em Rodney Bay e Pigeon Island, no norte, passa pela capital Castries e por Marigot Bay, tem seu ponto alto em Soufrière, aos pés dos Pitons, e termina em Vieux Fort, no sul.",
+   "totalDays": 7,
+   "idealDurationText": "Roteiro de 7 dias pela ilha",
+   "bestSeason": "Dezembro – abril (estação seca, a melhor época); de junho a novembro, temporada de furacões e chuvas (maior risco de agosto a outubro)",
+   "transportMode": "Carro alugado ou táxi + táxi aquático",
+   "paceLevel": "Equilibrado (praia, natureza e cultura)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Rodney Bay e Gros Islet",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Pigeon Island National Landmark",
+      "Reduit Beach",
+      "Festa de rua de sexta-feira em Gros Islet"
+     ],
+     "activities": [
+      "Suba até as ruínas do Fort Rodney.",
+      "Dê um mergulho na Reduit Beach.",
+      "Coma peixe grelhado na festa de sexta-feira."
+     ],
+     "foodAndDrinks": [
+      "Peixe grelhado com bakes",
+      "Cerveja Piton"
+     ],
+     "criticalTips": [
+      "Não leve objetos de valor para a festa de rua.",
+      "Pergunte antes o preço das espreguiçadeiras na praia."
+     ],
+     "mapsQuery": "Gros Islet, Saint Lucia"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Castries e Marigot Bay",
+     "recommendedDuration": "1 dia",
+     "durationBadge": "1 dia",
+     "highlights": [
+      "Mercado Central de Castries",
+      "Catedral Basílica",
+      "Marigot Bay"
+     ],
+     "activities": [
+      "Compre especiarias e ketchup de banana no mercado.",
+      "Passeie pela praça Derek Walcott.",
+      "Tome um drinque ao pôr do sol em Marigot Bay."
+     ],
+     "foodAndDrinks": [
+      "Accra",
+      "Cocoa tea"
+     ],
+     "criticalTips": [
+      "Castries fica muito cheia nos dias de cruzeiro.",
+      "À noite, evite as ruas desertas do centro."
+     ],
+     "mapsQuery": "Marigot Bay, Saint Lucia"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Soufrière e os Pitons",
+     "recommendedDuration": "3 dias",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Gros Piton e Petit Piton",
+      "Banhos de lama de Sulphur Springs",
+      "Cachoeira Diamond",
+      "Trilha natural Tet Paul"
+     ],
+     "activities": [
+      "Suba o Gros Piton com guia.",
+      "Tome um banho de lama em Sulphur Springs.",
+      "Faça snorkel em Anse Chastanet."
+     ],
+     "foodAndDrinks": [
+      "Green fig and saltfish",
+      "Rum Chairman's Reserve"
+     ],
+     "criticalTips": [
+      "O Gros Piton só pode ser escalado com guias oficiais; comece cedo.",
+      "Leve dinheiro para as entradas das atrações naturais."
+     ],
+     "mapsQuery": "Soufriere, Saint Lucia"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Vieux Fort e o litoral sul",
+     "recommendedDuration": "1 dia",
+     "durationBadge": "1 dia",
+     "highlights": [
+      "Sandy Beach (kitesurf)",
+      "Cabo do farol de Moule à Chique",
+      "Reserva Natural das Ilhas Maria"
+     ],
+     "activities": [
+      "Faça uma aula de kitesurf.",
+      "Contemple o Atlântico do cabo do farol.",
+      "Almoce em um restaurante local antes do voo."
+     ],
+     "foodAndDrinks": [
+      "Bouyon",
+      "Água de coco fresca"
+     ],
+     "criticalTips": [
+      "O aeroporto de Hewanorra fica aqui; ideal para a última noite.",
+      "As visitas às Ilhas Maria exigem autorização e dependem da época do ano."
+     ],
+     "mapsQuery": "Vieux Fort, Saint Lucia"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Green fig and saltfish (banana verde e bacalhau salgado – prato nacional)",
+     "Bouyon (sopa grossa de carne e legumes)",
+     "Sopa de callaloo"
+    ],
+    "drinks": [
+     "Cerveja Piton",
+     "Rum Chairman's Reserve (St Lucia Distillers)",
+     "Cocoa tea (chocolate quente com especiarias)"
+    ],
+    "streetFoods": [
+     "Accra (bolinhos de bacalhau)",
+     "Bakes (pão frito) com bacalhau",
+     "Pasteizinhos doces de coco"
+    ],
+    "diningAdvice": "Os restaurantes crioulos e as festas de rua de sexta-feira são muito mais baratos que os restaurantes de resort. Confira se a conta já inclui o serviço."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptador de tomada tipo G (britânico)",
+     "Protetor solar e repelente",
+     "Calçado de trilha (subida ao Piton)",
+     "Equipamento de snorkel"
+    ],
+    "safetyAndEtiquette": [
+     "Combine antes o preço do táxi.",
+     "Não ande pela cidade de roupa de banho e cumprimente sempre."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Tomada britânica de três pinos retangulares (tipo G); os plugues turcos precisam de adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "A água da torneira (WASCO) é tratada e potável na maioria das regiões; depois de tempestades ou em áreas rurais, prefira a engarrafada.",
+    "vaccines": [
+     "Vacinas de rotina",
+     "Hepatite A",
+     "Certificado de febre amarela se você chegar de um país com risco"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "911"
+   },
+   "tipping": {
+    "custom": "Se a conta não incluir os 10 % de serviço, espera-se 10-15 %.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "É comum dar pequenas gorjetas a guias, taxistas e carregadores de bagagem."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Sem devolução de IVA para turistas",
+    "minSpend": "—",
+    "customsNote": "Santa Lúcia não devolve o IVA a turistas; as lojas duty-free de Pointe Seraphine e do aeroporto vendem sem impostos mediante cartão de embarque/passaporte."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 3,00 - 7,00",
+    "topCarriers": [
+     "Digicel",
+     "FLOW"
+    ],
+    "airportSimTrapWarning": "Em Hewanorra pode haver poucos pontos de venda; uma loja da Digicel ou da FLOW em Castries/Rodney Bay ou uma eSIM instalada antes é mais prático."
+   },
+   "touristScams": [
+    {
+     "title": "Vendedores de praia insistentes",
+     "desc": "Passeios, pulseiras ou serviços que você não pediu nas praias e no porto.",
+     "tip": "Recuse com educação, mas com firmeza; reserve passeios em lugares confiáveis."
+    },
+    {
+     "title": "Táxi sem preço combinado",
+     "desc": "Um preço inesperadamente alto na chegada.",
+     "tip": "Confirme a tarifa e a moeda antes de entrar."
+    },
+    {
+     "title": "Falso guia \"obrigatório\"",
+     "desc": "Pessoas que se passam por guias oficiais em algumas trilhas.",
+     "tip": "Contrate guias na guarita oficial do início da trilha."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Восточнокарибский доллар (XCD) – привязан к доллару США (1 $ ≈ 2,70 XCD); USD широко принимают",

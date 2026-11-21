@@ -1467,6 +1467,373 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Dólar australiano (AUD)",
+   "plugType": "Tipo I (240V, 50Hz)",
+   "bestMonths": "Março – outubro (época mais seca; de novembro a fevereiro chove mais por causa da monção do oeste)",
+   "safety": {
+    "crimeRateSummary": "A criminalidade é muito baixa; os principais riscos são as correntes fortes perto do recife, as estradas sem iluminação e os cães de rua à noite. O atendimento médico é muito limitado, e os casos graves são evacuados para a Austrália.",
+    "commonScams": [
+     "Golpes são raros; preços pouco claros ou carros sem seguro no aluguel de veículos",
+     "Pequenos furtos de coisas deixadas no carro ou na praia"
+    ],
+    "safeTravelTips": [
+     "Nade no recife apenas com o mar calmo e seguindo as orientações dos moradores; as correntes são fortes.",
+     "Leve lanterna à noite e tome cuidado com os cães de rua.",
+     "Contrate um seguro com evacuação médica e não fotografe instalações oficiais de acesso restrito."
+    ],
+    "emergencyNumbers": {
+     "police": "110",
+     "ambulance": "111",
+     "general": "110"
+    },
+    "safetyScore": 65,
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "4G na estrada costeira; fraco no interior",
+    "costPerGbUsd": "~US$ 5 - 10",
+    "esimAvailability": "Muito limitada",
+    "bestCarriers": [
+     "Digicel Nauru"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Precário",
+    "costLevel": "Caro",
+    "singleTicketUsd": "Sem transporte público",
+    "dailyPassUsd": "Aluguel de carro ~US$ 40 - 70/dia",
+    "popularRideApps": [
+     "Traslados do hotel",
+     "Carro ou moto alugados",
+     "Bicicleta"
+    ],
+    "taxiAdvice": "Não há táxis, ônibus nem apps de transporte. Peça o traslado ao hotel; a estrada circular de 19 km é percorrida em 30 minutos de carro ou em algumas horas de bicicleta."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 90 - 130",
+    "dailyBudgetMidrangeUsd": "US$ 160 - 250",
+    "budgetMealUsd": "US$ 7 - 15",
+    "coffeeUsd": "US$ 3 - 5",
+    "waterBottleUsd": "US$ 1,50 - 3",
+    "hostelDormUsd": "Não há albergues",
+    "hotel3StarUsd": "US$ 100 - 160",
+    "flightCostIndex": "Muito caro",
+    "flightTip": "Chega-se quase só a partir de Brisbane, com a Nauru Airlines, que tem poucos voos por semana; reserve voo e hotel juntos e com antecedência."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Os cumprimentos são calorosos; vista-se de forma discreta perto de vilarejos e igrejas.",
+     "O domingo é dia de igreja e descanso; evite barulho.",
+     "Peça permissão antes de fotografar pessoas ou casas."
+    ],
+    "festivals": [
+     "Dia da Independência (31 de janeiro)",
+     "Dia da Constituição, com competições esportivas (17 de maio)",
+     "Dia de Angam (26 de outubro; celebra a recuperação da população)"
+    ],
+    "lifestyle": "Uma comunidade insular de cerca de 12.000 habitantes onde todos se conhecem; a família, a igreja e a paixão pelo futebol australiano (AFL) são centrais. Tradições como a captura de trinta-réis continuam vivas."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Baía de Anibare",
+     "Lagoa de Buada",
+     "Command Ridge (ponto mais alto, canhões japoneses)",
+     "Pináculos de fosfato de Topside",
+     "Poço e cavernas de Moqua"
+    ],
+    "bestSeasons": "Março – outubro (época mais seca; de novembro a fevereiro chove mais por causa da monção do oeste)",
+    "travelStyleTip": "Nauru é um dos países menos visitados do mundo; 2-4 dias são suficientes. Organize a hospedagem e o traslado com antecedência e leve dinheiro vivo em AUD."
+   },
+   "religion": {
+    "primaryReligions": "Protestantes (Igreja Congregacional de Nauru ~35 %, Assembleias de Deus e outras), católicos (~33 %)",
+    "respectNorms": "Cubra ombros e joelhos na igreja e faça silêncio durante os cultos de domingo.",
+    "sacredSites": [
+     "Igrejas congregacionais dos distritos",
+     "Igrejas paroquiais católicas",
+     "Monumento aos mortos na guerra em Yaren"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Nauruano (dorerin Naoero) e inglês",
+    "englishProficiency": "Alto; a administração pública e as escolas usam o inglês.",
+    "phrases": [
+     {
+      "phrase": "Ekamawir omo",
+      "meaning": "Olá",
+      "translation": "Olá",
+      "pronunciation": "eh-kah-MAH-weer OH-moh"
+     },
+     {
+      "phrase": "Omo yoran",
+      "meaning": "Bom dia",
+      "translation": "Bom dia",
+      "pronunciation": "OH-moh YOH-rahn"
+     },
+     {
+      "phrase": "Tubwa kor",
+      "meaning": "Muito obrigado",
+      "translation": "Muito obrigado",
+      "pronunciation": "TOO-bwah kor"
+     },
+     {
+      "phrase": "Magada",
+      "meaning": "Por favor",
+      "translation": "Por favor",
+      "pronunciation": "mah-GAH-dah"
+     },
+     {
+      "phrase": "Tarawong",
+      "meaning": "Tchau",
+      "translation": "Tchau",
+      "pronunciation": "tah-rah-WONG"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Povoada há cerca de 3.000 anos por navegadores micronésios e polinésios, a ilha foi anexada pela Alemanha em 1888. O fosfato encontrado em 1900 selou seu destino. Depois da Primeira Guerra Mundial, passou à administração australiana; o Japão a ocupou em 1942–45, e ela se tornou independente em 31 de janeiro de 1968. O esgotamento do fosfato é hoje seu grande desafio econômico.",
+    "milestones": [
+     "1888 – Anexação alemã",
+     "1906 – Início da mineração de fosfato",
+     "1942–1945 – Ocupação japonesa e deportações",
+     "1968 – Independência"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Peixe cru no leite de coco",
+     "Atum e peixes de recife grelhados",
+     "Arroz frito e macarrão ao estilo chinês (clássicos da ilha)"
+    ],
+    "traditionalDrinks": [
+     "Água de coco fresca",
+     "Seiva de coqueiro (toddy)",
+     "Cerveja australiana importada"
+    ],
+    "streetFoodAndDesserts": [
+     "Fruta de pândano",
+     "Peixe com batata frita para viagem",
+     "Coco fresco"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Hammer DeRoburt (líder da independência, primeiro presidente)",
+     "Marcus Stephen (campeão de levantamento de peso da Commonwealth)",
+     "Reanna Solomon (ouro no levantamento de peso da Commonwealth)"
+    ],
+    "strongSectors": [
+     "Mineração de fosfato",
+     "Receitas de licenças de pesca",
+     "Serviços públicos"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Dinheiro vivo em AUD é indispensável; cartões quase não são aceitos e há poucos caixas eletrônicos. Leve o suficiente.",
+    "tippingCulture": "Não é costume dar gorjeta; um pequeno agrado por um bom serviço basta.",
+    "economicPillars": "Exportação de fosfato, licenças de pesca, ajuda externa e setor público."
+   }
+  },
+  "itin": {
+   "routeName": "Volta por Nauru: Yaren, baía de Anibare, Topside e Command Ridge",
+   "routeSummary": "Uma volta tranquila de 4 dias por uma das menores repúblicas do mundo: de Yaren, no sul, à baía de Anibare, no leste, passando pelo planalto de fosfato e pela lagoa de Buada até Command Ridge, no oeste.",
+   "totalDays": 4,
+   "idealDurationText": "Roteiro de 4 dias",
+   "bestSeason": "Março – outubro (época mais seca; de novembro a fevereiro chove mais por causa da monção do oeste)",
+   "transportMode": "Carro, moto ou bicicleta alugados pela estrada circular de 19 km",
+   "paceLevel": "Tranquilo (ilha pequena, distâncias curtas)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Yaren (distrito do governo e poço de Moqua)",
+     "recommendedDuration": "1 dia",
+     "durationBadge": "1 dia",
+     "highlights": [
+      "Prédio do Parlamento",
+      "Poço e cavernas de Moqua",
+      "Monumento aos mortos na guerra"
+     ],
+     "activities": [
+      "Passeie pelo distrito do governo.",
+      "Visite as cavernas de Moqua com um guia local.",
+      "Veja o pôr do sol no litoral, ao lado da pista do aeroporto."
+     ],
+     "foodAndDrinks": [
+      "Arroz frito ao estilo chinês",
+      "Água de coco"
+     ],
+     "criticalTips": [
+      "Não entre sozinho nas cavernas; o chão é escorregadio.",
+      "Não fotografe prédios oficiais nem áreas restritas."
+     ],
+     "mapsQuery": "Yaren, Nauru"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Baía de Anibare (praia e porto)",
+     "recommendedDuration": "1 dia",
+     "durationBadge": "1 dia",
+     "highlights": [
+      "Praia de Anibare",
+      "Porto de barcos de Anibare",
+      "Pináculos de coral e recife"
+     ],
+     "activities": [
+      "Nade ou faça snorkel no porto com o mar calmo.",
+      "Saia para pescar em alto-mar com um barco local.",
+      "Caminhe pela baía pela manhã."
+     ],
+     "foodAndDrinks": [
+      "Atum fresco grelhado",
+      "Peixe cru no leite de coco"
+     ],
+     "criticalTips": [
+      "Não nade além do recife; as correntes são muito fortes.",
+      "O sol é intenso; procure sombra e beba bastante água."
+     ],
+     "mapsQuery": "Anibare Bay, Nauru"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Topside e lagoa de Buada (planalto de fosfato)",
+     "recommendedDuration": "1 dia",
+     "durationBadge": "1 dia",
+     "highlights": [
+      "Lagoa de Buada",
+      "Pináculos de fosfato",
+      "Antigas áreas de mineração"
+     ],
+     "activities": [
+      "Caminhe ao redor da lagoa.",
+      "Fotografe a paisagem lunar deixada pela mineração.",
+      "Ouça a história do fosfato contada por um guia local."
+     ],
+     "foodAndDrinks": [
+      "Fruta de pândano",
+      "Toddy de coco"
+     ],
+     "criticalTips": [
+      "As áreas de mineração têm rochas afiadas; use calçado fechado.",
+      "O terreno ao lado da lagoa é particular; peça permissão."
+     ],
+     "mapsQuery": "Buada Lagoon, Nauru"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Aiwo e Command Ridge (vestígios da Segunda Guerra Mundial)",
+     "recommendedDuration": "1 dia",
+     "durationBadge": "1 dia",
+     "highlights": [
+      "Canhões japoneses em Command Ridge",
+      "Terminais de carregamento de fosfato de Aiwo",
+      "Pôr do sol na costa oeste"
+     ],
+     "activities": [
+      "Suba ao ponto mais alto da ilha (65 m).",
+      "Explore os bunkers da guerra.",
+      "Complete a volta de bicicleta."
+     ],
+     "foodAndDrinks": [
+      "Peixe com batata frita para viagem",
+      "Cerveja australiana gelada"
+     ],
+     "criticalTips": [
+      "A trilha até Command Ridge está tomada pelo mato; pergunte a um morador.",
+      "Não entre sem permissão em áreas industriais ou portuárias."
+     ],
+     "mapsQuery": "Command Ridge, Nauru"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Peixe cru no leite de coco",
+     "Atum grelhado",
+     "Arroz frito e macarrão"
+    ],
+    "drinks": [
+     "Água de coco",
+     "Toddy de coco",
+     "Cerveja importada"
+    ],
+    "streetFoods": [
+     "Peixe com batata frita",
+     "Fruta de pândano"
+    ],
+    "diningAdvice": "Come-se principalmente em pequenos restaurantes chineses e nos restaurantes dos hotéis; eles fecham cedo, então leve dinheiro vivo."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptador tipo I",
+     "Protetor solar de fator alto e chapéu",
+     "Dinheiro vivo suficiente em AUD",
+     "Kit básico de primeiros socorros"
+    ],
+    "safetyAndEtiquette": [
+     "Não nade além do recife.",
+     "Seja discreto e respeitoso aos domingos."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "I"
+    ],
+    "voltage": "240V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Tomadas tipo I australianas, de pinos chatos em ângulo; plugues turcos precisam de adaptador tipo I."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "A água vem de dessalinização e de tanques de chuva; beba água engarrafada ou fervida.",
+    "vaccines": [
+     "Vacinas de rotina",
+     "Hepatite A e febre tifoide",
+     "Febre amarela: certificado se você chegar de um país de risco",
+     "Proteção contra mosquitos (dengue)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "111"
+   },
+   "tipping": {
+    "custom": "Não é costume dar gorjeta.",
+    "standardPercent": 0,
+    "rule": "optional",
+    "note": "Você pode deixar o troco, mas ninguém espera."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Sem devolução de impostos para turistas",
+    "minSpend": "Não se aplica",
+    "customsNote": "Nauru não tem sistema de devolução de impostos para turistas. Há controles de biossegurança para alimentos, plantas e produtos de origem animal."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "US$ 5 - 10",
+    "topCarriers": [
+     "Digicel Nauru"
+    ],
+    "airportSimTrapWarning": "A Digicel é a única operadora, e a cobertura de eSIMs internacionais é ruim; compre um chip local com passaporte na loja da Digicel em Yaren. O roaming pode sair caríssimo."
+   },
+   "touristScams": [
+    {
+     "title": "Carro alugado sem seguro",
+     "desc": "Carros alugados de particulares podem ter seguro e condições pouco claros.",
+     "tip": "Alugue por meio do hotel e peça o preço e as condições por escrito."
+    },
+    {
+     "title": "Pequenos furtos na praia",
+     "desc": "Celulares e bolsas deixados na praia ou em carros destrancados podem sumir.",
+     "tip": "Guarde os objetos de valor trancados e feche o carro."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Австралийский доллар (AUD)",

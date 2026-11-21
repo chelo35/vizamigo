@@ -1539,6 +1539,391 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Cedi ganês (GHS)",
+   "plugType": "Tipo G, D (230V, 50Hz)",
+   "bestMonths": "Novembro – março (estação seca; névoa seca do harmatã de dezembro a fevereiro)",
+   "safety": {
+    "safetyScore": 55,
+    "safetyLevel": "Risco moderado",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60",
+    "crimeRateSummary": "É um dos países mais estáveis da África Ocidental; crimes violentos raramente atingem viajantes. Em Acra são comuns os furtos de bolsa, os batedores de carteira e as fraudes on-line ou com cartão.",
+    "commonScams": [
+     "Pessoas nas praias e em Cape Coast pedindo “doações” para escolas ou times de futebol falsos",
+     "Táxis sem taxímetro que cobram de estrangeiros duas ou três vezes a tarifa normal",
+     "Falsos guias ou “representantes do chefe” que exigem taxas extras em fortes e aldeias"
+    ],
+    "safeTravelTips": [
+     "Use Uber, Bolt ou Yango nas cidades e evite praias desertas à noite.",
+     "Leve o certificado de vacina contra febre amarela junto com o passaporte; ele é conferido na chegada.",
+     "Antes da viagem, converse com seu médico sobre profilaxia contra malária, repelente e mosquiteiro."
+    ],
+    "emergencyNumbers": {
+     "police": "191",
+     "ambulance": "193",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "4G amplo nas cidades e estradas principais; 5G limitado em Acra, cobertura fraca no norte rural",
+    "costPerGbUsd": "~US$ 0,50 - 1,50",
+    "esimAvailability": "Boa",
+    "bestCarriers": [
+     "MTN Ghana",
+     "Telecel Ghana",
+     "AT (AirtelTigo)"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Limitado",
+    "costLevel": "Barato",
+    "singleTicketUsd": "US$ 0,30 - 1,00",
+    "dailyPassUsd": "10 - 25 $ (várias corridas de app pela cidade)",
+    "popularRideApps": [
+     "Uber",
+     "Bolt",
+     "Yango"
+    ],
+    "taxiAdvice": "As corridas de Uber/Bolt dentro de Acra costumam custar 3-8 $. Os tro-tros (micro-ônibus) são baratíssimos, mas vivem lotados e são confusos; entre cidades, use os ônibus da STC ou da VIP Jeoun."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 30 - 50",
+    "dailyBudgetMidrangeUsd": "US$ 80 - 140",
+    "budgetMealUsd": "US$ 3 - 8",
+    "coffeeUsd": "US$ 2 - 4",
+    "waterBottleUsd": "US$ 0,30 - 0,70",
+    "hostelDormUsd": "US$ 12 - 25",
+    "hotel3StarUsd": "US$ 50 - 100",
+    "flightCostIndex": "Médio-alto",
+    "flightTip": "A Turkish Airlines voa direto de Istambul para Acra (ACC); reserve cedo para novembro–março e o Natal."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Os cumprimentos são importantes: ao chegar, cumprimente todo mundo antes de ir direto ao assunto.",
+     "Use só a mão direita para entregar dinheiro, comer e apertar a mão.",
+     "Os mais velhos e os chefes tradicionais são muito respeitados; siga o protocolo no palácio de um chefe.",
+     "Peça permissão antes de fotografar pessoas."
+    ],
+    "festivals": [
+     "Panafest e Dia da Emancipação (Cape Coast, julho/agosto)",
+     "Homowo (festa da colheita do povo ga, agosto–setembro)",
+     "Akwasidae (Kumasi, a cada seis semanas, pelo calendário akan)"
+    ],
+    "lifestyle": "Tecidos kente e wax cheios de cor, highlife e afrobeats, paixão pelo futebol e fortes laços familiares e comunitários."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Castelo de Cape Coast e Castelo de Elmina (UNESCO)",
+     "Passarela suspensa do Parque Nacional Kakum",
+     "Parque Nacional Mole (safári de elefantes)",
+     "Kumasi: Palácio Manhyia e Mercado de Kejetia",
+     "Acra: Jamestown e Parque Memorial Kwame Nkrumah",
+     "Cachoeiras de Wli (região do Volta)"
+    ],
+    "bestSeasons": "Novembro – março (estação seca; névoa seca do harmatã de dezembro a fevereiro)",
+    "travelStyleTip": "Comece por Acra, siga pela costa até os fortes e depois continue para Kumasi; voar até Tamale economiza tempo para chegar a Mole."
+   },
+   "religion": {
+    "primaryReligions": "Cristianismo (~71 %), islã (~20 %), crenças tradicionais (~3 %) e outras.",
+    "respectNorms": "Cubra ombros e joelhos em mesquitas e igrejas; respeite as regras locais nos palácios dos chefes e nas florestas sagradas.",
+    "sacredSites": [
+     "Mesquita de Larabanga (de adobe, estilo sudanês)",
+     "Construções tradicionais ashanti (UNESCO)",
+     "Espada de Okomfo Anokye (Kumasi)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Inglês (oficial). O twi (akan) é a língua local mais falada; também se falam ewe, ga e dagbani.",
+    "englishProficiency": "Muito bom; o inglês é a língua da escola e da vida pública, e a comunicação nas cidades é fácil.",
+    "phrases": [
+     {
+      "phrase": "Akwaaba",
+      "meaning": "Bem-vindo (twi)",
+      "translation": "Bem-vindo (twi)",
+      "pronunciation": "ah-KWAH-bah"
+     },
+     {
+      "phrase": "Maakye",
+      "meaning": "Bom dia (twi)",
+      "translation": "Bom dia (twi)",
+      "pronunciation": "MAH-chee"
+     },
+     {
+      "phrase": "Medaase",
+      "meaning": "Obrigado (twi)",
+      "translation": "Obrigado (twi)",
+      "pronunciation": "meh-DAH-see"
+     },
+     {
+      "phrase": "Mepa wo kyɛw",
+      "meaning": "Por favor (twi)",
+      "translation": "Por favor (twi)",
+      "pronunciation": "meh-PAH woh CHEW"
+     },
+     {
+      "phrase": "Ɛyɛ sɛn?",
+      "meaning": "Quanto custa? (twi)",
+      "translation": "Quanto custa? (twi)",
+      "pronunciation": "eh-YEH sen?"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Herdeira do Império Ashanti, Gana era conhecida como “Costa do Ouro” por causa do comércio de ouro. Em 1957, com Kwame Nkrumah, foi a primeira colônia da África Subsaariana a se tornar independente.",
+    "milestones": [
+     "1482: os portugueses constroem o Castelo de Elmina",
+     "1701: Osei Tutu une a Confederação Ashanti sob o Banco de Ouro",
+     "1957: independência (Kwame Nkrumah)",
+     "2019: “Ano do Retorno” para a diáspora"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Arroz jollof (arroz temperado com tomate)",
+     "Fufu com light soup (mandioca e banana-da-terra amassadas com sopa apimentada)",
+     "Banku com tilápia grelhada"
+    ],
+    "traditionalDrinks": [
+     "Sobolo (bebida de hibisco)",
+     "Vinho de palma",
+     "Cerveja Club ou Star"
+    ],
+    "streetFoodAndDesserts": [
+     "Kelewele (banana-da-terra frita temperada)",
+     "Waakye (arroz com feijão, clássico do café da manhã)",
+     "Bofrot (bolinhos fritos açucarados)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Kwame Nkrumah (líder da independência)",
+     "Kofi Annan (secretário-geral da ONU, Nobel da Paz)",
+     "El Anatsui (escultor)"
+    ],
+    "strongSectors": [
+     "Mineração de ouro (um dos maiores produtores da África)",
+     "Cacau (segundo maior produtor do mundo)",
+     "Petróleo e gás"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "O dinheiro móvel (MTN MoMo, Telecel Cash) está em toda parte; cartões funcionam em hotéis e grandes supermercados, mas mercados e tro-tros pedem dinheiro vivo.",
+    "tippingCulture": "Não é obrigatória; 5-10 % nos restaurantes e um agrado para os guias são bem-vindos.",
+    "economicPillars": "Exportação de ouro, cacau e petróleo, serviços e remessas de emigrantes."
+   }
+  },
+  "itin": {
+   "routeName": "Roteiro clássico por Gana: Acra, fortes de Cape Coast, Kumasi e Mole",
+   "routeSummary": "Um roteiro de 10 dias que vai das ruas agitadas de Acra aos fortes costeiros do tráfico de escravizados, passa por Kumasi, a capital ashanti, e termina com um safári de elefantes em Mole, no norte.",
+   "totalDays": 10,
+   "idealDurationText": "Roteiro de 10 dias pela África Ocidental",
+   "bestSeason": "Novembro – março (estação seca; névoa seca do harmatã de dezembro a fevereiro)",
+   "transportMode": "Ônibus intermunicipais (STC/VIP) ou carro com motorista + voo doméstico Acra–Tamale",
+   "paceLevel": "Equilibrado (história + natureza)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Acra",
+     "recommendedDuration": "2-3 dias (capital e cultura)",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Jamestown e seu farol",
+      "Parque Memorial Kwame Nkrumah",
+      "Mercado de Makola",
+      "Praia de Labadi"
+     ],
+     "activities": [
+      "Conheça Jamestown a pé com um guia local.",
+      "Jante com música ao vivo na Oxford Street, em Osu.",
+      "Compre kente e artesanato no Arts Centre."
+     ],
+     "foodAndDrinks": [
+      "Arroz jollof",
+      "Kelewele",
+      "Sobolo"
+     ],
+     "criticalTips": [
+      "Fique de olho na bolsa e no celular em Makola.",
+      "O trânsito é pesado; saia bem cedo pela manhã."
+     ],
+     "mapsQuery": "Accra, Ghana"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Cape Coast e Elmina",
+     "recommendedDuration": "2 dias (história e litoral)",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Castelo de Cape Coast e a “Porta sem Retorno”",
+      "Castelo de Elmina (São Jorge da Mina)",
+      "Passarela suspensa de Kakum"
+     ],
+     "activities": [
+      "Faça a visita guiada aos castelos.",
+      "Atravesse a passarela de Kakum bem cedo pela manhã.",
+      "Fotografe os barcos coloridos do porto pesqueiro de Elmina."
+     ],
+     "foodAndDrinks": [
+      "Banku com tilápia grelhada",
+      "Fante fante (ensopado de peixe)"
+     ],
+     "criticalTips": [
+      "As masmorras mexem com as emoções; comporte-se com respeito.",
+      "Não dê dinheiro para quem oferece livros de doações do lado de fora dos castelos."
+     ],
+     "mapsQuery": "Cape Coast Castle, Ghana"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Kumasi",
+     "recommendedDuration": "2 dias (cultura ashanti)",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Museu do Palácio Manhyia",
+      "Mercado de Kejetia (um dos maiores da África Ocidental)",
+      "Aldeia de tecelões de kente de Bonwire",
+      "Centro de Cultura Nacional"
+     ],
+     "activities": [
+      "Veja os tecelões de kente trabalhando em Bonwire.",
+      "Assista a uma cerimônia dos chefes se sua visita coincidir com o Akwasidae.",
+      "Visite uma oficina de estampa adinkra em Ntonso."
+     ],
+     "foodAndDrinks": [
+      "Fufu com light soup",
+      "Vinho de palma",
+      "Bofrot"
+     ],
+     "criticalTips": [
+      "Peça permissão antes de fotografar cerimônias.",
+      "Kejetia é enorme e caótico; um guia local ajuda."
+     ],
+     "mapsQuery": "Kumasi, Ghana"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Parque Nacional Mole e Larabanga",
+     "recommendedDuration": "2-3 dias (savana e fauna)",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Elefantes em um safári a pé",
+      "Mesquita de Larabanga",
+      "Passeio de canoa na ecovila de Mognori"
+     ],
+     "activities": [
+      "Faça um safári a pé pela manhã com um guarda armado.",
+      "Visite a histórica mesquita de adobe de Larabanga.",
+      "Reme de canoa pelo rio em Mognori."
+     ],
+     "foodAndDrinks": [
+      "Tuo zaafi (TZ, papa de milhete)",
+      "Pito (cerveja de milhete)"
+     ],
+     "criticalTips": [
+      "Voe de Acra para Tamale e siga por estrada.",
+      "A fauna é mais fácil de ver na estação seca; leve chapéu e bastante água."
+     ],
+     "mapsQuery": "Mole National Park, Ghana"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Arroz jollof (arroz temperado com tomate)",
+     "Fufu com light soup (mandioca e banana-da-terra amassadas com sopa apimentada)",
+     "Banku com tilápia grelhada"
+    ],
+    "drinks": [
+     "Sobolo (bebida de hibisco)",
+     "Vinho de palma",
+     "Cerveja Club ou Star"
+    ],
+    "streetFoods": [
+     "Kelewele (banana-da-terra frita temperada)",
+     "Waakye (arroz com feijão, clássico do café da manhã)",
+     "Bofrot (bolinhos fritos açucarados)"
+    ],
+    "diningAdvice": "Os restaurantes populares se chamam “chop bars”; o fufu é tradicionalmente comido com a mão direita. A comida costuma ser apimentada: peça “no pepper” se precisar."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptador de tomada tipo G (britânico)",
+     "Certificado de vacina contra febre amarela",
+     "Repelente e comprimidos contra malária",
+     "Roupas leves de manga comprida"
+    ],
+    "safetyAndEtiquette": [
+     "Locomova-se com Uber, Bolt ou Yango.",
+     "Não pule os cumprimentos e use sempre a mão direita."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G",
+     "D"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "O mais comum são tomadas britânicas de três pinos chatos (tipo G); em prédios antigos há também o tipo D. Você vai precisar de adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "A água da torneira não é potável; prefira água engarrafada e lacrada de marca em vez da “sachet water” (água em saquinho).",
+    "vaccines": [
+     "Febre amarela (certificado obrigatório na entrada)",
+     "Hepatite A e febre tifoide",
+     "Prevenção contra malária (consulte seu médico)",
+     "Vacinas de rotina (dupla adulto, tríplice viral)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "193"
+   },
+   "tipping": {
+    "custom": "A gorjeta não é obrigatória, mas é bem-vinda quando o serviço é bom.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Se não houver taxa de serviço, deixe 5-10 % nos restaurantes; dê pequenas quantias em cedis a carregadores e guias."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Sem restituição de imposto para turistas (IVA ~15 % + taxas)",
+    "minSpend": "Não se aplica",
+    "customsNote": "Gana não tem sistema de restituição de IVA (tax-free) para turistas. Ouro, diamantes e antiguidades precisam de licença de exportação; nunca compre ouro sem documentação."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 0,50 - 1,50",
+    "topCarriers": [
+     "MTN Ghana",
+     "Telecel Ghana",
+     "AT (AirtelTigo)"
+    ],
+    "airportSimTrapWarning": "A MTN e a Telecel têm balcões no aeroporto de Kotoka; é preciso o passaporte para registrar o chip. As lojas oficiais na cidade oferecem mais pacotes."
+   },
+   "touristScams": [
+    {
+     "title": "Falso livro de doações",
+     "desc": "Jovens em Cape Coast e nas praias pedem assinatura e dinheiro para uma “escola” ou um “time de futebol”.",
+     "tip": "Recuse com educação; se quiser doar, escolha organizações registradas."
+    },
+    {
+     "title": "Táxis superfaturados",
+     "desc": "Táxis sem taxímetro cobram tarifas infladas de estrangeiros.",
+     "tip": "Use Uber, Bolt ou Yango, ou combine o preço antes de entrar."
+    },
+    {
+     "title": "Fraude on-line e com ouro",
+     "desc": "Ofertas de “ouro barato” ou negócios com documentos falsos para arrancar dinheiro.",
+     "tip": "Não aceite ofertas de ouro ou de mineração sem licença nem envie dinheiro a desconhecidos."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Ганский седи (GHS)",

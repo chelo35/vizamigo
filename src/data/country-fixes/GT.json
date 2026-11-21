@@ -1531,6 +1531,389 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Quetzal guatemalteco (GTQ)",
+   "plugType": "Tipo A, B (120V, 60Hz)",
+   "bestMonths": "Novembro – abril (estação seca); de maio a outubro chove e de junho a novembro é temporada de furacões",
+   "safety": {
+    "safetyScore": 40,
+    "safetyLevel": "Recomenda-se cautela",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60",
+    "crimeRateSummary": "Em partes da Cidade da Guatemala há muitos assaltos à mão armada e crimes ligados a gangues; os alertas oficiais pedem mais cautela ou que você reconsidere a viagem. Áreas turísticas como Antigua, Atitlán e Tikal são mais tranquilas, embora ocorram furtos por arrastão e assaltos nas estradas.",
+    "commonScams": [
+     "Táxis sem licença no aeroporto e nos terminais, com tarifas infladas",
+     "Clonagem de cartões em caixas eletrônicos",
+     "Guias de vulcão não registrados que vendem tours baratos e descuidam da segurança"
+    ],
+    "safeTravelTips": [
+     "Na Cidade da Guatemala, fique de dia nas áreas turísticas das zonas 10, 4 e 1 e circule de Uber.",
+     "Prefira os shuttles turísticos às “camionetas” (chicken buses).",
+     "Assistência ao turista PROATUR: 1500."
+    ],
+    "emergencyNumbers": {
+     "police": "110",
+     "ambulance": "122 / 123",
+     "general": "110"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Bom 4G nas cidades e áreas turísticas; sinal mais fraco na selva de Petén e nas regiões montanhosas",
+    "costPerGbUsd": "~US$ 1,00 - 2,50",
+    "esimAvailability": "Boa",
+    "bestCarriers": [
+     "Tigo",
+     "Claro"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Moderado",
+    "costLevel": "Barato",
+    "singleTicketUsd": "US$ 0,20 - 1,00",
+    "dailyPassUsd": "US$ 10 - 25",
+    "popularRideApps": [
+     "Uber",
+     "inDrive"
+    ],
+    "taxiAdvice": "Uber e inDrive são comuns na Cidade da Guatemala e em Antigua. Em Antigua, os tuk-tuks são baratos para trajetos curtos; combine o preço antes. No lago Atitlán, as lanchas ligam os vilarejos."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 35 - 50",
+    "dailyBudgetMidrangeUsd": "US$ 80 - 140",
+    "budgetMealUsd": "US$ 4 - 9",
+    "coffeeUsd": "US$ 1,50 - 3,50",
+    "waterBottleUsd": "US$ 0,50 - 1,00",
+    "hostelDormUsd": "US$ 10 - 20",
+    "hotel3StarUsd": "US$ 50 - 100",
+    "flightCostIndex": "Médio-alto",
+    "flightTip": "Não há voos diretos da Turquia; faça conexão em Madri, Miami ou na Cidade do México. As tarifas sobem de novembro a abril."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Dizer “Buenos días/tardes” é importante, inclusive ao entrar em uma loja.",
+     "Nas comunidades maias, não fotografe ninguém sem permissão, principalmente mulheres e crianças.",
+     "Mantenha silêncio e respeito nas igrejas e nos locais cerimoniais maias.",
+     "Pechinchar é normal nos mercados, mas com gentileza e de forma justa."
+    ],
+    "festivals": [
+     "Semana Santa (em Antigua, com tapetes de serragem e procissões)",
+     "Dia de Todos os Santos (1º de novembro, pipas gigantes de Sumpango)",
+     "Quema del Diablo (7 de dezembro)"
+    ],
+    "lifestyle": "Trajes maias coloridos (huipil), dias de feira, cultura do café e uma mistura de crenças católicas e maias."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Antigua Guatemala (cidade colonial, UNESCO)",
+     "Lago Atitlán e seus vulcões",
+     "Parque Nacional de Tikal (cidade maia, UNESCO)",
+     "Mercado de Chichicastenango",
+     "Piscinas naturais de Semuc Champey",
+     "Subida ao vulcão Acatenango (vista do Fuego)"
+    ],
+    "bestSeasons": "Novembro – abril (estação seca); de maio a outubro chove e de junho a novembro é temporada de furacões",
+    "travelStyleTip": "Use Antigua como base e pegue shuttles para Atitlán e Chichicastenango; para Tikal, voe da Cidade da Guatemala para Flores."
+   },
+   "religion": {
+    "primaryReligions": "Católicos (~45 %), evangélicos/protestantes (~40 %), espiritualidade maia e outros.",
+    "respectNorms": "É proibido fotografar dentro da igreja de Santo Tomás, em Chichicastenango; observe os rituais maias com respeito e a distância.",
+    "sacredSites": [
+     "Igreja de Santo Tomás (Chichicastenango)",
+     "Igreja de La Merced, Antigua",
+     "Confrarias de Maximón (Santiago Atitlán)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Espanhol (oficial). Também se falam 21 línguas maias (k’iche’, q’eqchi’, kaqchikel, mam etc.), garífuna e xinka.",
+    "englishProficiency": "Moderado nas áreas turísticas; em Antigua muita gente fala inglês, mas no interior é preciso um espanhol básico.",
+    "phrases": [
+     {
+      "phrase": "¿Qué onda?",
+      "meaning": "E aí? (gíria guatemalteca)",
+      "translation": "E aí? (gíria guatemalteca)",
+      "pronunciation": "keh ON-dah"
+     },
+     {
+      "phrase": "Buenos días",
+      "meaning": "Bom dia",
+      "translation": "Bom dia",
+      "pronunciation": "BWEH-nos DEE-as"
+     },
+     {
+      "phrase": "¿Cuánto cuesta?",
+      "meaning": "Quanto custa?",
+      "translation": "Quanto custa?",
+      "pronunciation": "KWAN-toh KWES-tah"
+     },
+     {
+      "phrase": "¡Qué chilero!",
+      "meaning": "Que lindo! (gíria guatemalteca)",
+      "translation": "Que lindo! (gíria guatemalteca)",
+      "pronunciation": "keh chee-LEH-roh"
+     },
+     {
+      "phrase": "Maltiox",
+      "meaning": "Obrigado (k’iche’)",
+      "translation": "Obrigado (k’iche’)",
+      "pronunciation": "mal-tee-OHSH"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Coração da civilização maia clássica, a Guatemala abrigou grandes cidades como Tikal. Após a conquista espanhola de 1524, tornou-se o centro administrativo da América Central e conquistou a independência em 1821.",
+    "milestones": [
+     "200–900: Apogeu de Tikal no período clássico maia",
+     "1524: Conquista espanhola",
+     "1773: Terremotos de Santa Marta e transferência da capital",
+     "1821: Independência"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Pepián (ensopado condimentado de frango ou carne, prato nacional)",
+     "Kak’ik (caldo de peru q’eqchi’)",
+     "Jocón (frango ao molho verde)"
+    ],
+    "traditionalDrinks": [
+     "Café da Guatemala",
+     "Atol de elote (bebida doce de milho)",
+     "Rum Zacapa e cerveja Gallo"
+    ],
+    "streetFoodAndDesserts": [
+     "Shucos (cachorros-quentes guatemaltecos)",
+     "Chuchitos e tamales",
+     "Rellenitos de banana-da-terra (com feijão doce)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Rigoberta Menchú (Nobel da Paz)",
+     "Miguel Ángel Asturias (Nobel de Literatura)",
+     "Ricardo Arjona (cantor)"
+    ],
+    "strongSectors": [
+     "Café",
+     "Cardamomo (um dos maiores exportadores do mundo)",
+     "Banana, açúcar e remessas"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Cartões são comuns nas cidades e nos pontos turísticos; mercados, tuk-tuks e vilarejos pedem dinheiro em quetzais. Use caixas eletrônicos dentro de bancos.",
+    "tippingCulture": "Muitos restaurantes acrescentam 10 % de “propina sugerida” (gorjeta sugerida); se não houver, espera-se que você deixe 10 %.",
+    "economicPillars": "Exportações agrícolas (café, cardamomo, banana), têxteis, turismo e remessas."
+   }
+  },
+  "itin": {
+   "routeName": "Roteiro clássico pela Guatemala: Antigua, Atitlán, Chichicastenango e Tikal",
+   "routeSummary": "Um roteiro de 10 dias que vai da colonial Antigua, cercada de vulcões, aos vilarejos maias do lago Atitlán, ao mercado de Chichicastenango e a Tikal, no meio da selva.",
+   "totalDays": 10,
+   "idealDurationText": "Roteiro de 10 dias pela Guatemala",
+   "bestSeason": "Novembro – abril (estação seca); de maio a outubro chove e de junho a novembro é temporada de furacões",
+   "transportMode": "Shuttles turísticos + lanchas + voo doméstico Cidade da Guatemala–Flores",
+   "paceLevel": "Equilibrado (cultura + natureza)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Antigua Guatemala",
+     "recommendedDuration": "3 dias (cidade colonial e vulcões)",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Arco de Santa Catalina",
+      "Igreja de La Merced",
+      "Mirante do Cerro de la Cruz",
+      "Ruínas do convento das Capuchinas"
+     ],
+     "activities": [
+      "Suba o Acatenango com guia e veja à noite as erupções do Fuego.",
+      "Faça uma degustação em uma fazenda de café.",
+      "Participe de uma oficina de chocolate entre ruas de paralelepípedo."
+     ],
+     "foodAndDrinks": [
+      "Pepián",
+      "Café da Guatemala",
+      "Rellenitos de banana-da-terra"
+     ],
+     "criticalTips": [
+      "Reserve o Acatenango só com agências registradas; à noite faz muito frio.",
+      "Suba o Cerro de la Cruz de dia e acompanhado."
+     ],
+     "mapsQuery": "Antigua Guatemala, Guatemala"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Lago Atitlán",
+     "recommendedDuration": "2-3 dias (lago e vilarejos maias)",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Galerias de arte de San Juan La Laguna",
+      "Santiago Atitlán e Maximón",
+      "Nascer do sol na Nariz del Indio",
+      "Margens tranquilas de San Marcos"
+     ],
+     "activities": [
+      "Circule de lancha entre os vilarejos.",
+      "Suba com guia a Nariz del Indio ao amanhecer.",
+      "Visite uma cooperativa de tecelagem com tintas naturais em San Juan."
+     ],
+     "foodAndDrinks": [
+      "Mojarra do lago",
+      "Atol de elote"
+     ],
+     "criticalTips": [
+      "À tarde o vento (xocomil) agita o lago; navegue de manhã.",
+      "Faça as caminhadas ao redor do lago com guia local."
+     ],
+     "mapsQuery": "Lake Atitlán, Guatemala"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Chichicastenango",
+     "recommendedDuration": "1 dia (mercado e rituais maias)",
+     "durationBadge": "1 dia",
+     "highlights": [
+      "Grande mercado de quinta e domingo",
+      "Igreja de Santo Tomás",
+      "Altar maia de Pascual Abaj"
+     ],
+     "activities": [
+      "Compre máscaras, tecidos e artesanato no mercado.",
+      "Observe os rituais com incenso nos degraus da igreja.",
+      "Veja os túmulos coloridos do cemitério."
+     ],
+     "foodAndDrinks": [
+      "Tamales",
+      "Chuchitos"
+     ],
+     "criticalTips": [
+      "É proibido fotografar dentro da igreja.",
+      "Cuide da carteira no meio da multidão de domingo."
+     ],
+     "mapsQuery": "Chichicastenango, Guatemala"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Flores e Tikal",
+     "recommendedDuration": "2-3 dias (selva e cidade maia)",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Templos I e IV de Tikal",
+      "Grande Praça",
+      "Ilha de Flores",
+      "Yaxhá (pôr do sol)"
+     ],
+     "activities": [
+      "Visite Tikal em um tour ao nascer do sol.",
+      "Admire a selva do alto do Templo IV.",
+      "Reme de caiaque no lago Petén Itzá, em Flores."
+     ],
+     "foodAndDrinks": [
+      "Kak’ik",
+      "Cerveja Gallo",
+      "Shucos"
+     ],
+     "criticalTips": [
+      "Tikal é quente e úmido; leve bastante água e repelente.",
+      "Compre o ingresso e contrate guias oficiais na entrada do parque."
+     ],
+     "mapsQuery": "Tikal National Park, Guatemala"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Pepián (ensopado condimentado de frango ou carne, prato nacional)",
+     "Kak’ik (caldo de peru q’eqchi’)",
+     "Jocón (frango ao molho verde)"
+    ],
+    "drinks": [
+     "Café da Guatemala",
+     "Atol de elote (bebida doce de milho)",
+     "Rum Zacapa e cerveja Gallo"
+    ],
+    "streetFoods": [
+     "Shucos (cachorros-quentes guatemaltecos)",
+     "Chuchitos e tamales",
+     "Rellenitos de banana-da-terra (com feijão doce)"
+    ],
+    "diningAdvice": "Os comedores locais servem um almoço do dia (prato feito) barato e farto. Evite saladas cruas e gelo."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptador de tomada tipo A/B",
+     "Casaco quente e gorro para os vulcões",
+     "Repelente",
+     "Capa de chuva (maio–outubro)"
+    ],
+    "safetyAndEtiquette": [
+     "Circule de Uber ou de shuttles turísticos.",
+     "Não fotografe pessoas nas comunidades maias sem permissão."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "A",
+     "B"
+    ],
+    "voltage": "120V",
+    "frequency": "60Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Tomadas norte-americanas de pinos chatos (A/B) em 120V; você vai precisar de adaptador. Confira se seus aparelhos aceitam 100–240V."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "A água da torneira não é potável; use água engarrafada ou purificada (galão).",
+    "vaccines": [
+     "Hepatite A e febre tifoide",
+     "Vacinas de rotina (difteria e tétano, tríplice viral)",
+     "Prevenção contra malária em Petén (consulte seu médico)",
+     "Febre amarela exigida apenas se você chegar de um país de risco"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "122 / 123"
+   },
+   "tipping": {
+    "custom": "Nos restaurantes, espera-se uma gorjeta de 10 %, que muitas vezes já vem na conta.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Veja se a conta inclui a linha de “propina” (gorjeta); guias e motoristas de shuttle recebem gorjeta à parte."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Sem restituição de IVA para turistas (IVA de 12 %)",
+    "minSpend": "Não se aplica",
+    "customsNote": "A Guatemala não tem sistema de restituição de IVA (tax-free) para turistas. Levar peças arqueológicas para fora do país é ilegal."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 1,00 - 2,50",
+    "topCarriers": [
+     "Tigo",
+     "Claro"
+    ],
+    "airportSimTrapWarning": "Os balcões de chip do aeroporto La Aurora podem ser caros; nas lojas Tigo ou Claro da cidade você compra pacotes mais baratos apresentando o passaporte."
+   },
+   "touristScams": [
+    {
+     "title": "Táxis sem licença",
+     "desc": "Táxis não registrados no aeroporto e nos terminais, com tarifas infladas.",
+     "tip": "Use Uber ou o táxi oficial do aeroporto."
+    },
+    {
+     "title": "Clonagem em caixas eletrônicos",
+     "desc": "Os dados do cartão são copiados em caixas eletrônicos de rua.",
+     "tip": "Use caixas eletrônicos dentro de bancos ou shopping centers."
+    },
+    {
+     "title": "Tours de vulcão baratos",
+     "desc": "Guias não registrados economizam em segurança e equipamento.",
+     "tip": "Para o Acatenango e o Pacaya, escolha agências registradas e bem avaliadas."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Гватемальский кетсаль (GTQ)",

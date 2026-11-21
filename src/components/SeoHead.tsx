@@ -60,7 +60,7 @@ export const SeoHead: React.FC<SeoHeadProps> = ({
           ? '404 Reiseziel Nicht Gefunden | Vizamigo'
           : language === 'es'
           ? '404 Destino No Encontrado | Vizamigo'
-          : language === 'ru'
+          : language === 'pt' ? '404 Destino não encontrado | Vizamigo' : language === 'ru'
           ? '404 Направление Не Найдено | Vizamigo'
           : '404 Rota veya Ülke Bulunamadı | Vizamigo';
 
@@ -71,7 +71,7 @@ export const SeoHead: React.FC<SeoHeadProps> = ({
           ? 'Das angeforderte Reiseziel konnte nicht gefunden werden.'
           : language === 'es'
           ? 'El destino o dossier solicitado no se ha encontrado.'
-          : language === 'ru'
+          : language === 'pt' ? 'O destino ou dossiê solicitado não foi encontrado.' : language === 'ru'
           ? 'Запрошенная страница или страна не найдена.'
           : 'Aradığınız rota veya ülke dosyası sistemimizde bulunamadı.';
 
@@ -112,7 +112,7 @@ export const SeoHead: React.FC<SeoHeadProps> = ({
             ? 'Doppelpass-Synergie & Globaler Routenplaner | Vizamigo'
             : language === 'es'
             ? 'Sinergia de Doble Pasaporte y Planificador de Rutas | Vizamigo'
-            : language === 'ru'
+            : language === 'pt' ? 'Sinergia de dois passaportes e planejador de roteiros | Vizamigo' : language === 'ru'
             ? 'Сравнение силы паспортов и планировщик маршрутов | Vizamigo'
             : 'Çifte Pasaport Vize Gücü Kıyaslama & Seyahat Rota Planlayıcı | Vizamigo';
           break;
@@ -123,7 +123,7 @@ export const SeoHead: React.FC<SeoHeadProps> = ({
             ? 'Schengen 90/180-Tage-Rechner (2026 Aufenthaltsrechner) | Vizamigo'
             : language === 'es'
             ? 'Calculadora Regla Schengen 90/180 Días (2026) | Vizamigo'
-            : language === 'ru'
+            : language === 'pt' ? 'Calculadora da regra Schengen 90/180 dias (2026) | Vizamigo' : language === 'ru'
             ? 'Калькулятор Шенген 90/180 дней (2026) | Vizamigo'
             : 'Schengen 90/180 Gün Kuralı Hesaplayıcı (2026 Kalan Gün Sayacı) | Vizamigo';
           break;
@@ -134,7 +134,7 @@ export const SeoHead: React.FC<SeoHeadProps> = ({
             ? 'Digital-Nomaden-Visa & Einkommensanforderungen (2026) | Vizamigo'
             : language === 'es'
             ? 'Visas para Nómadas Digitales y Requisitos de Ingresos (2026) | Vizamigo'
-            : language === 'ru'
+            : language === 'pt' ? 'Vistos para nômades digitais e requisitos de renda (2026) | Vizamigo' : language === 'ru'
             ? 'Визы для цифровых кочевников и требования к доходу (2026) | Vizamigo'
             : 'Dijital Göçebe Vizeleri & Uzaktan Çalışma Gelir Şartları (2026) | Vizamigo';
           break;
@@ -146,7 +146,7 @@ export const SeoHead: React.FC<SeoHeadProps> = ({
             ? 'Konsularischer Krisenstab & Notruf-Hotline | Vizamigo'
             : language === 'es'
             ? 'Mesa de Crisis Consular y Teléfonos de Emergencia | Vizamigo'
-            : language === 'ru'
+            : language === 'pt' ? 'Central de crises consulares e telefones de emergência | Vizamigo' : language === 'ru'
             ? 'Консульский кризисный центр и экстренная помощь | Vizamigo'
             : 'Konsolosluk Kriz Masası, Acil Yardım & Kayıp Pasaport Hattı | Vizamigo';
           break;
@@ -157,7 +157,7 @@ export const SeoHead: React.FC<SeoHeadProps> = ({
             ? 'Vizamigo - Weltweite Visabestimmungen & Reisepass-Guide'
             : language === 'es'
             ? 'Vizamigo - Política Global de Visados y Guía de Pasaportes'
-            : language === 'ru'
+            : language === 'pt' ? 'Vizamigo - Política global de vistos e guia de passaportes' : language === 'ru'
             ? 'Vizamigo - Глобальный визовый режим и гид по паспортам'
             : 'Vizamigo - 199 Ülke Vize Rejimi ve Küresel Pasaport Rehberi';
           break;

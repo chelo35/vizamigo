@@ -63,7 +63,7 @@ interface Props {
 
 type L3 = { tr: string; en: string; de: string };
 const usd = (v: string | number | undefined) => (v === undefined || v === '' ? '—' : /\$/.test(String(v)) ? String(v) : `$${v}`);
-const pick3 = (o: (L3 & { es?: string; ru?: string }) | undefined, lang: string) => (o ? (lang === 'tr' ? o.tr : lang === 'de' ? o.de || o.en : (lang === 'es' ? o.es : lang === 'ru' ? o.ru : '') || lText(lang, o.tr, o.en, o.de)) : '');
+const pick3 = (o: (L3 & { es?: string; pt?: string; ru?: string }) | undefined, lang: string) => (o ? (lang === 'tr' ? o.tr : lang === 'de' ? o.de || o.en : (lang === 'es' ? o.es : lang === 'ru' ? o.ru : '') || lText(lang, o.tr, o.en, o.de)) : '');
 
 function useCountryTimeTz(code: string) {
   const geo = GEO_DATA[code];
@@ -138,9 +138,9 @@ const CountryHero: React.FC<{ code: string; passport: string; onBack: () => void
           <span className="vz-row-flex vz-chero-top">
             <button type="button" className="vz-back" onClick={onBack}>
               <Icon name="back" size={18} duo={false} />
-              <span>{l('Keşfet', 'Explore', 'Entdecken', 'Explorar', 'Обзор')}</span>
+              <span>{l('Keşfet', 'Explore', 'Entdecken', 'Explorar', 'Обзор', 'Explorar')}</span>
             </button>
-            {passport === code ? <span className="vz-badge big tone-ok">{l('Kendi ülken', 'Your country', 'Dein Land', 'Tu país', 'Ваша страна')}</span> : <VisaBadge item={item} big />}
+            {passport === code ? <span className="vz-badge big tone-ok">{l('Kendi ülken', 'Your country', 'Dein Land', 'Tu país', 'Ваша страна', 'Seu país')}</span> : <VisaBadge item={item} big />}
           </span>
           <div className="vz-chero-title">
             <h1><Flag code={code} size="lg" /><span className="vz-h1-main">{name}</span><span className="sr-only"> — {h1Rest}</span></h1>
@@ -257,36 +257,36 @@ const CountryPageInner: React.FC<Props & { data: CountryBundle }> = ({ code, pas
       const lc = insights.livingCosts;
       await downloadCountryPdf({
         title: name,
-        subtitle: l(`${P} pasaportuyla`, `With a ${P} passport`, `Mit Pass aus ${P}`, `Con pasaporte de ${P}`, `Паспорт: ${P}`),
+        subtitle: l(`${P} pasaportuyla`, `With a ${P} passport`, `Mit Pass aus ${P}`, `Con pasaporte de ${P}`, `Паспорт: ${P}`, `Com passaporte de ${P}`),
         filename: `vizamigo-${code.toLowerCase()}-${passport.toLowerCase()}.pdf`,
-        footer: l(`Vizamigo · ${window.location.href} · ${new Date().toLocaleDateString(language)} · Seyahatten önce resmî kaynaktan teyit et.`, `Vizamigo · ${window.location.href} · ${new Date().toLocaleDateString(language)} · Confirm with official sources before travel.`, `Vizamigo · ${window.location.href} · ${new Date().toLocaleDateString(language)} · Vor der Reise offiziell bestätigen.`, `Vizamigo · ${window.location.href} · ${new Date().toLocaleDateString(language)} · Confírmalo con fuentes oficiales.`, `Vizamigo · ${window.location.href} · ${new Date().toLocaleDateString(language)} · Уточните в официальных источниках.`),
+        footer: l(`Vizamigo · ${window.location.href} · ${new Date().toLocaleDateString(language)} · Seyahatten önce resmî kaynaktan teyit et.`, `Vizamigo · ${window.location.href} · ${new Date().toLocaleDateString(language)} · Confirm with official sources before travel.`, `Vizamigo · ${window.location.href} · ${new Date().toLocaleDateString(language)} · Vor der Reise offiziell bestätigen.`, `Vizamigo · ${window.location.href} · ${new Date().toLocaleDateString(language)} · Confírmalo con fuentes oficiales.`, `Vizamigo · ${window.location.href} · ${new Date().toLocaleDateString(language)} · Уточните в официальных источниках.`, `Vizamigo · ${window.location.href} · ${new Date().toLocaleDateString(language)} · Confirme nas fontes oficiais.`),
         sections: [
-          { h: l('Vize', 'Visa', 'Visum', 'Visado', 'Виза'), text: generateDirectAnswerSnippet(name, P, item?.cat || 'visa', getStayDurationText(item?.v || '', item?.cat || 'visa', language as SupportedLanguage), !!item?.id, language as SupportedLanguage) },
+          { h: l('Vize', 'Visa', 'Visum', 'Visado', 'Виза', 'Visto'), text: generateDirectAnswerSnippet(name, P, item?.cat || 'visa', getStayDurationText(item?.v || '', item?.cat || 'visa', language as SupportedLanguage), !!item?.id, language as SupportedLanguage) },
           {
-            h: l('Kısaca', 'Quick facts', 'Kurz & knapp', 'Datos rápidos', 'Коротко'),
+            h: l('Kısaca', 'Quick facts', 'Kurz & knapp', 'Datos rápidos', 'Коротко', 'Resumo rápido'),
             rows: ([
-              [l('Başkent', 'Capital', 'Hauptstadt', 'Capital', 'Столица'), geo?.capital ? capitalName(code, language, geo.capital) : ''],
-              [l('Para birimi', 'Currency', 'Währung', 'Moneda', 'Валюта'), insights.currency],
-              [l('En iyi zaman', 'Best time', 'Beste Reisezeit', 'Mejor época', 'Лучшее время'), insights.bestMonths],
-              [l('Priz', 'Plugs', 'Steckdosen', 'Enchufes', 'Розетки'), `${intel.plugs.types.join(', ')} · ${intel.plugs.voltage || ''}`],
-              [l('Musluk suyu', 'Tap water', 'Leitungswasser', 'Agua del grifo', 'Вода из-под крана'), intel.waterAndHealth?.tapWaterDesc || ''],
-              [l('Bahşiş', 'Tipping', 'Trinkgeld', 'Propinas', 'Чаевые'), enc.economy?.tippingCulture || ''],
-              [l('Günlük bütçe', 'Daily budget', 'Tagesbudget', 'Presupuesto diario', 'Бюджет в день'), lc ? `${lc.dailyBudgetBackpackerUsd} / ${lc.dailyBudgetMidrangeUsd}` : '']
+              [l('Başkent', 'Capital', 'Hauptstadt', 'Capital', 'Столица', 'Capital'), geo?.capital ? capitalName(code, language, geo.capital) : ''],
+              [l('Para birimi', 'Currency', 'Währung', 'Moneda', 'Валюта', 'Moeda'), insights.currency],
+              [l('En iyi zaman', 'Best time', 'Beste Reisezeit', 'Mejor época', 'Лучшее время', 'Melhor época'), insights.bestMonths],
+              [l('Priz', 'Plugs', 'Steckdosen', 'Enchufes', 'Розетки', 'Tomadas'), `${intel.plugs.types.join(', ')} · ${intel.plugs.voltage || ''}`],
+              [l('Musluk suyu', 'Tap water', 'Leitungswasser', 'Agua del grifo', 'Вода из-под крана', 'Água da torneira'), intel.waterAndHealth?.tapWaterDesc || ''],
+              [l('Bahşiş', 'Tipping', 'Trinkgeld', 'Propinas', 'Чаевые', 'Gorjetas'), enc.economy?.tippingCulture || ''],
+              [l('Günlük bütçe', 'Daily budget', 'Tagesbudget', 'Presupuesto diario', 'Бюджет в день', 'Orçamento diário'), lc ? `${lc.dailyBudgetBackpackerUsd} / ${lc.dailyBudgetMidrangeUsd}` : '']
             ] as Array<[string, string]>).filter(([, v]) => v)
           },
           {
-            h: l('Güvenlik ve acil durum', 'Safety & emergency', 'Sicherheit & Notfall', 'Seguridad y emergencias', 'Безопасность и экстренные службы'),
+            h: l('Güvenlik ve acil durum', 'Safety & emergency', 'Sicherheit & Notfall', 'Seguridad y emergencias', 'Безопасность и экстренные службы', 'Segurança e emergências'),
             text: `${insights.safety?.safetyLevel || ''} (${insights.safety?.safetyScore ?? '–'}/100). ${insights.safety?.crimeRateSummary || ''}`,
             rows: ([
-              [l('Polis', 'Police', 'Polizei', 'Policía', 'Полиция'), em.police],
-              [l('Ambulans', 'Ambulance', 'Rettung', 'Ambulancia', 'Скорая'), em.ambulance],
+              [l('Polis', 'Police', 'Polizei', 'Policía', 'Полиция', 'Polícia'), em.police],
+              [l('Ambulans', 'Ambulance', 'Rettung', 'Ambulancia', 'Скорая', 'Ambulância'), em.ambulance],
               ...(official?.items || []).map((a) => [a.agency === 'us' ? 'US' : a.agency === 'uk' ? 'UK' : 'Canada', `${a.level}/4 · ${a.date}`] as [string, string])
             ] as Array<[string, string]>).filter(([, v]) => v)
           },
-          { h: `${l('Önerilen rota', 'Suggested itinerary', 'Empfohlene Route', 'Itinerario', 'Маршрут')}: ${itin.routeName || ''}`, items: itin.stops.map((st) => `${st.name.replace(/^[^:]{1,20}:\s*/, '')} (${st.durationBadge || st.recommendedDuration})`) },
-          { h: l('Mutlaka görülecek yerler', 'Must-see places', 'Sehenswürdigkeiten', 'Imprescindibles', 'Что посмотреть'), items: (enc.tourism?.mustSeePlaces || []).slice(0, 8) },
-          { h: l('Güvende kalmak için', 'Staying safe', 'Sicher bleiben', 'Para estar seguro', 'Как не рисковать'), items: (insights.safety?.safeTravelTips || []).slice(0, 5) },
-          { h: l('Hazırlık listesi', 'Trip checklist', 'Reise-Checkliste', 'Lista de preparación', 'Чек-лист поездки'), items: checklist.map((x) => `☐ ${x.title}${x.sub ? ` – ${x.sub}` : ''}`) }
+          { h: `${l('Önerilen rota', 'Suggested itinerary', 'Empfohlene Route', 'Itinerario', 'Маршрут', 'Roteiro')}: ${itin.routeName || ''}`, items: itin.stops.map((st) => `${st.name.replace(/^[^:]{1,20}:\s*/, '')} (${st.durationBadge || st.recommendedDuration})`) },
+          { h: l('Mutlaka görülecek yerler', 'Must-see places', 'Sehenswürdigkeiten', 'Imprescindibles', 'Что посмотреть', 'Imperdíveis'), items: (enc.tourism?.mustSeePlaces || []).slice(0, 8) },
+          { h: l('Güvende kalmak için', 'Staying safe', 'Sicher bleiben', 'Para estar seguro', 'Как не рисковать', 'Para viajar seguro'), items: (insights.safety?.safeTravelTips || []).slice(0, 5) },
+          { h: l('Hazırlık listesi', 'Trip checklist', 'Reise-Checkliste', 'Lista de preparación', 'Чек-лист поездки', 'Checklist da viagem'), items: checklist.map((x) => `☐ ${x.title}${x.sub ? ` – ${x.sub}` : ''}`) }
         ]
       });
     } catch {
@@ -345,80 +345,80 @@ const CountryPageInner: React.FC<Props & { data: CountryBundle }> = ({ code, pas
   const tiles: Tile[] = [
     {
       id: 'prep', icon: 'check',
-      title: l('Hazırlık listesi', 'Trip checklist', 'Reise-Checkliste', 'Lista de preparación', 'Чек-лист поездки'),
-      desc: l('Vize, sigorta, eSIM, priz, para', 'Visa, insurance, eSIM, plugs, money', 'Visum, Versicherung, eSIM, Stecker', 'Visado, seguro, eSIM, enchufes', 'Виза, страховка, eSIM, розетки'),
+      title: l('Hazırlık listesi', 'Trip checklist', 'Reise-Checkliste', 'Lista de preparación', 'Чек-лист поездки', 'Checklist da viagem'),
+      desc: l('Vize, sigorta, eSIM, priz, para', 'Visa, insurance, eSIM, plugs, money', 'Visum, Versicherung, eSIM, Stecker', 'Visado, seguro, eSIM, enchufes', 'Виза, страховка, eSIM, розетки', 'Visto, seguro, eSIM, tomadas'),
       render: () => <TripChecklist code={code} passport={passport} items={checklist} />
     },
     {
       id: 'visa', icon: 'shield',
-      title: l('Vize & güvenlik', 'Visa & safety', 'Visum & Sicherheit', 'Visado y seguridad', 'Виза и безопасность'),
-      desc: l('Giriş kuralı, riskler, sağlık', 'Entry rule, risks, health', 'Einreise, Risiken, Gesundheit', 'Entrada, riesgos, salud', 'Въезд, риски, здоровье'),
-      badge: days ? l(`${days} gün`, `${days} days`, `${days} Tage`, `${days} días`, `${days} дн.`) : undefined,
+      title: l('Vize & güvenlik', 'Visa & safety', 'Visum & Sicherheit', 'Visado y seguridad', 'Виза и безопасность', 'Visto e segurança'),
+      desc: l('Giriş kuralı, riskler, sağlık', 'Entry rule, risks, health', 'Einreise, Risiken, Gesundheit', 'Entrada, riesgos, salud', 'Въезд, риски, здоровье', 'Entrada, riscos, saúde'),
+      badge: days ? l(`${days} gün`, `${days} days`, `${days} Tage`, `${days} días`, `${days} дн.`, `${days} dias`) : undefined,
       tabs: [
         {
-          id: 'entry', label: l('Giriş kuralı', 'Entry rule', 'Einreise', 'Entrada', 'Въезд'),
+          id: 'entry', label: l('Giriş kuralı', 'Entry rule', 'Einreise', 'Entrada', 'Въезд', 'Entrada'),
           render: () => (
             <div className="vz-stack">
               <Card tone={visaTone(item) === 'warn' ? 'warn' : visaTone(item) === 'ok' ? 'ok' : 'sea'}>
-                <div className="vz-row-flex"><VisaBadge item={item} big />{days && <b>{l(`${days} güne kadar kalış`, `Stay up to ${days} days`, `Bis zu ${days} Tage`, `Hasta ${days} días`, `До ${days} дней`)}</b>}</div>
-                {note ? <p>{note}</p> : <p>{l(`${getCountryName(passport, language)} pasaportuyla ${name} için giriş türü yukarıdaki gibidir. Yola çıkmadan önce resmî kaynaktan son durumu kontrol et.`, `This is the entry type for ${name} with ${enArticle(getCountryName(passport, 'en'))} ${getCountryName(passport, 'en')} passport. Check the official source before you travel.`, `Einreiseart für ${name}. Vor der Reise offizielle Quelle prüfen.`, `Tipo de entrada para ${name}. Verifica la fuente oficial antes de viajar.`, `Тип въезда ${ruIn(name, 'acc')}. Проверьте официальный источник.`)}</p>}
+                <div className="vz-row-flex"><VisaBadge item={item} big />{days && <b>{l(`${days} güne kadar kalış`, `Stay up to ${days} days`, `Bis zu ${days} Tage`, `Hasta ${days} días`, `До ${days} дней`, `Até ${days} dias`)}</b>}</div>
+                {note ? <p>{note}</p> : <p>{l(`${getCountryName(passport, language)} pasaportuyla ${name} için giriş türü yukarıdaki gibidir. Yola çıkmadan önce resmî kaynaktan son durumu kontrol et.`, `This is the entry type for ${name} with ${enArticle(getCountryName(passport, 'en'))} ${getCountryName(passport, 'en')} passport. Check the official source before you travel.`, `Einreiseart für ${name}. Vor der Reise offizielle Quelle prüfen.`, `Tipo de entrada para ${name}. Verifica la fuente oficial antes de viajar.`, `Тип въезда ${ruIn(name, 'acc')}. Проверьте официальный источник.`, `Tipo de entrada para ${name}. Confira a fonte oficial antes de viajar.`)}</p>}
                 {detail?.u && (
                   <div className="vz-row-flex">
-                    <LinkBtn href={detail.u} small>{(detail.h && sourceHost(detail.h, language)) || l('Resmî kaynak', 'Official source', 'Offizielle Quelle', 'Fuente oficial', 'Источник')}</LinkBtn>
-                    {detail.d && <span className="vz-muted" style={{ fontSize: 12.5 }}>{l('Doğrulama', 'Checked', 'Geprüft', 'Verificado', 'Проверено')}: {checkedLabel(detail.d, language)}</span>}
+                    <LinkBtn href={detail.u} small>{(detail.h && sourceHost(detail.h, language)) || l('Resmî kaynak', 'Official source', 'Offizielle Quelle', 'Fuente oficial', 'Источник', 'Fonte oficial')}</LinkBtn>
+                    {detail.d && <span className="vz-muted" style={{ fontSize: 12.5 }}>{l('Doğrulama', 'Checked', 'Geprüft', 'Verificado', 'Проверено', 'Verificado')}: {checkedLabel(detail.d, language)}</span>}
                   </div>
                 )}
               </Card>
               {item && (item.cat === 'visa' || item.cat === 'evisa') && !item.id && (
                 <List>
-                  <Row lead={<PartnerLogo url="https://www.visahq.com" name="VisaHQ" fallback="passport" />} title={<>{l('Başvurunu VisaHQ hazırlasın', 'Let VisaHQ handle your application', 'Antrag über VisaHQ', 'Tramita con VisaHQ', 'Оформить через VisaHQ')} <AdTag /></>} sub={l('Evrak kontrolü ve takip; hizmet bedeli vize ücretine eklenir', 'Document check and tracking; service fee on top of the visa fee', 'Dokumentenprüfung und Verfolgung; Servicegebühr zusätzlich', 'Revisión de documentos y seguimiento; tarifa de servicio adicional', 'Проверка документов и сопровождение; сервисный сбор сверх консульского')} href="https://vizamigo.visahq.net/" />
+                  <Row lead={<PartnerLogo url="https://www.visahq.com" name="VisaHQ" fallback="passport" />} title={<>{l('Başvurunu VisaHQ hazırlasın', 'Let VisaHQ handle your application', 'Antrag über VisaHQ', 'Tramita con VisaHQ', 'Оформить через VisaHQ', 'Faça o pedido com a VisaHQ')} <AdTag /></>} sub={l('Evrak kontrolü ve takip; hizmet bedeli vize ücretine eklenir', 'Document check and tracking; service fee on top of the visa fee', 'Dokumentenprüfung und Verfolgung; Servicegebühr zusätzlich', 'Revisión de documentos y seguimiento; tarifa de servicio adicional', 'Проверка документов и сопровождение; сервисный сбор сверх консульского', 'Revisão de documentos e acompanhamento; taxa de serviço adicional')} href="https://vizamigo.visahq.net/" />
                 </List>
               )}
               <div className="vz-actions">
-                <Btn variant="ghost" small icon="flag" onClick={() => onReport(code, name)}>{l('Bu bilgi yanlış mı? Bildir', 'Wrong info? Report it', 'Falsch? Melden', '¿Error? Repórtalo', 'Ошибка? Сообщите')}</Btn>
+                <Btn variant="ghost" small icon="flag" onClick={() => onReport(code, name)}>{l('Bu bilgi yanlış mı? Bildir', 'Wrong info? Report it', 'Falsch? Melden', '¿Error? Repórtalo', 'Ошибка? Сообщите', 'Viu um erro? Avise a gente')}</Btn>
               </div>
             </div>
           )
         },
         {
-          id: 'safety', label: l('Güvenlik', 'Safety', 'Sicherheit', 'Seguridad', 'Безопасность'),
+          id: 'safety', label: l('Güvenlik', 'Safety', 'Sicherheit', 'Seguridad', 'Безопасность', 'Segurança'),
           render: () => (
             <div className="vz-stack">
               <div className="vz-stats">
                 <Stat value={`${insights.safety.safetyScore}/100`} label={insights.safety.safetyLevel} icon="shield" tone={insights.safety.safetyScore >= 70 ? 'ok' : insights.safety.safetyScore >= 45 ? 'sun' : 'warn'} />
-                {official?.max != null && <Stat value={`${official.max}/4`} label={l('Resmî uyarı (en temkinli)', 'Official advisory (strictest)', 'Reisewarnung (strengste)', 'Alerta oficial (más estricta)', 'Офиц. предупреждение (макс.)')} icon="alert" tone={official.max >= 3 ? 'warn' : 'sea'} />}
+                {official?.max != null && <Stat value={`${official.max}/4`} label={l('Resmî uyarı (en temkinli)', 'Official advisory (strictest)', 'Reisewarnung (strengste)', 'Alerta oficial (más estricta)', 'Офиц. предупреждение (макс.)', 'Alerta oficial (mais rigoroso)')} icon="alert" tone={official.max >= 3 ? 'warn' : 'sea'} />}
               </div>
               {official && official.items.length > 0 && (
-                <Card title={l('Resmî seyahat uyarıları', 'Official travel advisories', 'Offizielle Reisehinweise', 'Avisos oficiales de viaje', 'Официальные рекомендации для туристов')} icon="shield" tone={official.max != null && official.max >= 3 ? 'warn' : 'plain'}>
+                <Card title={l('Resmî seyahat uyarıları', 'Official travel advisories', 'Offizielle Reisehinweise', 'Avisos oficiales de viaje', 'Официальные рекомендации для туристов', 'Alertas oficiais de viagem')} icon="shield" tone={official.max != null && official.max >= 3 ? 'warn' : 'plain'}>
                   <List>
                     {official.items.map((a) => (
-                      <Row key={a.agency} lead={<span className={`vz-advlv lv${a.level}`}>{a.level}/4</span>} title={advisoryLabel(a, language)} sub={`${advisoryAgencyName(a.agency, language)}${a.date ? ` · ${l('güncelleme', 'updated', 'aktualisiert', 'actualizado', 'обновлено')} ${a.date}` : ''}`} href={a.url} />
+                      <Row key={a.agency} lead={<span className={`vz-advlv lv${a.level}`}>{a.level}/4</span>} title={advisoryLabel(a, language)} sub={`${advisoryAgencyName(a.agency, language)}${a.date ? ` · ${l('güncelleme', 'updated', 'aktualisiert', 'actualizado', 'обновлено', 'atualizado')} ${a.date}` : ''}`} href={a.url} />
                     ))}
                   </List>
-                  <p className="vz-muted"><small>{l(`Kaynak: kurumların resmî açık verisi, ${official.fetched} tarihinde alındı. Seyahatten önce bağlantıdan güncel uyarıyı kontrol edin.`, `Source: official open data of each agency, retrieved ${official.fetched}. Check the latest advisory via the link before you travel.`, `Quelle: offizielle offene Daten der Behörden, abgerufen am ${official.fetched}. Vor der Reise den aktuellen Hinweis über den Link prüfen.`, `Fuente: datos abiertos oficiales de cada organismo, consultados el ${official.fetched}. Revise el aviso actual en el enlace antes de viajar.`, `Источник: официальные открытые данные ведомств, получены ${official.fetched}. Перед поездкой проверьте актуальную версию по ссылке.`)}</small></p>
+                  <p className="vz-muted"><small>{l(`Kaynak: kurumların resmî açık verisi, ${official.fetched} tarihinde alındı. Seyahatten önce bağlantıdan güncel uyarıyı kontrol edin.`, `Source: official open data of each agency, retrieved ${official.fetched}. Check the latest advisory via the link before you travel.`, `Quelle: offizielle offene Daten der Behörden, abgerufen am ${official.fetched}. Vor der Reise den aktuellen Hinweis über den Link prüfen.`, `Fuente: datos abiertos oficiales de cada organismo, consultados el ${official.fetched}. Revise el aviso actual en el enlace antes de viajar.`, `Источник: официальные открытые данные ведомств, получены ${official.fetched}. Перед поездкой проверьте актуальную версию по ссылке.`, `Fonte: dados abertos oficiais de cada órgão, consultados em ${official.fetched}. Confira o alerta atual no link antes de viajar.`)}</small></p>
                 </Card>
               )}
               <p>{insights.safety.crimeRateSummary}</p>
               {verified && verified.advisory.regional_warnings.length > 0 && (
-                <Card title={l('Dikkat edilecek bölgeler', 'Areas to avoid', 'Gebiete meiden', 'Zonas a evitar', 'Опасные районы')} icon="alert" tone="warn">
+                <Card title={l('Dikkat edilecek bölgeler', 'Areas to avoid', 'Gebiete meiden', 'Zonas a evitar', 'Опасные районы', 'Áreas a evitar')} icon="alert" tone="warn">
                   <Bullets tone="warn" items={verified.advisory.regional_warnings.map((r) => `${r.area}: ${r.reason}`)} />
                 </Card>
               )}
-              {scams.length > 0 && <Card title={l('Bilinen dolandırıcılıklar', 'Known scams', 'Bekannte Maschen', 'Estafas comunes', 'Мошенничество')} icon="alert"><Bullets tone="warn" items={scams.slice(0, 8)} /></Card>}
-              {insights.safety.safeTravelTips?.length > 0 && <Card title={l('Güvende kalmak için', 'Staying safe', 'Sicher bleiben', 'Para estar seguro', 'Как не рисковать')} icon="check"><Bullets tone="ok" items={insights.safety.safeTravelTips} /></Card>}
+              {scams.length > 0 && <Card title={l('Bilinen dolandırıcılıklar', 'Known scams', 'Bekannte Maschen', 'Estafas comunes', 'Мошенничество', 'Golpes comuns')} icon="alert"><Bullets tone="warn" items={scams.slice(0, 8)} /></Card>}
+              {insights.safety.safeTravelTips?.length > 0 && <Card title={l('Güvende kalmak için', 'Staying safe', 'Sicher bleiben', 'Para estar seguro', 'Как не рисковать', 'Para viajar seguro')} icon="check"><Bullets tone="ok" items={insights.safety.safeTravelTips} /></Card>}
             </div>
           )
         },
         {
-          id: 'health', label: l('Sağlık', 'Health', 'Gesundheit', 'Salud', 'Здоровье'),
+          id: 'health', label: l('Sağlık', 'Health', 'Gesundheit', 'Salud', 'Здоровье', 'Saúde'),
           render: () => (
             <div className="vz-stack">
               <div className="vz-stats">
-                <Stat value={intel.waterAndHealth.tapWaterSafe ? l('İçilir', 'Safe', 'Trinkbar', 'Potable', 'Можно') : l('İçilmez', 'Not safe', 'Nicht trinkbar', 'No potable', 'Нельзя')} label={l('Musluk suyu', 'Tap water', 'Leitungswasser', 'Agua del grifo', 'Вода из-под крана')} icon="drop" tone={intel.waterAndHealth.tapWaterSafe ? 'ok' : 'warn'} />
-                <Stat value={intel.waterAndHealth.insuranceRequired ? l('Zorunlu', 'Required', 'Pflicht', 'Obligatorio', 'Обязательна') : l('Önerilir', 'Advised', 'Empfohlen', 'Recomendado', 'Рекомендуется')} label={l('Seyahat sigortası', 'Travel insurance', 'Reiseversicherung', 'Seguro de viaje', 'Страховка')} icon="heart" />
+                <Stat value={intel.waterAndHealth.tapWaterSafe ? l('İçilir', 'Safe', 'Trinkbar', 'Potable', 'Можно', 'Potável') : l('İçilmez', 'Not safe', 'Nicht trinkbar', 'No potable', 'Нельзя', 'Não potável')} label={l('Musluk suyu', 'Tap water', 'Leitungswasser', 'Agua del grifo', 'Вода из-под крана', 'Água da torneira')} icon="drop" tone={intel.waterAndHealth.tapWaterSafe ? 'ok' : 'warn'} />
+                <Stat value={intel.waterAndHealth.insuranceRequired ? l('Zorunlu', 'Required', 'Pflicht', 'Obligatorio', 'Обязательна', 'Obrigatório') : l('Önerilir', 'Advised', 'Empfohlen', 'Recomendado', 'Рекомендуется', 'Recomendado')} label={l('Seyahat sigortası', 'Travel insurance', 'Reiseversicherung', 'Seguro de viaje', 'Страховка', 'Seguro viagem')} icon="heart" />
               </div>
               <p>{intel.waterAndHealth.tapWaterDesc}</p>
-              {intel.waterAndHealth.vaccines.length > 0 && <Card title={l('Önerilen aşılar', 'Recommended vaccines', 'Empfohlene Impfungen', 'Vacunas recomendadas', 'Прививки')} icon="shield"><Tags items={intel.waterAndHealth.vaccines} /></Card>}
+              {intel.waterAndHealth.vaccines.length > 0 && <Card title={l('Önerilen aşılar', 'Recommended vaccines', 'Empfohlene Impfungen', 'Vacunas recomendadas', 'Прививки', 'Vacinas recomendadas')} icon="shield"><Tags items={intel.waterAndHealth.vaccines} /></Card>}
             </div>
           )
         }
@@ -426,13 +426,13 @@ const CountryPageInner: React.FC<Props & { data: CountryBundle }> = ({ code, pas
     },
     {
       id: 'itinerary', icon: 'route',
-      title: l('Gezi planı', 'Itinerary', 'Reiseplan', 'Itinerario', 'Маршрут'),
-      desc: itin.idealDurationText || l('Gün gün öneri rota', 'Day-by-day route', 'Route Tag für Tag', 'Ruta día a día', 'По дням'),
+      title: l('Gezi planı', 'Itinerary', 'Reiseplan', 'Itinerario', 'Маршрут', 'Roteiro'),
+      desc: itin.idealDurationText || l('Gün gün öneri rota', 'Day-by-day route', 'Route Tag für Tag', 'Ruta día a día', 'По дням', 'Roteiro dia a dia'),
       render: () => (
         <div className="vz-stack">
           <Card tone="sea" eyebrow={itin.idealDurationText} title={itin.routeName}>
             <p>{itin.routeSummary}</p>
-            <Tags items={[`${itin.totalDays} ${l('gün', 'days', 'Tage', 'días', 'дн.')}`, itin.paceLevel, itin.transportMode, itin.bestSeason]} />
+            <Tags items={[`${itin.totalDays} ${l('gün', 'days', 'Tage', 'días', 'дн.', 'dias')}`, itin.paceLevel, itin.transportMode, itin.bestSeason]} />
           </Card>
           <div className="vz-steps">
             {itin.stops.map((s) => (
@@ -444,18 +444,18 @@ const CountryPageInner: React.FC<Props & { data: CountryBundle }> = ({ code, pas
                   {s.highlights?.length > 0 && <Tags items={s.highlights} />}
                   {s.activities?.length > 0 && <Bullets items={s.activities} />}
                   {s.criticalTips?.length > 0 && <div className="vz-note"><Icon name="info" size={18} duo={false} /><span>{s.criticalTips.join(' · ')}</span></div>}
-                  {s.mapsQuery && <LinkBtn small href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(s.mapsQuery)}`} icon="map">{l('Haritada aç', 'Open in Maps', 'In Karten öffnen', 'Abrir en Maps', 'Открыть карту')}</LinkBtn>}
+                  {s.mapsQuery && <LinkBtn small href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(s.mapsQuery)}`} icon="map">{l('Haritada aç', 'Open in Maps', 'In Karten öffnen', 'Abrir en Maps', 'Открыть карту', 'Abrir no Maps')}</LinkBtn>}
                 </div>
               </div>
             ))}
           </div>
           {enc.tourism?.travelStyleTip && <div className="vz-note"><Icon name="spark" size={18} duo={false} /><span>{enc.tourism.travelStyleTip}</span></div>}
           <div className="vz-actions">
-            <Btn icon="plus" onClick={() => { addToRoute(); onOpenRoute(); }}>{l('Rotama ekle', 'Add to my route', 'Zur Route', 'Añadir a mi ruta', 'В маршрут')}</Btn>
-            <Btn variant="soft" icon="doc" onClick={copyItin}>{itinCopied ? l('Kopyalandı', 'Copied', 'Kopiert', 'Copiado', 'Скопировано') : l('Güzergâhı kopyala', 'Copy itinerary', 'Route kopieren', 'Copiar itinerario', 'Копировать')}</Btn>
+            <Btn icon="plus" onClick={() => { addToRoute(); onOpenRoute(); }}>{l('Rotama ekle', 'Add to my route', 'Zur Route', 'Añadir a mi ruta', 'В маршрут', 'Adicionar ao meu roteiro')}</Btn>
+            <Btn variant="soft" icon="doc" onClick={copyItin}>{itinCopied ? l('Kopyalandı', 'Copied', 'Kopiert', 'Copiado', 'Скопировано', 'Copiado') : l('Güzergâhı kopyala', 'Copy itinerary', 'Route kopieren', 'Copiar itinerario', 'Копировать', 'Copiar roteiro')}</Btn>
             {itin.stops.length > 1 && (
               <LinkBtn variant="ghost" icon="map" href={`https://www.google.com/maps/dir/${itin.stops.map((st) => encodeURIComponent(st.mapsQuery || `${st.name} ${getCountryName(code, 'en')}`)).join('/')}`}>
-                {l('Hepsini Google Haritalar’da yol tarifi', 'All stops in Google Maps', 'Alle Stopps in Google Maps', 'Todas las paradas en Google Maps', 'Все точки в Google Maps')}
+                {l('Hepsini Google Haritalar’da yol tarifi', 'All stops in Google Maps', 'Alle Stopps in Google Maps', 'Todas las paradas en Google Maps', 'Все точки в Google Maps', 'Todas as paradas no Google Maps')}
               </LinkBtn>
             )}
           </div>
@@ -464,53 +464,53 @@ const CountryPageInner: React.FC<Props & { data: CountryBundle }> = ({ code, pas
     },
     {
       id: 'easy', icon: 'sun',
-      title: l('Kolay tatil', 'Easy trip', 'Einfache Reise', 'Viaje fácil', 'Лёгкая поездка'),
-      desc: l('Uçuş, otel, transfer, tur, eSIM', 'Flights, stay, transfer, cover', 'Flug, Hotel, Transfer', 'Vuelo, hotel, traslado', 'Перелёт, отель, трансфер'),
+      title: l('Kolay tatil', 'Easy trip', 'Einfache Reise', 'Viaje fácil', 'Лёгкая поездка', 'Viagem sem complicação'),
+      desc: l('Uçuş, otel, transfer, tur, eSIM', 'Flights, stay, transfer, cover', 'Flug, Hotel, Transfer', 'Vuelo, hotel, traslado', 'Перелёт, отель, трансфер', 'Voo, hotel, transfer'),
       render: () => <EasyStages stages={concierge.stages} tr={tr} from={(GEO_DATA[passport]?.mainHub || '').split('/')[0]} to={(GEO_DATA[code]?.mainHub || '').split('/')[0]} />
     },
     {
       id: 'transport', icon: 'transit',
-      title: l('Ulaşım & internet', 'Transport & internet', 'Verkehr & Internet', 'Transporte e internet', 'Транспорт и интернет'),
-      desc: l('Taksi, eSIM, priz', 'Taxis, eSIM, plugs', 'Taxi, eSIM, Stecker', 'Taxi, eSIM, enchufes', 'Такси, eSIM, розетки'),
+      title: l('Ulaşım & internet', 'Transport & internet', 'Verkehr & Internet', 'Transporte e internet', 'Транспорт и интернет', 'Transporte e internet'),
+      desc: l('Taksi, eSIM, priz', 'Taxis, eSIM, plugs', 'Taxi, eSIM, Stecker', 'Taxi, eSIM, enchufes', 'Такси, eSIM, розетки', 'Táxi, eSIM, tomadas'),
       tabs: [
         {
-          id: 'move', label: l('Ulaşım', 'Getting around', 'Unterwegs', 'Moverse', 'Транспорт'),
+          id: 'move', label: l('Ulaşım', 'Getting around', 'Unterwegs', 'Moverse', 'Транспорт', 'Como se locomover'),
           render: () => (
             <div className="vz-stack">
               <div className="vz-stats">
-                <Stat value={usd(insights.transport.singleTicketUsd)} label={l('Tek biniş', 'Single ticket', 'Einzelticket', 'Billete sencillo', 'Разовый билет')} icon="ticket" />
-                <Stat value={usd(insights.transport.dailyPassUsd)} label={l('Günlük kart', 'Day pass', 'Tageskarte', 'Pase diario', 'Дневной')} icon="cal" />
-                <Stat value={insights.transport.transportQuality} label={l('Toplu taşıma', 'Public transport', 'ÖPNV', 'Transporte público', 'Транспорт')} icon="transit" />
+                <Stat value={usd(insights.transport.singleTicketUsd)} label={l('Tek biniş', 'Single ticket', 'Einzelticket', 'Billete sencillo', 'Разовый билет', 'Passagem unitária')} icon="ticket" />
+                <Stat value={usd(insights.transport.dailyPassUsd)} label={l('Günlük kart', 'Day pass', 'Tageskarte', 'Pase diario', 'Дневной', 'Passe diário')} icon="cal" />
+                <Stat value={insights.transport.transportQuality} label={l('Toplu taşıma', 'Public transport', 'ÖPNV', 'Transporte público', 'Транспорт', 'Transporte público')} icon="transit" />
               </div>
-              {insights.transport.popularRideApps?.length > 0 && <Card title={l('Taksi uygulamaları', 'Ride apps', 'Fahrdienste', 'Apps de taxi', 'Такси')} icon="car"><Tags items={insights.transport.popularRideApps} /></Card>}
+              {insights.transport.popularRideApps?.length > 0 && <Card title={l('Taksi uygulamaları', 'Ride apps', 'Fahrdienste', 'Apps de taxi', 'Такси', 'Apps de táxi')} icon="car"><Tags items={insights.transport.popularRideApps} /></Card>}
               <div className="vz-note"><Icon name="info" size={18} duo={false} /><span>{insights.transport.taxiAdvice}</span></div>
             </div>
           )
         },
         {
-          id: 'net', label: l('İnternet', 'Internet', 'Internet', 'Internet', 'Интернет'),
+          id: 'net', label: l('İnternet', 'Internet', 'Internet', 'Internet', 'Интернет', 'Internet'),
           render: () => (
             <div className="vz-stack">
               <div className="vz-stats">
-                <Stat value={`${insights.internet.mobileSpeedMbps} Mbps`} label={l('Mobil hız', 'Mobile speed', 'Mobil', 'Móvil', 'Мобильный')} icon="wifi" />
-                <Stat value={`${insights.internet.broadbandSpeedMbps} Mbps`} label={l('Ev/ofis internet', 'Broadband', 'Festnetz', 'Fibra', 'Домашний')} icon="laptop" />
-                <Stat value={usd(insights.internet.costPerGbUsd)} label={l('1 GB fiyatı', 'Price per GB', 'Preis pro GB', 'Precio por GB', 'Цена за ГБ')} icon="coin" />
+                <Stat value={`${insights.internet.mobileSpeedMbps} Mbps`} label={l('Mobil hız', 'Mobile speed', 'Mobil', 'Móvil', 'Мобильный', 'Celular')} icon="wifi" />
+                <Stat value={`${insights.internet.broadbandSpeedMbps} Mbps`} label={l('Ev/ofis internet', 'Broadband', 'Festnetz', 'Fibra', 'Домашний', 'Fibra')} icon="laptop" />
+                <Stat value={usd(insights.internet.costPerGbUsd)} label={l('1 GB fiyatı', 'Price per GB', 'Preis pro GB', 'Precio por GB', 'Цена за ГБ', 'Preço por GB')} icon="coin" />
               </div>
               <p>{insights.internet.esimAvailability}</p>
-              {insights.internet.bestCarriers?.length > 0 && <Card title={l('Operatörler', 'Carriers', 'Anbieter', 'Operadores', 'Операторы')} icon="phone"><Tags items={insights.internet.bestCarriers} /></Card>}
-              {insights.internet.vpnRequired && <div className="vz-note"><Icon name="lock" size={18} duo={false} /><span>{insights.internet.vpnNote || l('Bazı sitelere erişim için VPN gerekebilir.', 'A VPN may be needed for some sites.', 'VPN kann nötig sein.', 'Puede necesitarse VPN.', 'Может понадобиться VPN.')}</span></div>}
+              {insights.internet.bestCarriers?.length > 0 && <Card title={l('Operatörler', 'Carriers', 'Anbieter', 'Operadores', 'Операторы', 'Operadoras')} icon="phone"><Tags items={insights.internet.bestCarriers} /></Card>}
+              {insights.internet.vpnRequired && <div className="vz-note"><Icon name="lock" size={18} duo={false} /><span>{insights.internet.vpnNote || l('Bazı sitelere erişim için VPN gerekebilir.', 'A VPN may be needed for some sites.', 'VPN kann nötig sein.', 'Puede necesitarse VPN.', 'Может понадобиться VPN.', 'Pode ser preciso usar VPN.')}</span></div>}
               {intel.connectivity.airportSimTrapWarning && <div className="vz-note"><Icon name="alert" size={18} duo={false} /><span>{intel.connectivity.airportSimTrapWarning}</span></div>}
             </div>
           )
         },
         {
-          id: 'plug', label: l('Priz', 'Plugs', 'Stecker', 'Enchufes', 'Розетки'),
+          id: 'plug', label: l('Priz', 'Plugs', 'Stecker', 'Enchufes', 'Розетки', 'Tomadas'),
           render: () => (
             <div className="vz-stack">
               <div className="vz-stats">
-                <Stat value={intel.plugs.types.join(', ')} label={l('Fiş tipi', 'Plug type', 'Steckertyp', 'Tipo de enchufe', 'Тип розетки')} icon="plug" />
-                <Stat value={`${intel.plugs.voltage} · ${intel.plugs.frequency}`} label={l('Voltaj', 'Voltage', 'Spannung', 'Voltaje', 'Напряжение')} icon="spark" />
-                <Stat value={needsAdapter ? l('Gerekli', 'Needed', 'Nötig', 'Necesario', 'Нужен') : l('Gerekmez', 'Not needed', 'Nicht nötig', 'No necesario', 'Не нужен')} label={l(`${getCountryName(passport, language)} fişine adaptör (${homePlugs.join(', ')})`, `Adapter for ${getCountryName(passport, language)} plugs (${homePlugs.join(', ')})`, `Adapter (${homePlugs.join(', ')})`, `Adaptador (${homePlugs.join(', ')})`, `Адаптер (${homePlugs.join(', ')})`)} icon="plug" tone={needsAdapter ? 'warn' : 'ok'} />
+                <Stat value={intel.plugs.types.join(', ')} label={l('Fiş tipi', 'Plug type', 'Steckertyp', 'Tipo de enchufe', 'Тип розетки', 'Tipo de tomada')} icon="plug" />
+                <Stat value={`${intel.plugs.voltage} · ${intel.plugs.frequency}`} label={l('Voltaj', 'Voltage', 'Spannung', 'Voltaje', 'Напряжение', 'Voltagem')} icon="spark" />
+                <Stat value={needsAdapter ? l('Gerekli', 'Needed', 'Nötig', 'Necesario', 'Нужен', 'Necessário') : l('Gerekmez', 'Not needed', 'Nicht nötig', 'No necesario', 'Не нужен', 'Não é necessário')} label={l(`${getCountryName(passport, language)} fişine adaptör (${homePlugs.join(', ')})`, `Adapter for ${getCountryName(passport, language)} plugs (${homePlugs.join(', ')})`, `Adapter (${homePlugs.join(', ')})`, `Adaptador (${homePlugs.join(', ')})`, `Адаптер (${homePlugs.join(', ')})`, `Adaptador (${homePlugs.join(', ')})`)} icon="plug" tone={needsAdapter ? 'warn' : 'ok'} />
               </div>
               <p>{intel.plugs.socketDesc}</p>
             </div>
@@ -520,59 +520,59 @@ const CountryPageInner: React.FC<Props & { data: CountryBundle }> = ({ code, pas
     },
     {
       id: 'prices', icon: 'coin',
-      title: l('Fiyatlar', 'Prices', 'Preise', 'Precios', 'Цены'),
-      desc: l('Yemek, konaklama, bahşiş', 'Food, stays, tipping', 'Essen, Hotel, Trinkgeld', 'Comida, hotel, propina', 'Еда, жильё, чаевые'),
+      title: l('Fiyatlar', 'Prices', 'Preise', 'Precios', 'Цены', 'Preços'),
+      desc: l('Yemek, konaklama, bahşiş', 'Food, stays, tipping', 'Essen, Hotel, Trinkgeld', 'Comida, hotel, propina', 'Еда, жильё, чаевые', 'Comida, hotel, gorjeta'),
       render: () => (
         <div className="vz-stack">
           <div className="vz-stats">
-            <Stat value={usd(insights.livingCosts.dailyBudgetBackpackerUsd)} label={l('Günlük bütçe (ekonomik)', 'Daily budget (budget)', 'Tagesbudget (günstig)', 'Presupuesto diario (bajo)', 'Бюджет в день (эконом)')} icon="wallet" />
-            <Stat value={usd(insights.livingCosts.dailyBudgetMidrangeUsd)} label={l('Günlük bütçe (orta)', 'Daily budget (mid)', 'Tagesbudget (mittel)', 'Presupuesto diario (medio)', 'Бюджет в день (средний)')} icon="wallet" />
-            <Stat value={usd(insights.livingCosts.budgetMealUsd)} label={l('Ucuz bir öğün', 'Budget meal', 'Günstiges Essen', 'Comida económica', 'Обед')} icon="food" />
-            <Stat value={usd(insights.livingCosts.coffeeUsd)} label={l('Kahve', 'Coffee', 'Kaffee', 'Café', 'Кофе')} icon="food" />
-            <Stat value={usd(insights.livingCosts.hostelDormUsd)} label={l('Hostel (gece)', 'Hostel (night)', 'Hostel (Nacht)', 'Hostal (noche)', 'Хостел')} icon="bed" />
-            <Stat value={`$${insights.livingCosts.hotel3StarUsd}`} label={l('3 yıldızlı otel', '3-star hotel', '3-Sterne-Hotel', 'Hotel 3*', 'Отель 3*')} icon="bed" />
+            <Stat value={usd(insights.livingCosts.dailyBudgetBackpackerUsd)} label={l('Günlük bütçe (ekonomik)', 'Daily budget (budget)', 'Tagesbudget (günstig)', 'Presupuesto diario (bajo)', 'Бюджет в день (эконом)', 'Orçamento diário (econômico)')} icon="wallet" />
+            <Stat value={usd(insights.livingCosts.dailyBudgetMidrangeUsd)} label={l('Günlük bütçe (orta)', 'Daily budget (mid)', 'Tagesbudget (mittel)', 'Presupuesto diario (medio)', 'Бюджет в день (средний)', 'Orçamento diário (médio)')} icon="wallet" />
+            <Stat value={usd(insights.livingCosts.budgetMealUsd)} label={l('Ucuz bir öğün', 'Budget meal', 'Günstiges Essen', 'Comida económica', 'Обед', 'Refeição barata')} icon="food" />
+            <Stat value={usd(insights.livingCosts.coffeeUsd)} label={l('Kahve', 'Coffee', 'Kaffee', 'Café', 'Кофе', 'Café')} icon="food" />
+            <Stat value={usd(insights.livingCosts.hostelDormUsd)} label={l('Hostel (gece)', 'Hostel (night)', 'Hostel (Nacht)', 'Hostal (noche)', 'Хостел', 'Hostel (diária)')} icon="bed" />
+            <Stat value={`$${insights.livingCosts.hotel3StarUsd}`} label={l('3 yıldızlı otel', '3-star hotel', '3-Sterne-Hotel', 'Hotel 3*', 'Отель 3*', 'Hotel 3*')} icon="bed" />
           </div>
           <MultiFx destCur={destCur} homeCur={homeCur} />
-          <Card title={l('Bahşiş', 'Tipping', 'Trinkgeld', 'Propina', 'Чаевые')} icon="receipt">
+          <Card title={l('Bahşiş', 'Tipping', 'Trinkgeld', 'Propina', 'Чаевые', 'Gorjeta')} icon="receipt">
             <p>{intel.tipping.custom}{intel.tipping.standardPercent ? ` (%${intel.tipping.standardPercent})` : ''}</p>
             {intel.tipping.note && <p className="vz-muted">{intel.tipping.note}</p>}
           </Card>
-          <Card title={l('Ödeme alışkanlığı', 'How people pay', 'Bezahlen', 'Cómo se paga', 'Оплата')} icon="card"><p>{enc.economy.paymentCulture}</p></Card>
-          {intel.taxFree.vatRefundPercent && <Card title={l('Vergi iadesi (tax free)', 'Tax-free shopping', 'Tax-free', 'Tax free', 'Tax free')} icon="receipt"><p>{intel.taxFree.vatRefundPercent} · {intel.taxFree.minSpend}</p><p className="vz-muted">{intel.taxFree.customsNote}</p></Card>}
+          <Card title={l('Ödeme alışkanlığı', 'How people pay', 'Bezahlen', 'Cómo se paga', 'Оплата', 'Formas de pagamento')} icon="card"><p>{enc.economy.paymentCulture}</p></Card>
+          {intel.taxFree.vatRefundPercent && <Card title={l('Vergi iadesi (tax free)', 'Tax-free shopping', 'Tax-free', 'Tax free', 'Tax free', 'Tax free')} icon="receipt"><p>{intel.taxFree.vatRefundPercent} · {intel.taxFree.minSpend}</p><p className="vz-muted">{intel.taxFree.customsNote}</p></Card>}
           <div className="vz-note"><Icon name="plane" size={18} duo={false} /><span>{insights.livingCosts.flightTip}</span></div>
         </div>
       )
     },
     {
       id: 'culture', icon: 'landmark',
-      title: l('Kültür & gezilecek yerler', 'Culture & sights', 'Kultur & Sehenswertes', 'Cultura y lugares', 'Культура и места'),
-      desc: l('Şehirler, bölgeler, görgü', 'Cities, regions, etiquette', 'Städte, Regionen, Etikette', 'Ciudades, regiones', 'Города, регионы'),
+      title: l('Kültür & gezilecek yerler', 'Culture & sights', 'Kultur & Sehenswertes', 'Cultura y lugares', 'Культура и места', 'Cultura e atrações'),
+      desc: l('Şehirler, bölgeler, görgü', 'Cities, regions, etiquette', 'Städte, Regionen, Etikette', 'Ciudades, regiones', 'Города, регионы', 'Cidades, regiões'),
       tabs: [
         {
-          id: 'see', label: l('Gezilecek yerler', 'Must-see', 'Sehenswert', 'Imprescindibles', 'Что посмотреть'),
+          id: 'see', label: l('Gezilecek yerler', 'Must-see', 'Sehenswert', 'Imprescindibles', 'Что посмотреть', 'Imperdíveis'),
           render: () => (
             <div className="vz-stack">
               <Bullets items={enc.tourism.mustSeePlaces} />
               <div className="vz-grid two">
-                <Card title={l('Büyük şehirler', 'Major cities', 'Großstädte', 'Ciudades', 'Города')} icon="landmark"><Tags items={[geog.capital, ...geog.majorCities].filter((x, i, a) => x && a.indexOf(x) === i)} /></Card>
-                {geog.touristRegions.length > 0 && <Card title={l('Turistik bölgeler', 'Tourist regions', 'Regionen', 'Regiones', 'Регионы')} icon="map"><Tags items={geog.touristRegions} /></Card>}
+                <Card title={l('Büyük şehirler', 'Major cities', 'Großstädte', 'Ciudades', 'Города', 'Cidades')} icon="landmark"><Tags items={[geog.capital, ...geog.majorCities].filter((x, i, a) => x && a.indexOf(x) === i)} /></Card>
+                {geog.touristRegions.length > 0 && <Card title={l('Turistik bölgeler', 'Tourist regions', 'Regionen', 'Regiones', 'Регионы', 'Regiões')} icon="map"><Tags items={geog.touristRegions} /></Card>}
               </div>
-              <Card tone="sea" title={l('Ne zaman gidilir?', 'When to go', 'Beste Reisezeit', 'Cuándo ir', 'Когда ехать')} icon="sun"><p>{enc.tourism.bestSeasons}</p><p className="vz-muted">{enc.tourism.travelStyleTip}</p>{BEST_MONTHS[code]?.length ? <nav className="vz-wtg-months sm" aria-label={l('Bu ülkenin en iyi ayları', 'Best months for this country', 'Beste Monate', 'Mejores meses', 'Лучшие месяцы')}><span className="vz-muted">{l('Bu aylarda başka nereye gidilir?', 'Where else to go in these months:', 'Wohin sonst in diesen Monaten?', '¿Dónde más en estos meses?', 'Куда ещё в эти месяцы:')}</span>{BEST_MONTHS[code].map((m) => <a key={m} href={`/${language}/info/${wtgIdFor(m)}`}>{wtgMonthName(m, language)}</a>)}</nav> : null}</Card>
+              <Card tone="sea" title={l('Ne zaman gidilir?', 'When to go', 'Beste Reisezeit', 'Cuándo ir', 'Когда ехать', 'Quando ir')} icon="sun"><p>{enc.tourism.bestSeasons}</p><p className="vz-muted">{enc.tourism.travelStyleTip}</p>{BEST_MONTHS[code]?.length ? <nav className="vz-wtg-months sm" aria-label={l('Bu ülkenin en iyi ayları', 'Best months for this country', 'Beste Monate', 'Mejores meses', 'Лучшие месяцы', 'Melhores meses')}><span className="vz-muted">{l('Bu aylarda başka nereye gidilir?', 'Where else to go in these months:', 'Wohin sonst in diesen Monaten?', '¿Dónde más en estos meses?', 'Куда ещё в эти месяцы:', 'Para onde mais ir nesses meses?')}</span>{BEST_MONTHS[code].map((m) => <a key={m} href={`/${language}/info/${wtgIdFor(m)}`}>{wtgMonthName(m, language)}</a>)}</nav> : null}</Card>
             </div>
           )
         },
         {
-          id: 'etiquette', label: l('Görgü kuralları', 'Etiquette', 'Etikette', 'Etiqueta', 'Этикет'),
+          id: 'etiquette', label: l('Görgü kuralları', 'Etiquette', 'Etikette', 'Etiqueta', 'Этикет', 'Etiqueta'),
           render: () => (
             <div className="vz-stack">
               <Bullets items={enc.culture.etiquette} />
               <p>{enc.culture.lifestyle}</p>
-              <Card title={l('Din ve kutsal yerler', 'Religion & sacred sites', 'Religion', 'Religión', 'Религия')} icon="landmark"><p>{enc.religion.primaryReligions}</p><p className="vz-muted">{enc.religion.respectNorms}</p></Card>
+              <Card title={l('Din ve kutsal yerler', 'Religion & sacred sites', 'Religion', 'Religión', 'Религия', 'Religião')} icon="landmark"><p>{enc.religion.primaryReligions}</p><p className="vz-muted">{enc.religion.respectNorms}</p></Card>
             </div>
           )
         },
         {
-          id: 'fest', label: l('Festivaller', 'Festivals', 'Feste', 'Festivales', 'Праздники'),
+          id: 'fest', label: l('Festivaller', 'Festivals', 'Feste', 'Festivales', 'Праздники', 'Festivais'),
           render: () => {
             const fc = enc.culture as typeof enc.culture & { festivalCards?: FestivalCardData[]; festivalRest?: string[] };
             const fg = { cards: fc.festivalCards || [], rest: fc.festivalRest || [] };
@@ -585,7 +585,7 @@ const CountryPageInner: React.FC<Props & { data: CountryBundle }> = ({ code, pas
                     <p>{f.about}</p>
                     <div className="vz-note"><Icon name="info" size={18} duo={false} /><span>{f.tip}</span></div>
                     <a className="vz-fest-hotel" href={stay22('booking', { address: `${(f.place || '').split(' / ')[0] || capitalName(code, 'en', GEO_DATA[code]?.capital || '')}, ${getCountryName(code, 'en')}`, checkin: f.d1, checkout: f.d2, campaign: `fest_${code.toLowerCase()}` })} target="_blank" rel="noopener noreferrer sponsored">
-                      <Icon name="bed" size={16} duo={false} />{f.d1 ? l('Bu tarihler için otel bul', 'Find hotels for these dates', 'Hotels für diese Tage finden', 'Buscar hoteles para estas fechas', 'Найти отели на эти даты') : l('Yakındaki otelleri gör', 'See hotels nearby', 'Hotels in der Nähe ansehen', 'Ver hoteles cerca', 'Отели поблизости')}
+                      <Icon name="bed" size={16} duo={false} />{f.d1 ? l('Bu tarihler için otel bul', 'Find hotels for these dates', 'Hotels für diese Tage finden', 'Buscar hoteles para estas fechas', 'Найти отели на эти даты', 'Buscar hotéis para estas datas') : l('Yakındaki otelleri gör', 'See hotels nearby', 'Hotels in der Nähe ansehen', 'Ver hoteles cerca', 'Отели поблизости', 'Ver hotéis próximos')}
                     </a>
                   </div>
                 ))}
@@ -598,14 +598,14 @@ const CountryPageInner: React.FC<Props & { data: CountryBundle }> = ({ code, pas
     },
     {
       id: 'food', icon: 'food',
-      title: l('Yemek & içecek', 'Food & drink', 'Essen & Trinken', 'Comida y bebida', 'Еда и напитки'),
-      desc: l('Ne yenir, ne içilir', 'What to eat and drink', 'Was essen', 'Qué comer', 'Что попробовать'),
+      title: l('Yemek & içecek', 'Food & drink', 'Essen & Trinken', 'Comida y bebida', 'Еда и напитки', 'Comida e bebida'),
+      desc: l('Ne yenir, ne içilir', 'What to eat and drink', 'Was essen', 'Qué comer', 'Что попробовать', 'O que comer'),
       render: () => (
         <div className="vz-stack">
           <div className="vz-grid">
-            <Card title={l('Meşhur yemekler', 'Famous dishes', 'Berühmte Gerichte', 'Platos', 'Блюда')} icon="food"><Bullets items={enc.gastronomy.famousDishes} /></Card>
-            <Card title={l('Sokak lezzetleri & tatlılar', 'Street food & desserts', 'Streetfood & Desserts', 'Comida callejera', 'Уличная еда')} icon="star"><Bullets items={enc.gastronomy.streetFoodAndDesserts} /></Card>
-            <Card title={l('İçecekler', 'Drinks', 'Getränke', 'Bebidas', 'Напитки')} icon="drop"><Bullets items={enc.gastronomy.traditionalDrinks} /></Card>
+            <Card title={l('Meşhur yemekler', 'Famous dishes', 'Berühmte Gerichte', 'Platos', 'Блюда', 'Pratos')} icon="food"><Bullets items={enc.gastronomy.famousDishes} /></Card>
+            <Card title={l('Sokak lezzetleri & tatlılar', 'Street food & desserts', 'Streetfood & Desserts', 'Comida callejera', 'Уличная еда', 'Comida de rua')} icon="star"><Bullets items={enc.gastronomy.streetFoodAndDesserts} /></Card>
+            <Card title={l('İçecekler', 'Drinks', 'Getränke', 'Bebidas', 'Напитки', 'Bebidas')} icon="drop"><Bullets items={enc.gastronomy.traditionalDrinks} /></Card>
           </div>
           {itin.signatureGastronomy?.diningAdvice && <div className="vz-note"><Icon name="info" size={18} duo={false} /><span>{itin.signatureGastronomy.diningAdvice}</span></div>}
         </div>
@@ -613,16 +613,16 @@ const CountryPageInner: React.FC<Props & { data: CountryBundle }> = ({ code, pas
     },
     {
       id: 'lang', icon: 'book',
-      title: l('Dil & tarih', 'Language & history', 'Sprache & Geschichte', 'Idioma e historia', 'Язык и история'),
-      desc: l('İşe yarar kelimeler', 'Useful phrases', 'Nützliche Sätze', 'Frases útiles', 'Полезные фразы'),
+      title: l('Dil & tarih', 'Language & history', 'Sprache & Geschichte', 'Idioma e historia', 'Язык и история', 'Idioma e história'),
+      desc: l('İşe yarar kelimeler', 'Useful phrases', 'Nützliche Sätze', 'Frases útiles', 'Полезные фразы', 'Frases úteis'),
       tabs: [
         {
-          id: 'phr', label: l('Kelimeler', 'Phrases', 'Sätze', 'Frases', 'Фразы'),
+          id: 'phr', label: l('Kelimeler', 'Phrases', 'Sätze', 'Frases', 'Фразы', 'Frases'),
           render: () => (
             <div className="vz-stack">
               <div className="vz-stats">
-                <Stat value={enc.language.officialLanguages} label={l('Resmî dil', 'Official language', 'Amtssprache', 'Idioma oficial', 'Язык')} icon="lang" />
-                <Stat value={enc.language.englishProficiency} label={l('İngilizce bilinirliği', 'English level', 'Englisch', 'Nivel de inglés', 'Английский')} icon="people" />
+                <Stat value={enc.language.officialLanguages} label={l('Resmî dil', 'Official language', 'Amtssprache', 'Idioma oficial', 'Язык', 'Idioma oficial')} icon="lang" />
+                <Stat value={enc.language.englishProficiency} label={l('İngilizce bilinirliği', 'English level', 'Englisch', 'Nivel de inglés', 'Английский', 'Nível de inglês')} icon="people" />
               </div>
               {enc.language.phrases.length > 0 ? (
                 <div className="vz-list">
@@ -637,13 +637,13 @@ const CountryPageInner: React.FC<Props & { data: CountryBundle }> = ({ code, pas
                   ))}
                 </div>
               ) : (
-                <Empty icon="book" title={l('Bu ülke için kelime listesi hazırlanıyor', 'Phrase list coming soon', 'Bald verfügbar', 'Próximamente', 'Скоро')} />
+                <Empty icon="book" title={l('Bu ülke için kelime listesi hazırlanıyor', 'Phrase list coming soon', 'Bald verfügbar', 'Próximamente', 'Скоро', 'Em breve')} />
               )}
             </div>
           )
         },
         {
-          id: 'hist', label: l('Kısa tarih', 'History', 'Geschichte', 'Historia', 'История'),
+          id: 'hist', label: l('Kısa tarih', 'History', 'Geschichte', 'Historia', 'История', 'História'),
           render: () => (
             <div className="vz-stack">
               <p>{enc.history.conciseHistory}</p>
@@ -656,68 +656,68 @@ const CountryPageInner: React.FC<Props & { data: CountryBundle }> = ({ code, pas
     nomad
       ? {
           id: 'work', icon: 'laptop',
-          title: l('Dijital göçebe', 'Digital nomads', 'Digitale Nomaden', 'Nómadas digitales', 'Цифровые кочевники'),
-          desc: l('Uzun kalış vizesi, maliyet, internet', 'Long-stay visa, costs, internet', 'Langzeitvisum, Kosten, Internet', 'Visado largo, costes, internet', 'Долгая виза, расходы, интернет'),
+          title: l('Dijital göçebe', 'Digital nomads', 'Digitale Nomaden', 'Nómadas digitales', 'Цифровые кочевники', 'Nômades digitais'),
+          desc: l('Uzun kalış vizesi, maliyet, internet', 'Long-stay visa, costs, internet', 'Langzeitvisum, Kosten, Internet', 'Visado largo, costes, internet', 'Долгая виза, расходы, интернет', 'Visto de longa duração, custos, internet'),
           tabs: [
-            { id: 'stay', label: l('Uzun kalış', 'Long stay', 'Langer Aufenthalt', 'Estancia larga', 'Долгое пребывание'), render: () => <NomadInfo hub={nomad} /> },
-            { id: 'hours', label: l('Çalışma saati', 'Work hours', 'Arbeitszeit', 'Horario', 'Рабочие часы'), render: () => <WorkSim tz={tz} city={geog.capital || name} /> }
+            { id: 'stay', label: l('Uzun kalış', 'Long stay', 'Langer Aufenthalt', 'Estancia larga', 'Долгое пребывание', 'Estadia longa'), render: () => <NomadInfo hub={nomad} /> },
+            { id: 'hours', label: l('Çalışma saati', 'Work hours', 'Arbeitszeit', 'Horario', 'Рабочие часы', 'Horário'), render: () => <WorkSim tz={tz} city={geog.capital || name} /> }
           ]
         }
       : {
           id: 'work', icon: 'laptop',
-          title: l('Uzaktan çalışma saati', 'Remote work hours', 'Remote-Arbeitszeit', 'Horario remoto', 'Удалённая работа'),
-          desc: l('Şirketinin mesaisi orada kaçta?', 'Your company hours, local time', 'Firmenzeit vor Ort', 'Tu horario allí', 'Рабочие часы там'),
+          title: l('Uzaktan çalışma saati', 'Remote work hours', 'Remote-Arbeitszeit', 'Horario remoto', 'Удалённая работа', 'Horário remoto'),
+          desc: l('Şirketinin mesaisi orada kaçta?', 'Your company hours, local time', 'Firmenzeit vor Ort', 'Tu horario allí', 'Рабочие часы там', 'Seu horário por lá'),
           render: () => <WorkSim tz={tz} city={geog.capital || name} />
         },
     {
       id: 'economy', icon: 'chart',
-      title: l('Ekonomi & ünlüler', 'Economy & people', 'Wirtschaft & Persönlichkeiten', 'Economía y personas', 'Экономика и люди'),
-      desc: l('Ülkeyi tanı', 'Get to know it', 'Land kennenlernen', 'Conoce el país', 'О стране'),
+      title: l('Ekonomi & ünlüler', 'Economy & people', 'Wirtschaft & Persönlichkeiten', 'Economía y personas', 'Экономика и люди', 'Economia e pessoas'),
+      desc: l('Ülkeyi tanı', 'Get to know it', 'Land kennenlernen', 'Conoce el país', 'О стране', 'Conheça o país'),
       render: () => (
         <div className="vz-stack">
           <p>{enc.economy.economicPillars}</p>
           <div className="vz-grid two">
-            <Card title={l('Güçlü olduğu alanlar', 'Strong sectors', 'Starke Branchen', 'Sectores fuertes', 'Сильные отрасли')} icon="chart"><Tags items={enc.achievements.strongSectors} /></Card>
-            <Card title={l('Dünyaca ünlüleri', 'Famous people', 'Berühmtheiten', 'Personajes', 'Знаменитости')} icon="star"><Bullets items={enc.achievements.famousFigures} /></Card>
+            <Card title={l('Güçlü olduğu alanlar', 'Strong sectors', 'Starke Branchen', 'Sectores fuertes', 'Сильные отрасли', 'Setores fortes')} icon="chart"><Tags items={enc.achievements.strongSectors} /></Card>
+            <Card title={l('Dünyaca ünlüleri', 'Famous people', 'Berühmtheiten', 'Personajes', 'Знаменитости', 'Personalidades')} icon="star"><Bullets items={enc.achievements.famousFigures} /></Card>
           </div>
         </div>
       )
     },
     {
       id: 'sos', icon: 'sos',
-      title: l('Acil numaralar', 'Emergency numbers', 'Notrufnummern', 'Emergencias', 'Экстренные номера'),
-      desc: l('Polis, ambulans, konsolosluk', 'Police, ambulance, consulate', 'Polizei, Rettung, Konsulat', 'Policía, ambulancia', 'Полиция, скорая'),
+      title: l('Acil numaralar', 'Emergency numbers', 'Notrufnummern', 'Emergencias', 'Экстренные номера', 'Emergências'),
+      desc: l('Polis, ambulans, konsolosluk', 'Police, ambulance, consulate', 'Polizei, Rettung, Konsulat', 'Policía, ambulancia', 'Полиция, скорая', 'Polícia, ambulância'),
       badge: emergency.general || emergency.police || undefined,
       render: () => (
         <div className="vz-stack">
           <List>
-            <NumRow label={l('Genel acil', 'General emergency', 'Allgemeiner Notruf', 'Emergencia general', 'Общий номер')} num={emergency.general} icon="sos" />
-            <NumRow label={l('Polis', 'Police', 'Polizei', 'Policía', 'Полиция')} num={emergency.police} icon="shield" />
-            <NumRow label={l('Ambulans', 'Ambulance', 'Rettung', 'Ambulancia', 'Скорая')} num={emergency.ambulance} icon="heart" />
-            <NumRow label={l('İtfaiye', 'Fire', 'Feuerwehr', 'Bomberos', 'Пожарные')} num={emergency.fire} icon="alert" />
-            <NumRow label={l('Turist polisi', 'Tourist police', 'Touristenpolizei', 'Policía turística', 'Туристическая полиция')} num={emergency.tourist} icon="people" />
+            <NumRow label={l('Genel acil', 'General emergency', 'Allgemeiner Notruf', 'Emergencia general', 'Общий номер', 'Emergência geral')} num={emergency.general} icon="sos" />
+            <NumRow label={l('Polis', 'Police', 'Polizei', 'Policía', 'Полиция', 'Polícia')} num={emergency.police} icon="shield" />
+            <NumRow label={l('Ambulans', 'Ambulance', 'Rettung', 'Ambulancia', 'Скорая', 'Ambulância')} num={emergency.ambulance} icon="heart" />
+            <NumRow label={l('İtfaiye', 'Fire', 'Feuerwehr', 'Bomberos', 'Пожарные', 'Bombeiros')} num={emergency.fire} icon="alert" />
+            <NumRow label={l('Turist polisi', 'Tourist police', 'Touristenpolizei', 'Policía turística', 'Туристическая полиция', 'Polícia turística')} num={emergency.tourist} icon="people" />
           </List>
           <Card tone="sea" icon="phone" eyebrow={pick3(consular.ministryName, language)} title={pick3(consular.crisisCenterTitle, language)}>
             <div className="vz-actions">
-              {consular.hotline247 && <a className="vz-btn vz-btn-primary sm" href={`tel:${consular.hotline247.replace(/[^\d+]/g, '')}`}>{l('7/24 hat', '24/7 line', '24/7', '24/7', '24/7')}: {consular.hotline247}</a>}
-              {consular.officialPortalUrl && <LinkBtn small href={consular.officialPortalUrl}>{consular.officialPortalName || l('Resmî site', 'Official site', 'Offizielle Seite', 'Sitio oficial', 'Сайт')}</LinkBtn>}
+              {consular.hotline247 && <a className="vz-btn vz-btn-primary sm" href={`tel:${consular.hotline247.replace(/[^\d+]/g, '')}`}>{l('7/24 hat', '24/7 line', '24/7', '24/7', '24/7', '24/7')}: {consular.hotline247}</a>}
+              {consular.officialPortalUrl && <LinkBtn small href={consular.officialPortalUrl}>{consular.officialPortalName || l('Resmî site', 'Official site', 'Offizielle Seite', 'Sitio oficial', 'Сайт', 'Site oficial')}</LinkBtn>}
             </div>
-            <p className="vz-muted">{l('Pasaportunu kaybedersen:', 'If you lose your passport:', 'Bei Passverlust:', 'Si pierdes el pasaporte:', 'При утере паспорта:')} {pick3(consular.emergencyDocName, language)} ({pick3(consular.emergencyDocValidity, language)})</p>
+            <p className="vz-muted">{l('Pasaportunu kaybedersen:', 'If you lose your passport:', 'Bei Passverlust:', 'Si pierdes el pasaporte:', 'При утере паспорта:', 'Se você perder o passaporte:')} {pick3(consular.emergencyDocName, language)} ({pick3(consular.emergencyDocValidity, language)})</p>
           </Card>
-          <Btn variant="soft" icon="sos" onClick={onOpenSos}>{l('Acil durum rehberinin tamamı', 'Full emergency guide', 'Kompletter Notfallguide', 'Guía completa', 'Полный гид')}</Btn>
+          <Btn variant="soft" icon="sos" onClick={onOpenSos}>{l('Acil durum rehberinin tamamı', 'Full emergency guide', 'Kompletter Notfallguide', 'Guía completa', 'Полный гид', 'Guia completo')}</Btn>
         </div>
       )
     },
     {
       id: 'apps', icon: 'phone', isNew: true,
-      title: l('Faydalı uygulamalar', 'Useful apps', 'Nützliche Apps', 'Apps útiles', 'Полезные приложения'),
-      desc: l('Çeviri, taksi, ödeme, harita', 'Translate, taxi, pay, maps', 'Übersetzen, Taxi, Zahlen', 'Traducir, taxi, pagar', 'Перевод, такси, оплата'),
+      title: l('Faydalı uygulamalar', 'Useful apps', 'Nützliche Apps', 'Apps útiles', 'Полезные приложения', 'Apps úteis'),
+      desc: l('Çeviri, taksi, ödeme, harita', 'Translate, taxi, pay, maps', 'Übersetzen, Taxi, Zahlen', 'Traducir, taxi, pagar', 'Перевод, такси, оплата', 'Traduzir, táxi, pagar'),
       render: () => {
         const local = verified?.local_apps.filter((a) => a.available_in_country) || [];
         return (
           <div className="vz-stack">
             {local.length > 0 && (
-              <Card title={l(`${name}'da yerel olarak kullanılanlar`, `Used locally in ${name}`, `Lokal genutzt in ${name}`, `Usadas en ${name}`, `Местные ${ruIn(name, 'loc')}`)} icon="check" tone="sea">
+              <Card title={l(`${name}'da yerel olarak kullanılanlar`, `Used locally in ${name}`, `Lokal genutzt in ${name}`, `Usadas en ${name}`, `Местные ${ruIn(name, 'loc')}`, `Usados em ${name}`)} icon="check" tone="sea">
                 <Tags items={local.map((a) => a.name)} />
               </Card>
             )}
@@ -739,8 +739,8 @@ const CountryPageInner: React.FC<Props & { data: CountryBundle }> = ({ code, pas
     },
     {
       id: 'partners', icon: 'bed', isNew: true,
-      title: l('Uçuş, otel, tur, eSIM', 'Flights, hotels, tours, eSIM', 'Flüge, Hotels, Touren, eSIM', 'Vuelos, hoteles, tours, eSIM', 'Авиа, отели, туры, eSIM'),
-      desc: l('Güvenilir iş ortakları', 'Trusted partners', 'Partner', 'Socios', 'Партнёры'),
+      title: l('Uçuş, otel, tur, eSIM', 'Flights, hotels, tours, eSIM', 'Flüge, Hotels, Touren, eSIM', 'Vuelos, hoteles, tours, eSIM', 'Авиа, отели, туры, eSIM', 'Voos, hotéis, passeios, eSIM'),
+      desc: l('Güvenilir iş ortakları', 'Trusted partners', 'Partner', 'Socios', 'Партнёры', 'Parceiros'),
       render: () => (
         <div className="vz-stack">
           <div className="vz-grid">
@@ -751,7 +751,7 @@ const CountryPageInner: React.FC<Props & { data: CountryBundle }> = ({ code, pas
               </Card>
             ))}
           </div>
-          <p className="vz-muted" style={{ fontSize: 12 }}>{l('Bu bağlantılar iş ortağı bağlantısıdır; senin için fiyat değişmez, Vizamigo’nun ücretsiz kalmasına yardım eder.', 'These are partner links; your price stays the same and it keeps Vizamigo free.', 'Partnerlinks; der Preis bleibt gleich.', 'Enlaces de socios; el precio no cambia.', 'Партнёрские ссылки; цена не меняется.')}</p>
+          <p className="vz-muted" style={{ fontSize: 12 }}>{l('Bu bağlantılar iş ortağı bağlantısıdır; senin için fiyat değişmez, Vizamigo’nun ücretsiz kalmasına yardım eder.', 'These are partner links; your price stays the same and it keeps Vizamigo free.', 'Partnerlinks; der Preis bleibt gleich.', 'Enlaces de socios; el precio no cambia.', 'Партнёрские ссылки; цена не меняется.', 'Links de parceiros; o preço não muda.')}</p>
         </div>
       )
     }
@@ -763,14 +763,14 @@ const CountryPageInner: React.FC<Props & { data: CountryBundle }> = ({ code, pas
   const answer = generateDirectAnswerSnippet(name, passName, item?.cat || 'visa', stayText, !!item?.id, lang);
   const h1Rest = getCountryNaturalH1(name, lang).replace(name, '').replace(/^[\s,]+|[\s,]+$/g, '');
   const faq: { q: string; a: string }[] = [
-    { q: l(`${passName} vatandaşları ${trDat(name)} vizesiz gidebilir mi?`, `Do ${passName} citizens need a visa for ${name}?`, `Brauchen Staatsbürger aus ${passName} ein Visum für ${name}?`, `¿Necesitan visado los ciudadanos de ${passName} para ${name}?`, `Нужна ли виза ${ruIn(name, 'acc')} гражданам ${ruOf(passName)}?`), a: answer },
-    { q: l(`${trLoc(name)} ne kadar kalabilirim?`, `How long can I stay in ${name}?`, `Wie lange darf ich in ${name} bleiben?`, `¿Cuánto tiempo puedo quedarme en ${name}?`, `Сколько можно находиться ${ruIn(name, 'loc')}?`), a: days ? l(`${passName} pasaportuyla tek seferde ${stayText} kalabilirsin.`, `With ${enArticle(passName)} ${passName} passport you can stay ${stayText} per visit.`, `Mit diesem Pass bis zu ${stayText} pro Aufenthalt.`, `Con este pasaporte hasta ${stayText} por visita.`, `С этим паспортом до ${stayText} за визит.`) : stayText },
-    { q: l(`${trDat(name)} gitmek için en iyi zaman ne?`, `When is the best time to visit ${name}?`, `Wann ist die beste Reisezeit für ${name}?`, `¿Cuándo es mejor visitar ${name}?`, `Когда лучше ехать ${ruIn(name, 'acc')}?`), a: enc.tourism.bestSeasons || insights.bestMonths },
-    { q: l(`${trLoc(name)} hangi priz kullanılıyor?`, `Which plug type does ${name} use?`, `Welcher Steckertyp gilt in ${name}?`, `¿Qué enchufe se usa en ${name}?`, `Какие розетки ${ruIn(name, 'loc')}?`), a: `${intel.plugs.types.join(', ')} · ${intel.plugs.voltage} ${intel.plugs.frequency}. ${intel.plugs.socketDesc}` },
-    { q: l(`${trLoc(name)} acil durum numarası kaç?`, `What is the emergency number in ${name}?`, `Wie lautet die Notrufnummer in ${name}?`, `¿Cuál es el número de emergencias en ${name}?`, `Какой номер экстренных служб ${ruIn(name, 'loc')}?`), a: [emergency.general && `${l('Genel', 'General', 'Allgemein', 'General', 'Общий')}: ${emergency.general}`, emergency.police && `${l('Polis', 'Police', 'Polizei', 'Policía', 'Полиция')}: ${emergency.police}`, emergency.ambulance && `${l('Ambulans', 'Ambulance', 'Rettung', 'Ambulancia', 'Скорая')}: ${emergency.ambulance}`].filter(Boolean).join(' · ') },
-    { q: l(`${trLoc(name)} musluk suyu içilir mi?`, `Is tap water safe to drink in ${name}?`, `Ist Leitungswasser in ${name} trinkbar?`, `¿Se puede beber agua del grifo en ${name}?`, `Можно ли пить воду из-под крана ${ruIn(name, 'loc')}?`), a: intel.waterAndHealth.tapWaterDesc },
-    { q: l(`${trLoc(name)} bahşiş veriliyor mu?`, `Should I tip in ${name}?`, `Gibt man in ${name} Trinkgeld?`, `¿Se deja propina en ${name}?`, `Принято ли оставлять чаевые ${ruIn(name, 'loc')}?`), a: `${intel.tipping.custom}${intel.tipping.note ? ' ' + intel.tipping.note : ''}` },
-    ...getExtraFaq(code, language, passport).map((f) => ({ q: f.q, a: f.h ? `${f.a} (${l('Kaynak', 'Source', 'Quelle', 'Fuente', 'Источник')}: ${f.h})` : f.a })),
+    { q: l(`${passName} vatandaşları ${trDat(name)} vizesiz gidebilir mi?`, `Do ${passName} citizens need a visa for ${name}?`, `Brauchen Staatsbürger aus ${passName} ein Visum für ${name}?`, `¿Necesitan visado los ciudadanos de ${passName} para ${name}?`, `Нужна ли виза ${ruIn(name, 'acc')} гражданам ${ruOf(passName)}?`, `Cidadãos de ${passName} precisam de visto para ${name}?`), a: answer },
+    { q: l(`${trLoc(name)} ne kadar kalabilirim?`, `How long can I stay in ${name}?`, `Wie lange darf ich in ${name} bleiben?`, `¿Cuánto tiempo puedo quedarme en ${name}?`, `Сколько можно находиться ${ruIn(name, 'loc')}?`, `Quanto tempo posso ficar em ${name}?`), a: days ? l(`${passName} pasaportuyla tek seferde ${stayText} kalabilirsin.`, `With ${enArticle(passName)} ${passName} passport you can stay ${stayText} per visit.`, `Mit diesem Pass bis zu ${stayText} pro Aufenthalt.`, `Con este pasaporte hasta ${stayText} por visita.`, `С этим паспортом до ${stayText} за визит.`, `Com este passaporte, até ${stayText} por visita.`) : stayText },
+    { q: l(`${trDat(name)} gitmek için en iyi zaman ne?`, `When is the best time to visit ${name}?`, `Wann ist die beste Reisezeit für ${name}?`, `¿Cuándo es mejor visitar ${name}?`, `Когда лучше ехать ${ruIn(name, 'acc')}?`, `Qual a melhor época para visitar ${name}?`), a: enc.tourism.bestSeasons || insights.bestMonths },
+    { q: l(`${trLoc(name)} hangi priz kullanılıyor?`, `Which plug type does ${name} use?`, `Welcher Steckertyp gilt in ${name}?`, `¿Qué enchufe se usa en ${name}?`, `Какие розетки ${ruIn(name, 'loc')}?`, `Qual é o tipo de tomada em ${name}?`), a: `${intel.plugs.types.join(', ')} · ${intel.plugs.voltage} ${intel.plugs.frequency}. ${intel.plugs.socketDesc}` },
+    { q: l(`${trLoc(name)} acil durum numarası kaç?`, `What is the emergency number in ${name}?`, `Wie lautet die Notrufnummer in ${name}?`, `¿Cuál es el número de emergencias en ${name}?`, `Какой номер экстренных служб ${ruIn(name, 'loc')}?`, `Qual é o número de emergência em ${name}?`), a: [emergency.general && `${l('Genel', 'General', 'Allgemein', 'General', 'Общий', 'Geral')}: ${emergency.general}`, emergency.police && `${l('Polis', 'Police', 'Polizei', 'Policía', 'Полиция', 'Polícia')}: ${emergency.police}`, emergency.ambulance && `${l('Ambulans', 'Ambulance', 'Rettung', 'Ambulancia', 'Скорая', 'Ambulância')}: ${emergency.ambulance}`].filter(Boolean).join(' · ') },
+    { q: l(`${trLoc(name)} musluk suyu içilir mi?`, `Is tap water safe to drink in ${name}?`, `Ist Leitungswasser in ${name} trinkbar?`, `¿Se puede beber agua del grifo en ${name}?`, `Можно ли пить воду из-под крана ${ruIn(name, 'loc')}?`, `Dá para beber água da torneira em ${name}?`), a: intel.waterAndHealth.tapWaterDesc },
+    { q: l(`${trLoc(name)} bahşiş veriliyor mu?`, `Should I tip in ${name}?`, `Gibt man in ${name} Trinkgeld?`, `¿Se deja propina en ${name}?`, `Принято ли оставлять чаевые ${ruIn(name, 'loc')}?`, `É costume dar gorjeta em ${name}?`), a: `${intel.tipping.custom}${intel.tipping.note ? ' ' + intel.tipping.note : ''}` },
+    ...getExtraFaq(code, language, passport).map((f) => ({ q: f.q, a: f.h ? `${f.a} (${l('Kaynak', 'Source', 'Quelle', 'Fuente', 'Источник', 'Fonte')}: ${f.h})` : f.a })),
     ...getPassportFaq(code, passport, language)
   ].filter((f) => f.a);
   const similar = useMemo(() => {
@@ -784,14 +784,14 @@ const CountryPageInner: React.FC<Props & { data: CountryBundle }> = ({ code, pas
     <div className="vz-page">
       {/* yalnızca yazdırırken görünür: tek sayfalık seyahat dosyası */}
       <div className="vz-print" aria-hidden="true">
-        <p className="vz-print-h">{name} · {l('Seyahat dosyası', 'Travel brief', 'Reiseübersicht', 'Dossier de viaje', 'Памятка')}</p>
+        <p className="vz-print-h">{name} · {l('Seyahat dosyası', 'Travel brief', 'Reiseübersicht', 'Dossier de viaje', 'Памятка', 'Dossiê de viagem')}</p>
         <p><b>{getCountryName(passport, language)}:</b> {answer}</p>
         <table>
           <tbody>
-            <tr><th>{l('Başkent', 'Capital', 'Hauptstadt', 'Capital', 'Столица')}</th><td>{geog.capital}</td><th>{l('Para birimi', 'Currency', 'Währung', 'Moneda', 'Валюта')}</th><td>{destCur}</td></tr>
-            <tr><th>{l('Priz', 'Plugs', 'Stecker', 'Enchufes', 'Розетки')}</th><td>{intel.plugs.types.join(', ')} · {intel.plugs.voltage}</td><th>{l('En iyi aylar', 'Best months', 'Beste Monate', 'Mejores meses', 'Лучшие месяцы')}</th><td>{insights.bestMonths}</td></tr>
-            <tr><th>{l('Polis', 'Police', 'Polizei', 'Policía', 'Полиция')}</th><td>{emergency.police}</td><th>{l('Ambulans', 'Ambulance', 'Rettung', 'Ambulancia', 'Скорая')}</th><td>{emergency.ambulance}</td></tr>
-            <tr><th>{l('Günlük bütçe', 'Daily budget', 'Tagesbudget', 'Presupuesto', 'Бюджет')}</th><td>{usd(insights.livingCosts.dailyBudgetBackpackerUsd)} – {usd(insights.livingCosts.dailyBudgetMidrangeUsd)}</td><th>{l('Mobil internet', 'Mobile data', 'Mobil', 'Móvil', 'Интернет')}</th><td>{insights.internet.mobileSpeedMbps} Mbps</td></tr>
+            <tr><th>{l('Başkent', 'Capital', 'Hauptstadt', 'Capital', 'Столица', 'Capital')}</th><td>{geog.capital}</td><th>{l('Para birimi', 'Currency', 'Währung', 'Moneda', 'Валюта', 'Moeda')}</th><td>{destCur}</td></tr>
+            <tr><th>{l('Priz', 'Plugs', 'Stecker', 'Enchufes', 'Розетки', 'Tomadas')}</th><td>{intel.plugs.types.join(', ')} · {intel.plugs.voltage}</td><th>{l('En iyi aylar', 'Best months', 'Beste Monate', 'Mejores meses', 'Лучшие месяцы', 'Melhores meses')}</th><td>{insights.bestMonths}</td></tr>
+            <tr><th>{l('Polis', 'Police', 'Polizei', 'Policía', 'Полиция', 'Polícia')}</th><td>{emergency.police}</td><th>{l('Ambulans', 'Ambulance', 'Rettung', 'Ambulancia', 'Скорая', 'Ambulância')}</th><td>{emergency.ambulance}</td></tr>
+            <tr><th>{l('Günlük bütçe', 'Daily budget', 'Tagesbudget', 'Presupuesto', 'Бюджет', 'Orçamento')}</th><td>{usd(insights.livingCosts.dailyBudgetBackpackerUsd)} – {usd(insights.livingCosts.dailyBudgetMidrangeUsd)}</td><th>{l('Mobil internet', 'Mobile data', 'Mobil', 'Móvil', 'Интернет', 'Celular')}</th><td>{insights.internet.mobileSpeedMbps} Mbps</td></tr>
           </tbody>
         </table>
         <h2>{itin.routeName}</h2>
@@ -803,24 +803,24 @@ const CountryPageInner: React.FC<Props & { data: CountryBundle }> = ({ code, pas
       <div className="vz-wrap vz-page-body">
         <div className="vz-summary" style={{ marginTop: -44 }}>
           <div className="vz-cfacts">
-            <Stat value={timeStr} label={l(`${geog.capital || name} saati`, `Time in ${geog.capital || name}`, `Uhrzeit ${geog.capital || name}`, `Hora en ${geog.capital || name}`, `Время: ${geog.capital || name}`)} icon="clock" />
-            <Stat value={w ? `${w.tempC}°` : '—'} label={wInfo ? `${wInfo[language] || wInfo.en} · ${l('hissedilen', 'feels', 'gefühlt', 'sensación', 'ощущ.')} ${w?.feelsLikeC}°` : l('Hava durumu', 'Weather', 'Wetter', 'Tiempo', 'Погода')} icon="sun" tone="sun" />
+            <Stat value={timeStr} label={l(`${geog.capital || name} saati`, `Time in ${geog.capital || name}`, `Uhrzeit ${geog.capital || name}`, `Hora en ${geog.capital || name}`, `Время: ${geog.capital || name}`, `Hora em ${geog.capital || name}`)} icon="clock" />
+            <Stat value={w ? `${w.tempC}°` : '—'} label={wInfo ? `${wInfo[language] || wInfo.en} · ${l('hissedilen', 'feels', 'gefühlt', 'sensación', 'ощущ.', 'sensação')} ${w?.feelsLikeC}°` : l('Hava durumu', 'Weather', 'Wetter', 'Tiempo', 'Погода', 'Clima')} icon="sun" tone="sun" />
             <Stat value={fmtPair(GLOBAL_CURRENCIES[passport]?.symbol || homeCur, GLOBAL_CURRENCIES[code]?.symbol || destCur, rate, language)} label={`${homeCur} → ${destCur}`} icon="fx" />
-            <Stat value={(isNew ? (insights.bestMonths || '').split(/[(;·]/)[0].trim() : insights.bestMonths) || '—'} label={l('En iyi aylar', 'Best months', 'Beste Monate', 'Mejores meses', 'Лучшие месяцы')} icon="cal" tone="ok" />
+            <Stat value={(isNew ? (insights.bestMonths || '').split(/[(;·]/)[0].trim() : insights.bestMonths) || '—'} label={l('En iyi aylar', 'Best months', 'Beste Monate', 'Mejores meses', 'Лучшие месяцы', 'Melhores meses')} icon="cal" tone="ok" />
           </div>
         </div>
         {isNew && <TripBar passport={passport} trip={trip} setTrip={setTrip} onOpenPassport={onOpenPassport} />}
 
-        <section className="vz-tldr" aria-label={l('Kısa cevap', 'Quick answer', 'Kurzantwort', 'Respuesta rápida', 'Коротко')}>
+        <section className="vz-tldr" aria-label={l('Kısa cevap', 'Quick answer', 'Kurzantwort', 'Respuesta rápida', 'Коротко', 'Resposta rápida')}>
           <span className={`vz-ic tone-${passport === code ? 'ok' : visaTone(item)}`}><Icon name={passport !== code && visaTone(item) === 'warn' ? 'doc' : 'check'} size={22} /></span>
           <div className="vz-stack" style={{ gap: 6 }}>
-            <b>{l(`${getCountryName(passport, language)} pasaportuyla ${name}`, `${name} with ${enArticle(getCountryName(passport, language))} ${getCountryName(passport, language)} passport`, `${name} mit Pass: ${getCountryName(passport, language)}`, `${name} con pasaporte de ${getCountryName(passport, language)}`, `${name}: паспорт ${getCountryName(passport, language)}`)}</b>
-            <p>{passport === code ? l('Bu senin kendi ülken: vize gerekmez, kimlik kartın ya da pasaportunla girersin.', 'This is your own country: no visa needed, you enter with your ID card or passport.', 'Das ist dein eigenes Land: kein Visum nötig, Einreise mit Ausweis oder Pass.', 'Es tu propio país: no necesitas visado, entras con tu documento de identidad o pasaporte.', 'Это ваша страна: виза не нужна, въезд по удостоверению личности или паспорту.') : answer}</p>
-            {passport !== code && <span className="vz-muted" style={{ fontSize: 12.5 }}>{l('Vizamigo editörlüğü tarafından kontrol edildi', 'Checked by the Vizamigo editorial team', 'Geprüft von der Vizamigo-Redaktion', 'Revisado por el equipo editorial de Vizamigo', 'Проверено редакцией Vizamigo')} · <a href={`/${language}/info/standards`}>{l('Bilgileri nasıl doğruluyoruz', 'How we verify', 'So prüfen wir', 'Cómo verificamos', 'Как мы проверяем')}</a> · <a href={`/${language}/info/mission`}>{l('Hakkımızda', 'About us', 'Über uns', 'Sobre nosotros', 'О нас')}</a></span>}
+            <b>{l(`${getCountryName(passport, language)} pasaportuyla ${name}`, `${name} with ${enArticle(getCountryName(passport, language))} ${getCountryName(passport, language)} passport`, `${name} mit Pass: ${getCountryName(passport, language)}`, `${name} con pasaporte de ${getCountryName(passport, language)}`, `${name}: паспорт ${getCountryName(passport, language)}`, `${name} com passaporte de ${getCountryName(passport, language)}`)}</b>
+            <p>{passport === code ? l('Bu senin kendi ülken: vize gerekmez, kimlik kartın ya da pasaportunla girersin.', 'This is your own country: no visa needed, you enter with your ID card or passport.', 'Das ist dein eigenes Land: kein Visum nötig, Einreise mit Ausweis oder Pass.', 'Es tu propio país: no necesitas visado, entras con tu documento de identidad o pasaporte.', 'Это ваша страна: виза не нужна, въезд по удостоверению личности или паспорту.', 'É o seu próprio país: você não precisa de visto e entra com seu documento de identidade ou passaporte.') : answer}</p>
+            {passport !== code && <span className="vz-muted" style={{ fontSize: 12.5 }}>{l('Vizamigo editörlüğü tarafından kontrol edildi', 'Checked by the Vizamigo editorial team', 'Geprüft von der Vizamigo-Redaktion', 'Revisado por el equipo editorial de Vizamigo', 'Проверено редакцией Vizamigo', 'Revisado pela equipe editorial da Vizamigo')} · <a href={`/${language}/info/standards`}>{l('Bilgileri nasıl doğruluyoruz', 'How we verify', 'So prüfen wir', 'Cómo verificamos', 'Как мы проверяем', 'Como verificamos')}</a> · <a href={`/${language}/info/mission`}>{l('Hakkımızda', 'About us', 'Über uns', 'Sobre nosotros', 'О нас', 'Quem somos')}</a></span>}
             {passport !== code && (detail?.d ? (
-              <span className="vz-muted" style={{ fontSize: 12.5 }}>{l('Son kontrol', 'Last checked', 'Zuletzt geprüft', 'Última revisión', 'Проверено')}: {checkedLabel(detail.d, language)}{detail.h ? ` · ${sourceHost(detail.h, language)}` : ''}</span>
+              <span className="vz-muted" style={{ fontSize: 12.5 }}>{l('Son kontrol', 'Last checked', 'Zuletzt geprüft', 'Última revisión', 'Проверено', 'Última revisão')}: {checkedLabel(detail.d, language)}{detail.h ? ` · ${sourceHost(detail.h, language)}` : ''}</span>
             ) : (
-              <span className="vz-muted" style={{ fontSize: 12.5 }}>{l('Veri: Passport Index (Mart 2026) ve resmî kaynak kontrolleri (Kasım 2026). Vizamigo resmî bir kurum değildir; seyahatten önce resmî kaynaktan teyit et.', 'Data: Passport Index (March 2026) plus official-source checks (November 2026). Vizamigo is not a government site; confirm with the official source before travel.', 'Daten: Passport Index (März 2026) und Prüfung amtlicher Quellen (November 2026). Vor der Reise offiziell bestätigen.', 'Datos: Passport Index (marzo 2026) y revisión de fuentes oficiales (noviembre 2026). Confírmalo antes de viajar.', 'Данные: Passport Index (март 2026) и проверка официальных источников (ноябрь 2026). Уточните перед поездкой.')}</span>
+              <span className="vz-muted" style={{ fontSize: 12.5 }}>{l('Veri: Passport Index (Mart 2026) ve resmî kaynak kontrolleri (Kasım 2026). Vizamigo resmî bir kurum değildir; seyahatten önce resmî kaynaktan teyit et.', 'Data: Passport Index (March 2026) plus official-source checks (November 2026). Vizamigo is not a government site; confirm with the official source before travel.', 'Daten: Passport Index (März 2026) und Prüfung amtlicher Quellen (November 2026). Vor der Reise offiziell bestätigen.', 'Datos: Passport Index (marzo 2026) y revisión de fuentes oficiales (noviembre 2026). Confírmalo antes de viajar.', 'Данные: Passport Index (март 2026) и проверка официальных источников (ноябрь 2026). Уточните перед поездкой.', 'Dados: Passport Index (março de 2026) e revisão de fontes oficiais (novembro de 2026). Confirme antes de viajar.')}</span>
             ))}
           </div>
         </section>
@@ -859,8 +859,8 @@ const CountryPageInner: React.FC<Props & { data: CountryBundle }> = ({ code, pas
         })()}
         {isNew && (
           <div className="vz-cview" role="tablist" aria-label={name}>
-            <button type="button" role="tab" aria-selected={view === 'guide'} className={view === 'guide' ? 'on' : ''} onClick={() => pickView('guide')}><Icon name="book" size={18} duo={false} />{l('Ülke rehberi', 'Country guide', 'Länderguide', 'Guía del país', 'Гид по стране')}</button>
-            <button type="button" role="tab" aria-selected={view === 'book'} className={view === 'book' ? 'on' : ''} onClick={() => pickView('book')}><Icon name="bed" size={18} duo={false} />{l('Rezervasyon', 'Book your trip', 'Buchen', 'Reservar', 'Бронирование')}</button>
+            <button type="button" role="tab" aria-selected={view === 'guide'} className={view === 'guide' ? 'on' : ''} onClick={() => pickView('guide')}><Icon name="book" size={18} duo={false} />{l('Ülke rehberi', 'Country guide', 'Länderguide', 'Guía del país', 'Гид по стране', 'Guia do país')}</button>
+            <button type="button" role="tab" aria-selected={view === 'book'} className={view === 'book' ? 'on' : ''} onClick={() => pickView('book')}><Icon name="bed" size={18} duo={false} />{l('Rezervasyon', 'Book your trip', 'Buchen', 'Reservar', 'Бронирование', 'Reservar')}</button>
           </div>
         )}
         {isNew && view === 'book' && <BookingHub code={code} trip={trip} setTrip={setTrip} mustSee={enc.tourism?.mustSeePlaces || []} />}
@@ -872,13 +872,13 @@ const CountryPageInner: React.FC<Props & { data: CountryBundle }> = ({ code, pas
           const mine = pinnedPassport ? loadStoredPassport() : '';
           if (!others.length && !pinnedPassport) return null;
           return (
-            <nav className="vz-pp-links" aria-label={l('Diğer pasaportlar', 'Other passports', 'Andere Pässe', 'Otros pasaportes', 'Другие паспорта')}>
+            <nav className="vz-pp-links" aria-label={l('Diğer pasaportlar', 'Other passports', 'Andere Pässe', 'Otros pasaportes', 'Другие паспорта', 'Outros passaportes')}>
               {pinnedPassport && mine && mine !== pinnedPassport && mine !== code && (
                 <a className="vz-pp-mine" href={buildLocalizedPath(lg, 'explore', code)} onClick={(e) => { e.preventDefault(); onOpenCountry(code); }}>
-                  {l(`Bu sayfa ${getCountryName(pinnedPassport, language)} pasaportu için. Kendi pasaportunla (${getCountryName(mine, language)}) gör ›`, `This page is for ${getCountryName(pinnedPassport, language)} passports. See it for your passport (${getCountryName(mine, language)}) ›`, `Diese Seite gilt für Pässe aus ${getCountryName(pinnedPassport, language)}. Für deinen Pass (${getCountryName(mine, language)}) ansehen ›`, `Esta página es para pasaportes de ${getCountryName(pinnedPassport, language)}. Ver con tu pasaporte (${getCountryName(mine, language)}) ›`, `Эта страница для паспорта ${getCountryName(pinnedPassport, language)}. Посмотреть для вашего (${getCountryName(mine, language)}) ›`)}
+                  {l(`Bu sayfa ${getCountryName(pinnedPassport, language)} pasaportu için. Kendi pasaportunla (${getCountryName(mine, language)}) gör ›`, `This page is for ${getCountryName(pinnedPassport, language)} passports. See it for your passport (${getCountryName(mine, language)}) ›`, `Diese Seite gilt für Pässe aus ${getCountryName(pinnedPassport, language)}. Für deinen Pass (${getCountryName(mine, language)}) ansehen ›`, `Esta página es para pasaportes de ${getCountryName(pinnedPassport, language)}. Ver con tu pasaporte (${getCountryName(mine, language)}) ›`, `Эта страница для паспорта ${getCountryName(pinnedPassport, language)}. Посмотреть для вашего (${getCountryName(mine, language)}) ›`, `Esta página é para passaportes de ${getCountryName(pinnedPassport, language)}. Ver com o seu passaporte (${getCountryName(mine, language)}) ›`)}
                 </a>
               )}
-              {others.length > 0 && <span className="vz-muted">{l(`${name} giriş kuralları, diğer pasaportlar:`, `${name} entry rules for other passports:`, `${name}: Einreise für andere Pässe:`, `${name} con otros pasaportes:`, `${name} для других паспортов:`)}</span>}
+              {others.length > 0 && <span className="vz-muted">{l(`${name} giriş kuralları, diğer pasaportlar:`, `${name} entry rules for other passports:`, `${name}: Einreise für andere Pässe:`, `${name} con otros pasaportes:`, `${name} для других паспортов:`, `${name} com outros passaportes:`)}</span>}
               {others.map((p) => (
                 <a key={p} href={buildPassportPath(lg, code, p)}>
                   <Flag code={p} /> {getCountryName(p, language)}
@@ -893,7 +893,7 @@ const CountryPageInner: React.FC<Props & { data: CountryBundle }> = ({ code, pas
             {guidesForCountry(code, language, passport).filter((g) => (g !== 'greek_islands_visa' || passport === 'TR') && (g !== 'schengen_documents' || item?.cat === 'visa') && (g !== 'etias' || item?.cat !== 'visa') && (g !== 'us_visa' || item?.cat === 'visa') && (g !== 'esta' || item?.cat !== 'visa') && (g !== 'uk_eta' || item?.cat !== 'visa')).map((g) => (
               <a key={g} className="vz-row link" href={`/${language}/info/${g}`}>
                 <span className="vz-ic sm"><Icon name={GUIDE_META[g].icon as never} size={18} /></span>
-                <span className="vz-row-b"><span className="vz-row-t">{getGuide(g, language).title}</span><span className="vz-row-s">{l('Güncel rehber', 'Up-to-date guide', 'Aktueller Ratgeber', 'Guía actualizada', 'Актуальный гид')}</span></span>
+                <span className="vz-row-b"><span className="vz-row-t">{getGuide(g, language).title}</span><span className="vz-row-s">{l('Güncel rehber', 'Up-to-date guide', 'Aktueller Ratgeber', 'Guía actualizada', 'Актуальный гид', 'Guia atualizado')}</span></span>
                 <Icon name="next" size={18} duo={false} className="vz-row-go" />
               </a>
             ))}
@@ -901,30 +901,30 @@ const CountryPageInner: React.FC<Props & { data: CountryBundle }> = ({ code, pas
         )}
 
         <div className="vz-actions">
-          <Btn icon={added ? 'check' : 'plus'} onClick={addToRoute}>{added ? l('Rotana eklendi', 'Added to route', 'Zur Route hinzugefügt', 'Añadido', 'Добавлено') : l('Rotama ekle', 'Add to my route', 'Zur Route', 'Añadir a mi ruta', 'В маршрут')}</Btn>
+          <Btn icon={added ? 'check' : 'plus'} onClick={addToRoute}>{added ? l('Rotana eklendi', 'Added to route', 'Zur Route hinzugefügt', 'Añadido', 'Добавлено', 'Adicionado') : l('Rotama ekle', 'Add to my route', 'Zur Route', 'Añadir a mi ruta', 'В маршрут', 'Adicionar ao meu roteiro')}</Btn>
           <ShareMenu title={`${name} · Vizamigo`} text={`${name}: ${generateDirectAnswerSnippet(name, getCountryName(passport, language), item?.cat || 'visa', getStayDurationText(item?.v || '', item?.cat || 'visa', language as SupportedLanguage), !!item?.id, language as SupportedLanguage).split('. ')[0]}.`} />
-          <Btn variant="soft" icon="doc" onClick={() => window.print()}>{l('Yazdır', 'Print', 'Drucken', 'Imprimir', 'Печать')}</Btn>
-          <Btn variant="soft" icon="download" onClick={makePdf} disabled={pdfBusy}>{pdfBusy ? l('PDF hazırlanıyor…', 'Preparing PDF…', 'PDF wird erstellt…', 'Preparando PDF…', 'Готовим PDF…') : l('PDF indir', 'Download PDF', 'PDF herunterladen', 'Descargar PDF', 'Скачать PDF')}</Btn>
-          <Btn variant="ghost" icon="flag" onClick={() => onReport(code, name)}>{l('Hata bildir', 'Report an error', 'Fehler melden', 'Reportar', 'Сообщить')}</Btn>
+          <Btn variant="soft" icon="doc" onClick={() => window.print()}>{l('Yazdır', 'Print', 'Drucken', 'Imprimir', 'Печать', 'Imprimir')}</Btn>
+          <Btn variant="soft" icon="download" onClick={makePdf} disabled={pdfBusy}>{pdfBusy ? l('PDF hazırlanıyor…', 'Preparing PDF…', 'PDF wird erstellt…', 'Preparando PDF…', 'Готовим PDF…', 'Preparando o PDF…') : l('PDF indir', 'Download PDF', 'PDF herunterladen', 'Descargar PDF', 'Скачать PDF', 'Baixar PDF')}</Btn>
+          <Btn variant="ghost" icon="flag" onClick={() => onReport(code, name)}>{l('Hata bildir', 'Report an error', 'Fehler melden', 'Reportar', 'Сообщить', 'Reportar')}</Btn>
         </div>
         <FollowCountry code={code} name={name} passport={passport} />
 
         <section className="vz-home-sec">
           <SecHead
             eyebrow={name}
-            title={l('Bu ülke hakkında her şey', 'Everything about this country', 'Alles über dieses Land', 'Todo sobre este país', 'Всё о стране')}
-            sub={l('Kutucuğa dokun, içeriği hemen altında açılsın.', 'Tap a tile and it opens right below.', 'Kachel antippen, sie öffnet sich darunter.', 'Toca una tarjeta y se abre debajo.', 'Нажмите — откроется ниже.')}
+            title={l('Bu ülke hakkında her şey', 'Everything about this country', 'Alles über dieses Land', 'Todo sobre este país', 'Всё о стране', 'Tudo sobre este país')}
+            sub={l('Kutucuğa dokun, içeriği hemen altında açılsın.', 'Tap a tile and it opens right below.', 'Kachel antippen, sie öffnet sich darunter.', 'Toca una tarjeta y se abre debajo.', 'Нажмите — откроется ниже.', 'Toque em um cartão para abri-lo logo abaixo.')}
           />
           <TileGrid key={code} tiles={tiles} label={name} defaultOpen="visa" />
         </section>
 
-        <section className="vz-home-sec vz-cmap-sec" aria-label={l('Harita', 'Map', 'Karte', 'Mapa', 'Карта')}>
-          <SecHead eyebrow={l('Harita', 'Map', 'Karte', 'Mapa', 'Карта')} title={l(`${name} dünyanın neresinde?`, `Where is ${name}?`, `Wo liegt ${name}?`, `¿Dónde está ${name}?`, `Где находится ${name}?`)} />
+        <section className="vz-home-sec vz-cmap-sec" aria-label={l('Harita', 'Map', 'Karte', 'Mapa', 'Карта', 'Mapa')}>
+          <SecHead eyebrow={l('Harita', 'Map', 'Karte', 'Mapa', 'Карта', 'Mapa')} title={l(`${name} dünyanın neresinde?`, `Where is ${name}?`, `Wo liegt ${name}?`, `¿Dónde está ${name}?`, `Где находится ${name}?`, `Onde fica ${name}?`)} />
           <div className="vz-cmap">
             <CountryMap code={code} home={passport} />
             <div className="vz-stack" style={{ gap: 10 }}>
               <div className="vz-tags">{[geog.capital, ...geog.majorCities].filter((x, i, a) => x && a.indexOf(x) === i).slice(0, 6).map((c) => <span key={c}>{c}</span>)}</div>
-              {geo && <LinkBtn href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(getCountryName(code, 'en'))}`} small icon="map">{l('Google Haritalar’da aç', 'Open in Google Maps', 'In Google Maps öffnen', 'Abrir en Google Maps', 'Открыть в Google Maps')}</LinkBtn>}
+              {geo && <LinkBtn href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(getCountryName(code, 'en'))}`} small icon="map">{l('Google Haritalar’da aç', 'Open in Google Maps', 'In Google Maps öffnen', 'Abrir en Google Maps', 'Открыть в Google Maps', 'Abrir no Google Maps')}</LinkBtn>}
             </div>
           </div>
         </section>
@@ -933,7 +933,7 @@ const CountryPageInner: React.FC<Props & { data: CountryBundle }> = ({ code, pas
           </>
         )}
         <section className="vz-home-sec" aria-labelledby="vz-faq-h">
-          <SecHead eyebrow={l('Sık sorulanlar', 'FAQ', 'FAQ', 'Preguntas', 'Вопросы')} title={l(`${name} hakkında sık sorulan sorular`, `${name}: frequently asked questions`, `Häufige Fragen zu ${name}`, `Preguntas frecuentes sobre ${name}`, `Частые вопросы о ${name}`)} />
+          <SecHead eyebrow={l('Sık sorulanlar', 'FAQ', 'FAQ', 'Preguntas', 'Вопросы', 'Perguntas')} title={l(`${name} hakkında sık sorulan sorular`, `${name}: frequently asked questions`, `Häufige Fragen zu ${name}`, `Preguntas frecuentes sobre ${name}`, `Частые вопросы о ${name}`, `Perguntas frequentes sobre ${name}`)} />
           <div className="vz-faq" id="vz-faq-h">
             {faq.map((f, i) => (
               <details key={i} open={i === 0}>
@@ -945,7 +945,7 @@ const CountryPageInner: React.FC<Props & { data: CountryBundle }> = ({ code, pas
         </section>
         {similar.length > 0 && (
           <section className="vz-home-sec">
-            <SecHead eyebrow={l('İlham', 'Inspiration', 'Inspiration', 'Inspiración', 'Идеи')} title={l('Bunları da sevebilirsin', 'You might also like', 'Das könnte dir auch gefallen', 'También te puede gustar', 'Вам может понравиться')} />
+            <SecHead eyebrow={l('İlham', 'Inspiration', 'Inspiration', 'Inspiración', 'Идеи', 'Inspiração')} title={l('Bunları da sevebilirsin', 'You might also like', 'Das könnte dir auch gefallen', 'También te puede gustar', 'Вам может понравиться', 'Você também pode gostar')} />
             <div className="vz-cgrid">
               {similar.map((c) => <CountryCard key={c.c} code={c.c} item={c} onOpen={onOpenCountry} />)}
             </div>
@@ -992,7 +992,7 @@ const CountryMap: React.FC<{ code: string; home: string }> = ({ code, home }) =>
       height={340}
       zoom={4}
       selectedId={code}
-      ariaLabel={l(`${getCountryName(code, language)} haritada`, `${getCountryName(code, language)} on the map`, 'Karte', 'Mapa', 'Карта')}
+      ariaLabel={l(`${getCountryName(code, language)} haritada`, `${getCountryName(code, language)} on the map`, 'Karte', 'Mapa', 'Карта', 'Mapa')}
     />
   );
 };
@@ -1007,13 +1007,13 @@ const MultiFx: React.FC<{ destCur: string; homeCur: string }> = ({ destCur, home
   const fmt = (x: number) => new Intl.NumberFormat(language, { maximumFractionDigits: x >= 100 ? 0 : x >= 1 ? 2 : 4 }).format(x);
   if (!USD_RATES[destCur]) return null;
   return (
-    <Card title={l(`Kurlar (${destCur})`, `Exchange rates (${destCur})`, `Wechselkurse (${destCur})`, `Tipos de cambio (${destCur})`, `Курсы (${destCur})`)} icon="fx">
+    <Card title={l(`Kurlar (${destCur})`, `Exchange rates (${destCur})`, `Wechselkurse (${destCur})`, `Tipos de cambio (${destCur})`, `Курсы (${destCur})`, `Câmbio (${destCur})`)} icon="fx">
       <List>
         {list.map((c) => (
           <Row key={c} icon="coin" title={`1 ${c}`} right={<b>{fmt(getCrossRate(c, destCur))} {destCur}</b>} sub={`1 ${destCur} = ${fmt(getCrossRate(destCur, c))} ${c}`} />
         ))}
       </List>
-      <label className="vz-muted" htmlFor="vz-mfx" style={{ fontSize: 13 }}>{l('Başka bir para birimi ekle', 'Add another currency', 'Weitere Währung', 'Otra moneda', 'Другая валюта')}</label>
+      <label className="vz-muted" htmlFor="vz-mfx" style={{ fontSize: 13 }}>{l('Başka bir para birimi ekle', 'Add another currency', 'Weitere Währung', 'Otra moneda', 'Другая валюта', 'Outra moeda')}</label>
       <select id="vz-mfx" className="vz-select" value={pick} onChange={(e) => setPick(e.target.value)}>
         {Object.keys(USD_RATES).sort().map((c) => <option key={c} value={c}>{c}</option>)}
       </select>
@@ -1049,7 +1049,7 @@ const WorkSim: React.FC<{ tz: string | null; city: string }> = ({ tz, city }) =>
   const [hub, setHub] = useState('ist');
   const [start, setStart] = useState(9);
   const [len, setLen] = useState(8);
-  if (!tz) return <Empty icon="clock" title={l('Bu ülke için saat dilimi bulunamadı', 'No time zone found for this country', 'Keine Zeitzone', 'Sin zona horaria', 'Нет часового пояса')} />;
+  if (!tz) return <Empty icon="clock" title={l('Bu ülke için saat dilimi bulunamadı', 'No time zone found for this country', 'Keine Zeitzone', 'Sin zona horaria', 'Нет часового пояса', 'Sem fuso horário')} />;
   const h = WORK_HUBS.find((x) => x.id === hub)!;
   const diff = tzOffsetMin(tz) - tzOffsetMin(h.tz);
   const a = start * 60 + diff;
@@ -1061,25 +1061,25 @@ const WorkSim: React.FC<{ tz: string | null; city: string }> = ({ tz, city }) =>
   return (
     <div className="vz-stack">
       <div className="vz-formgrid">
-        <Field label={l('Şirketin olduğu yer', 'Where your company is', 'Firmensitz', 'Dónde está tu empresa', 'Где компания')} htmlFor="vz-ws-h">
+        <Field label={l('Şirketin olduğu yer', 'Where your company is', 'Firmensitz', 'Dónde está tu empresa', 'Где компания', 'Onde fica sua empresa')} htmlFor="vz-ws-h">
           <select id="vz-ws-h" className="vz-select" value={hub} onChange={(e) => setHub(e.target.value)}>
             {WORK_HUBS.map((x) => <option key={x.id} value={x.id}>{language === 'tr' ? x.tr : x.en}</option>)}
           </select>
         </Field>
-        <Field label={l(`Mesai başlangıcı: ${String(start).padStart(2, '0')}:00`, `Start: ${String(start).padStart(2, '0')}:00`, `Beginn: ${start}:00`, `Inicio: ${start}:00`, `Начало: ${start}:00`)} htmlFor="vz-ws-s">
+        <Field label={l(`Mesai başlangıcı: ${String(start).padStart(2, '0')}:00`, `Start: ${String(start).padStart(2, '0')}:00`, `Beginn: ${start}:00`, `Inicio: ${start}:00`, `Начало: ${start}:00`, `Início: ${start}:00`)} htmlFor="vz-ws-s">
           <input id="vz-ws-s" type="range" min={0} max={23} value={start} onChange={(e) => setStart(Number(e.target.value))} />
         </Field>
-        <Field label={l(`Süre: ${len} saat`, `Length: ${len} h`, `Dauer: ${len} Std.`, `Duración: ${len} h`, `Длительность: ${len} ч`)} htmlFor="vz-ws-l">
+        <Field label={l(`Süre: ${len} saat`, `Length: ${len} h`, `Dauer: ${len} Std.`, `Duración: ${len} h`, `Длительность: ${len} ч`, `Duração: ${len} h`)} htmlFor="vz-ws-l">
           <input id="vz-ws-l" type="range" min={1} max={12} value={len} onChange={(e) => setLen(Number(e.target.value))} />
         </Field>
       </div>
-      <Card tone={bad ? 'warn' : 'ok'} icon={bad ? 'alert' : 'check'} title={l(`${city}: ${hhmm(a)} – ${hhmm(b)}`, `${city}: ${hhmm(a)} – ${hhmm(b)}`, `${city}: ${hhmm(a)} – ${hhmm(b)}`, `${city}: ${hhmm(a)} – ${hhmm(b)}`, `${city}: ${hhmm(a)} – ${hhmm(b)}`)}>
+      <Card tone={bad ? 'warn' : 'ok'} icon={bad ? 'alert' : 'check'} title={l(`${city}: ${hhmm(a)} – ${hhmm(b)}`, `${city}: ${hhmm(a)} – ${hhmm(b)}`, `${city}: ${hhmm(a)} – ${hhmm(b)}`, `${city}: ${hhmm(a)} – ${hhmm(b)}`, `${city}: ${hhmm(a)} – ${hhmm(b)}`, `${city}: ${hhmm(a)} – ${hhmm(b)}`)}>
         <p>
           {diff === 0
-            ? l('Aynı saat dilimi.', 'Same time zone.', 'Gleiche Zeitzone.', 'Misma zona horaria.', 'Тот же пояс.')
-            : l(`${language === 'tr' ? h.tr : h.en} ile fark ${diff > 0 ? '+' : '−'}${Math.abs(diff / 60)} saat (bugünkü yaz/kış saatine göre).`, `${Math.abs(diff / 60)} h ${diff > 0 ? 'ahead of' : 'behind'} ${h.en} (today, daylight saving included).`, `${diff > 0 ? '+' : '−'}${Math.abs(diff / 60)} Std. zu ${h.en}.`, `${diff > 0 ? '+' : '−'}${Math.abs(diff / 60)} h respecto a ${h.en}.`, `${diff > 0 ? '+' : '−'}${Math.abs(diff / 60)} ч к ${h.en}.`)}
+            ? l('Aynı saat dilimi.', 'Same time zone.', 'Gleiche Zeitzone.', 'Misma zona horaria.', 'Тот же пояс.', 'Mesmo fuso horário.')
+            : l(`${language === 'tr' ? h.tr : h.en} ile fark ${diff > 0 ? '+' : '−'}${Math.abs(diff / 60)} saat (bugünkü yaz/kış saatine göre).`, `${Math.abs(diff / 60)} h ${diff > 0 ? 'ahead of' : 'behind'} ${h.en} (today, daylight saving included).`, `${diff > 0 ? '+' : '−'}${Math.abs(diff / 60)} Std. zu ${h.en}.`, `${diff > 0 ? '+' : '−'}${Math.abs(diff / 60)} h respecto a ${h.en}.`, `${diff > 0 ? '+' : '−'}${Math.abs(diff / 60)} ч к ${h.en}.`, `${diff > 0 ? '+' : '−'}${Math.abs(diff / 60)} h em relação a ${h.en}.`)}
         </p>
-        <p className="vz-muted">{bad ? l('Mesainin bir kısmı gece saatlerine denk geliyor.', 'Part of your workday falls at night here.', 'Teilweise nachts.', 'Parte cae de noche.', 'Часть ночью.') : l('Mesai burada makul saatlere denk geliyor.', 'Your workday lands at reasonable hours here.', 'Zu angenehmen Zeiten.', 'Horario razonable.', 'Удобное время.')}</p>
+        <p className="vz-muted">{bad ? l('Mesainin bir kısmı gece saatlerine denk geliyor.', 'Part of your workday falls at night here.', 'Teilweise nachts.', 'Parte cae de noche.', 'Часть ночью.', 'Parte cai de madrugada.') : l('Mesai burada makul saatlere denk geliyor.', 'Your workday lands at reasonable hours here.', 'Zu angenehmen Zeiten.', 'Horario razonable.', 'Удобное время.', 'Horário tranquilo.')}</p>
       </Card>
       <div className="vz-hours" aria-hidden="true">
         {Array.from({ length: 24 }, (_, i) => {
@@ -1102,7 +1102,7 @@ const EasyStages: React.FC<{ stages: Stage[]; tr: boolean; from?: string; to?: s
   return (
     <div className="vz-stack">
       <Chips scroll>
-        <Chip on={!st} onClick={() => setSt('')}>{l('Hepsi', 'All', 'Alle', 'Todo', 'Все')}</Chip>
+        <Chip on={!st} onClick={() => setSt('')}>{l('Hepsi', 'All', 'Alle', 'Todo', 'Все', 'Tudo')}</Chip>
         {stages.map((s) => <Chip key={s.stage} on={st === s.stage} onClick={() => setSt(s.stage)}>{tr ? s.titleTr : s.titleEn}</Chip>)}
       </Chips>
       <div className="vz-steps">
@@ -1121,7 +1121,7 @@ const EasyStages: React.FC<{ stages: Stage[]; tr: boolean; from?: string; to?: s
           </div>
         ))}
       </div>
-      {!st && stages.some((s) => s.partners.length > 3) && <Btn variant="ghost" small onClick={() => setAll(!all)}>{all ? l('Daha az göster', 'Show fewer', 'Weniger', 'Menos', 'Меньше') : l('Bütün seçenekleri göster', 'Show all options', 'Alle Optionen', 'Ver todas', 'Все варианты')}</Btn>}
+      {!st && stages.some((s) => s.partners.length > 3) && <Btn variant="ghost" small onClick={() => setAll(!all)}>{all ? l('Daha az göster', 'Show fewer', 'Weniger', 'Menos', 'Меньше', 'Menos') : l('Bütün seçenekleri göster', 'Show all options', 'Alle Optionen', 'Ver todas', 'Все варианты', 'Ver todas')}</Btn>}
     </div>
   );
 };
@@ -1132,27 +1132,27 @@ const NomadInfo: React.FC<{ hub: NonNullable<ReturnType<typeof getLocalizedNomad
   const cb = hub.costBreakdown;
   return (
     <div className="vz-stack">
-      <Card tone="sea" eyebrow={l('Uzun kalış vizesi', 'Long-stay visa', 'Langzeitvisum', 'Visado de larga estancia', 'Долгосрочная виза')} title={hub.visaName}>
+      <Card tone="sea" eyebrow={l('Uzun kalış vizesi', 'Long-stay visa', 'Langzeitvisum', 'Visado de larga estancia', 'Долгосрочная виза', 'Visto de longa duração')} title={hub.visaName}>
         <p>{hub.duration}</p>
         <p className="vz-muted">{hub.incomeRequired}</p>
-        {hub.officialUrl && <LinkBtn small href={hub.officialUrl}>{l('Resmî başvuru sitesi', 'Official application site', 'Offizielle Antragsseite', 'Web oficial', 'Официальный сайт')}</LinkBtn>}
+        {hub.officialUrl && <LinkBtn small href={hub.officialUrl}>{l('Resmî başvuru sitesi', 'Official application site', 'Offizielle Antragsseite', 'Web oficial', 'Официальный сайт', 'Site oficial')}</LinkBtn>}
       </Card>
       <div className="vz-stats">
-        <Stat value={hub.monthlyLivingCost.split('(')[0].trim()} label={l('Aylık yaşam maliyeti', 'Monthly living cost', 'Monatliche Kosten', 'Coste mensual', 'Расходы в месяц')} icon="wallet" />
-        <Stat value={hub.processingTime.split('(')[0].trim()} label={l('Başvuru süresi', 'Processing time', 'Bearbeitungszeit', 'Tramitación', 'Срок оформления')} icon="cal" />
+        <Stat value={hub.monthlyLivingCost.split('(')[0].trim()} label={l('Aylık yaşam maliyeti', 'Monthly living cost', 'Monatliche Kosten', 'Coste mensual', 'Расходы в месяц', 'Custo mensal')} icon="wallet" />
+        <Stat value={hub.processingTime.split('(')[0].trim()} label={l('Başvuru süresi', 'Processing time', 'Bearbeitungszeit', 'Tramitación', 'Срок оформления', 'Prazo de processamento')} icon="cal" />
       </div>
       {cb && (
         <List>
-          <Row icon="bed" title={l('Kira (1+1)', 'Rent (1-bed)', 'Miete (1 Zi.)', 'Alquiler (1 hab.)', 'Аренда (1-комн.)')} right={<b>{cb.rent1Bed.split('(')[0].trim()}</b>} />
-          <Row icon="food" title={l('Yemek', 'Food', 'Essen', 'Comida', 'Еда')} right={<b>{cb.foodDining.split('(')[0].trim()}</b>} />
-          <Row icon="laptop" title={l('Ortak çalışma alanı', 'Coworking', 'Coworking', 'Coworking', 'Коворкинг')} right={<b>{cb.coworking.split('(')[0].trim()}</b>} />
-          <Row icon="phone" title={l('Mobil hat', 'Mobile plan', 'Mobilfunk', 'Móvil', 'Связь')} right={<b>{cb.mobileSim.split('(')[0].trim()}</b>} />
-          <Row icon="transit" title={l('Ulaşım', 'Transport', 'Verkehr', 'Transporte', 'Транспорт')} right={<b>{cb.localTransit.split('(')[0].trim()}</b>} />
+          <Row icon="bed" title={l('Kira (1+1)', 'Rent (1-bed)', 'Miete (1 Zi.)', 'Alquiler (1 hab.)', 'Аренда (1-комн.)', 'Aluguel (1 quarto)')} right={<b>{cb.rent1Bed.split('(')[0].trim()}</b>} />
+          <Row icon="food" title={l('Yemek', 'Food', 'Essen', 'Comida', 'Еда', 'Comida')} right={<b>{cb.foodDining.split('(')[0].trim()}</b>} />
+          <Row icon="laptop" title={l('Ortak çalışma alanı', 'Coworking', 'Coworking', 'Coworking', 'Коворкинг', 'Coworking')} right={<b>{cb.coworking.split('(')[0].trim()}</b>} />
+          <Row icon="phone" title={l('Mobil hat', 'Mobile plan', 'Mobilfunk', 'Móvil', 'Связь', 'Celular')} right={<b>{cb.mobileSim.split('(')[0].trim()}</b>} />
+          <Row icon="transit" title={l('Ulaşım', 'Transport', 'Verkehr', 'Transporte', 'Транспорт', 'Transporte')} right={<b>{cb.localTransit.split('(')[0].trim()}</b>} />
         </List>
       )}
-      <Card title={l('İnternet ve ortak çalışma', 'Internet & coworking', 'Internet & Coworking', 'Internet y coworking', 'Интернет и коворкинг')} icon="wifi"><p>{hub.internetAndCoworking}</p></Card>
-      <Card title={l('Popüler merkezler', 'Popular hubs', 'Beliebte Orte', 'Lugares populares', 'Популярные места')} icon="map"><Tags items={hub.popularHubs} /></Card>
-      {hub.keyRequirements?.length > 0 && <Card title={l('Başvuruda istenenler', 'What you need', 'Voraussetzungen', 'Requisitos', 'Что нужно')} icon="check"><Bullets items={hub.keyRequirements} /></Card>}
+      <Card title={l('İnternet ve ortak çalışma', 'Internet & coworking', 'Internet & Coworking', 'Internet y coworking', 'Интернет и коворкинг', 'Internet e coworking')} icon="wifi"><p>{hub.internetAndCoworking}</p></Card>
+      <Card title={l('Popüler merkezler', 'Popular hubs', 'Beliebte Orte', 'Lugares populares', 'Популярные места', 'Lugares populares')} icon="map"><Tags items={hub.popularHubs} /></Card>
+      {hub.keyRequirements?.length > 0 && <Card title={l('Başvuruda istenenler', 'What you need', 'Voraussetzungen', 'Requisitos', 'Что нужно', 'Requisitos')} icon="check"><Bullets items={hub.keyRequirements} /></Card>}
       <p className="vz-muted" style={{ fontSize: 12.5 }}>{hub.taxRegime}</p>
     </div>
   );

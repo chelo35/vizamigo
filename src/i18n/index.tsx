@@ -6,6 +6,7 @@ import { de } from './locales/de';
 import { es } from './locales/es';
 import { ru } from './locales/ru';
 import { pt } from './locales/pt';
+import { ptArticles } from './ptArticles';
 
 export type Language = SupportedLanguage;
 export type { AppTranslations };
@@ -86,9 +87,9 @@ export function lText(
   ptText?: string
 ): string {
   if (lang === 'pt') {
-    if (ptText) return ptText;
+    if (ptText) return ptArticles(ptText);
     const lookup = ptMap ? (ptMap[trText] || ptMap[enText]) : null;
-    if (lookup) return lookup;
+    if (lookup) return ptArticles(lookup);
     if (trText) {
       if (trText.includes('Vatandaşlığı & Küresel Mobilite')) {
         const country = trText.replace(' Vatandaşlığı & Küresel Mobilite', '').trim();

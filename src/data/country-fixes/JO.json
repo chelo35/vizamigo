@@ -1559,6 +1559,396 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Dinar jordaniano (JOD)",
+   "plugType": "Tipo C, D, F, G, J (230V, 50Hz)",
+   "bestMonths": "Março a maio e setembro a novembro (clima ameno para Petra e Wadi Rum) · os verões são muito quentes (sobretudo em Aqaba e no Mar Morto); no inverno, Amã é fria e às vezes neva",
+   "safety": {
+    "safetyScore": 55,
+    "safetyLevel": "Risco moderado",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60",
+    "crimeRateSummary": "A criminalidade é baixa e o povo é hospitaleiro, mas há alertas oficiais por causa dos conflitos regionais. Não se recomenda viajar às áreas de fronteira com a Síria e o Iraque, e é melhor evitar manifestações; nas áreas turísticas há furtos e golpes envolvendo táxis e passeios.",
+    "commonScams": [
+     "Taxistas que não ligam o taxímetro ou dizem que ele está \"quebrado\"",
+     "Passeios \"grátis\" de burro, cavalo ou camelo em Petra que depois são cobrados caro",
+     "Ser abordado na entrada de Wadi Rum e levado a outro acampamento, mais caro que o reservado"
+    ],
+    "safeTravelTips": [
+     "Fique longe das áreas próximas às fronteiras com a Síria e o Iraque e siga os alertas oficiais em vigor.",
+     "Em Petra, combine preço e condições antes de montar num animal.",
+     "No Mar Morto, não engula a água, não deixe que ela caia nos olhos e não nade de bruços."
+    ],
+    "emergencyNumbers": {
+     "police": "911",
+     "ambulance": "911",
+     "general": "911"
+    }
+   },
+   "internet": {
+    "networkCoverage": "95%+ (4G / 5G)",
+    "costPerGbUsd": "US$ 1,00 - 2,50",
+    "esimAvailability": "Boa",
+    "bestCarriers": [
+     "Zain Jordan",
+     "Orange Jordan",
+     "Umniah"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Moderado (BRT e ônibus em Amã; ônibus intermunicipais JETT e micro-ônibus compartilhados)",
+    "costLevel": "Moderado",
+    "singleTicketUsd": "US$ 0,70 - 1,50",
+    "dailyPassUsd": "Não há (ônibus intermunicipal JETT Amã – Petra ~US$ 15 - 20)",
+    "popularRideApps": [
+     "Careem",
+     "Uber",
+     "Jeeny"
+    ],
+    "taxiAdvice": "Em Amã, Careem e Uber são confiáveis; nos táxis amarelos, peça o taxímetro. Para a Estrada do Rei e Wadi Rum, o mais prático é alugar um carro ou contratar um motorista."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 35 - 55",
+    "dailyBudgetMidrangeUsd": "US$ 90 - 160",
+    "budgetMealUsd": "US$ 3 - 8",
+    "coffeeUsd": "US$ 1,50 - 4",
+    "waterBottleUsd": "US$ 0,40 - 0,80",
+    "hostelDormUsd": "US$ 12 - 25",
+    "hotel3StarUsd": "US$ 50 - 100",
+    "flightCostIndex": "Moderado (direto Istambul – Amã, cerca de 2 horas)",
+    "flightTip": "Há voos diretos Istambul – Amã; comece o roteiro por Amã e volte a partir de Aqaba, de voo doméstico ou de ônibus."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "A hospitalidade é sagrada; não recuse o chá ou o café que lhe oferecerem.",
+     "Coma e entregue coisas com a mão direita; sentado, não mostre a sola do pé.",
+     "Deixe que as mulheres tomem a iniciativa de apertar a mão.",
+     "Fora de Amã, vista-se de forma discreta; na sexta-feira ao meio-dia tudo fica calmo."
+    ],
+    "festivals": [
+     "Festival de Cultura e Artes de Jerash (verão; shows no teatro antigo)",
+     "Ramadã e a festa do fim do Ramadã (ruas animadas à noite)",
+     "Dia da Independência (25 de maio)"
+    ],
+    "lifestyle": "A hospitalidade beduína convive com a moderna cultura de cafés de Amã; a vida gira em torno de reuniões de família, narguilé e longas conversas regadas a café."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Petra: o Tesouro (Al-Khazneh) e o Mosteiro (Ad-Deir)",
+     "Deserto de Wadi Rum (UNESCO)",
+     "Mar Morto (o ponto mais baixo da Terra)",
+     "Cidade romana de Jerash",
+     "Cidadela e Teatro Romano de Amã",
+     "Aqaba e os corais do Mar Vermelho"
+    ],
+    "bestSeasons": "Março a maio e setembro a novembro (clima ameno para Petra e Wadi Rum) · os verões são muito quentes (sobretudo em Aqaba e no Mar Morto); no inverno, Amã é fria e às vezes neva",
+    "travelStyleTip": "Use Amã como base, passe pelo menos uma noite em Petra e durma num acampamento em Wadi Rum. O Jordan Pass cobre a entrada em mais de 40 atrações, incluindo Petra."
+   },
+   "religion": {
+    "primaryReligions": "Islamismo (~95–97%, sunita), cristianismo (~2–3%, majoritariamente ortodoxo grego)",
+    "respectNorms": "As mulheres cobrem o cabelo nas mesquitas; a Mesquita do Rei Abdullah I, em Amã, é aberta a visitantes não muçulmanos. No Ramadã, evite comer e beber em público durante o dia.",
+    "sacredSites": [
+     "Mesquita do Rei Abdullah I (Amã)",
+     "Local do Batismo – Al-Maghtas (UNESCO)",
+     "Monte Nebo (ligado a Moisés)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "O árabe é a língua oficial; no dia a dia fala-se o dialeto levantino, e no turismo o inglês é comum.",
+    "englishProficiency": "Bom; dá para se virar sem problemas em Amã, Petra e Aqaba.",
+    "phrases": [
+     {
+      "phrase": "مرحبا (marḥaba)",
+      "meaning": "Olá",
+      "translation": "Olá",
+      "pronunciation": "mar-ha-ba"
+     },
+     {
+      "phrase": "يسلمو (yislamu)",
+      "meaning": "Obrigado",
+      "translation": "Obrigado (abençoadas sejam suas mãos)",
+      "pronunciation": "yis-la-mu"
+     },
+     {
+      "phrase": "لو سمحت (law samaḥt)",
+      "meaning": "Por favor / Com licença",
+      "translation": "Se me permite",
+      "pronunciation": "law sa-maht"
+     },
+     {
+      "phrase": "قديش هاد؟ (addēsh hād?)",
+      "meaning": "Quanto custa isto?",
+      "translation": "Quanto?",
+      "pronunciation": "ad-desh haad"
+     },
+     {
+      "phrase": "الحساب لو سمحت (il-ḥsāb law samaḥt)",
+      "meaning": "A conta, por favor",
+      "translation": "Pode trazer a conta?",
+      "pronunciation": "il-hsaab law sa-maht"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "No cruzamento de antigas rotas comerciais, com a capital nabateia de Petra e a cidade romana de Jerash, o território passou pelo domínio otomano e pelo Mandato Britânico antes de se tornar independente como Reino Hachemita em 1946.",
+    "milestones": [
+     "c. 300 a.C.: os nabateus fazem de Petra sua capital",
+     "106 d.C.: Roma cria a província da Arábia Pétrea",
+     "1946: independência (25 de maio)",
+     "1985: Petra entra na lista do Patrimônio Mundial da UNESCO"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Mansaf (cordeiro com arroz e molho de iogurte jameed; prato nacional)",
+     "Maqluba (arroz \"de cabeça para baixo\" com legumes e carne)",
+     "Zarb (carne e legumes beduínos assados em forno subterrâneo)"
+    ],
+    "traditionalDrinks": [
+     "Café beduíno (gahwa amargo com cardamomo)",
+     "Chá com sálvia (shai bi maramiya)",
+     "Limonana (limonada com hortelã)"
+    ],
+    "streetFoodAndDesserts": [
+     "Falafel e homus",
+     "Kunafa (doce quente de queijo nabulsi)",
+     "Ka'ak (rosca de pão com gergelim)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Rei Hussein (reinou de 1952 a 1999)",
+     "Rainha Rania (conhecida por suas iniciativas educacionais e sociais)",
+     "Mustafa Wahbi Al-Tal \"Arar\" (poeta nacional)"
+    ],
+    "strongSectors": [
+     "Mineração de fosfato e potássio (entre os principais produtores do mundo)",
+     "Turismo (Petra, Wadi Rum, Mar Morto)",
+     "Indústria farmacêutica e turismo médico"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Cartões são comuns nas cidades e nos hotéis; leve dinares em dinheiro para Wadi Rum, lojinhas e táxis (1 dinar = 1.000 fils).",
+    "tippingCulture": "Se o serviço não estiver incluído, deixa-se 10% nos restaurantes; para guias e motoristas, alguns dinares por dia.",
+    "economicPillars": "Serviços e turismo, mineração de fosfato e potássio, indústria farmacêutica e remessas de emigrantes."
+   }
+  },
+  "itin": {
+   "routeName": "Clássicos da Jordânia: Amã, Mar Morto, Petra e Wadi Rum",
+   "routeSummary": "Um roteiro de 7 dias de norte a sul: as ruínas romanas de Amã e Jerash, boiar no Mar Morto, a cidade rosa de Petra e uma noite estrelada num acampamento beduíno em Wadi Rum.",
+   "totalDays": 7,
+   "idealDurationText": "Roteiro de 7 dias",
+   "bestSeason": "Março a maio e setembro a novembro (clima ameno para Petra e Wadi Rum) · os verões são muito quentes (sobretudo em Aqaba e no Mar Morto); no inverno, Amã é fria e às vezes neva",
+   "transportMode": "Carro alugado ou motorista a partir de Amã (rodovia do Mar Morto e Estrada do Rei); ônibus da JETT como alternativa",
+   "paceLevel": "Equilibrado (história, deserto e mar)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Amã e Jerash",
+     "recommendedDuration": "2 dias (capital e cidade romana)",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Cidadela de Amã e Templo de Hércules",
+      "Teatro Romano",
+      "Rainbow Street",
+      "Antiga Jerash"
+     ],
+     "activities": [
+      "Veja o pôr do sol sobre a cidade a partir da Cidadela.",
+      "Faça um passeio a Jerash e percorra sua rua das colunas.",
+      "Experimente cafés e comida de rua na Rainbow Street."
+     ],
+     "foodAndDrinks": [
+      "Mansaf",
+      "Falafel e homus",
+      "Kunafa"
+     ],
+     "criticalTips": [
+      "Visite Jerash logo cedo, antes do calor.",
+      "Amã tem muitas ladeiras; use calçados confortáveis."
+     ],
+     "mapsQuery": "Amman Citadel, Amman, Jordan"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Mar Morto",
+     "recommendedDuration": "1 dia (boiar e descansar)",
+     "durationBadge": "1 dia",
+     "highlights": [
+      "O ponto mais baixo da Terra (~430 m abaixo do nível do mar)",
+      "Local do Batismo (Al-Maghtas)",
+      "Monte Nebo"
+     ],
+     "activities": [
+      "Boie na água salgada e experimente uma máscara de lama.",
+      "Visite o Local do Batismo.",
+      "Admire o vale do Jordão a partir do Monte Nebo."
+     ],
+     "foodAndDrinks": [
+      "Maqluba",
+      "Mezze variados (homus, mutabbal)",
+      "Limonana"
+     ],
+     "criticalTips": [
+      "Não entre na água logo depois de se barbear nem com machucados.",
+      "Prefira as praias de resorts ou hotéis com chuveiros às praias públicas."
+     ],
+     "mapsQuery": "Dead Sea, Jordan"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Petra",
+     "recommendedDuration": "2 dias (cidade nabateia esculpida na rocha)",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "O Siq e o Tesouro (Al-Khazneh)",
+      "O Mosteiro (Ad-Deir, mais de 800 degraus)",
+      "Túmulos Reais",
+      "Petra by Night"
+     ],
+     "activities": [
+      "Entre às 06h00 e percorra o Siq até o Tesouro sem multidões.",
+      "Suba ao Mosteiro pela vista.",
+      "Assista ao Petra by Night nos dias em que acontece."
+     ],
+     "foodAndDrinks": [
+      "Zarb",
+      "Mansaf",
+      "Chá beduíno"
+     ],
+     "criticalTips": [
+      "Muita água, chapéu e calçado firme são indispensáveis; você pode caminhar 15–20 km por dia.",
+      "O ingresso de dois dias costuma compensar mais que o de um."
+     ],
+     "mapsQuery": "Petra, Jordan"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Wadi Rum e Aqaba",
+     "recommendedDuration": "2 dias (deserto e Mar Vermelho)",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Deserto vermelho de Wadi Rum (UNESCO)",
+      "Ponte de pedra de Burdah",
+      "Fonte de Lawrence",
+      "Recifes de coral de Aqaba"
+     ],
+     "activities": [
+      "Faça um passeio de 4x4 pelo deserto.",
+      "Observe as estrelas num acampamento beduíno.",
+      "Faça snorkel ou mergulho em Aqaba."
+     ],
+     "foodAndDrinks": [
+      "Zarb",
+      "Chá beduíno",
+      "Sayadieh (peixe com arroz ao estilo de Aqaba)"
+     ],
+     "criticalTips": [
+      "Reserve o acampamento com antecedência com um operador licenciado e bem avaliado.",
+      "Para fazer snorkel em Aqaba, vá aos recifes da costa sul."
+     ],
+     "mapsQuery": "Wadi Rum, Jordan"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Mansaf (cordeiro com arroz e molho de iogurte jameed; prato nacional)",
+     "Maqluba (arroz \"de cabeça para baixo\" com legumes e carne)",
+     "Zarb (carne e legumes beduínos assados em forno subterrâneo)"
+    ],
+    "drinks": [
+     "Café beduíno (gahwa amargo com cardamomo)",
+     "Chá com sálvia (shai bi maramiya)",
+     "Limonana (limonada com hortelã)"
+    ],
+    "streetFoods": [
+     "Falafel e homus",
+     "Kunafa (doce quente de queijo nabulsi)",
+     "Ka'ak (rosca de pão com gergelim)"
+    ],
+    "diningAdvice": "Tradicionalmente, o mansaf é comido com a mão direita; mezze compartilhados, como homus e mutabbal, acompanham todas as refeições. Beba água engarrafada em vez da água da torneira."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptador universal (G e D são comuns; também C/F)",
+     "Calçado firme para caminhar em Petra",
+     "Sapatilhas aquáticas para o Mar Morto",
+     "Casaco para as noites no deserto"
+    ],
+    "safetyAndEtiquette": [
+     "Fora de Amã e em locais religiosos, cubra ombros e joelhos.",
+     "Fique longe de manifestações políticas e de áreas de fronteira."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "D",
+     "F",
+     "G",
+     "J"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Sistema misto: usam-se tomadas C/F (europeias), G (britânicas), D e J. Os hotéis costumam ter tomadas G ou universais; leve um adaptador universal."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "A água da torneira é tratada, mas fica armazenada semanalmente em caixas-d'água nos telhados e não é potável; use água engarrafada ou filtrada.",
+    "vaccines": [
+     "Vacinas de rotina (tríplice viral, tétano)",
+     "Hepatite A",
+     "Febre tifoide"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "911"
+   },
+   "tipping": {
+    "custom": "Se não houver taxa de serviço, nos restaurantes é costume deixar 10%; guias e motoristas recebem alguns dinares por dia.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Se a conta indicar “service”, não é preciso dar mais; em Petra e Wadi Rum é comum dar 5–10 JOD por dia ao guia."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Imposto sobre vendas de 16%",
+    "minSpend": "Pelo menos 50 JOD de imposto por nota fiscal",
+    "customsNote": "Compre em lojas da rede tax-free (TAG Tax Free); na saída, carimbe produtos e formulários na alfândega e peça a restituição no guichê TAGI Tax Free do aeroporto Queen Alia. Na zona econômica especial de Aqaba os preços já são livres de impostos."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 1,00 - 2,50",
+    "topCarriers": [
+     "Zain Jordan",
+     "Orange Jordan",
+     "Umniah"
+    ],
+    "airportSimTrapWarning": "Os balcões da Zain, Orange e Umniah no aeroporto Queen Alia vendem pacotes para turistas a preço oficial; na cidade podem sair um pouco mais baratos. Para o chip é preciso passaporte."
+   },
+   "touristScams": [
+    {
+     "title": "Taxímetro “quebrado”",
+     "desc": "Taxistas que não ligam o taxímetro ou dizem que ele está quebrado e cobram a mais.",
+     "tip": "Use Careem ou Uber; nos táxis de rua, exija o taxímetro."
+    },
+    {
+     "title": "Passeios “grátis” em Petra",
+     "desc": "Depois de um passeio “gratuito” de burro, cavalo ou camelo em Petra, exigem um valor alto.",
+     "tip": "Só o curto passeio a cavalo está incluído no ingresso; combine antes o preço dos demais."
+    },
+    {
+     "title": "Troca de acampamento em Wadi Rum",
+     "desc": "Recebem você na entrada de Wadi Rum e levam a outro acampamento, mais caro que o reservado.",
+     "tip": "Confirme antes o nome do acampamento e o ponto de encontro, e vá apenas com a pessoa enviada pelo seu acampamento."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Иорданский динар (JOD)",

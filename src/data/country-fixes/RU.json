@@ -1459,6 +1459,371 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Rublo russo (RUB)",
+   "plugType": "Tipo C, F (220V, 50Hz)",
+   "bestMonths": "Fim de maio a agosto (Noites Brancas em São Petersburgo, clima ameno); dezembro a fevereiro para paisagens nevadas (muito frio)",
+   "safety": {
+    "safetyScore": 40,
+    "safetyLevel": "Cautela recomendada",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60",
+    "crimeRateSummary": "A criminalidade de rua nas grandes cidades é moderada, mas, por causa da guerra em curso com a Ucrânia, as regiões de fronteira são muito perigosas e ataques de drones fecham aeroportos com frequência, inclusive em Moscou. Vários governos (EUA, Reino Unido) desaconselham viagens à Rússia, e há relatos de risco de detenção arbitrária de estrangeiros.",
+    "commonScams": [
+     "Taxistas não registrados que se passam por oficiais em aeroportos e estações",
+     "Preços abusivos por fotos com personagens fantasiados perto da Praça Vermelha",
+     "Ofertas de câmbio na rua ou em pontos sem licença"
+    ],
+    "safeTravelTips": [
+     "Cartões Visa/Mastercard estrangeiros não funcionam na Rússia; leve dinheiro suficiente (USD/EUR) e troque só em bancos.",
+     "Ande sempre com o passaporte; não fotografe prédios militares ou do governo e evite manifestações políticas.",
+     "Voos podem ser cancelados ou atrasados de repente por ameaças de drones; compre passagens flexíveis e acompanhe sua companhia aérea."
+    ],
+    "emergencyNumbers": {
+     "police": "102",
+     "ambulance": "103",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Bom 4G/LTE nas cidades; em muitas regiões, a internet móvel é cortada ou restringida periodicamente por motivos de segurança.",
+    "costPerGbUsd": "~US$ 0,10 - 0,50",
+    "esimAvailability": "Limitada (chips locais exigem passaporte e cadastro; poucos eSIMs internacionais)",
+    "bestCarriers": [
+     "MTS",
+     "MegaFon",
+     "Beeline",
+     "T2"
+    ],
+    "vpnRequired": true
+   },
+   "transport": {
+    "transportQuality": "Excelente (metrôs de Moscou e São Petersburgo, trem de alta velocidade Sapsan)",
+    "costLevel": "Econômico",
+    "singleTicketUsd": "US$ 0,70 - 1,20",
+    "dailyPassUsd": "3,00 - 4,50 $ (Moscou, 24h)",
+    "popularRideApps": [
+     "Yandex Go",
+     "Yandex Metro",
+     "Yandex Maps",
+     "2GIS",
+     "RZD"
+    ],
+    "taxiAdvice": "Use o Yandex Go para táxis e escolha pagamento em dinheiro, já que cartões estrangeiros não funcionam. De Moscou a São Petersburgo são cerca de 4 horas no Sapsan; compre as passagens na RZD."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 40 - 60",
+    "dailyBudgetMidrangeUsd": "US$ 90 - 160",
+    "budgetMealUsd": "US$ 8 - 15",
+    "coffeeUsd": "US$ 2,50 - 4,00",
+    "waterBottleUsd": "US$ 0,50 - 1,00",
+    "hostelDormUsd": "US$ 12 - 25",
+    "hotel3StarUsd": "US$ 50 - 110",
+    "flightCostIndex": "Moderado (Istambul – Moscou direto, ~3,5 h)",
+    "flightTip": "Há voos diretos de Istambul para Moscou, São Petersburgo, Kazan e Sochi. Fechamentos temporários de aeroportos por causa de drones são frequentes: deixe uma boa margem nas conexões."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Ao visitar alguém, leve flores em número ímpar (número par é para funerais); tire os sapatos ao entrar em casa.",
+     "Em contextos formais, usa-se o nome e o patronímico (por exemplo, Ivan Petrovich).",
+     "Não se aperta a mão por cima da soleira da porta; dá azar.",
+     "Nas igrejas, as mulheres cobrem a cabeça e os homens tiram o chapéu."
+    ],
+    "festivals": [
+     "Maslenitsa (festa dos blinis antes da Quaresma, fevereiro – março)",
+     "Noites Brancas e festa das ‘Velas Escarlates’ em São Petersburgo (junho)",
+     "Ano-Novo e Natal ortodoxo (31 de dezembro – 7 de janeiro)"
+    ],
+    "lifestyle": "Grande apego à literatura, ao balé e à música clássica, fins de semana na dacha, a tradição da banya e longas conversas à mesa depois das refeições."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Moscou: Praça Vermelha, Kremlin e Catedral de São Basílio",
+     "São Petersburgo: Museu Hermitage (Palácio de Inverno)",
+     "Palácio e fontes de Peterhof",
+     "Kremlin de Kazan e mesquita Kul Sharif",
+     "Cidades do Anel de Ouro (Sergiev Posad, Suzdal)",
+     "Lago Baikal"
+    ],
+    "bestSeasons": "O verão (junho – agosto) é a época mais confortável; o inverno é muito frio, mas as paisagens nevadas impressionam",
+    "travelStyleTip": "Consulte os alertas oficiais antes de viajar e evite as regiões próximas à fronteira com a Ucrânia. Kazan, com sua língua e culinária tártaras, é especialmente interessante."
+   },
+   "religion": {
+    "primaryReligions": "Maioria ortodoxa russa (~70 %); muçulmanos ~10–15 % (Tartaristão, Bascortostão, Cáucaso do Norte); pequenas comunidades budista, judaica e católica.",
+    "respectNorms": "Nas igrejas ortodoxas, as mulheres usam lenço e saia e os homens tiram o chapéu; não tire fotos durante a missa. Nas mesquitas, vista-se também de forma discreta.",
+    "sacredSites": [
+     "Catedral de Cristo Salvador (Moscou)",
+     "Lavra da Trindade e São Sérgio (Sergiev Posad)",
+     "Mesquita Kul Sharif (Kazan)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Russo; nas repúblicas, línguas oficiais regionais como o tártaro, o basquir e o checheno",
+    "englishProficiency": "Limitado; melhor entre os jovens de Moscou e São Petersburgo. Aprender o alfabeto cirílico e usar um app de tradução ajuda muito.",
+    "phrases": [
+     {
+      "phrase": "Здравствуйте (Zdravstvuyte)",
+      "meaning": "Olá (formal)",
+      "translation": "Olá",
+      "pronunciation": "ZDRAST-vuy-tye"
+     },
+     {
+      "phrase": "Спасибо (Spasibo)",
+      "meaning": "Obrigado(a)",
+      "translation": "Obrigado(a)",
+      "pronunciation": "spa-SEE-ba"
+     },
+     {
+      "phrase": "Пожалуйста (Pozhaluysta)",
+      "meaning": "Por favor / De nada",
+      "translation": "Por favor",
+      "pronunciation": "pa-ZHAL-sta"
+     },
+     {
+      "phrase": "Сколько стоит? (Skolko stoit?)",
+      "meaning": "Quanto custa?",
+      "translation": "Quanto?",
+      "pronunciation": "SKOL-ka STO-it"
+     },
+     {
+      "phrase": "Счёт, пожалуйста (Schyot, pozhaluysta)",
+      "meaning": "A conta, por favor",
+      "translation": "A conta",
+      "pronunciation": "SHCHYOT pa-ZHAL-sta"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "O Grão-Principado de Moscou, herdeiro dos Estados eslavos orientais, tornou-se czarado com Ivan IV no século XVI; Pedro, o Grande, fundou São Petersburgo em 1703 e abriu o país para a Europa. Depois da revolução de 1917 nasceu a União Soviética, cuja dissolução em 1991 deu origem à Federação Russa, o maior país do mundo em extensão.",
+    "milestones": [
+     "1547: Ivan IV é coroado o primeiro czar",
+     "1703: fundação de São Petersburgo",
+     "1917: Revolução de Outubro; 1922: fundação da URSS",
+     "1961: primeiro voo espacial tripulado, de Yuri Gagarin; 1991: dissolução da URSS"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Pelmeni (pasteizinhos cozidos de carne com creme azedo)",
+     "Strogonoff de carne (carne ao molho de creme azedo)",
+     "Shchi e borscht (sopas de repolho e de beterraba)"
+    ],
+    "traditionalDrinks": [
+     "Kvas (bebida fermentada de pão)",
+     "Mors (bebida de oxicoco)",
+     "Chá do samovar"
+    ],
+    "streetFoodAndDesserts": [
+     "Blinis (panquecas finas com creme azedo, mel ou caviar)",
+     "Pirozhki (pãezinhos recheados, assados ou fritos)",
+     "Medovik (bolo de mel em camadas)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Liev Tolstói (escritor, ‘Guerra e paz’)",
+     "Piotr Ilitch Tchaikovsky (compositor)",
+     "Yuri Gagarin (primeiro ser humano no espaço)"
+    ],
+    "strongSectors": [
+     "Petróleo e gás",
+     "Mineração e metais",
+     "Agricultura (um dos maiores exportadores de trigo do mundo)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Os moradores pagam com cartões Mir, QR (SBP) e por aproximação; Visa/Mastercard estrangeiros não funcionam. Turistas devem levar dinheiro em espécie e trocá-lo por rublos em bancos.",
+    "tippingCulture": "Nos restaurantes, costuma-se deixar 10 %; o mais fácil é em dinheiro.",
+    "economicPillars": "Energia (petróleo, gás), mineração e metais, agricultura e indústria de defesa."
+   }
+  },
+  "itin": {
+   "routeName": "Duas capitais e cultura tártara: São Petersburgo, Moscou e Kazan",
+   "routeSummary": "Roteiro de 8 dias que vai dos palácios e canais da São Petersburgo czarista ao Kremlin de Moscou e a Kazan, centro da cultura tártara. Consulte os alertas oficiais antes de viajar.",
+   "totalDays": 8,
+   "idealDurationText": "8 dias",
+   "bestSeason": "Junho – agosto",
+   "transportMode": "Trem Sapsan (São Petersburgo – Moscou), trem ou avião entre Moscou e Kazan; metrô e Yandex Go nas cidades",
+   "paceLevel": "Equilibrado (museus + cidade)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: São Petersburgo (palácios e canais)",
+     "recommendedDuration": "3 dias",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Museu Hermitage e Praça do Palácio",
+      "Igreja do Salvador sobre o Sangue Derramado e Avenida Nevsky",
+      "Palácio e fontes de Peterhof",
+      "Fortaleza de Pedro e Paulo"
+     ],
+     "activities": [
+      "Faça um passeio de barco pelos canais e veja as pontes se abrindo nas Noites Brancas.",
+      "Assista a um balé no Teatro Mariinsky.",
+      "No verão, vá a Peterhof no aerobarco ‘Meteor’."
+     ],
+     "foodAndDrinks": [
+      "Pirozhki (pãezinhos recheados, assados ou fritos)",
+      "Blinis (panquecas finas com creme azedo, mel ou caviar)",
+      "Mors (bebida de oxicoco)"
+     ],
+     "criticalTips": [
+      "Compre os ingressos do Hermitage com antecedência no site oficial; o museu fecha às segundas-feiras.",
+      "Quando as pontes se abrem à noite, não dá para atravessar entre as ilhas; planeje a volta ao hotel."
+     ],
+     "mapsQuery": "Saint Petersburg, Russia"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Moscou (Kremlin e Praça Vermelha)",
+     "recommendedDuration": "3 dias",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Praça Vermelha e Catedral de São Basílio",
+      "Kremlin e Arsenal (Armeria)",
+      "Galeria Tretyakov",
+      "Estações de metrô palacianas (Komsomolskaya, Mayakovskaya)"
+     ],
+     "activities": [
+      "Admire o Kremlin da ‘ponte flutuante’ do parque Zaryadye.",
+      "Faça um roteiro pelas estações de metrô.",
+      "Passeie pela rua Arbat e pelo parque Gorky."
+     ],
+     "foodAndDrinks": [
+      "Pelmeni (pasteizinhos cozidos de carne com creme azedo)",
+      "Strogonoff de carne (carne ao molho de creme azedo)",
+      "Kvas (bebida fermentada de pão)"
+     ],
+     "criticalTips": [
+      "O Kremlin fecha às quintas-feiras; a Praça Vermelha às vezes é fechada por causa de eventos.",
+      "Use o cartão Troika no metrô; cartões estrangeiros não funcionam, então recarregue com dinheiro."
+     ],
+     "mapsQuery": "Moscow, Russia"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Kazan (capital do Tartaristão)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Kremlin de Kazan (UNESCO) e mesquita Kul Sharif",
+      "Torre Söyembikä e Catedral da Anunciação",
+      "Rua Bauman e o antigo bairro tártaro",
+      "Templo de Todas as Religiões"
+     ],
+     "activities": [
+      "Veja o pôr do sol sobre o rio Kazanka das muralhas do Kremlin.",
+      "Conheça as mesquitas históricas e as casas de madeira do bairro tártaro.",
+      "Leia as placas em tártaro: quem fala turco vai reconhecer muitas palavras."
+     ],
+     "foodAndDrinks": [
+      "Echpochmak (pastel triangular de carne e batata)",
+      "Chak-chak (massa frita com mel)",
+      "Gubadiya (torta doce em camadas com arroz, uvas-passas e requeijão)"
+     ],
+     "criticalTips": [
+      "As mulheres precisam usar lenço para entrar na mesquita Kul Sharif; às vezes há lenços emprestados na entrada.",
+      "De Moscou a Kazan são cerca de 12 horas de trem noturno, menos nos serviços rápidos; também dá para ir de avião."
+     ],
+     "mapsQuery": "Kazan, Russia"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Pelmeni (pasteizinhos cozidos de carne com creme azedo)",
+     "Strogonoff de carne (carne ao molho de creme azedo)",
+     "Shchi e borscht (sopas de repolho e de beterraba)"
+    ],
+    "drinks": [
+     "Kvas (bebida fermentada de pão)",
+     "Mors (bebida de oxicoco)",
+     "Chá do samovar"
+    ],
+    "streetFoods": [
+     "Blinis (panquecas finas com creme azedo, mel ou caviar)",
+     "Pirozhki (pãezinhos recheados, assados ou fritos)",
+     "Medovik (bolo de mel em camadas)"
+    ],
+    "diningAdvice": "Os menus de ‘business lunch’ no almoço são econômicos. Em Kazan e em regiões com grande população muçulmana é fácil encontrar restaurantes halal; a carne de porco é comum na culinária russa, então pergunte se tiver dúvida."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Dinheiro suficiente (USD/EUR) para a viagem toda: cartões estrangeiros não funcionam",
+     "Cópias do passaporte e dos documentos",
+     "Para o inverno: casaco bem quente, gorro, luvas e botas antiderrapantes",
+     "Mapas e tradutor offline (a internet móvel pode cair)"
+    ],
+    "safetyAndEtiquette": [
+     "Evite discussões e manifestações políticas; não fotografe prédios oficiais.",
+     "Não viaje para regiões próximas à fronteira com a Ucrânia."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Tomadas europeias C/F (Schuko) de dois pinos redondos, iguais às da Turquia; não é preciso adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Em Moscou e São Petersburgo a água da torneira é tratada, mas, por causa dos encanamentos antigos, não é bom bebê-la sem ferver; a água engarrafada é barata. Em São Petersburgo, evite-a principalmente pelo risco de giárdia.",
+    "vaccines": [
+     "Vacinas de rotina (tríplice viral, tétano)",
+     "Hepatite A",
+     "Encefalite transmitida por carrapatos (se for fazer trilhas no interior)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "103"
+   },
+   "tipping": {
+    "custom": "É comum deixar 10 % nos restaurantes; o mais fácil é deixar em dinheiro.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Gorjetas no cartão costumam ser dadas por apps com QR code (“чаевые”); taxistas não esperam gorjeta."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA de 22 % (menos, após as comissões)",
+    "minSpend": "10.000 RUB em uma loja credenciada",
+    "customsNote": "Compre apresentando o passaporte em lojas que emitam formulários Tax Free e valide produtos, recibo e formulário na alfândega ao sair do país. Restituições para cartões estrangeiros falham, então muitas vezes você terá de receber em rublos em espécie; cidadãos da União Econômica Eurasiática ficam de fora."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "US$ 0,10 - 0,50",
+    "topCarriers": [
+     "MTS",
+     "MegaFon",
+     "Beeline",
+     "T2"
+    ],
+    "airportSimTrapWarning": "Há poucos eSIMs internacionais e Visa/Mastercard não funcionam na Rússia, o que dificulta pagar por lá. Estrangeiros só podem comprar chip com passaporte e cadastro biométrico em lojas oficiais da MTS, MegaFon, Beeline ou T2; evite os vendedores de chips sem registro no aeroporto."
+   },
+   "touristScams": [
+    {
+     "title": "Táxis não registrados",
+     "desc": "Motoristas não registrados se passam por táxis oficiais em aeroportos e estações e cobram tarifas absurdas.",
+     "tip": "Use o Yandex Go ou pegue um táxi de preço fixo no balcão oficial."
+    },
+    {
+     "title": "Fotos com fantasiados na Praça Vermelha",
+     "desc": "Personagens fantasiados ao redor da Praça Vermelha exigem muito dinheiro depois da foto.",
+     "tip": "Pergunte o preço antes da foto ou recuse com educação."
+    },
+    {
+     "title": "Câmbio na rua",
+     "desc": "Ofertas de câmbio de moeda na rua ou em pontos sem licença.",
+     "tip": "Troque dinheiro só em bancos; cartões estrangeiros não funcionam na Rússia, então leve dinheiro suficiente."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Российский рубль (RUB)",

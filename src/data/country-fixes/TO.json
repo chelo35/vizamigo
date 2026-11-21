@@ -1407,6 +1407,358 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Paʻanga tonganesa (TOP)",
+   "plugType": "I (240V, 50Hz)",
+   "bestMonths": "Maio – outubro (seco e mais fresco; julho – outubro é a temporada das baleias-jubarte)",
+   "safety": {
+    "crimeRateSummary": "Crimes violentos são raros; em Nuku'alofa acontecem alguns furtos e arrombamentos em hospedagens. Os principais riscos são os cães de rua e a temporada de ciclones, de novembro a abril.",
+    "commonScams": [
+     "Tarifas altas em táxis sem taxímetro",
+     "Passeios sem licença para nadar com baleias (problemas de segurança e de bem-estar animal)",
+     "Furto de pertences deixados na praia"
+    ],
+    "safeTravelTips": [
+     "O domingo é dia de descanso rigoroso: lojas e quase todos os restaurantes fecham e há poucos voos; planeje-se.",
+     "Na temporada de ciclones, acompanhe os alertas do serviço meteorológico de Tonga.",
+     "Cuidado com os cães ao caminhar à noite; leve uma lanterna."
+    ],
+    "emergencyNumbers": {
+     "police": "922",
+     "ambulance": "933",
+     "general": "911"
+    },
+    "safetyScore": 65,
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "4G em Tongatapu e Vava'u; fraco em Ha'apai e nas ilhas pequenas. A internet pode cair se o cabo submarino falhar (como em 2022).",
+    "costPerGbUsd": "~US$ 2 - 5",
+    "esimAvailability": "Limitada (algumas eSIMs da Digicel e poucos planos internacionais)",
+    "bestCarriers": [
+     "Digicel Tonga",
+     "U-Call (TCC)"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Básico",
+    "costLevel": "Moderado",
+    "singleTicketUsd": "1 - 2 $ (ônibus)",
+    "dailyPassUsd": "Sem passe; carro alugado 40 - 70 $/dia",
+    "popularRideApps": [
+     "Táxis (por telefone)",
+     "Carro / bicicleta alugados",
+     "Voos domésticos da Lulutai Airlines",
+     "Balsas entre as ilhas"
+    ],
+    "taxiAdvice": "Não há apps de transporte. Os táxis não têm taxímetro; combine a tarifa. Para dirigir, você precisa de uma licença temporária tonganesa emitida pela polícia; a mão é inglesa (dirige-se pela esquerda)."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 45 - 70",
+    "dailyBudgetMidrangeUsd": "US$ 110 - 190",
+    "budgetMealUsd": "US$ 6 - 12",
+    "coffeeUsd": "US$ 2,50 - 4",
+    "waterBottleUsd": "US$ 1 - 2",
+    "hostelDormUsd": "US$ 20 - 35",
+    "hotel3StarUsd": "US$ 80 - 150",
+    "flightCostIndex": "Alto",
+    "flightTip": "Os voos para Tongatapu (TBU) fazem conexão em Auckland, Sydney, Brisbane e Nadi (Fiji); Auckland é a opção com mais frequências. Na temporada das baleias, os lugares para Vava'u esgotam rápido."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Vista-se com discrição: cubra ombros e joelhos; não ande de roupa de banho fora da praia, e homens sem camisa em público são proibidos.",
+     "No domingo, evite nadar, praticar esportes ou fazer barulho; ir à missa é bem-vindo.",
+     "A família real e a nobreza são muito respeitadas.",
+     "Se for convidado para uma roda de kava (faikava), pegue a cuia com as duas mãos e beba de um gole só."
+    ],
+    "festivals": [
+     "Festival Heilala – julho, Nuku'alofa",
+     "Comemorações do Aniversário do Rei e do Dia do Rei Tupou I",
+     "Festival de Vava'u – maio"
+    ],
+    "lifestyle": "O único reino do Pacífico que nunca foi colonizado. Família, igreja e comunidade são centrais; o país para aos domingos. As noites de kava, os corais e o ta'ovala (esteira trançada usada na cintura) são tradição."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Nadar com baleias-jubarte em Vava'u (julho – outubro)",
+     "Trílito de Ha'amonga 'a Maui",
+     "Gêiseres marinhos de Mapu'a 'a Vaca",
+     "Swallows' Cave e Mariner's Cave (Vava'u)",
+     "Praias desertas de Ha'apai",
+     "Palácio Real e mercado Talamahu (Nuku'alofa)"
+    ],
+    "bestSeasons": "Maio – outubro (seco e mais fresco; julho – outubro é a temporada das baleias-jubarte)",
+    "travelStyleTip": "Tongatapu é cultura e história; Ha'apai, praias desertas; Vava'u, vela e baleias. Voos e balsas internos são pouco frequentes: planeje com flexibilidade e lembre-se do domingo."
+   },
+   "religion": {
+    "primaryReligions": "Cristãos (~98%): Igreja Wesleyana Livre de Tonga, Santos dos Últimos Dias, católicos e outros",
+    "respectNorms": "Pela Constituição, o trabalho e o comércio são proibidos aos domingos; vá à igreja com roupa discreta e arrumada e não tire fotos durante o culto.",
+    "sacredSites": [
+     "Igreja do Centenário (Nuku'alofa, igreja da família real)",
+     "Túmulos Reais de Mala'ekula",
+     "Antigos túmulos tu'i tonga (langi) em Lapaha"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Tonganês e inglês",
+    "englishProficiency": "Bom; o inglês é ensinado na escola e muito usado no turismo.",
+    "phrases": [
+     {
+      "phrase": "Mālō e lelei",
+      "meaning": "Olá",
+      "translation": "Olá",
+      "pronunciation": "MAA-loh eh LEH-lay"
+     },
+     {
+      "phrase": "Mālō ʻaupito",
+      "meaning": "Muito obrigado",
+      "translation": "Muito obrigado",
+      "pronunciation": "MAA-loh ow-PEE-toh"
+     },
+     {
+      "phrase": "Fakamolemole",
+      "meaning": "Por favor / Com licença",
+      "translation": "Por favor / Com licença",
+      "pronunciation": "fah-kah-moh-leh-MOH-leh"
+     },
+     {
+      "phrase": "ʻOku fiha ʻeni?",
+      "meaning": "Quanto custa isto?",
+      "translation": "Quanto custa isto?",
+      "pronunciation": "OH-koo FEE-hah EH-nee"
+     },
+     {
+      "phrase": "ʻAlu ā / Nofo ā",
+      "meaning": "Tchau (para quem vai / para quem fica)",
+      "translation": "Tchau (para quem vai / para quem fica)",
+      "pronunciation": "AH-loo aa / NOH-foh aa"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Tonga foi povoada pelo povo lapita há cerca de 3.000 anos; a partir do século X, a dinastia Tu'i Tonga criou um vasto império marítimo. O capitão Cook as chamou de 'Ilhas dos Amigos' em 1773. Jorge Tupou I unificou as ilhas em 1845 e promulgou a Constituição em 1875. Foi protetorado britânico de 1900 a 1970, mas nunca colônia; a erupção do Hunga Tonga–Hunga Ha'apai e o tsunami de 2022 atingiram duramente o país.",
+    "milestones": [
+     "~950 – Ascensão da dinastia Tu'i Tonga",
+     "1875 – Constituição e monarquia constitucional",
+     "4 de junho de 1970 – Fim da proteção britânica",
+     "Janeiro de 2022 – Erupção do Hunga Tonga e tsunami"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "'Ota 'ika (peixe cru com creme de coco e limão)",
+     "Lu pulu (carne em conserva com creme de coco em folhas de taro, assada no forno 'umu)",
+     "Puaka tunu (leitão assado)"
+    ],
+    "traditionalDrinks": [
+     "Kava (bebida tradicional feita da raiz de uma pimenteira)",
+     "'Otai (bebida de melancia, coco e açúcar)",
+     "Água de coco fresca (niu)"
+    ],
+    "streetFoodAndDesserts": [
+     "Faikakai (bolinhos de massa em calda de caramelo e coco)",
+     "Keke 'isite (rosquinhas tonganesas)",
+     "Taro e inhame assados no mercado"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Rainha Sālote Tupou III (famosa desde a coroação de 1953)",
+     "Pita Taufatofua (porta-bandeira olímpico, taekwondo e esqui)",
+     "Epeli Hau'ofa (escritor e pensador)"
+    ],
+    "strongSectors": [
+     "Remessas do exterior",
+     "Agricultura (abóbora, baunilha, kava)",
+     "Observação de baleias e turismo"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Cartões são aceitos em hotéis e restaurantes de Nuku'alofa e Vava'u; em aldeias, mercados e ilhas pequenas, é preciso dinheiro vivo. Há caixas eletrônicos nas cidades principais.",
+    "economicPillars": "Remessas, agricultura e pesca, turismo (sobretudo de baleias) e ajuda externa.",
+    "tippingCulture": "Gorjeta não é costume nem é esperada; em lugares turísticos, é bem-vinda."
+   }
+  },
+  "itin": {
+   "routeName": "Pulando de ilha em ilha em Tonga: Tongatapu, Ha'apai e Vava'u",
+   "routeSummary": "Roteiro de 10 dias de sul a norte: patrimônio real e antigo em Tongatapu, as ilhas de coral desertas de Ha'apai e, em Vava'u, nado com baleias, cavernas e vela.",
+   "totalDays": 10,
+   "idealDurationText": "Roteiro pelas ilhas de 9-12 dias",
+   "bestSeason": "Maio – outubro (seco e mais fresco; julho – outubro é a temporada das baleias-jubarte)",
+   "transportMode": "Voos domésticos da Lulutai Airlines e balsas; nas ilhas, carro alugado, bicicleta e táxi",
+   "paceLevel": "Tranquilo (ilhas, mar e cultura)",
+   "stops": [
+    {
+     "name": "Parada 1: Tongatapu e Nuku'alofa (patrimônio real)",
+     "recommendedDuration": "3 dias",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Palácio Real (por fora)",
+      "Trílito de Ha'amonga 'a Maui",
+      "Gêiseres marinhos de Mapu'a 'a Vaca",
+      "Caverna de 'Anahulu"
+     ],
+     "activities": [
+      "Compre artesanato e frutas no mercado Talamahu no sábado de manhã.",
+      "Ouça um coral de igreja no domingo de manhã.",
+      "Aproveite um banquete 'umu e danças tradicionais em uma noite cultural."
+     ],
+     "foodAndDrinks": [
+      "Lu pulu",
+      "'Ota 'ika",
+      "'Otai"
+     ],
+     "criticalTips": [
+      "No domingo quase tudo fecha; compre comida no sábado.",
+      "Para alugar carro, você precisa de uma licença temporária emitida pela polícia."
+     ],
+     "mapsQuery": "Nuku'alofa, Tonga",
+     "stopNumber": 1
+    },
+    {
+     "name": "Parada 2: Ha'apai (ilhas de coral desertas)",
+     "recommendedDuration": "3 dias",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Praias de areia branca de Lifuka e Foa",
+      "Ilha de Uoleva",
+      "Snorkel em recifes de coral"
+     ],
+     "activities": [
+      "Alugue uma bicicleta em Lifuka e percorra as aldeias.",
+      "Hospede-se em um fale de praia em Uoleva.",
+      "Na temporada, faça um passeio de observação de baleias."
+     ],
+     "foodAndDrinks": [
+      "Peixe fresco e lagosta",
+      "Água de coco"
+     ],
+     "criticalTips": [
+      "Há pouquíssimos caixas eletrônicos e lojas; leve dinheiro vivo e algo para comer.",
+      "Os horários de voos e balsas mudam; reserve um dia de folga."
+     ],
+     "mapsQuery": "Lifuka, Ha'apai, Tonga",
+     "stopNumber": 2
+    },
+    {
+     "name": "Parada 3: Vava'u (baleias, cavernas e vela)",
+     "recommendedDuration": "4 dias",
+     "durationBadge": "4 dias",
+     "highlights": [
+      "Nadar com baleias-jubarte (passeio licenciado)",
+      "Swallows' Cave e Mariner's Cave",
+      "Porto de Port of Refuge e Neiafu",
+      "Mirante do monte Talau"
+     ],
+     "activities": [
+      "Nade com baleias com uma operadora autorizada entre julho e outubro.",
+      "Vá de barco até a Swallows' Cave e faça snorkel.",
+      "Passe um dia velejando ou de caiaque entre as ilhas."
+     ],
+     "foodAndDrinks": [
+      "Atum fresco no porto de Neiafu",
+      "Sobremesas com baunilha local",
+      "Kava (em uma noite de faikava)"
+     ],
+     "criticalTips": [
+      "Reserve os passeios de baleias com meses de antecedência; eles lotam rápido.",
+      "Não toque nas baleias e respeite as distâncias indicadas pelo guia."
+     ],
+     "mapsQuery": "Neiafu, Vava'u, Tonga",
+     "stopNumber": 3
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Lu pulu",
+     "'Ota 'ika",
+     "Puaka tunu"
+    ],
+    "drinks": [
+     "Kava",
+     "'Otai",
+     "Água de coco"
+    ],
+    "streetFoods": [
+     "Faikakai",
+     "Keke 'isite"
+    ],
+    "diningAdvice": "A melhor comida tradicional é preparada no forno de terra 'umu para o almoço de domingo; uma noite cultural ou um convite de uma família é a melhor forma de provar. No domingo, só os restaurantes de hotel abrem."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptador tipo I (Austrália/Nova Zelândia)",
+     "Roupas leves que cubram ombros e joelhos",
+     "Protetor solar seguro para recifes e equipamento de snorkel",
+     "Repelente (risco de dengue)"
+    ],
+    "safetyAndEtiquette": [
+     "Respeite o descanso de domingo; evite tomar banho de mar nesse dia.",
+     "Use roupa de banho só na praia e no hotel."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "I"
+    ],
+    "voltage": "240V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Tomadas tipo I da Austrália/Nova Zelândia (dois pinos chatos inclinados, às vezes com terra). Plugues europeus não encaixam; o adaptador é indispensável."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "A água da torneira não é considerada segura; beba água engarrafada, fervida ou de chuva tratada.",
+    "vaccines": [
+     "Hepatite A e febre tifoide",
+     "Vacinas de rotina",
+     "Proteção contra a dengue (evite picadas)",
+     "Febre amarela: certificado só se você chegar de um país de risco"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "933"
+   },
+   "tipping": {
+    "custom": "Gorjeta não é costume nem é esperada.",
+    "standardPercent": 0,
+    "rule": "optional",
+    "note": "Uma pequena gorjeta em lugares turísticos ou uma doação a uma igreja ou escola é bem-vinda."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Não há devolução para turistas (imposto sobre consumo de 15%)",
+    "minSpend": "—",
+    "customsNote": "Tonga não tem sistema tax-free. Não compre casco de tartaruga, coral nem osso de baleia; declare objetos de madeira e tecidos ao chegar à Nova Zelândia/Austrália."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "US$ 2 - 5",
+    "topCarriers": [
+     "Digicel Tonga",
+     "U-Call (TCC)"
+    ],
+    "airportSimTrapWarning": "As eSIMs internacionais são limitadas; um chip local da Digicel ou da U-Call, comprado com passaporte em Nuku'alofa, é mais barato e tem cobertura melhor."
+   },
+   "touristScams": [
+    {
+     "title": "Passeios de baleias sem licença",
+     "desc": "Barcos baratos sem licença podem operar sem equipamento de segurança nem seguro.",
+     "tip": "Escolha operadoras licenciadas pelo Ministério do Turismo de Tonga e leia avaliações."
+    },
+    {
+     "title": "Preço do táxi",
+     "desc": "Sem taxímetro, turistas podem ser cobrados caro.",
+     "tip": "Pergunte no hotel qual é a tarifa habitual e combine o valor antes de entrar."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Тонганская паанга (TOP)",

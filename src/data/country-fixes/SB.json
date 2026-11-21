@@ -1527,6 +1527,388 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Dólar das Ilhas Salomão (SBD)",
+   "plugType": "Tipo I, G (230V, 50Hz)",
+   "bestMonths": "Maio a outubro (mais seco, com os ventos alísios do sudeste; de novembro a abril é temporada de chuvas e ciclones)",
+   "safety": {
+    "crimeRateSummary": "Em Honiara há assaltos à noite, arrombamentos, roubos de carros e incidentes ligados ao álcool, além do risco de distúrbios repentinos, como em 2021. As ilhas mais afastadas costumam ser tranquilas, mas o atendimento médico é muito limitado e a malária é disseminada.",
+    "commonScams": [
+     "Táxis sem taxímetro que cobram a mais",
+     "Taxas de “kastom” não anunciadas em praias, naufrágios ou campos de batalha",
+     "Batedores de carteira no Mercado Central de Honiara"
+    ],
+    "safeTravelTips": [
+     "Não ande a pé por Honiara à noite; use o transporte do hotel ou um táxi de confiança.",
+     "Praias, recifes e campos de batalha pertencem a clãs; peça permissão aos donos e pergunte antes o valor da taxa de kastom.",
+     "Tome profilaxia contra malária e fique longe de protestos ou aglomerações."
+    ],
+    "emergencyNumbers": {
+     "police": "999",
+     "ambulance": "111",
+     "general": "999"
+    },
+    "safetyScore": 55,
+    "safetyLevel": "Risco moderado",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60"
+   },
+   "internet": {
+    "networkCoverage": "4G em Honiara, Gizo e Munda; sinal fraco ou inexistente nas ilhas mais afastadas",
+    "costPerGbUsd": "~US$ 3 - 8",
+    "esimAvailability": "Limitada",
+    "bestCarriers": [
+     "Our Telekom",
+     "bmobile-Vodafone"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Limitado",
+    "costLevel": "Caro",
+    "singleTicketUsd": "US$ 0,50 - 0,80",
+    "dailyPassUsd": "Sem passe diário",
+    "popularRideApps": [
+     "Micro-ônibus de Honiara",
+     "Táxis (preço combinado)",
+     "Solomon Airlines"
+    ],
+    "taxiAdvice": "Não há apps de transporte. Os micro-ônibus de Honiara são baratos; os táxis não têm taxímetro, então combine o preço. Entre as ilhas, a viagem é feita em voos domésticos da Solomon Airlines e em barcos, pouco frequentes."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 60 - 90",
+    "dailyBudgetMidrangeUsd": "US$ 150 - 250",
+    "budgetMealUsd": "US$ 6 - 12",
+    "coffeeUsd": "US$ 2 - 4",
+    "waterBottleUsd": "US$ 1 - 2",
+    "hostelDormUsd": "Sem albergues (pousadas por 30 - 60 $)",
+    "hotel3StarUsd": "US$ 120 - 220",
+    "flightCostIndex": "Muito caro",
+    "flightTip": "Normalmente se chega a Honiara (HIR) via Brisbane (Solomon Airlines, Virgin Australia), Nadi (Fiji Airways) ou Port Moresby (Air Niugini); há poucos voos domésticos, então reserve tudo junto."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "As mulheres devem usar saia ou calça que cubra os joelhos; não circule pelas aldeias em trajes de banho.",
+     "A terra e os recifes pertencem aos clãs (kastom); entrar, pescar ou pegar cocos sem permissão é falta de respeito.",
+     "O domingo é dia de igreja e descanso; nas aldeias há poucas atividades e barcos."
+    ],
+    "festivals": [
+     "Dia da Independência (7 de julho)",
+     "Celebração do desembarque em Guadalcanal (7 de agosto)",
+     "Natal e celebrações comunitárias nas igrejas"
+    ],
+    "lifestyle": "A vida nas aldeias se baseia nos laços de clã e “wantok”, na pesca e nas hortas. Na lagoa de Langa Langa (Malaita), o dinheiro de conchas ainda é usado em cerimônias, e mascar bétel é comum."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Lagoa de Marovo (uma das maiores lagoas de água salgada do mundo)",
+     "Locais da Segunda Guerra Mundial em Guadalcanal (Bloody Ridge, Museu de Vilu)",
+     "Gizo e ilha Kennedy",
+     "Munda e a ilha das Caveiras, na lagoa Roviana",
+     "Lagoa de Langa Langa (Malaita)",
+     "Naufrágios da praia de Bonegi"
+    ],
+    "bestSeasons": "Maio a outubro (mais seco, com os ventos alísios do sudeste; de novembro a abril é temporada de chuvas e ciclones)",
+    "travelStyleTip": "As Ilhas Salomão são ideais para mergulho em lugares intocados e para cultura, mas a infraestrutura é básica; planeje com flexibilidade conforme voos e barcos e conte com ecolodges familiares."
+   },
+   "religion": {
+    "primaryReligions": "Cristãos (~95 %: Igreja Anglicana da Melanésia ~30 %, católicos ~19 %, Igreja Evangélica dos Mares do Sul ~17 %, adventistas ~12 %, Igreja Unida ~10 %)",
+    "respectNorms": "Vista-se de forma discreta nos cultos de domingo; nas aldeias adventistas, o sábado é sagrado. Só entre em santuários ancestrais, como os de caveiras, com permissão.",
+    "sacredSites": [
+     "Catedral da Santa Cruz, Honiara",
+     "Catedral anglicana de São Barnabé, Honiara",
+     "Santuário ancestral da ilha das Caveiras (Roviana)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Inglês (oficial); a língua franca é o pijin das Ilhas Salomão, e são faladas mais de 70 línguas.",
+    "englishProficiency": "Médio em Honiara e nos hotéis; nas aldeias, predomina o pijin.",
+    "phrases": [
+     {
+      "phrase": "Halo",
+      "meaning": "Olá",
+      "translation": "Olá",
+      "pronunciation": "HAH-loh"
+     },
+     {
+      "phrase": "Tanggio tumas",
+      "meaning": "Muito obrigado(a)",
+      "translation": "Muito obrigado(a)",
+      "pronunciation": "TAHNG-ee-oh too-MAHS"
+     },
+     {
+      "phrase": "Haomas nao?",
+      "meaning": "Quanto custa?",
+      "translation": "Quanto custa?",
+      "pronunciation": "HOW-mahs now"
+     },
+     {
+      "phrase": "Mi no savve",
+      "meaning": "Não entendo",
+      "translation": "Não entendo",
+      "pronunciation": "mee noh SAH-veh"
+     },
+     {
+      "phrase": "Lukim iu",
+      "meaning": "Até logo",
+      "translation": "Até logo",
+      "pronunciation": "LOO-keem yoo"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "As ilhas foram povoadas há dezenas de milhares de anos. O espanhol Álvaro de Mendaña chegou em 1568. Protetorado britânico a partir de 1893, foram palco da campanha de Guadalcanal (1942–43). A independência veio em 7 de julho de 1978; depois das tensões internas de 1998–2003, a missão regional RAMSI atuou no país até 2017. Honiara sediou os Jogos do Pacífico de 2023.",
+    "milestones": [
+     "1568 – Mendaña chega às ilhas",
+     "1942–1943 – Campanha de Guadalcanal",
+     "1978 – Independência",
+     "2023 – Jogos do Pacífico em Honiara"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Peixe e mandioca em creme de coco (no forno motu)",
+     "Folhas de slippery cabbage no leite de coco",
+     "Atum e peixes de recife frescos"
+    ],
+    "traditionalDrinks": [
+     "Água de coco fresca",
+     "Cerveja SolBrew",
+     "Chá de folha de limoeiro"
+    ],
+    "streetFoodAndDesserts": [
+     "Pudim de mandioca",
+     "Fruta-pão assada",
+     "Peixe frito do mercado"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Sir Peter Kenilorea (primeiro primeiro-ministro)",
+     "Sir Jacob Vouza (herói batedor da Segunda Guerra Mundial)",
+     "Jenly Tegu Wini (halterofilista olímpica)"
+    ],
+    "strongSectors": [
+     "Madeira e exploração florestal",
+     "Pesca e conservas de atum (Noro)",
+     "Copra, cacau e óleo de palma"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Hotéis e lojas maiores de Honiara aceitam cartão; nas ilhas mais afastadas, só dinheiro (SBD) e não há caixas eletrônicos: leve o suficiente.",
+    "tippingCulture": "Gorjeta não é costume; um agradecimento sincero basta.",
+    "economicPillars": "Madeira, pesca, agricultura (copra, cacau, palma), mineração e ajuda externa; a maioria da população vive da agricultura e da pesca de subsistência."
+   }
+  },
+  "itin": {
+   "routeName": "História de guerra e lagoas: Honiara, Marovo, Munda e Gizo",
+   "routeSummary": "Roteiro de 9 dias em voos domésticos e barcos, dos locais da Segunda Guerra Mundial em Honiara, em Guadalcanal, à lagoa de Marovo, na Província Ocidental, à lagoa Roviana, em Munda, e aos pontos de mergulho de Gizo.",
+   "totalDays": 9,
+   "idealDurationText": "Roteiro de 9 dias",
+   "bestSeason": "Maio a outubro (mais seco, com os ventos alísios do sudeste; de novembro a abril é temporada de chuvas e ciclones)",
+   "transportMode": "Voos domésticos da Solomon Airlines + barcos dos lodges e lanchas locais",
+   "paceLevel": "Tranquilo e flexível (no ritmo das ilhas)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Honiara (Guadalcanal e campos de batalha)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Mercado Central de Honiara",
+      "Museu Nacional",
+      "Bloody Ridge e Memorial de Guerra dos EUA",
+      "Museu de guerra de Vilu e naufrágios de Bonegi"
+     ],
+     "activities": [
+      "Veja produtos frescos e dinheiro de conchas no mercado.",
+      "Percorra os campos de batalha com um guia.",
+      "Faça snorkel sobre um naufrágio a partir da praia, em Bonegi."
+     ],
+     "foodAndDrinks": [
+      "Peixe frito do mercado",
+      "Cerveja SolBrew",
+      "Coco fresco"
+     ],
+     "criticalTips": [
+      "Nos campos de batalha e naufrágios, paga-se uma taxa de kastom aos donos; pergunte o valor antes.",
+      "Não toque em munição não detonada e não ande a pé à noite."
+     ],
+     "mapsQuery": "Honiara, Solomon Islands"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Lagoa de Marovo (ecolodges e mergulho)",
+     "recommendedDuration": "3 dias",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Lagoa imensa com centenas de ilhotas",
+      "Mergulhos de parede em Uepi",
+      "Aldeias de entalhadores em madeira"
+     ],
+     "activities": [
+      "Reme de canoa entre as ilhotas.",
+      "Mergulhe ou faça snorkel nas paredes de coral.",
+      "Visite entalhadores de ébano em uma aldeia."
+     ],
+     "foodAndDrinks": [
+      "Peixe e mandioca no motu",
+      "Slippery cabbage",
+      "Água de coco"
+     ],
+     "criticalTips": [
+      "Os voos para Seghe são poucos e podem ser cancelados por causa do tempo; combine os traslados com o lodge.",
+      "A eletricidade depende de geradores ou energia solar; leve carregador portátil e lanterna."
+     ],
+     "mapsQuery": "Marovo Lagoon, Solomon Islands"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Munda (lagoa Roviana e ilha das Caveiras)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Santuário ancestral da ilha das Caveiras",
+      "Destroços de aviões e navios da Segunda Guerra Mundial",
+      "Aldeias da lagoa Roviana"
+     ],
+     "activities": [
+      "Vá de barco até a ilha das Caveiras.",
+      "Mergulhe entre aviões afundados.",
+      "Prove comida tradicional em uma aldeia."
+     ],
+     "foodAndDrinks": [
+      "Peixe de recife grelhado",
+      "Pudim de mandioca",
+      "Chá de folha de limoeiro"
+     ],
+     "criticalTips": [
+      "A ilha das Caveiras é sagrada; pague a taxa de kastom e não toque nos crânios.",
+      "O risco de malária é alto; use manga comprida ao entardecer e mosquiteiro."
+     ],
+     "mapsQuery": "Munda, New Georgia, Solomon Islands"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Gizo (ilha Kennedy e jardins de coral)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Ilha Kennedy (história do PT-109)",
+      "Mercado e orla de Gizo",
+      "Jardins de coral e naufrágio do Toa Maru"
+     ],
+     "activities": [
+      "Mergulhe no naufrágio do Toa Maru.",
+      "Nade e faça um piquenique na ilha Kennedy.",
+      "Compre peixe e frutas na feira da manhã."
+     ],
+     "foodAndDrinks": [
+      "Peixe em creme de coco",
+      "Fruta-pão assada",
+      "Cerveja SolBrew"
+     ],
+     "criticalTips": [
+      "Não há caixas eletrônicos nas ilhas mais afastadas; leve dinheiro para hospedagem e barcos.",
+      "Mergulhe só com uma operadora certificada; não há câmara hiperbárica no país."
+     ],
+     "mapsQuery": "Gizo, Solomon Islands"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Peixe e mandioca em creme de coco",
+     "Slippery cabbage",
+     "Atum fresco"
+    ],
+    "drinks": [
+     "Água de coco",
+     "Cerveja SolBrew",
+     "Chá de folha de limoeiro"
+    ],
+    "streetFoods": [
+     "Pudim de mandioca",
+     "Peixe frito"
+    ],
+    "diningAdvice": "Nas ilhas mais afastadas, as refeições são compartilhadas no lodge; peixe e coco são fartos, e frutas e verduras dependem da época. Avise com antecedência se segue alguma dieta especial."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Profilaxia contra malária, repelente e mosquiteiro",
+     "Adaptador tipo I",
+     "Dinheiro suficiente em SBD",
+     "Seu próprio equipamento de snorkel"
+    ],
+    "safetyAndEtiquette": [
+     "Não entre em terras nem recifes sem permissão; pergunte antes sobre as taxas de kastom.",
+     "Não recolha nem leve para fora do país vestígios da Segunda Guerra Mundial."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "I",
+     "G"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Principalmente tomadas australianas tipo I e, em alguns lugares, britânicas tipo G; leve adaptadores I e G."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Não beba água da torneira; use água engarrafada, fervida ou filtrada.",
+    "vaccines": [
+     "Profilaxia contra malária (risco em todo o país)",
+     "Hepatite A e febre tifoide",
+     "Vacinas de rotina; proteção contra a dengue",
+     "Febre amarela: certificado se você vier de um país de risco"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "111"
+   },
+   "tipping": {
+    "custom": "Gorjeta não é costume.",
+    "standardPercent": 0,
+    "rule": "optional",
+    "note": "Alguns lodges têm uma caixinha coletiva; uma contribuição para a aldeia faz mais sentido."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Sem restituição de impostos para turistas",
+    "minSpend": "Não se aplica",
+    "customsNote": "As Ilhas Salomão não devolvem impostos a turistas. É proibido levar para fora do país vestígios da Segunda Guerra Mundial, e há controles de biossegurança para alimentos e plantas."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "US$ 3 - 8",
+    "topCarriers": [
+     "Our Telekom",
+     "bmobile-Vodafone"
+    ],
+    "airportSimTrapWarning": "Há poucos eSIMs internacionais; compre um chip local com o passaporte no aeroporto de Honiara ou em uma loja da Our Telekom/bmobile. Nas ilhas mais afastadas, pode não haver sinal."
+   },
+   "touristScams": [
+    {
+     "title": "Taxa de kastom inesperada",
+     "desc": "Depois de visitar uma praia, um naufrágio ou um campo de batalha, várias pessoas podem cobrar uma taxa.",
+     "tip": "Combine antes com seu guia o valor e a quem pagar."
+    },
+    {
+     "title": "Preço inflado nos táxis",
+     "desc": "Sem taxímetro, os turistas podem ouvir preços altos.",
+     "tip": "Combine o preço antes e pergunte no hotel qual é a tarifa normal."
+    },
+    {
+     "title": "Batedores de carteira no mercado",
+     "desc": "Na multidão do Mercado Central de Honiara, carteiras e celulares podem ser roubados.",
+     "tip": "Deixe os objetos de valor no hotel e leve a bolsa na frente do corpo."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Доллар Соломоновых Островов (SBD)",

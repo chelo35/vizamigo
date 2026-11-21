@@ -1507,6 +1507,383 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Dólar surinamês (SRD)",
+   "bestMonths": "Agosto a novembro (longa estação seca, ideal para o interior) · Fevereiro a abril é uma curta estação seca; abril a agosto e dezembro a janeiro são chuvosos. As tartarugas marinhas desovam em Galibi de março a agosto",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Em geral é um país tranquilo; em Paramaribo há furtos por arrastão, arrombamentos de carros e assaltos noturnos. O risco aumenta nas áreas de garimpo ilegal de ouro do interior.",
+    "commonScams": [
+     "Cambistas de rua que prometem cotação melhor que a oficial (notas falsas ou troco a menos)",
+     "Tarifas de táxi infladas do aeroporto (Zanderij, ~45 km) até a cidade",
+     "Agências sem licença no interior, com barcos e hospedagens inseguros"
+    ],
+    "safeTravelTips": [
+     "Em Paramaribo, à noite pegue um táxi em vez de caminhar pelo Waterkant e pelo Palmentuin.",
+     "Contrate os passeios ao interior com agências reconhecidas e peça colete salva-vidas nos barcos.",
+     "Não deixe objetos de valor à vista no carro."
+    ],
+    "emergencyNumbers": {
+     "police": "115",
+     "ambulance": "113",
+     "general": "115"
+    }
+   },
+   "internet": {
+    "networkCoverage": "4G bom em Paramaribo e no litoral; sinal muito fraco ou inexistente no interior e nas aldeias ribeirinhas",
+    "costPerGbUsd": "US$ 1,00 - 3,00",
+    "esimAvailability": "Limitada (há alguns eSIMs internacionais; o chip local da Digicel/Telesur é mais confiável)",
+    "bestCarriers": [
+     "Telesur",
+     "Digicel"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Precária a razoável (sem trens; micro-ônibus particulares e táxis; barcos e aviões de pequeno porte para o interior)",
+    "costLevel": "Moderado",
+    "singleTicketUsd": "US$ 0,30 - 1,00",
+    "dailyPassUsd": "Não existe (carro alugado US$ 40 - 70 por dia)",
+    "popularRideApps": [
+     "Não há aplicativos internacionais difundidos (nem Uber nem Bolt)",
+     "Empresas de táxi por telefone",
+     "Micro-ônibus particulares"
+    ],
+    "taxiAdvice": "Os táxis não têm taxímetro; combine o preço ou ligue para uma empresa recomendada pelo hotel. A mão é inglesa (dirige-se pela esquerda). O aeroporto fica a ~45 km: reserve o traslado. Para o interior (Alto Suriname), em geral vai-se de carro e barco dentro de um pacote turístico."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 40 - 60",
+    "dailyBudgetMidrangeUsd": "US$ 100 - 170",
+    "budgetMealUsd": "US$ 5 - 10",
+    "coffeeUsd": "US$ 1,50 - 3,00",
+    "waterBottleUsd": "US$ 0,60 - 1,20",
+    "hostelDormUsd": "US$ 15 - 25",
+    "hotel3StarUsd": "US$ 60 - 110",
+    "flightCostIndex": "Alto (longa distância via Amsterdã)",
+    "flightTip": "O jeito mais simples de chegar a Paramaribo (PBM) é um voo direto saindo de Amsterdã com a KLM, a Surinam Airways ou a TUI; os preços sobem nas férias escolares holandesas (julho–agosto, dezembro)."
+   },
+   "plugType": "Tipo A, B, C, F (127V, 60Hz)"
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Um país multicultural (hindustanis, crioulos, javaneses, quilombolas — os maroons —, chineses e indígenas); respeite igualmente as tradições de todos.",
+     "Nas aldeias maroons e indígenas, peça permissão antes de fotografar e demonstre respeito ao chefe (kapitein).",
+     "Cumprimenta-se com um aperto de mão; entre conhecidos, beijos no rosto são comuns."
+    ],
+    "festivals": [
+     "Keti Koti (1º de julho; abolição da escravidão)",
+     "Phagwa (março; festa hindu das cores)",
+     "Owru Yari (31 de dezembro; celebração com fogos pagara em Paramaribo)"
+    ],
+    "lifestyle": "Uma vida tranquila em que mesquita e sinagoga são vizinhas de porta e as comunidades celebram juntas suas festas; jantares no Waterkant, piqueniques à beira do rio e a solidariedade “wan pipel” (um só povo)."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Centro histórico de Paramaribo (UNESCO, arquitetura holandesa de madeira)",
+     "Forte Zeelandia",
+     "Plantações de Commewijne (Peperpot, Fort Nieuw Amsterdam)",
+     "Parque Natural Brownsberg e represa de Brokopondo",
+     "Aldeias maroons do Alto Suriname",
+     "Reserva Natural do Suriname Central (UNESCO; Raleighvallen, Voltzberg)"
+    ],
+    "bestSeasons": "Agosto a novembro (longa estação seca, ideal para o interior) · Fevereiro a abril é uma curta estação seca; abril a agosto e dezembro a janeiro são chuvosos. As tartarugas marinhas desovam em Galibi de março a agosto",
+    "travelStyleTip": "Explore Paramaribo por conta própria; para o interior (floresta, rios, aldeias maroons), o mais prático são pacotes de 3-4 dias com hospedagem, barco e refeições."
+   },
+   "religion": {
+    "primaryReligions": "Cristianismo (~50 %; protestante e católico), hinduísmo (~20 %), islã (~14 %), além do winti e de crenças tradicionais javanesas",
+    "respectNorms": "Em mesquitas e templos, tire os sapatos e cubra ombros e joelhos; só assista a cerimônias winti se for convidado.",
+    "sacredSites": [
+     "Catedral de São Pedro e São Paulo (um dos maiores edifícios de madeira do mundo)",
+     "Mesquita da Keizerstraat e a sinagoga vizinha Neveh Shalom",
+     "Templo hindu Arya Dewaker"
+    ]
+   },
+   "language": {
+    "officialLanguages": "O holandês é oficial; a língua franca do dia a dia é o sranan tongo. Também se falam sarnami hindustani, javanês, línguas maroons e inglês.",
+    "englishProficiency": "Médio; em Paramaribo muita gente entende inglês básico, embora o holandês seja mais comum.",
+    "phrases": [
+     {
+      "phrase": "Odi!",
+      "meaning": "Olá!",
+      "translation": "Olá!",
+      "pronunciation": "OH-dee"
+     },
+     {
+      "phrase": "Fa yu de?",
+      "meaning": "Como vai?",
+      "translation": "Como vai?",
+      "pronunciation": "fa yoo DEH"
+     },
+     {
+      "phrase": "Grantangi",
+      "meaning": "Obrigado(a)",
+      "translation": "Obrigado(a)",
+      "pronunciation": "gran-TAN-gee"
+     },
+     {
+      "phrase": "Omeni a e kost?",
+      "meaning": "Quanto custa?",
+      "translation": "Quanto custa?",
+      "pronunciation": "oh-MEH-nee a eh KOST"
+     },
+     {
+      "phrase": "Mi no sabi",
+      "meaning": "Não sei",
+      "translation": "Não sei",
+      "pronunciation": "mee no SAH-bee"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Terra de povos indígenas, passou para os Países Baixos com o Tratado de Breda de 1667 (em troca, os ingleses ficaram com Nova Amsterdã, a atual Nova York). Os maroons que fugiram das plantações escravistas fundaram aldeias livres na floresta; a escravidão foi abolida em 1863 e chegaram trabalhadores contratados da Índia, de Java e da China. O país se tornou independente em 1975.",
+    "milestones": [
+     "1667: Tratado de Breda; o Suriname passa para os Países Baixos",
+     "1863: Abolição da escravidão (Keti Koti)",
+     "1873: Chegada dos primeiros trabalhadores contratados da Índia",
+     "1975: Independência (25 de novembro)"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Pom (gratinado de raiz de pomtajer ralada com frango)",
+     "Roti (com frango ao curry, batatas e feijão-de-metro)",
+     "Moksi alesi (arroz misto com carne e peixe)"
+    ],
+    "traditionalDrinks": [
+     "Dawet (bebida javanesa de leite de coco e capim-limão)",
+     "Cerveja Parbo",
+     "Rum Borgoe"
+    ],
+    "streetFoodAndDesserts": [
+     "Broodje pom (sanduíche de pom)",
+     "Sopa saoto (sopa javanesa de frango)",
+     "Bojo (bolo de coco e mandioca)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Anton de Kom (escritor e pensador anticolonial)",
+     "Edgar Davids (jogador de futebol nascido em Paramaribo)",
+     "Clarence Seedorf (nascido em Paramaribo, quatro vezes campeão da Champions League)"
+    ],
+    "strongSectors": [
+     "Mineração de ouro",
+     "Petróleo (Staatsolie) e projetos de petróleo em alto-mar",
+     "Arroz, bananas e madeira"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Além do SRD, dólares e euros às vezes são aceitos em compras grandes. Cartões funcionam em hotéis e supermercados, mas os estrangeiros podem falhar nos caixas eletrônicos; leve dinheiro suficiente (USD/EUR) e troque em casas de câmbio oficiais.",
+    "tippingCulture": "Nos restaurantes é comum deixar 10 % (se o serviço não estiver incluído); guias e barqueiros agradecem a gorjeta.",
+    "economicPillars": "Ouro, petróleo, agricultura (arroz, bananas), madeira e serviços."
+   }
+  },
+  "itin": {
+   "routeName": "Suriname: de Paramaribo à floresta",
+   "routeSummary": "Um roteiro de 10 dias que sai de Paramaribo, a capital de madeira reconhecida pela UNESCO, passa pelas plantações de Commewijne, pelo planalto de Brownsberg e pela represa de Brokopondo, e termina nas aldeias maroons do Alto Suriname.",
+   "totalDays": 10,
+   "bestSeason": "Agosto a novembro (longa estação seca, ideal para o interior) · Fevereiro a abril é uma curta estação seca; abril a agosto e dezembro a janeiro são chuvosos. As tartarugas marinhas desovam em Galibi de março a agosto",
+   "transportMode": "Táxi e a pé em Paramaribo; bicicleta e ferry/barco até Commewijne; carro até Brownsberg e Atjoni e, depois, canoa a motor (korjaal) pelo Alto Suriname",
+   "paceLevel": "Aventura e natureza (hospedagem simples no interior)",
+   "signatureGastronomy": {
+    "dishes": [
+     "Pom",
+     "Roti",
+     "Moksi alesi"
+    ],
+    "drinks": [
+     "Dawet",
+     "Cerveja Parbo",
+     "Rum Borgoe"
+    ],
+    "streetFoods": [
+     "Broodje pom",
+     "Sopa saoto",
+     "Bara (bolinho frito de ervilha)"
+    ],
+    "diningAdvice": "Para uma refeição rápida e caprichada, vá às lojas hindustanis de roti e, para comida javanesa, aos warungs do bairro de Blauwgrond; as porções são grandes."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptador (mistura de A/B e C/F, 127V – use aparelhos bivolt)",
+     "Certificado de febre amarela",
+     "Repelente, capa de chuva e roupas de secagem rápida",
+     "Bolsa estanque (para os barcos)"
+    ],
+    "safetyAndEtiquette": [
+     "Peça permissão para fotografar nas aldeias e não entre em locais sagrados sem guia.",
+     "Tenha cuidado com o dinheiro e troque apenas em casas de câmbio oficiais."
+    ]
+   },
+   "idealDurationText": "Roteiro de 10 dias",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Paramaribo",
+     "recommendedDuration": "3 dias",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Forte Zeelandia e Praça da Independência",
+      "Catedral de madeira de São Pedro e São Paulo",
+      "Mesquita e sinagoga lado a lado na Keizerstraat",
+      "Mercado Central e o Waterkant"
+     ],
+     "activities": [
+      "Percorra a pé as casas de madeira do centro histórico.",
+      "Visite o Museu do Suriname no Forte Zeelandia.",
+      "Jante nas barracas do Waterkant ao entardecer."
+     ],
+     "foodAndDrinks": [
+      "Broodje pom",
+      "Roti",
+      "Dawet"
+     ],
+     "criticalTips": [
+      "Troque dinheiro em casas de câmbio oficiais.",
+      "À noite, pegue táxi em vez de caminhar pelo centro."
+     ],
+     "mapsQuery": "Paramaribo, Suriname"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Plantações de Commewijne",
+     "recommendedDuration": "1-2 dias",
+     "durationBadge": "1-2 dias",
+     "highlights": [
+      "Museu a céu aberto Fort Nieuw Amsterdam",
+      "Parque natural Peperpot (macacos e aves)",
+      "Ruínas da plantação de açúcar Marienburg",
+      "Observação de botos-cinza no rio"
+     ],
+     "activities": [
+      "Alugue uma bicicleta e percorra a rota das plantações.",
+      "Faça um passeio de barco ao entardecer para ver os botos.",
+      "Almoce em uma casa de fazenda."
+     ],
+     "foodAndDrinks": [
+      "Bami e saoto à moda javanesa",
+      "Água de coco fresca"
+     ],
+     "criticalTips": [
+      "Use manga comprida e repelente contra o sol e os mosquitos.",
+      "Confira antes o horário de volta do barco ou do ferry."
+     ],
+     "mapsQuery": "Fort Nieuw Amsterdam, Suriname"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Brownsberg e represa de Brokopondo",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Cachoeiras do parque Brownsberg (Irene, Leo)",
+      "Vistas da represa de Brokopondo",
+      "Ilha Tonka"
+     ],
+     "activities": [
+      "Procure macacos e tucanos nas trilhas da floresta logo cedo.",
+      "Caminhe até as cachoeiras.",
+      "Atravesse o lago de barco até a Ilha Tonka."
+     ],
+     "foodAndDrinks": [
+      "Refeições de acampamento (arroz, frango, peixe local)",
+      "Cerveja Parbo"
+     ],
+     "criticalTips": [
+      "A estrada do parque é íngreme e escorregadia com chuva; melhor ir de 4x4.",
+      "A hospedagem é básica; leve comida e água."
+     ],
+     "mapsQuery": "Brownsberg Nature Park, Suriname"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Alto Suriname (aldeias maroons)",
+     "recommendedDuration": "3-4 dias",
+     "durationBadge": "3-4 dias",
+     "highlights": [
+      "Viagem de korjaal a partir de Atjoni",
+      "Aldeias maroons saamaka (por exemplo, o museu de Pikin Slee)",
+      "Lodges na selva em ilhas fluviais"
+     ],
+     "activities": [
+      "Visite uma aldeia maroon com um guia local.",
+      "Tome banho de rio e atravesse as corredeiras (soela) de korjaal.",
+      "Participe de uma caminhada noturna pela floresta."
+     ],
+     "foodAndDrinks": [
+      "Pão de mandioca e peixe de rio",
+      "Frutas locais"
+     ],
+     "criticalTips": [
+      "Pergunte ao seu guia se vale levar pequenos presentes (material escolar, por exemplo).",
+      "Quase não há internet; baixe mapas off-line antes."
+     ],
+     "mapsQuery": "Atjoni, Suriname"
+    }
+   ]
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "A",
+     "B",
+     "C",
+     "F"
+    ],
+    "voltage": "127V",
+    "frequency": "60Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "O Suriname usa 127V/60Hz com tomadas mistas (A/B americanas e C/F europeias). Os plugues europeus encaixam em algumas, mas a voltagem é baixa; use apenas carregadores de 100-240V, já que aparelhos de 230V, como secadores de cabelo, não vão funcionar direito."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "A água encanada de Paramaribo é tratada e os moradores a bebem, mas, por causa da tubulação antiga, recomenda-se ao visitante beber água mineral; no interior, beba sempre água mineral ou tratada.",
+    "vaccines": [
+     "Febre amarela (recomendada; certificado obrigatório se você chegar de um país de risco)",
+     "Hepatite A e febre tifoide",
+     "Risco baixo de malária no interior; proteção contra mosquitos por causa da dengue e da chikungunya"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "113"
+   },
+   "tipping": {
+    "custom": "Opcional; nos restaurantes é comum deixar 10 % se o serviço não estiver incluído.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Nos passeios ao interior, é costume dar gorjeta ao guia e ao barqueiro no final."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Não há",
+    "minSpend": "Não se aplica",
+    "customsNote": "O Suriname não devolve o IVA (BTW) a turistas. Levar ouro, fauna protegida (aves, produtos de tartaruga) ou madeira tropical exige autorização ou é proibido."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "US$ 1,00 - 3,00",
+    "topCarriers": [
+     "Telesur",
+     "Digicel"
+    ],
+    "airportSimTrapWarning": "No aeroporto a venda de chips é limitada; sai mais barato comprar com passaporte nas lojas da Digicel ou da Telesur em Paramaribo. A cobertura de eSIM internacional pode ser irregular."
+   },
+   "touristScams": [
+    {
+     "title": "Cambistas de rua",
+     "desc": "No centro, alguns prometem cotação melhor, mas entregam SRD falsos ou a menos.",
+     "tip": "Use apenas casas de câmbio oficiais ou bancos e conte o dinheiro ali mesmo."
+    },
+    {
+     "title": "Tarifas de táxi do aeroporto",
+     "desc": "Em chegadas noturnas, o preço até Paramaribo pode subir de forma arbitrária.",
+     "tip": "Reserve o traslado com o seu hotel ou uma empresa confiável e confirme o preço por escrito."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Суринамский доллар (SRD)",

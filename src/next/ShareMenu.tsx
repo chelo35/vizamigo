@@ -22,7 +22,7 @@ export const ShareMenu: React.FC<{ title: string; text?: string; url?: string }>
   const copy = async (after?: string) => {
     try {
       await navigator.clipboard.writeText(link());
-      setNote(after || l('Bağlantı kopyalandı', 'Link copied', 'Link kopiert', 'Enlace copiado', 'Ссылка скопирована'));
+      setNote(after || l('Bağlantı kopyalandı', 'Link copied', 'Link kopiert', 'Enlace copiado', 'Ссылка скопирована', 'Link copiado'));
     } catch {
       setNote(link());
     }
@@ -38,7 +38,7 @@ export const ShareMenu: React.FC<{ title: string; text?: string; url?: string }>
         return;
       }
     }
-    await copy(l(`Bağlantı kopyalandı, ${name}'da yapıştırabilirsin`, `Link copied, paste it in ${name}`, `Link kopiert – in ${name} einfügen`, `Enlace copiado, pégalo en ${name}`, `Ссылка скопирована, вставьте в ${name}`));
+    await copy(l(`Bağlantı kopyalandı, ${name}'da yapıştırabilirsin`, `Link copied, paste it in ${name}`, `Link kopiert – in ${name} einfügen`, `Enlace copiado, pégalo en ${name}`, `Ссылка скопирована, вставьте в ${name}`, `Link copiado, cole no ${name}`));
   };
   const items: Array<[string, string, () => void]> = [
     ['WhatsApp', '#25D366', () => go(`https://wa.me/?text=${encodeURIComponent(msg())}`)],
@@ -47,13 +47,13 @@ export const ShareMenu: React.FC<{ title: string; text?: string; url?: string }>
     ['Instagram', '#E1306C', () => void app('Instagram')],
     ['TikTok', '#111111', () => void app('TikTok')],
     ['X', '#111111', () => go(`https://x.com/intent/post?text=${encodeURIComponent(text || title)}&url=${encodeURIComponent(link())}`)],
-    [l('E-posta', 'Email', 'E-Mail', 'Email', 'Email'), '#0d6e78', () => { window.location.href = `mailto:?subject=${encodeURIComponent(title)}&body=${encodeURIComponent(msg())}`; }],
-    [l('Bağlantıyı kopyala', 'Copy link', 'Link kopieren', 'Copiar enlace', 'Копировать ссылку'), '#5b6b73', () => void copy()]
+    [l('E-posta', 'Email', 'E-Mail', 'Email', 'Email', 'E-mail'), '#0d6e78', () => { window.location.href = `mailto:?subject=${encodeURIComponent(title)}&body=${encodeURIComponent(msg())}`; }],
+    [l('Bağlantıyı kopyala', 'Copy link', 'Link kopieren', 'Copiar enlace', 'Копировать ссылку', 'Copiar link'), '#5b6b73', () => void copy()]
   ];
   return (
     <div className="vz-share" ref={ref}>
       <Btn variant="soft" icon="share" onClick={() => setOpen((o) => !o)} aria-expanded={open} aria-haspopup="menu">
-        {l('Paylaş', 'Share', 'Teilen', 'Compartir', 'Поделиться')}
+        {l('Paylaş', 'Share', 'Teilen', 'Compartir', 'Поделиться', 'Compartilhar')}
       </Btn>
       {open && (
         <div className="vz-share-pop" role="menu">

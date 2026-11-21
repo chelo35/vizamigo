@@ -1507,6 +1507,383 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Escudo cabo-verdiano (CVE; atrelado ao euro, 1 € ≈ 110 CVE)",
+   "plugType": "Tipo C, F (230V, 50Hz)",
+   "bestMonths": "Novembro – junho (seco e ensolarado; dezembro – março com muito vento, ideal para kitesurf) · agosto – outubro é a curta estação das chuvas, quente e úmida",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Em geral, é um país tranquilo e acolhedor. Em Praia (nos arredores do Plateau e de Achada Santo António) e em Mindelo há furtos com puxão e assaltos à noite, além de furtos na praia de Santa Maria, em Sal.",
+    "commonScams": [
+     "Em Sal e Boa Vista, vendedores amarram uma pulseira “de presente” e depois pedem dinheiro, ou vendem suvenires caríssimos.",
+     "Os passeios e quadriciclos baratos vendidos na rua não têm seguro e podem cobrar valores altos por danos.",
+     "Sem taxímetro, na chegada podem cobrar uma tarifa inflada."
+    ],
+    "safeTravelTips": [
+     "Em Praia e Mindelo, pegue táxi em vez de andar a pé à noite.",
+     "As correntes do Atlântico são fortes; nade só em praias abrigadas e sinalizadas.",
+     "As balsas entre as ilhas podem ser canceladas por causa do tempo; deixe um dia de folga antes do voo de volta."
+    ],
+    "emergencyNumbers": {
+     "police": "132",
+     "ambulance": "130",
+     "general": "132"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Bom 4G nas ilhas principais e nas cidades; sinal fraco nas montanhas de Santo Antão e do Fogo",
+    "costPerGbUsd": "US$ 1,50 - 4",
+    "esimAvailability": "Média (os eSIMs internacionais funcionam; o chip local exige passaporte)",
+    "bestCarriers": [
+     "CVMóvel (Cabo Verde Telecom)",
+     "Unitel T+"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Moderado (micro-ônibus aluguer e táxis nas ilhas; balsas e voos domésticos entre as ilhas)",
+    "costLevel": "Moderado",
+    "singleTicketUsd": "Aluguer 1 - 5 $; balsa Mindelo – Porto Novo ~9 - 12 $",
+    "dailyPassUsd": "Não existe (tour pela ilha com motorista 60 - 100 $/dia)",
+    "popularRideApps": [
+     "Sem Uber/Bolt – táxis e aluguer"
+    ],
+    "taxiAdvice": "Não há apps de transporte. Os táxis não têm taxímetro: combine o preço. A opção barata e local é o aluguer, um micro-ônibus compartilhado que parte quando lota."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 40 - 65",
+    "dailyBudgetMidrangeUsd": "US$ 100 - 170",
+    "budgetMealUsd": "US$ 6 - 12",
+    "coffeeUsd": "US$ 1 - 2",
+    "waterBottleUsd": "US$ 0,80 - 1,50",
+    "hostelDormUsd": "US$ 15 - 25",
+    "hotel3StarUsd": "US$ 50 - 110",
+    "flightCostIndex": "Moderado – alto (sem voos diretos da Turquia)",
+    "flightTip": "Sal (SID), Boa Vista (BVC), Praia (RAI) e São Vicente (VXE) são acessíveis via Lisboa (TAP) ou em voos fretados da Europa. Confira antes os horários dos voos e balsas entre as ilhas."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Cumprimente todo mundo (“Bon dia”); a hospitalidade, chamada de “morabeza”, é orgulho nacional.",
+     "Não ande pelo centro das cidades de roupa de banho ou sem camisa.",
+     "Não tenha pressa; “no stress” é o ritmo de vida das ilhas."
+    ],
+    "festivals": [
+     "Carnaval de Mindelo (fevereiro)",
+     "Festival de Música da Baía das Gatas (agosto, São Vicente)",
+     "Festa de São João (junho, Porto Novo e Brava)"
+    ],
+    "lifestyle": "Um país insular descontraído que mistura as culturas africana e portuguesa, onde a morna e a coladeira fazem parte do dia a dia e uma grande diáspora vive no exterior."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Cidade Velha (UNESCO, Santiago)",
+     "Mindelo e Monte Verde (São Vicente)",
+     "Vales de Santo Antão (Paul, Ribeira Grande, cratera de Cova)",
+     "Vulcão do Fogo e Chã das Caldeiras",
+     "Cratera salina de Pedra de Lume (Sal)",
+     "Praia de Santa Maria (Sal)"
+    ],
+    "bestSeasons": "Novembro – junho (seco e ensolarado; dezembro – março com muito vento, ideal para kitesurf) · agosto – outubro é a curta estação das chuvas, quente e úmida",
+    "travelStyleTip": "Cada ilha é diferente: Sal e Boa Vista para praia, Santiago para cultura, São Vicente para música, Santo Antão e Fogo para trilhas. O ideal é combinar 2 – 3 ilhas de avião e balsa."
+   },
+   "religion": {
+    "primaryReligions": "Católicos (~77 %), protestantes e outros cristãos (nazarenos, adventistas ~10 %), sem religião e outros",
+    "respectNorms": "Cubra ombros e joelhos nas igrejas; acompanhe com respeito as procissões das festas.",
+    "sacredSites": [
+     "Igreja de Nossa Senhora do Rosário (1495, Cidade Velha)",
+     "Ruínas da catedral da Cidade Velha",
+     "Igreja de Nossa Senhora da Luz (Mindelo)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "O português é o idioma oficial; a língua do dia a dia é o crioulo cabo-verdiano (kriolu/kabuverdianu), com variantes conforme a ilha (badiu em Santiago, sanvisentí em São Vicente).",
+    "englishProficiency": "Médio; bom nas turísticas Sal e Boa Vista; nas outras ilhas, o português/francês ajuda mais.",
+    "phrases": [
+     {
+      "phrase": "Bon dia!",
+      "meaning": "Bom dia! / Olá (kriolu)",
+      "translation": "Bom dia! / Olá (kriolu)",
+      "pronunciation": "bon di-a"
+     },
+     {
+      "phrase": "Modi ki bu sta?",
+      "meaning": "Como você está? (kriolu de Santiago)",
+      "translation": "Como você está? (kriolu de Santiago)",
+      "pronunciation": "mo-di ki bu sta"
+     },
+     {
+      "phrase": "Obrigadu",
+      "meaning": "Obrigado (kriolu)",
+      "translation": "Obrigado (kriolu)",
+      "pronunciation": "o-bri-ga-du"
+     },
+     {
+      "phrase": "Kantu ki e?",
+      "meaning": "Quanto custa? (kriolu)",
+      "translation": "Quanto custa? (kriolu)",
+      "pronunciation": "kan-tu ki e"
+     },
+     {
+      "phrase": "Nu bai!",
+      "meaning": "Vamos embora! (kriolu)",
+      "translation": "Vamos embora! (kriolu)",
+      "pronunciation": "nu bay"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "As ilhas eram desabitadas até a chegada dos portugueses na década de 1460. Ribeira Grande, em Santiago (hoje Cidade Velha), foi a primeira cidade colonial europeia nos trópicos e uma escala-chave do tráfico atlântico de escravizados. No século XIX, Mindelo cresceu como porto de abastecimento de carvão. Após a luta liderada por Amílcar Cabral, a independência veio em 5 de julho de 1975; desde 1991, o país é uma democracia multipartidária estável.",
+    "milestones": [
+     "1462: Fundação de Ribeira Grande",
+     "1975: Independência",
+     "2009: Cidade Velha entra para a lista da UNESCO",
+     "2024: A OMS certifica o país como livre de malária"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Cachupa (ensopado de milho, feijão e carne/peixe, prato nacional)",
+     "Lagosta grelhada e peixe fresco (garoupa, serra)",
+     "Caldo de peixe (sopa de peixe)"
+    ],
+    "traditionalDrinks": [
+     "Grogue (aguardente de cana, Santo Antão)",
+     "Ponche (licor de grogue e melaço)",
+     "Vinho e café do Fogo"
+    ],
+    "streetFoodAndDesserts": [
+     "Pastel com diabo dentro (pastel frito de atum apimentado)",
+     "Cuscús (bolo de milho com mel)",
+     "Doce de mamão com queijo de cabra"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Cesária Évora (a “diva dos pés descalços” da morna)",
+     "Amílcar Cabral (líder da independência)",
+     "Mayra Andrade (cantora)"
+    ],
+    "strongSectors": [
+     "Turismo",
+     "Pesca e conservas de peixe",
+     "Remessas da diáspora e serviços"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "O escudo é atrelado ao euro; nas áreas turísticas, o euro costuma ser aceito, mas o troco vem em escudos. Em Sal e Boa Vista dá para usar cartão; nas outras ilhas e nos aluguer, é preciso dinheiro em espécie; há caixas eletrônicos (rede Vinti4) nas cidades.",
+    "tippingCulture": "A gorjeta é opcional, mas bem-vinda. Nos restaurantes, 5 – 10 % ou arredondar a conta já basta; guias e motoristas recebem uma pequena gorjeta por dia.",
+    "economicPillars": "Turismo, pesca, remessas da diáspora, serviços e agricultura em pequena escala."
+   }
+  },
+  "itin": {
+   "routeName": "Ilhas de Cabo Verde: Sal, Santiago, São Vicente e Santo Antão",
+   "routeSummary": "Roteiro de 11 dias pelas ilhas: das praias brancas e da cratera salina de Sal à histórica Cidade Velha, em Santiago, à cena musical de Mindelo, em São Vicente, e, de balsa, às trilhas pelos vales verdes de Santo Antão.",
+   "totalDays": 11,
+   "idealDurationText": "Roteiro de 11 dias",
+   "bestSeason": "Novembro – junho (seco e ensolarado; dezembro – março com muito vento, ideal para kitesurf) · agosto – outubro é a curta estação das chuvas, quente e úmida",
+   "transportMode": "Voos domésticos (Sal – Praia ~50 min, Praia – São Vicente ~50 min), balsa Mindelo – Porto Novo (~1 h), aluguer e carros com motorista nas ilhas",
+   "paceLevel": "Equilibrado (praia + cultura + trilhas)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Sal (Santa Maria)",
+     "recommendedDuration": "3 dias",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Praia e cais de Santa Maria",
+      "Cratera salina de Pedra de Lume",
+      "Piscina natural de Buracona e o “Olho Azul”"
+     ],
+     "activities": [
+      "Flutue sem esforço na água salgada de Pedra de Lume.",
+      "Faça uma aula de kitesurf ou windsurf.",
+      "Veja os pescadores descarregarem a pesca da manhã no cais."
+     ],
+     "foodAndDrinks": [
+      "Serra grelhada com cerveja Strela",
+      "Pastel com diabo dentro"
+     ],
+     "criticalTips": [
+      "O vento forte engana sobre o sol; use proteção alta.",
+      "Não deixe objetos de valor sem vigilância na praia."
+     ],
+     "mapsQuery": "Santa Maria, Sal, Cabo Verde"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Santiago (Praia e Cidade Velha)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Cidade Velha e a Fortaleza Real de São Filipe",
+      "O Plateau de Praia e o mercado de Sucupira",
+      "Serra Malagueta e praia do Tarrafal"
+     ],
+     "activities": [
+      "Passeie entre as casas de pedra da Rua Banana, na Cidade Velha.",
+      "Veja tecidos coloridos e frutas no mercado de Sucupira.",
+      "Faça o trajeto panorâmico pelo interior até o Tarrafal."
+     ],
+     "foodAndDrinks": [
+      "Cachupa",
+      "Degustação de grogue e ponche"
+     ],
+     "criticalTips": [
+      "À noite, use táxi em Praia.",
+      "Os aluguer saem de Sucupira quando lotam; vá cedo."
+     ],
+     "mapsQuery": "Cidade Velha, Santiago, Cabo Verde"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: São Vicente (Mindelo)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Prédios coloniais coloridos de Mindelo",
+      "Morna ao vivo",
+      "Monte Verde e Baía das Gatas"
+     ],
+     "activities": [
+      "Ouça morna e coladeira ao vivo num bar à noite.",
+      "Visite o mercado de peixe e a réplica da Torre de Belém.",
+      "Suba o Monte Verde para ver a baía."
+     ],
+     "foodAndDrinks": [
+      "Caldo de peixe",
+      "Cachupa refogada (cachupa frita no café da manhã)"
+     ],
+     "criticalTips": [
+      "As noites de música começam tarde; volte de táxi.",
+      "No Carnaval, a hospedagem esgota com meses de antecedência."
+     ],
+     "mapsQuery": "Mindelo, São Vicente, Cabo Verde"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Santo Antão",
+     "recommendedDuration": "4 dias",
+     "durationBadge": "4 dias",
+     "highlights": [
+      "Trilha da cratera de Cova até o vale do Paul",
+      "Trilha costeira Ponta do Sol – Fontainhas",
+      "Vale da Ribeira Grande e canaviais"
+     ],
+     "activities": [
+      "Desça a pé pelo vale do Paul.",
+      "Veja a produção tradicional do grogue num trapiche.",
+      "Fotografe a vista do vilarejo de Fontainhas."
+     ],
+     "foodAndDrinks": [
+      "Grogue e queijo de cabra caseiro",
+      "Doce de papaia"
+     ],
+     "criticalTips": [
+      "As trilhas são íngremes e escorregadias; use botas firmes.",
+      "A balsa de volta pode ser cancelada por causa do tempo; deixe um dia de folga antes do voo."
+     ],
+     "mapsQuery": "Paul, Santo Antão, Cabo Verde"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Cachupa (ensopado de milho, feijão e carne/peixe, prato nacional)",
+     "Lagosta grelhada e peixe fresco (garoupa, serra)",
+     "Caldo de peixe (sopa de peixe)"
+    ],
+    "drinks": [
+     "Grogue (aguardente de cana, Santo Antão)",
+     "Ponche (licor de grogue e melaço)",
+     "Vinho e café do Fogo"
+    ],
+    "streetFoods": [
+     "Pastel com diabo dentro (pastel frito de atum apimentado)",
+     "Cuscús (bolo de milho com mel)",
+     "Doce de mamão com queijo de cabra"
+    ],
+    "diningAdvice": "A cachupa é comida a qualquer hora; de manhã, frita, como “cachupa refogada”, com ovo. Para peixe fresco e lagosta, escolha restaurantes pequenos perto do porto."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Protetor solar com FPS alto e chapéu",
+     "Corta-vento (as ilhas são muito ventosas)",
+     "Botas de trilha para Santo Antão",
+     "Euros em dinheiro (notas pequenas)"
+    ],
+    "safetyAndEtiquette": [
+     "Cumprimente todo mundo com “Bon dia”.",
+     "Não ande pela cidade de roupa de banho.",
+     "Tome banho de mar só em praias sinalizadas."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "São usadas tomadas europeias tipo C e F (Schuko); os plugues turcos encaixam sem adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "A água da rede é em grande parte dessalinizada e não é recomendável bebê-la; prefira água engarrafada.",
+    "vaccines": [
+     "Vacinas de rotina e hepatite A",
+     "Febre tifoide (viagens a áreas rurais)",
+     "Proteção contra mosquitos por causa da dengue (época de chuvas)",
+     "Certificado de febre amarela só se você chegar de um país de risco; o país está livre de malária desde 2024"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "130"
+   },
+   "tipping": {
+    "custom": "A gorjeta é opcional, mas bem-vinda.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Nos restaurantes, 5 – 10 % ou arredondar a conta já basta; guias e motoristas recebem uma pequena gorjeta por dia."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Sem restituição para turistas (IVA 15 %)",
+    "minSpend": "Não se aplica",
+    "customsNote": "Cabo Verde não devolve o IVA a turistas; os hotéis cobram uma pequena taxa turística por noite. É proibido levar para fora do país produtos de tartaruga marinha, coral e conchas; não leve areia das praias."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 1,50 - 4",
+    "topCarriers": [
+     "CVMóvel (Cabo Verde Telecom)",
+     "Unitel T+"
+    ],
+    "airportSimTrapWarning": "Nos aeroportos de Sal e Praia há quiosques da CVMóvel e da Unitel T+, mas nas lojas da cidade os pacotes costumam ser melhores; nas montanhas de Santo Antão o sinal pode falhar."
+   },
+   "touristScams": [
+    {
+     "title": "Vendedores insistentes na praia",
+     "desc": "Em Sal e Boa Vista, vendedores amarram uma pulseira “de presente” e depois pedem dinheiro, ou vendem suvenires caríssimos.",
+     "tip": "Diga “não, obrigado” com educação e siga andando."
+    },
+    {
+     "title": "Passeios e quadriciclos sem licença",
+     "desc": "Os passeios e quadriciclos baratos vendidos na rua não têm seguro e podem cobrar valores altos por danos.",
+     "tip": "Reserve pelo hotel ou por uma agência licenciada e fotografe o veículo na retirada."
+    },
+    {
+     "title": "Táxi sem preço combinado",
+     "desc": "Sem taxímetro, na chegada podem cobrar uma tarifa inflada.",
+     "tip": "Combine o preço antes de entrar; as tarifas do aeroporto costumam ficar expostas."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Эскудо Кабо-Верде (CVE; привязан к евро, 1 € ≈ 110 CVE)",

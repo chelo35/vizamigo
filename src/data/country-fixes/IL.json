@@ -1547,6 +1547,393 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Novo shekel israelense (ILS)",
+   "plugType": "Tipo H, C, M (230V, 50Hz)",
+   "bestMonths": "Março a maio e setembro a novembro (clima ameno) · de junho a agosto é quente e úmido; o Mar Morto e Eilat são quentes também no inverno. No Yom Kipur e nos grandes feriados o país praticamente para",
+   "safety": {
+    "safetyScore": 40,
+    "safetyLevel": "Recomenda-se cautela",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60",
+    "crimeRateSummary": "A criminalidade de rua é baixa, mas há risco de ataques com foguetes ou mísseis por causa do conflito regional, e existem alertas oficiais. Não se recomenda viajar para Gaza e arredores nem para as áreas do norte próximas às fronteiras com o Líbano e a Síria; em Jerusalém e na Cisjordânia podem surgir tensões pontuais. Baixe o app oficial do Comando da Frente Interna para ter instruções sobre abrigos.",
+    "commonScams": [
+     "Taxistas que não ligam o taxímetro (“moneh”) e pedem um preço fixo alto",
+     "Uma pulseira de fio vermelho “de presente” na Cidade Velha de Jerusalém, seguida de um pedido de doação",
+     "Ser atraído para lojas do mercado da Cidade Velha “só para dar uma olhada” e acabar pagando caro"
+    ],
+    "safeTravelTips": [
+     "Instale o app do Comando da Frente Interna e vá ao abrigo mais próximo se ouvir uma sirene.",
+     "Fique longe de manifestações e de aglomerações em locais religiosos sensíveis.",
+     "Confira os alertas oficiais atuais antes de ir a áreas de fronteira."
+    ],
+    "emergencyNumbers": {
+     "police": "100",
+     "ambulance": "101",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99% da população (4G / 5G)",
+    "costPerGbUsd": "US$ 0,50 - 2",
+    "esimAvailability": "Muito boa (eSIMs locais e internacionais bem difundidos)",
+    "bestCarriers": [
+     "Partner",
+     "Cellcom",
+     "Pelephone",
+     "HOT Mobile",
+     "Golan Telecom"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Bom (ônibus, trens, VLT de Tel Aviv e Jerusalém; cartão Rav-Kav). No Shabat (de sexta à tarde a sábado à tarde) o transporte público para em quase todo o país",
+    "costLevel": "Caro",
+    "singleTicketUsd": "US$ 1,70 - 2,50",
+    "dailyPassUsd": "Passe diário ~US$ 6 - 9 (região de Tel Aviv, Rav-Kav)",
+    "popularRideApps": [
+     "Gett",
+     "Yango",
+     "Moovit"
+    ],
+    "taxiAdvice": "Gett e Yango chamam táxis licenciados e com taxímetro; nos táxis pegos na rua, peça o taxímetro. Entre cidades, o mais fácil são os trens e os ônibus da Egged; o Moovit ajuda muito a planejar trajetos."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 60 - 90",
+    "dailyBudgetMidrangeUsd": "US$ 150 - 250",
+    "budgetMealUsd": "US$ 15 - 25",
+    "coffeeUsd": "US$ 3,50 - 5",
+    "waterBottleUsd": "US$ 1,50 - 2,50",
+    "hostelDormUsd": "US$ 30 - 50",
+    "hotel3StarUsd": "US$ 150 - 250",
+    "flightCostIndex": "Alto (os voos diretos Turquia – Tel Aviv estão suspensos há tempos; é preciso fazer escala)",
+    "flightTip": "A situação dos voos diretos muda; confira as informações atuais. Prepare-se para um longo interrogatório de segurança no aeroporto Ben Gurion e chegue pelo menos 3 horas antes do voo de partida."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "No Shabat (do pôr do sol de sexta ao pôr do sol de sábado), evite tirar fotos e falar ao telefone em bairros religiosos.",
+     "Cubra ombros e joelhos em locais sagrados; o Muro das Lamentações tem áreas separadas para homens e mulheres.",
+     "Os israelenses falam de forma direta e informal; isso não é considerado falta de educação.",
+     "Restaurantes kosher não servem carne e laticínios juntos."
+    ],
+    "festivals": [
+     "Pessach (Páscoa judaica, primavera)",
+     "Yom Kipur (Dia do Perdão; o país para, outono)",
+     "Chanucá (Festa das Luzes, dezembro)"
+    ],
+    "lifestyle": "Tel Aviv é uma cidade mediterrânea descontraída, de praias, vida noturna e tecnologia; Jerusalém, com seu clima religioso e histórico, é mais tranquila e conservadora. A semana de trabalho começa no domingo."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Cidade Velha de Jerusalém (UNESCO)",
+     "Fortaleza de Massada (UNESCO)",
+     "Mar Morto",
+     "Cidade Branca de Tel Aviv e Jafa (arquitetura Bauhaus, UNESCO)",
+     "Cidade Velha de Acre (UNESCO)",
+     "Jardins Bahá’ís de Haifa (UNESCO)"
+    ],
+    "bestSeasons": "Março a maio e setembro a novembro (clima ameno) · de junho a agosto é quente e úmido; o Mar Morto e Eilat são quentes também no inverno. No Yom Kipur e nos grandes feriados o país praticamente para",
+    "travelStyleTip": "Como as distâncias são curtas, dá para se hospedar em Tel Aviv ou Jerusalém e fazer bate-voltas; planeje a viagem levando o Shabat em conta."
+   },
+   "religion": {
+    "primaryReligions": "Judaísmo (~73%), islamismo (~18%), cristianismo (~2%), drusos (~1,6%)",
+    "respectNorms": "Os horários e as regras de acesso à Esplanada de Al-Aqsa mudam com frequência, e o horário de visita para não muçulmanos é limitado; vista-se de forma discreta e faça silêncio em todos os locais sagrados.",
+    "sacredSites": [
+     "Mesquita de Al-Aqsa e Domo da Rocha (Jerusalém)",
+     "Igreja do Santo Sepulcro (Jerusalém)",
+     "Muro das Lamentações (Jerusalém)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "O hebraico é a língua oficial; o árabe tem status especial e é muito falado. Russo e inglês também são bastante comuns.",
+    "englishProficiency": "Muito bom; as placas costumam estar em hebraico, árabe e inglês.",
+    "phrases": [
+     {
+      "phrase": "שלום (shalom)",
+      "meaning": "Olá / Paz / Tchau",
+      "translation": "Olá / Paz / Tchau",
+      "pronunciation": "sha-lom"
+     },
+     {
+      "phrase": "תודה (toda)",
+      "meaning": "Obrigado",
+      "translation": "Obrigado",
+      "pronunciation": "to-da"
+     },
+     {
+      "phrase": "בבקשה (bevakasha)",
+      "meaning": "Por favor / De nada",
+      "translation": "Por favor / De nada",
+      "pronunciation": "be-va-ka-sha"
+     },
+     {
+      "phrase": "סליחה (slicha)",
+      "meaning": "Desculpe / Com licença",
+      "translation": "Desculpe / Com licença",
+      "pronunciation": "sli-ha"
+     },
+     {
+      "phrase": "כמה זה עולה? (kama ze ole?)",
+      "meaning": "Quanto custa isto?",
+      "translation": "Quanto custa isto?",
+      "pronunciation": "ka-ma ze o-le"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "É a Terra Santa das três grandes religiões monoteístas. Antigos reinos israelitas, Roma, Bizâncio, os califados islâmicos, os cruzados e os mamelucos governaram a região. Esteve sob domínio otomano de 1516 a 1917; as muralhas atuais de Jerusalém foram construídas sob Solimão, o Magnífico. Depois do Mandato Britânico, o Estado de Israel foi proclamado em 1948.",
+    "milestones": [
+     "c. 1000 a.C.: Jerusalém, capital do rei Davi",
+     "70 d.C.: Roma destrói o Segundo Templo",
+     "691: construção do Domo da Rocha",
+     "1537–1541: Solimão, o Magnífico, reconstrói as muralhas de Jerusalém"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Homus e falafel",
+     "Shakshuka (ovos ao molho de tomate)",
+     "Sabich (pita com berinjela e ovo)"
+    ],
+    "traditionalDrinks": [
+     "Limonana (limonada com hortelã)",
+     "Arak (licor de anis)",
+     "Café turco com cardamomo"
+    ],
+    "streetFoodAndDesserts": [
+     "Burekas (salgados de massa folhada)",
+     "Rugelach (enroladinhos de chocolate)",
+     "Knafeh (Cidade Velha e Acre)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Daniel Kahneman (Prêmio Nobel de Economia de 2002)",
+     "Ada Yonath (Prêmio Nobel de Química de 2009)",
+     "Gal Gadot (atriz)"
+    ],
+    "strongSectors": [
+     "Alta tecnologia e cibersegurança",
+     "Lapidação e comércio de diamantes",
+     "Tecnologia agrícola (irrigação por gotejamento)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Cartões e pagamento por aproximação funcionam em quase todo lugar; muitas lojas e restaurantes fecham no Shabat. Leve algum dinheiro em shekels para mercados e pequenos comércios.",
+    "tippingCulture": "Nos restaurantes espera-se 12 - 15%, que normalmente não vem incluído na conta; nos cafés é comum arredondar.",
+    "economicPillars": "Alta tecnologia, indústria de defesa, diamantes, farmacêutica, turismo."
+   }
+  },
+  "itin": {
+   "routeName": "Terra Santa e Mediterrâneo: Acre, Tel Aviv, Jerusalém e Mar Morto",
+   "routeSummary": "Roteiro de 8 dias que vai do legado cruzado e otomano de Acre e Haifa, no norte, às praias de Tel Aviv, aos locais sagrados de Jerusalém e ao Mar Morto com Massada.",
+   "totalDays": 8,
+   "idealDurationText": "Roteiro de 8 dias",
+   "bestSeason": "Março a maio e setembro a novembro (clima ameno) · de junho a agosto é quente e úmido; o Mar Morto e Eilat são quentes também no inverno. No Yom Kipur e nos grandes feriados o país praticamente para",
+   "transportMode": "Trem e ônibus intermunicipal (cartão Rav-Kav); carro alugado ou passeio organizado para o Mar Morto",
+   "paceLevel": "Equilibrado (história, religião e mar)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Acre e Haifa",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Cidade Velha de Acre e salões cruzados (UNESCO)",
+      "Mesquita de Al-Jazzar",
+      "Jardins Bahá’ís de Haifa (UNESCO)"
+     ],
+     "activities": [
+      "Caminhe pelas muralhas de Acre ao entardecer.",
+      "Explore os Salões dos Cavaleiros e os túneis subterrâneos.",
+      "Contemple a baía a partir dos terraços dos Jardins Bahá’ís de Haifa."
+     ],
+     "foodAndDrinks": [
+      "Peixe e homus em Acre",
+      "Knafeh"
+     ],
+     "criticalTips": [
+      "Confira os alertas atuais para as áreas do norte próximas à fronteira com o Líbano.",
+      "As visitas aos terraços superiores dos Jardins Bahá’ís têm horários fixos."
+     ],
+     "mapsQuery": "Old City of Acre, Israel"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Tel Aviv – Jafa",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Porto antigo de Jafa e Torre do Relógio",
+      "Mercado Carmel",
+      "Prédios Bauhaus da Cidade Branca (UNESCO)",
+      "Orla mediterrânea"
+     ],
+     "activities": [
+      "Percorra as vielas de pedra e o mercado de pulgas de Jafa.",
+      "Prove comida de rua no Mercado Carmel.",
+      "Pedale pela orla e veja o pôr do sol."
+     ],
+     "foodAndDrinks": [
+      "Sabich e falafel",
+      "Limonana"
+     ],
+     "criticalTips": [
+      "Tel Aviv é muito cara; os menus de almoço (“iskit”) saem mais em conta.",
+      "No Shabat o transporte público é limitado; chame um táxi pelo Gett."
+     ],
+     "mapsQuery": "Old Jaffa, Tel Aviv, Israel"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Jerusalém",
+     "recommendedDuration": "3 dias",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Mesquita de Al-Aqsa e Domo da Rocha",
+      "Igreja do Santo Sepulcro e Via Dolorosa",
+      "Muro das Lamentações",
+      "Muralhas de Solimão e Portão de Damasco"
+     ],
+     "activities": [
+      "Explore com guia os bairros muçulmano, cristão, judeu e armênio da Cidade Velha.",
+      "Curta a vista da cidade a partir do Monte das Oliveiras.",
+      "Jante no mercado Mahane Yehuda."
+     ],
+     "foodAndDrinks": [
+      "Grelhado misto de Jerusalém (me’orav yerushalmi)",
+      "Ka’ak de Jerusalém (rosca de pão com gergelim)"
+     ],
+     "criticalTips": [
+      "Nos locais sagrados é preciso estar com ombros e joelhos cobertos.",
+      "Atenção às multidões e às tensões na Cidade Velha às sextas-feiras e em dias religiosos."
+     ],
+     "mapsQuery": "Old City, Jerusalem"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Mar Morto e Massada",
+     "recommendedDuration": "1 dia",
+     "durationBadge": "1 dia",
+     "highlights": [
+      "Fortaleza de Massada (UNESCO)",
+      "Boiar no Mar Morto (ponto mais baixo da Terra, ~430 m abaixo do nível do mar)",
+      "Reserva Natural de Ein Gedi"
+     ],
+     "activities": [
+      "Suba a Massada ao amanhecer pela Trilha da Serpente ou de teleférico.",
+      "Boie no Mar Morto e faça um banho de lama.",
+      "Caminhe até as cachoeiras de Ein Gedi."
+     ],
+     "foodAndDrinks": [
+      "Piquenique e tâmaras",
+      "Muita água"
+     ],
+     "criticalTips": [
+      "Não engula a água do Mar Morto nem deixe que ela caia nos olhos; ela arde em machucados.",
+      "No verão, suba a Massada cedo; o calor do meio-dia é perigoso."
+     ],
+     "mapsQuery": "Masada National Park, Israel"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Homus e falafel",
+     "Shakshuka (ovos ao molho de tomate)",
+     "Sabich (pita com berinjela e ovo)"
+    ],
+    "drinks": [
+     "Limonana (limonada com hortelã)",
+     "Arak (licor de anis)",
+     "Café turco com cardamomo"
+    ],
+    "streetFoods": [
+     "Burekas (salgados de massa folhada)",
+     "Rugelach (enroladinhos de chocolate)",
+     "Knafeh (Cidade Velha e Acre)"
+    ],
+    "diningAdvice": "Deixe 12 - 15% nos restaurantes; os estabelecimentos kosher fecham no Shabat, enquanto em Tel Aviv muitos restaurantes abrem."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptador H/C (plugues europeus finos tipo C entram; os Schuko grossos, não)",
+     "Roupas que cubram ombros e joelhos para os locais sagrados",
+     "Protetor solar, chapéu e garrafa de água",
+     "Sapatilhas aquáticas para o Mar Morto"
+    ],
+    "safetyAndEtiquette": [
+     "Vá para um abrigo se ouvir uma sirene.",
+     "No Shabat, não dirija nem tire fotos em bairros religiosos.",
+     "Não fotografe instalações militares nem postos de controle."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "H",
+     "C",
+     "M"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Usa-se a tomada israelense tipo H; as instaladas desde 2008 aceitam plugues europeus finos tipo C, mas os Schuko (F) grossos não entram. Leve um adaptador H/C."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "A água da torneira é potável e fiscalizada; pode ter gosto de calcário.",
+    "vaccines": [
+     "Vacinas de rotina (tétano-difteria, sarampo)",
+     "Hepatite A (recomendada)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "101"
+   },
+   "tipping": {
+    "custom": "Espera-se gorjeta.",
+    "standardPercent": 12,
+    "rule": "expected",
+    "note": "12 - 15% nos restaurantes; nos táxis basta arredondar. Confira se a conta já inclui “service”."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA de 18% (menos a taxa de processamento)",
+    "minSpend": "~400 ILS por nota fiscal (IVA incluído)",
+    "customsNote": "A restituição é feita no aeroporto Ben Gurion, mediante apresentação dos produtos e das notas fiscais. Eilat é isenta de IVA. Exportar antiguidades exige autorização da Autoridade de Antiguidades de Israel."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 0,50 - 2,00",
+    "topCarriers": [
+     "Partner",
+     "Cellcom",
+     "Pelephone",
+     "HOT Mobile",
+     "Golan Telecom"
+    ],
+    "airportSimTrapWarning": "Os chips vendidos no aeroporto são caros; os pacotes para turistas das operadoras locais ou um eSIM saem mais baratos."
+   },
+   "touristScams": [
+    {
+     "title": "Táxi sem taxímetro",
+     "desc": "O motorista pede um preço fixo alto sem ligar o taxímetro.",
+     "tip": "Diga “moneh” para pedir o taxímetro ou use Gett/Yango."
+    },
+    {
+     "title": "Pulseira de fio vermelho",
+     "desc": "Na Cidade Velha, amarram um fio “de presente” no seu pulso e depois pedem uma doação.",
+     "tip": "Recuse com educação e não estenda a mão."
+    },
+    {
+     "title": "Atraído para lojas",
+     "desc": "No mercado da Cidade Velha, convidam você a entrar “só para dar uma olhada” e vendem caro.",
+     "tip": "Compare preços em várias lojas e pechinche."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Новый израильский шекель (ILS)",

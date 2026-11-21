@@ -1427,6 +1427,363 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Euro (EUR)",
+   "bestMonths": "Maio – setembro (clima ameno para trilhas e para os vinhedos do Mosela); setembro–outubro, época da vindima; dezembro, mercados de Natal",
+   "safety": {
+    "safetyScore": 85,
+    "crimeRateSummary": "Um dos países mais seguros da Europa, com pouquíssima violência. A região da estação (Gare) da capital é menos agradável à noite e pode ter furtos.",
+    "commonScams": [
+     "Furtos de bolsas e celulares por distração no bairro da estação",
+     "Falsos arrecadadores pedindo doações para caridade",
+     "Golpes são raros; a maior surpresa são os preços altos"
+    ],
+    "safeTravelTips": [
+     "O transporte público é gratuito: use ônibus, trem e bonde em vez de táxi.",
+     "Fique de olho nos seus pertences na região da estação à noite.",
+     "As rochas do Mullerthal ficam escorregadias depois da chuva; use um bom calçado."
+    ],
+    "emergencyNumbers": {
+     "police": "113",
+     "ambulance": "112",
+     "general": "112"
+    },
+    "safetyLevel": "Excepcionalmente seguro",
+    "badgeColor": "bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-900/60"
+   },
+   "internet": {
+    "networkCoverage": "99% (4G/5G em quase todo lugar)",
+    "costPerGbUsd": "~US$ 1 - 3",
+    "esimAvailability": "Excelente",
+    "bestCarriers": [
+     "POST Luxembourg",
+     "Orange Luxembourg",
+     "Tango"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Excelente (desde 2020, todo o transporte público em segunda classe é gratuito no país: trem, ônibus e bonde)",
+    "costLevel": "Gratuito (transporte público); táxis muito caros",
+    "singleTicketUsd": "US$ 0",
+    "dailyPassUsd": "US$ 0",
+    "popularRideApps": [
+     "mobiliteit.lu",
+     "CFL Mobile",
+     "Webtaxi",
+     "Vel'oh!"
+    ],
+    "taxiAdvice": "Os táxis estão entre os mais caros da Europa; o ônibus ou o bonde gratuito leva você do aeroporto ao centro em 20–25 minutos. Use o app mobiliteit.lu para montar seus trajetos."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 85 - 130",
+    "dailyBudgetMidrangeUsd": "US$ 200 - 320",
+    "budgetMealUsd": "US$ 20 - 32",
+    "coffeeUsd": "US$ 3,50 - 5",
+    "waterBottleUsd": "US$ 1,50 - 2,50",
+    "hostelDormUsd": "US$ 40 - 60",
+    "hotel3StarUsd": "US$ 140 - 250",
+    "flightCostIndex": "Moderado a alto",
+    "flightTip": "A Turkish Airlines tem voo direto de Istambul para Luxemburgo; para tarifas mais baixas, considere Bruxelas ou Frankfurt e siga de trem ou ônibus."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "O cumprimento é com aperto de mão; entre amigos, três beijos.",
+     "Os moradores alternam entre vários idiomas; algumas palavras em luxemburguês são muito bem-vindas.",
+     "Pontualidade e discrição contam muito.",
+     "Muitas lojas fecham no domingo; respeite os horários de descanso."
+    ],
+    "festivals": [
+     "Dia Nacional (23 de junho, aniversário oficial do grão-duque; fogos de artifício na véspera)",
+     "Schueberfouer (fim de agosto – início de setembro, grande feira)",
+     "Procissão dançante de Echternach (terça-feira de Pentecostes, UNESCO)"
+    ],
+    "lifestyle": "Uma sociedade multinacional (quase metade da população é estrangeira), multilíngue e de alta renda; nos fins de semana, trilhas, vinho e refeições em família."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Bairros antigos e fortificações de Luxemburgo (UNESCO)",
+     "Casamatas do Bock",
+     "Chemin de la Corniche e o Grund",
+     "Castelo de Vianden",
+     "Mullerthal – trilha da 'Pequena Suíça'",
+     "Vale do Mosela e o vilarejo de Schengen"
+    ],
+    "bestSeasons": "Maio – setembro (clima ameno para trilhas e para os vinhedos do Mosela); setembro–outubro, época da vindima; dezembro, mercados de Natal",
+    "travelStyleTip": "O país é pequeno: fique hospedado na capital e faça bate-voltas de trem e ônibus gratuitos para Vianden, Echternach e o Mosela."
+   },
+   "religion": {
+    "primaryReligions": "Católicos (cerca de 55–65%), com uma parcela crescente sem religião; pequenas comunidades protestante, ortodoxa, muçulmana e judaica.",
+    "respectNorms": "Cubra ombros e joelhos na catedral e nas basílicas e não fique circulando durante a missa.",
+    "sacredSites": [
+     "Catedral de Notre-Dame, Luxemburgo",
+     "Basílica de São Vilibrordo, Echternach",
+     "Igreja de São Miguel, junto ao Bock"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Luxemburguês (língua nacional), francês e alemão. O francês predomina em placas e serviços.",
+    "englishProficiency": "Muito bom; a maioria também fala inglês fluentemente.",
+    "phrases": [
+     {
+      "phrase": "Moien!",
+      "meaning": "Olá",
+      "translation": "Olá",
+      "pronunciation": "MOY-en"
+     },
+     {
+      "phrase": "Merci",
+      "meaning": "Obrigado(a)",
+      "translation": "Obrigado(a)",
+      "pronunciation": "MER-see"
+     },
+     {
+      "phrase": "Wann ech gelift",
+      "meaning": "Por favor",
+      "translation": "Por favor",
+      "pronunciation": "vahn esh geh-LIFT"
+     },
+     {
+      "phrase": "Wat kascht dat?",
+      "meaning": "Quanto custa?",
+      "translation": "Quanto custa?",
+      "pronunciation": "vaht kahsht daht"
+     },
+     {
+      "phrase": "Äddi!",
+      "meaning": "Tchau",
+      "translation": "Tchau",
+      "pronunciation": "AH-dee"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Luxemburgo nasceu quando o conde Sigfrido construiu um castelo no rochedo do Bock, em 963, e se tornou uma grande fortaleza, o 'Gibraltar do Norte'. O Tratado de Londres de 1867 declarou o país neutro, e quase todas as suas muralhas foram desmontadas. Membro fundador da UE, da OTAN e do Benelux, hoje abriga instituições europeias e um grande centro financeiro.",
+    "milestones": [
+     "963: o conde Sigfrido constrói seu castelo no Bock",
+     "1867: neutralidade pelo Tratado de Londres",
+     "1890: dinastia grão-ducal própria (Nassau-Weilburg)",
+     "1957: membro fundador da CEE; 1985: Acordo de Schengen"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Judd mat Gaardebounen (pescoço de porco defumado com favas; prato nacional)",
+     "Bouneschlupp (sopa de vagem)",
+     "Rieslingspaschtéit (torta de carne com gelatina de riesling)"
+    ],
+    "traditionalDrinks": [
+     "Vinhos riesling e pinot do Mosela",
+     "Crémant de Luxembourg (espumante)",
+     "Cervejas Bofferding e Diekirch"
+    ],
+    "streetFoodAndDesserts": [
+     "Gromperekichelcher (bolinhos fritos de batata temperados, típicos de feiras)",
+     "Quetschentaart (torta de ameixa)",
+     "Kachkéis (queijo cozido para passar no pão)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Robert Schuman (pai fundador da unidade europeia, nascido em Luxemburgo)",
+     "Edward Steichen (fotógrafo)",
+     "Grã-duquesa Carlota (símbolo da resistência na Segunda Guerra Mundial)"
+    ],
+    "strongSectors": [
+     "Bancos e fundos de investimento",
+     "Indústria espacial e de satélites (SES)",
+     "Aço (sede da ArcelorMittal) e logística"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Cartões e pagamento por aproximação são aceitos em todo lugar; raramente é preciso dinheiro vivo.",
+    "tippingCulture": "O serviço já está incluído; arredondar a conta ou deixar 5–10% é um gesto de cortesia.",
+    "economicPillars": "Serviços financeiros, instituições da UE, satélites/espaço, aço, logística e uma economia de serviços movida por trabalhadores transfronteiriços."
+   }
+  },
+  "itin": {
+   "routeName": "Roteiro do Grão-Ducado: Luxemburgo, Mullerthal e Vianden",
+   "routeSummary": "Um roteiro de 4 dias que vai da capital no alto das falésias até os desfiladeiros de arenito da 'Pequena Suíça' e o castelo de conto de fadas de Vianden, tudo de transporte gratuito.",
+   "totalDays": 4,
+   "idealDurationText": "4 dias",
+   "bestSeason": "Maio – setembro (clima ameno para trilhas e para os vinhedos do Mosela); setembro–outubro, época da vindima; dezembro, mercados de Natal",
+   "transportMode": "Trens e ônibus gratuitos",
+   "paceLevel": "Tranquilo, com trilhas leves",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Luxemburgo capital (centro histórico e Grund)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Casamatas do Bock",
+      "Chemin de la Corniche ('a varanda mais bonita da Europa')",
+      "Palácio Grão-Ducal e praça Guilherme II",
+      "Elevador panorâmico de Pfaffenthal"
+     ],
+     "activities": [
+      "Desça até o Grund e caminhe à beira do rio Alzette.",
+      "Visite o museu de arte moderna MUDAM, em Kirchberg.",
+      "Percorra Kirchberg e o bairro europeu no bonde gratuito."
+     ],
+     "foodAndDrinks": [
+      "Judd mat Gaardebounen",
+      "Gromperekichelcher",
+      "Crémant de Luxembourg"
+     ],
+     "criticalTips": [
+      "As casamatas podem fechar no inverno; confira as datas.",
+      "A cidade tem muitas ladeiras; use calçado confortável e os elevadores públicos."
+     ],
+     "mapsQuery": "Bock Casemates, Luxembourg"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Mullerthal e Echternach ('Pequena Suíça')",
+     "recommendedDuration": "1 dia",
+     "durationBadge": "1 dia",
+     "highlights": [
+      "Rochas de arenito da Mullerthal Trail",
+      "Cachoeira de Schiessentümpel",
+      "Abadia e basílica de Echternach",
+      "Lago de Echternach"
+     ],
+     "activities": [
+      "Caminhe por passagens entre as rochas de Berdorf até Echternach.",
+      "Pare para fotos na ponte de pedra de Schiessentümpel.",
+      "Tome um café na praça medieval de Echternach."
+     ],
+     "foodAndDrinks": [
+      "Quetschentaart (torta de ameixa)",
+      "Sidra e sucos locais"
+     ],
+     "criticalTips": [
+      "As trilhas são estreitas e cheias de raízes e ficam escorregadias com chuva; use calçado que firme o tornozelo.",
+      "Alguns ônibus passam com menos frequência nos fins de semana; confira o horário da volta."
+     ],
+     "mapsQuery": "Schiessentümpel, Mullerthal, Luxembourg"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Vianden (castelo e vale do Our)",
+     "recommendedDuration": "1 dia",
+     "durationBadge": "1 dia",
+     "highlights": [
+      "Castelo de Vianden",
+      "Teleférico até o mirante",
+      "Casa de Victor Hugo",
+      "Margens do rio Our"
+     ],
+     "activities": [
+      "Percorra os salões do castelo restaurado.",
+      "Suba de teleférico para ter a vista clássica do castelo.",
+      "Na volta, pare em Diekirch, a cidade da cerveja."
+     ],
+     "foodAndDrinks": [
+      "Presunto das Ardenas e queijos locais",
+      "Cerveja Diekirch",
+      "Licores de frutas caseiros"
+     ],
+     "criticalTips": [
+      "O teleférico só funciona na temporada (aprox. abril–outubro).",
+      "O norte é mais fresco; leve uma camada extra de roupa."
+     ],
+     "mapsQuery": "Vianden Castle, Luxembourg"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Judd mat Gaardebounen",
+     "Bouneschlupp",
+     "Rieslingspaschtéit",
+     "Friture de la Moselle (peixe de rio frito)"
+    ],
+    "drinks": [
+     "Riesling",
+     "Crémant de Luxembourg",
+     "Bofferding",
+     "Água mineral Rosport"
+    ],
+    "streetFoods": [
+     "Gromperekichelcher",
+     "Pão com Kachkéis",
+     "Quetschentaart",
+     "Bretzel (no Bretzelsonndeg)"
+    ],
+    "diningAdvice": "O plat du jour do almoço sai bem mais barato que o jantar. A carne de porco é comum na cozinha tradicional; na capital há muitos restaurantes turcos, libaneses e portugueses."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Capa de chuva (o tempo muda com frequência)",
+     "Bota de trilha que firme o tornozelo",
+     "Roupas em camadas",
+     "Cartão por aproximação"
+    ],
+    "safetyAndEtiquette": [
+     "No trem, a primeira classe exige passagem; a segunda é gratuita.",
+     "Aos domingos, a maioria dos supermercados fecha à tarde.",
+     "Não saia das trilhas sinalizadas nas florestas."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Tomadas de dois pinos redondos (C/F), como na Turquia; não é preciso adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "A água da torneira é potável, embora possa ser dura (calcária).",
+    "vaccines": [
+     "Vacinas de rotina (tétano, difteria, sarampo)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "112"
+   },
+   "tipping": {
+    "custom": "Basta arredondar a conta ou deixar 5–10%.",
+    "standardPercent": 5,
+    "rule": "round_up",
+    "note": "O serviço já está incluído nos preços; a gorjeta não é obrigatória."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA de 17% (o mais baixo da UE); reembolso líquido de ~10–13%",
+    "minSpend": "~74 € ou mais em uma mesma loja",
+    "customsNote": "Carimbe o formulário Tax Free no aeroporto onde você sair da UE; se voar direto de Luxemburgo para a Turquia, isso é feito em Findel."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 1,00 - 3,00",
+    "topCarriers": [
+     "POST Luxembourg",
+     "Orange Luxembourg",
+     "Tango"
+    ],
+    "airportSimTrapWarning": "O roaming com linhas turcas é muito caro; compre antes um eSIM válido para toda a UE. Perto das fronteiras, o celular pode se conectar a redes francesas, alemãs ou belgas."
+   },
+   "touristScams": [
+    {
+     "title": "Furto por distração perto da estação",
+     "desc": "Perto da estação, ladrões pedem informações ou esbarram em você para levar celular e carteira.",
+     "tip": "Não deixe o celular sobre a mesa e carregue a bolsa na frente do corpo."
+    },
+    {
+     "title": "Falsos coletores de assinaturas",
+     "desc": "Em praças turísticas, abordam você com uma lista, pedem doação e, enquanto isso, furtam.",
+     "tip": "Recuse com educação e siga seu caminho."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Евро (EUR)",

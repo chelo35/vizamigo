@@ -1407,6 +1407,358 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Kwacha zambiano (ZMW)",
+   "plugType": "Tipo G (às vezes C, D), 230V, 50Hz",
+   "bestMonths": "Maio a outubro (estação seca; melhores safáris de agosto a outubro); as Cataratas Vitória têm mais volume de água de fevereiro a maio",
+   "safety": {
+    "crimeRateSummary": "Um país em geral seguro e tranquilo, com furtos por arrastão, arrombamentos de carros e crimes oportunistas em Lusaka e Livingstone. A violência grave raramente atinge turistas.",
+    "commonScams": [
+     "Cambistas de rua em Livingstone e na fronteira que entregam notas falsas ou a menos",
+     "Furtos por arrastão e falsos vendedores de passagens no terminal Intercity de Lusaka",
+     "Supostos guias que vendem passeios sem licença às cataratas ou safáris"
+    ],
+    "safeTravelTips": [
+     "Troque dinheiro só em bancos ou casas de câmbio e pague valores altos com cartão.",
+     "Não ande a pé à noite em Lusaka nem deixe nada à vista no carro.",
+     "Não desça do veículo nos parques e siga as regras do guia sobre os animais no acampamento."
+    ],
+    "safetyScore": 65,
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "4G nas cidades e nas estradas principais (5G limitado em Lusaka); muitas vezes sem sinal nos parques",
+    "costPerGbUsd": "US$ 0,80 - 2",
+    "esimAvailability": "Moderada (eSIMs internacionais)",
+    "bestCarriers": [
+     "MTN",
+     "Airtel",
+     "Zamtel"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Básico (micro-ônibus e ônibus de viagem; voos domésticos para as áreas de safári)",
+    "costLevel": "Moderado (traslados de safári caros)",
+    "singleTicketUsd": "US$ 0,30 - 1",
+    "dailyPassUsd": "Não disponível",
+    "popularRideApps": [
+     "Yango"
+    ],
+    "taxiAdvice": "Em Lusaka, apps como o Yango oferecem tarifa fixa; em Livingstone, use os táxis do hotel ou combine o preço antes. Para viagens entre cidades, escolha empresas confiáveis, como a Mazhandu Family."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 35 - 60",
+    "dailyBudgetMidrangeUsd": "US$ 100 - 200",
+    "budgetMealUsd": "US$ 4 - 8",
+    "coffeeUsd": "US$ 2 - 3,50",
+    "waterBottleUsd": "US$ 0,50 - 1",
+    "hostelDormUsd": "US$ 12 - 20",
+    "hotel3StarUsd": "US$ 60 - 110 (lodges de safári a partir de US$ 300 por pessoa)",
+    "flightCostIndex": "Alto",
+    "flightTip": "Chega-se a Lusaka (LUN) e Livingstone (LVI) via Adis Abeba, Joanesburgo, Nairóbi ou Dubai; voar direto para Livingstone economiza tempo para ver as cataratas."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Os cumprimentos são longos e importantes; tocar o cotovelo direito com a mão esquerda ao apertar a mão é sinal de respeito.",
+     "Entregue e receba coisas com as duas mãos ou com a direita.",
+     "Não fotografe prédios oficiais, pontes nem áreas militares."
+    ],
+    "festivals": [
+     "Kuomboka (viagem do rei lozi saindo da planície alagada, março a abril)",
+     "Ncwala (cerimônia de colheita dos ngoni, fevereiro)",
+     "Dia da Independência (24 de outubro)"
+    ],
+    "lifestyle": "Uma sociedade tranquila e hospitaleira, com mais de 70 etnias; o lema “One Zambia, One Nation” sustenta a identidade nacional. O futebol e a igreja ocupam lugar central."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Cataratas Vitória (Mosi-oa-Tunya)",
+     "Parque Nacional South Luangwa (berço do safári a pé)",
+     "Parque Nacional Lower Zambezi",
+     "Parque Nacional Kafue",
+     "Lago Kariba",
+     "Migração de morcegos de Kasanka (outubro a dezembro)"
+    ],
+    "bestSeasons": "Maio a outubro (estação seca; melhores safáris de agosto a outubro); as Cataratas Vitória têm mais volume de água de fevereiro a maio",
+    "travelStyleTip": "As distâncias são longas e as estradas, ruins; os voos domésticos entre Livingstone e os parques economizam tempo, e os lodges costumam incluir pensão completa e safáris."
+   },
+   "religion": {
+    "primaryReligions": "Cristãos ~95% (protestantes ~75%, católicos ~20%); pequenas comunidades muçulmanas e hindus e crenças tradicionais",
+    "respectNorms": "A Constituição declara a Zâmbia uma “nação cristã”; use roupas discretas em igrejas e cerimônias e demonstre respeito aos chefes tradicionais.",
+    "sacredSites": [
+     "Catedral da Santa Cruz (Lusaka)",
+     "Cataratas Chishimba (sagradas para os bemba)",
+     "Cataratas Vitória – Mosi-oa-Tunya (sagradas para os toka-leya)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Inglês (oficial); falam-se mais de 70 línguas, como bemba, nyanja, tonga e lozi.",
+    "englishProficiency": "Bom; o inglês é amplamente usado nas cidades e no turismo.",
+    "phrases": [
+     {
+      "phrase": "Muli bwanji? (Nyanja)",
+      "meaning": "Como vai?",
+      "translation": "Como vai?",
+      "pronunciation": "MU-li BWAN-ji"
+     },
+     {
+      "phrase": "Zikomo (Nyanja)",
+      "meaning": "Obrigado",
+      "translation": "Obrigado",
+      "pronunciation": "zi-KO-mo"
+     },
+     {
+      "phrase": "Muli shani? (Bemba)",
+      "meaning": "Como vai? (bemba)",
+      "translation": "Como vai? (bemba)",
+      "pronunciation": "MU-li SHA-ni"
+     },
+     {
+      "phrase": "Natotela (Bemba)",
+      "meaning": "Obrigado (bemba)",
+      "translation": "Obrigado (bemba)",
+      "pronunciation": "na-to-TE-la"
+     },
+     {
+      "phrase": "Ndi zingati? (Nyanja)",
+      "meaning": "Quanto custa?",
+      "translation": "Quanto custa?",
+      "pronunciation": "ndi zin-GA-ti"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Terra de reinos bantos, a região recebeu David Livingstone em 1855. Depois do domínio da British South Africa Company, tornou-se em 1924 o protetorado da Rodésia do Norte. Conquistou a independência com Kenneth Kaunda em 24 de outubro de 1964; o cobre é a base da economia.",
+    "milestones": [
+     "1855: Livingstone avista as Cataratas Vitória",
+     "1924: protetorado da Rodésia do Norte",
+     "1959: conclusão da represa de Kariba",
+     "1964: independência (24 de outubro)"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Nshima (angu de milho) com acompanhamentos",
+     "Kapenta (peixinhos secos de lago)",
+     "Tilápia grelhada"
+    ],
+    "traditionalDrinks": [
+     "Cerveja Mosi",
+     "Munkoyo (bebida fermentada de raízes)",
+     "Maheu (bebida de milho fermentado)"
+    ],
+    "streetFoodAndDesserts": [
+     "Vitumbuwa (bolinhos fritos doces)",
+     "Milho assado na espiga",
+     "Chikanda (“mortadela africana” de tubérculos de orquídea e amendoim)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Kenneth Kaunda (presidente fundador)",
+     "Kalusha Bwalya (lenda do futebol)",
+     "Barbra Banda (estrela do futebol feminino)"
+    ],
+    "strongSectors": [
+     "Mineração de cobre e cobalto",
+     "Agricultura (milho, tabaco, açúcar)",
+     "Turismo e hidreletricidade"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Nas cidades e nos lodges usam-se cartões e dinheiro móvel (Airtel Money, MTN MoMo); leve kwachas para mercados e micro-ônibus. Lodges e passeios costumam cobrar em dólares.",
+    "tippingCulture": "Nos restaurantes, 10% é o habitual; para guias e equipe de safári, US$ 10-20 por pessoa por dia.",
+    "economicPillars": "Mineração de cobre (a maior parte das exportações), agricultura, turismo e hidreletricidade."
+   }
+  },
+  "itin": {
+   "routeName": "A fumaça que troveja e a natureza: Livingstone, Lower Zambezi e South Luangwa",
+   "routeSummary": "Roteiro de 9 dias que vai das estrondosas Cataratas Vitória aos safáris de canoa no Lower Zambezi e a South Luangwa, berço do safári a pé.",
+   "totalDays": 9,
+   "idealDurationText": "Roteiro de safári de 9 dias",
+   "bestSeason": "Maio a outubro (estação seca)",
+   "transportMode": "Voos domésticos e em aviões de pequeno porte (Livingstone – Lusaka – Mfuwe) + traslados dos lodges",
+   "paceLevel": "Equilibrado (aventura + safári)",
+   "stops": [
+    {
+     "name": "Parada 1: Livingstone e Cataratas Vitória",
+     "recommendedDuration": "3 dias",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Mosi-oa-Tunya e ponte Knife-Edge",
+      "Ilha Livingstone e Devil's Pool (agosto a janeiro)",
+      "Cruzeiro ao pôr do sol pelo Zambeze",
+      "Caminhada com rinocerontes em Mosi-oa-Tunya"
+     ],
+     "activities": [
+      "Percorra a trilha das cataratas usando capa de chuva.",
+      "Faça rafting no desfiladeiro de Batoka ou bungee jump da ponte.",
+      "Faça o cruzeiro ao pôr do sol pelo Zambeze."
+     ],
+     "foodAndDrinks": [
+      "Tilápia grelhada",
+      "Cerveja Mosi"
+     ],
+     "criticalTips": [
+      "A Devil's Pool só abre com o rio baixo e em passeios guiados; reserve antes.",
+      "De fevereiro a maio a névoa encharca tudo; guarde o celular em uma capa à prova d'água."
+     ],
+     "mapsQuery": "Victoria Falls, Livingstone, Zambia",
+     "stopNumber": 1
+    },
+    {
+     "name": "Parada 2: Lusaka e Lower Zambezi",
+     "recommendedDuration": "3 dias",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Safári de canoa pelo Lower Zambezi",
+      "Manadas de elefantes e hipopótamos",
+      "Vila cultural de Kabwata (Lusaka)"
+     ],
+     "activities": [
+      "Confira o artesanato na feira de domingo do Arcades, em Lusaka.",
+      "Observe os animais em silêncio a partir da canoa.",
+      "Pesque peixe-tigre (pesque e solte)."
+     ],
+     "foodAndDrinks": [
+      "Nshima (angu de milho) com acompanhamentos",
+      "Chikanda (“mortadela africana” de tubérculos de orquídea e amendoim)",
+      "Munkoyo (bebida fermentada de raízes)"
+     ],
+     "criticalTips": [
+      "Por estrada, saindo de Lusaka, são ~3-4 h; de avião de pequeno porte é mais rápido.",
+      "Na canoa, siga as orientações do guia sobre a distância dos hipopótamos."
+     ],
+     "mapsQuery": "Lower Zambezi National Park, Zambia",
+     "stopNumber": 2
+    },
+    {
+     "name": "Parada 3: South Luangwa",
+     "recommendedDuration": "3 dias",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Safári a pé",
+      "Safári noturno para ver leopardos",
+      "Girafa-de-thornicroft e gnu-de-cookson"
+     ],
+     "activities": [
+      "Faça um safári a pé de manhã com um guarda-parque armado.",
+      "Faça um safári noturno com holofote.",
+      "Visite vilarejos e oficinas em Mfuwe."
+     ],
+     "foodAndDrinks": [
+      "Churrasco (braai) ao redor da fogueira",
+      "Vitumbuwa (bolinhos fritos doces)"
+     ],
+     "criticalTips": [
+      "Voar de Lusaka para Mfuwe (~1 h) é o mais prático.",
+      "Na época de chuvas (dezembro a março), muitos acampamentos fecham e as estradas ficam intransitáveis."
+     ],
+     "mapsQuery": "Mfuwe, South Luangwa National Park, Zambia",
+     "stopNumber": 3
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Nshima (angu de milho) com acompanhamentos",
+     "Kapenta (peixinhos secos de lago)",
+     "Tilápia grelhada"
+    ],
+    "drinks": [
+     "Cerveja Mosi",
+     "Munkoyo (bebida fermentada de raízes)",
+     "Maheu (bebida de milho fermentado)"
+    ],
+    "streetFoods": [
+     "Vitumbuwa (bolinhos fritos doces)",
+     "Milho assado na espiga",
+     "Chikanda (“mortadela africana” de tubérculos de orquídea e amendoim)"
+    ],
+    "diningAdvice": "A nshima é enrolada em bolinhas com a mão direita e mergulhada no molho; os restaurantes locais são muito baratos, e os lodges costumam incluir as refeições."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptador tipo G",
+     "Antimaláricos e repelente",
+     "Roupas em cores neutras e binóculos",
+     "Capa de chuva e capa à prova d'água para as cataratas"
+    ],
+    "safetyAndEtiquette": [
+     "Não desça do veículo nos parques e siga as regras do guia sobre os animais no acampamento.",
+     "Troque dinheiro só em bancos ou casas de câmbio e pague valores altos com cartão.",
+     "Os cumprimentos são longos e importantes; tocar o cotovelo direito com a mão esquerda ao apertar a mão é sinal de respeito."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G",
+     "C",
+     "D"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Principalmente tomadas britânicas tipo G; em prédios antigos, tipo D e às vezes C. Pode haver cortes de energia programados (load-shedding)."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Não beba água da torneira; houve surtos de cólera. Beba água mineral ou tratada; os lodges costumam oferecer água filtrada.",
+    "vaccines": [
+     "Febre amarela: certificado se você chegar de um país de risco; avalie se vacinar para as províncias do Noroeste e Ocidental",
+     "Profilaxia contra malária em todo o país",
+     "Hepatite A, febre tifoide e raiva",
+     "Avalie a vacina contra cólera"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "992"
+   },
+   "tipping": {
+    "custom": "10% nos restaurantes se o serviço não estiver incluído; guias e equipe de safári esperam gorjeta diária.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Nos lodges, a gorjeta vai para uma caixinha coletiva, em dólares ou kwachas."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Não há (IVA de 16%)",
+    "minSpend": "Não se aplica",
+    "customsNote": "Não existe reembolso geral de IVA. Comprar ou levar para fora do país marfim, chifre ou produtos de fauna protegida é ilegal."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 0,80 - 2,00",
+    "topCarriers": [
+     "MTN",
+     "Airtel",
+     "Zamtel"
+    ],
+    "airportSimTrapWarning": "No aeroporto dá para comprar chips da MTN e da Airtel a bom preço, com cadastro do passaporte; baixe mapas offline, porque nos parques não há sinal."
+   },
+   "touristScams": [
+    {
+     "title": "Cambistas de rua",
+     "desc": "Cambistas de rua em Livingstone e na fronteira que entregam notas falsas ou a menos",
+     "tip": "Troque dinheiro só em bancos ou casas de câmbio e pague valores altos com cartão."
+    },
+    {
+     "title": "Ladrões no terminal",
+     "desc": "Furtos por arrastão e falsos vendedores de passagens no terminal Intercity de Lusaka",
+     "tip": "Compre a passagem no guichê da empresa ou pela internet e leve a bolsa na frente do corpo."
+    },
+    {
+     "title": "Vendedores de passeios sem licença",
+     "desc": "Supostos guias que vendem passeios sem licença às cataratas ou safáris",
+     "tip": "Reserve passeios pelo hotel ou com operadoras conhecidas."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Замбийская квача (ZMW)",

@@ -1495,6 +1495,380 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Dólar americano (USD)",
+   "plugType": "Tipo A, B (120V, 60Hz)",
+   "bestMonths": "Novembro a abril (mais seco e mar calmo; de junho a outubro chove)",
+   "safety": {
+    "crimeRateSummary": "A criminalidade é baixa; os principais riscos são pequenos furtos em carros ou praias e motoristas bêbados à noite. Em Peleliu e Angaur ainda pode haver munição não detonada da Segunda Guerra Mundial.",
+    "commonScams": [
+     "Passeios sem licença que dizem incluir as permissões e depois cobram à parte",
+     "Cobrança por danos que já existiam ao devolver o carro alugado",
+     "Furto de objetos deixados na praia ou no carro"
+    ],
+    "safeTravelTips": [
+     "Contrate mergulhos e passeios com operadores autorizados e use protetor solar seguro para os recifes.",
+     "Nos campos de batalha de Peleliu, não saia das trilhas nem toque em objetos de metal.",
+     "Cuidado com motoristas bêbados à noite e não deixe objetos de valor no carro."
+    ],
+    "emergencyNumbers": {
+     "police": "911",
+     "ambulance": "911",
+     "general": "911"
+    },
+    "safetyScore": 65,
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "4G em Koror e Babeldaob; sinal fraco nas Rock Islands e nas ilhas mais afastadas",
+    "costPerGbUsd": "~US$ 3 - 8",
+    "esimAvailability": "Limitada",
+    "bestCarriers": [
+     "PNCC (PalauCel)"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Limitado",
+    "costLevel": "Caro",
+    "singleTicketUsd": "Sem transporte público (táxi 5 - 15 $)",
+    "dailyPassUsd": "Aluguel de carro ~45 - 70 $/dia",
+    "popularRideApps": [
+     "Táxis",
+     "Traslados do hotel",
+     "Carro alugado"
+    ],
+    "taxiAdvice": "Não há apps de transporte nem ônibus. Os táxis em Koror custam poucos dólares em trajetos curtos; para Babeldaob, o melhor é alugar um carro (a mão é pela direita). Para as ilhas, vai-se de barco."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 80 - 120",
+    "dailyBudgetMidrangeUsd": "US$ 200 - 350",
+    "budgetMealUsd": "US$ 10 - 18",
+    "coffeeUsd": "US$ 3 - 5",
+    "waterBottleUsd": "US$ 1,50 - 2,50",
+    "hostelDormUsd": "Quase não há albergues (pousadas 40 - 70 $)",
+    "hotel3StarUsd": "US$ 150 - 250",
+    "flightCostIndex": "Muito caro",
+    "flightTip": "Chega-se a Koror-Babeldaob (ROR) principalmente via Guam (United), Taipé (China Airlines) e Seul; a taxa ambiental Pristine Paradise, de 100 $, já vem incluída na passagem."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Cumpra o “Palau Pledge” carimbado no seu passaporte: não toque nos corais nem alimente a fauna marinha.",
+     "Vista-se com discrição nas aldeias e perto de um bai (casa comunal); não entre sem permissão.",
+     "Os mais velhos e os chefes tradicionais são muito respeitados; fale baixo."
+    ],
+    "festivals": [
+     "Dia da Independência (1º de outubro)",
+     "Dia da Constituição (9 de julho)",
+     "Celebrações comunitárias de Natal e Ano-Novo"
+    ],
+    "lifestyle": "Uma vida insular marcada por clãs matrilineares e pelo mar; a pesca, as plantações de taro e as cerimônias com a moeda tradicional (udoud) continuam importantes. As influências japonesa e americana aparecem na culinária e no dia a dia."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Lagoa Sul das Rock Islands (UNESCO)",
+     "Lago das Águas-Vivas (Ongeim’l Tketau)",
+     "Pontos de mergulho Blue Corner e German Channel",
+     "Milky Way (enseada de lama branca)",
+     "Cachoeira de Ngardmau (Babeldaob)",
+     "Campos de batalha de Peleliu"
+    ],
+    "bestSeasons": "Novembro a abril (mais seco e mar calmo; de junho a outubro chove)",
+    "travelStyleTip": "Palau é um destino de mergulho e barco: hospede-se em Koror e faça passeios de um dia às Rock Islands, com as permissões tiradas pela sua agência."
+   },
+   "religion": {
+    "primaryReligions": "Católica (~46 %), protestante (~26 %; evangélica e adventista), fé tradicional modekngei (~5 %)",
+    "respectNorms": "Cubra ombros e joelhos na igreja; os sítios de pedra e os bai são sagrados, não suba neles.",
+    "sacredSites": [
+     "Airai Bai (a casa comunal tradicional mais antiga)",
+     "Monólitos de Badrulchau",
+     "Igreja do Sagrado Coração, Koror"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Palauano e inglês; em alguns estados, também sonsorolês, tobiano e japonês.",
+    "englishProficiency": "Alto; o inglês é muito usado no turismo e na administração pública.",
+    "phrases": [
+     {
+      "phrase": "Alii",
+      "meaning": "Olá",
+      "translation": "Olá",
+      "pronunciation": "ah-LEE"
+     },
+     {
+      "phrase": "Ungil tutau",
+      "meaning": "Bom dia",
+      "translation": "Bom dia",
+      "pronunciation": "oo-NGEEL too-TAH-oo"
+     },
+     {
+      "phrase": "Ke ua ngarang?",
+      "meaning": "Como vai?",
+      "translation": "Como vai?",
+      "pronunciation": "keh wah ngah-RAHNG"
+     },
+     {
+      "phrase": "Sulang",
+      "meaning": "Obrigado(a)",
+      "translation": "Obrigado(a)",
+      "pronunciation": "soo-LAHNG"
+     },
+     {
+      "phrase": "Mechikung",
+      "meaning": "Tchau",
+      "translation": "Tchau",
+      "pronunciation": "meh-chee-KOONG"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "As ilhas foram povoadas há cerca de 3.000 anos. Foram espanholas a partir de 1885 e alemãs a partir de 1899; sob domínio japonês (1914–1944), Koror foi a capital do Mandato dos Mares do Sul. Após a batalha de Peleliu (1944), Palau passou à tutela dos EUA e tornou-se independente em 1º de outubro de 1994, com um Pacto de Livre Associação. Em 2015, criou um dos maiores santuários marinhos do mundo.",
+    "milestones": [
+     "1899 – Venda à Alemanha",
+     "1944 – Batalha de Peleliu",
+     "1994 – Independência",
+     "2015 – Santuário Marinho Nacional"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Caranguejo-dos-coqueiros",
+     "Sopa de morcego-frugívoro (tradicional)",
+     "Sashimi de atum fresco"
+    ],
+    "traditionalDrinks": [
+     "Água de coco fresca",
+     "Chá de capim-limão",
+     "Cerveja local Red Rooster"
+    ],
+    "streetFoodAndDesserts": [
+     "Tapioca com creme de coco",
+     "Marmitas bento ao estilo japonês",
+     "Chips de taro e de fruta-pão"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Haruo Remeliik (primeiro presidente)",
+     "Tommy Remengesau Jr. (idealizador do santuário marinho)",
+     "Kuniwo Nakamura (presidente na independência)"
+    ],
+    "strongSectors": [
+     "Mergulho e turismo marinho",
+     "Conservação marinha e ecoturismo",
+     "Recursos do Pacto com os EUA e serviço público"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Usa-se o dólar; hotéis, centros de mergulho e restaurantes de Koror aceitam cartão. Leve dinheiro vivo para lojas pequenas, táxis e taxas dos estados.",
+    "tippingCulture": "Nos restaurantes, 10-15 % é o comum; guias de mergulho e tripulação recebem 10-20 $ por dia.",
+    "economicPillars": "Turismo (sobretudo mergulho), recursos do Pacto de Livre Associação com os EUA, serviço público e pesca artesanal."
+   }
+  },
+  "itin": {
+   "routeName": "Ilhas e recifes de Palau: Babeldaob, Koror, Rock Islands e Peleliu",
+   "routeSummary": "Roteiro de 6 dias das cachoeiras e monólitos de Babeldaob, no norte, aos museus de Koror, à lagoa das Rock Islands (UNESCO) e à história de guerra de Peleliu, no sul.",
+   "totalDays": 6,
+   "idealDurationText": "Roteiro de 6 dias",
+   "bestSeason": "Novembro a abril (mais seco e mar calmo; de junho a outubro chove)",
+   "transportMode": "Carro alugado (Babeldaob) + passeios e barcos de mergulho",
+   "paceLevel": "Ativo (mergulho, snorkel e barco)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Babeldaob (cachoeiras e monólitos)",
+     "recommendedDuration": "1 dia",
+     "durationBadge": "1 dia",
+     "highlights": [
+      "Cachoeira de Ngardmau",
+      "Monólitos de Badrulchau",
+      "Capitólio de Ngerulmud",
+      "Airai Bai"
+     ],
+     "activities": [
+      "Caminhe pela floresta e refresque-se na cachoeira.",
+      "Passeie entre os monólitos com vista para o mar.",
+      "Observe a arquitetura tradicional do bai."
+     ],
+     "foodAndDrinks": [
+      "Taro com coco",
+      "Água de coco"
+     ],
+     "criticalTips": [
+      "Os estados cobram pequenas taxas de entrada; leve dinheiro vivo.",
+      "A trilha pode ser escorregadia; use sapatilhas de neoprene."
+     ],
+     "mapsQuery": "Ngardmau Waterfall, Palau"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Koror (museus e porto)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Museu Nacional de Belau",
+      "Museu Etpison",
+      "Aquário de Palau (PICRC)",
+      "Pôr do sol na ponte KB"
+     ],
+     "activities": [
+      "Veja o dinheiro de pedra e as tábuas narrativas no museu.",
+      "Reme de caiaque pelos manguezais.",
+      "Conheça o ecossistema do recife no aquário."
+     ],
+     "foodAndDrinks": [
+      "Sashimi de atum",
+      "Marmitas bento",
+      "Cerveja Red Rooster"
+     ],
+     "criticalTips": [
+      "Pergunte o preço do táxi antes; à noite há poucos.",
+      "Protetores solares tóxicos para os recifes são proibidos; traga um permitido."
+     ],
+     "mapsQuery": "Koror, Palau"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Rock Islands (Lago das Águas-Vivas e mergulho)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Lago das Águas-Vivas",
+      "Milky Way",
+      "Blue Corner e German Channel (raias-manta)",
+      "Banco de areia Long Beach"
+     ],
+     "activities": [
+      "Faça snorkel entre águas-vivas que não queimam.",
+      "Mergulhe com tubarões e raias-manta no Blue Corner.",
+      "Experimente a máscara de lama branca no Milky Way."
+     ],
+     "foodAndDrinks": [
+      "Bento de piquenique no barco",
+      "Frutas frescas"
+     ],
+     "criticalTips": [
+      "As Rock Islands e o Lago das Águas-Vivas exigem permissão paga; providencie com a sua agência.",
+      "No Lago das Águas-Vivas, o mergulho com cilindro é proibido; não levante sedimentos com as nadadeiras."
+     ],
+     "mapsQuery": "Rock Islands Southern Lagoon, Palau"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Peleliu (história da Segunda Guerra Mundial)",
+     "recommendedDuration": "1 dia",
+     "durationBadge": "1 dia",
+     "highlights": [
+      "Bloody Nose Ridge (Umurbrogol)",
+      "Caverna dos Mil Homens",
+      "Praia de desembarque Orange Beach"
+     ],
+     "activities": [
+      "Percorra os campos de batalha com um guia local.",
+      "Visite os monumentos e o pequeno museu de guerra.",
+      "Mergulhe na Peleliu Wall na volta."
+     ],
+     "foodAndDrinks": [
+      "Peixe de recife grelhado",
+      "Água de coco"
+     ],
+     "criticalTips": [
+      "Por causa da munição não detonada, não saia das trilhas nem toque em metal.",
+      "O trajeto de barco dura 1-1,5 hora; previna-se contra o enjoo."
+     ],
+     "mapsQuery": "Peleliu, Palau"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Caranguejo-dos-coqueiros",
+     "Sashimi de atum",
+     "Taro com coco"
+    ],
+    "drinks": [
+     "Água de coco",
+     "Chá de capim-limão",
+     "Cerveja Red Rooster"
+    ],
+    "streetFoods": [
+     "Marmitas bento",
+     "Sobremesa de tapioca"
+    ],
+    "diningAdvice": "Em Koror predomina a cozinha japonesa, coreana e americana; peça caranguejo-dos-coqueiros só onde ele é servido dentro do tamanho e da temporada permitidos por lei."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Protetor solar seguro para recifes",
+     "Máscara de snorkel e sapatilhas de neoprene",
+     "Adaptador tipo A/B",
+     "Bolsa estanque (dry bag)"
+    ],
+    "safetyAndEtiquette": [
+     "Não recolha nem compre corais, conchas ou produtos de tartaruga.",
+     "Cumpra o Palau Pledge."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "A",
+     "B"
+    ],
+    "voltage": "120V",
+    "frequency": "60Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Tomadas tipo A/B com 120V; leve adaptador A/B e confira se seus aparelhos aceitam 110-240V."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "A água da torneira é tratada, mas não é recomendável bebê-la; use água engarrafada ou filtrada.",
+    "vaccines": [
+     "Vacinas de rotina",
+     "Hepatite A e febre tifoide",
+     "Proteção contra mosquitos (dengue)",
+     "Febre amarela: certificado se você chegar de país de risco"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "911"
+   },
+   "tipping": {
+    "custom": "A gorjeta segue o estilo americano: 10-15 % nos restaurantes.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Guias de mergulho e tripulações recebem 10-20 $ por dia."
+   },
+   "taxFree": {
+    "vatRefundPercent": "PGST (IVA) de 10 %; sem devolução para turistas",
+    "minSpend": "Não se aplica",
+    "customsNote": "Palau não devolve impostos a turistas. É proibido levar corais, conchas e produtos de tartaruga, e há controles de biossegurança para alimentos e plantas."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "US$ 3 - 8",
+    "topCarriers": [
+     "PNCC (PalauCel)"
+    ],
+    "airportSimTrapWarning": "A PNCC é a principal operadora e há poucos eSIMs internacionais; compre um pacote turístico de chip/eSIM da PNCC no aeroporto ou no escritório de Koror. O roaming pode sair caríssimo."
+   },
+   "touristScams": [
+    {
+     "title": "Taxas de permissão escondidas",
+     "desc": "Vendedores de passeios baratos depois cobram à parte a permissão das Rock Islands/Lago das Águas-Vivas.",
+     "tip": "Escolha um operador autorizado e confirme por escrito se as permissões estão incluídas."
+    },
+    {
+     "title": "Cobrança por danos no carro",
+     "desc": "Podem cobrar de você arranhões que já existiam ao devolver o carro.",
+     "tip": "Fotografe o carro por todos os lados ao retirá-lo."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Доллар США (USD)",

@@ -1543,6 +1543,392 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Dram armênio (AMD)",
+   "plugType": "Tipo C, F (230V, 50Hz)",
+   "bestMonths": "Maio a junho e setembro a outubro (clima ameno, época da vindima)",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Crimes violentos são raros, e Yerevan é segura mesmo à noite. Os principais problemas são os táxis abusivos e as áreas próximas à fronteira com o Azerbaijão.",
+    "commonScams": [
+     "Táxis sem taxímetro no aeroporto com tarifas infladas",
+     "Bares turísticos que servem bebidas sem cardápio e depois apresentam uma conta salgada",
+     "Falso \"brandy Ararat original\" vendido na rua"
+    ],
+    "safeTravelTips": [
+     "Peça táxi pelo Yandex Go ou pelo GG para saber o preço com antecedência.",
+     "Acompanhe os alertas oficiais sobre as estradas perto da fronteira com o Azerbaijão (trechos fronteiriços de Tavush e Syunik).",
+     "A fronteira terrestre entre a Turquia e a Armênia está fechada; chegue de avião ou por terra a partir da Geórgia."
+    ],
+    "emergencyNumbers": {
+     "police": "102",
+     "ambulance": "103",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "95 %+ de 4G/5G nas cidades; a cobertura pode cair em vilarejos de montanha",
+    "costPerGbUsd": "~US$ 0,50 - 1,50",
+    "esimAvailability": "Excelente",
+    "bestCarriers": [
+     "Team Telecom Armenia",
+     "Viva Armenia",
+     "Ucom"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Adequado",
+    "costLevel": "Econômico",
+    "singleTicketUsd": "US$ 0,25 - 0,80",
+    "dailyPassUsd": "US$ 2 - 4",
+    "popularRideApps": [
+     "Yandex Go",
+     "GG",
+     "Yandex Maps / Google Maps"
+    ],
+    "taxiAdvice": "As corridas por Yerevan com Yandex Go ou GG costumam custar 2-5 $; combine o preço antes de entrar num táxi pego na rua."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 30 - 45",
+    "dailyBudgetMidrangeUsd": "US$ 70 - 120",
+    "budgetMealUsd": "US$ 6 - 12",
+    "coffeeUsd": "US$ 1,50 - 3",
+    "waterBottleUsd": "US$ 0,40 - 0,80",
+    "hostelDormUsd": "US$ 10 - 20",
+    "hotel3StarUsd": "US$ 45 - 90",
+    "flightCostIndex": "Moderado",
+    "flightTip": "Há voos diretos de Istambul para Yerevan; reservar cedo ou chegar por terra a partir de Tbilisi deixa a viagem mais barata."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "A hospitalidade é fundamental; se convidarem você para comer, prepare-se para longos brindes conduzidos por um tamada.",
+     "Fique em silêncio nas igrejas e tire o chapéu; as mulheres devem cobrir os ombros.",
+     "Cumprimente primeiro os mais velhos; leve um pequeno presente (doces, flores) ao visitar a casa de alguém.",
+     "É melhor evitar temas políticos ou históricos delicados."
+    ],
+    "festivals": [
+     "Vardavar (julho, festa da água)",
+     "Festival do Vinho de Areni (outubro)",
+     "Yerevan Wine Days (maio/junho)"
+    ],
+    "lifestyle": "Longas refeições em família, cultura do café, tradição de vinho e brandy, e uma animada vida de cafés e parques em Yerevan."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Cascade e Praça da República, em Yerevan",
+     "Templo de Garni e mosteiro de Geghard",
+     "Lago Sevan e Sevanavank",
+     "Mosteiro de Tatev e teleférico Wings of Tatev",
+     "Mosteiro de Khor Virap (vista do monte Ararat)",
+     "Catedral de Etchmiadzin"
+    ],
+    "bestSeasons": "Maio a junho e setembro a outubro (clima ameno, época da vindima)",
+    "travelStyleTip": "Use Yerevan como base para bate-voltas; passe pelo menos uma noite no sul para visitar Tatev."
+   },
+   "religion": {
+    "primaryReligions": "Igreja Apostólica Armênia (~93 %), com pequenas comunidades católica, evangélica e yazidi.",
+    "respectNorms": "Cubra joelhos e ombros nas igrejas, respeite as áreas das velas e não tire fotos durante as missas.",
+    "sacredSites": [
+     "Catedral Mãe de Etchmiadzin",
+     "Mosteiro de Geghard (UNESCO)",
+     "Mosteiro de Khor Virap"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Armênio (oficial). O russo é amplamente compreendido.",
+    "englishProficiency": "Bom entre os jovens e o pessoal do turismo em Yerevan; nas áreas rurais, o russo ajuda mais.",
+    "phrases": [
+     {
+      "phrase": "Բարև ձեզ",
+      "meaning": "Olá (formal)",
+      "translation": "Olá (formal)",
+      "pronunciation": "Barev dzez"
+     },
+     {
+      "phrase": "Շնորհակալություն",
+      "meaning": "Obrigado(a)",
+      "translation": "Obrigado(a)",
+      "pronunciation": "Shnorhakalutyun"
+     },
+     {
+      "phrase": "Խնդրում եմ",
+      "meaning": "Por favor",
+      "translation": "Por favor",
+      "pronunciation": "Khndrum em"
+     },
+     {
+      "phrase": "Ի՞նչ արժե",
+      "meaning": "Quanto custa?",
+      "translation": "Quanto custa?",
+      "pronunciation": "Inch arzhe?"
+     },
+     {
+      "phrase": "Ցտեսություն",
+      "meaning": "Tchau / Até logo",
+      "translation": "Tchau / Até logo",
+      "pronunciation": "Tstesutyun"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Uma das nações cristãs mais antigas do mundo, a Armênia tem alfabeto próprio, mosteiros de pedra e uma tradição vinícola antiquíssima; recuperou a independência em 1991.",
+    "milestones": [
+     "301: o cristianismo se torna religião de Estado",
+     "405: Mesrop Mashtots cria o alfabeto armênio",
+     "1918: Primeira República da Armênia",
+     "1991: independência"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Khorovats (espetinhos de carne na brasa)",
+     "Tolma (folhas de uva ou legumes recheados)",
+     "Khash (caldo encorpado das manhãs de inverno)"
+    ],
+    "traditionalDrinks": [
+     "Brandy armênio (conhaque)",
+     "Tan (bebida salgada de iogurte)",
+     "Vodca de damasco ou de amora (oghi)"
+    ],
+    "streetFoodAndDesserts": [
+     "Lavash (pão fino reconhecido pela UNESCO)",
+     "Gata (pão doce)",
+     "Zhingyalov hats (pão achatado recheado de ervas)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Aram Khachaturian (compositor)",
+     "Komitas (musicólogo e compositor)",
+     "Martiros Saryan (pintor)"
+    ],
+    "strongSectors": [
+     "TI e software",
+     "Mineração (cobre, molibdênio)",
+     "Produção de vinho e brandy"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Cartões e pagamento por aproximação são comuns em Yerevan; nos vilarejos, mercados e micro-ônibus, é preciso ter dinheiro vivo em dram.",
+    "tippingCulture": "Os restaurantes costumam incluir 10 % de serviço; se não incluírem, deixe 5-10 %.",
+    "economicPillars": "Exportação de minérios, serviços de TI, turismo, agricultura e remessas de emigrantes."
+   }
+  },
+  "itin": {
+   "routeName": "Armênia clássica: Yerevan, Garni–Geghard, Sevan e Tatev",
+   "routeSummary": "Roteiro de 7 dias que vai da cultura de cafés de Yerevan ao templo pagão de Garni, às margens do lago Sevan e ao mosteiro de Tatev, no sul.",
+   "totalDays": 7,
+   "idealDurationText": "Roteiro de 7 dias pelo Cáucaso",
+   "bestSeason": "Maio a junho e setembro a outubro (clima ameno, época da vindima)",
+   "transportMode": "Carro alugado/motorista + micro-ônibus e passeios",
+   "paceLevel": "Equilibrado (cultura e natureza)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Yerevan",
+     "recommendedDuration": "3 dias (cidade e bate-voltas)",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Complexo Cascade e Centro de Arte Cafesjian",
+      "Praça da República e espetáculo das fontes",
+      "Museu de manuscritos Matenadaran",
+      "Mercado ao ar livre Vernissage"
+     ],
+     "activities": [
+      "Contemple o Ararat do alto da Cascade.",
+      "Faça um passeio de meio dia até a catedral de Etchmiadzin.",
+      "Participe de uma degustação na fábrica de brandy Ararat."
+     ],
+     "foodAndDrinks": [
+      "Khorovats",
+      "Brandy armênio",
+      "Gata"
+     ],
+     "criticalTips": [
+      "A maioria dos museus fecha às segundas-feiras.",
+      "Yandex Go e GG são baratos e transparentes."
+     ],
+     "mapsQuery": "Yerevan, Armenia"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Garni e Geghard",
+     "recommendedDuration": "1 dia (bate-volta a partir de Yerevan)",
+     "durationBadge": "1 dia",
+     "highlights": [
+      "Templo pagão de Garni (século I)",
+      "Colunas de basalto \"Sinfonia das Pedras\"",
+      "Mosteiro de Geghard, escavado na rocha"
+     ],
+     "activities": [
+      "Desça a pé até o desfiladeiro de Garni.",
+      "Veja como o lavash é assado num forno tonir de vilarejo.",
+      "Com sorte, ouça um coral na sala acústica de Geghard."
+     ],
+     "foodAndDrinks": [
+      "Lavash",
+      "Tolma",
+      "Tan"
+     ],
+     "criticalTips": [
+      "Use calçados firmes para a trilha do desfiladeiro.",
+      "Em Geghard, é obrigatório cobrir ombros e joelhos."
+     ],
+     "mapsQuery": "Garni Temple, Armenia"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Lago Sevan e Dilijan",
+     "recommendedDuration": "1-2 dias (lago e floresta)",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Mosteiro de Sevanavank",
+      "Margens do lago Sevan",
+      "Ruas antigas de Dilijan",
+      "Mosteiro de Haghartsin"
+     ],
+     "activities": [
+      "Suba até Sevanavank para ver o lago do alto.",
+      "Caminhe pelas florestas do Parque Nacional de Dilijan.",
+      "No verão, dê um mergulho ou faça um piquenique à beira do lago."
+     ],
+     "foodAndDrinks": [
+      "Truta do Sevan (ishkhan)",
+      "Vodca de damasco (oghi)"
+     ],
+     "criticalTips": [
+      "O lago fica a 1.900 m de altitude; as noites são frescas mesmo no verão.",
+      "Nos fins de semana do fim do verão há muita gente; chegue cedo."
+     ],
+     "mapsQuery": "Lake Sevan, Armenia"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Syunik – Khor Virap, Areni e Tatev",
+     "recommendedDuration": "2 dias (circuito sul)",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Mosteiro de Khor Virap e monte Ararat",
+      "Vila vinícola de Areni e caverna Areni-1",
+      "Mosteiro de Noravank",
+      "Teleférico Wings of Tatev e mosteiro de Tatev"
+     ],
+     "activities": [
+      "Deguste vinhos locais em Areni.",
+      "Fotografe Noravank entre penhascos vermelhos.",
+      "Suba até Tatev num dos teleféricos de vaivém mais longos do mundo."
+     ],
+     "foodAndDrinks": [
+      "Vinho tinto de Areni",
+      "Khorovats",
+      "Zhingyalov hats"
+     ],
+     "criticalTips": [
+      "As estradas de montanha são sinuosas; viaje com um motorista experiente.",
+      "Confira os alertas oficiais sobre as estradas perto da fronteira com o Azerbaijão."
+     ],
+     "mapsQuery": "Tatev Monastery, Armenia"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Khorovats (espetinhos de carne na brasa)",
+     "Tolma (folhas de uva ou legumes recheados)",
+     "Khash (caldo encorpado das manhãs de inverno)"
+    ],
+    "drinks": [
+     "Brandy armênio (conhaque)",
+     "Tan (bebida salgada de iogurte)",
+     "Vodca de damasco ou de amora (oghi)"
+    ],
+    "streetFoods": [
+     "Lavash (pão fino reconhecido pela UNESCO)",
+     "Gata (pão doce)",
+     "Zhingyalov hats (pão achatado recheado de ervas)"
+    ],
+    "diningAdvice": "Na Armênia, a comida é compartilhada; peça entradas, saladas e khorovats para a mesa. O serviço pode já vir incluído na conta."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Calçados confortáveis para caminhar",
+     "Lenço para visitar igrejas",
+     "Casaco para as noites frescas",
+     "Um pouco de dinheiro vivo em dram"
+    ],
+    "safetyAndEtiquette": [
+     "Use Yandex Go/GG e confira o preço antes da corrida.",
+     "Fique em silêncio e vista-se com discrição nas igrejas."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Tomadas europeias de dois pinos redondos, iguais às da Turquia; não é preciso adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "A água da torneira de Yerevan vem de nascentes de montanha e, em geral, é potável; os bebedouros pulpulak são famosos. Nas áreas rurais, prefira água mineral.",
+    "vaccines": [
+     "Vacinas de rotina (difteria e tétano, tríplice viral)",
+     "Hepatite A",
+     "Raiva, a considerar em estadias longas em áreas rurais"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "103"
+   },
+   "tipping": {
+    "custom": "A gorjeta não é obrigatória; os restaurantes costumam incluir taxa de serviço.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Se não houver taxa de serviço, deixe 5-10 %; nos táxis, basta arredondar."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA de 20 %; reembolso para turistas limitado",
+    "minSpend": "Depende da loja",
+    "customsNote": "O reembolso do IVA para turistas não é muito difundido nem confiável; pergunte na loja pelo formulário antes de comprar ou considere o IVA parte do preço."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 0,50 - 1,50",
+    "topCarriers": [
+     "Team Telecom Armenia",
+     "Viva Armenia",
+     "Ucom"
+    ],
+    "airportSimTrapWarning": "Os quiosques das operadoras no aeroporto de Zvartnots têm preços razoáveis, mas as lojas da Team, Viva ou Ucom na cidade oferecem mais planos."
+   },
+   "touristScams": [
+    {
+     "title": "Táxi do aeroporto",
+     "desc": "Carros sem taxímetro na saída de Zvartnots cobram tarifas exageradas até o centro.",
+     "tip": "Chame pelo Yandex Go ou GG; até o centro costuma custar 5-8 $."
+    },
+    {
+     "title": "Armadilha da conta do bar",
+     "desc": "Desconhecidos simpáticos levam você a bares onde bebidas sem cardápio terminam numa conta inflada.",
+     "tip": "Não peça nada sem ver os preços e confira a conta item por item."
+    },
+    {
+     "title": "Brandy falsificado",
+     "desc": "Nas áreas turísticas, vende-se brandy \"Ararat\" falsificado.",
+     "tip": "Compre o brandy na loja oficial da fábrica ou em grandes supermercados."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Армянский драм (AMD)",

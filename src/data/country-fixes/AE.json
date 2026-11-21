@@ -607,6 +607,158 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "AED (dirham dos EAU)",
+   "bestMonths": "Novembro a março (24-30 °C, ideal para praia e deserto); de junho a setembro, a temperatura chega com frequência a 40-45 °C, com muita umidade",
+   "safety": {
+    "crimeRateSummary": "A criminalidade está entre as mais baixas do mundo, e Dubai e Abu Dhabi são seguras à noite. O risco real é desrespeitar a lei: tolerância zero com drogas, restrições a alguns remédios com receita e punições severas por comportamento em público; em momentos de tensão na região, acompanhe os alertas oficiais.",
+    "commonScams": [
+     "Safáris no deserto baratos vendidos na rua ou nas redes sociais, sem seguro nem medidas de segurança",
+     "Anúncios falsos de apartamentos de temporada na internet que pedem pagamento adiantado",
+     "Ligações por telefone ou WhatsApp de golpistas que se passam pela polícia ou pelo banco e pedem os dados do cartão"
+    ],
+    "safeTravelTips": [
+     "Leve os remédios controlados junto com a receita e confira antes a lista de medicamentos controlados dos EAU.",
+     "Não fotografe pessoas, principalmente mulheres, sem permissão, nem prédios oficiais; não use drones sem autorização.",
+     "No Ramadã, evite comer e beber em público durante o dia; cubra ombros e joelhos em shoppings e mesquitas."
+    ],
+    "emergencyNumbers": {
+     "police": "999",
+     "ambulance": "998",
+     "general": "999"
+    },
+    "safetyScore": 65,
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Excelente – 5G amplamente disponível nas cidades e bom sinal até nas rodovias e acampamentos no deserto",
+    "costPerGbUsd": "~US$ 2 - 6",
+    "esimAvailability": "Disponível – linhas turísticas da du e da e& (no aeroporto), eSIM da Airalo e da Holafly",
+    "bestCarriers": [
+     "e& (Etisalat)",
+     "du",
+     "Virgin Mobile UAE"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Muito bom – metrô e bonde de Dubai modernos e limpos; rede de ônibus em Abu Dhabi; ônibus entre os emirados",
+    "costLevel": "Moderado",
+    "singleTicketUsd": "~0,80 - 2 $ (Nol, conforme a zona)",
+    "dailyPassUsd": "~6 $ (passe diário Nol)",
+    "popularRideApps": [
+     "Careem",
+     "Uber",
+     "RTA Dubai"
+    ],
+    "taxiAdvice": "Os táxis oficiais de Dubai usam taxímetro e são seguros; corridas na cidade costumam custar 8-20 $, com acréscimo quando o embarque é no aeroporto. O ônibus E101 entre Dubai e Abu Dhabi é muito mais barato que o táxi."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 60 - 90",
+    "dailyBudgetMidrangeUsd": "US$ 150 - 250",
+    "budgetMealUsd": "US$ 8 - 15",
+    "coffeeUsd": "US$ 4 - 6,50",
+    "waterBottleUsd": "US$ 0,40 - 0,80",
+    "hostelDormUsd": "US$ 25 - 45",
+    "hotel3StarUsd": "US$ 70 - 140",
+    "flightCostIndex": "Moderado (Istambul – Dubai direto ~4,5 h)",
+    "flightTip": "THY, Emirates, flydubai, Pegasus e AJet voam de Istambul para Dubai; a Air Arabia voa para Sharjah, e a THY e a Etihad, para Abu Dhabi. Voar para Sharjah ou Abu Dhabi costuma sair mais barato, e os hotéis ficam bem mais em conta no verão."
+   }
+  },
+  "enc": {
+   "language": {
+    "officialLanguages": "Árabe (oficial); o inglês é usado em toda parte como língua comum no trabalho e no dia a dia, e hindi, urdu e tagalo também são muito falados.",
+    "englishProficiency": "Muito bom – como a maioria dos moradores é estrangeira, o inglês funciona em qualquer lugar.",
+    "phrases": [
+     {
+      "phrase": "مرحبا (Marhaba)",
+      "meaning": "Olá",
+      "translation": "Olá",
+      "pronunciation": "MAR-ha-ba"
+     },
+     {
+      "phrase": "شكراً (Shukran)",
+      "meaning": "Obrigado(a)",
+      "translation": "Obrigado(a)",
+      "pronunciation": "SHUK-ran"
+     },
+     {
+      "phrase": "من فضلك (Min fadlak)",
+      "meaning": "Por favor",
+      "translation": "Por favor",
+      "pronunciation": "min FAD-lak"
+     },
+     {
+      "phrase": "كم السعر؟ (Kam as-si‘r?)",
+      "meaning": "Quanto custa?",
+      "translation": "Quanto custa?",
+      "pronunciation": "kam as-SI-ir"
+     },
+     {
+      "phrase": "إن شاء الله (Inshallah)",
+      "meaning": "Se Deus quiser / Tomara",
+      "translation": "Se Deus quiser / Tomara",
+      "pronunciation": "in-SHAA-al-lah"
+     }
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Tomadas britânicas tipo G, de três pinos retangulares; os plugues turcos precisam de adaptador (os hotéis costumam emprestar)."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "A água da torneira é dessalinizada e atende às normas, mas, por causa das caixas-d'água dos prédios antigos, a maioria das pessoas bebe água mineral.",
+    "vaccines": [
+     "Vacinas de rotina (tríplice viral, tétano)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "998"
+   },
+   "tipping": {
+    "custom": "Os restaurantes costumam incluir taxa de serviço; se não incluírem, é comum deixar 10 %.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Para taxistas e entregadores, basta arredondar o valor."
+   },
+   "taxFree": {
+    "vatRefundPercent": "87 % do IVA de 5 % (~4,35 % líquido)",
+    "minSpend": "250 AED por loja",
+    "customsNote": "Nas lojas com o aviso “Tax Free” (Planet), peça a nota fiscal e valide-a nos quiosques Planet do aeroporto antes do check-in. É preciso sair do país em até 90 dias."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 2 - 6",
+    "topCarriers": [
+     "e& (Etisalat)",
+     "du",
+     "Virgin Mobile UAE"
+    ],
+    "airportSimTrapWarning": "No aeroporto de Dubai, a du às vezes distribui chips turísticos de graça; os pacotes turísticos da e& e da du vendidos no aeroporto têm preços razoáveis. As chamadas de voz do WhatsApp e do FaceTime são bloqueadas."
+   },
+   "touristScams": [
+    {
+     "title": "Safáris e iates sem licença",
+     "desc": "Passeios muito baratos vendidos nas redes sociais acabam cancelados ou são feitos em veículos sem seguro nem segurança.",
+     "tip": "Reserve com empresas licenciadas pelo Dubai Economy and Tourism (DET) ou pelo hotel."
+    },
+    {
+     "title": "Falsificações e vendedores de ouro",
+     "desc": "Aliciadores com relógios e bolsas “réplica” nos souks de Deira e Karama levam você para salas nos fundos das lojas; a pureza e o peso do ouro são inflados.",
+     "tip": "Não entre nesses fundos de loja; ao comprar ouro, exija o selo de garantia e a nota fiscal."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "AED (дирхам ОАЭ)",

@@ -1415,6 +1415,360 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Franco CFA da África Ocidental (XOF)",
+   "bestMonths": "Novembro – fevereiro (seco e relativamente fresco, com os ventos empoeirados do harmatã); março – junho é muito quente (até 45 °C) e julho – setembro é a estação das chuvas",
+   "safety": {
+    "safetyScore": 10,
+    "safetyLevel": "Zona de conflito (não viaje)",
+    "badgeColor": "bg-rose-600 text-white border-rose-700 dark:bg-rose-950 dark:text-rose-200",
+    "crimeRateSummary": "Turquia, Reino Unido e EUA desaconselham qualquer viagem ao Níger: ataques de grupos armados em todo o país, alto risco de sequestro de estrangeiros e instabilidade política fazem com que nenhuma região, nem mesmo Niamey, seja considerada segura. A assistência consular é muito limitada, e o espaço aéreo ou as fronteiras podem ser fechados de uma hora para outra.",
+    "commonScams": [
+     "Falsos guias “oficiais” que cobram taxas de autorização ou de escolta",
+     "Pagamentos não oficiais exigidos nos postos de controle",
+     "Joias tuaregues de prata falsa nos mercados"
+    ],
+    "safeTravelTips": [
+     "Adie a viagem; se for inevitável, registre-se na embaixada do seu país e conte com segurança profissional.",
+     "Não saia de Niamey por estrada; não divulgue seus planos e evite rotinas.",
+     "Confirme que seu seguro cobre o Níger e a evacuação."
+    ],
+    "emergencyNumbers": {
+     "police": "17",
+     "ambulance": "15",
+     "general": "17"
+    }
+   },
+   "internet": {
+    "networkCoverage": "3G/4G em Niamey e nas capitais regionais; fraco ou inexistente nas áreas rurais e no deserto, com restrições ocasionais",
+    "costPerGbUsd": "~US$ 1,50 - 3,00",
+    "esimAvailability": "Escassa (chip local com passaporte)",
+    "bestCarriers": [
+     "Airtel Niger",
+     "Zamani Telecom",
+     "Moov Africa Niger"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Precário (estradas intermunicipais inseguras)",
+    "costLevel": "Barato (exceto veículos com segurança)",
+    "singleTicketUsd": "US$ 0,50 - 1,00 (táxi compartilhado, Niamey)",
+    "dailyPassUsd": "Não existe",
+    "popularRideApps": [
+     "Não há um app popular",
+     "Veículos do hotel ou da organização"
+    ],
+    "taxiAdvice": "Os táxis compartilhados verdes e amarelos de Niamey são baratos e têm tarifa fixa, mas representam um risco para estrangeiros; desloque-se só em veículos de confiança do hotel ou da sua organização. Não é recomendável viajar de carro entre cidades por causa do risco de ataques e sequestros."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 35 - 60",
+    "dailyBudgetMidrangeUsd": "US$ 100 - 180",
+    "budgetMealUsd": "US$ 2 - 6",
+    "coffeeUsd": "US$ 0,50 - 2,00",
+    "waterBottleUsd": "US$ 0,40 - 1,00",
+    "hostelDormUsd": "Não há hostels (pousada simples: US$ 15 - 30)",
+    "hotel3StarUsd": "US$ 60 - 120",
+    "flightCostIndex": "Alto (poucas conexões, que mudam com frequência)",
+    "flightTip": "Turkish Airlines, Royal Air Maroc, Air Algérie e Air Côte d’Ivoire voam para o aeroporto Diori Hamani, em Niamey (NIM); os horários mudam com frequência conforme a situação política, então acompanhe seu voo até o último momento."
+   },
+   "plugType": "Tipo C, D, E, F (220V, 50Hz)"
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Cumprimentos longos são costume; pergunte pela família e pela saúde e use a mão direita.",
+     "É terminantemente proibido fotografar soldados, policiais, pontes e prédios oficiais.",
+     "Vista-se de forma discreta; as mulheres devem cobrir ombros e pernas."
+    ],
+    "festivals": [
+     "Cure Salée (Ingall, setembro; encontro nômade de tuaregues e wodaabes)",
+     "Gerewol (concurso de beleza masculina dos wodaabes)",
+     "Tabaski (Festa do Sacrifício)"
+    ],
+    "lifestyle": "Uma vida marcada pelo pastoreio e pela agricultura ao longo do rio Níger, lar de hauçás, zarma-songais, tuaregues, fulas (wodaabes) e canúris; o chá e a hospitalidade estão no centro da vida social."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Cidade velha e Grande Mesquita de Agadez (UNESCO)",
+     "Reservas naturais do Aïr e do Ténéré (UNESCO)",
+     "Parque Nacional W (UNESCO)",
+     "Zona das girafas de Kouré (girafas-da-áfrica-ocidental)",
+     "Museu Nacional de Niamey (Musée National Boubou Hama)"
+    ],
+    "bestSeasons": "Novembro – fevereiro (se a segurança permitir)",
+    "travelStyleTip": "Com os alertas oficiais atuais, o turismo não é recomendado; Agadez, o Aïr e o Parque W são hoje áreas de risco muito alto. Adie a visita até a situação melhorar."
+   },
+   "religion": {
+    "primaryReligions": "Muçulmanos ~99% (maioria sunita); pequenas comunidades cristãs e de crenças tradicionais",
+    "respectNorms": "Peça permissão antes de entrar em mesquitas e tire os sapatos; não coma nem beba em público durante o dia no Ramadã. Só alguns hotéis servem bebidas alcoólicas.",
+    "sacredSites": [
+     "Grande Mesquita de Agadez (minarete de adobe de 27 m)",
+     "Grande Mesquita de Niamey",
+     "Grande Mesquita e Palácio do Sultão de Zinder (Birni)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "A carta de 2025 declarou o hauçá língua nacional, com o francês e o inglês como línguas de trabalho; também são muito falados o zarma-songai, o tamasheq (tuaregue), o fulfulde e o canúri.",
+    "englishProficiency": "Muito baixo; você vai precisar de francês ou hauçá.",
+    "phrases": [
+     {
+      "phrase": "Sannu",
+      "meaning": "Olá (hauçá)",
+      "translation": "Olá (hauçá)",
+      "pronunciation": "SAN-noo"
+     },
+     {
+      "phrase": "Ina kwana?",
+      "meaning": "Bom dia, dormiu bem? (hauçá)",
+      "translation": "Bom dia, dormiu bem? (hauçá)",
+      "pronunciation": "ee-NA KWA-na"
+     },
+     {
+      "phrase": "Na gode",
+      "meaning": "Obrigado (hauçá)",
+      "translation": "Obrigado (hauçá)",
+      "pronunciation": "na GO-deh"
+     },
+     {
+      "phrase": "Nawa ne?",
+      "meaning": "Quanto custa? (hauçá)",
+      "translation": "Quanto custa? (hauçá)",
+      "pronunciation": "NA-wa neh"
+     },
+     {
+      "phrase": "Fofo",
+      "meaning": "Olá / Obrigado (zarma)",
+      "translation": "Olá / Obrigado (zarma)",
+      "pronunciation": "FO-fo"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "A região foi encruzilhada de Estados poderosos, como Kanem-Bornu, o Império Songai e as cidades-Estado hauçás, e de rotas de caravanas transaarianas; Agadez foi sede do Sultanato do Aïr no século XV. Colônia francesa, o Níger se tornou independente em 3 de agosto de 1960. O país é um importante produtor de urânio.",
+    "milestones": [
+     "~1449: Agadez se torna sede do Sultanato do Aïr",
+     "1922: organizado como colônia francesa",
+     "1960: independência (3 de agosto)",
+     "1991: Aïr e Ténéré entram na lista da UNESCO"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Tuwo da miyan kuka (mingau firme de milheto/milho com molho de folhas de baobá)",
+     "Dambou (cuscuz no vapor com folhas de moringa)",
+     "Riz au gras (arroz com carne e tomate)"
+    ],
+    "traditionalDrinks": [
+     "Chá tuaregue (três copos)",
+     "Fura da nono (bolinhas de milheto com leite fermentado)",
+     "Bissap (bebida de hibisco)"
+    ],
+    "streetFoodAndDesserts": [
+     "Kilishi (carne seca temperada)",
+     "Tsire / espetinhos de carne grelhada",
+     "Masa (panquequinhas de farinha de arroz)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Moustapha Alassane (pioneiro do cinema africano)",
+     "Bombino (guitarrista tuaregue)",
+     "Abdoul Razak Issoufou (lutador de taekwondo medalhista olímpico)"
+    ],
+    "strongSectors": [
+     "Mineração de urânio",
+     "Petróleo (jazida de Agadem e oleoduto)",
+     "Pecuária e agricultura (cebola, feijão-fradinho, milheto)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "O dinheiro vivo (francos CFA) domina; cartões só funcionam em alguns hotéis grandes, e há poucos caixas eletrônicos. Leve euros e troque em bancos; dinheiro móvel, como o Airtel Money, é comum entre os moradores.",
+    "tippingCulture": "Não é obrigatória; arredondar a conta em restaurantes e pequenas gorjetas são bem-vindos.",
+    "economicPillars": "Urânio, petróleo, ouro, pecuária e agricultura de subsistência."
+   }
+  },
+  "itin": {
+   "routeName": "Rota pelo Sahel no Níger: Niamey, Kouré e Agadez (só quando a segurança melhorar)",
+   "routeSummary": "IMPORTANTE: está em vigor um alerta oficial de “não viaje” para o Níger; esta rota é apenas uma referência para quando a situação melhorar. Um roteiro de 7 dias de Niamey, às margens do Níger, a Kouré, lar da girafa-da-áfrica-ocidental, e ao minarete de adobe de Agadez, porta de entrada do Saara.",
+   "totalDays": 7,
+   "bestSeason": "Novembro – fevereiro",
+   "transportMode": "Veículo particular com escolta e voo doméstico (só se as condições permitirem)",
+   "paceLevel": "Tranquilo (cultura + natureza)",
+   "signatureGastronomy": {
+    "dishes": [
+     "Tuwo da miyan kuka",
+     "Dambou",
+     "Riz au gras"
+    ],
+    "drinks": [
+     "Chá tuaregue",
+     "Fura da nono",
+     "Bissap"
+    ],
+    "streetFoods": [
+     "Kilishi",
+     "Tsire",
+     "Masa"
+    ],
+    "diningAdvice": "Come-se de um prato comum com a mão direita; escolha comida quente e bem cozida e água mineral. O kilishi é um dos petiscos mais seguros e saborosos."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Carteira de vacinação contra febre amarela (obrigatória na entrada)",
+     "Antimaláricos e repelente",
+     "Lenço/turbante e colírio contra a poeira",
+     "Euros em espécie e cópias do passaporte"
+    ],
+    "safetyAndEtiquette": [
+     "Acompanhe os alertas oficiais e registre-se na embaixada do seu país.",
+     "Vista-se de forma discreta e respeite as restrições a fotos."
+    ]
+   },
+   "idealDurationText": "Rota de 7 dias",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Niamey (capital e rio Níger)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Musée National Boubou Hama",
+      "Grand Marché",
+      "Passeio de piroga pelo rio Níger",
+      "Vista da ponte Kennedy"
+     ],
+     "activities": [
+      "Veja tendas tuaregues e artesanato tradicional no Museu Nacional.",
+      "Procure hipopótamos num passeio de piroga ao entardecer.",
+      "Garimpe couro e prata no Grand Marché."
+     ],
+     "foodAndDrinks": [
+      "Riz au gras",
+      "Kilishi",
+      "Bissap"
+     ],
+     "criticalTips": [
+      "Desloque-se só em veículo de confiança; não saia à noite.",
+      "Não fotografe pontes nem prédios oficiais."
+     ],
+     "mapsQuery": "Niamey, Niger"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Kouré (girafas-da-áfrica-ocidental)",
+     "recommendedDuration": "1 dia",
+     "durationBadge": "1 dia",
+     "highlights": [
+      "Grupos de girafas-da-áfrica-ocidental",
+      "Savana arbustiva do Sahel",
+      "Vida cotidiana nas aldeias"
+     ],
+     "activities": [
+      "Observe as girafas de perto com um guia local.",
+      "Conheça o projeto de conservação.",
+      "Vá cedo ou no fim da tarde, quando está mais fresco."
+     ],
+     "foodAndDrinks": [
+      "Fura da nono",
+      "Chá tuaregue"
+     ],
+     "criticalTips": [
+      "Kouré fica a ~60 km de Niamey; vá só de dia e com informações de segurança atualizadas.",
+      "Não chegue a menos de 20 m das girafas."
+     ],
+     "mapsQuery": "Kouré, Niger"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Agadez (porta do Saara e minarete de adobe)",
+     "recommendedDuration": "4 dias",
+     "durationBadge": "4 dias",
+     "highlights": [
+      "Minarete da Grande Mesquita de Agadez",
+      "Palácio do Sultão",
+      "Oficinas de prateiros (cruz de Agadez)",
+      "Fronteira entre os montes Aïr e o deserto do Ténéré"
+     ],
+     "activities": [
+      "Percorra com guia as vielas de adobe do centro histórico.",
+      "Veja os prateiros trabalhando.",
+      "Observe comerciantes tuaregues e fulas no mercado de camelos."
+     ],
+     "foodAndDrinks": [
+      "Dambou",
+      "Chá tuaregue",
+      "Masa"
+     ],
+     "criticalTips": [
+      "Agadez e o norte são hoje áreas de risco muito alto; considere esta parada só quando os alertas forem suspensos e chegue de avião.",
+      "Para o deserto, trabalhe apenas com agências oficialmente autorizadas."
+     ],
+     "mapsQuery": "Agadez, Niger"
+    }
+   ]
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "D",
+     "E",
+     "F"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Principalmente tomadas tipo C, E e F (dois pinos redondos) e tipo D em alguns prédios antigos; plugues europeus costumam encaixar. Quedas de energia frequentes."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "A água da torneira não é potável; beba água mineral e evite gelo. No calor, beba pelo menos 3-4 litros por dia.",
+    "vaccines": [
+     "Febre amarela (certificado obrigatório para todos os viajantes)",
+     "Meningite (ACWY, cinturão da meningite)",
+     "Hepatite A, febre tifoide e reforço contra pólio",
+     "Profilaxia contra malária (no país todo)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "15"
+   },
+   "tipping": {
+    "custom": "Não é obrigatória; pequenas gorjetas são bem-vindas.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "Basta dar 500-1.000 CFA a motoristas, guias e carregadores."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA de 19%; sem restituição para turistas",
+    "minSpend": "Não se aplica",
+    "customsNote": "Não há restituição do IVA para turistas. É proibido exportar objetos arqueológicos, fósseis e meteoritos; guarde as notas fiscais de prata e couro."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "~US$ 1,50 - 3,00",
+    "topCarriers": [
+     "Airtel Niger",
+     "Zamani Telecom",
+     "Moov Africa Niger"
+    ],
+    "airportSimTrapWarning": "Quase não há opções de eSIM; compre um chip da Airtel ou da Zamani numa loja oficial, com seu passaporte. A internet móvel pode ser restringida durante incidentes de segurança."
+   },
+   "touristScams": [
+    {
+     "title": "Falso guia oficial",
+     "desc": "Alguém que se passa por guia autorizado cobra taxas de autorização ou de escolta.",
+     "tip": "Organize tudo pelo hotel ou pela sua organização."
+    },
+    {
+     "title": "Prata falsa",
+     "desc": "Nos mercados vendem níquel ou alpaca como “prata tuaregue pura”.",
+     "tip": "Compre em oficinas conhecidas e compare preços."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Западноафриканский франк КФА (XOF)",

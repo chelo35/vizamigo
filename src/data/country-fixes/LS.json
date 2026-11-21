@@ -1391,6 +1391,354 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Loti do Lesoto (LSL) – atrelado 1:1 ao rand sul-africano; o rand (ZAR) é aceito em todo lugar",
+   "plugType": "Tipo M (220V, 50Hz)",
+   "bestMonths": "Setembro – novembro e março – maio (clima ameno e céu limpo); de dezembro a fevereiro, tempestades à tarde no verão; de junho a agosto, inverno com neve e geadas na montanha (temporada de esqui em Afriski)",
+   "safety": {
+    "safetyScore": 55,
+    "safetyLevel": "Risco moderado",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60",
+    "crimeRateSummary": "Em Maseru e nas cidades maiores são comuns os assaltos, os furtos por arrastão e o roubo de carros, sobretudo à noite. O interior montanhoso costuma ser tranquilo, embora haja conflitos locais por roubo de gado. Os acidentes nas estradas de montanha também são um grande risco.",
+    "commonScams": [
+     "Pessoas que se apresentam como \"guias oficiais\" em lugares como Maletsunyane e cobram caro",
+     "Pastores e crianças que pedem dinheiro por fotos",
+     "Micro-ônibus que cobram mais dos estrangeiros"
+    ],
+    "safeTravelTips": [
+     "Não caminhe por Maseru à noite; mantenha as portas do carro travadas e os objetos de valor fora de vista.",
+     "Dirija na montanha durante o dia; o passo de Sani exige um 4x4.",
+     "No inverno há neve e gelo nas partes altas; confira a previsão do tempo."
+    ]
+   },
+   "internet": {
+    "networkCoverage": "4G em Maseru e nas cidades; cobertura irregular no interior montanhoso",
+    "costPerGbUsd": "~US$ 2 - 4",
+    "esimAvailability": "Limitada – algumas eSIMs internacionais funcionam; um chip local da Vodacom ou da Econet é mais barato e tem melhor cobertura",
+    "bestCarriers": [
+     "Vodacom Lesotho",
+     "Econet Telecom Lesotho (ETL)"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Básico – sem metrô; micro-ônibus-táxi (táxis \"4+1\") e micro-ônibus de longa distância; as estradas de montanha são sinuosas e lentas",
+    "costLevel": "Barato",
+    "singleTicketUsd": "0.50 - 1 $ (táxi/micro-ônibus dentro de Maseru)",
+    "dailyPassUsd": "Aluguel de 4x4 ~70 - 120 $ / dia",
+    "popularRideApps": [
+     "Não há apps de transporte difundidos",
+     "Micro-ônibus-táxi",
+     "Aluguel de carro (normalmente na África do Sul)"
+    ],
+    "taxiAdvice": "Uber e Bolt praticamente não existem. Os táxis compartilhados \"4+1\" de Maseru são baratos; os micro-ônibus de longa distância andam lotados e rápidos. O mais prático é alugar um carro na África do Sul (Bloemfontein/Joanesburgo) com autorização da locadora para cruzar a fronteira."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 35 - 55",
+    "dailyBudgetMidrangeUsd": "US$ 80 - 140",
+    "budgetMealUsd": "US$ 4 - 10",
+    "coffeeUsd": "US$ 1,50 - 3",
+    "waterBottleUsd": "A água encanada de Maseru é tratada, mas no interior ferva a água ou beba água engarrafada.",
+    "hostelDormUsd": "US$ 15 - 25",
+    "hotel3StarUsd": "US$ 60 - 110",
+    "flightCostIndex": "Médio-alto (via Joanesburgo)",
+    "flightTip": "Voe da Turquia para Joanesburgo (JNB) e conecte com a Airlink até o aeroporto Moshoeshoe I de Maseru (MSU), ou entre por terra a partir de Joanesburgo ou Bloemfontein (posto de fronteira de Maseru Bridge, ~1,5 h de Bloemfontein)."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Cumprimente com respeito os mais velhos e os chefes de aldeia; usa-se \"Ntate\" (senhor) e \"'Me\" (senhora).",
+     "Peça permissão antes de tirar fotos nas aldeias.",
+     "Não distribua balas nem dinheiro às crianças; isso incentiva a mendicância.",
+     "Dê e receba as coisas com as duas mãos ou com a direita."
+    ],
+    "festivals": [
+     "Dia de Moshoeshoe – 11 de março",
+     "Aniversário do Rei – 17 de julho",
+     "Dia da Independência – 4 de outubro"
+    ],
+    "lifestyle": "Uma cultura de montanha conhecida pelo cobertor basotho e pelo chapéu mokorotlo; viaja-se a cavalo e de pônei, com pastoreio e fortes laços familiares."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Thaba-Bosiu (fortaleza na montanha do rei Moshoeshoe)",
+     "Cataratas de Maletsunyane (Semonkong, ~190 m)",
+     "Passo de Sani e Sani Mountain Lodge",
+     "Represa de Katse",
+     "Parque Nacional de Sehlabathebe (UNESCO, Maloti-Drakensberg)",
+     "Malealea – passeios de pônei e arte rupestre san"
+    ],
+    "bestSeasons": "Setembro – novembro e março – maio (clima ameno e céu limpo); de dezembro a fevereiro, tempestades à tarde no verão; de junho a agosto, inverno com neve e geadas na montanha (temporada de esqui em Afriski)",
+    "travelStyleTip": "O \"Reino no Céu\" é para aventureiros: passeios de pônei, trilhas e estadias em aldeias de montanha. Dirigir por conta própria é o mais flexível."
+   },
+   "religion": {
+    "primaryReligions": "Cristãos (~90 %; católicos ~40 %, Igreja Evangélica do Lesoto, anglicanos e outros), entrelaçados com crenças tradicionais.",
+    "respectNorms": "Cubra-se nas igrejas; o respeito aos ancestrais e aos ritos tradicionais (escolas de iniciação) é importante: não entre nesses lugares nem os fotografe.",
+    "sacredSites": [
+     "Thaba-Bosiu (túmulos reais)",
+     "Missão e igreja de Morija (1833)",
+     "Catedral de Nossa Senhora das Vitórias (Maseru)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Sesoto e inglês.",
+    "englishProficiency": "Bom nas cidades; limitado no interior: algumas palavras em sesoto são muito bem recebidas.",
+    "phrases": [
+     {
+      "phrase": "Lumela",
+      "meaning": "Olá (para uma pessoa)",
+      "translation": "Olá (para uma pessoa)",
+      "pronunciation": "doo-MEH-lah"
+     },
+     {
+      "phrase": "Kea leboha",
+      "meaning": "Obrigado",
+      "translation": "Obrigado",
+      "pronunciation": "kee-ah leh-BOH-hah"
+     },
+     {
+      "phrase": "U phela joang?",
+      "meaning": "Como vai?",
+      "translation": "Como vai?",
+      "pronunciation": "oo PEH-lah JWANG"
+     },
+     {
+      "phrase": "Ke bokae?",
+      "meaning": "Quanto custa?",
+      "translation": "Quanto custa?",
+      "pronunciation": "keh boh-KAI"
+     },
+     {
+      "phrase": "Sala hantle",
+      "meaning": "Tchau (dito por quem vai embora)",
+      "translation": "Tchau (dito por quem vai embora)",
+      "pronunciation": "SAH-lah HAHN-tleh"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Há milhares de anos, aqui viviam os san, cuja arte rupestre ainda se conserva. Na década de 1820, o rei Moshoeshoe I uniu os basotho na fortaleza de Thaba-Bosiu. Diante da pressão bôer, em 1868 foi pedida a proteção britânica (Basutolândia); o país se tornou um reino independente em 4 de outubro de 1966. Totalmente cercado pela África do Sul, o Lesoto vende água ao vizinho por meio do Projeto Hídrico das Terras Altas do Lesoto.",
+    "milestones": [
+     "1824: Moshoeshoe I se instala em Thaba-Bosiu",
+     "1868: Protetorado britânico da Basutolândia",
+     "4 de outubro de 1966: Independência",
+     "1998: Conclusão da represa de Katse"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Papa le moroho (mingau de milho com verduras)",
+     "Likhobe (ensopado de milho e feijão)",
+     "Cordeiro na brasa (nyama)"
+    ],
+    "traditionalDrinks": [
+     "Joala (cerveja tradicional de sorgo)",
+     "Cerveja Maluti",
+     "Motoho (bebida fermentada de sorgo)"
+    ],
+    "streetFoodAndDesserts": [
+     "Makoenya (massa frita, \"fat cakes\")",
+     "Bohobe (pão no vapor)",
+     "Milho assado"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Rei Moshoeshoe I (fundador da nação)",
+     "Thomas Mofolo (autor do romance \"Chaka\")",
+     "Rei Moshoeshoe II (monarca na época da independência)"
+    ],
+    "strongSectors": [
+     "Exportação têxtil e de confecção",
+     "Exportação de água e hidreletricidade (Projeto das Terras Altas)",
+     "Mineração de diamantes (Letšeng), lã e mohair"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Os cartões funcionam em supermercados e hotéis de Maseru; no interior, dinheiro vivo (loti/rand) é indispensável. Há caixas eletrônicos nas cidades maiores.",
+    "tippingCulture": "Nos restaurantes espera-se 10 %; também se dá gorjeta a guias e condutores de pônei.",
+    "economicPillars": "Têxtil, exportação de água e eletricidade, mineração e remessas da África do Sul."
+   }
+  },
+  "itin": {
+   "routeName": "Roteiro do Reino no Céu: Maseru e Thaba-Bosiu, Morija e Malealea, Semonkong",
+   "routeSummary": "Roteiro de montanha de 7 dias que sai da capital Maseru e da histórica Thaba-Bosiu, passa pela cidade missionária de Morija e pelas trilhas de pônei de Malealea e chega a Semonkong e às enormes cataratas de Maletsunyane.",
+   "totalDays": 7,
+   "idealDurationText": "Roteiro de montanha de 7 dias",
+   "bestSeason": "Setembro – novembro e março – maio (clima ameno e céu limpo); de dezembro a fevereiro, tempestades à tarde no verão; de junho a agosto, inverno com neve e geadas na montanha (temporada de esqui em Afriski)",
+   "transportMode": "Carro alugado (de preferência alto ou 4x4) + passeios de pônei",
+   "paceLevel": "Ativo (natureza e cultura)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Maseru e Thaba-Bosiu",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Vila cultural de Thaba-Bosiu e túmulos reais",
+      "Loja de artesanato \"Basotho Hat\", em formato de mokorotlo",
+      "Mercado de Maseru"
+     ],
+     "activities": [
+      "Suba com guia ao platô de Thaba-Bosiu.",
+      "Compre um cobertor basotho e um chapéu de palha.",
+      "Contemple a colina de Qiloane."
+     ],
+     "foodAndDrinks": [
+      "Papa le moroho",
+      "Cerveja Maluti"
+     ],
+     "criticalTips": [
+      "Não caminhe por Maseru à noite.",
+      "Suba Thaba-Bosiu bem cedo pela manhã."
+     ],
+     "mapsQuery": "Thaba-Bosiu, Lesotho"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Morija e Malealea",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Museu e Arquivos de Morija",
+      "Arte rupestre san em Malealea",
+      "Mirante do passo \"Gates of Paradise\""
+     ],
+     "activities": [
+      "Veja as pegadas de dinossauro e o museu de Morija.",
+      "Faça um passeio guiado de pônei a partir de Malealea.",
+      "Ouça um coral de aldeia."
+     ],
+     "foodAndDrinks": [
+      "Likhobe",
+      "Joala"
+     ],
+     "criticalTips": [
+      "Use calça comprida e chapéu nos passeios de pônei.",
+      "Visite as aldeias com guia."
+     ],
+     "mapsQuery": "Malealea, Lesotho"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Semonkong (cataratas de Maletsunyane)",
+     "recommendedDuration": "3 dias",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Cataratas de Maletsunyane",
+      "Local da descida de rapel comercial de queda única mais longa do mundo",
+      "Aldeias das terras altas"
+     ],
+     "activities": [
+      "Chegue às cataratas a pé ou de pônei.",
+      "Encare o rapel, se tiver coragem.",
+      "Visite aldeias de pastores."
+     ],
+     "foodAndDrinks": [
+      "Cordeiro na brasa",
+      "Motoho"
+     ],
+     "criticalTips": [
+      "A estrada é sinuosa e está em mau estado em alguns trechos; dirija durante o dia.",
+      "As noites são frias até no verão; leve agasalho."
+     ],
+     "mapsQuery": "Semonkong, Lesotho"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Papa le moroho (mingau de milho com verduras)",
+     "Likhobe (ensopado de milho e feijão)",
+     "Cordeiro na brasa (nyama)"
+    ],
+    "drinks": [
+     "Joala (cerveja tradicional de sorgo)",
+     "Cerveja Maluti",
+     "Motoho (bebida fermentada de sorgo)"
+    ],
+    "streetFoods": [
+     "Makoenya (massa frita, \"fat cakes\")",
+     "Bohobe (pão no vapor)",
+     "Milho assado"
+    ],
+    "diningAdvice": "Fora de Maseru há poucos restaurantes; coma nos lodges. A culinária local é simples e substanciosa."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptador tipo M (três pinos redondos grossos)",
+     "Camadas de agasalho (até as noites de verão são frias)",
+     "Protetor solar (a radiação UV é muito forte na altitude)",
+     "Calçado de trilha"
+    ],
+    "safetyAndEtiquette": [
+     "Não dê dinheiro nem balas às crianças.",
+     "Não dirija à noite na montanha."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "M"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Tomada sul-africana de três pinos redondos grossos (tipo M); os plugues turcos precisam de adaptador. Em prédios novos também pode haver o tipo N sul-africano."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "A água encanada de Maseru é tratada, mas no interior ferva a água ou beba água engarrafada.",
+    "vaccines": [
+     "Vacinas de rotina",
+     "Hepatite A e febre tifoide",
+     "Raiva (contato com cães e áreas rurais)",
+     "Certificado de febre amarela se você chegar de um país com risco"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "121"
+   },
+   "tipping": {
+    "custom": "Nos restaurantes, espera-se 10 % de gorjeta.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "É comum dar pequenas gorjetas a guias de pônei, funcionários de parques e frentistas de postos de gasolina."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA de 15 % – sem devolução viável para turistas",
+    "minSpend": "—",
+    "customsNote": "O Lesoto não tem um sistema tax-free em funcionamento para turistas. O IVA de compras feitas na África do Sul só é recuperado ao sair da África do Sul (VAT Refund Office)."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "US$ 2,00 - 4,00",
+    "topCarriers": [
+     "Vodacom Lesotho",
+     "Econet Telecom Lesotho (ETL)"
+    ],
+    "airportSimTrapWarning": "É difícil encontrar chip no aeroporto; compre um com passaporte em uma loja da Vodacom ou da Econet em Maseru. Os chips sul-africanos só funcionam perto da fronteira."
+   },
+   "touristScams": [
+    {
+     "title": "Falso guia \"oficial\"",
+     "desc": "Pessoas em cataratas e mirantes que dizem ter autoridade e cobram taxas.",
+     "tip": "Contrate um guia pelo lodge ou pela comunidade da aldeia."
+    },
+    {
+     "title": "Dinheiro por fotos",
+     "desc": "Pastores ou crianças que pedem dinheiro depois de uma foto.",
+     "tip": "Peça permissão antes e combine qualquer pagamento com antecedência."
+    },
+    {
+     "title": "Cobrança abusiva no micro-ônibus",
+     "desc": "Para os estrangeiros, informam um preço mais alto.",
+     "tip": "Pergunte a tarifa a outros passageiros ou aos funcionários do lodge."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Лоти Лесото (LSL) – привязан 1:1 к южноафриканскому рэнду; рэнд (ZAR) принимают везде",

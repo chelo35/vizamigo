@@ -1419,6 +1419,361 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Dólar americano (USD); moedas locais de centavo",
+   "plugType": "C, E, F, I (220V, 50Hz)",
+   "bestMonths": "Maio – novembro (estação seca; ideal para mergulho e trilhas)",
+   "safety": {
+    "crimeRateSummary": "A criminalidade contra turistas é baixa, mas em Díli acontecem furtos por arrastão, roubos em veículos e brigas ocasionais entre grupos de jovens ou de artes marciais. Os principais riscos são as estradas ruins, os deslizamentos de terra e o atendimento de saúde limitado.",
+    "commonScams": [
+     "Táxis em Díli que cobram a mais de estrangeiros",
+     "Roubos em carros estacionados em praias e mirantes",
+     "\"Guias\" sem licença que cobram a mais"
+    ],
+    "safeTravelTips": [
+     "Evite as estradas de montanha à noite; na estação chuvosa, os deslizamentos são frequentes.",
+     "Há crocodilos marinhos; só entre na água onde os moradores recomendarem.",
+     "Contrate um seguro completo que cubra despesas médicas e evacuação; os casos graves são transferidos para Darwin ou Bali."
+    ],
+    "emergencyNumbers": {
+     "police": "112",
+     "ambulance": "110",
+     "general": "112"
+    },
+    "safetyScore": 65,
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Bom 4G em Díli; 3G/4G nas vilas e nas estradas principais, instável nas montanhas.",
+    "costPerGbUsd": "~US$ 1 - 3",
+    "esimAvailability": "Limitada",
+    "bestCarriers": [
+     "Telkomcel",
+     "Timor Telecom",
+     "Telemor"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Básico",
+    "costLevel": "Econômico",
+    "singleTicketUsd": "0,25 - 0,50 $ (mikrolet)",
+    "dailyPassUsd": "Não há passe diário",
+    "popularRideApps": [
+     "Micro-ônibus mikrolet",
+     "Táxis amarelos",
+     "4x4 ou scooter alugados"
+    ],
+    "taxiAdvice": "Não há Uber nem Grab. Uma corrida curta de táxi amarelo (sem taxímetro) em Díli costuma custar 2-5 $; combine o preço antes. Para o leste e as montanhas, o mais seguro é um 4x4 com motorista."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 35 - 55",
+    "dailyBudgetMidrangeUsd": "US$ 90 - 150",
+    "budgetMealUsd": "US$ 3 - 8",
+    "coffeeUsd": "US$ 1,50 - 3,50",
+    "waterBottleUsd": "US$ 0,50 - 1",
+    "hostelDormUsd": "US$ 15 - 25",
+    "hotel3StarUsd": "US$ 60 - 120",
+    "flightCostIndex": "Alto",
+    "flightTip": "Os voos para Díli (DIL) são poucos: há rotas a partir de Bali (Denpasar), Darwin e Cingapura. Saindo da Europa, costuma ser mais barato fazer conexão em Bali."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Cumprimente com um sorriso e um aperto de mão; idosos e membros do clero recebem respeito especial.",
+     "Cubra ombros e joelhos em igrejas e aldeias.",
+     "Não entre em casas sagradas (uma lulik) nem em locais sagrados sem permissão.",
+     "A luta pela independência é um tema sensível; ouça mais do que opine."
+    ],
+    "festivals": [
+     "Dia da Restauração da Independência – 20 de maio",
+     "Dia da Consulta Popular – 30 de agosto",
+     "Prova de ciclismo Tour de Timor e Maratona de Díli"
+    ],
+    "lifestyle": "População jovem, fé católica forte e estruturas tradicionais de clã (casas uma lulik). A herança portuguesa aparece no café e na arquitetura; a indonésia, na culinária."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Ilha de Ataúro (uma das maiores diversidades de peixes de recife do mundo)",
+     "Estátua do Cristo Rei (Díli)",
+     "Monte Ramelau (2.986 m, subida ao amanhecer)",
+     "Ilha de Jaco e Parque Nacional Nino Konis Santana",
+     "Museu e Arquivo da Resistência (Díli)",
+     "Centro histórico de Baucau"
+    ],
+    "bestSeasons": "Maio – novembro (estação seca; ideal para mergulho e trilhas)",
+    "travelStyleTip": "A infraestrutura turística ainda está em desenvolvimento: hospedagem simples e estradas difíceis. Use Díli como base, vá de barco até Ataúro e de 4x4 com motorista para o leste e as montanhas. A migração das baleias acontece em outubro – novembro."
+   },
+   "religion": {
+    "primaryReligions": "Católicos (~97%), pequenas comunidades protestantes e muçulmanas; crenças animistas tradicionais misturadas ao catolicismo",
+    "respectNorms": "As missas de domingo ficam lotadas; vista-se de forma adequada. A ilha de Jaco é considerada sagrada e ninguém passa a noite lá.",
+    "sacredSites": [
+     "Cristo Rei (Díli)",
+     "Catedral da Imaculada Conceição, Díli",
+     "Estátua da Virgem no topo do monte Ramelau"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Tétum e português; o indonésio e o inglês são muito usados como línguas de trabalho",
+    "englishProficiency": "Moderado; em Díli, os jovens e o setor de turismo falam inglês; no interior, é preciso tétum ou indonésio.",
+    "phrases": [
+     {
+      "phrase": "Bondia",
+      "meaning": "Bom dia / Olá",
+      "translation": "Bom dia / Olá",
+      "pronunciation": "bon-DI-a"
+     },
+     {
+      "phrase": "Obrigadu / Obrigada",
+      "meaning": "Obrigado (dito por um homem / uma mulher)",
+      "translation": "Obrigado (dito por um homem / uma mulher)",
+      "pronunciation": "o-bri-GA-du / o-bri-GA-da"
+     },
+     {
+      "phrase": "Favór ida",
+      "meaning": "Por favor",
+      "translation": "Por favor",
+      "pronunciation": "fa-VOR I-da"
+     },
+     {
+      "phrase": "Folin hira?",
+      "meaning": "Quanto custa?",
+      "translation": "Quanto custa?",
+      "pronunciation": "FO-lin HI-ra"
+     },
+     {
+      "phrase": "Di'ak ka lae?",
+      "meaning": "Como vai?",
+      "translation": "Como vai?",
+      "pronunciation": "di-AK ka LA-e"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Os portugueses chegaram no século XVI, e o Timor oriental foi português até 1975. Depois da declaração de independência, em 28 de novembro de 1975, o país passou 24 anos sob domínio indonésio. No referendo supervisionado pela ONU em 30 de agosto de 1999, a população escolheu a independência; após uma breve administração de transição da ONU, ela foi restaurada em 20 de maio de 2002. Em outubro de 2025, o Timor-Leste se tornou o 11º membro da ASEAN.",
+    "milestones": [
+     "Século XVI – Chegada dos portugueses (Lifau, Oecusse)",
+     "30 de agosto de 1999 – Referendo da independência",
+     "20 de maio de 2002 – Restauração da independência",
+     "Outubro de 2025 – Entrada na ASEAN"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Ikan sabuko (cavala com tamarindo e pimenta)",
+     "Batar da'an (ensopado de milho, feijão e abóbora)",
+     "Tukir (carne cozida dentro do bambu)"
+    ],
+    "traditionalDrinks": [
+     "Café timorense (arábica de Ermera)",
+     "Tua mutin (vinho de palma)",
+     "Tua sabu (aguardente de palma)"
+    ],
+    "streetFoodAndDesserts": [
+     "Peixe grelhado na praia (Areia Branca)",
+     "Milho assado na espiga",
+     "Pastéis de nata e pão ao estilo português"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "José Ramos-Horta (Prêmio Nobel da Paz de 1996)",
+     "Xanana Gusmão (líder da independência, primeiro presidente)",
+     "Luís Cardoso (romancista)"
+    ],
+    "strongSectors": [
+     "Petróleo e gás (Fundo do Petróleo)",
+     "Exportação de café orgânico",
+     "Mergulho e ecoturismo"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "A moeda é o dólar americano; o troco é dado em moedas locais de centavo. Fora de Díli, quase não se aceitam cartões e há poucos caixas eletrônicos; leve dinheiro vivo em notas pequenas.",
+    "economicPillars": "Receitas de petróleo e gás (Fundo do Petróleo), café, agricultura, gastos públicos e um turismo emergente.",
+    "tippingCulture": "Não há tradição de gorjeta; arredondar a conta ou dar algo ao guia é bem-vindo."
+   }
+  },
+  "itin": {
+   "routeName": "Descubra o Timor-Leste: Díli, Ataúro e o extremo leste",
+   "routeSummary": "Roteiro de 8 dias: história em Díli e recifes em Ataúro, a Baucau de ares portugueses e encerramento na sagrada ilha de Jaco, no extremo leste. Acrescente 1-2 dias para subir o monte Ramelau.",
+   "totalDays": 8,
+   "idealDurationText": "Roteiro de 7-10 dias",
+   "bestSeason": "Maio – novembro (estação seca; ideal para mergulho e trilhas)",
+   "transportMode": "Ferry/lancha até Ataúro; 4x4 com motorista para o leste",
+   "paceLevel": "Aventura (mar, natureza e história)",
+   "stops": [
+    {
+     "name": "Parada 1: Díli e ilha de Ataúro (história e recifes)",
+     "recommendedDuration": "3-4 dias",
+     "durationBadge": "4 dias",
+     "highlights": [
+      "Estátua do Cristo Rei e praias",
+      "Museu da Resistência e exposição Chega!",
+      "Recifes de coral de Ataúro",
+      "Mercado de tecidos tais"
+     ],
+     "activities": [
+      "Suba os 500 degraus até o Cristo Rei ao entardecer.",
+      "Faça snorkel ou mergulho em Ataúro e hospede-se em um ecolodge.",
+      "Em outubro – novembro, faça um passeio para ver baleias e golfinhos."
+     ],
+     "foodAndDrinks": [
+      "Ikan sabuko",
+      "Café local (cafeterias de Díli)",
+      "Peixe na brasa à beira-mar"
+     ],
+     "criticalTips": [
+      "Os horários dos barcos para Ataúro dependem do tempo; reserve um dia de folga para a volta.",
+      "Não deixe objetos de valor no carro em Díli."
+     ],
+     "mapsQuery": "Dili, Timor-Leste",
+     "stopNumber": 1
+    },
+    {
+     "name": "Parada 2: Baucau (herança portuguesa e praias)",
+     "recommendedDuration": "1-2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Antigo mercado português (Mercado Municipal)",
+      "Pousada de Baucau",
+      "Praia de Osolata"
+     ],
+     "activities": [
+      "Passeie entre os edifícios coloniais.",
+      "Refresque-se na piscina natural de água de nascente.",
+      "Desça até a costa e converse com os pescadores."
+     ],
+     "foodAndDrinks": [
+      "Batar da'an",
+      "Culinária luso-timorense na Pousada"
+     ],
+     "criticalTips": [
+      "O trajeto Díli–Baucau leva 3-4 horas; viaje durante o dia.",
+      "Há poucos caixas eletrônicos; traga dinheiro vivo suficiente de Díli."
+     ],
+     "mapsQuery": "Baucau, Timor-Leste",
+     "stopNumber": 2
+    },
+    {
+     "name": "Parada 3: Tutuala e ilha de Jaco (extremo leste)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Areia branca e água cristalina de Jaco",
+      "Praia de Valu",
+      "Arte rupestre na caverna Ile Kére Kére"
+     ],
+     "activities": [
+      "Atravesse de barco de pescador da praia de Valu até Jaco para um bate e volta.",
+      "Observe aves no Parque Nacional Nino Konis Santana.",
+      "Faça uma caminhada guiada até a arte rupestre."
+     ],
+     "foodAndDrinks": [
+      "Peixe fresco com arroz (em hospedagens comunitárias)",
+      "Tua mutin"
+     ],
+     "criticalTips": [
+      "Jaco é sagrada; não se pode pernoitar nem deixar lixo.",
+      "Eletricidade e sinal são limitados; leve um carregador portátil e água suficiente."
+     ],
+     "mapsQuery": "Jaco Island, Timor-Leste",
+     "stopNumber": 3
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Ikan sabuko",
+     "Batar da'an",
+     "Tukir"
+    ],
+    "drinks": [
+     "Café timorense",
+     "Tua mutin",
+     "Tua sabu"
+    ],
+    "streetFoods": [
+     "Peixe grelhado",
+     "Milho assado",
+     "Pastel de nata"
+    ],
+    "diningAdvice": "Os pratos costumam vir com arroz, legumes e budu (molho de tomate, pimenta e limão). Não deixe de provar o café timorense nas cafeterias de Díli."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptador tipo I (australiano)",
+     "Máscara de snorkel e protetor solar seguro para recifes",
+     "Repelente (risco de dengue e malária)",
+     "Casaco quente para o Ramelau (faz muito frio à noite no topo)"
+    ],
+    "safetyAndEtiquette": [
+     "Não entre em casas ou locais sagrados sem permissão.",
+     "Não entre na água onde houver avisos de crocodilos."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "E",
+     "F",
+     "I"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Tomadas mistas: o tipo I australiano é muito comum, com algumas europeias C/E/F. Plugues europeus não encaixam em todo lugar; leve um adaptador tipo I."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "A água da torneira não é segura; beba água engarrafada ou filtrada. Muitas hospedagens têm pontos para reabastecer a garrafa.",
+    "vaccines": [
+     "Hepatite A e febre tifoide",
+     "Encefalite japonesa (estadias longas em áreas rurais)",
+     "Vacinas de rotina e raiva (estadias longas)",
+     "Febre amarela: certificado só se você chegar de um país de risco"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "110"
+   },
+   "tipping": {
+    "custom": "Não há tradição de gorjeta; em lugares turísticos, uma gorjeta é bem-vinda.",
+    "standardPercent": 0,
+    "rule": "optional",
+    "note": "Deixar alguns dólares para guias de mergulho e motoristas no fim do passeio é bem-vindo."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Não há devolução de impostos para turistas",
+    "minSpend": "—",
+    "customsNote": "O Timor-Leste não tem sistema tax-free. Não leve para fora coral, casco de tartaruga nem produtos de fauna; se for voar para a Austrália, confira as regras rígidas do país para tais e objetos de madeira."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "US$ 1 - 3",
+    "topCarriers": [
+     "Telkomcel",
+     "Timor Telecom",
+     "Telemor"
+    ],
+    "airportSimTrapWarning": "Há poucas eSIMs internacionais e elas são caras; no aeroporto ou em lojas de Díli dá para comprar chips locais baratos (Telkomcel, Telemor) apresentando o passaporte."
+   },
+   "touristScams": [
+    {
+     "title": "Preço do táxi",
+     "desc": "Sem taxímetro, estrangeiros podem ser cobrados caro por corridas curtas.",
+     "tip": "Saiba que em Díli uma corrida custa cerca de 2-5 $ e combine o preço antes."
+    },
+    {
+     "title": "Roubos em veículos",
+     "desc": "Bolsas e celulares podem ser roubados de carros estacionados em praias e mirantes.",
+     "tip": "Não deixe nada à vista e, se possível, deixe alguém no carro."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Доллар США (USD); местные монеты сентаво",

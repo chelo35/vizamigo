@@ -1423,6 +1423,362 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Riel cambojano (KHR) – o dólar americano é aceito em toda parte",
+   "plugType": "Tipo A, C, G (230V, 50Hz)",
+   "bestMonths": "Novembro a março (seco e relativamente fresco; ideal para Angkor); abril e maio são muito quentes, de junho a outubro é a monção (temporada verde)",
+   "safety": {
+    "crimeRateSummary": "A violência contra turistas é rara; em Phnom Penh e Siem Reap são comuns os furtos de bolsas e celulares por ladrões de moto. Depois dos confrontos de 2025, há alertas para a fronteira com a Tailândia; no noroeste rural ainda existem minas e munições não detonadas.",
+    "commonScams": [
+     "Roubo de celulares de passageiros de tuk-tuk por ladrões de moto",
+     "Intermediários em fronteiras terrestres que exigem taxas extras de “visto” ou “saúde”",
+     "Visitas a orfanatos ou golpes de doação de “leite para bebê”"
+    ],
+    "safeTravelTips": [
+     "Peça tuk-tuks pelo PassApp ou Grab e carregue a bolsa do lado oposto à rua.",
+     "Nas áreas rurais, não saia das trilhas sinalizadas; placas vermelhas com caveira indicam minas.",
+     "Consulte os alertas oficiais antes de visitar templos na fronteira, como Preah Vihear."
+    ],
+    "emergencyNumbers": {
+     "police": "117",
+     "ambulance": "119",
+     "general": "117"
+    },
+    "safetyScore": 55,
+    "safetyLevel": "Risco moderado",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Bom 4G nas cidades e principais estradas; fraco em áreas rurais remotas",
+    "costPerGbUsd": "~US$ 0,20 - 0,80",
+    "esimAvailability": "Disponível – chips turísticos da Smart, Cellcard e Metfone nos aeroportos; eSIMs internacionais também",
+    "bestCarriers": [
+     "Smart Axiata",
+     "Cellcard",
+     "Metfone"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Básico – sem metrô; tuk-tuks e mototáxis na cidade, ônibus e vans intermunicipais (Giant Ibis, Larryta) e trens limitados",
+    "costLevel": "Barato",
+    "singleTicketUsd": "~US$ 0,40 (ônibus urbano de Phnom Penh); tuk-tuk US$ 1,5 - 4",
+    "dailyPassUsd": "Tuk-tuk por um dia em Angkor ~US$ 15 - 25",
+    "popularRideApps": [
+     "PassApp",
+     "Grab",
+     "Tada"
+    ],
+    "taxiAdvice": "Os apps fixam o preço; na rua, combine antes e deixe claro se é em dólares ou riéis. Em Siem Reap, o mais prático é um pacote de dia inteiro com motorista para Angkor."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 25 - 40",
+    "dailyBudgetMidrangeUsd": "US$ 60 - 110",
+    "budgetMealUsd": "US$ 2 - 5",
+    "coffeeUsd": "US$ 1,50 - 3",
+    "waterBottleUsd": "US$ 0,25 - 0,50",
+    "hostelDormUsd": "US$ 5 - 12",
+    "hotel3StarUsd": "US$ 25 - 55",
+    "flightCostIndex": "Alto (longa distância, com escala)",
+    "flightTip": "Da Turquia, normalmente se voa com escala em Bangkok, Cingapura, Kuala Lumpur ou no Golfo. Siem Reap tem o novo aeroporto Siem Reap–Angkor (SAI), a 50 km; reserve transfer ou táxi."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "O cumprimento é feito juntando as palmas com uma leve reverência (“sampeah”), com as mãos mais altas diante dos mais velhos.",
+     "Não toque na cabeça de ninguém nem aponte os pés para pessoas ou imagens de Buda.",
+     "Mulheres não devem tocar nos monges nem entregar objetos diretamente a eles."
+    ],
+    "festivals": [
+     "Ano-Novo khmer – Choul Chnam Thmey (meados de abril)",
+     "Pchum Ben – festa dos antepassados (setembro/outubro)",
+     "Bon Om Touk – festival das águas e regatas (novembro)"
+    ],
+    "lifestyle": "O dia começa cedo: mercados, cafés da manhã de rua (bai sach chrouk), passeios ao entardecer à beira do Mekong e um ritmo tranquilo marcado pelo budismo."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Angkor Wat (UNESCO)",
+     "Angkor Thom – os rostos sorridentes do Bayon",
+     "Ta Prohm (o templo abraçado pela selva)",
+     "Palácio Real e Pagode de Prata de Phnom Penh",
+     "Museu do Genocídio Tuol Sleng (S-21) e Choeung Ek",
+     "Fazendas de pimenta de Kampot e mercado do caranguejo de Kep"
+    ],
+    "bestSeasons": "Novembro a março (seco e relativamente fresco; ideal para Angkor); abril e maio são muito quentes, de junho a outubro é a monção (temporada verde)",
+    "travelStyleTip": "Compre pelo menos um passe de 2-3 dias para Angkor e visite os templos ao amanhecer ou no fim da tarde; descanse ao meio-dia."
+   },
+   "religion": {
+    "primaryReligions": "Budismo theravada (~97 %, religião oficial), islamismo (~2 %, povo cham), pequena minoria cristã.",
+    "respectNorms": "Em Angkor e nos pagodes é preciso cobrir ombros e joelhos (senão a entrada é barrada); tire os sapatos e peça permissão para fotografar monges.",
+    "sacredSites": [
+     "Angkor Wat",
+     "Wat Phnom (Phnom Penh)",
+     "Phnom Kulen – montanha sagrada e Buda reclinado"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Khmer (com escrita própria).",
+    "englishProficiency": "Bom entre os profissionais do turismo em Siem Reap e Phnom Penh; limitado no interior.",
+    "phrases": [
+     {
+      "phrase": "សួស្តី (Suosdei)",
+      "meaning": "Olá",
+      "translation": "Olá",
+      "pronunciation": "suos-DEI"
+     },
+     {
+      "phrase": "អរគុណ (Arkun)",
+      "meaning": "Obrigado",
+      "translation": "Obrigado",
+      "pronunciation": "aw-KUN"
+     },
+     {
+      "phrase": "ថ្លៃប៉ុន្មាន? (Thlai ponman?)",
+      "meaning": "Quanto custa?",
+      "translation": "Quanto custa?",
+      "pronunciation": "tlai pon-MAAN"
+     },
+     {
+      "phrase": "សុំទោស (Som tous)",
+      "meaning": "Desculpe / Com licença",
+      "translation": "Desculpe / Com licença",
+      "pronunciation": "som TOH"
+     },
+     {
+      "phrase": "ជម្រាបលា (Chumreap lea)",
+      "meaning": "Tchau",
+      "translation": "Tchau",
+      "pronunciation": "chum-REAP lee-A"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "O Império Khmer, dominante no Sudeste Asiático entre os séculos IX e XV, construiu Angkor. A independência da França veio em 1953; o regime do Khmer Vermelho (1975-1979) causou entre 1,5 e 2 milhões de mortes. O país é uma monarquia constitucional desde 1993.",
+    "milestones": [
+     "802: Jayavarman II funda o Império Khmer",
+     "Século XII: Suryavarman II constrói Angkor Wat",
+     "1953: Independência da França",
+     "1975-1979: época do Khmer Vermelho"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Amok de peixe (curry de coco cozido no vapor em folha de bananeira)",
+     "Lok lak (carne bovina salteada com molho de pimenta e limão)",
+     "Caranguejo com pimenta de Kampot (Kep)"
+    ],
+    "traditionalDrinks": [
+     "Caldo de cana (tuk ampau)",
+     "Café gelado com leite condensado",
+     "Cerveja Angkor"
+    ],
+    "streetFoodAndDesserts": [
+     "Bai sach chrouk (café da manhã de carne grelhada com arroz)",
+     "Num banh chok (macarrão de arroz khmer)",
+     "Num ansom (bolo de arroz glutinoso em folha de bananeira)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Jayavarman VII (rei que construiu Angkor Thom e o Bayon)",
+     "Rei Norodom Sihanouk (líder da independência)",
+     "Sinn Sisamouth (voz lendária da música khmer)"
+    ],
+    "strongSectors": [
+     "Exportação de roupas, calçados e artigos de viagem",
+     "Turismo (Angkor)",
+     "Agricultura – arroz, castanha-de-caju e pimenta de Kampot"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Os preços costumam ser dados em dólares e o troco vem em riéis (US$ 1 ≈ 4.000 KHR). Notas rasgadas ou velhas não são aceitas. Nas cidades, paga-se por QR code com KHQR e ABA Pay.",
+    "tippingCulture": "Não é obrigatória, mas é bem-vinda: US$ 1-2 ou ~5-10 % nos restaurantes e alguns dólares por dia para motoristas e guias em Angkor.",
+    "economicPillars": "Exportação têxtil, turismo, construção e agricultura."
+   }
+  },
+  "itin": {
+   "routeName": "De Siem Reap a Kampot: Angkor, Phnom Penh e o litoral sul",
+   "routeSummary": "Um roteiro de 8 dias de norte a sul: os templos de Angkor, os palácios e a história dura de Phnom Penh e, para fechar, as fazendas de pimenta de Kampot e o mercado do caranguejo de Kep.",
+   "totalDays": 8,
+   "idealDurationText": "Roteiro de 8 dias",
+   "bestSeason": "Novembro a março (seco e relativamente fresco; ideal para Angkor); abril e maio são muito quentes, de junho a outubro é a monção (temporada verde)",
+   "transportMode": "Ônibus/vans (Giant Ibis, Larryta) ou motorista particular + tuk-tuks pelo PassApp/Grab",
+   "paceLevel": "Equilibrado (história e natureza)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Siem Reap (templos de Angkor)",
+     "recommendedDuration": "3 dias",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Nascer do sol em Angkor Wat",
+      "Bayon e Angkor Thom",
+      "Ta Prohm",
+      "Banteay Srei (templo de arenito rosa)"
+     ],
+     "activities": [
+      "Faça de tuk-tuk o Circuito Pequeno e o Circuito Grande.",
+      "Visite as aldeias flutuantes do Tonlé Sap.",
+      "Assista a um espetáculo do circo Phare."
+     ],
+     "foodAndDrinks": [
+      "Amok de peixe",
+      "Num banh chok perto do Old Market"
+     ],
+     "criticalTips": [
+      "O passe de Angkor só é vendido na bilheteria oficial ou no site da Angkor Enterprise, leva a sua foto e é intransferível.",
+      "Beba muita água; em abril e maio a temperatura chega a 38 °C."
+     ],
+     "mapsQuery": "Angkor Wat, Siem Reap, Cambodia"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Phnom Penh (capital e margem do Mekong)",
+     "recommendedDuration": "2-3 dias",
+     "durationBadge": "2-3 dias",
+     "highlights": [
+      "Palácio Real e Pagode de Prata",
+      "Museu do Genocídio Tuol Sleng",
+      "Campos da Morte de Choeung Ek"
+     ],
+     "activities": [
+      "Admire a escultura khmer do Museu Nacional.",
+      "Faça um passeio de barco ao pôr do sol na confluência do Mekong com o Tonlé Sap.",
+      "Faça compras no Mercado Russo (Psar Toul Tom Poung)."
+     ],
+     "foodAndDrinks": [
+      "Lok lak",
+      "Kuy teav (sopa de macarrão do café da manhã)"
+     ],
+     "criticalTips": [
+      "Tuol Sleng e Choeung Ek são emocionalmente pesados; use o audioguia e vá sem pressa.",
+      "No palácio é preciso cobrir ombros e joelhos."
+     ],
+     "mapsQuery": "Royal Palace, Phnom Penh, Cambodia"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Kampot e Kep (litoral sul)",
+     "recommendedDuration": "2-3 dias",
+     "durationBadge": "2-3 dias",
+     "highlights": [
+      "Fazendas de pimenta de Kampot",
+      "Parque Nacional de Bokor",
+      "Mercado do caranguejo de Kep"
+     ],
+     "activities": [
+      "Faça um cruzeiro ao pôr do sol pelo rio de Kampot.",
+      "Participe de uma degustação numa fazenda de pimenta.",
+      "Pegue o barco de Kep até a Ilha do Coelho (Koh Tonsay)."
+     ],
+     "foodAndDrinks": [
+      "Caranguejo com pimenta de Kampot",
+      "Caldo de cana"
+     ],
+     "criticalTips": [
+      "De Phnom Penh a Kampot são ~3-4 h de ônibus; na temporada também há trem.",
+      "Se for subir a Bokor de scooter, capacete e experiência são indispensáveis por causa das curvas."
+     ],
+     "mapsQuery": "Kampot, Cambodia"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Amok de peixe",
+     "Lok lak",
+     "Samlor korko (sopa khmer de legumes)"
+    ],
+    "drinks": [
+     "Caldo de cana",
+     "Café khmer gelado",
+     "Água de coco fresco"
+    ],
+    "streetFoods": [
+     "Bai sach chrouk",
+     "Num banh chok",
+     "Num ansom"
+    ],
+    "diningAdvice": "A culinária khmer é mais suave que a tailandesa; muitos pratos levam carne de porco e pasta de peixe (prahok). Para comida halal, procure restaurantes cham em Phnom Penh."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Roupas leves que cubram ombros e joelhos (templos)",
+     "Notas de dólar novas e sem rasgos",
+     "Adaptador universal (A/C/G)",
+     "Repelente e chapéu"
+    ],
+    "safetyAndEtiquette": [
+     "Segure bem o celular no tuk-tuk e perto da rua.",
+     "Tenha sensibilidade ao falar do Khmer Vermelho; fique em silêncio nos memoriais."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "A",
+     "C",
+     "G"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Muitos hotéis têm tomadas universais que aceitam plugues europeus, mas também são comuns as de pinos chatos (A) e as britânicas de três pinos (G); leve um adaptador universal."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "A água da torneira não é potável; a água mineral é barata e muitos hotéis têm pontos para encher a garrafa.",
+    "vaccines": [
+     "Hepatite A e febre tifoide",
+     "Tétano e difteria (rotina)",
+     "Encefalite japonesa e raiva para estadias rurais ou longas; consulte o médico sobre malária nas áreas de floresta perto das fronteiras"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "119"
+   },
+   "tipping": {
+    "custom": "Não é obrigatória, mas é bem-vinda.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "US$ 1-2 nos restaurantes e US$ 3-5 por dia para o motorista em Angkor são o habitual."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Não há (IVA de 10 %)",
+    "minSpend": "Não se aplica",
+    "customsNote": "O Camboja não devolve o IVA a turistas. É proibido exportar antiguidades e esculturas khmer; guarde os recibos das réplicas artesanais."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 0,20 - 0,80",
+    "topCarriers": [
+     "Smart Axiata",
+     "Cellcard",
+     "Metfone"
+    ],
+    "airportSimTrapWarning": "Os chips do aeroporto são cadastrados com o passaporte e saem um pouco mais caros, mas a diferença é pequena. Evite chips sem cadastro de vendedores de rua."
+   },
+   "touristScams": [
+    {
+     "title": "Taxas de fronteira falsas",
+     "desc": "Em fronteiras como Poipet, intermediários cobram a mais por “trâmite rápido” ou “controle sanitário”.",
+     "tip": "Providencie os documentos pelos canais oficiais e trate apenas nos guichês oficiais."
+    },
+    {
+     "title": "Golpe do leite para bebê",
+     "desc": "Alguém com um bebê pede que você compre leite em pó, que depois é revendido à loja.",
+     "tip": "Se quiser ajudar, doe para organizações locais confiáveis."
+    },
+    {
+     "title": "Furto de moto",
+     "desc": "Em Phnom Penh, ladrões arrancam celulares e bolsas de quem está em tuk-tuks ou nas calçadas.",
+     "tip": "Use a bolsa atravessada no corpo e não mexa no celular do lado da rua."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Камбоджийский риель (KHR) – доллары США принимают везде",

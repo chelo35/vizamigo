@@ -1543,6 +1543,392 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Rand sul-africano (ZAR)",
+   "plugType": "Tipo M, N, C (230V, 50Hz)",
+   "bestMonths": "Novembro a março (verão seco para Cidade do Cabo e a Rota Jardim) · Maio a setembro (inverno seco para safáris no Kruger; melhor observação de animais)",
+   "safety": {
+    "safetyScore": 40,
+    "safetyLevel": "Cautela recomendada",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60",
+    "crimeRateSummary": "O índice de crimes violentos está entre os mais altos do mundo: assaltos à mão armada, roubo de carros (carjacking) e furtos por arrastão são um risco sério nas grandes cidades. As áreas turísticas (V&A Waterfront, Rota Jardim, lodges de safári) costumam ser tranquilas, mas não ande a pé à noite nem entre em bairros que você não conhece.",
+    "commonScams": [
+     "Pessoas nos caixas eletrônicos que se oferecem para “ajudar” e trocam seu cartão ou espiam sua senha",
+     "“Car guards” não oficiais em estacionamentos que exigem valores altos, ou bloqueadores de sinal para o carro não trancar",
+     "Táxis sem licença ou “traslados baratos” oferecidos no aeroporto"
+    ],
+    "safeTravelTips": [
+     "À noite, use Uber/Bolt em vez de andar a pé; não deixe o celular à mostra na rua.",
+     "Dirija com as portas travadas e os vidros fechados; não deixe bolsas no banco quando parar no semáforo.",
+     "Use caixas eletrônicos só dentro de shoppings ou bancos, de dia."
+    ],
+    "emergencyNumbers": {
+     "police": "10111",
+     "ambulance": "10177",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99% da população (4G; 5G nas grandes cidades)",
+    "costPerGbUsd": "US$ 1,50 - 4",
+    "esimAvailability": "Boa (Vodacom e MTN oferecem eSIM; os chips exigem cadastro RICA com passaporte)",
+    "bestCarriers": [
+     "Vodacom",
+     "MTN",
+     "Cell C",
+     "Telkom"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Médio (o Gautrain e o MyCiTi, na Cidade do Cabo, são bons; o restante do transporte público é limitado, e as vans-táxi não são recomendadas para visitantes)",
+    "costLevel": "Médio",
+    "singleTicketUsd": "US$ 1 - 2",
+    "dailyPassUsd": "Não há (Gautrain aeroporto – Sandton, só ida ~US$ 11 - 13)",
+    "popularRideApps": [
+     "Uber",
+     "Bolt",
+     "inDrive"
+    ],
+    "taxiAdvice": "Uber e Bolt são a opção mais segura e prática nas cidades. Para rotas no interior (Rota Jardim, Kruger), alugar um carro é indispensável; dirige-se pela esquerda."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 35 - 55",
+    "dailyBudgetMidrangeUsd": "US$ 100 - 180",
+    "budgetMealUsd": "US$ 6 - 12",
+    "coffeeUsd": "US$ 1,50 - 3",
+    "waterBottleUsd": "US$ 0,60 - 1,20",
+    "hostelDormUsd": "US$ 15 - 25",
+    "hotel3StarUsd": "US$ 60 - 120",
+    "flightCostIndex": "Médio a alto (Istambul – Joanesburgo direto com a Turkish Airlines, ~10 horas)",
+    "flightTip": "A Turkish Airlines voa direto de Istambul para Joanesburgo e Cidade do Cabo; chegar pela Cidade do Cabo e sair por Joanesburgo economiza tempo. Nos voos domésticos, FlySafair e Airlink são baratas."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Perguntar “How are you?” antes de ir direto ao assunto é cortesia básica.",
+     "É costume dar pequenas gorjetas (R 5 - 10) aos car guards e aos frentistas.",
+     "Se for convidado para um braai (churrasco), leve carne ou bebidas.",
+     "Peça permissão antes de fotografar pessoas em vilarejos e townships."
+    ],
+    "festivals": [
+     "Festival Internacional de Jazz da Cidade do Cabo (março/abril)",
+     "Festival Nacional de Artes, Makhanda (junho a julho)",
+     "Dia da Herança – “Braai Day” (24 de setembro)"
+    ],
+    "lifestyle": "A “Nação Arco-Íris” é uma sociedade multicultural com 12 línguas oficiais; a paixão pelo rúgbi e pelo críquete, os braais de fim de semana e a vida ao ar livre marcam o dia a dia."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Table Mountain e Cidade do Cabo",
+     "Cabo da Boa Esperança (Cape Point) e pinguins de Boulders Beach",
+     "Parque Nacional Kruger (safári dos Big Five)",
+     "Rota Jardim (Knysna, Plettenberg Bay, Tsitsikamma)",
+     "Vinícolas de Stellenbosch e Franschhoek",
+     "Ilha Robben (UNESCO)"
+    ],
+    "bestSeasons": "Novembro a março (verão seco para Cidade do Cabo e a Rota Jardim) · Maio a setembro (inverno seco para safáris no Kruger; melhor observação de animais)",
+    "travelStyleTip": "Explore a região da Cidade do Cabo de carro e combine o Kruger com um voo doméstico mais carro alugado ou um safári em lodge; as distâncias são enormes."
+   },
+   "religion": {
+    "primaryReligions": "Cristianismo (~80%; diversas igrejas protestantes e igrejas independentes africanas), religiões tradicionais africanas, islã (~2%), hinduísmo (~1%)",
+    "respectNorms": "Cubra ombros e joelhos em mesquitas e templos; no bairro malaio de Bo-Kaap, seja discreto e peça permissão antes de posar em frente às casas.",
+    "sacredSites": [
+     "Mesquita Auwal (Bo-Kaap; a mais antiga do país, 1794)",
+     "Catedral de São Jorge (Cidade do Cabo)",
+     "Juma Masjid (Durban)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "12 línguas oficiais: zulu, xhosa, africâner, inglês, soto, tswana, língua de sinais sul-africana e outras. O inglês é a língua comum.",
+    "englishProficiency": "Muito bom; o inglês é a língua dos negócios, do turismo e da mídia.",
+    "phrases": [
+     {
+      "phrase": "Howzit!",
+      "meaning": "Oi, tudo bem? (inglês sul-africano)",
+      "translation": "Oi, tudo bem? (inglês sul-africano)",
+      "pronunciation": "how-zit"
+     },
+     {
+      "phrase": "Sawubona",
+      "meaning": "Olá (zulu)",
+      "translation": "Olá (zulu)",
+      "pronunciation": "sa-wu-bo-na"
+     },
+     {
+      "phrase": "Ngiyabonga",
+      "meaning": "Obrigado (zulu)",
+      "translation": "Obrigado (zulu)",
+      "pronunciation": "ngi-ya-bon-ga"
+     },
+     {
+      "phrase": "Baie dankie",
+      "meaning": "Muito obrigado (africâner)",
+      "translation": "Muito obrigado (africâner)",
+      "pronunciation": "ba-ye dun-ki"
+     },
+     {
+      "phrase": "Lekker!",
+      "meaning": "Demais! / Que legal! (gíria local)",
+      "translation": "Demais! / Que legal! (gíria local)",
+      "pronunciation": "lek-ker"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "A região é a terra ancestral dos povos san e khoikhoi. Os holandeses se estabeleceram no Cabo em 1652; no século XIX vieram o domínio britânico e as guerras dos bôeres. O apartheid (1948–1994) terminou com as eleições democráticas de 1994, que levaram Nelson Mandela à presidência.",
+    "milestones": [
+     "1652: a Companhia Holandesa das Índias Orientais funda a Cidade do Cabo",
+     "1899–1902: Segunda Guerra dos Bôeres",
+     "1994: primeiras eleições democráticas; Nelson Mandela se torna presidente",
+     "2010: sede da Copa do Mundo da FIFA"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Bobotie (torta de carne moída temperada com cobertura de ovo)",
+     "Bunny chow (curry de Durban servido dentro de um pão)",
+     "Braai (linguiça boerewors e carnes na grelha)"
+    ],
+    "traditionalDrinks": [
+     "Chá rooibos",
+     "Pinotage e vinhos de Stellenbosch",
+     "Amarula (licor cremoso de marula)"
+    ],
+    "streetFoodAndDesserts": [
+     "Biltong (carne seca temperada)",
+     "Koeksister (trança de massa frita na calda)",
+     "Malva pudding (bolo com geleia de damasco)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Nelson Mandela (Prêmio Nobel da Paz de 1993)",
+     "Desmond Tutu (Prêmio Nobel da Paz de 1984)",
+     "Charlize Theron (atriz vencedora do Oscar)"
+    ],
+    "strongSectors": [
+     "Mineração (platina, ouro, cromo; líder mundial)",
+     "Exportação de vinho e frutas",
+     "Turismo e finanças (Bolsa de Joanesburgo)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Os cartões (inclusive por aproximação) são aceitos em quase todo lugar; leve um pouco de dinheiro em rand para barracas no interior, car guards e gorjetas.",
+    "tippingCulture": "Nos restaurantes espera-se 10 - 15%; é costume dar gorjeta diária a guias e rastreadores de safári.",
+    "economicPillars": "Mineração, serviços financeiros, indústria automobilística, agricultura e vinho, turismo."
+   }
+  },
+  "itin": {
+   "routeName": "Clássicos da África do Sul: Cidade do Cabo, vinícolas, Rota Jardim e Kruger",
+   "routeSummary": "Roteiro de 11 dias que começa na Cidade do Cabo, cruza os vales do vinho até o litoral da Rota Jardim e termina, depois de um voo, com um safári dos Big Five no Kruger.",
+   "totalDays": 11,
+   "idealDurationText": "Roteiro de 11 dias",
+   "bestSeason": "Novembro a março (verão seco para Cidade do Cabo e a Rota Jardim) · Maio a setembro (inverno seco para safáris no Kruger; melhor observação de animais)",
+   "transportMode": "Carro alugado Cidade do Cabo – Rota Jardim (mão inglesa); voo doméstico George/Gqeberha – Kruger (Skukuza/Nelspruit)",
+   "paceLevel": "Equilibrado (cidade, natureza e safári)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Cidade do Cabo e Cabo da Boa Esperança",
+     "recommendedDuration": "3 dias",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Table Mountain (bondinho ou trilha)",
+      "V&A Waterfront e Ilha Robben",
+      "Casas coloridas de Bo-Kaap",
+      "Cape Point e pinguins de Boulders Beach"
+     ],
+     "activities": [
+      "Suba a Table Mountain de bondinho num dia de céu limpo e veja o pôr do sol.",
+      "Faça um passeio de carro até Cape Point pela Chapman’s Peak Drive.",
+      "Visite a cela de Mandela na Ilha Robben."
+     ],
+     "foodAndDrinks": [
+      "Curry malaio do Cabo (Bo-Kaap)",
+      "Fish and chips fresquinho (Kalk Bay)"
+     ],
+     "criticalTips": [
+      "O bondinho fecha quando venta forte; confira o funcionamento pela manhã.",
+      "Reserve os ingressos para a Ilha Robben com dias de antecedência."
+     ],
+     "mapsQuery": "Table Mountain, Cape Town, South Africa"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Stellenbosch e Franschhoek (região dos vinhos)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Arquitetura holandesa do Cabo em Stellenbosch",
+      "Franschhoek Wine Tram",
+      "Fazendas Boschendal e Babylonstoren"
+     ],
+     "activities": [
+      "Percorra as vinícolas a bordo do Franschhoek Wine Tram.",
+      "Passeie pelo jardim de Babylonstoren e almoce no restaurante da fazenda.",
+      "Caminhe pela histórica Dorp Street, em Stellenbosch."
+     ],
+     "foodAndDrinks": [
+      "Degustação de Pinotage e Chenin Blanc",
+      "Tábua de queijos e frios"
+     ],
+     "criticalTips": [
+      "Não dirija depois das degustações; vá com um tour com motorista ou de bonde.",
+      "Os restaurantes mais procurados exigem reserva no fim de semana."
+     ],
+     "mapsQuery": "Stellenbosch, Western Cape, South Africa"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Rota Jardim (Knysna e Plettenberg Bay)",
+     "recommendedDuration": "3 dias",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Knysna Heads e lagoa",
+      "Parque Nacional Tsitsikamma – ponte suspensa de Storms River",
+      "Reserva Natural de Robberg (Plettenberg Bay)"
+     ],
+     "activities": [
+      "Caminhe até a ponte suspensa e faça caiaque em Tsitsikamma.",
+      "Encare um dos bungee jumps mais altos do mundo na ponte Bloukrans.",
+      "Observe golfinhos e (de julho a novembro) baleias em um passeio de barco em Plettenberg Bay."
+     ],
+     "foodAndDrinks": [
+      "Ostras de Knysna",
+      "Travessa de frutos do mar"
+     ],
+     "criticalTips": [
+      "As distâncias são longas; evite dirigir à noite fora das estradas principais.",
+      "A temporada de baleias vai de julho a novembro."
+     ],
+     "mapsQuery": "Knysna, Garden Route, South Africa"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Parque Nacional Kruger (safári)",
+     "recommendedDuration": "3 dias",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Os Big Five (leão, leopardo, elefante, búfalo, rinoceronte)",
+      "Reservas particulares de Sabi Sand",
+      "Panorama Route e cânion do rio Blyde"
+     ],
+     "activities": [
+      "Participe de safáris guiados em veículo aberto ao amanhecer e ao entardecer.",
+      "Faça um safári por conta própria dentro do parque com o seu carro.",
+      "Visite o cânion do rio Blyde e o mirante God’s Window."
+     ],
+     "foodAndDrinks": [
+      "Jantar braai no lodge",
+      "Biltong e chá rooibos"
+     ],
+     "criticalTips": [
+      "Os portões do parque fecham ao pôr do sol; respeite os horários.",
+      "O Kruger fica em área de malária; consulte seu médico, sobretudo de outubro a maio."
+     ],
+     "mapsQuery": "Kruger National Park, South Africa"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Bobotie (torta de carne moída temperada com cobertura de ovo)",
+     "Bunny chow (curry de Durban servido dentro de um pão)",
+     "Braai (linguiça boerewors e carnes na grelha)"
+    ],
+    "drinks": [
+     "Chá rooibos",
+     "Pinotage e vinhos de Stellenbosch",
+     "Amarula (licor cremoso de marula)"
+    ],
+    "streetFoods": [
+     "Biltong (carne seca temperada)",
+     "Koeksister (trança de massa frita na calda)",
+     "Malva pudding (bolo com geleia de damasco)"
+    ],
+    "diningAdvice": "Deixe 10 - 15% nos restaurantes; para viver a cultura do braai, experimente uma churrascaria local ou lugares como o Mzoli’s, perto da Cidade do Cabo."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptador tipo M (três pinos redondos grossos; plugues Schuko não entram na maioria das tomadas)",
+     "Roupas em cores neutras para usar em camadas e binóculos para o safári",
+     "Protetor solar e chapéu",
+     "Repelente de mosquitos para áreas de malária"
+    ],
+    "safetyAndEtiquette": [
+     "Não ande a pé à noite; use Uber/Bolt.",
+     "Não deixe objetos de valor à vista no carro.",
+     "No safári, não desça do veículo nem se aproxime dos animais."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "M",
+     "N",
+     "C"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "A tomada principal é a tipo M (três pinos redondos grossos); em prédios novos, a tipo N (SANS 164-2) está se espalhando. Plugues C de pinos finos entram em algumas tomadas, os Schuko não; adaptadores M são baratos nos supermercados."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "A água da torneira é potável na Cidade do Cabo, em Joanesburgo e em Pretória. Em áreas rurais e depois de interrupções no abastecimento, prefira água mineral.",
+    "vaccines": [
+     "Vacinas de rotina (tétano-difteria, sarampo)",
+     "Hepatite A e febre tifoide",
+     "Prevenção contra malária para o Kruger e o nordeste (consulte um médico)",
+     "Certificado de febre amarela só se você chegar de um país de risco"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "10177"
+   },
+   "tipping": {
+    "custom": "A gorjeta é esperada.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "10 - 15% nos restaurantes; R 5 - 10 para frentistas e car guards; gorjeta diária para os guias de safári."
+   },
+   "taxFree": {
+    "vatRefundPercent": "15% de IVA (menos a taxa de administração)",
+    "minSpend": "250 ZAR (total de compras)",
+    "customsNote": "Os produtos devem sair do país em até 90 dias; apresente notas fiscais e mercadorias no balcão de VAT Refund do aeroporto. Marfim, chifre de rinoceronte e produtos de fauna protegida são proibidos."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 1,50 - 4,00",
+    "topCarriers": [
+     "Vodacom",
+     "MTN",
+     "Cell C",
+     "Telkom"
+    ],
+    "airportSimTrapWarning": "Os balcões do aeroporto são práticos e têm preços razoáveis; o chip exige cadastro RICA com passaporte e um endereço (pode ser o do hotel)."
+   },
+   "touristScams": [
+    {
+     "title": "“Ajudantes” no caixa eletrônico",
+     "desc": "Alguém se oferece para ajudar você no caixa eletrônico, troca seu cartão ou espia sua senha.",
+     "tip": "Recuse a ajuda e use caixas eletrônicos dentro de bancos."
+    },
+    {
+     "title": "Bloqueador de sinal",
+     "desc": "Ao trancar o carro com o controle em um estacionamento, o sinal é bloqueado e o carro fica aberto.",
+     "tip": "Confira se trancou puxando a maçaneta."
+    },
+    {
+     "title": "Táxis sem licença",
+     "desc": "Motoristas sem licença prometem um “traslado barato” no aeroporto e cobram a mais.",
+     "tip": "Use Uber/Bolt ou o traslado do hotel."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Южноафриканский рэнд (ZAR)",

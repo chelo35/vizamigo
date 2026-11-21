@@ -63,38 +63,38 @@ export const TripBar: React.FC<{ passport: string; trip: Trip; setTrip: (p: Part
   const today = iso(new Date());
   const opts = useMemo(() => Object.keys(GEO_DATA).map((c) => ({ c, n: getCountryName(c, language) })).sort((a, b) => a.n.localeCompare(b.n, language)), [language]);
   return (
-    <div className="vz-tripbar" role="group" aria-label={l('Yolculuğun', 'Your trip', 'Deine Reise', 'Tu viaje', 'Ваша поездка')}>
+    <div className="vz-tripbar" role="group" aria-label={l('Yolculuğun', 'Your trip', 'Deine Reise', 'Tu viaje', 'Ваша поездка', 'Sua viagem')}>
       <button type="button" className="vz-tb-f" onClick={onOpenPassport} disabled={!onOpenPassport}>
-        <small>{l('Pasaportum', 'My passport', 'Mein Pass', 'Mi pasaporte', 'Мой паспорт')}</small>
+        <small>{l('Pasaportum', 'My passport', 'Mein Pass', 'Mi pasaporte', 'Мой паспорт', 'Meu passaporte')}</small>
         <b><Flag code={passport} size="sm" /> {getCountryName(passport, language)}</b>
       </button>
       <label className="vz-tb-f">
-        <small>{l('Nereden', 'From', 'Von', 'Desde', 'Откуда')}</small>
+        <small>{l('Nereden', 'From', 'Von', 'Desde', 'Откуда', 'De')}</small>
         <select value={trip.from} onChange={(e) => setTrip({ from: e.target.value })}>
           {opts.map((o) => <option key={o.c} value={o.c}>{o.n}</option>)}
         </select>
       </label>
       <label className="vz-tb-f">
-        <small>{l('Gidiş', 'Depart', 'Hinreise', 'Ida', 'Туда')}</small>
+        <small>{l('Gidiş', 'Depart', 'Hinreise', 'Ida', 'Туда', 'Ida')}</small>
         <input type="date" min={plusDays(today, 1)} value={trip.d1} onChange={(e) => e.target.value && setTrip({ d1: e.target.value })} />
       </label>
       <label className="vz-tb-f">
-        <small>{l('Dönüş', 'Return', 'Rückreise', 'Vuelta', 'Обратно')}</small>
+        <small>{l('Dönüş', 'Return', 'Rückreise', 'Vuelta', 'Обратно', 'Volta')}</small>
         <input type="date" min={plusDays(trip.d1, 1)} value={trip.d2} onChange={(e) => e.target.value && setTrip({ d2: e.target.value })} />
       </label>
       <label className="vz-tb-f sm">
-        <small>{l('Yetişkin', 'Adults', 'Erwachsene', 'Adultos', 'Взрослые')}</small>
+        <small>{l('Yetişkin', 'Adults', 'Erwachsene', 'Adultos', 'Взрослые', 'Adultos')}</small>
         <select value={trip.n} onChange={(e) => setTrip({ n: Number(e.target.value) })}>
           {[1, 2, 3, 4, 5, 6, 7, 8].map((d) => <option key={d} value={d}>{d}</option>)}
         </select>
       </label>
       <label className="vz-tb-f sm">
-        <small>{l('Çocuk', 'Children', 'Kinder', 'Niños', 'Дети')}</small>
+        <small>{l('Çocuk', 'Children', 'Kinder', 'Niños', 'Дети', 'Crianças')}</small>
         <select value={trip.c || 0} onChange={(e) => setTrip({ c: Number(e.target.value) })}>
           {[0, 1, 2, 3, 4].map((d) => <option key={d} value={d}>{d}</option>)}
         </select>
       </label>
-      <p className="vz-tb-note">{l('Pasaportu değiştirince vize, belgeler ve kalış süresi; tarihleri değiştirince fiyatlar güncellenir.', 'Change the passport to update visa rules; change dates to update prices.', 'Pass ändern aktualisiert die Einreiseregeln, Daten ändern die Preise.', 'Cambia el pasaporte para actualizar el visado y las fechas para los precios.', 'Смена паспорта обновит визовые правила, смена дат — цены.')}</p>
+      <p className="vz-tb-note">{l('Pasaportu değiştirince vize, belgeler ve kalış süresi; tarihleri değiştirince fiyatlar güncellenir.', 'Change the passport to update visa rules; change dates to update prices.', 'Pass ändern aktualisiert die Einreiseregeln, Daten ändern die Preise.', 'Cambia el pasaporte para actualizar el visado y las fechas para los precios.', 'Смена паспорта обновит визовые правила, смена дат — цены.', 'Troque o passaporte para atualizar o visto, e as datas para ver os preços.')}</p>
     </div>
   );
 };
@@ -128,8 +128,8 @@ const PlaceQ: React.FC<{ code: string; id: string; onPick: (v: string) => void }
   const [v, setV] = useState('');
   return (
     <form className="vz-bk-cityq sm" onSubmit={(e) => { e.preventDefault(); const q = v.trim(); if (q) { onPick(findPlace(code, q)?.en || q); setV(''); } }}>
-      <input list={`vz-cities-${code}`} id={id} value={v} onChange={(e) => setV(e.target.value)} placeholder={l('Başka şehir ya da ada yaz…', 'Type another city or island…', 'Andere Stadt oder Insel…', 'Otra ciudad o isla…', 'Другой город или остров…')} aria-label={l('Şehir ara', 'Search city', 'Stadt suchen', 'Buscar ciudad', 'Поиск города')} />
-      <button type="submit">{l('Göster', 'Show', 'Zeigen', 'Mostrar', 'Показать')}</button>
+      <input list={`vz-cities-${code}`} id={id} value={v} onChange={(e) => setV(e.target.value)} placeholder={l('Başka şehir ya da ada yaz…', 'Type another city or island…', 'Andere Stadt oder Insel…', 'Otra ciudad o isla…', 'Другой город или остров…', 'Outra cidade ou ilha…')} aria-label={l('Şehir ara', 'Search city', 'Stadt suchen', 'Buscar ciudad', 'Поиск города', 'Buscar cidade')} />
+      <button type="submit">{l('Göster', 'Show', 'Zeigen', 'Mostrar', 'Показать', 'Mostrar')}</button>
     </form>
   );
 };
@@ -473,12 +473,12 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
   }, [groundCity]);
   // 12Go ulaşım türleri: veri emojiyle gelir, sonuç sayfası vehclasses_tab ile o türe açılır
   const GMODES: { k: string; e: string; t: string }[] = [
-    { k: 'train', e: '🚆', t: l('Tren', 'Train', 'Zug', 'Tren', 'Поезд') },
-    { k: 'bus', e: '🚌', t: l('Otobüs', 'Bus', 'Bus', 'Autobús', 'Автобус') },
-    { k: 'ferry', e: '🚢', t: l('Feribot', 'Ferry', 'Fähre', 'Ferry', 'Паром') },
-    { k: 'van', e: '🚐', t: l('Minibüs', 'Minivan', 'Minivan', 'Minibús', 'Минивэн') },
-    { k: 'charter', e: '🚕', t: l('Özel araç / taksi', 'Private car / taxi', 'Privatwagen / Taxi', 'Coche privado / taxi', 'Такси / частный трансфер') },
-    { k: 'avia', e: '✈️', t: l('Uçak', 'Flight', 'Flug', 'Vuelo', 'Самолёт') }
+    { k: 'train', e: '🚆', t: l('Tren', 'Train', 'Zug', 'Tren', 'Поезд', 'Trem') },
+    { k: 'bus', e: '🚌', t: l('Otobüs', 'Bus', 'Bus', 'Autobús', 'Автобус', 'Ônibus') },
+    { k: 'ferry', e: '🚢', t: l('Feribot', 'Ferry', 'Fähre', 'Ferry', 'Паром', 'Balsa') },
+    { k: 'van', e: '🚐', t: l('Minibüs', 'Minivan', 'Minivan', 'Minibús', 'Минивэн', 'Van') },
+    { k: 'charter', e: '🚕', t: l('Özel araç / taksi', 'Private car / taxi', 'Privatwagen / Taxi', 'Coche privado / taxi', 'Такси / частный трансфер', 'Carro particular / táxi') },
+    { k: 'avia', e: '✈️', t: l('Uçak', 'Flight', 'Flug', 'Vuelo', 'Самолёт', 'Voo') }
   ];
   const modeOf = (emoji: string) => GMODES.find((m) => m.e.replace(/️/g, '') === emoji.replace(/️/g, ''));
   const [gMode, setGMode] = useState('');
@@ -519,65 +519,65 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
   const insDays = nights + 1;
   const insUsd = Math.round(((SAFETYWING_4W_USD / 28) * Math.max(7, insDays)) * people(trip) * 100) / 100;
   const carLabel: Record<CarClass, string> = {
-    mini: l('Mini', 'Mini', 'Mini', 'Mini', 'Мини'),
-    economy: l('Ekonomik', 'Economy', 'Economy', 'Económico', 'Эконом'),
-    compact: l('Kompakt', 'Compact', 'Kompakt', 'Compacto', 'Компакт'),
-    intermediate: l('Orta sınıf', 'Intermediate', 'Mittelklasse', 'Intermedio', 'Средний'),
-    standard: l('Standart / SUV', 'Standard / SUV', 'Standard / SUV', 'Estándar / SUV', 'Стандарт / SUV')
+    mini: l('Mini', 'Mini', 'Mini', 'Mini', 'Мини', 'Mini'),
+    economy: l('Ekonomik', 'Economy', 'Economy', 'Económico', 'Эконом', 'Econômico'),
+    compact: l('Kompakt', 'Compact', 'Kompakt', 'Compacto', 'Компакт', 'Compacto'),
+    intermediate: l('Orta sınıf', 'Intermediate', 'Mittelklasse', 'Intermedio', 'Средний', 'Intermediário'),
+    standard: l('Standart / SUV', 'Standard / SUV', 'Standard / SUV', 'Estándar / SUV', 'Стандарт / SUV', 'Padrão / SUV')
   };
 
   return (
     <div className="vz-bk">
       {(
         <div className="vz-bk-city">
-          <b><Flag code={code} size="sm" /> {l(`${getCountryName(code, language)}'da nereye gidiyorsun?`, `Where in ${getCountryName(code, 'en')} are you going?`, `Wohin in ${getCountryName(code, language)}?`, `¿A dónde en ${getCountryName(code, language)}?`, `Куда в ${getCountryName(code, language)}?`)}</b>
+          <b><Flag code={code} size="sm" /> {l(`${getCountryName(code, language)}'da nereye gidiyorsun?`, `Where in ${getCountryName(code, 'en')} are you going?`, `Wohin in ${getCountryName(code, language)}?`, `¿A dónde en ${getCountryName(code, language)}?`, `Куда в ${getCountryName(code, language)}?`, `Para onde em ${getCountryName(code, language)}?`)}</b>
           <form className="vz-bk-cityq" onSubmit={(e) => { e.preventDefault(); searchCity(cityQ); }}>
-            <input list={`vz-cities-${code}`} value={cityQ} onChange={(e) => setCityQ(e.target.value)} placeholder={l('Şehir, ada ya da bölge yaz (ör. Koh Phangan)', 'Type a city, island or region', 'Stadt, Insel oder Region', 'Ciudad, isla o región', 'Город, остров или регион')} aria-label={l('Şehir ara', 'Search city', 'Stadt suchen', 'Buscar ciudad', 'Поиск города')} />
+            <input list={`vz-cities-${code}`} value={cityQ} onChange={(e) => setCityQ(e.target.value)} placeholder={l('Şehir, ada ya da bölge yaz (ör. Koh Phangan)', 'Type a city, island or region', 'Stadt, Insel oder Region', 'Ciudad, isla o región', 'Город, остров или регион', 'Cidade, ilha ou região')} aria-label={l('Şehir ara', 'Search city', 'Stadt suchen', 'Buscar ciudad', 'Поиск города', 'Buscar cidade')} />
             <datalist id={`vz-cities-${code}`}>{citySuggest.map((c) => <option key={c} value={c} />)}</datalist>
-            <button type="submit">{l('Göster', 'Show', 'Zeigen', 'Mostrar', 'Показать')}</button>
+            <button type="submit">{l('Göster', 'Show', 'Zeigen', 'Mostrar', 'Показать', 'Mostrar')}</button>
           </form>
-          <div className="vz-bk-chips" role="tablist" aria-label={l('Şehir', 'City', 'Stadt', 'Ciudad', 'Город')}>
+          <div className="vz-bk-chips" role="tablist" aria-label={l('Şehir', 'City', 'Stadt', 'Ciudad', 'Город', 'Cidade')}>
             {custom && <button type="button" role="tab" aria-selected className="on">{custom}</button>}
             {cities.map((c) => (
               <button key={c.id} type="button" role="tab" aria-selected={city?.id === c.id} className={city?.id === c.id ? 'on' : ''} onClick={() => { setCityQ(''); pickCity(c.id); }}>{(language === 'tr' && c.tr) || (language === 'ru' && CITY_RU[c.en]) || c.en}</button>
             ))}
           </div>
-          <small>{l('Uçuş, otel, tur, transfer, araç ve motor fiyatları seçtiğin şehre göre değişir.', 'Flights, hotels, tours, transfers, cars and bikes follow the city you pick.', 'Flüge, Hotels, Touren, Transfers, Autos und Roller richten sich nach der Stadt.', 'Vuelos, hoteles, tours, traslados, coches y motos según la ciudad.', 'Рейсы, отели, туры, трансферы, авто и байки — по выбранному городу.')}</small>
+          <small>{l('Uçuş, otel, tur, transfer, araç ve motor fiyatları seçtiğin şehre göre değişir.', 'Flights, hotels, tours, transfers, cars and bikes follow the city you pick.', 'Flüge, Hotels, Touren, Transfers, Autos und Roller richten sich nach der Stadt.', 'Vuelos, hoteles, tours, traslados, coches y motos según la ciudad.', 'Рейсы, отели, туры, трансферы, авто и байки — по выбранному городу.', 'Voos, hotéis, passeios, traslados, carros e motos de acordo com a cidade.')}</small>
         </div>
       )}
 
-      <nav className="vz-bk-jump" aria-label={l('Kategoriler', 'Categories', 'Kategorien', 'Categorías', 'Категории')}>
-        <a href="#bk-flight" onClick={jump}>{l('Uçak', 'Flights', 'Flüge', 'Vuelos', 'Авиа')}</a>
-        <a href="#bk-hotel" onClick={jump}>{l('Otel', 'Hotels', 'Hotels', 'Hoteles', 'Отели')}</a>
-        <a href="#bk-tours" onClick={jump}>{l('Turlar', 'Tours', 'Touren', 'Tours', 'Туры')}</a>
-        <a href="#bk-transfer" onClick={jump}>{l('Transfer', 'Transfer', 'Transfer', 'Traslado', 'Трансфер')}</a>
-        {ground.length > 0 && <a href="#bk-ground" onClick={jump}>{l('Tren · Otobüs · Feribot', 'Train · Bus · Ferry', 'Zug · Bus · Fähre', 'Tren · Bus · Ferry', 'Поезд · Автобус · Паром')}</a>}
-        {hasSea && <a href="#bk-sea" onClick={jump}>{ITALIARAIL_COUNTRIES.has(code) ? l('Tren · Feribot', 'Train · Ferry', 'Zug · Fähre', 'Tren · Ferry', 'Поезд · Паром') : l('Feribot', 'Ferry', 'Fähre', 'Ferry', 'Паром')}</a>}
+      <nav className="vz-bk-jump" aria-label={l('Kategoriler', 'Categories', 'Kategorien', 'Categorías', 'Категории', 'Categorias')}>
+        <a href="#bk-flight" onClick={jump}>{l('Uçak', 'Flights', 'Flüge', 'Vuelos', 'Авиа', 'Voos')}</a>
+        <a href="#bk-hotel" onClick={jump}>{l('Otel', 'Hotels', 'Hotels', 'Hoteles', 'Отели', 'Hotéis')}</a>
+        <a href="#bk-tours" onClick={jump}>{l('Turlar', 'Tours', 'Touren', 'Tours', 'Туры', 'Passeios')}</a>
+        <a href="#bk-transfer" onClick={jump}>{l('Transfer', 'Transfer', 'Transfer', 'Traslado', 'Трансфер', 'Traslado')}</a>
+        {ground.length > 0 && <a href="#bk-ground" onClick={jump}>{l('Tren · Otobüs · Feribot', 'Train · Bus · Ferry', 'Zug · Bus · Fähre', 'Tren · Bus · Ferry', 'Поезд · Автобус · Паром', 'Trem · Ônibus · Balsa')}</a>}
+        {hasSea && <a href="#bk-sea" onClick={jump}>{ITALIARAIL_COUNTRIES.has(code) ? l('Tren · Feribot', 'Train · Ferry', 'Zug · Fähre', 'Tren · Ferry', 'Поезд · Паром', 'Trem · Balsa') : l('Feribot', 'Ferry', 'Fähre', 'Ferry', 'Паром', 'Balsa')}</a>}
         <a href="#bk-esim" onClick={jump}>eSIM</a>
-        <a href="#bk-car" onClick={jump}>{l('Araç', 'Car', 'Mietwagen', 'Coche', 'Авто')}</a>
-        <a href="#bk-ins" onClick={jump}>{l('Sigorta', 'Insurance', 'Versicherung', 'Seguro', 'Страховка')}</a>
+        <a href="#bk-car" onClick={jump}>{l('Araç', 'Car', 'Mietwagen', 'Coche', 'Авто', 'Carro')}</a>
+        <a href="#bk-ins" onClick={jump}>{l('Sigorta', 'Insurance', 'Versicherung', 'Seguro', 'Страховка', 'Seguro')}</a>
       </nav>
 
 
       {trip.from !== code && fromIata && toIata && (
-        <Sec id="bk-flight" icon="plane" title={l(`${getCountryName(trip.from, language)} → ${getCountryName(code, language)} uçuşları`, `Flights ${getCountryName(trip.from, 'en')} → ${getCountryName(code, 'en')}`, `Flüge ${getCountryName(trip.from, language)} → ${getCountryName(code, language)}`, `Vuelos ${getCountryName(trip.from, language)} → ${getCountryName(code, language)}`, `Перелёт ${getCountryName(trip.from, language)} → ${getCountryName(code, language)}`)} note={l('Fiyatlar Aviasales’te son günlerde bulunan en düşük fiyatlar, kişi başı; birkaç saatte bir yenilenir. Kesin fiyat ödeme sayfasında.', 'Lowest fares seen on Aviasales recently, per person; refreshed every few hours. Final price at checkout.', 'Niedrigste kürzlich gesehene Preise auf Aviasales, pro Person; alle paar Stunden aktualisiert.', 'Tarifas más bajas vistas en Aviasales, por persona; se actualizan cada pocas horas.', 'Минимальные цены Aviasales, на человека; обновляются каждые несколько часов.')}>
-          <div className="vz-bk-seg vz-fl-mode" role="group" aria-label={l('Uçuş türü', 'Trip type', 'Reiseart', 'Tipo de viaje', 'Тип поездки')}>
+        <Sec id="bk-flight" icon="plane" title={l(`${getCountryName(trip.from, language)} → ${getCountryName(code, language)} uçuşları`, `Flights ${getCountryName(trip.from, 'en')} → ${getCountryName(code, 'en')}`, `Flüge ${getCountryName(trip.from, language)} → ${getCountryName(code, language)}`, `Vuelos ${getCountryName(trip.from, language)} → ${getCountryName(code, language)}`, `Перелёт ${getCountryName(trip.from, language)} → ${getCountryName(code, language)}`, `Voos ${getCountryName(trip.from, language)} → ${getCountryName(code, language)}`)} note={l('Fiyatlar Aviasales’te son günlerde bulunan en düşük fiyatlar, kişi başı; birkaç saatte bir yenilenir. Kesin fiyat ödeme sayfasında.', 'Lowest fares seen on Aviasales recently, per person; refreshed every few hours. Final price at checkout.', 'Niedrigste kürzlich gesehene Preise auf Aviasales, pro Person; alle paar Stunden aktualisiert.', 'Tarifas más bajas vistas en Aviasales, por persona; se actualizan cada pocas horas.', 'Минимальные цены Aviasales, на человека; обновляются каждые несколько часов.', 'Tarifas mais baixas encontradas no Aviasales, por pessoa; atualizadas a cada poucas horas.')}>
+          <div className="vz-bk-seg vz-fl-mode" role="group" aria-label={l('Uçuş türü', 'Trip type', 'Reiseart', 'Tipo de viaje', 'Тип поездки', 'Tipo de viagem')}>
             {([
-              ['rt', l('Gidiş-dönüş', 'Round trip', 'Hin & zurück', 'Ida y vuelta', 'Туда-обратно')],
-              ['any', l('Süre esnek', 'Any length', 'Flexibel', 'Flexible', 'Любой срок')],
-              ['ow', l('Sadece gidiş', 'One way', 'Nur Hinflug', 'Solo ida', 'Только туда')],
-              ['ret', l('Sadece dönüş', 'Return only', 'Nur Rückflug', 'Solo vuelta', 'Только обратно')]
+              ['rt', l('Gidiş-dönüş', 'Round trip', 'Hin & zurück', 'Ida y vuelta', 'Туда-обратно', 'Ida e volta')],
+              ['any', l('Süre esnek', 'Any length', 'Flexibel', 'Flexible', 'Любой срок', 'Flexível')],
+              ['ow', l('Sadece gidiş', 'One way', 'Nur Hinflug', 'Solo ida', 'Только туда', 'Só ida')],
+              ['ret', l('Sadece dönüş', 'Return only', 'Nur Rückflug', 'Solo vuelta', 'Только обратно', 'Só volta')]
             ] as const).map(([k, t]) => (
               <button key={k} type="button" aria-pressed={fmode === k} className={fmode === k ? 'on' : ''} onClick={() => setFmode(k)}>{t}</button>
             ))}
           </div>
           <div className="vz-fl-tools">
           <button type="button" className={`vz-fl-cal${calOpen ? ' on' : ''}`} aria-expanded={calOpen} onClick={() => setCalOpen((v) => !v)}>
-            <Icon name="cal" size={16} duo={false} />{l('Fiyat takvimi: en ucuz günler', 'Price calendar: cheapest days', 'Preiskalender: günstigste Tage', 'Calendario de precios', 'Календарь цен')}
+            <Icon name="cal" size={16} duo={false} />{l('Fiyat takvimi: en ucuz günler', 'Price calendar: cheapest days', 'Preiskalender: günstigste Tage', 'Calendario de precios', 'Календарь цен', 'Calendário de preços')}
           </button>
           <label className="vz-bk-toggle">
             <input type="checkbox" checked={directOnly} onChange={(e) => setDirectOnly(e.target.checked)} />
-            <span>{l('Sadece aktarmasız uçuşlar', 'Direct flights only', 'Nur Direktflüge', 'Solo vuelos directos', 'Только прямые рейсы')}</span>
+            <span>{l('Sadece aktarmasız uçuşlar', 'Direct flights only', 'Nur Direktflüge', 'Solo vuelos directos', 'Только прямые рейсы', 'Só voos diretos')}</span>
           </label>
           </div>
           {calOpen && (
@@ -604,8 +604,8 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
           {calPicked && !calOpen && (
             <p className="vz-fl-picked" role="status">
               <Icon name="check" size={16} duo={false} />
-              <span>{l(`Tarihler en ucuz güne göre ayarlandı: ${dates}. Otel, tur ve araç fiyatları da bu tarihlerle açılır.`, `Dates set to the cheapest days: ${dates}. Hotels, tours and cars now open with these dates.`, `Daten auf die günstigsten Tage gesetzt: ${dates}. Hotels, Touren und Autos öffnen mit diesen Daten.`, `Fechas ajustadas a los días más baratos: ${dates}. Hoteles, tours y coches se abren con estas fechas.`, `Даты установлены на самые дешёвые дни: ${dates}. Отели, туры и авто открываются с этими датами.`)}</span>
-              <a href="#bk-hotel" onClick={jump}>{l('Bu tarihlerde otellere bak', 'See hotels for these dates', 'Hotels für diese Daten', 'Ver hoteles en estas fechas', 'Отели на эти даты')} ›</a>
+              <span>{l(`Tarihler en ucuz güne göre ayarlandı: ${dates}. Otel, tur ve araç fiyatları da bu tarihlerle açılır.`, `Dates set to the cheapest days: ${dates}. Hotels, tours and cars now open with these dates.`, `Daten auf die günstigsten Tage gesetzt: ${dates}. Hotels, Touren und Autos öffnen mit diesen Daten.`, `Fechas ajustadas a los días más baratos: ${dates}. Hoteles, tours y coches se abren con estas fechas.`, `Даты установлены на самые дешёвые дни: ${dates}. Отели, туры и авто открываются с этими датами.`, `Datas ajustadas para os dias mais baratos: ${dates}. Hotéis, passeios e carros abrem com essas datas.`)}</span>
+              <a href="#bk-hotel" onClick={jump}>{l('Bu tarihlerde otellere bak', 'See hotels for these dates', 'Hotels für diese Daten', 'Ver hoteles en estas fechas', 'Отели на эти даты', 'Ver hotéis nessas datas')} ›</a>
             </p>
           )}
           {fl === null ? (
@@ -614,28 +614,28 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
             <div className="vz-bk-fares">
               {fl.res.map((f, i) => (
                 <a key={`${f.dep}${f.ret}`} className={`vz-qd-fare${i === 0 ? ' best' : ''}`} href={f.link || aviaLink} target="_blank" rel="noopener noreferrer sponsored">
-                  {i === 0 && <em>{l('En ucuz', 'Cheapest', 'Am günstigsten', 'Más barato', 'Дешевле всего')}</em>}
+                  {i === 0 && <em>{l('En ucuz', 'Cheapest', 'Am günstigsten', 'Más barato', 'Дешевле всего', 'Mais barato')}</em>}
                   <b>{money(f.price, fl.cur)}</b>
                   {f.airline && (
                     <i className="vz-fl-air"><img src={`https://pics.avs.io/40/40/${f.airline}.png`} alt="" width={20} height={20} loading="lazy" />{AIRLINES[f.airline] || f.airline}</i>
                   )}
-                  <span>{fmtDay(f.dep)}{f.ret ? ` → ${fmtDay(f.ret)}` : ''}{f.ret && fmode === 'any' ? ` · ${Math.round((Date.parse(f.ret) - Date.parse(f.dep)) / 864e5)} ${l('gece', 'nights', 'Nächte', 'noches', 'ноч.')}` : ''}</span>
-                  <small>{f.transfers === 0 ? l('Direkt', 'Direct', 'Direkt', 'Directo', 'Прямой') : l(`${f.transfers ?? '?'} aktarma`, `${f.transfers ?? '?'} stop(s)`, `${f.transfers ?? '?'} Umstieg`, `${f.transfers ?? '?'} escala`, `пересадок: ${f.transfers ?? '?'}`)} · {l('Bileti al', 'Book', 'Buchen', 'Reservar', 'Купить')} ›</small>
+                  <span>{fmtDay(f.dep)}{f.ret ? ` → ${fmtDay(f.ret)}` : ''}{f.ret && fmode === 'any' ? ` · ${Math.round((Date.parse(f.ret) - Date.parse(f.dep)) / 864e5)} ${l('gece', 'nights', 'Nächte', 'noches', 'ноч.', 'noites')}` : ''}</span>
+                  <small>{f.transfers === 0 ? l('Direkt', 'Direct', 'Direkt', 'Directo', 'Прямой', 'Direto') : l(`${f.transfers ?? '?'} aktarma`, `${f.transfers ?? '?'} stop(s)`, `${f.transfers ?? '?'} Umstieg`, `${f.transfers ?? '?'} escala`, `пересадок: ${f.transfers ?? '?'}`, `${f.transfers ?? '?'} escala`)} · {l('Bileti al', 'Book', 'Buchen', 'Reservar', 'Купить', 'Reservar')} ›</small>
                 </a>
               ))}
             </div>
           ) : (
             <>
-            {directOnly && <p className="vz-bk-op">{l('Bu tarihlerde aktarmasız uçuş fiyatı bulunamadı.', 'No direct-flight fares found for these dates.', 'Keine Direktflug-Preise für diese Daten.', 'Sin tarifas directas para estas fechas.', 'Прямых рейсов на эти даты не найдено.')}</p>}
-            <a className="vz-bk-cta" href={aviaLink} target="_blank" rel="noopener noreferrer sponsored">{l(`${dates} için uçuşları canlı ara`, `Search live flights for ${dates}`, `Flüge für ${dates} live suchen`, `Buscar vuelos para ${dates}`, `Искать рейсы на ${dates}`)} <AdTag /></a>
+            {directOnly && <p className="vz-bk-op">{l('Bu tarihlerde aktarmasız uçuş fiyatı bulunamadı.', 'No direct-flight fares found for these dates.', 'Keine Direktflug-Preise für diese Daten.', 'Sin tarifas directas para estas fechas.', 'Прямых рейсов на эти даты не найдено.', 'Sem tarifas diretas para essas datas.')}</p>}
+            <a className="vz-bk-cta" href={aviaLink} target="_blank" rel="noopener noreferrer sponsored">{l(`${dates} için uçuşları canlı ara`, `Search live flights for ${dates}`, `Flüge für ${dates} live suchen`, `Buscar vuelos para ${dates}`, `Искать рейсы на ${dates}`, `Buscar voos para ${dates}`)} <AdTag /></a>
             </>
           )}
-          <Picks label={l('Diğer sitelerde karşılaştır:', 'Compare on other sites:', 'Woanders vergleichen:', 'Comparar en otros sitios:', 'Сравнить:')} items={flightPicks} k={`f${code}${trip.d1}${trip.d2}`} />
+          <Picks label={l('Diğer sitelerde karşılaştır:', 'Compare on other sites:', 'Woanders vergleichen:', 'Comparar en otros sitios:', 'Сравнить:', 'Comparar em outros sites:')} items={flightPicks} k={`f${code}${trip.d1}${trip.d2}`} />
         </Sec>
       )}
 
-      <Sec id="bk-hotel" icon="bed" title={l('Nerede kalınır?', 'Where to stay', 'Wo übernachten?', 'Dónde alojarse', 'Где остановиться')} note={l(`${nights} gece · ${trip.n} kişi. Fiyatlar seçtiğin tarihlerle ortak sitede açılır.`, `${nights} nights · ${trip.n} guests. Prices open with your dates on the partner site.`, `${nights} Nächte · ${trip.n} Personen. Preise mit deinen Daten beim Partner.`, `${nights} noches · ${trip.n} personas. Precios con tus fechas en el sitio del socio.`, `${nights} ноч. · ${trip.n} гост. Цены на ваши даты на сайте партнёра.`)}>
-        <div className="vz-bk-chips" role="tablist" aria-label={l('Bölge', 'Area', 'Gegend', 'Zona', 'Район')}>
+      <Sec id="bk-hotel" icon="bed" title={l('Nerede kalınır?', 'Where to stay', 'Wo übernachten?', 'Dónde alojarse', 'Где остановиться', 'Onde ficar')} note={l(`${nights} gece · ${trip.n} kişi. Fiyatlar seçtiğin tarihlerle ortak sitede açılır.`, `${nights} nights · ${trip.n} guests. Prices open with your dates on the partner site.`, `${nights} Nächte · ${trip.n} Personen. Preise mit deinen Daten beim Partner.`, `${nights} noches · ${trip.n} personas. Precios con tus fechas en el sitio del socio.`, `${nights} ноч. · ${trip.n} гост. Цены на ваши даты на сайте партнёра.`, `${nights} noites · ${trip.n} pessoas. Preços com as suas datas no site do parceiro.`)}>
+        <div className="vz-bk-chips" role="tablist" aria-label={l('Bölge', 'Area', 'Gegend', 'Zona', 'Район', 'Região')}>
           {hotelArea && !areas.some((a) => a.en === hotelArea) && <button type="button" role="tab" aria-selected className="on">{hotelArea}</button>}
           {areas.map((a) => (
             <button key={a.en} type="button" role="tab" aria-selected={(hotelArea || areas[0]?.en) === a.en} className={(hotelArea || areas[0]?.en) === a.en ? 'on' : ''} onClick={() => setHotelArea(a.en)}>{a.name}</button>
@@ -652,7 +652,7 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
             }}
           >
             <Icon name="cal" size={16} duo={false} />
-            {l('Tarihin esnek mi? Uçuşun en ucuz olduğu günleri seç, otel o tarihlerle açılsın', 'Flexible dates? Pick the cheapest flight days and hotels will open with them', 'Flexibel? Wähle die günstigsten Flugtage, Hotels öffnen mit diesen Daten', '¿Fechas flexibles? Elige los días de vuelo más baratos y los hoteles se abrirán con ellas', 'Гибкие даты? Выберите самые дешёвые дни перелёта — отели откроются на них')}
+            {l('Tarihin esnek mi? Uçuşun en ucuz olduğu günleri seç, otel o tarihlerle açılsın', 'Flexible dates? Pick the cheapest flight days and hotels will open with them', 'Flexibel? Wähle die günstigsten Flugtage, Hotels öffnen mit diesen Daten', '¿Fechas flexibles? Elige los días de vuelo más baratos y los hoteles se abrirán con ellas', 'Гибкие даты? Выберите самые дешёвые дни перелёта — отели откроются на них', 'Datas flexíveis? Escolha os dias de voo mais baratos e os hotéis vão abrir com elas')}
           </button>
         )}
         {!hotelLive ? (
@@ -661,82 +661,82 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
               {(['booking', 'agoda', 'expedia', 'hotelscom'] as const).map((id) => (
                 <a key={id} className="vz-hq-card" href={stay22(id, hq((hotelArea || areas[0]?.en || cityEn)))} target="_blank" rel="noopener noreferrer sponsored">
                   <img src={tpLogo(id)} alt="" width={28} height={28} loading="lazy" />
-                  <span><b>{({ booking: 'Booking.com', agoda: 'Agoda', expedia: 'Expedia', hotelscom: 'Hotels.com' } as const)[id]}</b><small>{(areas.find((x) => x.en === (hotelArea || areas[0]?.en))?.name || hotelArea || cityEn)} · {dates} · {trip.n} {l('kişi', 'guests', 'Pers.', 'pers.', 'чел.')}</small></span>
-                  <em>{l('Fiyatları gör', 'See prices', 'Preise ansehen', 'Ver precios', 'Цены')} ›</em>
+                  <span><b>{({ booking: 'Booking.com', agoda: 'Agoda', expedia: 'Expedia', hotelscom: 'Hotels.com' } as const)[id]}</b><small>{(areas.find((x) => x.en === (hotelArea || areas[0]?.en))?.name || hotelArea || cityEn)} · {dates} · {trip.n} {l('kişi', 'guests', 'Pers.', 'pers.', 'чел.', 'pess.')}</small></span>
+                  <em>{l('Fiyatları gör', 'See prices', 'Preise ansehen', 'Ver precios', 'Цены', 'Ver preços')} ›</em>
                 </a>
               ))}
             </div>
-            <button type="button" className="vz-bk-cta vz-hq-live" onClick={() => setHotelLive(true)}><Icon name="map" size={16} duo={false} />{l('Haritada otelleri ve canlı fiyatları göster', 'Show hotels and live prices on the map', 'Hotels und Live-Preise auf der Karte', 'Ver hoteles y precios en el mapa', 'Отели и цены на карте')}</button>
+            <button type="button" className="vz-bk-cta vz-hq-live" onClick={() => setHotelLive(true)}><Icon name="map" size={16} duo={false} />{l('Haritada otelleri ve canlı fiyatları göster', 'Show hotels and live prices on the map', 'Hotels und Live-Preise auf der Karte', 'Ver hoteles y precios en el mapa', 'Отели и цены на карте', 'Ver hotéis e preços no mapa')}</button>
           </>
         ) : (
           <>
-        <div className="vz-bk-seg" role="group" aria-label={l('Görünüm', 'View', 'Ansicht', 'Vista', 'Вид')}>
-          <button type="button" aria-pressed={hotelView === 'listview'} className={hotelView === 'listview' ? 'on' : ''} onClick={() => setHotelView('listview')}><Icon name="doc" size={16} duo={false} />{l('Liste', 'List', 'Liste', 'Lista', 'Список')}</button>
-          <button type="button" aria-pressed={hotelView === 'map'} className={hotelView === 'map' ? 'on' : ''} onClick={() => setHotelView('map')}><Icon name="map" size={16} duo={false} />{l('Harita', 'Map', 'Karte', 'Mapa', 'Карта')}</button>
+        <div className="vz-bk-seg" role="group" aria-label={l('Görünüm', 'View', 'Ansicht', 'Vista', 'Вид', 'Visualização')}>
+          <button type="button" aria-pressed={hotelView === 'listview'} className={hotelView === 'listview' ? 'on' : ''} onClick={() => setHotelView('listview')}><Icon name="doc" size={16} duo={false} />{l('Liste', 'List', 'Liste', 'Lista', 'Список', 'Lista')}</button>
+          <button type="button" aria-pressed={hotelView === 'map'} className={hotelView === 'map' ? 'on' : ''} onClick={() => setHotelView('map')}><Icon name="map" size={16} duo={false} />{l('Harita', 'Map', 'Karte', 'Mapa', 'Карта', 'Mapa')}</button>
         </div>
         <div className="vz-bk-filters">
-          <div className="vz-bk-chips sm" role="group" aria-label={l('Hızlı seçim', 'Quick picks', 'Schnellauswahl', 'Selección rápida', 'Быстрый выбор')}>
+          <div className="vz-bk-chips sm" role="group" aria-label={l('Hızlı seçim', 'Quick picks', 'Schnellauswahl', 'Selección rápida', 'Быстрый выбор', 'Seleção rápida')}>
             {([
-              ['all', l('Tümü', 'All', 'Alle', 'Todos', 'Все')],
-              ['budget', l(`Ekonomik (gecelik ${budgetMax.toLocaleString('tr-TR')} ₺ altı)`, `Budget (under ${budgetMax} €/night)`, `Günstig (unter ${budgetMax} €/Nacht)`, `Económico (menos de ${budgetMax} €/noche)`, `Эконом (до ${budgetMax} $/ночь)`)],
-              ['rated', l('Misafir puanı 8+', 'Guest rating 8+', 'Gästebewertung 8+', 'Nota 8+', 'Оценка 8+')],
-              ['stars', l('4–5 yıldız', '4–5 stars', '4–5 Sterne', '4–5 estrellas', '4–5 звёзд')]
+              ['all', l('Tümü', 'All', 'Alle', 'Todos', 'Все', 'Todos')],
+              ['budget', l(`Ekonomik (gecelik ${budgetMax.toLocaleString('tr-TR')} ₺ altı)`, `Budget (under ${budgetMax} €/night)`, `Günstig (unter ${budgetMax} €/Nacht)`, `Económico (menos de ${budgetMax} €/noche)`, `Эконом (до ${budgetMax} $/ночь)`, `Econômico (menos de ${budgetMax} €/noite)`)],
+              ['rated', l('Misafir puanı 8+', 'Guest rating 8+', 'Gästebewertung 8+', 'Nota 8+', 'Оценка 8+', 'Nota 8+')],
+              ['stars', l('4–5 yıldız', '4–5 stars', '4–5 Sterne', '4–5 estrellas', '4–5 звёзд', '4–5 estrelas')]
             ] as const).map(([k, t]) => (
               <button key={k} type="button" aria-pressed={hotelPreset === k} className={hotelPreset === k ? 'on' : ''} onClick={() => setHotelPreset(k)}>{t}</button>
             ))}
           </div>
           <label className="vz-bk-toggle">
             <input type="checkbox" checked={priceTotal} onChange={(e) => setPriceTotal(e.target.checked)} />
-            <span>{l(`Toplam fiyatı göster (${nights} gece, vergiler dahil)`, `Show total price (${nights} nights, taxes incl.)`, `Gesamtpreis zeigen (${nights} Nächte, inkl. Steuern)`, `Precio total (${nights} noches, impuestos incl.)`, `Итоговая цена (${nights} ноч., с налогами)`)}</span>
+            <span>{l(`Toplam fiyatı göster (${nights} gece, vergiler dahil)`, `Show total price (${nights} nights, taxes incl.)`, `Gesamtpreis zeigen (${nights} Nächte, inkl. Steuern)`, `Precio total (${nights} noches, impuestos incl.)`, `Итоговая цена (${nights} ноч., с налогами)`, `Preço total (${nights} noites, impostos incl.)`)}</span>
           </label>
         </div>
-        <Stay22Frame view={hotelView} extra={hotelExtra} mode="accommodation" address={`${hotelArea || areas[0]?.en || cityEn}, ${countryEn}`} trip={trip} campaign={`cp_${code.toLowerCase()}_map`} title={l('Otel haritası ve fiyatlar', 'Hotel map and prices', 'Hotelkarte und Preise', 'Mapa de hoteles y precios', 'Карта отелей и цены')} />
+        <Stay22Frame view={hotelView} extra={hotelExtra} mode="accommodation" address={`${hotelArea || areas[0]?.en || cityEn}, ${countryEn}`} trip={trip} campaign={`cp_${code.toLowerCase()}_map`} title={l('Otel haritası ve fiyatlar', 'Hotel map and prices', 'Hotelkarte und Preise', 'Mapa de hoteles y precios', 'Карта отелей и цены', 'Mapa de hotéis e preços')} />
           </>
         )}
         {SANATORIUM_COUNTRIES.has(code) && (
           <div className="vz-hq vz-pc">
-            <PCard id="sanatoriums" name="Sanatoriums" sub={l('Sanatoryum, kaplıca ve tedavi tatilleri', 'Sanatoriums, spa and wellness resorts', 'Sanatorien, Kur- und Wellnessresorts', 'Sanatorios, balnearios y spa', 'Санатории, курорты и лечебный отдых')} href={tpLinks.sanatoriums()} cta={l('Seçenekleri gör', 'See options', 'Angebote ansehen', 'Ver opciones', 'Смотреть')} />
+            <PCard id="sanatoriums" name="Sanatoriums" sub={l('Sanatoryum, kaplıca ve tedavi tatilleri', 'Sanatoriums, spa and wellness resorts', 'Sanatorien, Kur- und Wellnessresorts', 'Sanatorios, balnearios y spa', 'Санатории, курорты и лечебный отдых', 'Sanatórios, estâncias termais e spa')} href={tpLinks.sanatoriums()} cta={l('Seçenekleri gör', 'See options', 'Angebote ansehen', 'Ver opciones', 'Смотреть', 'Ver opções')} />
           </div>
         )}
-        {hotelLive && <Picks label={l('Otel sitesini seç:', 'Choose a hotel site:', 'Hotelseite wählen:', 'Elige un sitio:', 'Выберите сайт:')} items={hotelPicks} k={`h${code}${trip.d1}${trip.d2}${trip.n}`} />}
+        {hotelLive && <Picks label={l('Otel sitesini seç:', 'Choose a hotel site:', 'Hotelseite wählen:', 'Elige un sitio:', 'Выберите сайт:', 'Escolha um site:')} items={hotelPicks} k={`h${code}${trip.d1}${trip.d2}${trip.n}`} />}
       </Sec>
 
-      <Sec id="bk-tours" code={code} icon="ticket" title={l('Turlar ve aktiviteler', 'Tours & activities', 'Touren & Aktivitäten', 'Tours y actividades', 'Экскурсии и развлечения')}>
-        <div className="vz-bk-chips" role="tablist" aria-label={l('Yer', 'Place', 'Ort', 'Lugar', 'Место')}>
+      <Sec id="bk-tours" code={code} icon="ticket" title={l('Turlar ve aktiviteler', 'Tours & activities', 'Touren & Aktivitäten', 'Tours y actividades', 'Экскурсии и развлечения', 'Passeios e atividades')}>
+        <div className="vz-bk-chips" role="tablist" aria-label={l('Yer', 'Place', 'Ort', 'Lugar', 'Место', 'Local')}>
           {[...(tourArea && tourArea !== tCity ? [tourArea] : []), tCity, ...sights].filter((x, i, a) => a.indexOf(x) === i).map((s) => (
             <button key={s} type="button" role="tab" aria-selected={(tourArea || tCity) === s} className={(tourArea || tCity) === s ? 'on' : ''} onClick={() => setTourArea(s)}>{s === cityEn ? (GEO_DATA[code]?.capital ? capitalName(code, language, GEO_DATA[code].capital) : s) : s}</button>
           ))}
         </div>
         <PlaceQ code={code} id={`vz-tq-${code}`} onPick={setTourArea} />
-        <div className="vz-bk-chips vz-bk-kinds" role="tablist" aria-label={l('Tur türü', 'Tour type', 'Tourart', 'Tipo de tour', 'Тип экскурсии')}>
-          {([['', l('Hepsi', 'All', 'Alle', 'Todo', 'Все')], ['cruise', l('🚢 Tekne ve gemi turları', '🚢 Boat & cruises', '🚢 Boote & Kreuzfahrten', '🚢 Barcos y cruceros', '🚢 Круизы и лодки')], ['bike', l('🚲 Bisiklet turları', '🚲 Bike tours', '🚲 Radtouren', '🚲 Tours en bici', '🚲 Велотуры')], ['tickets', l('🎟️ Müze ve bilet', '🎟️ Museums & tickets', '🎟️ Museen & Tickets', '🎟️ Museos y entradas', '🎟️ Музеи и билеты')]] as const).map(([k, t]) => (
+        <div className="vz-bk-chips vz-bk-kinds" role="tablist" aria-label={l('Tur türü', 'Tour type', 'Tourart', 'Tipo de tour', 'Тип экскурсии', 'Tipo de passeio')}>
+          {([['', l('Hepsi', 'All', 'Alle', 'Todo', 'Все', 'Tudo')], ['cruise', l('🚢 Tekne ve gemi turları', '🚢 Boat & cruises', '🚢 Boote & Kreuzfahrten', '🚢 Barcos y cruceros', '🚢 Круизы и лодки', '🚢 Barcos e cruzeiros')], ['bike', l('🚲 Bisiklet turları', '🚲 Bike tours', '🚲 Radtouren', '🚲 Tours en bici', '🚲 Велотуры', '🚲 Passeios de bike')], ['tickets', l('🎟️ Müze ve bilet', '🎟️ Museums & tickets', '🎟️ Museen & Tickets', '🎟️ Museos y entradas', '🎟️ Музеи и билеты', '🎟️ Museus e ingressos')]] as const).map(([k, t]) => (
             <button key={k || 'all'} type="button" role="tab" aria-selected={tourKind === k} className={tourKind === k ? 'on' : ''} onClick={() => setTourKind(k)}>{t}</button>
           ))}
         </div>
-        <TourShowcase q={tourArea || tCity} kind={tourKind} place={countryEn} country={countryEn} money={(v: number, c: string) => money(v * getCrossRate(c, cur))} fallback={tourKind ? <p className="vz-bk-note">{l(`${tourArea || tCity} için bu türde tur bulamadık.`, `No tours of this type found for ${tourArea || tCity}.`, `Keine Touren dieser Art für ${tourArea || tCity}.`, `No hay tours de este tipo en ${tourArea || tCity}.`, `Нет экскурсий этого типа: ${tourArea || tCity}.`)} <button type="button" className="vz-linkbtn" onClick={() => setTourKind('')}>{l('Tüm turları göster', 'Show all tours', 'Alle Touren', 'Ver todos', 'Все экскурсии')}</button></p> : <Stay22Frame mode="experience" address={`${tourArea || tCity}, ${countryEn}`} trip={trip} campaign={`cp_${code.toLowerCase()}_exp`} title={l('Turlar, biletler ve fiyatlar', 'Tours, tickets and prices', 'Touren, Tickets und Preise', 'Tours, entradas y precios', 'Экскурсии, билеты и цены')} />} />
+        <TourShowcase q={tourArea || tCity} kind={tourKind} place={countryEn} country={countryEn} money={(v: number, c: string) => money(v * getCrossRate(c, cur))} fallback={tourKind ? <p className="vz-bk-note">{l(`${tourArea || tCity} için bu türde tur bulamadık.`, `No tours of this type found for ${tourArea || tCity}.`, `Keine Touren dieser Art für ${tourArea || tCity}.`, `No hay tours de este tipo en ${tourArea || tCity}.`, `Нет экскурсий этого типа: ${tourArea || tCity}.`, `Não há passeios desse tipo em ${tourArea || tCity}.`)} <button type="button" className="vz-linkbtn" onClick={() => setTourKind('')}>{l('Tüm turları göster', 'Show all tours', 'Alle Touren', 'Ver todos', 'Все экскурсии', 'Ver todos')}</button></p> : <Stay22Frame mode="experience" address={`${tourArea || tCity}, ${countryEn}`} trip={trip} campaign={`cp_${code.toLowerCase()}_exp`} title={l('Turlar, biletler ve fiyatlar', 'Tours, tickets and prices', 'Touren, Tickets und Preise', 'Tours, entradas y precios', 'Экскурсии, билеты и цены', 'Passeios, ingressos e preços')} />} />
         {pkg && (
           <div className="vz-bk-pkg">
-            <b>{l('Hazır paket turlar', 'Package tours', 'Pauschalrundreisen', 'Circuitos', 'Пакетные туры')} · {routeName(pkg.route, language)}</b>
+            <b>{l('Hazır paket turlar', 'Package tours', 'Pauschalrundreisen', 'Circuitos', 'Пакетные туры', 'Pacotes de viagem')} · {routeName(pkg.route, language)}</b>
             <LiveTours pkg={pkg.id} />
             {pkgFl && (
               <a className="vz-pkg-fl" href={aviaLink} target="_blank" rel="noopener noreferrer sponsored">
                 <Icon name="plane" size={16} duo={false} />
-                <span>{l(`Aynı tarihlerde uçak: ${fromIata} → ${toIata}, ${dates}`, `Flights for these dates: ${fromIata} → ${toIata}, ${dates}`, `Flüge zu diesen Daten: ${fromIata} → ${toIata}, ${dates}`, `Vuelos en estas fechas: ${fromIata} → ${toIata}, ${dates}`, `Перелёт на эти даты: ${fromIata} → ${toIata}, ${dates}`)}</span>
+                <span>{l(`Aynı tarihlerde uçak: ${fromIata} → ${toIata}, ${dates}`, `Flights for these dates: ${fromIata} → ${toIata}, ${dates}`, `Flüge zu diesen Daten: ${fromIata} → ${toIata}, ${dates}`, `Vuelos en estas fechas: ${fromIata} → ${toIata}, ${dates}`, `Перелёт на эти даты: ${fromIata} → ${toIata}, ${dates}`, `Voos nessas datas: ${fromIata} → ${toIata}, ${dates}`)}</span>
                 <b>~{money(pkgFl.price, fl!.cur)}</b>
-                <small>{l('kişi başı · Aviasales', 'per person · Aviasales', 'pro Person · Aviasales', 'por persona · Aviasales', 'на человека · Aviasales')} ›</small>
+                <small>{l('kişi başı · Aviasales', 'per person · Aviasales', 'pro Person · Aviasales', 'por persona · Aviasales', 'на человека · Aviasales', 'por pessoa · Aviasales')} ›</small>
               </a>
             )}
           </div>
         )}
         {FEVER_COUNTRIES.has(code) && (
           <div className="vz-hq vz-pc">
-            <PCard id="feverup" name="Fever" sub={l(`${getCountryName(code, language)}: konser, Candlelight, sergi ve etkinlik biletleri`, `${getCountryName(code, 'en')}: concerts, Candlelight, exhibitions and events`, `${getCountryName(code, language)}: Konzerte, Candlelight, Ausstellungen, Events`, `${getCountryName(code, language)}: conciertos, Candlelight, exposiciones y eventos`, `${getCountryName(code, language)}: концерты, Candlelight, выставки и события`)} href={tpLinks.feverup()} cta={l('Etkinlikleri gör', 'See events', 'Events ansehen', 'Ver eventos', 'События')} />
+            <PCard id="feverup" name="Fever" sub={l(`${getCountryName(code, language)}: konser, Candlelight, sergi ve etkinlik biletleri`, `${getCountryName(code, 'en')}: concerts, Candlelight, exhibitions and events`, `${getCountryName(code, language)}: Konzerte, Candlelight, Ausstellungen, Events`, `${getCountryName(code, language)}: conciertos, Candlelight, exposiciones y eventos`, `${getCountryName(code, language)}: концерты, Candlelight, выставки и события`, `${getCountryName(code, language)}: shows, Candlelight, exposições e eventos`)} href={tpLinks.feverup()} cta={l('Etkinlikleri gör', 'See events', 'Events ansehen', 'Ver eventos', 'События', 'Ver eventos')} />
           </div>
         )}
-        <Picks label={l('Tur sitesini seç:', 'Choose a tour site:', 'Tourseite wählen:', 'Elige un sitio:', 'Выберите сайт:')} items={tourPicks} k={`t${code}`} />
+        <Picks label={l('Tur sitesini seç:', 'Choose a tour site:', 'Tourseite wählen:', 'Elige un sitio:', 'Выберите сайт:', 'Escolha um site:')} items={tourPicks} k={`t${code}`} />
       </Sec>
 
-      <Sec id="bk-transfer" icon="car" title={l(`Havalimanı transferi${toIata ? ` (${toIata})` : ''}`, `Airport transfer${toIata ? ` (${toIata})` : ''}`, `Flughafentransfer${toIata ? ` (${toIata})` : ''}`, `Traslado al aeropuerto${toIata ? ` (${toIata})` : ''}`, `Трансфер из аэропорта${toIata ? ` (${toIata})` : ''}`)}>
+      <Sec id="bk-transfer" icon="car" title={l(`Havalimanı transferi${toIata ? ` (${toIata})` : ''}`, `Airport transfer${toIata ? ` (${toIata})` : ''}`, `Flughafentransfer${toIata ? ` (${toIata})` : ''}`, `Traslado al aeropuerto${toIata ? ` (${toIata})` : ''}`, `Трансфер из аэропорта${toIata ? ` (${toIata})` : ''}`, `Traslado do aeroporto${toIata ? ` (${toIata})` : ''}`)}>
         {shownRoutes.length > 0 && (
           <>
             <b className="vz-bk-op">Kiwitaxi</b>
@@ -745,19 +745,19 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
                 <a key={r.slug} className="vz-qd-fare" href={kiwiRouteUrl(code, r.slug, language)} target="_blank" rel="noopener noreferrer sponsored">
                   <b>~{r.cur === 'EUR' ? eurTo(r.usd) : usdTo(r.usd)}</b>
                   <span>{routeName(r.from, language)} ({r.iata}) → {routeName(r.to, language)}</span>
-                  <small>{l('araç başı, sabit fiyat', 'per car, fixed price', 'pro Auto, Festpreis', 'por coche, precio fijo', 'за авто, фикс. цена')} ›</small>
+                  <small>{l('araç başı, sabit fiyat', 'per car, fixed price', 'pro Auto, Festpreis', 'por coche, precio fijo', 'за авто, фикс. цена', 'por carro, preço fixo')} ›</small>
                 </a>
               ))}
             </div>
           </>
         )}
-        <Picks label={l('Karşılamalı, sabit fiyatlı transfer:', 'Meet & greet, fixed price:', 'Mit Abholung, Festpreis:', 'Con recogida, precio fijo:', 'С встречей, фиксированная цена:')} items={transferPicks} k={`tr${code}`} />
+        <Picks label={l('Karşılamalı, sabit fiyatlı transfer:', 'Meet & greet, fixed price:', 'Mit Abholung, Festpreis:', 'Con recogida, precio fijo:', 'С встречей, фиксированная цена:', 'Com recepção, preço fixo:')} items={transferPicks} k={`tr${code}`} />
       </Sec>
 
       {ground.length > 0 && (
-        <Sec id="bk-ground" code={code} icon="transit" title={l(`${groundCity} çıkışlı tren, otobüs ve feribot`, `Trains, buses & ferries from ${groundCity}`, `Zug, Bus & Fähre ab ${groundCity}`, `Trenes, buses y ferris desde ${groundCity}`, `Поезда, автобусы и паромы из ${groundCity}`)} note={l('"’den" fiyatı, o rotadaki en ucuz seçeneğin (tür fark etmeksizin) kişi başı başlangıç fiyatıdır (12Go). Bir rotaya dokununca tren, otobüs, feribot ve uçağın ayrı fiyatları ve kalkış saatleri açılır.', 'Lowest "from" prices via 12Go, per person. Times and final price open on 12Go with your date.', 'Ab-Preise über 12Go, pro Person. Zeiten und Endpreis mit deinem Datum auf 12Go.', 'Precios "desde" de 12Go, por persona. Horarios y precio final en 12Go con tu fecha.', 'Цены «от» через 12Go, за человека. Расписание и итоговая цена — на 12Go на вашу дату.')}>
-          <div className="vz-bk-chips sm" role="tablist" aria-label={l('Ulaşım türü', 'Transport type', 'Verkehrsmittel', 'Tipo de transporte', 'Тип транспорта')}>
-            <button type="button" role="tab" aria-selected={!gMode} className={!gMode ? 'on' : ''} onClick={() => setGMode('')}>{l('Hepsi', 'All', 'Alle', 'Todos', 'Все')}</button>
+        <Sec id="bk-ground" code={code} icon="transit" title={l(`${groundCity} çıkışlı tren, otobüs ve feribot`, `Trains, buses & ferries from ${groundCity}`, `Zug, Bus & Fähre ab ${groundCity}`, `Trenes, buses y ferris desde ${groundCity}`, `Поезда, автобусы и паромы из ${groundCity}`, `Trens, ônibus e balsas saindo de ${groundCity}`)} note={l('"’den" fiyatı, o rotadaki en ucuz seçeneğin (tür fark etmeksizin) kişi başı başlangıç fiyatıdır (12Go). Bir rotaya dokununca tren, otobüs, feribot ve uçağın ayrı fiyatları ve kalkış saatleri açılır.', 'Lowest "from" prices via 12Go, per person. Times and final price open on 12Go with your date.', 'Ab-Preise über 12Go, pro Person. Zeiten und Endpreis mit deinem Datum auf 12Go.', 'Precios "desde" de 12Go, por persona. Horarios y precio final en 12Go con tu fecha.', 'Цены «от» через 12Go, за человека. Расписание и итоговая цена — на 12Go на вашу дату.', 'Preços "a partir de" da 12Go, por pessoa. Horários e preço final na 12Go com a sua data.')}>
+          <div className="vz-bk-chips sm" role="tablist" aria-label={l('Ulaşım türü', 'Transport type', 'Verkehrsmittel', 'Tipo de transporte', 'Тип транспорта', 'Tipo de transporte')}>
+            <button type="button" role="tab" aria-selected={!gMode} className={!gMode ? 'on' : ''} onClick={() => setGMode('')}>{l('Hepsi', 'All', 'Alle', 'Todos', 'Все', 'Todos')}</button>
             {gModesHere.map((m) => (
               <button key={m.k} type="button" role="tab" aria-selected={gMode === m.k} className={gMode === m.k ? 'on' : ''} onClick={() => setGMode(m.k)}>
                 <ModeBadge k={m.k} /> {m.t}
@@ -765,18 +765,18 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
             ))}
           </div>
           <form className="vz-bk-cityq vz-gr-q" onSubmit={(e) => { e.preventDefault(); const hit = ground.find((g) => g.to.toLowerCase() === gTo.trim().toLowerCase()); const to = hit?.slug || gSlug(gTo); if (to) pickGround({ to: hit?.to || gTo.trim(), slug: to, from: ground[0]?.from || gSlug(groundCity) }); }}>
-            <input list={`vz-gr-${code}`} value={gTo} onChange={(e) => setGTo(e.target.value)} placeholder={l(`${groundCity} → nereye? (ör. Krabi)`, `${groundCity} → where to? (e.g. Krabi)`, `${groundCity} → wohin? (z. B. Krabi)`, `${groundCity} → ¿a dónde? (p. ej. Krabi)`, `${groundCity} → куда? (напр. Krabi)`)} aria-label={l('Varış yeri', 'Destination', 'Ziel', 'Destino', 'Куда')} />
+            <input list={`vz-gr-${code}`} value={gTo} onChange={(e) => setGTo(e.target.value)} placeholder={l(`${groundCity} → nereye? (ör. Krabi)`, `${groundCity} → where to? (e.g. Krabi)`, `${groundCity} → wohin? (z. B. Krabi)`, `${groundCity} → ¿a dónde? (p. ej. Krabi)`, `${groundCity} → куда? (напр. Krabi)`, `${groundCity} → para onde? (ex.: Krabi)`)} aria-label={l('Varış yeri', 'Destination', 'Ziel', 'Destino', 'Куда', 'Destino')} />
             <datalist id={`vz-gr-${code}`}>{gSuggest.map((c) => <option key={c} value={c} />)}</datalist>
-            <button type="submit">{gMode ? l(`${GMODES.find((m) => m.k === gMode)?.t} ara`, `Find ${GMODES.find((m) => m.k === gMode)?.t}`, `${GMODES.find((m) => m.k === gMode)?.t} suchen`, `Buscar ${GMODES.find((m) => m.k === gMode)?.t}`, `Найти: ${GMODES.find((m) => m.k === gMode)?.t}`) : l('Sefer ara', 'Find trips', 'Suchen', 'Buscar', 'Найти')}</button>
+            <button type="submit">{gMode ? l(`${GMODES.find((m) => m.k === gMode)?.t} ara`, `Find ${GMODES.find((m) => m.k === gMode)?.t}`, `${GMODES.find((m) => m.k === gMode)?.t} suchen`, `Buscar ${GMODES.find((m) => m.k === gMode)?.t}`, `Найти: ${GMODES.find((m) => m.k === gMode)?.t}`, `Buscar ${GMODES.find((m) => m.k === gMode)?.t}`) : l('Sefer ara', 'Find trips', 'Suchen', 'Buscar', 'Найти', 'Buscar')}</button>
           </form>
-          <b className="vz-bk-op">{l('Popüler rotalar · 12Go', 'Popular routes · 12Go', 'Beliebte Strecken · 12Go', 'Rutas populares · 12Go', 'Популярные маршруты · 12Go')}</b>
+          <b className="vz-bk-op">{l('Popüler rotalar · 12Go', 'Popular routes · 12Go', 'Beliebte Strecken · 12Go', 'Rutas populares · 12Go', 'Популярные маршруты · 12Go', 'Rotas populares · 12Go')}</b>
           <div className="vz-bk-fares">
             {gShown.map((g) => (
               <button key={g.slug} type="button" className={`vz-qd-fare${gSel?.slug === g.slug ? ' best' : ''}`} aria-expanded={gSel?.slug === g.slug} onClick={() => pickGround(g)}>
                 {gMode ? (
-                  <b className="vz-gr-see">{l(`${GMODES.find((m) => m.k === gMode)?.t} saat ve fiyatları`, `${GMODES.find((m) => m.k === gMode)?.t} times & prices`, `${GMODES.find((m) => m.k === gMode)?.t}: Zeiten & Preise`, `${GMODES.find((m) => m.k === gMode)?.t}: horarios y precios`, `${GMODES.find((m) => m.k === gMode)?.t}: расписание и цены`)} ›</b>
+                  <b className="vz-gr-see">{l(`${GMODES.find((m) => m.k === gMode)?.t} saat ve fiyatları`, `${GMODES.find((m) => m.k === gMode)?.t} times & prices`, `${GMODES.find((m) => m.k === gMode)?.t}: Zeiten & Preise`, `${GMODES.find((m) => m.k === gMode)?.t}: horarios y precios`, `${GMODES.find((m) => m.k === gMode)?.t}: расписание и цены`, `${GMODES.find((m) => m.k === gMode)?.t}: horários e preços`)} ›</b>
                 ) : (
-                  <b>{l('', '', 'ab ', 'desde ', 'от ')}~{usdTo(g.usd)}{language === 'tr' ? '’den' : ''}</b>
+                  <b>{l('', '', 'ab ', 'desde ', 'от ', 'a partir de ')}~{usdTo(g.usd)}{language === 'tr' ? '’den' : ''}</b>
                 )}
                 <span>{groundCity} → {g.to}</span>
                 <small className="vz-gr-modes">{g.modes.map((x) => modeOf(x)).filter((m): m is NonNullable<typeof m> => !!m && (!gMode || m.k === gMode)).map((m) => <ModeBadge key={m.k} k={m.k} title={m.t} />)}</small>
@@ -785,10 +785,10 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
           </div>
           {gSel && (
             <div id="vz-gr-tt" className="vz-gr-tt">
-              <b className="vz-bk-op">{groundCity} → {gSel.to} · {l('sefer saatleri ve fiyatlar', 'timetable & prices', 'Fahrplan & Preise', 'horarios y precios', 'расписание и цены')}</b>
-              {tt === null && <p className="vz-bk-note">{l('Seferler yükleniyor…', 'Loading trips…', 'Lade Verbindungen…', 'Cargando…', 'Загрузка…')}</p>}
+              <b className="vz-bk-op">{groundCity} → {gSel.to} · {l('sefer saatleri ve fiyatlar', 'timetable & prices', 'Fahrplan & Preise', 'horarios y precios', 'расписание и цены', 'horários e preços')}</b>
+              {tt === null && <p className="vz-bk-note">{l('Seferler yükleniyor…', 'Loading trips…', 'Lade Verbindungen…', 'Cargando…', 'Загрузка…', 'Carregando…')}</p>}
               {tt && tt.length === 0 && (
-                <a className="vz-bk-cta" href={gLink(gSel.from, gSel.slug)} target="_blank" rel="noopener noreferrer sponsored">{l(`${gSel.to} seferlerini 12Go'da gör`, `See trips to ${gSel.to} on 12Go`, `Verbindungen nach ${gSel.to} auf 12Go`, `Ver viajes a ${gSel.to} en 12Go`, `Рейсы в ${gSel.to} на 12Go`)} <AdTag /></a>
+                <a className="vz-bk-cta" href={gLink(gSel.from, gSel.slug)} target="_blank" rel="noopener noreferrer sponsored">{l(`${gSel.to} seferlerini 12Go'da gör`, `See trips to ${gSel.to} on 12Go`, `Verbindungen nach ${gSel.to} auf 12Go`, `Ver viajes a ${gSel.to} en 12Go`, `Рейсы в ${gSel.to} на 12Go`, `Ver viagens para ${gSel.to} na 12Go`)} <AdTag /></a>
               )}
               {tt && tt.filter((r) => !gMode || r.mode === gMode).map((r) => {
                 const m = GMODES.find((x) => x.k === r.mode);
@@ -799,30 +799,30 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
                       <b>{m?.t || r.title}</b>
                       {r.min > 0 && <em>~{usdTo(r.min)}{r.max > r.min ? ` – ${usdTo(r.max)}` : ''}</em>}
                     </span>
-                    {r.dur && <small>{l('Süre', 'Duration', 'Dauer', 'Duración', 'В пути')}: {r.dur.replace(/(\d+)h/g, l('$1 sa', '$1h', '$1 Std.', '$1 h', '$1 ч')).replace(/(\d+)m/g, l('$1 dk', '$1m', '$1 Min.', '$1 min', '$1 мин'))}</small>}
+                    {r.dur && <small>{l('Süre', 'Duration', 'Dauer', 'Duración', 'В пути', 'Duração')}: {r.dur.replace(/(\d+)h/g, l('$1 sa', '$1h', '$1 Std.', '$1 h', '$1 ч', '$1 h')).replace(/(\d+)m/g, l('$1 dk', '$1m', '$1 Min.', '$1 min', '$1 мин', '$1 min'))}</small>}
                     {r.classes.slice(0, 3).map((c) => (
                       <small key={c.n} className="vz-gr-cls">{c.n}{c.t.length > 0 && <>: {c.t.slice(0, 6).join(', ')}{c.t.length > 6 ? ` +${c.t.length - 6}` : ''}</>}</small>
                     ))}
-                    <span className="vz-gr-go">{l('Bilet al', 'Book', 'Buchen', 'Reservar', 'Купить')} ›</span>
+                    <span className="vz-gr-go">{l('Bilet al', 'Book', 'Buchen', 'Reservar', 'Купить', 'Reservar')} ›</span>
                   </a>
                 );
               })}
-              {tt && tt.length > 0 && <small className="vz-bk-checked">{l('Fiyatlar kişi başı (özel araç/taksi araç başı); 12Go sefer tablosu, günlük yenilenir.', 'Prices per person (private car/taxi per vehicle); 12Go timetable, refreshed daily.', 'Preise pro Person (Privatwagen/Taxi pro Fahrzeug); 12Go-Fahrplan, täglich aktualisiert.', 'Precio por persona (coche privado/taxi por vehículo); horario de 12Go, diario.', 'Цена за человека (такси/частный трансфер — за машину); расписание 12Go, обновляется ежедневно.')}</small>}
+              {tt && tt.length > 0 && <small className="vz-bk-checked">{l('Fiyatlar kişi başı (özel araç/taksi araç başı); 12Go sefer tablosu, günlük yenilenir.', 'Prices per person (private car/taxi per vehicle); 12Go timetable, refreshed daily.', 'Preise pro Person (Privatwagen/Taxi pro Fahrzeug); 12Go-Fahrplan, täglich aktualisiert.', 'Precio por persona (coche privado/taxi por vehículo); horario de 12Go, diario.', 'Цена за человека (такси/частный трансфер — за машину); расписание 12Go, обновляется ежедневно.', 'Preço por pessoa (carro particular/táxi por veículo); horário da 12Go, diário.')}</small>}
             </div>
           )}
         </Sec>
       )}
 
       {hasSea && (
-        <Sec id="bk-sea" code={code} icon="transit" title={ITALIARAIL_COUNTRIES.has(code) ? l(`${getCountryName(code, language)}: tren ve feribot biletleri`, `${getCountryName(code, 'en')}: train & ferry tickets`, `${getCountryName(code, language)}: Zug- und Fährtickets`, `${getCountryName(code, language)}: billetes de tren y ferry`, `${getCountryName(code, language)}: билеты на поезд и паром`) : l(`${getCountryName(code, language)}: feribot biletleri`, `${getCountryName(code, 'en')}: ferry tickets`, `${getCountryName(code, language)}: Fährtickets`, `${getCountryName(code, language)}: billetes de ferry`, `${getCountryName(code, language)}: билеты на паром`)}>
+        <Sec id="bk-sea" code={code} icon="transit" title={ITALIARAIL_COUNTRIES.has(code) ? l(`${getCountryName(code, language)}: tren ve feribot biletleri`, `${getCountryName(code, 'en')}: train & ferry tickets`, `${getCountryName(code, language)}: Zug- und Fährtickets`, `${getCountryName(code, language)}: billetes de tren y ferry`, `${getCountryName(code, language)}: билеты на поезд и паром`, `${getCountryName(code, language)}: passagens de trem e balsa`) : l(`${getCountryName(code, language)}: feribot biletleri`, `${getCountryName(code, 'en')}: ferry tickets`, `${getCountryName(code, language)}: Fährtickets`, `${getCountryName(code, language)}: billetes de ferry`, `${getCountryName(code, language)}: билеты на паром`, `${getCountryName(code, language)}: passagens de balsa`)}>
           <div className="vz-hq vz-pc">
-            {ITALIARAIL_COUNTRIES.has(code) && <PCard id="italiarail" name="Italiarail" sub={l('Frecciarossa, Italo ve bölgesel trenler; şehirler arası tren bileti', 'Frecciarossa, Italo and regional trains; intercity tickets', 'Frecciarossa, Italo und Regionalzüge', 'Frecciarossa, Italo y trenes regionales', 'Frecciarossa, Italo и региональные поезда')} href={tpLinks.italiarail()} cta={l('Tren bileti ara', 'Find trains', 'Züge suchen', 'Buscar trenes', 'Найти поезд')} />}
-            {FERRY_COUNTRIES.has(code) && <PCard id="ferryhopper" name="Ferryhopper" sub={l('Adalara ve komşu ülkelere feribot; tüm firmalar tek yerde', 'Ferries to islands and nearby countries; all operators in one place', 'Fähren zu Inseln und Nachbarländern; alle Reedereien', 'Ferris a islas y países vecinos; todas las navieras', 'Паромы на острова и в соседние страны; все перевозчики')} href={ferryhopperLink(language)} cta={l('Seferleri gör', 'See sailings', 'Fahrten ansehen', 'Ver salidas', 'Рейсы')} />}
+            {ITALIARAIL_COUNTRIES.has(code) && <PCard id="italiarail" name="Italiarail" sub={l('Frecciarossa, Italo ve bölgesel trenler; şehirler arası tren bileti', 'Frecciarossa, Italo and regional trains; intercity tickets', 'Frecciarossa, Italo und Regionalzüge', 'Frecciarossa, Italo y trenes regionales', 'Frecciarossa, Italo и региональные поезда', 'Frecciarossa, Italo e trens regionais')} href={tpLinks.italiarail()} cta={l('Tren bileti ara', 'Find trains', 'Züge suchen', 'Buscar trenes', 'Найти поезд', 'Buscar trens')} />}
+            {FERRY_COUNTRIES.has(code) && <PCard id="ferryhopper" name="Ferryhopper" sub={l('Adalara ve komşu ülkelere feribot; tüm firmalar tek yerde', 'Ferries to islands and nearby countries; all operators in one place', 'Fähren zu Inseln und Nachbarländern; alle Reedereien', 'Ferris a islas y países vecinos; todas las navieras', 'Паромы на острова и в соседние страны; все перевозчики', 'Balsas para ilhas e países vizinhos; todas as companhias')} href={ferryhopperLink(language)} cta={l('Seferleri gör', 'See sailings', 'Fahrten ansehen', 'Ver salidas', 'Рейсы', 'Ver partidas')} />}
           </div>
         </Sec>
       )}
 
-      <Sec id="bk-esim" icon="phone" title={l('İnternet (eSIM)', 'Mobile data (eSIM)', 'Mobile Daten (eSIM)', 'Datos móviles (eSIM)', 'Мобильный интернет (eSIM)')} note={esim.length || flexi.length ? l('Yukarıdaki fiyatlar Airalo, FlexiRoam ve Yesim paketleri, düzenli güncellenir. Nomad ve GigSky paketleri kendi sitelerinde açılır.', 'Prices above are Airalo, FlexiRoam and Yesim plans, updated regularly. Other providers show their plans on their own sites.', 'Preise oben: Airalo-Tarife, täglich aktualisiert. Andere Anbieter zeigen ihre Tarife auf ihrer Seite.', 'Precios de planes Airalo, actualizados a diario. Otros proveedores muestran sus planes en su web.', 'Цены выше — тарифы Airalo, обновляются ежедневно. Тарифы других — на их сайтах.') : undefined}>
+      <Sec id="bk-esim" icon="phone" title={l('İnternet (eSIM)', 'Mobile data (eSIM)', 'Mobile Daten (eSIM)', 'Datos móviles (eSIM)', 'Мобильный интернет (eSIM)', 'Dados móveis (eSIM)')} note={esim.length || flexi.length ? l('Yukarıdaki fiyatlar Airalo, FlexiRoam ve Yesim paketleri, düzenli güncellenir. Nomad ve GigSky paketleri kendi sitelerinde açılır.', 'Prices above are Airalo, FlexiRoam and Yesim plans, updated regularly. Other providers show their plans on their own sites.', 'Preise oben: Airalo-Tarife, täglich aktualisiert. Andere Anbieter zeigen ihre Tarife auf ihrer Seite.', 'Precios de planes Airalo, actualizados a diario. Otros proveedores muestran sus planes en su web.', 'Цены выше — тарифы Airalo, обновляются ежедневно. Тарифы других — на их сайтах.', 'Preços dos planos da Airalo, atualizados diariamente. Outros fornecedores mostram seus planos no próprio site.') : undefined}>
         {!inTR && esim.length > 0 && <b className="vz-bk-op">Airalo</b>}
         {!inTR && esim.length > 0 && (
           <div className="vz-bk-fares">
@@ -831,8 +831,8 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
                 inTR ? 'div' : 'a',
                 { key: p[3], className: `vz-qd-fare${!inTR && p[2] === esimMin ? ' best' : ''}`, ...(inTR ? {} : { href: `https://www.airalo.com/${p[3]}`, target: '_blank', rel: 'noopener noreferrer sponsored' }) },
                 <b>{usdTo(p[2])}</b>,
-                <span>{p[0] ? `${p[0]} GB` : l('Sınırsız', 'Unlimited', 'Unbegrenzt', 'Ilimitado', 'Безлимит')} · {p[1]} {l('gün', 'days', 'Tage', 'días', 'дн.')}</span>,
-                <small>{inTR ? l('Airalo · yurt dışında açılır', 'Airalo', 'Airalo', 'Airalo', 'Airalo') : 'Airalo ›'}</small>
+                <span>{p[0] ? `${p[0]} GB` : l('Sınırsız', 'Unlimited', 'Unbegrenzt', 'Ilimitado', 'Безлимит', 'Ilimitado')} · {p[1]} {l('gün', 'days', 'Tage', 'días', 'дн.', 'dias')}</span>,
+                <small>{inTR ? l('Airalo · yurt dışında açılır', 'Airalo', 'Airalo', 'Airalo', 'Airalo', 'Airalo') : 'Airalo ›'}</small>
               )
             )}
           </div>
@@ -842,9 +842,9 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
           <div className="vz-bk-fares">
             {flexi.map((p) => (
               <a key={p[3]} className={`vz-qd-fare${p[2] === esimMin ? ' best' : ''}`} href={p[3]} target="_blank" rel="noopener noreferrer sponsored">
-                {p[2] === esimMin && <em>{l('En ucuz', 'Cheapest', 'Am günstigsten', 'Más barato', 'Дешевле всего')}</em>}
+                {p[2] === esimMin && <em>{l('En ucuz', 'Cheapest', 'Am günstigsten', 'Más barato', 'Дешевле всего', 'Mais barato')}</em>}
                 <b>{usdTo(p[2])}</b>
-                <span>{p[0]} GB · {p[1]} {l('gün', 'days', 'Tage', 'días', 'дн.')}</span>
+                <span>{p[0]} GB · {p[1]} {l('gün', 'days', 'Tage', 'días', 'дн.', 'dias')}</span>
                 <small>FlexiRoam ›</small>
               </a>
             ))}
@@ -855,39 +855,39 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
           <div className="vz-bk-fares">
             {yesim.p.map((p) => (
               <a key={`y${p[0]}-${p[1]}`} className={`vz-qd-fare${p[2] === esimMin ? ' best' : ''}`} href={`https://yesim.app/country/${yesim.slug}/`} target="_blank" rel="noopener noreferrer sponsored">
-                {p[2] === esimMin && <em>{l('En ucuz', 'Cheapest', 'Am günstigsten', 'Más barato', 'Дешевле всего')}</em>}
+                {p[2] === esimMin && <em>{l('En ucuz', 'Cheapest', 'Am günstigsten', 'Más barato', 'Дешевле всего', 'Mais barato')}</em>}
                 <b>{usdTo(p[2])}</b>
-                <span>{p[0]} GB · {p[1]} {l('gün', 'days', 'Tage', 'días', 'дн.')}</span>
+                <span>{p[0]} GB · {p[1]} {l('gün', 'days', 'Tage', 'días', 'дн.', 'dias')}</span>
                 <small>Yesim ›</small>
               </a>
             ))}
           </div>
         )}
-        <Picks label={l('eSIM firmasını seç:', 'Choose your eSIM:', 'eSIM wählen:', 'Elige tu eSIM:', 'Выберите eSIM:')} items={esimPicks} k={`e${code}`} />
+        <Picks label={l('eSIM firmasını seç:', 'Choose your eSIM:', 'eSIM wählen:', 'Elige tu eSIM:', 'Выберите eSIM:', 'Escolha sua eSIM:')} items={esimPicks} k={`e${code}`} />
       </Sec>
 
       <div className="vz-bk-two">
-        <Sec id="bk-car" icon="car" title={l('Araç ve scooter kiralama', 'Car & scooter rental', 'Auto & Roller mieten', 'Coches y motos', 'Аренда авто и скутеров')}>
+        <Sec id="bk-car" icon="car" title={l('Araç ve scooter kiralama', 'Car & scooter rental', 'Auto & Roller mieten', 'Coches y motos', 'Аренда авто и скутеров', 'Carros e motos')}>
           {hasTwo && (
-            <div className="vz-bk-chips" role="tablist" aria-label={l('Kiralık araç türü', 'Rental type', 'Mietart', 'Tipo de alquiler', 'Тип аренды')}>
-              <button type="button" role="tab" aria-selected={rentTab === 'car'} className={rentTab === 'car' ? 'on' : ''} onClick={() => setRentTab('car')}><ModeBadge k="car" /> {l('Araba', 'Car', 'Auto', 'Coche', 'Авто')}</button>
-              <button type="button" role="tab" aria-selected={rentTab === 'moto'} className={rentTab === 'moto' ? 'on' : ''} onClick={() => setRentTab('moto')}><ModeBadge k="scooter" /> {hasBicycle ? l('Motor · scooter · bisiklet', 'Motorbike · scooter · bicycle', 'Motorrad · Roller · Fahrrad', 'Moto · scooter · bici', 'Мото · скутер · велосипед') : l('Motor / scooter', 'Motorbike / scooter', 'Motorrad / Roller', 'Moto / scooter', 'Мото / скутер')}</button>
+            <div className="vz-bk-chips" role="tablist" aria-label={l('Kiralık araç türü', 'Rental type', 'Mietart', 'Tipo de alquiler', 'Тип аренды', 'Tipo de aluguel')}>
+              <button type="button" role="tab" aria-selected={rentTab === 'car'} className={rentTab === 'car' ? 'on' : ''} onClick={() => setRentTab('car')}><ModeBadge k="car" /> {l('Araba', 'Car', 'Auto', 'Coche', 'Авто', 'Carro')}</button>
+              <button type="button" role="tab" aria-selected={rentTab === 'moto'} className={rentTab === 'moto' ? 'on' : ''} onClick={() => setRentTab('moto')}><ModeBadge k="scooter" /> {hasBicycle ? l('Motor · scooter · bisiklet', 'Motorbike · scooter · bicycle', 'Motorrad · Roller · Fahrrad', 'Moto · scooter · bici', 'Мото · скутер · велосипед', 'Moto · scooter · bicicleta') : l('Motor / scooter', 'Motorbike / scooter', 'Motorrad / Roller', 'Moto / scooter', 'Мото / скутер', 'Moto / scooter')}</button>
             </div>
           )}
           {rentTab === 'car' || !hasTwo ? (
             <>
             <div className="vz-hq vz-pc">
-              <PCard id="discovercars" name="DiscoverCars" sub={l(`${getCountryName(code, language)} · ${dates} · tüm büyük firmalar, ücretsiz iptal`, `${getCountryName(code, 'en')} · ${dates} · all major companies, free cancellation`, `${getCountryName(code, language)} · ${dates} · alle großen Anbieter, kostenlose Stornierung`, `${getCountryName(code, language)} · ${dates} · todas las grandes empresas, cancelación gratuita`, `${getCountryName(code, language)} · ${dates} · все крупные компании, бесплатная отмена`)} href={discovercarsLink()} cta={l('Araçları karşılaştır', 'Compare cars', 'Autos vergleichen', 'Comparar coches', 'Сравнить авто')} />
+              <PCard id="discovercars" name="DiscoverCars" sub={l(`${getCountryName(code, language)} · ${dates} · tüm büyük firmalar, ücretsiz iptal`, `${getCountryName(code, 'en')} · ${dates} · all major companies, free cancellation`, `${getCountryName(code, language)} · ${dates} · alle großen Anbieter, kostenlose Stornierung`, `${getCountryName(code, language)} · ${dates} · todas las grandes empresas, cancelación gratuita`, `${getCountryName(code, language)} · ${dates} · все крупные компании, бесплатная отмена`, `${getCountryName(code, language)} · ${dates} · todas as grandes locadoras, cancelamento grátis`)} href={discovercarsLink()} cta={l('Araçları karşılaştır', 'Compare cars', 'Autos vergleichen', 'Comparar coches', 'Сравнить авто', 'Comparar carros')} />
             </div>
             {city?.car?.usd && (
               <>
-                <b className="vz-bk-op">{city.en} · EconomyBookings · {l('günlük, yaklaşık', 'per day, approx.', 'pro Tag, ca.', 'por día, aprox.', 'в день, ок.')}</b>
+                <b className="vz-bk-op">{city.en} · EconomyBookings · {l('günlük, yaklaşık', 'per day, approx.', 'pro Tag, ca.', 'por día, aprox.', 'в день, ок.', 'por dia, aprox.')}</b>
                 <div className="vz-bk-fares">
                   {(Object.entries(city.car.usd) as [CarClass, number][]).sort((a, b) => a[1] - b[1]).slice(0, 4).map(([k, v], i) => (
                     <a key={k} className={`vz-qd-fare${i === 0 ? ' best' : ''}`} href={carCityUrl(city.car!.path)} target="_blank" rel="noopener noreferrer sponsored">
                       <b>~{usdTo(v)}</b>
                       <span>{carLabel[k]}</span>
-                      <small>{l('Araçları gör', 'See cars', 'Autos ansehen', 'Ver coches', 'Смотреть')} ›</small>
+                      <small>{l('Araçları gör', 'See cars', 'Autos ansehen', 'Ver coches', 'Смотреть', 'Ver carros')} ›</small>
                     </a>
                   ))}
                 </div>
@@ -895,49 +895,49 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
             )}
             {cities.some((c) => c.lr) && (
               <>
-                <b className="vz-bk-op">Localrent · {l('günlük, başlayan fiyat', 'per day, from', 'pro Tag, ab', 'por día, desde', 'в день, от')}</b>
+                <b className="vz-bk-op">Localrent · {l('günlük, başlayan fiyat', 'per day, from', 'pro Tag, ab', 'por día, desde', 'в день, от', 'por dia, a partir de')}</b>
                 <div className="vz-bk-fares">
                   {[...cities.filter((c) => c.lr && c.id === city?.id), ...cities.filter((c) => c.lr && c.id !== city?.id)].map((c) => (
                     <a key={c.id} className={`vz-qd-fare${c.id === city?.id ? ' best' : ''}`} href={`https://localrent.com/en/${c.lr!.path}/`} target="_blank" rel="noopener noreferrer sponsored">
                       <b>{c.lr!.eur ? `~${eurTo(c.lr!.eur)}` : `🚗 ${(language === 'tr' && c.tr) || c.en}`}</b>
-                      <span>{c.lr!.eur ? (language === 'tr' && c.tr) || c.en : l('Yerel kiralama firmaları', 'Local rental companies', 'Lokale Vermieter', 'Empresas locales', 'Местные прокаты')}</span>
-                      <small>{c.lr!.eur ? l('Yerel kiralama firmaları', 'Local rental companies', 'Lokale Vermieter', 'Empresas locales', 'Местные прокаты') : l('Günlük fiyatları gör', 'See daily prices', 'Tagespreise ansehen', 'Ver precios por día', 'Цены за день')} ›</small>
+                      <span>{c.lr!.eur ? (language === 'tr' && c.tr) || c.en : l('Yerel kiralama firmaları', 'Local rental companies', 'Lokale Vermieter', 'Empresas locales', 'Местные прокаты', 'Locadoras locais')}</span>
+                      <small>{c.lr!.eur ? l('Yerel kiralama firmaları', 'Local rental companies', 'Lokale Vermieter', 'Empresas locales', 'Местные прокаты', 'Locadoras locais') : l('Günlük fiyatları gör', 'See daily prices', 'Tagespreise ansehen', 'Ver precios por día', 'Цены за день', 'Ver preços por dia')} ›</small>
                     </a>
                   ))}
                 </div>
               </>
             )}
             {!city?.car && !cities.some((c) => c.lr) && (
-              <p className="vz-bk-note">{l(`${city?.en || cityEn} için kayıtlı araç fiyatımız yok; aşağıdaki sitelerde seçtiğin tarihlerle bak.`, `No saved car prices for ${city?.en || cityEn}; check the sites below with your dates.`, `Keine gespeicherten Preise für ${city?.en || cityEn}.`, `Sin precios guardados para ${city?.en || cityEn}.`, `Нет сохранённых цен для ${city?.en || cityEn}.`)}</p>
+              <p className="vz-bk-note">{l(`${city?.en || cityEn} için kayıtlı araç fiyatımız yok; aşağıdaki sitelerde seçtiğin tarihlerle bak.`, `No saved car prices for ${city?.en || cityEn}; check the sites below with your dates.`, `Keine gespeicherten Preise für ${city?.en || cityEn}.`, `Sin precios guardados para ${city?.en || cityEn}.`, `Нет сохранённых цен для ${city?.en || cityEn}.`, `Sem preços salvos para ${city?.en || cityEn}.`)}</p>
             )}
             {city?.car && !city.car.usd && (
-              <a className="vz-bk-cta" href={carCityUrl(city.car.path)} target="_blank" rel="noopener noreferrer sponsored">{l(`${city.en} araç kiralama fiyatlarını gör`, `See car rental prices in ${city.en}`, `Mietwagenpreise in ${city.en}`, `Precios de alquiler en ${city.en}`, `Цены аренды авто: ${city.en}`)} <AdTag /></a>
+              <a className="vz-bk-cta" href={carCityUrl(city.car.path)} target="_blank" rel="noopener noreferrer sponsored">{l(`${city.en} araç kiralama fiyatlarını gör`, `See car rental prices in ${city.en}`, `Mietwagenpreise in ${city.en}`, `Precios de alquiler en ${city.en}`, `Цены аренды авто: ${city.en}`, `Preços de aluguel em ${city.en}`)} <AdTag /></a>
             )}
             </>
           ) : (
             <>
               {cities.some((c) => c.moto) && (<>
-              <b className="vz-bk-op">Rentalmotorbike · {l('günlük kiralama, başlayan fiyat', 'daily rental, from', 'pro Tag, ab', 'por día, desde', 'в день, от')}</b>
+              <b className="vz-bk-op">Rentalmotorbike · {l('günlük kiralama, başlayan fiyat', 'daily rental, from', 'pro Tag, ab', 'por día, desde', 'в день, от', 'por dia, a partir de')}</b>
               <div className="vz-bk-fares">
                 {[...cities.filter((c) => c.moto && c.id === city?.id), ...cities.filter((c) => c.moto && c.id !== city?.id)].map((c) => (
                   <a key={c.id} className={`vz-qd-fare${c.id === city?.id ? ' best' : ''}`} href={scooterUrl(c.moto!.slug)} target="_blank" rel="noopener noreferrer sponsored">
                     <b>{c.moto!.eur ? `~${eurTo(c.moto!.eur)}` : `🏍️ ${(language === 'tr' && c.tr) || c.en}`}</b>
-                    <span>{c.moto!.eur ? (language === 'tr' && c.tr) || c.en : l('Günlük fiyatları gör', 'See daily prices', 'Tagespreise ansehen', 'Ver precios por día', 'Цены за день')}</span>
-                    <small>{l('Motor ve scooter', 'Bikes & scooters', 'Motorräder & Roller', 'Motos y scooters', 'Мото и скутеры')} ›</small>
+                    <span>{c.moto!.eur ? (language === 'tr' && c.tr) || c.en : l('Günlük fiyatları gör', 'See daily prices', 'Tagespreise ansehen', 'Ver precios por día', 'Цены за день', 'Ver preços por dia')}</span>
+                    <small>{l('Motor ve scooter', 'Bikes & scooters', 'Motorräder & Roller', 'Motos y scooters', 'Мото и скутеры', 'Motos e scooters')} ›</small>
                   </a>
                 ))}
               </div>
               </>)}
               {bbCities.length > 0 && (
                 <>
-                  <b className="vz-bk-op">BikesBooking · {l('scooter ve bisiklet, yerel kiralama firmaları', 'scooters & bicycles from local rental shops', 'Roller & Fahrräder von lokalen Verleihern', 'scooters y bicis de alquileres locales', 'скутеры и велосипеды от местных прокатов')}</b>
+                  <b className="vz-bk-op">BikesBooking · {l('scooter ve bisiklet, yerel kiralama firmaları', 'scooters & bicycles from local rental shops', 'Roller & Fahrräder von lokalen Verleihern', 'scooters y bicis de alquileres locales', 'скутеры и велосипеды от местных прокатов', 'scooters e bicicletas de locadoras locais')}</b>
                   <div className="vz-bk-fares">
                     {[...bbCities.filter((c) => c.id === city?.id), ...bbCities.filter((c) => c.id !== city?.id)].flatMap((c) => {
                       const b = BIKESBOOKING[c.id];
                       const name = (language === 'tr' && c.tr) || c.en;
                       return [
-                        ...(b.s ? [<a key={`${c.id}s`} className={`vz-qd-fare${c.id === city?.id ? ' best' : ''}`} href={bikesBookingUrl(b.en, 'scooter')} target="_blank" rel="noopener noreferrer sponsored"><b>🛵 {name}</b><span>{l('Scooter / motor', 'Scooter / moped', 'Roller', 'Scooter', 'Скутер')}</span><small>{l('Fiyatları gör', 'See prices', 'Preise', 'Ver precios', 'Цены')} ›</small></a>] : []),
-                        ...(b.b ? [<a key={`${c.id}b`} className={`vz-qd-fare${c.id === city?.id ? ' best' : ''}`} href={bikesBookingUrl(b.en, 'bicycle')} target="_blank" rel="noopener noreferrer sponsored"><b>🚲 {name}</b><span>{l('Bisiklet', 'Bicycle', 'Fahrrad', 'Bicicleta', 'Велосипед')}</span><small>{l('Fiyatları gör', 'See prices', 'Preise', 'Ver precios', 'Цены')} ›</small></a>] : [])
+                        ...(b.s ? [<a key={`${c.id}s`} className={`vz-qd-fare${c.id === city?.id ? ' best' : ''}`} href={bikesBookingUrl(b.en, 'scooter')} target="_blank" rel="noopener noreferrer sponsored"><b>🛵 {name}</b><span>{l('Scooter / motor', 'Scooter / moped', 'Roller', 'Scooter', 'Скутер', 'Scooter')}</span><small>{l('Fiyatları gör', 'See prices', 'Preise', 'Ver precios', 'Цены', 'Ver preços')} ›</small></a>] : []),
+                        ...(b.b ? [<a key={`${c.id}b`} className={`vz-qd-fare${c.id === city?.id ? ' best' : ''}`} href={bikesBookingUrl(b.en, 'bicycle')} target="_blank" rel="noopener noreferrer sponsored"><b>🚲 {name}</b><span>{l('Bisiklet', 'Bicycle', 'Fahrrad', 'Bicicleta', 'Велосипед', 'Bicicleta')}</span><small>{l('Fiyatları gör', 'See prices', 'Preise', 'Ver precios', 'Цены', 'Ver preços')} ›</small></a>] : [])
                       ];
                     })}
                   </div>
@@ -945,21 +945,21 @@ export const BookingHub: React.FC<{ code: string; trip: Trip; mustSee?: string[]
               )}
             </>
           )}
-          <small className="vz-bk-checked">{l(`Fiyatlar ${checked} tarihinde ortak sitelerden alındı; kesin fiyat tarihe göre ortak sitede.`, `Prices checked on ${checked}; final price on the partner site.`, `Preise geprüft am ${checked}; Endpreis beim Partner.`, `Precios revisados el ${checked}; precio final en el sitio del socio.`, `Цены проверены ${checked}; итог — на сайте партнёра.`)}</small>
-          <Picks label={l(`${dates}:`, `${dates}:`, `${dates}:`, `${dates}:`, `${dates}:`)} items={carPicks} k={`c${code}${trip.d1}`} />
+          <small className="vz-bk-checked">{l(`Fiyatlar ${checked} tarihinde ortak sitelerden alındı; kesin fiyat tarihe göre ortak sitede.`, `Prices checked on ${checked}; final price on the partner site.`, `Preise geprüft am ${checked}; Endpreis beim Partner.`, `Precios revisados el ${checked}; precio final en el sitio del socio.`, `Цены проверены ${checked}; итог — на сайте партнёра.`, `Preços conferidos em ${checked}; preço final no site do parceiro.`)}</small>
+          <Picks label={l(`${dates}:`, `${dates}:`, `${dates}:`, `${dates}:`, `${dates}:`, `${dates}:`)} items={carPicks} k={`c${code}${trip.d1}`} />
         </Sec>
-        <Sec id="bk-ins" icon="shield" title={l('Seyahat sigortası', 'Travel insurance', 'Reiseversicherung', 'Seguro de viaje', 'Страховка')}>
+        <Sec id="bk-ins" icon="shield" title={l('Seyahat sigortası', 'Travel insurance', 'Reiseversicherung', 'Seguro de viaje', 'Страховка', 'Seguro viagem')}>
           <a className="vz-qd-fare best vz-ins-card" href={tpLinks.safetywing()} target="_blank" rel="noopener noreferrer sponsored">
             <em>SafetyWing Nomad Insurance</em>
             <b>~{usdTo(insUsd)}</b>
-            <span>{l(`${insDays} gün · ${people(trip)} kişi · 10–39 yaş`, `${insDays} days · ${people(trip)} people · age 10–39`, `${insDays} Tage · ${trip.n} Pers. · 10–39 J.`, `${insDays} días · ${trip.n} pers. · 10–39 años`, `${insDays} дн. · ${trip.n} чел. · 10–39 лет`)}</span>
-            <small>{l('Toplam, ABD hariç dünya geneli. Yaş artınca fiyat artar.', 'Total, worldwide excl. US. Price rises with age.', 'Gesamt, weltweit ohne USA. Preis steigt mit dem Alter.', 'Total, mundial sin EE. UU. Sube con la edad.', 'Итого, весь мир кроме США. Дороже с возрастом.')} ›</small>
+            <span>{l(`${insDays} gün · ${people(trip)} kişi · 10–39 yaş`, `${insDays} days · ${people(trip)} people · age 10–39`, `${insDays} Tage · ${trip.n} Pers. · 10–39 J.`, `${insDays} días · ${trip.n} pers. · 10–39 años`, `${insDays} дн. · ${trip.n} чел. · 10–39 лет`, `${insDays} dias · ${trip.n} pess. · 10–39 anos`)}</span>
+            <small>{l('Toplam, ABD hariç dünya geneli. Yaş artınca fiyat artar.', 'Total, worldwide excl. US. Price rises with age.', 'Gesamt, weltweit ohne USA. Preis steigt mit dem Alter.', 'Total, mundial sin EE. UU. Sube con la edad.', 'Итого, весь мир кроме США. Дороже с возрастом.', 'Total, mundial sem EUA. Aumenta com a idade.')} ›</small>
           </a>
-          <Picks label={l(`${nights + 1} gün · ${trip.n} kişi:`, `${nights + 1} days · ${trip.n} people:`, `${nights + 1} Tage · ${trip.n} Personen:`, `${nights + 1} días · ${trip.n} personas:`, `${nights + 1} дн. · ${trip.n} чел.:`)} items={insPicks} k={`i${code}`} />
+          <Picks label={l(`${nights + 1} gün · ${trip.n} kişi:`, `${nights + 1} days · ${trip.n} people:`, `${nights + 1} Tage · ${trip.n} Personen:`, `${nights + 1} días · ${trip.n} personas:`, `${nights + 1} дн. · ${trip.n} чел.:`, `${nights + 1} dias · ${trip.n} pessoas:`)} items={insPicks} k={`i${code}`} />
         </Sec>
       </div>
 
-      <p className="vz-bk-disc">{l('Bu bağlantılar iş ortağı bağlantısıdır; senin için fiyat değişmez, Vizamigo’nun ücretsiz kalmasına yardım eder. Ödeme her zaman ortak sitede yapılır.', 'These are partner links; your price stays the same and it keeps Vizamigo free. Payment always happens on the partner site.', 'Partnerlinks; dein Preis bleibt gleich. Bezahlt wird immer beim Partner.', 'Enlaces de socios; tu precio no cambia. El pago siempre se hace en el sitio del socio.', 'Партнёрские ссылки; цена для вас та же. Оплата всегда на сайте партнёра.')}</p>
+      <p className="vz-bk-disc">{l('Bu bağlantılar iş ortağı bağlantısıdır; senin için fiyat değişmez, Vizamigo’nun ücretsiz kalmasına yardım eder. Ödeme her zaman ortak sitede yapılır.', 'These are partner links; your price stays the same and it keeps Vizamigo free. Payment always happens on the partner site.', 'Partnerlinks; dein Preis bleibt gleich. Bezahlt wird immer beim Partner.', 'Enlaces de socios; tu precio no cambia. El pago siempre se hace en el sitio del socio.', 'Партнёрские ссылки; цена для вас та же. Оплата всегда на сайте партнёра.', 'Links de parceiros; o seu preço não muda. O pagamento é sempre feito no site do parceiro.')}</p>
 
     </div>
   );
@@ -1023,8 +1023,8 @@ export const Stay22Frame: React.FC<{ mode: 'accommodation' | 'experience'; addre
     <div ref={ref} className={`vz-s22${ready ? ' ready' : ''}`}>
       {!allowed && (
         <div className="vz-s22-ask">
-          <p>{language === 'de' ? 'Live-Preise werden vom Partner Stay22 geladen (setzt Cookies).' : language === 'es' ? 'Los precios en vivo los carga el socio Stay22 (usa cookies).' : language === 'ru' ? 'Живые цены загружает партнёр Stay22 (использует cookies).' : language === 'tr' ? 'Canlı fiyatlar iş ortağımız Stay22’den yüklenir (çerez kullanır).' : 'Live prices are loaded from our partner Stay22 (uses cookies).'}</p>
-          <button type="button" className="vz-btn vz-btn-primary sm" onClick={() => setAllowed(true)}>{language === 'de' ? 'Preise laden' : language === 'es' ? 'Cargar precios' : language === 'ru' ? 'Загрузить цены' : language === 'tr' ? 'Fiyatları yükle' : 'Load prices'}</button>
+          <p>{language === 'de' ? 'Live-Preise werden vom Partner Stay22 geladen (setzt Cookies).' : language === 'es' ? 'Los precios en vivo los carga el socio Stay22 (usa cookies).' : language === 'pt' ? 'Os preços ao vivo são carregados pelo parceiro Stay22 (usa cookies).' : language === 'ru' ? 'Живые цены загружает партнёр Stay22 (использует cookies).' : language === 'tr' ? 'Canlı fiyatlar iş ortağımız Stay22’den yüklenir (çerez kullanır).' : 'Live prices are loaded from our partner Stay22 (uses cookies).'}</p>
+          <button type="button" className="vz-btn vz-btn-primary sm" onClick={() => setAllowed(true)}>{language === 'de' ? 'Preise laden' : language === 'es' ? 'Cargar precios' : language === 'pt' ? 'Carregar preços' : language === 'ru' ? 'Загрузить цены' : language === 'tr' ? 'Fiyatları yükle' : 'Load prices'}</button>
         </div>
       )}
       {allowed && on && <iframe key={q.toString()} title={title} src={`https://www.stay22.com/embed/gm?${q.toString()}`} referrerPolicy="strict-origin-when-cross-origin" onLoad={() => setTimeout(() => setReady(true), 900)} />}
@@ -1076,23 +1076,23 @@ export const TourShowcase: React.FC<{ q: string; country: string; money: (v: num
         {[0, 1, 2, 3, 4, 5].map((i) => <div key={i} className="vz-tc-card sk"><i /><b /><s /></div>)}
       </div>
     );
-  const dur = (m: number) => (!m ? '' : m >= 1440 ? l(`${Math.round(m / 1440)} gün`, `${Math.round(m / 1440)} days`, `${Math.round(m / 1440)} Tage`, `${Math.round(m / 1440)} días`, `${Math.round(m / 1440)} дн.`) : m >= 60 ? l(`${Math.round(m / 60)} saat`, `${Math.round(m / 60)} h`, `${Math.round(m / 60)} Std.`, `${Math.round(m / 60)} h`, `${Math.round(m / 60)} ч`) : `${m} ${l('dk', 'min', 'Min.', 'min', 'мин')}`);
+  const dur = (m: number) => (!m ? '' : m >= 1440 ? l(`${Math.round(m / 1440)} gün`, `${Math.round(m / 1440)} days`, `${Math.round(m / 1440)} Tage`, `${Math.round(m / 1440)} días`, `${Math.round(m / 1440)} дн.`, `${Math.round(m / 1440)} dias`) : m >= 60 ? l(`${Math.round(m / 60)} saat`, `${Math.round(m / 60)} h`, `${Math.round(m / 60)} Std.`, `${Math.round(m / 60)} h`, `${Math.round(m / 60)} ч`, `${Math.round(m / 60)} h`) : `${m} ${l('dk', 'min', 'Min.', 'min', 'мин', 'min')}`);
   return (
     <div className="vz-tc-grid">
       {(n ? data.items.slice(0, n) : data.items).map((t, i) => (
         <a key={t.id || i} className="vz-tc-card" href={t.url} target="_blank" rel="noopener noreferrer sponsored">
-          <span className="vz-tc-img">{t.img && <img src={t.img} alt="" loading={i < 4 ? 'eager' : 'lazy'} decoding="async" />}{t.free && <em>{l('Ücretsiz iptal', 'Free cancellation', 'Kostenlos stornierbar', 'Cancelación gratuita', 'Бесплатная отмена')}</em>}</span>
+          <span className="vz-tc-img">{t.img && <img src={t.img} alt="" loading={i < 4 ? 'eager' : 'lazy'} decoding="async" />}{t.free && <em>{l('Ücretsiz iptal', 'Free cancellation', 'Kostenlos stornierbar', 'Cancelación gratuita', 'Бесплатная отмена', 'Cancelamento grátis')}</em>}</span>
           <span className="vz-tc-body">
             <b>{t.title}</b>
             <small>{t.rating ? `★ ${t.rating.toFixed(1)} (${t.reviews.toLocaleString()})` : ''}{t.rating && t.mins ? ' · ' : ''}{dur(t.mins)}</small>
             <span className="vz-tc-foot">
-              {t.price != null && <span className="vz-tc-price"><small>{l('kişi başı', 'from', 'ab', 'desde', 'от')}</small> {money(t.price, t.cur)}</span>}
-              <span className="vz-tc-go">{l('Rezervasyon', 'Book', 'Buchen', 'Reservar', 'Бронь')} ›</span>
+              {t.price != null && <span className="vz-tc-price"><small>{l('kişi başı', 'from', 'ab', 'desde', 'от', 'a partir de')}</small> {money(t.price, t.cur)}</span>}
+              <span className="vz-tc-go">{l('Rezervasyon', 'Book', 'Buchen', 'Reservar', 'Бронь', 'Reservar')} ›</span>
             </span>
           </span>
         </a>
       ))}
-      <p className="vz-bk-note" style={{ gridColumn: '1 / -1' }}>{l('Fiyatlar Viator’dan, 12 saatte bir yenilenir. Rezervasyon ve ödeme Viator’da yapılır.', 'Prices from Viator, refreshed every 12 hours. Booking and payment on Viator.', 'Preise von Viator, alle 12 Std. aktualisiert. Buchung bei Viator.', 'Precios de Viator, cada 12 horas. Reserva en Viator.', 'Цены Viator, обновляются каждые 12 часов. Бронь на Viator.')}</p>
+      <p className="vz-bk-note" style={{ gridColumn: '1 / -1' }}>{l('Fiyatlar Viator’dan, 12 saatte bir yenilenir. Rezervasyon ve ödeme Viator’da yapılır.', 'Prices from Viator, refreshed every 12 hours. Booking and payment on Viator.', 'Preise von Viator, alle 12 Std. aktualisiert. Buchung bei Viator.', 'Precios de Viator, cada 12 horas. Reserva en Viator.', 'Цены Viator, обновляются каждые 12 часов. Бронь на Viator.', 'Preços da Viator, a cada 12 horas. Reserve na Viator.')}</p>
     </div>
   );
 };

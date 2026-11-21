@@ -1447,6 +1447,368 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Euro (EUR); moedas de euro do Vaticano de coleção",
+   "plugType": "C, F, L (230V, 50Hz)",
+   "bestMonths": "Novembro a fevereiro (menos movimento, exceto no Natal e no Ano-Novo), além de abril a maio e outubro (clima ameno); julho e agosto têm muito calor e muita gente",
+   "safety": {
+    "crimeRateSummary": "O Vaticano em si é muito seguro, graças à Guarda Suíça e à Gendarmaria vaticana. O risco real são os batedores de carteira na Praça de São Pedro, nas filas dos museus e, sobretudo, nos ônibus 64 e 40 de Roma.",
+    "commonScams": [
+     "Abordadores na entrada dos museus que vendem tours 'sem fila' falsos ou caríssimos",
+     "Vendedores que se aproveitam do código de vestimenta para vender lenços caros",
+     "Batedores de carteira no ônibus 64 e no meio da multidão"
+    ],
+    "safeTravelTips": [
+     "Compre os ingressos para os Museus e a Capela Sistina apenas no site oficial dos Museus Vaticanos.",
+     "Use roupas que cubram ombros e joelhos; caso contrário, você não poderá entrar na basílica nem nos museus.",
+     "Não leve bolsas grandes, canivetes nem garrafas de vidro para os controles de segurança."
+    ],
+    "emergencyNumbers": {
+     "police": "112",
+     "ambulance": "118",
+     "general": "112"
+    },
+    "safetyScore": 65,
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "As redes 4G/5G das operadoras italianas cobrem todo o Vaticano; dentro dos museus e da Sistina o sinal pode cair.",
+    "costPerGbUsd": "~US$ 0,50 - 2",
+    "esimAvailability": "Excelente",
+    "bestCarriers": [
+     "TIM",
+     "Vodafone Italia",
+     "WindTre",
+     "Iliad"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Excelente (a pé; metrô e ônibus de Roma até a porta)",
+    "costLevel": "Moderado",
+    "singleTicketUsd": "US$ 1,60 - 1,80 (bilhete BIT de Roma, 100 min)",
+    "dailyPassUsd": "US$ 8 - 11",
+    "popularRideApps": [
+     "FreeNow",
+     "itTaxi",
+     "Uber",
+     "Metrô de Roma, linha A (Ottaviano / Cipro)"
+    ],
+    "taxiAdvice": "Dentro do Vaticano não há transporte; tudo é feito a pé. A partir de Roma, pegue a linha A do metrô até Ottaviano ou Cipro. Chame os táxis brancos oficiais pelo FreeNow ou itTaxi; o trajeto Fiumicino–centro tem tarifa fixa."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 70 - 100",
+    "dailyBudgetMidrangeUsd": "US$ 160 - 260",
+    "budgetMealUsd": "US$ 12 - 22",
+    "coffeeUsd": "US$ 1,40 - 2,50",
+    "waterBottleUsd": "US$ 0,60 - 2,50",
+    "hostelDormUsd": "US$ 35 - 60",
+    "hotel3StarUsd": "US$ 130 - 230",
+    "flightCostIndex": "Baixo a moderado",
+    "flightTip": "O Vaticano não tem aeroporto; usa-se Roma Fiumicino (FCO) ou Ciampino (CIA). Turkish Airlines, Pegasus, AJet e ITA Airways voam Istambul–Roma; reservando cedo, sai bem barato."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Ombros e joelhos cobertos; nada de shorts, minissaia, alcinhas nem chapéu dentro da basílica.",
+     "Na Capela Sistina, fotos e vídeos são proibidos; fique em silêncio.",
+     "Não circule pela basílica durante a missa nem use flash.",
+     "Não toque nos guardas suíços e mantenha distância ao fotografá-los."
+    ],
+    "festivals": [
+     "Missas de Natal e Páscoa e a bênção 'Urbi et Orbi'",
+     "Solenidade de São Pedro e São Paulo – 29 de junho",
+     "Audiência Geral do Papa às quartas-feiras (Praça de São Pedro)"
+    ],
+    "lifestyle": "O menor Estado independente do mundo (cerca de 0,44 km²) e centro da Igreja Católica; tem algumas centenas de habitantes, em sua maioria clérigos, guardas suíços e funcionários. O dia a dia se estende aos bairros romanos de Borgo e Prati, onde também se dorme e se come."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Basílica de São Pedro e a Pietà de Michelangelo",
+     "Subida à cúpula (vista panorâmica de Roma)",
+     "Museus Vaticanos e Capela Sistina",
+     "Salas de Rafael",
+     "Jardins do Vaticano (apenas com visita guiada)",
+     "Túmulo de São Pedro e a necrópole (Scavi, com reserva)"
+    ],
+    "bestSeasons": "Novembro a fevereiro (menos movimento, exceto no Natal e no Ano-Novo), além de abril a maio e outubro (clima ameno); julho e agosto têm muito calor e muita gente",
+    "travelStyleTip": "O Vaticano é uma minúscula cidade-Estado; 1-2 dias bastam, e a visita costuma fazer parte de uma viagem a Roma. Vá aos museus logo cedo e à basílica à tarde. Os museus fecham aos domingos (exceto no último domingo do mês, gratuito e lotado)."
+   },
+   "religion": {
+    "primaryReligions": "Católica romana (~100 %); sede da Igreja Católica e do Papa",
+    "respectNorms": "É um local de culto ativo: vista-se com discrição, fique em silêncio e respeite as áreas de missa, confissão e oração. A entrada na basílica é gratuita, com controle de segurança.",
+    "sacredSites": [
+     "Basílica de São Pedro",
+     "Capela Sistina (sede do conclave)",
+     "Túmulos dos papas (Grutas Vaticanas)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Italiano (língua de trabalho do Estado) e latim (língua oficial da Santa Sé); a Guarda Suíça usa comandos em alemão",
+    "englishProficiency": "Muito bom; os funcionários dos museus e da basílica falam inglês e muitos outros idiomas.",
+    "phrases": [
+     {
+      "phrase": "Buongiorno",
+      "meaning": "Bom dia / Olá (italiano)",
+      "translation": "Bom dia / Olá (italiano)",
+      "pronunciation": "buon-DJOR-no"
+     },
+     {
+      "phrase": "Grazie",
+      "meaning": "Obrigado(a)",
+      "translation": "Obrigado(a)",
+      "pronunciation": "GRA-tsie"
+     },
+     {
+      "phrase": "Per favore",
+      "meaning": "Por favor",
+      "translation": "Por favor",
+      "pronunciation": "per fa-VO-re"
+     },
+     {
+      "phrase": "Quanto costa?",
+      "meaning": "Quanto custa?",
+      "translation": "Quanto custa?",
+      "pronunciation": "KUAN-to KÓ-sta"
+     },
+     {
+      "phrase": "Il conto, per favore",
+      "meaning": "A conta, por favor",
+      "translation": "A conta, por favor",
+      "pronunciation": "il KON-to per fa-VO-re"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "No século IV, o imperador Constantino construiu a primeira basílica sobre o que se acredita ser o túmulo de São Pedro. Durante séculos, os papas governaram os Estados Pontifícios no centro da Itália; a basílica atual foi construída entre 1506 e 1626, e Michelangelo pintou o teto da Sistina em 1508 – 1512. Com a anexação de Roma à Itália em 1870, o papado perdeu seu território; os Pactos de Latrão, de 11 de fevereiro de 1929, criaram o Estado da Cidade do Vaticano. Em maio de 2025, foi eleito o papa Leão XIV.",
+    "milestones": [
+     "~324 – Antiga Basílica de São Pedro, de Constantino",
+     "1506 – Pedra fundamental da nova basílica e fundação da Guarda Suíça",
+     "11 de fevereiro de 1929 – Pactos de Latrão e Estado da Cidade do Vaticano",
+     "8 de maio de 2025 – Eleição do papa Leão XIV"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Carbonara (clássico romano; em Borgo e Prati)",
+     "Cacio e pepe",
+     "Saltimbocca alla romana"
+    ],
+    "traditionalDrinks": [
+     "Espresso e cappuccino (em pé no balcão)",
+     "Vinho branco Frascati (dos arredores de Roma)",
+     "Água fresca das fontes 'nasoni'"
+    ],
+    "streetFoodAndDesserts": [
+     "Supplì (bolinhos de arroz)",
+     "Pizza al taglio (pizza em pedaços)",
+     "Gelato e maritozzo (pãozinho recheado com chantili)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Michelangelo (teto da Sistina, Pietà, cúpula)",
+     "Rafael (Salas de Rafael, 'A Escola de Atenas')",
+     "Gian Lorenzo Bernini (colunata da praça e baldaquino)"
+    ],
+    "strongSectors": [
+     "Turismo de museus e de peregrinação",
+     "Selos, moedas e publicações",
+     "Doações (Óbolo de São Pedro) e receitas imobiliárias"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "A moeda é o euro; cartões são aceitos em museus, livrarias e nos correios. As moedas de euro do Vaticano são muito procuradas por colecionadores.",
+    "economicPillars": "Ingressos de museus e turismo, doações, venda de selos e moedas, publicações e receitas imobiliárias.",
+    "tippingCulture": "Como na Itália: a gorjeta não é obrigatória; os restaurantes cobram 'coperto' (couvert), e dá para deixar alguns euros pelo bom atendimento."
+   }
+  },
+  "itin": {
+   "routeName": "2 dias no Vaticano: São Pedro, Museus Vaticanos e Castel Sant'Angelo",
+   "routeSummary": "O Vaticano é uma cidade-Estado de 0,44 km² dentro de Roma, então o roteiro é curto e feito a pé. Dia 1: Praça de São Pedro, basílica e cúpula; dia 2: Museus Vaticanos, Capela Sistina e jardins e, para fechar, o Castel Sant'Angelo, às margens do Tibre (em solo italiano). Para dormir e comer, fique nos bairros romanos de Borgo e Prati.",
+   "totalDays": 2,
+   "idealDurationText": "Roteiro intensivo de 1-2 dias (dentro de uma viagem a Roma)",
+   "bestSeason": "Novembro a fevereiro (menos movimento, exceto no Natal e no Ano-Novo), além de abril a maio e outubro (clima ameno); julho e agosto têm muito calor e muita gente",
+   "transportMode": "Tudo a pé; a partir de Roma, metrô linha A (Ottaviano/Cipro) ou ônibus",
+   "paceLevel": "Intenso (arte, fé e história)",
+   "stops": [
+    {
+     "name": "Parada 1: Praça e Basílica de São Pedro",
+     "recommendedDuration": "Meio dia",
+     "durationBadge": "Dia 1",
+     "highlights": [
+      "A praça com a colunata de Bernini",
+      "A Pietà de Michelangelo",
+      "O baldaquino de bronze de Bernini",
+      "Subida à cúpula (551 degraus, ou elevador e mais 320)"
+     ],
+     "activities": [
+      "Entre na basílica cedo para fugir da fila.",
+      "Suba à cúpula para ver Roma e os Jardins do Vaticano lá de cima.",
+      "Assista à Audiência Geral de quarta-feira (ingressos gratuitos) ou envie um cartão-postal pelos Correios do Vaticano."
+     ],
+     "foodAndDrinks": [
+      "Carbonara ou cacio e pepe em Borgo",
+      "Espresso em pé no balcão"
+     ],
+     "criticalTips": [
+      "Leve a bolsa na frente do corpo por causa dos batedores de carteira na praça e na basílica.",
+      "Partes da basílica podem fechar durante missas e cerimônias; confira o horário oficial."
+     ],
+     "mapsQuery": "St. Peter's Basilica, Vatican City",
+     "stopNumber": 1
+    },
+    {
+     "name": "Parada 2: Museus Vaticanos, Capela Sistina e Jardins",
+     "recommendedDuration": "4-5 horas",
+     "durationBadge": "Dia 2",
+     "highlights": [
+      "Teto da Sistina e 'O Juízo Final'",
+      "Salas de Rafael",
+      "Galeria dos Mapas e o Laocoonte",
+      "A escada em caracol de Bramante"
+     ],
+     "activities": [
+      "Reserve o primeiro horário no site oficial com semanas de antecedência.",
+      "Conheça os Jardins do Vaticano em uma visita guiada oficial.",
+      "Se tiver solicitado com antecedência, faça a visita à necrópole (Scavi)."
+     ],
+     "foodAndDrinks": [
+      "Pizza al taglio em Prati",
+      "Supplì",
+      "Gelato"
+     ],
+     "criticalTips": [
+      "Os museus fecham aos domingos; o último domingo do mês é gratuito, mas fica lotado.",
+      "Na Sistina não é permitido fotografar, e os seguranças fiscalizam; fique em silêncio."
+     ],
+     "mapsQuery": "Vatican Museums, Vatican City",
+     "stopNumber": 2
+    },
+    {
+     "name": "Parada 3: Castel Sant'Angelo e Via della Conciliazione (Roma, Itália)",
+     "recommendedDuration": "2-3 horas",
+     "durationBadge": "Dia 2 à tarde",
+     "highlights": [
+      "Castel Sant'Angelo, mausoléu de Adriano transformado em fortaleza papal",
+      "O Passetto di Borgo, que leva ao Vaticano",
+      "Ponte Sant'Angelo"
+     ],
+     "activities": [
+      "Admire o pôr do sol sobre a cúpula de São Pedro do terraço do castelo.",
+      "Caminhe pela Via della Conciliazione, com a vista clássica da basílica.",
+      "Passeie à beira do Tibre a partir da Ponte Sant'Angelo."
+     ],
+     "foodAndDrinks": [
+      "Saltimbocca alla romana",
+      "Uma taça de Frascati",
+      "Maritozzo"
+     ],
+     "criticalTips": [
+      "O Castel Sant'Angelo fica na Itália, não no Vaticano, e exige ingresso à parte.",
+      "Não compre de ambulantes que vendem imitações na ponte (na Itália, o comprador também é multado)."
+     ],
+     "mapsQuery": "Castel Sant'Angelo, Rome, Italy",
+     "stopNumber": 3
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Carbonara",
+     "Cacio e pepe",
+     "Saltimbocca alla romana"
+    ],
+    "drinks": [
+     "Espresso",
+     "Vinho Frascati",
+     "Água dos nasoni"
+    ],
+    "streetFoods": [
+     "Supplì",
+     "Pizza al taglio",
+     "Gelato"
+    ],
+    "diningAdvice": "O Vaticano não tem culinária própria; come-se comida romana. Evite os lugares com 'menu turístico' de frente para a praça e procure trattorias algumas ruas adiante, em Prati; o espresso no balcão é mais barato do que na mesa."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Roupas que cubram ombros e joelhos (ou um lenço)",
+     "Calçados confortáveis (nos museus, você anda quilômetros)",
+     "Garrafa reutilizável (para as fontes nasoni)",
+     "Ingressos eletrônicos reservados"
+    ],
+    "safetyAndEtiquette": [
+     "Nada de fotos na Sistina e silêncio na basílica.",
+     "Leve os objetos de valor na frente, em uma bolsa com zíper."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F",
+     "L"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Como na Itália: tomadas C/F (europeias) e L (italianas, com três pinos em linha). Plugues europeus entram nas C/F; para o tipo L, convém um adaptador fino."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "A água da torneira e as fontes da Praça de São Pedro são potáveis; dá para encher a garrafa de graça nos 'nasoni' de Roma.",
+    "vaccines": [
+     "Vacinas de rotina (sarampo, tétano-difteria)",
+     "Nenhuma vacina especial é exigida"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "118"
+   },
+   "tipping": {
+    "custom": "Como na Itália, a gorjeta não é obrigatória; a conta pode incluir o 'coperto' (couvert).",
+    "standardPercent": 5,
+    "rule": "round_up",
+    "note": "Basta arredondar ou deixar alguns euros pelo bom atendimento; os guias costumam receber gorjeta."
+   },
+   "taxFree": {
+    "vatRefundPercent": "No Vaticano não há IVA (os preços já são isentos); em Roma valem as regras de tax-free da Itália",
+    "minSpend": "Mais de 70 € em uma única nota em Roma",
+    "customsNote": "Nas lojas do Vaticano não há devolução. Para compras tax-free em Roma, valide o formulário na alfândega do último ponto de saída da UE."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 0,50 - 2",
+    "topCarriers": [
+     "TIM",
+     "Vodafone Italia",
+     "WindTre",
+     "Iliad"
+    ],
+    "airportSimTrapWarning": "O Vaticano não tem operadora própria; usam-se as redes italianas. Os pacotes de chip para turistas em Fiumicino são mais caros do que na cidade; o mais barato é um eSIM configurado antes da viagem. O roaming da UE não se aplica a linhas de fora da UE."
+   },
+   "touristScams": [
+    {
+     "title": "Vendedores de 'sem fila'",
+     "desc": "Pessoas perto da entrada que dizem que os ingressos acabaram e vendem tours caros ou falsos.",
+     "tip": "Compre os ingressos apenas no site oficial dos Museus Vaticanos, nunca na rua."
+    },
+    {
+     "title": "O lenço do código de vestimenta",
+     "desc": "Vendedores que dizem que sua roupa não é adequada e empurram lenços caros.",
+     "tip": "Chegue com ombros e joelhos cobertos ou leve seu próprio lenço."
+    },
+    {
+     "title": "Batedores de carteira no ônibus 64",
+     "desc": "A lotada linha 64 entre Termini e o Vaticano é famosa pelos batedores de carteira.",
+     "tip": "Se puder, vá de metrô (linha A) até Ottaviano ou a pé; leve a bolsa na frente do corpo."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Евро (EUR); коллекционные ватиканские евромонеты",

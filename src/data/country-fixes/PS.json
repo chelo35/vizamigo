@@ -1543,6 +1543,392 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Shekel israelense (ILS); o dinar jordaniano (JOD) e o dólar também são usados",
+   "plugType": "Tipo C, H (230V, 50Hz)",
+   "bestMonths": "Março a maio e setembro a novembro (clima ameno; colheita da azeitona em outubro e novembro)",
+   "safety": {
+    "crimeRateSummary": "Em Gaza há conflito armado e uma grave crise humanitária desde outubro de 2023; Turquia, Reino Unido e EUA desaconselham qualquer viagem. Para a Cisjordânia, os governos desaconselham a viagem ou pedem que ela seja reconsiderada, por causa de operações militares, violência de colonos, confrontos e fechamento de postos de controle; a situação muda diariamente.",
+    "commonScams": [
+     "Taxistas nos postos de controle que cobram a mais",
+     "“Guias” não oficiais em lugares sagrados que pedem muito dinheiro",
+     "Venda de “antiguidades” falsas ou ilegais"
+    ],
+    "safeTravelTips": [
+     "Não vá a Gaza; visite a Cisjordânia só se os alertas oficiais permitirem e com um guia local autorizado.",
+     "Ande sempre com o passaporte, mantenha a calma nos postos de controle e não fotografe instalações militares.",
+     "Evite manifestações e aglomerações; acompanhe diariamente as notícias e os alertas consulares."
+    ],
+    "emergencyNumbers": {
+     "police": "100",
+     "ambulance": "101",
+     "general": "100"
+    },
+    "safetyScore": 10,
+    "safetyLevel": "Zona de conflito (não viaje)",
+    "badgeColor": "bg-rose-600 text-white border-rose-700 dark:bg-rose-950 dark:text-rose-200"
+   },
+   "internet": {
+    "networkCoverage": "Na Cisjordânia, as operadoras palestinas oferecem principalmente 3G, e as redes israelenses chegam a muitas áreas. A infraestrutura de Gaza está muito danificada.",
+    "costPerGbUsd": "~US$ 2 - 5",
+    "esimAvailability": "Limitada",
+    "bestCarriers": [
+     "Jawwal",
+     "Ooredoo Palestine"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Limitado",
+    "costLevel": "Econômico",
+    "singleTicketUsd": "1 - 5 $ (táxi compartilhado “servees”)",
+    "dailyPassUsd": "Sem passe diário",
+    "popularRideApps": [
+     "Táxis compartilhados amarelos (servees)",
+     "Operadores turísticos autorizados",
+     "Táxis do hotel"
+    ],
+    "taxiAdvice": "Não há apps como o Uber. Os táxis compartilhados amarelos “servees” são baratos entre cidades; combine antes o preço do táxi particular. Os postos de controle tornam o tempo de viagem imprevisível."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 40 - 60",
+    "dailyBudgetMidrangeUsd": "US$ 90 - 150",
+    "budgetMealUsd": "US$ 4 - 10",
+    "coffeeUsd": "US$ 1,50 - 3",
+    "waterBottleUsd": "US$ 0,80 - 1,50",
+    "hostelDormUsd": "US$ 15 - 30",
+    "hotel3StarUsd": "US$ 60 - 110",
+    "flightCostIndex": "Moderado",
+    "flightTip": "Não há aeroporto em funcionamento nos territórios palestinos; normalmente se chega via Amã e a ponte Rei Hussein (Allenby) ou pelo aeroporto Ben Gurion, em Tel Aviv. As condições de travessia mudam com frequência."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "A hospitalidade é muito forte; procure não recusar o café ou o chá oferecido.",
+     "Use roupas que cubram ombros e joelhos; as mulheres devem cobrir o cabelo nas mesquitas.",
+     "No Ramadã, evite comer ou beber em público durante o dia.",
+     "Não puxe assuntos políticos; não fotografe pessoas nem postos de controle sem permissão."
+    ],
+    "festivals": [
+     "Ramadã e as festas de Eid al-Fitr e Eid al-Adha",
+     "Natal em Belém (25 de dezembro; 7 de janeiro para os ortodoxos)",
+     "Colheita da azeitona (outubro – novembro)"
+    ],
+    "lifestyle": "Uma vida de família extensa, hospitalidade e olivais; os cafés, os mercados (souks) e as refeições em família são centrais. Os postos de controle e as restrições muitas vezes afetam os planos do dia a dia."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Basílica da Natividade, Belém (UNESCO)",
+     "Cidade Velha de Hebron e mesquita de Ibrahim (UNESCO)",
+     "Tell es-Sultan, em Jericó (UNESCO)",
+     "Mosaicos do Palácio de Hisham (Jericó)",
+     "Cidade velha e souk de Nablus",
+     "Wadi Qelt e mosteiro de São Jorge"
+    ],
+    "bestSeasons": "Março a maio e setembro a novembro (clima ameno; colheita da azeitona em outubro e novembro)",
+    "travelStyleTip": "No momento, os alertas oficiais desaconselham a viagem. Se as condições permitirem, vá com um guia local autorizado que conheça os postos de controle e mantenha os planos flexíveis."
+   },
+   "religion": {
+    "primaryReligions": "Muçulmanos sunitas (~97 %), cristãos (~1-2 %; ortodoxos, católicos e outros) e uma pequena comunidade samaritana",
+    "respectNorms": "Entre nas mesquitas fora do horário de oração, com roupas discretas e descalço; nas igrejas também é preciso cobrir ombros e joelhos.",
+    "sacredSites": [
+     "Basílica da Natividade (Belém)",
+     "Mesquita de Ibrahim / Túmulo dos Patriarcas (Hebron)",
+     "Mosteiro de São Jorge (Wadi Qelt)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Árabe (dialeto palestino). Em alguns lugares, hebraico e inglês são entendidos.",
+    "englishProficiency": "Médio; jovens, guias e funcionários de hotel falam inglês.",
+    "phrases": [
+     {
+      "phrase": "مرحبا (marḥaba)",
+      "meaning": "Olá",
+      "translation": "Olá",
+      "pronunciation": "MAR-ha-ba"
+     },
+     {
+      "phrase": "شكراً (shukran)",
+      "meaning": "Obrigado(a)",
+      "translation": "Obrigado(a)",
+      "pronunciation": "SHOO-kran"
+     },
+     {
+      "phrase": "من فضلك (min faḍlak)",
+      "meaning": "Por favor",
+      "translation": "Por favor",
+      "pronunciation": "min FAD-lak"
+     },
+     {
+      "phrase": "قدّيش هاد؟ (addēsh hād?)",
+      "meaning": "Quanto custa isto?",
+      "translation": "Quanto custa isto?",
+      "pronunciation": "ad-DESH had"
+     },
+     {
+      "phrase": "يعطيك العافية (yaʿṭīk el-ʿāfye)",
+      "meaning": "Obrigado pelo seu esforço (lit. que Deus lhe dê saúde)",
+      "translation": "Obrigado pelo seu esforço (lit. que Deus lhe dê saúde)",
+      "pronunciation": "YA-tik el-AAF-ye"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Jericó é uma das cidades habitadas continuamente mais antigas do mundo (~10.000 a.C.). A região passou por domínio cananeu, romano, bizantino e, a partir do século VII, islâmico, e foi otomana entre 1517 e 1917. Ao Mandato Britânico (1920–1948) seguiram-se as guerras de 1948 e 1967. Os Acordos de Oslo (1993–95) criaram a Autoridade Palestina, e em 2012 a Palestina passou a ser Estado observador não membro da ONU.",
+    "milestones": [
+     "~10.000 a.C. – Primeiro assentamento em Jericó",
+     "1517–1917 – Período otomano",
+     "1967 – Guerra dos Seis Dias; Cisjordânia e Gaza passam ao controle israelense",
+     "1993–1995 – Acordos de Oslo e Autoridade Palestina"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Musakhan (pão taboon com cebola, sumagre e frango)",
+     "Maqluba (arroz virado com carne e legumes)",
+     "Sumagiyya (ensopado de carne e sumagre no estilo de Gaza)"
+    ],
+    "traditionalDrinks": [
+     "Café árabe com cardamomo",
+     "Cerveja Taybeh (do vilarejo de Taybeh)",
+     "Bebida de tamarindo (tamar hindi)"
+    ],
+    "streetFoodAndDesserts": [
+     "Knafeh nabulsieh",
+     "Falafel e homus",
+     "Pão ka’ek com gergelim"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Mahmoud Darwish (poeta nacional)",
+     "Edward Said (teórico literário)",
+     "Mohammed Assaf (cantor, vencedor do Arab Idol)"
+    ],
+    "strongSectors": [
+     "Azeitona e azeite",
+     "Pedreiras de pedra e mármore",
+     "Artesanato (entalhe em madeira de oliveira, vidro e cerâmica de Hebron)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Os pagamentos do dia a dia são feitos em shekels, em dinheiro vivo; hotéis e lojas grandes de Ramallah e Belém aceitam cartão. Há muitas casas de câmbio.",
+    "tippingCulture": "Nos restaurantes, o normal é 10 %; guias e motoristas também recebem gorjeta.",
+    "economicPillars": "Serviços, agricultura (oliveiras), pedra e mármore, pequena indústria, remessas e ajuda internacional; a economia sofre muito com as restrições e o conflito."
+   }
+  },
+  "itin": {
+   "routeName": "Roteiro de referência pela Cisjordânia: Belém, Jericó, Ramallah e Nablus (só se as condições permitirem)",
+   "routeSummary": "Atenção: os alertas oficiais desaconselham a viagem, e Gaza não deve ser visitada. Se a situação melhorar, e com um guia local autorizado: roteiro de referência de 6 dias, dos lugares sagrados de Belém ao antigo tell de Jericó, à vida cultural de Ramallah e ao souk histórico de Nablus.",
+   "totalDays": 6,
+   "idealDurationText": "Roteiro de 6 dias",
+   "bestSeason": "Março a maio e setembro a novembro (clima ameno; colheita da azeitona em outubro e novembro)",
+   "transportMode": "Veículo do guia local autorizado + táxis compartilhados",
+   "paceLevel": "Flexível e controlado (segurança em primeiro lugar)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Belém (Basílica da Natividade e Beit Sahour)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Basílica da Natividade e Praça da Manjedoura",
+      "Campo dos Pastores (Beit Sahour)",
+      "Mosteiro de Mar Saba",
+      "Herodião"
+     ],
+     "activities": [
+      "Visite cedo a Gruta da Natividade.",
+      "Conheça as oficinas de entalhe em madeira de oliveira.",
+      "Vá com guia ao mosteiro de Mar Saba, no deserto."
+     ],
+     "foodAndDrinks": [
+      "Falafel e homus",
+      "Maqluba",
+      "Café árabe com cardamomo"
+     ],
+     "criticalTips": [
+      "Leve o passaporte para os postos de controle.",
+      "Mulheres não podem entrar em Mar Saba; dá para contemplá-lo da colina em frente."
+     ],
+     "mapsQuery": "Church of the Nativity, Bethlehem"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Jericó (tell antigo e mosteiros do deserto)",
+     "recommendedDuration": "1 dia",
+     "durationBadge": "1 dia",
+     "highlights": [
+      "Tell es-Sultan (UNESCO)",
+      "Palácio de Hisham e mosaico da Árvore da Vida",
+      "Teleférico do Monte da Tentação",
+      "Wadi Qelt e mosteiro de São Jorge"
+     ],
+     "activities": [
+      "Suba de teleférico até o mosteiro no penhasco.",
+      "Admire os mosaicos do Palácio de Hisham.",
+      "Caminhe até o mirante de Wadi Qelt."
+     ],
+     "foodAndDrinks": [
+      "Tâmaras de Jericó",
+      "Suco fresco de laranja e romã",
+      "Carne grelhada"
+     ],
+     "criticalTips": [
+      "Jericó fica 250 m abaixo do nível do mar e passa dos 40 °C no verão; faça a visita cedo.",
+      "Não caminhe sozinho por Wadi Qelt; vá com um guia local."
+     ],
+     "mapsQuery": "Jericho"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Ramallah e Birzeit (cultura e cafés)",
+     "recommendedDuration": "1 dia",
+     "durationBadge": "1 dia",
+     "highlights": [
+      "Museu Mahmoud Darwish",
+      "Praça Al-Manara",
+      "Centro histórico de Birzeit",
+      "Vilarejo de Taybeh"
+     ],
+     "activities": [
+      "Conheça a vida do poeta no Museu Darwish.",
+      "Curta música ao vivo nos cafés de Ramallah.",
+      "Visite a cervejaria e as igrejas antigas de Taybeh."
+     ],
+     "foodAndDrinks": [
+      "Musakhan",
+      "Sorvete Rukab (desde 1941)",
+      "Cerveja Taybeh"
+     ],
+     "criticalTips": [
+      "Pode haver protestos no centro; afaste-se das multidões.",
+      "No posto de controle de Qalandiya a espera pode ser longa; reserve tempo para a volta."
+     ],
+     "mapsQuery": "Ramallah"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Nablus e Sebastia (souk e ruínas antigas)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Cidade velha de Nablus e banhos otomanos",
+      "Fábricas de sabão de azeite",
+      "Sítio arqueológico de Sebastia",
+      "Poço de Jacó"
+     ],
+     "activities": [
+      "Prove knafeh recém-feito no souk.",
+      "Veja a fabricação tradicional de sabão.",
+      "Passeie pelas ruínas romanas de Sebastia."
+     ],
+     "foodAndDrinks": [
+      "Knafeh nabulsieh",
+      "Pão com za’atar e azeite",
+      "Bebida de tamarindo"
+     ],
+     "criticalTips": [
+      "Incursões e confrontos são frequentes perto de Nablus; confirme a visita com seu guia na mesma manhã.",
+      "Não entre em campos de refugiados sem guia."
+     ],
+     "mapsQuery": "Nablus Old City"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Musakhan",
+     "Maqluba",
+     "Sumagiyya"
+    ],
+    "drinks": [
+     "Café árabe",
+     "Chá com hortelã",
+     "Cerveja Taybeh"
+    ],
+    "streetFoods": [
+     "Knafeh",
+     "Falafel",
+     "Ka’ek"
+    ],
+    "diningAdvice": "As refeições começam com mezze para compartilhar, e aceitar o que o anfitrião oferece é sinal de boa educação. No Ramadã, os restaurantes podem fechar durante o dia."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Passaporte (sempre com você)",
+     "Roupas discretas e lenço",
+     "Shekels em dinheiro vivo",
+     "Adaptador H/C"
+    ],
+    "safetyAndEtiquette": [
+     "Não vá a Gaza; confira diariamente os alertas sobre a Cisjordânia.",
+     "Não fotografe instalações militares nem postos de controle."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "H",
+     "C"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Predominam as tomadas israelenses tipo H; as mais novas aceitam plugues finos tipo C, mas não os Schuko (F) turcos. Leve adaptador H/C."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "O abastecimento de água é irregular; beba água engarrafada. Em Gaza, a falta de água potável segura é um grave problema humanitário.",
+    "vaccines": [
+     "Vacinas de rotina (tétano e difteria, tríplice viral)",
+     "Hepatite A e febre tifoide",
+     "Raiva (se houver contato com animais)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "101"
+   },
+   "tipping": {
+    "custom": "Nos restaurantes, 10 % é o comum.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Guias e motoristas recebem alguns dólares ou shekels por dia."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA de 16 %; sem devolução para turistas",
+    "minSpend": "Não se aplica",
+    "customsNote": "Nas áreas da Autoridade Palestina não há devolução do IVA. Comprar e levar antiguidades exige autorização; fazer isso sem ela traz punições graves."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 2 - 5",
+    "topCarriers": [
+     "Jawwal",
+     "Ooredoo Palestine"
+    ],
+    "airportSimTrapWarning": "Não há aeroporto, e as operadoras palestinas oferecem principalmente 3G. Um eSIM que cubra Israel funciona em muitas áreas; os chips da Jawwal ou da Ooredoo são vendidos com passaporte em lojas de Ramallah e Belém."
+   },
+   "touristScams": [
+    {
+     "title": "Tarifas de táxi nos postos de controle",
+     "desc": "Os taxistas na saída dos postos de controle pedem preços altíssimos por trajetos curtos.",
+     "tip": "Combine o preço antes ou peça um carro pelo hotel."
+    },
+    {
+     "title": "Guias não oficiais",
+     "desc": "Supostos guias em frente à Natividade cobram caro por visitas curtas.",
+     "tip": "Reserve um guia autorizado e pergunte o preço antes."
+    },
+    {
+     "title": "Antiguidades falsas",
+     "desc": "Na rua, vendem objetos falsos ou ilegais como “moedas antigas”.",
+     "tip": "Não compre antiguidades; prefira lembranças de madeira de oliveira, vidro ou cerâmica."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Израильский шекель (ILS); также используются иорданский динар (JOD) и доллар США",

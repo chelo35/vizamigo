@@ -1535,6 +1535,390 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Peso argentino (ARS)",
+   "plugType": "Tipo I, C (220V, 50Hz)",
+   "bestMonths": "Outubro a abril (primavera e verão); novembro a março para a Patagônia, março a maio e setembro a novembro para Buenos Aires, junho a setembro para esquiar",
+   "safety": {
+    "crimeRateSummary": "Nas áreas turísticas, o principal risco são pequenos delitos: batedores de carteira, motochorros (ladrões de moto) e golpes de distração são frequentes em Buenos Aires. Em La Boca, não saia do Caminito; em algumas cidades, como Rosário, a violência ligada ao narcotráfico é alta. A Patagônia e as áreas rurais costumam ser tranquilas.",
+    "commonScams": [
+     "Jogam “mostarda” ou cocô de passarinho em você e roubam sua bolsa enquanto “ajudam” a limpar",
+     "Cambistas de rua (arbolitos) da calle Florida e alguns taxistas que passam notas falsas",
+     "Motochorros que arrancam o celular de quem o usa na calçada em Palermo e San Telmo"
+    ],
+    "safeTravelTips": [
+     "Não use o celular perto do meio-fio; leve a bolsa na frente do corpo e fechada.",
+     "Para conseguir pesos, use seu cartão estrangeiro, casas de câmbio oficiais ou bancos, nunca cambistas de rua.",
+     "À noite, chame um Uber, um Cabify ou um remís (carro com motorista)."
+    ],
+    "emergencyNumbers": {
+     "police": "911",
+     "ambulance": "107",
+     "general": "911"
+    },
+    "safetyScore": 55,
+    "safetyLevel": "Risco moderado",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Bom 4G nas cidades (5G em expansão); longos trechos sem sinal nas estradas da Patagônia e nas montanhas",
+    "costPerGbUsd": "~US$ 1 - 3",
+    "esimAvailability": "Boa",
+    "bestCarriers": [
+     "Personal",
+     "Claro",
+     "Movistar"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Bom (metrô – o subte –, ônibus urbanos e trens em Buenos Aires; ônibus de longa distância “coche cama” confortáveis e voos domésticos)",
+    "costLevel": "Moderado",
+    "singleTicketUsd": "0,70 - 1,20 $ (subte/ônibus com cartão SUBE)",
+    "dailyPassUsd": "Não há passe diário; ~2 - 4 $ por dia com o SUBE",
+    "popularRideApps": [
+     "Uber",
+     "Cabify",
+     "DiDi"
+    ],
+    "taxiAdvice": "Uber, Cabify e DiDi são comuns em Buenos Aires. Os táxis pretos e amarelos têm taxímetro; conte as notas ao pagar e confira o troco. Em Ezeiza, use os balcões oficiais de táxi ou remís."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 35 - 55",
+    "dailyBudgetMidrangeUsd": "US$ 90 - 150",
+    "budgetMealUsd": "US$ 8 - 15",
+    "coffeeUsd": "US$ 2 - 3,50",
+    "waterBottleUsd": "US$ 1 - 1,50",
+    "hostelDormUsd": "US$ 15 - 30",
+    "hotel3StarUsd": "US$ 55 - 110",
+    "flightCostIndex": "Alto (~18-22 h com escala)",
+    "flightTip": "A Turkish Airlines chega a Buenos Aires via São Paulo; compare também conexões por Madri, Roma ou Dubai. Os voos domésticos para a Patagônia (Aerolíneas Argentinas, JetSMART, Flybondi) lotam rápido no verão."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "O cumprimento é com um beijo no rosto, até entre amigos homens.",
+     "Janta-se tarde (21h – 23h); antes das 20h, os restaurantes costumam estar vazios.",
+     "Compartilhar o mate é um ritual de amizade; dizer “gracias” significa que você não quer mais."
+    ],
+    "festivals": [
+     "Fiesta Nacional de la Vendimia (março, Mendoza)",
+     "Tango BA Festival y Mundial (agosto, Buenos Aires)",
+     "Carnaval del País (janeiro – fevereiro, Gualeguaychú)"
+    ],
+    "lifestyle": "Uma vida social que vai até tarde: churrasco (asado) em família aos domingos, mate compartilhado o dia inteiro, futebol apaixonado (Boca – River) e cultura de cafés e tango."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Buenos Aires (San Telmo, La Boca, Recoleta)",
+     "Cataratas do Iguaçu e Garganta do Diabo",
+     "Glaciar Perito Moreno (El Calafate)",
+     "El Chaltén e o monte Fitz Roy",
+     "Região vinícola de Mendoza",
+     "Quebrada de Humahuaca (Jujuy)"
+    ],
+    "bestSeasons": "Novembro a março para a Patagônia; primavera (setembro a novembro) e outono (março a maio) para Buenos Aires e Mendoza; abril a novembro para o Noroeste (Salta, Jujuy); baleias na Península Valdés de junho a dezembro.",
+    "travelStyleTip": "As distâncias são enormes: voe para as regiões mais distantes e use ônibus noturnos “coche cama” nos trechos mais curtos. Na Patagônia, reserve com antecedência a hospedagem e os passeios aos glaciares."
+   },
+   "religion": {
+    "primaryReligions": "Católicos ~63 %, sem religião ~19 %, evangélicos ~15 % (pesquisa do CONICET de 2019)",
+    "respectNorms": "Vista-se com sobriedade nas igrejas e fique em silêncio durante a missa; respeite os santuários populares à beira das estradas (Difunta Correa, Gauchito Gil).",
+    "sacredSites": [
+     "Basílica de Nossa Senhora de Luján (província de Buenos Aires)",
+     "Catedral Metropolitana de Buenos Aires",
+     "Santuário da Difunta Correa (Vallecito, San Juan)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Espanhol rioplatense (com voseo e “ll/y” pronunciados como “sh”)",
+    "englishProficiency": "Entre razoável e bom em Buenos Aires (um dos melhores da América Latina); limitado no interior.",
+    "phrases": [
+     {
+      "phrase": "¡Hola! ¿Todo bien?",
+      "meaning": "Oi! Tudo bem?",
+      "translation": "Oi! Tudo bem?",
+      "pronunciation": "OH-lah, TOH-doh BYEN"
+     },
+     {
+      "phrase": "Dale",
+      "meaning": "Beleza / Combinado",
+      "translation": "Beleza / Combinado",
+      "pronunciation": "DAH-leh"
+     },
+     {
+      "phrase": "¿Cuánto sale?",
+      "meaning": "Quanto custa? (jeito argentino de perguntar)",
+      "translation": "Quanto custa? (jeito argentino de perguntar)",
+      "pronunciation": "KWAN-toh SAH-leh"
+     },
+     {
+      "phrase": "La cuenta, por favor",
+      "meaning": "A conta, por favor",
+      "translation": "A conta, por favor",
+      "pronunciation": "lah KWEN-tah por fah-VOR"
+     },
+     {
+      "phrase": "¡Qué bárbaro!",
+      "meaning": "Que demais!",
+      "translation": "Que demais!",
+      "pronunciation": "keh BAR-bah-roh"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Em terras indígenas, Buenos Aires foi fundada definitivamente em 1580, e a região passou a ser colônia espanhola. Depois da Revolução de Maio de 1810, a independência foi declarada em Tucumán em 1816; a grande imigração europeia do fim do século XIX e início do XX moldou sua cultura. É uma democracia desde 1983.",
+    "milestones": [
+     "1580: Juan de Garay refunda Buenos Aires",
+     "1810: Revolução de Maio",
+     "1816: declaração da independência em Tucumán (9 de julho)",
+     "1983: volta da democracia"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Asado (churrasco argentino)",
+     "Empanadas salteñas e tucumanas",
+     "Milanesa a la napolitana (bife à milanesa com presunto, molho de tomate e queijo)"
+    ],
+    "traditionalDrinks": [
+     "Mate",
+     "Vinho malbec (alcoólico)",
+     "Fernet com Coca (alcoólico)"
+    ],
+    "streetFoodAndDesserts": [
+     "Choripán (costuma levar carne de porco)",
+     "Alfajores",
+     "Sorvete de doce de leite"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Lionel Messi (jogador de futebol)",
+     "Jorge Luis Borges (escritor)",
+     "René Favaloro (pioneiro da ponte de safena)"
+    ],
+    "strongSectors": [
+     "Agronegócio (soja, carne bovina, trigo)",
+     "Energia (Vaca Muerta) e lítio",
+     "Tecnologia e software (Mercado Livre, Globant)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Cartões são amplamente aceitos, e nos estrangeiros é aplicada uma cotação próxima à de mercado; o comércio pequeno pode dar desconto no pagamento em dinheiro. Por causa da inflação, os preços mudam com frequência; saque ou troque dinheiro em bancos ou casas de câmbio oficiais.",
+    "tippingCulture": "Nos restaurantes, é costume deixar 10 % de gorjeta, normalmente em dinheiro; o “cubierto” da conta não é gorjeta.",
+    "economicPillars": "Exportações agropecuárias, energia e mineração (lítio), indústria, serviços e turismo."
+   }
+  },
+  "itin": {
+   "routeName": "Roteiro pela Argentina: Buenos Aires, Mendoza, Bariloche e glaciares da Patagônia",
+   "routeSummary": "Um roteiro de 11 dias que vai do tango e dos bairros de Buenos Aires aos vinhedos andinos de Mendoza, à região dos lagos de Bariloche e ao glaciar Perito Moreno, em El Calafate.",
+   "totalDays": 11,
+   "idealDurationText": "Roteiro de 11 dias",
+   "bestSeason": "Novembro a março",
+   "transportMode": "Voos domésticos (Aerolíneas Argentinas, JetSMART, Flybondi) + ônibus noturno “coche cama” ou voo Mendoza – Bariloche + carro alugado/passeios",
+   "paceLevel": "Equilibrado (cidade, vinho e natureza)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Buenos Aires",
+     "recommendedDuration": "3 dias",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "San Telmo e a feira de domingo",
+      "La Boca – Caminito",
+      "Cemitério da Recoleta",
+      "Teatro Colón e Plaza de Mayo"
+     ],
+     "activities": [
+      "Assista a um show de tango ou vá a uma milonga.",
+      "Faça a visita guiada ao Teatro Colón.",
+      "Assista a um jogo do Boca Juniors ou visite o museu de La Bombonera."
+     ],
+     "foodAndDrinks": [
+      "Asado e bife de chorizo numa parrilla",
+      "Empanadas",
+      "Café com medialunas"
+     ],
+     "criticalTips": [
+      "Compre o cartão SUBE; os ônibus não aceitam dinheiro.",
+      "Em La Boca, fique pela região do Caminito e do estádio e vá embora antes de escurecer."
+     ],
+     "mapsQuery": "Buenos Aires, Argentina"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Mendoza (vinho e Andes)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Vinícolas de Luján de Cuyo e do Valle de Uco",
+      "Parque Provincial Aconcágua e Puente del Inca",
+      "Parque General San Martín e Cerro de la Gloria"
+     ],
+     "activities": [
+      "Percorra de bicicleta as vinícolas de Maipú.",
+      "Faça um passeio até o mirante do Aconcágua.",
+      "Faça rafting no rio Mendoza, em Potrerillos."
+     ],
+     "foodAndDrinks": [
+      "Degustação de malbec (alcoólico)",
+      "Asado e degustação de azeite de oliva numa vinícola"
+     ],
+     "criticalTips": [
+      "A maioria das lojas fecha na hora da siesta (13h30 – 17h).",
+      "O ar é muito seco e o sol, forte; beba bastante água e use protetor."
+     ],
+     "mapsQuery": "Mendoza, Argentina"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: San Carlos de Bariloche (região dos lagos)",
+     "recommendedDuration": "3 dias",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Lago Nahuel Huapi",
+      "Mirante do Cerro Campanario",
+      "Circuito Chico",
+      "Rota dos Sete Lagos"
+     ],
+     "activities": [
+      "Percorra o Circuito Chico de bicicleta.",
+      "Suba de teleférico de cadeirinha ao Cerro Campanario.",
+      "Navegue até a Isla Victoria e o Bosque de Arrayanes."
+     ],
+     "foodAndDrinks": [
+      "Chocolate artesanal de Bariloche",
+      "Truta",
+      "Cordeiro patagônico"
+     ],
+     "criticalTips": [
+      "O tempo muda rápido; leve corta-vento e roupas em camadas.",
+      "Alugue um carro ou reserve logo um passeio para a Rota dos Sete Lagos."
+     ],
+     "mapsQuery": "San Carlos de Bariloche, Río Negro, Argentina"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: El Calafate e glaciar Perito Moreno",
+     "recommendedDuration": "3 dias",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Passarelas do glaciar Perito Moreno",
+      "Minitrekking sobre o glaciar",
+      "Lago Argentino",
+      "El Chaltén e o Fitz Roy (a ~3 h)"
+     ],
+     "activities": [
+      "Observe das passarelas os blocos de gelo se desprendendo.",
+      "Chegue de barco perto da parede do glaciar (Safari Náutico).",
+      "Faça a trilha até a Laguna Capri ou a Laguna de los Tres, em El Chaltén."
+     ],
+     "foodAndDrinks": [
+      "Cordeiro assado na estaca (al asador)",
+      "Sorvete de calafate"
+     ],
+     "criticalTips": [
+      "O vento patagônico pode ser fortíssimo; jaqueta corta-vento e óculos de sol são indispensáveis.",
+      "Reserve o trekking no glaciar com semanas de antecedência; há limites de idade."
+     ],
+     "mapsQuery": "El Calafate, Santa Cruz, Argentina"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Asado (churrasco argentino)",
+     "Empanadas",
+     "Cordeiro patagônico"
+    ],
+    "drinks": [
+     "Mate",
+     "Malbec (alcoólico)",
+     "Submarino (leite quente com barra de chocolate)"
+    ],
+    "streetFoods": [
+     "Choripán (pode levar carne de porco)",
+     "Alfajor",
+     "Medialunas"
+    ],
+    "diningAdvice": "O jantar começa depois das 21h. Na parrilla, peça a carne no ponto que preferir (“jugoso” = malpassada, “a punto” = ao ponto, “bien cocido” = bem passada) e deixe a gorjeta em dinheiro."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptador de tomada tipo I",
+     "Jaqueta corta-vento e fleece (Patagônia)",
+     "Óculos de sol e protetor solar de fator alto",
+     "Botas de trekking confortáveis"
+    ],
+    "safetyAndEtiquette": [
+     "Em Buenos Aires, segure bem o celular e a bolsa e não troque dinheiro na rua.",
+     "Aceite o mate se oferecerem e não mexa na bombilla."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "I",
+     "C"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "A maioria das tomadas é tipo I, com dois pinos chatos inclinados; em prédios antigos também há tomadas para plugues europeus finos (tipo C). Os plugues Schuko (F), mais grossos, precisam de adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Em Buenos Aires e nas grandes cidades, a água da torneira é potável; no norte rural e nas vilas de montanha, prefira água mineral.",
+    "vaccines": [
+     "Vacinas de rotina (difteria e tétano, tríplice viral)",
+     "Recomenda-se a vacina contra a hepatite A",
+     "Febre amarela: recomendada para Misiones (Iguaçu) e Corrientes"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "107"
+   },
+   "tipping": {
+    "custom": "Nos restaurantes, espera-se uma gorjeta de 10 %.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "A gorjeta normalmente é deixada em dinheiro; o “cubierto” é uma taxa de mesa, não gorjeta."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Parte do IVA de 21 % (descontadas as taxas)",
+    "minSpend": "O valor mínimo por nota varia; consulte na loja",
+    "customsNote": "Nas lojas com o logo “Tax Free”, peça o formulário para produtos fabricados na Argentina e carimbe-o na alfândega do aeroporto ao sair. Turistas estrangeiros não pagam IVA na hospedagem se pagarem com cartão estrangeiro."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 1 - 3",
+    "topCarriers": [
+     "Personal",
+     "Claro",
+     "Movistar"
+    ],
+    "airportSimTrapWarning": "Os quiosques de Ezeiza são mais caros que as lojas da cidade. Para ter uma linha local, vá com o passaporte a uma loja Personal/Claro ou configure um eSIM antes; baixe mapas off-line para a Patagônia."
+   },
+   "touristScams": [
+    {
+     "title": "O golpe da mostarda",
+     "desc": "Sujam você com molho ou “cocô de passarinho”, e um cúmplice que vem “ajudar” leva sua bolsa.",
+     "tip": "Recuse a ajuda, segure a bolsa e afaste-se."
+    },
+    {
+     "title": "Notas falsas e câmbio de rua",
+     "desc": "Cambistas ou alguns taxistas dão de troco notas falsas ou fora de circulação.",
+     "tip": "Pague com cartão ou app; consiga dinheiro em bancos e casas de câmbio oficiais."
+    },
+    {
+     "title": "Motochorros",
+     "desc": "Ladrões de moto miram quem usa o celular perto do meio-fio ou leva a bolsa do lado da rua.",
+     "tip": "Use pouco o celular, do lado da parede, e leve a bolsa atravessada no corpo."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Аргентинское песо (ARS)",

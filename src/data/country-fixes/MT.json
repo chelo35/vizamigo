@@ -1447,6 +1447,368 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Euro (EUR)",
+   "plugType": "Tipo G (230V, 50Hz)",
+   "bestMonths": "Abril – junho e setembro – outubro (clima quente, mar bom para banho); julho–agosto é muito quente e cheio; invernos amenos",
+   "safety": {
+    "safetyScore": 65,
+    "crimeRateSummary": "Malta é segura e a violência raramente atinge turistas. Na área de baladas de Paceville há brigas e batedores de carteira, e nas praias há furtos de pertences. O maior risco é o trânsito e a direção pela esquerda.",
+    "commonScams": [
+     "Contas infladas depois de ofertas de 'bebida grátis' na porta de boates de Paceville",
+     "Táxis sem licença que cobram a mais no porto e no aeroporto",
+     "Aumentos de preço de última hora nos barcos para a Lagoa Azul de Comino ou espreguiçadeiras caríssimas"
+    ],
+    "safeTravelTips": [
+     "Chame táxi pelo Bolt, Uber ou eCabs para ver o preço antes.",
+     "No verão, fique na sombra ao meio-dia e beba bastante água para evitar insolação.",
+     "Não entre no mar pelas pedras em dias de vento ou com bandeira vermelha."
+    ],
+    "emergencyNumbers": {
+     "police": "112",
+     "ambulance": "112",
+     "general": "112"
+    },
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "99% (4G/5G em todas as ilhas)",
+    "costPerGbUsd": "~US$ 1 - 3",
+    "esimAvailability": "Excelente",
+    "bestCarriers": [
+     "GO",
+     "Epic",
+     "Melita"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Regular (os ônibus da Malta Public Transport cobrem bastante coisa, mas no verão vivem lotados e atrasados; balsas para Gozo)",
+    "costLevel": "Barato",
+    "singleTicketUsd": "US$ 2,20 - 3,30",
+    "dailyPassUsd": "~US$ 27 (cartão Explore de 7 dias)",
+    "popularRideApps": [
+     "Bolt",
+     "Uber",
+     "eCabs",
+     "Tallinja"
+    ],
+    "taxiAdvice": "Bolt, Uber e eCabs são as opções mais fáceis e transparentes. Use o app Tallinja para passagens e rotas de ônibus; as balsas de Valletta para Sliema e para as Três Cidades são rápidas e bonitas."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 55 - 85",
+    "dailyBudgetMidrangeUsd": "US$ 120 - 200",
+    "budgetMealUsd": "US$ 14 - 22",
+    "coffeeUsd": "US$ 2 - 3,50",
+    "waterBottleUsd": "US$ 0,80 - 1,50",
+    "hostelDormUsd": "US$ 20 - 45",
+    "hotel3StarUsd": "US$ 90 - 180",
+    "flightCostIndex": "Moderado",
+    "flightTip": "A Turkish Airlines tem voo direto de Istambul para Malta (cerca de 2,5 horas). Ryanair e Wizz Air oferecem opções baratas via Europa."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Os malteses são calorosos e falantes; o cumprimento é um aperto de mão.",
+     "Cubra ombros e joelhos ao entrar em igrejas.",
+     "Andar por vilarejos ou igrejas em roupa de praia é malvisto.",
+     "As festas dos padroeiros (festa) são muito importantes; respeite as procissões."
+    ],
+    "festivals": [
+     "Carnaval de Malta (fevereiro, Valletta e Nadur, em Gozo)",
+     "Festas dos vilarejos (junho–setembro; fogos de artifício e procissões)",
+     "Notte Bianca (outubro, festival cultural noturno em Valletta)"
+    ],
+    "lifestyle": "Estilo de vida mediterrâneo: fortes laços de família e de vilarejo, tradições católicas no dia a dia e gosto pelo passeio no fim da tarde e pelos jantares à beira-mar."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Valletta (UNESCO) e a Concatedral de São João",
+     "Mdina, a 'Cidade do Silêncio'",
+     "As Três Cidades (Birgu, Senglea, Cospicua)",
+     "Templos megalíticos de Ġgantija e Ħaġar Qim (UNESCO)",
+     "Lagoa Azul de Comino",
+     "Gozo: Cidadela de Victoria e baía de Ramla"
+    ],
+    "bestSeasons": "Abril – junho e setembro – outubro (clima quente, mar bom para banho); julho–agosto é muito quente e cheio; invernos amenos",
+    "travelStyleTip": "Hospede-se em Valletta ou Sliema; vá a Mdina de ônibus e a Gozo de balsa a partir de Ċirkewwa (ou na balsa rápida que sai de Valletta). Se alugar carro, lembre-se de que a mão é inglesa (dirige-se pela esquerda)."
+   },
+   "religion": {
+    "primaryReligions": "Católicos (~80–85%, religião oficial); pequenas comunidades protestante, ortodoxa e muçulmana (há uma mesquita em Paola).",
+    "respectNorms": "Nas igrejas é preciso cobrir ombros e joelhos; algumas emprestam xales. Não tire fotos durante a missa.",
+    "sacredSites": [
+     "Concatedral de São João (Valletta; quadros de Caravaggio)",
+     "Rotunda de Mosta (Igreja da Assunção)",
+     "Basílica de Ta' Pinu (Gozo)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Maltês (de raiz árabe, a única língua semítica escrita no alfabeto latino) e inglês. O italiano é bastante compreendido.",
+    "englishProficiency": "Excelente; o inglês é língua oficial e todo mundo fala.",
+    "phrases": [
+     {
+      "phrase": "Bonġu",
+      "meaning": "Bom dia / Olá",
+      "translation": "Bom dia / Olá",
+      "pronunciation": "BON-joo"
+     },
+     {
+      "phrase": "Grazzi",
+      "meaning": "Obrigado(a)",
+      "translation": "Obrigado(a)",
+      "pronunciation": "GRAHT-see"
+     },
+     {
+      "phrase": "Jekk jogħġbok",
+      "meaning": "Por favor",
+      "translation": "Por favor",
+      "pronunciation": "yek YOJ-bok"
+     },
+     {
+      "phrase": "Kemm jiswa?",
+      "meaning": "Quanto custa?",
+      "translation": "Quanto custa?",
+      "pronunciation": "kemm YEES-wah"
+     },
+     {
+      "phrase": "Saħħa!",
+      "meaning": "Saúde! / Tchau",
+      "translation": "Saúde! / Tchau",
+      "pronunciation": "SAH-hah"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Malta abriga templos megalíticos que estão entre as estruturas de pedra independentes mais antigas do mundo. Depois de fenícios, romanos, árabes e normandos, passou à Ordem de São João em 1530, resistiu ao Grande Cerco otomano de 1565, foi britânica a partir de 1800, tornou-se independente em 1964 e entrou na UE em 2004.",
+    "milestones": [
+     "c. 3600 a.C.: construção dos templos de Ġgantija",
+     "1530: os Cavaleiros de São João se instalam na ilha",
+     "1565: o Grande Cerco e, depois, a fundação de Valletta (1566)",
+     "1964: independência; república em 1974, UE em 2004"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Stuffat tal-fenek (coelho ensopado no vinho; prato nacional)",
+     "Lampuki pie (torta de dourado, no outono)",
+     "Ftira (pão ao estilo de Gozo com tomate, atum e alcaparras)"
+    ],
+    "traditionalDrinks": [
+     "Kinnie (refrigerante de laranja amarga)",
+     "Cerveja Cisk",
+     "Bajtra (licor de figo-da-índia)"
+    ],
+    "streetFoodAndDesserts": [
+     "Pastizzi (folhados de ricota ou de ervilha)",
+     "Imqaret (docinhos fritos de tâmara)",
+     "Qagħaq tal-għasel (rosquinhas de melado)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Jean de la Valette (grão-mestre durante o Grande Cerco)",
+     "Dun Karm Psaila (poeta nacional, autor do hino)",
+     "Edward de Bono (criador do 'pensamento lateral')"
+    ],
+    "strongSectors": [
+     "Jogos on-line (iGaming)",
+     "Serviços financeiros e registro de navios",
+     "Turismo e escolas de inglês"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Cartões são amplamente aceitos; leve dinheiro vivo para quiosques de pastizzi, bares de vilarejo e alguns barcos.",
+    "tippingCulture": "Nos restaurantes, 5–10% é bem-vindo, embora não seja esperado; nos táxis basta arredondar.",
+    "economicPillars": "Turismo, iGaming, finanças, serviços marítimos/registro de navios, indústria farmacêutica e eletrônica."
+   }
+  },
+  "itin": {
+   "routeName": "A ilha dos cavaleiros: Valletta, Mdina e Gozo",
+   "routeSummary": "Um roteiro de 6 dias que vai da barroca Valletta e das Três Cidades até a murada Mdina e, de balsa, às enseadas de Gozo e Comino.",
+   "totalDays": 6,
+   "idealDurationText": "6 dias",
+   "bestSeason": "Abril – junho e setembro – outubro (clima quente, mar bom para banho); julho–agosto é muito quente e cheio; invernos amenos",
+   "transportMode": "Ônibus, balsa e Bolt/eCabs; carro alugado opcional em Gozo",
+   "paceLevel": "Moderado",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Valletta e as Três Cidades",
+     "recommendedDuration": "2–3 dias",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Concatedral de São João e a 'Decapitação de São João Batista' de Caravaggio",
+      "Jardins da Alta Barrakka e a Bateria da Saudação (tiro de canhão do meio-dia)",
+      "Palácio do Grão-Mestre",
+      "Vielas de Birgu e Forte de Santo Ângelo"
+     ],
+     "activities": [
+      "Admire o Grand Harbour e o tiro de canhão do meio-dia dos jardins da Alta Barrakka.",
+      "Atravesse até as Três Cidades num barco tradicional dgħajsa.",
+      "Passeie ao pôr do sol pelo calçadão de Sliema."
+     ],
+     "foodAndDrinks": [
+      "Pastizzi quentinhos de um quiosque de Valletta",
+      "Kinnie com uma ftira",
+      "Restaurantes de frutos do mar com vista para o porto"
+     ],
+     "criticalTips": [
+      "Na Concatedral é preciso cobrir ombros e joelhos; saltos agulha não são permitidos.",
+      "Entrar de carro em Valletta é difícil e estacionar é caro; use ônibus ou balsa."
+     ],
+     "mapsQuery": "St John's Co-Cathedral, Valletta, Malta"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Mdina, Rabat e falésias de Dingli",
+     "recommendedDuration": "1 dia",
+     "durationBadge": "1 dia",
+     "highlights": [
+      "Portão principal e bastiões de Mdina",
+      "Catedral de São Paulo (Mdina)",
+      "Catacumbas de São Paulo em Rabat",
+      "Pôr do sol nas falésias de Dingli"
+     ],
+     "activities": [
+      "Passeie pelas ruas silenciosas de Mdina no fim da tarde.",
+      "Explore os túmulos romanos das catacumbas.",
+      "Percorra a trilha no alto das falésias de Dingli."
+     ],
+     "foodAndDrinks": [
+      "Pastizzi do quiosque Crystal Palace em Rabat",
+      "Bolo e café num café sobre os bastiões"
+     ],
+     "criticalTips": [
+      "Mdina é habitada; faça silêncio e seja discreto ao fotografar portas de casas.",
+      "As falésias de Dingli não têm guarda-corpo; não chegue perto da borda."
+     ],
+     "mapsQuery": "Mdina Main Gate, Malta"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Gozo e Comino",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Cidadela de Victoria",
+      "Templos de Ġgantija",
+      "Areia vermelha da baía de Ramla",
+      "Lagoa Azul de Comino"
+     ],
+     "activities": [
+      "Pegue a balsa de Ċirkewwa para Gozo e admire a ilha das muralhas da Cidadela.",
+      "Visite o Mar Interior e a rocha Fungus em Dwejra (onde ficava a extinta Janela Azul).",
+      "Vá de barco até Comino e mergulhe na Lagoa Azul."
+     ],
+     "foodAndDrinks": [
+      "Ġbejniet (queijo de ovelha de Gozo)",
+      "Peixe fresco e ensopado de polvo",
+      "Licor de bajtra"
+     ],
+     "criticalTips": [
+      "A Lagoa Azul fica lotada no verão; vá cedo ou no fim do dia e combine antes o preço do barco.",
+      "Na balsa de Gozo, só se paga no trajeto de volta, saindo de Gozo."
+     ],
+     "mapsQuery": "Ramla Bay, Gozo, Malta"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Ensopado de coelho (stuffat tal-fenek)",
+     "Lampuki pie",
+     "Ross il-forn (arroz de forno)",
+     "Aljotta (sopa de peixe)"
+    ],
+    "drinks": [
+     "Kinnie",
+     "Cisk",
+     "Vinhos malteses (uvas Ġellewża, Girgentina)",
+     "Bajtra"
+    ],
+    "streetFoods": [
+     "Pastizzi",
+     "Ftira",
+     "Imqaret",
+     "Ħobż biż-żejt (pão com azeite e tomate)"
+    ],
+    "diningAdvice": "Um pastizz costuma custar cerca de 1 € e é o lanche mais barato. Coelho e porco são comuns, mas há muito peixe e legumes; existem restaurantes halal perto da mesquita de Paola."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptador tipo G (britânico)",
+     "Protetor solar de fator alto e chapéu",
+     "Sapatilhas aquáticas para costões rochosos",
+     "Lenço ou casaquinho leve para as igrejas"
+    ],
+    "safetyAndEtiquette": [
+     "A mão é inglesa; ao atravessar, olhe primeiro para a direita.",
+     "Andar de roupa de banho fora da praia é malvisto.",
+     "No verão pode haver águas-vivas (sobretudo na Lagoa Azul); fique atento às bandeiras."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Tomadas de padrão britânico, com três pinos retangulares (G); aparelhos turcos precisam de adaptador tipo G."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "A água da torneira é segura, mas em grande parte é água do mar dessalinizada e pode ter gosto salgado ou de cloro; os moradores costumam beber água engarrafada ou filtrada.",
+    "vaccines": [
+     "Vacinas de rotina (tétano, difteria, sarampo)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "112"
+   },
+   "tipping": {
+    "custom": "Nos restaurantes, 5–10% é bem-vindo.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Se a conta já inclui taxa de serviço, não é preciso dar mais gorjeta."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA de 18%; restituição líquida de ~10–13%",
+    "minSpend": "~100 € ou mais numa mesma loja",
+    "customsNote": "Valide os formulários Tax Free no posto da alfândega do aeroporto de Malta antes de despachar a bagagem."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 1,00 - 3,00",
+    "topCarriers": [
+     "GO",
+     "Epic",
+     "Melita"
+    ],
+    "airportSimTrapWarning": "O roaming com linhas turcas é caro. Os pacotes de chip turístico do aeroporto podem custar mais do que na cidade; uma eSIM ou uma loja GO ou Epic em Sliema/Valletta sai mais em conta."
+   },
+   "touristScams": [
+    {
+     "title": "Armadilha da 'bebida grátis' em Paceville",
+     "desc": "Os promotores prometem shots grátis, mas lá dentro os preços são altíssimos ou a conta vem inflada.",
+     "tip": "Não peça nada sem cardápio com preços e pague a cada rodada."
+    },
+    {
+     "title": "Preços de barco e espreguiçadeiras na Lagoa Azul",
+     "desc": "Em Sliema e Ċirkewwa, as passagens de barco e as espreguiçadeiras ou guarda-sóis da lagoa podem subir na última hora.",
+     "tip": "Compre em bilheterias oficiais e confirme por escrito o horário de volta e todas as tarifas."
+    },
+    {
+     "title": "Táxis sem licença",
+     "desc": "Motoristas não oficiais no porto e no aeroporto podem cobrar bem mais que a tarifa fixa.",
+     "tip": "Use o balcão oficial de táxis do aeroporto ou os apps Bolt/eCabs."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Евро (EUR)",

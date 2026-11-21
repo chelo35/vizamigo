@@ -1415,6 +1415,360 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Euro (EUR)",
+   "plugType": "Tipo C, F (230V, 50Hz)",
+   "bestMonths": "Dezembro a março (temporada de esqui) e junho a setembro (trilhas e lagos)",
+   "safety": {
+    "safetyScore": 85,
+    "safetyLevel": "Excepcionalmente seguro",
+    "badgeColor": "bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-900/60",
+    "crimeRateSummary": "Um dos países mais seguros da Europa, com criminalidade muito baixa. Os riscos reais são as condições da montanha, as avalanches e as estradas bloqueadas pela neve no inverno.",
+    "commonScams": [
+     "Furto de esquis e equipamentos deixados sem vigilância nas estações",
+     "Compras acima da cota de isenção aduaneira que terminam em multa na fronteira",
+     "Um ou outro batedor de carteira em ruas comerciais movimentadas"
+    ],
+    "safeTravelTips": [
+     "Confira a previsão do tempo antes das trilhas de montanha; para resgates, ligue para o 112.",
+     "Se for dirigir no inverno, leve correntes ou pneus de inverno.",
+     "Respeite as cotas de isenção para tabaco, álcool e eletrônicos ao voltar para a Espanha ou a França."
+    ],
+    "emergencyNumbers": {
+     "police": "110",
+     "ambulance": "116",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "95 %+ de 4G/5G nos vales; sinal fraco nas trilhas de alta montanha",
+    "costPerGbUsd": "~US$ 2 - 5",
+    "esimAvailability": "Boa",
+    "bestCarriers": [
+     "Andorra Telecom"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Adequado",
+    "costLevel": "Moderado",
+    "singleTicketUsd": "US$ 2 - 3,50",
+    "dailyPassUsd": "US$ 5 - 10",
+    "popularRideApps": [
+     "Táxis por telefone",
+     "Andbus / Alsa / Directbus (conexões com Barcelona e Toulouse)",
+     "Google Maps"
+    ],
+    "taxiAdvice": "Não há apps como o Uber; os táxis são chamados por telefone ou pegos nos pontos. As linhas nacionais de ônibus são baratas e frequentes."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 70 - 100",
+    "dailyBudgetMidrangeUsd": "US$ 150 - 250",
+    "budgetMealUsd": "US$ 15 - 25",
+    "coffeeUsd": "US$ 2 - 3",
+    "waterBottleUsd": "US$ 1 - 2",
+    "hostelDormUsd": "US$ 25 - 45",
+    "hotel3StarUsd": "US$ 80 - 150",
+    "flightCostIndex": "Moderado",
+    "flightTip": "Andorra não tem aeroporto nem trem; voe para Barcelona ou Toulouse e siga de ônibus (3 a 3,5 horas)."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Cumprimentar em catalão (\"Bon dia\") é muito bem-visto pelos moradores.",
+     "O almoço é das 13h às 15h, e o jantar, depois das 20h.",
+     "Fique em silêncio durante as missas nas igrejas.",
+     "Não saia das trilhas sinalizadas e leve seu lixo de volta."
+    ],
+    "festivals": [
+     "Dia de Meritxell (8 de setembro, feriado nacional)",
+     "Escudella de Sant Antoni (17 de janeiro)",
+     "Festa maior de Andorra la Vella (início de agosto)"
+    ],
+    "lifestyle": "Pequenas vilas nos vales dos Pirineus, cultura de esqui e trilhas, e ruas de comércio com vantagens fiscais."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Centro histórico de Andorra la Vella e Casa de la Vall",
+     "Spa termal Caldea",
+     "Estação de esqui Grandvalira",
+     "Vale de Madriu-Perafita-Claror (UNESCO)",
+     "Santuário de Meritxell",
+     "Mirante do Roc del Quer"
+    ],
+    "bestSeasons": "Dezembro a março (temporada de esqui) e junho a setembro (trilhas e lagos)",
+    "travelStyleTip": "O país é pequeno: hospede-se em Andorra la Vella e explore os vales de ônibus."
+   },
+   "religion": {
+    "primaryReligions": "Católica romana (~85 %), com pequenas comunidades protestante e muçulmana.",
+    "respectNorms": "Respeite as regras de iluminação e silêncio nas igrejas românicas; não use flash.",
+    "sacredSites": [
+     "Santuário de Meritxell",
+     "Igreja de Sant Joan de Caselles",
+     "Igreja de Santa Coloma"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Catalão (oficial). Espanhol, francês e português também são comuns.",
+    "englishProficiency": "Moderado em hotéis e estações de esqui; espanhol e francês são bem mais difundidos.",
+    "phrases": [
+     {
+      "phrase": "Bon dia",
+      "meaning": "Bom dia / Olá",
+      "translation": "Bom dia / Olá",
+      "pronunciation": "bon DEE-ah"
+     },
+     {
+      "phrase": "Gràcies / Merci",
+      "meaning": "Obrigado(a)",
+      "translation": "Obrigado(a)",
+      "pronunciation": "GRAH-see-es / mer-SEE"
+     },
+     {
+      "phrase": "Si us plau",
+      "meaning": "Por favor",
+      "translation": "Por favor",
+      "pronunciation": "see oos PLOW"
+     },
+     {
+      "phrase": "Quant costa?",
+      "meaning": "Quanto custa?",
+      "translation": "Quanto custa?",
+      "pronunciation": "kwan KOS-tah?"
+     },
+     {
+      "phrase": "Adéu",
+      "meaning": "Tchau / Adeus",
+      "translation": "Tchau / Adeus",
+      "pronunciation": "ah-DEH-oo"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Com o Pareatge de 1278, o bispo de Urgell e o conde de Foix tornaram-se copríncipes; o coprincipado continua até hoje, com o bispo de Urgell e o presidente da França. A primeira constituição foi aprovada em 1993.",
+    "milestones": [
+     "1278: Pareatge",
+     "1419: Consell de la Terra (primeira assembleia)",
+     "1993: Constituição e entrada na ONU",
+     "2004: o vale do Madriu vira Patrimônio da UNESCO"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Trinxat (repolho, batata e toucinho salteados)",
+     "Escudella (ensopado de carne bem substancioso)",
+     "Canelons (canelones à moda catalã)"
+    ],
+    "traditionalDrinks": [
+     "Ratafia (licor doce de ervas)",
+     "Vinho andorrano",
+     "Chocolate quente espesso (xocolata desfeta)"
+    ],
+    "streetFoodAndDesserts": [
+     "Crema catalana",
+     "Coca (torta fina catalã)",
+     "Queijos e embutidos locais (embotits)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Carlos Magno (fundador lendário, citado no hino nacional)",
+     "Albert Salvadó (escritor)",
+     "Joan Verdú (esquiador olímpico)"
+    ],
+    "strongSectors": [
+     "Turismo e esqui",
+     "Comércio e compras com impostos baixos",
+     "Bancos e finanças"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "A moeda é o euro e cartões são aceitos em toda parte. Andorra não é membro da UE.",
+    "tippingCulture": "A gorjeta não é obrigatória; deixar 5-10 % nos restaurantes é um gesto simpático.",
+    "economicPillars": "Turismo, comércio, setor bancário e construção civil."
+   }
+  },
+  "itin": {
+   "routeName": "Roteiro pelos Pirineus de Andorra: Andorra la Vella, Ordino e Canillo",
+   "routeSummary": "Roteiro de 4 dias que vai das ruas de pedra da capital e do spa Caldea aos vales tranquilos de Ordino e às pistas e mirantes de Canillo.",
+   "totalDays": 4,
+   "idealDurationText": "Roteiro de 4 dias pelos Pirineus",
+   "bestSeason": "Dezembro a março (temporada de esqui) e junho a setembro (trilhas e lagos)",
+   "transportMode": "Linhas nacionais de ônibus + a pé (ônibus de traslado para as pistas no inverno)",
+   "paceLevel": "Tranquilo (natureza e bem-estar)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Andorra la Vella e Escaldes",
+     "recommendedDuration": "2 dias (capital e spa)",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Barri Antic (centro histórico)",
+      "Casa de la Vall",
+      "Spa termal Caldea",
+      "Área comercial da avenida Meritxell"
+     ],
+     "activities": [
+      "Relaxe nas piscinas termais do Caldea.",
+      "Passeie pelas ruas de pedra do centro histórico.",
+      "Faça uma trilha curta até a entrada do vale do Madriu."
+     ],
+     "foodAndDrinks": [
+      "Trinxat",
+      "Escudella",
+      "Crema catalana"
+     ],
+     "criticalTips": [
+      "Lembre-se das cotas de isenção aduaneira na hora das compras.",
+      "Algumas lojas fecham aos domingos."
+     ],
+     "mapsQuery": "Andorra la Vella, Andorra"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Ordino",
+     "recommendedDuration": "1 dia (vale e lagos)",
+     "durationBadge": "1 dia",
+     "highlights": [
+      "Lagos de Tristaina",
+      "Parque Natural de Sorteny",
+      "Centro da vila de Ordino"
+     ],
+     "activities": [
+      "No verão, suba até os lagos de Tristaina.",
+      "Conheça a flora de montanha em Sorteny.",
+      "Percorra o centro da vila e suas casas de pedra."
+     ],
+     "foodAndDrinks": [
+      "Embotits",
+      "Ratafia"
+     ],
+     "criticalTips": [
+      "A estrada para os lagos fica fechada no inverno.",
+      "O tempo na montanha muda rápido; leve uma capa de chuva."
+     ],
+     "mapsQuery": "Ordino, Andorra"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Canillo e Soldeu",
+     "recommendedDuration": "1 dia (montanha e esqui)",
+     "durationBadge": "1 dia",
+     "highlights": [
+      "Mirante do Roc del Quer",
+      "Santuário de Meritxell",
+      "Pistas da Grandvalira",
+      "Igreja de Sant Joan de Caselles"
+     ],
+     "activities": [
+      "Caminhe pela passarela suspensa sobre o vazio do Roc del Quer.",
+      "Esquie na Grandvalira no inverno.",
+      "No verão, experimente o tobogã de montanha Tobotronc."
+     ],
+     "foodAndDrinks": [
+      "Canelons",
+      "Chocolate quente espesso",
+      "Coca"
+     ],
+     "criticalTips": [
+      "Os passes de esqui (forfaits) saem mais baratos on-line.",
+      "No inverno, confira as condições das estradas e os alertas de avalanche."
+     ],
+     "mapsQuery": "Canillo, Andorra"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Trinxat (repolho, batata e toucinho salteados)",
+     "Escudella (ensopado de carne bem substancioso)",
+     "Canelons (canelones à moda catalã)"
+    ],
+    "drinks": [
+     "Ratafia (licor doce de ervas)",
+     "Vinho andorrano",
+     "Chocolate quente espesso (xocolata desfeta)"
+    ],
+    "streetFoods": [
+     "Crema catalana",
+     "Coca (torta fina catalã)",
+     "Queijos e embutidos locais (embotits)"
+    ],
+    "diningAdvice": "Prove a cozinha dos Pirineus nas bordas (antigos celeiros de pedra); o menu do dia tem ótimo custo-benefício."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Roupas de montanha em camadas",
+     "Botas de trilha",
+     "Óculos de sol e protetor solar",
+     "Correntes para neve no inverno"
+    ],
+    "safetyAndEtiquette": [
+     "Não saia das trilhas sinalizadas na montanha.",
+     "Respeite as cotas de isenção aduaneira e fique em silêncio nas igrejas."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Tomadas tipo C/F (230 V), como na Turquia; não é preciso adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "A água da torneira vem de nascentes de montanha e é limpa e potável.",
+    "vaccines": [
+     "Vacinas de rotina (difteria e tétano, tríplice viral)",
+     "Não são exigidas vacinas especiais"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "116"
+   },
+   "tipping": {
+    "custom": "A gorjeta é opcional; 5-10 % pelo bom atendimento.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "Nas cafeterias, basta arredondar a conta."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IGI (imposto geral) de 4,5 %; sem reembolso para turistas",
+    "minSpend": "Não se aplica",
+    "customsNote": "Andorra não faz parte da UE e não reembolsa impostos a turistas; a tributação já é baixa. Ao entrar na Espanha ou na França, valem cotas de isenção para tabaco, álcool e outros produtos, com fiscalização frequente."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 2 - 5",
+    "topCarriers": [
+     "Andorra Telecom"
+    ],
+    "airportSimTrapWarning": "A Andorra Telecom é a única operadora; o país fica fora do roaming da UE e o roaming estrangeiro pode sair caro. Garanta um chip turístico ou um eSIM que cubra Andorra."
+   },
+   "touristScams": [
+    {
+     "title": "Furto de esquis",
+     "desc": "Esquis deixados na porta de restaurantes e teleféricos podem sumir.",
+     "tip": "Use um cadeado ou deixe cada esqui do par em um lugar diferente."
+    },
+    {
+     "title": "Multa na alfândega",
+     "desc": "Comprar tabaco ou álcool barato em excesso acaba em multa na fronteira.",
+     "tip": "Confira as cotas de isenção antes."
+    },
+    {
+     "title": "Susto com o roaming",
+     "desc": "As tarifas da UE não cobrem Andorra e a conta pode disparar.",
+     "tip": "Antes de chegar, providencie um chip local ou um eSIM que cubra Andorra."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Евро (EUR)",

@@ -1443,6 +1443,367 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Afegane afegão (AFN)",
+   "plugType": "Tipo C, F (220V, 50Hz)",
+   "bestMonths": "Abril a junho e setembro a outubro (clima ameno e seco); os invernos são muito rigorosos nas montanhas e os verões passam dos 40 °C em Herat e no sul",
+   "safety": {
+    "safetyScore": 10,
+    "safetyLevel": "Zona de conflito (não viaje)",
+    "badgeColor": "bg-rose-600 text-white border-rose-700 dark:bg-rose-950 dark:text-rose-200",
+    "crimeRateSummary": "Espanha, Reino Unido (FCDO), EUA e Turquia desaconselham qualquer viagem ao Afeganistão. O risco de atentados, sequestros e detenções arbitrárias de estrangeiros é muito alto; em maio de 2024, um grupo de turistas estrangeiros sofreu um ataque armado em Bamiyan.",
+    "commonScams": [
+     "“Guias” e motoristas sem licença que cobram preços inflados prometendo segurança",
+     "Cédulas falsas ou gastas e taxas de câmbio manipuladas na hora de trocar dinheiro",
+     "Pedras tingidas vendidas como lápis-lazúli e tapetes novos vendidos como “antiguidades”"
+    ],
+    "safeTravelTips": [
+     "Se a viagem for indispensável, vá apenas com uma operadora experiente que trabalhe com as autoridades locais e com um roteiro fechado.",
+     "Nunca fotografe postos de controle nem prédios oficiais; tenha sempre com você seus documentos e autorizações.",
+     "Contrate um seguro especializado que inclua evacuação e registre sua viagem na embaixada do seu país."
+    ],
+    "emergencyNumbers": {
+     "police": "119",
+     "ambulance": "102",
+     "general": "119"
+    }
+   },
+   "internet": {
+    "networkCoverage": "3G/4G nas cidades, fraco ou inexistente nas áreas rurais; no outono (no hemisfério norte) de 2025 houve um apagão de internet em todo o país, e o acesso pode ser restringido a qualquer momento",
+    "costPerGbUsd": "~US$ 0,50 - 1,50",
+    "esimAvailability": "Limitada (poucos planos de eSIM internacionais, e caros; o chip local exige cadastro com passaporte)",
+    "bestCarriers": [
+     "Roshan",
+     "Afghan Wireless (AWCC)",
+     "Salaam (Afghan Telecom)"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Precário (poucas estradas asfaltadas, e as rotas entre cidades são perigosas)",
+    "costLevel": "Barato (mas um motorista particular de confiança sai caro)",
+    "singleTicketUsd": "0,10 - 0,30 $ (micro-ônibus urbano)",
+    "dailyPassUsd": "Não existe (não há passe diário)",
+    "popularRideApps": [
+     "Não há apps internacionais de transporte",
+     "Motorista particular do hotel ou da operadora"
+    ],
+    "taxiAdvice": "Uber, Bolt e apps parecidos não funcionam. Nos táxis amarelos e brancos de Cabul, combine o preço antes de entrar; por segurança, use apenas o motorista providenciado pelo hotel ou pela operadora. Os voos domésticos (Kam Air, Ariana) são preferíveis à estrada."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 30 - 50",
+    "dailyBudgetMidrangeUsd": "US$ 80 - 150",
+    "budgetMealUsd": "US$ 2 - 5",
+    "coffeeUsd": "US$ 1,00 - 3,00",
+    "waterBottleUsd": "US$ 0,30 - 0,60",
+    "hostelDormUsd": "US$ 15 - 30",
+    "hotel3StarUsd": "US$ 50 - 120",
+    "flightCostIndex": "Alto (sem voos diretos, conexões limitadas)",
+    "flightTip": "Não há voos diretos da Turquia nem da Espanha para Cabul; normalmente a conexão é por Dubai (flydubai, Ariana, Kam Air) ou Islamabad. Compre passagens flexíveis, porque os cancelamentos são frequentes."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Colocar a mão direita sobre o coração ao cumprimentar é sinal de respeito; não estenda a mão para mulheres, a menos que elas tomem a iniciativa.",
+     "Espera-se que as mulheres usem lenço na cabeça e roupas que cubram todo o corpo, e que os homens usem calça comprida e camisa com mangas.",
+     "A hospitalidade é sagrada; não recuse o chá oferecido e coma com a mão direita.",
+     "Não fotografe pessoas, principalmente mulheres e funcionários públicos, sem permissão."
+    ],
+    "festivals": [
+     "Eid al-Fitr e Eid al-Adha",
+     "Nowruz (21 de março; tradicionalmente celebrado em Mazar-i-Sharif, hoje sem comemoração oficial)",
+     "Dia da Independência (19 de agosto)"
+    ],
+    "lifestyle": "A família estendida, as casas de chá e os bazares estão no centro da vida; a vida social é muito ligada às normas religiosas e às tradições tribais."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Parque Nacional Band-e Amir (lagos azul-turquesa, Bamiyan)",
+     "Vale de Bamiyan e nichos dos Budas (UNESCO)",
+     "Cidadela e Mesquita de Sexta-feira de Herat",
+     "Mesquita Azul de Mazar-i-Sharif (santuário de Ali)",
+     "Jardins de Babur, Cabul",
+     "Minarete de Jam (UNESCO, província de Ghor)"
+    ],
+    "bestSeasons": "Abril a junho e setembro a outubro",
+    "travelStyleTip": "Viajar por conta própria não é possível nem recomendável; as visitas devem ser curtas, com operadoras especializadas e voos domésticos."
+   },
+   "religion": {
+    "primaryReligions": "Muçulmanos ~99,7 % (sunitas ~85-90 %, xiitas ~10-15 %)",
+    "respectNorms": "Nas mesquitas é preciso tirar os sapatos, e as mulheres cobrem o cabelo. Durante o Ramadã, é proibido comer, beber ou fumar em público durante o dia.",
+    "sacredSites": [
+     "Mesquita Azul de Mazar-i-Sharif (santuário de Ali)",
+     "Mesquita de Sexta-feira de Herat (Masjid-i Jami)",
+     "Mesquita Shah-Do Shamshira, Cabul"
+    ]
+   },
+   "language": {
+    "officialLanguages": "O dari (persa afegão) e o pashto são as línguas oficiais; no norte também se falam usbeque e turcomeno.",
+    "englishProficiency": "Baixo; fora de hotéis, ONGs e operadoras, quase não se fala inglês. Algumas palavras em dari ajudam muito.",
+    "phrases": [
+     {
+      "phrase": "سلام علیکم (Salām alaykum)",
+      "meaning": "Olá (que a paz esteja com você)",
+      "translation": "Olá",
+      "pronunciation": "sa-LAAM a-LAY-kum"
+     },
+     {
+      "phrase": "تشکر / مننه (Tashakor / Manana)",
+      "meaning": "Obrigado(a) (dari / pashto)",
+      "translation": "Obrigado(a)",
+      "pronunciation": "ta-sha-KOR / ma-NA-na"
+     },
+     {
+      "phrase": "لطفاً (Lotfan)",
+      "meaning": "Por favor",
+      "translation": "Por favor",
+      "pronunciation": "LOT-fan"
+     },
+     {
+      "phrase": "چند است؟ (Chand ast?)",
+      "meaning": "Quanto custa?",
+      "translation": "Quanto é?",
+      "pronunciation": "chand AST"
+     },
+     {
+      "phrase": "خدا حافظ (Khodā hāfez)",
+      "meaning": "Tchau (que Deus te proteja)",
+      "translation": "Tchau",
+      "pronunciation": "kho-DAA haa-FEZ"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Na encruzilhada da Rota da Seda, a região abrigou a Báctria, os cuchanos, os gaznévidas e os gúridas, e Herat foi capital cultural sob os timúridas. Ahmad Shah Durrani fundou o Estado moderno em 1747, e a independência plena veio em 1919. Depois de décadas de guerra desde 1979, o Talibã tomou o poder em agosto de 2021.",
+    "milestones": [
+     "1747: Ahmad Shah Durrani funda o Estado afegão",
+     "1919: Independência plena após a Terceira Guerra Anglo-Afegã",
+     "1921: Tratado de Amizade com a Turquia",
+     "2021: O Talibã toma o poder"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Kabuli palaw (arroz com cordeiro, cenoura e uvas-passas, prato nacional)",
+     "Mantu (pasteizinhos cozidos de carne com iogurte e molho de lentilha)",
+     "Ashak (pasteizinhos de alho-poró com iogurte e molho de carne)"
+    ],
+    "traditionalDrinks": [
+     "Chá verde (chai sabz) e chá preto com cardamomo",
+     "Doogh (bebida de iogurte com hortelã)",
+     "Sheer chai (chá com leite cremoso e salgado)"
+    ],
+    "streetFoodAndDesserts": [
+     "Bolani (pão achatado recheado de batata ou alho-poró)",
+     "Sheer yakh (sorvete de água de rosas e pistache)",
+     "Jalebi (doce em calda típico do Nowruz e do inverno)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Jalaluddin Rumi (nascido em Balkh)",
+     "Ahmad Shah Durrani (fundador do Estado moderno)",
+     "Rashid Khan (jogador de críquete famoso no mundo todo)"
+    ],
+    "strongSectors": [
+     "Agricultura (açafrão, romãs, frutas secas e castanhas)",
+     "Mineração (lápis-lazúli, cobre, carvão)",
+     "Tapetes e kilims feitos à mão"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "A economia funciona quase toda em dinheiro vivo; cartões e caixas eletrônicos internacionais praticamente não funcionam. Leve afeganes e dólares americanos; pagamentos maiores costumam ser feitos em dólar.",
+    "tippingCulture": "Nos restaurantes, basta arredondar a conta; motoristas e guias esperam uma pequena gorjeta diária.",
+    "economicPillars": "Agricultura, mineração, tecelagem de tapetes, comércio de fronteira e ajuda externa."
+   }
+  },
+  "itin": {
+   "routeName": "Roteiro informativo pelo Afeganistão: Cabul, Bamiyan e Herat (só com operadora; viagem desaconselhada)",
+   "routeSummary": "Um roteiro curto de 6 dias com voos domésticos, apenas informativo: desaconselhado pelos alertas oficiais e possível somente com uma operadora especializada, dos jardins de Cabul aos lagos azul-turquesa de Bamiyan e ao legado timúrida de Herat.",
+   "totalDays": 6,
+   "idealDurationText": "Roteiro de 6 dias",
+   "bestSeason": "Abril a junho e setembro a outubro",
+   "transportMode": "Voos domésticos (Kam Air, Ariana) + veículo particular com motorista da operadora",
+   "paceLevel": "Tranquilo e controlado (segurança em primeiro lugar)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Cabul (capital e Jardins de Babur)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Jardins de Babur e túmulo de Babur",
+      "Museu Nacional do Afeganistão",
+      "Mesquita Shah-Do Shamshira",
+      "Mercado de pássaros Ka Faroshi"
+     ],
+     "activities": [
+      "Passeie pelos terraços dos Jardins de Babur, com vista para a cidade.",
+      "Veja peças bactrianas e budistas no Museu Nacional.",
+      "Percorra com sua operadora as lojas de frutas secas e tapetes do bazar."
+     ],
+     "foodAndDrinks": [
+      "Kabuli palaw",
+      "Bolani",
+      "Sorvete sheer yakh"
+     ],
+     "criticalTips": [
+      "Não ande pela cidade por conta própria; planeje cada deslocamento com sua operadora.",
+      "Nunca fotografe postos de controle nem prédios oficiais."
+     ],
+     "mapsQuery": "Kabul, Afghanistan"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Bamiyan e Band-e Amir (vales e lagos azul-turquesa)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Nichos dos Budas de Bamiyan (UNESCO)",
+      "Lagos do Parque Nacional Band-e Amir",
+      "Ruínas de Shahr-e Gholghola (Cidade dos Gritos)",
+      "Fortaleza de Shahr-e Zohak"
+     ],
+     "activities": [
+      "Visite os nichos dos Budas gigantes destruídos e os mosteiros escavados na rocha.",
+      "Caminhe um pouco à beira dos lagos de Band-e Amir, separados por diques naturais de travertino.",
+      "Observe a vida no campo nas aldeias hazaras do vale."
+     ],
+     "foodAndDrinks": [
+      "Pratos com as batatas de Bamiyan",
+      "Pratos com molho de qurut (iogurte seco)",
+      "Chá verde"
+     ],
+     "criticalTips": [
+      "Em maio de 2024 houve um ataque contra turistas aqui; vá apenas em um tour com plano de segurança.",
+      "As noites são frias mesmo no verão (mais de 2.500 m de altitude); leve roupas quentes."
+     ],
+     "mapsQuery": "Bamyan, Afghanistan"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Herat (legado timúrida)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Cidadela de Herat (Qala-e Ikhtiyaruddin)",
+      "Mesquita de Sexta-feira de Herat e sua oficina de azulejos",
+      "Minaretes de Musalla",
+      "Santuário de Khwaja Abdullah Ansari em Gazargah"
+     ],
+     "activities": [
+      "Admire os azulejos da Mesquita de Sexta-feira e a oficina dos artesãos.",
+      "Contemple os telhados da cidade velha a partir da cidadela.",
+      "Procure açafrão de Herat, vidro e tecidos artesanais no bazar."
+     ],
+     "foodAndDrinks": [
+      "Kishmish panir (uvas-passas com queijo fresco)",
+      "Arroz com açafrão",
+      "Sheer chai"
+     ],
+     "criticalTips": [
+      "De junho a setembro sopram os “ventos de 120 dias” e faz 40 °C.",
+      "As regras de vestimenta para mulheres também são aplicadas com rigor aqui."
+     ],
+     "mapsQuery": "Herat, Afghanistan"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Kabuli palaw (arroz com cordeiro, cenoura e uvas-passas, prato nacional)",
+     "Mantu (pasteizinhos cozidos de carne com iogurte e molho de lentilha)",
+     "Ashak (pasteizinhos de alho-poró com iogurte e molho de carne)"
+    ],
+    "drinks": [
+     "Chá verde (chai sabz) e chá preto com cardamomo",
+     "Doogh (bebida de iogurte com hortelã)",
+     "Sheer chai (chá com leite cremoso e salgado)"
+    ],
+    "streetFoods": [
+     "Bolani (pão achatado recheado de batata ou alho-poró)",
+     "Sheer yakh (sorvete de água de rosas e pistache)",
+     "Jalebi (doce em calda típico do Nowruz e do inverno)"
+    ],
+    "diningAdvice": "O álcool é totalmente proibido. Costuma-se comer com a mão direita, sobre uma toalha estendida no chão (dastarkhan); homens e mulheres podem se sentar separados."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Roupas discretas que cubram todo o corpo (lenço para mulheres)",
+     "Dólares em espécie em quantidade suficiente (notas pequenas)",
+     "Power bank e lanterna (quedas de energia frequentes)",
+     "Kit básico de primeiros socorros e remédio contra diarreia"
+    ],
+    "safetyAndEtiquette": [
+     "Leia os alertas oficiais antes de viajar e registre-se na embaixada do seu país.",
+     "Leve cópia do passaporte e das autorizações da operadora."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Tipos C e F (dois pinos redondos). Plugues europeus funcionam; quedas de energia e picos de tensão são frequentes, então vale levar um filtro de linha com proteção."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "A água da torneira não é potável; beba apenas água mineral lacrada e evite gelo e verduras cruas lavadas.",
+    "vaccines": [
+     "Hepatite A e febre tifoide",
+     "Raiva e hepatite B (estadias longas)",
+     "Reforço contra a poliomielite (a doença é endêmica no país; após mais de 4 semanas, podem pedir certificado na saída)",
+     "Precauções contra a malária (áreas baixas, de maio a novembro)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "102"
+   },
+   "tipping": {
+    "custom": "A gorjeta não é obrigatória; basta arredondar o valor.",
+    "standardPercent": 5,
+    "rule": "round_up",
+    "note": "Uma pequena gorjeta diária para motoristas e guias é bem-vinda."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Não há devolução de impostos para turistas",
+    "minSpend": "Não se aplica",
+    "customsNote": "Não existe sistema tax-free. Exportar antiguidades, tapetes antigos ou objetos históricos exige autorização; peça nota ao comprar lápis-lazúli e tapetes."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "~US$ 0,50 - 1,50",
+    "topCarriers": [
+     "Roshan",
+     "Afghan Wireless (AWCC)",
+     "Salaam (Afghan Telecom)"
+    ],
+    "airportSimTrapWarning": "No aeroporto quase não se vendem chips; compre um chip da Roshan ou da AWCC na cidade, com seu passaporte. Como as autoridades podem cortar a internet, baixe mapas e documentos para uso off-line antes de sair."
+   },
+   "touristScams": [
+    {
+     "title": "Falso guia de segurança",
+     "desc": "Pessoas que se apresentam como guias ou “seguranças” cobram caro e não têm como garantir sua segurança.",
+     "tip": "Trabalhe apenas com operadoras verificadas e registradas."
+    },
+    {
+     "title": "Truque no câmbio",
+     "desc": "Os cambistas calculam o câmbio errado ou entregam cédulas gastas.",
+     "tip": "Conte as notas uma a uma e confira a cotação antes."
+    },
+    {
+     "title": "Antiguidades e pedras falsas",
+     "desc": "Nos mercados, vendem pedras tingidas como lápis-lazúli e tapetes novos como antigos.",
+     "tip": "Em compras caras, escolha lojas de confiança e peça recibo."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Афганский афгани (AFN)",

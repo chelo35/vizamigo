@@ -1515,6 +1515,385 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Franco suíço (CHF)",
+   "plugType": "Tipo J, C (230V, 50Hz)",
+   "bestMonths": "Junho – setembro (trilhas nos Alpes e lagos); dezembro – março (esqui)",
+   "safety": {
+    "safetyScore": 85,
+    "safetyLevel": "Excepcionalmente seguro",
+    "badgeColor": "bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-900/60",
+    "crimeRateSummary": "Um dos países mais seguros do mundo, com pouquíssima criminalidade violenta. Cuidado com batedores de carteira nas estações de Zurique e Genebra e no calçadão do lago de Genebra.",
+    "commonScams": [
+     "Falsos coletores de assinaturas ou doações em Genebra, que distraem você para roubar",
+     "Furto de bagagem dos bagageiros nos trens, sobretudo nas linhas para o aeroporto"
+    ],
+    "safeTravelTips": [
+     "Nos trens, mantenha os objetos de valor junto ao corpo.",
+     "Consulte o app MeteoSwiss antes de ir para a montanha e não saia das trilhas sinalizadas.",
+     "As multas de trânsito são altíssimas; não atravesse com o sinal vermelho."
+    ],
+    "emergencyNumbers": {
+     "police": "117",
+     "ambulance": "144",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "Mais de 99% de cobertura (5G amplo; bom sinal até em muitas estações de montanha)",
+    "costPerGbUsd": "~US$ 2,00 - 6,00",
+    "esimAvailability": "Excelente",
+    "bestCarriers": [
+     "Swisscom",
+     "Sunrise",
+     "Salt",
+     "Airalo / Holafly eSIM"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Excelente (uma das malhas ferroviárias mais pontuais do mundo)",
+    "costLevel": "Muito caro",
+    "singleTicketUsd": "US$ 3,50 - 5,50",
+    "dailyPassUsd": "10,00 - 15,00 $ (Zurique, 24h)",
+    "popularRideApps": [
+     "SBB Mobile",
+     "FAIRTIQ",
+     "Uber",
+     "Go! Taxi",
+     "MeteoSwiss"
+    ],
+    "taxiAdvice": "Os táxis são caríssimos; trens, bondes e barcos chegam a quase todo lugar. Para vários dias, vale a pena o Swiss Travel Pass ou o Half Fare Card; para trechos avulsos, procure as passagens ‘Supersaver’ no SBB Mobile."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 100 - 150",
+    "dailyBudgetMidrangeUsd": "US$ 230 - 380",
+    "budgetMealUsd": "US$ 22 - 35",
+    "coffeeUsd": "US$ 5,00 - 7,00",
+    "waterBottleUsd": "US$ 1,50 - 3,50",
+    "hostelDormUsd": "US$ 45 - 75",
+    "hotel3StarUsd": "US$ 180 - 300",
+    "flightCostIndex": "Moderado (Istambul – Zurique/Genebra direto ~3h)",
+    "flightTip": "Há voos diretos de Istambul para Zurique, Genebra e Basileia. O aeroporto de Basileia-Mulhouse, na fronteira com a França, costuma ser mais barato."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "A pontualidade é sagrada; trens e compromissos funcionam no minuto exato.",
+     "Silêncio aos domingos e depois das 22h; as regras de reciclagem são cumpridas à risca.",
+     "No brinde, olhe nos olhos de cada pessoa (Prost / Santé).",
+     "Na região francófona, conhecidos costumam se cumprimentar com três beijos."
+    ],
+    "festivals": [
+     "Carnaval Fasnacht de Basileia (fevereiro – março)",
+     "Festival de Jazz de Montreux (julho)",
+     "Festa Nacional, 1º de agosto (fogueiras e fogos de artifício)"
+    ],
+    "lifestyle": "Paixão pela natureza e pelos esportes de montanha, alta qualidade de vida, democracia direta e uma sociedade multicultural com quatro idiomas."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Matterhorn e Zermatt",
+     "Jungfraujoch e vale de Lauterbrunnen",
+     "Lucerna: Ponte da Capela e monte Pilatus",
+     "Centro histórico e lago de Zurique",
+     "Vinhedos em terraços de Lavaux e castelo de Chillon (lago Léman)",
+     "Cidade velha de Berna (UNESCO)"
+    ],
+    "bestSeasons": "Verão (junho – setembro) para montanhas e lagos; inverno (dezembro – março) para esquiar",
+    "travelStyleTip": "Viaje de trem; linhas panorâmicas como o Glacier Express e o Bernina Express são uma experiência por si só. Para economizar, aproveite as refeições prontas dos supermercados (Coop, Migros)."
+   },
+   "religion": {
+    "primaryReligions": "Católicos ~32%, protestantes reformados ~20%, sem religião ~34%, muçulmanos ~6%.",
+    "respectNorms": "Faça silêncio nas igrejas e não fique circulando durante o culto; vista-se com respeito também nas capelas de montanha.",
+    "sacredSites": [
+     "Abadia de Einsiedeln (local de peregrinação)",
+     "Grossmünster (Zurique)",
+     "Catedral de São Pedro (Genebra)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Alemão (~62%), francês (~23%), italiano (~8%) e romanche",
+    "englishProficiency": "Muito bom; no turismo, nos hotéis e no transporte não há problema. Na região de língua alemã, o alemão suíço é falado no dia a dia.",
+    "phrases": [
+     {
+      "phrase": "Grüezi",
+      "meaning": "Olá (alemão suíço)",
+      "translation": "Olá",
+      "pronunciation": "GRÜ-e-tsi"
+     },
+     {
+      "phrase": "Merci vielmal",
+      "meaning": "Muito obrigado (alemão suíço)",
+      "translation": "Obrigado",
+      "pronunciation": "MER-si FEEL-mal"
+     },
+     {
+      "phrase": "Was choschtet das?",
+      "meaning": "Quanto custa? (alemão suíço)",
+      "translation": "Quanto?",
+      "pronunciation": "vas HOSH-tet das"
+     },
+     {
+      "phrase": "Uf Widerluege",
+      "meaning": "Tchau (alemão suíço)",
+      "translation": "Tchau",
+      "pronunciation": "uf VEE-der-lu-e-ge"
+     },
+     {
+      "phrase": "Bonjour / Merci",
+      "meaning": "Olá / Obrigado (região francófona)",
+      "translation": "Olá / Obrigado",
+      "pronunciation": "bon-ZHOOR / mer-SEE"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Nascida da aliança entre Uri, Schwyz e Unterwalden em 1291, a Confederação Suíça teve sua neutralidade reconhecida no Congresso de Viena (1815) e se tornou um Estado federal moderno em 1848. É conhecida pela democracia direta, pelos cantões e por sediar organismos internacionais (Cruz Vermelha, ONU em Genebra); não faz parte da UE.",
+    "milestones": [
+     "1291: Carta Federal (Bundesbrief)",
+     "1815: Reconhecimento internacional da neutralidade",
+     "1848: Constituição federal e Estado moderno",
+     "1863: Fundação da Cruz Vermelha em Genebra"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Fondue de queijo (Gruyère e Vacherin)",
+     "Raclette (queijo derretido com batatas e picles)",
+     "Zürcher Geschnetzeltes com Rösti (vitela ao molho cremoso e rösti de batata)"
+    ],
+    "traditionalDrinks": [
+     "Rivella (refrigerante à base de soro de leite)",
+     "Vinho branco Chasselas (vinhedos de Lavaux)",
+     "Chocolate quente suíço"
+    ],
+    "streetFoodAndDesserts": [
+     "St. Galler Bratwurst (linguiça de vitela grelhada)",
+     "Chocolate suíço (Sprüngli, Läderach, Lindt)",
+     "Suspiros com creme duplo de Gruyère"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Henri Dunant (fundador da Cruz Vermelha, primeiro Nobel da Paz)",
+     "Le Corbusier (arquiteto)",
+     "Roger Federer (lenda do tênis)"
+    ],
+    "strongSectors": [
+     "Bancos, seguros e finanças",
+     "Farmacêutica e química (Roche, Novartis)",
+     "Relojoaria e chocolate (Rolex, Swatch, Nestlé, Lindt)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "A moeda é o franco suíço; alguns lugares aceitam euros, mas o troco vem em francos e com câmbio ruim. Cartões e pagamento por aproximação (incluindo o TWINT) são aceitos em toda parte.",
+    "tippingCulture": "O serviço já está incluído; se ficar satisfeito, arredonde a conta ou deixe 5–10%.",
+    "economicPillars": "Finanças e seguros, farmacêutica e química, engenharia de precisão e relojoaria, turismo e indústria alimentícia."
+   }
+  },
+  "itin": {
+   "routeName": "Alpes e lagos suíços: Zurique, Lucerna, Interlaken e Zermatt",
+   "routeSummary": "Roteiro de 8 dias feito inteiramente de trem: do centro histórico de Zurique, à beira do lago, às pontes de Lucerna, aos vales de cachoeiras da região de Jungfrau e a Zermatt, cidade sem carros aos pés do Matterhorn.",
+   "totalDays": 8,
+   "idealDurationText": "8 dias",
+   "bestSeason": "Junho – setembro",
+   "transportMode": "Trens da SBB, trens de montanha, teleféricos e barcos (com o Swiss Travel Pass)",
+   "paceLevel": "Equilibrado (cidade + montanha)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Zurique (lago e centro histórico)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Centro histórico, Grossmünster e Fraumünster (vitrais de Chagall)",
+      "Mirante de Lindenhof",
+      "Lago de Zurique e Bahnhofstrasse",
+      "Monte Uetliberg"
+     ],
+     "activities": [
+      "No verão, nade nas piscinas públicas de lago e rio da cidade (Badi).",
+      "Suba de S-Bahn até o Uetliberg para ver a cidade e os Alpes.",
+      "Faça um passeio de barco pelo lago."
+     ],
+     "foodAndDrinks": [
+      "Zürcher Geschnetzeltes com Rösti (vitela ao molho cremoso e rösti de batata)",
+      "Luxemburgerli da Sprüngli (minimacarons)"
+     ],
+     "criticalTips": [
+      "O trem do aeroporto ao centro leva 10–15 minutos; não precisa de táxi.",
+      "A maioria das fontes públicas tem água potável; leve uma garrafa e economize."
+     ],
+     "mapsQuery": "Zurich, Switzerland"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Lucerna (lago, pontes e Pilatus)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Ponte da Capela e Torre d'Água",
+      "Monumento ao Leão (Löwendenkmal)",
+      "Monte Pilatus (o trem de cremalheira mais íngreme do mundo)",
+      "Monte Rigi e lago de Lucerna"
+     ],
+     "activities": [
+      "Combine barco, trem de cremalheira e teleférico no ‘Golden Round Trip’.",
+      "Percorra a muralha de Musegg e suba em suas torres.",
+      "Visite o Museu Suíço dos Transportes (Verkehrshaus)."
+     ],
+     "foodAndDrinks": [
+      "Luzerner Chügelipastete (vol-au-vent de massa folhada com carne ao molho)",
+      "Chocolate quente suíço"
+     ],
+     "criticalTips": [
+      "O trem de cremalheira do Pilatus funciona aproximadamente de maio a novembro; no inverno, a subida é de teleférico.",
+      "Confira as webcams do cume antes de subir."
+     ],
+     "mapsQuery": "Lucerne, Switzerland"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Interlaken e a região de Jungfrau",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Jungfraujoch – ‘Top of Europe’ (3.454 m)",
+      "Vale de Lauterbrunnen e cachoeira de Staubbach",
+      "Grindelwald First (Cliff Walk)",
+      "Lagos de Brienz e Thun"
+     ],
+     "activities": [
+      "Suba de funicular até o Harder Kulm ou experimente o parapente sobre Interlaken.",
+      "Navegue pelo lago turquesa de Brienz.",
+      "Faça a trilha panorâmica de Lauterbrunnen a Mürren."
+     ],
+     "foodAndDrinks": [
+      "Älplermagronen (massa, batata, queijo e compota de maçã)",
+      "Fondue de queijo (Gruyère e Vacherin)"
+     ],
+     "criticalTips": [
+      "O Jungfraujoch é muito caro (ida e volta muitas vezes passa de 200 CHF); o Swiss Travel Pass dá apenas desconto. Escolha um dia de céu limpo.",
+      "Acima de 3.000 m a altitude se faz sentir; vá devagar e beba bastante água."
+     ],
+     "mapsQuery": "Interlaken, Switzerland"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Zermatt (Matterhorn)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Vista do Matterhorn",
+      "Trem do Gornergrat",
+      "Matterhorn Glacier Paradise (3.883 m)"
+     ],
+     "activities": [
+      "Veja o Matterhorn ficar rosado ao amanhecer a partir da ponte do vilarejo.",
+      "Faça a trilha dos cinco lagos (5-Seenweg).",
+      "No inverno, esquie em pistas que se conectam com Cervinia (Itália)."
+     ],
+     "foodAndDrinks": [
+      "Raclette (queijo derretido com batatas e picles)",
+      "Fendant (vinho branco do Valais)"
+     ],
+     "criticalTips": [
+      "Zermatt não permite carros; deixe o carro em Täsch e pegue o trem de conexão.",
+      "Na alta temporada, a hospedagem é caríssima; reserve cedo ou fique em Täsch."
+     ],
+     "mapsQuery": "Zermatt, Switzerland"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Fondue de queijo (Gruyère e Vacherin)",
+     "Raclette (queijo derretido com batatas e picles)",
+     "Zürcher Geschnetzeltes com Rösti (vitela ao molho cremoso e rösti de batata)"
+    ],
+    "drinks": [
+     "Rivella (refrigerante à base de soro de leite)",
+     "Vinho branco Chasselas (vinhedos de Lavaux)",
+     "Chocolate quente suíço"
+    ],
+    "streetFoods": [
+     "St. Galler Bratwurst (linguiça de vitela grelhada)",
+     "Chocolate suíço (Sprüngli, Läderach, Lindt)",
+     "Suspiros com creme duplo de Gruyère"
+    ],
+    "diningAdvice": "Os restaurantes são caros; o ‘Tagesmenü’ (prato do dia no almoço) e os restaurantes da Coop/Migros são opções econômicas. A água da torneira é potável e você pode pedi-la de graça."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptador suíço (tipo J; o plugue europeu fino entra, o Schuko grosso não)",
+     "Roupas em camadas, jaqueta impermeável e óculos de sol",
+     "Botas de trilha e protetor solar de fator alto",
+     "Garrafa reutilizável (a água das fontes é potável)"
+    ],
+    "safetyAndEtiquette": [
+     "Na montanha, não saia das trilhas e nunca caminhe sobre geleiras sem guia.",
+     "Não fale ao telefone nos vagões de ‘zona de silêncio’."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "J",
+     "C"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Tomadas suíças tipo J (três pinos redondos). Os plugues europeus finos tipo C encaixam, mas os grossos F/Schuko usados na Turquia não; leve um adaptador tipo J."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "A água da torneira é de excelente qualidade; você pode beber e encher a garrafa nas milhares de fontes urbanas (salvo indicação em contrário).",
+    "vaccines": [
+     "Vacinas de rotina (tríplice viral, tétano)",
+     "Encefalite transmitida por carrapatos (se for fazer trilhas em áreas rurais)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "144"
+   },
+   "tipping": {
+    "custom": "O serviço já está incluído nos preços; se ficar satisfeito, arredonde a conta ou deixe 5–10%.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "A gorjeta não é obrigatória; as maquininhas de cartão podem sugerir uma gorjeta, e escolher “0” é perfeitamente aceitável."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA de 8,1%",
+    "minSpend": "300 CHF por nota fiscal (mesma loja, mesmo dia)",
+    "customsNote": "A Suíça não faz parte da UE, então a restituição é feita na saída da Suíça: valide o formulário Tax Free e apresente os produtos sem uso na alfândega dos aeroportos de Zurique ou Genebra (também há validação digital)."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 2,00 - 6,00",
+    "topCarriers": [
+     "Swisscom",
+     "Sunrise",
+     "Salt"
+    ],
+    "airportSimTrapWarning": "A Suíça fica fora da zona de roaming da UE e os pacotes vendidos no aeroporto são muito caros; um chip pré-pago da Swisscom, Sunrise ou Salt (com passaporte) ou um eSIM comprado antes da viagem é o mais barato."
+   },
+   "touristScams": [
+    {
+     "title": "Falsos coletores de assinaturas ou doações",
+     "desc": "Falsos coletores de assinaturas ou doações em Genebra distraem você para roubar.",
+     "tip": "Recuse com educação sem parar e não deixe celular nem carteira à vista."
+    },
+    {
+     "title": "Furto de bagagem nos trens",
+     "desc": "Furtos de malas nos bagageiros, sobretudo nas linhas para o aeroporto.",
+     "tip": "Coloque a mala onde você possa vê-la e mantenha os objetos de valor junto ao corpo."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Швейцарский франк (CHF)",

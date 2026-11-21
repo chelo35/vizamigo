@@ -1435,6 +1435,365 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Real brasileiro (BRL)",
+   "bestMonths": "Abril a junho e agosto a outubro (clima mais ameno e menos gente); de dezembro a março é o verão quente e chuvoso do Rio, com Carnaval em fevereiro/março; de junho a novembro é mais seco na Amazônia",
+   "safety": {
+    "crimeRateSummary": "A criminalidade violenta, incluindo assaltos à mão armada, é alta nas grandes cidades; os alertas oficiais desaconselham entrar em favelas sem guia e circular por áreas desertas à noite. No Rio e em São Paulo são frequentes os roubos de celular por criminosos em motos e os arrastões nas praias.",
+    "commonScams": [
+     "Maquininhas de cartão em que digitam um zero a mais ou escondem a tela",
+     "Bebidas batizadas em bares ou por pessoas conhecidas em apps de namoro (“Boa noite, Cinderela”)",
+     "Roubo de celular e arrastões em praias e ruas movimentadas do Rio"
+    ],
+    "safeTravelTips": [
+     "Leve para a praia só a toalha, pouco dinheiro e, no máximo, um celular velho; não ande com o celular na mão.",
+     "À noite, use 99 ou Uber de porta a porta em vez de caminhar pela Lapa ou pelo Centro; se for assaltado, não reaja.",
+     "Visite favelas só com tours registrados e guias locais credenciados."
+    ],
+    "emergencyNumbers": {
+     "police": "190",
+     "ambulance": "192",
+     "general": "190"
+    },
+    "safetyScore": 40,
+    "safetyLevel": "Cautela recomendada",
+    "badgeColor": "bg-rose-50 text-rose-700 border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60"
+   },
+   "internet": {
+    "networkCoverage": "4G/5G bom nas cidades e no litoral; cobertura muito limitada na Amazônia e no Pantanal",
+    "costPerGbUsd": "~US$ 0,50 - 1,50",
+    "esimAvailability": "Boa",
+    "bestCarriers": [
+     "Vivo",
+     "Claro",
+     "TIM"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Regular (bom metrô em São Paulo, metrô e VLT no Rio; as distâncias são enormes: avião ou ônibus de longa distância saindo da rodoviária)",
+    "costLevel": "Moderado",
+    "singleTicketUsd": "0,90 - 1,50 $ (metrô de São Paulo / Rio)",
+    "dailyPassUsd": "Não há passe diário; ~4 - 8 $ por dia com metrô e 99/Uber",
+    "popularRideApps": [
+     "99",
+     "Uber",
+     "inDrive"
+    ],
+    "taxiAdvice": "99 e Uber são baratos e seguros; use-os em vez de pegar táxi na rua, principalmente à noite. Nos aeroportos há balcões oficiais de táxi pré-pago ou pontos de embarque dos apps."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 30 - 50",
+    "dailyBudgetMidrangeUsd": "US$ 70 - 120",
+    "budgetMealUsd": "5 - 10 $ (prato feito ou bufê por quilo)",
+    "coffeeUsd": "US$ 1 - 2,50",
+    "waterBottleUsd": "US$ 0,50 - 1",
+    "hostelDormUsd": "US$ 12 - 25",
+    "hotel3StarUsd": "US$ 45 - 90",
+    "flightCostIndex": "Alto (direto ~13 h)",
+    "flightTip": "A Turkish Airlines tem voo direto Istambul – São Paulo (GRU). As distâncias dentro do Brasil são enormes: reserve cedo os voos domésticos da LATAM, GOL e Azul; no Carnaval e no Ano-Novo os preços disparam."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Abraços e beijos no rosto são comuns (um em São Paulo, dois no Rio).",
+     "No Brasil se fala português, não espanhol; presumir que todos falam espanhol pode pegar mal.",
+     "O gesto de “OK” com os dedos é considerado ofensivo; use o polegar para cima.",
+     "Chegar 15-30 minutos atrasado a eventos sociais é normal; nos negócios, espera-se pontualidade."
+    ],
+    "festivals": [
+     "Carnaval (fevereiro/março; Rio, Salvador, Olinda)",
+     "Festa Junina (junho, principalmente no Nordeste)",
+     "Réveillon – virada do ano em Copacabana (31 de dezembro)"
+    ],
+    "lifestyle": "Uma vida calorosa e social em torno da praia, do futebol e da música (samba, bossa nova, forró); são típicos o churrasco em família no domingo e a bebida gelada na rua."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Cristo Redentor e Pão de Açúcar (Rio de Janeiro)",
+     "Cataratas do Iguaçu",
+     "Centro histórico do Pelourinho (Salvador)",
+     "A Amazônia e o Encontro das Águas (Manaus)",
+     "Dunas e lagoas dos Lençóis Maranhenses",
+     "Áreas alagadas do Pantanal"
+    ],
+    "bestSeasons": "Para o Rio, abril a junho e agosto a outubro são os períodos mais equilibrados; as lagoas dos Lençóis ficam cheias de junho a setembro e a fauna do Pantanal é mais fácil de observar de julho a outubro.",
+    "travelStyleTip": "O Brasil tem dimensões continentais: viaje de avião entre as regiões, use 99/Uber nas cidades e aprenda algumas frases básicas em português."
+   },
+   "religion": {
+    "primaryReligions": "Católicos ~57%, evangélicos ~27%, sem religião ~9%, espíritas ~2%, religiões afro-brasileiras (candomblé, umbanda) ~1% (Censo 2022)",
+    "respectNorms": "Cubra ombros e joelhos nas igrejas. Sempre peça permissão antes de fotografar em terreiros de candomblé.",
+    "sacredSites": [
+     "Santuário Nacional de Nossa Senhora Aparecida (estado de São Paulo)",
+     "Igreja do Senhor do Bonfim (Salvador)",
+     "Catedral Metropolitana de Brasília (Niemeyer)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Português (português do Brasil)",
+    "englishProficiency": "Limitado fora dos hotéis turísticos; um app de tradução e um pouco de português ajudam muito. O espanhol é entendido em parte.",
+    "phrases": [
+     {
+      "phrase": "Oi, tudo bem?",
+      "meaning": "Olá, como vai?",
+      "translation": "Olá, tudo bem?",
+      "pronunciation": "oy, TOO-doo bayn"
+     },
+     {
+      "phrase": "Obrigado / Obrigada",
+      "meaning": "Agradecimento (dito por um homem / por uma mulher)",
+      "translation": "Obrigado(a) (dito por um homem / por uma mulher)",
+      "pronunciation": "oh-bree-GAH-doo / oh-bree-GAH-dah"
+     },
+     {
+      "phrase": "Com licença",
+      "meaning": "Pedido de passagem ou de permissão",
+      "translation": "Com licença",
+      "pronunciation": "kohn lee-SEN-sah"
+     },
+     {
+      "phrase": "Quanto custa?",
+      "meaning": "Pergunta sobre o preço",
+      "translation": "Quanto custa?",
+      "pronunciation": "KWAN-too KOOS-tah"
+     },
+     {
+      "phrase": "A conta, por favor",
+      "meaning": "Pedido da conta",
+      "translation": "A conta, por favor",
+      "pronunciation": "ah KOHN-tah poor fah-VOR"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Pedro Álvares Cabral chegou a estas terras indígenas em 1500, que se tornaram colônia portuguesa. A corte portuguesa se transferiu para o Rio em 1808; o Brasil se tornou independente como império em 1822, aboliu a escravidão em 1888 e foi proclamado república em 1889.",
+    "milestones": [
+     "1500: Cabral chega ao litoral brasileiro",
+     "1822: Grito do Ipiranga e independência",
+     "1888: a Lei Áurea abole a escravidão",
+     "1960: inauguração da nova capital, Brasília"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Feijoada (ensopado de feijão-preto com carnes; tradicionalmente com porco)",
+     "Moqueca (ensopado de peixe com leite de coco, Bahia)",
+     "Churrasco e picanha (carne assada no espeto)"
+    ],
+    "traditionalDrinks": [
+     "Caipirinha (cachaça e limão; alcoólica)",
+     "Guaraná Antarctica (refrigerante de guaraná)",
+     "Cafezinho (café pequeno e doce)"
+    ],
+    "streetFoodAndDesserts": [
+     "Pão de queijo",
+     "Coxinha (salgado de frango)",
+     "Brigadeiro (docinho de chocolate)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Pelé (lenda do futebol)",
+     "Ayrton Senna (campeão de F1)",
+     "Oscar Niemeyer (arquiteto de Brasília)"
+    ],
+    "strongSectors": [
+     "Exportações do agronegócio (líder mundial em soja e café)",
+     "Mineração e petróleo (Vale, Petrobras)",
+     "Aeronáutica (Embraer)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Cartões e pagamento por aproximação são amplamente usados; os brasileiros usam o sistema de pagamento instantâneo Pix. No caixa vão perguntar “crédito ou débito?”; leve um pouco de dinheiro vivo para vendedores de praia e feiras.",
+    "tippingCulture": "A conta costuma incluir 10% de serviço (“serviço”); por lei é opcional, mas é esperado. Não é preciso dar gorjeta extra.",
+    "economicPillars": "Agricultura e pecuária, mineração e petróleo, indústria, serviços e finanças."
+   }
+  },
+  "itin": {
+   "routeName": "Clássicos do Brasil: Salvador, Rio de Janeiro e Cataratas do Iguaçu",
+   "routeSummary": "Um roteiro de 9 dias ligado por voos domésticos: de Salvador, coração da cultura afro-brasileira, às vistas e praias icônicas do Rio de Janeiro e, por fim, às Cataratas do Iguaçu.",
+   "totalDays": 9,
+   "idealDurationText": "Roteiro de 9 dias",
+   "bestSeason": "Abril a junho e agosto a outubro",
+   "transportMode": "Voos domésticos (Salvador – Rio – Foz do Iguaçu) + 99/Uber e metrô nas cidades",
+   "paceLevel": "Equilibrado (cultura, cidade e natureza)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Salvador (Bahia)",
+     "recommendedDuration": "3 dias",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Centro histórico do Pelourinho (UNESCO)",
+      "Elevador Lacerda e Mercado Modelo",
+      "Igreja do Senhor do Bonfim",
+      "Farol da Barra"
+     ],
+     "activities": [
+      "Assista a uma roda de capoeira ou faça uma aula experimental.",
+      "Contemple o pôr do sol no Farol da Barra.",
+      "Ouça os ensaios de percussão do Olodum nas noites de terça no Pelourinho."
+     ],
+     "foodAndDrinks": [
+      "Acarajé (bolinho de feijão com camarão)",
+      "Moqueca baiana",
+      "Cocada (doce de coco)"
+     ],
+     "criticalTips": [
+      "O Pelourinho é animado e seguro durante o dia; à noite, evite ruas vazias e circule de 99/Uber.",
+      "Quem amarra fitinhas do Bonfim ou pulseiras “de presente” pode pedir dinheiro depois; recuse com educação."
+     ],
+     "mapsQuery": "Salvador, Bahia, Brasil"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Rio de Janeiro",
+     "recommendedDuration": "4 dias",
+     "durationBadge": "4 dias",
+     "highlights": [
+      "Cristo Redentor (Corcovado)",
+      "Bondinho do Pão de Açúcar",
+      "Praias de Copacabana e Ipanema",
+      "Escadaria Selarón e Santa Teresa"
+     ],
+     "activities": [
+      "Aplauda o pôr do sol das pedras do Arpoador.",
+      "Vá a uma noite de samba na Lapa (ida e volta de Uber).",
+      "Assista a um jogo ou faça uma visita guiada ao Maracanã."
+     ],
+     "foodAndDrinks": [
+      "Feijoada (tradição de sábado; leva porco)",
+      "Açaí na tigela",
+      "Caipirinha (alcoólica)"
+     ],
+     "criticalTips": [
+      "Compre on-line o trem do Corcovado e suba cedo; à tarde costuma haver nuvens.",
+      "Faça trilhas (por exemplo, a do Dois Irmãos) só com guia local."
+     ],
+     "mapsQuery": "Rio de Janeiro, Brasil"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Foz do Iguaçu (Cataratas do Iguaçu)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Trilha panorâmica do Parque Nacional do Iguaçu (lado brasileiro)",
+      "Garganta do Diabo",
+      "Parque das Aves",
+      "Usina de Itaipu"
+     ],
+     "activities": [
+      "Entre debaixo das quedas no barco do Macuco Safari.",
+      "Reserve um dia para o lado argentino (Puerto Iguazú).",
+      "Veja tucanos de perto no Parque das Aves."
+     ],
+     "foodAndDrinks": [
+      "Churrasco de rodízio",
+      "Peixes de rio (dourado, surubim)"
+     ],
+     "criticalTips": [
+      "Leve o passaporte para atravessar para o lado argentino.",
+      "Leve uma capa de chuva; não alimente os quatis: eles roubam comida e podem morder."
+     ],
+     "mapsQuery": "Foz do Iguaçu, Paraná, Brasil"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Feijoada (leva porco)",
+     "Moqueca",
+     "Picanha"
+    ],
+    "drinks": [
+     "Caipirinha (alcoólica)",
+     "Guaraná",
+     "Água de coco"
+    ],
+    "streetFoods": [
+     "Pão de queijo",
+     "Coxinha",
+     "Brigadeiro"
+    ],
+    "diningAdvice": "Nos restaurantes “por quilo”, você paga pelo peso do prato: barato e prático. Nas churrascarias, um cartão verde/vermelho indica se a carne deve continuar chegando; a conta inclui 10% de serviço."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptador tipo N / C (os plugues Schuko não entram no tipo N)",
+     "Protetor solar de fator alto e repelente de mosquitos",
+     "Certificado de febre amarela (recomendado para a Amazônia e Iguaçu)",
+     "Capa de chuva leve / poncho"
+    ],
+    "safetyAndEtiquette": [
+     "Deixe os objetos de valor no cofre e não exiba o celular na rua.",
+     "Confira a tela da maquininha antes de confirmar o pagamento."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "N",
+     "C"
+    ],
+    "voltage": "127V / 220V",
+    "frequency": "60Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Tomadas embutidas tipo N, padrão brasileiro, com três pinos redondos. Os plugues europeus finos (tipo C) costumam entrar, mas os Schuko (F), mais grossos, não; por isso, leve adaptador. A voltagem varia: Rio e São Paulo 127 V; Brasília, Fortaleza, Recife e Florianópolis 220 V."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Nas grandes cidades a água é tratada, mas, por causa das caixas-d’água e dos encanamentos, é melhor beber água engarrafada ou filtrada.",
+    "vaccines": [
+     "Febre amarela: recomendada para a Amazônia, Iguaçu e muitas áreas do interior (pelo menos 10 dias antes); não é obrigatória para quem chega da Turquia",
+     "Hepatite A e febre tifoide",
+     "Proteção contra mosquitos por causa da dengue e da chikungunya"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "192"
+   },
+   "tipping": {
+    "custom": "Costuma-se acrescentar 10% de serviço à conta do restaurante.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "A “taxa de serviço” é opcional por lei; você pode pedir para retirá-la se o atendimento foi ruim. Em táxis e hotéis, basta arredondar."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Não há (não existe um sistema amplo de restituição para turistas)",
+    "minSpend": "Não se aplica",
+    "customsNote": "Na prática, o Brasil não devolve impostos de compras a turistas. Para comprar sem impostos, use os free shops de chegada e de saída dos aeroportos."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 0,50 - 1,50",
+    "topCarriers": [
+     "Vivo",
+     "Claro",
+     "TIM"
+    ],
+    "airportSimTrapWarning": "Para cadastrar uma linha pré-paga local é preciso apresentar o passaporte em uma loja da operadora, e isso pode demorar; os quiosques do aeroporto são caros. O mais fácil é um eSIM configurado antes da viagem."
+   },
+   "touristScams": [
+    {
+     "title": "Golpe da maquininha",
+     "desc": "Vendedores de praia, alguns táxis ou bares digitam um zero a mais na maquininha e pedem a senha sem mostrar a tela.",
+     "tip": "Não confirme sem ver o valor; pague por aproximação se puder e ative os alertas do banco."
+    },
+    {
+     "title": "Bebidas batizadas (“Boa noite, Cinderela”)",
+     "desc": "Em bares ou com pessoas conhecidas em apps de namoro, drogam a bebida e roubam a vítima.",
+     "tip": "Não perca sua bebida de vista, não aceite drinques de desconhecidos e, no primeiro encontro, marque em lugares movimentados."
+    },
+    {
+     "title": "Roubo de celular e arrastão",
+     "desc": "Ladrões em motos ou grupos que correm pela praia arrancam celulares, bolsas e joias.",
+     "tip": "Não leve objetos de valor à praia nem use o celular perto do meio-fio."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Бразильский реал (BRL)",

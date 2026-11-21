@@ -396,6 +396,7 @@ export function validateRouteStop(
   const isEn = lang === 'en';
   const isDe = lang === 'de';
   const isEs = lang === 'es';
+  const isPt = lang === 'pt';
   const isRu = lang === 'ru';
   const warnings: RouteWarning[] = [];
   const inIdx = dateToDayIndex(stop.entryDate);
@@ -406,7 +407,7 @@ export function validateRouteStop(
       type: 'error',
       message: isEs
         ? 'La fecha de salida no puede ser anterior a la de entrada.'
-        : isRu
+        : isPt ? 'A data de saída não pode ser anterior à de entrada.' : isRu
         ? 'Дата выезда не может быть раньше даты въезда.'
         : isDe
         ? 'Das Ausreisedatum kann nicht vor dem Einreisedatum liegen.'
@@ -426,7 +427,7 @@ export function validateRouteStop(
       type: 'warning',
       message: isEs
         ? 'No se encontraron datos de régimen de visados para este país.'
-        : isRu
+        : isPt ? 'Não foram encontrados dados sobre o regime de vistos deste país.' : isRu
         ? 'Данные о визовом режиме для этой страны не найдены.'
         : isDe
         ? 'Keine Visaregelungsdaten für dieses Land gefunden.'
@@ -445,7 +446,7 @@ export function validateRouteStop(
         type: 'error',
         message: isEs
           ? `Los ${daysPlanned} días planificados exceden el límite sin visado (${maxDays} días) por ${daysPlanned - maxDays} días.`
-          : isRu
+          : isPt ? `Os ${daysPlanned} dias planejados ultrapassam o limite sem visto (${maxDays} dias) em ${daysPlanned - maxDays} dias.` : isRu
           ? `Запланированные ${daysPlanned} дн. превышают разрешенный безвизовый срок (${maxDays} дн.) на ${daysPlanned - maxDays} дн.`
           : isDe
           ? `Geplante ${daysPlanned} Tage überschreiten die visumfreie Dauer (${maxDays} Tage) um ${daysPlanned - maxDays} Tage.`
@@ -462,7 +463,7 @@ export function validateRouteStop(
       type: 'warning',
       message: isEs
         ? 'Se requiere visado consular antes de la salida para este destino.'
-        : isRu
+        : isPt ? 'Este destino exige visto consular antes da viagem.' : isRu
         ? 'Для этой поездки требуется заранее оформить консульскую визу.'
         : isDe
         ? 'Für dieses Reiseziel ist vor Abreise ein Konsularvisum erforderlich.'
@@ -475,7 +476,7 @@ export function validateRouteStop(
       type: 'info',
       message: isEs
         ? 'Se debe obtener una autorización de visado electrónico (eVisa) antes de viajar.'
-        : isRu
+        : isPt ? 'É preciso obter um visto eletrônico (e-Visa) antes de viajar.' : isRu
         ? 'Перед вылетом необходимо оформить электронную визу (eVisa).'
         : isDe
         ? 'Vor Reiseantritt muss eine Online-eVisa-Genehmigung eingeholt werden.'
@@ -488,7 +489,7 @@ export function validateRouteStop(
       type: 'info',
       message: isEs
         ? 'Se requiere autorización electrónica de viaje (ETA) antes del embarque.'
-        : isRu
+        : isPt ? 'É exigida autorização eletrônica de viagem (ETA) antes do embarque.' : isRu
         ? 'Требуется электронное разрешение на въезд (ETA) до вылета.'
         : isDe
         ? 'Elektronische Reisegenehmigung (ETA) vor Abflug erforderlich.'
@@ -501,7 +502,7 @@ export function validateRouteStop(
       type: 'info',
       message: isEs
         ? 'El visado se tramita al llegar al puesto fronterizo.'
-        : isRu
+        : isPt ? 'O visto é emitido na chegada, no posto de fronteira.' : isRu
         ? 'Виза оформляется по прибытии на границе.'
         : isDe
         ? 'Das Visum wird bei der Ankunft an der Grenze erteilt.'
@@ -519,7 +520,7 @@ export function validateRouteStop(
         type: 'warning',
         message: isEs
           ? 'AVISO: Montenegro exige visado para ciudadanos turcos a partir del 1 de noviembre de 2026.'
-          : isRu
+          : isPt ? 'ATENÇÃO: Montenegro passa a exigir visto de cidadãos turcos a partir de 1º de novembro de 2026.' : isRu
           ? 'ВНИМАНИЕ: Черногория вводит визовый режим для граждан Турции с 1 ноября 2026 г.'
           : isDe
           ? 'HINWEIS: Montenegro führt ab 1. Nov. 2026 eine Visumpflicht für türkische Staatsbürger ein.'
@@ -538,7 +539,7 @@ export function validateRouteStop(
         type: 'info',
         message: isEs
           ? 'AVISO: Tailandia limita la estancia sin visado a 30 días mediante la tarjeta digital TDAC (norma del 15 de septiembre de 2026).'
-          : isRu
+          : isPt ? 'ATENÇÃO: a Tailândia limita a permanência sem visto a 30 dias por meio do cartão digital TDAC (regra de 15 de setembro de 2026).' : isRu
           ? 'ВНИМАНИЕ: Таиланд ограничивает безвизовое пребывание до 30 дней по цифровой карте TDAC (правило от 15 сентября 2026 г.).'
           : isDe
           ? 'HINWEIS: Thailand beschränkt visumfreie Aufenthalte auf 30 Tage über digitale TDAC-Karten.'
@@ -562,7 +563,7 @@ export function validateRouteStop(
       type: 'error',
       message: isEs
         ? 'Las fechas de esta parada se solapan con otra parada en la ruta.'
-        : isRu
+        : isPt ? 'As datas desta parada se sobrepõem a outra parada do roteiro.' : isRu
         ? 'Даты этой остановки пересекаются с другой остановкой в маршруте.'
         : isDe
         ? 'Die Reisedaten dieses Aufenthalts überschneiden sich mit einem anderen Stopp.'

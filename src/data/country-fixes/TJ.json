@@ -1539,6 +1539,391 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Somoni tadjique (TJS)",
+   "plugType": "Tipo C, F (220V, 50Hz)",
+   "bestMonths": "Junho – setembro (estradas de montanha abertas); abril – maio e outubro para as cidades",
+   "safety": {
+    "safetyScore": 55,
+    "safetyLevel": "Risco moderado",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60",
+    "crimeRateSummary": "A criminalidade de rua nas cidades é baixa. Os alertas oficiais pedem cautela por causa do terrorismo e de confrontos armados na fronteira com o Afeganistão, de antigos campos minados e das tensões na fronteira com o Quirguistão.",
+    "commonScams": [
+     "Táxis compartilhados intermunicipais que cobram o dobro de estrangeiros",
+     "Câmbio não oficial com notas falsas",
+     "Falsas blitze \"policiais\" que pedem documentos e dinheiro"
+    ],
+    "safeTravelTips": [
+     "Consulte os alertas oficiais para as áreas próximas à fronteira afegã (Panj e vale de Wakhan) e não saia da estrada.",
+     "A região do Pamir (GBAO) exige uma autorização à parte; providencie antes da viagem.",
+     "Viaje com um motorista experiente em estradas de montanha e leve dinheiro vivo em somoni."
+    ],
+    "emergencyNumbers": {
+     "police": "102",
+     "ambulance": "103",
+     "general": "102"
+    }
+   },
+   "internet": {
+    "networkCoverage": "4G em Duchambé e Khujand; muito limitada nas montanhas e no Pamir",
+    "costPerGbUsd": "~US$ 0,30 - 1",
+    "esimAvailability": "Moderada",
+    "bestCarriers": [
+     "Tcell",
+     "MegaFon Tajikistan",
+     "ZET-Mobile",
+     "Babilon-M"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Adequado",
+    "costLevel": "Econômico",
+    "singleTicketUsd": "US$ 0,10 - 0,25",
+    "dailyPassUsd": "~US$ 1",
+    "popularRideApps": [
+     "Yandex Go",
+     "Yandex Maps / Maps.me"
+    ],
+    "taxiAdvice": "As corridas de Yandex Go em Duchambé custam 1-3 $; combine o preço antes de entrar em um táxi compartilhado intermunicipal."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 25 - 40",
+    "dailyBudgetMidrangeUsd": "US$ 55 - 90",
+    "budgetMealUsd": "US$ 3 - 8",
+    "coffeeUsd": "US$ 1,50 - 3",
+    "waterBottleUsd": "US$ 0,30 - 0,60",
+    "hostelDormUsd": "US$ 8 - 15",
+    "hotel3StarUsd": "US$ 35 - 70",
+    "flightCostIndex": "Moderado",
+    "flightTip": "A Turkish Airlines e a Somon Air voam direto de Istambul para Duchambé; também há voos para Khujand."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "O pão (non) é sagrado: nunca no chão; ele é partido com a mão e deixado com a face para cima.",
+     "Espere a pessoa mais velha começar a comer; o chá é servido em tigelas.",
+     "Ao cumprimentar, coloque a mão direita sobre o coração; deixe que as mulheres estendam a mão primeiro.",
+     "Nas áreas rurais, use roupas que cubram ombros e joelhos."
+    ],
+    "festivals": [
+     "Navruz (21-24 de março)",
+     "Mehrgon (festa da colheita, outono)",
+     "Festival Teto do Mundo (Khorog, verão)"
+    ],
+    "lifestyle": "Famílias numerosas, vilarejos de montanha hospitaleiros, cultura das casas de chá (choyxona) e a vida em alta montanha no Pamir."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Duchambé – avenida Rudaki e Museu Nacional",
+     "Lago Iskanderkul",
+     "Sete Lagos (Haft Kul)",
+     "Rodovia do Pamir (M41)",
+     "Fortaleza de Hisor",
+     "Antiga Panjakent (cidade sogdiana)"
+    ],
+    "bestSeasons": "Junho – setembro (estradas de montanha abertas); abril – maio e outubro para as cidades",
+    "travelStyleTip": "Os montes Fann são fáceis de visitar a partir de Duchambé; para a Rodovia do Pamir, reserve pelo menos 7-10 dias e um 4x4."
+   },
+   "religion": {
+    "primaryReligions": "Islamismo sunita – hanafita (~95 %), comunidade ismaelita no Pamir (~3-4 %).",
+    "respectNorms": "Cubra ombros e joelhos em mesquitas e santuários; as mulheres cobrem o cabelo. No Ramadã, evite comer em público durante o dia.",
+    "sacredSites": [
+     "Mesquita Haji Yakub (Duchambé)",
+     "Mausoléu do xeique Muslihiddin (Khujand)",
+     "Mausoléu de Muhammad Bashoro (perto de Panjakent)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Tadjique (oficial, uma variante do persa). O russo é de uso comum.",
+    "englishProficiency": "Baixo; o russo é muito mais útil, embora o inglês esteja avançando aos poucos entre os jovens.",
+    "phrases": [
+     {
+      "phrase": "Салом",
+      "meaning": "Olá",
+      "translation": "Olá",
+      "pronunciation": "Salom"
+     },
+     {
+      "phrase": "Ташаккур / Раҳмат",
+      "meaning": "Obrigado(a)",
+      "translation": "Obrigado(a)",
+      "pronunciation": "Tashakkur / Rahmat"
+     },
+     {
+      "phrase": "Лутфан",
+      "meaning": "Por favor",
+      "translation": "Por favor",
+      "pronunciation": "Lutfan"
+     },
+     {
+      "phrase": "Ин чанд пул?",
+      "meaning": "Quanto custa isto?",
+      "translation": "Quanto custa isto?",
+      "pronunciation": "In chand pul?"
+     },
+     {
+      "phrase": "Хайр",
+      "meaning": "Tchau",
+      "translation": "Tchau",
+      "pronunciation": "Khayr"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Situada na antiga Sogdiana e Báctria, a região foi um centro do Estado samânida nos séculos IX-X. A RSS do Tadjiquistão foi criada em 1929, e a independência foi declarada em 1991.",
+    "milestones": [
+     "Séculos V-VIII: apogeu da Panjakent sogdiana",
+     "819-999: Estado samânida",
+     "1929: criação da RSS do Tadjiquistão",
+     "1991: independência"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Qurutob (pão com molho de qurut e legumes; prato nacional)",
+     "Osh (plov com carne e cenoura)",
+     "Shurbo (sopa de carne e legumes)"
+    ],
+    "traditionalDrinks": [
+     "Kabud choy (chá-verde)",
+     "Shirchoy (chá com leite e manteiga, típico do Pamir)",
+     "Dugh (bebida de iogurte)"
+    ],
+    "streetFoodAndDesserts": [
+     "Sambusa (pastel assado no forno tandur)",
+     "Non (pão de tandur)",
+     "Nishallo (doce de clara batida e açúcar)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Rudaki (poeta fundador da literatura persa)",
+     "Avicena (Abu Ali ibn Sino, médico e filósofo)",
+     "Ismoil Somoni (soberano samânida)"
+    ],
+    "strongSectors": [
+     "Energia hidrelétrica",
+     "Produção de alumínio",
+     "Algodão e agricultura"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "O dinheiro vivo é indispensável; cartões quase não funcionam fora dos grandes hotéis e supermercados de Duchambé. Há caixas eletrônicos nas cidades; leve dinheiro suficiente para a montanha.",
+    "tippingCulture": "Os restaurantes costumam acrescentar 10 % de taxa de serviço; se não acrescentarem, basta uma pequena gorjeta.",
+    "economicPillars": "Remessas de emigrantes, alumínio, hidreletricidade, mineração e algodão."
+   }
+  },
+  "itin": {
+   "routeName": "Tadjiquistão, montes Fann: Duchambé, Iskanderkul, Sete Lagos e Khujand",
+   "routeSummary": "Roteiro de 7 dias que vai dos largos bulevares de Duchambé até Iskanderkul e os Sete Lagos turquesa dos montes Fann, passa pela antiga Panjakent e termina em Khujand, porta de entrada do vale de Fergana.",
+   "totalDays": 7,
+   "idealDurationText": "Roteiro de 7 dias entre montanhas e a Rota da Seda",
+   "bestSeason": "Junho – setembro (estradas de montanha abertas); abril – maio e outubro para as cidades",
+   "transportMode": "Carro com motorista / táxis compartilhados + Yandex Go nas cidades",
+   "paceLevel": "Ativo (montanha e cultura)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Duchambé",
+     "recommendedDuration": "2 dias (capital e Hisor)",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Avenida Rudaki e monumento a Ismoil Somoni",
+      "Museu Nacional do Tadjiquistão",
+      "Bazar Mehrgon",
+      "Fortaleza de Hisor"
+     ],
+     "activities": [
+      "Admire o Buda reclinado do Museu Nacional.",
+      "Compre frutas secas e especiarias no bazar Mehrgon.",
+      "Faça um passeio de meio dia à fortaleza de Hisor."
+     ],
+     "foodAndDrinks": [
+      "Qurutob",
+      "Kabud choy",
+      "Sambusa"
+     ],
+     "criticalTips": [
+      "Os táxis do Yandex Go são baratos e seguros.",
+      "Evite fotografar prédios oficiais."
+     ],
+     "mapsQuery": "Dushanbe, Tajikistan"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Iskanderkul",
+     "recommendedDuration": "1 dia (lago de montanha)",
+     "durationBadge": "1 dia",
+     "highlights": [
+      "Lago Iskanderkul",
+      "Cachoeira do rio Fann",
+      "Vista do passo de Anzob"
+     ],
+     "activities": [
+      "Caminhe pela margem do lago.",
+      "Suba ao mirante da cachoeira.",
+      "Admire o pôr do sol sobre o lago."
+     ],
+     "foodAndDrinks": [
+      "Shurbo",
+      "Shirchoy"
+     ],
+     "criticalTips": [
+      "O túnel de Anzob é estreito e escuro; um motorista experiente é indispensável.",
+      "O lago fica a 2.200 m; as noites são frias."
+     ],
+     "mapsQuery": "Iskanderkul, Tajikistan"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Sete Lagos e Panjakent",
+     "recommendedDuration": "2 dias (lagos + cidade antiga)",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Haft Kul – Sete Lagos (Marguzor)",
+      "Sítio arqueológico da antiga Panjakent",
+      "Museu Rudaki (Panjakent)",
+      "Bazar de Panjakent"
+     ],
+     "activities": [
+      "Percorra os lagos a pé ou de carro.",
+      "Hospede-se em uma casa de família (homestay).",
+      "Explore os vestígios de pinturas murais sogdianas."
+     ],
+     "foodAndDrinks": [
+      "Osh",
+      "Non",
+      "Dugh"
+     ],
+     "criticalTips": [
+      "Você estará perto da fronteira com o Uzbequistão (Samarcanda); confira antes o horário de funcionamento do posto de fronteira.",
+      "As estradas de terra ficam complicadas com chuva."
+     ],
+     "mapsQuery": "Haft Kul, Panjakent, Tajikistan"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Khujand",
+     "recommendedDuration": "2 dias (porta de Fergana)",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Bazar Panjshanbe",
+      "Fortaleza e Museu de História de Khujand",
+      "Mesquita e mausoléu do xeique Muslihiddin"
+     ],
+     "activities": [
+      "Explore o Panjshanbe, um dos bazares mais animados do país.",
+      "Passeie às margens do rio Syr Darya.",
+      "Conheça no museu da fortaleza a história da cidade desde Alexandre, o Grande."
+     ],
+     "foodAndDrinks": [
+      "Sambusa",
+      "Nishallo"
+     ],
+     "criticalTips": [
+      "Fique de olho nos seus objetos de valor no bazar.",
+      "O passo de Shahriston pode fechar no inverno; confira as condições da estrada."
+     ],
+     "mapsQuery": "Khujand, Tajikistan"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Qurutob (pão com molho de qurut e legumes; prato nacional)",
+     "Osh (plov com carne e cenoura)",
+     "Shurbo (sopa de carne e legumes)"
+    ],
+    "drinks": [
+     "Kabud choy (chá-verde)",
+     "Shirchoy (chá com leite e manteiga, típico do Pamir)",
+     "Dugh (bebida de iogurte)"
+    ],
+    "streetFoods": [
+     "Sambusa (pastel assado no forno tandur)",
+     "Non (pão de tandur)",
+     "Nishallo (doce de clara batida e açúcar)"
+    ],
+    "diningAdvice": "As casas de chá (choyxona) são a opção mais barata e autêntica; os pratos são compartilhados e o pão é partido com a mão."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Dinheiro vivo suficiente em somoni",
+     "Botas de trilha e roupas de frio",
+     "Mapas offline",
+     "Protetor solar e chapéu"
+    ],
+    "safetyAndEtiquette": [
+     "Siga os alertas oficiais perto da fronteira afegã.",
+     "Vista-se de forma discreta em locais sagrados."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Tomadas tipo C/F (220 V), como na Turquia; não é preciso adaptador, embora haja quedas de energia nas áreas rurais."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Não beba água da torneira nem de riachos; use água mineral ou filtros/pastilhas purificadoras.",
+    "vaccines": [
+     "Vacinas de rotina (tétano-difteria, tríplice viral)",
+     "Hepatite A e febre tifoide",
+     "Raiva, para estadias longas em vilarejos de montanha"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "103"
+   },
+   "tipping": {
+    "custom": "A gorjeta não é obrigatória; os restaurantes costumam acrescentar taxa de serviço.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Uma pequena gorjeta para guias e motoristas no fim do dia é bem-vinda."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA (~14 %); sem reembolso para turistas",
+    "minSpend": "Não se aplica",
+    "customsNote": "O Tadjiquistão não oferece reembolso do IVA a turistas. Podem ser exigidos documentos para exportar antiguidades e tapetes."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 0,30 - 1,00",
+    "topCarriers": [
+     "Tcell",
+     "MegaFon Tajikistan",
+     "ZET-Mobile",
+     "Babilon-M"
+    ],
+    "airportSimTrapWarning": "O aeroporto de Duchambé tem quiosques da Tcell e da MegaFon; é preciso passaporte. A Tcell e a MegaFon costumam ter a melhor cobertura no Pamir."
+   },
+   "touristScams": [
+    {
+     "title": "Preço do táxi compartilhado",
+     "desc": "Os táxis compartilhados intermunicipais cobram tarifas altas de estrangeiros.",
+     "tip": "Combine o preço por pessoa antes de entrar."
+    },
+    {
+     "title": "Câmbio na rua",
+     "desc": "Em câmbios não oficiais, podem dar troco a menos ou notas falsas.",
+     "tip": "Use bancos e casas de câmbio oficiais."
+    },
+    {
+     "title": "Falsa polícia",
+     "desc": "Pessoas que se passam por policiais pedem documentos e dinheiro.",
+     "tip": "Mostre documentos apenas na delegacia ou em blitze oficiais."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Таджикский сомони (TJS)",

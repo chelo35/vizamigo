@@ -1523,6 +1523,387 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Franco CFA da África Central (XAF)",
+   "plugType": "Tipo C, E (220V, 50Hz)",
+   "bestMonths": "Dezembro – fevereiro (estação seca em Bioko); desova de tartarugas marinhas em Ureca de novembro a fevereiro",
+   "safety": {
+    "safetyScore": 55,
+    "safetyLevel": "Risco moderado",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60",
+    "crimeRateSummary": "A criminalidade de rua é menor que em alguns países vizinhos, mas há furtos por arrastão e roubos à noite. As barreiras policiais e militares são frequentes, e as restrições a fotos são aplicadas com rigor.",
+    "commonScams": [
+     "Cobrança de dinheiro em barreiras por supostos documentos em falta",
+     "“Multas” por fotos supostamente não autorizadas",
+     "Tarifas de táxi acima do normal para estrangeiros"
+    ],
+    "safeTravelTips": [
+     "Ande sempre com o passaporte e os documentos de entrada.",
+     "Nunca fotografe prédios oficiais, militares, portos nem o aeroporto.",
+     "Antes de ir ao sul de Bioko, confirme com o hotel ou a agência quais licenças turísticas são necessárias."
+    ],
+    "emergencyNumbers": {
+     "police": "113",
+     "ambulance": "3101",
+     "general": "113"
+    }
+   },
+   "internet": {
+    "networkCoverage": "4G em Malabo e Bata; fraco no sul de Bioko e no interior continental",
+    "costPerGbUsd": "~US$ 3,00 - 8,00",
+    "esimAvailability": "Limitada",
+    "bestCarriers": [
+     "GETESA",
+     "Muni"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Limitado",
+    "costLevel": "Caro",
+    "singleTicketUsd": "US$ 1,00 - 2,00",
+    "dailyPassUsd": "US$ 40 - 80",
+    "popularRideApps": [
+     "Sem apps de transporte",
+     "Táxis compartilhados urbanos",
+     "Carro com motorista pelo hotel"
+    ],
+    "taxiAdvice": "Não há transporte por aplicativo. Os táxis compartilhados de Malabo e Bata são baratos para trajetos curtos; para uma corrida particular ou à noite, combine o preço antes ou use um carro do hotel."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 70 - 110",
+    "dailyBudgetMidrangeUsd": "US$ 150 - 250",
+    "budgetMealUsd": "US$ 8 - 15",
+    "coffeeUsd": "US$ 2 - 4",
+    "waterBottleUsd": "US$ 0,80 - 1,50",
+    "hostelDormUsd": "US$ 40 - 70",
+    "hotel3StarUsd": "US$ 120 - 220",
+    "flightCostIndex": "Alto",
+    "flightTip": "Não há voos diretos saindo da Turquia; a conexão é feita por Madri (Iberia) ou Adis Abeba (Ethiopian)."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Apertar a mão e dizer “Buenos días” é importante ao cumprimentar.",
+     "Seja respeitoso e paciente com os mais velhos e com os funcionários públicos.",
+     "Peça sempre permissão antes de tirar fotos; em algumas áreas é proibido.",
+     "Andar bem-vestido na cidade é sinal de respeito."
+    ],
+    "festivals": [
+     "Dia da Independência (12 de outubro)",
+     "Natal e Semana Santa em Malabo",
+     "Danças tradicionais bubi e fang"
+    ],
+    "lifestyle": "Mistura de cultura africana e espanhola, prédios modernos financiados pelo petróleo e uma vida centrada na igreja e na família."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Catedral de Santa Isabel e centro colonial de Malabo",
+     "Vale de Moka e lago de cratera Biao",
+     "Praias de Ureca (tartarugas marinhas)",
+     "Luba e praia Arena Blanca (borboletas)",
+     "Passeio Marítimo de Bata",
+     "Parque Nacional de Monte Alén"
+    ],
+    "bestSeasons": "Dezembro – fevereiro (estação seca em Bioko); desova de tartarugas marinhas em Ureca de novembro a fevereiro",
+    "travelStyleTip": "Explore primeiro a ilha de Bioko (Malabo, Moka, Luba, Ureca) e depois voe para Bata; para Monte Alén, um tour organizado é indispensável."
+   },
+   "religion": {
+    "primaryReligions": "Cristianismo (~88 %, sobretudo católico), islã (~4 %) e crenças tradicionais.",
+    "respectNorms": "Cubra ombros e joelhos nas igrejas e não tire fotos durante a missa.",
+    "sacredSites": [
+     "Catedral de Santa Isabel, Malabo",
+     "Catedral de Bata",
+     "Basílica da Imaculada Conceição, Mongomo"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Espanhol (oficial), francês e português. Fang e bubi são muito falados.",
+    "englishProficiency": "Baixo; pouca gente fala inglês, e um espanhol básico ajuda muito.",
+    "phrases": [
+     {
+      "phrase": "Mbolo",
+      "meaning": "Olá (fang)",
+      "translation": "Olá (fang)",
+      "pronunciation": "m-BOH-loh"
+     },
+     {
+      "phrase": "Akiba",
+      "meaning": "Obrigado (fang)",
+      "translation": "Obrigado (fang)",
+      "pronunciation": "ah-KEE-bah"
+     },
+     {
+      "phrase": "Buenos días",
+      "meaning": "Bom dia (espanhol)",
+      "translation": "Bom dia (espanhol)",
+      "pronunciation": "BWEH-nos DEE-as"
+     },
+     {
+      "phrase": "¿Cuánto cuesta?",
+      "meaning": "Quanto custa? (espanhol)",
+      "translation": "Quanto custa? (espanhol)",
+      "pronunciation": "KWAN-toh KWES-tah"
+     },
+     {
+      "phrase": "Por favor",
+      "meaning": "Por favor (espanhol)",
+      "translation": "Por favor (espanhol)",
+      "pronunciation": "por fa-VOR"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "O navegador português Fernão do Pó chegou a Bioko em 1472; a ilha e a parte continental passaram para a Espanha em 1778. O país se tornou independente em 1968, e o petróleo descoberto nos anos noventa transformou sua economia.",
+    "milestones": [
+     "1472: Fernão do Pó chega a Bioko",
+     "1778: domínio espanhol pelo Tratado de El Pardo",
+     "1968: independência da Espanha",
+     "1996: começa a produção de petróleo no campo de Zafiro"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Pepesoup (sopa apimentada de peixe ou carne)",
+     "Sopa de peixe",
+     "Ekomba (massa de banana-da-terra e oleaginosas cozida em folhas)"
+    ],
+    "traditionalDrinks": [
+     "Malamba (bebida de cana-de-açúcar)",
+     "Topé (vinho de palma)",
+     "Bissap (hibisco)"
+    ],
+    "streetFoodAndDesserts": [
+     "Peixe na brasa com banana-da-terra",
+     "Mandioca frita",
+     "Bolinhos fritos"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Eric Moussambani (“Eric, a Enguia”, nadador olímpico em 2000)",
+     "Emilio Nsue (jogador de futebol, artilheiro da Copa Africana de 2023)",
+     "Donato Ndongo-Bidyogo (escritor)"
+    ],
+    "strongSectors": [
+     "Petróleo e gás natural (GNL)",
+     "Madeira",
+     "Cacau e café (historicamente)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Dinheiro vivo em francos CFA é indispensável; cartões só funcionam em grandes hotéis e em alguns supermercados. Os preços ficam bem acima da média da região.",
+    "tippingCulture": "Não é obrigatória; até 10 % nos restaurantes é bem-vindo.",
+    "economicPillars": "Exportação de petróleo e gás, construção civil e serviço público."
+   }
+  },
+  "itin": {
+   "routeName": "Roteiro pela Guiné Equatorial: Malabo, Moka, Luba–Ureca e Bata",
+   "routeSummary": "Um roteiro de 8 dias que vai do centro colonial de Malabo aos vales verdes de Moka, às praias selvagens de Luba e Ureca e a Bata, no continente.",
+   "totalDays": 8,
+   "idealDurationText": "Roteiro de 8 dias pela Guiné Equatorial",
+   "bestSeason": "Dezembro – fevereiro (estação seca em Bioko); desova de tartarugas marinhas em Ureca de novembro a fevereiro",
+   "transportMode": "Carro com motorista (4x4) + voo doméstico Malabo–Bata",
+   "paceLevel": "Tranquilo (natureza + cultura)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Malabo",
+     "recommendedDuration": "2 dias (capital)",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Catedral de Santa Isabel",
+      "Praça da Independência",
+      "Parque Nacional de Malabo",
+      "Passeio de Sipopo"
+     ],
+     "activities": [
+      "Passeie pelo centro colonial.",
+      "Jante à beira-mar em Sipopo.",
+      "Dê uma olhada nos produtos locais do mercado central."
+     ],
+     "foodAndDrinks": [
+      "Pepesoup",
+      "Malamba"
+     ],
+     "criticalTips": [
+      "Nunca fotografe prédios oficiais.",
+      "À noite, use táxis do hotel."
+     ],
+     "mapsQuery": "Malabo, Equatorial Guinea"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Moka e lago Biao",
+     "recommendedDuration": "1-2 dias (montanha e lago)",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Vale de Moka",
+      "Lago de cratera Biao",
+      "Primatas e aves da floresta"
+     ],
+     "activities": [
+      "Faça uma trilha guiada até o lago Biao.",
+      "Observe aves no ar fresco de Moka.",
+      "Visite uma aldeia bubi."
+     ],
+     "foodAndDrinks": [
+      "Sopa de peixe",
+      "Topé"
+     ],
+     "criticalTips": [
+      "Com chuva, as estradas pioram; use um 4x4.",
+      "Providencie as licenças de trilha com antecedência."
+     ],
+     "mapsQuery": "Moka, Bioko, Equatorial Guinea"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Luba e Ureca",
+     "recommendedDuration": "2 dias (praias e natureza selvagem)",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Praia Arena Blanca (nuvens de borboletas na estação seca)",
+      "Praias de tartarugas de Ureca",
+      "Cachoeira de Iladyi"
+     ],
+     "activities": [
+      "Admire o espetáculo das borboletas em Arena Blanca.",
+      "Acompanhe os guardas para observar tartarugas à noite em Ureca.",
+      "Caminhe até a cachoeira de Iladyi."
+     ],
+     "foodAndDrinks": [
+      "Peixe na brasa",
+      "Ekomba"
+     ],
+     "criticalTips": [
+      "Não use flash ao fotografar tartarugas.",
+      "Ureca é de difícil acesso; escolha um tour organizado."
+     ],
+     "mapsQuery": "Luba, Equatorial Guinea"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Bata e Monte Alén",
+     "recommendedDuration": "2 dias (região continental)",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Passeio Marítimo de Bata",
+      "Catedral de Bata",
+      "Floresta do Parque Nacional de Monte Alén"
+     ],
+     "activities": [
+      "Passeie ao entardecer pelo Passeio Marítimo de Bata.",
+      "Faça uma trilha guiada pela floresta de Monte Alén.",
+      "Prove frutas tropicais no mercado."
+     ],
+     "foodAndDrinks": [
+      "Pepesoup",
+      "Mandioca frita",
+      "Bissap"
+     ],
+     "criticalTips": [
+      "Monte Alén exige licença e guia.",
+      "O risco de malária é alto; tome precauções."
+     ],
+     "mapsQuery": "Bata, Equatorial Guinea"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Pepesoup (sopa apimentada de peixe ou carne)",
+     "Sopa de peixe",
+     "Ekomba (massa de banana-da-terra e oleaginosas cozida em folhas)"
+    ],
+    "drinks": [
+     "Malamba (bebida de cana-de-açúcar)",
+     "Topé (vinho de palma)",
+     "Bissap (hibisco)"
+    ],
+    "streetFoods": [
+     "Peixe na brasa com banana-da-terra",
+     "Mandioca frita",
+     "Bolinhos fritos"
+    ],
+    "diningAdvice": "Os restaurantes são caros; os restaurantes populares e os frutos do mar têm preço melhor. A pepesoup costuma ser bem apimentada."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Cópias do passaporte e dos documentos",
+     "Repelente e comprimidos contra malária",
+     "Capa de chuva",
+     "Dinheiro vivo suficiente (dá para trocar euros)"
+    ],
+    "safetyAndEtiquette": [
+     "Respeite rigorosamente as proibições de fotografia.",
+     "Mantenha a calma e a cortesia nas barreiras de controle."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "E"
+    ],
+    "voltage": "220V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "São usadas tomadas europeias tipo C e E; os plugues turcos costumam encaixar."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "A água da torneira não é potável; use água engarrafada e lacrada.",
+    "vaccines": [
+     "Febre amarela (recomendada; certificado obrigatório se você vier de um país de risco)",
+     "Hepatite A e febre tifoide",
+     "Prevenção contra malária (consulte seu médico)",
+     "Vacinas de rotina"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "3101"
+   },
+   "tipping": {
+    "custom": "A gorjeta não é obrigatória.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Deixe 5-10 % nos restaurantes se o serviço for bom e dê gorjeta à parte para os guias."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Sem restituição de imposto para turistas (IVA de 15 %)",
+    "minSpend": "Não se aplica",
+    "customsNote": "A Guiné Equatorial não tem sistema de restituição de IVA (tax-free) para turistas. Comprar marfim ou produtos da fauna selvagem é ilegal."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "US$ 3,00 - 8,00",
+    "topCarriers": [
+     "GETESA",
+     "Muni"
+    ],
+    "airportSimTrapWarning": "Os chips são vendidos com o passaporte nas lojas da GETESA ou da Muni; os dados são caros. O Wi-Fi do hotel costuma ser a opção mais prática."
+   },
+   "touristScams": [
+    {
+     "title": "“Multa” por fotos",
+     "desc": "Funcionários podem pedir dinheiro por supostas fotos não autorizadas.",
+     "tip": "Peça permissão antes de fotografar e guarde a câmera em áreas sensíveis."
+    },
+    {
+     "title": "Taxas em barreiras",
+     "desc": "Cobranças informais por supostos documentos em falta.",
+     "tip": "Ande sempre com o passaporte e as licenças."
+    },
+    {
+     "title": "Tarifas de táxi",
+     "desc": "Preços inflados para estrangeiros.",
+     "tip": "Combine a tarifa antes de entrar ou use um carro do hotel."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Центральноафриканский франк КФА (XAF)",

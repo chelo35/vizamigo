@@ -32,7 +32,7 @@ export const CountryCard: React.FC<{ code: string; item?: CountryItem | null; su
           <span>{getCountryName(code, language)}</span>
         </span>
         <span className="vz-ccard-s">
-          {sub || [getRegionName(countryToRegion[code] || '', language), d ? l(`${d} gün`, `${d} days`, `${d} Tage`, `${d} días`, `${d} дн.`) : ''].filter(Boolean).join(' · ')}
+          {sub || [getRegionName(countryToRegion[code] || '', language), d ? l(`${d} gün`, `${d} days`, `${d} Tage`, `${d} días`, `${d} дн.`, `${d} dias`) : ''].filter(Boolean).join(' · ')}
         </span>
       </span>
     </button>

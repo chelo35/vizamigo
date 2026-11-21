@@ -1411,6 +1411,359 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Libra sul-sudanesa (SSP); o dólar americano é amplamente usado",
+   "bestMonths": "Dezembro – março (estação seca; estradas mais transitáveis e acampamentos de gado mundari à beira do rio) · Abril – novembro, estação chuvosa: muitas estradas ficam intransitáveis e o risco de enchentes é alto",
+   "safety": {
+    "safetyScore": 10,
+    "safetyLevel": "Zona de conflito (não viaje)",
+    "badgeColor": "bg-rose-600 text-white border-rose-700 dark:bg-rose-950 dark:text-rose-200",
+    "crimeRateSummary": "Confrontos armados, violência entre comunidades, assaltos e roubos de veículos são frequentes em todo o país; em Juba também há criminalidade à noite e tensões repentinas. A Turquia, o FCDO britânico e os EUA desaconselham qualquer viagem; a grave crise humanitária e as enchentes continuam.",
+    "commonScams": [
+     "Taxas não oficiais em postos de controle e no aeroporto",
+     "Cobrança de dinheiro ou apreensão da câmera por supostas fotos não autorizadas",
+     "Troco a menos ao trocar dólares no mercado paralelo"
+    ],
+    "safeTravelTips": [
+     "Não viaje; se for inevitável, desloque-se com apoio de segurança institucional e não saia à noite.",
+     "Tire uma licença para fotografar no Ministério da Informação e nunca fotografe prédios oficiais nem soldados.",
+     "Viaje por estrada só durante o dia, em comboio e com informações de segurança atualizadas."
+    ],
+    "emergencyNumbers": {
+     "police": "777",
+     "ambulance": "777",
+     "general": "777"
+    }
+   },
+   "internet": {
+    "networkCoverage": "3G/4G em Juba e em algumas cidades; pouca ou nenhuma cobertura na maior parte do país",
+    "costPerGbUsd": "US$ 2,00 - 6,00",
+    "esimAvailability": "Muito limitada (eSIMs internacionais raramente funcionam; chip local com passaporte)",
+    "bestCarriers": [
+     "MTN South Sudan",
+     "Zain South Sudan",
+     "Digitel"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Muito precário (pouquíssimas estradas asfaltadas, que fecham com as chuvas; voar é o mais seguro)",
+    "costLevel": "Muito caro",
+    "singleTicketUsd": "0,50 - 2,00 $ (boda-boda/micro-ônibus; não recomendado para estrangeiros)",
+    "dailyPassUsd": "Não existe (4x4 com motorista: 150 - 300 $ por dia)",
+    "popularRideApps": [
+     "Não há apps internacionais",
+     "Boda-boda (mototáxi)",
+     "Carro com motorista pelo hotel ou pela organização"
+    ],
+    "taxiAdvice": "Boda-bodas e micro-ônibus não são recomendados para estrangeiros; o comum é circular de carro com motorista do hotel ou da organização. Viajar por estrada fora de Juba é arriscado; dentro do país, usam-se aviões de pequeno porte e voos da ONU ou humanitários."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "80 - 150 $ (em Juba há pouquíssimas opções baratas)",
+    "dailyBudgetMidrangeUsd": "US$ 200 - 400",
+    "budgetMealUsd": "US$ 5 - 15",
+    "coffeeUsd": "US$ 1,00 - 4,00",
+    "waterBottleUsd": "US$ 1,00 - 2,00",
+    "hostelDormUsd": "Não há albergues",
+    "hotel3StarUsd": "US$ 100 - 200",
+    "flightCostIndex": "Alto",
+    "flightTip": "Ao aeroporto de Juba (JUB) normalmente se chega via Adis Abeba (Ethiopian), Nairóbi (Kenya Airways), Entebbe ou Dubai (flydubai). Viajar não é recomendado; os horários podem mudar conforme a situação de segurança."
+   },
+   "plugType": "Tipo C, D (230V, 50Hz)"
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Para povos como os dinka, nuer e mundari, o gado simboliza riqueza e honra; demonstre respeito pelos animais e pelos rebanhos.",
+     "Os cumprimentos são longos e calorosos; os mais velhos têm prioridade.",
+     "Fotografar pessoas e acampamentos exige licença oficial e o consentimento da pessoa.",
+     "Vista-se de forma discreta e dê e receba as coisas com a mão direita."
+    ],
+    "festivals": [
+     "Dia da Independência (9 de julho)",
+     "Natal e Páscoa (as maiores celebrações)",
+     "Torneios de luta tradicional (Juba, estação seca)"
+    ],
+    "lifestyle": "O país mais jovem do mundo, independente desde 2011, é conhecido por seus mais de 60 grupos étnicos, pela cultura dos acampamentos de gado, pela vida às margens do Nilo e pelos fortes laços comunitários. O longo conflito e as enchentes deslocaram milhões de pessoas."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Acampamentos de gado mundari (arredores de Terekeka)",
+     "Parque Nacional de Nimule e corredeiras de Fula",
+     "Parques nacionais de Boma e Badingilo (grande migração de antílopes)",
+     "Margens do Nilo Branco em Juba",
+     "Mausoléu de John Garang (Juba)",
+     "Aldeias toposa nos arredores de Kapoeta"
+    ],
+    "bestSeasons": "Dezembro – março (estação seca; estradas mais transitáveis e acampamentos de gado mundari à beira do rio) · Abril – novembro, estação chuvosa: muitas estradas ficam intransitáveis e o risco de enchentes é alto",
+    "travelStyleTip": "Os alertas oficiais desaconselham viajar. Os poucos visitantes vão na estação seca com um operador local especializado, que cuida das licenças e da segurança."
+   },
+   "religion": {
+    "primaryReligions": "Cristianismo (~60 %; sobretudo católico e anglicano), religiões tradicionais africanas (~33 %), islamismo (~6 %)",
+    "respectNorms": "Vá aos cultos e missas com roupas discretas; participe de cerimônias tradicionais só se for convidado e com permissão.",
+    "sacredSites": [
+     "Catedral de Santa Teresa (Kator, Juba)",
+     "Catedral Anglicana de Todos os Santos (Juba)",
+     "Catedral de Santa Maria (Wau)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "O inglês é a língua oficial; no dia a dia, a língua franca é o árabe de Juba. Também se falam dinka, nuer, bari, zande, shilluk e mais de 60 línguas locais.",
+    "englishProficiency": "Médio; em Juba, as pessoas com estudo e as organizações falam inglês, mas no interior é limitado.",
+    "phrases": [
+     {
+      "phrase": "Salaam aleikum",
+      "meaning": "Olá (a paz esteja com você)",
+      "translation": "Olá (a paz esteja com você)",
+      "pronunciation": "sa-LAAM a-LAY-kum"
+     },
+     {
+      "phrase": "Ita kweis?",
+      "meaning": "Você está bem? (resposta: “Ana kweis” – estou bem)",
+      "translation": "Você está bem? (resposta: “Ana kweis” – estou bem)",
+      "pronunciation": "EE-ta KWAYS"
+     },
+     {
+      "phrase": "Shukran",
+      "meaning": "Obrigado(a)",
+      "translation": "Obrigado(a)",
+      "pronunciation": "SHUK-ran"
+     },
+     {
+      "phrase": "De bi kam?",
+      "meaning": "Quanto custa isto?",
+      "translation": "Quanto custa isto?",
+      "pronunciation": "de bi KAM"
+     },
+     {
+      "phrase": "Mafi mushkila",
+      "meaning": "Sem problema",
+      "translation": "Sem problema",
+      "pronunciation": "MA-fi MUSH-ki-la"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "No século XIX, estas terras do sul da bacia do Nilo passaram ao domínio otomano-egípcio e depois anglo-egípcio, e em 1956 se tornaram independentes como parte do Sudão. Depois das guerras civis de 1955–1972 e 1983–2005, o Acordo Geral de Paz de 2005 e um referendo em 2011 levaram à independência. O conflito interno iniciado em 2013 terminou formalmente com o acordo de paz de 2018, mas a violência e a tensão política continuam.",
+    "milestones": [
+     "1955: Começa a primeira guerra civil sudanesa",
+     "2005: Acordo Geral de Paz",
+     "2011: Independência (9 de julho)",
+     "2018: Acordo de paz revitalizado"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Kisra (panqueca de sorgo) com ensopado de carne",
+     "Asida (mingau de sorgo com molho de quiabo ou de amendoim)",
+     "Peixe do Nilo frito (tilápia, perca-do-nilo)"
+    ],
+    "traditionalDrinks": [
+     "Chá e café com gengibre",
+     "Merissa (cerveja tradicional de sorgo)",
+     "Leite e iogurte frescos (nos acampamentos de gado)"
+    ],
+    "streetFoodAndDesserts": [
+     "Mandazi (massa doce frita)",
+     "Sambusa (pastéis triangulares)",
+     "Milho assado e amendoim"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Manute Bol (um dos jogadores mais altos da história da NBA)",
+     "Luol Deng (All-Star da NBA nascido em Wau)",
+     "Alek Wek (supermodelo nascida em Wau)"
+    ],
+    "strongSectors": [
+     "Petróleo (a maior parte da receita pública)",
+     "Pecuária (bovinos, cabras)",
+     "Agricultura (sorgo, mandioca, amendoim) e madeira"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "O dinheiro vivo domina; os pagamentos grandes são feitos em dólar, e a libra local se desvaloriza rápido. Cartões quase nunca são aceitos, e o dinheiro móvel, como o MTN MoMo, é limitado. Leve notas de dólar novas e limpas.",
+    "tippingCulture": "Não é obrigatória; 5-10 % em hotéis e restaurantes e uma gorjeta para guias e motoristas são bem-vindos.",
+    "economicPillars": "Exportação de petróleo, agricultura e pecuária de subsistência, ajuda internacional e serviços."
+   }
+  },
+  "itin": {
+   "routeName": "O Nilo e os acampamentos de gado (apenas informativo): Juba, Terekeka e Nimule",
+   "routeSummary": "Os alertas oficiais desaconselham viajar. Este roteiro de 6 dias resume, apenas a título informativo, as raras viagens feitas com operadores especializados na estação seca: a capital, Juba, os acampamentos mundari de Terekeka, ao norte, e o Parque Nacional de Nimule, perto da fronteira com Uganda, ao sul.",
+   "totalDays": 6,
+   "bestSeason": "Dezembro – março (estação seca; estradas mais transitáveis e acampamentos de gado mundari à beira do rio) · Abril – novembro, estação chuvosa: muitas estradas ficam intransitáveis e o risco de enchentes é alto",
+   "transportMode": "4x4 com motorista de um operador especializado; trajetos diurnos até Terekeka e Nimule, com licenças providenciadas com antecedência",
+   "paceLevel": "Cultura e natureza (procedimentos de segurança rigorosos)",
+   "signatureGastronomy": {
+    "dishes": [
+     "Kisra",
+     "Asida",
+     "Peixe do Nilo"
+    ],
+    "drinks": [
+     "Chá de gengibre",
+     "Merissa",
+     "Leite fresco"
+    ],
+    "streetFoods": [
+     "Mandazi",
+     "Sambusa",
+     "Milho assado"
+    ],
+    "diningAdvice": "Nos restaurantes de Juba também há muita comida etíope, ugandense e queniana; os preços são altos por causa das importações. Na rua, prefira pratos quentes e feitos na hora."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Certificado de vacinação contra febre amarela (exigido na entrada)",
+     "Dólares em espécie, novos e limpos",
+     "Antimaláricos, repelente e mosquiteiro",
+     "Adaptador universal e carregador portátil"
+    ],
+    "safetyAndEtiquette": [
+     "Leve a licença oficial para fotografar e peça o consentimento das pessoas.",
+     "Não saia à noite e viaje por estrada só durante o dia."
+    ]
+   },
+   "idealDurationText": "Roteiro de 6 dias",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Juba",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Margens do Nilo Branco",
+      "Mercado de Konyo Konyo",
+      "Mausoléu de John Garang",
+      "Vista do morro Jebel Kujur"
+     ],
+     "activities": [
+      "Veja o pôr do sol em um restaurante à beira do Nilo.",
+      "Visite o mercado de Konyo Konyo com um guia.",
+      "Tire a licença para fotografar no Ministério da Informação."
+     ],
+     "foodAndDrinks": [
+      "Peixe do Nilo",
+      "Kisra com ensopado",
+      "Chá de gengibre"
+     ],
+     "criticalTips": [
+      "Não saia à noite e siga as regras de segurança do hotel.",
+      "Não fotografe prédios oficiais, pontes nem soldados."
+     ],
+     "mapsQuery": "Juba, South Sudan"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Terekeka (acampamentos de gado mundari)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Rebanhos de gado de chifres longos",
+      "Fumaça das fogueiras e rituais com cinzas",
+      "Nascer do sol à beira do Nilo"
+     ],
+     "activities": [
+      "De manhã, observe os rebanhos saindo para pastar.",
+      "Conheça a vida no acampamento com guia e intérprete locais.",
+      "Fotografe a volta dos rebanhos ao entardecer (com permissão)."
+     ],
+     "foodAndDrinks": [
+      "Leite fresco",
+      "Refeições de acampamento levadas pelo operador"
+     ],
+     "criticalTips": [
+      "O gado é extremamente valioso; não faça movimentos bruscos nem se aproxime dos rebanhos sem permissão.",
+      "Pode haver jovens armados nos acampamentos; siga as orientações do seu guia."
+     ],
+     "mapsQuery": "Terekeka, South Sudan"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Parque Nacional de Nimule",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Corredeiras de Fula (no Nilo Branco)",
+      "Avistamento de elefantes e hipopótamos",
+      "Observação de aves à beira do Nilo"
+     ],
+     "activities": [
+      "Faça uma caminhada acompanhado de um guarda-parque.",
+      "Admire a força do rio nas corredeiras de Fula.",
+      "Faça um piquenique à beira do rio."
+     ],
+     "foodAndDrinks": [
+      "Perca-do-nilo na brasa",
+      "Mandazi e chá"
+     ],
+     "criticalTips": [
+      "Embora a estrada Juba – Nimule seja asfaltada, percorra-a só durante o dia e em comboio.",
+      "Confirme com antecedência a entrada e as tarifas dos guarda-parques."
+     ],
+     "mapsQuery": "Nimule National Park, South Sudan"
+    }
+   ]
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "D"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Oficialmente são usadas tomadas dos tipos C e D (230V/50Hz), mas nos hotéis de Juba o tipo G britânico é muito comum. Leve um adaptador universal; a eletricidade vem principalmente de geradores."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "A água da torneira não é segura; há surtos de cólera e hepatite E. Beba apenas água mineral lacrada.",
+    "vaccines": [
+     "Febre amarela (certificado obrigatório para todos os viajantes)",
+     "Hepatite A, febre tifoide e cólera",
+     "Meningite (ACWY), reforço contra pólio e raiva",
+     "Prevenção da malária (risco muito alto, o ano todo)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "777"
+   },
+   "tipping": {
+    "custom": "Não é obrigatória; 5-10 % e gorjetas para guias e motoristas são bem-vindos.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "Nos acampamentos de gado, é melhor fazer uma contribuição comunitária sugerida pelo operador do que dar gorjetas individuais."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Não há",
+    "minSpend": "Não se aplica",
+    "customsNote": "O Sudão do Sul não devolve impostos a turistas. A exportação de marfim, produtos da fauna e objetos culturais é proibida ou exige licença especial."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "US$ 2,00 - 6,00",
+    "topCarriers": [
+     "MTN South Sudan",
+     "Zain South Sudan",
+     "Digitel"
+    ],
+    "airportSimTrapWarning": "eSIMs internacionais raramente funcionam; compre o chip com passaporte em lojas oficiais da MTN ou da Zain em Juba. Fora de Juba a cobertura é muito limitada: considere comunicação via satélite."
+   },
+   "touristScams": [
+    {
+     "title": "“Multas” por fotografar",
+     "desc": "Pessoas que dizem ter autoridade podem exigir dinheiro ou a sua câmera por supostas fotos não autorizadas.",
+     "tip": "Leve a licença para fotografar, evite locais sensíveis e mantenha a calma enquanto liga para o seu operador."
+    },
+    {
+     "title": "Câmbio no mercado paralelo",
+     "desc": "Promessas de câmbio vantajoso podem render notas falsas ou valores a menos, e dólares antigos são recusados.",
+     "tip": "Troque dinheiro em banco ou no hotel e leve dólares limpos de séries novas."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Южносуданский фунт (SSP); широко используется доллар США",

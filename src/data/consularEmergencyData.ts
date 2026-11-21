@@ -8,20 +8,20 @@ import { getCountryName } from './passportData';
 
 export interface ConsularEmergencyInfo {
   passportCode: string;
-  countryName: { tr: string; en: string; de: string; es?: string; ru?: string };
-  ministryName: { tr: string; en: string; de: string; es?: string; ru?: string };
-  crisisCenterTitle: { tr: string; en: string; de: string; es?: string; ru?: string };
+  countryName: { tr: string; en: string; de: string; es?: string; pt?: string; ru?: string };
+  ministryName: { tr: string; en: string; de: string; es?: string; pt?: string; ru?: string };
+  crisisCenterTitle: { tr: string; en: string; de: string; es?: string; pt?: string; ru?: string };
   hotline247: string;
   hotlineDomestic: string;
   officialPortalUrl: string;
   officialPortalName: string;
-  emergencyDocName: { tr: string; en: string; de: string; es?: string; ru?: string };
-  emergencyDocValidity: { tr: string; en: string; de: string; es?: string; ru?: string };
+  emergencyDocName: { tr: string; en: string; de: string; es?: string; pt?: string; ru?: string };
+  emergencyDocValidity: { tr: string; en: string; de: string; es?: string; pt?: string; ru?: string };
   steps: {
-    policeReport: { tr: string; en: string; de: string; es?: string; ru?: string };
-    photos: { tr: string; en: string; de: string; es?: string; ru?: string };
-    embassySubmission: { tr: string; en: string; de: string; es?: string; ru?: string };
-    travelDocIssuance: { tr: string; en: string; de: string; es?: string; ru?: string };
+    policeReport: { tr: string; en: string; de: string; es?: string; pt?: string; ru?: string };
+    photos: { tr: string; en: string; de: string; es?: string; pt?: string; ru?: string };
+    embassySubmission: { tr: string; en: string; de: string; es?: string; pt?: string; ru?: string };
+    travelDocIssuance: { tr: string; en: string; de: string; es?: string; pt?: string; ru?: string };
   };
 }
 
@@ -985,14 +985,14 @@ export function getConsularEmergencyInfo(passportCode: string, _lang: string = '
       tr: `${countryNameTr} Dışişleri Bakanlığı`,
       en: `Ministry of Foreign Affairs of ${countryNameEn}`,
       de: `Außenministerium von ${countryNameDe}`,
-      es: `Ministerio de Asuntos Exteriores (${countryNameEs})`,
+      es: `Ministerio de Asuntos Exteriores (${countryNameEs})`, pt: `Ministério das Relações Exteriores (${countryNameEs})`,
       ru: `Министерство иностранных дел (${countryNameRu})`
     },
     crisisCenterTitle: {
       tr: 'Vatandaş Kriz Masası & Konsolosluk Acil Yardım Hattı',
       en: 'Citizen Crisis Center & Consular Assistance Hotline',
       de: 'Krisenstab & Konsularische Notrufhotline',
-      es: 'Centro de crisis para ciudadanos y asistencia consular',
+      es: 'Centro de crisis para ciudadanos y asistencia consular', pt: 'Central de crises para cidadãos e assistência consular',
       ru: 'Кризисный центр и консульская помощь гражданам'
     },
     // bu ülkeler için doğrulanmış telefon numarası yok: numara yerine metin göstermeyelim
@@ -1004,14 +1004,14 @@ export function getConsularEmergencyInfo(passportCode: string, _lang: string = '
       tr: 'Acil Geçici Seyahat Belgesi (Emergency Certificate / Laissez-Passer)',
       en: 'Emergency Travel Document (Emergency Certificate / Laissez-Passer)',
       de: 'Notreisedokument (Emergency Certificate / Laissez-Passer)',
-      es: 'Documento de viaje de emergencia (Emergency Certificate / Laissez-Passer)',
+      es: 'Documento de viaje de emergencia (Emergency Certificate / Laissez-Passer)', pt: 'Documento de viagem de emergência (Emergency Certificate / Laissez-Passer)',
       ru: 'Экстренный проездной документ (Emergency Certificate / Laissez-Passer)'
     },
     emergencyDocValidity: {
       tr: 'Vatandaşı olunan ülkeye doğrudan tek yönlü dönüş için geçerlidir.',
       en: 'Valid exclusively for a direct single-journey return to home country.',
       de: 'Gültig ausschließlich für die direkte Rückreise in das Heimatland.',
-      es: 'Válido solo para un viaje directo de regreso a su país.',
+      es: 'Válido solo para un viaje directo de regreso a su país.', pt: 'Válido apenas para uma viagem direta de volta ao seu país.',
       ru: 'Действует только для прямого возвращения на родину.'
     },
     steps: {
@@ -1019,28 +1019,28 @@ export function getConsularEmergencyInfo(passportCode: string, _lang: string = '
         tr: 'Olayın gerçekleştiği yerel polis merkezinden resmi Kayıp/Çalıntı Tutanağı (Police Report) alın.',
         en: 'Report the loss or theft to the local police department and obtain an official Police Report.',
         de: 'Erstatten Sie bei der örtlichen Polizei Verlust- oder Diebstahlsanzeige und sichern Sie das Protokoll.',
-        es: 'Denuncie la pérdida o el robo en la comisaría local y pida una copia oficial de la denuncia.',
+        es: 'Denuncie la pérdida o el robo en la comisaría local y pida una copia oficial de la denuncia.', pt: 'Registre a perda ou o roubo na delegacia local e peça uma cópia oficial do boletim de ocorrência.',
         ru: 'Сообщите о потере или краже в местную полицию и получите официальную справку.'
       },
       photos: {
         tr: 'Beyaz fonlu 2 adet güncel biyometrik pasaport fotoğrafı hazırlayın.',
         en: 'Prepare 2 recent biometric passport photographs with a clean white background.',
         de: 'Halten Sie 2 aktuelle biometrische Passfotos mit weißem Hintergrund bereit.',
-        es: 'Prepare 2 fotos biométricas recientes de pasaporte con fondo blanco.',
+        es: 'Prepare 2 fotos biométricas recientes de pasaporte con fondo blanco.', pt: 'Tenha 2 fotos biométricas recentes para passaporte com fundo branco.',
         ru: 'Подготовьте 2 свежие биометрические фотографии на паспорт на белом фоне.'
       },
       embassySubmission: {
         tr: `Bulunduğunuz ülkedeki ${countryNameTr} Büyükelçiliği veya Konsolosluğuna acil müracaatta bulunun.`,
         en: `Proceed to the nearest Embassy or Consulate of ${countryNameEn} for emergency assistance.`,
         de: `Suchen Sie die nächste Botschaft oder das Konsulat von ${countryNameDe} auf.`,
-        es: `Acuda a la embajada o al consulado más cercano de su país (${countryNameEs}) para pedir ayuda urgente.`,
+        es: `Acuda a la embajada o al consulado más cercano de su país (${countryNameEs}) para pedir ayuda urgente.`, pt: `Procure a embaixada ou o consulado mais próximo do seu país (${countryNameEs}) para pedir ajuda urgente.`,
         ru: `Обратитесь в ближайшее посольство или консульство своей страны (${countryNameRu}) за срочной помощью.`
       },
       travelDocIssuance: {
         tr: 'Konsolosluk, kimlik ve uçak bileti teyidinin ardından ülkenize dönüş için Acil Seyahat Belgesi tanzim eder.',
         en: 'Upon identity and ticket verification, an Emergency Travel Document will be issued for direct repatriation.',
         de: 'Nach Prüfung von Identität und Flugticket wird ein Notreisedokument für die Heimreise ausgestellt.',
-        es: 'Tras verificar su identidad y el billete, se emite un documento de viaje de emergencia para volver directamente.',
+        es: 'Tras verificar su identidad y el billete, se emite un documento de viaje de emergencia para volver directamente.', pt: 'Após a verificação da sua identidade e da passagem, é emitido um documento de viagem de emergência para você voltar diretamente.',
         ru: 'После проверки личности и билета выдаётся экстренный проездной документ для возвращения домой.'
       }
     }

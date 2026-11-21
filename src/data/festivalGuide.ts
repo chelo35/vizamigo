@@ -41,10 +41,10 @@ const fmtIso = (iso: string, lang: string): string => {
 export function festivalWhen(e: FestivalGuideEntry, lang: string): string {
   const L = (en: string, tr: string, de: string, es: string, ru: string, pt: string) => [en, tr, de, es, ru, pt][IDX[lang] ?? 0];
   let base: string;
-  if (e.d && e.m.length === 1) base = lang === 'en' ? `${e.d} ${monthName(e.m[0], lang, 'format')}` : lang === 'de' ? `${e.d.replace(/(\d+)$/, '$1.')} ${monthName(e.m[0], lang, 'format')}`.replace(/^(\d+)–/, '$1.–') : lang === 'es' ? `${e.d} de ${monthName(e.m[0], lang, 'format')}` : `${e.d} ${monthName(e.m[0], lang, 'format')}`;
-  else if (e.d) base = e.m.map((m) => (lang === 'es' ? `${e.d} de ${monthName(m, lang, 'format')}` : lang === 'de' ? `${e.d}. ${monthName(m, lang, 'format')}` : `${e.d} ${monthName(m, lang, 'format')}`)).join(L(' & ', ' ve ', ' und ', ' y ', ' и '));
+  if (e.d && e.m.length === 1) base = lang === 'en' ? `${e.d} ${monthName(e.m[0], lang, 'format')}` : lang === 'de' ? `${e.d.replace(/(\d+)$/, '$1.')} ${monthName(e.m[0], lang, 'format')}`.replace(/^(\d+)–/, '$1.–') : lang === 'es' ? `${e.d} de ${monthName(e.m[0], lang, 'format')}` : lang === 'pt' ? `${e.d} de ${monthName(e.m[0], lang, 'format')}` : `${e.d} ${monthName(e.m[0], lang, 'format')}`;
+  else if (e.d) base = e.m.map((m) => (lang === 'es' ? `${e.d} de ${monthName(m, lang, 'format')}` : lang === 'pt' ? `${e.d} de ${monthName(m, lang, 'format')}` : lang === 'de' ? `${e.d}. ${monthName(m, lang, 'format')}` : `${e.d} ${monthName(m, lang, 'format')}`)).join(L(' & ', ' ve ', ' und ', ' y ', ' и ', ' e '));
   else base = e.m.length > 1 ? `${monthName(e.m[0], lang)} – ${monthName(e.m[e.m.length - 1], lang)}` : monthName(e.m[0], lang);
-  if (e.lunar) base += L(' (lunar calendar, changes yearly)', ' (ay takvimi, her yıl değişir)', ' (Mondkalender, jährlich wechselnd)', ' (calendario lunar, cambia cada año)', ' (по лунному календарю, дата меняется)');
+  if (e.lunar) base += L(' (lunar calendar, changes yearly)', ' (ay takvimi, her yıl değişir)', ' (Mondkalender, jährlich wechselnd)', ' (calendario lunar, cambia cada año)', ' (по лунному календарю, дата меняется)', ' (calendário lunar, muda todo ano)');
   if (e.y27) {
     let r = fmtIso(e.y27[0], lang);
     if (e.y27[1]) {
@@ -53,7 +53,7 @@ export function festivalWhen(e: FestivalGuideEntry, lang: string): string {
         r = f.formatRange ? f.formatRange(new Date(e.y27[0] + 'T00:00:00Z'), new Date(e.y27[1] + 'T00:00:00Z')) : `${r} – ${fmtIso(e.y27[1], lang)}`;
       } catch { r = `${r} – ${fmtIso(e.y27[1], lang)}`; }
     }
-    base += ` · 2027: ${e.lunar ? L('approx. ', 'yaklaşık ', 'ca. ', 'aprox. ', 'ок. ') : ''}${r}`;
+    base += ` · 2027: ${e.lunar ? L('approx. ', 'yaklaşık ', 'ca. ', 'aprox. ', 'ок. ', 'aprox. ') : ''}${r}`;
   }
   return base;
 }
@@ -116,7 +116,7 @@ export function buildFestivalCalendar(lang: string, data?: { entries: Record<str
         if (e.y27 && faq.length < 15) {
           const short = n.replace(/\s*\(.*$/, '').replace(/\s*[:–].*$/, '').trim();
           faq.push({
-            q: L(`When is ${short} in 2027?`, `${short} 2027’de ne zaman?`, `Wann ist ${short} 2027?`, `¿Cuándo es ${short} en 2027?`, `Когда ${short} в 2027 году?`),
+            q: L(`When is ${short} in 2027?`, `${short} 2027’de ne zaman?`, `Wann ist ${short} 2027?`, `¿Cuándo es ${short} en 2027?`, `Когда ${short} в 2027 году?`, `Quando é ${short} em 2027?`),
             a: `${n} (${country}): ${festivalWhen(e, lang)}. ${e.tip[IDX[lang] ?? 0]}`
           });
         }
@@ -127,21 +127,21 @@ export function buildFestivalCalendar(lang: string, data?: { entries: Record<str
     try { const s = new Intl.DateTimeFormat(LOC[lang] || 'en-GB', { month: 'long', timeZone: 'UTC' }).format(new Date(Date.UTC(2027, i, 15))); return s.charAt(0).toUpperCase() + s.slice(1); } catch { return String(i + 1); }
   };
   return {
-    title: L('Festival calendar 2027: the world’s best festivals month by month', '2027 Festival Takvimi: Dünyanın en ünlü festivalleri ay ay', 'Festivalkalender 2027: die besten Feste der Welt Monat für Monat', 'Calendario de festivales 2027: las mejores fiestas del mundo mes a mes', 'Календарь фестивалей 2027: лучшие праздники мира по месяцам'),
-    short: L('Festival calendar', 'Festival takvimi', 'Festivalkalender', 'Calendario de festivales', 'Календарь фестивалей'),
+    title: L('Festival calendar 2027: the world’s best festivals month by month', '2027 Festival Takvimi: Dünyanın en ünlü festivalleri ay ay', 'Festivalkalender 2027: die besten Feste der Welt Monat für Monat', 'Calendario de festivales 2027: las mejores fiestas del mundo mes a mes', 'Календарь фестивалей 2027: лучшие праздники мира по месяцам', 'Calendário de festivais 2027: as melhores festas do mundo mês a mês'),
+    short: L('Festival calendar', 'Festival takvimi', 'Festivalkalender', 'Calendario de festivales', 'Календарь фестивалей', 'Calendário de festivais'),
     metaDesc: L(
       'Plan your trip around the world’s famous festivals: Songkran, Oktoberfest, Rio Carnival, La Tomatina, Día de Muertos and more — dates for 2027, history and travel tips.',
       'Seyahatinizi dünyanın ünlü festivallerine göre planlayın: Songkran, Oktoberfest, Rio Karnavalı, La Tomatina, Ölüler Günü ve daha fazlası — 2027 tarihleri, tarihçe ve gezgin ipuçları.',
       'Planen Sie Ihre Reise rund um die berühmtesten Feste der Welt: Songkran, Oktoberfest, Karneval in Rio, La Tomatina, Día de Muertos und mehr – Termine 2027, Geschichte und Reisetipps.',
       'Planifique su viaje en torno a las fiestas más famosas del mundo: Songkran, Oktoberfest, Carnaval de Río, La Tomatina, Día de Muertos y más: fechas de 2027, historia y consejos.',
-      'Планируйте поездку под знаменитые праздники мира: Сонгкран, Октоберфест, карнавал в Рио, Ла Томатина, День мёртвых и другие — даты 2027 года, история и советы.'
+      'Планируйте поездку под знаменитые праздники мира: Сонгкран, Октоберфест, карнавал в Рио, Ла Томатина, День мёртвых и другие — даты 2027 года, история и советы.', 'Planeje sua viagem em torno das festas mais famosas do mundo: Songkran, Oktoberfest, Carnaval do Rio, La Tomatina, Día de Muertos e muito mais — datas de 2027, história e dicas.'
     ),
     answer: L(
       'Many of the world’s biggest festivals fall on fixed dates (San Fermín 6–14 July, Bastille Day 14 July), while others follow the lunar calendar or Easter and move every year. Below, each festival is listed under the month it starts, with its 2027 date where it is already fixed. Hotels near major festivals fill up months ahead, so book early.',
       'Dünyanın en büyük festivallerinin bir kısmı sabit tarihlidir (San Fermín 6–14 Temmuz, Bastille Günü 14 Temmuz); diğerleri ay takvimine ya da Paskalya’ya bağlıdır ve her yıl değişir. Aşağıda her festival başladığı ayın altında, tarihi belli olanlarda 2027 tarihiyle listelenmiştir. Büyük festivallerin çevresindeki oteller aylar önce dolar; erken rezervasyon yapın.',
       'Viele große Feste haben feste Termine (San Fermín 6.–14. Juli, Nationalfeiertag in Frankreich 14. Juli), andere folgen dem Mondkalender oder Ostern und wandern jedes Jahr. Unten steht jedes Fest unter seinem Startmonat, mit dem Termin 2027, sofern er feststeht. Hotels bei großen Festen sind Monate vorher ausgebucht – früh buchen.',
       'Muchas de las grandes fiestas tienen fecha fija (San Fermín, 6–14 de julio; 14 de julio en Francia), mientras que otras siguen el calendario lunar o la Pascua y cambian cada año. Abajo aparece cada fiesta en el mes en que empieza, con su fecha de 2027 cuando ya se conoce. Los hoteles cercanos se llenan con meses de antelación: reserve pronto.',
-      'Многие крупные праздники проходят в фиксированные даты (Сан-Фермин 6–14 июля, День взятия Бастилии 14 июля), другие зависят от лунного календаря или Пасхи и меняются каждый год. Ниже каждый праздник указан в месяце начала, с датой 2027 года, если она уже известна. Отели рядом с крупными праздниками заполняются за месяцы — бронируйте заранее.'
+      'Многие крупные праздники проходят в фиксированные даты (Сан-Фермин 6–14 июля, День взятия Бастилии 14 июля), другие зависят от лунного календаря или Пасхи и меняются каждый год. Ниже каждый праздник указан в месяце начала, с датой 2027 года, если она уже известна. Отели рядом с крупными праздниками заполняются за месяцы — бронируйте заранее.', 'Muitas das grandes festas têm data fixa (San Fermín, de 6 a 14 de julho; 14 de julho na França), enquanto outras seguem o calendário lunar ou a Páscoa e mudam todo ano. Abaixo, cada festa aparece no mês em que começa, com a data de 2027 quando ela já é conhecida. Os hotéis próximos lotam com meses de antecedência: reserve cedo.'
     ),
     sections: byMonth.map((list, i) => ({ h: monthH(i), list })).filter((s) => s.list.length),
     faq

@@ -71,7 +71,7 @@ export const SeaHero: React.FC<Props> = ({ onSearch, chips = [], searchSlot }) =
   );
 
   return (
-    <section ref={heroRef} className="rd-hero has-photo" aria-label={l('Arama', 'Search', 'Suche', 'Búsqueda', 'Поиск')}>
+    <section ref={heroRef} className="rd-hero has-photo" aria-label={l('Arama', 'Search', 'Suche', 'Búsqueda', 'Поиск', 'Busca')}>
       <div className="rd-sky" aria-hidden="true" />
       <div className="rd-orb" data-par="12" aria-hidden="true" />
       <div className="rd-cloud c1" data-par="22" aria-hidden="true" />
@@ -130,15 +130,15 @@ export const SeaHero: React.FC<Props> = ({ onSearch, chips = [], searchSlot }) =
         {heroVideo && <video src={heroVideo} poster="/videos/home-hero2-poster.webp" autoPlay muted loop playsInline preload="auto" onPlaying={(e) => e.currentTarget.classList.add('on')} />}
       </div>
       <div className="rd-hero-in">
-        <span className="rd-eyebrow">{l('Pasaport · Vize · Yolculuk', 'Passport · Visa · Travel', 'Pass · Visum · Reise', 'Pasaporte · Visado · Viaje', 'Паспорт · Виза · Поездка')}</span>
-        <h1>{l('Nereye gidiyoruz?', 'Where to next?', 'Wohin geht’s?', '¿A dónde vamos?', 'Куда летим?')}</h1>
+        <span className="rd-eyebrow">{l('Pasaport · Vize · Yolculuk', 'Passport · Visa · Travel', 'Pass · Visum · Reise', 'Pasaporte · Visado · Viaje', 'Паспорт · Виза · Поездка', 'Passaporte · Visto · Viagem')}</span>
+        <h1>{l('Nereye gidiyoruz?', 'Where to next?', 'Wohin geht’s?', '¿A dónde vamos?', 'Куда летим?', 'Para onde vamos?')}</h1>
         <p>
           {l(
-            '199 ülkenin vize kuralı, kalış süresi ve yolculuk hazırlığı tek panoda. Resmî kaynaklı, tarihli, beş dilde.',
-            'Visa rules, stay limits and trip prep for 199 countries in one place. Officially sourced, dated, in five languages.',
-            'Visaregeln, Aufenthaltsdauer und Reisevorbereitung für 199 Länder an einem Ort. Amtlich belegt, datiert, in fünf Sprachen.',
-            'Reglas de visado, estancias y preparación para 199 países en un solo lugar. Fuentes oficiales, fechadas, en cinco idiomas.',
-            'Визовые правила, сроки пребывания и подготовка к поездке для 199 стран в одном месте. Официальные источники, на пяти языках.'
+            '199 ülkenin vize kuralı, kalış süresi ve yolculuk hazırlığı tek panoda. Resmî kaynaklı, tarihli, altı dilde.',
+            'Visa rules, stay limits and trip prep for 199 countries in one place. Officially sourced, dated, in six languages.',
+            'Visaregeln, Aufenthaltsdauer und Reisevorbereitung für 199 Länder an einem Ort. Amtlich belegt, datiert, in sechs Sprachen.',
+            'Reglas de visado, estancias y preparación para 199 países en un solo lugar. Fuentes oficiales, fechadas, en seis idiomas.',
+            'Визовые правила, сроки пребывания и подготовка к поездке для 199 стран в одном месте. Официальные источники, на шести языках.', 'Regras de visto, permanência e preparação para 199 países em um só lugar. Fontes oficiais, datadas, em seis idiomas.'
           )}
         </p>
         {searchSlot ? searchSlot : (
@@ -150,16 +150,16 @@ export const SeaHero: React.FC<Props> = ({ onSearch, chips = [], searchSlot }) =
           }}
         >
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" /></svg>
-          <label htmlFor="rd-q" className="sr-only">{l('Ülke ara', 'Search a country', 'Land suchen', 'Buscar país', 'Найти страну')}</label>
+          <label htmlFor="rd-q" className="sr-only">{l('Ülke ara', 'Search a country', 'Land suchen', 'Buscar país', 'Найти страну', 'Buscar país')}</label>
           <input
             id="rd-q"
             type="search"
             value={q}
             onChange={(e) => setQ(e.target.value)}
-            placeholder={l('Tayland, Japonya, Schengen…', 'Thailand, Japan, Schengen…', 'Thailand, Japan, Schengen…', 'Tailandia, Japón, Schengen…', 'Таиланд, Япония, Шенген…')}
+            placeholder={l('Tayland, Japonya, Schengen…', 'Thailand, Japan, Schengen…', 'Thailand, Japan, Schengen…', 'Tailandia, Japón, Schengen…', 'Таиланд, Япония, Шенген…', 'Tailândia, Japão, Schengen…')}
             autoComplete="off"
           />
-          <button type="submit" className="rd-btn">{l('Ara', 'Search', 'Suchen', 'Buscar', 'Найти')}</button>
+          <button type="submit" className="rd-btn">{l('Ara', 'Search', 'Suchen', 'Buscar', 'Найти', 'Buscar')}</button>
         </form>
         )}
         {chips.length > 0 && (

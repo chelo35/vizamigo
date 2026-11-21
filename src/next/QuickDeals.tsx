@@ -45,50 +45,50 @@ export const QuickDeals: React.FC<{ passport: string; destination: string }> = (
     {
       id: 'visa',
       art: 'passport',
-      t: l('Vize', 'Visa', 'Visum', 'Visado', 'Виза'),
-      sub: l(`${destName} için kural ve başvuru`, `${destName}: rules and how to apply`, `${destName}: Regeln und Antrag`, `${destName}: requisitos y trámite`, `${destName}: правила и оформление`),
+      t: l('Vize', 'Visa', 'Visum', 'Visado', 'Виза', 'Visto'),
+      sub: l(`${destName} için kural ve başvuru`, `${destName}: rules and how to apply`, `${destName}: Regeln und Antrag`, `${destName}: requisitos y trámite`, `${destName}: правила и оформление`, `${destName}: requisitos e procedimento`),
     },
     {
       id: 'flight',
       art: 'plane',
-      t: l('Uçak bileti', 'Flights', 'Flüge', 'Vuelos', 'Авиабилеты'),
+      t: l('Uçak bileti', 'Flights', 'Flüge', 'Vuelos', 'Авиабилеты', 'Voos'),
       sub: fromHub && toHub ? `${fromHub} → ${toHub}` : destName,
     },
     {
       id: 'hotel',
       art: 'bed',
-      t: l('Otel', 'Hotels', 'Hotels', 'Hoteles', 'Отели'),
-      sub: l(`${city} otelleri`, `Hotels in ${city}`, `Hotels in ${city}`, `Hoteles en ${city}`, `Отели: ${city}`),
+      t: l('Otel', 'Hotels', 'Hotels', 'Hoteles', 'Отели', 'Hotéis'),
+      sub: l(`${city} otelleri`, `Hotels in ${city}`, `Hotels in ${city}`, `Hoteles en ${city}`, `Отели: ${city}`, `Hotéis em ${city}`),
     },
     {
       id: 'car',
       art: 'car',
-      t: l('Araç kirala', 'Car rental', 'Mietwagen', 'Coche', 'Авто'),
-      sub: l(`${city} havalimanında teslim`, `Pick up at ${city} airport`, `Abholung am Flughafen ${city}`, `Recogida en el aeropuerto de ${city}`, `Получение в аэропорту: ${city}`),
+      t: l('Araç kirala', 'Car rental', 'Mietwagen', 'Coche', 'Авто', 'Carro'),
+      sub: l(`${city} havalimanında teslim`, `Pick up at ${city} airport`, `Abholung am Flughafen ${city}`, `Recogida en el aeropuerto de ${city}`, `Получение в аэропорту: ${city}`, `Busca no aeroporto de ${city}`),
     },
     {
       id: 'esim',
       art: 'wifi',
       t: 'eSIM',
-      sub: l(`${destName} internet paketi`, `${destName} data plan`, `${destName} Datentarif`, `Datos en ${destName}`, `Интернет: ${destName}`),
+      sub: l(`${destName} internet paketi`, `${destName} data plan`, `${destName} Datentarif`, `Datos en ${destName}`, `Интернет: ${destName}`, `Dados em ${destName}`),
     },
     {
       id: 'transfer',
       art: 'transit',
-      t: l('Transfer', 'Transfer', 'Transfer', 'Traslado', 'Трансфер'),
-      sub: l(`${toHub || city} → otelin`, `${toHub || city} → your hotel`, `${toHub || city} → Hotel`, `${toHub || city} → hotel`, `${toHub || city} → отель`),
+      t: l('Transfer', 'Transfer', 'Transfer', 'Traslado', 'Трансфер', 'Traslado'),
+      sub: l(`${toHub || city} → otelin`, `${toHub || city} → your hotel`, `${toHub || city} → Hotel`, `${toHub || city} → hotel`, `${toHub || city} → отель`, `${toHub || city} → hotel`),
     },
     {
       id: 'tour',
       art: 'ticket',
-      t: l('Tur ve bilet', 'Tours & tickets', 'Touren & Tickets', 'Tours y entradas', 'Экскурсии'),
-      sub: l(`${city} turları, müze biletleri`, `${city} tours and tickets`, `${city}: Touren und Tickets`, `${city}: tours y entradas`, `${city}: экскурсии и билеты`),
+      t: l('Tur ve bilet', 'Tours & tickets', 'Touren & Tickets', 'Tours y entradas', 'Экскурсии', 'Passeios e ingressos'),
+      sub: l(`${city} turları, müze biletleri`, `${city} tours and tickets`, `${city}: Touren und Tickets`, `${city}: tours y entradas`, `${city}: экскурсии и билеты`, `${city}: passeios e ingressos`),
     },
     {
       id: 'insurance',
       art: 'shield',
-      t: l('Sigorta', 'Insurance', 'Versicherung', 'Seguro', 'Страховка'),
-      sub: l('Sağlık ve iptal güvencesi', 'Medical and trip cover', 'Kranken- und Reiseschutz', 'Médico y cancelación', 'Медицина и отмена'),
+      t: l('Sigorta', 'Insurance', 'Versicherung', 'Seguro', 'Страховка', 'Seguro'),
+      sub: l('Sağlık ve iptal güvencesi', 'Medical and trip cover', 'Kranken- und Reiseschutz', 'Médico y cancelación', 'Медицина и отмена', 'Médico e cancelamento'),
       href: tpLinks.safetywing()
     }
   ];
@@ -115,12 +115,12 @@ export const QuickDeals: React.FC<{ passport: string; destination: string }> = (
     <section className="vz-qd" aria-labelledby="vz-qd-h">
       <div className="vz-qd-head">
         <div>
-          <span className="vz-eyebrow">{l(`${destName} yolculuğu`, `Your ${destName} trip`, `Reise: ${destName}`, `Viaje a ${destName}`, `Поездка: ${destName}`)}</span>
-          <h2 id="vz-qd-h">{l('Hemen ucuza al', 'Book it cheap', 'Günstig buchen', 'Reserva barato', 'Купить дешевле')}</h2>
+          <span className="vz-eyebrow">{l(`${destName} yolculuğu`, `Your ${destName} trip`, `Reise: ${destName}`, `Viaje a ${destName}`, `Поездка: ${destName}`, `Viagem para ${destName}`)}</span>
+          <h2 id="vz-qd-h">{l('Hemen ucuza al', 'Book it cheap', 'Günstig buchen', 'Reserva barato', 'Купить дешевле', 'Reserve barato')}</h2>
         </div>
-        <span className="vz-qd-note">{l('Gerçek fiyatlar, güvenilir siteler', 'Live prices from trusted sites', 'Echte Preise, bekannte Anbieter', 'Precios reales, sitios fiables', 'Реальные цены, надёжные сайты')} <AdTag /></span>
+        <span className="vz-qd-note">{l('Gerçek fiyatlar, güvenilir siteler', 'Live prices from trusted sites', 'Echte Preise, bekannte Anbieter', 'Precios reales, sitios fiables', 'Реальные цены, надёжные сайты', 'Preços reais, sites confiáveis')} <AdTag /></span>
       </div>
-      <div className="vz-qd-grid4" role="group" aria-label={l('Hemen ucuza al', 'Book it cheap', 'Günstig buchen', 'Reserva barato', 'Купить дешевле')}>
+      <div className="vz-qd-grid4" role="group" aria-label={l('Hemen ucuza al', 'Book it cheap', 'Günstig buchen', 'Reserva barato', 'Купить дешевле', 'Reserve barato')}>
         {deals.map((d, i) =>
           d.href ? (
             <a key={d.id} className="vz-qd-card" style={{ order: 2 * (i + 1) }} title={d.sub} href={d.href} target="_blank" rel="noopener noreferrer sponsored" onClick={() => setOpen(null)}>

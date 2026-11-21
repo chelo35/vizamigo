@@ -1563,6 +1563,397 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Euro (EUR)",
+   "plugType": "Tipo G (230V, 50Hz)",
+   "bestMonths": "Maio a setembro (dias longos e o período mais ameno; mesmo assim, esteja preparado para chuva); 17 de março, Dia de São Patrício; o inverno é suave, mas chuvoso e com dias curtos",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Em geral é seguro. No centro de Dublin (O’Connell Street, Temple Bar), à noite, pode haver batedores de carteira, roubos de bolsa por arrastão e comportamento antissocial.",
+    "commonScams": [
+     "Táxis sem licença (sem cartão SPSV nem taxímetro)",
+     "Anúncios falsos de aluguel por temporada que pedem transferência adiantada",
+     "Falsos arrecadadores de “caridade” na Grafton Street"
+    ],
+    "safeTravelTips": [
+     "Use FREENOW, Uber ou Bolt para táxis; o carro deve exibir um cartão de licença.",
+     "A mão é inglesa (dirige-se pela esquerda); as estradas rurais são estreitas e cheias de curvas, então tome cuidado à noite.",
+     "O tempo muda o tempo todo; leve capa de chuva e use roupas em camadas todos os dias."
+    ],
+    "emergencyNumbers": {
+     "police": "999 / 112",
+     "ambulance": "999 / 112",
+     "general": "112 / 999"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99% da população coberta (4G/5G); o sinal pode enfraquecer em algumas áreas rurais da costa oeste",
+    "costPerGbUsd": "~US$ 0,50 - 2,00",
+    "esimAvailability": "Excelente",
+    "bestCarriers": [
+     "Vodafone Ireland",
+     "Three Ireland",
+     "Eir",
+     "Tesco Mobile / GoMo",
+     "Airalo / Holafly eSIM"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Boa (ônibus, bonde Luas e DART em Dublin; rede de trens e ônibus intermunicipais suficiente)",
+    "costLevel": "Caro",
+    "singleTicketUsd": "US$ 2,30 - 3,50 (Dublin, Leap / dinheiro)",
+    "dailyPassUsd": "US$ 9,00 - 10,00 (teto diário do Leap em Dublin)",
+    "popularRideApps": [
+     "FREENOW",
+     "Uber",
+     "Bolt",
+     "TFI Live",
+     "Leap Top-Up",
+     "Irish Rail"
+    ],
+    "taxiAdvice": "O FREENOW é o app de táxi mais usado em Dublin; Uber e Bolt também funcionam com táxis licenciados. Para viagens entre cidades, Irish Rail, Bus Éireann e Citylink são opções práticas."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 80 - 120",
+    "dailyBudgetMidrangeUsd": "US$ 200 - 320",
+    "budgetMealUsd": "US$ 18 - 28",
+    "coffeeUsd": "US$ 4,00 - 5,50",
+    "waterBottleUsd": "US$ 1,50 - 2,50",
+    "hostelDormUsd": "US$ 40 - 70",
+    "hotel3StarUsd": "US$ 160 - 280",
+    "flightCostIndex": "Moderado (Istambul – Dublin direto, ~4,5 h)",
+    "flightTip": "A Turkish Airlines voa direto de Istambul para Dublin; compare também as conexões da Aer Lingus e da Ryanair pela Europa. O aeroporto de Shannon é uma opção para quem vai ao oeste."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Nos pubs, paga-se por “rodadas”: cada pessoa do grupo paga uma rodada para todos, em turnos.",
+     "Conversa e bom humor contam muito; o “craic” (clima bom e papo animado) é o coração da cultura irlandesa.",
+     "A Irlanda do Norte e temas políticos históricos são delicados; seja prudente.",
+     "As filas são respeitadas, inclusive nos pontos de ônibus."
+    ],
+    "festivals": [
+     "Festival de São Patrício (17 de março, em Dublin e em todo o país)",
+     "Festival Internacional de Artes de Galway (julho)",
+     "Bloomsday (16 de junho – em homenagem a James Joyce)"
+    ],
+    "lifestyle": "Povo caloroso e de boa conversa; pubs, sessões de música tradicional ao vivo, futebol gaélico e hurling estão no centro da vida social."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Dublin: Trinity College e o Livro de Kells",
+     "Falésias de Moher",
+     "Anel de Kerry e Parque Nacional de Killarney",
+     "Vale monástico de Glendalough",
+     "Connemara e a Abadia de Kylemore",
+     "Rocha de Cashel"
+    ],
+    "bestSeasons": "Maio a setembro",
+    "travelStyleTip": "Fora de Dublin, alugar um carro proporciona a melhor experiência (mão inglesa); se preferir não dirigir, os passeios saindo de Dublin, Galway e Killarney são ideais."
+   },
+   "religion": {
+    "primaryReligions": "Católicos ~69%, sem religião ~14%, Igreja da Irlanda (anglicana) ~2,5%, muçulmanos ~2%, ortodoxos ~2%",
+    "respectNorms": "Faça silêncio em igrejas e ruínas monásticas; seja respeitoso nos cemitérios.",
+    "sacredSites": [
+     "Glendalough (mosteiro de São Kevin, da Alta Idade Média)",
+     "Rocha de Cashel",
+     "Catedral de São Patrício, Dublin"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Irlandês (gaélico) e inglês são oficiais; o inglês é o idioma do dia a dia, e o irlandês é falado nas regiões Gaeltacht.",
+    "englishProficiency": "Língua materna; fala-se inglês em todo lugar.",
+    "phrases": [
+     {
+      "phrase": "Dia duit",
+      "meaning": "Olá (literalmente: Deus esteja com você)",
+      "translation": "Olá",
+      "pronunciation": "DEE-ah gwit"
+     },
+     {
+      "phrase": "Go raibh maith agat",
+      "meaning": "Obrigado",
+      "translation": "Obrigado",
+      "pronunciation": "guh rev mah AH-gut"
+     },
+     {
+      "phrase": "Le do thoil",
+      "meaning": "Por favor",
+      "translation": "Por favor",
+      "pronunciation": "leh duh HULL"
+     },
+     {
+      "phrase": "Sláinte!",
+      "meaning": "Saúde! (literalmente: saúde)",
+      "translation": "Saúde",
+      "pronunciation": "SLAWN-cheh"
+     },
+     {
+      "phrase": "Fáilte",
+      "meaning": "Bem-vindo",
+      "translation": "Bem-vindo",
+      "pronunciation": "FAWL-cheh"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Ilha da cultura celta e dos mosteiros cristãos difundidos por São Patrício no século V, a Irlanda passou por períodos viking e normando e por séculos de domínio inglês/britânico. A Grande Fome de 1845–1852 provocou uma emigração em massa; o país conquistou a independência em 1922 e entrou na CEE em 1973.",
+    "milestones": [
+     "Século V: São Patrício e a expansão do cristianismo",
+     "1845–1852: a Grande Fome",
+     "1922: Estado Livre Irlandês (independência)",
+     "1949: proclamação da República; 1973: entrada na CEE"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Irish stew (ensopado de cordeiro, batata e cenoura)",
+     "Seafood chowder com pão de soda integral",
+     "Boxty (panqueca de batata)"
+    ],
+    "traditionalDrinks": [
+     "Guinness (cerveja preta)",
+     "Uísque irlandês (Jameson, Redbreast)",
+     "Irish coffee"
+    ],
+    "streetFoodAndDesserts": [
+     "Fish & chips (de um “chipper”)",
+     "Barmbrack (pão de chá com frutas)",
+     "Torta de maçã com creme inglês"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "James Joyce (autor de Ulisses)",
+     "Oscar Wilde (escritor e dramaturgo)",
+     "Samuel Beckett (escritor, Prêmio Nobel)"
+    ],
+    "strongSectors": [
+     "Tecnologia (sedes europeias do Google, da Meta, da Apple e de outras)",
+     "Farmacêutico e dispositivos médicos",
+     "Agroalimentar (laticínios, Kerrygold)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Cartão e pagamento por aproximação funcionam em quase todo lugar; um pouco de dinheiro vivo basta para pequenos pubs do interior.",
+    "tippingCulture": "Em restaurantes com serviço à mesa, é comum deixar 10-15% se não houver taxa de serviço; bebidas pedidas no balcão do pub não levam gorjeta.",
+    "economicPillars": "Multinacionais de tecnologia e farmacêuticas, serviços financeiros, exportações agroalimentares e turismo."
+   }
+  },
+  "itin": {
+   "routeName": "Irlanda clássica: Dublin, Galway, Killarney e Cork",
+   "routeSummary": "Roteiro de 7 dias que vai da cultura literária e dos pubs de Dublin às falésias da Wild Atlantic Way, aos lagos de Kerry e aos mercados de Cork.",
+   "totalDays": 7,
+   "idealDurationText": "Roteiro de 7 dias",
+   "bestSeason": "Maio a setembro",
+   "transportMode": "Carro alugado (mão inglesa) ou Irish Rail / Bus Éireann + passeios",
+   "paceLevel": "Equilibrado (cidade + natureza + litoral)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Dublin (literatura e cultura de pub)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Trinity College e o Livro de Kells",
+      "Guinness Storehouse",
+      "Prisão de Kilmainham",
+      "Caminhada pelas falésias de Howth"
+     ],
+     "activities": [
+      "Assista a uma sessão de música tradicional num pub fora de Temple Bar.",
+      "Passeie pelo St Stephen’s Green e pela Grafton Street.",
+      "Faça um bate-volta a Glendalough."
+     ],
+     "foodAndDrinks": [
+      "Irish stew",
+      "Guinness",
+      "Seafood chowder"
+     ],
+     "criticalTips": [
+      "Reserve Kilmainham e a Guinness com antecedência.",
+      "Use um Leap Card para pagar menos em ônibus, Luas e DART."
+     ],
+     "mapsQuery": "Dublin, Ireland"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Galway e falésias de Moher",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Bairro Latino e Shop Street",
+      "Falésias de Moher",
+      "Parque Nacional de Burren",
+      "Connemara e Abadia de Kylemore"
+     ],
+     "activities": [
+      "Visite as falésias de Moher logo cedo.",
+      "Curta a música ao vivo nos pubs de Galway.",
+      "Pegue a balsa para as Ilhas Aran."
+     ],
+     "foodAndDrinks": [
+      "Ostras de Galway",
+      "Fish & chips",
+      "Irish coffee"
+     ],
+     "criticalTips": [
+      "Nas falésias o vento pode ser muito forte; fique longe da borda.",
+      "Nos festivais de verão a hospedagem lota rápido; reserve cedo."
+     ],
+     "mapsQuery": "Galway, Ireland"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Killarney e o Anel de Kerry",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Parque Nacional de Killarney e Muckross House",
+      "Rota panorâmica do Anel de Kerry",
+      "Gap of Dunloe",
+      "Península de Dingle"
+     ],
+     "activities": [
+      "Percorra de bicicleta os lagos de Muckross.",
+      "Faça o Anel de Kerry de carro no sentido anti-horário (como os ônibus de turismo).",
+      "Conheça o parque numa charrete tradicional (jaunting car)."
+     ],
+     "foodAndDrinks": [
+      "Cordeiro de Kerry",
+      "Boxty",
+      "Uísque irlandês"
+     ],
+     "criticalTips": [
+      "A estrada do Anel de Kerry é estreita; atenção aos ônibus de turismo.",
+      "No verão, leve repelente contra os mosquitinhos (midges)."
+     ],
+     "mapsQuery": "Killarney, Ireland"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Cork e Kinsale",
+     "recommendedDuration": "1 dia",
+     "durationBadge": "1 dia",
+     "highlights": [
+      "English Market",
+      "Castelo de Blarney e a Pedra de Blarney",
+      "Vila portuária de Kinsale",
+      "Cobh e Titanic Experience"
+     ],
+     "activities": [
+      "Prove produtos locais no English Market.",
+      "Beije a Pedra de Blarney para ganhar o “dom da eloquência”.",
+      "Coma frutos do mar em Kinsale."
+     ],
+     "foodAndDrinks": [
+      "Frutos do mar de Kinsale",
+      "Barmbrack",
+      "Murphy’s (cerveja preta de Cork)"
+     ],
+     "criticalTips": [
+      "No verão as filas em Blarney são longas; chegue no horário de abertura.",
+      "O trem Cork – Dublin leva cerca de 2,5 horas."
+     ],
+     "mapsQuery": "Cork, Ireland"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Irish stew (ensopado de cordeiro, batata e cenoura)",
+     "Seafood chowder com pão de soda integral",
+     "Boxty (panqueca de batata)"
+    ],
+    "drinks": [
+     "Guinness (cerveja preta)",
+     "Uísque irlandês (Jameson, Redbreast)",
+     "Irish coffee"
+    ],
+    "streetFoods": [
+     "Fish & chips (de um “chipper”)",
+     "Barmbrack (pão de chá com frutas)",
+     "Torta de maçã com creme inglês"
+    ],
+    "diningAdvice": "O almoço de pub (pub grub) é a refeição quente mais barata. As salsichas, o bacon e o black pudding do café da manhã irlandês são de porco; peça “no pork” se preferir."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptador de tomada tipo G (britânico)",
+     "Jaqueta impermeável e guarda-chuva",
+     "Roupas em camadas e calçado impermeável",
+     "Carteira de motorista e cartão de crédito com limite alto (aluguel de carro)"
+    ],
+    "safetyAndEtiquette": [
+     "Lembre-se de que a mão é inglesa (dirige-se pela esquerda).",
+     "Pague a sua rodada quando chegar a sua vez no pub."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Tomadas britânicas tipo G, com três pinos chatos (230 V); aparelhos da Turquia precisam de adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "A água da torneira é segura e de boa qualidade; fique atento a eventuais avisos locais para ferver a água.",
+    "vaccines": [
+     "Vacinas de rotina (tétano, difteria, tríplice viral)"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "999 / 112"
+   },
+   "tipping": {
+    "custom": "10-15% em restaurantes se não houver taxa de serviço; sem gorjeta para bebidas no balcão.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Para grupos grandes, costuma-se acrescentar 10-12,5% de serviço; não dê gorjeta duas vezes."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA de 23% (reembolso líquido de ~10-15% após as taxas)",
+    "minSpend": "Sem valor mínimo legal; vale nas lojas que oferecem Tax Free",
+    "customsNote": "Os produtos devem sair da UE em até três meses após o mês da compra; valide o formulário na alfândega ou no balcão Tax Free do aeroporto de Dublin ou de Shannon."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "~US$ 0,50 - 2,00",
+    "topCarriers": [
+     "Vodafone Ireland",
+     "Three Ireland",
+     "Eir",
+     "Tesco Mobile / GoMo"
+    ],
+    "airportSimTrapWarning": "Os quiosques de chip do aeroporto de Dublin podem vender pacotes caros; configure um eSIM ou compre um chip pré-pago da Three, Vodafone ou Tesco Mobile na cidade."
+   },
+   "touristScams": [
+    {
+     "title": "Táxi sem licença",
+     "desc": "Carros sem cartão de licença nem taxímetro podem cobrar tarifas infladas.",
+     "tip": "Use FREENOW/Uber/Bolt e confira o cartão SPSV dentro do carro."
+    },
+    {
+     "title": "Anúncio falso de aluguel",
+     "desc": "Anúncios de aluguel por temporada pedem uma transferência antes da entrega das chaves, e o apartamento não existe.",
+     "tip": "Pague só em plataformas confiáveis e nunca faça transferências por fora delas."
+    },
+    {
+     "title": "Falsos arrecadadores de caridade",
+     "desc": "Pessoas com crachás em ruas turísticas arrecadam dinheiro para organizações que não existem.",
+     "tip": "Não dê dinheiro vivo; faça a doação pelo site oficial da organização."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Евро (EUR)",

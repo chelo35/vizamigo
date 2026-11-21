@@ -1515,6 +1515,385 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Peso cubano (CUP)",
+   "plugType": "Tipo A, B, C (110V / 220V, 60Hz)",
+   "bestMonths": "Novembro – abril (seco e mais fresco); de junho a novembro é temporada de furacões, com risco maior de agosto a outubro",
+   "safety": {
+    "crimeRateSummary": "A criminalidade violenta contra turistas é relativamente baixa, mas com a crise econômica aumentaram os furtos e roubos com puxão em Havana. Há longos apagões em todo o país e falta de combustível, alimentos, remédios e água; os furacões são um risco sério.",
+    "commonScams": [
+     "Jineteros simpáticos que levam você a bares, paladares caros ou à venda de charutos falsos em troca de comissão",
+     "Dar o troco em CUP, de pouco valor, em vez de dólares",
+     "Táxis em almendrones (carros antigos) e charretes que multiplicam o preço no fim da corrida"
+    ],
+    "safeTravelTips": [
+     "Leve dinheiro em espécie suficiente (EUR ou USD em cédulas limpas e sem rasgos); cartões emitidos nos EUA não funcionam e outros estrangeiros costumam falhar.",
+     "Leve lanterna, carregador portátil e seus remédios básicos por causa dos apagões e da escassez.",
+     "Compre charutos só nas Casas del Habano oficiais, com nota fiscal."
+    ],
+    "emergencyNumbers": {
+     "police": "106",
+     "ambulance": "104",
+     "general": "106"
+    },
+    "safetyScore": 55,
+    "safetyLevel": "Risco moderado",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60"
+   },
+   "internet": {
+    "networkCoverage": "3G/4G lento nas cidades; com os apagões, as antenas podem cair; pouca cobertura na zona rural",
+    "costPerGbUsd": "~US$ 2 - 5",
+    "esimAvailability": "Limitada",
+    "bestCarriers": [
+     "ETECSA (Cubacel)"
+    ],
+    "vpnRequired": true
+   },
+   "transport": {
+    "transportQuality": "Precário (ônibus Viazul e táxis coletivos; os trens não são confiáveis; a falta de combustível afeta os serviços)",
+    "costLevel": "Moderado (preços turísticos em moeda estrangeira)",
+    "singleTicketUsd": "0.10 - 0.50 $ (guagua, o ônibus local; lotado e irregular)",
+    "dailyPassUsd": "Não há passe diário; um táxi urbano custa ~5 - 15 $",
+    "popularRideApps": [
+     "La Nave",
+     "Bajanda"
+    ],
+    "taxiAdvice": "Uber e os apps internacionais não funcionam; os locais La Nave e Bajanda têm serviço limitado. Os táxis em geral não têm taxímetro: combine preço e moeda (USD/CUP) antes de entrar."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 35 - 55",
+    "dailyBudgetMidrangeUsd": "US$ 80 - 140",
+    "budgetMealUsd": "5 - 12 $ (paladar)",
+    "coffeeUsd": "US$ 1 - 3",
+    "waterBottleUsd": "1 - 2 $ (às vezes falta)",
+    "hostelDormUsd": "25 - 40 $ (quarto em casa particular)",
+    "hotel3StarUsd": "US$ 60 - 120",
+    "flightCostIndex": "Alto (~16-20 h com escala)",
+    "flightTip": "Não há voos sem escala da Turquia; compare o serviço da Turkish Airlines para Havana via Caracas com conexões por Madri (Iberia, Air Europa) ou Paris (Air France)."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "O cumprimento é com um beijo no rosto ou um aperto de mão caloroso; os cubanos são próximos e gostam de conversar.",
+     "Por causa da escassez, pequenos presentes para os anfitriões (sabonete, pasta de dente, remédios básicos) são muito bem-vindos.",
+     "Peça permissão antes de fotografar; os artistas de rua que posam esperam uma gorjeta."
+    ],
+    "festivals": [
+     "Festival Internacional Jazz Plaza (janeiro, Havana)",
+     "Carnaval de Santiago de Cuba (julho)",
+     "Festival do Novo Cinema Latino-Americano (dezembro, Havana)"
+    ],
+    "lifestyle": "A música e a dança estão por toda parte (son, salsa, rumba); a pelota (beisebol), o dominó e as tardes no Malecón fazem parte do dia a dia. Os cubanos se viram com criatividade e solidariedade apesar da escassez."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Havana Velha (UNESCO)",
+     "Vale de Viñales",
+     "Trinidad e o Vale dos Engenhos",
+     "Cienfuegos",
+     "Praias de Varadero",
+     "Santiago de Cuba"
+    ],
+    "bestSeasons": "De novembro a abril é seco e ensolarado, e dezembro – março é a alta temporada. O verão é quente e úmido, e agosto – outubro tem o maior risco de furacões.",
+    "travelStyleTip": "Hospede-se em casas particulares: é mais autêntico e o anfitrião ajuda durante os apagões. Reserve o Viazul com antecedência, baixe mapas offline e leve dinheiro em espécie para a viagem inteira."
+   },
+   "religion": {
+    "primaryReligions": "Católicos ~55-60 % (maioria não praticante), sem religião ~20-25 %, protestantes ~9 %; a santería afro-cubana (Regla de Ocha) é muito difundida e se mistura ao catolicismo",
+    "respectNorms": "Cubra os ombros nas igrejas. Não fotografe os iyawós vestidos de branco nem participe de rituais sem permissão.",
+    "sacredSites": [
+     "Basílica del Cobre (perto de Santiago de Cuba)",
+     "Catedral de Havana",
+     "Igreja de Regla (Virgem de Regla – Iemanjá)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Espanhol (cubano, rápido e cheio de gírias)",
+    "englishProficiency": "Básico a razoável em hotéis e no turismo; limitado no resto.",
+    "phrases": [
+     {
+      "phrase": "¿Qué bolá?",
+      "meaning": "E aí, tudo bem? (cubanismo)",
+      "translation": "E aí, tudo bem? (cubanismo)",
+      "pronunciation": "keh boh-LAH"
+     },
+     {
+      "phrase": "Asere",
+      "meaning": "Amigo / parceiro (cubanismo)",
+      "translation": "Amigo / parceiro (cubanismo)",
+      "pronunciation": "ah-SEH-reh"
+     },
+     {
+      "phrase": "¿Cuánto cuesta?",
+      "meaning": "Quanto custa?",
+      "translation": "Quanto custa?",
+      "pronunciation": "KWAN-toh KWES-tah"
+     },
+     {
+      "phrase": "La cuenta, por favor",
+      "meaning": "A conta, por favor",
+      "translation": "A conta, por favor",
+      "pronunciation": "lah KWEN-tah por fah-VOR"
+     },
+     {
+      "phrase": "Muchas gracias",
+      "meaning": "Muito obrigado",
+      "translation": "Muito obrigado",
+      "pronunciation": "MOO-chahs GRAH-syahs"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Terra do povo taíno, a ilha virou colônia espanhola após a chegada de Colombo em 1492, e Havana foi fundada no local atual em 1519. A economia do açúcar e do tabaco se apoiou no trabalho de africanos escravizados. Depois das guerras de independência de 1868 – 1898, Cuba se tornou uma república independente em 1902; a Revolução de 1959 marcou sua história moderna.",
+    "milestones": [
+     "1492: Colombo chega a Cuba",
+     "1519: Havana é fundada no local atual",
+     "1902: República de Cuba independente",
+     "1959: Revolução Cubana"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Ropa vieja",
+     "Moros y cristianos",
+     "Lechón asado"
+    ],
+    "traditionalDrinks": [
+     "Café cubano (cafecito)",
+     "Guarapo (caldo de cana)",
+     "Mojito e rum (com álcool)"
+    ],
+    "streetFoodAndDesserts": [
+     "Tostones",
+     "Flan",
+     "Cucurucho de Baracoa"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "José Martí (poeta e herói nacional)",
+     "Celia Cruz (a rainha da salsa)",
+     "Alicia Alonso (prima ballerina)"
+    ],
+    "strongSectors": [
+     "Turismo",
+     "Mineração de níquel",
+     "Charutos (Habanos) e rum"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Economia basicamente em dinheiro vivo: cartões dos EUA não funcionam, outros costumam falhar e os caixas eletrônicos não são confiáveis. Os preços podem estar em CUP ou USD; troque dinheiro oficialmente em bancos e nas CADECA e leve cédulas de EUR/USD em bom estado.",
+    "tippingCulture": "A gorjeta é fundamental para a renda local: 10 % nos restaurantes e notas pequenas para músicos, guias, camareiras e quem cuida dos banheiros.",
+    "economicPillars": "Turismo, remessas, exportação de serviços médicos, níquel, tabaco e açúcar."
+   }
+  },
+  "itin": {
+   "routeName": "Cuba de oeste a leste: Viñales, Havana, Cienfuegos e Trinidad",
+   "routeSummary": "Um roteiro de 8 dias: depois de pousar em Havana, siga primeiro para o oeste, até as plantações de tabaco do Vale de Viñales; depois Havana Velha, Cienfuegos, a “Pérola do Sul”, e a cidade colonial de Trinidad.",
+   "totalDays": 8,
+   "idealDurationText": "Roteiro de 8 dias",
+   "bestSeason": "Novembro – abril",
+   "transportMode": "Ônibus Viazul e táxis coletivos (reserve com antecedência)",
+   "paceLevel": "Tranquilo (cultura, música e natureza)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Vale de Viñales",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Mogotes de calcário",
+      "Plantação de tabaco (vega)",
+      "Cueva del Indio",
+      "Mirante de Los Jazmines"
+     ],
+     "activities": [
+      "Percorra o vale a cavalo.",
+      "Veja como se enrola um charuto numa plantação.",
+      "Curta o pôr do sol em Los Jazmines."
+     ],
+     "foodAndDrinks": [
+      "Almoço caipira (arroz, feijão, frango)",
+      "Licor de guayabita del Pinar (com álcool)"
+     ],
+     "criticalTips": [
+      "São ~3 h de Havana em táxi coletivo; reserve o próximo traslado com antecedência.",
+      "Charutos de plantação sem selo oficial têm limite de quantidade para levar para fora do país."
+     ],
+     "mapsQuery": "Viñales, Pinar del Río, Cuba"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Havana",
+     "recommendedDuration": "3 dias",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Havana Velha: Plaza Vieja e Plaza de la Catedral",
+      "O Malecón",
+      "O Capitólio",
+      "Fusterlandia"
+     ],
+     "activities": [
+      "Percorra o Malecón num almendrón clássico.",
+      "Ouça son e salsa ao vivo nos bares de Havana Velha.",
+      "Passe uma noite de arte e música na Fábrica de Arte Cubano (FAC)."
+     ],
+     "foodAndDrinks": [
+      "Ropa vieja",
+      "Moros y cristianos",
+      "Mojito (com álcool)"
+     ],
+     "criticalTips": [
+      "Diga não com educação aos “guias” e vendedores de charuto na calle Obispo.",
+      "Nos apagões, lanterna e carregador portátil ajudam; evite os elevadores."
+     ],
+     "mapsQuery": "La Habana, Cuba"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Cienfuegos (a Pérola do Sul)",
+     "recommendedDuration": "1 dia",
+     "durationBadge": "1 dia",
+     "highlights": [
+      "Parque José Martí (UNESCO)",
+      "Teatro Tomás Terry",
+      "Palacio de Valle e Punta Gorda"
+     ],
+     "activities": [
+      "Passeie pelo Prado e pelo Malecón.",
+      "Veja o pôr do sol do terraço do Palacio de Valle.",
+      "Faça um passeio às cachoeiras de El Nicho."
+     ],
+     "foodAndDrinks": [
+      "Frutos do mar e lagosta",
+      "Tostones"
+     ],
+     "criticalTips": [
+      "É uma cidade tranquila e uma boa parada entre Havana e Trinidad.",
+      "Organize antes o transporte até El Nicho; não há transporte público."
+     ],
+     "mapsQuery": "Cienfuegos, Cuba"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Trinidad",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Plaza Mayor e ruas coloniais (UNESCO)",
+      "Vale dos Engenhos e torre Manaca Iznaga",
+      "Playa Ancón",
+      "Escadaria da Casa de la Música"
+     ],
+     "activities": [
+      "Dance salsa à noite na escadaria da Casa de la Música.",
+      "Vá ao Vale dos Engenhos a cavalo ou de trem turístico.",
+      "Tome banho de mar na Playa Ancón."
+     ],
+     "foodAndDrinks": [
+      "Canchánchara (com álcool)",
+      "Lagosta grelhada"
+     ],
+     "criticalTips": [
+      "O calçamento de pedra é muito irregular; use calçados confortáveis.",
+      "Quase não se aceitam cartões; separe dinheiro em espécie para hospedagem e refeições."
+     ],
+     "mapsQuery": "Trinidad, Sancti Spíritus, Cuba"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Ropa vieja",
+     "Moros y cristianos",
+     "Lechón asado (porco)"
+    ],
+    "drinks": [
+     "Café cubano",
+     "Guarapo (caldo de cana)",
+     "Mojito (com álcool)"
+    ],
+    "streetFoods": [
+     "Tostones",
+     "Flan",
+     "Cucurucho"
+    ],
+    "diningAdvice": "A melhor comida está nos paladares e nas casas particulares; nem sempre há tudo o que está no cardápio. Pergunte se os preços são em USD ou CUP antes de pedir."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptador tipo A/B (confira se seu aparelho aceita 110 V)",
+     "Dinheiro suficiente em EUR/USD para a viagem inteira (cédulas limpas)",
+     "Lanterna, carregador portátil e remédios básicos",
+     "Repelente e protetor solar"
+    ],
+    "safetyAndEtiquette": [
+     "O seguro viagem com cobertura médica é obrigatório para entrar; leve a apólice impressa.",
+     "Leve pequenos presentes para os anfitriões e dê gorjetas em notas pequenas."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "A",
+     "B",
+     "C"
+    ],
+    "voltage": "110V / 220V",
+    "frequency": "60Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "A maioria das tomadas é do padrão americano (A/B), com 110 V; alguns hotéis novos têm tipo C europeu, com 220 V. Confira a etiqueta de voltagem e leve adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Não beba água da torneira; como às vezes falta água engarrafada, leve pastilhas purificadoras ou uma garrafa com filtro.",
+    "vaccines": [
+     "Recomendam-se hepatite A e febre tifoide",
+     "Proteção contra mosquitos por causa de surtos de dengue, chikungunya e Oropouche",
+     "Leve remédios pessoais suficientes (há falta nas farmácias)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "104"
+   },
+   "tipping": {
+    "custom": "Nos restaurantes, espera-se 10 %; a gorjeta é parte importante da renda de quem trabalha com serviços.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Tenha à mão notas pequenas em USD/EUR ou CUP para músicos, guias, camareiras e banheiros."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Não há (sem restituição de impostos para turistas)",
+    "minSpend": "Não se aplica",
+    "customsNote": "Cuba não devolve impostos a turistas. Para levar charutos acima de certo limite, é preciso nota fiscal de loja oficial e caixas originais lacradas; confira também os limites da alfândega do seu país de destino."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "US$ 2 - 5",
+    "topCarriers": [
+     "ETECSA (Cubacel)"
+    ],
+    "airportSimTrapWarning": "A única operadora é a estatal ETECSA; o chip turístico Cubacel Tur é comprado com passaporte no aeroporto ou nos escritórios da ETECSA (dá para reservar on-line), e as filas são longas. eSIMs internacionais muitas vezes não funcionam ou são caríssimos; como muitos apps e sites de bancos bloqueiam IPs cubanos por causa das sanções dos EUA, instale uma VPN e baixe mapas offline."
+   },
+   "touristScams": [
+    {
+     "title": "O jinetero",
+     "desc": "Um morador simpático puxa conversa e, com frases como “hoje tem festival do charuto”, leva você a um bar, paladar ou vendedor de charutos falsos que lhe paga comissão.",
+     "tip": "Agradeça com educação e siga em frente; escolha você mesmo os restaurantes e lojas."
+    },
+    {
+     "title": "Troco em outra moeda",
+     "desc": "Você paga em USD e recebe o troco em CUP, de valor muito menor, ou com uma cotação arbitrária.",
+     "tip": "Pergunte antes em que moeda está o preço e leve notas pequenas."
+    },
+    {
+     "title": "Táxis com preço inflado",
+     "desc": "Almendrones sem taxímetro e charretes cobram no fim várias vezes o valor combinado.",
+     "tip": "Combine preço e moeda antes de entrar; melhor ainda, peça para a casa onde você está chamar o táxi."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Кубинское песо (CUP)",

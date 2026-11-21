@@ -5,7 +5,8 @@
     "en": "South Africa",
     "de": "Südafrika",
     "ru": "Южная Африка",
-    "es": "Sudáfrica"
+    "es": "Sudáfrica",
+    "pt": "África do Sul"
   },
   "capital": {
     "value": "Pretorya (İdari), Cape Town (Yasama), Bloemfontein (Yargı)",
@@ -213,7 +214,8 @@
       "en": "Exercise Increased Caution: Avoid walking after dark; use verified rideshare apps",
       "de": "Erhöhte Vorsicht: Dunkelheit meiden, verifizierte Fahrdienste nutzen",
       "ru": "Повышенная осторожность: избегайте прогулок ночью, пользуйтесь Uber/Bolt",
-      "es": "Mayor precaución: evite caminar de noche; use apps de transporte verificadas"
+      "es": "Mayor precaución: evite caminar de noche; use apps de transporte verificadas",
+      "pt": "Maior cautela: evite caminhar à noite; use apps de transporte confiáveis"
     },
     "regional_warnings": [
       {
@@ -385,7 +387,8 @@
         "en": "Table Mountain and Cape Town",
         "de": "Tafelberg und Kapstadt",
         "ru": "Столовая гора и Кейптаун",
-        "es": "Montaña de la Mesa y Ciudad del Cabo"
+        "es": "Montaña de la Mesa y Ciudad del Cabo",
+        "pt": "Table Mountain e Cidade do Cabo"
       },
       "type": "natural_wonder",
       "sources": [
@@ -402,7 +405,8 @@
         "en": "Kruger National Park (Big Five Safari)",
         "de": "Kruger-Nationalpark",
         "ru": "Национальный парк Крюгер",
-        "es": "Parque Nacional Kruger"
+        "es": "Parque Nacional Kruger",
+        "pt": "Parque Nacional Kruger"
       },
       "type": "national_park",
       "sources": [
@@ -419,7 +423,8 @@
         "en": "Cape of Good Hope",
         "de": "Kap der Guten Hoffnung",
         "ru": "Мыс Доброй Надежды",
-        "es": "Cabo de Buena Esperanza"
+        "es": "Cabo de Buena Esperanza",
+        "pt": "Cabo da Boa Esperança"
       },
       "type": "geographic_landmark",
       "sources": [
@@ -449,7 +454,8 @@
           "en": "Table Mountain and Cape Town Bay, South Africa",
           "de": "Tafelberg und Bucht von Kapstadt, Südafrika",
           "ru": "Столовая гора и залив Кейптауна, Южная Африка",
-          "es": "Montaña de la Mesa y Bahía de Ciudad del Cabo, Sudáfrica"
+          "es": "Montaña de la Mesa y Bahía de Ciudad del Cabo, Sudáfrica",
+          "pt": "Table Mountain e baía da Cidade do Cabo, África do Sul"
         },
         "recognizability_checked": true
       }
@@ -461,21 +467,24 @@
       "en": "south-africa",
       "de": "suedafrika",
       "ru": "yuzhnaya-afrika",
-      "es": "sudafrica"
+      "es": "sudafrica",
+      "pt": "africa-do-sul"
     },
     "title": {
       "tr": "Güney Afrika Vize Rehberi, Güvenlik ve Safari Tavsiyeleri | Vizamigo",
       "en": "South Africa Visa Guide, Safety Advice & Safari Tips | Vizamigo",
       "de": "Südafrika Visum-Leitfaden, Sicherheit & Safari-Tipps | Vizamigo",
       "ru": "Виза в Южную Африку, безопасность и советы для сафари | Vizamigo",
-      "es": "Guía de Visa de Sudáfrica, Seguridad y Consejos de Safari | Vizamigo"
+      "es": "Guía de Visa de Sudáfrica, Seguridad y Consejos de Safari | Vizamigo",
+      "pt": "Visto para a África do Sul, segurança e dicas de safári | Vizamigo"
     },
     "meta_description": {
       "tr": "Güney Afrika vize şartları, RICA SIM kaydı, priz tipi M adaptörü, Cape Town güvenlik ipuçları ve Kruger safarisi.",
       "en": "South Africa visa policies, RICA SIM requirements, Type M plug adapters, Cape Town safety advice, and Kruger safari planning.",
       "de": "Südafrika Visabestimmungen, RICA-SIM-Registrierung, Typ-M-Stecker, Kapstadt-Sicherheitshinweise und Kruger-Safari.",
       "ru": "Визовые правила ЮАР, регистрация SIM RICA, переходники розетки типа M, безопасность в Кейптауне и сафари.",
-      "es": "Requisitos de visa para Sudáfrica, registro SIM RICA, enchufes tipo M, seguridad en Ciudad del Cabo y safaris en Kruger."
+      "es": "Requisitos de visa para Sudáfrica, registro SIM RICA, enchufes tipo M, seguridad en Ciudad del Cabo y safaris en Kruger.",
+      "pt": "Requisitos de visto para a África do Sul, registro de chip RICA, tomadas tipo M, segurança na Cidade do Cabo e safáris no Kruger."
     },
     "faq": []
   },

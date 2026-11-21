@@ -611,6 +611,159 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Euro (EUR)",
+   "bestMonths": "Maio – junho e setembro – outubro (mar agradável, menos gente e preços melhores); julho – agosto é quente e muito movimentado",
+   "safety": {
+    "crimeRateSummary": "A criminalidade violenta é baixa; o principal risco são os batedores de carteira no metrô de Atenas (sobretudo a linha Pireu – Kifisiá) e em Monastiraki e Omonia. No verão, acompanhe os alertas de incêndios florestais.",
+    "commonScams": [
+     "Desconhecidos simpáticos em Atenas que levam você a um bar com uma conta de bebidas absurda",
+     "Táxis no aeroporto e no porto do Pireu que não ligam o taxímetro e pedem um valor fixo alto",
+     "Nas ilhas, cobrança por danos que já existiam em quadriciclos e scooters alugados"
+    ],
+    "safeTravelTips": [
+     "No metrô e nos cais de balsa lotados, leve a mochila na frente e o celular guardado.",
+     "Fotografe o quadriciclo ou a scooter antes de alugar e use sempre capacete; as estradas das ilhas são estreitas e cheias de curvas.",
+     "Em Meteora e em outros mosteiros, cubra ombros e joelhos; mulheres podem ter de usar saia."
+    ],
+    "emergencyNumbers": {
+     "police": "100",
+     "ambulance": "166",
+     "general": "112"
+    },
+    "safetyScore": 65,
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60"
+   },
+   "internet": {
+    "networkCoverage": "4G sólido em todo o país e 5G nas cidades; sinal mais fraco em algumas ilhas pequenas e nas montanhas",
+    "costPerGbUsd": "~US$ 1 - 3",
+    "esimAvailability": "Disponível – Airalo, Holafly e eSIM com roaming da UE",
+    "bestCarriers": [
+     "Cosmote",
+     "Vodafone Greece",
+     "Nova"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Bom – metrô, bonde e ônibus em Atenas; ampla rede de balsas entre as ilhas; ônibus intermunicipais KTEL",
+    "costLevel": "Moderado",
+    "singleTicketUsd": "~US$ 1,40 (1,20 €, 90 min)",
+    "dailyPassUsd": "~US$ 4,80 (4,10 €, 24 h)",
+    "popularRideApps": [
+     "FREENOW",
+     "Uber",
+     "Ferryhopper"
+    ],
+    "taxiAdvice": "Do aeroporto de Atenas ao centro há tarifa fixa de cerca de 40 € de dia e 55 € à noite. Chamar pelo FREENOW ou Uber evita discussões; nas ilhas há poucos táxis, então reserve com antecedência no verão."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 50 - 80",
+    "dailyBudgetMidrangeUsd": "US$ 120 - 200",
+    "budgetMealUsd": "US$ 12 - 20",
+    "coffeeUsd": "US$ 2,50 - 4,50",
+    "waterBottleUsd": "US$ 0,50 - 1",
+    "hostelDormUsd": "US$ 20 - 45",
+    "hotel3StarUsd": "US$ 80 - 160",
+    "flightCostIndex": "Baixo a moderado (Istambul – Atenas ~1,5 h)",
+    "flightTip": "Há voos diretos da THY, Pegasus, AJet e Aegean de Istambul para Atenas e Tessalônica. Para as ilhas do Egeu, as balsas que saem da Turquia (Ayvalık – Lesbos, Çeşme – Quios, Bodrum – Kos, Marmaris – Rodes) são uma boa alternativa."
+   }
+  },
+  "enc": {
+   "language": {
+    "officialLanguages": "Grego (escrito com o alfabeto grego).",
+    "englishProficiency": "Muito bom – o inglês é muito falado nas áreas turísticas, nas ilhas e entre os jovens.",
+    "phrases": [
+     {
+      "phrase": "Γεια σας (Yia sas)",
+      "meaning": "Olá",
+      "translation": "Olá",
+      "pronunciation": "ya-sas"
+     },
+     {
+      "phrase": "Ευχαριστώ (Efcharistó)",
+      "meaning": "Obrigado",
+      "translation": "Obrigado",
+      "pronunciation": "ef-ha-ri-STO"
+     },
+     {
+      "phrase": "Παρακαλώ (Parakaló)",
+      "meaning": "Por favor / De nada",
+      "translation": "Por favor / De nada",
+      "pronunciation": "pa-ra-ka-LO"
+     },
+     {
+      "phrase": "Πόσο κάνει; (Póso kánei?)",
+      "meaning": "Quanto custa?",
+      "translation": "Quanto custa?",
+      "pronunciation": "PO-so KA-ni"
+     },
+     {
+      "phrase": "Τον λογαριασμό, παρακαλώ (Ton logariasmó, parakaló)",
+      "meaning": "A conta, por favor",
+      "translation": "A conta, por favor",
+      "pronunciation": "ton lo-ga-ryaz-MO pa-ra-ka-LO"
+     }
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Tomadas europeias C/F (Schuko) de dois pinos redondos, iguais às da Turquia; não é preciso adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "A água da torneira é potável em Atenas e Tessalônica; nas Cíclades, como Santorini e Mykonos, ela é dessalinizada, então beba água engarrafada.",
+    "vaccines": [
+     "Vacinas de rotina (tríplice viral, tétano)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "166"
+   },
+   "tipping": {
+    "custom": "O serviço está incluído; se você gostou do atendimento, é comum deixar 5-10 % ou arredondar a conta.",
+    "standardPercent": 10,
+    "rule": "round_up",
+    "note": "Em táxis e cafés, basta arredondar."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA de 24 % (menor em algumas ilhas); você recupera 12-15 % depois das taxas",
+    "minSpend": "€50",
+    "customsNote": "Cidadãos turcos (de fora da UE) têm direito: peça o formulário Tax Free e carimbe-o no aeroporto ou na alfândega do porto se voltar para a Turquia de balsa."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 1 - 3",
+    "topCarriers": [
+     "Cosmote",
+     "Vodafone Greece",
+     "Nova"
+    ],
+    "airportSimTrapWarning": "Os quiosques do aeroporto podem ser caros; compre nas lojas da Cosmote ou da Vodafone ou leve um eSIM. O roaming da UE não vale para chips turcos."
+   },
+   "touristScams": [
+    {
+     "title": "Tarifa de táxi em Atenas",
+     "desc": "Taxistas que usam a tarifa noturna (Tarifa 2) durante o dia ou cobram mais que a tarifa fixa do aeroporto.",
+     "tip": "Saiba qual é a tarifa fixa aeroporto–centro; chame o táxi pelo FREENOW ou Uber."
+    },
+    {
+     "title": "Batedores de carteira em Monastiraki",
+     "desc": "Na linha 1 do metrô e em Monastiraki, carteiras e celulares são roubados com frequência no meio da multidão.",
+     "tip": "Leve a bolsa na frente e o celular no bolso da frente."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Евро (EUR)",

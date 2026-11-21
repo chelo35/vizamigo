@@ -99,15 +99,15 @@ export const LegalInfoModal: React.FC<LegalInfoModalProps> = ({
               'Data restored and imported successfully!',
               'Daten erfolgreich importiert und wiederhergestellt!',
               '¡Datos restaurados e importados con éxito!',
-              'Данные успешно импортированы и восстановлены!'
+              'Данные успешно импортированы и восстановлены!', 'Dados restaurados e importados com sucesso!'
             )
           );
           if (onDataResetOrImported) onDataResetOrImported();
         } else {
-          setImportStatus(l('Yedek dosyası formatı geçersiz.', 'Invalid backup file format.', 'Ungültiges Sicherungsformat.', 'Formato de copia no válido.', 'Неверный формат резервной копии.'));
+          setImportStatus(l('Yedek dosyası formatı geçersiz.', 'Invalid backup file format.', 'Ungültiges Sicherungsformat.', 'Formato de copia no válido.', 'Неверный формат резервной копии.', 'Formato de backup inválido.'));
         }
       } catch {
-        setImportStatus(l('JSON dosyası okunamadı veya bozuk.', 'Could not read or parse JSON file.', 'Die JSON-Datei konnte nicht gelesen werden.', 'No se pudo leer el archivo JSON.', 'Не удалось прочитать файл JSON.'));
+        setImportStatus(l('JSON dosyası okunamadı veya bozuk.', 'Could not read or parse JSON file.', 'Die JSON-Datei konnte nicht gelesen werden.', 'No se pudo leer el archivo JSON.', 'Не удалось прочитать файл JSON.', 'Não foi possível ler o arquivo JSON.'));
       }
     };
     reader.readAsText(file);
@@ -119,7 +119,7 @@ export const LegalInfoModal: React.FC<LegalInfoModalProps> = ({
       'All your saved trips, itineraries, and preparation checklists will be permanently cleared from this device. Are you sure?',
       'Alle Ihre gespeicherten Reisen, Reiserouten und Checklisten werden von diesem Gerät gelöscht. Bestätigen?',
       'Se borrarán todos sus viajes guardados, itinerarios y listas de este dispositivo. ¿Desea confirmar?',
-      'Все ваши сохраненные поездки, маршруты и списки будут удалены с этого устройства. Подтверждаете?'
+      'Все ваши сохраненные поездки, маршруты и списки будут удалены с этого устройства. Подтверждаете?', 'Todas as suas viagens salvas, roteiros e listas serão apagados deste dispositivo. Deseja confirmar?'
     );
     if (window.confirm(confirmMsg)) {
       clearAllAppData();
@@ -130,43 +130,43 @@ export const LegalInfoModal: React.FC<LegalInfoModalProps> = ({
 
   const tabGroups = [
     {
-      groupTitle: l('Yasal & Şartlar', 'Legal & Terms', 'Rechtliches', 'Legal y Términos', 'Юридическая инфо'),
+      groupTitle: l('Yasal & Şartlar', 'Legal & Terms', 'Rechtliches', 'Legal y Términos', 'Юридическая инфо', 'Legal e termos'),
       items: [
-        { id: 'terms', label: l('Kullanım Koşulları', 'Terms of Service', 'Nutzungsbedingungen', 'Términos', 'Условия'), icon: Scale },
-        { id: 'privacy', label: l('Gizlilik Politikası', 'Privacy Policy', 'Datenschutz', 'Privacidad', 'Конфиденциальность'), icon: Lock },
-        { id: 'disclaimer', label: l('Sorumluluk Reddi', 'Disclaimer', 'Haftungsausschluss', 'Descargo', 'Отказ от ответственности'), icon: AlertTriangle },
-        { id: 'kvkk_gdpr', label: l('KVKK & GDPR', 'GDPR / Privacy', 'DSGVO', 'RGPD', 'Защита данных'), icon: FileText },
-        { id: 'standards', label: l('Mevzuat & Standartlar', 'Source Standards', 'Quellenstandards', 'Estándares', 'Стандарты'), icon: FileCheck },
-        { id: 'attributions', label: l('Görsel Lisansları & Atıflar', 'Photo Credits & Attributions', 'Bildnachweise & Lizenzen', 'Créditos de Fotos', 'Лицензии и авторство фото'), icon: Camera },
+        { id: 'terms', label: l('Kullanım Koşulları', 'Terms of Service', 'Nutzungsbedingungen', 'Términos', 'Условия', 'Termos'), icon: Scale },
+        { id: 'privacy', label: l('Gizlilik Politikası', 'Privacy Policy', 'Datenschutz', 'Privacidad', 'Конфиденциальность', 'Privacidade'), icon: Lock },
+        { id: 'disclaimer', label: l('Sorumluluk Reddi', 'Disclaimer', 'Haftungsausschluss', 'Descargo', 'Отказ от ответственности', 'Isenção'), icon: AlertTriangle },
+        { id: 'kvkk_gdpr', label: l('KVKK & GDPR', 'GDPR / Privacy', 'DSGVO', 'RGPD', 'Защита данных', 'LGPD/RGPD'), icon: FileText },
+        { id: 'standards', label: l('Mevzuat & Standartlar', 'Source Standards', 'Quellenstandards', 'Estándares', 'Стандарты', 'Padrões'), icon: FileCheck },
+        { id: 'attributions', label: l('Görsel Lisansları & Atıflar', 'Photo Credits & Attributions', 'Bildnachweise & Lizenzen', 'Créditos de Fotos', 'Лицензии и авторство фото', 'Créditos das fotos'), icon: Camera },
       ]
     },
     {
-      groupTitle: l('Seyahat & Konsolosluk', 'Travel & Consular', 'Reise & Konsular', 'Viajes y Consular', 'Консульские вопросы'),
+      groupTitle: l('Seyahat & Konsolosluk', 'Travel & Consular', 'Reise & Konsular', 'Viajes y Consular', 'Консульские вопросы', 'Viagens e consulados'),
       items: [
-        { id: 'appeals', label: l('Vize Ret İtirazı', 'Visa Appeals', 'Visum-Widerspruch', 'Apelación de Visa', 'Апелляция визы'), icon: Scale },
-        { id: 'passport_lost', label: l('Pasaport Kaybı', 'Passport Lost', 'Passverlust', 'Pérdida de Pasaporte', 'Утеря паспорта'), icon: PhoneCall },
-        { id: 'crisis', label: l('Konsolosluk Kriz Masası', 'Crisis Desk', 'Krisenzentrum', 'Mesa de Crisis', 'Кризисный центр'), icon: Building },
-        { id: 'transit', label: l('Transit Kuralları', 'Transit Rules', 'Transitregeln', 'Reglas de Tránsito', 'Правила транзита'), icon: Plane },
+        { id: 'appeals', label: l('Vize Ret İtirazı', 'Visa Appeals', 'Visum-Widerspruch', 'Apelación de Visa', 'Апелляция визы', 'Recurso de visto'), icon: Scale },
+        { id: 'passport_lost', label: l('Pasaport Kaybı', 'Passport Lost', 'Passverlust', 'Pérdida de Pasaporte', 'Утеря паспорта', 'Perda de passaporte'), icon: PhoneCall },
+        { id: 'crisis', label: l('Konsolosluk Kriz Masası', 'Crisis Desk', 'Krisenzentrum', 'Mesa de Crisis', 'Кризисный центр', 'Central de crises'), icon: Building },
+        { id: 'transit', label: l('Transit Kuralları', 'Transit Rules', 'Transitregeln', 'Reglas de Tránsito', 'Правила транзита', 'Regras de trânsito'), icon: Plane },
       ]
     },
     {
-      groupTitle: l('Ortaklar & Ekosistem', 'Partners & Ecosystem', 'Partner & Ökosystem', 'Socios y Ecosistema', 'Партнеры и экосистема'),
+      groupTitle: l('Ortaklar & Ekosistem', 'Partners & Ecosystem', 'Partner & Ökosystem', 'Socios y Ecosistema', 'Партнеры и экосистема', 'Parceiros e ecossistema'),
       items: [
-        { id: 'partners', label: l('Acente Masası', 'Agencies Desk', 'Agentur-Portal', 'Mesa de Agencias', 'Визовые агентства'), icon: Briefcase },
-        { id: 'airlines', label: l('Havayolu Entegrasyonu', 'Airline Integration', 'Airlines & Grenzen', 'Integración Aérea', 'Авиакомпании'), icon: Plane },
-        { id: 'insurance', label: l('Sağlık Sigortası', 'Health Insurance', 'Reiseversicherung', 'Seguro Médico', 'Страхование'), icon: HeartHandshake },
-        { id: 'community', label: l('Gezgin Katkı Masası', 'Community Desk', 'Gezgin-Portal', 'Comunidad', 'Сообщество'), icon: Users },
-        { id: 'api', label: l('Kurumsal API', 'Enterprise API', 'Enterprise API', 'API Corporativa', 'Корпоративный API'), icon: Code2 },
+        { id: 'partners', label: l('Acente Masası', 'Agencies Desk', 'Agentur-Portal', 'Mesa de Agencias', 'Визовые агентства', 'Central para agências'), icon: Briefcase },
+        { id: 'airlines', label: l('Havayolu Entegrasyonu', 'Airline Integration', 'Airlines & Grenzen', 'Integración Aérea', 'Авиакомпании', 'Integração com companhias aéreas'), icon: Plane },
+        { id: 'insurance', label: l('Sağlık Sigortası', 'Health Insurance', 'Reiseversicherung', 'Seguro Médico', 'Страхование', 'Seguro saúde'), icon: HeartHandshake },
+        { id: 'community', label: l('Gezgin Katkı Masası', 'Community Desk', 'Gezgin-Portal', 'Comunidad', 'Сообщество', 'Comunidade'), icon: Users },
+        { id: 'api', label: l('Kurumsal API', 'Enterprise API', 'Enterprise API', 'API Corporativa', 'Корпоративный API', 'API corporativa'), icon: Code2 },
       ]
     },
     {
-      groupTitle: l('Kurumsal & Ekip', 'Company & Team', 'Unternehmen & Team', 'Empresa y Equipo', 'О компании'),
+      groupTitle: l('Kurumsal & Ekip', 'Company & Team', 'Unternehmen & Team', 'Empresa y Equipo', 'О компании', 'Empresa e equipe'),
       items: [
-        { id: 'mission', label: l('Misyonumuz', 'Our Mission', 'Unsere Mission', 'Nuestra Misión', 'Наша миссия'), icon: Award },
-        { id: 'sustainability', label: l('Sürdürülebilir Seyahat', 'Sustainability', 'Nachhaltigkeit', 'Sostenibilidad', 'Экология'), icon: Leaf },
-        { id: 'careers', label: l('Kariyer & Ekip', 'Careers & Team', 'Karriere', 'Carreras', 'Карьера'), icon: Users },
-        { id: 'press', label: l('Basın & İletişim', 'Press & Contact', 'Presse & Kontakt', 'Prensa y Contacto', 'Пресса и контакты'), icon: Mail },
-        { id: 'backup', label: l('Veri Yönetimi & Yedek', 'Data Backup', 'Datensicherung', 'Copia de Seguridad', 'Резервное копирование'), icon: RotateCcw }
+        { id: 'mission', label: l('Misyonumuz', 'Our Mission', 'Unsere Mission', 'Nuestra Misión', 'Наша миссия', 'Nossa missão'), icon: Award },
+        { id: 'sustainability', label: l('Sürdürülebilir Seyahat', 'Sustainability', 'Nachhaltigkeit', 'Sostenibilidad', 'Экология', 'Sustentabilidade'), icon: Leaf },
+        { id: 'careers', label: l('Kariyer & Ekip', 'Careers & Team', 'Karriere', 'Carreras', 'Карьера', 'Carreiras'), icon: Users },
+        { id: 'press', label: l('Basın & İletişim', 'Press & Contact', 'Presse & Kontakt', 'Prensa y Contacto', 'Пресса и контакты', 'Imprensa e contato'), icon: Mail },
+        { id: 'backup', label: l('Veri Yönetimi & Yedek', 'Data Backup', 'Datensicherung', 'Copia de Seguridad', 'Резервное копирование', 'Backup'), icon: RotateCcw }
       ]
     }
   ];
@@ -211,10 +211,10 @@ export const LegalInfoModal: React.FC<LegalInfoModalProps> = ({
                   </div>
                   <div>
                     <h2 className="text-xl sm:text-2xl font-black text-slate-900 dark:text-white">
-                      {l('Görsel Lisansları & Fotoğrafçı Atıfları', 'Destination Photography & Creative Commons Attributions', 'Bildnachweise & Creative-Commons-Lizenzen', 'Créditos de Imágenes y Licencias', 'Лицензии и авторство фото')}
+                      {l('Görsel Lisansları & Fotoğrafçı Atıfları', 'Destination Photography & Creative Commons Attributions', 'Bildnachweise & Creative-Commons-Lizenzen', 'Créditos de Imágenes y Licencias', 'Лицензии и авторство фото', 'Créditos de imagens e licenças')}
                     </h2>
                     <p className="text-xs text-slate-500 dark:text-slate-400">
-                      {l('199 Dünya Ülkesi · Creative Commons, Public Domain & Doğrulanmış Açık Lisans Envanteri', '199 countries · Creative Commons, public domain and open licences', '199 Länder · Creative Commons, gemeinfrei und offene Lizenzen', '199 países · Creative Commons, dominio público y licencias abiertas', '199 стран · Creative Commons, общественное достояние и открытые лицензии')}
+                      {l('199 Dünya Ülkesi · Creative Commons, Public Domain & Doğrulanmış Açık Lisans Envanteri', '199 countries · Creative Commons, public domain and open licences', '199 Länder · Creative Commons, gemeinfrei und offene Lizenzen', '199 países · Creative Commons, dominio público y licencias abiertas', '199 стран · Creative Commons, общественное достояние и открытые лицензии', '199 países · Creative Commons, domínio público e licenças abertas')}
                     </p>
                   </div>
                 </div>
@@ -226,7 +226,7 @@ export const LegalInfoModal: React.FC<LegalInfoModalProps> = ({
                     type="text"
                     value={attributionSearch}
                     onChange={(e) => setAttributionSearch(e.target.value)}
-                    placeholder={l('Ülke veya fotoğrafçı ara...', 'Search destination or photographer...', 'Land oder Fotograf suchen…', 'Buscar país o fotógrafo…', 'Поиск страны или фотографа…')}
+                    placeholder={l('Ülke veya fotoğrafçı ara...', 'Search destination or photographer...', 'Land oder Fotograf suchen…', 'Buscar país o fotógrafo…', 'Поиск страны или фотографа…', 'Buscar país ou fotógrafo…')}
                     className="w-full pl-9 pr-3 py-2 text-xs rounded-xl bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 focus:outline-none focus:ring-2 focus:ring-teal-500 text-slate-800 dark:text-slate-100"
                   />
                 </div>
@@ -234,7 +234,7 @@ export const LegalInfoModal: React.FC<LegalInfoModalProps> = ({
 
               <div className="p-4 sm:p-5 rounded-2xl bg-teal-50 dark:bg-teal-950/20 border border-teal-200 dark:border-teal-900/40 text-xs sm:text-sm text-teal-900 dark:text-teal-200 space-y-2">
                 <p className="font-bold">
-                  {l('Lisanslama & Fikri Mülkiyet İlkeleri:', 'Licensing and attribution:', 'Lizenzen und Namensnennung:', 'Licencias y atribución:', 'Лицензии и указание авторства:')}
+                  {l('Lisanslama & Fikri Mülkiyet İlkeleri:', 'Licensing and attribution:', 'Lizenzen und Namensnennung:', 'Licencias y atribución:', 'Лицензии и указание авторства:', 'Licenças e atribuição:')}
                 </p>
                 <p className="text-xs text-slate-700 dark:text-slate-300 leading-relaxed">
                   {l(
@@ -242,7 +242,7 @@ export const LegalInfoModal: React.FC<LegalInfoModalProps> = ({
                     'Photos on country pages come from Wikimedia Commons and similar openly licensed or public-domain sources. Each photo’s author, source and licence are listed below. Some decorative images in the booking sections were made with the help of AI.',
                     'Die Fotos auf den Länderseiten stammen aus Wikimedia Commons und ähnlichen offen lizenzierten oder gemeinfreien Quellen. Urheber, Quelle und Lizenz jedes Fotos stehen unten. Einige Schmuckbilder in den Buchungsbereichen wurden mit Hilfe von KI erstellt.',
                     'Las fotos de las páginas de países proceden de Wikimedia Commons y fuentes similares con licencia abierta o de dominio público. El autor, la fuente y la licencia de cada foto figuran abajo. Algunas imágenes decorativas de las secciones de reserva se crearon con ayuda de IA.',
-                    'Фотографии на страницах стран взяты из Wikimedia Commons и похожих источников с открытой лицензией или в общественном достоянии. Автор, источник и лицензия каждого фото указаны ниже. Некоторые декоративные изображения в разделах бронирования созданы с помощью ИИ.'
+                    'Фотографии на страницах стран взяты из Wikimedia Commons и похожих источников с открытой лицензией или в общественном достоянии. Автор, источник и лицензия каждого фото указаны ниже. Некоторые декоративные изображения в разделах бронирования созданы с помощью ИИ.', 'As fotos das páginas de países vêm do Wikimedia Commons e de fontes semelhantes com licença aberta ou de domínio público. O autor, a fonte e a licença de cada foto aparecem abaixo. Algumas imagens decorativas das seções de reserva foram criadas com ajuda de IA.'
                   )}
                 </p>
               </div>
@@ -301,9 +301,9 @@ export const LegalInfoModal: React.FC<LegalInfoModalProps> = ({
                               target="_blank"
                               rel="noopener noreferrer"
                               className="inline-flex items-center gap-0.5 text-teal-600 dark:text-teal-400 hover:underline shrink-0 font-medium"
-                              title={l('Orijinal Kaynağı Görüntüle', 'View original source', 'Originalquelle ansehen', 'Ver fuente original', 'Открыть источник')}
+                              title={l('Orijinal Kaynağı Görüntüle', 'View original source', 'Originalquelle ansehen', 'Ver fuente original', 'Открыть источник', 'Ver fonte original')}
                             >
-                              <span>{l('Kaynak', 'Source', 'Quelle', 'Fuente', 'Источник')}</span>
+                              <span>{l('Kaynak', 'Source', 'Quelle', 'Fuente', 'Источник', 'Fonte')}</span>
                               <ExternalLink className="w-2.5 h-2.5" />
                             </a>
                           </div>
@@ -324,16 +324,16 @@ export const LegalInfoModal: React.FC<LegalInfoModalProps> = ({
                 </div>
                 <div>
                   <h2 className="text-xl sm:text-2xl font-black text-slate-900 dark:text-white">
-                    {l('Veri Yedekleme, Dışa Aktarma & Cihaz Sıfırlama', 'Data backup, export and reset', 'Datensicherung, Export und Zurücksetzen', 'Copia de seguridad, exportación y restablecimiento', 'Резервная копия, экспорт и сброс')}
+                    {l('Veri Yedekleme, Dışa Aktarma & Cihaz Sıfırlama', 'Data backup, export and reset', 'Datensicherung, Export und Zurücksetzen', 'Copia de seguridad, exportación y restablecimiento', 'Резервная копия, экспорт и сброс', 'Backup, exportação e redefinição')}
                   </h2>
                   <p className="text-xs text-slate-500 dark:text-slate-400">
-                    {l('Cihaz Değişikliği İçin Yerel JSON Arşivi ve Tam Temizleme', 'A local JSON file for switching devices, or a full reset', 'Lokale JSON-Datei für den Gerätewechsel oder vollständiges Zurücksetzen', 'Archivo JSON local para cambiar de dispositivo o borrado completo', 'Локальный файл JSON для смены устройства или полный сброс')}
+                    {l('Cihaz Değişikliği İçin Yerel JSON Arşivi ve Tam Temizleme', 'A local JSON file for switching devices, or a full reset', 'Lokale JSON-Datei für den Gerätewechsel oder vollständiges Zurücksetzen', 'Archivo JSON local para cambiar de dispositivo o borrado completo', 'Локальный файл JSON для смены устройства или полный сброс', 'Arquivo JSON local para trocar de dispositivo ou apagar tudo')}
                   </p>
                 </div>
               </div>
 
               <p>
-                {l('Cihaz değiştirdiğinizde veya verilerinizi arşivlemek istediğinizde JSON dosyası indirebilir veya mevcut bir yedeği yükleyebilirsiniz.', 'Download a JSON file when you switch devices or want an archive, or upload an existing backup.', 'Lade eine JSON-Datei herunter, wenn du das Gerät wechselst oder archivieren willst, oder spiele eine vorhandene Sicherung ein.', 'Descarga un archivo JSON al cambiar de dispositivo o para archivar, o sube una copia existente.', 'Скачайте файл JSON при смене устройства или для архива либо загрузите существующую копию.')}
+                {l('Cihaz değiştirdiğinizde veya verilerinizi arşivlemek istediğinizde JSON dosyası indirebilir veya mevcut bir yedeği yükleyebilirsiniz.', 'Download a JSON file when you switch devices or want an archive, or upload an existing backup.', 'Lade eine JSON-Datei herunter, wenn du das Gerät wechselst oder archivieren willst, oder spiele eine vorhandene Sicherung ein.', 'Descarga un archivo JSON al cambiar de dispositivo o para archivar, o sube una copia existente.', 'Скачайте файл JSON при смене устройства или для архива либо загрузите существующую копию.', 'Baixe um arquivo JSON ao trocar de dispositivo ou para arquivar, ou envie um backup existente.')}
               </p>
 
               <div className="flex flex-wrap gap-3 pt-2">
@@ -342,7 +342,7 @@ export const LegalInfoModal: React.FC<LegalInfoModalProps> = ({
                   onClick={handleExport}
                   className="px-5 py-3 rounded-2xl bg-teal-600 hover:bg-teal-700 text-white font-bold text-xs flex items-center gap-2 shadow-sm transition-colors cursor-pointer"
                 >
-                  <Download className="w-4 h-4" /> {l('Yedeği İndir (.json)', 'Download backup (.json)', 'Sicherung herunterladen (.json)', 'Descargar copia (.json)', 'Скачать копию (.json)')}
+                  <Download className="w-4 h-4" /> {l('Yedeği İndir (.json)', 'Download backup (.json)', 'Sicherung herunterladen (.json)', 'Descargar copia (.json)', 'Скачать копию (.json)', 'Baixar backup (.json)')}
                 </button>
 
                 <button
@@ -350,7 +350,7 @@ export const LegalInfoModal: React.FC<LegalInfoModalProps> = ({
                   onClick={() => fileInputRef.current?.click()}
                   className="px-5 py-3 rounded-2xl bg-white dark:bg-white/10 border border-teal-300 dark:border-white/20 hover:border-teal-500 text-slate-800 dark:text-white font-bold text-xs flex items-center gap-2 transition-colors cursor-pointer"
                 >
-                  <Upload className="w-4 h-4" /> {l('Yedeği Geri Yükle', 'Restore backup', 'Sicherung wiederherstellen', 'Restaurar copia', 'Восстановить копию')}
+                  <Upload className="w-4 h-4" /> {l('Yedeği Geri Yükle', 'Restore backup', 'Sicherung wiederherstellen', 'Restaurar copia', 'Восстановить копию', 'Restaurar backup')}
                 </button>
                 <input
                   ref={fileInputRef}
@@ -365,7 +365,7 @@ export const LegalInfoModal: React.FC<LegalInfoModalProps> = ({
                   onClick={handleReset}
                   className="px-4 py-3 rounded-2xl text-rose-600 hover:bg-rose-50 dark:hover:bg-rose-950/40 border border-transparent hover:border-rose-200 transition-colors font-bold text-xs flex items-center gap-2 ml-auto cursor-pointer"
                 >
-                  <RotateCcw className="w-4 h-4" /> {l('Tümünü Sıfırla', 'Reset all data', 'Alles zurücksetzen', 'Restablecer todo', 'Сбросить всё')}
+                  <RotateCcw className="w-4 h-4" /> {l('Tümünü Sıfırla', 'Reset all data', 'Alles zurücksetzen', 'Restablecer todo', 'Сбросить всё', 'Redefinir tudo')}
                 </button>
               </div>
 
@@ -402,10 +402,10 @@ export const LegalInfoModal: React.FC<LegalInfoModalProps> = ({
               type="button"
               onClick={onClose}
               className="inline-flex items-center gap-2 px-3 sm:px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-slate-100 hover:bg-slate-200 dark:bg-white/10 dark:hover:bg-white/15 text-slate-700 dark:text-slate-200 transition-all cursor-pointer shrink-0"
-              title={l('Keşfet\'e Dön', 'Back to Explore', 'Zurück', 'Volver', 'Назад')}
+              title={l('Keşfet\'e Dön', 'Back to Explore', 'Zurück', 'Volver', 'Назад', 'Voltar')}
             >
               <ArrowLeft className="w-4 h-4 text-slate-600 dark:text-slate-300" />
-              <span>{l('Keşfet\'e Dön', 'Back to Explore', 'Zurück', 'Volver', 'Назад')}</span>
+              <span>{l('Keşfet\'e Dön', 'Back to Explore', 'Zurück', 'Volver', 'Назад', 'Voltar')}</span>
             </button>
 
             <div className="flex items-center gap-2.5 min-w-0">
@@ -414,10 +414,10 @@ export const LegalInfoModal: React.FC<LegalInfoModalProps> = ({
               </div>
               <div className="min-w-0">
                 <h1 id="legal-page-title" className="text-base sm:text-lg font-black text-slate-900 dark:text-white tracking-tight truncate">
-                  {l('Vizamigo Hukuki, Kurumsal & Mevzuat Merkezi', 'Vizamigo information centre', 'Vizamigo Infozentrum', 'Centro de información de Vizamigo', 'Информационный центр Vizamigo')}
+                  {l('Vizamigo Hukuki, Kurumsal & Mevzuat Merkezi', 'Vizamigo information centre', 'Vizamigo Infozentrum', 'Centro de información de Vizamigo', 'Информационный центр Vizamigo', 'Central de informações da Vizamigo')}
                 </h1>
                 <p className="text-xs font-semibold text-teal-700 dark:text-teal-300 truncate hidden sm:block">
-                  {l('Resmi Mevzuat, Güvenlik Standartları, Ekosistem Ortaklıkları & Gezgin Hakları', 'Legal pages, sources and help', 'Rechtliches, Quellen und Hilfe', 'Avisos legales, fuentes y ayuda', 'Правовая информация, источники и помощь')}
+                  {l('Resmi Mevzuat, Güvenlik Standartları, Ekosistem Ortaklıkları & Gezgin Hakları', 'Legal pages, sources and help', 'Rechtliches, Quellen und Hilfe', 'Avisos legales, fuentes y ayuda', 'Правовая информация, источники и помощь', 'Avisos legais, fontes e ajuda')}
                 </p>
               </div>
             </div>
@@ -428,10 +428,10 @@ export const LegalInfoModal: React.FC<LegalInfoModalProps> = ({
             type="button"
             onClick={onClose}
             className="p-2 sm:px-3 sm:py-2 rounded-xl bg-slate-100 dark:bg-white/10 hover:bg-slate-200 dark:hover:bg-white/15 text-slate-600 dark:text-slate-300 transition-colors cursor-pointer shrink-0 inline-flex items-center gap-1.5"
-            title={l('Kapat', 'Close', 'Schließen', 'Cerrar', 'Закрыть')}
+            title={l('Kapat', 'Close', 'Schließen', 'Cerrar', 'Закрыть', 'Fechar')}
           >
             <X className="w-5 h-5" />
-            <span className="text-xs font-bold hidden sm:inline">{l('Kapat', 'Close', 'Schließen', 'Cerrar', 'Закрыть')}</span>
+            <span className="text-xs font-bold hidden sm:inline">{l('Kapat', 'Close', 'Schließen', 'Cerrar', 'Закрыть', 'Fechar')}</span>
           </button>
         </div>
       </header>
@@ -515,7 +515,7 @@ export const LegalInfoModal: React.FC<LegalInfoModalProps> = ({
           onClick={onClose}
           className="px-5 py-2 rounded-xl bg-teal-600 hover:bg-teal-700 text-white font-black text-xs shadow-sm transition-colors cursor-pointer"
         >
-          {l('Kapat', 'Close', 'Schließen', 'Cerrar', 'Закрыть')}
+          {l('Kapat', 'Close', 'Schließen', 'Cerrar', 'Закрыть', 'Fechar')}
         </button>
       </footer>
     </div>

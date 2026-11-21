@@ -48,7 +48,7 @@ export const HomeRails: React.FC<{ passport: string; onOpenCountry: (c: string) 
   const easy = useMemo(() => order(isEasy), [items]); // eslint-disable-line react-hooks/exhaustive-deps
   const pick = <T,>(tr: T, en?: T, de?: T): T => (language === 'tr' ? tr : language === 'de' ? de ?? en ?? tr : typeof tr === 'string' && (language === 'es' || language === 'ru' || language === 'pt') ? (lText(language, tr, (en ?? tr) as string, de as string | undefined) as T) : en ?? tr);
   const alerts = VISA_CHANGE_ALERTS.filter((a) => a.impactPassport.length === 0 || a.impactPassport.includes(passport)).slice(0, 3);
-  const more = l('Tümünü gör', 'See all', 'Alle ansehen', 'Ver todo', 'Смотреть все');
+  const more = l('Tümünü gör', 'See all', 'Alle ansehen', 'Ver todo', 'Смотреть все', 'Ver tudo');
 
   return (
     <>
@@ -56,7 +56,7 @@ export const HomeRails: React.FC<{ passport: string; onOpenCountry: (c: string) 
         <section className="vz-alerts" aria-labelledby="vz-h-changes">
           <div className="vz-alerts-head">
             <span className="vz-ic"><Icon name="bell" size={20} /></span>
-            <h2 id="vz-h-changes">{l('Pasaportunu etkileyen son değişiklikler', 'Latest changes for your passport', 'Neueste Änderungen für deinen Pass', 'Últimos cambios para tu pasaporte', 'Последние изменения для вашего паспорта')}</h2>
+            <h2 id="vz-h-changes">{l('Pasaportunu etkileyen son değişiklikler', 'Latest changes for your passport', 'Neueste Änderungen für deinen Pass', 'Últimos cambios para tu pasaporte', 'Последние изменения для вашего паспорта', 'Últimas mudanças para o seu passaporte')}</h2>
             <Btn variant="ghost" small onClick={() => onOpenTile('changes')}>{more}</Btn>
           </div>
           <div className="vz-alerts-list">
@@ -72,8 +72,8 @@ export const HomeRails: React.FC<{ passport: string; onOpenCountry: (c: string) 
       )}
       <Rail
         id="vz-h-free"
-        eyebrow={l('Vize derdi yok', 'No visa hassle', 'Ohne Visum', 'Sin visado', 'Без визы')}
-        title={l('Vizesiz gidebileceğin yerler', 'Places you can go visa-free', 'Visumfreie Ziele', 'Destinos sin visado', 'Куда можно без визы')}
+        eyebrow={l('Vize derdi yok', 'No visa hassle', 'Ohne Visum', 'Sin visado', 'Без визы', 'Sem visto')}
+        title={l('Vizesiz gidebileceğin yerler', 'Places you can go visa-free', 'Visumfreie Ziele', 'Destinos sin visado', 'Куда можно без визы', 'Destinos sem visto')}
         codes={free}
         items={items}
         onOpenCountry={onOpenCountry}
@@ -82,8 +82,8 @@ export const HomeRails: React.FC<{ passport: string; onOpenCountry: (c: string) 
       />
       <Rail
         id="vz-h-easy"
-        eyebrow={l('Birkaç tıkla', 'A few clicks away', 'Mit wenigen Klicks', 'A pocos clics', 'В пару кликов')}
-        title={l('E-vize ya da kapıda vizeyle', 'With an eVisa or visa on arrival', 'Mit eVisum oder bei Ankunft', 'Con eVisa o a la llegada', 'По eVisa или по прилёте')}
+        eyebrow={l('Birkaç tıkla', 'A few clicks away', 'Mit wenigen Klicks', 'A pocos clics', 'В пару кликов', 'A poucos cliques')}
+        title={l('E-vize ya da kapıda vizeyle', 'With an eVisa or visa on arrival', 'Mit eVisum oder bei Ankunft', 'Con eVisa o a la llegada', 'По eVisa или по прилёте', 'Com e-Visa ou na chegada')}
         codes={easy}
         items={items}
         onOpenCountry={onOpenCountry}
@@ -117,10 +117,10 @@ export const TourRail: React.FC<{ passport: string }> = ({ passport }) => {
     <section className="vz-home-sec" aria-labelledby="vz-h-tours">
       <div className="vz-sechead">
         <div>
-          <span className="vz-eyebrow">{l('Rehberli · konaklama dahil, uçak eklenebilir', 'Guided · stays included, add flights', 'Geführt · Unterkunft inklusive, Flüge hinzufügbar', 'Guiados · alojamiento incluido, añade vuelos', 'С гидом · проживание включено, перелёт добавляется')}</span>
-          <h2 id="vz-h-tours">{l('Paket turlar', 'Multi-day tours', 'Rundreisen', 'Tours de varios días', 'Многодневные туры')}</h2>
+          <span className="vz-eyebrow">{l('Rehberli · konaklama dahil, uçak eklenebilir', 'Guided · stays included, add flights', 'Geführt · Unterkunft inklusive, Flüge hinzufügbar', 'Guiados · alojamiento incluido, añade vuelos', 'С гидом · проживание включено, перелёт добавляется', 'Guiados · hospedagem incluída, adicione voos')}</span>
+          <h2 id="vz-h-tours">{l('Paket turlar', 'Multi-day tours', 'Rundreisen', 'Tours de varios días', 'Многодневные туры', 'Tours de vários dias')}</h2>
         </div>
-        <a className="vz-btn vz-btn-ghost sm" href={base}>{l('Tümünü gör', 'See all', 'Alle ansehen', 'Ver todo', 'Смотреть все')}</a>
+        <a className="vz-btn vz-btn-ghost sm" href={base}>{l('Tümünü gör', 'See all', 'Alle ansehen', 'Ver todo', 'Смотреть все', 'Ver tudo')}</a>
       </div>
       <div className="vz-rail">
         {pkgs.map((p) => {
@@ -130,7 +130,7 @@ export const TourRail: React.FC<{ passport: string }> = ({ passport }) => {
             <a key={p.id} className="vz-ccard vz-tcard" href={`${base}#${p.id}`}>
               <span className="vz-ccard-img">
                 <img src={img} alt={p.name[i] || getCountryName(p.code, language)} loading="lazy" decoding="async" width={360} height={270} />
-                <span className="vz-tcard-days">{l(`${p.days} gün`, `${p.days} days`, `${p.days} Tage`, `${p.days} días`, `${p.days} дн.`)}</span>
+                <span className="vz-tcard-days">{l(`${p.days} gün`, `${p.days} days`, `${p.days} Tage`, `${p.days} días`, `${p.days} дн.`, `${p.days} dias`)}</span>
                 {p.code !== passport && <VisaBadge item={items.get(p.code) || null} />}
               </span>
               <span className="vz-ccard-b">

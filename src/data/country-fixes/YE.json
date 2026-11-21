@@ -1423,6 +1423,362 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Rial iemenita (YER; com cotações diferentes em Áden e Sanaa)",
+   "plugType": "Tipo A, D, G (230V, 50Hz)",
+   "bestMonths": "Outubro a abril (época mais fresca); com as monções, de junho a setembro, Socotra fica praticamente inacessível",
+   "safety": {
+    "crimeRateSummary": "Por causa da guerra civil iniciada em 2014, dos bombardeios, dos grupos terroristas e do risco de sequestro, o país é considerado fechado para viagens. Infraestrutura, saúde e transporte estão gravemente danificados.",
+    "commonScams": [
+     "Sequestros de estrangeiros para pedir resgate e falsos postos de controle",
+     "Intermediários sem licença em Socotra que cobram adiantado prometendo autorizações e voos",
+     "Prejuízos no câmbio por causa das diferentes cotações do rial em Áden e Sanaa"
+    ],
+    "safeTravelTips": [
+     "Os alertas oficiais desaconselham qualquer viagem ao Iêmen; a assistência consular no país é muito limitada.",
+     "Se a viagem for indispensável, desloque-se apenas com um anfitrião local de confiança e apoio de segurança profissional, sem divulgar seu trajeto.",
+     "Não fotografe áreas militares, postos de controle nem mulheres, e use roupas que cubram todo o corpo."
+    ],
+    "emergencyNumbers": {
+     "police": "199 / 194",
+     "ambulance": "191",
+     "general": "199 / 194"
+    },
+    "safetyScore": 10,
+    "safetyLevel": "Zona de conflito (não viaje)",
+    "badgeColor": "bg-rose-600 text-white border-rose-700 dark:bg-rose-950 dark:text-rose-200"
+   },
+   "internet": {
+    "networkCoverage": "3G/4G fraco nas cidades, com quedas e restrições frequentes; sem sinal nas áreas rurais e em grande parte de Socotra",
+    "costPerGbUsd": "US$ 1 - 4",
+    "esimAvailability": "Praticamente inexistente",
+    "bestCarriers": [
+     "Yemen Mobile",
+     "YOU",
+     "Sabafon"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Muito precário e inseguro (inúmeros postos de controle)",
+    "costLevel": "Caro (é preciso usar veículos particulares com segurança)",
+    "singleTicketUsd": "US$ 0,20 - 1",
+    "dailyPassUsd": "Não disponível",
+    "popularRideApps": [
+     "Não há apps de transporte",
+     "Carro particular com motorista contratado"
+    ],
+    "taxiAdvice": "Não há apps de transporte; as vans compartilhadas e os táxis de rua não são seguros para estrangeiros. Use apenas veículos providenciados por um anfitrião de confiança."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "Não recomendado (viajar por conta própria é inseguro)",
+    "dailyBudgetMidrangeUsd": "US$ 150 - 300 (pacote em Socotra, por dia)",
+    "budgetMealUsd": "US$ 2 - 6",
+    "coffeeUsd": "US$ 0,50 - 2",
+    "waterBottleUsd": "US$ 0,30 - 1",
+    "hostelDormUsd": "Não há hostels (camping em Socotra)",
+    "hotel3StarUsd": "US$ 40 - 100",
+    "flightCostIndex": "Muito alto",
+    "flightTip": "Os voos comerciais se limitam à Yemenia e são irregulares; os tours para Socotra costumam usar voos semanais saindo de Abu Dhabi. Os cancelamentos são frequentes."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Homens e mulheres devem usar roupas largas que cubram o corpo; as mulheres, também um lenço.",
+     "Use a mão direita para comer e cumprimentar; espere que uma pessoa do sexo oposto estenda a mão primeiro.",
+     "As reuniões de qat no fim da tarde são o centro da vida social; se for convidado, você pode recusar com educação."
+    ],
+    "festivals": [
+     "Eid al-Fitr",
+     "Eid al-Adha",
+     "Mês do Ramadã"
+    ],
+    "lifestyle": "Os laços tribais, a família estendida e a hospitalidade são muito fortes; a adaga jambiya usada pelos homens simboliza a identidade tradicional. As tardes de qat deixam o ritmo de vida mais lento."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Cidade Velha de Sanaa (UNESCO)",
+     "Shibam, Hadramaut – “a Manhattan do deserto” (UNESCO)",
+     "Arquipélago de Socotra – árvores-sangue-de-dragão (UNESCO)",
+     "Cidade histórica de Zabid (UNESCO)",
+     "Dar al-Hajar (palácio na rocha de Wadi Dhahr)",
+     "Marib e ruínas do reino de Sabá"
+    ],
+    "bestSeasons": "Outubro a abril (época mais fresca); com as monções, de junho a setembro, Socotra fica praticamente inacessível",
+    "travelStyleTip": "Não se recomenda viajar ao continente. Os poucos visitantes de Socotra vão em tours de operadoras locais autorizadas, que cuidam das autorizações e dos voos; a ilha também está sujeita aos alertas oficiais."
+   },
+   "religion": {
+    "primaryReligions": "Muçulmanos ~99% (sunitas shafiitas ~60%, xiitas zaiditas ~35-40%); minorias muito pequenas",
+    "respectNorms": "A entrada de não muçulmanos é restrita na maioria das mesquitas; no Ramadã, não coma nem beba em público durante o dia.",
+    "sacredSites": [
+     "Grande Mesquita de Sanaa",
+     "Mesquita da rainha Arwa (Jibla)",
+     "Mesquita e minarete de al-Muhdhar (Tarim)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Árabe (oficial); em Socotra fala-se soqotri e, no leste, mehri.",
+    "englishProficiency": "Baixo; tirando guias e algumas pessoas com mais estudo, é preciso saber o básico de árabe.",
+    "phrases": [
+     {
+      "phrase": "السلام عليكم (as-salāmu ʿalaykum)",
+      "meaning": "Que a paz esteja com você (cumprimento)",
+      "translation": "Que a paz esteja com você (cumprimento)",
+      "pronunciation": "as-sa-LA-mu a-LAY-kum"
+     },
+     {
+      "phrase": "شكراً (shukran)",
+      "meaning": "Obrigado",
+      "translation": "Obrigado",
+      "pronunciation": "SHUK-ran"
+     },
+     {
+      "phrase": "كيف حالك؟ (kayf ḥālak?)",
+      "meaning": "Como vai?",
+      "translation": "Como vai?",
+      "pronunciation": "kayf HA-lak"
+     },
+     {
+      "phrase": "كم حقه؟ (kam ḥaqqah?)",
+      "meaning": "Quanto custa? (iemenita)",
+      "translation": "Quanto custa? (iemenita)",
+      "pronunciation": "kam HAG-gah"
+     },
+     {
+      "phrase": "مع السلامة (maʿa as-salāma)",
+      "meaning": "Tchau / Adeus",
+      "translation": "Tchau / Adeus",
+      "pronunciation": "MA-a as-sa-LA-ma"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Na Antiguidade, abrigou os reinos de Sabá e Himiar, a represa de Marib e o comércio do incenso, e se converteu ao islã no século VII. Passou por períodos de domínio otomano. Norte e Sul se unificaram em 1990; desde 2014 o país vive uma guerra civil e uma grave crise humanitária.",
+    "milestones": [
+     "I milênio a.C.: reino de Sabá e represa de Marib",
+     "1538 e 1872–1918: períodos otomanos",
+     "1990: unificação do Iêmen do Norte e do Sul (22 de maio)",
+     "2014: início da guerra civil"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Saltah (prato nacional: ensopado de caldo com espuma de feno-grego)",
+     "Mandi (arroz com cordeiro ou frango assado em forno de terra)",
+     "Fahsa (ensopado de cordeiro em panela de pedra)"
+    ],
+    "traditionalDrinks": [
+     "Qishr (bebida de casca de café com gengibre)",
+     "Café iemenita (moca)",
+     "Shai haleeb (chá com leite e especiarias)"
+    ],
+    "streetFoodAndDesserts": [
+     "Bint al-sahn (pão em camadas com mel)",
+     "Malawah (pão achatado folhado)",
+     "Masoub (pudim de pão e banana) com mel de sidr"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Rainha de Sabá, Bilqis (rainha lendária)",
+     "Rainha Arwa al-Sulayhi (soberana dos séculos XI–XII)",
+     "Tawakkol Karman (Nobel da Paz de 2011)"
+    ],
+    "strongSectors": [
+     "Café (histórico porto de Moca) e mel (sidr, do'ani)",
+     "Petróleo e gás (muito reduzidos pela guerra)",
+     "Pesca"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "A economia funciona só com dinheiro vivo; cartões estrangeiros e caixas eletrônicos praticamente não funcionam. Leve dólares novos ou riais sauditas.",
+    "tippingCulture": "Não é obrigatória em restaurantes; guias, motoristas e equipes de tour esperam gorjeta.",
+    "economicPillars": "Remessas, agricultura (café, qat, mel), pesca, produção limitada de petróleo e ajuda humanitária."
+   }
+  },
+  "itin": {
+   "routeName": "Socotra: árvores-sangue-de-dragão e dunas brancas",
+   "routeSummary": "Como não se recomenda viajar ao Iêmen continental, este roteiro de 7 dias cobre apenas Socotra: a lagoa de Detwah, as árvores-sangue-de-dragão de Diksam, a caverna de Hoq e as dunas de Arher. A ilha também está sujeita aos alertas oficiais.",
+   "totalDays": 7,
+   "idealDurationText": "Tour de 7 dias por Socotra",
+   "bestSeason": "Outubro a abril",
+   "transportMode": "Voo semanal saindo de Abu Dhabi + 4x4 com motorista da operadora",
+   "paceLevel": "Aventura (camping + trilhas)",
+   "stops": [
+    {
+     "name": "Parada 1: Hadibu e lagoa de Detwah",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Areias brancas da lagoa de Detwah (Qalansiyah)",
+      "Praia de Shuab (de barco)",
+      "Mercado de Hadibu"
+     ],
+     "activities": [
+      "Acampe à beira da lagoa e observe as estrelas.",
+      "Vá de barco até Shuab, muitas vezes acompanhado de golfinhos.",
+      "Coma atum fresco em uma vila de pescadores."
+     ],
+     "foodAndDrinks": [
+      "Atum grelhado com arroz",
+      "Shai haleeb (chá com leite e especiarias)"
+     ],
+     "criticalTips": [
+      "Socotra só deve ser visitada com uma operadora local autorizada; consulte os alertas oficiais.",
+      "Leve dólares suficientes; os caixas eletrônicos da ilha não são confiáveis."
+     ],
+     "mapsQuery": "Detwah Lagoon, Qalansiyah, Socotra",
+     "stopNumber": 1
+    },
+    {
+     "name": "Parada 2: Planalto de Diksam e floresta de Firmihin",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Floresta de árvores-sangue-de-dragão de Firmihin",
+      "Cânion de Wadi Dirhur",
+      "Casas de pedra de pastores beduínos"
+     ],
+     "activities": [
+      "Veja o nascer do sol entre as árvores-sangue-de-dragão.",
+      "Caminhe pelo cânion e nade em piscinas naturais.",
+      "Tome chá com leite com famílias locais."
+     ],
+     "foodAndDrinks": [
+      "Cabrito com arroz (comida de acampamento)",
+      "Qishr (bebida de casca de café com gengibre)"
+     ],
+     "criticalTips": [
+      "As noites no planalto são frescas; leve um agasalho.",
+      "Não danifique as plantas endêmicas; é proibido coletar resina ou sementes."
+     ],
+     "mapsQuery": "Firmihin Forest, Socotra",
+     "stopNumber": 2
+    },
+    {
+     "name": "Parada 3: Caverna de Hoq, Homhil e dunas de Arher",
+     "recommendedDuration": "3 dias",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Estalactites e estalagmites da caverna de Hoq",
+      "Piscina natural de borda infinita da área protegida de Homhil",
+      "Dunas brancas de Arher à beira-mar"
+     ],
+     "activities": [
+      "Suba com guia até a caverna de Hoq (cerca de 2 horas).",
+      "Caminhe entre as árvores-garrafa em Homhil.",
+      "Veja o pôr do sol das dunas de Arher."
+     ],
+     "foodAndDrinks": [
+      "Malawah (pão achatado folhado)",
+      "Café iemenita (moca)"
+     ],
+     "criticalTips": [
+      "A subida é íngreme e quente; comece cedo e leve bastante água.",
+      "Os voos de volta podem ser cancelados; deixe alguns dias de folga."
+     ],
+     "mapsQuery": "Hoq Cave, Socotra",
+     "stopNumber": 3
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Saltah (prato nacional: ensopado de caldo com espuma de feno-grego)",
+     "Mandi (arroz com cordeiro ou frango assado em forno de terra)",
+     "Fahsa (ensopado de cordeiro em panela de pedra)"
+    ],
+    "drinks": [
+     "Qishr (bebida de casca de café com gengibre)",
+     "Café iemenita (moca)",
+     "Shai haleeb (chá com leite e especiarias)"
+    ],
+    "streetFoods": [
+     "Bint al-sahn (pão em camadas com mel)",
+     "Malawah (pão achatado folhado)",
+     "Masoub (pudim de pão e banana) com mel de sidr"
+    ],
+    "diningAdvice": "Costuma-se comer sentado no chão, com a mão direita e de um prato coletivo; o pão (khubz/malawah) serve de colher."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Dólares novos em dinheiro",
+     "Adaptador tipo G e power bank",
+     "Kit de primeiros socorros completo e pastilhas purificadoras de água",
+     "Roupas largas que cubram o corpo e lenço"
+    ],
+    "safetyAndEtiquette": [
+     "Os alertas oficiais desaconselham qualquer viagem ao Iêmen; a assistência consular no país é muito limitada.",
+     "Não fotografe áreas militares, postos de controle nem mulheres, e use roupas que cubram todo o corpo.",
+     "Homens e mulheres devem usar roupas largas que cubram o corpo; as mulheres, também um lenço."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G",
+     "D",
+     "A"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Principalmente tomadas britânicas tipo G e as antigas tipo D; as quedas de energia são muito frequentes e há geradores por toda parte."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "Nunca beba água da torneira; houve grandes surtos de cólera. Beba apenas água mineral lacrada.",
+    "vaccines": [
+     "Hepatite A, febre tifoide e cólera",
+     "Reforços de pólio e sarampo",
+     "Raiva; proteção contra malária e dengue nas terras baixas",
+     "Pode ser exigido certificado de febre amarela se você chegar de um país de risco"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "191"
+   },
+   "tipping": {
+    "custom": "Não é esperada em restaurantes; guias, motoristas e cozinheiros recebem gorjeta no fim do tour.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "As gorjetas do tour costumam ser dadas em dólares."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Não há",
+    "minSpend": "Não se aplica",
+    "customsNote": "Não há reembolso de impostos. É proibido levar de Socotra plantas endêmicas, sementes, resina ou coral; há fiscalização no aeroporto."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "US$ 1,00 - 4,00",
+    "topCarriers": [
+     "Yemen Mobile",
+     "YOU",
+     "Sabafon"
+    ],
+    "airportSimTrapWarning": "eSIMs e roaming praticamente não funcionam; um chip local exige passaporte e a cobertura é muito limitada. Considere levar um comunicador via satélite."
+   },
+   "touristScams": [
+    {
+     "title": "Sequestro e falsos postos de controle",
+     "desc": "Sequestros de estrangeiros para pedir resgate e falsos postos de controle",
+     "tip": "Se a viagem for indispensável, desloque-se apenas com um anfitrião local de confiança e apoio de segurança profissional, sem divulgar seu trajeto."
+    },
+    {
+     "title": "Falso intermediário em Socotra",
+     "desc": "Intermediários sem licença em Socotra que cobram adiantado prometendo autorizações e voos",
+     "tip": "Confira avaliações e o registro oficial da operadora; pague o valor total só depois de confirmar o voo."
+    },
+    {
+     "title": "Rial com duas cotações",
+     "desc": "Prejuízos no câmbio por causa das diferentes cotações do rial em Áden e Sanaa",
+     "tip": "Pergunte à operadora qual é a cotação local do momento e pague valores altos em dólares."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Йеменский риал (YER; разные курсы в Адене и Сане)",

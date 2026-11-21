@@ -1495,6 +1495,380 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Gourde haitiano (HTG) / dólar americano",
+   "plugType": "Tipo A, B (110V, 60Hz)",
+   "bestMonths": "Dezembro – março (estação seca e mais fresca); de junho a novembro é temporada de furacões. Não se recomenda viajar por causa da atual situação de segurança.",
+   "safety": {
+    "safetyScore": 10,
+    "safetyLevel": "Zona de conflito (não viaje)",
+    "badgeColor": "bg-rose-600 text-white border-rose-700 dark:bg-rose-950 dark:text-rose-200",
+    "crimeRateSummary": "Gangues armadas controlam a maior parte de Porto Príncipe e estradas importantes; sequestros, ataques armados e distúrbios são generalizados. Turquia, EUA e Reino Unido desaconselham qualquer viagem ao país, e a assistência consular é muito limitada.",
+    "commonScams": [
+     "Sequestro para pedir resgate (estrangeiros e locais)",
+     "Barreiras falsas nas estradas e roubo de veículos",
+     "Pessoas na saída do aeroporto que prometem segurança ou traslados em troca de dinheiro vivo"
+    ],
+    "safeTravelTips": [
+     "Não viaje; se você estiver no país, planeje sair na primeira oportunidade segura.",
+     "Se a viagem for indispensável, desloque-se apenas com apoio de segurança profissional e registre-se na embaixada do seu país.",
+     "Evite totalmente o transporte público (tap-taps) e viagens à noite."
+    ]
+   },
+   "internet": {
+    "networkCoverage": "Há 4G nas cidades, mas o serviço cai com frequência por causa de ataques à infraestrutura e apagões",
+    "costPerGbUsd": "~US$ 2,00 - 5,00",
+    "esimAvailability": "Limitada",
+    "bestCarriers": [
+     "Digicel Haiti",
+     "Natcom"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Precário",
+    "costLevel": "Caro",
+    "singleTicketUsd": "US$ 0,50 - 1,50",
+    "dailyPassUsd": "US$ 60 - 120",
+    "popularRideApps": [
+     "Nenhum app de transporte seguro",
+     "Carro com motorista providenciado pelo hotel",
+     "Traslado com escolta de segurança"
+    ],
+    "taxiAdvice": "Não há app de transporte seguro. Os coloridos “tap-taps” e os mototáxis não são seguros para estrangeiros por causa do risco de sequestro; use apenas carros com motorista providenciados por uma instituição ou um hotel de confiança."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 60 - 90",
+    "dailyBudgetMidrangeUsd": "US$ 150 - 250",
+    "budgetMealUsd": "US$ 5 - 12",
+    "coffeeUsd": "US$ 2 - 4",
+    "waterBottleUsd": "US$ 0,50 - 1,50",
+    "hostelDormUsd": "US$ 25 - 45",
+    "hotel3StarUsd": "US$ 90 - 180",
+    "flightCostIndex": "Muito alto",
+    "flightTip": "Os voos comerciais para Porto Príncipe estão há tempos restritos ou suspensos por motivos de segurança e são cancelados com frequência. Confirme a situação atual com as companhias aéreas e com fontes oficiais."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Cumprimentar é essencial; diga “Bonjou” (ou “Bonswa” à tarde) ao chegar.",
+     "Peça sempre permissão antes de fotografar pessoas.",
+     "Participe de cerimônias de vodu só com convite e com respeito.",
+     "Os mais velhos e os chefes de família são muito respeitados."
+    ],
+    "festivals": [
+     "Kanaval (fevereiro, carnaval)",
+     "Dia da Independência e a tradição da soup joumou (1º de janeiro)",
+     "Fèt Gede (1º–2 de novembro, festa dos mortos)"
+    ],
+    "lifestyle": "Uma cultura rica em música kompa, pintura naïf, fortes laços familiares e uma mistura de catolicismo e vodu."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Cidadela Laferrière (UNESCO)",
+     "Ruínas do Palácio Sans-Souci (Milot)",
+     "Centro histórico e ateliês de arte de Jacmel",
+     "Centro histórico de Cabo Haitiano",
+     "Cachoeiras de Bassin Bleu (perto de Jacmel)",
+     "Baía de Labadee"
+    ],
+    "bestSeasons": "Dezembro – março (estação seca e mais fresca); de junho a novembro é temporada de furacões. Não se recomenda viajar por causa da atual situação de segurança.",
+    "travelStyleTip": "Nas condições atuais, viagens turísticas não são recomendadas. Este roteiro é oferecido apenas para planejamento, para quando a segurança melhorar."
+   },
+   "religion": {
+    "primaryReligions": "Católicos (~55 %), protestantes (~30 %) e vodu muito difundido (muitas vezes junto com o cristianismo).",
+    "respectNorms": "Cubra ombros e joelhos nas igrejas; em locais de vodu, siga o guia e nunca fotografe sem permissão.",
+    "sacredSites": [
+     "Catedral de Notre-Dame de l’Assomption (Cabo Haitiano)",
+     "Cachoeira de Saut-d’Eau (local de peregrinação)",
+     "Ruínas da catedral de Notre-Dame, Porto Príncipe"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Crioulo haitiano e francês (oficiais). Praticamente todo mundo fala crioulo.",
+    "englishProficiency": "Baixo; francês e crioulo são indispensáveis.",
+    "phrases": [
+     {
+      "phrase": "Bonjou",
+      "meaning": "Olá / Bom dia",
+      "translation": "Olá / Bom dia",
+      "pronunciation": "bon-ZHOO"
+     },
+     {
+      "phrase": "Sak pase?",
+      "meaning": "E aí, tudo bem?",
+      "translation": "E aí, tudo bem?",
+      "pronunciation": "sak pah-SAY"
+     },
+     {
+      "phrase": "Mèsi anpil",
+      "meaning": "Muito obrigado",
+      "translation": "Muito obrigado",
+      "pronunciation": "meh-SEE ahn-PEEL"
+     },
+     {
+      "phrase": "Tanpri",
+      "meaning": "Por favor",
+      "translation": "Por favor",
+      "pronunciation": "tahn-PREE"
+     },
+     {
+      "phrase": "Konbyen sa koute?",
+      "meaning": "Quanto custa isto?",
+      "translation": "Quanto custa isto?",
+      "pronunciation": "kohn-BYEN sah koo-TAY"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Com a revolução iniciada em 1791, o Haiti aboliu a escravidão e, em 1804, tornou-se a primeira república negra do mundo e o primeiro Estado independente da América Latina. O terremoto de 2010 causou uma devastação enorme.",
+    "milestones": [
+     "1492: Colombo chega a Hispaniola",
+     "1791: Começa a Revolução Haitiana",
+     "1804: Independência (primeira república negra)",
+     "2010: Grande terremoto de Porto Príncipe"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Griot (porco marinado e frito)",
+     "Diri ak pwa (arroz com feijão)",
+     "Soup joumou (sopa de abóbora, UNESCO)"
+    ],
+    "traditionalDrinks": [
+     "Rum Barbancourt",
+     "Cerveja Prestige",
+     "Kleren (aguardente de cana)"
+    ],
+    "streetFoodAndDesserts": [
+     "Pikliz (conserva picante)",
+     "Akra (bolinhos fritos de taioba)",
+     "Pate kode (pastel frito)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Toussaint Louverture (líder revolucionário)",
+     "Jean-Jacques Dessalines (fundador da independência)",
+     "Edwidge Danticat (escritora)"
+    ],
+    "strongSectors": [
+     "Exportação têxtil",
+     "Agricultura (café, manga, vetiver)",
+     "Remessas"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "O dinheiro vivo manda; usam-se dólares americanos e gourdes, e às vezes os preços são dados em “dólares haitianos”. Cartões quase não são aceitos.",
+    "tippingCulture": "Nos restaurantes, cerca de 10 % é bem-vindo.",
+    "economicPillars": "Remessas, têxteis, agricultura e ajuda internacional."
+   }
+  },
+  "itin": {
+   "routeName": "Roteiro de referência pelo Haiti: Jacmel, Pétion-Ville, Cabo Haitiano e a Cidadela (quando a segurança melhorar)",
+   "routeSummary": "Este roteiro é apenas informativo e serve para planejamento futuro; os alertas oficiais atuais indicam não viajar ao Haiti. Um roteiro cultural de 8 dias, dos ateliês de arte de Jacmel até a Cidadela Laferrière, no norte.",
+   "totalDays": 8,
+   "idealDurationText": "Roteiro de referência de 8 dias (não recomendado agora)",
+   "bestSeason": "Dezembro – março (estação seca e mais fresca); de junho a novembro é temporada de furacões. Não se recomenda viajar por causa da atual situação de segurança.",
+   "transportMode": "Carro com motorista e escolta de segurança + voo doméstico",
+   "paceLevel": "Tranquilo (história + cultura)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Jacmel",
+     "recommendedDuration": "2 dias (arte e litoral)",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Centro histórico colonial",
+      "Ateliês de máscaras de carnaval de papel machê",
+      "Cachoeiras de Bassin Bleu"
+     ],
+     "activities": [
+      "Conheça os artistas dos ateliês de máscaras.",
+      "Visite com guia as piscinas naturais azul-turquesa de Bassin Bleu.",
+      "Aproveite um almoço tranquilo à beira-mar."
+     ],
+     "foodAndDrinks": [
+      "Griot com pikliz",
+      "Rum Barbancourt"
+     ],
+     "criticalTips": [
+      "Confirme sempre antes as condições de segurança da estrada do sul.",
+      "Desloque-se apenas com um guia de confiança."
+     ],
+     "mapsQuery": "Jacmel, Haiti"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Pétion-Ville",
+     "recommendedDuration": "1-2 dias (arte e museus)",
+     "durationBadge": "1 dia",
+     "highlights": [
+      "Galerias de arte naïf",
+      "MUPANAH (Museu Nacional de História)",
+      "Marché en Fer (Mercado de Ferro)"
+     ],
+     "activities": [
+      "Percorra galerias de pintura naïf haitiana.",
+      "Aprenda sobre a revolução no Museu Nacional de História.",
+      "Compre artesanato."
+     ],
+     "foodAndDrinks": [
+      "Diri ak pwa",
+      "Cerveja Prestige"
+     ],
+     "criticalTips": [
+      "A região da capital está hoje sob controle de gangues; não a visite.",
+      "Se a situação mudar, circule apenas com escolta."
+     ],
+     "mapsQuery": "Pétion-Ville, Haiti"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Cabo Haitiano",
+     "recommendedDuration": "2 dias (costa norte)",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Arquitetura colonial francesa",
+      "Catedral de Notre-Dame",
+      "Praias de Cormier e Labadee"
+     ],
+     "activities": [
+      "Passeie pelo centro histórico admirando a arquitetura.",
+      "Nade nas enseadas do litoral.",
+      "Prove café haitiano no mercado local."
+     ],
+     "foodAndDrinks": [
+      "Soup joumou",
+      "Akra"
+     ],
+     "criticalTips": [
+      "O norte também não está livre de riscos; siga os alertas em vigor.",
+      "Não saia à noite."
+     ],
+     "mapsQuery": "Cap-Haïtien, Haiti"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Milot – Cidadela Laferrière e Sans-Souci",
+     "recommendedDuration": "1-2 dias (patrimônio da UNESCO)",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Fortaleza da Cidadela Laferrière",
+      "Ruínas do Palácio Sans-Souci",
+      "Fortificações de Ramiers"
+     ],
+     "activities": [
+      "Suba a pé ou a cavalo até a fortaleza logo cedo.",
+      "Conheça a época do rei Christophe no Palácio Sans-Souci.",
+      "Admire a costa norte do alto da fortaleza."
+     ],
+     "foodAndDrinks": [
+      "Pate kode",
+      "Kleren"
+     ],
+     "criticalTips": [
+      "A subida é íngreme; leve água e chapéu.",
+      "Visite com guias oficiais do parque."
+     ],
+     "mapsQuery": "Citadelle Laferrière, Milot, Haiti"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Griot (porco marinado e frito)",
+     "Diri ak pwa (arroz com feijão)",
+     "Soup joumou (sopa de abóbora, UNESCO)"
+    ],
+    "drinks": [
+     "Rum Barbancourt",
+     "Cerveja Prestige",
+     "Kleren (aguardente de cana)"
+    ],
+    "streetFoods": [
+     "Pikliz (conserva picante)",
+     "Akra (bolinhos fritos de taioba)",
+     "Pate kode (pastel frito)"
+    ],
+    "diningAdvice": "A culinária haitiana é condimentada e farta; o griot com pikliz é um clássico. No dia 1º de janeiro, toma-se soup joumou como símbolo da independência."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptador de tomada tipo A/B",
+     "Bateria externa e lanterna (apagões)",
+     "Repelente",
+     "Dinheiro de emergência (dólares)"
+    ],
+    "safetyAndEtiquette": [
+     "Não viaje nas condições atuais.",
+     "Peça permissão para tirar fotos e respeite as tradições do vodu."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "A",
+     "B"
+    ],
+    "voltage": "110V",
+    "frequency": "60Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Tomadas norte-americanas de pinos chatos (A/B) em 110V; você vai precisar de adaptador. Os apagões são muito frequentes."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "A água da torneira não é potável; use água engarrafada e lacrada. Há surtos de cólera.",
+    "vaccines": [
+     "Hepatite A e febre tifoide",
+     "Vacina contra cólera (avaliar em áreas com surtos)",
+     "Prevenção contra malária (consulte seu médico)",
+     "Vacinas de rotina"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "116"
+   },
+   "tipping": {
+    "custom": "A gorjeta não é obrigatória.",
+    "standardPercent": 10,
+    "rule": "optional",
+    "note": "Nos restaurantes, 10 % é suficiente; dê gorjeta à parte a motoristas e guias."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Sem restituição de IVA para turistas (TCA de 10 %)",
+    "minSpend": "Não se aplica",
+    "customsNote": "O Haiti não tem sistema de restituição de IVA (tax-free) para turistas. Exportar bens culturais exige autorização."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 2,00 - 5,00",
+    "topCarriers": [
+     "Digicel Haiti",
+     "Natcom"
+    ],
+    "airportSimTrapWarning": "Os chips da Digicel e da Natcom são comprados com passaporte; a rede cai com frequência por causa de ataques à infraestrutura, então tenha um plano de comunicação via satélite ou alternativo."
+   },
+   "touristScams": [
+    {
+     "title": "Sequestro",
+     "desc": "Estrangeiros e locais são sequestrados para pedido de resgate.",
+     "tip": "Não viaje; se for indispensável, conte com apoio de segurança profissional."
+    },
+    {
+     "title": "Barreira falsa",
+     "desc": "Barricadas de gangues para roubar veículos e pertences.",
+     "tip": "Evite deslocamentos por estrada."
+    },
+    {
+     "title": "Traslado falso",
+     "desc": "Pessoas no aeroporto que prometem um traslado seguro em troca de dinheiro vivo.",
+     "tip": "Organize os traslados apenas com uma instituição verificada previamente."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Гаитянский гурд (HTG) / доллар США",

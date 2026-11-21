@@ -1423,6 +1423,362 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Bolívar venezuelano (VES); o dólar em espécie é de uso comum",
+   "plugType": "Tipo A, B (120V, 60Hz)",
+   "bestMonths": "Dezembro a abril (estação seca); o Salto Ángel tem mais volume de água na época de chuvas, de junho a novembro",
+   "safety": {
+    "crimeRateSummary": "A Venezuela tem uma das maiores taxas de crimes violentos do mundo, com risco de assaltos à mão armada, sequestros e detenções arbitrárias. Há escassez de remédios e combustível, além de cortes de energia.",
+    "commonScams": [
+     "«Sequestro relâmpago» em táxis piratas (a vítima é obrigada a sacar dinheiro no caixa eletrônico)",
+     "Falsos funcionários, falsos taxistas e cobrança de propina («matraca») no aeroporto de Maiquetía",
+     "Notas falsas ou troco incompleto ao trocar moeda na rua"
+    ],
+    "safeTravelTips": [
+     "Os alertas oficiais desaconselham viagens à Venezuela; se a viagem for indispensável, conte com contatos de confiança e traslados combinados com antecedência.",
+     "Não circule à noite e não exiba celular nem joias.",
+     "Leve dólares suficientes em notas pequenas e prepare-se para quedas de energia e de internet."
+    ],
+    "emergencyNumbers": {
+     "police": "911",
+     "ambulance": "911",
+     "general": "911"
+    },
+    "safetyScore": 10,
+    "safetyLevel": "Zona de conflito (não viaje)",
+    "badgeColor": "bg-rose-600 text-white border-rose-700 dark:bg-rose-950 dark:text-rose-200"
+   },
+   "internet": {
+    "networkCoverage": "4G nas cidades, mas lento e instável; nas áreas rurais e nos parques nacionais muitas vezes não há sinal",
+    "costPerGbUsd": "US$ 2 - 5",
+    "esimAvailability": "Muito limitada",
+    "bestCarriers": [
+     "Movistar",
+     "Digitel",
+     "Movilnet"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Precário (Metrô de Caracas irregular; viagens intermunicipais inseguras)",
+    "costLevel": "Barato (combustível) a caro (traslados privados seguros)",
+    "singleTicketUsd": "US$ 0,10 - 0,50",
+    "dailyPassUsd": "Não disponível",
+    "popularRideApps": [
+     "Ridery",
+     "Yummy Rides"
+    ],
+    "taxiAdvice": "Nunca pegue táxi na rua; use apps locais como Ridery ou Yummy Rides ou motoristas providenciados pelo hotel."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 30 - 50",
+    "dailyBudgetMidrangeUsd": "US$ 80 - 150",
+    "budgetMealUsd": "US$ 5 - 10",
+    "coffeeUsd": "US$ 1 - 2,50",
+    "waterBottleUsd": "US$ 0,70 - 1,50",
+    "hostelDormUsd": "US$ 15 - 30 (posada)",
+    "hotel3StarUsd": "US$ 50 - 100",
+    "flightCostIndex": "Alto",
+    "flightTip": "As opções de voos internacionais são limitadas e mudam com frequência; confirme com a companhia aérea a situação das rotas para Caracas (CCS)."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "O cumprimento é com aperto de mão; entre conhecidos, é comum um beijo no rosto.",
+     "Política é um assunto delicado; evite discutir com desconhecidos.",
+     "Não fotografe instalações militares, postos de controle nem agentes públicos."
+    ],
+    "festivals": [
+     "Diablos Danzantes de Yare (Corpus Christi, UNESCO)",
+     "Carnaval de El Callao (UNESCO)",
+     "Feria de la Chinita (Maracaibo, novembro)"
+    ],
+    "lifestyle": "Sociedade calorosa, brincalhona e familiar; o beisebol, a salsa, a gaita e o preparo das hallacas em dezembro são centrais."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Parque Nacional Canaima e Salto Ángel",
+     "Arquipélago Los Roques",
+     "Tepui Roraima",
+     "Mérida e teleférico Mukumbarí",
+     "Parque Nacional Morrocoy",
+     "Coro e os Médanos de Coro (UNESCO)"
+    ],
+    "bestSeasons": "Dezembro a abril (estação seca); o Salto Ángel tem mais volume de água na época de chuvas, de junho a novembro",
+    "travelStyleTip": "Considere viajar só quando os alertas forem suspensos; se for, opte por pacotes (Canaima, Los Roques) com operadoras locais autorizadas e voos domésticos."
+   },
+   "religion": {
+    "primaryReligions": "Católicos ~70 %, protestantes/evangélicos ~17 %, outros e sem religião ~13 %",
+    "respectNorms": "Fique em silêncio nas igrejas e não fotografe durante a missa; cubra ombros e joelhos.",
+    "sacredSites": [
+     "Basílica de Nossa Senhora de Coromoto (Guanare)",
+     "Basílica da Chinita (Maracaibo)",
+     "Catedral de Caracas"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Espanhol (oficial); línguas indígenas também são reconhecidas (wayuu, warao, pemón etc.).",
+    "englishProficiency": "Baixo; fora do turismo, é preciso um espanhol básico.",
+    "phrases": [
+     {
+      "phrase": "¡Buenos días!",
+      "meaning": "Bom dia",
+      "translation": "Bom dia",
+      "pronunciation": "BUE-nos DI-as"
+     },
+     {
+      "phrase": "Gracias",
+      "meaning": "Obrigado(a)",
+      "translation": "Obrigado(a)",
+      "pronunciation": "GRA-ssias"
+     },
+     {
+      "phrase": "¿Qué más, pana?",
+      "meaning": "E aí, amigo? (expressão venezuelana)",
+      "translation": "E aí, amigo? (expressão venezuelana)",
+      "pronunciation": "ke MAS PA-na"
+     },
+     {
+      "phrase": "¿Cuánto cuesta?",
+      "meaning": "Quanto custa?",
+      "translation": "Quanto custa?",
+      "pronunciation": "KUAN-to KUES-ta"
+     },
+     {
+      "phrase": "¡Chévere!",
+      "meaning": "Legal!",
+      "translation": "Legal!",
+      "pronunciation": "TCHÊ-be-re"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Terra de povos indígenas, foi colônia espanhola a partir do século XVI. Com Simón Bolívar, declarou a independência em 1811 e se separou da Grã-Colômbia em 1830. O petróleo transformou o país no século XX; desde a década de 2010, vive uma profunda crise econômica e a emigração de milhões de pessoas.",
+    "milestones": [
+     "1811: declaração de independência (5 de julho)",
+     "1830: separação da Grã-Colômbia",
+     "1914: primeiro grande poço de petróleo (Zumaque I)",
+     "1960: membro fundador da OPEP"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Arepa (principalmente a reina pepiada)",
+     "Pabellón criollo",
+     "Cachapa com queso de mano"
+    ],
+    "traditionalDrinks": [
+     "Papelón con limón (bebida de rapadura com limão)",
+     "Rum venezuelano (Diplomático, Santa Teresa)",
+     "Chicha venezuelana"
+    ],
+    "streetFoodAndDesserts": [
+     "Tequeños",
+     "Empanadas de farinha de milho",
+     "Quesillo"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Simón Bolívar (o Libertador)",
+     "Gustavo Dudamel (maestro, El Sistema)",
+     "José Altuve (astro do beisebol)"
+    ],
+    "strongSectors": [
+     "Petróleo (maiores reservas comprovadas do mundo)",
+     "Mineração (ouro, bauxita, ferro)",
+     "Cacau (variedades célebres como Chuao)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "A economia é muito dolarizada: notas pequenas de dólar são a forma de pagamento mais útil. Cartões estrangeiros muitas vezes não funcionam; usam-se o Pago Móvil e o Zelle.",
+    "tippingCulture": "Os restaurantes costumam cobrar 10 % de serviço; uma pequena gorjeta extra em dólares é bem-vinda.",
+    "economicPillars": "Exportação de petróleo, mineração, agricultura e remessas da diáspora."
+   }
+  },
+  "itin": {
+   "routeName": "Tepuis e Caribe: Caracas, Canaima e Los Roques",
+   "routeSummary": "Roteiro de 9 dias para quando os alertas forem suspensos: de Caracas e El Ávila a Canaima, com a cachoeira mais alta do mundo, e às praias brancas de Los Roques. No momento, viajar não é recomendado.",
+   "totalDays": 9,
+   "idealDurationText": "Roteiro de 9 dias",
+   "bestSeason": "Dezembro a abril (estação seca); o Salto Ángel tem mais volume de água na época de chuvas, de junho a novembro",
+   "transportMode": "Voos domésticos (Caracas – Canaima, Caracas – Los Roques) + traslados privados combinados com antecedência",
+   "paceLevel": "Tranquilo (passeios organizados)",
+   "stops": [
+    {
+     "name": "Parada 1: Caracas e El Ávila (Waraira Repano)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Plaza Bolívar e Catedral",
+      "Teleférico Warairarepano",
+      "Casa Natal do Libertador"
+     ],
+     "activities": [
+      "Suba de teleférico ao El Ávila para ver a cidade e o Caribe.",
+      "Percorra o centro histórico de dia e com guia.",
+      "Tome o café da manhã em uma arepera."
+     ],
+     "foodAndDrinks": [
+      "Arepa (principalmente a reina pepiada)",
+      "Papelón con limón (bebida de rapadura com limão)",
+      "Tequeños"
+     ],
+     "criticalTips": [
+      "Vá do aeroporto para a cidade apenas com traslado combinado com antecedência.",
+      "Não ande pela rua à noite."
+     ],
+     "mapsQuery": "Plaza Bolívar, Caracas, Venezuela",
+     "stopNumber": 1
+    },
+    {
+     "name": "Parada 2: Canaima e Salto Ángel",
+     "recommendedDuration": "3-4 dias",
+     "durationBadge": "3-4 dias",
+     "highlights": [
+      "Salto Ángel, com 979 m (Kerepakupai Merú)",
+      "Laguna de Canaima e Salto Sapo",
+      "Auyán-tepui"
+     ],
+     "activities": [
+      "Suba os rios Carrao e Churún de curiara (canoa) até o salto.",
+      "Caminhe por trás do Salto Sapo.",
+      "Durma em rede em um acampamento pemón."
+     ],
+     "foodAndDrinks": [
+      "Frango assado na brasa com mandioca",
+      "Casabe (beiju de mandioca)"
+     ],
+     "criticalTips": [
+      "Só se chega em voo doméstico e com pacote turístico; confira a licença da operadora.",
+      "Há malária; faça a profilaxia e use repelente."
+     ],
+     "mapsQuery": "Canaima, Bolívar, Venezuela",
+     "stopNumber": 2
+    },
+    {
+     "name": "Parada 3: Arquipélago Los Roques",
+     "recommendedDuration": "3 dias",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Vilarejo e farol de Gran Roque",
+      "Língua de areia de Cayo de Agua",
+      "Cayos Francisquí e Madrisquí"
+     ],
+     "activities": [
+      "Percorra as ilhotas de lancha e faça snorkel.",
+      "Experimente o kitesurf ou a pesca de macabí.",
+      "Suba ao farol de Gran Roque ao pôr do sol."
+     ],
+     "foodAndDrinks": [
+      "Lagosta fresca (temporada: novembro a abril)",
+      "Rum venezuelano (Diplomático, Santa Teresa)"
+     ],
+     "criticalTips": [
+      "A taxa do parque é paga em dólares, em dinheiro vivo; não há caixas eletrônicos.",
+      "Os voos são em aviões pequenos; o limite de bagagem costuma ser de 10 kg."
+     ],
+     "mapsQuery": "Gran Roque, Los Roques, Venezuela",
+     "stopNumber": 3
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Arepa (principalmente a reina pepiada)",
+     "Pabellón criollo",
+     "Cachapa com queso de mano"
+    ],
+    "drinks": [
+     "Papelón con limón (bebida de rapadura com limão)",
+     "Rum venezuelano (Diplomático, Santa Teresa)",
+     "Chicha venezuelana"
+    ],
+    "streetFoods": [
+     "Tequeños",
+     "Empanadas de farinha de milho",
+     "Quesillo"
+    ],
+    "diningAdvice": "Confira os 10 % de serviço e tenha notas pequenas de dólar à mão."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Dólares em notas pequenas",
+     "Seus próprios remédios e kit de primeiros socorros (há escassez de medicamentos)",
+     "Carregador portátil e lanterna (quedas de energia)",
+     "Adaptador tipo A/B (120V)"
+    ],
+    "safetyAndEtiquette": [
+     "Os alertas oficiais desaconselham viagens à Venezuela; se a viagem for indispensável, conte com contatos de confiança e traslados combinados com antecedência.",
+     "Não circule à noite e não exiba celular nem joias.",
+     "Não fotografe instalações militares, postos de controle nem agentes públicos."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "A",
+     "B"
+    ],
+    "voltage": "120V",
+    "frequency": "60Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Tomadas americanas de pinos chatos (A) e com aterramento (B); como a rede é de 120V, confira se seus aparelhos são bivolt."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "A água da torneira não é potável, e o abastecimento é interrompido com frequência. Beba apenas água engarrafada.",
+    "vaccines": [
+     "Febre amarela (risco em muitas áreas; a vacinação é recomendada)",
+     "Hepatite A, febre tifoide e raiva",
+     "Vacinas de sarampo e difteria em dia",
+     "Profilaxia contra malária para Bolívar e Amazonas"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "911"
+   },
+   "tipping": {
+    "custom": "Nos restaurantes, os 10 % costumam vir incluídos; guias e motoristas recebem gorjeta em dólares.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "A gorjeta em notas pequenas de dólar é preferida à gorjeta em bolívares."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Não há (IVA de 16 %)",
+    "minSpend": "Não se aplica",
+    "customsNote": "Não há devolução de IVA para turistas. Respeite as regras de declaração na alfândega ao levar moeda estrangeira ou muito dinheiro vivo."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "US$ 2,00 - 5,00",
+    "topCarriers": [
+     "Movistar",
+     "Digitel",
+     "Movilnet"
+    ],
+    "airportSimTrapWarning": "As opções de eSIM são muito limitadas; compre um chip da Movistar ou da Digitel com o passaporte em uma loja oficial e evite intermediários no aeroporto."
+   },
+   "touristScams": [
+    {
+     "title": "Sequestro relâmpago",
+     "desc": "«Sequestro relâmpago» em táxis piratas (a vítima é obrigada a sacar dinheiro no caixa eletrônico)",
+     "tip": "Entre apenas em veículos chamados por aplicativo ou pelo hotel."
+    },
+    {
+     "title": "Falsos funcionários no aeroporto",
+     "desc": "Falsos funcionários, falsos taxistas e cobrança de propina («matraca») no aeroporto de Maiquetía",
+     "tip": "Entregue o passaporte apenas no balcão oficial e saiba o nome de quem vai buscar você."
+    },
+    {
+     "title": "Câmbio na rua",
+     "desc": "Notas falsas ou troco incompleto ao trocar moeda na rua",
+     "tip": "Pague em dólares; se precisar de bolívares, troque em bancos ou lugares de confiança."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Венесуэльский боливар (VES); в обиходе широко используются наличные доллары США",

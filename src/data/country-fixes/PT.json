@@ -1555,6 +1555,395 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Euro (EUR)",
+   "plugType": "Tipo C, F (230V, 50Hz)",
+   "bestMonths": "Abril a junho e setembro a outubro (clima ameno e mais tranquilo); de junho a setembro para as praias do Algarve",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "Um dos países mais seguros da Europa, com pouca criminalidade violenta. O principal risco são os batedores de carteira no elétrico (bonde) 28 de Lisboa, na Baixa, no Bairro Alto e no centro do Porto.",
+    "commonScams": [
+     "Vendedores de rua na Baixa e no Bairro Alto que oferecem drogas falsas a turistas",
+     "Pão, azeitonas e queijo (couvert) servidos sem pedir e depois cobrados",
+     "Caixas eletrônicos independentes (por exemplo, Euronet) com tarifas altas e conversão de moeda"
+    ],
+    "safeTravelTips": [
+     "Use caixas eletrônicos de bancos com o logotipo ‘Multibanco’ e sempre escolha pagar em EUR.",
+     "Devolva com educação o couvert que não quiser; se você não tocar nele, não é cobrado.",
+     "As ondas e correntes do Atlântico são fortes; só entre no mar em praias com salva-vidas e respeite as bandeiras."
+    ],
+    "emergencyNumbers": {
+     "police": "112",
+     "ambulance": "112",
+     "general": "112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "99 % de cobertura (4G/5G amplamente disponível)",
+    "costPerGbUsd": "~US$ 0,80 - 2,50",
+    "esimAvailability": "Excelente",
+    "bestCarriers": [
+     "MEO",
+     "NOS",
+     "Vodafone Portugal",
+     "DIGI Portugal"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Bom (metrôs de Lisboa e do Porto, trens da CP, ônibus intermunicipais)",
+    "costLevel": "Moderado",
+    "singleTicketUsd": "1.80 - 2.20 $ (Lisboa)",
+    "dailyPassUsd": "7.50 - 8.50 $ (Lisboa, 24 h)",
+    "popularRideApps": [
+     "Uber",
+     "Bolt",
+     "FREE NOW",
+     "Navegante",
+     "CP – Comboios de Portugal",
+     "Rede Expressos"
+    ],
+    "taxiAdvice": "O Uber e o Bolt são muito usados e têm preços acessíveis. Em Lisboa, use o cartão recarregável Navegante/Viva Viagem com saldo ‘zapping’; de Lisboa ao Porto são cerca de 3 horas no Alfa Pendular."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 50 - 75",
+    "dailyBudgetMidrangeUsd": "US$ 110 - 180",
+    "budgetMealUsd": "US$ 10 - 16",
+    "coffeeUsd": "US$ 1,00 - 2,00",
+    "waterBottleUsd": "US$ 0,60 - 1,50",
+    "hostelDormUsd": "US$ 22 - 40",
+    "hotel3StarUsd": "US$ 90 - 160",
+    "flightCostIndex": "Moderado (Istambul – Lisboa direto em ~4,5 h)",
+    "flightTip": "Há voos diretos de Istambul para Lisboa e Porto; uma passagem multidestinos (chegada em Lisboa, saída pelo Porto) facilita o roteiro. Faro (Algarve) fica mais caro no verão."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Os portugueses apreciam quando falam com eles em inglês ou com algumas palavras em português, em vez de espanhol.",
+     "Entre conhecidos, dão-se dois beijinhos; em contextos formais, aperto de mão.",
+     "As refeições são tardias e longas: almoço das 12h30 às 15h, jantar depois das 19h30.",
+     "Durante o fado, faz-se silêncio; é uma demonstração de respeito."
+    ],
+    "festivals": [
+     "Festas de Santo Antônio (junho, Lisboa – sardinhas e arraiais)",
+     "Festa de São João (23–24 de junho, Porto)",
+     "Peregrinações a Fátima (13 de maio e 13 de outubro)"
+    ],
+    "lifestyle": "Ritmo de vida tranquilo e hospitaleiro, pausas para o café (bica), mariscadas, fado e cultura do surfe."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Lisboa: Torre de Belém e Mosteiro dos Jerónimos",
+     "Lisboa: Alfama e Castelo de São Jorge",
+     "Sintra: Palácio da Pena e Quinta da Regaleira",
+     "Porto: Ribeira e Ponte Dom Luís I",
+     "Vinhedos do vale do Douro",
+     "Algarve: Ponta da Piedade e gruta de Benagil"
+    ],
+    "bestSeasons": "Primavera e outono para viagens urbanas; verão para o Algarve; o inverno é ameno e barato",
+    "travelStyleTip": "Desça de trem do Porto a Lisboa e termine no Algarve, onde alugar um carro facilita conhecer as vilas do litoral."
+   },
+   "religion": {
+    "primaryReligions": "Católicos ~80 %, sem religião ~14 %, outros cristãos ~3 %; pequenas comunidades muçulmana e judaica.",
+    "respectNorms": "Cubra ombros e joelhos nas igrejas; em Fátima, não atrapalhe o caminho dos peregrinos que avançam de joelhos.",
+    "sacredSites": [
+     "Santuário de Fátima",
+     "Mosteiro dos Jerónimos (Lisboa)",
+     "Bom Jesus do Monte (Braga)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Português (no nordeste, o mirandês também é reconhecido)",
+    "englishProficiency": "Muito bom; o inglês é muito difundido nas áreas turísticas e entre os jovens.",
+    "phrases": [
+     {
+      "phrase": "Olá / Bom dia",
+      "meaning": "Olá / Bom dia (cumprimento)",
+      "translation": "Olá",
+      "pronunciation": "o-LA / bong DEE-a"
+     },
+     {
+      "phrase": "Obrigado / Obrigada",
+      "meaning": "Obrigado (dito por homem) / Obrigada (dito por mulher)",
+      "translation": "Obrigado(a)",
+      "pronunciation": "o-bree-GA-doo / o-bree-GA-da"
+     },
+     {
+      "phrase": "Por favor",
+      "meaning": "Por favor",
+      "translation": "Por favor",
+      "pronunciation": "poor fa-VOR"
+     },
+     {
+      "phrase": "Quanto custa?",
+      "meaning": "Quanto custa? (pergunta de preço)",
+      "translation": "Quanto?",
+      "pronunciation": "KWAN-too KOOSH-ta"
+     },
+     {
+      "phrase": "A conta, por favor",
+      "meaning": "A conta, por favor (no restaurante)",
+      "translation": "A conta",
+      "pronunciation": "a KON-ta poor fa-VOR"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Portugal tornou-se um reino independente em 1143 e liderou a Era dos Descobrimentos nos séculos XV e XVI; Vasco da Gama abriu a rota marítima para a Índia em 1498. O terremoto de 1755 destruiu Lisboa, e em 1910 foi proclamada a república. Depois da Revolução dos Cravos (1974), veio a democracia, e em 1986 o país entrou na Comunidade Europeia.",
+    "milestones": [
+     "1143: Reconhecimento do Reino de Portugal",
+     "1498: Vasco da Gama chega à Índia",
+     "1755: Grande terremoto de Lisboa",
+     "1974: Revolução dos Cravos; 1986: entrada na CEE"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Bacalhau à Brás (bacalhau com batata palha e ovo)",
+     "Sardinhas assadas (sardinhas na brasa)",
+     "Francesinha (sanduíche de carnes com molho, típico do Porto)"
+    ],
+    "traditionalDrinks": [
+     "Vinho do Porto (vale do Douro)",
+     "Vinho Verde (vinho jovem e leve)",
+     "Ginjinha (licor de ginja)"
+    ],
+    "streetFoodAndDesserts": [
+     "Pastel de nata (pastel de creme)",
+     "Bifana (sanduíche de porco marinado)",
+     "Bola de Berlim (sonho recheado de creme, clássico de praia)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Vasco da Gama (navegador)",
+     "Fernando Pessoa (poeta)",
+     "Cristiano Ronaldo (jogador de futebol)"
+    ],
+    "strongSectors": [
+     "Turismo",
+     "Energias renováveis (eólica e solar)",
+     "Cortiça (maior produtor mundial), vinho, calçados e têxteis"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Cartões são comuns, mas cafés pequenos e tascas podem pedir dinheiro vivo ou cartão Multibanco; os moradores usam o MB WAY.",
+    "tippingCulture": "A gorjeta não é obrigatória; basta deixar 5–10 % ou arredondar a conta.",
+    "economicPillars": "Turismo, serviços, energias renováveis, exportações automotivas e têxteis, agricultura (vinho, azeite, cortiça)."
+   }
+  },
+  "itin": {
+   "routeName": "Portugal de norte a sul: Porto, Coimbra, Lisboa e Algarve",
+   "routeSummary": "Roteiro de 8 dias das caves de vinho do Porto, à beira do Douro, à cidade universitária de Coimbra, às colinas de Lisboa e aos palácios de Sintra, até as falésias douradas do Algarve.",
+   "totalDays": 8,
+   "idealDurationText": "8 dias",
+   "bestSeason": "Abril a junho, setembro a outubro",
+   "transportMode": "Trens da CP (Alfa Pendular / Intercidades), metrô e elétrico (bonde) em Lisboa e no Porto; carro alugado ou ônibus no Algarve",
+   "paceLevel": "Equilibrado (cidade + cultura + praia)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Porto (Ribeira e caves de vinho do Porto)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Ribeira e Ponte Dom Luís I",
+      "Azulejos da estação de São Bento",
+      "Livraria Lello e Torre dos Clérigos",
+      "Caves de vinho do Porto em Vila Nova de Gaia"
+     ],
+     "activities": [
+      "Veja o pôr do sol do tabuleiro superior da Ponte Dom Luís I.",
+      "Faça o cruzeiro das ‘seis pontes’ pelo Douro.",
+      "Se quiser, faça um bate-volta aos vinhedos do Douro."
+     ],
+     "foodAndDrinks": [
+      "Francesinha (sanduíche de carnes com molho, típico do Porto)",
+      "Vinho do Porto (vale do Douro)",
+      "Tripas à moda do Porto (ensopado de dobradinha)"
+     ],
+     "criticalTips": [
+      "A Livraria Lello exige ingresso; reserve o horário pela internet.",
+      "A cidade é muito íngreme; use calçado confortável e pegue o funicular dos Guindais."
+     ],
+     "mapsQuery": "Porto, Portugal"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Coimbra (cidade universitária histórica)",
+     "recommendedDuration": "1 dia",
+     "durationBadge": "1 dia",
+     "highlights": [
+      "Universidade de Coimbra e Biblioteca Joanina (UNESCO)",
+      "Sé Velha (catedral antiga)",
+      "Mosteiro de Santa Cruz"
+     ],
+     "activities": [
+      "À noite, ouça o fado de Coimbra (cantado por homens, tradição estudantil).",
+      "Passeie pelos parques à beira do rio Mondego.",
+      "Suba pelas vielas medievais até a colina da universidade."
+     ],
+     "foodAndDrinks": [
+      "Chanfana (cabra ensopada no vinho tinto)",
+      "Pastéis de Santa Clara (doces de amêndoa)"
+     ],
+     "criticalTips": [
+      "A Biblioteca Joanina tem entrada com horário marcado; compre cedo.",
+      "Fica na linha Porto – Lisboa; deixe a bagagem na estação e aproveite o dia."
+     ],
+     "mapsQuery": "Coimbra, Portugal"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Lisboa e Sintra",
+     "recommendedDuration": "3 dias",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Belém: Mosteiro dos Jerónimos e Torre de Belém",
+      "Alfama, Castelo de São Jorge e elétrico 28",
+      "Miradouros (Senhora do Monte, Santa Luzia)",
+      "Sintra: Palácio da Pena e Quinta da Regaleira"
+     ],
+     "activities": [
+      "Jante em uma casa de fado em Alfama.",
+      "Faça um passeio de trem a Sintra saindo do Rossio e siga até o Cabo da Roca.",
+      "Conheça a LX Factory e o Time Out Market."
+     ],
+     "foodAndDrinks": [
+      "Pastel de nata (pastel de creme)",
+      "Bacalhau à Brás (bacalhau com batata palha e ovo)",
+      "Ginjinha (licor de ginja)"
+     ],
+     "criticalTips": [
+      "O elétrico 28 é o preferido dos batedores de carteira; leve a bolsa na frente do corpo ou embarque cedo.",
+      "Compre pela internet o ingresso com horário para o Palácio da Pena; nos fins de semana de verão fica muito cheio."
+     ],
+     "mapsQuery": "Lisbon, Portugal"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Algarve (Lagos e falésias douradas)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Falésias da Ponta da Piedade",
+      "Gruta de Benagil (de barco ou caiaque)",
+      "Praia da Marinha",
+      "Sagres e Cabo de São Vicente"
+     ],
+     "activities": [
+      "Explore as grutas da Ponta da Piedade de caiaque, saindo de Lagos.",
+      "Percorra o Percurso dos Sete Vales Suspensos.",
+      "Veja o pôr do sol em Sagres ou faça uma aula de surfe."
+     ],
+     "foodAndDrinks": [
+      "Cataplana de frutos do mar (ensopado de frutos do mar na panela de cobre)",
+      "Sardinhas assadas (sardinhas na brasa)",
+      "Bola de Berlim (sonho recheado de creme, clássico de praia)"
+     ],
+     "criticalTips": [
+      "É proibido desembarcar na praia de Benagil; veja a gruta só a partir da água, com passeios autorizados.",
+      "O Atlântico é frio mesmo no verão (~19–21 °C); não chegue perto da borda das falésias."
+     ],
+     "mapsQuery": "Lagos, Portugal"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Bacalhau à Brás (bacalhau com batata palha e ovo)",
+     "Sardinhas assadas (sardinhas na brasa)",
+     "Francesinha (sanduíche de carnes com molho, típico do Porto)"
+    ],
+    "drinks": [
+     "Vinho do Porto (vale do Douro)",
+     "Vinho Verde (vinho jovem e leve)",
+     "Ginjinha (licor de ginja)"
+    ],
+    "streetFoods": [
+     "Pastel de nata (pastel de creme)",
+     "Bifana (sanduíche de porco marinado)",
+     "Bola de Berlim (sonho recheado de creme, clássico de praia)"
+    ],
+    "diningAdvice": "No almoço, o ‘prato do dia’ é muito em conta. O couvert é cobrado; devolva se não quiser. Peixes e frutos do mar são uma boa opção para quem evita carne de porco."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Calçado confortável e antiderrapante (a ‘calçada’ polida escorrega)",
+     "Tomadas tipo C/F (plugue europeu)",
+     "Corta-vento ou jaqueta leve (a brisa do Atlântico refresca à noite)",
+     "Protetor solar de fator alto e chapéu"
+    ],
+    "safetyAndEtiquette": [
+     "Ignore as ofertas de drogas na rua e continue andando.",
+     "Não tire selfies na beira das falésias; o terreno pode ceder."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "C",
+     "F"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": false,
+    "socketDesc": "Tomadas europeias C/F (Schuko) de dois pinos redondos, iguais às da Turquia; não é preciso adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "A água da torneira é potável e controlada em todo o país; em regiões como o Algarve ela é mais dura e pode ter outro sabor.",
+    "vaccines": [
+     "Vacinas de rotina (tríplice viral, tétano)"
+    ],
+    "insuranceRequired": true,
+    "emergencyAmbulance": "112"
+   },
+   "tipping": {
+    "custom": "A gorjeta não é obrigatória; nos restaurantes, basta deixar 5–10 % ou arredondar a conta.",
+    "standardPercent": 5,
+    "rule": "optional",
+    "note": "Nos cafés, é comum deixar umas moedas; no táxi, arredonde o valor."
+   },
+   "taxFree": {
+    "vatRefundPercent": "IVA de 23 % (continente; Madeira 22 %, Açores 16 %)",
+    "minSpend": "~61,50 € por nota fiscal",
+    "customsNote": "Residentes fora da UE recebem na loja um formulário Tax Free; valide os produtos sem uso em um quiosque e-Taxfree ou na alfândega dos aeroportos de Lisboa, Porto ou Faro antes de despachar a bagagem ao sair da UE."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 0,80 - 2,50",
+    "topCarriers": [
+     "MEO",
+     "NOS",
+     "Vodafone Portugal",
+     "DIGI Portugal"
+    ],
+    "airportSimTrapWarning": "Os balcões de chips turísticos do aeroporto são mais caros que as lojas da cidade; compre um chip da MEO, NOS, Vodafone ou da barata DIGI com passaporte na cidade, ou instale um eSIM antes. Chips turcos não têm roaming da UE."
+   },
+   "touristScams": [
+    {
+     "title": "Falsos vendedores de drogas",
+     "desc": "Vendedores de rua na Baixa e no Bairro Alto oferecem drogas falsas a turistas.",
+     "tip": "Não puxe conversa e continue andando; comprar drogas é ilegal."
+    },
+    {
+     "title": "Cobrança do couvert",
+     "desc": "Pão, azeitonas e queijo (couvert) que você não pediu são colocados na mesa e depois cobrados.",
+     "tip": "Devolva sem tocar se não quiser; o couvert que você consumir é cobrado."
+    },
+    {
+     "title": "Caixas eletrônicos independentes",
+     "desc": "Caixas eletrônicos independentes, como os da Euronet, cobram tarifas altas e conversão dinâmica.",
+     "tip": "Use caixas de bancos com o logotipo Multibanco e escolha a cobrança em euros."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Евро (EUR)",

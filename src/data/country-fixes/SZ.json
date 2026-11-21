@@ -1419,6 +1419,361 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Lilangeni (SZL); o rand sul-africano (ZAR) é aceito em todo lugar",
+   "plugType": "M, G (230V, 50Hz)",
+   "bestMonths": "Maio – setembro (inverno seco e fresco; ideal para ver a fauna)",
+   "safety": {
+    "crimeRateSummary": "Crimes graves contra turistas são raros, mas em Mbabane e Manzini há assaltos, roubos de bolsa e arrombamentos de carros. Às vezes ocorrem protestos políticos e greves.",
+    "commonScams": [
+     "Batedores de carteira nos pontos lotados de kombis (micro-ônibus)",
+     "Táxis particulares sem taxímetro que cobram tarifas infladas de turistas",
+     "Intermediários nas fronteiras que pedem dinheiro para 'agilizar' os trâmites"
+    ],
+    "safeTravelTips": [
+     "Não ande pelas cidades à noite e evite dirigir à noite (gado na pista, pouca iluminação).",
+     "Há risco de malária no lowveld oriental (Hlane, Mkhaya); use repelente.",
+     "Fique longe de manifestações e acompanhe o noticiário local."
+    ],
+    "emergencyNumbers": {
+     "police": "999",
+     "ambulance": "977",
+     "general": "999"
+    },
+    "safetyScore": 55,
+    "safetyLevel": "Risco moderado",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60"
+   },
+   "internet": {
+    "networkCoverage": "Bom 4G nas cidades e nas estradas principais (um pouco de 5G); irregular nas áreas rurais e montanhosas.",
+    "costPerGbUsd": "~US$ 2 - 5",
+    "esimAvailability": "Limitada (poucos planos de eSIM internacionais)",
+    "bestCarriers": [
+     "MTN Eswatini",
+     "Eswatini Mobile"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Limitado (micro-ônibus kombi e táxis particulares)",
+    "costLevel": "Econômico",
+    "singleTicketUsd": "US$ 0,80 - 2",
+    "dailyPassUsd": "Não há passe diário",
+    "popularRideApps": [
+     "Micro-ônibus kombi",
+     "Táxis chamados pelo hotel",
+     "Carro alugado"
+    ],
+    "taxiAdvice": "Não há Uber nem Bolt. Os táxis não têm taxímetro: combine o preço antes de entrar; alugar um carro (por exemplo, em Joanesburgo) é o mais prático para visitar os parques (a mão é inglesa, dirige-se pela esquerda)."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 35 - 55",
+    "dailyBudgetMidrangeUsd": "US$ 90 - 160",
+    "budgetMealUsd": "US$ 4 - 9",
+    "coffeeUsd": "US$ 1,50 - 3",
+    "waterBottleUsd": "US$ 0,60 - 1,20",
+    "hostelDormUsd": "US$ 15 - 25",
+    "hotel3StarUsd": "US$ 60 - 120",
+    "flightCostIndex": "Alto",
+    "flightTip": "Não há voos diretos; o mais fácil é voar até Joanesburgo e fazer conexão com a Eswatini Air até o aeroporto King Mswati III (SHO), ou seguir por estrada pela fronteira de Oshoek (~4 horas)."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Os cumprimentos são muito importantes; comece com 'Sawubona'.",
+     "Dê e receba as coisas com a mão direita; tocar o cotovelo direito com a mão esquerda demonstra respeito.",
+     "Evite comentários negativos sobre a família real e não fotografe cerimônias sem permissão.",
+     "Vista-se de forma discreta em aldeias e igrejas."
+    ],
+    "festivals": [
+     "Umhlanga (Dança dos Juncos) – agosto/setembro, Ludzidzini",
+     "Incwala (cerimônia real das primícias) – dezembro/janeiro",
+     "Festival de música e artes MTN Bushfire – maio/junho, Malkerns"
+    ],
+    "lifestyle": "Uma das últimas monarquias absolutas da África; as cerimônias reais, a vida rural e o artesanato (vidro, velas, cestaria) fazem parte do dia a dia. As pessoas são tranquilas, hospitaleiras e educadas."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Santuário de Vida Selvagem de Mlilwane",
+     "Parque Nacional Real de Hlane (leões e elefantes)",
+     "Reserva de Mkhaya (rinocerontes)",
+     "Reserva Natural de Malolotja e tirolesas",
+     "Aldeia Cultural e cachoeira de Mantenga",
+     "Rocha Sibebe (um dos maiores domos de granito do mundo)"
+    ],
+    "bestSeasons": "Maio – setembro (inverno seco e fresco; ideal para ver a fauna)",
+    "travelStyleTip": "O país é pequeno (~200 km); de carro alugado, dá para percorrê-lo em poucos dias, das terras altas do noroeste ao lowveld oriental. Combina bem com o Parque Kruger."
+   },
+   "religion": {
+    "primaryReligions": "Cristãos (~90 %; igrejas sionistas, protestantes, católicos), crenças tradicionais; pequena comunidade muçulmana",
+    "respectNorms": "Seja respeitoso e silencioso em missas e locais reais; assista a cerimônias e fotografe-as só onde for permitido.",
+    "sacredSites": [
+     "Aldeia Real de Ludzidzini (Lobamba)",
+     "Parque Memorial do Rei Sobhuza II (Lobamba)",
+     "Catedral de Nossa Senhora da Assunção, Manzini"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Suázi (siSwati) e inglês",
+    "englishProficiency": "Bom; o inglês é língua oficial e é falado nas cidades e nos hotéis.",
+    "phrases": [
+     {
+      "phrase": "Sawubona",
+      "meaning": "Olá (para uma pessoa)",
+      "translation": "Olá (para uma pessoa)",
+      "pronunciation": "sa-wu-BO-na"
+     },
+     {
+      "phrase": "Ngiyabonga",
+      "meaning": "Obrigado(a)",
+      "translation": "Obrigado(a)",
+      "pronunciation": "ngi-ya-BON-ga"
+     },
+     {
+      "phrase": "Ngicela",
+      "meaning": "Por favor / Eu gostaria",
+      "translation": "Por favor / Eu gostaria",
+      "pronunciation": "ngi-TSE-la"
+     },
+     {
+      "phrase": "Kumalini?",
+      "meaning": "Quanto custa?",
+      "translation": "Quanto custa?",
+      "pronunciation": "ku-ma-LI-ni"
+     },
+     {
+      "phrase": "Salakahle",
+      "meaning": "Tchau (dito por quem está indo embora)",
+      "translation": "Tchau (dito por quem está indo embora)",
+      "pronunciation": "sa-la-KA-hle"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "O reino suázi se estabeleceu em suas terras atuais com Ngwane III no século XVIII e se fortaleceu com Sobhuza I e Mswati II. Protetorado britânico desde 1903, tornou-se independente em 6 de setembro de 1968. O rei Sobhuza II reinou por 82 anos; Mswati III governa desde 1986. Em 2018, o nome do país mudou de Suazilândia para Essuatíni.",
+    "milestones": [
+     "~1745 – Os suázis se estabelecem na região com Ngwane III",
+     "1903 – Protetorado britânico",
+     "6 de setembro de 1968 – Independência",
+     "2018 – O país passa a se chamar Essuatíni"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Sishwala (angu grosso de milho com ensopado de carne ou de legumes)",
+     "Umncweba (carne seca, parecida com o biltong)",
+     "Emasi etinkhobe (leite azedo com milho pilado)"
+    ],
+    "traditionalDrinks": [
+     "Umcombotsi (cerveja tradicional de sorgo)",
+     "Emahewu (bebida fermentada de milho, sem álcool)",
+     "Buganu (bebida sazonal de fruta marula)"
+    ],
+    "streetFoodAndDesserts": [
+     "Espigas de milho assadas (mealies)",
+     "Vetkoek / fat cakes (massa frita)",
+     "Abacates e abacaxis frescos nos mercados"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Rei Sobhuza II (um dos monarcas com reinado mais longo)",
+     "Sibusiso Vilane (primeiro africano negro a chegar ao cume do Everest, 2003)",
+     "Richard E. Grant (ator criado em Mbabane)"
+    ],
+    "strongSectors": [
+     "Cana-de-açúcar e açúcar",
+     "Concentrado de refrigerantes e indústria leve (Matsapha)",
+     "Silvicultura e turismo de artesanato"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "O lilangeni é atrelado ao rand, e o rand é aceito em todo lugar (o lilangeni não é aceito na África do Sul: gaste antes de sair). Cartão nas cidades; dinheiro vivo nas áreas rurais e nos mercados.",
+    "economicPillars": "Açúcar, concentrado de refrigerantes, têxteis, silvicultura, comércio com a África do Sul e receitas da União Aduaneira da África Austral (SACU).",
+    "tippingCulture": "Nos restaurantes, 10 % é o habitual; pequenas gorjetas para guias de safári e frentistas."
+   }
+  },
+  "itin": {
+   "routeName": "Roteiro pelo Reino de Essuatíni: Ezulwini, Malkerns e o Lowveld",
+   "routeSummary": "Roteiro compacto de 6 dias: cultura real e trilhas no montanhoso vale de Ezulwini, ateliês de artesanato em Malkerns e safáris em Hlane e Mkhaya, no leste.",
+   "totalDays": 6,
+   "idealDurationText": "Roteiro de 5-7 dias",
+   "bestSeason": "Maio – setembro (inverno seco e fresco; ideal para ver a fauna)",
+   "transportMode": "Carro alugado (mão inglesa) ou tour com traslados; kombis só entre cidades",
+   "paceLevel": "Tranquilo (cultura, natureza e safári)",
+   "stops": [
+    {
+     "name": "Parada 1: Mbabane e vale de Ezulwini (cultura real)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Aldeia Cultural e cachoeira de Mantenga",
+      "Santuário de Vida Selvagem de Mlilwane",
+      "Lobamba: Museu Nacional e Parque Memorial Sobhuza II",
+      "Rocha Sibebe"
+     ],
+     "activities": [
+      "Assista à apresentação de dança tradicional suázi em Mantenga.",
+      "Percorra Mlilwane de bicicleta ou a cavalo entre zebras e antílopes.",
+      "Suba a Rocha Sibebe com guia."
+     ],
+     "foodAndDrinks": [
+      "Sishwala com ensopado de carne",
+      "Churrasco no restaurante Hippo Haunt, em Mlilwane",
+      "Cerveja Sibebe"
+     ],
+     "criticalTips": [
+      "Se for durante o Umhlanga (ago/set), reserve a hospedagem com meses de antecedência.",
+      "Não ande à noite em Mbabane; não deixe objetos de valor no carro."
+     ],
+     "mapsQuery": "Ezulwini Valley, Eswatini",
+     "stopNumber": 1
+    },
+    {
+     "name": "Parada 2: Vale de Malkerns (artesanato e música)",
+     "recommendedDuration": "1 dia",
+     "durationBadge": "1 dia",
+     "highlights": [
+      "Ateliê da Swazi Candles",
+      "Espaço artístico House on Fire (sede do festival Bushfire)",
+      "Cooperativa de cestaria Gone Rural"
+     ],
+     "activities": [
+      "Veja como são feitas as velas artesanais em forma de animais.",
+      "Compre cestos e tecidos de cooperativas de mulheres.",
+      "Faça um passeio de carro entre as plantações de abacaxi."
+     ],
+     "foodAndDrinks": [
+      "Cozinha com ingredientes locais no restaurante Malandela's",
+      "Abacaxi fresco e sucos"
+     ],
+     "criticalTips": [
+      "Ingressos e camas para o Bushfire (maio/junho) esgotam rápido.",
+      "Os ateliês aceitam cartão, mas leve dinheiro para as barracas pequenas."
+     ],
+     "mapsQuery": "Malkerns, Eswatini",
+     "stopNumber": 2
+    },
+    {
+     "name": "Parada 3: Hlane e Mkhaya (safári no lowveld)",
+     "recommendedDuration": "2-3 dias",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Leões, elefantes e rinocerontes-brancos em Hlane",
+      "Rastreamento de rinocerontes a pé em Mkhaya",
+      "Vista dos montes Lubombo"
+     ],
+     "activities": [
+      "Faça um safári guiado ao amanhecer em Hlane.",
+      "Entre em Mkhaya só com traslado guiado reservado.",
+      "Observe os animais no bebedouro ao entardecer."
+     ],
+     "foodAndDrinks": [
+      "Braai (churrasco) ao redor da fogueira",
+      "Umncweba (carne seca) como petisco"
+     ],
+     "criticalTips": [
+      "Área com risco de malária; consulte seu médico sobre profilaxia.",
+      "Não desça do veículo nos parques; siga as orientações do guia."
+     ],
+     "mapsQuery": "Hlane Royal National Park, Eswatini",
+     "stopNumber": 3
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Sishwala",
+     "Umncweba (carne seca)",
+     "Emasi etinkhobe"
+    ],
+    "drinks": [
+     "Umcombotsi (cerveja de sorgo)",
+     "Emahewu",
+     "Cerveja Sibebe"
+    ],
+    "streetFoods": [
+     "Espigas de milho assadas",
+     "Vetkoek / fat cakes"
+    ],
+    "diningAdvice": "Experimente a comida local nos restaurantes de Mantenga e Mlilwane ou nas barracas do mercado; deixe 10 % de gorjeta."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptador tipo M (três pinos redondos grossos)",
+     "Fleece ou casaco para as noites de inverno (frio nas terras altas)",
+     "Repelente e, se recomendado, antimaláricos",
+     "Binóculos e protetor solar"
+    ],
+    "safetyAndEtiquette": [
+     "Seja respeitoso com a família real e com as cerimônias.",
+     "Não dirija à noite; é comum haver gado solto na estrada."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "M",
+     "G"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Principalmente tomadas tipo M, como na África do Sul (três pinos redondos grossos); em prédios novos, também tipo G. Plugues europeus não encaixam diretamente."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "A água da rede é tratada nas cidades, mas recomenda-se beber água mineral ou fervida.",
+    "vaccines": [
+     "Hepatite A e febre tifoide",
+     "Vacinas de rotina (tétano-difteria, sarampo)",
+     "Profilaxia contra malária para o lowveld oriental",
+     "Febre amarela: certificado só se você chegar de um país de risco"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "977"
+   },
+   "tipping": {
+    "custom": "Nos restaurantes, espera-se cerca de 10 %; pequenas gorjetas para guias e frentistas.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "É comum deixar para o guia de safári uma pequena quantia diária por pessoa (por exemplo, 50-100 lilangeni)."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Não há devolução de IVA para turistas (IVA de 15 %)",
+    "minSpend": "—",
+    "customsNote": "Essuatíni não tem sistema tax-free para turistas. Respeite as regras alfandegárias ao entrar na África do Sul; peça documentos se o artesanato tiver produtos de origem animal."
+   },
+   "connectivity": {
+    "esimRecommended": false,
+    "avgGbPriceUsd": "US$ 2 - 5",
+    "topCarriers": [
+     "MTN Eswatini",
+     "Eswatini Mobile"
+    ],
+    "airportSimTrapWarning": "Há poucas eSIMs internacionais, e são caras; um chip local da MTN, comprado com passaporte, sai mais barato. Se você tiver chip sul-africano, confira o roaming."
+   },
+   "touristScams": [
+    {
+     "title": "Táxi sem taxímetro",
+     "desc": "Táxis particulares podem cobrar de turistas várias vezes o preço local.",
+     "tip": "Combine o preço antes ou peça o táxi pelo hotel."
+    },
+    {
+     "title": "Falsos 'ajudantes' na fronteira",
+     "desc": "Em postos como Oshoek, há quem ofereça preencher formulários ou furar a fila em troca de dinheiro.",
+     "tip": "Trate apenas com os guichês oficiais; não pague se não houver taxa oficial."
+    },
+    {
+     "title": "Furtos em carros estacionados",
+     "desc": "Bolsas à vista em centros urbanos e mirantes podem ser roubadas.",
+     "tip": "Guarde tudo no porta-malas e use estacionamentos vigiados."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Лилангени (SZL); южноафриканский рэнд (ZAR) принимают везде",

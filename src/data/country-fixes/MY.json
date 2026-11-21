@@ -1563,6 +1563,397 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Ringgit malaio (MYR)",
+   "plugType": "Tipo G (230V, 50Hz)",
+   "bestMonths": "Dezembro – abril (costa oeste: Penang, Langkawi) · março – setembro (costa leste e Bornéu); de novembro a fevereiro é época de monções na costa leste",
+   "safety": {
+    "safetyScore": 65,
+    "safetyLevel": "Seguro",
+    "badgeColor": "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-950/40 dark:text-teal-300 dark:border-teal-900/60",
+    "crimeRateSummary": "No geral é um país seguro; em Kuala Lumpur e Johor Bahru acontecem roubos de bolsa por motoqueiros e há batedores de carteira em áreas movimentadas. Existem alertas oficiais para as ilhas do leste de Sabah.",
+    "commonScams": [
+     "Táxis em KL Sentral e Bukit Bintang que se recusam a usar o taxímetro e cobram tarifas fixas infladas",
+     "O clássico golpe do \"jogo de cartas\": um morador simpático convida você para ir à casa dele e o envolve numa partida armada",
+     "Golpistas por telefone ou WhatsApp que se passam por polícia, banco ou empresa de entregas"
+    ],
+    "safeTravelTips": [
+     "Use o Grab para se locomover; o trem KLIA Ekspres é o jeito mais rápido de ir do aeroporto à cidade.",
+     "Carregue a bolsa do lado oposto à rua e não fique segurando o celular na beira da calçada.",
+     "Antes de ir às ilhas do leste de Sabah (região de Semporna), confira os alertas oficiais em vigor."
+    ],
+    "emergencyNumbers": {
+     "police": "999",
+     "ambulance": "999",
+     "general": "999 / 112"
+    }
+   },
+   "internet": {
+    "networkCoverage": "95%+ (4G / 5G)",
+    "costPerGbUsd": "US$ 0,30 - 1,00",
+    "esimAvailability": "Muito boa (eSIMs locais pré-pagas e internacionais)",
+    "bestCarriers": [
+     "CelcomDigi",
+     "Maxis / Hotlink",
+     "U Mobile",
+     "Unifi Mobile"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Boa (LRT/MRT/monotrilho em KL; trens intermunicipais ETS e ônibus confortáveis)",
+    "costLevel": "Barato",
+    "singleTicketUsd": "US$ 0,30 - 1,50",
+    "dailyPassUsd": "US$ 1,30 - 3,00",
+    "popularRideApps": [
+     "Grab",
+     "AirAsia MOVE",
+     "inDrive"
+    ],
+    "taxiAdvice": "O Grab funciona em quase toda KL e é mais barato que o táxi de rua. Se pegar um táxi, exija o taxímetro; no aeroporto, use os balcões de cupom pré-pago (teksi bajet)."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 30 - 45",
+    "dailyBudgetMidrangeUsd": "US$ 70 - 120",
+    "budgetMealUsd": "US$ 2 - 5",
+    "coffeeUsd": "US$ 1 - 4",
+    "waterBottleUsd": "US$ 0,30 - 0,60",
+    "hostelDormUsd": "US$ 8 - 18",
+    "hotel3StarUsd": "US$ 35 - 70",
+    "flightCostIndex": "Moderado (voos diretos de Istambul)",
+    "flightTip": "Há voos diretos de Istambul para Kuala Lumpur; de KL, a AirAsia oferece conexões domésticas baratas para Penang, Langkawi e Bornéu."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Um aperto de mão suave basta; com mulheres malaias, espere que elas estendam a mão primeiro.",
+     "Use a mão direita para comer e entregar coisas; aponte com o polegar, não com o indicador.",
+     "Tire os sapatos ao entrar em casas, mesquitas e templos.",
+     "Vista-se de forma discreta em estados conservadores como Kelantan e Terengganu; demonstrações de afeto em público são malvistas."
+    ],
+    "festivals": [
+     "Hari Raya Aidilfitri (fim do Ramadã, com a tradição de \"casa aberta\")",
+     "Ano-Novo Chinês (janeiro–fevereiro; lanternas e danças do leão em Penang e KL)",
+     "Thaipusam (janeiro–fevereiro; centenas de milhares de peregrinos hindus caminham até as Cavernas de Batu)"
+    ],
+    "lifestyle": "Uma sociedade multicultural onde convivem as culturas malaia, chinesa e indiana; o dia a dia gira em torno dos mercados noturnos (pasar malam), dos restaurantes \"mamak\" abertos 24 horas e dos shoppings com ar-condicionado."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Torres Petronas e Skybridge (Kuala Lumpur)",
+     "Cavernas de Batu e a estátua dourada de Murugan",
+     "Cidade histórica de George Town e sua arte de rua (Penang, UNESCO)",
+     "Cidade histórica de Malaca (UNESCO)",
+     "Plantações de chá de Cameron Highlands",
+     "Arquipélago de Langkawi e Sky Bridge",
+     "Monte Kinabalu e florestas de Bornéu (Sabah)"
+    ],
+    "bestSeasons": "Dezembro – abril (costa oeste: Penang, Langkawi) · março – setembro (costa leste e Bornéu); de novembro a fevereiro é época de monções na costa leste",
+    "travelStyleTip": "Na península, os trens ETS e os ônibus são o mais prático; para Bornéu e as ilhas, voos domésticos. Use Kuala Lumpur como base e suba até Penang ou desça até Malaca."
+   },
+   "religion": {
+    "primaryReligions": "Islã (~64%, religião oficial), budismo (~19%), cristianismo (~9%), hinduísmo (~6%)",
+    "respectNorms": "Nas mesquitas é preciso cobrir ombros e joelhos; as mulheres recebem uma túnica emprestada na entrada. No Ramadã, seja discreto ao comer ou beber em público durante o dia. Nos templos hindus, entra-se descalço.",
+    "sacredSites": [
+     "Masjid Negara (Mesquita Nacional, Kuala Lumpur)",
+     "Templo de Murugan nas Cavernas de Batu",
+     "Templo budista Kek Lok Si (Penang)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "O malaio (Bahasa Melayu) é a língua oficial; inglês, mandarim/cantonês e tâmil são muito falados.",
+    "englishProficiency": "Muito bom; nas cidades e áreas turísticas dá para se comunicar em inglês sem problema.",
+    "phrases": [
+     {
+      "phrase": "Apa khabar?",
+      "meaning": "Como vai?",
+      "translation": "Como vai? (lit. \"Quais as notícias?\")",
+      "pronunciation": "a-pa kha-bar"
+     },
+     {
+      "phrase": "Terima kasih",
+      "meaning": "Obrigado",
+      "translation": "Obrigado",
+      "pronunciation": "te-ri-ma ka-sih"
+     },
+     {
+      "phrase": "Berapa harga ini?",
+      "meaning": "Quanto custa isto?",
+      "translation": "Qual é o preço?",
+      "pronunciation": "be-ra-pa har-ga i-ni"
+     },
+     {
+      "phrase": "Kurang pedas, ya",
+      "meaning": "Menos apimentado, por favor",
+      "translation": "Não tão apimentado, tá?",
+      "pronunciation": "ku-rang pe-das, ya"
+     },
+     {
+      "phrase": "Di mana tandas?",
+      "meaning": "Onde fica o banheiro?",
+      "translation": "Onde fica o banheiro?",
+      "pronunciation": "di ma-na tan-das"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "O Sultanato de Malaca, fundado no século XV, transformou a região num centro comercial; depois do domínio português, holandês e britânico, o país conquistou a independência em 1957, e em 1963 nasceu a Malásia, com a incorporação de Sabah e Sarawak.",
+    "milestones": [
+     "c. 1400: fundação do Sultanato de Malaca",
+     "1511: conquista portuguesa de Malaca",
+     "1957: independência da Federação Malaia",
+     "1963: criação da Malásia com Sabah e Sarawak"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Nasi Lemak (arroz de coco com sambal, anchovas e amendoim)",
+     "Char Kway Teow (talharim de arroz salteado no wok, estilo Penang)",
+     "Laksa (sopa de macarrão picante com curry de coco ou azeda, estilo Assam)"
+    ],
+    "traditionalDrinks": [
+     "Teh Tarik (chá com leite \"puxado\" e espumante)",
+     "Ipoh White Coffee (café torrado com margarina e leite condensado)",
+     "Air Bandung (leite gelado com xarope de rosas)"
+    ],
+    "streetFoodAndDesserts": [
+     "Roti Canai (pão folhado com curry de lentilha)",
+     "Satay (espetinhos de frango ou carne com molho de amendoim)",
+     "Cendol (raspadinha de gelo com gelatina de pandan e açúcar de palma)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Tunku Abdul Rahman (líder da independência e primeiro primeiro-ministro)",
+     "Michelle Yeoh (atriz vencedora do Oscar)",
+     "Lee Chong Wei (lendário jogador de badminton)"
+    ],
+    "strongSectors": [
+     "Montagem e teste de semicondutores (um dos principais polos do mundo)",
+     "Produção de óleo de palma e borracha",
+     "Petróleo e GNL (Petronas)"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Cartões e pagamento por aproximação são comuns nas cidades; DuitNow QR e Touch 'n Go eWallet são muito usados. Leve ringgit em espécie para mercados noturnos e barracas de rua.",
+    "tippingCulture": "Gorjeta não é esperada; as contas costumam incluir 10% de serviço mais 6% de SST.",
+    "economicPillars": "Exportação de produtos elétricos e eletrônicos, petróleo e gás, óleo de palma, turismo e serviços."
+   }
+  },
+  "itin": {
+   "routeName": "Clássicos da Malásia: Kuala Lumpur, Cameron Highlands, Penang e Langkawi",
+   "routeSummary": "Uma rota de 10 dias rumo ao norte a partir de Kuala Lumpur: colinas de chá com clima fresco, a comida de rua de Penang, cidade Patrimônio da UNESCO, e o encerramento nas praias de Langkawi.",
+   "totalDays": 10,
+   "idealDurationText": "Roteiro de 10 dias",
+   "bestSeason": "Dezembro – abril (costa oeste: Penang, Langkawi) · março – setembro (costa leste e Bornéu); de novembro a fevereiro é época de monções na costa leste",
+   "transportMode": "Trem ETS / ônibus intermunicipal + balsa Penang – Langkawi; voo doméstico Langkawi – Kuala Lumpur na volta",
+   "paceLevel": "Equilibrado (cidade, natureza e praia)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Kuala Lumpur",
+     "recommendedDuration": "3 dias (cidade e Cavernas de Batu)",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Torres Petronas e Skybridge",
+      "Cavernas de Batu (272 degraus coloridos)",
+      "Praça Merdeka e edifício Sultan Abdul Samad",
+      "Rua gastronômica Jalan Alor"
+     ],
+     "activities": [
+      "Suba os degraus das Cavernas de Batu logo cedo.",
+      "Aprecie o skyline do Skybridge das Petronas ou da KL Tower.",
+      "À noite, prove comida de rua em Bukit Bintang e na Jalan Alor."
+     ],
+     "foodAndDrinks": [
+      "Nasi Lemak",
+      "Roti Canai",
+      "Teh Tarik"
+     ],
+     "criticalTips": [
+      "O Skybridge das Petronas fecha às segundas; compre os ingressos online com antecedência.",
+      "Nas Cavernas de Batu, cubra ombros e joelhos e não mostre comida aos macacos."
+     ],
+     "mapsQuery": "Kuala Lumpur, Malaysia"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Cameron Highlands",
+     "recommendedDuration": "2 dias (colinas de chá)",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Plantação de chá BOH Sungei Palas",
+      "Floresta de musgo (Mossy Forest)",
+      "Vilarejo de Tanah Rata",
+      "Fazendas de morango"
+     ],
+     "activities": [
+      "Caminhe entre as plantações e faça uma pausa numa casa de chá.",
+      "Faça uma visita guiada à Mossy Forest.",
+      "Colha seus próprios morangos numa fazenda."
+     ],
+     "foodAndDrinks": [
+      "Steamboat (panela quente na mesa)",
+      "Chá BOH com scones",
+      "Sobremesas de morango"
+     ],
+     "criticalTips": [
+      "À noite a temperatura pode cair abaixo de 15 °C; leve um fleece ou jaqueta.",
+      "Nos fins de semana lota de turistas locais; prefira os dias úteis."
+     ],
+     "mapsQuery": "Tanah Rata, Cameron Highlands, Malaysia"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: George Town (Penang)",
+     "recommendedDuration": "3 dias (comida de rua e patrimônio da UNESCO)",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Centro histórico (UNESCO) e arte de rua (Armenian Street)",
+      "Templo Kek Lok Si",
+      "Penang Hill",
+      "Casa do clã Khoo Kongsi e cais dos clãs"
+     ],
+     "activities": [
+      "Percorra a rota dos murais a pé ou de bicicleta.",
+      "Suba de funicular a Penang Hill para ver o pôr do sol.",
+      "Jante no hawker centre da New Lane ou da Gurney Drive."
+     ],
+     "foodAndDrinks": [
+      "Char Kway Teow",
+      "Assam Laksa",
+      "Cendol"
+     ],
+     "criticalTips": [
+      "Deixe museus e visitas em locais fechados para o calor do meio-dia (12h–15h).",
+      "Nos hawker centres, faça o pedido informando o número da mesa; em geral paga-se em dinheiro na entrega."
+     ],
+     "mapsQuery": "George Town, Penang, Malaysia"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: Langkawi",
+     "recommendedDuration": "2 dias (praia e natureza)",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Teleférico SkyCab e Sky Bridge",
+      "Praia de Pantai Cenang",
+      "Manguezais do Geoparque Kilim Karst"
+     ],
+     "activities": [
+      "Suba de teleférico ao monte Machinchang e atravesse a Sky Bridge.",
+      "Faça um passeio de barco pelos manguezais para ver águias e cavernas.",
+      "Curta o pôr do sol em Pantai Cenang."
+     ],
+     "foodAndDrinks": [
+      "Ikan bakar (peixe grelhado)",
+      "Nasi campur",
+      "Água de coco fresca"
+     ],
+     "criticalTips": [
+      "Quase não há transporte público; use o Grab ou alugue um carro.",
+      "A balsa Penang – Langkawi pode ser cancelada por mau tempo; confirme os horários na véspera."
+     ],
+     "mapsQuery": "Langkawi, Kedah, Malaysia"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Nasi Lemak (arroz de coco com sambal, anchovas e amendoim)",
+     "Char Kway Teow (talharim de arroz salteado no wok, estilo Penang)",
+     "Laksa (sopa de macarrão picante com curry de coco ou azeda, estilo Assam)"
+    ],
+    "drinks": [
+     "Teh Tarik (chá com leite \"puxado\" e espumante)",
+     "Ipoh White Coffee (café torrado com margarina e leite condensado)",
+     "Air Bandung (leite gelado com xarope de rosas)"
+    ],
+    "streetFoods": [
+     "Roti Canai (pão folhado com curry de lentilha)",
+     "Satay (espetinhos de frango ou carne com molho de amendoim)",
+     "Cendol (raspadinha de gelo com gelatina de pandan e açúcar de palma)"
+    ],
+    "diningAdvice": "Os hawker centres e os restaurantes mamak são os mais baratos e os mais saborosos; procure o selo \"halal\", já que a carne de porco é comum nas barracas chinesas."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptador de tomada tipo G",
+     "Capa de chuva leve ou guarda-chuva (pancadas de chuva à tarde)",
+     "Repelente de mosquitos",
+     "Casaquinho leve para ônibus e shoppings com ar-condicionado"
+    ],
+    "safetyAndEtiquette": [
+     "Em mesquitas e templos, cubra ombros e joelhos e tire os sapatos.",
+     "Carregue a bolsa do lado da calçada (risco de roubo por motoqueiros)."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G"
+    ],
+    "voltage": "230V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Tomadas britânicas tipo G (três pinos retangulares); plugues turcos não encaixam, então leve um adaptador tipo G."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": false,
+    "tapWaterDesc": "A água da torneira é tratada, mas os encanamentos antigos fazem com que ela não seja potável direto da torneira; beba água mineral ou filtrada — a fervida é segura.",
+    "vaccines": [
+     "Vacinas de rotina (tríplice viral, tétano)",
+     "Hepatite A",
+     "Febre tifoide",
+     "Encefalite japonesa (estadias longas em áreas rurais)",
+     "Certificado de febre amarela só se você vier de um país de risco"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "999"
+   },
+   "tipping": {
+    "custom": "Gorjeta não é esperada; as contas de restaurante costumam incluir 10% de serviço mais 6% de SST.",
+    "standardPercent": 0,
+    "rule": "optional",
+    "note": "Se o serviço já estiver incluído, não precisa dar mais; alguns ringgit para carregadores de malas ou guias são um gesto simpático."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Não há",
+    "minSpend": "Não há",
+    "customsNote": "A Malásia não restitui o IVA/SST a turistas (o Tourist Refund Scheme acabou em 2018). Langkawi e Labuan são ilhas duty-free; ao sair delas, respeite as cotas de bebidas alcoólicas e cigarros."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 0,30 - 1,00",
+    "topCarriers": [
+     "CelcomDigi",
+     "Maxis / Hotlink",
+     "U Mobile",
+     "Unifi Mobile"
+    ],
+    "airportSimTrapWarning": "Os balcões das operadoras no KLIA têm preços oficiais, mas os pacotes para turistas podem custar mais do que na cidade; compre antes uma eSIM da CelcomDigi ou da Hotlink, ou um chip na 7-Eleven."
+   },
+   "touristScams": [
+    {
+     "title": "Táxis sem taxímetro",
+     "desc": "Táxis em KL Sentral e Bukit Bintang que não usam o taxímetro e cobram tarifas fixas infladas.",
+     "tip": "Use o Grab; no aeroporto, pegue táxi com cupom (teksi bajet) ou o trem KLIA Ekspres."
+    },
+    {
+     "title": "Golpe do jogo de cartas",
+     "desc": "Um morador simpático convida você para a casa dele e o arrasta para um jogo de apostas armado.",
+     "tip": "Recuse com educação convites de desconhecidos e nunca jogue a dinheiro."
+    },
+    {
+     "title": "Falsas ligações da polícia/banco",
+     "desc": "Pessoas que dizem ser da polícia, do banco ou de uma empresa de entregas pedem pagamentos por telefone ou WhatsApp.",
+     "tip": "Nunca faça pagamentos por telefone; na dúvida, ligue para o 999 ou diretamente para a instituição."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Малайзийский ринггит (MYR)",

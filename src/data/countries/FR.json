@@ -5,7 +5,8 @@
     "en": "France",
     "de": "Frankreich",
     "ru": "Франция",
-    "es": "Francia"
+    "es": "Francia",
+    "pt": "França"
   },
   "capital": {
     "value": "Paris",
@@ -192,7 +193,8 @@
       "en": "Exercise increased caution (Level 2); stay vigilant in crowded tourist landmarks and transport hubs",
       "de": "Erhöhte Aufmerksamkeit (Stufe 2); Taschendiebstahl an touristischen Schwerpunkten beachten",
       "ru": "Повышенные меры предосторожности (Уровень 2); карманные кражи в людных местах",
-      "es": "Precaución incrementada (Nivel 2); atención a carteristas en zonas turísticas concurridas"
+      "es": "Precaución incrementada (Nivel 2); atención a carteristas en zonas turísticas concurridas",
+      "pt": "Cautela redobrada (Nível 2); atenção aos batedores de carteira em áreas turísticas movimentadas"
     },
     "regional_warnings": [],
     "risk_categories": {
@@ -354,7 +356,8 @@
         "en": "Eiffel Tower & Champ de Mars",
         "de": "Eiffelturm & Champ de Mars",
         "ru": "Эйфелева башня",
-        "es": "Torre Eiffel"
+        "es": "Torre Eiffel",
+        "pt": "Torre Eiffel"
       },
       "type": "landmark",
       "sources": [
@@ -384,7 +387,8 @@
           "en": "Eiffel Tower viewed across Champ de Mars in Paris",
           "de": "Eiffelturm mit Blick über das Champ de Mars in Paris",
           "ru": "Вид на Эйфелеву башню и Марсово поле в Париже",
-          "es": "Torre Eiffel vista desde el Campo de Marte en París"
+          "es": "Torre Eiffel vista desde el Campo de Marte en París",
+          "pt": "Torre Eiffel vista do Campo de Marte, em Paris"
         },
         "recognizability_checked": true
       }
@@ -396,21 +400,24 @@
       "en": "france",
       "de": "frankreich",
       "ru": "frantsiya",
-      "es": "francia"
+      "es": "francia",
+      "pt": "franca"
     },
     "title": {
       "tr": "Fransa Vize, Seyahat ve Tatil Rehberi 2026 | Vizamigo",
       "en": "France Visa, Travel & Entry Guide 2026 | Vizamigo",
       "de": "Frankreich Visum, Einreise & Reiseführer 2026 | Vizamigo",
       "ru": "Франция: виза, правила въезда и гид 2026 | Vizamigo",
-      "es": "Guía de Viaje, Visas y Consejos para Francia 2026 | Vizamigo"
+      "es": "Guía de Viaje, Visas y Consejos para Francia 2026 | Vizamigo",
+      "pt": "Guia de viagem, vistos e dicas para a França 2026 | Vizamigo"
     },
     "meta_description": {
       "tr": "Fransa Schengen vize kuralları, Paris acil numaraları, priz tipi, TGV ulaşım ve seyahat tavsiyeleri.",
       "en": "France entry requirements, Paris emergency hotlines, socket voltage, public transit, and travel safety advice.",
       "de": "Einreisebestimmungen für Frankreich, Notrufnummern, Steckdosentypen und offizielle Reisetipps.",
       "ru": "Правила въезда во Францию, экстренные службы в Париже, розетки и полезные советы.",
-      "es": "Requisitos de entrada para Francia, números de emergencia, enchufes y consejos para viajar a París."
+      "es": "Requisitos de entrada para Francia, números de emergencia, enchufes y consejos para viajar a París.",
+      "pt": "Requisitos de entrada na França, números de emergência, tomadas e dicas para viajar a Paris."
     },
     "faq": []
   },

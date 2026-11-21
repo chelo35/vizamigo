@@ -37,7 +37,7 @@ export const ToursPage: React.FC<{ passport: string; onBack: () => void; onOpenC
   const [more, setMore] = useState(false);
   useEffect(() => setMore(false), [region, dur, view]);
   const pkgs = PACKAGES.filter((p) => (region === 'all' || p.region === region) && p.days >= dLo && p.days <= dHi);
-  const title = l('Turlar ve aktiviteler', 'Tours & activities', 'Touren & Aktivitäten', 'Tours y actividades', 'Экскурсии и туры');
+  const title = l('Turlar ve aktiviteler', 'Tours & activities', 'Touren & Aktivitäten', 'Tours y actividades', 'Экскурсии и туры', 'Passeios e atividades');
 
   useEffect(() => {
     try {
@@ -69,41 +69,41 @@ export const ToursPage: React.FC<{ passport: string; onBack: () => void; onOpenC
 
   return (
     <Page
-      eyebrow={l('Turlar', 'Tours', 'Touren', 'Tours', 'Туры')}
+      eyebrow={l('Turlar', 'Tours', 'Touren', 'Tours', 'Туры', 'Passeios')}
       title={title}
       sub={l(
         'Dünyanın dört bir yanında rehberli paket turlar: Asya, Balkanlar, Avrupa, Mısır, Türkiye ve Amerika. Bölgeni ve süreni seç, turları karşılaştır.',
         'Guided multi-day tours around the world: Asia, the Balkans, Europe, Egypt, Türkiye and the Americas. Pick a region and length, then compare tours.',
         'Geführte Rundreisen weltweit: Asien, Balkan, Europa, Ägypten, Türkei und Amerika. Region und Dauer wählen, dann Touren vergleichen.',
         'Tours guiados de varios días por todo el mundo: Asia, los Balcanes, Europa, Egipto, Turquía y América. Elige región y duración y compara.',
-        'Многодневные туры с гидом по всему миру: Азия, Балканы, Европа, Египет, Турция и Америка. Выберите регион и длительность и сравните.'
+        'Многодневные туры с гидом по всему миру: Азия, Балканы, Европа, Египет, Турция и Америка. Выберите регион и длительность и сравните.', 'Tours guiados de vários dias pelo mundo todo: Ásia, Bálcãs, Europa, Egito, Turquia e Américas. Escolha a região e a duração e compare.'
       )}
       words={['Bangkok', 'Rome', 'Cairo', 'Dubai']}
-      back={{ label: l('Keşfet', 'Explore', 'Entdecken', 'Explorar', 'Обзор'), onClick: onBack }}
+      back={{ label: l('Keşfet', 'Explore', 'Entdecken', 'Explorar', 'Обзор', 'Explorar'), onClick: onBack }}
     >
       <div className="vz-seg vz-tours-view" role="tablist">
-        <button type="button" role="tab" aria-selected={view === 'pkg'} className={view === 'pkg' ? 'on' : undefined} onClick={() => setView('pkg')}><Icon name="route" size={18} /> {l('Paket turlar', 'Multi-day tours', 'Rundreisen', 'Tours de varios días', 'Многодневные туры')}</button>
-        <button type="button" role="tab" aria-selected={view === 'city'} className={view === 'city' ? 'on' : undefined} onClick={() => setView('city')}><Icon name="ticket" size={18} /> {l('Şehir turları ve biletler', 'City tours & tickets', 'Stadttouren & Tickets', 'Tours urbanos y entradas', 'Экскурсии и билеты')}</button>
+        <button type="button" role="tab" aria-selected={view === 'pkg'} className={view === 'pkg' ? 'on' : undefined} onClick={() => setView('pkg')}><Icon name="route" size={18} /> {l('Paket turlar', 'Multi-day tours', 'Rundreisen', 'Tours de varios días', 'Многодневные туры', 'Tours de vários dias')}</button>
+        <button type="button" role="tab" aria-selected={view === 'city'} className={view === 'city' ? 'on' : undefined} onClick={() => setView('city')}><Icon name="ticket" size={18} /> {l('Şehir turları ve biletler', 'City tours & tickets', 'Stadttouren & Tickets', 'Tours urbanos y entradas', 'Экскурсии и билеты', 'City tours e ingressos')}</button>
       </div>
       {view === 'pkg' && (
         <>
           <div className="vz-tours-filters">
-            <div className="vz-tours-jump" role="group" aria-label={l('Bölge', 'Region', 'Region', 'Región', 'Регион')}>
-              <button type="button" className={region === 'all' ? 'on' : undefined} onClick={() => setRegion('all')}>{l('Tüm dünya', 'Worldwide', 'Weltweit', 'Todo el mundo', 'Весь мир')}</button>
+            <div className="vz-tours-jump" role="group" aria-label={l('Bölge', 'Region', 'Region', 'Región', 'Регион', 'Região')}>
+              <button type="button" className={region === 'all' ? 'on' : undefined} onClick={() => setRegion('all')}>{l('Tüm dünya', 'Worldwide', 'Weltweit', 'Todo el mundo', 'Весь мир', 'Mundo todo')}</button>
               {TOUR_REGIONS.map((r) => <button key={r.id} type="button" className={region === r.id ? 'on' : undefined} onClick={() => setRegion(r.id)}>{r.name[i]}</button>)}
             </div>
-            <div className="vz-dur" role="group" aria-label={l('Süre', 'Length', 'Dauer', 'Duración', 'Длительность')}>
+            <div className="vz-dur" role="group" aria-label={l('Süre', 'Length', 'Dauer', 'Duración', 'Длительность', 'Duração')}>
               <div className="vz-dur-h">
-                <b>{l('Süre', 'Length', 'Dauer', 'Duración', 'Длительность')}: {anyDur ? l('her süre', 'any length', 'jede Dauer', 'cualquiera', 'любая') : l(`${dLo}–${dHi} gün`, `${dLo}–${dHi} days`, `${dLo}–${dHi} Tage`, `${dLo}–${dHi} días`, `${dLo}–${dHi} дн.`)}</b>
-                {!anyDur && <button type="button" onClick={() => { setDLo(DMIN); setDHi(DMAX); }}>{l('Süre belirtme', 'Any length', 'Jede Dauer', 'Cualquiera', 'Любая')}</button>}
+                <b>{l('Süre', 'Length', 'Dauer', 'Duración', 'Длительность', 'Duração')}: {anyDur ? l('her süre', 'any length', 'jede Dauer', 'cualquiera', 'любая', 'qualquer duração') : l(`${dLo}–${dHi} gün`, `${dLo}–${dHi} days`, `${dLo}–${dHi} Tage`, `${dLo}–${dHi} días`, `${dLo}–${dHi} дн.`, `${dLo}–${dHi} dias`)}</b>
+                {!anyDur && <button type="button" onClick={() => { setDLo(DMIN); setDHi(DMAX); }}>{l('Süre belirtme', 'Any length', 'Jede Dauer', 'Cualquiera', 'Любая', 'Qualquer duração')}</button>}
               </div>
               <div className="vz-dur-r">
-                <input type="range" min={DMIN} max={DMAX} value={dLo} aria-label={l('En az gün', 'Minimum days', 'Mindestens Tage', 'Mínimo de días', 'Минимум дней')} onChange={(e) => setDLo(Math.min(Number(e.target.value), dHi))} />
-                <input type="range" min={DMIN} max={DMAX} value={dHi} aria-label={l('En çok gün', 'Maximum days', 'Höchstens Tage', 'Máximo de días', 'Максимум дней')} onChange={(e) => setDHi(Math.max(Number(e.target.value), dLo))} />
+                <input type="range" min={DMIN} max={DMAX} value={dLo} aria-label={l('En az gün', 'Minimum days', 'Mindestens Tage', 'Mínimo de días', 'Минимум дней', 'Mínimo de dias')} onChange={(e) => setDLo(Math.min(Number(e.target.value), dHi))} />
+                <input type="range" min={DMIN} max={DMAX} value={dHi} aria-label={l('En çok gün', 'Maximum days', 'Höchstens Tage', 'Máximo de días', 'Максимум дней', 'Máximo de dias')} onChange={(e) => setDHi(Math.max(Number(e.target.value), dLo))} />
                 <span className="vz-dur-fill" style={{ left: `${((dLo - DMIN) / (DMAX - DMIN || 1)) * 100}%`, right: `${100 - ((dHi - DMIN) / (DMAX - DMIN || 1)) * 100}%` }} />
               </div>
               <div className="vz-dur-q">
-                {([[DMIN, 5, l('Kısa (≤5)', 'Short (≤5)', 'Kurz (≤5)', 'Corto (≤5)', 'Короткие (≤5)')], [6, 9, l('1 hafta', '1 week', '1 Woche', '1 semana', '1 неделя')], [10, DMAX, l('10+ gün', '10+ days', '10+ Tage', '10+ días', '10+ дней')]] as const).map(([a, b, t]) => (
+                {([[DMIN, 5, l('Kısa (≤5)', 'Short (≤5)', 'Kurz (≤5)', 'Corto (≤5)', 'Короткие (≤5)', 'Curto (≤5)')], [6, 9, l('1 hafta', '1 week', '1 Woche', '1 semana', '1 неделя', '1 semana')], [10, DMAX, l('10+ gün', '10+ days', '10+ Tage', '10+ días', '10+ дней', '10+ dias')]] as const).map(([a, b, t]) => (
                   <button key={t} type="button" className={dLo === a && dHi === b ? 'on' : undefined} onClick={() => { setDLo(a); setDHi(b); }}>{t}</button>
                 ))}
               </div>
@@ -124,7 +124,7 @@ export const ToursPage: React.FC<{ passport: string; onBack: () => void; onOpenC
                 <article key={p.id} id={`p-${p.id}`} className="vz-tour">
                   <div className="vz-tour-img">
                     <img src={img} alt={p.name[i]} loading="lazy" decoding="async" width={480} height={300} />
-                    <span className="vz-tour-days">{l(`${p.days} gün`, `${p.days} days`, `${p.days} Tage`, `${p.days} días`, `${p.days} дн.`)}</span>
+                    <span className="vz-tour-days">{l(`${p.days} gün`, `${p.days} days`, `${p.days} Tage`, `${p.days} días`, `${p.days} дн.`, `${p.days} dias`)}</span>
                     <span className="vz-tour-tag">{regionName}</span>
                   </div>
                   <div className="vz-tour-body">
@@ -135,15 +135,15 @@ export const ToursPage: React.FC<{ passport: string; onBack: () => void; onOpenC
                     <p className="vz-tour-route"><Icon name="pin" size={15} /> {routeName(p.route, language)}</p>
                     {live && <LiveTours pkg={p.id} />}
                     <a className="vz-btn vz-btn-primary vz-tour-cta" href={main} target="_blank" rel="noopener noreferrer sponsored">
-                      <span>{live ? l('Tüm tarihler ve turlar', 'All dates & tours', 'Alle Termine & Touren', 'Todas las fechas y tours', 'Все даты и туры') : l('Paket turları ve fiyatları gör', 'See tours & prices', 'Touren & Preise ansehen', 'Ver tours y precios', 'Туры и цены')}</span>
+                      <span>{live ? l('Tüm tarihler ve turlar', 'All dates & tours', 'Alle Termine & Touren', 'Todas las fechas y tours', 'Все даты и туры', 'Todas as datas e tours') : l('Paket turları ve fiyatları gör', 'See tours & prices', 'Touren & Preise ansehen', 'Ver tours y precios', 'Туры и цены', 'Ver tours e preços')}</span>
                       <Icon name="external" size={17} duo={false} />
                     </a>
                     <span className="vz-ad-line"><AdTag /></span>
-                    {other.length > 0 && <Picks label={l('Diğer tur siteleri:', 'More tour sites:', 'Weitere Anbieter:', 'Más sitios:', 'Другие сайты:')} items={other} k={p.id} />}
+                    {other.length > 0 && <Picks label={l('Diğer tur siteleri:', 'More tour sites:', 'Weitere Anbieter:', 'Más sitios:', 'Другие сайты:', 'Mais sites:')} items={other} k={p.id} />}
                     <TourFlightAdd id={p.id} from={fromHub} to={(GEO_DATA[p.code]?.mainHub || '').split('/')[0]} days={p.days} />
                     <div className="vz-tour-links">
-                      {p.code !== passport && <button type="button" onClick={() => onOpenCountry(p.code)}><Icon name="passport" size={16} /> {l('Giriş şartları', 'Entry rules', 'Einreise', 'Requisitos', 'Въезд')}</button>}
-                      <button type="button" onClick={() => share(p, `${p.name[i]} · ${p.days} · ${routeName(p.route, language)}`)}><Icon name="share" size={16} /> {copied === p.id ? l('Kopyalandı', 'Copied', 'Kopiert', 'Copiado', 'Скопировано') : l('Paylaş', 'Share', 'Teilen', 'Compartir', 'Поделиться')}</button>
+                      {p.code !== passport && <button type="button" onClick={() => onOpenCountry(p.code)}><Icon name="passport" size={16} /> {l('Giriş şartları', 'Entry rules', 'Einreise', 'Requisitos', 'Въезд', 'Requisitos')}</button>}
+                      <button type="button" onClick={() => share(p, `${p.name[i]} · ${p.days} · ${routeName(p.route, language)}`)}><Icon name="share" size={16} /> {copied === p.id ? l('Kopyalandı', 'Copied', 'Kopiert', 'Copiado', 'Скопировано', 'Copiado') : l('Paylaş', 'Share', 'Teilen', 'Compartir', 'Поделиться', 'Compartilhar')}</button>
                     </div>
                   </div>
                 </article>
@@ -152,14 +152,14 @@ export const ToursPage: React.FC<{ passport: string; onBack: () => void; onOpenC
           </div>
           {!more && pkgs.length > 8 && (
             <button type="button" className="vz-btn vz-btn-ghost vz-tours-more" onClick={() => setMore(true)}>
-              {l(`${pkgs.length - 8} tur daha göster`, `Show ${pkgs.length - 8} more tours`, `${pkgs.length - 8} weitere Touren`, `Ver ${pkgs.length - 8} tours más`, `Ещё ${pkgs.length - 8} туров`)}
+              {l(`${pkgs.length - 8} tur daha göster`, `Show ${pkgs.length - 8} more tours`, `${pkgs.length - 8} weitere Touren`, `Ver ${pkgs.length - 8} tours más`, `Ещё ${pkgs.length - 8} туров`, `Ver mais ${pkgs.length - 8} tours`)}
             </button>
           )}
-          {pkgs.length === 0 && <p className="vz-muted">{l('Bu seçimde tur yok; süreyi değiştir.', 'No tours for this choice; try another length.', 'Keine Touren; andere Dauer wählen.', 'Sin tours; prueba otra duración.', 'Нет туров; выберите другую длительность.')}</p>}
+          {pkgs.length === 0 && <p className="vz-muted">{l('Bu seçimde tur yok; süreyi değiştir.', 'No tours for this choice; try another length.', 'Keine Touren; andere Dauer wählen.', 'Sin tours; prueba otra duración.', 'Нет туров; выберите другую длительность.', 'Nenhum tour; tente outra duração.')}</p>}
         </>
       )}
       {view === 'city' && (<>
-      <nav className="vz-tours-jump" aria-label={l('Destinasyonlar', 'Destinations', 'Ziele', 'Destinos', 'Направления')}>
+      <nav className="vz-tours-jump" aria-label={l('Destinasyonlar', 'Destinations', 'Ziele', 'Destinos', 'Направления', 'Destinos')}>
         {TOURS.map((t) => (
           <a key={t.id} href={`#${t.id}`} onClick={(e) => { e.preventDefault(); document.getElementById(`t-${t.id}`)?.scrollIntoView({ behavior: 'smooth', block: 'start' }); try { history.replaceState(history.state, '', `#${t.id}`); } catch {} }}>{t.name[i]}</a>
         ))}
@@ -188,17 +188,17 @@ export const ToursPage: React.FC<{ passport: string; onBack: () => void; onOpenC
                 </div>
                 <p>{t.pitch[i]}</p>
                 <a className="vz-btn vz-btn-primary vz-tour-cta" href={picks[0].url} target="_blank" rel="noopener noreferrer sponsored">
-                  <span>{l(`${t.name[i]} turlarını gör`, `See ${t.name[i]} tours`, `${t.name[i]}: Touren ansehen`, `Ver tours en ${t.name[i]}`, `Туры: ${t.name[i]}`)}</span>
+                  <span>{l(`${t.name[i]} turlarını gör`, `See ${t.name[i]} tours`, `${t.name[i]}: Touren ansehen`, `Ver tours en ${t.name[i]}`, `Туры: ${t.name[i]}`, `Ver tours em ${t.name[i]}`)}</span>
                   <Icon name="external" size={17} duo={false} />
                 </a>
-                <Picks label={l('Diğer tur siteleri:', 'More tour sites:', 'Weitere Anbieter:', 'Más sitios:', 'Другие сайты:')} items={picks.slice(1)} k={t.id} />
+                <Picks label={l('Diğer tur siteleri:', 'More tour sites:', 'Weitere Anbieter:', 'Más sitios:', 'Другие сайты:', 'Mais sites:')} items={picks.slice(1)} k={t.id} />
                 <div className="vz-tour-links">
-                  <a href={tpLinks.flights(fromHub, t.hub)} target="_blank" rel="noopener noreferrer sponsored"><Icon name="plane" size={16} /> {l('Uçak bileti', 'Flights', 'Flüge', 'Vuelos', 'Билеты')}</a>
-                  <a href={stay22('booking', { address: t.search, campaign: `tours_${t.id}` })} target="_blank" rel="noopener noreferrer sponsored"><Icon name="bed" size={16} /> {l('Otel', 'Hotels', 'Hotels', 'Hoteles', 'Отели')}</a>
+                  <a href={tpLinks.flights(fromHub, t.hub)} target="_blank" rel="noopener noreferrer sponsored"><Icon name="plane" size={16} /> {l('Uçak bileti', 'Flights', 'Flüge', 'Vuelos', 'Билеты', 'Voos')}</a>
+                  <a href={stay22('booking', { address: t.search, campaign: `tours_${t.id}` })} target="_blank" rel="noopener noreferrer sponsored"><Icon name="bed" size={16} /> {l('Otel', 'Hotels', 'Hotels', 'Hoteles', 'Отели', 'Hotéis')}</a>
                   {t.code !== passport && (
-                    <button type="button" onClick={() => onOpenCountry(t.code)}><Icon name="passport" size={16} /> {l('Giriş şartları', 'Entry rules', 'Einreise', 'Requisitos', 'Въезд')}</button>
+                    <button type="button" onClick={() => onOpenCountry(t.code)}><Icon name="passport" size={16} /> {l('Giriş şartları', 'Entry rules', 'Einreise', 'Requisitos', 'Въезд', 'Requisitos')}</button>
                   )}
-                  <button type="button" onClick={() => share(t, `${t.name[i]}: ${t.pitch[i]}`)}><Icon name="share" size={16} /> {copied === t.id ? l('Kopyalandı', 'Copied', 'Kopiert', 'Copiado', 'Скопировано') : l('Paylaş', 'Share', 'Teilen', 'Compartir', 'Поделиться')}</button>
+                  <button type="button" onClick={() => share(t, `${t.name[i]}: ${t.pitch[i]}`)}><Icon name="share" size={16} /> {copied === t.id ? l('Kopyalandı', 'Copied', 'Kopiert', 'Copiado', 'Скопировано', 'Copiado') : l('Paylaş', 'Share', 'Teilen', 'Compartir', 'Поделиться', 'Compartilhar')}</button>
                 </div>
               </div>
             </article>
@@ -207,7 +207,7 @@ export const ToursPage: React.FC<{ passport: string; onBack: () => void; onOpenC
       </div>
       {!more && TOURS.length > 8 && !(typeof window !== 'undefined' && window.location.hash) && (
         <button type="button" className="vz-btn vz-btn-ghost vz-tours-more" onClick={() => setMore(true)}>
-          {l(`${TOURS.length - 8} şehir daha göster`, `Show ${TOURS.length - 8} more cities`, `${TOURS.length - 8} weitere Städte`, `Ver ${TOURS.length - 8} ciudades más`, `Ещё ${TOURS.length - 8} городов`)}
+          {l(`${TOURS.length - 8} şehir daha göster`, `Show ${TOURS.length - 8} more cities`, `${TOURS.length - 8} weitere Städte`, `Ver ${TOURS.length - 8} ciudades más`, `Ещё ${TOURS.length - 8} городов`, `Ver mais ${TOURS.length - 8} cidades`)}
         </button>
       )}
       </>)}
@@ -217,7 +217,7 @@ export const ToursPage: React.FC<{ passport: string; onBack: () => void; onOpenC
           'Tours are sold on our partners’ sites, where price, cancellation and inclusions are shown. Vizamigo may earn a commission on bookings made through these links at no extra cost to you.',
           'Touren werden auf den Seiten unserer Partner verkauft. Vizamigo kann eine Provision erhalten; für dich ändert sich der Preis nicht.',
           'Los tours se venden en las webs de nuestros socios. Vizamigo puede recibir una comisión sin coste extra para ti.',
-          'Туры продаются на сайтах партнёров. Vizamigo может получать комиссию, для вас цена не меняется.'
+          'Туры продаются на сайтах партнёров. Vizamigo может получать комиссию, для вас цена не меняется.', 'Os tours são vendidos nos sites dos nossos parceiros. A Vizamigo pode receber uma comissão, sem custo extra para você.'
         )}
       </p>
     </Page>

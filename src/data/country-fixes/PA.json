@@ -1539,6 +1539,391 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Balboa panamenho (PAB) / dólar americano (USD) – as cédulas são de dólar",
+   "plugType": "Tipo A, B (120V, 60Hz)",
+   "bestMonths": "Dezembro – abril (estação seca no Pacífico); no Caribe, setembro – outubro é mais seco",
+   "safety": {
+    "crimeRateSummary": "As áreas turísticas da Cidade do Panamá costumam ser seguras, embora ocorram arrastões e assaltos à noite. Os alertas oficiais desaconselham viagens à cidade de Colón e à selva de Darién (fronteira com a Colômbia).",
+    "commonScams": [
+     "Táxis sem taxímetro que cobram a mais de turistas",
+     "Lanchas para San Blas sem licença nem coletes salva-vidas",
+     "Clonagem de cartões em caixas eletrônicos"
+    ],
+    "safeTravelTips": [
+     "Use Uber ou inDrive na cidade; à noite, evite ruas desertas fora do Casco Viejo.",
+     "Não viaje para a região de Darién nem para o centro de Colón.",
+     "Beba bastante água por causa do calor e da umidade e esteja preparado para os temporais da tarde."
+    ],
+    "emergencyNumbers": {
+     "police": "104",
+     "ambulance": "911",
+     "general": "911"
+    },
+    "safetyScore": 55,
+    "safetyLevel": "Risco moderado",
+    "badgeColor": "bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-950/40 dark:text-amber-300 dark:border-amber-900/60"
+   },
+   "internet": {
+    "networkCoverage": "4G LTE forte nas cidades; irregular nas montanhas e ilhas",
+    "costPerGbUsd": "~US$ 1 - 3",
+    "esimAvailability": "Boa",
+    "bestCarriers": [
+     "+Móvil",
+     "Tigo"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Bom",
+    "costLevel": "Moderado",
+    "singleTicketUsd": "US$ 0,35 - 1,25",
+    "dailyPassUsd": "Sem passe diário (cartão do metrô ~US$ 2)",
+    "popularRideApps": [
+     "Uber",
+     "inDrive",
+     "Metro de Panamá"
+    ],
+    "taxiAdvice": "Os táxis amarelos não têm taxímetro e cobram a mais; Uber e inDrive são mais transparentes. O metrô (2 linhas) e o MetroBus são baratos e usam cartão recarregável."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 40 - 60",
+    "dailyBudgetMidrangeUsd": "US$ 100 - 170",
+    "budgetMealUsd": "US$ 6 - 12",
+    "coffeeUsd": "US$ 2 - 4",
+    "waterBottleUsd": "US$ 1 - 1,50",
+    "hostelDormUsd": "US$ 15 - 28",
+    "hotel3StarUsd": "US$ 70 - 130",
+    "flightCostIndex": "Moderado",
+    "flightTip": "Tocumen (PTY) é o hub regional da Copa Airlines, e a Turkish Airlines também voa para lá a partir de Istambul. Os voos domésticos da Air Panama para Bocas del Toro e David economizam tempo."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "O cumprimento é um aperto de mão e um “¡Buenas!”; entre conhecidos, rola beijo no rosto.",
+     "Respeite as regras de Guna Yala; fotografar pessoas exige permissão e, às vezes, uma pequena taxa.",
+     "Evite bermuda e roupa de praia em repartições públicas e igrejas."
+    ],
+    "festivals": [
+     "Carnaval (fevereiro/março; o mais famoso é o de Las Tablas)",
+     "Festas Pátrias (3 e 4 de novembro)",
+     "Festival do Cristo Negro de Portobelo (21 de outubro)"
+    ],
+    "lifestyle": "Uma vida multicultural, em que um centro financeiro de arranha-céus convive com culturas caribenhas, indígenas e do interior; salsa, reggaeton e praia no fim de semana são paixões locais."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Canal do Panamá – Eclusas de Miraflores",
+     "Casco Viejo (UNESCO)",
+     "Ilhas de San Blas (Guna Yala)",
+     "Arquipélago de Bocas del Toro",
+     "Boquete e vulcão Barú",
+     "Ruínas do Panamá Viejo"
+    ],
+    "bestSeasons": "Dezembro – abril (estação seca no Pacífico); no Caribe, setembro – outubro é mais seco",
+    "travelStyleTip": "Combine cidade, montanha e ilhas: o canal e o Casco Viejo na capital, café e vulcão em Boquete, vida de ilha em Bocas ou San Blas."
+   },
+   "religion": {
+    "primaryReligions": "Católicos (~65 %), evangélicos (~25 %), outras religiões e sem religião (~10 %)",
+    "respectNorms": "Cubra ombros e joelhos nas igrejas; nas comunidades guna, siga as regras do sahila.",
+    "sacredSites": [
+     "Igreja de San José e seu Altar de Ouro",
+     "Catedral Metropolitana do Panamá",
+     "Igreja de San Felipe de Portobelo (Cristo Negro)"
+    ]
+   },
+   "language": {
+    "officialLanguages": "Espanhol (oficial). Línguas indígenas, como guna e ngäbere, e inglês caribenho em Bocas.",
+    "englishProficiency": "Médio na capital e nas áreas turísticas; no interior, é preciso espanhol.",
+    "phrases": [
+     {
+      "phrase": "¿Qué xopá?",
+      "meaning": "E aí? / Tudo bem?",
+      "translation": "E aí? / Tudo bem?",
+      "pronunciation": "keh shoh-PAH"
+     },
+     {
+      "phrase": "Gracias",
+      "meaning": "Obrigado",
+      "translation": "Obrigado",
+      "pronunciation": "GRAH-syahs"
+     },
+     {
+      "phrase": "¿Cuánto cuesta?",
+      "meaning": "Quanto custa?",
+      "translation": "Quanto custa?",
+      "pronunciation": "KWAN-toh KWEHS-tah"
+     },
+     {
+      "phrase": "Ofi",
+      "meaning": "Beleza / Combinado",
+      "translation": "Beleza / Combinado",
+      "pronunciation": "OH-fee"
+     },
+     {
+      "phrase": "¡Chuleta!",
+      "meaning": "Caramba!",
+      "translation": "Caramba!",
+      "pronunciation": "choo-LEH-tah"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Os espanhóis chegaram em 1501, Balboa avistou o Pacífico em 1513 e, em 1519, a Cidade do Panamá foi fundada. Em 1821, o país se tornou independente da Espanha e se uniu à Grã-Colômbia; em 1903, separou-se da Colômbia. O canal, aberto em 1914, passou totalmente para o Panamá em 1999, e sua ampliação foi inaugurada em 2016.",
+    "milestones": [
+     "1513 – Balboa chega ao Pacífico",
+     "1903 – Separação da Colômbia",
+     "1914 – Abertura do canal",
+     "1999 – Transferência do canal para o Panamá"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Sancocho panamenho",
+     "Arroz com frango",
+     "Ceviche de corvina"
+    ],
+    "traditionalDrinks": [
+     "Seco Herrerano",
+     "Café Geisha de Boquete",
+     "Chicheme"
+    ],
+    "streetFoodAndDesserts": [
+     "Carimañola",
+     "Patacones",
+     "Raspao"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Rubén Blades (astro da salsa)",
+     "Mariano Rivera (lenda do beisebol)",
+     "Roberto Durán (campeão mundial de boxe)"
+    ],
+    "strongSectors": [
+     "Canal e logística",
+     "Bancos e finanças",
+     "Comércio da Zona Livre de Colón"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "O dólar é usado no dia a dia, junto com moedas de balboa. Cartões são comuns na cidade; nas ilhas e nos vilarejos é preciso dinheiro vivo, e é difícil trocar notas de 50 e 100.",
+    "tippingCulture": "Nos restaurantes, espera-se 10 %, muitas vezes já incluídos; guias e barqueiros também recebem gorjeta.",
+    "economicPillars": "Canal do Panamá, portos e logística, bancos, Zona Livre de Colón, turismo e construção."
+   }
+  },
+  "itin": {
+   "routeName": "Do Caribe ao Canal: Bocas del Toro, Boquete, Cidade do Panamá e San Blas",
+   "routeSummary": "Roteiro de 9 dias que começa nas ilhas de Bocas del Toro, no oeste, segue para a região cafeeira de Boquete, depois para o canal e o Casco Viejo da capital e termina nas ilhas de San Blas, em Guna Yala, no leste.",
+   "totalDays": 9,
+   "idealDurationText": "Roteiro de 9 dias",
+   "bestSeason": "Dezembro – abril (estação seca no Pacífico); no Caribe, setembro – outubro é mais seco",
+   "transportMode": "Voos domésticos da Air Panama, shuttles e ônibus, 4x4 e lancha para San Blas",
+   "paceLevel": "Equilibrado (ilhas, montanha e cidade)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Bocas del Toro (ilhas do Caribe)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Playa Estrella",
+      "Ilha Bastimentos e Red Frog",
+      "Cayos Zapatilla",
+      "Calçadão de Bocas Town"
+     ],
+     "activities": [
+      "Pule de ilha em ilha de táxi aquático.",
+      "Faça snorkel nos recifes.",
+      "Procure os sapinhos vermelhos em Bastimentos."
+     ],
+     "foodAndDrinks": [
+      "Rondón",
+      "Patí",
+      "Arroz com coco"
+     ],
+     "criticalTips": [
+      "Não toque nem tire as estrelas-do-mar da água.",
+      "Em Red Frog há correntes fortes; respeite a bandeira vermelha."
+     ],
+     "mapsQuery": "Bocas del Toro, Panama"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Boquete (região cafeeira e vulcão Barú)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Vulcão Barú (3.474 m)",
+      "Fazendas de café Geisha",
+      "Trilha das Cascadas Perdidas",
+      "Trilha Los Quetzales"
+     ],
+     "activities": [
+      "Faça um tour com degustação em uma fazenda de café.",
+      "Suba o Barú à noite para ver o nascer do sol.",
+      "Caminhe até as cachoeiras pela floresta nublada."
+     ],
+     "foodAndDrinks": [
+      "Café Geisha",
+      "Truta de montanha",
+      "Sobremesas de morango"
+     ],
+     "criticalTips": [
+      "No cume, a temperatura chega perto de 0 °C à noite; leve agasalho e lanterna.",
+      "Chuva e garoa (bajareque) à tarde são frequentes; saia cedo."
+     ],
+     "mapsQuery": "Boquete, Chiriquí, Panama"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Cidade do Panamá (canal e Casco Viejo)",
+     "recommendedDuration": "3 dias",
+     "durationBadge": "3 dias",
+     "highlights": [
+      "Eclusas de Miraflores",
+      "Casco Viejo e Plaza de Francia",
+      "Biomuseo e Calzada de Amador",
+      "Ruínas do Panamá Viejo"
+     ],
+     "activities": [
+      "Veja os navios passarem pelas eclusas de Miraflores.",
+      "Assista ao pôr do sol de um terraço no Casco Viejo.",
+      "Faça um tour de selva e bichos-preguiça em Gamboa."
+     ],
+     "foodAndDrinks": [
+      "Ceviche no Mercado de Mariscos",
+      "Sancocho",
+      "Coquetel de Seco Herrerano"
+     ],
+     "criticalTips": [
+      "A passagem de navios é maior de manhã e à tarde; confira os horários.",
+      "Não ande à noite por El Chorrillo e Curundú, ao lado do Casco Viejo."
+     ],
+     "mapsQuery": "Casco Viejo, Panama City"
+    },
+    {
+     "stopNumber": 4,
+     "name": "Parada 4: San Blas / Guna Yala (ilhas indígenas)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Ilhotas de areia branca",
+      "Cultura guna e molas",
+      "La Piscina Natural"
+     ],
+     "activities": [
+      "Faça snorkel nos recifes rasos.",
+      "Passe uma noite em uma cabana simples.",
+      "Compre molas diretamente das mulheres guna."
+     ],
+     "foodAndDrinks": [
+      "Peixe fresco com arroz com coco",
+      "Lagosta grelhada (na temporada)",
+      "Coco fresco"
+     ],
+     "criticalTips": [
+      "Pague em dinheiro vivo a taxa de entrada na comarca e no porto, e contrate um operador autorizado com coletes.",
+      "Há pouca energia elétrica e pouco sinal; leve dinheiro vivo, carregador portátil e bolsa estanque."
+     ],
+     "mapsQuery": "Guna Yala, Panama"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Sancocho",
+     "Arroz com frango",
+     "Ceviche"
+    ],
+    "drinks": [
+     "Seco Herrerano",
+     "Café Geisha",
+     "Chicheme"
+    ],
+    "streetFoods": [
+     "Carimañola",
+     "Hojaldra",
+     "Raspao"
+    ],
+    "diningAdvice": "Experimente as fondas para comer bem e barato; os restaurantes costumam acrescentar 10 %."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptador tipo A/B",
+     "Repelente e protetor solar",
+     "Capa de chuva leve",
+     "Bolsa estanque para as lanchas"
+    ],
+    "safetyAndEtiquette": [
+     "Não vá para Darién nem para o centro de Colón.",
+     "Não fotografe os guna sem permissão."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "A",
+     "B"
+    ],
+    "voltage": "120V",
+    "frequency": "60Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Tomadas tipo A/B, de pinos chatos, em 120V; leve adaptador A/B e confira se seus aparelhos aceitam 110-240V."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "Na capital e na maioria das cidades, a água da torneira é potável; em Bocas del Toro, San Blas e áreas rurais, beba água engarrafada.",
+    "vaccines": [
+     "Vacinas de rotina e hepatite A",
+     "Febre tifoide (viagens ao interior)",
+     "Febre amarela: recomendada a leste do canal, em Guna Yala e em Darién",
+     "Proteção contra mosquitos por causa de malária e dengue em Bocas e Guna Yala"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "911"
+   },
+   "tipping": {
+    "custom": "Nos restaurantes, espera-se 10 %.",
+    "standardPercent": 10,
+    "rule": "expected",
+    "note": "Se a conta trouxer “propina”, a gorjeta já está incluída; para guias e barqueiros, dê alguns dólares à parte."
+   },
+   "taxFree": {
+    "vatRefundPercent": "ITBMS de 7 %; sem devolução para turistas",
+    "minSpend": "Não se aplica",
+    "customsNote": "O Panamá não devolve o ITBMS a turistas; as lojas duty free de Tocumen e a Zona Livre de Colón são isentas."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "US$ 1 - 3",
+    "topCarriers": [
+     "+Móvil",
+     "Tigo"
+    ],
+    "airportSimTrapWarning": "Os quiosques de chip em Tocumen vendem pacotes caros; ative um eSIM antes ou compre um chip com passaporte em uma loja +Móvil/Tigo na cidade."
+   },
+   "touristScams": [
+    {
+     "title": "Táxi sem taxímetro",
+     "desc": "Os táxis amarelos cobram tarifas infladas em vez das tarifas por zona ou pegam outros passageiros no caminho.",
+     "tip": "Use Uber/inDrive ou combine o preço antes de entrar."
+    },
+    {
+     "title": "Lancha para San Blas sem licença",
+     "desc": "Os pacotes baratos podem incluir lanchas superlotadas, sem coletes e com cobranças escondidas.",
+     "tip": "Escolha um operador com boas avaliações e pergunte se a taxa da comarca está incluída."
+    },
+    {
+     "title": "Clonagem em caixas eletrônicos",
+     "desc": "Podem instalar clonadores em caixas eletrônicos de rua e em lojas.",
+     "tip": "Use caixas eletrônicos dentro de agências bancárias e cubra a senha ao digitar."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Панамский бальбоа (PAB) / доллар США (USD) – банкноты в долларах",

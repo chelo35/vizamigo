@@ -21,7 +21,7 @@ import { getVerifiedCountryRecord } from '../data/verifiedCountryData';
 import { getConsularEmergencyInfo } from '../data/consularEmergencyData';
 
 type L3 = { tr: string; en: string; de: string };
-const pick3 = (o: (L3 & { es?: string; ru?: string }) | undefined, lang: string) => (o ? (lang === 'tr' ? o.tr : lang === 'de' ? o.de || o.en : (lang === 'es' ? o.es : lang === 'ru' ? o.ru : '') || lText(lang, o.tr, o.en, o.de)) : '');
+const pick3 = (o: (L3 & { es?: string; pt?: string; ru?: string }) | undefined, lang: string) => (o ? (lang === 'tr' ? o.tr : lang === 'de' ? o.de || o.en : (lang === 'es' ? o.es : lang === 'ru' ? o.ru : '') || lText(lang, o.tr, o.en, o.de)) : '');
 const countryOpts = (lang: string) => Object.keys(GEO_DATA).map((c) => ({ c, n: getCountryName(c, lang) })).sort((a, b) => a.n.localeCompare(b.n, lang));
 
 function useChecked(key: string) {
@@ -61,7 +61,7 @@ const DestSelect: React.FC<{ id: string; value: string; onChange: (c: string) =>
   const { l, language } = useI18n();
   const opts = useMemo(() => countryOpts(language), [language]);
   return (
-    <Field label={label || l('Ülke', 'Country', 'Land', 'País', 'Страна')} htmlFor={id}>
+    <Field label={label || l('Ülke', 'Country', 'Land', 'País', 'Страна', 'País')} htmlFor={id}>
       <select id={id} className="vz-select" value={value} onChange={(e) => onChange(e.target.value)}>
         {opts.map((o) => <option key={o.c} value={o.c}>{o.n}</option>)}
       </select>
@@ -126,26 +126,26 @@ const PackView: React.FC<{ dest: string; setDest: (c: string) => void }> = ({ de
   const suggestions: { text: string; cat: string }[] = [];
   if (w) {
     const rain = (w.code >= 51 && w.code <= 82) || w.code >= 95;
-    if (w.tempC <= 8) suggestions.push({ text: l('Kalın mont', 'Warm coat', 'Warme Jacke', 'Abrigo', 'Тёплая куртка'), cat: 'clothes' }, { text: l('Bere ve eldiven', 'Hat and gloves', 'Mütze & Handschuhe', 'Gorro y guantes', 'Шапка и перчатки'), cat: 'clothes' }, { text: l('Termal içlik', 'Thermal layer', 'Thermowäsche', 'Ropa térmica', 'Термобельё'), cat: 'clothes' });
-    else if (w.tempC <= 17) suggestions.push({ text: l('Hırka ya da ince mont', 'Light jacket', 'Leichte Jacke', 'Chaqueta ligera', 'Лёгкая куртка'), cat: 'clothes' }, { text: l('Kapalı ayakkabı', 'Closed shoes', 'Geschlossene Schuhe', 'Zapato cerrado', 'Закрытая обувь'), cat: 'clothes' });
-    if (w.tempC >= 25) suggestions.push({ text: l('Güneş kremi (SPF 50)', 'Sunscreen (SPF 50)', 'Sonnencreme (LSF 50)', 'Protector solar', 'Солнцезащитный крем'), cat: 'health' }, { text: l('Şapka ve güneş gözlüğü', 'Hat and sunglasses', 'Hut & Sonnenbrille', 'Gorra y gafas', 'Шляпа и очки'), cat: 'clothes' }, { text: l('Matara', 'Water bottle', 'Trinkflasche', 'Botella de agua', 'Бутылка для воды'), cat: 'health' });
-    if (rain) suggestions.push({ text: l('Katlanır şemsiye', 'Compact umbrella', 'Taschenschirm', 'Paraguas', 'Зонт'), cat: 'clothes' }, { text: l('Su geçirmez ceket', 'Rain jacket', 'Regenjacke', 'Chubasquero', 'Дождевик'), cat: 'clothes' });
-    if (w.humidity >= 75) suggestions.push({ text: l('Sivrisinek kovucu', 'Insect repellent', 'Mückenschutz', 'Repelente', 'Репеллент'), cat: 'health' });
+    if (w.tempC <= 8) suggestions.push({ text: l('Kalın mont', 'Warm coat', 'Warme Jacke', 'Abrigo', 'Тёплая куртка', 'Casaco'), cat: 'clothes' }, { text: l('Bere ve eldiven', 'Hat and gloves', 'Mütze & Handschuhe', 'Gorro y guantes', 'Шапка и перчатки', 'Gorro e luvas'), cat: 'clothes' }, { text: l('Termal içlik', 'Thermal layer', 'Thermowäsche', 'Ropa térmica', 'Термобельё', 'Roupa térmica'), cat: 'clothes' });
+    else if (w.tempC <= 17) suggestions.push({ text: l('Hırka ya da ince mont', 'Light jacket', 'Leichte Jacke', 'Chaqueta ligera', 'Лёгкая куртка', 'Jaqueta leve'), cat: 'clothes' }, { text: l('Kapalı ayakkabı', 'Closed shoes', 'Geschlossene Schuhe', 'Zapato cerrado', 'Закрытая обувь', 'Sapato fechado'), cat: 'clothes' });
+    if (w.tempC >= 25) suggestions.push({ text: l('Güneş kremi (SPF 50)', 'Sunscreen (SPF 50)', 'Sonnencreme (LSF 50)', 'Protector solar', 'Солнцезащитный крем', 'Protetor solar'), cat: 'health' }, { text: l('Şapka ve güneş gözlüğü', 'Hat and sunglasses', 'Hut & Sonnenbrille', 'Gorra y gafas', 'Шляпа и очки', 'Boné e óculos de sol'), cat: 'clothes' }, { text: l('Matara', 'Water bottle', 'Trinkflasche', 'Botella de agua', 'Бутылка для воды', 'Garrafa de água'), cat: 'health' });
+    if (rain) suggestions.push({ text: l('Katlanır şemsiye', 'Compact umbrella', 'Taschenschirm', 'Paraguas', 'Зонт', 'Guarda-chuva'), cat: 'clothes' }, { text: l('Su geçirmez ceket', 'Rain jacket', 'Regenjacke', 'Chubasquero', 'Дождевик', 'Capa de chuva'), cat: 'clothes' });
+    if (w.humidity >= 75) suggestions.push({ text: l('Sivrisinek kovucu', 'Insect repellent', 'Mückenschutz', 'Repelente', 'Репеллент', 'Repelente'), cat: 'health' });
   }
   const freshSug = suggestions.filter((x) => !custom.some((c) => c.text === x.text));
   const styles: { id: TripStyle; label: string }[] = [
-    { id: 'city', label: l('Şehir', 'City', 'Stadt', 'Ciudad', 'Город') },
-    { id: 'beach', label: l('Deniz', 'Beach', 'Strand', 'Playa', 'Пляж') },
-    { id: 'winter', label: l('Kış', 'Winter', 'Winter', 'Invierno', 'Зима') },
-    { id: 'backpack', label: l('Sırt çantası', 'Backpacking', 'Rucksack', 'Mochilero', 'Бэкпекинг') },
-    { id: 'nomad', label: l('Göçebe / iş', 'Nomad / work', 'Nomade / Arbeit', 'Nómada', 'Работа') }
+    { id: 'city', label: l('Şehir', 'City', 'Stadt', 'Ciudad', 'Город', 'Cidade') },
+    { id: 'beach', label: l('Deniz', 'Beach', 'Strand', 'Playa', 'Пляж', 'Praia') },
+    { id: 'winter', label: l('Kış', 'Winter', 'Winter', 'Invierno', 'Зима', 'Inverno') },
+    { id: 'backpack', label: l('Sırt çantası', 'Backpacking', 'Rucksack', 'Mochilero', 'Бэкпекинг', 'Mochileiro') },
+    { id: 'nomad', label: l('Göçebe / iş', 'Nomad / work', 'Nomade / Arbeit', 'Nómada', 'Работа', 'Nômade') }
   ];
   const cats: { id: string; label: string; icon: string }[] = [
-    { id: 'docs', label: l('Belgeler ve para', 'Documents & money', 'Dokumente & Geld', 'Documentos', 'Документы'), icon: 'doc' },
-    { id: 'tech', label: l('Elektronik', 'Electronics', 'Elektronik', 'Electrónica', 'Техника'), icon: 'plug' },
-    { id: 'health', label: l('Sağlık', 'Health', 'Gesundheit', 'Salud', 'Здоровье'), icon: 'heart' },
-    { id: 'clothes', label: l('Kıyafet ve aksesuar', 'Clothes & extras', 'Kleidung', 'Ropa', 'Одежда'), icon: 'bag' },
-    { id: 'nomad', label: l('Çalışma düzeni', 'Work setup', 'Arbeitsplatz', 'Trabajo', 'Работа'), icon: 'laptop' }
+    { id: 'docs', label: l('Belgeler ve para', 'Documents & money', 'Dokumente & Geld', 'Documentos', 'Документы', 'Documentos'), icon: 'doc' },
+    { id: 'tech', label: l('Elektronik', 'Electronics', 'Elektronik', 'Electrónica', 'Техника', 'Eletrônicos'), icon: 'plug' },
+    { id: 'health', label: l('Sağlık', 'Health', 'Gesundheit', 'Salud', 'Здоровье', 'Saúde'), icon: 'heart' },
+    { id: 'clothes', label: l('Kıyafet ve aksesuar', 'Clothes & extras', 'Kleidung', 'Ropa', 'Одежда', 'Roupas'), icon: 'bag' },
+    { id: 'nomad', label: l('Çalışma düzeni', 'Work setup', 'Arbeitsplatz', 'Trabajo', 'Работа', 'Trabalho'), icon: 'laptop' }
   ];
   const base = DEFAULT_PACKING_ITEMS.filter((it) => it.styles.includes(style));
   const items = [...base.map((it) => ({ id: it.id, category: it.category as string })), ...custom.map((c) => ({ id: c.id, category: c.cat }))];
@@ -155,21 +155,21 @@ const PackView: React.FC<{ dest: string; setDest: (c: string) => void }> = ({ de
       <Chips scroll>{styles.map((s) => <Chip key={s.id} on={style === s.id} onClick={() => setStyle(s.id)}>{s.label}</Chip>)}</Chips>
       <div className="vz-card tone-sea" style={{ gap: 10 }}>
         <div className="vz-row-flex" style={{ alignItems: 'flex-end' }}>
-          <div style={{ flex: 1, minWidth: 200 }}><DestSelect id="vz-pk-d" value={dest} onChange={setDest} label={l('Nereye?', 'Where to?', 'Wohin?', '¿A dónde?', 'Куда?')} /></div>
+          <div style={{ flex: 1, minWidth: 200 }}><DestSelect id="vz-pk-d" value={dest} onChange={setDest} label={l('Nereye?', 'Where to?', 'Wohin?', '¿A dónde?', 'Куда?', 'Para onde?')} /></div>
           {w && <span className="vz-badge tone-sea">{w.tempC}° · %{w.humidity}</span>}
         </div>
         {freshSug.length > 0 ? (
           <>
-            <span className="vz-muted" style={{ fontSize: 13 }}>{l('Şu anki havaya göre önerilerimiz; dokun, listene eklensin:', 'Suggested for the current weather; tap to add:', 'Passend zum Wetter; antippen zum Hinzufügen:', 'Según el tiempo; toca para añadir:', 'По погоде; нажмите, чтобы добавить:')}</span>
+            <span className="vz-muted" style={{ fontSize: 13 }}>{l('Şu anki havaya göre önerilerimiz; dokun, listene eklensin:', 'Suggested for the current weather; tap to add:', 'Passend zum Wetter; antippen zum Hinzufügen:', 'Según el tiempo; toca para añadir:', 'По погоде; нажмите, чтобы добавить:', 'De acordo com o clima; toque para adicionar:')}</span>
             <Chips>{freshSug.map((x) => <Chip key={x.text} icon="plus" onClick={() => addItem(x.text, x.cat)}>{x.text}</Chip>)}</Chips>
           </>
         ) : (
-          <span className="vz-muted" style={{ fontSize: 13 }}>{w ? l('Bu hava için ek önerimiz yok.', 'Nothing extra for this weather.', 'Nichts Zusätzliches.', 'Nada extra.', 'Ничего дополнительно.') : wxSlow ? l('Hava bilgisi şu an alınamadı; listeyi yolculuk tipine göre kullan.', 'Weather is unavailable right now; use the list by trip type.', 'Wetter nicht verfügbar.', 'Tiempo no disponible.', 'Погода недоступна.') : l('Hava bilgisi alınıyor…', 'Getting the weather…', 'Wetter wird geladen…', 'Cargando el tiempo…', 'Загрузка погоды…')}</span>
+          <span className="vz-muted" style={{ fontSize: 13 }}>{w ? l('Bu hava için ek önerimiz yok.', 'Nothing extra for this weather.', 'Nichts Zusätzliches.', 'Nada extra.', 'Ничего дополнительно.', 'Nada extra.') : wxSlow ? l('Hava bilgisi şu an alınamadı; listeyi yolculuk tipine göre kullan.', 'Weather is unavailable right now; use the list by trip type.', 'Wetter nicht verfügbar.', 'Tiempo no disponible.', 'Погода недоступна.', 'Clima indisponível.') : l('Hava bilgisi alınıyor…', 'Getting the weather…', 'Wetter wird geladen…', 'Cargando el tiempo…', 'Загрузка погоды…', 'Carregando o clima…')}</span>
         )}
       </div>
       <div className="vz-row-flex" style={{ justifyContent: 'space-between' }}>
-        <b>{l(`${done}/${items.length} hazır`, `${done}/${items.length} packed`, `${done}/${items.length} gepackt`, `${done}/${items.length} listo`, `${done}/${items.length} готово`)}</b>
-        <Btn variant="ghost" small icon="trash" onClick={ck.reset}>{l('Sıfırla', 'Reset', 'Zurücksetzen', 'Reiniciar', 'Сбросить')}</Btn>
+        <b>{l(`${done}/${items.length} hazır`, `${done}/${items.length} packed`, `${done}/${items.length} gepackt`, `${done}/${items.length} listo`, `${done}/${items.length} готово`, `${done}/${items.length} pronto`)}</b>
+        <Btn variant="ghost" small icon="trash" onClick={ck.reset}>{l('Sıfırla', 'Reset', 'Zurücksetzen', 'Reiniciar', 'Сбросить', 'Reiniciar')}</Btn>
       </div>
       <div className="vz-meter"><i style={{ width: `${items.length ? (done / items.length) * 100 : 0}%`, background: 'linear-gradient(90deg, var(--vz-acc-a), var(--vz-acc-b))' }} /></div>
       {cats.map((c) => {
@@ -184,7 +184,7 @@ const PackView: React.FC<{ dest: string; setDest: (c: string) => void }> = ({ de
                 BUY[it.id] ? (
                   <div key={it.id} className="vz-check-wrap">
                     <Check id={`pk-${it.id}`} on={ck.set.has(it.id)} onToggle={() => ck.toggle(it.id)}>{language === 'tr' ? it.text.tr : it.text.en}</Check>
-                    <a className="vz-buy" href={s22Retail(BUY[it.id])} target="_blank" rel="noopener noreferrer sponsored">{l('Satın al', 'Buy', 'Kaufen', 'Comprar', 'Купить')}</a>
+                    <a className="vz-buy" href={s22Retail(BUY[it.id])} target="_blank" rel="noopener noreferrer sponsored">{l('Satın al', 'Buy', 'Kaufen', 'Comprar', 'Купить', 'Comprar')}</a>
                   </div>
                 ) : (
                   <Check key={it.id} id={`pk-${it.id}`} on={ck.set.has(it.id)} onToggle={() => ck.toggle(it.id)}>{language === 'tr' ? it.text.tr : it.text.en}</Check>
@@ -192,8 +192,8 @@ const PackView: React.FC<{ dest: string; setDest: (c: string) => void }> = ({ de
               )}
               {mine.map((it) => (
                 <div key={it.id} className="vz-check-wrap">
-                  <Check id={`pk-${it.id}`} on={ck.set.has(it.id)} onToggle={() => ck.toggle(it.id)} sub={l('Senin eklediğin', 'Added by you', 'Von dir', 'Añadido por ti', 'Ваш пункт')}>{it.text}</Check>
-                  <button type="button" className="vz-iconbtn" onClick={() => storeCustom(custom.filter((x) => x.id !== it.id))} aria-label={l('Sil', 'Delete', 'Löschen', 'Borrar', 'Удалить')}><Icon name="trash" size={16} duo={false} /></button>
+                  <Check id={`pk-${it.id}`} on={ck.set.has(it.id)} onToggle={() => ck.toggle(it.id)} sub={l('Senin eklediğin', 'Added by you', 'Von dir', 'Añadido por ti', 'Ваш пункт', 'Adicionado por você')}>{it.text}</Check>
+                  <button type="button" className="vz-iconbtn" onClick={() => storeCustom(custom.filter((x) => x.id !== it.id))} aria-label={l('Sil', 'Delete', 'Löschen', 'Borrar', 'Удалить', 'Excluir')}><Icon name="trash" size={16} duo={false} /></button>
                 </div>
               ))}
             </div>
@@ -201,14 +201,14 @@ const PackView: React.FC<{ dest: string; setDest: (c: string) => void }> = ({ de
         );
       })}
       <form className="vz-card" onSubmit={(e) => { e.preventDefault(); addItem(newText, newCat); setNewText(''); }}>
-        <b>{l('Kendi maddeni ekle', 'Add your own item', 'Eigenen Punkt hinzufügen', 'Añade tu artículo', 'Добавьте свой пункт')}</b>
+        <b>{l('Kendi maddeni ekle', 'Add your own item', 'Eigenen Punkt hinzufügen', 'Añade tu artículo', 'Добавьте свой пункт', 'Adicione seu item')}</b>
         <div className="vz-formgrid">
-          <Field label={l('Ne?', 'What?', 'Was?', '¿Qué?', 'Что?')} htmlFor="vz-pk-new"><input id="vz-pk-new" className="vz-input" value={newText} onChange={(e) => setNewText(e.target.value)} placeholder={l('ör. Şarj kablosu', 'e.g. Charging cable', 'z. B. Ladekabel', 'p. ej. Cargador', 'напр. Зарядка')} /></Field>
-          <Field label={l('Bölüm', 'Section', 'Bereich', 'Sección', 'Раздел')} htmlFor="vz-pk-cat">
+          <Field label={l('Ne?', 'What?', 'Was?', '¿Qué?', 'Что?', 'O quê?')} htmlFor="vz-pk-new"><input id="vz-pk-new" className="vz-input" value={newText} onChange={(e) => setNewText(e.target.value)} placeholder={l('ör. Şarj kablosu', 'e.g. Charging cable', 'z. B. Ladekabel', 'p. ej. Cargador', 'напр. Зарядка', 'ex.: Carregador')} /></Field>
+          <Field label={l('Bölüm', 'Section', 'Bereich', 'Sección', 'Раздел', 'Seção')} htmlFor="vz-pk-cat">
             <select id="vz-pk-cat" className="vz-select" value={newCat} onChange={(e) => setNewCat(e.target.value)}>{cats.map((c) => <option key={c.id} value={c.id}>{c.label}</option>)}</select>
           </Field>
         </div>
-        <Btn type="submit" icon="plus" style={{ alignSelf: 'flex-start' }}>{l('Ekle', 'Add', 'Hinzufügen', 'Añadir', 'Добавить')}</Btn>
+        <Btn type="submit" icon="plus" style={{ alignSelf: 'flex-start' }}>{l('Ekle', 'Add', 'Hinzufügen', 'Añadir', 'Добавить', 'Adicionar')}</Btn>
       </form>
     </div>
   );
@@ -222,25 +222,25 @@ const DocsCheckView: React.FC<{ passport: string; dest: string; setDest: (c: str
   const ck = useChecked(`vz_docs_${passport}_${dest}`);
   const needVisa = item && (item.cat === 'visa' || item.cat === 'evisa' || item.cat === 'eta');
   const rows: { id: string; t: string; s?: string }[] = [
-    { id: 'pass', t: l('Pasaport, dönüşten sonra en az 6 ay geçerli', 'Passport valid 6+ months after return', 'Pass 6+ Monate gültig', 'Pasaporte válido 6+ meses', 'Паспорт действует 6+ мес.'), s: l('Bazı ülkeler 3 ay ister; 6 ay en güvenlisi.', 'Some ask 3 months; 6 is safest.', 'Manche verlangen 3 Monate.', 'Algunos piden 3 meses.', 'Некоторые просят 3 мес.') },
-    ...(item?.id ? [{ id: 'idc', t: l('Çipli kimlik kartı (kimlikle giriş)', 'National ID card (ID entry)', 'Personalausweis', 'DNI', 'ID-карта') }] : []),
-    ...(needVisa ? [{ id: 'visa', t: item?.cat === 'visa' ? l('Konsolosluk vizesi', 'Consular visa', 'Konsulatsvisum', 'Visado consular', 'Консульская виза') : item?.cat === 'eta' ? l('ETA / elektronik seyahat izni', 'ETA / travel authorisation', 'ETA', 'ETA', 'ETA') : l('E-vize çıktısı', 'eVisa printout', 'eVisum-Ausdruck', 'eVisa impresa', 'eVisa распечатка') }] : []),
-    ...(item?.cat === 'voa' ? [{ id: 'voa', t: l('Kapıda vize ücreti (nakit) ve vesikalık', 'Visa-on-arrival fee (cash) and photo', 'Gebühr bar + Foto', 'Tasa en efectivo y foto', 'Сбор наличными и фото') }] : []),
-    { id: 'ins', t: intel.waterAndHealth.insuranceRequired ? l('Seyahat sağlık sigortası (zorunlu)', 'Travel health insurance (required)', 'Reiseversicherung (Pflicht)', 'Seguro (obligatorio)', 'Страховка (обязательна)') : l('Seyahat sağlık sigortası', 'Travel health insurance', 'Reiseversicherung', 'Seguro de viaje', 'Страховка') },
-    { id: 'ret', t: l('Dönüş ya da devam bileti', 'Return or onward ticket', 'Rück- oder Weiterflug', 'Billete de vuelta', 'Обратный билет') },
-    { id: 'stay', t: l('Konaklama belgesi (rezervasyon)', 'Proof of accommodation', 'Unterkunftsnachweis', 'Reserva de alojamiento', 'Бронь жилья') },
-    { id: 'fund', t: l('Yeterli para / kart', 'Proof of funds / cards', 'Geldnachweis', 'Fondos suficientes', 'Средства') },
-    ...(intel.waterAndHealth.vaccines.length ? [{ id: 'vax', t: l('Aşı kartı', 'Vaccination card', 'Impfpass', 'Cartilla de vacunas', 'Прививки'), s: intel.waterAndHealth.vaccines.join(', ') }] : []),
-    { id: 'copy', t: l('Belgelerin dijital kopyası (bulutta)', 'Digital copies of documents (cloud)', 'Digitale Kopien', 'Copias digitales', 'Цифровые копии') }
+    { id: 'pass', t: l('Pasaport, dönüşten sonra en az 6 ay geçerli', 'Passport valid 6+ months after return', 'Pass 6+ Monate gültig', 'Pasaporte válido 6+ meses', 'Паспорт действует 6+ мес.', 'Passaporte válido por 6+ meses'), s: l('Bazı ülkeler 3 ay ister; 6 ay en güvenlisi.', 'Some ask 3 months; 6 is safest.', 'Manche verlangen 3 Monate.', 'Algunos piden 3 meses.', 'Некоторые просят 3 мес.', 'Alguns pedem 3 meses.') },
+    ...(item?.id ? [{ id: 'idc', t: l('Çipli kimlik kartı (kimlikle giriş)', 'National ID card (ID entry)', 'Personalausweis', 'DNI', 'ID-карта', 'Identidade') }] : []),
+    ...(needVisa ? [{ id: 'visa', t: item?.cat === 'visa' ? l('Konsolosluk vizesi', 'Consular visa', 'Konsulatsvisum', 'Visado consular', 'Консульская виза', 'Visto consular') : item?.cat === 'eta' ? l('ETA / elektronik seyahat izni', 'ETA / travel authorisation', 'ETA', 'ETA', 'ETA', 'ETA') : l('E-vize çıktısı', 'eVisa printout', 'eVisum-Ausdruck', 'eVisa impresa', 'eVisa распечатка', 'e-Visa impresso') }] : []),
+    ...(item?.cat === 'voa' ? [{ id: 'voa', t: l('Kapıda vize ücreti (nakit) ve vesikalık', 'Visa-on-arrival fee (cash) and photo', 'Gebühr bar + Foto', 'Tasa en efectivo y foto', 'Сбор наличными и фото', 'Taxa em dinheiro e foto') }] : []),
+    { id: 'ins', t: intel.waterAndHealth.insuranceRequired ? l('Seyahat sağlık sigortası (zorunlu)', 'Travel health insurance (required)', 'Reiseversicherung (Pflicht)', 'Seguro (obligatorio)', 'Страховка (обязательна)', 'Seguro (obrigatório)') : l('Seyahat sağlık sigortası', 'Travel health insurance', 'Reiseversicherung', 'Seguro de viaje', 'Страховка', 'Seguro viagem') },
+    { id: 'ret', t: l('Dönüş ya da devam bileti', 'Return or onward ticket', 'Rück- oder Weiterflug', 'Billete de vuelta', 'Обратный билет', 'Passagem de volta') },
+    { id: 'stay', t: l('Konaklama belgesi (rezervasyon)', 'Proof of accommodation', 'Unterkunftsnachweis', 'Reserva de alojamiento', 'Бронь жилья', 'Reserva de hospedagem') },
+    { id: 'fund', t: l('Yeterli para / kart', 'Proof of funds / cards', 'Geldnachweis', 'Fondos suficientes', 'Средства', 'Recursos financeiros suficientes') },
+    ...(intel.waterAndHealth.vaccines.length ? [{ id: 'vax', t: l('Aşı kartı', 'Vaccination card', 'Impfpass', 'Cartilla de vacunas', 'Прививки', 'Carteira de vacinação'), s: intel.waterAndHealth.vaccines.join(', ') }] : []),
+    { id: 'copy', t: l('Belgelerin dijital kopyası (bulutta)', 'Digital copies of documents (cloud)', 'Digitale Kopien', 'Copias digitales', 'Цифровые копии', 'Cópias digitais') }
   ];
   const done = rows.filter((r) => ck.set.has(r.id)).length;
   return (
     <div className="vz-stack">
       <div className="vz-row-flex" style={{ alignItems: 'flex-end' }}>
-        <div style={{ flex: 1, minWidth: 220 }}><DestSelect id="vz-dc-d" value={dest} onChange={setDest} label={l('Nereye?', 'Where to?', 'Wohin?', '¿A dónde?', 'Куда?')} /></div>
+        <div style={{ flex: 1, minWidth: 220 }}><DestSelect id="vz-dc-d" value={dest} onChange={setDest} label={l('Nereye?', 'Where to?', 'Wohin?', '¿A dónde?', 'Куда?', 'Para onde?')} /></div>
         <VisaBadge item={item} big />
       </div>
-      <b>{l(`${done}/${rows.length} hazır`, `${done}/${rows.length} ready`, `${done}/${rows.length} bereit`, `${done}/${rows.length} listo`, `${done}/${rows.length} готово`)}</b>
+      <b>{l(`${done}/${rows.length} hazır`, `${done}/${rows.length} ready`, `${done}/${rows.length} bereit`, `${done}/${rows.length} listo`, `${done}/${rows.length} готово`, `${done}/${rows.length} pronto`)}</b>
       <div className="vz-list">{rows.map((r) => <Check key={r.id} id={`dc-${r.id}`} on={ck.set.has(r.id)} onToggle={() => ck.toggle(r.id)} sub={r.s}>{r.t}</Check>)}</div>
     </div>
   );
@@ -282,10 +282,10 @@ const FxView: React.FC<{ passport: string; dest: string }> = ({ passport, dest }
         ))}
       </Chips>
       <div className="vz-fx">
-        <Field label={l('Tutar', 'Amount', 'Betrag', 'Importe', 'Сумма')} htmlFor="vz-fx-a"><input id="vz-fx-a" inputMode="decimal" className="vz-input" value={amt} onChange={(e) => setAmt(e.target.value)} /></Field>
-        <Field label={l('Bu paradan', 'From', 'Von', 'De', 'Из')} htmlFor="vz-fx-f"><select id="vz-fx-f" className="vz-select" value={from} onChange={(e) => setFrom(e.target.value)}>{curs.map((c) => <option key={c} value={c}>{c} · {curName(c)}</option>)}</select></Field>
-        <button type="button" className="vz-iconbtn" onClick={() => { setFrom(to); setTo(from); }} aria-label={l('Yer değiştir', 'Swap', 'Tauschen', 'Intercambiar', 'Поменять')} style={{ alignSelf: 'flex-end', marginBottom: 3 }}><Icon name="fx" size={18} duo={false} /></button>
-        <Field label={l('Bu paraya', 'To', 'Nach', 'A', 'В')} htmlFor="vz-fx-t"><select id="vz-fx-t" className="vz-select" value={to} onChange={(e) => setTo(e.target.value)}>{curs.map((c) => <option key={c} value={c}>{c} · {curName(c)}</option>)}</select></Field>
+        <Field label={l('Tutar', 'Amount', 'Betrag', 'Importe', 'Сумма', 'Valor')} htmlFor="vz-fx-a"><input id="vz-fx-a" inputMode="decimal" className="vz-input" value={amt} onChange={(e) => setAmt(e.target.value)} /></Field>
+        <Field label={l('Bu paradan', 'From', 'Von', 'De', 'Из', 'De')} htmlFor="vz-fx-f"><select id="vz-fx-f" className="vz-select" value={from} onChange={(e) => setFrom(e.target.value)}>{curs.map((c) => <option key={c} value={c}>{c} · {curName(c)}</option>)}</select></Field>
+        <button type="button" className="vz-iconbtn" onClick={() => { setFrom(to); setTo(from); }} aria-label={l('Yer değiştir', 'Swap', 'Tauschen', 'Intercambiar', 'Поменять', 'Inverter')} style={{ alignSelf: 'flex-end', marginBottom: 3 }}><Icon name="fx" size={18} duo={false} /></button>
+        <Field label={l('Bu paraya', 'To', 'Nach', 'A', 'В', 'Para')} htmlFor="vz-fx-t"><select id="vz-fx-t" className="vz-select" value={to} onChange={(e) => setTo(e.target.value)}>{curs.map((c) => <option key={c} value={c}>{c} · {curName(c)}</option>)}</select></Field>
       </div>
       <Card tone="sea">
         <span className="vz-row-flex" style={{ gap: 8 }}>
@@ -296,10 +296,10 @@ const FxView: React.FC<{ passport: string; dest: string }> = ({ passport, dest }
           <span className="vz-muted">{curName(to)}</span>
         </span>
         <b style={{ fontSize: 30, letterSpacing: '-0.02em' }}>{ok ? `${fmtNum(n * rate, language, 2)} ${to}` : '—'}</b>
-        <span className="vz-muted">{ok ? `1 ${from} = ${fmtNum(rate, language, 4)} ${to}` : l('Bu para birimi için kur bulunamadı', 'No rate for this currency', 'Kein Kurs', 'Sin tipo de cambio', 'Нет курса')}</span>
+        <span className="vz-muted">{ok ? `1 ${from} = ${fmtNum(rate, language, 4)} ${to}` : l('Bu para birimi için kur bulunamadı', 'No rate for this currency', 'Kein Kurs', 'Sin tipo de cambio', 'Нет курса', 'Sem cotação')}</span>
         <span className="vz-row-flex" style={{ gap: 8 }}>
-          <span className="vz-muted" style={{ fontSize: 12.5 }}>{updatedAt ? l(`Güncelleme: ${new Date(updatedAt).toLocaleString(language)}`, `Updated: ${new Date(updatedAt).toLocaleString(language)}`, `Stand: ${new Date(updatedAt).toLocaleString(language)}`, `Actualizado: ${new Date(updatedAt).toLocaleString(language)}`, `Обновлено: ${new Date(updatedAt).toLocaleString(language)}`) : l('Kayıtlı kurlar', 'Stored rates', 'Gespeicherte Kurse', 'Tipos guardados', 'Сохранённые курсы')}</span>
-          <Btn small variant="ghost" icon="fx" disabled={refreshing} onClick={() => { setRefreshing(true); refreshLiveFx(true).finally(() => setRefreshing(false)); }}>{refreshing ? l('Yenileniyor…', 'Refreshing…', 'Lädt…', 'Actualizando…', 'Обновление…') : l('Kurları yenile', 'Refresh rates', 'Kurse aktualisieren', 'Actualizar', 'Обновить')}</Btn>
+          <span className="vz-muted" style={{ fontSize: 12.5 }}>{updatedAt ? l(`Güncelleme: ${new Date(updatedAt).toLocaleString(language)}`, `Updated: ${new Date(updatedAt).toLocaleString(language)}`, `Stand: ${new Date(updatedAt).toLocaleString(language)}`, `Actualizado: ${new Date(updatedAt).toLocaleString(language)}`, `Обновлено: ${new Date(updatedAt).toLocaleString(language)}`, `Atualizado: ${new Date(updatedAt).toLocaleString(language)}`) : l('Kayıtlı kurlar', 'Stored rates', 'Gespeicherte Kurse', 'Tipos guardados', 'Сохранённые курсы', 'Cotações salvas')}</span>
+          <Btn small variant="ghost" icon="fx" disabled={refreshing} onClick={() => { setRefreshing(true); refreshLiveFx(true).finally(() => setRefreshing(false)); }}>{refreshing ? l('Yenileniyor…', 'Refreshing…', 'Lädt…', 'Actualizando…', 'Обновление…', 'Atualizando…') : l('Kurları yenile', 'Refresh rates', 'Kurse aktualisieren', 'Actualizar', 'Обновить', 'Atualizar')}</Btn>
         </span>
       </Card>
       {ok && (
@@ -332,11 +332,11 @@ const TipView: React.FC<{ dest: string; setDest: (c: string) => void }> = ({ des
   const roundStep = b >= 100 ? 10 : b >= 20 ? 5 : 1;
   const tip = sit === 'taxi' && intel.tipping.rule !== 'forbidden' ? Math.ceil(b / roundStep) * roundStep - b : (b * pct) / 100;
   const ruleLabel: Record<string, string> = {
-    mandatory: l('Zorunlu / servis dahil', 'Mandatory / included', 'Pflicht', 'Obligatoria', 'Обязательно'),
-    expected: l('Beklenir', 'Expected', 'Erwartet', 'Se espera', 'Ожидается'),
-    round_up: l('Yukarı yuvarla', 'Round up', 'Aufrunden', 'Redondear', 'Округлить'),
-    optional: l('İsteğe bağlı', 'Optional', 'Optional', 'Opcional', 'По желанию'),
-    forbidden: l('Hoş karşılanmaz', 'Not done', 'Unüblich', 'No se hace', 'Не принято')
+    mandatory: l('Zorunlu / servis dahil', 'Mandatory / included', 'Pflicht', 'Obligatoria', 'Обязательно', 'Obrigatória'),
+    expected: l('Beklenir', 'Expected', 'Erwartet', 'Se espera', 'Ожидается', 'Esperada'),
+    round_up: l('Yukarı yuvarla', 'Round up', 'Aufrunden', 'Redondear', 'Округлить', 'Arredondar'),
+    optional: l('İsteğe bağlı', 'Optional', 'Optional', 'Opcional', 'По желанию', 'Opcional'),
+    forbidden: l('Hoş karşılanmaz', 'Not done', 'Unüblich', 'No se hace', 'Не принято', 'Não se dá')
   };
   return (
     <div className="vz-stack">
@@ -346,23 +346,23 @@ const TipView: React.FC<{ dest: string; setDest: (c: string) => void }> = ({ des
       </Card>
       <Chips scroll>
         {([
-          ['rest', l('Restoran', 'Restaurant', 'Restaurant', 'Restaurante', 'Ресторан')],
-          ['cafe', l('Kafe / bar', 'Café / bar', 'Café / Bar', 'Café / bar', 'Кафе / бар')],
-          ['taxi', l('Taksi', 'Taxi', 'Taxi', 'Taxi', 'Такси')],
-          ['hotel', l('Otel / rehber', 'Hotel / guide', 'Hotel / Guide', 'Hotel / guía', 'Отель / гид')]
+          ['rest', l('Restoran', 'Restaurant', 'Restaurant', 'Restaurante', 'Ресторан', 'Restaurante')],
+          ['cafe', l('Kafe / bar', 'Café / bar', 'Café / Bar', 'Café / bar', 'Кафе / бар', 'Café / bar')],
+          ['taxi', l('Taksi', 'Taxi', 'Taxi', 'Taxi', 'Такси', 'Táxi')],
+          ['hotel', l('Otel / rehber', 'Hotel / guide', 'Hotel / Guide', 'Hotel / guía', 'Отель / гид', 'Hotel / guia')]
         ] as const).map(([k, t]) => <Chip key={k} on={sit === k} onClick={() => pickSit(k)}>{t}</Chip>)}
       </Chips>
-      {sit === 'taxi' && <p className="vz-muted" style={{ fontSize: 14 }}>{intel.tipping.rule === 'forbidden' ? l('Bu ülkede taksiye bahşiş verilmez.', 'Tipping taxis isn’t done here.', 'Hier unüblich.', 'Aquí no se da propina.', 'Здесь не принято.') : l('Taksilerde çoğu yerde ücret yukarı yuvarlanır.', 'In most places you just round the fare up.', 'Meist wird aufgerundet.', 'Normalmente se redondea.', 'Обычно округляют.')}</p>}
-      {sit === 'hotel' && <p className="vz-muted" style={{ fontSize: 14 }}>{intel.tipping.rule === 'forbidden' ? l('Bu ülkede bahşiş hoş karşılanmaz.', 'Tipping isn’t welcome here.', 'Hier unüblich.', 'No es costumbre.', 'Здесь не принято.') : l('Bavul taşıyan görevliye ya da tur rehberine genelde küçük, sabit bir miktar bırakılır; oranı kendin belirle.', 'Porters and guides usually get a small fixed amount; set your own percentage.', 'Meist ein kleiner fester Betrag.', 'Suele darse una pequeña cantidad fija.', 'Обычно небольшая фиксированная сумма.')}</p>}
+      {sit === 'taxi' && <p className="vz-muted" style={{ fontSize: 14 }}>{intel.tipping.rule === 'forbidden' ? l('Bu ülkede taksiye bahşiş verilmez.', 'Tipping taxis isn’t done here.', 'Hier unüblich.', 'Aquí no se da propina.', 'Здесь не принято.', 'Aqui não se dá gorjeta.') : l('Taksilerde çoğu yerde ücret yukarı yuvarlanır.', 'In most places you just round the fare up.', 'Meist wird aufgerundet.', 'Normalmente se redondea.', 'Обычно округляют.', 'Normalmente se arredonda o valor.')}</p>}
+      {sit === 'hotel' && <p className="vz-muted" style={{ fontSize: 14 }}>{intel.tipping.rule === 'forbidden' ? l('Bu ülkede bahşiş hoş karşılanmaz.', 'Tipping isn’t welcome here.', 'Hier unüblich.', 'No es costumbre.', 'Здесь не принято.', 'Não é costume.') : l('Bavul taşıyan görevliye ya da tur rehberine genelde küçük, sabit bir miktar bırakılır; oranı kendin belirle.', 'Porters and guides usually get a small fixed amount; set your own percentage.', 'Meist ein kleiner fester Betrag.', 'Suele darse una pequeña cantidad fija.', 'Обычно небольшая фиксированная сумма.', 'Costuma-se dar um pequeno valor fixo.')}</p>}
       <div className="vz-formgrid">
-        <Field label={l(`Hesap (${cur?.code || ''})`, `Bill (${cur?.code || ''})`, `Rechnung (${cur?.code || ''})`, `Cuenta (${cur?.code || ''})`, `Счёт (${cur?.code || ''})`)} htmlFor="vz-tip-b"><input id="vz-tip-b" inputMode="decimal" className="vz-input" value={bill} onChange={(e) => setBill(e.target.value)} /></Field>
-        <Field label={l('Bahşiş oranı (%)', 'Tip (%)', 'Trinkgeld (%)', 'Propina (%)', 'Чаевые (%)')} htmlFor="vz-tip-p"><input id="vz-tip-p" type="number" min={0} max={40} className="vz-input" value={pct} onChange={(e) => setPct(Math.max(0, Number(e.target.value) || 0))} /></Field>
-        <Field label={l('Kişi', 'People', 'Personen', 'Personas', 'Человек')} htmlFor="vz-tip-n"><input id="vz-tip-n" type="number" min={1} max={30} className="vz-input" value={people} onChange={(e) => setPeople(Math.max(1, Number(e.target.value) || 1))} /></Field>
+        <Field label={l(`Hesap (${cur?.code || ''})`, `Bill (${cur?.code || ''})`, `Rechnung (${cur?.code || ''})`, `Cuenta (${cur?.code || ''})`, `Счёт (${cur?.code || ''})`, `Conta (${cur?.code || ''})`)} htmlFor="vz-tip-b"><input id="vz-tip-b" inputMode="decimal" className="vz-input" value={bill} onChange={(e) => setBill(e.target.value)} /></Field>
+        <Field label={l('Bahşiş oranı (%)', 'Tip (%)', 'Trinkgeld (%)', 'Propina (%)', 'Чаевые (%)', 'Gorjeta (%)')} htmlFor="vz-tip-p"><input id="vz-tip-p" type="number" min={0} max={40} className="vz-input" value={pct} onChange={(e) => setPct(Math.max(0, Number(e.target.value) || 0))} /></Field>
+        <Field label={l('Kişi', 'People', 'Personen', 'Personas', 'Человек', 'Pessoas')} htmlFor="vz-tip-n"><input id="vz-tip-n" type="number" min={1} max={30} className="vz-input" value={people} onChange={(e) => setPeople(Math.max(1, Number(e.target.value) || 1))} /></Field>
       </div>
       <div className="vz-stats">
-        <Stat value={`${fmtNum(tip, language, 2)} ${cur?.symbol || ''}`} label={l('Bahşiş', 'Tip', 'Trinkgeld', 'Propina', 'Чаевые')} icon="receipt" />
-        <Stat value={`${fmtNum(b + tip, language, 2)} ${cur?.symbol || ''}`} label={l('Toplam', 'Total', 'Gesamt', 'Total', 'Итого')} icon="wallet" />
-        {people > 1 && <Stat value={`${fmtNum((b + tip) / people, language, 2)} ${cur?.symbol || ''}`} label={l('Kişi başı', 'Per person', 'Pro Person', 'Por persona', 'На человека')} icon="people" tone="ok" />}
+        <Stat value={`${fmtNum(tip, language, 2)} ${cur?.symbol || ''}`} label={l('Bahşiş', 'Tip', 'Trinkgeld', 'Propina', 'Чаевые', 'Gorjeta')} icon="receipt" />
+        <Stat value={`${fmtNum(b + tip, language, 2)} ${cur?.symbol || ''}`} label={l('Toplam', 'Total', 'Gesamt', 'Total', 'Итого', 'Total')} icon="wallet" />
+        {people > 1 && <Stat value={`${fmtNum((b + tip) / people, language, 2)} ${cur?.symbol || ''}`} label={l('Kişi başı', 'Per person', 'Pro Person', 'Por persona', 'На человека', 'Por pessoa')} icon="people" tone="ok" />}
       </div>
     </div>
   );
@@ -378,23 +378,23 @@ const PlugView: React.FC<{ dest: string; setDest: (c: string) => void }> = ({ de
     <div className="vz-stack">
       <DestSelect id="vz-plug-d" value={dest} onChange={setDest} />
       <div className="vz-stats">
-        <Stat value={intel.plugs.types.join(', ')} label={l('Fiş tipi', 'Plug type', 'Steckertyp', 'Enchufe', 'Тип розетки')} icon="plug" />
-        <Stat value={`${intel.plugs.voltage} · ${intel.plugs.frequency}`} label={l('Voltaj', 'Voltage', 'Spannung', 'Voltaje', 'Напряжение')} icon="spark" />
-        <Stat value={intel.plugs.needsAdapterFromTR ? l('Gerekli', 'Needed', 'Nötig', 'Necesario', 'Нужен') : l('Gerekmez', 'Not needed', 'Nicht nötig', 'No', 'Не нужен')} label={l('C/F fişe adaptör', 'Adapter for C/F plugs', 'Adapter C/F', 'Adaptador C/F', 'Адаптер C/F')} icon="plug" tone={intel.plugs.needsAdapterFromTR ? 'warn' : 'ok'} />
-        <Stat value={`${ins.internet.mobileSpeedMbps} Mbps`} label={l('Mobil internet', 'Mobile internet', 'Mobiles Internet', 'Internet móvil', 'Моб. интернет')} icon="wifi" />
-        <Stat value={String(intel.connectivity.avgGbPriceUsd).startsWith("$") ? String(intel.connectivity.avgGbPriceUsd) : `$${intel.connectivity.avgGbPriceUsd}`} label={l('1 GB ortalama', 'Avg per GB', 'Ø pro GB', 'Media por GB', 'Средне за ГБ')} icon="coin" />
+        <Stat value={intel.plugs.types.join(', ')} label={l('Fiş tipi', 'Plug type', 'Steckertyp', 'Enchufe', 'Тип розетки', 'Tomada')} icon="plug" />
+        <Stat value={`${intel.plugs.voltage} · ${intel.plugs.frequency}`} label={l('Voltaj', 'Voltage', 'Spannung', 'Voltaje', 'Напряжение', 'Voltagem')} icon="spark" />
+        <Stat value={intel.plugs.needsAdapterFromTR ? l('Gerekli', 'Needed', 'Nötig', 'Necesario', 'Нужен', 'Necessário') : l('Gerekmez', 'Not needed', 'Nicht nötig', 'No', 'Не нужен', 'Não')} label={l('C/F fişe adaptör', 'Adapter for C/F plugs', 'Adapter C/F', 'Adaptador C/F', 'Адаптер C/F', 'Adaptador C/F')} icon="plug" tone={intel.plugs.needsAdapterFromTR ? 'warn' : 'ok'} />
+        <Stat value={`${ins.internet.mobileSpeedMbps} Mbps`} label={l('Mobil internet', 'Mobile internet', 'Mobiles Internet', 'Internet móvil', 'Моб. интернет', 'Internet móvel')} icon="wifi" />
+        <Stat value={String(intel.connectivity.avgGbPriceUsd).startsWith("$") ? String(intel.connectivity.avgGbPriceUsd) : `$${intel.connectivity.avgGbPriceUsd}`} label={l('1 GB ortalama', 'Avg per GB', 'Ø pro GB', 'Media por GB', 'Средне за ГБ', 'Média por GB')} icon="coin" />
       </div>
       <div className="vz-plugs">
         {intel.plugs.types.map((t) => <PlugDiagram key={t} type={t} />)}
         {intel.plugs.needsAdapterFromTR && (
           <div className="vz-plugs-vs">
-            <span className="vz-muted" style={{ fontSize: 13 }}>{l('Senin fişin (Türkiye, Avrupa)', 'Your plug (Turkey, Europe)', 'Dein Stecker (EU)', 'Tu enchufe (Europa)', 'Ваша вилка (Европа)')}</span>
+            <span className="vz-muted" style={{ fontSize: 13 }}>{l('Senin fişin (Türkiye, Avrupa)', 'Your plug (Turkey, Europe)', 'Dein Stecker (EU)', 'Tu enchufe (Europa)', 'Ваша вилка (Европа)', 'Sua tomada (Europa)')}</span>
             <PlugDiagram type="F" />
           </div>
         )}
       </div>
       <p>{intel.plugs.socketDesc}</p>
-      {intel.connectivity.topCarriers.length > 0 && <Card title={l('Operatörler', 'Carriers', 'Anbieter', 'Operadores', 'Операторы')} icon="phone"><Tags items={intel.connectivity.topCarriers} /></Card>}
+      {intel.connectivity.topCarriers.length > 0 && <Card title={l('Operatörler', 'Carriers', 'Anbieter', 'Operadores', 'Операторы', 'Operadoras')} icon="phone"><Tags items={intel.connectivity.topCarriers} /></Card>}
       {intel.connectivity.airportSimTrapWarning && <div className="vz-note"><Icon name="alert" size={18} duo={false} /><span>{intel.connectivity.airportSimTrapWarning}</span></div>}
       {esims.length > 0 && (
         <div className="vz-grid">
@@ -415,15 +415,15 @@ const SosView: React.FC<{ passport: string; dest: string; setDest: (c: string) =
   const ins = useMemo(() => getCountryInsights(dest, language), [dest, language]);
   const cons = useMemo(() => getConsularEmergencyInfo(passport, language), [passport, language]);
   const nums: [string, string | null | undefined, string][] = [
-    [l('Genel acil', 'General emergency', 'Notruf', 'Emergencia', 'Общий'), v?.emergency.general.value || ins.safety.emergencyNumbers.general, 'sos'],
-    [l('Polis', 'Police', 'Polizei', 'Policía', 'Полиция'), v?.emergency.police.value || ins.safety.emergencyNumbers.police, 'shield'],
-    [l('Ambulans', 'Ambulance', 'Rettung', 'Ambulancia', 'Скорая'), v?.emergency.ambulance.value || ins.safety.emergencyNumbers.ambulance, 'heart'],
-    [l('İtfaiye', 'Fire', 'Feuerwehr', 'Bomberos', 'Пожарные'), v?.emergency.fire.value, 'alert'],
-    [l('Turist polisi', 'Tourist police', 'Touristenpolizei', 'Policía turística', 'Туристическая полиция'), v?.emergency.tourist_police.value, 'people']
+    [l('Genel acil', 'General emergency', 'Notruf', 'Emergencia', 'Общий', 'Emergência'), v?.emergency.general.value || ins.safety.emergencyNumbers.general, 'sos'],
+    [l('Polis', 'Police', 'Polizei', 'Policía', 'Полиция', 'Polícia'), v?.emergency.police.value || ins.safety.emergencyNumbers.police, 'shield'],
+    [l('Ambulans', 'Ambulance', 'Rettung', 'Ambulancia', 'Скорая', 'Ambulância'), v?.emergency.ambulance.value || ins.safety.emergencyNumbers.ambulance, 'heart'],
+    [l('İtfaiye', 'Fire', 'Feuerwehr', 'Bomberos', 'Пожарные', 'Bombeiros'), v?.emergency.fire.value, 'alert'],
+    [l('Turist polisi', 'Tourist police', 'Touristenpolizei', 'Policía turística', 'Туристическая полиция', 'Polícia turística'), v?.emergency.tourist_police.value, 'people']
   ];
   return (
     <div className="vz-stack">
-      <DestSelect id="vz-sos-d" value={dest} onChange={setDest} label={l('Şu an hangi ülkedesin?', 'Which country are you in?', 'In welchem Land bist du?', '¿En qué país estás?', 'В какой вы стране?')} />
+      <DestSelect id="vz-sos-d" value={dest} onChange={setDest} label={l('Şu an hangi ülkedesin?', 'Which country are you in?', 'In welchem Land bist du?', '¿En qué país estás?', 'В какой вы стране?', 'Em que país você está?')} />
       <List>
         {nums.filter((x) => x[1]).map(([lab, num, ic]) => (
           <Row key={lab} icon={ic} title={lab} right={<a className="vz-btn vz-btn-primary sm" href={`tel:${String(num).replace(/[^\d+]/g, '')}`}>{num}</a>} />
@@ -431,19 +431,19 @@ const SosView: React.FC<{ passport: string; dest: string; setDest: (c: string) =
       </List>
       <Card tone="sea" icon="phone" eyebrow={pick3(cons.ministryName, language)} title={pick3(cons.crisisCenterTitle, language)}>
         <div className="vz-actions">
-          {cons.hotline247 && <a className="vz-btn vz-btn-primary sm" href={`tel:${cons.hotline247.replace(/[^\d+]/g, '')}`}>{l('7/24', '24/7', '24/7', '24/7', '24/7')}: {cons.hotline247}</a>}
+          {cons.hotline247 && <a className="vz-btn vz-btn-primary sm" href={`tel:${cons.hotline247.replace(/[^\d+]/g, '')}`}>{l('7/24', '24/7', '24/7', '24/7', '24/7', '24/7')}: {cons.hotline247}</a>}
           {cons.hotlineDomestic && <span className="vz-badge tone-sea">{cons.hotlineDomestic}</span>}
-          {cons.officialPortalUrl && <LinkBtn href={cons.officialPortalUrl} small>{cons.officialPortalName || l('Resmî site', 'Official site', 'Offizielle Seite', 'Sitio oficial', 'Сайт')}</LinkBtn>}
+          {cons.officialPortalUrl && <LinkBtn href={cons.officialPortalUrl} small>{cons.officialPortalName || l('Resmî site', 'Official site', 'Offizielle Seite', 'Sitio oficial', 'Сайт', 'Site oficial')}</LinkBtn>}
         </div>
       </Card>
-      <Card icon="pin" title={l(`${getCountryName(passport, language)} temsilciliği · ${getCountryName(dest, language)}`, `${getCountryName(passport, language)} embassy in ${getCountryName(dest, language)}`, `Botschaft (${getCountryName(passport, language)}) in ${getCountryName(dest, language)}`, `Embajada de ${getCountryName(passport, language)} en ${getCountryName(dest, language)}`, `Посольство (${getCountryName(passport, language)}) — ${getCountryName(dest, language)}`)}>
-        <p className="vz-muted">{l('Pasaport kaybı, tutuklanma ya da ciddi bir sağlık sorununda büyükelçilik ya da konsolosluk sana yardım eder. Haritada en yakınını bul.', 'Your embassy or consulate helps with lost passports, arrests or serious health issues. Find the nearest on the map.', 'Botschaft hilft bei Passverlust, Festnahme, Krankheit.', 'Tu embajada ayuda con pasaportes perdidos y emergencias.', 'Посольство помогает при утере паспорта и ЧП.')}</p>
+      <Card icon="pin" title={l(`${getCountryName(passport, language)} temsilciliği · ${getCountryName(dest, language)}`, `${getCountryName(passport, language)} embassy in ${getCountryName(dest, language)}`, `Botschaft (${getCountryName(passport, language)}) in ${getCountryName(dest, language)}`, `Embajada de ${getCountryName(passport, language)} en ${getCountryName(dest, language)}`, `Посольство (${getCountryName(passport, language)}) — ${getCountryName(dest, language)}`, `Embaixada de ${getCountryName(passport, language)} em ${getCountryName(dest, language)}`)}>
+        <p className="vz-muted">{l('Pasaport kaybı, tutuklanma ya da ciddi bir sağlık sorununda büyükelçilik ya da konsolosluk sana yardım eder. Haritada en yakınını bul.', 'Your embassy or consulate helps with lost passports, arrests or serious health issues. Find the nearest on the map.', 'Botschaft hilft bei Passverlust, Festnahme, Krankheit.', 'Tu embajada ayuda con pasaportes perdidos y emergencias.', 'Посольство помогает при утере паспорта и ЧП.', 'A embaixada do seu país ajuda com passaportes perdidos e emergências.')}</p>
         <div className="vz-actions">
-          <LinkBtn small icon="map" href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${getCountryName(passport, 'en')} embassy ${getCountryName(dest, 'en')}`)}`}>{l('Büyükelçiliği haritada bul', 'Find the embassy on the map', 'Botschaft auf Karte', 'Buscar embajada', 'Найти на карте')}</LinkBtn>
-          <LinkBtn small variant="ghost" icon="map" href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${getCountryName(passport, 'en')} consulate ${getCountryName(dest, 'en')}`)}`}>{l('Konsolosluklar', 'Consulates', 'Konsulate', 'Consulados', 'Консульства')}</LinkBtn>
+          <LinkBtn small icon="map" href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${getCountryName(passport, 'en')} embassy ${getCountryName(dest, 'en')}`)}`}>{l('Büyükelçiliği haritada bul', 'Find the embassy on the map', 'Botschaft auf Karte', 'Buscar embajada', 'Найти на карте', 'Buscar embaixada')}</LinkBtn>
+          <LinkBtn small variant="ghost" icon="map" href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${getCountryName(passport, 'en')} consulate ${getCountryName(dest, 'en')}`)}`}>{l('Konsolosluklar', 'Consulates', 'Konsulate', 'Consulados', 'Консульства', 'Consulados')}</LinkBtn>
         </div>
       </Card>
-      <div className="vz-note"><Icon name="info" size={18} duo={false} /><span>{l('Numaralar resmî kaynaklardan derlenir; acil bir durumda önce yerel genel acil numarasını ara.', 'Numbers come from official sources; in an emergency, call the local general number first.', 'Im Notfall zuerst die lokale Notrufnummer wählen.', 'En emergencia, llama primero al número local.', 'В экстренной ситуации звоните на местный номер.')}</span></div>
+      <div className="vz-note"><Icon name="info" size={18} duo={false} /><span>{l('Numaralar resmî kaynaklardan derlenir; acil bir durumda önce yerel genel acil numarasını ara.', 'Numbers come from official sources; in an emergency, call the local general number first.', 'Im Notfall zuerst die lokale Notrufnummer wählen.', 'En emergencia, llama primero al número local.', 'В экстренной ситуации звоните на местный номер.', 'Em uma emergência, ligue primeiro para o número local.')}</span></div>
     </div>
   );
 };
@@ -455,7 +455,7 @@ const LossView: React.FC<{ passport: string; onOpenInfo: (p: string) => void }> 
   const steps = [cons.steps.policeReport, cons.steps.photos, cons.steps.embassySubmission, cons.steps.travelDocIssuance].map((s) => pick3(s, language));
   return (
     <div className="vz-stack">
-      <Card title={l('Pasaportunu kaybettiysen', 'If you lose your passport', 'Bei Passverlust', 'Si pierdes el pasaporte', 'Если потеряли паспорт')} icon="passport" tone="sea">
+      <Card title={l('Pasaportunu kaybettiysen', 'If you lose your passport', 'Bei Passverlust', 'Si pierdes el pasaporte', 'Если потеряли паспорт', 'Se você perder o passaporte')} icon="passport" tone="sea">
         <div className="vz-steps">
           {steps.map((s, i) => (
             <div className="vz-step" key={i}><span className="vz-step-n">{i + 1}</span><div className="vz-step-b"><p>{s}</p></div></div>
@@ -464,16 +464,16 @@ const LossView: React.FC<{ passport: string; onOpenInfo: (p: string) => void }> 
         <p className="vz-muted">{pick3(cons.emergencyDocName, language)} · {pick3(cons.emergencyDocValidity, language)}</p>
         <div className="vz-actions">
           {cons.hotline247 && <a className="vz-btn vz-btn-primary sm" href={`tel:${cons.hotline247.replace(/[^\d+]/g, '')}`}>{cons.hotline247}</a>}
-          <Btn variant="soft" small onClick={() => onOpenInfo('passport_lost')}>{l('Rehberin tamamı', 'Full guide', 'Ganzer Leitfaden', 'Guía completa', 'Полный гид')}</Btn>
+          <Btn variant="soft" small onClick={() => onOpenInfo('passport_lost')}>{l('Rehberin tamamı', 'Full guide', 'Ganzer Leitfaden', 'Guía completa', 'Полный гид', 'Guia completo')}</Btn>
         </div>
       </Card>
-      <Card title={l('Vizen reddedildiyse', 'If your visa was refused', 'Bei Visumablehnung', 'Si te denegaron el visado', 'Если отказали в визе')} icon="scale">
+      <Card title={l('Vizen reddedildiyse', 'If your visa was refused', 'Bei Visumablehnung', 'Si te denegaron el visado', 'Если отказали в визе', 'Se o seu visto foi negado')} icon="scale">
         <Bullets items={[
-          l('Ret yazısındaki gerekçe maddesini not al; itiraz bu maddeye cevap vermeli.', 'Note the refusal reason; your appeal must answer it.', 'Ablehnungsgrund notieren.', 'Anota el motivo de la denegación.', 'Запишите причину отказа.'),
-          l('İtiraz süresi genellikle kısadır (Schengen’de çoğunlukla 15–30 gün).', 'Appeal windows are short (often 15–30 days for Schengen).', 'Widerspruchsfristen sind kurz.', 'Los plazos son cortos.', 'Сроки короткие.'),
-          l('Eksik belgeyi tamamlayıp yeniden başvurmak çoğu zaman itirazdan daha hızlıdır.', 'Reapplying with the missing documents is often faster than appealing.', 'Neuantrag oft schneller.', 'Reaplicar suele ser más rápido.', 'Повторная подача часто быстрее.')
+          l('Ret yazısındaki gerekçe maddesini not al; itiraz bu maddeye cevap vermeli.', 'Note the refusal reason; your appeal must answer it.', 'Ablehnungsgrund notieren.', 'Anota el motivo de la denegación.', 'Запишите причину отказа.', 'Anote o motivo da recusa.'),
+          l('İtiraz süresi genellikle kısadır (Schengen’de çoğunlukla 15–30 gün).', 'Appeal windows are short (often 15–30 days for Schengen).', 'Widerspruchsfristen sind kurz.', 'Los plazos son cortos.', 'Сроки короткие.', 'Os prazos são curtos.'),
+          l('Eksik belgeyi tamamlayıp yeniden başvurmak çoğu zaman itirazdan daha hızlıdır.', 'Reapplying with the missing documents is often faster than appealing.', 'Neuantrag oft schneller.', 'Reaplicar suele ser más rápido.', 'Повторная подача часто быстрее.', 'Pedir de novo costuma ser mais rápido.')
         ]} />
-        <Btn variant="soft" small onClick={() => onOpenInfo('appeals')}>{l('İtiraz rehberini aç', 'Open the appeals guide', 'Leitfaden öffnen', 'Abrir guía', 'Открыть гид')}</Btn>
+        <Btn variant="soft" small onClick={() => onOpenInfo('appeals')}>{l('İtiraz rehberini aç', 'Open the appeals guide', 'Leitfaden öffnen', 'Abrir guía', 'Открыть гид', 'Abrir guia')}</Btn>
       </Card>
     </div>
   );
@@ -500,38 +500,38 @@ export const ToolsHub: React.FC<{ passport: string; openRequest: OpenRequest; on
   const destName = getCountryName(dest, language);
 
   const tiles: Tile[] = [
-    { id: 'trip', icon: 'plane', isNew: true, title: l('Seyahat planlayıcı', 'Trip planner', 'Reiseplaner', 'Planificador de viaje', 'Планировщик поездки'), desc: l('Uçuş fiyatı, otel, toplam bütçe', 'Flight price, stay, total budget', 'Flugpreis, Hotel, Budget', 'Vuelo, hotel, presupuesto', 'Билеты, отель, бюджет'), render: () => <TripTool passport={passport} dest={dest} onOpenCountry={onOpenCountry} /> },
-    { id: 'pack', icon: 'bag', title: l('Bavul listesi', 'Packing list', 'Packliste', 'Lista de maleta', 'Список вещей'), desc: l('Yolculuk tipine göre', 'By trip type', 'Nach Reiseart', 'Según el viaje', 'По типу поездки'), render: () => <PackView dest={dest} setDest={setDest} /> },
-    { id: 'docs', icon: 'doc', title: l('Evrak listesi', 'Document checklist', 'Dokumentenliste', 'Documentos', 'Документы'), desc: l(`${destName} için gerekenler`, `What ${destName} asks for`, `Für ${destName}`, `Para ${destName}`, `Для ${destName}`), render: () => <DocsCheckView passport={passport} dest={dest} setDest={setDest} /> },
-    { id: 'fx', icon: 'fx', title: l('Döviz çevirici', 'Currency converter', 'Währungsrechner', 'Conversor', 'Конвертер'), desc: l('Canlı kurlar', 'Live rates', 'Live-Kurse', 'Tipos en vivo', 'Живые курсы'), render: () => <FxView passport={passport} dest={dest} /> },
-    { id: 'tip', icon: 'receipt', title: l('Bahşiş', 'Tipping', 'Trinkgeld', 'Propinas', 'Чаевые'), desc: l('Ülkeye göre ne kadar', 'How much, by country', 'Wie viel je Land', 'Cuánto por país', 'Сколько по стране'), render: () => <TipView dest={dest} setDest={setDest} /> },
-    { id: 'plug', icon: 'plug', title: l('Priz & eSIM', 'Plugs & eSIM', 'Stecker & eSIM', 'Enchufes y eSIM', 'Розетки и eSIM'), desc: l('Fiş tipi, voltaj, internet', 'Plug, voltage, data', 'Stecker, Spannung, Daten', 'Enchufe, voltaje, datos', 'Розетка, напряжение'), render: () => <PlugView dest={dest} setDest={setDest} /> },
-    { id: 'sos', icon: 'sos', title: l('Acil durum', 'Emergency', 'Notfall', 'Emergencia', 'Экстренно'), desc: l('Polis, ambulans, konsolosluk', 'Police, ambulance, consulate', 'Polizei, Rettung, Konsulat', 'Policía, ambulancia', 'Полиция, скорая'), render: () => <SosView passport={passport} dest={dest} setDest={setDest} /> },
-    { id: 'loss', icon: 'shield', title: l('Pasaport kaybı & ret itirazı', 'Lost passport & refusals', 'Passverlust & Ablehnung', 'Pérdida y denegación', 'Утеря и отказ'), desc: l('Kötü günde adım adım', 'Step by step on a bad day', 'Schritt für Schritt', 'Paso a paso', 'Пошагово'), render: () => <LossView passport={passport} onOpenInfo={onOpenInfo} /> }
+    { id: 'trip', icon: 'plane', isNew: true, title: l('Seyahat planlayıcı', 'Trip planner', 'Reiseplaner', 'Planificador de viaje', 'Планировщик поездки', 'Planejador de viagem'), desc: l('Uçuş fiyatı, otel, toplam bütçe', 'Flight price, stay, total budget', 'Flugpreis, Hotel, Budget', 'Vuelo, hotel, presupuesto', 'Билеты, отель, бюджет', 'Voo, hotel, orçamento'), render: () => <TripTool passport={passport} dest={dest} onOpenCountry={onOpenCountry} /> },
+    { id: 'pack', icon: 'bag', title: l('Bavul listesi', 'Packing list', 'Packliste', 'Lista de maleta', 'Список вещей', 'Lista da mala'), desc: l('Yolculuk tipine göre', 'By trip type', 'Nach Reiseart', 'Según el viaje', 'По типу поездки', 'Conforme a viagem'), render: () => <PackView dest={dest} setDest={setDest} /> },
+    { id: 'docs', icon: 'doc', title: l('Evrak listesi', 'Document checklist', 'Dokumentenliste', 'Documentos', 'Документы', 'Documentos'), desc: l(`${destName} için gerekenler`, `What ${destName} asks for`, `Für ${destName}`, `Para ${destName}`, `Для ${destName}`, `Para ${destName}`), render: () => <DocsCheckView passport={passport} dest={dest} setDest={setDest} /> },
+    { id: 'fx', icon: 'fx', title: l('Döviz çevirici', 'Currency converter', 'Währungsrechner', 'Conversor', 'Конвертер', 'Conversor'), desc: l('Canlı kurlar', 'Live rates', 'Live-Kurse', 'Tipos en vivo', 'Живые курсы', 'Cotações ao vivo'), render: () => <FxView passport={passport} dest={dest} /> },
+    { id: 'tip', icon: 'receipt', title: l('Bahşiş', 'Tipping', 'Trinkgeld', 'Propinas', 'Чаевые', 'Gorjetas'), desc: l('Ülkeye göre ne kadar', 'How much, by country', 'Wie viel je Land', 'Cuánto por país', 'Сколько по стране', 'Quanto em cada país'), render: () => <TipView dest={dest} setDest={setDest} /> },
+    { id: 'plug', icon: 'plug', title: l('Priz & eSIM', 'Plugs & eSIM', 'Stecker & eSIM', 'Enchufes y eSIM', 'Розетки и eSIM', 'Tomadas e eSIM'), desc: l('Fiş tipi, voltaj, internet', 'Plug, voltage, data', 'Stecker, Spannung, Daten', 'Enchufe, voltaje, datos', 'Розетка, напряжение', 'Tomada, voltagem, dados'), render: () => <PlugView dest={dest} setDest={setDest} /> },
+    { id: 'sos', icon: 'sos', title: l('Acil durum', 'Emergency', 'Notfall', 'Emergencia', 'Экстренно', 'Emergência'), desc: l('Polis, ambulans, konsolosluk', 'Police, ambulance, consulate', 'Polizei, Rettung, Konsulat', 'Policía, ambulancia', 'Полиция, скорая', 'Polícia, ambulância'), render: () => <SosView passport={passport} dest={dest} setDest={setDest} /> },
+    { id: 'loss', icon: 'shield', title: l('Pasaport kaybı & ret itirazı', 'Lost passport & refusals', 'Passverlust & Ablehnung', 'Pérdida y denegación', 'Утеря и отказ', 'Perda e recusa'), desc: l('Kötü günde adım adım', 'Step by step on a bad day', 'Schritt für Schritt', 'Paso a paso', 'Пошагово', 'Passo a passo'), render: () => <LossView passport={passport} onOpenInfo={onOpenInfo} /> }
   ];
 
   return (
     <Page
-      eyebrow={l('Araçlar', 'Tools', 'Werkzeuge', 'Herramientas', 'Инструменты')}
-      title={l('Yolculuğun için her şey', 'Everything for your trip', 'Alles für deine Reise', 'Todo para tu viaje', 'Всё для поездки')}
-      sub={l('Hazırlıkta ve yoldayken lazım olan araçlar. Hepsi seçtiğin hedefe göre ayarlanır.', 'Tools for preparing and for the road, set to your chosen destination.', 'Werkzeuge für Vorbereitung und unterwegs.', 'Herramientas para preparar y viajar.', 'Инструменты для подготовки и в пути.')}
+      eyebrow={l('Araçlar', 'Tools', 'Werkzeuge', 'Herramientas', 'Инструменты', 'Ferramentas')}
+      title={l('Yolculuğun için her şey', 'Everything for your trip', 'Alles für deine Reise', 'Todo para tu viaje', 'Всё для поездки', 'Tudo para a sua viagem')}
+      sub={l('Hazırlıkta ve yoldayken lazım olan araçlar. Hepsi seçtiğin hedefe göre ayarlanır.', 'Tools for preparing and for the road, set to your chosen destination.', 'Werkzeuge für Vorbereitung und unterwegs.', 'Herramientas para preparar y viajar.', 'Инструменты для подготовки и в пути.', 'Ferramentas para se preparar e viajar.')}
       words={['Thailand', 'USA', 'Brazil', 'Egypt']}
       summary={
         <div className="vz-card" style={{ boxShadow: 'var(--vz-shadow)' }}>
           <div className="vz-row-flex" style={{ alignItems: 'flex-end' }}>
-            <div style={{ flex: 1, minWidth: 200 }}><DestSelect id="vz-tools-dest" value={dest} onChange={setDest} label={l('Hedefin', 'Your destination', 'Dein Ziel', 'Tu destino', 'Куда')} /></div>
+            <div style={{ flex: 1, minWidth: 200 }}><DestSelect id="vz-tools-dest" value={dest} onChange={setDest} label={l('Hedefin', 'Your destination', 'Dein Ziel', 'Tu destino', 'Куда', 'Seu destino')} /></div>
             <VisaBadge item={item} big />
           </div>
           <div className="vz-tags">
-            <span>{l('Priz', 'Plug', 'Stecker', 'Enchufe', 'Розетка')}: {intel.plugs.types.join(', ')}</span>
-            <span>{l('Bahşiş', 'Tip', 'Trinkgeld', 'Propina', 'Чаевые')}: {intel.tipping.standardPercent ? `%${intel.tipping.standardPercent}` : '—'}</span>
-            <span>{l('Acil', 'Emergency', 'Notruf', 'Emergencia', 'Экстренный')}: {ins.safety.emergencyNumbers.general || ins.safety.emergencyNumbers.police}</span>
-            <span>{l('Musluk suyu', 'Tap water', 'Leitungswasser', 'Agua', 'Вода')}: {intel.waterAndHealth.tapWaterSafe ? l('içilir', 'safe', 'trinkbar', 'potable', 'можно') : l('içilmez', 'not safe', 'nicht trinkbar', 'no potable', 'нельзя')}</span>
+            <span>{l('Priz', 'Plug', 'Stecker', 'Enchufe', 'Розетка', 'Tomada')}: {intel.plugs.types.join(', ')}</span>
+            <span>{l('Bahşiş', 'Tip', 'Trinkgeld', 'Propina', 'Чаевые', 'Gorjeta')}: {intel.tipping.standardPercent ? `%${intel.tipping.standardPercent}` : '—'}</span>
+            <span>{l('Acil', 'Emergency', 'Notruf', 'Emergencia', 'Экстренный', 'Emergência')}: {ins.safety.emergencyNumbers.general || ins.safety.emergencyNumbers.police}</span>
+            <span>{l('Musluk suyu', 'Tap water', 'Leitungswasser', 'Agua', 'Вода', 'Água')}: {intel.waterAndHealth.tapWaterSafe ? l('içilir', 'safe', 'trinkbar', 'potable', 'можно', 'potável') : l('içilmez', 'not safe', 'nicht trinkbar', 'no potable', 'нельзя', 'não potável')}</span>
           </div>
         </div>
       }
     >
-      <TileGrid tiles={tiles} openRequest={req} label={l('Araçlar', 'Tools', 'Werkzeuge', 'Herramientas', 'Инструменты')} />
+      <TileGrid tiles={tiles} openRequest={req} label={l('Araçlar', 'Tools', 'Werkzeuge', 'Herramientas', 'Инструменты', 'Ferramentas')} />
     </Page>
   );
 };
@@ -555,8 +555,8 @@ function TripTool({ passport, dest, onOpenCountry }: { passport: string; dest: s
   return (
     <div className="vz-stack">
       <Chips>
-        <Chip on={!multi} onClick={() => pick(false)} icon="plane">{l('Tek şehir', 'One destination', 'Ein Ziel', 'Un destino', 'Одно направление')}</Chip>
-        <Chip on={multi} onClick={() => pick(true)} icon="map">{l('Çok şehirli rota', 'Multi-city route', 'Rundreise', 'Ruta multidestino', 'Несколько городов')}</Chip>
+        <Chip on={!multi} onClick={() => pick(false)} icon="plane">{l('Tek şehir', 'One destination', 'Ein Ziel', 'Un destino', 'Одно направление', 'Um destino')}</Chip>
+        <Chip on={multi} onClick={() => pick(true)} icon="map">{l('Çok şehirli rota', 'Multi-city route', 'Rundreise', 'Ruta multidestino', 'Несколько городов', 'Roteiro com vários destinos')}</Chip>
       </Chips>
       <Suspense fallback={null}>{multi ? <MultiCity passport={passport} /> : <TripPlanner passport={passport} dest={dest} onOpenCountry={onOpenCountry} />}</Suspense>
     </div>

@@ -362,6 +362,7 @@ export async function processAssistantQuery(
   const isEn = activeLang === 'en';
   const isDe = activeLang === 'de';
   const isEs = activeLang === 'es';
+  const isPt = activeLang === 'pt';
   const isRu = activeLang === 'ru';
 
   const norm = normalizeText(rawQuery);
@@ -427,10 +428,10 @@ export async function processAssistantQuery(
     detectedLang: activeLang,
     detectedCountry: code ? { code, name: getCountryName(code, activeLang), flag: getFlag(code) } : undefined
   });
-  const toursPill: AssistantActionPill = { id: 'go-tours', type: 'goto', path: 'tours', label: LL('Tur paketleri', 'Tour packages', 'Reisepakete', 'Paquetes de viaje', 'Турпакеты'), accentTone: 'amber' };
-  const tripPill = tilePill('tile-trip', 'nomad', 'trip', LL('Seyahat planlayıcı', 'Trip planner', 'Reiseplaner', 'Planificador de viaje', 'Планировщик поездки'), 'teal');
-  const routePill = tilePill('tile-planner', 'plan', 'planner', LL('Rota planlayıcı', 'Route planner', 'Routenplaner', 'Planificador de rutas', 'Маршрут'), 'sky');
-  const wherePill = tilePill('tile-where', 'explore', 'where', LL('Nereye gidebilirim?', 'Where can I go?', 'Wohin kann ich?', '¿Adónde puedo ir?', 'Куда можно?'), 'sky');
+  const toursPill: AssistantActionPill = { id: 'go-tours', type: 'goto', path: 'tours', label: LL('Tur paketleri', 'Tour packages', 'Reisepakete', 'Paquetes de viaje', 'Турпакеты', 'Pacotes de viagem'), accentTone: 'amber' };
+  const tripPill = tilePill('tile-trip', 'nomad', 'trip', LL('Seyahat planlayıcı', 'Trip planner', 'Reiseplaner', 'Planificador de viaje', 'Планировщик поездки', 'Planejador de viagem'), 'teal');
+  const routePill = tilePill('tile-planner', 'plan', 'planner', LL('Rota planlayıcı', 'Route planner', 'Routenplaner', 'Planificador de rutas', 'Маршрут', 'Planejador de roteiros'), 'sky');
+  const wherePill = tilePill('tile-where', 'explore', 'where', LL('Nereye gidebilirim?', 'Where can I go?', 'Wohin kann ich?', '¿Adónde puedo ir?', 'Куда можно?', 'Para onde posso ir?'), 'sky');
 
   // Selam / teşekkür
   if (!targetCountry && /^(merhaba|selam|selamlar|slm|hey|hi|hello|hallo|hola|привет|здравствуйте|gunaydin|iyi aksamlar|good morning)( .{0,20})?$/.test(norm)) {
@@ -439,19 +440,19 @@ export async function processAssistantQuery(
       `Hi! Ask me about visas, entry rules, routes, flights, hotels, tours or anything travel. I answer for your ${originName} passport. Where are you thinking of going?`,
       `Hallo! Frag mich zu Visum, Einreise, Routen, Flügen, Hotels, Touren oder allem rund ums Reisen. Ich antworte für deinen Pass aus ${originName}. Wohin soll es gehen?`,
       `¡Hola! Pregúntame por visados, requisitos, rutas, vuelos, hoteles, tours o cualquier tema de viaje. Respondo para tu pasaporte de ${originName}. ¿Adónde piensas ir?`,
-      `Здравствуйте! Спрашивайте о визах, правилах въезда, маршрутах, билетах, отелях и экскурсиях. Отвечаю для паспорта: ${originName}. Куда собираетесь?`
+      `Здравствуйте! Спрашивайте о визах, правилах въезда, маршрутах, билетах, отелях и экскурсиях. Отвечаю для паспорта: ${originName}. Куда собираетесь?`, `Olá! Pergunte sobre vistos, requisitos, roteiros, voos, hotéis, tours ou qualquer assunto de viagem. Respondo considerando o seu passaporte de ${originName}. Para onde você pensa em ir?`
     ), [wherePill, tripPill]);
   }
   if (!targetCountry && /^(tesekkur|tesekkurler|sagol|sag ol|eyvallah|thanks|thank you|thx|danke|gracias|спасибо)( .{0,20})?$/.test(norm)) {
-    return mk(LL('Rica ederim, iyi yolculuklar! Başka bir sorun olursa buradayım.', 'You’re welcome, have a great trip! I’m here if you need anything else.', 'Gern geschehen, gute Reise!', '¡De nada, buen viaje!', 'Пожалуйста, хорошей поездки!'), []);
+    return mk(LL('Rica ederim, iyi yolculuklar! Başka bir sorun olursa buradayım.', 'You’re welcome, have a great trip! I’m here if you need anything else.', 'Gern geschehen, gute Reise!', '¡De nada, buen viaje!', 'Пожалуйста, хорошей поездки!', 'De nada, boa viagem!'), []);
   }
 
   // Site yardımı: "neler yapabilirsin", "site ne işe yarar", "help"
   if (!targetCountry && /(neler yapabilir|ne yapabilir|ne ise yarar|ozellik|nasil kullan|yardim|help|what can you do|features|how does this work|was kannst du|funktionen|hilfe|que puedes hacer|funciones|ayuda|что ты умеешь|помощь|возможност)/.test(norm)) {
     const feats = siteFeatures(activeLang);
     return mk(
-      `**${LL('Vizamigo’da neler var', 'What you can do on Vizamigo', 'Was Vizamigo kann', 'Qué puedes hacer en Vizamigo', 'Что умеет Vizamigo')}**\n` + feats.map((x) => `• ${x.text}`).join('\n') +
-        `\n\n${LL('Bana doğrudan da sorabilirsin: "Japonya’ya 7 günlük rota", "Bali otel", "İstanbul’dan Roma’ya en ucuz gün", "Dubai vizesi".', 'You can also just ask me: "7-day Japan itinerary", "Bali hotels", "cheapest day to fly to Rome", "Dubai visa".', 'Frag mich einfach: „7 Tage Japan Route“, „Bali Hotel“, „günstigster Tag nach Rom“, „Dubai Visum“.', 'También puedes preguntarme: "ruta de 7 días por Japón", "hoteles en Bali", "día más barato para volar a Roma", "visado Dubái".', 'Можно спросить прямо: «маршрут по Японии на 7 дней», «отели на Бали», «самый дешёвый день в Рим», «виза в Дубай».')}`,
+      `**${LL('Vizamigo’da neler var', 'What you can do on Vizamigo', 'Was Vizamigo kann', 'Qué puedes hacer en Vizamigo', 'Что умеет Vizamigo', 'O que você pode fazer na Vizamigo')}**\n` + feats.map((x) => `• ${x.text}`).join('\n') +
+        `\n\n${LL('Bana doğrudan da sorabilirsin: "Japonya’ya 7 günlük rota", "Bali otel", "İstanbul’dan Roma’ya en ucuz gün", "Dubai vizesi".', 'You can also just ask me: "7-day Japan itinerary", "Bali hotels", "cheapest day to fly to Rome", "Dubai visa".', 'Frag mich einfach: „7 Tage Japan Route“, „Bali Hotel“, „günstigster Tag nach Rom“, „Dubai Visum“.', 'También puedes preguntarme: "ruta de 7 días por Japón", "hoteles en Bali", "día más barato para volar a Roma", "visado Dubái".', 'Можно спросить прямо: «маршрут по Японии на 7 дней», «отели на Бали», «самый дешёвый день в Рим», «виза в Дубай».', 'Você também pode me perguntar: "roteiro de 7 dias pelo Japão", "hotéis em Bali", "dia mais barato para voar para Roma", "visto Dubai".')}`,
       feats.filter((x) => x.pill).map((x) => x.pill as AssistantActionPill)
     );
   }
@@ -469,17 +470,17 @@ export async function processAssistantQuery(
     const lines: string[] = [];
     const want = bookIntents.length ? bookIntents : (['flight', 'hotel'] as Intent[]);
     for (const it of want) {
-      if (it === 'flight') lines.push(LL(`✈️ **Uçuş:** ${where} için fiyatları karşılaştır; ${getCountryName(c, activeLang)} sayfasındaki takvim en ucuz günleri gösterir.`, `✈️ **Flights:** compare prices to ${where}; the calendar on the ${getCountryName(c, activeLang)} page shows the cheapest days.`, `✈️ **Flüge:** Preise nach ${where} vergleichen; der Kalender auf der Länderseite zeigt die günstigsten Tage.`, `✈️ **Vuelos:** compara precios a ${where}; el calendario de la página del país muestra los días más baratos.`, `✈️ **Билеты:** сравните цены до ${where}; календарь на странице страны покажет самые дешёвые дни.`));
-      if (it === 'cheapest') lines.push(LL(`📅 **En ucuz gün:** ${getCountryName(c, activeLang)} rezervasyon sayfasındaki fiyat takviminde bir ay boyunca günlük en düşük fiyatları görürsün; seçtiğin gün otel ve tur tarihlerine de aktarılır.`, `📅 **Cheapest day:** the fare calendar on the ${getCountryName(c, activeLang)} booking page shows the lowest price for each day of the month; the day you pick carries over to hotels and tours.`, `📅 **Günstigster Tag:** Der Preiskalender auf der Buchungsseite zeigt den Tiefstpreis je Tag; das gewählte Datum gilt auch für Hotels und Touren.`, `📅 **Día más barato:** el calendario de precios de la página de reservas muestra el precio más bajo de cada día; la fecha elegida pasa a hoteles y tours.`, `📅 **Самый дешёвый день:** календарь цен на странице бронирования показывает минимальную цену на каждый день; выбранная дата переносится в отели и экскурсии.`));
-      if (it === 'hotel') lines.push(LL(`🏨 **Konaklama:** ${where} otellerini tarih ve bütçeye göre filtreleyebilirsin.`, `🏨 **Stay:** filter hotels in ${where} by dates and budget.`, `🏨 **Unterkunft:** Hotels in ${where} nach Datum und Budget filtern.`, `🏨 **Alojamiento:** filtra hoteles en ${where} por fechas y presupuesto.`, `🏨 **Жильё:** отели в ${where} по датам и бюджету.`));
-      if (it === 'tour') lines.push(LL(`🎟️ **Turlar:** ${where} için günlük turlar, giriş biletleri ve aktiviteler.`, `🎟️ **Tours:** day trips, tickets and activities in ${where}.`, `🎟️ **Touren:** Tagesausflüge, Tickets und Aktivitäten in ${where}.`, `🎟️ **Tours:** excursiones, entradas y actividades en ${where}.`, `🎟️ **Экскурсии:** однодневные туры, билеты и активности в ${where}.`));
-      if (it === 'car') lines.push(LL(`🚗 **Araç kiralama:** ${where} için firmaları karşılaştır; ehliyetinle birlikte uluslararası sürücü belgesi istenip istenmediğine ülke sayfasından bak.`, `🚗 **Car rental:** compare companies in ${where}; check the country page for whether an International Driving Permit is required.`, `🚗 **Mietwagen:** Anbieter in ${where} vergleichen; ob ein internationaler Führerschein nötig ist, steht auf der Länderseite.`, `🚗 **Alquiler de coches:** compara empresas en ${where}; mira en la página del país si piden permiso internacional.`, `🚗 **Аренда авто:** сравните компании в ${where}; нужны ли международные права, смотрите на странице страны.`));
-      if (it === 'transfer') lines.push(LL(`🚕 **Transfer:** havalimanından otele sabit fiyatlı transfer önceden ayırtılabilir.`, `🚕 **Transfer:** pre-book a fixed-price airport-to-hotel transfer.`, `🚕 **Transfer:** Festpreis-Transfer vom Flughafen vorab buchen.`, `🚕 **Traslado:** reserva un traslado aeropuerto–hotel a precio fijo.`, `🚕 **Трансфер:** заранее закажите трансфер из аэропорта по фиксированной цене.`));
-      if (it === 'ground') lines.push(LL(`🚆 **Tren, otobüs, feribot:** ${getCountryName(c, activeLang)} rezervasyon sayfasında yer alan kara ve deniz ulaşımı seçeneklerine bak.`, `🚆 **Train, bus, ferry:** see the ground and sea transport options on the ${getCountryName(c, activeLang)} booking page.`, `🚆 **Zug, Bus, Fähre:** Optionen auf der Buchungsseite des Landes.`, `🚆 **Tren, bus, ferry:** opciones en la página de reservas del país.`, `🚆 **Поезд, автобус, паром:** варианты на странице бронирования страны.`));
-      if (it === 'insurance') lines.push(LL(`🛡️ **Sigorta:** ${needsVisa(c, currentPassport) ? 'vize başvurusunda genelde en az 30.000 € teminatlı sağlık sigortası istenir.' : 'zorunlu olmasa da sağlık giderleri yurt dışında çok yüksek olabilir.'}`, `🛡️ **Insurance:** ${needsVisa(c, currentPassport) ? 'visa applications usually require medical cover (often €30,000+ for Schengen).' : 'not always required, but medical bills abroad can be very high.'}`, `🛡️ **Versicherung:** ${needsVisa(c, currentPassport) ? 'für den Visumantrag meist Pflicht.' : 'nicht immer Pflicht, aber Arztkosten können hoch sein.'}`, `🛡️ **Seguro:** ${needsVisa(c, currentPassport) ? 'suele ser obligatorio para el visado.' : 'no siempre obligatorio, pero la atención médica puede ser muy cara.'}`, `🛡️ **Страховка:** ${needsVisa(c, currentPassport) ? 'обычно обязательна для визы.' : 'не всегда обязательна, но лечение за границей дорогое.'}`));
+      if (it === 'flight') lines.push(LL(`✈️ **Uçuş:** ${where} için fiyatları karşılaştır; ${getCountryName(c, activeLang)} sayfasındaki takvim en ucuz günleri gösterir.`, `✈️ **Flights:** compare prices to ${where}; the calendar on the ${getCountryName(c, activeLang)} page shows the cheapest days.`, `✈️ **Flüge:** Preise nach ${where} vergleichen; der Kalender auf der Länderseite zeigt die günstigsten Tage.`, `✈️ **Vuelos:** compara precios a ${where}; el calendario de la página del país muestra los días más baratos.`, `✈️ **Билеты:** сравните цены до ${where}; календарь на странице страны покажет самые дешёвые дни.`, `✈️ **Voos:** compare preços para ${where}; o calendário da página do país mostra os dias mais baratos.`));
+      if (it === 'cheapest') lines.push(LL(`📅 **En ucuz gün:** ${getCountryName(c, activeLang)} rezervasyon sayfasındaki fiyat takviminde bir ay boyunca günlük en düşük fiyatları görürsün; seçtiğin gün otel ve tur tarihlerine de aktarılır.`, `📅 **Cheapest day:** the fare calendar on the ${getCountryName(c, activeLang)} booking page shows the lowest price for each day of the month; the day you pick carries over to hotels and tours.`, `📅 **Günstigster Tag:** Der Preiskalender auf der Buchungsseite zeigt den Tiefstpreis je Tag; das gewählte Datum gilt auch für Hotels und Touren.`, `📅 **Día más barato:** el calendario de precios de la página de reservas muestra el precio más bajo de cada día; la fecha elegida pasa a hoteles y tours.`, `📅 **Самый дешёвый день:** календарь цен на странице бронирования показывает минимальную цену на каждый день; выбранная дата переносится в отели и экскурсии.`, `📅 **Dia mais barato:** o calendário de preços da página de reservas mostra o menor preço de cada dia; a data escolhida passa para hotéis e tours.`));
+      if (it === 'hotel') lines.push(LL(`🏨 **Konaklama:** ${where} otellerini tarih ve bütçeye göre filtreleyebilirsin.`, `🏨 **Stay:** filter hotels in ${where} by dates and budget.`, `🏨 **Unterkunft:** Hotels in ${where} nach Datum und Budget filtern.`, `🏨 **Alojamiento:** filtra hoteles en ${where} por fechas y presupuesto.`, `🏨 **Жильё:** отели в ${where} по датам и бюджету.`, `🏨 **Hospedagem:** filtre hotéis em ${where} por datas e orçamento.`));
+      if (it === 'tour') lines.push(LL(`🎟️ **Turlar:** ${where} için günlük turlar, giriş biletleri ve aktiviteler.`, `🎟️ **Tours:** day trips, tickets and activities in ${where}.`, `🎟️ **Touren:** Tagesausflüge, Tickets und Aktivitäten in ${where}.`, `🎟️ **Tours:** excursiones, entradas y actividades en ${where}.`, `🎟️ **Экскурсии:** однодневные туры, билеты и активности в ${where}.`, `🎟️ **Tours:** passeios, ingressos e atividades em ${where}.`));
+      if (it === 'car') lines.push(LL(`🚗 **Araç kiralama:** ${where} için firmaları karşılaştır; ehliyetinle birlikte uluslararası sürücü belgesi istenip istenmediğine ülke sayfasından bak.`, `🚗 **Car rental:** compare companies in ${where}; check the country page for whether an International Driving Permit is required.`, `🚗 **Mietwagen:** Anbieter in ${where} vergleichen; ob ein internationaler Führerschein nötig ist, steht auf der Länderseite.`, `🚗 **Alquiler de coches:** compara empresas en ${where}; mira en la página del país si piden permiso internacional.`, `🚗 **Аренда авто:** сравните компании в ${where}; нужны ли международные права, смотрите на странице страны.`, `🚗 **Aluguel de carro:** compare locadoras em ${where}; veja na página do país se exigem a Permissão Internacional para Dirigir.`));
+      if (it === 'transfer') lines.push(LL(`🚕 **Transfer:** havalimanından otele sabit fiyatlı transfer önceden ayırtılabilir.`, `🚕 **Transfer:** pre-book a fixed-price airport-to-hotel transfer.`, `🚕 **Transfer:** Festpreis-Transfer vom Flughafen vorab buchen.`, `🚕 **Traslado:** reserva un traslado aeropuerto–hotel a precio fijo.`, `🚕 **Трансфер:** заранее закажите трансфер из аэропорта по фиксированной цене.`, `🚕 **Transfer:** reserve um transfer aeroporto–hotel com preço fixo.`));
+      if (it === 'ground') lines.push(LL(`🚆 **Tren, otobüs, feribot:** ${getCountryName(c, activeLang)} rezervasyon sayfasında yer alan kara ve deniz ulaşımı seçeneklerine bak.`, `🚆 **Train, bus, ferry:** see the ground and sea transport options on the ${getCountryName(c, activeLang)} booking page.`, `🚆 **Zug, Bus, Fähre:** Optionen auf der Buchungsseite des Landes.`, `🚆 **Tren, bus, ferry:** opciones en la página de reservas del país.`, `🚆 **Поезд, автобус, паром:** варианты на странице бронирования страны.`, `🚆 **Trem, ônibus, balsa:** opções na página de reservas do país.`));
+      if (it === 'insurance') lines.push(LL(`🛡️ **Sigorta:** ${needsVisa(c, currentPassport) ? 'vize başvurusunda genelde en az 30.000 € teminatlı sağlık sigortası istenir.' : 'zorunlu olmasa da sağlık giderleri yurt dışında çok yüksek olabilir.'}`, `🛡️ **Insurance:** ${needsVisa(c, currentPassport) ? 'visa applications usually require medical cover (often €30,000+ for Schengen).' : 'not always required, but medical bills abroad can be very high.'}`, `🛡️ **Versicherung:** ${needsVisa(c, currentPassport) ? 'für den Visumantrag meist Pflicht.' : 'nicht immer Pflicht, aber Arztkosten können hoch sein.'}`, `🛡️ **Seguro:** ${needsVisa(c, currentPassport) ? 'suele ser obligatorio para el visado.' : 'no siempre obligatorio, pero la atención médica puede ser muy cara.'}`, `🛡️ **Страховка:** ${needsVisa(c, currentPassport) ? 'обычно обязательна для визы.' : 'не всегда обязательна, но лечение за границей дорогое.'}`, `🛡️ **Seguro:** ${needsVisa(c, currentPassport) ? 'suele ser obligatorio para el visado.' : 'no siempre obligatorio, pero la atención médica puede ser muy cara.'}`));
       if (it === 'visaApply') lines.push(needsVisa(c, currentPassport)
-        ? LL('📝 **Vize başvurusu:** evrak listesini ülke sayfasında bulursun; istersen başvuruyu VisaHQ takip edebilir (hizmet bedeli vize ücretine eklenir).', '📝 **Visa application:** the document list is on the country page; VisaHQ can handle the application for you (service fee on top of the visa fee).', '📝 **Visumantrag:** Dokumentenliste auf der Länderseite; VisaHQ kann den Antrag übernehmen (Servicegebühr zusätzlich).', '📝 **Solicitud de visado:** la lista de documentos está en la página del país; VisaHQ puede tramitarlo (tarifa de servicio adicional).', '📝 **Оформление визы:** список документов на странице страны; VisaHQ может оформить за вас (сервисный сбор отдельно).')
-        : LL('📝 **Vize:** bu pasaportla konsolosluk vizesi gerekmiyor; ayrıntılar ülke sayfasında.', '📝 **Visa:** no consular visa needed with this passport; details are on the country page.', '📝 **Visum:** mit diesem Pass kein Konsulatsvisum nötig.', '📝 **Visado:** no hace falta visado consular con este pasaporte.', '📝 **Виза:** консульская виза с этим паспортом не нужна.'));
+        ? LL('📝 **Vize başvurusu:** evrak listesini ülke sayfasında bulursun; istersen başvuruyu VisaHQ takip edebilir (hizmet bedeli vize ücretine eklenir).', '📝 **Visa application:** the document list is on the country page; VisaHQ can handle the application for you (service fee on top of the visa fee).', '📝 **Visumantrag:** Dokumentenliste auf der Länderseite; VisaHQ kann den Antrag übernehmen (Servicegebühr zusätzlich).', '📝 **Solicitud de visado:** la lista de documentos está en la página del país; VisaHQ puede tramitarlo (tarifa de servicio adicional).', '📝 **Оформление визы:** список документов на странице страны; VisaHQ может оформить за вас (сервисный сбор отдельно).', '📝 **Pedido de visto:** a lista de documentos está na página do país; a VisaHQ pode cuidar do pedido (taxa de serviço adicional).')
+        : LL('📝 **Vize:** bu pasaportla konsolosluk vizesi gerekmiyor; ayrıntılar ülke sayfasında.', '📝 **Visa:** no consular visa needed with this passport; details are on the country page.', '📝 **Visum:** mit diesem Pass kein Konsulatsvisum nötig.', '📝 **Visado:** no hace falta visado consular con este pasaporte.', '📝 **Виза:** консульская виза с этим паспортом не нужна.', '📝 **Visto:** não é preciso visto consular com este passaporte.'));
     }
     const affs = want.map((it) => partnerPill(it, c, activeLang, currentPassport, cn)).filter((x): x is AssistantActionPill => !!x);
     const uniq = affs.filter((a, i) => affs.findIndex((b) => b.id === a.id) === i).slice(0, 2);
@@ -495,7 +496,7 @@ export async function processAssistantQuery(
       'Where would you like to go? Type a city or country (e.g. "Rome hotels", "flights to Bali", "Dubai tours") and I’ll show the visa status, cheapest flight days, hotels and tours together.',
       'Wohin soll es gehen? Schreib eine Stadt oder ein Land (z. B. „Rom Hotel“, „Flug nach Bali“), dann zeige ich Visum, günstigste Flugtage, Hotels und Touren.',
       '¿Adónde quieres ir? Escribe una ciudad o país (p. ej. "hoteles en Roma", "vuelos a Bali") y te muestro el visado, los días más baratos, hoteles y tours.',
-      'Куда хотите поехать? Напишите город или страну (например, «отели в Риме», «билеты на Бали») — покажу визу, дешёвые дни, отели и экскурсии.'
+      'Куда хотите поехать? Напишите город или страну (например, «отели в Риме», «билеты на Бали») — покажу визу, дешёвые дни, отели и экскурсии.', 'Para onde você quer ir? Digite uma cidade ou país (ex.: "hotéis em Roma", "voos para Bali") e eu mostro o visto, os dias mais baratos, hotéis e tours.'
     ), [tripPill, toursPill, ...(p ? [p] : [wherePill])]);
   }
 
@@ -506,8 +507,8 @@ export async function processAssistantQuery(
       'Which country or city is the trip for? Try "7-day Italy itinerary" or "Balkans route". For multi-country trips use the route planner or browse ready-made routes.',
       'Für welches Land? Z. B. „Italien 7 Tage Route“. Für mehrere Länder gibt es den Routenplaner und fertige Routen.',
       '¿Para qué país? Prueba "ruta de 7 días por Italia". Para varios países usa el planificador de rutas o las rutas listas.',
-      'Для какой страны? Например, «маршрут по Италии на 7 дней». Для нескольких стран есть планировщик и готовые маршруты.'
-    ), [routePill, tilePill('tile-presets', 'plan', 'presets', LL('Hazır rotalar', 'Ready-made routes', 'Fertige Routen', 'Rutas listas', 'Готовые маршруты'), 'amber'), toursPill]);
+      'Для какой страны? Например, «маршрут по Италии на 7 дней». Для нескольких стран есть планировщик и готовые маршруты.', 'Para qual país? Tente "roteiro de 7 dias pela Itália". Para vários países, use o planejador de roteiros ou os roteiros prontos.'
+    ), [routePill, tilePill('tile-presets', 'plan', 'presets', LL('Hazır rotalar', 'Ready-made routes', 'Fertige Routen', 'Rutas listas', 'Готовые маршруты', 'Roteiros prontos'), 'amber'), toursPill]);
   }
 
   // ülke adı geçen sorular önce buraya gelir; Schengen sayacı, transit, pasaport kaybı, dijital göçebe gibi araç konuları hariç
@@ -515,7 +516,7 @@ export async function processAssistantQuery(
 
   // Genel (ülkesiz) sorular: hepsi 5 dilde. Sayılar pasaport verisinden hesaplanır.
   const L5 = (tr: string, en: string, de: string, es: string, ru: string, pt: string) => ({ tr, en, de, es, ru, pt } as Record<string, string>)[activeLang] ?? en;
-  const days = (v: string) => (v === 'vf' ? L5('süresiz', 'no limit', 'unbegrenzt', 'sin límite', 'без ограничений') : /^\d+$/.test(v) ? `${v} ${L5('gün', 'days', 'Tage', 'días', 'дн.')}` : '');
+  const days = (v: string) => (v === 'vf' ? L5('süresiz', 'no limit', 'unbegrenzt', 'sin límite', 'без ограничений', 'sem limite') : /^\d+$/.test(v) ? `${v} ${L5('gün', 'days', 'Tage', 'días', 'дн.', 'dias')}` : '');
   const reply = (text: string, acts: AssistantActionPill[], auto?: AssistantActionPill): AssistantMessage => ({
     id: `msg-${Date.now()}`,
     sender: 'assistant',
@@ -525,7 +526,7 @@ export async function processAssistantQuery(
     detectedLang: activeLang,
     autoTriggerAction: isOpenIntent && /(^| )(ac|goster|open|show|offnen|abrir|mostrar|открыть|покажи)( |$)/.test(norm) ? auto : undefined
   });
-  const radarPill: AssistantActionPill = { id: 'open-radar', type: 'open_tool', toolKey: 'radar', radarMode: 'all', label: L5('Vizesiz ülkeler haritası', 'Visa-free map', 'Karte visumfreier Länder', 'Mapa sin visado', 'Карта безвизовых стран'), accentTone: 'teal' };
+  const radarPill: AssistantActionPill = { id: 'open-radar', type: 'open_tool', toolKey: 'radar', radarMode: 'all', label: L5('Vizesiz ülkeler haritası', 'Visa-free map', 'Karte visumfreier Länder', 'Mapa sin visado', 'Карта безвизовых стран', 'Mapa sem visto'), accentTone: 'teal' };
   const countryPill = (c: string): AssistantActionPill => ({ id: `open-${c}`, type: 'open_country', countryCode: c, label: `${getFlag(c)} ${getCountryName(c, activeLang)}`, accentTone: 'sky' });
 
   // 1) Pasaport gücü
@@ -533,13 +534,13 @@ export async function processAssistantQuery(
     const free = passportItems.filter((it) => it.cat === 'free').length;
     const easy = passportItems.filter((it) => it.cat === 'evisa' || it.cat === 'voa' || it.cat === 'eta').length;
     const idN = passportItems.filter((it) => it.id).length;
-    const compare: AssistantActionPill = { id: 'tab-plan-compare', type: 'switch_tab', tabKey: 'plan', label: L5('Pasaportları karşılaştır', 'Compare passports', 'Pässe vergleichen', 'Comparar pasaportes', 'Сравнить паспорта'), accentTone: 'sky' };
+    const compare: AssistantActionPill = { id: 'tab-plan-compare', type: 'switch_tab', tabKey: 'plan', label: L5('Pasaportları karşılaştır', 'Compare passports', 'Pässe vergleichen', 'Comparar pasaportes', 'Сравнить паспорта', 'Comparar passaportes'), accentTone: 'sky' };
     return reply(
-      `**${L5(`${originName} pasaportu`, `${originName} passport`, `Reisepass ${originName}`, `Pasaporte de ${originName}`, `Паспорт: ${originName}`)}**\n` +
-        `• **${L5('Vizesiz', 'Visa-free', 'Visumfrei', 'Sin visado', 'Без визы')}:** ${free}\n` +
-        `• **${L5('Kapıda vize / e-vize / eTA', 'Visa on arrival / eVisa / eTA', 'Visum bei Ankunft / e-Visum / eTA', 'Visa a la llegada / e-Visa / eTA', 'Виза по прилёте / e-Visa / eTA')}:** ${easy}\n` +
-        (idN ? `• **${L5('Kimlik kartıyla', 'With ID card', 'Mit Personalausweis', 'Con DNI', 'По ID-карте')}:** ${idN}\n` : '') +
-        `• **${L5('Toplam kolay giriş', 'Easy access in total', 'Einfache Einreise gesamt', 'Acceso fácil en total', 'Всего с простым въездом')}:** ${free + easy}`,
+      `**${L5(`${originName} pasaportu`, `${originName} passport`, `Reisepass ${originName}`, `Pasaporte de ${originName}`, `Паспорт: ${originName}`, `Passaporte de ${originName}`)}**\n` +
+        `• **${L5('Vizesiz', 'Visa-free', 'Visumfrei', 'Sin visado', 'Без визы', 'Sem visto')}:** ${free}\n` +
+        `• **${L5('Kapıda vize / e-vize / eTA', 'Visa on arrival / eVisa / eTA', 'Visum bei Ankunft / e-Visum / eTA', 'Visa a la llegada / e-Visa / eTA', 'Виза по прилёте / e-Visa / eTA', 'Visto na chegada / e-Visa / eTA')}:** ${easy}\n` +
+        (idN ? `• **${L5('Kimlik kartıyla', 'With ID card', 'Mit Personalausweis', 'Con DNI', 'По ID-карте', 'Com RG')}:** ${idN}\n` : '') +
+        `• **${L5('Toplam kolay giriş', 'Easy access in total', 'Einfache Einreise gesamt', 'Acceso fácil en total', 'Всего с простым въездом', 'Acesso fácil no total')}:** ${free + easy}`,
       [radarPill, compare], radarPill
     );
   }
@@ -548,36 +549,36 @@ export async function processAssistantQuery(
   if (!targetCountry && /(kimlik|pasaportsuz|id card|national id|personalausweis|ausweis|sin pasaporte|dni|удостоверени|по id)/.test(norm)) {
     const list = passportItems.filter((it) => it.id);
     const text = list.length
-      ? `**${L5(`${originName} vatandaşlarının kimlik kartıyla gidebildiği ülkeler`, `Countries ${originName} citizens can enter with an ID card`, `Länder, in die Bürger von ${originName} mit Personalausweis reisen können`, `Países a los que los ciudadanos de ${originName} pueden ir con DNI`, `Страны, куда граждане (${originName}) могут въехать по ID-карте`)}**\n` +
+      ? `**${L5(`${originName} vatandaşlarının kimlik kartıyla gidebildiği ülkeler`, `Countries ${originName} citizens can enter with an ID card`, `Länder, in die Bürger von ${originName} mit Personalausweis reisen können`, `Países a los que los ciudadanos de ${originName} pueden ir con DNI`, `Страны, куда граждане (${originName}) могут въехать по ID-карте`, `Países para onde cidadãos de ${originName} podem ir com documento de identidade`)}**\n` +
         list.map((it) => `• ${getFlag(it.c)} **${getCountryName(it.c, activeLang)}** – ${days(it.v)}`).join('\n') +
-        (currentPassport === 'TR' ? `\n\n${L5('Yalnızca yeni tip çipli kimlik kartı geçerlidir; eski nüfus cüzdanıyla gidilmez. KKTC’ye de çipli kimlikle girilebilir.', 'Only the new chip ID card is accepted, not the old paper one. Northern Cyprus also accepts the chip ID card.', 'Nur der neue Chip-Ausweis gilt, nicht der alte. Auch Nordzypern akzeptiert ihn.', 'Solo vale el nuevo DNI con chip, no el antiguo. El norte de Chipre también lo acepta.', 'Действует только новая ID-карта с чипом. Её принимает и Северный Кипр.')}` : '')
-      : L5('Bu pasaportla kimlik kartıyla gidilebilen ülke kaydı yok.', 'No ID-card-only destinations are listed for this passport.', 'Für diesen Pass sind keine Länder mit Ausweis-Einreise gelistet.', 'No hay destinos con DNI para este pasaporte.', 'Для этого паспорта нет стран с въездом по ID-карте.');
+        (currentPassport === 'TR' ? `\n\n${L5('Yalnızca yeni tip çipli kimlik kartı geçerlidir; eski nüfus cüzdanıyla gidilmez. KKTC’ye de çipli kimlikle girilebilir.', 'Only the new chip ID card is accepted, not the old paper one. Northern Cyprus also accepts the chip ID card.', 'Nur der neue Chip-Ausweis gilt, nicht der alte. Auch Nordzypern akzeptiert ihn.', 'Solo vale el nuevo DNI con chip, no el antiguo. El norte de Chipre también lo acepta.', 'Действует только новая ID-карта с чипом. Её принимает и Северный Кипр.', 'Só vale o novo documento de identidade com chip, não o antigo. O norte de Chipre também aceita.')}` : '')
+      : L5('Bu pasaportla kimlik kartıyla gidilebilen ülke kaydı yok.', 'No ID-card-only destinations are listed for this passport.', 'Für diesen Pass sind keine Länder mit Ausweis-Einreise gelistet.', 'No hay destinos con DNI para este pasaporte.', 'Для этого паспорта нет стран с въездом по ID-карте.', 'Não há destinos com documento de identidade para este passaporte.');
     return reply(text, list.slice(0, 3).map((it) => countryPill(it.c)), list[0] ? countryPill(list[0].c) : undefined);
   }
 
   // 3) Priz (genel)
   if (!targetCountry && (/^(priz|prizler|voltaj|adaptor|plug|plugs|stecker|steckdose|enchufe|enchufes|розетка|розетки)$/.test(norm) || /(priz tipi|plug type|steckertyp|tipo de enchufe|тип розетки)/.test(norm))) {
-    const pack: AssistantActionPill = { id: 'tool-packing', type: 'open_tool', toolKey: 'packing', label: L5('Bavul listesi', 'Packing list', 'Packliste', 'Lista de equipaje', 'Список вещей'), accentTone: 'teal' };
+    const pack: AssistantActionPill = { id: 'tool-packing', type: 'open_tool', toolKey: 'packing', label: L5('Bavul listesi', 'Packing list', 'Packliste', 'Lista de equipaje', 'Список вещей', 'Lista de bagagem'), accentTone: 'teal' };
     return reply(
-      `**${L5('Dünyada priz tipleri', 'Plug types around the world', 'Steckertypen weltweit', 'Tipos de enchufe en el mundo', 'Типы розеток в мире')}**\n` +
-        `• **${L5('Avrupa ve Türkiye', 'Europe and Türkiye', 'Europa und Türkei', 'Europa y Turquía', 'Европа и Турция')}:** C / F, 230V\n` +
-        `• **${L5('İngiltere, İrlanda, BAE, Katar, Malta, Kıbrıs', 'UK, Ireland, UAE, Qatar, Malta, Cyprus', 'Großbritannien, Irland, VAE, Katar, Malta, Zypern', 'Reino Unido, Irlanda, EAU, Catar, Malta, Chipre', 'Великобритания, Ирландия, ОАЭ, Катар, Мальта, Кипр')}:** G\n` +
-        `• **${L5('ABD, Kanada, Meksika, Japonya', 'USA, Canada, Mexico, Japan', 'USA, Kanada, Mexiko, Japan', 'EE. UU., Canadá, México, Japón', 'США, Канада, Мексика, Япония')}:** A / B, 100–120V\n` +
-        `• **${L5('Avustralya, Yeni Zelanda, Çin', 'Australia, New Zealand, China', 'Australien, Neuseeland, China', 'Australia, Nueva Zelanda, China', 'Австралия, Новая Зеландия, Китай')}:** I\n\n` +
-        L5('Bir ülke için sor: "Japonya priz".', 'Ask for a country: "Japan plugs".', 'Frag nach einem Land: „Japan Steckdose“.', 'Pregunta por un país: "enchufe Japón".', 'Спросите про страну: «Япония розетки».'),
+      `**${L5('Dünyada priz tipleri', 'Plug types around the world', 'Steckertypen weltweit', 'Tipos de enchufe en el mundo', 'Типы розеток в мире', 'Tipos de tomada no mundo')}**\n` +
+        `• **${L5('Avrupa ve Türkiye', 'Europe and Türkiye', 'Europa und Türkei', 'Europa y Turquía', 'Европа и Турция', 'Europa e Turquia')}:** C / F, 230V\n` +
+        `• **${L5('İngiltere, İrlanda, BAE, Katar, Malta, Kıbrıs', 'UK, Ireland, UAE, Qatar, Malta, Cyprus', 'Großbritannien, Irland, VAE, Katar, Malta, Zypern', 'Reino Unido, Irlanda, EAU, Catar, Malta, Chipre', 'Великобритания, Ирландия, ОАЭ, Катар, Мальта, Кипр', 'Reino Unido, Irlanda, EAU, Catar, Malta, Chipre')}:** G\n` +
+        `• **${L5('ABD, Kanada, Meksika, Japonya', 'USA, Canada, Mexico, Japan', 'USA, Kanada, Mexiko, Japan', 'EE. UU., Canadá, México, Japón', 'США, Канада, Мексика, Япония', 'EUA, Canadá, México, Japão')}:** A / B, 100–120V\n` +
+        `• **${L5('Avustralya, Yeni Zelanda, Çin', 'Australia, New Zealand, China', 'Australien, Neuseeland, China', 'Australia, Nueva Zelanda, China', 'Австралия, Новая Зеландия, Китай', 'Austrália, Nova Zelândia, China')}:** I\n\n` +
+        L5('Bir ülke için sor: "Japonya priz".', 'Ask for a country: "Japan plugs".', 'Frag nach einem Land: „Japan Steckdose“.', 'Pregunta por un país: "enchufe Japón".', 'Спросите про страну: «Япония розетки».', 'Pergunte por um país: "tomada Japão".'),
       [pack], pack
     );
   }
 
   // 4) Bahşiş (genel)
   if (!targetCountry && /^(bahsis|tip|tips|tipping|trinkgeld|propina|propinas|чаевые)$/.test(norm)) {
-    const tip: AssistantActionPill = { id: 'tool-tipping', type: 'open_tool', toolKey: 'tipping', label: L5('Bahşiş hesapla', 'Tip calculator', 'Trinkgeldrechner', 'Calculadora de propinas', 'Калькулятор чаевых'), accentTone: 'amber' };
+    const tip: AssistantActionPill = { id: 'tool-tipping', type: 'open_tool', toolKey: 'tipping', label: L5('Bahşiş hesapla', 'Tip calculator', 'Trinkgeldrechner', 'Calculadora de propinas', 'Калькулятор чаевых', 'Calculadora de gorjeta'), accentTone: 'amber' };
     return reply(
-      `**${L5('Dünyada bahşiş', 'Tipping around the world', 'Trinkgeld weltweit', 'Propinas en el mundo', 'Чаевые в мире')}**\n` +
-        `• **${L5('ABD ve Kanada', 'USA and Canada', 'USA und Kanada', 'EE. UU. y Canadá', 'США и Канада')}:** ${L5('%15–20, neredeyse zorunlu', '15–20%, practically expected', '15–20 %, praktisch erwartet', '15–20 %, prácticamente obligatoria', '15–20%, фактически обязательно')}\n` +
-        `• **${L5('Avrupa', 'Europe', 'Europa', 'Europa', 'Европа')}:** ${L5('%5–10 ya da hesabı yuvarlamak', '5–10% or round up', '5–10 % oder aufrunden', '5–10 % o redondear', '5–10% или округлить')}\n` +
-        `• **${L5('Japonya, Güney Kore', 'Japan, South Korea', 'Japan, Südkorea', 'Japón, Corea del Sur', 'Япония, Южная Корея')}:** ${L5('beklenmez', 'not expected', 'nicht üblich', 'no se espera', 'не принято')}\n\n` +
-        L5('Bir ülke için sor: "Mısır bahşiş".', 'Ask for a country: "Egypt tipping".', 'Frag nach einem Land: „Ägypten Trinkgeld“.', 'Pregunta por un país: "propinas Egipto".', 'Спросите про страну: «Египет чаевые».'),
+      `**${L5('Dünyada bahşiş', 'Tipping around the world', 'Trinkgeld weltweit', 'Propinas en el mundo', 'Чаевые в мире', 'Gorjetas pelo mundo')}**\n` +
+        `• **${L5('ABD ve Kanada', 'USA and Canada', 'USA und Kanada', 'EE. UU. y Canadá', 'США и Канада', 'EUA e Canadá')}:** ${L5('%15–20, neredeyse zorunlu', '15–20%, practically expected', '15–20 %, praktisch erwartet', '15–20 %, prácticamente obligatoria', '15–20%, фактически обязательно', '15–20%, praticamente obrigatória')}\n` +
+        `• **${L5('Avrupa', 'Europe', 'Europa', 'Europa', 'Европа', 'Europa')}:** ${L5('%5–10 ya da hesabı yuvarlamak', '5–10% or round up', '5–10 % oder aufrunden', '5–10 % o redondear', '5–10% или округлить', '5–10% ou arredondar')}\n` +
+        `• **${L5('Japonya, Güney Kore', 'Japan, South Korea', 'Japan, Südkorea', 'Japón, Corea del Sur', 'Япония, Южная Корея', 'Japão, Coreia do Sul')}:** ${L5('beklenmez', 'not expected', 'nicht üblich', 'no se espera', 'не принято', 'não é esperada')}\n\n` +
+        L5('Bir ülke için sor: "Mısır bahşiş".', 'Ask for a country: "Egypt tipping".', 'Frag nach einem Land: „Ägypten Trinkgeld“.', 'Pregunta por un país: "propinas Egipto".', 'Спросите про страну: «Египет чаевые».', 'Pergunte por um país: "gorjeta Egito".'),
       [tip], tip
     );
   }
@@ -585,33 +586,33 @@ export async function processAssistantQuery(
   // 5) Taksi (genel)
   if (!targetCountry && (/^(taksi|taxi|ulasim|такси|transporte|transport)$/.test(norm) || /(taksi uygulama|ride app|taxi app|fahrdienst|app de taxi|приложени\S* такси)/.test(norm))) {
     return reply(
-      `**${L5('Bölgelere göre taksi uygulamaları', 'Ride-hailing apps by region', 'Taxi-Apps nach Region', 'Apps de taxi por región', 'Приложения такси по регионам')}**\n` +
-        `• **${L5('Güneydoğu Asya', 'Southeast Asia', 'Südostasien', 'Sudeste asiático', 'Юго-Восточная Азия')}:** Grab, Bolt\n` +
-        `• **${L5('Avrupa', 'Europe', 'Europa', 'Europa', 'Европа')}:** Bolt, Uber, FreeNow\n` +
-        `• **${L5('Körfez ve Orta Doğu', 'Gulf and Middle East', 'Golfstaaten und Nahost', 'Golfo y Oriente Medio', 'Персидский залив и Ближний Восток')}:** Careem, Uber\n` +
-        `• **${L5('Kafkasya ve Orta Asya', 'Caucasus and Central Asia', 'Kaukasus und Zentralasien', 'Cáucaso y Asia Central', 'Кавказ и Центральная Азия')}:** Bolt, Yandex Go\n\n` +
-        L5('Bir ülke için sor: "Tayland taksi".', 'Ask for a country: "Thailand taxi".', 'Frag nach einem Land: „Thailand Taxi“.', 'Pregunta por un país: "taxi Tailandia".', 'Спросите про страну: «Таиланд такси».'),
+      `**${L5('Bölgelere göre taksi uygulamaları', 'Ride-hailing apps by region', 'Taxi-Apps nach Region', 'Apps de taxi por región', 'Приложения такси по регионам', 'Apps de táxi por região')}**\n` +
+        `• **${L5('Güneydoğu Asya', 'Southeast Asia', 'Südostasien', 'Sudeste asiático', 'Юго-Восточная Азия', 'Sudeste Asiático')}:** Grab, Bolt\n` +
+        `• **${L5('Avrupa', 'Europe', 'Europa', 'Europa', 'Европа', 'Europa')}:** Bolt, Uber, FreeNow\n` +
+        `• **${L5('Körfez ve Orta Doğu', 'Gulf and Middle East', 'Golfstaaten und Nahost', 'Golfo y Oriente Medio', 'Персидский залив и Ближний Восток', 'Golfo e Oriente Médio')}:** Careem, Uber\n` +
+        `• **${L5('Kafkasya ve Orta Asya', 'Caucasus and Central Asia', 'Kaukasus und Zentralasien', 'Cáucaso y Asia Central', 'Кавказ и Центральная Азия', 'Cáucaso e Ásia Central')}:** Bolt, Yandex Go\n\n` +
+        L5('Bir ülke için sor: "Tayland taksi".', 'Ask for a country: "Thailand taxi".', 'Frag nach einem Land: „Thailand Taxi“.', 'Pregunta por un país: "taxi Tailandia".', 'Спросите про страну: «Таиланд такси».', 'Pergunte por um país: "táxi Tailândia".'),
       []
     );
   }
 
   // 6) Döviz
   if (!targetCountry && (/^(doviz|kur|kurlar|para|currency|dolar|dollar|euro|wahrung|moneda|валюта|курс)$/.test(norm) || /(doviz|wechselkurs|exchange rate|tipo de cambio|курс валют)/.test(norm))) {
-    const fx: AssistantActionPill = { id: 'radar-fx', type: 'open_tool', toolKey: 'radar', radarMode: 'currency', label: L5('Döviz çevirici', 'Currency converter', 'Währungsrechner', 'Conversor de divisas', 'Конвертер валют'), accentTone: 'teal' };
-    return reply(`**${L5('Güncel kurlar', 'Current rates', 'Aktuelle Kurse', 'Tipos actuales', 'Текущие курсы')}**\n• 1 USD = ${usdRate} TRY\n• 1 EUR = ${eurRate} TRY`, [fx], fx);
+    const fx: AssistantActionPill = { id: 'radar-fx', type: 'open_tool', toolKey: 'radar', radarMode: 'currency', label: L5('Döviz çevirici', 'Currency converter', 'Währungsrechner', 'Conversor de divisas', 'Конвертер валют', 'Conversor de moedas'), accentTone: 'teal' };
+    return reply(`**${L5('Güncel kurlar', 'Current rates', 'Aktuelle Kurse', 'Tipos actuales', 'Текущие курсы', 'Cotações atuais')}**\n• 1 USD = ${usdRate} TRY\n• 1 EUR = ${eurRate} TRY`, [fx], fx);
   }
 
   // 7) Schengen 90/180
   if (/(schengen|90 180|gun sayac|90 gun|kac gunum|90 tage|90 dias|90 дней)/.test(norm)) {
-    const counter: AssistantActionPill = { id: 'tab-track', type: 'switch_tab', tabKey: 'track', label: L5('90/180 gün sayacı', '90/180-day counter', '90/180-Tage-Rechner', 'Contador 90/180', 'Счётчик 90/180'), accentTone: 'teal' };
+    const counter: AssistantActionPill = { id: 'tab-track', type: 'switch_tab', tabKey: 'track', label: L5('90/180 gün sayacı', '90/180-day counter', '90/180-Tage-Rechner', 'Contador 90/180', 'Счётчик 90/180', 'Contador 90/180'), accentTone: 'teal' };
     return reply(
-      `**${L5('Schengen 90/180 kuralı', 'Schengen 90/180 rule', 'Schengen-Regel 90/180', 'Regla Schengen 90/180', 'Правило Шенгена 90/180')}**\n` +
+      `**${L5('Schengen 90/180 kuralı', 'Schengen 90/180 rule', 'Schengen-Regel 90/180', 'Regla Schengen 90/180', 'Правило Шенгена 90/180', 'Regra Schengen 90/180')}**\n` +
         L5(
           'Herhangi bir 180 günlük dönemde Schengen bölgesinde en fazla 90 gün kalınabilir. Giriş ve çıkış günleri tam gün sayılır. Hesap takvim yılına göre değil, her gün için geriye doğru son 180 güne bakılarak yapılır.',
           'You can stay up to 90 days in any 180-day period. Entry and exit days count as full days. The window rolls: for each day, look back over the previous 180 days.',
           'In jedem Zeitraum von 180 Tagen sind höchstens 90 Tage erlaubt. Ein- und Ausreisetag zählen voll. Der Zeitraum rollt: für jeden Tag werden die vorherigen 180 Tage betrachtet.',
           'Puedes quedarte hasta 90 días en cualquier periodo de 180. Los días de entrada y salida cuentan completos. El periodo es móvil: para cada día se miran los 180 anteriores.',
-          'В любой период 180 дней можно находиться не более 90 дней. Дни въезда и выезда считаются полностью. Период скользящий: для каждого дня смотрят на предыдущие 180 дней.'
+          'В любой период 180 дней можно находиться не более 90 дней. Дни въезда и выезда считаются полностью. Период скользящий: для каждого дня смотрят на предыдущие 180 дней.', 'Você pode ficar até 90 dias em qualquer período de 180. Os dias de entrada e de saída contam como dias inteiros. O período é móvel: para cada dia, consideram-se os 180 dias anteriores.'
         ),
       [counter], counter
     );
@@ -620,56 +621,56 @@ export async function processAssistantQuery(
   // 8) Transit
   if (/(transit|aktarma|layover|umsteig|escala|пересадк|транзит)/.test(norm)) {
     return reply(
-      `**${L5('Aktarmalı uçuşta vize', 'Visas for connecting flights', 'Visum beim Umsteigen', 'Visado en escalas', 'Виза при пересадке')}**\n` +
-        `• ${L5('Tek biletle uçuyor, bagajı almıyor ve havalimanının transit alanından çıkmıyorsanız çoğu ülke transit vize istemez.', 'On a single ticket, without collecting bags or leaving the transit area, most countries require no transit visa.', 'Mit einem Ticket, ohne Gepäckabholung und ohne den Transitbereich zu verlassen, ist meist kein Transitvisum nötig.', 'Con un solo billete, sin recoger equipaje ni salir de la zona de tránsito, la mayoría de países no exige visado de tránsito.', 'С единым билетом, без получения багажа и выхода из транзитной зоны, транзитная виза обычно не нужна.')}\n` +
-        `• ${L5('Ayrı biletlerle bagajı alıp yeniden check-in yapacaksanız ülkeye giriş sayılır; o ülkenin vizesi gerekir.', 'With separate tickets, collecting bags and checking in again counts as entering the country; you need its visa.', 'Bei getrennten Tickets mit erneutem Check-in gilt das als Einreise; dann ist das Visum des Landes nötig.', 'Con billetes separados, recoger el equipaje y volver a facturar cuenta como entrada; necesitas su visado.', 'При раздельных билетах получение багажа и повторная регистрация считаются въездом; нужна виза страны.')}\n` +
-        `• ${L5('ABD ve Kanada’da havalimanı içi transit yoktur; sadece aktarma için bile vize ya da elektronik izin gerekir. Bazı Schengen ülkeleri de bazı pasaportlara havalimanı transit vizesi şartı koyar.', 'The US and Canada have no airside transit; even a connection needs a visa or electronic authorisation. Some Schengen countries also require an airport transit visa for certain passports.', 'USA und Kanada haben keinen Transitbereich; selbst zum Umsteigen braucht man Visum oder elektronische Genehmigung. Manche Schengen-Staaten verlangen für bestimmte Pässe ein Flughafentransitvisum.', 'EE. UU. y Canadá no tienen tránsito sin entrada; incluso una escala exige visado o autorización electrónica. Algunos países Schengen piden visado de tránsito aeroportuario a ciertos pasaportes.', 'В США и Канаде нет транзитной зоны: даже для пересадки нужна виза или электронное разрешение. Некоторые страны Шенгена требуют аэропортовую транзитную визу для отдельных паспортов.')}`,
+      `**${L5('Aktarmalı uçuşta vize', 'Visas for connecting flights', 'Visum beim Umsteigen', 'Visado en escalas', 'Виза при пересадке', 'Visto em conexões')}**\n` +
+        `• ${L5('Tek biletle uçuyor, bagajı almıyor ve havalimanının transit alanından çıkmıyorsanız çoğu ülke transit vize istemez.', 'On a single ticket, without collecting bags or leaving the transit area, most countries require no transit visa.', 'Mit einem Ticket, ohne Gepäckabholung und ohne den Transitbereich zu verlassen, ist meist kein Transitvisum nötig.', 'Con un solo billete, sin recoger equipaje ni salir de la zona de tránsito, la mayoría de países no exige visado de tránsito.', 'С единым билетом, без получения багажа и выхода из транзитной зоны, транзитная виза обычно не нужна.', 'Com uma única passagem, sem retirar a bagagem nem sair da área de trânsito, a maioria dos países não exige visto de trânsito.')}\n` +
+        `• ${L5('Ayrı biletlerle bagajı alıp yeniden check-in yapacaksanız ülkeye giriş sayılır; o ülkenin vizesi gerekir.', 'With separate tickets, collecting bags and checking in again counts as entering the country; you need its visa.', 'Bei getrennten Tickets mit erneutem Check-in gilt das als Einreise; dann ist das Visum des Landes nötig.', 'Con billetes separados, recoger el equipaje y volver a facturar cuenta como entrada; necesitas su visado.', 'При раздельных билетах получение багажа и повторная регистрация считаются въездом; нужна виза страны.', 'Com passagens separadas, retirar a bagagem e despachá-la de novo conta como entrada; você precisa do visto do país.')}\n` +
+        `• ${L5('ABD ve Kanada’da havalimanı içi transit yoktur; sadece aktarma için bile vize ya da elektronik izin gerekir. Bazı Schengen ülkeleri de bazı pasaportlara havalimanı transit vizesi şartı koyar.', 'The US and Canada have no airside transit; even a connection needs a visa or electronic authorisation. Some Schengen countries also require an airport transit visa for certain passports.', 'USA und Kanada haben keinen Transitbereich; selbst zum Umsteigen braucht man Visum oder elektronische Genehmigung. Manche Schengen-Staaten verlangen für bestimmte Pässe ein Flughafentransitvisum.', 'EE. UU. y Canadá no tienen tránsito sin entrada; incluso una escala exige visado o autorización electrónica. Algunos países Schengen piden visado de tránsito aeroportuario a ciertos pasaportes.', 'В США и Канаде нет транзитной зоны: даже для пересадки нужна виза или электронное разрешение. Некоторые страны Шенгена требуют аэропортовую транзитную визу для отдельных паспортов.', 'EUA e Canadá não têm trânsito sem entrada; até uma conexão exige visto ou autorização eletrônica. Alguns países Schengen exigem visto de trânsito aeroportuário para certos passaportes.')}`,
       [radarPill]
     );
   }
 
   // 9) Bavul
   if (/(valiz|bavul|packing|pack list|packliste|koffer|equipaje|maleta|чемодан|список вещей)/.test(norm)) {
-    const pack: AssistantActionPill = { id: 'tool-packing', type: 'open_tool', toolKey: 'packing', label: L5('Bavul listesini aç', 'Open packing list', 'Packliste öffnen', 'Abrir lista de equipaje', 'Открыть список вещей'), accentTone: 'teal' };
-    return reply(L5('Bavul listesi gideceğin ülkenin iklimine, priz tipine ve seyahat türüne göre hazırlanır; işaretlediklerin cihazında saklanır.', 'The packing list adapts to your destination’s climate, plug type and trip style; your ticks are saved on your device.', 'Die Packliste passt sich Klima, Steckertyp und Reiseart an; Häkchen bleiben auf deinem Gerät gespeichert.', 'La lista se adapta al clima, el enchufe y el tipo de viaje; lo que marques se guarda en tu dispositivo.', 'Список подстраивается под климат, тип розеток и формат поездки; отметки сохраняются на устройстве.'), [pack], pack);
+    const pack: AssistantActionPill = { id: 'tool-packing', type: 'open_tool', toolKey: 'packing', label: L5('Bavul listesini aç', 'Open packing list', 'Packliste öffnen', 'Abrir lista de equipaje', 'Открыть список вещей', 'Abrir lista de bagagem'), accentTone: 'teal' };
+    return reply(L5('Bavul listesi gideceğin ülkenin iklimine, priz tipine ve seyahat türüne göre hazırlanır; işaretlediklerin cihazında saklanır.', 'The packing list adapts to your destination’s climate, plug type and trip style; your ticks are saved on your device.', 'Die Packliste passt sich Klima, Steckertyp und Reiseart an; Häkchen bleiben auf deinem Gerät gespeichert.', 'La lista se adapta al clima, el enchufe y el tipo de viaje; lo que marques se guarda en tu dispositivo.', 'Список подстраивается под климат, тип розеток и формат поездки; отметки сохраняются на устройстве.', 'A lista se adapta ao clima, à tomada e ao tipo de viagem; o que você marcar fica salvo no seu dispositivo.'), [pack], pack);
   }
 
   // 10) Nereye gidebilirim
   if (!targetCountry && (/^(radar|harita|map|karte|mapa|карта)$/.test(norm) || /(nereye|nerelere|tatil yeri|where can i go|where to go|wohin|a donde|adonde|куда поехать|куда можно)/.test(norm) || (suggestAsk && /(tatil|gezi|seyahat|ulke|yer|holiday|vacation|trip|destination|travel|urlaub|reise|ziel|vacacion|viaje|destino|отпуск|отдых|поездк|направлен)/.test(norm)))) {
     const groups: Array<[string, string[]]> = [
-      [L5('Sıcak ve tropik', 'Warm and tropical', 'Warm und tropisch', 'Cálido y tropical', 'Тёплые и тропические'), ['TH', 'MY', 'ID', 'MV']],
-      [L5('Balkanlar', 'Balkans', 'Balkan', 'Balcanes', 'Балканы'), ['ME', 'RS', 'AL', 'BA', 'MK']],
-      [L5('Yakın', 'Nearby', 'In der Nähe', 'Cerca', 'Рядом'), ['GE', 'AZ', 'UZ']]
+      [L5('Sıcak ve tropik', 'Warm and tropical', 'Warm und tropisch', 'Cálido y tropical', 'Тёплые и тропические', 'Quente e tropical'), ['TH', 'MY', 'ID', 'MV']],
+      [L5('Balkanlar', 'Balkans', 'Balkan', 'Balcanes', 'Балканы', 'Bálcãs'), ['ME', 'RS', 'AL', 'BA', 'MK']],
+      [L5('Yakın', 'Nearby', 'In der Nähe', 'Cerca', 'Рядом', 'Perto'), ['GE', 'AZ', 'UZ']]
     ];
-    const text = `**${L5(`${originName} pasaportuyla kolay gidilen yerler`, `Easy destinations with ${enArticle(originName)} ${originName} passport`, `Einfache Ziele mit Pass aus ${originName}`, `Destinos fáciles con pasaporte de ${originName}`, `Простые направления (паспорт: ${originName})`)}**\n` +
+    const text = `**${L5(`${originName} pasaportuyla kolay gidilen yerler`, `Easy destinations with ${enArticle(originName)} ${originName} passport`, `Einfache Ziele mit Pass aus ${originName}`, `Destinos fáciles con pasaporte de ${originName}`, `Простые направления (паспорт: ${originName})`, `Destinos fáceis com passaporte de ${originName}`)}**\n` +
       groups.map(([g, cs]) => `• **${g}:** ${cs.map((c) => { const it = passportItems.find((x) => x.c === c); return it && it.cat !== 'visa' ? `${getCountryName(c, activeLang)}${days(it.v) ? ` (${days(it.v)})` : ''}` : ''; }).filter(Boolean).join(', ')}`).filter((x) => !/\*\*: $/.test(x)).join('\n');
     return reply(text, [radarPill, countryPill('GE')], radarPill);
   }
 
   // 11) Saat farkı
   if (/(saat farki|timezone|time zone|zeitzone|zona horaria|часов\S* пояс|разница во времени)/.test(norm)) {
-    const tz: AssistantActionPill = { id: 'tool-overlap', type: 'open_tool', toolKey: 'overlap', label: L5('Saat farkı aracı', 'Time zone tool', 'Zeitzonen-Tool', 'Herramienta de husos horarios', 'Часовые пояса'), accentTone: 'sky' };
-    return reply(L5('Saat farkı aracı, farklı ülkelerdeki kişilerle ortak uygun saatleri gösterir.', 'The time zone tool shows hours that suit people in different countries.', 'Das Zeitzonen-Tool zeigt passende gemeinsame Uhrzeiten.', 'La herramienta muestra horas que convienen en distintos países.', 'Инструмент показывает удобные часы для людей в разных странах.'), [tz], tz);
+    const tz: AssistantActionPill = { id: 'tool-overlap', type: 'open_tool', toolKey: 'overlap', label: L5('Saat farkı aracı', 'Time zone tool', 'Zeitzonen-Tool', 'Herramienta de husos horarios', 'Часовые пояса', 'Ferramenta de fusos horários'), accentTone: 'sky' };
+    return reply(L5('Saat farkı aracı, farklı ülkelerdeki kişilerle ortak uygun saatleri gösterir.', 'The time zone tool shows hours that suit people in different countries.', 'Das Zeitzonen-Tool zeigt passende gemeinsame Uhrzeiten.', 'La herramienta muestra horas que convienen en distintos países.', 'Инструмент показывает удобные часы для людей в разных странах.', 'A ferramenta mostra os horários que funcionam bem em diferentes países.'), [tz], tz);
   }
 
   // 12) Pasaport kaybı ve konsolosluk
   if (/(kayip|kaybettim|calinti|calindi|konsolosluk|buyukelcilik|lost passport|stolen|consulate|embassy|pass verloren|botschaft|konsulat|perdi el pasaporte|embajada|consulado|потерял паспорт|консульств|посольств)/.test(norm)) {
-    const sos: AssistantActionPill = { id: 'tab-consular', type: 'switch_tab', tabKey: 'consular', label: L5('Acil durum ve konsolosluk', 'Emergency & consulate', 'Notfall & Konsulat', 'Emergencia y consulado', 'Экстренная помощь'), accentTone: 'coral' };
+    const sos: AssistantActionPill = { id: 'tab-consular', type: 'switch_tab', tabKey: 'consular', label: L5('Acil durum ve konsolosluk', 'Emergency & consulate', 'Notfall & Konsulat', 'Emergencia y consulado', 'Экстренная помощь', 'Emergência e consulado'), accentTone: 'coral' };
     const c = getConsularEmergencyInfo(currentPassport || 'TR', activeLang);
     const pick = (o: Record<string, string | undefined>) => o[activeLang] || o.en || o.tr || '';
     return reply(
-      `**${L5('Yurt dışında pasaport kaybı', 'Lost passport abroad', 'Pass im Ausland verloren', 'Pasaporte perdido en el extranjero', 'Потеря паспорта за границей')}**\n` +
-        `1. ${L5('En yakın polis merkezinden kayıp/çalıntı tutanağı alın.', 'Get a loss/theft report from the nearest police station.', 'Verlust-/Diebstahlanzeige bei der nächsten Polizei machen.', 'Pide una denuncia de pérdida o robo en la comisaría más cercana.', 'Получите справку о потере/краже в ближайшем отделении полиции.')}\n` +
-        `2. ${pick(c.ministryName as never)} – ${L5('7/24 hat', '24/7 line', '24/7-Hotline', 'línea 24/7', 'круглосуточно')}: **${c.hotline247 || '—'}**\n` +
-        `3. ${L5('İki biyometrik fotoğrafla en yakın temsilciliğe başvurup dönüş belgesi alın', 'Apply at the nearest mission with two biometric photos for an emergency travel document', 'Mit zwei biometrischen Fotos bei der nächsten Vertretung ein Notreisedokument beantragen', 'Solicita en la representación más cercana, con dos fotos biométricas, un documento de viaje de emergencia', 'Обратитесь в ближайшее представительство с двумя биометрическими фото за документом на возвращение')}: ${pick(c.emergencyDocName as never)}.`,
+      `**${L5('Yurt dışında pasaport kaybı', 'Lost passport abroad', 'Pass im Ausland verloren', 'Pasaporte perdido en el extranjero', 'Потеря паспорта за границей', 'Passaporte perdido no exterior')}**\n` +
+        `1. ${L5('En yakın polis merkezinden kayıp/çalıntı tutanağı alın.', 'Get a loss/theft report from the nearest police station.', 'Verlust-/Diebstahlanzeige bei der nächsten Polizei machen.', 'Pide una denuncia de pérdida o robo en la comisaría más cercana.', 'Получите справку о потере/краже в ближайшем отделении полиции.', 'Registre um boletim de ocorrência de perda ou roubo na delegacia mais próxima.')}\n` +
+        `2. ${pick(c.ministryName as never)} – ${L5('7/24 hat', '24/7 line', '24/7-Hotline', 'línea 24/7', 'круглосуточно', 'linha 24/7')}: **${c.hotline247 || '—'}**\n` +
+        `3. ${L5('İki biyometrik fotoğrafla en yakın temsilciliğe başvurup dönüş belgesi alın', 'Apply at the nearest mission with two biometric photos for an emergency travel document', 'Mit zwei biometrischen Fotos bei der nächsten Vertretung ein Notreisedokument beantragen', 'Solicita en la representación más cercana, con dos fotos biométricas, un documento de viaje de emergencia', 'Обратитесь в ближайшее представительство с двумя биометрическими фото за документом на возвращение', 'Solicite na representação diplomática mais próxima, com duas fotos biométricas, um documento de viagem de emergência')}: ${pick(c.emergencyDocName as never)}.`,
       [sos], sos
     );
   }
 
   // 13) Dijital göçebe
   if (/(nomad|gocebe|uzaktan calis|remote work|digitale nomaden|nomada digital|цифров\S* кочев|удалённ)/.test(norm)) {
-    const nomad: AssistantActionPill = { id: 'tab-nomad', type: 'switch_tab', tabKey: 'nomad', label: L5('Dijital göçebe vizeleri', 'Digital nomad visas', 'Visa für digitale Nomaden', 'Visados de nómada digital', 'Визы цифровых кочевников'), accentTone: 'teal' };
-    return reply(L5('Dijital göçebe vizelerinin gelir şartları, süreleri ve resmî başvuru bağlantıları araçlar bölümünde ülke ülke listeleniyor.', 'Income requirements, durations and official application links for digital nomad visas are listed country by country in the tools section.', 'Einkommensgrenzen, Laufzeiten und offizielle Antragslinks der Nomaden-Visa stehen Land für Land im Tools-Bereich.', 'Requisitos de ingresos, duración y enlaces oficiales de los visados de nómada digital están en la sección de herramientas, país por país.', 'Требования к доходу, сроки и официальные ссылки на визы цифровых кочевников собраны по странам в разделе инструментов.'), [nomad], nomad);
+    const nomad: AssistantActionPill = { id: 'tab-nomad', type: 'switch_tab', tabKey: 'nomad', label: L5('Dijital göçebe vizeleri', 'Digital nomad visas', 'Visa für digitale Nomaden', 'Visados de nómada digital', 'Визы цифровых кочевников', 'Vistos para nômades digitais'), accentTone: 'teal' };
+    return reply(L5('Dijital göçebe vizelerinin gelir şartları, süreleri ve resmî başvuru bağlantıları araçlar bölümünde ülke ülke listeleniyor.', 'Income requirements, durations and official application links for digital nomad visas are listed country by country in the tools section.', 'Einkommensgrenzen, Laufzeiten und offizielle Antragslinks der Nomaden-Visa stehen Land für Land im Tools-Bereich.', 'Requisitos de ingresos, duración y enlaces oficiales de los visados de nómada digital están en la sección de herramientas, país por país.', 'Требования к доходу, сроки и официальные ссылки на визы цифровых кочевников собраны по странам в разделе инструментов.', 'Requisitos de renda, duração e links oficiais dos vistos para nômades digitais estão na seção de ferramentas, país por país.'), [nomad], nomad);
   }
 
   if (targetCountry) return countryMsg(targetCountry);
@@ -681,7 +682,7 @@ export async function processAssistantQuery(
       'Type a country and a topic. For example:\n• "Do I need a visa for Japan"\n• "Is Dubai safe"\n• "Egypt emergency number"\n• "Thailand tipping"\n• "Italy plugs"',
       'Schreib ein Land und ein Thema. Zum Beispiel:\n• „Visum Japan“\n• „Ist Dubai sicher“\n• „Ägypten Notruf“\n• „Thailand Trinkgeld“\n• „Italien Steckdose“',
       'Escribe un país y un tema. Por ejemplo:\n• "visado Japón"\n• "¿es seguro Dubái?"\n• "Egipto emergencias"\n• "propinas Tailandia"\n• "enchufe Italia"',
-      'Напишите страну и тему. Например:\n• «Нужна ли виза в Японию»\n• «Безопасно ли в Дубае»\n• «Египет экстренные номера»\n• «Таиланд чаевые»\n• «Италия розетки»'
+      'Напишите страну и тему. Например:\n• «Нужна ли виза в Японию»\n• «Безопасно ли в Дубае»\n• «Египет экстренные номера»\n• «Таиланд чаевые»\n• «Италия розетки»', 'Digite um país e um assunto. Por exemplo:\n• "visto Japão"\n• "Dubai é seguro?"\n• "Egito emergências"\n• "gorjeta Tailândia"\n• "tomada Itália"'
     ),
     [radarPill]
   );

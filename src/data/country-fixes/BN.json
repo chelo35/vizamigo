@@ -1439,6 +1439,366 @@
    ]
   }
  },
+ "pt": {
+  "insights": {
+   "currency": "Dólar de Brunei (BND)",
+   "plugType": "Tipo G (240V, 50Hz)",
+   "bestMonths": "Fevereiro a abril (relativamente seco e ensolarado); calor e umidade o ano todo (~27-32 °C), com mais chuva de outubro a janeiro",
+   "safety": {
+    "safetyScore": 85,
+    "safetyLevel": "Excepcionalmente seguro",
+    "badgeColor": "bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-950/40 dark:text-emerald-300 dark:border-emerald-900/60",
+    "crimeRateSummary": "A criminalidade está entre as mais baixas do mundo e a violência é muito rara. Mas as leis são rígidas: a venda de álcool é proibida, crimes ligados a drogas podem ser punidos com pena de morte e algumas disposições do código penal islâmico também se aplicam a não muçulmanos.",
+    "commonScams": [
+     "Os poucos táxis que cobram um valor alto no fim da corrida em vez de usar taxímetro",
+     "Táxis aquáticos em Kampong Ayer que cobram dos turistas preços muito altos por um “passeio privativo”",
+     "Guias falsos ou sem licença que vendem excursões a Temburong a preços inflados"
+    ],
+    "safeTravelTips": [
+     "Respeite as leis e as normas religiosas; não beba álcool em público e evite demonstrações de afeto em público.",
+     "Às sextas-feiras, lojas e restaurantes fecham das 12h às 14h para a oração; programe-se.",
+     "Durante o Ramadã, evite comer e beber em público durante o dia."
+    ],
+    "emergencyNumbers": {
+     "police": "993",
+     "ambulance": "991",
+     "general": "993"
+    }
+   },
+   "internet": {
+    "networkCoverage": "4G em todo o país e 5G nas cidades; a cobertura fica fraca nas florestas de Temburong",
+    "costPerGbUsd": "~US$ 1,50 - 4,00",
+    "esimAvailability": "Boa (os planos de eSIM internacionais funcionam)",
+    "bestCarriers": [
+     "DST",
+     "Progresif",
+     "imagine",
+     "Airalo / Holafly eSIM"
+    ],
+    "vpnRequired": false
+   },
+   "transport": {
+    "transportQuality": "Média (rede de ônibus limitada; quase todo mundo anda de carro)",
+    "costLevel": "Moderado",
+    "singleTicketUsd": "0,75 $ (ônibus a BND 1)",
+    "dailyPassUsd": "Não existe",
+    "popularRideApps": [
+     "Dart (app local de transporte)",
+     "Táxis aquáticos (Kampong Ayer)",
+     "Carro alugado"
+    ],
+    "taxiAdvice": "Uber e Grab não funcionam no país; o app local Dart é a opção mais prática. Há poucos táxis, e eles costumam ser chamados por telefone. Os ônibus urbanos roxos custam BND 1, mas param de circular cedo, no fim da tarde. Os táxis aquáticos para Kampong Ayer custam BND 1-2 em trajetos curtos; combine o preço antes. Alugar um carro dá mais liberdade; a mão é inglesa (dirige-se pela esquerda)."
+   },
+   "livingCosts": {
+    "dailyBudgetBackpackerUsd": "US$ 40 - 60",
+    "dailyBudgetMidrangeUsd": "US$ 100 - 170",
+    "budgetMealUsd": "US$ 3 - 7",
+    "coffeeUsd": "US$ 1,50 - 4,00",
+    "waterBottleUsd": "US$ 0,50 - 1,00",
+    "hostelDormUsd": "US$ 20 - 35",
+    "hotel3StarUsd": "US$ 60 - 110",
+    "flightCostIndex": "Médio a alto (sem voos diretos)",
+    "flightTip": "Não há voos diretos da Turquia nem da Espanha; o mais comum são os voos da Royal Brunei via Dubai ou conexões por Cingapura e Kuala Lumpur."
+   }
+  },
+  "enc": {
+   "culture": {
+    "etiquette": [
+     "Aponte com o polegar direito em vez do indicador.",
+     "Nem sempre se espera um aperto de mão entre pessoas de sexos diferentes; espere a outra pessoa estender a mão.",
+     "Vista-se de forma discreta; nas mesquitas, as mulheres recebem túnicas e lenços emprestados.",
+     "Falar mal do sultão ou da família real pode trazer problemas legais."
+    ],
+    "festivals": [
+     "Hari Raya Aidilfitri (fim do Ramadã; o palácio Istana Nurul Iman abre as portas ao público)",
+     "Aniversário do sultão (15 de julho)",
+     "Dia Nacional (23 de fevereiro)"
+    ],
+    "lifestyle": "Uma vida tranquila, familiar e religiosa; à noite, os mercados noturnos e os shoppings são o centro da vida social."
+   },
+   "tourism": {
+    "mustSeePlaces": [
+     "Mesquita Sultan Omar Ali Saifuddien",
+     "Mesquita Jame’ Asr Hassanil Bolkiah",
+     "Vila aquática de Kampong Ayer",
+     "Parque Nacional Ulu Temburong (passarela na copa das árvores)",
+     "Museu Royal Regalia",
+     "Mercado noturno de Gadong"
+    ],
+    "bestSeasons": "Fevereiro a abril",
+    "travelStyleTip": "O país é pequeno e tranquilo; hospede-se em Bandar Seri Begawan e alugue um carro para bate-voltas ou passeios com pernoite a Jerudong e Temburong."
+   },
+   "religion": {
+    "primaryReligions": "Muçulmanos ~80% (o islamismo sunita é a religião oficial), budistas ~8%, cristãos ~7%",
+    "respectNorms": "Visite as mesquitas fora dos horários de oração, tire os sapatos e vista-se de forma discreta; não muçulmanos não podem entrar em algumas áreas.",
+    "sacredSites": [
+     "Mesquita Sultan Omar Ali Saifuddien",
+     "Mesquita Jame’ Asr Hassanil Bolkiah",
+     "Túmulo do sultão Bolkiah"
+    ]
+   },
+   "language": {
+    "officialLanguages": "O malaio é a língua oficial; o inglês é muito usado nos negócios e na educação, e também se falam dialetos chineses.",
+    "englishProficiency": "Bom; a maioria fala inglês e a comunicação é fácil, principalmente nas cidades.",
+    "phrases": [
+     {
+      "phrase": "Assalamualaikum",
+      "meaning": "A paz esteja com você (a saudação mais comum)",
+      "translation": "Olá",
+      "pronunciation": "as-sa-la-mu a-LAY-kum"
+     },
+     {
+      "phrase": "Selamat pagi",
+      "meaning": "Bom dia",
+      "translation": "Bom dia",
+      "pronunciation": "se-LA-mat PA-gee"
+     },
+     {
+      "phrase": "Apa khabar?",
+      "meaning": "Como vai?",
+      "translation": "Tudo bem?",
+      "pronunciation": "A-pa KHA-bar"
+     },
+     {
+      "phrase": "Terima kasih",
+      "meaning": "Obrigado",
+      "translation": "Obrigado",
+      "pronunciation": "te-REE-ma KA-seh"
+     },
+     {
+      "phrase": "Berapa harganya?",
+      "meaning": "Quanto custa?",
+      "translation": "Quanto é?",
+      "pronunciation": "be-RA-pa har-GA-nya"
+     }
+    ]
+   },
+   "history": {
+    "conciseHistory": "Sob o sultão Bolkiah, nos séculos XV e XVI, o Sultanato de Brunei foi uma potência que abrangia grande parte de Bornéu e o sul das Filipinas. Em 1888 tornou-se protetorado britânico, em 1929 foi descoberto petróleo em Seria e, em 1º de janeiro de 1984, Brunei conquistou a independência plena. O sultão Hassanal Bolkiah reina desde 1967.",
+    "milestones": [
+     "1888: Protetorado britânico",
+     "1929: Descoberta de petróleo em Seria",
+     "1984: Independência plena (1º de janeiro)",
+     "2020: Inauguração da ponte de Temburong"
+    ]
+   },
+   "gastronomy": {
+    "famousDishes": [
+     "Ambuyat (amido de sagu que se mergulha em molho com o garfo chandas; prato nacional)",
+     "Nasi katok (arroz, frango frito e sambal; barato e popular)",
+     "Udang sambal serai bercili (camarão apimentado com capim-limão)"
+    ],
+    "traditionalDrinks": [
+     "Teh tarik (chá com leite espumoso)",
+     "Air batu campur (ABC; sobremesa de gelo raspado)",
+     "Kopi (café local)"
+    ],
+    "streetFoodAndDesserts": [
+     "Satay no mercado noturno",
+     "Kuih mor e kuih cincin (biscoitos tradicionais)",
+     "Pisang goreng (bolinhos de banana frita)"
+    ]
+   },
+   "achievements": {
+    "famousFigures": [
+     "Sultão Hassanal Bolkiah (soberano desde 1967)",
+     "Sultão Bolkiah (soberano da era de ouro)",
+     "Sultão Omar Ali Saifuddien III (arquiteto do Brunei moderno)"
+    ],
+    "strongSectors": [
+     "Petróleo e gás (a maior parte das exportações)",
+     "Gás natural liquefeito (GNL) e petroquímica",
+     "Indústria halal e finanças islâmicas"
+    ]
+   },
+   "economy": {
+    "paymentCulture": "Cartões são amplamente aceitos; em mercados e pequenos estabelecimentos é preciso dinheiro vivo. O dólar de Brunei tem paridade com o dólar de Cingapura, que também é aceito.",
+    "tippingCulture": "Não há cultura de gorjeta; os hotéis podem acrescentar 10% de taxa de serviço. Um pequeno agradecimento por um bom atendimento já basta.",
+    "economicPillars": "Petróleo e gás, GNL, petroquímica, serviços públicos e indústria halal."
+   }
+  },
+  "itin": {
+   "routeName": "Roteiro pelo Sultanato de Brunei: Bandar Seri Begawan, Jerudong e Temburong",
+   "routeSummary": "Um roteiro tranquilo de 5 dias que parte de Bandar Seri Begawan, com suas mesquitas de cúpulas douradas e Kampong Ayer, uma das maiores vilas aquáticas do mundo, e segue até Jerudong e a floresta virgem de Temburong.",
+   "totalDays": 5,
+   "idealDurationText": "Roteiro de 5 dias",
+   "bestSeason": "Fevereiro a abril",
+   "transportMode": "Carro alugado ou Dart + táxi aquático até Kampong Ayer + passeio de barco/carro a Temburong",
+   "paceLevel": "Tranquilo (cultura + natureza)",
+   "stops": [
+    {
+     "stopNumber": 1,
+     "name": "Parada 1: Bandar Seri Begawan (capital e vila aquática)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Mesquita Sultan Omar Ali Saifuddien",
+      "Vila aquática de Kampong Ayer",
+      "Museu Royal Regalia",
+      "Mercado noturno de Gadong"
+     ],
+     "activities": [
+      "Percorra de táxi aquático as casas sobre palafitas e as passarelas de Kampong Ayer.",
+      "Ao pôr do sol, contemple o reflexo da mesquita Omar Ali Saifuddien em sua lagoa.",
+      "Coma satay e nasi katok no mercado noturno de Gadong."
+     ],
+     "foodAndDrinks": [
+      "Ambuyat",
+      "Nasi katok",
+      "Teh tarik"
+     ],
+     "criticalTips": [
+      "Às sextas-feiras, tudo fecha das 12h às 14h.",
+      "Visite as mesquitas fora dos horários de oração."
+     ],
+     "mapsQuery": "Bandar Seri Begawan, Brunei"
+    },
+    {
+     "stopNumber": 2,
+     "name": "Parada 2: Jerudong e a região do palácio (herança real)",
+     "recommendedDuration": "1 dia",
+     "durationBadge": "1 dia",
+     "highlights": [
+      "Mesquita Jame’ Asr Hassanil Bolkiah",
+      "Istana Nurul Iman (por fora)",
+      "Jerudong Park",
+      "Litoral junto ao Empire Brunei"
+     ],
+     "activities": [
+      "Visite a mesquita Jame’ Asr, com suas cúpulas douradas.",
+      "Fotografe o Istana Nurul Iman da margem do rio.",
+      "Curta o pôr do sol no litoral de Jerudong."
+     ],
+     "foodAndDrinks": [
+      "Udang sambal serai bercili",
+      "Air batu campur"
+     ],
+     "criticalTips": [
+      "O palácio só abre ao público durante o Hari Raya.",
+      "O transporte público é escasso; alugue um carro ou use o Dart."
+     ],
+     "mapsQuery": "Jerudong, Brunei"
+    },
+    {
+     "stopNumber": 3,
+     "name": "Parada 3: Parque Nacional Ulu Temburong (floresta tropical)",
+     "recommendedDuration": "2 dias",
+     "durationBadge": "2 dias",
+     "highlights": [
+      "Passarela na copa das árvores (~50 m de altura)",
+      "Passeio de barco longo pelo rio Temburong",
+      "Ponte de Temburong",
+      "Vilarejo de Bangar"
+     ],
+     "activities": [
+      "Suba ao amanhecer na torre da passarela para ver a floresta.",
+      "Suba as corredeiras do rio em um barco longo (temuai).",
+      "Faça uma caminhada noturna guiada pela floresta."
+     ],
+     "foodAndDrinks": [
+      "Kelupis (arroz glutinoso em folhas)",
+      "Pratos locais de peixe e legumes"
+     ],
+     "criticalTips": [
+      "Só é possível entrar no parque com uma operadora licenciada; reserve com antecedência.",
+      "Leve meias contra sanguessugas, capa de chuva e repelente."
+     ],
+     "mapsQuery": "Ulu Temburong National Park, Brunei"
+    }
+   ],
+   "signatureGastronomy": {
+    "dishes": [
+     "Ambuyat (amido de sagu que se mergulha em molho com o garfo chandas; prato nacional)",
+     "Nasi katok (arroz, frango frito e sambal; barato e popular)",
+     "Udang sambal serai bercili (camarão apimentado com capim-limão)"
+    ],
+    "drinks": [
+     "Teh tarik (chá com leite espumoso)",
+     "Air batu campur (ABC; sobremesa de gelo raspado)",
+     "Kopi (café local)"
+    ],
+    "streetFoods": [
+     "Satay no mercado noturno",
+     "Kuih mor e kuih cincin (biscoitos tradicionais)",
+     "Pisang goreng (bolinhos de banana frita)"
+    ],
+    "diningAdvice": "Não se vende álcool nem se serve bebida alcoólica nos restaurantes; viajantes não muçulmanos maiores de 17 anos podem trazer uma quantidade limitada, desde que a declarem, e consumi-la apenas em ambiente privado. A comida é halal."
+   },
+   "packingAndPrecautions": {
+    "essentials": [
+     "Adaptador de tomada tipo G",
+     "Roupas leves e discretas",
+     "Capa de chuva ou guarda-chuva",
+     "Repelente de mosquitos"
+    ],
+    "safetyAndEtiquette": [
+     "Respeite a família real e os valores religiosos.",
+     "As leis antidrogas são duríssimas; nunca carregue pacotes suspeitos."
+    ]
+   }
+  },
+  "intel": {
+   "plugs": {
+    "types": [
+     "G"
+    ],
+    "voltage": "240V",
+    "frequency": "50Hz",
+    "needsAdapterFromTR": true,
+    "socketDesc": "Tipo G (três pinos chatos, padrão britânico), 240V / 50Hz. Plugues europeus precisam de adaptador."
+   },
+   "waterAndHealth": {
+    "tapWaterSafe": true,
+    "tapWaterDesc": "A água da torneira é tratada e considerada potável; em prédios antigos, pode ser melhor optar por água filtrada ou engarrafada.",
+    "vaccines": [
+     "Vacinas de rotina (tétano, difteria, tríplice viral)",
+     "Hepatite A",
+     "Febre amarela: certificado apenas se você chegar de um país de risco",
+     "Precauções contra mosquitos por causa da dengue"
+    ],
+    "insuranceRequired": false,
+    "emergencyAmbulance": "991"
+   },
+   "tipping": {
+    "custom": "Não se espera gorjeta; os hotéis podem acrescentar 10% de taxa de serviço.",
+    "standardPercent": 0,
+    "rule": "optional",
+    "note": "Uma pequena gorjeta para carregadores de bagagem ou guias é bem-vinda, mas não é necessária."
+   },
+   "taxFree": {
+    "vatRefundPercent": "Brunei não tem IVA nem imposto sobre vendas",
+    "minSpend": "Não se aplica",
+    "customsNote": "Como não há IVA, não existe sistema de restituição. A entrada de álcool é limitada (não muçulmanos maiores de 17 anos: 2 garrafas de destilado e 12 latas de cerveja) e precisa ser declarada."
+   },
+   "connectivity": {
+    "esimRecommended": true,
+    "avgGbPriceUsd": "~US$ 1,50 - 4,00",
+    "topCarriers": [
+     "DST",
+     "Progresif",
+     "imagine"
+    ],
+    "airportSimTrapWarning": "No aeroporto há chips turísticos da DST ou da Progresif a preços razoáveis, mas o eSIM é mais prático."
+   },
+   "touristScams": [
+    {
+     "title": "Tarifa de táxi",
+     "desc": "Os poucos táxis podem cobrar um valor alto na chegada.",
+     "tip": "Use o app Dart ou combine o preço antes."
+    },
+    {
+     "title": "Preço do táxi aquático",
+     "desc": "Em Kampong Ayer, cobram dos turistas preços altos por um “passeio privativo”.",
+     "tip": "Negocie antes de embarcar; trajetos curtos custam BND 1-2."
+    },
+    {
+     "title": "Guia sem licença",
+     "desc": "Pessoas não registradas vendem excursões a Temburong a preços inflados.",
+     "tip": "Reserve com operadoras licenciadas."
+    }
+   ]
+  }
+ },
  "ru": {
   "insights": {
    "currency": "Брунейский доллар (BND)",

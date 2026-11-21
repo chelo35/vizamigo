@@ -808,6 +808,7 @@ export function getCategoryBadgeLabel(item?: { cat: VisaCategory; id?: boolean; 
 
   if (!item) {
     if (currentLang === 'es') return 'Información de Visado';
+    if (currentLang === 'pt') return 'Informações de visto';
     if (currentLang === 'ru') return 'Информация о визе';
     if (currentLang === 'de') return 'Visa-Info';
     if (currentLang === 'en') return 'Visa Info';
@@ -816,6 +817,7 @@ export function getCategoryBadgeLabel(item?: { cat: VisaCategory; id?: boolean; 
 
   if (item.id) {
     if (currentLang === 'es') return 'Entrada con DNI';
+    if (currentLang === 'pt') return 'Entrada com RG';
     if (currentLang === 'ru') return 'Въезд по ID-карте';
     if (currentLang === 'de') return 'Personalausweis-Einreise';
     if (currentLang === 'en') return 'National ID Entry';
@@ -823,6 +825,7 @@ export function getCategoryBadgeLabel(item?: { cat: VisaCategory; id?: boolean; 
   }
   if (/^\d+$/.test(item.v)) {
     if (currentLang === 'es') return `${item.v} días sin visado`;
+    if (currentLang === 'pt') return `${item.v} dias sem visto`;
     if (currentLang === 'ru') return `${item.v} дн. без визы`;
     if (currentLang === 'de') return `${item.v} Tage visumfrei`;
     if (currentLang === 'en') return `${item.v} Days Visa-Free`;
@@ -830,6 +833,7 @@ export function getCategoryBadgeLabel(item?: { cat: VisaCategory; id?: boolean; 
   }
   if (item.v === 'vf') {
     if (currentLang === 'es') return 'Sin límite / Sin visado';
+    if (currentLang === 'pt') return 'Sem limite / sem visto';
     if (currentLang === 'ru') return 'Бессрочно / Без визы';
     if (currentLang === 'de') return 'Unbegrenzt / Visumfrei';
     if (currentLang === 'en') return 'Indefinite / Visa-Free';
@@ -838,36 +842,44 @@ export function getCategoryBadgeLabel(item?: { cat: VisaCategory; id?: boolean; 
   switch (item.cat) {
     case 'free':
       if (currentLang === 'es') return 'Sin Visado';
+      if (currentLang === 'pt') return 'Sem visto';
       if (currentLang === 'ru') return 'Без Визы';
       return currentLang === 'de' ? 'Visumfrei' : currentLang === 'en' ? 'Visa-Free' : 'Vizesiz';
     case 'id':
       if (currentLang === 'es') return 'Entrada con DNI';
+      if (currentLang === 'pt') return 'Entrada com RG';
       if (currentLang === 'ru') return 'Въезд по ID-карте';
       return currentLang === 'de' ? 'Personalausweis-Einreise' : currentLang === 'en' ? 'National ID Entry' : 'Kimlikle Giriş';
     case 'evisa':
       if (currentLang === 'es') return 'Visado Electrónico';
+      if (currentLang === 'pt') return 'Visto eletrônico';
       if (currentLang === 'ru') return 'Электронная Виза';
       return currentLang === 'de' ? 'e-Visum' : currentLang === 'en' ? 'eVisa' : 'E-vize';
     case 'voa':
       if (currentLang === 'es') return 'Visado a la Llegada';
+      if (currentLang === 'pt') return 'Visto na chegada';
       if (currentLang === 'ru') return 'Виза по Прибытии';
       return currentLang === 'de' ? 'Visum bei Ankunft' : currentLang === 'en' ? 'Visa on Arrival' : 'Kapıda Vize';
     case 'eta': {
       const n = item.c ? etaName(item.c) : 'ETA';
       if (currentLang === 'es') return `Autorización ${n}`;
+      if (currentLang === 'pt') return `Autorização ${n}`;
       if (currentLang === 'ru') return `Разрешение ${n}`;
       return currentLang === 'de' ? `${n}-Genehmigung` : currentLang === 'en' ? `${n} required` : `${n} izni`;
     }
     case 'visa':
       if (currentLang === 'es') return 'Visado Obligatorio';
+      if (currentLang === 'pt') return 'Visto obrigatório';
       if (currentLang === 'ru') return 'Требуется Виза';
       return currentLang === 'de' ? 'Visum erforderlich' : currentLang === 'en' ? 'Visa Required' : 'Vize Gerekli';
     case 'none':
       if (currentLang === 'es') return 'Entrada Denegada';
+      if (currentLang === 'pt') return 'Entrada negada';
       if (currentLang === 'ru') return 'Въезд Запрещен';
       return currentLang === 'de' ? 'Keine Einreise' : currentLang === 'en' ? 'Admission Denied' : 'Giriş Yok';
     default:
       if (currentLang === 'es') return 'Visado Obligatorio';
+      if (currentLang === 'pt') return 'Visto obrigatório';
       if (currentLang === 'ru') return 'Требуется Виза';
       return currentLang === 'de' ? 'Visum erforderlich' : currentLang === 'en' ? 'Visa Required' : 'Vize Gerekli';
   }
@@ -878,28 +890,34 @@ export function getCategoryShortLabel(cat: VisaCategory, lang?: string): string 
   switch (cat) {
     case 'free':
       if (currentLang === 'es') return 'Sin visado';
+      if (currentLang === 'pt') return 'Sem visto';
       if (currentLang === 'ru') return 'Без визы';
       return currentLang === 'de' ? 'Visumfrei' : currentLang === 'en' ? 'Visa-Free' : 'Vizesiz';
     case 'id':
       if (currentLang === 'es') return 'DNI';
+      if (currentLang === 'pt') return 'Identidade';
       if (currentLang === 'ru') return 'ID-карта';
       return currentLang === 'de' ? 'Ausweis' : currentLang === 'en' ? 'National ID' : 'Kimlikle';
     case 'evisa':
       if (currentLang === 'es') return 'E-visa';
+      if (currentLang === 'pt') return 'E-visa';
       if (currentLang === 'ru') return 'Э-виза';
       return currentLang === 'de' ? 'e-Visum' : currentLang === 'en' ? 'eVisa' : 'E-vize';
     case 'voa':
       if (currentLang === 'es') return 'A la llegada';
+      if (currentLang === 'pt') return 'Na chegada';
       if (currentLang === 'ru') return 'По приб.';
       return currentLang === 'de' ? 'Visum b. Ank.' : currentLang === 'en' ? 'Visa on Arrival' : 'Kapıda Vize';
     case 'eta':
       return 'ETA';
     case 'visa':
       if (currentLang === 'es') return 'Visado req.';
+      if (currentLang === 'pt') return 'Visto exigido';
       if (currentLang === 'ru') return 'Нужна виза';
       return currentLang === 'de' ? 'Visum nötig' : currentLang === 'en' ? 'Visa Required' : 'Vize Gerekli';
     case 'none':
       if (currentLang === 'es') return 'Sin acceso';
+      if (currentLang === 'pt') return 'Sem acesso';
       if (currentLang === 'ru') return 'Нет въезда';
       return currentLang === 'de' ? 'Kein Zutritt' : currentLang === 'en' ? 'No Entry' : 'Giriş Yok';
     default:
@@ -993,7 +1011,7 @@ function getDisplayNames(lang: string): Intl.DisplayNames {
 export function getCountryName(code: string, lang?: string): string {
   const currentLang = lang || (typeof localStorage !== 'undefined' ? localStorage.getItem('vr_lang') || 'tr' : 'tr');
   if (code === 'XK') return currentLang === 'tr' ? 'Kosova' : 'Kosovo';
-  if (code === 'PS') return currentLang === 'tr' ? 'Filistin' : currentLang === 'de' ? 'Palästina' : currentLang === 'es' ? 'Palestina' : currentLang === 'ru' ? 'Палестина' : 'Palestine';
+  if (code === 'PS') return currentLang === 'tr' ? 'Filistin' : currentLang === 'de' ? 'Palästina' : currentLang === 'es' ? 'Palestina' : currentLang === 'pt' ? 'Palestina' : currentLang === 'ru' ? 'Палестина' : 'Palestine';
   if (code === 'TW') return currentLang === 'tr' ? 'Tayvan' : 'Taiwan';
   if (currentLang === 'pt') {
     if (code === 'HK') return 'Hong Kong';
@@ -1412,18 +1430,19 @@ export function getPracticalInfo(code: string, lang: string = 'tr'): CountryPrac
   const isEn = lang === 'en';
   const isDe = lang === 'de';
   const isEs = lang === 'es';
+  const isPt = lang === 'pt';
   const isRu = lang === 'ru';
 
   const defaultInfo: CountryPracticalInfo = {
-    currency: isEs ? 'Moneda local' : isRu ? 'Местная валюта' : isDe ? 'Lokale Währung' : isEn ? 'Local Currency' : 'Yerel döviz',
-    plugType: isEs ? 'Tipo C / F estándar europeo o estándar local' : isRu ? 'Тип C / F европейский стандарт или местный тип' : isDe ? 'Typ C / F (Eurostecker) oder lokaler Typ' : isEn ? 'Type C / F European standard or local type' : 'C / F genel Avrupa standardı veya yerel tip',
+    currency: isEs ? 'Moneda local' : isPt ? 'Moeda local' : isRu ? 'Местная валюта' : isDe ? 'Lokale Währung' : isEn ? 'Local Currency' : 'Yerel döviz',
+    plugType: isEs ? 'Tipo C / F estándar europeo o estándar local' : isPt ? 'Tipo C / F padrão europeu ou padrão local' : isRu ? 'Тип C / F европейский стандарт или местный тип' : isDe ? 'Typ C / F (Eurostecker) oder lokaler Typ' : isEn ? 'Type C / F European standard or local type' : 'C / F genel Avrupa standardı veya yerel tip',
     emergencyPhone: '112 / 911',
-    bestMonths: isEs ? 'Meses de primavera y otoño' : isRu ? 'Весенние и осенние месяцы' : isDe ? 'Frühling und Herbst' : isEn ? 'Spring and Autumn months' : 'İlkbahar ve Sonbahar ayları',
-    esimTip: isEs ? 'Se recomiendan paquetes regionales eSIM de Airalo o Maya Mobile.' : isRu ? 'Рекомендуются региональные пакеты eSIM от Airalo или Maya Mobile.' : isDe ? 'Airalo oder Maya Mobile regionale eSIM-Pakete empfohlen.' : isEn ? 'Airalo or Maya Mobile regional eSIM packages recommended.' : 'Airalo veya Maya Mobile bölgesel eSIM paketleri önerilir.',
-    localEtiquette: isEs ? 'Respete las leyes locales, códigos de vestimenta religiosa y restricciones de fotografía.' : isRu ? 'Соблюдайте местные законы, дресс-код в религиозных местах и запреты на фотосъемку.' : isDe ? 'Örtliche Gesetze, religiöse Kleidervorschriften und Fotoverbote beachten.' : isEn ? 'Respect local customs, religious dress codes, and photography restrictions.' : 'Yerel yasalara, ibadethane giyim kurallarına ve fotoğraf çekme kısıtlamalarına uyunuz.'
+    bestMonths: isEs ? 'Meses de primavera y otoño' : isPt ? 'Meses de primavera e outono' : isRu ? 'Весенние и осенние месяцы' : isDe ? 'Frühling und Herbst' : isEn ? 'Spring and Autumn months' : 'İlkbahar ve Sonbahar ayları',
+    esimTip: isEs ? 'Se recomiendan paquetes regionales eSIM de Airalo o Maya Mobile.' : isPt ? 'Recomendam-se pacotes regionais de eSIM da Airalo ou da Maya Mobile.' : isRu ? 'Рекомендуются региональные пакеты eSIM от Airalo или Maya Mobile.' : isDe ? 'Airalo oder Maya Mobile regionale eSIM-Pakete empfohlen.' : isEn ? 'Airalo or Maya Mobile regional eSIM packages recommended.' : 'Airalo veya Maya Mobile bölgesel eSIM paketleri önerilir.',
+    localEtiquette: isEs ? 'Respete las leyes locales, códigos de vestimenta religiosa y restricciones de fotografía.' : isPt ? 'Respeite as leis locais, os códigos de vestimenta religiosos e as restrições a fotos.' : isRu ? 'Соблюдайте местные законы, дресс-код в религиозных местах и запреты на фотосъемку.' : isDe ? 'Örtliche Gesetze, religiöse Kleidervorschriften und Fotoverbote beachten.' : isEn ? 'Respect local customs, religious dress codes, and photography restrictions.' : 'Yerel yasalara, ibadethane giyim kurallarına ve fotoğraf çekme kısıtlamalarına uyunuz.'
   };
 
-  const map: Record<string, { tr: CountryPracticalInfo; en: CountryPracticalInfo; de: CountryPracticalInfo; es: CountryPracticalInfo; ru: CountryPracticalInfo }> = {
+  const map: Record<string, { tr: CountryPracticalInfo; en: CountryPracticalInfo; de: CountryPracticalInfo; es: CountryPracticalInfo; pt: CountryPracticalInfo; ru: CountryPracticalInfo }> = {
     'GE': {
       tr: {
         currency: 'GEL (Gürcistan Larisi)',
@@ -1456,6 +1475,14 @@ export function getPracticalInfo(code: string, lang: string = 'tr'): CountryPrac
         bestMonths: 'Mayo - Octubre (Verano y temporada de vendimia)',
         esimTip: 'Los paquetes eSIM locales de Magti o Silknet son económicos; Airalo funciona a la perfección.',
         localEtiquette: 'En iglesias ortodoxas se espera que las mujeres se cubran la cabeza y vistan por debajo de las rodillas. Se recomienda Bolt para taxis.'
+      },
+      pt: {
+        currency: 'GEL (lari georgiano)',
+        plugType: 'C, F (230 V, compatível com plugue europeu)',
+        emergencyPhone: '112 (polícia, bombeiros, ambulância)',
+        bestMonths: 'Maio - outubro (verão e época da vindima)',
+        esimTip: 'Os pacotes de eSIM locais da Magti ou da Silknet são baratos; a Airalo funciona perfeitamente.',
+        localEtiquette: 'Nas igrejas ortodoxas, espera-se que as mulheres cubram a cabeça e usem roupas abaixo dos joelhos. Para táxis, recomenda-se o Bolt.'
       },
       ru: {
         currency: 'GEL (Грузинский лари)',
@@ -1499,6 +1526,14 @@ export function getPracticalInfo(code: string, lang: string = 'tr'): CountryPrac
         esimTip: 'Las eSIM turísticas de TrueMove H o AIS son muy convenientes en el aeropuerto o en línea.',
         localEtiquette: 'Estrictas leyes de lesa majestad protegen a la monarquía. Cúbrase hombros y rodillas al ingresar a templos budistas.'
       },
+      pt: {
+        currency: 'THB (baht tailandês)',
+        plugType: 'A, B, C, O (compatível com o plugue europeu C na maioria dos hotéis)',
+        emergencyPhone: '191 (polícia), 1669 (ambulância), 1155 (polícia turística - inglês)',
+        bestMonths: 'Novembro - fevereiro (estação fresca e seca)',
+        esimTip: 'As eSIMs turísticas da TrueMove H ou da AIS são muito práticas, no aeroporto ou on-line.',
+        localEtiquette: 'Leis rigorosas de lesa-majestade protegem a monarquia. Cubra os ombros e os joelhos ao entrar em templos budistas.'
+      },
       ru: {
         currency: 'THB (Тайский бат)',
         plugType: 'A, B, C, O (В большинстве отелей подходит стандарт C)',
@@ -1540,6 +1575,14 @@ export function getPracticalInfo(code: string, lang: string = 'tr'): CountryPrac
         bestMonths: 'Mayo - Septiembre (Zonas costeras de Kotor y Budva)',
         esimTip: 'Los paquetes turísticos eSIM de One o Telekom ME (500GB ~15-20€) son muy populares.',
         localEtiquette: 'La propina habitual en restaurantes turísticos ronda el 10%. Tenga precaución al conducir en carreteras estrechas de montaña.'
+      },
+      pt: {
+        currency: 'EUR (euro — moeda oficial, embora o país não seja membro da UE)',
+        plugType: 'C, F (padrão europeu)',
+        emergencyPhone: '112 (geral), 122 (polícia), 124 (ambulância)',
+        bestMonths: 'Maio - setembro (áreas litorâneas de Kotor e Budva)',
+        esimTip: 'Os pacotes turísticos de eSIM da One ou da Telekom ME (500 GB ~15-20 €) são muito populares.',
+        localEtiquette: 'A gorjeta habitual em restaurantes turísticos fica em torno de 10%. Tenha cuidado ao dirigir em estradas estreitas de montanha.'
       },
       ru: {
         currency: 'EUR (Евро - официальная валюта, несмотря на статус вне ЕС)',
@@ -1583,6 +1626,14 @@ export function getPracticalInfo(code: string, lang: string = 'tr'): CountryPrac
         esimTip: 'Tarjetas eSIM prepago locales de Yettel o A1.',
         localEtiquette: 'En Belgrado utilice las aplicaciones Pink Taxi o Yandex Go para asegurar tarifas justas.'
       },
+      pt: {
+        currency: 'RSD (dinar sérvio)',
+        plugType: 'C, F (padrão europeu)',
+        emergencyPhone: '192 (polícia), 194 (ambulância)',
+        bestMonths: 'Abril - outubro',
+        esimTip: 'Chips eSIM pré-pagos locais da Yettel ou da A1.',
+        localEtiquette: 'Em Belgrado, use os apps Pink Taxi ou Yandex Go para garantir tarifas justas.'
+      },
       ru: {
         currency: 'RSD (Сербский динар)',
         plugType: 'C, F (Европейский стандарт)',
@@ -1624,6 +1675,14 @@ export function getPracticalInfo(code: string, lang: string = 'tr'): CountryPrac
         bestMonths: 'Abril - Junio, Septiembre - Octubre',
         esimTip: 'eSIM locales de Azercell o Bakcell.',
         localEtiquette: 'Está prohibido tomar fotografías dentro del metro de Bakú. La hospitalidad del té es una tradición fundamental.'
+      },
+      pt: {
+        currency: 'AZN (manat azerbaijano)',
+        plugType: 'C, F (padrão europeu)',
+        emergencyPhone: '102 (polícia), 103 (ambulância), 112 (emergências FHN)',
+        bestMonths: 'Abril - junho, setembro - outubro',
+        esimTip: 'eSIMs locais da Azercell ou da Bakcell.',
+        localEtiquette: 'É proibido tirar fotos dentro do metrô de Baku. A hospitalidade em torno do chá é uma tradição fundamental.'
       },
       ru: {
         currency: 'AZN (Азербайджанский манат)',
@@ -1667,6 +1726,14 @@ export function getPracticalInfo(code: string, lang: string = 'tr'): CountryPrac
         esimTip: 'Planes eSIM turísticos de Virgin Mobile o Du.',
         localEtiquette: 'Las muestras públicas de afecto excesivo y la embriaguez pública están prohibidas. Respete las normas durante el Ramadán.'
       },
+      pt: {
+        currency: 'AED (dirham dos EAU)',
+        plugType: 'Tipo G (3 pinos, padrão britânico, exige adaptador)',
+        emergencyPhone: '999 (polícia), 998 (ambulância)',
+        bestMonths: 'Novembro - março (nos meses de verão, passa dos 45 °C)',
+        esimTip: 'Planos turísticos de eSIM da Virgin Mobile ou da Du.',
+        localEtiquette: 'Demonstrações públicas de afeto exageradas e embriaguez em público são proibidas. Respeite as regras durante o Ramadã.'
+      },
       ru: {
         currency: 'AED (Дирхам ОАЭ)',
         plugType: 'Тип G (Британский стандарт с 3 контактами, нужен адаптер)',
@@ -1709,6 +1776,14 @@ export function getPracticalInfo(code: string, lang: string = 'tr'): CountryPrac
         esimTip: 'Las eSIM de Ubigi o Airalo para Japón ofrecen conectividad 5G de alta velocidad.',
         localEtiquette: 'No existe cultura de propinas; dejar propina puede considerarse una ofensa. Evite comer mientras camina y lleve sus residuos a casa.'
       },
+      pt: {
+        currency: 'JPY (iene japonês)',
+        plugType: 'Tipo A, B (100 V, 2 pinos chatos, exige adaptador)',
+        emergencyPhone: '110 (polícia), 119 (ambulância e bombeiros)',
+        bestMonths: 'Março - maio (sakura) e outubro - novembro (folhagem de outono)',
+        esimTip: 'As eSIMs da Ubigi ou da Airalo para o Japão oferecem conexão 5G de alta velocidade.',
+        localEtiquette: 'Não existe cultura de gorjeta; deixar gorjeta pode ser visto como ofensa. Evite comer andando e leve seu lixo para casa.'
+      },
       ru: {
         currency: 'JPY (Японская иена)',
         plugType: 'Тип A, B (100В, 2 плоских контакта, нужен адаптер)',
@@ -1750,6 +1825,14 @@ export function getPracticalInfo(code: string, lang: string = 'tr'): CountryPrac
         bestMonths: 'Mayo - Septiembre',
         esimTip: 'Se aplican las normas de Roaming de la UE (Roam Like at Home).',
         localEtiquette: 'Las tiendas cierran los domingos. Cruzar en rojo como peatón está muy mal visto y puede ser multado.'
+      },
+      pt: {
+        currency: 'EUR (euro)',
+        plugType: 'C, F (padrão europeu)',
+        emergencyPhone: '112 (geral e ambulância), 110 (polícia)',
+        bestMonths: 'Maio - setembro',
+        esimTip: 'Valem as regras de roaming da UE (Roam Like at Home).',
+        localEtiquette: 'As lojas fecham aos domingos. Atravessar no sinal vermelho a pé é muito malvisto e pode render multa.'
       },
       ru: {
         currency: 'EUR (Евро)',
