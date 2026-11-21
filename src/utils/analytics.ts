@@ -4,6 +4,7 @@
  * (navigator.webdriver) sayılmaz. Ortak sitelere giden her tıklama "partner_click" olayıdır.
  */
 import { thirdPartyAllowed } from './consent';
+import { currentRef } from './refTracking';
 
 const GA_ID = 'G-EF7BYQ70BG';
 type W = Window & { dataLayer?: unknown[]; gtag?: (...a: unknown[]) => void };
@@ -70,7 +71,10 @@ function toAff(e: Event): void {
   if (u.protocol !== 'https:' || !isTp(u.hostname)) return;
   const seg = location.pathname.split('/').filter(Boolean);
   a.dataset.vzAff = u.toString();
-  a.href = `/api/tp?u=${encodeURIComponent(u.toString())}&c=${encodeURIComponent(`vz_${seg[1] || 'home'}`.slice(0, 40))}`;
+  // fenomen kodu varsa Travelpayouts sub_id'sinin başına yaz (raporlarda koda göre ayrılsın; /api/tp en fazla 40 karakter alır)
+  const ref = currentRef();
+  const sub = ref ? `r-${ref}-${seg[1] || 'home'}` : `vz_${seg[1] || 'home'}`;
+  a.href = `/api/tp?u=${encodeURIComponent(u.toString())}&c=${encodeURIComponent(sub.slice(0, 40))}`;
 }
 
 function onClick(e: MouseEvent): void {

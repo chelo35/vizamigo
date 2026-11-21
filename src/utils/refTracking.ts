@@ -2,9 +2,10 @@
  * Fenomen (iş ortağı) bağlantıları: vizamigo.com/...?ref=gezengenc
  * - Kod 30 gün tarayıcıda saklanır (son tıklanan bağlantı geçerli).
  * - Ziyaretçi bir ortak bağlantısına tıklayınca kod, ağın alt kimlik alanına eklenir:
- *   Daisycon → ws, Awin → clickref, Admitad (/g/… bağlantıları) → subid, Stay22 → campaign (sonuna "-r-kod"), GetYourGuide (Stay22) → cmp.
+ *   Daisycon → ws, Awin → clickref, Admitad (/g/… bağlantıları) → subid, Stay22 → campaign (sonuna "-r-kod"), GetYourGuide (Stay22) → cmp,
+ *   CJ (Daytrip) → sid, Viator → campaign, 12Go → sub_id, Travelpayouts (/api/tp) → sub_id (analytics.ts, başına "r-kod-").
  * - Raporlarda satışlar koda göre ayrılır; komisyonun payı aylık hesaplanır.
- * Desteklenmeyen: VisaHQ portalı ve Travelpayouts Drive'ın kendi çevirdiği bağlantılar.
+ * Desteklenmeyen: VisaHQ portalı (beyaz etiket) ve SafetyWing elçi bağlantısı (alt kimlik alanı yok).
  */
 const KEY = 'vz_ref';
 const DAYS = 30;
@@ -66,6 +67,17 @@ export function tagRef(url: string, ref = currentRef()): string {
   } else if (is('getyourguide.com') && u.searchParams.get('partner_id')) {
     const c = u.searchParams.get('cmp') || '';
     if (!c.includes(tag)) u.searchParams.set('cmp', `${c}-${tag}`);
+  } else if (/^(tkqlhce|anrdoezrs|dpbolvw|jdoqocy|kqzyfj)\.com$/.test(host) && /^\/click-\d+-\d+/.test(u.pathname)) {
+    // CJ (ör. Daytrip): alt kimlik alanı sid
+    u.searchParams.set('sid', tag);
+  } else if (is('viator.com') && u.searchParams.get('pid')) {
+    // Viator ortaklık bağlantısı: pid/mcid/medium'a dokunma, takip alanı campaign
+    const c = u.searchParams.get('campaign') || '';
+    if (!c.includes(tag)) u.searchParams.set('campaign', (c ? `${c}-${tag}` : tag).slice(0, 100));
+  } else if ((is('12go.asia') || is('12go.co')) && u.searchParams.get('z')) {
+    // 12Go doğrudan ortaklık: alt kimlik alanı sub_id (rezervasyon raporunda görünür)
+    const c = u.searchParams.get('sub_id') || '';
+    if (!c.includes(tag)) u.searchParams.set('sub_id', (c ? `${c}-${tag}` : tag).slice(0, 60));
   } else {
     return url;
   }
