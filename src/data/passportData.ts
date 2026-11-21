@@ -979,7 +979,7 @@ export function resolveVisaCategory(val: string): VisaCategory {
 const displayNamesCache: Record<string, Intl.DisplayNames> = {};
 
 function getDisplayNames(lang: string): Intl.DisplayNames {
-  const norm = (lang === 'es' || lang === 'ru' || lang === 'de' || lang === 'en') ? lang : 'tr';
+  const norm = (lang === 'es' || lang === 'ru' || lang === 'de' || lang === 'en' || lang === 'pt') ? lang : 'tr';
   if (!displayNamesCache[norm]) {
     try {
       displayNamesCache[norm] = new Intl.DisplayNames([norm], { type: 'region' });
@@ -995,6 +995,12 @@ export function getCountryName(code: string, lang?: string): string {
   if (code === 'XK') return currentLang === 'tr' ? 'Kosova' : 'Kosovo';
   if (code === 'PS') return currentLang === 'tr' ? 'Filistin' : currentLang === 'de' ? 'Palästina' : currentLang === 'es' ? 'Palestina' : currentLang === 'ru' ? 'Палестина' : 'Palestine';
   if (code === 'TW') return currentLang === 'tr' ? 'Tayvan' : 'Taiwan';
+  if (currentLang === 'pt') {
+    if (code === 'HK') return 'Hong Kong';
+    if (code === 'MO') return 'Macau';
+    if (code === 'MM') return 'Mianmar';
+    if (code === 'PS') return 'Palestina';
+  }
   try {
     const dn = getDisplayNames(currentLang);
     return dn.of(code) || code;

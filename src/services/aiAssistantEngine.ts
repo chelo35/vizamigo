@@ -97,6 +97,7 @@ export function detectQueryLanguage(rawQuery: string, fallbackLang: string = 'tr
   // Her dil için ipucu ara; sitenin dili de eşleşiyorsa onu koru (ör. "Budapest visa" İngilizce sayfada İngilizce kalsın)
   const hits: string[] = [];
   if (/[¿¡ñ]/.test(rawQuery) || /\b(visado|visados|viajar|viaje|puedo|necesito|donde|cuanto|cuantos|pais|paises|espana|como|abrir|mostrar|tiempo|clima|propinas|propina|enchufe|enchufes|seguro|idioma|pasaporte|gratis|vuelo|tarjeta|requisitos|dias)\b/i.test(q)) hits.push('es');
+  if (/[ãõ]/.test(rawQuery) || /\b(visto|vistos|preciso|passaporte|viagem|viajar|posso|quantos|quanto|onde|quando|tomada|tomadas|gorjeta|voo|voos|seguro|idioma|clima|tempo|dias|abrir|mostrar|brasil|cartao|requisitos|moeda)\b/i.test(q)) hits.push('pt');
   if ((/[äöüß]/.test(rawQuery) && (q.includes('ä') || q.includes('ß') || q.includes('und') || q.includes('wie') || q.includes('für') || q.includes('fuer'))) || /\b(visum|einreise|reise|reisen|nach|brauche|kann|ich|wie|viele|tage|kosten|stecker|trinkgeld|wetter|fluege|wann|welche|deutschland|ohne|sicher|waehrung|offnen|oeffnen|zeigen|bitte)\b/i.test(q)) hits.push('de');
   if (/[çğşı]/.test(rawQuery) || /\b(vize|vizesiz|pasaport|kimlik|kimlikle|kac|kaç|nasil|nasıl|nerede|nereye|nerelere|priz|prizi|bahsis|bahşiş|rota|rotasi|taksi|ac|aç|goster|göster|para|doviz|döviz|kur|kurlar|bavul|valiz|sigorta|kayip|kayıp|calinti|çalıntı|ucak|uçak|bilet|gun|gün|otel|oteller|guvenli|güvenli|pahali|pahalı|ucuz|var|mi|mı|mu|mü|gerekir|istiyor|mu|müyüm|hazirla|hazırla|bilgi)\b/i.test(q)) hits.push('tr');
   if (/\b(visa|visas|passport|travel|can|do|i|need|how|what|where|when|which|days|stay|plug|plugs|adapter|tipping|tip|taxi|ride|cost|safe|safety|route|itinerary|weather|best|time|flights|flight|hotel|hotels|lost|stolen|currency|open|show|compare)\b/i.test(q)) hits.push('en');
@@ -105,7 +106,7 @@ export function detectQueryLanguage(rawQuery: string, fallbackLang: string = 'tr
   if (hits.length) return hits[0];
   // yalnızca ülke adı yazıldıysa ("Georgia", "Thailand", "Грузия"): adın hangi dilde yazıldığına bak
   const nq = normalizeText(rawQuery);
-  const langsByName = ['tr', 'en', 'de', 'es', 'ru'].filter((lg) => Object.keys(GEO_DATA).some((c) => {
+  const langsByName = ['tr', 'en', 'de', 'es', 'ru', 'pt'].filter((lg) => Object.keys(GEO_DATA).some((c) => {
     const n = normalizeText(getCountryName(c, lg));
     return n.length >= 3 && new RegExp(`(^| )${n}`).test(nq);
   }));
@@ -253,7 +254,7 @@ function getGlobalCountryMap(): Record<string, string> {
   });
   Object.keys(GEO_DATA).forEach((c) => allCodes.add(c.toUpperCase()));
 
-  const languages = ['tr', 'en', 'de', 'es', 'ru'];
+  const languages = ['tr', 'en', 'de', 'es', 'ru', 'pt'];
 
   for (const code of allCodes) {
     // Direct code lookup
@@ -416,7 +417,7 @@ export async function processAssistantQuery(
     };
   };
   // --- Sohbet, site yardımı, rezervasyon ve rota niyetleri ---
-  const LL = (tr: string, en: string, de: string, es: string, ru: string) => ({ tr, en, de, es, ru } as Record<string, string>)[activeLang] ?? en;
+  const LL = (tr: string, en: string, de: string, es: string, ru: string, pt: string) => ({ tr, en, de, es, ru, pt } as Record<string, string>)[activeLang] ?? en;
   const mk = (text: string, acts: AssistantActionPill[], code?: string): AssistantMessage => ({
     id: `msg-${Date.now()}`,
     sender: 'assistant',
@@ -513,7 +514,7 @@ export async function processAssistantQuery(
   if (targetCountry && !/(schengen|90 180|transit|aktarma|layover|umsteig|escala|пересадк|pasaport kay|pasaportumu kay|kaybettim|calindi|lost passport|stolen|konsolos|buyukelci|consul|embassy|botschaft|embajada|консульств|посольств|nomad|gocebe|remote work|saat farki|time zone|timezone|zeitzone)/.test(norm)) return countryMsg(targetCountry);
 
   // Genel (ülkesiz) sorular: hepsi 5 dilde. Sayılar pasaport verisinden hesaplanır.
-  const L5 = (tr: string, en: string, de: string, es: string, ru: string) => ({ tr, en, de, es, ru } as Record<string, string>)[activeLang] ?? en;
+  const L5 = (tr: string, en: string, de: string, es: string, ru: string, pt: string) => ({ tr, en, de, es, ru, pt } as Record<string, string>)[activeLang] ?? en;
   const days = (v: string) => (v === 'vf' ? L5('süresiz', 'no limit', 'unbegrenzt', 'sin límite', 'без ограничений') : /^\d+$/.test(v) ? `${v} ${L5('gün', 'days', 'Tage', 'días', 'дн.')}` : '');
   const reply = (text: string, acts: AssistantActionPill[], auto?: AssistantActionPill): AssistantMessage => ({
     id: `msg-${Date.now()}`,
@@ -724,6 +725,7 @@ export function startVoiceRecognition(options: {
       de: 'de-DE',
       es: 'es-ES',
       ru: 'ru-RU',
+      pt: 'pt-BR',
       ja: 'ja-JP'
     };
 

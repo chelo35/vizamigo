@@ -108,7 +108,7 @@
         {
           "type": "query",
           "key": "lang",
-          "value": "(?<lang>tr|en|de|ru|es)"
+          "value": "(?<lang>tr|en|de|ru|es|pt)"
         }
       ],
       "destination": "/:lang",
@@ -120,7 +120,7 @@
         {
           "type": "query",
           "key": "hl",
-          "value": "(?<lang>tr|en|de|ru|es)"
+          "value": "(?<lang>tr|en|de|ru|es|pt)"
         }
       ],
       "destination": "/:lang",

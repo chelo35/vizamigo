@@ -302,6 +302,7 @@ function playBrowserSpeech(text: string, lang: string = 'tr', onEnd?: () => void
       de: 'de-DE',
       es: 'es-ES',
       ru: 'ru-RU',
+      pt: 'pt-BR',
       ja: 'ja-JP'
     };
     utterance.lang = langCodeMap[lang] || 'tr-TR';

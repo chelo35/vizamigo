@@ -43,7 +43,7 @@ export function formatLocalizedDateReadable(dateOrIdx: string | number, lang: st
       if (!dateOrIdx) return '';
       dateObj = new Date(dateOrIdx + 'T12:00:00Z');
     }
-    const localeCode = lang === 'es' ? 'es-ES' : lang === 'ru' ? 'ru-RU' : lang === 'en' ? 'en-US' : lang === 'de' ? 'de-DE' : 'tr-TR';
+    const localeCode = lang === 'es' ? 'es-ES' : lang === 'pt' ? 'pt-BR' : lang === 'ru' ? 'ru-RU' : lang === 'en' ? 'en-US' : lang === 'de' ? 'de-DE' : 'tr-TR';
     return dateObj.toLocaleDateString(localeCode, {
       day: 'numeric',
       month: 'short',
@@ -64,7 +64,7 @@ export function formatLocalizedDateFull(dateOrIdx: string | number, lang: string
       if (!dateOrIdx) return '';
       dateObj = new Date(dateOrIdx + 'T12:00:00Z');
     }
-    const localeCode = lang === 'es' ? 'es-ES' : lang === 'ru' ? 'ru-RU' : lang === 'en' ? 'en-US' : lang === 'de' ? 'de-DE' : 'tr-TR';
+    const localeCode = lang === 'es' ? 'es-ES' : lang === 'pt' ? 'pt-BR' : lang === 'ru' ? 'ru-RU' : lang === 'en' ? 'en-US' : lang === 'de' ? 'de-DE' : 'tr-TR';
     return dateObj.toLocaleDateString(localeCode, {
       weekday: 'short',
       day: 'numeric',

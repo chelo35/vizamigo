@@ -5,7 +5,7 @@
  * Ay takvimine bağlı tarihler `lunar: true` ile "yaklaşık" işaretlenir.
  * Metin sırası: [en, tr, de, es, ru]
  */
-type L5 = [string, string, string, string, string];
+type L5 = [string, string, string, string, string, string];
 
 export interface FestivalGuideEntry {
   i: number;            // sitedeki festival listesindeki sıra
@@ -18,8 +18,8 @@ export interface FestivalGuideEntry {
   tip: L5;
 }
 
-const IDX: Record<string, number> = { en: 0, tr: 1, de: 2, es: 3, ru: 4 };
-const LOC: Record<string, string> = { en: 'en-GB', tr: 'tr-TR', de: 'de-DE', es: 'es-ES', ru: 'ru-RU' };
+const IDX: Record<string, number> = { en: 0, tr: 1, de: 2, es: 3, ru: 4, pt: 5 };
+const LOC: Record<string, string> = { en: 'en-GB', tr: 'tr-TR', de: 'de-DE', es: 'es-ES', ru: 'ru-RU', pt: 'pt-BR' };
 
 const monthName = (m: number, lang: string, ctx: 'standalone' | 'format' = 'standalone'): string => {
   try {
@@ -39,7 +39,7 @@ const fmtIso = (iso: string, lang: string): string => {
 
 /** "Ne zaman" metni: sabit gün → "14 Temmuz", aylar → "Temmuz – Ağustos", + 2027 tarihi. */
 export function festivalWhen(e: FestivalGuideEntry, lang: string): string {
-  const L = (en: string, tr: string, de: string, es: string, ru: string) => [en, tr, de, es, ru][IDX[lang] ?? 0];
+  const L = (en: string, tr: string, de: string, es: string, ru: string, pt: string) => [en, tr, de, es, ru, pt][IDX[lang] ?? 0];
   let base: string;
   if (e.d && e.m.length === 1) base = lang === 'en' ? `${e.d} ${monthName(e.m[0], lang, 'format')}` : lang === 'de' ? `${e.d.replace(/(\d+)$/, '$1.')} ${monthName(e.m[0], lang, 'format')}`.replace(/^(\d+)–/, '$1.–') : lang === 'es' ? `${e.d} de ${monthName(e.m[0], lang, 'format')}` : `${e.d} ${monthName(e.m[0], lang, 'format')}`;
   else if (e.d) base = e.m.map((m) => (lang === 'es' ? `${e.d} de ${monthName(m, lang, 'format')}` : lang === 'de' ? `${e.d}. ${monthName(m, lang, 'format')}` : `${e.d} ${monthName(m, lang, 'format')}`)).join(L(' & ', ' ve ', ' und ', ' y ', ' и '));
@@ -103,7 +103,7 @@ interface CalSection { h: string; list: string[] }
 export interface FestivalCalendarText { title: string; short: string; metaDesc: string; answer: string; sections: CalSection[]; faq: { q: string; a: string }[] }
 
 export function buildFestivalCalendar(lang: string, data?: { entries: Record<string, FestivalGuideEntry[]>; names: Record<string, string[]> }): FestivalCalendarText {
-  const L = (en: string, tr: string, de: string, es: string, ru: string) => [en, tr, de, es, ru][IDX[lang] ?? 0];
+  const L = (en: string, tr: string, de: string, es: string, ru: string, pt: string) => [en, tr, de, es, ru, pt][IDX[lang] ?? 0];
   const byMonth: string[][] = Array.from({ length: 12 }, () => []);
   const faq: { q: string; a: string }[] = [];
   if (data) {

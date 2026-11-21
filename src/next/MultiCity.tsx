@@ -42,7 +42,7 @@ export const MultiCity: React.FC<{ passport: string }> = ({ passport }) => {
   const { l, language } = useI18n();
   useLiveFx();
   const cur = language === 'tr' ? 'TRY' : language === 'ru' ? 'RUB' : 'EUR';
-  const loc = language === 'tr' ? 'tr-TR' : language === 'de' ? 'de-DE' : language === 'es' ? 'es-ES' : language === 'ru' ? 'ru-RU' : 'en-GB';
+  const loc = language === 'tr' ? 'tr-TR' : language === 'de' ? 'de-DE' : language === 'es' ? 'es-ES' : language === 'pt' ? 'pt-BR' : language === 'ru' ? 'ru-RU' : 'en-GB';
   const money = (v: number) => {
     try {
       return new Intl.NumberFormat(loc, { style: 'currency', currency: cur, maximumFractionDigits: 0 }).format(Math.round(v));

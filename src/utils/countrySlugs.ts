@@ -57,7 +57,8 @@ const CODE_TO_SLUG: Record<SupportedLanguage, Map<string, string>> = {
   en: new Map(),
   de: new Map(),
   ru: new Map(),
-  es: new Map()
+  es: new Map(),
+  pt: new Map()
 };
 
 const SLUG_TO_CODE: Record<SupportedLanguage, Map<string, string>> = {
@@ -65,7 +66,8 @@ const SLUG_TO_CODE: Record<SupportedLanguage, Map<string, string>> = {
   en: new Map(),
   de: new Map(),
   ru: new Map(),
-  es: new Map()
+  es: new Map(),
+  pt: new Map()
 };
 
 const GLOBAL_SLUG_FALLBACK = new Map<string, string>();
@@ -85,7 +87,7 @@ function initSlugRegistry(): void {
     .filter((c) => /^[A-Z]{2}$/.test(c))
     .sort();
 
-  const langs: SupportedLanguage[] = ['tr', 'en', 'de', 'ru', 'es'];
+  const langs: SupportedLanguage[] = ['tr', 'en', 'de', 'ru', 'es', 'pt'];
 
   for (const code of allCodes) {
     for (const lang of langs) {

@@ -17,16 +17,16 @@ type Lang = 'tr' | 'en' | 'de' | 'es' | 'ru';
 
 const INTENTS: Array<[Intent, RegExp]> = [
   ['cheapest', /((en )?ucuz .{0,20}(gun|tarih|zaman)|hangi gun .{0,15}ucuz|ne zaman .{0,10}ucuz|cheapest .{0,15}(day|date|time|month)|when .{0,15}cheap|gunstigste\S* .{0,10}(tag|termin|zeit)|(dia|fecha) mas barat|mas barato .{0,10}(dia|fecha)|сам\S* дешев\S* .{0,10}(день|дат|месяц)|когда .{0,10}дешев)/],
-  ['flight', /(^| )(ucak|ucus|ucuslar|ucar|ucarim|ucmak|ucuyorum|ucak bilet|bilet|havayolu|flight|flights|fly|airfare|plane ticket|airline|flug|fluge|fluege|flugticket|vuelo|vuelos|billete de avion|авиа|перел[её]т|самол[её]т|билет)/],
-  ['hotel', /(^| )(otel|oteller|konaklama|kalacak yer|nerede kal|nerde kal|hangi bolgede kal|hostel|pansiyon|apart|airbnb|hotel|hotels|stay|accommodation|where to stay|where should i stay|unterkunft|ubernachtung|ubernachten|wo schlafen|alojamiento|alojarme|alojarse|hospedaje|donde dormir|donde quedarme|отел|жиль|гостиниц|где жить|где остановит)/],
-  ['tour', /(^| )(tur |turlar|turu|tura|gezi turu|aktivite|etkinlik|giris bileti|muze bilet|tour|tours|activity|activities|excursion|day trip|ausflug|fuhrung|touren|excursion|excursiones|actividad|экскурс|тур )/],
-  ['car', /(araba kira|arac kira|oto kira|rent a car|car rental|rental car|hire a car|mietwagen|auto mieten|alquiler de coche|alquilar coche|аренд\S* (авто|машин)|прокат авто)/],
-  ['transfer', /(^| )(transfer|havalimanindan|havalimani transfer|airport transfer|airport pickup|from the airport|flughafentransfer|vom flughafen|traslado|desde el aeropuerto|трансфер|из аэропорта)/],
-  ['esim', /(^| )(esim|e sim|sim kart|internet paketi|mobile data|roaming|datos moviles|mobile daten|сим карт|мобильн\S* интернет)/],
-  ['insurance', /(^| )(sigorta|insurance|versicherung|seguro de viaje|seguro medico|страхов)/],
-  ['visaApply', /(vize basvur|vizeye basvur|vize nasil alinir|vize almak|vize islemleri|apply for (a )?visa|visa application|get a visa|visumantrag|visum beantragen|solicitar (el )?visado|tramitar visado|оформ\S* виз|подать на виз)/],
-  ['route', /(^| )(rota|rotasi|gezi plan|tatil plan|kac gun|gunluk plan|\d+ gun|itinerary|route|trip plan|plan my trip|\d+ days?|reiseroute|reiseplan|\d+ tage|itinerario|ruta|\d+ dias|маршрут|план поездки|\d+ дн)/],
-  ['ground', /(^| )(tren|otobus|feribot|train|bus|ferry|zug|fahre|autobus|ferri|поезд|автобус|паром)/]
+  ['flight', /(^| )(ucak|ucus|ucuslar|ucar|ucarim|ucmak|ucuyorum|ucak bilet|bilet|havayolu|flight|flights|fly|airfare|plane ticket|airline|flug|fluge|fluege|flugticket|vuelo|vuelos|billete de avion|авиа|перел[её]т|самол[её]т|билет|voo|voos|passagem aerea|passagens aereas)/],
+  ['hotel', /(^| )(otel|oteller|konaklama|kalacak yer|nerede kal|nerde kal|hangi bolgede kal|hostel|pansiyon|apart|airbnb|hotel|hotels|stay|accommodation|where to stay|where should i stay|unterkunft|ubernachtung|ubernachten|wo schlafen|alojamiento|alojarme|alojarse|hospedaje|donde dormir|donde quedarme|отел|жиль|гостиниц|где жить|где остановит|hospedagem|onde ficar|pousada)/],
+  ['tour', /(^| )(tur |turlar|turu|tura|gezi turu|aktivite|etkinlik|giris bileti|muze bilet|tour|tours|activity|activities|excursion|day trip|ausflug|fuhrung|touren|excursion|excursiones|actividad|экскурс|тур |passeio|passeios|ingresso)/],
+  ['car', /(araba kira|arac kira|oto kira|rent a car|car rental|rental car|hire a car|mietwagen|auto mieten|alquiler de coche|alquilar coche|аренд\S* (авто|машин)|прокат авто|aluguel de carro|alugar carro|locadora)/],
+  ['transfer', /(^| )(transfer|havalimanindan|havalimani transfer|airport transfer|airport pickup|from the airport|flughafentransfer|vom flughafen|traslado|desde el aeropuerto|трансфер|из аэропорта|traslado|do aeroporto)/],
+  ['esim', /(^| )(esim|e sim|sim kart|internet paketi|mobile data|roaming|datos moviles|mobile daten|сим карт|мобильн\S* интернет|chip|dados moveis)/],
+  ['insurance', /(^| )(sigorta|insurance|versicherung|seguro de viaje|seguro medico|страхов|seguro viagem)/],
+  ['visaApply', /(vize basvur|vizeye basvur|vize nasil alinir|vize almak|vize islemleri|apply for (a )?visa|visa application|get a visa|visumantrag|visum beantragen|solicitar (el )?visado|tramitar visado|оформ\S* виз|подать на виз|tirar (o )?visto|pedir (o )?visto|solicitar (o )?visto)/],
+  ['route', /(^| )(rota|rotasi|gezi plan|tatil plan|kac gun|gunluk plan|\d+ gun|itinerary|route|trip plan|plan my trip|\d+ days?|reiseroute|reiseplan|\d+ tage|itinerario|ruta|\d+ dias|маршрут|план поездки|\d+ дн|roteiro|\d+ dias)/],
+  ['ground', /(^| )(tren|otobus|feribot|train|bus|ferry|zug|fahre|autobus|ferri|поезд|автобус|паром|trem|onibus|balsa)/]
 ];
 
 export function detectIntents(norm: string): Intent[] {
@@ -39,7 +39,7 @@ export function detectIntents(norm: string): Intent[] {
 /** Genel rezervasyon sorusu ("rezervasyon", "tatil", "booking") */
 export const isGeneralBooking = (norm: string) => /(^| )(rezervasyon|tatil|booking|book a trip|buchen|buchung|reservar|reserva|бронир)/.test(norm);
 
-const L5 = (lang: string, tr: string, en: string, de: string, es: string, ru: string) => ({ tr, en, de, es, ru } as Record<string, string>)[lang] ?? en;
+const L5 = (lang: string, tr: string, en: string, de: string, es: string, ru: string, pt: string) => ({ tr, en, de, es, ru, pt } as Record<string, string>)[lang] ?? en;
 
 const slug = (s: string) => s.toLowerCase().replace(/&/g, 'and').normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 
@@ -124,7 +124,7 @@ export const tilePill = (id: string, tab: 'explore' | 'plan' | 'track' | 'nomad'
 
 /** Sitenin özellikleri ve kısayolları (yardım cevabı ve yapay zekâ bağlamı için) */
 export function siteFeatures(lang: string): Array<{ text: string; pill?: AssistantActionPill }> {
-  const f = (tr: string, en: string, de: string, es: string, ru: string) => L5(lang, tr, en, de, es, ru);
+  const f = (tr: string, en: string, de: string, es: string, ru: string, pt: string) => L5(lang, tr, en, de, es, ru, pt);
   return [
     { text: f('**Ülke sayfaları:** 199 ülke için vize, giriş şartı, güvenlik, priz, para, bütçe, rota, yemek, acil numaralar', '**Country pages:** visa, entry rules, safety, plugs, money, budget, itineraries, food and emergency numbers for 199 countries', '**Länderseiten:** Visum, Einreise, Sicherheit, Stecker, Geld, Budget, Routen, Essen, Notrufe für 199 Länder', '**Páginas de país:** visado, requisitos, seguridad, enchufes, dinero, presupuesto, rutas, comida y emergencias de 199 países', '**Страницы стран:** визы, правила въезда, безопасность, розетки, деньги, бюджет, маршруты, еда, экстренные номера (199 стран)') },
     { text: f('**Rezervasyon:** her ülke sayfasında uçuş, en ucuz gün takvimi, otel, tur, araç ve transfer', '**Booking:** flights, cheapest-day calendar, hotels, tours, cars and transfers on every country page', '**Buchen:** Flüge, Günstigste-Tage-Kalender, Hotels, Touren, Mietwagen und Transfers auf jeder Länderseite', '**Reservas:** vuelos, calendario de días baratos, hoteles, tours, coches y traslados en cada país', '**Бронирование:** авиабилеты, календарь дешёвых дней, отели, экскурсии, авто и трансферы на странице страны') },

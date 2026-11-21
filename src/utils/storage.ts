@@ -34,7 +34,7 @@ function firstVisitPassport(): string {
   let lang: SupportedLanguage = 'tr';
   try {
     const seg = window.location.pathname.split('/')[1]?.toLowerCase();
-    if (seg === 'en' || seg === 'de' || seg === 'es' || seg === 'ru' || seg === 'tr') lang = seg;
+    if (seg === 'en' || seg === 'de' || seg === 'es' || seg === 'ru' || seg === 'tr' || seg === 'pt') lang = seg;
   } catch {}
   return defaultPassportFor(lang, (c) => !!(GEO_DATA as Record<string, unknown>)[c]);
 }

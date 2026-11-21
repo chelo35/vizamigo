@@ -16,7 +16,7 @@ import { Icon } from '../Icon';
  */
 
 const TourShowcase = lazy(() => import('../BookingHub').then((m) => ({ default: m.TourShowcase })));
-const LOC: Record<string, string> = { tr: 'tr-TR', en: 'en-GB', de: 'de-DE', es: 'es-ES', ru: 'ru-RU' };
+const LOC: Record<string, string> = { tr: 'tr-TR', en: 'en-GB', de: 'de-DE', es: 'es-ES', ru: 'ru-RU', pt: 'pt-BR' };
 const CUR: Record<string, string> = { tr: 'try', en: 'eur', de: 'eur', es: 'eur', ru: 'eur' };
 const iso = (d: Date) => d.toISOString().slice(0, 10);
 const money = (v: number, c: string, lang: string) => {
@@ -231,7 +231,7 @@ export const DayTours: React.FC<{ passport: string }> = ({ passport }) => {
 const FEATURED = ['thailand-10', 'balkans-8', 'japan-12', 'egypt-8'];
 export const PackEasy: React.FC<{ onEasy: () => void; onPlanner: () => void }> = ({ onEasy, onPlanner }) => {
   const { l, language } = useI18n();
-  const i = Math.max(0, ['tr', 'en', 'de', 'es', 'ru'].indexOf(language));
+  const i = Math.max(0, ['tr', 'en', 'de', 'es', 'ru', 'pt'].indexOf(language));
   const base = toursPath(language);
   const list = FEATURED.map((id) => PACKAGES.find((p) => p.id === id)).filter((p): p is (typeof PACKAGES)[number] => !!p);
   // Canlı "başlayan fiyat" (TourRadar): ekrana yaklaşınca yüklenir, gelmezse yalnızca gün sayısı görünür

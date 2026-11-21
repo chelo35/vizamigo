@@ -904,7 +904,7 @@ export function getCountryTransitRule(
   const isEn = lang === 'en';
   const isEs = lang === 'es';
   const isRu = lang === 'ru';
-  const isIntl = isDe || isEn || isEs || isRu;
+  const isIntl = isDe || isEn || isEs || isRu || lang === 'pt';
   const countryName = getCountryName(countryCode, lang);
 
   // 1. Kullanıcının pasaportunun bu ülkeye olan giriş rejimini kontrol et

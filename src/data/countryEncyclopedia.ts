@@ -1484,7 +1484,7 @@ function getCountryEncyclopediaImpl(countryCode: string, lang: string = 'tr'): C
         ? heritage.landmarks.de
         : isTr
         ? heritage.landmarks.tr
-        : isEs || isRu
+        : isEs || isRu || isPt
         ? heritage.landmarks.tr.map((l, idx) => lText(lang, l, heritage.landmarks.en?.[idx] || l, heritage.landmarks.de?.[idx]))
         : heritage.landmarks.en)
     : (() => {
@@ -1502,7 +1502,7 @@ function getCountryEncyclopediaImpl(countryCode: string, lang: string = 'tr'): C
         ? heritage.figures.de
         : isTr
         ? heritage.figures.tr
-        : isEs || isRu
+        : isEs || isRu || isPt
         ? heritage.figures.tr.map((f, idx) => lText(lang, f, heritage.figures.en?.[idx] || f, heritage.figures.de?.[idx]))
         : heritage.figures.en)
     : [
@@ -1517,9 +1517,9 @@ function getCountryEncyclopediaImpl(countryCode: string, lang: string = 'tr'): C
     countryCode: code,
     countryName,
     culture: {
-      etiquette: isEs || isRu ? mapArr(profileTr.etiquette, profileEn.etiquette, profileDe.etiquette) : profile.etiquette,
-      festivals: isEs || isRu ? mapArr(profileTr.festivals, profileEn.festivals, profileDe.festivals) : profile.festivals,
-      lifestyle: isEs || isRu ? mapStr(profileTr.lifestyle, profileEn.lifestyle, profileDe.lifestyle) : profile.lifestyle
+      etiquette: isEs || isRu || isPt ? mapArr(profileTr.etiquette, profileEn.etiquette, profileDe.etiquette) : profile.etiquette,
+      festivals: isEs || isRu || isPt ? mapArr(profileTr.festivals, profileEn.festivals, profileDe.festivals) : profile.festivals,
+      lifestyle: isEs || isRu || isPt ? mapStr(profileTr.lifestyle, profileEn.lifestyle, profileDe.lifestyle) : profile.lifestyle
     },
     tourism: {
       mustSeePlaces,
@@ -1535,7 +1535,7 @@ function getCountryEncyclopediaImpl(countryCode: string, lang: string = 'tr'): C
         : `Arrive via ${hub} international hub. Ride-hailing apps and local rail offer the best experience.`
     },
     religion: {
-      primaryReligions: isEs || isRu ? mapStr(profileTr.religions, profileEn.religions, profileDe.religions) : profile.religions,
+      primaryReligions: isEs || isRu || isPt ? mapStr(profileTr.religions, profileEn.religions, profileDe.religions) : profile.religions,
       respectNorms: isDe
         ? 'In Gotteshäusern wird respektvolle Kleidung (Schultern und Knie bedecken) erwartet.'
         : isEs
@@ -1550,7 +1550,7 @@ function getCountryEncyclopediaImpl(countryCode: string, lang: string = 'tr'): C
             ? heritage.sacredSites.de
             : isTr
             ? heritage.sacredSites.tr
-            : isEs || isRu
+            : isEs || isRu || isPt
             ? heritage.sacredSites.tr.map((s, idx) => lText(lang, s, heritage?.sacredSites?.en?.[idx] || s, heritage?.sacredSites?.de?.[idx]))
             : heritage.sacredSites.en)
         : [
@@ -1578,14 +1578,14 @@ function getCountryEncyclopediaImpl(countryCode: string, lang: string = 'tr'): C
         : 'Good in major hubs; translation apps helpful in small towns.',
       phrases: profile.phrases.map((p, i) => ({
         ...p,
-        meaning: isEs || isRu
+        meaning: isEs || isRu || isPt
           ? lText(lang, profileTr.phrases[i]?.meaning || p.meaning, profileEn.phrases[i]?.meaning || p.meaning, profileDe.phrases[i]?.meaning)
           : p.meaning
       }))
     },
     history: {
       conciseHistory: heritage?.history?.concise
-        ? (isDe ? heritage.history.concise.de : isTr ? heritage.history.concise.tr : isEs || isRu ? lText(lang, heritage.history.concise.tr, heritage.history.concise.en || heritage.history.concise.tr, heritage.history.concise.de) : heritage.history.concise.en)
+        ? (isDe ? heritage.history.concise.de : isTr ? heritage.history.concise.tr : isEs || isRu || isPt ? lText(lang, heritage.history.concise.tr, heritage.history.concise.en || heritage.history.concise.tr, heritage.history.concise.de) : heritage.history.concise.en)
         : isDe
         ? `${countryName} besitzt ein reiches historisches Erbe, geprägt von frühen Epochen, Handelsrouten und der modernen Unabhängigkeit.`
         : isEs
@@ -1600,7 +1600,7 @@ function getCountryEncyclopediaImpl(countryCode: string, lang: string = 'tr'): C
             ? heritage.history.milestones.de
             : isTr
             ? heritage.history.milestones.tr
-            : isEs || isRu
+            : isEs || isRu || isPt
             ? heritage.history.milestones.tr.map((m, idx) => lText(lang, m, heritage?.history?.milestones?.en?.[idx] || m, heritage?.history?.milestones?.de?.[idx]))
             : heritage.history.milestones.en)
         : [
@@ -1610,13 +1610,13 @@ function getCountryEncyclopediaImpl(countryCode: string, lang: string = 'tr'): C
           ]
     },
     gastronomy: {
-      famousDishes: isEs || isRu ? mapArr(profileTr.dishes, profileEn.dishes, profileDe.dishes) : profile.dishes,
-      traditionalDrinks: isEs || isRu ? mapArr(profileTr.drinks, profileEn.drinks, profileDe.drinks) : profile.drinks,
-      streetFoodAndDesserts: isEs || isRu ? mapArr(profileTr.desserts, profileEn.desserts, profileDe.desserts) : profile.desserts
+      famousDishes: isEs || isRu || isPt ? mapArr(profileTr.dishes, profileEn.dishes, profileDe.dishes) : profile.dishes,
+      traditionalDrinks: isEs || isRu || isPt ? mapArr(profileTr.drinks, profileEn.drinks, profileDe.drinks) : profile.drinks,
+      streetFoodAndDesserts: isEs || isRu || isPt ? mapArr(profileTr.desserts, profileEn.desserts, profileDe.desserts) : profile.desserts
     },
     achievements: {
       famousFigures,
-      strongSectors: isEs || isRu ? mapArr(strongSectors, strongSectors) : strongSectors
+      strongSectors: isEs || isRu || isPt ? mapArr(strongSectors, strongSectors) : strongSectors
     },
     economy: {
       paymentCulture: isDe

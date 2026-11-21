@@ -12,7 +12,7 @@ import { getOptimizedImageUrl } from '../data/countryVisuals';
 import { getPassportItems } from '../utils/calculator';
 import { GEO_DATA } from '../data/geoData';
 
-const LANG_I: Record<string, number> = { tr: 0, en: 1, de: 2, es: 3, ru: 4 };
+const LANG_I: Record<string, number> = { tr: 0, en: 1, de: 2, es: 3, ru: 4, pt: 5 };
 
 const ASIA = new Set(['TH', 'JP', 'ID', 'VN']);
 

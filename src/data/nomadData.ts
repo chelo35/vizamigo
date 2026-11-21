@@ -951,7 +951,7 @@ export function getLocalizedNomadHub(hub: DigitalNomadHub, lang: string = 'tr'):
   if (lang === 'en' && hub.en) {
     return { ...hub, ...hub.en };
   }
-  if (lang === 'es' || lang === 'ru') {
+  if (lang === 'es' || lang === 'ru' || lang === 'pt') {
     const base = hub.en ? { ...hub, ...hub.en } : hub;
     return {
       ...base,

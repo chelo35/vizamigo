@@ -16,7 +16,7 @@ const KEY = (code: string, pass: string) => `vz_check_${pass}_${code}`;
 
 /** Ülke ve pasaporta göre hazırlanan, işaretlenebilir seyahat hazırlık listesi (işaretler cihazda saklanır). */
 export function buildChecklist(o: {
-  l: (tr: string, en: string, de: string, es: string, ru: string) => string;
+  l: (tr: string, en: string, de: string, es: string, ru: string, pt?: string) => string;
   name: string;
   nameEn: string;
   visaCat: string | undefined;

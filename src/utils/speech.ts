@@ -4,8 +4,8 @@
  * metni okunacak hâle getirir ve cümle cümle okur (uzun metinde kesilmesin diye).
  * Kullanıcı istediği sesi seçebilir; seçim dile göre cihazda saklanır.
  */
-export type SpeechLang = 'tr' | 'en' | 'de' | 'es' | 'ru';
-const LOCALE: Record<SpeechLang, string> = { tr: 'tr-TR', en: 'en-GB', de: 'de-DE', es: 'es-ES', ru: 'ru-RU' };
+export type SpeechLang = 'tr' | 'en' | 'de' | 'es' | 'ru' | 'pt';
+const LOCALE: Record<SpeechLang, string> = { tr: 'tr-TR', en: 'en-GB', de: 'de-DE', es: 'es-ES', ru: 'ru-RU', pt: 'pt-BR' };
 const KEY = (l: string) => `vz_voice2_${l}`;
 /** ses listesinde doğal (Piper) sesin adı */
 export const NATURAL_KEY = 'vizamigo-natural';
@@ -15,7 +15,8 @@ export const NATURAL_VOICES: Record<SpeechLang, Array<[string, string]>> = {
   en: [['ava', 'Ava'], ['emma', 'Emma'], ['jenny', 'Jenny'], ['aria', 'Aria'], ['sonia', 'Sonia (UK)'], ['libby', 'Libby (UK)'], ['andrew', 'Andrew'], ['brian', 'Brian'], ['ryan', 'Ryan (UK)']],
   de: [['katja', 'Katja'], ['amala', 'Amala'], ['seraphina', 'Seraphina'], ['conrad', 'Conrad'], ['florian', 'Florian'], ['killian', 'Killian']],
   es: [['elvira', 'Elvira'], ['ximena', 'Ximena'], ['dalia', 'Dalia (MX)'], ['alvaro', 'Álvaro'], ['jorge', 'Jorge (MX)']],
-  ru: [['svetlana', 'Светлана'], ['dmitry', 'Дмитрий']]
+  ru: [['svetlana', 'Светлана'], ['dmitry', 'Дмитрий']],
+  pt: [['francisca', 'Francisca'], ['antonio', 'Antônio'], ['thalita', 'Thalita']]
 };
 
 export const canSpeak = () => typeof window !== 'undefined' && 'speechSynthesis' in window;

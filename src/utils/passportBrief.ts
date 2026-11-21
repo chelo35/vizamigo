@@ -25,8 +25,8 @@ import { topPlaces } from '../data/topPlaces';
 /** İngilizce belirsiz tanımlık: "an Indian…" değil ülke adıyla "an India passport" → "an" ünlüyle başlayan adlarda. */
 export const enArticle = (w: string): 'a' | 'an' => (/^(?:[AEIO]|Uz)/.test(w) ? 'an' : 'a');
 
-type L5 = [string, string, string, string, string];
-const LI: Record<string, number> = { tr: 0, en: 1, de: 2, es: 3, ru: 4 };
+type L5 = [string, string, string, string, string, string];
+const LI: Record<string, number> = { tr: 0, en: 1, de: 2, es: 3, ru: 4, pt: 5 };
 const pick = (lang: string, v: L5) => v[LI[lang] ?? 1];
 
 export interface BriefRow { k: string; v: string; href?: string; linkText?: string }

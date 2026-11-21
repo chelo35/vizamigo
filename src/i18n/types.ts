@@ -1,4 +1,4 @@
-export type SupportedLanguage = 'tr' | 'en' | 'de' | 'es' | 'ru';
+export type SupportedLanguage = 'tr' | 'en' | 'de' | 'es' | 'ru' | 'pt';
 
 export interface LanguageOption {
   code: SupportedLanguage;

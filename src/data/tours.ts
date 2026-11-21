@@ -8,9 +8,9 @@ export interface TourDest {
   credit?: string; // fotoğraf lisans bilgisi
   search: string; // tur sitelerinde aranacak yer (İngilizce)
   hub: string; // uçuş için havalimanı
-  name: [string, string, string, string, string]; // tr, en, de, es, ru
-  pitch: [string, string, string, string, string];
-  tags: [string, string, string, string, string];
+  name: [string, string, string, string, string, string]; // tr, en, de, es, ru
+  pitch: [string, string, string, string, string, string];
+  tags: [string, string, string, string, string, string];
 }
 
 export const TOURS: TourDest[] = [
@@ -77,7 +77,7 @@ export const TOURS: TourDest[] = [
 ];
 
 /** Turlar sayfasının dile göre adresi: /tr/turlar, /en/tours, /de/touren, /es/tours, /ru/tours */
-export const TOURS_SLUG: Record<string, string> = { tr: 'turlar', en: 'tours', de: 'touren', es: 'tours', ru: 'tours' };
+export const TOURS_SLUG: Record<string, string> = { tr: 'turlar', en: 'tours', de: 'touren', es: 'tours', ru: 'tours', pt: 'passeios' };
 export const toursPath = (lang: string) => `/${lang}/${TOURS_SLUG[lang] || 'tours'}`;
 
 /* ------------------------------------------------------------------ */
@@ -93,10 +93,10 @@ export interface TourPackage {
   photo?: string;
   days: number;
   search: string; // tur sitelerinde arama (İngilizce)
-  name: [string, string, string, string, string];
+  name: [string, string, string, string, string, string];
   route: string; // duraklar (yer adları evrensel)
 }
-export const TOUR_REGIONS: { id: TourRegion; name: [string, string, string, string, string] }[] = [
+export const TOUR_REGIONS: { id: TourRegion; name: [string, string, string, string, string, string] }[] = [
   { id: 'asia', name: ['Asya', 'Asia', 'Asien', 'Asia', 'Азия'] },
   { id: 'balkans', name: ['Balkanlar', 'The Balkans', 'Balkan', 'Balcanes', 'Балканы'] },
   { id: 'europe', name: ['Avrupa', 'Europe', 'Europa', 'Europa', 'Европа'] },
@@ -213,7 +213,7 @@ export const tourCurrency = (lang: string): string => {
 };
 
 /** Tur duraklarının dile göre yazımı: [tr, en, de, es, ru]. Listede olmayan rota olduğu gibi gösterilir. */
-const ROUTE_I18N: Record<string, [string, string, string, string, string]> = {
+const ROUTE_I18N: Record<string, [string, string, string, string, string, string]> = {
   'Bangkok · Chiang Mai · Phuket': ['Bangkok · Chiang Mai · Phuket', 'Bangkok · Chiang Mai · Phuket', 'Bangkok · Chiang Mai · Phuket', 'Bangkok · Chiang Mai · Phuket', 'Бангкок · Чиангмай · Пхукет'],
   'Tokyo · Hakone · Kyoto · Osaka': ['Tokyo · Hakone · Kyoto · Osaka', 'Tokyo · Hakone · Kyoto · Osaka', 'Tokio · Hakone · Kyōto · Osaka', 'Tokio · Hakone · Kioto · Osaka', 'Токио · Хаконэ · Киото · Осака'],
   'Hanoi · Ha Long · Hoi An · Ho Chi Minh': ['Hanoi · Ha Long · Hoi An · Ho Chi Minh', 'Hanoi · Ha Long · Hoi An · Ho Chi Minh City', 'Hanoi · Halong · Hoi An · Ho-Chi-Minh-Stadt', 'Hanói · Ha Long · Hoi An · Ciudad Ho Chi Minh', 'Ханой · Халонг · Хойан · Хошимин'],
@@ -256,5 +256,5 @@ const ROUTE_I18N: Record<string, [string, string, string, string, string]> = {
   'Sydney · Uluru · Cairns · Melbourne': ['Sidney · Uluru · Cairns · Melbourne', 'Sydney · Uluru · Cairns · Melbourne', 'Sydney · Uluru · Cairns · Melbourne', 'Sídney · Uluru · Cairns · Melbourne', 'Сидней · Улуру · Кэрнс · Мельбурн'],
   'Auckland · Rotorua · Queenstown · Milford Sound': ['Auckland · Rotorua · Queenstown · Milford Sound', 'Auckland · Rotorua · Queenstown · Milford Sound', 'Auckland · Rotorua · Queenstown · Milford Sound', 'Auckland · Rotorua · Queenstown · Milford Sound', 'Окленд · Роторуа · Квинстаун · Милфорд-Саунд']
 };
-const ROUTE_IX: Record<string, number> = { tr: 0, en: 1, de: 2, es: 3, ru: 4 };
+const ROUTE_IX: Record<string, number> = { tr: 0, en: 1, de: 2, es: 3, ru: 4, pt: 5 };
 export const routeName = (route: string, lang: string): string => ROUTE_I18N[route]?.[ROUTE_IX[lang] ?? 1] || route;

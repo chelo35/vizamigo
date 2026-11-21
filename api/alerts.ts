@@ -25,28 +25,29 @@ const SB = process.env.SUPABASE_URL || 'https://utlnjyquflfcvjhmgopq.supabase.co
 const KEY = process.env.SUPABASE_SERVICE_ROLE_KEY || '';
 const FROM = process.env.ALERTS_FROM || process.env.REPORT_FROM || 'Vizamigo <bildirim@vizamigo.com>';
 const SITE = 'https://www.vizamigo.com';
-const LANGS = ['tr', 'en', 'de', 'es', 'ru'];
+const LANGS = ['tr', 'en', 'de', 'es', 'ru', 'pt'];
 const one = (v: string | string[] | undefined) => (Array.isArray(v) ? v[0] : v) || '';
 const esc = (s: unknown) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c] as string);
 
 const T = {
-  confirmSubj: { tr: 'Vizamigo takibini onayla', en: 'Confirm your Vizamigo alert', de: 'Vizamigo-Hinweis bestätigen', es: 'Confirma tu alerta de Vizamigo', ru: 'Подтвердите уведомления Vizamigo' },
+  confirmSubj: { tr: 'Vizamigo takibini onayla', en: 'Confirm your Vizamigo alert', de: 'Vizamigo-Hinweis bestätigen', es: 'Confirma tu alerta de Vizamigo', ru: 'Подтвердите уведомления Vizamigo', pt: 'Confirme seu alerta da Vizamigo' },
   confirmBody: {
     tr: (c: string) => `${c} için vize kuralı ya da resmî seyahat uyarısı değişince sana e-posta göndereceğiz. Onaylamak için düğmeye bas.`,
     en: (c: string) => `We will email you when the visa rule or official travel advisory for ${c} changes. Tap the button to confirm.`,
     de: (c: string) => `Wir schreiben dir, wenn sich Visumregel oder Reisehinweis für ${c} ändern. Zum Bestätigen tippen.`,
     es: (c: string) => `Te escribiremos cuando cambien las normas de visado o el aviso oficial de ${c}. Pulsa para confirmar.`,
-    ru: (c: string) => `Мы напишем, когда изменятся визовые правила или официальное предупреждение для ${c}. Нажмите, чтобы подтвердить.`
+    ru: (c: string) => `Мы напишем, когда изменятся визовые правила или официальное предупреждение для ${c}. Нажмите, чтобы подтвердить.`,
+    pt: (c: string) => `Vamos te avisar por e-mail quando a regra de visto ou o alerta oficial de viagem para ${c} mudar. Toque no botão para confirmar.`
   },
-  confirmBtn: { tr: 'Takibi onayla', en: 'Confirm alert', de: 'Bestätigen', es: 'Confirmar', ru: 'Подтвердить' },
-  changeSubj: { tr: (c: string) => `${c}: seyahat kuralı değişti`, en: (c: string) => `${c}: travel rules changed`, de: (c: string) => `${c}: Reiseregeln geändert`, es: (c: string) => `${c}: cambiaron las normas`, ru: (c: string) => `${c}: правила изменились` },
-  visa: { tr: 'Vize durumu', en: 'Visa status', de: 'Visumstatus', es: 'Situación de visado', ru: 'Визовый статус' },
-  adv: { tr: 'En temkinli resmî uyarı', en: 'Strictest official advisory', de: 'Strengster Reisehinweis', es: 'Aviso oficial más estricto', ru: 'Самое строгое предупреждение' },
-  see: { tr: 'Ülke sayfasını aç', en: 'Open country page', de: 'Länderseite öffnen', es: 'Abrir página del país', ru: 'Открыть страницу страны' },
-  unsub: { tr: 'Bu bildirimleri durdur', en: 'Stop these alerts', de: 'Hinweise abbestellen', es: 'Dejar de recibir', ru: 'Отписаться' },
-  okConfirm: { tr: 'Takip onaylandı. Değişiklik olunca e-posta alacaksın.', en: 'Alert confirmed. You will get an email when something changes.', de: 'Bestätigt. Du bekommst eine E-Mail bei Änderungen.', es: 'Confirmado. Te avisaremos por email.', ru: 'Подтверждено. Мы напишем при изменениях.' },
-  okUnsub: { tr: 'Takip durduruldu, artık e-posta almayacaksın.', en: 'Alert stopped. You will not get more emails.', de: 'Abbestellt. Keine weiteren E-Mails.', es: 'Cancelado. No recibirás más correos.', ru: 'Отписка выполнена.' },
-  bad: { tr: 'Bağlantı geçersiz ya da süresi dolmuş.', en: 'This link is invalid or expired.', de: 'Link ungültig.', es: 'Enlace no válido.', ru: 'Ссылка недействительна.' }
+  confirmBtn: { tr: 'Takibi onayla', en: 'Confirm alert', de: 'Bestätigen', es: 'Confirmar', ru: 'Подтвердить', pt: 'Confirmar alerta' },
+  changeSubj: { tr: (c: string) => `${c}: seyahat kuralı değişti`, en: (c: string) => `${c}: travel rules changed`, de: (c: string) => `${c}: Reiseregeln geändert`, es: (c: string) => `${c}: cambiaron las normas`, ru: (c: string) => `${c}: правила изменились`, pt: (c: string) => `${c}: as regras de viagem mudaram` },
+  visa: { tr: 'Vize durumu', en: 'Visa status', de: 'Visumstatus', es: 'Situación de visado', ru: 'Визовый статус', pt: 'Situação do visto' },
+  adv: { tr: 'En temkinli resmî uyarı', en: 'Strictest official advisory', de: 'Strengster Reisehinweis', es: 'Aviso oficial más estricto', ru: 'Самое строгое предупреждение', pt: 'Alerta oficial mais rigoroso' },
+  see: { tr: 'Ülke sayfasını aç', en: 'Open country page', de: 'Länderseite öffnen', es: 'Abrir página del país', ru: 'Открыть страницу страны', pt: 'Abrir a página do país' },
+  unsub: { tr: 'Bu bildirimleri durdur', en: 'Stop these alerts', de: 'Hinweise abbestellen', es: 'Dejar de recibir', ru: 'Отписаться', pt: 'Parar estes alertas' },
+  okConfirm: { tr: 'Takip onaylandı. Değişiklik olunca e-posta alacaksın.', en: 'Alert confirmed. You will get an email when something changes.', de: 'Bestätigt. Du bekommst eine E-Mail bei Änderungen.', es: 'Confirmado. Te avisaremos por email.', ru: 'Подтверждено. Мы напишем при изменениях.', pt: 'Alerta confirmado. Você vai receber um e-mail quando algo mudar.' },
+  okUnsub: { tr: 'Takip durduruldu, artık e-posta almayacaksın.', en: 'Alert stopped. You will not get more emails.', de: 'Abbestellt. Keine weiteren E-Mails.', es: 'Cancelado. No recibirás más correos.', ru: 'Отписка выполнена.', pt: 'Alerta cancelado. Você não vai receber mais e-mails.' },
+  bad: { tr: 'Bağlantı geçersiz ya da süresi dolmuş.', en: 'This link is invalid or expired.', de: 'Link ungültig.', es: 'Enlace no válido.', ru: 'Ссылка недействительна.', pt: 'Este link é inválido ou expirou.' }
 };
 const L = (lang: string) => (LANGS.includes(lang) ? lang : 'en') as 'tr';
 
@@ -99,15 +100,15 @@ async function snapshot(country: string, passport: string): Promise<Snapshot> {
 }
 
 const CAT: Record<string, Record<string, string>> = {
-  free: { tr: 'Vizesiz', en: 'Visa-free', de: 'Visumfrei', es: 'Sin visado', ru: 'Без визы' },
-  id: { tr: 'Kimlikle giriş', en: 'ID card entry', de: 'Mit Ausweis', es: 'Con DNI', ru: 'По ID-карте' },
-  evisa: { tr: 'e-Vize', en: 'eVisa', de: 'e-Visum', es: 'e-Visa', ru: 'Электронная виза' },
-  voa: { tr: 'Kapıda vize', en: 'Visa on arrival', de: 'Visum bei Ankunft', es: 'Visa a la llegada', ru: 'Виза по прилёте' },
-  eta: { tr: 'Elektronik izin (eTA)', en: 'Electronic authorisation (eTA)', de: 'Elektronische Genehmigung (eTA)', es: 'Autorización electrónica (eTA)', ru: 'Электронное разрешение (eTA)' },
-  visa: { tr: 'Vize gerekli', en: 'Visa required', de: 'Visum nötig', es: 'Visado obligatorio', ru: 'Нужна виза' },
-  none: { tr: 'Giriş yok', en: 'No entry', de: 'Keine Einreise', es: 'Sin entrada', ru: 'Въезд закрыт' }
+  free: { tr: 'Vizesiz', en: 'Visa-free', de: 'Visumfrei', es: 'Sin visado', ru: 'Без визы', pt: 'Sem visto' },
+  id: { tr: 'Kimlikle giriş', en: 'ID card entry', de: 'Mit Ausweis', es: 'Con DNI', ru: 'По ID-карте', pt: 'Entrada com documento de identidade' },
+  evisa: { tr: 'e-Vize', en: 'eVisa', de: 'e-Visum', es: 'e-Visa', ru: 'Электронная виза', pt: 'Visto eletrônico (e-Visa)' },
+  voa: { tr: 'Kapıda vize', en: 'Visa on arrival', de: 'Visum bei Ankunft', es: 'Visa a la llegada', ru: 'Виза по прилёте', pt: 'Visto na chegada' },
+  eta: { tr: 'Elektronik izin (eTA)', en: 'Electronic authorisation (eTA)', de: 'Elektronische Genehmigung (eTA)', es: 'Autorización electrónica (eTA)', ru: 'Электронное разрешение (eTA)', pt: 'Autorização eletrônica (eTA)' },
+  visa: { tr: 'Vize gerekli', en: 'Visa required', de: 'Visum nötig', es: 'Visado obligatorio', ru: 'Нужна виза', pt: 'Visto obrigatório' },
+  none: { tr: 'Giriş yok', en: 'No entry', de: 'Keine Einreise', es: 'Sin entrada', ru: 'Въезд закрыт', pt: 'Entrada proibida' }
 };
-const DAYS: Record<string, string> = { tr: 'gün', en: 'days', de: 'Tage', es: 'días', ru: 'дн.' };
+const DAYS: Record<string, string> = { tr: 'gün', en: 'days', de: 'Tage', es: 'días', ru: 'дн.', pt: 'dias' };
 function visaLabel(v: string, lang: string): string {
   if (!v) return '–';
   const [cat, d, id] = v.split('|');

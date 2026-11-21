@@ -5,6 +5,7 @@ import { en } from './locales/en';
 import { de } from './locales/de';
 import { es } from './locales/es';
 import { ru } from './locales/ru';
+import { pt } from './locales/pt';
 
 export type Language = SupportedLanguage;
 export type { AppTranslations };
@@ -14,7 +15,8 @@ export const SUPPORTED_LANGUAGES: LanguageOption[] = [
   { code: 'en', name: 'English', flag: '🇬🇧', nativeName: 'English' },
   { code: 'de', name: 'Deutsch', flag: '🇩🇪', nativeName: 'Deutsch' },
   { code: 'es', name: 'Español', flag: '🇪🇸', nativeName: 'Español' },
-  { code: 'ru', name: 'Русский', flag: '🇷🇺', nativeName: 'Русский' }
+  { code: 'ru', name: 'Русский', flag: '🇷🇺', nativeName: 'Русский' },
+  { code: 'pt', name: 'Português', flag: '🇧🇷', nativeName: 'Português' }
 ];
 
 export const LOCALES: Record<SupportedLanguage, AppTranslations> = {
@@ -22,7 +24,8 @@ export const LOCALES: Record<SupportedLanguage, AppTranslations> = {
   en,
   de,
   es,
-  ru
+  ru,
+  pt
 };
 
 export function getStoredLanguage(): SupportedLanguage {
@@ -52,6 +55,7 @@ export function saveStoredLanguage(lang: SupportedLanguage): void {
 let esMap: Record<string, string> | null = null;
 let ruMap: Record<string, string> | null = null;
 let deMap: Record<string, string> | null = null;
+let ptMap: Record<string, string> | null = null;
 
 export async function loadLanguageDictionary(lang: SupportedLanguage): Promise<void> {
   try {
@@ -62,6 +66,9 @@ export async function loadLanguageDictionary(lang: SupportedLanguage): Promise<v
     } else if (lang === 'ru' && !ruMap) {
       const [m, x] = await Promise.all([import('./autoTranslateRu'), import('./extra-ru.json')]);
       ruMap = { ...m.AUTO_TRANSLATE_RU, ...(x.default as Record<string, string>) };
+    } else if (lang === 'pt' && !ptMap) {
+      const [m, x] = await Promise.all([import('./autoTranslatePt'), import('./extra-pt.json')]);
+      ptMap = { ...m.AUTO_TRANSLATE_PT, ...(x.default as Record<string, string>) };
     } else if (lang === 'de' && !deMap) {
       const m = await import('./autoTranslateDe');
       deMap = m.AUTO_TRANSLATE_DE;
@@ -75,8 +82,32 @@ export function lText(
   enText: string,
   deText?: string,
   esText?: string,
-  ruText?: string
+  ruText?: string,
+  ptText?: string
 ): string {
+  if (lang === 'pt') {
+    if (ptText) return ptText;
+    const lookup = ptMap ? (ptMap[trText] || ptMap[enText]) : null;
+    if (lookup) return lookup;
+    if (trText) {
+      if (trText.includes('Vatandaşlığı & Küresel Mobilite')) {
+        const country = trText.replace(' Vatandaşlığı & Küresel Mobilite', '').trim();
+        return `Cidadania e mobilidade global: ${country}`;
+      }
+      if (trText.includes('Saat İleri')) {
+        const num = trText.replace(/[^0-9]/g, '');
+        return `+${num} h à frente`;
+      }
+      if (trText.includes('Saat Geri')) {
+        const num = trText.replace(/[^0-9]/g, '');
+        return `-${num} h atrás`;
+      }
+      if (trText.includes('Aynı Saat Dilimi')) {
+        return 'Mesmo fuso horário';
+      }
+    }
+    return enText || trText;
+  }
   if (lang === 'es') {
     if (esText) return esText;
     const lookup = esMap ? (esMap[trText] || esMap[enText]) : null;
@@ -152,10 +183,10 @@ export interface I18nContextType {
   toggleLanguage: () => void;
   t: AppTranslations;
   languages: LanguageOption[];
-  l: (tr: string, en: string, de?: string, es?: string, ru?: string) => string;
+  l: (tr: string, en: string, de?: string, es?: string, ru?: string, pt?: string) => string;
 }
 
-const defaultL = (tr: string, en: string, de?: string, es?: string, ru?: string) => tr;
+const defaultL = (tr: string, en: string, de?: string, es?: string, ru?: string, pt?: string) => tr;
 
 const I18nContext = createContext<I18nContextType>({
   language: 'tr',
@@ -198,7 +229,7 @@ export const I18nProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
 
   const toggleLanguage = () => {
     // Cycle through tr -> en -> de -> es -> ru -> tr
-    const order: SupportedLanguage[] = ['tr', 'en', 'de', 'es', 'ru'];
+    const order: SupportedLanguage[] = ['tr', 'en', 'de', 'es', 'ru', 'pt'];
     const nextIdx = (order.indexOf(language) + 1) % order.length;
     setLanguage(order[nextIdx]);
   };
@@ -217,22 +248,22 @@ export const I18nProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
 
   useEffect(() => {
     if (typeof document !== 'undefined') {
-      document.documentElement.lang = language;
+      document.documentElement.lang = language === 'pt' ? 'pt-BR' : language;
     }
   }, [language]);
 
   const [, setDictLoaded] = useState<number>(0);
 
   useEffect(() => {
-    if (language === 'es' || language === 'ru' || language === 'de') {
+    if (language === 'es' || language === 'ru' || language === 'de' || language === 'pt') {
       loadLanguageDictionary(language).then(() => {
         setDictLoaded((v) => v + 1);
       });
     }
   }, [language]);
 
-  const l = (trText: string, enText: string, deText?: string, esText?: string, ruText?: string): string => {
-    return lText(language, trText, enText, deText, esText, ruText);
+  const l = (trText: string, enText: string, deText?: string, esText?: string, ruText?: string, ptText?: string): string => {
+    return lText(language, trText, enText, deText, esText, ruText, ptText);
   };
 
   const value: I18nContextType = {

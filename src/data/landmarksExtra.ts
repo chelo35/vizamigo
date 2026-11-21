@@ -3,7 +3,7 @@
  * Eskiden bu ülkelerde "<Başkent> Historic Old Town & Grand Boulevard" gibi doldurma metinler vardı.
  * Her yer: [en, tr, de, es, ru] — her dilde yerleşik yazımıyla (Wikidata etiketleri referans alındı).
  */
-type L5 = [string, string, string, string, string];
+type L5 = [string, string, string, string, string, string];
 
 const D: Record<string, L5[]> = {
   XK: [
@@ -529,7 +529,7 @@ const D: Record<string, L5[]> = {
   ]
 };
 
-const IDX: Record<string, number> = { en: 0, tr: 1, de: 2, es: 3, ru: 4 };
+const IDX: Record<string, number> = { en: 0, tr: 1, de: 2, es: 3, ru: 4, pt: 5 };
 
 /** Ülkenin ek görülecek yerleri, istenen dilde (bilinmeyen dil → İngilizce). */
 export function landmarksExtra(code: string, lang: string): string[] {

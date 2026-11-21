@@ -33,7 +33,7 @@ export const useFlightPrice = (from?: string, to?: string) => {
     };
   }, [from, to, cur]);
   if (!p) return null;
-  const loc = language === 'tr' ? 'tr-TR' : language === 'de' ? 'de-DE' : language === 'es' ? 'es-ES' : language === 'ru' ? 'ru-RU' : 'en-GB';
+  const loc = language === 'tr' ? 'tr-TR' : language === 'de' ? 'de-DE' : language === 'es' ? 'es-ES' : language === 'pt' ? 'pt-BR' : language === 'ru' ? 'ru-RU' : 'en-GB';
   let money: string;
   try {
     money = new Intl.NumberFormat(loc, { style: 'currency', currency: p.currency, maximumFractionDigits: 0 }).format(p.price);

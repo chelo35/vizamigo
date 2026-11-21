@@ -19,7 +19,7 @@ export const config = {
 type Msg = { role: 'user' | 'assistant'; content: string };
 type Body = { q?: string; history?: Msg[]; lang?: string; passport?: string; facts?: string; buttons?: string[]; features?: string[]; today?: string };
 
-const LANG_NAME: Record<string, string> = { tr: 'Turkish', en: 'English', de: 'German', es: 'Spanish', ru: 'Russian' };
+const LANG_NAME: Record<string, string> = { tr: 'Turkish', en: 'English', de: 'German', es: 'Spanish', ru: 'Russian', pt: 'Brazilian Portuguese' };
 
 // Basit kötüye kullanım koruması: IP başına dakikada 12 istek (aynı sunucu örneği içinde)
 const hits = new Map<string, number[]>();
@@ -108,7 +108,7 @@ export default async function handler(req: Request) {
     else msgs.push({ ...m });
   }
 
-  const system = `You are the Vizamigo travel assistant on vizamigo.com, a free site covering visa and entry rules for 199 countries in 5 languages, plus flights, hotels, tours, car rental, transfers, eSIM and travel tools.
+  const system = `You are the Vizamigo travel assistant on vizamigo.com, a free site covering visa and entry rules for 199 countries in 6 languages, plus flights, hotels, tours, car rental, transfers, eSIM and travel tools.
 
 Reply in ${LANG_NAME[lang]} only. Today is ${clip(b.today, 20) || 'unknown'}. The user's passport: ${clip(b.passport, 60) || 'unknown'}.
 

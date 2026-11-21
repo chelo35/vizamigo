@@ -365,7 +365,7 @@ export const AssistantSheet: React.FC<{
   onOpenTool: (tab: 'explore' | 'plan' | 'track' | 'nomad' | 'profile', tile: string) => void;
 }> = ({ open, onClose, passport, onOpenCountry, onSelectTab, onOpenTool }) => {
   const { l, language } = useI18n();
-  const LANGS = ['tr', 'en', 'de', 'es', 'ru'] as const;
+  const LANGS = ['tr', 'en', 'de', 'es', 'ru', 'pt'] as const;
   type CL = (typeof LANGS)[number];
   // sohbet dili: mikrofon, sesli okuma ve cevaplar bu dilde; varsayılan site dili, seçim cihazda saklanır
   const [chatLang, setChatLangState] = useState<CL>(() => {
@@ -381,7 +381,7 @@ export const AssistantSheet: React.FC<{
       localStorage.setItem('vz_assistant_lang', v);
     } catch {}
   };
-  const cl = (tr: string, en: string, de: string, es: string, ru: string) => ({ tr, en, de, es, ru })[chatLang];
+  const cl = (tr: string, en: string, de: string, es: string, ru: string, pt: string) => ({ tr, en, de, es, ru, pt })[chatLang];
   const [msgs, setMsgs] = useState<AssistantMessage[]>([]);
   const [q, setQ] = useState('');
   const [busy, setBusy] = useState(false);

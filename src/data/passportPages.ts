@@ -4,7 +4,7 @@
 import type { SupportedLanguage } from '../i18n/types';
 
 /** Dilin varsayılan pasaportu: düz ülke sayfası ve yeni ziyaretçi için başlangıç. */
-export const LANG_PASS: Record<SupportedLanguage, string> = { tr: 'TR', en: 'US', de: 'DE', es: 'ES', ru: 'RU' };
+export const LANG_PASS: Record<SupportedLanguage, string> = { tr: 'TR', en: 'US', de: 'DE', es: 'ES', ru: 'RU', pt: 'BR' };
 
 /** Ayrı sayfası olan pasaportlar (dilin konuşulduğu büyük ülkeler). */
 export const PASSPORT_PAGES: Record<SupportedLanguage, string[]> = {
@@ -12,7 +12,8 @@ export const PASSPORT_PAGES: Record<SupportedLanguage, string[]> = {
   en: ['GB', 'IN', 'CA', 'AU'],
   de: ['AT', 'CH'],
   es: ['MX', 'AR', 'CO'],
-  ru: ['KZ', 'UA']
+  ru: ['KZ', 'UA'],
+  pt: ['PT']
 };
 
 export const hasPassportPage = (lang: SupportedLanguage, pass: string) => PASSPORT_PAGES[lang]?.includes(pass.toUpperCase());

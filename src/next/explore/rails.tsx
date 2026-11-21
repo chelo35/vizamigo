@@ -46,7 +46,7 @@ export const HomeRails: React.FC<{ passport: string; onOpenCountry: (c: string) 
   };
   const free = useMemo(() => order(isFree), [items]); // eslint-disable-line react-hooks/exhaustive-deps
   const easy = useMemo(() => order(isEasy), [items]); // eslint-disable-line react-hooks/exhaustive-deps
-  const pick = <T,>(tr: T, en?: T, de?: T): T => (language === 'tr' ? tr : language === 'de' ? de ?? en ?? tr : typeof tr === 'string' && (language === 'es' || language === 'ru') ? (lText(language, tr, (en ?? tr) as string, de as string | undefined) as T) : en ?? tr);
+  const pick = <T,>(tr: T, en?: T, de?: T): T => (language === 'tr' ? tr : language === 'de' ? de ?? en ?? tr : typeof tr === 'string' && (language === 'es' || language === 'ru' || language === 'pt') ? (lText(language, tr, (en ?? tr) as string, de as string | undefined) as T) : en ?? tr);
   const alerts = VISA_CHANGE_ALERTS.filter((a) => a.impactPassport.length === 0 || a.impactPassport.includes(passport)).slice(0, 3);
   const more = l('Tümünü gör', 'See all', 'Alle ansehen', 'Ver todo', 'Смотреть все');
 
@@ -96,7 +96,7 @@ export const HomeRails: React.FC<{ passport: string; onOpenCountry: (c: string) 
 
 // Ana sayfa tur şeridi: önce kolay girilen ülkelerin turları
 const TOUR_ORDER = ['thailand-10', 'balkans-8', 'japan-12', 'egypt-8', 'italy-10', 'vietnam-10', 'morocco-8', 'bali-7', 'greece-8', 'dubai-5', 'cappadocia-3', 'peru-8', 'srilanka-8', 'uzbekistan-8', 'korea-8'];
-const LANGS = ['tr', 'en', 'de', 'es', 'ru'];
+const LANGS = ['tr', 'en', 'de', 'es', 'ru', 'pt'];
 
 /** Ana sayfa: fotoğraflı paket tur şeridi; kart turlar sayfasında o tura gider. */
 export const TourRail: React.FC<{ passport: string }> = ({ passport }) => {

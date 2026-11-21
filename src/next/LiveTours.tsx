@@ -19,7 +19,7 @@ type LiveTour = {
   dep: { date: string; price: number; orig: number | null; seats: number | null } | null;
 };
 
-const LOCALE: Record<string, string> = { tr: 'tr-TR', en: 'en-GB', de: 'de-DE', es: 'es-ES', ru: 'ru-RU' };
+const LOCALE: Record<string, string> = { tr: 'tr-TR', en: 'en-GB', de: 'de-DE', es: 'es-ES', ru: 'ru-RU', pt: 'pt-BR' };
 const cache = new Map<string, Promise<{ currency: string; tours: LiveTour[] }>>();
 
 /**

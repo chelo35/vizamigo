@@ -327,7 +327,7 @@ export const PopularView: React.FC<{ passport: string; onOpenCountry: (c: string
 export const ChangesView: React.FC<{ passport: string; onOpenAudit: () => void; onReport: () => void; onOpenCountry: (c: string) => void }> = ({ passport, onOpenAudit, onReport, onOpenCountry }) => {
   const { l, language } = useI18n();
   const [mine, setMine] = useState(true);
-  const pick = <T,>(tr: T, en?: T, de?: T): T => (language === 'tr' ? tr : language === 'de' ? de ?? en ?? tr : typeof tr === 'string' && (language === 'es' || language === 'ru') ? (lText(language, tr, (en ?? tr) as string, de as string | undefined) as T) : en ?? tr);
+  const pick = <T,>(tr: T, en?: T, de?: T): T => (language === 'tr' ? tr : language === 'de' ? de ?? en ?? tr : typeof tr === 'string' && (language === 'es' || language === 'ru' || language === 'pt') ? (lText(language, tr, (en ?? tr) as string, de as string | undefined) as T) : en ?? tr);
   const list = VISA_CHANGE_ALERTS.filter((a) => !mine || a.impactPassport.length === 0 || a.impactPassport.includes(passport));
   return (
     <div className="vz-stack">

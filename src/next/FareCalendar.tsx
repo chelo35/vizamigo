@@ -41,7 +41,7 @@ export const FareCalendar: React.FC<{
   mode?: 'rt' | 'any' | 'ow';
 }> = ({ from, to, nights, cur, dep, money, onPick, mode = 'rt' }) => {
   const { l, language } = useI18n();
-  const loc = language === 'tr' ? 'tr-TR' : language === 'de' ? 'de-DE' : language === 'es' ? 'es-ES' : language === 'ru' ? 'ru-RU' : 'en-GB';
+  const loc = language === 'tr' ? 'tr-TR' : language === 'de' ? 'de-DE' : language === 'es' ? 'es-ES' : language === 'pt' ? 'pt-BR' : language === 'ru' ? 'ru-RU' : 'en-GB';
   const months = useMemo(() => {
     const d = new Date();
     d.setDate(1);

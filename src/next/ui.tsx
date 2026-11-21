@@ -366,7 +366,7 @@ export const TileGrid: React.FC<{ tiles: Tile[]; openRequest?: OpenRequest; labe
 
 /* Sayıları dile göre biçimle */
 export const fmtNum = (n: number, lang: string, digits = 0) =>
-  new Intl.NumberFormat(lang === 'tr' ? 'tr-TR' : lang === 'de' ? 'de-DE' : lang === 'es' ? 'es-ES' : lang === 'ru' ? 'ru-RU' : 'en-US', { maximumFractionDigits: digits, minimumFractionDigits: 0 }).format(n);
+  new Intl.NumberFormat(lang === 'tr' ? 'tr-TR' : lang === 'de' ? 'de-DE' : lang === 'es' ? 'es-ES' : lang === 'pt' ? 'pt-BR' : lang === 'ru' ? 'ru-RU' : 'en-US', { maximumFractionDigits: digits, minimumFractionDigits: 0 }).format(n);
 
 /** Kur çiftini okunur yaz: oran çok küçükse ters çevir (1 £ = 52 ₺ gibi). */
 export const fmtPair = (homeSym: string, destSym: string, rate: number, lang: string) => {

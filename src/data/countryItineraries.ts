@@ -1734,7 +1734,7 @@ function buildRealStops(
   gastro: { famousDishes: string[]; traditionalDrinks: string[]; streetFoodAndDesserts: string[] },
   taxiTip: string
 ): { stops: ItineraryStop[]; routeName: string; routeSummary: string; totalDays: number } {
-  const L = (tr: string, en: string, de: string, es: string, ru: string) => (lang === 'tr' ? tr : lang === 'de' ? de : lang === 'es' ? es : lang === 'ru' ? ru : en);
+  const L = (tr: string, en: string, de: string, es: string, ru: string, pt: string) => (lang === 'tr' ? tr : lang === 'de' ? de : lang === 'es' ? es : lang === 'ru' ? ru : lang === 'pt' ? pt : en);
   const uniqCities = cities.filter((c, i, a) => c && c.length > 2 && a.findIndex((y) => _norm(y) === _norm(c)) === i);
   const real = mustSee.filter((m) => m && m !== capital);
   // Görülecek yerleri şehirlerine göre grupla (başkent önce), şehri bilinmeyenler kendi durağı olur.

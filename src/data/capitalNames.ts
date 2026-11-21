@@ -3,7 +3,7 @@
  * other languages read from here (falls back to English, then Turkish).
  * Order of each tuple: en, de, es, ru.
  */
-type Q = [string, string, string, string];
+type Q = [string, string, string, string, string];
 
 const C: Record<string, Q> = {
   TR: ['Ankara', 'Ankara', 'Ankara', 'Анкара'],
@@ -212,7 +212,7 @@ const TR_FIX: Record<string, string> = {
   US: 'Washington', MX: 'Meksiko', PA: 'Panama', GT: 'Guatemala', CO: 'Bogota', CR: 'San José', PY: 'Asunción', BO: 'La Paz ve Sucre'
 };
 
-const IDX: Record<string, number> = { en: 0, de: 1, es: 2, ru: 3 };
+const IDX: Record<string, number> = { en: 0, de: 1, es: 2, ru: 3, pt: 4 };
 
 /** Capital in the page language; `trName` is geoData.capital (Turkish). */
 export function capitalName(code: string, lang: string, trName = ''): string {

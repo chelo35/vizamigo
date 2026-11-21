@@ -14,29 +14,29 @@ import { topicPartner } from './assistantCommerce';
 import { INFO } from '../data/passportData';
 import { GUIDE_LABELS } from '../data/guideLinks';
 
-type Lang = 'tr' | 'en' | 'de' | 'es' | 'ru';
+type Lang = 'tr' | 'en' | 'de' | 'es' | 'ru' | 'pt';
 type Topic = 'visa' | 'id' | 'safety' | 'sos' | 'plug' | 'water' | 'tip' | 'taxi' | 'money' | 'season' | 'budget' | 'esim' | 'vat' | 'food' | 'route' | 'places' | 'language' | 'scam';
 
 // Kelime başı eşleşmesi (normalize edilmiş metin üzerinde). "tip" gibi kısa kökler tam kelime olarak aranır.
 const TOPICS: Array<[Topic, RegExp]> = [
-  ['id', /(^| )(kimlik|nufus cuzdan|id card|national id|personalausweis|ausweis|dni|documento de identidad|удостоверени|внутренн\S* паспорт)/],
-  ['visa', /(^| )(vize|visa|visum|visado|виз|giris sart|entry req|einreise|requisitos|въезд)/],
-  ['safety', /(^| )(guvenli|guvenlik|tehlike|riskli|savas|teror|safe|safety|danger|travel advisory|advisory|warning|sicher|gefahr|reisewarnung|seguro|segurid|peligr|безопас|опасн|предупрежд)/],
-  ['sos', /(^| )(acil|polis|ambulans|itfaiye|emergency|police|ambulance|notruf|polizei|krankenwagen|emergenc|policia|ambulancia|экстрен|полиц|скор)/],
-  ['plug', /(^| )(priz|fis|adapt|voltaj|elektrik|plug|socket|voltage|stecker|steckdose|spannung|enchuf|voltaje|розет|вилк|напряжен)/],
-  ['water', /(^| )(musluk|su icil|icme suyu|tap water|drinking water|leitungswasser|trinkwasser|agua del grifo|agua potable|вод)/],
-  ['tip', /(^| )(bahsis|tip|tips|tipping|trinkgeld|propina|чаев)( |$)/],
-  ['taxi', /(^| )(taksi|uber|bolt|grab|careem|ulasim|metro|otobus|taxi|ride|transport|bus|nahverkehr|transporte|autobus|такси|транспорт|метро)/],
-  ['money', /(^| )(para birim|doviz|kur |nakit|kredi kart|kart gec|currency|money|cash|card|exchange|wahrung|geld|bargeld|karte|moneda|dinero|efectivo|tarjeta|валют|деньг|налич|карт)/],
-  ['season', /(^| )(ne zaman|mevsim|hava|iklim|sicak|soguk|when to|best time|weather|season|climate|reisezeit|wetter|klima|wann|cuando|epoca|clima|tiempo|когда|погод|сезон|климат)/],
-  ['budget', /(^| )(butce|fiyat|pahali|ucuz|masraf|kac para|ne kadar tut|budget|cost|price|expensive|cheap|how much|kosten|preis|teuer|billig|presupuesto|precio|caro|barato|cuanto cuesta|бюджет|цен|дорог|дешев|сколько стоит)/],
-  ['esim', /(^| )(esim|sim kart|sim|internet|hat al|wifi|roaming|mobile data|mobilfunk|datos moviles|интернет|сим)/],
-  ['vat', /(^| )(tax free|taxfree|kdv|vergi iade|vat|mwst|mehrwertsteuer|iva|ндс|такс фри)/],
-  ['food', /(^| )(yemek|ne yenir|mutfa|lezzet|food|eat|cuisine|dish|essen|kuche|gericht|comida|comer|plato|gastronom|еда|кухн|блюд|поесть)/],
-  ['route', /(^| )(rota|gezi plan|kac gun|itinerary|route|plan|reiseroute|itinerario|ruta|маршрут)/],
-  ['places', /(^| )(gezilecek|gorulecek|nereler|neresi|sights|places|things to do|what to see|attraction|sehenswurd|lugares|que ver|que hacer|достопримеч|что посмотреть|куда сходить)/],
-  ['language', /(^| )(dil( |$)|dili|hangi dil|kelime|ingilizce|language|phrases|english|sprache|englisch|idioma|frases|ingles|язык|фраз|английск)/],
-  ['scam', /(^| )(dolandir|kazik|tuzak|scam|rip off|betrug|abzocke|masche|estafa|timo|мошенн|развод|обман)/]
+  ['id', /(^| )(kimlik|nufus cuzdan|id card|national id|personalausweis|ausweis|dni|documento de identidad|удостоверени|внутренн\S* паспорт|documento de identidade|rg|carteira de identidade)/],
+  ['visa', /(^| )(vize|visa|visum|visado|виз|giris sart|entry req|einreise|requisitos|въезд|visto|vistos)/],
+  ['safety', /(^| )(guvenli|guvenlik|tehlike|riskli|savas|teror|safe|safety|danger|travel advisory|advisory|warning|sicher|gefahr|reisewarnung|seguro|segurid|peligr|безопас|опасн|предупрежд|seguranca|perig|alerta de viagem)/],
+  ['sos', /(^| )(acil|polis|ambulans|itfaiye|emergency|police|ambulance|notruf|polizei|krankenwagen|emergenc|policia|ambulancia|экстрен|полиц|скор|emergencia|policia|ambulancia|bombeiro)/],
+  ['plug', /(^| )(priz|fis|adapt|voltaj|elektrik|plug|socket|voltage|stecker|steckdose|spannung|enchuf|voltaje|розет|вилк|напряжен|tomada|plugue|voltagem)/],
+  ['water', /(^| )(musluk|su icil|icme suyu|tap water|drinking water|leitungswasser|trinkwasser|agua del grifo|agua potable|вод|agua da torneira|agua potavel)/],
+  ['tip', /(^| )(bahsis|tip|tips|tipping|trinkgeld|propina|чаев|gorjeta)( |$)/],
+  ['taxi', /(^| )(taksi|uber|bolt|grab|careem|ulasim|metro|otobus|taxi|ride|transport|bus|nahverkehr|transporte|autobus|такси|транспорт|метро|onibus|transporte publico)/],
+  ['money', /(^| )(para birim|doviz|kur |nakit|kredi kart|kart gec|currency|money|cash|card|exchange|wahrung|geld|bargeld|karte|moneda|dinero|efectivo|tarjeta|валют|деньг|налич|карт|dinheiro|cartao|cambio|moeda)/],
+  ['season', /(^| )(ne zaman|mevsim|hava|iklim|sicak|soguk|when to|best time|weather|season|climate|reisezeit|wetter|klima|wann|cuando|epoca|clima|tiempo|когда|погод|сезон|климат|quando ir|melhor epoca|estacao)/],
+  ['budget', /(^| )(butce|fiyat|pahali|ucuz|masraf|kac para|ne kadar tut|budget|cost|price|expensive|cheap|how much|kosten|preis|teuer|billig|presupuesto|precio|caro|barato|cuanto cuesta|бюджет|цен|дорог|дешев|сколько стоит|orcamento|preco|caro|barato|quanto custa)/],
+  ['esim', /(^| )(esim|sim kart|sim|internet|hat al|wifi|roaming|mobile data|mobilfunk|datos moviles|интернет|сим|chip|dados moveis)/],
+  ['vat', /(^| )(tax free|taxfree|kdv|vergi iade|vat|mwst|mehrwertsteuer|iva|ндс|такс фри|imposto)/],
+  ['food', /(^| )(yemek|ne yenir|mutfa|lezzet|food|eat|cuisine|dish|essen|kuche|gericht|comida|comer|plato|gastronom|еда|кухн|блюд|поесть|comida|comer|culinaria|prato)/],
+  ['route', /(^| )(rota|gezi plan|kac gun|itinerary|route|plan|reiseroute|itinerario|ruta|маршрут|roteiro)/],
+  ['places', /(^| )(gezilecek|gorulecek|nereler|neresi|sights|places|things to do|what to see|attraction|sehenswurd|lugares|que ver|que hacer|достопримеч|что посмотреть|куда сходить|o que ver|o que fazer|pontos turisticos|atracoes)/],
+  ['language', /(^| )(dil( |$)|dili|hangi dil|kelime|ingilizce|language|phrases|english|sprache|englisch|idioma|frases|ingles|язык|фраз|английск|frases|ingles)/],
+  ['scam', /(^| )(dolandir|kazik|tuzak|scam|rip off|betrug|abzocke|masche|estafa|timo|мошенн|развод|обман|golpe|golpes)/]
 ];
 
 const T: Record<string, Record<Lang, string>> = {
@@ -110,7 +110,7 @@ export async function answerCountryQuestion(
   passport: string,
   city = ''
 ): Promise<{ text: string; actions: AssistantActionPill[]; topics: string[] }> {
-  const lang = (['tr', 'en', 'de', 'es', 'ru'].includes(langIn) ? langIn : 'en') as Lang;
+  const lang = (['tr', 'en', 'de', 'es', 'ru', 'pt'].includes(langIn) ? langIn : 'en') as Lang;
   const L = (k: keyof typeof T) => T[k][lang];
   // Türkçe dışı cevapta Türkçe kalmış bir metin varsa göstermeyelim
   const s = (x: unknown) => { const v = sx(x); return lang !== 'tr' && /[ğışİŞĞ]/.test(v) ? '' : v; };

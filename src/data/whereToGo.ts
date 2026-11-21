@@ -198,24 +198,24 @@ export const wtgCountries = (m: number): string[] => Object.keys(BEST_MONTHS).fi
 /** Bilinen rotalardan o ay mevsiminde OLMAYANLAR (SSS'de "X ayında Y'ye gidilir mi?" için) */
 export const wtgOffSeason = (m: number): string[] => POPULAR.filter((c) => BEST_MONTHS[c] && !BEST_MONTHS[c].includes(m));
 
-const IDX: Record<string, number> = { en: 0, tr: 1, de: 2, es: 3, ru: 4 };
-const LOC: Record<string, string> = { en: 'en-GB', tr: 'tr-TR', de: 'de-DE', es: 'es-ES', ru: 'ru-RU' };
+const IDX: Record<string, number> = { en: 0, tr: 1, de: 2, es: 3, ru: 4, pt: 5 };
+const LOC: Record<string, string> = { en: 'en-GB', tr: 'tr-TR', de: 'de-DE', es: 'es-ES', ru: 'ru-RU', pt: 'pt-BR' };
 const RU_IN = ['январе', 'феврале', 'марте', 'апреле', 'мае', 'июне', 'июле', 'августе', 'сентябре', 'октябре', 'ноябре', 'декабре'];
 
 export const wtgMonthName = (m: number, lang: string): string => {
   try {
     const s = new Intl.DateTimeFormat(LOC[lang] || 'en-GB', { month: 'long', timeZone: 'UTC' }).format(new Date(Date.UTC(2027, m - 1, 15)));
-    return lang === 'es' ? s : s.charAt(0).toUpperCase() + s.slice(1);
+    return lang === 'es' || lang === 'pt' ? s : s.charAt(0).toUpperCase() + s.slice(1);
   } catch { return String(m); }
 };
 
-const joinNames = (xs: string[], lang: string) => (xs.length < 2 ? xs.join('') : `${xs.slice(0, -1).join(', ')}${[' and ', ' ve ', ' und ', ' y ', ' и '][IDX[lang] ?? 0]}${xs[xs.length - 1]}`);
+const joinNames = (xs: string[], lang: string) => (xs.length < 2 ? xs.join('') : `${xs.slice(0, -1).join(', ')}${[' and ', ' ve ', ' und ', ' y ', ' и ', ' e '][IDX[lang] ?? 0]}${xs[xs.length - 1]}`);
 
 export interface WtgText { title: string; short: string; metaDesc: string; answer: string; sections: { h: string; list: string[] }[]; faq: { q: string; a: string }[] }
 
 /** Başlık ve kısa cevap (veri olmadan da çalışır); bölümler ve SSS derlemede doldurulur. */
 export function buildWhereToGo(lang: string, m: number): WtgText {
-  const L = (en: string, tr: string, de: string, es: string, ru: string) => [en, tr, de, es, ru][IDX[lang] ?? 0];
+  const L = (en: string, tr: string, de: string, es: string, ru: string, pt: string) => [en, tr, de, es, ru, pt][IDX[lang] ?? 0];
   const M = wtgMonthName(m, lang);
   const list = wtgCountries(m);
   const n = list.length;
@@ -245,7 +245,7 @@ export function buildWhereToGo(lang: string, m: number): WtgText {
 
 /** Bölüm başlıkları */
 export const wtgHeads = (lang: string, m: number) => {
-  const L = (en: string, tr: string, de: string, es: string, ru: string) => [en, tr, de, es, ru][IDX[lang] ?? 0];
+  const L = (en: string, tr: string, de: string, es: string, ru: string, pt: string) => [en, tr, de, es, ru, pt][IDX[lang] ?? 0];
   const M = wtgMonthName(m, lang);
   const ruM = RU_IN[m - 1];
   return {
@@ -259,7 +259,7 @@ export interface WtgData { m: number; countries: [string, string, string][]; fes
 
 /** SSS (derlemede): vizesiz seçenekler, festivaller, bilinen rotalar için "bu ay gidilir mi?" */
 export function buildWtgFaq(lang: string, m: number, season: Record<string, string>, fest: string[], visaFree: string[], passName: string): { q: string; a: string }[] {
-  const L = (en: string, tr: string, de: string, es: string, ru: string) => [en, tr, de, es, ru][IDX[lang] ?? 0];
+  const L = (en: string, tr: string, de: string, es: string, ru: string, pt: string) => [en, tr, de, es, ru, pt][IDX[lang] ?? 0];
   const M = wtgMonthName(m, lang);
   const ruM = RU_IN[m - 1];
   const faq: { q: string; a: string }[] = [];

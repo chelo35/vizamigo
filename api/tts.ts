@@ -11,7 +11,8 @@ const VOICE: Record<string, string> = {
   en: 'en-US-AvaNeural',
   de: 'de-DE-KatjaNeural',
   es: 'es-ES-ElviraNeural',
-  ru: 'ru-RU-SvetlanaNeural'
+  ru: 'ru-RU-SvetlanaNeural',
+  pt: 'pt-BR-FranciscaNeural'
 };
 // seçilebilir sesler (dil + kısa ad); çok dilli sesler Türkçe de konuşur
 const MULTI: Record<string, string> = {
@@ -24,7 +25,8 @@ const CHOICE: Record<string, Record<string, string>> = {
   en: { ava: 'en-US-AvaNeural', emma: 'en-US-EmmaNeural', jenny: 'en-US-JennyNeural', aria: 'en-US-AriaNeural', sonia: 'en-GB-SoniaNeural', libby: 'en-GB-LibbyNeural', andrew: 'en-US-AndrewNeural', brian: 'en-US-BrianNeural', ryan: 'en-GB-RyanNeural' },
   de: { katja: 'de-DE-KatjaNeural', amala: 'de-DE-AmalaNeural', seraphina: MULTI.seraphina, conrad: 'de-DE-ConradNeural', florian: MULTI.florian, killian: 'de-DE-KillianNeural' },
   es: { elvira: 'es-ES-ElviraNeural', ximena: 'es-ES-XimenaNeural', dalia: 'es-MX-DaliaNeural', alvaro: 'es-ES-AlvaroNeural', jorge: 'es-MX-JorgeNeural' },
-  ru: { svetlana: 'ru-RU-SvetlanaNeural', dmitry: 'ru-RU-DmitryNeural' }
+  ru: { svetlana: 'ru-RU-SvetlanaNeural', dmitry: 'ru-RU-DmitryNeural' },
+  pt: { francisca: 'pt-BR-FranciscaNeural', antonio: 'pt-BR-AntonioNeural', thalita: MULTI.thalita }
 };
 
 type Req = { query: Record<string, string | string[] | undefined>; headers: Record<string, string | string[] | undefined> };

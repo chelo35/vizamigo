@@ -112,7 +112,7 @@ const AIRLINES: Record<string, string> = {
   D7: 'AirAsia X', J9: 'Jazeera Airways', XY: 'flynas', KU: 'Kuwait Airways', OD: 'Batik Air Malaysia', ID: 'Batik Air', VZ: 'Thai VietJet', VJ: 'VietJet Air', '3U': 'Sichuan Airlines', HU: 'Hainan Airlines', BR: 'EVA Air', CI: 'China Airlines', KE: 'Korean Air', OZ: 'Asiana', JL: 'Japan Airlines', NH: 'ANA', PR: 'Philippine Airlines', GA: 'Garuda', VN: 'Vietnam Airlines', BG: 'Biman', PK: 'PIA', IX: 'Air India Express', QZ: 'Indonesia AirAsia', Z2: 'AirAsia Philippines', '8M': 'Myanmar Airways'
 };
 type Pkg = [number, number, number, string];
-const LOC: Record<string, string> = { tr: 'tr-TR', en: 'en-GB', de: 'de-DE', es: 'es-ES', ru: 'ru-RU' };
+const LOC: Record<string, string> = { tr: 'tr-TR', en: 'en-GB', de: 'de-DE', es: 'es-ES', ru: 'ru-RU', pt: 'pt-BR' };
 const EU = new Set(['AT', 'BE', 'CH', 'CZ', 'DE', 'DK', 'ES', 'FI', 'FR', 'GB', 'GR', 'HR', 'HU', 'IE', 'IS', 'IT', 'NL', 'NO', 'PL', 'PT', 'SE', 'SI', 'SK', 'MT', 'CY', 'RO', 'BG', 'EE', 'SK', 'LV', 'LT', 'LU']);
 const inTurkey = () => {
   try {

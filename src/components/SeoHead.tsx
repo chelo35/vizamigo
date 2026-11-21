@@ -203,7 +203,7 @@ export const SeoHead: React.FC<SeoHeadProps> = ({
     existingHreflangs.forEach((el) => el.remove());
 
     const hreflangAlternates = infoPage
-      ? [...(['tr', 'en', 'de', 'ru', 'es'] as const).map((c) => ({ hreflang: c, href: `${BASE_URL}${ipath(c)}` })), { hreflang: 'x-default', href: `${BASE_URL}${ipath('en')}` }]
+      ? [...(['tr', 'en', 'de', 'ru', 'es', 'pt'] as const).map((c) => ({ hreflang: c, href: `${BASE_URL}${ipath(c)}` })), { hreflang: 'x-default', href: `${BASE_URL}${ipath('en')}` }]
       : passportPage && countryCode
       ? [{ hreflang: language, href: currentCanonicalUrl }]
       : getHreflangAlternatesForRoute(tab, countryCode);

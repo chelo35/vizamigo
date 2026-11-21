@@ -1963,7 +1963,7 @@ export const COUNTRY_VISUALS_LIST: CountryVisualRecord[] = [
     "nameEn": "Thailand",
     "image": "/images/countries/th-480.webp",
     "landmark": "",
-    "landmarkI18n": { "tr": "", "en": "", "de": "", "es": "", "ru": "" },
+    "landmarkI18n": { "tr": "", "en": "", "de": "", "es": "", "ru": "", "pt": "" },
     "author": "Vizamigo (yapay zekâ ile üretilmiş görsel)",
     "license": "Vizamigo",
     "sourceUrl": "",

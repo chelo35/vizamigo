@@ -21,7 +21,7 @@ import { hasPassportPage } from '../data/passportPages';
 
 export const BASE_URL = 'https://www.vizamigo.com';
 
-export const CORE_SEO_LANGUAGES: readonly SupportedLanguage[] = ['tr', 'en', 'de', 'ru', 'es'] as const;
+export const CORE_SEO_LANGUAGES: readonly SupportedLanguage[] = ['tr', 'en', 'de', 'ru', 'es', 'pt'] as const;
 
 export const VALID_LANG_CODES = new Set(SUPPORTED_LANGUAGES.map((l) => l.code));
 export const VALID_TABS = new Set<TabKey>(['explore', 'plan', 'track', 'nomad', 'profile', 'consular']);
@@ -85,7 +85,8 @@ const OG_LOCALE_BY_LANG: Record<SupportedLanguage, string> = {
   en: 'en_US',
   de: 'de_DE',
   ru: 'ru_RU',
-  es: 'es_ES'
+  es: 'es_ES',
+  pt: 'pt_BR'
 };
 
 /**
@@ -150,7 +151,7 @@ export function parseCurrentRoute(): ParsedRoute {
       infoPage = (segments[1] || 'terms').toLowerCase().replace(/[^a-z_]/g, '') || 'terms';
     }
     // Turlar sayfası: /tr/turlar, /en/tours, /de/touren
-    else if (next === 'turlar' || next === 'tours' || next === 'touren' || next === 'tury') {
+    else if (next === 'turlar' || next === 'tours' || next === 'touren' || next === 'tury' || next === 'passeios') {
       infoPage = 'tours';
     }
     // 1. Check legacy `/country/:code`

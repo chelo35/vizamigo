@@ -68,7 +68,7 @@ function WeatherGlyph({ code, isDay }: { code: number; isDay: boolean }) {
   );
 }
 
-const LOCALE: Record<string, string> = { tr: 'tr-TR', en: 'en-GB', de: 'de-DE', es: 'es-ES', ru: 'ru-RU' };
+const LOCALE: Record<string, string> = { tr: 'tr-TR', en: 'en-GB', de: 'de-DE', es: 'es-ES', ru: 'ru-RU', pt: 'pt-BR' };
 
 export const LiveStrip: React.FC<Props> = ({ passport, destination, onDestinationChange, onOpenRoutePlanner }) => {
   const { l, language } = useI18n();

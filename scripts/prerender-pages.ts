@@ -80,7 +80,7 @@ async function main() {
   // İspanyolca/Rusça/Almanca otomatik çeviri sözlükleri tarayıcıda sonradan yüklenir; derlemede baştan yükle
   {
     const { loadLanguageDictionary } = await import('../src/i18n');
-    for (const l of ['de', 'es', 'ru'] as const) await loadLanguageDictionary(l);
+    for (const l of ['de', 'es', 'ru', 'pt'] as const) await loadLanguageDictionary(l);
   }
   const { capitalName } = await import('../src/data/capitalNames');
   // Türkçe dışı sayfalarda Türkçe kalmış veri metinlerini çevir: sözlük (cümle içi parçalar dahi) + başkent adları
@@ -99,7 +99,7 @@ async function main() {
 
   const LANGS = CORE_SEO_LANGUAGES as readonly string[];
   const allCodes = Object.keys(GEO_DATA).sort();
-  const OG: Record<string, string> = { tr: 'tr_TR', en: 'en_US', de: 'de_DE', es: 'es_ES', ru: 'ru_RU' };
+  const OG: Record<string, string> = { tr: 'tr_TR', en: 'en_US', de: 'de_DE', es: 'es_ES', ru: 'ru_RU', pt: 'pt_BR' };
   const EYEBROW: Record<string, string> = { tr: 'Vize rehberi', en: 'Visa guide', de: 'Visa-Ratgeber', es: 'Guía de visados', ru: 'Визовый гид' };
   const HOME_TITLE: Record<string, string> = {
     tr: 'Vizamigo - 199 Ülke Vize Rejimi ve Küresel Pasaport Rehberi',
@@ -125,7 +125,7 @@ async function main() {
   };
   const TABS = ['plan', 'track', 'nomad', 'profile', 'consular'] as const;
   // bilgi sayfaları (yedekleme aracı hariç)
-  const INFO: Record<string, [string, string, string, string, string]> = {
+  const INFO: Record<string, [string, string, string, string, string, string]> = {
     terms: ['Kullanım koşulları', 'Terms of use', 'Nutzungsbedingungen', 'Condiciones de uso', 'Условия использования'],
     privacy: ['Gizlilik politikası', 'Privacy policy', 'Datenschutzerklärung', 'Política de privacidad', 'Политика конфиденциальности'],
     disclaimer: ['Sorumluluk reddi', 'Disclaimer', 'Haftungsausschluss', 'Aviso legal', 'Отказ от ответственности'],
@@ -568,7 +568,7 @@ async function main() {
     // turlar sayfası (sosyal medyada paylaşılacak): /tr/turlar, /en/tours …
     {
       const { TOURS, TOURS_SLUG, toursPath, PACKAGES, routeName } = await import('../src/data/tours');
-      const ix = ({ tr: 0, en: 1, de: 2, es: 3, ru: 4 } as Record<string, number>)[lang] ?? 1;
+      const ix = ({ tr: 0, en: 1, de: 2, es: 3, ru: 4, pt: 5 } as Record<string, number>)[lang] ?? 1;
       const T = ({ tr: ['Paket turlar ve aktiviteler: Tayland, Balkanlar, Mısır, İtalya, Türkiye', 'Tayland, İstanbul, Kapadokya, Mısır, İtalya, Balkanlar, Dubai ve daha fazlasında tur, müze bileti ve günübirlik geziler. Ücretsiz iptalli turları karşılaştır.'], en: ['Multi-day tours & activities: Thailand, the Balkans, Egypt, Italy, Türkiye', 'Tours, museum tickets and day trips in Thailand, Istanbul, Cappadocia, Egypt, Italy, the Balkans, Dubai and more. Compare tours with free cancellation.'], de: ['Touren & Aktivitäten: Thailand, Istanbul, Ägypten, Italien, Balkan', 'Touren, Museumstickets und Tagesausflüge in Thailand, Istanbul, Kappadokien, Ägypten, Italien, auf dem Balkan, in Dubai und mehr.'], es: ['Tours y actividades: Tailandia, Estambul, Egipto, Italia, los Balcanes', 'Tours, entradas y excursiones en Tailandia, Estambul, Capadocia, Egipto, Italia, los Balcanes, Dubái y más.'], ru: ['Экскурсии и туры: Таиланд, Стамбул, Египет, Италия, Балканы', 'Экскурсии, билеты в музеи и однодневные поездки: Таиланд, Стамбул, Каппадокия, Египет, Италия, Балканы, Дубай и другие.'] } as Record<string, [string, string]>)[lang];
       const list = PACKAGES.map((p) => `<section id="${p.id}"><h2>${esc(p.name[ix])} (${p.days})</h2><p>${esc(routeName(p.route, lang))}</p></section>`).join('') + TOURS.map((t) => `<section id="${t.id}"><h2>${esc(t.name[ix])}</h2><p>${esc(t.pitch[ix])}</p></section>`).join('');
       write(path.join(lang, TOURS_SLUG[lang] || 'tours', 'index.html'), build({
@@ -595,7 +595,7 @@ async function main() {
 
     // bilgi sayfaları
     for (const [id, names] of Object.entries(INFO)) {
-      const t = names[Math.max(0, ['tr', 'en', 'de', 'es', 'ru'].indexOf(lang))];
+      const t = names[Math.max(0, ['tr', 'en', 'de', 'es', 'ru', 'pt'].indexOf(lang))];
       const ip = getInfoPage(id, lang);
       write(path.join(lang, 'info', id, 'index.html'), build({
         lang,

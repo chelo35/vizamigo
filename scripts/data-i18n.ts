@@ -7,7 +7,7 @@
 import fs from 'fs';
 import path from 'path';
 
-export const DATA_LANGS = ['en', 'de', 'es', 'ru'] as const;
+export const DATA_LANGS = ['en', 'de', 'es', 'ru', 'pt'] as const;
 export type DataLang = (typeof DATA_LANGS)[number];
 
 /** Çevrilmeyecek alanlar (arama sorgusu, bağlantı, kod vb.) */

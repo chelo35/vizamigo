@@ -689,7 +689,8 @@ const TOURIST_HUBS: WorldHub[] = TOURIST_ROWS.flatMap(([city, cityTr, iso, lat, 
       en: getCountryName(iso, 'en'),
       de: getCountryName(iso, 'de'),
       es: getCountryName(iso, 'es'),
-      ru: getCountryName(iso, 'ru')
+      ru: getCountryName(iso, 'ru'),
+      pt: getCountryName(iso, 'pt')
     },
     region,
     lat,
@@ -719,7 +720,8 @@ const EXTRA_CAPITAL_HUBS: WorldHub[] = Object.values(GEO_DATA)
         en: getCountryName(iso, 'en'),
         de: getCountryName(iso, 'de'),
         es: getCountryName(iso, 'es'),
-        ru: getCountryName(iso, 'ru')
+        ru: getCountryName(iso, 'ru'),
+        pt: getCountryName(iso, 'pt')
       },
       region,
       lat: geo.lat,

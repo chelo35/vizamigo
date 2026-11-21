@@ -1,0 +1,46 @@
+{
+  "title": "Documentos para o visto Schengen 2026: sua lista personalizada",
+  "short": "Documentos do visto Schengen",
+  "metaDesc": "Documentos para o visto Schengen: listas para empregados, empresários, estudantes, aposentados e menores. Taxa de 90 €, seguro de 30.000 €, prazos.",
+  "answer": "Para um visto Schengen, você precisa de alguns documentos comuns a todos (formulário, foto, passaporte, seguro viagem com cobertura de 30.000 €, extratos bancários) e de outros que dependem do seu trabalho e do motivo da viagem. A taxa é de 90 € para adultos e 45 € para crianças de 6 a 12 anos; faça o pedido com no máximo 6 meses e no mínimo 15 dias de antecedência.",
+  "sections": [
+    { "h": "Em qual país devo fazer o pedido?", "p": ["Faça o pedido no consulado (ou no centro oficial de vistos) do país onde você vai passar mais tempo. Se as estadias forem iguais, peça no país por onde você vai entrar primeiro."] },
+    { "h": "Taxa, prazo de análise e calendário", "list": ["Taxa do visto: 90 € para adultos, 45 € para crianças de 6 a 12 anos, grátis para menores de 6. O valor não é devolvido se o visto for negado.", "Os centros de vistos (VFS Global, TLScontact, BLS e outros) cobram uma taxa de serviço adicional.", "A decisão costuma levar 15 dias e pode se estender até 45 dias.", "Faça o pedido com no máximo 6 meses e no mínimo 15 dias de antecedência da viagem. Para o verão europeu e as férias, agende cedo."] },
+    { "h": "Vistos de múltiplas entradas com validade maior", "p": ["Muitas nacionalidades podem conseguir vistos de múltiplas entradas com validade maior (1, 3 e depois 5 anos) depois de usar corretamente vistos Schengen anteriores; para cidadãos turcos, essa «cascata» foi adotada em 15 de julho de 2025. Sempre anexe cópias dos seus vistos anteriores."] }
+  ],
+  "faq": [
+    { "q": "Quanto custa um visto Schengen?", "a": "90 € para adultos, 45 € para crianças de 6 a 12 anos e grátis para menores de 6. A taxa de serviço do centro de vistos é cobrada à parte." },
+    { "q": "Qual seguro viagem eu preciso ter?", "a": "Uma cobertura médica de pelo menos 30.000 €, válida em todos os países Schengen durante toda a viagem." },
+    { "q": "Quanto tempo demora um visto Schengen?", "a": "Normalmente 15 dias; pode levar até 45 dias se forem necessárias verificações adicionais." }
+  ],
+  "checklist": {
+    "title": "Sua lista personalizada de documentos",
+    "statusLabel": "Sua situação",
+    "purposeLabel": "Motivo da viagem",
+    "commonTitle": "Para todos",
+    "common": [
+      "Formulário de pedido de visto preenchido e assinado",
+      "2 fotos biométricas (35×45 mm, fundo branco, tiradas nos últimos 6 meses)",
+      "Passaporte emitido nos últimos 10 anos, válido por pelo menos 3 meses após a sua saída, com pelo menos 2 páginas em branco; cópias de vistos anteriores",
+      "Cópia do seu documento de identidade e, se exigidos, documentos de estado civil",
+      "Seguro viagem com cobertura médica mínima de 30.000 €, válido em todos os países Schengen durante toda a viagem",
+      "Extratos bancários dos últimos 3 meses, carimbados ou verificáveis",
+      "Reserva do voo de volta"
+    ],
+    "statuses": [
+      { "id": "employee", "label": "Empregado(a)", "docs": ["Carta da empresa com seu cargo, salário e datas das férias aprovadas, assinada e carimbada", "Contracheques dos últimos 3 meses", "Comprovante de vínculo com a previdência social / histórico de contribuições"] },
+      { "id": "owner", "label": "Empresário(a) / autônomo(a)", "docs": ["Comprovante de inscrição fiscal", "Certidão recente de atividade da empresa (últimos 3 meses)", "Documentos de constituição da empresa e de quem tem poder de assinatura", "Extratos bancários da empresa (se houver)"] },
+      { "id": "student", "label": "Estudante", "docs": ["Comprovante de matrícula", "Carta de patrocínio da pessoa que vai pagar a viagem", "Comprovante de renda e extratos bancários do patrocinador", "Autorização dos pais com firma reconhecida em cartório, se você tiver menos de 18 anos"] },
+      { "id": "retired", "label": "Aposentado(a)", "docs": ["Comprovante de aposentadoria", "Extratos da aposentadoria dos últimos 3 meses"] },
+      { "id": "unemployed", "label": "Sem emprego / dono(a) de casa", "docs": ["Carta de patrocínio da pessoa que vai pagar (por exemplo, seu cônjuge)", "Documentos de emprego e renda do patrocinador", "Comprovante do vínculo entre vocês (por exemplo, certidão de casamento ou registro de família)"] },
+      { "id": "minor", "label": "Menor de 18 anos", "docs": ["Certidão de nascimento / registro de família", "Autorização com firma reconhecida em cartório do pai ou da mãe que não vai viajar", "Cópias dos passaportes ou documentos de identidade do pai e da mãe", "Comprovante de matrícula escolar"] }
+    ],
+    "purposes": [
+      { "id": "tourism", "label": "Turismo", "docs": ["Reserva de hotel para toda a estadia", "Roteiro resumido dia a dia"] },
+      { "id": "family", "label": "Visita a familiares ou amigos", "docs": ["Carta-convite de quem vai receber você", "Cópia do documento de identidade ou da autorização de residência de quem vai receber você", "Termo formal de responsabilidade pelas despesas, se o país exigir (por exemplo, a Verpflichtungserklärung da Alemanha)"] },
+      { "id": "business", "label": "Negócios", "docs": ["Carta-convite da empresa que você vai visitar", "Carta da sua própria empresa designando você para a viagem", "Programação das reuniões, feira ou treinamento"] }
+    ],
+    "note": "Cada consulado pode pedir documentos adicionais. Confira a lista atualizada do centro oficial de vistos antes de fazer o pedido.",
+    "print": "Imprimir / salvar como PDF"
+  }
+}

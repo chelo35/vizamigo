@@ -10,11 +10,13 @@ import en from './guides/en.json';
 import de from './guides/de.json';
 import es from './guides/es.json';
 import ru from './guides/ru.json';
+import pt from './guides/pt.json';
 import scTr from './guides/schengen.tr.json';
 import scEn from './guides/schengen.en.json';
 import scDe from './guides/schengen.de.json';
 import scEs from './guides/schengen.es.json';
 import scRu from './guides/schengen.ru.json';
+import scPt from './guides/schengen.pt.json';
 
 export type GuideId = 'passport_ranking' | 'festival_calendar' | 'montenegro_visa' | 'schengen_documents' | 'etias' | 'uk_eta' | 'esta' | 'greek_islands_visa' | 'visa_free_tr' | 'id_card_travel' | 'visa_fees' | 'visa_appointments' | 'visa_free_ru' | 'us_visa' | 'uk_visa_india' | 'dubai_visa_india' | 'thailand_india' | 'schengen_by_country' | 'schengen_india' | 'japan_visa_india' | 'vietnam_visa_india' | 'egypt_visa_ru' | 'uae_ru' | 'turkey_id_de' | 'egypt_visa_de' | 'thailand_de' | 'canada_eta_mx' | 'schengen_latam' | 'ees' | WtgId;
 export interface GuideSection { h: string; p?: string[]; list?: string[]; table?: { head: string[]; rows: string[][] } }
@@ -303,7 +305,7 @@ export const GUIDE_META: Record<GuideId, { checked: string; icon: string; countr
     checked: '2026-11-05',
     icon: 'user',
     countries: [],
-    list: { passport: 'TR', byLang: { de: 'DE', es: 'ES' }, groups: ['id'] },
+    list: { passport: 'TR', byLang: { de: 'DE', es: 'ES', pt: 'ES' }, groups: ['id'] },
     sources: [
       { label: 'T.C. Dışişleri Bakanlığı: Türk vatandaşlarının tabi olduğu vize uygulamaları', url: 'https://www.mfa.gov.tr/turk-vatandaslarinin-tabi-oldugu-vize-uygulamalari.tr.mfa' },
       { label: 'Azerbaycan Devlet Göç Hizmeti (kimlikle giriş)', url: 'https://migration.gov.az/en/news_detail/14495' },
@@ -401,7 +403,8 @@ const ALL: Record<string, Record<GuideId, GuideText>> = {
   en: { ...en, schengen_documents: scEn },
   de: { ...de, schengen_documents: scDe },
   es: { ...es, schengen_documents: scEs },
-  ru: { ...ru, schengen_documents: scRu }
+  ru: { ...ru, schengen_documents: scRu },
+  pt: { ...pt, schengen_documents: scPt }
 } as never;
 
 /** Liste rehberleri için ülke grupları: [ülke kodu, kalış günü ya da kod][] */

@@ -36,7 +36,7 @@ const QuickDealPanel: React.FC<{ kind: DealKind; passport: string; destination: 
   const { l, language } = useI18n();
   useLiveFx();
   const cur = language === 'tr' ? 'TRY' : language === 'ru' ? 'RUB' : 'EUR';
-  const loc = language === 'tr' ? 'tr-TR' : language === 'de' ? 'de-DE' : language === 'es' ? 'es-ES' : language === 'ru' ? 'ru-RU' : 'en-GB';
+  const loc = language === 'tr' ? 'tr-TR' : language === 'de' ? 'de-DE' : language === 'es' ? 'es-ES' : language === 'pt' ? 'pt-BR' : language === 'ru' ? 'ru-RU' : 'en-GB';
   const money = (v: number, c = cur) => {
     try {
       return new Intl.NumberFormat(loc, { style: 'currency', currency: c, maximumFractionDigits: 0 }).format(Math.round(v));
