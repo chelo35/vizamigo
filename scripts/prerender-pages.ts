@@ -474,7 +474,7 @@ async function main() {
           const v = getCountryVisual(code, lang);
           const s480 = getOptimizedImageUrl(v.image, { width: 480 });
           const s720 = getOptimizedImageUrl(v.image, { width: 720 });
-          return `<section class="vzs-chero"><img src="${s720}" srcset="${s480} 480w, ${s720} 720w" sizes="100vw" alt="${esc([name, v.landmark].filter(Boolean).join(': '))}" fetchpriority="high" /><div class="vzs-wrap vzs-chero-in">${eyebrow(lang, [EYEBROW[lang], region])}${h1(name, meta.h1.replace(name, '').replace(/^[\s:—–-]+|[\s:—–-]+$/g, '').replace(/\s+(de|para|por|en|em|do|da|dos|das)$/i, '').trim())}${cap ? `<p>${esc(capitalName(code, lang, cap))}</p>` : ''}</div></section>`;
+          return `<section class="vzs-chero"><img src="${s720}" srcset="${s480} 480w, ${s720} 720w" sizes="100vw" alt="${esc([name, v.landmark].filter(Boolean).join(': '))}" fetchpriority="high" /><div class="vzs-wrap vzs-chero-in">${eyebrow(lang, [EYEBROW[lang], region])}${h1(name, meta.h1.replace(name, '').replace(/^[\s:—–-]+|[\s:—–-]+$/g, '').replace(/\s+(?:(?:de|para|por|en|em)(?:\s+(?:o|a|os|as|el|la|los|las))?|do|da|dos|das|no|na|nos|nas)$/i, '').trim())}${cap ? `<p>${esc(capitalName(code, lang, cap))}</p>` : ''}</div></section>`;
         })(),
         nav: navBlock(lang, `${lead(meta.description)}${trustHtml}${briefHtml}${factsHtml(code, lang)}${festHtml(code, lang)}${wtgHtml(code, lang)}${faqHtml}${ppNav}<p>${homeLink(lang)} · ${tabLinks(lang)}</p>${near.length ? `<h2>${esc(UI[lang].region)}</h2><p>${countryLinks(lang, near)}</p>` : ''}`)
       }));
