@@ -19,6 +19,7 @@ import { getHubCoords } from '../../utils/hubCoords';
 import { useLiveFx, useLiveWeather, liveWeatherKey, weatherCodeInfo } from '../../utils/liveData';
 import { GLOBAL_CURRENCIES } from '../../data/countryGeography';
 import { getCrossRate, USD_RATES } from '../../data/currencyRates';
+import { conciergeText } from '../../data/conciergeI18n';
 
 const norm = (s: string) => s.toLocaleLowerCase('tr').normalize('NFD').replace(/[̀-ͯ]/g, '');
 
@@ -399,15 +400,15 @@ export const EasyTripView: React.FC<{ passport: string; destination: string; onD
           <div className="vz-step" key={s.stage}>
             <span className="vz-step-n">{i + 1}</span>
             <div className="vz-step-b">
-              <h4 className="vz-row-flex" style={{ gap: 8 }}><Icon name={icons[s.stage] || 'spark'} size={18} />{tr ? s.titleTr : s.titleEn}</h4>
-              <p className="vz-muted" style={{ fontSize: 14 }}>{tr ? s.subtitleTr : s.subtitleEn}</p>
+              <h4 className="vz-row-flex" style={{ gap: 8 }}><Icon name={icons[s.stage] || 'spark'} size={18} />{conciergeText(language, destination, s.titleTr, s.titleEn)}</h4>
+              <p className="vz-muted" style={{ fontSize: 14 }}>{conciergeText(language, destination, s.subtitleTr, s.subtitleEn)}</p>
               <List>
                 {s.partners.slice(0, 4).map((pn) => (
                   <Row
                     key={pn.id}
                     lead={<PartnerLogo id={pn.id} url={pn.url} fallback={icons[s.stage] || 'spark'} />}
-                    title={<span className="vz-row-flex" style={{ gap: 8 }}>{pn.brand}<span className="vz-badge tone-sea">{tr ? pn.badgeTr : pn.badgeEn}</span></span>}
-                    sub={tr ? pn.taglineTr : pn.taglineEn}
+                    title={<span className="vz-row-flex" style={{ gap: 8 }}>{pn.brand}<span className="vz-badge tone-sea">{conciergeText(language, destination, pn.badgeTr, pn.badgeEn)}</span></span>}
+                    sub={conciergeText(language, destination, pn.taglineTr, pn.taglineEn)}
                     href={pn.url}
                   />
                 ))}

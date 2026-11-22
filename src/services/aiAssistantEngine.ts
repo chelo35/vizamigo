@@ -1,3 +1,4 @@
+import { lText } from '../i18n';
 import { enArticle } from '../utils/passportBrief';
 /**
  * Vizamigo AI Copilot & Travel Concierge Intelligence Engine
@@ -657,7 +658,7 @@ export async function processAssistantQuery(
   if (/(kayip|kaybettim|calinti|calindi|konsolosluk|buyukelcilik|lost passport|stolen|consulate|embassy|pass verloren|botschaft|konsulat|perdi el pasaporte|embajada|consulado|потерял паспорт|консульств|посольств)/.test(norm)) {
     const sos: AssistantActionPill = { id: 'tab-consular', type: 'switch_tab', tabKey: 'consular', label: L5('Acil durum ve konsolosluk', 'Emergency & consulate', 'Notfall & Konsulat', 'Emergencia y consulado', 'Экстренная помощь', 'Emergência e consulado'), accentTone: 'coral' };
     const c = getConsularEmergencyInfo(currentPassport || 'TR', activeLang);
-    const pick = (o: Record<string, string | undefined>) => o[activeLang] || o.en || o.tr || '';
+    const pick = (o: Record<string, string | undefined>) => o[activeLang] || lText(activeLang, o.tr || '', o.en || '') || '';
     return reply(
       `**${L5('Yurt dışında pasaport kaybı', 'Lost passport abroad', 'Pass im Ausland verloren', 'Pasaporte perdido en el extranjero', 'Потеря паспорта за границей', 'Passaporte perdido no exterior')}**\n` +
         `1. ${L5('En yakın polis merkezinden kayıp/çalıntı tutanağı alın.', 'Get a loss/theft report from the nearest police station.', 'Verlust-/Diebstahlanzeige bei der nächsten Polizei machen.', 'Pide una denuncia de pérdida o robo en la comisaría más cercana.', 'Получите справку о потере/краже в ближайшем отделении полиции.', 'Registre um boletim de ocorrência de perda ou roubo na delegacia mais próxima.')}\n` +

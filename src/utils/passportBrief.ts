@@ -23,6 +23,7 @@ import { CONSULAR_EMERGENCY_DATA } from '../data/consularEmergencyData';
 import { LANG_PASS, PASSPORT_PAGES } from '../data/passportPages';
 import { topPlaces } from '../data/topPlaces';
 import { ptArticles } from '../i18n/ptArticles';
+import { lText } from '../i18n';
 /** İngilizce belirsiz tanımlık: "an Indian…" değil ülke adıyla "an India passport" → "an" ünlüyle başlayan adlarda. */
 export const enArticle = (w: string): 'a' | 'an' => (/^(?:[AEIO]|Uz)/.test(w) ? 'an' : 'a');
 
@@ -101,7 +102,7 @@ export function getPassportBrief(code: string, pass: string, lang: string): Pass
   // 6) acil durumda kendi dışişleri
   const ce = CONSULAR_EMERGENCY_DATA[pass];
   if (ce) {
-    const min = (ce.ministryName as Record<string, string | undefined>)[lang] || ce.ministryName.en;
+    const min = (ce.ministryName as Record<string, string | undefined>)[lang] || lText(lang, ce.ministryName.tr, ce.ministryName.en);
     rows.push({ k: pick(lang, ['Acil durumda', 'Emergency abroad', 'Notfall im Ausland', 'Emergencia en el extranjero', 'ЧП за границей', 'Emergência no exterior']), v: `${min}${ce.hotline247 ? ` · ${ce.hotline247}` : ''}`, href: ce.officialPortalUrl || undefined, linkText: ce.officialPortalName || undefined });
   }
 
@@ -151,8 +152,8 @@ export function getPassportFaq(code: string, pass: string, lang: string): { q: s
   const out: { q: string; a: string }[] = [];
   const ce = CONSULAR_EMERGENCY_DATA[pass];
   if (ce) {
-    const min = (ce.ministryName as Record<string, string | undefined>)[lang] || ce.ministryName.en;
-    const doc = (ce.emergencyDocName as Record<string, string | undefined>)[lang] || ce.emergencyDocName.en;
+    const min = (ce.ministryName as Record<string, string | undefined>)[lang] || lText(lang, ce.ministryName.tr, ce.ministryName.en);
+    const doc = (ce.emergencyDocName as Record<string, string | undefined>)[lang] || lText(lang, ce.emergencyDocName.tr, ce.emergencyDocName.en);
     out.push({
       q: pick(lang, [`${P} vatandaşı olarak ${C} seyahatinde pasaportumu kaybedersem ne yapmalıyım?`, `I'm a ${P} passport holder: what if I lose my passport in ${C}?`, dem ? `Pass in ${C} verloren: was tun als ${dem.replace(/e$/, 'er')}?` : `Pass aus ${P} in ${C} verloren: was tun?`, `Tengo pasaporte de ${P}: ¿qué hago si lo pierdo en ${C}?`, `Паспорт ${P} утерян в стране ${C}: что делать?`, `Tenho passaporte de ${P}: o que faço se perdê-lo em ${C}?`]),
       a: pick(lang, [

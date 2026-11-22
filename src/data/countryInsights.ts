@@ -2102,7 +2102,7 @@ function getCountryInsightsImpl(countryCode: string, lang: string = 'tr'): Count
 
   const geoCurrencyMatch = GLOBAL_CURRENCIES[code];
   const autoCurrencyName = geoCurrencyMatch
-    ? `${(geoCurrencyMatch.name as any)[lang] || geoCurrencyMatch.name.en || geoCurrencyMatch.name.tr} (${geoCurrencyMatch.code})`
+    ? `${(geoCurrencyMatch.name as any)[lang] || ((lang === 'es' || lang === 'ru' || lang === 'pt') ? (() => { try { const n = new Intl.DisplayNames([lang === 'pt' ? 'pt-BR' : lang], { type: 'currency' }).of(geoCurrencyMatch.code) || ''; return lang === 'ru' ? n : n.charAt(0).toUpperCase() + n.slice(1); } catch { return ''; } })() : '') || geoCurrencyMatch.name.en || geoCurrencyMatch.name.tr} (${geoCurrencyMatch.code})`
     : (isEs ? 'Moneda Local' : isPt ? 'Moeda local' : isRu ? 'Местная валюта' : isDe ? 'Landeswährung' : isEn ? 'Local Currency' : 'Milli Para Birimi');
 
   const autoPlugType = verifiedRec

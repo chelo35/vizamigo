@@ -601,7 +601,7 @@ const NomadVisaView: React.FC<{ onOpenCountry: (c: string) => void }> = ({ onOpe
 
 const NomadView: React.FC<{ onOpenCountry: (c: string) => void }> = ({ onOpenCountry }) => {
   const { l, language } = useI18n();
-  const hubs = useMemo(() => NOMAD_HUBS.map((h) => getLocalizedNomadHub(h, language)), [language]);
+  const hubs = NOMAD_HUBS.map((h) => getLocalizedNomadHub(h, language));
   const regions = Array.from(new Set(NOMAD_HUBS.map((h) => h.region)));
   const budgets = Array.from(new Set(NOMAD_HUBS.map((h) => h.budgetLevel)));
   const [reg, setReg] = useState<string>('');

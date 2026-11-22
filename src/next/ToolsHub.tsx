@@ -21,7 +21,7 @@ import { getVerifiedCountryRecord } from '../data/verifiedCountryData';
 import { getConsularEmergencyInfo } from '../data/consularEmergencyData';
 
 type L3 = { tr: string; en: string; de: string };
-const pick3 = (o: (L3 & { es?: string; pt?: string; ru?: string }) | undefined, lang: string) => (o ? (lang === 'tr' ? o.tr : lang === 'de' ? o.de || o.en : (lang === 'es' ? o.es : lang === 'ru' ? o.ru : '') || lText(lang, o.tr, o.en, o.de)) : '');
+const pick3 = (o: (L3 & { es?: string; pt?: string; ru?: string }) | undefined, lang: string) => (o ? (lang === 'tr' ? o.tr : lang === 'de' ? o.de || o.en : (lang === 'es' ? o.es : lang === 'ru' ? o.ru : lang === 'pt' ? o.pt : '') || lText(lang, o.tr, o.en, o.de)) : '');
 const countryOpts = (lang: string) => Object.keys(GEO_DATA).map((c) => ({ c, n: getCountryName(c, lang) })).sort((a, b) => a.n.localeCompare(b.n, lang));
 
 function useChecked(key: string) {

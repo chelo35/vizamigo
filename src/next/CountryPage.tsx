@@ -47,6 +47,8 @@ export const NEW_LAYOUT = new Set(['TH', 'FR', 'ES', 'US', 'TR', 'IT', 'MX', 'GB
  *  Durum düzelince kodu buradan NEW_LAYOUT'a taşımak yeterli (görsel ve veriler hazır). */
 export const READY_LATER = new Set(['UA', 'RU', 'BY', 'AF', 'SY', 'YE', 'LY', 'SD', 'SS', 'SO', 'IQ', 'IR', 'LB', 'IL', 'PS', 'MM', 'ML', 'BF', 'NE', 'TD', 'CF', 'HT', 'VE', 'KP']);
 import { buildPassportPath, buildLocalizedPath } from '../utils/seoRouter';
+import { appText } from '../data/appCatalogI18n';
+import { conciergeText } from '../data/conciergeI18n';
 
 interface Props {
   onOpenCountry: (c: string) => void;
@@ -63,7 +65,7 @@ interface Props {
 
 type L3 = { tr: string; en: string; de: string };
 const usd = (v: string | number | undefined) => (v === undefined || v === '' ? '—' : /\$/.test(String(v)) ? String(v) : `$${v}`);
-const pick3 = (o: (L3 & { es?: string; pt?: string; ru?: string }) | undefined, lang: string) => (o ? (lang === 'tr' ? o.tr : lang === 'de' ? o.de || o.en : (lang === 'es' ? o.es : lang === 'ru' ? o.ru : '') || lText(lang, o.tr, o.en, o.de)) : '');
+const pick3 = (o: (L3 & { es?: string; pt?: string; ru?: string }) | undefined, lang: string) => (o ? (lang === 'tr' ? o.tr : lang === 'de' ? o.de || o.en : (lang === 'es' ? o.es : lang === 'ru' ? o.ru : lang === 'pt' ? o.pt : '') || lText(lang, o.tr, o.en, o.de)) : '');
 
 function useCountryTimeTz(code: string) {
   const geo = GEO_DATA[code];
@@ -171,10 +173,9 @@ const CountryPageInner: React.FC<Props & { data: CountryBundle }> = ({ code, pas
       sessionStorage.setItem('vz_cview', v);
     } catch {}
   };
-  const nomad = useMemo(() => {
-    const h = NOMAD_HUBS.find((x) => x.countryCode === code);
-    return h ? getLocalizedNomadHub(h, language === 'tr' || language === 'de' ? language : 'en') : null;
-  }, [code, language]);
+  // not memoised: es/ru/pt texts come from a dictionary that loads after the first render
+  const nomadHub = NOMAD_HUBS.find((x) => x.countryCode === code);
+  const nomad = nomadHub ? getLocalizedNomadHub(nomadHub, language) : null;
   useLiveFx();
   const name = getCountryName(code, language);
   const item = useMemo(() => getPassportItems(passport).find((x) => x.c === code) || null, [passport, code]);
@@ -466,7 +467,7 @@ const CountryPageInner: React.FC<Props & { data: CountryBundle }> = ({ code, pas
       id: 'easy', icon: 'sun',
       title: l('Kolay tatil', 'Easy trip', 'Einfache Reise', 'Viaje fácil', 'Лёгкая поездка', 'Viagem sem complicação'),
       desc: l('Uçuş, otel, transfer, tur, eSIM', 'Flights, stay, transfer, cover', 'Flug, Hotel, Transfer', 'Vuelo, hotel, traslado', 'Перелёт, отель, трансфер', 'Voo, hotel, transfer'),
-      render: () => <EasyStages stages={concierge.stages} tr={tr} from={(GEO_DATA[passport]?.mainHub || '').split('/')[0]} to={(GEO_DATA[code]?.mainHub || '').split('/')[0]} />
+      render: () => <EasyStages stages={concierge.stages} tr={tr} country={code} from={(GEO_DATA[passport]?.mainHub || '').split('/')[0]} to={(GEO_DATA[code]?.mainHub || '').split('/')[0]} />
     },
     {
       id: 'transport', icon: 'transit',
@@ -726,9 +727,9 @@ const CountryPageInner: React.FC<Props & { data: CountryBundle }> = ({ code, pas
                 <a key={(a.id || a.name) + a.category} className="vz-app-card" href={a.url} target="_blank" rel={tpIdFromUrl(a.url) ? 'noopener noreferrer sponsored' : 'noopener noreferrer'}>
                   <PartnerLogo url={a.url} size={44} name={a.name} fallback="phone" />
                   <span className="vz-stack" style={{ gap: 2 }}>
-                    <small>{tr ? a.categoryLabelTr : a.categoryLabelEn}</small>
+                    <small>{appText(language, a.categoryLabelTr, a.categoryLabelEn)}</small>
                     <b>{a.name}</b>
-                    <p>{tr ? a.recommendedReasonTr || a.taglineTr : a.recommendedReasonEn || a.taglineEn}</p>
+                    <p>{appText(language, a.recommendedReasonTr || a.taglineTr, a.recommendedReasonEn || a.taglineEn)}</p>
                   </span>
                 </a>
               ))}
@@ -745,9 +746,9 @@ const CountryPageInner: React.FC<Props & { data: CountryBundle }> = ({ code, pas
         <div className="vz-stack">
           <div className="vz-grid">
             {concierge.stages.flatMap((s) => s.partners.slice(0, 2)).map((pn) => (
-              <Card key={pn.stage + pn.id} eyebrow={tr ? pn.badgeTr : pn.badgeEn} title={pn.brand} lead={<PartnerLogo id={pn.id} url={pn.url} size={40} />}>
-                <p className="vz-muted">{tr ? pn.taglineTr : pn.taglineEn}</p>
-                <LinkBtn href={pn.url} small variant="primary">{tr ? pn.ctaTr : pn.ctaEn}</LinkBtn>
+              <Card key={pn.stage + pn.id} eyebrow={conciergeText(language, code, pn.badgeTr, pn.badgeEn)} title={pn.brand} lead={<PartnerLogo id={pn.id} url={pn.url} size={40} />}>
+                <p className="vz-muted">{conciergeText(language, code, pn.taglineTr, pn.taglineEn)}</p>
+                <LinkBtn href={pn.url} small variant="primary">{conciergeText(language, code, pn.ctaTr, pn.ctaEn)}</LinkBtn>
               </Card>
             ))}
           </div>
@@ -1094,8 +1095,9 @@ const WorkSim: React.FC<{ tz: string | null; city: string }> = ({ tz, city }) =>
 
 type Stage = ReturnType<typeof getCountryConciergePlan>['stages'][number];
 /** Kolay tatil: aşamaya göre süz (uçuş, konaklama, ulaşım, güvence), tüm ortakları göster. */
-const EasyStages: React.FC<{ stages: Stage[]; tr: boolean; from?: string; to?: string }> = ({ stages, tr, from, to }) => {
-  const { l } = useI18n();
+const EasyStages: React.FC<{ stages: Stage[]; tr: boolean; from?: string; to?: string; country?: string }> = ({ stages, tr, from, to, country }) => {
+  const { l, language } = useI18n();
+  const code = country || '';
   const [st, setSt] = useState<string>('');
   const [all, setAll] = useState(false);
   const list = stages.filter((s) => !st || s.stage === st);
@@ -1103,18 +1105,18 @@ const EasyStages: React.FC<{ stages: Stage[]; tr: boolean; from?: string; to?: s
     <div className="vz-stack">
       <Chips scroll>
         <Chip on={!st} onClick={() => setSt('')}>{l('Hepsi', 'All', 'Alle', 'Todo', 'Все', 'Tudo')}</Chip>
-        {stages.map((s) => <Chip key={s.stage} on={st === s.stage} onClick={() => setSt(s.stage)}>{tr ? s.titleTr : s.titleEn}</Chip>)}
+        {stages.map((s) => <Chip key={s.stage} on={st === s.stage} onClick={() => setSt(s.stage)}>{conciergeText(language, code, s.titleTr, s.titleEn)}</Chip>)}
       </Chips>
       <div className="vz-steps">
         {list.map((s, i) => (
           <div className="vz-step" key={s.stage}>
             <span className="vz-step-n">{stages.indexOf(s) + 1 || i + 1}</span>
             <div className="vz-step-b">
-              <h4>{tr ? s.titleTr : s.titleEn}{s.stage === 'flights' && <FlightFrom from={from} to={to} />}</h4>
-              <p className="vz-muted" style={{ fontSize: 14 }}>{tr ? s.subtitleTr : s.subtitleEn}</p>
+              <h4>{conciergeText(language, code, s.titleTr, s.titleEn)}{s.stage === 'flights' && <FlightFrom from={from} to={to} />}</h4>
+              <p className="vz-muted" style={{ fontSize: 14 }}>{conciergeText(language, code, s.subtitleTr, s.subtitleEn)}</p>
               <List>
                 {s.partners.slice(0, all || st ? 99 : 3).map((pn) => (
-                  <Row key={pn.id} lead={<PartnerLogo id={pn.id} url={pn.url} fallback={s.stage === 'flights' ? 'plane' : s.stage === 'accommodation' ? 'bed' : s.stage === 'transit' ? 'car' : s.stage === 'activities' ? 'ticket' : 'shield'} />} title={pn.brand} sub={tr ? pn.taglineTr : pn.taglineEn} href={pn.url} />
+                  <Row key={pn.id} lead={<PartnerLogo id={pn.id} url={pn.url} fallback={s.stage === 'flights' ? 'plane' : s.stage === 'accommodation' ? 'bed' : s.stage === 'transit' ? 'car' : s.stage === 'activities' ? 'ticket' : 'shield'} />} title={pn.brand} sub={conciergeText(language, code, pn.taglineTr, pn.taglineEn)} href={pn.url} />
                 ))}
               </List>
             </div>
