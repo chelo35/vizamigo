@@ -12,8 +12,19 @@ const SB = env.SUPABASE_URL || 'https://utlnjyquflfcvjhmgopq.supabase.co';
 const KEY = env.SUPABASE_SERVICE_ROLE_KEY || '';
 const TP = env.TRAVELPAYOUTS_TOKEN || '';
 
-// Travelpayouts program (campaign_id) → hizmet türü. Bilinmeyen program "other" olur; ?debug=1 kimlikleri listeler.
-const CAMPAIGN: Record<string, [string, string]> = {};
+// Travelpayouts program adı → hizmet türü
+function catOf(name: string): string {
+  const n = name.toLowerCase();
+  if (/esim|yesim|airalo|saily|gigsky|drimsim/.test(n)) return 'esim';
+  if (/taxi|transfer|intui|welcome|daytrip/.test(n)) return 'transfer';
+  if (/bike|moto|scooter/.test(n)) return 'bike';
+  if (/rent|car|qeeq|economybookings|autoeurope/.test(n)) return 'car';
+  if (/klook|tiqets|wegotrip|go ?city|getyourguide|viator|kkday|tour|activit/.test(n)) return 'tour';
+  if (/train|bus|ferry|12go|rail/.test(n)) return 'train';
+  if (/hotel|booking|hostel|stay/.test(n)) return 'hotel';
+  if (/aviasales|kiwi|flight|air|jetradar/.test(n)) return 'flight';
+  return 'other';
+}
 
 const sbh = { apikey: KEY, Authorization: `Bearer ${KEY}`, 'Content-Type': 'application/json' };
 const json = (o: unknown, s = 200) => new Response(JSON.stringify(o), { status: s, headers: { 'Content-Type': 'application/json', 'Cache-Control': 'no-store' } });
@@ -52,12 +63,12 @@ export default async function handler(req: Request): Promise<Response> {
   const days = Math.min(400, Math.max(1, parseInt(q.get('days') || '120', 10) || 120));
   try {
     // alan listesi: kâr alanının adı TP'de değişebiliyor, olanı seç
-    const fl = (await tp('get_fields_list')) as { results?: { name?: string; field?: string }[] } | { name?: string }[];
-    const arr = (Array.isArray(fl) ? fl : fl.results || []) as { name?: string; field?: string }[];
+    const fl = (await tp('get_fields_list')) as { fields?: { name?: string }[]; results?: { name?: string }[] } | { name?: string }[];
+    const arr = (Array.isArray(fl) ? fl : fl.fields || fl.results || []) as { name?: string; field?: string }[];
     const names = new Set(arr.map((f) => f.name || f.field || '').filter(Boolean));
     const profitFields = names.size ? ['profit_eur', 'paid_profit_eur', 'processing_profit_eur'].filter((f) => names.has(f)) : ['paid_profit_eur'];
     const priceField = ['price_eur', 'price_usd'].find((f) => names.has(f)) || 'price_eur';
-    const want = ['action_id', 'sub_id', 'state', 'date', 'campaign_id', priceField, ...profitFields].filter((f) => names.size === 0 || names.has(f));
+    const want = ['action_id', 'sub_id', 'state', 'date', 'campaign_id', 'campaign_name_en', priceField, ...profitFields].filter((f) => names.size === 0 || names.has(f));
     const from = new Date(Date.now() - days * 864e5).toISOString().slice(0, 10);
     const rows: Record<string, unknown>[] = [];
     for (let off = 0; off < 50000; off += 1000) {
@@ -79,7 +90,7 @@ export default async function handler(req: Request): Promise<Response> {
     if (debug) {
       const camps: Record<string, number> = {};
       rows.forEach((r) => (camps[String(r.campaign_id)] = (camps[String(r.campaign_id)] || 0) + 1));
-      return json({ ok: true, fields: [...names].sort(), raw: JSON.stringify(fl).slice(0, 1500), used: want, total: rows.length, withRef: mine.length, campaigns: camps });
+      return json({ ok: true, fields: [...names].sort(), used: want, total: rows.length, withRef: mine.length, campaigns: camps });
     }
     if (!mine.length) return json({ ok: true, total: rows.length, upserted: 0 });
 
@@ -105,14 +116,14 @@ export default async function handler(req: Request): Promise<Response> {
       const state = String(r.state || '');
       const status = keepPaid.has(id) ? 'paid' : state === 'paid' ? 'approved' : /cancel/.test(state) ? 'cancelled' : 'pending';
       const profit = profitFields.map((f) => num(r[f])).find((x) => x !== null && x > 0) ?? profitFields.map((f) => num(r[f])).find((x) => x !== null) ?? null;
-      const c = CAMPAIGN[String(r.campaign_id)];
+      const cname = String(r.campaign_name_en || '').trim();
       const eur = priceField === 'price_eur';
       out.push({
         id,
         ref,
         network: 'travelpayouts',
-        partner: c ? c[1] : `TP #${r.campaign_id}`,
-        category: c ? c[0] : 'other',
+        partner: cname || `TP #${r.campaign_id}`,
+        category: catOf(cname),
         booked_at: day || null,
         amount_eur: eur ? num(r[priceField]) : null,
         commission_eur: profit,
