@@ -77,7 +77,8 @@ export function tagRef(url: string, ref = currentRef()): string {
   const host = u.hostname.replace(/^www\./, '');
   const is = (d: string) => host === d || host.endsWith('.' + d);
   const tag = `r-${ref}`;
-  if (is('glp8.net') || is('lt45.net') || is('daisycon.com')) {
+  if (is('glp8.net') || is('lt45.net') || is('daisycon.com') || (u.pathname.startsWith('/c/') && u.searchParams.get('si') && u.searchParams.get('wi'))) {
+    // Daisycon (Nomad, FlexiRoam ve kendi alan adındaki Rentalmotorbike bağlantıları: /c/?si=…&wi=…)
     u.searchParams.set('ws', tag);
   } else if (is('awin1.com')) {
     u.searchParams.set('clickref', tag);

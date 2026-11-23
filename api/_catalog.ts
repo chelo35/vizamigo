@@ -39,12 +39,12 @@ export const PARTNERS: Record<string, P> = {
   discovercars: { n: 'DiscoverCars', c: 'car' }, localrent: { n: 'Localrent', c: 'car' }, economybookings: { n: 'EconomyBookings', c: 'car' },
   getrentacar: { n: 'GetRentacar', c: 'car' }, qeeq: { n: 'QEEQ', c: 'car' }, autoeurope: { n: 'AutoEurope', c: 'car' },
   bookingcars: { n: 'Booking.com Cars', c: 'car' }, expediacars: { n: 'Expedia Cars', c: 'car' }, woopdrive: { n: 'WoopDrive', c: 'car' },
-  bikesbooking: { n: 'BikesBooking', c: 'bike' },
+  bikesbooking: { n: 'BikesBooking', c: 'bike' }, rentalmotorbike: { n: 'Rentalmotorbike', c: 'bike' },
   twelvego: { n: '12Go', c: 'train' }, omio: { n: 'Omio', c: 'train' }, italiarail: { n: 'Italiarail', c: 'train' },
   ferryhopper: { n: 'Ferryhopper', c: 'ferry' },
   airalo: { n: 'Airalo', c: 'esim' }, yesim: { n: 'Yesim', c: 'esim' }, saily: { n: 'Saily', c: 'esim' }, gigsky: { n: 'GigSky', c: 'esim' },
   drimsim: { n: 'Drimsim', c: 'esim' }, nomad: { n: 'Nomad eSIM', c: 'esim' }, flexiroam: { n: 'FlexiRoam', c: 'esim' },
-  safetywing: { n: 'SafetyWing', c: 'insurance', tracked: false }, hellosafe: { n: 'HelloSafe', c: 'insurance' },
+  safetywing: { n: 'SafetyWing', c: 'insurance', tracked: false }, hellosafe: { n: 'HelloSafe', c: 'insurance' }, visahq: { n: 'VisaHQ', c: 'extra', tracked: false },
   airhelp: { n: 'AirHelp', c: 'claim' }, compensair: { n: 'Compensair', c: 'claim' }, lennuabi: { n: 'Lennuabi', c: 'claim' },
   radicalstorage: { n: 'Radical Storage', c: 'extra' }, sanatoriums: { n: 'Sanatoriums', c: 'extra' }
 };
