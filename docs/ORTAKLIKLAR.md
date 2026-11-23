@@ -104,7 +104,7 @@ Kilit açılınca (Travelpayouts "3 ay düzenli trafik" sonrası "Submit for rev
 - E-posta: Resend (`RESEND_API_KEY`, `REPORT_TO`, `ALERTS_FROM`/`REPORT_FROM`).
 - Kur: Frankfurter (EUR tabanlı), satış tarihindeki TRY kuru `fx_try`.
 - Yayın: `git push origin redesign/deniz && git push origin redesign/deniz:main` → Vercel `vizamigo-83kj` (takım chelo35).
-- Demo panel: `ornek-panel` (sahte veri, e-posta Çelebi). Gerçek kullanımda silinebilir.
+- Demo panel `ornek-panel` 24 Kas 2026'da silindi (ref_partners 84 gerçek fenomen, ref_bookings boş).
 
 ## 6. Takip ve hatırlatmalar (zamanlanmış görevler)
 
@@ -118,5 +118,4 @@ Kilit açılınca (Travelpayouts "3 ay düzenli trafik" sonrası "Submit for rev
 - [ ] 12Go cevabı → API/CSV/postback'e göre `ortak-sync`'e kaynak ekle. O zamana kadar 12Go satışları 12Go panelinden `sub_id`'ye bakılarak elle `ref_bookings`'e girilir.
 - [ ] TourRadar cevabı → aynı şekilde.
 - [ ] İlk gerçek satışta: Daisycon, Stay22 (GYG dahil) ve Viator alan adlarının (alt kimlik, komisyon) doğru okunduğunu kontrol et.
-- [ ] "Claude'un kendi sitesi %50/%20" diye hatırlanan ortaklık bulunamadı (Hostelworld %40 rev share olabilir); Çelebi netleştirecek.
-- [ ] Demo panel `ornek-panel` gerçek kullanım öncesi silinsin mi? (Çelebi'ye soruldu.)
+- Fenomen takip listesi (adaylar, gönderilenler, cevaplar): https://claude.ai/artifact/UzcWm6pBQ3sTQNtKaxVsdU ("people"). Yeni maillerde GÜNCEL şartlar kullanılır (düz %50, ayın 15'i, TL/IBAN, 1.000 TL alt sınır, sigorta+vize hariç) — eski şablondaki "ilk 3 ay %50, sonra %30–50" artık geçersiz.
