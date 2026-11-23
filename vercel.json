@@ -165,6 +165,10 @@
   ],
   "rewrites": [
     {
+      "source": "/ortak/yonetim",
+      "destination": "/api/ortak-admin"
+    },
+    {
       "source": "/ortak/basvuru",
       "destination": "/api/ortak-basvuru"
     },
@@ -198,6 +202,10 @@
     {
       "path": "/api/ortak-sync",
       "schedule": "23 4 * * *"
+    },
+    {
+      "path": "/api/ortak-admin?cron=payout",
+      "schedule": "17 6 10 * *"
     }
   ]
 }

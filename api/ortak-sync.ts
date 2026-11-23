@@ -1,6 +1,6 @@
 export const config = { runtime: 'edge' };
 
-import { partnerCat, partnerFromName } from './_catalog';
+import { partnerCat, partnerFromName, partnerName } from './_catalog';
 
 /**
  * Fenomen paneli: ortak ağlarındaki rezervasyonları (alt kimlikte "r-<kod>") Supabase ref_bookings tablosuna aktarır.
@@ -283,7 +283,7 @@ export default async function handler(req: Request): Promise<Response> {
   const from = ymd(new Date(Date.now() - days * 864e5));
   const only = q.get('net');
 
-  const partners = (await (await fetch(`${SB}/rest/v1/ref_partners?select=ref`, { headers: sbh })).json()) as { ref: string }[];
+  const partners = (await (await fetch(`${SB}/rest/v1/ref_partners?select=ref,name`, { headers: sbh })).json()) as { ref: string; name: string }[];
   const refs = [...new Set(partners.map((p) => p.ref))].sort((a, b) => b.length - a.length);
   // alt kimlik metninde "r-<kod>" ara; kodlarda tire olabileceği için en uzun eşleşen kod
   const findRef = (tag: string): { ref: string; page: string | null } | null => {
@@ -311,11 +311,18 @@ export default async function handler(req: Request): Promise<Response> {
       report[k] = { error: String((e as Error).message || e).slice(0, 200) };
     }
   }));
+  // Bir ağ hata verdiyse (anahtar eksik olanlar hariç) Çelebi'ye haber ver: satış sessizce kaçmasın
+  if (!debug && !only) {
+    const bad = Object.entries(report).filter(([, v]) => { const e = (v as { error?: string }).error; return e && !/^no [A-Z_]+/.test(e); });
+    if (bad.length) await notify(`Ortak senkronu: ${bad.map(([k]) => k).join(', ')} hata verdi`,
+      `<p>Gece senkronunda şu ağlardan satış çekilemedi (fenomen satışları eksik kalabilir):</p><ul>${bad.map(([k, v]) => `<li><b>${k}</b>: ${String((v as { error: string }).error).replace(/</g, '&lt;')}</li>`).join('')}</ul><p>Claude'a bu e-postayı göster; düzeltsin.</p>`);
+  }
   if (debug || !raws.length) return json({ ok: true, from, to, report, upserted: 0, debug });
 
   const ids = raws.map((r) => r.id);
   const existing = (await (await fetch(`${SB}/rest/v1/ref_bookings?id=in.(${ids.map((i) => `"${i}"`).join(',')})&select=id,status`, { headers: sbh })).json()) as { id: string; status: string }[];
   const keepPaid = new Set(existing.filter((e) => e.status === 'paid').map((e) => e.id));
+  const prev = new Map(existing.map((e) => [e.id, e.status]));
   const out: Row[] = [];
   for (const x of raws) {
     const m = findRef(x.tag)!;
@@ -331,5 +338,26 @@ export default async function handler(req: Request): Promise<Response> {
   }
   const w = await fetch(`${SB}/rest/v1/ref_bookings?on_conflict=id`, { method: 'POST', headers: { ...sbh, Prefer: 'resolution=merge-duplicates,return=minimal' }, body: JSON.stringify(out) });
   if (!w.ok) return json({ ok: false, report, error: `supabase ${w.status} ${(await w.text()).slice(0, 200)}` }, 500);
-  return json({ ok: true, from, to, report, upserted: out.length });
+  // Yeni satış ya da durum değişikliği varsa Çelebi'ye e-posta (fenomen, firma, tutar, komisyon)
+  const fresh = out.filter((r) => !prev.has(r.id)), moved = out.filter((r) => prev.has(r.id) && prev.get(r.id) !== r.status && prev.get(r.id) !== 'paid');
+  if (!debug && (fresh.length || moved.length)) {
+    const names = new Map(partners.map((p) => [p.ref, `${p.name || p.ref} (${p.ref})`]));
+    const tr = (r: Row) => `<tr><td>${r.booked_at || ''}</td><td>${names.get(r.ref) || r.ref}</td><td>${r.network}</td><td>${partnerName(r.partner, r.partner)}</td><td>${r.page ? '/' + r.page : ''}</td><td style="text-align:right">${r.amount_eur != null ? r.amount_eur.toFixed(2) + ' €' : ''}</td><td style="text-align:right">${r.commission_eur != null ? r.commission_eur.toFixed(2) + ' €' : ''}</td><td>${r.status}${prev.has(r.id) ? ` (önce: ${prev.get(r.id)})` : ''}</td></tr>`;
+    const tbl = (a: Row[]) => `<table border="1" cellpadding="6" cellspacing="0"><tr><th>Tarih</th><th>Fenomen</th><th>Ağ</th><th>Firma</th><th>Sayfa</th><th>Tutar</th><th>Komisyon</th><th>Durum</th></tr>${a.map(tr).join('')}</table>`;
+    await notify(`Fenomen satışı: ${fresh.length} yeni${moved.length ? `, ${moved.length} durum değişikliği` : ''}`,
+      `${fresh.length ? `<p><b>Yeni satışlar</b></p>${tbl(fresh)}` : ''}${moved.length ? `<p><b>Durumu değişenler</b> (onaylandı/iptal)</p>${tbl(moved)}` : ''}<p>Ayrıntı ve ödeme listesi: <a href="https://www.vizamigo.com/ortak/yonetim">Fenomen yönetim paneli</a></p>`);
+  }
+  return json({ ok: true, from, to, report, upserted: out.length, fresh: fresh.length, moved: moved.length });
+}
+
+async function notify(subject: string, html: string) {
+  const to = env.REPORT_TO || '';
+  if (!to || !env.RESEND_API_KEY) return;
+  try {
+    await fetch('https://api.resend.com/emails', {
+      method: 'POST',
+      headers: { Authorization: `Bearer ${env.RESEND_API_KEY}`, 'Content-Type': 'application/json' },
+      body: JSON.stringify({ from: env.ALERTS_FROM || env.REPORT_FROM || 'Vizamigo <bildirim@vizamigo.com>', to: to.split(',').map((x) => x.trim()), subject, html })
+    });
+  } catch {}
 }
