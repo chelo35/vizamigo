@@ -15,6 +15,16 @@
 - Fenomenlere cevap gelmezse 20 Ocak 2027'ye kadar hatırlatma maili atılmaz.
 - Çelebi: "fenomen ortaklıkları çok önemli, buradan kâr gelecek" — cevapsız fenomen maili olursa sürekli uyar (zamanlanmış görev var, bkz. §6). "Sitede bir şey satıldığında insanların parasını mutlaka yatıralım, sıkıntı yaşamayalım."
 
+## 1b. Fenomen seçme kuralları (Çelebi, 24 Kas 2026)
+
+- **Küçük-orta ama İZLENEN kanallar.** Birkaç yüz bin aboneli büyük kanallara bakma (kolay dönmezler). Tercih: ~3 B – 150 B abone.
+- **İzlenme şartı:** son 3–4 uzun videonun izlenmesi en az **~3.000** (3 B, 5 B, 10 B, 50 B, 100 B civarı). Birkaç yüz izlenen kanala mail ATMA (sınırlı mail hakkı + spam riski).
+- **Güncellik:** son 2–3 ayda düzenli uzun video. Son videosu yıllar önce olan, ağırlıkla Shorts atan kanal elenir.
+- Kendisi vize danışmanlığı / seyahat planı satan (rakip) kanallar elenir.
+- Seyahat dışı (yemek, ünlü, belgesel, doğa bilimi vb.) kanallar elenir.
+- Türk kanallar bitince yabancı fenomenlere geçilebilir. Türk gezgin bölgeleri: Tayland, Bali, Japonya, Kore, Güney Amerika, Avrupa, Balkanlar, Orta Asya, ABD/Kanada'da yaşam.
+- Araştırma yöntemi: YouTube kanal araması → `/@kanal/videos` son 4 video medyan izlenme + son video yaşı → açıklamadaki e-posta. "E-posta adresini görüntüle" CAPTCHA'lı; Claude basmaz, Çelebi bakar.
+
 ## 2. Akış (fenomen linkinden ödemeye)
 
 1. Fenomen linki: `https://www.vizamigo.com/?ref=<kod>` (kod `ref_partners.ref`, `^[a-z0-9][a-z0-9_-]{1,29}$`).
