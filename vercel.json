@@ -144,6 +144,10 @@
   ],
   "rewrites": [
     {
+      "source": "/ortak/basvuru",
+      "destination": "/api/ortak-basvuru"
+    },
+    {
       "source": "/ortak",
       "destination": "/api/ortak"
     },

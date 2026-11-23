@@ -73,7 +73,8 @@ function loginPage(lang: Lang, msg = '', status = 200): Response {
   const t = TX[lang];
   const body = `<header><a class="brand" href="${SITE}/">Vizamigo</a>${langPicker(lang, (x) => `/ortak?lang=${x}`)}</header>
 <div class="card" style="max-width:520px;margin:30px auto"><h1>${t.loginTitle}</h1>${msg ? `<p>${esc(msg)}</p>` : ''}<p class="small">${t.loginText}</p>
-<form method="post" action="/ortak" class="row" style="margin-top:10px"><input type="hidden" name="lang" value="${lang}"><input type="email" name="email" required placeholder="${esc(t.email)}" style="flex:1;min-width:220px" autocomplete="email"><button class="btn">${t.send}</button></form></div>`;
+<form method="post" action="/ortak" class="row" style="margin-top:10px"><input type="hidden" name="lang" value="${lang}"><input type="email" name="email" required placeholder="${esc(t.email)}" style="flex:1;min-width:220px" autocomplete="email"><button class="btn">${t.send}</button></form></div>
+<p class="small" style="text-align:center"><a href="/ortak/basvuru?lang=${lang}">${t.apply}</a></p>`;
   return html(lang, t.loginTitle, body, status);
 }
 

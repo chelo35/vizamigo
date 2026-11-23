@@ -8,7 +8,7 @@ type S = {
   byPartner: string; partner: string; pages: string; page: string; landed: string; clickedFrom: string; days: string; date: string; noRes: string;
   dayTitle: string; back: string; timeline: string; time: string; evVisit: string; evOut: string; dayBookings: string; noBookingDay: string;
   none: string; noClicks: string; notTracked: string; how: string; howList: string[]; updated: string; bad: string; err: string; tz: string;
-  loginTitle: string; loginText: string; email: string; send: string; sent: string; mailSubj: string; mailBody: string; mailBtn: string; lang: string;
+  loginTitle: string; loginText: string; email: string; send: string; sent: string; mailSubj: string; mailBody: string; mailBtn: string; lang: string; apply: string;
 };
 
 export const TX: Record<Lang, S> = {
@@ -35,7 +35,7 @@ export const TX: Record<Lang, S> = {
     updated: 'Son güncelleme', bad: 'Bu panel bağlantısı geçersiz. Aşağıdan e-posta adresinizi yazın, panel bağlantınızı gönderelim.', err: 'Panel şu an yüklenemedi, birkaç dakika sonra tekrar deneyin.', tz: 'Türkiye saati',
     loginTitle: 'Ortak girişi', loginText: 'Vizamigo iş ortağıysanız, bizimle yazıştığınız e-posta adresini yazın; panel bağlantınızı hemen gönderelim.', email: 'E-posta adresiniz', send: 'Bağlantıyı gönder',
     sent: 'Bu adres kayıtlıysa panel bağlantınızı gönderdik. Gelen kutunuzu (ve gereksiz klasörünü) kontrol edin.',
-    mailSubj: 'Vizamigo ortaklık paneliniz', mailBody: 'Tıklama, rezervasyon ve kazancınızı görebileceğiniz size özel panelin bağlantısı aşağıda. Bu bağlantı size özeldir; lütfen paylaşmayın.', mailBtn: 'Paneli aç', lang: 'Dil'
+    mailSubj: 'Vizamigo ortaklık paneliniz', mailBody: 'Tıklama, rezervasyon ve kazancınızı görebileceğiniz size özel panelin bağlantısı aşağıda. Bu bağlantı size özeldir; lütfen paylaşmayın.', mailBtn: 'Paneli aç', lang: 'Dil', apply: 'Henüz ortağımız değil misiniz? Ortaklık programına başvurun'
   },
   en: {
     title: 'Partner dashboard', link: 'Your personal link', copy: 'Copy', d7: '7 days', d30: '30 days', d90: '90 days', all: 'All time', from: 'From', to: 'To', show: 'Show',
@@ -60,7 +60,7 @@ export const TX: Record<Lang, S> = {
     updated: 'Last updated', bad: 'This dashboard link is not valid. Enter your email below and we will send you your link.', err: 'The dashboard could not be loaded right now. Please try again in a few minutes.', tz: 'Turkey time (GMT+3)',
     loginTitle: 'Partner login', loginText: 'If you are a Vizamigo partner, enter the email address you use with us and we will send you your dashboard link.', email: 'Your email', send: 'Send my link',
     sent: 'If this address is registered, we have sent your dashboard link. Please check your inbox (and spam folder).',
-    mailSubj: 'Your Vizamigo partner dashboard', mailBody: 'Here is the link to your personal dashboard, where you can see your clicks, bookings and earnings. This link is personal; please do not share it.', mailBtn: 'Open dashboard', lang: 'Language'
+    mailSubj: 'Your Vizamigo partner dashboard', mailBody: 'Here is the link to your personal dashboard, where you can see your clicks, bookings and earnings. This link is personal; please do not share it.', mailBtn: 'Open dashboard', lang: 'Language', apply: 'Not a partner yet? Apply to the partner program'
   },
   de: {
     title: 'Partner-Dashboard', link: 'Euer persönlicher Link', copy: 'Kopieren', d7: '7 Tage', d30: '30 Tage', d90: '90 Tage', all: 'Gesamt', from: 'Von', to: 'Bis', show: 'Anzeigen',
@@ -85,7 +85,7 @@ export const TX: Record<Lang, S> = {
     updated: 'Zuletzt aktualisiert', bad: 'Dieser Dashboard-Link ist ungültig. Gebt unten eure E-Mail ein, wir schicken euch den Link.', err: 'Das Dashboard konnte gerade nicht geladen werden. Bitte in ein paar Minuten erneut versuchen.', tz: 'Türkische Zeit (GMT+3)',
     loginTitle: 'Partner-Login', loginText: 'Ihr seid Vizamigo-Partner? Gebt die E-Mail-Adresse ein, mit der ihr mit uns schreibt – wir schicken euch den Dashboard-Link.', email: 'Eure E-Mail', send: 'Link senden',
     sent: 'Wenn diese Adresse registriert ist, haben wir euch den Link geschickt. Bitte Posteingang (und Spam) prüfen.',
-    mailSubj: 'Euer Vizamigo Partner-Dashboard', mailBody: 'Hier ist der Link zu eurem persönlichen Dashboard mit Klicks, Buchungen und Einnahmen. Der Link ist persönlich – bitte nicht weitergeben.', mailBtn: 'Dashboard öffnen', lang: 'Sprache'
+    mailSubj: 'Euer Vizamigo Partner-Dashboard', mailBody: 'Hier ist der Link zu eurem persönlichen Dashboard mit Klicks, Buchungen und Einnahmen. Der Link ist persönlich – bitte nicht weitergeben.', mailBtn: 'Dashboard öffnen', lang: 'Sprache', apply: 'Noch kein Partner? Jetzt für das Partnerprogramm bewerben'
   },
   es: {
     title: 'Panel de socio', link: 'Tu enlace personal', copy: 'Copiar', d7: '7 días', d30: '30 días', d90: '90 días', all: 'Todo', from: 'Desde', to: 'Hasta', show: 'Ver',
@@ -110,7 +110,7 @@ export const TX: Record<Lang, S> = {
     updated: 'Última actualización', bad: 'Este enlace no es válido. Escribe tu correo abajo y te enviaremos tu enlace.', err: 'No se pudo cargar el panel. Inténtalo de nuevo en unos minutos.', tz: 'Hora de Turquía (GMT+3)',
     loginTitle: 'Acceso de socios', loginText: 'Si eres socio de Vizamigo, escribe el correo con el que nos escribes y te enviaremos el enlace de tu panel.', email: 'Tu correo', send: 'Enviar enlace',
     sent: 'Si este correo está registrado, te hemos enviado el enlace. Revisa tu bandeja de entrada (y spam).',
-    mailSubj: 'Tu panel de socio de Vizamigo', mailBody: 'Este es el enlace a tu panel personal, donde ves tus clics, reservas y ganancias. El enlace es personal; no lo compartas.', mailBtn: 'Abrir panel', lang: 'Idioma'
+    mailSubj: 'Tu panel de socio de Vizamigo', mailBody: 'Este es el enlace a tu panel personal, donde ves tus clics, reservas y ganancias. El enlace es personal; no lo compartas.', mailBtn: 'Abrir panel', lang: 'Idioma', apply: '¿Aún no eres socio? Solicita unirte al programa'
   },
   ru: {
     title: 'Кабинет партнёра', link: 'Ваша персональная ссылка', copy: 'Копировать', d7: '7 дней', d30: '30 дней', d90: '90 дней', all: 'Всё время', from: 'С', to: 'По', show: 'Показать',
@@ -135,7 +135,7 @@ export const TX: Record<Lang, S> = {
     updated: 'Обновлено', bad: 'Ссылка недействительна. Укажите e-mail ниже, и мы пришлём вашу ссылку.', err: 'Не удалось загрузить кабинет. Попробуйте через несколько минут.', tz: 'Время Турции (GMT+3)',
     loginTitle: 'Вход для партнёров', loginText: 'Если вы партнёр Vizamigo, укажите e-mail, с которого вы нам пишете, и мы пришлём ссылку на кабинет.', email: 'Ваш e-mail', send: 'Отправить ссылку',
     sent: 'Если этот адрес зарегистрирован, мы отправили ссылку. Проверьте входящие (и спам).',
-    mailSubj: 'Ваш кабинет партнёра Vizamigo', mailBody: 'Ссылка на ваш персональный кабинет, где видны клики, бронирования и доход. Ссылка персональная, не передавайте её.', mailBtn: 'Открыть кабинет', lang: 'Язык'
+    mailSubj: 'Ваш кабинет партнёра Vizamigo', mailBody: 'Ссылка на ваш персональный кабинет, где видны клики, бронирования и доход. Ссылка персональная, не передавайте её.', mailBtn: 'Открыть кабинет', lang: 'Язык', apply: 'Ещё не партнёр? Подайте заявку в партнёрскую программу'
   },
   pt: {
     title: 'Painel do parceiro', link: 'Seu link pessoal', copy: 'Copiar', d7: '7 dias', d30: '30 dias', d90: '90 dias', all: 'Tudo', from: 'De', to: 'Até', show: 'Ver',
@@ -160,7 +160,7 @@ export const TX: Record<Lang, S> = {
     updated: 'Última atualização', bad: 'Este link não é válido. Digite seu e-mail abaixo e enviaremos o seu link.', err: 'Não foi possível carregar o painel. Tente novamente em alguns minutos.', tz: 'Horário da Turquia (GMT+3)',
     loginTitle: 'Acesso de parceiros', loginText: 'Se você é parceiro da Vizamigo, digite o e-mail que usa conosco e enviaremos o link do seu painel.', email: 'Seu e-mail', send: 'Enviar link',
     sent: 'Se este e-mail estiver cadastrado, enviamos o link. Confira sua caixa de entrada (e o spam).',
-    mailSubj: 'Seu painel de parceiro Vizamigo', mailBody: 'Este é o link do seu painel pessoal, onde você vê cliques, reservas e ganhos. O link é pessoal; não o compartilhe.', mailBtn: 'Abrir painel', lang: 'Idioma'
+    mailSubj: 'Seu painel de parceiro Vizamigo', mailBody: 'Este é o link do seu painel pessoal, onde você vê cliques, reservas e ganhos. O link é pessoal; não o compartilhe.', mailBtn: 'Abrir painel', lang: 'Idioma', apply: 'Ainda não é parceiro? Inscreva-se no programa'
   }
 };
 

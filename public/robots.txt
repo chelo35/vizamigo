@@ -28,6 +28,7 @@ Disallow: /api/
 Disallow: /backend/
 Disallow: /admin/
 Disallow: /ortak/
+Allow: /ortak/basvuru
 Disallow: /staging/
 Disallow: /mock/
 Disallow: /mock-data/
