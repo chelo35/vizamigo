@@ -73,7 +73,7 @@ async function main() {
   };
   const { getCountryVisual, getOptimizedImageUrl } = await import('../src/data/countryVisuals');
   const { generateCountryJsonLd } = await import('../src/utils/countrySchemaGenerator');
-  const { GUIDE_IDS, GUIDE_META, getGuide, guideGroups, guideIdsFor, sourceLabel } = await import('../src/data/guides');
+  const { GUIDE_IDS, GUIDE_META, getGuide, guideGroups, guideIdsFor, sourceLabel, keyGuidesForCountry } = await import('../src/data/guides');
   const { BEST_MONTHS, WTG_IDS, isWtgId, wtgMonth, wtgIdFor, wtgCountries, wtgHeads, wtgMonthName, buildWtgFaq } = await import('../src/data/whereToGo');
   const { festivalWhen } = await import('../src/data/festivalGuide');
 
@@ -440,6 +440,12 @@ async function main() {
         : '';
       const meta = getCountrySeoMeta(code, lang as never, pass);
       const name = getCountryName(code, lang);
+      // Değerli rehberlere doğal iç bağlantı (EES, UK ETA, Schengen evrakları, vize ücretleri, sigorta)
+      const kCat = code === pass ? 'own' : getPassportItems(pass).find((x) => x.c === code)?.cat;
+      const kGuides = code === pass ? [] : keyGuidesForCountry(code, lang, pass, kCat);
+      const INS: Record<string, string> = { tr: 'Seyahat sağlık sigortası', en: 'Travel insurance', de: 'Reisekrankenversicherung', es: 'Seguro de viaje', ru: 'Страховка для поездки', pt: 'Seguro viagem' };
+      const GH: Record<string, string> = { tr: 'İlgili rehberler', en: 'Related guides', de: 'Passende Ratgeber', es: 'Guías relacionadas', ru: 'Полезные гиды', pt: 'Guias relacionados' };
+      const guideNav = code === pass ? '' : `<h2>${esc(GH[lang] || GH.en)}</h2><p>${[...kGuides.map((g) => `<a href="/${lang}/info/${g}">${esc(getGuide(g, lang).title.replace(/\s*\|\s*Vizamigo\s*$/, ''))}</a>`), `<a href="/${lang}/info/insurance">${esc(INS[lang] || INS.en)}</a>`].join(' · ')}</p>`;
       const reg = countryToRegion[code] || '';
       const region = getRegionName(reg, lang);
       const cap = (GEO_DATA as Record<string, { capital?: string }>)[code]?.capital;
@@ -501,7 +507,7 @@ async function main() {
           const s720 = getOptimizedImageUrl(v.image, { width: 720 });
           return `<section class="vzs-chero"><img src="${s720}" srcset="${s480} 480w, ${s720} 720w" sizes="100vw" alt="${esc([name, v.landmark].filter(Boolean).join(': '))}" fetchpriority="high" /><div class="vzs-wrap vzs-chero-in">${eyebrow(lang, [EYEBROW[lang], region])}${h1(name, meta.h1.replace(name, '').replace(/^[\s:—–-]+|[\s:—–-]+$/g, '').replace(/\s+(?:(?:de|para|por|en|em)(?:\s+(?:o|a|os|as|el|la|los|las))?|do|da|dos|das|no|na|nos|nas)$/i, '').trim())}${cap ? `<p>${esc(capitalName(code, lang, cap))}</p>` : ''}</div></section>`;
         })(),
-        nav: navBlock(lang, `${lead(meta.description)}${trustHtml}${briefHtml}${factsHtml(code, lang)}${festHtml(code, lang)}${wtgHtml(code, lang)}${faqHtml}${ppNav}<p>${homeLink(lang)} · ${tabLinks(lang)}</p>${near.length ? `<h2>${esc(UI[lang].region)}</h2><p>${countryLinks(lang, near)}</p>` : ''}`)
+        nav: navBlock(lang, `${lead(meta.description)}${trustHtml}${briefHtml}${factsHtml(code, lang)}${festHtml(code, lang)}${wtgHtml(code, lang)}${faqHtml}${guideNav}${ppNav}<p>${homeLink(lang)} · ${tabLinks(lang)}</p>${near.length ? `<h2>${esc(UI[lang].region)}</h2><p>${countryLinks(lang, near)}</p>` : ''}`)
       })));
       n++;
     };

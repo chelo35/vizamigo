@@ -460,3 +460,22 @@ const SOURCE_LABELS: Record<string, Partial<Record<'en' | 'de' | 'es' | 'ru' | '
 export function sourceLabel(label: string, lang: string): string {
   return lang === 'tr' ? label : SOURCE_LABELS[label]?.[lang as 'en'] || label;
 }
+
+/**
+ * Ülke sayfasının üst bölümünde ve önceden işlenmiş HTML'de gösterilen değerli rehberler (iç bağlantı).
+ * Ülke sayfasındaki rehber listesiyle aynı süzgeç; vize gerekiyorsa vize ücretleri rehberi de eklenir.
+ */
+export const keyGuidesForCountry = (code: string, lang: string, passport: string, cat?: string): GuideId[] => {
+  const ok = (g: GuideId) =>
+    (g !== 'greek_islands_visa' || passport === 'TR') &&
+    (g !== 'schengen_documents' || cat === 'visa') &&
+    (g !== 'etias' || cat !== 'visa') &&
+    (g !== 'us_visa' || cat === 'visa') &&
+    (g !== 'esta' || cat !== 'visa') &&
+    (g !== 'uk_eta' || cat !== 'visa');
+  const list = guidesForCountry(code, lang, passport).filter((g) => ok(g) && g !== 'festival_calendar');
+  const PRI: GuideId[] = ['ees', 'uk_eta', 'schengen_documents', 'etias', 'esta', 'us_visa'];
+  list.sort((a, b) => (PRI.indexOf(a) < 0 ? 99 : PRI.indexOf(a)) - (PRI.indexOf(b) < 0 ? 99 : PRI.indexOf(b)));
+  if ((cat === 'visa' || cat === 'evisa') && (!GUIDE_META.visa_fees.langs || GUIDE_META.visa_fees.langs.includes(lang)) && !list.includes('visa_fees')) list.push('visa_fees');
+  return list;
+};

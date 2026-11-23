@@ -32,7 +32,7 @@ import { getCountryGeography, GLOBAL_CURRENCIES } from '../data/countryGeography
 import { getConsularEmergencyInfo } from '../data/consularEmergencyData';
 import { getCountryConciergePlan } from '../data/travelConciergeEngine';
 import { FlightFrom } from './FlightPrice';
-import { GUIDE_META, getGuide, guidesForCountry } from '../data/guides';
+import { GUIDE_META, getGuide, guidesForCountry, keyGuidesForCountry } from '../data/guides';
 import { ALL_WORLD_HUBS, flagToIso } from '../data/worldHubs';
 import { getCrossRate, USD_RATES } from '../data/currencyRates';
 import { useLiveFx, useLiveWeather, liveWeatherKey, weatherCodeInfo } from '../utils/liveData';
@@ -810,13 +810,20 @@ const CountryPageInner: React.FC<Props & { data: CountryBundle }> = ({ code, pas
             <Stat value={(isNew ? (insights.bestMonths || '').split(/[(;·]/)[0].trim() : insights.bestMonths) || '—'} label={l('En iyi aylar', 'Best months', 'Beste Monate', 'Mejores meses', 'Лучшие месяцы', 'Melhores meses')} icon="cal" tone="ok" />
           </div>
         </div>
-        {isNew && <TripBar passport={passport} trip={trip} setTrip={setTrip} onOpenPassport={onOpenPassport} />}
-
         <section className="vz-tldr" aria-label={l('Kısa cevap', 'Quick answer', 'Kurzantwort', 'Respuesta rápida', 'Коротко', 'Resposta rápida')}>
           <span className={`vz-ic tone-${passport === code ? 'ok' : visaTone(item)}`}><Icon name={passport !== code && visaTone(item) === 'warn' ? 'doc' : 'check'} size={22} /></span>
           <div className="vz-stack" style={{ gap: 6 }}>
             <b>{l(`${getCountryName(passport, language)} pasaportuyla ${name}`, `${name} with ${enArticle(getCountryName(passport, language))} ${getCountryName(passport, language)} passport`, `${name} mit Pass: ${getCountryName(passport, language)}`, `${name} con pasaporte de ${getCountryName(passport, language)}`, `${name}: паспорт ${getCountryName(passport, language)}`, `${name} com passaporte de ${getCountryName(passport, language)}`)}</b>
             <p>{passport === code ? l('Bu senin kendi ülken: vize gerekmez, kimlik kartın ya da pasaportunla girersin.', 'This is your own country: no visa needed, you enter with your ID card or passport.', 'Das ist dein eigenes Land: kein Visum nötig, Einreise mit Ausweis oder Pass.', 'Es tu propio país: no necesitas visado, entras con tu documento de identidad o pasaporte.', 'Это ваша страна: виза не нужна, въезд по удостоверению личности или паспорту.', 'É o seu próprio país: você não precisa de visto e entra com seu documento de identidade ou passaporte.') : answer}</p>
+            {passport !== code && (() => {
+              const kg = keyGuidesForCountry(code, language, passport, item?.cat).slice(0, 3);
+              return (
+                <span className="vz-tldr-guides" style={{ fontSize: 13.5 }}>
+                  {kg.map((g) => <span key={g}><a href={`/${language}/info/${g}`}>{getGuide(g, language).title.split(/[:|(]/)[0].trim()}</a> · </span>)}
+                  <a href={`/${language}/info/insurance`}>{l('Seyahat sağlık sigortası', 'Travel insurance', 'Reisekrankenversicherung', 'Seguro de viaje', 'Страховка для поездки', 'Seguro viagem')}</a>
+                </span>
+              );
+            })()}
             {passport !== code && <span className="vz-muted" style={{ fontSize: 12.5 }}>{l('Vizamigo editörlüğü tarafından kontrol edildi', 'Checked by the Vizamigo editorial team', 'Geprüft von der Vizamigo-Redaktion', 'Revisado por el equipo editorial de Vizamigo', 'Проверено редакцией Vizamigo', 'Revisado pela equipe editorial da Vizamigo')} · <a href={`/${language}/info/standards`}>{l('Bilgileri nasıl doğruluyoruz', 'How we verify', 'So prüfen wir', 'Cómo verificamos', 'Как мы проверяем', 'Como verificamos')}</a> · <a href={`/${language}/info/mission`}>{l('Hakkımızda', 'About us', 'Über uns', 'Sobre nosotros', 'О нас', 'Quem somos')}</a></span>}
             {passport !== code && (detail?.d ? (
               <span className="vz-muted" style={{ fontSize: 12.5 }}>{l('Son kontrol', 'Last checked', 'Zuletzt geprüft', 'Última revisión', 'Проверено', 'Última revisão')}: {checkedLabel(detail.d, language)}{detail.h ? ` · ${sourceHost(detail.h, language)}` : ''}</span>
@@ -825,6 +832,7 @@ const CountryPageInner: React.FC<Props & { data: CountryBundle }> = ({ code, pas
             ))}
           </div>
         </section>
+        {isNew && <TripBar passport={passport} trip={trip} setTrip={setTrip} onOpenPassport={onOpenPassport} />}
         {(() => {
           const br = getPassportBrief(code, passport, language);
           if (!br) return null;

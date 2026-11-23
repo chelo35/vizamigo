@@ -467,7 +467,7 @@ function getSerpAnswer(
         : cat === 'eta' ? `con pasaporte de ${P} hay que tramitar una autorización electrónica (${eta}) antes del viaje`
         : `con pasaporte de ${P} hay que solicitar la visa en el consulado antes del viaje`;
       return {
-        title: fitT([`Requisitos para viajar a ${C} 2026: ${short} con pasaporte de ${P}`, `Viajar a ${C} 2026: ${short} con pasaporte de ${P}`, `Viajar a ${C} 2026: ${short}`, `${C} 2026: ${short}`]),
+        title: fitT([`Requisitos para viajar a ${C} 2026: ${short} con pasaporte de ${P}`, `Requisitos para viajar a ${C} 2026: ${short}`, `¿Necesito visa para ${C}? ${short.charAt(0).toUpperCase() + short.slice(1)} (2026)`, `Viajar a ${C} 2026: ${short} con pasaporte de ${P}`, `Viajar a ${C} 2026: ${short}`, `${C} 2026: ${short}`]),
         description: fitD(`${CC}: ${long}.`, ['Fuente oficial, nivel de seguridad, teléfonos de emergencia, itinerario, vuelos y hoteles baratos.', 'Fuente oficial, emergencias, ruta y precios.', 'Fuente oficial y precios.'])
       };
     }
@@ -479,7 +479,7 @@ function getSerpAnswer(
         : cat === 'eta' ? `com passaporte de ${P} é preciso solicitar uma autorização eletrônica (${eta}) antes da viagem`
         : `com passaporte de ${P} é preciso pedir o visto no consulado antes da viagem`;
       return {
-        title: fitT([`Precisa de visto para ${C}? 2026: ${short} com passaporte de ${P}`, `Viagem para ${C} 2026: ${short} com passaporte de ${P}`, `Viagem para ${C} 2026: ${short}`, `${C} 2026: ${short}`].map(ptArticles)),
+        title: fitT([`Precisa de visto para ${C}? 2026: ${short} com passaporte de ${P}`, `Precisa de visto para ${C}? ${short.charAt(0).toUpperCase() + short.slice(1)} (2026)`, `Viagem para ${C} 2026: ${short} com passaporte de ${P}`, `Viagem para ${C} 2026: ${short}`, `${C} 2026: ${short}`].map(ptArticles)),
         description: fitD(ptArticles(`${CC}: ${long}.`), ['Fonte oficial, nível de segurança, telefones de emergência, roteiro, voos e hotéis baratos.', 'Fonte oficial, emergências, roteiro e preços.', 'Fonte oficial e preços.'])
       };
     }
