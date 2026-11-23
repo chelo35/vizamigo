@@ -253,6 +253,7 @@ async function daisycon(from: string, to: string): Promise<Raw[]> {
     const r = await fetch(`https://services.daisycon.com/publishers/${pid}/transactions?start=${from}&end=${to}&page=${page}&per_page=1000`, { headers: { Authorization: `Bearer ${tok}` } });
     const t = await r.text();
     if (!r.ok) throw new Error(`daisycon ${r.status} ${t.slice(0, 150)}`);
+    if (!t.trim()) break; // 204: işlem yok
     const list = JSON.parse(t) as Record<string, unknown>[];
     for (const x of list) {
       const parts = ((x.parts as Record<string, unknown>[]) || [x]);
