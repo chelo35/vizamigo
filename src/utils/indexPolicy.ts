@@ -12,7 +12,8 @@ export const NOINDEX_SECONDARY_PASSPORTS: Record<string, string[]> = {
   de: ['osterreich', 'schweiz'],
   en: ['canada', 'united-kingdom', 'india', 'australia'],
   es: ['colombia', 'mexico', 'argentina'],
-  ru: ['ukraina', 'kazakhstan']
+  ru: ['ukraina', 'kazakhstan'],
+  pt: ['portugal']
 };
 
 /** Yolun (ör. "/de/argentinien/schweiz" ya da tam URL) dizin dışı tutulması gerekiyorsa true. */

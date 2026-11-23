@@ -72,6 +72,16 @@ export function loadCountryBundle(code: string, lang: string): Promise<CountryBu
   const hit = cache.get(key);
   if (hit) return hit;
   const p = (async () => {
+    // Önceden işlenmiş sayfada veri HTML'e gömülü (vz-cdata): ilk açılışta ağ isteği yapma
+    try {
+      const el = typeof document !== 'undefined' ? document.getElementById('vz-cdata') : null;
+      if (el) {
+        const d = JSON.parse(el.textContent || '{}');
+        if (d.code === code && d.lang === lang && d.x && d.l && d.plugs) return { ...d.x, ...d.l, plugs: d.plugs } as CountryBundle;
+      }
+    } catch {
+      /* gömülü veri okunamazsa ağdan yükle */
+    }
     const [shared, local, plugs] = await Promise.all([
       getJson<Pick<CountryBundle, 'intel' | 'verified' | 'apps' | 'official'>>(`/data/country/x/${code}.json`),
       getJson<Pick<CountryBundle, 'insights' | 'enc' | 'itin'>>(`/data/country/${lang}/${code}.json`),

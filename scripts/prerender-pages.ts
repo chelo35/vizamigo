@@ -155,6 +155,17 @@ async function main() {
   const tabLinks = (lang: string) => TABS.map((t) => `<a href="${buildLocalizedPath(lang as never, t, null)}">${esc(tabName(t, lang))}</a>`).join(' · ');
   const countryLinks = (lang: string, codes: string[]) =>
     codes.map((c) => `<a href="${buildLocalizedPath(lang as never, 'explore', c)}">${esc(getCountryName(c, lang))}</a>`).join(' · ');
+  // Ülke sayfasının ihtiyaç duyduğu veri HTML'e gömülür: Googlebot ve ziyaretçi sayfayı açarken ayrıca 3 JSON isteği yapmaz
+  const INLINE_X: Record<string, string> = {};
+  const INLINE_L: Record<string, Record<string, string>> = {};
+  let INLINE_PLUGS = '';
+  const withCountryData = (code: string, lang: string, html: string) => {
+    const x = INLINE_X[code], l = INLINE_L[lang]?.[code];
+    if (!x || !l || !INLINE_PLUGS) return html;
+    const json = `{"code":${JSON.stringify(code)},"lang":${JSON.stringify(lang)},"x":${x},"l":${l},"plugs":${INLINE_PLUGS}}`.replace(/</g, '\\u003c');
+    return html.replace('</head>', () => `<script type="application/json" id="vz-cdata">${json}</script>\n  </head>`);
+  };
+  const LANG_NATIVE: Record<string, string> = { tr: 'Türkçe', en: 'English', de: 'Deutsch', es: 'Español', ru: 'Русский', pt: 'Português' };
   const navBlock = (lang: string, inner: string) => `<nav class="vzs-wrap vzs-links" aria-label="${esc(UI[lang].countries)}">${inner}</nav>`;
   const homeLink = (lang: string) => `<a href="${buildLocalizedPath(lang as never, 'explore', null)}">${esc(UI[lang].home)}</a>`;
   const eyebrow = (lang: string, parts: string[]) => `<span class="vzs-eye">${esc(parts.filter(Boolean).join(' · ').toLocaleUpperCase(lang))}</span>`;
@@ -173,6 +184,15 @@ async function main() {
   type Opts = { lang: string; canonical: string; alts: { hreflang: string; href: string }[]; title: string; desc?: string; body?: string; nav?: string; noindex?: boolean; head?: string; hero?: string; ogImage?: string; ogAlt?: string };
   const build = ({ lang, canonical, alts, title, desc = '', body = '', nav = '', noindex, head = '', hero = '', ogImage, ogAlt }: Opts) => {
     let html = tpl;
+    // Dil değiştirici: tarayıcıların takip edebileceği gerçek <a href> bağlantıları (dizin dışı sayfalara asla bağlanmaz)
+    const langLinks = alts
+      .filter((a) => a.hreflang !== 'x-default' && a.hreflang !== lang && !isNoindexPath(a.href))
+      .map((a) => `<a href="${a.href.replace(BASE_URL, '') || '/'}" hreflang="${a.hreflang}" lang="${a.hreflang}">${LANG_NATIVE[a.hreflang] || a.hreflang}</a>`)
+      .join(' · ');
+    if (langLinks) {
+      const langP = `<p class="vzs-langs">${langLinks}</p>`;
+      nav = nav ? nav.replace(/<\/nav>$/, `${langP}</nav>`) : `<nav class="vzs-wrap vzs-links" aria-label="Language">${langP}</nav>`;
+    }
     if (ogImage) {
       // ülkeye özel paylaşım görseli (sosyal medyada ve aramada daha çok tıklanır)
       html = html.replace(/(<meta property="og:image" content=")[^"]*(")/, (_m, a, b) => `${a}${ogImage}${b}`);
@@ -273,7 +293,8 @@ async function main() {
       const intel = trIntelFix ? deepMerge(intel0, trIntelFix) : intel0;
       plugs[code] = intel.plugs.types;
       const insEn = getCountryInsights(code, 'en');
-      write(path.join('data', 'country', 'x', `${code}.json`), JSON.stringify({ intel, verified: getVerifiedCountryRecord(code), official: getOfficialAdvisories(code), apps: getCountryNomadApps(code, insEn.transport.popularRideApps || []) }));
+      INLINE_X[code] = JSON.stringify({ intel, verified: getVerifiedCountryRecord(code), official: getOfficialAdvisories(code), apps: getCountryNomadApps(code, insEn.transport.popularRideApps || []) });
+      write(path.join('data', 'country', 'x', `${code}.json`), INLINE_X[code]);
       files++;
       for (const lang of LANGS) {
         const local = { insights: getCountryInsights(code, lang), enc: getCountryEncyclopedia(code, lang as never), itin: getCountryItinerary(code, lang as never) };
@@ -297,12 +318,15 @@ async function main() {
           const cu = (out as { enc?: { culture?: Record<string, unknown> } }).enc?.culture;
           if (cu && Array.isArray(cu.festivals)) { const fg = getFestivalGuide(FG[code], lang, cu.festivals as string[]); if (fg.cards.length) { cu.festivalCards = fg.cards; cu.festivalRest = fg.rest; } }
         }
-        write(path.join('data', 'country', lang, `${code}.json`), lang === 'pt' ? ptArticles(JSON.stringify(out)) : JSON.stringify(out));
+        const localStr = lang === 'pt' ? ptArticles(JSON.stringify(out)) : JSON.stringify(out);
+        (INLINE_L[lang] ||= {})[code] = localStr;
+        write(path.join('data', 'country', lang, `${code}.json`), localStr);
         (CDATA[lang] ||= {})[code] = lang === 'tr' && !(out as { intel?: unknown }).intel ? { ...out, intel } : out;
         files++;
       }
     }
-    write(path.join('data', 'plugs.json'), JSON.stringify(plugs));
+    INLINE_PLUGS = JSON.stringify(plugs);
+    write(path.join('data', 'plugs.json'), INLINE_PLUGS);
     // takip e-postaları (api/alerts) için: pasaport başına vize durumu ve ülke adresleri
     {
       const { getCountrySlug } = await import('../src/utils/countrySlugs');
@@ -453,7 +477,7 @@ async function main() {
       const briefHtml = br
         ? `<section class="vzs-brief"><h2>${esc(br.title)}</h2><p>${esc(br.intro)}</p><dl>${br.rows.map((r) => `<dt>${esc(r.k)}</dt><dd>${esc(r.v)}${r.href ? ` · <a href="${esc(r.href)}" rel="noopener">${esc(r.linkText || r.href)}</a>` : ''}</dd>`).join('')}</dl>${br.compare.length > 1 ? `<h3>${esc(br.compareTitle)}</h3><ul>${br.compare.map((c) => `<li>${c.current ? `<b>${esc(c.name)}</b>` : `<a href="${c.pass === LANG_PASS[lang as 'en'] ? buildLocalizedPath(lang as never, 'explore', code) : buildPassportPath(lang as never, code, c.pass)}">${esc(c.name)}</a>`}: ${esc(c.label)}</li>`).join('')}</ul>` : ''}</section>`
         : '';
-      write(path.join(relPath, 'index.html'), build({
+      write(path.join(relPath, 'index.html'), withCountryData(code, lang, build({
         lang,
         canonical: BASE_URL + relPath,
         alts: passPage ? [{ hreflang: lang, href: BASE_URL + relPath }] : getHreflangAlternatesForRoute('explore', code),
@@ -478,7 +502,7 @@ async function main() {
           return `<section class="vzs-chero"><img src="${s720}" srcset="${s480} 480w, ${s720} 720w" sizes="100vw" alt="${esc([name, v.landmark].filter(Boolean).join(': '))}" fetchpriority="high" /><div class="vzs-wrap vzs-chero-in">${eyebrow(lang, [EYEBROW[lang], region])}${h1(name, meta.h1.replace(name, '').replace(/^[\s:—–-]+|[\s:—–-]+$/g, '').replace(/\s+(?:(?:de|para|por|en|em)(?:\s+(?:o|a|os|as|el|la|los|las))?|do|da|dos|das|no|na|nos|nas)$/i, '').trim())}${cap ? `<p>${esc(capitalName(code, lang, cap))}</p>` : ''}</div></section>`;
         })(),
         nav: navBlock(lang, `${lead(meta.description)}${trustHtml}${briefHtml}${factsHtml(code, lang)}${festHtml(code, lang)}${wtgHtml(code, lang)}${faqHtml}${ppNav}<p>${homeLink(lang)} · ${tabLinks(lang)}</p>${near.length ? `<h2>${esc(UI[lang].region)}</h2><p>${countryLinks(lang, near)}</p>` : ''}`)
-      }));
+      })));
       n++;
     };
     for (const code of allCodes) {
@@ -622,6 +646,16 @@ async function main() {
   }
 
   // olmayan adresler için; arama motoru dizine almasın
+  {
+    // Kök sayfa (/) Vite şablonudur; dil ana sayfalarına gerçek bağlantılar ekle
+    const rootPath = path.join(DIST, 'index.html');
+    let root = fs.readFileSync(rootPath, 'utf8');
+    if (!root.includes('class="vzs-langs"')) {
+      const links = CORE_SEO_LANGUAGES.map((l: string) => `<a href="/${l}" hreflang="${l}" lang="${l}">${LANG_NATIVE[l] || l}</a>`).join(' · ');
+      root = root.replace('<div class="vzs-sea"></div></section>', () => `<div class="vzs-sea"></div></section><nav class="vzs-wrap vzs-links" aria-label="Language"><p class="vzs-langs">${links}</p></nav>`);
+      fs.writeFileSync(rootPath, root);
+    }
+  }
   write('404.html', build({ lang: 'tr', canonical: `${BASE_URL}/`, alts: getHreflangAlternatesForRoute('explore', null), title: 'Sayfa bulunamadı | Vizamigo', noindex: true }));
 
   // manifest yalnızca derleme içindi; yayına çıkmasın
