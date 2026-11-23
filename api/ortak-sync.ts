@@ -170,7 +170,7 @@ async function cj(from: string, to: string): Promise<Raw[]> {
   const out: Raw[] = [];
   for (let s = new Date(`${from}T00:00:00Z`); ymd(s) <= to; s = new Date(s.getTime() + 30 * 864e5)) {
     const e = new Date(Math.min(s.getTime() + 30 * 864e5, new Date(`${to}T00:00:00Z`).getTime() + 864e5));
-    const query = `{ publisherCommissions(forPublishers: ["${pid}"], sincePostingDate: "${s.toISOString().slice(0, 19)}Z", beforePostingDate: "${e.toISOString().slice(0, 19)}Z") { records { commissionId shopperId eventDate postingDate actionStatus advertiserName saleAmountPubCurrency pubCommissionAmountPubCurrency pubCurrency } } }`;
+    const query = `{ publisherCommissions(forPublishers: ["${pid}"], sincePostingDate: "${s.toISOString().slice(0, 19)}Z", beforePostingDate: "${e.toISOString().slice(0, 19)}Z") { records { commissionId shopperId eventDate postingDate actionStatus advertiserName saleAmountPubCurrency pubCommissionAmountPubCurrency } } }`;
     const r = await fetch('https://commissions.api.cj.com/query', { method: 'POST', headers: { Authorization: `Bearer ${T}`, 'Content-Type': 'application/json' }, body: JSON.stringify({ query }) });
     const t = await r.text();
     if (!r.ok) throw new Error(`cj ${r.status} ${t.slice(0, 150)}`);
@@ -180,7 +180,7 @@ async function cj(from: string, to: string): Promise<Raw[]> {
       const com = num(c.pubCommissionAmountPubCurrency);
       out.push({
         id: `cj-${c.commissionId}`, tag: String(c.shopperId || ''), network: 'cj', partnerName: String(c.advertiserName || ''), booked: day(c.eventDate || c.postingDate),
-        amount: num(c.saleAmountPubCurrency), commission: com, currency: String(c.pubCurrency || 'USD'),
+        amount: num(c.saleAmountPubCurrency), commission: com, currency: env.CJ_CURRENCY || "USD",
         status: com !== null && com < 0 ? 'cancelled' : /closed|locked/.test(st) ? 'approved' : 'pending'
       });
     }
@@ -210,7 +210,8 @@ export default async function handler(req: Request): Promise<Response> {
   };
 
   const sources: Record<string, () => Promise<Raw[]>> = {
-    travelpayouts: () => travelpayouts(from), stay22: () => stay22(from, to), awin: () => awin(from, to), admitad: () => admitad(from, to), cj: () => cj(from, to)
+    // Stay22 en fazla 1 yıllık aralık kabul ediyor
+    travelpayouts: () => travelpayouts(from), stay22: () => stay22(from > ymd(new Date(Date.now() - 364 * 864e5)) ? from : ymd(new Date(Date.now() - 364 * 864e5)), to), awin: () => awin(from, to), admitad: () => admitad(from, to), cj: () => cj(from, to)
   };
   const report: Record<string, unknown> = {};
   const raws: Raw[] = [];
