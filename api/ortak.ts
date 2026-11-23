@@ -124,7 +124,7 @@ function chart(days: string[], v: Record<string, number>, o: Record<string, numb
     const a = v[d] || 0, b = o[d] || 0;
     if (a) s += `<rect x="${x + bw * 0.1}" y="${y(a)}" width="${w}" height="${H - 22 - y(a)}" rx="2" fill="var(--brand)"><title>${d}: ${a}</title></rect>`;
     if (b) s += `<rect x="${x + bw * 0.1 + w}" y="${y(b)}" width="${w}" height="${H - 22 - y(b)}" rx="2" fill="var(--acc)"><title>${d}: ${b}</title></rect>`;
-    if (n <= 31 ? i % Math.ceil(n / 8) === 0 : i % Math.ceil(n / 6) === 0) s += `<text x="${x}" y="${H - 6}" font-size="11" fill="var(--mut)">${d.slice(5).replace('-', '.')}</text>`;
+    if (n <= 31 ? i % Math.ceil(n / 8) === 0 : i % Math.ceil(n / 6) === 0) s += `<text x="${x}" y="${H - 6}" font-size="11" fill="var(--mut)">${d.slice(8)}.${d.slice(5, 7)}</text>`;
   });
   return s + '</svg>';
 }
