@@ -239,7 +239,15 @@ async function daisyconToken(): Promise<string> {
 }
 async function daisycon(from: string, to: string): Promise<Raw[]> {
   const tok = await daisyconToken();
-  const pid = env.DAISYCON_PUBLISHER_ID || '442794';
+  let pid = env.DAISYCON_PUBLISHER_ID || '';
+  if (!pid) {
+    const pr = await fetch('https://services.daisycon.com/publishers?page=1&per_page=10', { headers: { Authorization: `Bearer ${tok}` } });
+    const pt = await pr.text();
+    if (!pr.ok) throw new Error(`daisycon publishers ${pr.status} ${pt.slice(0, 150)}`);
+    const pl = JSON.parse(pt) as { id?: number }[];
+    pid = String(pl?.[0]?.id || '');
+    if (!pid) throw new Error(`daisycon no publisher ${pt.slice(0, 150)}`);
+  }
   const out: Raw[] = [];
   for (let page = 1; page < 50; page++) {
     const r = await fetch(`https://services.daisycon.com/publishers/${pid}/transactions?start=${from}&end=${to}&page=${page}&per_page=1000`, { headers: { Authorization: `Bearer ${tok}` } });
