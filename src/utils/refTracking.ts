@@ -3,7 +3,7 @@
  * - Kod 30 gün tarayıcıda saklanır (son tıklanan bağlantı geçerli).
  * - Ziyaretçi bir ortak bağlantısına tıklayınca kod, ağın alt kimlik alanına eklenir:
  *   Daisycon → ws, Awin → clickref, Admitad (/g/… bağlantıları) → subid, Stay22 → campaign (sonuna "-r-kod"), GetYourGuide (Stay22) → cmp,
- *   CJ (Daytrip) → sid, Viator → campaign, 12Go → sub_id, Travelpayouts (/api/tp) → sub_id (analytics.ts, başına "r-kod-").
+ *   CJ (Daytrip) → sid, Viator → campaign, 12Go → sub_id, TourRadar → utm_campaign, Travelpayouts (/api/tp) → sub_id (analytics.ts, başına "r-kod-").
  * - Raporlarda satışlar koda göre ayrılır; komisyonun payı aylık hesaplanır.
  * Desteklenmeyen: VisaHQ portalı (beyaz etiket) ve SafetyWing elçi bağlantısı (alt kimlik alanı yok).
  */
@@ -97,6 +97,10 @@ export function tagRef(url: string, ref = currentRef()): string {
     // Viator ortaklık bağlantısı: pid/mcid/medium'a dokunma, takip alanı campaign
     const c = u.searchParams.get('campaign') || '';
     if (!c.includes(tag)) u.searchParams.set('campaign', (c ? `${c}-${tag}` : tag).slice(0, 100));
+  } else if (is('tourradar.com') && u.searchParams.get('utm_source')) {
+    // TourRadar elçi bağlantısı: fenomen kodu utm_campaign'e eklenir
+    const c = u.searchParams.get('utm_campaign') || '';
+    if (!c.includes(tag)) u.searchParams.set('utm_campaign', (c ? `${c}-${tag}` : tag).slice(0, 100));
   } else if ((is('12go.asia') || is('12go.co')) && u.searchParams.get('z')) {
     // 12Go doğrudan ortaklık: alt kimlik alanı sub_id (rezervasyon raporunda görünür)
     const c = u.searchParams.get('sub_id') || '';

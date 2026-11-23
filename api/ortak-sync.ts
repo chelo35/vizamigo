@@ -1,5 +1,7 @@
 export const config = { runtime: 'edge' };
 
+import { partnerCat, partnerFromName } from './_catalog';
+
 /**
  * Fenomen paneli: Travelpayouts rezervasyonlarını (sub_id = r-<kod>-…) Supabase ref_bookings tablosuna aktarır.
  * Vercel Cron günde bir çağırır; panel de 3 saatten eski veride arka planda tetikleyebilir. İşlem tekrarlanabilir (upsert).
@@ -117,13 +119,16 @@ export default async function handler(req: Request): Promise<Response> {
       const status = keepPaid.has(id) ? 'paid' : state === 'paid' ? 'approved' : /cancel/.test(state) ? 'cancelled' : 'pending';
       const profit = profitFields.map((f) => num(r[f])).find((x) => x !== null && x > 0) ?? profitFields.map((f) => num(r[f])).find((x) => x !== null) ?? null;
       const cname = String(r.campaign_name_en || '').trim();
+      const pk = partnerFromName(cname);
+      const seg = String(r.sub_id).slice(2 + ref.length + 1);
       const eur = priceField === 'price_eur';
       out.push({
         id,
         ref,
         network: 'travelpayouts',
-        partner: cname || `TP #${r.campaign_id}`,
-        category: catOf(cname),
+        partner: pk !== 'unknown' ? pk : cname || `TP #${r.campaign_id}`,
+        category: pk !== 'unknown' ? partnerCat(pk) : catOf(cname),
+        page: seg && seg !== 'home' ? seg : '/',
         booked_at: day || null,
         amount_eur: eur ? num(r[priceField]) : null,
         commission_eur: profit,

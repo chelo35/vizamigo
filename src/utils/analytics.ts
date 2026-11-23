@@ -5,6 +5,7 @@
  */
 import { thirdPartyAllowed } from './consent';
 import { currentRef, refBeacon } from './refTracking';
+import { tpIdFromUrl } from '../data/tpPartners';
 
 const GA_ID = 'G-EF7BYQ70BG';
 type W = Window & { dataLayer?: unknown[]; gtag?: (...a: unknown[]) => void };
@@ -89,9 +90,12 @@ function onClick(e: MouseEvent): void {
   }
   if (!/^https?:$/.test(u.protocol) || u.hostname.endsWith('vizamigo.com') || u.hostname === location.hostname) return;
   // fenomen paneli: kodlu ziyaretçinin ortak siteye gidişi (çerez izninden bağımsız, kişisel veri yok)
-  // yalnızca koda bağlanmış (komisyonlu) ortak bağlantıları sayılır
+  // ortak firmaya giden her tıklama (TpId ile; komisyon kodu taşımayanlar panelde ayrıca belirtilir)
   const ref = currentRef();
-  if (ref && a.href.includes(`r-${ref}`)) refBeacon('out', partnerOf(u).slice(0, 80), ref);
+  if (ref) {
+    const pid = tpIdFromUrl(u.toString()) || tpIdFromUrl(a.href);
+    if (pid || a.href.includes(`r-${ref}`)) refBeacon('out', (pid || partnerOf(u)).slice(0, 80), ref);
+  }
   const g = (window as W).gtag;
   if (!g) return;
   const seg = location.pathname.split('/').filter(Boolean);

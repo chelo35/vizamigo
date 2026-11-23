@@ -144,6 +144,10 @@
   ],
   "rewrites": [
     {
+      "source": "/ortak",
+      "destination": "/api/ortak"
+    },
+    {
       "source": "/ortak/:k",
       "destination": "/api/ortak?k=:k"
     },

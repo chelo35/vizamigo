@@ -260,7 +260,8 @@ export const Footer: React.FC<{ onSelectTab: (t: TabKey) => void; onOpenInfo: (p
         { label: l('Hakkımızda', 'About us', 'Über uns', 'Sobre nosotros', 'О нас', 'Quem somos'), go: () => onOpenInfo('mission') },
         { label: l('Kullanım koşulları', 'Terms', 'Nutzungsbedingungen', 'Términos', 'Условия', 'Termos'), go: () => onOpenInfo('terms') },
         { label: l('Gizlilik', 'Privacy', 'Datenschutz', 'Privacidad', 'Конфиденциальность', 'Privacidade'), go: () => onOpenInfo('privacy') },
-        { label: l('Kaynaklarımız', 'Our sources', 'Quellen', 'Fuentes', 'Источники', 'Fontes'), go: () => onOpenInfo('standards') }
+        { label: l('Kaynaklarımız', 'Our sources', 'Quellen', 'Fuentes', 'Источники', 'Fontes'), go: () => onOpenInfo('standards') },
+        { label: l('Ortak girişi', 'Partner login', 'Partner-Login', 'Acceso de socios', 'Вход для партнёров', 'Acesso de parceiros'), go: () => { window.location.href = `/ortak?lang=${language}`; } }
       ]
     }
   ];
