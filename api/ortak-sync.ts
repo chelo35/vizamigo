@@ -55,7 +55,7 @@ export default async function handler(req: Request): Promise<Response> {
     const fl = (await tp('get_fields_list')) as { results?: { name?: string; field?: string }[] } | { name?: string }[];
     const arr = (Array.isArray(fl) ? fl : fl.results || []) as { name?: string; field?: string }[];
     const names = new Set(arr.map((f) => f.name || f.field || '').filter(Boolean));
-    const profitFields = ['profit_eur', 'paid_profit_eur', 'processing_profit_eur'].filter((f) => names.has(f));
+    const profitFields = names.size ? ['profit_eur', 'paid_profit_eur', 'processing_profit_eur'].filter((f) => names.has(f)) : ['paid_profit_eur'];
     const priceField = ['price_eur', 'price_usd'].find((f) => names.has(f)) || 'price_eur';
     const want = ['action_id', 'sub_id', 'state', 'date', 'campaign_id', priceField, ...profitFields].filter((f) => names.size === 0 || names.has(f));
     const from = new Date(Date.now() - days * 864e5).toISOString().slice(0, 10);
@@ -79,7 +79,7 @@ export default async function handler(req: Request): Promise<Response> {
     if (debug) {
       const camps: Record<string, number> = {};
       rows.forEach((r) => (camps[String(r.campaign_id)] = (camps[String(r.campaign_id)] || 0) + 1));
-      return json({ ok: true, fields: [...names].sort(), used: want, total: rows.length, withRef: mine.length, campaigns: camps });
+      return json({ ok: true, fields: [...names].sort(), raw: JSON.stringify(fl).slice(0, 1500), used: want, total: rows.length, withRef: mine.length, campaigns: camps });
     }
     if (!mine.length) return json({ ok: true, total: rows.length, upserted: 0 });
 
