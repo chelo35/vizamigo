@@ -227,7 +227,7 @@ export default async function handler(req: Request): Promise<Response> {
     `<div class="tw"><table><thead><tr><th>${t.date}</th><th>${t.cat}</th><th>${t.partner}</th><th>${t.page}</th><th class="n">${t.amount}</th><th class="n">${t.comm}</th><th class="n">${t.share}</th><th>${t.status}</th></tr></thead><tbody>${list
       .map((b) => {
         const com = conv(b.commission_eur, b.fx_try);
-        return `<tr><td>${b.booked_at ? `<a href="${dayLink(b.booked_at)}">${fmtDay(b.booked_at, lang)}</a>` : ''}</td><td>${esc(catName(bkCat(b)))}</td><td>${esc(pName(bkPartner(b)))}</td><td class="small">${esc(b.page || '—')}</td><td class="n">${money(conv(b.amount_eur, b.fx_try), lang, cur)}</td><td class="n">${money(com, lang, cur)}</td><td class="n"><b>${b.status === 'cancelled' ? '—' : money(com * share, lang, cur)}</b></td><td>${st(b.status)}</td></tr>`;
+        return `<tr><td>${b.booked_at ? `<a href="${dayLink(b.booked_at)}">${fmtDay(b.booked_at, lang)}</a>` : ''}</td><td>${esc(catName(bkCat(b)))}</td><td>${esc(pName(bkPartner(b)))}</td><td class="small">${esc(b.page ? (b.page.startsWith('/') ? b.page : `/${b.page}`) : '—')}</td><td class="n">${money(conv(b.amount_eur, b.fx_try), lang, cur)}</td><td class="n">${money(com, lang, cur)}</td><td class="n"><b>${b.status === 'cancelled' ? '—' : money(com * share, lang, cur)}</b></td><td>${st(b.status)}</td></tr>`;
       })
       .join('')}</tbody></table></div>`;
 
