@@ -11,8 +11,10 @@ import { partnerCat, partnerFromName } from './_catalog';
  *   Awin           AWIN_API_TOKEN [AWIN_PUBLISHER_ID=3138284] (clickRef = r-<kod>)
  *   Admitad        ADMITAD_CLIENT_ID + ADMITAD_CLIENT_SECRET (subid = r-<kod>)
  *   CJ             CJ_API_TOKEN [CJ_PUBLISHER_ID=7817772]    (sid → shopperId = r-<kod>)
+ *   Viator         VIATOR_API_KEY (campaignValue; komisyon %8 tahmini)
+ *   Daisycon       DAISYCON_CLIENT_ID + DAISYCON_CLIENT_SECRET, ilk bağlantı /api/daisycon-auth (ws → subid)
  * Durum: bekleyen → pending, ağ onayladı → approved, iptal/ret → cancelled; elle "paid" yapılan satır korunur.
- * TourRadar, 12Go, Viator, Daisycon: API yok/kapalı — panellerinden elle (ya da görevle) girilir.
+ * TourRadar, 12Go: API yok — sorulduysa cevaba göre eklenecek.
  */
 const env = (globalThis as { process?: { env?: Record<string, string | undefined> } }).process?.env || {};
 const SB = env.SUPABASE_URL || 'https://utlnjyquflfcvjhmgopq.supabase.co';
@@ -188,6 +190,81 @@ async function cj(from: string, to: string): Promise<Raw[]> {
   return out;
 }
 
+async function viator(from: string): Promise<Raw[]> {
+  const K = env.VIATOR_API_KEY;
+  if (!K) throw new Error('no VIATOR_API_KEY');
+  const h = { 'exp-api-key': K, Accept: 'application/json;version=2.0', 'Accept-Language': 'en-US' };
+  const out: Raw[] = [];
+  const since = new Date(Math.max(new Date(`${from}T00:00:00Z`).getTime(), Date.UTC(2025, 8, 1, 6))).toISOString();
+  let url = `https://api.viator.com/partner/bookings/modified-since?modified-since=${encodeURIComponent(since)}&count=50`;
+  const seen: Record<string, Raw> = {};
+  for (let i = 0; i < 200 && url; i++) {
+    const r = await fetch(url, { headers: h });
+    const t = await r.text();
+    if (!r.ok) throw new Error(`viator ${r.status} ${t.slice(0, 150)}`);
+    const j = JSON.parse(t) as { bookings?: Record<string, unknown>[]; nextCursor?: string };
+    for (const b of j.bookings || []) {
+      const ev = String(b.eventType || '').toUpperCase();
+      const ref = String(b.transactionRef || b.bookingRef || b.partnerBookingRef || '');
+      const price = (b.totalPrice || {}) as Record<string, unknown>;
+      const amount = num(typeof b.totalPrice === 'object' ? (price.price as Record<string, unknown> | undefined)?.recommendedRetailPrice ?? price.amount ?? price.value : b.totalPrice);
+      // Viator API komisyon vermiyor: ortaklık oranı %8 üzerinden tahmin (panelde "beklemede" görünür, ödeme raporu esas alınır)
+      seen[ref] = {
+        id: `via-${ref}`, tag: String(b.campaignValue || b.campaign || ''), network: 'viator', partnerName: 'Viator',
+        booked: day(b.bookingDate || b.createdAt || b.lastUpdated), amount, commission: amount !== null ? amount * Number(env.VIATOR_RATE || 0.08) : null,
+        currency: String(b.currency || price.currency || 'USD'),
+        status: /CANCEL|REJECT/.test(ev) ? 'cancelled' : 'pending'
+      };
+    }
+    url = j.nextCursor ? `https://api.viator.com/partner/bookings/modified-since?cursor=${encodeURIComponent(j.nextCursor)}&count=50` : '';
+    if (!(j.bookings || []).length) break;
+  }
+  return Object.values(seen);
+}
+
+// Daisycon: OAuth (yetkilendirme kodu + PKCE). İlk bağlantı /api/daisycon-auth ile yapılır; yenileme anahtarı her kullanımda değişir, Supabase ref_secrets'ta saklanır.
+async function daisyconToken(): Promise<string> {
+  const id = env.DAISYCON_CLIENT_ID, sec = env.DAISYCON_CLIENT_SECRET;
+  if (!id || !sec) throw new Error('no DAISYCON_CLIENT_ID/SECRET');
+  const row = ((await (await fetch(`${SB}/rest/v1/ref_secrets?key=eq.daisycon_refresh&select=value`, { headers: sbh })).json()) as { value: string }[])[0];
+  if (!row?.value) throw new Error('daisycon not connected (open /api/daisycon-auth)');
+  const r = await fetch('https://login.daisycon.com/oauth/access-token', {
+    method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    body: new URLSearchParams({ grant_type: 'refresh_token', refresh_token: row.value, client_id: id, client_secret: sec, redirect_uri: 'https://www.vizamigo.com/api/daisycon-auth' }).toString()
+  });
+  const j = (await r.json().catch(() => ({}))) as { access_token?: string; refresh_token?: string; error?: string };
+  if (!j.access_token) throw new Error(`daisycon token ${r.status} ${j.error || ''}`);
+  if (j.refresh_token) await fetch(`${SB}/rest/v1/ref_secrets?on_conflict=key`, { method: 'POST', headers: { ...sbh, Prefer: 'resolution=merge-duplicates,return=minimal' }, body: JSON.stringify({ key: 'daisycon_refresh', value: j.refresh_token, updated_at: new Date().toISOString() }) });
+  return j.access_token;
+}
+async function daisycon(from: string, to: string): Promise<Raw[]> {
+  const tok = await daisyconToken();
+  const pid = env.DAISYCON_PUBLISHER_ID || '442794';
+  const out: Raw[] = [];
+  for (let page = 1; page < 50; page++) {
+    const r = await fetch(`https://services.daisycon.com/publishers/${pid}/transactions?start=${from}&end=${to}&page=${page}&per_page=1000`, { headers: { Authorization: `Bearer ${tok}` } });
+    const t = await r.text();
+    if (!r.ok) throw new Error(`daisycon ${r.status} ${t.slice(0, 150)}`);
+    const list = JSON.parse(t) as Record<string, unknown>[];
+    for (const x of list) {
+      const parts = ((x.parts as Record<string, unknown>[]) || [x]);
+      for (const p of parts) {
+        const st = String(p.status || x.status || '').toLowerCase();
+        out.push({
+          id: `dc-${x.affiliatemarketing_id || x.id || x.transaction_id}-${p.id || ''}`,
+          tag: [p.subid, p.subid_2, p.subid_3, x.subid, x.ws, x.extra].map((v) => String(v || '')).join(' '),
+          network: 'daisycon', partnerName: String(x.program_name || p.program_name || x.program_id || ''),
+          booked: day(x.date || x.date_transaction || p.date), amount: num(p.revenue ?? x.revenue ?? p.amount), commission: num(p.commission ?? x.commission),
+          currency: String(p.currency_code || x.currency_code || 'EUR'),
+          status: /disapprov|declin/.test(st) ? 'cancelled' : st === 'approved' ? 'approved' : 'pending'
+        });
+      }
+    }
+    if (list.length < 1000) break;
+  }
+  return out;
+}
+
 export default async function handler(req: Request): Promise<Response> {
   if (!KEY) return json({ ok: false, error: 'env' }, 500);
   const q = new URL(req.url).searchParams;
@@ -211,7 +288,7 @@ export default async function handler(req: Request): Promise<Response> {
 
   const sources: Record<string, () => Promise<Raw[]>> = {
     // Stay22 en fazla 1 yıllık aralık kabul ediyor
-    travelpayouts: () => travelpayouts(from), stay22: () => stay22(from > ymd(new Date(Date.now() - 364 * 864e5)) ? from : ymd(new Date(Date.now() - 364 * 864e5)), to), awin: () => awin(from, to), admitad: () => admitad(from, to), cj: () => cj(from, to)
+    travelpayouts: () => travelpayouts(from), stay22: () => stay22(from > ymd(new Date(Date.now() - 364 * 864e5)) ? from : ymd(new Date(Date.now() - 364 * 864e5)), to), awin: () => awin(from, to), admitad: () => admitad(from, to), cj: () => cj(from, to), viator: () => viator(from), daisycon: () => daisycon(from, to)
   };
   const report: Record<string, unknown> = {};
   const raws: Raw[] = [];
