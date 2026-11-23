@@ -3,150 +3,246 @@ export const config = { runtime: 'edge' };
 import { partnerCat, partnerFromName } from './_catalog';
 
 /**
- * Fenomen paneli: Travelpayouts rezervasyonlarını (sub_id = r-<kod>-…) Supabase ref_bookings tablosuna aktarır.
- * Vercel Cron günde bir çağırır; panel de 3 saatten eski veride arka planda tetikleyebilir. İşlem tekrarlanabilir (upsert).
- * Durum eşlemesi: processing → pending, paid (TP onayladı) → approved, canceled → cancelled.
- * Elle "paid" (fenomene ödendi) yapılmış satırların durumu korunur.
- * Diğer ağlar (Stay22, Awin, Admitad, CJ, Daisycon, 12Go, Viator, GYG) şimdilik elle girilir (network alanı ile).
+ * Fenomen paneli: ortak ağlarındaki rezervasyonları (alt kimlikte "r-<kod>") Supabase ref_bookings tablosuna aktarır.
+ * Vercel Cron günde bir çağırır; ?debug=1 ağ başına özet, ?days=N geriye dönük gün sayısı (varsayılan 120).
+ * Her ağ yalnız kendi anahtarı Vercel ortam değişkenlerinde varsa çalışır:
+ *   Travelpayouts  TRAVELPAYOUTS_TOKEN                       (sub_id = r-<kod>-<sayfa>)
+ *   Stay22         STAY22_API_KEY [STAY22_API_BASE]          (campaign = …-r-<kod>)
+ *   Awin           AWIN_API_TOKEN [AWIN_PUBLISHER_ID=3138284] (clickRef = r-<kod>)
+ *   Admitad        ADMITAD_CLIENT_ID + ADMITAD_CLIENT_SECRET (subid = r-<kod>)
+ *   CJ             CJ_API_TOKEN [CJ_PUBLISHER_ID=7817772]    (sid → shopperId = r-<kod>)
+ * Durum: bekleyen → pending, ağ onayladı → approved, iptal/ret → cancelled; elle "paid" yapılan satır korunur.
+ * TourRadar, 12Go, Viator, Daisycon: API yok/kapalı — panellerinden elle (ya da görevle) girilir.
  */
 const env = (globalThis as { process?: { env?: Record<string, string | undefined> } }).process?.env || {};
 const SB = env.SUPABASE_URL || 'https://utlnjyquflfcvjhmgopq.supabase.co';
 const KEY = env.SUPABASE_SERVICE_ROLE_KEY || '';
-const TP = env.TRAVELPAYOUTS_TOKEN || '';
-
-// Travelpayouts program adı → hizmet türü
-function catOf(name: string): string {
-  const n = name.toLowerCase();
-  if (/esim|yesim|airalo|saily|gigsky|drimsim/.test(n)) return 'esim';
-  if (/taxi|transfer|intui|welcome|daytrip/.test(n)) return 'transfer';
-  if (/bike|moto|scooter/.test(n)) return 'bike';
-  if (/rent|car|qeeq|economybookings|autoeurope/.test(n)) return 'car';
-  if (/klook|tiqets|wegotrip|go ?city|getyourguide|viator|kkday|tour|activit/.test(n)) return 'tour';
-  if (/train|bus|ferry|12go|rail/.test(n)) return 'train';
-  if (/hotel|booking|hostel|stay/.test(n)) return 'hotel';
-  if (/aviasales|kiwi|flight|air|jetradar/.test(n)) return 'flight';
-  return 'other';
-}
-
 const sbh = { apikey: KEY, Authorization: `Bearer ${KEY}`, 'Content-Type': 'application/json' };
 const json = (o: unknown, s = 200) => new Response(JSON.stringify(o), { status: s, headers: { 'Content-Type': 'application/json', 'Cache-Control': 'no-store' } });
-
-async function tp(path: string, body?: unknown) {
-  const r = await fetch(`https://api.travelpayouts.com/statistics/v1/${path}`, {
-    method: body ? 'POST' : 'GET',
-    headers: { 'X-Access-Token': TP, 'Content-Type': 'application/json' },
-    body: body ? JSON.stringify(body) : undefined
-  });
-  const t = await r.text();
-  if (!r.ok) throw new Error(`tp ${path} ${r.status} ${t.slice(0, 200)}`);
-  return JSON.parse(t);
-}
-
-const fxCache: Record<string, number> = {};
-async function fxTry(day: string): Promise<number | null> {
-  if (fxCache[day]) return fxCache[day];
-  try {
-    const r = await fetch(`https://api.frankfurter.app/${day}?from=EUR&to=TRY`);
-    const j = (await r.json()) as { rates?: { TRY?: number } };
-    if (j.rates?.TRY) return (fxCache[day] = j.rates.TRY);
-  } catch {}
-  return null;
-}
-
 const num = (x: unknown): number | null => {
   const n = typeof x === 'string' ? parseFloat(x) : typeof x === 'number' ? x : NaN;
   return Number.isFinite(n) ? n : null;
 };
+const day = (s: unknown) => String(s || '').slice(0, 10);
+const ymd = (d: Date) => d.toISOString().slice(0, 10);
+
+type Row = {
+  id: string; ref: string; network: string; partner: string; category: string; page: string | null; booked_at: string | null;
+  amount_eur: number | null; commission_eur: number | null; fx_try: number | null; status: string; updated_at: string;
+};
+type Raw = { id: string; tag: string; network: string; partnerName: string; booked: string; amount: number | null; commission: number | null; currency: string; status: 'pending' | 'approved' | 'cancelled' };
+
+// ---- kur (Frankfurter / ECB): günün EUR bazlı kurları ----
+const fxCache: Record<string, Record<string, number>> = {};
+async function rates(d: string): Promise<Record<string, number>> {
+  if (fxCache[d]) return fxCache[d];
+  try {
+    const j = (await (await fetch(`https://api.frankfurter.app/${d || 'latest'}?from=EUR`)).json()) as { rates?: Record<string, number> };
+    return (fxCache[d] = { EUR: 1, ...(j.rates || {}) });
+  } catch {
+    return (fxCache[d] = { EUR: 1 });
+  }
+}
+async function toEur(v: number | null, cur: string, d: string): Promise<number | null> {
+  if (v === null) return null;
+  const r = await rates(d);
+  const c = (cur || 'EUR').toUpperCase();
+  return r[c] ? v / r[c] : c === 'EUR' ? v : null;
+}
+
+// ---- kaynaklar ----
+async function travelpayouts(from: string): Promise<Raw[]> {
+  const T = env.TRAVELPAYOUTS_TOKEN;
+  if (!T) throw new Error('no TRAVELPAYOUTS_TOKEN');
+  const tp = async (path: string, body?: unknown) => {
+    const r = await fetch(`https://api.travelpayouts.com/statistics/v1/${path}`, { method: body ? 'POST' : 'GET', headers: { 'X-Access-Token': T, 'Content-Type': 'application/json' }, body: body ? JSON.stringify(body) : undefined });
+    const t = await r.text();
+    if (!r.ok) throw new Error(`tp ${path} ${r.status} ${t.slice(0, 150)}`);
+    return JSON.parse(t);
+  };
+  const fl = (await tp('get_fields_list')) as { fields?: { name?: string }[] };
+  const names = new Set((fl.fields || []).map((f) => f.name || ''));
+  const profit = ['paid_profit_eur', 'processing_profit_eur'].filter((f) => names.has(f));
+  const want = ['action_id', 'sub_id', 'state', 'date', 'campaign_id', 'campaign_name_en', 'price_eur', ...profit].filter((f) => !names.size || names.has(f));
+  const out: Raw[] = [];
+  for (let off = 0; off < 50000; off += 1000) {
+    const j = (await tp('execute_query', { fields: want, filters: [{ field: 'type', op: 'eq', value: 'action' }, { field: 'date', op: 'ge', value: from }], sort: [{ field: 'date', order: 'desc' }], offset: off, limit: 1000 })) as { results?: Record<string, unknown>[] };
+    for (const r of j.results || []) {
+      const st = String(r.state || '');
+      out.push({
+        id: `tp-${r.action_id}`, tag: String(r.sub_id || ''), network: 'travelpayouts', partnerName: String(r.campaign_name_en || ''),
+        booked: day(r.date), amount: num(r.price_eur), commission: profit.map((f) => num(r[f])).find((x) => x !== null && x !== 0) ?? 0, currency: 'EUR',
+        status: st === 'paid' ? 'approved' : /cancel/.test(st) ? 'cancelled' : 'pending'
+      });
+    }
+    if ((j.results || []).length < 1000) break;
+  }
+  return out;
+}
+
+async function stay22(from: string, to: string): Promise<Raw[]> {
+  const K = env.STAY22_API_KEY;
+  if (!K) throw new Error('no STAY22_API_KEY');
+  const base = env.STAY22_API_BASE || 'https://api.stay22.com';
+  const out: Raw[] = [];
+  for (let page = 0; page < 50; page++) {
+    const r = await fetch(`${base}/v1/reporting/transactions?format=json&dateFilter=bookedDate&startDate=${from}&endDate=${to}&limit=500&page=${page}&thirdParty=vizamigo`, { headers: { 'X-API-KEY': K } });
+    const t = await r.text();
+    if (!r.ok) throw new Error(`stay22 ${r.status} ${t.slice(0, 150)}`);
+    const data = ((JSON.parse(t) as { data?: Record<string, unknown>[] }).data || []);
+    for (const b of data) {
+      const tags = [String(b.campaignId || ''), ...((b.campaignIds as unknown[]) || []).map(String)].join(' ');
+      const st = String(b.bookingStatus || '').toLowerCase();
+      out.push({
+        id: `s22-${b.provider}-${b.bookingId}`, tag: tags, network: 'stay22', partnerName: String(b.provider || ''), booked: day(b.bookedDate),
+        amount: num(b.totalPrice ?? b.price ?? b.revenue), commission: num(b.commission), currency: String(b.currency || 'USD'),
+        status: /cancel|declin|reject|invalid/.test(st) ? 'cancelled' : /complete|confirm|approv|paid|stayed|valid/.test(st) && !/pend/.test(st) ? 'approved' : 'pending'
+      });
+    }
+    if (data.length < 500) break;
+  }
+  return out;
+}
+
+async function awin(from: string, to: string): Promise<Raw[]> {
+  const T = env.AWIN_API_TOKEN;
+  if (!T) throw new Error('no AWIN_API_TOKEN');
+  const pid = env.AWIN_PUBLISHER_ID || '3138284';
+  const ADV: Record<string, string> = { '129367': 'Ferryhopper', '128757': 'HelloSafe' };
+  const out: Raw[] = [];
+  // Awin en fazla 31 günlük aralık veriyor
+  for (let s = new Date(`${from}T00:00:00Z`); ymd(s) <= to; s = new Date(s.getTime() + 31 * 864e5)) {
+    const e = new Date(Math.min(s.getTime() + 31 * 864e5 - 1000, new Date(`${to}T23:59:59Z`).getTime()));
+    const u = `https://api.awin.com/publishers/${pid}/transactions/?startDate=${ymd(s)}T00:00:00&endDate=${e.toISOString().slice(0, 19)}&timezone=UTC&dateType=transaction`;
+    const r = await fetch(u, { headers: { Authorization: `Bearer ${T}` } });
+    const t = await r.text();
+    if (!r.ok) throw new Error(`awin ${r.status} ${t.slice(0, 150)}`);
+    for (const x of JSON.parse(t) as Record<string, unknown>[]) {
+      const refs = (x.clickRefs || {}) as Record<string, unknown>;
+      const tag = [x.clickRef, ...Object.values(refs)].map((v) => String(v || '')).join(' ');
+      const st = String(x.commissionStatus || '').toLowerCase();
+      const sale = (x.saleAmount || {}) as { amount?: number; currency?: string };
+      const com = (x.commissionAmount || {}) as { amount?: number; currency?: string };
+      out.push({
+        id: `awin-${x.id}`, tag, network: 'awin', partnerName: ADV[String(x.advertiserId)] || String(x.advertiserName || x.advertiserId || ''),
+        booked: day(x.transactionDate), amount: num(sale.amount), commission: num(com.amount), currency: String(com.currency || sale.currency || 'EUR'),
+        status: /declin|delet/.test(st) ? 'cancelled' : st === 'approved' ? 'approved' : 'pending'
+      });
+    }
+  }
+  return out;
+}
+
+async function admitad(from: string, to: string): Promise<Raw[]> {
+  const id = env.ADMITAD_CLIENT_ID, sec = env.ADMITAD_CLIENT_SECRET;
+  if (!id || !sec) throw new Error('no ADMITAD_CLIENT_ID/SECRET');
+  const tr = await fetch('https://api.admitad.com/token/', {
+    method: 'POST',
+    headers: { Authorization: `Basic ${btoa(`${id}:${sec}`)}`, 'Content-Type': 'application/x-www-form-urlencoded' },
+    body: `grant_type=client_credentials&client_id=${encodeURIComponent(id)}&scope=statistics`
+  });
+  const tj = (await tr.json().catch(() => ({}))) as { access_token?: string; error?: string };
+  if (!tj.access_token) throw new Error(`admitad token ${tr.status} ${tj.error || ''}`);
+  const dmy = (d: string) => `${d.slice(8, 10)}.${d.slice(5, 7)}.${d.slice(0, 4)}`;
+  const out: Raw[] = [];
+  for (let off = 0; off < 20000; off += 500) {
+    const r = await fetch(`https://api.admitad.com/statistics/actions/?date_start=${dmy(from)}&date_end=${dmy(to)}&limit=500&offset=${off}`, { headers: { Authorization: `Bearer ${tj.access_token}` } });
+    const t = await r.text();
+    if (!r.ok) throw new Error(`admitad ${r.status} ${t.slice(0, 150)}`);
+    const res = ((JSON.parse(t) as { results?: Record<string, unknown>[] }).results || []);
+    for (const a of res) {
+      const st = String(a.status || '').toLowerCase();
+      out.push({
+        id: `adm-${a.action_id}`, tag: [a.subid, a.subid1, a.subid2, a.subid3, a.subid4].map((v) => String(v || '')).join(' '), network: 'admitad',
+        partnerName: String(a.advcampaign_name || ''), booked: day(a.action_date), amount: num(a.cart), commission: num(a.payment), currency: String(a.currency || 'USD'),
+        status: /declin/.test(st) ? 'cancelled' : /approv|confirm/.test(st) ? 'approved' : 'pending'
+      });
+    }
+    if (res.length < 500) break;
+  }
+  return out;
+}
+
+async function cj(from: string, to: string): Promise<Raw[]> {
+  const T = env.CJ_API_TOKEN;
+  if (!T) throw new Error('no CJ_API_TOKEN');
+  const pid = env.CJ_PUBLISHER_ID || '7817772';
+  const out: Raw[] = [];
+  for (let s = new Date(`${from}T00:00:00Z`); ymd(s) <= to; s = new Date(s.getTime() + 30 * 864e5)) {
+    const e = new Date(Math.min(s.getTime() + 30 * 864e5, new Date(`${to}T00:00:00Z`).getTime() + 864e5));
+    const query = `{ publisherCommissions(forPublishers: ["${pid}"], sincePostingDate: "${s.toISOString().slice(0, 19)}Z", beforePostingDate: "${e.toISOString().slice(0, 19)}Z") { records { commissionId shopperId eventDate postingDate actionStatus advertiserName saleAmountPubCurrency pubCommissionAmountPubCurrency pubCurrency } } }`;
+    const r = await fetch('https://commissions.api.cj.com/query', { method: 'POST', headers: { Authorization: `Bearer ${T}`, 'Content-Type': 'application/json' }, body: JSON.stringify({ query }) });
+    const t = await r.text();
+    if (!r.ok) throw new Error(`cj ${r.status} ${t.slice(0, 150)}`);
+    const recs = ((JSON.parse(t) as { data?: { publisherCommissions?: { records?: Record<string, unknown>[] } } }).data?.publisherCommissions?.records || []);
+    for (const c of recs) {
+      const st = String(c.actionStatus || '').toLowerCase();
+      const com = num(c.pubCommissionAmountPubCurrency);
+      out.push({
+        id: `cj-${c.commissionId}`, tag: String(c.shopperId || ''), network: 'cj', partnerName: String(c.advertiserName || ''), booked: day(c.eventDate || c.postingDate),
+        amount: num(c.saleAmountPubCurrency), commission: com, currency: String(c.pubCurrency || 'USD'),
+        status: com !== null && com < 0 ? 'cancelled' : /closed|locked/.test(st) ? 'approved' : 'pending'
+      });
+    }
+  }
+  return out;
+}
 
 export default async function handler(req: Request): Promise<Response> {
-  if (!KEY || !TP) return json({ ok: false, error: 'env' }, 500);
+  if (!KEY) return json({ ok: false, error: 'env' }, 500);
   const q = new URL(req.url).searchParams;
   const debug = q.get('debug') === '1';
   const days = Math.min(400, Math.max(1, parseInt(q.get('days') || '120', 10) || 120));
-  try {
-    // alan listesi: kâr alanının adı TP'de değişebiliyor, olanı seç
-    const fl = (await tp('get_fields_list')) as { fields?: { name?: string }[]; results?: { name?: string }[] } | { name?: string }[];
-    const arr = (Array.isArray(fl) ? fl : fl.fields || fl.results || []) as { name?: string; field?: string }[];
-    const names = new Set(arr.map((f) => f.name || f.field || '').filter(Boolean));
-    const profitFields = names.size ? ['profit_eur', 'paid_profit_eur', 'processing_profit_eur'].filter((f) => names.has(f)) : ['paid_profit_eur'];
-    const priceField = ['price_eur', 'price_usd'].find((f) => names.has(f)) || 'price_eur';
-    const want = ['action_id', 'sub_id', 'state', 'date', 'campaign_id', 'campaign_name_en', priceField, ...profitFields].filter((f) => names.size === 0 || names.has(f));
-    const from = new Date(Date.now() - days * 864e5).toISOString().slice(0, 10);
-    const rows: Record<string, unknown>[] = [];
-    for (let off = 0; off < 50000; off += 1000) {
-      const j = (await tp('execute_query', {
-        fields: want,
-        filters: [
-          { field: 'type', op: 'eq', value: 'action' },
-          { field: 'date', op: 'ge', value: from }
-        ],
-        sort: [{ field: 'date', order: 'desc' }],
-        offset: off,
-        limit: 1000
-      })) as { results?: Record<string, unknown>[]; total_rows?: number };
-      const res = j.results || [];
-      rows.push(...res);
-      if (res.length < 1000) break;
-    }
-    const mine = rows.filter((r) => /^r-[a-z0-9][a-z0-9_-]{1,29}-/.test(String(r.sub_id || '')) || /^r-[a-z0-9][a-z0-9_-]{1,29}$/.test(String(r.sub_id || '')));
-    if (debug) {
-      const camps: Record<string, number> = {};
-      rows.forEach((r) => (camps[String(r.campaign_id)] = (camps[String(r.campaign_id)] || 0) + 1));
-      return json({ ok: true, fields: [...names].sort(), used: want, total: rows.length, withRef: mine.length, campaigns: camps });
-    }
-    if (!mine.length) return json({ ok: true, total: rows.length, upserted: 0 });
+  const to = ymd(new Date());
+  const from = ymd(new Date(Date.now() - days * 864e5));
+  const only = q.get('net');
 
-    // kodu sub_id'den ayıkla: r-<kod>-<sayfa>; kodlar ref_partners'ta olmalı
-    const partners = (await (await fetch(`${SB}/rest/v1/ref_partners?select=ref`, { headers: sbh })).json()) as { ref: string }[];
-    const refs = new Set(partners.map((p) => p.ref));
-    const refOf = (sub: string) => {
-      const body = sub.slice(2);
-      // en uzun eşleşen kod (kodlarda tire olabilir)
-      let best = '';
-      for (const r of refs) if ((body === r || body.startsWith(`${r}-`)) && r.length > best.length) best = r;
-      return best;
-    };
-    const ids = mine.map((r) => `tp-${r.action_id}`);
-    const existing = (await (await fetch(`${SB}/rest/v1/ref_bookings?id=in.(${ids.map((i) => `"${i}"`).join(',')})&select=id,status`, { headers: sbh })).json()) as { id: string; status: string }[];
-    const keepPaid = new Set(existing.filter((e) => e.status === 'paid').map((e) => e.id));
-    const out = [];
-    for (const r of mine) {
-      const ref = refOf(String(r.sub_id));
-      if (!ref) continue;
-      const id = `tp-${r.action_id}`;
-      const day = String(r.date || '').slice(0, 10);
-      const state = String(r.state || '');
-      const status = keepPaid.has(id) ? 'paid' : state === 'paid' ? 'approved' : /cancel/.test(state) ? 'cancelled' : 'pending';
-      const profit = profitFields.map((f) => num(r[f])).find((x) => x !== null && x > 0) ?? profitFields.map((f) => num(r[f])).find((x) => x !== null) ?? null;
-      const cname = String(r.campaign_name_en || '').trim();
-      const pk = partnerFromName(cname);
-      const seg = String(r.sub_id).slice(2 + ref.length + 1);
-      const eur = priceField === 'price_eur';
-      out.push({
-        id,
-        ref,
-        network: 'travelpayouts',
-        partner: pk !== 'unknown' ? pk : cname || `TP #${r.campaign_id}`,
-        category: pk !== 'unknown' ? partnerCat(pk) : catOf(cname),
-        page: seg && seg !== 'home' ? seg : '/',
-        booked_at: day || null,
-        amount_eur: eur ? num(r[priceField]) : null,
-        commission_eur: profit,
-        fx_try: day ? await fxTry(day) : null,
-        status,
-        updated_at: new Date().toISOString()
-      });
+  const partners = (await (await fetch(`${SB}/rest/v1/ref_partners?select=ref`, { headers: sbh })).json()) as { ref: string }[];
+  const refs = [...new Set(partners.map((p) => p.ref))].sort((a, b) => b.length - a.length);
+  // alt kimlik metninde "r-<kod>" ara; kodlarda tire olabileceği için en uzun eşleşen kod
+  const findRef = (tag: string): { ref: string; page: string | null } | null => {
+    for (const m of tag.toLowerCase().matchAll(/(?:^|[^a-z0-9])r-([a-z0-9][a-z0-9_-]*)/g)) {
+      const body = m[1];
+      const ref = refs.find((r) => body === r || body.startsWith(`${r}-`));
+      if (ref) { const rest = body.slice(ref.length + 1); return { ref, page: rest && rest !== 'home' ? rest : null }; }
     }
-    if (out.length) {
-      const w = await fetch(`${SB}/rest/v1/ref_bookings?on_conflict=id`, {
-        method: 'POST',
-        headers: { ...sbh, Prefer: 'resolution=merge-duplicates,return=minimal' },
-        body: JSON.stringify(out)
-      });
-      if (!w.ok) return json({ ok: false, error: `supabase ${w.status} ${(await w.text()).slice(0, 200)}` }, 500);
+    return null;
+  };
+
+  const sources: Record<string, () => Promise<Raw[]>> = {
+    travelpayouts: () => travelpayouts(from), stay22: () => stay22(from, to), awin: () => awin(from, to), admitad: () => admitad(from, to), cj: () => cj(from, to)
+  };
+  const report: Record<string, unknown> = {};
+  const raws: Raw[] = [];
+  await Promise.all(Object.entries(sources).filter(([k]) => !only || k === only).map(async ([k, fn]) => {
+    try {
+      const r = await fn();
+      const mine = r.filter((x) => findRef(x.tag));
+      raws.push(...mine);
+      report[k] = { total: r.length, withRef: mine.length };
+    } catch (e) {
+      report[k] = { error: String((e as Error).message || e).slice(0, 200) };
     }
-    return json({ ok: true, total: rows.length, upserted: out.length });
-  } catch (e) {
-    return json({ ok: false, error: String((e as Error).message || e).slice(0, 300) }, 500);
+  }));
+  if (debug || !raws.length) return json({ ok: true, from, to, report, upserted: 0, debug });
+
+  const ids = raws.map((r) => r.id);
+  const existing = (await (await fetch(`${SB}/rest/v1/ref_bookings?id=in.(${ids.map((i) => `"${i}"`).join(',')})&select=id,status`, { headers: sbh })).json()) as { id: string; status: string }[];
+  const keepPaid = new Set(existing.filter((e) => e.status === 'paid').map((e) => e.id));
+  const out: Row[] = [];
+  for (const x of raws) {
+    const m = findRef(x.tag)!;
+    const pk = partnerFromName(x.partnerName);
+    const d = x.booked || to;
+    const fx = await rates(d);
+    out.push({
+      id: x.id, ref: m.ref, network: x.network, partner: pk !== 'unknown' ? pk : x.partnerName || x.network,
+      category: pk !== 'unknown' ? partnerCat(pk) : x.network === 'stay22' ? 'hotel' : 'extra', page: m.page, booked_at: x.booked || null,
+      amount_eur: await toEur(x.amount, x.currency, d), commission_eur: await toEur(x.commission, x.currency, d), fx_try: fx.TRY || null,
+      status: keepPaid.has(x.id) ? 'paid' : x.status, updated_at: new Date().toISOString()
+    });
   }
+  const w = await fetch(`${SB}/rest/v1/ref_bookings?on_conflict=id`, { method: 'POST', headers: { ...sbh, Prefer: 'resolution=merge-duplicates,return=minimal' }, body: JSON.stringify(out) });
+  if (!w.ok) return json({ ok: false, report, error: `supabase ${w.status} ${(await w.text()).slice(0, 200)}` }, 500);
+  return json({ ok: true, from, to, report, upserted: out.length });
 }
