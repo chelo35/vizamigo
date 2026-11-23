@@ -5,6 +5,7 @@
  * <link rel="alternate" hreflang="x-default" href="..."> fallback, and 404 Soft-404 protection.
  */
 
+import { isNoindexPath } from '../utils/indexPolicy';
 import { toursPath } from '../data/tours';
 import React, { useEffect } from 'react';
 import { SupportedLanguage } from '../i18n/types';
@@ -93,7 +94,7 @@ export const SeoHead: React.FC<SeoHeadProps> = ({
     }
 
     // Live Page: Guarantee Indexability for Mobile Googlebot
-    robotsMeta.setAttribute('content', 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1');
+    robotsMeta.setAttribute('content', isNoindexPath(window.location.pathname) ? 'noindex, follow' : 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1');
 
     // 3. Compute dynamic title and description
     let pageTitle = 'Vizamigo - Akıllı Pasaport, Vize & Küresel Seyahat Rehberi';

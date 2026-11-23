@@ -10,6 +10,7 @@
  *
  * Hata olursa derlemeyi bozmaz: uyarı yazar ve çıkar.
  */
+import { isNoindexPath } from '../src/utils/indexPolicy';
 import { getInfoPage } from '../src/data/infoPages';
 import fs from 'fs';
 import path from 'path';
@@ -228,7 +229,7 @@ async function main() {
         }
       } catch {}
     }
-    if (noindex) html = html.replace(/(<meta name="robots" content=")[^"]*(")/, '$1noindex, follow$2');
+    if (noindex || isNoindexPath(canonical)) html = html.replace(/(<meta name="robots" content=")[^"]*(")/, '$1noindex, follow$2');
     return lang === 'tr' ? html : trOut(lang, html);
   };
   const write = (rel: string, html: string) => {

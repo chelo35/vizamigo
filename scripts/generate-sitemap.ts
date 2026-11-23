@@ -23,6 +23,7 @@ import {
   buildPassportPath,
   getHreflangAlternatesForRoute
 } from '../src/utils/seoRouter';
+import { isNoindexPath } from '../src/utils/indexPolicy';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -178,7 +179,11 @@ export function generateSitemapXml(): string {
   xml += `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"\n`;
   xml += `        xmlns:xhtml="http://www.w3.org/1999/xhtml">\n`;
 
-  entries.forEach((entry) => {
+  // Dizin dışı sayfalar (indexPolicy) sitemap'e girmez; alternatif listelerinden de çıkarılır.
+  const indexable = entries
+    .filter((e) => !isNoindexPath(e.loc))
+    .map((e) => ({ ...e, alternates: e.alternates.filter((a) => !isNoindexPath(a.href)) }));
+  indexable.forEach((entry) => {
     xml += `  <url>\n`;
     xml += `    <loc>${entry.loc}</loc>\n`;
     entry.alternates.forEach((alt) => {
@@ -225,6 +230,8 @@ Allow: /manifest.json
 Disallow: /api/
 Disallow: /backend/
 Disallow: /admin/
+Disallow: /ortak/
+Allow: /ortak/basvuru
 Disallow: /staging/
 Disallow: /mock/
 Disallow: /mock-data/
