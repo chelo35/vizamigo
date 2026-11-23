@@ -4,7 +4,7 @@
  * (navigator.webdriver) sayılmaz. Ortak sitelere giden her tıklama "partner_click" olayıdır.
  */
 import { thirdPartyAllowed } from './consent';
-import { currentRef } from './refTracking';
+import { currentRef, refBeacon } from './refTracking';
 
 const GA_ID = 'G-EF7BYQ70BG';
 type W = Window & { dataLayer?: unknown[]; gtag?: (...a: unknown[]) => void };
@@ -88,6 +88,10 @@ function onClick(e: MouseEvent): void {
     return;
   }
   if (!/^https?:$/.test(u.protocol) || u.hostname.endsWith('vizamigo.com') || u.hostname === location.hostname) return;
+  // fenomen paneli: kodlu ziyaretçinin ortak siteye gidişi (çerez izninden bağımsız, kişisel veri yok)
+  // yalnızca koda bağlanmış (komisyonlu) ortak bağlantıları sayılır
+  const ref = currentRef();
+  if (ref && a.href.includes(`r-${ref}`)) refBeacon('out', partnerOf(u).slice(0, 80), ref);
   const g = (window as W).gtag;
   if (!g) return;
   const seg = location.pathname.split('/').filter(Boolean);

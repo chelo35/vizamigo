@@ -27,6 +27,7 @@ Allow: /manifest.json
 Disallow: /api/
 Disallow: /backend/
 Disallow: /admin/
+Disallow: /ortak/
 Disallow: /staging/
 Disallow: /mock/
 Disallow: /mock-data/

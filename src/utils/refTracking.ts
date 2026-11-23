@@ -32,7 +32,10 @@ export function captureRef(): void {
     const u = new URL(window.location.href);
     const raw = (u.searchParams.get('ref') || '').trim().toLowerCase();
     if (!raw) return;
-    if (VALID.test(raw)) localStorage.setItem(KEY, JSON.stringify({ ref: raw, ts: Date.now() }));
+    if (VALID.test(raw)) {
+      localStorage.setItem(KEY, JSON.stringify({ ref: raw, ts: Date.now() }));
+      refBeacon('visit', '', raw);
+    }
     u.searchParams.delete('ref');
     window.history.replaceState(window.history.state, '', u.pathname + (u.search || '') + u.hash);
   } catch {}
@@ -40,6 +43,26 @@ export function captureRef(): void {
 
 export function currentRef(): string | null {
   return read()?.ref || null;
+}
+
+/**
+ * Fenomen paneli sayacı (/api/ref-hit → Supabase ref_events).
+ * visit: ?ref= bağlantısıyla gelinen ziyaret; out: kodlu ziyaretçinin ortak siteye gitmesi
+ * (aynı ortak alan adı için oturum başına bir kez sayılır).
+ */
+export function refBeacon(kind: 'visit' | 'out', target = '', ref = currentRef()): void {
+  if (!ref || typeof navigator === 'undefined') return;
+  try {
+    if (kind === 'out') {
+      const k = `vz_out_${target}`;
+      if (sessionStorage.getItem(k)) return;
+      sessionStorage.setItem(k, '1');
+    }
+    const seg = location.pathname.split('/').filter(Boolean);
+    const body = JSON.stringify({ r: ref, k: kind, t: target, p: location.pathname, l: ['en', 'de', 'es', 'ru', 'pt'].includes(seg[0]) ? seg[0] : 'tr' });
+    if (navigator.sendBeacon) navigator.sendBeacon('/api/ref-hit', new Blob([body], { type: 'text/plain' }));
+    else fetch('/api/ref-hit', { method: 'POST', body, keepalive: true }).catch(() => {});
+  } catch {}
 }
 
 /** Ortak bağlantısına fenomen kodunu ekler; kod yoksa veya ağ desteklemiyorsa bağlantıyı değiştirmez. */
