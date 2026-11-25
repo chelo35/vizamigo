@@ -143,7 +143,7 @@ ${clip(b.facts, 10000) || 'none'}`;
       const r = await fetch('https://api.groq.com/openai/v1/chat/completions', {
         method: 'POST',
         headers: { Authorization: `Bearer ${groqKey}`, 'content-type': 'application/json' },
-        body: JSON.stringify({ model: await groqModel(groqKey), max_tokens: 900, temperature: 0.4, messages: [{ role: 'system', content: system }, ...msgs] })
+        body: JSON.stringify({ model: await groqModel(groqKey), max_tokens: 2400, temperature: 0.4, ...((await groqModel(groqKey)).includes('gpt-oss') ? { reasoning_effort: 'low' } : {}), messages: [{ role: 'system', content: system }, ...msgs] })
       });
       if (r.ok) {
         const j = (await r.json()) as { choices?: Array<{ message?: { content?: string } }> };
@@ -159,7 +159,7 @@ ${clip(b.facts, 10000) || 'none'}`;
       const r = await fetch('https://openrouter.ai/api/v1/chat/completions', {
         method: 'POST',
         headers: { Authorization: `Bearer ${orKey}`, 'content-type': 'application/json', 'HTTP-Referer': 'https://www.vizamigo.com', 'X-Title': 'Vizamigo' },
-        body: JSON.stringify({ models, max_tokens: 900, temperature: 0.4, messages: [{ role: 'system', content: system }, ...msgs] })
+        body: JSON.stringify({ models, max_tokens: 2400, temperature: 0.4, reasoning: { effort: 'low', exclude: true }, messages: [{ role: 'system', content: system }, ...msgs] })
       });
       if (r.ok) {
         const j = (await r.json()) as { model?: string; choices?: Array<{ message?: { content?: string } }> };
