@@ -319,6 +319,25 @@ const RichText: React.FC<{ text: string }> = ({ text }) => {
   );
 };
 
+/** Kullanıcının pasaportu için sitenin doğrulanmış vize listesi (asistan rota önerirken vize durumunu uydurmasın diye). */
+function passportVisaList(passport: string): string {
+  try {
+    const items = getPassportItems(passport);
+    if (!items.length) return '';
+    const g: Record<string, string[]> = {};
+    for (const it of items) {
+      if (it.c === passport) continue;
+      const k = it.cat === 'id' ? 'free' : it.cat;
+      const days = /^\d+$/.test(it.v) ? ` ${it.v}d` : '';
+      (g[k] = g[k] || []).push(getCountryName(it.c, 'en') + (k === 'free' ? days : '') + (it.id ? ' (ID card ok)' : ''));
+    }
+    const L: Record<string, string> = { free: 'VISA-FREE', voa: 'VISA ON ARRIVAL', evisa: 'E-VISA REQUIRED BEFORE TRAVEL', eta: 'ETA REQUIRED BEFORE TRAVEL', visa: 'VISA REQUIRED (apply before travel; NOT visa-free)', none: 'NO ENTRY / NO DATA' };
+    return `PASSPORT VISA LIST for ${getCountryName(passport, 'en')} passport (Vizamigo data, authoritative):\n` + ['free', 'voa', 'eta', 'evisa', 'visa', 'none'].filter((k) => g[k]?.length).map((k) => `${L[k]}: ${g[k].join(', ')}`).join('\n');
+  } catch {
+    return '';
+  }
+}
+
 /** /api/chat: sitenin kendi cevabını (vize, ülke verisi, düğmeler) bilgi olarak verip doğal bir cevap ister. Anahtar yoksa ya da hata olursa null. */
 async function askAI(q: string, r: AssistantMessage, prev: AssistantMessage[], passport: string, lang: string): Promise<string | null> {
   try {
@@ -336,7 +355,7 @@ async function askAI(q: string, r: AssistantMessage, prev: AssistantMessage[], p
         lang,
         passport: getCountryName(passport, 'en'),
         today: new Date().toISOString().slice(0, 10),
-        facts: [r.detectedCountry ? visaLine(r.detectedCountry.code, passport, lang).replace(/\*\*/g, '') : '', r.text].filter(Boolean).join('\n\n'),
+        facts: [r.detectedCountry ? visaLine(r.detectedCountry.code, passport, lang).replace(/\*\*/g, '') : '', passportVisaList(passport), r.text].filter(Boolean).join('\n\n'),
         buttons: (r.actions || []).map((a) => stripEmoji(a.label) + (a.type === 'affiliate' ? ' [partner]' : '')),
         features: siteFeatures(lang).map((f) => f.text.replace(/\*\*/g, '')),
         history: prev.slice(-8).map((m) => ({ role: m.sender === 'user' ? 'user' : 'assistant', content: m.text }))

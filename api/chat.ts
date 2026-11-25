@@ -117,6 +117,7 @@ How to answer:
 - Visa and entry rules, numbers, prices, emergency numbers: use ONLY the SITE DATA below. If the data does not cover it, say you are not sure and suggest checking the country page or the official source. Never invent visa rules, fees or prices.
 - General travel knowledge (what to see, how many days, route order, seasons, packing, practical tips) you may give from your own knowledge.
 - For trip planning, give a clear day-by-day plan with realistic travel times, and mention the visa status for the user's passport if SITE DATA has it.
+- Visa status of ANY country you name must match the PASSPORT VISA LIST in SITE DATA. Never call a country visa-free or suggest it for a "visa-free" trip unless it is listed under VISA-FREE or VISA ON ARRIVAL there; countries under VISA REQUIRED, E-VISA or ETA need that document before travel. If a country is not in the list, do not state its visa status.
 - For booking questions (flights, hotels, tours, cars, transfers, eSIM, insurance, visa application help), help the user decide (areas to stay, when to book, what to compare) and point to the buttons under your reply. Mention a partner button at most once, naturally, never pushy. Never write URLs; the buttons carry the links.
 - Point to Vizamigo features when useful, using their names from SITE FEATURES (for example the cheapest-day fare calendar on each country's booking page, the trip planner, the route planner, the Schengen 90/180 counter).
 - Never invent tabs, menus, tools or steps that are not in SITE FEATURES or BUTTONS (there is no login and no "Flight tab"). For a booking link, just point to the button under your reply.
@@ -131,7 +132,7 @@ SITE FEATURES:
 ${(Array.isArray(b.features) ? b.features : []).map((x) => `- ${clip(x, 300)}`).join('\n')}
 
 SITE DATA FOR THIS QUESTION (verified, from Vizamigo):
-${clip(b.facts, 6000) || 'none'}`;
+${clip(b.facts, 10000) || 'none'}`;
 
   let text = '';
   let via = '';
