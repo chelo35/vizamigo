@@ -79,7 +79,7 @@ export const TP: Record<TpId, TpBrand> = {
   omio: { name: 'Omio', domain: 'omio.com', rate: '6%' },
   twelvego: { name: '12Go', domain: '12go.asia', rate: '4–5.5%' },
   booking: { name: 'Booking.com', domain: 'booking.com', rate: '3–5%' },
-  agoda: { name: 'Agoda', domain: 'agoda.com', rate: '1–6%' },
+  agoda: { name: 'Agoda', domain: 'agoda.com', rate: '4–5% (CJ)' },
   expedia: { name: 'Expedia', domain: 'expedia.com', rate: '1.35–3.6%' },
   hostelworld: { name: 'Hostelworld', domain: 'hostelworld.com', rate: '40% rev share' },
   kiwitaxi: { name: 'Kiwitaxi', domain: 'kiwitaxi.com', rate: '9–11%' },
@@ -151,6 +151,8 @@ const LOCKED_HOSTS = ['trip.com', 'omio.com', '12go.asia', '12go.co', 'agoda.com
 export const STAY22_AID = 'vizamigo';
 export type Stay22Provider = 'booking' | 'agoda' | 'expedia' | 'hotelscom' | 'vrbo' | 'roam' | 'getyourguide' | 'kayak';
 export function stay22(provider: Stay22Provider, o: { address?: string; checkin?: string; checkout?: string; adults?: number; link?: string; campaign?: string } = {}): string {
+  // Agoda 26 Kas 2026'dan beri doğrudan CJ (Agoda Global) üzerinden: tüm Agoda düğmeleri buraya düşer
+  if (provider === 'agoda') return agodaLink(o.link);
   const q = new URLSearchParams({ aid: STAY22_AID });
   if (o.link) q.set('link', o.link);
   if (o.address) q.set('address', o.address);
@@ -202,7 +204,7 @@ export const s22Cars = (city: string, dep?: string, ret?: string, campaign = 'si
 /** Seyahat ürünleri (Stay22 Retail): arama kelimesiyle en uygun mağaza */
 export const s22Retail = (search: string, campaign = 'packing') =>
   `https://www.stay22.com/allez/retail?${new URLSearchParams({ aid: STAY22_AID, search, campaign })}`;
-const STAY22_HOSTS: [string, Stay22Provider][] = [['booking.com', 'booking'], ['agoda.com', 'agoda'], ['expedia.com', 'expedia'], ['hotels.com', 'hotelscom'], ['vrbo.com', 'vrbo']];
+const STAY22_HOSTS: [string, Stay22Provider][] = [['booking.com', 'booking'], ['expedia.com', 'expedia'], ['hotels.com', 'hotelscom'], ['vrbo.com', 'vrbo']];
 
 /** Komisyon getirmeyen (kilitli) bir marka bağlantısını, bağlı bir alternatife çevirir. Otel bağlantıları hizmet için olduğu gibi kalır. */
 /** SafetyWing elçi bağlantısı (Nomad Insurance, %10). */
@@ -228,6 +230,7 @@ export function routeLink(url: string): string {
     }
     return u.toString();
   }
+  if (is('agoda.com')) return agodaLink(url);
   const s22 = STAY22_HOSTS.find(([d]) => is(d));
   if (s22) return stay22(s22[1], { link: url });
   // Ferryhopper: Awin bağlantısına çevir
@@ -287,6 +290,7 @@ export function tpIdFromUrl(url: string | undefined): TpId | undefined {
     if (mid === '128757') return 'hellosafe';
   }
   if (/(^|\.)(tkqlhce|anrdoezrs|dpbolvw|jdoqocy|kqzyfj)\.com$/.test(host) && url.includes('-17381224')) return 'daytrip';
+  if (/(^|\.)(tkqlhce|anrdoezrs|dpbolvw|jdoqocy|kqzyfj)\.com$/.test(host) && url.includes('-17364407')) return 'agoda';
   if (host === 'stay22.com') {
     const prov = url.match(/\/allez\/([a-z]+)/)?.[1];
     return prov === 'hotelscom' ? 'hotelscom' : prov && prov in TP ? (prov as TpId) : 'booking';
@@ -339,6 +343,20 @@ export const SANATORIUM_COUNTRIES = new Set(['RU', 'BY', 'KZ', 'AZ', 'GE', 'AM',
 /** Daytrip (CJ, 20 Kas 2026 onaylandı, %13): şoförlü şehirlerarası transfer, mola noktalı günübirlik yolculuk, saatlik şoför.
  * Programda derin bağlantı kapalı; bağlantı ana sayfaya gider. sid ile hangi sayfadan geldiği raporda görünür. */
 export const DAYTRIP_CJ = 'https://www.tkqlhce.com/click-101926414-17381224';
+/** Agoda (CJ, Agoda Global 7865252; 25 Kas 2026 onaylandı): tamamlanan konaklama başına %4 (ayda 51–300: %4,5; 301+: %5), çerez 1 gün.
+ * Evergreen bağlantı 17364407 derin bağlantıyı destekliyor; Agoda'da metinle şehir araması olmadığından varsayılan hedef ana sayfa
+ * (Agoda dili ziyaretçiye göre seçer). Fenomen kodu tagRef ile sid alanına yazılır. */
+export const AGODA_CJ = 'https://www.tkqlhce.com/click-101926414-17364407';
+export function agodaLink(target?: string, sid = 'site'): string {
+  let dest = '';
+  try {
+    const u = target ? new URL(target) : null;
+    if (u && (u.hostname === 'agoda.com' || u.hostname.endsWith('.agoda.com'))) dest = u.toString();
+  } catch {}
+  const q = new URLSearchParams({ sid: sid.slice(0, 64) });
+  if (dest) q.set('url', dest);
+  return `https://www.tkqlhce.com/click-101926414-17364407?${q}`;
+}
 export const daytripLink = (sid = 'site') => `${DAYTRIP_CJ}?sid=${encodeURIComponent(sid.slice(0, 64))}`;
 /** Daytrip'in ağırlıklı çalıştığı Avrupa ülkeleri (Orta Avrupa ve Balkanlar dahil) */
 export const DAYTRIP_COUNTRIES = new Set([

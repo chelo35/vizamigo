@@ -59,7 +59,7 @@ export function partnerKey(target: string | null | undefined): string {
   if (PARTNERS[t]) return t;
   if (t.startsWith('stay22:')) return t.includes('agoda') ? 'agoda' : t.includes('expedia') ? 'expedia' : t.includes('hotels') ? 'hotelscom' : 'booking';
   if (t.startsWith('awin:')) return t.endsWith('128757') ? 'hellosafe' : 'ferryhopper';
-  if (t.startsWith('cj:')) return 'daytrip';
+  if (t.startsWith('cj:')) return t.endsWith('17364407') ? 'agoda' : 'daytrip';
   const host = t.replace(/^travelpayouts:/, '');
   const h = flat(host);
   for (const k of KEYS) if (h.includes(k) || h.includes(flat(PARTNERS[k].n))) return k;
