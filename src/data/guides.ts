@@ -330,7 +330,9 @@ export const GUIDE_META: Record<GuideId, { checked: string; icon: string; countr
     countries: SCHENGEN,
     sources: [
       { label: 'European Commission: Applying for a Schengen visa', url: 'https://home-affairs.ec.europa.eu/policies/schengen-borders-and-visa/visa-policy/applying-schengen-visa_en' },
-      { label: 'EU Delegation to Türkiye: cascade rules (15 July 2025)', url: 'https://www.eeas.europa.eu/delegations/t%C3%BCrkiye/more-favourable-visa-rules-turkish-citizens-applying-schengen-visas_en' }
+      { label: 'EU Delegation to Türkiye: cascade rules (15 July 2025)', url: 'https://www.eeas.europa.eu/delegations/t%C3%BCrkiye/more-favourable-visa-rules-turkish-citizens-applying-schengen-visas_en' },
+      { label: 'Hürriyet: Vizesiz Avrupa Meclis\'e geliyor, son 6 kriter (21 Kasım 2026)', url: 'https://www.hurriyet.com.tr/dunya/vizesiz-avrupa-meclise-geliyor-son-6-kriter-icin-mesai-43385669' },
+      { label: 'Takvim: Vizesiz Avrupa için 6 kriter kaldı (21 Kasım 2026)', url: 'https://www.takvim.com.tr/guncel/2026/11/21/vizesiz-avrupa-icin-6-kriter-kaldi-taslak-butce-sonrasi-meclis-yolunda' }
     ]
   },
   ees: {
